@@ -1,0 +1,33 @@
+{
+  "note": "Real per-video clip library, sourced from the CMU Motion Capture Database (una-dinosauria/cmu-mocap, BVH). Each clip trims a gesture window from a specific trial. Front view, root-locked so the mascot stays in frame. T-pose calibration frame at t=0 is skipped via startSec.",
+  "clips": {
+    "stand": {
+      "src": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/master/data/120/120_15.bvh",
+      "startSec": 0.5,
+      "endSec": 2.6,
+      "lockRoot": true,
+      "view": "front"
+    },
+    "walk": {
+      "src": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/master/data/007/07_01.bvh",
+      "startSec": 0.15,
+      "endSec": 2.6,
+      "lockRoot": true,
+      "view": "front"
+    },
+    "point": {
+      "src": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/master/data/013/13_28.bvh",
+      "startSec": 13.3,
+      "endSec": 16.3,
+      "lockRoot": true,
+      "view": "front"
+    },
+    "shock": {
+      "src": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/master/data/120/120_15.bvh",
+      "startSec": 3.2,
+      "endSec": 5.8,
+      "lockRoot": true,
+      "view": "front"
+    }
+  }
+}

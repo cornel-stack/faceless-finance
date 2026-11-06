@@ -1,0 +1,14 @@
+{
+  "name": "@ff/mocap",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Convert free mocap (CMU BVH / Mixamo) into 2D stick-figure clips.",
+  "bin": { "ff-mocap": "./convert-bvh.mjs" },
+  "scripts": {
+    "convert": "node convert-bvh.mjs"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  }
+}

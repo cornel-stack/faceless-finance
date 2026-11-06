@@ -1,0 +1,87 @@
+name: Render episode
+
+# Everything runs here — clips, Edge TTS audio, and video render — so the
+# author's machine stays light. No YouTube upload: CI hands back a download
+# link; you download the MP4 and upload to YouTube yourself.
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Path to the episode JSON"
+        default: "episodes/examples/EP001-every-level-net-worth.json"
+        type: string
+      manifest:
+        description: "Path to the clip manifest JSON"
+        default: "episodes/examples/EP001.clips.json"
+        type: string
+      codec:
+        description: "Video codec"
+        default: "h264"
+        type: choice
+        options: ["h264", "h265", "vp8", "vp9"]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # ffmpeg/ffprobe (narration) + libraries Remotion's headless Chrome needs.
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg \
+            libnss3 libdbus-1-3 libatk1.0-0 libatk-bridge2.0-0 libgbm-dev \
+            libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 \
+            libxcomposite1 libxdamage1 libpango-1.0-0 libcairo2 libcups2
+
+      - name: Install Node dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Install narration dependencies
+        run: pip install -r tools/narration/requirements.txt
+
+      - name: Prepare episode
+        run: cp "${{ inputs.episode }}" render/src/data/current.json
+
+      - name: Build per-video clip library
+        run: node tools/mocap/build-clips.mjs --manifest "${{ inputs.manifest }}" --out render/src/data/clips.json
+
+      - name: Narrate with Edge TTS
+        run: python tools/narration/synth.py --episode "${{ inputs.episode }}"
+
+      - name: Render video
+        run: |
+          mkdir -p render/out
+          pnpm --filter @ff/render exec remotion render Episode out/episode.mp4 --codec="${{ inputs.codec }}"
+
+      - name: Upload video
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: "episode-${{ github.run_number }}"
+          path: render/out/episode.mp4
+          retention-days: 14
+
+      - name: Print download link
+        run: |
+          {
+            echo "### ✅ Render complete"
+            echo ""
+            echo "**Download:** ${{ steps.upload.outputs.artifact-url }}"
+            echo ""
+            echo "Unzip and upload \`episode.mp4\` to YouTube."
+          } >> "$GITHUB_STEP_SUMMARY"

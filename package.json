@@ -1,0 +1,17 @@
+{
+  "name": "faceless-finance",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Faceless finance video pipeline: one JSON per episode, rendered by CI.",
+  "scripts": {
+    "build:episode": "bash tools/build-episode.sh",
+    "clips": "node tools/mocap/build-clips.mjs",
+    "narrate": "python3 tools/narration/synth.py",
+    "preview": "pnpm --filter @ff/render preview",
+    "render:video": "pnpm --filter @ff/render video Episode out/episode.mp4 --codec=h264"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.32.0"
+}

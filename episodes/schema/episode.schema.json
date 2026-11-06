@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faceless.finance/schema/episode.schema.json",
+  "title": "Episode",
+  "description": "The single source of truth for one video. Flows through script, narration, render, mux and CI unchanged.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "series", "title", "market", "language", "chapters", "figures", "sources"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EP[0-9]{3,}$",
+      "description": "Stable episode id, e.g. EP001."
+    },
+    "series": {
+      "enum": ["by-the-numbers", "every-level", "the-price-tag"],
+      "description": "by-the-numbers = essays (hand-written), every-level = ladders (data swap), the-price-tag = rankings (data swap)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Final YouTube title. Follows the series' title grammar."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Filesystem/URL-safe name. Defaults to id if omitted."
+    },
+    "market": {
+      "enum": ["US", "UK", "CA", "AU"],
+      "description": "Primary target market. Drives currency, spelling and framing."
+    },
+    "language": {
+      "enum": ["en-US", "en-GB"],
+      "description": "Channel/video language and caption convention. One convention, never mixed."
+    },
+    "durationTargetMin": {
+      "type": "number",
+      "minimum": 10,
+      "description": "Target runtime in minutes. Never under 10."
+    },
+    "hold": {
+      "type": "object",
+      "description": "Optional scheduling intent (CI does not upload; this is a note to you).",
+      "additionalProperties": false,
+      "properties": {
+        "releaseWindow": { "type": "string", "description": "e.g. 'Oct-Nov' for peak finance CPM." },
+        "notes": { "type": "string" }
+      }
+    },
+    "voice": {
+      "type": "object",
+      "description": "Narration voice config for this episode.",
+      "additionalProperties": false,
+      "properties": {
+        "provider": { "enum": ["elevenlabs", "chatterbox", "f5-tts", "stock"] },
+        "voiceId": { "type": "string" },
+        "accent": { "enum": ["natural", "accent-shifted", "stock-us", "stock-uk"] },
+        "rate": { "type": "number", "default": 1.0 }
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Ordered chapters. Each becomes a YouTube chapter marker. Titles carry the figures.",
+      "items": { "$ref": "#/$defs/chapter" }
+    },
+    "figures": {
+      "type": "array",
+      "description": "Every number shown on screen, with its source. Referenced by id from chapters.",
+      "items": { "$ref": "#/$defs/figure" }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Master source list, printed in the video description.",
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "ledger": {
+      "type": "object",
+      "description": "Running-totals strip config (net worth, debt, years).",
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "unit": { "type": "string", "default": "USD" },
+        "track": { "type": "string", "description": "Which figure field the ledger accumulates." }
+      }
+    },
+    "calculator": {
+      "type": "object",
+      "description": "The 'see your own numbers' asset linked at the end. Doubles as email capture.",
+      "additionalProperties": false,
+      "properties": {
+        "url": { "type": "string" },
+        "cta": { "type": "string" }
+      }
+    },
+    "thumbnail": {
+      "type": "object",
+      "description": "Thumbnail override. Default is generated from the same code: character + 3-word serif headline + red spiking line + year.",
+      "additionalProperties": false,
+      "properties": {
+        "headline": { "type": "string", "maxLength": 24, "description": "Up to 3 words." },
+        "year": { "type": "string" },
+        "pose": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^ch[0-9]+$" },
+        "title": {
+          "type": "string",
+          "description": "Chapter marker + on-screen heading. For ladders/rankings, carries the dollar figure."
+        },
+        "scriptFile": {
+          "type": "string",
+          "description": "Path (relative to episodes/) to a hand-written .md script for this chapter. Used by essays."
+        },
+        "script": {
+          "type": "string",
+          "description": "Inline narration text. Used when a scriptFile is not supplied (ladders/rankings)."
+        },
+        "figures": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Figure ids shown during this chapter, in order of appearance."
+        },
+        "animation": { "$ref": "#/$defs/animation" }
+      }
+    },
+    "animation": {
+      "type": "object",
+      "description": "Per-chapter visual direction: what the stick figure does and what the chart shows.",
+      "additionalProperties": false,
+      "properties": {
+        "stickFigure": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "clip": {
+              "type": "string",
+              "description": "Name of a 2D mocap clip in tools/mocap/clips (e.g. 'walk', 'fall', 'point'). Produced from BVH/FBX."
+            },
+            "loop": { "type": "boolean", "default": false },
+            "mood": { "enum": ["neutral", "up", "down", "shock"], "default": "neutral" },
+            "anchor": { "enum": ["left", "center", "right"], "default": "left" }
+          }
+        },
+        "chart": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "type": { "enum": ["line", "bar", "bar-race", "map", "compound", "none"] },
+            "figures": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Figure ids plotted, in draw order."
+            },
+            "drawSeconds": { "type": "number", "description": "How long the chart takes to draw itself in, synced to narration." }
+          }
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "value", "source"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^fig[0-9a-z-]+$" },
+        "label": { "type": "string" },
+        "value": { "type": "number" },
+        "unit": { "type": "string", "default": "USD" },
+        "year": { "type": "string" },
+        "source": {
+          "type": "string",
+          "description": "Id of the entry in the top-level sources array that backs this number."
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "url", "accessed"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string", "description": "e.g. 'Fed Survey of Consumer Finances 2022'." },
+        "url": { "type": "string" },
+        "accessed": { "type": "string", "format": "date", "description": "YYYY-MM-DD when the number was pulled." },
+        "quote": { "type": "string", "description": "Exact sentence to highlight on the source card, if any." }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "EP001",
+  "series": "every-level",
+  "title": "Your Net Worth at Every Level: $0 to $100,000,000",
+  "slug": "net-worth-every-level",
+  "market": "US",
+  "language": "en-US",
+  "durationTargetMin": 22,
+  "voice": { "provider": "elevenlabs", "accent": "natural", "rate": 1.0 },
+  "ledger": { "label": "Net worth", "unit": "USD", "track": "value" },
+  "calculator": {
+    "url": "https://faceless.finance/calc/net-worth-percentile",
+    "cta": "See exactly which level you're on — link below."
+  },
+  "thumbnail": { "headline": "Every Level", "year": "2026", "pose": "point" },
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "$0 — Where almost everyone starts",
+      "script": "Zero. Not debt, not savings — nothing. This is where the median American under 25 actually sits, and it is not a failure. It is the starting line. Watch what one number does to it over the next forty years.",
+      "figures": ["fig-nw-u25"],
+      "animation": {
+        "stickFigure": { "clip": "stand", "mood": "neutral", "anchor": "left" },
+        "chart": { "type": "line", "figures": ["fig-nw-u25"], "drawSeconds": 4 }
+      }
+    },
+    {
+      "id": "ch2",
+      "title": "$16,500 — The median 25-to-34 year old",
+      "script": "By your early thirties the median net worth is sixteen thousand five hundred dollars. Half of this age group has less. If that stings, remember the line only has to point in one direction.",
+      "figures": ["fig-nw-2534"],
+      "animation": {
+        "stickFigure": { "clip": "walk", "loop": true, "mood": "up", "anchor": "left" },
+        "chart": { "type": "line", "figures": ["fig-nw-2534"], "drawSeconds": 5 }
+      }
+    },
+    {
+      "id": "ch3",
+      "title": "$135,300 — The median 35-to-44 year old",
+      "script": "Ten years later the median more than triples to a hundred and thirty-five thousand dollars. This is the decade compounding starts to outrun saving. The gap between the median and the top ten percent is about to explode.",
+      "figures": ["fig-nw-3544", "fig-nw-3544-top10"],
+      "animation": {
+        "stickFigure": { "clip": "point", "mood": "up", "anchor": "left" },
+        "chart": { "type": "line", "figures": ["fig-nw-3544", "fig-nw-3544-top10"], "drawSeconds": 6 }
+      }
+    },
+    {
+      "id": "ch4",
+      "title": "$100,000,000 — The 0.001%",
+      "script": "And here is the ceiling of this video: nine zeros. At this level your money is no longer measured in what you earn — it is measured in what it earns for you. If you had put ten thousand dollars into the S&P 500 at chapter one and never touched it, here is where you'd be instead.",
+      "figures": ["fig-nw-centimillion", "fig-sp500-10k"],
+      "animation": {
+        "stickFigure": { "clip": "shock", "mood": "shock", "anchor": "left" },
+        "chart": { "type": "compound", "figures": ["fig-sp500-10k"], "drawSeconds": 8 }
+      }
+    }
+  ],
+  "figures": [
+    { "id": "fig-nw-u25", "label": "Median net worth, under 35", "value": 39040, "unit": "USD", "year": "2022", "source": "scf2022" },
+    { "id": "fig-nw-2534", "label": "Median net worth, 25-34", "value": 16500, "unit": "USD", "year": "2022", "source": "scf2022" },
+    { "id": "fig-nw-3544", "label": "Median net worth, 35-44", "value": 135300, "unit": "USD", "year": "2022", "source": "scf2022" },
+    { "id": "fig-nw-3544-top10", "label": "Top 10% net worth, 35-44", "value": 1308400, "unit": "USD", "year": "2022", "source": "scf2022" },
+    { "id": "fig-nw-centimillion", "label": "Centimillionaire threshold", "value": 100000000, "unit": "USD", "year": "2026", "source": "demo-placeholder" },
+    { "id": "fig-sp500-10k", "label": "$10,000 in S&P 500, 40 yrs @ ~10%/yr nominal", "value": 452592, "unit": "USD", "year": "2026", "source": "demo-placeholder" }
+  ],
+  "sources": [
+    {
+      "id": "scf2022",
+      "name": "Federal Reserve Survey of Consumer Finances 2022",
+      "url": "https://www.federalreserve.gov/econres/scfindex.htm",
+      "accessed": "2026-11-07",
+      "quote": "Median net worth of families, by age of reference person."
+    },
+    {
+      "id": "demo-placeholder",
+      "name": "PLACEHOLDER — replace with real cited source before publishing",
+      "url": "https://example.com",
+      "accessed": "2026-11-07"
+    }
+  ]
+}

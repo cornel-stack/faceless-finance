@@ -1,0 +1,31 @@
+# deps
+node_modules/
+.pnpm-store/
+
+# build / render output
+out/
+render/out/
+dist/
+*.mp4
+*.wav
+*.mp3
+!episodes/**/*.mp3
+
+# mocap raw inputs (large; downloaded per machine)
+tools/mocap/bvh/*.bvh
+tools/mocap/fbx/*.fbx
+
+# python
+__pycache__/
+.venv/
+venv/
+*.pyc
+
+# secrets / local
+.env
+.env.local
+*.local
+
+# os / editor
+.DS_Store
+Thumbs.db
