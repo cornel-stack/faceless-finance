@@ -3,8 +3,10 @@ import { Composition } from "remotion";
 import { StickFigureDemo } from "./StickFigureDemo";
 import { Episode, episodeDurationInFrames } from "./Episode";
 import { ClipSheet } from "./ClipSheet";
+import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import type { MocapClip, Episode as EpisodeType } from "./types";
 import probeData from "./data/_probe.json";
+import sourcesIndex from "./data/sources.index.json";
 
 // These three are produced by the pipeline (prepare/build-clips/narration) and
 // imported statically so the bundle is deterministic:
@@ -52,6 +54,17 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{ data: probeData as unknown as Record<string, MocapClip>, clipName: "walk", cols: 8, count: 32 }}
       />
+      {Object.values(sourcesIndex as Record<string, SourceEntry>)[0] && (
+        <Composition
+          id="SourceCardDemo"
+          component={SourceCardDemo}
+          durationInFrames={60}
+          fps={FPS}
+          width={1920}
+          height={1080}
+          defaultProps={{ entry: Object.values(sourcesIndex as Record<string, SourceEntry>)[0] }}
+        />
+      )}
     </>
   );
 };
