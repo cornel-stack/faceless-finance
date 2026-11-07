@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig, interpolate, spring } from "remotion";
 import type { Episode as EpisodeType, Chapter, MocapClip, Figure } from "./types";
-import { StickFigure } from "./components/StickFigure";
+import { Mascot, poseForClip, expressionForMood } from "./components/Mascot";
 import { LadderChart, LadderItem } from "./components/LadderChart";
 import { RankingScene } from "./components/RankingScene";
 import { SourceCard } from "./components/SourceCard";
@@ -38,7 +38,6 @@ const ChapterScene: React.FC<{
     : primaryFigure(episode, chapter);
   const source = fig && episode.sources.find((s) => s.id === fig.source);
   const sf = chapter.animation?.stickFigure;
-  const clip = clips[sf?.clip ?? ""] ?? Object.values(clips)[0];
 
   const headIn = spring({ frame, fps, config: { damping: 200 } });
 
@@ -47,7 +46,7 @@ const ChapterScene: React.FC<{
   const CHART = { left: 600, top: 250, width: 1260, height: 620, padT: 40, padB: 70 };
   const baselineY = CHART.top + CHART.padT + (CHART.height - CHART.padT - CHART.padB);
   const FIG = { left: 90, w: 460, h: 600 };
-  const footFrac = clip?.footY ?? 0.9;
+  const footFrac = 0.965; // mascot foot level in its viewBox
   const figTop = baselineY - footFrac * FIG.h;
 
   return (
@@ -89,7 +88,7 @@ const ChapterScene: React.FC<{
 
       {/* mascot — feet anchored to the chart baseline */}
       <div style={{ position: "absolute", left: FIG.left, top: figTop, width: FIG.w, height: FIG.h }}>
-        {clip && <StickFigure clip={clip} loop={sf?.loop ?? true} mood={sf?.mood ?? "neutral"} width={FIG.w} height={FIG.h} />}
+        <Mascot pose={poseForClip(sf?.clip)} expression={expressionForMood(sf?.mood)} width={FIG.w} height={FIG.h} />
       </div>
 
       {/* hero: ladder (every-level) or ranking (the-price-tag) */}
@@ -148,13 +147,12 @@ export const Episode: React.FC<{
   });
 
   let cursor = INTRO_SECONDS * fps;
-  const introClip = Object.values(clips)[0];
 
   return (
     <AbsoluteFill style={{ backgroundColor: theme.bg }}>
       {audioSrc && <Audio src={staticFile(audioSrc)} />}
       <Sequence from={0} durationInFrames={INTRO_SECONDS * fps}>
-        <IntroCard title={episode.title} series={episode.series} year="2026" clip={introClip} />
+        <IntroCard title={episode.title} series={episode.series} year="2026" />
       </Sequence>
       {episode.chapters.map((chapter, i) => {
         const dur = Math.round((timing?.[i] ?? CHAPTER_SECONDS) * fps);

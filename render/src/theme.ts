@@ -1,15 +1,15 @@
 // One flat palette, one display font — the channel's visual identity.
 export const theme = {
-  bg: "#f4f1ea",        // warm near-white paper
-  bgPanel: "#ebe7dd",   // slightly darker panel
+  bg: "#ffffff",        // plain white — the Casual Finance look
+  bgPanel: "#f3f1ec",   // faint panel tint
   ink: "#17120f",       // near-black
   inkSoft: "#5c544c",   // muted label text
-  accent: "#c0392b",    // the red spiking line
+  accent: "#c0392b",    // the red accent line
   accentDark: "#8f281c",
   up: "#1f7a3d",
-  grid: "#d8d2c6",
+  grid: "#e4e0d8",
   ledgerBg: "#17120f",
-  ledgerInk: "#f4f1ea",
+  ledgerInk: "#ffffff",
 };
 
 export const money = (v: number, unit = "USD") =>

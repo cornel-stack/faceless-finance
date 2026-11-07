@@ -2,15 +2,13 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring } from "remotion";
 import { theme } from "../theme";
 import { display, sans } from "../fonts";
-import { StickFigure } from "./StickFigure";
-import type { MocapClip } from "../types";
+import { Mascot } from "./Mascot";
 
 export const IntroCard: React.FC<{
   title: string;
   series: string;
   year: string;
-  clip?: MocapClip;
-}> = ({ title, series, year, clip }) => {
+}> = ({ title, series, year }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
 
@@ -36,11 +34,9 @@ export const IntroCard: React.FC<{
         />
       </svg>
 
-      {clip && (
-        <div style={{ position: "absolute", right: 120, bottom: 60, width: 420, height: 560, opacity: 0.95 }}>
-          <StickFigure clip={clip} loop width={420} height={560} />
-        </div>
-      )}
+      <div style={{ position: "absolute", right: 150, bottom: 40, width: 380, height: 560 }}>
+        <Mascot pose="point" expression="happy" width={380} height={560} />
+      </div>
 
       <div style={{ position: "absolute", left: 120, top: 260, width: 1300 }}>
         <div
