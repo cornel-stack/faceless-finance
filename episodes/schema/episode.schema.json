@@ -125,6 +125,10 @@
           "type": "string",
           "description": "Inline narration text. Used when a scriptFile is not supplied (ladders/rankings)."
         },
+        "bubble": {
+          "type": "string",
+          "description": "Short punchy line the mascot says in a speech bubble."
+        },
         "figures": {
           "type": "array",
           "items": { "type": "string" },
@@ -163,6 +167,11 @@
             },
             "drawSeconds": { "type": "number", "description": "How long the chart takes to draw itself in, synced to narration." }
           }
+        },
+        "props": {
+          "type": "array",
+          "items": { "enum": ["coins", "moneybag", "house", "bank", "piggybank", "dollar", "chartup", "chartdown", "warning"] },
+          "description": "Doodle props placed around the scene, popping in staggered."
         }
       }
     },

@@ -17,41 +17,49 @@
     {
       "id": "ch1",
       "title": "$0 — Where almost everyone starts",
+      "bubble": "We all start at zero.",
       "script": "Zero. Not debt, not savings — nothing. This is where the median American under 25 actually sits, and it is not a failure. It is the starting line. Watch what one number does to it over the next forty years.",
       "figures": ["fig-nw-u25"],
       "animation": {
         "stickFigure": { "clip": "stand", "mood": "neutral", "anchor": "left" },
-        "chart": { "type": "line", "figures": ["fig-nw-u25"], "drawSeconds": 4 }
+        "chart": { "type": "line", "figures": ["fig-nw-u25"], "drawSeconds": 4 },
+        "props": ["piggybank", "coins"]
       }
     },
     {
       "id": "ch2",
       "title": "$16,500 — The median 25-to-34 year old",
+      "bubble": "Half have less.",
       "script": "By your early thirties the median net worth is sixteen thousand five hundred dollars. Half of this age group has less. If that stings, remember the line only has to point in one direction.",
       "figures": ["fig-nw-2534"],
       "animation": {
         "stickFigure": { "clip": "walk", "loop": true, "mood": "up", "anchor": "left" },
-        "chart": { "type": "line", "figures": ["fig-nw-2534"], "drawSeconds": 5 }
+        "chart": { "type": "line", "figures": ["fig-nw-2534"], "drawSeconds": 5 },
+        "props": ["coins"]
       }
     },
     {
       "id": "ch3",
       "title": "$135,300 — The median 35-to-44 year old",
+      "bubble": "Compounding kicks in.",
       "script": "Ten years later the median more than triples to a hundred and thirty-five thousand dollars. This is the decade compounding starts to outrun saving. The gap between the median and the top ten percent is about to explode.",
       "figures": ["fig-nw-3544", "fig-nw-3544-top10"],
       "animation": {
         "stickFigure": { "clip": "point", "mood": "up", "anchor": "left" },
-        "chart": { "type": "line", "figures": ["fig-nw-3544", "fig-nw-3544-top10"], "drawSeconds": 6 }
+        "chart": { "type": "line", "figures": ["fig-nw-3544", "fig-nw-3544-top10"], "drawSeconds": 6 },
+        "props": ["house", "chartup"]
       }
     },
     {
       "id": "ch4",
       "title": "$100,000,000 — The 0.001%",
+      "bubble": "Nine zeros.",
       "script": "And here is the ceiling of this video: nine zeros. At this level your money is no longer measured in what you earn — it is measured in what it earns for you. If you had put ten thousand dollars into the S&P 500 at chapter one and never touched it, here is where you'd be instead.",
       "figures": ["fig-nw-centimillion", "fig-sp500-10k"],
       "animation": {
         "stickFigure": { "clip": "shock", "mood": "shock", "anchor": "left" },
-        "chart": { "type": "compound", "figures": ["fig-sp500-10k"], "drawSeconds": 8 }
+        "chart": { "type": "compound", "figures": ["fig-sp500-10k"], "drawSeconds": 8 },
+        "props": ["moneybag", "chartup"]
       }
     }
   ],

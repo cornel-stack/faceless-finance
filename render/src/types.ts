@@ -38,6 +38,8 @@ export type Chapter = {
   script?: string;
   scriptFile?: string;
   figures?: string[];
+  /** short punchy line the mascot "says" in a speech bubble */
+  bubble?: string;
   animation?: {
     stickFigure?: {
       clip?: string;
@@ -50,6 +52,8 @@ export type Chapter = {
       figures?: string[];
       drawSeconds?: number;
     };
+    /** doodle prop names placed around the scene (see Doodle.tsx) */
+    props?: string[];
   };
 };
 

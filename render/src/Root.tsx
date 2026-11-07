@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { StickFigureDemo } from "./StickFigureDemo";
 import { Episode, episodeDurationInFrames } from "./Episode";
 import { ClipSheet } from "./ClipSheet";
+import { DoodleSheet } from "./DoodleSheet";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import type { MocapClip, Episode as EpisodeType } from "./types";
 import probeData from "./data/_probe.json";
@@ -44,6 +45,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ episode, clips, timing, audioSrc, sources: sourcesIndex as unknown as Record<string, SourceEntry> }}
+      />
+      <Composition
+        id="DoodleSheet"
+        component={DoodleSheet}
+        durationInFrames={1}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
       />
       <Composition
         id="ClipSheet"

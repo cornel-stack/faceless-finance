@@ -6,10 +6,27 @@ import { LadderChart, LadderItem } from "./components/LadderChart";
 import { RankingScene } from "./components/RankingScene";
 import { SourceCard } from "./components/SourceCard";
 import { ScreenshotSource } from "./components/ScreenshotSource";
+import { Doodle, DoodleName } from "./components/Doodle";
+import { SpeechBubble } from "./components/SpeechBubble";
 import { IntroCard } from "./components/IntroCard";
 import { theme, money } from "./theme";
 import { display, sans } from "./fonts";
 import type { SourceEntry } from "./SourceCardDemo";
+
+// Doodle slots in the left region, around the mascot.
+const DOODLE_SLOTS = [
+  { x: 24, y: 388 },
+  { x: 476, y: 478 },
+  { x: 24, y: 612 },
+];
+
+// Pops a child in with a springy scale.
+const PopIn: React.FC<{ delay?: number; style?: React.CSSProperties; children: React.ReactNode }> = ({ delay = 0, style, children }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const s = spring({ frame, fps, delay, config: { damping: 12, mass: 0.6 } });
+  return <div style={{ ...style, transform: `scale(${s})`, transformOrigin: "center bottom" }}>{children}</div>;
+};
 
 // A captured source screenshot that slides in from the right, holds while the
 // highlighter sweeps the quote, then slides out to reveal the chart again.
@@ -110,6 +127,20 @@ const ChapterScene: React.FC<{
       <div style={{ position: "absolute", left: FIG.left, top: figTop, width: FIG.w, height: FIG.h }}>
         <Mascot pose={poseForClip(sf?.clip)} expression={expressionForMood(sf?.mood)} width={FIG.w} height={FIG.h} />
       </div>
+
+      {/* doodle props */}
+      {(chapter.animation?.props ?? []).slice(0, DOODLE_SLOTS.length).map((name, i) => (
+        <PopIn key={`${name}-${i}`} delay={10 + i * 6} style={{ position: "absolute", left: DOODLE_SLOTS[i].x, top: DOODLE_SLOTS[i].y }}>
+          <Doodle name={name as DoodleName} size={128} />
+        </PopIn>
+      ))}
+
+      {/* mascot speech bubble */}
+      {chapter.bubble && (
+        <div style={{ position: "absolute", left: 372, top: 232, width: 272 }}>
+          <SpeechBubble text={chapter.bubble} width={272} tail="left" delay={8} />
+        </div>
+      )}
 
       {/* hero: ladder (every-level) or ranking (the-price-tag) */}
       <div style={{ position: "absolute", left: CHART.left, top: CHART.top, width: CHART.width, height: CHART.height, display: "flex", alignItems: "center" }}>
