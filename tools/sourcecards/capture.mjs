@@ -136,7 +136,14 @@ async function main() {
   } else {
     throw new Error("Provide --episode or --url");
   }
-  if (!sources.length) { console.log("No capturable sources (all placeholders)."); return; }
+  if (!sources.length) {
+    // Write an empty index so a stale one from a prior episode can't show wrong cards.
+    const indexPath = resolve(repoRoot, args.index);
+    mkdirSync(dirname(indexPath), { recursive: true });
+    writeFileSync(indexPath, JSON.stringify({}, null, 2));
+    console.log("No capturable sources (all placeholders). Wrote empty index.");
+    return;
+  }
 
   mkdirSync(resolve(repoRoot, args.outDir), { recursive: true });
   const browser = await chromium.launch();

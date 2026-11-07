@@ -54,6 +54,9 @@ jobs:
       - name: Install narration dependencies
         run: pip install -r tools/narration/requirements.txt
 
+      - name: Install source-card browser (Playwright)
+        run: pnpm --filter @ff/sourcecards exec playwright install --with-deps chromium
+
       - name: Prepare episode
         run: cp "${{ inputs.episode }}" render/src/data/current.json
 
@@ -62,6 +65,9 @@ jobs:
 
       - name: Narrate with Edge TTS
         run: python tools/narration/synth.py --episode "${{ inputs.episode }}"
+
+      - name: Capture source screenshots
+        run: node tools/sourcecards/capture.mjs --episode "${{ inputs.episode }}" || echo "(source capture skipped)"
 
       - name: Render video
         run: |

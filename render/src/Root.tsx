@@ -43,7 +43,7 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1920}
         height={1080}
-        defaultProps={{ episode, clips, timing, audioSrc }}
+        defaultProps={{ episode, clips, timing, audioSrc, sources: sourcesIndex as unknown as Record<string, SourceEntry> }}
       />
       <Composition
         id="ClipSheet"

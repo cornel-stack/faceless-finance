@@ -5,9 +5,27 @@ import { Mascot, poseForClip, expressionForMood } from "./components/Mascot";
 import { LadderChart, LadderItem } from "./components/LadderChart";
 import { RankingScene } from "./components/RankingScene";
 import { SourceCard } from "./components/SourceCard";
+import { ScreenshotSource } from "./components/ScreenshotSource";
 import { IntroCard } from "./components/IntroCard";
 import { theme, money } from "./theme";
 import { display, sans } from "./fonts";
+import type { SourceEntry } from "./SourceCardDemo";
+
+// A captured source screenshot that slides in from the right, holds while the
+// highlighter sweeps the quote, then slides out to reveal the chart again.
+const CiteCard: React.FC<{ entry: SourceEntry; holdFrames: number }> = ({ entry, holdFrames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const inP = spring({ frame, fps, config: { damping: 22, mass: 0.7 } });
+  const outP = interpolate(frame, [holdFrames, holdFrames + 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const x = (1 - inP) * 640 + outP * 640;
+  const opacity = Math.min(inP, 1 - outP);
+  return (
+    <div style={{ position: "absolute", right: 56, top: 250, width: 800, transform: `translateX(${x}px)`, opacity }}>
+      <ScreenshotSource image={entry.image} naturalW={entry.width} naturalH={entry.height} url={entry.url} quoteRect={entry.quoteRect} width={800} />
+    </div>
+  );
+};
 
 export const INTRO_SECONDS = 3;
 export const CHAPTER_SECONDS = 6; // fallback; real length comes from narration duration
@@ -27,7 +45,8 @@ const ChapterScene: React.FC<{
   index: number;
   ladder: LadderItem[];
   clips: Record<string, MocapClip>;
-}> = ({ episode, chapter, index, ladder, clips }) => {
+  sources?: Record<string, SourceEntry>;
+}> = ({ episode, chapter, index, ladder, clips, sources }) => {
   const frame = useCurrentFrame();
   const { fps, width } = useVideoConfig();
 
@@ -37,6 +56,7 @@ const ChapterScene: React.FC<{
     ? [...episode.figures].sort((a, b) => b.value - a.value)[0]
     : primaryFigure(episode, chapter);
   const source = fig && episode.sources.find((s) => s.id === fig.source);
+  const shot = fig ? sources?.[fig.source] : undefined;
   const sf = chapter.animation?.stickFigure;
 
   const headIn = spring({ frame, fps, config: { damping: 200 } });
@@ -100,6 +120,13 @@ const ChapterScene: React.FC<{
         )}
       </div>
 
+      {/* source screenshot pops in over the chart at the cite moment, then out */}
+      {shot?.image && (
+        <Sequence from={Math.round(fps * 2.5)} durationInFrames={Math.round(fps * 4.6)}>
+          <CiteCard entry={shot} holdFrames={Math.round(fps * 3.4)} />
+        </Sequence>
+      )}
+
       {/* source card */}
       <div style={{ position: "absolute", left: 0, bottom: 128 }}>
         {source && <SourceCard source={source} width={width} />}
@@ -138,7 +165,9 @@ export const Episode: React.FC<{
   timing?: number[];
   /** staticFile name of the narration track, if narration has been generated */
   audioSrc?: string;
-}> = ({ episode, clips, timing, audioSrc }) => {
+  /** captured source screenshots, keyed by source id */
+  sources?: Record<string, SourceEntry>;
+}> = ({ episode, clips, timing, audioSrc, sources }) => {
   const { fps } = useVideoConfig();
 
   const ladder: LadderItem[] = episode.chapters.map((ch) => {
@@ -160,7 +189,7 @@ export const Episode: React.FC<{
         cursor += dur;
         return (
           <Sequence key={chapter.id} from={from} durationInFrames={dur}>
-            <ChapterScene episode={episode} chapter={chapter} index={i} ladder={ladder} clips={clips} />
+            <ChapterScene episode={episode} chapter={chapter} index={i} ladder={ladder} clips={clips} sources={sources} />
           </Sequence>
         );
       })}

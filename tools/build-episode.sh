@@ -22,6 +22,9 @@ node tools/mocap/build-clips.mjs --manifest "$MANIFEST" --out render/src/data/cl
 echo "▶ narrate (Edge TTS)"
 "$PY" tools/narration/synth.py --episode "$EPISODE"
 
+echo "▶ capture source screenshots"
+node tools/sourcecards/capture.mjs --episode "$EPISODE" || echo "(source capture skipped)"
+
 echo "▶ render"
 mkdir -p render/out
 pnpm --filter @ff/render exec remotion render Episode out/episode.mp4 --codec="$CODEC"

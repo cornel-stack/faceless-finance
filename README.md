@@ -25,10 +25,11 @@ Everything below the "script" box runs in **GitHub CI** — your machine only
 downloads the finished MP4.
 
 ```
-episode.json ──▶ script ──▶ clips ────────▶ narration ───▶ render ──────────▶ CI artifact
- (the spine)   (Claude     (per-video BVH   (Edge TTS,     (Remotion: ladder   (download link,
-                writes)     → 2D clips)      timing+audio)   chart + mocap        you upload to
-                                                             mascot + audio)      YouTube)
+episode.json ─▶ script ─▶ clips ──────▶ narration ──▶ sources ─────▶ render ───────▶ CI artifact
+ (the spine)  (Claude    (per-video     (Edge TTS,    (Playwright    (Remotion: white  (download link,
+               writes)    BVH→2D clips)  timing+audio) screenshots +  canvas, faced     you upload to
+                                                       quote bbox)    stickman, animated YouTube)
+                                                                      charts, cite cards)
 ```
 
 The **episode JSON is the single source of truth**. `tools/build-episode.sh`
@@ -48,9 +49,11 @@ tools/
     bvh2clip.mjs / convert-bvh    core conversion + single-clip CLI
     build-clips.mjs               build one video's clip library from a manifest
   narration/synth.py              Edge TTS → narration.mp3 + timing.json
+  sourcecards/capture.mjs         Playwright → real source screenshots + quote bbox
   build-episode.sh                run the full chain locally (mirrors CI)
 render/                           Remotion project: episode JSON → MP4
-  src/components/                 StickFigure, LadderChart, IntroCard, SourceCard
+  src/components/                 Mascot (faced stickman), LadderChart, RankingScene,
+                                  ScreenshotSource (cite cards), IntroCard
   src/data/                       generated inputs: current.json, clips.json, timing.json
   public/narration.mp3            generated narration track (gitignored)
 .github/workflows/render.yml      CI: clips + audio + render, then a download link
@@ -61,6 +64,7 @@ render/                           Remotion project: episode JSON → MP4
 ```bash
 pnpm install                                        # once
 pip install -r tools/narration/requirements.txt     # once (Edge TTS)
+pnpm --filter @ff/sourcecards exec playwright install chromium   # once (source cards)
 
 # whole chain → render/out/episode.mp4
 tools/build-episode.sh episodes/examples/EP001-every-level-net-worth.json \
