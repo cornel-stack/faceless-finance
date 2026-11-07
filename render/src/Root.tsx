@@ -5,9 +5,14 @@ import { Episode, episodeDurationInFrames } from "./Episode";
 import { ClipSheet } from "./ClipSheet";
 import { DoodleSheet } from "./DoodleSheet";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
+import { Film, filmDurationInFrames } from "./Film";
+import type { Scene } from "./scenes/types";
 import type { MocapClip, Episode as EpisodeType } from "./types";
 import probeData from "./data/_probe.json";
 import sourcesIndex from "./data/sources.index.json";
+import scenesData from "./data/scenes.json";
+
+const scenes = scenesData as unknown as Scene[];
 
 // These three are produced by the pipeline (prepare/build-clips/narration) and
 // imported statically so the bundle is deterministic:
@@ -28,6 +33,15 @@ const FPS = 30;
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="Film"
+        component={Film}
+        durationInFrames={filmDurationInFrames(scenes, FPS, timing)}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ scenes, timing, audioSrc, sources: sourcesIndex as unknown as Record<string, SourceEntry> }}
+      />
       <Composition
         id="StickFigureDemo"
         component={StickFigureDemo}

@@ -76,16 +76,22 @@ async def main():
 
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
-        intro_sil = tmp / "intro.mp3"
         pad_sil = tmp / "pad.mp3"
-        silence(intro_sil, args.intro)
         silence(pad_sil, args.pad)
 
-        concat_parts = [intro_sil]
+        concat_parts = []
+        if args.intro > 0:
+            intro_sil = tmp / "intro.mp3"
+            silence(intro_sil, args.intro)
+            concat_parts.append(intro_sil)
+
+        # Scene-based episodes narrate episode.scenes[].narration; chapter-based
+        # episodes narrate episode.chapters[] (script/scriptFile).
+        units = episode.get("scenes") or episode["chapters"]
         seconds = []
         chapters_meta = []
-        for i, ch in enumerate(episode["chapters"]):
-            text = chapter_text(episode_path, ch)
+        for i, ch in enumerate(units):
+            text = ch.get("narration") or chapter_text(episode_path, ch)
             if not text:
                 # no script yet: reserve a short placeholder beat
                 seconds.append(args.pad)

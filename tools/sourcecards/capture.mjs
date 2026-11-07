@@ -97,28 +97,23 @@ async function capture(page, { id, url, quote }, outDir) {
   await dismissConsent(page);
   await page.waitForTimeout(600);
 
+  // Locate + scroll the quote to the centre of the viewport (if any).
   let hit = null;
   if (quote) { try { hit = await page.evaluate(locateQuote, quote); } catch {} }
 
-  const pad = 26;
-  let clip, quoteRect = null;
-  if (hit) {
-    const { quote: q, ctx: c } = hit;
-    const x = Math.max(0, Math.floor(c.x - pad));
-    const y = Math.max(0, Math.floor(c.y - pad));
-    const w = Math.min(VIEWPORT.width - x, Math.ceil(c.w + pad * 2));
-    const h = Math.min(VIEWPORT.height - y, Math.ceil(c.h + pad * 2));
-    clip = { x, y, width: w, height: h };
-    quoteRect = { x: (q.x - x) / w, y: (q.y - y) / h, w: q.w / w, h: q.h / h };
-  } else {
-    clip = { x: 0, y: 0, width: VIEWPORT.width, height: Math.min(560, VIEWPORT.height) };
-  }
+  // Whole-page view: screenshot the full browser viewport (not a tight crop),
+  // with the quote's bbox recorded so the renderer can highlight it in place.
+  const vw = VIEWPORT.width;
+  const vh = VIEWPORT.height;
+  const quoteRect = hit
+    ? { x: hit.quote.x / vw, y: hit.quote.y / vh, w: hit.quote.w / vw, h: hit.quote.h / vh }
+    : null;
 
   const file = `${outDir}/${id}.png`;
-  await page.screenshot({ path: resolve(repoRoot, file), clip });
+  await page.screenshot({ path: resolve(repoRoot, file) }); // full viewport
   return {
     id, image: `sources/${id}.png`,
-    width: clip.width, height: clip.height,
+    width: vw, height: vh,
     quoteRect, url, found: Boolean(hit),
   };
 }

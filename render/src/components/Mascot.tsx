@@ -91,13 +91,46 @@ function Face({ cx, cy, expr }: { cx: number; cy: number; expr: Expression }) {
   );
 }
 
+export type Variant = "normal" | "villain" | "king";
+
+function Accessory({ cx, cy, r, variant }: { cx: number; cy: number; r: number; variant: Variant }) {
+  if (variant === "king") {
+    const top = cy - r - 2;
+    return (
+      <path
+        d={`M ${cx - 16} ${top} L ${cx - 16} ${top - 14} L ${cx - 8} ${top - 6} L ${cx} ${top - 16} L ${cx + 8} ${top - 6} L ${cx + 16} ${top - 14} L ${cx + 16} ${top} Z`}
+        fill="#e8b73a" stroke={INK} strokeWidth={3} strokeLinejoin="round"
+      />
+    );
+  }
+  if (variant === "villain") {
+    return (
+      <g stroke={INK} strokeWidth={3} strokeLinejoin="round">
+        {/* fedora */}
+        <ellipse cx={cx} cy={cy - r + 2} rx={r + 7} ry={4.5} fill="#2a2a2a" />
+        <path d={`M ${cx - 11} ${cy - r + 1} Q ${cx - 11} ${cy - r - 13} ${cx} ${cy - r - 13} Q ${cx + 11} ${cy - r - 13} ${cx + 11} ${cy - r + 1} Z`} fill="#2a2a2a" />
+        {/* round glasses */}
+        <circle cx={cx - 6} cy={cy - 2} r={4.4} fill="#cfe6ef" />
+        <circle cx={cx + 6} cy={cy - 2} r={4.4} fill="#cfe6ef" />
+        <line x1={cx - 1.6} y1={cy - 2} x2={cx + 1.6} y2={cy - 2} strokeWidth={2} />
+        {/* mustache */}
+        <path d={`M ${cx - 6} ${cy + 6} Q ${cx} ${cy + 10} ${cx} ${cy + 6} Q ${cx} ${cy + 10} ${cx + 6} ${cy + 6}`} fill={INK} stroke="none" />
+      </g>
+    );
+  }
+  return null;
+}
+
+const INK = theme.ink;
+
 export const Mascot: React.FC<{
   pose?: Pose;
   expression?: Expression;
+  variant?: Variant;
   width: number;
   height: number;
   idle?: boolean;
-}> = ({ pose = "stand", expression, width, height, idle = true }) => {
+}> = ({ pose = "stand", expression, variant = "normal", width, height, idle = true }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const p = POSES[pose];
@@ -129,6 +162,7 @@ export const Mascot: React.FC<{
         {/* head: white fill so the face reads on any background */}
         <circle cx={hx} cy={hy} r={HEAD_R} fill={theme.bg} stroke={stroke} strokeWidth={6} />
         <Face cx={hx} cy={hy} expr={expr} />
+        <Accessory cx={hx} cy={hy} r={HEAD_R} variant={variant} />
       </g>
     </svg>
   );
