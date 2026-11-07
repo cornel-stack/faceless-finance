@@ -6,6 +6,7 @@ import { Mascot } from "../components/Mascot";
 import { Doodle } from "../components/Doodle";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScreenshotSource } from "../components/ScreenshotSource";
+import { useBoil } from "../motion/boil";
 import type { SourceEntry } from "../SourceCardDemo";
 import type {
   Scene, TitleScene, CharacterScene, CalloutScene, ScreenshotScene,
@@ -104,45 +105,44 @@ const Screenshot: React.FC<{ scene: ScreenshotScene; sources?: Record<string, So
 const SceneChart: React.FC<{ scene: ChartScene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const { filterId, defs } = useBoil(5);
   const W = 1500, H = 720, padL = 60, padB = 90, padT = 40, padR = 40;
   const plotW = W - padL - padR, plotH = H - padT - padB, baseY = padT + plotH;
   const max = Math.max(...scene.data.map((d) => d.value), 1);
   const n = scene.data.length;
   const slot = plotW / n, barW = Math.min(slot * 0.5, 160);
+
+  const bars = scene.data.map((d, i) => {
+    const grow = spring({ frame, fps, delay: 6 + i * 5, config: { damping: 18 } });
+    return { d, i, grow, h: (d.value / max) * plotH * grow, cx: padL + slot * i + slot / 2, on: i === scene.highlight };
+  });
+  const pts = scene.data.map((d, i) => [padL + (plotW * i) / (n - 1), baseY - (d.value / max) * plotH] as const);
+  const path = pts.map(([x, y], i) => `${i ? "L" : "M"} ${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
+  const draw = interpolate(frame, [6, fps * 2.2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 18 }}>
       {scene.title && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 56, color: theme.ink, textAlign: "center", maxWidth: 1500 }}>{scene.title}</div>}
       <svg width={W} height={H}>
-        <line x1={padL} y1={baseY} x2={W - padR} y2={baseY} stroke={theme.ink} strokeWidth={3} />
-        {scene.chartType === "bar"
-          ? scene.data.map((d, i) => {
-              const grow = spring({ frame, fps, delay: 6 + i * 5, config: { damping: 18 } });
-              const h = (d.value / max) * plotH * grow;
-              const cx = padL + slot * i + slot / 2;
-              const on = i === scene.highlight;
-              return (
-                <g key={i}>
-                  <rect x={cx - barW / 2} y={baseY - h} width={barW} height={h} rx={5} fill={on ? theme.accent : "#b8afa1"} />
-                  <text x={cx} y={baseY - h - 16} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={on ? 42 : 32} fill={on ? theme.ink : theme.inkSoft}>
-                    {money(d.value * grow, scene.unit)}
-                  </text>
-                  <text x={cx} y={baseY + 44} textAnchor="middle" fontFamily={sans} fontSize={28} fill={theme.inkSoft}>{d.label}</text>
+        <defs>{defs}</defs>
+        {/* boiled linework */}
+        <g filter={filterId}>
+          <line x1={padL} y1={baseY} x2={W - padR} y2={baseY} stroke={theme.ink} strokeWidth={3} />
+          {scene.chartType === "bar"
+            ? bars.map((b) => <rect key={b.i} x={b.cx - barW / 2} y={baseY - b.h} width={barW} height={b.h} rx={5} fill={b.on ? theme.accent : "#b8afa1"} />)
+            : <path d={path} fill="none" stroke={theme.accent} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={5000} strokeDashoffset={5000 * (1 - draw)} />}
+        </g>
+        {/* crisp text */}
+        <g>
+          {scene.chartType === "bar"
+            ? bars.map((b) => (
+                <g key={b.i}>
+                  <text x={b.cx} y={baseY - b.h - 16} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={b.on ? 42 : 32} fill={b.on ? theme.ink : theme.inkSoft}>{money(b.d.value * b.grow, scene.unit)}</text>
+                  <text x={b.cx} y={baseY + 44} textAnchor="middle" fontFamily={sans} fontSize={28} fill={theme.inkSoft}>{b.d.label}</text>
                 </g>
-              );
-            })
-          : (() => {
-              const pts = scene.data.map((d, i) => [padL + (plotW * i) / (n - 1), baseY - (d.value / max) * plotH] as const);
-              const path = pts.map(([x, y], i) => `${i ? "L" : "M"} ${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
-              const draw = interpolate(frame, [6, fps * 2.2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-              return (
-                <g>
-                  <path d={path} fill="none" stroke={theme.accent} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={5000} strokeDashoffset={5000 * (1 - draw)} />
-                  {scene.data.map((d, i) => (
-                    <text key={i} x={pts[i][0]} y={baseY + 44} textAnchor="middle" fontFamily={sans} fontSize={26} fill={theme.inkSoft}>{d.label}</text>
-                  ))}
-                </g>
-              );
-            })()}
+              ))
+            : scene.data.map((d, i) => <text key={i} x={pts[i][0]} y={baseY + 44} textAnchor="middle" fontFamily={sans} fontSize={26} fill={theme.inkSoft}>{d.label}</text>)}
+        </g>
       </svg>
     </AbsoluteFill>
   );

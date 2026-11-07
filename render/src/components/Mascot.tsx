@@ -1,6 +1,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { theme } from "../theme";
+import { useBoil } from "../motion/boil";
 
 // Code-drawn, hand-stickman-style host with a face and a handful of poses — the
 // Casual Finance look. Static apart from a subtle idle breath. No generative AI;
@@ -138,6 +139,7 @@ export const Mascot: React.FC<{
 
   // subtle idle breath — a small vertical bob, so the host isn't dead-frozen
   const bob = idle ? Math.sin((frame / fps) * 2 * Math.PI * 0.5) * 1.1 : 0;
+  const { filterId: boilFilter, defs: boilDefs } = useBoil(4);
 
   const stroke = theme.ink;
   const limb = { stroke, strokeWidth: 7, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, fill: "none" };
@@ -145,7 +147,8 @@ export const Mascot: React.FC<{
 
   return (
     <svg width={width} height={height} viewBox="0 0 100 170" preserveAspectRatio="xMidYMid meet">
-      <g transform={`translate(0 ${bob})`}>
+      <defs>{boilDefs}</defs>
+      <g transform={`translate(0 ${bob})`} filter={boilFilter}>
         {/* torso + shoulders */}
         <line x1={p.neck[0]} y1={p.neck[1]} x2={p.pelvis[0]} y2={p.pelvis[1]} {...limb} />
         <line x1={SH_L[0]} y1={SH_L[1]} x2={SH_R[0]} y2={SH_R[1]} {...limb} />
