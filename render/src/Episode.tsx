@@ -3,6 +3,7 @@ import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoCon
 import type { Episode as EpisodeType, Chapter, MocapClip, Figure } from "./types";
 import { StickFigure } from "./components/StickFigure";
 import { LadderChart, LadderItem } from "./components/LadderChart";
+import { RankingScene } from "./components/RankingScene";
 import { SourceCard } from "./components/SourceCard";
 import { IntroCard } from "./components/IntroCard";
 import { theme, money } from "./theme";
@@ -30,19 +31,31 @@ const ChapterScene: React.FC<{
   const frame = useCurrentFrame();
   const { fps, width } = useVideoConfig();
 
-  const fig = primaryFigure(episode, chapter);
+  const isRanking = episode.series === "the-price-tag";
+  const rankItems = episode.figures.map((f) => ({ label: f.label, value: f.value }));
+  const fig = isRanking
+    ? [...episode.figures].sort((a, b) => b.value - a.value)[0]
+    : primaryFigure(episode, chapter);
   const source = fig && episode.sources.find((s) => s.id === fig.source);
   const sf = chapter.animation?.stickFigure;
   const clip = clips[sf?.clip ?? ""] ?? Object.values(clips)[0];
 
   const headIn = spring({ frame, fps, config: { damping: 200 } });
 
+  // Chart geometry — kept in sync with LadderChart's internal padding so the
+  // mascot can stand on the same baseline as the bars.
+  const CHART = { left: 600, top: 250, width: 1260, height: 620, padT: 40, padB: 70 };
+  const baselineY = CHART.top + CHART.padT + (CHART.height - CHART.padT - CHART.padB);
+  const FIG = { left: 90, w: 460, h: 600 };
+  const footFrac = clip?.footY ?? 0.9;
+  const figTop = baselineY - footFrac * FIG.h;
+
   return (
     <AbsoluteFill style={{ backgroundColor: theme.bg }}>
       {/* header */}
       <div style={{ position: "absolute", left: 100, top: 64, width: 1720 }}>
         <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 26, letterSpacing: 6, color: theme.accent, textTransform: "uppercase" }}>
-          {episode.series.replace(/-/g, " ")} · $0 → $100M
+          {episode.series.replace(/-/g, " ")}{isRanking ? "" : " · $0 → $100M"}
         </div>
         <div
           style={{
@@ -60,14 +73,32 @@ const ChapterScene: React.FC<{
         </div>
       </div>
 
-      {/* mascot */}
-      <div style={{ position: "absolute", left: 90, top: 380, width: 460, height: 560 }}>
-        {clip && <StickFigure clip={clip} loop={sf?.loop ?? false} mood={sf?.mood ?? "neutral"} width={460} height={560} />}
+      {/* ground shadow under the mascot's feet */}
+      <div
+        style={{
+          position: "absolute",
+          left: FIG.left + FIG.w / 2 - 85,
+          top: baselineY - 12,
+          width: 170,
+          height: 24,
+          borderRadius: "50%",
+          background: "rgba(23,18,15,0.13)",
+          filter: "blur(3px)",
+        }}
+      />
+
+      {/* mascot — feet anchored to the chart baseline */}
+      <div style={{ position: "absolute", left: FIG.left, top: figTop, width: FIG.w, height: FIG.h }}>
+        {clip && <StickFigure clip={clip} loop={sf?.loop ?? true} mood={sf?.mood ?? "neutral"} width={FIG.w} height={FIG.h} />}
       </div>
 
-      {/* hero chart */}
-      <div style={{ position: "absolute", left: 600, top: 250, width: 1260, height: 620 }}>
-        <LadderChart items={ladder} upto={index} width={1260} height={620} />
+      {/* hero: ladder (every-level) or ranking (the-price-tag) */}
+      <div style={{ position: "absolute", left: CHART.left, top: CHART.top, width: CHART.width, height: CHART.height, display: "flex", alignItems: "center" }}>
+        {isRanking ? (
+          <RankingScene items={rankItems} unit={fig?.unit} width={CHART.width} height={CHART.height} />
+        ) : (
+          <LadderChart items={ladder} upto={index} width={CHART.width} height={CHART.height} />
+        )}
       </div>
 
       {/* source card */}

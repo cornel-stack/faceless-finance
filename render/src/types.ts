@@ -9,6 +9,8 @@ export type MocapClip = {
   view: "front" | "side";
   joints: string[];
   bones: [string, string][];
+  /** max ankle y in the 0..1 box — the figure's foot level, for ground alignment */
+  footY?: number;
   frames: Record<string, Vec2>[];
 };
 

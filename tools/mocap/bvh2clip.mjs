@@ -28,8 +28,9 @@ function loadRig(path) {
  * @param {number} [o.targetHeight=0.8] figure height as fraction of the box
  * @param {number} [o.startSec=0]       trim: first second to sample
  * @param {number} [o.endSec]           trim: last second to sample (default = clip end)
+ * @param {number} [o.loopBlend=0]      seconds to cross-dissolve tail→head for a seamless loop
  */
-export function bvhToClip({ file, name, fps = 30, view = "front", lockRoot = false, targetHeight = 0.8, startSec = 0, endSec }) {
+export function bvhToClip({ file, name, fps = 30, view = "front", lockRoot = false, targetHeight = 0.8, startSec = 0, endSec, loopBlend = 0 }) {
   const { scene, clip } = loadRig(file);
 
   const boneByName = new Map();
@@ -78,7 +79,7 @@ export function bvhToClip({ file, name, fps = 30, view = "front", lockRoot = fal
   const centerX = (minX + maxX) / 2;
   const topMargin = (1 - targetHeight) / 2;
 
-  const frames = raw.map((frame) => {
+  let frames = raw.map((frame) => {
     const out = {};
     for (const j of JOINTS) {
       const [x, y] = frame[j];
@@ -87,5 +88,38 @@ export function bvhToClip({ file, name, fps = 30, view = "front", lockRoot = fal
     return out;
   });
 
-  return { name, fps, frameCount, durationSec: round(frameCount / fps), view, joints: JOINTS, bones: BONES, frames };
+  // Seamless loop: cross-dissolve the last B frames over the first B and drop
+  // the overlap, so the wrap (last→first) falls between two originally-adjacent
+  // frames and velocity is continuous — no pop.
+  if (loopBlend > 0) {
+    const L = frames.length;
+    const B = Math.min(Math.round(loopBlend * fps), Math.floor(L / 2) - 1);
+    if (B > 0) {
+      const blended = [];
+      for (let i = 0; i < L - B; i++) {
+        if (i < B) {
+          const w = 1 - i / B; // i=0 → fully tail, i→B → fully head
+          const head = frames[i];
+          const tail = frames[L - B + i];
+          const f = {};
+          for (const j of JOINTS) {
+            f[j] = [
+              round(head[j][0] + (tail[j][0] - head[j][0]) * w),
+              round(head[j][1] + (tail[j][1] - head[j][1]) * w),
+            ];
+          }
+          blended.push(f);
+        } else {
+          blended.push(frames[i]);
+        }
+      }
+      frames = blended;
+    }
+  }
+
+  // Foot level (max ankle y in the normalized box) so the renderer can stand the
+  // figure on a ground line / chart baseline.
+  const footY = round(Math.max(...frames.map((f) => Math.max(f.lankle[1], f.rankle[1]))));
+
+  return { name, fps, frameCount: frames.length, durationSec: round(frames.length / fps), view, joints: JOINTS, bones: BONES, footY, frames };
 }

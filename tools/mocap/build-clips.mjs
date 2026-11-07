@@ -69,6 +69,7 @@ async function main() {
       targetHeight: spec.targetHeight ?? 0.8,
       startSec: spec.startSec ?? 0,
       endSec: spec.endSec,
+      loopBlend: spec.loopBlend ?? 0,
     });
     console.log(`✓ ${name}: ${out[name].frameCount} frames (${out[name].durationSec}s) ← ${src}`);
   }

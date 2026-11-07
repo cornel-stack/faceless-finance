@@ -1,0 +1,54 @@
+{
+  "id": "EP002",
+  "series": "the-price-tag",
+  "title": "The True Cost of Rent: A One-Bed, City Centre",
+  "slug": "true-cost-rent-city-centre",
+  "market": "US",
+  "language": "en-US",
+  "durationTargetMin": 20,
+  "voice": { "provider": "elevenlabs", "accent": "natural", "rate": 1.0 },
+  "ledger": { "label": "Top rent", "unit": "USD" },
+  "calculator": {
+    "url": "https://faceless.finance/calc/rent-vs-income",
+    "cta": "See what that rent needs you to earn — link below."
+  },
+  "thumbnail": { "headline": "True Cost", "year": "2026", "pose": "think" },
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Which city bleeds renters the most?",
+      "script": "Eight English-speaking cities. One identical apartment: a one-bedroom, right in the centre. The gap between the cheapest and the most expensive is bigger than most people's entire paycheck. Here's the ranking.",
+      "animation": {
+        "stickFigure": { "clip": "think", "mood": "neutral", "anchor": "left" },
+        "chart": { "type": "bar-race" }
+      }
+    },
+    {
+      "id": "ch2",
+      "title": "New York tops it — $4,200 a month",
+      "script": "New York takes it: four thousand two hundred dollars a month for one bedroom. That is nearly three times Manchester at the bottom. Same apartment, same furniture, almost triple the price — and the only thing that changed is the dot on the map.",
+      "animation": {
+        "stickFigure": { "clip": "celebrate", "mood": "shock", "anchor": "left" },
+        "chart": { "type": "bar-race" }
+      }
+    }
+  ],
+  "figures": [
+    { "id": "fig-nyc", "label": "New York", "value": 4200, "unit": "USD", "year": "2026", "source": "numbeo" },
+    { "id": "fig-ldn", "label": "London", "value": 3100, "unit": "USD", "year": "2026", "source": "numbeo" },
+    { "id": "fig-syd", "label": "Sydney", "value": 2900, "unit": "USD", "year": "2026", "source": "numbeo" },
+    { "id": "fig-la", "label": "Los Angeles", "value": 2800, "unit": "USD", "year": "2026", "source": "numbeo" },
+    { "id": "fig-tor", "label": "Toronto", "value": 2500, "unit": "USD", "year": "2026", "source": "numbeo" },
+    { "id": "fig-mel", "label": "Melbourne", "value": 2200, "unit": "USD", "year": "2026", "source": "numbeo" },
+    { "id": "fig-chi", "label": "Chicago", "value": 2100, "unit": "USD", "year": "2026", "source": "numbeo" },
+    { "id": "fig-man", "label": "Manchester", "value": 1500, "unit": "USD", "year": "2026", "source": "numbeo" }
+  ],
+  "sources": [
+    {
+      "id": "numbeo",
+      "name": "PLACEHOLDER — replace with real Numbeo / ONS / Zillow rent data before publishing",
+      "url": "https://www.numbeo.com/cost-of-living/",
+      "accessed": "2026-11-07"
+    }
+  ]
+}
