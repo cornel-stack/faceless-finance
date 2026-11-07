@@ -4,6 +4,7 @@ import { StickFigureDemo } from "./StickFigureDemo";
 import { Episode, episodeDurationInFrames } from "./Episode";
 import { ClipSheet } from "./ClipSheet";
 import { DoodleSheet } from "./DoodleSheet";
+import { MotionLab, MotionReel } from "./MotionLab";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import { Film, filmDurationInFrames } from "./Film";
 import type { Scene } from "./scenes/types";
@@ -59,6 +60,24 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ episode, clips, timing, audioSrc, sources: sourcesIndex as unknown as Record<string, SourceEntry> }}
+      />
+      <Composition
+        id="MotionLab"
+        component={MotionLab}
+        durationInFrames={60}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
+      />
+      <Composition
+        id="MotionReel"
+        component={MotionReel}
+        durationInFrames={150}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
       />
       <Composition
         id="DoodleSheet"

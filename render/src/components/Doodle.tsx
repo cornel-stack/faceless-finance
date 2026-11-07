@@ -1,4 +1,5 @@
 import React from "react";
+import { useCurrentFrame } from "remotion";
 import { theme } from "../theme";
 
 // Code-drawn, flat-color doodle props with black outlines — the Casual Finance
@@ -110,8 +111,23 @@ function shape(name: DoodleName): React.ReactNode {
   }
 }
 
-export const Doodle: React.FC<{ name: DoodleName; size?: number }> = ({ name, size = 120 }) => (
-  <svg width={size} height={size} viewBox="0 0 100 100">
-    {shape(name)}
-  </svg>
-);
+export const Doodle: React.FC<{ name: DoodleName; size?: number; rough?: boolean }> = ({ name, size = 120, rough = false }) => {
+  const frame = useCurrentFrame();
+  const id = React.useId().replace(/:/g, "");
+  // "Line boil": the displacement seed changes a few times a second so the
+  // outline wiggles frame-to-frame, like hand-drawn animation.
+  const seed = Math.floor(frame / 4) % 7;
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100">
+      {rough && (
+        <defs>
+          <filter id={id} x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="turbulence" baseFrequency="0.028" numOctaves="2" seed={seed} result="n" />
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" />
+          </filter>
+        </defs>
+      )}
+      <g filter={rough ? `url(#${id})` : undefined}>{shape(name)}</g>
+    </svg>
+  );
+};
