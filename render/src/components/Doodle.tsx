@@ -1,13 +1,21 @@
 import React from "react";
+import { useCurrentFrame } from "remotion";
 import { RPath, RRect, RCircle, REllipse, RLine } from "../motion/rough";
+import { Flag, Country } from "./Flag";
 
 // Hand-drawn doodle props, rendered through Rough.js — wobbly outlines + solid
 // hand-coloured fills. No generative AI; pure code. Each in a 100×100 viewBox.
+// Every doodle gets a gentle idle micro-animation so nothing sits dead-still.
 export type DoodleName =
   | "coins" | "moneybag" | "house" | "bank" | "piggybank"
   | "dollar" | "chartup" | "chartdown" | "warning"
   | "globe" | "officetower" | "capitol" | "flag" | "bomb"
-  | "printer" | "iou" | "chain" | "crowd" | "scale";
+  | "printer" | "iou" | "chain" | "crowd" | "scale"
+  | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
+
+const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
+  flagJP: "jp", flagUS: "us", flagCN: "cn", flagGB: "gb", flagGR: "gr", flagAR: "ar", flagLK: "lk", flagEU: "eu",
+};
 
 const INK = "#17120f";
 const GOLD = "#e8b73a";
@@ -202,8 +210,28 @@ function shape(name: DoodleName): React.ReactNode {
   }
 }
 
-export const Doodle: React.FC<{ name: DoodleName; size?: number }> = ({ name, size = 120 }) => (
-  <svg width={size} height={size} viewBox="0 0 100 100">
-    {shape(name)}
-  </svg>
-);
+// Gentle per-doodle idle motion (frame-based transform around the 100×100 box).
+function idle(name: DoodleName, f: number): string | undefined {
+  if (name in FLAG_MAP) return undefined; // flags wave themselves
+  switch (name) {
+    case "globe": return `rotate(${Math.sin(f / 20) * 5} 50 52)`;
+    case "chain": return `rotate(${Math.sin(f / 14) * 4} 50 50)`;
+    case "bomb": return `translate(${Math.sin(f * 0.7) * 0.7} ${Math.cos(f * 0.5) * 0.5})`;
+    case "warning": return `rotate(${Math.sin(f / 10) * 3} 50 60)`;
+    case "chartup": { const s = 1 + Math.sin(f / 11) * 0.04; return `translate(${50 * (1 - s)} ${62 * (1 - s)}) scale(${s})`; }
+    case "crowd": return `translate(0 ${Math.sin(f / 12) * 1.4})`;
+    default: return `translate(0 ${Math.sin(f / 13) * 1.8})`;
+  }
+}
+
+export const Doodle: React.FC<{ name: DoodleName; size?: number }> = ({ name, size = 120 }) => {
+  const frame = useCurrentFrame();
+  const country = FLAG_MAP[name];
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100">
+      <g transform={idle(name, frame)}>
+        {country ? <Flag country={country} /> : shape(name)}
+      </g>
+    </svg>
+  );
+};

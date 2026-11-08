@@ -68,14 +68,17 @@ const PropCluster: React.FC<{ props: { name: DoodleName; label?: string }[] }> =
 
 const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
   const { width } = useVideoConfig();
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
   const hasProps = Boolean(scene.props && scene.props.length);
   const hasBubble = Boolean(scene.bubble);
   const mW = 520, mH = 880;
   const left = hasProps || hasBubble ? 110 : (width - mW) / 2;
+  const enter = spring({ frame, fps, config: { damping: 13, mass: 0.7 } });
   return (
     <AbsoluteFill>
       {hasProps && <PropCluster props={scene.props!} />}
-      <div style={{ position: "absolute", left, bottom: 10, width: mW, height: mH }}>
+      <div style={{ position: "absolute", left, bottom: 10, width: mW, height: mH, transform: `translateY(${(1 - enter) * 40}px) scale(${0.92 + enter * 0.08})`, transformOrigin: "bottom center" }}>
         <Mascot pose={scene.pose ?? "stand"} expression={scene.expression} variant={scene.variant} width={mW} height={mH} />
       </div>
       {hasBubble && (
@@ -95,13 +98,35 @@ const Callout: React.FC<{ scene: CalloutScene }> = ({ scene }) => {
   const { fps } = useVideoConfig();
   const s = spring({ frame, fps, config: { damping: 11, mass: 0.8 } });
   const shake = scene.break ? Math.sin(frame * 0.9) * interpolate(frame, [12, 34], [10, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
-  const sub = interpolate(frame, [14, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const sub = interpolate(frame, [16, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+  // Count-up for pure number/currency callouts.
+  const m = scene.text.trim().match(/^(\$?)([\d,]+)(%|\/[A-Za-z]+)?$/);
+  let display = scene.text;
+  if (m) {
+    const target = parseInt(m[2].replace(/,/g, ""), 10);
+    const p = interpolate(frame, [2, fps * 1.2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    display = m[1] + Math.round(target * p).toLocaleString("en-US") + (m[3] || "");
+  }
+
+  const fs = Math.min(200, Math.floor(1720 / Math.max(3, display.length * 0.56)));
+  // drawn-on red emphasis circle, hugging the number
+  const cx = 960, cyE = 486;
+  const rx = Math.min(870, display.length * fs * 0.28 + 64);
+  const ry = fs * 0.62;
+  const ell = `M ${cx - rx} ${cyE} C ${cx - rx} ${cyE - ry * 1.1} ${cx + rx} ${cyE - ry * 1.1} ${cx + rx} ${cyE} C ${cx + rx} ${cyE + ry * 1.1} ${cx - rx} ${cyE + ry * 1.1} ${cx - rx} ${cyE} Z`;
+  const circLen = 7 * Math.sqrt((rx * rx + ry * ry) / 2);
+  const rev = interpolate(frame, [fps * 0.55, fps * 1.5], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-      <div style={{ fontFamily: display, fontWeight: 900, fontSize: 210, color: scene.break ? theme.accent : theme.ink, transform: `scale(${s}) translateX(${shake}px)`, lineHeight: 1 }}>
-        {scene.text}
+      <svg width={1920} height={1080} style={{ position: "absolute" }}>
+        <path d={ell} fill="none" stroke={theme.accent} strokeWidth={9} strokeLinecap="round" strokeDasharray={circLen} strokeDashoffset={circLen * (1 - rev)} transform={`rotate(-4 ${cx} ${cyE})`} />
+      </svg>
+      <div style={{ fontFamily: display, fontWeight: 900, fontSize: fs, color: scene.break ? theme.accent : theme.ink, transform: `scale(${s}) translateX(${shake}px)`, lineHeight: 1, position: "relative", marginTop: -40 }}>
+        {display}
       </div>
-      {scene.sub && <div style={{ fontFamily: sans, fontWeight: 600, fontSize: 52, color: theme.inkSoft, marginTop: 28, opacity: sub, textAlign: "center", maxWidth: 1400 }}>{scene.sub}</div>}
+      {scene.sub && <div style={{ fontFamily: sans, fontWeight: 600, fontSize: 50, color: theme.inkSoft, marginTop: 40, opacity: sub, textAlign: "center", maxWidth: 1400 }}>{scene.sub}</div>}
     </AbsoluteFill>
   );
 };
@@ -242,7 +267,8 @@ const Compare: React.FC<{ scene: CompareScene }> = ({ scene }) => {
 
 export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, SourceEntry> }> = ({ scene, sources }) => {
   const frame = useCurrentFrame();
-  const fade = interpolate(frame, [0, 5], [0, 1], { extrapolateRight: "clamp" });
+  const fade = interpolate(frame, [0, 7], [0, 1], { extrapolateRight: "clamp" });
+  const slide = interpolate(frame, [0, 11], [34, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   let inner: React.ReactNode = null;
   switch (scene.type) {
     case "title": inner = <Title scene={scene} />; break;
@@ -254,5 +280,9 @@ export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, Source
     case "chalkboard": inner = <Chalkboard scene={scene} />; break;
     case "compare": inner = <Compare scene={scene} />; break;
   }
-  return <AbsoluteFill style={{ backgroundColor: theme.bg, opacity: fade }}>{inner}</AbsoluteFill>;
+  return (
+    <AbsoluteFill style={{ backgroundColor: theme.bg }}>
+      <AbsoluteFill style={{ opacity: fade, transform: `translateY(${slide}px)` }}>{inner}</AbsoluteFill>
+    </AbsoluteFill>
+  );
 };
