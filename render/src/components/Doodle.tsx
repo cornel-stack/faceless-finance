@@ -5,7 +5,9 @@ import { RPath, RRect, RCircle, REllipse, RLine } from "../motion/rough";
 // hand-coloured fills. No generative AI; pure code. Each in a 100×100 viewBox.
 export type DoodleName =
   | "coins" | "moneybag" | "house" | "bank" | "piggybank"
-  | "dollar" | "chartup" | "chartdown" | "warning";
+  | "dollar" | "chartup" | "chartdown" | "warning"
+  | "globe" | "officetower" | "capitol" | "flag" | "bomb"
+  | "printer" | "iou" | "chain" | "crowd" | "scale";
 
 const INK = "#17120f";
 const GOLD = "#e8b73a";
@@ -105,6 +107,96 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M50 22 L84 82 L16 82 Z" fill={YELLOW} strokeWidth={SW} />
           <RRect x={46} y={46} w={8} h={20} fill={INK} strokeWidth={1.6} />
           <RCircle cx={50} cy={74} d={8} fill={INK} strokeWidth={1.6} />
+        </>
+      );
+    case "globe":
+      return (
+        <>
+          <RCircle cx={50} cy={52} d={70} fill="#9bc6e3" strokeWidth={SW} />
+          <RPath d="M28 40 Q40 34 50 42 Q56 50 46 56 Q36 60 30 52 Z" fill={GREEN} strokeWidth={1.6} />
+          <RPath d="M58 62 Q70 58 72 68 Q66 76 58 70 Z" fill={GREEN} strokeWidth={1.6} />
+          <RPath d="M18 52 Q50 44 82 52" stroke={INK} strokeWidth={1.4} />
+          <RPath d="M50 18 Q40 52 50 86" stroke={INK} strokeWidth={1.4} />
+        </>
+      );
+    case "officetower":
+      return (
+        <>
+          <RRect x={34} y={18} w={32} h={70} fill="#9aa6ad" strokeWidth={SW} />
+          {[26, 40, 54, 68].flatMap((y) => [40, 52].map((x) => (
+            <RRect key={`${x}-${y}`} x={x} y={y} w={8} h={8} fill="#cfe6ef" strokeWidth={1.4} />
+          )))}
+        </>
+      );
+    case "capitol":
+      return (
+        <>
+          <REllipse cx={50} cy={34} w={24} h={16} fill="#eef0f1" strokeWidth={SW} />
+          <RRect x={47} y={22} w={6} h={9} fill="#eef0f1" strokeWidth={2} />
+          <RRect x={24} y={46} w={52} h={6} fill="#fff" strokeWidth={SW} />
+          {[28, 40, 52, 64].map((x) => <RRect key={x} x={x} y={52} w={6} h={24} fill="#fff" strokeWidth={1.8} />)}
+          <RRect x={20} y={78} w={60} h={8} fill="#fff" strokeWidth={SW} />
+        </>
+      );
+    case "flag":
+      return (
+        <>
+          <RPath d="M28 14 L28 88" stroke={INK} strokeWidth={SW} />
+          <RRect x={28} y={16} w={40} h={26} fill={RED} strokeWidth={SW} />
+        </>
+      );
+    case "bomb":
+      return (
+        <>
+          <RCircle cx={46} cy={62} d={50} fill="#2a2a2a" strokeWidth={SW} />
+          <RRect x={42} y={30} w={9} h={9} fill="#2a2a2a" strokeWidth={2} />
+          <RPath d="M51 32 Q62 20 68 28" stroke={INK} strokeWidth={2.6} />
+          <RPath d="M68 26 L73 22 M68 28 L74 29 M68 28 L67 34" stroke={RED} strokeWidth={2.2} />
+        </>
+      );
+    case "printer":
+      return (
+        <>
+          <RRect x={40} y={30} w={20} h={20} fill={GREEN} strokeWidth={2} />
+          <text x={50} y={45} fontSize={13} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <RRect x={26} y={50} w={48} h={32} fill="#9aa6ad" strokeWidth={SW} />
+          <RRect x={31} y={58} w={13} h={5} fill="#cfe6ef" strokeWidth={1.4} />
+        </>
+      );
+    case "iou":
+      return (
+        <>
+          <RRect x={30} y={20} w={40} h={58} fill="#fff" strokeWidth={SW} />
+          <text x={50} y={40} fontSize={16} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">IOU</text>
+          {[52, 62, 72].map((y) => <RPath key={y} d={`M37 ${y} L63 ${y}`} stroke={INK} strokeWidth={1.6} />)}
+        </>
+      );
+    case "chain":
+      return (
+        <>
+          <REllipse cx={40} cy={52} w={24} h={36} fill="none" strokeWidth={5} />
+          <REllipse cx={61} cy={52} w={24} h={36} fill="none" strokeWidth={5} />
+        </>
+      );
+    case "crowd":
+      return (
+        <>
+          {[30, 50, 70].map((x, i) => (
+            <g key={x}>
+              <RCircle cx={x} cy={44} d={17} fill={["#f4c7a1", "#e8c49a", "#f0cda6"][i]} strokeWidth={2} />
+              <RPath d={`M${x - 10} 86 Q${x - 10} 60 ${x} 60 Q${x + 10} 60 ${x + 10} 86`} fill={[GREEN, RED, "#4a74b8"][i]} strokeWidth={2} />
+            </g>
+          ))}
+        </>
+      );
+    case "scale":
+      return (
+        <>
+          <RPath d="M50 22 L50 76" stroke={INK} strokeWidth={SW} />
+          <RRect x={40} y={78} w={20} h={6} fill={TAN} strokeWidth={2} />
+          <RPath d="M26 30 L74 30" stroke={INK} strokeWidth={SW} />
+          <RPath d="M26 30 L19 46 L33 46 Z" fill={TAN} strokeWidth={2} />
+          <RPath d="M74 30 L67 46 L81 46 Z" fill={TAN} strokeWidth={2} />
         </>
       );
   }

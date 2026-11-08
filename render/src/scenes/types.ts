@@ -22,6 +22,9 @@ export interface CharacterScene extends Base {
   expression?: Expression;
   variant?: "normal" | "villain" | "king";
   bubble?: string;
+  /** illustrations clustered beside the character (so no scene is bare) */
+  props?: { name: DoodleName; label?: string }[];
+  caption?: string;
 }
 export interface CalloutScene extends Base {
   type: "callout";

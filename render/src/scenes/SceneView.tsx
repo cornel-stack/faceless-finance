@@ -3,7 +3,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring } fr
 import { theme, money } from "../theme";
 import { display, sans } from "../fonts";
 import { Mascot } from "../components/Mascot";
-import { Doodle } from "../components/Doodle";
+import { Doodle, DoodleName } from "../components/Doodle";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScreenshotSource } from "../components/ScreenshotSource";
 import { RRect, RPath, RLine } from "../motion/rough";
@@ -37,20 +37,54 @@ const Title: React.FC<{ scene: TitleScene }> = ({ scene }) => {
   );
 };
 
+// Scattered slots for the prop cluster to the right of the character.
+const PROP_SLOTS: { x: number; y: number; s: number }[][] = [
+  [],
+  [{ x: 1200, y: 420, s: 400 }],
+  [{ x: 1010, y: 300, s: 340 }, { x: 1470, y: 560, s: 320 }],
+  [{ x: 1000, y: 270, s: 310 }, { x: 1500, y: 330, s: 280 }, { x: 1230, y: 640, s: 330 }],
+  [{ x: 970, y: 250, s: 270 }, { x: 1440, y: 270, s: 260 }, { x: 1120, y: 580, s: 290 }, { x: 1560, y: 610, s: 240 }],
+];
+
+const PropCluster: React.FC<{ props: { name: DoodleName; label?: string }[] }> = ({ props }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const slots = PROP_SLOTS[Math.min(props.length, 4)];
+  return (
+    <>
+      {props.slice(0, 4).map((p, i) => {
+        const slot = slots[i];
+        const s = spring({ frame, fps, delay: 8 + i * 7, config: { damping: 12, mass: 0.6 } });
+        return (
+          <div key={i} style={{ position: "absolute", left: slot.x - slot.s / 2, top: slot.y - slot.s / 2, width: slot.s, transform: `scale(${s})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
+            <Doodle name={p.name} size={slot.s} />
+            {p.label && <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 34, color: theme.ink, textAlign: "center" }}>{p.label}</div>}
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
 const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
   const { width } = useVideoConfig();
+  const hasProps = Boolean(scene.props && scene.props.length);
   const hasBubble = Boolean(scene.bubble);
-  const mW = 540, mH = 860;
-  const left = hasBubble ? 150 : (width - mW) / 2;
+  const mW = 520, mH = 880;
+  const left = hasProps || hasBubble ? 110 : (width - mW) / 2;
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", left, bottom: 20, width: mW, height: mH }}>
+      {hasProps && <PropCluster props={scene.props!} />}
+      <div style={{ position: "absolute", left, bottom: 10, width: mW, height: mH }}>
         <Mascot pose={scene.pose ?? "stand"} expression={scene.expression} variant={scene.variant} width={mW} height={mH} />
       </div>
       {hasBubble && (
-        <div style={{ position: "absolute", left: 740, top: 300, width: 980 }}>
-          <SpeechBubble text={scene.bubble!} width={980} tail="left" delay={6} />
+        <div style={{ position: "absolute", left: left + 40, top: 120, width: 660 }}>
+          <SpeechBubble text={scene.bubble!} width={660} tail="down" delay={6} />
         </div>
+      )}
+      {scene.caption && (
+        <div style={{ position: "absolute", left: 0, bottom: 56, width, textAlign: "center", fontFamily: display, fontWeight: 900, fontSize: 54, color: theme.ink }}>{scene.caption}</div>
       )}
     </AbsoluteFill>
   );
