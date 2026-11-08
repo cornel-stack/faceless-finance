@@ -111,7 +111,7 @@ export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: 
   const LW = 3.4; // thin stick body
 
   return (
-    <svg width={width} height={height} viewBox="0 0 100 175" preserveAspectRatio="xMidYMid meet">
+    <svg width={width} height={height} viewBox="0 -22 100 197" preserveAspectRatio="xMidYMid meet">
       <g transform={`translate(0 ${bob})`}>
         {/* thin stick body */}
         <RPath d={`M ${p.neck[0]} ${p.neck[1]} L ${p.pelvis[0]} ${p.pelvis[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
