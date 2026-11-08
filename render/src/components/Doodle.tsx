@@ -10,6 +10,7 @@ export type DoodleName =
   | "dollar" | "chartup" | "chartdown" | "warning"
   | "globe" | "officetower" | "capitol" | "flag" | "bomb"
   | "printer" | "iou" | "chain" | "crowd" | "scale"
+  | "debtclock" | "newspaper" | "bond" | "refinance" | "tank"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -23,6 +24,8 @@ const RED = "#c0392b";
 const PINK = "#e79ab0";
 const TAN = "#d8c29a";
 const YELLOW = "#f2c744";
+const ARMY = "#6f7a3f";
+const PARCH = "#fbf3d9";
 
 const SW = 2.4;
 
@@ -204,6 +207,56 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M26 30 L74 30" stroke={INK} strokeWidth={SW} />
           <RPath d="M26 30 L19 46 L33 46 Z" fill={TAN} strokeWidth={2} />
           <RPath d="M74 30 L67 46 L81 46 Z" fill={TAN} strokeWidth={2} />
+        </>
+      );
+    case "debtclock":
+      return (
+        <>
+          <RRect x={12} y={30} w={76} h={40} fill="#15181c" strokeWidth={SW} />
+          <text x={50} y={25} fontSize={9} fontWeight={700} fill={INK} textAnchor="middle" fontFamily="Arial, sans-serif">U.S. DEBT</text>
+          <text x={50} y={57} fontSize={20} fontWeight={900} fill="#ff4133" textAnchor="middle" fontFamily="'Courier New', monospace">$40.0T</text>
+        </>
+      );
+    case "newspaper":
+      return (
+        <>
+          <RRect x={22} y={22} w={58} h={60} fill="#fff" strokeWidth={SW} />
+          <text x={51} y={35} fontSize={9} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">THE TIMES</text>
+          <RLine x1={27} y1={40} x2={75} y2={40} strokeWidth={1.4} />
+          <text x={51} y={52} fontSize={12} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">DEBT!</text>
+          <RRect x={27} y={58} w={22} h={18} fill="#cdd8de" strokeWidth={1.4} />
+          {[62, 68, 74].map((y) => <RLine key={y} x1={53} y1={y} x2={75} y2={y} strokeWidth={1.2} />)}
+        </>
+      );
+    case "bond":
+      return (
+        <>
+          <RRect x={16} y={26} w={68} h={48} fill={PARCH} strokeWidth={SW} />
+          <text x={44} y={43} fontSize={13} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">BOND</text>
+          <RLine x1={24} y1={50} x2={62} y2={50} strokeWidth={1.4} />
+          <text x={34} y={68} fontSize={12} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$100</text>
+          <RCircle cx={68} cy={62} d={16} fill={GOLD} strokeWidth={2} />
+          <RPath d="M64 70 L62 80 L68 76 L74 80 L72 70 Z" fill={RED} strokeWidth={1.6} />
+        </>
+      );
+    case "refinance":
+      return (
+        <>
+          <RPath d="M74 44 A26 26 0 0 1 56 78" stroke={GREEN} strokeWidth={4} fill="none" />
+          <RPath d="M56 78 L63 73 M56 78 L61 70" stroke={GREEN} strokeWidth={4} />
+          <RPath d="M26 60 A26 26 0 0 1 44 26" stroke={GREEN} strokeWidth={4} fill="none" />
+          <RPath d="M44 26 L37 31 M44 26 L39 34" stroke={GREEN} strokeWidth={4} />
+          <text x={50} y={61} fontSize={24} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </>
+      );
+    case "tank":
+      return (
+        <>
+          <REllipse cx={50} cy={74} w={64} h={16} fill="#444" strokeWidth={SW} />
+          {[32, 50, 68].map((x) => <RCircle key={x} cx={x} cy={74} d={13} fill="#666" strokeWidth={1.6} />)}
+          <RRect x={24} y={54} w={52} h={16} fill={ARMY} strokeWidth={SW} />
+          <RRect x={40} y={42} w={22} h={14} fill={ARMY} strokeWidth={2} />
+          <RLine x1={60} y1={48} x2={88} y2={44} strokeWidth={5} />
         </>
       );
   }

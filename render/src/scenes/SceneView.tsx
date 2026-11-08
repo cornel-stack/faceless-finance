@@ -47,8 +47,6 @@ const PROP_SLOTS: { x: number; y: number; s: number }[][] = [
   [{ x: 970, y: 250, s: 270 }, { x: 1440, y: 270, s: 260 }, { x: 1120, y: 580, s: 290 }, { x: 1560, y: 610, s: 240 }],
 ];
 
-const MONEY_PROPS = ["coins", "moneybag", "dollar", "piggybank", "printer", "bank"];
-
 const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
   const { width } = useVideoConfig();
   const frame = useCurrentFrame();
@@ -66,8 +64,6 @@ const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
   const slots = hasProps
     ? PROP_SLOTS[Math.min(props.length, 4)].map((s) => (charRight ? { ...s, x: 1920 - s.x } : s))
     : [];
-  const anchorX = flip ? charLeft + mW * 0.2 : charLeft + mW * 0.8;
-  const anchorY = 470;
   const enter = spring({ frame, fps, config: { damping: 13, mass: 0.7 } });
 
   return (
@@ -83,16 +79,6 @@ const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
           </div>
         );
       })}
-      {/* drawn arrows from the character to each prop (coins flow to money ones) */}
-      {hasProps && (
-        <svg width={1920} height={1080} style={{ position: "absolute" }}>
-          {props.slice(0, 4).map((p, i) => {
-            const slot = slots[i];
-            const ex = slot.x + (anchorX < slot.x ? -slot.s * 0.36 : slot.s * 0.36);
-            return <Arrow key={i} x1={anchorX} y1={anchorY} x2={ex} y2={slot.y} delay={16 + i * 8} bend={0.16 * (i % 2 ? 1 : -1)} flow={MONEY_PROPS.includes(p.name)} />;
-          })}
-        </svg>
-      )}
       {/* character */}
       <div style={{ position: "absolute", left: charLeft, bottom: 10, width: mW, height: mH, transform: `translateY(${(1 - enter) * 40}px) scale(${0.92 + enter * 0.08})`, transformOrigin: "bottom center" }}>
         <Mascot pose={scene.pose ?? "stand"} expression={scene.expression} variant={scene.variant} flip={flip} width={mW} height={mH} />
@@ -292,8 +278,9 @@ const Compare: React.FC<{ scene: CompareScene }> = ({ scene }) => {
   const bothShown = scene.only !== "left";
   const l = bothShown ? 1 : spring({ frame, fps, delay: 4, config: { damping: 16 } });
   const r = spring({ frame, fps, delay: 4, config: { damping: 16 } });
-  const card = (c: { title: string; value: string }, p: number, accent: boolean) => (
-    <div style={{ width: 640, padding: "60px 40px", borderRadius: 18, border: `4px solid ${accent ? theme.accent : theme.ink}`, background: "#fff", textAlign: "center", opacity: p, transform: `translateY(${interpolate(p, [0, 1], [30, 0])}px)`, boxShadow: "0 12px 0 rgba(23,18,15,0.08)" }}>
+  const card = (c: { title: string; value: string; icon?: DoodleName }, p: number, accent: boolean) => (
+    <div style={{ width: 640, padding: "44px 40px 56px", borderRadius: 18, border: `4px solid ${accent ? theme.accent : theme.ink}`, background: "#fff", textAlign: "center", opacity: p, transform: `translateY(${interpolate(p, [0, 1], [30, 0])}px)`, boxShadow: "0 12px 0 rgba(23,18,15,0.08)", display: "flex", flexDirection: "column", alignItems: "center" }}>
+      {c.icon && <div style={{ marginBottom: 10 }}><Doodle name={c.icon} size={150} /></div>}
       <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 40, color: theme.inkSoft }}>{c.title}</div>
       <div style={{ fontFamily: display, fontWeight: 900, fontSize: 96, color: accent ? theme.accent : theme.ink, marginTop: 14 }}>{c.value}</div>
     </div>

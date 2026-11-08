@@ -61,8 +61,8 @@ export interface ChalkboardScene extends Base {
 }
 export interface CompareScene extends Base {
   type: "compare";
-  left: { title: string; value: string };
-  right: { title: string; value: string };
+  left: { title: string; value: string; icon?: DoodleName };
+  right: { title: string; value: string; icon?: DoodleName };
   only?: "left"; // reveal left first, then cut to both (cut-driven contrast)
 }
 
