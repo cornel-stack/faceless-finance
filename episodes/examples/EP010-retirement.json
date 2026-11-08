@@ -6,68 +6,28 @@
   "market": "US",
   "language": "en-US",
   "voice": { "provider": "edge", "accent": "natural" },
-  "note": "Scene-based episode (proof slice of the full script). Figures illustrative — verify before publishing.",
+  "note": "Scene-based (proof slice). Short scenes = frequent cuts, especially up front. Figures illustrative — verify before publishing.",
   "scenes": [
-    {
-      "id": "s1", "type": "character", "pose": "stand", "expression": "neutral", "bubble": "Everyone has a number.",
-      "narration": "Everyone has a number. The amount you're supposed to have saved before you're allowed to stop working. You've seen it in a hundred headlines — a million and a half dollars, give or take. And almost nobody is anywhere near it."
-    },
-    {
-      "id": "s2", "type": "callout", "text": "$1,500,000", "sub": "…and the number itself quietly stopped working.", "break": true,
-      "narration": "But the scary part of retirement in America isn't that people are behind on the number. It's that the number itself quietly stopped working."
-    },
-    {
-      "id": "s3", "type": "title", "kicker": "By the Numbers", "heading": "Why Most Americans Will Never Retire",
-      "narration": "So let's actually do the math. Not the vibes — the real numbers, one line at a time."
-    },
-    {
-      "id": "s4", "type": "doodle", "items": ["bank", "dollar", "piggybank"], "labels": ["Pension", "Social Security", "Savings"], "caption": "Three legs. One stool.",
-      "narration": "Retirement was supposed to stand on three legs. A pension from your job. Social Security from the government. And your own savings on top."
-    },
-    {
-      "id": "s5", "type": "chart", "chartType": "line", "title": "Private workers with a pension (%)",
-      "data": [{ "label": "1980", "value": 60 }, { "label": "1990", "value": 42 }, { "label": "2000", "value": 25 }, { "label": "2010", "value": 15 }, { "label": "Today", "value": 9 }],
-      "narration": "In 1980, most workers with a plan had a pension — a guaranteed check for life. Today, it's fewer than one in ten. The guaranteed check didn't shrink. It disappeared."
-    },
-    {
-      "id": "s6", "type": "character", "pose": "point", "expression": "neutral", "variant": "villain", "bubble": "A 401(k) is a bet.",
-      "narration": "In its place, your employer handed you a 401k and wished you luck. A pension is a promise. A 401k is a bet — on the market, and on you."
-    },
-    {
-      "id": "s7", "type": "screenshot", "sourceId": "ss-benefit", "caption": "The government's floor", "reaction": "worried",
-      "narration": "Then Social Security — the leg everyone assumes will catch them. The average retired worker collects about nineteen hundred dollars a month."
-    },
-    {
-      "id": "s8", "type": "callout", "text": "$1,903/mo", "sub": "≈ $23,000 a year. The average check.",
-      "narration": "Nineteen hundred and three dollars a month. Call it twenty-three thousand dollars a year. For a lot of people, that isn't a floor — it's the whole house."
-    },
-    {
-      "id": "s9", "type": "chalkboard", "lines": ["Income needed ÷ 4% = Your Number", "$40,000 ÷ 0.04 = $1,000,000"],
-      "narration": "The famous four percent rule tells you how big the pile must be. Want forty thousand dollars a year from savings? Divide by four percent. You need one million dollars."
-    },
-    {
-      "id": "s10", "type": "chart", "chartType": "bar", "unit": "USD", "highlight": 2, "title": "Median retirement savings, by age",
-      "data": [{ "label": "35–44", "value": 45000 }, { "label": "45–54", "value": 115000 }, { "label": "55–64", "value": 185000 }],
-      "narration": "And what do people actually have? The typical household aged 55 to 64, staring retirement in the face, has about a hundred and eighty-five thousand dollars."
-    },
-    {
-      "id": "s11", "type": "callout", "text": "$7,400/yr", "sub": "what $185,000 actually pays you", "break": true,
-      "narration": "Under the four percent rule, that produces about seven thousand four hundred dollars a year. Six hundred dollars a month, to carry you through thirty years of life."
-    },
-    {
-      "id": "s12", "type": "compare",
-      "left": { "title": "The math asks for", "value": "$1,000,000" },
-      "right": { "title": "The typical saver has", "value": "$185,000" },
-      "narration": "The math asks a regular person for a million dollars. The typical near-retiree has a fraction of that. The stool doesn't wobble. It falls."
-    }
+    { "id": "s1", "type": "character", "pose": "stand", "expression": "neutral", "bubble": "Everyone has a number.", "narration": "Everyone has a number." },
+    { "id": "s2", "type": "character", "pose": "think", "expression": "worried", "narration": "The amount you're told you need before you can finally stop working." },
+    { "id": "s3", "type": "callout", "text": "$1,500,000", "sub": "the headline retirement number", "narration": "You've seen it — about a million and a half dollars." },
+    { "id": "s4", "type": "character", "pose": "stand", "expression": "worried", "narration": "And almost nobody is anywhere near it." },
+    { "id": "s5", "type": "callout", "text": "$1,500,000", "break": true, "sub": "…quietly stopped working", "narration": "But here's the scary part. It isn't that people are behind on the number. It's that the number itself quietly stopped working." },
+    { "id": "s6", "type": "title", "kicker": "By the Numbers", "heading": "Why Most Americans Will Never Retire", "narration": "So let's do the math. One line at a time." },
+    { "id": "s7", "type": "doodle", "items": ["bank", "dollar", "piggybank"], "labels": ["Pension", "Social Security", "Savings"], "caption": "Three legs. One stool.", "narration": "Retirement was supposed to stand on three legs. A pension. Social Security. And your own savings." },
+    { "id": "s8", "type": "character", "pose": "point", "expression": "neutral", "variant": "villain", "bubble": "Two legs — gone.", "narration": "But two of those legs have quietly been sawn off." },
+    { "id": "s9", "type": "chart", "chartType": "line", "title": "Private workers with a pension (%)", "data": [{ "label": "1980", "value": 60 }, { "label": "1990", "value": 42 }, { "label": "2000", "value": 25 }, { "label": "2010", "value": 15 }, { "label": "Today", "value": 9 }], "narration": "In 1980, most workers with a plan had a pension. Today, it's fewer than one in ten." },
+    { "id": "s10", "type": "character", "pose": "point", "expression": "neutral", "variant": "villain", "bubble": "A 401(k) is a bet.", "narration": "In its place: a 401k. A pension is a promise. A 401k is a bet." },
+    { "id": "s11", "type": "screenshot", "sourceId": "ss-benefit", "caption": "The government's floor", "reaction": "worried", "narration": "Then Social Security. The average retired worker collects about nineteen hundred dollars a month." },
+    { "id": "s12", "type": "callout", "text": "$1,903/mo", "sub": "≈ $23,000 a year", "narration": "Call it twenty-three thousand dollars a year. For a lot of people, that's not a floor — it's the whole house." },
+    { "id": "s13", "type": "chalkboard", "lines": ["Income you want ÷ 4% = Your Number", "$40,000 ÷ 0.04 = $1,000,000"], "narration": "The four percent rule sets the target. Want forty thousand a year? You need one million dollars." },
+    { "id": "s14", "type": "callout", "text": "$1,000,000", "sub": "to replace one ordinary paycheck", "narration": "A million dollars — just to replace one ordinary income." },
+    { "id": "s15", "type": "chart", "chartType": "bar", "unit": "USD", "highlight": 2, "title": "Median retirement savings, by age", "data": [{ "label": "35–44", "value": 45000 }, { "label": "45–54", "value": 115000 }, { "label": "55–64", "value": 185000 }], "narration": "And the typical household nearing retirement? About a hundred and eighty-five thousand dollars." },
+    { "id": "s16", "type": "callout", "text": "$7,400/yr", "break": true, "sub": "what $185,000 actually pays", "narration": "Under the four percent rule, that pays about seven thousand four hundred dollars a year. Six hundred a month." },
+    { "id": "s17", "type": "compare", "left": { "title": "The math asks for", "value": "$1,000,000" }, "right": { "title": "The typical saver has", "value": "$185,000" }, "narration": "The math asks a regular person for a million dollars. The typical saver has a fraction of that." },
+    { "id": "s18", "type": "character", "pose": "surprised", "expression": "surprised", "bubble": "The stool falls.", "narration": "The stool doesn't wobble. It falls." }
   ],
   "sources": [
-    {
-      "id": "ss-benefit",
-      "name": "Social Security (United States) — Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Social_Security_(United_States)",
-      "accessed": "2026-11-07",
-      "quote": "The average monthly Social Security benefit for May 2025 was $1,903"
-    }
+    { "id": "ss-benefit", "name": "Social Security (United States) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Social_Security_(United_States)", "accessed": "2026-11-07", "quote": "The average monthly Social Security benefit for May 2025 was $1,903" }
   ]
 }

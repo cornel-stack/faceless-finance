@@ -5,6 +5,7 @@ import { Episode, episodeDurationInFrames } from "./Episode";
 import { ClipSheet } from "./ClipSheet";
 import { DoodleSheet } from "./DoodleSheet";
 import { MotionLab, MotionReel } from "./MotionLab";
+import { MascotSheet } from "./MascotSheet";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import { Film, filmDurationInFrames } from "./Film";
 import type { Scene } from "./scenes/types";
@@ -74,6 +75,15 @@ export const RemotionRoot: React.FC = () => {
         id="MotionReel"
         component={MotionReel}
         durationInFrames={150}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
+      />
+      <Composition
+        id="MascotSheet"
+        component={MascotSheet}
+        durationInFrames={30}
         fps={FPS}
         width={1920}
         height={1080}

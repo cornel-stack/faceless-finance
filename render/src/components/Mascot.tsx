@@ -1,171 +1,121 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
-import { theme } from "../theme";
-import { useBoil } from "../motion/boil";
+import { RPath, RCircle, REllipse, RLine } from "../motion/rough";
 
-// Code-drawn, hand-stickman-style host with a face and a handful of poses — the
-// Casual Finance look. Static apart from a subtle idle breath. No generative AI;
-// pure SVG. Drawn in a 100×170 viewBox so proportions never distort.
+// A cartoon character — a round head with a real cartoon face (eyes with pupils,
+// brows, nose, expressive mouth, a tuft of hair) on a stick-figure body. Drawn
+// through Rough.js so every line is hand-sketched. Casual Finance style.
 
 export type Pose = "stand" | "walk" | "point" | "think" | "surprised" | "celebrate";
 export type Expression = "neutral" | "happy" | "worried" | "surprised";
+export type Variant = "normal" | "villain" | "king";
 
 type Pt = [number, number];
-type PoseDef = {
-  head: Pt;
-  neck: Pt;
-  pelvis: Pt;
-  arms: { Lel: Pt; Lwr: Pt; Rel: Pt; Rwr: Pt };
-  legs: { Lkn: Pt; Lan: Pt; Rkn: Pt; Ran: Pt };
-};
+type PoseDef = { head: Pt; neck: Pt; pelvis: Pt; arms: { Lel: Pt; Lwr: Pt; Rel: Pt; Rwr: Pt }; legs: { Lkn: Pt; Lan: Pt; Rkn: Pt; Ran: Pt } };
 
 const SH_L: Pt = [41, 52];
 const SH_R: Pt = [59, 52];
+const INK = "#17120f";
+const HEAD_R = 16;
 
 const POSES: Record<Pose, PoseDef> = {
-  stand: {
-    head: [50, 26], neck: [50, 42], pelvis: [50, 100],
-    arms: { Lel: [32, 76], Lwr: [29, 98], Rel: [68, 76], Rwr: [71, 98] },
-    legs: { Lkn: [43, 132], Lan: [41, 164], Rkn: [57, 132], Ran: [59, 164] },
-  },
-  walk: {
-    head: [50, 26], neck: [50, 42], pelvis: [50, 100],
-    arms: { Lel: [35, 74], Lwr: [31, 94], Rel: [66, 78], Rwr: [70, 98] },
-    legs: { Lkn: [45, 130], Lan: [36, 162], Rkn: [58, 132], Ran: [67, 164] },
-  },
-  point: {
-    head: [50, 26], neck: [50, 42], pelvis: [50, 100],
-    arms: { Lel: [32, 76], Lwr: [29, 98], Rel: [74, 46], Rwr: [95, 37] },
-    legs: { Lkn: [43, 132], Lan: [41, 164], Rkn: [57, 132], Ran: [59, 164] },
-  },
-  think: {
-    head: [48, 26], neck: [49, 42], pelvis: [50, 100],
-    arms: { Lel: [40, 78], Lwr: [53, 88], Rel: [64, 74], Rwr: [53, 44] },
-    legs: { Lkn: [43, 132], Lan: [41, 164], Rkn: [57, 132], Ran: [59, 164] },
-  },
-  surprised: {
-    head: [50, 26], neck: [50, 42], pelvis: [50, 100],
-    arms: { Lel: [30, 40], Lwr: [22, 22], Rel: [70, 40], Rwr: [78, 22] },
-    legs: { Lkn: [42, 132], Lan: [37, 164], Rkn: [58, 132], Ran: [63, 164] },
-  },
-  celebrate: {
-    head: [50, 24], neck: [50, 40], pelvis: [50, 98],
-    arms: { Lel: [33, 32], Lwr: [27, 12], Rel: [67, 32], Rwr: [73, 12] },
-    legs: { Lkn: [44, 128], Lan: [42, 156], Rkn: [57, 128], Ran: [60, 156] },
-  },
+  stand: { head: [50, 26], neck: [50, 42], pelvis: [50, 100], arms: { Lel: [32, 76], Lwr: [29, 98], Rel: [68, 76], Rwr: [71, 98] }, legs: { Lkn: [43, 132], Lan: [41, 164], Rkn: [57, 132], Ran: [59, 164] } },
+  walk: { head: [50, 26], neck: [50, 42], pelvis: [50, 100], arms: { Lel: [35, 74], Lwr: [31, 94], Rel: [66, 78], Rwr: [70, 98] }, legs: { Lkn: [45, 130], Lan: [36, 162], Rkn: [58, 132], Ran: [67, 164] } },
+  point: { head: [50, 26], neck: [50, 42], pelvis: [50, 100], arms: { Lel: [32, 76], Lwr: [29, 98], Rel: [74, 46], Rwr: [95, 37] }, legs: { Lkn: [43, 132], Lan: [41, 164], Rkn: [57, 132], Ran: [59, 164] } },
+  think: { head: [48, 26], neck: [49, 42], pelvis: [50, 100], arms: { Lel: [40, 78], Lwr: [53, 88], Rel: [64, 74], Rwr: [53, 44] }, legs: { Lkn: [43, 132], Lan: [41, 164], Rkn: [57, 132], Ran: [59, 164] } },
+  surprised: { head: [50, 26], neck: [50, 42], pelvis: [50, 100], arms: { Lel: [30, 40], Lwr: [22, 22], Rel: [70, 40], Rwr: [78, 22] }, legs: { Lkn: [42, 132], Lan: [37, 164], Rkn: [58, 132], Ran: [63, 164] } },
+  celebrate: { head: [50, 24], neck: [50, 40], pelvis: [50, 98], arms: { Lel: [33, 32], Lwr: [27, 12], Rel: [67, 32], Rwr: [73, 12] }, legs: { Lkn: [44, 128], Lan: [42, 156], Rkn: [57, 128], Ran: [60, 156] } },
 };
 
 const DEFAULT_EXPRESSION: Record<Pose, Expression> = {
-  stand: "neutral", walk: "neutral", point: "happy",
-  think: "worried", surprised: "surprised", celebrate: "happy",
+  stand: "neutral", walk: "neutral", point: "happy", think: "worried", surprised: "surprised", celebrate: "happy",
 };
 
-const HEAD_R = 15;
-
-function Face({ cx, cy, expr }: { cx: number; cy: number; expr: Expression }) {
-  const eyeY = cy - 2;
-  const eyeDx = 5.5;
-  const eyeR = expr === "surprised" ? 2.6 : 2.1;
+const Face: React.FC<{ cx: number; cy: number; expr: Expression }> = ({ cx, cy, expr }) => {
+  const ex = 6, ey = cy - 2; // eye offset
+  const browY = expr === "surprised" ? cy - 9 : cy - 7;
+  const brow = (dir: number) =>
+    expr === "worried"
+      ? { a: [cx + dir * 9, browY + 2], b: [cx + dir * 3, browY + 4] }
+      : { a: [cx + dir * 9, browY], b: [cx + dir * 3, browY - (expr === "surprised" ? 2 : 1)] };
+  const bl = brow(-1), br = brow(1);
   return (
-    <g fill={theme.ink} stroke="none">
-      <circle cx={cx - eyeDx} cy={eyeY} r={eyeR} />
-      <circle cx={cx + eyeDx} cy={eyeY} r={eyeR} />
+    <>
+      {/* eye whites + pupils */}
+      <RCircle cx={cx - ex} cy={ey} d={7} fill="#fff" stroke={INK} strokeWidth={1.4} />
+      <RCircle cx={cx + ex} cy={ey} d={7} fill="#fff" stroke={INK} strokeWidth={1.4} />
+      <circle cx={cx - ex + 0.5} cy={ey + 0.5} r={1.7} fill={INK} />
+      <circle cx={cx + ex + 0.5} cy={ey + 0.5} r={1.7} fill={INK} />
       {/* brows */}
-      {expr === "surprised" && (
-        <g stroke={theme.ink} strokeWidth={1.4} strokeLinecap="round">
-          <line x1={cx - 9} y1={cy - 8} x2={cx - 3} y2={cy - 9} />
-          <line x1={cx + 3} y1={cy - 9} x2={cx + 9} y2={cy - 8} />
-        </g>
-      )}
-      {expr === "worried" && (
-        <g stroke={theme.ink} strokeWidth={1.4} strokeLinecap="round">
-          <line x1={cx - 9} y1={cy - 7} x2={cx - 3} y2={cy - 5} />
-          <line x1={cx + 3} y1={cy - 5} x2={cx + 9} y2={cy - 7} />
-        </g>
-      )}
+      <RLine x1={bl.a[0]} y1={bl.a[1]} x2={bl.b[0]} y2={bl.b[1]} stroke={INK} strokeWidth={1.6} />
+      <RLine x1={br.a[0]} y1={br.a[1]} x2={br.b[0]} y2={br.b[1]} stroke={INK} strokeWidth={1.6} />
+      {/* nose */}
+      <RPath d={`M ${cx + 1} ${cy + 1} L ${cx + 2.6} ${cy + 4} L ${cx - 0.4} ${cy + 4.4}`} stroke={INK} strokeWidth={1.4} />
       {/* mouth */}
-      {expr === "neutral" && <line x1={cx - 4} y1={cy + 7} x2={cx + 4} y2={cy + 7} stroke={theme.ink} strokeWidth={1.6} strokeLinecap="round" />}
-      {expr === "happy" && <path d={`M ${cx - 6} ${cy + 5} Q ${cx} ${cy + 12} ${cx + 6} ${cy + 5}`} fill="none" stroke={theme.ink} strokeWidth={1.8} strokeLinecap="round" />}
-      {expr === "worried" && <path d={`M ${cx - 5} ${cy + 9} Q ${cx} ${cy + 4} ${cx + 5} ${cy + 9}`} fill="none" stroke={theme.ink} strokeWidth={1.8} strokeLinecap="round" />}
-      {expr === "surprised" && <ellipse cx={cx} cy={cy + 8} rx={2.8} ry={3.6} fill={theme.ink} />}
-    </g>
+      {expr === "neutral" && <RPath d={`M ${cx - 5} ${cy + 8} Q ${cx} ${cy + 9} ${cx + 5} ${cy + 8}`} stroke={INK} strokeWidth={1.8} />}
+      {expr === "happy" && <RPath d={`M ${cx - 6} ${cy + 6} Q ${cx} ${cy + 14} ${cx + 6} ${cy + 6}`} stroke={INK} strokeWidth={2} />}
+      {expr === "worried" && <RPath d={`M ${cx - 5} ${cy + 10} Q ${cx} ${cy + 5} ${cx + 5} ${cy + 10}`} stroke={INK} strokeWidth={2} />}
+      {expr === "surprised" && <REllipse cx={cx} cy={cy + 9} w={6} h={7} fill={INK} stroke={INK} strokeWidth={1.4} />}
+    </>
   );
-}
+};
 
-export type Variant = "normal" | "villain" | "king";
-
-function Accessory({ cx, cy, r, variant }: { cx: number; cy: number; r: number; variant: Variant }) {
+const Accessory: React.FC<{ cx: number; cy: number; variant: Variant }> = ({ cx, cy, variant }) => {
+  const r = HEAD_R;
   if (variant === "king") {
-    const top = cy - r - 2;
-    return (
-      <path
-        d={`M ${cx - 16} ${top} L ${cx - 16} ${top - 14} L ${cx - 8} ${top - 6} L ${cx} ${top - 16} L ${cx + 8} ${top - 6} L ${cx + 16} ${top - 14} L ${cx + 16} ${top} Z`}
-        fill="#e8b73a" stroke={INK} strokeWidth={3} strokeLinejoin="round"
-      />
-    );
+    const top = cy - r - 1;
+    return <RPath d={`M ${cx - 16} ${top} L ${cx - 16} ${top - 14} L ${cx - 8} ${top - 6} L ${cx} ${top - 16} L ${cx + 8} ${top - 6} L ${cx + 16} ${top - 14} L ${cx + 16} ${top} Z`} fill="#e8b73a" stroke={INK} strokeWidth={2.2} />;
   }
   if (variant === "villain") {
     return (
-      <g stroke={INK} strokeWidth={3} strokeLinejoin="round">
-        {/* fedora */}
-        <ellipse cx={cx} cy={cy - r + 2} rx={r + 7} ry={4.5} fill="#2a2a2a" />
-        <path d={`M ${cx - 11} ${cy - r + 1} Q ${cx - 11} ${cy - r - 13} ${cx} ${cy - r - 13} Q ${cx + 11} ${cy - r - 13} ${cx + 11} ${cy - r + 1} Z`} fill="#2a2a2a" />
-        {/* round glasses */}
-        <circle cx={cx - 6} cy={cy - 2} r={4.4} fill="#cfe6ef" />
-        <circle cx={cx + 6} cy={cy - 2} r={4.4} fill="#cfe6ef" />
-        <line x1={cx - 1.6} y1={cy - 2} x2={cx + 1.6} y2={cy - 2} strokeWidth={2} />
-        {/* mustache */}
-        <path d={`M ${cx - 6} ${cy + 6} Q ${cx} ${cy + 10} ${cx} ${cy + 6} Q ${cx} ${cy + 10} ${cx + 6} ${cy + 6}`} fill={INK} stroke="none" />
-      </g>
+      <>
+        <REllipse cx={cx} cy={cy - r + 2} w={2 * r + 16} h={9} fill="#2a2a2a" stroke={INK} strokeWidth={2} />
+        <RPath d={`M ${cx - 11} ${cy - r + 1} Q ${cx - 11} ${cy - r - 13} ${cx} ${cy - r - 13} Q ${cx + 11} ${cy - r - 13} ${cx + 11} ${cy - r + 1} Z`} fill="#2a2a2a" stroke={INK} strokeWidth={2} />
+        <RCircle cx={cx - 6} cy={cy - 2} d={9} fill="#cfe6ef" stroke={INK} strokeWidth={1.6} />
+        <RCircle cx={cx + 6} cy={cy - 2} d={9} fill="#cfe6ef" stroke={INK} strokeWidth={1.6} />
+        <RPath d={`M ${cx - 6} ${cy + 6} Q ${cx} ${cy + 9} ${cx} ${cy + 6} Q ${cx} ${cy + 9} ${cx + 6} ${cy + 6}`} fill={INK} stroke={INK} strokeWidth={1.2} />
+      </>
     );
   }
-  return null;
-}
+  // normal: a little tuft of hair
+  return (
+    <>
+      <RLine x1={cx - 8} y1={cy - r + 2} x2={cx - 10} y2={cy - r - 5} stroke={INK} strokeWidth={2} />
+      <RLine x1={cx - 1} y1={cy - r} x2={cx - 2} y2={cy - r - 7} stroke={INK} strokeWidth={2} />
+      <RLine x1={cx + 6} y1={cy - r + 1} x2={cx + 7} y2={cy - r - 5} stroke={INK} strokeWidth={2} />
+    </>
+  );
+};
 
-const INK = theme.ink;
-
-export const Mascot: React.FC<{
-  pose?: Pose;
-  expression?: Expression;
-  variant?: Variant;
-  width: number;
-  height: number;
-  idle?: boolean;
-}> = ({ pose = "stand", expression, variant = "normal", width, height, idle = true }) => {
+export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: Variant; width: number; height: number; idle?: boolean }> = ({
+  pose = "stand", expression, variant = "normal", width, height, idle = true,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const p = POSES[pose];
   const expr = expression ?? DEFAULT_EXPRESSION[pose];
-
-  // subtle idle breath — a small vertical bob, so the host isn't dead-frozen
   const bob = idle ? Math.sin((frame / fps) * 2 * Math.PI * 0.5) * 1.1 : 0;
-  const { filterId: boilFilter, defs: boilDefs } = useBoil(4);
-
-  const stroke = theme.ink;
-  const limb = { stroke, strokeWidth: 7, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, fill: "none" };
   const [hx, hy] = p.head;
+  const LW = 5;
 
   return (
     <svg width={width} height={height} viewBox="0 0 100 170" preserveAspectRatio="xMidYMid meet">
-      <defs>{boilDefs}</defs>
-      <g transform={`translate(0 ${bob})`} filter={boilFilter}>
-        {/* torso + shoulders */}
-        <line x1={p.neck[0]} y1={p.neck[1]} x2={p.pelvis[0]} y2={p.pelvis[1]} {...limb} />
-        <line x1={SH_L[0]} y1={SH_L[1]} x2={SH_R[0]} y2={SH_R[1]} {...limb} />
-        {/* arms */}
-        <polyline points={`${SH_L[0]},${SH_L[1]} ${p.arms.Lel[0]},${p.arms.Lel[1]} ${p.arms.Lwr[0]},${p.arms.Lwr[1]}`} {...limb} />
-        <polyline points={`${SH_R[0]},${SH_R[1]} ${p.arms.Rel[0]},${p.arms.Rel[1]} ${p.arms.Rwr[0]},${p.arms.Rwr[1]}`} {...limb} />
-        {/* legs */}
-        <polyline points={`${p.pelvis[0]},${p.pelvis[1]} ${p.legs.Lkn[0]},${p.legs.Lkn[1]} ${p.legs.Lan[0]},${p.legs.Lan[1]}`} {...limb} />
-        <polyline points={`${p.pelvis[0]},${p.pelvis[1]} ${p.legs.Rkn[0]},${p.legs.Rkn[1]} ${p.legs.Ran[0]},${p.legs.Ran[1]}`} {...limb} />
+      <g transform={`translate(0 ${bob})`}>
+        {/* body */}
+        <RPath d={`M ${p.neck[0]} ${p.neck[1]} L ${p.pelvis[0]} ${p.pelvis[1]}`} stroke={INK} strokeWidth={LW} />
+        <RPath d={`M ${SH_L[0]} ${SH_L[1]} L ${SH_R[0]} ${SH_R[1]}`} stroke={INK} strokeWidth={LW} />
+        <RPath d={`M ${SH_L[0]} ${SH_L[1]} L ${p.arms.Lel[0]} ${p.arms.Lel[1]} L ${p.arms.Lwr[0]} ${p.arms.Lwr[1]}`} stroke={INK} strokeWidth={LW} />
+        <RPath d={`M ${SH_R[0]} ${SH_R[1]} L ${p.arms.Rel[0]} ${p.arms.Rel[1]} L ${p.arms.Rwr[0]} ${p.arms.Rwr[1]}`} stroke={INK} strokeWidth={LW} />
+        <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Lkn[0]} ${p.legs.Lkn[1]} L ${p.legs.Lan[0]} ${p.legs.Lan[1]}`} stroke={INK} strokeWidth={LW} />
+        <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Rkn[0]} ${p.legs.Rkn[1]} L ${p.legs.Ran[0]} ${p.legs.Ran[1]}`} stroke={INK} strokeWidth={LW} />
         {/* hands + feet */}
         {[p.arms.Lwr, p.arms.Rwr, p.legs.Lan, p.legs.Ran].map((pt, i) => (
-          <circle key={i} cx={pt[0]} cy={pt[1]} r={3.6} fill={stroke} />
+          <circle key={i} cx={pt[0]} cy={pt[1]} r={3} fill={INK} />
         ))}
-        {/* head: white fill so the face reads on any background */}
-        <circle cx={hx} cy={hy} r={HEAD_R} fill={theme.bg} stroke={stroke} strokeWidth={6} />
+        {/* head + face */}
+        <RCircle cx={hx} cy={hy} d={HEAD_R * 2} fill="#fff" stroke={INK} strokeWidth={3} />
         <Face cx={hx} cy={hy} expr={expr} />
-        <Accessory cx={hx} cy={hy} r={HEAD_R} variant={variant} />
+        <Accessory cx={hx} cy={hy} variant={variant} />
       </g>
     </svg>
   );
