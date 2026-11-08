@@ -118,8 +118,8 @@ const Hand: React.FC<{ e: Pt; w: Pt }> = ({ e, w }) => {
   return <REllipse cx={cx} cy={cy} w={8.5} h={8.5} fill={SKIN} stroke={INK} strokeWidth={2.6} roughness={0.7} />;
 };
 
-export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: Variant; width: number; height: number; idle?: boolean }> = ({
-  pose = "stand", expression, variant = "normal", width, height, idle = true,
+export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: Variant; width: number; height: number; idle?: boolean; flip?: boolean }> = ({
+  pose = "stand", expression, variant = "normal", width, height, idle = true, flip = false,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -131,7 +131,7 @@ export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: 
 
   return (
     <svg width={width} height={height} viewBox="0 -22 100 197" preserveAspectRatio="xMidYMid meet">
-      <g transform={`translate(0 ${bob})`}>
+      <g transform={`translate(0 ${bob}) ${flip ? "translate(100 0) scale(-1 1)" : ""}`}>
         {/* thin stick body */}
         <RPath d={`M ${p.neck[0]} ${p.neck[1]} L ${p.pelvis[0]} ${p.pelvis[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
         <RPath d={`M ${SH_L[0]} ${SH_L[1]} L ${p.arms.Lel[0]} ${p.arms.Lel[1]} L ${p.arms.Lwr[0]} ${p.arms.Lwr[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />

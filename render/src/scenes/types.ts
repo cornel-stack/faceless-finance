@@ -31,6 +31,7 @@ export interface CalloutScene extends Base {
   text: string;
   sub?: string;
   break?: boolean; // crack the number
+  icon?: DoodleName;
 }
 export interface ScreenshotScene extends Base {
   type: "screenshot";
@@ -51,6 +52,7 @@ export interface DoodleScene extends Base {
   items: DoodleName[];
   labels?: string[];
   caption?: string;
+  flow?: boolean; // draw money-flow arrows between items in sequence
 }
 export interface ChalkboardScene extends Base {
   type: "chalkboard";

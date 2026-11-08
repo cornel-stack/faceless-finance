@@ -4,6 +4,7 @@ import { theme, money } from "../theme";
 import { display, sans } from "../fonts";
 import { Mascot } from "../components/Mascot";
 import { Doodle, DoodleName } from "../components/Doodle";
+import { Arrow } from "../components/Arrow";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScreenshotSource } from "../components/ScreenshotSource";
 import { RRect, RPath, RLine } from "../motion/rough";
@@ -46,13 +47,33 @@ const PROP_SLOTS: { x: number; y: number; s: number }[][] = [
   [{ x: 970, y: 250, s: 270 }, { x: 1440, y: 270, s: 260 }, { x: 1120, y: 580, s: 290 }, { x: 1560, y: 610, s: 240 }],
 ];
 
-const PropCluster: React.FC<{ props: { name: DoodleName; label?: string }[] }> = ({ props }) => {
+const MONEY_PROPS = ["coins", "moneybag", "dollar", "piggybank", "printer", "bank"];
+
+const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
+  const { width } = useVideoConfig();
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const slots = PROP_SLOTS[Math.min(props.length, 4)];
+  const props = scene.props ?? [];
+  const hasProps = props.length > 0;
+  const hasBubble = Boolean(scene.bubble);
+  const mW = 520, mH = 880;
+
+  // Alternate the character's side scene-to-scene so it isn't static.
+  const num = parseInt(scene.id.replace(/\D/g, ""), 10) || 0;
+  const charRight = hasProps && num % 2 === 0;
+  const charLeft = charRight ? width - mW - 110 : hasProps || hasBubble ? 110 : (width - mW) / 2;
+  const flip = charRight;
+  const slots = hasProps
+    ? PROP_SLOTS[Math.min(props.length, 4)].map((s) => (charRight ? { ...s, x: 1920 - s.x } : s))
+    : [];
+  const anchorX = flip ? charLeft + mW * 0.2 : charLeft + mW * 0.8;
+  const anchorY = 470;
+  const enter = spring({ frame, fps, config: { damping: 13, mass: 0.7 } });
+
   return (
-    <>
-      {props.slice(0, 4).map((p, i) => {
+    <AbsoluteFill>
+      {/* props */}
+      {hasProps && props.slice(0, 4).map((p, i) => {
         const slot = slots[i];
         const s = spring({ frame, fps, delay: 8 + i * 7, config: { damping: 12, mass: 0.6 } });
         return (
@@ -62,27 +83,22 @@ const PropCluster: React.FC<{ props: { name: DoodleName; label?: string }[] }> =
           </div>
         );
       })}
-    </>
-  );
-};
-
-const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
-  const { width } = useVideoConfig();
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const hasProps = Boolean(scene.props && scene.props.length);
-  const hasBubble = Boolean(scene.bubble);
-  const mW = 520, mH = 880;
-  const left = hasProps || hasBubble ? 110 : (width - mW) / 2;
-  const enter = spring({ frame, fps, config: { damping: 13, mass: 0.7 } });
-  return (
-    <AbsoluteFill>
-      {hasProps && <PropCluster props={scene.props!} />}
-      <div style={{ position: "absolute", left, bottom: 10, width: mW, height: mH, transform: `translateY(${(1 - enter) * 40}px) scale(${0.92 + enter * 0.08})`, transformOrigin: "bottom center" }}>
-        <Mascot pose={scene.pose ?? "stand"} expression={scene.expression} variant={scene.variant} width={mW} height={mH} />
+      {/* drawn arrows from the character to each prop (coins flow to money ones) */}
+      {hasProps && (
+        <svg width={1920} height={1080} style={{ position: "absolute" }}>
+          {props.slice(0, 4).map((p, i) => {
+            const slot = slots[i];
+            const ex = slot.x + (anchorX < slot.x ? -slot.s * 0.36 : slot.s * 0.36);
+            return <Arrow key={i} x1={anchorX} y1={anchorY} x2={ex} y2={slot.y} delay={16 + i * 8} bend={0.16 * (i % 2 ? 1 : -1)} flow={MONEY_PROPS.includes(p.name)} />;
+          })}
+        </svg>
+      )}
+      {/* character */}
+      <div style={{ position: "absolute", left: charLeft, bottom: 10, width: mW, height: mH, transform: `translateY(${(1 - enter) * 40}px) scale(${0.92 + enter * 0.08})`, transformOrigin: "bottom center" }}>
+        <Mascot pose={scene.pose ?? "stand"} expression={scene.expression} variant={scene.variant} flip={flip} width={mW} height={mH} />
       </div>
       {hasBubble && (
-        <div style={{ position: "absolute", left: left + 40, top: 120, width: 660 }}>
+        <div style={{ position: "absolute", left: flip ? charLeft - 300 : charLeft + 40, top: 120, width: 660 }}>
           <SpeechBubble text={scene.bubble!} width={660} tail="down" delay={6} />
         </div>
       )}
@@ -118,12 +134,17 @@ const Callout: React.FC<{ scene: CalloutScene }> = ({ scene }) => {
   const circLen = 7 * Math.sqrt((rx * rx + ry * ry) / 2);
   const rev = interpolate(frame, [fps * 0.55, fps * 1.5], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
+  const iconPop = spring({ frame, fps, delay: 3, config: { damping: 12, mass: 0.6 } });
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-      <svg width={1920} height={1080} style={{ position: "absolute" }}>
-        <path d={ell} fill="none" stroke={theme.accent} strokeWidth={9} strokeLinecap="round" strokeDasharray={circLen} strokeDashoffset={circLen * (1 - rev)} transform={`rotate(-4 ${cx} ${cyE})`} />
-      </svg>
-      <div style={{ fontFamily: display, fontWeight: 900, fontSize: fs, color: scene.break ? theme.accent : theme.ink, transform: `scale(${s}) translateX(${shake}px)`, lineHeight: 1, position: "relative", marginTop: -40 }}>
+      {scene.icon ? (
+        <div style={{ transform: `scale(${iconPop})`, marginBottom: 20 }}><Doodle name={scene.icon} size={230} /></div>
+      ) : (
+        <svg width={1920} height={1080} style={{ position: "absolute" }}>
+          <path d={ell} fill="none" stroke={theme.accent} strokeWidth={9} strokeLinecap="round" strokeDasharray={circLen} strokeDashoffset={circLen * (1 - rev)} transform={`rotate(-4 ${cx} ${cyE})`} />
+        </svg>
+      )}
+      <div style={{ fontFamily: display, fontWeight: 900, fontSize: fs, color: scene.break ? theme.accent : theme.ink, transform: `scale(${s}) translateX(${shake}px)`, lineHeight: 1, position: "relative", marginTop: scene.icon ? 0 : -40 }}>
         {display}
       </div>
       {scene.sub && <div style={{ fontFamily: sans, fontWeight: 600, fontSize: 50, color: theme.inkSoft, marginTop: 40, opacity: sub, textAlign: "center", maxWidth: 1400 }}>{scene.sub}</div>}
@@ -210,20 +231,32 @@ const SceneChart: React.FC<{ scene: ChartScene }> = ({ scene }) => {
 const DoodleScene_: React.FC<{ scene: DoodleScene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const n = scene.items.length;
+  const size = n <= 3 ? 300 : 230;
+  const gap = scene.flow ? 190 : 120;
+  const totalW = n * size + (n - 1) * gap;
+  const cx0 = 960 - totalW / 2 + size / 2;
+  const cy = 450;
+  const centers = scene.items.map((_, i) => cx0 + i * (size + gap));
   return (
-    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 40 }}>
-      <div style={{ display: "flex", gap: 90, alignItems: "flex-end" }}>
-        {scene.items.map((name, i) => {
-          const s = spring({ frame, fps, delay: 6 + i * 7, config: { damping: 12, mass: 0.6 } });
-          return (
-            <div key={i} style={{ transform: `scale(${s})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 14 }}>
-              <Doodle name={name} size={260} />
-              {scene.labels?.[i] && <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 36, color: theme.ink }}>{scene.labels[i]}</div>}
-            </div>
-          );
-        })}
-      </div>
-      {scene.caption && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 56, color: theme.ink, textAlign: "center", maxWidth: 1500 }}>{scene.caption}</div>}
+    <AbsoluteFill>
+      {scene.flow && (
+        <svg width={1920} height={1080} style={{ position: "absolute" }}>
+          {centers.slice(0, -1).map((cx, i) => (
+            <Arrow key={i} x1={cx + size * 0.36} y1={cy} x2={centers[i + 1] - size * 0.36} y2={cy} delay={18 + i * 22} flow bend={-0.1} />
+          ))}
+        </svg>
+      )}
+      {scene.items.map((name, i) => {
+        const s = spring({ frame, fps, delay: 6 + i * 8, config: { damping: 12, mass: 0.6 } });
+        return (
+          <div key={i} style={{ position: "absolute", left: centers[i] - size / 2, top: cy - size / 2 - 20, width: size, transform: `scale(${s})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 12 }}>
+            <Doodle name={name} size={size} />
+            {scene.labels?.[i] && <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 34, color: theme.ink, textAlign: "center" }}>{scene.labels[i]}</div>}
+          </div>
+        );
+      })}
+      {scene.caption && <div style={{ position: "absolute", left: 0, bottom: 130, width: 1920, textAlign: "center", fontFamily: display, fontWeight: 900, fontSize: 56, color: theme.ink }}>{scene.caption}</div>}
     </AbsoluteFill>
   );
 };
