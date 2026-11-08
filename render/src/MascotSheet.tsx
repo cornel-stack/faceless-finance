@@ -5,14 +5,16 @@ import { theme } from "./theme";
 import { sans } from "./fonts";
 
 const CELLS: { label: string; pose: Pose; expr?: Expression; variant?: Variant }[] = [
-  { label: "stand · neutral", pose: "stand" },
-  { label: "point · happy", pose: "point", expr: "happy" },
-  { label: "think · worried", pose: "think", expr: "worried" },
+  { label: "stand", pose: "stand" },
+  { label: "present →", pose: "present", expr: "neutral" },
+  { label: "explain (hands)", pose: "explain", expr: "neutral" },
+  { label: "shrug", pose: "shrug", expr: "worried" },
+  { label: "point", pose: "point", expr: "happy" },
+  { label: "think", pose: "think", expr: "worried" },
+  { label: "hands to head", pose: "handtohead", expr: "worried" },
   { label: "surprised", pose: "surprised", expr: "surprised" },
   { label: "celebrate", pose: "celebrate", expr: "happy" },
-  { label: "villain", pose: "point", expr: "neutral", variant: "villain" },
-  { label: "king", pose: "stand", expr: "happy", variant: "king" },
-  { label: "walk", pose: "walk" },
+  { label: "villain · present", pose: "present", expr: "neutral", variant: "villain" },
 ];
 
 export const MascotSheet: React.FC = () => (

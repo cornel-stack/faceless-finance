@@ -6,7 +6,9 @@ import { RPath, REllipse } from "../motion/rough";
 // scribbled hair, thick brows, simple solid eyes, no nose, a plain mouth — on a
 // THIN stick body. Hand-drawn via Rough.js.
 
-export type Pose = "stand" | "walk" | "point" | "think" | "surprised" | "celebrate";
+export type Pose =
+  | "stand" | "walk" | "point" | "think" | "surprised" | "celebrate"
+  | "present" | "explain" | "shrug" | "handtohead";
 export type Expression = "neutral" | "happy" | "worried" | "surprised";
 export type Variant = "normal" | "villain" | "king";
 
@@ -20,17 +22,25 @@ const SKIN = "#f4c7a1";
 const HEAD_W = 42;
 const HEAD_H = 50;
 
+const LEGS_STAND = { Lkn: [44, 134] as Pt, Lan: [42, 166] as Pt, Rkn: [56, 134] as Pt, Ran: [58, 166] as Pt };
+
 const POSES: Record<Pose, PoseDef> = {
-  stand: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [34, 78], Lwr: [31, 100], Rel: [66, 78], Rwr: [69, 100] }, legs: { Lkn: [44, 134], Lan: [42, 166], Rkn: [56, 134], Ran: [58, 166] } },
+  stand: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [34, 78], Lwr: [31, 100], Rel: [66, 78], Rwr: [69, 100] }, legs: LEGS_STAND },
   walk: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [36, 76], Lwr: [32, 96], Rel: [64, 80], Rwr: [68, 100] }, legs: { Lkn: [46, 132], Lan: [37, 164], Rkn: [57, 134], Ran: [66, 166] } },
-  point: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [34, 78], Lwr: [31, 100], Rel: [72, 50], Rwr: [94, 40] }, legs: { Lkn: [44, 134], Lan: [42, 166], Rkn: [56, 134], Ran: [58, 166] } },
-  think: { head: [48, 28], neck: [49, 48], pelvis: [50, 104], arms: { Lel: [40, 80], Lwr: [53, 90], Rel: [64, 76], Rwr: [54, 50] }, legs: { Lkn: [44, 134], Lan: [42, 166], Rkn: [56, 134], Ran: [58, 166] } },
-  surprised: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [32, 44], Lwr: [24, 26], Rel: [68, 44], Rwr: [76, 26] }, legs: { Lkn: [43, 134], Lan: [38, 166], Rkn: [57, 134], Ran: [62, 166] } },
+  point: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [34, 78], Lwr: [31, 100], Rel: [72, 50], Rwr: [94, 40] }, legs: LEGS_STAND },
+  think: { head: [48, 28], neck: [49, 48], pelvis: [50, 104], arms: { Lel: [40, 80], Lwr: [53, 90], Rel: [64, 76], Rwr: [54, 50] }, legs: LEGS_STAND },
+  surprised: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [37, 50], Lwr: [39, 36], Rel: [63, 50], Rwr: [61, 36] }, legs: { Lkn: [43, 134], Lan: [38, 166], Rkn: [57, 134], Ran: [62, 166] } },
   celebrate: { head: [50, 26], neck: [50, 46], pelvis: [50, 102], arms: { Lel: [34, 36], Lwr: [28, 16], Rel: [66, 36], Rwr: [72, 16] }, legs: { Lkn: [45, 130], Lan: [43, 158], Rkn: [56, 130], Ran: [59, 158] } },
+  // hands-forward gestures
+  present: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [36, 80], Lwr: [33, 100], Rel: [70, 54], Rwr: [90, 48] }, legs: LEGS_STAND },
+  explain: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [40, 74], Lwr: [37, 59], Rel: [60, 74], Rwr: [63, 59] }, legs: LEGS_STAND },
+  shrug: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [33, 66], Lwr: [25, 60], Rel: [67, 66], Rwr: [75, 60] }, legs: LEGS_STAND },
+  handtohead: { head: [50, 28], neck: [50, 48], pelvis: [50, 104], arms: { Lel: [36, 80], Lwr: [33, 100], Rel: [62, 56], Rwr: [55, 33] }, legs: LEGS_STAND },
 };
 
 const DEFAULT_EXPRESSION: Record<Pose, Expression> = {
   stand: "neutral", walk: "neutral", point: "happy", think: "worried", surprised: "surprised", celebrate: "happy",
+  present: "neutral", explain: "neutral", shrug: "worried", handtohead: "worried",
 };
 
 const Face: React.FC<{ cx: number; cy: number; expr: Expression }> = ({ cx, cy, expr }) => {
@@ -99,6 +109,15 @@ const Hair: React.FC<{ cx: number; cy: number; variant: Variant }> = ({ cx, cy, 
   return <RPath d={hair} fill={INK} fillStyle="solid" stroke={INK} strokeWidth={2.6} roughness={0.9} bowing={0.8} />;
 };
 
+// A visible hand at the wrist, nudged out along the forearm direction.
+const Hand: React.FC<{ e: Pt; w: Pt }> = ({ e, w }) => {
+  const dx = w[0] - e[0], dy = w[1] - e[1];
+  const len = Math.hypot(dx, dy) || 1;
+  const cx = w[0] + (dx / len) * 2;
+  const cy = w[1] + (dy / len) * 2;
+  return <REllipse cx={cx} cy={cy} w={8.5} h={8.5} fill={SKIN} stroke={INK} strokeWidth={2.6} roughness={0.7} />;
+};
+
 export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: Variant; width: number; height: number; idle?: boolean }> = ({
   pose = "stand", expression, variant = "normal", width, height, idle = true,
 }) => {
@@ -119,9 +138,11 @@ export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: 
         <RPath d={`M ${SH_R[0]} ${SH_R[1]} L ${p.arms.Rel[0]} ${p.arms.Rel[1]} L ${p.arms.Rwr[0]} ${p.arms.Rwr[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
         <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Lkn[0]} ${p.legs.Lkn[1]} L ${p.legs.Lan[0]} ${p.legs.Lan[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
         <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Rkn[0]} ${p.legs.Rkn[1]} L ${p.legs.Ran[0]} ${p.legs.Ran[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
-        {[p.arms.Lwr, p.arms.Rwr, p.legs.Lan, p.legs.Ran].map((pt, i) => (
-          <circle key={i} cx={pt[0]} cy={pt[1]} r={2.4} fill={INK} />
-        ))}
+        {/* feet */}
+        {[p.legs.Lan, p.legs.Ran].map((pt, i) => <circle key={i} cx={pt[0]} cy={pt[1]} r={2.6} fill={INK} />)}
+        {/* visible hands */}
+        <Hand e={p.arms.Lel} w={p.arms.Lwr} />
+        <Hand e={p.arms.Rel} w={p.arms.Rwr} />
         {/* big egg head (wider jaw, narrower top) + face + hair */}
         <RPath
           d={`M ${hx} ${hy - 25} C ${hx + 15} ${hy - 25} ${hx + 23} ${hy - 10} ${hx + 24} ${hy + 3} C ${hx + 25} ${hy + 16} ${hx + 17} ${hy + 28} ${hx} ${hy + 28} C ${hx - 17} ${hy + 28} ${hx - 25} ${hy + 16} ${hx - 24} ${hy + 3} C ${hx - 23} ${hy - 10} ${hx - 15} ${hy - 25} ${hx} ${hy - 25} Z`}
@@ -141,6 +162,10 @@ export const poseForClip = (clip?: string): Pose => {
     case "shock": return "surprised";
     case "think": return "think";
     case "celebrate": return "celebrate";
+    case "present": return "present";
+    case "explain": return "explain";
+    case "shrug": return "shrug";
+    case "handtohead": return "handtohead";
     default: return "stand";
   }
 };
