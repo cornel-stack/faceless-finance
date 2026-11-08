@@ -125,7 +125,7 @@ export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: 
   const { fps } = useVideoConfig();
   const p = POSES[pose];
   const expr = expression ?? DEFAULT_EXPRESSION[pose];
-  const bob = idle ? Math.sin((frame / fps) * 2 * Math.PI * 0.5) * 1 : 0;
+  const bob = 0; // static — the character "acts" by cutting, not moving (Casual Finance style)
   const [hx, hy] = p.head;
   const LW = 3.4; // thin stick body
 

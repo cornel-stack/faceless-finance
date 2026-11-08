@@ -1,5 +1,4 @@
 import React from "react";
-import { useCurrentFrame } from "remotion";
 
 // Real country flags (correct colours + key design), on a pole, gently waving.
 // Drawn crisp so they're recognisable; returns a <g> for use inside a Doodle svg.
@@ -82,17 +81,11 @@ function design(c: Country): React.ReactNode {
   }
 }
 
-export const Flag: React.FC<{ country: Country }> = ({ country }) => {
-  const frame = useCurrentFrame();
-  const wave = Math.sin(frame / 9) * 1.6;
-  const skew = Math.sin(frame / 7 + 1) * 2.2;
-  return (
-    <g>
-      <line x1={FX} y1={10} x2={FX} y2={94} stroke={INK} strokeWidth={3} strokeLinecap="round" />
-      <g transform={`rotate(${wave} ${FX} ${FY}) skewY(${skew})`}>
-        {design(country)}
-        <rect x={FX} y={FY} width={FW} height={FH} fill="none" stroke={INK} strokeWidth={2.2} />
-      </g>
-    </g>
-  );
-};
+// Static flag (no waving) — Casual Finance style keeps drawings still.
+export const Flag: React.FC<{ country: Country }> = ({ country }) => (
+  <g>
+    <line x1={FX} y1={10} x2={FX} y2={94} stroke={INK} strokeWidth={3} strokeLinecap="round" />
+    {design(country)}
+    <rect x={FX} y={FY} width={FW} height={FH} fill="none" stroke={INK} strokeWidth={2.2} />
+  </g>
+);

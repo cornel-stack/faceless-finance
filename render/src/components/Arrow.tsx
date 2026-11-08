@@ -23,23 +23,11 @@ export const Arrow: React.FC<{
   const head = `M ${x2 - hl * Math.cos(a - 0.45)} ${y2 - hl * Math.sin(a - 0.45)} L ${x2} ${y2} L ${x2 - hl * Math.cos(a + 0.45)} ${y2 - hl * Math.sin(a + 0.45)}`;
   const headOpacity = interpolate(reveal, [0.82, 1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
-  const bez = (t: number): [number, number] => [
-    (1 - t) ** 2 * x1 + 2 * (1 - t) * t * cxp + t * t * x2,
-    (1 - t) ** 2 * y1 + 2 * (1 - t) * t * cyp + t * t * y2,
-  ];
-  const coins = flow && reveal > 0.85
-    ? [0, 1, 2].map((i) => {
-        const t = (((frame - delay) / (fps * 1.3)) + i / 3) % 1;
-        const [px, py] = bez(t);
-        return <circle key={i} cx={px} cy={py} r={9} fill="#e8b73a" stroke={theme.ink} strokeWidth={2} />;
-      })
-    : null;
-
+  // Static style: the arrow draws on once (an entrance), then holds — no flowing coins.
   return (
     <g>
       <path d={path} fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" strokeDasharray={dash} strokeDashoffset={dash * (1 - reveal)} />
       <path d={head} fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" strokeLinejoin="round" opacity={headOpacity} />
-      {coins}
     </g>
   );
 };

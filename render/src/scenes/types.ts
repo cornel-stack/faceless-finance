@@ -53,6 +53,7 @@ export interface DoodleScene extends Base {
   labels?: string[];
   caption?: string;
   flow?: boolean; // draw money-flow arrows between items in sequence
+  reveal?: number; // show only the first N items (cut-driven diagram build-up)
 }
 export interface ChalkboardScene extends Base {
   type: "chalkboard";
@@ -62,6 +63,7 @@ export interface CompareScene extends Base {
   type: "compare";
   left: { title: string; value: string };
   right: { title: string; value: string };
+  only?: "left"; // reveal left first, then cut to both (cut-driven contrast)
 }
 
 export type Scene =

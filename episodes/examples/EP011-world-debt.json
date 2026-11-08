@@ -22,6 +22,22 @@
           "label": "Every country"
         },
         {
+          "name": "flagUS",
+          "label": "U.S."
+        },
+        {
+          "name": "flagCN",
+          "label": "China"
+        },
+        {
+          "name": "flagJP",
+          "label": "Japan"
+        },
+        {
+          "name": "flagGB",
+          "label": "Britain"
+        },
+        {
           "name": "chain",
           "label": "…in debt"
         }
@@ -91,7 +107,11 @@
         },
         {
           "name": "iou",
-          "label": "owe — but to whom?"
+          "label": "they owe…"
+        },
+        {
+          "name": "scale",
+          "label": "but to whom?"
         }
       ],
       "narration": "So here's the obvious question. The one almost nobody actually stops to ask."
@@ -107,8 +127,12 @@
           "label": "a borrower"
         },
         {
+          "name": "scale",
+          "label": "needs"
+        },
+        {
           "name": "bank",
-          "label": "…needs a lender"
+          "label": "…a lender"
         }
       ],
       "narration": "If every country is in debt, then who is all that money owed to? Debt doesn't just float in the air. For every borrower, there has to be a lender."
@@ -121,11 +145,15 @@
       "props": [
         {
           "name": "globe",
-          "label": "all of Earth"
+          "label": "the whole Earth"
         },
         {
           "name": "chain",
           "label": "in the red"
+        },
+        {
+          "name": "scale",
+          "label": "who holds it?"
         }
       ],
       "narration": "Mars isn't lending us the money. So if the entire Earth is in the red, who on Earth is holding the other side of the deal? Who do they actually owe?"
@@ -138,7 +166,11 @@
       "props": [
         {
           "name": "iou",
-          "label": "a bond"
+          "label": "a 'debt'"
+        },
+        {
+          "name": "dollar",
+          "label": "not a credit card"
         }
       ],
       "bubble": "First — what IS a debt?",
@@ -169,7 +201,7 @@
       "props": [
         {
           "name": "dollar",
-          "label": "$100 now"
+          "label": "$100 today"
         },
         {
           "name": "coins",
@@ -238,8 +270,16 @@
           "label": "banks"
         },
         {
+          "name": "officetower",
+          "label": "insurers"
+        },
+        {
           "name": "piggybank",
           "label": "pensions"
+        },
+        {
+          "name": "dollar",
+          "label": "mutual funds"
         },
         {
           "name": "crowd",
@@ -270,6 +310,10 @@
       "expression": "neutral",
       "props": [
         {
+          "name": "bank",
+          "label": "the central bank"
+        },
+        {
           "name": "printer",
           "label": "the money printer"
         }
@@ -289,8 +333,12 @@
           "label": "prints money"
         },
         {
-          "name": "bank",
+          "name": "iou",
           "label": "buys the bonds"
+        },
+        {
+          "name": "bank",
+          "label": "the central bank"
         }
       ],
       "narration": "In a crisis, 2008, and then the pandemic, central banks did something that honestly sounds made up. They created brand-new money out of thin air, and used it to buy their own government's debt."
@@ -340,7 +388,11 @@
         },
         {
           "name": "scale",
-          "label": "owes & pays itself"
+          "label": "owes itself"
+        },
+        {
+          "name": "coins",
+          "label": "pays itself"
         }
       ],
       "narration": "So Japan is a country that owes a staggering fortune, mostly to itself, and pays the interest on that fortune, mostly to itself. Which is exactly why the scary headline number, on its own, tells you almost nothing."
@@ -358,6 +410,10 @@
         {
           "name": "iou",
           "label": "rolled over forever"
+        },
+        {
+          "name": "printer",
+          "label": "just print it?"
         }
       ],
       "bubble": "So what's the problem?",
@@ -378,11 +434,15 @@
       "props": [
         {
           "name": "coins",
-          "label": "interest"
+          "label": "the interest"
         },
         {
           "name": "chartup",
-          "label": "exploding"
+          "label": "rates jumped"
+        },
+        {
+          "name": "bomb",
+          "label": "…it exploded"
         }
       ],
       "narration": "Problem one is the interest. You can roll the debt over forever, sure. But every single year, you still have to pay interest on it. And when interest rates jumped, that bill absolutely exploded."
@@ -437,7 +497,7 @@
       "props": [
         {
           "name": "dollar",
-          "label": "your own money"
+          "label": "your OWN money"
         },
         {
           "name": "flagEU",
@@ -471,7 +531,11 @@
         },
         {
           "name": "warning",
-          "label": "can run out"
+          "label": "it runs out"
+        },
+        {
+          "name": "chartdown",
+          "label": "lenders say no"
         }
       ],
       "narration": "But if you borrow in a currency you don't control, if a country takes on debt in dollars or euros that it cannot print, then it can genuinely run out. And then one day, the lenders simply say no."
@@ -499,8 +563,16 @@
       "expression": "neutral",
       "props": [
         {
-          "name": "dollar",
-          "label": "own currency"
+          "name": "flagUS",
+          "label": "U.S."
+        },
+        {
+          "name": "flagJP",
+          "label": "Japan"
+        },
+        {
+          "name": "scale",
+          "label": "vs"
         },
         {
           "name": "bomb",
@@ -553,6 +625,10 @@
         {
           "name": "crowd",
           "label": "our future"
+        },
+        {
+          "name": "scale",
+          "label": "owed to us"
         }
       ],
       "narration": "The debt isn't a bill from some outside villain that comes due on a Tuesday. It's a giant web of promises, owed mostly to ourselves. To our pension funds. To our savings accounts. To our own future."
@@ -565,15 +641,19 @@
       "props": [
         {
           "name": "scale",
-          "label": "tax it"
+          "label": "tax it away"
         },
         {
           "name": "printer",
-          "label": "inflate it"
+          "label": "inflate it away"
         },
         {
           "name": "bomb",
           "label": "default"
+        },
+        {
+          "name": "crowd",
+          "label": "who pays?"
         }
       ],
       "narration": "Which means paying it down was never really the plan. Taxing it away takes it from someone. Inflating it away quietly shrinks everyone's savings. Defaulting on it blows up the very pensions holding it. There is no clean exit. Only a choice about who absorbs the loss."
@@ -592,12 +672,20 @@
       "expression": "worried",
       "props": [
         {
+          "name": "piggybank",
+          "label": "your pension"
+        },
+        {
+          "name": "bank",
+          "label": "your bank"
+        },
+        {
           "name": "iou",
           "label": "the bond"
         },
         {
           "name": "crowd",
-          "label": "…you"
+          "label": "…it's you"
         }
       ],
       "bubble": "…it's you.",
@@ -612,6 +700,10 @@
         {
           "name": "globe",
           "label": "which country next?"
+        },
+        {
+          "name": "iou",
+          "label": "the debt"
         }
       ],
       "narration": "If you want more of the stuff that's hiding in plain sight inside the numbers, hit subscribe, and tell me which country's debt you want me to pull apart next. I do the reading. You get the parts that matter."

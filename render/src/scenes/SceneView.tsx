@@ -238,17 +238,23 @@ const DoodleScene_: React.FC<{ scene: DoodleScene }> = ({ scene }) => {
   const cx0 = 960 - totalW / 2 + size / 2;
   const cy = 450;
   const centers = scene.items.map((_, i) => cx0 + i * (size + gap));
+  // Build the diagram one item at a time across cuts: items before the newest
+  // are already placed (static); only the newest pops in. Layout uses the full
+  // item set so nothing shifts between cuts.
+  const shown = scene.reveal ?? n;
   return (
     <AbsoluteFill>
       {scene.flow && (
         <svg width={1920} height={1080} style={{ position: "absolute" }}>
           {centers.slice(0, -1).map((cx, i) => (
-            <Arrow key={i} x1={cx + size * 0.36} y1={cy} x2={centers[i + 1] - size * 0.36} y2={cy} delay={18 + i * 22} flow bend={-0.1} />
+            i + 1 < shown && <Arrow key={i} x1={cx + size * 0.36} y1={cy} x2={centers[i + 1] - size * 0.36} y2={cy} delay={i === shown - 2 ? 8 : 0} flow bend={-0.1} />
           ))}
         </svg>
       )}
       {scene.items.map((name, i) => {
-        const s = spring({ frame, fps, delay: 6 + i * 8, config: { damping: 12, mass: 0.6 } });
+        if (i >= shown) return null;
+        const isNewest = i === shown - 1;
+        const s = isNewest ? spring({ frame, fps, delay: 4, config: { damping: 12, mass: 0.6 } }) : 1;
         return (
           <div key={i} style={{ position: "absolute", left: centers[i] - size / 2, top: cy - size / 2 - 20, width: size, transform: `scale(${s})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 12 }}>
             <Doodle name={name} size={size} />
@@ -281,8 +287,11 @@ const Chalkboard: React.FC<{ scene: ChalkboardScene }> = ({ scene }) => {
 const Compare: React.FC<{ scene: CompareScene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const l = spring({ frame, fps, delay: 4, config: { damping: 16 } });
-  const r = spring({ frame, fps, delay: 12, config: { damping: 16 } });
+  // Cut-driven contrast: on the "left only" shot the left card springs in; once
+  // both are shown the left is already placed (static) and the right pops in.
+  const bothShown = scene.only !== "left";
+  const l = bothShown ? 1 : spring({ frame, fps, delay: 4, config: { damping: 16 } });
+  const r = spring({ frame, fps, delay: 4, config: { damping: 16 } });
   const card = (c: { title: string; value: string }, p: number, accent: boolean) => (
     <div style={{ width: 640, padding: "60px 40px", borderRadius: 18, border: `4px solid ${accent ? theme.accent : theme.ink}`, background: "#fff", textAlign: "center", opacity: p, transform: `translateY(${interpolate(p, [0, 1], [30, 0])}px)`, boxShadow: "0 12px 0 rgba(23,18,15,0.08)" }}>
       <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 40, color: theme.inkSoft }}>{c.title}</div>
@@ -292,16 +301,16 @@ const Compare: React.FC<{ scene: CompareScene }> = ({ scene }) => {
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "row", gap: 60 }}>
       {card(scene.left, l, false)}
-      <div style={{ fontFamily: display, fontWeight: 900, fontSize: 64, color: theme.inkSoft }}>vs</div>
-      {card(scene.right, r, true)}
+      {bothShown && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 64, color: theme.inkSoft }}>vs</div>}
+      {bothShown && card(scene.right, r, true)}
     </AbsoluteFill>
   );
 };
 
 export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, SourceEntry> }> = ({ scene, sources }) => {
   const frame = useCurrentFrame();
-  const fade = interpolate(frame, [0, 7], [0, 1], { extrapolateRight: "clamp" });
-  const slide = interpolate(frame, [0, 11], [34, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // near-hard cut: a 4-frame fade only (Casual Finance hard-cuts between shots)
+  const fade = interpolate(frame, [0, 4], [0, 1], { extrapolateRight: "clamp" });
   let inner: React.ReactNode = null;
   switch (scene.type) {
     case "title": inner = <Title scene={scene} />; break;
@@ -313,9 +322,5 @@ export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, Source
     case "chalkboard": inner = <Chalkboard scene={scene} />; break;
     case "compare": inner = <Compare scene={scene} />; break;
   }
-  return (
-    <AbsoluteFill style={{ backgroundColor: theme.bg }}>
-      <AbsoluteFill style={{ opacity: fade, transform: `translateY(${slide}px)` }}>{inner}</AbsoluteFill>
-    </AbsoluteFill>
-  );
+  return <AbsoluteFill style={{ backgroundColor: theme.bg, opacity: fade }}>{inner}</AbsoluteFill>;
 };
