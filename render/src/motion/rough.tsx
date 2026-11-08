@@ -25,8 +25,8 @@ const INK = "#17120f";
 function opts(o: RoughOpts) {
   return {
     seed: o.seed ?? 2,
-    roughness: o.roughness ?? 1.3,
-    bowing: o.bowing ?? 1.2,
+    roughness: o.roughness ?? 1.0,
+    bowing: o.bowing ?? 1.0,
     stroke: o.stroke ?? INK,
     strokeWidth: o.strokeWidth ?? 2.4,
     fill: o.fill,

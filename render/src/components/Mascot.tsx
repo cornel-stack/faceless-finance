@@ -34,30 +34,35 @@ const DEFAULT_EXPRESSION: Record<Pose, Expression> = {
 };
 
 const Face: React.FC<{ cx: number; cy: number; expr: Expression }> = ({ cx, cy, expr }) => {
-  const eyeDx = 9.5;
-  const eyeY = cy - 6;
-  const browY = expr === "surprised" ? cy - 17 : cy - 14;
-  const eyeR = expr === "surprised" ? 5 : 4.2;
+  const eyeDx = 8.5;
+  const eyeY = cy - 4;
+  const eyeRx = expr === "surprised" ? 3.6 : 2.8;
+  const eyeRy = expr === "surprised" ? 4.6 : 3.8;
+  const browY = expr === "surprised" ? cy - 15 : cy - 12;
 
-  const brows =
-    expr === "worried"
-      ? [`M ${cx - 15} ${browY - 1} L ${cx - 4} ${browY + 4}`, `M ${cx + 4} ${browY + 4} L ${cx + 15} ${browY - 1}`]
-      : expr === "happy"
-      ? [`M ${cx - 15} ${browY + 2} Q ${cx - 9} ${browY - 3} ${cx - 3} ${browY}`, `M ${cx + 3} ${browY} Q ${cx + 9} ${browY - 3} ${cx + 15} ${browY + 2}`]
-      : [`M ${cx - 15} ${browY} Q ${cx - 9} ${browY - 3} ${cx - 3} ${browY - 1}`, `M ${cx + 3} ${browY - 1} Q ${cx + 9} ${browY - 3} ${cx + 15} ${browY}`];
+  let brows: [string, string];
+  if (expr === "worried") brows = [`M ${cx - 15} ${browY - 1} L ${cx - 4} ${browY + 4}`, `M ${cx + 4} ${browY + 4} L ${cx + 15} ${browY - 1}`];
+  else if (expr === "happy") brows = [`M ${cx - 15} ${browY + 2} Q ${cx - 9} ${browY - 3} ${cx - 3} ${browY}`, `M ${cx + 3} ${browY} Q ${cx + 9} ${browY - 3} ${cx + 15} ${browY + 2}`];
+  else if (expr === "surprised") brows = [`M ${cx - 15} ${browY} Q ${cx - 9} ${browY - 4} ${cx - 3} ${browY}`, `M ${cx + 3} ${browY} Q ${cx + 9} ${browY - 4} ${cx + 15} ${browY}`];
+  // neutral = subtly skeptical: left brow arched higher, right flatter & lower
+  else brows = [`M ${cx - 15} ${browY - 1} Q ${cx - 9} ${browY - 6} ${cx - 3} ${browY - 2}`, `M ${cx + 4} ${browY + 2} Q ${cx + 9} ${browY} ${cx + 15} ${browY + 2}`];
+
+  const mouth =
+    expr === "happy" ? `M ${cx - 11} ${cy + 8} Q ${cx} ${cy + 18} ${cx + 11} ${cy + 8}`
+    : expr === "worried" ? `M ${cx - 9} ${cy + 14} Q ${cx} ${cy + 9} ${cx + 9} ${cy + 14}`
+    : `M ${cx - 10} ${cy + 10} Q ${cx} ${cy + 11} ${cx + 10} ${cy + 10}`; // neutral ≈ flat
 
   return (
     <>
-      {/* eyes — simple solid almonds, no whites/pupils */}
-      <ellipse cx={cx - eyeDx} cy={eyeY} rx={eyeR * 0.74} ry={eyeR} fill={INK} />
-      <ellipse cx={cx + eyeDx} cy={eyeY} rx={eyeR * 0.74} ry={eyeR} fill={INK} />
+      {/* eyes — simple solid ovals */}
+      <ellipse cx={cx - eyeDx} cy={eyeY} rx={eyeRx} ry={eyeRy} fill={INK} />
+      <ellipse cx={cx + eyeDx} cy={eyeY} rx={eyeRx} ry={eyeRy} fill={INK} />
       {/* thick brows */}
-      {brows.map((d, i) => <RPath key={i} d={d} stroke={INK} strokeWidth={3.4} roughness={0.9} />)}
-      {/* mouth (no nose), sits low with chin below */}
-      {expr === "neutral" && <RPath d={`M ${cx - 9} ${cy + 10} Q ${cx} ${cy + 12} ${cx + 9} ${cy + 10}`} stroke={INK} strokeWidth={3} roughness={0.9} />}
-      {expr === "happy" && <RPath d={`M ${cx - 11} ${cy + 7} Q ${cx} ${cy + 19} ${cx + 11} ${cy + 7}`} stroke={INK} strokeWidth={3} roughness={0.9} />}
-      {expr === "worried" && <RPath d={`M ${cx - 9} ${cy + 14} Q ${cx} ${cy + 9} ${cx + 9} ${cy + 14}`} stroke={INK} strokeWidth={3} roughness={0.9} />}
-      {expr === "surprised" && <REllipse cx={cx} cy={cy + 13} w={10} h={12} fill={INK} stroke={INK} strokeWidth={1.6} />}
+      {brows.map((d, i) => <RPath key={i} d={d} stroke={INK} strokeWidth={3.6} roughness={0.6} />)}
+      {/* mouth (no nose) */}
+      {expr === "surprised"
+        ? <REllipse cx={cx} cy={cy + 12} w={9} h={11} fill={INK} stroke={INK} strokeWidth={1.4} roughness={0.6} />
+        : <RPath d={mouth} stroke={INK} strokeWidth={3.2} roughness={0.6} />}
     </>
   );
 };
@@ -75,23 +80,23 @@ const Hair: React.FC<{ cx: number; cy: number; variant: Variant }> = ({ cx, cy, 
       </>
     );
   }
-  // messy scribbled hair — tall and spiky on top, fringe over the forehead
-  const hair = `M ${cx - 22} ${cy - 3}
-    C ${cx - 29} ${cy - 24} ${cx - 20} ${cy - 40} ${cx - 10} ${cy - 33}
-    C ${cx - 6} ${cy - 44} ${cx + 4} ${cy - 42} ${cx + 6} ${cy - 33}
-    C ${cx + 16} ${cy - 42} ${cx + 26} ${cy - 30} ${cx + 21} ${cy - 3}
-    C ${cx + 13} ${cy - 14} ${cx + 8} ${cy - 11} ${cx + 4} ${cy - 15}
-    C ${cx} ${cy - 10} ${cx - 4} ${cy - 10} ${cx - 8} ${cy - 15}
-    C ${cx - 13} ${cy - 11} ${cx - 17} ${cy - 12} ${cx - 22} ${cy - 3} Z`;
-  return (
-    <>
-      <RPath d={hair} fill={INK} fillStyle="solid" stroke={INK} strokeWidth={2.6} roughness={2.4} bowing={2.5} />
-      <RPath d={`M ${cx - 12} ${cy - 33} L ${cx - 16} ${cy - 44}`} stroke={INK} strokeWidth={2.6} roughness={1.5} />
-      <RPath d={`M ${cx - 2} ${cy - 37} L ${cx - 3} ${cy - 48}`} stroke={INK} strokeWidth={2.6} roughness={1.5} />
-      <RPath d={`M ${cx + 8} ${cy - 34} L ${cx + 12} ${cy - 45}`} stroke={INK} strokeWidth={2.6} roughness={1.5} />
-      <RPath d={`M ${cx + 16} ${cy - 30} L ${cx + 21} ${cy - 39}`} stroke={INK} strokeWidth={2.6} roughness={1.5} />
-    </>
-  );
+  // solid black hair with distinct pointed spikes on top + a clean hairline
+  const hair = `M ${cx - 21} ${cy - 7}
+    L ${cx - 23} ${cy - 23}
+    L ${cx - 17} ${cy - 31}
+    L ${cx - 13} ${cy - 24}
+    L ${cx - 8} ${cy - 34}
+    L ${cx - 3} ${cy - 25}
+    L ${cx + 2} ${cy - 36}
+    L ${cx + 7} ${cy - 26}
+    L ${cx + 12} ${cy - 32}
+    L ${cx + 16} ${cy - 25}
+    L ${cx + 22} ${cy - 28}
+    L ${cx + 21} ${cy - 9}
+    Q ${cx + 9} ${cy - 15} ${cx + 1} ${cy - 13}
+    Q ${cx - 7} ${cy - 15} ${cx - 13} ${cy - 12}
+    Q ${cx - 18} ${cy - 11} ${cx - 21} ${cy - 7} Z`;
+  return <RPath d={hair} fill={INK} fillStyle="solid" stroke={INK} strokeWidth={2.6} roughness={0.9} bowing={0.8} />;
 };
 
 export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: Variant; width: number; height: number; idle?: boolean }> = ({
@@ -109,18 +114,18 @@ export const Mascot: React.FC<{ pose?: Pose; expression?: Expression; variant?: 
     <svg width={width} height={height} viewBox="0 0 100 175" preserveAspectRatio="xMidYMid meet">
       <g transform={`translate(0 ${bob})`}>
         {/* thin stick body */}
-        <RPath d={`M ${p.neck[0]} ${p.neck[1]} L ${p.pelvis[0]} ${p.pelvis[1]}`} stroke={INK} strokeWidth={LW} />
-        <RPath d={`M ${SH_L[0]} ${SH_L[1]} L ${p.arms.Lel[0]} ${p.arms.Lel[1]} L ${p.arms.Lwr[0]} ${p.arms.Lwr[1]}`} stroke={INK} strokeWidth={LW} />
-        <RPath d={`M ${SH_R[0]} ${SH_R[1]} L ${p.arms.Rel[0]} ${p.arms.Rel[1]} L ${p.arms.Rwr[0]} ${p.arms.Rwr[1]}`} stroke={INK} strokeWidth={LW} />
-        <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Lkn[0]} ${p.legs.Lkn[1]} L ${p.legs.Lan[0]} ${p.legs.Lan[1]}`} stroke={INK} strokeWidth={LW} />
-        <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Rkn[0]} ${p.legs.Rkn[1]} L ${p.legs.Ran[0]} ${p.legs.Ran[1]}`} stroke={INK} strokeWidth={LW} />
+        <RPath d={`M ${p.neck[0]} ${p.neck[1]} L ${p.pelvis[0]} ${p.pelvis[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
+        <RPath d={`M ${SH_L[0]} ${SH_L[1]} L ${p.arms.Lel[0]} ${p.arms.Lel[1]} L ${p.arms.Lwr[0]} ${p.arms.Lwr[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
+        <RPath d={`M ${SH_R[0]} ${SH_R[1]} L ${p.arms.Rel[0]} ${p.arms.Rel[1]} L ${p.arms.Rwr[0]} ${p.arms.Rwr[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
+        <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Lkn[0]} ${p.legs.Lkn[1]} L ${p.legs.Lan[0]} ${p.legs.Lan[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
+        <RPath d={`M ${p.pelvis[0]} ${p.pelvis[1]} L ${p.legs.Rkn[0]} ${p.legs.Rkn[1]} L ${p.legs.Ran[0]} ${p.legs.Ran[1]}`} stroke={INK} strokeWidth={LW} roughness={0.8} />
         {[p.arms.Lwr, p.arms.Rwr, p.legs.Lan, p.legs.Ran].map((pt, i) => (
           <circle key={i} cx={pt[0]} cy={pt[1]} r={2.4} fill={INK} />
         ))}
         {/* big egg head (wider jaw, narrower top) + face + hair */}
         <RPath
           d={`M ${hx} ${hy - 25} C ${hx + 15} ${hy - 25} ${hx + 23} ${hy - 10} ${hx + 24} ${hy + 3} C ${hx + 25} ${hy + 16} ${hx + 17} ${hy + 28} ${hx} ${hy + 28} C ${hx - 17} ${hy + 28} ${hx - 25} ${hy + 16} ${hx - 24} ${hy + 3} C ${hx - 23} ${hy - 10} ${hx - 15} ${hy - 25} ${hx} ${hy - 25} Z`}
-          fill={SKIN} stroke={INK} strokeWidth={3.4}
+          fill={SKIN} stroke={INK} strokeWidth={4} roughness={0.8}
         />
         <Face cx={hx} cy={hy} expr={expr} />
         <Hair cx={hx} cy={hy} variant={variant} />
