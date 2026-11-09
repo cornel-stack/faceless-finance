@@ -20,6 +20,7 @@ export type DoodleName =
   | "gaspump" | "ticker" | "gauge" | "bubble" | "calendar"
   | "crookedE" | "shredder" | "houseofcards" | "shellbox" | "handcuffs"
   | "magichat" | "trophy" | "prison"
+  | "token" | "yacht" | "island" | "laptop" | "chip" | "rocket" | "phone" | "vault"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -693,6 +694,87 @@ function shape(name: DoodleName): React.ReactNode {
           {[34, 44, 54, 66].map((x) => <RLine key={x} x1={x} y1={30} x2={x} y2={76} strokeWidth={4} />)}
           <RLine x1={26} y1={30} x2={74} y2={30} strokeWidth={4} />
           <RLine x1={26} y1={76} x2={74} y2={76} strokeWidth={4} />
+        </>
+      );
+    case "token":
+      return (
+        <>
+          <RCircle cx={50} cy={52} d={58} fill="#4a74b8" strokeWidth={SW} />
+          <RCircle cx={50} cy={52} d={44} fill="none" strokeWidth={2} stroke="#cfe0f5" />
+          <text x={50} y={64} fontSize={34} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Arial, sans-serif">₿</text>
+        </>
+      );
+    case "yacht":
+      return (
+        <>
+          <RPath d="M18 62 L82 62 L72 78 L28 78 Z" fill="#fff" strokeWidth={SW} />
+          <RRect x={34} y={46} w={34} h={16} fill="#eef0f1" strokeWidth={2} />
+          {[38, 48, 58].map((x) => <RRect key={x} x={x} y={50} w={6} h={8} fill="#9bc6e3" strokeWidth={1.2} />)}
+          <RLine x1={52} y1={24} x2={52} y2={46} strokeWidth={3} />
+          <RPath d="M54 26 L70 40 L54 40 Z" fill={RED} strokeWidth={1.6} />
+          <RPath d="M10 82 q10 -5 20 0 q10 5 20 0 q10 -5 20 0" stroke="#79b4d6" strokeWidth={2.4} fill="none" />
+        </>
+      );
+    case "island":
+      return (
+        <>
+          <REllipse cx={50} cy={80} w={64} h={14} fill="#e9d8a6" strokeWidth={SW} />
+          <RLine x1={48} y1={78} x2={44} y2={40} strokeWidth={5} stroke="#8a5a33" />
+          <RPath d="M44 40 q-24 -8 -30 2" stroke={GREEN} strokeWidth={6} fill="none" />
+          <RPath d="M44 40 q24 -8 30 2" stroke={GREEN} strokeWidth={6} fill="none" />
+          <RPath d="M44 40 q2 -24 -2 -30" stroke={GREEN} strokeWidth={6} fill="none" />
+          <RCircle cx={74} cy={28} d={16} fill={GOLD} strokeWidth={2} />
+        </>
+      );
+    case "laptop":
+      return (
+        <>
+          <RRect x={26} y={26} w={48} h={34} fill="#15181c" strokeWidth={SW} />
+          <RRect x={30} y={30} w={40} h={26} fill="#3ddc6f" strokeWidth={1.4} />
+          <path d="M34 48 L42 40 L48 44 L58 34 L66 38" fill="none" stroke="#15181c" strokeWidth={2.4} />
+          <RPath d="M18 72 L82 72 L76 60 L24 60 Z" fill="#9aa6ad" strokeWidth={SW} />
+        </>
+      );
+    case "chip":
+      return (
+        <>
+          <RCircle cx={50} cy={52} d={56} fill={RED} strokeWidth={SW} />
+          <RCircle cx={50} cy={52} d={34} fill="none" strokeWidth={3} stroke="#fff" />
+          {[0, 1, 2, 3, 4, 5].map((k) => { const a = k * Math.PI / 3; return <RRect key={k} x={50 + 26 * Math.cos(a) - 4} y={52 + 26 * Math.sin(a) - 6} w={8} h={12} fill="#fff" strokeWidth={0} />; })}
+          <text x={50} y={59} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </>
+      );
+    case "rocket":
+      return (
+        <>
+          <RPath d="M50 16 Q64 36 64 62 L36 62 Q36 36 50 16 Z" fill="#fff" strokeWidth={SW} />
+          <RCircle cx={50} cy={40} d={14} fill="#9bc6e3" strokeWidth={2} />
+          <RPath d="M36 56 L24 72 L36 68 Z" fill={RED} strokeWidth={1.6} />
+          <RPath d="M64 56 L76 72 L64 68 Z" fill={RED} strokeWidth={1.6} />
+          <RPath d="M42 66 Q50 92 58 66 Z" fill={GOLD} strokeWidth={1.6} />
+        </>
+      );
+    case "phone":
+      return (
+        <>
+          <RRect x={32} y={14} w={36} h={72} fill="#15181c" strokeWidth={SW} />
+          <RRect x={36} y={22} w={28} h={52} fill="#eef3f6" strokeWidth={1.4} />
+          <RLine x1={44} y1={18} x2={56} y2={18} strokeWidth={2} />
+          <RCircle cx={50} cy={80} d={6} fill="none" strokeWidth={2} />
+          <text x={50} y={44} fontSize={18} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <path d="M40 56 L46 50 L52 54 L60 46" fill="none" stroke={RED} strokeWidth={2.4} />
+        </>
+      );
+    case "vault":
+      return (
+        <>
+          <RRect x={16} y={20} w={68} h={60} fill="#9aa6ad" strokeWidth={SW} />
+          <RRect x={22} y={26} w={56} h={48} fill="#c3ccd2" strokeWidth={1.6} />
+          <RCircle cx={50} cy={50} d={30} fill="#eef3f6" strokeWidth={2.4} />
+          <RCircle cx={50} cy={50} d={10} fill="#15181c" strokeWidth={1.6} />
+          {[0, 1, 2, 3].map((k) => { const a = k * Math.PI / 2; return <RLine key={k} x1={50 + 8 * Math.cos(a)} y1={50 + 8 * Math.sin(a)} x2={50 + 18 * Math.cos(a)} y2={50 + 18 * Math.sin(a)} strokeWidth={2.4} />; })}
+          <RLine x1={28} y1={80} x2={28} y2={88} strokeWidth={3} />
+          <RLine x1={72} y1={80} x2={72} y2={88} strokeWidth={3} />
         </>
       );
   }

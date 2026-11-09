@@ -559,6 +559,59 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         {pop > 0 && pop < 1 && Array.from({ length: 10 }, (_, i) => { const a = (i / 10) * 6.28; return <line key={i} x1={VW / 2 + 150 * Math.cos(a)} y1={260 + 150 * Math.sin(a)} x2={VW / 2 + (150 + 70 * pop) * Math.cos(a)} y2={260 + (150 + 70 * pop) * Math.sin(a)} stroke={red} strokeWidth={6 * (1 - pop)} />; })}
       </svg>
     );
+  } else if (m === "bankrun") {
+    const doorX = 820, closeAt = fps * 2.2;
+    const shutter = interpolate(frame, [closeAt, closeAt + 12], [0, 230], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={doorX} y={120} width={140} height={300} rx={8} fill="#59707c" stroke={ink} strokeWidth={6} />
+        <rect x={doorX + 25} y={160} width={90} height={230} fill="#cfe6ef" stroke={ink} strokeWidth={4} />
+        {Array.from({ length: 7 }, (_, i) => {
+          const base = 120 + i * 95;
+          const x = Math.min(doorX - 60 - (i % 3) * 36, base + interpolate(frame, [i * 4, fps * 2], [0, 560], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+          const bob = Math.sin((frame + i * 10) * 0.4) * 6;
+          return <g key={i} transform={`translate(${x} ${300 + (i % 2) * 40 + bob})`}><circle cx={0} cy={-34} r={16} fill={["#f0cda6", "#e8c49a"][i % 2]} stroke={ink} strokeWidth={3} /><path d="M-15 70 Q-15 -6 0 -6 Q15 -6 15 70" fill={[green, red, "#4a74b8"][i % 3]} stroke={ink} strokeWidth={3} /></g>;
+        })}
+        {shutter > 0 && <g><rect x={doorX + 20} y={150} width={100} height={shutter} fill="#8a929a" stroke={ink} strokeWidth={4} />{shutter > 120 && <text x={doorX + 70} y={250} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" transform={`rotate(-4 ${doorX + 70} 250)`}>FROZEN</text>}</g>}
+      </svg>
+    );
+  } else if (m === "rocketcrash") {
+    const apex = fps * 1.3;
+    const up = interpolate(frame, [6, apex], [440, 120], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.quad) });
+    const down = interpolate(frame, [apex, apex + fps * 0.9], [0, 420], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
+    const x = interpolate(frame, [6, apex + fps], [VW / 2 - 180, VW / 2 + 120], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const y = up + down;
+    const rot = frame < apex ? -45 : interpolate(frame, [apex, apex + 10], [-45, 135], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${x} ${y}) rotate(${rot}) scale(1.4)`}>
+          <path d="M50 16 Q64 36 64 62 L36 62 Q36 36 50 16 Z" fill="#fff" stroke={ink} strokeWidth={4} transform="translate(-50 -40)" />
+          <circle cx={0} cy={0} r={8} fill="#9bc6e3" stroke={ink} strokeWidth={2} />
+          <path d="M-14 16 L-26 32 L-14 28 Z M14 16 L26 32 L14 28 Z" fill={red} stroke={ink} strokeWidth={2} />
+          {frame < apex && <path d="M-8 26 Q0 54 8 26 Z" fill={gold} />}
+        </g>
+        {down > 380 && <text x={x} y={y - 20} fontSize={66} opacity={interpolate(frame, [apex + fps * 0.8, apex + fps * 1.1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>💥</text>}
+      </svg>
+    );
+  } else if (m === "towerfall") {
+    const start = fps * 2.0;
+    const blocks = Array.from({ length: 7 }, (_, i) => i);
+    art = (
+      <svg width={VW} height={VH}>
+        {blocks.map((i) => {
+          const appear = spring({ frame, fps, delay: 6 + i * 6, config: { damping: 13 } });
+          const p = Math.max(0, Math.min(1, (frame - start - i * 2) / (fps * 0.8)));
+          const by = 440 - i * 52;
+          const rot = p * (20 + i * 6) * (i % 2 ? 1 : -1);
+          const dx = p * p * (i % 2 ? 180 : -180);
+          const dy = p * p * (420 - by);
+          return <g key={i} transform={`translate(${VW / 2 + dx} ${by + dy}) rotate(${rot}) scale(${appear})`} opacity={1 - p * 0.3}>
+            <rect x={-80} y={-24} width={160} height={46} rx={6} fill={i === 3 ? red : "#efe9db"} stroke={ink} strokeWidth={4} />
+            {i === 3 && <text x={0} y={8} fontSize={24} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">FTT</text>}
+          </g>;
+        })}
+      </svg>
+    );
   } else if (m === "stamp") {
     const txt = scene.stampText ?? scene.caption ?? "";
     const s = interpolate(frame, [4, 12], [3, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });

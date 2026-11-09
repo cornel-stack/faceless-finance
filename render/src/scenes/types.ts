@@ -79,7 +79,7 @@ export interface ImageScene extends Base {
 // arrows. This is the default "picture of the idea" device.
 export interface StageScene extends Base {
   type: "stage";
-  motif?: "housecollapse" | "vaultdrain" | "vanish" | "dominoes" | "crash" | "stamp" | "spotlight" | "shell" | "mask" | "inflate";
+  motif?: "housecollapse" | "vaultdrain" | "vanish" | "dominoes" | "crash" | "stamp" | "spotlight" | "shell" | "mask" | "inflate" | "bankrun" | "rocketcrash" | "towerfall";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
