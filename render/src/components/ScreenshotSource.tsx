@@ -14,7 +14,8 @@ export const ScreenshotSource: React.FC<{
   url: string;
   width: number;
   quoteRect?: QuoteRect | null;
-}> = ({ image, naturalW, naturalH, url, width, quoteRect }) => {
+  words?: QuoteRect[] | null;   // per-word rects → highlight word-by-word in sync
+}> = ({ image, naturalW, naturalH, url, width, quoteRect, words }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -23,6 +24,10 @@ export const ScreenshotSource: React.FC<{
   const imgH = (naturalH / naturalW) * imgW;
 
   const enter = spring({ frame, fps, config: { damping: 200 } });
+  // Word-by-word highlighter: each word's marker swipes in at a reading pace,
+  // so the quote lights up in sync with the narration reading it aloud.
+  const hasWords = Array.isArray(words) && words.length > 0;
+  const START = 8, PER = 10; // frames before the first word, then per word (~0.33s)
   const wipe = interpolate(frame, [10, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
   let domain = url;
@@ -60,38 +65,73 @@ export const ScreenshotSource: React.FC<{
       {/* screenshot + highlight overlay */}
       <div style={{ position: "relative", width: imgW, height: imgH }}>
         <Img src={staticFile(image)} style={{ width: imgW, height: imgH, display: "block" }} />
-        {quoteRect && (
-          <>
-            {/* highlighter marker */}
-            <div
-              style={{
-                position: "absolute",
-                left: `${quoteRect.x * 100}%`,
-                top: `${(quoteRect.y - 0.01) * 100}%`,
-                width: `${quoteRect.w * 100}%`,
-                height: `${(quoteRect.h + 0.02) * 100}%`,
-                background: "#ffe92e",
-                mixBlendMode: "multiply",
-                opacity: 0.55,
-                transform: `scaleX(${wipe})`,
-                transformOrigin: "left center",
-                borderRadius: 3,
-              }}
-            />
-            {/* red underline */}
-            <div
-              style={{
-                position: "absolute",
-                left: `${quoteRect.x * 100}%`,
-                top: `${(quoteRect.y + quoteRect.h + 0.01) * 100}%`,
-                width: `${quoteRect.w * wipe * 100}%`,
-                height: 4,
-                background: theme.accent,
-                borderRadius: 2,
-              }}
-            />
-          </>
-        )}
+        {hasWords
+          ? words!.map((w, i) => {
+              const t = interpolate(frame, [START + i * PER, START + i * PER + 4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+              if (t <= 0) return null;
+              return (
+                <React.Fragment key={i}>
+                  {/* per-word highlighter swipe */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: `${w.x * 100}%`,
+                      top: `${(w.y - 0.006) * 100}%`,
+                      width: `${w.w * 100}%`,
+                      height: `${(w.h + 0.012) * 100}%`,
+                      background: "#ffe92e",
+                      mixBlendMode: "multiply",
+                      opacity: 0.6,
+                      transform: `scaleX(${t})`,
+                      transformOrigin: "left center",
+                      borderRadius: 2,
+                    }}
+                  />
+                  {/* per-word red underline */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: `${w.x * 100}%`,
+                      top: `${(w.y + w.h + 0.008) * 100}%`,
+                      width: `${w.w * t * 100}%`,
+                      height: 3,
+                      background: theme.accent,
+                      borderRadius: 2,
+                    }}
+                  />
+                </React.Fragment>
+              );
+            })
+          : quoteRect && (
+            <>
+              <div
+                style={{
+                  position: "absolute",
+                  left: `${quoteRect.x * 100}%`,
+                  top: `${(quoteRect.y - 0.01) * 100}%`,
+                  width: `${quoteRect.w * 100}%`,
+                  height: `${(quoteRect.h + 0.02) * 100}%`,
+                  background: "#ffe92e",
+                  mixBlendMode: "multiply",
+                  opacity: 0.55,
+                  transform: `scaleX(${wipe})`,
+                  transformOrigin: "left center",
+                  borderRadius: 3,
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  left: `${quoteRect.x * 100}%`,
+                  top: `${(quoteRect.y + quoteRect.h + 0.01) * 100}%`,
+                  width: `${quoteRect.w * wipe * 100}%`,
+                  height: 4,
+                  background: theme.accent,
+                  borderRadius: 2,
+                }}
+              />
+            </>
+          )}
       </div>
     </div>
   );

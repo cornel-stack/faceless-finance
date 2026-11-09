@@ -87,9 +87,29 @@ function locateQuote(quote) {
   while (el && el.getBoundingClientRect().width < 240 && el.parentElement) el = el.parentElement;
   el.scrollIntoView({ block: "center", inline: "nearest" });
 
+  // Per-word rects, in reading order, so the renderer can highlight word-by-word
+  // in sync with the narration (not one instant swipe). A word that wraps to the
+  // next line still gets its own rect at the right place.
+  const words = [];
+  const sub = flat.substr(idx, needle.length);
+  const re = /\S+/g;
+  let m;
+  while ((m = re.exec(sub))) {
+    const ws = idx + m.index;
+    const we = ws + m[0].length - 1;
+    if (ws >= map.length || we >= map.length) break;
+    try {
+      const wr = document.createRange();
+      wr.setStart(map[ws].node, map[ws].offset);
+      wr.setEnd(map[we].node, Math.min(map[we].offset + 1, map[we].node.nodeValue.length));
+      const b = wr.getBoundingClientRect();
+      if (b.width > 0 && b.height > 0) words.push({ x: b.x, y: b.y, w: b.width, h: b.height });
+    } catch {}
+  }
+
   const q = range.getBoundingClientRect();
   const c = el.getBoundingClientRect();
-  return { quote: { x: q.x, y: q.y, w: q.width, h: q.height }, ctx: { x: c.x, y: c.y, w: c.width, h: c.height } };
+  return { quote: { x: q.x, y: q.y, w: q.width, h: q.height }, ctx: { x: c.x, y: c.y, w: c.width, h: c.height }, words };
 }
 
 async function capture(page, { id, url, quote }, outDir) {
@@ -108,13 +128,16 @@ async function capture(page, { id, url, quote }, outDir) {
   const quoteRect = hit
     ? { x: hit.quote.x / vw, y: hit.quote.y / vh, w: hit.quote.w / vw, h: hit.quote.h / vh }
     : null;
+  const words = hit && hit.words
+    ? hit.words.map((w) => ({ x: w.x / vw, y: w.y / vh, w: w.w / vw, h: w.h / vh }))
+    : [];
 
   const file = `${outDir}/${id}.png`;
   await page.screenshot({ path: resolve(repoRoot, file) }); // full viewport
   return {
     id, image: `sources/${id}.png`,
     width: vw, height: vh,
-    quoteRect, url, found: Boolean(hit),
+    quoteRect, words, quote: quote || null, url, found: Boolean(hit),
   };
 }
 

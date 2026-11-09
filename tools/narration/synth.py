@@ -23,7 +23,7 @@ from pathlib import Path
 
 import edge_tts
 
-DEFAULT_VOICE = "en-US-ChristopherNeural"
+DEFAULT_VOICE = "en-US-BrianNeural"
 
 
 def ffprobe_seconds(path: Path) -> float:

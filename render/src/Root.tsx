@@ -8,6 +8,7 @@ import { MotionLab, MotionReel } from "./MotionLab";
 import { MascotSheet } from "./MascotSheet";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import { Film, filmDurationInFrames } from "./Film";
+import { Thumbnail } from "./Thumbnail";
 import type { Scene } from "./scenes/types";
 import type { MocapClip, Episode as EpisodeType } from "./types";
 import probeData from "./data/_probe.json";
@@ -87,6 +88,15 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1920}
         height={1080}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Thumbnail"
+        component={Thumbnail}
+        durationInFrames={1}
+        fps={FPS}
+        width={1280}
+        height={720}
         defaultProps={{}}
       />
       <Composition

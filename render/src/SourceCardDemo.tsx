@@ -9,6 +9,7 @@ export type SourceEntry = {
   height: number;
   url: string;
   quoteRect?: QuoteRect | null;
+  words?: QuoteRect[] | null;
 };
 
 export const SourceCardDemo: React.FC<{ entry: SourceEntry }> = ({ entry }) => (
@@ -19,6 +20,7 @@ export const SourceCardDemo: React.FC<{ entry: SourceEntry }> = ({ entry }) => (
       naturalH={entry.height}
       url={entry.url}
       quoteRect={entry.quoteRect}
+      words={entry.words}
       width={1120}
     />
   </AbsoluteFill>

@@ -2,13 +2,25 @@
   {
     "id": "s1",
     "type": "character",
+    "narration": "Every country on Earth is in debt. Every single one.",
     "pose": "present",
-    "expression": "neutral",
     "props": [
       {
         "name": "globe",
-        "label": "Every country"
+        "label": "the whole planet"
       },
+      {
+        "name": "chain",
+        "label": "…in debt"
+      }
+    ]
+  },
+  {
+    "id": "s2",
+    "type": "character",
+    "narration": "The United States, China, Japan, Germany, Britain — every major economy on the planet owes more money than it actually has.",
+    "pose": "explain",
+    "props": [
       {
         "name": "flagUS",
         "label": "U.S."
@@ -24,120 +36,113 @@
       {
         "name": "flagGB",
         "label": "Britain"
-      },
-      {
-        "name": "chain",
-        "label": "…in debt"
       }
-    ],
-    "narration": "Every country on Earth is in debt. All of them. The United States, China, Japan, Germany, Britain — every major economy on the planet owes more money than it actually has."
-  },
-  {
-    "id": "s2",
-    "type": "callout",
-    "text": "$40,000,000,000,000",
-    "sub": "the U.S. national debt",
-    "narration": "America alone just passed forty trillion dollars. That's a four with thirteen zeros after it, and it climbs by about a hundred thousand dollars every few seconds while you watch."
+    ]
   },
   {
     "id": "s3",
+    "type": "callout",
+    "narration": "And not by a little. America alone just passed forty trillion dollars. That's a four, followed by thirteen zeros.",
+    "text": "$40,000,000,000,000",
+    "sub": "the U.S. national debt"
+  },
+  {
+    "id": "s4",
+    "type": "character",
+    "narration": "It climbs by about a hundred thousand dollars every few seconds — faster than you can read this sentence.",
+    "pose": "surprised",
+    "expression": "surprised",
+    "props": [
+      {
+        "name": "debtclock",
+        "label": "+$100k / sec"
+      },
+      {
+        "name": "clock",
+        "label": "every few seconds"
+      }
+    ]
+  },
+  {
+    "id": "s5",
     "type": "doodle",
-    "narration": "You've seen the debt clock spinning. You've seen the headlines. America's broke, the dollar is doomed, our grandkids inherit the bill.",
+    "narration": "You've seen the debt clock spinning. You've seen the headlines. America's broke. The dollar is doomed. Your grandkids inherit the bill.",
     "items": [
       "debtclock",
       "newspaper",
-      "chartdown"
+      "baby"
     ],
     "labels": [
       "the debt clock",
       "the headlines",
-      "“the dollar's doomed”"
+      "“the kids inherit it”"
     ]
-  },
-  {
-    "id": "s4",
-    "type": "chart",
-    "chartType": "line",
-    "title": "Government debt, worldwide ($ trillions)",
-    "data": [
-      {
-        "label": "2000",
-        "value": 20
-      },
-      {
-        "label": "2008",
-        "value": 40
-      },
-      {
-        "label": "2015",
-        "value": 62
-      },
-      {
-        "label": "2020",
-        "value": 87
-      },
-      {
-        "label": "Today",
-        "value": 97
-      }
-    ],
-    "narration": "And it is not just us. Add up what every government on the planet owes, and you get a number creeping toward one hundred trillion dollars."
-  },
-  {
-    "id": "s5",
-    "type": "screenshot",
-    "sourceId": "s-global",
-    "caption": "The whole planet",
-    "reaction": "worried",
-    "narration": "Back in 2020 it was already over eighty-seven trillion. Today it's near a hundred. Every country, deeper in the hole, every single year."
   },
   {
     "id": "s6",
     "type": "character",
-    "pose": "think",
-    "expression": "worried",
+    "narration": "Here's the thing almost no one tells you. That giant, scary number is only half the story.",
+    "pose": "explain",
     "props": [
       {
-        "name": "capitol",
-        "label": "governments"
-      },
-      {
-        "name": "iou",
-        "label": "they owe…"
+        "name": "debtclock",
+        "label": "the scary number"
       },
       {
         "name": "scale",
-        "label": "but to whom?"
+        "label": "…only half the story"
       }
-    ],
-    "narration": "So here's the obvious question. The one almost nobody actually stops to ask."
+    ]
   },
   {
     "id": "s7",
+    "type": "title",
+    "narration": "So here's the strange part almost nobody stops on.",
+    "heading": "Who The World Actually Owes",
+    "kicker": "The question nobody asks",
+    "sub": "Follow the money — all the way down."
+  },
+  {
+    "id": "s8",
     "type": "character",
-    "pose": "present",
-    "expression": "neutral",
+    "narration": "If every country is in debt… then who is all that money actually owed to?",
+    "pose": "think",
+    "props": [
+      {
+        "name": "globe",
+        "label": "everyone owes…"
+      },
+      {
+        "name": "scale",
+        "label": "…owed to whom?"
+      }
+    ]
+  },
+  {
+    "id": "s9",
+    "type": "character",
+    "narration": "Debt doesn't just float in the air. For every borrower, somewhere, there has to be a lender.",
+    "pose": "explain",
     "props": [
       {
         "name": "iou",
         "label": "a borrower"
       },
       {
-        "name": "scale",
-        "label": "needs"
+        "name": "handshake",
+        "label": "a deal"
       },
       {
         "name": "bank",
-        "label": "…a lender"
+        "label": "a lender"
       }
-    ],
-    "narration": "If every country is in debt, then who is all that money owed to? Debt doesn't just float in the air. For every borrower, there has to be a lender."
+    ]
   },
   {
-    "id": "s8",
+    "id": "s10",
     "type": "character",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "Mars isn't lending us the money. So if the entire planet is in the red, who on Earth is holding the other side of the deal?",
+    "pose": "shrug",
     "props": [
       {
         "name": "globe",
@@ -151,49 +156,74 @@
         "name": "scale",
         "label": "who holds it?"
       }
-    ],
-    "narration": "Mars isn't lending us the money. So if the entire Earth is in the red, who on Earth is holding the other side of the deal? Who do they actually owe?"
-  },
-  {
-    "id": "s9",
-    "type": "character",
-    "pose": "present",
-    "expression": "neutral",
-    "props": [
-      {
-        "name": "iou",
-        "label": "a 'debt'"
-      },
-      {
-        "name": "dollar",
-        "label": "not a credit card"
-      }
-    ],
-    "bubble": "First — what IS a debt?",
-    "narration": "To answer that, you need to understand what a government debt even is. Because it is nothing like the credit card in your pocket."
-  },
-  {
-    "id": "s10",
-    "type": "doodle",
-    "items": [
-      "iou",
-      "dollar",
-      "coins"
-    ],
-    "labels": [
-      "A bond",
-      "borrow now",
-      "repay + interest"
-    ],
-    "caption": "A bond = a promise to pay you back",
-    "narration": "When a government spends more than it collects in taxes, which is basically always, it covers the gap by issuing a bond. And a bond is just a fancy IOU. A printed promise to pay you back, with interest.",
-    "flow": true
+    ]
   },
   {
     "id": "s11",
     "type": "character",
+    "narration": "The answer is weirder, and a lot more unsettling, than the scary number on the screen. So let's actually follow the money.",
+    "pose": "point",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "follow the money"
+      }
+    ]
+  },
+  {
+    "id": "s12",
+    "type": "character",
+    "narration": "First — what even is a government debt? Because it is nothing like the credit card in your wallet.",
+    "pose": "present",
+    "bubble": "What IS a debt?",
+    "props": [
+      {
+        "name": "creditcard",
+        "label": "not this"
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "type": "character",
+    "narration": "When you miss a credit card payment, a company comes after you. A government debt works almost the opposite way.",
     "pose": "explain",
-    "expression": "neutral",
+    "props": [
+      {
+        "name": "creditcard",
+        "label": "you owe a bank"
+      },
+      {
+        "name": "capitol",
+        "label": "a government owes… us"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "character",
+    "narration": "When a government wants to spend more than it collects in taxes — which is basically always — it doesn't call a bank. It writes an IOU.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "taxes collected"
+      },
+      {
+        "name": "coins",
+        "label": "spending"
+      },
+      {
+        "name": "iou",
+        "label": "the gap → an IOU"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "narration": "A fancy printed promise that says: lend me a hundred dollars today, and I'll pay you back a hundred and four in a year.",
+    "pose": "present",
     "props": [
       {
         "name": "dollar",
@@ -203,48 +233,203 @@
         "name": "coins",
         "label": "$104 in a year"
       }
-    ],
-    "narration": "The government hands out a slip that says: lend me a hundred dollars today, and I'll give you back a hundred and four in a year. Then it sells that promise to anyone willing to buy it."
+    ]
   },
   {
-    "id": "s12",
+    "id": "s16",
+    "type": "callout",
+    "narration": "That promise has a name. It's called a bond. And that single piece of paper is the most important object in the entire global economy.",
+    "text": "A bond.",
+    "sub": "a printed promise to repay — with interest",
+    "icon": "bond"
+  },
+  {
+    "id": "s17",
+    "type": "doodle",
+    "narration": "The government prints the bond, sells it for cash it spends today, and the buyer gets paid back later, with interest.",
+    "items": [
+      "bond",
+      "dollar",
+      "coins"
+    ],
+    "labels": [
+      "issue a bond",
+      "cash today",
+      "repaid + interest"
+    ],
+    "flow": true
+  },
+  {
+    "id": "s18",
     "type": "character",
-    "pose": "explain",
-    "expression": "neutral",
+    "narration": "So the real question was never how much the government owes. It's who lined up to buy all of those promises. And the answer is going to surprise you.",
+    "pose": "think",
+    "bubble": "So who buys them?",
     "props": [
       {
-        "name": "bank",
-        "label": "banks?"
-      },
-      {
-        "name": "crowd",
-        "label": "people?"
-      },
-      {
-        "name": "globe",
-        "label": "countries?"
+        "name": "bond",
+        "label": "who buys these?"
       }
-    ],
-    "bubble": "So who buys them?",
-    "narration": "So the real question was never how much the government owes. It's who lined up to buy all of those promises. And the answer is going to surprise you."
+    ]
   },
   {
-    "id": "s13",
+    "id": "s19",
+    "type": "character",
+    "narration": "Let's make this real. Follow a single bond, from the day it's born to the day it comes due.",
+    "pose": "present",
+    "bubble": "Follow one bond.",
+    "props": [
+      {
+        "name": "bond",
+        "label": "one bond"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "narration": "A teacher pays into her pension fund every month. That fund needs somewhere safe to grow her money.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "retiree",
+        "label": "a teacher's pension"
+      },
+      {
+        "name": "piggybank",
+        "label": "grow it safely"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "narration": "So it buys a ten-thousand-dollar government bond. That cash goes straight to the government — today.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bond",
+        "label": "a $10,000 bond"
+      },
+      {
+        "name": "capitol",
+        "label": "cash to the government"
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "type": "character",
+    "narration": "The government spends it now — on a bridge, a soldier's paycheck, a new hospital wing.",
+    "pose": "point",
+    "props": [
+      {
+        "name": "bridge",
+        "label": "a bridge"
+      },
+      {
+        "name": "tank",
+        "label": "a soldier's pay"
+      },
+      {
+        "name": "hospital",
+        "label": "a hospital"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "narration": "Ten years later, the bond comes due. The government has to pay the teacher's fund back — with interest.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "clock",
+        "label": "10 years later"
+      },
+      {
+        "name": "coins",
+        "label": "paid back + interest"
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "type": "character",
+    "narration": "But it doesn't have the cash. So it sells a brand-new bond to someone else, and uses that to pay her. The debt never dies. It just changes hands.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bond",
+        "label": "sell a NEW bond"
+      },
+      {
+        "name": "refinance",
+        "label": "to pay the old one"
+      },
+      {
+        "name": "handshake",
+        "label": "it just changes hands"
+      }
+    ]
+  },
+  {
+    "id": "s25",
     "type": "callout",
+    "narration": "Because for almost every large, rich country, the single biggest lender is itself.",
     "text": "Mostly themselves.",
-    "narration": "Because for almost every large country, the single biggest lender is themselves. Their own citizens. Their own banks. Their own pension funds. And their own central bank.",
     "icon": "crowd"
   },
   {
-    "id": "s14",
-    "type": "screenshot",
-    "sourceId": "s-us",
-    "caption": "$40 trillion — but to whom?",
-    "narration": "Take America's forty trillion. Everyone pictures it owed to some foreign rival across the ocean. But the overwhelming majority of it never leaves the country."
+    "id": "s26",
+    "type": "character",
+    "narration": "Not a foreign rival. Not some shadowy bank. Its own people. Its own banks. Its own pension funds. And its own central bank.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "its own people"
+      },
+      {
+        "name": "bank",
+        "label": "its own banks"
+      },
+      {
+        "name": "retiree",
+        "label": "its pensions"
+      },
+      {
+        "name": "capitol",
+        "label": "its central bank"
+      }
+    ]
   },
   {
-    "id": "s15",
+    "id": "s27",
+    "type": "character",
+    "narration": "Take America's forty trillion. Everyone pictures it owed to China, across the ocean, holding the receipt.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "flagCN",
+        "label": "China?"
+      },
+      {
+        "name": "iou",
+        "label": "holding the receipt?"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "screenshot",
+    "narration": "But the overwhelming majority of it never leaves the country.",
+    "sourceId": "s-us"
+  },
+  {
+    "id": "s29",
     "type": "compare",
+    "narration": "Of that forty trillion, only around eight trillion is held by foreigners. The other thirty-plus trillion is owed right here, at home.",
     "left": {
       "title": "Owed at home",
       "value": "~$32T",
@@ -254,14 +439,13 @@
       "title": "Owed abroad",
       "value": "~$8T",
       "icon": "globe"
-    },
-    "narration": "Of that forty trillion, only around eight trillion is held by foreign countries. The other thirty-plus trillion is owed right here, at home."
+    }
   },
   {
-    "id": "s16",
+    "id": "s30",
     "type": "character",
+    "narration": "It's held by American banks. By insurance companies. By pension funds that pay retirees every month. By mutual funds.",
     "pose": "explain",
-    "expression": "neutral",
     "props": [
       {
         "name": "bank",
@@ -272,78 +456,323 @@
         "label": "insurers"
       },
       {
-        "name": "piggybank",
+        "name": "retiree",
         "label": "pensions"
       },
       {
         "name": "dollar",
         "label": "mutual funds"
-      },
-      {
-        "name": "crowd",
-        "label": "…and you"
       }
-    ],
-    "narration": "It's held by American banks. By insurance companies. By pension funds. By mutual funds. And by you. If you own a bond fund, or a target-date retirement fund, you are literally one of the people the government owes."
+    ]
   },
   {
-    "id": "s17",
-    "type": "screenshot",
-    "sourceId": "s-foreign",
-    "caption": "Even the foreign slice",
-    "narration": "And even the foreign piece isn't who you'd guess. The biggest foreign lenders to America aren't rivals plotting against it. For years, the top two have been Japan and China."
-  },
-  {
-    "id": "s18",
-    "type": "callout",
-    "text": "Japan #1",
-    "sub": "~$1.1 trillion in U.S. debt",
-    "narration": "Japan holds over a trillion dollars of American debt. China, under a trillion and falling for years. Together they're a slice of the pie, not the whole thing.",
-    "icon": "flagJP"
-  },
-  {
-    "id": "s19",
+    "id": "s31",
     "type": "character",
-    "pose": "present",
-    "expression": "neutral",
+    "narration": "And by you. If you own a bond fund, or a retirement fund, you are literally one of the people the government owes money to.",
+    "pose": "point",
     "props": [
       {
-        "name": "bank",
-        "label": "the central bank"
-      },
-      {
-        "name": "printer",
-        "label": "the money printer"
-      }
-    ],
-    "bubble": "Now the strange part.",
-    "narration": "But here is where it gets strange. There is one more lender, and it might be the most important one of all. The government's own central bank."
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "pose": "present",
-    "expression": "neutral",
-    "variant": "villain",
-    "props": [
-      {
-        "name": "printer",
-        "label": "prints money"
+        "name": "piggybank",
+        "label": "your 401(k)"
       },
       {
         "name": "bond",
-        "label": "buys the bonds"
+        "label": "holds the bonds"
       },
+      {
+        "name": "crowd",
+        "label": "…that's you"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "character",
+    "narration": "Think about how strange that is. A huge share of the national debt is the government owing money to its own citizens' savings.",
+    "pose": "think",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "the government"
+      },
+      {
+        "name": "refinance",
+        "label": "owes…"
+      },
+      {
+        "name": "piggybank",
+        "label": "your savings"
+      }
+    ]
+  },
+  {
+    "id": "s33",
+    "type": "character",
+    "narration": "And it gets stranger. A big slice of the debt is the government literally owing money to itself.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "the government"
+      },
+      {
+        "name": "refinance",
+        "label": "owes…"
+      },
+      {
+        "name": "capitol",
+        "label": "…itself"
+      }
+    ]
+  },
+  {
+    "id": "s34",
+    "type": "character",
+    "narration": "For years, Social Security collected more than it paid out, and parked the surplus in — what else — government bonds.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "retiree",
+        "label": "Social Security surplus"
+      },
+      {
+        "name": "bond",
+        "label": "parked in bonds"
+      }
+    ]
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "So on paper, one arm of the government owes trillions to another arm of the very same government.",
+    "pose": "shrug",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "one arm"
+      },
+      {
+        "name": "scale",
+        "label": "owes…"
+      },
+      {
+        "name": "capitol",
+        "label": "another arm"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "Now, the foreign piece — the eight trillion — isn't who you'd guess either.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "the foreign 8T"
+      },
+      {
+        "name": "scale",
+        "label": "not who you think"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "screenshot",
+    "narration": "The biggest foreign lenders to America aren't enemies plotting its downfall. For years, the top two have been Japan and China.",
+    "sourceId": "s-foreign"
+  },
+  {
+    "id": "s38",
+    "type": "callout",
+    "narration": "Japan holds over a trillion dollars of American debt. China, under a trillion — and it's been selling for years.",
+    "text": "Japan #1",
+    "sub": "~$1.1 trillion in U.S. debt",
+    "icon": "flagJP"
+  },
+  {
+    "id": "s39",
+    "type": "character",
+    "narration": "These are trading partners. They hold US bonds because bonds are where you park trillions of dollars safely. It's a parking lot, not a weapon.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bond",
+        "label": "a safe place to park $"
+      },
+      {
+        "name": "goldbar",
+        "label": "like a reserve"
+      },
+      {
+        "name": "bomb",
+        "label": "not a weapon"
+      }
+    ]
+  },
+  {
+    "id": "s40",
+    "type": "character",
+    "narration": "So why does the whole world keep lining up to lend America money — almost for free?",
+    "pose": "think",
+    "props": [
+      {
+        "name": "globe",
+        "label": "the whole world"
+      },
+      {
+        "name": "flagUS",
+        "label": "…lends to America"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "character",
+    "narration": "Because the dollar is the world's reserve currency. Global trade runs on it.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "dollar",
+        "label": "the dollar"
+      },
+      {
+        "name": "globe",
+        "label": "runs world trade"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "character",
+    "narration": "Oil, ships, contracts all over the planet are priced in dollars. So almost everyone needs a pile of them.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "oilbarrel",
+        "label": "oil priced in $"
+      },
+      {
+        "name": "globe",
+        "label": "contracts in $"
+      },
+      {
+        "name": "moneybag",
+        "label": "everyone needs dollars"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "narration": "And the safest place to keep dollars is US government bonds. So the world parks its savings inside America's debt.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldbar",
+        "label": "safest store of $"
+      },
+      {
+        "name": "bond",
+        "label": "U.S. bonds"
+      },
+      {
+        "name": "globe",
+        "label": "the world parks here"
+      }
+    ]
+  },
+  {
+    "id": "s44",
+    "type": "callout",
+    "narration": "Economists call it America's exorbitant privilege. It gets to borrow in the one currency everyone else is desperate to hold.",
+    "text": "Exorbitant privilege",
+    "sub": "borrow in the money the world craves",
+    "icon": "dollar"
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "But that privilege is not a law of nature. It lasts exactly as long as the rest of the world believes in it — and not one day longer.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "dollar",
+        "label": "the privilege"
+      },
+      {
+        "name": "scale",
+        "label": "lasts while trust lasts"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "But here's where it gets genuinely strange. There's one more lender — and it might be the most important of all.",
+    "pose": "present",
+    "bubble": "Now the strange part.",
+    "props": [
+      {
+        "name": "bank",
+        "label": "one more lender"
+      }
+    ]
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "narration": "The government's own central bank. In America, the Federal Reserve.",
+    "pose": "explain",
+    "props": [
       {
         "name": "bank",
         "label": "the central bank"
+      },
+      {
+        "name": "flagUS",
+        "label": "the Federal Reserve"
       }
-    ],
-    "narration": "In a crisis, 2008, and then the pandemic, central banks did something that honestly sounds made up. They created brand-new money out of thin air, and used it to buy their own government's debt."
+    ]
   },
   {
-    "id": "s21",
+    "id": "s48",
+    "type": "character",
+    "narration": "In a crisis — 2008, and then the pandemic — central banks did something that honestly sounds made up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "2008 crash"
+      },
+      {
+        "name": "warning",
+        "label": "the pandemic"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "They created brand-new money, out of thin air, and used it to buy their own government's debt.",
+    "pose": "surprised",
+    "expression": "surprised",
+    "props": [
+      {
+        "name": "printer",
+        "label": "print new money"
+      },
+      {
+        "name": "bond",
+        "label": "buy its own debt"
+      }
+    ]
+  },
+  {
+    "id": "s50",
     "type": "doodle",
+    "narration": "Read that again. The Federal Reserve prints the dollars, and then lends them to the government by buying its bonds.",
     "items": [
       "printer",
       "bank",
@@ -354,100 +783,287 @@
       "lends it to…",
       "…the government"
     ],
-    "caption": "The bank that prints the money",
-    "narration": "Think about that for a second. The Federal Reserve, the Bank of England, the Bank of Japan. They print the currency, and then they lend it to their own government by buying its bonds. The government owes money to the institution that makes the money.",
     "flow": true
   },
   {
-    "id": "s22",
-    "type": "screenshot",
-    "sourceId": "s-japan",
-    "caption": "Japan: the extreme case",
-    "reaction": "surprised",
-    "narration": "Japan is the clearest example on Earth. It owes more than two hundred percent of everything the entire country produces in a year. By far the most of any major economy."
+    "id": "s51",
+    "type": "callout",
+    "narration": "The government owes money to the institution that makes the money. At one point, the Fed alone held over five trillion dollars of US debt.",
+    "text": "$5,000,000,000,000",
+    "sub": "held by the Fed itself",
+    "icon": "bank"
   },
   {
-    "id": "s23",
+    "id": "s52",
+    "type": "character",
+    "narration": "It's a little like writing yourself a check, cashing it, and calling it a loan.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "cheque",
+        "label": "write yourself a check"
+      },
+      {
+        "name": "refinance",
+        "label": "…call it a loan"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "There's a catch, of course. Print too much, and the money in everyone's pocket buys less. That's inflation — and we'll come right back to it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "printer",
+        "label": "print too much"
+      },
+      {
+        "name": "pricetag",
+        "label": "money buys less"
+      },
+      {
+        "name": "warning",
+        "label": "…inflation"
+      }
+    ]
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "If that sounds unstable, look at the country that's taken it further than anyone. Japan.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "flagJP",
+        "label": "Japan"
+      }
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "screenshot",
+    "narration": "Japan owes more than two hundred percent of everything the entire country produces in a year. By far the most of any major economy.",
+    "sourceId": "s-japan"
+  },
+  {
+    "id": "s56",
     "type": "callout",
-    "text": "88% owed at home",
-    "sub": "Japan's debt",
-    "narration": "And yet Japan has not collapsed. Why? Because almost all of it, over eighty-eight percent, is owed to the Japanese themselves. Their savers, their banks, and a central bank that owns nearly half of the entire national debt.",
+    "narration": "On paper, Japan should have collapsed decades ago. It hasn't. Why?",
+    "text": "234%",
+    "sub": "Japan's debt vs its entire economy",
     "icon": "flagJP"
   },
   {
-    "id": "s24",
+    "id": "s57",
+    "type": "callout",
+    "narration": "Because almost all of that debt — over eighty-eight percent — is owed to the Japanese themselves.",
+    "text": "88% owed at home",
+    "sub": "Japan's debt",
+    "icon": "flagJP"
+  },
+  {
+    "id": "s58",
     "type": "character",
+    "narration": "Their own savers. Their own banks. And a central bank that owns nearly half of the entire national debt.",
     "pose": "explain",
-    "expression": "neutral",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "Japanese savers"
+      },
+      {
+        "name": "bank",
+        "label": "Japanese banks"
+      },
+      {
+        "name": "printer",
+        "label": "central bank owns ~half"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "So Japan owes a staggering fortune, mostly to itself — and pays the interest on that fortune, mostly to itself.",
+    "pose": "explain",
     "props": [
       {
         "name": "flagJP",
         "label": "Japan"
       },
       {
-        "name": "scale",
+        "name": "refinance",
         "label": "owes itself"
       },
       {
         "name": "coins",
         "label": "pays itself"
       }
-    ],
-    "narration": "So Japan is a country that owes a staggering fortune, mostly to itself, and pays the interest on that fortune, mostly to itself. Which is exactly why the scary headline number, on its own, tells you almost nothing."
+    ]
   },
   {
-    "id": "s25",
+    "id": "s60",
     "type": "character",
+    "narration": "Which is exactly why the scary headline number, on its own, tells you almost nothing.",
+    "pose": "point",
+    "props": [
+      {
+        "name": "newspaper",
+        "label": "the scary headline"
+      },
+      {
+        "name": "scale",
+        "label": "tells you little"
+      }
+    ]
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "narration": "Traders have bet against Japanese debt for decades. They nicknamed it the widow-maker — because it has bankrupted almost everyone who tried.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flagJP",
+        "label": "Japan's debt"
+      },
+      {
+        "name": "chartdown",
+        "label": "the 'widow-maker'"
+      },
+      {
+        "name": "bomb",
+        "label": "it ruined the doubters"
+      }
+    ]
+  },
+  {
+    "id": "s62",
+    "type": "character",
+    "narration": "Which raises a very fair question. If the debt is mostly owed to ourselves, and the central bank can just buy it, and it never really gets paid off…",
     "pose": "shrug",
-    "expression": "worried",
     "props": [
       {
         "name": "scale",
         "label": "owed to ourselves"
       },
       {
-        "name": "refinance",
-        "label": "rolled over forever"
+        "name": "printer",
+        "label": "just buy it?"
       },
       {
-        "name": "printer",
-        "label": "just print it?"
+        "name": "refinance",
+        "label": "never paid off?"
       }
-    ],
-    "bubble": "So what's the problem?",
-    "narration": "Which raises a fair question. If the debt is mostly owed to ourselves, and it can be rolled over forever, and the central bank can just buy it, then what is the actual problem? Why does any of this matter?"
+    ]
   },
   {
-    "id": "s26",
+    "id": "s63",
+    "type": "character",
+    "narration": "then what, exactly, is the problem? Why does any of this matter?",
+    "pose": "think",
+    "bubble": "So what's the problem?",
+    "props": [
+      {
+        "name": "warning",
+        "label": "the catch…"
+      }
+    ]
+  },
+  {
+    "id": "s64",
     "type": "callout",
-    "text": "Two problems.",
     "narration": "Two things. And this is where the comfortable story quietly starts to crack.",
+    "text": "Two problems.",
     "icon": "warning"
   },
   {
-    "id": "s27",
+    "id": "s65",
     "type": "character",
-    "pose": "point",
-    "expression": "neutral",
+    "narration": "Problem one is the interest. You can roll a debt over forever. But every single year, you still have to pay interest on it.",
+    "pose": "explain",
     "props": [
       {
+        "name": "refinance",
+        "label": "roll it over"
+      },
+      {
+        "name": "clock",
+        "label": "every year"
+      },
+      {
         "name": "coins",
-        "label": "the interest"
+        "label": "pay interest"
+      }
+    ]
+  },
+  {
+    "id": "s66",
+    "type": "character",
+    "narration": "For years, rates were near zero, so the bill was tiny. Then inflation hit, rates shot up — and that bill absolutely exploded.",
+    "pose": "surprised",
+    "expression": "surprised",
+    "props": [
+      {
+        "name": "pricetag",
+        "label": "inflation hit"
       },
       {
         "name": "chartup",
-        "label": "rates jumped"
+        "label": "rates shot up"
       },
       {
         "name": "bomb",
         "label": "…it exploded"
       }
-    ],
-    "narration": "Problem one is the interest. You can roll the debt over forever, sure. But every single year, you still have to pay interest on it. And when interest rates jumped, that bill absolutely exploded."
+    ]
   },
   {
-    "id": "s28",
+    "id": "s67",
+    "type": "character",
+    "narration": "Here's why that matters to you — not just the Treasury. The government doesn't borrow in a vacuum.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "the government"
+      },
+      {
+        "name": "percent",
+        "label": "the same rates"
+      },
+      {
+        "name": "crowd",
+        "label": "…reach you"
+      }
+    ]
+  },
+  {
+    "id": "s68",
+    "type": "character",
+    "narration": "When its borrowing costs jump, so do yours. The exact same rates ripple straight into mortgages, car loans, and credit cards.",
+    "pose": "point",
+    "props": [
+      {
+        "name": "house",
+        "label": "your mortgage"
+      },
+      {
+        "name": "creditcard",
+        "label": "your credit card"
+      },
+      {
+        "name": "percent",
+        "label": "higher rates"
+      }
+    ]
+  },
+  {
+    "id": "s69",
     "type": "chart",
+    "narration": "America now spends around a trillion dollars a year, just on interest. Not paying the debt down. Just renting it.",
     "chartType": "line",
     "title": "U.S. interest on the debt ($ billions / year)",
     "data": [
@@ -456,12 +1072,16 @@
         "value": 220
       },
       {
+        "label": "2018",
+        "value": 320
+      },
+      {
         "label": "2020",
         "value": 345
       },
       {
         "label": "2022",
-        "value": 480
+        "value": 475
       },
       {
         "label": "2024",
@@ -472,11 +1092,12 @@
         "value": 1000
       }
     ],
-    "narration": "America now spends somewhere around a trillion dollars a year, just on interest. Not paying the debt down. Just renting it."
+    "highlight": 5
   },
   {
-    "id": "s29",
+    "id": "s70",
     "type": "compare",
+    "narration": "That is more than the United States spends on its entire military.",
     "left": {
       "title": "Interest on the debt",
       "value": "~$1T",
@@ -486,29 +1107,405 @@
       "title": "The entire military",
       "value": "~$850B",
       "icon": "tank"
-    },
-    "narration": "That is more than the United States spends on its entire military. The fastest-growing line in the whole federal budget isn't defense, or healthcare. It's the interest on money the country already spent."
+    }
   },
   {
-    "id": "s30",
+    "id": "s71",
+    "type": "callout",
+    "narration": "To picture a trillion a year — that's roughly thirty thousand dollars of interest, every single second.",
+    "text": "$30,000 / second",
+    "sub": "just the interest — around the clock",
+    "icon": "clock"
+  },
+  {
+    "id": "s72",
     "type": "character",
-    "pose": "present",
-    "expression": "neutral",
+    "narration": "The fastest-growing line in the whole federal budget isn't defense, or healthcare. It's interest on money already spent.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "tank",
+        "label": "defense"
+      },
+      {
+        "name": "hospital",
+        "label": "healthcare"
+      },
+      {
+        "name": "coins",
+        "label": "interest — fastest growing"
+      }
+    ]
+  },
+  {
+    "id": "s73",
+    "type": "character",
+    "narration": "Every dollar going to interest is a dollar not going to a hospital, a school, or back in your pocket.",
+    "pose": "point",
+    "props": [
+      {
+        "name": "hospital",
+        "label": "a hospital"
+      },
+      {
+        "name": "school",
+        "label": "a school"
+      },
+      {
+        "name": "piggybank",
+        "label": "your pocket"
+      }
+    ]
+  },
+  {
+    "id": "s74",
+    "type": "character",
+    "narration": "Problem two is subtler — and it's the one that actually sinks countries. It is not how much you owe. It is what you owe it in.",
+    "pose": "explain",
+    "bubble": "It's what you owe it IN.",
     "props": [
       {
         "name": "dollar",
-        "label": "your OWN money"
-      },
-      {
-        "name": "flagEU",
-        "label": "or someone else's"
+        "label": "which currency?"
       }
-    ],
-    "narration": "Problem two is subtler, and it's the one that actually sinks countries. It is not how much you owe. It is what you owe it in."
+    ]
   },
   {
-    "id": "s31",
+    "id": "s75",
+    "type": "character",
+    "narration": "If you borrow in a currency you print yourself — dollars, yen, pounds — you can always, technically, create more of it to pay.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "printer",
+        "label": "print your own"
+      },
+      {
+        "name": "dollar",
+        "label": "dollars · yen · pounds"
+      }
+    ]
+  },
+  {
+    "id": "s76",
+    "type": "character",
+    "narration": "You might cause inflation. You might make everyone poorer. But you can never be forced to default. You can always print.",
+    "pose": "shrug",
+    "props": [
+      {
+        "name": "pricetag",
+        "label": "inflation, maybe"
+      },
+      {
+        "name": "printer",
+        "label": "but never forced to default"
+      }
+    ]
+  },
+  {
+    "id": "s77",
+    "type": "character",
+    "narration": "But if you borrow in a currency you don't control — dollars or euros you cannot print — you can genuinely run out.",
+    "pose": "handtohead",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "flagEU",
+        "label": "someone else's money"
+      },
+      {
+        "name": "printer",
+        "label": "can't print it"
+      },
+      {
+        "name": "warning",
+        "label": "it runs out"
+      }
+    ]
+  },
+  {
+    "id": "s78",
+    "type": "character",
+    "narration": "And then one day, the lenders simply… say no.",
+    "pose": "handtohead",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "the lenders"
+      },
+      {
+        "name": "chartdown",
+        "label": "…say no"
+      }
+    ]
+  },
+  {
+    "id": "s79",
+    "type": "character",
+    "narration": "It even shows up in the interest rate. America borrows at around four percent. A shakier country might pay ten, fifteen, twenty.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "percent",
+        "label": "U.S. ~4%"
+      },
+      {
+        "name": "flagAR",
+        "label": "others 10–20%"
+      }
+    ]
+  },
+  {
+    "id": "s80",
+    "type": "character",
+    "narration": "Same promise — pay you back later. But lenders charge far more when they're less sure they'll ever see the money again.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bond",
+        "label": "same promise"
+      },
+      {
+        "name": "percent",
+        "label": "higher rate = less trust"
+      }
+    ]
+  },
+  {
+    "id": "s81",
+    "type": "character",
+    "narration": "That is the line between a scary headline and a real catastrophe.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "newspaper",
+        "label": "scary headline"
+      },
+      {
+        "name": "bomb",
+        "label": "real catastrophe"
+      }
+    ]
+  },
+  {
+    "id": "s82",
+    "type": "doodle",
+    "narration": "Greece. Argentina, which has defaulted nine separate times. Sri Lanka, in 2022, where people stormed the presidential palace.",
+    "items": [
+      "flagGR",
+      "flagAR",
+      "flagLK"
+    ],
+    "labels": [
+      "Greece",
+      "Argentina — 9 defaults",
+      "Sri Lanka, 2022"
+    ]
+  },
+  {
+    "id": "s83",
+    "type": "character",
+    "narration": "These are the countries that actually went bust — because they owed money they could not simply print.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flagGR",
+        "label": "went bust"
+      },
+      {
+        "name": "printer",
+        "label": "couldn't print it"
+      },
+      {
+        "name": "chain",
+        "label": "owed foreign money"
+      }
+    ]
+  },
+  {
+    "id": "s84",
+    "type": "character",
+    "narration": "And for poorer countries, this isn't a history lesson. It's happening right now.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "poorer countries"
+      },
+      {
+        "name": "warning",
+        "label": "happening now"
+      }
+    ]
+  },
+  {
+    "id": "s85",
+    "type": "character",
+    "narration": "When a developing country can't pay, it goes to the IMF — the world's lender of last resort — hat in hand.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "the IMF"
+      },
+      {
+        "name": "iou",
+        "label": "lender of last resort"
+      }
+    ]
+  },
+  {
+    "id": "s86",
+    "type": "character",
+    "narration": "The rescue comes with brutal conditions. Cut spending. Raise taxes. Usually while people are already hurting.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "cut spending"
+      },
+      {
+        "name": "taxform",
+        "label": "raise taxes"
+      },
+      {
+        "name": "warning",
+        "label": "people hurting"
+      }
+    ]
+  },
+  {
+    "id": "s87",
+    "type": "character",
+    "narration": "Zambia, Ghana, Sri Lanka — a quiet wave of defaults the headlines in rich countries barely mention.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flagLK",
+        "label": "Sri Lanka"
+      },
+      {
+        "name": "domino",
+        "label": "a wave of defaults"
+      }
+    ]
+  },
+  {
+    "id": "s88",
+    "type": "character",
+    "narration": "For them, the debt isn't a number on a clock. It's hospitals that close, and fuel that simply runs out.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "hospital",
+        "label": "hospitals close"
+      },
+      {
+        "name": "oilbarrel",
+        "label": "fuel runs out"
+      }
+    ]
+  },
+  {
+    "id": "s89",
+    "type": "character",
+    "narration": "Even a rich country can get a warning shot. In 2022, Britain announced a budget markets didn't trust — and the price of its bonds collapsed in days.",
+    "pose": "surprised",
+    "expression": "surprised",
+    "props": [
+      {
+        "name": "flagGB",
+        "label": "Britain, 2022"
+      },
+      {
+        "name": "bond",
+        "label": "bond prices…"
+      },
+      {
+        "name": "chartdown",
+        "label": "collapsed in days"
+      }
+    ]
+  },
+  {
+    "id": "s90",
+    "type": "character",
+    "narration": "Pension funds nearly broke. The Prime Minister was gone in weeks. Not because Britain ran out of money — but because lenders briefly lost confidence.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "domino",
+        "label": "pensions nearly broke"
+      },
+      {
+        "name": "capitol",
+        "label": "PM gone in weeks"
+      },
+      {
+        "name": "warning",
+        "label": "lost confidence"
+      }
+    ]
+  },
+  {
+    "id": "s91",
+    "type": "character",
+    "narration": "Here's the uncomfortable truth hiding under all of it. The real limit on a government's debt was never a law. It's confidence.",
+    "pose": "explain",
+    "bubble": "The real limit is confidence.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "not a law"
+      },
+      {
+        "name": "handshake",
+        "label": "…it's trust"
+      }
+    ]
+  },
+  {
+    "id": "s92",
+    "type": "character",
+    "narration": "There's even a name for the investors who punish a reckless government by dumping its bonds: the bond vigilantes.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "the bond vigilantes"
+      },
+      {
+        "name": "bond",
+        "label": "dump the bonds"
+      },
+      {
+        "name": "chartdown",
+        "label": "price crashes"
+      }
+    ]
+  },
+  {
+    "id": "s93",
+    "type": "character",
+    "narration": "No politician sets the ceiling. The bond market does — the day it decides it no longer believes you.",
+    "pose": "point",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "not politicians"
+      },
+      {
+        "name": "chartdown",
+        "label": "the market decides"
+      }
+    ]
+  },
+  {
+    "id": "s94",
     "type": "compare",
+    "narration": "So the US and Japan, in debt they owe to themselves in money they control, live in a different universe from a country that borrowed dollars it can never make.",
     "left": {
       "title": "Borrow your OWN money",
       "value": "US · Japan · UK",
@@ -518,163 +1515,393 @@
       "title": "Borrow someone else's",
       "value": "Greece · Argentina",
       "icon": "warning"
-    },
-    "narration": "If you borrow in a currency you print yourself, dollars, yen, pounds, you can always, technically, create more of it to pay. You might cause inflation, but you can never be forced to default."
+    }
   },
   {
-    "id": "s32",
+    "id": "s95",
     "type": "character",
-    "pose": "handtohead",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "printer",
-        "label": "can't print it"
-      },
-      {
-        "name": "warning",
-        "label": "it runs out"
-      },
-      {
-        "name": "chartdown",
-        "label": "lenders say no"
-      }
-    ],
-    "narration": "But if you borrow in a currency you don't control, if a country takes on debt in dollars or euros that it cannot print, then it can genuinely run out. And then one day, the lenders simply say no."
-  },
-  {
-    "id": "s33",
-    "type": "doodle",
-    "items": [
-      "flagGR",
-      "flagAR",
-      "flagLK"
-    ],
-    "labels": [
-      "Greece",
-      "Argentina",
-      "Sri Lanka"
-    ],
-    "caption": "The ones who actually defaulted",
-    "narration": "That is the line between a scary headline and a real catastrophe. Greece. Argentina, which has defaulted nine separate times. Sri Lanka, in 2022. These are the countries that actually went bust, because they owed money they could not simply print."
-  },
-  {
-    "id": "s34",
-    "type": "character",
-    "pose": "present",
-    "expression": "neutral",
-    "props": [
-      {
-        "name": "flagUS",
-        "label": "U.S."
-      },
-      {
-        "name": "flagJP",
-        "label": "Japan"
-      },
-      {
-        "name": "scale",
-        "label": "vs"
-      },
-      {
-        "name": "bomb",
-        "label": "borrowed dollars"
-      }
-    ],
-    "narration": "So the United States and Japan, drowning in debt they owe to themselves, in money they fully control, are in a completely different universe from a small country that borrowed dollars it can never make."
-  },
-  {
-    "id": "s35",
-    "type": "character",
+    "narration": "Which leaves the last question — the one everyone really means when they panic about the debt. Does any of it ever actually get paid back?",
     "pose": "think",
-    "expression": "worried",
+    "bubble": "Does it get paid back?",
     "props": [
       {
         "name": "iou",
         "label": "the debt"
       },
       {
-        "name": "chain",
+        "name": "scale",
         "label": "ever repaid?"
       }
-    ],
-    "bubble": "Does it get paid back?",
-    "narration": "Which leaves the last question. The one everyone really means when they panic about the debt. Does any of it ever actually get paid back?"
+    ]
   },
   {
-    "id": "s36",
+    "id": "s96",
     "type": "callout",
+    "narration": "The honest answer is: not really. Governments do not pay off their debt the way you pay off a loan.",
     "text": "No.",
     "sub": "it gets rolled over — forever",
-    "break": true,
-    "narration": "And the honest answer is: not really. Governments do not pay off their debt the way you pay off a loan. They refinance it, endlessly, issuing brand-new bonds to cover the old ones, for as long as people keep buying them.",
     "icon": "refinance"
   },
   {
-    "id": "s37",
+    "id": "s97",
     "type": "character",
+    "narration": "They refinance it endlessly — issuing brand-new bonds to cover the old ones, for as long as people keep buying them.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "piggybank",
-        "label": "pensions"
+        "name": "bond",
+        "label": "new bonds"
       },
       {
-        "name": "coins",
-        "label": "savings"
+        "name": "refinance",
+        "label": "cover the old ones"
       },
       {
         "name": "crowd",
-        "label": "our future"
-      },
-      {
-        "name": "scale",
-        "label": "owed to us"
+        "label": "as long as people buy"
       }
-    ],
-    "narration": "The debt isn't a bill from some outside villain that comes due on a Tuesday. It's a giant web of promises, owed mostly to ourselves. To our pension funds. To our savings accounts. To our own future."
+    ]
   },
   {
-    "id": "s38",
+    "id": "s98",
     "type": "character",
+    "narration": "Every so often, America even stages a crisis with itself. Politicians threaten not to raise the debt ceiling — not to pay bills they already approved.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "the debt ceiling"
+      },
+      {
+        "name": "warning",
+        "label": "threaten not to pay"
+      }
+    ]
+  },
+  {
+    "id": "s99",
+    "type": "character",
+    "narration": "It's theater. A US default wouldn't be because the money ran out. It would be a choice — a self-inflicted wound on the one thing holding it all up. Trust.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bomb",
+        "label": "self-inflicted"
+      },
+      {
+        "name": "handshake",
+        "label": "…breaks the trust"
+      }
+    ]
+  },
+  {
+    "id": "s100",
+    "type": "character",
+    "narration": "Historically, they don't shrink the debt. They grow the economy around it, and let inflation quietly shrink what's owed.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "factory",
+        "label": "grow the economy"
+      },
+      {
+        "name": "pricetag",
+        "label": "inflation shrinks the debt"
+      }
+    ]
+  },
+  {
+    "id": "s101",
+    "type": "character",
+    "narration": "And if this all feels unprecedented, it isn't. We've been here before — much, much deeper.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "clock",
+        "label": "we've been here"
+      },
+      {
+        "name": "newspaper",
+        "label": "much deeper before"
+      }
+    ]
+  },
+  {
+    "id": "s102",
+    "type": "character",
+    "narration": "In World War Two, governments begged ordinary citizens to buy war bonds to fund the fight. People lined up to lend their savings to the state.",
     "pose": "present",
-    "expression": "neutral",
+    "props": [
+      {
+        "name": "bond",
+        "label": "war bonds"
+      },
+      {
+        "name": "crowd",
+        "label": "citizens lined up"
+      }
+    ]
+  },
+  {
+    "id": "s103",
+    "type": "character",
+    "narration": "America came out of that war owing more than its entire economy made in a year — more, relative to its size, than it does today.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "tank",
+        "label": "post-war debt"
+      },
+      {
+        "name": "chartup",
+        "label": "bigger than today"
+      }
+    ]
+  },
+  {
+    "id": "s104",
+    "type": "character",
+    "narration": "It never paid that off with a big check. It grew. It inflated. And over thirty years, the mountain quietly shrank.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "factory",
+        "label": "it grew"
+      },
+      {
+        "name": "pricetag",
+        "label": "it inflated"
+      },
+      {
+        "name": "refinance",
+        "label": "the mountain shrank"
+      }
+    ]
+  },
+  {
+    "id": "s105",
+    "type": "compare",
+    "narration": "After World War Two, America's debt was even bigger than today, compared to its economy. It never paid it off. It grew, and inflated, its way out over decades.",
+    "left": {
+      "title": "U.S. debt after WWII",
+      "value": "~106% of GDP",
+      "icon": "tank"
+    },
+    "right": {
+      "title": "U.S. debt today",
+      "value": "~120% of GDP",
+      "icon": "chartup"
+    }
+  },
+  {
+    "id": "s106",
+    "type": "character",
+    "narration": "So the debt isn't a bill from some outside villain that comes due on a Tuesday.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bomb",
+        "label": "not an outside villain"
+      },
+      {
+        "name": "iou",
+        "label": "coming due Tuesday?"
+      }
+    ]
+  },
+  {
+    "id": "s107",
+    "type": "character",
+    "narration": "It's a giant web of promises — owed mostly to ourselves. To our pension funds. To our savings accounts. To our own future.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "retiree",
+        "label": "our pensions"
+      },
+      {
+        "name": "piggybank",
+        "label": "our savings"
+      },
+      {
+        "name": "baby",
+        "label": "our own future"
+      }
+    ]
+  },
+  {
+    "id": "s108",
+    "type": "character",
+    "narration": "Remember who's really on the other side of every one of these bonds. It isn't a villain in a vault.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bond",
+        "label": "the other side"
+      },
+      {
+        "name": "bank",
+        "label": "not a villain in a vault"
+      }
+    ]
+  },
+  {
+    "id": "s109",
+    "type": "character",
+    "narration": "It's a retired teacher's pension. A town's insurance pool. The safe corner of your own savings.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "retiree",
+        "label": "a teacher's pension"
+      },
+      {
+        "name": "officetower",
+        "label": "a town's insurer"
+      },
+      {
+        "name": "piggybank",
+        "label": "your savings"
+      }
+    ]
+  },
+  {
+    "id": "s110",
+    "type": "character",
+    "narration": "Every bond is somebody's asset. Wipe out the debt overnight, and you wipe out their savings right along with it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bond",
+        "label": "somebody's asset"
+      },
+      {
+        "name": "domino",
+        "label": "wipe it out → wipe them out"
+      }
+    ]
+  },
+  {
+    "id": "s111",
+    "type": "character",
+    "narration": "Which means paying it down was never really the plan. And every way out has a victim.",
+    "pose": "explain",
+    "bubble": "Every exit has a victim.",
     "props": [
       {
         "name": "scale",
+        "label": "who pays?"
+      }
+    ]
+  },
+  {
+    "id": "s112",
+    "type": "character",
+    "narration": "Taxing it away takes it from someone. Inflating it away quietly shrinks everyone's savings. Defaulting on it blows up the very pensions holding the bonds.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "taxform",
         "label": "tax it away"
       },
       {
-        "name": "printer",
+        "name": "pricetag",
         "label": "inflate it away"
       },
       {
-        "name": "bomb",
-        "label": "default"
-      },
-      {
-        "name": "crowd",
-        "label": "who pays?"
+        "name": "domino",
+        "label": "default blows up pensions"
       }
-    ],
-    "narration": "Which means paying it down was never really the plan. Taxing it away takes it from someone. Inflating it away quietly shrinks everyone's savings. Defaulting on it blows up the very pensions holding it. There is no clean exit. Only a choice about who absorbs the loss."
+    ]
   },
   {
-    "id": "s39",
+    "id": "s113",
+    "type": "character",
+    "narration": "And here's the quiet favorite. Inflation is a tax nobody votes for.",
+    "pose": "explain",
+    "bubble": "A tax nobody votes for.",
+    "props": [
+      {
+        "name": "pricetag",
+        "label": "inflation"
+      }
+    ]
+  },
+  {
+    "id": "s114",
+    "type": "character",
+    "narration": "When prices rise, the dollars the government owes are worth less. The debt quietly shrinks — and you pay the difference at the checkout.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "refinance",
+        "label": "the debt shrinks"
+      },
+      {
+        "name": "pricetag",
+        "label": "prices rise"
+      },
+      {
+        "name": "piggybank",
+        "label": "you pay at the till"
+      }
+    ]
+  },
+  {
+    "id": "s115",
     "type": "callout",
+    "narration": "There is no clean exit. There is only a quiet choice about who absorbs the loss.",
+    "text": "Who absorbs the loss?",
+    "icon": "scale"
+  },
+  {
+    "id": "s116",
+    "type": "character",
+    "narration": "So the real question was never whether the world can repay forty, or ninety, or a hundred trillion dollars. It can't, and it won't.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "$100T owed"
+      },
+      {
+        "name": "refinance",
+        "label": "never repaid"
+      }
+    ]
+  },
+  {
+    "id": "s117",
+    "type": "character",
+    "narration": "None of this means the debt doesn't matter. It means it doesn't end with a bang. It ends with a slow, quiet transfer — from the many, to whoever's left holding the paper.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "from the many"
+      },
+      {
+        "name": "bond",
+        "label": "to whoever holds the paper"
+      }
+    ]
+  },
+  {
+    "id": "s118",
+    "type": "callout",
+    "narration": "The real question is who's left holding the bonds when the interest finally eats everything else.",
     "text": "Who's holding the bond?",
-    "narration": "So the real question was never whether the world can repay forty, or ninety, or a hundred trillion dollars. It can't, and it won't. The real question is who is left holding the bonds when the interest finally eats everything else.",
     "icon": "bond"
   },
   {
-    "id": "s40",
+    "id": "s119",
     "type": "character",
-    "pose": "present",
-    "expression": "worried",
+    "narration": "And more and more, quietly — through your pension, your bank, your retirement fund — the answer is turning out to be you.",
+    "pose": "point",
+    "bubble": "…it's you.",
     "props": [
       {
-        "name": "piggybank",
+        "name": "retiree",
         "label": "your pension"
       },
       {
@@ -682,32 +1909,42 @@
         "label": "your bank"
       },
       {
-        "name": "bond",
-        "label": "the bond"
-      },
-      {
-        "name": "crowd",
-        "label": "…it's you"
+        "name": "piggybank",
+        "label": "your fund"
       }
-    ],
-    "bubble": "…it's you.",
-    "narration": "And more and more, quietly, through your pension, your bank, your retirement fund, the answer to that question is turning out to be you."
+    ]
   },
   {
-    "id": "s41",
+    "id": "s120",
     "type": "character",
-    "pose": "stand",
-    "expression": "neutral",
+    "narration": "If you want more of the stuff hiding in plain sight inside the numbers, hit subscribe — and tell me which country's debt you want me to pull apart next.",
+    "pose": "present",
     "props": [
       {
         "name": "globe",
         "label": "which country next?"
       },
       {
-        "name": "iou",
-        "label": "the debt"
+        "name": "bond",
+        "label": "the next deep dive"
       }
-    ],
-    "narration": "If you want more of the stuff that's hiding in plain sight inside the numbers, hit subscribe, and tell me which country's debt you want me to pull apart next. I do the reading. You get the parts that matter."
+    ]
+  },
+  {
+    "id": "s121",
+    "type": "character",
+    "narration": "I do the reading. You get the parts that matter.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "newspaper",
+        "label": "I do the reading"
+      },
+      {
+        "name": "coins",
+        "label": "you get what matters"
+      }
+    ]
   }
 ]
