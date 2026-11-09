@@ -69,6 +69,7 @@ ch("s2", "The United States, China, Japan, Germany, Britain — every major econ
    props=[("flagUS", "U.S."), ("flagCN", "China"), ("flagJP", "Japan"), ("flagGB", "Britain")])
 callout("s3", "And not by a little. America alone just passed forty trillion dollars. That's a four, followed by thirteen zeros.",
         "$40,000,000,000,000", sub="the U.S. national debt")
+shot("s3ev", "And this isn't me being dramatic — budget watchdogs sounded the alarm the day it crossed forty trillion.", "s-40t")
 ch("s4", "It climbs by about a hundred thousand dollars every few seconds — faster than you can read this sentence.", pose="surprised", expr="surprised",
    props=[("debtclock", "+$100k / sec"), ("clock", "every few seconds")])
 doodle("s5", "You've seen the debt clock spinning. You've seen the headlines. America's broke. The dollar is doomed. Your grandkids inherit the bill.",
@@ -76,6 +77,7 @@ doodle("s5", "You've seen the debt clock spinning. You've seen the headlines. Am
 
 ch("s5b", "Here's the thing almost no one tells you. That giant, scary number is only half the story.", pose="explain",
    props=[("debtclock", "the scary number"), ("scale", "…only half the story")])
+shot("s5ev", "And it's not just America. The IMF says global government debt is about to blow past one hundred trillion dollars.", "s-global")
 
 title("s6", "So here's the strange part almost nobody stops on.", "Who The World Actually Owes",
       kicker="The question nobody asks", sub="Follow the money — all the way down.")
@@ -138,6 +140,7 @@ ch("s25a", "And it gets stranger. A big slice of the debt is the government lite
    props=[("capitol", "the government"), ("refinance", "owes…"), ("capitol", "…itself")])
 ch("s25b", "For years, Social Security collected more than it paid out, and parked the surplus in — what else — government bonds.", pose="explain",
    props=[("retiree", "Social Security surplus"), ("bond", "parked in bonds")])
+shot("s25ev", "That's not a theory. By law, the trust fund's surplus is held entirely in special U.S. Treasury securities.", "s-ssa")
 ch("s25c", "So on paper, one arm of the government owes trillions to another arm of the very same government.", pose="shrug",
    props=[("officetower", "one arm"), ("scale", "owes…"), ("capitol", "another arm")])
 
@@ -221,6 +224,7 @@ chart("s49", "America now spends around a trillion dollars a year, just on inter
       [("2015", 220), ("2018", 320), ("2020", 345), ("2022", 475), ("2024", 880), ("2025", 1000)], highlight=5)
 compare("s50", "That is more than the United States spends on its entire military.",
         "Interest on the debt", "~$1T", "The entire military", "~$850B", licon="coins", ricon="tank")
+shot("s50ev", "And you don't have to trust me on that — budget analysts put interest payments above national defense itself.", "s-interest")
 callout("s50a", "To picture a trillion a year — that's roughly thirty thousand dollars of interest, every single second.",
         "$30,000 / second", sub="just the interest — around the clock", icon="clock")
 ch("s51", "The fastest-growing line in the whole federal budget isn't defense, or healthcare. It's interest on money already spent.", pose="explain",
@@ -265,6 +269,7 @@ ch("s61", "Even a rich country can get a warning shot. In 2022, Britain announce
    props=[("flagGB", "Britain, 2022"), ("bond", "bond prices…"), ("chartdown", "collapsed in days")])
 ch("s62", "Pension funds nearly broke. The Prime Minister was gone in weeks. Not because Britain ran out of money — but because lenders briefly lost confidence.", pose="explain",
    props=[("domino", "pensions nearly broke"), ("capitol", "PM gone in weeks"), ("warning", "lost confidence")])
+shot("s62ev", "The record is right there: in 2022, UK borrowing costs saw their largest single-day jump ever recorded.", "s-uk")
 ch("s62b", "Here's the uncomfortable truth hiding under all of it. The real limit on a government's debt was never a law. It's confidence.", pose="explain",
    bubble="The real limit is confidence.", props=[("scale", "not a law"), ("handshake", "…it's trust")])
 ch("s62c", "There's even a name for the investors who punish a reckless government by dumping its bonds: the bond vigilantes.", pose="present",
