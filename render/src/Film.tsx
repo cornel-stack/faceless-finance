@@ -19,15 +19,18 @@ export const filmDurationInFrames = (scenes: Scene[], fps: number, timing?: numb
 // presenting one thing at a time. Cut rate = prop count, so rich scenes cut
 // faster. Non-character scenes stay a single held shot.
 function shotsFor(scene: Scene): Scene[] {
-  // Character: a bubble "talking" lead (if any) + one shot per prop.
+  // Character: a bubble "talking" lead (if any), then props ACCUMULATE — each
+  // sub-shot keeps every prop so far and pops the newest in, so connected items
+  // stay on screen together and the host can explain how they relate. Cuts stay
+  // frequent (one per prop), but each shot is richer than the last.
   if (scene.type === "character") {
     const cs: CharacterScene = scene;
     const props = cs.props ?? [];
     if (props.length === 0) return [scene];
     const shots: CharacterScene[] = [];
-    if (cs.bubble) shots.push({ ...cs, id: `${cs.id}_t`, props: undefined });
-    props.forEach((p, k) =>
-      shots.push({ ...cs, id: `${cs.id}_p${k}`, props: [p], bubble: undefined, caption: k === props.length - 1 ? cs.caption : undefined })
+    if (cs.bubble) shots.push({ ...cs, id: `${cs.id}_t`, reveal: 0 });
+    props.forEach((_p, k) =>
+      shots.push({ ...cs, id: `${cs.id}_r${k}`, reveal: k + 1, bubble: undefined, caption: k === props.length - 1 ? cs.caption : undefined })
     );
     return shots;
   }

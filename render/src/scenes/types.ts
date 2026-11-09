@@ -24,6 +24,8 @@ export interface CharacterScene extends Base {
   bubble?: string;
   /** illustrations clustered beside the character (so no scene is bare) */
   props?: { name: DoodleName; label?: string }[];
+  /** show only the first N props (props accumulate across a scene) */
+  reveal?: number;
   caption?: string;
 }
 export interface CalloutScene extends Base {

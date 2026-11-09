@@ -38,13 +38,15 @@ const Title: React.FC<{ scene: TitleScene }> = ({ scene }) => {
   );
 };
 
-// Scattered slots for the prop cluster to the right of the character.
+// Scattered slots for the prop cluster beside the character. Layout is fixed for
+// the FULL prop count so props keep their place as they accumulate across a scene.
 const PROP_SLOTS: { x: number; y: number; s: number }[][] = [
   [],
   [{ x: 1200, y: 420, s: 400 }],
   [{ x: 1010, y: 300, s: 340 }, { x: 1470, y: 560, s: 320 }],
   [{ x: 1000, y: 270, s: 310 }, { x: 1500, y: 330, s: 280 }, { x: 1230, y: 640, s: 330 }],
   [{ x: 970, y: 250, s: 270 }, { x: 1440, y: 270, s: 260 }, { x: 1120, y: 580, s: 290 }, { x: 1560, y: 610, s: 240 }],
+  [{ x: 960, y: 230, s: 235 }, { x: 1360, y: 220, s: 225 }, { x: 1620, y: 440, s: 215 }, { x: 1120, y: 560, s: 245 }, { x: 1500, y: 620, s: 225 }],
 ];
 
 const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
@@ -56,22 +58,31 @@ const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
   const hasBubble = Boolean(scene.bubble);
   const mW = 520, mH = 880;
 
-  // Alternate the character's side scene-to-scene so it isn't static.
-  const num = parseInt(scene.id.replace(/\D/g, ""), 10) || 0;
+  // How many props are visible this shot. Props accumulate across a scene: the
+  // ones already mentioned stay put (static), only the newest pops in — so the
+  // host can build up a cluster and then explain how they connect.
+  const reveal = Math.min(scene.reveal ?? props.length, props.length);
+
+  // Side alternates scene-to-scene (parity of the base scene number) but stays
+  // CONSTANT across a scene's accumulation sub-shots, so nothing jumps sides.
+  const num = parseInt(scene.id.match(/\d+/)?.[0] ?? "0", 10);
+  const slotN = Math.min(props.length, PROP_SLOTS.length - 1);
   const charRight = hasProps && num % 2 === 0;
   const charLeft = charRight ? width - mW - 110 : hasProps || hasBubble ? 110 : (width - mW) / 2;
   const flip = charRight;
   const slots = hasProps
-    ? PROP_SLOTS[Math.min(props.length, 4)].map((s) => (charRight ? { ...s, x: 1920 - s.x } : s))
+    ? PROP_SLOTS[slotN].map((s) => (charRight ? { ...s, x: 1920 - s.x } : s))
     : [];
   const enter = spring({ frame, fps, config: { damping: 13, mass: 0.7 } });
 
   return (
     <AbsoluteFill>
-      {/* props */}
-      {hasProps && props.slice(0, 4).map((p, i) => {
+      {/* props: show the first `reveal`; newest pops in, earlier ones hold still */}
+      {hasProps && props.slice(0, slots.length).map((p, i) => {
+        if (i >= reveal) return null;
         const slot = slots[i];
-        const s = spring({ frame, fps, delay: 8 + i * 7, config: { damping: 12, mass: 0.6 } });
+        const isNewest = i === reveal - 1;
+        const s = isNewest ? spring({ frame, fps, delay: 3, config: { damping: 12, mass: 0.6 } }) : 1;
         return (
           <div key={i} style={{ position: "absolute", left: slot.x - slot.s / 2, top: slot.y - slot.s / 2, width: slot.s, transform: `scale(${s})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
             <Doodle name={p.name} size={slot.s} />
