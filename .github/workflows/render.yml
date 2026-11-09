@@ -57,9 +57,11 @@ jobs:
 
       # The Film composition is driven by the episode's scenes[] (single source
       # of truth). Extract them to the files the Remotion bundle imports.
+      # The Film composition reads scenes.json / timing.json / sources.index.json.
+      # (current.json + clips.json are only for the legacy Episode comp and stay
+      # as committed — don't overwrite current.json with a scenes-only episode.)
       - name: Prepare episode (scenes are the source of truth)
         run: |
-          cp "${{ inputs.episode }}" render/src/data/current.json
           python - "${{ inputs.episode }}" <<'PY'
           import json, sys
           ep = json.load(open(sys.argv[1]))

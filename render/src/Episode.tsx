@@ -231,4 +231,4 @@ export const Episode: React.FC<{
 // Total frames for a given episode + timing, used by Root to size the composition.
 export const episodeDurationInFrames = (episode: EpisodeType, fps: number, timing?: number[]) =>
   INTRO_SECONDS * fps +
-  episode.chapters.reduce((acc, _ch, i) => acc + Math.round((timing?.[i] ?? CHAPTER_SECONDS) * fps), 0);
+  (episode.chapters ?? []).reduce((acc, _ch, i) => acc + Math.round((timing?.[i] ?? CHAPTER_SECONDS) * fps), 0);
