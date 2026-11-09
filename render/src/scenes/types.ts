@@ -48,6 +48,9 @@ export interface ChartScene extends Base {
   unit?: string;
   data: { label: string; value: number }[];
   highlight?: number;
+  /** explanatory annotation: a label + arrow pointing at a data point */
+  note?: string;
+  noteAt?: number; // which data index to point at (defaults to `highlight`)
 }
 export interface DoodleScene extends Base {
   type: "doodle";

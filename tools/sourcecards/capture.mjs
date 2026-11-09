@@ -35,6 +35,40 @@ function parseArgs(argv) {
 
 const VIEWPORT = { width: 1280, height: 900 };
 
+// Pages that must NEVER be used as "evidence": bot checks, consent walls, 404s,
+// Wikipedia "no such article", JS-required shells. The quote-finder gives false
+// positives on these (it matches the junk text), so we detect and reject them.
+const BLOCKED = [
+  /performing security verification/i,
+  /verify (you are|yourself).{0,20}(human|not a bot)/i,
+  /checking your browser/i,
+  /just a moment/i,
+  /attention required/i,
+  /access denied/i,
+  /enable javascript and cookies to continue/i,
+  /does not have an article with this exact name/i,
+  /this article does not exist/i,
+  /page not found/i,
+  /are you a (human|robot)/i,
+  /request could not be satisfied/i,
+];
+
+async function autoScroll(page) {
+  try {
+    await page.evaluate(async () => {
+      await new Promise((res) => {
+        let y = 0;
+        const t = setInterval(() => {
+          window.scrollBy(0, 700); y += 700;
+          if (y >= document.body.scrollHeight - window.innerHeight) { clearInterval(t); res(); }
+        }, 80);
+        setTimeout(() => { clearInterval(t); res(); }, 4500);
+      });
+      window.scrollTo(0, 0);
+    });
+  } catch {}
+}
+
 async function dismissConsent(page) {
   for (const name of [/^accept all/i, /^accept/i, /^i agree/i, /^agree/i, /^got it/i, /^allow all/i]) {
     try {
@@ -113,9 +147,17 @@ function locateQuote(quote) {
 }
 
 async function capture(page, { id, url, quote }, outDir) {
-  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
+  try { await page.goto(url, { waitUntil: "networkidle", timeout: 45000 }); }
+  catch { try { await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 }); } catch {} }
   await dismissConsent(page);
-  await page.waitForTimeout(600);
+  await page.waitForTimeout(800);
+  await autoScroll(page);          // trigger lazy-loaded images/charts
+  await page.waitForTimeout(500);
+
+  // Reject bot-checks / consent walls / 404s — never ship these as evidence.
+  const bodyText = await page.evaluate(() => (document.body ? document.body.innerText : "").slice(0, 5000)).catch(() => "");
+  const bad = BLOCKED.find((re) => re.test(bodyText));
+  if (bad) return { id, url, blocked: String(bad) };
 
   // Locate + scroll the quote to the centre of the viewport (if any).
   let hit = null;
@@ -170,8 +212,12 @@ async function main() {
   for (const s of sources) {
     try {
       const meta = await capture(page, s, args.outDir);
+      if (meta.blocked) {
+        console.error(`✗ ${s.id}: BLOCKED/JUNK page (${meta.blocked}) — NOT used ← ${s.url}`);
+        continue; // never index a blocked page
+      }
       index[s.id] = meta;
-      console.log(`✓ ${s.id}: ${meta.width}×${meta.height}${meta.found ? " (quote highlighted)" : " (no quote match)"} ← ${s.url}`);
+      console.log(`✓ ${s.id}: ${meta.width}×${meta.height}${meta.found ? " (quote highlighted)" : " (NO highlight — eyeball it)"} ← ${s.url}`);
     } catch (e) {
       console.error(`✗ ${s.id}: ${e.message}`);
     }

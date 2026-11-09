@@ -1,18 +1,141 @@
 {
-  "s-jchs": {
-    "id": "s-jchs",
-    "image": "sources/s-jchs.png",
+  "fred-price": {
+    "id": "fred-price",
+    "image": "sources/fred-price.png",
     "width": 1280,
     "height": 900,
     "quoteRect": null,
     "words": [],
-    "quote": "price-to-income",
-    "url": "https://www.jchs.harvard.edu/blog/home-prices-surge-five-times-median-income-nearing-historic-highs",
+    "quote": "Median Sales Price of Houses Sold",
+    "url": "https://fred.stlouisfed.org/series/MSPUS",
     "found": false
   },
-  "s-rates": {
-    "id": "s-rates",
-    "image": "sources/s-rates.png",
+  "fred-caseshiller": {
+    "id": "fred-caseshiller",
+    "image": "sources/fred-caseshiller.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.41640625,
+      "y": 0.25109375,
+      "w": 0.14921875,
+      "h": 0.03111111111111111
+    },
+    "words": [
+      {
+        "x": 0.41640625,
+        "y": 0.25109375,
+        "w": 0.05078125,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.471875,
+        "y": 0.25109375,
+        "w": 0.04296875,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.51953125,
+        "y": 0.25109375,
+        "w": 0.04609375,
+        "h": 0.03111111111111111
+      }
+    ],
+    "quote": "Home Price Index",
+    "url": "https://fred.stlouisfed.org/series/CSUSHPINSA",
+    "found": true
+  },
+  "fred-income": {
+    "id": "fred-income",
+    "image": "sources/fred-income.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.0921875,
+      "y": 0.25109375,
+      "w": 0.2671875,
+      "h": 0.03111111111111111
+    },
+    "words": [
+      {
+        "x": 0.0921875,
+        "y": 0.25109375,
+        "w": 0.03671875,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.13359375,
+        "y": 0.25109375,
+        "w": 0.0625,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.20078125,
+        "y": 0.25109375,
+        "w": 0.090625,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.29609375,
+        "y": 0.25109375,
+        "w": 0.06328125,
+        "h": 0.03111111111111111
+      }
+    ],
+    "quote": "Real Median Household Income",
+    "url": "https://fred.stlouisfed.org/series/MEHOINUSA672N",
+    "found": true
+  },
+  "fred-rate": {
+    "id": "fred-rate",
+    "image": "sources/fred-rate.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.0921875,
+      "y": 0.25109375,
+      "w": 0.3140625,
+      "h": 0.03111111111111111
+    },
+    "words": [
+      {
+        "x": 0.0921875,
+        "y": 0.25109375,
+        "w": 0.0625,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.159375,
+        "y": 0.25109375,
+        "w": 0.0453125,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.209375,
+        "y": 0.25109375,
+        "w": 0.03828125,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.25234375,
+        "y": 0.25109375,
+        "w": 0.08125,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.33828125,
+        "y": 0.25109375,
+        "w": 0.06796875,
+        "h": 0.03111111111111111
+      }
+    ],
+    "quote": "30-Year Fixed Rate Mortgage Average",
+    "url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
+    "found": true
+  },
+  "freddie-pmms": {
+    "id": "freddie-pmms",
+    "image": "sources/freddie-pmms.png",
     "width": 1280,
     "height": 900,
     "quoteRect": {
@@ -45,67 +168,102 @@
     "url": "https://www.freddiemac.com/pmms",
     "found": true
   },
-  "s-shortage": {
-    "id": "s-shortage",
-    "image": "sources/s-shortage.png",
+  "fred-starts": {
+    "id": "fred-starts",
+    "image": "sources/fred-starts.png",
     "width": 1280,
     "height": 900,
     "quoteRect": {
-      "x": 0.24444580078125,
-      "y": 1.2765798611111112,
-      "w": 0.095703125,
-      "h": 0.022222222222222223
+      "x": 0.275,
+      "y": 0.25109375,
+      "w": 0.1828125,
+      "h": 0.03111111111111111
     },
     "words": [
       {
-        "x": 0.24444580078125,
-        "y": 1.2765798611111112,
-        "w": 0.04454345703125,
-        "h": 0.022222222222222223
+        "x": 0.275,
+        "y": 0.25109375,
+        "w": 0.06875,
+        "h": 0.03111111111111111
       },
       {
-        "x": 0.29249267578125,
-        "y": 1.2765798611111112,
-        "w": 0.04765625,
-        "h": 0.022222222222222223
+        "x": 0.3484375,
+        "y": 0.25109375,
+        "w": 0.04296875,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.39609375,
+        "y": 0.25109375,
+        "w": 0.06171875,
+        "h": 0.03111111111111111
       }
     ],
-    "quote": "housing shortage",
-    "url": "https://www.housingwire.com/articles/u-s-housing-market-is-missing-3-3-million-homes-freddie-mac-says/",
+    "quote": "Housing Units Started",
+    "url": "https://fred.stlouisfed.org/series/HOUST",
     "found": true
   },
-  "s-lockin": {
-    "id": "s-lockin",
-    "image": "sources/s-lockin.png",
+  "fred-inventory": {
+    "id": "fred-inventory",
+    "image": "sources/fred-inventory.png",
     "width": 1280,
     "height": 900,
     "quoteRect": {
-      "x": 0.04375,
-      "y": 0.10338541666666666,
-      "w": 0.12763671875,
-      "h": 0.035555555555555556
+      "x": 0.0921875,
+      "y": 0.25109375,
+      "w": 0.15078125,
+      "h": 0.03111111111111111
     },
     "words": [
       {
-        "x": 0.04375,
-        "y": 0.10338541666666666,
-        "w": 0.07122802734375,
-        "h": 0.035555555555555556
+        "x": 0.0921875,
+        "y": 0.25109375,
+        "w": 0.06875,
+        "h": 0.03111111111111111
       },
       {
-        "x": 0.1205810546875,
-        "y": 0.10338541666666666,
-        "w": 0.0508056640625,
-        "h": 0.035555555555555556
+        "x": 0.165625,
+        "y": 0.25109375,
+        "w": 0.07734375,
+        "h": 0.03111111111111111
       }
     ],
-    "quote": "lock-in effect",
-    "url": "https://en.wikipedia.org/wiki/Lock-in_effect_(mortgages)",
+    "quote": "Housing Inventory",
+    "url": "https://fred.stlouisfed.org/series/ACTLISCOUUS",
     "found": true
   },
-  "s-renters": {
-    "id": "s-renters",
-    "image": "sources/s-renters.png",
+  "fred-ownership": {
+    "id": "fred-ownership",
+    "image": "sources/fred-ownership.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.0921875,
+      "y": 0.25109375,
+      "w": 0.1796875,
+      "h": 0.03111111111111111
+    },
+    "words": [
+      {
+        "x": 0.0921875,
+        "y": 0.25109375,
+        "w": 0.13671875,
+        "h": 0.03111111111111111
+      },
+      {
+        "x": 0.23359375,
+        "y": 0.25109375,
+        "w": 0.03828125,
+        "h": 0.03111111111111111
+      }
+    ],
+    "quote": "Homeownership Rate",
+    "url": "https://fred.stlouisfed.org/series/RHORUSQ156N",
+    "found": true
+  },
+  "wiki-crisis": {
+    "id": "wiki-crisis",
+    "image": "sources/wiki-crisis.png",
     "width": 1280,
     "height": 900,
     "quoteRect": {

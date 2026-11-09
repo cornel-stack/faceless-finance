@@ -197,6 +197,15 @@ const SceneChart: React.FC<{ scene: ChartScene }> = ({ scene }) => {
   const path = pts.map(([x, y], i) => `${i ? "L" : "M"} ${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
   const reveal = interpolate(frame, [4, fps * 1.7], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
+  // Explanatory annotation: a label + drawn arrow pointing at a key data point.
+  const noteIdx = scene.note != null ? (scene.noteAt ?? scene.highlight ?? n - 1) : null;
+  const [npx, npy] = noteIdx != null ? (scene.chartType === "line" ? pts[noteIdx] : [bars[noteIdx].cx, baseY - bars[noteIdx].h]) : [0, 0];
+  const noteLeft = noteIdx != null && noteIdx >= n / 2;
+  const labelW = scene.note ? scene.note.length * 15 + 28 : 0;
+  const lx = noteLeft ? Math.max(padL, npx - labelW - 70) : Math.min(W - padR - labelW, npx + 70);
+  const ly = Math.max(padT + 4, npy - 120);
+  const noteRev = interpolate(frame, [fps * 1.5, fps * 2.1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 18 }}>
       {scene.title && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 56, color: theme.ink, textAlign: "center", maxWidth: 1500 }}>{scene.title}</div>}
@@ -220,6 +229,15 @@ const SceneChart: React.FC<{ scene: ChartScene }> = ({ scene }) => {
               </g>
             ))
           : scene.data.map((d, i) => <text key={i} x={pts[i][0]} y={baseY + 44} textAnchor="middle" fontFamily={sans} fontSize={26} fill={theme.inkSoft}>{d.label}</text>)}
+        {/* explanatory annotation */}
+        {scene.note && noteIdx != null && (
+          <g opacity={noteRev}>
+            <circle cx={npx} cy={npy} r={10} fill={theme.accent} />
+            <Arrow x1={lx + labelW / 2} y1={ly + 52} x2={npx} y2={npy - 8} delay={Math.round(fps * 1.6)} bend={0.12 * (noteLeft ? -1 : 1)} color={theme.accent} width={5} />
+            <rect x={lx} y={ly} width={labelW} height={46} rx={10} fill="#fff" stroke={theme.accent} strokeWidth={3} />
+            <text x={lx + labelW / 2} y={ly + 31} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={28} fill={theme.accent}>{scene.note}</text>
+          </g>
+        )}
       </svg>
     </AbsoluteFill>
   );

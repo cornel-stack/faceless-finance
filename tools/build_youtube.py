@@ -50,6 +50,7 @@ nice = {
     "www.freddiemac.com": "Freddie Mac", "www.housingwire.com": "HousingWire",
     "www.pgpf.org": "Peter G. Peterson Foundation", "www.imf.org": "IMF",
     "www.ssa.gov": "Social Security Administration", "www.zillow.com": "Zillow Research",
+    "fred.stlouisfed.org": "FRED (St. Louis Fed)",
 }
 seen, source_lines = set(), []
 for s in ep.get("sources", []):

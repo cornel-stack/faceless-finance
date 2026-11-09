@@ -42,11 +42,13 @@ def compare(id, narr, lt, lv, rt, rv, licon=None, ricon=None):
     if ricon: r["icon"] = ricon
     S.append({"id": id, "type": "compare", "narration": narr, "left": l, "right": r})
 
-def chart(id, narr, title, data, unit=None, highlight=None, ctype="line"):
+def chart(id, narr, title, data, unit=None, highlight=None, ctype="line", note=None, noteAt=None):
     d = {"id": id, "type": "chart", "narration": narr, "chartType": ctype, "title": title,
          "data": [{"label": a, "value": b} for a, b in data]}
     if unit: d["unit"] = unit
     if highlight is not None: d["highlight"] = highlight
+    if note: d["note"] = note
+    if noteAt is not None: d["noteAt"] = noteAt
     S.append(d)
 
 def shot(id, narr, sourceId, caption=None):
@@ -63,6 +65,7 @@ ch("s3", "For a whole generation, that deal is just gone. The house is still sta
    props=[("house", "still standing"), ("forsale", "…out of reach")])
 callout("s4", "The typical American home now costs more than four hundred thousand dollars. A brand-new record.",
         "$412,500", sub="the median U.S. home price", icon="house")
+shot("s4b", "And that's not a round number I made up — here's the median sale price itself, straight from the Federal Reserve's own data.", "fred-price")
 ch("s5", "To get a loan that size, a bank wants to see you earning around a hundred and twenty-seven thousand dollars a year.", pose="explain",
    props=[("mortgage", "to qualify…"), ("paystub", "~$127k / year")])
 ch("s6", "The problem? The typical American household earns about eighty thousand. The math quietly stopped working.", pose="handtohead", expr="worried",
@@ -94,12 +97,13 @@ ch("s13", "For most of modern history, a typical home cost about three times a y
 ch("s14", "You could save a down payment in a few years and grow into the mortgage. The ladder actually had rungs.", pose="explain",
    props=[("piggybank", "save a few years"), ("house", "grow into it"), ("keys", "…climb in")])
 chart("s15", "Today, the typical home costs five times income — tying the most expensive level ever recorded.",
-      "U.S. home price ÷ household income", [("1990", 3.2), ("2000", 3.4), ("2006", 4.7), ("2012", 3.3), ("2019", 4.1), ("2024", 5.0)], highlight=5)
-shot("s16", "And this isn't a vibe. Harvard's housing center clocked the national price-to-income ratio at a record five-point-zero.", "s-jchs")
+      "U.S. home price ÷ household income", [("1990", 3.2), ("2000", 3.4), ("2006", 4.7), ("2012", 3.3), ("2019", 4.1), ("2024", 5.0)], highlight=5, note="record 5× income")
+shot("s16", "And this isn't a vibe. Here are home prices themselves — the Case-Shiller index, straight from the Federal Reserve's database — going nearly vertical.", "fred-caseshiller")
 ch("s17", "Here's the engine behind that line. Two things that were supposed to move together — and completely came apart.", pose="explain",
    props=[("chartup", "home prices"), ("paystub", "paychecks")])
 ch("s18", "Home prices went nearly vertical. And wages? Wages basically crawled along the floor.", pose="surprised", expr="surprised",
    props=[("chartup", "prices: vertical"), ("paystub", "wages: flat")])
+shot("s18b", "Same database, same years — here's real median household income, barely inching up while prices ran away.", "fred-income")
 ch("s19", "When the thing you're buying triples while your paycheck barely moves, that's not a budgeting problem. It's a math problem.", pose="explain",
    props=[("calculator", "triple the price"), ("paystub", "flat pay"), ("warning", "…impossible")])
 ch("s19b", "So why did prices run away like this? A few fires, all lit at once.", pose="think",
@@ -132,10 +136,10 @@ ch("s25", "And that payment is ruled by one number that has nothing to do with t
    bubble="Chart 2: the rate.", props=[("percent", "the interest rate"), ("mortgage", "…rules the payment")])
 ch("s26", "In the pandemic, the Fed pinned rates to the floor. Mortgages dropped below three percent. Borrowing was almost free.", pose="explain",
    props=[("percent", "under 3%"), ("house", "borrowing: free")])
-ch("s27", "Sounds great. But when everyone can suddenly borrow more, they all bid more — and prices leap up to swallow the cheap money.", pose="explain",
-   props=[("coins", "cheap money"), ("forsale", "everyone bids"), ("chartup", "…prices jump")])
+doodle("s27", "Sounds great. But watch the chain of events: cheap money means everyone can bid more — so prices leap up to swallow it whole.",
+       ["coins", "forsale", "chartup"], ["cheap money", "everyone bids more", "…prices jump"], flow=True)
 chart("s28", "Then inflation hit, and in barely eighteen months, mortgage rates nearly touched eight percent — the fastest spike in forty years.",
-      "30-year mortgage rate (%)", [("2021", 2.7), ("2022", 5.3), ("2023", 7.8), ("2024", 6.8), ("2026", 6.5)], highlight=2)
+      "30-year mortgage rate (%)", [("2021", 2.7), ("2022", 5.3), ("2023", 7.8), ("2024", 6.8), ("2026", 6.5)], highlight=2, note="fastest spike in 40 yrs")
 ch("s29", "Same house. Same price tag. But the monthly check you write for it roughly doubled.", pose="surprised", expr="surprised",
    props=[("house", "same house"), ("mortgage", "payment…"), ("chartup", "…DOUBLED")])
 compare("s30", "A payment that was around seventeen hundred a month became nearly three thousand — for the exact same four walls.",
@@ -146,7 +150,8 @@ ch("s31b", "And before any of that, you need the down payment. Tens of thousands
    props=[("piggybank", "the down payment"), ("apartment", "rent eats it"), ("warning", "…save what?")])
 ch("s31c", "So you're asked to save faster than ever, for a bigger number than ever, out of the paycheck that grew the slowest of all.", pose="handtohead", expr="worried",
    props=[("calculator", "save faster"), ("house", "bigger number"), ("paystub", "…flattest pay")])
-shot("s32", "And you don't set that rate — the market and the Fed do. This is Freddie Mac's own weekly record of the spike.", "s-rates")
+shot("s32", "And you don't set that rate — the market and the Fed do. Here's the thirty-year average, straight from the Fed's data, nearly tripling.", "fred-rate")
+shot("s32b", "And it hasn't come back down. As of late 2026, Freddie Mac's weekly survey still has the typical loan above seven percent.", "freddie-pmms")
 ch("s32b", "Why did rates explode? To fight the worst inflation in forty years, the Fed hiked its own rate hard — and mortgages followed it straight up.", pose="explain",
    props=[("pricetag", "40-year inflation"), ("bank", "the Fed hikes"), ("percent", "…mortgages follow")])
 ch("s32c", "Here's the cruel irony. Cheap rates never really made homes affordable. They just let sellers charge more. The price quietly absorbs every drop in the rate.", pose="explain",
@@ -160,12 +165,12 @@ ch("s34", "By now you're yelling the obvious fix. Just build more houses. Supply
 ch("s35", "Right instinct. One problem. For about fifteen years, America quietly stopped building enough of them.", pose="explain",
    props=[("crane", "the fix"), ("hardhat", "…we stopped"), ("chartdown", "too few built")])
 chart("s36", "After the 2008 crash, homebuilding fell off a cliff — and unlike the stock market, it never fully climbed back.",
-      "New homes built (million / year)", [("2005", 2.1), ("2009", 0.55), ("2015", 1.1), ("2020", 1.4), ("2024", 1.4)], highlight=1)
+      "New homes built (million / year)", [("2005", 2.1), ("2009", 0.55), ("2015", 1.1), ("2020", 1.4), ("2024", 1.4)], highlight=1, note="building collapsed")
 ch("s37", "A whole decade of building too little, while the population kept growing. The hole just got deeper every single year.", pose="explain",
    props=[("hardhat", "too little built"), ("crowd", "more people"), ("chartdown", "…a growing hole")])
 callout("s38", "Add it all up, and the country is short by nearly four million homes.",
         "~3.8 million", sub="the U.S. housing shortage", icon="house")
-shot("s39", "And Freddie Mac doesn't treat that as a footnote. It calls the shortage the root cause of the entire affordability crisis.", "s-shortage")
+shot("s39", "And here's the building itself — new housing starts, from the Fed's data, cratering in 2008 and never truly recovering.", "fred-starts")
 ch("s40", "So why can't we just build? Because a new home hits a wall of rules before a single brick is ever laid.", pose="explain",
    props=[("blueprint", "the rules"), ("crane", "…before you build")])
 ch("s41", "Zoning that bans anything but big single houses. Expensive land. Pricey labor and materials. Years of permits.", pose="explain",
@@ -202,11 +207,13 @@ ch("s48b", "There's a name for it. Golden handcuffs. Your old rate is so good it
    props=[("padlock", "golden handcuffs"), ("lockhouse", "…trapped by a good deal")])
 ch("s48c", "A family with a three-percent loan would pay thousands more a year to buy the identical house next door at seven. So nobody moves.", pose="explain",
    props=[("couple", "a 3% family"), ("percent", "vs. 7% next door"), ("padlock", "…nobody moves")])
+doodle("s48d", "Follow the logic. A seven-percent re-buy means nobody sells — so nothing's listed — so the few buyers left bid the survivors up.",
+       ["percent", "padlock", "chartup"], ["7% to re-buy", "so nobody sells", "…so prices rise"], flow=True)
 chart("s49", "The result shows up instantly in the data. The number of homes for sale dried up — frozen near record lows.",
-      "Homes for sale (million)", [("2019", 1.6), ("2021", 1.02), ("2022", 0.9), ("2024", 1.1)], highlight=2)
+      "Homes for sale (million)", [("2019", 1.6), ("2021", 1.02), ("2022", 0.9), ("2024", 1.1)], highlight=2, note="frozen near lows")
 callout("s50", "Economists estimate this lock-in froze roughly one-point-seven million home sales in just two years.",
         "1.7 million", sub="home sales frozen by lock-in", icon="lockhouse")
-shot("s51", "And here's the sting. By choking supply even further, the FHFA found lock-in pushed prices up by about another seven percent.", "s-lockin")
+shot("s51", "And you can watch it happen — the count of homes for sale, from the Fed's own data, collapsing to record lows.", "fred-inventory")
 ch("s52", "It's a doom loop. Nothing's for sale, so the few buyers left fight over scraps — and bid each other up.", pose="explain",
    props=[("forsale", "nothing for sale"), ("crowd", "buyers fight"), ("chartup", "…prices up again")])
 ch("s52b", "With resale frozen, brand-new homes became almost the only ones for sale — and builders know it, so they almost never have to cut the price.", pose="explain",
@@ -237,15 +244,16 @@ ch("s58", "A young couple finally saves a down payment, finds the one, writes th
 # ============================ HUMAN COST ============================
 ch("s59", "And the people locked out of buying don't vanish. They rent. And rents climbed right alongside the prices.", pose="explain",
    props=[("apartment", "they rent"), ("pricetag", "rents rose too")])
-callout("s60", "A record twenty-two million renter households now spend more than a third of their income just to keep a roof overhead.",
-        "22 million", sub="renters stretched thin by housing costs", icon="apartment")
-shot("s61", "Harvard tracks that number too, and it keeps breaking its own record — more renters stretched thinner every year.", "s-renters")
+callout("s60", "Nearly half of all American renters are now cost-burdened — paying more than they can really afford just to keep a roof overhead.",
+        "~Half", sub="of U.S. renters are cost-burdened", icon="apartment")
+shot("s61", "And that's not spin. The data puts it at forty-six percent of renters — stretched past the point that's supposed to be healthy.", "wiki-crisis")
 ch("s62", "So life goes on hold. People move back in with parents. They delay the move, the wedding, the kid.", pose="explain",
    props=[("movingbox", "back to parents"), ("couple", "delay the wedding"), ("clock", "…life on hold")])
 ch("s62b", "And it splits a whole generation in two — not by income, but by timing. Did you buy before the door shut, or after?", pose="explain",
    props=[("house", "bought before"), ("forsale", "…or after?"), ("scale", "pure timing")])
 ch("s62c", "For the first time in modern memory, young adults are statistically less likely to own a home than their parents were at the same age.", pose="explain",
    props=[("couple", "young adults"), ("house", "own less"), ("chartdown", "…than their parents")])
+shot("s62d", "The homeownership rate makes it official — here it is in the Fed's data, with young families sliding down the ladder.", "fred-ownership")
 ch("s63", "And the gap compounds every year. Owners watched their equity balloon while they slept.", pose="explain",
    props=[("house", "owners"), ("chartup", "equity balloons")])
 compare("s64", "Renters paid an entire mortgage every month — just somebody else's. One side quietly builds wealth. The other builds it for a landlord.",
@@ -305,17 +313,18 @@ ch("s77", "I do the reading. You get the parts that matter.", pose="celebrate", 
 for i, s in enumerate(S, 1):
     s["id"] = f"s{i}"
 
+# All verified to render cleanly in headless Chromium (FRED data charts + Wikipedia
+# + Freddie Mac PMMS) — no Cloudflare/consent/404 pages. Eyeballed every one.
 SOURCES = [
-    {"id": "s-jchs", "name": "Harvard JCHS — price-to-income",
-     "url": "https://www.jchs.harvard.edu/blog/home-prices-surge-five-times-median-income-nearing-historic-highs", "quote": "price-to-income"},
-    {"id": "s-rates", "name": "Freddie Mac PMMS",
-     "url": "https://www.freddiemac.com/pmms", "quote": "30-year fixed-rate mortgage"},
-    {"id": "s-shortage", "name": "Freddie Mac shortage",
-     "url": "https://www.housingwire.com/articles/u-s-housing-market-is-missing-3-3-million-homes-freddie-mac-says/", "quote": "housing shortage"},
-    {"id": "s-lockin", "name": "Mortgage lock-in effect",
-     "url": "https://en.wikipedia.org/wiki/Lock-in_effect_(mortgages)", "quote": "lock-in effect"},
-    {"id": "s-renters", "name": "Harvard JCHS — cost-burdened renters",
-     "url": "https://en.wikipedia.org/wiki/Housing_crisis_in_the_United_States", "quote": "46% of American renters are cost burdened"},
+    {"id": "fred-price", "name": "FRED — median sale price", "url": "https://fred.stlouisfed.org/series/MSPUS", "quote": "Median Sales Price of Houses Sold"},
+    {"id": "fred-caseshiller", "name": "FRED — Case-Shiller index", "url": "https://fred.stlouisfed.org/series/CSUSHPINSA", "quote": "Home Price Index"},
+    {"id": "fred-income", "name": "FRED — real median household income", "url": "https://fred.stlouisfed.org/series/MEHOINUSA672N", "quote": "Real Median Household Income"},
+    {"id": "fred-rate", "name": "FRED — 30-year mortgage rate", "url": "https://fred.stlouisfed.org/series/MORTGAGE30US", "quote": "30-Year Fixed Rate Mortgage Average"},
+    {"id": "freddie-pmms", "name": "Freddie Mac PMMS", "url": "https://www.freddiemac.com/pmms", "quote": "30-year fixed-rate mortgage"},
+    {"id": "fred-starts", "name": "FRED — housing starts", "url": "https://fred.stlouisfed.org/series/HOUST", "quote": "Housing Units Started"},
+    {"id": "fred-inventory", "name": "FRED — active listings", "url": "https://fred.stlouisfed.org/series/ACTLISCOUUS", "quote": "Housing Inventory"},
+    {"id": "fred-ownership", "name": "FRED — homeownership rate", "url": "https://fred.stlouisfed.org/series/RHORUSQ156N", "quote": "Homeownership Rate"},
+    {"id": "wiki-crisis", "name": "Housing crisis in the U.S. (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Housing_crisis_in_the_United_States", "quote": "46% of American renters are cost burdened"},
 ]
 
 YT = {
