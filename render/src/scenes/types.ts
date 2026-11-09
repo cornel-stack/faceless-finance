@@ -51,6 +51,17 @@ export interface ChartScene extends Base {
   /** explanatory annotation: a label + arrow pointing at a data point */
   note?: string;
   noteAt?: number; // which data index to point at (defaults to `highlight`)
+  notes?: { at: number; text: string }[]; // several annotations at once
+  /** optional second line overlaid on the same axes ("then vs now") */
+  series2?: { label: string; value: number }[];
+  seriesLabels?: [string, string]; // legend for line 1 / line 2
+}
+
+export interface TimelineScene extends Base {
+  type: "timeline";
+  title?: string;
+  events: { year: string; label: string; icon?: DoodleName }[];
+  highlight?: number; // which event to emphasise (red)
 }
 export interface DoodleScene extends Base {
   type: "doodle";
@@ -73,4 +84,4 @@ export interface CompareScene extends Base {
 
 export type Scene =
   | TitleScene | CharacterScene | CalloutScene | ScreenshotScene
-  | ChartScene | DoodleScene | ChalkboardScene | CompareScene;
+  | ChartScene | DoodleScene | ChalkboardScene | CompareScene | TimelineScene;

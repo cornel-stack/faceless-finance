@@ -4,7 +4,7 @@ import { Doodle, DoodleName } from "./components/Doodle";
 import { theme } from "./theme";
 import { sans } from "./fonts";
 
-const NAMES: DoodleName[] = ["forsale","sold","keys","mortgage","apartment","crane","hardhat","padlock","lockhouse","calculator","blueprint","paystub","couple","movingbox","house","pricetag"];
+const NAMES: DoodleName[] = ["gaspump","ticker","gauge","bubble","calendar","chartdown","chartup","bank","coins","newspaper"];
 
 export const DoodleSheet: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: theme.bg, flexDirection: "row", flexWrap: "wrap", alignContent: "flex-start", padding: 60, gap: 24 }}>

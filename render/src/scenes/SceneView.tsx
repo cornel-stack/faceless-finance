@@ -11,7 +11,7 @@ import { RRect, RPath, RLine } from "../motion/rough";
 import type { SourceEntry } from "../SourceCardDemo";
 import type {
   Scene, TitleScene, CharacterScene, CalloutScene, ScreenshotScene,
-  ChartScene, DoodleScene, ChalkboardScene, CompareScene,
+  ChartScene, DoodleScene, ChalkboardScene, CompareScene, TimelineScene,
 } from "./types";
 
 const EASE = { damping: 200 } as const;
@@ -197,14 +197,16 @@ const SceneChart: React.FC<{ scene: ChartScene }> = ({ scene }) => {
   const path = pts.map(([x, y], i) => `${i ? "L" : "M"} ${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
   const reveal = interpolate(frame, [4, fps * 1.7], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
-  // Explanatory annotation: a label + drawn arrow pointing at a key data point.
-  const noteIdx = scene.note != null ? (scene.noteAt ?? scene.highlight ?? n - 1) : null;
-  const [npx, npy] = noteIdx != null ? (scene.chartType === "line" ? pts[noteIdx] : [bars[noteIdx].cx, baseY - bars[noteIdx].h]) : [0, 0];
-  const noteLeft = noteIdx != null && noteIdx >= n / 2;
-  const labelW = scene.note ? scene.note.length * 15 + 28 : 0;
-  const lx = noteLeft ? Math.max(padL, npx - labelW - 70) : Math.min(W - padR - labelW, npx + 70);
-  const ly = Math.max(padT + 4, npy - 120);
-  const noteRev = interpolate(frame, [fps * 1.5, fps * 2.1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // Optional second line overlaid ("then vs now") — each series normalised to its
+  // own peak so the SHAPES compare, not the absolute scales.
+  const n2 = scene.series2?.length ?? 0;
+  const max2 = scene.series2 ? Math.max(...scene.series2.map((d) => d.value), 1) : 1;
+  const pts2 = scene.series2 ? scene.series2.map((d, i) => [padL + (plotW * i) / Math.max(1, n2 - 1), baseY - (d.value / max2) * plotH] as const) : [];
+  const path2 = pts2.map(([x, y], i) => `${i ? "L" : "M"} ${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
+  const reveal2 = interpolate(frame, [fps * 0.8, fps * 2.4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+  // Explanatory annotations: one or several labels, each a box + drawn arrow.
+  const notesList = scene.notes ?? (scene.note != null ? [{ at: scene.noteAt ?? scene.highlight ?? n - 1, text: scene.note }] : []);
 
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 18 }}>
@@ -216,10 +218,23 @@ const SceneChart: React.FC<{ scene: ChartScene }> = ({ scene }) => {
           ? bars.map((b) => <RRect key={b.i} x={b.cx - barW / 2} y={baseY - b.h} w={barW} h={b.h} fill={b.on ? theme.accent : "#b8afa1"} strokeWidth={2.4} seed={b.i + 3} />)
           : (
             <>
-              <defs><clipPath id={clipId}><rect x={padL - 6} y={0} width={(plotW + 12) * reveal} height={H} /></clipPath></defs>
+              <defs>
+                <clipPath id={clipId}><rect x={padL - 6} y={0} width={(plotW + 12) * reveal} height={H} /></clipPath>
+                <clipPath id={clipId + "b"}><rect x={padL - 6} y={0} width={(plotW + 12) * reveal2} height={H} /></clipPath>
+              </defs>
+              {scene.series2 && <g clipPath={`url(#${clipId}b)`}><RPath d={path2} stroke={theme.inkSoft} strokeWidth={5} seed={9} /></g>}
               <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={theme.accent} strokeWidth={6} seed={7} /></g>
             </>
           )}
+        {/* legend for overlaid series */}
+        {scene.series2 && scene.seriesLabels && (
+          <g>
+            <RLine x1={padL + 10} y1={padT + 6} x2={padL + 54} y2={padT + 6} stroke={theme.accent} strokeWidth={6} />
+            <text x={padL + 64} y={padT + 14} fontFamily={sans} fontWeight={700} fontSize={28} fill={theme.ink}>{scene.seriesLabels[0]}</text>
+            <RLine x1={padL + 10} y1={padT + 44} x2={padL + 54} y2={padT + 44} stroke={theme.inkSoft} strokeWidth={6} />
+            <text x={padL + 64} y={padT + 52} fontFamily={sans} fontWeight={700} fontSize={28} fill={theme.inkSoft}>{scene.seriesLabels[1]}</text>
+          </g>
+        )}
         {/* crisp text */}
         {scene.chartType === "bar"
           ? bars.map((b) => (
@@ -229,15 +244,23 @@ const SceneChart: React.FC<{ scene: ChartScene }> = ({ scene }) => {
               </g>
             ))
           : scene.data.map((d, i) => <text key={i} x={pts[i][0]} y={baseY + 44} textAnchor="middle" fontFamily={sans} fontSize={26} fill={theme.inkSoft}>{d.label}</text>)}
-        {/* explanatory annotation */}
-        {scene.note && noteIdx != null && (
-          <g opacity={noteRev}>
-            <circle cx={npx} cy={npy} r={10} fill={theme.accent} />
-            <Arrow x1={lx + labelW / 2} y1={ly + 52} x2={npx} y2={npy - 8} delay={Math.round(fps * 1.6)} bend={0.12 * (noteLeft ? -1 : 1)} color={theme.accent} width={5} />
-            <rect x={lx} y={ly} width={labelW} height={46} rx={10} fill="#fff" stroke={theme.accent} strokeWidth={3} />
-            <text x={lx + labelW / 2} y={ly + 31} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={28} fill={theme.accent}>{scene.note}</text>
-          </g>
-        )}
+        {/* explanatory annotations (one or several) */}
+        {notesList.map((nt, k) => {
+          const [npx, npy] = scene.chartType === "line" ? pts[nt.at] : [bars[nt.at].cx, baseY - bars[nt.at].h];
+          const left = nt.at >= n / 2;
+          const lw = nt.text.length * 15 + 28;
+          const lx = left ? Math.max(padL, npx - lw - 70) : Math.min(W - padR - lw, npx + 70);
+          const ly = Math.max(padT + 4, npy - 118 - (k % 2) * 8);
+          const rev = interpolate(frame, [fps * (1.5 + k * 0.5), fps * (2.1 + k * 0.5)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          return (
+            <g key={k} opacity={rev}>
+              <circle cx={npx} cy={npy} r={10} fill={theme.accent} />
+              <Arrow x1={lx + lw / 2} y1={ly + 52} x2={npx} y2={npy - 8} delay={Math.round(fps * (1.6 + k * 0.5))} bend={0.12 * (left ? -1 : 1)} color={theme.accent} width={5} />
+              <rect x={lx} y={ly} width={lw} height={46} rx={10} fill="#fff" stroke={theme.accent} strokeWidth={3} />
+              <text x={lx + lw / 2} y={ly + 31} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={28} fill={theme.accent}>{nt.text}</text>
+            </g>
+          );
+        })}
       </svg>
     </AbsoluteFill>
   );
@@ -323,6 +346,56 @@ const Compare: React.FC<{ scene: CompareScene }> = ({ scene }) => {
   );
 };
 
+// A horizontal timeline: a drawn-on baseline with an arrowhead (time flows →),
+// dated markers that pop in left-to-right, each with an icon + label alternating
+// above/below. Great for sequences and "then → now" parallels.
+const Timeline: React.FC<{ scene: TimelineScene }> = ({ scene }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const ev = scene.events;
+  const n = ev.length;
+  const x0 = 280, x1 = 1640, y = 560;
+  const xs = ev.map((_, i) => x0 + (x1 - x0) * (n <= 1 ? 0.5 : i / (n - 1)));
+  const lineRev = interpolate(frame, [4, 26], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const lineEnd = (x0 - 40) + ((x1 + 60) - (x0 - 40)) * lineRev;
+  return (
+    <AbsoluteFill>
+      {scene.title && <div style={{ position: "absolute", top: 72, width: 1920, textAlign: "center", fontFamily: display, fontWeight: 900, fontSize: 56, color: theme.ink }}>{scene.title}</div>}
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+        <line x1={x0 - 40} y1={y} x2={lineEnd} y2={y} stroke={theme.ink} strokeWidth={5} strokeLinecap="round" />
+        {lineRev > 0.98 && <path d={`M ${x1 + 60} ${y} l -22 -12 M ${x1 + 60} ${y} l -22 12`} stroke={theme.ink} strokeWidth={5} fill="none" strokeLinecap="round" />}
+        {ev.map((e, i) => {
+          const s = spring({ frame, fps, delay: 16 + i * 16, config: { damping: 12, mass: 0.6 } });
+          if (s <= 0.02) return null;
+          const on = i === scene.highlight;
+          const up = i % 2 === 0;
+          return (
+            <g key={i} opacity={Math.min(1, s)}>
+              <line x1={xs[i]} y1={y} x2={xs[i]} y2={up ? y - 60 : y + 60} stroke={theme.grid} strokeWidth={3} />
+              <circle cx={xs[i]} cy={y} r={on ? 16 : 12} fill={on ? theme.accent : theme.ink} />
+            </g>
+          );
+        })}
+      </svg>
+      {ev.map((e, i) => {
+        const s = spring({ frame, fps, delay: 16 + i * 16, config: { damping: 12, mass: 0.6 } });
+        if (s <= 0.02) return null;
+        const up = i % 2 === 0;
+        const on = i === scene.highlight;
+        const cardTop = up ? y - 268 : y + 74;
+        return (
+          <div key={i} style={{ position: "absolute", left: xs[i] - 115, top: cardTop, width: 230, transform: `scale(${Math.min(1, s)})`, transformOrigin: up ? "center bottom" : "center top", display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+            {up && e.icon && <Doodle name={e.icon} size={140} />}
+            <div style={{ fontFamily: display, fontWeight: 900, fontSize: 48, color: on ? theme.accent : theme.ink }}>{e.year}</div>
+            <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 27, color: theme.inkSoft, textAlign: "center", lineHeight: 1.12 }}>{e.label}</div>
+            {!up && e.icon && <Doodle name={e.icon} size={140} />}
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
 export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, SourceEntry> }> = ({ scene, sources }) => {
   const frame = useCurrentFrame();
   // near-hard cut: a 4-frame fade only (Casual Finance hard-cuts between shots)
@@ -337,6 +410,7 @@ export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, Source
     case "doodle": inner = <DoodleScene_ scene={scene} />; break;
     case "chalkboard": inner = <Chalkboard scene={scene} />; break;
     case "compare": inner = <Compare scene={scene} />; break;
+    case "timeline": inner = <Timeline scene={scene} />; break;
   }
   return <AbsoluteFill style={{ backgroundColor: theme.bg, opacity: fade }}>{inner}</AbsoluteFill>;
 };

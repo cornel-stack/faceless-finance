@@ -17,6 +17,7 @@ export type DoodleName =
   | "forsale" | "sold" | "keys" | "mortgage" | "apartment" | "crane"
   | "hardhat" | "padlock" | "lockhouse" | "calculator" | "blueprint"
   | "paystub" | "couple" | "movingbox"
+  | "gaspump" | "ticker" | "gauge" | "bubble" | "calendar"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -561,6 +562,56 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M24 46 L50 56 L76 46" fill="none" strokeWidth={1.6} />
           <RLine x1={50} y1={56} x2={50} y2={86} strokeWidth={1.6} />
           <RLine x1={40} y1={51} x2={60} y2={51} strokeWidth={2.4} stroke="#b58a50" />
+        </>
+      );
+    case "gaspump":
+      return (
+        <>
+          <RRect x={30} y={28} w={30} h={58} fill={RED} strokeWidth={SW} />
+          <RRect x={35} y={34} w={20} h={13} fill="#cfe6ef" strokeWidth={1.4} />
+          <text x={45} y={44} fontSize={8} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="'Courier New', monospace">$$$</text>
+          <RLine x1={60} y1={38} x2={68} y2={38} strokeWidth={2.4} />
+          <RPath d="M68 38 Q75 50 68 62 L64 72" stroke={INK} strokeWidth={3} fill="none" />
+          <RRect x={60} y={70} w={9} h={9} fill="#333" strokeWidth={1.4} />
+          <RRect x={26} y={86} w={38} h={5} fill={INK} strokeWidth={1.4} />
+        </>
+      );
+    case "ticker":
+      return (
+        <>
+          <RRect x={14} y={38} w={72} h={28} fill="#15181c" strokeWidth={SW} />
+          <path d="M28 58 L33 46 L38 58 Z" fill="#3ddc6f" />
+          <text x={44} y={57} fontSize={11} fill="#3ddc6f" fontFamily="'Courier New', monospace">+2.1</text>
+          <path d="M62 46 L67 58 L72 46 Z" fill="#ff5a5a" />
+          <text x={76} y={57} fontSize={9} fill="#ff5a5a" textAnchor="end" fontFamily="'Courier New', monospace" />
+        </>
+      );
+    case "gauge":
+      return (
+        <>
+          <RPath d="M20 70 A32 32 0 0 1 50 38" fill="none" stroke={GREEN} strokeWidth={6} />
+          <RPath d="M50 38 A32 32 0 0 1 80 70" fill="none" stroke={RED} strokeWidth={6} />
+          <RLine x1={50} y1={70} x2={73} y2={49} strokeWidth={3.4} />
+          <RCircle cx={50} cy={70} d={8} fill={INK} strokeWidth={1.4} />
+          <text x={50} y={88} fontSize={11} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">HIGH</text>
+        </>
+      );
+    case "bubble":
+      return (
+        <>
+          <RCircle cx={48} cy={54} d={56} fill="#bfe0ef" strokeWidth={SW} />
+          <RPath d="M34 42 Q40 33 50 36" stroke="#fff" strokeWidth={5} fill="none" />
+          <RCircle cx={74} cy={34} d={12} fill="#bfe0ef" strokeWidth={1.8} />
+        </>
+      );
+    case "calendar":
+      return (
+        <>
+          <RRect x={22} y={26} w={56} h={54} fill="#fff" strokeWidth={SW} />
+          <RRect x={22} y={26} w={56} h={15} fill={RED} strokeWidth={SW} />
+          <RLine x1={35} y1={20} x2={35} y2={32} strokeWidth={3} />
+          <RLine x1={65} y1={20} x2={65} y2={32} strokeWidth={3} />
+          {[48, 60, 72].flatMap((y) => [32, 44, 56, 68].map((x) => <RCircle key={`${x}-${y}`} cx={x} cy={y} d={3} fill={INK} strokeWidth={0} />))}
         </>
       );
   }

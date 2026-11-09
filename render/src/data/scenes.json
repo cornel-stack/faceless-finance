@@ -2,2074 +2,1832 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Owning a home used to be the most ordinary thing in the world. Get a job, save for a few years, and the keys were yours.",
+    "narration": "You remember the famous ones. 1929. The dot-com bust. 2008. The crashes that got documentaries and movies.",
     "pose": "present",
     "props": [
       {
-        "name": "house",
-        "label": "a home"
+        "name": "newspaper",
+        "label": "1929"
       },
       {
-        "name": "keys",
-        "label": "…the keys"
+        "name": "ticker",
+        "label": "dot-com"
+      },
+      {
+        "name": "chartdown",
+        "label": "2008"
       }
     ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "Your parents probably did it in their twenties. Maybe on a single income — on a salary that today sounds like a typo.",
+    "narration": "But there's one enormous crash that almost nobody talks about anymore — and it might be the most important one for right now.",
     "pose": "explain",
     "props": [
       {
-        "name": "couple",
-        "label": "your parents"
+        "name": "calendar",
+        "label": "a forgotten crash"
       },
       {
-        "name": "paystub",
-        "label": "one income"
-      },
-      {
-        "name": "house",
-        "label": "…a house"
+        "name": "warning",
+        "label": "…the big one"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "For a whole generation, that deal is just gone. The house is still standing right there. The door just won't open for you.",
+    "narration": "If you've ever been told to just buy stocks and hold for the long run, and you'll always come out ahead — this is the giant asterisk on that advice.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "still standing"
+        "name": "chartup",
+        "label": "'just hold long-term'"
       },
       {
-        "name": "forsale",
-        "label": "…out of reach"
+        "name": "warning",
+        "label": "…*read the fine print"
       }
     ]
   },
   {
     "id": "s4",
     "type": "callout",
-    "narration": "The typical American home now costs more than four hundred thousand dollars. A brand-new record.",
-    "text": "$412,500",
-    "sub": "the median U.S. home price",
-    "icon": "house"
+    "narration": "In 1973 and '74, the U.S. stock market lost nearly half of its entire value.",
+    "text": "–48%",
+    "sub": "the S&P 500, 1973–1974",
+    "icon": "chartdown"
   },
   {
     "id": "s5",
-    "type": "screenshot",
-    "narration": "And that's not a round number I made up — here's the median sale price itself, straight from the Federal Reserve's own data.",
-    "sourceId": "fred-price"
-  },
-  {
-    "id": "s6",
     "type": "character",
-    "narration": "To get a loan that size, a bank wants to see you earning around a hundred and twenty-seven thousand dollars a year.",
-    "pose": "explain",
+    "narration": "Nearly half the market, just gone. And yet that isn't even the scary part.",
+    "pose": "surprised",
+    "expression": "surprised",
     "props": [
       {
-        "name": "mortgage",
-        "label": "to qualify…"
+        "name": "ticker",
+        "label": "half the market…"
       },
       {
-        "name": "paystub",
-        "label": "~$127k / year"
+        "name": "warning",
+        "label": "…gone"
       }
     ]
   },
   {
+    "id": "s6",
+    "type": "callout",
+    "narration": "Here's the scary part. In real, inflation-adjusted terms, it took about twenty years to recover.",
+    "text": "~20 years",
+    "sub": "to get your money back — in real terms",
+    "icon": "clock"
+  },
+  {
     "id": "s7",
     "type": "character",
-    "narration": "The problem? The typical American household earns about eighty thousand. The math quietly stopped working.",
-    "pose": "handtohead",
-    "expression": "worried",
+    "narration": "A dollar invested at the 1973 top didn't fully recover its buying power until the 1990s. That's an entire investing lifetime, erased.",
+    "pose": "explain",
     "props": [
       {
-        "name": "paystub",
-        "label": "~$80k earned"
+        "name": "coins",
+        "label": "$1 in 1973"
       },
       {
-        "name": "calculator",
-        "label": "…doesn't add up"
-      },
-      {
-        "name": "warning",
-        "label": "the gap"
+        "name": "clock",
+        "label": "…whole again in the 1990s"
       }
     ]
   },
   {
     "id": "s8",
     "type": "character",
-    "narration": "And the starter home — the small, cheap, first place you actually buy — has basically gone extinct.",
+    "narration": "We're taught crashes are loud — a chaotic trading floor, a red screen, a panicked headline. 1973 was the exact opposite.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "the starter home"
+        "name": "ticker",
+        "label": "we expect loud"
       },
       {
-        "name": "warning",
-        "label": "…extinct"
+        "name": "newspaper",
+        "label": "…a panic"
       }
     ]
   },
   {
     "id": "s9",
     "type": "character",
-    "narration": "Here's the comparison that stings. In the nineteen-eighties, a typical home cost about two to three years of a typical salary.",
+    "narration": "It was so slow and so quiet that most people didn't even realize they were living through one of the worst bear markets in history.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "a 1980s home"
+        "name": "clock",
+        "label": "slow & quiet"
       },
       {
-        "name": "paystub",
-        "label": "~2–3 yrs' pay"
+        "name": "chartdown",
+        "label": "…worst in history"
       }
     ]
   },
   {
     "id": "s10",
     "type": "character",
-    "narration": "Today, that same ordinary house costs the better part of a decade of income — before a single cent of interest.",
-    "pose": "explain",
+    "narration": "So two questions. Why does nobody remember this one? And why does 2026 look so eerily like 1973?",
+    "pose": "think",
+    "bubble": "Why does 2026 look like 1973?",
     "props": [
       {
-        "name": "house",
-        "label": "today's home"
+        "name": "calendar",
+        "label": "1973"
       },
       {
-        "name": "clock",
-        "label": "~a decade of pay"
-      },
-      {
-        "name": "mortgage",
-        "label": "…plus interest"
+        "name": "gauge",
+        "label": "…2026?"
       }
     ]
   },
   {
     "id": "s11",
-    "type": "compare",
-    "narration": "Same four walls. A completely different mountain to climb.",
-    "left": {
-      "title": "A home in 1985",
-      "value": "~2.5× income",
-      "icon": "house"
-    },
-    "right": {
-      "title": "A home today",
-      "value": "~5× income",
-      "icon": "house"
-    }
-  },
-  {
-    "id": "s12",
     "type": "character",
-    "narration": "And this isn't envy, and it isn't avocado toast. A whole generation is playing a game where the rules changed halfway through the round.",
-    "pose": "explain",
+    "narration": "Because this isn't a history lesson. It's a mirror. Four things that broke the market in 1973 are all back, right now.",
+    "pose": "point",
     "props": [
       {
-        "name": "house",
-        "label": "the same goal"
+        "name": "bubble",
+        "label": "a mirror"
       },
       {
         "name": "warning",
-        "label": "…new rules"
+        "label": "…four rhymes"
       }
     ]
   },
   {
+    "id": "s12",
+    "type": "title",
+    "narration": "So let's put the two eras side by side, and follow the money all the way down.",
+    "heading": "The 1973 Crash Nobody Remembers",
+    "kicker": "…and why it looks like 2026",
+    "sub": "History doesn't repeat. It rhymes."
+  },
+  {
     "id": "s13",
-    "type": "character",
-    "narration": "So everyone reaches for a villain. Greedy landlords. Wall Street. Boomers. Foreigners. Airbnb. Take your pick.",
-    "pose": "shrug",
-    "props": [
+    "type": "timeline",
+    "narration": "First, how 1973 actually came apart — step by step.",
+    "title": "How 1973 came apart",
+    "events": [
       {
-        "name": "bank",
-        "label": "Wall Street?"
+        "year": "1971",
+        "label": "Nixon ends the gold standard",
+        "icon": "capitol"
       },
       {
-        "name": "crowd",
-        "label": "landlords?"
+        "year": "1972",
+        "label": "the Nifty Fifty peak",
+        "icon": "bubble"
       },
       {
-        "name": "apartment",
-        "label": "Airbnb?"
+        "year": "Oct '73",
+        "label": "OPEC oil embargo",
+        "icon": "gaspump"
+      },
+      {
+        "year": "1974",
+        "label": "market bottoms, −48%",
+        "icon": "chartdown"
       }
-    ]
+    ],
+    "highlight": 3
   },
   {
     "id": "s14",
     "type": "character",
-    "narration": "But blaming one villain is exactly why nothing ever gets fixed. The real story isn't a person. It's four charts.",
-    "pose": "point",
-    "bubble": "It's four charts.",
+    "narration": "Rhyme one: the glamour stocks. In the early seventies, investors crowded into a handful of 'can't-lose' companies.",
+    "pose": "present",
+    "bubble": "Rhyme 1: glamour stocks.",
     "props": [
       {
-        "name": "chartup",
-        "label": "four charts"
+        "name": "bubble",
+        "label": "can't-lose stocks"
       },
       {
-        "name": "house",
-        "label": "one broken market"
+        "name": "crowd",
+        "label": "everyone piled in"
       }
     ]
   },
   {
     "id": "s15",
     "type": "character",
-    "narration": "And once you've actually seen these four, you will never look at a 'For Sale' sign the same way again.",
+    "narration": "They were called the Nifty Fifty. 'One-decision stocks' — you decide once to buy, and you simply never sell.",
     "pose": "explain",
     "props": [
       {
-        "name": "forsale",
-        "label": "every sign"
+        "name": "ticker",
+        "label": "the Nifty Fifty"
       },
       {
-        "name": "chartup",
-        "label": "…four charts"
+        "name": "coins",
+        "label": "buy & never sell"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "title",
-    "narration": "So let's follow the money — right up to the front door.",
-    "heading": "Why Nobody Can Afford a House",
-    "kicker": "In four charts",
-    "sub": "The door didn't lock itself."
-  },
-  {
-    "id": "s17",
     "type": "character",
-    "narration": "Chart one. The gap between what a house costs and what a human being actually earns.",
-    "pose": "present",
-    "bubble": "Chart 1: the gap.",
-    "props": [
-      {
-        "name": "house",
-        "label": "home prices"
-      },
-      {
-        "name": "paystub",
-        "label": "vs. your paycheck"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "character",
-    "narration": "For most of modern history, a typical home cost about three times a year's income. Expensive — but reachable.",
+    "narration": "The quality felt so obvious that the price was treated as irrelevant. Pay anything — they'll always go up.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "a home"
+        "name": "gauge",
+        "label": "price? irrelevant"
       },
       {
-        "name": "paystub",
-        "label": "~3× income"
-      },
-      {
-        "name": "keys",
-        "label": "…reachable"
+        "name": "chartup",
+        "label": "…they only go up"
       }
     ]
+  },
+  {
+    "id": "s17",
+    "type": "screenshot",
+    "narration": "And these really were great companies — it's all documented. The mistake was believing no price was ever too high.",
+    "sourceId": "wiki-nifty"
+  },
+  {
+    "id": "s18",
+    "type": "callout",
+    "narration": "At the peak, the Nifty Fifty traded at forty-two times earnings — more than double the rest of the market.",
+    "text": "42× earnings",
+    "sub": "vs ~19× for the S&P 500",
+    "icon": "gauge"
   },
   {
     "id": "s19",
     "type": "character",
-    "narration": "You could save a down payment in a few years and grow into the mortgage. The ladder actually had rungs.",
+    "narration": "Polaroid alone traded at ninety-one times earnings. For a camera company. The business was real; the price was fantasy.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "save a few years"
+        "name": "officetower",
+        "label": "Polaroid"
       },
       {
-        "name": "house",
-        "label": "grow into it"
+        "name": "gauge",
+        "label": "91× earnings"
       },
       {
-        "name": "keys",
-        "label": "…climb in"
+        "name": "bubble",
+        "label": "…fantasy price"
       }
     ]
   },
   {
     "id": "s20",
-    "type": "chart",
-    "narration": "Today, the typical home costs five times income — tying the most expensive level ever recorded.",
-    "chartType": "line",
-    "title": "U.S. home price ÷ household income",
-    "data": [
-      {
-        "label": "1990",
-        "value": 3.2
-      },
-      {
-        "label": "2000",
-        "value": 3.4
-      },
-      {
-        "label": "2006",
-        "value": 4.7
-      },
-      {
-        "label": "2012",
-        "value": 3.3
-      },
-      {
-        "label": "2019",
-        "value": 4.1
-      },
-      {
-        "label": "2024",
-        "value": 5.0
-      }
-    ],
-    "highlight": 5,
-    "note": "record 5× income"
-  },
-  {
-    "id": "s21",
-    "type": "screenshot",
-    "narration": "And this isn't a vibe. Here are home prices themselves — the Case-Shiller index, straight from the Federal Reserve's database — going nearly vertical.",
-    "sourceId": "fred-caseshiller"
-  },
-  {
-    "id": "s22",
     "type": "character",
-    "narration": "Here's the engine behind that line. Two things that were supposed to move together — and completely came apart.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "home prices"
-      },
-      {
-        "name": "paystub",
-        "label": "paychecks"
-      }
-    ]
-  },
-  {
-    "id": "s23",
-    "type": "character",
-    "narration": "Home prices went nearly vertical. And wages? Wages basically crawled along the floor.",
+    "narration": "Then gravity showed up. From their highs, Polaroid fell ninety-one percent. Avon, eighty-six. Xerox, seventy-one.",
     "pose": "surprised",
     "expression": "surprised",
     "props": [
       {
-        "name": "chartup",
-        "label": "prices: vertical"
+        "name": "chartdown",
+        "label": "Polaroid −91%"
       },
       {
-        "name": "paystub",
-        "label": "wages: flat"
+        "name": "chartdown",
+        "label": "Avon −86%"
+      },
+      {
+        "name": "chartdown",
+        "label": "Xerox −71%"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "compare",
+    "narration": "Now swap the names and keep the setup. Does this look familiar?",
+    "left": {
+      "title": "1972 · Nifty Fifty",
+      "value": "~42× P/E",
+      "icon": "bubble"
+    },
+    "right": {
+      "title": "2026 · Magnificent 7",
+      "value": "~45× P/E",
+      "icon": "bubble"
+    }
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "narration": "Because today, seven companies make up around a third of the entire S&P 500 — a concentration we haven't seen since… you guessed it.",
+    "sourceId": "fred-sp500"
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "narration": "And to be clear: the Magnificent Seven are phenomenal businesses. So were the Nifty Fifty. That was never the question.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "Mag 7: real giants"
+      },
+      {
+        "name": "bubble",
+        "label": "…but the same bet"
       }
     ]
   },
   {
     "id": "s24",
-    "type": "screenshot",
-    "narration": "Same database, same years — here's real median household income, barely inching up while prices ran away.",
-    "sourceId": "fred-income"
+    "type": "character",
+    "narration": "Sound crazy? It's the exact logic you hear today. 'Just buy the best companies and hold forever — valuation doesn't matter.'",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "'just buy & hold'"
+      },
+      {
+        "name": "gauge",
+        "label": "…'price doesn't matter'"
+      }
+    ]
   },
   {
     "id": "s25",
     "type": "character",
-    "narration": "When the thing you're buying triples while your paycheck barely moves, that's not a budgeting problem. It's a math problem.",
+    "narration": "To translate forty-two times earnings: you were paying forty-two dollars for every one dollar the company made in a year.",
     "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "triple the price"
+        "name": "coins",
+        "label": "$42 paid"
       },
       {
-        "name": "paystub",
-        "label": "flat pay"
-      },
-      {
-        "name": "warning",
-        "label": "…impossible"
+        "name": "ticker",
+        "label": "…for $1 earned"
       }
     ]
   },
   {
     "id": "s26",
     "type": "character",
-    "narration": "So why did prices run away like this? A few fires, all lit at once.",
-    "pose": "think",
+    "narration": "At that price, the business has to grow flawlessly for years just for you to break even. One stumble, and the stock craters.",
+    "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "prices soared"
+        "name": "chartup",
+        "label": "flawless growth needed"
       },
       {
-        "name": "warning",
-        "label": "…but why?"
+        "name": "chartdown",
+        "label": "…one stumble = crash"
       }
     ]
   },
   {
     "id": "s27",
     "type": "character",
-    "narration": "A giant generation — millennials — all hit home-buying age at the same moment, flooding the market with buyers.",
-    "pose": "explain",
+    "narration": "And here's the gut-punch: many of those companies kept growing just fine. The businesses were healthy. The stocks still got cut in half.",
+    "pose": "surprised",
+    "expression": "surprised",
     "props": [
       {
-        "name": "couple",
-        "label": "millennials"
+        "name": "officetower",
+        "label": "business grew"
       },
       {
-        "name": "crowd",
-        "label": "all at once"
-      },
-      {
-        "name": "house",
-        "label": "…chasing homes"
+        "name": "chartdown",
+        "label": "…stock still halved"
       }
     ]
   },
   {
     "id": "s28",
     "type": "character",
-    "narration": "A decade of ultra-cheap borrowing let every one of them bid higher without feeling it — until the bill finally came due.",
+    "narration": "When a handful of names carry the whole index, your 'diversified' fund quietly becomes a concentrated bet on just a few companies.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "near-zero rates"
+        "name": "ticker",
+        "label": "your index fund"
       },
       {
-        "name": "coins",
-        "label": "bid higher"
-      },
-      {
-        "name": "house",
-        "label": "…prices climb"
+        "name": "officetower",
+        "label": "…secretly 7 stocks"
       }
     ]
   },
   {
     "id": "s29",
     "type": "character",
-    "narration": "And a home quietly became a savings account. If prices only ever go up, buying early stops feeling like a purchase and starts feeling like a bet you can't lose.",
+    "narration": "And it really is a tiny club — seven companies that have quietly grown to dominate the entire index.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "a home"
+        "name": "officetower",
+        "label": "seven giants"
       },
       {
-        "name": "piggybank",
-        "label": "…a savings account"
-      },
-      {
-        "name": "chartup",
-        "label": "a sure bet?"
+        "name": "ticker",
+        "label": "…dominate the index"
       }
     ]
   },
   {
     "id": "s30",
     "type": "character",
-    "narration": "Zillow's own index tells the same story — the typical home value roughly doubled in well under a decade.",
+    "narration": "In 1972 that same bet looked unbeatable. By 1974, the glamour stocks had dragged the entire market down with them.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "typical home value"
+        "name": "bubble",
+        "label": "unbeatable, '72"
       },
       {
-        "name": "chartup",
-        "label": "…doubled in <10 yrs"
+        "name": "chartdown",
+        "label": "…down together, '74"
       }
     ]
   },
   {
     "id": "s31",
-    "type": "callout",
-    "narration": "In 2021, one in three renters could still afford the typical home. Two years later, it was one in seven.",
-    "text": "1 in 7",
-    "sub": "renters who can afford a median home",
-    "icon": "couple"
+    "type": "character",
+    "narration": "That's the hidden danger of concentration. When the giants fall, there's nothing left to hold the index up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "the giants"
+      },
+      {
+        "name": "chartdown",
+        "label": "…nothing holds it up"
+      }
+    ]
   },
   {
     "id": "s32",
     "type": "character",
-    "narration": "The ladder didn't just get taller. Somebody came along and sawed off the bottom rungs.",
+    "narration": "And the feeling driving it is the same in every era. Everyone's getting rich but you. So you buy — at the top, for the most money, with the least caution.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "the ladder"
+        "name": "crowd",
+        "label": "everyone's getting rich"
       },
       {
-        "name": "couple",
-        "label": "first-time buyers"
-      },
-      {
-        "name": "warning",
-        "label": "rungs gone"
+        "name": "coins",
+        "label": "…so you buy the top"
       }
     ]
   },
   {
     "id": "s33",
     "type": "character",
-    "narration": "And the cruel twist: people who bought in early watched their house out-earn their actual job.",
+    "narration": "The four most expensive words in investing are, reliably, 'this time is different.' In 1972, they cost people half their savings.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "bought early"
+        "name": "bubble",
+        "label": "'this time's different'"
       },
       {
-        "name": "chartup",
-        "label": "home > salary"
-      },
-      {
-        "name": "coins",
-        "label": "…for doing nothing"
+        "name": "warning",
+        "label": "…half their savings"
       }
     ]
   },
   {
     "id": "s34",
     "type": "character",
-    "narration": "And it compounds against you. Every year you can't buy, prices climb again — and the down payment you were chasing sprints further away.",
+    "narration": "To understand that inflation, rewind to 1971. Nixon cut the dollar's last tie to gold — and money could now be printed far more freely.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "chasing the down payment"
+        "name": "capitol",
+        "label": "Nixon, 1971"
       },
       {
-        "name": "chartup",
-        "label": "…it runs away"
+        "name": "coins",
+        "label": "gold tie cut"
+      },
+      {
+        "name": "printer",
+        "label": "…print freely"
       }
     ]
   },
   {
     "id": "s35",
     "type": "character",
-    "narration": "But the sticker price hides half the story. Almost nobody pays cash. You don't buy the price — you buy the monthly payment.",
-    "pose": "explain",
-    "bubble": "You buy the payment.",
+    "narration": "Rhyme two: the inflation shock. In 1973, inflation arrived in a form you could see from your car window.",
+    "pose": "present",
+    "bubble": "Rhyme 2: the inflation shock.",
     "props": [
       {
-        "name": "mortgage",
-        "label": "a 30-year loan"
+        "name": "gaspump",
+        "label": "1973"
       },
       {
-        "name": "calculator",
-        "label": "…the monthly payment"
+        "name": "warning",
+        "label": "…at the pump"
       }
     ]
   },
   {
     "id": "s36",
     "type": "character",
-    "narration": "And here's the part the brochure never explains. In the early years of a thirty-year loan, almost every dollar you pay is pure interest.",
+    "narration": "OPEC cut off the oil. The price quadrupled almost overnight, and gas lines stretched around the block.",
     "pose": "explain",
     "props": [
       {
-        "name": "mortgage",
-        "label": "year one"
+        "name": "oilbarrel",
+        "label": "oil ×4"
       },
       {
-        "name": "coins",
-        "label": "…mostly interest"
+        "name": "gaspump",
+        "label": "gas lines"
+      },
+      {
+        "name": "crowd",
+        "label": "…around the block"
       }
     ]
   },
   {
     "id": "s37",
-    "type": "character",
-    "narration": "You're not really buying the house yet. You're renting the bank's money — and the rent on money is the interest rate.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "renting money"
-      },
-      {
-        "name": "percent",
-        "label": "…that's the rent"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "This is the embargo that lit the fuse — a geopolitical shock that slammed straight into everyday prices.",
+    "sourceId": "wiki-oil73"
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "And that payment is ruled by one number that has nothing to do with the house itself. Chart two: the interest rate.",
-    "pose": "present",
-    "bubble": "Chart 2: the rate.",
+    "narration": "And inflation didn't just tick up. It exploded into double digits — north of twelve percent.",
+    "pose": "surprised",
+    "expression": "surprised",
     "props": [
       {
-        "name": "percent",
-        "label": "the interest rate"
+        "name": "pricetag",
+        "label": "inflation"
       },
       {
-        "name": "mortgage",
-        "label": "…rules the payment"
+        "name": "chartup",
+        "label": "12%+"
       }
     ]
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "In the pandemic, the Fed pinned rates to the floor. Mortgages dropped below three percent. Borrowing was almost free.",
+    "narration": "2022 had a totally different trigger — a pandemic, a war — but the exact same result: the worst inflation in forty years.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "under 3%"
+        "name": "warning",
+        "label": "2022: new trigger"
       },
       {
-        "name": "house",
-        "label": "borrowing: free"
+        "name": "pricetag",
+        "label": "…worst in 40 yrs"
       }
     ]
   },
   {
     "id": "s40",
-    "type": "doodle",
-    "narration": "Sounds great. But watch the chain of events: cheap money means everyone can bid more — so prices leap up to swallow it whole.",
-    "items": [
-      "coins",
-      "forsale",
-      "chartup"
-    ],
-    "labels": [
-      "cheap money",
-      "everyone bids more",
-      "…prices jump"
-    ],
-    "flow": true
-  },
-  {
-    "id": "s41",
-    "type": "chart",
-    "narration": "Then inflation hit, and in barely eighteen months, mortgage rates nearly touched eight percent — the fastest spike in forty years.",
-    "chartType": "line",
-    "title": "30-year mortgage rate (%)",
-    "data": [
-      {
-        "label": "2021",
-        "value": 2.7
-      },
-      {
-        "label": "2022",
-        "value": 5.3
-      },
-      {
-        "label": "2023",
-        "value": 7.8
-      },
-      {
-        "label": "2024",
-        "value": 6.8
-      },
-      {
-        "label": "2026",
-        "value": 6.5
-      }
-    ],
-    "highlight": 2,
-    "note": "fastest spike in 40 yrs"
-  },
-  {
-    "id": "s42",
     "type": "character",
-    "narration": "Same house. Same price tag. But the monthly check you write for it roughly doubled.",
-    "pose": "surprised",
-    "expression": "surprised",
+    "narration": "And once it starts, it feeds itself. Prices rise, so workers demand raises, so costs rise, so prices rise again — a spiral that's brutal to stop.",
+    "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "same house"
+        "name": "pricetag",
+        "label": "prices up"
       },
       {
-        "name": "mortgage",
-        "label": "payment…"
+        "name": "paystub",
+        "label": "→ wages up"
       },
       {
-        "name": "chartup",
-        "label": "…DOUBLED"
+        "name": "pricetag",
+        "label": "→ prices up again"
       }
     ]
   },
   {
+    "id": "s41",
+    "type": "chart",
+    "narration": "Different decade. Different cause. The exact same fever chart.",
+    "chartType": "line",
+    "title": "Inflation rate (%)",
+    "data": [
+      {
+        "label": "yr 1",
+        "value": 3.3
+      },
+      {
+        "label": "yr 2",
+        "value": 6.2
+      },
+      {
+        "label": "yr 3",
+        "value": 11.0
+      },
+      {
+        "label": "peak",
+        "value": 12.3
+      },
+      {
+        "label": "after",
+        "value": 7.0
+      }
+    ],
+    "series2": [
+      {
+        "label": "yr 1",
+        "value": 1.4
+      },
+      {
+        "label": "yr 2",
+        "value": 4.7
+      },
+      {
+        "label": "yr 3",
+        "value": 8.0
+      },
+      {
+        "label": "peak",
+        "value": 9.1
+      },
+      {
+        "label": "after",
+        "value": 3.2
+      }
+    ],
+    "seriesLabels": [
+      "1970s",
+      "2020s"
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "screenshot",
+    "narration": "And that's not me massaging the numbers — here's the Fed's own inflation data, with the 1970s spike and the 2020s spike on one chart.",
+    "sourceId": "fred-cpi"
+  },
+  {
     "id": "s43",
-    "type": "compare",
-    "narration": "A payment that was around seventeen hundred a month became nearly three thousand — for the exact same four walls.",
-    "left": {
-      "title": "Payment at 3%",
-      "value": "~$1,700/mo",
-      "icon": "keys"
-    },
-    "right": {
-      "title": "Payment at 7%",
-      "value": "~$2,900/mo",
-      "icon": "padlock"
-    }
+    "type": "character",
+    "narration": "And just like the seventies, the people in charge first reassured everyone it was 'transitory.' It was not.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "newspaper",
+        "label": "'transitory'"
+      },
+      {
+        "name": "warning",
+        "label": "…it wasn't"
+      }
+    ]
   },
   {
     "id": "s44",
     "type": "character",
-    "narration": "That's an extra fifteen thousand dollars a year — forever — for literally nothing new. Same house, same street, same paint.",
+    "narration": "Prices for everything — food, rent, gas — climbed faster than paychecks. Your money quietly shrank while you held it.",
     "pose": "explain",
     "props": [
       {
-        "name": "mortgage",
-        "label": "+$15k / year"
-      },
-      {
         "name": "pricetag",
-        "label": "nothing new"
+        "label": "everything up"
       },
       {
-        "name": "warning",
-        "label": "…forever"
+        "name": "coins",
+        "label": "…money shrinks"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "And before any of that, you need the down payment. Tens of thousands in cash — saved while rent quietly eats a third of every paycheck.",
+    "narration": "Two totally different sparks — an oil embargo, then a pandemic — lighting the exact same fire. That's the rhyme.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "the down payment"
-      },
-      {
-        "name": "apartment",
-        "label": "rent eats it"
+        "name": "gaspump",
+        "label": "oil, 1973"
       },
       {
         "name": "warning",
-        "label": "…save what?"
+        "label": "pandemic, 2020"
+      },
+      {
+        "name": "pricetag",
+        "label": "…same fire"
       }
     ]
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "So you're asked to save faster than ever, for a bigger number than ever, out of the paycheck that grew the slowest of all.",
-    "pose": "handtohead",
-    "expression": "worried",
+    "narration": "And inflation doesn't just hurt stocks. It torches bonds too — because a fixed payment is worth less when every dollar buys less.",
+    "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "save faster"
+        "name": "iou",
+        "label": "bonds"
       },
       {
-        "name": "house",
-        "label": "bigger number"
-      },
-      {
-        "name": "paystub",
-        "label": "…flattest pay"
+        "name": "pricetag",
+        "label": "…quietly burned"
       }
     ]
   },
   {
     "id": "s47",
-    "type": "screenshot",
-    "narration": "And you don't set that rate — the market and the Fed do. Here's the thirty-year average, straight from the Fed's data, nearly tripling.",
-    "sourceId": "fred-rate"
+    "type": "character",
+    "narration": "That's the seventies nightmare: stocks AND bonds falling together. The one place everyone hides had no exits.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "stocks down"
+      },
+      {
+        "name": "iou",
+        "label": "bonds down"
+      },
+      {
+        "name": "warning",
+        "label": "…nowhere to hide"
+      }
+    ]
   },
   {
     "id": "s48",
-    "type": "screenshot",
-    "narration": "And it hasn't come back down. As of late 2026, Freddie Mac's weekly survey still has the typical loan above seven percent.",
-    "sourceId": "freddie-pmms"
+    "type": "character",
+    "narration": "It happened again in 2022 — the classic safe portfolio had one of its worst years in a century.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "the 'safe' mix"
+      },
+      {
+        "name": "chartdown",
+        "label": "…worst in 100 yrs"
+      }
+    ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "Why did rates explode? To fight the worst inflation in forty years, the Fed hiked its own rate hard — and mortgages followed it straight up.",
-    "pose": "explain",
+    "narration": "Rhyme three: the Fed slams the brakes. To strangle 1970s inflation, the Fed cranked interest rates to brutal highs.",
+    "pose": "present",
+    "bubble": "Rhyme 3: the Fed brakes.",
     "props": [
       {
-        "name": "pricetag",
-        "label": "40-year inflation"
-      },
-      {
         "name": "bank",
-        "label": "the Fed hikes"
+        "label": "the Fed"
       },
       {
         "name": "percent",
-        "label": "…mortgages follow"
+        "label": "…rates way up"
       }
     ]
   },
   {
     "id": "s50",
-    "type": "character",
-    "narration": "Here's the cruel irony. Cheap rates never really made homes affordable. They just let sellers charge more. The price quietly absorbs every drop in the rate.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "low rate"
-      },
-      {
-        "name": "pricetag",
-        "label": "…higher price"
-      },
-      {
-        "name": "house",
-        "label": "same home"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Look familiar? Here are Fed interest rates across both eras — a wall of hikes in the seventies, and another wall just now.",
+    "sourceId": "fred-fedfunds"
   },
   {
     "id": "s51",
-    "type": "character",
-    "narration": "So even if prices had frozen solid, the cost of carrying a home still exploded. Two locks on the same front door.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "price frozen"
-      },
-      {
-        "name": "percent",
-        "label": "rate jumped"
-      },
-      {
-        "name": "padlock",
-        "label": "…two locks"
-      }
-    ]
+    "type": "doodle",
+    "narration": "And here's the chain that actually breaks markets: high inflation forces high rates — and high rates crush the price of everything.",
+    "items": [
+      "pricetag",
+      "percent",
+      "chartdown"
+    ],
+    "labels": [
+      "high inflation",
+      "→ high rates",
+      "→ assets fall"
+    ],
+    "flow": true
   },
   {
     "id": "s52",
     "type": "character",
-    "narration": "By now you're yelling the obvious fix. Just build more houses. Supply and demand. Chart three.",
-    "pose": "present",
-    "bubble": "Chart 3: we stopped building.",
+    "narration": "Because when money stops being free, the most expensive stocks fall the hardest. In 1973, that was the Nifty Fifty.",
+    "pose": "explain",
     "props": [
       {
-        "name": "crane",
-        "label": "just build more?"
+        "name": "coins",
+        "label": "money isn't free"
       },
       {
-        "name": "blueprint",
-        "label": "supply & demand"
+        "name": "gauge",
+        "label": "priciest = riskiest"
+      },
+      {
+        "name": "chartdown",
+        "label": "…fall hardest"
       }
     ]
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "Right instinct. One problem. For about fifteen years, America quietly stopped building enough of them.",
+    "narration": "In the seventies it took a legendary Fed chair, Paul Volcker, to finally break inflation — by hiking rates to nearly twenty percent.",
     "pose": "explain",
     "props": [
       {
-        "name": "crane",
-        "label": "the fix"
+        "name": "bank",
+        "label": "Volcker"
       },
       {
-        "name": "hardhat",
-        "label": "…we stopped"
-      },
-      {
-        "name": "chartdown",
-        "label": "too few built"
+        "name": "percent",
+        "label": "~20%!"
       }
     ]
   },
   {
     "id": "s54",
-    "type": "chart",
-    "narration": "After the 2008 crash, homebuilding fell off a cliff — and unlike the stock market, it never fully climbed back.",
-    "chartType": "line",
-    "title": "New homes built (million / year)",
-    "data": [
+    "type": "character",
+    "narration": "That cure triggered a brutal recession. Killing inflation is never free — someone always ends up paying the bill.",
+    "pose": "explain",
+    "props": [
       {
-        "label": "2005",
-        "value": 2.1
+        "name": "chartdown",
+        "label": "a recession"
       },
       {
-        "label": "2009",
-        "value": 0.55
-      },
-      {
-        "label": "2015",
-        "value": 1.1
-      },
-      {
-        "label": "2020",
-        "value": 1.4
-      },
-      {
-        "label": "2024",
-        "value": 1.4
+        "name": "warning",
+        "label": "…someone pays"
       }
-    ],
-    "highlight": 1,
-    "note": "building collapsed"
+    ]
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "A whole decade of building too little, while the population kept growing. The hole just got deeper every single year.",
+    "narration": "Cheap money had inflated the glamour stocks for years. Expensive money is exactly what finally popped them.",
     "pose": "explain",
     "props": [
       {
-        "name": "hardhat",
-        "label": "too little built"
+        "name": "coins",
+        "label": "cheap money inflated"
       },
       {
-        "name": "crowd",
-        "label": "more people"
-      },
-      {
-        "name": "chartdown",
-        "label": "…a growing hole"
+        "name": "bubble",
+        "label": "…dear money popped"
       }
     ]
   },
   {
     "id": "s56",
-    "type": "callout",
-    "narration": "Add it all up, and the country is short by nearly four million homes.",
-    "text": "~3.8 million",
-    "sub": "the U.S. housing shortage",
-    "icon": "house"
+    "type": "character",
+    "narration": "And rate hikes work on a delay. Economists call them 'long and variable lags' — the pain shows up months, even years, later.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "clock",
+        "label": "long, variable lags"
+      },
+      {
+        "name": "warning",
+        "label": "…pain arrives late"
+      }
+    ]
   },
   {
     "id": "s57",
-    "type": "screenshot",
-    "narration": "And here's the building itself — new housing starts, from the Fed's data, cratering in 2008 and never truly recovering.",
-    "sourceId": "fred-starts"
+    "type": "character",
+    "narration": "Which is why a calm market today proves nothing. In 1973, the worst of the damage came well after the headlines moved on.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "ticker",
+        "label": "calm today"
+      },
+      {
+        "name": "chartdown",
+        "label": "…worst comes later"
+      }
+    ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "So why can't we just build? Because a new home hits a wall of rules before a single brick is ever laid.",
+    "narration": "Right now the hope is a 'soft landing' — inflation cools, nobody gets hurt. It's possible. It's also exactly what everyone hoped for in 1973.",
     "pose": "explain",
     "props": [
       {
-        "name": "blueprint",
-        "label": "the rules"
+        "name": "bubble",
+        "label": "'soft landing'"
       },
       {
-        "name": "crane",
-        "label": "…before you build"
+        "name": "warning",
+        "label": "…they hoped that too"
       }
     ]
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "Zoning that bans anything but big single houses. Expensive land. Pricey labor and materials. Years of permits.",
-    "pose": "explain",
+    "narration": "Rhyme four: the ground underneath. Stagflation — a stalling economy and rising prices at the same time.",
+    "pose": "present",
+    "bubble": "Rhyme 4: stagflation.",
     "props": [
       {
-        "name": "blueprint",
-        "label": "zoning bans"
+        "name": "chartdown",
+        "label": "stagnation"
       },
       {
-        "name": "coins",
-        "label": "costly land"
-      },
-      {
-        "name": "hardhat",
-        "label": "labor & permits"
+        "name": "pricetag",
+        "label": "+ inflation"
       }
     ]
   },
   {
     "id": "s60",
     "type": "character",
-    "narration": "There's also a quieter reason. When building anything is this hard, builders only bother with the homes that earn the fattest margin.",
+    "narration": "The textbooks said that combination couldn't even happen. In the seventies, it happened for a decade.",
     "pose": "explain",
     "props": [
       {
-        "name": "crane",
-        "label": "so hard to build"
+        "name": "warning",
+        "label": "'impossible'"
       },
       {
-        "name": "house",
-        "label": "…big & pricey only"
-      },
-      {
-        "name": "coins",
-        "label": "fat margin"
+        "name": "clock",
+        "label": "…a whole decade"
       }
     ]
   },
   {
     "id": "s61",
-    "type": "character",
-    "narration": "So they build the five-bedroom, not the starter. The cheap first home is the exact one almost nobody builds anymore.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "the mansion"
-      },
-      {
-        "name": "forsale",
-        "label": "…not the starter"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "It's a real, named thing — and it's exactly the corner an economy gets stuck in when prices rise but growth doesn't.",
+    "sourceId": "wiki-stagflation"
   },
   {
     "id": "s62",
     "type": "character",
-    "narration": "And the 2008 crash wiped out thousands of small local builders. The ones left standing are big, cautious, and slow.",
+    "narration": "And sitting on top of all of it, one number: how expensive stocks are versus a decade of real earnings. The CAPE ratio.",
     "pose": "explain",
     "props": [
       {
-        "name": "hardhat",
-        "label": "small builders gone"
+        "name": "gauge",
+        "label": "the CAPE ratio"
       },
       {
-        "name": "chartdown",
-        "label": "…since 2008"
+        "name": "ticker",
+        "label": "price ÷ 10-yr earnings"
       }
     ]
   },
   {
     "id": "s63",
-    "type": "character",
-    "narration": "And then the neighbors. The people who already own show up to every meeting to block anything new nearby.",
-    "pose": "explain",
-    "props": [
+    "type": "chart",
+    "narration": "In 1966 it hit twenty-four — and then came a long, grinding bear market. Today it sits around forty.",
+    "chartType": "line",
+    "title": "Shiller CAPE ratio",
+    "data": [
       {
-        "name": "crowd",
-        "label": "the neighbors"
+        "label": "1966",
+        "value": 24
       },
       {
-        "name": "apartment",
-        "label": "block new homes"
+        "label": "1974",
+        "value": 8
       },
       {
-        "name": "warning",
-        "label": "…not here"
+        "label": "1982",
+        "value": 7
+      },
+      {
+        "label": "2000",
+        "value": 44
+      },
+      {
+        "label": "2009",
+        "value": 15
+      },
+      {
+        "label": "2026",
+        "value": 40
+      }
+    ],
+    "notes": [
+      {
+        "at": 0,
+        "text": "'66 peak → long bear"
+      },
+      {
+        "at": 3,
+        "text": "dot-com top"
+      },
+      {
+        "at": 5,
+        "text": "us, now"
       }
     ]
   },
   {
     "id": "s64",
-    "type": "character",
-    "narration": "They vote to protect their view and their home value over your chance to ever have one. Quietly, it works.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "protect my value"
-      },
-      {
-        "name": "crowd",
-        "label": "…vote no"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "This one's live — the Shiller P/E today, near forty, a level beaten only once in history: the peak of the dot-com bubble.",
+    "sourceId": "multpl-cape"
   },
   {
     "id": "s65",
     "type": "character",
-    "narration": "We also quietly outlawed the in-between. Duplexes, townhouses, small apartment blocks — the 'missing middle' that used to be the affordable rung.",
+    "narration": "And history is blunt about what that tends to mean. From valuations this high, the next decade of market returns has usually been weak — low single digits, sometimes nothing.",
     "pose": "explain",
     "props": [
       {
-        "name": "apartment",
-        "label": "the missing middle"
+        "name": "gauge",
+        "label": "buy at ~40×"
       },
       {
-        "name": "blueprint",
-        "label": "…zoned out of existence"
+        "name": "chartdown",
+        "label": "…a weak decade ahead"
       }
     ]
   },
   {
     "id": "s66",
     "type": "character",
-    "narration": "In the hottest cities the result is brutal: the nurse and the teacher can no longer afford to live anywhere near the people they serve.",
+    "narration": "The bulls say it's justified now — lower rates, fatter profits, buybacks. Maybe. But that's the same reassurance offered at every single top.",
     "pose": "explain",
     "props": [
       {
-        "name": "crowd",
-        "label": "nurses & teachers"
+        "name": "ticker",
+        "label": "'it's justified'"
       },
       {
-        "name": "house",
-        "label": "priced out"
-      },
-      {
-        "name": "warning",
-        "label": "…can't live there"
+        "name": "bubble",
+        "label": "…said at every top"
       }
     ]
   },
   {
     "id": "s67",
     "type": "character",
-    "narration": "So we took the one fix that genuinely works — more homes — and made it the single hardest thing in America to do.",
-    "pose": "handtohead",
-    "expression": "worried",
+    "narration": "High valuations don't cause a crash by themselves. But they're the dry wood. 1973 had a forest of it. So does 2026.",
+    "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "the real fix"
+        "name": "gauge",
+        "label": "dry wood"
       },
       {
-        "name": "crane",
-        "label": "…blocked"
-      },
-      {
-        "name": "warning",
-        "label": "impossible"
+        "name": "bubble",
+        "label": "…waiting for a spark"
       }
     ]
   },
   {
     "id": "s68",
     "type": "character",
-    "narration": "And every missing home is a bidding war that never had to happen — a family that could've just had a key, fighting over scraps instead.",
+    "narration": "Think of a high CAPE as a smoke detector, not a stopwatch. It can't tell you WHEN. It can tell you the room is full of gas.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "a missing home"
+        "name": "gauge",
+        "label": "a smoke detector"
       },
       {
-        "name": "couple",
-        "label": "…no key"
-      },
-      {
-        "name": "forsale",
-        "label": "fighting for scraps"
+        "name": "warning",
+        "label": "…not a timer"
       }
     ]
   },
   {
     "id": "s69",
     "type": "character",
-    "narration": "And here's the twist that quietly makes all of it worse. Chart four. Even the homes that already exist aren't for sale.",
-    "pose": "present",
-    "bubble": "Chart 4: the freeze.",
+    "narration": "Here's why it matters. Historically, the higher the CAPE on the day you buy, the lower your returns over the next decade.",
+    "pose": "explain",
     "props": [
       {
-        "name": "lockhouse",
-        "label": "already built"
+        "name": "gauge",
+        "label": "buy at high CAPE"
       },
       {
-        "name": "forsale",
-        "label": "…but not for sale"
+        "name": "chartdown",
+        "label": "…weak 10-yr returns"
       }
     ]
   },
   {
     "id": "s70",
     "type": "character",
-    "narration": "Remember those below-three-percent pandemic mortgages? Roughly half of all homeowners are still holding one.",
+    "narration": "And every bubble sings the same anthem: 'this time is different' — because of railroads, radio, dot-coms, and now AI.",
     "pose": "explain",
     "props": [
       {
-        "name": "mortgage",
-        "label": "a 3% mortgage"
+        "name": "bubble",
+        "label": "'this time's different'"
       },
       {
-        "name": "crowd",
-        "label": "~half of owners"
+        "name": "ticker",
+        "label": "…every single time"
       }
     ]
   },
   {
     "id": "s71",
     "type": "character",
-    "narration": "Now picture their choice. Sell this house, and your next mortgage is at seven percent — often on a smaller place.",
+    "narration": "Sometimes it genuinely is a little different. It's just never different enough to make a crazy price safe.",
     "pose": "explain",
     "props": [
       {
-        "name": "sold",
-        "label": "sell this one?"
+        "name": "gauge",
+        "label": "a bit different?"
       },
       {
-        "name": "percent",
-        "label": "re-buy at 7%"
-      },
-      {
-        "name": "house",
-        "label": "…something smaller"
+        "name": "warning",
+        "label": "…price still bites"
       }
     ]
   },
   {
     "id": "s72",
-    "type": "character",
-    "narration": "Your payment could actually go UP just to downsize. So rational people do the only sane thing. They stay put.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "so they stay"
-      },
-      {
-        "name": "lockhouse",
-        "label": "…locked in place"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "And CAPE isn't some fringe idea — it's the measure a Nobel-winning economist built specifically to spot exactly this.",
+    "sourceId": "wiki-cape"
   },
   {
     "id": "s73",
     "type": "character",
-    "narration": "There's a name for it. Golden handcuffs. Your old rate is so good it quietly traps you in a house you've already outgrown.",
+    "narration": "There's a second gauge that agrees: the total value of the stock market versus the whole economy. It's also near record highs.",
     "pose": "explain",
     "props": [
       {
-        "name": "padlock",
-        "label": "golden handcuffs"
+        "name": "gauge",
+        "label": "market vs. economy"
       },
       {
-        "name": "lockhouse",
-        "label": "…trapped by a good deal"
+        "name": "globe",
+        "label": "…near records too"
       }
     ]
   },
   {
     "id": "s74",
     "type": "character",
-    "narration": "A family with a three-percent loan would pay thousands more a year to buy the identical house next door at seven. So nobody moves.",
+    "narration": "And today's anthem is the AI boom — just as the 1960s had the 'go-go' tech of its day. Massive spending, sky-high hopes.",
     "pose": "explain",
     "props": [
       {
-        "name": "couple",
-        "label": "a 3% family"
+        "name": "officetower",
+        "label": "the AI boom"
       },
       {
-        "name": "percent",
-        "label": "vs. 7% next door"
+        "name": "coins",
+        "label": "…huge spending"
       },
       {
-        "name": "padlock",
-        "label": "…nobody moves"
+        "name": "bubble",
+        "label": "sky-high hopes"
       }
     ]
   },
   {
     "id": "s75",
-    "type": "doodle",
-    "narration": "Follow the logic. A seven-percent re-buy means nobody sells — so nothing's listed — so the few buyers left bid the survivors up.",
-    "items": [
-      "percent",
-      "padlock",
-      "chartup"
-    ],
-    "labels": [
-      "7% to re-buy",
-      "so nobody sells",
-      "…so prices rise"
-    ],
-    "flow": true
+    "type": "character",
+    "narration": "Put the four rhymes side by side, and the picture gets uncomfortable.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bubble",
+        "label": "glamour stocks"
+      },
+      {
+        "name": "gaspump",
+        "label": "inflation shock"
+      },
+      {
+        "name": "bank",
+        "label": "Fed brakes"
+      },
+      {
+        "name": "gauge",
+        "label": "sky-high prices"
+      }
+    ]
   },
   {
     "id": "s76",
-    "type": "chart",
-    "narration": "The result shows up instantly in the data. The number of homes for sale dried up — frozen near record lows.",
-    "chartType": "line",
-    "title": "Homes for sale (million)",
-    "data": [
+    "type": "character",
+    "narration": "Glamour-stock mania. An inflation shock. A Fed slamming the brakes. And valuations near all-time highs. 1973 had all four. We have all four.",
+    "pose": "explain",
+    "props": [
       {
-        "label": "2019",
-        "value": 1.6
+        "name": "calendar",
+        "label": "1973: all four"
       },
       {
-        "label": "2021",
-        "value": 1.02
-      },
-      {
-        "label": "2022",
-        "value": 0.9
-      },
-      {
-        "label": "2024",
-        "value": 1.1
+        "name": "gauge",
+        "label": "2026: all four"
       }
-    ],
-    "highlight": 2,
-    "note": "frozen near lows"
+    ]
   },
   {
     "id": "s77",
-    "type": "callout",
-    "narration": "Economists estimate this lock-in froze roughly one-point-seven million home sales in just two years.",
-    "text": "1.7 million",
-    "sub": "home sales frozen by lock-in",
-    "icon": "lockhouse"
+    "type": "character",
+    "narration": "This is not a prediction. Nobody can time a market, and anyone who says they can is selling something.",
+    "pose": "shrug",
+    "bubble": "This is not a prediction.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "no crystal ball"
+      },
+      {
+        "name": "warning",
+        "label": "…just a pattern"
+      }
+    ]
   },
   {
     "id": "s78",
-    "type": "screenshot",
-    "narration": "And you can watch it happen — the count of homes for sale, from the Fed's own data, collapsing to record lows.",
-    "sourceId": "fred-inventory"
+    "type": "character",
+    "narration": "It's a pattern. And patterns, in markets, are worth respecting — especially the ones everyone's decided to forget.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bubble",
+        "label": "a pattern"
+      },
+      {
+        "name": "calendar",
+        "label": "…the forgotten one"
+      }
+    ]
   },
   {
     "id": "s79",
     "type": "character",
-    "narration": "It's a doom loop. Nothing's for sale, so the few buyers left fight over scraps — and bid each other up.",
+    "narration": "And to be fair to the other side: a setup can simmer for years before anything breaks. Being early can feel exactly like being wrong.",
     "pose": "explain",
     "props": [
       {
-        "name": "forsale",
-        "label": "nothing for sale"
+        "name": "clock",
+        "label": "it can simmer for years"
       },
       {
-        "name": "crowd",
-        "label": "buyers fight"
-      },
-      {
-        "name": "chartup",
-        "label": "…prices up again"
+        "name": "warning",
+        "label": "…early feels wrong"
       }
     ]
   },
   {
     "id": "s80",
     "type": "character",
-    "narration": "With resale frozen, brand-new homes became almost the only ones for sale — and builders know it, so they almost never have to cut the price.",
+    "narration": "The market can absolutely climb higher from here. The 1972 market did too — for months — right before it didn't.",
     "pose": "explain",
     "props": [
       {
-        "name": "crane",
-        "label": "new homes only"
+        "name": "chartup",
+        "label": "it can still climb"
       },
       {
-        "name": "forsale",
-        "label": "…the only option"
-      },
-      {
-        "name": "pricetag",
-        "label": "no need to discount"
+        "name": "chartdown",
+        "label": "…then 1974"
       }
     ]
   },
   {
     "id": "s81",
     "type": "character",
-    "narration": "It's the cruelest kind of trap. The people most stuck are the ones who did everything right and locked in a great rate.",
-    "pose": "explain",
+    "narration": "So why has 1973 vanished from memory, when 1929 and 2008 are practically legends?",
+    "pose": "think",
+    "bubble": "Why forgotten?",
     "props": [
       {
-        "name": "couple",
-        "label": "did it right"
+        "name": "calendar",
+        "label": "1973 — who?"
       },
       {
-        "name": "padlock",
-        "label": "…now trapped"
-      },
-      {
-        "name": "lockhouse",
-        "label": "by a good deal"
+        "name": "newspaper",
+        "label": "no legend"
       }
     ]
   },
   {
     "id": "s82",
     "type": "character",
-    "narration": "So with almost nothing on the market, ask the real question. Who actually wins a bidding war?",
-    "pose": "think",
-    "bubble": "So who wins?",
+    "narration": "Because it didn't crash in a single day. There was no Black Tuesday, no one unforgettable photo. It was a slow, grinding, two-year bleed.",
+    "pose": "explain",
     "props": [
       {
-        "name": "forsale",
-        "label": "a bidding war"
+        "name": "clock",
+        "label": "no crash DAY"
       },
       {
-        "name": "scale",
-        "label": "…who wins?"
+        "name": "chartdown",
+        "label": "…a 2-year bleed"
       }
     ]
   },
   {
     "id": "s83",
-    "type": "character",
-    "narration": "Not the family with a mortgage and a home inspection. The winner is whoever can skip all of that — and pay cash.",
-    "pose": "explain",
-    "props": [
+    "type": "chart",
+    "narration": "No cliff to gasp at. Just a long, relentless slide — the kind that's easy to look away from.",
+    "chartType": "line",
+    "title": "S&P 500 · 1973–74",
+    "data": [
       {
-        "name": "mortgage",
-        "label": "a normal buyer"
+        "label": "Jan '73",
+        "value": 120
       },
       {
-        "name": "coins",
-        "label": "…vs. all cash"
+        "label": "Jul '73",
+        "value": 106
+      },
+      {
+        "label": "Jan '74",
+        "value": 92
+      },
+      {
+        "label": "Jul '74",
+        "value": 78
+      },
+      {
+        "label": "Oct '74",
+        "value": 62
+      }
+    ],
+    "notes": [
+      {
+        "at": 0,
+        "text": "the 1973 peak"
+      },
+      {
+        "at": 4,
+        "text": "−48% by Oct '74"
       }
     ]
   },
   {
     "id": "s84",
-    "type": "character",
-    "narration": "Which is increasingly Wall Street. In recent years, investors bought roughly one in four of the cheapest homes in America.",
-    "pose": "explain",
-    "variant": "villain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "Wall Street"
-      },
-      {
-        "name": "house",
-        "label": "1 in 4 cheap homes"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The full record is right here — a forty-eight percent fall that took nearly two years to grind all the way down.",
+    "sourceId": "wiki-crash73"
   },
   {
     "id": "s85",
     "type": "character",
-    "narration": "And this isn't a conspiracy — the purchase data is public. Big investors simply became the buyer nobody could outbid.",
+    "narration": "And then the second trick: inflation hid the wound. On paper, prices clawed back to 1973 levels by 1980.",
     "pose": "explain",
     "props": [
       {
-        "name": "bank",
-        "label": "big investors"
+        "name": "pricetag",
+        "label": "inflation hides it"
       },
       {
-        "name": "sold",
-        "label": "…the buyer to beat"
+        "name": "ticker",
+        "label": "…'recovered' by 1980"
       }
     ]
   },
   {
     "id": "s86",
     "type": "character",
-    "narration": "They don't need a loan, an inspection, or a good night's sleep. They offer cash, today, over asking.",
+    "narration": "But a 1980 dollar bought far less than a 1973 one. In real, spendable terms, investors waited until the 1990s to be whole.",
     "pose": "explain",
     "props": [
       {
-        "name": "sold",
-        "label": "cash, today"
+        "name": "coins",
+        "label": "a shrunken dollar"
       },
       {
-        "name": "coins",
-        "label": "over asking"
+        "name": "clock",
+        "label": "…real recovery: 1990s"
       }
     ]
   },
   {
     "id": "s87",
     "type": "character",
-    "narration": "Some firms stopped waiting entirely. They now build whole neighborhoods designed never to be sold — only rented, forever.",
+    "narration": "This is the trap in one line: the nominal number lies to you, and only the real, inflation-adjusted number tells the truth.",
     "pose": "explain",
     "props": [
       {
-        "name": "crane",
-        "label": "build-to-rent"
+        "name": "ticker",
+        "label": "nominal: 'fine!'"
       },
       {
-        "name": "apartment",
-        "label": "whole streets"
-      },
-      {
-        "name": "forsale",
-        "label": "…never for sale"
+        "name": "coins",
+        "label": "…real: ruined"
       }
     ]
   },
   {
     "id": "s88",
     "type": "character",
-    "narration": "So the starter home didn't just get expensive. For a lot of families, it quietly turned into a rental they'll pay on for life.",
+    "narration": "So the chart 'recovered.' Your actual buying power did not. For twenty years, you were poorer and the headline never said so.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "the starter home"
+        "name": "chartup",
+        "label": "chart recovered"
       },
       {
-        "name": "apartment",
-        "label": "…now a rental"
+        "name": "coins",
+        "label": "…you didn't"
       }
     ]
   },
   {
     "id": "s89",
-    "type": "character",
-    "narration": "And once a few big players own enough rentals, they can lean on the same software to set the rent — nudging prices up in lockstep.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "apartment",
-        "label": "big landlords"
-      },
-      {
-        "name": "calculator",
-        "label": "…set the rent"
-      },
-      {
-        "name": "chartup",
-        "label": "all rise together"
-      }
-    ]
+    "type": "callout",
+    "narration": "That's the kind nobody puts in a movie. The quiet crash — the one inflation quietly covers up.",
+    "text": "The quiet crash.",
+    "sub": "the kind inflation hides",
+    "icon": "warning"
   },
   {
     "id": "s90",
     "type": "character",
-    "narration": "A young couple finally saves a down payment, finds the one, writes the offer — and loses before lunch to a company they'll never meet.",
+    "narration": "Compare that to 2008 — a sudden, screaming panic packed into a few weeks. That's the kind of crash the brain files away and never forgets.",
     "pose": "explain",
     "props": [
       {
-        "name": "couple",
-        "label": "a young couple"
+        "name": "chartdown",
+        "label": "2008: sudden"
       },
       {
-        "name": "mortgage",
-        "label": "their one shot"
-      },
-      {
-        "name": "coins",
-        "label": "…beaten by cash"
+        "name": "bomb",
+        "label": "…a loud panic"
       }
     ]
   },
   {
     "id": "s91",
     "type": "character",
-    "narration": "And the people locked out of buying don't vanish. They rent. And rents climbed right alongside the prices.",
+    "narration": "A slow bleed never trips that alarm. You adapt. You hope. You keep telling yourself it'll bounce back next quarter.",
     "pose": "explain",
     "props": [
       {
-        "name": "apartment",
-        "label": "they rent"
+        "name": "clock",
+        "label": "a slow bleed"
       },
       {
-        "name": "pricetag",
-        "label": "rents rose too"
+        "name": "crowd",
+        "label": "…'it'll bounce back'"
       }
     ]
   },
   {
     "id": "s92",
-    "type": "callout",
-    "narration": "Nearly half of all American renters are now cost-burdened — paying more than they can really afford just to keep a roof overhead.",
-    "text": "~Half",
-    "sub": "of U.S. renters are cost-burdened",
-    "icon": "apartment"
+    "type": "character",
+    "narration": "Japan learned the same lesson the hard way. Its 1989 market peak still hasn't fully recovered — decades later.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "Japan, 1989"
+      },
+      {
+        "name": "chartdown",
+        "label": "…still not back"
+      }
+    ]
   },
   {
     "id": "s93",
-    "type": "screenshot",
-    "narration": "And that's not spin. The data puts it at forty-six percent of renters — stretched past the point that's supposed to be healthy.",
-    "sourceId": "wiki-crisis"
+    "type": "character",
+    "narration": "Even the U.S. had a quieter echo. From 2000 to roughly 2013, the market round-tripped to nowhere — a lost decade hiding in plain sight.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "ticker",
+        "label": "2000 → 2013"
+      },
+      {
+        "name": "chartdown",
+        "label": "…a lost decade"
+      }
+    ]
   },
   {
     "id": "s94",
     "type": "character",
-    "narration": "So life goes on hold. People move back in with parents. They delay the move, the wedding, the kid.",
+    "narration": "So the comforting line that 'stocks always go up over the long run' comes with a giant asterisk: it can depend entirely on the price you paid to get in.",
     "pose": "explain",
     "props": [
       {
-        "name": "movingbox",
-        "label": "back to parents"
+        "name": "chartup",
+        "label": "'always goes up'*"
       },
       {
-        "name": "couple",
-        "label": "delay the wedding"
-      },
-      {
-        "name": "clock",
-        "label": "…life on hold"
+        "name": "gauge",
+        "label": "…*at what price?"
       }
     ]
   },
   {
     "id": "s95",
     "type": "character",
-    "narration": "And it splits a whole generation in two — not by income, but by timing. Did you buy before the door shut, or after?",
+    "narration": "Which is the real lesson here, and it's bigger than 1973. The dangerous crash isn't the loud one. It's the quiet one you don't notice for years.",
     "pose": "explain",
+    "bubble": "The quiet crash is the dangerous one.",
     "props": [
       {
-        "name": "house",
-        "label": "bought before"
+        "name": "bomb",
+        "label": "not the loud one"
       },
       {
-        "name": "forsale",
-        "label": "…or after?"
-      },
-      {
-        "name": "scale",
-        "label": "pure timing"
+        "name": "chartdown",
+        "label": "…the quiet one"
       }
     ]
   },
   {
     "id": "s96",
     "type": "character",
-    "narration": "For the first time in modern memory, young adults are statistically less likely to own a home than their parents were at the same age.",
+    "narration": "And the Nifty Fifty taught the oldest rule in investing: a wonderful company, bought at a terrible price, is still a terrible investment.",
     "pose": "explain",
     "props": [
       {
-        "name": "couple",
-        "label": "young adults"
+        "name": "officetower",
+        "label": "great company"
       },
       {
-        "name": "house",
-        "label": "own less"
+        "name": "gauge",
+        "label": "terrible price"
       },
       {
-        "name": "chartdown",
-        "label": "…than their parents"
+        "name": "warning",
+        "label": "…bad investment"
       }
     ]
   },
   {
     "id": "s97",
-    "type": "screenshot",
-    "narration": "The homeownership rate makes it official — here it is in the Fed's data, with young families sliding down the ladder.",
-    "sourceId": "fred-ownership"
+    "type": "character",
+    "narration": "Price is what you pay. Value is what you get. Pay ninety times earnings, and even a great company can take decades to pay you back.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "price you pay"
+      },
+      {
+        "name": "scale",
+        "label": "value you get"
+      }
+    ]
   },
   {
     "id": "s98",
     "type": "character",
-    "narration": "And the gap compounds every year. Owners watched their equity balloon while they slept.",
+    "narration": "So the Magnificent Seven can absolutely keep changing the world. Their stocks can still fall in half while they do it. Both things can be true.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "owners"
+        "name": "officetower",
+        "label": "changing the world"
       },
       {
-        "name": "chartup",
-        "label": "equity balloons"
+        "name": "chartdown",
+        "label": "…stock still halves"
       }
     ]
   },
   {
     "id": "s99",
-    "type": "compare",
-    "narration": "Renters paid an entire mortgage every month — just somebody else's. One side quietly builds wealth. The other builds it for a landlord.",
-    "left": {
-      "title": "Homeowners",
-      "value": "+ equity",
-      "icon": "house"
-    },
-    "right": {
-      "title": "Renters",
-      "value": "+ nothing",
-      "icon": "apartment"
-    }
+    "type": "character",
+    "narration": "So this isn't a reason to panic or dump everything. Trying to time the top is a loser's game in both directions.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "don't panic-sell"
+      },
+      {
+        "name": "warning",
+        "label": "…timing loses"
+      }
+    ]
   },
   {
     "id": "s100",
     "type": "character",
-    "narration": "And rent isn't building you anything. Thirty years of rent checks, and you end with exactly what you started with — a stack of receipts.",
+    "narration": "It's a reason to respect price. To ask not just 'is this a great company' but 'is this a great company at THIS price.'",
     "pose": "explain",
     "props": [
       {
-        "name": "apartment",
-        "label": "30 years of rent"
+        "name": "officetower",
+        "label": "great company?"
       },
       {
-        "name": "iou",
-        "label": "…just receipts"
+        "name": "gauge",
+        "label": "…at THIS price?"
       }
     ]
   },
   {
     "id": "s101",
     "type": "character",
-    "narration": "Picture it. You did everything right — a degree, a steady job, no debt. And the cheapest home near work still needs an income you just don't have.",
+    "narration": "Spread your bets. Keep a little dry powder. And treat anyone who swears a price can't matter the way 1974 treated the Nifty Fifty.",
     "pose": "explain",
     "props": [
       {
-        "name": "paystub",
-        "label": "did everything right"
+        "name": "scale",
+        "label": "spread your bets"
       },
       {
-        "name": "house",
-        "label": "…still can't buy"
+        "name": "coins",
+        "label": "keep dry powder"
       },
       {
-        "name": "warning",
-        "label": "the gap"
+        "name": "chartdown",
+        "label": "…price always matters"
       }
     ]
   },
   {
     "id": "s102",
     "type": "character",
-    "narration": "That's how a housing market quietly turns into a wealth-sorting machine — before you've even bought a thing.",
+    "narration": "The old investors who survived 1973 had one habit in common: a margin of safety. They simply refused to overpay, even for greatness.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "the haves"
-      },
-      {
-        "name": "apartment",
-        "label": "the have-nots"
-      },
-      {
         "name": "scale",
-        "label": "…sorted"
+        "label": "a margin of safety"
+      },
+      {
+        "name": "gauge",
+        "label": "…never overpay"
       }
     ]
   },
   {
     "id": "s103",
     "type": "character",
-    "narration": "None of this fell from the sky. After World War Two, America bet its whole middle class on one idea: a house, and a thirty-year mortgage.",
+    "narration": "That's the whole game. Not predicting the crash. Just making sure that if it comes, the price you paid gives you room to survive it.",
     "pose": "explain",
     "props": [
       {
-        "name": "flagUS",
-        "label": "post-war America"
+        "name": "warning",
+        "label": "can't predict it"
       },
       {
-        "name": "house",
-        "label": "a home"
-      },
-      {
-        "name": "mortgage",
-        "label": "…the 30-year loan"
+        "name": "scale",
+        "label": "…survive it"
       }
     ]
   },
   {
     "id": "s104",
     "type": "character",
-    "narration": "It worked beautifully — for the people who got in. The home became the family's retirement plan, its inheritance, its everything.",
+    "narration": "Because the people wiped out in 1974 weren't reckless gamblers. They bought the best, most admired companies in America. They just paid too much.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "the home"
+        "name": "officetower",
+        "label": "the best companies"
       },
       {
-        "name": "piggybank",
-        "label": "retirement plan"
-      },
-      {
-        "name": "baby",
-        "label": "…the inheritance"
+        "name": "gauge",
+        "label": "…but paid too much"
       }
     ]
   },
   {
     "id": "s105",
-    "type": "character",
-    "narration": "Which is the trap. Once a country stores its wealth inside home prices, letting those prices fall becomes politically unthinkable.",
-    "pose": "explain",
-    "props": [
+    "type": "timeline",
+    "narration": "Lay it end to end and the rhyme is hard to miss.",
+    "title": "History rhymes",
+    "events": [
       {
-        "name": "house",
-        "label": "wealth stored here"
+        "year": "1972",
+        "label": "glamour-stock mania",
+        "icon": "bubble"
       },
       {
-        "name": "padlock",
-        "label": "…can never fall"
+        "year": "1973",
+        "label": "inflation + Fed shock",
+        "icon": "gaspump"
       },
       {
-        "name": "capitol",
-        "label": "politically off-limits"
+        "year": "1974",
+        "label": "the quiet −48%",
+        "icon": "chartdown"
+      },
+      {
+        "year": "2026",
+        "label": "…the same four rhymes",
+        "icon": "gauge"
       }
-    ]
+    ],
+    "highlight": 3
   },
   {
     "id": "s106",
     "type": "character",
-    "narration": "So, the villain. Here's the uncomfortable answer. There isn't one. It's the whole machine, working exactly as designed.",
+    "narration": "History doesn't repeat itself. But, as the line goes, it rhymes. And right now it is rhyming loudly.",
     "pose": "explain",
-    "bubble": "There's no single villain.",
     "props": [
       {
-        "name": "blueprint",
-        "label": "the machine"
+        "name": "calendar",
+        "label": "it rhymes"
       },
       {
-        "name": "house",
-        "label": "working as built"
+        "name": "ticker",
+        "label": "…listen closely"
       }
     ]
   },
   {
     "id": "s107",
     "type": "character",
-    "narration": "Because somewhere along the way, a house stopped being a place to live. It quietly became an investment.",
+    "narration": "And maybe that's the real gift of a forgotten crash. The lessons nobody lived through are the ones a market gets to teach all over again.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "a place to live"
+        "name": "calendar",
+        "label": "forgotten = repeated"
       },
       {
-        "name": "chartup",
-        "label": "…became an asset"
+        "name": "warning",
+        "label": "…taught again"
       }
     ]
   },
   {
     "id": "s108",
     "type": "character",
-    "narration": "And an investment has exactly one job. Go up. Every rate cut, every tax break, every rule quietly serves that one job.",
+    "narration": "You don't have to predict anything to protect yourself. You just have to remember that 1973 happened — and that it started like this.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "it must go up"
+        "name": "newspaper",
+        "label": "just remember 1973"
       },
       {
-        "name": "capitol",
-        "label": "…policy protects it"
+        "name": "ticker",
+        "label": "…it began quietly"
       }
     ]
   },
   {
     "id": "s109",
     "type": "character",
-    "narration": "Economists even have a word for the force behind it. Homevoters — people who, above all else, vote to protect the value of their home.",
+    "narration": "Nobody knows if the last verse lands the same way. But 1973 whispers one warning: when everyone agrees the price doesn't matter — the price is about to matter a lot.",
     "pose": "explain",
     "props": [
       {
-        "name": "crowd",
-        "label": "homevoters"
+        "name": "gauge",
+        "label": "price matters"
       },
       {
-        "name": "house",
-        "label": "…protect the price"
+        "name": "warning",
+        "label": "…most when ignored"
       }
     ]
   },
   {
     "id": "s110",
     "type": "character",
-    "narration": "So the real fight over housing isn't left versus right. It's the people who already own versus everyone who hasn't bought in yet.",
-    "pose": "explain",
+    "narration": "If this made the past feel a little too familiar, hit subscribe — and tell me which forgotten crash you want me to dig up next.",
+    "pose": "present",
     "props": [
       {
-        "name": "house",
-        "label": "owners"
+        "name": "calendar",
+        "label": "which crash next?"
       },
       {
-        "name": "couple",
-        "label": "…everyone else"
-      },
-      {
-        "name": "scale",
-        "label": "the real divide"
+        "name": "newspaper",
+        "label": "the next deep dive"
       }
     ]
   },
   {
     "id": "s111",
     "type": "character",
-    "narration": "It doesn't have to be this way. A few countries treat housing first as shelter, and build relentlessly to keep it cheap — on purpose.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "globe",
-        "label": "other countries"
-      },
-      {
-        "name": "crane",
-        "label": "build on purpose"
-      },
-      {
-        "name": "house",
-        "label": "…shelter first"
-      }
-    ]
-  },
-  {
-    "id": "s112",
-    "type": "character",
-    "narration": "Which is why every honest fix has a loser. Build four million homes, and you dent the biggest asset most families own.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crane",
-        "label": "build millions"
-      },
-      {
-        "name": "house",
-        "label": "…prices soften"
-      },
-      {
-        "name": "warning",
-        "label": "owners lose"
-      }
-    ]
-  },
-  {
-    "id": "s113",
-    "type": "character",
-    "narration": "Cut rates to help buyers, and you just hand everyone a bigger loan — and the price floats right back up.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "cut rates"
-      },
-      {
-        "name": "mortgage",
-        "label": "bigger loan"
-      },
-      {
-        "name": "pricetag",
-        "label": "…price rises"
-      }
-    ]
-  },
-  {
-    "id": "s114",
-    "type": "callout",
-    "narration": "For the two-thirds of Americans who already own, the system isn't broken at all. It's working perfectly.",
-    "text": "It's working.",
-    "sub": "…for the people who already own",
-    "icon": "lockhouse"
-  },
-  {
-    "id": "s115",
-    "type": "character",
-    "narration": "And they vote. Which is exactly why the one thing that would help most is the thing that almost never happens.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "they vote"
-      },
-      {
-        "name": "capitol",
-        "label": "…so nothing changes"
-      }
-    ]
-  },
-  {
-    "id": "s116",
-    "type": "character",
-    "narration": "So no — you are not crazy, and you are not bad with money. The door really did move. The math really did change.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "the door moved"
-      },
-      {
-        "name": "keys",
-        "label": "…not just you"
-      }
-    ]
-  },
-  {
-    "id": "s117",
-    "type": "character",
-    "narration": "A home became the one thing we all need to live in… and the one thing we quietly decided must never be allowed to get cheaper.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "a place to live"
-      },
-      {
-        "name": "padlock",
-        "label": "…never cheaper"
-      }
-    ]
-  },
-  {
-    "id": "s118",
-    "type": "doodle",
-    "narration": "Four charts. Prices up. Rates up. Building down. The market frozen. Stack them together, and the locked door isn't a mystery anymore.",
-    "items": [
-      "chartup",
-      "percent",
-      "crane",
-      "padlock"
-    ],
-    "labels": [
-      "prices up",
-      "rates up",
-      "building down",
-      "frozen"
-    ]
-  },
-  {
-    "id": "s119",
-    "type": "character",
-    "narration": "Four charts. Prices up, rates up, building down, and the whole market frozen in place. That's the lock on the door.",
-    "pose": "point",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "prices up"
-      },
-      {
-        "name": "percent",
-        "label": "rates up"
-      },
-      {
-        "name": "crane",
-        "label": "building down"
-      },
-      {
-        "name": "padlock",
-        "label": "…frozen"
-      }
-    ]
-  },
-  {
-    "id": "s120",
-    "type": "character",
-    "narration": "And the painful part? A lot of the people with the power to fix it are the exact people the broken version quietly made rich.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "capitol",
-        "label": "the power to fix it"
-      },
-      {
-        "name": "lockhouse",
-        "label": "…made them rich"
-      }
-    ]
-  },
-  {
-    "id": "s121",
-    "type": "character",
-    "narration": "If this finally made the numbers click, hit subscribe — and tell me which impossible price you want me to pull apart next.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "which number next?"
-      },
-      {
-        "name": "house",
-        "label": "the next deep dive"
-      }
-    ]
-  },
-  {
-    "id": "s122",
-    "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "paystub",
+        "name": "newspaper",
         "label": "I do the reading"
       },
       {
-        "name": "keys",
+        "name": "coins",
         "label": "you get what matters"
       }
     ]
