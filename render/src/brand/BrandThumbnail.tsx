@@ -5,14 +5,16 @@ import { Mascot } from "../components/Mascot";
 import { Doodle } from "../components/Doodle";
 import { brand, hand } from "./brand";
 import { display } from "../fonts";
+import thumb from "../data/thumb.json";
 
-// A branded thumbnail TEMPLATE (1280×720) establishing the channel's thumbnail
-// style: bold hook, reacting mascot, a napkin holding the shocking number, and
-// the "NN" logo bug. Swap the hook text / number per video.
-export const BrandThumbnail: React.FC<{ hookTop?: string; hookBot?: string; napkinNumber?: string }> = ({
-  hookTop = "EVERY COUNTRY",
-  hookBot = "IS BROKE",
-  napkinNumber = "$100T",
+// A branded thumbnail (1280×720): bold hook, reacting mascot, a napkin holding
+// the shocking number, and the "NN" logo bug. Defaults come from thumb.json
+// (written per-episode), so the SAME composition themes to each video.
+export const BrandThumbnail: React.FC<{ hookTop?: string; hookBot?: string; napkinNumber?: string; napkinSub?: string }> = ({
+  hookTop = (thumb as any).hookTop ?? "EVERY COUNTRY",
+  hookBot = (thumb as any).hookBot ?? "IS BROKE",
+  napkinNumber = (thumb as any).napkinNumber ?? "$100T",
+  napkinSub = (thumb as any).napkinSub ?? "…owed to who?",
 }) => (
   <AbsoluteFill style={{ backgroundColor: brand.creamBg }}>
     {/* faint dots */}
@@ -45,13 +47,13 @@ export const BrandThumbnail: React.FC<{ hookTop?: string; hookBot?: string; napk
             <ellipse cx={170} cy={82} rx={158} ry={66} fill="none" stroke={brand.accent} strokeWidth={6} transform="rotate(-5 170 82)" strokeDasharray="1000" strokeDashoffset="80" />
           </svg>
           <div style={{ fontFamily: display, fontWeight: 900, fontSize: 104, color: brand.ink, lineHeight: 0.9 }}>{napkinNumber}</div>
-          <div style={{ fontFamily: hand, fontSize: 42, color: brand.pen, marginTop: 10 }}>…owed to who?</div>
+          <div style={{ fontFamily: hand, fontSize: 42, color: brand.pen, marginTop: 10 }}>{napkinSub}</div>
         </div>
       </Napkin>
     </div>
 
-    {/* small doodles */}
-    <div style={{ position: "absolute", right: 24, bottom: 20, transform: "rotate(-6deg)" }}><Doodle name="globe" size={120} /></div>
+    {/* small doodle (per-episode) */}
+    <div style={{ position: "absolute", right: 24, bottom: 20, transform: "rotate(-6deg)" }}><Doodle name={((thumb as any).deco ?? "globe")} size={120} /></div>
 
     {/* logo bug */}
     <div style={{ position: "absolute", left: 470, bottom: 26, display: "flex", alignItems: "center", gap: 12 }}>

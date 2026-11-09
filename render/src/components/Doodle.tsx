@@ -14,6 +14,9 @@ export type DoodleName =
   | "creditcard" | "taxform" | "hospital" | "school" | "factory"
   | "retiree" | "baby" | "handshake" | "goldbar" | "pricetag"
   | "domino" | "cheque" | "clock" | "oilbarrel" | "percent" | "bridge"
+  | "forsale" | "sold" | "keys" | "mortgage" | "apartment" | "crane"
+  | "hardhat" | "padlock" | "lockhouse" | "calculator" | "blueprint"
+  | "paystub" | "couple" | "movingbox"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -423,6 +426,141 @@ function shape(name: DoodleName): React.ReactNode {
           })}
           <RRect x={10} y={70} w={80} h={7} fill="#b88b5a" strokeWidth={2} />
           <RPath d="M10 84 q10 -5 20 0 q10 5 20 0 q10 -5 20 0 q10 5 20 0" stroke="#79b4d6" strokeWidth={2.4} fill="none" />
+        </>
+      );
+    case "forsale":
+      return (
+        <>
+          <RLine x1={28} y1={56} x2={28} y2={88} strokeWidth={3} />
+          <RLine x1={72} y1={56} x2={72} y2={88} strokeWidth={3} />
+          <RRect x={18} y={30} w={64} h={30} fill="#fff" strokeWidth={SW} />
+          <text x={50} y={43} fontSize={12} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Arial, sans-serif">FOR</text>
+          <text x={50} y={55} fontSize={12} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Arial, sans-serif">SALE</text>
+        </>
+      );
+    case "sold":
+      return (
+        <>
+          <RLine x1={28} y1={56} x2={28} y2={88} strokeWidth={3} />
+          <RLine x1={72} y1={56} x2={72} y2={88} strokeWidth={3} />
+          <RRect x={18} y={30} w={64} h={30} fill={RED} strokeWidth={SW} />
+          <text x={50} y={52} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Arial, sans-serif">SOLD</text>
+        </>
+      );
+    case "keys":
+      return (
+        <>
+          <RCircle cx={34} cy={40} d={26} fill="none" strokeWidth={5} stroke="#caa227" />
+          <RCircle cx={34} cy={40} d={10} fill="none" strokeWidth={3} stroke="#caa227" />
+          <RLine x1={44} y1={49} x2={80} y2={80} strokeWidth={6} stroke="#caa227" />
+          <RLine x1={70} y1={70} x2={66} y2={62} strokeWidth={4} stroke="#caa227" />
+          <RLine x1={80} y1={80} x2={84} y2={72} strokeWidth={4} stroke="#caa227" />
+        </>
+      );
+    case "mortgage":
+      return (
+        <>
+          <RRect x={26} y={16} w={48} h={68} fill="#fff" strokeWidth={SW} />
+          <text x={50} y={30} fontSize={8.5} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">MORTGAGE</text>
+          <RPath d="M39 48 L50 39 L61 48 Z" fill={RED} strokeWidth={1.4} />
+          <RRect x={43} y={48} w={14} h={10} fill="#fff" strokeWidth={1.4} />
+          <text x={50} y={76} fontSize={13} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">7%</text>
+        </>
+      );
+    case "apartment":
+      return (
+        <>
+          <RRect x={30} y={18} w={40} h={68} fill="#d7b58a" strokeWidth={SW} />
+          {[24, 36, 48, 60].flatMap((y) => [37, 50].map((x) => <RRect key={`${x}-${y}`} x={x} y={y} w={9} h={9} fill="#cfe6ef" strokeWidth={1.2} />))}
+          <RRect x={45} y={74} w={10} h={12} fill="#8a5a33" strokeWidth={1.4} />
+        </>
+      );
+    case "crane":
+      return (
+        <>
+          <RLine x1={40} y1={22} x2={40} y2={86} strokeWidth={4} />
+          <RLine x1={18} y1={28} x2={80} y2={28} strokeWidth={3} />
+          <RLine x1={40} y1={20} x2={22} y2={28} strokeWidth={2} />
+          <RLine x1={40} y1={20} x2={74} y2={28} strokeWidth={2} />
+          <RRect x={16} y={25} w={8} h={7} fill={INK} strokeWidth={1.4} />
+          <RLine x1={72} y1={28} x2={72} y2={46} strokeWidth={2} />
+          <RRect x={66} y={46} w={12} h={9} fill={GOLD} strokeWidth={2} />
+          <RRect x={32} y={86} w={16} h={5} fill={INK} strokeWidth={1.4} />
+        </>
+      );
+    case "hardhat":
+      return (
+        <>
+          <RPath d="M24 66 Q24 36 50 36 Q76 36 76 66 Z" fill={YELLOW} strokeWidth={SW} />
+          <RRect x={18} y={64} w={64} h={8} fill={YELLOW} strokeWidth={2} />
+          <RRect x={46} y={38} w={8} h={28} fill="#e0b400" strokeWidth={1.2} />
+        </>
+      );
+    case "padlock":
+      return (
+        <>
+          <RPath d="M36 52 L36 42 Q36 26 50 26 Q64 26 64 42 L64 52" fill="none" strokeWidth={5} />
+          <RRect x={30} y={50} w={40} h={34} fill={GOLD} strokeWidth={SW} />
+          <RCircle cx={50} cy={64} d={9} fill={INK} strokeWidth={1.2} />
+          <RRect x={48} y={66} w={4} h={9} fill={INK} strokeWidth={1} />
+        </>
+      );
+    case "lockhouse":
+      return (
+        <>
+          <RRect x={22} y={44} w={44} h={36} fill="#fff" strokeWidth={SW} />
+          <RPath d="M16 46 L44 24 L72 46 Z" fill={RED} strokeWidth={SW} />
+          <RRect x={30} y={60} w={12} h={20} fill="#bcd3e0" strokeWidth={1.4} />
+          <RPath d="M58 70 L58 63 Q58 55 67 55 Q76 55 76 63 L76 70" fill="none" strokeWidth={3.5} />
+          <RRect x={54} y={69} w={26} h={19} fill={GOLD} strokeWidth={SW} />
+          <RCircle cx={67} cy={78} d={5} fill={INK} strokeWidth={1} />
+        </>
+      );
+    case "calculator":
+      return (
+        <>
+          <RRect x={28} y={16} w={44} h={68} fill="#59707c" strokeWidth={SW} />
+          <RRect x={33} y={22} w={34} h={15} fill="#cfe6ef" strokeWidth={1.4} />
+          <text x={63} y={33} fontSize={9} fontWeight={700} fill={INK} textAnchor="end" fontFamily="'Courier New', monospace">$$$</text>
+          {[44, 55, 66].flatMap((y) => [35, 46, 57].map((x) => <RRect key={`${x}-${y}`} x={x} y={y} w={8} h={7} fill="#e8e2d6" strokeWidth={1} />))}
+        </>
+      );
+    case "blueprint":
+      return (
+        <>
+          <RRect x={20} y={24} w={60} h={52} fill="#2f5597" strokeWidth={SW} />
+          {[32, 44, 56, 68].map((x) => <RLine key={`v${x}`} x1={x} y1={26} x2={x} y2={74} strokeWidth={0.5} stroke="#6f93c4" />)}
+          {[36, 48, 60].map((y) => <RLine key={`h${y}`} x1={22} y1={y} x2={78} y2={y} strokeWidth={0.5} stroke="#6f93c4" />)}
+          <RPath d="M38 64 L38 46 L50 38 L62 46 L62 64 Z" fill="none" stroke="#fff" strokeWidth={2} />
+        </>
+      );
+    case "paystub":
+      return (
+        <>
+          <RRect x={22} y={30} w={56} h={40} fill="#eaf3e8" strokeWidth={SW} />
+          <text x={30} y={43} fontSize={8} fontWeight={700} fill={INK} textAnchor="start" fontFamily="Arial, sans-serif">PAY</text>
+          <RLine x1={28} y1={48} x2={72} y2={48} strokeWidth={1.3} />
+          <text x={50} y={63} fontSize={13} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$3,200</text>
+        </>
+      );
+    case "couple":
+      return (
+        <>
+          {[38, 62].map((x, i) => (
+            <g key={x}>
+              <RCircle cx={x} cy={40} d={19} fill={["#f0cda6", "#e8c49a"][i]} strokeWidth={2} />
+              <RPath d={`M${x - 11} 86 Q${x - 11} 58 ${x} 58 Q${x + 11} 58 ${x + 11} 86`} fill={[RED, "#4a74b8"][i]} strokeWidth={2} />
+            </g>
+          ))}
+        </>
+      );
+    case "movingbox":
+      return (
+        <>
+          <RPath d="M24 46 L50 56 L76 46 L76 76 L50 86 L24 76 Z" fill={TAN} strokeWidth={SW} />
+          <RPath d="M24 46 L50 56 L76 46" fill="none" strokeWidth={1.6} />
+          <RLine x1={50} y1={56} x2={50} y2={86} strokeWidth={1.6} />
+          <RLine x1={40} y1={51} x2={60} y2={51} strokeWidth={2.4} stroke="#b58a50" />
         </>
       );
   }

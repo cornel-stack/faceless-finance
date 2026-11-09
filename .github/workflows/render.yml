@@ -9,7 +9,7 @@ on:
     inputs:
       episode:
         description: "Path to the episode JSON (its scenes[] drive the Film render)"
-        default: "episodes/examples/EP011-world-debt.json"
+        default: "episodes/examples/EP012-housing.json"
         type: string
       codec:
         description: "Video codec"
@@ -63,10 +63,14 @@ jobs:
       - name: Prepare episode (scenes are the source of truth)
         run: |
           python - "${{ inputs.episode }}" <<'PY'
-          import json, sys
+          import json, sys, os
           ep = json.load(open(sys.argv[1]))
           json.dump(ep["scenes"], open("render/src/data/scenes.json", "w"), indent=2, ensure_ascii=False)
-          print(f"scenes.json: {len(ep['scenes'])} scenes")
+          thumb = (ep.get("youtube") or {}).get("thumbnail") or {}
+          json.dump(thumb, open("render/src/data/thumb.json", "w"), indent=2, ensure_ascii=False)
+          with open(os.environ["GITHUB_ENV"], "a") as f:
+              f.write(f"EPID={ep['id']}\n")
+          print(f"scenes.json: {len(ep['scenes'])} scenes · EPID={ep['id']}")
           PY
 
       # Narrate with Edge TTS. --intro 0 keeps the audio aligned to the scenes
@@ -80,36 +84,36 @@ jobs:
       - name: Render video (Film)
         run: |
           mkdir -p render/out
-          pnpm --filter @ff/render exec remotion render Film out/EP011.mp4 --codec="${{ inputs.codec }}"
+          pnpm --filter @ff/render exec remotion render Film "out/${EPID}.mp4" --codec="${{ inputs.codec }}"
 
-      - name: Render thumbnail
-        run: pnpm --filter @ff/render exec remotion still Thumbnail out/thumbnail.png
+      - name: Render branded thumbnail
+        run: pnpm --filter @ff/render exec remotion still BrandThumbnail out/thumbnail.png
 
       - name: Build YouTube package (title, description, chapters, tags)
-        run: python tools/build_youtube.py
+        run: python tools/build_youtube.py --episode "${{ inputs.episode }}"
 
       - name: Assemble upload bundle
         run: |
           mkdir -p upload/youtube
-          cp render/out/EP011.mp4 upload/
+          cp "render/out/${EPID}.mp4" upload/
           cp render/out/thumbnail.png upload/youtube/
-          cp -r episodes/EP011/youtube/* upload/youtube/ 2>/dev/null || true
+          cp -r "episodes/${EPID}/youtube/"* upload/youtube/ 2>/dev/null || true
 
       - name: Upload video + YouTube package
         id: upload
         uses: actions/upload-artifact@v4
         with:
-          name: "EP011-${{ github.run_number }}"
+          name: "${{ env.EPID }}-${{ github.run_number }}"
           path: upload/
           retention-days: 14
 
       - name: Print download link
         run: |
           {
-            echo "### ✅ Render complete"
+            echo "### ✅ Render complete — ${EPID}"
             echo ""
             echo "**Download:** ${{ steps.upload.outputs.artifact-url }}"
             echo ""
-            echo "Unzip, then upload \`EP011.mp4\` to YouTube and use the files in \`youtube/\`"
+            echo "Unzip, then upload \`${EPID}.mp4\` to YouTube and use the files in \`youtube/\`"
             echo "(thumbnail.png, title.txt, description.md, chapters.txt, tags.txt)."
           } >> "$GITHUB_STEP_SUMMARY"
