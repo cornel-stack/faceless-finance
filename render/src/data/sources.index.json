@@ -1,284 +1,185 @@
 {
-  "wiki-nifty": {
-    "id": "wiki-nifty",
-    "image": "sources/wiki-nifty.png",
+  "wiki-enron": {
+    "id": "wiki-enron",
+    "image": "sources/wiki-enron.png",
     "width": 1280,
     "height": 900,
     "quoteRect": {
-      "x": 0.0796875,
-      "y": 0.13609375,
-      "w": 0.04559326171875,
+      "x": 0.20625,
+      "y": 0.5637673611111111,
+      "w": 0.29866943359375,
+      "h": 0.04777777777777778
+    },
+    "words": [
+      {
+        "x": 0.47783203125,
+        "y": 0.5637673611111111,
+        "w": 0.02708740234375,
+        "h": 0.01888888888888889
+      },
+      {
+        "x": 0.20625,
+        "y": 0.59265625,
+        "w": 0.056982421875,
+        "h": 0.01888888888888889
+      }
+    ],
+    "quote": "most innovative",
+    "url": "https://en.wikipedia.org/wiki/Enron",
+    "found": true
+  },
+  "wiki-mtm": {
+    "id": "wiki-mtm",
+    "image": "sources/wiki-mtm.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.046875,
+      "y": 0.34053819444444444,
+      "w": 0.0741455078125,
       "h": 0.017777777777777778
     },
     "words": [
       {
-        "x": 0.0796875,
-        "y": 0.13609375,
-        "w": 0.02188720703125,
-        "h": 0.017777777777777778
-      },
-      {
-        "x": 0.10460205078125,
-        "y": 0.13609375,
-        "w": 0.0206787109375,
+        "x": 0.046875,
+        "y": 0.34053819444444444,
+        "w": 0.0741455078125,
         "h": 0.017777777777777778
       }
     ],
-    "quote": "Nifty Fifty",
-    "url": "https://en.wikipedia.org/wiki/Nifty_Fifty",
+    "quote": "mark-to-market",
+    "url": "https://en.wikipedia.org/wiki/Mark-to-market_accounting",
     "found": true
   },
-  "fred-sp500": {
-    "id": "fred-sp500",
-    "image": "sources/fred-sp500.png",
-    "width": 1280,
-    "height": 900,
-    "quoteRect": {
-      "x": 0.0921875,
-      "y": 0.25109375,
-      "w": 0.06953125,
-      "h": 0.03111111111111111
-    },
-    "words": [
-      {
-        "x": 0.0921875,
-        "y": 0.25109375,
-        "w": 0.034375,
-        "h": 0.03111111111111111
-      },
-      {
-        "x": 0.13125,
-        "y": 0.25109375,
-        "w": 0.03046875,
-        "h": 0.03111111111111111
-      }
-    ],
-    "quote": "S&P 500",
-    "url": "https://fred.stlouisfed.org/series/SP500",
-    "found": true
-  },
-  "wiki-oil73": {
-    "id": "wiki-oil73",
-    "image": "sources/wiki-oil73.png",
-    "width": 1280,
-    "height": 900,
-    "quoteRect": {
-      "x": 0,
-      "y": 0,
-      "w": 0,
-      "h": 0
-    },
-    "words": [],
-    "quote": "embargo",
-    "url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
-    "found": true
-  },
-  "fred-cpi": {
-    "id": "fred-cpi",
-    "image": "sources/fred-cpi.png",
-    "width": 1280,
-    "height": 900,
-    "quoteRect": {
-      "x": 0.26640625,
-      "y": 0.19109375,
-      "w": 0.11953125,
-      "h": 0.021111111111111112
-    },
-    "words": [
-      {
-        "x": 0.26640625,
-        "y": 0.19109375,
-        "w": 0.05625,
-        "h": 0.021111111111111112
-      },
-      {
-        "x": 0.32578125,
-        "y": 0.19109375,
-        "w": 0.02734375,
-        "h": 0.021111111111111112
-      },
-      {
-        "x": 0.35625,
-        "y": 0.19109375,
-        "w": 0.0296875,
-        "h": 0.021111111111111112
-      }
-    ],
-    "quote": "Consumer Price Index",
-    "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
-    "found": true
-  },
-  "fred-fedfunds": {
-    "id": "fred-fedfunds",
-    "image": "sources/fred-fedfunds.png",
-    "width": 1280,
-    "height": 900,
-    "quoteRect": {
-      "x": 0.0921875,
-      "y": 0.25109375,
-      "w": 0.23984375,
-      "h": 0.03111111111111111
-    },
-    "words": [
-      {
-        "x": 0.0921875,
-        "y": 0.25109375,
-        "w": 0.0625,
-        "h": 0.03111111111111111
-      },
-      {
-        "x": 0.159375,
-        "y": 0.25109375,
-        "w": 0.05078125,
-        "h": 0.03111111111111111
-      },
-      {
-        "x": 0.21484375,
-        "y": 0.25109375,
-        "w": 0.07421875,
-        "h": 0.03111111111111111
-      },
-      {
-        "x": 0.29375,
-        "y": 0.25109375,
-        "w": 0.03828125,
-        "h": 0.03111111111111111
-      }
-    ],
-    "quote": "Federal Funds Effective Rate",
-    "url": "https://fred.stlouisfed.org/series/FEDFUNDS",
-    "found": true
-  },
-  "wiki-stagflation": {
-    "id": "wiki-stagflation",
-    "image": "sources/wiki-stagflation.png",
-    "width": 1280,
-    "height": 900,
-    "quoteRect": {
-      "x": 0,
-      "y": 0,
-      "w": 0,
-      "h": 0
-    },
-    "words": [],
-    "quote": "stagflation",
-    "url": "https://en.wikipedia.org/wiki/Stagflation",
-    "found": true
-  },
-  "multpl-cape": {
-    "id": "multpl-cape",
-    "image": "sources/multpl-cape.png",
-    "width": 1280,
-    "height": 900,
-    "quoteRect": {
-      "x": 0.22601318359375,
-      "y": 0.02,
-      "w": 0.03515625,
-      "h": 0.015555555555555555
-    },
-    "words": [
-      {
-        "x": 0.22601318359375,
-        "y": 0.02,
-        "w": 0.0234375,
-        "h": 0.015555555555555555
-      },
-      {
-        "x": 0.25179443359375,
-        "y": 0.02,
-        "w": 0.009375,
-        "h": 0.015555555555555555
-      }
-    ],
-    "quote": "Shiller PE",
-    "url": "https://www.multpl.com/shiller-pe",
-    "found": true
-  },
-  "wiki-crash73": {
-    "id": "wiki-crash73",
-    "image": "sources/wiki-crash73.png",
-    "width": 1280,
-    "height": 900,
-    "quoteRect": {
-      "x": 0.46893310546875,
-      "y": 0.23710069444444445,
-      "w": 0.06669921875,
-      "h": 0.01888888888888889
-    },
-    "words": [
-      {
-        "x": 0.46893310546875,
-        "y": 0.23710069444444445,
-        "w": 0.0250244140625,
-        "h": 0.01888888888888889
-      },
-      {
-        "x": 0.49742431640625,
-        "y": 0.23710069444444445,
-        "w": 0.0382080078125,
-        "h": 0.01888888888888889
-      }
-    ],
-    "quote": "bear market",
-    "url": "https://en.wikipedia.org/wiki/1973%E2%80%931974_stock_market_crash",
-    "found": true
-  },
-  "wiki-cape": {
-    "id": "wiki-cape",
-    "image": "sources/wiki-cape.png",
+  "wiki-spe": {
+    "id": "wiki-spe",
+    "image": "sources/wiki-spe.png",
     "width": 1280,
     "height": 900,
     "quoteRect": {
       "x": 0.20625,
       "y": 0.10338541666666666,
-      "w": 0.1730712890625,
+      "w": 0.1449462890625,
       "h": 0.035555555555555556
     },
     "words": [
       {
         "x": 0.20625,
         "y": 0.10338541666666666,
-        "w": 0.09246826171875,
-        "h": 0.035555555555555556
-      },
-      {
-        "x": 0.30433349609375,
-        "y": 0.10338541666666666,
-        "w": 0.07498779296875,
+        "w": 0.1449462890625,
         "h": 0.035555555555555556
       }
     ],
-    "quote": "cyclically adjusted",
-    "url": "https://en.wikipedia.org/wiki/Cyclically_adjusted_price-to-earnings_ratio",
+    "quote": "special-purpose",
+    "url": "https://en.wikipedia.org/wiki/Special-purpose_entity",
     "found": true
   },
-  "wiki-magseven": {
-    "id": "wiki-magseven",
-    "image": "sources/wiki-magseven.png",
+  "wiki-andersen": {
+    "id": "wiki-andersen",
+    "image": "sources/wiki-andersen.png",
     "width": 1280,
     "height": 900,
     "quoteRect": {
-      "x": 0.05625,
-      "y": 0.2605381944444444,
-      "w": 0.089990234375,
+      "x": 0.6106689453125,
+      "y": 0.40368055555555554,
+      "w": 0.0549072265625,
+      "h": 0.01888888888888889
+    },
+    "words": [
+      {
+        "x": 0.6106689453125,
+        "y": 0.40368055555555554,
+        "w": 0.0549072265625,
+        "h": 0.01888888888888889
+      }
+    ],
+    "quote": "shredding",
+    "url": "https://en.wikipedia.org/wiki/Arthur_Andersen",
+    "found": true
+  },
+  "wiki-watkins": {
+    "id": "wiki-watkins",
+    "image": "sources/wiki-watkins.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.2826904296875,
+      "y": 0.10338541666666666,
+      "w": 0.07318115234375,
+      "h": 0.035555555555555556
+    },
+    "words": [
+      {
+        "x": 0.2826904296875,
+        "y": 0.10338541666666666,
+        "w": 0.07318115234375,
+        "h": 0.035555555555555556
+      }
+    ],
+    "quote": "Watkins",
+    "url": "https://en.wikipedia.org/wiki/Sherron_Watkins",
+    "found": true
+  },
+  "wiki-scandal": {
+    "id": "wiki-scandal",
+    "image": "sources/wiki-scandal.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "words": [],
+    "quote": "mark-to-market",
+    "url": "https://en.wikipedia.org/wiki/Enron_scandal",
+    "found": true
+  },
+  "wiki-skilling": {
+    "id": "wiki-skilling",
+    "image": "sources/wiki-skilling.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.27391357421875,
+      "y": 0.10338541666666666,
+      "w": 0.07127685546875,
+      "h": 0.035555555555555556
+    },
+    "words": [
+      {
+        "x": 0.27391357421875,
+        "y": 0.10338541666666666,
+        "w": 0.07127685546875,
+        "h": 0.035555555555555556
+      }
+    ],
+    "quote": "Skilling",
+    "url": "https://en.wikipedia.org/wiki/Jeffrey_Skilling",
+    "found": true
+  },
+  "wiki-sox": {
+    "id": "wiki-sox",
+    "image": "sources/wiki-sox.png",
+    "width": 1280,
+    "height": 900,
+    "quoteRect": {
+      "x": 0.10037841796875,
+      "y": 0.21609375,
+      "w": 0.046826171875,
       "h": 0.017777777777777778
     },
     "words": [
       {
-        "x": 0.05625,
-        "y": 0.2605381944444444,
-        "w": 0.0559326171875,
-        "h": 0.017777777777777778
-      },
-      {
-        "x": 0.1152099609375,
-        "y": 0.2605381944444444,
-        "w": 0.0310302734375,
+        "x": 0.10037841796875,
+        "y": 0.21609375,
+        "w": 0.046826171875,
         "h": 0.017777777777777778
       }
     ],
-    "quote": "Magnificent Seven",
-    "url": "https://en.wikipedia.org/wiki/Magnificent_Seven_(stocks)",
+    "quote": "Sarbanes",
+    "url": "https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act",
     "found": true
   }
 }

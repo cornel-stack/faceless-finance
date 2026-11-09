@@ -18,6 +18,8 @@ export type DoodleName =
   | "hardhat" | "padlock" | "lockhouse" | "calculator" | "blueprint"
   | "paystub" | "couple" | "movingbox"
   | "gaspump" | "ticker" | "gauge" | "bubble" | "calendar"
+  | "crookedE" | "shredder" | "houseofcards" | "shellbox" | "handcuffs"
+  | "magichat" | "trophy" | "prison"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -612,6 +614,85 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={35} y1={20} x2={35} y2={32} strokeWidth={3} />
           <RLine x1={65} y1={20} x2={65} y2={32} strokeWidth={3} />
           {[48, 60, 72].flatMap((y) => [32, 44, 56, 68].map((x) => <RCircle key={`${x}-${y}`} cx={x} cy={y} d={3} fill={INK} strokeWidth={0} />))}
+        </>
+      );
+    case "crookedE":
+      return (
+        <g transform="rotate(-11 50 52)">
+          <RRect x={33} y={28} w={10} h={48} fill={INK} strokeWidth={2} />
+          <RRect x={33} y={28} w={34} h={10} fill={GREEN} strokeWidth={2} />
+          <RRect x={33} y={46} w={27} h={10} fill={RED} strokeWidth={2} />
+          <RRect x={33} y={64} w={34} h={10} fill="#2f5597" strokeWidth={2} />
+        </g>
+      );
+    case "shredder":
+      return (
+        <>
+          <RRect x={38} y={20} w={24} h={22} fill="#fff" strokeWidth={1.8} />
+          <RLine x1={43} y1={27} x2={57} y2={27} strokeWidth={1.2} /><RLine x1={43} y1={32} x2={57} y2={32} strokeWidth={1.2} />
+          <RRect x={24} y={42} w={52} h={20} fill="#59707c" strokeWidth={SW} />
+          <RRect x={30} y={46} w={40} h={3} fill={INK} strokeWidth={0} />
+          {[32, 40, 48, 56, 64].map((x) => <RLine key={x} x1={x} y1={62} x2={x - 2} y2={82} strokeWidth={1.6} />)}
+        </>
+      );
+    case "houseofcards":
+      return (
+        <>
+          <RPath d="M28 80 L39 52 L50 80 Z" fill="#fff" strokeWidth={SW} />
+          <RPath d="M50 80 L61 52 L72 80 Z" fill="#fff" strokeWidth={SW} />
+          <RRect x={40} y={49} w={20} h={4} fill="#fff" strokeWidth={1.6} />
+          <g transform="rotate(34 70 36)"><RRect x={64} y={28} w={6} h={16} fill="#fff" strokeWidth={1.4} /></g>
+          <text x={39} y={72} fontSize={9} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">♥</text>
+          <text x={61} y={72} fontSize={9} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">♠</text>
+        </>
+      );
+    case "shellbox":
+      return (
+        <>
+          <RPath d="M26 42 L50 50 L74 42 L74 72 L50 82 L26 72 Z" fill="#efe9db" strokeWidth={SW} />
+          <RPath d="M26 42 L50 50 L74 42" fill="none" strokeWidth={1.6} />
+          <RLine x1={50} y1={50} x2={50} y2={82} strokeWidth={1.4} />
+          <text x={50} y={70} fontSize={12} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">LJM</text>
+        </>
+      );
+    case "handcuffs":
+      return (
+        <>
+          <RCircle cx={33} cy={56} d={32} fill="none" strokeWidth={6} stroke="#8a929a" />
+          <RCircle cx={67} cy={56} d={32} fill="none" strokeWidth={6} stroke="#8a929a" />
+          <RLine x1={46} y1={56} x2={54} y2={56} strokeWidth={6} stroke="#8a929a" />
+          <RCircle cx={33} cy={56} d={9} fill="none" strokeWidth={2} stroke="#8a929a" />
+          <RCircle cx={67} cy={56} d={9} fill="none" strokeWidth={2} stroke="#8a929a" />
+        </>
+      );
+    case "magichat":
+      return (
+        <>
+          <text x={50} y={26} fontSize={18} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <RPath d="M40 18 L42 24 M60 18 L58 24 M50 14 L50 20" stroke={GOLD} strokeWidth={2} />
+          <REllipse cx={50} cy={78} w={54} h={12} fill={INK} strokeWidth={SW} />
+          <RRect x={36} y={42} w={28} h={34} fill={INK} strokeWidth={SW} />
+          <RRect x={34} y={70} w={32} h={7} fill={RED} strokeWidth={2} />
+        </>
+      );
+    case "trophy":
+      return (
+        <>
+          <RPath d="M38 28 L62 28 L60 48 Q50 57 40 48 Z" fill={GOLD} strokeWidth={SW} />
+          <RPath d="M38 32 Q28 34 32 44" stroke={GOLD} strokeWidth={3} fill="none" />
+          <RPath d="M62 32 Q72 34 68 44" stroke={GOLD} strokeWidth={3} fill="none" />
+          <RRect x={45} y={56} w={10} h={9} fill={GOLD} strokeWidth={2} />
+          <RRect x={37} y={64} w={26} h={7} fill={GOLD} strokeWidth={SW} />
+          <text x={50} y={44} fontSize={11} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">#1</text>
+        </>
+      );
+    case "prison":
+      return (
+        <>
+          <RRect x={24} y={28} w={52} h={50} fill="#dfe3e6" strokeWidth={SW} />
+          {[34, 44, 54, 66].map((x) => <RLine key={x} x1={x} y1={30} x2={x} y2={76} strokeWidth={4} />)}
+          <RLine x1={26} y1={30} x2={74} y2={30} strokeWidth={4} />
+          <RLine x1={26} y1={76} x2={74} y2={76} strokeWidth={4} />
         </>
       );
   }
