@@ -1,5 +1,5 @@
 import React from "react";
-import { Img, staticFile, useCurrentFrame, useVideoConfig, interpolate, spring } from "remotion";
+import { Img, staticFile, useCurrentFrame, useVideoConfig, interpolate, spring, Easing } from "remotion";
 import { theme } from "../theme";
 import { sans } from "../fonts";
 
@@ -29,6 +29,20 @@ export const ScreenshotSource: React.FC<{
   const hasWords = Array.isArray(words) && words.length > 0;
   const START = 8, PER = 10; // frames before the first word, then per word (~0.33s)
   const wipe = interpolate(frame, [10, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+  // Ken-Burns scroll + zoom: start showing the top of the page, then pan down to
+  // the quoted region and zoom in as it's read — the evidence feels alive, not static.
+  const vpH = Math.min(imgH, Math.round(imgW * 0.60));
+  const q = quoteRect ?? { x: 0.5, y: 0.5, w: 0.2, h: 0.03 };
+  const qcx = q.x + q.w / 2, qcy = q.y + q.h / 2;
+  const Zend = quoteRect ? 1.62 : 1.14;
+  const clampN = (v: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, v));
+  const txEnd = clampN(imgW / 2 - qcx * imgW * Zend, imgW - imgW * Zend, 0);
+  const tyEnd = clampN(vpH / 2 - qcy * imgH * Zend, vpH - imgH * Zend, 0);
+  const fp = interpolate(frame, [12, 80], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const kbZ = interpolate(fp, [0, 1], [1, Zend]);
+  const kbX = interpolate(fp, [0, 1], [0, txEnd]);
+  const kbY = interpolate(fp, [0, 1], [0, tyEnd]);
 
   let domain = url;
   try { domain = new URL(url).hostname.replace(/^www\./, ""); } catch {}
@@ -62,8 +76,9 @@ export const ScreenshotSource: React.FC<{
         </div>
       </div>
 
-      {/* screenshot + highlight overlay */}
-      <div style={{ position: "relative", width: imgW, height: imgH }}>
+      {/* screenshot viewport — pans + zooms to the quote */}
+      <div style={{ position: "relative", width: imgW, height: vpH, overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: 0, left: 0, width: imgW, height: imgH, transform: `translate(${kbX}px, ${kbY}px) scale(${kbZ})`, transformOrigin: "0 0" }}>
         <Img src={staticFile(image)} style={{ width: imgW, height: imgH, display: "block" }} />
         {hasWords
           ? words!.map((w, i) => {
@@ -132,6 +147,7 @@ export const ScreenshotSource: React.FC<{
               />
             </>
           )}
+      </div>
       </div>
     </div>
   );

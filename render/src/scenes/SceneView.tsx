@@ -167,7 +167,7 @@ const Screenshot: React.FC<{ scene: ScreenshotScene; sources?: Record<string, So
       {scene.caption && (
         <div style={{ fontFamily: display, fontWeight: 900, fontSize: 50, color: theme.ink, textAlign: "center", maxWidth: 1500 }}>{scene.caption}</div>
       )}
-      <div style={{ transform: `scale(${zoom})` }}>
+      <div>
         <ScreenshotSource image={entry.image} naturalW={entry.width} naturalH={entry.height} url={entry.url} quoteRect={entry.quoteRect} words={entry.words} width={w} />
       </div>
       {scene.reaction && (
