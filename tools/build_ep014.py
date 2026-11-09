@@ -30,11 +30,19 @@ def title(id, narr, heading, kicker=None, sub=None):
     S.append(d)
 
 def obj(id, narr, items, labels=None, flow=False, caption=None):
-    """Full-frame object metaphor(s)."""
-    d = {"id": id, "type": "doodle", "narration": narr, "items": items}
-    if labels: d["labels"] = labels
-    if flow: d["flow"] = True
+    """Big full-frame metaphor doodle(s) — NO arrows (that was the over-used device)."""
+    cap = caption or (" · ".join(labels) if labels else None)
+    d = {"id": id, "type": "stage", "narration": narr, "icons": items}
+    if cap: d["caption"] = cap
+    S.append(d)
+
+def stage(id, narr, motif, caption=None, kicker=None, stampText=None, accent=False):
+    """A full-frame ANIMATED metaphor (collapse/drain/vanish/dominoes/crash/stamp)."""
+    d = {"id": id, "type": "stage", "narration": narr, "motif": motif}
     if caption: d["caption"] = caption
+    if kicker: d["kicker"] = kicker
+    if stampText: d["stampText"] = stampText
+    if accent: d["accent"] = True
     S.append(d)
 
 def compare(id, narr, lt, lv, rt, rv, licon=None, ricon=None):
@@ -119,7 +127,7 @@ diagram("s22f", "That's the whole con of trick one. The profit is loud and immed
     ("profit", "profit: booked NOW", "magichat", 0.22, 0.4), ("loss", "loss: years later", "chartdown", 0.78, 0.4),
     ("paid", "…bonuses already paid", "coins", 0.5, 0.82)], [("profit", "paid"), ("loss", "paid")], title="Heads I win, tails… later")
 callout("s22g", "By 2001, Enron reported a hundred billion dollars in revenue. One of the biggest companies alive — on paper.", "$100 billion", sub="Enron's reported revenue", icon="crookedE")
-obj("s22h", "But cash — real, spendable cash — kept not showing up. A company earning billions on paper was somehow always short of money.", ["magichat", "warning"], ["billions 'earned'", "…but no cash"], flow=True)
+stage("s22h", "But cash — real, spendable cash — kept not showing up. A company earning billions on paper was somehow always draining money.", "vaultdrain", caption="billions 'earned'… but no cash")
 obj("s22i", "Which raised an obvious, dangerous question. If you're so profitable, why do you keep needing to borrow?", ["chartup", "iou"], ["'so profitable!'", "…so why borrow?"], flow=True)
 
 # ============================ ACT 3 — TRICK 2: HIDING THE DEBT ============================
@@ -150,7 +158,7 @@ diagram("s32", "But every shell was propped up by one thing: Enron's own stock. 
     ("stock", "stock HIGH", "chartup", 0.5, 0.12), ("shells", "shells hold", "shellbox", 0.84, 0.5),
     ("hide", "debt hidden", "magichat", 0.5, 0.88), ("profit", "profits reported", "newspaper", 0.16, 0.5)],
     [("stock", "shells"), ("shells", "hide"), ("hide", "profit"), ("profit", "stock")], title="The loop")
-obj("s33", "Round and round. It looked like a money machine. It was a house of cards.", ["refinance", "houseofcards"], ["the loop", "…a house of cards"], flow=True)
+stage("s33", "Round and round. It looked like a money machine. But it was a house of cards.", "housecollapse", caption="…a house of cards", accent=True)
 obj("s34", "And it all depended on one thing never happening. The stock could never, ever fall.", ["crookedE", "warning"], ["the stock", "…can never drop"])
 shot("s35", "Someone was supposed to catch this. The auditor — Arthur Andersen, one of the five biggest accounting firms on Earth.", "wiki-andersen")
 callout("s36", "Enron paid Andersen around a million dollars a week. For that price, the books always looked fine.", "$1M / week", sub="what Enron paid its auditor", icon="coins")
@@ -175,13 +183,14 @@ image("s41", "And inside the company, one executive had already seen it coming. 
 shot("s42", "She warned chairman Ken Lay that Enron might implode in a wave of accounting scandals. She was right.", "wiki-watkins")
 callout("s43", "In October 2001, Enron admitted it had overstated profits by hundreds of millions — and hidden a mountain of debt.", "$600 million", sub="in \"profit\" that wasn't real", icon="magichat")
 timeline("s44", "From here, the fall took just weeks.", "The collapse of 2001", [("Aug", "Skilling quits", "handcuffs"), ("Oct", "profits restated, SEC probe", "warning"), ("Nov", "rescue deal collapses", "chartdown"), ("Dec 2", "largest bankruptcy ever", "crookedE")], highlight=3)
-callout("s45", "The stock went from ninety dollars to under one dollar in a matter of weeks.", "$90 → $0.26", sub="Enron's stock, 2001", icon="chartdown")
+stage("s44b", "The stock went from ninety dollars to under one dollar in a matter of weeks.", "crash", caption="$90 → $0.26", accent=True)
+callout("s45", "Ninety dollars. To twenty-six cents. In weeks.", "$90 → $0.26", sub="Enron's stock, 2001", icon="chartdown")
 obj("s46", "And as the walls closed in, Arthur Andersen did something unforgivable. It started shredding.", ["shredder"], ["the auditor shreds the evidence"])
 obj("s46b", "The real trigger was boring and technical. Enron's credit rating got cut to junk — forcing billions of the hidden debt suddenly due.", ["chartdown", "iou"], ["cut to junk", "…hidden debt now DUE"], flow=True)
 shot("s46c", "A rival, Dynegy, offered to buy Enron and save it — then opened the books and ran.", "wiki-dynegy")
 obj("s46d", "Because once you read the fine print, there was nothing to buy. Just debt wearing a company costume.", ["iou", "crookedE"], ["just debt", "…in a costume"], flow=True)
 obj("s46e", "When the truth finally leaked, it didn't trickle. It poured. Each disclosure forced the next.", ["chartdown", "shellbox"], ["the dam breaks", "…one lie, then ten"], flow=True)
-callout("s46f", "A company that took sixteen years to build unraveled in about sixteen days.", "16 years → 16 days", sub="built slowly, collapsed overnight", icon="houseofcards")
+stage("s46f", "A company that took sixteen years to build unraveled in about sixteen days. One domino, then all of them.", "dominoes", caption="16 years to build… 16 days to fall")
 shot("s47", "Andersen was convicted of obstruction. A firm with eighty-five thousand employees worldwide — gone.", "wiki-scandal")
 
 # ============================ ACT 6 — WHO PAID, WHO WALKED ============================
@@ -198,6 +207,7 @@ obj("s52d", "And remember California? Ordinary families paid higher power bills 
 image("s52e", "Justice came, slowly. The whistleblower, Sherron Watkins, became the face of doing the right thing.", "img/watkins.jpg", caption="Sherron Watkins — she told the truth", label="THE TRUTH")
 obj("s52f", "And eighty-five thousand people at Arthur Andersen — most of whom did nothing wrong — lost their jobs when the firm collapsed too.", ["officetower", "crowd"], ["Andersen", "…85,000 jobs gone"], flow=True)
 obj("s52g", "The fraud didn't just erase a company. It erased two — and took a whole profession's trust down with it.", ["crookedE", "scale"], ["two firms gone", "…and all the trust"], flow=True)
+stage("s54b", "After the biggest corporate fraud America had ever seen, the verdict was blunt.", "stamp", stampText="FRAUD")
 shot("s55", "The scandal was so severe it rewrote the law — the Sarbanes-Oxley Act, passed to stop the next Enron.", "wiki-sox")
 obj("s55b", "There's a famous name for the whole saga: 'The Smartest Guys in the Room.' And that's what makes it scary.", ["officetower", "warning"], ["'the smartest guys…'", "…built the fraud"], flow=True)
 ch("s55c", "Smart people didn't prevent this fraud. Smart people built it. Brilliance pointed at deception is still deception.", pose="explain", variant="villain", props=[("shredder", "the smart ones"), ("warning", "…deceiving")])
@@ -222,9 +232,16 @@ diagram("s61d", "So here's your Enron test. If you can't draw how the money is m
 ch("s62", "A real business can be explained on a napkin. Enron needed a maze of three thousand shells. That was the tell.", pose="explain", props=[("paystub", "napkin-simple?"), ("shellbox", "…or a maze of 3,000?")])
 obj("s63", "The magic trick was never making money appear. It was making you stop asking where it came from.", ["magichat", "bubble"], ["the real trick", "…stop asking"], flow=True)
 obj("s63b", "The numbers on a screen can lie. What those lies cost — the pensions, the jobs, the trust — is always painfully real.", ["ticker", "scale"], ["numbers can lie", "…the cost is real"], flow=True)
+stage("s63c", "So where did the seventy billion go? Nowhere. Watch closely…", "vanish", caption="…it was never there", accent=True)
 callout("s64", "Enron didn't lose seventy billion dollars. It proved seventy billion was never really there to begin with.", "$0", sub="where the money actually was", icon="magichat")
 ch("s65", "If this made the smartest guys in the room look a little less smart, hit subscribe — and tell me which collapse to pull apart next.", pose="present", props=[("crookedE", "which fraud next?"), ("newspaper", "the next deep dive")])
 ch("s66", "I do the reading. You get the parts that matter.", pose="celebrate", expr="happy", props=[("newspaper", "I do the reading"), ("coins", "you get what matters")])
+
+# Shorten the mascot: keep character beats to a single prop so they're quick
+# reactions, not long presenter shots (demotes the stickman's screen time further).
+for s in S:
+    if s["type"] == "character" and s.get("props"):
+        s["props"] = s["props"][:1]
 
 # renumber
 for i, s in enumerate(S, 1):

@@ -74,6 +74,19 @@ export interface ImageScene extends Base {
   mug?: boolean;        // tint/stamp style for a mugshot
 }
 
+// A full-frame METAPHOR stage — one big animated motif (collapse, drain, vanish,
+// dominoes, crash, stamp…) or one/two large doodles, with a bold caption. No
+// arrows. This is the default "picture of the idea" device.
+export interface StageScene extends Base {
+  type: "stage";
+  motif?: "housecollapse" | "vaultdrain" | "vanish" | "dominoes" | "crash" | "stamp" | "spotlight" | "shell" | "mask" | "inflate";
+  icons?: DoodleName[];   // big centered doodle(s) when no motif
+  caption?: string;
+  kicker?: string;        // small line above
+  stampText?: string;     // for motif "stamp"
+  accent?: boolean;       // tint the caption red
+}
+
 // A box-and-arrow diagram built step by step (the Casual Finance staple):
 // labelled nodes appear in order, arrows wire them up, some get crossed out.
 export interface DiagramScene extends Base {
@@ -104,4 +117,4 @@ export interface CompareScene extends Base {
 export type Scene =
   | TitleScene | CharacterScene | CalloutScene | ScreenshotScene
   | ChartScene | DoodleScene | ChalkboardScene | CompareScene | TimelineScene
-  | ImageScene | DiagramScene;
+  | ImageScene | DiagramScene | StageScene;

@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile, Easing } from "remotion";
 import { theme, money } from "../theme";
 import { display, sans } from "../fonts";
 import { Mascot } from "../components/Mascot";
@@ -12,7 +12,7 @@ import type { SourceEntry } from "../SourceCardDemo";
 import type {
   Scene, TitleScene, CharacterScene, CalloutScene, ScreenshotScene,
   ChartScene, DoodleScene, ChalkboardScene, CompareScene, TimelineScene,
-  ImageScene, DiagramScene,
+  ImageScene, DiagramScene, StageScene,
 } from "./types";
 
 const EASE = { damping: 200 } as const;
@@ -465,6 +465,131 @@ const DiagramScene_: React.FC<{ scene: DiagramScene }> = ({ scene }) => {
   );
 };
 
+// A full-frame animated METAPHOR. Big, bold, no arrows — a picture of the idea.
+const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const VW = 980, VH = 520;
+  const ink = theme.ink, gold = "#e8b73a", red = theme.accent, green = "#1f7a3d";
+  const m = scene.motif;
+  let art: React.ReactNode = null;
+
+  if (m === "housecollapse") {
+    const tents: [number, number, number][] = [[250, 430, 0], [490, 430, 0], [730, 430, 0], [370, 300, 1], [610, 300, 1], [490, 170, 2]];
+    const start = fps * 1.9;
+    art = (
+      <svg width={VW} height={VH}>
+        {tents.map(([cx, by, row], i) => {
+          const appear = spring({ frame, fps, delay: (2 - row) * 9 + i * 2, config: { damping: 12 } });
+          const p = Math.max(0, Math.min(1, (frame - start) / (fps * 1.0)));
+          const rot = p * (26 + row * 12) * (i % 2 ? 1 : -1);
+          const dy = p * p * (380 - by * 0.5);
+          return (
+            <g key={i} transform={`translate(${cx} ${by + dy}) rotate(${rot})`} opacity={Math.min(1, appear) * (1 - p * 0.3)}>
+              <path d="M -72 0 L 0 -112 L 72 0" fill="none" stroke={ink} strokeWidth={7} strokeLinecap="round" />
+              <path d="M -48 -38 L 48 -38" stroke={ink} strokeWidth={6} strokeLinecap="round" />
+            </g>
+          );
+        })}
+      </svg>
+    );
+  } else if (m === "vaultdrain") {
+    const vx = VW / 2, vy = 170;
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={vx - 150} y={vy} width={300} height={210} rx={14} fill="#59707c" stroke={ink} strokeWidth={6} />
+        <circle cx={vx} cy={vy + 95} r={46} fill="none" stroke="#cfd8dc" strokeWidth={8} />
+        <circle cx={vx} cy={vy + 95} r={10} fill="#cfd8dc" />
+        {[0, 1, 2, 3].map((k) => <line key={k} x1={vx} y1={vy + 95} x2={vx + 46 * Math.cos(k * 0.9 + frame * 0.08)} y2={vy + 95 + 46 * Math.sin(k * 0.9 + frame * 0.08)} stroke="#cfd8dc" strokeWidth={5} />)}
+        {Array.from({ length: 9 }, (_, i) => {
+          const cyc = ((frame * 5 + i * 34) % 230);
+          const yy = vy + 200 + cyc;
+          const xx = vx - 70 + ((i * 53) % 150) + Math.sin((frame + i * 20) * 0.15) * 10;
+          const op = interpolate(cyc, [0, 30, 180, 230], [0, 1, 1, 0]);
+          return <g key={i} opacity={op}><circle cx={xx} cy={yy} r={17} fill={gold} stroke={ink} strokeWidth={2.5} /><text x={xx} y={yy + 6} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>;
+        })}
+      </svg>
+    );
+  } else if (m === "vanish") {
+    const cx = VW / 2, cy = 250;
+    const start = fps * 1.5;
+    const stackS = frame < start ? 1 : interpolate(frame, [start, start + 10], [1, 0], { extrapolateRight: "clamp" });
+    const poof = interpolate(frame, [start, start + 16], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const q = interpolate(frame, [start + 14, start + 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${cx} ${cy}) scale(${stackS})`} opacity={stackS}>
+          {[0, 1, 2].map((k) => <g key={k}><rect x={-90} y={-30 + k * 26} width={180} height={22} rx={5} fill={green} stroke={ink} strokeWidth={3} /><text x={0} y={-13 + k * 26} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle">$$$</text></g>)}
+        </g>
+        {poof > 0 && poof < 1 && <circle cx={cx} cy={cy} r={60 + poof * 160} fill="none" stroke={gold} strokeWidth={10 * (1 - poof)} opacity={1 - poof} />}
+        {q > 0 && <text x={cx} y={cy + 30} fontSize={140} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={q}>?</text>}
+      </svg>
+    );
+  } else if (m === "dominoes") {
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={60} y1={440} x2={VW - 60} y2={440} stroke={ink} strokeWidth={5} strokeLinecap="round" />
+        {Array.from({ length: 8 }, (_, i) => {
+          const start = fps * 1.0 + i * 5;
+          const fall = interpolate(frame, [start, start + 9], [0, 82], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          const x = 120 + i * 100;
+          return <g key={i} transform={`translate(${x} 440) rotate(${fall})`}><rect x={-14} y={-110} width={28} height={110} rx={4} fill="#efe9db" stroke={ink} strokeWidth={4} /><circle cx={0} cy={-80} r={4} fill={ink} /><circle cx={0} cy={-40} r={4} fill={ink} /></g>;
+        })}
+      </svg>
+    );
+  } else if (m === "crash") {
+    const rev = interpolate(frame, [8, fps * 1.9], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
+    const path = "M 90 360 L 230 300 L 360 330 L 480 180 L 600 240 L 720 120 L 820 470 L 900 620";
+    const clipId = React.useId().replace(/:/g, "");
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={70} y1={470} x2={VW - 40} y2={470} stroke={ink} strokeWidth={5} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={8} seed={5} /></g>
+        {rev > 0.9 && <text x={760} y={430} fontSize={70} fill={red} opacity={interpolate(frame, [fps * 1.8, fps * 2.2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>💥</text>}
+      </svg>
+    );
+  } else if (m === "inflate") {
+    const start = fps * 2.0;
+    const r = frame < start ? interpolate(frame, [6, start], [10, 150], { extrapolateLeft: "clamp" }) : 0;
+    const pop = interpolate(frame, [start, start + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    art = (
+      <svg width={VW} height={VH}>
+        {frame < start + 2 && <circle cx={VW / 2} cy={260} r={r} fill="#bfe0ef" stroke={ink} strokeWidth={5} opacity={frame < start ? 1 : 0} />}
+        {pop > 0 && pop < 1 && Array.from({ length: 10 }, (_, i) => { const a = (i / 10) * 6.28; return <line key={i} x1={VW / 2 + 150 * Math.cos(a)} y1={260 + 150 * Math.sin(a)} x2={VW / 2 + (150 + 70 * pop) * Math.cos(a)} y2={260 + (150 + 70 * pop) * Math.sin(a)} stroke={red} strokeWidth={6 * (1 - pop)} />; })}
+      </svg>
+    );
+  } else if (m === "stamp") {
+    const txt = scene.stampText ?? scene.caption ?? "";
+    const s = interpolate(frame, [4, 12], [3, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+    const shake = frame < 20 ? Math.sin(frame * 1.4) * interpolate(frame, [12, 24], [12, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
+    art = (
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: VH }}>
+        <div style={{ fontFamily: display, fontWeight: 900, fontSize: 150, color: red, border: `10px solid ${red}`, borderRadius: 14, padding: "10px 44px", transform: `scale(${s}) rotate(-6deg) translateX(${shake}px)`, WebkitTextStroke: "2px #17120f" }}>{txt}</div>
+      </div>
+    );
+  } else {
+    // big centered doodle(s) — no arrows
+    const icons = scene.icons ?? [];
+    art = (
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 70, height: VH }}>
+        {icons.map((n, i) => {
+          const s = spring({ frame, fps, delay: 6 + i * 10, config: { damping: 11, mass: 0.7 } });
+          return <div key={i} style={{ transform: `scale(${s})` }}><Doodle name={n} size={icons.length > 1 ? 300 : 380} /></div>;
+        })}
+      </div>
+    );
+  }
+
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 10 }}>
+      {scene.kicker && <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 36, color: theme.inkSoft, letterSpacing: 1 }}>{scene.kicker}</div>}
+      <div style={{ width: VW, height: VH, position: "relative" }}>{art}</div>
+      {scene.caption && m !== "stamp" && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 60, color: scene.accent ? theme.accent : theme.ink, textAlign: "center", maxWidth: 1500, marginTop: -10 }}>{scene.caption}</div>}
+    </AbsoluteFill>
+  );
+};
+
 export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, SourceEntry> }> = ({ scene, sources }) => {
   const frame = useCurrentFrame();
   // near-hard cut: a 4-frame fade only (Casual Finance hard-cuts between shots)
@@ -482,6 +607,7 @@ export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, Source
     case "timeline": inner = <Timeline scene={scene} />; break;
     case "image": inner = <ImageScene_ scene={scene} />; break;
     case "diagram": inner = <DiagramScene_ scene={scene} />; break;
+    case "stage": inner = <StageScene_ scene={scene} />; break;
   }
   return <AbsoluteFill style={{ backgroundColor: theme.bg, opacity: fade }}>{inner}</AbsoluteFill>;
 };
