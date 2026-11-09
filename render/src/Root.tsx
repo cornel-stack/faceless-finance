@@ -9,6 +9,9 @@ import { MascotSheet } from "./MascotSheet";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import { Film, filmDurationInFrames } from "./Film";
 import { Thumbnail } from "./Thumbnail";
+import { Logo } from "./brand/Logo";
+import { Banner } from "./brand/Banner";
+import { BrandThumbnail } from "./brand/BrandThumbnail";
 import type { Scene } from "./scenes/types";
 import type { MocapClip, Episode as EpisodeType } from "./types";
 import probeData from "./data/_probe.json";
@@ -99,6 +102,9 @@ export const RemotionRoot: React.FC = () => {
         height={720}
         defaultProps={{}}
       />
+      <Composition id="Logo" component={Logo} durationInFrames={1} fps={FPS} width={800} height={800} defaultProps={{}} />
+      <Composition id="Banner" component={Banner} durationInFrames={1} fps={FPS} width={2560} height={1440} defaultProps={{}} />
+      <Composition id="BrandThumbnail" component={BrandThumbnail} durationInFrames={1} fps={FPS} width={1280} height={720} defaultProps={{}} />
       <Composition
         id="DoodleSheet"
         component={DoodleSheet}
