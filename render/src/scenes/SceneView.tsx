@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile } from "remotion";
 import { theme, money } from "../theme";
 import { display, sans } from "../fonts";
 import { Mascot } from "../components/Mascot";
@@ -12,6 +12,7 @@ import type { SourceEntry } from "../SourceCardDemo";
 import type {
   Scene, TitleScene, CharacterScene, CalloutScene, ScreenshotScene,
   ChartScene, DoodleScene, ChalkboardScene, CompareScene, TimelineScene,
+  ImageScene, DiagramScene,
 } from "./types";
 
 const EASE = { damping: 200 } as const;
@@ -396,6 +397,74 @@ const Timeline: React.FC<{ scene: TimelineScene }> = ({ scene }) => {
   );
 };
 
+// A real downloaded photo filling the frame (celebrity / logo / building), with
+// a name tag, caption, a slow zoom, and an optional red emphasis ring.
+const ImageScene_: React.FC<{ scene: ImageScene }> = ({ scene }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const enter = spring({ frame, fps, config: { damping: 16 } });
+  const zoom = interpolate(frame, [0, fps * 6], [1, 1.06], { extrapolateRight: "clamp" });
+  const W = 740;
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 30 }}>
+      <div style={{ position: "relative", transform: `scale(${0.92 + enter * 0.08})`, opacity: enter }}>
+        <div style={{ width: W, borderRadius: 14, overflow: "hidden", border: `6px solid ${theme.ink}`, boxShadow: "0 18px 44px rgba(0,0,0,0.22)", background: "#fff" }}>
+          <Img src={staticFile(scene.src)} style={{ width: W, display: "block", transform: `scale(${zoom})`, filter: scene.mug ? "grayscale(0.25) contrast(1.05)" : "none" }} />
+        </div>
+        {scene.circle && (
+          <div style={{ position: "absolute", inset: -20, border: `9px solid ${theme.accent}`, borderRadius: "50%", transform: "rotate(-4deg) scaleX(1.1)", opacity: interpolate(frame, [fps * 0.5, fps * 1.4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }} />
+        )}
+        {scene.label && (
+          <div style={{ position: "absolute", left: -12, bottom: -18, background: theme.accent, color: "#fff", fontFamily: display, fontWeight: 900, fontSize: 34, padding: "6px 18px", borderRadius: 8, transform: "rotate(-3deg)" }}>{scene.label}</div>
+        )}
+      </div>
+      {scene.caption && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 50, color: theme.ink, textAlign: "center", maxWidth: 1400 }}>{scene.caption}</div>}
+    </AbsoluteFill>
+  );
+};
+
+// A box-and-arrow diagram built step by step: labelled nodes pop in, arrows wire
+// them up, and flagged nodes get struck out with a red ✗.
+const DiagramScene_: React.FC<{ scene: DiagramScene }> = ({ scene }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const W = 1920, H = 1080;
+  const pos = (n: { x: number; y: number }) => ({ x: 170 + n.x * (W - 340), y: 230 + n.y * (H - 400) });
+  const nodeOf: Record<string, DiagramScene["nodes"][number]> = Object.fromEntries(scene.nodes.map((n) => [n.id, n]));
+  const nodeIdx: Record<string, number> = Object.fromEntries(scene.nodes.map((n, i) => [n.id, i]));
+  return (
+    <AbsoluteFill>
+      {scene.title && <div style={{ position: "absolute", top: 70, width: W, textAlign: "center", fontFamily: display, fontWeight: 900, fontSize: 54, color: theme.ink }}>{scene.title}</div>}
+      <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
+        {scene.edges.map((e, i) => {
+          const a = pos(nodeOf[e.from]), b = pos(nodeOf[e.to]);
+          const delay = Math.round(10 + Math.max(nodeIdx[e.from] ?? 0, nodeIdx[e.to] ?? 0) * 16 + 10);
+          return <Arrow key={i} x1={a.x} y1={a.y} x2={b.x} y2={b.y} delay={delay} bend={0.16 * (i % 2 ? 1 : -1)} color={theme.inkSoft} width={5} />;
+        })}
+      </svg>
+      {scene.nodes.map((n, i) => {
+        const p = pos(n);
+        const s = spring({ frame, fps, delay: 10 + i * 16, config: { damping: 12, mass: 0.6 } });
+        if (s <= 0.02) return null;
+        const crossRev = n.cross ? interpolate(frame, [fps * 1.7 + i * 5, fps * 2.1 + i * 5], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
+        return (
+          <div key={n.id} style={{ position: "absolute", left: p.x - 135, top: p.y - 78, width: 270, transform: `scale(${Math.min(1, s)})` }}>
+            <div style={{ background: "#fff", border: `4px solid ${theme.ink}`, borderRadius: 14, padding: "14px 16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, boxShadow: "0 8px 0 rgba(23,18,15,0.08)", position: "relative" }}>
+              {n.icon && <Doodle name={n.icon} size={104} />}
+              <div style={{ fontFamily: sans, fontWeight: 800, fontSize: 29, color: theme.ink, textAlign: "center", lineHeight: 1.06 }}>{n.label}</div>
+              {n.cross && (
+                <svg width={270} height={170} style={{ position: "absolute", left: -2, top: -10, opacity: crossRev }}>
+                  <path d="M22 22 L248 150 M248 22 L22 150" stroke={theme.accent} strokeWidth={11} strokeLinecap="round" />
+                </svg>
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
 export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, SourceEntry> }> = ({ scene, sources }) => {
   const frame = useCurrentFrame();
   // near-hard cut: a 4-frame fade only (Casual Finance hard-cuts between shots)
@@ -411,6 +480,8 @@ export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, Source
     case "chalkboard": inner = <Chalkboard scene={scene} />; break;
     case "compare": inner = <Compare scene={scene} />; break;
     case "timeline": inner = <Timeline scene={scene} />; break;
+    case "image": inner = <ImageScene_ scene={scene} />; break;
+    case "diagram": inner = <DiagramScene_ scene={scene} />; break;
   }
   return <AbsoluteFill style={{ backgroundColor: theme.bg, opacity: fade }}>{inner}</AbsoluteFill>;
 };

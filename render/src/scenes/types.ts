@@ -63,6 +63,25 @@ export interface TimelineScene extends Base {
   events: { year: string; label: string; icon?: DoodleName }[];
   highlight?: number; // which event to emphasise (red)
 }
+
+// A real downloaded photo (celebrity / building / logo) filling the frame.
+export interface ImageScene extends Base {
+  type: "image";
+  src: string;          // path under public/, e.g. "img/skilling.jpg"
+  caption?: string;     // big caption under the photo
+  label?: string;       // small tag on the photo (e.g. a name)
+  circle?: boolean;     // red hand-drawn emphasis ring
+  mug?: boolean;        // tint/stamp style for a mugshot
+}
+
+// A box-and-arrow diagram built step by step (the Casual Finance staple):
+// labelled nodes appear in order, arrows wire them up, some get crossed out.
+export interface DiagramScene extends Base {
+  type: "diagram";
+  title?: string;
+  nodes: { id: string; label: string; icon?: DoodleName; x: number; y: number; cross?: boolean }[]; // x,y in 0..1
+  edges: { from: string; to: string; label?: string }[];
+}
 export interface DoodleScene extends Base {
   type: "doodle";
   items: DoodleName[];
@@ -84,4 +103,5 @@ export interface CompareScene extends Base {
 
 export type Scene =
   | TitleScene | CharacterScene | CalloutScene | ScreenshotScene
-  | ChartScene | DoodleScene | ChalkboardScene | CompareScene | TimelineScene;
+  | ChartScene | DoodleScene | ChalkboardScene | CompareScene | TimelineScene
+  | ImageScene | DiagramScene;
