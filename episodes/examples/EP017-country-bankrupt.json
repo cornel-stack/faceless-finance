@@ -1,0 +1,723 @@
+{
+  "id": "EP017",
+  "series": "Napkin Numbers",
+  "title": "What Happens When a Country Goes Bankrupt",
+  "slug": "what-happens-when-a-country-goes-bankrupt",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP017 — explainer (By the Numbers, next after currencies in the Finance tab). Sovereign default. Deliberately varied (11 scene types) with NEW motifs: yieldspike, capitalflight, haircut, lifering, belttighten, vulture, downgrade, debtspiral, bondsnowball (+reused printmoney, wheelbarrow, bankrun, dominoes, stamp, crash, trustprop). ~18 cited screenshots; Argentina/Greece/Sri Lanka cases.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "When a person can't pay their debts, there's a process. Bankruptcy. A court steps in, adds up what's left, and divides it among the people they owe.",
+      "pose": "explain",
+      "props": [{ "name": "scale", "label": "a court decides" }]
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "But what happens when it's not a person who can't pay — it's an entire country? There is no court on Earth that can repossess a nation.",
+      "pose": "think",
+      "bubble": "…but a whole country?",
+      "props": [{ "name": "globe", "label": "who repossesses a country?" }]
+    },
+    {
+      "id": "s3",
+      "type": "callout",
+      "narration": "And it happens far more often than you'd think. Since 1800, countries have walked away from their debts more than two hundred and fifty times.",
+      "text": "250+",
+      "sub": "sovereign defaults since 1800",
+      "icon": "warning"
+    },
+    {
+      "id": "s4",
+      "type": "stage",
+      "narration": "Argentina. Greece. Sri Lanka. Russia. Different flags, same spiral. So let's follow exactly what happens when a country goes broke.",
+      "motif": "debtspiral",
+      "caption": "different flags — the same spiral"
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "Because a country doesn't fail the way a company does. It fails in a way that reaches into every wallet inside its borders.",
+      "heading": "What Happens When a Country Goes Bankrupt",
+      "kicker": "Sovereign default",
+      "sub": "There's no court. Just a reckoning."
+    },
+    {
+      "id": "s6",
+      "type": "character",
+      "narration": "To understand the fall, you first have to understand how a country borrows in the first place.",
+      "pose": "present",
+      "bubble": "first: how they borrow"
+    },
+
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "Almost every government on Earth spends more than it collects in taxes. To cover the gap, it borrows.",
+      "icons": ["capitol", "coins"],
+      "caption": "spend more than you tax → borrow"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "It borrows by selling bonds — IOUs. You hand over cash today; the government promises to pay it back later, with interest.",
+      "sourceId": "wiki-govbond"
+    },
+    {
+      "id": "s9",
+      "type": "diagram",
+      "narration": "And who buys them? Almost everyone. Banks, pension funds, foreign governments — even your own savings, through the funds that hold them.",
+      "title": "Who lends to a government",
+      "nodes": [
+        { "id": "banks", "label": "banks", "icon": "bank", "x": 0.17, "y": 0.28 },
+        { "id": "pension", "label": "your pension fund", "icon": "piggybank", "x": 0.17, "y": 0.6 },
+        { "id": "foreign", "label": "foreign governments", "icon": "globe", "x": 0.17, "y": 0.9 },
+        { "id": "bond", "label": "government bonds", "icon": "bond", "x": 0.54, "y": 0.58 },
+        { "id": "state", "label": "the government", "icon": "capitol", "x": 0.86, "y": 0.58 }
+      ],
+      "edges": [
+        { "from": "banks", "to": "bond" },
+        { "from": "pension", "to": "bond" },
+        { "from": "foreign", "to": "bond" },
+        { "from": "bond", "to": "state" }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "narration": "Pile up enough of those IOUs and you get the national debt. For most countries that's completely normal — as long as they can keep paying.",
+      "sourceId": "wiki-govdebt"
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "narration": "In fact, huge debts can be perfectly safe. Japan owes more than twice its entire economy — and nobody panics, because everyone trusts Japan to pay.",
+      "chartType": "bar",
+      "title": "Government debt, as a share of the economy (% of GDP)",
+      "unit": "x",
+      "data": [
+        { "label": "Germany", "value": 65 },
+        { "label": "USA", "value": 120 },
+        { "label": "Greece", "value": 170 },
+        { "label": "Japan", "value": 250 }
+      ],
+      "highlight": 3,
+      "note": "big — but trusted"
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "narration": "Here's the quiet trick that keeps it all running. Countries almost never actually repay. When a bond comes due, they just borrow again to cover it. They roll it over.",
+      "motif": "bondsnowball",
+      "caption": "roll it over… and over… and over"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "And that works beautifully — as long as someone is always willing to lend you the next round. The whole system quietly runs on one thing: confidence.",
+      "pose": "explain",
+      "props": [
+        { "name": "handshake", "label": "someone will lend" },
+        { "name": "gauge", "label": "= confidence" }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "narration": "A country goes 'bankrupt' when that breaks — when it can't, or won't, make a payment it promised. Economists call it a sovereign default.",
+      "sourceId": "wiki-default"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Which raises the question everyone asks. If a government controls the money printer, why can't it just print whatever it owes?",
+      "pose": "think",
+      "bubble": "why not just print it?"
+    },
+
+    {
+      "id": "s16",
+      "type": "chalkboard",
+      "narration": "The whole thing turns on one detail: whose money the debt is in.",
+      "lines": ["debt in YOUR OWN money → you can print it", "debt in SOMEONE ELSE'S money → you're stuck"]
+    },
+    {
+      "id": "s17",
+      "type": "stage",
+      "narration": "If a country owes money in its own currency, it genuinely can print more to pay. It never technically runs out.",
+      "motif": "printmoney",
+      "caption": "own-currency debt: just print it"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "But as we saw last time, printing to pay your bills destroys the value of the money. You don't default — you inflate the debt away. A hidden default, paid by everyone holding the cash.",
+      "motif": "wheelbarrow",
+      "caption": "…but printing has its own price"
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "Push that too far and you get hyperinflation. The debt technically gets repaid — in money that's now worthless.",
+      "sourceId": "wiki-hyper"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "The real trap is the other kind. When a country borrows in a foreign currency — almost always US dollars — it cannot print those.",
+      "icons": ["dollar", "chain"],
+      "caption": "foreign-currency debt: the real trap",
+      "accent": true
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Now it's just like you and me. It has to earn or find real dollars to pay. And if it can't, there's no printer in the world that helps.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        { "name": "dollar", "label": "must find real $" },
+        { "name": "warning", "label": "no printer helps" }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "callout",
+      "narration": "This single fact — owing money you cannot print — sits at the heart of almost every great sovereign collapse.",
+      "text": "the trap",
+      "sub": "owe a currency you can't print",
+      "icon": "chain"
+    },
+
+    {
+      "id": "s23",
+      "type": "title",
+      "narration": "So watch how the spiral actually turns, step by step.",
+      "heading": "The Anatomy of a Collapse",
+      "kicker": "how it unravels"
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "It usually starts in good times. Money is cheap, lenders are eager, and the government borrows freely — for roads, salaries, subsidies, sometimes just to look good.",
+      "icons": ["capitol", "chartup"],
+      "caption": "step 1: the borrowing boom"
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "Then something cracks. A recession. A collapse in some key export price. A war. A scandal. Suddenly lenders look at the books and get nervous.",
+      "pose": "explain",
+      "props": [
+        { "name": "newspaper", "label": "bad news hits" },
+        { "name": "gauge", "label": "confidence dips" }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "And the instant they're nervous, they demand to be paid more to keep lending. The interest rate on the country's debt — its bond yield — spikes.",
+      "motif": "yieldspike",
+      "caption": "step 2: borrowing costs spike"
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "Which is brutally ironic. Exactly when a country can least afford it, borrowing suddenly gets far more expensive — right when it needs to borrow the most.",
+      "pose": "handtohead",
+      "expression": "worried",
+      "props": [
+        { "name": "ticker", "label": "rates jump" },
+        { "name": "warning", "label": "…worst timing" }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "stage",
+      "narration": "Now it's borrowing just to pay the interest on what it already owes. That's the debt spiral — and once you're in it, the maths only gets worse.",
+      "motif": "debtspiral",
+      "caption": "step 3: the debt spiral"
+    },
+    {
+      "id": "s29",
+      "type": "stage",
+      "narration": "Investors start yanking their money out of the country altogether. Capital flight. And as they dump the local currency to escape, it starts to collapse too.",
+      "motif": "capitalflight",
+      "caption": "step 4: the money runs"
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "Then the credit-rating agencies — Moody's, S&P, Fitch — pile on, slashing the country's rating.",
+      "sourceId": "wiki-rating"
+    },
+    {
+      "id": "s31",
+      "type": "stage",
+      "narration": "Down through the grades it tumbles — from safe, to risky, to 'junk,' to the dreaded D for default. And each downgrade scares off more lenders, which triggers the next downgrade.",
+      "motif": "downgrade",
+      "caption": "AAA → junk → D"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "It's a doom loop. Fear raises rates. Higher rates deepen the crisis. The deeper crisis creates more fear. Round and round, faster and faster.",
+      "pose": "think",
+      "expression": "worried",
+      "bubble": "the doom loop"
+    },
+    {
+      "id": "s33",
+      "type": "stage",
+      "narration": "Until one day a payment comes due, and the money simply isn't there. The country misses it.",
+      "motif": "stamp",
+      "stampText": "DEFAULT"
+    },
+    {
+      "id": "s34",
+      "type": "screenshot",
+      "narration": "On that day, the government formally admits it cannot pay what it promised — and everything the debt was quietly holding up begins to fall.",
+      "sourceId": "wiki-defaultfin"
+    },
+
+    {
+      "id": "s35",
+      "type": "title",
+      "narration": "Because a default is never just a line in the financial press. It lands, hard, on ordinary people — often the ones who did nothing wrong.",
+      "heading": "What It Does to Real People",
+      "kicker": "the human bill"
+    },
+    {
+      "id": "s36",
+      "type": "stage",
+      "narration": "First, the banks. Terrified of a collapse, people rush to pull out their savings all at once. To stop the run, the government simply freezes the accounts.",
+      "motif": "bankrun",
+      "caption": "the banks freeze"
+    },
+    {
+      "id": "s37",
+      "type": "screenshot",
+      "narration": "They slam on capital controls — hard limits on how much of your own money you're allowed to withdraw, or move out of the country.",
+      "sourceId": "wiki-capitalcontrol"
+    },
+    {
+      "id": "s38",
+      "type": "doodle",
+      "narration": "In Argentina in 2001, they called it the corralito — 'the little fence.' People watched their life savings get locked behind it, then shrink as the currency crashed.",
+      "items": ["flagAR", "vault"],
+      "labels": ["Argentina, 2001", "the \"corralito\""],
+      "caption": "your savings — locked in"
+    },
+    {
+      "id": "s39",
+      "type": "compare",
+      "narration": "Money that was worth ten thousand dollars on Monday could be worth a fraction of that by the end of the month. Savings, pensions, wages — quietly vaporized.",
+      "left": { "title": "Monday", "value": "$10,000", "icon": "piggybank" },
+      "right": { "title": "weeks later", "value": "$3,000", "icon": "chartdown" }
+    },
+    {
+      "id": "s40",
+      "type": "stage",
+      "narration": "And because the country can't get dollars, it can't pay for imports. So the things that come from abroad start to disappear — fuel, medicine, food.",
+      "icons": ["gaspump", "warning"],
+      "caption": "the shortages begin"
+    },
+    {
+      "id": "s41",
+      "type": "doodle",
+      "narration": "In Sri Lanka in 2022, drivers queued for days for petrol that might never arrive. Hospitals ran out of medicine. The power went out for hours at a time.",
+      "items": ["flagLK", "gaspump"],
+      "labels": ["Sri Lanka, 2022", "days-long fuel queues"],
+      "caption": "daily life grinds to a halt"
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "And when people lose everything at once, they take to the streets. In the chaos of its default, Argentina ran through five presidents in under two weeks.",
+      "text": "5 presidents",
+      "sub": "Argentina — in under two weeks",
+      "icon": "protest",
+      "break": true
+    },
+    {
+      "id": "s43",
+      "type": "doodle",
+      "narration": "In Sri Lanka, protesters stormed the president's palace and swam in his pool. He fled the country. Default doesn't just break economies — it topples governments.",
+      "items": ["flagLK", "protest"],
+      "labels": ["Sri Lanka, 2022", "the palace stormed"],
+      "caption": "governments fall"
+    },
+    {
+      "id": "s44",
+      "type": "stage",
+      "narration": "Riots, strikes, a wave of emigration, a lost decade of growth. The number on the bond is abstract. This part never is.",
+      "icons": ["protest", "warning"],
+      "caption": "the social cost is the real cost"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "So, facing all of that, who does a broke country actually turn to? There's really only one number left to call.",
+      "pose": "explain",
+      "expression": "worried",
+      "bubble": "…who do you call?",
+      "props": [{ "name": "phone", "label": "one call left" }]
+    },
+
+    {
+      "id": "s46",
+      "type": "screenshot",
+      "narration": "The International Monetary Fund — the world's lender of last resort. A giant pool of money that nations pay into, to rescue one another when everything else fails.",
+      "sourceId": "wiki-imf"
+    },
+    {
+      "id": "s47",
+      "type": "stage",
+      "narration": "When no private lender will touch you, the IMF steps in with an emergency loan — the lifeline that keeps the lights on and the country functioning.",
+      "motif": "lifering",
+      "caption": "the IMF throws a lifeline"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "But that lifeline comes with strings. Thick ones. In exchange for the cash, the IMF demands the country fix its budget — and fast.",
+      "pose": "explain",
+      "props": [
+        { "name": "lifering", "label": "rescue loan" },
+        { "name": "scissors", "label": "…with conditions" }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "stage",
+      "narration": "That medicine has a name: austerity. Cut government spending. Raise taxes. Slash subsidies. Shrink pensions. Balance the books, whatever the cost.",
+      "motif": "belttighten",
+      "caption": "the price: austerity"
+    },
+    {
+      "id": "s50",
+      "type": "screenshot",
+      "narration": "The logic is simple: spend less than you earn, and you can start paying people back. In practice, it's one of the most bitterly argued ideas in all of economics.",
+      "sourceId": "wiki-austerity"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Because austerity in a crisis can be a cruel trap of its own. Cut spending hard, and the economy shrinks even faster — so tax revenue falls too, and the hole barely closes.",
+      "pose": "think",
+      "expression": "worried",
+      "props": [
+        { "name": "scissors", "label": "cut spending" },
+        { "name": "chartdown", "label": "…economy shrinks" }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "doodle",
+      "narration": "Greece lived this for a decade. Round after round of cuts, in return for bailout after bailout — and an economy that shrank by a quarter.",
+      "items": ["flagGR", "scissors"],
+      "labels": ["Greece, 2010s", "a lost decade"],
+      "caption": "austerity, for ten years"
+    },
+    {
+      "id": "s53",
+      "type": "screenshot",
+      "narration": "It brought mass unemployment, street protests, and a genuine fear that Greece would be forced out of the euro entirely.",
+      "sourceId": "wiki-greece"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "Which points straight at Greece's special trap. It owed euros — but it couldn't print euros. For a country in crisis, that is the worst of both worlds.",
+      "pose": "explain",
+      "props": [
+        { "name": "euro", "label": "owed euros" },
+        { "name": "warning", "label": "…couldn't print them" }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "stage",
+      "narration": "And a default never stays in one country. Greece was so tangled up with Europe's banks that for a while it threatened to topple the entire euro like a line of dominoes.",
+      "motif": "dominoes",
+      "caption": "default spreads: contagion"
+    },
+
+    {
+      "id": "s56",
+      "type": "title",
+      "narration": "So how does a default actually end? With a negotiation most people never hear about.",
+      "heading": "The Deal: Haircuts",
+      "kicker": "how defaults really end"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "Here's the part people get wrong. 'Default' almost never means 'nobody gets paid, ever.' It means it's time to renegotiate.",
+      "pose": "explain",
+      "props": [{ "name": "handshake", "label": "time to renegotiate" }]
+    },
+    {
+      "id": "s58",
+      "type": "screenshot",
+      "narration": "The country sits down with the people it owes and restructures the debt — stretching out the payments, cutting the interest, and reducing what's owed.",
+      "sourceId": "wiki-restructure"
+    },
+    {
+      "id": "s59",
+      "type": "stage",
+      "narration": "Lenders agree to take less than they're owed — sometimes far less. In the trade, that loss has a grim little nickname: a haircut.",
+      "motif": "haircut",
+      "caption": "creditors take a haircut"
+    },
+    {
+      "id": "s60",
+      "type": "screenshot",
+      "narration": "And these haircuts can be absolutely brutal.",
+      "sourceId": "wiki-haircut"
+    },
+    {
+      "id": "s61",
+      "type": "callout",
+      "narration": "When Greece restructured, private lenders effectively wrote off around three-quarters of what they were owed — the biggest such deal in history.",
+      "text": "~75%",
+      "sub": "the haircut Greece's lenders took",
+      "icon": "scissors",
+      "break": true
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "For the country, it's a release: a crushing debt suddenly becomes payable. For the lenders, it's the price of having gambled on a government that couldn't pay.",
+      "pose": "explain",
+      "props": [{ "name": "scale", "label": "both sides lose something" }]
+    },
+    {
+      "id": "s63",
+      "type": "stage",
+      "narration": "But not everyone plays along. A few specialist funds buy up defaulted debt dirt cheap, precisely so they can refuse the deal and sue for every last cent.",
+      "motif": "vulture",
+      "caption": "then the vultures circle"
+    },
+    {
+      "id": "s64",
+      "type": "screenshot",
+      "narration": "They're nicknamed vulture funds. And one chased Argentina so relentlessly it once had an Argentine navy ship seized in a foreign port as collateral.",
+      "sourceId": "wiki-vulture"
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "A single warship, impounded halfway around the world, over a bond most people had written off a decade earlier. That's how long these fights can drag on.",
+      "pose": "explain",
+      "props": [
+        { "name": "vulture", "label": "the holdouts" },
+        { "name": "calendar", "label": "…for a decade" }
+      ]
+    },
+
+    {
+      "id": "s66",
+      "type": "title",
+      "narration": "So after all of it — the freeze, the crash, the austerity, the haircut — is a defaulted country finished for good?",
+      "heading": "After the Fall",
+      "kicker": "does it ever recover?"
+    },
+    {
+      "id": "s67",
+      "type": "screenshot",
+      "narration": "Almost never. For a while it's locked out — lenders won't touch it, or only at punishing rates. But markets have surprisingly short memories.",
+      "sourceId": "wiki-argentina"
+    },
+    {
+      "id": "s68",
+      "type": "timeline",
+      "narration": "Argentina defaulted in 2001, restructured, and within fifteen years was borrowing from the very same markets again — right before defaulting all over again.",
+      "title": "Argentina's long road back (and back again)",
+      "events": [
+        { "year": "2001", "label": "defaults (~$100B)", "icon": "warning" },
+        { "year": "2005", "label": "big haircut deal", "icon": "scissors" },
+        { "year": "2016", "label": "borrowing again", "icon": "bank" },
+        { "year": "2020", "label": "…defaults again", "icon": "chartdown" }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s69",
+      "type": "stage",
+      "narration": "Because a functioning country, even a burned one, is still an economy that lenders eventually want a piece of. A clean slate plus a growing economy is a tempting bet.",
+      "icons": ["chartup", "globe"],
+      "caption": "recovery — eventually"
+    },
+    {
+      "id": "s70",
+      "type": "compare",
+      "narration": "And sometimes, brutal as it sounds, default is the rational choice. Crushing an entire generation under impossible debt can be worse than simply hitting reset.",
+      "left": { "title": "keep paying", "value": "crush a generation", "icon": "chain" },
+      "right": { "title": "default & reset", "value": "pain, then recover", "icon": "chartup" }
+    },
+    {
+      "id": "s71",
+      "type": "character",
+      "narration": "Which quietly flips the usual morality of it. We're taught that paying your debts is always right. For a country, it's a cold calculation about which path causes less suffering.",
+      "pose": "think",
+      "bubble": "not always right to pay?"
+    },
+    {
+      "id": "s72",
+      "type": "chalkboard",
+      "narration": "And that uncovers the real lesson hiding under all the drama.",
+      "lines": ["a country isn't broke", "the day it runs out of cash —", "it's broke the day the world", "stops believing it will pay."]
+    },
+    {
+      "id": "s73",
+      "type": "stage",
+      "narration": "Just like the value of money itself, a government's power to borrow runs almost entirely on confidence. On the belief that it's good for it.",
+      "motif": "trustprop",
+      "caption": "it all rests on belief"
+    },
+    {
+      "id": "s74",
+      "type": "character",
+      "narration": "While the world believes you'll pay, you can roll your debt over forever, cheaply, like magic. The debt never actually has to be repaid at all.",
+      "pose": "explain",
+      "props": [{ "name": "handshake", "label": "belief = cheap debt forever" }]
+    },
+    {
+      "id": "s75",
+      "type": "stage",
+      "narration": "The day that belief dies, the magic stops — and the reckoning that was always theoretically there arrives all at once.",
+      "motif": "crash",
+      "caption": "…the day belief dies",
+      "accent": true
+    },
+    {
+      "id": "s76",
+      "type": "callout",
+      "narration": "So a country doesn't go bankrupt the day it runs out of money. It goes bankrupt the day the world stops trusting it to pay.",
+      "text": "confidence",
+      "sub": "the only thing really holding it up",
+      "icon": "gauge"
+    },
+    {
+      "id": "s77",
+      "type": "character",
+      "narration": "It's the exact same force behind a currency's value, behind a bank run, behind every fraud we've ever covered. Trust builds slowly — and collapses in an afternoon.",
+      "pose": "explain",
+      "props": [
+        { "name": "gauge", "label": "trust builds slowly" },
+        { "name": "warning", "label": "…gone in a day" }
+      ]
+    },
+    {
+      "id": "s78",
+      "type": "stage",
+      "narration": "The flags change — Argentina, Greece, Sri Lanka, the next one. But the pattern underneath is always the same promise, and the same moment it snaps.",
+      "icons": ["globe", "scale"],
+      "caption": "the pattern never changes"
+    },
+    {
+      "id": "s79",
+      "type": "character",
+      "narration": "So the next time a headline says a country is 'on the brink of default,' you'll know exactly what that means — and what comes next.",
+      "pose": "present",
+      "bubble": "now you know the pattern",
+      "props": [{ "name": "newspaper", "label": "…read what's coming" }]
+    },
+    {
+      "id": "s80",
+      "type": "character",
+      "narration": "If this made the scariest headline in finance finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [{ "name": "bond", "label": "which number next?" }]
+    },
+    {
+      "id": "s81",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [{ "name": "newspaper", "label": "…what matters" }]
+    }
+  ],
+  "sources": [
+    { "id": "wiki-govbond", "name": "Government bond (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Government_bond", "quote": "government bond" },
+    { "id": "wiki-govdebt", "name": "Government debt (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Government_debt", "quote": "government debt" },
+    { "id": "wiki-default", "name": "Sovereign default (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Sovereign_default", "quote": "sovereign default" },
+    { "id": "wiki-defaultfin", "name": "Default (finance) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Default_(finance)", "quote": "default" },
+    { "id": "wiki-hyper", "name": "Hyperinflation (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Hyperinflation", "quote": "hyperinflation" },
+    { "id": "wiki-rating", "name": "Credit rating agency (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Credit_rating_agency", "quote": "credit rating" },
+    { "id": "wiki-capitalcontrol", "name": "Capital control (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Capital_control", "quote": "capital control" },
+    { "id": "wiki-imf", "name": "International Monetary Fund (Wikipedia)", "url": "https://en.wikipedia.org/wiki/International_Monetary_Fund", "quote": "International Monetary Fund" },
+    { "id": "wiki-austerity", "name": "Austerity (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Austerity", "quote": "austerity" },
+    { "id": "wiki-restructure", "name": "Debt restructuring (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Debt_restructuring", "quote": "debt restructuring" },
+    { "id": "wiki-haircut", "name": "Haircut (finance) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Haircut_(finance)", "quote": "haircut" },
+    { "id": "wiki-vulture", "name": "Vulture fund (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Vulture_fund", "quote": "vulture fund" },
+    { "id": "wiki-argentina", "name": "Argentine debt restructuring (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Argentine_debt_restructuring", "quote": "default" },
+    { "id": "wiki-greece", "name": "Greek government-debt crisis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Greek_government-debt_crisis", "quote": "debt crisis" },
+    { "id": "wiki-srilanka", "name": "Sri Lankan economic crisis 2019–present (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Sri_Lankan_economic_crisis_(2019%E2%80%93present)", "quote": "crisis" },
+    { "id": "wiki-russia98", "name": "1998 Russian financial crisis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1998_Russian_financial_crisis", "quote": "default" }
+  ],
+  "youtube": {
+    "title": "What Happens When a Country Goes Bankrupt",
+    "alts": [
+      "What Happens When a Country Can't Pay Its Debts",
+      "How Countries Go Bankrupt (Argentina, Greece, Sri Lanka)"
+    ],
+    "hook": "When a person can't pay their debts, a court sorts it out. But what happens when an entire country goes broke — when there's no court that can repossess a nation? This is the full anatomy of a sovereign default: how countries borrow, why they can't always just print the money, the doom loop of spiking yields and capital flight, the bank freezes and shortages that hit ordinary people, the IMF bailout and its austerity price tag, the 'haircuts' creditors take, the vulture funds that sue — and why a country really goes bankrupt the day the world stops trusting it. Argentina, Greece and Sri Lanka, fully cited.",
+    "bullets": [
+      "How governments borrow with bonds — and why rolling debt over runs on confidence",
+      "Why printing your way out only works if the debt is in your own currency",
+      "The collapse, step by step: yield spikes, capital flight, downgrades, default",
+      "What it does to people: frozen banks, capital controls, shortages, fallen governments",
+      "The IMF bailout and the austerity that comes attached",
+      "Debt 'haircuts', vulture funds, and why default is sometimes the rational choice"
+    ],
+    "tags": [
+      "what happens when a country goes bankrupt",
+      "sovereign default",
+      "country default explained",
+      "government debt",
+      "national debt explained",
+      "imf bailout",
+      "austerity",
+      "debt restructuring",
+      "haircut finance",
+      "vulture funds",
+      "argentina default",
+      "greek debt crisis",
+      "sri lanka crisis",
+      "capital controls",
+      "how countries borrow",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": ["#economics", "#finance", "#debt", "#money"],
+    "thumbnail": {
+      "hookTop": "WHAT IF A COUNTRY",
+      "hookBot": "CAN'T PAY?",
+      "napkinNumber": "250+",
+      "napkinSub": "…defaults since 1800",
+      "deco": "lifering"
+    },
+    "chapters": [
+      ["how a country borrows", "How countries borrow"],
+      ["whose money the debt is in", "Print or default?"],
+      ["how the spiral actually turns", "The anatomy of a collapse"],
+      ["lands, hard, on ordinary people", "What it does to real people"],
+      ["lender of last resort", "The IMF & austerity"],
+      ["how does a default actually end", "Haircuts & vultures"],
+      ["is a defaulted country finished", "After the fall"],
+      ["the real lesson hiding", "What it all runs on"]
+    ]
+  }
+}

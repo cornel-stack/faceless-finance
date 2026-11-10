@@ -81,7 +81,9 @@ export interface StageScene extends Base {
   type: "stage";
   motif?: "housecollapse" | "vaultdrain" | "vanish" | "dominoes" | "crash" | "stamp" | "spotlight" | "shell" | "mask" | "inflate" | "bankrun" | "rocketcrash" | "towerfall"
     // EP016 (currencies) additions — new animated metaphors:
-    | "fxmarket" | "seesaw" | "supplydemand" | "printmoney" | "wheelbarrow" | "magnet" | "peg" | "basket" | "trustprop";
+    | "fxmarket" | "seesaw" | "supplydemand" | "printmoney" | "wheelbarrow" | "magnet" | "peg" | "basket" | "trustprop"
+    // EP017 (sovereign default) additions:
+    | "yieldspike" | "capitalflight" | "haircut" | "lifering" | "belttighten" | "vulture" | "downgrade" | "debtspiral" | "bondsnowball";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

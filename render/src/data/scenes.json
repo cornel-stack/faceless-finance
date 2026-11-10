@@ -1,1011 +1,860 @@
 [
   {
     "id": "s1",
-    "type": "doodle",
-    "narration": "One dollar. Ninety euro cents. A hundred and fifty Japanese yen. Three totally different numbers — and in much of the world, each one buys you about the same cup of coffee.",
-    "items": [
-      "dollar",
-      "euro",
-      "yen"
-    ],
-    "labels": [
-      "$1",
-      "€0.90",
-      "¥150"
-    ],
-    "caption": "…all buy one coffee"
+    "type": "character",
+    "narration": "When a person can't pay their debts, there's a process. Bankruptcy. A court steps in, adds up what's left, and divides it among the people they owe.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "a court decides"
+      }
+    ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "So why is one dollar worth a hundred and fifty of something else? And why does that number change every single second?",
+    "narration": "But what happens when it's not a person who can't pay — it's an entire country? There is no court on Earth that can repossess a nation.",
     "pose": "think",
-    "bubble": "why 150?",
+    "bubble": "…but a whole country?",
     "props": [
       {
-        "name": "exchange",
-        "label": "…and why does it move?"
+        "name": "globe",
+        "label": "who repossesses a country?"
       }
     ]
   },
   {
     "id": "s3",
     "type": "callout",
-    "narration": "Because every single day, people trade around seven and a half trillion dollars of currency — in the biggest market humans have ever built.",
-    "text": "$7.5 trillion",
-    "sub": "currency traded every single day",
-    "icon": "candles"
+    "narration": "And it happens far more often than you'd think. Since 1800, countries have walked away from their debts more than two hundred and fifty times.",
+    "text": "250+",
+    "sub": "sovereign defaults since 1800",
+    "icon": "warning"
   },
   {
     "id": "s4",
     "type": "stage",
-    "narration": "It never really sleeps. And the price it sets for each currency quietly touches almost everything you buy.",
-    "motif": "fxmarket",
-    "caption": "the FX market — $7.5T a day"
+    "narration": "Argentina. Greece. Sri Lanka. Russia. Different flags, same spiral. So let's follow exactly what happens when a country goes broke.",
+    "motif": "debtspiral",
+    "caption": "different flags — the same spiral"
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "So let's answer it properly. Why do currencies have different values — and what actually makes those values move?",
-    "heading": "Why Currencies Are Worth Different Amounts",
-    "kicker": "Money, explained",
-    "sub": "It's a price — set by supply, demand, and trust."
+    "narration": "Because a country doesn't fail the way a company does. It fails in a way that reaches into every wallet inside its borders.",
+    "heading": "What Happens When a Country Goes Bankrupt",
+    "kicker": "Sovereign default",
+    "sub": "There's no court. Just a reckoning."
   },
   {
     "id": "s6",
     "type": "character",
-    "narration": "Start with the thing almost everyone gets wrong. The value of a currency is not printed on the note.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "banknote",
-        "label": "…not the paper"
-      }
-    ]
+    "narration": "To understand the fall, you first have to understand how a country borrows in the first place.",
+    "pose": "present",
+    "bubble": "first: how they borrow"
   },
   {
     "id": "s7",
-    "type": "screenshot",
-    "narration": "A currency's real value is its exchange rate — the price of one currency measured in another.",
-    "sourceId": "wiki-exchange"
+    "type": "stage",
+    "narration": "Almost every government on Earth spends more than it collects in taxes. To cover the gap, it borrows.",
+    "icons": [
+      "capitol",
+      "coins"
+    ],
+    "caption": "spend more than you tax → borrow"
   },
   {
     "id": "s8",
-    "type": "stage",
-    "narration": "Think of it like a seesaw. An exchange rate always compares two currencies. One number only means anything next to the other.",
-    "motif": "seesaw",
-    "caption": "a rate is a relative price"
+    "type": "screenshot",
+    "narration": "It borrows by selling bonds — IOUs. You hand over cash today; the government promises to pay it back later, with interest.",
+    "sourceId": "wiki-govbond"
   },
   {
     "id": "s9",
-    "type": "compare",
-    "narration": "So 'one dollar equals a hundred and fifty yen' just means: today, in the market, a dollar trades for a hundred and fifty yen. Tomorrow it might be a hundred and forty-eight.",
-    "left": {
-      "title": "1 US dollar",
-      "value": "$1",
-      "icon": "dollar"
-    },
-    "right": {
-      "title": "trades for",
-      "value": "¥150",
-      "icon": "yen"
-    }
-  },
-  {
-    "id": "s10",
-    "type": "character",
-    "narration": "And here is the first myth to kill. A big exchange-rate number does not mean a country is poor.",
-    "pose": "point",
-    "expression": "happy",
-    "bubble": "big number ≠ poor",
-    "props": [
+    "type": "diagram",
+    "narration": "And who buys them? Almost everyone. Banks, pension funds, foreign governments — even your own savings, through the funds that hold them.",
+    "title": "Who lends to a government",
+    "nodes": [
       {
-        "name": "warning",
-        "label": "myth #1"
+        "id": "banks",
+        "label": "banks",
+        "icon": "bank",
+        "x": 0.17,
+        "y": 0.28
+      },
+      {
+        "id": "pension",
+        "label": "your pension fund",
+        "icon": "piggybank",
+        "x": 0.17,
+        "y": 0.6
+      },
+      {
+        "id": "foreign",
+        "label": "foreign governments",
+        "icon": "globe",
+        "x": 0.17,
+        "y": 0.9
+      },
+      {
+        "id": "bond",
+        "label": "government bonds",
+        "icon": "bond",
+        "x": 0.54,
+        "y": 0.58
+      },
+      {
+        "id": "state",
+        "label": "the government",
+        "icon": "capitol",
+        "x": 0.86,
+        "y": 0.58
+      }
+    ],
+    "edges": [
+      {
+        "from": "banks",
+        "to": "bond"
+      },
+      {
+        "from": "pension",
+        "to": "bond"
+      },
+      {
+        "from": "foreign",
+        "to": "bond"
+      },
+      {
+        "from": "bond",
+        "to": "state"
       }
     ]
   },
   {
+    "id": "s10",
+    "type": "screenshot",
+    "narration": "Pile up enough of those IOUs and you get the national debt. For most countries that's completely normal — as long as they can keep paying.",
+    "sourceId": "wiki-govdebt"
+  },
+  {
     "id": "s11",
-    "type": "doodle",
-    "narration": "One dollar is worth about a hundred and fifty yen. Japan is one of the richest countries on Earth. The number is just history — decades ago they sized the yen small, and it stuck.",
-    "items": [
-      "flagJP",
-      "yen"
+    "type": "chart",
+    "narration": "In fact, huge debts can be perfectly safe. Japan owes more than twice its entire economy — and nobody panics, because everyone trusts Japan to pay.",
+    "chartType": "bar",
+    "title": "Government debt, as a share of the economy (% of GDP)",
+    "unit": "x",
+    "data": [
+      {
+        "label": "Germany",
+        "value": 65
+      },
+      {
+        "label": "USA",
+        "value": 120
+      },
+      {
+        "label": "Greece",
+        "value": 170
+      },
+      {
+        "label": "Japan",
+        "value": 250
+      }
     ],
-    "labels": [
-      "Japan",
-      "¥150 per $1"
-    ],
-    "caption": "rich — and still ¥150 to the dollar"
+    "highlight": 3,
+    "note": "big — but trusted"
   },
   {
     "id": "s12",
-    "type": "chalkboard",
-    "narration": "A dollar buys about eighty-three Indian rupees, or over a thousand Korean won. Those are just the sizes each country chose for its money. Big number, small number — it says nothing about rich or poor.",
-    "lines": [
-      "$1 = ¥150",
-      "$1 = ₹83",
-      "$1 = 1,300 ₩",
-      "…none of this means \"poor\""
-    ]
+    "type": "stage",
+    "narration": "Here's the quiet trick that keeps it all running. Countries almost never actually repay. When a bond comes due, they just borrow again to cover it. They roll it over.",
+    "motif": "bondsnowball",
+    "caption": "roll it over… and over… and over"
   },
   {
     "id": "s13",
     "type": "character",
-    "narration": "So if the value is really a price, the real question becomes this: who sets that price?",
-    "pose": "think",
-    "bubble": "who sets it?"
+    "narration": "And that works beautifully — as long as someone is always willing to lend you the next round. The whole system quietly runs on one thing: confidence.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "someone will lend"
+      },
+      {
+        "name": "gauge",
+        "label": "= confidence"
+      }
+    ]
   },
   {
     "id": "s14",
-    "type": "stage",
-    "narration": "Nobody, and everybody. Like any price, an exchange rate is set by supply and demand — how many people want a currency versus how much of it is out there.",
-    "motif": "supplydemand",
-    "caption": "supply × demand sets the price"
+    "type": "screenshot",
+    "narration": "A country goes 'bankrupt' when that breaks — when it can't, or won't, make a payment it promised. Economists call it a sovereign default.",
+    "sourceId": "wiki-default"
   },
   {
     "id": "s15",
-    "type": "screenshot",
-    "narration": "They all meet in the foreign exchange market — the largest, most liquid market in the world.",
-    "sourceId": "wiki-forex"
+    "type": "character",
+    "narration": "Which raises the question everyone asks. If a government controls the money printer, why can't it just print whatever it owes?",
+    "pose": "think",
+    "bubble": "why not just print it?"
   },
   {
     "id": "s16",
-    "type": "screenshot",
-    "narration": "That is where that seven-and-a-half-trillion-a-day figure comes from. Banks, companies, funds and governments, swapping currencies non-stop.",
-    "sourceId": "wiki-supplydemand"
+    "type": "chalkboard",
+    "narration": "The whole thing turns on one detail: whose money the debt is in.",
+    "lines": [
+      "debt in YOUR OWN money → you can print it",
+      "debt in SOMEONE ELSE'S money → you're stuck"
+    ]
   },
   {
     "id": "s17",
-    "type": "character",
-    "narration": "So what makes someone want a particular currency in the first place?",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "who wants it?"
-      }
-    ]
+    "type": "stage",
+    "narration": "If a country owes money in its own currency, it genuinely can print more to pay. It never technically runs out.",
+    "motif": "printmoney",
+    "caption": "own-currency debt: just print it"
   },
   {
     "id": "s18",
-    "type": "doodle",
-    "narration": "Simple. To buy that country's stuff. If you want American goods, American stocks, or American property, first you have to buy dollars.",
-    "items": [
-      "crowd",
-      "dollar",
-      "factory"
-    ],
-    "labels": [
-      "foreigners",
-      "buy $",
-      "to buy US goods"
-    ],
-    "caption": "want the goods → want the money",
-    "flow": true
+    "type": "stage",
+    "narration": "But as we saw last time, printing to pay your bills destroys the value of the money. You don't default — you inflate the debt away. A hidden default, paid by everyone holding the cash.",
+    "motif": "wheelbarrow",
+    "caption": "…but printing has its own price"
   },
   {
     "id": "s19",
-    "type": "diagram",
-    "narration": "Tourists, importers, giant investment funds — everyone who wants in has to swap into that country's currency. Each swap is a little tug on the price.",
-    "title": "What creates demand for a currency",
-    "nodes": [
-      {
-        "id": "trade",
-        "label": "buy its exports",
-        "icon": "factory",
-        "x": 0.17,
-        "y": 0.26
-      },
-      {
-        "id": "invest",
-        "label": "invest there",
-        "icon": "chartup",
-        "x": 0.17,
-        "y": 0.56
-      },
-      {
-        "id": "tour",
-        "label": "visit it",
-        "icon": "globe",
-        "x": 0.17,
-        "y": 0.86
-      },
-      {
-        "id": "dem",
-        "label": "demand for its money",
-        "icon": "exchange",
-        "x": 0.54,
-        "y": 0.56
-      },
-      {
-        "id": "val",
-        "label": "price rises",
-        "icon": "chartup",
-        "x": 0.86,
-        "y": 0.56
-      }
-    ],
-    "edges": [
-      {
-        "from": "trade",
-        "to": "dem"
-      },
-      {
-        "from": "invest",
-        "to": "dem"
-      },
-      {
-        "from": "tour",
-        "to": "dem"
-      },
-      {
-        "from": "dem",
-        "to": "val"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Push that too far and you get hyperinflation. The debt technically gets repaid — in money that's now worthless.",
+    "sourceId": "wiki-hyper"
   },
   {
     "id": "s20",
-    "type": "character",
-    "narration": "More buyers than sellers, the price rises. More sellers than buyers, it falls. A currency is strong when the world wants what that country is selling.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "more buyers → up"
-      },
-      {
-        "name": "chartdown",
-        "label": "more sellers → down"
-      }
-    ]
+    "type": "stage",
+    "narration": "The real trap is the other kind. When a country borrows in a foreign currency — almost always US dollars — it cannot print those.",
+    "icons": [
+      "dollar",
+      "chain"
+    ],
+    "caption": "foreign-currency debt: the real trap",
+    "accent": true
   },
   {
     "id": "s21",
-    "type": "title",
-    "narration": "Day to day, four big forces push these prices around. Once you can see them, the financial news finally makes sense.",
-    "heading": "What Moves a Currency",
-    "kicker": "The four forces",
-    "sub": "interest rates · inflation · trade · trust"
-  },
-  {
-    "id": "s22",
-    "type": "stage",
-    "narration": "Force one: interest rates. When a country's central bank raises rates, its currency suddenly pays you more just to sit and hold it.",
-    "motif": "magnet",
-    "caption": "1) interest rates pull money in"
-  },
-  {
-    "id": "s23",
-    "type": "screenshot",
-    "narration": "Global money is restless. It chases the best safe return it can find — and a higher interest rate acts like a magnet.",
-    "sourceId": "wiki-centralbank"
-  },
-  {
-    "id": "s24",
     "type": "character",
-    "narration": "So when the Federal Reserve hikes, money floods toward dollars and the dollar climbs — often before a single rate even changes, just on the expectation.",
-    "pose": "point",
-    "props": [
-      {
-        "name": "magnet",
-        "label": "higher rate"
-      },
-      {
-        "name": "dollar",
-        "label": "$ climbs"
-      }
-    ]
-  },
-  {
-    "id": "s25",
-    "type": "screenshot",
-    "narration": "Traders exploit those rate gaps directly. In the famous carry trade, they borrow a cheap, low-rate currency and park the money in a high-rate one, pocketing the difference.",
-    "sourceId": "wiki-carry"
-  },
-  {
-    "id": "s26",
-    "type": "character",
-    "narration": "Borrow where money is cheap; invest where it pays more. Do that with hundreds of billions, and these flows alone can shove exchange rates around for years.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "yen",
-        "label": "borrow cheap ¥"
-      },
-      {
-        "name": "dollar",
-        "label": "…earn more in $"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "stage",
-    "narration": "Force two: inflation. If a country prints far more money, or its prices rise fast, each unit buys less — so it's worth less to everyone else too.",
-    "motif": "printmoney",
-    "caption": "2) print more → each unit worth less"
-  },
-  {
-    "id": "s28",
-    "type": "screenshot",
-    "narration": "A currency losing value at home tends to lose value abroad. Make more of something, and you make each piece worth less.",
-    "sourceId": "wiki-inflation"
-  },
-  {
-    "id": "s29",
-    "type": "chart",
-    "narration": "Here's the shape of it. As a country floods the system with new money, the value of a single unit quietly bleeds away, year after year.",
-    "chartType": "line",
-    "title": "More money printed → one unit buys less",
-    "data": [
-      {
-        "label": "Yr 1",
-        "value": 100
-      },
-      {
-        "label": "Yr 2",
-        "value": 92
-      },
-      {
-        "label": "Yr 3",
-        "value": 78
-      },
-      {
-        "label": "Yr 4",
-        "value": 60
-      },
-      {
-        "label": "Yr 5",
-        "value": 41
-      }
-    ],
-    "highlight": 4,
-    "note": "value of one unit"
-  },
-  {
-    "id": "s30",
-    "type": "compare",
-    "narration": "Force three: trade. Sell more to the world than you buy, and demand for your money runs hot. Buy more than you sell, and it slowly leaks away.",
-    "left": {
-      "title": "exports more",
-      "value": "stronger",
-      "icon": "chartup"
-    },
-    "right": {
-      "title": "imports more",
-      "value": "weaker",
-      "icon": "chartdown"
-    }
-  },
-  {
-    "id": "s31",
-    "type": "character",
-    "narration": "And here's a twist most people miss. Plenty of countries actually want a weaker currency.",
-    "pose": "think",
-    "bubble": "weaker… on purpose?",
-    "props": [
-      {
-        "name": "factory",
-        "label": "cheaper exports"
-      }
-    ]
-  },
-  {
-    "id": "s32",
-    "type": "stage",
-    "narration": "A weaker currency makes your exports cheaper for foreigners, so your factories sell more. That's why you'll hear accusations of countries quietly pushing their own currency down.",
-    "icons": [
-      "factory",
-      "globe"
-    ],
-    "caption": "weak money = cheap exports"
-  },
-  {
-    "id": "s33",
-    "type": "compare",
-    "narration": "A strong currency is great for shoppers and travelers, and rough on exporters. A weak one is the exact reverse. There's no 'best' — only trade-offs.",
-    "left": {
-      "title": "strong currency",
-      "value": "cheap imports",
-      "icon": "basket"
-    },
-    "right": {
-      "title": "weak currency",
-      "value": "booming exports",
-      "icon": "factory"
-    }
-  },
-  {
-    "id": "s34",
-    "type": "stage",
-    "narration": "And force four, the quiet one that rules them all: trust. Will this country stay stable? Will it pay its debts? Will your money still be safe here next year?",
-    "icons": [
-      "scale",
-      "handshake"
-    ],
-    "caption": "4) trust in the country behind it"
-  },
-  {
-    "id": "s35",
-    "type": "screenshot",
-    "narration": "When investors get scared, they run to currencies they trust — the dollar, the Swiss franc — and those climb just for being boring and safe.",
-    "sourceId": "wiki-currency"
-  },
-  {
-    "id": "s36",
-    "type": "character",
-    "narration": "This is why a single sentence from a central banker can move a currency more than a year of ordinary trading. The market is really pricing the future.",
+    "narration": "Now it's just like you and me. It has to earn or find real dollars to pay. And if it can't, there's no printer in the world that helps.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "phone",
-        "label": "one sentence…"
+        "name": "dollar",
+        "label": "must find real $"
       },
       {
-        "name": "ticker",
-        "label": "…markets lurch"
+        "name": "warning",
+        "label": "no printer helps"
       }
     ]
+  },
+  {
+    "id": "s22",
+    "type": "callout",
+    "narration": "This single fact — owing money you cannot print — sits at the heart of almost every great sovereign collapse.",
+    "text": "the trap",
+    "sub": "owe a currency you can't print",
+    "icon": "chain"
+  },
+  {
+    "id": "s23",
+    "type": "title",
+    "narration": "So watch how the spiral actually turns, step by step.",
+    "heading": "The Anatomy of a Collapse",
+    "kicker": "how it unravels"
+  },
+  {
+    "id": "s24",
+    "type": "stage",
+    "narration": "It usually starts in good times. Money is cheap, lenders are eager, and the government borrows freely — for roads, salaries, subsidies, sometimes just to look good.",
+    "icons": [
+      "capitol",
+      "chartup"
+    ],
+    "caption": "step 1: the borrowing boom"
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "narration": "Then something cracks. A recession. A collapse in some key export price. A war. A scandal. Suddenly lenders look at the books and get nervous.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "newspaper",
+        "label": "bad news hits"
+      },
+      {
+        "name": "gauge",
+        "label": "confidence dips"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "stage",
+    "narration": "And the instant they're nervous, they demand to be paid more to keep lending. The interest rate on the country's debt — its bond yield — spikes.",
+    "motif": "yieldspike",
+    "caption": "step 2: borrowing costs spike"
+  },
+  {
+    "id": "s27",
+    "type": "character",
+    "narration": "Which is brutally ironic. Exactly when a country can least afford it, borrowing suddenly gets far more expensive — right when it needs to borrow the most.",
+    "pose": "handtohead",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "ticker",
+        "label": "rates jump"
+      },
+      {
+        "name": "warning",
+        "label": "…worst timing"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "stage",
+    "narration": "Now it's borrowing just to pay the interest on what it already owes. That's the debt spiral — and once you're in it, the maths only gets worse.",
+    "motif": "debtspiral",
+    "caption": "step 3: the debt spiral"
+  },
+  {
+    "id": "s29",
+    "type": "stage",
+    "narration": "Investors start yanking their money out of the country altogether. Capital flight. And as they dump the local currency to escape, it starts to collapse too.",
+    "motif": "capitalflight",
+    "caption": "step 4: the money runs"
+  },
+  {
+    "id": "s30",
+    "type": "screenshot",
+    "narration": "Then the credit-rating agencies — Moody's, S&P, Fitch — pile on, slashing the country's rating.",
+    "sourceId": "wiki-rating"
+  },
+  {
+    "id": "s31",
+    "type": "stage",
+    "narration": "Down through the grades it tumbles — from safe, to risky, to 'junk,' to the dreaded D for default. And each downgrade scares off more lenders, which triggers the next downgrade.",
+    "motif": "downgrade",
+    "caption": "AAA → junk → D"
+  },
+  {
+    "id": "s32",
+    "type": "character",
+    "narration": "It's a doom loop. Fear raises rates. Higher rates deepen the crisis. The deeper crisis creates more fear. Round and round, faster and faster.",
+    "pose": "think",
+    "expression": "worried",
+    "bubble": "the doom loop"
+  },
+  {
+    "id": "s33",
+    "type": "stage",
+    "narration": "Until one day a payment comes due, and the money simply isn't there. The country misses it.",
+    "motif": "stamp",
+    "stampText": "DEFAULT"
+  },
+  {
+    "id": "s34",
+    "type": "screenshot",
+    "narration": "On that day, the government formally admits it cannot pay what it promised — and everything the debt was quietly holding up begins to fall.",
+    "sourceId": "wiki-defaultfin"
+  },
+  {
+    "id": "s35",
+    "type": "title",
+    "narration": "Because a default is never just a line in the financial press. It lands, hard, on ordinary people — often the ones who did nothing wrong.",
+    "heading": "What It Does to Real People",
+    "kicker": "the human bill"
+  },
+  {
+    "id": "s36",
+    "type": "stage",
+    "narration": "First, the banks. Terrified of a collapse, people rush to pull out their savings all at once. To stop the run, the government simply freezes the accounts.",
+    "motif": "bankrun",
+    "caption": "the banks freeze"
   },
   {
     "id": "s37",
-    "type": "title",
-    "narration": "But an exchange rate only tells you what a currency is worth to a trader. There is a second kind of value — one that matters far more to you.",
-    "heading": "What a Currency Actually Buys",
-    "kicker": "Purchasing power"
+    "type": "screenshot",
+    "narration": "They slam on capital controls — hard limits on how much of your own money you're allowed to withdraw, or move out of the country.",
+    "sourceId": "wiki-capitalcontrol"
   },
   {
     "id": "s38",
-    "type": "screenshot",
-    "narration": "Economists call it purchasing power — how much real stuff your money actually buys where you live.",
-    "sourceId": "wiki-ppp"
+    "type": "doodle",
+    "narration": "In Argentina in 2001, they called it the corralito — 'the little fence.' People watched their life savings get locked behind it, then shrink as the currency crashed.",
+    "items": [
+      "flagAR",
+      "vault"
+    ],
+    "labels": [
+      "Argentina, 2001",
+      "the \"corralito\""
+    ],
+    "caption": "your savings — locked in"
   },
   {
     "id": "s39",
-    "type": "stage",
-    "narration": "Picture the exact same basket of groceries in different countries. Convert the price into one currency, and it still comes out wildly different.",
-    "motif": "basket",
-    "caption": "same basket, different real price"
+    "type": "compare",
+    "narration": "Money that was worth ten thousand dollars on Monday could be worth a fraction of that by the end of the month. Savings, pensions, wages — quietly vaporized.",
+    "left": {
+      "title": "Monday",
+      "value": "$10,000",
+      "icon": "piggybank"
+    },
+    "right": {
+      "title": "weeks later",
+      "value": "$3,000",
+      "icon": "chartdown"
+    }
   },
   {
     "id": "s40",
-    "type": "chart",
-    "narration": "Here's that same cart of groceries, converted into US dollars. Same food, same amount — but what it costs depends entirely on where you're standing.",
-    "chartType": "bar",
-    "title": "The same cart of groceries, in US dollars",
-    "unit": "USD",
-    "data": [
-      {
-        "label": "Mumbai",
-        "value": 45
-      },
-      {
-        "label": "Tokyo",
-        "value": 72
-      },
-      {
-        "label": "New York",
-        "value": 100
-      },
-      {
-        "label": "Zurich",
-        "value": 130
-      }
+    "type": "stage",
+    "narration": "And because the country can't get dollars, it can't pay for imports. So the things that come from abroad start to disappear — fuel, medicine, food.",
+    "icons": [
+      "gaspump",
+      "warning"
     ],
-    "highlight": 3,
-    "note": "same cart, double the price"
+    "caption": "the shortages begin"
   },
   {
     "id": "s41",
-    "type": "screenshot",
-    "narration": "There's a famous, only-half-serious version of this: the Big Mac Index. The same burger, priced around the world, hints at which currencies are secretly cheap or expensive.",
-    "sourceId": "wiki-bigmac"
+    "type": "doodle",
+    "narration": "In Sri Lanka in 2022, drivers queued for days for petrol that might never arrive. Hospitals ran out of medicine. The power went out for hours at a time.",
+    "items": [
+      "flagLK",
+      "gaspump"
+    ],
+    "labels": [
+      "Sri Lanka, 2022",
+      "days-long fuel queues"
+    ],
+    "caption": "daily life grinds to a halt"
   },
   {
     "id": "s42",
-    "type": "character",
-    "narration": "So a strong currency and a cheap place to live are not the same sentence. The exchange rate and the real buying power are two different things. Hold that thought.",
-    "pose": "think",
-    "bubble": "rate ≠ real value",
-    "props": [
-      {
-        "name": "basket",
-        "label": "what it really buys"
-      }
-    ]
+    "type": "callout",
+    "narration": "And when people lose everything at once, they take to the streets. In the chaos of its default, Argentina ran through five presidents in under two weeks.",
+    "text": "5 presidents",
+    "sub": "Argentina — in under two weeks",
+    "icon": "protest",
+    "break": true
   },
   {
     "id": "s43",
-    "type": "title",
-    "narration": "And this is where it stops being a traders' game. These numbers reach straight into your daily life.",
-    "heading": "What This Means For You",
-    "kicker": "Everyday effects"
+    "type": "doodle",
+    "narration": "In Sri Lanka, protesters stormed the president's palace and swam in his pool. He fled the country. Default doesn't just break economies — it topples governments.",
+    "items": [
+      "flagLK",
+      "protest"
+    ],
+    "labels": [
+      "Sri Lanka, 2022",
+      "the palace stormed"
+    ],
+    "caption": "governments fall"
   },
   {
     "id": "s44",
     "type": "stage",
-    "narration": "When your currency is strong, every holiday abroad, every imported gadget, every online order from overseas quietly gets cheaper.",
+    "narration": "Riots, strikes, a wave of emigration, a lost decade of growth. The number on the bond is abstract. This part never is.",
     "icons": [
-      "globe",
-      "pricetag"
+      "protest",
+      "warning"
     ],
-    "caption": "a strong currency = cheaper travel"
+    "caption": "the social cost is the real cost"
   },
   {
     "id": "s45",
-    "type": "stage",
-    "narration": "When it weakens, the opposite happens. Imported cars, phones, even your fuel can creep upward in price — without a single tax ever changing.",
-    "icons": [
-      "gaspump",
-      "chartup"
-    ],
-    "caption": "a weak currency = pricier imports"
+    "type": "character",
+    "narration": "So, facing all of that, who does a broke country actually turn to? There's really only one number left to call.",
+    "pose": "explain",
+    "expression": "worried",
+    "bubble": "…who do you call?",
+    "props": [
+      {
+        "name": "phone",
+        "label": "one call left"
+      }
+    ]
   },
   {
     "id": "s46",
-    "type": "character",
-    "narration": "Because so much of the world's oil and goods are priced in dollars, a weaker local currency means you hand over more of it for the exact same barrel.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "oilbarrel",
-        "label": "priced in $"
-      },
-      {
-        "name": "gaspump",
-        "label": "…costs you more"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The International Monetary Fund — the world's lender of last resort. A giant pool of money that nations pay into, to rescue one another when everything else fails.",
+    "sourceId": "wiki-imf"
   },
   {
     "id": "s47",
-    "type": "title",
-    "narration": "Now, one currency plays by its own rules entirely. The US dollar.",
-    "heading": "Why the Dollar Is Different",
-    "kicker": "The reserve currency"
+    "type": "stage",
+    "narration": "When no private lender will touch you, the IMF steps in with an emergency loan — the lifeline that keeps the lights on and the country functioning.",
+    "motif": "lifering",
+    "caption": "the IMF throws a lifeline"
   },
   {
     "id": "s48",
-    "type": "callout",
-    "narration": "Nearly nine out of every ten currency trades on Earth involve dollars — even when no American is anywhere in the room.",
-    "text": "88%",
-    "sub": "of all FX trades involve the dollar",
-    "icon": "percent"
+    "type": "character",
+    "narration": "But that lifeline comes with strings. Thick ones. In exchange for the cash, the IMF demands the country fix its budget — and fast.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "lifering",
+        "label": "rescue loan"
+      },
+      {
+        "name": "scissors",
+        "label": "…with conditions"
+      }
+    ]
   },
   {
     "id": "s49",
-    "type": "screenshot",
-    "narration": "It is the world's reserve currency: the money other countries stockpile, and the money global trade is mostly priced in.",
-    "sourceId": "wiki-reserve"
+    "type": "stage",
+    "narration": "That medicine has a name: austerity. Cut government spending. Raise taxes. Slash subsidies. Shrink pensions. Balance the books, whatever the cost.",
+    "motif": "belttighten",
+    "caption": "the price: austerity"
   },
   {
     "id": "s50",
-    "type": "stage",
-    "narration": "Oil, ships, commodities, huge piles of global debt — all quoted in dollars. So almost everyone needs a stack of them, all the time.",
-    "icons": [
-      "oilbarrel",
-      "dollar"
-    ],
-    "caption": "oil & world trade priced in $"
+    "type": "screenshot",
+    "narration": "The logic is simple: spend less than you earn, and you can start paying people back. In practice, it's one of the most bitterly argued ideas in all of economics.",
+    "sourceId": "wiki-austerity"
   },
   {
     "id": "s51",
-    "type": "callout",
-    "narration": "It's why central banks hoard them. China alone sits on over three trillion dollars of foreign reserves — a war chest held mostly in US assets.",
-    "text": "$3 trillion",
-    "sub": "China's foreign-exchange reserves",
-    "icon": "vault"
+    "type": "character",
+    "narration": "Because austerity in a crisis can be a cruel trap of its own. Cut spending hard, and the economy shrinks even faster — so tax revenue falls too, and the hole barely closes.",
+    "pose": "think",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "scissors",
+        "label": "cut spending"
+      },
+      {
+        "name": "chartdown",
+        "label": "…economy shrinks"
+      }
+    ]
   },
   {
     "id": "s52",
-    "type": "screenshot",
-    "narration": "Those reserves are a country's rainy-day fund — the ammunition it uses to steady its own currency when markets turn against it.",
-    "sourceId": "wiki-reserves"
+    "type": "doodle",
+    "narration": "Greece lived this for a decade. Round after round of cuts, in return for bailout after bailout — and an economy that shrank by a quarter.",
+    "items": [
+      "flagGR",
+      "scissors"
+    ],
+    "labels": [
+      "Greece, 2010s",
+      "a lost decade"
+    ],
+    "caption": "austerity, for ten years"
   },
   {
     "id": "s53",
-    "type": "diagram",
-    "narration": "Add it up and the dollar has built-in demand no one else gets. The world needs dollars just to function, which keeps a permanent floor under the price.",
-    "title": "The dollar's built-in demand",
-    "nodes": [
-      {
-        "id": "oil",
-        "label": "oil & trade in $",
-        "icon": "oilbarrel",
-        "x": 0.18,
-        "y": 0.3
-      },
-      {
-        "id": "safe",
-        "label": "US debt = the safe asset",
-        "icon": "bank",
-        "x": 0.18,
-        "y": 0.74
-      },
-      {
-        "id": "need",
-        "label": "everyone needs dollars",
-        "icon": "dollar",
-        "x": 0.54,
-        "y": 0.52
-      },
-      {
-        "id": "strong",
-        "label": "steady demand",
-        "icon": "chartup",
-        "x": 0.86,
-        "y": 0.52
-      }
-    ],
-    "edges": [
-      {
-        "from": "oil",
-        "to": "need"
-      },
-      {
-        "from": "safe",
-        "to": "need"
-      },
-      {
-        "from": "need",
-        "to": "strong"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "It brought mass unemployment, street protests, and a genuine fear that Greece would be forced out of the euro entirely.",
+    "sourceId": "wiki-greece"
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "It lets the dollar stay strong even when America borrows enormous amounts — a privilege economists call its exorbitant advantage.",
+    "narration": "Which points straight at Greece's special trap. It owed euros — but it couldn't print euros. For a country in crisis, that is the worst of both worlds.",
     "pose": "explain",
     "props": [
       {
-        "name": "globe",
-        "label": "the world's money"
+        "name": "euro",
+        "label": "owed euros"
       },
       {
-        "name": "dollar",
-        "label": "…stays strong anyway"
+        "name": "warning",
+        "label": "…couldn't print them"
       }
     ]
   },
   {
     "id": "s55",
-    "type": "title",
-    "narration": "So who actually decides the rate — the open market, or the government? That depends on the currency.",
-    "heading": "Floating, Fixed, and Pegged",
-    "kicker": "Who's really in control"
+    "type": "stage",
+    "narration": "And a default never stays in one country. Greece was so tangled up with Europe's banks that for a while it threatened to topple the entire euro like a line of dominoes.",
+    "motif": "dominoes",
+    "caption": "default spreads: contagion"
   },
   {
     "id": "s56",
-    "type": "screenshot",
-    "narration": "Most big currencies float. The market sets them, second by second, and central banks only nudge from the sidelines.",
-    "sourceId": "wiki-float"
+    "type": "title",
+    "narration": "So how does a default actually end? With a negotiation most people never hear about.",
+    "heading": "The Deal: Haircuts",
+    "kicker": "how defaults really end"
   },
   {
     "id": "s57",
-    "type": "timeline",
-    "narration": "It wasn't always this way. For decades, major currencies were fixed to gold. Then in 1971 the US cut that cord, and by 1973 the modern free-floating world began.",
-    "title": "How we got to floating money",
-    "events": [
-      {
-        "year": "1944",
-        "label": "Bretton Woods: fixed to gold",
-        "icon": "goldbar"
-      },
-      {
-        "year": "1971",
-        "label": "US ends the gold window",
-        "icon": "warning"
-      },
-      {
-        "year": "1973",
-        "label": "currencies start to float",
-        "icon": "exchange"
-      },
-      {
-        "year": "today",
-        "label": "the market sets the price",
-        "icon": "candles"
-      }
-    ],
-    "highlight": 2
-  },
-  {
-    "id": "s58",
-    "type": "stage",
-    "narration": "But some countries peg their currency instead — they promise to keep it locked to another one, usually the dollar.",
-    "motif": "peg",
-    "caption": "a peg: anchored to the dollar"
-  },
-  {
-    "id": "s59",
-    "type": "screenshot",
-    "narration": "A fixed rate buys stability and predictable trade. But that promise comes with a very real bill.",
-    "sourceId": "wiki-fixed"
-  },
-  {
-    "id": "s60",
     "type": "character",
-    "narration": "To hold the line, the central bank has to buy and sell its own currency constantly — burning through its reserves of dollars to defend the peg.",
+    "narration": "Here's the part people get wrong. 'Default' almost never means 'nobody gets paid, ever.' It means it's time to renegotiate.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "vault",
-        "label": "spend the reserves"
-      },
-      {
-        "name": "anchor",
-        "label": "…defend the peg"
+        "name": "handshake",
+        "label": "time to renegotiate"
       }
     ]
   },
   {
-    "id": "s61",
+    "id": "s58",
     "type": "screenshot",
-    "narration": "And markets know it. In 1992, Britain tried to hold its pound inside a fixed European system. Traders bet it simply couldn't.",
-    "sourceId": "wiki-blackwed"
+    "narration": "The country sits down with the people it owes and restructures the debt — stretching out the payments, cutting the interest, and reducing what's owed.",
+    "sourceId": "wiki-restructure"
+  },
+  {
+    "id": "s59",
+    "type": "stage",
+    "narration": "Lenders agree to take less than they're owed — sometimes far less. In the trade, that loss has a grim little nickname: a haircut.",
+    "motif": "haircut",
+    "caption": "creditors take a haircut"
+  },
+  {
+    "id": "s60",
+    "type": "screenshot",
+    "narration": "And these haircuts can be absolutely brutal.",
+    "sourceId": "wiki-haircut"
+  },
+  {
+    "id": "s61",
+    "type": "callout",
+    "narration": "When Greece restructured, private lenders effectively wrote off around three-quarters of what they were owed — the biggest such deal in history.",
+    "text": "~75%",
+    "sub": "the haircut Greece's lenders took",
+    "icon": "scissors",
+    "break": true
   },
   {
     "id": "s62",
     "type": "character",
-    "narration": "Speculators, led by George Soros, sold the pound by the billions. The Bank of England spent a fortune and hiked rates in a single panicked morning to defend the line.",
+    "narration": "For the country, it's a release: a crushing debt suddenly becomes payable. For the lenders, it's the price of having gambled on a government that couldn't pay.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "ticker",
-        "label": "sell the pound"
-      },
-      {
-        "name": "bank",
-        "label": "…defend it!"
+        "name": "scale",
+        "label": "both sides lose something"
       }
     ]
   },
   {
     "id": "s63",
-    "type": "callout",
-    "narration": "By that afternoon — 'Black Wednesday' — Britain gave up and let the pound fall. The Treasury's loss was later estimated at over three billion pounds. One trader reportedly made a billion dollars.",
-    "text": "£3.3 billion",
-    "sub": "lost defending the pound in a day",
-    "icon": "chartdown",
-    "break": true
+    "type": "stage",
+    "narration": "But not everyone plays along. A few specialist funds buy up defaulted debt dirt cheap, precisely so they can refuse the deal and sue for every last cent.",
+    "motif": "vulture",
+    "caption": "then the vultures circle"
   },
   {
     "id": "s64",
-    "type": "stage",
-    "narration": "That was the lesson markets never forgot. If a fixed rate drifts too far from reality, enough money betting against it can break even a mighty central bank.",
-    "icons": [
-      "flagGB",
-      "chartdown"
-    ],
-    "caption": "the market beat the central bank"
+    "type": "screenshot",
+    "narration": "They're nicknamed vulture funds. And one chased Argentina so relentlessly it once had an Argentine navy ship seized in a foreign port as collateral.",
+    "sourceId": "wiki-vulture"
   },
   {
     "id": "s65",
-    "type": "stage",
-    "narration": "Because when the reserves finally run dry, the peg snaps — and the currency can collapse overnight.",
-    "motif": "crash",
-    "caption": "when the peg finally snaps",
-    "accent": true
+    "type": "character",
+    "narration": "A single warship, impounded halfway around the world, over a bond most people had written off a decade earlier. That's how long these fights can drag on.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "vulture",
+        "label": "the holdouts"
+      },
+      {
+        "name": "calendar",
+        "label": "…for a decade"
+      }
+    ]
   },
   {
     "id": "s66",
-    "type": "doodle",
-    "narration": "It's a story that has played out again and again — a proud fixed rate, then a sudden, brutal devaluation that wipes out savings in a single day.",
-    "items": [
-      "flagAR",
-      "chartdown"
-    ],
-    "labels": [
-      "Argentina",
-      "again and again"
-    ],
-    "caption": "the cost of a broken peg"
+    "type": "title",
+    "narration": "So after all of it — the freeze, the crash, the austerity, the haircut — is a defaulted country finished for good?",
+    "heading": "After the Fall",
+    "kicker": "does it ever recover?"
   },
   {
     "id": "s67",
     "type": "screenshot",
-    "narration": "Some countries go further and give up their own currency entirely.",
-    "sourceId": "wiki-euro"
+    "narration": "Almost never. For a while it's locked out — lenders won't touch it, or only at punishing rates. But markets have surprisingly short memories.",
+    "sourceId": "wiki-argentina"
   },
   {
     "id": "s68",
-    "type": "stage",
-    "narration": "Around twenty nations share the euro. One money, no exchange-rate friction between them — but also no private lever left to adjust when their own economy needs it.",
-    "icons": [
-      "euro",
-      "handshake"
+    "type": "timeline",
+    "narration": "Argentina defaulted in 2001, restructured, and within fifteen years was borrowing from the very same markets again — right before defaulting all over again.",
+    "title": "Argentina's long road back (and back again)",
+    "events": [
+      {
+        "year": "2001",
+        "label": "defaults (~$100B)",
+        "icon": "warning"
+      },
+      {
+        "year": "2005",
+        "label": "big haircut deal",
+        "icon": "scissors"
+      },
+      {
+        "year": "2016",
+        "label": "borrowing again",
+        "icon": "bank"
+      },
+      {
+        "year": "2020",
+        "label": "…defaults again",
+        "icon": "chartdown"
+      }
     ],
-    "caption": "20 countries, one currency"
+    "highlight": 3
   },
   {
     "id": "s69",
+    "type": "stage",
+    "narration": "Because a functioning country, even a burned one, is still an economy that lenders eventually want a piece of. A clean slate plus a growing economy is a tempting bet.",
+    "icons": [
+      "chartup",
+      "globe"
+    ],
+    "caption": "recovery — eventually"
+  },
+  {
+    "id": "s70",
+    "type": "compare",
+    "narration": "And sometimes, brutal as it sounds, default is the rational choice. Crushing an entire generation under impossible debt can be worse than simply hitting reset.",
+    "left": {
+      "title": "keep paying",
+      "value": "crush a generation",
+      "icon": "chain"
+    },
+    "right": {
+      "title": "default & reset",
+      "value": "pain, then recover",
+      "icon": "chartup"
+    }
+  },
+  {
+    "id": "s71",
     "type": "character",
-    "narration": "Others simply adopt the US dollar outright — Ecuador, El Salvador, Panama. They import America's stability, and hand their monetary steering wheel straight to the Federal Reserve.",
+    "narration": "Which quietly flips the usual morality of it. We're taught that paying your debts is always right. For a country, it's a cold calculation about which path causes less suffering.",
+    "pose": "think",
+    "bubble": "not always right to pay?"
+  },
+  {
+    "id": "s72",
+    "type": "chalkboard",
+    "narration": "And that uncovers the real lesson hiding under all the drama.",
+    "lines": [
+      "a country isn't broke",
+      "the day it runs out of cash —",
+      "it's broke the day the world",
+      "stops believing it will pay."
+    ]
+  },
+  {
+    "id": "s73",
+    "type": "stage",
+    "narration": "Just like the value of money itself, a government's power to borrow runs almost entirely on confidence. On the belief that it's good for it.",
+    "motif": "trustprop",
+    "caption": "it all rests on belief"
+  },
+  {
+    "id": "s74",
+    "type": "character",
+    "narration": "While the world believes you'll pay, you can roll your debt over forever, cheaply, like magic. The debt never actually has to be repaid at all.",
     "pose": "explain",
     "props": [
       {
-        "name": "dollar",
-        "label": "adopt the $"
-      },
-      {
-        "name": "capitol",
-        "label": "…the Fed decides"
+        "name": "handshake",
+        "label": "belief = cheap debt forever"
       }
     ]
   },
   {
-    "id": "s70",
-    "type": "title",
-    "narration": "Which brings us to the nightmare version of everything we've just said. What happens when the trust behind a currency completely disappears?",
-    "heading": "When the Trust Runs Out",
-    "kicker": "Hyperinflation"
-  },
-  {
-    "id": "s71",
-    "type": "stage",
-    "narration": "A government spends far more than it collects, so it prints the difference. Prices rise, so it prints even more to keep up. And that is the trap closing.",
-    "motif": "printmoney",
-    "caption": "print… to pay for… more printing"
-  },
-  {
-    "id": "s72",
-    "type": "stage",
-    "narration": "Push it far enough and you get hyperinflation — where money loses value by the hour. People get paid twice a day and run to spend it before lunch costs more than breakfast did.",
-    "motif": "wheelbarrow",
-    "caption": "a wheelbarrow of cash for one loaf"
-  },
-  {
-    "id": "s73",
-    "type": "screenshot",
-    "narration": "In the very worst episodes, prices have doubled every single day.",
-    "sourceId": "wiki-hyper"
-  },
-  {
-    "id": "s74",
-    "type": "callout",
-    "narration": "Zimbabwe once printed a single hundred-trillion-dollar banknote. By the end, it couldn't reliably buy a bus ticket.",
-    "text": "100 trillion",
-    "sub": "one Zimbabwean banknote",
-    "icon": "banknote"
-  },
-  {
     "id": "s75",
-    "type": "doodle",
-    "narration": "Weimar Germany, Zimbabwe, Venezuela — different decades, identical pattern. Once people stop believing the number on the note, the number means nothing.",
-    "items": [
-      "flagAR",
-      "flagLK",
-      "flagGR"
-    ],
-    "labels": [
-      "Argentina",
-      "Sri Lanka",
-      "Greece"
-    ],
-    "caption": "trust, once gone, is brutal to rebuild"
+    "type": "stage",
+    "narration": "The day that belief dies, the magic stops — and the reckoning that was always theoretically there arrives all at once.",
+    "motif": "crash",
+    "caption": "…the day belief dies",
+    "accent": true
   },
   {
     "id": "s76",
-    "type": "stage",
-    "narration": "The paper is exactly as real as it was yesterday. What vanished wasn't the ink. It was the belief.",
-    "motif": "vanish",
-    "caption": "…the belief, gone",
-    "accent": true
+    "type": "callout",
+    "narration": "So a country doesn't go bankrupt the day it runs out of money. It goes bankrupt the day the world stops trusting it to pay.",
+    "text": "confidence",
+    "sub": "the only thing really holding it up",
+    "icon": "gauge"
   },
   {
     "id": "s77",
     "type": "character",
-    "narration": "Which finally reveals the strange truth sitting underneath all of this.",
-    "pose": "think",
-    "bubble": "so what IS it?"
-  },
-  {
-    "id": "s78",
-    "type": "screenshot",
-    "narration": "Almost every currency today is 'fiat' — it isn't backed by gold, or by anything you can touch. It's backed by trust.",
-    "sourceId": "wiki-fiat"
-  },
-  {
-    "id": "s79",
-    "type": "stage",
-    "narration": "A modern currency's value rests on three things: a real economy that makes stuff people want, stable rules, and the shared belief that everyone else will still take it tomorrow.",
-    "motif": "trustprop",
-    "caption": "value held up by belief"
-  },
-  {
-    "id": "s80",
-    "type": "chalkboard",
-    "narration": "So the value of a currency is really three questions wearing a trench coat. What can it buy? Who wants it? And do you trust the people behind it?",
-    "lines": [
-      "a currency is worth…",
-      "what it can buy,",
-      "who wants it,",
-      "and whether you trust it."
-    ]
-  },
-  {
-    "id": "s81",
-    "type": "character",
-    "narration": "Change any one of those three, and the price on the screen moves. That, honestly, is the whole game.",
+    "narration": "It's the exact same force behind a currency's value, behind a bank run, behind every fraud we've ever covered. Trust builds slowly — and collapses in an afternoon.",
     "pose": "explain",
     "props": [
       {
-        "name": "basket",
-        "label": "what it buys"
+        "name": "gauge",
+        "label": "trust builds slowly"
       },
       {
-        "name": "exchange",
-        "label": "who wants it"
-      },
-      {
-        "name": "scale",
-        "label": "do you trust it"
+        "name": "warning",
+        "label": "…gone in a day"
       }
     ]
   },
   {
-    "id": "s82",
+    "id": "s78",
     "type": "stage",
-    "narration": "It's exactly why some people turned to crypto — an attempt to build money that needs no government's promise. But as we've seen on this channel, that just moves the question of trust somewhere else.",
+    "narration": "The flags change — Argentina, Greece, Sri Lanka, the next one. But the pattern underneath is always the same promise, and the same moment it snaps.",
     "icons": [
-      "token",
+      "globe",
       "scale"
     ],
-    "caption": "crypto tried to remove the trust"
+    "caption": "the pattern never changes"
   },
   {
-    "id": "s83",
-    "type": "callout",
-    "narration": "Because in the end, the number on a banknote isn't a fact. It's a promise — that tomorrow, someone else will still take it from you.",
-    "text": "just a promise",
-    "sub": "…that others will take it tomorrow",
-    "icon": "handshake"
-  },
-  {
-    "id": "s84",
-    "type": "stage",
-    "narration": "A dollar, a euro, a yen — each one is just a promise that billions of people have quietly agreed to believe. That shared agreement is the value.",
-    "icons": [
-      "coins",
-      "globe"
-    ],
-    "caption": "a promise the whole world agreed to"
-  },
-  {
-    "id": "s85",
+    "id": "s79",
     "type": "character",
-    "narration": "So next time an exchange rate jumps and the headlines panic, you'll know what actually moved. Not the paper — the demand, the printing, or the trust behind it.",
+    "narration": "So the next time a headline says a country is 'on the brink of default,' you'll know exactly what that means — and what comes next.",
     "pose": "present",
-    "bubble": "now you can see it",
+    "bubble": "now you know the pattern",
     "props": [
       {
-        "name": "candles",
-        "label": "…read the real story"
+        "name": "newspaper",
+        "label": "…read what's coming"
       }
     ]
   },
   {
-    "id": "s86",
+    "id": "s80",
     "type": "character",
-    "narration": "If this made the number on the money finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this made the scariest headline in finance finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "exchange",
+        "name": "bond",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s87",
+    "id": "s81",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

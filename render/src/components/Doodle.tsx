@@ -23,6 +23,8 @@ export type DoodleName =
   | "token" | "yacht" | "island" | "laptop" | "chip" | "rocket" | "phone" | "vault"
   // EP016 (currencies) additions:
   | "euro" | "yen" | "pound" | "exchange" | "candles" | "basket" | "anchor" | "magnet" | "wheelbarrow" | "banknote"
+  // EP017 (sovereign default) additions:
+  | "scissors" | "lifering" | "vulture" | "rating" | "protest"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -886,6 +888,62 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={30} y1={72} x2={24} y2={86} strokeWidth={3} />
           {[30, 42, 54].map((x, i) => <RRect key={i} x={x} y={38 + (i % 2) * 2} w={16} h={10} fill={GREEN} strokeWidth={1.4} />)}
           <text x={40} y={32} fontSize={13} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$$$</text>
+        </>
+      );
+
+    // ---- EP017 (sovereign default) doodles ----
+    case "scissors":
+      // Haircut / austerity cuts.
+      return (
+        <>
+          <RLine x1={30} y1={30} x2={74} y2={66} strokeWidth={4} />
+          <RLine x1={30} y1={70} x2={74} y2={34} strokeWidth={4} />
+          <RCircle cx={24} cy={30} d={16} fill="none" strokeWidth={3} />
+          <RCircle cx={24} cy={70} d={16} fill="none" strokeWidth={3} />
+          <RCircle cx={74} cy={50} d={6} fill={INK} fillStyle="solid" strokeWidth={1.4} />
+        </>
+      );
+    case "lifering":
+      // IMF rescue / lender of last resort.
+      return (
+        <>
+          <RCircle cx={50} cy={50} d={74} fill={RED} strokeWidth={SW} />
+          <RCircle cx={50} cy={50} d={34} fill="#fff" strokeWidth={SW} />
+          {[0, 1, 2, 3].map((k) => { const a = k * Math.PI / 2 + Math.PI / 4; return <RRect key={k} x={50 + 24 * Math.cos(a) - 7} y={50 + 24 * Math.sin(a) - 7} w={14} h={14} fill="#fff" strokeWidth={1.4} />; })}
+        </>
+      );
+    case "vulture":
+      // Vulture / distressed-debt funds circling.
+      return (
+        <>
+          <REllipse cx={50} cy={60} w={40} h={30} fill="#3a3f45" strokeWidth={SW} />
+          <RCircle cx={50} cy={34} d={22} fill="#4a5056" strokeWidth={SW} />
+          <path d="M60 32 L74 36 L60 40 Z" fill={GOLD} stroke={INK} strokeWidth={1.6} />
+          <RCircle cx={46} cy={30} d={5} fill={RED} fillStyle="solid" strokeWidth={1} />
+          <path d="M30 56 Q16 48 22 40 M70 56 Q84 48 78 40" fill="none" stroke={INK} strokeWidth={2.4} strokeLinecap="round" />
+          <RLine x1={44} y1={84} x2={44} y2={92} strokeWidth={2.4} />
+          <RLine x1={56} y1={84} x2={56} y2={92} strokeWidth={2.4} />
+        </>
+      );
+    case "rating":
+      // A credit-rating badge dropping toward junk.
+      return (
+        <>
+          <RPath d="M50 12 L84 26 L78 62 Q50 92 50 92 Q22 62 22 26 Z" fill={PARCH} strokeWidth={SW} />
+          <text x={50} y={46} fontSize={20} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">AAA</text>
+          <path d="M36 54 L64 54 M50 54 L58 70" fill="none" stroke={RED} strokeWidth={3} strokeLinecap="round" />
+          <path d="M58 70 l-9 1 M58 70 l-1 -9" fill="none" stroke={RED} strokeWidth={3} strokeLinecap="round" />
+        </>
+      );
+    case "protest":
+      // Social unrest — a protest placard.
+      return (
+        <>
+          <RLine x1={38} y1={46} x2={38} y2={92} strokeWidth={4} />
+          <RRect x={20} y={14} w={60} h={36} fill="#fff" strokeWidth={SW} />
+          <RLine x1={28} y1={26} x2={72} y2={26} strokeWidth={3} />
+          <RLine x1={28} y1={34} x2={64} y2={34} strokeWidth={3} />
+          <RLine x1={28} y1={42} x2={70} y2={42} strokeWidth={3} />
         </>
       );
   }

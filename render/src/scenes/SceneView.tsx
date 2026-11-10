@@ -470,7 +470,7 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const VW = 980, VH = 520;
-  const ink = theme.ink, gold = "#e8b73a", red = theme.accent, green = "#1f7a3d", blue = "#3a6ea5";
+  const ink = theme.ink, gold = "#e8b73a", red = theme.accent, green = "#1f7a3d", blue = "#3a6ea5", parch = "#fbf3d9";
   const m = scene.motif;
   const clampBoth = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
   let art: React.ReactNode = null;
@@ -823,6 +823,157 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
           <text x={120} y={78} fontSize={64} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{tags[idx][0]}{tags[idx][1]}</text>
           <text x={120} y={-18} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>same basket</text>
         </g>
+      </svg>
+    );
+  } else if (m === "yieldspike") {
+    // Bond yields stay calm, then spike violently as lenders panic.
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const path = "M 80 380 L 240 372 L 400 384 L 540 366 L 650 370 L 740 250 L 820 120 L 900 60";
+    const clipId = React.useId().replace(/:/g, "");
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={70} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <RLine x1={80} y1={40} x2={80} y2={440} stroke={ink} strokeWidth={4} />
+        <text x={70} y={34} fontSize={26} fontWeight={700} fill={theme.inkSoft} textAnchor="end" fontFamily={sans}>yield</text>
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={7} seed={5} /></g>
+        {rev > 0.85 && <text x={880} y={48} fontSize={56} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={interpolate(frame, [fps * 2.0, fps * 2.4], [0, 1], clampBoth)}>↑</text>}
+      </svg>
+    );
+  } else if (m === "capitalflight") {
+    // Money flees the country: coins stream out of a bordered "country" box.
+    art = (
+      <svg width={VW} height={VH}>
+        <RRect x={70} y={150} w={360} h={240} fill="#eef2ee" strokeWidth={6} />
+        <text x={250} y={130} fontSize={30} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the country</text>
+        {Array.from({ length: 8 }, (_, i) => {
+          const prog = ((frame * 7 + i * 44) % 320) / 320;
+          const sx = 250 + (i % 3) * 20, sy = 200 + (i % 4) * 44;
+          const xx = sx + (940 - sx) * prog;
+          const yy = sy - 60 * Math.sin(prog * Math.PI);
+          const op = interpolate(prog, [0, 0.1, 0.8, 1], [0, 1, 1, 0]);
+          return <g key={i} opacity={op}><circle cx={xx} cy={yy} r={19} fill={gold} stroke={ink} strokeWidth={3} /><text x={xx} y={yy + 6} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>;
+        })}
+        <path d="M470 270 l40 0 M510 270 l-12 -9 M510 270 l-12 9" stroke={red} strokeWidth={5} fill="none" strokeLinecap="round" />
+      </svg>
+    );
+  } else if (m === "haircut") {
+    // Creditors take a haircut: scissors cut a bond, a chunk falls away.
+    const cut = interpolate(frame, [fps * 1.0, fps * 1.6], [0, 1], clampBoth);
+    const open = interpolate(frame, [fps * 0.4, fps * 1.0, fps * 1.4], [26, 2, 10], clampBoth);
+    const fall = interpolate(frame, [fps * 1.5, fps * 2.4], [0, 230], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 180)">
+          <rect x={0} y={0} width={260} height={160} rx={10} fill={parch} stroke={ink} strokeWidth={5} />
+          <text x={130} y={70} fontSize={30} fontWeight={800} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">BOND</text>
+          <text x={130} y={120} fontSize={40} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$100</text>
+        </g>
+        <g transform={`translate(560 ${180 + fall}) rotate(${fall * 0.1})`} opacity={1 - cut * 0.15}>
+          <rect x={0} y={0} width={110} height={160} rx={10} fill="#e9dcc0" stroke={ink} strokeWidth={5} strokeDasharray="6 6" />
+          <text x={55} y={92} fontSize={34} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">–70%</text>
+        </g>
+        <g transform={`translate(560 120) rotate(${-20 + cut * 8})`}>
+          <line x1={0} y1={0} x2={120} y2={open} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+          <line x1={0} y1={0} x2={120} y2={-open} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+          <circle cx={-10} cy={open} r={12} fill="none" stroke={ink} strokeWidth={5} />
+          <circle cx={-10} cy={-open} r={12} fill="none" stroke={ink} strokeWidth={5} />
+        </g>
+      </svg>
+    );
+  } else if (m === "lifering") {
+    // The IMF throws a lifeline to a sinking country — strings attached.
+    const sink = interpolate(frame, [10, fps * 2.2], [330, 380], clampBoth);
+    const throwIn = spring({ frame, fps, delay: fps * 0.8, config: { damping: 14 } });
+    const rx = 760 - throwIn * 300, ry = 150 + throwIn * 150;
+    art = (
+      <svg width={VW} height={VH}>
+        <path d={`M0 340 Q 245 ${320 + Math.sin(frame * 0.1) * 10} 490 340 T 980 340 L 980 520 L 0 520 Z`} fill="#bcd8e6" stroke={ink} strokeWidth={3} />
+        <g transform={`translate(360 ${sink})`}>
+          <rect x={-46} y={-46} width={92} height={92} rx={8} fill={gold} stroke={ink} strokeWidth={5} />
+          <text x={0} y={10} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle">🏛</text>
+        </g>
+        <line x1={820} y1={90} x2={rx} y2={ry} stroke={ink} strokeWidth={3} strokeDasharray="3 8" />
+        <g transform={`translate(${rx} ${ry})`}>
+          <circle cx={0} cy={0} r={46} fill={red} stroke={ink} strokeWidth={5} />
+          <circle cx={0} cy={0} r={22} fill="#fff" stroke={ink} strokeWidth={4} />
+        </g>
+        <text x={760} y={80} fontSize={28} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>IMF</text>
+      </svg>
+    );
+  } else if (m === "belttighten") {
+    // Austerity: a belt cinches to a tighter notch.
+    const notch = interpolate(frame, [fps * 0.6, fps * 2.2], [0, 150], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={120} y={210} width={740} height={70} rx={14} fill="#6b4a2f" stroke={ink} strokeWidth={5} />
+        {[0, 1, 2, 3, 4, 5].map((k) => <circle key={k} cx={300 + k * 70} cy={245} r={7} fill="#2e2016" />)}
+        <g transform={`translate(${520 - notch} 245)`}>
+          <rect x={-44} y={-44} width={88} height={88} rx={8} fill={gold} stroke={ink} strokeWidth={5} />
+          <rect x={-10} y={-30} width={20} height={60} rx={4} fill="none" stroke={ink} strokeWidth={4} />
+          <line x1={0} y1={0} x2={60} y2={0} stroke={ink} strokeWidth={6} />
+        </g>
+        <text x={490} y={360} fontSize={34} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">cut, cut, cut</text>
+      </svg>
+    );
+  } else if (m === "vulture") {
+    // Vulture funds circle a fallen bond.
+    art = (
+      <svg width={VW} height={VH}>
+        {[0, 1, 2].map((i) => {
+          const a = frame * 0.03 + (i / 3) * Math.PI * 2;
+          const cx = 490 + Math.cos(a) * 300, cy = 150 + Math.sin(a) * 60;
+          return <g key={i} transform={`translate(${cx} ${cy})`}>
+            <path d="M-34 0 Q0 -26 34 0 Q0 -8 -34 0 Z" fill="#3a3f45" stroke={ink} strokeWidth={3} />
+            <circle cx={0} cy={-4} r={8} fill="#4a5056" stroke={ink} strokeWidth={2} />
+          </g>;
+        })}
+        <g transform="translate(430 320)">
+          <rect x={0} y={0} width={130} height={90} rx={8} fill={parch} stroke={ink} strokeWidth={5} transform="rotate(-8)" />
+          <text x={70} y={56} fontSize={26} fontWeight={800} fill={ink} textAnchor="middle" fontFamily="Georgia, serif" transform="rotate(-8)">BOND</text>
+        </g>
+      </svg>
+    );
+  } else if (m === "downgrade") {
+    // Credit rating dial swings from AAA down toward D (junk).
+    const cx = VW / 2, cy = 420, R = 250;
+    const ang = interpolate(frame, [fps * 0.6, fps * 2.4], [Math.PI, Math.PI * 1.86], clampBoth);
+    const labels: [number, string][] = [[Math.PI, "AAA"], [Math.PI * 1.25, "A"], [Math.PI * 1.5, "BBB"], [Math.PI * 1.75, "junk"], [Math.PI * 2, "D"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <path d={`M ${cx - R} ${cy} A ${R} ${R} 0 0 1 ${cx + R} ${cy}`} fill="none" stroke={ink} strokeWidth={6} />
+        {labels.map(([a, t], i) => <text key={i} x={cx + (R + 34) * Math.cos(a)} y={cy + (R + 34) * Math.sin(a) + 8} fontSize={26} fontWeight={800} fill={i >= 3 ? red : theme.inkSoft} textAnchor="middle" fontFamily={sans}>{t}</text>)}
+        <line x1={cx} y1={cy} x2={cx + (R - 30) * Math.cos(ang)} y2={cy + (R - 30) * Math.sin(ang)} stroke={red} strokeWidth={9} strokeLinecap="round" />
+        <circle cx={cx} cy={cy} r={16} fill={ink} />
+      </svg>
+    );
+  } else if (m === "debtspiral") {
+    // Borrow to pay interest — a tightening downward spiral of $.
+    const pts: string[] = [];
+    for (let t = 0; t < 46; t++) { const a = t * 0.5, r = 230 - t * 4.4; pts.push(`${490 + r * Math.cos(a)},${250 + r * Math.sin(a)}`); }
+    const rev = interpolate(frame, [6, fps * 2.6], [0, 46], clampBoth);
+    const head = Math.min(45, Math.floor(rev));
+    const hx = 490 + (230 - head * 4.4) * Math.cos(head * 0.5), hy = 250 + (230 - head * 4.4) * Math.sin(head * 0.5);
+    art = (
+      <svg width={VW} height={VH}>
+        <polyline points={pts.slice(0, head + 1).join(" ")} fill="none" stroke={red} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx={hx} cy={hy} r={16} fill={gold} stroke={ink} strokeWidth={3} />
+        <text x={hx} y={hy + 6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        <text x={490} y={250} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">more debt</text>
+      </svg>
+    );
+  } else if (m === "bondsnowball") {
+    // Debt snowballs as it rolls — rolling over loans makes it bigger.
+    const roll = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const x = 120 + roll * 620, r = 40 + roll * 90, y = 400 - r;
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={60} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <g transform={`translate(${x} ${y}) rotate(${roll * 360})`}>
+          <circle cx={0} cy={0} r={r} fill="#eef2ee" stroke={ink} strokeWidth={5} />
+          {[0, 1, 2, 3].map((k) => { const a = k * 1.57; return <text key={k} x={r * 0.5 * Math.cos(a)} y={r * 0.5 * Math.sin(a) + 7} fontSize={r * 0.28} fontWeight={900} fill={theme.inkSoft} textAnchor="middle" fontFamily="Georgia, serif">IOU</text>; })}
+        </g>
+        <text x={x} y={y - r - 20} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">{Math.round(1 + roll * 9)}×</text>
       </svg>
     );
   } else {
