@@ -21,6 +21,8 @@ export type DoodleName =
   | "crookedE" | "shredder" | "houseofcards" | "shellbox" | "handcuffs"
   | "magichat" | "trophy" | "prison"
   | "token" | "yacht" | "island" | "laptop" | "chip" | "rocket" | "phone" | "vault"
+  // EP016 (currencies) additions:
+  | "euro" | "yen" | "pound" | "exchange" | "candles" | "basket" | "anchor" | "magnet" | "wheelbarrow" | "banknote"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -775,6 +777,115 @@ function shape(name: DoodleName): React.ReactNode {
           {[0, 1, 2, 3].map((k) => { const a = k * Math.PI / 2; return <RLine key={k} x1={50 + 8 * Math.cos(a)} y1={50 + 8 * Math.sin(a)} x2={50 + 18 * Math.cos(a)} y2={50 + 18 * Math.sin(a)} strokeWidth={2.4} />; })}
           <RLine x1={28} y1={80} x2={28} y2={88} strokeWidth={3} />
           <RLine x1={72} y1={80} x2={72} y2={88} strokeWidth={3} />
+        </>
+      );
+
+    // ---- EP016 (currencies) doodles ----
+    case "euro":
+      return (
+        <>
+          <RCircle cx={50} cy={50} d={66} fill="#3a6ea5" strokeWidth={SW} />
+          <RCircle cx={50} cy={50} d={50} fill="#5a8fc8" strokeWidth={1.4} />
+          <text x={50} y={64} fontSize={46} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">€</text>
+        </>
+      );
+    case "yen":
+      return (
+        <>
+          <RCircle cx={50} cy={50} d={66} fill="#fff" strokeWidth={SW} />
+          <RCircle cx={50} cy={50} d={50} fill="#f3e9ea" strokeWidth={1.4} />
+          <text x={50} y={66} fontSize={48} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">¥</text>
+        </>
+      );
+    case "pound":
+      return (
+        <>
+          <RCircle cx={50} cy={50} d={66} fill={GOLD} strokeWidth={SW} />
+          <RCircle cx={50} cy={50} d={50} fill={YELLOW} strokeWidth={1.4} />
+          <text x={50} y={66} fontSize={46} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">£</text>
+        </>
+      );
+    case "banknote":
+      // A generic foreign banknote (not the green $ bill) — a world-money note.
+      return (
+        <>
+          <RRect x={14} y={30} w={72} h={44} fill="#cfe3d4" strokeWidth={SW} />
+          <RCircle cx={50} cy={52} d={26} fill="#eaf4ec" strokeWidth={1.8} />
+          <text x={50} y={60} fontSize={20} fontWeight={900} fill="#2f6b46" textAnchor="middle" fontFamily="Georgia, serif">¤</text>
+          <text x={24} y={42} fontSize={11} fontWeight={900} fill="#2f6b46" fontFamily="Georgia, serif">100</text>
+          <text x={70} y={70} fontSize={11} fontWeight={900} fill="#2f6b46" fontFamily="Georgia, serif">100</text>
+        </>
+      );
+    case "exchange":
+      // Two currencies swapping — the circular-arrows FX icon.
+      return (
+        <>
+          <RCircle cx={30} cy={54} d={30} fill={GREEN} strokeWidth={2} />
+          <text x={30} y={62} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <RCircle cx={72} cy={54} d={30} fill="#3a6ea5" strokeWidth={2} />
+          <text x={72} y={62} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">€</text>
+          <path d="M34 28 Q50 16 66 28" fill="none" stroke={INK} strokeWidth={2.6} strokeLinecap="round" />
+          <path d="M66 28 l-9 -2 M66 28 l-2 9" fill="none" stroke={INK} strokeWidth={2.6} strokeLinecap="round" />
+          <path d="M66 80 Q50 92 34 80" fill="none" stroke={INK} strokeWidth={2.6} strokeLinecap="round" />
+          <path d="M34 80 l9 2 M34 80 l2 -9" fill="none" stroke={INK} strokeWidth={2.6} strokeLinecap="round" />
+        </>
+      );
+    case "candles":
+      // Candlestick chart — the trading floor / FX market.
+      return (
+        <>
+          <RLine x1={14} y1={86} x2={88} y2={86} strokeWidth={2.4} />
+          <RLine x1={26} y1={30} x2={26} y2={74} strokeWidth={2} />
+          <RRect x={20} y={40} w={12} h={22} fill={GREEN} strokeWidth={2} />
+          <RLine x1={46} y1={24} x2={46} y2={70} strokeWidth={2} />
+          <RRect x={40} y={34} w={12} h={20} fill={RED} strokeWidth={2} />
+          <RLine x1={66} y1={18} x2={66} y2={60} strokeWidth={2} />
+          <RRect x={60} y={26} w={12} h={24} fill={GREEN} strokeWidth={2} />
+        </>
+      );
+    case "basket":
+      // A shopping basket — purchasing power / the "basket of goods".
+      return (
+        <>
+          <RPath d="M22 44 L78 44 L70 84 L30 84 Z" fill={TAN} strokeWidth={SW} />
+          <path d="M34 44 Q40 26 50 26 Q60 26 66 44" fill="none" stroke={INK} strokeWidth={2.6} strokeLinecap="round" />
+          <RLine x1={40} y1={50} x2={37} y2={80} strokeWidth={1.8} />
+          <RLine x1={54} y1={50} x2={55} y2={80} strokeWidth={1.8} />
+          <RLine x1={26} y1={58} x2={74} y2={58} strokeWidth={1.8} />
+        </>
+      );
+    case "anchor":
+      // For a currency "peg" — anchored to another currency.
+      return (
+        <>
+          <RCircle cx={50} cy={24} d={14} fill="none" strokeWidth={SW} />
+          <RLine x1={50} y1={31} x2={50} y2={82} strokeWidth={3.4} />
+          <RLine x1={36} y1={44} x2={64} y2={44} strokeWidth={3} />
+          <path d="M26 64 Q30 84 50 84 Q70 84 74 64" fill="none" stroke={INK} strokeWidth={3.4} strokeLinecap="round" />
+          <path d="M26 64 l-4 10 M26 64 l10 2 M74 64 l4 10 M74 64 l-10 2" fill="none" stroke={INK} strokeWidth={3} strokeLinecap="round" />
+        </>
+      );
+    case "magnet":
+      // High interest rates as a magnet pulling in capital.
+      return (
+        <>
+          <RPath d="M28 24 L28 60 Q28 82 50 82 Q72 82 72 60 L72 24" fill="none" stroke={RED} strokeWidth={9} />
+          <RRect x={22} y={20} w={14} h={12} fill={RED} strokeWidth={1.6} />
+          <RRect x={64} y={20} w={14} h={12} fill="#c3ccd2" strokeWidth={1.6} />
+          <text x={29} y={18} fontSize={12} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">N</text>
+          <text x={71} y={18} fontSize={12} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">S</text>
+        </>
+      );
+    case "wheelbarrow":
+      // Hyperinflation: a wheelbarrow of cash.
+      return (
+        <>
+          <RPath d="M18 52 L74 52 L66 72 L30 72 Z" fill="#9aa6ad" strokeWidth={SW} />
+          <RLine x1={74} y1={52} x2={88} y2={46} strokeWidth={3} />
+          <RCircle cx={40} cy={84} d={14} fill={INK} fillStyle="solid" strokeWidth={2} />
+          <RLine x1={30} y1={72} x2={24} y2={86} strokeWidth={3} />
+          {[30, 42, 54].map((x, i) => <RRect key={i} x={x} y={38 + (i % 2) * 2} w={16} h={10} fill={GREEN} strokeWidth={1.4} />)}
+          <text x={40} y={32} fontSize={13} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$$$</text>
         </>
       );
   }

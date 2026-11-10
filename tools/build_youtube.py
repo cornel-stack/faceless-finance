@@ -76,7 +76,7 @@ SOURCES & FURTHER READING
 
 If this made the numbers finally click, subscribe — and tell me which impossible number you want me to pull apart next.
 
-#economics #finance #housing #realestate
+{" ".join(yt.get("hashtags") or ["#economics", "#finance"])}
 """
 
 (OUT / "title.txt").write_text(TITLE + "\n\nAlternates:\n" + "\n".join("• " + a for a in yt.get("alts", [])) + "\n")

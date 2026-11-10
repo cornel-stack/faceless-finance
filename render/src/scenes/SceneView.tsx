@@ -470,8 +470,9 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const VW = 980, VH = 520;
-  const ink = theme.ink, gold = "#e8b73a", red = theme.accent, green = "#1f7a3d";
+  const ink = theme.ink, gold = "#e8b73a", red = theme.accent, green = "#1f7a3d", blue = "#3a6ea5";
   const m = scene.motif;
+  const clampBoth = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
   let art: React.ReactNode = null;
 
   if (m === "housecollapse") {
@@ -620,6 +621,209 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: VH }}>
         <div style={{ fontFamily: display, fontWeight: 900, fontSize: 150, color: red, border: `10px solid ${red}`, borderRadius: 14, padding: "10px 44px", transform: `scale(${s}) rotate(-6deg) translateX(${shake}px)`, WebkitTextStroke: "2px #17120f" }}>{txt}</div>
       </div>
+    );
+  } else if (m === "fxmarket") {
+    // The world's biggest market: currency "coins" orbit a central FX hub,
+    // connected by trading lines that pulse constantly.
+    const syms = ["$", "€", "¥", "£", "₹", "Fr"];
+    const cx = VW / 2, cy = 250, R = 300;
+    art = (
+      <svg width={VW} height={VH}>
+        {syms.map((s, i) => {
+          const a = (i / syms.length) * Math.PI * 2 + frame * 0.012;
+          const x = cx + R * Math.cos(a);
+          const y = cy + R * 0.55 * Math.sin(a) + Math.sin((frame + i * 20) * 0.08) * 8;
+          const appear = spring({ frame, fps, delay: 6 + i * 4, config: { damping: 12 } });
+          const pulse = 0.2 + 0.6 * Math.abs(Math.sin((frame + i * 26) * 0.07));
+          return (
+            <g key={i}>
+              <line x1={cx} y1={cy} x2={x} y2={y} stroke={theme.grid} strokeWidth={2.4} opacity={pulse} />
+              <g transform={`translate(${x} ${y}) scale(${appear})`}>
+                <circle cx={0} cy={0} r={46} fill="#fff" stroke={ink} strokeWidth={4} />
+                <text x={0} y={16} fontSize={42} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{s}</text>
+              </g>
+            </g>
+          );
+        })}
+        <circle cx={cx} cy={cy} r={58} fill={gold} stroke={ink} strokeWidth={5} />
+        <text x={cx} y={cy + 13} fontSize={38} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">FX</text>
+      </svg>
+    );
+  } else if (m === "seesaw") {
+    // An exchange rate is a relative price: a balance beam between two currencies.
+    // It wobbles, then settles with one side heavier (more in demand).
+    const cx = VW / 2, cy = 300;
+    const tilt = interpolate(frame, [8, fps * 0.9, fps * 1.5, fps * 2.1, fps * 2.8], [0, -13, 9, -11, -11], clampBoth);
+    const pan = (dx: number, sym: string, col: string) => (
+      <g transform={`translate(${dx} 0)`}>
+        <line x1={0} y1={0} x2={0} y2={70} stroke={ink} strokeWidth={4} />
+        <circle cx={0} cy={96} r={44} fill={col} stroke={ink} strokeWidth={4} />
+        <text x={0} y={110} fontSize={44} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{sym}</text>
+      </g>
+    );
+    art = (
+      <svg width={VW} height={VH}>
+        <polygon points={`${cx - 46},${cy + 150} ${cx + 46},${cy + 150} ${cx},${cy}`} fill={ink} />
+        <g transform={`translate(${cx} ${cy}) rotate(${tilt})`}>
+          <RLine x1={-320} y1={0} x2={320} y2={0} stroke={ink} strokeWidth={11} />
+          {pan(-300, "$", green)}
+          {pan(300, "€", blue)}
+        </g>
+      </svg>
+    );
+  } else if (m === "supplydemand") {
+    // Supply × demand sets the price. Curves draw in, then demand shifts right
+    // (more buyers) and the equilibrium dot climbs — price up.
+    const ox = 230, oy = 440, w = 540, h = 330;
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 1.2], [0, 1], clampBoth);
+    const s = interpolate(frame, [fps * 1.7, fps * 2.8], [0, 150], clampBoth);
+    const ex = ox + (w + s) / 2, ey = oy - (h * (w + s)) / (2 * w);
+    const supply = `M ${ox} ${oy} L ${ox + w} ${oy - h}`;
+    const demand = `M ${ox + s} ${oy - h} L ${ox + w + s} ${oy}`;
+    art = (
+      <svg width={VW} height={VH}>
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <RLine x1={ox - 20} y1={oy} x2={ox + w + 180} y2={oy} stroke={ink} strokeWidth={4} />
+        <RLine x1={ox - 20} y1={oy} x2={ox - 20} y2={oy - h - 40} stroke={ink} strokeWidth={4} />
+        <text x={ox - 34} y={oy - h - 46} fontSize={26} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>price</text>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={supply} stroke={blue} strokeWidth={6} seed={4} />
+          <RPath d={demand} stroke={red} strokeWidth={6} seed={6} />
+        </g>
+        <text x={ox + w + 10} y={oy - h + 6} fontSize={26} fontWeight={800} fill={blue} fontFamily={sans}>supply</text>
+        <text x={ox + w + s + 6} y={oy + 2} fontSize={26} fontWeight={800} fill={red} fontFamily={sans}>demand</text>
+        {rev > 0.98 && (
+          <g opacity={interpolate(frame, [fps * 1.2, fps * 1.5], [0, 1], clampBoth)}>
+            <line x1={ex} y1={ey} x2={ox - 20} y2={ey} stroke={ink} strokeWidth={2} strokeDasharray="7 7" />
+            <circle cx={ex} cy={ey} r={13} fill={gold} stroke={ink} strokeWidth={3} />
+          </g>
+        )}
+        {s > 80 && <text x={ox - 2} y={ey - 20} fontSize={34} fontWeight={900} fill={green} fontFamily="Georgia, serif" opacity={interpolate(frame, [fps * 2.2, fps * 2.6], [0, 1], clampBoth)}>↑</text>}
+      </svg>
+    );
+  } else if (m === "printmoney") {
+    // Print more of it → each unit buys less. A press spits bills onto a growing
+    // stack while the "what one unit buys" bar shrinks.
+    const px = 250, py = 150;
+    const bar = interpolate(frame, [fps * 0.6, fps * 2.6], [300, 70], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <RRect x={px - 90} y={py} w={180} h={96} fill="#59707c" strokeWidth={6} />
+        <RRect x={px - 60} y={py + 96} w={120} h={10} fill={ink} strokeWidth={2} />
+        {Array.from({ length: 8 }, (_, i) => {
+          const cyc = (frame * 6 + i * 40) % 300;
+          const yy = py + 110 + cyc;
+          const op = interpolate(cyc, [0, 30, 250, 300], [0, 1, 1, 0]);
+          return <g key={i} opacity={op}><rect x={px - 34} y={yy} width={68} height={26} rx={4} fill={green} stroke={ink} strokeWidth={3} /><text x={px} y={yy + 19} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text></g>;
+        })}
+        {Array.from({ length: 7 }, (_, i) => {
+          const on = interpolate(frame, [fps * 0.6 + i * 7, fps * 0.9 + i * 7], [0, 1], clampBoth);
+          return <g key={i} opacity={on}><rect x={px - 40} y={470 - i * 20} width={80} height={18} rx={3} fill={green} stroke={ink} strokeWidth={3} /></g>;
+        })}
+        <g transform={`translate(720 ${480 - bar})`}>
+          <rect x={0} y={0} width={120} height={bar} rx={6} fill={gold} stroke={ink} strokeWidth={4} />
+          <text x={60} y={-18} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>buys</text>
+        </g>
+      </svg>
+    );
+  } else if (m === "wheelbarrow") {
+    // Hyperinflation: a barrow of cash rolls in to buy one small loaf of bread.
+    const x = interpolate(frame, [6, fps * 1.4], [-340, 170], clampBoth);
+    const show = interpolate(frame, [fps * 1.6, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${x} 250)`}>
+          <path d="M-150 20 L120 20 L80 110 L-110 110 Z" fill="#9aa6ad" stroke={ink} strokeWidth={6} strokeLinejoin="round" />
+          {Array.from({ length: 10 }, (_, i) => <g key={i}><rect x={-140 + (i % 5) * 54} y={-26 + Math.floor(i / 5) * 24} width={48} height={20} rx={3} fill={green} stroke={ink} strokeWidth={2.5} /></g>)}
+          <text x={-20} y={-40} fontSize={30} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">$$$$$</text>
+          <line x1={120} y1={20} x2={168} y2={2} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+          <circle cx={-96} cy={140} r={30} fill="#3a3f45" stroke={ink} strokeWidth={5} />
+          <circle cx={-96} cy={140} r={6} fill="#cfd8dc" />
+          <line x1={-110} y1={110} x2={-128} y2={150} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+        </g>
+        <g transform="translate(640 300)" opacity={show}>
+          <text x={0} y={-66} fontSize={64} fontWeight={900} fill={ink} textAnchor="middle">=</text>
+          <path d="M-56 0 Q-56 -40 0 -40 Q56 -40 56 0 Q56 26 0 26 Q-56 26 -56 0 Z" fill="#d8a85a" stroke={ink} strokeWidth={5} />
+          <path d="M-30 -36 L-24 -12 M0 -40 L0 -14 M30 -36 L24 -12" stroke={ink} strokeWidth={3} fill="none" />
+          <text x={0} y={70} fontSize={30} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>one loaf</text>
+        </g>
+      </svg>
+    );
+  } else if (m === "magnet") {
+    // Higher interest rates act like a magnet, pulling capital (coins) in.
+    const mx = 300, my = 250;
+    art = (
+      <svg width={VW} height={VH}>
+        <path d={`M${mx - 60} ${my - 70} L${mx - 60} ${my + 40} Q${mx - 60} ${my + 110} ${mx} ${my + 110} Q${mx + 60} ${my + 110} ${mx + 60} ${my + 40} L${mx + 60} ${my - 70}`} fill="none" stroke={red} strokeWidth={34} strokeLinecap="butt" />
+        <rect x={mx - 77} y={my - 86} width={34} height={28} fill={red} stroke={ink} strokeWidth={2} />
+        <rect x={mx + 43} y={my - 86} width={34} height={28} fill="#c3ccd2" stroke={ink} strokeWidth={2} />
+        {Array.from({ length: 6 }, (_, i) => {
+          const prog = ((frame * 6 + i * 50) % 300) / 300;
+          const startX = 900 - (i % 3) * 40, startY = 160 + (i % 3) * 120;
+          const xx = startX + (mx + 100 - startX) * prog;
+          const yy = startY + (my - startY) * prog;
+          const op = interpolate(prog, [0, 0.15, 0.85, 1], [0, 1, 1, 0]);
+          return <g key={i} opacity={op}><circle cx={xx} cy={yy} r={20} fill={gold} stroke={ink} strokeWidth={3} /><text x={xx} y={yy + 7} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>;
+        })}
+        <text x={mx} y={my + 170} fontSize={40} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">5%</text>
+      </svg>
+    );
+  } else if (m === "peg") {
+    // A pegged currency: a small note anchored to a big dollar block. It drifts
+    // on the waves but the chain holds it in place.
+    const drift = Math.sin(frame * 0.06) * 26;
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={120} y={180} width={200} height={200} rx={16} fill={green} stroke={ink} strokeWidth={6} />
+        <text x={220} y={300} fontSize={96} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        <text x={220} y={420} fontSize={30} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the anchor</text>
+        <g transform={`translate(${660 + drift} 250)`}>
+          <rect x={-90} y={-54} width={180} height={108} rx={12} fill="#cfe3d4" stroke={ink} strokeWidth={5} />
+          <text x={0} y={18} fontSize={56} fontWeight={900} fill="#2f6b46" textAnchor="middle" fontFamily="Georgia, serif">¤</text>
+          <text x={0} y={100} fontSize={28} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>held to it</text>
+        </g>
+        <path d={`M320 250 Q${480 + drift / 2} ${250 + Math.abs(drift)} ${570 + drift} 250`} fill="none" stroke={ink} strokeWidth={5} strokeDasharray="2 10" strokeLinecap="round" />
+      </svg>
+    );
+  } else if (m === "trustprop") {
+    // A currency's value rests on belief: a big coin held up by pillars labelled
+    // economy / rule of law / trust. Pull one and it wobbles.
+    const wob = interpolate(frame, [fps * 1.8, fps * 2.2, fps * 2.8], [0, 4, 1.5], clampBoth) * Math.sin(frame * 0.5);
+    const pillars = ["a real economy", "stable rules", "trust"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 180) rotate(${wob})`}>
+          <circle cx={0} cy={0} r={96} fill={gold} stroke={ink} strokeWidth={6} />
+          <text x={0} y={26} fontSize={78} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </g>
+        {pillars.map((p, i) => {
+          const x = VW / 2 - 240 + i * 240;
+          const on = spring({ frame, fps, delay: 8 + i * 8, config: { damping: 13 } });
+          return <g key={i} opacity={on}><RRect x={x - 26} y={300} w={52} h={150} fill="#efe9db" strokeWidth={4} /><text x={x} y={485} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{p}</text></g>;
+        })}
+      </svg>
+    );
+  } else if (m === "basket") {
+    // Purchasing power: the SAME basket of goods, priced in three currencies.
+    const tags = [["$", "5"], ["€", "4.6"], ["¥", "750"]];
+    const idx = Math.min(2, Math.floor(interpolate(frame, [fps * 0.6, fps * 2.7], [0, 3], clampBoth)));
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 210)`}>
+          <path d="M-150 -40 L150 -40 L110 150 L-110 150 Z" fill={gold} stroke={ink} strokeWidth={7} strokeLinejoin="round" />
+          <path d="M-96 -40 Q-60 -130 0 -130 Q60 -130 96 -40" fill="none" stroke={ink} strokeWidth={6} strokeLinecap="round" />
+          <line x1={-60} y1={-20} x2={-74} y2={140} stroke={ink} strokeWidth={3} />
+          <line x1={0} y1={-20} x2={0} y2={140} stroke={ink} strokeWidth={3} />
+          <line x1={60} y1={-20} x2={74} y2={140} stroke={ink} strokeWidth={3} />
+          <line x1={-130} y1={40} x2={130} y2={40} stroke={ink} strokeWidth={3} />
+        </g>
+        <g transform="translate(640 250)">
+          <rect x={0} y={0} width={240} height={110} rx={14} fill="#fff" stroke={red} strokeWidth={5} />
+          <text x={120} y={78} fontSize={64} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{tags[idx][0]}{tags[idx][1]}</text>
+          <text x={120} y={-18} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>same basket</text>
+        </g>
+      </svg>
     );
   } else {
     // big centered doodle(s) — no arrows

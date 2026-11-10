@@ -1,1331 +1,1011 @@
 [
   {
     "id": "s1",
-    "type": "image",
-    "narration": "In 2022, this was the most trusted man in crypto.",
-    "src": "img/sbf.png",
-    "caption": "The most trusted man in crypto",
-    "label": "SBF"
+    "type": "doodle",
+    "narration": "One dollar. Ninety euro cents. A hundred and fifty Japanese yen. Three totally different numbers — and in much of the world, each one buys you about the same cup of coffee.",
+    "items": [
+      "dollar",
+      "euro",
+      "yen"
+    ],
+    "labels": [
+      "$1",
+      "€0.90",
+      "¥150"
+    ],
+    "caption": "…all buy one coffee"
   },
   {
     "id": "s2",
-    "type": "stage",
-    "narration": "Sam Bankman-Fried. Thirty years old, running FTX — one of the biggest crypto exchanges on Earth.",
-    "icons": [
-      "laptop",
-      "token"
-    ],
-    "caption": "FTX — a crypto giant"
+    "type": "character",
+    "narration": "So why is one dollar worth a hundred and fifty of something else? And why does that number change every single second?",
+    "pose": "think",
+    "bubble": "why 150?",
+    "props": [
+      {
+        "name": "exchange",
+        "label": "…and why does it move?"
+      }
+    ]
   },
   {
     "id": "s3",
     "type": "callout",
-    "narration": "At its peak, FTX was valued at thirty-two billion dollars. Sam himself was worth around twenty-six.",
-    "text": "$32 billion",
-    "sub": "FTX at its peak",
-    "icon": "rocket"
+    "narration": "Because every single day, people trade around seven and a half trillion dollars of currency — in the biggest market humans have ever built.",
+    "text": "$7.5 trillion",
+    "sub": "currency traded every single day",
+    "icon": "candles"
   },
   {
     "id": "s4",
     "type": "stage",
-    "narration": "And he looked nothing like a villain. Messy hair, cargo shorts, slept on a beanbag, played video games in meetings.",
-    "icons": [
-      "gauge",
-      "laptop"
-    ],
-    "caption": "…not your typical tycoon"
+    "narration": "It never really sleeps. And the price it sets for each currency quietly touches almost everything you buy.",
+    "motif": "fxmarket",
+    "caption": "the FX market — $7.5T a day"
   },
   {
     "id": "s5",
-    "type": "stage",
-    "narration": "He said he was only getting rich to give it all away. Effective altruism. The good billionaire.",
-    "icons": [
-      "coins",
-      "handshake"
-    ],
-    "caption": "\"the good billionaire\""
+    "type": "title",
+    "narration": "So let's answer it properly. Why do currencies have different values — and what actually makes those values move?",
+    "heading": "Why Currencies Are Worth Different Amounts",
+    "kicker": "Money, explained",
+    "sub": "It's a price — set by supply, demand, and trust."
   },
   {
     "id": "s6",
-    "type": "screenshot",
-    "narration": "It wasn't just an image — he built a whole philanthropic brand around it.",
-    "sourceId": "wiki-ea"
+    "type": "character",
+    "narration": "Start with the thing almost everyone gets wrong. The value of a currency is not printed on the note.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "banknote",
+        "label": "…not the paper"
+      }
+    ]
   },
   {
     "id": "s7",
-    "type": "stage",
-    "narration": "He testified to Congress. Bailed out other crypto firms. People called him the J.P. Morgan of crypto.",
-    "icons": [
-      "capitol",
-      "trophy"
-    ],
-    "caption": "crypto's hero"
+    "type": "screenshot",
+    "narration": "A currency's real value is its exchange rate — the price of one currency measured in another.",
+    "sourceId": "wiki-exchange"
   },
   {
     "id": "s8",
     "type": "stage",
-    "narration": "And then, in about ten days, all of it came crashing down.",
-    "motif": "rocketcrash",
-    "caption": "…to the ground",
-    "accent": true
+    "narration": "Think of it like a seesaw. An exchange rate always compares two currencies. One number only means anything next to the other.",
+    "motif": "seesaw",
+    "caption": "a rate is a relative price"
   },
   {
     "id": "s9",
-    "type": "callout",
-    "narration": "Eight billion dollars of customer money — just gone.",
-    "text": "$8 billion",
-    "sub": "customer deposits, missing",
-    "icon": "warning"
+    "type": "compare",
+    "narration": "So 'one dollar equals a hundred and fifty yen' just means: today, in the market, a dollar trades for a hundred and fifty yen. Tomorrow it might be a hundred and forty-eight.",
+    "left": {
+      "title": "1 US dollar",
+      "value": "$1",
+      "icon": "dollar"
+    },
+    "right": {
+      "title": "trades for",
+      "value": "¥150",
+      "icon": "yen"
+    }
   },
   {
     "id": "s10",
     "type": "character",
-    "narration": "So where did eight billion dollars of other people's money actually go?",
-    "pose": "think",
-    "bubble": "Where did $8B go?",
+    "narration": "And here is the first myth to kill. A big exchange-rate number does not mean a country is poor.",
+    "pose": "point",
+    "expression": "happy",
+    "bubble": "big number ≠ poor",
     "props": [
       {
-        "name": "token",
-        "label": "…$8B?"
+        "name": "warning",
+        "label": "myth #1"
       }
     ]
   },
   {
     "id": "s11",
-    "type": "title",
-    "narration": "Let's follow eight billion dollars — right out the back door.",
-    "heading": "Where $8 Billion of Customer Money Went",
-    "kicker": "The FTX collapse",
-    "sub": "It didn't vanish. It was gambled."
+    "type": "doodle",
+    "narration": "One dollar is worth about a hundred and fifty yen. Japan is one of the richest countries on Earth. The number is just history — decades ago they sized the yen small, and it stuck.",
+    "items": [
+      "flagJP",
+      "yen"
+    ],
+    "labels": [
+      "Japan",
+      "¥150 per $1"
+    ],
+    "caption": "rich — and still ¥150 to the dollar"
   },
   {
     "id": "s12",
-    "type": "stage",
-    "narration": "Crypto itself was on a rocket. Prices only went up, and everyone was sure this time was different.",
-    "motif": "inflate",
-    "caption": "crypto: to the moon"
+    "type": "chalkboard",
+    "narration": "A dollar buys about eighty-three Indian rupees, or over a thousand Korean won. Those are just the sizes each country chose for its money. Big number, small number — it says nothing about rich or poor.",
+    "lines": [
+      "$1 = ¥150",
+      "$1 = ₹83",
+      "$1 = 1,300 ₩",
+      "…none of this means \"poor\""
+    ]
   },
   {
     "id": "s13",
-    "type": "stage",
-    "narration": "FTX put its name on a twenty-thousand-seat NBA arena, and hired A-list celebrities to sell it to you.",
-    "icons": [
-      "officetower",
-      "trophy"
-    ],
-    "caption": "the FTX Arena · a Super Bowl ad"
+    "type": "character",
+    "narration": "So if the value is really a price, the real question becomes this: who sets that price?",
+    "pose": "think",
+    "bubble": "who sets it?"
   },
   {
     "id": "s14",
-    "type": "callout",
-    "narration": "It gave tens of millions to politicians, becoming one of the biggest donors in the country.",
-    "text": "$40M+",
-    "sub": "in political donations",
-    "icon": "capitol"
+    "type": "stage",
+    "narration": "Nobody, and everybody. Like any price, an exchange rate is set by supply and demand — how many people want a currency versus how much of it is out there.",
+    "motif": "supplydemand",
+    "caption": "supply × demand sets the price"
   },
   {
     "id": "s15",
-    "type": "stage",
-    "narration": "The smartest venture funds on Earth lined up to invest, barely checking the books.",
-    "icons": [
-      "bank",
-      "handshake"
-    ],
-    "caption": "top VCs piled in"
+    "type": "screenshot",
+    "narration": "They all meet in the foreign exchange market — the largest, most liquid market in the world.",
+    "sourceId": "wiki-forex"
   },
   {
     "id": "s16",
-    "type": "stage",
-    "narration": "Millions of ordinary people trusted FTX with their savings. It felt as safe as a bank.",
-    "icons": [
-      "crowd",
-      "piggybank"
-    ],
-    "caption": "millions trusted it"
+    "type": "screenshot",
+    "narration": "That is where that seven-and-a-half-trillion-a-day figure comes from. Banks, companies, funds and governments, swapping currencies non-stop.",
+    "sourceId": "wiki-supplydemand"
   },
   {
     "id": "s17",
-    "type": "stage",
-    "narration": "Every signal said: this is the responsible one. The grown-up in a reckless industry.",
-    "icons": [
-      "scale",
-      "gauge"
-    ],
-    "caption": "\"the safe one\""
-  },
-  {
-    "id": "s18",
     "type": "character",
-    "narration": "Which is exactly why what was happening underneath is so unsettling.",
+    "narration": "So what makes someone want a particular currency in the first place?",
     "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "…underneath"
+        "name": "crowd",
+        "label": "who wants it?"
       }
     ]
   },
   {
+    "id": "s18",
+    "type": "doodle",
+    "narration": "Simple. To buy that country's stuff. If you want American goods, American stocks, or American property, first you have to buy dollars.",
+    "items": [
+      "crowd",
+      "dollar",
+      "factory"
+    ],
+    "labels": [
+      "foreigners",
+      "buy $",
+      "to buy US goods"
+    ],
+    "caption": "want the goods → want the money",
+    "flow": true
+  },
+  {
     "id": "s19",
-    "type": "stage",
-    "narration": "Remember the backdrop. In 2021, crypto was a mania. Prices doubled, tripled, and 'number go up' felt like a law of physics.",
-    "icons": [
-      "chartup",
-      "token"
-    ],
-    "caption": "2021: the mania"
-  },
-  {
-    "id": "s20",
-    "type": "stage",
-    "narration": "New coins launched every day. Teenagers became millionaires on paper. Nobody wanted to be the one asking boring questions.",
-    "icons": [
-      "coins",
-      "rocket"
-    ],
-    "caption": "…everyone was getting rich"
-  },
-  {
-    "id": "s21",
-    "type": "stage",
-    "narration": "In a gold rush, the calm, trusted figure selling the shovels looks like the safest bet of all.",
-    "icons": [
-      "goldbar",
-      "handshake"
-    ],
-    "caption": "FTX sold the shovels"
-  },
-  {
-    "id": "s22",
-    "type": "screenshot",
-    "narration": "And crypto's whole promise was to cut out the middlemen you have to trust — banks, brokers, gatekeepers.",
-    "sourceId": "wiki-crypto"
-  },
-  {
-    "id": "s23",
-    "type": "stage",
-    "narration": "The deep irony? FTX asked you to trust it completely — to be the exact middleman crypto was invented to avoid.",
-    "icons": [
-      "token",
-      "bank"
-    ],
-    "caption": "…the middleman crypto was meant to kill"
-  },
-  {
-    "id": "s24",
-    "type": "stage",
-    "narration": "To understand it, you need two companies. First, FTX. A crypto exchange.",
-    "icons": [
-      "laptop"
-    ],
-    "caption": "Company 1: FTX"
-  },
-  {
-    "id": "s25",
-    "type": "stage",
-    "narration": "You send it your money, it lets you buy and sell crypto. Simple. Like a bank, but for coins.",
-    "icons": [
-      "piggybank",
-      "token"
-    ],
-    "caption": "you deposit → you trade"
-  },
-  {
-    "id": "s26",
-    "type": "stage",
-    "narration": "Second company: Alameda Research. A trading firm, making risky bets with its own money.",
-    "icons": [
-      "chip",
-      "ticker"
-    ],
-    "caption": "Company 2: Alameda"
-  },
-  {
-    "id": "s27",
-    "type": "image",
-    "narration": "Both were quietly controlled by the same man. And Alameda was run by Caroline Ellison — Sam's on-and-off girlfriend.",
-    "src": "img/sbf.png",
-    "caption": "…both his",
-    "label": "ONE BOSS"
-  },
-  {
-    "id": "s28",
-    "type": "stage",
-    "narration": "Now, the single most sacred rule of running an exchange: customer money is untouchable. You never, ever gamble with it.",
-    "icons": [
-      "padlock",
-      "piggybank"
-    ],
-    "caption": "rule #1: NEVER touch customer funds"
-  },
-  {
-    "id": "s29",
-    "type": "stage",
-    "narration": "FTX touched it. Secretly, it funneled billions in customer deposits straight into Alameda.",
-    "motif": "vaultdrain",
-    "caption": "customer funds → Alameda",
-    "accent": true
-  },
-  {
-    "id": "s30",
     "type": "diagram",
-    "narration": "There was literally a backdoor in the code — a secret setting that let Alameda borrow unlimited customer money, invisibly.",
+    "narration": "Tourists, importers, giant investment funds — everyone who wants in has to swap into that country's currency. Each swap is a little tug on the price.",
+    "title": "What creates demand for a currency",
     "nodes": [
       {
-        "id": "cust",
-        "label": "customer $",
-        "icon": "piggybank",
-        "x": 0.16,
-        "y": 0.3
+        "id": "trade",
+        "label": "buy its exports",
+        "icon": "factory",
+        "x": 0.17,
+        "y": 0.26
       },
       {
-        "id": "ftx",
-        "label": "FTX",
-        "icon": "laptop",
-        "x": 0.5,
-        "y": 0.3
+        "id": "invest",
+        "label": "invest there",
+        "icon": "chartup",
+        "x": 0.17,
+        "y": 0.56
       },
       {
-        "id": "door",
-        "label": "secret backdoor",
-        "icon": "padlock",
-        "x": 0.5,
-        "y": 0.72
+        "id": "tour",
+        "label": "visit it",
+        "icon": "globe",
+        "x": 0.17,
+        "y": 0.86
       },
       {
-        "id": "ala",
-        "label": "Alameda",
-        "icon": "chip",
-        "x": 0.84,
-        "y": 0.3
+        "id": "dem",
+        "label": "demand for its money",
+        "icon": "exchange",
+        "x": 0.54,
+        "y": 0.56
+      },
+      {
+        "id": "val",
+        "label": "price rises",
+        "icon": "chartup",
+        "x": 0.86,
+        "y": 0.56
       }
     ],
     "edges": [
       {
-        "from": "cust",
-        "to": "ftx"
+        "from": "trade",
+        "to": "dem"
       },
       {
-        "from": "ftx",
-        "to": "door",
-        "label": "unlimited"
+        "from": "invest",
+        "to": "dem"
       },
       {
-        "from": "door",
-        "to": "ala"
+        "from": "tour",
+        "to": "dem"
+      },
+      {
+        "from": "dem",
+        "to": "val"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "narration": "More buyers than sellers, the price rises. More sellers than buyers, it falls. A currency is strong when the world wants what that country is selling.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "more buyers → up"
+      },
+      {
+        "name": "chartdown",
+        "label": "more sellers → down"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "Day to day, four big forces push these prices around. Once you can see them, the financial news finally makes sense.",
+    "heading": "What Moves a Currency",
+    "kicker": "The four forces",
+    "sub": "interest rates · inflation · trade · trust"
+  },
+  {
+    "id": "s22",
+    "type": "stage",
+    "narration": "Force one: interest rates. When a country's central bank raises rates, its currency suddenly pays you more just to sit and hold it.",
+    "motif": "magnet",
+    "caption": "1) interest rates pull money in"
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "narration": "Global money is restless. It chases the best safe return it can find — and a higher interest rate acts like a magnet.",
+    "sourceId": "wiki-centralbank"
+  },
+  {
+    "id": "s24",
+    "type": "character",
+    "narration": "So when the Federal Reserve hikes, money floods toward dollars and the dollar climbs — often before a single rate even changes, just on the expectation.",
+    "pose": "point",
+    "props": [
+      {
+        "name": "magnet",
+        "label": "higher rate"
+      },
+      {
+        "name": "dollar",
+        "label": "$ climbs"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "screenshot",
+    "narration": "Traders exploit those rate gaps directly. In the famous carry trade, they borrow a cheap, low-rate currency and park the money in a high-rate one, pocketing the difference.",
+    "sourceId": "wiki-carry"
+  },
+  {
+    "id": "s26",
+    "type": "character",
+    "narration": "Borrow where money is cheap; invest where it pays more. Do that with hundreds of billions, and these flows alone can shove exchange rates around for years.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "yen",
+        "label": "borrow cheap ¥"
+      },
+      {
+        "name": "dollar",
+        "label": "…earn more in $"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "stage",
+    "narration": "Force two: inflation. If a country prints far more money, or its prices rise fast, each unit buys less — so it's worth less to everyone else too.",
+    "motif": "printmoney",
+    "caption": "2) print more → each unit worth less"
+  },
+  {
+    "id": "s28",
+    "type": "screenshot",
+    "narration": "A currency losing value at home tends to lose value abroad. Make more of something, and you make each piece worth less.",
+    "sourceId": "wiki-inflation"
+  },
+  {
+    "id": "s29",
+    "type": "chart",
+    "narration": "Here's the shape of it. As a country floods the system with new money, the value of a single unit quietly bleeds away, year after year.",
+    "chartType": "line",
+    "title": "More money printed → one unit buys less",
+    "data": [
+      {
+        "label": "Yr 1",
+        "value": 100
+      },
+      {
+        "label": "Yr 2",
+        "value": 92
+      },
+      {
+        "label": "Yr 3",
+        "value": 78
+      },
+      {
+        "label": "Yr 4",
+        "value": 60
+      },
+      {
+        "label": "Yr 5",
+        "value": 41
       }
     ],
-    "title": "The backdoor"
+    "highlight": 4,
+    "note": "value of one unit"
+  },
+  {
+    "id": "s30",
+    "type": "compare",
+    "narration": "Force three: trade. Sell more to the world than you buy, and demand for your money runs hot. Buy more than you sell, and it slowly leaks away.",
+    "left": {
+      "title": "exports more",
+      "value": "stronger",
+      "icon": "chartup"
+    },
+    "right": {
+      "title": "imports more",
+      "value": "weaker",
+      "icon": "chartdown"
+    }
   },
   {
     "id": "s31",
-    "type": "stage",
-    "narration": "And Alameda spent it. Risky bets. Venture investments. Mansions in the Bahamas. Political donations. Loans to the founders themselves.",
-    "icons": [
-      "yacht",
-      "island",
-      "capitol"
-    ],
-    "caption": "…your money, their lifestyle"
+    "type": "character",
+    "narration": "And here's a twist most people miss. Plenty of countries actually want a weaker currency.",
+    "pose": "think",
+    "bubble": "weaker… on purpose?",
+    "props": [
+      {
+        "name": "factory",
+        "label": "cheaper exports"
+      }
+    ]
   },
   {
     "id": "s32",
-    "type": "callout",
-    "narration": "By the end, Alameda owed FTX's customers around eight billion dollars it did not have.",
-    "text": "$8 billion",
-    "sub": "the hole in customer funds",
-    "icon": "chip"
+    "type": "stage",
+    "narration": "A weaker currency makes your exports cheaper for foreigners, so your factories sell more. That's why you'll hear accusations of countries quietly pushing their own currency down.",
+    "icons": [
+      "factory",
+      "globe"
+    ],
+    "caption": "weak money = cheap exports"
   },
   {
     "id": "s33",
-    "type": "stage",
-    "narration": "Think about what that means. When a normal exchange holds your money, it's supposed to just sit there, like cash in a safe-deposit box.",
-    "icons": [
-      "bank",
-      "padlock"
-    ],
-    "caption": "your money should just… sit there"
+    "type": "compare",
+    "narration": "A strong currency is great for shoppers and travelers, and rough on exporters. A weak one is the exact reverse. There's no 'best' — only trade-offs.",
+    "left": {
+      "title": "strong currency",
+      "value": "cheap imports",
+      "icon": "basket"
+    },
+    "right": {
+      "title": "weak currency",
+      "value": "booming exports",
+      "icon": "factory"
+    }
   },
   {
     "id": "s34",
     "type": "stage",
-    "narration": "You can take it out whenever you want, because it never moved. That's the entire promise.",
+    "narration": "And force four, the quiet one that rules them all: trust. Will this country stay stable? Will it pay its debts? Will your money still be safe here next year?",
     "icons": [
-      "keys",
-      "coins"
+      "scale",
+      "handshake"
     ],
-    "caption": "…always there when you want it"
+    "caption": "4) trust in the country behind it"
   },
   {
     "id": "s35",
-    "type": "stage",
-    "narration": "FTX broke that promise in secret. Your deposit didn't sit in a vault. It was wired to the gambling desk next door.",
-    "icons": [
-      "chip",
-      "warning"
-    ],
-    "caption": "…instead it went to the casino"
+    "type": "screenshot",
+    "narration": "When investors get scared, they run to currencies they trust — the dollar, the Swiss franc — and those climb just for being boring and safe.",
+    "sourceId": "wiki-currency"
   },
   {
     "id": "s36",
-    "type": "stage",
-    "narration": "And Alameda wasn't betting carefully. It was making huge, leveraged, often terrible bets.",
-    "icons": [
-      "chip",
-      "chartdown"
-    ],
-    "caption": "…huge, reckless bets"
+    "type": "character",
+    "narration": "This is why a single sentence from a central banker can move a currency more than a year of ordinary trading. The market is really pricing the future.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "phone",
+        "label": "one sentence…"
+      },
+      {
+        "name": "ticker",
+        "label": "…markets lurch"
+      }
+    ]
   },
   {
     "id": "s37",
-    "type": "stage",
-    "narration": "When those bets lost, there was no safety net. Just a growing hole where the customer money used to be.",
-    "icons": [
-      "warning",
-      "iou"
-    ],
-    "caption": "…a growing hole"
+    "type": "title",
+    "narration": "But an exchange rate only tells you what a currency is worth to a trader. There is a second kind of value — one that matters far more to you.",
+    "heading": "What a Currency Actually Buys",
+    "kicker": "Purchasing power"
   },
   {
     "id": "s38",
     "type": "screenshot",
-    "narration": "This wasn't a grey area. Prosecutors would later call it exactly what it was — fraud, on a massive scale.",
-    "sourceId": "wiki-ftx"
+    "narration": "Economists call it purchasing power — how much real stuff your money actually buys where you live.",
+    "sourceId": "wiki-ppp"
   },
   {
     "id": "s39",
     "type": "stage",
-    "narration": "The founders even took personal loans — hundreds of millions — from the very funds their customers had deposited.",
-    "icons": [
-      "coins",
-      "handcuffs"
-    ],
-    "caption": "…loans to themselves"
+    "narration": "Picture the exact same basket of groceries in different countries. Convert the price into one currency, and it still comes out wildly different.",
+    "motif": "basket",
+    "caption": "same basket, different real price"
   },
   {
     "id": "s40",
-    "type": "stage",
-    "narration": "A real exchange keeps your money in a separate account it cannot spend. It's a basic, legally-required wall.",
-    "icons": [
-      "bank",
-      "padlock"
+    "type": "chart",
+    "narration": "Here's that same cart of groceries, converted into US dollars. Same food, same amount — but what it costs depends entirely on where you're standing.",
+    "chartType": "bar",
+    "title": "The same cart of groceries, in US dollars",
+    "unit": "USD",
+    "data": [
+      {
+        "label": "Mumbai",
+        "value": 45
+      },
+      {
+        "label": "Tokyo",
+        "value": 72
+      },
+      {
+        "label": "New York",
+        "value": 100
+      },
+      {
+        "label": "Zurich",
+        "value": 130
+      }
     ],
-    "caption": "the rule: a wall between the two"
+    "highlight": 3,
+    "note": "same cart, double the price"
   },
   {
     "id": "s41",
-    "type": "stage",
-    "narration": "FTX quietly knocked that wall down — and let the money pour through to Alameda.",
-    "motif": "vaultdrain",
-    "caption": "…the wall came down",
-    "accent": true
+    "type": "screenshot",
+    "narration": "There's a famous, only-half-serious version of this: the Big Mac Index. The same burger, priced around the world, hints at which currencies are secretly cheap or expensive.",
+    "sourceId": "wiki-bigmac"
   },
   {
     "id": "s42",
-    "type": "stage",
-    "narration": "There was even a special exemption in the code so Alameda's account could go billions into the red without ever being shut off.",
-    "icons": [
-      "laptop",
-      "warning"
-    ],
-    "caption": "…a secret 'never shut off' setting"
+    "type": "character",
+    "narration": "So a strong currency and a cheap place to live are not the same sentence. The exchange rate and the real buying power are two different things. Hold that thought.",
+    "pose": "think",
+    "bubble": "rate ≠ real value",
+    "props": [
+      {
+        "name": "basket",
+        "label": "what it really buys"
+      }
+    ]
   },
   {
     "id": "s43",
-    "type": "stage",
-    "narration": "Everyone else playing on FTX would be auto-liquidated in seconds. Alameda alone could lose forever, on your dime.",
-    "icons": [
-      "chip",
-      "scale"
-    ],
-    "caption": "one set of rules for Alameda"
+    "type": "title",
+    "narration": "And this is where it stops being a traders' game. These numbers reach straight into your daily life.",
+    "heading": "What This Means For You",
+    "kicker": "Everyday effects"
   },
   {
     "id": "s44",
     "type": "stage",
-    "narration": "You might ask: how did nobody catch this? Simple. FTX had no proper auditor, no real board, and almost no oversight.",
+    "narration": "When your currency is strong, every holiday abroad, every imported gadget, every online order from overseas quietly gets cheaper.",
     "icons": [
-      "officetower",
-      "warning"
+      "globe",
+      "pricetag"
     ],
-    "caption": "no auditor · no board"
+    "caption": "a strong currency = cheaper travel"
   },
   {
     "id": "s45",
     "type": "stage",
-    "narration": "The people who were supposed to check the books were, essentially, Sam and his roommates.",
+    "narration": "When it weakens, the opposite happens. Imported cars, phones, even your fuel can creep upward in price — without a single tax ever changing.",
     "icons": [
-      "crowd",
-      "laptop"
+      "gaspump",
+      "chartup"
     ],
-    "caption": "…the 'checkers' were his friends"
+    "caption": "a weak currency = pricier imports"
   },
   {
     "id": "s46",
-    "type": "stage",
-    "narration": "So the deposits flowed one way — out of your account, into the bets — and nobody with power ever said stop.",
-    "icons": [
-      "piggybank",
-      "chip"
-    ],
-    "caption": "…and nobody said stop"
+    "type": "character",
+    "narration": "Because so much of the world's oil and goods are priced in dollars, a weaker local currency means you hand over more of it for the exact same barrel.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "oilbarrel",
+        "label": "priced in $"
+      },
+      {
+        "name": "gaspump",
+        "label": "…costs you more"
+      }
+    ]
   },
   {
     "id": "s47",
-    "type": "stage",
-    "narration": "For a while, it worked perfectly. The bets were winning, crypto was booming, and no one asked for all their money at once.",
-    "icons": [
-      "chartup",
-      "coins"
-    ],
-    "caption": "…while the music played"
+    "type": "title",
+    "narration": "Now, one currency plays by its own rules entirely. The US dollar.",
+    "heading": "Why the Dollar Is Different",
+    "kicker": "The reserve currency"
   },
   {
     "id": "s48",
-    "type": "stage",
-    "narration": "A machine like that only has to survive one thing: the day everybody wants out together.",
-    "icons": [
-      "crowd",
-      "padlock"
-    ],
-    "caption": "…until everyone wants out"
+    "type": "callout",
+    "narration": "Nearly nine out of every ten currency trades on Earth involve dollars — even when no American is anywhere in the room.",
+    "text": "88%",
+    "sub": "of all FX trades involve the dollar",
+    "icon": "percent"
   },
   {
     "id": "s49",
-    "type": "stage",
-    "narration": "But here's the Enron-style trick that held it all together. FTX printed its own money.",
-    "icons": [
-      "printer",
-      "token"
-    ],
-    "caption": "FTX invents a coin: FTT"
+    "type": "screenshot",
+    "narration": "It is the world's reserve currency: the money other countries stockpile, and the money global trade is mostly priced in.",
+    "sourceId": "wiki-reserve"
   },
   {
     "id": "s50",
     "type": "stage",
-    "narration": "A token called FTT. FTX created it out of thin air, and it was worth whatever the market said — which FTX could nudge.",
+    "narration": "Oil, ships, commodities, huge piles of global debt — all quoted in dollars. So almost everyone needs a stack of them, all the time.",
     "icons": [
-      "token",
-      "bubble"
+      "oilbarrel",
+      "dollar"
     ],
-    "caption": "FTT — conjured from nothing"
+    "caption": "oil & world trade priced in $"
   },
   {
     "id": "s51",
+    "type": "callout",
+    "narration": "It's why central banks hoard them. China alone sits on over three trillion dollars of foreign reserves — a war chest held mostly in US assets.",
+    "text": "$3 trillion",
+    "sub": "China's foreign-exchange reserves",
+    "icon": "vault"
+  },
+  {
+    "id": "s52",
+    "type": "screenshot",
+    "narration": "Those reserves are a country's rainy-day fund — the ammunition it uses to steady its own currency when markets turn against it.",
+    "sourceId": "wiki-reserves"
+  },
+  {
+    "id": "s53",
     "type": "diagram",
-    "narration": "Now watch the loop. Alameda held billions in FTT as 'collateral.' So the whole empire was propped up by a coin its own sister company invented.",
+    "narration": "Add it up and the dollar has built-in demand no one else gets. The world needs dollars just to function, which keeps a permanent floor under the price.",
+    "title": "The dollar's built-in demand",
     "nodes": [
       {
-        "id": "ftx",
-        "label": "FTX prints FTT",
-        "icon": "printer",
-        "x": 0.5,
-        "y": 0.14
+        "id": "oil",
+        "label": "oil & trade in $",
+        "icon": "oilbarrel",
+        "x": 0.18,
+        "y": 0.3
       },
       {
-        "id": "ala",
-        "label": "Alameda holds it\nas 'collateral'",
-        "icon": "token",
-        "x": 0.84,
+        "id": "safe",
+        "label": "US debt = the safe asset",
+        "icon": "bank",
+        "x": 0.18,
+        "y": 0.74
+      },
+      {
+        "id": "need",
+        "label": "everyone needs dollars",
+        "icon": "dollar",
+        "x": 0.54,
         "y": 0.52
       },
       {
-        "id": "value",
-        "label": "makes them look\nrich & solvent",
-        "icon": "trophy",
-        "x": 0.5,
-        "y": 0.88
-      },
-      {
-        "id": "back",
-        "label": "which props up FTX",
-        "icon": "laptop",
-        "x": 0.16,
+        "id": "strong",
+        "label": "steady demand",
+        "icon": "chartup",
+        "x": 0.86,
         "y": 0.52
       }
     ],
     "edges": [
       {
-        "from": "ftx",
-        "to": "ala"
+        "from": "oil",
+        "to": "need"
       },
       {
-        "from": "ala",
-        "to": "value"
+        "from": "safe",
+        "to": "need"
       },
       {
-        "from": "value",
-        "to": "back"
-      },
-      {
-        "from": "back",
-        "to": "ftx"
+        "from": "need",
+        "to": "strong"
       }
-    ],
-    "title": "The circular trick"
-  },
-  {
-    "id": "s52",
-    "type": "stage",
-    "narration": "It's the oldest magic trick in finance. Invent an asset, call it collateral, borrow real money against your own made-up coin.",
-    "icons": [
-      "magichat",
-      "token"
-    ],
-    "caption": "collateral… from nothing"
-  },
-  {
-    "id": "s53",
-    "type": "stage",
-    "narration": "As long as FTT held its value, the machine kept spinning. It looked like a tower of gold. It was a tower of FTT.",
-    "icons": [
-      "token",
-      "houseofcards"
-    ],
-    "caption": "a tower of its own token"
+    ]
   },
   {
     "id": "s54",
-    "type": "stage",
-    "narration": "Imagine a casino that pays its debts using chips it prints itself. As long as nobody cashes out, it looks infinitely rich.",
-    "icons": [
-      "chip",
-      "printer"
-    ],
-    "caption": "a casino paying with its own chips"
+    "type": "character",
+    "narration": "It lets the dollar stay strong even when America borrows enormous amounts — a privilege economists call its exorbitant advantage.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "the world's money"
+      },
+      {
+        "name": "dollar",
+        "label": "…stays strong anyway"
+      }
+    ]
   },
   {
     "id": "s55",
-    "type": "stage",
-    "narration": "But those chips are only worth something because everyone agrees they are. Agreement is a very fragile kind of collateral.",
-    "icons": [
-      "token",
-      "bubble"
-    ],
-    "caption": "…value by agreement only"
+    "type": "title",
+    "narration": "So who actually decides the rate — the open market, or the government? That depends on the currency.",
+    "heading": "Floating, Fixed, and Pegged",
+    "kicker": "Who's really in control"
   },
   {
     "id": "s56",
-    "type": "stage",
-    "narration": "If people ever doubt the chip, its price falls, and suddenly the 'collateral' propping everything up is worth almost nothing.",
-    "icons": [
-      "token",
-      "chartdown"
-    ],
-    "caption": "doubt → the collateral vanishes"
+    "type": "screenshot",
+    "narration": "Most big currencies float. The market sets them, second by second, and central banks only nudge from the sidelines.",
+    "sourceId": "wiki-float"
   },
   {
     "id": "s57",
-    "type": "stage",
-    "narration": "FTX and Alameda were now bound together by this coin. If one fell, both fell.",
-    "icons": [
-      "handshake",
-      "domino"
+    "type": "timeline",
+    "narration": "It wasn't always this way. For decades, major currencies were fixed to gold. Then in 1971 the US cut that cord, and by 1973 the modern free-floating world began.",
+    "title": "How we got to floating money",
+    "events": [
+      {
+        "year": "1944",
+        "label": "Bretton Woods: fixed to gold",
+        "icon": "goldbar"
+      },
+      {
+        "year": "1971",
+        "label": "US ends the gold window",
+        "icon": "warning"
+      },
+      {
+        "year": "1973",
+        "label": "currencies start to float",
+        "icon": "exchange"
+      },
+      {
+        "year": "today",
+        "label": "the market sets the price",
+        "icon": "candles"
+      }
     ],
-    "caption": "…tied together by FTT"
+    "highlight": 2
   },
   {
     "id": "s58",
     "type": "stage",
-    "narration": "And every tower built on one block has the same flaw. Pull that block, and it all comes down.",
-    "icons": [
-      "gauge",
-      "warning"
-    ],
-    "caption": "…one block holds it up"
+    "narration": "But some countries peg their currency instead — they promise to keep it locked to another one, usually the dollar.",
+    "motif": "peg",
+    "caption": "a peg: anchored to the dollar"
   },
   {
     "id": "s59",
     "type": "screenshot",
-    "narration": "On November second, a news site, CoinDesk, leaked Alameda's balance sheet. It was mostly FTT — its own partner's invented coin.",
-    "sourceId": "wiki-alameda"
+    "narration": "A fixed rate buys stability and predictable trade. But that promise comes with a very real bill.",
+    "sourceId": "wiki-fixed"
   },
   {
     "id": "s60",
-    "type": "image",
-    "narration": "Then a rival stepped in. Changpeng Zhao — 'CZ' — the founder of Binance, the biggest exchange of all.",
-    "src": "img/cz.jpg",
-    "caption": "CZ — founder of Binance",
-    "label": "THE RIVAL"
+    "type": "character",
+    "narration": "To hold the line, the central bank has to buy and sell its own currency constantly — burning through its reserves of dollars to defend the peg.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "vault",
+        "label": "spend the reserves"
+      },
+      {
+        "name": "anchor",
+        "label": "…defend the peg"
+      }
+    ]
   },
   {
     "id": "s61",
-    "type": "stage",
-    "narration": "On November sixth, CZ tweeted that Binance would dump its entire pile of FTT. One tweet.",
-    "icons": [
-      "ticker",
-      "token"
-    ],
-    "caption": "\"we're selling our FTT\""
+    "type": "screenshot",
+    "narration": "And markets know it. In 1992, Britain tried to hold its pound inside a fixed European system. Traders bet it simply couldn't.",
+    "sourceId": "wiki-blackwed"
   },
   {
     "id": "s62",
-    "type": "stage",
-    "narration": "FTT crashed. And the instant it did, Alameda's collateral evaporated into nothing.",
-    "motif": "crash",
-    "caption": "FTT → worthless",
-    "accent": true
+    "type": "character",
+    "narration": "Speculators, led by George Soros, sold the pound by the billions. The Bank of England spent a fortune and hiked rates in a single panicked morning to defend the line.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "ticker",
+        "label": "sell the pound"
+      },
+      {
+        "name": "bank",
+        "label": "…defend it!"
+      }
+    ]
   },
   {
     "id": "s63",
-    "type": "stage",
-    "narration": "The tower came down.",
-    "motif": "towerfall",
-    "caption": "the FTT tower falls"
+    "type": "callout",
+    "narration": "By that afternoon — 'Black Wednesday' — Britain gave up and let the pound fall. The Treasury's loss was later estimated at over three billion pounds. One trader reportedly made a billion dollars.",
+    "text": "£3.3 billion",
+    "sub": "lost defending the pound in a day",
+    "icon": "chartdown",
+    "break": true
   },
   {
     "id": "s64",
     "type": "stage",
-    "narration": "Suddenly the balance sheet everyone trusted was mostly a coin that was now in free-fall.",
+    "narration": "That was the lesson markets never forgot. If a fixed rate drifts too far from reality, enough money betting against it can break even a mighty central bank.",
     "icons": [
-      "token",
+      "flagGB",
       "chartdown"
     ],
-    "caption": "…the 'assets' were evaporating"
+    "caption": "the market beat the central bank"
   },
   {
     "id": "s65",
     "type": "stage",
-    "narration": "Alameda couldn't repay. FTX couldn't cover it. The eight-billion-dollar hole was finally visible to everyone.",
-    "icons": [
-      "warning",
-      "iou"
-    ],
-    "caption": "…the hole, exposed"
+    "narration": "Because when the reserves finally run dry, the peg snaps — and the currency can collapse overnight.",
+    "motif": "crash",
+    "caption": "when the peg finally snaps",
+    "accent": true
   },
   {
     "id": "s66",
-    "type": "stage",
-    "narration": "And every customer had the same thought at the same second. Get my money out. Now.",
-    "icons": [
-      "crowd",
-      "warning"
+    "type": "doodle",
+    "narration": "It's a story that has played out again and again — a proud fixed rate, then a sudden, brutal devaluation that wipes out savings in a single day.",
+    "items": [
+      "flagAR",
+      "chartdown"
     ],
-    "caption": "…get my money OUT"
+    "labels": [
+      "Argentina",
+      "again and again"
+    ],
+    "caption": "the cost of a broken peg"
   },
   {
     "id": "s67",
-    "type": "stage",
-    "narration": "A bank run is the one thing no exchange can survive if the money isn't really there. And FTX's money wasn't.",
-    "icons": [
-      "bank",
-      "warning"
-    ],
-    "caption": "the one thing it couldn't survive"
+    "type": "screenshot",
+    "narration": "Some countries go further and give up their own currency entirely.",
+    "sourceId": "wiki-euro"
   },
   {
     "id": "s68",
     "type": "stage",
-    "narration": "It became the fastest bank run in modern history.",
-    "motif": "bankrun",
-    "caption": "the run on FTX"
+    "narration": "Around twenty nations share the euro. One money, no exchange-rate friction between them — but also no private lever left to adjust when their own economy needs it.",
+    "icons": [
+      "euro",
+      "handshake"
+    ],
+    "caption": "20 countries, one currency"
   },
   {
     "id": "s69",
-    "type": "stage",
-    "narration": "As it unraveled, Sam went on posting that everything was fine. 'FTX is fine. Assets are fine.' They were not.",
-    "icons": [
-      "ticker",
-      "warning"
-    ],
-    "caption": "\"FTX is fine.\" (it wasn't)"
+    "type": "character",
+    "narration": "Others simply adopt the US dollar outright — Ecuador, El Salvador, Panama. They import America's stability, and hand their monetary steering wheel straight to the Federal Reserve.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "dollar",
+        "label": "adopt the $"
+      },
+      {
+        "name": "capitol",
+        "label": "…the Fed decides"
+      }
+    ]
   },
   {
     "id": "s70",
-    "type": "stage",
-    "narration": "For a few hours, CZ's Binance offered to swoop in and buy FTX — to save it.",
-    "icons": [
-      "handshake",
-      "laptop"
-    ],
-    "caption": "a rescue offer…"
+    "type": "title",
+    "narration": "Which brings us to the nightmare version of everything we've just said. What happens when the trust behind a currency completely disappears?",
+    "heading": "When the Trust Runs Out",
+    "kicker": "Hyperinflation"
   },
   {
     "id": "s71",
-    "type": "screenshot",
-    "narration": "Then Binance looked at the books, saw the size of the hole, and walked away within a day.",
-    "sourceId": "wiki-binance"
+    "type": "stage",
+    "narration": "A government spends far more than it collects, so it prints the difference. Prices rise, so it prints even more to keep up. And that is the trap closing.",
+    "motif": "printmoney",
+    "caption": "print… to pay for… more printing"
   },
   {
     "id": "s72",
     "type": "stage",
-    "narration": "Because there was nothing to rescue. The customer money that should have been there simply wasn't.",
-    "icons": [
-      "piggybank",
-      "warning"
-    ],
-    "caption": "…nothing left to save"
+    "narration": "Push it far enough and you get hyperinflation — where money loses value by the hour. People get paid twice a day and run to spend it before lunch costs more than breakfast did.",
+    "motif": "wheelbarrow",
+    "caption": "a wheelbarrow of cash for one loaf"
   },
   {
     "id": "s73",
-    "type": "callout",
-    "narration": "Five billion dollars of withdrawals in seventy-two hours. FTX couldn't pay — the money was gone, gambled away at Alameda.",
-    "text": "$5 billion",
-    "sub": "withdrawn in 72 hours",
-    "icon": "padlock"
+    "type": "screenshot",
+    "narration": "In the very worst episodes, prices have doubled every single day.",
+    "sourceId": "wiki-hyper"
   },
   {
     "id": "s74",
-    "type": "timeline",
-    "narration": "From leak to bankruptcy took nine days.",
-    "title": "November 2022",
-    "events": [
-      {
-        "year": "Nov 2",
-        "label": "CoinDesk leak",
-        "icon": "newspaper"
-      },
-      {
-        "year": "Nov 6",
-        "label": "CZ dumps FTT",
-        "icon": "ticker"
-      },
-      {
-        "year": "Nov 8",
-        "label": "withdrawals frozen",
-        "icon": "padlock"
-      },
-      {
-        "year": "Nov 11",
-        "label": "FTX bankrupt",
-        "icon": "warning"
-      }
-    ],
-    "highlight": 3
+    "type": "callout",
+    "narration": "Zimbabwe once printed a single hundred-trillion-dollar banknote. By the end, it couldn't reliably buy a bus ticket.",
+    "text": "100 trillion",
+    "sub": "one Zimbabwean banknote",
+    "icon": "banknote"
   },
   {
     "id": "s75",
-    "type": "stage",
-    "narration": "On November eleventh, FTX filed for bankruptcy. Eight billion dollars — gone.",
-    "motif": "vanish",
-    "caption": "…$8 billion",
-    "accent": true
+    "type": "doodle",
+    "narration": "Weimar Germany, Zimbabwe, Venezuela — different decades, identical pattern. Once people stop believing the number on the note, the number means nothing.",
+    "items": [
+      "flagAR",
+      "flagLK",
+      "flagGR"
+    ],
+    "labels": [
+      "Argentina",
+      "Sri Lanka",
+      "Greece"
+    ],
+    "caption": "trust, once gone, is brutal to rebuild"
   },
   {
     "id": "s76",
     "type": "stage",
-    "narration": "And the damage didn't stop at FTX. Its collapse knocked over other crypto firms like dominoes.",
-    "icons": [
-      "domino",
-      "chartdown"
-    ],
-    "caption": "…the contagion spread"
+    "narration": "The paper is exactly as real as it was yesterday. What vanished wasn't the ink. It was the belief.",
+    "motif": "vanish",
+    "caption": "…the belief, gone",
+    "accent": true
   },
   {
     "id": "s77",
-    "type": "stage",
-    "narration": "People called it crypto's Lehman moment. The trust that held the whole industry together cracked overnight.",
-    "icons": [
-      "globe",
-      "warning"
-    ],
-    "caption": "crypto's \"Lehman moment\""
+    "type": "character",
+    "narration": "Which finally reveals the strange truth sitting underneath all of this.",
+    "pose": "think",
+    "bubble": "so what IS it?"
   },
   {
     "id": "s78",
-    "type": "stage",
-    "narration": "On the way down, hundreds of millions more mysteriously drained out in a hack nobody has fully explained.",
-    "icons": [
-      "laptop",
-      "warning"
-    ],
-    "caption": "…and then it got hacked"
+    "type": "screenshot",
+    "narration": "Almost every currency today is 'fiat' — it isn't backed by gold, or by anything you can touch. It's backed by trust.",
+    "sourceId": "wiki-fiat"
   },
   {
     "id": "s79",
     "type": "stage",
-    "narration": "The man brought in to clean up the wreckage was John Ray — the same expert who untangled Enron.",
-    "icons": [
-      "officetower",
-      "scale"
-    ],
-    "caption": "the cleanup expert: John Ray"
+    "narration": "A modern currency's value rests on three things: a real economy that makes stuff people want, stable rules, and the shared belief that everyone else will still take it tomorrow.",
+    "motif": "trustprop",
+    "caption": "value held up by belief"
   },
   {
     "id": "s80",
-    "type": "screenshot",
-    "narration": "His verdict was damning: in forty years, he'd never seen such a complete failure of corporate controls.",
-    "sourceId": "wiki-bankruptcy"
+    "type": "chalkboard",
+    "narration": "So the value of a currency is really three questions wearing a trench coat. What can it buy? Who wants it? And do you trust the people behind it?",
+    "lines": [
+      "a currency is worth…",
+      "what it can buy,",
+      "who wants it,",
+      "and whether you trust it."
+    ]
   },
   {
     "id": "s81",
-    "type": "stage",
-    "narration": "No proper books. No board. Company funds tracked on casual group chats. A thirty-billion-dollar company run like a dorm room.",
-    "icons": [
-      "crowd",
-      "warning"
-    ],
-    "caption": "…run like a dorm room"
+    "type": "character",
+    "narration": "Change any one of those three, and the price on the screen moves. That, honestly, is the whole game.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "basket",
+        "label": "what it buys"
+      },
+      {
+        "name": "exchange",
+        "label": "who wants it"
+      },
+      {
+        "name": "scale",
+        "label": "do you trust it"
+      }
+    ]
   },
   {
     "id": "s82",
     "type": "stage",
-    "narration": "So when the withdrawals hit, there was nothing underneath. The whole thing came down in a single week.",
-    "motif": "housecollapse",
-    "caption": "nothing underneath"
-  },
-  {
-    "id": "s83",
-    "type": "stage",
-    "narration": "Thirty billion dollars of value, gone — faster than it takes most people to notice their bank app updated.",
-    "icons": [
-      "phone",
-      "chartdown"
-    ],
-    "caption": "$30B → zero in a week"
-  },
-  {
-    "id": "s84",
-    "type": "image",
-    "narration": "Sam was arrested in the Bahamas, and extradited to New York to face trial.",
-    "src": "img/sbf.png",
-    "caption": "arrested in the Bahamas",
-    "label": "UNDER ARREST",
-    "mug": true
-  },
-  {
-    "id": "s85",
-    "type": "stage",
-    "narration": "And one by one, his inner circle turned on him. Caroline Ellison, Gary Wang, Nishad Singh — all pleaded guilty and testified.",
-    "icons": [
-      "crowd",
-      "scale"
-    ],
-    "caption": "his inner circle flips"
-  },
-  {
-    "id": "s86",
-    "type": "screenshot",
-    "narration": "The same genius-founder the magazines had put on their covers was now defendant number one.",
-    "sourceId": "wiki-sbf"
-  },
-  {
-    "id": "s87",
-    "type": "screenshot",
-    "narration": "His own ex-girlfriend, who ran Alameda, became the star witness against him.",
-    "sourceId": "wiki-ellison"
-  },
-  {
-    "id": "s88",
-    "type": "stage",
-    "narration": "In November 2023, a jury found him guilty on all seven counts.",
-    "motif": "stamp",
-    "stampText": "GUILTY"
-  },
-  {
-    "id": "s89",
-    "type": "callout",
-    "narration": "Sam Bankman-Fried was sentenced to twenty-five years in prison.",
-    "text": "25 years",
-    "sub": "Sam Bankman-Fried's sentence",
-    "icon": "prison"
-  },
-  {
-    "id": "s90",
-    "type": "screenshot",
-    "narration": "The judge said plainly what had happened: he stole about eight billion dollars from FTX's customers.",
-    "sourceId": "wiki-bankruptcy"
-  },
-  {
-    "id": "s91",
-    "type": "stage",
-    "narration": "The good billionaire, the effective altruist, the J.P. Morgan of crypto — was running the biggest fraud since Enron.",
-    "icons": [
-      "handcuffs",
-      "magichat"
-    ],
-    "caption": "…the biggest fraud since Enron"
-  },
-  {
-    "id": "s92",
-    "type": "stage",
-    "narration": "In court, the charitable image fell apart. The 'give it all away' story had been part of the sales pitch.",
-    "icons": [
-      "coins",
-      "gauge"
-    ],
-    "caption": "…the halo was marketing"
-  },
-  {
-    "id": "s93",
-    "type": "stage",
-    "narration": "The celebrities who'd advertised FTX got sued. The investors who'd skipped their homework lost billions.",
-    "icons": [
-      "trophy",
-      "chartdown"
-    ],
-    "caption": "everyone who vouched for it paid"
-  },
-  {
-    "id": "s94",
-    "type": "stage",
-    "narration": "And the real victims — millions of ordinary users — were left fighting for scraps in bankruptcy court.",
-    "icons": [
-      "crowd",
-      "scale"
-    ],
-    "caption": "…ordinary users left in the cold"
-  },
-  {
-    "id": "s95",
-    "type": "stage",
-    "narration": "At trial, the lifestyle came out. A thirty-million-dollar penthouse. Private jets. All quietly funded by customer deposits.",
-    "icons": [
-      "yacht",
-      "island"
-    ],
-    "caption": "…paid for with your money"
-  },
-  {
-    "id": "s96",
-    "type": "image",
-    "narration": "His defense was that he was just a disorganized founder who made mistakes. The jury didn't buy it.",
-    "src": "img/sbf.png",
-    "caption": "\"just a founder who messed up\"?",
-    "label": "THE DEFENSE",
-    "mug": true
-  },
-  {
-    "id": "s97",
-    "type": "stage",
-    "narration": "Because the backdoor wasn't a mistake. Someone wrote that code on purpose.",
-    "icons": [
-      "laptop",
-      "warning"
-    ],
-    "caption": "…the backdoor was deliberate"
-  },
-  {
-    "id": "s98",
-    "type": "callout",
-    "narration": "Prosecutors argued he hadn't lost track of the money. He'd stolen it — one deliberate line of code at a time.",
-    "text": "Not a mistake.",
-    "sub": "…a deliberate theft",
-    "icon": "handcuffs"
-  },
-  {
-    "id": "s99",
-    "type": "stage",
-    "narration": "Twenty-five years. From the cover of every magazine to a prison cell, in roughly a year.",
-    "icons": [
-      "trophy",
-      "prison"
-    ],
-    "caption": "…magazine cover to prison cell"
-  },
-  {
-    "id": "s100",
-    "type": "stage",
-    "narration": "His inner circle, who cooperated early, got far lighter sentences. In fraud, the first one to talk usually wins.",
-    "icons": [
-      "crowd",
-      "scale"
-    ],
-    "caption": "…the first to flip wins"
-  },
-  {
-    "id": "s101",
-    "type": "character",
-    "narration": "So let's go back to the question. Where did the eight billion actually go?",
-    "pose": "think",
-    "bubble": "So… where'd it go?",
-    "props": [
-      {
-        "name": "token",
-        "label": "$8B…"
-      }
-    ]
-  },
-  {
-    "id": "s102",
-    "type": "stage",
-    "narration": "Unlike Enron, this money was real — at first. It just got gambled and lost on bad bets and a lavish lifestyle.",
-    "icons": [
-      "chip",
-      "yacht"
-    ],
-    "caption": "…gambled and lost"
-  },
-  {
-    "id": "s103",
-    "type": "stage",
-    "narration": "The rest was a mirage. Billions in 'value' that only existed because of a coin FTX printed itself.",
-    "icons": [
-      "magichat",
-      "token"
-    ],
-    "caption": "…the rest was never real"
-  },
-  {
-    "id": "s104",
-    "type": "stage",
-    "narration": "And here's the lesson that outlives FTX. On an exchange, the money in your account isn't really yours. It's an IOU.",
-    "icons": [
-      "laptop",
-      "iou"
-    ],
-    "caption": "your balance is an IOU"
-  },
-  {
-    "id": "s105",
-    "type": "stage",
-    "narration": "There's a saying in crypto. 'Not your keys, not your coins.' If someone else holds it, you're trusting them not to touch it.",
-    "icons": [
-      "keys",
-      "padlock"
-    ],
-    "caption": "\"not your keys, not your coins\""
-  },
-  {
-    "id": "s106",
-    "type": "stage",
-    "narration": "The red flags were everywhere. No real board. No chief financial officer. Customer money mixed with the gambling fund.",
-    "icons": [
-      "warning",
-      "scale"
-    ],
-    "caption": "no board · no CFO · no limits"
-  },
-  {
-    "id": "s107",
-    "type": "stage",
-    "narration": "But the charm covered it all. The hair, the beanbag, the promise to save the world — that was the real magic trick.",
-    "icons": [
-      "gauge",
-      "magichat"
-    ],
-    "caption": "charisma = the misdirection"
-  },
-  {
-    "id": "s108",
-    "type": "stage",
-    "narration": "It made smart people, big investors, and regular users all stop asking one simple question. Where exactly is my money?",
-    "icons": [
-      "crowd",
-      "bubble"
-    ],
-    "caption": "…'where is my money?'"
-  },
-  {
-    "id": "s109",
-    "type": "stage",
-    "narration": "Same as Enron, a new costume. Invent the value, hide the hole, and smile while everyone looks the other way.",
-    "icons": [
-      "magichat",
-      "houseofcards"
-    ],
-    "caption": "same trick, new costume"
-  },
-  {
-    "id": "s110",
-    "type": "stage",
-    "narration": "There was no regulator checking FTX's books, because most of it sat offshore, beyond anyone's rules.",
-    "icons": [
-      "island",
-      "warning"
-    ],
-    "caption": "…offshore, beyond the rules"
-  },
-  {
-    "id": "s111",
-    "type": "stage",
-    "narration": "So the only thing standing between your savings and a trading desk was one man's word. And his word was worth nothing.",
-    "icons": [
-      "handshake",
-      "warning"
-    ],
-    "caption": "…secured only by a promise"
-  },
-  {
-    "id": "s112",
-    "type": "stage",
-    "narration": "The deepest lesson isn't about crypto at all. It's that trust, by itself, is not a safeguard.",
-    "icons": [
-      "scale",
-      "gauge"
-    ],
-    "caption": "trust is not a safeguard"
-  },
-  {
-    "id": "s113",
-    "type": "stage",
-    "narration": "Every giant fraud runs on the same fuel — a story good enough that people stop verifying it.",
-    "icons": [
-      "newspaper",
-      "magichat"
-    ],
-    "caption": "…a story too good to check"
-  },
-  {
-    "id": "s114",
-    "type": "callout",
-    "narration": "If you can't see where your money is held, assume someone else can spend it.",
-    "text": "Where is it?",
-    "sub": "…if you can't see it, be careful",
-    "icon": "padlock"
-  },
-  {
-    "id": "s115",
-    "type": "stage",
-    "narration": "Not your keys, not your coins. Not your receipts, not your money. The form changes. The rule never does.",
-    "icons": [
-      "keys",
-      "iou"
-    ],
-    "caption": "verify. don't just trust."
-  },
-  {
-    "id": "s116",
-    "type": "stage",
-    "narration": "And to be fair, crypto wasn't the villain here. The technology didn't commit fraud. A person did.",
+    "narration": "It's exactly why some people turned to crypto — an attempt to build money that needs no government's promise. But as we've seen on this channel, that just moves the question of trust somewhere else.",
     "icons": [
       "token",
       "scale"
     ],
-    "caption": "the tech didn't do this — a person did"
+    "caption": "crypto tried to remove the trust"
   },
   {
-    "id": "s117",
+    "id": "s83",
+    "type": "callout",
+    "narration": "Because in the end, the number on a banknote isn't a fact. It's a promise — that tomorrow, someone else will still take it from you.",
+    "text": "just a promise",
+    "sub": "…that others will take it tomorrow",
+    "icon": "handshake"
+  },
+  {
+    "id": "s84",
     "type": "stage",
-    "narration": "You can run the exact same scam with dollars, with stocks, with gold. FTX just did it faster, with fewer rules.",
+    "narration": "A dollar, a euro, a yen — each one is just a promise that billions of people have quietly agreed to believe. That shared agreement is the value.",
     "icons": [
       "coins",
-      "goldbar"
+      "globe"
     ],
-    "caption": "…an old scam, new wrapper"
+    "caption": "a promise the whole world agreed to"
   },
   {
-    "id": "s118",
-    "type": "stage",
-    "narration": "The pattern is always the same. A trusted face. A story too good to question. And money quietly moving where you can't see it.",
-    "icons": [
-      "handshake",
-      "magichat"
-    ],
-    "caption": "the eternal recipe for fraud"
-  },
-  {
-    "id": "s119",
-    "type": "stage",
-    "narration": "So whenever something feels too safe, too generous, too good — that's exactly when to ask the boring question.",
-    "icons": [
-      "gauge",
-      "bubble"
-    ],
-    "caption": "\"…where, exactly, is my money?\""
-  },
-  {
-    "id": "s120",
-    "type": "callout",
-    "narration": "The eight billion dollars didn't vanish into the blockchain. It was gambled, spent, and lost — by people you were told to trust.",
-    "text": "Gambled away.",
-    "sub": "where the $8 billion actually went",
-    "icon": "chip"
-  },
-  {
-    "id": "s121",
-    "type": "stage",
-    "narration": "There is a simple fix, and crypto people love to repeat it. Hold your own money. Be your own bank.",
-    "icons": [
-      "keys",
-      "piggybank"
-    ],
-    "caption": "self-custody: hold your own keys"
-  },
-  {
-    "id": "s122",
-    "type": "stage",
-    "narration": "But most people won't. It's hard, it's scary, and a friendly app is just so much easier to trust.",
-    "icons": [
-      "laptop",
-      "handshake"
-    ],
-    "caption": "…but trust is just easier"
-  },
-  {
-    "id": "s123",
-    "type": "stage",
-    "narration": "Which is why this will happen again, in some new form, with some new charming face promising it's different.",
-    "icons": [
-      "calendar",
-      "magichat"
-    ],
-    "caption": "…so it'll happen again"
-  },
-  {
-    "id": "s124",
-    "type": "stage",
-    "narration": "The names change — Enron, FTX, the next one. The trick is identical. Make the money invisible, and the story loud.",
-    "icons": [
-      "crookedE",
-      "token"
-    ],
-    "caption": "same trick, new name"
-  },
-  {
-    "id": "s125",
-    "type": "stage",
-    "narration": "The best protection isn't a law or an app. It's one stubborn habit. Follow the money until you can actually see it.",
-    "icons": [
-      "calculator",
-      "gauge"
-    ],
-    "caption": "follow it till you can SEE it"
-  },
-  {
-    "id": "s126",
-    "type": "stage",
-    "narration": "So the next time an app shows you a glowing number and a famous face telling you it's safe — ask one boring question.",
-    "icons": [
-      "phone",
-      "trophy"
-    ],
-    "caption": "ask the boring question"
-  },
-  {
-    "id": "s127",
-    "type": "stage",
-    "narration": "Where is the actual money right now, and who can move it without asking me?",
-    "icons": [
-      "vault",
-      "keys"
-    ],
-    "caption": "where is it — and who holds the keys?"
-  },
-  {
-    "id": "s128",
-    "type": "stage",
-    "narration": "If nobody can answer that in a sentence, you're not an investor. You're the collateral.",
-    "icons": [
-      "calculator",
-      "warning"
-    ],
-    "caption": "…then you're the collateral"
-  },
-  {
-    "id": "s129",
-    "type": "stage",
-    "narration": "Because in the end, a balance on a screen is just a promise. And a promise is only ever as good as the person making it.",
-    "icons": [
-      "ticker",
-      "handshake"
-    ],
-    "caption": "…a balance is just a promise"
-  },
-  {
-    "id": "s130",
+    "id": "s85",
     "type": "character",
-    "narration": "If this made the smartest guys in crypto look a little less smart, hit subscribe — and tell me which collapse to break down next.",
+    "narration": "So next time an exchange rate jumps and the headlines panic, you'll know what actually moved. Not the paper — the demand, the printing, or the trust behind it.",
     "pose": "present",
+    "bubble": "now you can see it",
     "props": [
       {
-        "name": "token",
-        "label": "which collapse next?"
+        "name": "candles",
+        "label": "…read the real story"
       }
     ]
   },
   {
-    "id": "s131",
+    "id": "s86",
+    "type": "character",
+    "narration": "If this made the number on the money finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "exchange",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s87",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",
