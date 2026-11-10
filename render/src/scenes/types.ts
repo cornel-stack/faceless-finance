@@ -72,6 +72,8 @@ export interface ImageScene extends Base {
   label?: string;       // small tag on the photo (e.g. a name)
   circle?: boolean;     // red hand-drawn emphasis ring
   mug?: boolean;        // tint/stamp style for a mugshot
+  memeTop?: string;     // Impact-style caption OVER the top of the photo (meme format)
+  memeBottom?: string;  // Impact-style caption OVER the bottom of the photo (meme format)
 }
 
 // A full-frame METAPHOR stage — one big animated motif (collapse, drain, vanish,
@@ -83,7 +85,9 @@ export interface StageScene extends Base {
     // EP016 (currencies) additions — new animated metaphors:
     | "fxmarket" | "seesaw" | "supplydemand" | "printmoney" | "wheelbarrow" | "magnet" | "peg" | "basket" | "trustprop"
     // EP017 (sovereign default) additions:
-    | "yieldspike" | "capitalflight" | "haircut" | "lifering" | "belttighten" | "vulture" | "downgrade" | "debtspiral" | "bondsnowball";
+    | "yieldspike" | "capitalflight" | "haircut" | "lifering" | "belttighten" | "vulture" | "downgrade" | "debtspiral" | "bondsnowball"
+    // EP018 (middle class) additions:
+    | "hollowout" | "squeeze" | "ladderbreak" | "twoincome" | "shrinkpie" | "escalator";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

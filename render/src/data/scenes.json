@@ -1,860 +1,723 @@
 [
   {
     "id": "s1",
+    "type": "doodle",
+    "narration": "For decades, the deal in America was simple. One job could buy a house, a car, raise a couple of kids, and still put something away for retirement.",
+    "items": [
+      "house",
+      "couple",
+      "baby"
+    ],
+    "labels": [
+      "one house",
+      "one income",
+      "one dream"
+    ],
+    "caption": "the old deal"
+  },
+  {
+    "id": "s2",
+    "type": "screenshot",
+    "narration": "They called it the American Dream — the promise that anyone who worked hard could attain a better life.",
+    "sourceId": "wiki-dream"
+  },
+  {
+    "id": "s3",
     "type": "character",
-    "narration": "When a person can't pay their debts, there's a process. Bankruptcy. A court steps in, adds up what's left, and divides it among the people they owe.",
+    "narration": "For a huge share of the country, that promise is quietly breaking. And the data shows it happening in slow motion.",
+    "pose": "think",
+    "bubble": "still true?",
+    "props": [
+      {
+        "name": "warning",
+        "label": "…breaking quietly"
+      }
+    ]
+  },
+  {
+    "id": "s4",
+    "type": "callout",
+    "narration": "In 1971, around sixty-one percent of American adults lived in middle-income households. Today it's closer to fifty. The middle is emptying out.",
+    "text": "61% → 50%",
+    "sub": "share of US adults in the middle class (Pew)",
+    "icon": "crowd"
+  },
+  {
+    "id": "s5",
+    "type": "stage",
+    "narration": "And here's the part nobody shows you. It's not just shrinking. It's splitting — a few rising to the top, more sliding down.",
+    "motif": "hollowout",
+    "caption": "the middle is hollowing out"
+  },
+  {
+    "id": "s6",
+    "type": "title",
+    "narration": "So let's follow the numbers. Why is the middle class disappearing — and what's actually taking its place?",
+    "heading": "Why the Middle Class Is Disappearing",
+    "kicker": "the data nobody shows",
+    "sub": "It didn't vanish. It got squeezed."
+  },
+  {
+    "id": "s7",
+    "type": "character",
+    "narration": "First — what even is the middle class? Weirdly, almost nobody agrees.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "a court decides"
+        "label": "no fixed line"
       }
     ]
-  },
-  {
-    "id": "s2",
-    "type": "character",
-    "narration": "But what happens when it's not a person who can't pay — it's an entire country? There is no court on Earth that can repossess a nation.",
-    "pose": "think",
-    "bubble": "…but a whole country?",
-    "props": [
-      {
-        "name": "globe",
-        "label": "who repossesses a country?"
-      }
-    ]
-  },
-  {
-    "id": "s3",
-    "type": "callout",
-    "narration": "And it happens far more often than you'd think. Since 1800, countries have walked away from their debts more than two hundred and fifty times.",
-    "text": "250+",
-    "sub": "sovereign defaults since 1800",
-    "icon": "warning"
-  },
-  {
-    "id": "s4",
-    "type": "stage",
-    "narration": "Argentina. Greece. Sri Lanka. Russia. Different flags, same spiral. So let's follow exactly what happens when a country goes broke.",
-    "motif": "debtspiral",
-    "caption": "different flags — the same spiral"
-  },
-  {
-    "id": "s5",
-    "type": "title",
-    "narration": "Because a country doesn't fail the way a company does. It fails in a way that reaches into every wallet inside its borders.",
-    "heading": "What Happens When a Country Goes Bankrupt",
-    "kicker": "Sovereign default",
-    "sub": "There's no court. Just a reckoning."
-  },
-  {
-    "id": "s6",
-    "type": "character",
-    "narration": "To understand the fall, you first have to understand how a country borrows in the first place.",
-    "pose": "present",
-    "bubble": "first: how they borrow"
-  },
-  {
-    "id": "s7",
-    "type": "stage",
-    "narration": "Almost every government on Earth spends more than it collects in taxes. To cover the gap, it borrows.",
-    "icons": [
-      "capitol",
-      "coins"
-    ],
-    "caption": "spend more than you tax → borrow"
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "narration": "It borrows by selling bonds — IOUs. You hand over cash today; the government promises to pay it back later, with interest.",
-    "sourceId": "wiki-govbond"
+    "narration": "Technically it's just the people in the middle of the income ladder — not rich, not poor.",
+    "sourceId": "wiki-mc"
   },
   {
     "id": "s9",
-    "type": "diagram",
-    "narration": "And who buys them? Almost everyone. Banks, pension funds, foreign governments — even your own savings, through the funds that hold them.",
-    "title": "Who lends to a government",
-    "nodes": [
-      {
-        "id": "banks",
-        "label": "banks",
-        "icon": "bank",
-        "x": 0.17,
-        "y": 0.28
-      },
-      {
-        "id": "pension",
-        "label": "your pension fund",
-        "icon": "piggybank",
-        "x": 0.17,
-        "y": 0.6
-      },
-      {
-        "id": "foreign",
-        "label": "foreign governments",
-        "icon": "globe",
-        "x": 0.17,
-        "y": 0.9
-      },
-      {
-        "id": "bond",
-        "label": "government bonds",
-        "icon": "bond",
-        "x": 0.54,
-        "y": 0.58
-      },
-      {
-        "id": "state",
-        "label": "the government",
-        "icon": "capitol",
-        "x": 0.86,
-        "y": 0.58
-      }
-    ],
-    "edges": [
-      {
-        "from": "banks",
-        "to": "bond"
-      },
-      {
-        "from": "pension",
-        "to": "bond"
-      },
-      {
-        "from": "foreign",
-        "to": "bond"
-      },
-      {
-        "from": "bond",
-        "to": "state"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "But the definitions are so loose that by some measures it's a quarter of households, and by others, three-quarters.",
+    "sourceId": "wiki-mcus"
   },
   {
     "id": "s10",
-    "type": "screenshot",
-    "narration": "Pile up enough of those IOUs and you get the national debt. For most countries that's completely normal — as long as they can keep paying.",
-    "sourceId": "wiki-govdebt"
+    "type": "character",
+    "narration": "So let's use a clean one, from the Pew Research Center. Middle class means a household earning between two-thirds and double the national median income.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "⅔ to 2× median"
+      }
+    ]
   },
   {
     "id": "s11",
-    "type": "chart",
-    "narration": "In fact, huge debts can be perfectly safe. Japan owes more than twice its entire economy — and nobody panics, because everyone trusts Japan to pay.",
-    "chartType": "bar",
-    "title": "Government debt, as a share of the economy (% of GDP)",
-    "unit": "x",
-    "data": [
-      {
-        "label": "Germany",
-        "value": 65
-      },
-      {
-        "label": "USA",
-        "value": 120
-      },
-      {
-        "label": "Greece",
-        "value": 170
-      },
-      {
-        "label": "Japan",
-        "value": 250
-      }
-    ],
-    "highlight": 3,
-    "note": "big — but trusted"
-  },
-  {
-    "id": "s12",
-    "type": "stage",
-    "narration": "Here's the quiet trick that keeps it all running. Countries almost never actually repay. When a bond comes due, they just borrow again to cover it. They roll it over.",
-    "motif": "bondsnowball",
-    "caption": "roll it over… and over… and over"
-  },
-  {
-    "id": "s13",
-    "type": "character",
-    "narration": "And that works beautifully — as long as someone is always willing to lend you the next round. The whole system quietly runs on one thing: confidence.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "handshake",
-        "label": "someone will lend"
-      },
-      {
-        "name": "gauge",
-        "label": "= confidence"
-      }
-    ]
-  },
-  {
-    "id": "s14",
-    "type": "screenshot",
-    "narration": "A country goes 'bankrupt' when that breaks — when it can't, or won't, make a payment it promised. Economists call it a sovereign default.",
-    "sourceId": "wiki-default"
-  },
-  {
-    "id": "s15",
-    "type": "character",
-    "narration": "Which raises the question everyone asks. If a government controls the money printer, why can't it just print whatever it owes?",
-    "pose": "think",
-    "bubble": "why not just print it?"
-  },
-  {
-    "id": "s16",
-    "type": "chalkboard",
-    "narration": "The whole thing turns on one detail: whose money the debt is in.",
-    "lines": [
-      "debt in YOUR OWN money → you can print it",
-      "debt in SOMEONE ELSE'S money → you're stuck"
-    ]
-  },
-  {
-    "id": "s17",
-    "type": "stage",
-    "narration": "If a country owes money in its own currency, it genuinely can print more to pay. It never technically runs out.",
-    "motif": "printmoney",
-    "caption": "own-currency debt: just print it"
-  },
-  {
-    "id": "s18",
-    "type": "stage",
-    "narration": "But as we saw last time, printing to pay your bills destroys the value of the money. You don't default — you inflate the debt away. A hidden default, paid by everyone holding the cash.",
-    "motif": "wheelbarrow",
-    "caption": "…but printing has its own price"
-  },
-  {
-    "id": "s19",
-    "type": "screenshot",
-    "narration": "Push that too far and you get hyperinflation. The debt technically gets repaid — in money that's now worthless.",
-    "sourceId": "wiki-hyper"
-  },
-  {
-    "id": "s20",
-    "type": "stage",
-    "narration": "The real trap is the other kind. When a country borrows in a foreign currency — almost always US dollars — it cannot print those.",
-    "icons": [
-      "dollar",
-      "chain"
-    ],
-    "caption": "foreign-currency debt: the real trap",
-    "accent": true
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "narration": "Now it's just like you and me. It has to earn or find real dollars to pay. And if it can't, there's no printer in the world that helps.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "dollar",
-        "label": "must find real $"
-      },
-      {
-        "name": "warning",
-        "label": "no printer helps"
-      }
-    ]
-  },
-  {
-    "id": "s22",
-    "type": "callout",
-    "narration": "This single fact — owing money you cannot print — sits at the heart of almost every great sovereign collapse.",
-    "text": "the trap",
-    "sub": "owe a currency you can't print",
-    "icon": "chain"
-  },
-  {
-    "id": "s23",
-    "type": "title",
-    "narration": "So watch how the spiral actually turns, step by step.",
-    "heading": "The Anatomy of a Collapse",
-    "kicker": "how it unravels"
-  },
-  {
-    "id": "s24",
-    "type": "stage",
-    "narration": "It usually starts in good times. Money is cheap, lenders are eager, and the government borrows freely — for roads, salaries, subsidies, sometimes just to look good.",
-    "icons": [
-      "capitol",
-      "chartup"
-    ],
-    "caption": "step 1: the borrowing boom"
-  },
-  {
-    "id": "s25",
-    "type": "character",
-    "narration": "Then something cracks. A recession. A collapse in some key export price. A war. A scandal. Suddenly lenders look at the books and get nervous.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "newspaper",
-        "label": "bad news hits"
-      },
-      {
-        "name": "gauge",
-        "label": "confidence dips"
-      }
-    ]
-  },
-  {
-    "id": "s26",
-    "type": "stage",
-    "narration": "And the instant they're nervous, they demand to be paid more to keep lending. The interest rate on the country's debt — its bond yield — spikes.",
-    "motif": "yieldspike",
-    "caption": "step 2: borrowing costs spike"
-  },
-  {
-    "id": "s27",
-    "type": "character",
-    "narration": "Which is brutally ironic. Exactly when a country can least afford it, borrowing suddenly gets far more expensive — right when it needs to borrow the most.",
-    "pose": "handtohead",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "ticker",
-        "label": "rates jump"
-      },
-      {
-        "name": "warning",
-        "label": "…worst timing"
-      }
-    ]
-  },
-  {
-    "id": "s28",
-    "type": "stage",
-    "narration": "Now it's borrowing just to pay the interest on what it already owes. That's the debt spiral — and once you're in it, the maths only gets worse.",
-    "motif": "debtspiral",
-    "caption": "step 3: the debt spiral"
-  },
-  {
-    "id": "s29",
-    "type": "stage",
-    "narration": "Investors start yanking their money out of the country altogether. Capital flight. And as they dump the local currency to escape, it starts to collapse too.",
-    "motif": "capitalflight",
-    "caption": "step 4: the money runs"
-  },
-  {
-    "id": "s30",
-    "type": "screenshot",
-    "narration": "Then the credit-rating agencies — Moody's, S&P, Fitch — pile on, slashing the country's rating.",
-    "sourceId": "wiki-rating"
-  },
-  {
-    "id": "s31",
-    "type": "stage",
-    "narration": "Down through the grades it tumbles — from safe, to risky, to 'junk,' to the dreaded D for default. And each downgrade scares off more lenders, which triggers the next downgrade.",
-    "motif": "downgrade",
-    "caption": "AAA → junk → D"
-  },
-  {
-    "id": "s32",
-    "type": "character",
-    "narration": "It's a doom loop. Fear raises rates. Higher rates deepen the crisis. The deeper crisis creates more fear. Round and round, faster and faster.",
-    "pose": "think",
-    "expression": "worried",
-    "bubble": "the doom loop"
-  },
-  {
-    "id": "s33",
-    "type": "stage",
-    "narration": "Until one day a payment comes due, and the money simply isn't there. The country misses it.",
-    "motif": "stamp",
-    "stampText": "DEFAULT"
-  },
-  {
-    "id": "s34",
-    "type": "screenshot",
-    "narration": "On that day, the government formally admits it cannot pay what it promised — and everything the debt was quietly holding up begins to fall.",
-    "sourceId": "wiki-defaultfin"
-  },
-  {
-    "id": "s35",
-    "type": "title",
-    "narration": "Because a default is never just a line in the financial press. It lands, hard, on ordinary people — often the ones who did nothing wrong.",
-    "heading": "What It Does to Real People",
-    "kicker": "the human bill"
-  },
-  {
-    "id": "s36",
-    "type": "stage",
-    "narration": "First, the banks. Terrified of a collapse, people rush to pull out their savings all at once. To stop the run, the government simply freezes the accounts.",
-    "motif": "bankrun",
-    "caption": "the banks freeze"
-  },
-  {
-    "id": "s37",
-    "type": "screenshot",
-    "narration": "They slam on capital controls — hard limits on how much of your own money you're allowed to withdraw, or move out of the country.",
-    "sourceId": "wiki-capitalcontrol"
-  },
-  {
-    "id": "s38",
-    "type": "doodle",
-    "narration": "In Argentina in 2001, they called it the corralito — 'the little fence.' People watched their life savings get locked behind it, then shrink as the currency crashed.",
-    "items": [
-      "flagAR",
-      "vault"
-    ],
-    "labels": [
-      "Argentina, 2001",
-      "the \"corralito\""
-    ],
-    "caption": "your savings — locked in"
-  },
-  {
-    "id": "s39",
     "type": "compare",
-    "narration": "Money that was worth ten thousand dollars on Monday could be worth a fraction of that by the end of the month. Savings, pensions, wages — quietly vaporized.",
+    "narration": "But 'middle class' was never really about a precise number. It was about a feeling — security. A home, healthcare, retirement, and kids who'd do better than you.",
     "left": {
-      "title": "Monday",
-      "value": "$10,000",
-      "icon": "piggybank"
+      "title": "it used to mean",
+      "value": "security",
+      "icon": "house"
     },
     "right": {
-      "title": "weeks later",
-      "value": "$3,000",
-      "icon": "chartdown"
+      "title": "now it means",
+      "value": "anxiety",
+      "icon": "warning"
     }
   },
   {
-    "id": "s40",
-    "type": "stage",
-    "narration": "And because the country can't get dollars, it can't pay for imports. So the things that come from abroad start to disappear — fuel, medicine, food.",
-    "icons": [
-      "gaspump",
-      "warning"
-    ],
-    "caption": "the shortages begin"
-  },
-  {
-    "id": "s41",
-    "type": "doodle",
-    "narration": "In Sri Lanka in 2022, drivers queued for days for petrol that might never arrive. Hospitals ran out of medicine. The power went out for hours at a time.",
-    "items": [
-      "flagLK",
-      "gaspump"
-    ],
-    "labels": [
-      "Sri Lanka, 2022",
-      "days-long fuel queues"
-    ],
-    "caption": "daily life grinds to a halt"
-  },
-  {
-    "id": "s42",
-    "type": "callout",
-    "narration": "And when people lose everything at once, they take to the streets. In the chaos of its default, Argentina ran through five presidents in under two weeks.",
-    "text": "5 presidents",
-    "sub": "Argentina — in under two weeks",
-    "icon": "protest",
-    "break": true
-  },
-  {
-    "id": "s43",
-    "type": "doodle",
-    "narration": "In Sri Lanka, protesters stormed the president's palace and swam in his pool. He fled the country. Default doesn't just break economies — it topples governments.",
-    "items": [
-      "flagLK",
-      "protest"
-    ],
-    "labels": [
-      "Sri Lanka, 2022",
-      "the palace stormed"
-    ],
-    "caption": "governments fall"
-  },
-  {
-    "id": "s44",
-    "type": "stage",
-    "narration": "Riots, strikes, a wave of emigration, a lost decade of growth. The number on the bond is abstract. This part never is.",
-    "icons": [
-      "protest",
-      "warning"
-    ],
-    "caption": "the social cost is the real cost"
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "So, facing all of that, who does a broke country actually turn to? There's really only one number left to call.",
-    "pose": "explain",
-    "expression": "worried",
-    "bubble": "…who do you call?",
-    "props": [
-      {
-        "name": "phone",
-        "label": "one call left"
-      }
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "screenshot",
-    "narration": "The International Monetary Fund — the world's lender of last resort. A giant pool of money that nations pay into, to rescue one another when everything else fails.",
-    "sourceId": "wiki-imf"
-  },
-  {
-    "id": "s47",
-    "type": "stage",
-    "narration": "When no private lender will touch you, the IMF steps in with an emergency loan — the lifeline that keeps the lights on and the country functioning.",
-    "motif": "lifering",
-    "caption": "the IMF throws a lifeline"
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "But that lifeline comes with strings. Thick ones. In exchange for the cash, the IMF demands the country fix its budget — and fast.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "lifering",
-        "label": "rescue loan"
-      },
-      {
-        "name": "scissors",
-        "label": "…with conditions"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "stage",
-    "narration": "That medicine has a name: austerity. Cut government spending. Raise taxes. Slash subsidies. Shrink pensions. Balance the books, whatever the cost.",
-    "motif": "belttighten",
-    "caption": "the price: austerity"
-  },
-  {
-    "id": "s50",
-    "type": "screenshot",
-    "narration": "The logic is simple: spend less than you earn, and you can start paying people back. In practice, it's one of the most bitterly argued ideas in all of economics.",
-    "sourceId": "wiki-austerity"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "Because austerity in a crisis can be a cruel trap of its own. Cut spending hard, and the economy shrinks even faster — so tax revenue falls too, and the hole barely closes.",
-    "pose": "think",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "scissors",
-        "label": "cut spending"
-      },
-      {
-        "name": "chartdown",
-        "label": "…economy shrinks"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "doodle",
-    "narration": "Greece lived this for a decade. Round after round of cuts, in return for bailout after bailout — and an economy that shrank by a quarter.",
-    "items": [
-      "flagGR",
-      "scissors"
-    ],
-    "labels": [
-      "Greece, 2010s",
-      "a lost decade"
-    ],
-    "caption": "austerity, for ten years"
-  },
-  {
-    "id": "s53",
-    "type": "screenshot",
-    "narration": "It brought mass unemployment, street protests, and a genuine fear that Greece would be forced out of the euro entirely.",
-    "sourceId": "wiki-greece"
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "Which points straight at Greece's special trap. It owed euros — but it couldn't print euros. For a country in crisis, that is the worst of both worlds.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "euro",
-        "label": "owed euros"
-      },
-      {
-        "name": "warning",
-        "label": "…couldn't print them"
-      }
-    ]
-  },
-  {
-    "id": "s55",
-    "type": "stage",
-    "narration": "And a default never stays in one country. Greece was so tangled up with Europe's banks that for a while it threatened to topple the entire euro like a line of dominoes.",
-    "motif": "dominoes",
-    "caption": "default spreads: contagion"
-  },
-  {
-    "id": "s56",
-    "type": "title",
-    "narration": "So how does a default actually end? With a negotiation most people never hear about.",
-    "heading": "The Deal: Haircuts",
-    "kicker": "how defaults really end"
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "Here's the part people get wrong. 'Default' almost never means 'nobody gets paid, ever.' It means it's time to renegotiate.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "handshake",
-        "label": "time to renegotiate"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "screenshot",
-    "narration": "The country sits down with the people it owes and restructures the debt — stretching out the payments, cutting the interest, and reducing what's owed.",
-    "sourceId": "wiki-restructure"
-  },
-  {
-    "id": "s59",
-    "type": "stage",
-    "narration": "Lenders agree to take less than they're owed — sometimes far less. In the trade, that loss has a grim little nickname: a haircut.",
-    "motif": "haircut",
-    "caption": "creditors take a haircut"
-  },
-  {
-    "id": "s60",
-    "type": "screenshot",
-    "narration": "And these haircuts can be absolutely brutal.",
-    "sourceId": "wiki-haircut"
-  },
-  {
-    "id": "s61",
-    "type": "callout",
-    "narration": "When Greece restructured, private lenders effectively wrote off around three-quarters of what they were owed — the biggest such deal in history.",
-    "text": "~75%",
-    "sub": "the haircut Greece's lenders took",
-    "icon": "scissors",
-    "break": true
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "For the country, it's a release: a crushing debt suddenly becomes payable. For the lenders, it's the price of having gambled on a government that couldn't pay.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "both sides lose something"
-      }
-    ]
-  },
-  {
-    "id": "s63",
-    "type": "stage",
-    "narration": "But not everyone plays along. A few specialist funds buy up defaulted debt dirt cheap, precisely so they can refuse the deal and sue for every last cent.",
-    "motif": "vulture",
-    "caption": "then the vultures circle"
-  },
-  {
-    "id": "s64",
-    "type": "screenshot",
-    "narration": "They're nicknamed vulture funds. And one chased Argentina so relentlessly it once had an Argentine navy ship seized in a foreign port as collateral.",
-    "sourceId": "wiki-vulture"
-  },
-  {
-    "id": "s65",
-    "type": "character",
-    "narration": "A single warship, impounded halfway around the world, over a bond most people had written off a decade earlier. That's how long these fights can drag on.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "vulture",
-        "label": "the holdouts"
-      },
-      {
-        "name": "calendar",
-        "label": "…for a decade"
-      }
-    ]
-  },
-  {
-    "id": "s66",
-    "type": "title",
-    "narration": "So after all of it — the freeze, the crash, the austerity, the haircut — is a defaulted country finished for good?",
-    "heading": "After the Fall",
-    "kicker": "does it ever recover?"
-  },
-  {
-    "id": "s67",
-    "type": "screenshot",
-    "narration": "Almost never. For a while it's locked out — lenders won't touch it, or only at punishing rates. But markets have surprisingly short memories.",
-    "sourceId": "wiki-argentina"
-  },
-  {
-    "id": "s68",
+    "id": "s12",
     "type": "timeline",
-    "narration": "Argentina defaulted in 2001, restructured, and within fifteen years was borrowing from the very same markets again — right before defaulting all over again.",
-    "title": "Argentina's long road back (and back again)",
+    "narration": "And you can watch that security erode, decade by decade. One income to two. A starter home to a bidding war. A degree that was free-ish to one that costs a fortune.",
+    "title": "The same life, getting harder to afford",
     "events": [
       {
-        "year": "2001",
-        "label": "defaults (~$100B)",
+        "year": "1970",
+        "label": "one income buys the house",
+        "icon": "house"
+      },
+      {
+        "year": "1990",
+        "label": "now you need two",
+        "icon": "couple"
+      },
+      {
+        "year": "2008",
+        "label": "debt fills the gap",
+        "icon": "creditcard"
+      },
+      {
+        "year": "today",
+        "label": "two incomes, still tight",
         "icon": "warning"
-      },
-      {
-        "year": "2005",
-        "label": "big haircut deal",
-        "icon": "scissors"
-      },
-      {
-        "year": "2016",
-        "label": "borrowing again",
-        "icon": "bank"
-      },
-      {
-        "year": "2020",
-        "label": "…defaults again",
-        "icon": "chartdown"
       }
     ],
     "highlight": 3
   },
   {
-    "id": "s69",
-    "type": "stage",
-    "narration": "Because a functioning country, even a burned one, is still an economy that lenders eventually want a piece of. A clean slate plus a growing economy is a tempting bet.",
-    "icons": [
-      "chartup",
-      "globe"
-    ],
-    "caption": "recovery — eventually"
+    "id": "s13",
+    "type": "character",
+    "narration": "That feeling — not the salary — is what's really disappearing. And three big forces are pulling it apart.",
+    "pose": "point",
+    "bubble": "three forces"
   },
   {
-    "id": "s70",
+    "id": "s14",
+    "type": "title",
+    "narration": "The first force is the one you can feel every single month: the squeeze.",
+    "heading": "Force One: The Squeeze",
+    "kicker": "wages flat, costs soaring"
+  },
+  {
+    "id": "s15",
+    "type": "screenshot",
+    "narration": "Start with your paycheck. What matters isn't the number on it — it's what that number can actually buy. Real wages.",
+    "sourceId": "wiki-realwage"
+  },
+  {
+    "id": "s16",
+    "type": "screenshot",
+    "narration": "For decades after the war, as workers produced more each hour, their pay climbed right alongside it. Produce more, earn more.",
+    "sourceId": "wiki-productivity"
+  },
+  {
+    "id": "s17",
+    "type": "chart",
+    "narration": "Then, around the 1970s, that line split in two. The economy kept getting more productive — but the typical worker's pay flattened out.",
+    "chartType": "line",
+    "title": "Productivity kept climbing. Pay didn't.",
+    "data": [
+      {
+        "label": "1970",
+        "value": 100
+      },
+      {
+        "label": "1985",
+        "value": 150
+      },
+      {
+        "label": "2000",
+        "value": 200
+      },
+      {
+        "label": "2020",
+        "value": 255
+      }
+    ],
+    "series2": [
+      {
+        "label": "1970",
+        "value": 100
+      },
+      {
+        "label": "1985",
+        "value": 108
+      },
+      {
+        "label": "2000",
+        "value": 114
+      },
+      {
+        "label": "2020",
+        "value": 122
+      }
+    ],
+    "seriesLabels": [
+      "output per worker",
+      "typical pay"
+    ],
+    "note": "the gap = the squeeze",
+    "noteAt": 3
+  },
+  {
+    "id": "s18",
+    "type": "character",
+    "narration": "That growing gap between what workers produced and what they were paid became, quite simply, someone else's profit.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "productivity ↑"
+      },
+      {
+        "name": "paystub",
+        "label": "…pay stays flat"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "stage",
+    "narration": "Now squeeze that flat paycheck from the other side. Because the things a middle-class life actually requires did not stay flat. They exploded.",
+    "motif": "squeeze",
+    "caption": "flat wages, rising costs"
+  },
+  {
+    "id": "s20",
+    "type": "chart",
+    "narration": "Look at what's happened to prices since the 1980s. Televisions and gadgets got cheaper. But the pillars of a stable life ran away from wages completely.",
+    "chartType": "bar",
+    "title": "Price growth since the 1980s (%)",
+    "unit": "x",
+    "data": [
+      {
+        "label": "Wages",
+        "value": 80
+      },
+      {
+        "label": "Housing",
+        "value": 350
+      },
+      {
+        "label": "Healthcare",
+        "value": 600
+      },
+      {
+        "label": "College",
+        "value": 1200
+      }
+    ],
+    "highlight": 3,
+    "note": "wages couldn't keep up"
+  },
+  {
+    "id": "s21",
+    "type": "screenshot",
+    "narration": "Housing — the single biggest cost — has raced ahead of incomes for decades.",
+    "sourceId": "wiki-houseafford"
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "narration": "Healthcare in America costs far more than almost anywhere else on Earth.",
+    "sourceId": "wiki-health"
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "narration": "And the college degree that once guaranteed a middle-class life now often comes attached to decades of debt.",
+    "sourceId": "wiki-studentdebt"
+  },
+  {
+    "id": "s24",
+    "type": "doodle",
+    "narration": "Housing, healthcare, childcare, college — the exact pillars of a middle-class life are the ones whose prices ran away fastest.",
+    "items": [
+      "paystub",
+      "house",
+      "hospital",
+      "gradcap"
+    ],
+    "labels": [
+      "one paycheck",
+      "housing",
+      "healthcare",
+      "college"
+    ],
+    "caption": "one paycheck, four exploding costs",
+    "flow": true
+  },
+  {
+    "id": "s25",
+    "type": "title",
+    "narration": "Which led straight to force two. When one income stopped stretching, families did the obvious thing — they sent two people to work.",
+    "heading": "Force Two: Running to Stand Still",
+    "kicker": "two incomes, same life"
+  },
+  {
+    "id": "s26",
+    "type": "image",
+    "narration": "But a bankruptcy expert named Elizabeth Warren spotted the trap hiding inside that fix.",
+    "src": "img/warren.jpg",
+    "label": "Elizabeth Warren",
+    "caption": "…who named the trap"
+  },
+  {
+    "id": "s27",
+    "type": "screenshot",
+    "narration": "Her research found that two-income families were ending up more financially fragile, not less.",
+    "sourceId": "wiki-twoincome"
+  },
+  {
+    "id": "s28",
+    "type": "stage",
+    "narration": "Why? Because once most families had two earners, the price of what they competed for — especially houses in good school districts — simply rose to soak up that second income.",
+    "motif": "twoincome",
+    "caption": "two incomes — still treading water"
+  },
+  {
+    "id": "s29",
+    "type": "character",
+    "narration": "So now it takes two incomes to afford what one used to. And with both parents working, a single job loss or one illness can sink the entire ship.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "house",
+        "label": "bid up by two incomes"
+      },
+      {
+        "name": "warning",
+        "label": "…no safety margin"
+      }
+    ]
+  },
+  {
+    "id": "s30",
+    "type": "character",
+    "narration": "So how did families cover the gap in the meantime? Simple. They borrowed.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "creditcard",
+        "label": "fill the gap"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "stage",
+    "narration": "Credit cards, auto loans, student loans, home-equity lines. For years, debt quietly papered over the fact that the paycheck no longer reached the end of the month.",
+    "icons": [
+      "creditcard",
+      "receipt"
+    ],
+    "caption": "debt filled the gap"
+  },
+  {
+    "id": "s32",
+    "type": "callout",
+    "narration": "Which is how you get families earning six figures who still live paycheck to paycheck. The income looks middle class. The security is gone.",
+    "text": "paycheck to paycheck",
+    "sub": "even many high earners",
+    "icon": "receipt"
+  },
+  {
+    "id": "s33",
+    "type": "character",
+    "narration": "It can feel fine — right up until it isn't. One surprise bill, and the whole illusion wobbles.",
+    "pose": "handtohead",
+    "expression": "worried",
+    "bubble": "it's fine. this is fine.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "one bill away"
+      }
+    ]
+  },
+  {
+    "id": "s34",
+    "type": "title",
+    "narration": "And while the middle was being squeezed, the very top was pulling away — fast.",
+    "heading": "Force Three: The Great Divergence",
+    "kicker": "the top pulls away"
+  },
+  {
+    "id": "s35",
+    "type": "screenshot",
+    "narration": "Income inequality in America has climbed back to levels not seen since the 1920s.",
+    "sourceId": "wiki-incineq"
+  },
+  {
+    "id": "s36",
+    "type": "screenshot",
+    "narration": "And it's even sharper in wealth — what you own, not just what you earn.",
+    "sourceId": "wiki-wealthineq"
+  },
+  {
+    "id": "s37",
+    "type": "stage",
+    "narration": "The share of the country's income flowing to the middle class has been shrinking for fifty years — while the slice going to the top has swelled.",
+    "motif": "shrinkpie",
+    "caption": "the middle's slice shrinks"
+  },
+  {
+    "id": "s38",
+    "type": "image",
+    "narration": "Here's the quiet engine of it. The richest don't mostly earn a wage. They own assets — stocks, companies, real estate.",
+    "src": "img/bezos.jpg",
+    "memeTop": "when you own assets",
+    "memeBottom": "not a paycheck",
+    "caption": "the gap is ownership"
+  },
+  {
+    "id": "s39",
+    "type": "image",
+    "narration": "So when those assets boom, owners rocket away from everyone living on a salary. Over forty years, assets have massively outrun wages.",
+    "src": "img/musk.jpg",
+    "memeTop": "stocks go up",
+    "memeBottom": "wages don't",
+    "caption": "assets raced ahead of pay"
+  },
+  {
+    "id": "s40",
     "type": "compare",
-    "narration": "And sometimes, brutal as it sounds, default is the rational choice. Crushing an entire generation under impossible debt can be worse than simply hitting reset.",
+    "narration": "Which means two families earning the identical salary can end up worlds apart — purely based on whether they owned a home and some stocks, or didn't.",
     "left": {
-      "title": "keep paying",
-      "value": "crush a generation",
-      "icon": "chain"
+      "title": "wage earners",
+      "value": "fell behind",
+      "icon": "paystub"
     },
     "right": {
-      "title": "default & reset",
-      "value": "pain, then recover",
+      "title": "asset owners",
+      "value": "pulled away",
       "icon": "chartup"
     }
   },
   {
-    "id": "s71",
-    "type": "character",
-    "narration": "Which quietly flips the usual morality of it. We're taught that paying your debts is always right. For a country, it's a cold calculation about which path causes less suffering.",
-    "pose": "think",
-    "bubble": "not always right to pay?"
-  },
-  {
-    "id": "s72",
-    "type": "chalkboard",
-    "narration": "And that uncovers the real lesson hiding under all the drama.",
-    "lines": [
-      "a country isn't broke",
-      "the day it runs out of cash —",
-      "it's broke the day the world",
-      "stops believing it will pay."
-    ]
-  },
-  {
-    "id": "s73",
-    "type": "stage",
-    "narration": "Just like the value of money itself, a government's power to borrow runs almost entirely on confidence. On the belief that it's good for it.",
-    "motif": "trustprop",
-    "caption": "it all rests on belief"
-  },
-  {
-    "id": "s74",
-    "type": "character",
-    "narration": "While the world believes you'll pay, you can roll your debt over forever, cheaply, like magic. The debt never actually has to be repaid at all.",
-    "pose": "explain",
-    "props": [
+    "id": "s41",
+    "type": "chart",
+    "narration": "Add it all up, and the wealth of the country is lopsided. The bottom half owns almost nothing. The top tenth owns roughly two-thirds of everything.",
+    "chartType": "bar",
+    "title": "Share of US household wealth",
+    "unit": "x",
+    "data": [
       {
-        "name": "handshake",
-        "label": "belief = cheap debt forever"
-      }
-    ]
-  },
-  {
-    "id": "s75",
-    "type": "stage",
-    "narration": "The day that belief dies, the magic stops — and the reckoning that was always theoretically there arrives all at once.",
-    "motif": "crash",
-    "caption": "…the day belief dies",
-    "accent": true
-  },
-  {
-    "id": "s76",
-    "type": "callout",
-    "narration": "So a country doesn't go bankrupt the day it runs out of money. It goes bankrupt the day the world stops trusting it to pay.",
-    "text": "confidence",
-    "sub": "the only thing really holding it up",
-    "icon": "gauge"
-  },
-  {
-    "id": "s77",
-    "type": "character",
-    "narration": "It's the exact same force behind a currency's value, behind a bank run, behind every fraud we've ever covered. Trust builds slowly — and collapses in an afternoon.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "gauge",
-        "label": "trust builds slowly"
+        "label": "bottom 50%",
+        "value": 3
       },
       {
-        "name": "warning",
-        "label": "…gone in a day"
+        "label": "middle 40%",
+        "value": 28
+      },
+      {
+        "label": "top 10%",
+        "value": 69
       }
-    ]
-  },
-  {
-    "id": "s78",
-    "type": "stage",
-    "narration": "The flags change — Argentina, Greece, Sri Lanka, the next one. But the pattern underneath is always the same promise, and the same moment it snaps.",
-    "icons": [
-      "globe",
-      "scale"
     ],
-    "caption": "the pattern never changes"
+    "highlight": 2,
+    "note": "top 10% own ~⅔"
   },
   {
-    "id": "s79",
+    "id": "s42",
+    "type": "screenshot",
+    "narration": "And the ladder up is getting harder to climb. Economic mobility — the odds a kid out-earns their parents — has been falling for generations.",
+    "sourceId": "wiki-mobility"
+  },
+  {
+    "id": "s43",
+    "type": "stage",
+    "narration": "For kids born in 1940, the chance of earning more than their parents was around ninety percent. For kids born in the 1980s, it had fallen to barely a coin flip.",
+    "motif": "ladderbreak",
+    "caption": "the next rung is missing"
+  },
+  {
+    "id": "s44",
+    "type": "title",
+    "narration": "So why did this happen? A big part of it was that a certain kind of job simply disappeared.",
+    "heading": "Why It Happened",
+    "kicker": "the jobs changed"
+  },
+  {
+    "id": "s45",
+    "type": "screenshot",
+    "narration": "The well-paid factory work that built the postwar middle class was hollowed out by deindustrialization.",
+    "sourceId": "wiki-deind"
+  },
+  {
+    "id": "s46",
+    "type": "doodle",
+    "narration": "Globalization and automation moved millions of those solid middle-wage jobs overseas, or handed them to machines.",
+    "items": [
+      "factory",
+      "globe",
+      "chip"
+    ],
+    "labels": [
+      "factory jobs",
+      "offshored",
+      "or automated"
+    ],
+    "caption": "the middle rungs vanished",
+    "flow": true
+  },
+  {
+    "id": "s47",
+    "type": "stage",
+    "narration": "What replaced them split in two: high-paid jobs for the credentialed few, and low-paid service work for everyone else. Economists call it job polarization.",
+    "motif": "hollowout",
+    "caption": "jobs split to the extremes"
+  },
+  {
+    "id": "s48",
     "type": "character",
-    "narration": "So the next time a headline says a country is 'on the brink of default,' you'll know exactly what that means — and what comes next.",
-    "pose": "present",
-    "bubble": "now you know the pattern",
+    "narration": "The economy stopped producing middle-wage work — which was exactly the kind of job the middle class had been built on.",
+    "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "newspaper",
-        "label": "…read what's coming"
+        "name": "factory",
+        "label": "middle-wage jobs"
+      },
+      {
+        "name": "chartdown",
+        "label": "…thinning out"
       }
     ]
   },
   {
-    "id": "s80",
+    "id": "s49",
+    "type": "screenshot",
+    "narration": "None of this was one villain, or one law. It was a slow drift of many forces, all quietly pushing the same way.",
+    "sourceId": "wiki-econineq"
+  },
+  {
+    "id": "s50",
+    "type": "chalkboard",
+    "narration": "Flat real wages. Soaring core costs. Vanishing middle jobs. Wealth pooling at the top. Four forces, one direction — a hollowed-out middle.",
+    "lines": [
+      "flat real wages",
+      "soaring core costs",
+      "vanishing middle jobs",
+      "wealth pooling at the top"
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "title",
+    "narration": "Now, to be honest about it — this is not a simple tragedy.",
+    "heading": "Is It All Bad?",
+    "kicker": "the honest answer"
+  },
+  {
+    "id": "s52",
     "type": "character",
-    "narration": "If this made the scariest headline in finance finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "Because part of that shrinking middle didn't fall at all. It actually climbed into higher incomes.",
+    "pose": "think",
+    "bubble": "some moved UP"
+  },
+  {
+    "id": "s53",
+    "type": "stage",
+    "narration": "A real chunk of the 'disappearing' middle class moved up and out the top. The upper-income group grew faster than the lower one did.",
+    "icons": [
+      "chartup",
+      "crowd"
+    ],
+    "caption": "some of the middle moved up"
+  },
+  {
+    "id": "s54",
+    "type": "screenshot",
+    "narration": "And in raw cost-of-living terms, some things got dramatically better and cheaper.",
+    "sourceId": "wiki-costliving"
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "narration": "A phone in your pocket today is more powerful than a 1970s mainframe — for about the price of a nice dinner. Gadgets got radically cheaper.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "phone",
+        "label": "cheap, powerful tech"
+      },
+      {
+        "name": "laptop",
+        "label": "undreamed-of gadgets"
+      }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "compare",
+    "narration": "Here's the cruel split, though. The things that got cheaper are the gadgets. The things that got far pricier are the actual pillars of a stable life.",
+    "left": {
+      "title": "got cheaper",
+      "value": "phones, TVs",
+      "icon": "phone"
+    },
+    "right": {
+      "title": "got pricier",
+      "value": "home, health, school",
+      "icon": "house"
+    }
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "narration": "You can stream every film ever made — but you can't afford the house, the doctor, or the degree. We got richer in stuff, and poorer in security.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "laptop",
+        "label": "rich in stuff"
+      },
+      {
+        "name": "house",
+        "label": "…poor in security"
+      }
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "title",
+    "narration": "Which points at what is really disappearing here — and it isn't a dollar figure.",
+    "heading": "What's Really Disappearing",
+    "kicker": "the real loss"
+  },
+  {
+    "id": "s59",
+    "type": "stage",
+    "narration": "The middle class didn't exactly vanish. What's vanishing is the thing it really stood for — security. The simple confidence that if you worked hard, the basics were covered.",
+    "motif": "squeeze",
+    "caption": "security, not status"
+  },
+  {
+    "id": "s60",
+    "type": "screenshot",
+    "narration": "Because the American Dream was never really about getting rich. It was the quiet promise that your kids would do better than you.",
+    "sourceId": "wiki-dream"
+  },
+  {
+    "id": "s61",
+    "type": "callout",
+    "narration": "And that promise, measured in cold data, has faded from near-certain to little better than a coin flip.",
+    "text": "a coin flip",
+    "sub": "odds a kid out-earns their parents today",
+    "icon": "scale",
+    "break": true
+  },
+  {
+    "id": "s62",
+    "type": "stage",
+    "narration": "So when the rung you're standing on cracks, climbing to the next one stops feeling like effort — and starts feeling like luck.",
+    "motif": "ladderbreak",
+    "caption": "the promise is cracking"
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "narration": "But here's the genuinely hopeful part. None of this was a law of nature. It was built by choices — about wages, housing, healthcare, education, and taxes.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "it was built by choices"
+      }
+    ]
+  },
+  {
+    "id": "s64",
+    "type": "stage",
+    "narration": "A middle class isn't something a country just has. It's a promise a society chooses to keep — or quietly lets slide.",
+    "motif": "trustprop",
+    "caption": "it rests on a promise"
+  },
+  {
+    "id": "s65",
+    "type": "character",
+    "narration": "So the next time someone says the middle class is 'disappearing,' you'll know it isn't vanishing into thin air. It's being squeezed, split, and priced out.",
+    "pose": "present",
+    "bubble": "now you can see it",
+    "props": [
+      {
+        "name": "ladder",
+        "label": "…and why"
+      }
+    ]
+  },
+  {
+    "id": "s66",
+    "type": "character",
+    "narration": "If this made the squeeze you can actually feel finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "bond",
+        "name": "receipt",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s81",
+    "id": "s67",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

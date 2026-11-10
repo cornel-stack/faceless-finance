@@ -25,6 +25,8 @@ export type DoodleName =
   | "euro" | "yen" | "pound" | "exchange" | "candles" | "basket" | "anchor" | "magnet" | "wheelbarrow" | "banknote"
   // EP017 (sovereign default) additions:
   | "scissors" | "lifering" | "vulture" | "rating" | "protest"
+  // EP018 (middle class) additions:
+  | "ladder" | "receipt" | "gradcap"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -944,6 +946,37 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={28} y1={26} x2={72} y2={26} strokeWidth={3} />
           <RLine x1={28} y1={34} x2={64} y2={34} strokeWidth={3} />
           <RLine x1={28} y1={42} x2={70} y2={42} strokeWidth={3} />
+        </>
+      );
+
+    // ---- EP018 (middle class) doodles ----
+    case "ladder":
+      return (
+        <>
+          <RLine x1={34} y1={12} x2={34} y2={92} strokeWidth={3.4} />
+          <RLine x1={66} y1={12} x2={66} y2={92} strokeWidth={3.4} />
+          <RLine x1={34} y1={26} x2={66} y2={26} strokeWidth={3} />
+          <RLine x1={34} y1={66} x2={66} y2={66} strokeWidth={3} />
+          <RLine x1={34} y1={82} x2={66} y2={82} strokeWidth={3} />
+          <RLine x1={34} y1={46} x2={48} y2={46} strokeWidth={3} stroke={RED} />
+          <RLine x1={56} y1={46} x2={66} y2={46} strokeWidth={3} stroke={RED} />
+        </>
+      );
+    case "receipt":
+      return (
+        <>
+          <RPath d="M28 12 L72 12 L72 84 L64 78 L56 84 L48 78 L40 84 L32 78 L28 84 Z" fill="#fff" strokeWidth={SW} />
+          {[24, 34, 44, 54].map((y, i) => <RLine key={i} x1={36} y1={y} x2={64} y2={y} strokeWidth={1.8} />)}
+          <text x={50} y={72} fontSize={15} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">$$$</text>
+        </>
+      );
+    case "gradcap":
+      return (
+        <>
+          <RPath d="M50 30 L86 44 L50 58 L14 44 Z" fill={INK} fillStyle="solid" strokeWidth={SW} />
+          <RLine x1={70} y1={49} x2={70} y2={68} strokeWidth={2.4} />
+          <RCircle cx={70} cy={70} d={6} fill={GOLD} strokeWidth={1.4} />
+          <RPath d="M34 50 L34 68 Q50 80 66 68 L66 50" fill="none" strokeWidth={SW} />
         </>
       );
   }

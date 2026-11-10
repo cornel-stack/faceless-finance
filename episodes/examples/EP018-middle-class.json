@@ -1,0 +1,924 @@
+{
+  "id": "EP018",
+  "series": "Napkin Numbers",
+  "title": "Why the Middle Class Is Disappearing (the Data Nobody Shows)",
+  "slug": "why-the-middle-class-is-disappearing",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP018 — explainer (By the Numbers, next after country-bankrupt). Middle class hollowing out. NEW: meaningful phrase highlights (not single words) + purposeful auto-fit zoom; real photos (Musk/Bezos/Warren) incl meme-format captions; 6 new motifs (hollowout, squeeze, ladderbreak, twoincome, shrinkpie, escalator). 11 scene types, ~15 cited screenshots.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "doodle",
+      "narration": "For decades, the deal in America was simple. One job could buy a house, a car, raise a couple of kids, and still put something away for retirement.",
+      "items": [
+        "house",
+        "couple",
+        "baby"
+      ],
+      "labels": [
+        "one house",
+        "one income",
+        "one dream"
+      ],
+      "caption": "the old deal"
+    },
+    {
+      "id": "s2",
+      "type": "screenshot",
+      "narration": "They called it the American Dream — the promise that anyone who worked hard could attain a better life.",
+      "sourceId": "wiki-dream"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "For a huge share of the country, that promise is quietly breaking. And the data shows it happening in slow motion.",
+      "pose": "think",
+      "bubble": "still true?",
+      "props": [
+        {
+          "name": "warning",
+          "label": "…breaking quietly"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "callout",
+      "narration": "In 1971, around sixty-one percent of American adults lived in middle-income households. Today it's closer to fifty. The middle is emptying out.",
+      "text": "61% → 50%",
+      "sub": "share of US adults in the middle class (Pew)",
+      "icon": "crowd"
+    },
+    {
+      "id": "s5",
+      "type": "stage",
+      "narration": "And here's the part nobody shows you. It's not just shrinking. It's splitting — a few rising to the top, more sliding down.",
+      "motif": "hollowout",
+      "caption": "the middle is hollowing out"
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "So let's follow the numbers. Why is the middle class disappearing — and what's actually taking its place?",
+      "heading": "Why the Middle Class Is Disappearing",
+      "kicker": "the data nobody shows",
+      "sub": "It didn't vanish. It got squeezed."
+    },
+    {
+      "id": "s7",
+      "type": "character",
+      "narration": "First — what even is the middle class? Weirdly, almost nobody agrees.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "no fixed line"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "Technically it's just the people in the middle of the income ladder — not rich, not poor.",
+      "sourceId": "wiki-mc"
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "But the definitions are so loose that by some measures it's a quarter of households, and by others, three-quarters.",
+      "sourceId": "wiki-mcus"
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "So let's use a clean one, from the Pew Research Center. Middle class means a household earning between two-thirds and double the national median income.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "⅔ to 2× median"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "compare",
+      "narration": "But 'middle class' was never really about a precise number. It was about a feeling — security. A home, healthcare, retirement, and kids who'd do better than you.",
+      "left": {
+        "title": "it used to mean",
+        "value": "security",
+        "icon": "house"
+      },
+      "right": {
+        "title": "now it means",
+        "value": "anxiety",
+        "icon": "warning"
+      }
+    },
+    {
+      "id": "s12",
+      "type": "timeline",
+      "narration": "And you can watch that security erode, decade by decade. One income to two. A starter home to a bidding war. A degree that was free-ish to one that costs a fortune.",
+      "title": "The same life, getting harder to afford",
+      "events": [
+        {
+          "year": "1970",
+          "label": "one income buys the house",
+          "icon": "house"
+        },
+        {
+          "year": "1990",
+          "label": "now you need two",
+          "icon": "couple"
+        },
+        {
+          "year": "2008",
+          "label": "debt fills the gap",
+          "icon": "creditcard"
+        },
+        {
+          "year": "today",
+          "label": "two incomes, still tight",
+          "icon": "warning"
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "That feeling — not the salary — is what's really disappearing. And three big forces are pulling it apart.",
+      "pose": "point",
+      "bubble": "three forces"
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "The first force is the one you can feel every single month: the squeeze.",
+      "heading": "Force One: The Squeeze",
+      "kicker": "wages flat, costs soaring"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "Start with your paycheck. What matters isn't the number on it — it's what that number can actually buy. Real wages.",
+      "sourceId": "wiki-realwage"
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "narration": "For decades after the war, as workers produced more each hour, their pay climbed right alongside it. Produce more, earn more.",
+      "sourceId": "wiki-productivity"
+    },
+    {
+      "id": "s17",
+      "type": "chart",
+      "narration": "Then, around the 1970s, that line split in two. The economy kept getting more productive — but the typical worker's pay flattened out.",
+      "chartType": "line",
+      "title": "Productivity kept climbing. Pay didn't.",
+      "data": [
+        {
+          "label": "1970",
+          "value": 100
+        },
+        {
+          "label": "1985",
+          "value": 150
+        },
+        {
+          "label": "2000",
+          "value": 200
+        },
+        {
+          "label": "2020",
+          "value": 255
+        }
+      ],
+      "series2": [
+        {
+          "label": "1970",
+          "value": 100
+        },
+        {
+          "label": "1985",
+          "value": 108
+        },
+        {
+          "label": "2000",
+          "value": 114
+        },
+        {
+          "label": "2020",
+          "value": 122
+        }
+      ],
+      "seriesLabels": [
+        "output per worker",
+        "typical pay"
+      ],
+      "note": "the gap = the squeeze",
+      "noteAt": 3
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "That growing gap between what workers produced and what they were paid became, quite simply, someone else's profit.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "productivity ↑"
+        },
+        {
+          "name": "paystub",
+          "label": "…pay stays flat"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "Now squeeze that flat paycheck from the other side. Because the things a middle-class life actually requires did not stay flat. They exploded.",
+      "motif": "squeeze",
+      "caption": "flat wages, rising costs"
+    },
+    {
+      "id": "s20",
+      "type": "chart",
+      "narration": "Look at what's happened to prices since the 1980s. Televisions and gadgets got cheaper. But the pillars of a stable life ran away from wages completely.",
+      "chartType": "bar",
+      "title": "Price growth since the 1980s (%)",
+      "unit": "x",
+      "data": [
+        {
+          "label": "Wages",
+          "value": 80
+        },
+        {
+          "label": "Housing",
+          "value": 350
+        },
+        {
+          "label": "Healthcare",
+          "value": 600
+        },
+        {
+          "label": "College",
+          "value": 1200
+        }
+      ],
+      "highlight": 3,
+      "note": "wages couldn't keep up"
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "narration": "Housing — the single biggest cost — has raced ahead of incomes for decades.",
+      "sourceId": "wiki-houseafford"
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "Healthcare in America costs far more than almost anywhere else on Earth.",
+      "sourceId": "wiki-health"
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "And the college degree that once guaranteed a middle-class life now often comes attached to decades of debt.",
+      "sourceId": "wiki-studentdebt"
+    },
+    {
+      "id": "s24",
+      "type": "doodle",
+      "narration": "Housing, healthcare, childcare, college — the exact pillars of a middle-class life are the ones whose prices ran away fastest.",
+      "items": [
+        "paystub",
+        "house",
+        "hospital",
+        "gradcap"
+      ],
+      "labels": [
+        "one paycheck",
+        "housing",
+        "healthcare",
+        "college"
+      ],
+      "caption": "one paycheck, four exploding costs",
+      "flow": true
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Which led straight to force two. When one income stopped stretching, families did the obvious thing — they sent two people to work.",
+      "heading": "Force Two: Running to Stand Still",
+      "kicker": "two incomes, same life"
+    },
+    {
+      "id": "s26",
+      "type": "image",
+      "narration": "But a bankruptcy expert named Elizabeth Warren spotted the trap hiding inside that fix.",
+      "src": "img/warren.jpg",
+      "label": "Elizabeth Warren",
+      "caption": "…who named the trap"
+    },
+    {
+      "id": "s27",
+      "type": "screenshot",
+      "narration": "Her research found that two-income families were ending up more financially fragile, not less.",
+      "sourceId": "wiki-twoincome"
+    },
+    {
+      "id": "s28",
+      "type": "stage",
+      "narration": "Why? Because once most families had two earners, the price of what they competed for — especially houses in good school districts — simply rose to soak up that second income.",
+      "motif": "twoincome",
+      "caption": "two incomes — still treading water"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "So now it takes two incomes to afford what one used to. And with both parents working, a single job loss or one illness can sink the entire ship.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "bid up by two incomes"
+        },
+        {
+          "name": "warning",
+          "label": "…no safety margin"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "So how did families cover the gap in the meantime? Simple. They borrowed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "fill the gap"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "stage",
+      "narration": "Credit cards, auto loans, student loans, home-equity lines. For years, debt quietly papered over the fact that the paycheck no longer reached the end of the month.",
+      "icons": [
+        "creditcard",
+        "receipt"
+      ],
+      "caption": "debt filled the gap"
+    },
+    {
+      "id": "s32",
+      "type": "callout",
+      "narration": "Which is how you get families earning six figures who still live paycheck to paycheck. The income looks middle class. The security is gone.",
+      "text": "paycheck to paycheck",
+      "sub": "even many high earners",
+      "icon": "receipt"
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "It can feel fine — right up until it isn't. One surprise bill, and the whole illusion wobbles.",
+      "pose": "handtohead",
+      "expression": "worried",
+      "bubble": "it's fine. this is fine.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "one bill away"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "And while the middle was being squeezed, the very top was pulling away — fast.",
+      "heading": "Force Three: The Great Divergence",
+      "kicker": "the top pulls away"
+    },
+    {
+      "id": "s35",
+      "type": "screenshot",
+      "narration": "Income inequality in America has climbed back to levels not seen since the 1920s.",
+      "sourceId": "wiki-incineq"
+    },
+    {
+      "id": "s36",
+      "type": "screenshot",
+      "narration": "And it's even sharper in wealth — what you own, not just what you earn.",
+      "sourceId": "wiki-wealthineq"
+    },
+    {
+      "id": "s37",
+      "type": "stage",
+      "narration": "The share of the country's income flowing to the middle class has been shrinking for fifty years — while the slice going to the top has swelled.",
+      "motif": "shrinkpie",
+      "caption": "the middle's slice shrinks"
+    },
+    {
+      "id": "s38",
+      "type": "image",
+      "narration": "Here's the quiet engine of it. The richest don't mostly earn a wage. They own assets — stocks, companies, real estate.",
+      "src": "img/bezos.jpg",
+      "memeTop": "when you own assets",
+      "memeBottom": "not a paycheck",
+      "caption": "the gap is ownership"
+    },
+    {
+      "id": "s39",
+      "type": "image",
+      "narration": "So when those assets boom, owners rocket away from everyone living on a salary. Over forty years, assets have massively outrun wages.",
+      "src": "img/musk.jpg",
+      "memeTop": "stocks go up",
+      "memeBottom": "wages don't",
+      "caption": "assets raced ahead of pay"
+    },
+    {
+      "id": "s40",
+      "type": "compare",
+      "narration": "Which means two families earning the identical salary can end up worlds apart — purely based on whether they owned a home and some stocks, or didn't.",
+      "left": {
+        "title": "wage earners",
+        "value": "fell behind",
+        "icon": "paystub"
+      },
+      "right": {
+        "title": "asset owners",
+        "value": "pulled away",
+        "icon": "chartup"
+      }
+    },
+    {
+      "id": "s41",
+      "type": "chart",
+      "narration": "Add it all up, and the wealth of the country is lopsided. The bottom half owns almost nothing. The top tenth owns roughly two-thirds of everything.",
+      "chartType": "bar",
+      "title": "Share of US household wealth",
+      "unit": "x",
+      "data": [
+        {
+          "label": "bottom 50%",
+          "value": 3
+        },
+        {
+          "label": "middle 40%",
+          "value": 28
+        },
+        {
+          "label": "top 10%",
+          "value": 69
+        }
+      ],
+      "highlight": 2,
+      "note": "top 10% own ~⅔"
+    },
+    {
+      "id": "s42",
+      "type": "screenshot",
+      "narration": "And the ladder up is getting harder to climb. Economic mobility — the odds a kid out-earns their parents — has been falling for generations.",
+      "sourceId": "wiki-mobility"
+    },
+    {
+      "id": "s43",
+      "type": "stage",
+      "narration": "For kids born in 1940, the chance of earning more than their parents was around ninety percent. For kids born in the 1980s, it had fallen to barely a coin flip.",
+      "motif": "ladderbreak",
+      "caption": "the next rung is missing"
+    },
+    {
+      "id": "s44",
+      "type": "title",
+      "narration": "So why did this happen? A big part of it was that a certain kind of job simply disappeared.",
+      "heading": "Why It Happened",
+      "kicker": "the jobs changed"
+    },
+    {
+      "id": "s45",
+      "type": "screenshot",
+      "narration": "The well-paid factory work that built the postwar middle class was hollowed out by deindustrialization.",
+      "sourceId": "wiki-deind"
+    },
+    {
+      "id": "s46",
+      "type": "doodle",
+      "narration": "Globalization and automation moved millions of those solid middle-wage jobs overseas, or handed them to machines.",
+      "items": [
+        "factory",
+        "globe",
+        "chip"
+      ],
+      "labels": [
+        "factory jobs",
+        "offshored",
+        "or automated"
+      ],
+      "caption": "the middle rungs vanished",
+      "flow": true
+    },
+    {
+      "id": "s47",
+      "type": "stage",
+      "narration": "What replaced them split in two: high-paid jobs for the credentialed few, and low-paid service work for everyone else. Economists call it job polarization.",
+      "motif": "hollowout",
+      "caption": "jobs split to the extremes"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "The economy stopped producing middle-wage work — which was exactly the kind of job the middle class had been built on.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "factory",
+          "label": "middle-wage jobs"
+        },
+        {
+          "name": "chartdown",
+          "label": "…thinning out"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "screenshot",
+      "narration": "None of this was one villain, or one law. It was a slow drift of many forces, all quietly pushing the same way.",
+      "sourceId": "wiki-econineq"
+    },
+    {
+      "id": "s50",
+      "type": "chalkboard",
+      "narration": "Flat real wages. Soaring core costs. Vanishing middle jobs. Wealth pooling at the top. Four forces, one direction — a hollowed-out middle.",
+      "lines": [
+        "flat real wages",
+        "soaring core costs",
+        "vanishing middle jobs",
+        "wealth pooling at the top"
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "title",
+      "narration": "Now, to be honest about it — this is not a simple tragedy.",
+      "heading": "Is It All Bad?",
+      "kicker": "the honest answer"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Because part of that shrinking middle didn't fall at all. It actually climbed into higher incomes.",
+      "pose": "think",
+      "bubble": "some moved UP"
+    },
+    {
+      "id": "s53",
+      "type": "stage",
+      "narration": "A real chunk of the 'disappearing' middle class moved up and out the top. The upper-income group grew faster than the lower one did.",
+      "icons": [
+        "chartup",
+        "crowd"
+      ],
+      "caption": "some of the middle moved up"
+    },
+    {
+      "id": "s54",
+      "type": "screenshot",
+      "narration": "And in raw cost-of-living terms, some things got dramatically better and cheaper.",
+      "sourceId": "wiki-costliving"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "A phone in your pocket today is more powerful than a 1970s mainframe — for about the price of a nice dinner. Gadgets got radically cheaper.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "cheap, powerful tech"
+        },
+        {
+          "name": "laptop",
+          "label": "undreamed-of gadgets"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "compare",
+      "narration": "Here's the cruel split, though. The things that got cheaper are the gadgets. The things that got far pricier are the actual pillars of a stable life.",
+      "left": {
+        "title": "got cheaper",
+        "value": "phones, TVs",
+        "icon": "phone"
+      },
+      "right": {
+        "title": "got pricier",
+        "value": "home, health, school",
+        "icon": "house"
+      }
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "You can stream every film ever made — but you can't afford the house, the doctor, or the degree. We got richer in stuff, and poorer in security.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "rich in stuff"
+        },
+        {
+          "name": "house",
+          "label": "…poor in security"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "title",
+      "narration": "Which points at what is really disappearing here — and it isn't a dollar figure.",
+      "heading": "What's Really Disappearing",
+      "kicker": "the real loss"
+    },
+    {
+      "id": "s59",
+      "type": "stage",
+      "narration": "The middle class didn't exactly vanish. What's vanishing is the thing it really stood for — security. The simple confidence that if you worked hard, the basics were covered.",
+      "motif": "squeeze",
+      "caption": "security, not status"
+    },
+    {
+      "id": "s60",
+      "type": "screenshot",
+      "narration": "Because the American Dream was never really about getting rich. It was the quiet promise that your kids would do better than you.",
+      "sourceId": "wiki-dream"
+    },
+    {
+      "id": "s61",
+      "type": "callout",
+      "narration": "And that promise, measured in cold data, has faded from near-certain to little better than a coin flip.",
+      "text": "a coin flip",
+      "sub": "odds a kid out-earns their parents today",
+      "icon": "scale",
+      "break": true
+    },
+    {
+      "id": "s62",
+      "type": "stage",
+      "narration": "So when the rung you're standing on cracks, climbing to the next one stops feeling like effort — and starts feeling like luck.",
+      "motif": "ladderbreak",
+      "caption": "the promise is cracking"
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "But here's the genuinely hopeful part. None of this was a law of nature. It was built by choices — about wages, housing, healthcare, education, and taxes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "it was built by choices"
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "type": "stage",
+      "narration": "A middle class isn't something a country just has. It's a promise a society chooses to keep — or quietly lets slide.",
+      "motif": "trustprop",
+      "caption": "it rests on a promise"
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "So the next time someone says the middle class is 'disappearing,' you'll know it isn't vanishing into thin air. It's being squeezed, split, and priced out.",
+      "pose": "present",
+      "bubble": "now you can see it",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "…and why"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "character",
+      "narration": "If this made the squeeze you can actually feel finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-dream",
+      "name": "American Dream (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/American_Dream",
+      "quote": "the freedom and opportunity to succeed and attain a better life"
+    },
+    {
+      "id": "wiki-mc",
+      "name": "Middle class (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Middle_class",
+      "quote": "a class of people in the middle of a social hierarchy"
+    },
+    {
+      "id": "wiki-mcus",
+      "name": "Middle class in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Middle_class_in_the_United_States",
+      "quote": "the middle class constitutes anywhere from 25% to 75% of households"
+    },
+    {
+      "id": "wiki-realwage",
+      "name": "Real wages (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_wages",
+      "quote": "wages in terms of the amount of goods and services that can be bought"
+    },
+    {
+      "id": "wiki-productivity",
+      "name": "Productivity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Productivity",
+      "quote": "the efficiency of production of goods or services"
+    },
+    {
+      "id": "wiki-houseafford",
+      "name": "Affordable housing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affordable_housing",
+      "quote": "a household income at or below the median"
+    },
+    {
+      "id": "wiki-health",
+      "name": "Health care prices in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_care_prices_in_the_United_States",
+      "quote": "higher than in other countries"
+    },
+    {
+      "id": "wiki-studentdebt",
+      "name": "Student debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_debt",
+      "quote": "pay for education-related expenses"
+    },
+    {
+      "id": "wiki-twoincome",
+      "name": "The Two-Income Trap (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Two-Income_Trap",
+      "quote": "personal bankruptcy and economic insecurity"
+    },
+    {
+      "id": "wiki-incineq",
+      "name": "Income inequality in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income_inequality_in_the_United_States",
+      "quote": "followed by increasing inequality"
+    },
+    {
+      "id": "wiki-wealthineq",
+      "name": "Wealth inequality in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth_inequality_in_the_United_States",
+      "quote": "the distribution of wealth"
+    },
+    {
+      "id": "wiki-mobility",
+      "name": "Economic mobility (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_mobility",
+      "quote": "the ability of an individual, family or some other group"
+    },
+    {
+      "id": "wiki-deind",
+      "name": "Deindustrialization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deindustrialization",
+      "quote": "removal or reduction of industrial capacity"
+    },
+    {
+      "id": "wiki-econineq",
+      "name": "Economic inequality (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_inequality",
+      "quote": "how the total sum of money paid to people is distributed"
+    },
+    {
+      "id": "wiki-costliving",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "the cost of maintaining a certain standard of living"
+    },
+    {
+      "id": "wiki-householdinc",
+      "name": "Household income in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_income_in_the_United_States",
+      "quote": "an economic measure of one household's total income"
+    }
+  ],
+  "youtube": {
+    "title": "Why the Middle Class Is Disappearing (the Data Nobody Shows)",
+    "alts": [
+      "The Middle Class Isn't Shrinking — It's Splitting",
+      "Why One Income Used to Be Enough (and Isn't Now)"
+    ],
+    "hook": "For decades, one income could buy a house, raise kids, and fund a retirement. Today, two incomes barely stretch — and the share of Americans in the middle class has fallen from 61% to about 50%. But 'disappearing' is the wrong word: the middle isn't vanishing, it's SPLITTING. This is the data nobody shows you — the squeeze of flat wages against soaring housing, healthcare and college; the two-income trap; the great divergence as wealth pools at the top; and why a kid's odds of out-earning their parents fell from near-certain to a coin flip. Fully cited.",
+    "bullets": [
+      "Why the middle class is hollowing out — splitting up AND down, not just shrinking",
+      "The squeeze: productivity kept rising, but typical pay went flat",
+      "Why housing, healthcare and college ran away from wages",
+      "The two-income trap: how two earners ended up more fragile, not less",
+      "The great divergence — why owning assets beats earning a wage",
+      "Falling mobility: the odds of out-earning your parents, from ~90% to a coin flip"
+    ],
+    "tags": [
+      "why the middle class is disappearing",
+      "middle class",
+      "shrinking middle class",
+      "income inequality",
+      "wealth inequality",
+      "two income trap",
+      "wage stagnation",
+      "cost of living",
+      "economic mobility",
+      "american dream",
+      "productivity pay gap",
+      "paycheck to paycheck",
+      "deindustrialization",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#economics",
+      "#middleclass",
+      "#inequality",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "THE MIDDLE CLASS",
+      "hookBot": "IS DISAPPEARING",
+      "napkinNumber": "61→50%",
+      "napkinSub": "…and splitting in two",
+      "deco": "ladder"
+    },
+    "chapters": [
+      [
+        "the American Dream",
+        "The old deal"
+      ],
+      [
+        "what even is the middle class",
+        "What it even is"
+      ],
+      [
+        "the first force",
+        "Force 1: the squeeze"
+      ],
+      [
+        "sent two people to work",
+        "Force 2: the two-income trap"
+      ],
+      [
+        "the very top was pulling away",
+        "Force 3: the great divergence"
+      ],
+      [
+        "a certain kind of job",
+        "Why it happened"
+      ],
+      [
+        "not a simple tragedy",
+        "Is it all bad?"
+      ],
+      [
+        "what is really disappearing",
+        "What's really disappearing"
+      ]
+    ]
+  }
+}

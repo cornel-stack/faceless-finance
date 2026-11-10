@@ -417,6 +417,13 @@ const ImageScene_: React.FC<{ scene: ImageScene }> = ({ scene }) => {
         {scene.label && (
           <div style={{ position: "absolute", left: -12, bottom: -18, background: theme.accent, color: "#fff", fontFamily: display, fontWeight: 900, fontSize: 34, padding: "6px 18px", borderRadius: 8, transform: "rotate(-3deg)" }}>{scene.label}</div>
         )}
+        {/* meme-format Impact-style captions overlaid ON the photo */}
+        {scene.memeTop && (
+          <div style={{ position: "absolute", left: 10, right: 10, top: 12, textAlign: "center", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontWeight: 900, fontSize: 56, lineHeight: 1.0, letterSpacing: 1, color: "#fff", textTransform: "uppercase", WebkitTextStroke: "3px #000", paintOrder: "stroke fill", opacity: interpolate(frame, [4, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{scene.memeTop}</div>
+        )}
+        {scene.memeBottom && (
+          <div style={{ position: "absolute", left: 10, right: 10, bottom: 12, textAlign: "center", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontWeight: 900, fontSize: 56, lineHeight: 1.0, letterSpacing: 1, color: "#fff", textTransform: "uppercase", WebkitTextStroke: "3px #000", paintOrder: "stroke fill", opacity: interpolate(frame, [8, 18], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{scene.memeBottom}</div>
+        )}
       </div>
       {scene.caption && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 50, color: theme.ink, textAlign: "center", maxWidth: 1400 }}>{scene.caption}</div>}
     </AbsoluteFill>
@@ -974,6 +981,112 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
           {[0, 1, 2, 3].map((k) => { const a = k * 1.57; return <text key={k} x={r * 0.5 * Math.cos(a)} y={r * 0.5 * Math.sin(a) + 7} fontSize={r * 0.28} fontWeight={900} fill={theme.inkSoft} textAnchor="middle" fontFamily="Georgia, serif">IOU</text>; })}
         </g>
         <text x={x} y={y - r - 20} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">{Math.round(1 + roll * 9)}×</text>
+      </svg>
+    );
+  } else if (m === "hollowout") {
+    // The middle of the income distribution empties out — people slide to the
+    // rich end and the poor end, and the middle bars shrink away ("barbell").
+    const p = interpolate(frame, [fps * 0.6, fps * 2.6], [0, 1], clampBoth);
+    const base = [40, 90, 150, 200, 240, 200, 150, 90, 40];
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={60} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        {base.map((h0, i) => {
+          const mid = Math.abs(i - 4);
+          const h = i === 0 || i === 8 ? h0 + p * 150 : h0 * (1 - p * (1 - mid / 4) * 0.92);
+          const x = 110 + i * 85;
+          const on = i === 0 || i === 8;
+          return <RRect key={i} x={x} y={440 - h} w={64} h={h} fill={on ? gold : i >= 3 && i <= 5 ? red : "#b8afa1"} strokeWidth={2.4} seed={i + 2} />;
+        })}
+        <text x={VW / 2} y={500} fontSize={28} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the middle hollows out</text>
+      </svg>
+    );
+  } else if (m === "squeeze") {
+    // A middle-class house squeezed between rising costs pressing in from both sides.
+    const sq = interpolate(frame, [fps * 0.6, fps * 2.4], [0, 150], clampBoth);
+    const wall = (x: number, dir: number, label: string) => (
+      <g transform={`translate(${x + dir * -sq} 0)`}>
+        <RRect x={dir < 0 ? 40 : VW - 150} y={120} w={110} h={320} fill="#9aa6ad" strokeWidth={5} />
+        <text x={dir < 0 ? 95 : VW - 95} y={100} fontSize={26} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>{label}</text>
+      </g>
+    );
+    art = (
+      <svg width={VW} height={VH}>
+        {wall(0, -1, "rent · health · college ↑")}
+        {wall(0, 1, "flat wages")}
+        <g transform={`translate(${VW / 2} 300)`}>
+          <RRect x={-80} y={-20} w={160} h={120} fill="#fff" strokeWidth={5} />
+          <RPath d="M-96 -18 L0 -92 L96 -18 Z" fill={red} strokeWidth={5} />
+          <RRect x={-26} y={40} w={52} h={60} fill={ink} fillStyle="solid" strokeWidth={3} />
+        </g>
+      </svg>
+    );
+  } else if (m === "ladderbreak") {
+    // The ladder of upward mobility — with a rung snapping.
+    const snap = interpolate(frame, [fps * 1.2, fps * 1.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={430} y1={60} x2={430} y2={470} stroke={ink} strokeWidth={9} strokeLinecap="round" />
+        <line x1={560} y1={60} x2={560} y2={470} stroke={ink} strokeWidth={9} strokeLinecap="round" />
+        {[110, 190, 350, 430].map((y, i) => <line key={i} x1={430} y1={y} x2={560} y2={y} stroke={ink} strokeWidth={8} strokeLinecap="round" />)}
+        <g transform={`translate(0 ${snap * 70}) rotate(${snap * 16} 495 270)`} opacity={1 - snap * 0.2}>
+          <line x1={430} y1={270} x2={495} y2={270} stroke={red} strokeWidth={8} strokeLinecap="round" />
+          <line x1={560} y1={270} x2={505} y2={272} stroke={red} strokeWidth={8} strokeLinecap="round" />
+        </g>
+        <text x={495} y={40} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the next rung</text>
+        <text x={495} y={515} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">mobility stalls</text>
+      </svg>
+    );
+  } else if (m === "twoincome") {
+    // Two earners both working flat-out — and still treading water.
+    const bob = Math.sin(frame * 0.25) * 6;
+    const worker = (x: number, col: string) => (
+      <g transform={`translate(${x} ${270 + bob})`}>
+        <circle cx={0} cy={-60} r={26} fill={["#f0cda6", "#e8c49a"][x > 490 ? 1 : 0]} stroke={ink} strokeWidth={4} />
+        <path d="M-26 90 Q-26 -24 0 -24 Q26 -24 26 90" fill={col} stroke={ink} strokeWidth={4} />
+      </g>
+    );
+    const water = interpolate(frame, [fps * 0.6, fps * 2.4], [430, 330], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {worker(380, green)}
+        {worker(600, blue)}
+        <path d={`M0 ${water} Q 245 ${water - 14} 490 ${water} T 980 ${water} L980 520 L0 520 Z`} fill="#bcd8e6" opacity={0.85} stroke={ink} strokeWidth={3} />
+        <text x={VW / 2} y={90} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">two incomes — still treading water</text>
+      </svg>
+    );
+  } else if (m === "shrinkpie") {
+    // The middle class's slice of the pie shrinks over time.
+    const p = interpolate(frame, [fps * 0.6, fps * 2.6], [0, 1], clampBoth);
+    const cx = VW / 2, cy = 250, R = 170;
+    const midFrac = 0.62 - p * 0.19; // middle share: ~62% → ~43%
+    const a0 = -Math.PI / 2, a1 = a0 + midFrac * Math.PI * 2;
+    const arc = (s: number, e: number, col: string) => {
+      const large = e - s > Math.PI ? 1 : 0;
+      return <path d={`M ${cx} ${cy} L ${cx + R * Math.cos(s)} ${cy + R * Math.sin(s)} A ${R} ${R} 0 ${large} 1 ${cx + R * Math.cos(e)} ${cy + R * Math.sin(e)} Z`} fill={col} stroke={ink} strokeWidth={4} />;
+    };
+    art = (
+      <svg width={VW} height={VH}>
+        {arc(a1, a0 + Math.PI * 2, "#d9d2c6")}
+        {arc(a0, a1, gold)}
+        <text x={cx} y={cy + 8} fontSize={40} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{Math.round(midFrac * 100)}%</text>
+        <text x={cx} y={470} fontSize={28} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>middle class's share of income</text>
+      </svg>
+    );
+  } else if (m === "escalator") {
+    // The "up escalator" of mobility stalling: a figure trying to climb a down-moving step belt.
+    const shift = (frame * 2) % 70;
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={200} y1={460} x2={760} y2={120} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+        <line x1={230} y1={470} x2={790} y2={130} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+        {Array.from({ length: 9 }, (_, i) => { const t = (i * 70 + shift) / 630; const x = 200 + t * 560, y = 460 - t * 340; return <line key={i} x1={x} y1={y} x2={x + 26} y2={y - 16} stroke={theme.inkSoft} strokeWidth={5} strokeLinecap="round" />; })}
+        <g transform="translate(470 300)">
+          <circle cx={0} cy={-56} r={24} fill="#f0cda6" stroke={ink} strokeWidth={4} />
+          <path d="M-24 60 Q-24 -20 0 -20 Q24 -20 24 60" fill={red} stroke={ink} strokeWidth={4} />
+        </g>
+        <path d="M470 150 l0 -40 M470 110 l-10 14 M470 110 l10 14" stroke={theme.inkSoft} strokeWidth={4} fill="none" strokeLinecap="round" opacity={0.6} />
+        <text x={VW / 2} y={505} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">running up a down escalator</text>
       </svg>
     );
   } else {

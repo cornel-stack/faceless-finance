@@ -35,7 +35,13 @@ export const ScreenshotSource: React.FC<{
   const vpH = Math.min(imgH, Math.round(imgW * 0.60));
   const q = quoteRect ?? { x: 0.5, y: 0.5, w: 0.2, h: 0.03 };
   const qcx = q.x + q.w / 2, qcy = q.y + q.h / 2;
-  const Zend = quoteRect ? 1.62 : 1.14;
+  // Purposeful zoom: fit the whole highlighted PHRASE comfortably in the viewport
+  // (with surrounding context), instead of a fixed crash-zoom onto one word. A
+  // short quote zooms in more; a long / multi-line quote zooms in less so it all
+  // stays readable. Clamped so we never zoom out past the page or crash in too far.
+  const zByW = 0.62 / Math.max(q.w, 0.03);
+  const zByH = (0.5 * vpH) / Math.max(q.h * imgH, 1);
+  const Zend = quoteRect ? Math.max(1.2, Math.min(1.8, Math.min(zByW, zByH))) : 1.14;
   const clampN = (v: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, v));
   const txEnd = clampN(imgW / 2 - qcx * imgW * Zend, imgW - imgW * Zend, 0);
   const tyEnd = clampN(vpH / 2 - qcy * imgH * Zend, vpH - imgH * Zend, 0);
