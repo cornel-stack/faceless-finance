@@ -1532,6 +1532,60 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={500} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the market is not the country</text>
       </svg>
     );
+  } else if (m === "dollarshortage") {
+    // A shrinking pile of dollars with many hands grabbing for it.
+    const shrink = interpolate(frame, [fps * 0.6, fps * 2.4], [1, 0.4], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 250)`}>
+          <circle cx={0} cy={0} r={120 * shrink} fill={green} stroke={ink} strokeWidth={6} />
+          <text x={0} y={16} fontSize={70 * shrink + 10} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </g>
+        {Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * 6.28; const reach = 60 + Math.sin(frame * 0.2 + i) * 20; const x = VW / 2 + Math.cos(a) * (180 + reach), y = 250 + Math.sin(a) * (150 + reach); return <g key={i} transform={`translate(${x} ${y}) rotate(${(a * 180 / Math.PI) + 90})`}><path d="M-10 0 Q-10 -26 0 -26 Q10 -26 10 0 M-10 -8 l-6 6 M10 -8 l6 6" fill="#f0cda6" stroke={ink} strokeWidth={2.5} /></g>; })}
+        <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">everyone scrambles for scarce dollars</text>
+      </svg>
+    );
+  } else if (m === "swapline") {
+    // The Fed pipes dollars to a foreign central bank; their currency flows back.
+    const flow = (frame % 80) / 80;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(220 250)"><rect x={-90} y={-70} width={180} height={140} rx={10} fill="#eef2ee" stroke={ink} strokeWidth={5} /><text x={0} y={-10} fontSize={24} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the Fed</text><text x={0} y={40} fontSize={40} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>
+        <g transform="translate(760 250)"><rect x={-90} y={-70} width={180} height={140} rx={10} fill="#eef2ee" stroke={ink} strokeWidth={5} /><text x={0} y={-10} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>foreign bank</text><text x={0} y={40} fontSize={36} fontWeight={900} fill="#3a6ea5" textAnchor="middle" fontFamily="Georgia, serif">¥ €</text></g>
+        <line x1={310} y1={210} x2={670} y2={210} stroke={theme.grid} strokeWidth={4} />
+        <line x1={310} y1={290} x2={670} y2={290} stroke={theme.grid} strokeWidth={4} />
+        {[0, 1, 2].map((i) => { const t = (flow + i / 3) % 1; return <g key={"a" + i}><circle cx={310 + (360) * t} cy={210} r={13} fill={green} stroke={ink} strokeWidth={2} /><text x={310 + 360 * t} y={215} fontSize={13} fontWeight={900} fill="#fff" textAnchor="middle">$</text></g>; })}
+        {[0, 1, 2].map((i) => { const t = (flow + i / 3) % 1; return <g key={"b" + i}><circle cx={670 - 360 * t} cy={290} r={13} fill="#3a6ea5" stroke={ink} strokeWidth={2} /></g>; })}
+        <text x={490} y={180} fontSize={22} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>dollars out →</text>
+        <text x={490} y={330} fontSize={22} fontWeight={800} fill="#3a6ea5" textAnchor="middle" fontFamily={sans}>← their currency as collateral</text>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a Fed 'swap line'</text>
+      </svg>
+    );
+  } else if (m === "plumbing") {
+    // The dollar as the plumbing of the whole global economy — pipes everywhere.
+    const flow = (frame * 4) % 40;
+    const pipes = [[120, 180, 860, 180], [120, 340, 860, 340], [300, 120, 300, 420], [680, 120, 680, 420]];
+    art = (
+      <svg width={VW} height={VH}>
+        {pipes.map((p, i) => <line key={i} x1={p[0]} y1={p[1]} x2={p[2]} y2={p[3]} stroke="#9aa6ad" strokeWidth={18} strokeLinecap="round" />)}
+        {pipes.map((p, i) => <line key={"c" + i} x1={p[0]} y1={p[1]} x2={p[2]} y2={p[3]} stroke="#59707c" strokeWidth={6} strokeDasharray="6 14" strokeDashoffset={-flow} />)}
+        {[[120, 180], [860, 180], [120, 340], [860, 340], [300, 120], [680, 420]].map(([x, y], i) => <g key={"n" + i}><circle cx={x} cy={y} r={26} fill="#fff" stroke={ink} strokeWidth={4} /><text x={x} y={y + 7} fontSize={22} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>)}
+        <circle cx={490} cy={260} r={50} fill={green} stroke={ink} strokeWidth={5} />
+        <text x={490} y={272} fontSize={44} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the dollar is the world's plumbing</text>
+      </svg>
+    );
+  } else if (m === "contagionmap") {
+    // A fire starts in one currency and threatens to spread across a connected map.
+    const spread = interpolate(frame, [fps * 0.6, fps * 2.6], [0, 1], clampBoth);
+    const nodes = [[200, 180], [420, 150], [640, 200], [800, 320], [520, 360], [280, 340]];
+    art = (
+      <svg width={VW} height={VH}>
+        {nodes.map((a, i) => nodes.slice(i + 1).map((b, j) => <line key={`${i}-${j}`} x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} stroke={theme.grid} strokeWidth={2} />))}
+        {nodes.map(([x, y], i) => { const lit = spread > i / nodes.length; return <g key={i}><circle cx={x} cy={y} r={30} fill={lit ? red : "#eef2ee"} stroke={ink} strokeWidth={4} />{lit && <text x={x} y={y - 34} fontSize={30} textAnchor="middle">🔥</text>}<text x={x} y={y + 7} fontSize={18} fontWeight={900} fill={lit ? "#fff" : theme.inkSoft} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">a fire in one currency can spread to all</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

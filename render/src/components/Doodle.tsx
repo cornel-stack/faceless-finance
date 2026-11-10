@@ -37,6 +37,8 @@ export type DoodleName =
   | "server" | "brain"
   // EP023 (war & markets) additions:
   | "jet" | "shield"
+  // EP024 (dollar plumbing) additions:
+  | "faucet"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1115,6 +1117,19 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M50 14 L82 24 L78 58 Q50 88 50 88 Q22 58 22 24 Z" fill="#3a6ea5" strokeWidth={SW} />
           <RPath d="M50 22 L74 30 L71 56 Q50 78 50 78 Q29 56 29 30 Z" fill="#5a8fc8" strokeWidth={1.4} />
           <path d="M40 48 L47 58 L62 36" fill="none" stroke="#fff" strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+        </>
+      );
+
+    // ---- EP024 (dollar plumbing) doodles ----
+    case "faucet":
+      // The dollar tap the world drinks from.
+      return (
+        <>
+          <RRect x={16} y={34} w={18} h={14} fill="#8a929a" strokeWidth={SW} />
+          <RPath d="M34 41 L62 41 L62 54 L56 54 L56 47 L34 47 Z" fill="#9aa6ad" strokeWidth={SW} />
+          <RRect x={50} y={28} w={12} h={10} fill="#8a929a" strokeWidth={2} />
+          <text x={56} y={88} fontSize={22} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <RCircle cx={56} cy={64} d={6} fill="#bcd3e0" strokeWidth={1.2} />
         </>
       );
   }

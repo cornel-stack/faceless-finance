@@ -110,7 +110,9 @@ export interface StageScene extends Base {
     // EP022 (AI bubble on hidden debt) additions:
     | "circularfinance" | "iceberg" | "capexfurnace" | "gpudecay" | "bubbledebt"
     // EP023 (why stocks go up in war) additions:
-    | "warboom" | "priceddip" | "safehaven" | "survivorship" | "marketvsreality";
+    | "warboom" | "priceddip" | "safehaven" | "survivorship" | "marketvsreality"
+    // EP024 (America bailing out currencies) additions:
+    | "dollarshortage" | "swapline" | "plumbing" | "contagionmap";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
