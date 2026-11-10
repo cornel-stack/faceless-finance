@@ -120,7 +120,9 @@ export interface StageScene extends Base {
     // EP027 (deflation) additions:
     | "pricespiral" | "waittobuy" | "debtheavier" | "japanflat"
     // EP028 (inflation) additions:
-    | "basketprice" | "demandpull" | "costpush" | "erode" | "shrinkflation";
+    | "basketprice" | "demandpull" | "costpush" | "erode" | "shrinkflation"
+    // EP029 (weaker currencies) additions:
+    | "exportboost" | "devalue" | "currencywar" | "tourismboost";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

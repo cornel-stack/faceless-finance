@@ -1874,6 +1874,61 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">shrinkflation: same price, less product</text>
       </svg>
     );
+  } else if (m === "exportboost") {
+    // A weak currency makes exports cheap — goods fly out to the world.
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(200 280)">
+          <rect x={-90} y={-70} width={180} height={140} rx={10} fill="#eef2ee" stroke={ink} strokeWidth={5} />
+          <text x={0} y={-6} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>weak-$ country</text>
+          <text x={0} y={40} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">cheap!</text>
+        </g>
+        {Array.from({ length: 6 }, (_, i) => { const p = ((frame * 6 + i * 40) % 240) / 240; const x = 300 + p * 560, y = 200 + (i % 3) * 70 - p * 40; const op = interpolate(p, [0, 0.1, 0.85, 1], [0, 1, 1, 0]); return <g key={i} opacity={op}><rect x={x} y={y} width={46} height={32} rx={4} fill={gold} stroke={ink} strokeWidth={2.5} /><text x={x + 23} y={y + 22} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle">📦</text></g>; })}
+        <text x={620} y={150} fontSize={24} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>exports surge →</text>
+        <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a weak currency makes your exports cheap</text>
+      </svg>
+    );
+  } else if (m === "devalue") {
+    // The central bank deliberately presses its own currency value DOWN.
+    const push = interpolate(frame, [fps * 0.6, fps * 2.4], [0, 150], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <path d="M300 120 q40 -30 80 0" fill="none" stroke={ink} strokeWidth={6} strokeLinecap="round" />
+        <path d={`M340 120 l0 ${40 + push * 0.3}`} fill="none" stroke={ink} strokeWidth={8} strokeLinecap="round" />
+        <g transform={`translate(${VW / 2} ${220 + push})`}>
+          <circle cx={0} cy={0} r={80} fill={gold} stroke={ink} strokeWidth={6} />
+          <text x={0} y={22} fontSize={70} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </g>
+        <path d={`M${VW / 2 - 40} ${150} l0 ${90 + push} m0 0 l-14 -18 m14 18 l14 -18`} fill="none" stroke={red} strokeWidth={5} strokeLinecap="round" />
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">pushing its own value down, on purpose</text>
+      </svg>
+    );
+  } else if (m === "currencywar") {
+    // A race to the bottom: several currencies competitively pushed downward.
+    const p = interpolate(frame, [fps * 0.5, fps * 2.6], [0, 1], clampBoth);
+    const syms = ["$", "¥", "€", "£"];
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={70} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <text x={VW / 2} y={90} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>everyone racing their currency down</text>
+        {syms.map((s, i) => { const x = 250 + i * 160; const y = 160 + p * (260 - i * 20); return <g key={i} transform={`translate(${x} ${y})`}><circle cx={0} cy={0} r={44} fill={["#2f6b46", red, "#3a6ea5", gold][i]} stroke={ink} strokeWidth={4} /><text x={0} y={14} fontSize={38} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{s}</text></g>; })}
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the race to the bottom</text>
+      </svg>
+    );
+  } else if (m === "tourismboost") {
+    // Cheap currency → tourists pour in with suitcases of foreign cash.
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(760 280)">
+          <rect x={-90} y={-80} width={180} height={160} fill="#fff" stroke={ink} strokeWidth={5} />
+          <path d="M-106 -78 L0 -150 L106 -78 Z" fill={red} stroke={ink} strokeWidth={5} />
+          <text x={0} y={120} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>cheap country</text>
+        </g>
+        {Array.from({ length: 5 }, (_, i) => { const p = ((frame * 5 + i * 46) % 230) / 230; const x = 80 + p * 520, y = 300 + (i % 2) * 40; const op = interpolate(p, [0, 0.1, 0.85, 1], [0, 1, 1, 0]); return <g key={i} opacity={op} transform={`translate(${x} ${y})`}><circle cx={0} cy={-34} r={16} fill="#f0cda6" stroke={ink} strokeWidth={3} /><path d="M-14 50 Q-14 -6 0 -6 Q14 -6 14 50" fill={["#3a6ea5", green, gold][i % 3]} stroke={ink} strokeWidth={3} /><rect x={14} y={6} width={16} height={14} fill={gold} stroke={ink} strokeWidth={1.6} /></g>; })}
+        <text x={320} y={200} fontSize={24} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>tourists pour in →</text>
+        <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a cheap currency fills the country with visitors</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
