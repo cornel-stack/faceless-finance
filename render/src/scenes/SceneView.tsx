@@ -1732,6 +1732,70 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={480} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the tariff just destroys this value</text>
       </svg>
     );
+  } else if (m === "pricespiral") {
+    const pts: string[] = [];
+    for (let i = 0; i < 44; i++) { const a = i * 0.45, r = 230 - i * 4.6; pts.push(`${490 + r * Math.cos(a)},${210 + r * Math.sin(a)}`); }
+    const head = Math.min(43, Math.floor(interpolate(frame, [6, fps * 2.6], [0, 44], clampBoth)));
+    const labels: [string, number, number][] = [["prices fall", 490, 10], ["buyers wait", 800, 210], ["demand drops", 490, 420], ["prices fall more", 190, 210]];
+    art = (
+      <svg width={VW} height={VH}>
+        {labels.map(([t, x, y], i) => <text key={i} x={x} y={y} fontSize={22} fontWeight={800} fill={i % 2 ? red : theme.inkSoft} textAnchor="middle" fontFamily={sans}>{t}</text>)}
+        <polyline points={pts.slice(0, head + 1).join(" ")} fill="none" stroke={red} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx={parseFloat(pts[head].split(",")[0])} cy={parseFloat(pts[head].split(",")[1])} r={12} fill={red} />
+        <text x={490} y={222} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">↓</text>
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the deflationary spiral</text>
+      </svg>
+    );
+  } else if (m === "waittobuy") {
+    const price = Math.round(interpolate(frame, [fps * 0.4, fps * 2.6], [100, 60], clampBoth));
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 290)">
+          <circle cx={0} cy={-80} r={34} fill="#f0cda6" stroke={ink} strokeWidth={4} />
+          <path d="M-18 -74 Q0 -62 18 -74" fill="none" stroke={ink} strokeWidth={3} />
+          <path d="M-34 110 Q-34 -40 0 -40 Q34 -40 34 110" fill={blue} stroke={ink} strokeWidth={4} />
+        </g>
+        <g transform="translate(680 240)">
+          <rect x={-90} y={-60} width={180} height={120} rx={12} fill="#fff" stroke={ink} strokeWidth={5} />
+          <text x={0} y={2} fontSize={56} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">${price}</text>
+          <text x={0} y={42} fontSize={22} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>↓ falling</text>
+        </g>
+        <text x={420} y={170} fontSize={24} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>"I'll just wait…"</text>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">why buy today if it's cheaper tomorrow?</text>
+      </svg>
+    );
+  } else if (m === "debtheavier") {
+    const grow = interpolate(frame, [fps * 0.6, fps * 2.4], [1, 1.7], clampBoth);
+    const squish = interpolate(frame, [fps * 0.6, fps * 2.4], [1, 0.72], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 280)`}>
+          <g transform={`translate(0 ${-50 * grow}) scale(${grow})`}>
+            <circle cx={0} cy={0} r={64} fill="#59707c" stroke={ink} strokeWidth={5} />
+            <text x={0} y={12} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">DEBT</text>
+          </g>
+          <g transform={`translate(0 110) scale(1 ${squish})`}>
+            <circle cx={0} cy={-26} r={22} fill="#f0cda6" stroke={ink} strokeWidth={4} />
+            <path d="M-34 70 Q-34 -6 0 -6 Q34 -6 34 70" fill={red} stroke={ink} strokeWidth={4} />
+          </g>
+        </g>
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">deflation makes fixed debt heavier</text>
+      </svg>
+    );
+  } else if (m === "japanflat") {
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.2], [0, 1], clampBoth);
+    const path = "M 90 180 L 260 160 L 300 250 L 460 255 L 620 248 L 780 258 L 900 252";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <text x={190} y={150} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>bubble</text>
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={blue} strokeWidth={6} seed={5} /></g>
+        {rev > 0.5 && <text x={640} y={300} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>…decades of flat</text>}
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Japan's lost decades</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

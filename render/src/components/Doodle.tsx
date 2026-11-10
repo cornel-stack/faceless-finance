@@ -43,6 +43,8 @@ export type DoodleName =
   | "store" | "wreckingball"
   // EP026 (tariffs) additions:
   | "cargoship" | "barrier"
+  // EP027 (deflation) additions:
+  | "hourglass"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1179,6 +1181,18 @@ function shape(name: DoodleName): React.ReactNode {
           {[22, 34, 46, 58, 70].map((x, i) => <RLine key={i} x1={x} y1={24} x2={x + 10} y2={40} strokeWidth={2} stroke="#fff" />)}
           <RLine x1={26} y1={40} x2={26} y2={86} strokeWidth={4} />
           <RLine x1={74} y1={40} x2={74} y2={86} strokeWidth={4} />
+        </>
+      );
+
+    // ---- EP027 (deflation) doodles ----
+    case "hourglass":
+      return (
+        <>
+          <RLine x1={26} y1={16} x2={74} y2={16} strokeWidth={3.4} />
+          <RLine x1={26} y1={84} x2={74} y2={84} strokeWidth={3.4} />
+          <RPath d="M32 16 L68 16 L52 50 L68 84 L32 84 L48 50 Z" fill="none" strokeWidth={SW} />
+          <RPath d="M40 24 L60 24 L52 46 L48 46 Z" fill={GOLD} strokeWidth={1.2} />
+          <RPath d="M46 66 L54 66 L58 80 L42 80 Z" fill={GOLD} strokeWidth={1.2} />
         </>
       );
   }

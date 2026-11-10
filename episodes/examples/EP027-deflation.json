@@ -1,0 +1,997 @@
+{
+  "id": "EP027",
+  "series": "Napkin Numbers",
+  "title": "What If Inflation Goes Negative?",
+  "slug": "what-if-inflation-goes-negative-deflation",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP027 — explainer (By the Numbers, row 16). Deflation: why falling prices are dangerous — the spiral, debt deflation, the liquidity trap, Japan. Free memes; 4 new motifs (pricespiral, waittobuy, debtheavier, japanflat). Target 12–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Everyone complains about inflation — prices always creeping up. So here's a question that sounds like a dream. What if prices went the other way, and started falling instead?",
+      "pose": "think",
+      "bubble": "cheaper everything?",
+      "props": [
+        {
+          "name": "pricetag",
+          "label": "prices… falling?"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "Cheaper groceries, cheaper gas, cheaper rent. It sounds wonderful. It sounds like your money finally getting stronger. So why do the world's central banks fear it more than almost anything else?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "why do they dread it?"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "narration": "Because falling prices — deflation — can quietly be the symptom of an economy that is dying.",
+      "src": "img/memes/thisisfine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "'prices are falling!'",
+      "memeBottom": "the economy: quietly collapsing"
+    },
+    {
+      "id": "s4",
+      "type": "callout",
+      "narration": "One rich, modern country fell into mild deflation and couldn't climb out for thirty years. Economists call it the Lost Decades.",
+      "text": "30 years",
+      "sub": "Japan, stuck in the trap",
+      "icon": "hourglass"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "We spend so much energy fearing inflation that negative inflation feels like it must be the good version. For once in economics, the scary-sounding thing is the safer one.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "inflation = the safe side"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "image",
+      "narration": "The intuition is a trap. 'Prices going down' and 'the economy going down' turn out to be the same sentence.",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "'cheaper prices, great!'",
+      "memeBottom": "falling prices, dying economy"
+    },
+    {
+      "id": "s5",
+      "type": "character",
+      "narration": "So let's flip inflation upside down — and find out why a world of falling prices is a nightmare, not a dream.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "negative inflation"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "What actually happens if inflation goes negative? Let's follow the money downhill.",
+      "heading": "What If Inflation Goes Negative?",
+      "kicker": "the danger of deflation",
+      "sub": "Falling prices can mean a falling economy."
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "First, the definition. Deflation is a general, sustained fall in the overall price level — the mirror image of inflation.",
+      "sourceId": "wiki-deflation"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "Careful, though. One gadget getting cheaper isn't deflation. Deflation is when prices are falling across the whole economy, month after month. And your money's value rises as everything else sinks.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "money gets stronger"
+        },
+        {
+          "name": "chartdown",
+          "label": "…everything else falls"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "Which, again, sounds great — for about five seconds. Until you realize what a rational person does the moment they expect prices to keep falling.",
+      "pose": "think",
+      "bubble": "so what's the catch?"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "Your money getting stronger sounds like a gift. But money only has value if it's used. Money that everyone hoards and no one spends is an economy holding its breath.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "strong money, unused"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "The catch is a trap the whole economy can fall into together. The deflationary spiral.",
+      "heading": "The Spiral",
+      "kicker": "why waiting is rational"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "If you know a TV will be cheaper next month, what do you do? You wait. And if it'll be cheaper still the month after that? You keep waiting.",
+      "motif": "waittobuy",
+      "caption": "why buy today if it's cheaper tomorrow?"
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "Multiply that one sensible decision across millions of people, and it becomes catastrophic. Everyone delays every purchase they can. Spending seizes up.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "everyone waits"
+        },
+        {
+          "name": "warning",
+          "label": "…spending freezes"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "Economists measure how fast money changes hands — its velocity. In deflation, that velocity collapses. The same dollars just sit still, in accounts and under mattresses.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "clock",
+          "label": "money stops moving"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "stage",
+      "narration": "And why wouldn't you hoard cash? If prices are falling, simply holding money earns you a real return for doing absolutely nothing. Cash becomes king — and spending becomes a sucker's game.",
+      "icons": [
+        "vault",
+        "coins"
+      ],
+      "caption": "cash is king → nobody spends"
+    },
+    {
+      "id": "s13",
+      "type": "screenshot",
+      "narration": "Economists have a name for the trap where everyone's thrift drains the economy of demand.",
+      "sourceId": "wiki-thrift"
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "Here's the loop. Weak spending means companies can't sell. So they cut prices to tempt buyers. Lower prices mean lower revenue, so they cut wages and jobs.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "store",
+          "label": "cut prices"
+        },
+        {
+          "name": "chartdown",
+          "label": "…cut jobs"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "And people with lower wages, or no job, spend even less — which pushes prices down further, which triggers more cuts. Round and round, downward.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "spend even less"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "That's the deflationary spiral. Falling prices cause waiting, waiting causes falling demand, falling demand causes more falling prices. A death spiral for an economy.",
+      "motif": "pricespiral",
+      "caption": "the deflationary spiral"
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "Here's a cruel wrinkle. Workers fiercely resist pay cuts — wages are 'sticky.' So instead of cutting everyone's pay, companies do something worse: they lay people off entirely.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "wages won't fall"
+        },
+        {
+          "name": "warning",
+          "label": "…so jobs do"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "image",
+      "narration": "Deflation doesn't gently lower everyone's wage. It fires a chunk of people, and leaves the rest nervous enough to stop spending.",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "prices fall 5%",
+      "memeBottom": "your whole department: gone"
+    },
+    {
+      "id": "s17",
+      "type": "image",
+      "narration": "Inflation nibbles at your savings. Deflation can eat your job, your wages, and the whole economy around you.",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "a little inflation is far safer than deflation"
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "And notice the asymmetry. Too much inflation is painful, but central banks know how to crush it — raise rates, hard. Deflation is the one they struggle to escape at all.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "inflation: fixable"
+        },
+        {
+          "name": "warning",
+          "label": "deflation: sticky"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Now add the ingredient that turns a slump into a genuine catastrophe. Debt.",
+      "heading": "Debt Deflation",
+      "kicker": "the hidden detonator"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "Here's the thing about debt. The amount you owe is fixed — a hundred-thousand-dollar loan stays a hundred thousand, no matter what happens to prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "iou",
+          "label": "debt is fixed"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "Inflation quietly shrinks debt. Deflation does the opposite — it makes your fixed debt heavier and heavier in real terms, as your wages and prices fall around it.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "iou",
+          "label": "same dollars owed"
+        },
+        {
+          "name": "chartdown",
+          "label": "…but you earn less"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "stage",
+      "narration": "Your salary drops, the price of your house drops — but your mortgage doesn't budge. The debt looms larger every month, even though the number never changed.",
+      "motif": "debtheavier",
+      "caption": "deflation makes fixed debt heavier"
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "Think of a homeowner. Their house value falls, their wages fall — but the mortgage is frozen in place. They can end up owing far more than the home is worth, trapped and underwater.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "value falls"
+        },
+        {
+          "name": "iou",
+          "label": "…mortgage doesn't"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "There's a hidden twist too. Even at a zero interest rate, if prices are falling, the real cost of borrowing is actually positive. Deflation quietly keeps money expensive, no matter how low rates go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "0% rate…"
+        },
+        {
+          "name": "warning",
+          "label": "…still costly in real terms"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "This is debt deflation — a theory that falling prices make debts crushingly heavy, driving waves of defaults.",
+      "sourceId": "wiki-debtdef"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "People and companies can't pay their swelling real debts, so they default. When enough of them default, the banks that lent the money start to collapse too.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bank",
+          "label": "defaults → bank failures"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "narration": "This is not hypothetical. It's a big part of what turned a 1929 stock crash into the Great Depression.",
+      "sourceId": "wiki-depression"
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "In the early 1930s, prices fell by roughly a quarter. Debts stayed fixed, defaults exploded, thousands of banks failed, and the spiral fed on itself for years.",
+      "motif": "pricespiral",
+      "caption": "1929 → the Great Depression"
+    },
+    {
+      "id": "s66",
+      "type": "callout",
+      "narration": "In the United States, from 1929 to 1933, around nine thousand banks failed as the debt-deflation spiral tore through the financial system.",
+      "text": "9,000",
+      "sub": "US banks that failed, 1929–33",
+      "icon": "bank"
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "It wasn't the only time. A long bout of deflation also dragged on through the 1870s — proof this isn't some one-off historical fluke, but a recurring trap.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "it keeps recurring"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "So surely the central bank just fixes it, right? Cut rates, print money, done? This is where deflation gets truly nasty.",
+      "heading": "Why It's So Hard to Fix",
+      "kicker": "pushing on a string"
+    },
+    {
+      "id": "s27",
+      "type": "screenshot",
+      "narration": "A central bank's main tool is monetary policy — mainly, moving interest rates up and down to steer the economy.",
+      "sourceId": "wiki-monetary"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "To fight a slump, it cuts interest rates, making borrowing cheap to encourage spending. But rates can only fall so far — to zero.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "cut rates to zero"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "Hit zero and you're in a zero interest-rate policy — the central bank's gas pedal is already flat to the floor.",
+      "sourceId": "wiki-zirp"
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "And there you can get stuck in what Keynes called a liquidity trap.",
+      "sourceId": "wiki-trap"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "In a liquidity trap, even free money won't make people borrow and spend — because why borrow to buy something that'll be cheaper later, in an economy that scares you?",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "even 0% won't work"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Economists call it 'pushing on a string.' The central bank is desperately trying to push money out — and it just piles up, unspent.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "printer",
+          "label": "push money out"
+        },
+        {
+          "name": "vault",
+          "label": "…it just sits there"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "stage",
+      "narration": "So central banks resort to exotic tools — printing money to buy assets, promising low rates for years — trying almost anything to create a little inflation.",
+      "motif": "printmoney",
+      "caption": "desperate for a little inflation"
+    },
+    {
+      "id": "s68",
+      "type": "character",
+      "narration": "Some central banks got so desperate they pushed rates below zero — actually charging banks to hoard cash, trying to force the money out the door.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "negative rates"
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "type": "character",
+      "narration": "Others floated even wilder ideas — 'helicopter money,' just handing cash directly to people, anything to get spending moving again. That's how frightening deflation is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "printer",
+          "label": "helicopter money"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Pause on that. Deflation is so dangerous that central banks will deliberately try to create inflation to escape it. The thing you hate is their safety margin.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "inflation = the safe side"
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "type": "image",
+      "narration": "When your emergency options include 'drop cash from the sky,' you know this is the problem central bankers lose sleep over.",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "escape a deflation trap"
+    },
+    {
+      "id": "s35",
+      "type": "title",
+      "narration": "If you want to see this trap in slow motion, look at Japan.",
+      "heading": "Japan's Lost Decades",
+      "kicker": "thirty years stuck"
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "In the late 1980s, Japan had a colossal asset bubble — stocks and real estate soaring to insane heights. Then, in 1990, it burst.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "1980s bubble"
+        },
+        {
+          "name": "warning",
+          "label": "…1990 crash"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "screenshot",
+      "narration": "What followed was decades of stagnation and gentle deflation — the Lost Decades.",
+      "sourceId": "wiki-japan"
+    },
+    {
+      "id": "s38",
+      "type": "stage",
+      "narration": "Japan never got a dramatic Depression. It got something quieter and stranger: an economy that simply stopped growing, for a generation.",
+      "motif": "japanflat",
+      "caption": "Japan's lost decades"
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "Prices and wages flatlined. Consumers, expecting no growth, kept saving and waiting. Companies hoarded cash instead of investing. A whole country stuck in low gear.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "stuck, for decades"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "Japan threw everything at it — zero rates, massive money printing, huge government spending — and still spent thirty years struggling to generate even modest inflation.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "printer",
+          "label": "tried everything"
+        },
+        {
+          "name": "warning",
+          "label": "…barely worked"
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "type": "character",
+      "narration": "Japan's trap had deep roots: an aging, shrinking population that naturally saves more and spends less, plus a culture of thrift. Fewer young spenders, more cautious savers.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "aging population"
+        },
+        {
+          "name": "piggybank",
+          "label": "…a nation of savers"
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "Once people simply expect prices and wages to stay flat forever, that expectation becomes self-fulfilling. Beliefs about the future quietly freeze the present.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "expectations lock in"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "title",
+      "narration": "Now, in fairness, not all falling prices are a disaster. There's a crucial difference.",
+      "heading": "Good vs Bad Deflation",
+      "kicker": "the one exception"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "'Good' deflation comes from progress. Technology makes things cheaper to produce — think how TVs and computers fall in price every year while getting better.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "tech gets cheaper"
+        },
+        {
+          "name": "chartup",
+          "label": "…because of progress"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "That's healthy. Prices fall because we got better at making things, not because demand collapsed. Your money buys more, and the economy still grows.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "falling prices, rising output"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "'Bad' deflation is the opposite. Prices fall because no one is buying, the economy is shrinking, and fear is spreading. Same falling prices — completely different cause.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "falling prices, dying demand"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "image",
+      "narration": "The price tag looks identical. One is the sign of a thriving economy; the other, of a collapsing one.",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "cheaper from progress",
+      "memeBottom": "cheaper from collapse"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "This is why central banks don't aim for zero inflation. They target a small positive number — usually around two percent — as a safety buffer, well away from the deflation cliff.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "target: ~2%"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "character",
+      "narration": "It's not ancient history. As recently as 2015, the eurozone flirted with deflation, and the European Central Bank scrambled with massive money-printing to drag inflation back above zero.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "flagEU",
+          "label": "eurozone, 2015"
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "type": "stage",
+      "narration": "Every time, the playbook is the same: throw everything at creating a little inflation, before the spiral can take hold.",
+      "motif": "printmoney",
+      "caption": "fight to stay above zero"
+    },
+    {
+      "id": "s47",
+      "type": "title",
+      "narration": "So let's pull it together — why the dream of falling prices is really a warning sign.",
+      "heading": "The Takeaway",
+      "kicker": "why down is dangerous"
+    },
+    {
+      "id": "s48",
+      "type": "chalkboard",
+      "narration": "Deflation makes people wait. Waiting kills demand. Falling demand kills jobs. And it makes every debt heavier — exactly when people can least afford it.",
+      "lines": [
+        "falling prices → waiting",
+        "waiting → dead demand",
+        "dead demand → lost jobs",
+        "…and every debt gets heavier"
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "That's why a central banker will take a little too much inflation over a little deflation, every single time. Inflation is a tax on your savings. Deflation can be a tax on your entire economy.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "inflation < deflation, in danger"
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "type": "character",
+      "narration": "This is the real reason a little inflation is the goal. It greases the machine. It lets prices and wages adjust, quietly shrinks old debts, and nudges people to spend and invest rather than wait.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "a little inflation greases it"
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "type": "stage",
+      "narration": "A healthy economy wants a gentle, constant breeze pushing prices up. Deflation is that breeze reversing — and suddenly everything starts blowing backward.",
+      "motif": "pricespiral",
+      "caption": "the breeze reverses"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "It's one of the great counterintuitive truths of economics. The thing that sounds like good news — everything getting cheaper — can be the scariest chart a central banker ever sees.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "the scariest chart"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "stage",
+      "narration": "Because a healthy economy needs things to move — money spent, loans taken, risks made. Deflation rewards doing nothing. And an economy of people doing nothing slowly grinds to a halt.",
+      "motif": "waittobuy",
+      "caption": "deflation rewards doing nothing"
+    },
+    {
+      "id": "s77",
+      "type": "character",
+      "narration": "Underneath the charts, it's really about psychology. Economists even call it 'animal spirits' — the confidence to spend, hire, and take risks. Deflation quietly kills them.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "confidence dies"
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "type": "image",
+      "narration": "An economy is millions of people betting on tomorrow. Deflation is everyone, at once, deciding to wait.",
+      "src": "img/memes/distracted.jpg",
+      "meme": "Distracted Boyfriend",
+      "memeBottom": "an economy that chooses to wait"
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "So the real answer to 'what if inflation goes negative' is simple and grim. Pray it doesn't stay there.",
+      "text": "below 0%",
+      "sub": "the number central banks fear most",
+      "icon": "warning"
+    },
+    {
+      "id": "s79",
+      "type": "character",
+      "narration": "So what finally breaks a deflationary spiral? Usually a massive outside shock. Enormous government spending, a war, or a flood of new money big enough to reset people's expectations.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "a huge shock"
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "type": "character",
+      "narration": "It often takes a jolt violent enough to convince everyone, all at once, that prices will rise again — so they finally stop waiting, and start spending.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "reset expectations"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "So the next time you wish prices would just fall, remember Japan, remember the 1930s — and be careful what you wish for.",
+      "pose": "present",
+      "bubble": "be careful what you wish for",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "remember Japan"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "If this flipped how you think about prices, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-deflation",
+      "name": "Deflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deflation",
+      "quote": "a decrease in the general price level of goods and services"
+    },
+    {
+      "id": "wiki-thrift",
+      "name": "Paradox of thrift (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Paradox_of_thrift",
+      "quote": "an increase in autonomous saving leads to a decrease in aggregate demand"
+    },
+    {
+      "id": "wiki-debtdef",
+      "name": "Debt deflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt_deflation",
+      "quote": "the overall level of debt rising in real value because of deflation"
+    },
+    {
+      "id": "wiki-depression",
+      "name": "Great Depression (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Depression",
+      "quote": "a severe global economic downturn"
+    },
+    {
+      "id": "wiki-monetary",
+      "name": "Monetary policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Monetary_policy",
+      "quote": "to affect monetary and other financial conditions"
+    },
+    {
+      "id": "wiki-zirp",
+      "name": "Zero interest-rate policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zero_interest-rate_policy",
+      "quote": "a very low nominal interest rate"
+    },
+    {
+      "id": "wiki-trap",
+      "name": "Liquidity trap (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Liquidity_trap",
+      "quote": "after the rate of interest has fallen to a certain level"
+    },
+    {
+      "id": "wiki-japan",
+      "name": "Lost Decades (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lost_Decades",
+      "quote": "a lengthy period of economic stagnation in Japan"
+    }
+  ],
+  "youtube": {
+    "title": "What If Inflation Goes Negative? (Deflation, Explained)",
+    "alts": [
+      "Why Falling Prices Are a Nightmare, Not a Dream",
+      "Deflation: The Number Central Banks Fear Most"
+    ],
+    "hook": "Everyone hates inflation — so wouldn't falling prices be a dream? Cheaper everything, stronger money? Actually, deflation is the thing central banks fear most, and for good reason. This is why: the deflationary spiral (why waiting to buy is rational and catastrophic), debt deflation (how falling prices turned a 1929 crash into the Great Depression), the liquidity trap that makes it nearly impossible to fix, and Japan's 30-year Lost Decades. Fully cited.",
+    "bullets": [
+      "Why 'cheaper everything' can be the symptom of a dying economy",
+      "The deflationary spiral: waiting → dead demand → lost jobs → more waiting",
+      "Debt deflation: why fixed debt gets crushing when prices fall",
+      "The liquidity trap and 'pushing on a string' — why rate cuts stop working",
+      "Japan's Lost Decades: 30 years stuck in the trap",
+      "Good vs bad deflation, and why central banks target ~2% inflation"
+    ],
+    "tags": [
+      "what if inflation goes negative",
+      "deflation explained",
+      "deflationary spiral",
+      "debt deflation",
+      "liquidity trap",
+      "japan lost decades",
+      "why is deflation bad",
+      "great depression",
+      "monetary policy",
+      "central banks",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#economics",
+      "#deflation",
+      "#inflation",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "FALLING PRICES",
+      "hookBot": "ARE A NIGHTMARE?",
+      "napkinNumber": "<0%",
+      "napkinSub": "…the number they fear most",
+      "deco": "hourglass"
+    },
+    "chapters": [
+      [
+        "falling prices — deflation",
+        "The dream that isn't"
+      ],
+      [
+        "a trap the whole economy can fall into",
+        "The spiral"
+      ],
+      [
+        "turns a slump into a genuine catastrophe",
+        "Debt deflation"
+      ],
+      [
+        "central bank just fixes it",
+        "Why it's hard to fix"
+      ],
+      [
+        "look at Japan",
+        "Japan's lost decades"
+      ],
+      [
+        "not all falling prices are a disaster",
+        "Good vs bad deflation"
+      ],
+      [
+        "why the dream of falling prices",
+        "The takeaway"
+      ]
+    ]
+  }
+}

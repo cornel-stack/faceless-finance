@@ -116,7 +116,9 @@ export interface StageScene extends Base {
     // EP025 (private equity) additions:
     | "lbo" | "loadthedebt" | "dividendrecap" | "saleleaseback" | "stripmine"
     // EP026 (tariffs) additions:
-    | "passthrough" | "tradewar" | "customsgate" | "deadweight";
+    | "passthrough" | "tradewar" | "customsgate" | "deadweight"
+    // EP027 (deflation) additions:
+    | "pricespiral" | "waittobuy" | "debtheavier" | "japanflat";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
