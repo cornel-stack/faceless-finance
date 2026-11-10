@@ -1,0 +1,1002 @@
+{
+  "id": "EP026",
+  "series": "Napkin Numbers",
+  "title": "Tariffs: Who Really Pays (the Receipts)",
+  "slug": "tariffs-who-really-pays",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP026 — explainer (By the Numbers, row 15). Tariffs are paid by the importer and passed to consumers; the trade-war receipts. Free memes; 4 new motifs (passthrough, tradewar, customsgate, deadweight). Target 12–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Here's a sentence you've heard a hundred times from politicians of every stripe. 'We'll put tariffs on China, and China will pay.' It sounds tough, and it sounds free. It's also, mostly, false.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "\"China pays!\""
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "Because a tariff is a tax. And the uncomfortable truth, written in black and white on the receipts, is that the people who overwhelmingly pay it are… you.",
+      "pose": "think",
+      "bubble": "wait — ME?",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "paid by you"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "narration": "The politician says a foreign country is footing the bill. Your shopping cart quietly disagrees.",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "'the foreigners pay the tariff'",
+      "memeBottom": "you pay it at the checkout"
+    },
+    {
+      "id": "s4",
+      "type": "callout",
+      "narration": "Economists studied the 2018 and 2019 trade war in detail, and the verdict was blunt: the cost landed almost entirely on American businesses and consumers.",
+      "text": "~$0",
+      "sub": "paid by the exporting country",
+      "icon": "warning"
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "Take a real example: washing machines. After tariffs hit them, their prices jumped sharply — and here's the kicker, dryers got more expensive too, even though dryers weren't tariffed. The makers simply raised both.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "pricetag",
+          "label": "washers ↑"
+        },
+        {
+          "name": "warning",
+          "label": "…dryers too"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "character",
+      "narration": "So how does a tax that's supposed to punish foreigners end up in your receipts? Let's follow the money, step by step — and read the actual receipts.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "cargoship",
+          "label": "follow the goods"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "So let's settle it for good — who actually pays a tariff, and who really wins and loses.",
+      "heading": "Tariffs: Who Really Pays",
+      "kicker": "the receipts",
+      "sub": "A tax on foreigners — paid by you."
+    },
+    {
+      "id": "s62",
+      "type": "image",
+      "narration": "The gap between the slogan and the checkout is the whole story.",
+      "src": "img/memes/thisisfine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "me: 'foreigners pay the tariff'",
+      "memeBottom": "me, at the checkout, paying"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "Start with what a tariff actually is. It's a tax on imported goods.",
+      "sourceId": "wiki-tariff"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "And importing just means buying goods made in another country and bringing them home to sell.",
+      "sourceId": "wiki-import"
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "Here's the detail everything hinges on. The tariff is not paid by the foreign factory. It's paid by the importer — a domestic company — at the moment the goods cross the border.",
+      "pose": "explain",
+      "expression": "surprised",
+      "props": [
+        {
+          "name": "barrier",
+          "label": "paid at the border"
+        },
+        {
+          "name": "store",
+          "label": "…by a US company"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "Picture the border as a tollbooth. A shipment of goods rolls up — and before it can enter, the American company importing it has to hand the government a cut.",
+      "motif": "customsgate",
+      "caption": "a tax, stamped on at the border"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "The Chinese factory already got paid, in full, for the goods. The check to the US Treasury is written by the American importer. Not Beijing. A company in Ohio.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "factory",
+          "label": "factory: already paid"
+        },
+        {
+          "name": "capitol",
+          "label": "importer pays the US"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "So right away, 'China pays' is wrong at the most basic, mechanical level. The first check is written by an American. The only question left is what happens next.",
+      "pose": "think",
+      "bubble": "so who eats the cost?",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "then what?"
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "Picture a small US business importing phone cases. The tariff bill lands on them, in dollars, due immediately. They either eat it and shrink, or raise prices. Guess which one keeps the lights on.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "store",
+          "label": "small importer"
+        },
+        {
+          "name": "receipt",
+          "label": "…bill due now"
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "type": "stage",
+      "narration": "Trace the whole chain and there's no foreign link in it. Every hand that touches the money, from the border to the till, is domestic.",
+      "motif": "passthrough",
+      "caption": "no foreign link in the chain"
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "What happens next is the whole ballgame. It's called pass-through.",
+      "heading": "The Pass-Through",
+      "kicker": "the cost rolls downhill"
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "That importer in Ohio isn't a charity. It just paid a new tax on its goods. So it does the obvious thing: it raises its prices to cover the cost.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pricetag",
+          "label": "raise the price"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "narration": "The tariff gets added at the border, then passed down the chain — from the importer, to the retailer, to the shelf, to the price you pay at the till.",
+      "motif": "passthrough",
+      "caption": "the tariff rolls downhill to you"
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "narration": "And you can see it in the numbers everyone tracks — the consumer price index, the official measure of what households actually pay.",
+      "sourceId": "wiki-cpi"
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "In the recent trade war, study after study found something striking. Nearly the entire cost of the tariffs showed up in higher US import prices. The pass-through was almost total.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "~100% pass-through"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "callout",
+      "narration": "Economists estimated the tariffs cost the typical American household hundreds of dollars a year — a quiet tax increase nobody voted for.",
+      "text": "$hundreds",
+      "sub": "per US household, per year",
+      "icon": "receipt"
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "And tariffs are regressive — they hit the poor hardest. A tax on cheap clothes, shoes and electronics takes a far bigger bite out of a tight budget than a comfortable one.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "hits the poor hardest"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "image",
+      "narration": "There is simply no way to tax imports without taxing the people who buy them.",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "tax imports without taxing yourself"
+    },
+    {
+      "id": "s19",
+      "type": "image",
+      "narration": "The 'tax on China' turned out to be a sales tax on Americans, collected one checkout at a time.",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "a tariff is a tax on your own shoppers"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "Now, sometimes a foreign exporter does cut its price a little to keep customers — so it eats a sliver. But in the big recent cases, that sliver was tiny. The buyer bore the burden.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "exporter eats a sliver"
+        },
+        {
+          "name": "crowd",
+          "label": "…you eat the rest"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "But wait — there's a second, sneakier way tariffs raise your prices. And it has nothing to do with imports at all.",
+      "heading": "The Hidden Price Hike",
+      "kicker": "even on the home team"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "Say a tariff makes foreign steel more expensive. What does the domestic steelmaker — the one you were trying to protect — do next?",
+      "pose": "think",
+      "bubble": "what does the local firm do?"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "It raises its prices too. Why wouldn't it? Its foreign competitor just got more expensive, so it has room to charge more — and pocket the difference.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "factory",
+          "label": "local firm"
+        },
+        {
+          "name": "pricetag",
+          "label": "…also hikes prices"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "So you pay more on the imports because of the tax — and more on the domestic versions, because the competition just got softer. You lose on both.",
+      "icons": [
+        "pricetag",
+        "pricetag"
+      ],
+      "caption": "imported AND domestic prices rise"
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "This is the real face of protectionism — shielding domestic producers from competition, by making everyone else's option more expensive.",
+      "sourceId": "wiki-protectionism"
+    },
+    {
+      "id": "s67",
+      "type": "callout",
+      "narration": "Researchers measured it precisely: when washer tariffs hit, domestic washer prices rose roughly twelve percent too. The protection became a price hike on everyone.",
+      "text": "+12%",
+      "sub": "on domestic washers, after the tariff",
+      "icon": "pricetag"
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "So if consumers lose, who exactly wins? Because tariffs do create winners — just not the ones on the poster.",
+      "heading": "Winners and Losers",
+      "kicker": "the real scoreboard"
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "Winner one: the protected industry. The specific domestic companies shielded from competition can sell more, and charge more. They love tariffs, and they lobby hard for them.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "factory",
+          "label": "the protected few"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "Winner two: the government, which collects the tariff revenue. Though remember — it's collecting that revenue from its own importers and shoppers.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "the Treasury"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "Now the losers. Loser one, obviously, is you — the consumer paying higher prices on a huge range of everyday goods.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "every shopper"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "Loser two is sneakier, and often bigger: the domestic manufacturers who use those imported goods as inputs.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "factory",
+          "label": "firms that USE imports"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "Tariff the steel, and you help a few steelmakers — but you hurt every carmaker, appliance maker, and builder who needs steel. And they employ far more people.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "car",
+          "label": "carmakers pay more"
+        },
+        {
+          "name": "warning",
+          "label": "…more jobs at stake"
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "type": "character",
+      "narration": "The ratio is stark. For every worker in a protected industry like steel, there can be dozens in the industries that USE steel — all now paying more to shield the few.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "few protected, many hurt"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "stage",
+      "narration": "Economists can even draw the pure waste on a chart — a wedge of value that simply disappears, helping no one. They call it deadweight loss.",
+      "motif": "deadweight",
+      "caption": "value that just vanishes"
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "A tariff doesn't just move money from you to a protected company. A chunk of it is destroyed outright — deals that no longer happen, value that's just gone.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "pure waste"
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "type": "character",
+      "narration": "There's a brutal arithmetic here. Studies found some tariffs did 'save' jobs — at a cost to consumers of hundreds of thousands, sometimes millions, of dollars per single job saved.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "$ per job saved"
+        },
+        {
+          "name": "warning",
+          "label": "…often in the millions"
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "type": "character",
+      "narration": "And because the downstream industries got squeezed, the same tariffs often destroyed more jobs than they protected. The visible win quietly hid a larger, invisible loss.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "factory",
+          "label": "a few jobs saved"
+        },
+        {
+          "name": "chartdown",
+          "label": "…more jobs lost"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "And then there's the part that turns a tax into a war.",
+      "heading": "The Trade War",
+      "kicker": "they hit back"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "When one country slaps tariffs on another, the other country rarely just takes it. It retaliates — with tariffs of its own.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "retaliation"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "screenshot",
+      "narration": "That tit-for-tat escalation has a name: a trade war, where countries pile trade barriers on each other.",
+      "sourceId": "wiki-tradewar"
+    },
+    {
+      "id": "s37",
+      "type": "stage",
+      "narration": "Now both sides are taxing each other's goods. Both sets of consumers pay more. And exporters on both sides suddenly can't sell abroad.",
+      "motif": "tradewar",
+      "caption": "tit-for-tat — everyone loses"
+    },
+    {
+      "id": "s79",
+      "type": "stage",
+      "narration": "And the retaliation always finds your exporters — the farmers, the manufacturers who sell abroad. A tariff thrown outward comes straight back at your own side.",
+      "motif": "tradewar",
+      "caption": "retaliation hits your exporters"
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "In the recent US-China war, China retaliated by taxing American farm goods. Suddenly US farmers couldn't sell their soybeans — and their incomes collapsed.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "factory",
+          "label": "farmers hit"
+        },
+        {
+          "name": "chartdown",
+          "label": "…exports collapse"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "callout",
+      "narration": "So the government then spent tens of billions bailing out those farmers — using tariff revenue, and more. Taxpayers paid to clean up the mess the tariffs made.",
+      "text": "$tens of billions",
+      "sub": "in farmer bailouts",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "Read that loop again. You paid higher prices at the store. Then your taxes bailed out the exporters hurt by the retaliation. You paid twice.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "pay at the store"
+        },
+        {
+          "name": "taxform",
+          "label": "…pay in taxes too"
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "type": "image",
+      "narration": "It's a near-perfect illusion: the cost is real, but it's scattered so thinly across so many receipts that no one feels robbed.",
+      "src": "img/memes/distracted.jpg",
+      "meme": "Distracted Boyfriend",
+      "memeBottom": "blaming foreigners while paying the tab"
+    },
+    {
+      "id": "s71",
+      "type": "character",
+      "narration": "So the bill actually arrives in three places at once. Higher prices on the shelf. Higher taxes to fund the bailouts. And fewer jobs wherever tariffs raised costs. Three hits, one policy.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "prices"
+        },
+        {
+          "name": "taxform",
+          "label": "taxes"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "title",
+      "narration": "There's one more cost that's slower, but maybe the most damaging of all.",
+      "heading": "Breaking the Chain",
+      "kicker": "the supply-chain cost"
+    },
+    {
+      "id": "s42",
+      "type": "screenshot",
+      "narration": "Modern products aren't made in one country. They're built along a global supply chain, crossing borders many times before they're finished.",
+      "sourceId": "wiki-supplychain"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "A single phone or car might cross borders dozens of times as it's assembled. Tariff each crossing, and the cost stacks up again and again inside one product.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "cargoship",
+          "label": "crosses borders many times"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "stage",
+      "narration": "So tariffs don't just tax 'foreign stuff.' They tax the inputs of things made at home — gumming up the whole machine that modern manufacturing depends on.",
+      "motif": "customsgate",
+      "caption": "taxed at every border crossing"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "And the uncertainty alone does damage. If tariffs might appear or vanish at any moment, businesses freeze — afraid to invest, hire, or plan. The chaos itself has a cost.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "uncertainty freezes investment"
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "And timing matters enormously. Pile tariffs onto an economy already fighting inflation, and you're pouring fuel on the fire — pushing the very prices you're trying to tame even higher.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "adds to inflation"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "stage",
+      "narration": "In that situation, a broad tariff is a self-inflicted price rise, hitting at the worst possible moment.",
+      "motif": "deadweight",
+      "caption": "a self-inflicted price rise"
+    },
+    {
+      "id": "s46",
+      "type": "title",
+      "narration": "Now — to be fair, because this isn't quite as simple as 'tariffs always bad.'",
+      "heading": "When Tariffs Make Sense",
+      "kicker": "the honest case"
+    },
+    {
+      "id": "s47",
+      "type": "screenshot",
+      "narration": "The opposite of a tariff is free trade — letting goods flow across borders without barriers. It's cheaper, but it isn't costless.",
+      "sourceId": "wiki-freetrade"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "Free trade makes everything cheaper, but it can also hollow out local industries and towns when production moves abroad. Those lost jobs are real.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "factory",
+          "label": "jobs can move abroad"
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "type": "character",
+      "narration": "Which is why economists almost universally prefer helping displaced workers directly — retraining, support, investment — over tariffs that quietly tax everyone to shield a few.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "help workers directly"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "So there are genuine reasons for some tariffs. Protecting a brand-new industry until it can stand on its own. Shielding something vital for national security, like chips or medicine.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chip",
+          "label": "strategic industries"
+        },
+        {
+          "name": "shield",
+          "label": "…national security"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "Or hitting back when another country cheats — dumping goods below cost to wipe out your producers. Used narrowly and strategically, a tariff can be a real tool.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "answering unfair play"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "image",
+      "narration": "The honest debate isn't 'free money from foreigners' versus nothing. It's 'cheaper goods' versus 'protected jobs' — and who pays for which.",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "cheaper prices for everyone",
+      "memeBottom": "protect some local jobs"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "But that's a trade-off — cheaper goods for all, versus protected jobs for some, paid for by everyone. It is never the free lunch the slogan promises.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "a real trade-off"
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "type": "character",
+      "narration": "The smart version is surgical: narrow tariffs on genuinely strategic goods, paired with real help for the workers and towns that trade leaves behind. Targeted beats blanket, every time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chip",
+          "label": "targeted"
+        },
+        {
+          "name": "shield",
+          "label": "…+ support"
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "type": "character",
+      "narration": "The clumsy version is a broad tariff on everything — which is really just a giant, hidden national sales tax that happens to sound tough on the campaign trail.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "broad = hidden sales tax"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "title",
+      "narration": "So let's read the final receipt.",
+      "heading": "The Final Receipt",
+      "kicker": "who really pays"
+    },
+    {
+      "id": "s54",
+      "type": "chalkboard",
+      "narration": "A tariff is a tax on imports. It's paid by the importer. It's passed on to you. And it quietly lets domestic firms raise their prices too.",
+      "lines": [
+        "a tariff is a tax on imports",
+        "paid by the importer",
+        "passed on to you",
+        "…and it lifts all prices"
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "The phrase 'make the foreigners pay' is one of the most effective political illusions there is — because the person actually paying is standing at a checkout, not in Beijing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "the real payer"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "stage",
+      "narration": "That doesn't make every tariff wrong. It makes every tariff a choice — with a bill, and a very specific set of people who pay it.",
+      "icons": [
+        "scale",
+        "receipt"
+      ],
+      "caption": "every tariff has a payer"
+    },
+    {
+      "id": "s57",
+      "type": "callout",
+      "narration": "So the one-line truth to remember is this: a tariff is a tax on your own citizens, cleverly dressed up as a tax on foreigners.",
+      "text": "a tax on you",
+      "sub": "…dressed as a tax on them",
+      "icon": "capitol"
+    },
+    {
+      "id": "s76",
+      "type": "character",
+      "narration": "So why are tariffs so politically popular, despite all of this? Because the benefits are visible and local — a saved factory, a ribbon-cutting — while the costs are tiny, scattered across millions of invisible receipts.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "factory",
+          "label": "visible win"
+        },
+        {
+          "name": "receipt",
+          "label": "…invisible costs"
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "type": "image",
+      "narration": "The saved factory makes the evening news. Your slightly higher prices never do.",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "the saved factory: on TV",
+      "memeBottom": "your higher prices: on the receipt"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "So the next time you hear 'and they'll pay for it,' you'll know exactly where to look for the real bill. Not on a foreign government's desk — on your own receipt.",
+      "pose": "present",
+      "bubble": "check your receipt",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "the bill is yours"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "If this made the politics of tariffs suddenly make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "cargoship",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-tariff",
+      "name": "Tariff (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tariff",
+      "quote": "paid by the importer"
+    },
+    {
+      "id": "wiki-import",
+      "name": "Import (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Import",
+      "quote": "buying and receiving goods and services produced in another country"
+    },
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "the level of prices of goods and services"
+    },
+    {
+      "id": "wiki-protectionism",
+      "name": "Protectionism (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Protectionism",
+      "quote": "the economic policy of restricting imports from other countries"
+    },
+    {
+      "id": "wiki-tradewar",
+      "name": "Trade war (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trade_war",
+      "quote": "states raise or implement tariffs or other trade barriers against each other"
+    },
+    {
+      "id": "wiki-supplychain",
+      "name": "Supply chain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Supply_chain",
+      "quote": "convert raw materials into finished products"
+    },
+    {
+      "id": "wiki-freetrade",
+      "name": "Free trade (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Free_trade",
+      "quote": "a trade policy that does not restrict imports or exports through legal barriers"
+    }
+  ],
+  "youtube": {
+    "title": "Tariffs: Who Really Pays (the Receipts)",
+    "alts": [
+      "'China Will Pay the Tariff' — Here's Who Actually Does",
+      "Who Really Pays for Tariffs? (It's You)"
+    ],
+    "hook": "'Put tariffs on China and China pays' is one of the most effective political illusions there is. The receipts say otherwise: a tariff is a tax on imports, paid by the domestic importer at the border, and passed on to you at the checkout. This is exactly how it works — pass-through, the hidden price hike on domestic goods too, the real winners and losers, the trade-war retaliation that makes you pay twice, and the honest case for when tariffs actually make sense. Fully cited.",
+    "bullets": [
+      "Who literally writes the check for a tariff (hint: not Beijing)",
+      "Pass-through: why ~100% of recent tariff costs hit US buyers",
+      "The hidden hike: why domestic prices rise too",
+      "Winners vs losers — and the 'deadweight loss' that helps no one",
+      "The trade war: retaliation, farmer bailouts, and paying twice",
+      "When tariffs genuinely make sense (and the trade-off they always carry)"
+    ],
+    "tags": [
+      "who pays tariffs",
+      "tariffs explained",
+      "do tariffs work",
+      "trade war explained",
+      "pass through tariffs",
+      "protectionism",
+      "free trade vs protectionism",
+      "import tax",
+      "us china trade war",
+      "deadweight loss",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#economics",
+      "#tariffs",
+      "#trade",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "'CHINA PAYS THE TARIFF'",
+      "hookBot": "…ACTUALLY, YOU DO",
+      "napkinNumber": "100%",
+      "napkinSub": "…passed on to you",
+      "deco": "cargoship"
+    },
+    "chapters": [
+      [
+        "what a tariff actually is",
+        "What a tariff is"
+      ],
+      [
+        "It's called pass-through",
+        "The pass-through"
+      ],
+      [
+        "a second, sneakier way",
+        "The hidden price hike"
+      ],
+      [
+        "who exactly wins",
+        "Winners and losers"
+      ],
+      [
+        "turns a tax into a war",
+        "The trade war"
+      ],
+      [
+        "one more cost that's slower",
+        "Breaking the chain"
+      ],
+      [
+        "genuine reasons for some tariffs",
+        "The honest case"
+      ],
+      [
+        "read the final receipt",
+        "Who really pays"
+      ]
+    ]
+  }
+}

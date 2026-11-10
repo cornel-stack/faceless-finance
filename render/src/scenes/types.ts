@@ -114,7 +114,9 @@ export interface StageScene extends Base {
     // EP024 (America bailing out currencies) additions:
     | "dollarshortage" | "swapline" | "plumbing" | "contagionmap"
     // EP025 (private equity) additions:
-    | "lbo" | "loadthedebt" | "dividendrecap" | "saleleaseback" | "stripmine";
+    | "lbo" | "loadthedebt" | "dividendrecap" | "saleleaseback" | "stripmine"
+    // EP026 (tariffs) additions:
+    | "passthrough" | "tradewar" | "customsgate" | "deadweight";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

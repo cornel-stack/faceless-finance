@@ -1,861 +1,858 @@
 [
   {
     "id": "s1",
-    "type": "stage",
-    "narration": "Toys R Us. Sears. Payless. Red Lobster. RadioShack. Beloved brands you grew up with — all dead, or barely breathing. And a surprising number share one hidden cause of death.",
-    "icons": [
-      "store",
-      "warning"
-    ],
-    "caption": "beloved brands — all dead"
+    "type": "character",
+    "narration": "Here's a sentence you've heard a hundred times from politicians of every stripe. 'We'll put tariffs on China, and China will pay.' It sounds tough, and it sounds free. It's also, mostly, false.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "\"China pays!\""
+      }
+    ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "It usually wasn't Amazon that killed them. It wasn't even that people stopped loving them. In case after case, they were quietly loaded up with debt — and bled dry — by their own owners.",
+    "narration": "Because a tariff is a tax. And the uncomfortable truth, written in black and white on the receipts, is that the people who overwhelmingly pay it are… you.",
+    "pose": "think",
+    "bubble": "wait — ME?",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "paid by you"
+      }
+    ]
+  },
+  {
+    "id": "s3",
+    "type": "image",
+    "narration": "The politician says a foreign country is footing the bill. Your shopping cart quietly disagrees.",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "'the foreigners pay the tariff'",
+    "memeBottom": "you pay it at the checkout"
+  },
+  {
+    "id": "s4",
+    "type": "callout",
+    "narration": "Economists studied the 2018 and 2019 trade war in detail, and the verdict was blunt: the cost landed almost entirely on American businesses and consumers.",
+    "text": "~$0",
+    "sub": "paid by the exporting country",
+    "icon": "warning"
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "narration": "Take a real example: washing machines. After tariffs hit them, their prices jumped sharply — and here's the kicker, dryers got more expensive too, even though dryers weren't tariffed. The makers simply raised both.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "wreckingball",
-        "label": "an inside job"
-      }
-    ]
-  },
-  {
-    "id": "s80",
-    "type": "image",
-    "narration": "So when you hear a chain 'just couldn't compete anymore,' hold that thought. Often it was never given a fair chance to.",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "out-compete your own debt load"
-  },
-  {
-    "id": "s3",
-    "type": "character",
-    "narration": "The owner, almost every time, is the same kind of creature. A private equity firm.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "private equity"
-      }
-    ]
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "And these firms are now enormous. They've quietly bought up restaurants, retailers, hospitals, newspapers — even the houses people rent.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "globe",
-        "label": "they own… a lot"
+        "name": "pricetag",
+        "label": "washers ↑"
       },
       {
-        "name": "store",
-        "label": "…more every year"
+        "name": "warning",
+        "label": "…dryers too"
       }
     ]
-  },
-  {
-    "id": "s4",
-    "type": "image",
-    "narration": "And here's the twist that makes people furious. The brand can die — and the firm that killed it still walks away richer.",
-    "src": "img/memes/thisisfine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "the brand: bankrupt",
-    "memeBottom": "the owners: richer than ever"
   },
   {
     "id": "s5",
-    "type": "callout",
-    "narration": "This isn't a fringe story. Private-equity-owned companies now employ millions of people — and they go bankrupt at far higher rates than normal firms.",
-    "text": "millions",
-    "sub": "of workers, at PE-owned firms",
-    "icon": "crowd"
+    "type": "character",
+    "narration": "So how does a tax that's supposed to punish foreigners end up in your receipts? Let's follow the money, step by step — and read the actual receipts.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "cargoship",
+        "label": "follow the goods"
+      }
+    ]
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's open up the private equity playbook — and see exactly how a profitable company gets turned into a corpse, at a profit.",
-    "heading": "How Private Equity Kills Your Favorite Brands",
-    "kicker": "the value-extraction playbook",
-    "sub": "The company dies. The firm gets paid."
+    "narration": "So let's settle it for good — who actually pays a tariff, and who really wins and loses.",
+    "heading": "Tariffs: Who Really Pays",
+    "kicker": "the receipts",
+    "sub": "A tax on foreigners — paid by you."
   },
   {
-    "id": "s63",
-    "type": "callout",
-    "narration": "Private equity now manages trillions of dollars and owns companies employing a huge chunk of the American workforce. This machine touches almost everyone.",
-    "text": "$trillions",
-    "sub": "managed by private equity firms",
-    "icon": "briefcase"
+    "id": "s62",
+    "type": "image",
+    "narration": "The gap between the slogan and the checkout is the whole story.",
+    "src": "img/memes/thisisfine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "me: 'foreigners pay the tariff'",
+    "memeBottom": "me, at the checkout, paying"
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "narration": "Start with what private equity even is. It's ownership of companies that aren't listed on the public stock market.",
-    "sourceId": "wiki-pe"
+    "narration": "Start with what a tariff actually is. It's a tax on imported goods.",
+    "sourceId": "wiki-tariff"
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "narration": "A private equity firm raises a giant fund — mostly from pensions and endowments — and uses it to buy entire companies.",
-    "sourceId": "wiki-pefirm"
+    "narration": "And importing just means buying goods made in another country and bringing them home to sell.",
+    "sourceId": "wiki-import"
   },
   {
     "id": "s9",
     "type": "character",
-    "narration": "The pitch to the public is noble: we buy struggling companies, make them better and leaner, and everyone wins. Sometimes, genuinely, that happens.",
+    "narration": "Here's the detail everything hinges on. The tariff is not paid by the foreign factory. It's paid by the importer — a domestic company — at the moment the goods cross the border.",
+    "pose": "explain",
+    "expression": "surprised",
+    "props": [
+      {
+        "name": "barrier",
+        "label": "paid at the border"
+      },
+      {
+        "name": "store",
+        "label": "…by a US company"
+      }
+    ]
+  },
+  {
+    "id": "s10",
+    "type": "stage",
+    "narration": "Picture the border as a tollbooth. A shipment of goods rolls up — and before it can enter, the American company importing it has to hand the government a cut.",
+    "motif": "customsgate",
+    "caption": "a tax, stamped on at the border"
+  },
+  {
+    "id": "s11",
+    "type": "character",
+    "narration": "The Chinese factory already got paid, in full, for the goods. The check to the US Treasury is written by the American importer. Not Beijing. A company in Ohio.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "'we make them better'"
+        "name": "factory",
+        "label": "factory: already paid"
+      },
+      {
+        "name": "capitol",
+        "label": "importer pays the US"
+      }
+    ]
+  },
+  {
+    "id": "s12",
+    "type": "character",
+    "narration": "So right away, 'China pays' is wrong at the most basic, mechanical level. The first check is written by an American. The only question left is what happens next.",
+    "pose": "think",
+    "bubble": "so who eats the cost?",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "then what?"
+      }
+    ]
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "narration": "Picture a small US business importing phone cases. The tariff bill lands on them, in dollars, due immediately. They either eat it and shrink, or raise prices. Guess which one keeps the lights on.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "store",
+        "label": "small importer"
+      },
+      {
+        "name": "receipt",
+        "label": "…bill due now"
       }
     ]
   },
   {
     "id": "s64",
-    "type": "image",
-    "narration": "The brochure says 'we rescue and improve companies.' The playbook, too often, says something very different.",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "'we fix broken companies'",
-    "memeBottom": "we extract the cash and leave"
-  },
-  {
-    "id": "s10",
-    "type": "character",
-    "narration": "But the real magic trick is how they buy. Because they barely use their own money at all.",
-    "pose": "think",
-    "bubble": "with whose money?",
-    "props": [
-      {
-        "name": "magichat",
-        "label": "the real trick"
-      }
-    ]
-  },
-  {
-    "id": "s11",
-    "type": "screenshot",
-    "narration": "The tool is the leveraged buyout — buying a company using a large amount of borrowed money.",
-    "sourceId": "wiki-lbo"
-  },
-  {
-    "id": "s12",
     "type": "stage",
-    "narration": "A typical deal: the firm puts in a small slice of its own cash, and borrows the rest — often the great majority of the purchase price.",
-    "motif": "lbo",
-    "caption": "a little cash, a lot of debt"
+    "narration": "Trace the whole chain and there's no foreign link in it. Every hand that touches the money, from the border to the till, is domestic.",
+    "motif": "passthrough",
+    "caption": "no foreign link in the chain"
   },
   {
     "id": "s13",
-    "type": "character",
-    "narration": "And now the part that sounds made up, but is completely real. The debt used to buy the company… gets put on the company's own books.",
-    "pose": "explain",
-    "expression": "surprised",
-    "props": [
-      {
-        "name": "ledger",
-        "label": "the debt goes on THEM"
-      }
-    ]
+    "type": "title",
+    "narration": "What happens next is the whole ballgame. It's called pass-through.",
+    "heading": "The Pass-Through",
+    "kicker": "the cost rolls downhill"
   },
   {
     "id": "s14",
-    "type": "stage",
-    "narration": "Imagine buying a house with someone else's mortgage — and then making the house itself responsible for the payments. That's a leveraged buyout.",
-    "motif": "loadthedebt",
-    "caption": "the company carries the debt"
+    "type": "character",
+    "narration": "That importer in Ohio isn't a charity. It just paid a new tax on its goods. So it does the obvious thing: it raises its prices to cover the cost.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "pricetag",
+        "label": "raise the price"
+      }
+    ]
   },
   {
     "id": "s15",
-    "type": "character",
-    "narration": "So on day one, a healthy company suddenly owes a fortune it never borrowed, to fund its own purchase. Its margin for error just vanished.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "iou",
-        "label": "owes a fortune"
-      },
-      {
-        "name": "warning",
-        "label": "…no room for error"
-      }
-    ]
-  },
-  {
-    "id": "s65",
-    "type": "character",
-    "narration": "You might wonder why any lender hands over billions for this. Because the loans pay juicy interest — and the lenders quickly sell that debt on to other investors, so they rarely hold the risk themselves.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "lenders get paid"
-      },
-      {
-        "name": "handshake",
-        "label": "…risk sold on"
-      }
-    ]
-  },
-  {
-    "id": "s66",
-    "type": "character",
-    "narration": "It's other people's money, all the way down. The firm risks little of its own. The lenders pass on the danger. And the company is left holding every bit of it.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "iou",
-        "label": "other people's money"
-      }
-    ]
+    "type": "stage",
+    "narration": "The tariff gets added at the border, then passed down the chain — from the importer, to the retailer, to the shelf, to the price you pay at the till.",
+    "motif": "passthrough",
+    "caption": "the tariff rolls downhill to you"
   },
   {
     "id": "s16",
-    "type": "title",
-    "narration": "Now the company is owned, and buried in debt. Here's how the firm extracts its profit — whether or not the company survives.",
-    "heading": "The Extraction Playbook",
-    "kicker": "four ways to get paid"
+    "type": "screenshot",
+    "narration": "And you can see it in the numbers everyone tracks — the consumer price index, the official measure of what households actually pay.",
+    "sourceId": "wiki-cpi"
   },
   {
     "id": "s17",
     "type": "character",
-    "narration": "Trick one: the fees. The firm charges the company management and 'monitoring' fees — getting paid every year, just for owning it.",
+    "narration": "In the recent trade war, study after study found something striking. Nearly the entire cost of the tariffs showed up in higher US import prices. The pass-through was almost total.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "receipt",
-        "label": "annual fees"
+        "name": "chartup",
+        "label": "~100% pass-through"
       }
     ]
   },
   {
     "id": "s18",
-    "type": "screenshot",
-    "narration": "On top of that, the partners keep a big slice of any profits — the famous 'carried interest.'",
-    "sourceId": "wiki-carry"
+    "type": "callout",
+    "narration": "Economists estimated the tariffs cost the typical American household hundreds of dollars a year — a quiet tax increase nobody voted for.",
+    "text": "$hundreds",
+    "sub": "per US household, per year",
+    "icon": "receipt"
   },
   {
-    "id": "s19",
+    "id": "s65",
     "type": "character",
-    "narration": "So the firm is paid fees for owning it, and a cut of any gains. Already, it makes money whether the company thrives or not.",
+    "narration": "And tariffs are regressive — they hit the poor hardest. A tax on cheap clothes, shoes and electronics takes a far bigger bite out of a tight budget than a comfortable one.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "coins",
-        "label": "paid either way"
+        "name": "crowd",
+        "label": "hits the poor hardest"
       }
     ]
   },
   {
+    "id": "s66",
+    "type": "image",
+    "narration": "There is simply no way to tax imports without taxing the people who buy them.",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "tax imports without taxing yourself"
+  },
+  {
+    "id": "s19",
+    "type": "image",
+    "narration": "The 'tax on China' turned out to be a sales tax on Americans, collected one checkout at a time.",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "a tariff is a tax on your own shoppers"
+  },
+  {
     "id": "s20",
-    "type": "screenshot",
-    "narration": "Trick two is the one that stuns people: the dividend recapitalization.",
-    "sourceId": "wiki-recap"
+    "type": "character",
+    "narration": "Now, sometimes a foreign exporter does cut its price a little to keep customers — so it eats a sliver. But in the big recent cases, that sliver was tiny. The buyer bore the burden.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "exporter eats a sliver"
+      },
+      {
+        "name": "crowd",
+        "label": "…you eat the rest"
+      }
+    ]
   },
   {
     "id": "s21",
-    "type": "stage",
-    "narration": "The firm makes the company borrow even more money — and then pays that fresh cash straight to itself, as a dividend.",
-    "motif": "dividendrecap",
-    "caption": "borrow more → pay yourself"
+    "type": "title",
+    "narration": "But wait — there's a second, sneakier way tariffs raise your prices. And it has nothing to do with imports at all.",
+    "heading": "The Hidden Price Hike",
+    "kicker": "even on the home team"
   },
   {
     "id": "s22",
     "type": "character",
-    "narration": "Read that again. They don't put money in. They make the company take on new debt, and hand them the proceeds. The firm can recover its entire investment this way — while leaving the company even deeper in the hole.",
+    "narration": "Say a tariff makes foreign steel more expensive. What does the domestic steelmaker — the one you were trying to protect — do next?",
+    "pose": "think",
+    "bubble": "what does the local firm do?"
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "narration": "It raises its prices too. Why wouldn't it? Its foreign competitor just got more expensive, so it has room to charge more — and pocket the difference.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "iou",
-        "label": "company: more debt"
+        "name": "factory",
+        "label": "local firm"
       },
       {
-        "name": "moneybag",
-        "label": "firm: paid back"
+        "name": "pricetag",
+        "label": "…also hikes prices"
       }
     ]
-  },
-  {
-    "id": "s67",
-    "type": "character",
-    "narration": "In the most brazen deals, firms pull out more in dividends than they ever put in — sometimes within a year or two — making the trade risk-free for themselves before the company's fate is even decided.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "moneybag",
-        "label": "paid back in a year"
-      }
-    ]
-  },
-  {
-    "id": "s68",
-    "type": "stage",
-    "narration": "Once the firm has its money back, it almost doesn't matter what happens next. Heads it wins big; tails it already cashed out.",
-    "motif": "dividendrecap",
-    "caption": "de-risked before the story ends"
-  },
-  {
-    "id": "s23",
-    "type": "screenshot",
-    "narration": "Trick three: sell what the company owns, and rent it back. The sale-and-leaseback.",
-    "sourceId": "wiki-leaseback"
   },
   {
     "id": "s24",
     "type": "stage",
-    "narration": "If the company owns its stores or warehouses, the firm sells that real estate, pockets the cash — and the company now has to pay rent, forever, on buildings it used to own.",
-    "motif": "saleleaseback",
-    "caption": "sell the building, pay rent forever"
+    "narration": "So you pay more on the imports because of the tax — and more on the domestic versions, because the competition just got softer. You lose on both.",
+    "icons": [
+      "pricetag",
+      "pricetag"
+    ],
+    "caption": "imported AND domestic prices rise"
   },
   {
     "id": "s25",
-    "type": "character",
-    "narration": "In one move, a huge asset is converted into cash for the owner — and a permanent new bill for the company. Short-term gain, long-term bleed.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "asset → cash"
-      },
-      {
-        "name": "receipt",
-        "label": "…+ forever rent"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "This is the real face of protectionism — shielding domestic producers from competition, by making everyone else's option more expensive.",
+    "sourceId": "wiki-protectionism"
+  },
+  {
+    "id": "s67",
+    "type": "callout",
+    "narration": "Researchers measured it precisely: when washer tariffs hit, domestic washer prices rose roughly twelve percent too. The protection became a price hike on everyone.",
+    "text": "+12%",
+    "sub": "on domestic washers, after the tariff",
+    "icon": "pricetag"
   },
   {
     "id": "s26",
-    "type": "screenshot",
-    "narration": "Trick four, when the others have run their course, is the oldest one of all: asset stripping.",
-    "sourceId": "wiki-stripping"
+    "type": "title",
+    "narration": "So if consumers lose, who exactly wins? Because tariffs do create winners — just not the ones on the poster.",
+    "heading": "Winners and Losers",
+    "kicker": "the real scoreboard"
   },
   {
     "id": "s27",
-    "type": "stage",
-    "narration": "Sell off the brands, the inventory, the patents, the land — anything of value — and carry the proceeds out the door. What's left is a husk that still owes money.",
-    "motif": "stripmine",
-    "caption": "strip the value, leave the husk"
+    "type": "character",
+    "narration": "Winner one: the protected industry. The specific domestic companies shielded from competition can sell more, and charge more. They love tariffs, and they lobby hard for them.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "factory",
+        "label": "the protected few"
+      }
+    ]
   },
   {
     "id": "s28",
     "type": "character",
-    "narration": "And to service all that debt, the company slashes costs. Layoffs. Lower quality. Squeezed suppliers. Deferred investment. The things customers loved, quietly gutted.",
+    "narration": "Winner two: the government, which collects the tariff revenue. Though remember — it's collecting that revenue from its own importers and shoppers.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "scissors",
-        "label": "cut, cut, cut"
-      },
-      {
-        "name": "store",
-        "label": "…the brand decays"
+        "name": "capitol",
+        "label": "the Treasury"
       }
     ]
-  },
-  {
-    "id": "s69",
-    "type": "image",
-    "narration": "The customer feels it first — as the exact things that made the brand special quietly disappear.",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeBottom": "cutting the stuff customers actually loved"
   },
   {
     "id": "s29",
-    "type": "title",
-    "narration": "This all sounds abstract. So let's watch it kill a company you probably remember. Toys R Us.",
-    "heading": "Case One: Toys R Us",
-    "kicker": "a $6.6 billion death"
-  },
-  {
-    "id": "s30",
-    "type": "stage",
-    "narration": "In 2005, a group of private equity firms bought Toys R Us for about six and a half billion dollars.",
-    "icons": [
-      "store",
-      "briefcase"
-    ],
-    "caption": "2005: bought for $6.6B"
-  },
-  {
-    "id": "s31",
-    "type": "callout",
-    "narration": "Most of that price was borrowed — leaving the company saddled with around five billion dollars of debt it had never chosen to take on.",
-    "text": "$5 billion",
-    "sub": "of debt loaded onto Toys R Us",
-    "icon": "iou"
-  },
-  {
-    "id": "s32",
     "type": "character",
-    "narration": "The interest alone ate hundreds of millions a year — money that could have gone into stores, staff, and fighting back against Amazon and Walmart.",
+    "narration": "Now the losers. Loser one, obviously, is you — the consumer paying higher prices on a huge range of everyday goods.",
     "pose": "explain",
     "expression": "worried",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "interest ate the profits"
-      }
-    ]
-  },
-  {
-    "id": "s33",
-    "type": "stage",
-    "narration": "So while rivals invested in websites and experiences, Toys R Us was stuck making debt payments. It wasn't out-competed so much as financially handcuffed.",
-    "motif": "loadthedebt",
-    "caption": "handcuffed by debt, not beaten by Amazon"
-  },
-  {
-    "id": "s34",
-    "type": "callout",
-    "narration": "In 2017, Toys R Us filed for bankruptcy. Around thirty-three thousand workers eventually lost their jobs — many at first with no severance at all.",
-    "text": "33,000",
-    "sub": "Toys R Us jobs lost",
-    "icon": "crowd"
-  },
-  {
-    "id": "s35",
-    "type": "character",
-    "narration": "Meanwhile, the firms had collected fees for over a decade. The workers got pink slips. The owners got paid. That contrast is the entire story.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "moneybag",
-        "label": "owners: fees"
-      },
-      {
-        "name": "warning",
-        "label": "workers: nothing"
-      }
-    ]
-  },
-  {
-    "id": "s70",
-    "type": "callout",
-    "narration": "When Toys R Us collapsed, workers were initially offered nothing in severance. Only a public outcry forced the firms to set up a modest hardship fund.",
-    "text": "$0",
-    "sub": "severance first offered to workers",
-    "icon": "warning",
-    "break": true
-  },
-  {
-    "id": "s71",
-    "type": "character",
-    "narration": "And here's the cruelest irony. Some of the pensions that funded these buyouts belonged to workers whose own jobs the deals later destroyed. Their savings quietly bet against their paychecks.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "pensions funded it"
-      },
-      {
-        "name": "warning",
-        "label": "…then lost the jobs"
-      }
-    ]
-  },
-  {
-    "id": "s36",
-    "type": "title",
-    "narration": "If you think that's a one-off, meet a more recent victim — from your dinner table. Red Lobster.",
-    "heading": "Case Two: Red Lobster",
-    "kicker": "death by real estate"
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "narration": "Red Lobster's problem wasn't really seafood. A big part of it was a classic sale-and-leaseback of the very ground its restaurants sat on.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "store",
-        "label": "it owned its land"
-      }
-    ]
-  },
-  {
-    "id": "s38",
-    "type": "stage",
-    "narration": "Its valuable real estate was sold off for a one-time cash windfall — and suddenly the chain had to pay rent on hundreds of locations it used to own outright.",
-    "motif": "saleleaseback",
-    "caption": "its own land, sold out from under it"
-  },
-  {
-    "id": "s39",
-    "type": "character",
-    "narration": "That permanent rent bill turned manageable restaurants into money-losers. The cushion that lets a business survive a bad year was simply gone.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "crushing new rent"
-      }
-    ]
-  },
-  {
-    "id": "s40",
-    "type": "character",
-    "narration": "Then came the infamous 'endless shrimp' deal — an all-you-can-eat promotion that bled money as costs rose. A desperate grab for sales, by a company with no room to absorb a mistake.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "dining",
-        "label": "'endless shrimp'"
-      },
-      {
-        "name": "chartdown",
-        "label": "…endless losses"
-      }
-    ]
-  },
-  {
-    "id": "s41",
-    "type": "callout",
-    "narration": "In 2024, Red Lobster filed for bankruptcy. The seafood was a scapegoat. The financial engineering was the real cause.",
-    "text": "2024",
-    "sub": "Red Lobster files for bankruptcy",
-    "icon": "warning"
-  },
-  {
-    "id": "s42",
-    "type": "image",
-    "narration": "The headlines blamed shrimp. The balance sheet told the real story.",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "it wasn't the shrimp — it was the rent"
-  },
-  {
-    "id": "s72",
-    "type": "doodle",
-    "narration": "And it is a very long list. Payless. Sears. Friendly's. Mervyn's. Fairway. Brand after brand, run through the exact same machine.",
-    "items": [
-      "store",
-      "store",
-      "store"
-    ],
-    "labels": [
-      "Payless",
-      "Sears",
-      "Friendly's"
-    ],
-    "caption": "the same playbook, again and again"
-  },
-  {
-    "id": "s73",
-    "type": "character",
-    "narration": "Each time, the headlines reach for an easy villain — Amazon, the internet, changing tastes. Underneath, the same debt-and-extraction engine kept quietly running.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "newspaper",
-        "label": "easy scapegoats"
-      }
-    ]
-  },
-  {
-    "id": "s43",
-    "type": "title",
-    "narration": "So why does this keep happening? Because of one beautiful, brutal asymmetry.",
-    "heading": "Heads I Win, Tails You Lose",
-    "kicker": "the asymmetry"
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "The firm plays with very little of its own money. The rest is debt the company owes, and cash from outside investors.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "little of their own money"
-      }
-    ]
-  },
-  {
-    "id": "s45",
-    "type": "stage",
-    "narration": "So if the company thrives, the firm makes a fortune on the upside. If it dies, the firm has often already pulled its money out through fees and dividends — and it's the company's lenders and workers who eat the loss.",
-    "motif": "stripmine",
-    "caption": "upside theirs, downside yours"
-  },
-  {
-    "id": "s74",
-    "type": "character",
-    "narration": "A favorite move is the 'roll-up' — buy dozens of small firms in one industry, bolt them together, strip out staff, raise prices, and sell the giant for a markup.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "the roll-up"
-      },
-      {
-        "name": "pricetag",
-        "label": "…then raise prices"
-      }
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "screenshot",
-    "narration": "At its most extreme, this is simply asset stripping — selling a company for parts to boost returns for the financial owners.",
-    "sourceId": "wiki-stripping"
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "And who's on the hook for the losses? Often the pension funds that invested in the PE fund — which can mean, indirectly, ordinary workers' retirement savings.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "pensions bear the risk"
-      }
-    ]
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "The suppliers who go unpaid. The towns that lose their biggest employer. The customers who lose a brand they loved. The costs are spread everywhere — the profits, concentrated in a few.",
-    "pose": "explain",
     "props": [
       {
         "name": "crowd",
-        "label": "costs spread wide"
-      },
-      {
-        "name": "moneybag",
-        "label": "…profit concentrated"
+        "label": "every shopper"
       }
     ]
   },
   {
-    "id": "s81",
+    "id": "s30",
     "type": "character",
-    "narration": "And the damage doesn't stop at the company gates. When a town's biggest employer is stripped and shuttered, the local shops, suppliers and tax base can collapse right along with it.",
+    "narration": "Loser two is sneakier, and often bigger: the domestic manufacturers who use those imported goods as inputs.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "store",
-        "label": "the whole town feels it"
+        "name": "factory",
+        "label": "firms that USE imports"
       }
     ]
   },
   {
-    "id": "s75",
+    "id": "s31",
     "type": "character",
-    "narration": "There's even a tax twist. The partners' cut of the profits — that carried interest — is often taxed at a lower rate than ordinary wages. The extraction is quietly subsidized.",
+    "narration": "Tariff the steel, and you help a few steelmakers — but you hurt every carmaker, appliance maker, and builder who needs steel. And they employ far more people.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "taxform",
-        "label": "taxed like gains"
+        "name": "car",
+        "label": "carmakers pay more"
       },
       {
         "name": "warning",
-        "label": "…not like wages"
-      }
-    ]
-  },
-  {
-    "id": "s76",
-    "type": "image",
-    "narration": "Fail the company, keep the fees, and pay a discount rate on the winnings. It's a remarkably good deal — for exactly one party.",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "the company: bankrupt",
-    "memeBottom": "the tax code: here's a discount"
-  },
-  {
-    "id": "s49",
-    "type": "title",
-    "narration": "Now, in fairness — because this gets ranty fast — private equity is not pure villainy.",
-    "heading": "To Be Fair",
-    "kicker": "it's not all bad"
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "Sometimes a struggling company genuinely needs new owners, hard decisions, and fresh capital. Plenty of PE deals do create real, lasting value.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "some real turnarounds"
-      }
-    ]
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "The problem isn't buying companies. It's a model where the owner can get rich even when the company fails — because that quietly rewards extraction over building.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "scale",
-        "label": "the incentive is the problem"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "image",
-    "narration": "When failure still pays, you shouldn't be shocked that failure keeps happening.",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "build the company up",
-    "memeBottom": "or strip it for parts"
-  },
-  {
-    "id": "s77",
-    "type": "character",
-    "narration": "And it's spreading to places that really matter. Private equity now owns hospitals, nursing homes, and vet clinics — where cutting costs to service debt can mean cutting actual care.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "PE buys healthcare"
-      },
-      {
-        "name": "warning",
-        "label": "…care gets cut"
+        "label": "…more jobs at stake"
       }
     ]
   },
   {
     "id": "s78",
     "type": "character",
-    "narration": "Researchers have linked some private-equity nursing-home takeovers to worse outcomes for residents. When this playbook meets human care, the stakes stop being about toys.",
+    "narration": "The ratio is stark. For every worker in a protected industry like steel, there can be dozens in the industries that USE steel — all now paying more to shield the few.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "the human cost"
+        "label": "few protected, many hurt"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "stage",
+    "narration": "Economists can even draw the pure waste on a chart — a wedge of value that simply disappears, helping no one. They call it deadweight loss.",
+    "motif": "deadweight",
+    "caption": "value that just vanishes"
+  },
+  {
+    "id": "s33",
+    "type": "character",
+    "narration": "A tariff doesn't just move money from you to a protected company. A chunk of it is destroyed outright — deals that no longer happen, value that's just gone.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "warning",
+        "label": "pure waste"
+      }
+    ]
+  },
+  {
+    "id": "s68",
+    "type": "character",
+    "narration": "There's a brutal arithmetic here. Studies found some tariffs did 'save' jobs — at a cost to consumers of hundreds of thousands, sometimes millions, of dollars per single job saved.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "$ per job saved"
+      },
+      {
+        "name": "warning",
+        "label": "…often in the millions"
+      }
+    ]
+  },
+  {
+    "id": "s69",
+    "type": "character",
+    "narration": "And because the downstream industries got squeezed, the same tariffs often destroyed more jobs than they protected. The visible win quietly hid a larger, invisible loss.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "factory",
+        "label": "a few jobs saved"
+      },
+      {
+        "name": "chartdown",
+        "label": "…more jobs lost"
+      }
+    ]
+  },
+  {
+    "id": "s34",
+    "type": "title",
+    "narration": "And then there's the part that turns a tax into a war.",
+    "heading": "The Trade War",
+    "kicker": "they hit back"
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "When one country slaps tariffs on another, the other country rarely just takes it. It retaliates — with tariffs of its own.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "warning",
+        "label": "retaliation"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "screenshot",
+    "narration": "That tit-for-tat escalation has a name: a trade war, where countries pile trade barriers on each other.",
+    "sourceId": "wiki-tradewar"
+  },
+  {
+    "id": "s37",
+    "type": "stage",
+    "narration": "Now both sides are taxing each other's goods. Both sets of consumers pay more. And exporters on both sides suddenly can't sell abroad.",
+    "motif": "tradewar",
+    "caption": "tit-for-tat — everyone loses"
+  },
+  {
+    "id": "s79",
+    "type": "stage",
+    "narration": "And the retaliation always finds your exporters — the farmers, the manufacturers who sell abroad. A tariff thrown outward comes straight back at your own side.",
+    "motif": "tradewar",
+    "caption": "retaliation hits your exporters"
+  },
+  {
+    "id": "s38",
+    "type": "character",
+    "narration": "In the recent US-China war, China retaliated by taxing American farm goods. Suddenly US farmers couldn't sell their soybeans — and their incomes collapsed.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "factory",
+        "label": "farmers hit"
+      },
+      {
+        "name": "chartdown",
+        "label": "…exports collapse"
+      }
+    ]
+  },
+  {
+    "id": "s39",
+    "type": "callout",
+    "narration": "So the government then spent tens of billions bailing out those farmers — using tariff revenue, and more. Taxpayers paid to clean up the mess the tariffs made.",
+    "text": "$tens of billions",
+    "sub": "in farmer bailouts",
+    "icon": "moneybag"
+  },
+  {
+    "id": "s40",
+    "type": "character",
+    "narration": "Read that loop again. You paid higher prices at the store. Then your taxes bailed out the exporters hurt by the retaliation. You paid twice.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "pay at the store"
+      },
+      {
+        "name": "taxform",
+        "label": "…pay in taxes too"
+      }
+    ]
+  },
+  {
+    "id": "s70",
+    "type": "image",
+    "narration": "It's a near-perfect illusion: the cost is real, but it's scattered so thinly across so many receipts that no one feels robbed.",
+    "src": "img/memes/distracted.jpg",
+    "meme": "Distracted Boyfriend",
+    "memeBottom": "blaming foreigners while paying the tab"
+  },
+  {
+    "id": "s71",
+    "type": "character",
+    "narration": "So the bill actually arrives in three places at once. Higher prices on the shelf. Higher taxes to fund the bailouts. And fewer jobs wherever tariffs raised costs. Three hits, one policy.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "prices"
+      },
+      {
+        "name": "taxform",
+        "label": "taxes"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "title",
+    "narration": "There's one more cost that's slower, but maybe the most damaging of all.",
+    "heading": "Breaking the Chain",
+    "kicker": "the supply-chain cost"
+  },
+  {
+    "id": "s42",
+    "type": "screenshot",
+    "narration": "Modern products aren't made in one country. They're built along a global supply chain, crossing borders many times before they're finished.",
+    "sourceId": "wiki-supplychain"
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "narration": "A single phone or car might cross borders dozens of times as it's assembled. Tariff each crossing, and the cost stacks up again and again inside one product.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "cargoship",
+        "label": "crosses borders many times"
+      }
+    ]
+  },
+  {
+    "id": "s44",
+    "type": "stage",
+    "narration": "So tariffs don't just tax 'foreign stuff.' They tax the inputs of things made at home — gumming up the whole machine that modern manufacturing depends on.",
+    "motif": "customsgate",
+    "caption": "taxed at every border crossing"
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "And the uncertainty alone does damage. If tariffs might appear or vanish at any moment, businesses freeze — afraid to invest, hire, or plan. The chaos itself has a cost.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "uncertainty freezes investment"
+      }
+    ]
+  },
+  {
+    "id": "s72",
+    "type": "character",
+    "narration": "And timing matters enormously. Pile tariffs onto an economy already fighting inflation, and you're pouring fuel on the fire — pushing the very prices you're trying to tame even higher.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "adds to inflation"
+      }
+    ]
+  },
+  {
+    "id": "s73",
+    "type": "stage",
+    "narration": "In that situation, a broad tariff is a self-inflicted price rise, hitting at the worst possible moment.",
+    "motif": "deadweight",
+    "caption": "a self-inflicted price rise"
+  },
+  {
+    "id": "s46",
+    "type": "title",
+    "narration": "Now — to be fair, because this isn't quite as simple as 'tariffs always bad.'",
+    "heading": "When Tariffs Make Sense",
+    "kicker": "the honest case"
+  },
+  {
+    "id": "s47",
+    "type": "screenshot",
+    "narration": "The opposite of a tariff is free trade — letting goods flow across borders without barriers. It's cheaper, but it isn't costless.",
+    "sourceId": "wiki-freetrade"
+  },
+  {
+    "id": "s48",
+    "type": "character",
+    "narration": "Free trade makes everything cheaper, but it can also hollow out local industries and towns when production moves abroad. Those lost jobs are real.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "factory",
+        "label": "jobs can move abroad"
+      }
+    ]
+  },
+  {
+    "id": "s80",
+    "type": "character",
+    "narration": "Which is why economists almost universally prefer helping displaced workers directly — retraining, support, investment — over tariffs that quietly tax everyone to shield a few.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "help workers directly"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "So there are genuine reasons for some tariffs. Protecting a brand-new industry until it can stand on its own. Shielding something vital for national security, like chips or medicine.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chip",
+        "label": "strategic industries"
+      },
+      {
+        "name": "shield",
+        "label": "…national security"
+      }
+    ]
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "Or hitting back when another country cheats — dumping goods below cost to wipe out your producers. Used narrowly and strategically, a tariff can be a real tool.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "answering unfair play"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "image",
+    "narration": "The honest debate isn't 'free money from foreigners' versus nothing. It's 'cheaper goods' versus 'protected jobs' — and who pays for which.",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "cheaper prices for everyone",
+    "memeBottom": "protect some local jobs"
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "But that's a trade-off — cheaper goods for all, versus protected jobs for some, paid for by everyone. It is never the free lunch the slogan promises.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "a real trade-off"
+      }
+    ]
+  },
+  {
+    "id": "s74",
+    "type": "character",
+    "narration": "The smart version is surgical: narrow tariffs on genuinely strategic goods, paired with real help for the workers and towns that trade leaves behind. Targeted beats blanket, every time.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chip",
+        "label": "targeted"
+      },
+      {
+        "name": "shield",
+        "label": "…+ support"
+      }
+    ]
+  },
+  {
+    "id": "s75",
+    "type": "character",
+    "narration": "The clumsy version is a broad tariff on everything — which is really just a giant, hidden national sales tax that happens to sound tough on the campaign trail.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "broad = hidden sales tax"
       }
     ]
   },
   {
     "id": "s53",
     "type": "title",
-    "narration": "So what do you actually take from this — as a customer, a worker, or an investor?",
-    "heading": "What to Watch For",
-    "kicker": "spotting it"
+    "narration": "So let's read the final receipt.",
+    "heading": "The Final Receipt",
+    "kicker": "who really pays"
   },
   {
     "id": "s54",
-    "type": "character",
-    "narration": "As a customer, watch for the tells. A long-loved brand suddenly cuts corners, raises prices, closes stores, and feels hollowed out. That's often a balance sheet talking, not a boardroom losing its touch.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "store",
-        "label": "sudden decline = a tell"
-      }
+    "type": "chalkboard",
+    "narration": "A tariff is a tax on imports. It's paid by the importer. It's passed on to you. And it quietly lets domestic firms raise their prices too.",
+    "lines": [
+      "a tariff is a tax on imports",
+      "paid by the importer",
+      "passed on to you",
+      "…and it lifts all prices"
     ]
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "As a worker, know that a private equity takeover often means the clock is ticking — on jobs, on investment, and on the company's independence.",
+    "narration": "The phrase 'make the foreigners pay' is one of the most effective political illusions there is — because the person actually paying is standing at a checkout, not in Beijing.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "clock",
-        "label": "the clock starts ticking"
+        "name": "receipt",
+        "label": "the real payer"
       }
     ]
   },
   {
     "id": "s56",
-    "type": "chalkboard",
-    "narration": "Remember the four moves. Load it with debt. Charge it fees. Borrow more to pay yourself. Sell its assets and rent them back. Then cut costs to survive the wreckage.",
-    "lines": [
-      "1. load it with debt",
-      "2. charge it fees",
-      "3. borrow more → dividend",
-      "4. sell its assets, rent them back"
-    ]
+    "type": "stage",
+    "narration": "That doesn't make every tariff wrong. It makes every tariff a choice — with a bill, and a very specific set of people who pay it.",
+    "icons": [
+      "scale",
+      "receipt"
+    ],
+    "caption": "every tariff has a payer"
   },
   {
     "id": "s57",
-    "type": "stage",
-    "narration": "Do all that, and a company that was perfectly healthy can be bled into bankruptcy — while the people who did it were paid, handsomely, the entire time.",
-    "motif": "loadthedebt",
-    "caption": "healthy company, engineered death"
-  },
-  {
-    "id": "s58",
     "type": "callout",
-    "narration": "Because in this game, the company's survival was never really the goal. The fees, the dividends, and the asset sales were. The brand was just the raw material.",
-    "text": "the brand was the fuel",
-    "sub": "…not the goal",
-    "icon": "store"
+    "narration": "So the one-line truth to remember is this: a tariff is a tax on your own citizens, cleverly dressed up as a tax on foreigners.",
+    "text": "a tax on you",
+    "sub": "…dressed as a tax on them",
+    "icon": "capitol"
   },
   {
-    "id": "s79",
+    "id": "s76",
     "type": "character",
-    "narration": "It even owns a fast-growing share of single-family rental homes now — applying the very same squeeze to tenants that it once applied to toy stores.",
+    "narration": "So why are tariffs so politically popular, despite all of this? Because the benefits are visible and local — a saved factory, a ribbon-cutting — while the costs are tiny, scattered across millions of invisible receipts.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "maybe your landlord, too"
+        "name": "factory",
+        "label": "visible win"
+      },
+      {
+        "name": "receipt",
+        "label": "…invisible costs"
+      }
+    ]
+  },
+  {
+    "id": "s77",
+    "type": "image",
+    "narration": "The saved factory makes the evening news. Your slightly higher prices never do.",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "the saved factory: on TV",
+    "memeBottom": "your higher prices: on the receipt"
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "So the next time you hear 'and they'll pay for it,' you'll know exactly where to look for the real bill. Not on a foreign government's desk — on your own receipt.",
+    "pose": "present",
+    "bubble": "check your receipt",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "the bill is yours"
       }
     ]
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "So the next time a brand you grew up with quietly dies, don't just assume it 'couldn't keep up.' Ask who owned it — and how much they made on the way down.",
-    "pose": "present",
-    "bubble": "ask who owned it",
-    "props": [
-      {
-        "name": "wreckingball",
-        "label": "follow the money"
-      }
-    ]
-  },
-  {
-    "id": "s82",
-    "type": "stage",
-    "narration": "Because in this game, a dead company isn't a failure. It's just the final, fully-extracted stage of a very successful trade.",
-    "motif": "stripmine",
-    "caption": "a 'successful' deal can still kill the company"
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "narration": "If this made you see dying brands completely differently, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this made the politics of tariffs suddenly make sense, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "store",
+        "name": "cargoship",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s61",
+    "id": "s60",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

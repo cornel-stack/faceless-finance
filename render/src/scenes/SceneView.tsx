@@ -1669,6 +1669,69 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">strip the value, leave the husk</text>
       </svg>
     );
+  } else if (m === "passthrough") {
+    // A tariff slapped on at the border; the cost passes down to the shopper.
+    const step = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 3], clampBoth);
+    const stops = [["foreign factory", 170, "factory"], ["the border +tax", 490, "barrier"], ["you, the shopper", 810, "crowd"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={120} y1={250} x2={860} y2={250} stroke={theme.grid} strokeWidth={4} />
+        {stops.map(([lbl, x], i) => <g key={i}><circle cx={x} cy={250} r={54} fill={i === 2 ? "#fde8e4" : "#fff"} stroke={ink} strokeWidth={5} /><text x={x} y={330} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lbl}</text></g>)}
+        <g transform={`translate(${170 + Math.min(step, 2) / 2 * 640} ${180})`}>
+          <rect x={-46} y={-30} width={92} height={56} rx={8} fill={red} stroke={ink} strokeWidth={4} />
+          <text x={0} y={8} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">TAX</text>
+        </g>
+        {step > 2 && <text x={810} y={250} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" dy={8} opacity={interpolate(frame, [fps * 2.2, fps * 2.6], [0, 1], clampBoth)}>pays it</text>}
+        <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the tariff rolls downhill to you</text>
+      </svg>
+    );
+  } else if (m === "tradewar") {
+    // Two countries lob tariffs at each other — both take hits.
+    const t = (frame % 60) / 60;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(220 260)"><rect x={-70} y={-70} width={140} height={140} rx={12} fill="#eef2ee" stroke={ink} strokeWidth={5} /><text x={0} y={10} fontSize={40} textAnchor="middle">🇺🇸</text><text x={0} y={100} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>country A</text></g>
+        <g transform="translate(760 260)"><rect x={-70} y={-70} width={140} height={140} rx={12} fill="#eef2ee" stroke={ink} strokeWidth={5} /><text x={0} y={10} fontSize={40} textAnchor="middle">🌏</text><text x={0} y={100} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>country B</text></g>
+        <g transform={`translate(${290 + t * 400} ${200 - Math.sin(t * Math.PI) * 60})`}><rect x={-30} y={-18} width={60} height={36} rx={6} fill={red} stroke={ink} strokeWidth={3} /><text x={0} y={7} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle">TAX</text></g>
+        <g transform={`translate(${690 - t * 400} ${320 + Math.sin(t * Math.PI) * 60})`}><rect x={-30} y={-18} width={60} height={36} rx={6} fill={red} stroke={ink} strokeWidth={3} /><text x={0} y={7} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle">TAX</text></g>
+        <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">tit-for-tat — everyone loses</text>
+      </svg>
+    );
+  } else if (m === "customsgate") {
+    // Goods crossing a border get a tax stamped on; a cut goes to the government.
+    const x = interpolate(frame, [6, fps * 1.6], [-120, 760], clampBoth);
+    const stamped = x > 420;
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={430} y={120} width={30} height={300} fill="#8a929a" stroke={ink} strokeWidth={4} />
+        <rect x={430} y={150} width={180} height={28} rx={6} fill={red} stroke={ink} strokeWidth={3} transform="rotate(-8 430 164)" />
+        <text x={520} y={130} fontSize={24} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>customs</text>
+        <g transform={`translate(${x} 300)`}>
+          <rect x={-50} y={-40} width={100} height={80} rx={8} fill={gold} stroke={ink} strokeWidth={5} />
+          <text x={0} y={8} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">📦</text>
+          {stamped && <g transform="rotate(-12)"><rect x={-40} y={-56} width={80} height={26} rx={4} fill="none" stroke={red} strokeWidth={4} /><text x={0} y={-37} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">+TAX</text></g>}
+        </g>
+        <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a tax, stamped on at the border</text>
+      </svg>
+    );
+  } else if (m === "deadweight") {
+    // Supply/demand with a tariff wedge — a triangle of value simply destroyed.
+    const rev = interpolate(frame, [6, fps * 1.4], [0, 1], clampBoth);
+    const wedge = interpolate(frame, [fps * 1.4, fps * 2.4], [0, 1], clampBoth);
+    const ox = 260, oy = 420, w = 500, h = 320;
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={ox - 20} y1={oy} x2={ox + w + 60} y2={oy} stroke={ink} strokeWidth={4} />
+        <RLine x1={ox - 20} y1={oy} x2={ox - 20} y2={oy - h - 30} stroke={ink} strokeWidth={4} />
+        <g opacity={rev}>
+          <RPath d={`M ${ox} ${oy} L ${ox + w} ${oy - h}`} stroke={blue} strokeWidth={6} seed={4} />
+          <RPath d={`M ${ox} ${oy - h} L ${ox + w} ${oy}`} stroke={red} strokeWidth={6} seed={6} />
+        </g>
+        {wedge > 0 && <polygon points={`${ox + w * 0.5},${oy - h * 0.5} ${ox + w * 0.66},${oy - h * 0.34} ${ox + w * 0.66},${oy - h * 0.66}`} fill={red} opacity={wedge * 0.8} />}
+        {wedge > 0.6 && <text x={ox + w * 0.72} y={oy - h * 0.5} fontSize={24} fontWeight={900} fill={red} fontFamily={sans} opacity={wedge}>value lost</text>}
+        <text x={VW / 2} y={480} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the tariff just destroys this value</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

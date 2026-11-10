@@ -41,6 +41,8 @@ export type DoodleName =
   | "faucet"
   // EP025 (private equity) additions:
   | "store" | "wreckingball"
+  // EP026 (tariffs) additions:
+  | "cargoship" | "barrier"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1155,6 +1157,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={50} cy={64} d={32} fill="#3a3f45" strokeWidth={SW} />
           <RCircle cx={44} cy={58} d={7} fill="#6f777d" strokeWidth={1} />
           <RLine x1={24} y1={12} x2={24} y2={30} strokeWidth={3} />
+        </>
+      );
+
+    // ---- EP026 (tariffs) doodles ----
+    case "cargoship":
+      return (
+        <>
+          <RPath d="M14 60 L86 60 L78 80 L22 80 Z" fill={RED} strokeWidth={SW} />
+          <RRect x={30} y={40} w={44} h={20} fill="#3a6ea5" strokeWidth={2} />
+          {[32, 46, 60].map((x, i) => <RRect key={i} x={x} y={42} w={12} h={8} fill={i % 2 ? GOLD : "#cfe3d4"} strokeWidth={1} />)}
+          <RRect x={40} y={28} w={10} h={14} fill="#fff" strokeWidth={1.6} />
+          <path d="M14 70 Q22 64 30 70 Q38 76 46 70 Q54 64 62 70" fill="none" stroke="#3a6ea5" strokeWidth={2} />
+        </>
+      );
+    case "barrier":
+      // A border / customs barrier.
+      return (
+        <>
+          <RRect x={18} y={24} w={64} h={16} fill={RED} strokeWidth={SW} />
+          {[22, 34, 46, 58, 70].map((x, i) => <RLine key={i} x1={x} y1={24} x2={x + 10} y2={40} strokeWidth={2} stroke="#fff" />)}
+          <RLine x1={26} y1={40} x2={26} y2={86} strokeWidth={4} />
+          <RLine x1={74} y1={40} x2={74} y2={86} strokeWidth={4} />
         </>
       );
   }
