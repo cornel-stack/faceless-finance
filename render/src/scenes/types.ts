@@ -104,7 +104,9 @@ export interface StageScene extends Base {
     // EP019 (paycheck-to-paycheck at high income) additions:
     | "treadmill" | "lifestylecreep" | "leakybucket" | "goldenhandcuffs" | "joneses" | "paycheckgone"
     // EP020 (how banks create money) additions:
-    | "keystroke" | "loandeposit" | "moneymultiplier" | "cashvsdigital" | "moneyburn";
+    | "keystroke" | "loandeposit" | "moneymultiplier" | "cashvsdigital" | "moneyburn"
+    // EP021 (IPO dumping ground) additions:
+    | "ipopop" | "bagholder" | "exitramp" | "lockupcliff" | "hotpotato";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

@@ -509,7 +509,7 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const VW = 980, VH = 520;
-  const ink = theme.ink, gold = "#e8b73a", red = theme.accent, green = "#1f7a3d", blue = "#3a6ea5", parch = "#fbf3d9";
+  const ink = theme.ink, gold = "#e8b73a", red = theme.accent, green = "#1f7a3d", blue = "#3a6ea5", parch = "#fbf3d9", tan = "#d8c29a";
   const m = scene.motif;
   const clampBoth = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
   let art: React.ReactNode = null;
@@ -1302,6 +1302,81 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
           {shrink < 0.1 && <text x={0} y={18} fontSize={52} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">$0</text>}
         </g>
         <text x={VW / 2} y={420} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">repay the loan → the money vanishes</text>
+      </svg>
+    );
+  } else if (m === "ipopop") {
+    // IPO day: a sharp first-day pop, then a long fade back down.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.6], [0, 1], clampBoth);
+    const path = "M 80 400 L 150 150 L 240 180 L 360 230 L 480 300 L 600 360 L 740 410 L 880 440";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={70} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={7} seed={5} /></g>
+        {rev > 0.2 && <text x={150} y={120} fontSize={26} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif" opacity={interpolate(frame, [fps * 0.6, fps], [0, 1], clampBoth)}>the pop!</text>}
+        {rev > 0.9 && <text x={760} y={420} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans} opacity={interpolate(frame, [fps * 2.2, fps * 2.6], [0, 1], clampBoth)}>…the fade</text>}
+      </svg>
+    );
+  } else if (m === "bagholder") {
+    // Retail left holding the bag as it deflates.
+    const defl = interpolate(frame, [fps * 1.0, fps * 2.4], [1, 0.4], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 300)`}>
+          <circle cx={0} cy={-150} r={34} fill="#f0cda6" stroke={ink} strokeWidth={4} />
+          <path d="M-40 10 Q-40 -110 0 -110 Q40 -110 40 10" fill={blue} stroke={ink} strokeWidth={4} />
+          <g transform={`translate(0 ${60}) scale(${defl})`}>
+            <path d="M-70 -30 Q-80 60 0 70 Q80 60 70 -30 Q40 -50 0 -50 Q-40 -50 -70 -30 Z" fill={tan} stroke={ink} strokeWidth={5} />
+            <text x={0} y={30} fontSize={44} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          </g>
+        </g>
+        <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">left holding the bag</text>
+      </svg>
+    );
+  } else if (m === "exitramp") {
+    // Insiders stream OUT with cash as retail streams IN to buy.
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={VW / 2 - 70} y={120} width={140} height={300} rx={10} fill="#59707c" stroke={ink} strokeWidth={5} />
+        <rect x={VW / 2 - 46} y={150} width={92} height={250} fill="#cfe6ef" stroke={ink} strokeWidth={3} />
+        <text x={VW / 2} y={108} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>IPO</text>
+        {Array.from({ length: 4 }, (_, i) => { const p = ((frame * 5 + i * 60) % 300) / 300; const x = VW / 2 + 40 + p * 360; const y = 300 + (i % 2) * 36; const op = interpolate(p, [0, 0.1, 0.9, 1], [0, 1, 1, 0]); return <g key={"out" + i} opacity={op} transform={`translate(${x} ${y})`}><circle cx={0} cy={-30} r={14} fill="#f0cda6" stroke={ink} strokeWidth={3} /><path d="M-13 40 Q-13 -4 0 -4 Q13 -4 13 40" fill={green} stroke={ink} strokeWidth={3} /><rect x={14} y={-6} width={18} height={14} fill={gold} stroke={ink} strokeWidth={2} /></g>; })}
+        {Array.from({ length: 4 }, (_, i) => { const p = ((frame * 5 + i * 60) % 300) / 300; const x = 40 + p * (VW / 2 - 120); const y = 300 + (i % 2) * 36; const op = interpolate(p, [0, 0.1, 0.9, 1], [0, 1, 1, 0]); return <g key={"in" + i} opacity={op} transform={`translate(${x} ${y})`}><circle cx={0} cy={-30} r={14} fill="#e8c49a" stroke={ink} strokeWidth={3} /><path d="M-13 40 Q-13 -4 0 -4 Q13 -4 13 40" fill={blue} stroke={ink} strokeWidth={3} /></g>; })}
+        <text x={VW / 4} y={470} fontSize={24} fontWeight={900} fill={blue} textAnchor="middle" fontFamily={sans}>retail buys in</text>
+        <text x={VW * 0.75} y={470} fontSize={24} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>insiders cash out</text>
+      </svg>
+    );
+  } else if (m === "lockupcliff") {
+    // The price holds flat during the lock-up, then falls off a cliff when it expires.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const path = "M 80 200 L 520 200 L 560 210 L 640 320 L 740 400 L 880 430";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={70} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <line x1={540} y1={120} x2={540} y2={440} stroke={theme.inkSoft} strokeWidth={3} strokeDasharray="7 7" />
+        <text x={540} y={110} fontSize={24} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>lock-up ends</text>
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={7} seed={4} /></g>
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">insiders can finally sell</text>
+      </svg>
+    );
+  } else if (m === "hotpotato") {
+    // Greater-fool: an overpriced asset tossed to the next buyer, until someone's stuck.
+    const hop = Math.floor(interpolate(frame, [0, fps * 2.6], [0, 4], clampBoth));
+    const xs = [220, 400, 580, 760];
+    const px = xs[Math.min(3, hop)];
+    const arc = Math.abs(Math.sin(frame * 0.4)) * 60;
+    art = (
+      <svg width={VW} height={VH}>
+        {xs.map((x, i) => <g key={i} transform={`translate(${x} 360)`}><circle cx={0} cy={-30} r={18} fill={i <= hop ? "#e8c49a" : "#f0cda6"} stroke={ink} strokeWidth={3} /><path d="M-16 50 Q-16 -6 0 -6 Q16 -6 16 50" fill={[blue, green, red, "#8a5a2b"][i]} stroke={ink} strokeWidth={3} /></g>)}
+        <g transform={`translate(${px} ${300 - arc})`}>
+          <circle cx={0} cy={0} r={30} fill={red} stroke={ink} strokeWidth={4} />
+          <text x={0} y={10} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </g>
+        {hop >= 3 && <text x={760} y={300} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={interpolate(frame, [fps * 2.4, fps * 2.8], [0, 1], clampBoth)}>stuck!</text>}
+        <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">pass it to a greater fool</text>
       </svg>
     );
   } else {

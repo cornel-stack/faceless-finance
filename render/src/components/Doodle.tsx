@@ -31,6 +31,8 @@ export type DoodleName =
   | "car" | "briefcase" | "bucket" | "dining"
   // EP020 (banks create money) additions:
   | "keyboard" | "ledger"
+  // EP021 (IPO dumping ground) additions:
+  | "bell" | "prospectus"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1045,6 +1047,29 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={54} y1={34} x2={78} y2={34} strokeWidth={1.8} />
           <text x={34} y={56} fontSize={14} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">+</text>
           <text x={66} y={56} fontSize={14} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">−</text>
+        </>
+      );
+
+    // ---- EP021 (IPO dumping ground) doodles ----
+    case "bell":
+      // The opening/closing bell rung at an IPO.
+      return (
+        <>
+          <RPath d="M34 40 Q34 24 50 24 Q66 24 66 40 L70 70 L30 70 Z" fill={GOLD} strokeWidth={SW} />
+          <RLine x1={50} y1={18} x2={50} y2={24} strokeWidth={3} />
+          <RCircle cx={50} cy={16} d={6} fill={GOLD} strokeWidth={2} />
+          <RRect x={26} y={70} w={48} h={8} fill={GOLD} strokeWidth={2} />
+          <RCircle cx={50} cy={78} d={8} fill={INK} fillStyle="solid" strokeWidth={1.4} />
+        </>
+      );
+    case "prospectus":
+      // The glossy IPO disclosure document.
+      return (
+        <>
+          <RRect x={24} y={16} w={52} h={70} fill="#fff" strokeWidth={SW} />
+          <RRect x={24} y={16} w={52} h={18} fill="#3a6ea5" strokeWidth={1.6} />
+          <text x={50} y={30} fontSize={11} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">IPO</text>
+          {[44, 52, 60, 68, 76].map((y, i) => <RLine key={i} x1={32} y1={y} x2={68} y2={y} strokeWidth={1.6} />)}
         </>
       );
   }
