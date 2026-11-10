@@ -1220,6 +1220,90 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         {eaten > 0.9 && <text x={VW / 2} y={200} fontSize={40} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={interpolate(frame, [fps * 2.3, fps * 2.7], [0, 1], clampBoth)}>$0 left</text>}
       </svg>
     );
+  } else if (m === "keystroke") {
+    // A banker types, and a deposit number simply appears from nothing.
+    const typed = interpolate(frame, [fps * 0.6, fps * 1.6], [0, 100000], clampBoth);
+    const pop = spring({ frame, fps, delay: fps * 1.6, config: { damping: 12 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <RRect x={VW / 2 - 150} y={340} w={300} h={70} fill="#2b2f33" strokeWidth={5} />
+        {[0, 1, 2].map((r) => [0, 1, 2, 3, 4, 5, 6].map((c) => <rect key={`${r}-${c}`} x={VW / 2 - 132 + c * 38} y={352 + r * 18} width={26} height={12} rx={3} fill="#e8edf0" />))}
+        <g transform={`translate(${VW / 2} 200) scale(${0.6 + pop * 0.4})`} opacity={interpolate(frame, [fps * 0.6, fps], [0, 1], clampBoth)}>
+          <rect x={-210} y={-60} width={420} height={120} rx={14} fill="#eaf4ec" stroke={ink} strokeWidth={5} />
+          <text x={0} y={-6} fontSize={30} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>YOUR ACCOUNT</text>
+          <text x={0} y={44} fontSize={56} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">${Math.round(typed).toLocaleString("en-US")}</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">created with a keystroke</text>
+      </svg>
+    );
+  } else if (m === "loandeposit") {
+    // Double entry: a loan (asset) and a brand-new deposit (liability) appear together.
+    const a = spring({ frame, fps, delay: fps * 0.6, config: { damping: 13 } });
+    const b = spring({ frame, fps, delay: fps * 1.3, config: { damping: 13 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={90} fontSize={30} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the bank's ledger — one click</text>
+        <g transform={`translate(260 270) scale(${a})`}>
+          <rect x={-150} y={-80} width={300} height={160} rx={12} fill="#fff" stroke={ink} strokeWidth={5} />
+          <text x={0} y={-36} fontSize={26} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>ASSET</text>
+          <text x={0} y={16} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your loan</text>
+          <text x={0} y={60} fontSize={30} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">+$100,000</text>
+        </g>
+        <g transform={`translate(720 270) scale(${b})`}>
+          <rect x={-150} y={-80} width={300} height={160} rx={12} fill="#eaf4ec" stroke={ink} strokeWidth={5} />
+          <text x={0} y={-36} fontSize={26} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>LIABILITY</text>
+          <text x={0} y={16} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your deposit</text>
+          <text x={0} y={60} fontSize={30} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">+$100,000</text>
+        </g>
+        {b > 0.5 && <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={interpolate(b, [0.5, 1], [0, 1])}>new money — out of nothing</text>}
+      </svg>
+    );
+  } else if (m === "moneymultiplier") {
+    // One deposit spawns a cascade of smaller loans → deposits.
+    const rows = [[490], [330, 650], [250, 430, 570, 730]];
+    art = (
+      <svg width={VW} height={VH}>
+        {rows.map((row, r) => row.map((x, i) => {
+          const on = spring({ frame, fps, delay: fps * (0.5 + r * 0.6) + i * 3, config: { damping: 13 } });
+          const size = 60 - r * 12;
+          return <g key={`${r}-${i}`} transform={`translate(${x} ${140 + r * 120}) scale(${on})`}><circle cx={0} cy={0} r={size} fill={gold} stroke={ink} strokeWidth={4} /><text x={0} y={size * 0.3} fontSize={size * 0.8} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>;
+        }))}
+        <text x={VW / 2} y={490} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">each deposit funds the next loan</text>
+      </svg>
+    );
+  } else if (m === "cashvsdigital") {
+    // ~3% of money is physical cash; ~97% is digits in bank computers.
+    const grow = interpolate(frame, [fps * 0.6, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(230 360)">
+          <circle cx={0} cy={0} r={46} fill={gold} stroke={ink} strokeWidth={4} />
+          <text x={0} y={12} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <text x={0} y={90} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>3% cash</text>
+        </g>
+        <g transform="translate(650 360)">
+          <rect x={-150} y={-320 * grow} width={300} height={320 * grow} rx={10} fill={green} stroke={ink} strokeWidth={4} />
+          <text x={0} y={90} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>97% digital</text>
+          {grow > 0.6 && <text x={0} y={-320 * grow + 50} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">0100101</text>}
+        </g>
+      </svg>
+    );
+  } else if (m === "moneyburn") {
+    // Repaying the loan destroys the money — the deposit shrinks back to zero.
+    const shrink = interpolate(frame, [fps * 0.6, fps * 2.2], [1, 0], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 250)`}>
+          <rect x={-200} y={-70} width={400} height={140} rx={14} fill="none" stroke={ink} strokeWidth={4} strokeDasharray="8 8" />
+          <g opacity={shrink} transform={`scale(${0.3 + shrink * 0.7})`}>
+            <rect x={-200} y={-70} width={400} height={140} rx={14} fill="#eaf4ec" stroke={ink} strokeWidth={5} />
+            <text x={0} y={18} fontSize={52} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">${Math.round(100000 * shrink).toLocaleString("en-US")}</text>
+          </g>
+          {shrink < 0.1 && <text x={0} y={18} fontSize={52} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">$0</text>}
+        </g>
+        <text x={VW / 2} y={420} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">repay the loan → the money vanishes</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

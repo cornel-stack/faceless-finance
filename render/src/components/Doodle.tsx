@@ -29,6 +29,8 @@ export type DoodleName =
   | "ladder" | "receipt" | "gradcap"
   // EP019 (lifestyle creep) additions:
   | "car" | "briefcase" | "bucket" | "dining"
+  // EP020 (banks create money) additions:
+  | "keyboard" | "ledger"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1022,6 +1024,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={16} y1={30} x2={16} y2={78} strokeWidth={3} />
           <RLine x1={88} y1={30} x2={88} y2={78} strokeWidth={3} />
           <RPath d="M12 30 L12 44 M20 30 L20 44" fill="none" strokeWidth={2.4} />
+        </>
+      );
+
+    // ---- EP020 (banks create money) doodles ----
+    case "keyboard":
+      return (
+        <>
+          <RRect x={14} y={40} w={72} h={40} fill="#2b2f33" strokeWidth={SW} />
+          {[0, 1, 2].map((r) => [0, 1, 2, 3, 4].map((c) => <RRect key={`${r}-${c}`} x={22 + c * 13} y={46 + r * 10} w={9} h={7} fill="#e8edf0" strokeWidth={1} />))}
+          <text x={50} y={34} fontSize={18} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">+$</text>
+        </>
+      );
+    case "ledger":
+      return (
+        <>
+          <RRect x={18} y={20} w={64} h={62} fill="#fff" strokeWidth={SW} />
+          <RLine x1={50} y1={22} x2={50} y2={80} strokeWidth={2.4} />
+          <RLine x1={22} y1={34} x2={46} y2={34} strokeWidth={1.8} />
+          <RLine x1={54} y1={34} x2={78} y2={34} strokeWidth={1.8} />
+          <text x={34} y={56} fontSize={14} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">+</text>
+          <text x={66} y={56} fontSize={14} fontWeight={900} fill={RED} textAnchor="middle" fontFamily="Georgia, serif">−</text>
         </>
       );
   }

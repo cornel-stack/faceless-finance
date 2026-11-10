@@ -102,7 +102,9 @@ export interface StageScene extends Base {
     // EP018 (middle class) additions:
     | "hollowout" | "squeeze" | "ladderbreak" | "twoincome" | "shrinkpie" | "escalator"
     // EP019 (paycheck-to-paycheck at high income) additions:
-    | "treadmill" | "lifestylecreep" | "leakybucket" | "goldenhandcuffs" | "joneses" | "paycheckgone";
+    | "treadmill" | "lifestylecreep" | "leakybucket" | "goldenhandcuffs" | "joneses" | "paycheckgone"
+    // EP020 (how banks create money) additions:
+    | "keystroke" | "loandeposit" | "moneymultiplier" | "cashvsdigital" | "moneyburn";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
