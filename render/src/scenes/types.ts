@@ -122,7 +122,9 @@ export interface StageScene extends Base {
     // EP028 (inflation) additions:
     | "basketprice" | "demandpull" | "costpush" | "erode" | "shrinkflation"
     // EP029 (weaker currencies) additions:
-    | "exportboost" | "devalue" | "currencywar" | "tourismboost";
+    | "exportboost" | "devalue" | "currencywar" | "tourismboost"
+    // EP030 (crypto) additions:
+    | "zerosum" | "numbergoup" | "rugpull" | "miningburn";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

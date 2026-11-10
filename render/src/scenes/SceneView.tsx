@@ -1929,6 +1929,74 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a cheap currency fills the country with visitors</text>
       </svg>
     );
+  } else if (m === "zerosum") {
+    // Two players: one wins, one loses — and the house rakes a cut off the top.
+    const tilt = interpolate(frame, [fps * 0.6, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(260 300)">
+          <circle cx={0} cy={-30 - tilt * 60} r={56} fill={green} stroke={ink} strokeWidth={5} />
+          <text x={0} y={-22 - tilt * 60} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">win</text>
+          <text x={0} y={70} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>one buyer</text>
+        </g>
+        <g transform="translate(720 300)">
+          <circle cx={0} cy={-30 + tilt * 60} r={56} fill={red} stroke={ink} strokeWidth={5} />
+          <text x={0} y={-22 + tilt * 60} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">lose</text>
+          <text x={0} y={70} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>one seller</text>
+        </g>
+        <g transform="translate(490 150)" opacity={tilt}>
+          <rect x={-70} y={-34} width={140} height={60} rx={8} fill={ink} />
+          <text x={0} y={6} fontSize={24} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">the rake</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your gain is someone's loss — minus the rake</text>
+      </svg>
+    );
+  } else if (m === "numbergoup") {
+    // A coin chart rocketing up on pure belief… then snapping down.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.6], [0, 1], clampBoth);
+    const path = "M 90 400 L 220 360 L 340 300 L 440 160 L 520 70 L 600 260 L 740 400 L 880 440";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={gold} strokeWidth={7} seed={5} /></g>
+        {rev > 0.45 && rev < 0.75 && <text x={520} y={50} fontSize={30} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">↑ to the moon</text>}
+        {rev > 0.85 && <text x={790} y={420} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">…and back</text>}
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">"number go up" — on belief alone</text>
+      </svg>
+    );
+  } else if (m === "rugpull") {
+    // The rug is yanked out and the holders fall.
+    const pull = interpolate(frame, [fps * 1.0, fps * 1.5], [0, 1], clampBoth);
+    const fall = interpolate(frame, [fps * 1.4, fps * 2.3], [0, 230], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} ${230 + fall}) rotate(${fall * 0.1})`} opacity={1 - pull * 0.1}>
+          <circle cx={0} cy={0} r={60} fill={gold} stroke={ink} strokeWidth={5} />
+          <text x={0} y={18} fontSize={50} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">₿</text>
+        </g>
+        <g transform={`translate(${VW / 2 + 260 * pull} 360)`} opacity={pull}>
+          <rect x={-80} y={-10} width={160} height={22} rx={6} fill={red} stroke={ink} strokeWidth={3} transform={`skewX(-20)`} />
+          <text x={0} y={46} fontSize={20} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the rug</text>
+        </g>
+        {fall > 150 && <text x={VW / 2} y={200} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">rug pull</text>}
+        <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">founders vanish, holders crash</text>
+      </svg>
+    );
+  } else if (m === "miningburn") {
+    // Mountains of electricity burned to mint a coin.
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 300)">
+          {[0, 1, 2].map((i) => <g key={i}><rect x={-80 + i * 60} y={-40} width={44} height={110} rx={4} fill="#2b2f33" stroke={ink} strokeWidth={3} />{[0, 1, 2].map((r) => <rect key={r} x={-74 + i * 60} y={-30 + r * 32} width={32} height={10} fill="#454b50" />)}</g>)}
+          {Array.from({ length: 5 }, (_, i) => { const p = ((frame * 6 + i * 36) % 180) / 180; const y = -40 - p * 110; const op = interpolate(p, [0, 0.2, 1], [0.9, 0.6, 0]); return <path key={i} d={`M${-70 + i * 32} ${y} q10 -14 0 -26`} fill="none" stroke="#c7c2b6" strokeWidth={6} opacity={op} strokeLinecap="round" />; })}
+        </g>
+        <path d="M520 300 l60 0 m0 0 l-16 -12 m16 12 l-16 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(720 300)"><circle cx={0} cy={0} r={56} fill={gold} stroke={ink} strokeWidth={5} /><text x={0} y={18} fontSize={46} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">₿</text></g>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">a country's worth of power, for one coin</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

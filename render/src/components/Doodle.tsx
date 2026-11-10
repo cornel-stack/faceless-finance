@@ -49,6 +49,8 @@ export type DoodleName =
   | "thermometer"
   // EP029 (weaker currencies) additions:
   | "luggage"
+  // EP030 (crypto) additions:
+  | "pickaxe"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1221,6 +1223,18 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={26} y1={50} x2={74} y2={50} strokeWidth={2} />
           <RRect x={44} y={44} w={12} h={10} fill={GOLD} strokeWidth={1.4} />
           <text x={50} y={74} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">✈</text>
+        </>
+      );
+
+    // ---- EP030 (crypto) doodles ----
+    case "pickaxe":
+      // Crypto mining.
+      return (
+        <>
+          <RLine x1={30} y1={82} x2={70} y2={28} strokeWidth={5} />
+          <RPath d="M44 20 Q62 10 82 24 Q62 22 50 36 Z" fill="#8a929a" strokeWidth={SW} />
+          <RCircle cx={34} cy={74} d={16} fill={GOLD} strokeWidth={2} />
+          <text x={34} y={80} fontSize={14} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">₿</text>
         </>
       );
   }
