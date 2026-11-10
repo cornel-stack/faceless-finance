@@ -35,6 +35,8 @@ export type DoodleName =
   | "bell" | "prospectus"
   // EP022 (AI bubble) additions:
   | "server" | "brain"
+  // EP023 (war & markets) additions:
+  | "jet" | "shield"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1091,6 +1093,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M34 40 Q28 24 44 24 Q50 16 58 24 Q74 24 68 40 Q76 54 64 60 Q58 72 46 64 Q30 64 32 50 Q26 46 34 40 Z" fill={PINK} strokeWidth={SW} />
           <RPath d="M50 26 L50 64 M42 36 L58 36 M40 50 L60 50" fill="none" strokeWidth={1.8} />
           {[[40, 70], [50, 74], [60, 70]].map(([x, y], i) => <RCircle key={i} cx={x} cy={y} d={4} fill={INK} fillStyle="solid" strokeWidth={1} />)}
+        </>
+      );
+
+    // ---- EP023 (war & markets) doodles ----
+    case "jet":
+      // A fighter jet — the defense industry.
+      return (
+        <>
+          <RPath d="M12 54 L64 48 L84 50 L64 56 Z" fill="#8a929a" strokeWidth={SW} />
+          <RPath d="M40 50 L54 30 L60 30 L50 50 Z" fill="#8a929a" strokeWidth={2} />
+          <RPath d="M40 54 L54 74 L60 74 L50 54 Z" fill="#8a929a" strokeWidth={2} />
+          <RPath d="M20 52 L30 44 L34 45 L28 53 Z" fill="#6f777d" strokeWidth={1.6} />
+          <RCircle cx={70} cy={51} d={5} fill="#bcd3e0" strokeWidth={1.4} />
+        </>
+      );
+    case "shield":
+      // Safe haven / flight-to-safety.
+      return (
+        <>
+          <RPath d="M50 14 L82 24 L78 58 Q50 88 50 88 Q22 58 22 24 Z" fill="#3a6ea5" strokeWidth={SW} />
+          <RPath d="M50 22 L74 30 L71 56 Q50 78 50 78 Q29 56 29 30 Z" fill="#5a8fc8" strokeWidth={1.4} />
+          <path d="M40 48 L47 58 L62 36" fill="none" stroke="#fff" strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
         </>
       );
   }

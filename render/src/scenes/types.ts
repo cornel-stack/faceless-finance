@@ -108,7 +108,9 @@ export interface StageScene extends Base {
     // EP021 (IPO dumping ground) additions:
     | "ipopop" | "bagholder" | "exitramp" | "lockupcliff" | "hotpotato"
     // EP022 (AI bubble on hidden debt) additions:
-    | "circularfinance" | "iceberg" | "capexfurnace" | "gpudecay" | "bubbledebt";
+    | "circularfinance" | "iceberg" | "capexfurnace" | "gpudecay" | "bubbledebt"
+    // EP023 (why stocks go up in war) additions:
+    | "warboom" | "priceddip" | "safehaven" | "survivorship" | "marketvsreality";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

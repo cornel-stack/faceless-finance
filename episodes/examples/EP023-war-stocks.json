@@ -1,0 +1,1064 @@
+{
+  "id": "EP023",
+  "series": "Napkin Numbers",
+  "title": "If War Is Bad, Why Do Stocks Go Up?",
+  "slug": "if-war-is-bad-why-do-stocks-go-up",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP023 — explainer (By the Numbers, row 13). Why markets often rise in war: pricing expectations, war spending, market≠country, inflation, survivorship bias, the moral gap. Free memes; 5 new motifs (warboom, priceddip, safehaven, survivorship, marketvsreality). Target 12–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "A war breaks out. The headlines are horrifying — death, destruction, chaos, uncertainty. Every instinct says the stock market should crash.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "war breaks out"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "stage",
+      "narration": "And then, bafflingly, it often does the opposite. Bombs fall in the news — and the market quietly climbs.",
+      "motif": "warboom",
+      "caption": "war in the news, stocks going up"
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "narration": "It feels obscene, almost impossible. How can markets rise while the world is on fire?",
+      "src": "img/memes/thisisfine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "the world: on fire",
+      "memeBottom": "the stock market: all-time high"
+    },
+    {
+      "id": "s4",
+      "type": "callout",
+      "narration": "History is full of it. The darkest years of the twentieth century also contained some of the stock market's strongest runs.",
+      "text": "war ≠ crash",
+      "sub": "markets often rose through conflict",
+      "icon": "chartup"
+    },
+    {
+      "id": "s59",
+      "type": "image",
+      "narration": "It happens so reliably it's almost a rule. The grimmer the century, the more defiant the chart often looks in hindsight.",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "'war should crash stocks'",
+      "memeBottom": "markets: new all-time high"
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "During the Second World War, American stocks delivered strong gains. Through Korea, Vietnam, and the Gulf, the market kept grinding higher. Again and again, the chart refused to reflect the horror.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "war after war"
+        },
+        {
+          "name": "chartup",
+          "label": "…markets climbed"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "character",
+      "narration": "So what's going on? Is the market just evil? The real answer is stranger — and it tells you something unsettling about what the stock market actually measures.",
+      "pose": "think",
+      "bubble": "is the market evil?"
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "So let's untangle the most uncomfortable paradox in finance — why the market can rise while the world burns.",
+      "heading": "If War Is Bad, Why Do Stocks Go Up?",
+      "kicker": "the market vs the world",
+      "sub": "The market measures profit — not suffering."
+    },
+    {
+      "id": "s7",
+      "type": "character",
+      "narration": "The first key is that the stock market is not a thermometer for today. It's a betting machine on tomorrow.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "it prices the future"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "In theory, prices already reflect all the information everyone has. Today's price is really a guess about future profits.",
+      "sourceId": "wiki-emh"
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "Investors even have a phrase for it. Markets 'climb a wall of worry' — rising precisely while the news stays frightening, as long as future profits still look intact.",
+      "pose": "explain",
+      "bubble": "a wall of worry",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "fear high, prices higher"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "So markets hate one thing above all else: uncertainty. Not bad news — unknown news. A fog they can't price.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the enemy: uncertainty"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "And here's the twist. When a war that everyone feared finally begins, it can actually remove uncertainty. The dreaded unknown becomes a known.",
+      "motif": "priceddip",
+      "caption": "the shock, then 'priced in'"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Traders have a cold little saying for it. 'Buy the invasion, sell the ceasefire.' The worst moment for markets is often the waiting — not the event.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ticker",
+          "label": "\"buy the invasion\""
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "So a market can dip on the first shock, then recover within days as it digests the news, prices in the likely outcome, and moves on. The headlines stay grim. The chart stops caring.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "dip…"
+        },
+        {
+          "name": "chartup",
+          "label": "…then recover"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "stage",
+      "narration": "Study the great shocks and you keep seeing the same shape: a sharp drop as the event hits, then a climb as the market decides it can finally price whatever comes next.",
+      "motif": "priceddip",
+      "caption": "the dreaded unknown, resolved"
+    },
+    {
+      "id": "s79",
+      "type": "stage",
+      "narration": "Different war, different decade — the same strange split. Suffering in the headlines; green on the screen.",
+      "motif": "warboom",
+      "caption": "the paradox, on repeat"
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "The second key is bigger, and more uncomfortable. War is one of the most powerful economic stimulus programs ever invented.",
+      "heading": "War Is a Spending Machine",
+      "kicker": "the grim stimulus"
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "narration": "In wartime, a government reorganizes the whole economy around one goal: producing for the war.",
+      "sourceId": "wiki-wareconomy"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "It pulls the biggest lever it has — fiscal policy — spending staggering sums to influence the economy.",
+      "sourceId": "wiki-fiscal"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "Factories run around the clock. Unemployment vanishes as everyone is put to work. Government orders pour into private companies.",
+      "motif": "warboom",
+      "caption": "spending floods into industry"
+    },
+    {
+      "id": "s17",
+      "type": "callout",
+      "narration": "The clearest example: the Great Depression didn't end with a clever policy. For many economies, it ended when the Second World War forced colossal government spending.",
+      "text": "WWII",
+      "sub": "the spending that ended the Depression",
+      "icon": "factory"
+    },
+    {
+      "id": "s63",
+      "type": "callout",
+      "narration": "American unemployment, over twenty percent during the Depression, collapsed to almost nothing as the war machine demanded every available worker.",
+      "text": "~2%",
+      "sub": "US unemployment by the mid-1940s",
+      "icon": "factory"
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "It's a grim lesson economists still argue over. The thing that finally cured mass unemployment wasn't a clever program. It was total war.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "a brutal 'fix'"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "narration": "And one industry profits directly and enormously — the arms industry, which builds and sells the weapons.",
+      "sourceId": "wiki-arms"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "Tanks, jets, ships, missiles, ammunition — all bought by the government, all built by listed companies, all booked as record revenue and profit.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "jet",
+          "label": "defense orders"
+        },
+        {
+          "name": "chartup",
+          "label": "…record profits"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "screenshot",
+      "narration": "Economists even have a name for the cozy, permanent bond this creates between the state and its weapons-makers.",
+      "sourceId": "wiki-mic"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "So from the market's cold point of view, a war can look like a firehose of guaranteed government contracts aimed straight at corporate earnings.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "gov't orders"
+        },
+        {
+          "name": "coins",
+          "label": "→ corporate profit"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "image",
+      "narration": "For the companies that build the weapons, a war is the ultimate customer: deep-pocketed, urgent, and politically guaranteed.",
+      "src": "img/memes/distracted.jpg",
+      "meme": "Distracted Boyfriend",
+      "memeBottom": "governments funneling billions to defense firms"
+    },
+    {
+      "id": "s66",
+      "type": "callout",
+      "narration": "The US alone now spends over eight hundred billion dollars a year on defense — a permanent river of revenue flowing to a handful of listed companies.",
+      "text": "$800B+",
+      "sub": "US annual military budget",
+      "icon": "jet"
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Which brings us to the third, and most important, idea of the whole video.",
+      "heading": "The Market Is Not the Country",
+      "kicker": "three different things"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "We constantly blur three very different things together: the country, the economy, and the stock market. They are not the same — and in a war, they can split violently apart.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "country"
+        },
+        {
+          "name": "bank",
+          "label": "economy"
+        },
+        {
+          "name": "ticker",
+          "label": "market"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "narration": "A stock market is just the combined value of ownership claims on a set of businesses. Nothing more.",
+      "sourceId": "wiki-stockmarket"
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "It doesn't measure suffering. It doesn't measure justice, or lives lost, or cities flattened. It measures the expected future profits of a specific list of companies.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "ticker",
+          "label": "profits, not pain"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "So you can have a bombed-out country and a booming index at the very same time — because the index is tracking the companies, not the craters.",
+      "motif": "marketvsreality",
+      "caption": "the country ≠ the market"
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "And geography matters enormously. For most of the last century, the biggest market — America's — watched its wars happen somewhere else, an ocean away from its factories.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "war is 'over there'"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "Its industries weren't bombed. They were the arsenal — selling to everyone, rebuilding everything afterward. War was, bluntly, good for the American corporate balance sheet.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "factory",
+          "label": "the arsenal"
+        },
+        {
+          "name": "chartup",
+          "label": "…untouched & paid"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "On top of that, when the world gets scary, global money doesn't vanish — it flees to wherever feels safest.",
+      "sourceId": "wiki-flight"
+    },
+    {
+      "id": "s30",
+      "type": "stage",
+      "narration": "And for decades, 'safest' has meant US dollars, US treasuries, and US stocks. So global fear can actually pump money into the very market you'd expect to fall.",
+      "motif": "safehaven",
+      "caption": "fear flows to the safe haven"
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "There's a brutal upside for the victor, too: reconstruction. Someone has to rebuild the roads, the factories, the cities — and those vast contracts go straight to companies.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crane",
+          "label": "rebuild everything"
+        },
+        {
+          "name": "coins",
+          "label": "…huge contracts"
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "type": "stage",
+      "narration": "War also disrupts oil, food, and metals, so their prices spike — devastating for ordinary consumers, but a windfall for the energy and commodity giants that dominate the index.",
+      "icons": [
+        "oilbarrel",
+        "chartup"
+      ],
+      "caption": "war spikes commodity prices"
+    },
+    {
+      "id": "s69",
+      "type": "character",
+      "narration": "So the market isn't one thing. In a war, some sectors crater while defense, energy, and industrials boom — and those winners can haul the whole index higher.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "jet",
+          "label": "winners boom"
+        },
+        {
+          "name": "chartup",
+          "label": "…pull the index up"
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "type": "character",
+      "narration": "And a few giant defense 'primes' capture most of it. The moment a conflict begins, their order books fill up for years.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "jet",
+          "label": "the 'primes'"
+        },
+        {
+          "name": "calendar",
+          "label": "…years of orders"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "There's a fourth force at work too — a quieter, sneakier one. Money itself.",
+      "heading": "The Inflation Illusion",
+      "kicker": "nominal vs real"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Wars are almost always paid for with borrowed and freshly printed money. Governments flood the system with cash to fund the fight.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "printer",
+          "label": "print to pay for war"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "stage",
+      "narration": "More money sloshing around means each dollar is worth a little less — and the price of almost everything drifts upward.",
+      "motif": "printmoney",
+      "caption": "more money, higher prices"
+    },
+    {
+      "id": "s34",
+      "type": "screenshot",
+      "narration": "That's inflation — a general rise in prices. And stocks are claims on real companies, real factories, real assets.",
+      "sourceId": "wiki-inflation"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "So as money loses value, the nominal price of those real assets tends to rise. The stock number goes up — even if, in real terms, you're not actually richer.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "number goes up"
+        },
+        {
+          "name": "warning",
+          "label": "…but is it real?"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "It's a kind of money illusion. A market can hit record highs in dollars, while those dollars quietly buy less and less. Rising, and poorer, at the same time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "record highs…"
+        },
+        {
+          "name": "pricetag",
+          "label": "…worth less"
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "type": "chart",
+      "narration": "Look at the 1970s. In dollars, the market looked like it drifted higher. But adjust for the raging inflation, and investors were quietly going backwards.",
+      "chartType": "line",
+      "title": "Stocks in the 1970s: up in name only",
+      "data": [
+        {
+          "label": "'66",
+          "value": 100
+        },
+        {
+          "label": "'72",
+          "value": 110
+        },
+        {
+          "label": "'78",
+          "value": 120
+        },
+        {
+          "label": "'82",
+          "value": 130
+        }
+      ],
+      "series2": [
+        {
+          "label": "'66",
+          "value": 100
+        },
+        {
+          "label": "'72",
+          "value": 86
+        },
+        {
+          "label": "'78",
+          "value": 66
+        },
+        {
+          "label": "'82",
+          "value": 56
+        }
+      ],
+      "seriesLabels": [
+        "in dollars",
+        "after inflation"
+      ],
+      "note": "flat in name, down for real",
+      "noteAt": 3
+    },
+    {
+      "id": "s71",
+      "type": "character",
+      "narration": "Over that decade the market looked flat — but after inflation, investors lost nearly half their real wealth. The number told a comforting lie.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "flat in $"
+        },
+        {
+          "name": "chartdown",
+          "label": "…down in real"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "title",
+      "narration": "But here's the most important caveat of all — and the one almost nobody mentions. We're only looking at the winners.",
+      "heading": "Survivorship Bias",
+      "kicker": "the graves off the chart"
+    },
+    {
+      "id": "s38",
+      "type": "screenshot",
+      "narration": "There's a famous statistical trap called survivorship bias — drawing conclusions only from the things that made it through, while ignoring everything that didn't.",
+      "sourceId": "wiki-survivorship"
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "When we say 'stocks go up in wars,' we're almost always looking at the American market. The one that won, and was never invaded.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "flagUS",
+          "label": "the winner's chart"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "stage",
+      "narration": "But plot all the markets, and the picture is brutal. Most of the lines you'd want to show… simply end. They go to zero.",
+      "motif": "survivorship",
+      "caption": "most markets didn't survive"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "If you held stocks in Germany or Japan in 1945, or in Russia in 1917, your market didn't dip and recover. It was wiped out entirely. Shareholders lost everything.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "wiped to zero"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "So 'markets go up in war' really means 'the markets of the countries that won, and were never bombed, went up.' That's a very different, much darker sentence.",
+      "text": "the winners' tale",
+      "sub": "we only plot the survivors",
+      "icon": "warning"
+    },
+    {
+      "id": "s43",
+      "type": "image",
+      "narration": "The cheerful chart of resilient markets is missing every market that got erased. The graves are just off-screen.",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "'stocks always recover' is survivorship bias"
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "And it isn't only shareholders. In the markets that collapsed, the bondholders — the supposedly 'safe' investors — were often wiped out too, as a losing government's debt turned to worthless paper.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bond",
+          "label": "'safe' bonds"
+        },
+        {
+          "name": "warning",
+          "label": "…also to zero"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "stage",
+      "narration": "Across the twentieth century, several major stock markets were effectively reset to zero at least once. Those permanent losses never make it into the cheerful long-run chart.",
+      "motif": "survivorship",
+      "caption": "countless markets, reset to zero"
+    },
+    {
+      "id": "s74",
+      "type": "character",
+      "narration": "Which raises the question the survivors' chart never asks. What happens to your portfolio if the war isn't an ocean away — but at home?",
+      "pose": "think",
+      "bubble": "…and if it's YOUR country?"
+    },
+    {
+      "id": "s44",
+      "type": "title",
+      "narration": "So, put the pieces together, and the uncomfortable logic snaps into place.",
+      "heading": "The Cold Logic",
+      "kicker": "why the chart rises"
+    },
+    {
+      "id": "s45",
+      "type": "chalkboard",
+      "narration": "Markets price the future, not the horror. War means huge spending and profits. The market tracks companies, not the country. Inflation lifts the number. And we only ever see the survivors.",
+      "lines": [
+        "prices the future, not the horror",
+        "war = spending + profits",
+        "market ≠ the country",
+        "inflation lifts the number",
+        "…and we only see survivors"
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "None of that means war is 'good.' It means the stock market is simply measuring something completely different from human welfare — and we keep mistaking one for the other.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "profit ≠ welfare"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "stage",
+      "narration": "There's an old, bitter phrase from a decorated general who turned against it all: 'War is a racket.' A business, in which a few profit enormously, and the many pay the true cost.",
+      "icons": [
+        "jet",
+        "coins"
+      ],
+      "caption": "\"war is a racket\""
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "The soldiers and civilians pay in blood. The taxpayer pays in debt. And a narrow slice of shareholders, often, get paid in dividends.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "the many pay"
+        },
+        {
+          "name": "moneybag",
+          "label": "…the few profit"
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "type": "diagram",
+      "narration": "Look at the whole ledger of a war. The costs and the profits land on completely different people.",
+      "title": "Who pays, who profits",
+      "nodes": [
+        {
+          "id": "blood",
+          "label": "pay in blood",
+          "icon": "crowd",
+          "x": 0.18,
+          "y": 0.3
+        },
+        {
+          "id": "tax",
+          "label": "pay in taxes",
+          "icon": "taxform",
+          "x": 0.18,
+          "y": 0.74
+        },
+        {
+          "id": "war",
+          "label": "the war",
+          "icon": "bomb",
+          "x": 0.52,
+          "y": 0.52
+        },
+        {
+          "id": "profit",
+          "label": "paid in profit",
+          "icon": "moneybag",
+          "x": 0.85,
+          "y": 0.52
+        }
+      ],
+      "edges": [
+        {
+          "from": "blood",
+          "to": "war"
+        },
+        {
+          "from": "tax",
+          "to": "war"
+        },
+        {
+          "from": "war",
+          "to": "profit"
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "type": "character",
+      "narration": "It's the oldest asymmetry there is. The costs spread across millions. The profits concentrate among a few. And the stock market only ever tracks the few.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "costs spread, profit concentrated"
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "type": "character",
+      "narration": "None of this is an argument that war is good. It's an argument that the stock market is a terrible instrument for measuring whether the world is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the wrong instrument"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "title",
+      "narration": "So what do you actually take from all this — beyond a slightly colder view of the world?",
+      "heading": "What It Really Means",
+      "kicker": "the takeaway"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "First, stop reading the stock market as a verdict on whether the world is okay. A green day is not a sign that things are fine. It's a sign that profits are expected.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ticker",
+          "label": "not a moral scoreboard"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Second, be deeply skeptical of 'stocks always recover.' That's survivorship talking. They recover — in the countries, and the eras, that survived.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "'always' hides the dead"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "image",
+      "narration": "And third, notice how easily a rising number can launder a terrible reality into something that feels almost acceptable.",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "the market is up",
+      "memeBottom": "so everything's fine?"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The market is a brilliant machine for one narrow job: pricing expected corporate profit. Ask it anything else — about justice, or suffering, or whether a war is worth it — and it will give you a confident, meaningless number.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "it answers one question"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "stage",
+      "narration": "So the chart and the world can point in opposite directions, for a long time, and both be telling the truth — about completely different things.",
+      "motif": "marketvsreality",
+      "caption": "two truths, two different things"
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "The market isn't celebrating the war. It's doing the one cold thing it always does: counting the money it expects to be made.",
+      "text": "it's just counting",
+      "sub": "profit, not morality",
+      "icon": "ticker"
+    },
+    {
+      "id": "s77",
+      "type": "character",
+      "narration": "This is why using the market as a mood-ring for the world is so dangerous. A rising chart can quietly reassure a comfortable society that a distant catastrophe is somehow fine.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "ticker",
+          "label": "a false all-clear"
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "type": "image",
+      "narration": "Ask the market whether a war is worth its human cost, and it simply cannot hear the question. It only knows one.",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "is the war okay?",
+      "memeBottom": "the market: profits look great!"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "So the next time you see markets rise on a terrible day, you won't be confused, and you won't be fooled. You'll know exactly which question the number is answering — and which ones it is silently ignoring.",
+      "pose": "present",
+      "bubble": "now it makes grim sense",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "you know what it measures"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "If this gave you a clearer, colder read on the market, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-emh",
+      "name": "Efficient-market hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+      "quote": "asset prices reflect all available information"
+    },
+    {
+      "id": "wiki-wareconomy",
+      "name": "War economy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_economy",
+      "quote": "to mobilize its economy for war production"
+    },
+    {
+      "id": "wiki-fiscal",
+      "name": "Fiscal policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fiscal_policy",
+      "quote": "and expenditure to influence a country"
+    },
+    {
+      "id": "wiki-arms",
+      "name": "Arms industry (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Arms_industry",
+      "quote": "manufactures and sells weapons and other military technology"
+    },
+    {
+      "id": "wiki-mic",
+      "name": "Military–industrial complex (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military-industrial_complex",
+      "quote": "the relationship between a country's military and the defense industry that supplies it"
+    },
+    {
+      "id": "wiki-stockmarket",
+      "name": "Stock market (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stock_market",
+      "quote": "which represent ownership claims on businesses"
+    },
+    {
+      "id": "wiki-flight",
+      "name": "Flight-to-quality (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Flight-to-quality",
+      "quote": "purchase safer investments"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price of goods and services"
+    },
+    {
+      "id": "wiki-survivorship",
+      "name": "Survivorship bias (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+      "quote": "concentrating on entities that passed a selection process over those that did not"
+    }
+  ],
+  "youtube": {
+    "title": "If War Is Bad, Why Do Stocks Go Up?",
+    "alts": [
+      "Why the Stock Market Rises When the World Burns",
+      "War, Markets, and the Number That Ignores Everything"
+    ],
+    "hook": "War is horrifying — so why does the stock market so often go UP during conflict? It's not that the market is evil. It's that the market measures something completely different from human welfare. This is the uncomfortable logic: markets price the future (and war can remove uncertainty), war is a colossal spending-and-profit machine, the market isn't the country (especially America's, fighting wars abroad), inflation lifts the nominal number, and — the big one — we only ever look at the markets that survived. Fully cited.",
+    "bullets": [
+      "Why markets price expectations, not headlines ('buy the invasion')",
+      "War as the ultimate stimulus: fiscal spending, the arms industry, record profits",
+      "The country vs the economy vs the stock market — three different things",
+      "The inflation illusion: record highs in money that's worth less",
+      "Survivorship bias: the markets that got wiped to zero (and left the chart)",
+      "What the market actually measures — and the questions it silently ignores"
+    ],
+    "tags": [
+      "why do stocks go up during war",
+      "war and the stock market",
+      "stock market explained",
+      "survivorship bias",
+      "military industrial complex",
+      "war economy",
+      "defense stocks",
+      "flight to safety",
+      "inflation",
+      "efficient market hypothesis",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#investing",
+      "#stockmarket",
+      "#economy",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "WORLD ON FIRE.",
+      "hookBot": "STOCKS AT HIGHS?",
+      "napkinNumber": "📈",
+      "napkinSub": "…war ≠ crash",
+      "deco": "jet"
+    },
+    "chapters": [
+      [
+        "not a thermometer for today",
+        "Markets price the future"
+      ],
+      [
+        "war is one of the most powerful economic stimulus",
+        "War is a spending machine"
+      ],
+      [
+        "the country, the economy, and the stock market",
+        "Market ≠ country"
+      ],
+      [
+        "money itself",
+        "The inflation illusion"
+      ],
+      [
+        "we're only looking at the winners",
+        "Survivorship bias"
+      ],
+      [
+        "the uncomfortable logic snaps into place",
+        "The cold logic"
+      ],
+      [
+        "what do you actually take from all this",
+        "What it really means"
+      ]
+    ]
+  }
+}

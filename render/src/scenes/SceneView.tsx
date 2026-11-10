@@ -1454,6 +1454,84 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         {pop >= 1 && <text x={VW / 2} y={170} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">hype pops — the debt stays</text>}
       </svg>
     );
+  } else if (m === "warboom") {
+    // Bombs fall on one side; the stock chart climbs on the other.
+    const rev = interpolate(frame, [8, fps * 2.2], [0, 1], clampBoth);
+    const clipId = React.useId().replace(/:/g, "");
+    const path = "M 540 420 L 620 360 L 700 380 L 780 300 L 860 230 L 920 150";
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={60} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        {Array.from({ length: 4 }, (_, i) => { const p = ((frame * 6 + i * 50) % 200) / 200; const y = 120 + p * 280; const x = 140 + i * 90; const op = interpolate(p, [0, 0.1, 0.85, 1], [0, 1, 1, 0]); return <g key={i} opacity={op}><ellipse cx={x} cy={y} rx={12} ry={18} fill={ink} /><path d={`M${x} ${y - 20} l-5 -10 M${x} ${y - 20} l5 -10`} stroke={red} strokeWidth={3} /></g>; })}
+        {Array.from({ length: 3 }, (_, i) => { const on = frame > fps * (0.8 + i * 0.4) && frame < fps * (1.1 + i * 0.4); return on ? <text key={"b" + i} x={160 + i * 90} y={430} fontSize={48} textAnchor="middle">💥</text> : null; })}
+        <text x={250} y={110} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">war ↓</text>
+        <defs><clipPath id={clipId}><rect x={520} y={0} width={420 * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={green} strokeWidth={7} seed={6} /></g>
+        {rev > 0.8 && <text x={880} y={130} fontSize={28} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">stocks ↑</text>}
+      </svg>
+    );
+  } else if (m === "priceddip") {
+    // Shock headline → a quick dip, then a V-shaped recovery (markets "price it in").
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [8, fps * 2.4], [0, 1], clampBoth);
+    const path = "M 80 240 L 300 250 L 420 400 L 540 300 L 700 220 L 880 150";
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={70} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={7} seed={5} /></g>
+        {rev > 0.35 && <text x={420} y={430} fontSize={22} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans} opacity={interpolate(frame,[fps*0.9,fps*1.2],[0,1],clampBoth)}>the shock</text>}
+        {rev > 0.9 && <text x={840} y={130} fontSize={24} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">…priced in</text>}
+      </svg>
+    );
+  } else if (m === "safehaven") {
+    // In chaos, money floods INTO safe assets (dollar / gold / treasuries).
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 250)`}>
+          <rect x={-90} y={-90} width={180} height={180} rx={16} fill="#3a6ea5" stroke={ink} strokeWidth={6} />
+          <path d="M-40 0 L-10 30 L45 -35" fill="none" stroke="#fff" strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" />
+          <text x={0} y={120} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>safe haven</text>
+        </g>
+        {Array.from({ length: 8 }, (_, i) => { const prog = ((frame * 6 + i * 36) % 240) / 240; const a = (i / 8) * 6.28; const sx = VW / 2 + Math.cos(a) * 420, sy = 250 + Math.sin(a) * 240; const xx = sx + (VW / 2 - sx) * prog, yy = sy + (250 - sy) * prog; const op = interpolate(prog, [0, 0.1, 0.85, 1], [0, 1, 1, 0]); return <g key={i} opacity={op}><circle cx={xx} cy={yy} r={16} fill={gold} stroke={ink} strokeWidth={2.5} /><text x={xx} y={yy + 5} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+      </svg>
+    );
+  } else if (m === "survivorship") {
+    // Many market lines; most crash to zero. We only ever plot the survivor.
+    const rev = interpolate(frame, [8, fps * 2.0], [0, 1], clampBoth);
+    const fade = interpolate(frame, [fps * 2.0, fps * 2.6], [1, 0.12], clampBoth);
+    const losers = ["M 80 300 L 300 380 L 420 430", "M 80 280 L 250 330 L 500 430", "M 80 320 L 400 420 L 520 435", "M 80 260 L 220 300 L 360 430"];
+    const winner = "M 80 300 L 260 250 L 440 270 L 640 170 L 880 90";
+    const clip = React.useId().replace(/:/g, "");
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={70} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <defs><clipPath id={clip}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clip})`}>
+          {losers.map((d, i) => <g key={i} opacity={fade}><RPath d={d} stroke={theme.inkSoft} strokeWidth={4} seed={i + 2} /></g>)}
+          <RPath d={winner} stroke={green} strokeWidth={7} seed={9} />
+        </g>
+        {fade < 0.5 && <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">we only ever see the survivor</text>}
+      </svg>
+    );
+  } else if (m === "marketvsreality") {
+    // Split screen: a bombed skyline on the left, a rising ticker on the right.
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={VW / 2} y1={60} x2={VW / 2} y2={460} stroke={ink} strokeWidth={3} strokeDasharray="8 8" />
+        <g>
+          {[120, 200, 280, 360].map((x, i) => <rect key={i} x={x} y={300 - (i % 2) * 40} width={54} height={160 + (i % 2) * 40} fill="#8a929a" stroke={ink} strokeWidth={3} />)}
+          <path d="M150 300 l20 -30 M250 260 l24 -26 M330 300 l18 -24" stroke={red} strokeWidth={3} fill="none" />
+          <text key="a" x={250} y={440} fontSize={48} textAnchor="middle">🔥</text>
+          <text x={250} y={120} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>the country</text>
+        </g>
+        <g>
+          <RPath d="M560 380 L640 340 L720 350 L800 270 L880 190" stroke={green} strokeWidth={7} seed={4} />
+          <text x={740} y={120} fontSize={26} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>the market</text>
+        </g>
+        <text x={VW / 2} y={500} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the market is not the country</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

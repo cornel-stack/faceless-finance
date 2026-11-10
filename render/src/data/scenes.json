@@ -1,904 +1,912 @@
 [
   {
     "id": "s1",
-    "type": "stage",
-    "narration": "Artificial intelligence is the biggest investment story in a generation. Trillions of dollars of value, a handful of companies, and a promise to rewire the entire economy.",
-    "icons": [
-      "brain",
-      "chartup"
-    ],
-    "caption": "the biggest boom in a generation"
-  },
-  {
-    "id": "s2",
     "type": "character",
-    "narration": "But under the dazzling demos and soaring stock charts, something much less glamorous is quietly holding it all up. Debt.",
+    "narration": "A war breaks out. The headlines are horrifying — death, destruction, chaos, uncertainty. Every instinct says the stock market should crash.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "brain",
-        "label": "the hype"
-      },
-      {
-        "name": "iou",
-        "label": "…the debt"
+        "name": "newspaper",
+        "label": "war breaks out"
       }
     ]
   },
   {
+    "id": "s2",
+    "type": "stage",
+    "narration": "And then, bafflingly, it often does the opposite. Bombs fall in the news — and the market quietly climbs.",
+    "motif": "warboom",
+    "caption": "war in the news, stocks going up"
+  },
+  {
     "id": "s3",
-    "type": "callout",
-    "narration": "Because building AI is staggeringly expensive. The giants are set to pour hundreds of billions of dollars a year into data centers and chips.",
-    "text": "$100B+",
-    "sub": "a year, on AI build-out",
-    "icon": "server"
+    "type": "image",
+    "narration": "It feels obscene, almost impossible. How can markets rise while the world is on fire?",
+    "src": "img/memes/thisisfine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "the world: on fire",
+    "memeBottom": "the stock market: all-time high"
   },
   {
     "id": "s4",
+    "type": "callout",
+    "narration": "History is full of it. The darkest years of the twentieth century also contained some of the stock market's strongest runs.",
+    "text": "war ≠ crash",
+    "sub": "markets often rose through conflict",
+    "icon": "chartup"
+  },
+  {
+    "id": "s59",
+    "type": "image",
+    "narration": "It happens so reliably it's almost a rule. The grimmer the century, the more defiant the chart often looks in hindsight.",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "'war should crash stocks'",
+    "memeBottom": "markets: new all-time high"
+  },
+  {
+    "id": "s60",
     "type": "character",
-    "narration": "And increasingly, that money isn't coming from profits. It's coming from borrowing — some of it tucked into places most investors never look.",
-    "pose": "think",
-    "bubble": "paid for… how?",
+    "narration": "During the Second World War, American stocks delivered strong gains. Through Korea, Vietnam, and the Gulf, the market kept grinding higher. Again and again, the chart refused to reflect the horror.",
+    "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "funded by debt"
+        "name": "calendar",
+        "label": "war after war"
+      },
+      {
+        "name": "chartup",
+        "label": "…markets climbed"
       }
     ]
   },
   {
     "id": "s5",
-    "type": "image",
-    "narration": "Everyone's watching the technology. Almost nobody's watching the balance sheet underneath it.",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "watching the AI demos",
-    "memeBottom": "watching the AI debt"
-  },
-  {
-    "id": "s64",
-    "type": "callout",
-    "narration": "By some estimates, the world could pour several trillion dollars into AI data centers and chips before this decade is out. A sum that has to be financed somehow.",
-    "text": "$trillions",
-    "sub": "projected AI build-out this decade",
-    "icon": "server"
+    "type": "character",
+    "narration": "So what's going on? Is the market just evil? The real answer is stranger — and it tells you something unsettling about what the stock market actually measures.",
+    "pose": "think",
+    "bubble": "is the market evil?"
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's follow the money behind the AI boom — and find the hidden debt the hype is quietly resting on.",
-    "heading": "The AI Bubble Survives on Hidden Debt",
-    "kicker": "follow the money, not the demos",
-    "sub": "The tech is real. The financing is the risk."
+    "narration": "So let's untangle the most uncomfortable paradox in finance — why the market can rise while the world burns.",
+    "heading": "If War Is Bad, Why Do Stocks Go Up?",
+    "kicker": "the market vs the world",
+    "sub": "The market measures profit — not suffering."
   },
   {
     "id": "s7",
-    "type": "screenshot",
-    "narration": "First, the boom itself is real. AI has exploded from a research niche into the center of the global economy in just a few years.",
-    "sourceId": "wiki-aiboom"
-  },
-  {
-    "id": "s8",
     "type": "character",
-    "narration": "And every chatbot, every image, every model runs on the same thing: enormous banks of specialized computers, humming away in warehouses.",
+    "narration": "The first key is that the stock market is not a thermometer for today. It's a betting machine on tomorrow.",
     "pose": "explain",
     "props": [
       {
-        "name": "server",
-        "label": "it all runs on compute"
+        "name": "gauge",
+        "label": "it prices the future"
       }
     ]
   },
   {
-    "id": "s82",
+    "id": "s8",
+    "type": "screenshot",
+    "narration": "In theory, prices already reflect all the information everyone has. Today's price is really a guess about future profits.",
+    "sourceId": "wiki-emh"
+  },
+  {
+    "id": "s61",
     "type": "character",
-    "narration": "And a powerful fear drives the spending. No giant wants to be the one that under-invested and lost the AI race — so they all spend defensively, all at once, whatever it costs.",
+    "narration": "Investors even have a phrase for it. Markets 'climb a wall of worry' — rising precisely while the news stays frightening, as long as future profits still look intact.",
     "pose": "explain",
+    "bubble": "a wall of worry",
     "props": [
       {
-        "name": "server",
-        "label": "spend or be left behind"
-      },
-      {
-        "name": "crowd",
-        "label": "…everyone, at once"
+        "name": "gauge",
+        "label": "fear high, prices higher"
       }
     ]
   },
   {
     "id": "s9",
-    "type": "screenshot",
-    "narration": "Those warehouses are data centers — giant facilities packed with servers, power, and cooling.",
-    "sourceId": "wiki-datacenter"
-  },
-  {
-    "id": "s10",
-    "type": "screenshot",
-    "narration": "And building them is a classic capital expenditure — huge upfront money spent on fixed assets, years before they might pay off.",
-    "sourceId": "wiki-capex"
-  },
-  {
-    "id": "s11",
-    "type": "stage",
-    "narration": "This is where the numbers get dizzying. The biggest tech companies are shoveling cash into this build-out at a pace the world has never seen.",
-    "motif": "capexfurnace",
-    "caption": "billions in capex, every quarter"
-  },
-  {
-    "id": "s12",
-    "type": "callout",
-    "narration": "Across the major players, planned spending on AI infrastructure now runs into the hundreds of billions of dollars — every single year.",
-    "text": "$300B+",
-    "sub": "combined annual AI capex",
-    "icon": "server"
-  },
-  {
-    "id": "s65",
     "type": "character",
-    "narration": "To put that in perspective, a single flagship AI data center can cost tens of billions of dollars — rivaling the price of a major airport or a nuclear plant.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "server",
-        "label": "one site: $tens of B"
-      },
-      {
-        "name": "factory",
-        "label": "…like an airport"
-      }
-    ]
-  },
-  {
-    "id": "s66",
-    "type": "stage",
-    "narration": "These sites devour so much electricity they're straining entire power grids — and reviving old power plants just to keep the chips fed.",
-    "icons": [
-      "oilbarrel",
-      "warning"
-    ],
-    "caption": "it even strains the power grid"
-  },
-  {
-    "id": "s13",
-    "type": "character",
-    "narration": "Now here's the first crack. All that spending is happening now. But the actual revenue from AI — the money customers pay — is still, by comparison, tiny.",
+    "narration": "So markets hate one thing above all else: uncertainty. Not bad news — unknown news. A fog they can't price.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "chartup",
-        "label": "spending: huge"
-      },
-      {
-        "name": "chartdown",
-        "label": "…revenue: small"
+        "name": "warning",
+        "label": "the enemy: uncertainty"
       }
     ]
   },
   {
-    "id": "s14",
-    "type": "compare",
-    "narration": "Hundreds of billions going out to build it. A small fraction coming back in from selling it. For now, the AI boom is mostly a colossal bet on the future.",
-    "left": {
-      "title": "spent building AI",
-      "value": "hundreds of $B",
-      "icon": "server"
-    },
-    "right": {
-      "title": "earned from AI",
-      "value": "a fraction",
-      "icon": "coins"
-    }
-  },
-  {
-    "id": "s15",
+    "id": "s10",
     "type": "stage",
-    "narration": "And the thing they're buying has a nasty habit. The cutting-edge chips at the heart of it lose value fast.",
-    "motif": "gpudecay",
-    "caption": "the chips decay fast"
+    "narration": "And here's the twist. When a war that everyone feared finally begins, it can actually remove uncertainty. The dreaded unknown becomes a known.",
+    "motif": "priceddip",
+    "caption": "the shock, then 'priced in'"
   },
   {
-    "id": "s16",
-    "type": "screenshot",
-    "narration": "In accounting terms, they depreciate — a real reduction in the value of an asset as it ages and newer ones arrive.",
-    "sourceId": "wiki-depreciation"
-  },
-  {
-    "id": "s17",
+    "id": "s11",
     "type": "character",
-    "narration": "A forty-thousand-dollar chip today can be last-generation in a couple of years. So the company is racing to earn back its cost before it becomes expensive scrap.",
+    "narration": "Traders have a cold little saying for it. 'Buy the invasion, sell the ceasefire.' The worst moment for markets is often the waiting — not the event.",
     "pose": "explain",
     "props": [
       {
-        "name": "chip",
-        "label": "$40k now"
-      },
-      {
-        "name": "warning",
-        "label": "…scrap soon"
+        "name": "ticker",
+        "label": "\"buy the invasion\""
       }
     ]
   },
   {
-    "id": "s67",
+    "id": "s12",
     "type": "character",
-    "narration": "And all of it rests on one assumption: that demand keeps exploding. Nobody actually knows yet whether businesses will pay enough, for long enough, to earn this back.",
-    "pose": "think",
-    "bubble": "will the demand show up?",
+    "narration": "So a market can dip on the first shock, then recover within days as it digests the news, prices in the likely outcome, and moves on. The headlines stay grim. The chart stops caring.",
+    "pose": "explain",
     "props": [
       {
-        "name": "gauge",
-        "label": "demand = unproven"
+        "name": "chartdown",
+        "label": "dip…"
+      },
+      {
+        "name": "chartup",
+        "label": "…then recover"
       }
     ]
   },
   {
-    "id": "s68",
-    "type": "image",
-    "narration": "Spending a fortune today on the faith that the revenue arrives tomorrow is the oldest setup for a bubble there is.",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "earn back a trillion in capex"
+    "id": "s62",
+    "type": "stage",
+    "narration": "Study the great shocks and you keep seeing the same shape: a sharp drop as the event hits, then a climb as the market decides it can finally price whatever comes next.",
+    "motif": "priceddip",
+    "caption": "the dreaded unknown, resolved"
+  },
+  {
+    "id": "s79",
+    "type": "stage",
+    "narration": "Different war, different decade — the same strange split. Suffering in the headlines; green on the screen.",
+    "motif": "warboom",
+    "caption": "the paradox, on repeat"
+  },
+  {
+    "id": "s13",
+    "type": "title",
+    "narration": "The second key is bigger, and more uncomfortable. War is one of the most powerful economic stimulus programs ever invented.",
+    "heading": "War Is a Spending Machine",
+    "kicker": "the grim stimulus"
+  },
+  {
+    "id": "s14",
+    "type": "screenshot",
+    "narration": "In wartime, a government reorganizes the whole economy around one goal: producing for the war.",
+    "sourceId": "wiki-wareconomy"
+  },
+  {
+    "id": "s15",
+    "type": "screenshot",
+    "narration": "It pulls the biggest lever it has — fiscal policy — spending staggering sums to influence the economy.",
+    "sourceId": "wiki-fiscal"
+  },
+  {
+    "id": "s16",
+    "type": "stage",
+    "narration": "Factories run around the clock. Unemployment vanishes as everyone is put to work. Government orders pour into private companies.",
+    "motif": "warboom",
+    "caption": "spending floods into industry"
+  },
+  {
+    "id": "s17",
+    "type": "callout",
+    "narration": "The clearest example: the Great Depression didn't end with a clever policy. For many economies, it ended when the Second World War forced colossal government spending.",
+    "text": "WWII",
+    "sub": "the spending that ended the Depression",
+    "icon": "factory"
+  },
+  {
+    "id": "s63",
+    "type": "callout",
+    "narration": "American unemployment, over twenty percent during the Depression, collapsed to almost nothing as the war machine demanded every available worker.",
+    "text": "~2%",
+    "sub": "US unemployment by the mid-1940s",
+    "icon": "factory"
+  },
+  {
+    "id": "s64",
+    "type": "character",
+    "narration": "It's a grim lesson economists still argue over. The thing that finally cured mass unemployment wasn't a clever program. It was total war.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "a brutal 'fix'"
+      }
+    ]
   },
   {
     "id": "s18",
-    "type": "title",
-    "narration": "So if the spending dwarfs the revenue, where is all the money actually coming from? This is where the hidden part begins.",
-    "heading": "Where the Money Comes From",
-    "kicker": "and where it's hidden"
+    "type": "screenshot",
+    "narration": "And one industry profits directly and enormously — the arms industry, which builds and sells the weapons.",
+    "sourceId": "wiki-arms"
   },
   {
     "id": "s19",
     "type": "character",
-    "narration": "The giants do have mountains of cash. But even their mountains aren't enough for a build-out this big — so they've started borrowing too.",
+    "narration": "Tanks, jets, ships, missiles, ammunition — all bought by the government, all built by listed companies, all booked as record revenue and profit.",
     "pose": "explain",
     "props": [
       {
-        "name": "vault",
-        "label": "cash piles"
+        "name": "jet",
+        "label": "defense orders"
       },
       {
-        "name": "iou",
-        "label": "…plus borrowing"
+        "name": "chartup",
+        "label": "…record profits"
       }
     ]
   },
   {
     "id": "s20",
     "type": "screenshot",
-    "narration": "The simplest way is a corporate bond — debt issued by a company to raise financing. And even the most cash-rich tech firms have been issuing them in record size.",
-    "sourceId": "wiki-corpbond"
+    "narration": "Economists even have a name for the cozy, permanent bond this creates between the state and its weapons-makers.",
+    "sourceId": "wiki-mic"
   },
   {
     "id": "s21",
     "type": "character",
-    "narration": "But the more interesting debt belongs to a newer breed of company — firms that exist purely to buy chips and rent out AI computing power.",
+    "narration": "So from the market's cold point of view, a war can look like a firehose of guaranteed government contracts aimed straight at corporate earnings.",
     "pose": "explain",
     "props": [
       {
-        "name": "server",
-        "label": "rent-a-GPU firms"
+        "name": "capitol",
+        "label": "gov't orders"
+      },
+      {
+        "name": "coins",
+        "label": "→ corporate profit"
       }
     ]
   },
   {
+    "id": "s65",
+    "type": "image",
+    "narration": "For the companies that build the weapons, a war is the ultimate customer: deep-pocketed, urgent, and politically guaranteed.",
+    "src": "img/memes/distracted.jpg",
+    "meme": "Distracted Boyfriend",
+    "memeBottom": "governments funneling billions to defense firms"
+  },
+  {
+    "id": "s66",
+    "type": "callout",
+    "narration": "The US alone now spends over eight hundred billion dollars a year on defense — a permanent river of revenue flowing to a handful of listed companies.",
+    "text": "$800B+",
+    "sub": "US annual military budget",
+    "icon": "jet"
+  },
+  {
     "id": "s22",
-    "type": "screenshot",
-    "narration": "These firms run on leverage — borrowing heavily to buy an asset, hoping it earns more than the interest costs.",
-    "sourceId": "wiki-leverage"
+    "type": "title",
+    "narration": "Which brings us to the third, and most important, idea of the whole video.",
+    "heading": "The Market Is Not the Country",
+    "kicker": "three different things"
   },
   {
     "id": "s23",
     "type": "character",
-    "narration": "They borrow billions, often using the chips themselves as collateral. Which means the loan is backed by an asset designed to lose value quickly. A fragile combination.",
+    "narration": "We constantly blur three very different things together: the country, the economy, and the stock market. They are not the same — and in a war, they can split violently apart.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "chip",
-        "label": "chips as collateral"
+        "name": "globe",
+        "label": "country"
       },
       {
-        "name": "chartdown",
-        "label": "…that depreciate"
+        "name": "bank",
+        "label": "economy"
+      },
+      {
+        "name": "ticker",
+        "label": "market"
       }
     ]
   },
   {
     "id": "s24",
-    "type": "stage",
-    "narration": "And then there's the debt you can't easily see at all — financing parked in separate companies, off the main balance sheet.",
-    "motif": "iceberg",
-    "caption": "the debt below the waterline"
-  },
-  {
-    "id": "s69",
-    "type": "character",
-    "narration": "A fast-growing slice of this hidden debt now comes from private credit — lightly regulated funds lending enormous sums, well out of public view.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "private credit"
-      },
-      {
-        "name": "warning",
-        "label": "…out of view"
-      }
-    ]
-  },
-  {
-    "id": "s70",
-    "type": "stage",
-    "narration": "And it's all arriving in a world of higher interest rates. Every billion borrowed now costs far more to service than it would have just a few years ago.",
-    "icons": [
-      "percent",
-      "iou"
-    ],
-    "caption": "higher rates, heavier debt"
+    "type": "screenshot",
+    "narration": "A stock market is just the combined value of ownership claims on a set of businesses. Nothing more.",
+    "sourceId": "wiki-stockmarket"
   },
   {
     "id": "s25",
-    "type": "screenshot",
-    "narration": "The tool for this is a special-purpose entity — a separate legal company created for one narrow objective.",
-    "sourceId": "wiki-spe"
-  },
-  {
-    "id": "s26",
     "type": "character",
-    "narration": "A data center can be built inside one of these vehicles, loaded with debt, and kept at arm's length — so the headline company looks far less indebted than the project really is.",
+    "narration": "It doesn't measure suffering. It doesn't measure justice, or lives lost, or cities flattened. It measures the expected future profits of a specific list of companies.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "shellbox",
-        "label": "the debt lives here"
-      },
-      {
-        "name": "officetower",
-        "label": "…not on the main books"
+        "name": "ticker",
+        "label": "profits, not pain"
       }
     ]
   },
   {
-    "id": "s27",
-    "type": "image",
-    "narration": "If that structure sounds familiar, it should. Hiding debt in separate entities to flatter the balance sheet is a very old trick.",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "off-balance-sheet debt is still debt"
+    "id": "s26",
+    "type": "stage",
+    "narration": "So you can have a bombed-out country and a booming index at the very same time — because the index is tracking the companies, not the craters.",
+    "motif": "marketvsreality",
+    "caption": "the country ≠ the market"
   },
   {
-    "id": "s71",
+    "id": "s27",
     "type": "character",
-    "narration": "And we have watched this exact movie on this channel before. Hiding debt in off-the-books vehicles to look healthier than you really are is, almost precisely, the Enron playbook.",
+    "narration": "And geography matters enormously. For most of the last century, the biggest market — America's — watched its wars happen somewhere else, an ocean away from its factories.",
     "pose": "explain",
     "props": [
       {
-        "name": "crookedE",
-        "label": "the Enron playbook"
+        "name": "globe",
+        "label": "war is 'over there'"
       }
     ]
   },
   {
     "id": "s28",
-    "type": "title",
-    "narration": "Now for the strangest part of the whole machine — the money that seems to go in circles.",
-    "heading": "The Money Goes in Circles",
-    "kicker": "circular financing"
-  },
-  {
-    "id": "s29",
     "type": "character",
-    "narration": "Watch a pattern that's popped up again and again in the AI boom. A chip maker invests billions in an AI startup.",
+    "narration": "Its industries weren't bombed. They were the arsenal — selling to everyone, rebuilding everything afterward. War was, bluntly, good for the American corporate balance sheet.",
     "pose": "explain",
     "props": [
       {
-        "name": "chip",
-        "label": "chipmaker invests"
+        "name": "factory",
+        "label": "the arsenal"
+      },
+      {
+        "name": "chartup",
+        "label": "…untouched & paid"
       }
     ]
   },
   {
+    "id": "s29",
+    "type": "screenshot",
+    "narration": "On top of that, when the world gets scary, global money doesn't vanish — it flees to wherever feels safest.",
+    "sourceId": "wiki-flight"
+  },
+  {
     "id": "s30",
+    "type": "stage",
+    "narration": "And for decades, 'safest' has meant US dollars, US treasuries, and US stocks. So global fear can actually pump money into the very market you'd expect to fall.",
+    "motif": "safehaven",
+    "caption": "fear flows to the safe haven"
+  },
+  {
+    "id": "s67",
     "type": "character",
-    "narration": "That startup then turns around and spends those same billions… buying chips, from the company that just invested in it.",
+    "narration": "There's a brutal upside for the victor, too: reconstruction. Someone has to rebuild the roads, the factories, the cities — and those vast contracts go straight to companies.",
     "pose": "explain",
-    "expression": "surprised",
     "props": [
       {
-        "name": "exchange",
-        "label": "…buys its chips back"
+        "name": "crane",
+        "label": "rebuild everything"
+      },
+      {
+        "name": "coins",
+        "label": "…huge contracts"
+      }
+    ]
+  },
+  {
+    "id": "s68",
+    "type": "stage",
+    "narration": "War also disrupts oil, food, and metals, so their prices spike — devastating for ordinary consumers, but a windfall for the energy and commodity giants that dominate the index.",
+    "icons": [
+      "oilbarrel",
+      "chartup"
+    ],
+    "caption": "war spikes commodity prices"
+  },
+  {
+    "id": "s69",
+    "type": "character",
+    "narration": "So the market isn't one thing. In a war, some sectors crater while defense, energy, and industrials boom — and those winners can haul the whole index higher.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "jet",
+        "label": "winners boom"
+      },
+      {
+        "name": "chartup",
+        "label": "…pull the index up"
+      }
+    ]
+  },
+  {
+    "id": "s80",
+    "type": "character",
+    "narration": "And a few giant defense 'primes' capture most of it. The moment a conflict begins, their order books fill up for years.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "jet",
+        "label": "the 'primes'"
+      },
+      {
+        "name": "calendar",
+        "label": "…years of orders"
       }
     ]
   },
   {
     "id": "s31",
-    "type": "stage",
-    "narration": "The same dollars loop around the circle — and at each step, they show up as shiny new revenue and investment on someone's books.",
-    "motif": "circularfinance",
-    "caption": "the same dollars, counted again and again"
+    "type": "title",
+    "narration": "There's a fourth force at work too — a quieter, sneakier one. Money itself.",
+    "heading": "The Inflation Illusion",
+    "kicker": "nominal vs real"
   },
   {
     "id": "s32",
     "type": "character",
-    "narration": "It's called vendor financing: the seller quietly funds its own customers so they can afford to keep buying. It can make demand look far stronger than it really is.",
+    "narration": "Wars are almost always paid for with borrowed and freshly printed money. Governments flood the system with cash to fund the fight.",
     "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "seller funds the buyer"
+        "name": "printer",
+        "label": "print to pay for war"
       }
     ]
   },
   {
     "id": "s33",
-    "type": "screenshot",
-    "narration": "And we have seen this exact move before — in the dot-com bubble, when telecom suppliers lent their customers the money to buy their equipment.",
-    "sourceId": "wiki-dotcom"
-  },
-  {
-    "id": "s83",
-    "type": "character",
-    "narration": "Back then it sank giants. Telecom suppliers lent customers billions to buy their gear — and when those customers folded, the 'sales' turned out to be loans that would never be repaid.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "ticker",
-        "label": "sales that were really loans"
-      }
-    ]
+    "type": "stage",
+    "narration": "More money sloshing around means each dollar is worth a little less — and the price of almost everything drifts upward.",
+    "motif": "printmoney",
+    "caption": "more money, higher prices"
   },
   {
     "id": "s34",
+    "type": "screenshot",
+    "narration": "That's inflation — a general rise in prices. And stocks are claims on real companies, real factories, real assets.",
+    "sourceId": "wiki-inflation"
+  },
+  {
+    "id": "s35",
     "type": "character",
-    "narration": "When the music stopped back then, the customers couldn't pay, the suppliers ate the losses, and the whole web of circular revenue collapsed at once.",
+    "narration": "So as money loses value, the nominal price of those real assets tends to rise. The stock number goes up — even if, in real terms, you're not actually richer.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "domino",
-        "label": "…it unwound fast"
-      }
-    ]
-  },
-  {
-    "id": "s72",
-    "type": "character",
-    "narration": "There's a subtler worry too. When a chip maker invests in a customer who then buys its chips, how much of that booked 'revenue' is genuinely new demand?",
-    "pose": "explain",
-    "props": [
+        "name": "chartup",
+        "label": "number goes up"
+      },
       {
-        "name": "calculator",
-        "label": "how real is it?"
+        "name": "warning",
+        "label": "…but is it real?"
       }
     ]
-  },
-  {
-    "id": "s73",
-    "type": "stage",
-    "narration": "If the money simply circled back from your own investment, the sales figure on your books may be less a measure of real demand — and more an echo of your own cash.",
-    "motif": "circularfinance",
-    "caption": "revenue — or an echo?"
-  },
-  {
-    "id": "s35",
-    "type": "title",
-    "narration": "So is this a bubble? Let's be precise about what that word actually means.",
-    "heading": "Is It a Bubble?",
-    "kicker": "define your terms"
   },
   {
     "id": "s36",
-    "type": "screenshot",
-    "narration": "An economic bubble is when prices climb far above what the underlying fundamentals can justify.",
-    "sourceId": "wiki-bubble"
-  },
-  {
-    "id": "s37",
     "type": "character",
-    "narration": "By that test, AI valuations are priced for near-perfection. For today's prices to make sense, these companies must earn truly astronomical profits, for decades.",
+    "narration": "It's a kind of money illusion. A market can hit record highs in dollars, while those dollars quietly buy less and less. Rising, and poorer, at the same time.",
     "pose": "explain",
     "props": [
       {
-        "name": "gauge",
-        "label": "priced for perfection"
+        "name": "dollar",
+        "label": "record highs…"
+      },
+      {
+        "name": "pricetag",
+        "label": "…worth less"
       }
     ]
   },
   {
+    "id": "s70",
+    "type": "chart",
+    "narration": "Look at the 1970s. In dollars, the market looked like it drifted higher. But adjust for the raging inflation, and investors were quietly going backwards.",
+    "chartType": "line",
+    "title": "Stocks in the 1970s: up in name only",
+    "data": [
+      {
+        "label": "'66",
+        "value": 100
+      },
+      {
+        "label": "'72",
+        "value": 110
+      },
+      {
+        "label": "'78",
+        "value": 120
+      },
+      {
+        "label": "'82",
+        "value": 130
+      }
+    ],
+    "series2": [
+      {
+        "label": "'66",
+        "value": 100
+      },
+      {
+        "label": "'72",
+        "value": 86
+      },
+      {
+        "label": "'78",
+        "value": 66
+      },
+      {
+        "label": "'82",
+        "value": 56
+      }
+    ],
+    "seriesLabels": [
+      "in dollars",
+      "after inflation"
+    ],
+    "note": "flat in name, down for real",
+    "noteAt": 3
+  },
+  {
+    "id": "s71",
+    "type": "character",
+    "narration": "Over that decade the market looked flat — but after inflation, investors lost nearly half their real wealth. The number told a comforting lie.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "dollar",
+        "label": "flat in $"
+      },
+      {
+        "name": "chartdown",
+        "label": "…down in real"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "title",
+    "narration": "But here's the most important caveat of all — and the one almost nobody mentions. We're only looking at the winners.",
+    "heading": "Survivorship Bias",
+    "kicker": "the graves off the chart"
+  },
+  {
     "id": "s38",
-    "type": "stage",
-    "narration": "Now, bubbles aren't new, and some leave real things behind — the dot-com crash still gave us the modern internet. The danger isn't the dream. It's how it's financed.",
-    "motif": "inflate",
-    "caption": "the dream isn't the danger"
+    "type": "screenshot",
+    "narration": "There's a famous statistical trap called survivorship bias — drawing conclusions only from the things that made it through, while ignoring everything that didn't.",
+    "sourceId": "wiki-survivorship"
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "And this is the crucial difference. A pure stock bubble, when it bursts, mostly hurts shareholders. A debt-fueled bubble is far more dangerous.",
+    "narration": "When we say 'stocks go up in wars,' we're almost always looking at the American market. The one that won, and was never invaded.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "ticker",
-        "label": "stocks fall"
-      },
-      {
-        "name": "iou",
-        "label": "…but debt remains"
+        "name": "flagUS",
+        "label": "the winner's chart"
       }
     ]
   },
   {
     "id": "s40",
     "type": "stage",
-    "narration": "Because debt doesn't care about the dream. The hype can evaporate overnight — but the loans behind it still have to be paid back, in full, on schedule.",
-    "motif": "bubbledebt",
-    "caption": "hype pops — the debt stays"
+    "narration": "But plot all the markets, and the picture is brutal. Most of the lines you'd want to show… simply end. They go to zero.",
+    "motif": "survivorship",
+    "caption": "most markets didn't survive"
   },
   {
     "id": "s41",
-    "type": "image",
-    "narration": "Equity is a bet that can lose. Debt is a promise that must be kept. And this boom is increasingly built on promises.",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "fund it with profits",
-    "memeBottom": "or fund it with debt"
-  },
-  {
-    "id": "s74",
     "type": "character",
-    "narration": "The real danger isn't just the size of the debt. It's whether these projects can earn enough to cover the interest — before the very chips they bought go obsolete.",
+    "narration": "If you held stocks in Germany or Japan in 1945, or in Russia in 1917, your market didn't dip and recover. It was wiped out entirely. Shareholders lost everything.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "percent",
-        "label": "cover the interest?"
-      },
-      {
-        "name": "clock",
-        "label": "…before chips age"
-      }
-    ]
-  },
-  {
-    "id": "s75",
-    "type": "stage",
-    "narration": "If AI returns come in slower or smaller than promised, the equity story can quietly deflate — while the debt payments keep right on coming, every month.",
-    "motif": "bubbledebt",
-    "caption": "if returns slip, the debt bites"
-  },
-  {
-    "id": "s85",
-    "type": "character",
-    "narration": "And much of this debt must be refinanced within a few years. If rates are still high and the AI profits haven't arrived, rolling it over could get brutally expensive — or simply impossible.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "percent",
-        "label": "refinance risk"
-      },
-      {
-        "name": "warning",
-        "label": "…at higher rates"
+        "name": "chartdown",
+        "label": "wiped to zero"
       }
     ]
   },
   {
     "id": "s42",
-    "type": "title",
-    "narration": "So what actually breaks, if the AI revenue doesn't show up on time?",
-    "heading": "What Breaks",
-    "kicker": "the failure modes"
+    "type": "callout",
+    "narration": "So 'markets go up in war' really means 'the markets of the countries that won, and were never bombed, went up.' That's a very different, much darker sentence.",
+    "text": "the winners' tale",
+    "sub": "we only plot the survivors",
+    "icon": "warning"
   },
   {
     "id": "s43",
+    "type": "image",
+    "narration": "The cheerful chart of resilient markets is missing every market that got erased. The graves are just off-screen.",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "'stocks always recover' is survivorship bias"
+  },
+  {
+    "id": "s72",
     "type": "character",
-    "narration": "The first risk is overbuilding. If everyone races to build data centers for demand that arrives slower than hoped, you get too much capacity and collapsing prices.",
+    "narration": "And it isn't only shareholders. In the markets that collapsed, the bondholders — the supposedly 'safe' investors — were often wiped out too, as a losing government's debt turned to worthless paper.",
     "pose": "explain",
     "props": [
       {
-        "name": "server",
-        "label": "too much capacity"
+        "name": "bond",
+        "label": "'safe' bonds"
       },
       {
-        "name": "chartdown",
-        "label": "…prices fall"
+        "name": "warning",
+        "label": "…also to zero"
       }
     ]
   },
   {
-    "id": "s44",
+    "id": "s73",
     "type": "stage",
-    "narration": "Then you're left with half-empty data centers full of depreciating chips — and the debt that paid for them still sitting there, demanding its interest.",
-    "motif": "gpudecay",
-    "caption": "stranded chips, live debt"
+    "narration": "Across the twentieth century, several major stock markets were effectively reset to zero at least once. Those permanent losses never make it into the cheerful long-run chart.",
+    "motif": "survivorship",
+    "caption": "countless markets, reset to zero"
+  },
+  {
+    "id": "s74",
+    "type": "character",
+    "narration": "Which raises the question the survivors' chart never asks. What happens to your portfolio if the war isn't an ocean away — but at home?",
+    "pose": "think",
+    "bubble": "…and if it's YOUR country?"
+  },
+  {
+    "id": "s44",
+    "type": "title",
+    "narration": "So, put the pieces together, and the uncomfortable logic snaps into place.",
+    "heading": "The Cold Logic",
+    "kicker": "why the chart rises"
   },
   {
     "id": "s45",
-    "type": "character",
-    "narration": "The second risk is who's holding that debt. Banks, bond investors, and a fast-growing pool of private credit have all funded the build-out.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "banks"
-      },
-      {
-        "name": "crowd",
-        "label": "…private credit"
-      }
+    "type": "chalkboard",
+    "narration": "Markets price the future, not the horror. War means huge spending and profits. The market tracks companies, not the country. Inflation lifts the number. And we only ever see the survivors.",
+    "lines": [
+      "prices the future, not the horror",
+      "war = spending + profits",
+      "market ≠ the country",
+      "inflation lifts the number",
+      "…and we only see survivors"
     ]
   },
   {
     "id": "s46",
-    "type": "stage",
-    "narration": "If enough AI loans go bad at once, the losses don't stay in tech. They can ripple out through the financial system, like dominoes.",
-    "motif": "dominoes",
-    "caption": "losses can spread"
+    "type": "character",
+    "narration": "None of that means war is 'good.' It means the stock market is simply measuring something completely different from human welfare — and we keep mistaking one for the other.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "profit ≠ welfare"
+      }
+    ]
   },
   {
     "id": "s47",
-    "type": "callout",
-    "narration": "And it's dangerously concentrated. A handful of companies now drive a huge share of the entire stock market's value — and much of this spending.",
-    "text": "a handful",
-    "sub": "of firms carry the whole market",
-    "icon": "warning"
+    "type": "stage",
+    "narration": "There's an old, bitter phrase from a decorated general who turned against it all: 'War is a racket.' A business, in which a few profit enormously, and the many pay the true cost.",
+    "icons": [
+      "jet",
+      "coins"
+    ],
+    "caption": "\"war is a racket\""
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "So a stumble by just a few AI giants wouldn't be a sector problem. It would be everyone's problem — in their pension, their index fund, their savings.",
+    "narration": "The soldiers and civilians pay in blood. The taxpayer pays in debt. And a narrow slice of shareholders, often, get paid in dividends.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "piggybank",
-        "label": "it's in your index fund"
+        "name": "crowd",
+        "label": "the many pay"
+      },
+      {
+        "name": "moneybag",
+        "label": "…the few profit"
+      }
+    ]
+  },
+  {
+    "id": "s75",
+    "type": "diagram",
+    "narration": "Look at the whole ledger of a war. The costs and the profits land on completely different people.",
+    "title": "Who pays, who profits",
+    "nodes": [
+      {
+        "id": "blood",
+        "label": "pay in blood",
+        "icon": "crowd",
+        "x": 0.18,
+        "y": 0.3
+      },
+      {
+        "id": "tax",
+        "label": "pay in taxes",
+        "icon": "taxform",
+        "x": 0.18,
+        "y": 0.74
+      },
+      {
+        "id": "war",
+        "label": "the war",
+        "icon": "bomb",
+        "x": 0.52,
+        "y": 0.52
+      },
+      {
+        "id": "profit",
+        "label": "paid in profit",
+        "icon": "moneybag",
+        "x": 0.85,
+        "y": 0.52
+      }
+    ],
+    "edges": [
+      {
+        "from": "blood",
+        "to": "war"
+      },
+      {
+        "from": "tax",
+        "to": "war"
+      },
+      {
+        "from": "war",
+        "to": "profit"
       }
     ]
   },
   {
     "id": "s76",
-    "type": "callout",
-    "narration": "And it is dangerously concentrated. Roughly a third of the entire S&P 500's value now sits in a small cluster of AI-linked giants.",
-    "text": "a third",
-    "sub": "of the whole index, in a few AI giants",
-    "icon": "warning"
+    "type": "character",
+    "narration": "It's the oldest asymmetry there is. The costs spread across millions. The profits concentrate among a few. And the stock market only ever tracks the few.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "costs spread, profit concentrated"
+      }
+    ]
   },
   {
-    "id": "s77",
-    "type": "image",
-    "narration": "So this was never only a tech-investor problem. It's sitting quietly inside almost every ordinary retirement account.",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "the AI giants wobble",
-    "memeBottom": "everyone's 401k"
+    "id": "s81",
+    "type": "character",
+    "narration": "None of this is an argument that war is good. It's an argument that the stock market is a terrible instrument for measuring whether the world is.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "the wrong instrument"
+      }
+    ]
   },
   {
     "id": "s49",
     "type": "title",
-    "narration": "Now, let's be fair — because 'it's all a bubble' is lazy, and probably wrong.",
-    "heading": "To Be Fair",
-    "kicker": "two things can be true"
+    "narration": "So what do you actually take from all this — beyond a slightly colder view of the world?",
+    "heading": "What It Really Means",
+    "kicker": "the takeaway"
   },
   {
     "id": "s50",
     "type": "character",
-    "narration": "AI is almost certainly a genuinely transformative technology. It really can make things, write things, and solve things that were impossible a few years ago.",
+    "narration": "First, stop reading the stock market as a verdict on whether the world is okay. A green day is not a sign that things are fine. It's a sign that profits are expected.",
     "pose": "explain",
     "props": [
       {
-        "name": "brain",
-        "label": "the tech is real"
+        "name": "ticker",
+        "label": "not a moral scoreboard"
       }
     ]
   },
   {
     "id": "s51",
-    "type": "image",
-    "narration": "The technology being revolutionary and the financing being a bubble can both be true at the same time. They usually are.",
-    "src": "img/memes/thisisfine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "the tech: revolutionary",
-    "memeBottom": "the financing: on fire"
-  },
-  {
-    "id": "s84",
-    "type": "stage",
-    "narration": "In every gold rush, the surest money is selling picks and shovels. The chip makers sell to everyone — which is also why their revenue can look unstoppable, right up until the miners run out of cash.",
-    "icons": [
-      "chip",
-      "coins"
-    ],
-    "caption": "the picks-and-shovels seller wins first"
-  },
-  {
-    "id": "s52",
     "type": "character",
-    "narration": "Railways, electricity, the internet — all were real revolutions. And all had wild financial bubbles bolted onto them, that burst and ruined plenty of investors on the way.",
+    "narration": "Second, be deeply skeptical of 'stocks always recover.' That's survivorship talking. They recover — in the countries, and the eras, that survived.",
     "pose": "explain",
     "props": [
       {
-        "name": "bridge",
-        "label": "railways"
-      },
-      {
-        "name": "laptop",
-        "label": "…the internet"
+        "name": "warning",
+        "label": "'always' hides the dead"
       }
     ]
   },
   {
+    "id": "s52",
+    "type": "image",
+    "narration": "And third, notice how easily a rising number can launder a terrible reality into something that feels almost acceptable.",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "the market is up",
+    "memeBottom": "so everything's fine?"
+  },
+  {
     "id": "s53",
     "type": "character",
-    "narration": "The technology survives the crash. The over-leveraged companies that bet the farm on it usually don't.",
+    "narration": "The market is a brilliant machine for one narrow job: pricing expected corporate profit. Ask it anything else — about justice, or suffering, or whether a war is worth it — and it will give you a confident, meaningless number.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "tech endures"
-      },
+        "name": "calculator",
+        "label": "it answers one question"
+      }
+    ]
+  },
+  {
+    "id": "s54",
+    "type": "stage",
+    "narration": "So the chart and the world can point in opposite directions, for a long time, and both be telling the truth — about completely different things.",
+    "motif": "marketvsreality",
+    "caption": "two truths, two different things"
+  },
+  {
+    "id": "s55",
+    "type": "callout",
+    "narration": "The market isn't celebrating the war. It's doing the one cold thing it always does: counting the money it expects to be made.",
+    "text": "it's just counting",
+    "sub": "profit, not morality",
+    "icon": "ticker"
+  },
+  {
+    "id": "s77",
+    "type": "character",
+    "narration": "This is why using the market as a mood-ring for the world is so dangerous. A rising chart can quietly reassure a comfortable society that a distant catastrophe is somehow fine.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
       {
-        "name": "chartdown",
-        "label": "…the debt doesn't"
+        "name": "ticker",
+        "label": "a false all-clear"
       }
     ]
   },
   {
     "id": "s78",
-    "type": "character",
-    "narration": "History is blunt about who survives these things. The railroads got built — but most railroad companies went bankrupt. The internet thrived — but most dot-coms did not.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bridge",
-        "label": "railroads built"
-      },
-      {
-        "name": "chartdown",
-        "label": "…companies bust"
-      }
-    ]
-  },
-  {
-    "id": "s79",
-    "type": "stage",
-    "narration": "A few giants will likely emerge stronger than ever. The hard question for an investor is whether you're holding one of the winners — or one of the many casualties.",
-    "icons": [
-      "trophy",
-      "warning"
-    ],
-    "caption": "the winners are few"
-  },
-  {
-    "id": "s54",
-    "type": "title",
-    "narration": "So what should you actually watch — if you want to see trouble before the headlines do?",
-    "heading": "What to Watch",
-    "kicker": "the tells"
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "narration": "First, watch the gap between capex and revenue. As long as the spending wildly outruns the money coming in, the bet is still unproven.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "capex vs revenue"
-      }
-    ]
+    "type": "image",
+    "narration": "Ask the market whether a war is worth its human cost, and it simply cannot hear the question. It only knows one.",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "is the war okay?",
+    "memeBottom": "the market: profits look great!"
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "Second, watch the debt — especially the kind tucked into separate entities and private credit, where it's hardest to see.",
-    "pose": "explain",
+    "narration": "So the next time you see markets rise on a terrible day, you won't be confused, and you won't be fooled. You'll know exactly which question the number is answering — and which ones it is silently ignoring.",
+    "pose": "present",
+    "bubble": "now it makes grim sense",
     "props": [
       {
-        "name": "shellbox",
-        "label": "the hidden debt"
+        "name": "gauge",
+        "label": "you know what it measures"
       }
     ]
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "Third, watch for circular deals — where one company's investment magically becomes another's revenue. Real demand doesn't need to be funded by the seller.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "exchange",
-        "label": "circular revenue"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "chalkboard",
-    "narration": "So here's the whole thing in four lines. The spending is real. The revenue is small. The debt is large. And a lot of it is hidden.",
-    "lines": [
-      "the spending is real",
-      "the revenue is small",
-      "the debt is large",
-      "…and a lot of it is hidden"
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "stage",
-    "narration": "A healthy boom is funded by profits. A fragile one is funded by debt and clever accounting. This one is leaning harder on the second kind every quarter.",
-    "icons": [
-      "coins",
-      "iou"
-    ],
-    "caption": "profits vs promises"
-  },
-  {
-    "id": "s60",
-    "type": "callout",
-    "narration": "Because the hype is loud, and it's designed to be. The leverage is quiet — and that's exactly where the risk likes to hide.",
-    "text": "watch the debt",
-    "sub": "…not the demos",
-    "icon": "iou"
-  },
-  {
-    "id": "s80",
-    "type": "character",
-    "narration": "And the boring defense still quietly works. Owning the whole market cheaply means you capture the real winners — without betting the house on which over-leveraged firm happens to survive.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "own broadly"
-      },
-      {
-        "name": "gauge",
-        "label": "…don't bet the house"
-      }
-    ]
-  },
-  {
-    "id": "s81",
-    "type": "image",
-    "narration": "The hype is loud and beautifully produced. The leverage underneath it is quiet, and a lot less photogenic. Watch the quiet number.",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeBottom": "chasing the hype, ignoring the leverage"
-  },
-  {
-    "id": "s61",
-    "type": "character",
-    "narration": "So the next time an AI headline promises to change the world, you'll ask the quieter question. Not 'is it amazing?' — but 'who's paying for it, and with whose money?'",
-    "pose": "present",
-    "bubble": "who's paying for it?",
-    "props": [
-      {
-        "name": "brain",
-        "label": "…and with whose money?"
-      }
-    ]
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "If this made the AI boom suddenly look very different, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this gave you a clearer, colder read on the market, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "server",
+        "name": "chartup",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s63",
+    "id": "s58",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",
