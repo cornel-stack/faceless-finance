@@ -13,6 +13,9 @@ importers:
       '@remotion/cli':
         specifier: ^4.0.230
         version: 4.0.541(postcss@8.5.32)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
+      '@remotion/gif':
+        specifier: 4.0.541
+        version: 4.0.541(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@remotion/google-fonts':
         specifier: ^4.0.541
         version: 4.0.541(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -391,6 +394,12 @@ packages:
 
   '@remotion/elevenlabs@4.0.541':
     resolution: {integrity: sha512-oThUKrKbfxihSgNx5Tkgw5AVzoyeayR+EtDkr3jzRdKL5qItwCvM0MXPvp0lkiflcZtKxKWUhvTQvxxMFckcHA==}
+
+  '@remotion/gif@4.0.541':
+    resolution: {integrity: sha512-TbedPjeVxu3p6y7Z6ak+zKtEoypLqHjTbDn/4rjJHyfXXa+Ma8B5He1gpwS35aMD5D6OBj6t8CP775VjqqO/RA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
 
   '@remotion/google-fonts@4.0.541':
     resolution: {integrity: sha512-MZNvxDPR4GDFs+PnTY8pwNlLsnKWhhpfyFFoUI9MAChgpGPjoIY7rTNSv8hV+698OCzhSag93gBYMFJxpuIxLA==}
@@ -1767,6 +1776,12 @@ snapshots:
     dependencies:
       '@remotion/captions': 4.0.541
       zod: 4.6.7
+
+  '@remotion/gif@4.0.541(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      remotion: 4.0.541(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@remotion/google-fonts@4.0.541(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:

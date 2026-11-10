@@ -76,6 +76,19 @@ export interface ImageScene extends Base {
   memeBottom?: string;  // Impact-style caption OVER the bottom of the photo (meme format)
 }
 
+// A real animated GIF (meme / reaction / data animation), fetched at authoring
+// time from Giphy/Tenor and committed under public/img/gifs/. Framed like a photo,
+// loops for the whole scene, with optional meme-format Impact captions.
+export interface GifScene extends Base {
+  type: "gif";
+  src: string;          // path under public/, e.g. "img/gifs/this-is-fine.gif"
+  caption?: string;     // big caption under the gif
+  label?: string;       // small corner tag
+  memeTop?: string;     // Impact-style caption over the top
+  memeBottom?: string;  // Impact-style caption over the bottom
+  credit?: string;      // attribution (e.g. "via GIPHY") shown small
+}
+
 // A full-frame METAPHOR stage — one big animated motif (collapse, drain, vanish,
 // dominoes, crash, stamp…) or one/two large doodles, with a bold caption. No
 // arrows. This is the default "picture of the idea" device.
@@ -87,7 +100,9 @@ export interface StageScene extends Base {
     // EP017 (sovereign default) additions:
     | "yieldspike" | "capitalflight" | "haircut" | "lifering" | "belttighten" | "vulture" | "downgrade" | "debtspiral" | "bondsnowball"
     // EP018 (middle class) additions:
-    | "hollowout" | "squeeze" | "ladderbreak" | "twoincome" | "shrinkpie" | "escalator";
+    | "hollowout" | "squeeze" | "ladderbreak" | "twoincome" | "shrinkpie" | "escalator"
+    // EP019 (paycheck-to-paycheck at high income) additions:
+    | "treadmill" | "lifestylecreep" | "leakybucket" | "goldenhandcuffs" | "joneses" | "paycheckgone";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
@@ -125,4 +140,4 @@ export interface CompareScene extends Base {
 export type Scene =
   | TitleScene | CharacterScene | CalloutScene | ScreenshotScene
   | ChartScene | DoodleScene | ChalkboardScene | CompareScene | TimelineScene
-  | ImageScene | DiagramScene | StageScene;
+  | ImageScene | DiagramScene | StageScene | GifScene;

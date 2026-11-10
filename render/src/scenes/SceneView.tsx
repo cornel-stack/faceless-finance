@@ -1,5 +1,6 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile, Easing } from "remotion";
+import { Gif } from "@remotion/gif";
 import { theme, money } from "../theme";
 import { display, sans } from "../fonts";
 import { Mascot } from "../components/Mascot";
@@ -12,7 +13,7 @@ import type { SourceEntry } from "../SourceCardDemo";
 import type {
   Scene, TitleScene, CharacterScene, CalloutScene, ScreenshotScene,
   ChartScene, DoodleScene, ChalkboardScene, CompareScene, TimelineScene,
-  ImageScene, DiagramScene, StageScene,
+  ImageScene, DiagramScene, StageScene, GifScene,
 } from "./types";
 
 const EASE = { damping: 200 } as const;
@@ -424,6 +425,37 @@ const ImageScene_: React.FC<{ scene: ImageScene }> = ({ scene }) => {
         {scene.memeBottom && (
           <div style={{ position: "absolute", left: 10, right: 10, bottom: 12, textAlign: "center", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontWeight: 900, fontSize: 56, lineHeight: 1.0, letterSpacing: 1, color: "#fff", textTransform: "uppercase", WebkitTextStroke: "3px #000", paintOrder: "stroke fill", opacity: interpolate(frame, [8, 18], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{scene.memeBottom}</div>
         )}
+      </div>
+      {scene.caption && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 50, color: theme.ink, textAlign: "center", maxWidth: 1400 }}>{scene.caption}</div>}
+    </AbsoluteFill>
+  );
+};
+
+// A real animated GIF (meme / reaction / data animation), framed like a photo,
+// looping for the whole scene, with optional meme-format Impact captions.
+const GifScene_: React.FC<{ scene: GifScene }> = ({ scene }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const enter = spring({ frame, fps, config: { damping: 16 } });
+  const W = 860, H = 560;
+  const meme = (pos: "top" | "bottom", txt?: string) =>
+    txt ? (
+      <div style={{ position: "absolute", left: 10, right: 10, [pos]: 12, textAlign: "center", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontWeight: 900, fontSize: 56, lineHeight: 1.0, letterSpacing: 1, color: "#fff", textTransform: "uppercase", WebkitTextStroke: "3px #000", paintOrder: "stroke fill", opacity: interpolate(frame, [4, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{txt}</div>
+    ) : null;
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 28 }}>
+      <div style={{ position: "relative", transform: `scale(${0.92 + enter * 0.08})`, opacity: enter }}>
+        <div style={{ width: W, height: H, borderRadius: 14, overflow: "hidden", border: `6px solid ${theme.ink}`, boxShadow: "0 18px 44px rgba(0,0,0,0.22)", background: "#111", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <Gif src={staticFile(scene.src)} width={W} height={H} fit="contain" loopBehavior="loop" />
+        </div>
+        {scene.label && (
+          <div style={{ position: "absolute", left: -12, bottom: -18, background: theme.accent, color: "#fff", fontFamily: display, fontWeight: 900, fontSize: 34, padding: "6px 18px", borderRadius: 8, transform: "rotate(-3deg)" }}>{scene.label}</div>
+        )}
+        {scene.credit && (
+          <div style={{ position: "absolute", right: 10, bottom: 8, background: "rgba(0,0,0,0.5)", color: "#fff", fontFamily: sans, fontWeight: 700, fontSize: 18, padding: "2px 8px", borderRadius: 5 }}>{scene.credit}</div>
+        )}
+        {meme("top", scene.memeTop)}
+        {meme("bottom", scene.memeBottom)}
       </div>
       {scene.caption && <div style={{ fontFamily: display, fontWeight: 900, fontSize: 50, color: theme.ink, textAlign: "center", maxWidth: 1400 }}>{scene.caption}</div>}
     </AbsoluteFill>
@@ -1089,6 +1121,105 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={505} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">running up a down escalator</text>
       </svg>
     );
+  } else if (m === "treadmill") {
+    // The hedonic treadmill: running hard, going nowhere.
+    const run = frame * 0.35;
+    const legA = Math.sin(run) * 22, legB = Math.sin(run + Math.PI) * 22;
+    const beltX = (frame * 6) % 60;
+    art = (
+      <svg width={VW} height={VH}>
+        <RRect x={300} y={360} w={380} h={34} fill="#3a3f45" strokeWidth={5} />
+        {Array.from({ length: 8 }, (_, i) => <line key={i} x1={310 + ((i * 60 + beltX) % 360)} y1={377} x2={330 + ((i * 60 + beltX) % 360)} y2={377} stroke="#cfd8dc" strokeWidth={4} />)}
+        <RRect x={300} y={300} w={14} h={120} fill="#59707c" strokeWidth={4} />
+        <RRect x={300} y={300} w={120} h={12} fill="#59707c" strokeWidth={4} />
+        <g transform="translate(500 300)">
+          <circle cx={0} cy={-70} r={26} fill="#f0cda6" stroke={ink} strokeWidth={4} />
+          <path d="M-22 60 Q-22 -30 0 -30 Q22 -30 22 60" fill={blue} stroke={ink} strokeWidth={4} />
+          <line x1={-6} y1={10} x2={-6 - legA} y2={62} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+          <line x1={6} y1={10} x2={6 - legB} y2={62} stroke={ink} strokeWidth={6} strokeLinecap="round" />
+        </g>
+        <text x={VW / 2} y={470} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">running hard — going nowhere</text>
+      </svg>
+    );
+  } else if (m === "lifestylecreep") {
+    // Income rises — but spending rises right alongside it. The gap never opens.
+    const p = interpolate(frame, [fps * 0.5, fps * 2.6], [0, 1], clampBoth);
+    const base = 440;
+    const inc = 120 + p * 260, spend = 110 + p * 250;
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={120} y1={base} x2={VW - 80} y2={base} stroke={ink} strokeWidth={4} />
+        <RRect x={300} y={base - inc} w={120} h={inc} fill={green} strokeWidth={3} />
+        <RRect x={560} y={base - spend} w={120} h={spend} fill={red} strokeWidth={3} />
+        <text x={360} y={base - inc - 16} fontSize={28} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>income</text>
+        <text x={620} y={base - spend - 16} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>spending</text>
+        <text x={VW / 2} y={base + 44} fontSize={28} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the raise arrives — so does the spending</text>
+      </svg>
+    );
+  } else if (m === "leakybucket") {
+    // Money pours into a bucket riddled with holes — nothing stays in.
+    art = (
+      <svg width={VW} height={VH}>
+        {Array.from({ length: 6 }, (_, i) => { const y = 60 + ((frame * 8 + i * 30) % 120); const op = interpolate((frame * 8 + i * 30) % 120, [0, 20, 100, 120], [0, 1, 1, 0]); return <g key={"in" + i} opacity={op}><circle cx={490 + (i % 2 ? 10 : -10)} cy={y} r={15} fill={gold} stroke={ink} strokeWidth={2.5} /><text x={490 + (i % 2 ? 10 : -10)} y={y + 6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <path d="M360 210 L620 210 L580 420 L400 420 Z" fill="#9aa6ad" stroke={ink} strokeWidth={6} strokeLinejoin="round" />
+        <path d="M360 210 Q490 180 620 210" fill="none" stroke={ink} strokeWidth={5} />
+        {[[420, 320], [540, 300], [470, 370]].map(([hx, hy], i) => <circle key={"h" + i} cx={hx} cy={hy} r={9} fill={ink} />)}
+        {[[420, 320, -1], [540, 300, 1], [470, 370, 1]].map(([hx, hy, d], i) => { const y = hy + ((frame * 7 + i * 25) % 110); const op = interpolate((frame * 7 + i * 25) % 110, [0, 15, 95, 110], [0, 1, 1, 0]); return <g key={"out" + i} opacity={op}><circle cx={hx + d * 26} cy={y} r={12} fill={gold} stroke={ink} strokeWidth={2} /></g>; })}
+        <text x={VW / 2} y={470} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">it goes out as fast as it comes in</text>
+      </svg>
+    );
+  } else if (m === "goldenhandcuffs") {
+    // A big salary that chains you to the job you can't afford to leave.
+    const glint = 0.5 + 0.5 * Math.sin(frame * 0.2);
+    art = (
+      <svg width={VW} height={VH}>
+        {[330, 560].map((cx, i) => (
+          <g key={i}>
+            <circle cx={cx} cy={250} r={70} fill="none" stroke={gold} strokeWidth={22} />
+            <circle cx={cx} cy={250} r={70} fill="none" stroke="#fff" strokeWidth={4} opacity={glint} />
+          </g>
+        ))}
+        <rect x={400} y={238} width={90} height={24} rx={6} fill={gold} stroke={ink} strokeWidth={3} />
+        <text x={VW / 2} y={250} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif" dy={2}>$</text>
+        <text x={VW / 2} y={400} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">a salary you can't afford to lose</text>
+      </svg>
+    );
+  } else if (m === "joneses") {
+    // Keeping up with the Joneses: one house upgrades, the neighbour strains to match.
+    const up = interpolate(frame, [fps * 0.8, fps * 1.8], [0, 1], clampBoth);
+    const house = (x: number, scale: number, col: string, tag: string) => (
+      <g transform={`translate(${x} ${420}) scale(${scale})`}>
+        <rect x={-80} y={-110} width={160} height={110} fill="#fff" stroke={ink} strokeWidth={5} />
+        <path d="M-96 -108 L0 -180 L96 -108 Z" fill={col} stroke={ink} strokeWidth={5} />
+        <rect x={-26} y={-60} width={52} height={60} fill={ink} />
+        <text x={0} y={34} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{tag}</text>
+      </g>
+    );
+    art = (
+      <svg width={VW} height={VH}>
+        {house(270, 1.0, "#3a6ea5", "the Joneses")}
+        {house(690, 0.8 + up * 0.25, red, "…you, matching")}
+        <path d="M470 180 l0 -40 M470 140 l-10 14 M470 140 l10 14" stroke={theme.inkSoft} strokeWidth={4} fill="none" strokeLinecap="round" opacity={up} />
+        <text x={VW / 2} y={490} fontSize={28} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">keeping up — on credit</text>
+      </svg>
+    );
+  } else if (m === "paycheckgone") {
+    // The paycheck lands and is instantly eaten by fixed bills — nothing left.
+    const inAt = fps * 0.5, outAt = fps * 1.4;
+    const checkX = interpolate(frame, [inAt, outAt], [-200, 430], clampBoth);
+    const eaten = interpolate(frame, [outAt, fps * 2.4], [0, 1], clampBoth);
+    const bills = ["TAX", "MORTGAGE", "CHILDCARE", "CARS"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${checkX} 200)`} opacity={1 - eaten}>
+          <rect x={0} y={0} width={220} height={110} rx={8} fill="#eaf4ec" stroke={ink} strokeWidth={5} />
+          <text x={110} y={50} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>PAY</text>
+          <text x={110} y={86} fontSize={34} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">$300K</text>
+        </g>
+        {bills.map((b, i) => { const op = interpolate(frame, [outAt + i * 6, outAt + i * 6 + 8], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={200 + i * 150} y={330} width={135} height={60} rx={8} fill={red} stroke={ink} strokeWidth={4} /><text x={267 + i * 150} y={368} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{b}</text></g>; })}
+        {eaten > 0.9 && <text x={VW / 2} y={200} fontSize={40} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={interpolate(frame, [fps * 2.3, fps * 2.7], [0, 1], clampBoth)}>$0 left</text>}
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
@@ -1127,6 +1258,7 @@ export const SceneView: React.FC<{ scene: Scene; sources?: Record<string, Source
     case "compare": inner = <Compare scene={scene} />; break;
     case "timeline": inner = <Timeline scene={scene} />; break;
     case "image": inner = <ImageScene_ scene={scene} />; break;
+    case "gif": inner = <GifScene_ scene={scene} />; break;
     case "diagram": inner = <DiagramScene_ scene={scene} />; break;
     case "stage": inner = <StageScene_ scene={scene} />; break;
   }

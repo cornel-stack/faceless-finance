@@ -7,6 +7,8 @@
     "build:episode": "bash tools/build-episode.sh",
     "clips": "node tools/mocap/build-clips.mjs",
     "narrate": "python3 tools/narration/synth.py",
+    "gifs": "node tools/gifs/fetch.mjs",
+    "memes": "node tools/memes/fetch.mjs",
     "preview": "pnpm --filter @ff/render preview",
     "render:video": "pnpm --filter @ff/render video Episode out/episode.mp4 --codec=h264"
   },

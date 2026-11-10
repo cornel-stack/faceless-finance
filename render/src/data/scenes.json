@@ -1,712 +1,963 @@
 [
   {
     "id": "s1",
-    "type": "doodle",
-    "narration": "For decades, the deal in America was simple. One job could buy a house, a car, raise a couple of kids, and still put something away for retirement.",
-    "items": [
-      "house",
-      "couple",
-      "baby"
-    ],
-    "labels": [
-      "one house",
-      "one income",
-      "one dream"
-    ],
-    "caption": "the old deal"
-  },
-  {
-    "id": "s2",
-    "type": "screenshot",
-    "narration": "They called it the American Dream — the promise that anyone who worked hard could attain a better life.",
-    "sourceId": "wiki-dream"
-  },
-  {
-    "id": "s3",
     "type": "character",
-    "narration": "For a huge share of the country, that promise is quietly breaking. And the data shows it happening in slow motion.",
-    "pose": "think",
-    "bubble": "still true?",
+    "narration": "Here's a family that looks like they've completely won at life. Three hundred thousand dollars a year. A beautiful house. Two nice cars. And at the end of every month — nothing left.",
+    "pose": "explain",
     "props": [
       {
+        "name": "house",
+        "label": "$300K/yr"
+      },
+      {
         "name": "warning",
-        "label": "…breaking quietly"
+        "label": "…$0 left"
       }
     ]
   },
   {
-    "id": "s4",
+    "id": "s2",
+    "type": "image",
+    "narration": "A surprise bill lands, and quietly, they can't actually cover it. On paper, rich. In reality, one paycheck from panic.",
+    "src": "img/memes/thisisfine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "earning $300k",
+    "memeBottom": "with nothing saved"
+  },
+  {
+    "id": "s3",
     "type": "callout",
-    "narration": "In 1971, around sixty-one percent of American adults lived in middle-income households. Today it's closer to fifty. The middle is emptying out.",
-    "text": "61% → 50%",
-    "sub": "share of US adults in the middle class (Pew)",
-    "icon": "crowd"
+    "narration": "And they are not alone. In recent surveys, around a quarter of Americans earning over a hundred and fifty thousand dollars said they live paycheck to paycheck.",
+    "text": "1 in 4",
+    "sub": "earning $150K+ live paycheck to paycheck",
+    "icon": "receipt"
+  },
+  {
+    "id": "s78",
+    "type": "character",
+    "narration": "And it's not only the merely-comfortable. Even among people earning over two hundred thousand dollars, a striking share report the exact same thing: nothing left over.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "even $200K+"
+      },
+      {
+        "name": "warning",
+        "label": "…nothing left"
+      }
+    ]
+  },
+  {
+    "id": "s79",
+    "type": "stage",
+    "narration": "Because the trap doesn't care about the size of the number. Hand it a bigger paycheck, and it simply scales up to swallow that too.",
+    "motif": "leakybucket",
+    "caption": "it scales with the income"
+  },
+  {
+    "id": "s4",
+    "type": "character",
+    "narration": "Which sounds impossible. How do you burn through a top-five-percent income and still feel broke?",
+    "pose": "think",
+    "bubble": "how is that possible?",
+    "props": [
+      {
+        "name": "coins",
+        "label": "$300K… gone?"
+      }
+    ]
   },
   {
     "id": "s5",
     "type": "stage",
-    "narration": "And here's the part nobody shows you. It's not just shrinking. It's splitting — a few rising to the top, more sliding down.",
-    "motif": "hollowout",
-    "caption": "the middle is hollowing out"
+    "narration": "The answer isn't yachts and private jets. It's something much quieter, and much closer to home. It can happen to almost anyone who gets a raise.",
+    "motif": "leakybucket",
+    "caption": "the money leaks out as fast as it comes in"
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's follow the numbers. Why is the middle class disappearing — and what's actually taking its place?",
-    "heading": "Why the Middle Class Is Disappearing",
-    "kicker": "the data nobody shows",
-    "sub": "It didn't vanish. It got squeezed."
+    "narration": "So let's follow three hundred thousand dollars, all the way through — and watch exactly where it disappears.",
+    "heading": "Paycheck to Paycheck on $300K",
+    "kicker": "how it actually happens",
+    "sub": "It's not how much you make. It's the gap."
   },
   {
     "id": "s7",
     "type": "character",
-    "narration": "First — what even is the middle class? Weirdly, almost nobody agrees.",
+    "narration": "Start with the mistake sitting underneath all of this. We treat a big income as the same thing as being rich. It isn't.",
     "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "no fixed line"
+        "name": "paystub",
+        "label": "big income"
+      },
+      {
+        "name": "warning",
+        "label": "≠ rich"
       }
     ]
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "narration": "Technically it's just the people in the middle of the income ladder — not rich, not poor.",
-    "sourceId": "wiki-mc"
+    "narration": "There's even a name for these people. HENRYs — High Earners, Not Rich Yet. Big salary, small savings.",
+    "sourceId": "wiki-disp"
   },
   {
     "id": "s9",
     "type": "screenshot",
-    "narration": "But the definitions are so loose that by some measures it's a quarter of households, and by others, three-quarters.",
-    "sourceId": "wiki-mcus"
+    "narration": "Because wealth isn't your paycheck. Wealth is what you actually keep — your assets, minus everything you owe.",
+    "sourceId": "wiki-networth"
   },
   {
     "id": "s10",
-    "type": "character",
-    "narration": "So let's use a clean one, from the Pew Research Center. Middle class means a household earning between two-thirds and double the national median income.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "paystub",
-        "label": "⅔ to 2× median"
-      }
-    ]
+    "type": "stage",
+    "narration": "And the only thing that ever turns income into wealth is the gap — the space between what you earn and what you spend.",
+    "motif": "lifestylecreep",
+    "caption": "wealth lives in the gap"
   },
   {
     "id": "s11",
-    "type": "compare",
-    "narration": "But 'middle class' was never really about a precise number. It was about a feeling — security. A home, healthcare, retirement, and kids who'd do better than you.",
-    "left": {
-      "title": "it used to mean",
-      "value": "security",
-      "icon": "house"
-    },
-    "right": {
-      "title": "now it means",
-      "value": "anxiety",
-      "icon": "warning"
-    }
+    "type": "screenshot",
+    "narration": "That gap has a boring name: saving. Income not spent. It is the entire game.",
+    "sourceId": "wiki-saving"
   },
   {
     "id": "s12",
-    "type": "timeline",
-    "narration": "And you can watch that security erode, decade by decade. One income to two. A starter home to a bidding war. A degree that was free-ish to one that costs a fortune.",
-    "title": "The same life, getting harder to afford",
-    "events": [
-      {
-        "year": "1970",
-        "label": "one income buys the house",
-        "icon": "house"
-      },
-      {
-        "year": "1990",
-        "label": "now you need two",
-        "icon": "couple"
-      },
-      {
-        "year": "2008",
-        "label": "debt fills the gap",
-        "icon": "creditcard"
-      },
-      {
-        "year": "today",
-        "label": "two incomes, still tight",
-        "icon": "warning"
-      }
-    ],
-    "highlight": 3
+    "type": "chalkboard",
+    "narration": "So the real formula isn't complicated. What you keep equals what you earn, minus what you spend. Earn more, and spend all of it, and you keep exactly zero.",
+    "lines": [
+      "wealth = what you earn",
+      "          − what you spend",
+      "spend it all → you keep $0"
+    ]
   },
   {
     "id": "s13",
     "type": "character",
-    "narration": "That feeling — not the salary — is what's really disappearing. And three big forces are pulling it apart.",
-    "pose": "point",
-    "bubble": "three forces"
-  },
-  {
-    "id": "s14",
-    "type": "title",
-    "narration": "The first force is the one you can feel every single month: the squeeze.",
-    "heading": "Force One: The Squeeze",
-    "kicker": "wages flat, costs soaring"
-  },
-  {
-    "id": "s15",
-    "type": "screenshot",
-    "narration": "Start with your paycheck. What matters isn't the number on it — it's what that number can actually buy. Real wages.",
-    "sourceId": "wiki-realwage"
-  },
-  {
-    "id": "s16",
-    "type": "screenshot",
-    "narration": "For decades after the war, as workers produced more each hour, their pay climbed right alongside it. Produce more, earn more.",
-    "sourceId": "wiki-productivity"
-  },
-  {
-    "id": "s17",
-    "type": "chart",
-    "narration": "Then, around the 1970s, that line split in two. The economy kept getting more productive — but the typical worker's pay flattened out.",
-    "chartType": "line",
-    "title": "Productivity kept climbing. Pay didn't.",
-    "data": [
-      {
-        "label": "1970",
-        "value": 100
-      },
-      {
-        "label": "1985",
-        "value": 150
-      },
-      {
-        "label": "2000",
-        "value": 200
-      },
-      {
-        "label": "2020",
-        "value": 255
-      }
-    ],
-    "series2": [
-      {
-        "label": "1970",
-        "value": 100
-      },
-      {
-        "label": "1985",
-        "value": 108
-      },
-      {
-        "label": "2000",
-        "value": 114
-      },
-      {
-        "label": "2020",
-        "value": 122
-      }
-    ],
-    "seriesLabels": [
-      "output per worker",
-      "typical pay"
-    ],
-    "note": "the gap = the squeeze",
-    "noteAt": 3
-  },
-  {
-    "id": "s18",
-    "type": "character",
-    "narration": "That growing gap between what workers produced and what they were paid became, quite simply, someone else's profit.",
+    "narration": "Which means a three-hundred-thousand-dollar earner who spends three hundred thousand has a savings rate of zero. Same as someone earning thirty thousand and spending thirty.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "chartup",
-        "label": "productivity ↑"
+        "name": "scale",
+        "label": "$300K earned"
       },
       {
-        "name": "paystub",
-        "label": "…pay stays flat"
+        "name": "scale",
+        "label": "$300K spent"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "title",
+    "narration": "So where does it all actually go? Let's take that full three hundred grand and follow it out the door.",
+    "heading": "Where $300K Actually Goes",
+    "kicker": "the money, line by line"
+  },
+  {
+    "id": "s15",
+    "type": "stage",
+    "narration": "First, before this family sees a single dollar, the biggest bill of all gets taken off the top.",
+    "motif": "paycheckgone",
+    "caption": "the paycheck lands… then vanishes"
+  },
+  {
+    "id": "s16",
+    "type": "screenshot",
+    "narration": "Taxes. And at this income, you're deep into the higher brackets, where each extra dollar is taxed the hardest.",
+    "sourceId": "wiki-incometax"
+  },
+  {
+    "id": "s17",
+    "type": "callout",
+    "narration": "Between federal, state, and payroll taxes, a high earner in an expensive state can lose roughly a third of it before anything else.",
+    "text": "~$95,000",
+    "sub": "gone to taxes first",
+    "icon": "taxform"
+  },
+  {
+    "id": "s18",
+    "type": "character",
+    "narration": "Just like that, three hundred thousand becomes around two hundred — and the spending hasn't even started.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "−$95K tax"
+      },
+      {
+        "name": "coins",
+        "label": "≈ $205K left"
       }
     ]
   },
   {
     "id": "s19",
     "type": "stage",
-    "narration": "Now squeeze that flat paycheck from the other side. Because the things a middle-class life actually requires did not stay flat. They exploded.",
-    "motif": "squeeze",
-    "caption": "flat wages, rising costs"
+    "narration": "Next, the single biggest lifestyle cost: the house. A big income usually means a big mortgage to match.",
+    "icons": [
+      "house",
+      "mortgage"
+    ],
+    "caption": "the house eats first"
   },
   {
     "id": "s20",
-    "type": "chart",
-    "narration": "Look at what's happened to prices since the 1980s. Televisions and gadgets got cheaper. But the pillars of a stable life ran away from wages completely.",
-    "chartType": "bar",
-    "title": "Price growth since the 1980s (%)",
-    "unit": "x",
-    "data": [
-      {
-        "label": "Wages",
-        "value": 80
-      },
-      {
-        "label": "Housing",
-        "value": 350
-      },
-      {
-        "label": "Healthcare",
-        "value": 600
-      },
-      {
-        "label": "College",
-        "value": 1200
-      }
-    ],
-    "highlight": 3,
-    "note": "wages couldn't keep up"
+    "type": "callout",
+    "narration": "A nice home in a good area can easily run forty-eight thousand a year — once you add the mortgage, property taxes, and insurance.",
+    "text": "$48,000",
+    "sub": "housing, every year",
+    "icon": "house"
   },
   {
     "id": "s21",
-    "type": "screenshot",
-    "narration": "Housing — the single biggest cost — has raced ahead of incomes for decades.",
-    "sourceId": "wiki-houseafford"
+    "type": "stage",
+    "narration": "Then, if there are young kids, a cost that quietly rivals the mortgage.",
+    "icons": [
+      "baby",
+      "warning"
+    ],
+    "caption": "…then the kids"
   },
   {
     "id": "s22",
-    "type": "screenshot",
-    "narration": "Healthcare in America costs far more than almost anywhere else on Earth.",
-    "sourceId": "wiki-health"
+    "type": "callout",
+    "narration": "Full-time childcare for two young children, in a major city, can cost forty thousand dollars a year, all on its own.",
+    "text": "$40,000",
+    "sub": "childcare for two kids",
+    "icon": "baby"
   },
   {
     "id": "s23",
-    "type": "screenshot",
-    "narration": "And the college degree that once guaranteed a middle-class life now often comes attached to decades of debt.",
-    "sourceId": "wiki-studentdebt"
+    "type": "stage",
+    "narration": "Add the two cars that match the lifestyle — the payments, the insurance, the gas.",
+    "icons": [
+      "car",
+      "gaspump"
+    ],
+    "caption": "two cars, two payments"
   },
   {
     "id": "s24",
-    "type": "doodle",
-    "narration": "Housing, healthcare, childcare, college — the exact pillars of a middle-class life are the ones whose prices ran away fastest.",
-    "items": [
-      "paystub",
-      "house",
-      "hospital",
-      "gradcap"
-    ],
-    "labels": [
-      "one paycheck",
-      "housing",
-      "healthcare",
-      "college"
-    ],
-    "caption": "one paycheck, four exploding costs",
-    "flow": true
+    "type": "callout",
+    "narration": "Two financed cars can quietly take eighteen thousand dollars a year between payments, insurance, and fuel.",
+    "text": "$18,000",
+    "sub": "the two cars",
+    "icon": "car"
   },
   {
     "id": "s25",
-    "type": "title",
-    "narration": "Which led straight to force two. When one income stopped stretching, families did the obvious thing — they sent two people to work.",
-    "heading": "Force Two: Running to Stand Still",
-    "kicker": "two incomes, same life"
+    "type": "doodle",
+    "narration": "Now pile on everything else a 'normal' upper-middle life assumes. Food, utilities, phones, travel, the gym, the subscriptions, the kids' activities.",
+    "items": [
+      "dining",
+      "phone",
+      "creditcard"
+    ],
+    "labels": [
+      "food & dining",
+      "bills & phones",
+      "everything else"
+    ],
+    "caption": "the long tail of 'normal'",
+    "flow": true
   },
   {
     "id": "s26",
-    "type": "image",
-    "narration": "But a bankruptcy expert named Elizabeth Warren spotted the trap hiding inside that fix.",
-    "src": "img/warren.jpg",
-    "label": "Elizabeth Warren",
-    "caption": "…who named the trap"
-  },
-  {
-    "id": "s27",
-    "type": "screenshot",
-    "narration": "Her research found that two-income families were ending up more financially fragile, not less.",
-    "sourceId": "wiki-twoincome"
-  },
-  {
-    "id": "s28",
-    "type": "stage",
-    "narration": "Why? Because once most families had two earners, the price of what they competed for — especially houses in good school districts — simply rose to soak up that second income.",
-    "motif": "twoincome",
-    "caption": "two incomes — still treading water"
-  },
-  {
-    "id": "s29",
-    "type": "character",
-    "narration": "So now it takes two incomes to afford what one used to. And with both parents working, a single job loss or one illness can sink the entire ship.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "house",
-        "label": "bid up by two incomes"
-      },
-      {
-        "name": "warning",
-        "label": "…no safety margin"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "So how did families cover the gap in the meantime? Simple. They borrowed.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "creditcard",
-        "label": "fill the gap"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "stage",
-    "narration": "Credit cards, auto loans, student loans, home-equity lines. For years, debt quietly papered over the fact that the paycheck no longer reached the end of the month.",
-    "icons": [
-      "creditcard",
-      "receipt"
-    ],
-    "caption": "debt filled the gap"
-  },
-  {
-    "id": "s32",
     "type": "callout",
-    "narration": "Which is how you get families earning six figures who still live paycheck to paycheck. The income looks middle class. The security is gone.",
-    "text": "paycheck to paycheck",
-    "sub": "even many high earners",
+    "narration": "Lump all of that together and you're easily at another forty thousand a year — most of it on autopilot.",
+    "text": "$40,000",
+    "sub": "food, bills, travel, the rest",
     "icon": "receipt"
   },
   {
-    "id": "s33",
+    "id": "s80",
+    "type": "callout",
+    "narration": "And we're quietly skipping things. Health insurance and medical costs for a family can run another twenty-plus thousand dollars a year.",
+    "text": "$24,000",
+    "sub": "health insurance + out-of-pocket",
+    "icon": "hospital"
+  },
+  {
+    "id": "s81",
     "type": "character",
-    "narration": "It can feel fine — right up until it isn't. One surprise bill, and the whole illusion wobbles.",
-    "pose": "handtohead",
-    "expression": "worried",
-    "bubble": "it's fine. this is fine.",
+    "narration": "Then there's saving for the kids' college, home repairs, the dentist, the dog. The 'miscellaneous' column is where budgets quietly go to die.",
+    "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "one bill away"
+        "name": "gradcap",
+        "label": "529 for the kids"
+      },
+      {
+        "name": "receipt",
+        "label": "…and the rest"
       }
     ]
   },
   {
-    "id": "s34",
+    "id": "s27",
+    "type": "chart",
+    "narration": "Now lay it all out on one chart. Here is where the whole three hundred thousand actually went.",
+    "chartType": "bar",
+    "title": "Where the $300K goes, every year",
+    "unit": "USD",
+    "data": [
+      {
+        "label": "Left over",
+        "value": 9000
+      },
+      {
+        "label": "Cars",
+        "value": 18000
+      },
+      {
+        "label": "Life/food",
+        "value": 40000
+      },
+      {
+        "label": "Childcare",
+        "value": 40000
+      },
+      {
+        "label": "Housing",
+        "value": 48000
+      },
+      {
+        "label": "Retirement",
+        "value": 50000
+      },
+      {
+        "label": "Taxes",
+        "value": 95000
+      }
+    ],
+    "highlight": 0,
+    "note": "almost nothing left"
+  },
+  {
+    "id": "s28",
+    "type": "character",
+    "narration": "And look at what's left at the very end, after a responsible retirement contribution. A tiny sliver. One broken furnace away from zero.",
+    "pose": "handtohead",
+    "expression": "worried",
+    "bubble": "that's… it?",
+    "props": [
+      {
+        "name": "coins",
+        "label": "the sliver that's left"
+      }
+    ]
+  },
+  {
+    "id": "s29",
+    "type": "stage",
+    "narration": "And notice — none of that was reckless. No gambling, no yacht. Just the default settings of an expensive, 'successful' life.",
+    "motif": "paycheckgone",
+    "caption": "nothing wild — just 'normal'"
+  },
+  {
+    "id": "s30",
     "type": "title",
-    "narration": "And while the middle was being squeezed, the very top was pulling away — fast.",
-    "heading": "Force Three: The Great Divergence",
-    "kicker": "the top pulls away"
+    "narration": "But that raises the real question. Why does the spending always seem to rise to swallow the income — no matter how high the income gets?",
+    "heading": "The Treadmill",
+    "kicker": "why spending always catches up"
+  },
+  {
+    "id": "s31",
+    "type": "screenshot",
+    "narration": "The answer is one of the most studied ideas in psychology: the hedonic treadmill.",
+    "sourceId": "wiki-treadmill"
+  },
+  {
+    "id": "s32",
+    "type": "stage",
+    "narration": "We quickly get used to whatever we have. The raise feels amazing for about a month — then it just becomes the new normal, and we start eyeing the next thing.",
+    "motif": "treadmill",
+    "caption": "we adapt to every upgrade"
+  },
+  {
+    "id": "s33",
+    "type": "screenshot",
+    "narration": "In money terms, it has its own name too: lifestyle creep.",
+    "sourceId": "wiki-creep"
+  },
+  {
+    "id": "s34",
+    "type": "image",
+    "narration": "Every raise arrives with a quiet temptation. Bank the extra — or finally get the nicer version of everything.",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "saving the whole raise",
+    "memeBottom": "leasing a nicer SUV"
   },
   {
     "id": "s35",
-    "type": "screenshot",
-    "narration": "Income inequality in America has climbed back to levels not seen since the 1920s.",
-    "sourceId": "wiki-incineq"
+    "type": "stage",
+    "narration": "So the bigger paycheck becomes a bigger house. The bonus becomes a better car. The promotion becomes a pricier zip code. The spending climbs in lockstep.",
+    "motif": "lifestylecreep",
+    "caption": "income up → spending up, together"
   },
   {
     "id": "s36",
-    "type": "screenshot",
-    "narration": "And it's even sharper in wealth — what you own, not just what you earn.",
-    "sourceId": "wiki-wealthineq"
+    "type": "character",
+    "narration": "And here's the cruel part. These upgrades don't feel like luxuries for long. Shockingly fast, they turn into things you can't imagine living without.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "car",
+        "label": "yesterday's treat"
+      },
+      {
+        "name": "warning",
+        "label": "…today's 'need'"
+      }
+    ]
+  },
+  {
+    "id": "s82",
+    "type": "stage",
+    "narration": "Psychologists even named the comedown: the arrival fallacy. The thing you were sure would finally make you happy gives a quick thrill — then fades, and the goalpost slides forward again.",
+    "motif": "treadmill",
+    "caption": "the thrill always fades"
+  },
+  {
+    "id": "s83",
+    "type": "image",
+    "narration": "You cannot actually shop your way to 'enough,' because the target moves every single time you reach it.",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "you can't buy your way to 'enough'"
   },
   {
     "id": "s37",
-    "type": "stage",
-    "narration": "The share of the country's income flowing to the middle class has been shrinking for fifty years — while the slice going to the top has swelled.",
-    "motif": "shrinkpie",
-    "caption": "the middle's slice shrinks"
+    "type": "image",
+    "narration": "Yesterday's luxury quietly becomes today's baseline. The second car, the cleaner, the private school — all re-filed under 'necessities.'",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "downgrade their lifestyle"
   },
   {
     "id": "s38",
-    "type": "image",
-    "narration": "Here's the quiet engine of it. The richest don't mostly earn a wage. They own assets — stocks, companies, real estate.",
-    "src": "img/bezos.jpg",
-    "memeTop": "when you own assets",
-    "memeBottom": "not a paycheck",
-    "caption": "the gap is ownership"
+    "type": "stage",
+    "narration": "And unlike income, lifestyle has a ratchet. It clicks up easily — and almost never clicks back down without real pain.",
+    "motif": "leakybucket",
+    "caption": "lifestyle ratchets up, not down"
   },
   {
     "id": "s39",
-    "type": "image",
-    "narration": "So when those assets boom, owners rocket away from everyone living on a salary. Over forty years, assets have massively outrun wages.",
-    "src": "img/musk.jpg",
-    "memeTop": "stocks go up",
-    "memeBottom": "wages don't",
-    "caption": "assets raced ahead of pay"
+    "type": "title",
+    "narration": "Then there's the second engine driving the spending — and it's not really about you at all. It's about everyone around you.",
+    "heading": "Keeping Up",
+    "kicker": "the comparison trap"
   },
   {
     "id": "s40",
-    "type": "compare",
-    "narration": "Which means two families earning the identical salary can end up worlds apart — purely based on whether they owned a home and some stocks, or didn't.",
-    "left": {
-      "title": "wage earners",
-      "value": "fell behind",
-      "icon": "paystub"
-    },
-    "right": {
-      "title": "asset owners",
-      "value": "pulled away",
-      "icon": "chartup"
-    }
+    "type": "screenshot",
+    "narration": "Economists have described it for over a century. We don't judge our wealth in absolute terms — we judge it against the people around us.",
+    "sourceId": "wiki-joneses"
   },
   {
     "id": "s41",
-    "type": "chart",
-    "narration": "Add it all up, and the wealth of the country is lopsided. The bottom half owns almost nothing. The top tenth owns roughly two-thirds of everything.",
-    "chartType": "bar",
-    "title": "Share of US household wealth",
-    "unit": "x",
-    "data": [
-      {
-        "label": "bottom 50%",
-        "value": 3
-      },
-      {
-        "label": "middle 40%",
-        "value": 28
-      },
-      {
-        "label": "top 10%",
-        "value": 69
-      }
-    ],
-    "highlight": 2,
-    "note": "top 10% own ~⅔"
+    "type": "stage",
+    "narration": "When your neighbors, your coworkers, your old classmates all upgrade, staying put feels like falling behind — even when you're objectively doing great.",
+    "motif": "joneses",
+    "caption": "measured against the neighbors"
   },
   {
     "id": "s42",
     "type": "screenshot",
-    "narration": "And the ladder up is getting harder to climb. Economic mobility — the odds a kid out-earns their parents — has been falling for generations.",
-    "sourceId": "wiki-mobility"
+    "narration": "Thorstein Veblen named the extreme version of this back in 1899: conspicuous consumption. Spending to signal status.",
+    "sourceId": "wiki-veblen"
   },
   {
     "id": "s43",
+    "type": "image",
+    "narration": "So the fancy watch, the renovation, the designer everything — a lot of it isn't for you. It's a message to everyone watching.",
+    "src": "img/memes/distracted.jpg",
+    "meme": "Distracted Boyfriend",
+    "memeBottom": "chasing status instead of savings"
+  },
+  {
+    "id": "s84",
     "type": "stage",
-    "narration": "For kids born in 1940, the chance of earning more than their parents was around ninety percent. For kids born in the 1980s, it had fallen to barely a coin flip.",
-    "motif": "ladderbreak",
-    "caption": "the next rung is missing"
+    "narration": "And social media pours gasoline on it. You're no longer just keeping up with the neighbors — you're keeping up with the most polished moment of everyone you've ever met.",
+    "icons": [
+      "phone",
+      "crowd"
+    ],
+    "caption": "everyone's highlight reel"
+  },
+  {
+    "id": "s85",
+    "type": "image",
+    "narration": "Every feed is a shop window of other people's spending. The quiet pressure to match it is relentless — and expensive.",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "save the bonus",
+    "memeBottom": "or post the vacation"
   },
   {
     "id": "s44",
-    "type": "title",
-    "narration": "So why did this happen? A big part of it was that a certain kind of job simply disappeared.",
-    "heading": "Why It Happened",
-    "kicker": "the jobs changed"
-  },
-  {
-    "id": "s45",
-    "type": "screenshot",
-    "narration": "The well-paid factory work that built the postwar middle class was hollowed out by deindustrialization.",
-    "sourceId": "wiki-deind"
-  },
-  {
-    "id": "s46",
-    "type": "doodle",
-    "narration": "Globalization and automation moved millions of those solid middle-wage jobs overseas, or handed them to machines.",
-    "items": [
-      "factory",
-      "globe",
-      "chip"
-    ],
-    "labels": [
-      "factory jobs",
-      "offshored",
-      "or automated"
-    ],
-    "caption": "the middle rungs vanished",
-    "flow": true
-  },
-  {
-    "id": "s47",
-    "type": "stage",
-    "narration": "What replaced them split in two: high-paid jobs for the credentialed few, and low-paid service work for everyone else. Economists call it job polarization.",
-    "motif": "hollowout",
-    "caption": "jobs split to the extremes"
-  },
-  {
-    "id": "s48",
     "type": "character",
-    "narration": "The economy stopped producing middle-wage work — which was exactly the kind of job the middle class had been built on.",
+    "narration": "And the higher you climb, the more expensive your reference group gets. Your 'normal' is now set by people who out-earn you — so you stretch to match.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "factory",
-        "label": "middle-wage jobs"
+        "name": "crowd",
+        "label": "richer peers"
       },
       {
-        "name": "chartdown",
-        "label": "…thinning out"
+        "name": "pricetag",
+        "label": "…pricier 'normal'"
+      }
+    ]
+  },
+  {
+    "id": "s45",
+    "type": "title",
+    "narration": "But if the spending is quietly crushing them, why don't these families just stop? Because they're held in place by a set of very comfortable traps.",
+    "heading": "The Golden Traps",
+    "kicker": "why they can't just stop"
+  },
+  {
+    "id": "s46",
+    "type": "stage",
+    "narration": "The first is the most famous: golden handcuffs.",
+    "motif": "goldenhandcuffs",
+    "caption": "golden handcuffs"
+  },
+  {
+    "id": "s47",
+    "type": "screenshot",
+    "narration": "The big salary ties you to a demanding job you can't easily walk away from — because your whole life is now built on that exact paycheck.",
+    "sourceId": "wiki-handcuffs"
+  },
+  {
+    "id": "s48",
+    "type": "character",
+    "narration": "The mortgage, the schools, the cars — they all assume the income keeps coming. So the better the lifestyle, the more trapped in the job you become.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "can't quit"
+      },
+      {
+        "name": "house",
+        "label": "…it all depends on the job"
       }
     ]
   },
   {
     "id": "s49",
-    "type": "screenshot",
-    "narration": "None of this was one villain, or one law. It was a slow drift of many forces, all quietly pushing the same way.",
-    "sourceId": "wiki-econineq"
+    "type": "stage",
+    "narration": "The second trap is geography. A huge salary in a huge-cost city is a much smaller salary than it looks.",
+    "icons": [
+      "officetower",
+      "pricetag"
+    ],
+    "caption": "big salary, big-city prices"
   },
   {
     "id": "s50",
-    "type": "chalkboard",
-    "narration": "Flat real wages. Soaring core costs. Vanishing middle jobs. Wealth pooling at the top. Four forces, one direction — a hollowed-out middle.",
-    "lines": [
-      "flat real wages",
-      "soaring core costs",
-      "vanishing middle jobs",
-      "wealth pooling at the top"
-    ]
+    "type": "screenshot",
+    "narration": "Because the cost of living — what it takes to maintain the same life — is dramatically higher in the places those big jobs tend to be.",
+    "sourceId": "wiki-col"
   },
   {
     "id": "s51",
-    "type": "title",
-    "narration": "Now, to be honest about it — this is not a simple tragedy.",
-    "heading": "Is It All Bad?",
-    "kicker": "the honest answer"
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "Because part of that shrinking middle didn't fall at all. It actually climbed into higher incomes.",
-    "pose": "think",
-    "bubble": "some moved UP"
-  },
-  {
-    "id": "s53",
-    "type": "stage",
-    "narration": "A real chunk of the 'disappearing' middle class moved up and out the top. The upper-income group grew faster than the lower one did.",
-    "icons": [
-      "chartup",
-      "crowd"
-    ],
-    "caption": "some of the middle moved up"
-  },
-  {
-    "id": "s54",
-    "type": "screenshot",
-    "narration": "And in raw cost-of-living terms, some things got dramatically better and cheaper.",
-    "sourceId": "wiki-costliving"
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "narration": "A phone in your pocket today is more powerful than a 1970s mainframe — for about the price of a nice dinner. Gadgets got radically cheaper.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "cheap, powerful tech"
-      },
-      {
-        "name": "laptop",
-        "label": "undreamed-of gadgets"
-      }
-    ]
-  },
-  {
-    "id": "s56",
     "type": "compare",
-    "narration": "Here's the cruel split, though. The things that got cheaper are the gadgets. The things that got far pricier are the actual pillars of a stable life.",
+    "narration": "Three hundred thousand dollars in a cheap city is genuinely rich. The identical number in Manhattan or the Bay Area is comfortably ordinary.",
     "left": {
-      "title": "got cheaper",
-      "value": "phones, TVs",
-      "icon": "phone"
+      "title": "$300K, low-cost city",
+      "value": "wealthy",
+      "icon": "coins"
     },
     "right": {
-      "title": "got pricier",
-      "value": "home, health, school",
-      "icon": "house"
+      "title": "$300K, big city",
+      "value": "ordinary",
+      "icon": "officetower"
     }
   },
   {
-    "id": "s57",
+    "id": "s52",
+    "type": "stage",
+    "narration": "And the third trap is the sneakiest. Almost all of these costs are fixed — locked-in monthly commitments that are brutally hard to unwind.",
+    "icons": [
+      "mortgage",
+      "chain"
+    ],
+    "caption": "fixed costs — hard to undo"
+  },
+  {
+    "id": "s53",
     "type": "character",
-    "narration": "You can stream every film ever made — but you can't afford the house, the doctor, or the degree. We got richer in stuff, and poorer in security.",
+    "narration": "You can skip a dinner out. You can't easily un-buy the house, un-enroll the kids, or hand back the car tomorrow. The big costs don't flex.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "laptop",
-        "label": "rich in stuff"
+        "name": "house",
+        "label": "can't un-buy"
       },
       {
-        "name": "house",
-        "label": "…poor in security"
+        "name": "school",
+        "label": "can't un-enroll"
       }
     ]
   },
   {
-    "id": "s58",
+    "id": "s86",
+    "type": "character",
+    "narration": "There's also a hidden tax on being busy. When a demanding job eats your time, you pay to buy it back — takeout, delivery, cleaners, the quick upgrade. Convenience is expensive.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "clock",
+        "label": "time-poor"
+      },
+      {
+        "name": "dining",
+        "label": "…so you pay for convenience"
+      }
+    ]
+  },
+  {
+    "id": "s87",
+    "type": "stage",
+    "narration": "And you can't just take a year off to reset, because the whole machine only balances if that big paycheck keeps landing, every single month.",
+    "motif": "goldenhandcuffs",
+    "caption": "the break you can't take"
+  },
+  {
+    "id": "s88",
+    "type": "compare",
+    "narration": "So the income that was meant to buy freedom quietly buys a cage instead. A very comfortable cage — but a cage.",
+    "left": {
+      "title": "meant to buy",
+      "value": "freedom",
+      "icon": "coins"
+    },
+    "right": {
+      "title": "actually bought",
+      "value": "a cage",
+      "icon": "chain"
+    }
+  },
+  {
+    "id": "s54",
+    "type": "image",
+    "narration": "Which is how a top-five-percent income ends up feeling fragile. Rich on paper, and quietly terrified of one bad month.",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "the budget",
+    "memeBottom": "after one more 'small' upgrade"
+  },
+  {
+    "id": "s55",
     "type": "title",
-    "narration": "Which points at what is really disappearing here — and it isn't a dollar figure.",
-    "heading": "What's Really Disappearing",
-    "kicker": "the real loss"
+    "narration": "So let's go back to the one number that actually decides whether you're building wealth or just spinning. The gap.",
+    "heading": "The Only Number That Matters",
+    "kicker": "it was never the salary"
+  },
+  {
+    "id": "s56",
+    "type": "screenshot",
+    "narration": "Not your income. Your savings rate — the share of what you earn that you actually keep.",
+    "sourceId": "wiki-saving"
+  },
+  {
+    "id": "s57",
+    "type": "compare",
+    "narration": "Picture two people. One earns three hundred thousand and saves nothing. The other earns sixty thousand and saves fifteen percent of it.",
+    "left": {
+      "title": "earns $300K",
+      "value": "saves $0",
+      "icon": "chartdown"
+    },
+    "right": {
+      "title": "earns $60K",
+      "value": "saves 15%",
+      "icon": "piggybank"
+    }
+  },
+  {
+    "id": "s58",
+    "type": "chart",
+    "narration": "Fast-forward a few decades. The high earner, saving nothing, has built nothing. The modest earner, saving steadily, is quietly a millionaire.",
+    "chartType": "line",
+    "title": "Who actually ends up wealthy",
+    "data": [
+      {
+        "label": "Yr 0",
+        "value": 0
+      },
+      {
+        "label": "Yr 10",
+        "value": 120
+      },
+      {
+        "label": "Yr 20",
+        "value": 360
+      },
+      {
+        "label": "Yr 30",
+        "value": 1000
+      }
+    ],
+    "series2": [
+      {
+        "label": "Yr 0",
+        "value": 0
+      },
+      {
+        "label": "Yr 10",
+        "value": 8
+      },
+      {
+        "label": "Yr 20",
+        "value": 12
+      },
+      {
+        "label": "Yr 30",
+        "value": 15
+      }
+    ],
+    "seriesLabels": [
+      "$60K saver",
+      "$300K spender"
+    ],
+    "note": "the saver wins",
+    "noteAt": 3
   },
   {
     "id": "s59",
-    "type": "stage",
-    "narration": "The middle class didn't exactly vanish. What's vanishing is the thing it really stood for — security. The simple confidence that if you worked hard, the basics were covered.",
-    "motif": "squeeze",
-    "caption": "security, not status"
+    "type": "character",
+    "narration": "The salary felt like the whole story. But the balance sheet only ever reflected the gap. Income is the engine — the gap is the wealth.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "income = engine"
+      },
+      {
+        "name": "piggybank",
+        "label": "gap = wealth"
+      }
+    ]
   },
   {
     "id": "s60",
     "type": "screenshot",
-    "narration": "Because the American Dream was never really about getting rich. It was the quiet promise that your kids would do better than you.",
-    "sourceId": "wiki-dream"
+    "narration": "Which is the strange, almost unfair truth of it. A smaller income with discipline beats a giant income without it, nearly every time.",
+    "sourceId": "wiki-wealth"
+  },
+  {
+    "id": "s89",
+    "type": "chalkboard",
+    "narration": "If you want one simple target, planners often suggest a rough split: about half your money on needs, a third on wants, and at least a fifth saved. The exact numbers matter less than fiercely protecting that last slice.",
+    "lines": [
+      "a simple target:",
+      "~50% needs",
+      "~30% wants",
+      "~20% saved — protect it"
+    ]
+  },
+  {
+    "id": "s90",
+    "type": "stage",
+    "narration": "And here's the encouraging part. The first stretch of saving is the hardest. Once it's invested and compounding, your money quietly starts earning right alongside you.",
+    "icons": [
+      "piggybank",
+      "chartup"
+    ],
+    "caption": "then compounding does the work"
   },
   {
     "id": "s61",
-    "type": "callout",
-    "narration": "And that promise, measured in cold data, has faded from near-certain to little better than a coin flip.",
-    "text": "a coin flip",
-    "sub": "odds a kid out-earns their parents today",
-    "icon": "scale",
-    "break": true
+    "type": "title",
+    "narration": "So how do you step off the treadmill — without taking a vow of poverty? It comes down to a handful of quiet habits.",
+    "heading": "How to Step Off",
+    "kicker": "the fix"
   },
   {
     "id": "s62",
-    "type": "stage",
-    "narration": "So when the rung you're standing on cracks, climbing to the next one stops feeling like effort — and starts feeling like luck.",
-    "motif": "ladderbreak",
-    "caption": "the promise is cracking"
+    "type": "screenshot",
+    "narration": "It starts with the oldest rule in personal finance, and the one almost nobody follows: pay yourself first.",
+    "sourceId": "wiki-budget"
   },
   {
     "id": "s63",
     "type": "character",
-    "narration": "But here's the genuinely hopeful part. None of this was a law of nature. It was built by choices — about wages, housing, healthcare, education, and taxes.",
+    "narration": "Before the lifestyle gets a vote, carve off the savings automatically. Move it the day the paycheck lands — so you never see it, and never adjust up to it.",
     "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "it was built by choices"
+        "name": "piggybank",
+        "label": "save first"
+      },
+      {
+        "name": "calendar",
+        "label": "…automatically"
       }
     ]
   },
   {
     "id": "s64",
     "type": "stage",
-    "narration": "A middle class isn't something a country just has. It's a promise a society chooses to keep — or quietly lets slide.",
-    "motif": "trustprop",
-    "caption": "it rests on a promise"
+    "narration": "The real trick is what you do with every raise. Send a big slice of it straight to savings before your lifestyle ever learns it existed.",
+    "motif": "lifestylecreep",
+    "caption": "bank the raise before you feel it"
   },
   {
     "id": "s65",
     "type": "character",
-    "narration": "So the next time someone says the middle class is 'disappearing,' you'll know it isn't vanishing into thin air. It's being squeezed, split, and priced out.",
-    "pose": "present",
-    "bubble": "now you can see it",
+    "narration": "Then guard the big three — housing, cars, and schools. Keep the fixed, hard-to-reverse costs modest, and the flexible fun stuff takes care of itself.",
+    "pose": "explain",
     "props": [
       {
-        "name": "ladder",
-        "label": "…and why"
+        "name": "house",
+        "label": "keep fixed costs low"
+      },
+      {
+        "name": "car",
+        "label": "…they don't flex"
       }
     ]
   },
   {
     "id": "s66",
+    "type": "stage",
+    "narration": "And plug the leaks. Every quiet, recurring auto-payment is a hole in the bucket that drains you a little every single month.",
+    "motif": "leakybucket",
+    "caption": "patch the recurring leaks"
+  },
+  {
+    "id": "s91",
     "type": "character",
-    "narration": "If this made the squeeze you can actually feel finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "Measure the right thing, too. Not your salary — your net worth. What you actually keep, checked a few times a year. What gets measured gets managed.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "track net worth"
+      },
+      {
+        "name": "gauge",
+        "label": "…not the salary"
+      }
+    ]
+  },
+  {
+    "id": "s92",
+    "type": "stage",
+    "narration": "And beware the quiet promise of 'one more raise, then I'll start saving.' On the treadmill, that year never quite arrives. The only move that works is to begin the day the money lands.",
+    "motif": "treadmill",
+    "caption": "the 'one more year' trap"
+  },
+  {
+    "id": "s67",
+    "type": "screenshot",
+    "narration": "Above all, decide what 'enough' actually looks like — before the treadmill decides it for you.",
+    "sourceId": "wiki-conspic"
+  },
+  {
+    "id": "s68",
+    "type": "character",
+    "narration": "Because without a finish line you choose on purpose, 'more' simply expands forever to eat whatever you earn.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "define 'enough'"
+      }
+    ]
+  },
+  {
+    "id": "s69",
+    "type": "title",
+    "narration": "So, back to our family — rich on paper, broke in reality. What was really going on?",
+    "heading": "So What Happened?",
+    "kicker": "the real answer"
+  },
+  {
+    "id": "s70",
+    "type": "character",
+    "narration": "They didn't have an income problem. They had a gap problem. The paycheck was enormous. The space between earning and spending was zero.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "income: huge"
+      },
+      {
+        "name": "warning",
+        "label": "gap: zero"
+      }
+    ]
+  },
+  {
+    "id": "s71",
+    "type": "stage",
+    "narration": "Every raise got absorbed. Every upgrade became a necessity. Every fixed cost locked them in a little tighter.",
+    "motif": "treadmill",
+    "caption": "more income, same trap"
+  },
+  {
+    "id": "s72",
+    "type": "callout",
+    "narration": "It's the quiet lesson underneath the whole thing. A high income is a tool. It is not, by itself, wealth.",
+    "text": "income ≠ wealth",
+    "sub": "the gap is the wealth",
+    "icon": "gauge"
+  },
+  {
+    "id": "s73",
+    "type": "stage",
+    "narration": "And the treadmill never slows down on its own. No salary is ever high enough to outrun it. You don't out-earn it — you step off it, on purpose.",
+    "motif": "treadmill",
+    "caption": "you don't out-earn it — you step off"
+  },
+  {
+    "id": "s93",
+    "type": "callout",
+    "narration": "Remember those two savers. The gap — not the salary — is what quietly made one of them wealthy, and left the other running in place.",
+    "text": "mind the gap",
+    "sub": "small income + discipline beats big income + none",
+    "icon": "scale"
+  },
+  {
+    "id": "s74",
+    "type": "character",
+    "narration": "The good news? The gap is the one part of this you fully control. Not the tax code, not the housing market. Just the space between what comes in, and what goes out.",
+    "pose": "present",
+    "bubble": "the gap is yours to set",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "…and it's in your hands"
+      }
+    ]
+  },
+  {
+    "id": "s75",
+    "type": "character",
+    "narration": "So next time you hear that someone on three hundred grand is living paycheck to paycheck, you'll know it isn't a mystery. It's a gap that quietly closed to zero.",
+    "pose": "present",
+    "bubble": "now it makes sense"
+  },
+  {
+    "id": "s76",
+    "type": "character",
+    "narration": "If this made your own paycheck suddenly make a lot more sense, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
@@ -717,7 +968,7 @@
     ]
   },
   {
-    "id": "s67",
+    "id": "s77",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

@@ -27,6 +27,8 @@ export type DoodleName =
   | "scissors" | "lifering" | "vulture" | "rating" | "protest"
   // EP018 (middle class) additions:
   | "ladder" | "receipt" | "gradcap"
+  // EP019 (lifestyle creep) additions:
+  | "car" | "briefcase" | "bucket" | "dining"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -977,6 +979,49 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={70} y1={49} x2={70} y2={68} strokeWidth={2.4} />
           <RCircle cx={70} cy={70} d={6} fill={GOLD} strokeWidth={1.4} />
           <RPath d="M34 50 L34 68 Q50 80 66 68 L66 50" fill="none" strokeWidth={SW} />
+        </>
+      );
+
+    // ---- EP019 (lifestyle creep) doodles ----
+    case "car":
+      return (
+        <>
+          <RPath d="M16 64 L26 44 L74 44 L86 64 Z" fill={RED} strokeWidth={SW} />
+          <RRect x={12} y={60} w={76} h={16} fill={RED} strokeWidth={SW} />
+          <RRect x={34} y={48} w={32} h={14} fill="#bcd3e0" strokeWidth={1.8} />
+          <RCircle cx={30} cy={78} d={16} fill={INK} fillStyle="solid" strokeWidth={2} />
+          <RCircle cx={70} cy={78} d={16} fill={INK} fillStyle="solid" strokeWidth={2} />
+        </>
+      );
+    case "briefcase":
+      return (
+        <>
+          <RRect x={20} y={36} w={60} h={46} fill={TAN} strokeWidth={SW} />
+          <RPath d="M40 36 L40 28 L60 28 L60 36" fill="none" strokeWidth={SW} />
+          <RLine x1={20} y1={54} x2={80} y2={54} strokeWidth={2} />
+          <RRect x={44} y={50} w={12} h={8} fill={INK} fillStyle="solid" strokeWidth={1.4} />
+        </>
+      );
+    case "bucket":
+      // A leaky bucket — money in, money straight out.
+      return (
+        <>
+          <RPath d="M26 40 L74 40 L68 84 L32 84 Z" fill="#9aa6ad" strokeWidth={SW} />
+          <RPath d="M28 40 Q50 26 72 40" fill="none" strokeWidth={SW} />
+          <RCircle cx={44} cy={64} d={6} fill="#fff" strokeWidth={1.2} />
+          <RCircle cx={58} cy={72} d={5} fill="#fff" strokeWidth={1.2} />
+          <text x={50} y={60} fontSize={16} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </>
+      );
+    case "dining":
+      // Fine dining / lifestyle spend — plate with fork & knife.
+      return (
+        <>
+          <RCircle cx={52} cy={54} d={48} fill="#fff" strokeWidth={SW} />
+          <RCircle cx={52} cy={54} d={30} fill="none" strokeWidth={1.6} />
+          <RLine x1={16} y1={30} x2={16} y2={78} strokeWidth={3} />
+          <RLine x1={88} y1={30} x2={88} y2={78} strokeWidth={3} />
+          <RPath d="M12 30 L12 44 M20 30 L20 44" fill="none" strokeWidth={2.4} />
         </>
       );
   }

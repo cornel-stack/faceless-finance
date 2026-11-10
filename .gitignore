@@ -43,3 +43,11 @@ render/final_01.png
 # Local-only topic bank (do not commit)
 YouTube-Topic-Bank-4-Channels.xlsx
 *.xlsx
+
+# Rendered video bundles (large, pulled from CI artifacts)
+renders/
+
+# GIF API keys — authoring-time only, NEVER commit (CI renders committed .gifs)
+tools/gifs/.giphy_key
+tools/gifs/.tenor_key
+.env
