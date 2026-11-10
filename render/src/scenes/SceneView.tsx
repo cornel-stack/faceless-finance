@@ -1796,6 +1796,84 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={490} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Japan's lost decades</text>
       </svg>
     );
+  } else if (m === "basketprice") {
+    // The CPI basket: the same groceries, total ticking up over time.
+    const total = Math.round(interpolate(frame, [fps * 0.4, fps * 2.6], [100, 148], clampBoth));
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 230)`}>
+          <path d="M-150 -40 L150 -40 L110 150 L-110 150 Z" fill={gold} stroke={ink} strokeWidth={7} strokeLinejoin="round" />
+          <path d="M-96 -40 Q-60 -130 0 -130 Q60 -130 96 -40" fill="none" stroke={ink} strokeWidth={6} strokeLinecap="round" />
+          {[-60, 0, 60].map((x, i) => <line key={i} x1={x} y1={-20} x2={x + (i - 1) * 14} y2={140} stroke={ink} strokeWidth={3} />)}
+          <line x1={-130} y1={40} x2={130} y2={40} stroke={ink} strokeWidth={3} />
+        </g>
+        <g transform="translate(680 220)">
+          <rect x={-90} y={-54} width={180} height={108} rx={12} fill="#fff" stroke={red} strokeWidth={5} />
+          <text x={0} y={16} fontSize={56} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">${total}</text>
+          <text x={0} y={-72} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>same basket</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the same cart, quietly ticking up</text>
+      </svg>
+    );
+  } else if (m === "demandpull") {
+    // Too much money chasing too few goods.
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={90} fontSize={26} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>too much money, too few goods</text>
+        {Array.from({ length: 14 }, (_, i) => { const a = (i / 14) * 6.28; const r = 150 + Math.sin(frame * 0.1 + i) * 20; const x = VW / 2 + Math.cos(a) * r * 1.5, y = 250 + Math.sin(a) * r * 0.7; return <g key={i}><circle cx={x} cy={y} r={18} fill={green} stroke={ink} strokeWidth={2.5} /><text x={x} y={y + 6} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <g transform={`translate(${VW / 2} 250)`}>
+          <path d="M-70 -20 L70 -20 L54 90 L-54 90 Z" fill={gold} stroke={ink} strokeWidth={5} strokeLinejoin="round" />
+          <text x={0} y={120} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>one cart</text>
+        </g>
+        <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">prices get bid up</text>
+      </svg>
+    );
+  } else if (m === "costpush") {
+    // Rising input costs shove the price up from below.
+    const push = interpolate(frame, [fps * 0.6, fps * 2.4], [0, -120], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} ${250 + push})`}>
+          <rect x={-120} y={-40} width={240} height={80} rx={10} fill="#fff" stroke={ink} strokeWidth={5} />
+          <text x={0} y={10} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">PRICE ↑</text>
+        </g>
+        {[["oil", 360], ["wages", 490], ["shipping", 620]].map(([t, x], i) => <g key={i} transform={`translate(${x} 400)`}><path d={`M0 -40 l-16 24 l10 0 l0 ${40 + 0} l12 0 l0 -40 l10 0 Z`} fill={red} stroke={ink} strokeWidth={2} transform="scale(1.2)" /><text x={0} y={70} fontSize={20} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{t}</text></g>)}
+        <text x={VW / 2} y={120} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">costs push prices up from below</text>
+      </svg>
+    );
+  } else if (m === "erode") {
+    // The real value of cash melting away year by year.
+    const bars = [100, 84, 70, 59, 49, 41];
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={90} y1={430} x2={VW - 60} y2={430} stroke={ink} strokeWidth={4} />
+        {bars.map((v, i) => {
+          const on = interpolate(frame, [fps * (0.3 + i * 0.3), fps * (0.6 + i * 0.3)], [0, 1], clampBoth);
+          const h = v * 3.4 * on;
+          const x = 150 + i * 130;
+          return <g key={i}><rect x={x - 45} y={430 - h} width={90} height={h} rx={5} fill={i === 0 ? green : "#c9a24a"} stroke={ink} strokeWidth={3} /><text x={x} y={460} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>Yr {i * 5}</text></g>;
+        })}
+        <text x={VW / 2} y={120} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">what $100 in cash is really worth</text>
+      </svg>
+    );
+  } else if (m === "shrinkflation") {
+    // Same price, shrinking product.
+    const shrink = interpolate(frame, [fps * 0.6, fps * 2.4], [1, 0.58], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(360 260) scale(${shrink})`}>
+          <path d="M-60 -120 L60 -120 L48 120 L-48 120 Z" fill="#c23b3b" stroke={ink} strokeWidth={5} />
+          <rect x={-50} y={-30} width={100} height={60} rx={6} fill="#fff" stroke={ink} strokeWidth={3} />
+          <text x={0} y={10} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>CHIPS</text>
+        </g>
+        <g transform="translate(680 240)">
+          <rect x={-70} y={-50} width={140} height={100} rx={12} fill="#fff" stroke={ink} strokeWidth={5} />
+          <text x={0} y={12} fontSize={44} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$4</text>
+          <text x={0} y={-66} fontSize={22} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>same price</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">shrinkflation: same price, less product</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

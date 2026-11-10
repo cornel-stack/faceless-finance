@@ -45,6 +45,8 @@ export type DoodleName =
   | "cargoship" | "barrier"
   // EP027 (deflation) additions:
   | "hourglass"
+  // EP028 (inflation) additions:
+  | "thermometer"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1193,6 +1195,18 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M32 16 L68 16 L52 50 L68 84 L32 84 L48 50 Z" fill="none" strokeWidth={SW} />
           <RPath d="M40 24 L60 24 L52 46 L48 46 Z" fill={GOLD} strokeWidth={1.2} />
           <RPath d="M46 66 L54 66 L58 80 L42 80 Z" fill={GOLD} strokeWidth={1.2} />
+        </>
+      );
+
+    // ---- EP028 (inflation) doodles ----
+    case "thermometer":
+      // A hot economy / rising prices.
+      return (
+        <>
+          <RPath d="M42 16 L58 16 L58 64 Q66 70 66 78 Q66 90 50 90 Q34 90 34 78 Q34 70 42 64 Z" fill="#fff" strokeWidth={SW} />
+          <RRect x={46} y={24} w={8} h={44} fill={RED} strokeWidth={1} />
+          <RCircle cx={50} cy={78} d={18} fill={RED} strokeWidth={1.4} />
+          {[28, 38, 48].map((y, i) => <RLine key={i} x1={58} y1={y} x2={66} y2={y} strokeWidth={1.6} />)}
         </>
       );
   }

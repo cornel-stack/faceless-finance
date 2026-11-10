@@ -118,7 +118,9 @@ export interface StageScene extends Base {
     // EP026 (tariffs) additions:
     | "passthrough" | "tradewar" | "customsgate" | "deadweight"
     // EP027 (deflation) additions:
-    | "pricespiral" | "waittobuy" | "debtheavier" | "japanflat";
+    | "pricespiral" | "waittobuy" | "debtheavier" | "japanflat"
+    // EP028 (inflation) additions:
+    | "basketprice" | "demandpull" | "costpush" | "erode" | "shrinkflation";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
