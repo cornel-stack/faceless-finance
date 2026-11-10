@@ -39,6 +39,8 @@ export type DoodleName =
   | "jet" | "shield"
   // EP024 (dollar plumbing) additions:
   | "faucet"
+  // EP025 (private equity) additions:
+  | "store" | "wreckingball"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1130,6 +1132,29 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={50} y={28} w={12} h={10} fill="#8a929a" strokeWidth={2} />
           <text x={56} y={88} fontSize={22} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif">$</text>
           <RCircle cx={56} cy={64} d={6} fill="#bcd3e0" strokeWidth={1.2} />
+        </>
+      );
+
+    // ---- EP025 (private equity) doodles ----
+    case "store":
+      // A beloved high-street store / brand.
+      return (
+        <>
+          <RRect x={20} y={40} w={60} h={46} fill="#fff" strokeWidth={SW} />
+          <RPath d="M16 40 L84 40 L76 24 L24 24 Z" fill={RED} strokeWidth={SW} />
+          {[28, 44, 60, 76].map((x, i) => <RRect key={i} x={x - 3} y={28} w={8} h={10} fill={i % 2 ? "#fff" : RED} strokeWidth={1} />)}
+          <RRect x={44} y={60} w={14} h={26} fill={INK} fillStyle="solid" strokeWidth={SW} />
+          <RRect x={26} y={50} w={12} h={10} fill="#bcd3e0" strokeWidth={1.6} />
+        </>
+      );
+    case "wreckingball":
+      return (
+        <>
+          <RLine x1={24} y1={12} x2={70} y2={12} strokeWidth={3.4} />
+          <RLine x1={66} y1={12} x2={54} y2={52} strokeWidth={2.6} />
+          <RCircle cx={50} cy={64} d={32} fill="#3a3f45" strokeWidth={SW} />
+          <RCircle cx={44} cy={58} d={7} fill="#6f777d" strokeWidth={1} />
+          <RLine x1={24} y1={12} x2={24} y2={30} strokeWidth={3} />
         </>
       );
   }

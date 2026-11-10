@@ -112,7 +112,9 @@ export interface StageScene extends Base {
     // EP023 (why stocks go up in war) additions:
     | "warboom" | "priceddip" | "safehaven" | "survivorship" | "marketvsreality"
     // EP024 (America bailing out currencies) additions:
-    | "dollarshortage" | "swapline" | "plumbing" | "contagionmap";
+    | "dollarshortage" | "swapline" | "plumbing" | "contagionmap"
+    // EP025 (private equity) additions:
+    | "lbo" | "loadthedebt" | "dividendrecap" | "saleleaseback" | "stripmine";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

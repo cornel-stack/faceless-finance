@@ -1586,6 +1586,89 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">a fire in one currency can spread to all</text>
       </svg>
     );
+  } else if (m === "lbo") {
+    // A PE firm buys a company with a sliver of its own cash + a mountain of debt —
+    // and the debt lands on the company, not the buyer.
+    const drop = interpolate(frame, [fps * 1.0, fps * 1.8], [-220, 0], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(230 300)">
+          <circle cx={0} cy={-70} r={30} fill="#f0cda6" stroke={ink} strokeWidth={4} />
+          <path d="M-30 70 Q-30 -36 0 -36 Q30 -36 30 70" fill="#2b2f68" stroke={ink} strokeWidth={4} />
+          <text x={0} y={120} fontSize={24} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>PE firm</text>
+          <rect x={-40} y={-10} width={80} height={26} rx={4} fill={green} stroke={ink} strokeWidth={3} />
+          <text x={0} y={8} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>10% cash</text>
+        </g>
+        <g transform="translate(720 320)">
+          <rect x={-80} y={-60} width={160} height={120} rx={8} fill="#fff" stroke={ink} strokeWidth={5} />
+          <path d="M-96 -58 L0 -120 L96 -58 Z" fill={red} stroke={ink} strokeWidth={5} />
+          <text x={0} y={10} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the company</text>
+          <g transform={`translate(0 ${drop - 150})`} opacity={interpolate(frame, [fps * 1.0, fps * 1.3], [0, 1], clampBoth)}>
+            <rect x={-70} y={-34} width={140} height={60} rx={8} fill="#59707c" stroke={ink} strokeWidth={4} />
+            <text x={0} y={6} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">90% DEBT</text>
+          </g>
+        </g>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">bought with debt — dumped on the company</text>
+      </svg>
+    );
+  } else if (m === "loadthedebt") {
+    // The company, crushed under a growing pile of debt it now has to carry.
+    const load = interpolate(frame, [fps * 0.6, fps * 2.4], [0, 1], clampBoth);
+    const squish = 1 - load * 0.3;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 360)`}>
+          {Array.from({ length: 5 }, (_, i) => load > i / 5 && <g key={i} opacity={interpolate(load, [i / 5, i / 5 + 0.1], [0, 1], clampBoth)}><rect x={-90 + (i % 2) * 14} y={-60 - i * 46} width={180} height={40} rx={6} fill="#59707c" stroke={ink} strokeWidth={4} /><text x={0 + (i % 2) * 14} y={-33 - i * 46} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">DEBT</text></g>)}
+          <g transform={`scale(1 ${squish})`}>
+            <circle cx={0} cy={-34} r={26} fill="#f0cda6" stroke={ink} strokeWidth={4} />
+            <path d="M-40 40 Q-40 -8 0 -8 Q40 -8 40 40" fill={red} stroke={ink} strokeWidth={4} />
+          </g>
+        </g>
+        <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the company carries the debt, not the buyer</text>
+      </svg>
+    );
+  } else if (m === "dividendrecap") {
+    // Borrow even MORE, and route the cash straight to the PE owner as a dividend.
+    const flow = (frame % 70) / 70;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(240 260)"><rect x={-90} y={-70} width={180} height={140} rx={10} fill="#fff" stroke={ink} strokeWidth={5} /><text x={0} y={-6} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the company</text><rect x={-70} y={24} width={140} height={28} rx={4} fill="#59707c" stroke={ink} strokeWidth={3} /><text x={0} y={44} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle">+ more debt</text></g>
+        <g transform="translate(740 260)"><circle cx={0} cy={0} r={64} fill="#2b2f68" stroke={ink} strokeWidth={5} /><text x={0} y={8} fontSize={24} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>PE firm</text></g>
+        {[0, 1, 2].map((i) => { const t = (flow + i / 3) % 1; const x = 330 + 350 * t; return <g key={i}><circle cx={x} cy={230} r={14} fill={gold} stroke={ink} strokeWidth={2} /><text x={x} y={235} fontSize={13} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <text x={505} y={200} fontSize={22} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>dividend →</text>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">borrow more → pay yourself a dividend</text>
+      </svg>
+    );
+  } else if (m === "saleleaseback") {
+    // Sell the company's building, pocket the cash, then rent it back forever.
+    const sold = interpolate(frame, [fps * 0.8, fps * 1.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${300 + sold * 20} 260)`} opacity={1}>
+          <rect x={-90} y={-40} width={180} height={120} fill="#fff" stroke={ink} strokeWidth={5} />
+          <path d="M-106 -40 L0 -120 L106 -40 Z" fill={red} stroke={ink} strokeWidth={5} />
+          <text x={0} y={30} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>its building</text>
+        </g>
+        {sold > 0.3 && <g opacity={sold}><rect x={620} y={300} width={120} height={46} rx={6} fill={gold} stroke={ink} strokeWidth={4} /><text x={680} y={330} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$ cash</text><text x={680} y={290} fontSize={20} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>sold for cash</text></g>}
+        {sold > 0.6 && <g opacity={interpolate(sold, [0.6, 1], [0, 1])}><text x={300} y={200} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">now pays RENT ↩</text></g>}
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">sell what it owns — then rent it back forever</text>
+      </svg>
+    );
+  } else if (m === "stripmine") {
+    // Everything of value is carried off; a husk of the company is left behind.
+    const strip = interpolate(frame, [fps * 0.6, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} 260)`}>
+          <rect x={-120} y={-80} width={240} height={180} rx={10} fill="none" stroke={ink} strokeWidth={5} strokeDasharray="8 8" />
+          <rect x={-120} y={-80} width={240} height={180} rx={10} fill="#eef2ee" opacity={1 - strip} />
+          <text x={0} y={10} fontSize={26} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans} opacity={1 - strip}>the company</text>
+          {strip > 0.9 && <text x={0} y={10} fontSize={26} fontWeight={800} fill={red} textAnchor="middle" fontFamily="Georgia, serif">a husk</text>}
+        </g>
+        {Array.from({ length: 6 }, (_, i) => { const p = Math.max(0, strip - i * 0.12); const x = VW / 2 + p * (260 + i * 30) * (i % 2 ? 1 : -1); return <g key={i} opacity={p > 0 ? 1 : 0}><circle cx={x} cy={200 + (i % 3) * 30} r={16} fill={gold} stroke={ink} strokeWidth={2.5} /><text x={x} y={206 + (i % 3) * 30} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">strip the value, leave the husk</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
