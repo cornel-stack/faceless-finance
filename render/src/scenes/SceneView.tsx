@@ -1379,6 +1379,81 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={480} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">pass it to a greater fool</text>
       </svg>
     );
+  } else if (m === "circularfinance") {
+    const nodes = [["chipmaker", 490, 120], ["AI lab", 760, 340], ["cloud firm", 220, 340]] as const;
+    const dot = (frame % 90) / 90;
+    art = (
+      <svg width={VW} height={VH}>
+        {nodes.map((n, i) => {
+          const a = nodes[i], b = nodes[(i + 1) % 3];
+          const t = (dot + i / 3) % 1;
+          const x = a[1] + (b[1] - a[1]) * t, y = a[2] + (b[2] - a[2]) * t;
+          return <g key={"d" + i}><line x1={a[1]} y1={a[2]} x2={b[1]} y2={b[2]} stroke={theme.grid} strokeWidth={3} /><circle cx={x} cy={y} r={13} fill={gold} stroke={ink} strokeWidth={2} /><text x={x} y={y + 5} fontSize={13} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>;
+        })}
+        {nodes.map(([lbl, x, y], i) => {
+          const a = spring({ frame, fps, delay: 6 + i * 6, config: { damping: 13 } });
+          return <g key={i} transform={`translate(${x} ${y}) scale(${a})`}><circle cx={0} cy={0} r={66} fill="#fff" stroke={ink} strokeWidth={5} /><text x={0} y={8} fontSize={23} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lbl}</text></g>;
+        })}
+        <text x={VW / 2} y={480} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the same dollars, going in circles</text>
+      </svg>
+    );
+  } else if (m === "iceberg") {
+    const sink = interpolate(frame, [fps * 0.6, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={0} y={200} width={VW} height={320} fill="#bcd8e6" opacity={0.8} />
+        <line x1={0} y1={200} x2={VW} y2={200} stroke={ink} strokeWidth={3} />
+        <g transform={`translate(${VW / 2} 0)`}>
+          <path d="M-70 200 L0 110 L70 200 Z" fill="#fff" stroke={ink} strokeWidth={5} />
+          <text x={0} y={168} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>hype</text>
+          <path d={`M-200 200 L-150 ${200 + sink * 280} L150 ${200 + sink * 280} L200 200 Z`} fill="#dfe9ee" stroke={ink} strokeWidth={5} opacity={0.95} />
+          <text x={0} y={360} fontSize={42} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={sink}>DEBT</text>
+        </g>
+        <text x={VW / 2} y={500} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a little equity on top, a wall of debt below</text>
+      </svg>
+    );
+  } else if (m === "capexfurnace") {
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={VW / 2 - 150} y={180} width={300} height={220} rx={10} fill="#2b2f33" stroke={ink} strokeWidth={5} />
+        {[0, 1, 2, 3].map((r) => [0, 1, 2].map((c) => <rect key={`${r}-${c}`} x={VW / 2 - 120 + c * 90} y={200 + r * 48} width={72} height={30} fill="#454b50" stroke={ink} strokeWidth={1.5} />))}
+        {Array.from({ length: 6 }, (_, i) => { const p = ((frame * 7 + i * 40) % 220) / 220; const x = 120 + p * (VW / 2 - 300); const op = interpolate(p, [0, 0.1, 0.9, 1], [0, 1, 1, 0]); return <g key={i} opacity={op}><rect x={x} y={300} width={44} height={20} rx={3} fill={green} stroke={ink} strokeWidth={2} /></g>; })}
+        {Array.from({ length: 5 }, (_, i) => { const p = ((frame * 6 + i * 36) % 180) / 180; const y = 180 - p * 120; const op = interpolate(p, [0, 0.2, 1], [0.9, 0.6, 0]); return <circle key={"s" + i} cx={VW / 2 - 60 + i * 30} cy={y} r={10 + p * 18} fill="#c7c2b6" opacity={op} />; })}
+        <text x={VW / 2} y={450} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">billions in capex, up in smoke</text>
+      </svg>
+    );
+  } else if (m === "gpudecay") {
+    const decay = interpolate(frame, [fps * 0.6, fps * 2.4], [1, 0.25], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2 - 180} 230)`}>
+          <rect x={-100} y={-100} width={200} height={200} rx={16} fill="#8a5a2b" stroke={ink} strokeWidth={6} />
+          <rect x={-64} y={-64} width={128} height={128} rx={8} fill="#b07a3a" stroke={ink} strokeWidth={3} />
+          <text x={0} y={8} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>GPU</text>
+        </g>
+        <g transform="translate(680 230)">
+          <rect x={-70} y={120 - 240 * decay} width={140} height={240 * decay} rx={8} fill={gold} stroke={ink} strokeWidth={4} />
+          <text x={0} y={150} fontSize={24} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>value</text>
+        </g>
+        <text x={VW / 2} y={430} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">today's $40k chip, tomorrow's scrap</text>
+      </svg>
+    );
+  } else if (m === "bubbledebt") {
+    const grow = interpolate(frame, [6, fps * 1.8], [40, 150], clampBoth);
+    const pop = interpolate(frame, [fps * 2.0, fps * 2.3], [0, 1], clampBoth);
+    const sway = Math.sin(frame * 0.08) * 12;
+    art = (
+      <svg width={VW} height={VH}>
+        {pop < 0.5 && <g transform={`translate(${VW / 2 + sway} 180)`}><circle cx={0} cy={0} r={grow} fill="#bfe0ef" stroke={ink} strokeWidth={5} opacity={1 - pop * 2} /><text x={0} y={8} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans} opacity={1 - pop * 2}>AI hype</text></g>}
+        {pop > 0 && pop < 1 && Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * 6.28; return <line key={i} x1={VW / 2 + grow * Math.cos(a)} y1={180 + grow * Math.sin(a)} x2={VW / 2 + (grow + 50 * pop) * Math.cos(a)} y2={180 + (grow + 50 * pop) * Math.sin(a)} stroke={red} strokeWidth={5 * (1 - pop)} />; })}
+        <line x1={VW / 2 + sway} y1={180 + grow} x2={VW / 2} y2={400} stroke={ink} strokeWidth={3} strokeDasharray="4 6" />
+        <g transform={`translate(${VW / 2} 430)`}>
+          <rect x={-90} y={-40} width={180} height={80} rx={8} fill="#59707c" stroke={ink} strokeWidth={5} />
+          <text x={0} y={12} fontSize={34} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">DEBT</text>
+        </g>
+        {pop >= 1 && <text x={VW / 2} y={170} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">hype pops — the debt stays</text>}
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

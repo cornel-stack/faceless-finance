@@ -1,0 +1,1058 @@
+{
+  "id": "EP022",
+  "series": "Napkin Numbers",
+  "title": "The AI Bubble Survives on Hidden Debt",
+  "slug": "ai-bubble-hidden-debt",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP022 — explainer (By the Numbers, row 12). The AI capex boom is increasingly debt-funded; circular financing, off-balance-sheet SPVs, GPU depreciation. Free Imgflip memes; 5 new motifs (circularfinance, iceberg, capexfurnace, gpudecay, bubbledebt). Target 12–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "stage",
+      "narration": "Artificial intelligence is the biggest investment story in a generation. Trillions of dollars of value, a handful of companies, and a promise to rewire the entire economy.",
+      "icons": [
+        "brain",
+        "chartup"
+      ],
+      "caption": "the biggest boom in a generation"
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "But under the dazzling demos and soaring stock charts, something much less glamorous is quietly holding it all up. Debt.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brain",
+          "label": "the hype"
+        },
+        {
+          "name": "iou",
+          "label": "…the debt"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "callout",
+      "narration": "Because building AI is staggeringly expensive. The giants are set to pour hundreds of billions of dollars a year into data centers and chips.",
+      "text": "$100B+",
+      "sub": "a year, on AI build-out",
+      "icon": "server"
+    },
+    {
+      "id": "s4",
+      "type": "character",
+      "narration": "And increasingly, that money isn't coming from profits. It's coming from borrowing — some of it tucked into places most investors never look.",
+      "pose": "think",
+      "bubble": "paid for… how?",
+      "props": [
+        {
+          "name": "warning",
+          "label": "funded by debt"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "image",
+      "narration": "Everyone's watching the technology. Almost nobody's watching the balance sheet underneath it.",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "watching the AI demos",
+      "memeBottom": "watching the AI debt"
+    },
+    {
+      "id": "s64",
+      "type": "callout",
+      "narration": "By some estimates, the world could pour several trillion dollars into AI data centers and chips before this decade is out. A sum that has to be financed somehow.",
+      "text": "$trillions",
+      "sub": "projected AI build-out this decade",
+      "icon": "server"
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "So let's follow the money behind the AI boom — and find the hidden debt the hype is quietly resting on.",
+      "heading": "The AI Bubble Survives on Hidden Debt",
+      "kicker": "follow the money, not the demos",
+      "sub": "The tech is real. The financing is the risk."
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "First, the boom itself is real. AI has exploded from a research niche into the center of the global economy in just a few years.",
+      "sourceId": "wiki-aiboom"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "And every chatbot, every image, every model runs on the same thing: enormous banks of specialized computers, humming away in warehouses.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "server",
+          "label": "it all runs on compute"
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "type": "character",
+      "narration": "And a powerful fear drives the spending. No giant wants to be the one that under-invested and lost the AI race — so they all spend defensively, all at once, whatever it costs.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "server",
+          "label": "spend or be left behind"
+        },
+        {
+          "name": "crowd",
+          "label": "…everyone, at once"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "Those warehouses are data centers — giant facilities packed with servers, power, and cooling.",
+      "sourceId": "wiki-datacenter"
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "narration": "And building them is a classic capital expenditure — huge upfront money spent on fixed assets, years before they might pay off.",
+      "sourceId": "wiki-capex"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "This is where the numbers get dizzying. The biggest tech companies are shoveling cash into this build-out at a pace the world has never seen.",
+      "motif": "capexfurnace",
+      "caption": "billions in capex, every quarter"
+    },
+    {
+      "id": "s12",
+      "type": "callout",
+      "narration": "Across the major players, planned spending on AI infrastructure now runs into the hundreds of billions of dollars — every single year.",
+      "text": "$300B+",
+      "sub": "combined annual AI capex",
+      "icon": "server"
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "To put that in perspective, a single flagship AI data center can cost tens of billions of dollars — rivaling the price of a major airport or a nuclear plant.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "server",
+          "label": "one site: $tens of B"
+        },
+        {
+          "name": "factory",
+          "label": "…like an airport"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "stage",
+      "narration": "These sites devour so much electricity they're straining entire power grids — and reviving old power plants just to keep the chips fed.",
+      "icons": [
+        "oilbarrel",
+        "warning"
+      ],
+      "caption": "it even strains the power grid"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "Now here's the first crack. All that spending is happening now. But the actual revenue from AI — the money customers pay — is still, by comparison, tiny.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "spending: huge"
+        },
+        {
+          "name": "chartdown",
+          "label": "…revenue: small"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "compare",
+      "narration": "Hundreds of billions going out to build it. A small fraction coming back in from selling it. For now, the AI boom is mostly a colossal bet on the future.",
+      "left": {
+        "title": "spent building AI",
+        "value": "hundreds of $B",
+        "icon": "server"
+      },
+      "right": {
+        "title": "earned from AI",
+        "value": "a fraction",
+        "icon": "coins"
+      }
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "narration": "And the thing they're buying has a nasty habit. The cutting-edge chips at the heart of it lose value fast.",
+      "motif": "gpudecay",
+      "caption": "the chips decay fast"
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "narration": "In accounting terms, they depreciate — a real reduction in the value of an asset as it ages and newer ones arrive.",
+      "sourceId": "wiki-depreciation"
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "A forty-thousand-dollar chip today can be last-generation in a couple of years. So the company is racing to earn back its cost before it becomes expensive scrap.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chip",
+          "label": "$40k now"
+        },
+        {
+          "name": "warning",
+          "label": "…scrap soon"
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "And all of it rests on one assumption: that demand keeps exploding. Nobody actually knows yet whether businesses will pay enough, for long enough, to earn this back.",
+      "pose": "think",
+      "bubble": "will the demand show up?",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "demand = unproven"
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "type": "image",
+      "narration": "Spending a fortune today on the faith that the revenue arrives tomorrow is the oldest setup for a bubble there is.",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "earn back a trillion in capex"
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "So if the spending dwarfs the revenue, where is all the money actually coming from? This is where the hidden part begins.",
+      "heading": "Where the Money Comes From",
+      "kicker": "and where it's hidden"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "The giants do have mountains of cash. But even their mountains aren't enough for a build-out this big — so they've started borrowing too.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "cash piles"
+        },
+        {
+          "name": "iou",
+          "label": "…plus borrowing"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "screenshot",
+      "narration": "The simplest way is a corporate bond — debt issued by a company to raise financing. And even the most cash-rich tech firms have been issuing them in record size.",
+      "sourceId": "wiki-corpbond"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "But the more interesting debt belongs to a newer breed of company — firms that exist purely to buy chips and rent out AI computing power.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "server",
+          "label": "rent-a-GPU firms"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "These firms run on leverage — borrowing heavily to buy an asset, hoping it earns more than the interest costs.",
+      "sourceId": "wiki-leverage"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "They borrow billions, often using the chips themselves as collateral. Which means the loan is backed by an asset designed to lose value quickly. A fragile combination.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chip",
+          "label": "chips as collateral"
+        },
+        {
+          "name": "chartdown",
+          "label": "…that depreciate"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "And then there's the debt you can't easily see at all — financing parked in separate companies, off the main balance sheet.",
+      "motif": "iceberg",
+      "caption": "the debt below the waterline"
+    },
+    {
+      "id": "s69",
+      "type": "character",
+      "narration": "A fast-growing slice of this hidden debt now comes from private credit — lightly regulated funds lending enormous sums, well out of public view.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "private credit"
+        },
+        {
+          "name": "warning",
+          "label": "…out of view"
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "type": "stage",
+      "narration": "And it's all arriving in a world of higher interest rates. Every billion borrowed now costs far more to service than it would have just a few years ago.",
+      "icons": [
+        "percent",
+        "iou"
+      ],
+      "caption": "higher rates, heavier debt"
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "The tool for this is a special-purpose entity — a separate legal company created for one narrow objective.",
+      "sourceId": "wiki-spe"
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "A data center can be built inside one of these vehicles, loaded with debt, and kept at arm's length — so the headline company looks far less indebted than the project really is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shellbox",
+          "label": "the debt lives here"
+        },
+        {
+          "name": "officetower",
+          "label": "…not on the main books"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "image",
+      "narration": "If that structure sounds familiar, it should. Hiding debt in separate entities to flatter the balance sheet is a very old trick.",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "off-balance-sheet debt is still debt"
+    },
+    {
+      "id": "s71",
+      "type": "character",
+      "narration": "And we have watched this exact movie on this channel before. Hiding debt in off-the-books vehicles to look healthier than you really are is, almost precisely, the Enron playbook.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crookedE",
+          "label": "the Enron playbook"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "Now for the strangest part of the whole machine — the money that seems to go in circles.",
+      "heading": "The Money Goes in Circles",
+      "kicker": "circular financing"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "Watch a pattern that's popped up again and again in the AI boom. A chip maker invests billions in an AI startup.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chip",
+          "label": "chipmaker invests"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "That startup then turns around and spends those same billions… buying chips, from the company that just invested in it.",
+      "pose": "explain",
+      "expression": "surprised",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "…buys its chips back"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "stage",
+      "narration": "The same dollars loop around the circle — and at each step, they show up as shiny new revenue and investment on someone's books.",
+      "motif": "circularfinance",
+      "caption": "the same dollars, counted again and again"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "It's called vendor financing: the seller quietly funds its own customers so they can afford to keep buying. It can make demand look far stronger than it really is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "seller funds the buyer"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "screenshot",
+      "narration": "And we have seen this exact move before — in the dot-com bubble, when telecom suppliers lent their customers the money to buy their equipment.",
+      "sourceId": "wiki-dotcom"
+    },
+    {
+      "id": "s83",
+      "type": "character",
+      "narration": "Back then it sank giants. Telecom suppliers lent customers billions to buy their gear — and when those customers folded, the 'sales' turned out to be loans that would never be repaid.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "ticker",
+          "label": "sales that were really loans"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "When the music stopped back then, the customers couldn't pay, the suppliers ate the losses, and the whole web of circular revenue collapsed at once.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "domino",
+          "label": "…it unwound fast"
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "There's a subtler worry too. When a chip maker invests in a customer who then buys its chips, how much of that booked 'revenue' is genuinely new demand?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "how real is it?"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "stage",
+      "narration": "If the money simply circled back from your own investment, the sales figure on your books may be less a measure of real demand — and more an echo of your own cash.",
+      "motif": "circularfinance",
+      "caption": "revenue — or an echo?"
+    },
+    {
+      "id": "s35",
+      "type": "title",
+      "narration": "So is this a bubble? Let's be precise about what that word actually means.",
+      "heading": "Is It a Bubble?",
+      "kicker": "define your terms"
+    },
+    {
+      "id": "s36",
+      "type": "screenshot",
+      "narration": "An economic bubble is when prices climb far above what the underlying fundamentals can justify.",
+      "sourceId": "wiki-bubble"
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "By that test, AI valuations are priced for near-perfection. For today's prices to make sense, these companies must earn truly astronomical profits, for decades.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "priced for perfection"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "stage",
+      "narration": "Now, bubbles aren't new, and some leave real things behind — the dot-com crash still gave us the modern internet. The danger isn't the dream. It's how it's financed.",
+      "motif": "inflate",
+      "caption": "the dream isn't the danger"
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "And this is the crucial difference. A pure stock bubble, when it bursts, mostly hurts shareholders. A debt-fueled bubble is far more dangerous.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "ticker",
+          "label": "stocks fall"
+        },
+        {
+          "name": "iou",
+          "label": "…but debt remains"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "stage",
+      "narration": "Because debt doesn't care about the dream. The hype can evaporate overnight — but the loans behind it still have to be paid back, in full, on schedule.",
+      "motif": "bubbledebt",
+      "caption": "hype pops — the debt stays"
+    },
+    {
+      "id": "s41",
+      "type": "image",
+      "narration": "Equity is a bet that can lose. Debt is a promise that must be kept. And this boom is increasingly built on promises.",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "fund it with profits",
+      "memeBottom": "or fund it with debt"
+    },
+    {
+      "id": "s74",
+      "type": "character",
+      "narration": "The real danger isn't just the size of the debt. It's whether these projects can earn enough to cover the interest — before the very chips they bought go obsolete.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "cover the interest?"
+        },
+        {
+          "name": "clock",
+          "label": "…before chips age"
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "type": "stage",
+      "narration": "If AI returns come in slower or smaller than promised, the equity story can quietly deflate — while the debt payments keep right on coming, every month.",
+      "motif": "bubbledebt",
+      "caption": "if returns slip, the debt bites"
+    },
+    {
+      "id": "s85",
+      "type": "character",
+      "narration": "And much of this debt must be refinanced within a few years. If rates are still high and the AI profits haven't arrived, rolling it over could get brutally expensive — or simply impossible.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "refinance risk"
+        },
+        {
+          "name": "warning",
+          "label": "…at higher rates"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "title",
+      "narration": "So what actually breaks, if the AI revenue doesn't show up on time?",
+      "heading": "What Breaks",
+      "kicker": "the failure modes"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "The first risk is overbuilding. If everyone races to build data centers for demand that arrives slower than hoped, you get too much capacity and collapsing prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "server",
+          "label": "too much capacity"
+        },
+        {
+          "name": "chartdown",
+          "label": "…prices fall"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "stage",
+      "narration": "Then you're left with half-empty data centers full of depreciating chips — and the debt that paid for them still sitting there, demanding its interest.",
+      "motif": "gpudecay",
+      "caption": "stranded chips, live debt"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "The second risk is who's holding that debt. Banks, bond investors, and a fast-growing pool of private credit have all funded the build-out.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "banks"
+        },
+        {
+          "name": "crowd",
+          "label": "…private credit"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "stage",
+      "narration": "If enough AI loans go bad at once, the losses don't stay in tech. They can ripple out through the financial system, like dominoes.",
+      "motif": "dominoes",
+      "caption": "losses can spread"
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "And it's dangerously concentrated. A handful of companies now drive a huge share of the entire stock market's value — and much of this spending.",
+      "text": "a handful",
+      "sub": "of firms carry the whole market",
+      "icon": "warning"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "So a stumble by just a few AI giants wouldn't be a sector problem. It would be everyone's problem — in their pension, their index fund, their savings.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "it's in your index fund"
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "type": "callout",
+      "narration": "And it is dangerously concentrated. Roughly a third of the entire S&P 500's value now sits in a small cluster of AI-linked giants.",
+      "text": "a third",
+      "sub": "of the whole index, in a few AI giants",
+      "icon": "warning"
+    },
+    {
+      "id": "s77",
+      "type": "image",
+      "narration": "So this was never only a tech-investor problem. It's sitting quietly inside almost every ordinary retirement account.",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "the AI giants wobble",
+      "memeBottom": "everyone's 401k"
+    },
+    {
+      "id": "s49",
+      "type": "title",
+      "narration": "Now, let's be fair — because 'it's all a bubble' is lazy, and probably wrong.",
+      "heading": "To Be Fair",
+      "kicker": "two things can be true"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "AI is almost certainly a genuinely transformative technology. It really can make things, write things, and solve things that were impossible a few years ago.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brain",
+          "label": "the tech is real"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "image",
+      "narration": "The technology being revolutionary and the financing being a bubble can both be true at the same time. They usually are.",
+      "src": "img/memes/thisisfine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "the tech: revolutionary",
+      "memeBottom": "the financing: on fire"
+    },
+    {
+      "id": "s84",
+      "type": "stage",
+      "narration": "In every gold rush, the surest money is selling picks and shovels. The chip makers sell to everyone — which is also why their revenue can look unstoppable, right up until the miners run out of cash.",
+      "icons": [
+        "chip",
+        "coins"
+      ],
+      "caption": "the picks-and-shovels seller wins first"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Railways, electricity, the internet — all were real revolutions. And all had wild financial bubbles bolted onto them, that burst and ruined plenty of investors on the way.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bridge",
+          "label": "railways"
+        },
+        {
+          "name": "laptop",
+          "label": "…the internet"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The technology survives the crash. The over-leveraged companies that bet the farm on it usually don't.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "tech endures"
+        },
+        {
+          "name": "chartdown",
+          "label": "…the debt doesn't"
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "type": "character",
+      "narration": "History is blunt about who survives these things. The railroads got built — but most railroad companies went bankrupt. The internet thrived — but most dot-coms did not.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bridge",
+          "label": "railroads built"
+        },
+        {
+          "name": "chartdown",
+          "label": "…companies bust"
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "type": "stage",
+      "narration": "A few giants will likely emerge stronger than ever. The hard question for an investor is whether you're holding one of the winners — or one of the many casualties.",
+      "icons": [
+        "trophy",
+        "warning"
+      ],
+      "caption": "the winners are few"
+    },
+    {
+      "id": "s54",
+      "type": "title",
+      "narration": "So what should you actually watch — if you want to see trouble before the headlines do?",
+      "heading": "What to Watch",
+      "kicker": "the tells"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "First, watch the gap between capex and revenue. As long as the spending wildly outruns the money coming in, the bet is still unproven.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "capex vs revenue"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "Second, watch the debt — especially the kind tucked into separate entities and private credit, where it's hardest to see.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shellbox",
+          "label": "the hidden debt"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "Third, watch for circular deals — where one company's investment magically becomes another's revenue. Real demand doesn't need to be funded by the seller.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "circular revenue"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "chalkboard",
+      "narration": "So here's the whole thing in four lines. The spending is real. The revenue is small. The debt is large. And a lot of it is hidden.",
+      "lines": [
+        "the spending is real",
+        "the revenue is small",
+        "the debt is large",
+        "…and a lot of it is hidden"
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "stage",
+      "narration": "A healthy boom is funded by profits. A fragile one is funded by debt and clever accounting. This one is leaning harder on the second kind every quarter.",
+      "icons": [
+        "coins",
+        "iou"
+      ],
+      "caption": "profits vs promises"
+    },
+    {
+      "id": "s60",
+      "type": "callout",
+      "narration": "Because the hype is loud, and it's designed to be. The leverage is quiet — and that's exactly where the risk likes to hide.",
+      "text": "watch the debt",
+      "sub": "…not the demos",
+      "icon": "iou"
+    },
+    {
+      "id": "s80",
+      "type": "character",
+      "narration": "And the boring defense still quietly works. Owning the whole market cheaply means you capture the real winners — without betting the house on which over-leveraged firm happens to survive.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "own broadly"
+        },
+        {
+          "name": "gauge",
+          "label": "…don't bet the house"
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "type": "image",
+      "narration": "The hype is loud and beautifully produced. The leverage underneath it is quiet, and a lot less photogenic. Watch the quiet number.",
+      "src": "img/memes/distracted.jpg",
+      "meme": "Distracted Boyfriend",
+      "memeBottom": "chasing the hype, ignoring the leverage"
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "So the next time an AI headline promises to change the world, you'll ask the quieter question. Not 'is it amazing?' — but 'who's paying for it, and with whose money?'",
+      "pose": "present",
+      "bubble": "who's paying for it?",
+      "props": [
+        {
+          "name": "brain",
+          "label": "…and with whose money?"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "If this made the AI boom suddenly look very different, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "server",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-aiboom",
+      "name": "AI boom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/AI_boom",
+      "quote": "a period of rapid growth in the field of artificial intelligence"
+    },
+    {
+      "id": "wiki-datacenter",
+      "name": "Data center (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Data_center",
+      "quote": "dedicated to housing computer equipment"
+    },
+    {
+      "id": "wiki-capex",
+      "name": "Capital expenditure (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Capital_expenditure",
+      "quote": "spends to buy, maintain, or improve its fixed assets"
+    },
+    {
+      "id": "wiki-depreciation",
+      "name": "Depreciation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Depreciation",
+      "quote": "an actual reduction in the fair value of an asset"
+    },
+    {
+      "id": "wiki-corpbond",
+      "name": "Corporate bond (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Corporate_bond",
+      "quote": "a bond issued by a corporation in order to raise financing"
+    },
+    {
+      "id": "wiki-leverage",
+      "name": "Leverage (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+      "quote": "any technique involving borrowing funds to buy an investment"
+    },
+    {
+      "id": "wiki-spe",
+      "name": "Special-purpose entity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Special-purpose_entity",
+      "quote": "also called a special-purpose vehicle"
+    },
+    {
+      "id": "wiki-dotcom",
+      "name": "Dot-com bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+      "quote": "a stock market bubble that developed during the late 1990s"
+    },
+    {
+      "id": "wiki-bubble",
+      "name": "Economic bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_bubble",
+      "quote": "current asset prices greatly exceed their intrinsic valuation"
+    }
+  ],
+  "youtube": {
+    "title": "The AI Bubble Survives on Hidden Debt",
+    "alts": [
+      "Who's Actually Paying for the AI Boom?",
+      "The AI Boom's Hidden Debt Problem, Explained"
+    ],
+    "hook": "AI is the biggest investment story in a generation — but the hundreds of billions being poured into data centers and chips increasingly isn't coming from profits. It's coming from debt: record corporate bonds, GPU-backed loans to 'neocloud' firms, off-balance-sheet special-purpose vehicles, and circular financing where a chipmaker's investment becomes its own customer's revenue. The tech may be revolutionary and the financing may still be a bubble — and because it's built on debt, not just equity, the stakes are much higher. Fully cited.",
+    "bullets": [
+      "Why AI capex dwarfs AI revenue — and why that gap matters",
+      "GPU depreciation: loans backed by assets designed to lose value fast",
+      "Hidden debt: corporate bonds, GPU-backed leverage, off-balance-sheet SPVs",
+      "Circular financing — when an investment becomes the seller's own revenue",
+      "Why a debt-fueled bubble is far more dangerous than a stock bubble",
+      "What to watch: the capex-revenue gap, the hidden debt, the circular deals"
+    ],
+    "tags": [
+      "ai bubble",
+      "ai bubble explained",
+      "ai debt",
+      "data center debt",
+      "ai capex",
+      "circular financing",
+      "nvidia circular deals",
+      "economic bubble",
+      "dot com bubble",
+      "leverage",
+      "special purpose vehicle",
+      "ai boom",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#ai",
+      "#investing",
+      "#economy",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "THE AI BOOM",
+      "hookBot": "RUNS ON DEBT",
+      "napkinNumber": "$300B",
+      "napkinSub": "…a year, mostly borrowed",
+      "deco": "server"
+    },
+    "chapters": [
+      [
+        "follow the money behind the AI boom",
+        "The hidden debt"
+      ],
+      [
+        "where is all the money actually coming from",
+        "Where the money comes from"
+      ],
+      [
+        "the money that seems to go in circles",
+        "Circular financing"
+      ],
+      [
+        "is this a bubble",
+        "Is it a bubble?"
+      ],
+      [
+        "what actually breaks",
+        "What breaks"
+      ],
+      [
+        "it's all a bubble' is lazy",
+        "To be fair"
+      ],
+      [
+        "what should you actually watch",
+        "What to watch"
+      ]
+    ]
+  }
+}

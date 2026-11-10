@@ -106,7 +106,9 @@ export interface StageScene extends Base {
     // EP020 (how banks create money) additions:
     | "keystroke" | "loandeposit" | "moneymultiplier" | "cashvsdigital" | "moneyburn"
     // EP021 (IPO dumping ground) additions:
-    | "ipopop" | "bagholder" | "exitramp" | "lockupcliff" | "hotpotato";
+    | "ipopop" | "bagholder" | "exitramp" | "lockupcliff" | "hotpotato"
+    // EP022 (AI bubble on hidden debt) additions:
+    | "circularfinance" | "iceberg" | "capexfurnace" | "gpudecay" | "bubbledebt";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

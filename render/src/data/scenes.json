@@ -1,811 +1,904 @@
 [
   {
     "id": "s1",
-    "type": "character",
-    "narration": "Here's the pitch you've heard a thousand times. A hot company goes public. You buy in early, on day one, and ride it to the moon. Get in before everyone else.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "rocket",
-        "label": "'get in early!'"
-      }
-    ]
+    "type": "stage",
+    "narration": "Artificial intelligence is the biggest investment story in a generation. Trillions of dollars of value, a handful of companies, and a promise to rewire the entire economy.",
+    "icons": [
+      "brain",
+      "chartup"
+    ],
+    "caption": "the biggest boom in a generation"
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "It feels like you're being let in on the ground floor. But step back and ask one question almost nobody asks: who, exactly, is selling you those shares?",
-    "pose": "think",
-    "bubble": "who's selling?",
+    "narration": "But under the dazzling demos and soaring stock charts, something much less glamorous is quietly holding it all up. Debt.",
+    "pose": "explain",
     "props": [
       {
-        "name": "ticker",
-        "label": "…and why now?"
+        "name": "brain",
+        "label": "the hype"
+      },
+      {
+        "name": "iou",
+        "label": "…the debt"
       }
     ]
   },
   {
     "id": "s3",
-    "type": "stage",
-    "narration": "Because an IPO isn't really the start of the story. For the people who got in truly early, it's the exit. The day they finally get to cash out — by selling to you.",
-    "motif": "exitramp",
-    "caption": "an IPO is an exit — for insiders"
+    "type": "callout",
+    "narration": "Because building AI is staggeringly expensive. The giants are set to pour hundreds of billions of dollars a year into data centers and chips.",
+    "text": "$100B+",
+    "sub": "a year, on AI build-out",
+    "icon": "server"
   },
   {
     "id": "s4",
-    "type": "image",
-    "narration": "You think you're getting in at the beginning. Often, you're buying at the moment the smart money has decided it's time to leave.",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "'buying in early'",
-    "memeBottom": "buying the insiders' exit"
+    "type": "character",
+    "narration": "And increasingly, that money isn't coming from profits. It's coming from borrowing — some of it tucked into places most investors never look.",
+    "pose": "think",
+    "bubble": "paid for… how?",
+    "props": [
+      {
+        "name": "warning",
+        "label": "funded by debt"
+      }
+    ]
   },
   {
     "id": "s5",
-    "type": "callout",
-    "narration": "And the data is brutal. On average, newly public companies have tended to underperform the broader market in the years right after they list.",
-    "text": "underperform",
-    "sub": "the average IPO, after listing",
-    "icon": "chartdown"
-  },
-  {
-    "id": "s63",
-    "type": "callout",
-    "narration": "Look no further than the last big boom. The vast majority of the companies that went public at the 2021 peak later traded well below their starting price.",
-    "text": "most",
-    "sub": "of 2021's listings later fell below their IPO price",
-    "icon": "chartdown"
+    "type": "image",
+    "narration": "Everyone's watching the technology. Almost nobody's watching the balance sheet underneath it.",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "watching the AI demos",
+    "memeBottom": "watching the AI debt"
   },
   {
     "id": "s64",
-    "type": "image",
-    "narration": "The 'ground floor' is a story. By the time it's offered to you, the elevator has usually already gone up — with the insiders on it.",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "get in before the insiders"
+    "type": "callout",
+    "narration": "By some estimates, the world could pour several trillion dollars into AI data centers and chips before this decade is out. A sum that has to be financed somehow.",
+    "text": "$trillions",
+    "sub": "projected AI build-out this decade",
+    "icon": "server"
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's look at how the stock market quietly became a place not just to invest — but to dump overpriced shares onto the public.",
-    "heading": "The Stock Market as a Dumping Ground",
-    "kicker": "the IPO data nobody shows",
-    "sub": "You're on the other side of the smartest sellers in the room."
+    "narration": "So let's follow the money behind the AI boom — and find the hidden debt the hype is quietly resting on.",
+    "heading": "The AI Bubble Survives on Hidden Debt",
+    "kicker": "follow the money, not the demos",
+    "sub": "The tech is real. The financing is the risk."
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "narration": "Start with what an IPO actually is. A company's shares get sold to the public for the very first time.",
-    "sourceId": "wiki-ipo"
+    "narration": "First, the boom itself is real. AI has exploded from a research niche into the center of the global economy in just a few years.",
+    "sourceId": "wiki-aiboom"
   },
   {
     "id": "s8",
     "type": "character",
-    "narration": "The official reason is noble: the company raises money to grow — new factories, new hires, paying down debt. And sometimes, that's genuinely what happens.",
+    "narration": "And every chatbot, every image, every model runs on the same thing: enormous banks of specialized computers, humming away in warehouses.",
     "pose": "explain",
     "props": [
       {
-        "name": "factory",
-        "label": "raise money to grow"
+        "name": "server",
+        "label": "it all runs on compute"
+      }
+    ]
+  },
+  {
+    "id": "s82",
+    "type": "character",
+    "narration": "And a powerful fear drives the spending. No giant wants to be the one that under-invested and lost the AI race — so they all spend defensively, all at once, whatever it costs.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "server",
+        "label": "spend or be left behind"
+      },
+      {
+        "name": "crowd",
+        "label": "…everyone, at once"
       }
     ]
   },
   {
     "id": "s9",
     "type": "screenshot",
-    "narration": "A bank underwrites it — guaranteeing the sale, setting the price, and lining up the big buyers in advance.",
-    "sourceId": "wiki-underwriting"
+    "narration": "Those warehouses are data centers — giant facilities packed with servers, power, and cooling.",
+    "sourceId": "wiki-datacenter"
   },
   {
     "id": "s10",
-    "type": "character",
-    "narration": "But here's the quiet split most people miss. There are two very different kinds of shares being sold that day.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "two kinds of shares"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "And building them is a classic capital expenditure — huge upfront money spent on fixed assets, years before they might pay off.",
+    "sourceId": "wiki-capex"
   },
   {
     "id": "s11",
-    "type": "compare",
-    "narration": "Primary shares are new — and that money goes to the company. Secondary shares are old — existing stakes that insiders are selling, where the money goes straight into their pockets.",
-    "left": {
-      "title": "primary shares",
-      "value": "fund the company",
-      "icon": "factory"
-    },
-    "right": {
-      "title": "secondary shares",
-      "value": "cash out insiders",
-      "icon": "moneybag"
-    }
+    "type": "stage",
+    "narration": "This is where the numbers get dizzying. The biggest tech companies are shoveling cash into this build-out at a pace the world has never seen.",
+    "motif": "capexfurnace",
+    "caption": "billions in capex, every quarter"
   },
   {
     "id": "s12",
-    "type": "screenshot",
-    "narration": "And who are those insiders? The venture capitalists, the funds, the founders, and the early employees who backed it years ago.",
-    "sourceId": "wiki-vc"
-  },
-  {
-    "id": "s13",
-    "type": "stage",
-    "narration": "For them, the IPO is payday. After years locked into a private company, this is the door that finally lets them turn paper wealth into real cash.",
-    "motif": "exitramp",
-    "caption": "the insiders' payday"
+    "type": "callout",
+    "narration": "Across the major players, planned spending on AI infrastructure now runs into the hundreds of billions of dollars — every single year.",
+    "text": "$300B+",
+    "sub": "combined annual AI capex",
+    "icon": "server"
   },
   {
     "id": "s65",
     "type": "character",
-    "narration": "In plenty of IPOs, most of the shares on offer aren't even new. They're existing shares, being sold by insiders who are quietly heading for the door.",
+    "narration": "To put that in perspective, a single flagship AI data center can cost tens of billions of dollars — rivaling the price of a major airport or a nuclear plant.",
     "pose": "explain",
     "props": [
       {
-        "name": "moneybag",
-        "label": "mostly insider shares"
+        "name": "server",
+        "label": "one site: $tens of B"
+      },
+      {
+        "name": "factory",
+        "label": "…like an airport"
       }
     ]
   },
   {
     "id": "s66",
     "type": "stage",
-    "narration": "Founders and funds who paid pennies a share years ago get to sell to you at the very top, pocketing the entire gap. That gap is the whole reason for the timing.",
+    "narration": "These sites devour so much electricity they're straining entire power grids — and reviving old power plants just to keep the chips fed.",
     "icons": [
-      "handshake",
-      "moneybag"
+      "oilbarrel",
+      "warning"
     ],
-    "caption": "bought for pennies, sold at the top"
+    "caption": "it even strains the power grid"
   },
   {
-    "id": "s14",
+    "id": "s13",
     "type": "character",
-    "narration": "So on the single day you're most excited to buy, the people who know the company best are often the ones most eager to sell. Hold that thought.",
-    "pose": "think",
+    "narration": "Now here's the first crack. All that spending is happening now. But the actual revenue from AI — the money customers pay — is still, by comparison, tiny.",
+    "pose": "explain",
     "expression": "worried",
-    "bubble": "they're selling… to me?",
     "props": [
       {
-        "name": "warning",
-        "label": "the best-informed sellers"
+        "name": "chartup",
+        "label": "spending: huge"
+      },
+      {
+        "name": "chartdown",
+        "label": "…revenue: small"
       }
     ]
   },
   {
+    "id": "s14",
+    "type": "compare",
+    "narration": "Hundreds of billions going out to build it. A small fraction coming back in from selling it. For now, the AI boom is mostly a colossal bet on the future.",
+    "left": {
+      "title": "spent building AI",
+      "value": "hundreds of $B",
+      "icon": "server"
+    },
+    "right": {
+      "title": "earned from AI",
+      "value": "a fraction",
+      "icon": "coins"
+    }
+  },
+  {
     "id": "s15",
-    "type": "title",
-    "narration": "Now layer on the second trick: timing. Because when a company goes public matters enormously — and it's chosen to benefit the seller, not you.",
-    "heading": "The Timing",
-    "kicker": "they sell high, on purpose"
+    "type": "stage",
+    "narration": "And the thing they're buying has a nasty habit. The cutting-edge chips at the heart of it lose value fast.",
+    "motif": "gpudecay",
+    "caption": "the chips decay fast"
   },
   {
     "id": "s16",
     "type": "screenshot",
-    "narration": "Markets move in long waves of optimism and fear. IPOs cluster, overwhelmingly, into the optimistic ones.",
-    "sourceId": "wiki-markettrend"
+    "narration": "In accounting terms, they depreciate — a real reduction in the value of an asset as it ages and newer ones arrive.",
+    "sourceId": "wiki-depreciation"
   },
   {
     "id": "s17",
     "type": "character",
-    "narration": "It makes total sense — for the seller. If you're offloading something, you do it when buyers are euphoric and prices are high. That's just good business.",
+    "narration": "A forty-thousand-dollar chip today can be last-generation in a couple of years. So the company is racing to earn back its cost before it becomes expensive scrap.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "sell into euphoria"
+        "name": "chip",
+        "label": "$40k now"
+      },
+      {
+        "name": "warning",
+        "label": "…scrap soon"
       }
     ]
   },
   {
-    "id": "s18",
-    "type": "stage",
-    "narration": "But a high price for the seller is, by definition, an expensive price for the buyer. You're being invited in at precisely the most expensive moment.",
-    "icons": [
-      "pricetag",
-      "warning"
-    ],
-    "caption": "high for them = expensive for you"
-  },
-  {
     "id": "s67",
     "type": "character",
-    "narration": "And remember whose job it is to set the price. The bank — which earns a fat fee on the total amount raised. So it is quietly cheering for the highest price the market will swallow.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "And all of it rests on one assumption: that demand keeps exploding. Nobody actually knows yet whether businesses will pay enough, for long enough, to earn this back.",
+    "pose": "think",
+    "bubble": "will the demand show up?",
     "props": [
       {
-        "name": "bank",
-        "label": "sets the price"
-      },
-      {
-        "name": "percent",
-        "label": "…paid on the total"
+        "name": "gauge",
+        "label": "demand = unproven"
       }
     ]
   },
   {
     "id": "s68",
-    "type": "stage",
-    "narration": "Everyone advising on the deal gets paid more when it prices higher. Almost nobody in that room is paid to protect you, the buyer.",
-    "motif": "ipopop",
-    "caption": "priced for the seller"
+    "type": "image",
+    "narration": "Spending a fortune today on the faith that the revenue arrives tomorrow is the oldest setup for a bubble there is.",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "earn back a trillion in capex"
+  },
+  {
+    "id": "s18",
+    "type": "title",
+    "narration": "So if the spending dwarfs the revenue, where is all the money actually coming from? This is where the hidden part begins.",
+    "heading": "Where the Money Comes From",
+    "kicker": "and where it's hidden"
   },
   {
     "id": "s19",
-    "type": "stage",
-    "narration": "Then there's the famous first-day 'pop' — when a stock jumps the moment it starts trading. It looks like proof you should've gotten in.",
-    "motif": "ipopop",
-    "caption": "the first-day pop"
-  },
-  {
-    "id": "s20",
     "type": "character",
-    "narration": "But watch who actually catches that pop. The banks hand the opening shares to their favored clients, who flip them for an instant profit — before you can even click buy.",
+    "narration": "The giants do have mountains of cash. But even their mountains aren't enough for a build-out this big — so they've started borrowing too.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "handshake",
-        "label": "insiders flip the pop"
+        "name": "vault",
+        "label": "cash piles"
       },
       {
-        "name": "ticker",
-        "label": "…you buy after"
+        "name": "iou",
+        "label": "…plus borrowing"
       }
     ]
   },
   {
+    "id": "s20",
+    "type": "screenshot",
+    "narration": "The simplest way is a corporate bond — debt issued by a company to raise financing. And even the most cash-rich tech firms have been issuing them in record size.",
+    "sourceId": "wiki-corpbond"
+  },
+  {
     "id": "s21",
     "type": "character",
-    "narration": "By the time an ordinary investor can buy, the easy pop is already gone. You're buying at the high, from someone who just bought at the low, minutes ago.",
+    "narration": "But the more interesting debt belongs to a newer breed of company — firms that exist purely to buy chips and rent out AI computing power.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartdown",
-        "label": "you buy the top"
+        "name": "server",
+        "label": "rent-a-GPU firms"
       }
     ]
   },
   {
     "id": "s22",
     "type": "screenshot",
-    "narration": "A lot of this runs on a simple, old idea: that you can buy something overpriced, as long as a 'greater fool' will buy it from you for more.",
-    "sourceId": "wiki-greaterfool"
+    "narration": "These firms run on leverage — borrowing heavily to buy an asset, hoping it earns more than the interest costs.",
+    "sourceId": "wiki-leverage"
   },
   {
     "id": "s23",
-    "type": "stage",
-    "narration": "An overhyped new stock gets passed from hand to hand, each buyer betting someone dumber is right behind them — until, suddenly, nobody is.",
-    "motif": "hotpotato",
-    "caption": "until there's no greater fool left"
-  },
-  {
-    "id": "s69",
-    "type": "image",
-    "narration": "It's the oldest trade on Wall Street: excited newcomers rushing in at the top, while the people in the know quietly slip out the back.",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeBottom": "retail chasing hype as insiders exit"
-  },
-  {
-    "id": "s70",
     "type": "character",
-    "narration": "There's even a blunt nickname for the buyers who show up at the top. 'Exit liquidity.' You are the pool of fresh money the early investors get to cash out into.",
+    "narration": "They borrow billions, often using the chips themselves as collateral. Which means the loan is backed by an asset designed to lose value quickly. A fragile combination.",
     "pose": "explain",
-    "bubble": "\"exit liquidity\"",
+    "expression": "worried",
     "props": [
       {
-        "name": "crowd",
-        "label": "you = exit liquidity"
+        "name": "chip",
+        "label": "chips as collateral"
+      },
+      {
+        "name": "chartdown",
+        "label": "…that depreciate"
       }
     ]
   },
   {
     "id": "s24",
-    "type": "title",
-    "narration": "Which brings us to the single most revealing clue in the whole IPO machine: the lock-up.",
-    "heading": "The Lock-Up",
-    "kicker": "watch what insiders do next"
+    "type": "stage",
+    "narration": "And then there's the debt you can't easily see at all — financing parked in separate companies, off the main balance sheet.",
+    "motif": "iceberg",
+    "caption": "the debt below the waterline"
+  },
+  {
+    "id": "s69",
+    "type": "character",
+    "narration": "A fast-growing slice of this hidden debt now comes from private credit — lightly regulated funds lending enormous sums, well out of public view.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "private credit"
+      },
+      {
+        "name": "warning",
+        "label": "…out of view"
+      }
+    ]
+  },
+  {
+    "id": "s70",
+    "type": "stage",
+    "narration": "And it's all arriving in a world of higher interest rates. Every billion borrowed now costs far more to service than it would have just a few years ago.",
+    "icons": [
+      "percent",
+      "iou"
+    ],
+    "caption": "higher rates, heavier debt"
   },
   {
     "id": "s25",
     "type": "screenshot",
-    "narration": "For a set window after the IPO — usually about ninety to a hundred and eighty days — the big insiders are legally barred from selling their shares.",
-    "sourceId": "wiki-lockup"
+    "narration": "The tool for this is a special-purpose entity — a separate legal company created for one narrow objective.",
+    "sourceId": "wiki-spe"
   },
   {
     "id": "s26",
     "type": "character",
-    "narration": "Think about why that rule even has to exist. It's there because, left unchecked, insiders would dump everything on day one — and everyone knows it.",
+    "narration": "A data center can be built inside one of these vehicles, loaded with debt, and kept at arm's length — so the headline company looks far less indebted than the project really is.",
     "pose": "explain",
     "props": [
       {
-        "name": "padlock",
-        "label": "forced to wait"
+        "name": "shellbox",
+        "label": "the debt lives here"
+      },
+      {
+        "name": "officetower",
+        "label": "…not on the main books"
       }
     ]
   },
   {
     "id": "s27",
+    "type": "image",
+    "narration": "If that structure sounds familiar, it should. Hiding debt in separate entities to flatter the balance sheet is a very old trick.",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "off-balance-sheet debt is still debt"
+  },
+  {
+    "id": "s71",
     "type": "character",
-    "narration": "So the lock-up props up the price for a few months, keeping the stock scarce while the hype is loudest. Then the clock runs out.",
+    "narration": "And we have watched this exact movie on this channel before. Hiding debt in off-the-books vehicles to look healthier than you really are is, almost precisely, the Enron playbook.",
     "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "the countdown"
+        "name": "crookedE",
+        "label": "the Enron playbook"
       }
     ]
   },
   {
     "id": "s28",
-    "type": "stage",
-    "narration": "And on the day the lock-up expires, a flood of insider shares can finally hit the market all at once — and the price very often falls off a cliff.",
-    "motif": "lockupcliff",
-    "caption": "lock-up expires → the dump"
+    "type": "title",
+    "narration": "Now for the strangest part of the whole machine — the money that seems to go in circles.",
+    "heading": "The Money Goes in Circles",
+    "kicker": "circular financing"
   },
   {
     "id": "s29",
     "type": "character",
-    "narration": "It's one of the most reliable patterns on Wall Street. If you want to know what insiders really think of the stock, don't read the press release — watch what they do the moment they're allowed to sell.",
+    "narration": "Watch a pattern that's popped up again and again in the AI boom. A chip maker invests billions in an AI startup.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "ticker",
-        "label": "actions > press releases"
+        "name": "chip",
+        "label": "chipmaker invests"
       }
     ]
   },
   {
     "id": "s30",
-    "type": "stage",
-    "narration": "And the person holding the shares when the music stops? Usually the last one to the party. The retail investor, left holding the bag.",
-    "motif": "bagholder",
-    "caption": "retail: left holding the bag"
+    "type": "character",
+    "narration": "That startup then turns around and spends those same billions… buying chips, from the company that just invested in it.",
+    "pose": "explain",
+    "expression": "surprised",
+    "props": [
+      {
+        "name": "exchange",
+        "label": "…buys its chips back"
+      }
+    ]
   },
   {
-    "id": "s71",
-    "type": "callout",
-    "narration": "That lock-up window is usually ninety to a hundred and eighty days. Mark it on a calendar, and you can often watch the dump coming from a mile away.",
-    "text": "90–180 days",
-    "sub": "before insiders are free to sell",
-    "icon": "padlock"
+    "id": "s31",
+    "type": "stage",
+    "narration": "The same dollars loop around the circle — and at each step, they show up as shiny new revenue and investment on someone's books.",
+    "motif": "circularfinance",
+    "caption": "the same dollars, counted again and again"
+  },
+  {
+    "id": "s32",
+    "type": "character",
+    "narration": "It's called vendor financing: the seller quietly funds its own customers so they can afford to keep buying. It can make demand look far stronger than it really is.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "seller funds the buyer"
+      }
+    ]
+  },
+  {
+    "id": "s33",
+    "type": "screenshot",
+    "narration": "And we have seen this exact move before — in the dot-com bubble, when telecom suppliers lent their customers the money to buy their equipment.",
+    "sourceId": "wiki-dotcom"
+  },
+  {
+    "id": "s83",
+    "type": "character",
+    "narration": "Back then it sank giants. Telecom suppliers lent customers billions to buy their gear — and when those customers folded, the 'sales' turned out to be loans that would never be repaid.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "ticker",
+        "label": "sales that were really loans"
+      }
+    ]
+  },
+  {
+    "id": "s34",
+    "type": "character",
+    "narration": "When the music stopped back then, the customers couldn't pay, the suppliers ate the losses, and the whole web of circular revenue collapsed at once.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "domino",
+        "label": "…it unwound fast"
+      }
+    ]
   },
   {
     "id": "s72",
     "type": "character",
-    "narration": "Over and over, hyped stocks drift along, then drop sharply right around the week their insiders are finally allowed to sell. That's not a coincidence. That's the schedule.",
+    "narration": "There's a subtler worry too. When a chip maker invests in a customer who then buys its chips, how much of that booked 'revenue' is genuinely new demand?",
     "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "the dump is scheduled"
+        "name": "calculator",
+        "label": "how real is it?"
       }
     ]
   },
   {
     "id": "s73",
     "type": "stage",
-    "narration": "The press release says 'long-term vision.' The lock-up calendar says 'selling in ninety days.' When they disagree, believe the calendar.",
-    "motif": "lockupcliff",
-    "caption": "believe the calendar, not the hype"
-  },
-  {
-    "id": "s31",
-    "type": "title",
-    "narration": "Underneath all of this sits one unfair advantage that colors everything: information.",
-    "heading": "The Information Gap",
-    "kicker": "they know, you guess"
-  },
-  {
-    "id": "s32",
-    "type": "screenshot",
-    "narration": "Economists have a clean term for it. An information asymmetry — where one side of a deal knows far more than the other.",
-    "sourceId": "wiki-infoasym"
-  },
-  {
-    "id": "s33",
-    "type": "character",
-    "narration": "The insiders have lived inside the company for years. They know the real customers, the real margins, the real problems. You get a glossy document.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "they know everything"
-      },
-      {
-        "name": "prospectus",
-        "label": "…you get a brochure"
-      }
-    ]
-  },
-  {
-    "id": "s34",
-    "type": "screenshot",
-    "narration": "That document is the prospectus — the official disclosure every IPO must publish for potential buyers.",
-    "sourceId": "wiki-prospectus"
+    "narration": "If the money simply circled back from your own investment, the sales figure on your books may be less a measure of real demand — and more an echo of your own cash.",
+    "motif": "circularfinance",
+    "caption": "revenue — or an echo?"
   },
   {
     "id": "s35",
+    "type": "title",
+    "narration": "So is this a bubble? Let's be precise about what that word actually means.",
+    "heading": "Is It a Bubble?",
+    "kicker": "define your terms"
+  },
+  {
+    "id": "s36",
+    "type": "screenshot",
+    "narration": "An economic bubble is when prices climb far above what the underlying fundamentals can justify.",
+    "sourceId": "wiki-bubble"
+  },
+  {
+    "id": "s37",
     "type": "character",
-    "narration": "And buried deep inside it, in the 'risk factors,' is often a startlingly honest list of everything that could go wrong — written by lawyers, read by almost no one.",
+    "narration": "By that test, AI valuations are priced for near-perfection. For today's prices to make sense, these companies must earn truly astronomical profits, for decades.",
     "pose": "explain",
     "props": [
       {
-        "name": "prospectus",
-        "label": "read the risk factors"
-      },
-      {
-        "name": "warning",
-        "label": "…nobody does"
+        "name": "gauge",
+        "label": "priced for perfection"
       }
     ]
   },
   {
-    "id": "s36",
-    "type": "image",
-    "narration": "Which leaves the one question that cuts through all the hype. If this company is such a sure thing, why are the people who know it best so eager to sell it to you?",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "if it's so great, why are they selling?"
-  },
-  {
-    "id": "s74",
-    "type": "character",
-    "narration": "Sit with that question, because it is the whole episode. Nobody willingly sells the golden goose. They sell the bird they quietly suspect has already laid its best eggs.",
-    "pose": "think",
-    "bubble": "so… why sell?"
-  },
-  {
-    "id": "s75",
-    "type": "image",
-    "narration": "The insider's real choice is simple: keep owning a great company — or sell it to the public at the richest price it may ever see.",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "hold the great company",
-    "memeBottom": "or sell it high to the public"
-  },
-  {
-    "id": "s37",
-    "type": "title",
-    "narration": "If you want to see the dumping ground at its purest, look at what happened in 2020 and 2021. Enter the SPAC.",
-    "heading": "The SPAC Era",
-    "kicker": "the dumping ground, perfected"
-  },
-  {
     "id": "s38",
-    "type": "screenshot",
-    "narration": "A SPAC is a 'blank check' company — a shell with no business at all, that raises money from the public first, and goes looking for a company to buy later.",
-    "sourceId": "wiki-spac"
+    "type": "stage",
+    "narration": "Now, bubbles aren't new, and some leave real things behind — the dot-com crash still gave us the modern internet. The danger isn't the dream. It's how it's financed.",
+    "motif": "inflate",
+    "caption": "the dream isn't the danger"
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "Read that again. You hand over your money, and only afterward do they go find something to spend it on. You're trusting a blank check.",
+    "narration": "And this is the crucial difference. A pure stock bubble, when it bursts, mostly hurts shareholders. A debt-fueled bubble is far more dangerous.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "cheque",
-        "label": "a blank check"
+        "name": "ticker",
+        "label": "stocks fall"
       },
       {
-        "name": "warning",
-        "label": "…trust us"
+        "name": "iou",
+        "label": "…but debt remains"
       }
     ]
   },
   {
     "id": "s40",
     "type": "stage",
-    "narration": "They were sold with star power — famous athletes, celebrities, and star investors lending their names to make a shell company feel like a sure bet.",
-    "icons": [
-      "trophy",
-      "bubble"
-    ],
-    "caption": "sold with celebrity hype"
+    "narration": "Because debt doesn't care about the dream. The hype can evaporate overnight — but the loans behind it still have to be paid back, in full, on schedule.",
+    "motif": "bubbledebt",
+    "caption": "hype pops — the debt stays"
   },
   {
     "id": "s41",
+    "type": "image",
+    "narration": "Equity is a bet that can lose. Debt is a promise that must be kept. And this boom is increasingly built on promises.",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "fund it with profits",
+    "memeBottom": "or fund it with debt"
+  },
+  {
+    "id": "s74",
     "type": "character",
-    "narration": "And the people who set up the SPAC — the sponsors — handed themselves a staggering deal for doing it.",
+    "narration": "The real danger isn't just the size of the debt. It's whether these projects can earn enough to cover the interest — before the very chips they bought go obsolete.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "magichat",
-        "label": "the sponsor's deal"
+        "name": "percent",
+        "label": "cover the interest?"
+      },
+      {
+        "name": "clock",
+        "label": "…before chips age"
+      }
+    ]
+  },
+  {
+    "id": "s75",
+    "type": "stage",
+    "narration": "If AI returns come in slower or smaller than promised, the equity story can quietly deflate — while the debt payments keep right on coming, every month.",
+    "motif": "bubbledebt",
+    "caption": "if returns slip, the debt bites"
+  },
+  {
+    "id": "s85",
+    "type": "character",
+    "narration": "And much of this debt must be refinanced within a few years. If rates are still high and the AI profits haven't arrived, rolling it over could get brutally expensive — or simply impossible.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "percent",
+        "label": "refinance risk"
+      },
+      {
+        "name": "warning",
+        "label": "…at higher rates"
       }
     ]
   },
   {
     "id": "s42",
-    "type": "callout",
-    "narration": "The sponsor typically pockets around twenty percent of the company — the 'promote' — for a tiny upfront sum. A fortune, almost regardless of how the deal performs.",
-    "text": "~20%",
-    "sub": "the sponsor's 'promote', nearly free",
-    "icon": "moneybag"
+    "type": "title",
+    "narration": "So what actually breaks, if the AI revenue doesn't show up on time?",
+    "heading": "What Breaks",
+    "kicker": "the failure modes"
   },
   {
     "id": "s43",
-    "type": "stage",
-    "narration": "So the incentive was simple and brutal: do a deal, any deal, and get paid. Whether it was a good deal for the public was almost beside the point.",
-    "motif": "exitramp",
-    "caption": "do any deal, get paid"
+    "type": "character",
+    "narration": "The first risk is overbuilding. If everyone races to build data centers for demand that arrives slower than hoped, you get too much capacity and collapsing prices.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "server",
+        "label": "too much capacity"
+      },
+      {
+        "name": "chartdown",
+        "label": "…prices fall"
+      }
+    ]
   },
   {
     "id": "s44",
-    "type": "callout",
-    "narration": "In 2021, this hit a frenzy — hundreds of SPACs raised record sums, often merging with companies that had little revenue and big promises.",
-    "text": "$160B+",
-    "sub": "raised by SPACs in 2021",
-    "icon": "rocket"
+    "type": "stage",
+    "narration": "Then you're left with half-empty data centers full of depreciating chips — and the debt that paid for them still sitting there, demanding its interest.",
+    "motif": "gpudecay",
+    "caption": "stranded chips, live debt"
   },
   {
     "id": "s45",
-    "type": "stage",
-    "narration": "Then reality arrived. As a group, post-merger SPAC stocks went on to lose most of their value — a textbook transfer of money from the public to the sponsors.",
-    "motif": "crash",
-    "caption": "then they crashed",
-    "accent": true
+    "type": "character",
+    "narration": "The second risk is who's holding that debt. Banks, bond investors, and a fast-growing pool of private credit have all funded the build-out.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bank",
+        "label": "banks"
+      },
+      {
+        "name": "crowd",
+        "label": "…private credit"
+      }
+    ]
   },
   {
     "id": "s46",
-    "type": "image",
-    "narration": "It was the dumping ground stripped of all disguise: hype on the way in, collapse on the way out, and insiders paid either way.",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "sponsors: we got paid",
-    "memeBottom": "the public: we held the bag"
+    "type": "stage",
+    "narration": "If enough AI loans go bad at once, the losses don't stay in tech. They can ripple out through the financial system, like dominoes.",
+    "motif": "dominoes",
+    "caption": "losses can spread"
   },
   {
-    "id": "s76",
+    "id": "s47",
+    "type": "callout",
+    "narration": "And it's dangerously concentrated. A handful of companies now drive a huge share of the entire stock market's value — and much of this spending.",
+    "text": "a handful",
+    "sub": "of firms carry the whole market",
+    "icon": "warning"
+  },
+  {
+    "id": "s48",
     "type": "character",
-    "narration": "And when the SPAC bubble burst, the lawsuits came. Several celebrities who had promoted these deals were sued or fined for failing to disclose they were paid to hype them.",
+    "narration": "So a stumble by just a few AI giants wouldn't be a sector problem. It would be everyone's problem — in their pension, their index fund, their savings.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "scale",
-        "label": "promoters sued"
-      },
-      {
-        "name": "warning",
-        "label": "…paid to pump"
+        "name": "piggybank",
+        "label": "it's in your index fund"
       }
     ]
   },
   {
-    "id": "s77",
+    "id": "s76",
     "type": "callout",
-    "narration": "And the numbers were grim. Studies of companies that went public through SPACs found many lost well over half their value within a year of the merger.",
-    "text": "over half",
-    "sub": "the value a typical de-SPAC later lost",
-    "icon": "chartdown",
-    "break": true
+    "narration": "And it is dangerously concentrated. Roughly a third of the entire S&P 500's value now sits in a small cluster of AI-linked giants.",
+    "text": "a third",
+    "sub": "of the whole index, in a few AI giants",
+    "icon": "warning"
   },
   {
-    "id": "s78",
-    "type": "stage",
-    "narration": "Every one of these manias ends the same way. The asset gets passed along, hand to hand, until it finally lands with whoever believed the story the longest.",
-    "motif": "hotpotato",
-    "caption": "the last believer always loses"
-  },
-  {
-    "id": "s47",
-    "type": "title",
-    "narration": "Now, in fairness, let's not throw out the whole stock market. It isn't all a scam.",
-    "heading": "To Be Fair",
-    "kicker": "the market's real job"
-  },
-  {
-    "id": "s48",
-    "type": "screenshot",
-    "narration": "At its best, the stock market does something genuinely vital: it lets businesses raise money, and lets ordinary people own a slice of them.",
-    "sourceId": "wiki-stockmarket"
+    "id": "s77",
+    "type": "image",
+    "narration": "So this was never only a tech-investor problem. It's sitting quietly inside almost every ordinary retirement account.",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "the AI giants wobble",
+    "memeBottom": "everyone's 401k"
   },
   {
     "id": "s49",
+    "type": "title",
+    "narration": "Now, let's be fair — because 'it's all a bubble' is lazy, and probably wrong.",
+    "heading": "To Be Fair",
+    "kicker": "two things can be true"
+  },
+  {
+    "id": "s50",
     "type": "character",
-    "narration": "Plenty of IPOs are real, growing companies that used the money to build something lasting. Buying great businesses and holding them has made patient investors wealthy.",
+    "narration": "AI is almost certainly a genuinely transformative technology. It really can make things, write things, and solve things that were impossible a few years ago.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "brain",
+        "label": "the tech is real"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "image",
+    "narration": "The technology being revolutionary and the financing being a bubble can both be true at the same time. They usually are.",
+    "src": "img/memes/thisisfine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "the tech: revolutionary",
+    "memeBottom": "the financing: on fire"
+  },
+  {
+    "id": "s84",
+    "type": "stage",
+    "narration": "In every gold rush, the surest money is selling picks and shovels. The chip makers sell to everyone — which is also why their revenue can look unstoppable, right up until the miners run out of cash.",
+    "icons": [
+      "chip",
+      "coins"
+    ],
+    "caption": "the picks-and-shovels seller wins first"
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "Railways, electricity, the internet — all were real revolutions. And all had wild financial bubbles bolted onto them, that burst and ruined plenty of investors on the way.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bridge",
+        "label": "railways"
+      },
+      {
+        "name": "laptop",
+        "label": "…the internet"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "The technology survives the crash. The over-leveraged companies that bet the farm on it usually don't.",
     "pose": "explain",
     "props": [
       {
         "name": "chartup",
-        "label": "real businesses too"
+        "label": "tech endures"
+      },
+      {
+        "name": "chartdown",
+        "label": "…the debt doesn't"
       }
     ]
   },
   {
-    "id": "s50",
-    "type": "screenshot",
-    "narration": "And after the IPO, most trading happens in the secondary market — investors buying and selling with each other, discovering a fair price over time.",
-    "sourceId": "wiki-secondary"
-  },
-  {
-    "id": "s51",
+    "id": "s78",
     "type": "character",
-    "narration": "The problem isn't the market itself. It's the one specific moment — the IPO — when the deck is tilted hardest toward the person doing the selling.",
+    "narration": "History is blunt about who survives these things. The railroads got built — but most railroad companies went bankrupt. The internet thrived — but most dot-coms did not.",
     "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "the deck is tilted"
+        "name": "bridge",
+        "label": "railroads built"
+      },
+      {
+        "name": "chartdown",
+        "label": "…companies bust"
       }
     ]
   },
   {
     "id": "s79",
-    "type": "character",
-    "narration": "And here's the quiet irony. The boring path usually wins. Owning the whole market through a low-cost index fund beats chasing shiny new listings for almost everyone.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "boring index fund"
-      },
-      {
-        "name": "trophy",
-        "label": "…quietly wins"
-      }
-    ]
-  },
-  {
-    "id": "s80",
     "type": "stage",
-    "narration": "You don't have to pick the one new needle. You can own the entire haystack, cheaply — and simply skip the part of the market that's tilted hardest against you.",
+    "narration": "A few giants will likely emerge stronger than ever. The hard question for an investor is whether you're holding one of the winners — or one of the many casualties.",
     "icons": [
-      "scale",
-      "gauge"
+      "trophy",
+      "warning"
     ],
-    "caption": "own the haystack, skip the hype"
-  },
-  {
-    "id": "s52",
-    "type": "title",
-    "narration": "So what do you actually do with all this? It comes down to a few simple, slightly cynical habits.",
-    "heading": "How to Not Be the Fool",
-    "kicker": "the takeaways"
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "First, always ask who is selling, and why they're selling right now. If the best-informed people are rushing for the exit, that tells you something.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "ticker",
-        "label": "who's selling — and why?"
-      }
-    ]
+    "caption": "the winners are few"
   },
   {
     "id": "s54",
-    "type": "image",
-    "narration": "Second, treat the first-day hype as a warning sign, not a buy signal. The louder the launch, the more someone wants you excited.",
-    "src": "img/memes/thisisfine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "IPO day hype",
-    "memeBottom": "is a sell signal, not a buy"
+    "type": "title",
+    "narration": "So what should you actually watch — if you want to see trouble before the headlines do?",
+    "heading": "What to Watch",
+    "kicker": "the tells"
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "Third, watch the lock-up calendar. A wave of insider selling is often scheduled, in plain sight, a few months after the hype peaks.",
+    "narration": "First, watch the gap between capex and revenue. As long as the spending wildly outruns the money coming in, the bet is still unproven.",
     "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "mark the lock-up date"
+        "name": "calculator",
+        "label": "capex vs revenue"
       }
     ]
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "And fourth — you almost never have to buy on day one. A good company will still be a good company in six months, after the fireworks fade and the real price shows up.",
+    "narration": "Second, watch the debt — especially the kind tucked into separate entities and private credit, where it's hardest to see.",
     "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "there's no rush"
+        "name": "shellbox",
+        "label": "the hidden debt"
       }
     ]
   },
   {
     "id": "s57",
-    "type": "stage",
-    "narration": "Because the market is really two machines wearing one suit. A place to invest in businesses — and a place to quietly offload risk onto the public.",
-    "icons": [
-      "bank",
-      "magichat"
-    ],
-    "caption": "invest… or be sold to"
-  },
-  {
-    "id": "s81",
     "type": "character",
-    "narration": "And we have absolutely seen this movie before. In the dot-com bubble, companies with no profits listed into a frenzy, insiders sold, and the public was left holding the wreckage.",
+    "narration": "Third, watch for circular deals — where one company's investment magically becomes another's revenue. Real demand doesn't need to be funded by the seller.",
     "pose": "explain",
     "props": [
       {
-        "name": "laptop",
-        "label": "the dot-com echo"
-      },
-      {
-        "name": "chartdown",
-        "label": "…same ending"
+        "name": "exchange",
+        "label": "circular revenue"
       }
     ]
-  },
-  {
-    "id": "s82",
-    "type": "stage",
-    "narration": "The costumes change — dot-coms, SPACs, whatever's hot next. The trade underneath never does: informed sellers, excited buyers, and a price set right at the top.",
-    "motif": "bagholder",
-    "caption": "same pattern, new decade"
   },
   {
     "id": "s58",
     "type": "chalkboard",
-    "narration": "So remember the pattern. Insiders sell high. Banks flip the pop. Lock-ups hide the dump. And the hype is loudest exactly when the risk is greatest.",
+    "narration": "So here's the whole thing in four lines. The spending is real. The revenue is small. The debt is large. And a lot of it is hidden.",
     "lines": [
-      "insiders sell high",
-      "banks flip the pop",
-      "lock-ups hide the dump",
-      "loudest hype = highest risk"
+      "the spending is real",
+      "the revenue is small",
+      "the debt is large",
+      "…and a lot of it is hidden"
     ]
   },
   {
     "id": "s59",
-    "type": "callout",
-    "narration": "On the other side of your exciting IPO buy sits the most informed, best-resourced seller you will ever face. That's the whole game in one sentence.",
-    "text": "who's on the other side?",
-    "sub": "…usually someone who knows more",
-    "icon": "scale"
+    "type": "stage",
+    "narration": "A healthy boom is funded by profits. A fragile one is funded by debt and clever accounting. This one is leaning harder on the second kind every quarter.",
+    "icons": [
+      "coins",
+      "iou"
+    ],
+    "caption": "profits vs promises"
   },
   {
     "id": "s60",
+    "type": "callout",
+    "narration": "Because the hype is loud, and it's designed to be. The leverage is quiet — and that's exactly where the risk likes to hide.",
+    "text": "watch the debt",
+    "sub": "…not the demos",
+    "icon": "iou"
+  },
+  {
+    "id": "s80",
     "type": "character",
-    "narration": "So the next time a glossy new stock promises you the ground floor, you'll ask the only question that matters: if this is the ground floor, why is everyone so keen to get off?",
-    "pose": "present",
-    "bubble": "now you see the trade",
+    "narration": "And the boring defense still quietly works. Owning the whole market cheaply means you capture the real winners — without betting the house on which over-leveraged firm happens to survive.",
+    "pose": "explain",
     "props": [
       {
-        "name": "bell",
-        "label": "…who's really ringing the bell?"
+        "name": "scale",
+        "label": "own broadly"
+      },
+      {
+        "name": "gauge",
+        "label": "…don't bet the house"
       }
     ]
   },
   {
-    "id": "s83",
-    "type": "character",
-    "narration": "None of this means never invest. It means always know which seat you're in. In an IPO, you are almost always the buyer — sitting directly across the table from the house.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "scale",
-        "label": "know your seat"
-      }
-    ]
+    "id": "s81",
+    "type": "image",
+    "narration": "The hype is loud and beautifully produced. The leverage underneath it is quiet, and a lot less photogenic. Watch the quiet number.",
+    "src": "img/memes/distracted.jpg",
+    "meme": "Distracted Boyfriend",
+    "memeBottom": "chasing the hype, ignoring the leverage"
   },
   {
     "id": "s61",
     "type": "character",
-    "narration": "If this changed how you see an IPO, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "So the next time an AI headline promises to change the world, you'll ask the quieter question. Not 'is it amazing?' — but 'who's paying for it, and with whose money?'",
+    "pose": "present",
+    "bubble": "who's paying for it?",
     "props": [
       {
-        "name": "ticker",
-        "label": "which number next?"
+        "name": "brain",
+        "label": "…and with whose money?"
       }
     ]
   },
   {
     "id": "s62",
+    "type": "character",
+    "narration": "If this made the AI boom suddenly look very different, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "server",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s63",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

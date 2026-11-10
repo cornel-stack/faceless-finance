@@ -33,6 +33,8 @@ export type DoodleName =
   | "keyboard" | "ledger"
   // EP021 (IPO dumping ground) additions:
   | "bell" | "prospectus"
+  // EP022 (AI bubble) additions:
+  | "server" | "brain"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1070,6 +1072,25 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={24} y={16} w={52} h={18} fill="#3a6ea5" strokeWidth={1.6} />
           <text x={50} y={30} fontSize={11} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">IPO</text>
           {[44, 52, 60, 68, 76].map((y, i) => <RLine key={i} x1={32} y1={y} x2={68} y2={y} strokeWidth={1.6} />)}
+        </>
+      );
+
+    // ---- EP022 (AI bubble) doodles ----
+    case "server":
+      // A data-center server rack.
+      return (
+        <>
+          <RRect x={30} y={14} w={40} h={72} fill="#2b2f33" strokeWidth={SW} />
+          {[22, 34, 46, 58, 70].map((y, i) => <g key={i}><RRect x={34} y={y} w={32} h={8} fill="#454b50" strokeWidth={1} /><RCircle cx={40} cy={y + 4} d={3} fill={i % 2 ? GREEN : GOLD} strokeWidth={0.8} /><RCircle cx={48} cy={y + 4} d={3} fill={GREEN} strokeWidth={0.8} /></g>)}
+        </>
+      );
+    case "brain":
+      // AI — a stylized brain / chip-brain.
+      return (
+        <>
+          <RPath d="M34 40 Q28 24 44 24 Q50 16 58 24 Q74 24 68 40 Q76 54 64 60 Q58 72 46 64 Q30 64 32 50 Q26 46 34 40 Z" fill={PINK} strokeWidth={SW} />
+          <RPath d="M50 26 L50 64 M42 36 L58 36 M40 50 L60 50" fill="none" strokeWidth={1.8} />
+          {[[40, 70], [50, 74], [60, 70]].map(([x, y], i) => <RCircle key={i} cx={x} cy={y} d={4} fill={INK} fillStyle="solid" strokeWidth={1} />)}
         </>
       );
   }
