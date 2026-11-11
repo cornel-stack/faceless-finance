@@ -178,7 +178,9 @@ export interface StageScene extends Base {
     // EP056 (invest $100/month at every age) additions:
     | "hundredamonth" | "startagebars" | "costofwaiting" | "contribvsgrowth" | "fivedollarday" | "dcathroughcrashes"
     // EP057 ($1,000 invested since 1950) additions:
-    | "longclimb" | "dividendsnowball" | "crashgauntlet" | "panicvshold" | "realvsnominal" | "missedbestdays";
+    | "longclimb" | "dividendsnowball" | "crashgauntlet" | "panicvshold" | "realvsnominal" | "missedbestdays"
+    // EP058 (every level of salary) additions:
+    | "salaryladder" | "grossnetshrink" | "happinessplateau" | "bracketladder" | "raiseeaten" | "samesalarydifferentlife";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

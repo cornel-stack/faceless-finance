@@ -2,889 +2,916 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "In 1950, imagine your grandparent put a thousand dollars into the US stock market — about thirteen thousand dollars in today's money. They then did something almost nobody can do: absolutely nothing. They never touched it again. Seventy-four years later, what's sitting in that account?",
+    "narration": "A one-million-dollar salary sounds like thirty-three times a thirty-thousand-dollar one. But here's the strange truth: it does not buy you thirty-three times the life. Thanks to taxes, lifestyle creep, and the weird way happiness actually works, every step up the salary ladder buys you dramatically less than the step before.",
     "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "1950: invest $1,000"
+        "name": "paystub",
+        "label": "$1M = 33× $30K?"
       },
       {
-        "name": "vault",
-        "label": "never touch it"
+        "name": "balloon",
+        "label": "not 33× the life"
       },
       {
-        "name": "clock",
-        "label": "wait 74 years"
+        "name": "scale",
+        "label": "each step buys less"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "The answer is almost unbelievable. With dividends reinvested, that single thousand-dollar bet would be worth roughly three million dollars today. From one thousand, to three million, without adding another cent.",
-    "text": "$3,000,000",
-    "sub": "what $1,000 in 1950 became (dividends reinvested)",
-    "icon": "snowball"
+    "narration": "Start with the lie hidden in every job offer. A hundred-thousand-dollar salary is not a hundred thousand dollars. After federal, state, and payroll taxes, the money that actually lands in your account is closer to seventy-five thousand. The headline number was never real.",
+    "text": "$75,000",
+    "sub": "the real take-home on a $100K salary",
+    "icon": "paystub"
   },
   {
-    "id": "s42",
+    "id": "s45",
     "type": "character",
-    "narration": "The hard part was never the investing — it was the holding. Over those seventy-four years, you'd have watched that account get cut in half more than once. Almost nobody can actually sit through that. Which is exactly why almost nobody ends up with the three million.",
+    "narration": "One crucial distinction first. Your marginal rate is what your very last dollar gets taxed at — maybe twenty-four percent. Your effective rate is what you actually pay across all your income, which is much lower. People panic about the scary marginal number, but the effective rate is the one that truly hits you.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "diamond",
-        "label": "holding is the hard part"
+        "name": "percent",
+        "label": "marginal = top $"
       },
       {
-        "name": "chartdown",
-        "label": "cut in half, twice"
+        "name": "calculator",
+        "label": "effective = the average"
       },
       {
-        "name": "crowd",
-        "label": "almost nobody does it"
+        "name": "smiley",
+        "label": "the real rate is lower"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "But here's what that clean number hides. The journey from a thousand to three million was not a smooth, happy line upward. It was a white-knuckle rollercoaster — a ride that would have terrified you, and tempted you to bail, at least a dozen times.",
+    "narration": "So today we're climbing the whole ladder — thirty thousand, fifty, seventy-five, a hundred, a quarter million, all the way to a million — and asking the only question that matters at each rung: what does this salary actually buy you, in real life?",
     "pose": "explain",
     "props": [
       {
-        "name": "rollercoaster",
-        "label": "not a smooth line"
+        "name": "ladder",
+        "label": "$30K → $1M"
       },
       {
-        "name": "chartdown",
-        "label": "terror, a dozen times"
+        "name": "grocerybag",
+        "label": "what it really buys"
       },
       {
-        "name": "diamond",
-        "label": "you had to hold"
+        "name": "smiley",
+        "label": "in real life"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "my portfolio just dropped 50%",
-    "memeBottom": "this is fine (it was, if you didn't sell)",
-    "narration": "Because the three million dollars wasn't a reward for being smart, or lucky, or good at picking stocks. It was a reward for one rare trait: the iron stomach to hold on, through crash after crash, when every instinct screamed at you to sell."
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "chase a bigger salary",
+    "memeBottom": "chase a bigger gap between income and lifestyle",
+    "narration": "And stick around, because the real secret isn't which rung you're on. It's a single number that decides whether any salary — thirty thousand or a million — leaves you free or trapped. Most people never even think about it."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, let's understand the engine behind that absurd number.",
-    "heading": "The Headline Number",
-    "kicker": "$1,000 → $3 million"
+    "narration": "First, the two forces that quietly reshape every salary.",
+    "heading": "Gross vs. Net",
+    "kicker": "the number is a lie"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "Our thousand dollars went into what became the S&P 500 — a fund tracking the stock performance of 500 companies, the biggest in America. Over the long run, that basket has returned roughly ten to eleven percent a year, including dividends.",
-    "sourceId": "wiki-sp500"
+    "narration": "The first force is tax. The US uses a progressive tax — a tax in which the rate increases as the taxable amount increases. The more you earn, the bigger the slice the government takes from your top dollars.",
+    "sourceId": "wiki-progressive"
   },
   {
     "id": "s7",
-    "type": "stage",
-    "narration": "At that rate, compounding over seventy-four years does something that looks almost like a typo. A thousand dollars doubles, and doubles, and doubles again — eleven times over — until that tiny seed has grown into a three-million-dollar tree. Same thousand bucks, just given an extraordinary amount of time.",
-    "motif": "longclimb",
-    "caption": "…if you survived every crash on the way up"
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "And the growth is wildly lopsided. It took decades just to crawl from a thousand dollars to a hundred thousand. But the jump from one million to three million happened in only the last short stretch. The biggest gains always arrive at the very end.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "seedling",
-        "label": "slow for decades"
-      },
-      {
-        "name": "chartup",
-        "label": "then explosive"
-      },
-      {
-        "name": "snowball",
-        "label": "biggest gains come last"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "It works through tax brackets — the divisions at which tax rates change in a progressive system. And here's the part almost everyone gets wrong: moving into a higher bracket does not tax your whole income more. Only the dollars above the line are taxed at the higher rate.",
+    "sourceId": "wiki-bracket"
   },
   {
     "id": "s8",
-    "type": "title",
-    "narration": "But there's a secret ingredient most people completely overlook.",
-    "heading": "The Dividend Secret",
-    "kicker": "where most of it came from"
+    "type": "stage",
+    "narration": "Picture your income poured into stacked buckets. The first chunk is taxed at ten percent, the next at twelve, then twenty-two, and so on. Only your very top dollars ever touch the top rate. So a raise can never, ever shrink your total take-home. That fear is a myth.",
+    "motif": "bracketladder",
+    "caption": "a raise never drops your whole take-home"
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "So let's kill the myth for good. 'I turned down a raise so I wouldn't jump a tax bracket' is complete nonsense. Only the dollars over the line get the higher rate. A raise always — always — leaves more money in your pocket. Never, ever refuse one over taxes.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "a raise = more money"
+      },
+      {
+        "name": "warning",
+        "label": "the myth is false"
+      },
+      {
+        "name": "paystub",
+        "label": "always take it"
+      }
+    ]
   },
   {
     "id": "s9",
     "type": "screenshot",
-    "narration": "That ingredient is the dividend — the distribution of profits by a corporation to its shareholders. Every year, the companies you own mail you a slice of their profits, just for holding the stock.",
-    "sourceId": "wiki-dividend"
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "And dividends used to be even juicier. For much of the last century, stocks paid a fat four or five percent a year in dividends alone. Reinvested, decade after decade, those humble payments quietly became the lion's share of the entire fortune.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "4-5% yields"
-      },
-      {
-        "name": "snowball",
-        "label": "reinvested for decades"
-      },
-      {
-        "name": "moneytree",
-        "label": "the lion's share"
-      }
-    ]
+    "narration": "What's left after the government's cut has a name: disposable income — total personal income minus current taxes. This, not your headline salary, is the money you actually get to live on.",
+    "sourceId": "wiki-disposable"
   },
   {
     "id": "s10",
+    "type": "stage",
+    "narration": "And the gap between the two grows as you climb. On fifty thousand, you keep around eighty-four percent. On a hundred thousand, about seventy-five. By a million, taxes can swallow forty percent or more. The higher the headline, the bigger the bite before you see a cent.",
+    "motif": "grossnetshrink",
+    "caption": "the higher you earn, the bigger the bite"
+  },
+  {
+    "id": "s47",
     "type": "character",
-    "narration": "And here's the magic move: instead of spending those dividends, you automatically use them to buy even more shares. Which then pay even more dividends. Which buy even more shares. It's a compounding engine bolted on top of the compounding engine.",
+    "narration": "Two more bites to watch. Payroll taxes for Social Security and Medicare skim another seven-plus percent right off the top. And your state matters enormously — a few charge nothing, while others grab over ten percent. The same salary nets wildly different amounts depending on your zip code.",
     "pose": "explain",
     "props": [
       {
-        "name": "coins",
-        "label": "dividends paid out"
+        "name": "taxform",
+        "label": "payroll tax ~7%"
       },
       {
-        "name": "snowball",
-        "label": "buy more shares"
+        "name": "globe",
+        "label": "state varies a lot"
       },
       {
-        "name": "moneytree",
-        "label": "an engine on an engine"
+        "name": "scale",
+        "label": "zip code changes it"
       }
     ]
   },
   {
     "id": "s11",
-    "type": "screenshot",
-    "narration": "Experts measure this with total shareholder return, which combines share price appreciation and dividends paid. And over decades, the dividend part isn't a footnote — it's the overwhelming majority of the entire result.",
-    "sourceId": "wiki-tsr"
+    "type": "title",
+    "narration": "With that in mind, let's start at the bottom of the ladder.",
+    "heading": "$30,000",
+    "kicker": "survival"
   },
   {
     "id": "s12",
-    "type": "stage",
-    "narration": "Look at the difference it makes. Without reinvesting dividends — just the price going up — your thousand dollars would have grown to around four hundred thousand. Impressive. But reinvest those dividends, and it explodes to three million. Reinvesting was worth roughly seven times more.",
-    "motif": "dividendsnowball",
-    "caption": "reinvesting dividends was ~7× the difference"
-  },
-  {
-    "id": "s45",
     "type": "character",
-    "narration": "The tool that makes this effortless is a D-R-I-P — a dividend reinvestment plan. You switch it on once, and from then on every dividend automatically buys more shares, forever, with zero effort from you. It's the quiet machine behind that sevenfold difference.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "gear",
-        "label": "flip it on once"
-      },
-      {
-        "name": "snowball",
-        "label": "auto-buys shares"
-      },
-      {
-        "name": "vault",
-        "label": "the quiet machine"
-      }
-    ]
-  },
-  {
-    "id": "s13",
-    "type": "character",
-    "narration": "So lesson one, before we even get to the drama: always reinvest your dividends. That single automatic setting, left alone for a lifetime, is quietly responsible for the vast majority of long-term stock market wealth. Most people never even notice it.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "gear",
-        "label": "auto-reinvest"
-      },
-      {
-        "name": "snowball",
-        "label": "most of the wealth"
-      },
-      {
-        "name": "moneytree",
-        "label": "set it and forget it"
-      }
-    ]
-  },
-  {
-    "id": "s14",
-    "type": "title",
-    "narration": "Now for the part the three-million-dollar number hides: the terror.",
-    "heading": "The Gauntlet",
-    "kicker": "every crash you survived"
-  },
-  {
-    "id": "s15",
-    "type": "stage",
-    "narration": "To collect that three million, your money had to march through a gauntlet of brutal crashes. A savage bear market in 1973. Black Monday in 1987. The dot-com collapse in 2000. The 2008 meltdown. The COVID crash of 2020. Each one felt, at the time, like the end of the world.",
-    "motif": "crashgauntlet",
-    "caption": "every one was a buying opportunity"
-  },
-  {
-    "id": "s46",
-    "type": "character",
-    "narration": "And the cruelest stretch wasn't even a sharp crash — it was the 1970s. A decade of stagflation, where the market went essentially nowhere for years while inflation ate your money alive. Going nowhere for ten years tests your nerve even harder than a crash does.",
+    "narration": "Thirty thousand dollars a year is survival mode. After taxes, that's roughly twenty-six thousand to live on — about two thousand a month. In most of the country, rent alone devours half of it. This is a paycheck-to-paycheck existence, with no room for error.",
     "pose": "explain",
     "expression": "worried",
     "props": [
-      {
-        "name": "hourglass",
-        "label": "a decade of nothing"
-      },
       {
         "name": "grocerybag",
-        "label": "inflation ate it"
+        "label": "~$2,000/month"
+      },
+      {
+        "name": "house",
+        "label": "rent eats half"
       },
       {
         "name": "warning",
-        "label": "patience tested"
-      }
-    ]
-  },
-  {
-    "id": "s16",
-    "type": "timeline",
-    "title": "The ride from $1,000 to $3 million",
-    "narration": "Here's the whole journey on one line. Decades of growth, violently interrupted again and again — and every single time, the market eventually clawed back to new highs. The dips look tiny from here. Living through them was a different story.",
-    "events": [
-      {
-        "year": "1950",
-        "label": "invest $1K",
-        "icon": "coins"
-      },
-      {
-        "year": "1973",
-        "label": "−48%",
-        "icon": "chartdown"
-      },
-      {
-        "year": "1987",
-        "label": "Black Monday",
-        "icon": "bomb"
-      },
-      {
-        "year": "2008",
-        "label": "−57%",
-        "icon": "wreckingball"
-      },
-      {
-        "year": "today",
-        "label": "$3M",
-        "icon": "moneytree"
-      }
-    ],
-    "highlight": 4
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "Then came 2020. In just a few weeks, the market plunged over a third as the world locked down — the fastest crash in history. Utterly terrifying. Yet it was also the fastest recovery in history, back to new highs within months. Blink, and you missed the rebound.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "fastest crash ever"
-      },
-      {
-        "name": "rocket",
-        "label": "fastest recovery ever"
-      },
-      {
-        "name": "clock",
-        "label": "back in months"
-      }
-    ]
-  },
-  {
-    "id": "s17",
-    "type": "screenshot",
-    "narration": "Take the worst single day. Black Monday was a global, severe and largely unexpected stock market crash — on one day in October 1987, the market fell over twenty percent. In hours, a fifth of everyone's wealth simply evaporated.",
-    "sourceId": "wiki-blackmonday"
-  },
-  {
-    "id": "s18",
-    "type": "character",
-    "narration": "Imagine watching that happen to your account in an afternoon. Every fiber of your being is screaming to sell what's left before it all vanishes. And yet — within two years, the market had fully recovered. The ones who sold in the panic locked in the loss forever.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "−22% in a day"
-      },
-      {
-        "name": "warning",
-        "label": "every instinct: SELL"
-      },
-      {
-        "name": "diamond",
-        "label": "recovered in 2 years"
+        "label": "no room for error"
       }
     ]
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "Black Monday was so violent it permanently changed the rules. Afterward, exchanges installed 'circuit breakers' that automatically halt all trading when prices fall too fast — a built-in pause button, designed to stop blind panic from feeding on itself.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bomb",
-        "label": "1987's violence"
-      },
-      {
-        "name": "barrier",
-        "label": "circuit breakers born"
-      },
-      {
-        "name": "shield",
-        "label": "a pause on panic"
-      }
-    ]
-  },
-  {
-    "id": "s19",
-    "type": "screenshot",
-    "narration": "Then came the dot-com bubble — a stock market bubble that developed during the late 1990s, as internet mania sent valuations insane. When it burst in 2000, the market lost nearly half its value over two agonizing years.",
-    "sourceId": "wiki-dotcom"
-  },
-  {
-    "id": "s20",
-    "type": "screenshot",
-    "narration": "And barely recovered, it got hit again by the Great Recession — a period of contraction in economies around the world from 2007 to 2009. At its worst, the stock market had fallen a gut-wrenching fifty-seven percent.",
-    "sourceId": "wiki-recession"
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "This is exactly where legends are made. In the depths of 2008, while everyone else fled, Warren Buffett famously urged people to be greedy when others are fearful — and bought aggressively. Those terrifying bottoms are precisely when the great fortunes are quietly built.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "greedy when fearful"
-      },
-      {
-        "name": "chartdown",
-        "label": "buy the bottom"
-      },
-      {
-        "name": "moneytree",
-        "label": "fortunes built here"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "narration": "Think about that 2008 moment. More than half your life savings — gone. Headlines screaming that capitalism itself was ending. It would have taken superhuman nerve to keep holding, let alone keep buying. But those who did saw their money more than quadruple in the decade that followed.",
+    "narration": "And near the bottom lurks a cruel trap called the benefits cliff. Earn a little more, and you can suddenly lose food assistance, healthcare subsidies, or housing help — leaving you worse off than before. For some, a bigger paycheck can genuinely mean less money in hand.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
+        "name": "warning",
+        "label": "the benefits cliff"
+      },
+      {
         "name": "chartdown",
-        "label": "−57% in 2008"
+        "label": "lose subsidies"
       },
       {
-        "name": "newspaper",
-        "label": "'the end of capitalism'"
+        "name": "ballchain",
+        "label": "worse off after a raise"
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "type": "screenshot",
+    "narration": "To see where that sits, we use household income — an economic measure of one household's total income — which the government tracks to describe a family's economic status. Thirty thousand puts a household near the bottom fifth of the country.",
+    "sourceId": "wiki-household"
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "And thirty thousand means two completely different things. For a single person sharing an apartment, it's tight but survivable. For a parent supporting two kids, it's below the poverty line — an almost impossible squeeze. The exact same salary, worlds apart.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "house",
+        "label": "single: survivable"
       },
       {
-        "name": "rocket",
-        "label": "4× in the next decade"
+        "name": "baby",
+        "label": "family: poverty line"
+      },
+      {
+        "name": "scale",
+        "label": "worlds apart"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "title",
+    "narration": "Climb to the middle of the pack.",
+    "heading": "$50,000",
+    "kicker": "getting by"
+  },
+  {
+    "id": "s15",
+    "type": "screenshot",
+    "narration": "Fifty thousand dollars sits right around the median individual income — the value separating the higher half of earners from the lower half. This is, quite literally, the middle of America.",
+    "sourceId": "wiki-median"
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "narration": "At fifty thousand, you take home around forty-two thousand. Life is no longer desperate — the bills get paid, there's the occasional treat. But it's still tight. A surprise car repair is a genuine problem, and saving anything real takes serious discipline.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "~$42K take-home"
+      },
+      {
+        "name": "car",
+        "label": "repairs still hurt"
+      },
+      {
+        "name": "piggybank",
+        "label": "saving takes discipline"
       }
     ]
   },
   {
     "id": "s50",
     "type": "character",
-    "narration": "And in every single crash, the news was certain it was different this time — that this collapse was permanent, that the system was broken for good. It never was. 'This time is different' are, reliably, the four most expensive words in all of investing.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "newspaper",
-        "label": "'it's different now'"
-      },
-      {
-        "name": "warning",
-        "label": "4 costly words"
-      },
-      {
-        "name": "chartup",
-        "label": "it never was"
-      }
-    ]
-  },
-  {
-    "id": "s22",
-    "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "panic-sell everything at the bottom",
-    "memeBottom": "do nothing and let it recover to new highs",
-    "narration": "This is the whole game in one image. In every single crash, there were two types of investor. The one who panicked and sold — and the one who did absolutely nothing. Decades later, their outcomes weren't just different. They were opposite."
-  },
-  {
-    "id": "s23",
-    "type": "title",
-    "narration": "So let's look at exactly what panic costs.",
-    "heading": "Panic vs. Hold",
-    "kicker": "the price of fear"
-  },
-  {
-    "id": "s24",
-    "type": "stage",
-    "narration": "When the market crashes, you face a choice. Sell, and you turn a temporary paper loss into a permanent real one — then you watch, frozen, as it recovers without you. Hold, and that same crash becomes just another dip on the long road up. The loss was only ever real for the one who sold.",
-    "motif": "panicvshold",
-    "caption": "the loss was only real for the one who sold"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "There's a brutal statistic for this. The average investor consistently earns less than the very funds they own — because they buy high in euphoria and sell low in panic. Their own emotions quietly steal a huge slice of their returns, every cycle.",
+    "narration": "And here's why fifty thousand feels harder than it did for your parents. Over decades, housing, healthcare, and college costs have all far outpaced middle incomes. The median salary now buys a visibly smaller slice of the American dream than it did a generation ago.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "buy high, sell low"
+        "name": "house",
+        "label": "housing outran wages"
       },
       {
-        "name": "percent",
-        "label": "lose to your own fund"
+        "name": "hospital",
+        "label": "healthcare too"
       },
       {
-        "name": "brain",
-        "label": "emotions steal returns"
+        "name": "gradcap",
+        "label": "and college"
       }
     ]
   },
   {
-    "id": "s25",
-    "type": "screenshot",
-    "narration": "Markets move in long waves — a perceived tendency of the financial markets to move in a particular direction over time. The scary down-waves, the bear markets, are real. But historically, every one of them has been temporary. The long-term direction has been relentlessly up.",
-    "sourceId": "wiki-beartrend"
+    "id": "s17",
+    "type": "title",
+    "narration": "Now we reach a very famous number.",
+    "heading": "$75,000",
+    "kicker": "the sweet spot"
   },
   {
-    "id": "s26",
+    "id": "s18",
     "type": "character",
-    "narration": "And here's the cruel irony that traps the panicker. The market's single best days almost always come clustered right after its worst ones — in the chaos of the recovery. So if you sell to escape the crash, you are almost guaranteed to miss the explosive rebound.",
+    "narration": "Seventy-five thousand dollars has a legendary reputation — and for good reason. For many people, this is where the constant, grinding stress about money finally begins to ease. You can cover your needs, enjoy some wants, and still put a little away. It's the comfort zone.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "best days follow worst"
+        "name": "smiley",
+        "label": "money stress eases"
       },
       {
-        "name": "warning",
-        "label": "sell = miss the rebound"
+        "name": "grocerybag",
+        "label": "needs + some wants"
       },
       {
-        "name": "rocket",
-        "label": "the recovery is sudden"
+        "name": "piggybank",
+        "label": "and a little saved"
       }
     ]
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "That famous seventy-five thousand figure came from a landmark 2010 study by Nobel winner Daniel Kahneman. It found that people's day-to-day emotional well-being largely stopped improving past around that income. It instantly became the gospel number for 'enough.'",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "smiley",
+        "label": "day-to-day mood"
+      },
+      {
+        "name": "percent",
+        "label": "plateaus ~$75K"
+      },
+      {
+        "name": "trophy",
+        "label": "a Nobel finding"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "screenshot",
+    "narration": "This number comes from the study of happiness economics — a field whose most famous idea is the Easterlin paradox, formulated in 1974 by Richard Easterlin. It asked a simple question: does more money actually make us happier?",
+    "sourceId": "wiki-easterlin"
+  },
+  {
+    "id": "s20",
+    "type": "stage",
+    "narration": "And the answer is a fascinating 'yes, but.' Going from poverty to comfort buys a huge jump in day-to-day happiness. But somewhere around seventy-five to a hundred thousand dollars, that daily emotional boost from more money largely flattens out. The curve bends.",
+    "motif": "happinessplateau",
+    "caption": "money buys happiness — then it plateaus"
   },
   {
     "id": "s52",
     "type": "character",
-    "narration": "And here's the trap in hard numbers. Many of the market's ten best days in history landed within days of its worst ones — deep inside the 2008 and 2020 crashes. Flee the storm, and you slam the door on the exact days that make you rich.",
+    "narration": "But later research added a twist. While your moment-to-moment mood may plateau, your overall life satisfaction — how you rate your life when you step back — does keep inching up with income. More money won't fix a bad day, but it can quietly raise the floor under you.",
     "pose": "explain",
     "props": [
       {
+        "name": "smiley",
+        "label": "daily mood: flat"
+      },
+      {
         "name": "chartup",
-        "label": "best days in the crash"
+        "label": "life rating: still rises"
       },
       {
-        "name": "warning",
-        "label": "flee = miss them"
-      },
-      {
-        "name": "bomb",
-        "label": "inside 2008 & 2020"
+        "name": "scale",
+        "label": "it raises the floor"
       }
     ]
   },
   {
-    "id": "s27",
-    "type": "stage",
-    "narration": "Look at what missing just a handful of days does. Stay fully invested the whole time, and you get your three million. But miss just the ten best days across those decades, and you're left with barely a third of it. Miss the best thirty days, and almost all the magic is gone.",
-    "motif": "missedbestdays",
-    "caption": "the best days cluster right after the crashes"
-  },
-  {
-    "id": "s28",
+    "id": "s21",
     "type": "character",
-    "narration": "This is the real meaning of that famous phrase: time in the market beats timing the market. It's not being clever that builds the fortune. It's simply being present — sitting through the terror and refusing to get up from the table.",
+    "narration": "Why does it flatten? Because the first dollars solve real pain — hunger, eviction, the terror of an empty account. Beyond comfort, extra money mostly buys nicer versions of things you already had. A fancier car still just gets you to work. The emotional upgrade shrinks fast.",
     "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "time IN the market"
+        "name": "grocerybag",
+        "label": "first $ kill real pain"
       },
       {
-        "name": "diamond",
-        "label": "just stay seated"
+        "name": "car",
+        "label": "then just nicer stuff"
       },
       {
-        "name": "trophy",
-        "label": "presence > cleverness"
+        "name": "smiley",
+        "label": "upgrade shrinks fast"
       }
     ]
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "Even holding isn't always comfortable. From 2000 to roughly 2013, American stocks went almost nowhere — a 'lost decade' bookended by two brutal crashes. But those who kept calmly buying straight through it were rewarded enormously in the boom that followed.",
+    "narration": "The deeper villain is hedonic adaptation — we adjust shockingly fast to anything new. The dream raise or dream house feels incredible for a few months, then quietly becomes the invisible new normal. We spend, we adapt, and we're soon restlessly chasing the next thing.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "2000-2013: flat"
+        "name": "balloon",
+        "label": "the new thing thrills"
       },
       {
-        "name": "diamond",
-        "label": "kept buying anyway"
+        "name": "clock",
+        "label": "then fades to normal"
       },
       {
-        "name": "rocket",
-        "label": "then it soared"
+        "name": "smiley",
+        "label": "back to baseline"
       }
     ]
   },
   {
-    "id": "s29",
+    "id": "s22",
     "type": "title",
-    "narration": "But before you get too excited about three million dollars, there's a reality check.",
-    "heading": "The Inflation Catch",
-    "kicker": "real vs. on paper"
+    "narration": "Which brings us to the number everyone dreams about.",
+    "heading": "$100,000",
+    "kicker": "the six-figure mirage"
   },
   {
-    "id": "s30",
+    "id": "s23",
     "type": "character",
-    "narration": "Three million dollars today is not the fortune it would have been in 1950. Over seventy-four years, inflation has quietly shrunk what a dollar can buy to a fraction of what it was. So we have to translate that pile back into real, honest purchasing power.",
+    "narration": "Six figures. For decades, this was the undisputed symbol of 'making it.' And it is genuinely good money — it puts an individual in roughly the top quarter of earners. But the modern reality often feels strangely underwhelming.",
     "pose": "explain",
     "props": [
       {
-        "name": "grocerybag",
-        "label": "a dollar buys less"
+        "name": "trophy",
+        "label": "'making it'"
       },
       {
-        "name": "hourglass",
-        "label": "74 years of inflation"
+        "name": "pie",
+        "label": "top ~25% of earners"
       },
       {
         "name": "scale",
-        "label": "translate to real terms"
+        "label": "…but underwhelming?"
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "type": "character",
+    "narration": "Here's why. That hundred thousand becomes about seventy-five after taxes. In an expensive city, rent can eat thirty of that. Suddenly the six-figure earner is budgeting carefully, wondering where the 'rich' feeling went. The number got the prestige; inflation and taxes got the rest.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "$75K after tax"
+      },
+      {
+        "name": "house",
+        "label": "rent eats $30K"
+      },
+      {
+        "name": "balloon",
+        "label": "where'd 'rich' go?"
       }
     ]
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "Strip out inflation, and the market's real return has been roughly seven percent a year over the long run. Seven percent doesn't sound dramatic. But compounded across an entire lifetime, it's the whole difference between a thousand dollars and a fortune.",
+    "narration": "There's even a name for the six-figure city-dweller who still feels broke: a HENRY — High Earner, Not Rich Yet. Big income, big expenses, and surprisingly little left over. It's living proof that a fat salary and actual wealth are two completely different things.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "~7% real return"
+        "name": "paystub",
+        "label": "big income"
       },
       {
         "name": "grocerybag",
-        "label": "after inflation"
+        "label": "big expenses"
       },
       {
-        "name": "snowball",
-        "label": "a lifetime = a fortune"
+        "name": "warning",
+        "label": "Not Rich Yet"
       }
     ]
   },
   {
-    "id": "s31",
+    "id": "s25",
     "type": "stage",
-    "narration": "In 1950 purchasing power, that three million is worth more like two hundred and fifty thousand dollars. Which sounds like a let-down — until you remember you started with just a thousand. Even after inflation, that's still a staggering, roughly two-hundred-and-fifty-fold increase in real wealth.",
-    "motif": "realvsnominal",
-    "caption": "still a ~250× REAL gain — it crushed inflation"
+    "narration": "And this exposes a massive hidden variable: where you live. A hundred thousand dollars in a low-cost town buys a house, savings, and a genuinely rich life. That exact same hundred thousand in a major coastal city can mean a tiny rental and living paycheck to paycheck.",
+    "motif": "samesalarydifferentlife",
+    "caption": "$100K — two completely different lives"
   },
   {
-    "id": "s32",
-    "type": "character",
-    "narration": "And that's the real point of investing in stocks. It isn't just to grow your number. It's to decisively beat inflation — to make sure your money grows faster than prices rise. Cash under a mattress since 1950 would have quietly lost over ninety percent of its power. Stocks obliterated that.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "cash lost 90%+"
-      },
-      {
-        "name": "chartup",
-        "label": "stocks beat inflation"
-      },
-      {
-        "name": "shield",
-        "label": "that's the real job"
-      }
-    ]
+    "id": "s26",
+    "type": "screenshot",
+    "narration": "That variable is the cost of living — the cost of maintaining a certain standard of living in a given place. It can quietly double or halve the real value of any salary, depending entirely on your zip code.",
+    "sourceId": "wiki-col"
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "And over that same stretch, nothing else came close. Gold roughly protected you, bonds plodded gently along, and cash quietly bled out to inflation. Dollar for dollar, owning a slice of growing businesses crushed every other mainstream option by a mile.",
+    "narration": "And remote work quietly shattered the old rules. For the first time, many people can earn a big-city salary while living somewhere cheap. Pull that off, and you get the best of both worlds — a high number and a low cost of living. It's the ultimate salary hack.",
     "pose": "explain",
     "props": [
       {
-        "name": "goldbar",
-        "label": "gold: ok"
+        "name": "laptop",
+        "label": "earn big-city pay"
       },
       {
-        "name": "bond",
-        "label": "bonds: plodded"
+        "name": "house",
+        "label": "live somewhere cheap"
       },
       {
-        "name": "chartup",
-        "label": "stocks: crushed it"
+        "name": "smiley",
+        "label": "best of both worlds"
       }
     ]
   },
   {
-    "id": "s33",
+    "id": "s27",
     "type": "title",
-    "narration": "So what do seventy-four years of market history actually teach us?",
-    "heading": "The Lessons",
-    "kicker": "what history screams"
+    "narration": "Push into genuinely high-earner territory.",
+    "heading": "$150K to $250K",
+    "kicker": "actually comfortable"
   },
   {
-    "id": "s34",
+    "id": "s28",
     "type": "character",
-    "narration": "Lesson one: the market's long-term direction is up — stubbornly, reliably up. Wars, crashes, recessions, pandemics, oil shocks — it has survived and surpassed every single one of them. Betting against the long-run American economy has been a losing trade for a century.",
+    "narration": "Between a hundred fifty and two hundred fifty thousand, life changes in a real way. This is the top five to ten percent of earners. For the first time, you can comfortably cover a good life and save aggressively at the same time. Money stops being a daily constraint and starts becoming a tool.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "long-run: always up"
+        "name": "pie",
+        "label": "top 5-10%"
       },
       {
-        "name": "globe",
-        "label": "survived everything"
+        "name": "house",
+        "label": "good life + big saving"
       },
       {
-        "name": "trophy",
-        "label": "a century of recovery"
+        "name": "nestegg",
+        "label": "money becomes a tool"
       }
     ]
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "Now, one honest caveat. America's market was the great winner of the last century — not every country's was. Which is why wise investors own the whole world, not just one nation. The real lesson is 'own businesses broadly,' never 'bet everything on a single flag.'",
+    "narration": "And the fastest route into these upper tiers is often simply two incomes. Two people earning seventy-five thousand each quietly become a hundred-fifty-thousand-dollar household — landing in the top ten or fifteen percent together, without either of them being a high earner alone.",
     "pose": "explain",
     "props": [
       {
-        "name": "flagUS",
-        "label": "US won last century"
+        "name": "couple",
+        "label": "two incomes"
       },
       {
-        "name": "globe",
-        "label": "own the whole world"
+        "name": "chartup",
+        "label": "$75K + $75K"
       },
       {
-        "name": "scale",
-        "label": "diversify, don't bet one flag"
+        "name": "pie",
+        "label": "top ~10-15%"
       }
     ]
   },
   {
-    "id": "s35",
+    "id": "s29",
     "type": "character",
-    "narration": "Lesson two: the whole reward goes to those who can simply sit still. The fortune wasn't built by trading or timing. It was built by buying a broad basket, reinvesting the dividends, and then developing the emotional strength to do nothing for decades.",
+    "narration": "But the tax bite is now serious. At a quarter million, you might keep only about two-thirds of it. And strangely, many people here still don't feel rich — because they're surrounded by others earning the same, and their lifestyle has quietly expanded to match every dollar.",
     "pose": "explain",
     "props": [
       {
-        "name": "diamond",
-        "label": "sit still"
+        "name": "taxform",
+        "label": "keep ~2/3"
       },
       {
-        "name": "basket",
-        "label": "buy broad"
+        "name": "crowd",
+        "label": "surrounded by peers"
       },
       {
-        "name": "hammock",
-        "label": "then do nothing"
+        "name": "balloon",
+        "label": "lifestyle expanded"
       }
     ]
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "There's a famous, darkly funny finding. A big brokerage once studied its best-performing accounts — and found many belonged to people who had died, or completely forgotten they even had an account. The ultimate buy-and-hold strategy was, quite literally, doing absolutely nothing.",
+    "narration": "And here's the trap at every high level: a big salary is not wealth. It's just a big hose of water. If it all flows straight back out, the lake never fills. Plenty of people earning three hundred thousand a year have a net worth hovering near zero.",
     "pose": "explain",
     "props": [
       {
-        "name": "diamond",
-        "label": "the best accounts…"
+        "name": "faucet",
+        "label": "salary = a hose"
       },
       {
-        "name": "vault",
-        "label": "forgotten & untouched"
+        "name": "bucket",
+        "label": "wealth = the lake"
       },
       {
-        "name": "trophy",
-        "label": "doing nothing won"
+        "name": "warning",
+        "label": "big earners, $0 net worth"
       }
     ]
   },
   {
-    "id": "s36",
-    "type": "character",
-    "narration": "Lesson three: the crashes are not the enemy. They are the toll you pay for the extraordinary long-term returns. If stocks never crashed, they'd be as safe as cash — and they'd pay about as little. The gut-wrenching volatility is precisely why they reward you so richly.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "rollercoaster",
-        "label": "crashes = the toll"
-      },
-      {
-        "name": "percent",
-        "label": "volatility = the reward"
-      },
-      {
-        "name": "diamond",
-        "label": "the price of returns"
-      }
-    ]
+    "id": "s30",
+    "type": "title",
+    "narration": "And that is the quiet thief stalking every single level of this ladder.",
+    "heading": "The Hidden Thief",
+    "kicker": "lifestyle inflation"
   },
   {
-    "id": "s37",
-    "type": "character",
-    "narration": "So the practical takeaway is beautifully boring. Buy a low-cost fund that owns the whole market. Turn on automatic dividend reinvestment. Keep buying through every scary headline. And then, crucially, don't check it, don't tinker with it, and above all, don't sell in a panic.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "basket",
-        "label": "own the whole market"
-      },
-      {
-        "name": "gear",
-        "label": "reinvest dividends"
-      },
-      {
-        "name": "diamond",
-        "label": "never panic-sell"
-      }
-    ]
+    "id": "s31",
+    "type": "stage",
+    "narration": "It's called lifestyle inflation, and it's brutal. You get a twenty-thousand-dollar raise, and within months a nicer car, a bigger apartment, and pricier habits have quietly swallowed the entire thing. Your income went up — but your savings didn't move an inch.",
+    "motif": "raiseeaten",
+    "caption": "lifestyle inflates to swallow it whole"
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "And if you think 1950 was cherry-picked — it wasn't. History shows that every single rolling period of about twenty years or more in the US market has ended positive. Pick almost any start date you like; you just have to give it enough time.",
+    "narration": "So how do you beat the thief? One simple rule: bank at least half of every raise. Let your lifestyle rise a little — you earned it — but send the bigger half straight into savings and investments, before you ever get the chance to get used to it.",
     "pose": "present",
     "props": [
       {
-        "name": "calendar",
-        "label": "pick any start date"
+        "name": "scissors",
+        "label": "split every raise"
       },
       {
-        "name": "clock",
-        "label": "~20+ years"
+        "name": "piggybank",
+        "label": "bank half"
       },
       {
-        "name": "chartup",
-        "label": "always ended positive"
+        "name": "smiley",
+        "label": "enjoy the rest"
       }
     ]
   },
   {
-    "id": "s38",
+    "id": "s32",
     "type": "character",
-    "narration": "Because the story of that thousand dollars isn't really about money. It's about temperament. The market handed three million dollars not to the smartest person in 1950, but to the calmest one — the one who could watch the world seem to end, over and over, and simply refuse to flinch.",
+    "narration": "This is why so many people earning two hundred thousand feel just as broke as they did at fifty. They've spent every raise. The salary climbed the ladder, but their financial freedom stayed frozen on the exact same rung. More income, zero progress.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "ballchain",
+        "label": "spent every raise"
+      },
+      {
+        "name": "ladder",
+        "label": "freedom stayed frozen"
+      },
+      {
+        "name": "warning",
+        "label": "more income, no progress"
+      }
+    ]
+  },
+  {
+    "id": "s33",
+    "type": "title",
+    "narration": "Now the rarefied air at the very top.",
+    "heading": "$500K to $1M",
+    "kicker": "a different game"
+  },
+  {
+    "id": "s34",
+    "type": "character",
+    "narration": "Half a million a year puts you in roughly the top one percent of earners. A million lands you near the top one-tenth of one percent. At this altitude, the game completely changes — your salary is now so far beyond your living costs that the leftover is enormous.",
     "pose": "explain",
     "props": [
       {
-        "name": "diamond",
-        "label": "it rewards temperament"
+        "name": "crown",
+        "label": "$500K ≈ top 1%"
       },
       {
-        "name": "rollercoaster",
-        "label": "watch the world 'end'"
+        "name": "mansion",
+        "label": "$1M ≈ top 0.1%"
       },
       {
-        "name": "trophy",
-        "label": "and refuse to flinch"
+        "name": "moneybag",
+        "label": "the leftover is huge"
       }
     ]
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "So the final, humbling lesson is this. The greatest threat to that three million was never the crash, the recession, or the scary headline. It was you — your own fear, in the worst possible moment. Master that one thing, and the market quietly does the rest.",
+    "narration": "And notice who actually earns a million a year. It's rarely a salaried employee. It's business owners, elite specialists, and people paid heavily in company equity. Past a certain point, you don't climb to these numbers on a payroll — you own something, or you're simply irreplaceable.",
     "pose": "explain",
     "props": [
       {
-        "name": "brain",
-        "label": "the real enemy is you"
+        "name": "briefcase",
+        "label": "business owners"
       },
       {
-        "name": "warning",
-        "label": "fear at the worst moment"
+        "name": "pie",
+        "label": "paid in equity"
       },
       {
-        "name": "diamond",
-        "label": "master it, and win"
+        "name": "crown",
+        "label": "or irreplaceable"
       }
     ]
   },
   {
+    "id": "s35",
+    "type": "character",
+    "narration": "But even here, the lifestyle itself hits a ceiling. You can only sleep in one bed, eat so many meals. Past a point, the money stops being about buying things at all. It becomes about buying assets, freedom, and options — or, for the undisciplined, just a far more expensive treadmill.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mansion",
+        "label": "lifestyle hits a ceiling"
+      },
+      {
+        "name": "nestegg",
+        "label": "it buys assets & freedom"
+      },
+      {
+        "name": "balloon",
+        "label": "or a pricier treadmill"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "High salaries come with their own quiet trap: golden handcuffs. Your spending swells to match the huge income, and suddenly you can't afford to quit, slow down, or take a risk. You earn a fortune — but the lifestyle owns you, instead of the other way around.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "handcuffs",
+        "label": "golden handcuffs"
+      },
+      {
+        "name": "mansion",
+        "label": "lifestyle swells"
+      },
+      {
+        "name": "warning",
+        "label": "now you can't quit"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "stage",
+    "narration": "Here's the whole ladder in one shot. Thirty thousand is survival. Fifty is getting by. Seventy-five is comfortable. A hundred is the mirage. A quarter million is genuinely rich. And a million is a different game entirely — but each rung buys far less extra life than the last.",
+    "motif": "salaryladder",
+    "caption": "each rung buys less extra than the last"
+  },
+  {
+    "id": "s37",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Salary vs. real take-home ($K)",
+    "unit": "$K",
+    "narration": "And here's the gap between the dream and the deposit. Fifty thousand becomes about forty-two. A hundred becomes seventy-five. A quarter million becomes around one sixty-eight. And a million salary lands closer to six hundred thousand. The bigger the number, the more of it quietly disappears.",
+    "data": [
+      {
+        "label": "$50K",
+        "value": 42
+      },
+      {
+        "label": "$100K",
+        "value": 75
+      },
+      {
+        "label": "$250K",
+        "value": 168
+      },
+      {
+        "label": "$1M",
+        "value": 600
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s38",
+    "type": "title",
+    "narration": "So what's the real lesson hiding in this whole ladder?",
+    "heading": "The Real Lesson",
+    "kicker": "the gap, not the number"
+  },
+  {
     "id": "s39",
     "type": "character",
-    "narration": "So the next time the headlines are screaming and your portfolio is bleeding red, remember the grandparent and their thousand dollars. Every crash on that chart felt exactly this terrifying in the moment. And every single one, in the end, was just another step on the climb to three million.",
+    "narration": "The secret number that decides everything isn't your salary. It's the gap between what you earn and what you spend. A person on fifty thousand who saves ten thousand is building more freedom than a person on three hundred thousand who spends it all.",
     "pose": "present",
     "props": [
       {
-        "name": "newspaper",
-        "label": "headlines screaming"
+        "name": "scale",
+        "label": "earn minus spend"
       },
       {
-        "name": "rollercoaster",
-        "label": "it always felt like this"
+        "name": "piggybank",
+        "label": "$50K saver wins"
       },
       {
-        "name": "moneytree",
-        "label": "just another step up"
+        "name": "balloon",
+        "label": "$300K spender loses"
+      }
+    ]
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "narration": "And this gap has a precise payoff. Your savings rate — the share of income you actually keep — quietly decides how many years until you're free. Someone saving half their income can retire in under two decades, on almost any salary. The gap is literally your countdown clock.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "percent",
+        "label": "your savings rate"
+      },
+      {
+        "name": "clock",
+        "label": "= years to freedom"
+      },
+      {
+        "name": "nestegg",
+        "label": "on any salary"
       }
     ]
   },
   {
     "id": "s40",
     "type": "character",
-    "narration": "If this gave you the nerve to hold through the next storm, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "So yes, grow your income — a bigger salary is a powerful tool. But understand what each level truly buys. The jump from thirty to seventy-five thousand buys real, life-changing happiness. The jump from two hundred to five hundred mostly just buys a bigger number, and a bigger tax bill.",
+    "pose": "explain",
     "props": [
       {
-        "name": "diamond",
-        "label": "which number next?"
+        "name": "chartup",
+        "label": "grow income, yes"
+      },
+      {
+        "name": "smiley",
+        "label": "$30K→$75K = real joy"
+      },
+      {
+        "name": "taxform",
+        "label": "$200K→$500K = mostly tax"
+      }
+    ]
+  },
+  {
+    "id": "s62",
+    "type": "character",
+    "narration": "So the winning move was never to chase the highest possible number forever. It's to earn enough to cross comfortably into that happiness zone, then redirect the energy you'd spend climbing into saving, investing, and actually living. Enough, plus time, quietly beats maximum, plus misery.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "smiley",
+        "label": "earn 'enough'"
+      },
+      {
+        "name": "nestegg",
+        "label": "then invest"
+      },
+      {
+        "name": "hammock",
+        "label": "and actually live"
       }
     ]
   },
   {
     "id": "s41",
+    "type": "character",
+    "narration": "The real goal is to find your 'enough' — the level where your needs and your sane wants are covered — and then ruthlessly protect the gap above it. Because freedom was never about earning the most. It was about keeping the most, at whatever level you're on.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "smiley",
+        "label": "find your 'enough'"
+      },
+      {
+        "name": "scissors",
+        "label": "protect the gap"
+      },
+      {
+        "name": "nestegg",
+        "label": "keep the most"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "character",
+    "narration": "So the next time a bigger salary dangles in front of you, take it — but picture this ladder. Know exactly what that next rung really buys, refuse to let your lifestyle eat it, and turn that raise into freedom instead of just a fancier version of the same life.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "ladder",
+        "label": "picture the ladder"
+      },
+      {
+        "name": "balloon",
+        "label": "don't let it eat the raise"
+      },
+      {
+        "name": "nestegg",
+        "label": "turn it into freedom"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "narration": "If this changed how you see that number on your paycheck, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s44",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

@@ -105,6 +105,8 @@ export type DoodleName =
   | "coffeecup" | "snowball"
   // EP057 ($1,000 invested since 1950) additions:
   | "rollercoaster" | "diamond"
+  // EP058 (every level of salary) additions:
+  | "smiley" | "balloon"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1888,6 +1890,26 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={16} y1={50} x2={84} y2={50} strokeWidth={1.6} />
           <RLine x1={42} y1={50} x2={50} y2={86} strokeWidth={1.6} />
           <RLine x1={58} y1={50} x2={50} y2={86} strokeWidth={1.6} />
+        </>
+      );
+    case "smiley":
+      // A smiley face — happiness / well-being.
+      return (
+        <>
+          <RCircle cx={50} cy={50} d={72} fill={YELLOW} strokeWidth={SW} />
+          <RCircle cx={37} cy={42} d={7} fill={INK} strokeWidth={1.4} />
+          <RCircle cx={63} cy={42} d={7} fill={INK} strokeWidth={1.4} />
+          <RPath d="M34 60 Q50 76 66 60" fill="none" strokeWidth={SW} />
+        </>
+      );
+    case "balloon":
+      // An inflating balloon — lifestyle inflation.
+      return (
+        <>
+          <REllipse cx={50} cy={40} w={56} h={64} fill={RED} strokeWidth={SW} />
+          <RPath d="M46 70 L54 70 L50 78 Z" fill={RED} strokeWidth={1.6} />
+          <RLine x1={50} y1={78} x2={50} y2={92} strokeWidth={1.6} />
+          <RPath d="M38 30 Q44 22 52 26" fill="none" strokeWidth={1.4} />
         </>
       );
   }

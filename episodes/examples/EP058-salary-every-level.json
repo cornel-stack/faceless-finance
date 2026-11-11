@@ -1,0 +1,1069 @@
+{
+  "id": "EP058",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Salary: What $30K to $1M Actually Buys",
+  "slug": "every-level-of-salary",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP058 — Every Level series (row 48). FRESH income/lifestyle topic: salary tiers $30K→$1M, what each actually BUYS after tax, gross-vs-net, progressive brackets (marginal vs effective), the happiness plateau (~$75-100K), lifestyle inflation eating raises, cost-of-living warping it, diminishing returns. 6 new motifs (salaryladder/grossnetshrink/happinessplateau/bracketladder/raiseeaten/samesalarydifferentlife) + doodles smiley/balloon. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "A one-million-dollar salary sounds like thirty-three times a thirty-thousand-dollar one. But here's the strange truth: it does not buy you thirty-three times the life. Thanks to taxes, lifestyle creep, and the weird way happiness actually works, every step up the salary ladder buys you dramatically less than the step before.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "$1M = 33× $30K?"
+        },
+        {
+          "name": "balloon",
+          "label": "not 33× the life"
+        },
+        {
+          "name": "scale",
+          "label": "each step buys less"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Start with the lie hidden in every job offer. A hundred-thousand-dollar salary is not a hundred thousand dollars. After federal, state, and payroll taxes, the money that actually lands in your account is closer to seventy-five thousand. The headline number was never real.",
+      "text": "$75,000",
+      "sub": "the real take-home on a $100K salary",
+      "icon": "paystub"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "One crucial distinction first. Your marginal rate is what your very last dollar gets taxed at — maybe twenty-four percent. Your effective rate is what you actually pay across all your income, which is much lower. People panic about the scary marginal number, but the effective rate is the one that truly hits you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "marginal = top $"
+        },
+        {
+          "name": "calculator",
+          "label": "effective = the average"
+        },
+        {
+          "name": "smiley",
+          "label": "the real rate is lower"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we're climbing the whole ladder — thirty thousand, fifty, seventy-five, a hundred, a quarter million, all the way to a million — and asking the only question that matters at each rung: what does this salary actually buy you, in real life?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "$30K → $1M"
+        },
+        {
+          "name": "grocerybag",
+          "label": "what it really buys"
+        },
+        {
+          "name": "smiley",
+          "label": "in real life"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "chase a bigger salary",
+      "memeBottom": "chase a bigger gap between income and lifestyle",
+      "narration": "And stick around, because the real secret isn't which rung you're on. It's a single number that decides whether any salary — thirty thousand or a million — leaves you free or trapped. Most people never even think about it."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the two forces that quietly reshape every salary.",
+      "heading": "Gross vs. Net",
+      "kicker": "the number is a lie"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "The first force is tax. The US uses a progressive tax — a tax in which the rate increases as the taxable amount increases. The more you earn, the bigger the slice the government takes from your top dollars.",
+      "sourceId": "wiki-progressive"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "It works through tax brackets — the divisions at which tax rates change in a progressive system. And here's the part almost everyone gets wrong: moving into a higher bracket does not tax your whole income more. Only the dollars above the line are taxed at the higher rate.",
+      "sourceId": "wiki-bracket"
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "narration": "Picture your income poured into stacked buckets. The first chunk is taxed at ten percent, the next at twelve, then twenty-two, and so on. Only your very top dollars ever touch the top rate. So a raise can never, ever shrink your total take-home. That fear is a myth.",
+      "motif": "bracketladder",
+      "caption": "a raise never drops your whole take-home"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So let's kill the myth for good. 'I turned down a raise so I wouldn't jump a tax bracket' is complete nonsense. Only the dollars over the line get the higher rate. A raise always — always — leaves more money in your pocket. Never, ever refuse one over taxes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "a raise = more money"
+        },
+        {
+          "name": "warning",
+          "label": "the myth is false"
+        },
+        {
+          "name": "paystub",
+          "label": "always take it"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "What's left after the government's cut has a name: disposable income — total personal income minus current taxes. This, not your headline salary, is the money you actually get to live on.",
+      "sourceId": "wiki-disposable"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "And the gap between the two grows as you climb. On fifty thousand, you keep around eighty-four percent. On a hundred thousand, about seventy-five. By a million, taxes can swallow forty percent or more. The higher the headline, the bigger the bite before you see a cent.",
+      "motif": "grossnetshrink",
+      "caption": "the higher you earn, the bigger the bite"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Two more bites to watch. Payroll taxes for Social Security and Medicare skim another seven-plus percent right off the top. And your state matters enormously — a few charge nothing, while others grab over ten percent. The same salary nets wildly different amounts depending on your zip code.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "taxform",
+          "label": "payroll tax ~7%"
+        },
+        {
+          "name": "globe",
+          "label": "state varies a lot"
+        },
+        {
+          "name": "scale",
+          "label": "zip code changes it"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "title",
+      "narration": "With that in mind, let's start at the bottom of the ladder.",
+      "heading": "$30,000",
+      "kicker": "survival"
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "Thirty thousand dollars a year is survival mode. After taxes, that's roughly twenty-six thousand to live on — about two thousand a month. In most of the country, rent alone devours half of it. This is a paycheck-to-paycheck existence, with no room for error.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "~$2,000/month"
+        },
+        {
+          "name": "house",
+          "label": "rent eats half"
+        },
+        {
+          "name": "warning",
+          "label": "no room for error"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "And near the bottom lurks a cruel trap called the benefits cliff. Earn a little more, and you can suddenly lose food assistance, healthcare subsidies, or housing help — leaving you worse off than before. For some, a bigger paycheck can genuinely mean less money in hand.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the benefits cliff"
+        },
+        {
+          "name": "chartdown",
+          "label": "lose subsidies"
+        },
+        {
+          "name": "ballchain",
+          "label": "worse off after a raise"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "screenshot",
+      "narration": "To see where that sits, we use household income — an economic measure of one household's total income — which the government tracks to describe a family's economic status. Thirty thousand puts a household near the bottom fifth of the country.",
+      "sourceId": "wiki-household"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And thirty thousand means two completely different things. For a single person sharing an apartment, it's tight but survivable. For a parent supporting two kids, it's below the poverty line — an almost impossible squeeze. The exact same salary, worlds apart.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "single: survivable"
+        },
+        {
+          "name": "baby",
+          "label": "family: poverty line"
+        },
+        {
+          "name": "scale",
+          "label": "worlds apart"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Climb to the middle of the pack.",
+      "heading": "$50,000",
+      "kicker": "getting by"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "Fifty thousand dollars sits right around the median individual income — the value separating the higher half of earners from the lower half. This is, quite literally, the middle of America.",
+      "sourceId": "wiki-median"
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "At fifty thousand, you take home around forty-two thousand. Life is no longer desperate — the bills get paid, there's the occasional treat. But it's still tight. A surprise car repair is a genuine problem, and saving anything real takes serious discipline.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "~$42K take-home"
+        },
+        {
+          "name": "car",
+          "label": "repairs still hurt"
+        },
+        {
+          "name": "piggybank",
+          "label": "saving takes discipline"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And here's why fifty thousand feels harder than it did for your parents. Over decades, housing, healthcare, and college costs have all far outpaced middle incomes. The median salary now buys a visibly smaller slice of the American dream than it did a generation ago.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "housing outran wages"
+        },
+        {
+          "name": "hospital",
+          "label": "healthcare too"
+        },
+        {
+          "name": "gradcap",
+          "label": "and college"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Now we reach a very famous number.",
+      "heading": "$75,000",
+      "kicker": "the sweet spot"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "Seventy-five thousand dollars has a legendary reputation — and for good reason. For many people, this is where the constant, grinding stress about money finally begins to ease. You can cover your needs, enjoy some wants, and still put a little away. It's the comfort zone.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "money stress eases"
+        },
+        {
+          "name": "grocerybag",
+          "label": "needs + some wants"
+        },
+        {
+          "name": "piggybank",
+          "label": "and a little saved"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "That famous seventy-five thousand figure came from a landmark 2010 study by Nobel winner Daniel Kahneman. It found that people's day-to-day emotional well-being largely stopped improving past around that income. It instantly became the gospel number for 'enough.'",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "day-to-day mood"
+        },
+        {
+          "name": "percent",
+          "label": "plateaus ~$75K"
+        },
+        {
+          "name": "trophy",
+          "label": "a Nobel finding"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "This number comes from the study of happiness economics — a field whose most famous idea is the Easterlin paradox, formulated in 1974 by Richard Easterlin. It asked a simple question: does more money actually make us happier?",
+      "sourceId": "wiki-easterlin"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "And the answer is a fascinating 'yes, but.' Going from poverty to comfort buys a huge jump in day-to-day happiness. But somewhere around seventy-five to a hundred thousand dollars, that daily emotional boost from more money largely flattens out. The curve bends.",
+      "motif": "happinessplateau",
+      "caption": "money buys happiness — then it plateaus"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "But later research added a twist. While your moment-to-moment mood may plateau, your overall life satisfaction — how you rate your life when you step back — does keep inching up with income. More money won't fix a bad day, but it can quietly raise the floor under you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "daily mood: flat"
+        },
+        {
+          "name": "chartup",
+          "label": "life rating: still rises"
+        },
+        {
+          "name": "scale",
+          "label": "it raises the floor"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Why does it flatten? Because the first dollars solve real pain — hunger, eviction, the terror of an empty account. Beyond comfort, extra money mostly buys nicer versions of things you already had. A fancier car still just gets you to work. The emotional upgrade shrinks fast.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "first $ kill real pain"
+        },
+        {
+          "name": "car",
+          "label": "then just nicer stuff"
+        },
+        {
+          "name": "smiley",
+          "label": "upgrade shrinks fast"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The deeper villain is hedonic adaptation — we adjust shockingly fast to anything new. The dream raise or dream house feels incredible for a few months, then quietly becomes the invisible new normal. We spend, we adapt, and we're soon restlessly chasing the next thing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "balloon",
+          "label": "the new thing thrills"
+        },
+        {
+          "name": "clock",
+          "label": "then fades to normal"
+        },
+        {
+          "name": "smiley",
+          "label": "back to baseline"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Which brings us to the number everyone dreams about.",
+      "heading": "$100,000",
+      "kicker": "the six-figure mirage"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "Six figures. For decades, this was the undisputed symbol of 'making it.' And it is genuinely good money — it puts an individual in roughly the top quarter of earners. But the modern reality often feels strangely underwhelming.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "'making it'"
+        },
+        {
+          "name": "pie",
+          "label": "top ~25% of earners"
+        },
+        {
+          "name": "scale",
+          "label": "…but underwhelming?"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "Here's why. That hundred thousand becomes about seventy-five after taxes. In an expensive city, rent can eat thirty of that. Suddenly the six-figure earner is budgeting carefully, wondering where the 'rich' feeling went. The number got the prestige; inflation and taxes got the rest.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "$75K after tax"
+        },
+        {
+          "name": "house",
+          "label": "rent eats $30K"
+        },
+        {
+          "name": "balloon",
+          "label": "where'd 'rich' go?"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "There's even a name for the six-figure city-dweller who still feels broke: a HENRY — High Earner, Not Rich Yet. Big income, big expenses, and surprisingly little left over. It's living proof that a fat salary and actual wealth are two completely different things.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "big income"
+        },
+        {
+          "name": "grocerybag",
+          "label": "big expenses"
+        },
+        {
+          "name": "warning",
+          "label": "Not Rich Yet"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "And this exposes a massive hidden variable: where you live. A hundred thousand dollars in a low-cost town buys a house, savings, and a genuinely rich life. That exact same hundred thousand in a major coastal city can mean a tiny rental and living paycheck to paycheck.",
+      "motif": "samesalarydifferentlife",
+      "caption": "$100K — two completely different lives"
+    },
+    {
+      "id": "s26",
+      "type": "screenshot",
+      "narration": "That variable is the cost of living — the cost of maintaining a certain standard of living in a given place. It can quietly double or halve the real value of any salary, depending entirely on your zip code.",
+      "sourceId": "wiki-col"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And remote work quietly shattered the old rules. For the first time, many people can earn a big-city salary while living somewhere cheap. Pull that off, and you get the best of both worlds — a high number and a low cost of living. It's the ultimate salary hack.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "earn big-city pay"
+        },
+        {
+          "name": "house",
+          "label": "live somewhere cheap"
+        },
+        {
+          "name": "smiley",
+          "label": "best of both worlds"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "Push into genuinely high-earner territory.",
+      "heading": "$150K to $250K",
+      "kicker": "actually comfortable"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "Between a hundred fifty and two hundred fifty thousand, life changes in a real way. This is the top five to ten percent of earners. For the first time, you can comfortably cover a good life and save aggressively at the same time. Money stops being a daily constraint and starts becoming a tool.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pie",
+          "label": "top 5-10%"
+        },
+        {
+          "name": "house",
+          "label": "good life + big saving"
+        },
+        {
+          "name": "nestegg",
+          "label": "money becomes a tool"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And the fastest route into these upper tiers is often simply two incomes. Two people earning seventy-five thousand each quietly become a hundred-fifty-thousand-dollar household — landing in the top ten or fifteen percent together, without either of them being a high earner alone.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "two incomes"
+        },
+        {
+          "name": "chartup",
+          "label": "$75K + $75K"
+        },
+        {
+          "name": "pie",
+          "label": "top ~10-15%"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "But the tax bite is now serious. At a quarter million, you might keep only about two-thirds of it. And strangely, many people here still don't feel rich — because they're surrounded by others earning the same, and their lifestyle has quietly expanded to match every dollar.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "taxform",
+          "label": "keep ~2/3"
+        },
+        {
+          "name": "crowd",
+          "label": "surrounded by peers"
+        },
+        {
+          "name": "balloon",
+          "label": "lifestyle expanded"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And here's the trap at every high level: a big salary is not wealth. It's just a big hose of water. If it all flows straight back out, the lake never fills. Plenty of people earning three hundred thousand a year have a net worth hovering near zero.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "faucet",
+          "label": "salary = a hose"
+        },
+        {
+          "name": "bucket",
+          "label": "wealth = the lake"
+        },
+        {
+          "name": "warning",
+          "label": "big earners, $0 net worth"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "title",
+      "narration": "And that is the quiet thief stalking every single level of this ladder.",
+      "heading": "The Hidden Thief",
+      "kicker": "lifestyle inflation"
+    },
+    {
+      "id": "s31",
+      "type": "stage",
+      "narration": "It's called lifestyle inflation, and it's brutal. You get a twenty-thousand-dollar raise, and within months a nicer car, a bigger apartment, and pricier habits have quietly swallowed the entire thing. Your income went up — but your savings didn't move an inch.",
+      "motif": "raiseeaten",
+      "caption": "lifestyle inflates to swallow it whole"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "So how do you beat the thief? One simple rule: bank at least half of every raise. Let your lifestyle rise a little — you earned it — but send the bigger half straight into savings and investments, before you ever get the chance to get used to it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "split every raise"
+        },
+        {
+          "name": "piggybank",
+          "label": "bank half"
+        },
+        {
+          "name": "smiley",
+          "label": "enjoy the rest"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "This is why so many people earning two hundred thousand feel just as broke as they did at fifty. They've spent every raise. The salary climbed the ladder, but their financial freedom stayed frozen on the exact same rung. More income, zero progress.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "spent every raise"
+        },
+        {
+          "name": "ladder",
+          "label": "freedom stayed frozen"
+        },
+        {
+          "name": "warning",
+          "label": "more income, no progress"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "Now the rarefied air at the very top.",
+      "heading": "$500K to $1M",
+      "kicker": "a different game"
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Half a million a year puts you in roughly the top one percent of earners. A million lands you near the top one-tenth of one percent. At this altitude, the game completely changes — your salary is now so far beyond your living costs that the leftover is enormous.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crown",
+          "label": "$500K ≈ top 1%"
+        },
+        {
+          "name": "mansion",
+          "label": "$1M ≈ top 0.1%"
+        },
+        {
+          "name": "moneybag",
+          "label": "the leftover is huge"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And notice who actually earns a million a year. It's rarely a salaried employee. It's business owners, elite specialists, and people paid heavily in company equity. Past a certain point, you don't climb to these numbers on a payroll — you own something, or you're simply irreplaceable.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "business owners"
+        },
+        {
+          "name": "pie",
+          "label": "paid in equity"
+        },
+        {
+          "name": "crown",
+          "label": "or irreplaceable"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "But even here, the lifestyle itself hits a ceiling. You can only sleep in one bed, eat so many meals. Past a point, the money stops being about buying things at all. It becomes about buying assets, freedom, and options — or, for the undisciplined, just a far more expensive treadmill.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mansion",
+          "label": "lifestyle hits a ceiling"
+        },
+        {
+          "name": "nestegg",
+          "label": "it buys assets & freedom"
+        },
+        {
+          "name": "balloon",
+          "label": "or a pricier treadmill"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "High salaries come with their own quiet trap: golden handcuffs. Your spending swells to match the huge income, and suddenly you can't afford to quit, slow down, or take a risk. You earn a fortune — but the lifestyle owns you, instead of the other way around.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "handcuffs",
+          "label": "golden handcuffs"
+        },
+        {
+          "name": "mansion",
+          "label": "lifestyle swells"
+        },
+        {
+          "name": "warning",
+          "label": "now you can't quit"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "stage",
+      "narration": "Here's the whole ladder in one shot. Thirty thousand is survival. Fifty is getting by. Seventy-five is comfortable. A hundred is the mirage. A quarter million is genuinely rich. And a million is a different game entirely — but each rung buys far less extra life than the last.",
+      "motif": "salaryladder",
+      "caption": "each rung buys less extra than the last"
+    },
+    {
+      "id": "s37",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Salary vs. real take-home ($K)",
+      "unit": "$K",
+      "narration": "And here's the gap between the dream and the deposit. Fifty thousand becomes about forty-two. A hundred becomes seventy-five. A quarter million becomes around one sixty-eight. And a million salary lands closer to six hundred thousand. The bigger the number, the more of it quietly disappears.",
+      "data": [
+        {
+          "label": "$50K",
+          "value": 42
+        },
+        {
+          "label": "$100K",
+          "value": 75
+        },
+        {
+          "label": "$250K",
+          "value": 168
+        },
+        {
+          "label": "$1M",
+          "value": 600
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s38",
+      "type": "title",
+      "narration": "So what's the real lesson hiding in this whole ladder?",
+      "heading": "The Real Lesson",
+      "kicker": "the gap, not the number"
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "The secret number that decides everything isn't your salary. It's the gap between what you earn and what you spend. A person on fifty thousand who saves ten thousand is building more freedom than a person on three hundred thousand who spends it all.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "earn minus spend"
+        },
+        {
+          "name": "piggybank",
+          "label": "$50K saver wins"
+        },
+        {
+          "name": "balloon",
+          "label": "$300K spender loses"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "And this gap has a precise payoff. Your savings rate — the share of income you actually keep — quietly decides how many years until you're free. Someone saving half their income can retire in under two decades, on almost any salary. The gap is literally your countdown clock.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "percent",
+          "label": "your savings rate"
+        },
+        {
+          "name": "clock",
+          "label": "= years to freedom"
+        },
+        {
+          "name": "nestegg",
+          "label": "on any salary"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "So yes, grow your income — a bigger salary is a powerful tool. But understand what each level truly buys. The jump from thirty to seventy-five thousand buys real, life-changing happiness. The jump from two hundred to five hundred mostly just buys a bigger number, and a bigger tax bill.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "grow income, yes"
+        },
+        {
+          "name": "smiley",
+          "label": "$30K→$75K = real joy"
+        },
+        {
+          "name": "taxform",
+          "label": "$200K→$500K = mostly tax"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "So the winning move was never to chase the highest possible number forever. It's to earn enough to cross comfortably into that happiness zone, then redirect the energy you'd spend climbing into saving, investing, and actually living. Enough, plus time, quietly beats maximum, plus misery.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "earn 'enough'"
+        },
+        {
+          "name": "nestegg",
+          "label": "then invest"
+        },
+        {
+          "name": "hammock",
+          "label": "and actually live"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "The real goal is to find your 'enough' — the level where your needs and your sane wants are covered — and then ruthlessly protect the gap above it. Because freedom was never about earning the most. It was about keeping the most, at whatever level you're on.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "find your 'enough'"
+        },
+        {
+          "name": "scissors",
+          "label": "protect the gap"
+        },
+        {
+          "name": "nestegg",
+          "label": "keep the most"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "So the next time a bigger salary dangles in front of you, take it — but picture this ladder. Know exactly what that next rung really buys, refuse to let your lifestyle eat it, and turn that raise into freedom instead of just a fancier version of the same life.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "picture the ladder"
+        },
+        {
+          "name": "balloon",
+          "label": "don't let it eat the raise"
+        },
+        {
+          "name": "nestegg",
+          "label": "turn it into freedom"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "If this changed how you see that number on your paycheck, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-progressive",
+      "name": "Progressive tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Progressive_tax",
+      "quote": "a tax in which the tax rate increases as the taxable amount increases"
+    },
+    {
+      "id": "wiki-bracket",
+      "name": "Tax bracket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_bracket",
+      "quote": "the divisions at which tax rates change in a progressive tax system"
+    },
+    {
+      "id": "wiki-disposable",
+      "name": "Disposable and discretionary income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Disposable_and_discretionary_income",
+      "quote": "total personal income minus current taxes on income"
+    },
+    {
+      "id": "wiki-household",
+      "name": "Household income in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_income_in_the_United_States",
+      "quote": "an economic measure of one household's total income"
+    },
+    {
+      "id": "wiki-median",
+      "name": "Median (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median",
+      "quote": "the value separating the higher half from the lower half"
+    },
+    {
+      "id": "wiki-easterlin",
+      "name": "Easterlin paradox (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Easterlin_paradox",
+      "quote": "formulated in 1974 by Richard Easterlin"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "the cost of maintaining a certain standard of living"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Salary: What $30K to $1M Actually Buys",
+    "alts": [
+      "What Each Salary Really Buys: $30K, $50K, $75K, $100K, $250K, $1M",
+      "Why a $1M Salary Doesn't Buy 33× the Life of $30K"
+    ],
+    "hook": "A $1M salary sounds like 33× a $30K one — but it doesn't buy 33× the life. This is every level of salary, by the numbers: what $30K, $50K, $75K, $100K, $250K, and $1M actually buy after tax. We cover the gross-vs-net lie ($100K ≈ $75K take-home), how progressive tax brackets really work (a raise never shrinks your take-home), the famous happiness plateau around $75–100K, how cost of living can double or halve any salary, and lifestyle inflation that silently eats every raise. The real secret isn't the rung you're on — it's the gap between what you earn and what you spend. Fully cited.",
+    "bullets": [
+      "Gross vs. net: why $100K is really ~$75K",
+      "How tax brackets actually work (a raise never lowers take-home)",
+      "The happiness plateau around $75–100K",
+      "Why $100K feels broke in one city and rich in another",
+      "Lifestyle inflation — the thief that eats every raise",
+      "The real secret: the gap between earning and spending"
+    ],
+    "tags": [
+      "every level of salary",
+      "what salary actually buys",
+      "gross vs net income",
+      "tax brackets explained",
+      "money and happiness",
+      "happiness plateau",
+      "lifestyle inflation",
+      "cost of living",
+      "six figure salary",
+      "income by level",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#salary",
+      "#personalfinance",
+      "#income",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "EVERY SALARY LEVEL",
+      "hookBot": "$30K → $1M",
+      "napkinNumber": "$100K",
+      "napkinSub": "= $75K real",
+      "deco": "paystub"
+    },
+    "chapters": [
+      [
+        "the two forces that quietly reshape every salary",
+        "Gross vs. net"
+      ],
+      [
+        "Only the dollars above the line",
+        "How brackets work"
+      ],
+      [
+        "Thirty thousand dollars a year is survival mode",
+        "$30,000"
+      ],
+      [
+        "right around the median individual income",
+        "$50,000"
+      ],
+      [
+        "a legendary reputation",
+        "$75,000"
+      ],
+      [
+        "strangely underwhelming",
+        "$100,000"
+      ],
+      [
+        "genuinely high-earner territory",
+        "$150K–$250K"
+      ],
+      [
+        "called lifestyle inflation",
+        "The hidden thief"
+      ],
+      [
+        "the rarefied air at the very top",
+        "$500K–$1M"
+      ],
+      [
+        "the gap between what you earn and what you spend",
+        "The real lesson"
+      ]
+    ]
+  }
+}
