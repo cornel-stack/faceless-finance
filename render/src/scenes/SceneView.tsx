@@ -3619,6 +3619,140 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={494} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">when trust dies, so does the money</text>
       </svg>
     );
+  } else if (m === "networthladder") {
+    // Climbing the wealth levels $0 → $100M, each step higher than the last.
+    const levels: [string, number][] = [["$0", 0], ["$10K", 1], ["$100K", 2], ["$1M", 3], ["$10M", 4], ["$100M", 5]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {levels.map(([lab, i]) => {
+          const x = 90 + (i as number) * 150;
+          const h = 40 + (i as number) * 70;
+          const op = interpolate(climb, [(i as number) * 0.14, (i as number) * 0.14 + 0.22], [0, 1], clampBoth);
+          return (
+            <g key={i as number} opacity={op}>
+              <rect x={x} y={470 - h} width={130} height={h} fill={[parch, tan, "#cfe3d4", green, gold, red][i as number]} stroke={ink} strokeWidth={4} />
+              <text x={x + 65} y={470 - h - 12} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{lab as string}</text>
+            </g>
+          );
+        })}
+        <RLine x1={70} y1={470} x2={VW - 40} y2={470} stroke={ink} strokeWidth={3} />
+        <text x={VW / 2} y={70} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">every ×10 is a different world</text>
+      </svg>
+    );
+  } else if (m === "moneycrossover") {
+    // Income from work (flat) vs income from assets (rising) — they cross.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const x0 = 120, x1 = 860, y0 = 440, yTop = 110;
+    const workY = 330;
+    const px = x0 + (x1 - x0) * draw;
+    const assetY = (t: number) => y0 - (y0 - yTop) * Math.pow(t, 2.2);
+    const ay = assetY(draw);
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <line x1={x0} y1={workY} x2={px} y2={workY} stroke={blue} strokeWidth={6} />
+        <text x={x1 - 10} y={workY - 14} fontSize={17} fontWeight={800} fill={blue} textAnchor="end" fontFamily={sans}>income from your job</text>
+        <path d={`M${x0} ${y0} Q${(x0 + px) / 2} ${y0} ${px} ${ay}`} fill="none" stroke={green} strokeWidth={6} />
+        <text x={px} y={ay - 14} fontSize={17} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>income from investments</text>
+        {draw > 0.74 && (
+          <g>
+            <circle cx={720} cy={workY} r={12} fill={red} stroke={ink} strokeWidth={3} />
+            <text x={720} y={workY + 42} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the crossover</text>
+          </g>
+        )}
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">when money out-earns you, you're free</text>
+      </svg>
+    );
+  } else if (m === "wealthpyramid") {
+    // US wealth distribution as a pyramid: bottom 50% holds little, top 1% holds a lot.
+    const tiers: [string, string, number][] = [
+      ["top 1%", "~30% of wealth", 0],
+      ["next 9%", "~37%", 1],
+      ["next 40%", "~30%", 2],
+      ["bottom 50%", "~3% of wealth", 3],
+    ];
+    const rise = interpolate(frame, [fps * 0.3, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([lab, share, i]) => {
+          const w = 160 + (i as number) * 200;
+          const y = 150 + (i as number) * 78;
+          const op = interpolate(rise, [(i as number) * 0.18, (i as number) * 0.18 + 0.25], [0, 1], clampBoth);
+          return (
+            <g key={i as number} opacity={op}>
+              <rect x={VW / 2 - w / 2} y={y} width={w} height={70} fill={[red, gold, green, parch][i as number]} stroke={ink} strokeWidth={4} />
+              <text x={VW / 2} y={y + 30} fontSize={18} fontWeight={900} fill={(i as number) === 3 ? ink : "#fff"} textAnchor="middle" fontFamily={sans}>{lab as string}</text>
+              <text x={VW / 2} y={y + 54} fontSize={15} fontWeight={700} fill={(i as number) === 3 ? ink : "#f3efe2"} textAnchor="middle" fontFamily={sans}>{share as string}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">who owns what in America</text>
+      </svg>
+    );
+  } else if (m === "levelgaps") {
+    // The jumps between levels are each 10x — the climb is exponential.
+    const labels: [string, number][] = [["$0", 0], ["$10K", 1], ["$100K", 2], ["$1M", 3], ["$10M", 4], ["$100M", 5]];
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={300} x2={VW - 80} y2={300} stroke={ink} strokeWidth={4} />
+        {labels.map(([lab, i]) => {
+          const x = 110 + (i as number) * 155;
+          const op = interpolate(reveal, [(i as number) * 0.14, (i as number) * 0.14 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i as number} opacity={op}>
+              <circle cx={x} cy={300} r={10} fill={[parch, tan, green, gold, "#d98b5f", red][i as number]} stroke={ink} strokeWidth={4} />
+              <text x={x} y={345} fontSize={19} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{lab as string}</text>
+              {(i as number) > 0 && <text x={x - 77} y={270} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>×10</text>}
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">each level is 10× the last</text>
+        <text x={VW / 2} y={430} fontSize={18} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the same-sized step, an entirely different leap</text>
+      </svg>
+    );
+  } else if (m === "twophases") {
+    // Phase 1: you push the boulder uphill. Phase 2: the snowball rolls on its own.
+    const t = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const roll = interpolate(frame, [fps * 1.4, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={245} y={90} fontSize={20} fontWeight={900} fill={blue} textAnchor="middle" fontFamily="Georgia, serif">phase 1: you push</text>
+        <path d="M120 400 L360 250" stroke={ink} strokeWidth={4} fill="none" />
+        <g transform={`translate(${130 + 170 * t} ${395 - 150 * t})`}><circle r={34} fill={tan} stroke={ink} strokeWidth={4} /><text y={7} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>$</text></g>
+        <g transform={`translate(${90 + 170 * t} ${410 - 150 * t})`} stroke={ink} strokeWidth={4} fill="none"><circle cx={0} cy={-10} r={10} fill={parch} /><line x1={0} y1={0} x2={0} y2={18} /><line x1={0} y1={6} x2={22} y2={-6} /></g>
+        <text x={720} y={90} fontSize={20} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">phase 2: it rolls itself</text>
+        <path d="M560 250 L900 410" stroke={ink} strokeWidth={4} fill="none" />
+        <g transform={`translate(${575 + 300 * roll} ${255 + 140 * roll}) rotate(${roll * 360})`}><circle r={30 + 26 * roll} fill={gold} stroke={ink} strokeWidth={4} /><text y={7} fontSize={14 + 8 * roll} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>$</text></g>
+        <text x={VW / 2} y={492} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the first $100K is the hardest climb</text>
+      </svg>
+    );
+  } else if (m === "richworlds") {
+    // Three worlds: survive / secure / power at wildly different levels.
+    const worlds: [string, string, string, number][] = [
+      ["$10K", "survive", "rent + groceries covered", 0],
+      ["$1M", "secure", "work becomes optional", 1],
+      ["$100M", "power", "you move markets & families", 2],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        {worlds.map(([amt, word, sub, i]) => {
+          const pop = spring({ frame, fps, delay: fps * (0.4 + (i as number) * 0.55), config: { damping: 11 } });
+          const x = 180 + (i as number) * 300;
+          return (
+            <g key={i as number} transform={`translate(${x} 280) scale(${Math.min(1, pop)})`}>
+              <rect x={-120} y={-120} width={240} height={240} rx={14} fill={[parch, "#cfe3d4", gold][i as number]} stroke={ink} strokeWidth={5} />
+              <text y={-58} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt as string}</text>
+              <text y={0} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>{word as string}</text>
+              <text y={70} fontSize={15} fontWeight={700} fill={ink} textAnchor="middle" fontFamily={sans}>{sub as string}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">money means something new at each level</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

@@ -91,6 +91,8 @@ export type DoodleName =
   | "moneytree" | "ballchain"
   // EP050 (why fiat money has value) additions:
   | "decree" | "brokennote"
+  // EP051 (your money at every level) additions:
+  | "mountain" | "nestegg"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1713,6 +1715,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M46 30 L50 42 L44 52 L50 62 L44 72" fill="none" strokeWidth={1.8} />
           <RPath d="M54 30 L50 42 L56 52 L50 62 L56 72" fill="none" strokeWidth={1.8} />
           <text x={28} y={58} fontSize={16} fontWeight={900} fill="#2f6b46" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </>
+      );
+    case "mountain":
+      // A peak to climb — the summit of a wealth level.
+      return (
+        <>
+          <RPath d="M10 82 L40 30 L58 56 L72 40 L90 82 Z" fill={TAN} strokeWidth={SW} />
+          <RPath d="M31 43 L40 30 L49 43 L44 47 L40 42 L36 47 Z" fill="#fff" strokeWidth={1.4} />
+          <RPath d="M64 49 L72 40 L80 50" fill="#fff" strokeWidth={1.4} />
+          <RLine x1={40} y1={30} x2={40} y2={14} strokeWidth={SW} />
+          <RPath d="M40 14 L54 18 L40 23 Z" fill={RED} strokeWidth={1.4} />
+        </>
+      );
+    case "nestegg":
+      // A nest holding a golden egg — savings that generate income.
+      return (
+        <>
+          <RPath d="M20 66 Q50 50 80 66 Q78 80 50 82 Q22 80 20 66 Z" fill={TAN} strokeWidth={SW} />
+          <REllipse cx={50} cy={54} w={36} h={46} fill={GOLD} strokeWidth={SW} />
+          <RLine x1={44} y1={44} x2={40} y2={50} strokeWidth={1.4} />
+          <RLine x1={24} y1={62} x2={16} y2={60} strokeWidth={1.4} />
+          <RLine x1={76} y1={62} x2={84} y2={60} strokeWidth={1.4} />
         </>
       );
   }

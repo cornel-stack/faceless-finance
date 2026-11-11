@@ -164,7 +164,9 @@ export interface StageScene extends Base {
     // EP049 (debt as a product) additions:
     | "sellmoney" | "freerawmaterial" | "thespread" | "securitizemachine" | "debtcompounds" | "debteverywhere"
     // EP050 (why fiat money has value) additions:
-    | "fiatdecree" | "taxdemand" | "moneyjobs" | "sharedbelief" | "goldcut" | "confidencecollapse";
+    | "fiatdecree" | "taxdemand" | "moneyjobs" | "sharedbelief" | "goldcut" | "confidencecollapse"
+    // EP051 (your money at every level) additions:
+    | "networthladder" | "moneycrossover" | "wealthpyramid" | "levelgaps" | "twophases" | "richworlds";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

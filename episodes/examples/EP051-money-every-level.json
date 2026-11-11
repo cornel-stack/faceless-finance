@@ -1,0 +1,1002 @@
+{
+  "id": "EP051",
+  "series": "Napkin Numbers",
+  "title": "Your Money at Every Level: $0 to $100 Million (Real Fed Data)",
+  "slug": "your-money-at-every-level",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP051 — FIRST of the 'Every Level' series (row 41). Climb net worth from $0 to $100M using real Fed (Survey of Consumer Finances) data. Spine = the two phases: you work for money, then money works for you (the crossover). 6 levels matching the ladder ($0/$10K/$100K/$1M/$10M/$100M). 6 new motifs + 2 doodles. Photos: Munger (first $100K), Rockefeller (power). Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "There's a single number that quietly defines your whole life, and most people have no idea what theirs even is. It isn't your salary. It's your net worth — everything you own, minus everything you owe. And as that one number climbs from zero to a hundred million dollars, your life doesn't just get comfier. It turns into completely different worlds.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "everything you own"
+        },
+        {
+          "name": "iou",
+          "label": "minus what you owe"
+        },
+        {
+          "name": "mountain",
+          "label": "$0 → $100M"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Let's anchor it in reality first. According to the Federal Reserve, the typical American household has a net worth of about one hundred ninety-three thousand dollars. Not their income — their entire pile of wealth, built over a lifetime.",
+      "text": "$192,900",
+      "sub": "the median US household's entire net worth (Fed)",
+      "icon": "house"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "But that median hides almost everything interesting. The real story is the climb — and at each level, roughly every time you add a zero, money stops meaning one thing and starts meaning something entirely new. So let's climb it, level by level, with the real numbers.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "the median hides it all"
+        },
+        {
+          "name": "mountain",
+          "label": "climb it level by level"
+        },
+        {
+          "name": "ledger",
+          "label": "with real Fed data"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "stage",
+      "narration": "Here's the whole journey on one staircase. Zero. Ten thousand. A hundred thousand. A million. Ten million. A hundred million. Each step is ten times the last — and each one is, quite literally, a different world to live in.",
+      "motif": "networthladder",
+      "caption": "every ×10 is a different world"
+    },
+    {
+      "id": "s5",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "save a little money",
+      "memeBottom": "own enough that the money earns more than you do",
+      "narration": "And the goal of this whole climb isn't really the fancy stuff. It's one quiet finish line: the moment your money starts earning more than you do. Everything below that line is work. Everything above it is freedom."
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "Before we climb, you need the two rules that govern every single level.",
+      "heading": "The Rules of the Climb",
+      "kicker": "how the game actually works"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "Rule one: we're measuring net worth. It's the value of all the assets you own, minus the value of all your outstanding liabilities — your debts. It is not your paycheck. A surgeon on three hundred grand with huge loans can be worth less than a frugal teacher.",
+      "sourceId": "wiki-networth"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "This trips up almost everyone. Income is the river flowing in. Net worth is the lake you've actually managed to keep. Plenty of high earners have a roaring river and a puddle of a lake — because it all flows straight back out again.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "faucet",
+          "label": "income = the river"
+        },
+        {
+          "name": "bucket",
+          "label": "net worth = the lake"
+        },
+        {
+          "name": "grocerybag",
+          "label": "most of it flows out"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "And our numbers aren't made up. They come from the Survey of Consumer Finances — a detailed statistical survey of the balance sheet of American families, run by the Federal Reserve. This is the real data.",
+      "sourceId": "wiki-scf"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Here's a sly trick hiding in the averages. The mean American net worth is over a million dollars — but that number is wildly misleading. A handful of billionaires yank the average way up. The median, the household right in the middle, is that hundred ninety-three thousand. On wealth, always trust the median.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pie",
+          "label": "mean: $1M+"
+        },
+        {
+          "name": "crowd",
+          "label": "median: $193K"
+        },
+        {
+          "name": "magnifier",
+          "label": "trust the median"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "Rule two is the most important idea in this entire video. At low levels, you work for money. At high levels, money works for you. The whole climb is really just the story of crossing from one side of that line to the other.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "you work for money"
+        },
+        {
+          "name": "nestegg",
+          "label": "money works for you"
+        },
+        {
+          "name": "scale",
+          "label": "the whole game"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Think of it in two phases. In phase one, you're pushing a boulder uphill — grinding, saving, every dollar coming from your own effort. In phase two, the boulder becomes a snowball rolling downhill, growing on its own, whether you work that day or not.",
+      "motif": "twophases",
+      "caption": "phase 1: you push · phase 2: it rolls"
+    },
+    {
+      "id": "s12",
+      "type": "screenshot",
+      "narration": "That second phase has a name: passive income — a type of unearned income acquired with little to no labor. Rent, dividends, interest. Money that shows up whether you get out of bed or not.",
+      "sourceId": "wiki-passive"
+    },
+    {
+      "id": "s13",
+      "type": "stage",
+      "narration": "Picture two lines over your life. One is the income from your job — it rises a bit, then flattens, and it always stops the day you do. The other is the income thrown off by your investments. Early on it's nothing. But it grows, and grows, until one day it crosses your salary. That crossover is the real prize.",
+      "motif": "moneycrossover",
+      "caption": "when money out-earns you, you're free"
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Okay. Let's start at the bottom, where almost all of us begin.",
+      "heading": "Level 1 — $0",
+      "kicker": "survival"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Level one is zero — or less. And this isn't a small club. A huge share of American households sit near zero or are actually underwater, owing more than they own, thanks to student loans, car loans, and credit cards. Even plenty of six-figure earners live right here.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "owe more than you own"
+        },
+        {
+          "name": "gradcap",
+          "label": "student loans"
+        },
+        {
+          "name": "car",
+          "label": "car loans"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "At this level, money means one thing only: survival. Every single dollar is already spoken for before it arrives. There's no buffer, no cushion — you are exactly one broken-down car or one surprise bill away from a genuine crisis.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "every dollar spoken for"
+        },
+        {
+          "name": "warning",
+          "label": "no cushion at all"
+        },
+        {
+          "name": "car",
+          "label": "one bill from crisis"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "And level one is stickier than it looks. When you're near zero, every raise gets instantly swallowed — a higher rent, a newer car, a bit more stuff. Lifestyle rises to eat the income. Escaping the bottom is less about earning more, and far more about the brutal discipline of keeping some.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "every raise vanishes"
+        },
+        {
+          "name": "car",
+          "label": "lifestyle eats it"
+        },
+        {
+          "name": "scissors",
+          "label": "keep some, ruthlessly"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "The cruel trap of level one is that debt runs the two-phase rule in reverse. Here, money works against you — interest compounding on your credit cards while you sleep. The first job of the climb isn't to get rich. It's just to claw your way back up to zero.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "money works against you"
+        },
+        {
+          "name": "percent",
+          "label": "interest while you sleep"
+        },
+        {
+          "name": "ladder",
+          "label": "first, just reach zero"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Climb one rung, add a zero, and the air already feels different.",
+      "heading": "Level 2 — $10,000",
+      "kicker": "stability"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "Ten thousand dollars is your first real emergency fund, and psychologically it's enormous. For the first time, a flat tire or a medical bill is an annoyance, not a catastrophe. You've bought yourself the single most valuable thing money offers early on: a good night's sleep.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "first emergency fund"
+        },
+        {
+          "name": "shield",
+          "label": "a real cushion"
+        },
+        {
+          "name": "house",
+          "label": "you can finally sleep"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "At this level, money becomes stability — breathing room. You can take a slightly riskier, better job. You can say no to a bad deal. That small cushion quietly starts giving you something you never had before: a few choices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "take a better job"
+        },
+        {
+          "name": "handshake",
+          "label": "say no to bad deals"
+        },
+        {
+          "name": "scale",
+          "label": "a few real choices"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Median net worth by age ($ thousands)",
+      "unit": "$K",
+      "narration": "And where you sit depends a lot on age. The Fed's data shows the typical household under thirty-five is worth around thirty-nine thousand dollars. By the mid-forties it's about a hundred and thirty-five thousand. Wealth, for most people, is a slow climb stacked over decades.",
+      "data": [
+        {
+          "label": "<35",
+          "value": 39
+        },
+        {
+          "label": "35-44",
+          "value": 135
+        },
+        {
+          "label": "45-54",
+          "value": 247
+        },
+        {
+          "label": "55-64",
+          "value": 364
+        },
+        {
+          "label": "65-74",
+          "value": 410
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "Notice what's really doing the work in that age chart: time. A twenty-five-year-old who invests a little every month can quietly coast past a fifty-year-old who started late — without ever earning a bigger paycheck. On this ladder, starting early beats starting rich.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "time does the work"
+        },
+        {
+          "name": "calendar",
+          "label": "start early"
+        },
+        {
+          "name": "chartup",
+          "label": "beats starting rich"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Now we hit the single hardest, most important jump in the entire climb.",
+      "heading": "Level 3 — $100,000",
+      "kicker": "liftoff"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "A hundred thousand dollars. This is the milestone that quietly changes everything — and it's brutally hard to reach, because at this stage you're building it almost entirely from your own savings. There's no momentum yet. It is all push.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "the hardest climb"
+        },
+        {
+          "name": "briefcase",
+          "label": "built from pure saving"
+        },
+        {
+          "name": "hourglass",
+          "label": "no momentum yet"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "image",
+      "src": "img/munger.jpg",
+      "label": "CHARLIE MUNGER",
+      "caption": "Warren Buffett's partner, Berkshire Hathaway",
+      "narration": "The legendary investor Charlie Munger put it bluntly. He said the first hundred thousand dollars is the hardest — a real grind — but once you have it, the game changes. Get there however you can, he advised, because that's where the magic starts."
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "That magic is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Once you have a hundred grand invested, it can start throwing off thousands of dollars a year, entirely on its own.",
+      "sourceId": "wiki-compound"
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "This is where phase two is finally born. A hundred thousand dollars invested at a normal market return quietly earns several thousand a year — without you lifting a finger. For the first time, the snowball starts to roll on its own, even if it's still small.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "$100K invested"
+        },
+        {
+          "name": "moneytree",
+          "label": "earns on its own"
+        },
+        {
+          "name": "chartup",
+          "label": "the snowball rolls"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "To see why a hundred thousand is the magic number, watch it work. Left alone at a typical market return, it roughly doubles every decade. So a hundred grand quietly becomes two hundred, then four hundred, then eight hundred thousand — while you do absolutely nothing.",
+      "text": "$800,000",
+      "sub": "what $100K can become in ~30 years, untouched",
+      "icon": "moneytree"
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "Add one more zero, and you reach the number everyone dreams about.",
+      "heading": "Level 4 — $1,000,000",
+      "kicker": "security"
+    },
+    {
+      "id": "s28",
+      "type": "screenshot",
+      "narration": "A million dollars makes you, by the classic definition, a high-net-worth individual — someone whose assets are valued at over one million US dollars. The word that's followed that number for a century: millionaire.",
+      "sourceId": "wiki-hnwi"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "But here's the reality check. A million dollars today is not the private-jet fortune the movies promised. It's roughly what a careful saver needs just to retire comfortably. It puts you in the top ten percent or so of US households — genuinely well-off, but not the yacht life.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "enough to retire"
+        },
+        {
+          "name": "pie",
+          "label": "top ~10% of US"
+        },
+        {
+          "name": "yacht",
+          "label": "…but no yacht yet"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "At a million, money means security. Using the rough four-percent rule, that pile can safely throw off around forty thousand dollars a year, basically forever. That's not quit-everything money for most — but for the first time, work is starting to become optional.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "~$40K a year, forever"
+        },
+        {
+          "name": "percent",
+          "label": "the 4% rule"
+        },
+        {
+          "name": "umbrella",
+          "label": "work becomes optional"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "But be warned: a million dollars isn't the finish line it used to be. Fifty years ago, it was true, jaw-dropping wealth. Today, after decades of inflation, it's a comfortable retirement — not a mansion and a yacht. The number stayed famous, but its buying power quietly shrank.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mansion",
+          "label": "not a mansion"
+        },
+        {
+          "name": "grocerybag",
+          "label": "inflation shrank it"
+        },
+        {
+          "name": "retiree",
+          "label": "a comfy retirement"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "But a million isn't the top. Not even close. Add a zero.",
+      "heading": "Level 5 — $10,000,000",
+      "kicker": "freedom"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Ten million dollars is where you cross into genuinely rich — and into the top one percent of American households. At this level, the math completely flips. Your money now earns dramatically more than you ever could from a job.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "genuinely rich"
+        },
+        {
+          "name": "pie",
+          "label": "the top 1%"
+        },
+        {
+          "name": "chartup",
+          "label": "money out-earns you"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Here, that same four-percent rule throws off around four hundred thousand dollars a year — far more than almost any salary. You have officially, permanently crossed the crossover line. You never have to work again, and your wealth still grows while you sleep.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "~$400K a year"
+        },
+        {
+          "name": "mansion",
+          "label": "work truly optional"
+        },
+        {
+          "name": "moneytree",
+          "label": "grows while you sleep"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And here's a key truth about the upper levels: almost nobody salaries their way to ten million. They get there by owning — equity in a business, a growing stake, real estate. Past a certain point, real wealth is built by owning things, not by being paid for your time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "own a business"
+        },
+        {
+          "name": "pie",
+          "label": "own equity"
+        },
+        {
+          "name": "house",
+          "label": "own real estate"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Net worth to reach each tier ($ thousands)",
+      "unit": "$K",
+      "narration": "Look at how the thresholds explode. The median household is worth about a hundred ninety-three thousand. To crack the top ten percent takes nearly two million. And to enter the top one percent, you need somewhere north of eleven million dollars.",
+      "data": [
+        {
+          "label": "median",
+          "value": 193
+        },
+        {
+          "label": "top 10%",
+          "value": 1900
+        },
+        {
+          "label": "top 1%",
+          "value": 11600
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s35",
+      "type": "title",
+      "narration": "And then there's the final level — a place that barely feels like money anymore.",
+      "heading": "Level 6 — $100,000,000",
+      "kicker": "power"
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "A hundred million dollars. At this level, there are fewer than ten thousand people in the entire United States. You could never spend it on yourself in ten lifetimes. So it stops being about lifestyle completely — and becomes about something else entirely: power.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crown",
+          "label": "<10,000 in the US"
+        },
+        {
+          "name": "mansion",
+          "label": "unspendable on yourself"
+        },
+        {
+          "name": "chessking",
+          "label": "it becomes power"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "image",
+      "src": "img/rockefeller.jpg",
+      "label": "JOHN D. ROCKEFELLER",
+      "caption": "America's first billionaire (1916)",
+      "narration": "This is the realm John D. Rockefeller entered when he became America's first billionaire. At this altitude, money is no longer a tool for buying things. It's a tool for buying influence — companies, media, politicians, and the fate of whole industries.",
+      "circle": true
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "At a hundred million, you don't invest in companies — you own them. You don't worry about retirement — you build dynasties. Your money now shapes the very levels the rest of us are climbing. It's a different universe, with different rules entirely.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "you own the companies"
+        },
+        {
+          "name": "moneytree",
+          "label": "you build dynasties"
+        },
+        {
+          "name": "globe",
+          "label": "a different universe"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "At the very top, the goal quietly shifts to permanence. Structured right, a hundred-million-dollar fortune can fund a family for generations — never fully spent, just endlessly compounding. This is exactly how a handful of families manage to stay wealthy for a century or more.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneytree",
+          "label": "funds generations"
+        },
+        {
+          "name": "couple",
+          "label": "a family dynasty"
+        },
+        {
+          "name": "crown",
+          "label": "wealth that never dies"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "stage",
+      "narration": "Step back and look at all six levels on one line, and the cruelest trick of the climb appears. Each jump is the same single step on our staircase — but in real dollars, each one is ten times bigger than the last. The leap from one to ten million is a hundred times the leap from zero to a hundred thousand.",
+      "motif": "levelgaps",
+      "caption": "each level is 10× the last"
+    },
+    {
+      "id": "s40",
+      "type": "stage",
+      "narration": "And this is who ends up where. In America, the bottom half of households together hold just a few percent of all the wealth. The top ten percent hold most of it, and the top one percent alone own roughly a third of everything.",
+      "motif": "wealthpyramid",
+      "caption": "who owns what in America"
+    },
+    {
+      "id": "s41",
+      "type": "screenshot",
+      "narration": "This gap isn't your imagination. Wealth inequality has substantially increased in the United States since the late 1980s — the top levels have pulled away from everyone below them, faster and faster.",
+      "sourceId": "wiki-inequality"
+    },
+    {
+      "id": "s42",
+      "type": "title",
+      "narration": "So what do you actually do with all this? Here's the part that matters for you.",
+      "heading": "The Real Lesson",
+      "kicker": "aim at the line, not the number"
+    },
+    {
+      "id": "s43",
+      "type": "stage",
+      "narration": "Here's how the levels really feel. At ten thousand, money is survival — rent and groceries covered. At a million, it's security — work becomes optional. At a hundred million, it's power — you move markets and families. Same word, three completely different meanings.",
+      "motif": "richworlds",
+      "caption": "money means something new at each level"
+    },
+    {
+      "id": "s44",
+      "type": "screenshot",
+      "narration": "But notice the real finish line isn't a specific dollar amount. It's financial independence — having enough resources to cover your living costs without depending on active employment. That line is different for everyone.",
+      "sourceId": "wiki-fi"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "This is the liberating part. You don't actually need a hundred million dollars. You need the number where your investments quietly cover your life. For a modest spender, that crossover can arrive at one or two million — a fraction of the top of the ladder.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "cover your life"
+        },
+        {
+          "name": "house",
+          "label": "spend modestly"
+        },
+        {
+          "name": "umbrella",
+          "label": "freedom, far below the top"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "callout",
+      "narration": "There's even a quick rule of thumb for your own crossover. Take your annual spending, and multiply it by twenty-five. That rough pile is what your investments need to be worth to cover your life, essentially forever. That's your real finish line.",
+      "text": "× 25",
+      "sub": "your yearly spending = your freedom number",
+      "icon": "nestegg"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So focus relentlessly on two things. First, grind out that brutal first hundred thousand, however you can — because that's where your money finally starts working for you. Second, keep your spending low, so your crossover line stays within reach.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "grind the first $100K"
+        },
+        {
+          "name": "piggybank",
+          "label": "keep spending low"
+        },
+        {
+          "name": "nestegg",
+          "label": "reach your crossover"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "compare",
+      "narration": "Because that's the whole secret the levels reveal. One person earns three hundred grand and spends all of it, trapped forever in phase one. Another earns far less, but owns assets that cover their life — and is quietly, permanently free.",
+      "left": {
+        "title": "High income, no assets",
+        "value": "trapped in phase one",
+        "icon": "ballchain"
+      },
+      "right": {
+        "title": "Assets cover your life",
+        "value": "quietly free",
+        "icon": "nestegg"
+      }
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "Your net worth isn't a scoreboard for showing off. It's a measure of one thing: how much of your own time you've bought back. Every level up the ladder is really just more freedom, more choices, and more of your life that belongs to you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "time bought back"
+        },
+        {
+          "name": "scale",
+          "label": "freedom and choices"
+        },
+        {
+          "name": "mountain",
+          "label": "your life, your own"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "And here's the strangest truth on the whole ladder. The jump from survival to security transforms your life. But the jump from rich to ultra-rich barely touches your daily happiness at all. Past the level marked 'enough,' you're mostly just climbing for the scoreboard.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "survival→security: huge"
+        },
+        {
+          "name": "yacht",
+          "label": "rich→ultra: tiny"
+        },
+        {
+          "name": "scale",
+          "label": "find your 'enough'"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "So wherever you are on this ladder right now — even if you're below zero — the next level is always the same simple move. Own a little more than you did last year. Owe a little less. Let the crossover creep closer. That's the entire game, from zero to a hundred million.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "own more, owe less"
+        },
+        {
+          "name": "nestegg",
+          "label": "crossover creeps closer"
+        },
+        {
+          "name": "mountain",
+          "label": "$0 to $100M"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "If you want to know exactly which level you're on and how to reach the next one, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-networth",
+      "name": "Net worth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Net_worth",
+      "quote": "minus the value of all its outstanding liabilities"
+    },
+    {
+      "id": "wiki-scf",
+      "name": "Survey of Consumer Finances (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survey_of_Consumer_Finances",
+      "quote": "a triennial statistical survey of the balance sheet"
+    },
+    {
+      "id": "wiki-passive",
+      "name": "Passive income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Passive_income",
+      "quote": "unearned income that is acquired with little to no labor"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal sum and previously accumulated interest"
+    },
+    {
+      "id": "wiki-hnwi",
+      "name": "High-net-worth individual (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/High-net-worth_individual",
+      "quote": "maintains liquid assets at or above a certain threshold"
+    },
+    {
+      "id": "wiki-inequality",
+      "name": "Wealth inequality in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth_inequality_in_the_United_States",
+      "quote": "has substantially increased in the United States since the late 1980s"
+    },
+    {
+      "id": "wiki-fi",
+      "name": "Financial independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_independence",
+      "quote": "cover its cost-of-living expenses without depending on active employment"
+    }
+  ],
+  "media": {
+    "people": [
+      {
+        "query": "Charlie Munger",
+        "slug": "munger"
+      },
+      {
+        "query": "John D. Rockefeller",
+        "slug": "rockefeller"
+      }
+    ]
+  },
+  "youtube": {
+    "title": "Your Money at Every Level: $0 to $100 Million (Real Fed Data)",
+    "alts": [
+      "Net Worth From $0 to $100 Million: What Each Level Really Means",
+      "Every Level of Wealth Explained (With Real Federal Reserve Data)"
+    ],
+    "hook": "What does your money actually unlock at every level — from $0 to $100 million? Using real Federal Reserve data (the Survey of Consumer Finances), we climb the net-worth ladder one ×10 step at a time: $0 (survival), $10K (stability), $100K (liftoff — the hardest jump, where compounding wakes up), $1M (security — top ~10%), $10M (freedom — top 1%, money out-earns you), and $100M (power — fewer than 10,000 people). The spine of the whole thing: the crossover, where your investments earn more than your job — below it you work for money, above it money works for you. The real finish line isn't a number, it's financial independence. Fully cited.",
+    "bullets": [
+      "Net worth vs income — the lake vs the river",
+      "The two phases: you work for money, then money works for you",
+      "Why the first $100K is the hardest (Charlie Munger was right)",
+      "$1M = security, $10M = freedom, $100M = power",
+      "Real Fed thresholds: median $193K, top 10% ~$1.9M, top 1% ~$11.6M",
+      "The real finish line: financial independence, not a dollar amount"
+    ],
+    "tags": [
+      "net worth by level",
+      "every level of wealth",
+      "net worth percentiles",
+      "survey of consumer finances",
+      "how much to be rich",
+      "first 100k",
+      "financial independence",
+      "passive income",
+      "top 1 percent net worth",
+      "millionaire",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#networth",
+      "#money",
+      "#wealth",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "$0 → $100M",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "the crossover",
+      "napkinSub": "money works for you",
+      "deco": "mountain"
+    },
+    "chapters": [
+      [
+        "a different world to live in",
+        "The climb"
+      ],
+      [
+        "the two rules that govern every single level",
+        "The rules"
+      ],
+      [
+        "money means one thing only: survival",
+        "$0 — survival"
+      ],
+      [
+        "first real emergency fund",
+        "$10K — stability"
+      ],
+      [
+        "the single hardest, most important jump",
+        "$100K — liftoff"
+      ],
+      [
+        "the classic definition, a high-net-worth individual",
+        "$1M — security"
+      ],
+      [
+        "genuinely rich",
+        "$10M — freedom"
+      ],
+      [
+        "becomes about something else entirely: power",
+        "$100M — power"
+      ],
+      [
+        "the real finish line isn't a specific dollar amount",
+        "The real lesson"
+      ]
+    ]
+  }
+}
