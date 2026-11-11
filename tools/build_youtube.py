@@ -60,6 +60,28 @@ for s in ep.get("sources", []):
     host = re.sub(r"^https?://", "", u).split("/")[0]
     source_lines.append(f"• {nice.get(host, re.sub(r'^www.', '', host))} — {u}")
 
+# image credits: CC attribution for real photos this episode uses (required by CC-BY)
+photo_slugs = set()
+for s in ep.get("scenes", []):
+    src = s.get("src", "")
+    if s.get("type") == "image" and not s.get("meme") and src.startswith("img/"):
+        photo_slugs.add(src[len("img/"):].rsplit(".", 1)[0])
+image_credit_lines = []
+cred_path = pathlib.Path("render/public/img/credits.photos.json")
+if cred_path.exists():
+    try:
+        for c in json.loads(cred_path.read_text()):
+            if c.get("slug") in photo_slugs:
+                bits = [c.get("page", c.get("slug"))]
+                if c.get("artist"): bits.append(c["artist"])
+                if c.get("license"): bits.append(c["license"])
+                line = "• " + " — ".join(str(b) for b in bits) + ", via Wikimedia Commons"
+                if c.get("descUrl"): line += f" ({c['descUrl']})"
+                image_credit_lines.append(line)
+    except Exception:
+        pass
+image_credits_block = ("\nIMAGE CREDITS\n" + "\n".join(sorted(image_credit_lines)) + "\n") if image_credit_lines else ""
+
 TITLE = yt["title"]
 desc = f"""{TITLE}
 
@@ -73,6 +95,7 @@ CHAPTERS
 
 SOURCES & FURTHER READING
 {chr(10).join(source_lines)}
+{image_credits_block}
 
 If this made the numbers finally click, subscribe — and tell me which impossible number you want me to pull apart next.
 
