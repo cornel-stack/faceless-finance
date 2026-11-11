@@ -101,6 +101,8 @@ export type DoodleName =
   | "velvetrope" | "goldcard"
   // EP055 (how much to retire at every age) additions:
   | "hammock" | "medkit"
+  // EP056 (invest $100/month at every age) additions:
+  | "coffeecup" | "snowball"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1840,6 +1842,26 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={40} y={26} w={20} h={10} fill="none" strokeWidth={SW} />
           <RLine x1={50} y1={46} x2={50} y2={70} stroke="#fff" strokeWidth={5} />
           <RLine x1={38} y1={58} x2={62} y2={58} stroke="#fff" strokeWidth={5} />
+        </>
+      );
+    case "coffeecup":
+      // A takeaway coffee cup — the $5/day latte reframe.
+      return (
+        <>
+          <RPath d="M28 40 L72 40 L66 84 L34 84 Z" fill={PARCH} strokeWidth={SW} />
+          <RRect x={24} y={32} w={52} h={10} fill={RED} strokeWidth={SW} />
+          <RPath d="M48 20 Q42 26 48 32" fill="none" strokeWidth={1.8} />
+          <RPath d="M56 18 Q50 26 56 34" fill="none" strokeWidth={1.8} />
+        </>
+      );
+    case "snowball":
+      // A snowball rolling and growing — compounding.
+      return (
+        <>
+          <RLine x1={16} y1={82} x2={88} y2={82} strokeWidth={SW} />
+          <RCircle cx={30} cy={72} d={16} fill="#eef3f6" strokeWidth={SW} />
+          <RCircle cx={62} cy={60} d={40} fill="#eef3f6" strokeWidth={SW} />
+          <RPath d="M20 66 Q40 56 48 64" fill="none" strokeWidth={1.4} />
         </>
       );
   }

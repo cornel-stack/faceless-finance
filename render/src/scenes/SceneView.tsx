@@ -4192,6 +4192,87 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>running out at 85 is the real retirement nightmare</text>
       </svg>
     );
+  } else if (m === "hundredamonth") {
+    // $100/month dripping in and compounding into a big pile by 65.
+    const drip = Math.floor(interpolate(frame, [fps * 0.3, fps * 2.6], [0, 6], clampBoth));
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">just $100 a month</text>
+        <g transform="translate(220 280)"><rect x={-60} y={-40} width={120} height={80} rx={10} fill={blue} stroke={ink} strokeWidth={5} /><text y={8} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$100</text></g>
+        {Array.from({ length: 6 }).map((_, i) => <circle key={i} cx={320 + i * 60} cy={280} r={10} fill={gold} stroke={ink} strokeWidth={2} opacity={drip > i ? 1 : 0.12} />)}
+        <g transform={`translate(760 ${300 - 20 * grow})`}><circle r={60 + 60 * grow} fill={green} stroke={ink} strokeWidth={6} /><text y={6} fontSize={16 + 10 * grow} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$$$</text></g>
+        <text x={VW / 2} y={478} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">quietly becomes a fortune by 65</text>
+      </svg>
+    );
+  } else if (m === "startagebars") {
+    // Ending balance at 65 by the age you start $100/mo.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["start 25", 300, green], ["start 35", 128, gold], ["start 45", 51, "#d98b5f"], ["start 55", 16, red]];
+    const vals = ["$349K", "$149K", "$59K", "$18K"];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$100/mo → your balance at 65</text>
+        <RLine x1={90} y1={440} x2={VW - 60} y2={440} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, h, col], i) => {
+          const x = 150 + i * 190; const hh = (h as number) * grow;
+          return <g key={i}><rect x={x} y={440 - hh} width={130} height={hh} fill={col as string} stroke={ink} strokeWidth={4} /><text x={x + 65} y={440 - hh - 12} fontSize={19} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{vals[i]}</text><text x={x + 65} y={464} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{lab}</text></g>;
+        })}
+        <text x={VW / 2} y={498} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same $100 — the start date changes everything</text>
+      </svg>
+    );
+  } else if (m === "costofwaiting") {
+    // Each decade you wait slashes the ending balance.
+    const show = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the price of waiting 10 years</text>
+        <g transform="translate(290 290)"><circle r={88} fill={green} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>start at 25</text><text y={24} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$349K</text></g>
+        <g transform="translate(690 290)" opacity={interpolate(show, [0.4, 1], [0, 1], clampBoth)}><circle r={58} fill={gold} stroke={ink} strokeWidth={6} /><text y={-4} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>start at 35</text><text y={22} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$149K</text></g>
+        <text x={VW / 2} y={470} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">waiting one decade cost ~$200,000</text>
+        <text x={VW / 2} y={500} fontSize={15} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>…for just $12,000 less invested</text>
+      </svg>
+    );
+  } else if (m === "contribvsgrowth") {
+    // Of the final pile, only a sliver was your money; the rest is growth.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const barX = 380, barW = 220, baseY = 440, fullH = 300;
+    const contribH = fullH * (48 / 349);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$48K in → $349K out</text>
+        <rect x={barX} y={baseY - contribH * grow} width={barW} height={contribH * grow} fill={blue} stroke={ink} strokeWidth={4} />
+        <rect x={barX} y={baseY - fullH * grow} width={barW} height={(fullH - contribH) * grow} fill={green} stroke={ink} strokeWidth={4} />
+        <text x={barX + barW + 20} y={baseY - contribH / 2} fontSize={18} fontWeight={800} fill={blue} fontFamily={sans} opacity={grow}>your $48K</text>
+        <text x={barX + barW + 20} y={baseY - fullH + 60} fontSize={18} fontWeight={800} fill={green} fontFamily={sans} opacity={grow}>+$301K growth</text>
+        <text x={VW / 2} y={492} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>compounding did 86% of the work</text>
+      </svg>
+    );
+  } else if (m === "fivedollarday") {
+    // A $5/day coffee reframed as a fortune by retirement.
+    const pop = spring({ frame, fps, delay: fps * 1.3, config: { damping: 9 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(230 290)"><circle r={66} fill={tan} stroke={ink} strokeWidth={5} /><text y={-8} fontSize={34} textAnchor="middle" fontFamily={sans}>☕</text><text y={28} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>$5 / day</text></g>
+        <path d="M320 290 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform={`translate(700 290) scale(${Math.min(1, pop)})`}><circle r={96} fill={green} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={18} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>by 65</text><text y={26} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$500K+</text></g>
+        <text x={VW / 2} y={478} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">invested instead of sipped, for 40 years</text>
+      </svg>
+    );
+  } else if (m === "dcathroughcrashes") {
+    // $100/mo keeps buying through crashes — more shares when cheap.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const pts: [number, number][] = [[120, 320], [250, 260], [370, 380], [500, 300], [620, 420], [760, 240], [880, 180]];
+    const segs = pts.slice(1).map(([x, y], i) => { const [px, py] = pts[i]; const t = interpolate(draw, [i / 6, (i + 1) / 6], [0, 1], clampBoth); return `L${px + (x - px) * t} ${py + (y - py) * t}`; });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={66} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">keep buying — especially when it's cheap</text>
+        <RLine x1={100} y1={450} x2={VW - 60} y2={450} stroke={ink} strokeWidth={3} />
+        <path d={`M120 320 ${segs.join(" ")}`} fill="none" stroke={blue} strokeWidth={5} />
+        {pts.map(([x, y], i) => { const on = draw > i / 6; const cheap = y > 340; return <g key={i} opacity={on ? 1 : 0}><circle cx={x} cy={y} r={cheap ? 15 : 9} fill={cheap ? green : gold} stroke={ink} strokeWidth={3} /><text x={x} y={y - (cheap ? 24 : 18)} fontSize={12} fontWeight={800} fill={cheap ? green : theme.inkSoft} textAnchor="middle" fontFamily={sans}>{cheap ? "more!" : "buy"}</text></g>; })}
+        <text x={VW / 2} y={492} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>crashes become discounts — dollar-cost averaging</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

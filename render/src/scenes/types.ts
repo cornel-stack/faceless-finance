@@ -174,7 +174,9 @@ export interface StageScene extends Base {
     // EP054 (how banks treat you at every level) additions:
     | "bankladder" | "feesupperksdown" | "overdrafttrap" | "privatebanker" | "poorpaymore" | "familyoffice"
     // EP055 (how much to retire at every age) additions:
-    | "twentyfivex" | "safewithdrawal" | "earlycostmore" | "bridgeyears" | "sequencerisk" | "longevityrisk";
+    | "twentyfivex" | "safewithdrawal" | "earlycostmore" | "bridgeyears" | "sequencerisk" | "longevityrisk"
+    // EP056 (invest $100/month at every age) additions:
+    | "hundredamonth" | "startagebars" | "costofwaiting" | "contribvsgrowth" | "fivedollarday" | "dcathroughcrashes";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

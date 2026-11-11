@@ -2,916 +2,929 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "What's the magic number you need to retire? A million? Five? The honest answer is: it depends entirely on one thing almost nobody mentions — not how much you have, but how young you are when you stop. Retiring at forty can require nearly double what retiring at sixty-five does. Let's find your real number.",
+    "narration": "What happens if you invest just a hundred dollars a month — the price of a few takeout dinners? The answer is genuinely shocking. Depending on nothing more than the age you start, that trivial little habit turns into anywhere from eighteen thousand dollars to over half a million. Same hundred dollars. The entire difference is time.",
     "pose": "explain",
     "props": [
       {
-        "name": "hammock",
-        "label": "the magic number?"
+        "name": "coffeecup",
+        "label": "just $100/month"
       },
       {
-        "name": "calendar",
-        "label": "depends on your age"
+        "name": "snowball",
+        "label": "$18K… or $500K+"
       },
       {
-        "name": "nestegg",
-        "label": "40 needs ~2× of 65"
+        "name": "clock",
+        "label": "it's all about time"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the one rule that cuts through all the confusion. To retire, you need roughly twenty-five times your annual spending saved up. Spend fifty thousand dollars a year? Your target is about one and a quarter million.",
-    "text": "25×",
-    "sub": "your annual spending = your nest egg",
-    "icon": "nestegg"
+    "narration": "Here's the headline. Start investing a hundred dollars a month at age twenty-five, and by sixty-five you'd have around three hundred and fifty thousand dollars. But you only put in forty-eight thousand of it. The market quietly handed you the other three hundred thousand.",
+    "text": "$349,000",
+    "sub": "$100/mo from 25 to 65 — you only paid in $48K",
+    "icon": "snowball"
   },
   {
-    "id": "s41",
-    "type": "callout",
-    "narration": "A million-dollar nest egg, under the four-percent rule, hands you about forty thousand dollars in your very first year of retirement — then a raise for inflation every year after. That's the engine that turns a lump sum into a salary which never clocks out.",
-    "text": "$40,000",
-    "sub": "a year, from $1M (the 4% rule)",
-    "icon": "nestegg"
-  },
-  {
-    "id": "s3",
+    "id": "s43",
     "type": "character",
-    "narration": "Notice the word that changes everything: spending, not income. Your retirement number has almost nothing to do with your salary and everything to do with your lifestyle. Two people earning the same can need wildly different piles — because one lives on half of what the other does.",
+    "narration": "And in the right account — a Roth I-R-A — that entire three hundred forty-nine thousand can come out completely tax-free. You pay in after-tax hundreds, and decades of growth are never taxed again. It's the closest thing to a legal cheat code in all of personal finance.",
     "pose": "explain",
     "props": [
       {
-        "name": "grocerybag",
-        "label": "it's about spending"
+        "name": "vault",
+        "label": "a Roth IRA"
       },
       {
-        "name": "paystub",
-        "label": "NOT your income"
+        "name": "taxform",
+        "label": "grows tax-free"
       },
       {
-        "name": "scale",
-        "label": "lifestyle sets it"
+        "name": "snowball",
+        "label": "a legal cheat code"
       }
     ]
   },
   {
-    "id": "s42",
+    "id": "s3",
     "type": "character",
-    "narration": "Picture two sixty-five-year-olds. One spends forty thousand a year and needs about a million. The other spends a hundred and twenty thousand and needs three million. Same age, same markets — three times the pile, purely because of lifestyle.",
+    "narration": "That's not a trick or a get-rich scheme. It's just math — the quiet, relentless math of compounding, running on the most ordinary amount of money imaginable. And once you see how it changes with your age, you'll never look at a hundred dollars the same way again.",
     "pose": "explain",
     "props": [
       {
-        "name": "grocerybag",
-        "label": "$40K → ~$1M"
+        "name": "snowball",
+        "label": "just compounding"
       },
       {
-        "name": "mansion",
-        "label": "$120K → ~$3M"
+        "name": "coins",
+        "label": "an ordinary $100"
       },
       {
-        "name": "scale",
-        "label": "lifestyle decides"
+        "name": "calculator",
+        "label": "pure math"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "save a huge number to retire",
-    "memeBottom": "shrink your spending, and the huge number shrinks with it",
-    "narration": "And that's the quiet trick most people miss. Because your number is a multiple of your spending, cutting what you need to live on doesn't just save money — it slashes the entire mountain you have to climb. Spend less, and the finish line sprints toward you."
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "wait until I earn more to start investing",
+    "memeBottom": "lose the one thing that made it work — time",
+    "narration": "And stick around, because the single most expensive mistake isn't investing too little. It's waiting. We'll put an exact price tag on every decade you delay — and it will probably stun you."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "So where does this twenty-five times rule actually come from?",
-    "heading": "The 4% Rule",
-    "kicker": "where 25× comes from"
+    "narration": "First, the engine that makes a hundred dollars explode.",
+    "heading": "The Engine",
+    "kicker": "compounding + the market"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "It comes from a famous piece of research nicknamed the Trinity study, which set out to find safe withdrawal rates from retirement portfolios that contain stocks. The question it asked: how much can you pull out each year without ever running dry?",
-    "sourceId": "wiki-trinity"
+    "narration": "The fuel is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Your money earns a return, and then that return earns its own return, and the whole thing snowballs, faster and faster.",
+    "sourceId": "wiki-compound"
+  },
+  {
+    "id": "s44",
+    "type": "character",
+    "narration": "But compounding plays a cruel trick early on. For the first several years, your balance barely beats what you've put in, and it honestly feels pointless. Then it quietly bends upward into a hockey stick — and most of the real gains arrive near the very end.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "slow, then explosive"
+      },
+      {
+        "name": "hourglass",
+        "label": "feels pointless early"
+      },
+      {
+        "name": "snowball",
+        "label": "a hockey stick"
+      }
+    ]
   },
   {
     "id": "s7",
     "type": "stage",
-    "narration": "Its famous answer was about four percent. If you withdraw roughly four percent of your nest egg in year one, then adjust for inflation after that, your money has historically survived thirty years or more. And four percent a year is just the flip side of having twenty-five times your spending.",
-    "motif": "safewithdrawal",
-    "caption": "the 4% rule"
+    "narration": "So picture a hundred dollars going in every month, month after month, for decades. Each one barely matters on its own. But stacked together and left to compound, they quietly grow into a pile far bigger than everything you ever put in.",
+    "motif": "hundredamonth",
+    "caption": "quietly becomes a fortune by 65"
   },
   {
-    "id": "s43",
+    "id": "s45",
     "type": "character",
-    "narration": "One important catch: the original study assumed a thirty-year retirement. Stretch that to forty or fifty years, and four percent starts to look a little too brave. The longer your horizon, the more gently you have to sip from the pot.",
+    "narration": "This is exactly why so many people quit too soon. They grind for five years, glance at a boring little balance, and give up right before the magic kicks in. The investors who win are simply the ones who don't stop before the curve bends.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "built for ~30 years"
-      },
-      {
-        "name": "percent",
-        "label": "longer = sip less"
-      },
-      {
         "name": "warning",
-        "label": "4% isn't universal"
+        "label": "most quit too early"
+      },
+      {
+        "name": "clock",
+        "label": "right before the magic"
+      },
+      {
+        "name": "trophy",
+        "label": "winners don't stop"
       }
     ]
   },
   {
     "id": "s8",
-    "type": "stage",
-    "narration": "So the whole calculation is beautifully simple. Take your annual spending, multiply by twenty-five, and that's your target. Fifty thousand a year becomes one and a quarter million. Eighty thousand a year becomes two million. Your lifestyle, times twenty-five.",
-    "motif": "twentyfivex",
-    "caption": "spending, not income, sets the number"
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "And your withdrawals aren't frozen in place. Each year you give yourself a raise to match inflation, so your spending power holds steady as prices climb. The rule already bakes in that quiet erosion — which is exactly why it demands such a big starting pile.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "withdrawals rise"
-      },
-      {
-        "name": "grocerybag",
-        "label": "keep up with prices"
-      },
-      {
-        "name": "nestegg",
-        "label": "why the pile is big"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Where do you get that growth? Historically, from the stock market — specifically a fund tracking the stock performance of 500 companies, the S&P 500, which has returned roughly ten percent a year on average over the long run.",
+    "sourceId": "wiki-sp500"
   },
   {
     "id": "s9",
-    "type": "screenshot",
-    "narration": "Hit that number, and you've reached financial independence — enough resources to cover your cost-of-living expenses without depending on active employment. At that point, work becomes a choice, not a sentence.",
-    "sourceId": "wiki-fi"
-  },
-  {
-    "id": "s10",
-    "type": "title",
-    "narration": "But here's the twist the simple rule hides: the number changes with your age. Let's start at the classic finish line.",
-    "heading": "Retiring at 65",
-    "kicker": "easy mode"
-  },
-  {
-    "id": "s11",
     "type": "character",
-    "narration": "Sixty-five is retirement on easy mode. You only need to fund maybe twenty-five to thirty years, the classic four-percent math fits perfectly, and crucially, you get a powerful helper. So for fifty thousand a year of spending, somewhere around one and a quarter million does the job.",
+    "narration": "To stay cautious, let's use a more conservative eight percent a year for all our numbers, to quietly account for inflation and bad decades. Even at that gentler rate, the results are frankly ridiculous. So let's run the exact same hundred dollars a month, starting at four different ages.",
     "pose": "explain",
     "props": [
       {
-        "name": "hammock",
-        "label": "fund ~25-30 years"
-      },
-      {
-        "name": "nestegg",
-        "label": "~$1.25M for $50K/yr"
-      },
-      {
-        "name": "retiree",
-        "label": "the 4% rule fits"
-      }
-    ]
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "A quiet trick at this age: Social Security pays you more the longer you wait. Claim at sixty-two and the checks are permanently smaller. Hold out to seventy, and they jump by well over seventy percent. Waiting can be one of the best investments a retiree ever makes.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "capitol",
-        "label": "wait = bigger checks"
-      },
-      {
-        "name": "calendar",
-        "label": "62 vs 70"
+        "name": "percent",
+        "label": "assume a modest 8%"
       },
       {
         "name": "chartup",
-        "label": "+70% for patience"
+        "label": "the long-run average"
+      },
+      {
+        "name": "calendar",
+        "label": "4 starting ages"
       }
     ]
-  },
-  {
-    "id": "s12",
-    "type": "screenshot",
-    "narration": "That helper is Social Security — the federal program administered by the Social Security Administration that sends retirees a monthly check for life. For an average earner, it can replace around forty percent of their old income, dramatically shrinking the pile they need to save themselves.",
-    "sourceId": "wiki-ss"
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "But don't lean on it entirely. Social Security was never designed to be your whole retirement — only a floor under it. And with its trust fund under long-term strain, the wise move is to treat any check as a welcome bonus, not the foundation.",
+    "narration": "And why eight percent, not the market's historical ten? Because inflation quietly steals two to three percent of your returns every year. Eight is roughly what's left in real, spendable purchasing power — so every number here is deliberately on the cautious side.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "capitol",
-        "label": "just a floor"
+        "name": "percent",
+        "label": "market ~10%"
       },
       {
-        "name": "warning",
-        "label": "trust fund strained"
+        "name": "grocerybag",
+        "label": "inflation takes ~3%"
       },
       {
         "name": "shield",
-        "label": "a bonus, not the base"
+        "label": "we use a safe 8%"
       }
     ]
   },
   {
-    "id": "s13",
+    "id": "s10",
+    "type": "title",
+    "narration": "Let's start with the person who begins young.",
+    "heading": "Starting at 25",
+    "kicker": "the dream scenario"
+  },
+  {
+    "id": "s11",
     "type": "character",
-    "narration": "This is why sixty-five is the gentle option. Social Security covers a big chunk of your spending, so your own savings only have to fill the gap. A paid-off house and a modest nest egg, plus that monthly check, and a comfortable retirement is genuinely within reach.",
+    "narration": "Begin at twenty-five, and you give your money forty full years to grow. Over that time you'll contribute forty-eight thousand dollars of your own — a hundred a month, every month. And by sixty-five, it's blossomed into roughly three hundred and forty-nine thousand dollars.",
     "pose": "explain",
     "props": [
       {
-        "name": "capitol",
-        "label": "SS fills ~40%"
+        "name": "seedling",
+        "label": "40 years to grow"
       },
       {
-        "name": "house",
-        "label": "paid-off home"
+        "name": "coins",
+        "label": "you put in $48K"
       },
       {
-        "name": "nestegg",
-        "label": "savings fill the gap"
+        "name": "snowball",
+        "label": "you end with ~$349K"
       }
     ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "The single biggest lever at any age is your housing. A paid-off home slashes your annual spending — and because your number is twenty-five times that spending, erasing a mortgage can quietly wipe hundreds of thousands of dollars off the pile you need.",
+    "narration": "Here's a quick way to feel the power: the Rule of 72. At eight percent, your money doubles about every nine years. So a single dollar invested at twenty-five doubles roughly four and a half times by sixty-five — quietly turning into more than twenty dollars.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "paid-off home"
+        "name": "calculator",
+        "label": "72 ÷ 8 ≈ 9 yrs"
       },
       {
-        "name": "scissors",
-        "label": "slashes spending"
+        "name": "snowball",
+        "label": "doubles ~4.5×"
       },
       {
-        "name": "nestegg",
-        "label": "−$ hundreds of K"
+        "name": "moneytree",
+        "label": "$1 → $20+"
       }
     ]
   },
   {
-    "id": "s14",
-    "type": "title",
-    "narration": "Now pull that date earlier, and the math gets harder in a hurry.",
-    "heading": "Retiring at 55",
-    "kicker": "the bridge begins"
-  },
-  {
-    "id": "s15",
-    "type": "character",
-    "narration": "Retire at fifty-five, and two problems appear at once. You now need to fund thirty-five, maybe forty years. And you have a long wait before any Social Security arrives. So the comfortable target climbs — closer to twenty-seven times your spending, or roughly one and a half million for that same fifty thousand a year.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "fund 35-40 years"
-      },
-      {
-        "name": "nestegg",
-        "label": "~$1.5M now"
-      },
-      {
-        "name": "calendar",
-        "label": "no SS for years"
-      }
-    ]
+    "id": "s12",
+    "type": "stage",
+    "narration": "And here's the part that should make you sit up. Of that three hundred forty-nine thousand, only forty-eight thousand was your actual money. The other three hundred thousand — the overwhelming majority — was pure growth. Compounding did about eighty-six percent of the work for you.",
+    "motif": "contribvsgrowth",
+    "caption": "compounding did 86% of the work"
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "There's a handy loophole here called the Rule of 55. Leave your job in the year you turn fifty-five or later, and you can tap that employer's 401(k) penalty-free — years before the usual fifty-nine and a half. A small gift for the near-retiree.",
+    "narration": "And the last double is always the giant one. Your balance might crawl from a few thousand to fifty thousand over twenty years — then leap from a hundred and seventy-five thousand all the way to three hundred and fifty thousand in the final decade alone.",
     "pose": "explain",
     "props": [
       {
-        "name": "vault",
-        "label": "the Rule of 55"
+        "name": "chartup",
+        "label": "last double is biggest"
       },
+      {
+        "name": "snowball",
+        "label": "+$175K in 10 yrs"
+      },
+      {
+        "name": "clock",
+        "label": "the final decade wins"
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "type": "title",
+    "narration": "Now watch what happens if that same person waits just ten years.",
+    "heading": "Starting at 35",
+    "kicker": "the ten-year cost"
+  },
+  {
+    "id": "s14",
+    "type": "character",
+    "narration": "Start at thirty-five instead, and you still invest for thirty solid years. You put in thirty-six thousand dollars — only twelve thousand less than the early starter. But at sixty-five, you end up with just a hundred and forty-nine thousand. Less than half.",
+    "pose": "explain",
+    "props": [
       {
         "name": "calendar",
-        "label": "penalty-free early"
+        "label": "30 years, not 40"
       },
       {
-        "name": "handshake",
-        "label": "if you leave the job"
+        "name": "coins",
+        "label": "you put in $36K"
+      },
+      {
+        "name": "snowball",
+        "label": "you end with ~$149K"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "And if you're thirty-five, this is not a funeral. A hundred and forty-nine thousand, from just thirty-six thousand invested, is still a wonderful deal. The only truly wrong move is to read this, feel behind, and then wait even longer. So start now.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "$149K is great"
+      },
+      {
+        "name": "seedling",
+        "label": "not too late"
+      },
+      {
+        "name": "clock",
+        "label": "just don't wait more"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "stage",
+    "narration": "Sit with that for a second. The twenty-five-year-old and the thirty-five-year-old invested almost the same amount — just twelve thousand dollars apart. Yet the early starter ends up with two hundred thousand dollars more. A single decade of waiting cost a fortune.",
+    "motif": "costofwaiting",
+    "caption": "waiting one decade cost ~$200,000"
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "And here's the quietly brutal part of waiting. That lost two hundred thousand dollars wasn't money you failed to contribute — it was growth, compounding you can simply never get back. You can always invest more later. You can never buy back the lost time.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "clock",
+        "label": "it's lost growth"
+      },
+      {
+        "name": "warning",
+        "label": "never recoverable"
+      },
+      {
+        "name": "hourglass",
+        "label": "time can't be rebought"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "stage",
-    "narration": "This is the first taste of the bridge problem. Social Security won't start until at least sixty-two, and Medicare health coverage not until sixty-five. So every single year between retiring and those ages is one hundred percent on you — a gap you must fund entirely from your own savings.",
-    "motif": "bridgeyears",
-    "caption": "retire early = build a bridge"
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "Early retirees also use a clever move called a Roth conversion ladder. Each year you quietly shift money from a traditional account into a Roth, and after a five-year wait, you can withdraw it penalty-free. It's how the FIRE crowd unlocks their accounts decades early.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "vault",
-        "label": "convert each year"
-      },
-      {
-        "name": "ladder",
-        "label": "the 5-year ladder"
-      },
-      {
-        "name": "taxform",
-        "label": "penalty-free access"
-      }
-    ]
+    "type": "title",
+    "narration": "Push the start date later still, and the numbers fall off a cliff.",
+    "heading": "Starting at 45 & 55",
+    "kicker": "the late starters"
   },
   {
     "id": "s17",
     "type": "character",
-    "narration": "And don't forget that bridge includes health insurance. Before Medicare kicks in at sixty-five, you're buying your own coverage — which can cost a retiring couple many thousands of dollars a year. It's one of the single biggest, and most forgotten, costs of retiring early.",
+    "narration": "Begin at forty-five, with twenty years to grow, and your hundred a month becomes about fifty-nine thousand dollars. Begin at fifty-five, with just ten years, and it's only around eighteen thousand — barely more than the twelve thousand you put in. Late in the game, there's simply no time for the snowball to roll.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "medkit",
-        "label": "buy your own coverage"
+        "name": "snowball",
+        "label": "45: ~$59K"
       },
       {
-        "name": "hospital",
-        "label": "no Medicare till 65"
+        "name": "hourglass",
+        "label": "55: ~$18K"
       },
       {
         "name": "warning",
-        "label": "a huge hidden cost"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "There's relief on healthcare, too. Because early retirees often show low taxable income, many qualify for sizable subsidies on the insurance marketplace. Carefully managing the income you report can turn a terrifying medical bill into a very manageable one.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "medkit",
-        "label": "marketplace coverage"
-      },
-      {
-        "name": "percent",
-        "label": "big subsidies"
-      },
-      {
-        "name": "calculator",
-        "label": "manage reported income"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "title",
-    "narration": "Push it to fifty, and you're firmly in serious-planning territory.",
-    "heading": "Retiring at 50",
-    "kicker": "serious money"
-  },
-  {
-    "id": "s19",
-    "type": "character",
-    "narration": "At fifty, you're potentially funding forty-five years of life with no paycheck. The safe withdrawal rate has to drop a little for such a long horizon — meaning you need a bigger multiple, closer to twenty-eight times. For fifty thousand a year, you're now looking at roughly one point seven million dollars.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "~45 years to fund"
-      },
-      {
-        "name": "percent",
-        "label": "lower safe rate"
-      },
-      {
-        "name": "nestegg",
-        "label": "~$1.7M"
+        "label": "no time to compound"
       }
     ]
   },
   {
     "id": "s51",
     "type": "character",
-    "narration": "And remember, the taxman follows you into retirement. Withdrawals from a traditional 401(k) are taxed as ordinary income. So your real target has to cover those taxes too — the headline number always needs a little padding for what you'll still owe.",
+    "narration": "But late starters aren't helpless — they have one powerful weapon: income. At fifty-five, you likely earn far more than you did at twenty-five. Investing five hundred or even a thousand a month, instead of a hundred, can partly make up for those lost decades.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "taxform",
-        "label": "withdrawals taxed"
+        "name": "briefcase",
+        "label": "higher income"
       },
       {
-        "name": "warning",
-        "label": "pad the number"
+        "name": "coins",
+        "label": "invest $500-$1K/mo"
       },
       {
-        "name": "nestegg",
-        "label": "target after tax"
+        "name": "scale",
+        "label": "partly makes up for it"
       }
     ]
   },
   {
-    "id": "s20",
-    "type": "character",
-    "narration": "There's also a tax wrinkle. Most retirement accounts, like a 401(k), penalize withdrawals before age fifty-nine and a half. So an early retiree needs a chunk of money in regular, accessible accounts too — savings they can actually touch during those bridge years without a penalty.",
-    "pose": "explain",
-    "props": [
+    "id": "s18",
+    "type": "stage",
+    "narration": "Line them all up, and the lesson is impossible to miss. The exact same hundred dollars a month produces three hundred forty-nine thousand at twenty-five, a hundred forty-nine at thirty-five, fifty-nine at forty-five, and just eighteen at fifty-five. Your start date matters far more than your contribution.",
+    "motif": "startagebars",
+    "caption": "same $100 — the start date changes everything"
+  },
+  {
+    "id": "s19",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "$100/mo invested — balance at 65, by start age ($K)",
+    "unit": "$K",
+    "narration": "On a chart it's almost violent. Each decade you wait doesn't just shave a little off the top — it roughly halves your final result. Time, not money, is doing nearly all the heavy lifting here.",
+    "data": [
       {
-        "name": "vault",
-        "label": "401(k) locked till 59½"
+        "label": "from 25",
+        "value": 349
       },
       {
-        "name": "piggybank",
-        "label": "need accessible savings"
+        "label": "from 35",
+        "value": 149
       },
       {
-        "name": "taxform",
-        "label": "penalty before then"
+        "label": "from 45",
+        "value": 59
+      },
+      {
+        "label": "from 55",
+        "value": 18
       }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "title",
-    "narration": "And now the extreme end of the spectrum — retiring with half your life still ahead of you.",
-    "heading": "Retiring at 40",
-    "kicker": "hard mode"
-  },
-  {
-    "id": "s22",
-    "type": "screenshot",
-    "narration": "This is the dream of the FIRE movement — Financial Independence, Retire Early — built on accumulating sufficient assets to cover living expenses, through ferociously high savings rates, decades ahead of schedule.",
-    "sourceId": "wiki-fire"
+    ],
+    "highlight": 0
   },
   {
     "id": "s52",
-    "type": "character",
-    "narration": "FIRE even comes in flavors. Lean FIRE means retiring on a bare-bones budget. Fat FIRE means doing it in luxury, which takes a far bigger pile. And Barista FIRE means semi-retiring, covering the gap with an easy, enjoyable part-time job.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "grocerybag",
-        "label": "Lean FIRE"
-      },
-      {
-        "name": "yacht",
-        "label": "Fat FIRE"
-      },
-      {
-        "name": "briefcase",
-        "label": "Barista FIRE"
-      }
-    ]
+    "type": "callout",
+    "narration": "Here's a sobering rule of thumb for the cost of delay. To match the sixty-five balance of someone who started at twenty-five, a forty-five-year-old has to invest roughly four times as much each month. Four hundred dollars, versus a hundred — just to break even on lost time.",
+    "text": "4×",
+    "sub": "the monthly catch-up cost of starting 20 years late",
+    "icon": "coins"
   },
   {
-    "id": "s23",
+    "id": "s20",
+    "type": "title",
+    "narration": "So why does waiting cost so insanely much?",
+    "heading": "Why Waiting Hurts",
+    "kicker": "the magic is in the tail"
+  },
+  {
+    "id": "s21",
     "type": "character",
-    "narration": "But retiring at forty is genuinely hard mode. You might need to fund fifty years or more. The safe withdrawal rate drops toward three and a half, even three percent. That pushes your multiple past thirty times — so fifty thousand a year of spending now demands closer to two million dollars.",
+    "narration": "The secret is that compounding does almost all its magic at the very end. The money you invest in your twenties doesn't just grow — it has forty years to double, and double, and double again. Those early dollars are the seed of the entire forest.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "50+ years to fund"
+        "name": "seedling",
+        "label": "early dollars = seeds"
       },
       {
-        "name": "percent",
-        "label": "~3.5% safe rate"
+        "name": "snowball",
+        "label": "double, double, double"
       },
       {
-        "name": "nestegg",
-        "label": "~$2M for $50K/yr"
+        "name": "moneytree",
+        "label": "they grow the forest"
       }
     ]
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "Be honest about the risk, though. A fifty-year retirement has essentially never been stress-tested by history. That's why the most careful early retirees aim for a three-percent rate and stay flexible — ready to earn a bit, or spend a bit less, if markets turn ugly.",
+    "narration": "Now flip it around. Every hundred dollars you blow on junk in your twenties isn't really costing you a hundred dollars. It's costing you the roughly fifteen hundred it would have become by retirement. Spending in your twenties carries a brutal hidden exchange rate.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "hourglass",
-        "label": "50 yrs is untested"
+        "name": "grocerybag",
+        "label": "$100 on junk now"
       },
       {
-        "name": "percent",
-        "label": "aim nearer 3%"
+        "name": "warning",
+        "label": "× ~15 by 65"
       },
       {
-        "name": "shield",
-        "label": "stay flexible"
+        "name": "snowball",
+        "label": "a brutal rate"
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "narration": "This is really the time value of money in action — the idea that there's a greater benefit to receiving a sum of money now rather than an identical sum later. A dollar today, given time to grow, is worth many dollars tomorrow.",
+    "sourceId": "wiki-timevalue"
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "narration": "Which means waiting carries a brutal opportunity cost — the value of the best alternative forgone. Every year you don't invest, you're not just losing the hundred dollars. You're losing every dollar it would have grown into over your whole life.",
+    "sourceId": "wiki-opportunity"
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "But this isn't a sermon to never enjoy your money. The goal was never to live like a hermit. It's to automate a sensible slice first — pay the future you — and then spend the rest genuinely guilt-free. Balance, not misery.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gear",
+        "label": "automate a slice first"
+      },
+      {
+        "name": "coffeecup",
+        "label": "then enjoy guilt-free"
+      },
+      {
+        "name": "scale",
+        "label": "balance, not misery"
       }
     ]
   },
   {
     "id": "s24",
-    "type": "stage",
-    "narration": "Here's that pattern in one picture. The younger you retire, the bigger the multiple you need — from around twenty-five times at sixty-five, up past thirty times at forty. More years to fund, a lower safe rate, and no Social Security for decades all stack up against you.",
-    "motif": "earlycostmore",
-    "caption": "retire younger, need a bigger pile"
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "Here's the most underrated shortcut of all. Even a small, steady income in early retirement dramatically shrinks the pile you need. Earning just ten thousand dollars a year from a hobby can knock a quarter of a million dollars clean off your target.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "a little income"
-      },
-      {
-        "name": "coins",
-        "label": "$10K a year"
-      },
-      {
-        "name": "nestegg",
-        "label": "−$250K needed"
-      }
-    ]
+    "type": "title",
+    "narration": "Now let's reframe that hundred dollars in a way that stings a little.",
+    "heading": "The $5 a Day",
+    "kicker": "it's smaller than you think"
   },
   {
     "id": "s25",
-    "type": "title",
-    "narration": "Two hidden dangers lurk behind every one of these numbers. Miss them, and even a big nest egg can fail.",
-    "heading": "The Two Killers",
-    "kicker": "what breaks retirements"
-  },
-  {
-    "id": "s26",
-    "type": "screenshot",
-    "narration": "The first is living longer than you planned. Life expectancy is the average remaining years of life at a given age — and 'average' is the trap. Plan only to the average, and there's a fifty-percent chance you outlive your money entirely.",
-    "sourceId": "wiki-life"
+    "type": "stage",
+    "narration": "A hundred dollars a month is barely more than three dollars a day — one fancy coffee. Bump it to five dollars a day, the price of a proper latte, and started young, that daily habit alone grows into over half a million dollars by retirement.",
+    "motif": "fivedollarday",
+    "caption": "invested instead of sipped, for 40 years"
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "And if you're part of a couple, the math gets harsher. The odds that at least one of you reaches ninety are surprisingly high. Your money has to last not just your life, but the longer of two lives — often well into the nineties.",
+    "narration": "And don't over-obsess on the coffee itself. Skipping one latte helps, but it's small. The real 'latte factor' is the mindset — once you see that every small recurring cost has a giant future price tag, you start winning the big decisions too: the car, the rent, the subscriptions.",
     "pose": "explain",
     "props": [
       {
-        "name": "couple",
-        "label": "two lives"
+        "name": "coffeecup",
+        "label": "the latte is small"
       },
       {
-        "name": "hourglass",
-        "label": "one likely hits 90+"
+        "name": "car",
+        "label": "big wins matter more"
       },
       {
-        "name": "nestegg",
-        "label": "fund the longer one"
+        "name": "calculator",
+        "label": "see the true price"
       }
     ]
   },
   {
-    "id": "s27",
-    "type": "stage",
-    "narration": "This is longevity risk. If you retire at sixty-five, you shouldn't plan to seventy-eight, the rough average — you should plan to ninety-five, because you just might get there. The real retirement nightmare isn't dying with money left over. It's running out at eighty-five, with decades of life still to pay for.",
-    "motif": "longevityrisk",
-    "caption": "your money has to outlast you"
+    "id": "s26",
+    "type": "character",
+    "narration": "This isn't about never enjoying a coffee again — life is for living. It's about realizing that tiny, repeated amounts are not trivial. In the hands of time and compounding, five dollars a day is a genuinely life-changing sum. Small is not the same as unimportant.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coffeecup",
+        "label": "small daily habit"
+      },
+      {
+        "name": "snowball",
+        "label": "= life-changing sum"
+      },
+      {
+        "name": "scale",
+        "label": "small ≠ unimportant"
+      }
+    ]
   },
   {
     "id": "s56",
-    "type": "character",
-    "narration": "One way to defuse longevity risk is an annuity. You hand an insurer a lump sum, and they pay you a guaranteed income for life, no matter how long you live. It isn't glamorous — but it's a floor you literally cannot outlive.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "shield",
-        "label": "a guaranteed floor"
-      },
-      {
-        "name": "capitol",
-        "label": "income for life"
-      },
-      {
-        "name": "hammock",
-        "label": "can't outlive it"
-      }
-    ]
+    "type": "callout",
+    "narration": "And if a hundred a month is genuinely out of reach right now, start with twenty-five. Even twenty-five dollars a month, invested from twenty-five, still grows to nearly ninety thousand dollars by sixty-five. The amount is almost beside the point. Starting is the whole game.",
+    "text": "$90,000",
+    "sub": "from just $25/month, started at 25",
+    "icon": "seedling"
+  },
+  {
+    "id": "s27",
+    "type": "title",
+    "narration": "And of course, you can pour more fuel on the fire.",
+    "heading": "Scaling It Up",
+    "kicker": "$500 a month"
   },
   {
     "id": "s28",
     "type": "character",
-    "narration": "The second killer is sneakier, and it's all about timing. It's called sequence-of-returns risk — and it means a market crash in the first few years of retirement can be catastrophic, even if the long-term average looks fine.",
+    "narration": "Because it all scales in a straight line, just multiply. Five hundred dollars a month from age twenty-five, at that same eight percent, grows into roughly one and three-quarter million dollars by sixty-five. The same simple habit — just a bigger monthly bite.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "chartdown",
-        "label": "a crash early on"
+        "name": "coins",
+        "label": "$500/mo from 25"
       },
       {
-        "name": "warning",
-        "label": "timing, not average"
+        "name": "snowball",
+        "label": "~$1.75 million"
       },
       {
-        "name": "hourglass",
-        "label": "sequence risk"
+        "name": "chartup",
+        "label": "it scales linearly"
+      }
+    ]
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "narration": "Want a concrete target beyond a hundred? Maxing out a Roth I-R-A is a brilliant one — currently around five hundred eighty a month. Do that consistently from a young age, and you're looking at roughly two million dollars of completely tax-free money at retirement.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "vault",
+        "label": "max a Roth IRA"
+      },
+      {
+        "name": "coins",
+        "label": "~$580/mo"
+      },
+      {
+        "name": "snowball",
+        "label": "~$2M tax-free"
       }
     ]
   },
   {
     "id": "s29",
-    "type": "stage",
-    "narration": "Here's why. If the market crashes right after you retire, you're forced to sell investments while they're down just to eat — permanently shrinking the pile that was supposed to recover. The exact same crash, ten years later, barely leaves a scratch. Same average return, opposite fate.",
-    "motif": "sequencerisk",
-    "caption": "timing of a crash decides everything"
-  },
-  {
-    "id": "s57",
     "type": "character",
-    "narration": "The classic defense against a bad early crash is the 'bond tent.' You hold extra safe bonds right around your retirement date, so a plunge can't force you to sell stocks at the bottom — then you let stocks grow back once the danger has passed.",
-    "pose": "explain",
+    "narration": "So the real target isn't a magic number — it's a habit and a percentage. Invest whatever you honestly can, as early as you can, and then crank the amount up a little with every raise. The hundred dollars is just the beginning.",
+    "pose": "present",
     "props": [
       {
-        "name": "shield",
-        "label": "extra bonds early"
+        "name": "gear",
+        "label": "build the habit"
       },
       {
-        "name": "chartdown",
-        "label": "survive the crash"
+        "name": "chartup",
+        "label": "raise it over time"
       },
       {
-        "name": "nestegg",
-        "label": "then grow back"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "The defense against both is a cushion. Keep a year or two of spending in cash so you never have to sell in a crash. And plan with a slightly lower withdrawal rate than you think you need. A little conservatism is what turns a fragile retirement into a bulletproof one.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "shield",
-        "label": "1-2 yrs cash cushion"
-      },
-      {
-        "name": "percent",
-        "label": "withdraw a bit less"
-      },
-      {
-        "name": "nestegg",
-        "label": "fragile → bulletproof"
+        "name": "snowball",
+        "label": "$100 is the start"
       }
     ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "Smart retirees also use guardrails instead of a rigid four percent. In great market years, you give yourself a raise. In brutal ones, you trim spending a little. That simple flexibility lets you safely start a touch higher — and still sleep soundly at night.",
-    "pose": "explain",
+    "narration": "The winning pattern is simple: start with whatever you can, automate it, and bump it up with every raise and every debt you clear. A hundred quietly becomes two hundred, then five hundred, almost painlessly, as your life grows around it.",
+    "pose": "present",
     "props": [
       {
-        "name": "scale",
-        "label": "flexible withdrawals"
+        "name": "seedling",
+        "label": "start small"
+      },
+      {
+        "name": "gear",
+        "label": "automate it"
       },
       {
         "name": "chartup",
-        "label": "good year: more"
-      },
-      {
-        "name": "scissors",
-        "label": "bad year: trim"
+        "label": "ratchet it up"
       }
     ]
+  },
+  {
+    "id": "s30",
+    "type": "title",
+    "narration": "Now for the question everyone asks: where does the hundred dollars actually go?",
+    "heading": "Where It Goes",
+    "kicker": "just buy the market"
   },
   {
     "id": "s31",
-    "type": "title",
-    "narration": "So let's turn all of this into your actual plan.",
-    "heading": "Your Real Number",
-    "kicker": "how to find it"
-  },
-  {
-    "id": "s32",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Nest egg to spend $50K/yr, by retirement age ($K)",
-    "unit": "$K",
-    "narration": "Here's the whole picture for someone who wants to spend fifty thousand a year. Retire at sixty-five, and you need around one and a quarter million. At fifty-five, about one and a half. At fifty, roughly one point seven. And at forty, closer to two million. Same lifestyle — the clock sets the price.",
-    "data": [
-      {
-        "label": "at 65",
-        "value": 1250
-      },
-      {
-        "label": "at 55",
-        "value": 1500
-      },
-      {
-        "label": "at 50",
-        "value": 1700
-      },
-      {
-        "label": "at 40",
-        "value": 2000
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s33",
-    "type": "character",
-    "narration": "So step one is the only homework that matters: figure out your real annual spending. Not your income — the actual amount it costs to run your life for a year. That single number, more than anything else, determines the entire size of your retirement.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "track a year of spending"
-      },
-      {
-        "name": "grocerybag",
-        "label": "what life really costs"
-      },
-      {
-        "name": "ledger",
-        "label": "this sets everything"
-      }
-    ]
-  },
-  {
-    "id": "s34",
-    "type": "character",
-    "narration": "Step two: multiply it by twenty-five for a standard retirement, and lean toward thirty if you're retiring early. Then subtract whatever Social Security or a pension will eventually cover. What's left is the pile you personally have to build.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "nestegg",
-        "label": "spending × 25 (or 30)"
-      },
-      {
-        "name": "capitol",
-        "label": "minus Social Security"
-      },
-      {
-        "name": "scale",
-        "label": "the rest is on you"
-      }
-    ]
-  },
-  {
-    "id": "s35",
-    "type": "character",
-    "narration": "And here's the most empowering part. You can attack this number from both ends. Save and invest more to push the pile up — or quietly cut your spending to pull the target down. Every thousand a year you trim off your lifestyle erases twenty-five thousand from the mountain.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "push savings up"
-      },
-      {
-        "name": "scissors",
-        "label": "cut spending down"
-      },
-      {
-        "name": "mountain",
-        "label": "-$1K/yr = -$25K needed"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "For most people, the answer is an index fund — a fund with the goal of replicating, before fees and expenses, the performance of a whole market index. One cheap fund that quietly owns a slice of hundreds of companies at once.",
+    "sourceId": "wiki-index"
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "And you can attack the spending side geographically. The same nest egg that barely covers a pricey coastal city can fund a lavish life in a cheaper town — or another country entirely. Move where your money stretches, and your number can fall by half.",
+    "narration": "One warning when you pick that fund: fees are a silent killer. A fund charging just one percent a year doesn't sound like much — but over forty years, it can quietly swallow a quarter or more of your final balance. Always choose the cheapest broad index fund you can find.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "globe",
-        "label": "move somewhere cheaper"
+        "name": "percent",
+        "label": "a 1% fee"
       },
       {
-        "name": "luggage",
-        "label": "geographic arbitrage"
+        "name": "warning",
+        "label": "eats ~25% over 40 yrs"
       },
       {
-        "name": "nestegg",
-        "label": "number can halve"
+        "name": "scissors",
+        "label": "pick the cheapest fund"
       }
     ]
   },
   {
-    "id": "s36",
+    "id": "s32",
     "type": "character",
-    "narration": "There's even a halfway house called Coast FIRE. Invest aggressively while you're young, and once your pot is big enough that compounding alone will carry it to a full retirement, you can ease off — and just coast, working only to cover today's bills.",
+    "narration": "This is the boring, beautiful secret. You don't pick stocks. You don't time anything. You just buy the whole market, for almost no fee, and let it compound. It's exactly how the eight-percent engine in all our examples actually works in real life.",
     "pose": "explain",
     "props": [
       {
-        "name": "seedling",
-        "label": "front-load investing"
+        "name": "basket",
+        "label": "own the whole market"
       },
       {
-        "name": "moneytree",
-        "label": "let it coast"
+        "name": "pie",
+        "label": "hundreds of companies"
       },
       {
-        "name": "hammock",
-        "label": "ease off early"
+        "name": "percent",
+        "label": "almost no fee"
       }
     ]
   },
   {
     "id": "s60",
     "type": "character",
-    "narration": "Finally, beware the 'one more year' trap. Many who hit their number simply can't bring themselves to stop, endlessly chasing a bigger cushion they'll never actually spend. At some point, the bravest financial move is to trust the math — and actually retire.",
-    "pose": "present",
+    "narration": "And don't agonize over which index. A total-market fund or a plain S&P 500 fund are both excellent — they own basically the same giant companies. The only things that truly matter are that it's broad, and that it's cheap.",
+    "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "'one more year'…"
+        "name": "basket",
+        "label": "total market"
       },
       {
-        "name": "nestegg",
-        "label": "you hit the number"
+        "name": "pie",
+        "label": "or the S&P 500"
       },
       {
-        "name": "hammock",
-        "label": "trust it & stop"
+        "name": "scale",
+        "label": "broad & cheap is all"
       }
     ]
   },
   {
-    "id": "s37",
+    "id": "s33",
+    "type": "screenshot",
+    "narration": "And the engine that makes it steady is dollar-cost averaging — an investment strategy of putting in the same amount at regular intervals. A hundred dollars, every single month, no matter what the market is doing.",
+    "sourceId": "wiki-dca"
+  },
+  {
+    "id": "s34",
+    "type": "stage",
+    "narration": "This is why crashes aren't the enemy of the steady investor — they're a gift. When the market tanks, your fixed hundred dollars automatically buys more shares, on sale. You quietly scoop up bargains in the panic, and they power your biggest gains in the recovery.",
+    "motif": "dcathroughcrashes",
+    "caption": "crashes become discounts — dollar-cost averaging"
+  },
+  {
+    "id": "s61",
     "type": "character",
-    "narration": "So the real answer to 'how much do I need to retire?' isn't a single number someone can hand you. It's a formula: your spending, times a multiple set by your age, minus your safety nets. Plug in your own life, and the fog finally clears.",
+    "narration": "History proves it. Someone who calmly kept buying their hundred dollars straight through the 2008 crash was scooping up shares at rock-bottom prices — and those exact shares went on to drive their biggest gains in the decade-long boom that followed.",
     "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "it's a formula"
+        "name": "chartdown",
+        "label": "kept buying in 2008"
       },
       {
-        "name": "hammock",
-        "label": "spending × age-multiple"
+        "name": "coins",
+        "label": "bought the bottom"
       },
       {
-        "name": "nestegg",
-        "label": "minus your safety nets"
+        "name": "trophy",
+        "label": "huge gains after"
+      }
+    ]
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "So the worst thing you can do in a crash is stop. The investor who panics and sells locks in the loss. The one who keeps calmly buying their hundred dollars through the storm is the one who comes out the other side dramatically richer.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "don't panic-sell"
+      },
+      {
+        "name": "snowball",
+        "label": "keep buying"
+      },
+      {
+        "name": "trophy",
+        "label": "come out richer"
+      }
+    ]
+  },
+  {
+    "id": "s62",
+    "type": "character",
+    "narration": "There's a famous statistic: miss just the ten best days in the market over a few decades, and your total returns can be cut in half. And the catch? Those best days almost always arrive right after the scariest crashes. Time in the market beats timing the market.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "clock",
+        "label": "time IN the market"
+      },
+      {
+        "name": "chartup",
+        "label": "the 10 best days"
+      },
+      {
+        "name": "warning",
+        "label": "right after crashes"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "title",
+    "narration": "Let's turn all of this into exactly what you should do.",
+    "heading": "What To Do",
+    "kicker": "start the $100 today"
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "Step one: start today, with whatever you can — even if it's just that hundred a month. Every single day you wait is quietly handing money to the version of you that could have started now. The best time was twenty years ago. The second best is this afternoon.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "seedling",
+        "label": "start today"
+      },
+      {
+        "name": "clock",
+        "label": "every day counts"
+      },
+      {
+        "name": "coins",
+        "label": "even just $100"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "And the deepest lesson is this: retirement isn't an age the government picks for you. It's a number. The day your nest egg crosses twenty-five times your spending, you're free to stop — whether that day arrives at sixty-five, or at forty.",
+    "narration": "Step two: automate it and buy a low-cost index fund. Set the hundred dollars to invest itself the day after payday, before you can spend it, straight into a fund that owns the whole market. Then, crucially, do absolutely nothing.",
     "pose": "present",
     "props": [
       {
+        "name": "gear",
+        "label": "automate it"
+      },
+      {
+        "name": "basket",
+        "label": "buy the index"
+      },
+      {
         "name": "hammock",
-        "label": "it's a number, not an age"
+        "label": "then do nothing"
+      }
+    ]
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "narration": "And actually doing this is easier than you fear. You can open a brokerage or Roth account on your phone in about twenty minutes, set up a hundred-dollar automatic transfer, and buy one index fund. Honestly, the hardest part is just starting.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "phone",
+        "label": "open it in 20 min"
       },
       {
-        "name": "nestegg",
-        "label": "cross 25× and you're free"
+        "name": "gear",
+        "label": "auto-transfer $100"
       },
       {
-        "name": "clock",
-        "label": "at 65… or 40"
+        "name": "basket",
+        "label": "buy one fund"
       }
     ]
   },
   {
     "id": "s39",
+    "type": "stage",
+    "narration": "Because that's the whole secret the numbers scream at us. It is not about being rich, or clever, or lucky. The twenty-five-year-old investing a humble hundred dollars beats the fifty-five-year-old investing the same — every single time. Starting early simply wins.",
+    "motif": "startearly",
+    "caption": "the one asset you can't buy back: time"
+  },
+  {
+    "id": "s64",
     "type": "character",
-    "narration": "If this finally made the retirement number make sense, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "And the most beautiful version of all: do it for a child. A small amount invested for a newborn, left alone for sixty-five years, can quietly make them a millionaire — from contributions a parent would barely even notice. Time really is the greatest gift you can give.",
+    "pose": "explain",
     "props": [
       {
-        "name": "hammock",
-        "label": "which number next?"
+        "name": "baby",
+        "label": "invest for a newborn"
+      },
+      {
+        "name": "moneytree",
+        "label": "65 years to grow"
+      },
+      {
+        "name": "trophy",
+        "label": "a future millionaire"
       }
     ]
   },
   {
     "id": "s40",
+    "type": "character",
+    "narration": "So the next time you tell yourself a hundred dollars is too small to bother with, remember the chart. In the hands of time, that hundred dollars isn't small at all. It's the seed of a three-hundred-thousand-dollar tree — if you plant it today.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "seedling",
+        "label": "$100 is a seed"
+      },
+      {
+        "name": "moneytree",
+        "label": "→ a $300K+ tree"
+      },
+      {
+        "name": "calendar",
+        "label": "if you plant it now"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "character",
+    "narration": "If this finally made compounding click, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s42",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",
