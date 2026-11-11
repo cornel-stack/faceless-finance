@@ -1,0 +1,914 @@
+{
+  "id": "EP039",
+  "series": "Napkin Numbers",
+  "title": "Why the Dumbest Investors Win",
+  "slug": "why-the-dumbest-investors-win",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP039 — explainer (By the Numbers, row 29). Why the 'dumbest' strategy — buy a cheap index fund and never touch it — beats the smartest active managers and traders: fees, the efficient market, the behavior gap, survivorship, and compounding + the Buffett bet. Real portraits (Bogle, Buffett, Graham). 5 new motifs (dumbvssmart, feedrag, donothing, indexbasket, behaviorgap) + doodles (turtle, hare). Target 12–15 min.",
+  "media": {
+    "people": [
+      {
+        "query": "John C. Bogle",
+        "slug": "bogle"
+      },
+      {
+        "query": "Warren Buffett",
+        "slug": "warren"
+      },
+      {
+        "query": "Benjamin Graham",
+        "slug": "graham"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "In 2014, a quiet gas-station attendant named Ronald Read died — and left behind a fortune of around eight million dollars. No inheritance, no genius stock picks. Just decades of patience.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "a janitor's $8M"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "How did a gas-station worker do it? No secret. He bought shares of simple, boring companies he understood, reinvested every dividend, never sold in a panic, and let it compound for over fifty years.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "boring stocks, 50 years"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "Meanwhile, armies of brilliant, Ivy-League, hundred-hour-a-week Wall Street professionals quietly lose to a strategy so simple it feels almost insulting. Welcome to the strangest rule in finance.",
+      "pose": "think",
+      "bubble": "the dumb way… wins?"
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "src": "img/memes/brain4.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "study the markets 80 hours a week",
+      "memeBottom": "buy an index fund and go to sleep",
+      "narration": "In almost every field, the smartest, hardest-working people win. Investing is the one weird place where effort and cleverness often actively hurt you."
+    },
+    {
+      "id": "s58",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "try hard to beat the market",
+      "memeBottom": "lose to the people who didn't try",
+      "narration": "It's the ultimate cosmic joke of finance: the more cleverly you try to beat the market, the more likely you are to lose to someone who didn't even try."
+    },
+    {
+      "id": "s4",
+      "type": "callout",
+      "narration": "Because here's the punchline: the dumbest strategy — buy a slice of everything and never touch it — beats the vast majority of the smart money over time.",
+      "text": "the 'dumb' way wins",
+      "sub": "…and it's not close",
+      "icon": "turtle"
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "Let's run the numbers on why boring, lazy, and simple quietly destroys brilliant.",
+      "heading": "Why the Dumbest Investors Win",
+      "kicker": "boring beats brilliant",
+      "sub": "the case for doing nothing"
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "First, meet the people who are supposed to win: the smart money.",
+      "heading": "The Smart Money",
+      "kicker": "busy, brilliant, expensive"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "Most professionals practice active management — an approach where the investor hand-selects the investments that make up the portfolio, trying to beat the market.",
+      "sourceId": "wiki-active"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "This is the glamorous world of stock pickers, hedge funds, and star fund managers. Expensive suits, complex models, constant trading, and eye-watering fees for their supposed brilliance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "the stock-picking pros"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "It sounds obviously right. Surely these experts, with their data and their teams, must beat a mindless strategy that just buys everything? For decades, everyone assumed so.",
+      "pose": "think",
+      "bubble": "experts must win, right?"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "Then someone actually checked the scoreboard. The results were devastating.",
+      "heading": "The Scoreboard",
+      "kicker": "the data nobody wanted"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Study after study found the same brutal truth: over long periods, the large majority of active, professional funds fail to beat a simple market index. Most actually underperform it.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "most pros lose to the index"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And the pros look better than they are, thanks to survivorship bias. The funds that blow up quietly vanish and get forgotten — so the dismal track record you see is actually the flattering, cherry-picked version.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "shredder",
+          "label": "losers quietly vanish"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "callout",
+      "narration": "Over fifteen years, roughly ninety percent of active US stock funds underperform the simple index they're measured against. Nine out of ten geniuses — beaten by autopilot.",
+      "text": "~90% lose",
+      "sub": "to a dumb index, over 15 yrs",
+      "icon": "percent"
+    },
+    {
+      "id": "s60",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Active US funds that beat the index (%)",
+      "unit": "%",
+      "narration": "And it gets worse the longer you wait. Over a single year, maybe forty percent of active funds beat the index. Stretch it to fifteen years, and barely one in ten survives the comparison.",
+      "data": [
+        {
+          "label": "1 year",
+          "value": 40
+        },
+        {
+          "label": "10 years",
+          "value": 15
+        },
+        {
+          "label": "15 years",
+          "value": 10
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s13",
+      "type": "stage",
+      "narration": "Picture it as a race. The frantic 'genius' darts around, trading and guessing — while the boring index just plods straight uphill. Over time, the plodder wins, and wins big.",
+      "motif": "dumbvssmart",
+      "caption": "doing nothing beats doing lots"
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "And here's the real killer. Even if some manager will beat the index over the next twenty years, there is no reliable way to know which one in advance. Past winners mostly become future losers.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "dice",
+          "label": "can't pick the winner"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "So what exactly is this 'dumb' strategy beating everyone?",
+      "heading": "The Index Fund",
+      "kicker": "own everything, do nothing"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "It's the index fund — a fund that aims to replicate a market index by holding the same securities as the index, in the same proportions.",
+      "sourceId": "wiki-indexfund"
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "narration": "This is passive management — an investing strategy that simply tracks a market-weighted index, instead of trying to outguess it.",
+      "sourceId": "wiki-passive"
+    },
+    {
+      "id": "s17",
+      "type": "stage",
+      "narration": "Instead of betting on a few winners, you buy a tiny piece of all of them — hundreds or thousands of companies at once. You stop picking, and just own the whole market.",
+      "motif": "indexbasket",
+      "caption": "own everything, pick nothing"
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "Owning everything also quietly solves another problem: risk. When you hold the whole market, no single company blowing up can wipe you out. You never have to be right about any one bet.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "basket",
+          "label": "no single bet can sink you"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "image",
+      "src": "img/bogle.jpg",
+      "label": "JOHN BOGLE",
+      "caption": "gave ordinary people the index fund",
+      "narration": "The man who made this possible was John Bogle, founder of Vanguard. He's credited with popularizing the index fund — and handing ordinary people the single best tool in investing."
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "His radical idea in the 1970s was mocked as 'un-American' and 'guaranteed mediocrity.' Why settle for the market's average return? Because, it turns out, average is extraordinary.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "'average' quietly wins"
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "For decades, the mockery continued — until the money spoke. Around 2019, passive index funds quietly overtook active ones, and now manage a huge share of all the money in the market.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "passive overtook active"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "So why does the simple thing win? Reason one is the quiet killer: fees.",
+      "heading": "The Fee Drag",
+      "kicker": "a small cut, a huge cost"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Active managers charge a lot — often one or two percent of your money, every single year, win or lose. An index fund can charge almost nothing. That gap sounds tiny. It is not.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "1–2% a year vs ~0%"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "Because that small fee is skimmed every year, and it compounds. Over a lifetime, a two-percent fee can quietly eat a third or more of your entire final nest egg.",
+      "motif": "feedrag",
+      "caption": "small fees, enormous gap"
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "Make it concrete. Put a hundred thousand dollars away for thirty years. At a rock-bottom index fee, you keep almost all your gains. At a typical active fee, tens of thousands of your dollars silently vanish to the manager.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "tens of thousands, gone"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "So the active manager starts every year already losing — by the size of their fee. To beat the index, they don't just have to match it. They have to beat it by enough to cover their own cut, too.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bucket",
+          "label": "fees leak out every year"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "Worse, many 'active' funds are secretly 'closet indexers.' They quietly hug the index to avoid looking bad — then charge you a premium active fee for what is basically an index fund in disguise.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "magichat",
+          "label": "an index in disguise"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "Reason two: the market is just really, really hard to beat.",
+      "heading": "The Efficient Market",
+      "kicker": "the price already knows"
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "There's a famous idea here — the efficient-market hypothesis — which states that asset prices reflect all available information.",
+      "sourceId": "wiki-emh"
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "In plain terms: by the time you hear good news about a company, millions of sharp professionals already have, and the price has already moved. The 'obvious' winning trade is usually already gone.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "the price already knows"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "When you actively trade, you're not beating 'the market' — some faceless thing. You're betting against the fastest, best-funded professionals on Earth. It's a very uneven fight.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "you vs the pros"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "image",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "beat millions of pros, year after year",
+      "narration": "There's even a 'paradox of skill': the players got SO good that skill mostly cancels out, and luck decides the winners. Studies keep finding a blindfolded monkey throwing darts does about as well as the experts."
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "Reason three may be the biggest of all — and it lives inside your own head.",
+      "heading": "The Behavior Gap",
+      "kicker": "we are our own worst enemy"
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "This is the realm of behavioral economics — the study of how real human decisions deviate from the cold, rational theory.",
+      "sourceId": "wiki-behavioral"
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "Clever, engaged investors do the worst thing at the worst time. They buy when everyone's euphoric and prices are high — and panic-sell when everyone's terrified and prices are low.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "buy high, sell low"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "stage",
+      "narration": "The result is the 'behavior gap': the average investor earns noticeably less than the very funds they invest in — because they keep jumping in and out at exactly the wrong moments.",
+      "motif": "behaviorgap",
+      "caption": "what you earn vs what the market earns"
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "It also wrecks any attempt at timing. Miss just the ten best days in the market over a few decades — and those often strike right after a crash — and you can cut your lifetime returns roughly in half.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "clock",
+          "label": "miss 10 days, lose half"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "stage",
+      "narration": "The 'dumb' investor's superpower is that they do nothing. When the market crashes and the smart money panics, they just… keep holding. The hardest trade in the world is no trade at all.",
+      "motif": "donothing",
+      "caption": "the hardest trade is no trade"
+    },
+    {
+      "id": "s68",
+      "type": "character",
+      "narration": "Think of 2008, or the 2020 crash. The 'smart' money fled. The 'dumb' money gritted its teeth and held — and watched the market recover to new highs, while the clever sellers were still waiting to get back in.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "the holders got rich"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "frantically react to the news",
+      "memeBottom": "do absolutely nothing",
+      "narration": "Every instinct screams at you to act — to protect yourself, to be clever, to do something. In investing, that instinct is usually your enemy."
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "If you still don't believe the dumb way wins, consider the man widely called the greatest investor alive — and a bet he made.",
+      "heading": "The Buffett Bet",
+      "kicker": "a million-dollar proof"
+    },
+    {
+      "id": "s35",
+      "type": "image",
+      "src": "img/warren.jpg",
+      "label": "WARREN BUFFETT",
+      "caption": "bet $1M on the 'dumb' index",
+      "narration": "In 2007, Warren Buffett made a very public one-million-dollar bet. He wagered that a simple, cheap index fund would beat a hand-picked basket of elite hedge funds over ten years."
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "The hedge funds had the smartest people, the best tools, and total freedom to trade. The index fund had… nothing but patience and low fees. Guess who won.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "geniuses vs autopilot"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "callout",
+      "narration": "It wasn't even close. The boring index fund crushed the elite hedge funds. Buffett won the bet, and donated the winnings to charity.",
+      "text": "the index won",
+      "sub": "…by a landslide",
+      "icon": "trophy"
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "Buffett has said that when he dies, most of the money he leaves his family should simply go into a low-cost index fund. The world's greatest stock picker, telling you not to pick stocks.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "even Buffett says: index"
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "type": "timeline",
+      "title": "The rise of the 'dumb' index",
+      "narration": "The arc is remarkable. The first index fund launched in 1976 to ridicule. Buffett's bet landed in 2007. And by 2019, the mocked little idea had quietly taken over the whole market.",
+      "events": [
+        {
+          "year": "1976",
+          "label": "first index fund",
+          "icon": "blueprint"
+        },
+        {
+          "year": "2007",
+          "label": "the Buffett bet",
+          "icon": "handshake"
+        },
+        {
+          "year": "2019",
+          "label": "passive > active",
+          "icon": "trophy"
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s39",
+      "type": "title",
+      "narration": "So what does the winning 'dumb' playbook actually look like?",
+      "heading": "The Dumb Playbook",
+      "kicker": "boring on purpose"
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "Step one: buy a broad, low-cost index fund that owns the whole market. One fund, thousands of companies, almost no fees.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "basket",
+          "label": "buy the whole market"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "screenshot",
+      "narration": "Step two: invest a fixed amount on a regular schedule — a method called dollar-cost averaging, which aims to apply value-investing principles to regular investment.",
+      "sourceId": "wiki-dca"
+    },
+    {
+      "id": "s70",
+      "type": "character",
+      "narration": "A huge slice of the stock market's entire long-run return comes from one unglamorous thing: dividends, reinvested automatically. The index fund does that for you, quietly, without you lifting a finger.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "reinvested dividends"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "image",
+      "src": "img/graham.jpg",
+      "label": "BENJAMIN GRAHAM",
+      "caption": "coined dollar-cost averaging",
+      "narration": "That idea comes from Benjamin Graham, the father of value investing and Buffett's own teacher. Invest steadily, automatically, through good times and bad — and ignore the noise."
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "Step three — the hardest step: then do nothing. Don't check it daily. Don't panic in crashes. Don't chase hot tips. Just keep buying, and let the years do the heavy lifting.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "turtle",
+          "label": "then do nothing"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "screenshot",
+      "narration": "Because the real engine is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Given enough time, it becomes almost magical.",
+      "sourceId": "wiki-compound"
+    },
+    {
+      "id": "s71",
+      "type": "character",
+      "narration": "There's even a napkin shortcut: the rule of 72. Divide seventy-two by your yearly return to see how fast your money doubles. At the market's long-run average, it roughly doubles every decade or so.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "the rule of 72"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "That's the whole secret of the gas-station millionaire. He didn't pick brilliant stocks. He bought simple things, reinvested, and waited fifty years. Time, not genius, built the fortune.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "time did the work"
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "And the whole plan can fit on a napkin. Some people do it with a single total-market fund. Others use three. There is no complexity prize — simpler has literally been shown to win.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "basket",
+          "label": "a one-fund portfolio"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "title",
+      "narration": "So why is such a simple, proven strategy still so rare?",
+      "heading": "Why It's Rare",
+      "kicker": "simple isn't easy"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Partly because an entire industry profits from convincing you that you need their expertise, their trading, and their fees. 'Just buy an index and wait' is terrible for business.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bank",
+          "label": "nobody profits from 'do nothing'"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "And partly because it's emotionally brutal. Doing nothing feels passive and foolish, especially when markets are crashing or your friends are bragging about a hot stock. Boredom is the price of admission.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "boredom is the price"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "the market is crashing 30%",
+      "memeBottom": "the index investor, still holding",
+      "narration": "During a crash, doing nothing feels insane — like sitting in a burning room. But for the long-term index holder, the fire almost always passes, and the room is still standing."
+    },
+    {
+      "id": "s49",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "for almost everyone, boring index funds beat clever stock-picking",
+      "narration": "Simple is not the same as easy. The strategy is dead simple. Sticking to it, for decades, through fear and greed, is the genuinely hard part."
+    },
+    {
+      "id": "s74",
+      "type": "character",
+      "narration": "One honest caveat: the index is not magic. It falls hard in crashes, and it only works if you actually hold on and keep buying through the pain. The strategy is simple; surviving your own emotions is not.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "you must hold through pain"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "title",
+      "narration": "So let's total up the dumb genius.",
+      "heading": "The Final Math",
+      "kicker": "why lazy wins"
+    },
+    {
+      "id": "s51",
+      "type": "chalkboard",
+      "narration": "Active managers charge high fees and mostly lose. The market is too efficient to beat reliably. Our emotions make us buy high and sell low. So the lazy index, held for decades, quietly wins.",
+      "lines": [
+        "high fees → active money loses",
+        "efficient market → can't beat it",
+        "emotions → we sabotage ourselves",
+        "cheap + patient index → wins"
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "The lesson isn't that intelligence is useless. It's that in investing, temperament beats intellect. You don't need to be the smartest. You need to be the most patient, and the cheapest.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "turtle",
+          "label": "patience beats genius"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "So the 'dumbest' investor isn't dumb at all. They've just quietly understood something the geniuses keep forgetting: that the market rewards time in the seat, not cleverness in the head.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "hare",
+          "label": "the hare keeps losing"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "So the next time you're tempted to outsmart the market, remember the janitor, the bet, and the turtle. Fire the genius, buy the index, and go enjoy your life.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "keep it boring"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "If this gave you permission to stop stressing, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "turtle",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-active",
+      "name": "Active management (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Active_management",
+      "quote": "the investor selects the investments that make up the portfolio"
+    },
+    {
+      "id": "wiki-indexfund",
+      "name": "Index fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Index_fund",
+      "quote": "holding the same securities as the index in the same proportions"
+    },
+    {
+      "id": "wiki-passive",
+      "name": "Passive management (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Passive_management",
+      "quote": "an investing strategy that tracks a market-weighted index"
+    },
+    {
+      "id": "wiki-emh",
+      "name": "Efficient-market hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+      "quote": "asset prices reflect all available information"
+    },
+    {
+      "id": "wiki-behavioral",
+      "name": "Behavioral economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Behavioral_economics",
+      "quote": "how these decisions deviate from those implied by traditional economic theory"
+    },
+    {
+      "id": "wiki-dca",
+      "name": "Dollar cost averaging (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+      "quote": "aims to apply value investing principles to regular investment"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal sum and previously accumulated interest"
+    },
+    {
+      "id": "wiki-bogle",
+      "name": "John C. Bogle (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/John_C._Bogle",
+      "quote": "credited with popularizing the index fund"
+    },
+    {
+      "id": "wiki-graham",
+      "name": "Benjamin Graham (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Benjamin_Graham",
+      "quote": "father of value investing"
+    }
+  ],
+  "youtube": {
+    "title": "Why the Dumbest Investors Win",
+    "alts": [
+      "The 'Dumb' Strategy That Beats 90% of Wall Street",
+      "Why Doing Nothing Beats Smart Investing"
+    ],
+    "hook": "A gas-station attendant left $8 million. Meanwhile, armies of brilliant Wall Street pros lose to a strategy so simple it feels insulting: buy a cheap index fund and never touch it. This is why the dumbest investors win, by the numbers — why ~90% of active funds underperform a basic index over 15 years, how fees, the efficient market, and our own panic sabotage the 'smart money,' Warren Buffett's million-dollar bet that proved it, and the boring playbook anyone can follow. Fully cited.",
+    "bullets": [
+      "Why ~90% of active funds lose to a simple index over 15 years",
+      "The fee drag: how 2% a year quietly eats a third of your nest egg",
+      "The efficient market — why the 'obvious' trade is already gone",
+      "The behavior gap: how our emotions make us buy high and sell low",
+      "Warren Buffett's $1M bet: index fund vs elite hedge funds",
+      "The boring playbook: index, dollar-cost average, and do nothing"
+    ],
+    "tags": [
+      "why the dumbest investors win",
+      "index funds explained",
+      "passive investing",
+      "active vs passive",
+      "john bogle",
+      "warren buffett bet",
+      "behavior gap",
+      "dollar cost averaging",
+      "efficient market hypothesis",
+      "compound interest",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#investing",
+      "#indexfunds",
+      "#personalfinance",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "THE 'DUMB' WAY",
+      "hookBot": "BEATS WALL ST",
+      "napkinNumber": "90%",
+      "napkinSub": "of pros lose to it",
+      "deco": "turtle"
+    },
+    "chapters": [
+      [
+        "the dumbest strategy",
+        "The paradox"
+      ],
+      [
+        "the smart money",
+        "The smart money"
+      ],
+      [
+        "a simple market index",
+        "The scoreboard"
+      ],
+      [
+        "own the whole market",
+        "The index fund"
+      ],
+      [
+        "the quiet killer: fees",
+        "The fee drag"
+      ],
+      [
+        "inside your own head",
+        "The behavior gap"
+      ],
+      [
+        "a very public one-million-dollar bet",
+        "The Buffett bet"
+      ],
+      [
+        "patient, and the cheapest",
+        "The lesson"
+      ]
+    ]
+  }
+}

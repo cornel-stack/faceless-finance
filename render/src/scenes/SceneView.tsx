@@ -2646,6 +2646,85 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a slow drift away from the dollar</text>
       </svg>
     );
+  } else if (m === "dumbvssmart") {
+    // A boring straight-up index beats a frantic 'genius' trader.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const dumb = "M 90 400 L 300 330 L 520 250 L 740 170 L 880 130";
+    const smart = "M 90 400 L 180 350 L 260 400 L 360 300 L 460 384 L 560 310 L 680 360 L 820 300 L 880 294";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={430} x2={VW - 40} y2={430} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={smart} stroke={theme.inkSoft} strokeWidth={5} seed={9} />
+          <RPath d={dumb} stroke={green} strokeWidth={7} seed={3} />
+        </g>
+        {rev > 0.8 && <text x={818} y={112} fontSize={20} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">the "dumb" index</text>}
+        {rev > 0.5 && <text x={430} y={344} fontSize={19} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>frantic "genius"</text>}
+        <text x={VW / 2} y={492} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">doing nothing beats doing lots</text>
+      </svg>
+    );
+  } else if (m === "feedrag") {
+    // A small annual fee compounds into an enormous gap over time.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.2], [0, 1], clampBoth);
+    const gross = "M 90 410 L 300 320 L 520 220 L 740 120 L 880 80";
+    const net = "M 90 410 L 300 350 L 520 290 L 740 244 L 880 222";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={430} x2={VW - 40} y2={430} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={gross} stroke={green} strokeWidth={6} seed={3} />
+          <RPath d={net} stroke={red} strokeWidth={6} seed={5} />
+        </g>
+        {rev > 0.85 && <g><text x={812} y={66} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>no fees</text><text x={812} y={212} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>after 2% fees</text></g>}
+        <text x={VW / 2} y={490} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">small fees, enormous gap</text>
+      </svg>
+    );
+  } else if (m === "donothing") {
+    // A finger hovers over SELL during a panic — and never presses.
+    const reach = 0.5 + 0.5 * Math.sin(frame / 12);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 270)">
+          <rect x={-122} y={-62} width={244} height={124} rx={14} fill={red} stroke={ink} strokeWidth={6} />
+          <text y={14} fontSize={42} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">SELL!</text>
+        </g>
+        <circle cx={490} cy={128 + 22 * reach} r={26} fill={parch} stroke={ink} strokeWidth={4} />
+        <text x={490} y={450} fontSize={28} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">…don't.</text>
+        <text x={VW / 2} y={494} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the hardest trade is no trade</text>
+      </svg>
+    );
+  } else if (m === "indexbasket") {
+    // One basket quietly holds the entire market.
+    const fillA = interpolate(frame, [fps * 0.3, fps * 1.8], [0, 1], clampBoth);
+    const names = ["AAPL", "MSFT", "AMZN", "…+500"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 320)">
+          <path d="M-150 -40 L150 -40 L120 120 L-120 120 Z" fill={tan} stroke={ink} strokeWidth={6} />
+          <path d="M-150 -40 Q0 -92 150 -40" fill="none" stroke={ink} strokeWidth={6} />
+        </g>
+        {names.map((n, i) => { const op = interpolate(fillA, [i * 0.2, i * 0.2 + 0.3], [0, 1], clampBoth); return <g key={i} opacity={op} transform={`translate(${440 + (i % 2) * 100} ${270 + (i < 2 ? 0 : 56)})`}><rect x={-46} y={-18} width={92} height={34} rx={6} fill="#fff" stroke={ink} strokeWidth={3} /><text y={7} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{n}</text></g>; })}
+        <text x={VW / 2} y={478} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">own everything, pick nothing</text>
+      </svg>
+    );
+  } else if (m === "behaviorgap") {
+    // What investors actually earn falls short of the market itself.
+    const g = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={78} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what you earn vs what the market earns</text>
+        <RLine x1={120} y1={430} x2={VW - 120} y2={430} stroke={ink} strokeWidth={4} />
+        <rect x={300 - 70} y={430 - 260 * g} width={140} height={260 * g} fill={green} stroke={ink} strokeWidth={4} />
+        <text x={300} y={462} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>the market</text>
+        <rect x={680 - 70} y={430 - 150 * g} width={140} height={150 * g} fill={red} stroke={ink} strokeWidth={4} />
+        <text x={680} y={462} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>the investor</text>
+        {g > 0.9 && <text x={490} y={175} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the behavior gap</text>}
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

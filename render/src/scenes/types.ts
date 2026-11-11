@@ -140,7 +140,9 @@ export interface StageScene extends Base {
     // EP037 (why Japan is stuck) additions:
     | "nikkeipeak" | "agingpyramid" | "debtownedinside" | "richbutstuck" | "zombiefirms"
     // EP038 (the petrodollar) additions:
-    | "goldwindow" | "petrodealflow" | "dollarreserve" | "swiftweapon" | "dedollarize";
+    | "goldwindow" | "petrodealflow" | "dollarreserve" | "swiftweapon" | "dedollarize"
+    // EP039 (why the dumbest investors win) additions:
+    | "dumbvssmart" | "feedrag" | "donothing" | "indexbasket" | "behaviorgap";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

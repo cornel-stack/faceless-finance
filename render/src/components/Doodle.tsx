@@ -67,6 +67,8 @@ export type DoodleName =
   | "torii" | "bullettrain"
   // EP038 (the petrodollar) additions:
   | "pumpjack" | "crown"
+  // EP039 (why the dumbest investors win) additions:
+  | "turtle" | "hare"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1423,6 +1425,31 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M24 70 L24 40 L38 54 L50 34 L62 54 L76 40 L76 70 Z" fill={GOLD} strokeWidth={SW} />
           <RLine x1={24} y1={70} x2={76} y2={70} strokeWidth={SW} />
           <RCircle cx={50} cy={36} d={7} fill={RED} strokeWidth={1} />
+        </>
+      );
+
+    // ---- EP039 (why the dumbest investors win) doodles ----
+    case "turtle":
+      // Slow and steady — the 'dumb' buy-and-hold investor.
+      return (
+        <>
+          <RPath d="M26 60 Q52 26 78 60 Z" fill={GREEN} strokeWidth={SW} />
+          <RLine x1={26} y1={60} x2={78} y2={60} strokeWidth={SW} />
+          <RCircle cx={86} cy={54} d={14} fill={GREEN} strokeWidth={SW} />
+          <RLine x1={38} y1={60} x2={36} y2={72} strokeWidth={SW} />
+          <RLine x1={66} y1={60} x2={68} y2={72} strokeWidth={SW} />
+          <RPath d="M42 54 L52 44 L62 54" fill="none" strokeWidth={1.6} />
+        </>
+      );
+    case "hare":
+      // Fast but erratic — the frantic 'genius' trader.
+      return (
+        <>
+          <RCircle cx={48} cy={62} d={30} fill="#b0a89a" strokeWidth={SW} />
+          <RCircle cx={64} cy={48} d={18} fill="#b0a89a" strokeWidth={SW} />
+          <RPath d="M58 42 Q56 22 64 22 Q68 34 66 44 Z" fill="#b0a89a" strokeWidth={SW} />
+          <RPath d="M66 42 Q68 22 76 24 Q76 36 72 46 Z" fill="#b0a89a" strokeWidth={SW} />
+          <RCircle cx={70} cy={48} d={4} fill={INK} strokeWidth={0.5} />
         </>
       );
   }
