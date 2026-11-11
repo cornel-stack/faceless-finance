@@ -2,241 +2,219 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Some of the richest people alive drive old cars, wear the same gray T-shirt every day, and eat fast food for breakfast. They live like they're almost normal.",
+    "narration": "Getting rich is slow. It's decades of saving, boring index funds, and compounding you can barely feel happening. Getting poor, though, can be shockingly, terrifyingly fast.",
     "pose": "explain",
     "props": [
       {
-        "name": "car",
-        "label": "an old car"
+        "name": "hourglass",
+        "label": "rich = slow"
       },
       {
-        "name": "dining",
-        "label": "fast-food breakfast"
+        "name": "chartdown",
+        "label": "poor = fast"
       }
     ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "Meanwhile, on paper, many of them barely seem to earn anything at all. Some report less taxable income than a schoolteacher. And that is not an accident.",
+    "narration": "You can spend twenty years building a nest egg — and lose the whole thing in an afternoon. So today, let's do something a little dark, and map the fastest ways to get poor.",
     "pose": "think",
-    "bubble": "how do they earn so 'little'?"
+    "bubble": "how fast can it vanish?"
   },
   {
     "id": "s3",
     "type": "image",
-    "src": "img/memes/rollsafe.jpg",
-    "meme": "Roll Safe Think About It",
-    "memeTop": "can't be taxed on your income",
-    "memeBottom": "if you never take an income",
-    "narration": "Because there's a strange trick at the heart of modern wealth: the richer you are, the less you may need to officially 'earn.'"
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "'it's just one little bet'",
+    "memeBottom": "the account at $0",
+    "narration": "Not to be cruel — but because almost every fast route to broke shares the same hidden math. And once you see it, you can step around it."
   },
   {
     "id": "s4",
-    "type": "callout",
-    "narration": "One investigation found the twenty-five richest Americans paid a real tax rate, measured against their growing wealth, of only about three percent.",
-    "text": "~3%",
-    "sub": "the rich's 'true tax rate'",
-    "icon": "percent"
+    "type": "stage",
+    "narration": "Here's the asymmetry at the heart of it all. Wealth takes years of patient effort to build — and, with the right mistake, seconds to destroy.",
+    "motif": "slowfastwealth",
+    "caption": "slow to build, instant to destroy"
   },
   {
     "id": "s5",
-    "type": "character",
-    "narration": "The average worker, whose wages are taxed before they even hit the bank account, pays a far higher share. So how does that happen — legally?",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "paystub",
-        "label": "wages taxed at source"
-      }
-    ]
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "And a worker can't play the same game. Your salary is reported, withheld, and taxed before it reaches you — there is nowhere for it to hide.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "taxform",
-        "label": "nowhere to hide"
-      }
-    ]
+    "type": "callout",
+    "narration": "And the single common ingredient in the fastest wipeouts is this: a bad bet, made with borrowed money.",
+    "text": "bad odds + debt",
+    "sub": "the recipe for ruin",
+    "icon": "bomb"
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "Let's run the numbers on why the rich work so hard to look like they're not.",
-    "heading": "Why the Rich Pretend to Be Poor",
-    "kicker": "wealth hides in plain sight",
-    "sub": "assets, not income"
+    "narration": "So let's run the numbers on the quickest ways to turn a fortune into nothing.",
+    "heading": "The Fastest Way to Get Poor",
+    "kicker": "the data on going broke",
+    "sub": "bad odds, borrowed money"
   },
   {
     "id": "s7",
-    "type": "character",
-    "narration": "The whole thing rests on one distinction that most of us blur together every day: the difference between income and wealth.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "income vs wealth"
-      }
-    ]
-  },
-  {
-    "id": "s63",
-    "type": "character",
-    "narration": "You already know this at a small scale. Someone can own a paid-off house worth two million dollars and still earn a modest salary. Asset-rich, income-modest — same idea, smaller numbers.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "rich in what you own"
-      }
-    ]
+    "type": "title",
+    "narration": "Start with the classic: gambling. Because the math of gambling is pure, and it is merciless.",
+    "heading": "The Gambling Math",
+    "kicker": "the house always wins"
   },
   {
     "id": "s8",
-    "type": "screenshot",
-    "narration": "Income is the money that flows to you in a given period — a salary, a wage, the cash arriving this month.",
-    "sourceId": "wiki-income"
-  },
-  {
-    "id": "s9",
-    "type": "screenshot",
-    "narration": "Wealth is different. Your net worth is the current value of your assets, minus your debts — everything you own that has value.",
-    "sourceId": "wiki-wealth"
-  },
-  {
-    "id": "s10",
     "type": "character",
-    "narration": "Here's the key: our tax system is built mostly to tax income — the flow. It is very bad at taxing wealth — the pile that just sits there, quietly growing.",
+    "narration": "Every casino game, every sports bet, every spin is built with one feature: a house edge. On average, each dollar you wager is worth slightly less than a dollar the moment you place it.",
     "pose": "explain",
     "props": [
       {
-        "name": "coins",
-        "label": "we tax the flow…"
-      },
-      {
-        "name": "vault",
-        "label": "…not the pile"
+        "name": "dice",
+        "label": "a built-in house edge"
       }
     ]
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "narration": "Picture a simple coin-flip bet where the house pays you less than fair odds. Each flip, you expect to lose a few cents on the dollar. One flip is harmless. Ten thousand flips is a guarantee.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "dice",
+        "label": "a few cents lost per bet"
+      }
+    ]
+  },
+  {
+    "id": "s9",
+    "type": "stage",
+    "narration": "That's because every single bet quietly skims a cut for the house. Win or lose tonight, over enough spins, that edge grinds your money down.",
+    "motif": "housewins",
+    "caption": "every spin, the house takes a cut"
+  },
+  {
+    "id": "s62",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Roughly how much the house keeps",
+    "unit": "%",
+    "narration": "And the edge varies by game. Roulette quietly keeps a few cents on the dollar. Slot machines, more. The lottery is in a brutal league of its own.",
+    "data": [
+      {
+        "label": "roulette",
+        "value": 5
+      },
+      {
+        "label": "slots",
+        "value": 9
+      },
+      {
+        "label": "lottery",
+        "value": 50
+      }
+    ],
+    "highlight": 2
+  },
+  {
+    "id": "s10",
+    "type": "screenshot",
+    "narration": "There's even a mathematical name for your fate: gambler's ruin. A gambler playing a game with non-positive expected value will eventually go bankrupt — guaranteed.",
+    "sourceId": "wiki-gamblersruin"
   },
   {
     "id": "s11",
     "type": "stage",
-    "narration": "And the rich are not income-rich. They're asset-rich. Their fortune is a mountain of stock and property — while the salary they actually report can be almost nothing.",
-    "motif": "assetvsincome",
-    "caption": "tiny income, a mountain of assets"
+    "narration": "It doesn't matter how clever your system is. Bad odds plus enough time equals ruin. The only winning move is fewer bets, or none.",
+    "motif": "gamblersruin",
+    "caption": "bad odds + time = ruin, guaranteed"
   },
   {
-    "id": "s64",
-    "type": "compare",
-    "narration": "So picture the two numbers side by side. The income a billionaire reports can be almost nothing. The wealth they hold can be beyond imagining.",
-    "left": {
-      "title": "Reported income",
-      "value": "~a schoolteacher's",
-      "icon": "paystub"
-    },
-    "right": {
-      "title": "Actual wealth",
-      "value": "billions",
-      "icon": "goldbar"
-    }
-  },
-  {
-    "id": "s12",
+    "id": "s63",
     "type": "character",
-    "narration": "So step one of looking poor is simply: don't take a big salary. Many founders famously pay themselves one dollar a year.",
+    "narration": "And legal sports betting has poured gasoline on this. Tens of billions are now wagered every year through apps that live in your pocket and never, ever close.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "cheque",
-        "label": "a $1 salary"
+        "name": "phone",
+        "label": "betting, 24/7"
       }
     ]
   },
   {
-    "id": "s67",
+    "id": "s12",
     "type": "character",
-    "narration": "The one-dollar salary is almost a Silicon Valley tradition. Founders of Google, Oracle, and more have all done it. It signals humility — and it minimizes taxable income.",
+    "narration": "And modern phones have turned this into a weapon. Sports betting and casino apps are engineered, like slot machines, to keep you tapping — fast, frictionless, and always available at 3 a.m.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "briefcase",
-        "label": "a founder tradition"
+        "name": "slotmachine",
+        "label": "a casino in your pocket"
       }
     ]
   },
   {
     "id": "s13",
-    "type": "image",
-    "src": "img/zuckerberg.jpg",
-    "label": "MARK ZUCKERBERG",
-    "caption": "salary: $1 a year",
-    "narration": "Mark Zuckerberg takes a salary of one dollar. So does the head of more than one giant company. On an income tax form, a dollar is almost nothing to tax."
-  },
-  {
-    "id": "s65",
-    "type": "image",
-    "src": "img/bezos.jpg",
-    "label": "JEFF BEZOS",
-    "caption": "fortune lives in Amazon stock",
-    "narration": "Jeff Bezos built one of the largest fortunes on Earth, almost all of it in Amazon shares — not in a giant salary he had to pay tax on each year."
-  },
-  {
-    "id": "s66",
-    "type": "image",
-    "src": "img/musk.jpg",
-    "label": "ELON MUSK",
-    "caption": "paid in stock, not salary",
-    "narration": "Elon Musk's wealth is overwhelmingly Tesla and SpaceX stock. For years he took essentially no cash salary at all — the shares were always the point."
+    "type": "screenshot",
+    "narration": "For some, it tips into problem gambling — repetitive gambling behavior despite real harm and negative consequences. It's not a character flaw; it's a recognized disorder.",
+    "sourceId": "wiki-problemgambling"
   },
   {
     "id": "s14",
-    "type": "callout",
-    "narration": "A one-dollar salary isn't a sacrifice. When nearly all your wealth is stock, your paycheck was never where the money was.",
-    "text": "$1",
-    "sub": "salary — the money's elsewhere",
-    "icon": "cheque"
+    "type": "title",
+    "narration": "Which brings us to gambling's most socially acceptable cousin — and the worst odds of all.",
+    "heading": "The Lottery",
+    "kicker": "a tax on hope"
   },
   {
     "id": "s15",
+    "type": "screenshot",
+    "narration": "A lottery is simply a form of gambling that involves drawing numbers at random for a prize. Legal, cheerful, and mathematically brutal.",
+    "sourceId": "wiki-lottery"
+  },
+  {
+    "id": "s16",
+    "type": "callout",
+    "narration": "The odds of a big jackpot can be worse than one in three hundred million. You are far likelier to be struck by lightning — twice.",
+    "text": "1 in 300 million",
+    "sub": "the jackpot odds",
+    "icon": "warning"
+  },
+  {
+    "id": "s64",
     "type": "character",
-    "narration": "Because the real wealth is in shares they own. And here's the beautiful part, for them: simply owning something that goes up in value is not taxed at all.",
+    "narration": "To make one in three hundred million feel real: you could buy a ticket every single day for a million years and still, most likely, never hit the top prize.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "stock that keeps rising"
+        "name": "calendar",
+        "label": "a million years of tickets"
       }
     ]
   },
   {
-    "id": "s16",
-    "type": "screenshot",
-    "narration": "A capital gains tax is a tax on the profit realised on the sale of an asset. The key word is 'sale.' No sale, no tax.",
-    "sourceId": "wiki-cgt"
-  },
-  {
     "id": "s17",
-    "type": "stage",
-    "narration": "So while your stock balloons from a million to a billion, that gain is only on paper. It's an 'unrealized' gain — and the tax man cannot touch it until you sell.",
-    "motif": "unrealizedgains",
-    "caption": "not sold = not taxed"
-  },
-  {
-    "id": "s68",
     "type": "character",
-    "narration": "This is how someone becomes a billionaire without ever 'earning' a billion. The company's share price does the heavy lifting — all on paper, all untaxed, until the day they sell.",
+    "narration": "It's often called a tax on people who are bad at math. A dollar in buys, on average, far less than a dollar of expected prize. The rest funds the state, and the dream.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "the share price does the work"
+        "name": "cheque",
+        "label": "pay $1, get ~50¢ back"
+      }
+    ]
+  },
+  {
+    "id": "s65",
+    "type": "character",
+    "narration": "And lotteries hit hardest where it hurts most. Study after study shows lower-income households spend a far bigger share of their money on tickets — chasing an exit that almost never comes.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "a regressive bet"
       }
     ]
   },
@@ -245,487 +223,500 @@
     "type": "image",
     "src": "img/memes/twobuttons.jpg",
     "meme": "Two Buttons",
-    "memeTop": "sell stock and pay tax",
-    "memeBottom": "never sell, stay a 'poor' billionaire",
-    "narration": "Which creates an obvious problem for them. If selling triggers the tax, how do they get cash to actually live on?"
+    "memeTop": "invest $20 a week",
+    "memeBottom": "buy $20 of scratch tickets",
+    "narration": "Twenty dollars a week in lottery tickets feels like hope. The same twenty dollars invested for thirty years is a small fortune. Same money, opposite destiny."
   },
   {
     "id": "s19",
-    "type": "title",
-    "narration": "The answer is a quiet strategy with a blunt nickname — and it's where the money to live comes from.",
-    "heading": "Buy, Borrow, Die",
-    "kicker": "spending without selling"
+    "type": "character",
+    "narration": "And here's the cruel twist: even winning can wreck you. A striking share of big lottery winners end up bankrupt within a few years — because a windfall can't fix a leak in how you handle money.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "winners go broke too"
+      }
+    ]
+  },
+  {
+    "id": "s66",
+    "type": "image",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "won the lottery",
+    "memeBottom": "broke again in 5 years",
+    "narration": "A sudden windfall lands on the same habits that had no savings before. Without new habits, the money finds its way back out the door."
   },
   {
     "id": "s20",
-    "type": "character",
-    "narration": "Step one: buy. Acquire assets — stocks, companies, real estate — and simply hold them, letting the value grow, untaxed, for decades.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "goldbar",
-        "label": "buy & hold assets"
-      }
-    ]
-  },
-  {
-    "id": "s69",
-    "type": "character",
-    "narration": "Real estate adds its own magic. On paper, buildings 'lose' value each year through depreciation — creating paper losses that cancel out real income, even as the building actually rises in price.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "apartment",
-        "label": "paper losses, real gains"
-      }
-    ]
+    "type": "title",
+    "narration": "Now to a slower-looking killer that's just as deadly: high-interest debt.",
+    "heading": "The Debt Trap",
+    "kicker": "compounding in reverse"
   },
   {
     "id": "s21",
     "type": "character",
-    "narration": "Step two: borrow. Instead of selling stock and paying tax, they take out loans using that stock as collateral. And a loan is not income — so it isn't taxed.",
+    "narration": "Compound interest is the most powerful force in building wealth. The problem is, it works exactly as hard in the other direction — against you.",
     "pose": "explain",
     "props": [
       {
-        "name": "bank",
-        "label": "borrow against the stock"
-      }
-    ]
-  },
-  {
-    "id": "s70",
-    "type": "character",
-    "narration": "Banks even sell a product for exactly this: a securities-backed line of credit. Pledge your shares, receive cash to spend, and never sell a single one.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "creditcard",
-        "label": "borrow on your shares"
-      }
-    ]
-  },
-  {
-    "id": "s71",
-    "type": "character",
-    "narration": "Fund managers get their own door, called carried interest — a quirk that lets a big chunk of their pay be taxed at lower investment rates instead of ordinary income rates.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "the carried-interest door"
+        "name": "percent",
+        "label": "compounding cuts both ways"
       }
     ]
   },
   {
     "id": "s22",
-    "type": "callout",
-    "narration": "A billionaire can borrow millions to live on, at tiny interest rates, and legally owe almost nothing in tax on that cash — because borrowed money isn't earnings.",
-    "text": "tax-free cash",
-    "sub": "loans aren't income",
-    "icon": "iou"
-  },
-  {
-    "id": "s23",
-    "type": "character",
-    "narration": "Step three — the grim one: die. When assets pass to heirs, their taxable value is often reset to the current price, in a rule called the stepped-up basis.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "refinance",
-        "label": "heirs reset the clock"
-      }
-    ]
-  },
-  {
-    "id": "s24",
     "type": "screenshot",
-    "narration": "A high stepped-up basis can greatly reduce the heir's taxable gain. Decades of growth that was never taxed can effectively be wiped clean on death.",
-    "sourceId": "wiki-stepup"
+    "narration": "Compound interest is interest accumulated on a principal sum and on previously accumulated interest. On debt, that means interest piling onto interest.",
+    "sourceId": "wiki-compound"
   },
   {
-    "id": "s72",
+    "id": "s67",
     "type": "character",
-    "narration": "So the ultimate tax shelter is, bluntly, death. A lifetime of untaxed growth can pass to the next generation with the slate wiped nearly clean.",
+    "narration": "Here's the reverse-compounding example. Put a thousand dollars on a card at twenty-four percent and make only minimum payments, and you can end up paying back two or three times what you borrowed.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "refinance",
-        "label": "the final loophole"
+        "name": "creditcard",
+        "label": "pay back 2–3x"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "narration": "Credit card debt grows through the accrual of interest and penalties when you don't repay. At twenty-plus percent a year, a balance can snowball frighteningly fast.",
+    "sourceId": "wiki-ccdebt"
+  },
+  {
+    "id": "s68",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "$1,000 debt at ~24%, minimum payments",
+    "unit": "$",
+    "narration": "Watch a thousand-dollar balance you barely pay down. Year after year, interest piles on interest, and the amount you owe just keeps climbing.",
+    "data": [
+      {
+        "label": "start",
+        "value": 1000
+      },
+      {
+        "label": "yr 3",
+        "value": 1500
+      },
+      {
+        "label": "yr 6",
+        "value": 2200
+      }
+    ],
+    "highlight": 2
+  },
+  {
+    "id": "s24",
+    "type": "screenshot",
+    "narration": "But the true accelerant is the payday loan — a short-term unsecured loan characterized by very high interest rates, marketed to people with no other options.",
+    "sourceId": "wiki-payday"
+  },
+  {
+    "id": "s69",
+    "type": "character",
+    "narration": "Modern 'buy now, pay later' apps add a frictionless new twist: splitting purchases into easy installments that quietly stack up into debt you forgot you signed up for.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "phone",
+        "label": "'buy now, pay later'"
       }
     ]
   },
   {
     "id": "s25",
     "type": "stage",
-    "narration": "Put it together — buy, borrow, die — and you get a way to live like a king for a lifetime, pass on a fortune, and pay startlingly little tax along the way.",
-    "motif": "buyborrowdie",
-    "caption": "buy, borrow, die"
+    "narration": "A payday loan's rate, annualized, can reach four hundred percent or more. Borrow a little, and the debt balloons — trapping people in a cycle of re-borrowing just to pay the last loan.",
+    "motif": "aprballoon",
+    "caption": "high-interest debt compounds against you"
   },
   {
     "id": "s26",
-    "type": "screenshot",
-    "narration": "Crucially, most of this is tax avoidance — the legal use of the tax rules to reduce what you owe. It is not the same as illegal tax evasion.",
-    "sourceId": "wiki-avoid"
-  },
-  {
-    "id": "s73",
     "type": "callout",
-    "narration": "In certain years, reporters found, some of the very richest people legally paid zero dollars in federal income tax — while their fortunes still grew by billions.",
-    "text": "$0",
-    "sub": "federal income tax, some years",
-    "icon": "taxform"
+    "narration": "At four hundred percent a year, a small debt doesn't just grow — it detonates, often faster than any paycheck can keep up.",
+    "text": "400% APR",
+    "sub": "the payday-loan trap",
+    "icon": "bomb"
   },
   {
     "id": "s27",
-    "type": "image",
-    "src": "img/memes/brain4.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "earn a salary and get taxed",
-    "memeBottom": "own assets, borrow, and barely get taxed",
-    "narration": "It's all perfectly legal. The tax code simply treats a mountain of assets very differently from a monthly wage."
+    "type": "title",
+    "narration": "Now the fastest route of all — the one that turns a bad day into total ruin: leverage.",
+    "heading": "Leverage",
+    "kicker": "borrowing to bet"
   },
   {
     "id": "s28",
-    "type": "title",
-    "narration": "But low taxes are only half the story. The other half is a performance — and some of it is completely real.",
-    "heading": "The Frugal Flex",
-    "kicker": "why they actually live modestly"
+    "type": "screenshot",
+    "narration": "Leverage, in finance, is any technique involving borrowing funds to buy an investment. It multiplies your gains — and, far more dangerously, your losses.",
+    "sourceId": "wiki-leverage"
   },
   {
     "id": "s29",
     "type": "character",
-    "narration": "Because here's the twist: many of the most famous billionaires genuinely do actually live modestly. It isn't all an act.",
+    "narration": "Here's the trap. If you buy a stock with your own cash and it drops ten percent, you're down ten percent. Painful, but survivable.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "a modest house"
+        "name": "chartdown",
+        "label": "−10% on your cash"
       }
     ]
   },
   {
     "id": "s30",
-    "type": "image",
-    "src": "img/warren.jpg",
-    "label": "WARREN BUFFETT",
-    "caption": "~$149B — still in his 1958 house",
-    "narration": "Take Warren Buffett, worth over a hundred billion dollars. He still lives in the modest house he bought in 1958, and famously grabs a cheap McDonald's breakfast."
+    "type": "stage",
+    "narration": "But borrow nine dollars for every one of your own — ten times leverage — and that same ten percent dip doesn't dent you. It erases you. Your entire stake is gone.",
+    "motif": "leveragewipeout",
+    "caption": "a 10% dip, a 100% loss"
+  },
+  {
+    "id": "s70",
+    "type": "character",
+    "narration": "This isn't new. In the 1920s, people bought stocks with as little as ten percent of their own money. When prices fell, the margin calls cascaded — and helped turn a crash into the Great Depression.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "1929: bought on margin"
+      }
+    ]
   },
   {
     "id": "s31",
     "type": "screenshot",
-    "narration": "Buffett is one of the best-known investors in the world — and a walking advertisement for spending far, far less than you could.",
-    "sourceId": "wiki-buffett"
+    "narration": "That's the mechanism of margin — collateral you post to borrow and trade. When the trade moves against you, the broker can force a sale at the worst possible moment.",
+    "sourceId": "wiki-margin"
   },
   {
-    "id": "s74",
+    "id": "s71",
     "type": "character",
-    "narration": "Buffett has also pledged to give almost all his wealth away. That's genuinely generous — and, not coincidentally, one of the most tax-efficient moves a billionaire can make.",
+    "narration": "And it still happens at the top. In 2021, a secretive fund called Archegos used enormous hidden leverage — and imploded in days, erasing something like twenty billion dollars almost overnight.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "handshake",
-        "label": "giving = tax-smart too"
+        "name": "bomb",
+        "label": "Archegos: ~$20B in days"
       }
     ]
   },
   {
     "id": "s32",
-    "type": "image",
-    "src": "img/samwalton.jpg",
-    "label": "SAM WALTON",
-    "caption": "richest man in America — drove a pickup",
-    "narration": "Sam Walton, who built Walmart into a giant, drove a battered old pickup truck — even when he was the richest man in America."
+    "type": "character",
+    "narration": "It's called a margin call. The market dips, your collateral isn't enough, and your position is liquidated automatically — locking in the loss before you can even react.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "the margin call"
+      }
+    ]
   },
   {
     "id": "s33",
-    "type": "stage",
-    "narration": "That's the frugal flex. Behind a twenty-year-old car and a plain T-shirt sits a fortune most people can't even picture.",
-    "motif": "frugalflex",
-    "caption": "…drives a 20-year-old car"
+    "type": "image",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "survive a 10% dip at 10x leverage",
+    "narration": "Leverage is why people lose more than everything they had — ending a trade not at zero, but in debt."
   },
   {
     "id": "s34",
-    "type": "image",
-    "src": "img/kamprad.jpg",
-    "label": "INGVAR KAMPRAD",
-    "caption": "IKEA founder — flew economy, old Volvo",
-    "narration": "Ingvar Kamprad, the founder of IKEA, reportedly flew economy class, drove an old Volvo for years, and furnished his home with — what else — IKEA."
-  },
-  {
-    "id": "s75",
-    "type": "image",
-    "src": "img/jobs.jpg",
-    "label": "STEVE JOBS",
-    "caption": "Apple salary: $1",
-    "narration": "Steve Jobs famously took a one-dollar salary at Apple for years. The paycheck was a rounding error; his Apple and Pixar stock was the real fortune."
+    "type": "title",
+    "narration": "Leverage's flashy modern cousins deserve their own warning: speculation dressed up as investing.",
+    "heading": "Speculation",
+    "kicker": "get-rich-quick = get-poor-quick"
   },
   {
     "id": "s35",
+    "type": "screenshot",
+    "narration": "Day trading is a form of speculation in securities, buying and selling within a single day. It looks like a job. For the overwhelming majority, it's a slow bleed.",
+    "sourceId": "wiki-daytrading"
+  },
+  {
+    "id": "s72",
     "type": "character",
-    "narration": "For some, it's genuine habit — thrift that helped them get rich in the first place. Frugality is simply the avoidance of waste and extravagance.",
+    "narration": "The recent boom made it worse. Easy apps turned millions of people into day traders overnight, many of them trading options — essentially leveraged bets on short-term price moves.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "real lifelong thrift"
+        "name": "phone",
+        "label": "everyone a day trader"
       }
     ]
   },
   {
     "id": "s36",
-    "type": "screenshot",
-    "narration": "That's the dictionary definition — the avoidance of waste, extravagance, and lavishness. For some billionaires, it's a sincere value.",
-    "sourceId": "wiki-frugality"
+    "type": "callout",
+    "narration": "Study after study finds the same thing: the vast majority of active day traders lose money over time. Only a tiny fraction consistently beat simply holding the market.",
+    "text": "most lose money",
+    "sub": "the day-trading reality",
+    "icon": "chartdown"
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "But let's be honest — it's also, conveniently, a brilliant strategy. Because looking poor buys a billionaire several very valuable things.",
+    "narration": "Then there are the manias: meme stocks, options bets, and crypto coins flipped like casino chips. The stories you hear are the winners. The silent majority quietly got wiped out.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "magichat",
-        "label": "modesty pays off"
+        "name": "token",
+        "label": "survivorship bias"
       }
     ]
   },
   {
-    "id": "s76",
+    "id": "s73",
+    "type": "image",
+    "src": "img/livermore.jpg",
+    "label": "JESSE LIVERMORE",
+    "caption": "made & lost fortunes on leverage",
+    "narration": "History is full of cautionary tales. Jesse Livermore was perhaps the most famous speculator who ever lived — and he made, and then lost, several enormous fortunes trading on leverage."
+  },
+  {
+    "id": "s74",
     "type": "character",
-    "narration": "There's even a name for the fashionable version of this now — 'stealth wealth,' or quiet luxury. No loud logos. The flex is that you no longer need to flex at all.",
+    "narration": "That's the pattern with pure speculation: the wins are loud and the losses are silent. You hear about the one person who tripled their money, never the ten behind them who were quietly wiped out.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "magichat",
-        "label": "'stealth wealth'"
+        "name": "crowd",
+        "label": "you only hear the winners"
       }
     ]
   },
   {
     "id": "s38",
-    "type": "title",
-    "narration": "So why would a billionaire actively want to look like they're not? There are at least four reasons.",
-    "heading": "Why Pretend?",
-    "kicker": "what looking poor buys you"
+    "type": "image",
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "put my savings in a hot tip",
+    "memeBottom": "watch it go to zero",
+    "narration": "Every get-rich-quick scheme is, statistically, a get-poor-quick scheme wearing a disguise. The quicker the promised riches, the faster the likely ruin."
   },
   {
     "id": "s39",
+    "type": "title",
+    "narration": "And finally, the quietest wealth-killer of all — the one that doesn't feel like a mistake at all.",
+    "heading": "The Slow Leak",
+    "kicker": "lifestyle creep"
+  },
+  {
+    "id": "s40",
+    "type": "screenshot",
+    "narration": "Lifestyle creep is when, as you earn more, former luxuries quietly become perceived necessities. The raise arrives, and the spending rises to swallow it.",
+    "sourceId": "wiki-lifestyle"
+  },
+  {
+    "id": "s41",
     "type": "character",
-    "narration": "Reason one: taxes and scrutiny. The less visible income you have, and the quieter you are about your wealth, the less attention you attract from tax authorities and the public.",
+    "narration": "This is how people earning very good money still end up with nothing saved. It's not one disaster — it's a thousand small upgrades that leave no gap between income and spending.",
     "pose": "explain",
     "props": [
       {
-        "name": "taxform",
-        "label": "stay off the radar"
+        "name": "dining",
+        "label": "spending eats the raise"
       }
     ]
   },
   {
-    "id": "s40",
+    "id": "s42",
     "type": "character",
-    "narration": "Reason two: envy and safety. Flaunting billions invites resentment, lawsuits, con artists, even kidnapping threats. Blending in is a form of security.",
+    "narration": "It won't make you poor overnight like leverage will. But over a career, lifestyle creep can quietly ensure you never build any wealth at all — a slow puncture instead of a blowout.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "padlock",
-        "label": "don't paint a target"
+        "name": "bucket",
+        "label": "a slow, steady leak"
+      }
+    ]
+  },
+  {
+    "id": "s75",
+    "type": "character",
+    "narration": "Psychologists call the engine behind it hedonic adaptation. Every upgrade feels amazing for a month, then becomes the new normal — so you reach for the next one, and the gap never closes.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "dining",
+        "label": "the upgrade treadmill"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "title",
+    "narration": "So step back. What do all these fast roads to broke actually have in common?",
+    "heading": "The Common Thread",
+    "kicker": "why they're all fast"
+  },
+  {
+    "id": "s44",
+    "type": "character",
+    "narration": "Thread one: negative expected value. Gambling, the lottery, most short-term trading — on average, each play is designed to lose. Repeat a losing bet enough, and ruin is just math.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "dice",
+        "label": "the odds are against you"
+      }
+    ]
+  },
+  {
+    "id": "s76",
+    "type": "compare",
+    "narration": "So compare the two engines directly. A casino is built to bleed you a little on every play. The broad market, historically, has drifted the other way — paying owners over time.",
+    "left": {
+      "title": "The casino",
+      "value": "edge against you",
+      "icon": "dice"
+    },
+    "right": {
+      "title": "Owning the market",
+      "value": "drift for you",
+      "icon": "chartup"
+    }
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "Thread two: leverage. Borrowed money removes your safety net. It turns a survivable setback into a total, unrecoverable wipeout.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bank",
+        "label": "debt removes the net"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "Thread three: speed and emotion. Fast, 24/7, one-tap access — to bets, to loans, to trades — strips out the pause where common sense would normally step in.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "phone",
+        "label": "no time to think"
       }
     ]
   },
   {
     "id": "s77",
     "type": "character",
-    "narration": "This is a real concern, not just vanity. Visible, flaunted wealth genuinely does attract lawsuits, scams, and security threats to a family. Blending in can be simple self-defense.",
+    "narration": "This is why the single most profitable habit in finance is often just… waiting. A built-in pause — sleeping on any big money decision — defuses most fast disasters before they start.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "shield",
-        "label": "a security strategy"
+        "name": "hourglass",
+        "label": "sleep on it"
       }
     ]
   },
   {
-    "id": "s41",
+    "id": "s47",
     "type": "image",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeTop": "the public's sympathy",
-    "memeBottom": "a billionaire in a $10 T-shirt",
-    "narration": "Reason three: image. 'Relatable' billionaires get admiration instead of anger. A plain T-shirt is surprisingly good public relations."
+    "src": "img/memes/brain4.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "a slow, boring index fund",
+    "memeBottom": "a thrilling leveraged bet to zero",
+    "narration": "The thrill is the warning sign. If a money move feels exciting and urgent, it's usually optimized for someone else's profit — not yours."
   },
   {
-    "id": "s42",
+    "id": "s48",
+    "type": "title",
+    "narration": "So let's flip it around — because avoiding poor is mostly about not doing a short list of things.",
+    "heading": "How Not to Get Poor",
+    "kicker": "the boring playbook"
+  },
+  {
+    "id": "s49",
     "type": "character",
-    "narration": "Reason four: focus and brand. 'I don't care about money, I care about the mission' is a powerful story — for customers, employees, and investors alike.",
-    "pose": "explain",
+    "narration": "Rule one: never bet with money you can't afford to lose, and never, ever add leverage to a bet. Borrowed money and gambling are the single most dangerous combination in finance.",
+    "pose": "present",
     "props": [
       {
-        "name": "trophy",
-        "label": "'it's about the mission'"
+        "name": "shield",
+        "label": "no leverage on bets"
+      }
+    ]
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "Rule two: treat high-interest debt like a fire. Payday loans and lingering credit card balances compound against you — kill them first, before you do anything else.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "creditcard",
+        "label": "kill high-interest debt"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "Rule three: choose positive expected value, and let time do the work. Owning the whole market has, historically, drifted upward — the exact opposite of the casino's edge.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "put the odds on your side"
       }
     ]
   },
   {
     "id": "s78",
     "type": "character",
-    "narration": "And the daily uniform — the hoodie, the gray tee, the black turtleneck — is half convenience and half branding. It quietly says: I'm not doing this for the money.",
-    "pose": "explain",
+    "narration": "Build one boring thing first: an emergency fund. A few months of expenses in cash is what stops a bad week from ever becoming a payday loan or a forced, panicked sale.",
+    "pose": "present",
     "props": [
       {
-        "name": "trophy",
-        "label": "the uniform as branding"
-      }
-    ]
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "So the humble image and the low tax bill reinforce each other. One looks like virtue; the other quietly saves a fortune. Both point the same way: look smaller than you are.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "mansion",
-        "label": "small look, huge reality"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "title",
-    "narration": "Which raises the uncomfortable question — if the rich pay so little, who actually pays?",
-    "heading": "Who Pays?",
-    "kicker": "the visible vs the invisible"
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "The answer is: people whose money is income, not assets. If your wealth is a paycheck, it's fully visible, and it's taxed before you ever see it.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "paystub",
-        "label": "wages: fully taxed"
-      }
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "stage",
-    "narration": "That's the real gap. A nurse or an engineer can easily pay a higher share of their yearly gains than someone worth a thousand times more.",
-    "motif": "truetaxrate",
-    "caption": "the 'true tax rate'"
-  },
-  {
-    "id": "s79",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Share of yearly gains paid in tax",
-    "unit": "%",
-    "narration": "Stack it up. A typical worker can hand over roughly a quarter to a third of what they make. The ultra-wealthy, measured against their rising fortune, can pay just a few percent.",
-    "data": [
-      {
-        "label": "worker",
-        "value": 30
-      },
-      {
-        "label": "the rich",
-        "value": 3
-      }
-    ],
-    "highlight": 1
-  },
-  {
-    "id": "s47",
-    "type": "screenshot",
-    "narration": "This is exactly what investigative journalists uncovered — a nonprofit newsroom obtained tax data showing how little the ultra-wealthy really paid.",
-    "sourceId": "wiki-propublica"
-  },
-  {
-    "id": "s80",
-    "type": "character",
-    "narration": "The data told a consistent story: the more of your wealth sits in assets rather than wages, the lower your real tax rate tends to fall. It flips what most people assume.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "the pattern was clear"
-      }
-    ]
-  },
-  {
-    "id": "s48",
-    "type": "image",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "the tax code: tax income heavily",
-    "memeBottom": "the rich: so I'll just have no income",
-    "narration": "The system taxes what workers have — income — and barely touches what the rich have — assets. It's not a glitch. It's the design."
-  },
-  {
-    "id": "s49",
-    "type": "callout",
-    "narration": "A billionaire is simply someone whose net worth is at least a thousand million. Notice the word: net worth. Not income.",
-    "text": "$1 billion",
-    "sub": "net worth — not income",
-    "icon": "moneybag"
-  },
-  {
-    "id": "s81",
-    "type": "character",
-    "narration": "And it's always been this way. The first billionaire, oil baron John D. Rockefeller, hit the mark back in 1916 — and even then, the fortune was in oil and shares, not a salary.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "oilbarrel",
-        "label": "rich in assets since 1916"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "title",
-    "narration": "So what's the lesson hiding inside all of this?",
-    "heading": "The Lesson",
-    "kicker": "stop watching the salary"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "The big one is this: income is a terrible measure of how rich someone truly is. The wealthiest people on Earth can have, on paper, almost no income at all.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "income ≠ wealth"
+        "name": "shield",
+        "label": "an emergency fund"
       }
     ]
   },
   {
     "id": "s52",
     "type": "character",
-    "narration": "So when a headline says someone 'only earned' a modest sum, that may be completely true — and completely beside the point. Watch the assets, not the salary.",
-    "pose": "explain",
+    "narration": "And rule four: when you earn more, bank the difference before your lifestyle notices. Quietly widening the gap between income and spending is how ordinary people actually get rich.",
+    "pose": "present",
     "props": [
       {
-        "name": "chartup",
-        "label": "watch what they OWN"
+        "name": "piggybank",
+        "label": "bank the raise"
       }
     ]
   },
   {
-    "id": "s82",
+    "id": "s79",
     "type": "character",
-    "narration": "So train yourself to ask a different question. Not 'what do they earn?' but 'what do they own, and what is it worth?' That's where the real wealth always hides.",
+    "narration": "And automate it. Money that moves into savings and investments the day you're paid can't be quietly spent — you've removed the decision, and the temptation, entirely.",
     "pose": "present",
     "props": [
       {
-        "name": "vault",
-        "label": "ask what they OWN"
+        "name": "piggybank",
+        "label": "automate the saving"
       }
     ]
   },
@@ -734,114 +725,73 @@
     "type": "image",
     "src": "img/memes/changemymind.jpg",
     "meme": "Change My Mind",
-    "memeBottom": "being 'low income' and being poor are not the same thing",
-    "narration": "Low income and low wealth are two completely different things. The rich have learned to show you the first while quietly keeping the second."
+    "memeBottom": "boring, slow, and diversified beats fast, thrilling, and leveraged",
+    "narration": "Building wealth is supposed to be boring. If it feels like a casino, you're probably playing one."
   },
   {
     "id": "s54",
-    "type": "character",
-    "narration": "And there's a fair point buried in here too. Taxing assets that only exist on paper is genuinely hard, and can have real side effects. This isn't a simple story of villains.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "gauge",
-        "label": "it's genuinely tricky"
-      }
-    ]
-  },
-  {
-    "id": "s83",
-    "type": "character",
-    "narration": "Some countries have tried a direct wealth tax — an annual levy on net worth itself. Many have quietly dropped it: the wealthy are mobile, and assets are genuinely slippery to value.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "globe",
-        "label": "wealth taxes are hard"
-      }
-    ]
+    "type": "title",
+    "narration": "So let's total up the fast lanes to broke.",
+    "heading": "The Final Math",
+    "kicker": "how fortunes vanish"
   },
   {
     "id": "s55",
-    "type": "character",
-    "narration": "But understanding the game changes how you read the world — and your own money. Most ordinary wealth is built the same quiet way: owning assets, not chasing a bigger paycheck.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "own assets, quietly"
-      }
-    ]
-  },
-  {
-    "id": "s84",
-    "type": "character",
-    "narration": "And the honest takeaway isn't just envy. The same engine works, in miniature, for anyone: real wealth is built by owning assets that grow — not by chasing a slightly bigger paycheck.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "own assets, patiently"
-      }
+    "type": "chalkboard",
+    "narration": "Gambling and lotteries guarantee loss over time. High-interest debt compounds against you. Leverage turns a dip into a wipeout. And lifestyle creep quietly leaks it all away.",
+    "lines": [
+      "gambling & lottery → negative odds",
+      "high-interest debt → compounds on you",
+      "leverage → a dip becomes a wipeout",
+      "lifestyle creep → the silent leak"
     ]
   },
   {
     "id": "s56",
-    "type": "title",
-    "narration": "So let's total up the trick.",
-    "heading": "The Final Math",
-    "kicker": "how to be rich and look poor"
+    "type": "stage",
+    "narration": "Every one of them is just a different way of putting bad odds, borrowed money, or both, between you and your future. Remove those, and 'getting poor fast' gets surprisingly hard to do.",
+    "motif": "slowfastwealth",
+    "caption": "slow to build, instant to destroy"
   },
   {
     "id": "s57",
-    "type": "chalkboard",
-    "narration": "Take a tiny salary, so there's little income to tax. Hold assets that grow untaxed. Borrow against them for tax-free cash. And live modestly, so nobody asks questions.",
-    "lines": [
-      "tiny salary → little taxed income",
-      "hold assets → untaxed growth",
-      "borrow → tax-free spending",
-      "live modestly → no scrutiny"
+    "type": "character",
+    "narration": "Because the house, the lender, and the app all profit from your speed. Your single greatest defense is the willingness to be slow, boring, and patient instead.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "slow is the cheat code"
+      }
     ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "It is, when you see it laid out, almost elegant. The rich aren't really pretending to be poor. They're hiding how the money actually works.",
-    "pose": "explain",
+    "narration": "So the next time something promises to make you rich fast, remember the math — and ask who's really getting rich off your hurry.",
+    "pose": "present",
     "props": [
       {
-        "name": "magichat",
-        "label": "the real sleight of hand"
+        "name": "calculator",
+        "label": "always check the odds"
       }
     ]
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "So the next time you see a billionaire in a cheap T-shirt climbing out of an old car, smile — and remember the mountain of quiet, untaxed assets parked just out of frame.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "pickuptruck",
-        "label": "the humble flex"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "narration": "If this changed how you read 'rich,' hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this helped you dodge a fast road to broke, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "coins",
+        "name": "shield",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s61",
+    "id": "s60",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

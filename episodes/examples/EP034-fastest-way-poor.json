@@ -1,0 +1,968 @@
+{
+  "id": "EP034",
+  "series": "Napkin Numbers",
+  "title": "The Fastest Way to Get Poor (the Data)",
+  "slug": "the-fastest-way-to-get-poor",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP034 — explainer (By the Numbers, row 23). The math of destroying wealth fast: gambler's ruin, the house edge, the lottery, high-interest debt, leverage/margin, day trading, and lifestyle creep — vs the slow boring way to build it. 5 new motifs (leveragewipeout, gamblersruin, aprballoon, housewins, slowfastwealth) + doodles (dice, slotmachine). Target 12–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Getting rich is slow. It's decades of saving, boring index funds, and compounding you can barely feel happening. Getting poor, though, can be shockingly, terrifyingly fast.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "rich = slow"
+        },
+        {
+          "name": "chartdown",
+          "label": "poor = fast"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "You can spend twenty years building a nest egg — and lose the whole thing in an afternoon. So today, let's do something a little dark, and map the fastest ways to get poor.",
+      "pose": "think",
+      "bubble": "how fast can it vanish?"
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "'it's just one little bet'",
+      "memeBottom": "the account at $0",
+      "narration": "Not to be cruel — but because almost every fast route to broke shares the same hidden math. And once you see it, you can step around it."
+    },
+    {
+      "id": "s4",
+      "type": "stage",
+      "narration": "Here's the asymmetry at the heart of it all. Wealth takes years of patient effort to build — and, with the right mistake, seconds to destroy.",
+      "motif": "slowfastwealth",
+      "caption": "slow to build, instant to destroy"
+    },
+    {
+      "id": "s5",
+      "type": "callout",
+      "narration": "And the single common ingredient in the fastest wipeouts is this: a bad bet, made with borrowed money.",
+      "text": "bad odds + debt",
+      "sub": "the recipe for ruin",
+      "icon": "bomb"
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "So let's run the numbers on the quickest ways to turn a fortune into nothing.",
+      "heading": "The Fastest Way to Get Poor",
+      "kicker": "the data on going broke",
+      "sub": "bad odds, borrowed money"
+    },
+    {
+      "id": "s7",
+      "type": "title",
+      "narration": "Start with the classic: gambling. Because the math of gambling is pure, and it is merciless.",
+      "heading": "The Gambling Math",
+      "kicker": "the house always wins"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "Every casino game, every sports bet, every spin is built with one feature: a house edge. On average, each dollar you wager is worth slightly less than a dollar the moment you place it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dice",
+          "label": "a built-in house edge"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "Picture a simple coin-flip bet where the house pays you less than fair odds. Each flip, you expect to lose a few cents on the dollar. One flip is harmless. Ten thousand flips is a guarantee.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dice",
+          "label": "a few cents lost per bet"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "That's because every single bet quietly skims a cut for the house. Win or lose tonight, over enough spins, that edge grinds your money down.",
+      "motif": "housewins",
+      "caption": "every spin, the house takes a cut"
+    },
+    {
+      "id": "s62",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Roughly how much the house keeps",
+      "unit": "%",
+      "narration": "And the edge varies by game. Roulette quietly keeps a few cents on the dollar. Slot machines, more. The lottery is in a brutal league of its own.",
+      "data": [
+        {
+          "label": "roulette",
+          "value": 5
+        },
+        {
+          "label": "slots",
+          "value": 9
+        },
+        {
+          "label": "lottery",
+          "value": 50
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "narration": "There's even a mathematical name for your fate: gambler's ruin. A gambler playing a game with non-positive expected value will eventually go bankrupt — guaranteed.",
+      "sourceId": "wiki-gamblersruin"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "It doesn't matter how clever your system is. Bad odds plus enough time equals ruin. The only winning move is fewer bets, or none.",
+      "motif": "gamblersruin",
+      "caption": "bad odds + time = ruin, guaranteed"
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "And legal sports betting has poured gasoline on this. Tens of billions are now wagered every year through apps that live in your pocket and never, ever close.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "phone",
+          "label": "betting, 24/7"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "And modern phones have turned this into a weapon. Sports betting and casino apps are engineered, like slot machines, to keep you tapping — fast, frictionless, and always available at 3 a.m.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "slotmachine",
+          "label": "a casino in your pocket"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "screenshot",
+      "narration": "For some, it tips into problem gambling — repetitive gambling behavior despite real harm and negative consequences. It's not a character flaw; it's a recognized disorder.",
+      "sourceId": "wiki-problemgambling"
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Which brings us to gambling's most socially acceptable cousin — and the worst odds of all.",
+      "heading": "The Lottery",
+      "kicker": "a tax on hope"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "A lottery is simply a form of gambling that involves drawing numbers at random for a prize. Legal, cheerful, and mathematically brutal.",
+      "sourceId": "wiki-lottery"
+    },
+    {
+      "id": "s16",
+      "type": "callout",
+      "narration": "The odds of a big jackpot can be worse than one in three hundred million. You are far likelier to be struck by lightning — twice.",
+      "text": "1 in 300 million",
+      "sub": "the jackpot odds",
+      "icon": "warning"
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "To make one in three hundred million feel real: you could buy a ticket every single day for a million years and still, most likely, never hit the top prize.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "a million years of tickets"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "It's often called a tax on people who are bad at math. A dollar in buys, on average, far less than a dollar of expected prize. The rest funds the state, and the dream.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "cheque",
+          "label": "pay $1, get ~50¢ back"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "And lotteries hit hardest where it hurts most. Study after study shows lower-income households spend a far bigger share of their money on tickets — chasing an exit that almost never comes.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "a regressive bet"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "invest $20 a week",
+      "memeBottom": "buy $20 of scratch tickets",
+      "narration": "Twenty dollars a week in lottery tickets feels like hope. The same twenty dollars invested for thirty years is a small fortune. Same money, opposite destiny."
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "And here's the cruel twist: even winning can wreck you. A striking share of big lottery winners end up bankrupt within a few years — because a windfall can't fix a leak in how you handle money.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "winners go broke too"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "image",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "won the lottery",
+      "memeBottom": "broke again in 5 years",
+      "narration": "A sudden windfall lands on the same habits that had no savings before. Without new habits, the money finds its way back out the door."
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "Now to a slower-looking killer that's just as deadly: high-interest debt.",
+      "heading": "The Debt Trap",
+      "kicker": "compounding in reverse"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Compound interest is the most powerful force in building wealth. The problem is, it works exactly as hard in the other direction — against you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "compounding cuts both ways"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "Compound interest is interest accumulated on a principal sum and on previously accumulated interest. On debt, that means interest piling onto interest.",
+      "sourceId": "wiki-compound"
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "Here's the reverse-compounding example. Put a thousand dollars on a card at twenty-four percent and make only minimum payments, and you can end up paying back two or three times what you borrowed.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "pay back 2–3x"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "Credit card debt grows through the accrual of interest and penalties when you don't repay. At twenty-plus percent a year, a balance can snowball frighteningly fast.",
+      "sourceId": "wiki-ccdebt"
+    },
+    {
+      "id": "s68",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "$1,000 debt at ~24%, minimum payments",
+      "unit": "$",
+      "narration": "Watch a thousand-dollar balance you barely pay down. Year after year, interest piles on interest, and the amount you owe just keeps climbing.",
+      "data": [
+        {
+          "label": "start",
+          "value": 1000
+        },
+        {
+          "label": "yr 3",
+          "value": 1500
+        },
+        {
+          "label": "yr 6",
+          "value": 2200
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "narration": "But the true accelerant is the payday loan — a short-term unsecured loan characterized by very high interest rates, marketed to people with no other options.",
+      "sourceId": "wiki-payday"
+    },
+    {
+      "id": "s69",
+      "type": "character",
+      "narration": "Modern 'buy now, pay later' apps add a frictionless new twist: splitting purchases into easy installments that quietly stack up into debt you forgot you signed up for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "'buy now, pay later'"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "A payday loan's rate, annualized, can reach four hundred percent or more. Borrow a little, and the debt balloons — trapping people in a cycle of re-borrowing just to pay the last loan.",
+      "motif": "aprballoon",
+      "caption": "high-interest debt compounds against you"
+    },
+    {
+      "id": "s26",
+      "type": "callout",
+      "narration": "At four hundred percent a year, a small debt doesn't just grow — it detonates, often faster than any paycheck can keep up.",
+      "text": "400% APR",
+      "sub": "the payday-loan trap",
+      "icon": "bomb"
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "Now the fastest route of all — the one that turns a bad day into total ruin: leverage.",
+      "heading": "Leverage",
+      "kicker": "borrowing to bet"
+    },
+    {
+      "id": "s28",
+      "type": "screenshot",
+      "narration": "Leverage, in finance, is any technique involving borrowing funds to buy an investment. It multiplies your gains — and, far more dangerously, your losses.",
+      "sourceId": "wiki-leverage"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "Here's the trap. If you buy a stock with your own cash and it drops ten percent, you're down ten percent. Painful, but survivable.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "−10% on your cash"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "stage",
+      "narration": "But borrow nine dollars for every one of your own — ten times leverage — and that same ten percent dip doesn't dent you. It erases you. Your entire stake is gone.",
+      "motif": "leveragewipeout",
+      "caption": "a 10% dip, a 100% loss"
+    },
+    {
+      "id": "s70",
+      "type": "character",
+      "narration": "This isn't new. In the 1920s, people bought stocks with as little as ten percent of their own money. When prices fell, the margin calls cascaded — and helped turn a crash into the Great Depression.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "1929: bought on margin"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "screenshot",
+      "narration": "That's the mechanism of margin — collateral you post to borrow and trade. When the trade moves against you, the broker can force a sale at the worst possible moment.",
+      "sourceId": "wiki-margin"
+    },
+    {
+      "id": "s71",
+      "type": "character",
+      "narration": "And it still happens at the top. In 2021, a secretive fund called Archegos used enormous hidden leverage — and imploded in days, erasing something like twenty billion dollars almost overnight.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bomb",
+          "label": "Archegos: ~$20B in days"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "It's called a margin call. The market dips, your collateral isn't enough, and your position is liquidated automatically — locking in the loss before you can even react.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the margin call"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "image",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "survive a 10% dip at 10x leverage",
+      "narration": "Leverage is why people lose more than everything they had — ending a trade not at zero, but in debt."
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "Leverage's flashy modern cousins deserve their own warning: speculation dressed up as investing.",
+      "heading": "Speculation",
+      "kicker": "get-rich-quick = get-poor-quick"
+    },
+    {
+      "id": "s35",
+      "type": "screenshot",
+      "narration": "Day trading is a form of speculation in securities, buying and selling within a single day. It looks like a job. For the overwhelming majority, it's a slow bleed.",
+      "sourceId": "wiki-daytrading"
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "The recent boom made it worse. Easy apps turned millions of people into day traders overnight, many of them trading options — essentially leveraged bets on short-term price moves.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "everyone a day trader"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "callout",
+      "narration": "Study after study finds the same thing: the vast majority of active day traders lose money over time. Only a tiny fraction consistently beat simply holding the market.",
+      "text": "most lose money",
+      "sub": "the day-trading reality",
+      "icon": "chartdown"
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Then there are the manias: meme stocks, options bets, and crypto coins flipped like casino chips. The stories you hear are the winners. The silent majority quietly got wiped out.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "token",
+          "label": "survivorship bias"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "image",
+      "src": "img/livermore.jpg",
+      "label": "JESSE LIVERMORE",
+      "caption": "made & lost fortunes on leverage",
+      "narration": "History is full of cautionary tales. Jesse Livermore was perhaps the most famous speculator who ever lived — and he made, and then lost, several enormous fortunes trading on leverage."
+    },
+    {
+      "id": "s74",
+      "type": "character",
+      "narration": "That's the pattern with pure speculation: the wins are loud and the losses are silent. You hear about the one person who tripled their money, never the ten behind them who were quietly wiped out.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "you only hear the winners"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "put my savings in a hot tip",
+      "memeBottom": "watch it go to zero",
+      "narration": "Every get-rich-quick scheme is, statistically, a get-poor-quick scheme wearing a disguise. The quicker the promised riches, the faster the likely ruin."
+    },
+    {
+      "id": "s39",
+      "type": "title",
+      "narration": "And finally, the quietest wealth-killer of all — the one that doesn't feel like a mistake at all.",
+      "heading": "The Slow Leak",
+      "kicker": "lifestyle creep"
+    },
+    {
+      "id": "s40",
+      "type": "screenshot",
+      "narration": "Lifestyle creep is when, as you earn more, former luxuries quietly become perceived necessities. The raise arrives, and the spending rises to swallow it.",
+      "sourceId": "wiki-lifestyle"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "This is how people earning very good money still end up with nothing saved. It's not one disaster — it's a thousand small upgrades that leave no gap between income and spending.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dining",
+          "label": "spending eats the raise"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "It won't make you poor overnight like leverage will. But over a career, lifestyle creep can quietly ensure you never build any wealth at all — a slow puncture instead of a blowout.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bucket",
+          "label": "a slow, steady leak"
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "type": "character",
+      "narration": "Psychologists call the engine behind it hedonic adaptation. Every upgrade feels amazing for a month, then becomes the new normal — so you reach for the next one, and the gap never closes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dining",
+          "label": "the upgrade treadmill"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "title",
+      "narration": "So step back. What do all these fast roads to broke actually have in common?",
+      "heading": "The Common Thread",
+      "kicker": "why they're all fast"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "Thread one: negative expected value. Gambling, the lottery, most short-term trading — on average, each play is designed to lose. Repeat a losing bet enough, and ruin is just math.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dice",
+          "label": "the odds are against you"
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "type": "compare",
+      "narration": "So compare the two engines directly. A casino is built to bleed you a little on every play. The broad market, historically, has drifted the other way — paying owners over time.",
+      "left": {
+        "title": "The casino",
+        "value": "edge against you",
+        "icon": "dice"
+      },
+      "right": {
+        "title": "Owning the market",
+        "value": "drift for you",
+        "icon": "chartup"
+      }
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Thread two: leverage. Borrowed money removes your safety net. It turns a survivable setback into a total, unrecoverable wipeout.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "debt removes the net"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Thread three: speed and emotion. Fast, 24/7, one-tap access — to bets, to loans, to trades — strips out the pause where common sense would normally step in.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "phone",
+          "label": "no time to think"
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "type": "character",
+      "narration": "This is why the single most profitable habit in finance is often just… waiting. A built-in pause — sleeping on any big money decision — defuses most fast disasters before they start.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "sleep on it"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "image",
+      "src": "img/memes/brain4.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "a slow, boring index fund",
+      "memeBottom": "a thrilling leveraged bet to zero",
+      "narration": "The thrill is the warning sign. If a money move feels exciting and urgent, it's usually optimized for someone else's profit — not yours."
+    },
+    {
+      "id": "s48",
+      "type": "title",
+      "narration": "So let's flip it around — because avoiding poor is mostly about not doing a short list of things.",
+      "heading": "How Not to Get Poor",
+      "kicker": "the boring playbook"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Rule one: never bet with money you can't afford to lose, and never, ever add leverage to a bet. Borrowed money and gambling are the single most dangerous combination in finance.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "no leverage on bets"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "Rule two: treat high-interest debt like a fire. Payday loans and lingering credit card balances compound against you — kill them first, before you do anything else.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "kill high-interest debt"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Rule three: choose positive expected value, and let time do the work. Owning the whole market has, historically, drifted upward — the exact opposite of the casino's edge.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "put the odds on your side"
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "type": "character",
+      "narration": "Build one boring thing first: an emergency fund. A few months of expenses in cash is what stops a bad week from ever becoming a payday loan or a forced, panicked sale.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "an emergency fund"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "And rule four: when you earn more, bank the difference before your lifestyle notices. Quietly widening the gap between income and spending is how ordinary people actually get rich.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "bank the raise"
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "type": "character",
+      "narration": "And automate it. Money that moves into savings and investments the day you're paid can't be quietly spent — you've removed the decision, and the temptation, entirely.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "automate the saving"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "boring, slow, and diversified beats fast, thrilling, and leveraged",
+      "narration": "Building wealth is supposed to be boring. If it feels like a casino, you're probably playing one."
+    },
+    {
+      "id": "s54",
+      "type": "title",
+      "narration": "So let's total up the fast lanes to broke.",
+      "heading": "The Final Math",
+      "kicker": "how fortunes vanish"
+    },
+    {
+      "id": "s55",
+      "type": "chalkboard",
+      "narration": "Gambling and lotteries guarantee loss over time. High-interest debt compounds against you. Leverage turns a dip into a wipeout. And lifestyle creep quietly leaks it all away.",
+      "lines": [
+        "gambling & lottery → negative odds",
+        "high-interest debt → compounds on you",
+        "leverage → a dip becomes a wipeout",
+        "lifestyle creep → the silent leak"
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "stage",
+      "narration": "Every one of them is just a different way of putting bad odds, borrowed money, or both, between you and your future. Remove those, and 'getting poor fast' gets surprisingly hard to do.",
+      "motif": "slowfastwealth",
+      "caption": "slow to build, instant to destroy"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "Because the house, the lender, and the app all profit from your speed. Your single greatest defense is the willingness to be slow, boring, and patient instead.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "slow is the cheat code"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "So the next time something promises to make you rich fast, remember the math — and ask who's really getting rich off your hurry.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "always check the odds"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "If this helped you dodge a fast road to broke, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "shield",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-gamblersruin",
+      "name": "Gambler's ruin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gambler's_ruin",
+      "quote": "a game with non-positive expected value will eventually go bankrupt"
+    },
+    {
+      "id": "wiki-problemgambling",
+      "name": "Problem gambling (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Problem_gambling",
+      "quote": "repetitive gambling behavior despite harm and negative consequences"
+    },
+    {
+      "id": "wiki-lottery",
+      "name": "Lottery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lottery",
+      "quote": "a form of gambling that involves the drawing of numbers at random for a prize"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal sum and previously accumulated interest"
+    },
+    {
+      "id": "wiki-ccdebt",
+      "name": "Credit card debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_debt",
+      "quote": "Debt grows through the accrual of interest and penalties"
+    },
+    {
+      "id": "wiki-payday",
+      "name": "Payday loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Payday_loan",
+      "quote": "often characterized by high interest rates"
+    },
+    {
+      "id": "wiki-leverage",
+      "name": "Leverage (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+      "quote": "any technique involving borrowing funds to buy an investment"
+    },
+    {
+      "id": "wiki-margin",
+      "name": "Margin (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Margin_(finance)",
+      "quote": "the collateral that a holder of a financial instrument has to deposit"
+    },
+    {
+      "id": "wiki-daytrading",
+      "name": "Day trading (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Day_trading",
+      "quote": "a form of speculation in securities"
+    },
+    {
+      "id": "wiki-lifestyle",
+      "name": "Lifestyle creep (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lifestyle_creep",
+      "quote": "former luxuries become perceived necessities"
+    }
+  ],
+  "youtube": {
+    "title": "The Fastest Way to Get Poor (the Data)",
+    "alts": [
+      "The Math of Going Broke Fast",
+      "How to Lose Everything in an Afternoon (and How Not To)"
+    ],
+    "hook": "Getting rich is slow. Getting poor can take an afternoon. This is the data on the fastest ways to destroy wealth — and the hidden math they all share. Gambler's ruin makes casino losses a mathematical certainty. The lottery has worse odds than being struck by lightning twice. Payday loans hit 400% APR. And leverage can turn a 10% dip into a 100% wipeout. We break down each one, then the boring playbook that makes getting poor fast surprisingly hard to do. Fully cited.",
+    "bullets": [
+      "Gambler's ruin: why the house edge makes losses a certainty",
+      "The lottery's brutal odds — and why winners still go broke",
+      "High-interest debt and the 400% APR payday-loan trap",
+      "Leverage and margin calls: how a 10% dip becomes a 100% loss",
+      "Day trading and speculation — why most lose money",
+      "Lifestyle creep, the silent leak — and the boring way to avoid it all"
+    ],
+    "tags": [
+      "fastest way to get poor",
+      "how to get poor",
+      "gambler's ruin",
+      "house edge",
+      "payday loan",
+      "leverage explained",
+      "margin call",
+      "day trading losses",
+      "lifestyle creep",
+      "compound interest",
+      "personal finance",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#money",
+      "#personalfinance",
+      "#investing",
+      "#debt"
+    ],
+    "thumbnail": {
+      "hookTop": "GET POOR",
+      "hookBot": "IN ONE DAY",
+      "napkinNumber": "400%",
+      "napkinSub": "APR, and worse",
+      "deco": "dice"
+    },
+    "chapters": [
+      [
+        "lose the whole thing in an afternoon",
+        "Slow up, fast down"
+      ],
+      [
+        "the math of gambling",
+        "The gambling math"
+      ],
+      [
+        "the worst odds of all",
+        "The lottery"
+      ],
+      [
+        "high-interest debt",
+        "The debt trap"
+      ],
+      [
+        "the fastest route of all",
+        "Leverage"
+      ],
+      [
+        "speculation dressed up as investing",
+        "Speculation"
+      ],
+      [
+        "quietest wealth-killer of all",
+        "Lifestyle creep"
+      ],
+      [
+        "avoiding poor is mostly about",
+        "How not to get poor"
+      ]
+    ]
+  },
+  "media": {
+    "people": [
+      {
+        "query": "Jesse Lauriston Livermore",
+        "slug": "livermore"
+      }
+    ]
+  }
+}

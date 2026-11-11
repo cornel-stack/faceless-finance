@@ -57,6 +57,8 @@ export type DoodleName =
   | "pyramid" | "envelope"
   // EP033 (why the rich pretend to be poor) additions:
   | "pickuptruck" | "mansion"
+  // EP034 (the fastest way to get poor) additions:
+  | "dice" | "slotmachine"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1303,6 +1305,31 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={28} y={58} w={12} h={26} fill="#fff" strokeWidth={1.4} />
           <RRect x={58} y={58} w={12} h={14} fill="#fff" strokeWidth={1.4} />
           <RLine x1={50} y1={24} x2={50} y2={14} strokeWidth={2} />
+        </>
+      );
+
+    // ---- EP034 (the fastest way to get poor) doodles ----
+    case "dice":
+      // A gambling die.
+      return (
+        <>
+          <RRect x={24} y={24} w={52} h={52} fill="#fff" strokeWidth={SW} />
+          <RCircle cx={40} cy={40} d={9} fill={INK} strokeWidth={1} />
+          <RCircle cx={60} cy={40} d={9} fill={INK} strokeWidth={1} />
+          <RCircle cx={50} cy={50} d={9} fill={RED} strokeWidth={1} />
+          <RCircle cx={40} cy={60} d={9} fill={INK} strokeWidth={1} />
+          <RCircle cx={60} cy={60} d={9} fill={INK} strokeWidth={1} />
+        </>
+      );
+    case "slotmachine":
+      // A slot machine — the house always wins.
+      return (
+        <>
+          <RRect x={26} y={20} w={48} h={64} fill={RED} strokeWidth={SW} />
+          <RRect x={32} y={32} w={36} h={22} fill="#fff" strokeWidth={1.4} />
+          <text x={50} y={49} fontSize={15} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">7 7</text>
+          <RLine x1={74} y1={44} x2={84} y2={44} strokeWidth={SW} />
+          <RCircle cx={86} cy={44} d={11} fill={GOLD} strokeWidth={1.4} />
         </>
       );
   }

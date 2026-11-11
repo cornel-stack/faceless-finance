@@ -2263,6 +2263,87 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={72} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the "true tax rate"</text>
       </svg>
     );
+  } else if (m === "leveragewipeout") {
+    // A small market dip wipes out a leveraged position entirely.
+    const drop = interpolate(frame, [fps * 0.8, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 0)">
+          <text x={0} y={130} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the market</text>
+          <rect x={-62} y={160} width={124} height={210} fill={blue} stroke={ink} strokeWidth={4} />
+          <rect x={-62} y={160} width={124} height={210 * 0.1 * drop} fill={red} />
+          <text x={0} y={400} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">−10%</text>
+        </g>
+        <g transform="translate(690 0)">
+          <text x={0} y={130} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>you, borrowed 10×</text>
+          <rect x={-62} y={370 - 210 * (1 - drop)} width={124} height={210 * (1 - drop)} fill={gold} stroke={ink} strokeWidth={4} />
+          <rect x={-62} y={160} width={124} height={210} fill="none" stroke={ink} strokeWidth={2} strokeDasharray="5 5" />
+          {drop > 0.9 && <text x={0} y={300} fontSize={28} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">WIPED OUT</text>}
+        </g>
+        <text x={VW / 2} y={470} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a 10% dip, a 100% loss</text>
+      </svg>
+    );
+  } else if (m === "gamblersruin") {
+    // A balance that random-walks relentlessly down to zero.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.6], [0, 1], clampBoth);
+    const path = "M 80 240 L 170 200 L 250 260 L 330 210 L 420 290 L 510 250 L 600 330 L 690 300 L 780 400 L 880 442";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={70} y1={442} x2={VW - 40} y2={442} stroke={ink} strokeWidth={4} />
+        <text x={92} y={120} fontSize={22} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>your money</text>
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={6} seed={4} /></g>
+        {rev > 0.9 && <text x={835} y={420} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">$0</text>}
+        <text x={VW / 2} y={492} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">bad odds + time = ruin, guaranteed</text>
+      </svg>
+    );
+  } else if (m === "aprballoon") {
+    // A small loan balloons into a huge debt at a punishing interest rate.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const amt = Math.round(100 * Math.pow(5, grow));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={110} fontSize={24} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>borrow $100 at 400% APR…</text>
+        <g transform={`translate(${VW / 2} 300)`}>
+          <circle r={58 + 120 * grow} fill={red} stroke={ink} strokeWidth={5} opacity={0.92} />
+          <text y={12} fontSize={30 + 18 * grow} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">${amt}</text>
+        </g>
+        <text x={VW / 2} y={494} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">high-interest debt compounds against you</text>
+      </svg>
+    );
+  } else if (m === "housewins") {
+    // A spinning wheel; every bet, a slice flows to the house.
+    const spin = frame * 6;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(360 270)">
+          <circle r={120} fill="none" stroke={ink} strokeWidth={6} />
+          <g transform={`rotate(${spin})`}>
+            {Array.from({ length: 12 }, (_, i) => <line key={i} x1={0} y1={0} x2={120 * Math.cos(i * 0.5236)} y2={120 * Math.sin(i * 0.5236)} stroke={i % 2 ? red : ink} strokeWidth={3} />)}
+          </g>
+          <circle r={12} fill={gold} stroke={ink} strokeWidth={3} />
+        </g>
+        <path d="M520 270 l70 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(730 270)"><rect x={-72} y={-50} width={144} height={100} rx={10} fill={ink} /><text y={8} fontSize={24} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">the house</text></g>
+        <text x={VW / 2} y={470} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">every spin, the house takes a cut</text>
+      </svg>
+    );
+  } else if (m === "slowfastwealth") {
+    // Wealth climbs slowly for years, then falls off a cliff in moments.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const path = "M 90 420 L 250 384 L 410 322 L 560 250 L 644 212 L 656 212 L 668 440";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={4} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={gold} strokeWidth={7} seed={3} /></g>
+        {rev > 0.45 && rev < 0.82 && <text x={470} y={210} fontSize={20} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>years to build…</text>}
+        {rev > 0.9 && <text x={760} y={320} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">…seconds to lose</text>}
+        <text x={VW / 2} y={492} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">slow to build, instant to destroy</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
