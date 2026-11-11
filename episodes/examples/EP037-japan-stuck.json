@@ -1,0 +1,920 @@
+{
+  "id": "EP037",
+  "series": "Napkin Numbers",
+  "title": "Why Japan Is Stuck (and Still Rich Anyway)",
+  "slug": "why-japan-is-stuck-and-still-rich",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP037 — explainer (By the Numbers, row 27). Japan's paradox: 30+ years of near-zero growth, deflation, zero rates, zombie firms, aging + 250% debt — yet still one of the richest, safest societies on Earth. Real portraits (Abe, Kuroda). 5 new motifs (nikkeipeak, agingpyramid, debtownedinside, richbutstuck, zombiefirms) + doodles (torii, bullettrain). Target 12–15 min.",
+  "media": {
+    "people": [
+      {
+        "query": "Shinzo Abe",
+        "slug": "abe"
+      },
+      {
+        "query": "Haruhiko Kuroda",
+        "slug": "kuroda"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Here's a riddle. One of the richest, safest, most advanced countries on Earth has an economy that has barely grown in thirty years. By the numbers, it looks stuck. By life on the ground, it looks wonderful.",
+      "pose": "think",
+      "bubble": "stuck… yet rich?"
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "Walk through Tokyo and you'll find spotless streets, bullet trains that are never late, long lifespans, and almost no crime. Yet economists have spent three decades calling this same country a cautionary tale.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bullettrain",
+          "label": "rich daily life"
+        },
+        {
+          "name": "chartdown",
+          "label": "flat economy"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "'the economy hasn't grown in 30 years'",
+      "memeBottom": "life is actually pretty great",
+      "narration": "It's one of the most misunderstood stories in all of economics. So let's untangle it — because Japan may be a preview of where the rest of the rich world is heading."
+    },
+    {
+      "id": "s4",
+      "type": "screenshot",
+      "narration": "The textbook name for the stuck part is the Lost Decades — a lengthy period of economic stagnation in Japan that began when an asset bubble collapsed around 1990.",
+      "sourceId": "wiki-lostdecades"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "The sheer scale is hard to believe now. Flush with cash, Japanese firms bought up trophy assets worldwide — famously snapping up Rockefeller Center in New York, and paying record sums for Van Gogh paintings.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "buying the world"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "To understand the stagnation, you have to see the insane boom that came right before it.",
+      "heading": "The Bubble",
+      "kicker": "the biggest in history"
+    },
+    {
+      "id": "s6",
+      "type": "character",
+      "narration": "Rewind to the 1980s. Japan was the economic miracle of the age — its cars, its electronics, its banks conquering the world. Many assumed it would soon overtake America entirely.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "the 1980s miracle"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "That confidence inflated the Japanese asset price bubble, where real estate and stock market prices were greatly inflated to staggering heights.",
+      "sourceId": "wiki-bubble"
+    },
+    {
+      "id": "s8",
+      "type": "callout",
+      "narration": "At the peak, the land under Tokyo was supposedly worth more than all the land in the entire state of California. The grounds of the Imperial Palace, more than all of California's real estate combined.",
+      "text": "Tokyo > California",
+      "sub": "…in land value, 1989",
+      "icon": "mansion"
+    },
+    {
+      "id": "s58",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "own a patch of Tokyo",
+      "memeBottom": "own the entire state of California",
+      "narration": "On paper, the math had gone completely insane — and almost nobody at the time could bring themselves to call it a bubble."
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "The stock market went vertical too. The Nikkei 225 — the main index for the Tokyo Stock Exchange — nearly quadrupled in a few short years.",
+      "sourceId": "wiki-nikkei"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "In December 1989, the Nikkei hit almost thirty-nine thousand. Everyone assumed it would keep climbing forever. Instead, that was the top — and it would not be seen again for thirty-four years.",
+      "motif": "nikkeipeak",
+      "caption": "it took ~34 years to recover"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Then, in early 1992, the bubble burst. Stocks and land went into free fall. Trillions in paper wealth simply evaporated — and the hangover would last a generation.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "the 1992 crash"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And the banks made it worse. Instead of admitting their bad loans, they quietly rolled them over and pretended — a slow-motion denial that kept the sickness festering for years.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bank",
+          "label": "pretend and extend"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "What followed has a name that still haunts economists: the Lost Decades.",
+      "heading": "The Lost Decades",
+      "kicker": "a generation of stagnation"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "Banks were buried under bad loans. Companies stopped investing. Shell-shocked households stopped spending and started hoarding cash. Growth flatlined — and stayed flat for decades.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "banks buried in bad debt"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "And a strange new disease set in — one most modern economies had almost forgotten. Not rising prices, but falling ones. Deflation.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pricetag",
+          "label": "prices started FALLING"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "Deflation is a decrease in the general price level of goods and services. It sounds lovely — cheaper stuff! — but for an economy, it can be quietly poisonous.",
+      "sourceId": "wiki-deflation"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "Here's the trap. If prices keep falling, why buy today when it'll be cheaper next year? So people wait. Spending drops, businesses cut prices further, and the whole thing spirals downward.",
+      "motif": "pricespiral",
+      "caption": "the deflation spiral"
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "Deflation also makes debt heavier. Your loan stays the same size, but your wages and prices shrink around it — so every debt quietly grows more crushing over time.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "iou",
+          "label": "debt gets heavier"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "Japan's central bank eventually went even further — pushing interest rates below zero in 2016. Yes: you could effectively be charged to keep your money in the bank. Even that barely moved the needle.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "rates below zero"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "So the central bank did the obvious thing — and discovered its tools had stopped working.",
+      "heading": "The Zero Trap",
+      "kicker": "when rate cuts run out"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "To fight a weak economy, a central bank cuts interest rates to make borrowing cheap. So the Bank of Japan cut… and cut… until it hit zero. And still, nothing moved.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "rates cut to zero"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "screenshot",
+      "narration": "This is a zero interest-rate policy — conditions with a very low nominal interest rate. Japan has lived here, on and off, for over two decades.",
+      "sourceId": "wiki-zirp"
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "To fund all this, the Bank of Japan bought up bonds on a colossal scale. It now owns around half of all Japanese government debt — and became one of the biggest stock owners in the country, too.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "BoJ owns ~half the debt"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "But when rates are already zero and people still won't borrow or spend, the central bank is pushing on a string. Economists call this grim situation a liquidity trap.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "magnet",
+          "label": "pushing on a string"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "Cheap money forever had a nasty side effect, too. It kept failing companies on life support — 'zombie firms' that should have died, but limped on, soaking up workers and capital.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "factory",
+          "label": "zombie companies"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "narration": "A zombie firm earns just enough to pay the interest on its debts, but never enough to truly recover. Kept alive by near-zero rates, it quietly drags down the whole economy's productivity.",
+      "motif": "zombiefirms",
+      "caption": "zombie firms, alive on cheap debt"
+    },
+    {
+      "id": "s62",
+      "type": "timeline",
+      "title": "Japan's economy, 1989–2024",
+      "narration": "Here's the whole arc. The 1989 peak. The 1992 crash. Zero rates by 1999. Abenomics in 2013. Below zero in 2016. And finally, in 2024, a new all-time high at last.",
+      "events": [
+        {
+          "year": "1989",
+          "label": "bubble peak",
+          "icon": "chartup"
+        },
+        {
+          "year": "1992",
+          "label": "the crash",
+          "icon": "chartdown"
+        },
+        {
+          "year": "1999",
+          "label": "zero rates",
+          "icon": "percent"
+        },
+        {
+          "year": "2013",
+          "label": "Abenomics",
+          "icon": "megaphone"
+        },
+        {
+          "year": "2024",
+          "label": "new high",
+          "icon": "trophy"
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "And underneath all of it runs the deepest force of all — one no interest rate can fix.",
+      "heading": "The Demographics",
+      "kicker": "aging and shrinking"
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "Japan has the highest proportion of people aged sixty-five and over of any major country — nearly a third of the entire population.",
+      "sourceId": "wiki-aging"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "And the population isn't just old — it's shrinking. Fewer babies, almost no immigration, so each year there are fewer workers, fewer consumers, and more retirees to support.",
+      "motif": "agingpyramid",
+      "caption": "a shrinking, top-heavy population"
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "Other countries plug a labor gap with immigration. Japan has largely chosen not to, prizing social cohesion over population growth. It's a profound trade-off — and a big reason the shrinking is so steep.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "flagJP",
+          "label": "a deliberate choice"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "Think about what that does to growth. An economy grows by having more workers, or more productive ones. Lose workers every year, and even standing still becomes a genuine achievement.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "fewer workers each year"
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "Instead, Japan leans on automation — more robots per worker than almost anywhere — and on getting more women and older people into the workforce, squeezing more output from fewer hands.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chip",
+          "label": "robots fill the gap"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "Now for the number that makes outsiders panic — and why they're mostly wrong to.",
+      "heading": "The Debt Myth",
+      "kicker": "250% and fine?"
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "To prop up the economy for decades, the government borrowed enormously. Its gross government debt — the financial liabilities of the government sector — is the highest in the developed world.",
+      "sourceId": "wiki-govdebt"
+    },
+    {
+      "id": "s30",
+      "type": "callout",
+      "narration": "Japan's government debt is around two hundred and fifty percent of its entire economy. For almost any other country, that would mean a catastrophic crisis.",
+      "text": "~250% of GDP",
+      "sub": "highest in the rich world",
+      "icon": "debtclock"
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "And that scary headline number is gross debt. Japan's government also owns enormous assets, so its net debt is far lower. The truly frightening figure is, to a large degree, an accounting illusion.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "net debt is far lower"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "So why hasn't Japan collapsed like Greece did? Because of who it owes. Japan borrows in its own currency, the yen — and most of that debt is owed to its own people and its own central bank.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "flagJP",
+          "label": "it owes itself"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "stage",
+      "narration": "That changes everything. There are no foreign creditors who can panic and flee. The debt is, in a sense, the nation quietly owing money to itself — and it can always print the yen to pay.",
+      "motif": "debtownedinside",
+      "caption": "huge debt — but owed to itself"
+    },
+    {
+      "id": "s66",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "a country that owes itself, in its own currency, is not Greece",
+      "narration": "This is the single most misunderstood fact about Japan. Owing money to foreigners in a currency you can't print is dangerous. Owing it to yourself, in yen you control, simply is not the same beast."
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "Faced with all this, Japan launched one of the boldest economic experiments ever tried.",
+      "heading": "Abenomics",
+      "kicker": "the three arrows"
+    },
+    {
+      "id": "s34",
+      "type": "image",
+      "src": "img/abe.jpg",
+      "label": "SHINZO ABE",
+      "caption": "Japan's longest-serving PM",
+      "narration": "In 2012, Prime Minister Shinzo Abe launched a sweeping plan the world nicknamed 'Abenomics' — an all-out assault on deflation and stagnation."
+    },
+    {
+      "id": "s35",
+      "type": "screenshot",
+      "narration": "Abenomics was the set of economic policies pursued by the Japanese government — built on 'three arrows': massive money printing, big government spending, and structural reform.",
+      "sourceId": "wiki-abenomics"
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "One arrow did fire hard: the weak yen. Cheap money made the currency tumble, which flattered exporters and the stock market — and powered a global 'carry trade' of borrowing cheap yen to invest elsewhere.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "yen",
+          "label": "the weak-yen engine"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "image",
+      "src": "img/kuroda.jpg",
+      "label": "HARUHIKO KURODA",
+      "caption": "fired the monetary 'bazooka'",
+      "narration": "His central-bank chief, Haruhiko Kuroda, fired the first arrow with a monetary 'bazooka' — printing yen on a scale the world had never seen, even buying up stocks and bonds directly."
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "The results were mixed. It weakened the yen, lifted the stock market, and finally nudged prices up a little. But it never fully broke the deflationary mindset, and the debt only grew.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "a partial success"
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "type": "character",
+      "narration": "And then, recently, something shifted. After thirty years, real inflation and genuine wage rises finally returned. In 2024 the Nikkei smashed past its 1989 record — and the Bank of Japan cautiously began raising rates again.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "2024: the thaw"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "title",
+      "narration": "So that's the 'stuck.' Now for the twist that the gloomy headlines always leave out.",
+      "heading": "Still Rich Anyway",
+      "kicker": "stagnation isn't poverty"
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "Because here's what three decades of zero growth did NOT do: it did not make Japan poor. Not even close. Stagnation and poverty are two completely different things.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "stuck ≠ poor"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "screenshot",
+      "narration": "Japan still has a highly developed economy — one of the largest on Earth by total size, and genuinely wealthy per person.",
+      "sourceId": "wiki-economy"
+    },
+    {
+      "id": "s69",
+      "type": "compare",
+      "narration": "So hold the two scorecards side by side. The economic spreadsheet looks bleak. The actual lived experience is one of the best on the planet. Both are completely true.",
+      "left": {
+        "title": "On the spreadsheet",
+        "value": "flat, indebted",
+        "icon": "chartdown"
+      },
+      "right": {
+        "title": "In real life",
+        "value": "safe, long, rich",
+        "icon": "hospital"
+      }
+    },
+    {
+      "id": "s41",
+      "type": "stage",
+      "narration": "That's the real paradox. The growth chart is flat as a pancake — but the standard of living is sky-high. Stuck on the spreadsheet, rich in actual life.",
+      "motif": "richbutstuck",
+      "caption": "stuck on paper, rich in life"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "Consider the scorecard. Near-universal healthcare. One of the longest life expectancies in the world. Low unemployment. Low inequality. World-class infrastructure. And streets so safe children ride the subway alone.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "long lives, low crime"
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Life expectancy (years)",
+      "unit": "yrs",
+      "narration": "Take life expectancy. People in Japan live longer than almost anyone on Earth — years beyond the United States. A 'failing' economy that quietly delivers some of the longest, healthiest lives in human history.",
+      "data": [
+        {
+          "label": "Japan",
+          "value": 84
+        },
+        {
+          "label": "Germany",
+          "value": 81
+        },
+        {
+          "label": "USA",
+          "value": 77
+        }
+      ],
+      "highlight": 0
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And on the world stage, Japan is no pauper. For years it was the planet's largest creditor nation — meaning the world, on net, owes money to Japan, not the other way around.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "the world's banker"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "Here's the subtle trick the numbers hide. If your population is shrinking, then even a flat economy means a slowly rising slice of pie for each remaining person. Flat total, steady per head.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "flat total, steady per person"
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "type": "image",
+      "src": "img/memes/brain4.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "chase GDP growth forever",
+      "memeBottom": "build a stable, rich, healthy society that stopped growing",
+      "narration": "It forces an uncomfortable upgrade in how we think. Maybe endless growth was always the means — and a good, secure life was supposed to be the end."
+    },
+    {
+      "id": "s45",
+      "type": "title",
+      "narration": "Which raises the question that makes this whole story matter to you.",
+      "heading": "The Canary",
+      "kicker": "a preview of the rich world"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Japan isn't a freak. It's just early. Aging populations, falling birth rates, mountains of debt, and the limits of low interest rates are now arriving across the whole rich world.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "everyone's getting older"
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "And the queue behind Japan is long. South Korea, Italy, Germany, and even China are now aging and slowing in strikingly similar ways. Japan just got to the future first.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "the rest are catching up"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Europe, China, and even parts of the United States are starting to show the very same symptoms. Japan has simply been living in their future for thirty years already.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "living in our future"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "Which flips the lesson entirely. Maybe the question isn't 'what went wrong with Japan?' Maybe it's 'how did Japan stay this rich, safe, and stable while barely growing at all?'",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brain",
+          "label": "the real question"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Because our entire economic worldview assumes growth, forever. Japan quietly poses the heretical question: what if a mature, wealthy country simply… stops growing — and manages to be perfectly fine?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "a world without growth?"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "character",
+      "narration": "Economists even have a name for the idea Japan keeps bumping into: a 'steady-state' economy — one that stays roughly the same size, and focuses on living well rather than endlessly getting bigger.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the steady-state idea"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "title",
+      "narration": "So let's total up the paradox.",
+      "heading": "The Final Math",
+      "kicker": "stuck and rich at once"
+    },
+    {
+      "id": "s51",
+      "type": "chalkboard",
+      "narration": "A giant bubble burst. Deflation and zero rates trapped the economy. An aging, shrinking population froze growth. Debt soared past two hundred percent. And yet — Japan stayed one of the best places on Earth to live.",
+      "lines": [
+        "1989 bubble → a lost generation",
+        "deflation + zero rates → the trap",
+        "aging + shrinking → frozen growth",
+        "…yet still safe, healthy & rich"
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "The 'stuck' is real. The stagnation, the debt, the demographic cliff — none of it is a mirage. But neither is the wealth, the safety, or the extraordinary quality of everyday life.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "torii",
+          "label": "both things are true"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "Japan is proof that an economy can stop growing and not fall apart. Whether that's a warning or a quiet blueprint for an aging planet… may be the biggest economic question of our century.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "bullettrain",
+          "label": "warning, or blueprint?"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "So the next time you see a headline mocking Japan's 'stuck' economy, you'll know the other half of the story — the rich, stable life hiding behind that flat line.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "read the whole story"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "If this reframed Japan for you, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "torii",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-lostdecades",
+      "name": "Lost Decades (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lost_Decades",
+      "quote": "a lengthy period of economic stagnation in Japan"
+    },
+    {
+      "id": "wiki-bubble",
+      "name": "Japanese asset price bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_asset_price_bubble",
+      "quote": "real estate and stock market prices were greatly inflated"
+    },
+    {
+      "id": "wiki-nikkei",
+      "name": "Nikkei 225 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nikkei_225",
+      "quote": "a stock market index for the Tokyo Stock Exchange"
+    },
+    {
+      "id": "wiki-deflation",
+      "name": "Deflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deflation",
+      "quote": "a decrease in the general price level of goods and services"
+    },
+    {
+      "id": "wiki-zirp",
+      "name": "Zero interest-rate policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zero_interest-rate_policy",
+      "quote": "conditions with a very low nominal interest rate"
+    },
+    {
+      "id": "wiki-govdebt",
+      "name": "Government debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Government_debt",
+      "quote": "the financial liabilities of the government sector"
+    },
+    {
+      "id": "wiki-aging",
+      "name": "Aging of Japan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aging_of_Japan",
+      "quote": "the highest proportion of people aged 65 and over"
+    },
+    {
+      "id": "wiki-abenomics",
+      "name": "Abenomics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Abenomics",
+      "quote": "the economic policies implemented by the Government of Japan"
+    },
+    {
+      "id": "wiki-economy",
+      "name": "Economy of Japan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economy_of_Japan",
+      "quote": "Japan has a highly developed mixed economy"
+    }
+  ],
+  "youtube": {
+    "title": "Why Japan Is Stuck (and Still Rich Anyway)",
+    "alts": [
+      "Japan's Paradox: 30 Years of No Growth, Still One of the Richest",
+      "The Lost Decades: Why Japan Stopped Growing (and Stayed Rich)"
+    ],
+    "hook": "One of the richest, safest countries on Earth has barely grown in thirty years. This is Japan's paradox, by the numbers: the biggest asset bubble in history, the 1989 Nikkei peak that took 34 years to reclaim, the Lost Decades of deflation and zero interest rates, zombie firms, an aging and shrinking population, and a government debt near 250% of GDP — and yet a society that stayed wealthy, healthy, and remarkably stable. Why it's stuck, why it's still rich, and why it may be a preview of the whole aging rich world. Fully cited.",
+    "bullets": [
+      "The 1980s bubble: when Tokyo's land 'outvalued' all of California",
+      "The Nikkei's 1989 peak — and the 34-year climb back",
+      "The deflation trap and the zero interest-rate dead end",
+      "Zombie firms, aging demographics, and 250%-of-GDP debt",
+      "Why Japan's debt isn't Greece — it owes itself, in its own currency",
+      "Why 'stuck' isn't 'poor' — and why Japan is the canary for us all"
+    ],
+    "tags": [
+      "why japan is stuck",
+      "japan lost decades",
+      "japan economy explained",
+      "japanese asset bubble",
+      "deflation",
+      "zero interest rate policy",
+      "abenomics",
+      "aging population",
+      "japan debt",
+      "nikkei 225",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#japan",
+      "#economics",
+      "#deflation",
+      "#investing"
+    ],
+    "thumbnail": {
+      "hookTop": "JAPAN:",
+      "hookBot": "STUCK BUT RICH?",
+      "napkinNumber": "34 yrs",
+      "napkinSub": "to recover one peak",
+      "deco": "torii"
+    },
+    "chapters": [
+      [
+        "barely grown in thirty years",
+        "The paradox"
+      ],
+      [
+        "the insane boom",
+        "The bubble"
+      ],
+      [
+        "the Lost Decades",
+        "The lost decades"
+      ],
+      [
+        "why buy today",
+        "The deflation trap"
+      ],
+      [
+        "owed to its own people",
+        "The debt myth"
+      ],
+      [
+        "fewer workers, fewer consumers",
+        "Demographics"
+      ],
+      [
+        "make Japan poor",
+        "Still rich"
+      ],
+      [
+        "living in their future",
+        "The canary"
+      ]
+    ]
+  }
+}

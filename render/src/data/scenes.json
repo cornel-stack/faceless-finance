@@ -2,763 +2,751 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "The stock market looks like a fair auction. Millions of buyers and sellers, a transparent price, everyone playing by the same rules. For most of us, most of the time, that's true.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "stockscreen",
-        "label": "looks like a fair auction"
-      }
-    ]
+    "narration": "Here's a riddle. One of the richest, safest, most advanced countries on Earth has an economy that has barely grown in thirty years. By the numbers, it looks stuck. By life on the ground, it looks wonderful.",
+    "pose": "think",
+    "bubble": "stuck… yet rich?"
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "But underneath, there's a whole hidden menu of tricks designed to tilt that game before you ever place a bet. Fake demand, fake supply, fake information — all quietly rigging the price.",
-    "pose": "think",
-    "bubble": "how is it rigged?"
+    "narration": "Walk through Tokyo and you'll find spotless streets, bullet trains that are never late, long lifespans, and almost no crime. Yet economists have spent three decades calling this same country a cautionary tale.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bullettrain",
+        "label": "rich daily life"
+      },
+      {
+        "name": "chartdown",
+        "label": "flat economy"
+      }
+    ]
   },
   {
     "id": "s3",
     "type": "image",
     "src": "img/memes/fine.jpg",
     "meme": "This Is Fine",
-    "memeTop": "'the market is perfectly fair'",
-    "memeBottom": "spoofers, pumpers & insiders at work",
-    "narration": "Some of these tricks are ancient. Some are brand new and run by algorithms in millionths of a second. All of them have one goal: to separate you from your money."
+    "memeTop": "'the economy hasn't grown in 30 years'",
+    "memeBottom": "life is actually pretty great",
+    "narration": "It's one of the most misunderstood stories in all of economics. So let's untangle it — because Japan may be a preview of where the rest of the rich world is heading."
   },
   {
     "id": "s4",
     "type": "screenshot",
-    "narration": "The umbrella term is market manipulation — when someone intentionally alters the supply or demand of a security to influence its price.",
-    "sourceId": "wiki-manipulation"
+    "narration": "The textbook name for the stuck part is the Lost Decades — a lengthy period of economic stagnation in Japan that began when an asset bubble collapsed around 1990.",
+    "sourceId": "wiki-lostdecades"
   },
   {
-    "id": "s58",
+    "id": "s57",
     "type": "character",
-    "narration": "And a fair price only means something if three things are honest: real supply, real demand, and real information. Every scam in this video is just an attack on one of those three.",
+    "narration": "The sheer scale is hard to believe now. Flush with cash, Japanese firms bought up trophy assets worldwide — famously snapping up Rockefeller Center in New York, and paying record sums for Van Gogh paintings.",
     "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "supply · demand · info"
+        "name": "goldbar",
+        "label": "buying the world"
       }
     ]
   },
   {
     "id": "s5",
-    "type": "callout",
-    "narration": "It is illegal, it is everywhere, and most of its victims never even realize a game was being played on them.",
-    "text": "mostly invisible",
-    "sub": "and usually illegal",
-    "icon": "warning"
+    "type": "title",
+    "narration": "To understand the stagnation, you have to see the insane boom that came right before it.",
+    "heading": "The Bubble",
+    "kicker": "the biggest in history"
   },
   {
     "id": "s6",
-    "type": "title",
-    "narration": "So let's run the numbers on the most common ways scammers rig the market — and how to spot them.",
-    "heading": "How Scammers Rig the Stock Market",
-    "kicker": "the manipulation playbook",
-    "sub": "fake supply, demand & information"
+    "type": "character",
+    "narration": "Rewind to the 1980s. Japan was the economic miracle of the age — its cars, its electronics, its banks conquering the world. Many assumed it would soon overtake America entirely.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "the 1980s miracle"
+      }
+    ]
   },
   {
     "id": "s7",
-    "type": "title",
-    "narration": "Start with the most famous trick of all — the one Hollywood made a movie about.",
-    "heading": "Pump and Dump",
-    "kicker": "hype it, then dump it"
+    "type": "screenshot",
+    "narration": "That confidence inflated the Japanese asset price bubble, where real estate and stock market prices were greatly inflated to staggering heights.",
+    "sourceId": "wiki-bubble"
   },
   {
     "id": "s8",
-    "type": "screenshot",
-    "narration": "A pump and dump artificially inflates the price of an owned stock through false and misleading positive statements — the pump — so the scammer can sell high.",
-    "sourceId": "wiki-pumpdump"
+    "type": "callout",
+    "narration": "At the peak, the land under Tokyo was supposedly worth more than all the land in the entire state of California. The grounds of the Imperial Palace, more than all of California's real estate combined.",
+    "text": "Tokyo > California",
+    "sub": "…in land value, 1989",
+    "icon": "mansion"
+  },
+  {
+    "id": "s58",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "own a patch of Tokyo",
+    "memeBottom": "own the entire state of California",
+    "narration": "On paper, the math had gone completely insane — and almost nobody at the time could bring themselves to call it a bubble."
   },
   {
     "id": "s9",
-    "type": "character",
-    "narration": "The recipe is simple. First, quietly buy a huge pile of some tiny, cheap stock almost nobody is watching. You now own most of it, dirt cheap.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "1. buy it cheap"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The stock market went vertical too. The Nikkei 225 — the main index for the Tokyo Stock Exchange — nearly quadrupled in a few short years.",
+    "sourceId": "wiki-nikkei"
   },
   {
     "id": "s10",
-    "type": "character",
-    "narration": "Then, hype it relentlessly. Hot tips, breathless messages, fake news of a 'can't-miss' opportunity. Excited new buyers pile in, and the price rockets up.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "megaphone",
-        "label": "2. hype it hard"
-      }
-    ]
+    "type": "stage",
+    "narration": "In December 1989, the Nikkei hit almost thirty-nine thousand. Everyone assumed it would keep climbing forever. Instead, that was the top — and it would not be seen again for thirty-four years.",
+    "motif": "nikkeipeak",
+    "caption": "it took ~34 years to recover"
   },
   {
     "id": "s11",
-    "type": "stage",
-    "narration": "And at the peak — while the crowd is euphoric and buying — the scammer quietly dumps their entire stack. The price collapses, and everyone who believed the hype is left holding the wreckage.",
-    "motif": "pumpdump",
-    "caption": "pump the hype, dump on the crowd"
-  },
-  {
-    "id": "s59",
     "type": "character",
-    "narration": "Social media turbocharged this. A coordinated crowd in a chat room can now pump a stock in hours, with coordinated 'to the moon' hype — and someone at the top is always quietly selling into it.",
+    "narration": "Then, in early 1992, the bubble burst. Stocks and land went into free fall. Trillions in paper wealth simply evaporated — and the hangover would last a generation.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "phone",
-        "label": "the group-chat pump"
+        "name": "chartdown",
+        "label": "the 1992 crash"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "And the banks made it worse. Instead of admitting their bad loans, they quietly rolled them over and pretended — a slow-motion denial that kept the sickness festering for years.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "bank",
+        "label": "pretend and extend"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "image",
-    "src": "img/belfort.jpg",
-    "label": "JORDAN BELFORT",
-    "caption": "the 'Wolf of Wall Street'",
-    "narration": "The most infamous practitioner is Jordan Belfort — the 'Wolf of Wall Street' — who ran exactly this scam on cheap stocks and was convicted of fraud for it."
+    "type": "title",
+    "narration": "What followed has a name that still haunts economists: the Lost Decades.",
+    "heading": "The Lost Decades",
+    "kicker": "a generation of stagnation"
   },
   {
     "id": "s13",
-    "type": "screenshot",
-    "narration": "His weapon was the boiler room — an outbound call center selling questionable investments by telephone, using high-pressure, dishonest sales tactics.",
-    "sourceId": "wiki-boiler"
-  },
-  {
-    "id": "s60",
     "type": "character",
-    "narration": "These scams are a century old. In the 1920s, shady 'bucket shops' let people bet on stock prices that the shop itself secretly controlled — the original rigged game.",
+    "narration": "Banks were buried under bad loans. Companies stopped investing. Shell-shocked households stopped spending and started hoarding cash. Growth flatlined — and stayed flat for decades.",
     "pose": "explain",
     "props": [
       {
-        "name": "telephone",
-        "label": "bucket shops, 1920s"
+        "name": "bank",
+        "label": "banks buried in bad debt"
       }
     ]
   },
   {
     "id": "s14",
     "type": "character",
-    "narration": "Rooms full of slick salespeople cold-call strangers, pushing worthless 'penny stocks' with scripted urgency. 'It's moving right now — you have to buy today.' It's theater, engineered to switch off your caution.",
+    "narration": "And a strange new disease set in — one most modern economies had almost forgotten. Not rising prices, but falling ones. Deflation.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "telephone",
-        "label": "high-pressure cold calls"
+        "name": "pricetag",
+        "label": "prices started FALLING"
       }
     ]
   },
   {
     "id": "s15",
-    "type": "character",
-    "narration": "Today the boiler room has gone digital. The cold call became the group chat, the spam text, the influencer 'alert,' and the too-good-to-be-true direct message. Same scam, bigger reach.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "now it's your DMs"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Deflation is a decrease in the general price level of goods and services. It sounds lovely — cheaper stuff! — but for an economy, it can be quietly poisonous.",
+    "sourceId": "wiki-deflation"
   },
   {
     "id": "s16",
-    "type": "title",
-    "narration": "The next trick is invisible to the human eye — it happens in the machines.",
-    "heading": "Spoofing",
-    "kicker": "fake orders, real lies"
+    "type": "stage",
+    "narration": "Here's the trap. If prices keep falling, why buy today when it'll be cheaper next year? So people wait. Spending drops, businesses cut prices further, and the whole thing spirals downward.",
+    "motif": "pricespiral",
+    "caption": "the deflation spiral"
   },
   {
     "id": "s17",
-    "type": "screenshot",
-    "narration": "Spoofing is a disruptive algorithmic trading tactic. Spoofers feign interest in trading, creating an illusion of the demand and supply of the traded asset.",
-    "sourceId": "wiki-spoofing"
-  },
-  {
-    "id": "s18",
     "type": "character",
-    "narration": "Here's how it works. A trader places a giant order to buy — making everyone think big demand has arrived — but they never intend to actually complete it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "stockscreen",
-        "label": "a huge fake order"
-      }
-    ]
-  },
-  {
-    "id": "s19",
-    "type": "stage",
-    "narration": "Other traders and algorithms see the fake wall of demand and rush in. The price ticks up — and the instant it does, the spoofer cancels the fake order and sells into the buyers they just tricked.",
-    "motif": "spoofing",
-    "caption": "fake orders that vanish before they fill"
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "narration": "It happens in milliseconds, thousands of times a day. You'd never see it. But regulators have fined banks and traders hundreds of millions of dollars for exactly this.",
+    "narration": "Deflation also makes debt heavier. Your loan stays the same size, but your wages and prices shrink around it — so every debt quietly grows more crushing over time.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "fined by the millions"
+        "name": "iou",
+        "label": "debt gets heavier"
       }
     ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "Japan's central bank eventually went even further — pushing interest rates below zero in 2016. Yes: you could effectively be charged to keep your money in the bank. Even that barely moved the needle.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "percent",
+        "label": "rates below zero"
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "type": "title",
+    "narration": "So the central bank did the obvious thing — and discovered its tools had stopped working.",
+    "heading": "The Zero Trap",
+    "kicker": "when rate cuts run out"
+  },
+  {
+    "id": "s19",
+    "type": "character",
+    "narration": "To fight a weak economy, a central bank cuts interest rates to make borrowing cheap. So the Bank of Japan cut… and cut… until it hit zero. And still, nothing moved.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "percent",
+        "label": "rates cut to zero"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "screenshot",
+    "narration": "This is a zero interest-rate policy — conditions with a very low nominal interest rate. Japan has lived here, on and off, for over two decades.",
+    "sourceId": "wiki-zirp"
   },
   {
     "id": "s61",
     "type": "character",
-    "narration": "And the fines are staggering. In 2020, one major bank paid about nine hundred and twenty million dollars to settle spoofing charges — the biggest penalty of its kind.",
+    "narration": "To fund all this, the Bank of Japan bought up bonds on a colossal scale. It now owns around half of all Japanese government debt — and became one of the biggest stock owners in the country, too.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "$920M spoofing fine"
+        "name": "vault",
+        "label": "BoJ owns ~half the debt"
       }
     ]
   },
   {
     "id": "s21",
-    "type": "title",
-    "narration": "A close cousin fakes something else entirely: how much a stock is even being traded.",
-    "heading": "Wash Trading",
-    "kicker": "faking the volume"
-  },
-  {
-    "id": "s22",
-    "type": "screenshot",
-    "narration": "Wash trading is manipulation where an entity simultaneously sells and buys the same instrument — creating a false impression of market activity.",
-    "sourceId": "wiki-wash"
-  },
-  {
-    "id": "s23",
-    "type": "stage",
-    "narration": "Basically, you trade with yourself. Buy and sell the same thing back and forth, generating tons of fake volume to make a dead stock look hot and exciting — luring in real buyers.",
-    "motif": "washtrade",
-    "caption": "trading with yourself to fake volume"
-  },
-  {
-    "id": "s24",
     "type": "character",
-    "narration": "It's especially rampant in lightly-regulated corners, where 'trending' and 'high volume' are exactly the signals naive investors chase. The activity is real; the interest behind it is a complete fiction.",
+    "narration": "But when rates are already zero and people still won't borrow or spend, the central bank is pushing on a string. Economists call this grim situation a liquidity trap.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "ticker",
-        "label": "fake 'hot' activity"
+        "name": "magnet",
+        "label": "pushing on a string"
       }
     ]
   },
   {
+    "id": "s22",
+    "type": "character",
+    "narration": "Cheap money forever had a nasty side effect, too. It kept failing companies on life support — 'zombie firms' that should have died, but limped on, soaking up workers and capital.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "factory",
+        "label": "zombie companies"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "stage",
+    "narration": "A zombie firm earns just enough to pay the interest on its debts, but never enough to truly recover. Kept alive by near-zero rates, it quietly drags down the whole economy's productivity.",
+    "motif": "zombiefirms",
+    "caption": "zombie firms, alive on cheap debt"
+  },
+  {
     "id": "s62",
     "type": "timeline",
-    "title": "A century of market rigging",
-    "narration": "This is a very old story. Bucket shops in the 1920s. Ivan Boesky's insider ring in the 80s. Belfort's boiler room in the 90s. The flash crash in 2010. And record spoofing fines in 2020.",
+    "title": "Japan's economy, 1989–2024",
+    "narration": "Here's the whole arc. The 1989 peak. The 1992 crash. Zero rates by 1999. Abenomics in 2013. Below zero in 2016. And finally, in 2024, a new all-time high at last.",
     "events": [
       {
-        "year": "1920s",
-        "label": "bucket shops",
-        "icon": "telephone"
+        "year": "1989",
+        "label": "bubble peak",
+        "icon": "chartup"
       },
       {
-        "year": "1986",
-        "label": "insider ring",
-        "icon": "handcuffs"
-      },
-      {
-        "year": "1990s",
-        "label": "boiler rooms",
-        "icon": "megaphone"
-      },
-      {
-        "year": "2010",
-        "label": "flash crash",
+        "year": "1992",
+        "label": "the crash",
         "icon": "chartdown"
       },
       {
-        "year": "2020",
-        "label": "spoofing fines",
-        "icon": "warning"
+        "year": "1999",
+        "label": "zero rates",
+        "icon": "percent"
+      },
+      {
+        "year": "2013",
+        "label": "Abenomics",
+        "icon": "megaphone"
+      },
+      {
+        "year": "2024",
+        "label": "new high",
+        "icon": "trophy"
       }
     ],
-    "highlight": 3
+    "highlight": 4
+  },
+  {
+    "id": "s24",
+    "type": "title",
+    "narration": "And underneath all of it runs the deepest force of all — one no interest rate can fix.",
+    "heading": "The Demographics",
+    "kicker": "aging and shrinking"
   },
   {
     "id": "s25",
-    "type": "title",
-    "narration": "The next one doesn't fake demand — it fakes the story, to crash a price on purpose.",
-    "heading": "Short and Distort",
-    "kicker": "lie it down"
+    "type": "screenshot",
+    "narration": "Japan has the highest proportion of people aged sixty-five and over of any major country — nearly a third of the entire population.",
+    "sourceId": "wiki-aging"
   },
   {
     "id": "s26",
-    "type": "screenshot",
-    "narration": "Short and distort is securities fraud where investors short sell a stock and then spread negative rumors to drive the price down.",
-    "sourceId": "wiki-shortdistort"
+    "type": "stage",
+    "narration": "And the population isn't just old — it's shrinking. Fewer babies, almost no immigration, so each year there are fewer workers, fewer consumers, and more retirees to support.",
+    "motif": "agingpyramid",
+    "caption": "a shrinking, top-heavy population"
   },
   {
     "id": "s63",
     "type": "character",
-    "narration": "One important distinction. Honest short selling — betting a stock will fall — is legal and useful. Short sellers helped expose frauds like Enron. The crime isn't the bet. It's deliberately spreading lies to force it true.",
+    "narration": "Other countries plug a labor gap with immigration. Japan has largely chosen not to, prizing social cohesion over population growth. It's a profound trade-off — and a big reason the shrinking is so steep.",
     "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "shorting ≠ the crime"
+        "name": "flagJP",
+        "label": "a deliberate choice"
       }
     ]
   },
   {
     "id": "s27",
     "type": "character",
-    "narration": "It's the evil twin of the pump and dump. Instead of hyping a stock you own, you bet against a stock — then spread scary lies about the company to make your bet pay off.",
+    "narration": "Think about what that does to growth. An economy grows by having more workers, or more productive ones. Lose workers every year, and even standing still becomes a genuine achievement.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "chartdown",
-        "label": "bet down, then lie"
+        "name": "retiree",
+        "label": "fewer workers each year"
+      }
+    ]
+  },
+  {
+    "id": "s64",
+    "type": "character",
+    "narration": "Instead, Japan leans on automation — more robots per worker than almost anywhere — and on getting more women and older people into the workforce, squeezing more output from fewer hands.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chip",
+        "label": "robots fill the gap"
       }
     ]
   },
   {
     "id": "s28",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "pump a stock you own",
-    "memeBottom": "trash a stock you shorted",
-    "narration": "Pump or distort, the engine is identical: control the story, and you can move the price — regardless of what the company is actually worth."
+    "type": "title",
+    "narration": "Now for the number that makes outsiders panic — and why they're mostly wrong to.",
+    "heading": "The Debt Myth",
+    "kicker": "250% and fine?"
   },
   {
     "id": "s29",
-    "type": "title",
-    "narration": "Now the classic that needs no fake orders at all — just a secret.",
-    "heading": "Insider Trading",
-    "kicker": "playing with marked cards"
+    "type": "screenshot",
+    "narration": "To prop up the economy for decades, the government borrowed enormously. Its gross government debt — the financial liabilities of the government sector — is the highest in the developed world.",
+    "sourceId": "wiki-govdebt"
   },
   {
     "id": "s30",
-    "type": "screenshot",
-    "narration": "Insider trading is trading a company's stock based on material, nonpublic information — knowing something market-moving before everyone else does.",
-    "sourceId": "wiki-insider"
+    "type": "callout",
+    "narration": "Japan's government debt is around two hundred and fifty percent of its entire economy. For almost any other country, that would mean a catastrophic crisis.",
+    "text": "~250% of GDP",
+    "sub": "highest in the rich world",
+    "icon": "debtclock"
   },
   {
-    "id": "s64",
-    "type": "image",
-    "src": "img/rajaratnam.jpg",
-    "label": "RAJ RAJARATNAM",
-    "caption": "hedge-fund insider ring",
-    "narration": "In one of the biggest cases ever, hedge-fund manager Raj Rajaratnam ran a vast insider-trading network — and was caught on wiretaps, then sentenced to eleven years in prison."
+    "id": "s65",
+    "type": "character",
+    "narration": "And that scary headline number is gross debt. Japan's government also owns enormous assets, so its net debt is far lower. The truly frightening figure is, to a large degree, an accounting illusion.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "net debt is far lower"
+      }
+    ]
   },
   {
     "id": "s31",
     "type": "character",
-    "narration": "Imagine knowing a company will be bought out tomorrow at double the price. Buy today, and it's free money — stolen from the person on the other side who didn't have the secret.",
+    "narration": "So why hasn't Japan collapsed like Greece did? Because of who it owes. Japan borrows in its own currency, the yen — and most of that debt is owed to its own people and its own central bank.",
     "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "a market-moving secret"
+        "name": "flagJP",
+        "label": "it owes itself"
       }
     ]
-  },
-  {
-    "id": "s65",
-    "type": "image",
-    "src": "img/stewart.jpg",
-    "label": "MARTHA STEWART",
-    "caption": "a small trade, a big symbol",
-    "narration": "Even a relatively small, well-timed sale can bring you down. Martha Stewart famously served prison time in a case tied to suspiciously-timed trading — proof that nobody is too famous to be caught."
   },
   {
     "id": "s32",
-    "type": "image",
-    "src": "img/milken.jpg",
-    "label": "MICHAEL MILKEN",
-    "caption": "the 1980s junk-bond scandal",
-    "narration": "The 1980s were the golden age of this. Financier Michael Milken, the 'junk bond king,' sat at the center of a vast insider scandal — and was convicted of securities violations."
-  },
-  {
-    "id": "s33",
-    "type": "character",
-    "narration": "It's hard to detect, because it hides inside perfectly normal-looking trades. But when regulators catch it, the prison sentences are long — because it strikes at the market's one essential promise: a level playing field.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "prison",
-        "label": "serious prison time"
-      }
-    ]
+    "type": "stage",
+    "narration": "That changes everything. There are no foreign creditors who can panic and flee. The debt is, in a sense, the nation quietly owing money to itself — and it can always print the yen to pay.",
+    "motif": "debtownedinside",
+    "caption": "huge debt — but owed to itself"
   },
   {
     "id": "s66",
-    "type": "character",
-    "narration": "Catching it takes serious firepower: wiretaps, informants, and software that flags a suspiciously perfect trade placed just before big news. Insiders feel invisible — right up until they aren't.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "wiretaps & pattern-spotting"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "a country that owes itself, in its own currency, is not Greece",
+    "narration": "This is the single most misunderstood fact about Japan. Owing money to foreigners in a currency you can't print is dangerous. Owing it to yourself, in yen you control, simply is not the same beast."
+  },
+  {
+    "id": "s33",
+    "type": "title",
+    "narration": "Faced with all this, Japan launched one of the boldest economic experiments ever tried.",
+    "heading": "Abenomics",
+    "kicker": "the three arrows"
   },
   {
     "id": "s34",
-    "type": "title",
-    "narration": "The next trick is quieter, faster, and may be happening to your trades right now.",
-    "heading": "Front Running",
-    "kicker": "cutting the line"
+    "type": "image",
+    "src": "img/abe.jpg",
+    "label": "SHINZO ABE",
+    "caption": "Japan's longest-serving PM",
+    "narration": "In 2012, Prime Minister Shinzo Abe launched a sweeping plan the world nicknamed 'Abenomics' — an all-out assault on deflation and stagnation."
   },
   {
     "id": "s35",
     "type": "screenshot",
-    "narration": "Front running is trading to capitalize on advance, nonpublic knowledge of a large pending transaction that will move the price.",
-    "sourceId": "wiki-frontrun"
-  },
-  {
-    "id": "s36",
-    "type": "stage",
-    "narration": "Say a broker sees a huge client order about to hit. If they quickly buy for themselves first, then let the big order push the price up, they pocket the difference — by jumping ahead of their own customer.",
-    "motif": "frontrun",
-    "caption": "jump ahead of the client's order"
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "narration": "In the modern market, the fastest computers do a legal-grey version of this at light speed — spotting your order and darting ahead of it in microseconds to skim a tiny slice, millions of times a day.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "server",
-        "label": "the speed-of-light skim"
-      }
-    ]
+    "narration": "Abenomics was the set of economic policies pursued by the Japanese government — built on 'three arrows': massive money printing, big government spending, and structural reform.",
+    "sourceId": "wiki-abenomics"
   },
   {
     "id": "s67",
     "type": "character",
-    "narration": "This is the world of the book 'Flash Boys': high-frequency firms paying for a head start, then racing ahead of ordinary orders through hidden venues called 'dark pools.'",
+    "narration": "One arrow did fire hard: the weak yen. Cheap money made the currency tumble, which flattered exporters and the stock market — and powered a global 'carry trade' of borrowing cheap yen to invest elsewhere.",
     "pose": "explain",
     "props": [
       {
-        "name": "server",
-        "label": "'Flash Boys' & dark pools"
+        "name": "yen",
+        "label": "the weak-yen engine"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "image",
+    "src": "img/kuroda.jpg",
+    "label": "HARUHIKO KURODA",
+    "caption": "fired the monetary 'bazooka'",
+    "narration": "His central-bank chief, Haruhiko Kuroda, fired the first arrow with a monetary 'bazooka' — printing yen on a scale the world had never seen, even buying up stocks and bonds directly."
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "The results were mixed. It weakened the yen, lifted the stock market, and finally nudged prices up a little. But it never fully broke the deflationary mindset, and the debt only grew.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "a partial success"
+      }
+    ]
+  },
+  {
+    "id": "s68",
+    "type": "character",
+    "narration": "And then, recently, something shifted. After thirty years, real inflation and genuine wage rises finally returned. In 2024 the Nikkei smashed past its 1989 record — and the Bank of Japan cautiously began raising rates again.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "2024: the thaw"
       }
     ]
   },
   {
     "id": "s38",
     "type": "title",
-    "narration": "And when enough of these machines interact at once, they can break the whole market in an instant.",
-    "heading": "The Flash Crash",
-    "kicker": "when the algos panic"
-  },
-  {
-    "id": "s68",
-    "type": "character",
-    "narration": "Ever wonder why your trading app is 'free'? Often it sells your orders to big trading firms — a practice called payment for order flow. You're not the customer; your order is the product.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "stockscreen",
-        "label": "why your app is 'free'"
-      }
-    ]
+    "narration": "So that's the 'stuck.' Now for the twist that the gloomy headlines always leave out.",
+    "heading": "Still Rich Anyway",
+    "kicker": "stagnation isn't poverty"
   },
   {
     "id": "s39",
-    "type": "screenshot",
-    "narration": "On May 6th, 2010, the US market suffered a trillion-dollar 'flash crash' — a staggering plunge that lasted only about thirty-six minutes.",
-    "sourceId": "wiki-flashcrash"
+    "type": "character",
+    "narration": "Because here's what three decades of zero growth did NOT do: it did not make Japan poor. Not even close. Stagnation and poverty are two completely different things.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "stuck ≠ poor"
+      }
+    ]
   },
   {
     "id": "s40",
-    "type": "stage",
-    "narration": "In minutes, major stocks lost almost all their value, then bounced back. Investigators later tied part of it to a trader spoofing fake orders — a single manipulator helping tip a cascade of panicking algorithms.",
-    "motif": "flashcrash",
-    "caption": "algorithms crash it in seconds"
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "It was a terrifying glimpse of how fragile a machine-driven market can be — and how a little manipulation, at the wrong moment, can ripple into chaos.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "fragile machinery"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Japan still has a highly developed economy — one of the largest on Earth by total size, and genuinely wealthy per person.",
+    "sourceId": "wiki-economy"
   },
   {
     "id": "s69",
-    "type": "character",
-    "narration": "There's an even older trick: cornering a market. In 1980, two brothers tried to buy up almost all the world's silver to control the price — before the whole scheme collapsed on them spectacularly.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "goldbar",
-        "label": "cornering a market"
-      }
-    ]
+    "type": "compare",
+    "narration": "So hold the two scorecards side by side. The economic spreadsheet looks bleak. The actual lived experience is one of the best on the planet. Both are completely true.",
+    "left": {
+      "title": "On the spreadsheet",
+      "value": "flat, indebted",
+      "icon": "chartdown"
+    },
+    "right": {
+      "title": "In real life",
+      "value": "safe, long, rich",
+      "icon": "hospital"
+    }
+  },
+  {
+    "id": "s41",
+    "type": "stage",
+    "narration": "That's the real paradox. The growth chart is flat as a pancake — but the standard of living is sky-high. Stuck on the spreadsheet, rich in actual life.",
+    "motif": "richbutstuck",
+    "caption": "stuck on paper, rich in life"
   },
   {
     "id": "s42",
-    "type": "title",
-    "narration": "So if the market is this riggable, why isn't it total anarchy?",
-    "heading": "The Watchdogs",
-    "kicker": "why it mostly holds together"
-  },
-  {
-    "id": "s43",
     "type": "character",
-    "narration": "The honest answer: most of the time, it mostly works. Regulators run huge surveillance systems, scanning for odd patterns, and the penalties — fines and prison — are real deterrents.",
+    "narration": "Consider the scorecard. Near-universal healthcare. One of the longest life expectancies in the world. Low unemployment. Low inequality. World-class infrastructure. And streets so safe children ride the subway alone.",
     "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "surveillance & penalties"
+        "name": "hospital",
+        "label": "long lives, low crime"
       }
     ]
   },
   {
     "id": "s70",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Life expectancy (years)",
+    "unit": "yrs",
+    "narration": "Take life expectancy. People in Japan live longer than almost anyone on Earth — years beyond the United States. A 'failing' economy that quietly delivers some of the longest, healthiest lives in human history.",
+    "data": [
+      {
+        "label": "Japan",
+        "value": 84
+      },
+      {
+        "label": "Germany",
+        "value": 81
+      },
+      {
+        "label": "USA",
+        "value": 77
+      }
+    ],
+    "highlight": 0
+  },
+  {
+    "id": "s43",
     "type": "character",
-    "narration": "And regulators now pay for help. Whistleblowers who report serious fraud can collect a slice of the fines — turning insiders' own colleagues into a small army of watchers.",
+    "narration": "And on the world stage, Japan is no pauper. For years it was the planet's largest creditor nation — meaning the world, on net, owes money to Japan, not the other way around.",
     "pose": "explain",
     "props": [
       {
-        "name": "shield",
-        "label": "whistleblower bounties"
+        "name": "globe",
+        "label": "the world's banker"
       }
     ]
   },
   {
     "id": "s44",
     "type": "character",
-    "narration": "But enforcement is a step behind the scammers, especially in new, fast, or lightly-regulated markets. The rigging never fully stops — it just moves to wherever the watchdogs aren't yet looking.",
+    "narration": "Here's the subtle trick the numbers hide. If your population is shrinking, then even a flat economy means a slowly rising slice of pie for each remaining person. Flat total, steady per head.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "padlock",
-        "label": "always a step behind"
+        "name": "percent",
+        "label": "flat total, steady per person"
       }
     ]
   },
   {
     "id": "s71",
-    "type": "character",
-    "narration": "The newest frontier is crypto and finfluencers. Lightly regulated tokens and paid-for 'alerts' have revived every old trick at once — pump-and-dumps and wash trades, running wide open, all day.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "token",
-        "label": "crypto's wild west"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/brain4.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "chase GDP growth forever",
+    "memeBottom": "build a stable, rich, healthy society that stopped growing",
+    "narration": "It forces an uncomfortable upgrade in how we think. Maybe endless growth was always the means — and a good, secure life was supposed to be the end."
   },
   {
     "id": "s45",
     "type": "title",
-    "narration": "Which means your best protection isn't the regulator. It's you.",
-    "heading": "How to Protect Yourself",
-    "kicker": "don't be the exit liquidity"
+    "narration": "Which raises the question that makes this whole story matter to you.",
+    "heading": "The Canary",
+    "kicker": "a preview of the rich world"
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "Rule one: treat every hot tip as a red flag. If a stranger online, a group chat, or a slick caller is urging you to buy some obscure stock right now, you are probably the dump, not the winner.",
-    "pose": "present",
+    "narration": "Japan isn't a freak. It's just early. Aging populations, falling birth rates, mountains of debt, and the limits of low interest rates are now arriving across the whole rich world.",
+    "pose": "explain",
     "props": [
       {
-        "name": "megaphone",
-        "label": "hot tip = red flag"
+        "name": "globe",
+        "label": "everyone's getting older"
       }
     ]
   },
   {
     "id": "s72",
     "type": "character",
-    "narration": "And watch for the magic phrase: 'guaranteed returns.' No honest investment can promise that. The moment you hear it, you are almost certainly being set up as someone's exit.",
-    "pose": "present",
+    "narration": "And the queue behind Japan is long. South Korea, Italy, Germany, and even China are now aging and slowing in strikingly similar ways. Japan just got to the future first.",
+    "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "'guaranteed' = lie"
+        "name": "globe",
+        "label": "the rest are catching up"
       }
     ]
   },
   {
     "id": "s47",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "buy the stock a DM hyped",
-    "memeBottom": "be the one left holding it",
-    "narration": "The people pumping a stock to you are not your friends. By the time the tip reaches you, you're usually the last buyer they need."
+    "type": "character",
+    "narration": "Europe, China, and even parts of the United States are starting to show the very same symptoms. Japan has simply been living in their future for thirty years already.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "living in our future"
+      }
+    ]
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "Rule two: avoid tiny, illiquid penny stocks. Manipulation thrives where a stock is cheap, obscure, and easy to push around. The big, boring, heavily-traded stuff is far harder to rig.",
-    "pose": "present",
+    "narration": "Which flips the lesson entirely. Maybe the question isn't 'what went wrong with Japan?' Maybe it's 'how did Japan stay this rich, safe, and stable while barely growing at all?'",
+    "pose": "explain",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "skip the penny stocks"
+        "name": "brain",
+        "label": "the real question"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "Because our entire economic worldview assumes growth, forever. Japan quietly poses the heretical question: what if a mature, wealthy country simply… stops growing — and manages to be perfectly fine?",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "a world without growth?"
       }
     ]
   },
   {
     "id": "s73",
-    "type": "compare",
-    "narration": "So keep the two worlds straight. Real investing is slow, diversified, and boring. Manipulation is fast, concentrated, and thrilling. If it feels like a thrilling tip, it's probably the trap.",
-    "left": {
-      "title": "Real investing",
-      "value": "slow & boring",
-      "icon": "basket"
-    },
-    "right": {
-      "title": "The rig",
-      "value": "fast & thrilling",
-      "icon": "stockscreen"
-    }
-  },
-  {
-    "id": "s49",
     "type": "character",
-    "narration": "Rule three: distrust urgency. Every one of these scams needs you to act fast, before you think. Real investing is boring and slow — the panic button is the manipulator's favorite tool.",
-    "pose": "present",
+    "narration": "Economists even have a name for the idea Japan keeps bumping into: a 'steady-state' economy — one that stays roughly the same size, and focuses on living well rather than endlessly getting bigger.",
+    "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "urgency is the trap"
+        "name": "scale",
+        "label": "the steady-state idea"
       }
     ]
   },
   {
     "id": "s50",
-    "type": "character",
-    "narration": "And rule four: own broad, diversified funds instead of chasing individual 'winners.' It's remarkably hard to manipulate an entire index — and nearly impossible to pump a whole market onto one person's bags.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "basket",
-        "label": "own the whole market"
-      }
-    ]
-  },
-  {
-    "id": "s74",
-    "type": "character",
-    "narration": "One more: only ever use a properly regulated broker, and check it. A huge share of outright scams start by luring you onto a slick but completely fake 'trading platform.'",
-    "pose": "present",
-    "props": [
-      {
-        "name": "bank",
-        "label": "use a regulated broker"
-      }
-    ]
+    "type": "title",
+    "narration": "So let's total up the paradox.",
+    "heading": "The Final Math",
+    "kicker": "stuck and rich at once"
   },
   {
     "id": "s51",
-    "type": "title",
-    "narration": "So let's total up the rigging.",
-    "heading": "The Final Math",
-    "kicker": "the whole playbook"
+    "type": "chalkboard",
+    "narration": "A giant bubble burst. Deflation and zero rates trapped the economy. An aging, shrinking population froze growth. Debt soared past two hundred percent. And yet — Japan stayed one of the best places on Earth to live.",
+    "lines": [
+      "1989 bubble → a lost generation",
+      "deflation + zero rates → the trap",
+      "aging + shrinking → frozen growth",
+      "…yet still safe, healthy & rich"
+    ]
   },
   {
     "id": "s52",
-    "type": "chalkboard",
-    "narration": "Pump-and-dumps fake demand. Wash trades fake volume. Spoofing fakes orders. Short-and-distort fakes the story. Insiders cheat with secrets. And front-runners cut the line.",
-    "lines": [
-      "pump & dump → fake demand",
-      "wash trade → fake volume",
-      "spoofing → fake orders",
-      "insider / front-run → cheat the line"
+    "type": "character",
+    "narration": "The 'stuck' is real. The stagnation, the debt, the demographic cliff — none of it is a mirage. But neither is the wealth, the safety, or the extraordinary quality of everyday life.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "torii",
+        "label": "both things are true"
+      }
     ]
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "Every single one is a way to fake supply, demand, or information — the three things a fair price is supposed to be built from. Rig any of them, and you've rigged the price.",
-    "pose": "explain",
+    "narration": "Japan is proof that an economy can stop growing and not fall apart. Whether that's a warning or a quiet blueprint for an aging planet… may be the biggest economic question of our century.",
+    "pose": "present",
     "props": [
       {
-        "name": "scale",
-        "label": "fake the inputs, fake the price"
-      }
-    ]
-  },
-  {
-    "id": "s75",
-    "type": "character",
-    "narration": "And yes, sometimes the crowd flips the game. In 2021, an army of small traders squeezed big funds that had shorted a struggling retailer — a wild reminder that manipulation can run in every direction.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "the crowd can squeeze too"
+        "name": "bullettrain",
+        "label": "warning, or blueprint?"
       }
     ]
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "And the deepest cost isn't any single scam. It's trust. A market only works when people believe the price is real — and every rig chips away at the foundation the whole thing stands on.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "So the next time you see a headline mocking Japan's 'stuck' economy, you'll know the other half of the story — the rich, stable life hiding behind that flat line.",
+    "pose": "present",
     "props": [
       {
-        "name": "bank",
-        "label": "it erodes trust itself"
+        "name": "calculator",
+        "label": "read the whole story"
       }
     ]
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "So the next time a stock 'mysteriously' triples on a tip you got in a message, you'll know exactly which game is being played — and you'll know not to be the one holding the bag.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "now you see the game"
-      }
-    ]
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "narration": "If this helped you spot the rig, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this reframed Japan for you, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "stockscreen",
+        "name": "torii",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s57",
+    "id": "s56",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

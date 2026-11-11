@@ -2500,6 +2500,85 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={492} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">algorithms crash it in seconds</text>
       </svg>
     );
+  } else if (m === "nikkeipeak") {
+    // The Nikkei peaks in 1989, crashes, and crawls back over decades.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.6], [0, 1], clampBoth);
+    const path = "M 90 400 L 200 300 L 300 160 L 360 92 L 430 240 L 520 300 L 640 320 L 760 230 L 880 150";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={6} seed={5} /></g>
+        {rev > 0.3 && <text x={360} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">1989 peak</text>}
+        {rev > 0.9 && <text x={818} y={128} fontSize={19} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>back, 34 yrs later</text>}
+        <text x={VW / 2} y={490} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">it took ~34 years to recover</text>
+      </svg>
+    );
+  } else if (m === "agingpyramid") {
+    // A top-heavy, inverted population pyramid.
+    const grow = interpolate(frame, [fps * 0.3, fps * 1.8], [0, 1], clampBoth);
+    const bars: [string, number][] = [["65+", 300], ["40–64", 240], ["20–39", 150], ["0–19", 90]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={96} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">more old than young</text>
+        {bars.map(([lab, w], i) => { const y = 130 + i * 72; const ww = w * grow; return (
+          <g key={i}>
+            <rect x={490 - ww / 2} y={y} width={ww} height={54} rx={6} fill={i === 0 ? red : (i === 3 ? green : tan)} stroke={ink} strokeWidth={3} />
+            <text x={490} y={y + 35} fontSize={20} fontWeight={900} fill={i === 1 || i === 2 ? ink : "#fff"} textAnchor="middle" fontFamily={sans}>{lab}</text>
+          </g>
+        ); })}
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a shrinking, top-heavy population</text>
+      </svg>
+    );
+  } else if (m === "debtownedinside") {
+    // A mountain of government debt — but owed to its own citizens.
+    const grow = interpolate(frame, [fps * 0.3, fps * 1.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(360 300)">
+          <path d={`M -150 120 L 0 ${120 - 300 * grow} L 150 120 Z`} fill={tan} stroke={ink} strokeWidth={5} />
+          <text y={152} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">govt debt ~250%</text>
+        </g>
+        <g transform="translate(760 250)"><circle r={56} fill={blue} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>its own</text><text y={18} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>citizens</text></g>
+        <path d="M520 210 q130 -70 196 24" fill="none" stroke={green} strokeWidth={4} strokeDasharray="7 7" />
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">huge debt — but owed to itself</text>
+      </svg>
+    );
+  } else if (m === "richbutstuck") {
+    // Left: flat growth. Right: a comfortable, modern life.
+    const rev = interpolate(frame, [6, fps * 2.0], [0, 1], clampBoth);
+    const clipId = React.useId().replace(/:/g, "");
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={490} y1={90} x2={490} y2={430} stroke={ink} strokeWidth={3} strokeDasharray="6 6" />
+        <text x={250} y={120} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">growth: flat</text>
+        <RLine x1={120} y1={300} x2={440} y2={300} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d="M120 300 L250 296 L440 298" stroke={red} strokeWidth={5} seed={3} /></g>
+        <text x={740} y={120} fontSize={22} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">life: comfortable</text>
+        <g transform="translate(640 200)">{[0, 1, 2].map((i) => <rect key={i} x={i * 54} y={-i * 22} width={40} height={140 + i * 22} fill={tan} stroke={ink} strokeWidth={4} />)}</g>
+        <text x={VW / 2} y={482} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">stuck on paper, rich in life</text>
+      </svg>
+    );
+  } else if (m === "zombiefirms") {
+    // A failing firm kept alive by an IV drip of near-zero-rate credit.
+    const pulse = 0.5 + 0.5 * Math.sin(frame / 6);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(410 290)">
+          <rect x={-82} y={-72} width={164} height={154} rx={8} fill={tan} stroke={ink} strokeWidth={5} />
+          {[0, 1].map((i) => <rect key={i} x={-56 + i * 62} y={-46} width={36} height={36} fill="#cfd8dc" stroke={ink} strokeWidth={2} />)}
+          <text y={58} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>a failing firm</text>
+        </g>
+        <g transform="translate(650 150)">
+          <rect x={-26} y={-42} width={52} height={74} rx={6} fill="#bfe0ef" stroke={ink} strokeWidth={4} opacity={0.6 + 0.4 * pulse} />
+          <text x={0} y={2} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">0%</text>
+          <line x1={0} y1={32} x2={-150} y2={210} stroke={red} strokeWidth={4} />
+        </g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">zombie firms, alive on cheap debt</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

@@ -136,7 +136,9 @@ export interface StageScene extends Base {
     // EP035 (why markets panic when central banks speak) additions:
     | "fedspeak" | "ratelever" | "forwardguidance" | "tapertantrum" | "dontfightthefed"
     // EP036 (how scammers rig the stock market) additions:
-    | "pumpdump" | "spoofing" | "washtrade" | "frontrun" | "flashcrash";
+    | "pumpdump" | "spoofing" | "washtrade" | "frontrun" | "flashcrash"
+    // EP037 (why Japan is stuck) additions:
+    | "nikkeipeak" | "agingpyramid" | "debtownedinside" | "richbutstuck" | "zombiefirms";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

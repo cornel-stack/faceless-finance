@@ -63,6 +63,8 @@ export type DoodleName =
   | "podium" | "megaphone"
   // EP036 (how scammers rig the stock market) additions:
   | "telephone" | "stockscreen"
+  // EP037 (why Japan is stuck) additions:
+  | "torii" | "bullettrain"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1373,6 +1375,29 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M24 60 L36 50 L46 56 L58 36 L68 44 L76 30" fill="none" stroke={GREEN} strokeWidth={2.8} />
           <RLine x1={40} y1={80} x2={60} y2={80} strokeWidth={SW} />
           <RLine x1={50} y1={70} x2={50} y2={80} strokeWidth={SW} />
+        </>
+      );
+
+    // ---- EP037 (why Japan is stuck) doodles ----
+    case "torii":
+      // A torii gate — the symbol of Japan.
+      return (
+        <>
+          <RPath d="M14 30 L86 30 L82 38 L18 38 Z" fill={RED} strokeWidth={SW} />
+          <RRect x={28} y={44} w={44} h={7} fill={RED} strokeWidth={1.4} />
+          <RRect x={30} y={38} w={9} h={48} fill={RED} strokeWidth={SW} />
+          <RRect x={61} y={38} w={9} h={48} fill={RED} strokeWidth={SW} />
+        </>
+      );
+    case "bullettrain":
+      // A shinkansen — Japan's wealth and infrastructure.
+      return (
+        <>
+          <RPath d="M18 44 Q40 36 84 40 L84 64 L18 64 Q14 54 18 44 Z" fill="#dfe6ea" strokeWidth={SW} />
+          <RLine x1={20} y1={55} x2={84} y2={55} stroke="#3a6ea5" strokeWidth={3} />
+          <RPath d="M22 48 Q30 44 40 47" fill="none" strokeWidth={2} />
+          <RCircle cx={40} cy={66} d={10} fill={INK} strokeWidth={1} />
+          <RCircle cx={66} cy={66} d={10} fill={INK} strokeWidth={1} />
         </>
       );
   }
