@@ -73,6 +73,8 @@ export type DoodleName =
   | "spy" | "magnifier"
   // EP041 (Lehman Brothers) additions:
   | "gorilla" | "tombstone"
+  // EP042 (dot-com bubble) additions:
+  | "dialup" | "sockpuppet"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1497,6 +1499,26 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M30 86 L30 44 Q30 24 50 24 Q70 24 70 44 L70 86 Z" fill={TAN} strokeWidth={SW} />
           <text x={50} y={52} fontSize={14} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">RIP</text>
           <RLine x1={38} y1={62} x2={62} y2={62} strokeWidth={1.6} />
+        </>
+      );
+
+    // ---- EP042 (dot-com bubble) doodles ----
+    case "dialup":
+      // A boxy late-90s CRT computer.
+      return (
+        <>
+          <RRect x={24} y={26} w={52} h={40} fill="#d8d2c4" strokeWidth={SW} />
+          <RRect x={30} y={32} w={40} h={28} fill="#3a6ea5" strokeWidth={1.4} />
+          <RRect x={36} y={68} w={28} h={14} fill="#d8d2c4" strokeWidth={SW} />
+        </>
+      );
+    case "sockpuppet":
+      // The dot-com mascot — a sock puppet.
+      return (
+        <>
+          <RPath d="M38 28 Q50 20 60 30 L66 60 Q68 80 50 84 Q40 82 40 66 L28 54 Q26 40 38 28 Z" fill="#e8e2d6" strokeWidth={SW} />
+          <RCircle cx={50} cy={40} d={6} fill={INK} strokeWidth={0.5} />
+          <RLine x1={28} y1={54} x2={40} y2={52} strokeWidth={2} />
         </>
       );
   }

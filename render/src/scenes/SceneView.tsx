@@ -2859,6 +2859,84 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">too big to fail — or not?</text>
       </svg>
     );
+  } else if (m === "dotcompeak") {
+    // The Nasdaq rockets to its March 2000 peak, then crashes ~78%.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.6], [0, 1], clampBoth);
+    const path = "M 90 420 L 240 360 L 360 280 L 440 160 L 500 82 L 560 200 L 640 330 L 740 400 L 880 420";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={442} x2={VW - 40} y2={442} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={6} seed={5} /></g>
+        {rev > 0.33 && <text x={500} y={58} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Mar 2000 peak</text>}
+        {rev > 0.85 && <text x={800} y={408} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">−78%</text>}
+        <text x={VW / 2} y={492} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the Nasdaq fell about 78%</text>
+      </svg>
+    );
+  } else if (m === "eyeballs") {
+    // 'Eyeballs' soar while profit flatlines on the floor.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.2], [0, 1], clampBoth);
+    const eye = "M 100 400 L 300 300 L 500 180 L 700 92 L 880 60";
+    const profit = "M 100 402 L 300 406 L 500 410 L 700 420 L 880 430";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={90} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={eye} stroke={green} strokeWidth={6} seed={3} />
+          <RPath d={profit} stroke={red} strokeWidth={6} seed={5} />
+        </g>
+        {rev > 0.8 && <g><text x={806} y={48} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>"eyeballs"</text><text x={806} y={420} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>profit</text></g>}
+        <text x={VW / 2} y={490} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">clicks soared, profits never came</text>
+      </svg>
+    );
+  } else if (m === "burnrate") {
+    // A pile of venture cash burning down fast.
+    const burn = interpolate(frame, [fps * 0.4, fps * 2.2], [1, 0.1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 330)">
+          <rect x={-120} y={-160 * burn} width={240} height={160 * burn} rx={6} fill={green} stroke={ink} strokeWidth={5} />
+          <text y={-160 * burn - 16} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">VC cash</text>
+          {Array.from({ length: 6 }, (_, i) => { const p = ((frame * 6 + i * 30) % 120) / 120; const x = -100 + i * 40; return <path key={i} d={`M${x} ${-160 * burn} q10 -30 0 -52 q-10 22 0 52`} fill={i % 2 ? red : gold} opacity={1 - p} stroke="none" />; })}
+        </g>
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">burning millions, earning nothing</text>
+      </svg>
+    );
+  } else if (m === "profitlessvaluation") {
+    // A ballooning valuation wrapped around zero profit.
+    const grow = interpolate(frame, [fps * 0.3, fps * 1.8], [0.3, 1.2], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(490 270) scale(${grow})`}>
+          <circle r={120} fill="#bfe0ef" stroke={ink} strokeWidth={5} />
+          <text y={-8} fontSize={32} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$10bn</text>
+          <text y={32} fontSize={20} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>profit: $0</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">billion-dollar price, zero profit</text>
+      </svg>
+    );
+  } else if (m === "bubbleecho") {
+    // Two rhyming curves: the 2000 dot-com peak and a 2026 echo.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.2], [0, 1], clampBoth);
+    const a = "M 100 400 L 260 320 L 380 200 L 460 112 L 520 92";
+    const b = "M 520 92 L 600 112 L 700 182 L 800 150 L 880 110";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={90} y1={430} x2={VW - 40} y2={430} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={a} stroke={theme.inkSoft} strokeWidth={5} seed={3} />
+          <RPath d={b} stroke={red} strokeWidth={6} seed={6} />
+        </g>
+        {rev > 0.4 && <text x={300} y={300} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>2000: dot-com</text>}
+        {rev > 0.8 && <text x={760} y={126} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>2026: AI?</text>}
+        <text x={VW / 2} y={480} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">history doesn't repeat — it rhymes</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
