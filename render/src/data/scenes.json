@@ -2,890 +2,846 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "For decades, he was the most trusted man on Wall Street. A former chairman of the Nasdaq stock exchange. The guy even other pros wanted to invest with.",
+    "narration": "Some of the richest people alive drive old cars, wear the same gray T-shirt every day, and eat fast food for breakfast. They live like they're almost normal.",
     "pose": "explain",
     "props": [
       {
-        "name": "bell",
-        "label": "ex-Nasdaq chairman"
+        "name": "car",
+        "label": "an old car"
       },
       {
-        "name": "handshake",
-        "label": "everyone trusted him"
+        "name": "dining",
+        "label": "fast-food breakfast"
       }
     ]
   },
   {
     "id": "s2",
-    "type": "image",
-    "src": "img/madoff.jpg",
-    "label": "BERNIE MADOFF",
-    "caption": "the most trusted name on Wall Street",
-    "narration": "This is him. Bernie Madoff — respected, connected, and famous for one magical quality: his fund went up, smoothly, almost every single month, for thirty years."
+    "type": "character",
+    "narration": "Meanwhile, on paper, many of them barely seem to earn anything at all. Some report less taxable income than a schoolteacher. And that is not an accident.",
+    "pose": "think",
+    "bubble": "how do they earn so 'little'?"
   },
   {
     "id": "s3",
+    "type": "image",
+    "src": "img/memes/rollsafe.jpg",
+    "meme": "Roll Safe Think About It",
+    "memeTop": "can't be taxed on your income",
+    "memeBottom": "if you never take an income",
+    "narration": "Because there's a strange trick at the heart of modern wealth: the richer you are, the less you may need to officially 'earn.'"
+  },
+  {
+    "id": "s4",
+    "type": "callout",
+    "narration": "One investigation found the twenty-five richest Americans paid a real tax rate, measured against their growing wealth, of only about three percent.",
+    "text": "~3%",
+    "sub": "the rich's 'true tax rate'",
+    "icon": "percent"
+  },
+  {
+    "id": "s5",
     "type": "character",
-    "narration": "If you were lucky enough to get in, you got steady returns of around ten to twelve percent a year — in good markets and bad. No bad years. Almost no down months. Ever.",
+    "narration": "The average worker, whose wages are taxed before they even hit the bank account, pays a far higher share. So how does that happen — legally?",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "chartup",
-        "label": "~11% a year, always"
+        "name": "paystub",
+        "label": "wages taxed at source"
       }
     ]
   },
   {
-    "id": "s4",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "'my money's up again this month'",
-    "memeBottom": "there was no money",
-    "narration": "It felt like the safest place on Earth to park your money. It was, in fact, the exact opposite."
-  },
-  {
-    "id": "s5",
-    "type": "callout",
-    "narration": "Because the whole thing was fake. The account statements told investors they held sixty-five billion dollars. The real number sitting there was a tiny fraction of that.",
-    "text": "$65 billion",
-    "sub": "…that never existed",
-    "icon": "warning"
+    "id": "s62",
+    "type": "character",
+    "narration": "And a worker can't play the same game. Your salary is reported, withheld, and taxed before it reaches you — there is nowhere for it to hide.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "nowhere to hide"
+      }
+    ]
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's run the numbers on the largest Ponzi scheme in history.",
-    "heading": "Madoff",
-    "kicker": "How $65 Billion Never Existed",
-    "sub": "the biggest Ponzi ever built"
+    "narration": "Let's run the numbers on why the rich work so hard to look like they're not.",
+    "heading": "Why the Rich Pretend to Be Poor",
+    "kicker": "wealth hides in plain sight",
+    "sub": "assets, not income"
   },
   {
     "id": "s7",
-    "type": "screenshot",
-    "narration": "The official record is blunt. Madoff was the admitted mastermind of the largest-known Ponzi scheme in history.",
-    "sourceId": "wiki-madoff"
-  },
-  {
-    "id": "s8",
-    "type": "screenshot",
-    "narration": "It was only discovered in late 2008, when he admitted that the wealth-management arm of his firm was an elaborate, multi-billion-dollar Ponzi scheme.",
-    "sourceId": "wiki-scandal"
-  },
-  {
-    "id": "s80",
-    "type": "timeline",
-    "title": "Madoff, 1960–2021",
-    "narration": "Here's the whole timeline. He founds the firm in 1960. The Ponzi runs for decades. A whistleblower warns regulators from 2000. He's arrested in 2008, sentenced in 2009, and dies in prison in 2021.",
-    "events": [
-      {
-        "year": "1960",
-        "label": "firm founded",
-        "icon": "blueprint"
-      },
-      {
-        "year": "1990s",
-        "label": "Ponzi running",
-        "icon": "chartup"
-      },
-      {
-        "year": "2000",
-        "label": "first warning",
-        "icon": "calculator"
-      },
-      {
-        "year": "2008",
-        "label": "arrested",
-        "icon": "handcuffs"
-      },
-      {
-        "year": "2009",
-        "label": "150 years",
-        "icon": "prison"
-      },
-      {
-        "year": "2021",
-        "label": "dies in prison",
-        "icon": "warning"
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s9",
     "type": "character",
-    "narration": "To understand how, you have to understand what a Ponzi scheme actually is. And the idea is almost insultingly simple.",
-    "pose": "think",
-    "bubble": "what IS a Ponzi?"
-  },
-  {
-    "id": "s10",
-    "type": "screenshot",
-    "narration": "A Ponzi scheme pays apparent profits to earlier investors with funds from more recent investors. That's it. No real trading. No real profits.",
-    "sourceId": "wiki-ponzi"
-  },
-  {
-    "id": "s11",
-    "type": "image",
-    "src": "img/ponzi.jpg",
-    "label": "CHARLES PONZI",
-    "caption": "the 1920s con it's named after",
-    "narration": "It's named after this man — Charles Ponzi, a con artist from the 1920s who promised huge returns and simply paid old investors with new investors' cash."
-  },
-  {
-    "id": "s12",
-    "type": "stage",
-    "narration": "Here's the machine. New money comes in the door. A slice is skimmed off the top. The rest is handed to earlier investors and called 'profit.' Nothing is ever actually invested.",
-    "motif": "ponziflow",
-    "caption": "new money pays old money"
-  },
-  {
-    "id": "s13",
-    "type": "character",
-    "narration": "It works beautifully — as long as new money keeps flowing in, and most people leave their 'profits' sitting in the account instead of cashing out.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pyramid",
-        "label": "needs endless new money"
-      }
-    ]
-  },
-  {
-    "id": "s14",
-    "type": "callout",
-    "narration": "Madoff didn't invent this. He just ran it bigger, and for longer, than anyone in history — for an estimated span of decades.",
-    "text": "nearly 20 years",
-    "sub": "…some say far longer",
-    "icon": "clock"
-  },
-  {
-    "id": "s15",
-    "type": "title",
-    "narration": "So how did he do it, when everyone from banks to regulators was supposedly watching?",
-    "heading": "How He Did It",
-    "kicker": "the machinery of the lie"
-  },
-  {
-    "id": "s16",
-    "type": "character",
-    "narration": "Trick one: credibility. He wasn't some guy in a basement. He had built a real, legitimate stock-trading business, and had chaired a stock exchange.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bell",
-        "label": "a real Wall St. résumé"
-      }
-    ]
-  },
-  {
-    "id": "s17",
-    "type": "screenshot",
-    "narration": "That exchange was the Nasdaq — the first fully electronic stock market. Being its former chairman gave Madoff a glow of total respectability.",
-    "sourceId": "wiki-nasdaq"
-  },
-  {
-    "id": "s18",
-    "type": "character",
-    "narration": "Trick two: exclusivity. He didn't beg for your money. He acted like he didn't want it. Getting into his fund felt like being accepted into a secret club.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "'you can't get in'"
-      }
-    ]
-  },
-  {
-    "id": "s19",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "beg him to take my money",
-    "memeBottom": "feel honored he said yes",
-    "narration": "It's a brilliant inversion. The harder something is to get into, the more people claw to get in — and the less they question it."
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "narration": "Trick three: the feeder funds. Madoff rarely took money directly. Other funds pooled their clients' cash and funneled it to him, taking their own cut.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "exchange",
-        "label": "money funneled in"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "screenshot",
-    "narration": "That's a feeder fund — a fund that does almost all of its investments through one master fund. Layer upon layer of middlemen, all feeding the machine.",
-    "sourceId": "wiki-feeder"
-  },
-  {
-    "id": "s22",
-    "type": "character",
-    "narration": "And those feeders marketed him to exactly the right crowd: the wealthy, the connected, big charities and pensions — people who felt lucky just to be allowed in.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "the wealthy & trusting"
-      }
-    ]
-  },
-  {
-    "id": "s81",
-    "type": "character",
-    "narration": "And through those feeders, the fraud went global — pulling in money from Europe, Asia, and the Gulf, from people and banks who had never once met him.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "globe",
-        "label": "a worldwide net"
-      }
-    ]
-  },
-  {
-    "id": "s23",
-    "type": "screenshot",
-    "narration": "Hedge funds like his are marketed only to institutional investors and high-net-worth individuals — a world of big money and few questions.",
-    "sourceId": "wiki-hedge"
-  },
-  {
-    "id": "s24",
-    "type": "character",
-    "narration": "Trick four, the masterstroke: the statements. Every month, investors got beautiful, detailed paperwork showing trades, gains, and a steadily growing balance.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "envelope",
-        "label": "glossy monthly statements"
-      }
-    ]
-  },
-  {
-    "id": "s25",
-    "type": "stage",
-    "narration": "There was just one problem. The trades on those statements never happened. They were printed fairy tales — numbers typed up to match returns he'd invented.",
-    "motif": "fakestatement",
-    "caption": "the statements were fiction"
-  },
-  {
-    "id": "s82",
-    "type": "character",
-    "narration": "The paperwork was manufactured on a separate, secret floor of his office — a hidden back room whose only real product was convincing statements.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "a secret back room"
-      }
-    ]
-  },
-  {
-    "id": "s83",
-    "type": "compare",
-    "narration": "So picture the two versions of the same account. On the statement, a fortune, growing every month. In reality, an empty box with almost nothing inside.",
-    "left": {
-      "title": "On the statement",
-      "value": "a growing fortune",
-      "icon": "envelope"
-    },
-    "right": {
-      "title": "In reality",
-      "value": "almost nothing",
-      "icon": "warning"
-    }
-  },
-  {
-    "id": "s26",
-    "type": "title",
-    "narration": "And this is where the returns were the tell — if anyone had bothered to look.",
-    "heading": "The Tells",
-    "kicker": "the math never worked"
-  },
-  {
-    "id": "s27",
-    "type": "character",
-    "narration": "Real investing is bumpy. Even the greatest investors have losing years, scary months, gut-churning dips. That's just what markets are.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "candles",
-        "label": "real returns are jagged"
-      }
-    ]
-  },
-  {
-    "id": "s28",
-    "type": "stage",
-    "narration": "Madoff's returns were a smooth line sloping gently upward, year after year — barely a wobble. In the real world, that line is impossible.",
-    "motif": "impossiblereturns",
-    "caption": "too smooth to be real"
-  },
-  {
-    "id": "s29",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "returns that never, ever dip are a red flag, not a dream",
-    "narration": "A return that never dips isn't a sign of genius. It's a sign that someone is making the numbers up."
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "There were other tells, too. The volume of options his 'strategy' claimed to trade was larger than the entire market for those options actually was.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "the math didn't exist"
-      }
-    ]
-  },
-  {
-    "id": "s84",
-    "type": "character",
-    "narration": "He wrapped it all in jargon — a strategy he called a 'split-strike conversion.' Complicated enough to sound sophisticated, vague enough that almost nobody could truly check it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "baffle them with jargon"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "character",
-    "narration": "And a tiny, unknown accounting firm — a few people in a strip mall — supposedly audited a multi-billion-dollar global fund. That alone should have ended it.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "a 3-person 'auditor'"
-      }
-    ]
-  },
-  {
-    "id": "s32",
-    "type": "title",
-    "narration": "The incredible part is this: one man saw it, did the math, and screamed about it for years.",
-    "heading": "The Whistleblower",
-    "kicker": "nobody listened"
-  },
-  {
-    "id": "s33",
-    "type": "image",
-    "src": "img/markopolos.jpg",
-    "label": "HARRY MARKOPOLOS",
-    "caption": "did the math — and was ignored",
-    "narration": "His name is Harry Markopolos. A financial analyst who was asked to replicate Madoff's returns — and quickly realized they were mathematically impossible."
-  },
-  {
-    "id": "s34",
-    "type": "screenshot",
-    "narration": "Markopolos is best known for initially discovering Bernie Madoff's Ponzi scheme — years before it collapsed.",
-    "sourceId": "wiki-markopolos"
-  },
-  {
-    "id": "s35",
-    "type": "character",
-    "narration": "He said he figured out it was a fraud in minutes, and could prove it in hours. He handed detailed evidence to regulators, with a memo bluntly titled that the world's largest hedge fund was a fraud.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "'this is a fraud'"
-      }
-    ]
-  },
-  {
-    "id": "s36",
-    "type": "screenshot",
-    "narration": "He took it to the agency whose job is to enforce the laws against market manipulation — the Securities and Exchange Commission.",
-    "sourceId": "wiki-sec"
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "narration": "He warned them in 2000. And 2001. And 2005, and 2007, and 2008. Over and over, for roughly nine years. And over and over, nothing meaningful happened.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "warned for ~9 years"
-      }
-    ]
-  },
-  {
-    "id": "s85",
-    "type": "character",
-    "narration": "Investigators did visit his office. They asked questions, poked around — and walked away reassured. His reputation was so bulletproof that the word 'fraud' felt unthinkable.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "they looked, and left"
-      }
-    ]
-  },
-  {
-    "id": "s38",
-    "type": "image",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "ignore a fraud for nine years",
-    "narration": "The man who was supposed to be caught was too respected to be seriously investigated. His reputation was his best disguise."
-  },
-  {
-    "id": "s39",
-    "type": "title",
-    "narration": "So if nobody stopped it, what finally brought it down? The one thing a Ponzi can never survive.",
-    "heading": "The Collapse",
-    "kicker": "when the money ran out"
-  },
-  {
-    "id": "s40",
-    "type": "character",
-    "narration": "Remember the rule: a Ponzi lives or dies on new money coming in, and old money staying put. In 2008, both of those broke at the same time.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pyramid",
-        "label": "the machine stalls"
-      }
-    ]
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "The financial crisis hit. Panicked investors everywhere needed cash, and started asking Madoff for their money back — billions of dollars, all at once.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "2008: everyone wants out"
-      }
-    ]
-  },
-  {
-    "id": "s42",
-    "type": "stage",
-    "narration": "And that's the moment every Ponzi dreads. When enough people demand their money at once, there's nothing to give them — because it was never really there.",
-    "motif": "redemptionrun",
-    "caption": "the redemptions he couldn't pay"
-  },
-  {
-    "id": "s43",
-    "type": "callout",
-    "narration": "Investors asked for about seven billion dollars back. Madoff had nowhere near enough to cover it.",
-    "text": "$7 billion",
-    "sub": "in redemptions he couldn't pay",
-    "icon": "moneybag"
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "Cornered, he confessed — first to his sons, telling them the whole business was, in his words, one big lie. They reported him to the authorities.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "phone",
-        "label": "'it's all one big lie'"
-      }
-    ]
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "In December 2008, Bernie Madoff was arrested. And the true scale of the hole finally came into view.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "handcuffs",
-        "label": "arrested, Dec 2008"
-      }
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "callout",
-    "narration": "On paper, investors thought they had sixty-five billion dollars. That figure included decades of fake, invented profits.",
-    "text": "$65 billion",
-    "sub": "on the statements (mostly fake)",
-    "icon": "envelope"
-  },
-  {
-    "id": "s47",
-    "type": "callout",
-    "narration": "The actual cash people had handed over and lost — the real principal — was closer to seventeen billion dollars. Still one of the biggest thefts ever.",
-    "text": "$17 billion",
-    "sub": "of real money, actually lost",
-    "icon": "warning"
-  },
-  {
-    "id": "s86",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Madoff, by the numbers",
-    "unit": "$B",
-    "narration": "Line the numbers up. Sixty-five billion dollars on the statements. Around seventeen billion of real money actually lost. And, remarkably, about fourteen billion clawed back.",
-    "data": [
-      {
-        "label": "on paper",
-        "value": 65
-      },
-      {
-        "label": "really lost",
-        "value": 17
-      },
-      {
-        "label": "clawed back",
-        "value": 14
-      }
-    ],
-    "highlight": 0
-  },
-  {
-    "id": "s48",
-    "type": "title",
-    "narration": "But numbers that big hide something worse: who actually paid the price.",
-    "heading": "The Victims",
-    "kicker": "it wasn't just the rich"
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "Yes, some victims were wealthy and famous. But many were ordinary — retirees who'd parked their life savings, and trusted because everyone else did.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "retiree",
-        "label": "wiped-out retirees"
-      }
-    ]
-  },
-  {
-    "id": "s87",
-    "type": "character",
-    "narration": "The victims ranged from film directors and sports legends to some of the world's biggest banks — and tens of thousands of ordinary people who simply trusted the paperwork.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "famous and ordinary alike"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "And charities. Entire foundations, universities, and nonprofits had their endowments wiped out overnight. Some good organizations simply shut down for good.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "charities destroyed"
-      }
-    ]
-  },
-  {
-    "id": "s51",
-    "type": "image",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "the statement: a comfortable retirement",
-    "memeBottom": "the reality: nothing was there",
-    "narration": "People who thought they were secure for life discovered, in a single day, that their nest egg had never existed."
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "The human toll reached into Madoff's own family. His brother was sentenced to prison. And two years to the day after the arrest, one of his sons died by suicide.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "a family destroyed too"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "title",
-    "narration": "Then came the reckoning — and a surprising, slow recovery of the money.",
-    "heading": "The Reckoning",
-    "kicker": "prison, and the clawback"
-  },
-  {
-    "id": "s54",
-    "type": "image",
-    "src": "img/madoff.jpg",
-    "label": "GUILTY",
-    "mug": true,
-    "circle": true,
-    "caption": "Bernie Madoff — 150 years",
-    "narration": "Bernie Madoff pleaded guilty to eleven federal felonies. There was no deal, no leniency. The judge handed down the maximum."
-  },
-  {
-    "id": "s55",
-    "type": "callout",
-    "narration": "He was sentenced to a hundred and fifty years in federal prison — a symbolic life sentence many times over. He died behind bars in 2021.",
-    "text": "150 years",
-    "sub": "in federal prison",
-    "icon": "prison"
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "narration": "But a prison cell doesn't refund anyone. So a court appointed a trustee with one brutal job: find the money, and get it back.",
+    "narration": "The whole thing rests on one distinction that most of us blur together every day: the difference between income and wealth.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "a trustee is appointed"
+        "label": "income vs wealth"
       }
     ]
-  },
-  {
-    "id": "s57",
-    "type": "image",
-    "src": "img/picard.jpg",
-    "label": "IRVING PICARD",
-    "caption": "clawed back billions for victims",
-    "narration": "This is that trustee — Irving Picard — known for his recovery of funds from the Madoff scandal, hunting down the money for over a decade."
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "narration": "His main weapon was the clawback. The law let him sue people who had taken out more than they put in — the 'winners' — and reclaim those fake profits for the losers.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scissors",
-        "label": "sue the early 'winners'"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "stage",
-    "narration": "It feels harsh, but it's fair: that extra money was never Madoff's to give. It was other victims' stolen cash. So it gets pulled back, and shared out.",
-    "motif": "clawback",
-    "caption": "winners repay the losers"
-  },
-  {
-    "id": "s60",
-    "type": "callout",
-    "narration": "Against all odds, the trustee recovered roughly fourteen billion dollars — the large majority of the real money that was actually lost.",
-    "text": "$14 billion",
-    "sub": "clawed back for victims",
-    "icon": "moneybag"
-  },
-  {
-    "id": "s61",
-    "type": "screenshot",
-    "narration": "That recovery effort is what Irving Picard is known for — one of the most successful fraud clawbacks ever attempted.",
-    "sourceId": "wiki-picard"
-  },
-  {
-    "id": "s62",
-    "type": "title",
-    "narration": "So step back. Why did this work — on smart, careful, wealthy people — for so long?",
-    "heading": "Why It Worked",
-    "kicker": "the anatomy of the con"
   },
   {
     "id": "s63",
     "type": "character",
-    "narration": "Reason one: affinity and trust. Madoff moved in tight social and community circles. When your friend, your rabbi, your club swears by it, you don't audit it. You join.",
+    "narration": "You already know this at a small scale. Someone can own a paid-off house worth two million dollars and still earn a modest salary. Asset-rich, income-modest — same idea, smaller numbers.",
     "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "trust inside the circle"
+        "name": "house",
+        "label": "rich in what you own"
       }
     ]
+  },
+  {
+    "id": "s8",
+    "type": "screenshot",
+    "narration": "Income is the money that flows to you in a given period — a salary, a wage, the cash arriving this month.",
+    "sourceId": "wiki-income"
+  },
+  {
+    "id": "s9",
+    "type": "screenshot",
+    "narration": "Wealth is different. Your net worth is the current value of your assets, minus your debts — everything you own that has value.",
+    "sourceId": "wiki-wealth"
+  },
+  {
+    "id": "s10",
+    "type": "character",
+    "narration": "Here's the key: our tax system is built mostly to tax income — the flow. It is very bad at taxing wealth — the pile that just sits there, quietly growing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "we tax the flow…"
+      },
+      {
+        "name": "vault",
+        "label": "…not the pile"
+      }
+    ]
+  },
+  {
+    "id": "s11",
+    "type": "stage",
+    "narration": "And the rich are not income-rich. They're asset-rich. Their fortune is a mountain of stock and property — while the salary they actually report can be almost nothing.",
+    "motif": "assetvsincome",
+    "caption": "tiny income, a mountain of assets"
   },
   {
     "id": "s64",
+    "type": "compare",
+    "narration": "So picture the two numbers side by side. The income a billionaire reports can be almost nothing. The wealth they hold can be beyond imagining.",
+    "left": {
+      "title": "Reported income",
+      "value": "~a schoolteacher's",
+      "icon": "paystub"
+    },
+    "right": {
+      "title": "Actual wealth",
+      "value": "billions",
+      "icon": "goldbar"
+    }
+  },
+  {
+    "id": "s12",
     "type": "character",
-    "narration": "Reason two: the comfort of the crowd. If this many rich, sophisticated people are in, it must be safe, right? Everyone was leaning on everyone else's confidence.",
+    "narration": "So step one of looking poor is simply: don't take a big salary. Many founders famously pay themselves one dollar a year.",
     "pose": "explain",
     "props": [
       {
-        "name": "crowd",
-        "label": "'everyone smart is in'"
-      }
-    ]
-  },
-  {
-    "id": "s65",
-    "type": "image",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeTop": "cautious investors",
-    "memeBottom": "a guy promising smooth 11% forever",
-    "narration": "The promise of high returns with almost no risk is the oldest bait there is — and it never stops working."
-  },
-  {
-    "id": "s66",
-    "type": "character",
-    "narration": "Reason three: willful blindness. When your statements say you're getting richer every month, you don't want to ask hard questions. The lie was comfortable.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "envelope",
-        "label": "nobody wanted to look"
+        "name": "cheque",
+        "label": "a $1 salary"
       }
     ]
   },
   {
     "id": "s67",
     "type": "character",
-    "narration": "And reason four: the watchdog was asleep. The regulator was handed the answer, by Markopolos, on a plate — and failed to act for nearly a decade.",
+    "narration": "The one-dollar salary is almost a Silicon Valley tradition. Founders of Google, Oracle, and more have all done it. It signals humility — and it minimizes taxable income.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "padlock",
-        "label": "regulators missed it"
+        "name": "briefcase",
+        "label": "a founder tradition"
       }
     ]
   },
   {
+    "id": "s13",
+    "type": "image",
+    "src": "img/zuckerberg.jpg",
+    "label": "MARK ZUCKERBERG",
+    "caption": "salary: $1 a year",
+    "narration": "Mark Zuckerberg takes a salary of one dollar. So does the head of more than one giant company. On an income tax form, a dollar is almost nothing to tax."
+  },
+  {
+    "id": "s65",
+    "type": "image",
+    "src": "img/bezos.jpg",
+    "label": "JEFF BEZOS",
+    "caption": "fortune lives in Amazon stock",
+    "narration": "Jeff Bezos built one of the largest fortunes on Earth, almost all of it in Amazon shares — not in a giant salary he had to pay tax on each year."
+  },
+  {
+    "id": "s66",
+    "type": "image",
+    "src": "img/musk.jpg",
+    "label": "ELON MUSK",
+    "caption": "paid in stock, not salary",
+    "narration": "Elon Musk's wealth is overwhelmingly Tesla and SpaceX stock. For years he took essentially no cash salary at all — the shares were always the point."
+  },
+  {
+    "id": "s14",
+    "type": "callout",
+    "narration": "A one-dollar salary isn't a sacrifice. When nearly all your wealth is stock, your paycheck was never where the money was.",
+    "text": "$1",
+    "sub": "salary — the money's elsewhere",
+    "icon": "cheque"
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "narration": "Because the real wealth is in shares they own. And here's the beautiful part, for them: simply owning something that goes up in value is not taxed at all.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "stock that keeps rising"
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "type": "screenshot",
+    "narration": "A capital gains tax is a tax on the profit realised on the sale of an asset. The key word is 'sale.' No sale, no tax.",
+    "sourceId": "wiki-cgt"
+  },
+  {
+    "id": "s17",
+    "type": "stage",
+    "narration": "So while your stock balloons from a million to a billion, that gain is only on paper. It's an 'unrealized' gain — and the tax man cannot touch it until you sell.",
+    "motif": "unrealizedgains",
+    "caption": "not sold = not taxed"
+  },
+  {
     "id": "s68",
+    "type": "character",
+    "narration": "This is how someone becomes a billionaire without ever 'earning' a billion. The company's share price does the heavy lifting — all on paper, all untaxed, until the day they sell.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "the share price does the work"
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "sell stock and pay tax",
+    "memeBottom": "never sell, stay a 'poor' billionaire",
+    "narration": "Which creates an obvious problem for them. If selling triggers the tax, how do they get cash to actually live on?"
+  },
+  {
+    "id": "s19",
     "type": "title",
-    "narration": "Which leaves the one lesson worth carrying out of this whole saga.",
-    "heading": "The Lesson",
-    "kicker": "paper is not money"
+    "narration": "The answer is a quiet strategy with a blunt nickname — and it's where the money to live comes from.",
+    "heading": "Buy, Borrow, Die",
+    "kicker": "spending without selling"
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "narration": "Step one: buy. Acquire assets — stocks, companies, real estate — and simply hold them, letting the value grow, untaxed, for decades.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldbar",
+        "label": "buy & hold assets"
+      }
+    ]
   },
   {
     "id": "s69",
     "type": "character",
-    "narration": "The deepest trick of all was philosophical. Madoff taught thousands of people to confuse a piece of paper with their actual wealth.",
+    "narration": "Real estate adds its own magic. On paper, buildings 'lose' value each year through depreciation — creating paper losses that cancel out real income, even as the building actually rises in price.",
     "pose": "explain",
     "props": [
       {
-        "name": "envelope",
-        "label": "a statement…"
+        "name": "apartment",
+        "label": "paper losses, real gains"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "narration": "Step two: borrow. Instead of selling stock and paying tax, they take out loans using that stock as collateral. And a loan is not income — so it isn't taxed.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bank",
+        "label": "borrow against the stock"
       }
     ]
   },
   {
     "id": "s70",
     "type": "character",
-    "narration": "But the statement is not the money. A number on a screen is a promise, not a fact. It's only real when you can actually pull the cash out — and everyone can't, at once.",
+    "narration": "Banks even sell a product for exactly this: a securities-backed line of credit. Pledge your shares, receive cash to spend, and never sell a single one.",
     "pose": "explain",
     "props": [
       {
-        "name": "vault",
-        "label": "…is not the money"
+        "name": "creditcard",
+        "label": "borrow on your shares"
       }
     ]
   },
   {
     "id": "s71",
-    "type": "image",
-    "src": "img/memes/brain4.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "chasing high returns",
-    "memeBottom": "asking 'where do the returns actually come from?'",
-    "narration": "The one question that would have saved everyone is the same one that protects you from any scam: where, exactly, does the money come from?"
-  },
-  {
-    "id": "s72",
     "type": "character",
-    "narration": "If an investment never has a bad month, if you can't understand how it makes money, and if getting your cash out is strangely difficult — those aren't quirks. They're alarms.",
-    "pose": "present",
+    "narration": "Fund managers get their own door, called carried interest — a quirk that lets a big chunk of their pay be taxed at lower investment rates instead of ordinary income rates.",
+    "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "smooth returns = red flag"
+        "name": "briefcase",
+        "label": "the carried-interest door"
       }
     ]
   },
   {
-    "id": "s73",
-    "type": "title",
-    "narration": "So let's total up the receipts on history's biggest Ponzi.",
-    "heading": "The Final Tally",
-    "kicker": "what was real, what wasn't"
+    "id": "s22",
+    "type": "callout",
+    "narration": "A billionaire can borrow millions to live on, at tiny interest rates, and legally owe almost nothing in tax on that cash — because borrowed money isn't earnings.",
+    "text": "tax-free cash",
+    "sub": "loans aren't income",
+    "icon": "iou"
   },
   {
-    "id": "s74",
-    "type": "chalkboard",
-    "narration": "On the statements: sixty-five billion dollars. Real money lost: around seventeen billion. Recovered: about fourteen billion. Actual trades made with it: zero.",
-    "lines": [
-      "on the statements: $65 billion",
-      "real money lost: ~$17 billion",
-      "clawed back: ~$14 billion",
-      "real trades ever made: zero"
+    "id": "s23",
+    "type": "character",
+    "narration": "Step three — the grim one: die. When assets pass to heirs, their taxable value is often reset to the current price, in a rule called the stepped-up basis.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "refinance",
+        "label": "heirs reset the clock"
+      }
     ]
   },
   {
-    "id": "s75",
+    "id": "s24",
+    "type": "screenshot",
+    "narration": "A high stepped-up basis can greatly reduce the heir's taxable gain. Decades of growth that was never taxed can effectively be wiped clean on death.",
+    "sourceId": "wiki-stepup"
+  },
+  {
+    "id": "s72",
     "type": "character",
-    "narration": "Thirty years of trust, built on statements that described trades that never happened, paying profits that were never earned, with money that was simply… gone.",
+    "narration": "So the ultimate tax shelter is, bluntly, death. A lifetime of untaxed growth can pass to the next generation with the slate wiped nearly clean.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "shredder",
-        "label": "30 years of fiction"
+        "name": "refinance",
+        "label": "the final loophole"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "stage",
+    "narration": "Put it together — buy, borrow, die — and you get a way to live like a king for a lifetime, pass on a fortune, and pay startlingly little tax along the way.",
+    "motif": "buyborrowdie",
+    "caption": "buy, borrow, die"
+  },
+  {
+    "id": "s26",
+    "type": "screenshot",
+    "narration": "Crucially, most of this is tax avoidance — the legal use of the tax rules to reduce what you owe. It is not the same as illegal tax evasion.",
+    "sourceId": "wiki-avoid"
+  },
+  {
+    "id": "s73",
+    "type": "callout",
+    "narration": "In certain years, reporters found, some of the very richest people legally paid zero dollars in federal income tax — while their fortunes still grew by billions.",
+    "text": "$0",
+    "sub": "federal income tax, some years",
+    "icon": "taxform"
+  },
+  {
+    "id": "s27",
+    "type": "image",
+    "src": "img/memes/brain4.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "earn a salary and get taxed",
+    "memeBottom": "own assets, borrow, and barely get taxed",
+    "narration": "It's all perfectly legal. The tax code simply treats a mountain of assets very differently from a monthly wage."
+  },
+  {
+    "id": "s28",
+    "type": "title",
+    "narration": "But low taxes are only half the story. The other half is a performance — and some of it is completely real.",
+    "heading": "The Frugal Flex",
+    "kicker": "why they actually live modestly"
+  },
+  {
+    "id": "s29",
+    "type": "character",
+    "narration": "Because here's the twist: many of the most famous billionaires genuinely do actually live modestly. It isn't all an act.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "house",
+        "label": "a modest house"
+      }
+    ]
+  },
+  {
+    "id": "s30",
+    "type": "image",
+    "src": "img/warren.jpg",
+    "label": "WARREN BUFFETT",
+    "caption": "~$149B — still in his 1958 house",
+    "narration": "Take Warren Buffett, worth over a hundred billion dollars. He still lives in the modest house he bought in 1958, and famously grabs a cheap McDonald's breakfast."
+  },
+  {
+    "id": "s31",
+    "type": "screenshot",
+    "narration": "Buffett is one of the best-known investors in the world — and a walking advertisement for spending far, far less than you could.",
+    "sourceId": "wiki-buffett"
+  },
+  {
+    "id": "s74",
+    "type": "character",
+    "narration": "Buffett has also pledged to give almost all his wealth away. That's genuinely generous — and, not coincidentally, one of the most tax-efficient moves a billionaire can make.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "giving = tax-smart too"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "image",
+    "src": "img/samwalton.jpg",
+    "label": "SAM WALTON",
+    "caption": "richest man in America — drove a pickup",
+    "narration": "Sam Walton, who built Walmart into a giant, drove a battered old pickup truck — even when he was the richest man in America."
+  },
+  {
+    "id": "s33",
+    "type": "stage",
+    "narration": "That's the frugal flex. Behind a twenty-year-old car and a plain T-shirt sits a fortune most people can't even picture.",
+    "motif": "frugalflex",
+    "caption": "…drives a 20-year-old car"
+  },
+  {
+    "id": "s34",
+    "type": "image",
+    "src": "img/kamprad.jpg",
+    "label": "INGVAR KAMPRAD",
+    "caption": "IKEA founder — flew economy, old Volvo",
+    "narration": "Ingvar Kamprad, the founder of IKEA, reportedly flew economy class, drove an old Volvo for years, and furnished his home with — what else — IKEA."
+  },
+  {
+    "id": "s75",
+    "type": "image",
+    "src": "img/jobs.jpg",
+    "label": "STEVE JOBS",
+    "caption": "Apple salary: $1",
+    "narration": "Steve Jobs famously took a one-dollar salary at Apple for years. The paycheck was a rounding error; his Apple and Pixar stock was the real fortune."
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "For some, it's genuine habit — thrift that helped them get rich in the first place. Frugality is simply the avoidance of waste and extravagance.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "real lifelong thrift"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "screenshot",
+    "narration": "That's the dictionary definition — the avoidance of waste, extravagance, and lavishness. For some billionaires, it's a sincere value.",
+    "sourceId": "wiki-frugality"
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "But let's be honest — it's also, conveniently, a brilliant strategy. Because looking poor buys a billionaire several very valuable things.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "magichat",
+        "label": "modesty pays off"
       }
     ]
   },
   {
     "id": "s76",
-    "type": "image",
-    "src": "img/madoff.jpg",
-    "label": "BERNIE MADOFF",
-    "caption": "sold certainty — the one thing markets can't give",
-    "narration": "He didn't really sell an investment. He sold certainty — a smooth line that only ever went up. And certainty, in markets, is the one thing nobody can honestly promise."
+    "type": "character",
+    "narration": "There's even a name for the fashionable version of this now — 'stealth wealth,' or quiet luxury. No loud logos. The flex is that you no longer need to flex at all.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "magichat",
+        "label": "'stealth wealth'"
+      }
+    ]
+  },
+  {
+    "id": "s38",
+    "type": "title",
+    "narration": "So why would a billionaire actively want to look like they're not? There are at least four reasons.",
+    "heading": "Why Pretend?",
+    "kicker": "what looking poor buys you"
+  },
+  {
+    "id": "s39",
+    "type": "character",
+    "narration": "Reason one: taxes and scrutiny. The less visible income you have, and the quieter you are about your wealth, the less attention you attract from tax authorities and the public.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "stay off the radar"
+      }
+    ]
+  },
+  {
+    "id": "s40",
+    "type": "character",
+    "narration": "Reason two: envy and safety. Flaunting billions invites resentment, lawsuits, con artists, even kidnapping threats. Blending in is a form of security.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "padlock",
+        "label": "don't paint a target"
+      }
+    ]
   },
   {
     "id": "s77",
     "type": "character",
-    "narration": "So the next time something offers you steady, guaranteed, never-a-bad-month returns, picture that smooth impossible line — and ask where the money truly comes from.",
-    "pose": "present",
+    "narration": "This is a real concern, not just vanity. Visible, flaunted wealth genuinely does attract lawsuits, scams, and security threats to a family. Blending in can be simple self-defense.",
+    "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "calculator",
-        "label": "always ask: where from?"
+        "name": "shield",
+        "label": "a security strategy"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "image",
+    "src": "img/memes/distracted.jpg",
+    "meme": "Distracted Boyfriend",
+    "memeTop": "the public's sympathy",
+    "memeBottom": "a billionaire in a $10 T-shirt",
+    "narration": "Reason three: image. 'Relatable' billionaires get admiration instead of anger. A plain T-shirt is surprisingly good public relations."
+  },
+  {
+    "id": "s42",
+    "type": "character",
+    "narration": "Reason four: focus and brand. 'I don't care about money, I care about the mission' is a powerful story — for customers, employees, and investors alike.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "'it's about the mission'"
       }
     ]
   },
   {
     "id": "s78",
     "type": "character",
-    "narration": "If this made the biggest fraud in history finally make sense, hit subscribe — and tell me which impossible number you want me to pull apart next.",
+    "narration": "And the daily uniform — the hoodie, the gray tee, the black turtleneck — is half convenience and half branding. It quietly says: I'm not doing this for the money.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "the uniform as branding"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "narration": "So the humble image and the low tax bill reinforce each other. One looks like virtue; the other quietly saves a fortune. Both point the same way: look smaller than you are.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mansion",
+        "label": "small look, huge reality"
+      }
+    ]
+  },
+  {
+    "id": "s44",
+    "type": "title",
+    "narration": "Which raises the uncomfortable question — if the rich pay so little, who actually pays?",
+    "heading": "Who Pays?",
+    "kicker": "the visible vs the invisible"
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "The answer is: people whose money is income, not assets. If your wealth is a paycheck, it's fully visible, and it's taxed before you ever see it.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "wages: fully taxed"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "stage",
+    "narration": "That's the real gap. A nurse or an engineer can easily pay a higher share of their yearly gains than someone worth a thousand times more.",
+    "motif": "truetaxrate",
+    "caption": "the 'true tax rate'"
+  },
+  {
+    "id": "s79",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Share of yearly gains paid in tax",
+    "unit": "%",
+    "narration": "Stack it up. A typical worker can hand over roughly a quarter to a third of what they make. The ultra-wealthy, measured against their rising fortune, can pay just a few percent.",
+    "data": [
+      {
+        "label": "worker",
+        "value": 30
+      },
+      {
+        "label": "the rich",
+        "value": 3
+      }
+    ],
+    "highlight": 1
+  },
+  {
+    "id": "s47",
+    "type": "screenshot",
+    "narration": "This is exactly what investigative journalists uncovered — a nonprofit newsroom obtained tax data showing how little the ultra-wealthy really paid.",
+    "sourceId": "wiki-propublica"
+  },
+  {
+    "id": "s80",
+    "type": "character",
+    "narration": "The data told a consistent story: the more of your wealth sits in assets rather than wages, the lower your real tax rate tends to fall. It flips what most people assume.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "the pattern was clear"
+      }
+    ]
+  },
+  {
+    "id": "s48",
+    "type": "image",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "the tax code: tax income heavily",
+    "memeBottom": "the rich: so I'll just have no income",
+    "narration": "The system taxes what workers have — income — and barely touches what the rich have — assets. It's not a glitch. It's the design."
+  },
+  {
+    "id": "s49",
+    "type": "callout",
+    "narration": "A billionaire is simply someone whose net worth is at least a thousand million. Notice the word: net worth. Not income.",
+    "text": "$1 billion",
+    "sub": "net worth — not income",
+    "icon": "moneybag"
+  },
+  {
+    "id": "s81",
+    "type": "character",
+    "narration": "And it's always been this way. The first billionaire, oil baron John D. Rockefeller, hit the mark back in 1916 — and even then, the fortune was in oil and shares, not a salary.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "oilbarrel",
+        "label": "rich in assets since 1916"
+      }
+    ]
+  },
+  {
+    "id": "s50",
+    "type": "title",
+    "narration": "So what's the lesson hiding inside all of this?",
+    "heading": "The Lesson",
+    "kicker": "stop watching the salary"
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "The big one is this: income is a terrible measure of how rich someone truly is. The wealthiest people on Earth can have, on paper, almost no income at all.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "income ≠ wealth"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "So when a headline says someone 'only earned' a modest sum, that may be completely true — and completely beside the point. Watch the assets, not the salary.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "watch what they OWN"
+      }
+    ]
+  },
+  {
+    "id": "s82",
+    "type": "character",
+    "narration": "So train yourself to ask a different question. Not 'what do they earn?' but 'what do they own, and what is it worth?' That's where the real wealth always hides.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "vault",
+        "label": "ask what they OWN"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "being 'low income' and being poor are not the same thing",
+    "narration": "Low income and low wealth are two completely different things. The rich have learned to show you the first while quietly keeping the second."
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "And there's a fair point buried in here too. Taxing assets that only exist on paper is genuinely hard, and can have real side effects. This isn't a simple story of villains.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "it's genuinely tricky"
+      }
+    ]
+  },
+  {
+    "id": "s83",
+    "type": "character",
+    "narration": "Some countries have tried a direct wealth tax — an annual levy on net worth itself. Many have quietly dropped it: the wealthy are mobile, and assets are genuinely slippery to value.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "wealth taxes are hard"
+      }
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "narration": "But understanding the game changes how you read the world — and your own money. Most ordinary wealth is built the same quiet way: owning assets, not chasing a bigger paycheck.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "own assets, quietly"
+      }
+    ]
+  },
+  {
+    "id": "s84",
+    "type": "character",
+    "narration": "And the honest takeaway isn't just envy. The same engine works, in miniature, for anyone: real wealth is built by owning assets that grow — not by chasing a slightly bigger paycheck.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "own assets, patiently"
+      }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "title",
+    "narration": "So let's total up the trick.",
+    "heading": "The Final Math",
+    "kicker": "how to be rich and look poor"
+  },
+  {
+    "id": "s57",
+    "type": "chalkboard",
+    "narration": "Take a tiny salary, so there's little income to tax. Hold assets that grow untaxed. Borrow against them for tax-free cash. And live modestly, so nobody asks questions.",
+    "lines": [
+      "tiny salary → little taxed income",
+      "hold assets → untaxed growth",
+      "borrow → tax-free spending",
+      "live modestly → no scrutiny"
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "It is, when you see it laid out, almost elegant. The rich aren't really pretending to be poor. They're hiding how the money actually works.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "magichat",
+        "label": "the real sleight of hand"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "So the next time you see a billionaire in a cheap T-shirt climbing out of an old car, smile — and remember the mountain of quiet, untaxed assets parked just out of frame.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "pickuptruck",
+        "label": "the humble flex"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "If this changed how you read 'rich,' hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "pyramid",
+        "name": "coins",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s79",
+    "id": "s61",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

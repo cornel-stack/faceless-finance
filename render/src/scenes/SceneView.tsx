@@ -2176,6 +2176,93 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={452} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">clawed back from winners → repaid to losers</text>
       </svg>
     );
+  } else if (m === "buyborrowdie") {
+    // The three-step cycle that turns assets into tax-free spending.
+    const steps: [string, string, string][] = [["BUY", "assets", green], ["BORROW", "tax-free cash", gold], ["DIE", "heirs reset basis", ink]];
+    art = (
+      <svg width={VW} height={VH}>
+        {steps.map(([t, s, c], i) => { const app = spring({ frame, fps, delay: 8 + i * 14, config: { damping: 12 } }); const x = 200 + i * 290; return (
+          <g key={i} transform={`translate(${x} 220) scale(${Math.min(1, app)})`}>
+            <rect x={-104} y={-62} width={208} height={124} rx={12} fill={c} stroke={ink} strokeWidth={5} />
+            <text y={-8} fontSize={30} fontWeight={900} fill={c === ink ? gold : "#fff"} textAnchor="middle" fontFamily="Georgia, serif">{t}</text>
+            <text y={30} fontSize={19} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{s}</text>
+          </g>
+        ); })}
+        {[0, 1].map((i) => { const app = interpolate(frame, [22 + i * 14, 36 + i * 14], [0, 1], clampBoth); return <path key={i} d={`M ${306 + i * 290} 220 L ${384 + i * 290} 220`} stroke={ink} strokeWidth={6} opacity={app} strokeLinecap="round" />; })}
+        <text x={VW / 2} y={420} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">buy, borrow, die — and never pay the tax</text>
+      </svg>
+    );
+  } else if (m === "assetvsincome") {
+    // A tiny visible salary next to a huge, untaxed mountain of assets.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(250 360)">
+          <rect x={-74} y={-42} width={148} height={62} rx={8} fill={green} stroke={ink} strokeWidth={4} />
+          <text y={-4} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>"income"</text>
+          <text y={56} fontSize={20} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>a $1 salary</text>
+        </g>
+        <g transform="translate(720 392)">
+          <path d={`M -175 0 L 0 ${-300 * grow} L 175 0 Z`} fill={gold} stroke={ink} strokeWidth={5} />
+          <text y={-46} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif" opacity={grow}>ASSETS</text>
+          <text y={34} fontSize={19} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>$billions, untaxed</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">tiny income, a mountain of assets</text>
+      </svg>
+    );
+  } else if (m === "unrealizedgains") {
+    // A paper gain balloons; a TAX stamp can't touch it until it's sold.
+    const grow = interpolate(frame, [6, fps * 1.8], [0.4, 1.3], clampBoth);
+    const bounce = spring({ frame, fps, delay: fps * 1.6, config: { damping: 6, mass: 0.5 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(420 250) scale(${grow})`}>
+          <circle r={88} fill={green} stroke={ink} strokeWidth={5} />
+          <text y={18} fontSize={60} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </g>
+        <text x={420} y={428} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>stock value, on paper</text>
+        <g transform={`translate(${760 - 44 * Math.min(1, bounce)} 210) rotate(${-10 + 20 * Math.min(1, bounce)})`} opacity={Math.min(1, bounce)}>
+          <rect x={-70} y={-34} width={140} height={64} rx={8} fill="none" stroke={red} strokeWidth={6} />
+          <text y={12} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">TAX</text>
+          <text y={62} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>can't touch it</text>
+        </g>
+        <text x={VW / 2} y={494} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">not sold = not taxed</text>
+      </svg>
+    );
+  } else if (m === "frugalflex") {
+    // A modest old car in front — a colossal hidden net worth behind.
+    const reveal = interpolate(frame, [fps * 1.0, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g opacity={reveal} transform="translate(490 150)">
+          <text y={0} fontSize={62} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">$100,000,000,000</text>
+          <text y={42} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>actual net worth</text>
+        </g>
+        <g transform="translate(490 360)">
+          <path d="M -120 20 L -88 -30 L 70 -30 L 112 20 Z" fill="#6c7a89" stroke={ink} strokeWidth={5} />
+          <rect x={-120} y={20} width={232} height={30} rx={8} fill="#6c7a89" stroke={ink} strokeWidth={5} />
+          <circle cx={-66} cy={54} r={22} fill={ink} /><circle cx={70} cy={54} r={22} fill={ink} />
+          <text y={100} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">…drives a 20-year-old car</text>
+        </g>
+      </svg>
+    );
+  } else if (m === "truetaxrate") {
+    // Two bars: a worker's rate towering over a billionaire's "true tax rate".
+    const g = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    const bars: [string, string, number, string][] = [["you", "~30%", 0.30, blue], ["a billionaire", "~3%", 0.03, red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={120} y1={430} x2={VW - 120} y2={430} stroke={ink} strokeWidth={4} />
+        {bars.map(([lab, val, h, c], i) => { const x = 330 + i * 330; const bh = h * 700 * g; return (
+          <g key={i}>
+            <rect x={x - 74} y={430 - bh} width={148} height={bh} fill={c} stroke={ink} strokeWidth={4} />
+            <text x={x} y={464} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text>
+            <text x={x} y={430 - bh - 14} fontSize={26} fontWeight={900} fill={c} textAnchor="middle" fontFamily="Georgia, serif" opacity={g}>{val}</text>
+          </g>
+        ); })}
+        <text x={VW / 2} y={72} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the "true tax rate"</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

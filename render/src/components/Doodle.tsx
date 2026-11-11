@@ -55,6 +55,8 @@ export type DoodleName =
   | "vial" | "droplet"
   // EP032 (Madoff) additions:
   | "pyramid" | "envelope"
+  // EP033 (why the rich pretend to be poor) additions:
+  | "pickuptruck" | "mansion"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1278,6 +1280,29 @@ function shape(name: DoodleName): React.ReactNode {
         <>
           <RRect x={18} y={30} w={64} h={44} fill="#fff" strokeWidth={SW} />
           <RPath d="M18 30 L50 54 L82 30" fill="none" strokeWidth={SW} />
+        </>
+      );
+
+    // ---- EP033 (why the rich pretend to be poor) doodles ----
+    case "pickuptruck":
+      // A humble old pickup — the frugal-billionaire flex.
+      return (
+        <>
+          <RPath d="M14 62 L14 44 L40 44 L48 56 L84 56 L84 62 Z" fill="#6c7a89" strokeWidth={SW} />
+          <RRect x={48} y={48} w={36} h={10} fill="#6c7a89" strokeWidth={1.4} />
+          <RCircle cx={30} cy={66} d={15} fill={INK} strokeWidth={1} />
+          <RCircle cx={70} cy={66} d={15} fill={INK} strokeWidth={1} />
+        </>
+      );
+    case "mansion":
+      // A big mansion — the hidden wealth they don't show.
+      return (
+        <>
+          <RRect x={20} y={46} w={60} h={38} fill={TAN} strokeWidth={SW} />
+          <RPath d="M14 46 L50 24 L86 46 Z" fill={RED} strokeWidth={SW} />
+          <RRect x={28} y={58} w={12} h={26} fill="#fff" strokeWidth={1.4} />
+          <RRect x={58} y={58} w={12} h={14} fill="#fff" strokeWidth={1.4} />
+          <RLine x1={50} y1={24} x2={50} y2={14} strokeWidth={2} />
         </>
       );
   }
