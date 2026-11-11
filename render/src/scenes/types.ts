@@ -126,7 +126,9 @@ export interface StageScene extends Base {
     // EP030 (crypto) additions:
     | "zerosum" | "numbergoup" | "rugpull" | "miningburn"
     // EP031 (Theranos) additions:
-    | "onedrop" | "blackbox" | "fakedemo" | "ninebillionzero" | "whistleblow";
+    | "onedrop" | "blackbox" | "fakedemo" | "ninebillionzero" | "whistleblow"
+    // EP032 (Madoff) additions:
+    | "ponziflow" | "impossiblereturns" | "fakestatement" | "redemptionrun" | "clawback";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

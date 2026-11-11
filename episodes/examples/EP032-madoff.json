@@ -1,0 +1,1076 @@
+{
+  "id": "EP032",
+  "series": "Napkin Numbers",
+  "title": "Madoff by the Numbers: How $65 Billion Never Existed",
+  "slug": "madoff-how-65-billion-never-existed",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP032 — fraud story (By the Numbers, row 21). The largest Ponzi in history: $65B of account statements backed by nothing, how Madoff ran it, the whistleblower the SEC ignored, the collapse and clawback. Real portraits (Madoff, Ponzi, Markopolos, Picard) via tools/photos. 5 new motifs (ponziflow, impossiblereturns, fakestatement, redemptionrun, clawback) + 2 doodles (pyramid, envelope). Target 12–15 min.",
+  "media": {
+    "people": [
+      {
+        "query": "Bernie Madoff",
+        "slug": "madoff"
+      },
+      {
+        "query": "Charles Ponzi",
+        "slug": "ponzi"
+      },
+      {
+        "query": "Harry Markopolos",
+        "slug": "markopolos"
+      },
+      {
+        "query": "Irving Picard",
+        "slug": "picard"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "For decades, he was the most trusted man on Wall Street. A former chairman of the Nasdaq stock exchange. The guy even other pros wanted to invest with.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bell",
+          "label": "ex-Nasdaq chairman"
+        },
+        {
+          "name": "handshake",
+          "label": "everyone trusted him"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "image",
+      "src": "img/madoff.jpg",
+      "label": "BERNIE MADOFF",
+      "caption": "the most trusted name on Wall Street",
+      "narration": "This is him. Bernie Madoff — respected, connected, and famous for one magical quality: his fund went up, smoothly, almost every single month, for thirty years."
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "If you were lucky enough to get in, you got steady returns of around ten to twelve percent a year — in good markets and bad. No bad years. Almost no down months. Ever.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "~11% a year, always"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "'my money's up again this month'",
+      "memeBottom": "there was no money",
+      "narration": "It felt like the safest place on Earth to park your money. It was, in fact, the exact opposite."
+    },
+    {
+      "id": "s5",
+      "type": "callout",
+      "narration": "Because the whole thing was fake. The account statements told investors they held sixty-five billion dollars. The real number sitting there was a tiny fraction of that.",
+      "text": "$65 billion",
+      "sub": "…that never existed",
+      "icon": "warning"
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "So let's run the numbers on the largest Ponzi scheme in history.",
+      "heading": "Madoff",
+      "kicker": "How $65 Billion Never Existed",
+      "sub": "the biggest Ponzi ever built"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "The official record is blunt. Madoff was the admitted mastermind of the largest-known Ponzi scheme in history.",
+      "sourceId": "wiki-madoff"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "It was only discovered in late 2008, when he admitted that the wealth-management arm of his firm was an elaborate, multi-billion-dollar Ponzi scheme.",
+      "sourceId": "wiki-scandal"
+    },
+    {
+      "id": "s80",
+      "type": "timeline",
+      "title": "Madoff, 1960–2021",
+      "narration": "Here's the whole timeline. He founds the firm in 1960. The Ponzi runs for decades. A whistleblower warns regulators from 2000. He's arrested in 2008, sentenced in 2009, and dies in prison in 2021.",
+      "events": [
+        {
+          "year": "1960",
+          "label": "firm founded",
+          "icon": "blueprint"
+        },
+        {
+          "year": "1990s",
+          "label": "Ponzi running",
+          "icon": "chartup"
+        },
+        {
+          "year": "2000",
+          "label": "first warning",
+          "icon": "calculator"
+        },
+        {
+          "year": "2008",
+          "label": "arrested",
+          "icon": "handcuffs"
+        },
+        {
+          "year": "2009",
+          "label": "150 years",
+          "icon": "prison"
+        },
+        {
+          "year": "2021",
+          "label": "dies in prison",
+          "icon": "warning"
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "To understand how, you have to understand what a Ponzi scheme actually is. And the idea is almost insultingly simple.",
+      "pose": "think",
+      "bubble": "what IS a Ponzi?"
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "narration": "A Ponzi scheme pays apparent profits to earlier investors with funds from more recent investors. That's it. No real trading. No real profits.",
+      "sourceId": "wiki-ponzi"
+    },
+    {
+      "id": "s11",
+      "type": "image",
+      "src": "img/ponzi.jpg",
+      "label": "CHARLES PONZI",
+      "caption": "the 1920s con it's named after",
+      "narration": "It's named after this man — Charles Ponzi, a con artist from the 1920s who promised huge returns and simply paid old investors with new investors' cash."
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "narration": "Here's the machine. New money comes in the door. A slice is skimmed off the top. The rest is handed to earlier investors and called 'profit.' Nothing is ever actually invested.",
+      "motif": "ponziflow",
+      "caption": "new money pays old money"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "It works beautifully — as long as new money keeps flowing in, and most people leave their 'profits' sitting in the account instead of cashing out.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pyramid",
+          "label": "needs endless new money"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "callout",
+      "narration": "Madoff didn't invent this. He just ran it bigger, and for longer, than anyone in history — for an estimated span of decades.",
+      "text": "nearly 20 years",
+      "sub": "…some say far longer",
+      "icon": "clock"
+    },
+    {
+      "id": "s15",
+      "type": "title",
+      "narration": "So how did he do it, when everyone from banks to regulators was supposedly watching?",
+      "heading": "How He Did It",
+      "kicker": "the machinery of the lie"
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "Trick one: credibility. He wasn't some guy in a basement. He had built a real, legitimate stock-trading business, and had chaired a stock exchange.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bell",
+          "label": "a real Wall St. résumé"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "That exchange was the Nasdaq — the first fully electronic stock market. Being its former chairman gave Madoff a glow of total respectability.",
+      "sourceId": "wiki-nasdaq"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "Trick two: exclusivity. He didn't beg for your money. He acted like he didn't want it. Getting into his fund felt like being accepted into a secret club.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "'you can't get in'"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "beg him to take my money",
+      "memeBottom": "feel honored he said yes",
+      "narration": "It's a brilliant inversion. The harder something is to get into, the more people claw to get in — and the less they question it."
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "Trick three: the feeder funds. Madoff rarely took money directly. Other funds pooled their clients' cash and funneled it to him, taking their own cut.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "money funneled in"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "narration": "That's a feeder fund — a fund that does almost all of its investments through one master fund. Layer upon layer of middlemen, all feeding the machine.",
+      "sourceId": "wiki-feeder"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "And those feeders marketed him to exactly the right crowd: the wealthy, the connected, big charities and pensions — people who felt lucky just to be allowed in.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "the wealthy & trusting"
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "type": "character",
+      "narration": "And through those feeders, the fraud went global — pulling in money from Europe, Asia, and the Gulf, from people and banks who had never once met him.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "a worldwide net"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "Hedge funds like his are marketed only to institutional investors and high-net-worth individuals — a world of big money and few questions.",
+      "sourceId": "wiki-hedge"
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "Trick four, the masterstroke: the statements. Every month, investors got beautiful, detailed paperwork showing trades, gains, and a steadily growing balance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "envelope",
+          "label": "glossy monthly statements"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "There was just one problem. The trades on those statements never happened. They were printed fairy tales — numbers typed up to match returns he'd invented.",
+      "motif": "fakestatement",
+      "caption": "the statements were fiction"
+    },
+    {
+      "id": "s82",
+      "type": "character",
+      "narration": "The paperwork was manufactured on a separate, secret floor of his office — a hidden back room whose only real product was convincing statements.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "a secret back room"
+        }
+      ]
+    },
+    {
+      "id": "s83",
+      "type": "compare",
+      "narration": "So picture the two versions of the same account. On the statement, a fortune, growing every month. In reality, an empty box with almost nothing inside.",
+      "left": {
+        "title": "On the statement",
+        "value": "a growing fortune",
+        "icon": "envelope"
+      },
+      "right": {
+        "title": "In reality",
+        "value": "almost nothing",
+        "icon": "warning"
+      }
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "And this is where the returns were the tell — if anyone had bothered to look.",
+      "heading": "The Tells",
+      "kicker": "the math never worked"
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "Real investing is bumpy. Even the greatest investors have losing years, scary months, gut-churning dips. That's just what markets are.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "candles",
+          "label": "real returns are jagged"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "stage",
+      "narration": "Madoff's returns were a smooth line sloping gently upward, year after year — barely a wobble. In the real world, that line is impossible.",
+      "motif": "impossiblereturns",
+      "caption": "too smooth to be real"
+    },
+    {
+      "id": "s29",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "returns that never, ever dip are a red flag, not a dream",
+      "narration": "A return that never dips isn't a sign of genius. It's a sign that someone is making the numbers up."
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "There were other tells, too. The volume of options his 'strategy' claimed to trade was larger than the entire market for those options actually was.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "the math didn't exist"
+        }
+      ]
+    },
+    {
+      "id": "s84",
+      "type": "character",
+      "narration": "He wrapped it all in jargon — a strategy he called a 'split-strike conversion.' Complicated enough to sound sophisticated, vague enough that almost nobody could truly check it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "baffle them with jargon"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "And a tiny, unknown accounting firm — a few people in a strip mall — supposedly audited a multi-billion-dollar global fund. That alone should have ended it.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "a 3-person 'auditor'"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "title",
+      "narration": "The incredible part is this: one man saw it, did the math, and screamed about it for years.",
+      "heading": "The Whistleblower",
+      "kicker": "nobody listened"
+    },
+    {
+      "id": "s33",
+      "type": "image",
+      "src": "img/markopolos.jpg",
+      "label": "HARRY MARKOPOLOS",
+      "caption": "did the math — and was ignored",
+      "narration": "His name is Harry Markopolos. A financial analyst who was asked to replicate Madoff's returns — and quickly realized they were mathematically impossible."
+    },
+    {
+      "id": "s34",
+      "type": "screenshot",
+      "narration": "Markopolos is best known for initially discovering Bernie Madoff's Ponzi scheme — years before it collapsed.",
+      "sourceId": "wiki-markopolos"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "He said he figured out it was a fraud in minutes, and could prove it in hours. He handed detailed evidence to regulators, with a memo bluntly titled that the world's largest hedge fund was a fraud.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "'this is a fraud'"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "screenshot",
+      "narration": "He took it to the agency whose job is to enforce the laws against market manipulation — the Securities and Exchange Commission.",
+      "sourceId": "wiki-sec"
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "He warned them in 2000. And 2001. And 2005, and 2007, and 2008. Over and over, for roughly nine years. And over and over, nothing meaningful happened.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "warned for ~9 years"
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "type": "character",
+      "narration": "Investigators did visit his office. They asked questions, poked around — and walked away reassured. His reputation was so bulletproof that the word 'fraud' felt unthinkable.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "they looked, and left"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "image",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "ignore a fraud for nine years",
+      "narration": "The man who was supposed to be caught was too respected to be seriously investigated. His reputation was his best disguise."
+    },
+    {
+      "id": "s39",
+      "type": "title",
+      "narration": "So if nobody stopped it, what finally brought it down? The one thing a Ponzi can never survive.",
+      "heading": "The Collapse",
+      "kicker": "when the money ran out"
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "Remember the rule: a Ponzi lives or dies on new money coming in, and old money staying put. In 2008, both of those broke at the same time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pyramid",
+          "label": "the machine stalls"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "The financial crisis hit. Panicked investors everywhere needed cash, and started asking Madoff for their money back — billions of dollars, all at once.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "2008: everyone wants out"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "stage",
+      "narration": "And that's the moment every Ponzi dreads. When enough people demand their money at once, there's nothing to give them — because it was never really there.",
+      "motif": "redemptionrun",
+      "caption": "the redemptions he couldn't pay"
+    },
+    {
+      "id": "s43",
+      "type": "callout",
+      "narration": "Investors asked for about seven billion dollars back. Madoff had nowhere near enough to cover it.",
+      "text": "$7 billion",
+      "sub": "in redemptions he couldn't pay",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "Cornered, he confessed — first to his sons, telling them the whole business was, in his words, one big lie. They reported him to the authorities.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "phone",
+          "label": "'it's all one big lie'"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "In December 2008, Bernie Madoff was arrested. And the true scale of the hole finally came into view.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handcuffs",
+          "label": "arrested, Dec 2008"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "callout",
+      "narration": "On paper, investors thought they had sixty-five billion dollars. That figure included decades of fake, invented profits.",
+      "text": "$65 billion",
+      "sub": "on the statements (mostly fake)",
+      "icon": "envelope"
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "The actual cash people had handed over and lost — the real principal — was closer to seventeen billion dollars. Still one of the biggest thefts ever.",
+      "text": "$17 billion",
+      "sub": "of real money, actually lost",
+      "icon": "warning"
+    },
+    {
+      "id": "s86",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Madoff, by the numbers",
+      "unit": "$B",
+      "narration": "Line the numbers up. Sixty-five billion dollars on the statements. Around seventeen billion of real money actually lost. And, remarkably, about fourteen billion clawed back.",
+      "data": [
+        {
+          "label": "on paper",
+          "value": 65
+        },
+        {
+          "label": "really lost",
+          "value": 17
+        },
+        {
+          "label": "clawed back",
+          "value": 14
+        }
+      ],
+      "highlight": 0
+    },
+    {
+      "id": "s48",
+      "type": "title",
+      "narration": "But numbers that big hide something worse: who actually paid the price.",
+      "heading": "The Victims",
+      "kicker": "it wasn't just the rich"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Yes, some victims were wealthy and famous. But many were ordinary — retirees who'd parked their life savings, and trusted because everyone else did.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "wiped-out retirees"
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "type": "character",
+      "narration": "The victims ranged from film directors and sports legends to some of the world's biggest banks — and tens of thousands of ordinary people who simply trusted the paperwork.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "famous and ordinary alike"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And charities. Entire foundations, universities, and nonprofits had their endowments wiped out overnight. Some good organizations simply shut down for good.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "charities destroyed"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "image",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "the statement: a comfortable retirement",
+      "memeBottom": "the reality: nothing was there",
+      "narration": "People who thought they were secure for life discovered, in a single day, that their nest egg had never existed."
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "The human toll reached into Madoff's own family. His brother was sentenced to prison. And two years to the day after the arrest, one of his sons died by suicide.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "a family destroyed too"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "title",
+      "narration": "Then came the reckoning — and a surprising, slow recovery of the money.",
+      "heading": "The Reckoning",
+      "kicker": "prison, and the clawback"
+    },
+    {
+      "id": "s54",
+      "type": "image",
+      "src": "img/madoff.jpg",
+      "label": "GUILTY",
+      "mug": true,
+      "circle": true,
+      "caption": "Bernie Madoff — 150 years",
+      "narration": "Bernie Madoff pleaded guilty to eleven federal felonies. There was no deal, no leniency. The judge handed down the maximum."
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "He was sentenced to a hundred and fifty years in federal prison — a symbolic life sentence many times over. He died behind bars in 2021.",
+      "text": "150 years",
+      "sub": "in federal prison",
+      "icon": "prison"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "But a prison cell doesn't refund anyone. So a court appointed a trustee with one brutal job: find the money, and get it back.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "a trustee is appointed"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "image",
+      "src": "img/picard.jpg",
+      "label": "IRVING PICARD",
+      "caption": "clawed back billions for victims",
+      "narration": "This is that trustee — Irving Picard — known for his recovery of funds from the Madoff scandal, hunting down the money for over a decade."
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "His main weapon was the clawback. The law let him sue people who had taken out more than they put in — the 'winners' — and reclaim those fake profits for the losers.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "sue the early 'winners'"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "stage",
+      "narration": "It feels harsh, but it's fair: that extra money was never Madoff's to give. It was other victims' stolen cash. So it gets pulled back, and shared out.",
+      "motif": "clawback",
+      "caption": "winners repay the losers"
+    },
+    {
+      "id": "s60",
+      "type": "callout",
+      "narration": "Against all odds, the trustee recovered roughly fourteen billion dollars — the large majority of the real money that was actually lost.",
+      "text": "$14 billion",
+      "sub": "clawed back for victims",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s61",
+      "type": "screenshot",
+      "narration": "That recovery effort is what Irving Picard is known for — one of the most successful fraud clawbacks ever attempted.",
+      "sourceId": "wiki-picard"
+    },
+    {
+      "id": "s62",
+      "type": "title",
+      "narration": "So step back. Why did this work — on smart, careful, wealthy people — for so long?",
+      "heading": "Why It Worked",
+      "kicker": "the anatomy of the con"
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "Reason one: affinity and trust. Madoff moved in tight social and community circles. When your friend, your rabbi, your club swears by it, you don't audit it. You join.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "trust inside the circle"
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "Reason two: the comfort of the crowd. If this many rich, sophisticated people are in, it must be safe, right? Everyone was leaning on everyone else's confidence.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "'everyone smart is in'"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "image",
+      "src": "img/memes/distracted.jpg",
+      "meme": "Distracted Boyfriend",
+      "memeTop": "cautious investors",
+      "memeBottom": "a guy promising smooth 11% forever",
+      "narration": "The promise of high returns with almost no risk is the oldest bait there is — and it never stops working."
+    },
+    {
+      "id": "s66",
+      "type": "character",
+      "narration": "Reason three: willful blindness. When your statements say you're getting richer every month, you don't want to ask hard questions. The lie was comfortable.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "envelope",
+          "label": "nobody wanted to look"
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "And reason four: the watchdog was asleep. The regulator was handed the answer, by Markopolos, on a plate — and failed to act for nearly a decade.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "regulators missed it"
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "type": "title",
+      "narration": "Which leaves the one lesson worth carrying out of this whole saga.",
+      "heading": "The Lesson",
+      "kicker": "paper is not money"
+    },
+    {
+      "id": "s69",
+      "type": "character",
+      "narration": "The deepest trick of all was philosophical. Madoff taught thousands of people to confuse a piece of paper with their actual wealth.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "envelope",
+          "label": "a statement…"
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "type": "character",
+      "narration": "But the statement is not the money. A number on a screen is a promise, not a fact. It's only real when you can actually pull the cash out — and everyone can't, at once.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "…is not the money"
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "type": "image",
+      "src": "img/memes/brain4.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "chasing high returns",
+      "memeBottom": "asking 'where do the returns actually come from?'",
+      "narration": "The one question that would have saved everyone is the same one that protects you from any scam: where, exactly, does the money come from?"
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "If an investment never has a bad month, if you can't understand how it makes money, and if getting your cash out is strangely difficult — those aren't quirks. They're alarms.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "warning",
+          "label": "smooth returns = red flag"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "title",
+      "narration": "So let's total up the receipts on history's biggest Ponzi.",
+      "heading": "The Final Tally",
+      "kicker": "what was real, what wasn't"
+    },
+    {
+      "id": "s74",
+      "type": "chalkboard",
+      "narration": "On the statements: sixty-five billion dollars. Real money lost: around seventeen billion. Recovered: about fourteen billion. Actual trades made with it: zero.",
+      "lines": [
+        "on the statements: $65 billion",
+        "real money lost: ~$17 billion",
+        "clawed back: ~$14 billion",
+        "real trades ever made: zero"
+      ]
+    },
+    {
+      "id": "s75",
+      "type": "character",
+      "narration": "Thirty years of trust, built on statements that described trades that never happened, paying profits that were never earned, with money that was simply… gone.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "shredder",
+          "label": "30 years of fiction"
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "type": "image",
+      "src": "img/madoff.jpg",
+      "label": "BERNIE MADOFF",
+      "caption": "sold certainty — the one thing markets can't give",
+      "narration": "He didn't really sell an investment. He sold certainty — a smooth line that only ever went up. And certainty, in markets, is the one thing nobody can honestly promise."
+    },
+    {
+      "id": "s77",
+      "type": "character",
+      "narration": "So the next time something offers you steady, guaranteed, never-a-bad-month returns, picture that smooth impossible line — and ask where the money truly comes from.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "always ask: where from?"
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "type": "character",
+      "narration": "If this made the biggest fraud in history finally make sense, hit subscribe — and tell me which impossible number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "pyramid",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-madoff",
+      "name": "Bernie Madoff (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bernie_Madoff",
+      "quote": "the admitted mastermind of the largest-known Ponzi scheme in history"
+    },
+    {
+      "id": "wiki-scandal",
+      "name": "Madoff investment scandal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Madoff_investment_scandal",
+      "quote": "an elaborate multi-billion-dollar Ponzi scheme"
+    },
+    {
+      "id": "wiki-ponzi",
+      "name": "Ponzi scheme (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ponzi_scheme",
+      "quote": "pays apparent profits to earlier investors with funds from more recent investors"
+    },
+    {
+      "id": "wiki-nasdaq",
+      "name": "Nasdaq (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nasdaq",
+      "quote": "the first fully electronic stock market"
+    },
+    {
+      "id": "wiki-feeder",
+      "name": "Feeder fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Feeder_fund",
+      "quote": "does almost all of its investments through a master fund"
+    },
+    {
+      "id": "wiki-hedge",
+      "name": "Hedge fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hedge_fund",
+      "quote": "marketed only to institutional investors and high-net-worth individuals"
+    },
+    {
+      "id": "wiki-markopolos",
+      "name": "Harry Markopolos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Harry_Markopolos",
+      "quote": "best known for initially discovering"
+    },
+    {
+      "id": "wiki-sec",
+      "name": "U.S. Securities and Exchange Commission (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission",
+      "quote": "enforce laws against market manipulation"
+    },
+    {
+      "id": "wiki-picard",
+      "name": "Irving Picard (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Irving_Picard",
+      "quote": "his recovery of funds from the Madoff investment scandal"
+    }
+  ],
+  "youtube": {
+    "title": "Madoff by the Numbers: How $65 Billion Never Existed",
+    "alts": [
+      "The Madoff Ponzi: How $65 Billion Was Never There",
+      "How Bernie Madoff Faked $65 Billion for 30 Years"
+    ],
+    "hook": "Bernie Madoff was the most trusted man on Wall Street — a former Nasdaq chairman whose fund rose smoothly, about 11% a year, for three decades. It was the largest Ponzi scheme in history. The $65 billion on investors' statements was almost entirely invented: no trades, no profits, just new investors' money paying old ones. This is Madoff by the numbers — how the con worked, the whistleblower the SEC ignored for nine years, the 2008 collapse, the 150-year sentence, and the $14 billion clawback. Fully cited.",
+    "bullets": [
+      "What a Ponzi scheme actually is — and why it always needs new money",
+      "How Madoff did it: credibility, exclusivity, feeder funds, and fake statements",
+      "The tells: returns too smooth to be real, and math that didn't exist",
+      "Harry Markopolos — the analyst who warned the SEC for ~9 years",
+      "The 2008 collapse: $7B in redemptions he couldn't pay",
+      "$65B on paper vs ~$17B really lost — and the ~$14B clawed back"
+    ],
+    "tags": [
+      "madoff",
+      "bernie madoff",
+      "madoff explained",
+      "how was madoff caught",
+      "ponzi scheme",
+      "largest ponzi scheme",
+      "harry markopolos",
+      "madoff ponzi scheme",
+      "irving picard",
+      "financial fraud",
+      "biggest frauds",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#madoff",
+      "#ponzi",
+      "#fraud",
+      "#investing"
+    ],
+    "thumbnail": {
+      "hookTop": "MADOFF:",
+      "hookBot": "$65B OF NOTHING",
+      "napkinNumber": "$65B",
+      "napkinSub": "…never existed",
+      "deco": "pyramid"
+    },
+    "chapters": [
+      [
+        "most trusted man on Wall Street",
+        "The trusted man"
+      ],
+      [
+        "what a Ponzi scheme actually is",
+        "What a Ponzi is"
+      ],
+      [
+        "how did he do it",
+        "How he did it"
+      ],
+      [
+        "the returns were the tell",
+        "The tells"
+      ],
+      [
+        "one man saw it",
+        "The whistleblower"
+      ],
+      [
+        "what finally brought it down",
+        "The collapse"
+      ],
+      [
+        "who actually paid the price",
+        "The victims"
+      ],
+      [
+        "a surprising, slow recovery",
+        "The clawback"
+      ],
+      [
+        "did this work",
+        "Why it worked"
+      ],
+      [
+        "the statement is not the money",
+        "The lesson"
+      ]
+    ]
+  }
+}

@@ -53,6 +53,8 @@ export type DoodleName =
   | "pickaxe"
   // EP031 (Theranos) additions:
   | "vial" | "droplet"
+  // EP032 (Madoff) additions:
+  | "pyramid" | "envelope"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1256,6 +1258,26 @@ function shape(name: DoodleName): React.ReactNode {
         <>
           <RPath d="M50 16 C 70 48 66 72 50 84 C 34 72 30 48 50 16 Z" fill={RED} strokeWidth={SW} />
           <RPath d="M43 60 Q45 72 53 75" fill="none" stroke="#fff" strokeWidth={2.6} />
+        </>
+      );
+
+    // ---- EP032 (Madoff) doodles ----
+    case "pyramid":
+      // The classic pyramid/Ponzi shape.
+      return (
+        <>
+          <RPath d="M50 18 L82 82 L18 82 Z" fill={GOLD} strokeWidth={SW} />
+          <RLine x1={34} y1={50} x2={66} y2={50} strokeWidth={2} />
+          <RLine x1={26} y1={66} x2={74} y2={66} strokeWidth={2} />
+          <RLine x1={50} y1={18} x2={50} y2={82} strokeWidth={1.6} />
+        </>
+      );
+    case "envelope":
+      // An account statement in the mail.
+      return (
+        <>
+          <RRect x={18} y={30} w={64} h={44} fill="#fff" strokeWidth={SW} />
+          <RPath d="M18 30 L50 54 L82 30" fill="none" strokeWidth={SW} />
         </>
       );
   }

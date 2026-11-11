@@ -2,989 +2,890 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "In 2014, Elizabeth Holmes was the most celebrated entrepreneur in America. Nineteen when she started, a Stanford dropout in a black turtleneck, and — on paper — a self-made billionaire.",
+    "narration": "For decades, he was the most trusted man on Wall Street. A former chairman of the Nasdaq stock exchange. The guy even other pros wanted to invest with.",
     "pose": "explain",
     "props": [
       {
-        "name": "trophy",
-        "label": "youngest billionaire"
+        "name": "bell",
+        "label": "ex-Nasdaq chairman"
       },
       {
-        "name": "briefcase",
-        "label": "Stanford dropout"
+        "name": "handshake",
+        "label": "everyone trusted him"
       }
     ]
-  },
-  {
-    "id": "s92",
-    "type": "image",
-    "src": "img/holmes.jpg",
-    "label": "ELIZABETH HOLMES",
-    "caption": "founder & CEO, Theranos — started at 19",
-    "narration": "This is her. Elizabeth Holmes — the Stanford dropout in the black turtleneck, with the strikingly deep voice. For a decade, the most magnetic founder in Silicon Valley."
   },
   {
     "id": "s2",
+    "type": "image",
+    "src": "img/madoff.jpg",
+    "label": "BERNIE MADOFF",
+    "caption": "the most trusted name on Wall Street",
+    "narration": "This is him. Bernie Madoff — respected, connected, and famous for one magical quality: his fund went up, smoothly, almost every single month, for thirty years."
+  },
+  {
+    "id": "s3",
     "type": "character",
-    "narration": "Her company, Theranos, promised something miraculous: run hundreds of medical tests from a single, painless drop of blood. No more big needles. No more vials.",
-    "pose": "present",
+    "narration": "If you were lucky enough to get in, you got steady returns of around ten to twelve percent a year — in good markets and bad. No bad years. Almost no down months. Ever.",
+    "pose": "explain",
     "props": [
       {
-        "name": "droplet",
-        "label": "one drop"
-      },
-      {
-        "name": "vial",
-        "label": "no more vials"
+        "name": "chartup",
+        "label": "~11% a year, always"
       }
     ]
   },
   {
-    "id": "s3",
+    "id": "s4",
     "type": "image",
-    "narration": "It was pitched as the future of medicine. There was just one small detail buried under all that hype.",
     "src": "img/memes/fine.jpg",
     "meme": "This Is Fine",
-    "memeTop": "'the future of medicine!'",
-    "memeBottom": "the machine didn't work"
-  },
-  {
-    "id": "s4",
-    "type": "callout",
-    "narration": "At its peak, this company was valued at nine billion dollars — making it one of the hottest startups on Earth.",
-    "text": "$9 billion",
-    "sub": "a company worth…",
-    "icon": "trophy"
+    "memeTop": "'my money's up again this month'",
+    "memeBottom": "there was no money",
+    "narration": "It felt like the safest place on Earth to park your money. It was, in fact, the exact opposite."
   },
   {
     "id": "s5",
-    "type": "character",
-    "narration": "There was just one problem. The technology at the center of it all didn't work. Not 'not yet' — it didn't work, and the people running it knew.",
-    "pose": "think",
-    "expression": "worried",
-    "bubble": "…it didn't work"
+    "type": "callout",
+    "narration": "Because the whole thing was fake. The account statements told investors they held sixty-five billion dollars. The real number sitting there was a tiny fraction of that.",
+    "text": "$65 billion",
+    "sub": "…that never existed",
+    "icon": "warning"
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's run the numbers on the most famous fraud in Silicon Valley history.",
-    "heading": "Theranos",
-    "kicker": "The $700M That Vanished",
-    "sub": "a drop of blood, a $9 billion lie"
+    "narration": "So let's run the numbers on the largest Ponzi scheme in history.",
+    "heading": "Madoff",
+    "kicker": "How $65 Billion Never Existed",
+    "sub": "the biggest Ponzi ever built"
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "narration": "Start with what it claimed to be. Theranos was touted as a breakthrough health-technology company, founded back in 2003 by a nineteen-year-old.",
-    "sourceId": "wiki-theranos"
+    "narration": "The official record is blunt. Madoff was the admitted mastermind of the largest-known Ponzi scheme in history.",
+    "sourceId": "wiki-madoff"
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "narration": "Its founder, Elizabeth Holmes, dropped out of Stanford to build it — and for over a decade, the world believed her.",
-    "sourceId": "wiki-holmes"
+    "narration": "It was only discovered in late 2008, when he admitted that the wealth-management arm of his firm was an elaborate, multi-billion-dollar Ponzi scheme.",
+    "sourceId": "wiki-scandal"
   },
   {
-    "id": "s84",
+    "id": "s80",
     "type": "timeline",
-    "title": "Theranos, 2003–2022",
-    "narration": "Here's the whole arc, start to finish. Founded in 2003. Inside Walgreens by 2013. A nine-billion-dollar darling. Exposed in 2015. Dissolved in 2018. And in 2022, a criminal conviction.",
+    "title": "Madoff, 1960–2021",
+    "narration": "Here's the whole timeline. He founds the firm in 1960. The Ponzi runs for decades. A whistleblower warns regulators from 2000. He's arrested in 2008, sentenced in 2009, and dies in prison in 2021.",
     "events": [
       {
-        "year": "2003",
-        "label": "founded",
+        "year": "1960",
+        "label": "firm founded",
         "icon": "blueprint"
       },
       {
-        "year": "2013",
-        "label": "in Walgreens",
-        "icon": "store"
+        "year": "1990s",
+        "label": "Ponzi running",
+        "icon": "chartup"
       },
       {
-        "year": "2014",
-        "label": "$9B peak",
-        "icon": "trophy"
+        "year": "2000",
+        "label": "first warning",
+        "icon": "calculator"
       },
       {
-        "year": "2015",
-        "label": "exposé",
-        "icon": "newspaper"
-      },
-      {
-        "year": "2018",
-        "label": "dissolved",
-        "icon": "shredder"
-      },
-      {
-        "year": "2022",
-        "label": "convicted",
+        "year": "2008",
+        "label": "arrested",
         "icon": "handcuffs"
+      },
+      {
+        "year": "2009",
+        "label": "150 years",
+        "icon": "prison"
+      },
+      {
+        "year": "2021",
+        "label": "dies in prison",
+        "icon": "warning"
       }
     ],
-    "highlight": 2
+    "highlight": 3
   },
   {
     "id": "s9",
     "type": "character",
-    "narration": "The pitch was irresistible. You walk into a pharmacy, prick your finger, give one tiny drop of blood — and get a full panel of results. Cheaper, faster, nearly painless.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "droplet",
-        "label": "a fingerprick"
-      },
-      {
-        "name": "hospital",
-        "label": "full results"
-      }
-    ]
+    "narration": "To understand how, you have to understand what a Ponzi scheme actually is. And the idea is almost insultingly simple.",
+    "pose": "think",
+    "bubble": "what IS a Ponzi?"
   },
   {
     "id": "s10",
-    "type": "stage",
-    "narration": "From that single drop, Theranos claimed its machine could run hundreds of different tests. It would, they said, democratize healthcare for everyone.",
-    "motif": "onedrop",
-    "caption": "one drop → hundreds of tests"
+    "type": "screenshot",
+    "narration": "A Ponzi scheme pays apparent profits to earlier investors with funds from more recent investors. That's it. No real trading. No real profits.",
+    "sourceId": "wiki-ponzi"
   },
   {
     "id": "s11",
-    "type": "screenshot",
-    "narration": "Here's the catch. A real blood test is usually drawn from a vein in your arm with a needle — because one tiny drop simply doesn't contain enough to work with.",
-    "sourceId": "wiki-bloodtest"
+    "type": "image",
+    "src": "img/ponzi.jpg",
+    "label": "CHARLES PONZI",
+    "caption": "the 1920s con it's named after",
+    "narration": "It's named after this man — Charles Ponzi, a con artist from the 1920s who promised huge returns and simply paid old investors with new investors' cash."
   },
   {
     "id": "s12",
-    "type": "character",
-    "narration": "A fingerprick drop is tiny, and it's diluted by fluid from the puncture. Running hundreds of accurate tests on it is, to this day, extraordinarily hard. That was the thing nobody wanted to say out loud.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "droplet",
-        "label": "too little blood"
-      }
-    ]
+    "type": "stage",
+    "narration": "Here's the machine. New money comes in the door. A slice is skimmed off the top. The rest is handed to earlier investors and called 'profit.' Nothing is ever actually invested.",
+    "motif": "ponziflow",
+    "caption": "new money pays old money"
   },
   {
     "id": "s13",
     "type": "character",
-    "narration": "But Elizabeth Holmes didn't sell the science. She sold a story — and she sold it beautifully.",
-    "pose": "present",
+    "narration": "It works beautifully — as long as new money keeps flowing in, and most people leave their 'profits' sitting in the account instead of cashing out.",
+    "pose": "explain",
     "props": [
       {
-        "name": "magichat",
-        "label": "a great story"
+        "name": "pyramid",
+        "label": "needs endless new money"
       }
     ]
   },
   {
     "id": "s14",
-    "type": "character",
-    "narration": "She modeled herself on her idol, Steve Jobs. The black turtleneck. The deep, deliberate voice. The constant talk of 'changing the world.'",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "the Jobs persona"
-      }
-    ]
-  },
-  {
-    "id": "s93",
-    "type": "image",
-    "src": "img/jobs.jpg",
-    "label": "STEVE JOBS",
-    "caption": "the idol she imitated",
-    "narration": "And this is the man she modeled herself on — Steve Jobs. The same turtleneck, the same 'change the world' cadence. The resemblance was entirely deliberate."
+    "type": "callout",
+    "narration": "Madoff didn't invent this. He just ran it bigger, and for longer, than anyone in history — for an estimated span of decades.",
+    "text": "nearly 20 years",
+    "sub": "…some say far longer",
+    "icon": "clock"
   },
   {
     "id": "s15",
-    "type": "image",
-    "narration": "In the retelling, a faster blood test kept growing — into a revolution, into a nine-billion-dollar mission to save humanity itself.",
-    "src": "img/memes/brain4.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "a faster blood test",
-    "memeBottom": "a $9 billion mission to save humanity"
+    "type": "title",
+    "narration": "So how did he do it, when everyone from banks to regulators was supposedly watching?",
+    "heading": "How He Did It",
+    "kicker": "the machinery of the lie"
   },
   {
     "id": "s16",
     "type": "character",
-    "narration": "And it worked. A board stacked with famous names — former secretaries of state, generals, senators — gave her instant, unquestionable credibility.",
+    "narration": "Trick one: credibility. He wasn't some guy in a basement. He had built a real, legitimate stock-trading business, and had chaired a stock exchange.",
     "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "famous backers"
+        "name": "bell",
+        "label": "a real Wall St. résumé"
       }
     ]
   },
   {
     "id": "s17",
-    "type": "callout",
-    "narration": "On the strength of that story, investors handed over more than seven hundred million dollars.",
-    "text": "$700 million",
-    "sub": "raised from investors",
-    "icon": "moneybag"
+    "type": "screenshot",
+    "narration": "That exchange was the Nasdaq — the first fully electronic stock market. Being its former chairman gave Madoff a glow of total respectability.",
+    "sourceId": "wiki-nasdaq"
   },
   {
     "id": "s18",
-    "type": "title",
-    "narration": "Now let's open up the machine that all of it depended on.",
-    "heading": "The Black Box",
-    "kicker": "a machine that couldn't"
+    "type": "character",
+    "narration": "Trick two: exclusivity. He didn't beg for your money. He acted like he didn't want it. Getting into his fund felt like being accepted into a secret club.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "padlock",
+        "label": "'you can't get in'"
+      }
+    ]
   },
   {
     "id": "s19",
-    "type": "character",
-    "narration": "At the heart of Theranos was a device. Early on, they called it 'the Edison.' A sleek black box that would run your blood automatically, right there in the store.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chip",
-        "label": "the device"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "beg him to take my money",
+    "memeBottom": "feel honored he said yes",
+    "narration": "It's a brilliant inversion. The harder something is to get into, the more people claw to get in — and the less they question it."
   },
   {
     "id": "s20",
-    "type": "stage",
-    "narration": "There was just one problem with the box. It didn't work reliably. The results it spat out were often wildly, dangerously wrong.",
-    "motif": "blackbox",
-    "caption": "a sleek black box — empty inside"
+    "type": "character",
+    "narration": "Trick three: the feeder funds. Madoff rarely took money directly. Other funds pooled their clients' cash and funneled it to him, taking their own cut.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "exchange",
+        "label": "money funneled in"
+      }
+    ]
   },
   {
     "id": "s21",
-    "type": "character",
-    "narration": "And blood tests aren't a tech demo. If the number's wrong, a healthy person gets told they're sick — or a sick person gets told they're fine. People make life decisions on these results.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "real medical results"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "That's a feeder fund — a fund that does almost all of its investments through one master fund. Layer upon layer of middlemen, all feeding the machine.",
+    "sourceId": "wiki-feeder"
   },
   {
     "id": "s22",
     "type": "character",
-    "narration": "So what do you do when your miracle machine doesn't work, but you've promised the world it does — and already taken their money? You fake it.",
-    "pose": "think",
-    "bubble": "…so they faked it"
+    "narration": "And those feeders marketed him to exactly the right crowd: the wealthy, the connected, big charities and pensions — people who felt lucky just to be allowed in.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "the wealthy & trusting"
+      }
+    ]
+  },
+  {
+    "id": "s81",
+    "type": "character",
+    "narration": "And through those feeders, the fraud went global — pulling in money from Europe, Asia, and the Gulf, from people and banks who had never once met him.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "a worldwide net"
+      }
+    ]
   },
   {
     "id": "s23",
     "type": "screenshot",
-    "narration": "'Fake it till you make it' is a real saying — act confident, and you'll grow into the success. Harmless for a slogan. For a medical device, it's a catastrophe.",
-    "sourceId": "wiki-fakeit"
+    "narration": "Hedge funds like his are marketed only to institutional investors and high-net-worth individuals — a world of big money and few questions.",
+    "sourceId": "wiki-hedge"
   },
   {
     "id": "s24",
-    "type": "stage",
-    "narration": "In investor demos, the machine would appear to run a sample and show a clean result — when in reality, some demos were rigged to display a pre-loaded number.",
-    "motif": "fakedemo",
-    "caption": "the demo was staged"
+    "type": "character",
+    "narration": "Trick four, the masterstroke: the statements. Every month, investors got beautiful, detailed paperwork showing trades, gains, and a steadily growing balance.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "envelope",
+        "label": "glossy monthly statements"
+      }
+    ]
   },
   {
     "id": "s25",
+    "type": "stage",
+    "narration": "There was just one problem. The trades on those statements never happened. They were printed fairy tales — numbers typed up to match returns he'd invented.",
+    "motif": "fakestatement",
+    "caption": "the statements were fiction"
+  },
+  {
+    "id": "s82",
     "type": "character",
-    "narration": "And the real patient tests? Theranos quietly ran many of them on ordinary, commercial machines bought from other companies — the very machines it claimed to have made obsolete.",
+    "narration": "The paperwork was manufactured on a separate, secret floor of his office — a hidden back room whose only real product was convincing statements.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "server",
-        "label": "someone else's machines"
+        "name": "padlock",
+        "label": "a secret back room"
+      }
+    ]
+  },
+  {
+    "id": "s83",
+    "type": "compare",
+    "narration": "So picture the two versions of the same account. On the statement, a fortune, growing every month. In reality, an empty box with almost nothing inside.",
+    "left": {
+      "title": "On the statement",
+      "value": "a growing fortune",
+      "icon": "envelope"
+    },
+    "right": {
+      "title": "In reality",
+      "value": "almost nothing",
+      "icon": "warning"
+    }
+  },
+  {
+    "id": "s26",
+    "type": "title",
+    "narration": "And this is where the returns were the tell — if anyone had bothered to look.",
+    "heading": "The Tells",
+    "kicker": "the math never worked"
+  },
+  {
+    "id": "s27",
+    "type": "character",
+    "narration": "Real investing is bumpy. Even the greatest investors have losing years, scary months, gut-churning dips. That's just what markets are.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "candles",
+        "label": "real returns are jagged"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "stage",
+    "narration": "Madoff's returns were a smooth line sloping gently upward, year after year — barely a wobble. In the real world, that line is impossible.",
+    "motif": "impossiblereturns",
+    "caption": "too smooth to be real"
+  },
+  {
+    "id": "s29",
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "returns that never, ever dip are a red flag, not a dream",
+    "narration": "A return that never dips isn't a sign of genius. It's a sign that someone is making the numbers up."
+  },
+  {
+    "id": "s30",
+    "type": "character",
+    "narration": "There were other tells, too. The volume of options his 'strategy' claimed to trade was larger than the entire market for those options actually was.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "the math didn't exist"
+      }
+    ]
+  },
+  {
+    "id": "s84",
+    "type": "character",
+    "narration": "He wrapped it all in jargon — a strategy he called a 'split-strike conversion.' Complicated enough to sound sophisticated, vague enough that almost nobody could truly check it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "baffle them with jargon"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "narration": "And a tiny, unknown accounting firm — a few people in a strip mall — supposedly audited a multi-billion-dollar global fund. That alone should have ended it.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "a 3-person 'auditor'"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "title",
+    "narration": "The incredible part is this: one man saw it, did the math, and screamed about it for years.",
+    "heading": "The Whistleblower",
+    "kicker": "nobody listened"
+  },
+  {
+    "id": "s33",
+    "type": "image",
+    "src": "img/markopolos.jpg",
+    "label": "HARRY MARKOPOLOS",
+    "caption": "did the math — and was ignored",
+    "narration": "His name is Harry Markopolos. A financial analyst who was asked to replicate Madoff's returns — and quickly realized they were mathematically impossible."
+  },
+  {
+    "id": "s34",
+    "type": "screenshot",
+    "narration": "Markopolos is best known for initially discovering Bernie Madoff's Ponzi scheme — years before it collapsed.",
+    "sourceId": "wiki-markopolos"
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "He said he figured out it was a fraud in minutes, and could prove it in hours. He handed detailed evidence to regulators, with a memo bluntly titled that the world's largest hedge fund was a fraud.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "'this is a fraud'"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "screenshot",
+    "narration": "He took it to the agency whose job is to enforce the laws against market manipulation — the Securities and Exchange Commission.",
+    "sourceId": "wiki-sec"
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "He warned them in 2000. And 2001. And 2005, and 2007, and 2008. Over and over, for roughly nine years. And over and over, nothing meaningful happened.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "warned for ~9 years"
       }
     ]
   },
   {
     "id": "s85",
     "type": "character",
-    "narration": "Worse, to squeeze a test onto those commercial machines, samples were sometimes watered down to make the tiny drop go further — which could make already-shaky results even shakier.",
+    "narration": "Investigators did visit his office. They asked questions, poked around — and walked away reassured. His reputation was so bulletproof that the word 'fraud' felt unthinkable.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "vial",
-        "label": "diluted samples"
+        "name": "warning",
+        "label": "they looked, and left"
       }
     ]
   },
   {
-    "id": "s26",
+    "id": "s38",
     "type": "image",
-    "narration": "The revolutionary device, quietly cheating on itself with the boring old machines it was supposed to replace.",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeTop": "Theranos' 'revolutionary' box",
-    "memeBottom": "the normal machine it secretly used"
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "ignore a fraud for nine years",
+    "narration": "The man who was supposed to be caught was too respected to be seriously investigated. His reputation was his best disguise."
+  },
+  {
+    "id": "s39",
+    "type": "title",
+    "narration": "So if nobody stopped it, what finally brought it down? The one thing a Ponzi can never survive.",
+    "heading": "The Collapse",
+    "kicker": "when the money ran out"
+  },
+  {
+    "id": "s40",
+    "type": "character",
+    "narration": "Remember the rule: a Ponzi lives or dies on new money coming in, and old money staying put. In 2008, both of those broke at the same time.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "pyramid",
+        "label": "the machine stalls"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "character",
+    "narration": "The financial crisis hit. Panicked investors everywhere needed cash, and started asking Madoff for their money back — billions of dollars, all at once.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "2008: everyone wants out"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "stage",
+    "narration": "And that's the moment every Ponzi dreads. When enough people demand their money at once, there's nothing to give them — because it was never really there.",
+    "motif": "redemptionrun",
+    "caption": "the redemptions he couldn't pay"
+  },
+  {
+    "id": "s43",
+    "type": "callout",
+    "narration": "Investors asked for about seven billion dollars back. Madoff had nowhere near enough to cover it.",
+    "text": "$7 billion",
+    "sub": "in redemptions he couldn't pay",
+    "icon": "moneybag"
+  },
+  {
+    "id": "s44",
+    "type": "character",
+    "narration": "Cornered, he confessed — first to his sons, telling them the whole business was, in his words, one big lie. They reported him to the authorities.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "phone",
+        "label": "'it's all one big lie'"
+      }
+    ]
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "In December 2008, Bernie Madoff was arrested. And the true scale of the hole finally came into view.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handcuffs",
+        "label": "arrested, Dec 2008"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "callout",
+    "narration": "On paper, investors thought they had sixty-five billion dollars. That figure included decades of fake, invented profits.",
+    "text": "$65 billion",
+    "sub": "on the statements (mostly fake)",
+    "icon": "envelope"
+  },
+  {
+    "id": "s47",
+    "type": "callout",
+    "narration": "The actual cash people had handed over and lost — the real principal — was closer to seventeen billion dollars. Still one of the biggest thefts ever.",
+    "text": "$17 billion",
+    "sub": "of real money, actually lost",
+    "icon": "warning"
   },
   {
     "id": "s86",
-    "type": "compare",
-    "narration": "So line it up plainly. The promise was one drop running hundreds of tests. The reality was a broken box, quietly leaning on the ordinary machines it was meant to kill.",
-    "left": {
-      "title": "The promise",
-      "value": "1 drop, 100s of tests",
-      "icon": "droplet"
-    },
-    "right": {
-      "title": "The reality",
-      "value": "ran on normal machines",
-      "icon": "server"
-    }
-  },
-  {
-    "id": "s27",
-    "type": "character",
-    "narration": "To hide all this, the company ran on fear and secrecy. Employees were siloed, made to sign aggressive non-disclosure agreements, and the two people at the very top kept total control.",
-    "pose": "explain",
-    "props": [
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Madoff, by the numbers",
+    "unit": "$B",
+    "narration": "Line the numbers up. Sixty-five billion dollars on the statements. Around seventeen billion of real money actually lost. And, remarkably, about fourteen billion clawed back.",
+    "data": [
       {
-        "name": "padlock",
-        "label": "secrecy & NDAs"
+        "label": "on paper",
+        "value": 65
+      },
+      {
+        "label": "really lost",
+        "value": 17
+      },
+      {
+        "label": "clawed back",
+        "value": 14
       }
-    ]
+    ],
+    "highlight": 0
   },
   {
-    "id": "s28",
-    "type": "screenshot",
-    "narration": "One of those two was Ramesh 'Sunny' Balwani — the company's president, and Holmes's secret boyfriend — who helped run the whole operation.",
-    "sourceId": "wiki-balwani"
-  },
-  {
-    "id": "s29",
+    "id": "s48",
     "type": "title",
-    "narration": "Which raises the real question: how do you get to nine billion dollars selling nothing that works?",
-    "heading": "The $9 Billion Story",
-    "kicker": "worth a fortune, selling nothing"
+    "narration": "But numbers that big hide something worse: who actually paid the price.",
+    "heading": "The Victims",
+    "kicker": "it wasn't just the rich"
   },
   {
-    "id": "s30",
+    "id": "s49",
     "type": "character",
-    "narration": "On the strength of the story, the money poured in. By 2014, private investors had put in more than seven hundred million dollars of real cash.",
+    "narration": "Yes, some victims were wealthy and famous. But many were ordinary — retirees who'd parked their life savings, and trusted because everyone else did.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "moneybag",
-        "label": "$700M in"
+        "name": "retiree",
+        "label": "wiped-out retirees"
       }
     ]
   },
   {
     "id": "s87",
     "type": "character",
-    "narration": "And these weren't naive investors. Media mogul Rupert Murdoch alone reportedly put in over a hundred million dollars — and later sold his entire stake back for a single dollar.",
+    "narration": "The victims ranged from film directors and sports legends to some of the world's biggest banks — and tens of thousands of ordinary people who simply trusted the paperwork.",
     "pose": "explain",
     "expression": "worried",
-    "props": [
-      {
-        "name": "moneybag",
-        "label": "$100M+ from one investor"
-      }
-    ]
-  },
-  {
-    "id": "s95",
-    "type": "image",
-    "src": "img/murdoch.jpg",
-    "label": "RUPERT MURDOCH",
-    "caption": "biggest investor — sold back for $1",
-    "narration": "Chief among them, media titan Rupert Murdoch — reportedly the single largest investor, who quietly sold his entire stake back to the company for one dollar."
-  },
-  {
-    "id": "s31",
-    "type": "callout",
-    "narration": "Which pushed the company's valuation to a staggering nine billion dollars at its peak.",
-    "text": "$9 billion",
-    "sub": "peak valuation, 2014",
-    "icon": "trophy"
-  },
-  {
-    "id": "s88",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Theranos, by the numbers",
-    "unit": "$M",
-    "narration": "Put the money side by side. More than seven hundred million dollars raised. A paper value of nine billion. And, in the end, a real value of exactly zero.",
-    "data": [
-      {
-        "label": "raised",
-        "value": 700
-      },
-      {
-        "label": "paper value",
-        "value": 9000
-      },
-      {
-        "label": "final value",
-        "value": 0
-      }
-    ],
-    "highlight": 2
-  },
-  {
-    "id": "s32",
-    "type": "character",
-    "narration": "Forbes crowned Holmes the youngest self-made female billionaire in America. Magazine covers, TED talks, a visit to the White House. She was the face of the future.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "cover star"
-      },
-      {
-        "name": "newspaper",
-        "label": "everywhere"
-      }
-    ]
-  },
-  {
-    "id": "s33",
-    "type": "stage",
-    "narration": "And the more famous she became, the less anyone wanted to check under the hood. Fame itself became a shield against hard questions.",
-    "motif": "spotlight",
-    "caption": "the spotlight became a shield"
-  },
-  {
-    "id": "s34",
-    "type": "title",
-    "narration": "Then it stopped being slides for investors — and started touching real people.",
-    "heading": "Real Patients",
-    "kicker": "where it stopped being a game"
-  },
-  {
-    "id": "s35",
-    "type": "screenshot",
-    "narration": "Theranos struck a deal to put its blood-testing 'wellness centers' inside Walgreens — the second-largest pharmacy chain in America.",
-    "sourceId": "wiki-walgreens"
-  },
-  {
-    "id": "s36",
-    "type": "character",
-    "narration": "Suddenly this wasn't a pitch deck. Actual patients, in actual stores, were handing over actual blood — and getting back results from a machine that didn't work.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "real patients"
-      }
-    ]
-  },
-  {
-    "id": "s89",
-    "type": "character",
-    "narration": "And the harm was real. Some patients were handed alarming, wrong results — false alarms, and missed warnings — for serious conditions, all from a Theranos blood draw.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "wrong results, real stakes"
-      }
-    ]
-  },
-  {
-    "id": "s37",
-    "type": "callout",
-    "narration": "Theranos would later void or correct a huge number of those results — hundreds of thousands of patient tests, called into question.",
-    "text": "hundreds of thousands",
-    "sub": "of patient tests, voided",
-    "icon": "warning"
-  },
-  {
-    "id": "s38",
-    "type": "character",
-    "narration": "Think about what that means. Real people got medical decisions based on blood tests that the company itself later had to throw in the bin.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "shredder",
-        "label": "results voided"
-      }
-    ]
-  },
-  {
-    "id": "s39",
-    "type": "image",
-    "narration": "The plan looked brilliant on a whiteboard — right up until the last box, where the machine met a real patient's blood.",
-    "src": "img/memes/grus.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "put the box in pharmacies",
-    "memeBottom": "give real patients fake results"
-  },
-  {
-    "id": "s40",
-    "type": "title",
-    "narration": "So who finally pulled the thread? Not a regulator. A handful of people who refused to lie.",
-    "heading": "The Unraveling",
-    "kicker": "a few people said no"
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "What finally cracked it open was a handful of young employees who saw the truth inside the lab and refused to stay quiet about it.",
-    "pose": "explain",
     "props": [
       {
         "name": "crowd",
-        "label": "insiders who spoke"
+        "label": "famous and ordinary alike"
       }
     ]
-  },
-  {
-    "id": "s42",
-    "type": "screenshot",
-    "narration": "A whistleblower risks their whole career to expose wrongdoing — often by becoming a source for an investigative reporter.",
-    "sourceId": "wiki-whistleblower"
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "Two young scientists — one of them the grandson of a famous board member — reported what they'd seen, under enormous legal pressure and threats from the company's lawyers.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "shield",
-        "label": "under threat"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "screenshot",
-    "narration": "They took it to John Carreyrou, a reporter who helped expose the fraudulent practices of the blood-testing company in the Wall Street Journal.",
-    "sourceId": "wiki-carreyrou"
-  },
-  {
-    "id": "s94",
-    "type": "image",
-    "src": "img/carreyrou.jpg",
-    "label": "JOHN CARREYROU",
-    "caption": "the reporter who broke the story",
-    "narration": "This is the reporter who refused to let it go — John Carreyrou of the Wall Street Journal. His investigation is what finally cracked Theranos wide open."
-  },
-  {
-    "id": "s45",
-    "type": "stage",
-    "narration": "In 2015, the story broke. One reporter and a few brave insiders — against a nine-billion-dollar company and its army of lawyers.",
-    "motif": "whistleblow",
-    "caption": "one reporter, a few whistleblowers"
-  },
-  {
-    "id": "s46",
-    "type": "image",
-    "narration": "Because, as it turns out, you cannot run a medical empire on a machine that doesn't work forever.",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "fake a blood lab forever"
-  },
-  {
-    "id": "s47",
-    "type": "title",
-    "narration": "Once the truth was public, the fall was almost vertical.",
-    "heading": "The Collapse",
-    "kicker": "$9 billion to zero"
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "Once the truth was out, it all came apart fast. Regulators banned Holmes from running a lab. Walgreens pulled out and sued. The partnerships evaporated overnight.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "it all unwound"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "screenshot",
-    "narration": "And the government had a word for what had happened: fraud — inducing investors to make decisions on the basis of false information.",
-    "sourceId": "wiki-secfraud"
   },
   {
     "id": "s50",
     "type": "character",
-    "narration": "The SEC charged Holmes with 'massive fraud.' And Forbes — the very magazine that had crowned her a billionaire — quietly revised her net worth.",
+    "narration": "And charities. Entire foundations, universities, and nonprofits had their endowments wiped out overnight. Some good organizations simply shut down for good.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "charged with fraud"
-      }
-    ]
-  },
-  {
-    "id": "s90",
-    "type": "character",
-    "narration": "Holmes first settled with the SEC — paying a penalty and giving up control of the company. But that was the civil case. The criminal one was only just beginning.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "first the civil case"
+        "name": "hospital",
+        "label": "charities destroyed"
       }
     ]
   },
   {
     "id": "s51",
-    "type": "stage",
-    "narration": "Her estimated fortune went from four and a half billion dollars… to nothing. The nine-billion-dollar company was worth zero.",
-    "motif": "ninebillionzero",
-    "caption": "$9 billion → zero"
+    "type": "image",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "the statement: a comfortable retirement",
+    "memeBottom": "the reality: nothing was there",
+    "narration": "People who thought they were secure for life discovered, in a single day, that their nest egg had never existed."
   },
   {
     "id": "s52",
-    "type": "callout",
-    "narration": "Forbes revised her net worth down to a single, brutal number.",
-    "text": "$0",
-    "sub": "net worth, revised",
-    "icon": "chartdown"
-  },
-  {
-    "id": "s53",
     "type": "character",
-    "narration": "In 2018, Theranos dissolved. The company that was going to change medicine simply ceased to exist, leaving investors and patients holding the bag.",
+    "narration": "The human toll reached into Madoff's own family. His brother was sentenced to prison. And two years to the day after the arrest, one of his sons died by suicide.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "shredder",
-        "label": "dissolved, 2018"
+        "name": "warning",
+        "label": "a family destroyed too"
       }
     ]
   },
   {
-    "id": "s54",
+    "id": "s53",
     "type": "title",
-    "narration": "But a dead company wasn't the end of it. The law was just getting started.",
+    "narration": "Then came the reckoning — and a surprising, slow recovery of the money.",
     "heading": "The Reckoning",
-    "kicker": "the verdict"
+    "kicker": "prison, and the clawback"
+  },
+  {
+    "id": "s54",
+    "type": "image",
+    "src": "img/madoff.jpg",
+    "label": "GUILTY",
+    "mug": true,
+    "circle": true,
+    "caption": "Bernie Madoff — 150 years",
+    "narration": "Bernie Madoff pleaded guilty to eleven federal felonies. There was no deal, no leniency. The judge handed down the maximum."
   },
   {
     "id": "s55",
+    "type": "callout",
+    "narration": "He was sentenced to a hundred and fifty years in federal prison — a symbolic life sentence many times over. He died behind bars in 2021.",
+    "text": "150 years",
+    "sub": "in federal prison",
+    "icon": "prison"
+  },
+  {
+    "id": "s56",
     "type": "character",
-    "narration": "Then came the trials. In 2022, a jury found Elizabeth Holmes guilty of defrauding investors. Her partner, Sunny Balwani, was convicted on every single count.",
+    "narration": "But a prison cell doesn't refund anyone. So a court appointed a trustee with one brutal job: find the money, and get it back.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "guilty"
+        "label": "a trustee is appointed"
       }
     ]
-  },
-  {
-    "id": "s56",
-    "type": "callout",
-    "narration": "Holmes was sentenced to eleven years and three months in federal prison.",
-    "text": "11 years",
-    "sub": "Holmes's prison sentence",
-    "icon": "prison"
   },
   {
     "id": "s57",
-    "type": "character",
-    "narration": "Balwani got nearly thirteen years of his own. And the two of them were ordered to pay back the people they had defrauded.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "handcuffs",
-        "label": "prison for both"
-      }
-    ]
-  },
-  {
-    "id": "s96",
     "type": "image",
-    "src": "img/holmes.jpg",
-    "label": "GUILTY",
-    "mug": true,
-    "circle": true,
-    "caption": "Elizabeth Holmes — convicted of fraud",
-    "narration": "And so the face of the future became a federal convict. Elizabeth Holmes — found guilty of fraud, and sentenced to more than eleven years in prison."
+    "src": "img/picard.jpg",
+    "label": "IRVING PICARD",
+    "caption": "clawed back billions for victims",
+    "narration": "This is that trustee — Irving Picard — known for his recovery of funds from the Madoff scandal, hunting down the money for over a decade."
   },
   {
     "id": "s58",
-    "type": "callout",
-    "narration": "The court ordered them to pay four hundred and fifty-two million dollars in restitution to their victims.",
-    "text": "$452 million",
-    "sub": "ordered in restitution",
-    "icon": "receipt"
+    "type": "character",
+    "narration": "His main weapon was the clawback. The law let him sue people who had taken out more than they put in — the 'winners' — and reclaim those fake profits for the losers.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scissors",
+        "label": "sue the early 'winners'"
+      }
+    ]
   },
   {
     "id": "s59",
-    "type": "character",
-    "narration": "For a company that produced nothing that worked, the final tally is staggering — hundreds of millions gone, and trust in medical startups badly shaken.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "moneybag",
-        "label": "money gone"
-      }
-    ]
+    "type": "stage",
+    "narration": "It feels harsh, but it's fair: that extra money was never Madoff's to give. It was other victims' stolen cash. So it gets pulled back, and shared out.",
+    "motif": "clawback",
+    "caption": "winners repay the losers"
   },
   {
     "id": "s60",
-    "type": "title",
-    "narration": "So here's the question worth sitting with: how did it ever get this far?",
-    "heading": "Why Did It Work?",
-    "kicker": "the anatomy of the lie"
+    "type": "callout",
+    "narration": "Against all odds, the trustee recovered roughly fourteen billion dollars — the large majority of the real money that was actually lost.",
+    "text": "$14 billion",
+    "sub": "clawed back for victims",
+    "icon": "moneybag"
   },
   {
     "id": "s61",
-    "type": "character",
-    "narration": "How does a company with no working product reach nine billion dollars? The same way every great fraud does: a perfect story, told by the perfect messenger.",
-    "pose": "think",
-    "bubble": "how did it get so far?"
+    "type": "screenshot",
+    "narration": "That recovery effort is what Irving Picard is known for — one of the most successful fraud clawbacks ever attempted.",
+    "sourceId": "wiki-picard"
   },
   {
     "id": "s62",
-    "type": "character",
-    "narration": "Trick one: a mission you can't argue with. Who's against cheaper, painless healthcare for everyone? Doubt the tech, and you sound like you're against the cure itself.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "an un-arguable mission"
-      }
-    ]
+    "type": "title",
+    "narration": "So step back. Why did this work — on smart, careful, wealthy people — for so long?",
+    "heading": "Why It Worked",
+    "kicker": "the anatomy of the con"
   },
   {
     "id": "s63",
     "type": "character",
-    "narration": "Trick two: a cult of personality. The turtleneck, the voice, the Steve Jobs comparison. Invest in Theranos, and you weren't buying a product — you were buying a genius.",
+    "narration": "Reason one: affinity and trust. Madoff moved in tight social and community circles. When your friend, your rabbi, your club swears by it, you don't audit it. You join.",
     "pose": "explain",
     "props": [
       {
-        "name": "magichat",
-        "label": "the genius founder"
+        "name": "handshake",
+        "label": "trust inside the circle"
       }
     ]
   },
   {
     "id": "s64",
     "type": "character",
-    "narration": "Trick three: famous validators. When generals and statesmen sit on your board, who is going to be the one to demand an audit of your lab?",
+    "narration": "Reason two: the comfort of the crowd. If this many rich, sophisticated people are in, it must be safe, right? Everyone was leaning on everyone else's confidence.",
     "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "big names = cover"
+        "name": "crowd",
+        "label": "'everyone smart is in'"
       }
     ]
   },
   {
     "id": "s65",
-    "type": "character",
-    "narration": "Trick four: secrecy, sold as protecting 'trade secrets.' Nobody outside could see inside the box — and that wasn't an accident. That was the entire design.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "'trade secrets'"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/distracted.jpg",
+    "meme": "Distracted Boyfriend",
+    "memeTop": "cautious investors",
+    "memeBottom": "a guy promising smooth 11% forever",
+    "narration": "The promise of high returns with almost no risk is the oldest bait there is — and it never stops working."
   },
   {
     "id": "s66",
-    "type": "image",
-    "narration": "At every fork in the road, there was an easy, honest option — and a tempting one that just kicked the reckoning further down the road.",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "admit the machine doesn't work",
-    "memeBottom": "raise another $100 million"
+    "type": "character",
+    "narration": "Reason three: willful blindness. When your statements say you're getting richer every month, you don't want to ask hard questions. The lie was comfortable.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "envelope",
+        "label": "nobody wanted to look"
+      }
+    ]
   },
   {
     "id": "s67",
     "type": "character",
-    "narration": "Each trick is powerful. Stacked together, they let a story outrun reality for more than a decade — in an industry where being wrong can actually kill people.",
+    "narration": "And reason four: the watchdog was asleep. The regulator was handed the answer, by Markopolos, on a plate — and failed to act for nearly a decade.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "the story beat reality"
-      }
-    ]
-  },
-  {
-    "id": "s91",
-    "type": "character",
-    "narration": "Theranos became the cautionary tale for an entire era of startups — proof that a brilliant pitch and a product that actually works are two completely different things.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "warning",
-        "label": "the cautionary tale"
+        "name": "padlock",
+        "label": "regulators missed it"
       }
     ]
   },
   {
     "id": "s68",
     "type": "title",
-    "narration": "And that points to the one lesson that outlives Theranos entirely.",
-    "heading": "The Real Lesson",
-    "kicker": "blood doesn't lie"
+    "narration": "Which leaves the one lesson worth carrying out of this whole saga.",
+    "heading": "The Lesson",
+    "kicker": "paper is not money"
   },
   {
     "id": "s69",
     "type": "character",
-    "narration": "Faking it can work for an app. You ship something clunky, you improve it, and nobody gets hurt. But some things you cannot fake your way through.",
+    "narration": "The deepest trick of all was philosophical. Madoff taught thousands of people to confuse a piece of paper with their actual wealth.",
     "pose": "explain",
     "props": [
       {
-        "name": "laptop",
-        "label": "fine for an app…"
+        "name": "envelope",
+        "label": "a statement…"
       }
     ]
   },
   {
     "id": "s70",
     "type": "character",
-    "narration": "You can't fake biology. A drop of blood either holds enough to test, or it doesn't. The machine either reads it accurately, or it doesn't. Belief does not change the chemistry.",
+    "narration": "But the statement is not the money. A number on a screen is a promise, not a fact. It's only real when you can actually pull the cash out — and everyone can't, at once.",
     "pose": "explain",
     "props": [
       {
-        "name": "droplet",
-        "label": "…not for blood"
+        "name": "vault",
+        "label": "…is not the money"
       }
     ]
   },
   {
     "id": "s71",
     "type": "image",
-    "narration": "That's the hard line under this whole story. A confident pitch is not the same thing as a working product.",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "a confident story is not a working product"
+    "src": "img/memes/brain4.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "chasing high returns",
+    "memeBottom": "asking 'where do the returns actually come from?'",
+    "narration": "The one question that would have saved everyone is the same one that protects you from any scam: where, exactly, does the money come from?"
   },
   {
     "id": "s72",
     "type": "character",
-    "narration": "That's the line Theranos crossed. It took Silicon Valley's 'move fast and break things' and pointed it straight at people's veins.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "If an investment never has a bad month, if you can't understand how it makes money, and if getting your cash out is strangely difficult — those aren't quirks. They're alarms.",
+    "pose": "present",
     "props": [
       {
-        "name": "vial",
-        "label": "pointed at patients"
+        "name": "warning",
+        "label": "smooth returns = red flag"
       }
     ]
   },
   {
     "id": "s73",
-    "type": "stage",
-    "narration": "For years, a brilliant mask hid an empty box. And when the mask finally slipped, there was simply nothing underneath.",
-    "motif": "mask",
-    "caption": "the mask slips"
+    "type": "title",
+    "narration": "So let's total up the receipts on history's biggest Ponzi.",
+    "heading": "The Final Tally",
+    "kicker": "what was real, what wasn't"
   },
   {
     "id": "s74",
-    "type": "character",
-    "narration": "So when someone sells you a miracle, ask the boring question the believers never do: can I see the data? Not the story — the actual data.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "ask for the data"
-      }
+    "type": "chalkboard",
+    "narration": "On the statements: sixty-five billion dollars. Real money lost: around seventeen billion. Recovered: about fourteen billion. Actual trades made with it: zero.",
+    "lines": [
+      "on the statements: $65 billion",
+      "real money lost: ~$17 billion",
+      "clawed back: ~$14 billion",
+      "real trades ever made: zero"
     ]
   },
   {
     "id": "s75",
-    "type": "title",
-    "narration": "So let's total up the receipts one last time.",
-    "heading": "The Final Tally",
-    "kicker": "what vanished"
-  },
-  {
-    "id": "s76",
-    "type": "chalkboard",
-    "narration": "Over seven hundred million dollars raised. A nine-billion-dollar valuation. A working product? None. And the final value, when the music stopped? Zero.",
-    "lines": [
-      "raised: $700M+ from investors",
-      "peak valuation: $9 billion",
-      "working product: none",
-      "final value: $0"
-    ]
-  },
-  {
-    "id": "s77",
     "type": "character",
-    "narration": "A fortune, a full decade, and the trust of hundreds of thousands of patients — all of it vaporized into a story that was never actually true.",
+    "narration": "Thirty years of trust, built on statements that described trades that never happened, paying profits that were never earned, with money that was simply… gone.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "chartdown",
-        "label": "all vaporized"
+        "name": "shredder",
+        "label": "30 years of fiction"
+      }
+    ]
+  },
+  {
+    "id": "s76",
+    "type": "image",
+    "src": "img/madoff.jpg",
+    "label": "BERNIE MADOFF",
+    "caption": "sold certainty — the one thing markets can't give",
+    "narration": "He didn't really sell an investment. He sold certainty — a smooth line that only ever went up. And certainty, in markets, is the one thing nobody can honestly promise."
+  },
+  {
+    "id": "s77",
+    "type": "character",
+    "narration": "So the next time something offers you steady, guaranteed, never-a-bad-month returns, picture that smooth impossible line — and ask where the money truly comes from.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "always ask: where from?"
       }
     ]
   },
   {
     "id": "s78",
-    "type": "callout",
-    "narration": "More than seven hundred million dollars of real money, that simply vanished.",
-    "text": "$700 million",
-    "sub": "that simply vanished",
-    "icon": "moneybag"
-  },
-  {
-    "id": "s79",
     "type": "character",
-    "narration": "And the scariest part? It very nearly worked. Without a couple of whistleblowers and one dogged reporter, Theranos might still be taking your blood today.",
-    "pose": "think",
-    "bubble": "…it almost worked"
-  },
-  {
-    "id": "s80",
-    "type": "image",
-    "narration": "A medical revolution on the slide deck. In the real lab, a pile of results they quietly had to throw away.",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "the slide deck: a medical revolution",
-    "memeBottom": "the lab: results they had to void"
-  },
-  {
-    "id": "s81",
-    "type": "character",
-    "narration": "So next time a founder promises to change the world from a sleek black box nobody's allowed to open — remember the drop of blood that was worth nine billion dollars, and then nothing.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "droplet",
-        "label": "remember the drop"
-      },
-      {
-        "name": "calculator",
-        "label": "ask for proof"
-      }
-    ]
-  },
-  {
-    "id": "s82",
-    "type": "character",
-    "narration": "If this gave you a clear-eyed look behind the hype, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this made the biggest fraud in history finally make sense, hit subscribe — and tell me which impossible number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "vial",
+        "name": "pyramid",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s83",
+    "id": "s79",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

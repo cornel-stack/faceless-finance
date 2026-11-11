@@ -2096,6 +2096,86 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={502} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one reporter, a few whistleblowers</text>
       </svg>
     );
+  } else if (m === "ponziflow") {
+    // New investors' money is routed straight to old investors — nothing invested.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(150 250)"><circle r={54} fill={green} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>NEW</text><text y={18} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>money</text></g>
+        <g transform="translate(490 250)"><rect x={-72} y={-62} width={144} height={124} rx={10} fill={ink} /><text y={-6} fontSize={22} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">the</text><text y={22} fontSize={22} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">"fund"</text></g>
+        <g transform="translate(830 250)"><circle r={54} fill={blue} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>OLD</text><text y={20} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>payouts</text></g>
+        <path d={`M 208 250 L ${208 + 202 * Math.min(1, t * 2)} 250`} stroke={green} strokeWidth={6} fill="none" strokeLinecap="round" />
+        {t > 0.5 && <path d={`M 566 250 L ${566 + 206 * Math.min(1, (t - 0.5) * 2)} 250`} stroke={blue} strokeWidth={6} fill="none" strokeLinecap="round" />}
+        {t > 0.3 && <g opacity={interpolate(t, [0.3, 0.6], [0, 1], clampBoth)}><path d="M490 186 L490 118" stroke={red} strokeWidth={6} fill="none" strokeLinecap="round" /><text x={490} y={104} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">a skim</text></g>}
+        <text x={VW / 2} y={408} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">nothing is invested — new money pays old</text>
+        <text x={VW / 2} y={444} fontSize={20} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>…until the new money stops</text>
+      </svg>
+    );
+  } else if (m === "impossiblereturns") {
+    // A suspiciously smooth straight-up line vs the jagged real market.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const real = "M 90 420 L 180 356 L 260 404 L 340 300 L 430 352 L 520 250 L 620 322 L 720 208 L 880 262";
+    const fake = "M 90 432 L 880 150";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={452} x2={VW - 40} y2={452} stroke={ink} strokeWidth={4} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={real} stroke={theme.inkSoft} strokeWidth={5} seed={9} />
+          <RPath d={fake} stroke={red} strokeWidth={7} seed={3} />
+        </g>
+        {rev > 0.6 && <text x={700} y={150} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">Madoff: always up</text>}
+        {rev > 0.4 && <text x={300} y={262} fontSize={20} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>real markets</text>}
+        <text x={VW / 2} y={498} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">too smooth to be real</text>
+      </svg>
+    );
+  } else if (m === "fakestatement") {
+    // A monthly statement of steady gains — stamped FICTION.
+    const stamp = spring({ frame, fps, delay: fps * 1.3, config: { damping: 9, mass: 0.6 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 262)">
+          <rect x={-150} y={-180} width={300} height={360} rx={8} fill={parch} stroke={ink} strokeWidth={5} />
+          <text x={0} y={-142} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">YOUR STATEMENT</text>
+          {[0, 1, 2, 3, 4].map((i) => <g key={i}><RLine x1={-120} y1={-104 + i * 28} x2={30} y2={-104 + i * 28} stroke={theme.inkSoft} strokeWidth={4} seed={i} /><text x={120} y={-98 + i * 28} fontSize={18} fontWeight={900} fill={green} textAnchor="end" fontFamily={sans}>+{i + 1}.{i * 2}%</text></g>)}
+          <RPath d="M-120 64 L-60 50 L0 32 L60 18 L120 -4" stroke={green} strokeWidth={5} seed={2} />
+          <text x={0} y={128} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1,000,000</text>
+        </g>
+        <g transform={`translate(490 262) rotate(-14) scale(${Math.min(1, stamp)})`} opacity={Math.min(1, stamp)}>
+          <rect x={-142} y={-36} width={284} height={72} rx={8} fill="none" stroke={red} strokeWidth={6} />
+          <text x={0} y={18} fontSize={44} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">FICTION</text>
+        </g>
+        <text x={VW / 2} y={500} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the statements were printed fairy tales</text>
+      </svg>
+    );
+  } else if (m === "redemptionrun") {
+    // 2008: everyone demands their money back at once; the vault is empty.
+    const rush = interpolate(frame, [fps * 0.5, fps * 1.8], [0, 1], clampBoth);
+    const empty = interpolate(frame, [fps * 1.6, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 250)">
+          <rect x={-92} y={-92} width={184} height={184} rx={12} fill={tan} stroke={ink} strokeWidth={6} />
+          <circle cx={0} cy={0} r={42} fill="none" stroke={ink} strokeWidth={6} />
+          <text x={0} y={12} fontSize={40} fontWeight={900} fill={empty > 0.5 ? red : ink} textAnchor="middle" fontFamily="Georgia, serif">{empty > 0.5 ? "$0" : "$"}</text>
+        </g>
+        {Array.from({ length: 6 }, (_, i) => { const a = (i / 6) * 6.283; const d = 270 - rush * 130; return <g key={i} transform={`translate(${490 + d * Math.cos(a)} ${250 + d * Math.sin(a)})`}><circle r={18} fill={blue} stroke={ink} strokeWidth={3} /><text y={6} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>!</text></g>; })}
+        <text x={VW / 2} y={470} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">2008: everyone wants out at once</text>
+        <text x={VW / 2} y={505} fontSize={20} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the money was never there</text>
+      </svg>
+    );
+  } else if (m === "clawback") {
+    // The trustee drags money back from early winners to repay the losers.
+    const pull = interpolate(frame, [fps * 0.6, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(828 250)"><circle r={50} fill={green} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>early</text><text y={16} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>winners</text></g>
+        <g transform="translate(150 250)"><rect x={-62} y={-56} width={124} height={112} rx={10} fill={ink} /><text y={-2} fontSize={16} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>the</text><text y={22} fontSize={16} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>trustee</text></g>
+        {Array.from({ length: 5 }, (_, i) => { const x = 772 - (772 - 224) * interpolate(pull, [i * 0.12, i * 0.12 + 0.5], [0, 1], clampBoth); return <g key={i} transform={`translate(${x} 250)`}><circle r={16} fill={gold} stroke={ink} strokeWidth={3} /><text y={6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <text x={VW / 2} y={452} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">clawed back from winners → repaid to losers</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
