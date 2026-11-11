@@ -2,738 +2,756 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "This is the story of Germany's proudest tech company — a fintech superstar worth twenty-four billion euros, sitting in the elite DAX index right next to Siemens and BMW.",
+    "narration": "Friday, September twelfth, 2008. A hundred-and-fifty-eight-year-old Wall Street titan is still standing. By Monday morning, it is gone — and the entire global financial system is in cardiac arrest.",
     "pose": "explain",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "a €24bn tech star"
+        "name": "officetower",
+        "label": "a 158-year-old titan"
       }
     ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "It was the future of money. And then, one day in 2020, it admitted that nearly two billion euros of its cash — about a quarter of its whole balance sheet — probably didn't exist. At all.",
+    "narration": "In a single weekend — seventy-two hours — the fourth-largest investment bank in America collapsed, triggering the worst financial crisis since the Great Depression. This is how it happened, hour by hour.",
     "pose": "think",
-    "bubble": "€1.9bn… gone?"
+    "bubble": "72 hours to catastrophe"
   },
   {
     "id": "s3",
     "type": "image",
     "src": "img/memes/fine.jpg",
     "meme": "This Is Fine",
-    "memeTop": "'Germany's answer to PayPal'",
-    "memeBottom": "a quarter of the cash was fake",
-    "narration": "How does a company audited by one of the world's biggest firms, watched by regulators, and worth billions, simply invent two billion euros? Let's run the numbers."
+    "memeTop": "'the housing market only goes up'",
+    "memeBottom": "the entire system on fire",
+    "narration": "To understand how one bank's failure nearly took down the world, we have to start years earlier — with a very American dream, built on a very dangerous amount of debt."
   },
   {
     "id": "s4",
     "type": "screenshot",
-    "narration": "The company was Wirecard — now an insolvent German payment processor and financial services provider, whose top executives were arrested or implicated in criminal proceedings.",
-    "sourceId": "wiki-wirecard"
+    "narration": "The firm was Lehman Brothers — an American global financial services firm founded all the way back in 1850.",
+    "sourceId": "wiki-lehman"
   },
   {
-    "id": "s56",
+    "id": "s57",
     "type": "character",
-    "narration": "Its origins were grubby. Wirecard got its start processing payments for gambling and pornography sites — the risky corners of the early internet that mainstream banks wouldn't touch.",
+    "narration": "The stage was set by decades of deregulation. Old rules that once separated boring customer banks from risky investment banks had been stripped away — freeing giants like Lehman to gamble with enormous sums.",
     "pose": "explain",
     "props": [
       {
-        "name": "phone",
-        "label": "grubby beginnings"
+        "name": "scale",
+        "label": "the guardrails removed"
       }
     ]
   },
   {
     "id": "s5",
-    "type": "title",
-    "narration": "To feel the scale of the fraud, you first have to feel how beloved this company was.",
-    "heading": "The National Champion",
-    "kicker": "Germany's tech pride"
+    "type": "image",
+    "src": "img/fuld.jpg",
+    "label": "RICHARD FULD",
+    "caption": "Lehman's CEO — 'the Gorilla'",
+    "narration": "At its head was Richard Fuld, a ferociously aggressive CEO nicknamed 'the Gorilla,' who had run Lehman for years and pushed it to take on ever bigger, ever riskier bets."
   },
   {
     "id": "s6",
-    "type": "character",
-    "narration": "Wirecard processed digital payments — the invisible plumbing that moves money when you tap a card. As the world went cashless, its profits seemed to explode, especially from a booming business in Asia.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "the cashless boom"
-      }
-    ]
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "Cleverly, it also bought its own bank. That made the company a sprawling, complex financial institution — and conveniently much harder for any outsider to fully untangle.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "too complex to check"
-      }
-    ]
+    "type": "title",
+    "narration": "Those bets all led back to one thing: the American housing boom.",
+    "heading": "The Machine",
+    "kicker": "turning homes into bombs"
   },
   {
     "id": "s7",
-    "type": "image",
-    "src": "img/braun.jpg",
-    "label": "MARKUS BRAUN",
-    "caption": "Wirecard's visionary CEO",
-    "narration": "Its CEO, Markus Braun, played the part perfectly — the black-turtleneck tech visionary, promising to revolutionize money. He was a billionaire, and a national hero."
-  },
-  {
-    "id": "s8",
     "type": "character",
-    "narration": "Investors, politicians, and the German press adored it. Here, finally, was a German tech champion that could stand toe-to-toe with Silicon Valley. National pride was wrapped up in its soaring stock.",
+    "narration": "In the 2000s, money was cheap and house prices only ever seemed to rise. So banks handed out mortgages to almost anyone — including 'subprime' borrowers with poor credit who could barely afford them.",
     "pose": "explain",
     "props": [
       {
-        "name": "flag",
-        "label": "a point of national pride"
+        "name": "house",
+        "label": "mortgages for everyone"
       }
     ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "Big-name investors and analysts piled in, cheering every new record. When a company's stock only ever goes up, doubting it starts to feel not just wrong, but almost unpatriotic.",
+    "narration": "Standards collapsed completely. Lenders handed out so-called 'liar loans' and 'NINJA' loans — no income, no job, no assets, no problem. The goal wasn't good loans; it was simply more loans to feed the machine.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "iou",
+        "label": "'no income, no job' loans"
+      }
+    ]
+  },
+  {
+    "id": "s8",
+    "type": "character",
+    "narration": "On its own, one risky mortgage is a small problem. But Wall Street built a machine to turn millions of them into something that looked completely safe. That machine was called securitization.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "everyone cheered it on"
+        "name": "factory",
+        "label": "the securitization machine"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "And the referees were compromised. The rating agencies that stamped these bundles 'triple-A' were paid by the very banks selling them. Give a bad rating, and you'd lose the business to a rival who wouldn't.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "the raters were paid by the sellers"
       }
     ]
   },
   {
     "id": "s9",
-    "type": "title",
-    "narration": "But a few stubborn outsiders kept noticing that the numbers didn't quite add up.",
-    "heading": "The Doubters",
-    "kicker": "the people who smelled it"
+    "type": "screenshot",
+    "narration": "First, the loans were bundled into a mortgage-backed security — an asset secured by a mortgage, or a whole collection of mortgages, packaged together.",
+    "sourceId": "wiki-mbs"
   },
   {
     "id": "s10",
-    "type": "character",
-    "narration": "For years, a handful of short sellers and journalists dug into Wirecard's accounts — and found them deeply strange. The incredible Asian profits seemed to vanish whenever you looked closely.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magnifier",
-        "label": "the accounts looked fake"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Then they were sliced and repackaged again into a collateralized debt obligation — a structured product built on top of all that mortgage debt.",
+    "sourceId": "wiki-cdo"
   },
   {
     "id": "s11",
-    "type": "screenshot",
-    "narration": "Some of these critics were short sellers — investors who profit if the market value of an asset falls. They were betting that Wirecard was a fraud.",
-    "sourceId": "wiki-short"
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "narration": "The Financial Times ran a whole investigative series, nicknamed the 'House of Wirecard,' with leaked documents and whistleblower accounts suggesting the profits were being invented.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "newspaper",
-        "label": "'House of Wirecard'"
-      }
-    ]
-  },
-  {
-    "id": "s12",
-    "type": "image",
-    "src": "img/mccrum.jpg",
-    "label": "DAN McCRUM",
-    "caption": "the FT reporter who dug in",
-    "narration": "Leading the charge was Dan McCrum, a journalist at the Financial Times, who published report after report questioning where Wirecard's profits and cash actually were."
-  },
-  {
-    "id": "s13",
-    "type": "screenshot",
-    "narration": "The Financial Times is a British daily newspaper that focuses on business and economic current affairs — and it spent years on the Wirecard case.",
-    "sourceId": "wiki-ft"
+    "type": "stage",
+    "narration": "Here's the magic trick. You take a pile of risky home loans, bundle them up, and the rating agencies stamp big chunks of it 'triple-A' — as safe as government debt. Junk, relabeled as gold.",
+    "motif": "subprimestack",
+    "caption": "junk loans, stamped 'safe'"
   },
   {
     "id": "s60",
     "type": "image",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "invent €2bn and expect nobody to check",
-    "narration": "For years, the warnings were detailed, specific, and public. And for years, almost everyone in power chose to believe the company instead."
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "bundle risky loans, stamp them AAA",
+    "memeBottom": "sell them to the whole world",
+    "narration": "On a whiteboard, it looked like genius financial engineering. In reality, it was quietly loading a bomb into the foundations of the entire global economy."
   },
   {
-    "id": "s14",
-    "type": "title",
-    "narration": "So what did the authorities do with these warnings? Something almost unbelievable.",
-    "heading": "Shooting the Messenger",
-    "kicker": "the watchdog backfires"
-  },
-  {
-    "id": "s15",
+    "id": "s12",
     "type": "character",
-    "narration": "Instead of investigating Wirecard, Germany's financial regulator turned its fire on the critics — treating the journalists and short sellers as the villains attacking a national treasure.",
+    "narration": "These shiny AAA packages were then sold to banks, pension funds, and investors all over the world. The risk from a trailer park in Florida was now wired into the entire global system.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "blamed the messengers"
-      }
-    ]
-  },
-  {
-    "id": "s16",
-    "type": "screenshot",
-    "narration": "That regulator was BaFin — Germany's integrated financial supervisory authority, responsible for policing its banks and markets.",
-    "sourceId": "wiki-bafin"
-  },
-  {
-    "id": "s17",
-    "type": "character",
-    "narration": "BaFin did something extraordinary: it filed a criminal complaint against the Financial Times journalists, and even temporarily banned investors from short-selling Wirecard's stock — protecting the fraud from the people exposing it.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "banned the short sellers"
+        "name": "globe",
+        "label": "risk sold worldwide"
       }
     ]
   },
   {
     "id": "s61",
-    "type": "character",
-    "narration": "The short-selling ban was almost unheard-of. In early 2019, the regulator temporarily forbade anyone from betting against Wirecard at all — a protection it had never granted an ordinary company before.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "an unprecedented ban"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "stage",
-    "narration": "Think about how backwards that is. The watchdog pointed its gun at the people raising the alarm — and shielded the company that turned out to be lying all along.",
-    "motif": "regulatorbackwards",
-    "caption": "the watchdog aimed the wrong way"
+    "type": "screenshot",
+    "narration": "And there was one more layer: insurance. A credit default swap is an agreement where the seller compensates the buyer in the event of a debt default — a bet on whether a borrower will blow up.",
+    "sourceId": "wiki-cds"
   },
   {
     "id": "s62",
-    "type": "timeline",
-    "title": "Wirecard, 1999–2020",
-    "narration": "The arc, start to finish. Founded in 1999. The FT's deep investigations from 2015. The bizarre short ban in 2019. And total collapse in June 2020.",
-    "events": [
-      {
-        "year": "1999",
-        "label": "founded",
-        "icon": "blueprint"
-      },
-      {
-        "year": "2015",
-        "label": "FT digs in",
-        "icon": "magnifier"
-      },
-      {
-        "year": "2019",
-        "label": "short ban",
-        "icon": "padlock"
-      },
-      {
-        "year": "2020",
-        "label": "collapse",
-        "icon": "chartdown"
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s19",
-    "type": "image",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeTop": "the regulator",
-    "memeBottom": "chasing journalists instead of the €2bn fraud",
-    "narration": "It's a perfect lesson in how national pride can blind the very people whose job is to be suspicious."
-  },
-  {
-    "id": "s63",
     "type": "character",
-    "narration": "Even a special audit by another big firm, KPMG, couldn't verify that huge chunks of the profits were real. That alone should have ended it — yet the stock barely blinked.",
+    "narration": "The giant insurer AIG sold mountains of these swaps on mortgage debt — promising to pay out if it all went bad, without ever setting aside the money to cover it. It was insurance with an empty vault.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "magnifier",
-        "label": "couldn't verify the profits"
+        "name": "warning",
+        "label": "insurance with no reserves"
       }
     ]
   },
   {
-    "id": "s20",
+    "id": "s13",
     "type": "title",
-    "narration": "So where was all the money supposed to be? This is the clever part.",
-    "heading": "The Missing Billions",
-    "kicker": "the cash that wasn't"
+    "narration": "And firms like Lehman didn't just sell this stuff. They gorged on it — using an insane amount of borrowed money.",
+    "heading": "The Leverage",
+    "kicker": "borrowed to the hilt"
   },
   {
-    "id": "s21",
+    "id": "s14",
     "type": "character",
-    "narration": "Much of Wirecard's profit supposedly came from 'third-party partners' in places like the Philippines and Dubai — outsourced businesses processing payments on its behalf.",
+    "narration": "Lehman was leveraged to around thirty to one. For every single dollar of its own money, it had borrowed about thirty more — and poured it into mortgage bets.",
     "pose": "explain",
-    "props": [
-      {
-        "name": "globe",
-        "label": "mysterious Asian 'partners'"
-      }
-    ]
-  },
-  {
-    "id": "s22",
-    "type": "character",
-    "narration": "And the cash those partners earned? It was supposedly sitting safely in escrow accounts, held by a trustee, waiting for Wirecard. Billions of euros, parked in trust.",
-    "pose": "explain",
+    "expression": "worried",
     "props": [
       {
         "name": "bank",
-        "label": "billions 'held in escrow'"
+        "label": "~30 borrowed per $1"
       }
     ]
   },
   {
-    "id": "s23",
-    "type": "screenshot",
-    "narration": "An escrow is an arrangement where a third party receives and disburses money for the transacting parties — a neutral middleman holding the cash until conditions are met.",
-    "sourceId": "wiki-escrow"
+    "id": "s15",
+    "type": "stage",
+    "narration": "At thirty-to-one, the math is terrifying. If your assets fall in value by just three or four percent, your entire sliver of real capital is wiped out — and you're insolvent.",
+    "motif": "leveragetower",
+    "caption": "borrowed ~30× — one wobble topples it"
   },
   {
-    "id": "s24",
-    "type": "stage",
-    "narration": "It was the perfect hiding place. 'Don't worry, the billions are real — they're just sitting over there, in that trustee account in Asia you can't easily check.'",
-    "motif": "escrowtrust",
-    "caption": "held by a trustee who… wasn't"
+    "id": "s63",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Leverage: borrowed $ per $1 of capital",
+    "unit": "x",
+    "narration": "See how far out on the limb they were. A normal, boring bank might borrow ten dollars per dollar of capital. Lehman and its peers were out around thirty — a tower with almost nothing underneath.",
+    "data": [
+      {
+        "label": "a normal bank",
+        "value": 10
+      },
+      {
+        "label": "Lehman",
+        "value": 31
+      }
+    ],
+    "highlight": 1
+  },
+  {
+    "id": "s16",
+    "type": "title",
+    "narration": "In 2007, the one thing nobody planned for began to happen. House prices stopped rising.",
+    "heading": "The Crack",
+    "kicker": "when the music stopped"
+  },
+  {
+    "id": "s17",
+    "type": "screenshot",
+    "narration": "As prices fell and subprime borrowers defaulted, it became the American subprime mortgage crisis — a multinational financial crisis that unfolded between 2007 and 2010.",
+    "sourceId": "wiki-subprime"
+  },
+  {
+    "id": "s18",
+    "type": "character",
+    "narration": "Suddenly, all those 'safe' AAA packages were full of defaulting loans. They became toxic — and worse, nobody could figure out what they were actually worth anymore. Trust evaporated.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "'safe' turned toxic"
+      }
+    ]
   },
   {
     "id": "s64",
     "type": "character",
-    "narration": "To make the fiction look solid, the fraud relied on forged documents — fake bank letters and statements, confirming money that was never in any account. On paper, everything checked out.",
+    "narration": "And the trigger was simple arithmetic. US house prices, which 'always went up,' fell by roughly a third from their peak. For a system built on the assumption that they couldn't, that was an earthquake.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "shredder",
-        "label": "forged bank letters"
+        "name": "chartdown",
+        "label": "home prices fell ~30%"
       }
     ]
   },
   {
-    "id": "s25",
-    "type": "title",
-    "narration": "The whole illusion held — until someone finally demanded to actually see the money.",
-    "heading": "The Reveal",
-    "kicker": "'probably does not exist'"
-  },
-  {
-    "id": "s26",
+    "id": "s19",
     "type": "character",
-    "narration": "Under mounting pressure, Wirecard's own auditor, the giant firm EY, finally insisted on direct confirmation from the banks that supposedly held the escrow cash.",
+    "narration": "In March 2008, another bank, Bear Stearns, nearly collapsed and had to be rescued. The market began circling the next weakest animal in the herd — and that was Lehman.",
     "pose": "explain",
     "props": [
       {
-        "name": "magnifier",
-        "label": "'show us the cash'"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "screenshot",
-    "narration": "EY — one of the Big Four professional services firms — had signed off on Wirecard's accounts for years before finally asking the obvious question.",
-    "sourceId": "wiki-ey"
-  },
-  {
-    "id": "s28",
-    "type": "character",
-    "narration": "The banks in the Philippines responded with a bombshell: the accounts didn't exist. The documents were forgeries. There was no one point nine billion euros. There never had been.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "shredder",
-        "label": "the accounts were fake"
+        "name": "vulture",
+        "label": "the market circles Lehman"
       }
     ]
   },
   {
     "id": "s65",
-    "type": "image",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "the balance sheet: €1.9bn in cash",
-    "memeBottom": "the bank: we've never heard of you",
-    "narration": "When the auditors finally called the banks directly, the whole illusion died in a single phone call. The accounts, and the money, were pure invention."
-  },
-  {
-    "id": "s29",
-    "type": "callout",
-    "narration": "On June 18th, 2020, Wirecard admitted that one point nine billion euros of cash was missing — and probably never existed in the first place.",
-    "text": "€1.9 billion",
-    "sub": "…that never existed",
-    "icon": "warning"
-  },
-  {
-    "id": "s30",
-    "type": "stage",
-    "narration": "A quarter of the company's entire balance sheet was pure fiction — a number typed into a spreadsheet, backed by forged letters, believed by everyone for years.",
-    "motif": "fakebalance",
-    "caption": "the cash on paper wasn't there"
-  },
-  {
-    "id": "s66",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Wirecard 'escrow' cash (€ millions)",
-    "unit": "€M",
-    "narration": "Line it up. On the balance sheet, one point nine billion euros of cash. In the real bank accounts, the actual figure was zero.",
-    "data": [
-      {
-        "label": "on paper",
-        "value": 1900
-      },
-      {
-        "label": "actually there",
-        "value": 0
-      }
-    ],
-    "highlight": 0
-  },
-  {
-    "id": "s31",
-    "type": "title",
-    "narration": "Once that domino fell, the collapse was almost instant.",
-    "heading": "The Collapse",
-    "kicker": "a DAX giant, gone"
-  },
-  {
-    "id": "s32",
-    "type": "stage",
-    "narration": "The stock went into free fall, losing almost all of its value in a matter of days. A twenty-four-billion-euro champion evaporated into almost nothing.",
-    "motif": "stocktozero",
-    "caption": "from DAX star to worthless in days"
-  },
-  {
-    "id": "s33",
-    "type": "screenshot",
-    "narration": "The whole saga became the Wirecard scandal — a series of corrupt business practices and fraudulent financial reporting that destroyed the company.",
-    "sourceId": "wiki-scandal"
-  },
-  {
-    "id": "s67",
     "type": "character",
-    "narration": "And ordinary people paid. German retail investors had adored this stock, piling in their savings. Many lost everything overnight — their faith in a national champion turned to dust.",
+    "narration": "The warnings were everywhere. In March, Bear Stearns had been sold off in a fire sale at two dollars a share. Days before Lehman, the giant mortgage firms Fannie Mae and Freddie Mac were seized by the government.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "retiree",
-        "label": "small investors wiped out"
+        "name": "domino",
+        "label": "the dominoes were already falling"
+      }
+    ]
+  },
+  {
+    "id": "s66",
+    "type": "timeline",
+    "title": "The crisis timeline",
+    "narration": "The sequence was relentless. Subprime cracks in 2007. Bear Stearns rescued in March 2008. Fannie and Freddie seized in early September. Then Lehman. Then the bailouts. Then the Great Recession.",
+    "events": [
+      {
+        "year": "2007",
+        "label": "subprime cracks",
+        "icon": "house"
+      },
+      {
+        "year": "Mar '08",
+        "label": "Bear Stearns",
+        "icon": "warning"
+      },
+      {
+        "year": "Sep '08",
+        "label": "Lehman falls",
+        "icon": "tombstone"
+      },
+      {
+        "year": "Oct '08",
+        "label": "TARP",
+        "icon": "moneybag"
+      },
+      {
+        "year": "2009",
+        "label": "recession",
+        "icon": "chartdown"
+      }
+    ],
+    "highlight": 2
+  },
+  {
+    "id": "s20",
+    "type": "title",
+    "narration": "Which brings us to the weekend the world held its breath.",
+    "heading": "The 72 Hours",
+    "kicker": "the weekend of Sept 12–14"
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "narration": "That weekend, America's top financial firefighters gathered in New York to decide Lehman's fate — and, with it, the fate of the global economy.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "the emergency summit"
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "type": "image",
+    "src": "img/paulson.jpg",
+    "label": "HANK PAULSON",
+    "caption": "Treasury Secretary",
+    "narration": "In the room was Treasury Secretary Hank Paulson, a former Wall Street boss himself, now in charge of protecting the entire US economy."
+  },
+  {
+    "id": "s23",
+    "type": "image",
+    "src": "img/bernanke.jpg",
+    "label": "BEN BERNANKE",
+    "caption": "Federal Reserve chair",
+    "narration": "Beside him, Federal Reserve chairman Ben Bernanke — a scholar of the Great Depression, who understood better than anyone what a banking collapse could unleash."
+  },
+  {
+    "id": "s24",
+    "type": "image",
+    "src": "img/geithner.jpg",
+    "label": "TIM GEITHNER",
+    "caption": "president of the New York Fed",
+    "narration": "And Tim Geithner, head of the New York Fed, who spent the weekend desperately trying to broker a deal to save Lehman before Monday's market open."
+  },
+  {
+    "id": "s67",
+    "type": "character",
+    "narration": "All weekend, the heads of Wall Street's biggest banks were summoned to the New York Fed and told, bluntly, to find a private solution among themselves. For three days, the fate of the world sat in one building.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "locked in a room for 72 hrs"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "narration": "The plan was simple: find a buyer. Two giants circled. Bank of America took a long look — then walked away, choosing to buy a healthier bank, Merrill Lynch, instead.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "find a buyer, fast"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "character",
+    "narration": "That left one last hope: the British bank Barclays. A deal was nearly done — until UK regulators refused to approve it over the weekend without a shareholder vote. The final exit slammed shut.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "the last deal collapses"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "stage",
+    "narration": "And this time, crucially, there would be no government rescue. Burned by bailing out Bear Stearns, and facing public fury, Paulson drew a line: no more taxpayer money for Lehman.",
+    "motif": "weekendphones",
+    "caption": "one weekend, every rescue falls through"
+  },
+  {
+    "id": "s68",
+    "type": "image",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "let a $600bn bank fail with no consequences",
+    "narration": "They believed the system could absorb one failure. The idea that letting Lehman go might detonate everything was, to many in the room, almost unthinkable."
+  },
+  {
+    "id": "s28",
+    "type": "title",
+    "narration": "So in the early hours of Monday, September fifteenth, the unthinkable happened.",
+    "heading": "The Collapse",
+    "kicker": "the biggest bankruptcy ever"
+  },
+  {
+    "id": "s29",
+    "type": "screenshot",
+    "narration": "Lehman filed for bankruptcy — an event now known as the Lehman Shock, the climax of the entire subprime mortgage crisis.",
+    "sourceId": "wiki-bankruptcy"
+  },
+  {
+    "id": "s30",
+    "type": "callout",
+    "narration": "With over six hundred billion dollars in assets, it was, and remains, the largest bankruptcy filing in United States history.",
+    "text": "$600 billion",
+    "sub": "the biggest bankruptcy ever",
+    "icon": "tombstone"
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "narration": "Stunned employees walked out of Lehman's headquarters carrying cardboard boxes — an image that became the defining photograph of the entire financial crisis.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "movingbox",
+        "label": "25,000 jobs, gone"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "title",
+    "narration": "Everyone assumed one bank could fail without ending the world. They were catastrophically wrong.",
+    "heading": "The Shockwave",
+    "kicker": "the system seizes up"
+  },
+  {
+    "id": "s33",
+    "type": "character",
+    "narration": "Because the whole system was wired together by debt. Lehman owed money to everyone, and everyone owed money to everyone else. When it fell, nobody knew who was next — so the banks simply stopped lending.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "chain",
+        "label": "everyone owed everyone"
       }
     ]
   },
   {
     "id": "s34",
-    "type": "callout",
-    "narration": "Days later, Wirecard filed for insolvency — becoming the first member of Germany's prestigious DAX index ever to go bankrupt. A national humiliation.",
-    "text": "first DAX member",
-    "sub": "…ever to go bust",
-    "icon": "chartdown"
+    "type": "stage",
+    "narration": "This is the thing that nearly ended the world: the credit markets froze solid. The flow of money that every business relies on — payroll, supplies, basic operations — simply stopped.",
+    "motif": "creditfreeze",
+    "caption": "nobody will lend — credit freezes"
   },
   {
     "id": "s35",
-    "type": "title",
-    "narration": "And then the story got even stranger — like something out of a spy novel.",
-    "heading": "The Fugitive",
-    "kicker": "the COO who vanished"
+    "type": "screenshot",
+    "narration": "The panic hit even the safest corner of finance. A giant money market fund — normally rock-stable — fell below a dollar a share, in a terrifying event called 'breaking the buck.'",
+    "sourceId": "wiki-mmf"
   },
   {
-    "id": "s36",
+    "id": "s69",
     "type": "character",
-    "narration": "CEO Markus Braun was arrested. But the company's chief operating officer, Jan Marsalek — the man who ran the mysterious Asian business — did something else entirely. He ran.",
+    "narration": "The fund that broke the buck was the Reserve Primary Fund, which had been stuffed with Lehman debt. To stop a full-blown run, the government was forced to temporarily guarantee the entire money-market industry.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "handcuffs",
-        "label": "the CEO arrested"
+        "name": "lifering",
+        "label": "the whole system, guaranteed"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "Everyday savers started to panic. If even money market funds weren't safe, nothing was. This was the moment a Wall Street problem became a threat to every ordinary person's bank account.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "bank",
+        "label": "panic hits Main Street"
       }
     ]
   },
   {
     "id": "s37",
-    "type": "image",
-    "src": "img/marsalek.jpg",
-    "label": "JAN MARSALEK",
-    "caption": "fled — now a suspected spy",
-    "narration": "This is Jan Marsalek. As the fraud unravelled, he boarded a private jet and simply disappeared off the face of the earth."
+    "type": "character",
+    "narration": "The very next day, the government had to seize and bail out the giant insurer AIG — which had quietly guaranteed mountains of this toxic debt — for eighty-five billion dollars, to stop the dominoes.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "domino",
+        "label": "AIG, rescued next day"
+      }
+    ]
   },
   {
     "id": "s38",
-    "type": "screenshot",
-    "narration": "Today he is described as an Austrian fugitive former businessman and suspected spy operative for Russia — one of Europe's most wanted people.",
-    "sourceId": "wiki-marsalek"
-  },
-  {
-    "id": "s68",
-    "type": "character",
-    "narration": "Marsalek's backstory reads like fiction. He reportedly boasted of links to intelligence agencies, dabbled in secret deals, and after fleeing, is believed to have slipped through Belarus to Russia.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "spy",
-        "label": "a real-life spy thriller"
-      }
-    ]
+    "type": "title",
+    "narration": "To stop total collapse, governments did something enormous — and deeply unpopular.",
+    "heading": "The Bailout",
+    "kicker": "$700 billion"
   },
   {
     "id": "s39",
-    "type": "stage",
-    "narration": "The COO of a major European financial company vanished into a world of intelligence agencies and secret networks — and, years later, still has not been found.",
-    "motif": "fugitivejet",
-    "caption": "the COO fled, and disappeared"
-  },
-  {
-    "id": "s69",
-    "type": "character",
-    "narration": "Years later, investigators tied him to a European spy ring — suggesting the man who helped fake a company's accounts may also have been running an espionage network the whole time.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "globe",
-        "label": "an espionage network"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Congress passed TARP — the Troubled Asset Relief Program — to purchase toxic assets and inject money into the financial institutions on the brink.",
+    "sourceId": "wiki-tarp"
   },
   {
     "id": "s40",
-    "type": "title",
-    "narration": "So how did so many smart, paid, professional watchdogs miss it for so long?",
-    "heading": "Everyone Failed",
-    "kicker": "the watchdogs that slept"
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "The auditors signed off on fake cash for years, apparently never directly confirming the escrow accounts existed. A basic check — does this bank account hold this money? — simply wasn't done.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "the auditors rubber-stamped it"
-      }
-    ]
-  },
-  {
-    "id": "s42",
-    "type": "character",
-    "narration": "The regulator was worse than asleep — it actively defended the company and attacked its critics. And the press largely cheered the national champion, dismissing the doubters as enemies.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "newspaper",
-        "label": "a whole system failed"
-      }
-    ]
+    "type": "callout",
+    "narration": "The initial rescue was authorized at seven hundred billion dollars of public money — a staggering sum, handed to the very banks whose bets had caused the disaster.",
+    "text": "$700 billion",
+    "sub": "taxpayer bailout",
+    "icon": "moneybag"
   },
   {
     "id": "s70",
     "type": "character",
-    "narration": "The fallout reshaped Germany. The head of the regulator was forced out, the watchdog was overhauled, and the country's cozy audit rules were dragged into a long-overdue reckoning.",
+    "narration": "And the public was furious. The first time Congress voted on the bailout, they rejected it — and the Dow instantly crashed seven hundred and seventy-seven points, its biggest point drop ever. Terrified, they passed it days later.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "protest",
+        "label": "public fury vs panic"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "title",
+    "narration": "Which raises the question people still argue about today: why was Lehman allowed to die?",
+    "heading": "The Dilemma",
+    "kicker": "too big to fail"
+  },
+  {
+    "id": "s42",
+    "type": "screenshot",
+    "narration": "The crisis cemented a phrase into the language: too big to fail — the idea that some firms are so large and interconnected that their failure would be disastrous to the wider economy.",
+    "sourceId": "wiki-tbtf"
+  },
+  {
+    "id": "s71",
+    "type": "image",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "the banks that caused it",
+    "memeBottom": "get bailed out with your tax money",
+    "narration": "It is the defining grievance of the era: the firms that lit the fire were handed buckets of public money, while the people who lost their homes got almost nothing."
+  },
+  {
+    "id": "s43",
+    "type": "stage",
+    "narration": "That was the agonizing choice. Save a reckless bank with public money, and you reward bad behavior. Let it fail, and you risk burning down the whole economy. There was no clean answer.",
+    "motif": "toobigtofail",
+    "caption": "too big to fail — or not?"
+  },
+  {
+    "id": "s44",
+    "type": "character",
+    "narration": "Officials later argued they had no legal way to save Lehman, and no willing buyer. Critics say they badly underestimated the chaos its failure would cause. The debate has never been settled.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "a national overhaul"
-      }
-    ]
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "The only people who got it right were the ones everyone tried to silence: a few short sellers, and a handful of journalists who refused to drop the story.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magnifier",
-        "label": "the critics were right"
-      }
-    ]
-  },
-  {
-    "id": "s71",
-    "type": "character",
-    "narration": "And if this all feels familiar, it should. Enron, Theranos, Madoff, Wirecard — the costumes change, but the script is the same: a dazzling story, a number that isn't real, and watchdogs who look away.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magichat",
-        "label": "the same old script"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "title",
-    "narration": "So what are the napkin lessons hiding in the wreckage?",
-    "heading": "The Lessons",
-    "kicker": "how to smell a fraud"
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "Lesson one: when a company attacks its critics instead of simply answering them, pay attention. Honest companies refute doubts with evidence. Frauds attack the people asking.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "warning",
-        "label": "frauds attack their critics"
-      }
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "just show everyone the bank statement",
-    "memeBottom": "sue the journalists instead",
-    "narration": "There was one incredibly simple thing Wirecard could have done to end the doubts instantly: show the bank statements. It never could — because the money wasn't there."
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "Lesson two: the most powerful question in finance is often the most childish one — 'where, exactly, is the cash?' A real company can answer it in an afternoon. Wirecard never could.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "'where is the cash?'"
+        "label": "still debated today"
       }
     ]
   },
   {
     "id": "s72",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "if a company won't show you the cash, assume there is no cash",
-    "narration": "It really is that simple. Real money can always be shown. When a company dodges, delays, and attacks instead of proving it — believe the dodge."
+    "type": "character",
+    "narration": "A tiny handful of outsiders did see it coming, and famously bet against the whole subprime market — the story later told in 'The Big Short.' They were mocked as crazy, right up until they were proven devastatingly right.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "magnifier",
+        "label": "a few saw it coming"
+      }
+    ]
+  },
+  {
+    "id": "s45",
+    "type": "title",
+    "narration": "So what did seventy-two hours of catastrophe actually teach us?",
+    "heading": "The Lessons",
+    "kicker": "what the rubble revealed"
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "Lesson one: leverage is a loaded gun. Borrowing thirty dollars for every one of your own turns a small loss into total ruin. The same math that builds fortunes fast, destroys them faster.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bomb",
+        "label": "leverage kills"
+      }
+    ]
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "narration": "Lesson two: complexity hides risk. Nobody — not the buyers, not the regulators, maybe not even the banks — truly understood what was inside these products until it was far too late.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "shellbox",
+        "label": "complexity hid the danger"
+      }
+    ]
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "Lesson three: national pride is dangerous. The entire German establishment wanted Wirecard to be real so badly that it refused to see the fraud staring it in the face.",
+    "narration": "Lesson three: everything is connected. A crisis in American subprime mortgages froze credit in Europe and crashed economies in Asia. In a wired world, no financial fire stays local.",
     "pose": "explain",
     "props": [
       {
-        "name": "flag",
-        "label": "pride blinds watchdogs"
+        "name": "globe",
+        "label": "contagion is global"
       }
     ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "And lesson four: short sellers and sceptical journalists aren't the enemy. They are the market's immune system — often the only ones with a real incentive to dig up the truth.",
+    "narration": "And the hardest lesson: the people who paid were rarely the people who gambled. Few top bankers went to prison. But millions of ordinary people lost their jobs, their homes, and their savings.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "magnifier",
-        "label": "the market's immune system"
+        "name": "house",
+        "label": "Main Street paid the bill"
       }
     ]
   },
   {
     "id": "s73",
     "type": "character",
-    "narration": "It took extraordinary courage to keep reporting while being sued, surveilled, and branded a criminal by a government regulator. The people who were right paid a real price for being right early.",
+    "narration": "The scale of the human cost is staggering. The Great Recession wiped out around nine million American jobs, and millions of families lost their homes to foreclosure. The pain lasted for years.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "shield",
-        "label": "it took real courage"
+        "name": "movingbox",
+        "label": "~9M jobs, millions of homes"
       }
     ]
   },
   {
     "id": "s50",
-    "type": "title",
-    "narration": "So let's total up the two billion that never was.",
-    "heading": "The Final Math",
-    "kicker": "a fiction, believed"
-  },
-  {
-    "id": "s51",
-    "type": "chalkboard",
-    "narration": "Fake profits from mysterious partners. Fake cash in fake escrow accounts. Forged bank letters. A regulator that attacked the truth-tellers. And one point nine billion euros that simply never existed.",
-    "lines": [
-      "fake Asian 'partner' profits",
-      "€1.9bn in fake escrow accounts",
-      "forged bank confirmations",
-      "→ the first DAX member to collapse"
+    "type": "character",
+    "narration": "Fuld, the Gorilla, lost his firm — but kept most of the hundreds of millions he'd already made. Lehman died. The bill, in the end, went to the taxpayer and the homeowner.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "gorilla",
+        "label": "the boss kept his fortune"
+      }
     ]
   },
   {
-    "id": "s52",
+    "id": "s74",
     "type": "character",
-    "narration": "Wirecard didn't steal a vault of gold. It did something stranger: it convinced the world that money existed when it never did — and the world, wanting to believe, simply nodded along.",
+    "narration": "In response, new rules like the Dodd-Frank Act tried to rein in the banks. Yet, more than a decade on, the biggest banks are bigger than ever — arguably even more 'too big to fail' than before.",
     "pose": "explain",
     "props": [
       {
-        "name": "magichat",
-        "label": "a fortune made of nothing"
+        "name": "bank",
+        "label": "the banks only got bigger"
       }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "title",
+    "narration": "So let's total up the seventy-two hours.",
+    "heading": "The Final Math",
+    "kicker": "the weekend that broke the world"
+  },
+  {
+    "id": "s52",
+    "type": "chalkboard",
+    "narration": "Risky mortgages, stamped safe. Thirty-to-one leverage. A weekend with no buyer and no bailout. A six-hundred-billion-dollar bankruptcy. And a global credit freeze that took years, and trillions, to thaw.",
+    "lines": [
+      "junk mortgages → stamped AAA",
+      "~30:1 leverage → one wobble kills",
+      "a weekend, no rescue → bankruptcy",
+      "→ global crisis, the Great Recession"
     ]
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "So the next time a company dazzles everyone and viciously attacks anyone who asks hard questions, remember Wirecard — and quietly ask the one question frauds can never survive: show me the money.",
-    "pose": "present",
+    "narration": "Lehman didn't break the world because it was special. It broke the world because it was connected — one overloaded node in a system that had quietly become a tower of borrowed money.",
+    "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "always ask to see it"
+        "name": "tombstone",
+        "label": "Lehman, 1850–2008"
       }
     ]
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "If this made the Wirecard saga finally click, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "So the next time someone says a bank is 'too big to fail,' remember these seventy-two hours — and the uncomfortable truth that we rebuilt almost the same system, just with bigger banks.",
+    "pose": "present",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "which number next?"
+        "name": "calculator",
+        "label": "did we really learn?"
       }
     ]
   },
   {
     "id": "s55",
+    "type": "character",
+    "narration": "If this made the 2008 crisis finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s56",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

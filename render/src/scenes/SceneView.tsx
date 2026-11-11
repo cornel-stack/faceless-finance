@@ -2798,6 +2798,67 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={490} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">from DAX star to worthless in days</text>
       </svg>
     );
+  } else if (m === "subprimestack") {
+    // Risky mortgages bundled up and stamped AAA 'safe'.
+    const build = interpolate(frame, [fps * 0.3, fps * 1.8], [0, 1], clampBoth);
+    const stamp = spring({ frame, fps, delay: fps * 1.6, config: { damping: 9 } });
+    art = (
+      <svg width={VW} height={VH}>
+        {[0, 1, 2, 3].map((i) => { const op = interpolate(build, [i * 0.2, i * 0.2 + 0.3], [0, 1], clampBoth); return <g key={i} opacity={op} transform={`translate(490 ${382 - i * 72})`}><rect x={-120} y={-30} width={240} height={56} rx={6} fill={i < 2 ? red : "#d98b5f"} stroke={ink} strokeWidth={4} /><text y={6} fontSize={18} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>risky mortgages</text></g>; })}
+        <g transform={`translate(690 110) rotate(-12) scale(${Math.min(1, stamp)})`} opacity={Math.min(1, stamp)}><rect x={-62} y={-32} width={124} height={64} rx={8} fill="none" stroke={green} strokeWidth={6} /><text y={14} fontSize={38} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">AAA</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">junk loans, stamped 'safe'</text>
+      </svg>
+    );
+  } else if (m === "leveragetower") {
+    // A huge asset tower on a sliver of capital — it topples.
+    const topple = interpolate(frame, [fps * 1.4, fps * 2.3], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(490 430) rotate(${topple * 16})`}>
+          <rect x={-60} y={-320} width={120} height={300} fill={tan} stroke={ink} strokeWidth={5} />
+          <text x={0} y={-160} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$600bn</text>
+          <text x={0} y={-130} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>in assets</text>
+          <rect x={-60} y={-20} width={120} height={20} fill={red} stroke={ink} strokeWidth={4} />
+        </g>
+        <text x={490} y={462} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>~3% capital underneath</text>
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">borrowed ~30× — one wobble topples it</text>
+      </svg>
+    );
+  } else if (m === "weekendphones") {
+    // Frantic weekend calls to find a buyer — all say no.
+    const t = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const buyers = ["Barclays", "Bank of America", "the government"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(240 270)"><rect x={-80} y={-50} width={160} height={100} rx={10} fill={ink} /><text y={-6} fontSize={20} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>Lehman</text><text y={20} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>needs a buyer</text></g>
+        {buyers.map((b, i) => { const op = interpolate(t, [i * 0.25, i * 0.25 + 0.2], [0, 1], clampBoth); const y = 150 + i * 112; return <g key={i} opacity={op}><path d={`M320 270 L 618 ${y}`} stroke={theme.inkSoft} strokeWidth={2} strokeDasharray="5 5" /><rect x={618} y={y - 32} width={256} height={64} rx={8} fill={parch} stroke={ink} strokeWidth={3} /><text x={746} y={y - 5} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{b}</text><text x={746} y={y + 18} fontSize={16} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">…NO</text></g>; })}
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one weekend, every rescue falls through</text>
+      </svg>
+    );
+  } else if (m === "creditfreeze") {
+    // Banks stop lending to each other; the system freezes.
+    const freeze = interpolate(frame, [fps * 0.6, fps * 1.8], [0, 1], clampBoth);
+    const banks: [number, number][] = [[320, 200], [660, 200], [320, 360], [660, 360]];
+    const links: [number, number, number, number][] = [[384, 200, 596, 200], [320, 244, 320, 316], [660, 244, 660, 316], [384, 360, 596, 360]];
+    art = (
+      <svg width={VW} height={VH}>
+        {links.map((c, i) => <line key={i} x1={c[0]} y1={c[1]} x2={c[2]} y2={c[3]} stroke={freeze > 0.5 ? "#7fb6d6" : ink} strokeWidth={5} strokeDasharray={freeze > 0.5 ? "4 8" : "0"} />)}
+        {banks.map(([x, y], i) => <g key={i} transform={`translate(${x} ${y})`}><rect x={-60} y={-40} width={120} height={80} rx={8} fill={tan} stroke={ink} strokeWidth={4} /><text y={6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>bank</text></g>)}
+        {freeze > 0.6 && <text x={490} y={288} fontSize={30} fontWeight={900} fill="#3a6ea5" textAnchor="middle" fontFamily="Georgia, serif">FROZEN</text>}
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">nobody will lend — credit freezes</text>
+      </svg>
+    );
+  } else if (m === "toobigtofail") {
+    // The bailout dilemma: let it fail, or save it.
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 140)"><rect x={-92} y={-40} width={184} height={80} rx={10} fill={ink} /><text y={6} fontSize={22} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>the choice</text></g>
+        <g transform="translate(260 320)"><rect x={-112} y={-52} width={224} height={104} rx={10} fill={red} stroke={ink} strokeWidth={4} /><text y={-8} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>let it FAIL</text><text y={18} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>chaos, but fair</text></g>
+        <g transform="translate(720 320)"><rect x={-112} y={-52} width={224} height={104} rx={10} fill={green} stroke={ink} strokeWidth={4} /><text y={-8} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>BAIL it out</text><text y={18} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>calm, but unfair</text></g>
+        <path d="M430 180 L300 268 M550 180 L680 268" stroke={ink} strokeWidth={4} fill="none" strokeLinecap="round" />
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">too big to fail — or not?</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

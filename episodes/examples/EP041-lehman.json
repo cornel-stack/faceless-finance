@@ -1,0 +1,933 @@
+{
+  "id": "EP041",
+  "series": "Napkin Numbers",
+  "title": "Lehman Brothers: The 72 Hours That Broke the World",
+  "slug": "lehman-brothers-72-hours-that-broke-the-world",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP041 — crisis story (By the Numbers, row 31). Lehman's Sept 2008 collapse: subprime, securitization (MBS/CDO), ~30:1 leverage, the failed rescue weekend, the biggest bankruptcy in history, the credit freeze, TARP, and 'too big to fail.' Real portraits (Fuld, Paulson, Bernanke, Geithner). 5 new motifs (subprimestack, leveragetower, weekendphones, creditfreeze, toobigtofail) + doodles (gorilla, tombstone). Target 12–15 min.",
+  "media": {
+    "people": [
+      {
+        "query": "Richard S. Fuld Jr.",
+        "slug": "fuld"
+      },
+      {
+        "query": "Henry Paulson",
+        "slug": "paulson"
+      },
+      {
+        "query": "Ben Bernanke",
+        "slug": "bernanke"
+      },
+      {
+        "query": "Timothy Geithner",
+        "slug": "geithner"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Friday, September twelfth, 2008. A hundred-and-fifty-eight-year-old Wall Street titan is still standing. By Monday morning, it is gone — and the entire global financial system is in cardiac arrest.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "a 158-year-old titan"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "In a single weekend — seventy-two hours — the fourth-largest investment bank in America collapsed, triggering the worst financial crisis since the Great Depression. This is how it happened, hour by hour.",
+      "pose": "think",
+      "bubble": "72 hours to catastrophe"
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "'the housing market only goes up'",
+      "memeBottom": "the entire system on fire",
+      "narration": "To understand how one bank's failure nearly took down the world, we have to start years earlier — with a very American dream, built on a very dangerous amount of debt."
+    },
+    {
+      "id": "s4",
+      "type": "screenshot",
+      "narration": "The firm was Lehman Brothers — an American global financial services firm founded all the way back in 1850.",
+      "sourceId": "wiki-lehman"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "The stage was set by decades of deregulation. Old rules that once separated boring customer banks from risky investment banks had been stripped away — freeing giants like Lehman to gamble with enormous sums.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the guardrails removed"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "image",
+      "src": "img/fuld.jpg",
+      "label": "RICHARD FULD",
+      "caption": "Lehman's CEO — 'the Gorilla'",
+      "narration": "At its head was Richard Fuld, a ferociously aggressive CEO nicknamed 'the Gorilla,' who had run Lehman for years and pushed it to take on ever bigger, ever riskier bets."
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "Those bets all led back to one thing: the American housing boom.",
+      "heading": "The Machine",
+      "kicker": "turning homes into bombs"
+    },
+    {
+      "id": "s7",
+      "type": "character",
+      "narration": "In the 2000s, money was cheap and house prices only ever seemed to rise. So banks handed out mortgages to almost anyone — including 'subprime' borrowers with poor credit who could barely afford them.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "mortgages for everyone"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "Standards collapsed completely. Lenders handed out so-called 'liar loans' and 'NINJA' loans — no income, no job, no assets, no problem. The goal wasn't good loans; it was simply more loans to feed the machine.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "iou",
+          "label": "'no income, no job' loans"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "On its own, one risky mortgage is a small problem. But Wall Street built a machine to turn millions of them into something that looked completely safe. That machine was called securitization.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "factory",
+          "label": "the securitization machine"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And the referees were compromised. The rating agencies that stamped these bundles 'triple-A' were paid by the very banks selling them. Give a bad rating, and you'd lose the business to a rival who wouldn't.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "the raters were paid by the sellers"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "First, the loans were bundled into a mortgage-backed security — an asset secured by a mortgage, or a whole collection of mortgages, packaged together.",
+      "sourceId": "wiki-mbs"
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "narration": "Then they were sliced and repackaged again into a collateralized debt obligation — a structured product built on top of all that mortgage debt.",
+      "sourceId": "wiki-cdo"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Here's the magic trick. You take a pile of risky home loans, bundle them up, and the rating agencies stamp big chunks of it 'triple-A' — as safe as government debt. Junk, relabeled as gold.",
+      "motif": "subprimestack",
+      "caption": "junk loans, stamped 'safe'"
+    },
+    {
+      "id": "s60",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "bundle risky loans, stamp them AAA",
+      "memeBottom": "sell them to the whole world",
+      "narration": "On a whiteboard, it looked like genius financial engineering. In reality, it was quietly loading a bomb into the foundations of the entire global economy."
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "These shiny AAA packages were then sold to banks, pension funds, and investors all over the world. The risk from a trailer park in Florida was now wired into the entire global system.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "risk sold worldwide"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "screenshot",
+      "narration": "And there was one more layer: insurance. A credit default swap is an agreement where the seller compensates the buyer in the event of a debt default — a bet on whether a borrower will blow up.",
+      "sourceId": "wiki-cds"
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "The giant insurer AIG sold mountains of these swaps on mortgage debt — promising to pay out if it all went bad, without ever setting aside the money to cover it. It was insurance with an empty vault.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "insurance with no reserves"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "And firms like Lehman didn't just sell this stuff. They gorged on it — using an insane amount of borrowed money.",
+      "heading": "The Leverage",
+      "kicker": "borrowed to the hilt"
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "Lehman was leveraged to around thirty to one. For every single dollar of its own money, it had borrowed about thirty more — and poured it into mortgage bets.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bank",
+          "label": "~30 borrowed per $1"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "narration": "At thirty-to-one, the math is terrifying. If your assets fall in value by just three or four percent, your entire sliver of real capital is wiped out — and you're insolvent.",
+      "motif": "leveragetower",
+      "caption": "borrowed ~30× — one wobble topples it"
+    },
+    {
+      "id": "s63",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Leverage: borrowed $ per $1 of capital",
+      "unit": "x",
+      "narration": "See how far out on the limb they were. A normal, boring bank might borrow ten dollars per dollar of capital. Lehman and its peers were out around thirty — a tower with almost nothing underneath.",
+      "data": [
+        {
+          "label": "a normal bank",
+          "value": 10
+        },
+        {
+          "label": "Lehman",
+          "value": 31
+        }
+      ],
+      "highlight": 1
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "In 2007, the one thing nobody planned for began to happen. House prices stopped rising.",
+      "heading": "The Crack",
+      "kicker": "when the music stopped"
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "As prices fell and subprime borrowers defaulted, it became the American subprime mortgage crisis — a multinational financial crisis that unfolded between 2007 and 2010.",
+      "sourceId": "wiki-subprime"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "Suddenly, all those 'safe' AAA packages were full of defaulting loans. They became toxic — and worse, nobody could figure out what they were actually worth anymore. Trust evaporated.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "'safe' turned toxic"
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "And the trigger was simple arithmetic. US house prices, which 'always went up,' fell by roughly a third from their peak. For a system built on the assumption that they couldn't, that was an earthquake.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "home prices fell ~30%"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "In March 2008, another bank, Bear Stearns, nearly collapsed and had to be rescued. The market began circling the next weakest animal in the herd — and that was Lehman.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vulture",
+          "label": "the market circles Lehman"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "The warnings were everywhere. In March, Bear Stearns had been sold off in a fire sale at two dollars a share. Days before Lehman, the giant mortgage firms Fannie Mae and Freddie Mac were seized by the government.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "domino",
+          "label": "the dominoes were already falling"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "timeline",
+      "title": "The crisis timeline",
+      "narration": "The sequence was relentless. Subprime cracks in 2007. Bear Stearns rescued in March 2008. Fannie and Freddie seized in early September. Then Lehman. Then the bailouts. Then the Great Recession.",
+      "events": [
+        {
+          "year": "2007",
+          "label": "subprime cracks",
+          "icon": "house"
+        },
+        {
+          "year": "Mar '08",
+          "label": "Bear Stearns",
+          "icon": "warning"
+        },
+        {
+          "year": "Sep '08",
+          "label": "Lehman falls",
+          "icon": "tombstone"
+        },
+        {
+          "year": "Oct '08",
+          "label": "TARP",
+          "icon": "moneybag"
+        },
+        {
+          "year": "2009",
+          "label": "recession",
+          "icon": "chartdown"
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "Which brings us to the weekend the world held its breath.",
+      "heading": "The 72 Hours",
+      "kicker": "the weekend of Sept 12–14"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "That weekend, America's top financial firefighters gathered in New York to decide Lehman's fate — and, with it, the fate of the global economy.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "the emergency summit"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "image",
+      "src": "img/paulson.jpg",
+      "label": "HANK PAULSON",
+      "caption": "Treasury Secretary",
+      "narration": "In the room was Treasury Secretary Hank Paulson, a former Wall Street boss himself, now in charge of protecting the entire US economy."
+    },
+    {
+      "id": "s23",
+      "type": "image",
+      "src": "img/bernanke.jpg",
+      "label": "BEN BERNANKE",
+      "caption": "Federal Reserve chair",
+      "narration": "Beside him, Federal Reserve chairman Ben Bernanke — a scholar of the Great Depression, who understood better than anyone what a banking collapse could unleash."
+    },
+    {
+      "id": "s24",
+      "type": "image",
+      "src": "img/geithner.jpg",
+      "label": "TIM GEITHNER",
+      "caption": "president of the New York Fed",
+      "narration": "And Tim Geithner, head of the New York Fed, who spent the weekend desperately trying to broker a deal to save Lehman before Monday's market open."
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "All weekend, the heads of Wall Street's biggest banks were summoned to the New York Fed and told, bluntly, to find a private solution among themselves. For three days, the fate of the world sat in one building.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "locked in a room for 72 hrs"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "The plan was simple: find a buyer. Two giants circled. Bank of America took a long look — then walked away, choosing to buy a healthier bank, Merrill Lynch, instead.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "find a buyer, fast"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "That left one last hope: the British bank Barclays. A deal was nearly done — until UK regulators refused to approve it over the weekend without a shareholder vote. The final exit slammed shut.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the last deal collapses"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "stage",
+      "narration": "And this time, crucially, there would be no government rescue. Burned by bailing out Bear Stearns, and facing public fury, Paulson drew a line: no more taxpayer money for Lehman.",
+      "motif": "weekendphones",
+      "caption": "one weekend, every rescue falls through"
+    },
+    {
+      "id": "s68",
+      "type": "image",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "let a $600bn bank fail with no consequences",
+      "narration": "They believed the system could absorb one failure. The idea that letting Lehman go might detonate everything was, to many in the room, almost unthinkable."
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "So in the early hours of Monday, September fifteenth, the unthinkable happened.",
+      "heading": "The Collapse",
+      "kicker": "the biggest bankruptcy ever"
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "Lehman filed for bankruptcy — an event now known as the Lehman Shock, the climax of the entire subprime mortgage crisis.",
+      "sourceId": "wiki-bankruptcy"
+    },
+    {
+      "id": "s30",
+      "type": "callout",
+      "narration": "With over six hundred billion dollars in assets, it was, and remains, the largest bankruptcy filing in United States history.",
+      "text": "$600 billion",
+      "sub": "the biggest bankruptcy ever",
+      "icon": "tombstone"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "Stunned employees walked out of Lehman's headquarters carrying cardboard boxes — an image that became the defining photograph of the entire financial crisis.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "movingbox",
+          "label": "25,000 jobs, gone"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "title",
+      "narration": "Everyone assumed one bank could fail without ending the world. They were catastrophically wrong.",
+      "heading": "The Shockwave",
+      "kicker": "the system seizes up"
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Because the whole system was wired together by debt. Lehman owed money to everyone, and everyone owed money to everyone else. When it fell, nobody knew who was next — so the banks simply stopped lending.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chain",
+          "label": "everyone owed everyone"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "stage",
+      "narration": "This is the thing that nearly ended the world: the credit markets froze solid. The flow of money that every business relies on — payroll, supplies, basic operations — simply stopped.",
+      "motif": "creditfreeze",
+      "caption": "nobody will lend — credit freezes"
+    },
+    {
+      "id": "s35",
+      "type": "screenshot",
+      "narration": "The panic hit even the safest corner of finance. A giant money market fund — normally rock-stable — fell below a dollar a share, in a terrifying event called 'breaking the buck.'",
+      "sourceId": "wiki-mmf"
+    },
+    {
+      "id": "s69",
+      "type": "character",
+      "narration": "The fund that broke the buck was the Reserve Primary Fund, which had been stuffed with Lehman debt. To stop a full-blown run, the government was forced to temporarily guarantee the entire money-market industry.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "lifering",
+          "label": "the whole system, guaranteed"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Everyday savers started to panic. If even money market funds weren't safe, nothing was. This was the moment a Wall Street problem became a threat to every ordinary person's bank account.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bank",
+          "label": "panic hits Main Street"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "The very next day, the government had to seize and bail out the giant insurer AIG — which had quietly guaranteed mountains of this toxic debt — for eighty-five billion dollars, to stop the dominoes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "domino",
+          "label": "AIG, rescued next day"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "title",
+      "narration": "To stop total collapse, governments did something enormous — and deeply unpopular.",
+      "heading": "The Bailout",
+      "kicker": "$700 billion"
+    },
+    {
+      "id": "s39",
+      "type": "screenshot",
+      "narration": "Congress passed TARP — the Troubled Asset Relief Program — to purchase toxic assets and inject money into the financial institutions on the brink.",
+      "sourceId": "wiki-tarp"
+    },
+    {
+      "id": "s40",
+      "type": "callout",
+      "narration": "The initial rescue was authorized at seven hundred billion dollars of public money — a staggering sum, handed to the very banks whose bets had caused the disaster.",
+      "text": "$700 billion",
+      "sub": "taxpayer bailout",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s70",
+      "type": "character",
+      "narration": "And the public was furious. The first time Congress voted on the bailout, they rejected it — and the Dow instantly crashed seven hundred and seventy-seven points, its biggest point drop ever. Terrified, they passed it days later.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "protest",
+          "label": "public fury vs panic"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "title",
+      "narration": "Which raises the question people still argue about today: why was Lehman allowed to die?",
+      "heading": "The Dilemma",
+      "kicker": "too big to fail"
+    },
+    {
+      "id": "s42",
+      "type": "screenshot",
+      "narration": "The crisis cemented a phrase into the language: too big to fail — the idea that some firms are so large and interconnected that their failure would be disastrous to the wider economy.",
+      "sourceId": "wiki-tbtf"
+    },
+    {
+      "id": "s71",
+      "type": "image",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "the banks that caused it",
+      "memeBottom": "get bailed out with your tax money",
+      "narration": "It is the defining grievance of the era: the firms that lit the fire were handed buckets of public money, while the people who lost their homes got almost nothing."
+    },
+    {
+      "id": "s43",
+      "type": "stage",
+      "narration": "That was the agonizing choice. Save a reckless bank with public money, and you reward bad behavior. Let it fail, and you risk burning down the whole economy. There was no clean answer.",
+      "motif": "toobigtofail",
+      "caption": "too big to fail — or not?"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "Officials later argued they had no legal way to save Lehman, and no willing buyer. Critics say they badly underestimated the chaos its failure would cause. The debate has never been settled.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "still debated today"
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "type": "character",
+      "narration": "A tiny handful of outsiders did see it coming, and famously bet against the whole subprime market — the story later told in 'The Big Short.' They were mocked as crazy, right up until they were proven devastatingly right.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "a few saw it coming"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "title",
+      "narration": "So what did seventy-two hours of catastrophe actually teach us?",
+      "heading": "The Lessons",
+      "kicker": "what the rubble revealed"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Lesson one: leverage is a loaded gun. Borrowing thirty dollars for every one of your own turns a small loss into total ruin. The same math that builds fortunes fast, destroys them faster.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bomb",
+          "label": "leverage kills"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Lesson two: complexity hides risk. Nobody — not the buyers, not the regulators, maybe not even the banks — truly understood what was inside these products until it was far too late.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shellbox",
+          "label": "complexity hid the danger"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "Lesson three: everything is connected. A crisis in American subprime mortgages froze credit in Europe and crashed economies in Asia. In a wired world, no financial fire stays local.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "contagion is global"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And the hardest lesson: the people who paid were rarely the people who gambled. Few top bankers went to prison. But millions of ordinary people lost their jobs, their homes, and their savings.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "Main Street paid the bill"
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "type": "character",
+      "narration": "The scale of the human cost is staggering. The Great Recession wiped out around nine million American jobs, and millions of families lost their homes to foreclosure. The pain lasted for years.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "movingbox",
+          "label": "~9M jobs, millions of homes"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "Fuld, the Gorilla, lost his firm — but kept most of the hundreds of millions he'd already made. Lehman died. The bill, in the end, went to the taxpayer and the homeowner.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "gorilla",
+          "label": "the boss kept his fortune"
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "type": "character",
+      "narration": "In response, new rules like the Dodd-Frank Act tried to rein in the banks. Yet, more than a decade on, the biggest banks are bigger than ever — arguably even more 'too big to fail' than before.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "the banks only got bigger"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "title",
+      "narration": "So let's total up the seventy-two hours.",
+      "heading": "The Final Math",
+      "kicker": "the weekend that broke the world"
+    },
+    {
+      "id": "s52",
+      "type": "chalkboard",
+      "narration": "Risky mortgages, stamped safe. Thirty-to-one leverage. A weekend with no buyer and no bailout. A six-hundred-billion-dollar bankruptcy. And a global credit freeze that took years, and trillions, to thaw.",
+      "lines": [
+        "junk mortgages → stamped AAA",
+        "~30:1 leverage → one wobble kills",
+        "a weekend, no rescue → bankruptcy",
+        "→ global crisis, the Great Recession"
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "Lehman didn't break the world because it was special. It broke the world because it was connected — one overloaded node in a system that had quietly become a tower of borrowed money.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "tombstone",
+          "label": "Lehman, 1850–2008"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "So the next time someone says a bank is 'too big to fail,' remember these seventy-two hours — and the uncomfortable truth that we rebuilt almost the same system, just with bigger banks.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "did we really learn?"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "If this made the 2008 crisis finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-lehman",
+      "name": "Lehman Brothers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lehman_Brothers",
+      "quote": "an American global financial services firm founded in 1850"
+    },
+    {
+      "id": "wiki-mbs",
+      "name": "Mortgage-backed security (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mortgage-backed_security",
+      "quote": "secured by a mortgage or collection of mortgages"
+    },
+    {
+      "id": "wiki-cdo",
+      "name": "Collateralized debt obligation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Collateralized_debt_obligation",
+      "quote": "a type of structured asset-backed security"
+    },
+    {
+      "id": "wiki-subprime",
+      "name": "Subprime mortgage crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Subprime_mortgage_crisis",
+      "quote": "a multinational financial crisis that occurred between 2007 and 2010"
+    },
+    {
+      "id": "wiki-bankruptcy",
+      "name": "Bankruptcy of Lehman Brothers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers",
+      "quote": "the climax of the subprime mortgage crisis"
+    },
+    {
+      "id": "wiki-mmf",
+      "name": "Money market fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_market_fund",
+      "quote": "an open-end mutual fund that invests in short-term debt securities"
+    },
+    {
+      "id": "wiki-tarp",
+      "name": "Troubled Asset Relief Program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Troubled_Asset_Relief_Program",
+      "quote": "to purchase toxic assets and equity from financial institutions"
+    },
+    {
+      "id": "wiki-tbtf",
+      "name": "Too big to fail (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Too_big_to_fail",
+      "quote": "so large and so interconnected with an economy that their failure would be disastrous"
+    },
+    {
+      "id": "wiki-cds",
+      "name": "Credit default swap (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_default_swap",
+      "quote": "the seller of the CDS will compensate the buyer in the event of a debt default"
+    }
+  ],
+  "youtube": {
+    "title": "Lehman Brothers: The 72 Hours That Broke the World",
+    "alts": [
+      "How One Weekend in 2008 Nearly Ended the Global Economy",
+      "Lehman Brothers: The Collapse That Triggered the Great Recession"
+    ],
+    "hook": "Friday, September 12, 2008: a 158-year-old Wall Street titan is standing. By Monday it's gone — the biggest bankruptcy in US history, and the global financial system is in cardiac arrest. This is the Lehman Brothers collapse, by the numbers: the subprime machine, mortgage-backed securities and CDOs stamped AAA, 30-to-1 leverage, the failed rescue weekend, the $600 billion bankruptcy, the credit freeze, the $700 billion bailout, and the 'too big to fail' dilemma we never really solved. Fully cited.",
+    "bullets": [
+      "How risky mortgages were bundled into 'AAA-safe' MBS and CDOs",
+      "Lehman's 30-to-1 leverage — why a small loss meant ruin",
+      "The 72-hour rescue weekend: Paulson, Bernanke, Geithner, and no buyer",
+      "The $600B bankruptcy — the biggest in US history",
+      "The credit freeze, 'breaking the buck,' and the $700B TARP bailout",
+      "'Too big to fail' — and why Main Street paid the bill"
+    ],
+    "tags": [
+      "lehman brothers collapse",
+      "lehman brothers explained",
+      "2008 financial crisis",
+      "subprime mortgage crisis",
+      "too big to fail",
+      "mortgage backed securities",
+      "credit default swap",
+      "dick fuld",
+      "hank paulson",
+      "great recession",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#lehmanbrothers",
+      "#2008crisis",
+      "#finance",
+      "#economics"
+    ],
+    "thumbnail": {
+      "hookTop": "LEHMAN:",
+      "hookBot": "72 HOURS TO CHAOS",
+      "napkinNumber": "$600B",
+      "napkinSub": "biggest bankruptcy ever",
+      "deco": "tombstone"
+    },
+    "chapters": [
+      [
+        "hundred-and-fifty-eight-year-old",
+        "The titan"
+      ],
+      [
+        "machine was called securitization",
+        "The machine"
+      ],
+      [
+        "leveraged to around thirty",
+        "The leverage"
+      ],
+      [
+        "the weekend the world held its breath",
+        "The 72 hours"
+      ],
+      [
+        "the largest bankruptcy filing",
+        "The collapse"
+      ],
+      [
+        "the credit markets froze",
+        "The shockwave"
+      ],
+      [
+        "too big to fail",
+        "The dilemma"
+      ],
+      [
+        "the people who paid",
+        "The lesson"
+      ]
+    ]
+  }
+}

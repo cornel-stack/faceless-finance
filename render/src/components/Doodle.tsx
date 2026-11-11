@@ -71,6 +71,8 @@ export type DoodleName =
   | "turtle" | "hare"
   // EP040 (Wirecard) additions:
   | "spy" | "magnifier"
+  // EP041 (Lehman Brothers) additions:
+  | "gorilla" | "tombstone"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1473,6 +1475,28 @@ function shape(name: DoodleName): React.ReactNode {
         <>
           <RCircle cx={44} cy={44} d={40} fill="#bfe0ef" strokeWidth={SW} />
           <RLine x1={62} y1={62} x2={82} y2={82} strokeWidth={6} />
+        </>
+      );
+
+    // ---- EP041 (Lehman Brothers) doodles ----
+    case "gorilla":
+      // 'The Gorilla' — the hard-charging Wall Street CEO.
+      return (
+        <>
+          <RRect x={28} y={58} w={44} h={28} fill="#4a4a4a" strokeWidth={SW} />
+          <RCircle cx={50} cy={44} d={34} fill="#4a4a4a" strokeWidth={SW} />
+          <RCircle cx={50} cy={50} d={20} fill="#7a7a7a" strokeWidth={1.4} />
+          <RCircle cx={41} cy={46} d={5} fill={INK} strokeWidth={0.5} />
+          <RCircle cx={59} cy={46} d={5} fill={INK} strokeWidth={0.5} />
+        </>
+      );
+    case "tombstone":
+      // RIP — a storied firm, dead.
+      return (
+        <>
+          <RPath d="M30 86 L30 44 Q30 24 50 24 Q70 24 70 44 L70 86 Z" fill={TAN} strokeWidth={SW} />
+          <text x={50} y={52} fontSize={14} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">RIP</text>
+          <RLine x1={38} y1={62} x2={62} y2={62} strokeWidth={1.6} />
         </>
       );
   }

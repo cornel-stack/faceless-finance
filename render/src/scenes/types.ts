@@ -144,7 +144,9 @@ export interface StageScene extends Base {
     // EP039 (why the dumbest investors win) additions:
     | "dumbvssmart" | "feedrag" | "donothing" | "indexbasket" | "behaviorgap"
     // EP040 (Wirecard) additions:
-    | "fakebalance" | "escrowtrust" | "regulatorbackwards" | "fugitivejet" | "stocktozero";
+    | "fakebalance" | "escrowtrust" | "regulatorbackwards" | "fugitivejet" | "stocktozero"
+    // EP041 (Lehman Brothers) additions:
+    | "subprimestack" | "leveragetower" | "weekendphones" | "creditfreeze" | "toobigtofail";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
