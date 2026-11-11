@@ -30,18 +30,26 @@ runs = gh_json(["run", "list", "--workflow", "Render episode", "--limit", "60",
 
 rows = {}  # epid -> row (keep the newest successful run per episode)
 for r in runs:
-    br = r.get("headBranch", "")
-    m = re.match(r"ep(\d{3,})", br)
-    if not m:
-        continue
-    epid = "EP" + m.group(1)
+    # The TRUE episode id comes from the artifact name (e.g. "EP013-30"), NOT the
+    # branch — several episodes are rendered from one cumulative branch, so the
+    # branch (e.g. ep031-theranos) does not identify the episode.
     if r.get("status") != "completed" or r.get("conclusion") != "success":
         continue
-    if epid in rows:
-        continue  # runs are newest-first; keep first (newest) success
     run_id = r["databaseId"]
     arts = gh_json(["api", f"repos/{REPO}/actions/runs/{run_id}/artifacts"]) or {}
     art = (arts.get("artifacts") or [{}])[0]
+    art_name = art.get("name", "")
+    m = re.match(r"(EP\d{3,})-\d+", art_name)
+    if m:
+        epid = m.group(1)
+    else:
+        # fall back to the branch name if the artifact is missing/unnamed
+        bm = re.match(r"ep(\d{3,})", r.get("headBranch", ""))
+        if not bm:
+            continue
+        epid = "EP" + bm.group(1)
+    if epid in rows:
+        continue  # runs are newest-first; keep first (newest) success
     rows[epid] = {
         "epid": epid,
         "title": episode_title(epid),
