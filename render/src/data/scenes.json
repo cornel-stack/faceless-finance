@@ -2,833 +2,947 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Crypto has made a handful of people spectacularly, world-changingly rich. It's also vaporized the savings of millions more. Both things are true at once.",
+    "narration": "In 2014, Elizabeth Holmes was the most celebrated entrepreneur in America. Nineteen when she started, a Stanford dropout in a black turtleneck, and \u2014 on paper \u2014 a self-made billionaire.",
     "pose": "explain",
     "props": [
       {
-        "name": "token",
-        "label": "huge wins…"
+        "name": "trophy",
+        "label": "youngest billionaire"
       },
       {
-        "name": "chartdown",
-        "label": "…huge losses"
+        "name": "briefcase",
+        "label": "Stanford dropout"
       }
     ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "So which is it — the future of money, or the most elegant scam ever engineered? The honest answer is uncomfortable, and it lives in the math.",
-    "pose": "think",
-    "bubble": "future… or scam?",
+    "narration": "Her company, Theranos, promised something miraculous: run hundreds of medical tests from a single, painless drop of blood. No more big needles. No more vials.",
+    "pose": "present",
     "props": [
       {
-        "name": "calculator",
-        "label": "do the math"
+        "name": "droplet",
+        "label": "one drop"
+      },
+      {
+        "name": "vial",
+        "label": "no more vials"
       }
     ]
   },
   {
     "id": "s3",
     "type": "image",
-    "narration": "Because once you actually do the arithmetic on where the money comes from, and where it goes, a very specific picture appears.",
-    "src": "img/memes/thisisfine.jpg",
+    "narration": "It was pitched as the future of medicine. There was just one small detail buried under all that hype.",
+    "src": "img/memes/fine.jpg",
     "meme": "This Is Fine",
-    "memeTop": "'crypto is the future!'",
-    "memeBottom": "the math: someone has to lose"
+    "memeTop": "'the future of medicine!'",
+    "memeBottom": "the machine didn't work"
   },
   {
     "id": "s4",
     "type": "callout",
-    "narration": "I'm going to argue something deliberately provocative: that a lot of crypto is a brilliant scam. Not a dumb one — a genuinely brilliant one. And the brilliance is the problem.",
-    "text": "a brilliant scam",
-    "sub": "…and here's the math",
-    "icon": "magichat"
-  },
-  {
-    "id": "s63",
-    "type": "character",
-    "narration": "Just to be clear, I'm not saying everyone in crypto is a crook, or that it all goes to zero. I'm saying the underlying arithmetic is far harsher than the hype admits.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "it's about the math"
-      }
-    ]
+    "narration": "At its peak, this company was valued at nine billion dollars \u2014 making it one of the hottest startups on Earth.",
+    "text": "$9 billion",
+    "sub": "a company worth\u2026",
+    "icon": "trophy"
   },
   {
     "id": "s5",
     "type": "character",
-    "narration": "To be fair up front: the technology is real, and some of it is genuinely clever. But the money machine built on top of it is a different story entirely.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chip",
-        "label": "real tech"
-      },
-      {
-        "name": "warning",
-        "label": "…questionable machine"
-      }
-    ]
+    "narration": "There was just one problem. The technology at the center of it all didn't work. Not 'not yet' \u2014 it didn't work, and the people running it knew.",
+    "pose": "think",
+    "expression": "worried",
+    "bubble": "\u2026it didn't work"
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's run the actual numbers on crypto — and see why the math is so unforgiving.",
-    "heading": "Crypto Is a Brilliant Scam",
-    "kicker": "and here is the math",
-    "sub": "Real technology, brutal arithmetic."
+    "narration": "So let's run the numbers on the most famous fraud in Silicon Valley history.",
+    "heading": "Theranos",
+    "kicker": "The $700M That Vanished",
+    "sub": "a drop of blood, a $9 billion lie"
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "narration": "Start with what crypto actually is. A digital asset recorded on a blockchain — a shared ledger that no single bank or government controls.",
-    "sourceId": "wiki-crypto"
+    "narration": "Start with what it claimed to be. Theranos was touted as a breakthrough health-technology company, founded back in 2003 by a nineteen-year-old.",
+    "sourceId": "wiki-theranos"
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "narration": "The first and biggest is Bitcoin — the original decentralized cryptocurrency, born in 2008.",
-    "sourceId": "wiki-bitcoin"
+    "narration": "Its founder, Elizabeth Holmes, dropped out of Stanford to build it \u2014 and for over a decade, the world believed her.",
+    "sourceId": "wiki-holmes"
+  },
+  {
+    "id": "s84",
+    "type": "timeline",
+    "title": "Theranos, 2003\u20132022",
+    "narration": "Here's the whole arc, start to finish. Founded in 2003. Inside Walgreens by 2013. A nine-billion-dollar darling. Exposed in 2015. Dissolved in 2018. And in 2022, a criminal conviction.",
+    "events": [
+      {
+        "year": "2003",
+        "label": "founded",
+        "icon": "blueprint"
+      },
+      {
+        "year": "2013",
+        "label": "in Walgreens",
+        "icon": "store"
+      },
+      {
+        "year": "2014",
+        "label": "$9B peak",
+        "icon": "trophy"
+      },
+      {
+        "year": "2015",
+        "label": "expos\u00e9",
+        "icon": "newspaper"
+      },
+      {
+        "year": "2018",
+        "label": "dissolved",
+        "icon": "shredder"
+      },
+      {
+        "year": "2022",
+        "label": "convicted",
+        "icon": "handcuffs"
+      }
+    ],
+    "highlight": 2
   },
   {
     "id": "s9",
     "type": "character",
-    "narration": "And some of this is genuinely revolutionary. Money with no central controller. A fixed supply nobody can inflate. Value you can send across the world in minutes. These are real achievements.",
+    "narration": "The pitch was irresistible. You walk into a pharmacy, prick your finger, give one tiny drop of blood \u2014 and get a full panel of results. Cheaper, faster, nearly painless.",
     "pose": "explain",
     "props": [
       {
-        "name": "globe",
-        "label": "borderless"
+        "name": "droplet",
+        "label": "a fingerprick"
       },
       {
-        "name": "token",
-        "label": "…scarce & decentralized"
+        "name": "hospital",
+        "label": "full results"
       }
     ]
   },
   {
     "id": "s10",
-    "type": "character",
-    "narration": "So this isn't going to be a lazy 'crypto bad' rant. The technology is clever. The question is simpler and sharper: as an investment, where does the money actually come from?",
-    "pose": "think",
-    "bubble": "where's the money from?"
-  },
-  {
-    "id": "s64",
-    "type": "character",
-    "narration": "Here's a clean test. A productive asset pays you even if you never sell it — dividends, rent, interest. Crypto pays you nothing unless you sell it to someone else. That difference is everything.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "paid to hold?"
-      },
-      {
-        "name": "warning",
-        "label": "…only paid to sell"
-      }
-    ]
+    "type": "stage",
+    "narration": "From that single drop, Theranos claimed its machine could run hundreds of different tests. It would, they said, democratize healthcare for everyone.",
+    "motif": "onedrop",
+    "caption": "one drop \u2192 hundreds of tests"
   },
   {
     "id": "s11",
-    "type": "title",
-    "narration": "To answer that, you have to understand the one thing that makes most crypto fundamentally different from a stock or a house.",
-    "heading": "The Value Problem",
-    "kicker": "it produces nothing"
+    "type": "screenshot",
+    "narration": "Here's the catch. A real blood test is usually drawn from a vein in your arm with a needle \u2014 because one tiny drop simply doesn't contain enough to work with.",
+    "sourceId": "wiki-bloodtest"
   },
   {
     "id": "s12",
     "type": "character",
-    "narration": "Buy a stock, and you own a slice of a business that earns profits. Buy a house, and you get rent, or a roof over your head. These assets produce something.",
+    "narration": "A fingerprick drop is tiny, and it's diluted by fluid from the puncture. Running hundreds of accurate tests on it is, to this day, extraordinarily hard. That was the thing nobody wanted to say out loud.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "factory",
-        "label": "a stock earns profit"
-      },
-      {
-        "name": "house",
-        "label": "…a house gives shelter"
+        "name": "droplet",
+        "label": "too little blood"
       }
     ]
   },
   {
     "id": "s13",
     "type": "character",
-    "narration": "Most crypto tokens produce nothing. No profits, no rent, no cash flow of any kind. A coin just… sits there, being a coin.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "But Elizabeth Holmes didn't sell the science. She sold a story \u2014 and she sold it beautifully.",
+    "pose": "present",
     "props": [
       {
-        "name": "token",
-        "label": "no profit, no rent"
+        "name": "magichat",
+        "label": "a great story"
       }
     ]
   },
   {
     "id": "s14",
     "type": "character",
-    "narration": "So where does its price come from? Entirely from one place: what the next person is willing to pay you for it. Nothing else.",
+    "narration": "She modeled herself on her idol, Steve Jobs. The black turtleneck. The deep, deliberate voice. The constant talk of 'changing the world.'",
     "pose": "explain",
     "props": [
       {
-        "name": "crowd",
-        "label": "the next buyer"
+        "name": "phone",
+        "label": "the Jobs persona"
       }
     ]
   },
   {
     "id": "s15",
-    "type": "screenshot",
-    "narration": "That has a famous name in finance — the greater fool theory. You can profit from an overvalued thing, as long as a bigger fool buys it from you.",
-    "sourceId": "wiki-greaterfool"
+    "type": "image",
+    "narration": "In the retelling, a faster blood test kept growing \u2014 into a revolution, into a nine-billion-dollar mission to save humanity itself.",
+    "src": "img/memes/brain4.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "a faster blood test",
+    "memeBottom": "a $9 billion mission to save humanity"
   },
   {
     "id": "s16",
-    "type": "stage",
-    "narration": "The price goes up purely because more people believe it'll go up. It's a machine that runs on belief — 'number go up' — with nothing underneath but the next buyer.",
-    "motif": "numbergoup",
-    "caption": "a price built on pure belief"
-  },
-  {
-    "id": "s65",
     "type": "character",
-    "narration": "We've seen belief-only markets before. Four hundred years ago, Dutch tulip bulbs sold for the price of houses — until, one day, they didn't. Nothing had changed but the belief.",
+    "narration": "And it worked. A board stacked with famous names \u2014 former secretaries of state, generals, senators \u2014 gave her instant, unquestionable credibility.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartdown",
-        "label": "tulip mania, 1637"
+        "name": "handshake",
+        "label": "famous backers"
       }
     ]
   },
   {
-    "id": "s66",
-    "type": "image",
-    "narration": "A price held up by nothing but the next buyer's optimism has exactly one failure mode: the moment the next buyer doesn't show.",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "sell with no buyer left"
-  },
-  {
     "id": "s17",
-    "type": "image",
-    "narration": "A stock can rise because the company earned more. A coin with no earnings can only rise because someone paid more. Spot the difference.",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "no cash flow means no value — only a buyer"
+    "type": "callout",
+    "narration": "On the strength of that story, investors handed over more than seven hundred million dollars.",
+    "text": "$700 million",
+    "sub": "raised from investors",
+    "icon": "moneybag"
   },
   {
     "id": "s18",
     "type": "title",
-    "narration": "Now for the math that makes it a scam — and it's beautifully simple.",
-    "heading": "The Zero-Sum Math",
-    "kicker": "someone has to lose"
+    "narration": "Now let's open up the machine that all of it depended on.",
+    "heading": "The Black Box",
+    "kicker": "a machine that couldn't"
   },
   {
     "id": "s19",
     "type": "character",
-    "narration": "When an asset produces nothing, trading it is a zero-sum game. No new value is created. Money just moves from one pocket to another.",
+    "narration": "At the heart of Theranos was a device. Early on, they called it 'the Edison.' A sleek black box that would run your blood automatically, right there in the store.",
     "pose": "explain",
     "props": [
       {
-        "name": "exchange",
-        "label": "no value created"
+        "name": "chip",
+        "label": "the device"
       }
     ]
   },
   {
     "id": "s20",
-    "type": "screenshot",
-    "narration": "A zero-sum game means one side's gain is exactly the other side's loss.",
-    "sourceId": "wiki-zerosum"
+    "type": "stage",
+    "narration": "There was just one problem with the box. It didn't work reliably. The results it spat out were often wildly, dangerously wrong.",
+    "motif": "blackbox",
+    "caption": "a sleek black box \u2014 empty inside"
   },
   {
     "id": "s21",
-    "type": "stage",
-    "narration": "So for every person who 'made it' in crypto, someone else, somewhere, bought their coins at the top and ate the loss. Your profit was literally their money.",
-    "motif": "zerosum",
-    "caption": "your gain is someone's loss"
-  },
-  {
-    "id": "s67",
     "type": "character",
-    "narration": "And you're not trading against amateurs. On the other side of your trade are professional funds, insiders with early coins, and armies of bots — all faster and better informed than you.",
+    "narration": "And blood tests aren't a tech demo. If the number's wrong, a healthy person gets told they're sick \u2014 or a sick person gets told they're fine. People make life decisions on these results.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "laptop",
-        "label": "bots & whales"
-      }
-    ]
-  },
-  {
-    "id": "s68",
-    "type": "character",
-    "narration": "In a zero-sum game against sharper, faster players, the retail newcomer is usually the fish at the table. And if you can't spot the fish… it's you.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "warning",
-        "label": "spot the fish"
+        "name": "hospital",
+        "label": "real medical results"
       }
     ]
   },
   {
     "id": "s22",
     "type": "character",
-    "narration": "That alone would just be gambling — a coin flip. But crypto is worse than zero-sum. Because there's a rake.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "worse than a coin flip"
-      }
-    ]
+    "narration": "So what do you do when your miracle machine doesn't work, but you've promised the world it does \u2014 and already taken their money? You fake it.",
+    "pose": "think",
+    "bubble": "\u2026so they faked it"
   },
   {
     "id": "s23",
-    "type": "character",
-    "narration": "Every single trade leaks value to middlemen. Exchange fees on the way in and out. Network 'gas' fees for every transaction. Spreads. A constant skim off the top.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "fees on every trade"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "'Fake it till you make it' is a real saying \u2014 act confident, and you'll grow into the success. Harmless for a slogan. For a medical device, it's a catastrophe.",
+    "sourceId": "wiki-fakeit"
   },
   {
     "id": "s24",
     "type": "stage",
-    "narration": "And the energy. Mining new coins burns staggering amounts of electricity — real money spent, pulled straight out of the system to keep it running.",
-    "motif": "miningburn",
-    "caption": "billions in power, burned"
-  },
-  {
-    "id": "s69",
-    "type": "callout",
-    "narration": "Bitcoin's network alone consumes about as much electricity as a mid-sized country, every year — real energy, really burned, just to keep the ledger moving.",
-    "text": "≈ a country",
-    "sub": "of electricity, burned yearly",
-    "icon": "warning"
+    "narration": "In investor demos, the machine would appear to run a sample and show a clean result \u2014 when in reality, some demos were rigged to display a pre-loaded number.",
+    "motif": "fakedemo",
+    "caption": "the demo was staged"
   },
   {
     "id": "s25",
-    "type": "screenshot",
-    "narration": "That mining is the proof-of-work system — proving that real computational effort, and real electricity, has been spent.",
-    "sourceId": "wiki-pow"
+    "type": "character",
+    "narration": "And the real patient tests? Theranos quietly ran many of them on ordinary, commercial machines bought from other companies \u2014 the very machines it claimed to have made obsolete.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "server",
+        "label": "someone else's machines"
+      }
+    ]
+  },
+  {
+    "id": "s85",
+    "type": "character",
+    "narration": "Worse, to squeeze a test onto those commercial machines, samples were sometimes watered down to make the tiny drop go further \u2014 which could make already-shaky results even shakier.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "vial",
+        "label": "diluted samples"
+      }
+    ]
   },
   {
     "id": "s26",
-    "type": "character",
-    "narration": "Add it up: fees, spreads, energy, and the fortunes skimmed by scammers. A river of value flows out of the ecosystem every single day.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "value leaking out"
-      }
-    ]
+    "type": "image",
+    "narration": "The revolutionary device, quietly cheating on itself with the boring old machines it was supposed to replace.",
+    "src": "img/memes/distracted.jpg",
+    "meme": "Distracted Boyfriend",
+    "memeTop": "Theranos' 'revolutionary' box",
+    "memeBottom": "the normal machine it secretly used"
+  },
+  {
+    "id": "s86",
+    "type": "compare",
+    "narration": "So line it up plainly. The promise was one drop running hundreds of tests. The reality was a broken box, quietly leaning on the ordinary machines it was meant to kill.",
+    "left": {
+      "title": "The promise",
+      "value": "1 drop, 100s of tests",
+      "icon": "droplet"
+    },
+    "right": {
+      "title": "The reality",
+      "value": "ran on normal machines",
+      "icon": "server"
+    }
   },
   {
     "id": "s27",
-    "type": "stage",
-    "narration": "Which turns the coin flip into something darker: a negative-sum game. As a group, the players put in more than they can ever collectively take out. The rake guarantees it.",
-    "motif": "zerosum",
-    "caption": "negative-sum: the house always skims"
-  },
-  {
-    "id": "s28",
-    "type": "callout",
-    "narration": "So here's the uncomfortable arithmetic. In a thing with no earnings, the average participant must lose — because the fees, energy, and fraud have to be paid by someone.",
-    "text": "the average player loses",
-    "sub": "…the math is unforgiving",
-    "icon": "calculator"
-  },
-  {
-    "id": "s70",
     "type": "character",
-    "narration": "And beware the illusion of the bull run. When prices soar, everyone feels rich — but those are only paper gains. They're not real until someone pays you cash, and not everyone can cash out at once.",
+    "narration": "To hide all this, the company ran on fear and secrecy. Employees were siloed, made to sign aggressive non-disclosure agreements, and the two people at the very top kept total control.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "chartup",
-        "label": "paper gains"
-      },
-      {
-        "name": "warning",
-        "label": "…not everyone can exit"
+        "name": "padlock",
+        "label": "secrecy & NDAs"
       }
     ]
   },
   {
-    "id": "s71",
-    "type": "image",
-    "narration": "A rising chart makes a negative-sum game feel like a money printer — right up until the exits get crowded.",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "'we're all getting rich'",
-    "memeBottom": "paper gains nobody can all cash"
+    "id": "s28",
+    "type": "screenshot",
+    "narration": "One of those two was Ramesh 'Sunny' Balwani \u2014 the company's president, and Holmes's secret boyfriend \u2014 who helped run the whole operation.",
+    "sourceId": "wiki-balwani"
   },
   {
     "id": "s29",
     "type": "title",
-    "narration": "On top of that negative-sum base, crypto grew a whole ecosystem of outright scams. This is where it gets wild.",
-    "heading": "The Scam Layer",
-    "kicker": "fraud, industrialized"
+    "narration": "Which raises the real question: how do you get to nine billion dollars selling nothing that works?",
+    "heading": "The $9 Billion Story",
+    "kicker": "worth a fortune, selling nothing"
   },
   {
     "id": "s30",
-    "type": "screenshot",
-    "narration": "Classic one: the pump and dump. Insiders hype a coin to inflate its price, then dump their bags on the crowd they lured in.",
-    "sourceId": "wiki-pump"
+    "type": "character",
+    "narration": "On the strength of the story, the money poured in. By 2014, private investors had put in more than seven hundred million dollars of real cash.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "$700M in"
+      }
+    ]
+  },
+  {
+    "id": "s87",
+    "type": "character",
+    "narration": "And these weren't naive investors. Media mogul Rupert Murdoch alone reportedly put in over a hundred million dollars \u2014 and later sold his entire stake back for a single dollar.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "$100M+ from one investor"
+      }
+    ]
   },
   {
     "id": "s31",
-    "type": "character",
-    "narration": "It used to be illegal, hard securities fraud. In crypto's unregulated corners, it's practically a business model — run openly, in group chats, every single day.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
+    "type": "callout",
+    "narration": "Which pushed the company's valuation to a staggering nine billion dollars at its peak.",
+    "text": "$9 billion",
+    "sub": "peak valuation, 2014",
+    "icon": "trophy"
+  },
+  {
+    "id": "s88",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Theranos, by the numbers",
+    "unit": "$M",
+    "narration": "Put the money side by side. More than seven hundred million dollars raised. A paper value of nine billion. And, in the end, a real value of exactly zero.",
+    "data": [
       {
-        "name": "bubble",
-        "label": "pump the hype"
+        "label": "raised",
+        "value": 700
       },
       {
-        "name": "chartdown",
-        "label": "…dump on you"
+        "label": "paper value",
+        "value": 9000
+      },
+      {
+        "label": "final value",
+        "value": 0
       }
-    ]
+    ],
+    "highlight": 2
   },
   {
     "id": "s32",
-    "type": "stage",
-    "narration": "Then there's the rug pull. Founders launch a shiny new coin, collect everyone's money, and then simply vanish — taking the funds and leaving a worthless token.",
-    "motif": "rugpull",
-    "caption": "the rug pull"
+    "type": "character",
+    "narration": "Forbes crowned Holmes the youngest self-made female billionaire in America. Magazine covers, TED talks, a visit to the White House. She was the face of the future.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "cover star"
+      },
+      {
+        "name": "newspaper",
+        "label": "everywhere"
+      }
+    ]
   },
   {
     "id": "s33",
-    "type": "screenshot",
-    "narration": "And some projects are just the oldest fraud there is in digital clothing — a Ponzi scheme, paying old investors with new investors' money.",
-    "sourceId": "wiki-ponzi"
+    "type": "stage",
+    "narration": "And the more famous she became, the less anyone wanted to check under the hood. Fame itself became a shield against hard questions.",
+    "motif": "spotlight",
+    "caption": "the spotlight became a shield"
   },
   {
     "id": "s34",
-    "type": "character",
-    "narration": "'Guaranteed' returns, staking schemes promising twenty percent a month, elaborate 'protocols' — many were just Ponzis with a slick app and a whitepaper full of jargon.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magichat",
-        "label": "a Ponzi in an app"
-      }
-    ]
+    "type": "title",
+    "narration": "Then it stopped being slides for investors \u2014 and started touching real people.",
+    "heading": "Real Patients",
+    "kicker": "where it stopped being a game"
   },
   {
     "id": "s35",
-    "type": "character",
-    "narration": "Meme coins took it to the absurd — tokens based on a dog, a frog, a joke — openly worth nothing, yet still hoovering up billions from people hoping to flip them.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "token",
-        "label": "a coin about a dog"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Theranos struck a deal to put its blood-testing 'wellness centers' inside Walgreens \u2014 the second-largest pharmacy chain in America.",
+    "sourceId": "wiki-walgreens"
   },
   {
     "id": "s36",
-    "type": "callout",
-    "narration": "Blockchain analysts have tracked tens of billions of dollars lost to crypto scams and hacks in a single year. An entire industry of theft, bolted on top.",
-    "text": "$tens of billions",
-    "sub": "lost to crypto scams in a year",
-    "icon": "warning"
-  },
-  {
-    "id": "s72",
     "type": "character",
-    "narration": "The fraud has gotten sinister, too. 'Pig butchering' scams build fake romances for months, then lure victims into fake crypto apps — draining their life savings on a screen that shows fake gains.",
+    "narration": "Suddenly this wasn't a pitch deck. Actual patients, in actual stores, were handing over actual blood \u2014 and getting back results from a machine that didn't work.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "phone",
-        "label": "romance + fake app"
+        "name": "hospital",
+        "label": "real patients"
       }
     ]
   },
   {
-    "id": "s73",
-    "type": "image",
-    "narration": "The green numbers on the screen were never real. By the time you try to withdraw, the money, and the 'partner,' are gone.",
-    "src": "img/memes/distracted.jpg",
-    "meme": "Distracted Boyfriend",
-    "memeBottom": "a fake app showing fake gains"
+    "id": "s89",
+    "type": "character",
+    "narration": "And the harm was real. Some patients were handed alarming, wrong results \u2014 false alarms, and missed warnings \u2014 for serious conditions, all from a Theranos blood draw.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "hospital",
+        "label": "wrong results, real stakes"
+      }
+    ]
   },
   {
     "id": "s37",
+    "type": "callout",
+    "narration": "Theranos would later void or correct a huge number of those results \u2014 hundreds of thousands of patient tests, called into question.",
+    "text": "hundreds of thousands",
+    "sub": "of patient tests, voided",
+    "icon": "warning"
+  },
+  {
+    "id": "s38",
     "type": "character",
-    "narration": "And the exchanges themselves weren't always safe harbors. We devoted a whole episode to FTX — a giant that gambled away billions of its customers' money, and collapsed.",
+    "narration": "Think about what that means. Real people got medical decisions based on blood tests that the company itself later had to throw in the bin.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "even the exchanges"
+        "name": "shredder",
+        "label": "results voided"
       }
     ]
-  },
-  {
-    "id": "s38",
-    "type": "screenshot",
-    "narration": "Even the 'stable' part has question marks. Stablecoins like Tether claim to be backed one-to-one by dollars — a claim that's drawn years of scrutiny.",
-    "sourceId": "wiki-tether"
   },
   {
     "id": "s39",
     "type": "image",
-    "narration": "Pumps, rugs, Ponzis, hacks, dog coins, and a question mark over the dollars underneath it all. A truly rich ecosystem — of ways to lose money.",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "the whitepaper: revolutionary",
-    "memeBottom": "the reality: a rug pull"
-  },
-  {
-    "id": "s74",
-    "type": "character",
-    "narration": "And unlike a bank, there's often no recourse. No deposit insurance, no fraud department, no chargebacks. Send it to the wrong place, or get scammed, and it's simply gone — forever.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "no recourse"
-      }
-    ]
+    "narration": "The plan looked brilliant on a whiteboard \u2014 right up until the last box, where the machine met a real patient's blood.",
+    "src": "img/memes/grus.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "put the box in pharmacies",
+    "memeBottom": "give real patients fake results"
   },
   {
     "id": "s40",
     "type": "title",
-    "narration": "So if the math is this brutal, why does anyone play? This is the genuinely brilliant part.",
-    "heading": "Why It's Brilliant",
-    "kicker": "engineered to feel like investing"
+    "narration": "So who finally pulled the thread? Not a regulator. A handful of people who refused to lie.",
+    "heading": "The Unraveling",
+    "kicker": "a few people said no"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "Because crypto is a masterpiece of incentive design. It takes a negative-sum game and makes it feel like a revolution you'd be a fool to miss.",
+    "narration": "What finally cracked it open was a handful of young employees who saw the truth inside the lab and refused to stay quiet about it.",
     "pose": "explain",
     "props": [
       {
-        "name": "magichat",
-        "label": "the real genius"
+        "name": "crowd",
+        "label": "insiders who spoke"
       }
     ]
   },
   {
     "id": "s42",
-    "type": "character",
-    "narration": "Trick one: scarcity. 'Only twenty-one million Bitcoin will ever exist.' A simple, powerful story that makes it feel like rare digital gold.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "goldbar",
-        "label": "'digital gold'"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "A whistleblower risks their whole career to expose wrongdoing \u2014 often by becoming a source for an investigative reporter.",
+    "sourceId": "wiki-whistleblower"
   },
   {
     "id": "s43",
     "type": "character",
-    "narration": "Trick two: FOMO. Every friend who got rich, every green chart, screams that you're being left behind. Fear of missing out is the most powerful salesman alive.",
+    "narration": "Two young scientists \u2014 one of them the grandson of a famous board member \u2014 reported what they'd seen, under enormous legal pressure and threats from the company's lawyers.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "chartup",
-        "label": "everyone's getting rich!"
+        "name": "shield",
+        "label": "under threat"
       }
     ]
   },
   {
     "id": "s44",
-    "type": "character",
-    "narration": "Trick three: identity and community. 'HODL.' 'Diamond hands.' 'We're all gonna make it.' It stops being an asset and becomes a tribe you belong to.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "join the tribe"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "They took it to John Carreyrou, a reporter who helped expose the fraudulent practices of the blood-testing company in the Wall Street Journal.",
+    "sourceId": "wiki-carreyrou"
   },
   {
     "id": "s45",
-    "type": "character",
-    "narration": "Trick four: it never sleeps. Markets open twenty-four-seven, prices lurching every second, turning investing into a slot machine you can pull at three in the morning.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "a 24/7 slot machine"
-      }
-    ]
+    "type": "stage",
+    "narration": "In 2015, the story broke. One reporter and a few brave insiders \u2014 against a nine-billion-dollar company and its army of lawyers.",
+    "motif": "whistleblow",
+    "caption": "one reporter, a few whistleblowers"
   },
   {
     "id": "s46",
-    "type": "character",
-    "narration": "And trick five, the masterstroke: a real enemy. 'The banks are corrupt, the system is rigged, and this is your escape.' Wrap a bet in a cause, and it becomes a belief.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "'escape the system'"
-      }
-    ]
+    "type": "image",
+    "narration": "Because, as it turns out, you cannot run a medical empire on a machine that doesn't work forever.",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "fake a blood lab forever"
   },
   {
     "id": "s47",
-    "type": "stage",
-    "narration": "Put it together and you get a belief machine so compelling that people pour in their savings — convinced they're early to the future, not late to a negative-sum game.",
-    "motif": "numbergoup",
-    "caption": "a belief machine, perfected"
-  },
-  {
-    "id": "s75",
-    "type": "character",
-    "narration": "And this snares smart people too. Once you've bought in, sunk cost and tribe kick in. Doubting the coin feels like betraying the team — so believers double down instead of walking away.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "sunk cost + tribe"
-      }
-    ]
-  },
-  {
-    "id": "s76",
-    "type": "character",
-    "narration": "The culture is engineered against selling. 'Weak hands' sell; 'diamond hands' hold forever. Which is very convenient — for the people who need you to keep holding their exit liquidity.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "token",
-        "label": "'never sell'"
-      }
-    ]
+    "type": "title",
+    "narration": "Once the truth was public, the fall was almost vertical.",
+    "heading": "The Collapse",
+    "kicker": "$9 billion to zero"
   },
   {
     "id": "s48",
-    "type": "image",
-    "narration": "That is the brilliance. Not the code — the psychology. It makes losing feel like conviction.",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "join the revolution",
-    "memeBottom": "be exit liquidity"
+    "type": "character",
+    "narration": "Once the truth was out, it all came apart fast. Regulators banned Holmes from running a lab. Walgreens pulled out and sued. The partnerships evaporated overnight.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "it all unwound"
+      }
+    ]
   },
   {
     "id": "s49",
-    "type": "title",
-    "narration": "Now — the honest other side. Because 'it's all a scam' is too lazy, and partly wrong.",
-    "heading": "The Honest Caveat",
-    "kicker": "where it's NOT a scam"
+    "type": "screenshot",
+    "narration": "And the government had a word for what had happened: fraud \u2014 inducing investors to make decisions on the basis of false information.",
+    "sourceId": "wiki-secfraud"
   },
   {
     "id": "s50",
     "type": "character",
-    "narration": "Bitcoin's 'digital gold' argument is serious. A fixed-supply asset outside any government's control genuinely appeals to people in countries with broken currencies, or who distrust the state.",
+    "narration": "The SEC charged Holmes with 'massive fraud.' And Forbes \u2014 the very magazine that had crowned her a billionaire \u2014 quietly revised her net worth.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "charged with fraud"
+      }
+    ]
+  },
+  {
+    "id": "s90",
+    "type": "character",
+    "narration": "Holmes first settled with the SEC \u2014 paying a penalty and giving up control of the company. But that was the civil case. The criminal one was only just beginning.",
     "pose": "explain",
     "props": [
       {
-        "name": "token",
-        "label": "a real use case"
+        "name": "scale",
+        "label": "first the civil case"
       }
     ]
   },
   {
     "id": "s51",
-    "type": "character",
-    "narration": "The underlying technology — blockchains, smart contracts — has real uses beyond speculation. And moving money across borders, cheaply, instantly, is a genuine problem it can solve.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "globe",
-        "label": "real tech, real uses"
-      }
-    ]
+    "type": "stage",
+    "narration": "Her estimated fortune went from four and a half billion dollars\u2026 to nothing. The nine-billion-dollar company was worth zero.",
+    "motif": "ninebillionzero",
+    "caption": "$9 billion \u2192 zero"
   },
   {
     "id": "s52",
-    "type": "character",
-    "narration": "And yes, some people will make life-changing money. In a lottery, somebody always wins. That's exactly what keeps everyone else buying tickets.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "some do win big"
-      }
-    ]
+    "type": "callout",
+    "narration": "Forbes revised her net worth down to a single, brutal number.",
+    "text": "$0",
+    "sub": "net worth, revised",
+    "icon": "chartdown"
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "The point isn't that crypto can't go up, or that you can't win. It's that, absent real cash flow, your winnings come out of someone else's pocket — minus a very large rake.",
+    "narration": "In 2018, Theranos dissolved. The company that was going to change medicine simply ceased to exist, leaving investors and patients holding the bag.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "scale",
-        "label": "winning ≠ value created"
-      }
-    ]
-  },
-  {
-    "id": "s77",
-    "type": "character",
-    "narration": "Every cycle brings a new 'this time is different' — a new coin, a new use case, a new reason the old math no longer applies. The story changes; the arithmetic never does.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "'this time is different'"
-      }
-    ]
-  },
-  {
-    "id": "s78",
-    "type": "character",
-    "narration": "Regulators are slowly closing in, forcing disclosure and chasing the worst fraud. Which may clean it up — or simply make the casino look more respectable.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "regulation, slowly"
+        "name": "shredder",
+        "label": "dissolved, 2018"
       }
     ]
   },
   {
     "id": "s54",
     "type": "title",
-    "narration": "So let's total up the receipts.",
-    "heading": "The Final Math",
-    "kicker": "what it really is"
+    "narration": "But a dead company wasn't the end of it. The law was just getting started.",
+    "heading": "The Reckoning",
+    "kicker": "the verdict"
   },
   {
     "id": "s55",
-    "type": "chalkboard",
-    "narration": "Most crypto produces no cash flow. So trading it is zero-sum. Fees and energy make it negative-sum. And a scam layer skims even more. The average player must lose.",
-    "lines": [
-      "no cash flow → zero-sum",
-      "fees + energy → negative-sum",
-      "+ a thick layer of fraud",
-      "…the average player loses"
+    "type": "character",
+    "narration": "Then came the trials. In 2022, a jury found Elizabeth Holmes guilty of defrauding investors. Her partner, Sunny Balwani, was convicted on every single count.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "guilty"
+      }
     ]
   },
   {
     "id": "s56",
-    "type": "character",
-    "narration": "That's the scam part. The brilliant part is that it's wrapped in real technology, a powerful story, and a genuine community — so it feels like the opposite of a scam.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magichat",
-        "label": "scam + brilliance"
-      }
-    ]
+    "type": "callout",
+    "narration": "Holmes was sentenced to eleven years and three months in federal prison.",
+    "text": "11 years",
+    "sub": "Holmes's prison sentence",
+    "icon": "prison"
   },
   {
     "id": "s57",
-    "type": "stage",
-    "narration": "It can be a brilliant technology and a brilliant wealth-transfer machine at the very same time. The trick is never confusing the two.",
-    "motif": "zerosum",
-    "caption": "two brilliant things at once"
-  },
-  {
-    "id": "s79",
     "type": "character",
-    "narration": "If you do hold crypto, at least hold it properly. 'Not your keys, not your coins' — leave it on an exchange, and you're trusting exactly the kind of company that was FTX.",
+    "narration": "Balwani got nearly thirteen years of his own. And the two of them were ordered to pay back the people they had defrauded.",
     "pose": "explain",
     "props": [
       {
-        "name": "keys",
-        "label": "hold your own keys"
-      }
-    ]
-  },
-  {
-    "id": "s80",
-    "type": "character",
-    "narration": "Self-custody is the one genuinely empowering idea here — be your own bank. But it also means there's no one to call when you make a mistake. Freedom, with all the risk attached.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "vault",
-        "label": "be your own bank"
-      },
-      {
-        "name": "warning",
-        "label": "…all the risk, too"
+        "name": "handcuffs",
+        "label": "prison for both"
       }
     ]
   },
   {
     "id": "s58",
-    "type": "character",
-    "narration": "So if you play, play with clear eyes. Know that you're in a negative-sum game, know that the house skims, and never bet money you can't afford to simply hand to a stranger.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "warning",
-        "label": "play with clear eyes"
-      }
-    ]
+    "type": "callout",
+    "narration": "The court ordered them to pay four hundred and fifty-two million dollars in restitution to their victims.",
+    "text": "$452 million",
+    "sub": "ordered in restitution",
+    "icon": "receipt"
   },
   {
     "id": "s59",
-    "type": "callout",
-    "narration": "Because in a thing that earns nothing, there is no 'investing.' There's only the timeless question: are you the one selling to the greater fool — or the fool?",
-    "text": "which one are you?",
-    "sub": "the seller… or the fool?",
-    "icon": "token"
+    "type": "character",
+    "narration": "For a company that produced nothing that worked, the final tally is staggering \u2014 hundreds of millions gone, and trust in medical startups badly shaken.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "money gone"
+      }
+    ]
   },
   {
     "id": "s60",
-    "type": "character",
-    "narration": "So the next time a chart promises you the future and a community promises you belong, you'll remember the math — and ask exactly where the money is supposed to come from.",
-    "pose": "present",
-    "bubble": "ask: where's the money from?",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "always do the math"
-      }
-    ]
+    "type": "title",
+    "narration": "So here's the question worth sitting with: how did it ever get this far?",
+    "heading": "Why Did It Work?",
+    "kicker": "the anatomy of the lie"
   },
   {
     "id": "s61",
     "type": "character",
-    "narration": "If this gave you a clear-eyed read on crypto, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "How does a company with no working product reach nine billion dollars? The same way every great fraud does: a perfect story, told by the perfect messenger.",
+    "pose": "think",
+    "bubble": "how did it get so far?"
+  },
+  {
+    "id": "s62",
+    "type": "character",
+    "narration": "Trick one: a mission you can't argue with. Who's against cheaper, painless healthcare for everyone? Doubt the tech, and you sound like you're against the cure itself.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hospital",
+        "label": "an un-arguable mission"
+      }
+    ]
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "narration": "Trick two: a cult of personality. The turtleneck, the voice, the Steve Jobs comparison. Invest in Theranos, and you weren't buying a product \u2014 you were buying a genius.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "magichat",
+        "label": "the genius founder"
+      }
+    ]
+  },
+  {
+    "id": "s64",
+    "type": "character",
+    "narration": "Trick three: famous validators. When generals and statesmen sit on your board, who is going to be the one to demand an audit of your lab?",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "big names = cover"
+      }
+    ]
+  },
+  {
+    "id": "s65",
+    "type": "character",
+    "narration": "Trick four: secrecy, sold as protecting 'trade secrets.' Nobody outside could see inside the box \u2014 and that wasn't an accident. That was the entire design.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "padlock",
+        "label": "'trade secrets'"
+      }
+    ]
+  },
+  {
+    "id": "s66",
+    "type": "image",
+    "narration": "At every fork in the road, there was an easy, honest option \u2014 and a tempting one that just kicked the reckoning further down the road.",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "admit the machine doesn't work",
+    "memeBottom": "raise another $100 million"
+  },
+  {
+    "id": "s67",
+    "type": "character",
+    "narration": "Each trick is powerful. Stacked together, they let a story outrun reality for more than a decade \u2014 in an industry where being wrong can actually kill people.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "the story beat reality"
+      }
+    ]
+  },
+  {
+    "id": "s91",
+    "type": "character",
+    "narration": "Theranos became the cautionary tale for an entire era of startups \u2014 proof that a brilliant pitch and a product that actually works are two completely different things.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "warning",
+        "label": "the cautionary tale"
+      }
+    ]
+  },
+  {
+    "id": "s68",
+    "type": "title",
+    "narration": "And that points to the one lesson that outlives Theranos entirely.",
+    "heading": "The Real Lesson",
+    "kicker": "blood doesn't lie"
+  },
+  {
+    "id": "s69",
+    "type": "character",
+    "narration": "Faking it can work for an app. You ship something clunky, you improve it, and nobody gets hurt. But some things you cannot fake your way through.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "laptop",
+        "label": "fine for an app\u2026"
+      }
+    ]
+  },
+  {
+    "id": "s70",
+    "type": "character",
+    "narration": "You can't fake biology. A drop of blood either holds enough to test, or it doesn't. The machine either reads it accurately, or it doesn't. Belief does not change the chemistry.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "droplet",
+        "label": "\u2026not for blood"
+      }
+    ]
+  },
+  {
+    "id": "s71",
+    "type": "image",
+    "narration": "That's the hard line under this whole story. A confident pitch is not the same thing as a working product.",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "a confident story is not a working product"
+  },
+  {
+    "id": "s72",
+    "type": "character",
+    "narration": "That's the line Theranos crossed. It took Silicon Valley's 'move fast and break things' and pointed it straight at people's veins.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "vial",
+        "label": "pointed at patients"
+      }
+    ]
+  },
+  {
+    "id": "s73",
+    "type": "stage",
+    "narration": "For years, a brilliant mask hid an empty box. And when the mask finally slipped, there was simply nothing underneath.",
+    "motif": "mask",
+    "caption": "the mask slips"
+  },
+  {
+    "id": "s74",
+    "type": "character",
+    "narration": "So when someone sells you a miracle, ask the boring question the believers never do: can I see the data? Not the story \u2014 the actual data.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "ask for the data"
+      }
+    ]
+  },
+  {
+    "id": "s75",
+    "type": "title",
+    "narration": "So let's total up the receipts one last time.",
+    "heading": "The Final Tally",
+    "kicker": "what vanished"
+  },
+  {
+    "id": "s76",
+    "type": "chalkboard",
+    "narration": "Over seven hundred million dollars raised. A nine-billion-dollar valuation. A working product? None. And the final value, when the music stopped? Zero.",
+    "lines": [
+      "raised: $700M+ from investors",
+      "peak valuation: $9 billion",
+      "working product: none",
+      "final value: $0"
+    ]
+  },
+  {
+    "id": "s77",
+    "type": "character",
+    "narration": "A fortune, a full decade, and the trust of hundreds of thousands of patients \u2014 all of it vaporized into a story that was never actually true.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "all vaporized"
+      }
+    ]
+  },
+  {
+    "id": "s78",
+    "type": "callout",
+    "narration": "More than seven hundred million dollars of real money, that simply vanished.",
+    "text": "$700 million",
+    "sub": "that simply vanished",
+    "icon": "moneybag"
+  },
+  {
+    "id": "s79",
+    "type": "character",
+    "narration": "And the scariest part? It very nearly worked. Without a couple of whistleblowers and one dogged reporter, Theranos might still be taking your blood today.",
+    "pose": "think",
+    "bubble": "\u2026it almost worked"
+  },
+  {
+    "id": "s80",
+    "type": "image",
+    "narration": "A medical revolution on the slide deck. In the real lab, a pile of results they quietly had to throw away.",
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "the slide deck: a medical revolution",
+    "memeBottom": "the lab: results they had to void"
+  },
+  {
+    "id": "s81",
+    "type": "character",
+    "narration": "So next time a founder promises to change the world from a sleek black box nobody's allowed to open \u2014 remember the drop of blood that was worth nine billion dollars, and then nothing.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "droplet",
+        "label": "remember the drop"
+      },
+      {
+        "name": "calculator",
+        "label": "ask for proof"
+      }
+    ]
+  },
+  {
+    "id": "s82",
+    "type": "character",
+    "narration": "If this gave you a clear-eyed look behind the hype, hit subscribe \u2014 and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "token",
+        "name": "vial",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s62",
+    "id": "s83",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",
@@ -836,7 +950,7 @@
     "props": [
       {
         "name": "newspaper",
-        "label": "…what matters"
+        "label": "\u2026what matters"
       }
     ]
   }

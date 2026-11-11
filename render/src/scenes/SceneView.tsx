@@ -1997,6 +1997,105 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">a country's worth of power, for one coin</text>
       </svg>
     );
+  } else if (m === "onedrop") {
+    // One tiny drop of blood promised to run hundreds of tests.
+    const fan = interpolate(frame, [fps * 0.5, fps * 2.1], [0, 1], clampBoth);
+    const tests = ["cholesterol", "glucose", "cancer markers", "vitamin D", "…240 more"];
+    const srcX = 250, srcY = 250;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${srcX} ${srcY})`}>
+          <path d="M -72 36 q 72 -118 144 0 q -32 62 -72 62 q -40 0 -72 -62 z" fill={parch} stroke={ink} strokeWidth={5} />
+          <path d="M 0 -4 q -20 -26 0 -44 q 20 18 0 44 z" fill={red} stroke={ink} strokeWidth={4} transform={`translate(0 ${56 + Math.sin(frame / 7) * 3})`} />
+        </g>
+        <text x={srcX} y={370} fontSize={27} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">one drop</text>
+        {tests.map((t, i) => {
+          const ty = 86 + i * 72;
+          const op = interpolate(fan, [i * 0.16, i * 0.16 + 0.25], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <RLine x1={srcX + 70} y1={srcY} x2={688} y2={ty + 22} stroke={tan} strokeWidth={3} seed={i + 2} />
+              <rect x={688} y={ty} width={250} height={44} rx={8} fill={parch} stroke={ink} strokeWidth={3} />
+              <text x={813} y={ty + 29} fontSize={21} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{t}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={502} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one drop → hundreds of tests — the promise</text>
+      </svg>
+    );
+  } else if (m === "blackbox") {
+    // The sleek "Edison" device — its lid lifts to reveal nothing works inside.
+    const open = interpolate(frame, [fps * 0.9, fps * 1.9], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 300)">
+          <rect x={-140} y={-120} width={280} height={240} rx={14} fill="#2b2f33" stroke={ink} strokeWidth={6} />
+          <rect x={-102} y={-92} width={204} height={70} rx={8} fill={blue} opacity={0.85} />
+          <text x={0} y={104} fontSize={22} fontWeight={800} fill="#c7c2b6" textAnchor="middle" fontFamily={sans}>"Edison"</text>
+          <g transform={`translate(0 ${-120 - open * 78}) rotate(${-open * 7})`}>
+            <rect x={-140} y={-24} width={280} height={26} rx={8} fill="#454b50" stroke={ink} strokeWidth={5} />
+          </g>
+          <g opacity={open}>
+            <text x={0} y={16} fontSize={64} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">?</text>
+            <text x={0} y={58} fontSize={20} fontWeight={800} fill="#c7c2b6" textAnchor="middle" fontFamily={sans}>it didn't work</text>
+          </g>
+        </g>
+        <text x={VW / 2} y={492} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a sleek black box — empty inside</text>
+      </svg>
+    );
+  } else if (m === "fakedemo") {
+    // A device screen flips between the staged "all normal" and the real error.
+    const flip = Math.floor((frame / (fps * 0.8)) % 2);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 240)">
+          <rect x={-200} y={-120} width={400} height={250} rx={16} fill="#2b2f33" stroke={ink} strokeWidth={6} />
+          <rect x={-170} y={-96} width={340} height={158} rx={8} fill={flip ? "#3a1416" : "#13331c"} stroke={ink} strokeWidth={3} />
+          {flip === 0 ? (
+            <text x={0} y={-8} fontSize={44} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">✓ all normal</text>
+          ) : (
+            <text x={0} y={-8} fontSize={44} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">ERROR</text>
+          )}
+          <text x={0} y={40} fontSize={19} fontWeight={700} fill="#c7c2b6" textAnchor="middle" fontFamily={sans}>{flip === 0 ? "what investors saw" : "what the machine really did"}</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the demo was staged</text>
+      </svg>
+    );
+  } else if (m === "ninebillionzero") {
+    // A $9B valuation falls off the screen and lands on zero.
+    const fall = interpolate(frame, [fps * 0.9, fps * 2.1], [0, 320], clampBoth);
+    const fade = interpolate(frame, [fps * 1.7, fps * 2.3], [1, 0], clampBoth);
+    const zero = interpolate(frame, [fps * 2.1, fps * 2.7], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(${VW / 2} ${180 + fall}) rotate(${fall * 0.12})`} opacity={fade}>
+          <text x={0} y={0} fontSize={120} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">$9B</text>
+        </g>
+        <g opacity={zero} transform={`translate(${VW / 2} 300) scale(${0.6 + zero * 0.4})`}>
+          <text x={0} y={34} fontSize={150} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">$0</text>
+        </g>
+        <text x={VW / 2} y={492} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$9 billion → zero</text>
+      </svg>
+    );
+  } else if (m === "whistleblow") {
+    // A whistle blasts; a leaked exposé rises into view.
+    const blast = interpolate(frame, [fps * 0.7, fps * 1.4], [0, 1], clampBoth);
+    const rise = interpolate(frame, [fps * 1.2, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 270)">
+          <circle cx={0} cy={0} r={46} fill={gold} stroke={ink} strokeWidth={5} />
+          <rect x={30} y={-18} width={72} height={36} rx={10} fill={gold} stroke={ink} strokeWidth={5} />
+          {[0, 1, 2].map((i) => <path key={i} d={`M ${122 + i * 24} ${-28 - i * 8} q 20 ${28 + i * 8} 0 ${56 + i * 16}`} fill="none" stroke={red} strokeWidth={5} opacity={interpolate(blast, [i * 0.25, i * 0.25 + 0.3], [0, 1], clampBoth)} strokeLinecap="round" />)}
+        </g>
+        <g transform={`translate(650 ${370 - rise * 120})`} opacity={rise}>
+          <rect x={-92} y={-112} width={184} height={224} rx={8} fill={parch} stroke={ink} strokeWidth={5} />
+          <text x={0} y={-72} fontSize={23} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">EXPOSÉ</text>
+          {[0, 1, 2, 3].map((i) => <RLine key={i} x1={-66} y1={-42 + i * 36} x2={66} y2={-42 + i * 36} stroke={theme.inkSoft} strokeWidth={4} seed={i} />)}
+        </g>
+        <text x={VW / 2} y={502} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one reporter, a few whistleblowers</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

@@ -51,6 +51,8 @@ export type DoodleName =
   | "luggage"
   // EP030 (crypto) additions:
   | "pickaxe"
+  // EP031 (Theranos) additions:
+  | "vial" | "droplet"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1235,6 +1237,25 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M44 20 Q62 10 82 24 Q62 22 50 36 Z" fill="#8a929a" strokeWidth={SW} />
           <RCircle cx={34} cy={74} d={16} fill={GOLD} strokeWidth={2} />
           <text x={34} y={80} fontSize={14} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">₿</text>
+        </>
+      );
+
+    // ---- EP031 (Theranos) doodles ----
+    case "vial":
+      // A blood collection tube, half full.
+      return (
+        <>
+          <RRect x={40} y={14} w={20} h={11} fill={RED} strokeWidth={SW} />
+          <RPath d="M42 25 L58 25 L58 78 Q58 88 50 88 Q42 88 42 78 Z" fill="#fff" strokeWidth={SW} />
+          <RPath d="M42 58 L58 58 L58 78 Q58 88 50 88 Q42 88 42 78 Z" fill={RED} strokeWidth={1.2} />
+        </>
+      );
+    case "droplet":
+      // A single drop of blood.
+      return (
+        <>
+          <RPath d="M50 16 C 70 48 66 72 50 84 C 34 72 30 48 50 16 Z" fill={RED} strokeWidth={SW} />
+          <RPath d="M43 60 Q45 72 53 75" fill="none" stroke="#fff" strokeWidth={2.6} />
         </>
       );
   }
