@@ -138,7 +138,9 @@ export interface StageScene extends Base {
     // EP036 (how scammers rig the stock market) additions:
     | "pumpdump" | "spoofing" | "washtrade" | "frontrun" | "flashcrash"
     // EP037 (why Japan is stuck) additions:
-    | "nikkeipeak" | "agingpyramid" | "debtownedinside" | "richbutstuck" | "zombiefirms";
+    | "nikkeipeak" | "agingpyramid" | "debtownedinside" | "richbutstuck" | "zombiefirms"
+    // EP038 (the petrodollar) additions:
+    | "goldwindow" | "petrodealflow" | "dollarreserve" | "swiftweapon" | "dedollarize";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

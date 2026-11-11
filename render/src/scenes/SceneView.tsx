@@ -2579,6 +2579,73 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">zombie firms, alive on cheap debt</text>
       </svg>
     );
+  } else if (m === "goldwindow") {
+    // Nixon slams the 'gold window' shut; the dollar floats free in 1971.
+    const shut = interpolate(frame, [fps * 0.8, fps * 1.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(360 270)">
+          <rect x={-110} y={-110} width={220} height={220} rx={8} fill={parch} stroke={ink} strokeWidth={6} />
+          {shut < 0.5 && <g><circle cx={0} cy={0} r={46} fill={gold} stroke={ink} strokeWidth={4} /><text y={12} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Au</text></g>}
+          <rect x={-110} y={-110} width={220} height={220 * shut} fill={ink} />
+          <text x={0} y={-128} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the "gold window"</text>
+          {shut > 0.5 && <text x={0} y={12} fontSize={30} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">CLOSED</text>}
+        </g>
+        <g transform={`translate(740 ${270 - shut * 36})`} opacity={shut}><circle r={56} fill={green} stroke={ink} strokeWidth={5} /><text y={16} fontSize={50} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text><text y={92} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>floats free, 1971</text></g>
+        <text x={VW / 2} y={492} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Nixon cuts the dollar from gold</text>
+      </svg>
+    );
+  } else if (m === "petrodealflow") {
+    // The petrodollar loop: oil for dollars, dollars back into US Treasuries.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(220 270)"><rect x={-82} y={-60} width={164} height={120} rx={10} fill={blue} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>USA</text><text y={22} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>buys oil in $</text></g>
+        <g transform="translate(760 270)"><rect x={-92} y={-60} width={184} height={120} rx={10} fill={gold} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>OPEC / Saudi</text><text y={22} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>gets the $</text></g>
+        <g opacity={interpolate(t, [0, 0.3], [0, 1], clampBoth)}><path d="M304 220 q226 -70 372 0" fill="none" stroke={green} strokeWidth={5} /><text x={490} y={150} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>$ for oil →</text></g>
+        <g opacity={interpolate(t, [0.4, 0.7], [0, 1], clampBoth)}><path d="M676 322 q-186 80 -372 0" fill="none" stroke={red} strokeWidth={5} /><text x={490} y={402} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>← buys US Treasuries</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">oil for dollars, dollars back to America</text>
+      </svg>
+    );
+  } else if (m === "dollarreserve") {
+    // Dollars orbit the globe — the world's reserve currency.
+    const grow = interpolate(frame, [fps * 0.3, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={92} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the world's reserve currency</text>
+        <g transform="translate(490 290)"><circle r={118} fill="#bfe0ef" stroke={ink} strokeWidth={5} /><path d="M-118 0 H118 M0 -118 V118 M-90 -70 Q0 -30 90 -70 M-90 70 Q0 30 90 70" fill="none" stroke={ink} strokeWidth={2} /></g>
+        {Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * 6.283; const r = 188 * grow; return <g key={i} transform={`translate(${490 + r * Math.cos(a)} ${290 + r * Math.sin(a)})`} opacity={grow}><circle r={22} fill={green} stroke={ink} strokeWidth={3} /><text y={7} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">everyone needs dollars</text>
+      </svg>
+    );
+  } else if (m === "swiftweapon") {
+    // A nation's plug is yanked from the dollar/SWIFT system.
+    const pull = interpolate(frame, [fps * 0.9, fps * 1.7], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 270)">
+          <rect x={-92} y={-72} width={184} height={144} rx={12} fill={blue} stroke={ink} strokeWidth={5} /><text y={-8} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>$ system</text><text y={20} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>SWIFT</text>
+          <rect x={72} y={-18} width={20} height={14} fill="#fff" /><rect x={72} y={6} width={20} height={14} fill="#fff" />
+        </g>
+        <g transform={`translate(${560 + pull * 170} 270)`}>
+          <rect x={0} y={-24} width={62} height={48} rx={6} fill={ink} />
+          <rect x={-18} y={-16} width={18} height={10} fill={ink} /><rect x={-18} y={6} width={18} height={10} fill={ink} />
+          <text x={30} y={58} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>cut off</text>
+        </g>
+        {pull > 0.7 && <text x={VW / 2} y={150} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">locked out of the dollar</text>}
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the dollar becomes a weapon</text>
+      </svg>
+    );
+  } else if (m === "dedollarize") {
+    // A giant dollar pipe vs a small but growing alternative.
+    const grow = interpolate(frame, [fps * 0.5, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(360 240)"><rect x={-120} y={-50} width={240} height={100} rx={12} fill={green} stroke={ink} strokeWidth={5} /><text y={12} fontSize={44} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text><text y={92} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>most of world trade</text></g>
+        <g transform="translate(730 300)"><rect x={-50} y={-24} width={100} height={48 * (0.4 + 0.6 * grow)} rx={8} fill="#c0392b" stroke={ink} strokeWidth={4} /><text y={8} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">¥</text><text y={96} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>small, but growing</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a slow drift away from the dollar</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

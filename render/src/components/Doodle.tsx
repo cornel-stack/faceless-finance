@@ -65,6 +65,8 @@ export type DoodleName =
   | "telephone" | "stockscreen"
   // EP037 (why Japan is stuck) additions:
   | "torii" | "bullettrain"
+  // EP038 (the petrodollar) additions:
+  | "pumpjack" | "crown"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1398,6 +1400,29 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M22 48 Q30 44 40 47" fill="none" strokeWidth={2} />
           <RCircle cx={40} cy={66} d={10} fill={INK} strokeWidth={1} />
           <RCircle cx={66} cy={66} d={10} fill={INK} strokeWidth={1} />
+        </>
+      );
+
+    // ---- EP038 (the petrodollar) doodles ----
+    case "pumpjack":
+      // An oil pump — the source of petrodollars.
+      return (
+        <>
+          <RLine x1={28} y1={84} x2={72} y2={84} strokeWidth={SW} />
+          <RPath d="M40 84 L46 52 L56 52 L62 84" fill="none" strokeWidth={SW} />
+          <RLine x1={51} y1={52} x2={30} y2={42} strokeWidth={SW} />
+          <RLine x1={51} y1={52} x2={72} y2={60} strokeWidth={SW} />
+          <RCircle cx={28} cy={42} d={14} fill={INK} strokeWidth={1} />
+          <RLine x1={72} y1={60} x2={72} y2={84} strokeWidth={2.4} />
+        </>
+      );
+    case "crown":
+      // A crown — the oil monarchies.
+      return (
+        <>
+          <RPath d="M24 70 L24 40 L38 54 L50 34 L62 54 L76 40 L76 70 Z" fill={GOLD} strokeWidth={SW} />
+          <RLine x1={24} y1={70} x2={76} y2={70} strokeWidth={SW} />
+          <RCircle cx={50} cy={36} d={7} fill={RED} strokeWidth={1} />
         </>
       );
   }
