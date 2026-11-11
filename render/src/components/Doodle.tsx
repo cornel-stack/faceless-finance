@@ -83,6 +83,8 @@ export type DoodleName =
   | "pie" | "rope"
   // EP046 (US dominance ending) additions:
   | "chessking" | "risingcity"
+  // EP047 (dollar reserve status) additions:
+  | "grocerybag" | "scepter"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1620,6 +1622,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={40} y={46} w={14} h={38} fill={GREEN} strokeWidth={SW} />
           <RRect x={58} y={30} w={14} h={54} fill={GREEN} strokeWidth={SW} />
           <RPath d="M18 32 L30 24 M34 28 L46 20" fill="none" stroke={INK} strokeWidth={2} />
+        </>
+      );
+
+    // ---- EP047 (dollar reserve status) doodles ----
+    case "grocerybag":
+      // The cost of living / imported goods.
+      return (
+        <>
+          <RPath d="M28 40 L72 40 L66 86 L34 86 Z" fill={TAN} strokeWidth={SW} />
+          <RPath d="M40 40 Q40 28 50 28 Q60 28 60 40" fill="none" strokeWidth={SW} />
+          <RLine x1={44} y1={52} x2={44} y2={62} strokeWidth={2} />
+          <RCircle cx={58} cy={52} d={10} fill={RED} strokeWidth={1.2} />
+        </>
+      );
+    case "scepter":
+      // The dollar's reign.
+      return (
+        <>
+          <RLine x1={38} y1={82} x2={62} y2={30} strokeWidth={5} />
+          <RCircle cx={64} cy={26} d={16} fill={GOLD} strokeWidth={SW} />
+          <RPath d="M64 16 L64 10 M60 13 L68 13" strokeWidth={2.4} />
         </>
       );
   }

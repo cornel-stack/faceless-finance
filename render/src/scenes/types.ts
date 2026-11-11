@@ -156,7 +156,9 @@ export interface StageScene extends Base {
     // EP045 (fund types) additions:
     | "fundpool" | "mutualvsetf" | "fundmatrix" | "twentytwenty" | "feeladder" | "accessgate"
     // EP046 (US dominance ending) additions:
-    | "gdpshare" | "convergemath" | "fourpercent" | "multipolarshift" | "pppcross" | "debtburden";
+    | "gdpshare" | "convergemath" | "fourpercent" | "multipolarshift" | "pppcross" | "debtburden"
+    // EP047 (dollar reserve status) additions:
+    | "privilegeperks" | "crownslips" | "importinflation" | "nobuyers" | "noreplacement";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

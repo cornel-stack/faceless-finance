@@ -3251,6 +3251,65 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a mountain of debt, and rising interest</text>
       </svg>
     );
+  } else if (m === "privilegeperks") {
+    // The four perks of issuing the world's reserve currency.
+    const t = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const perks: [string, string][] = [["borrow cheap", green], ["import cheap", gold], ["sanction foes", blue], ["print at will", red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 270)"><circle r={74} fill={blue} stroke={ink} strokeWidth={6} /><text y={-4} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">US</text><text y={22} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>$ issuer</text></g>
+        {perks.map(([lab, c], i) => { const a = (i / 4) * 6.283 - 1.57; const op = interpolate(t, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); const x = 490 + 270 * Math.cos(a); const y = 270 + 185 * Math.sin(a); return <g key={i} opacity={op} transform={`translate(${x} ${y})`}><rect x={-92} y={-26} width={184} height={52} rx={8} fill={c} stroke={ink} strokeWidth={4} /><text y={6} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={500} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 'exorbitant privilege'</text>
+      </svg>
+    );
+  } else if (m === "crownslips") {
+    // The crown slides off the dollar as global demand fades.
+    const slip = interpolate(frame, [fps * 0.8, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 300)"><circle r={90} fill={green} stroke={ink} strokeWidth={6} /><text y={18} fontSize={60} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text></g>
+        <g transform={`translate(${490 + slip * 130} ${195 - slip * 20}) rotate(${slip * 42})`}>
+          <path d="M-50 20 L-50 -16 L-28 2 L0 -24 L28 2 L50 -16 L50 20 Z" fill={gold} stroke={ink} strokeWidth={4} />
+        </g>
+        {slip > 0.6 && <text x={VW / 2} y={130} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">losing the crown</text>}
+        <text x={VW / 2} y={470} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">if the world needs fewer dollars…</text>
+      </svg>
+    );
+  } else if (m === "importinflation") {
+    // A weaker dollar makes the imported grocery bag cost more.
+    const rise = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 300)">
+          <path d="M-72 -42 L72 -42 L58 92 L-58 92 Z" fill={tan} stroke={ink} strokeWidth={5} />
+          <text y={34} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">${Math.round(100 + 100 * rise)}</text>
+        </g>
+        <g opacity={rise}><path d="M490 196 L490 118" stroke={red} strokeWidth={6} fill="none" strokeLinecap="round" /><text x={490} y={100} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">prices ↑↑</text></g>
+        <text x={VW / 2} y={476} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a weaker dollar → costlier imports</text>
+      </svg>
+    );
+  } else if (m === "nobuyers") {
+    // US bonds with fewer automatic buyers, so rates spike.
+    const t = interpolate(frame, [fps * 0.5, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 170)"><rect x={-120} y={-40} width={240} height={80} rx={8} fill={ink} /><text y={8} fontSize={22} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>US bonds for sale</text></g>
+        {Array.from({ length: 5 }, (_, i) => { const gone = t > i * 0.2; return <g key={i} transform={`translate(${250 + i * 120} 340)`} opacity={gone ? 0.25 : 1}><rect x={-30} y={-30} width={60} height={60} rx={6} fill={gone ? "#d8d2c4" : blue} stroke={ink} strokeWidth={3} />{!gone && <text y={8} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>$</text>}</g>; })}
+        {t > 0.7 && <text x={VW / 2} y={250} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">fewer buyers → higher rates</text>}
+        <text x={VW / 2} y={470} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">US borrowing gets expensive, fast</text>
+      </svg>
+    );
+  } else if (m === "noreplacement") {
+    // Every candidate to replace the dollar has a fatal flaw.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const cands: [string, string][] = [["€ euro", "fragmented"], ["¥ yuan", "not free"], ["gold", "too clunky"], ["₿ bitcoin", "too wild"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={92} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">who could replace it?</text>
+        {cands.map(([n, flaw], i) => { const op = interpolate(reveal, [i * 0.2, i * 0.2 + 0.25], [0, 1], clampBoth); const x = 300 + (i % 2) * 380; const y = 200 + Math.floor(i / 2) * 170; return <g key={i} opacity={op} transform={`translate(${x} ${y})`}><rect x={-150} y={-55} width={300} height={110} rx={10} fill={parch} stroke={ink} strokeWidth={4} /><text y={-12} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{n}</text><text y={22} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>✗ {flaw}</text></g>; })}
+        <text x={VW / 2} y={500} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">every candidate has a fatal flaw</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

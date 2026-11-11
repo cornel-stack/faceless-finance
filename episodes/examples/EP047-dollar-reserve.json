@@ -1,0 +1,1012 @@
+{
+  "id": "EP047",
+  "series": "Napkin Numbers",
+  "title": "What Happens If the Dollar Loses Reserve Status",
+  "slug": "what-happens-if-the-dollar-loses-reserve-status",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP047 — explainer (By the Numbers, row 37). The 'exorbitant privilege' of issuing the reserve currency (cheap borrowing, cheap imports, sanctions, printing), what erodes it, the scenario if it slips (rate spike, inflation, lost leverage), the Triffin dilemma, the pound precedent, and why no replacement means slow erosion not sudden collapse. New-bar density: 5 new motifs + 3 reused (dollarreserve/swiftweapon/dedollarize), rich props. Target 12–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Every single day, the United States does something no other country on Earth can get away with. It spends far more than it earns, borrows trillions at bargain rates, and prints the money the entire world is desperate to hold.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "printer",
+          "label": "print freely"
+        },
+        {
+          "name": "bond",
+          "label": "borrow cheap"
+        },
+        {
+          "name": "globe",
+          "label": "the world wants it"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "stage",
+      "narration": "It can do all of this for one reason, and one reason only: the dollar is the world's reserve currency. It sits at the center of global finance, and that gives America a superpower economists call the 'exorbitant privilege.'",
+      "motif": "privilegeperks",
+      "caption": "the 'exorbitant privilege'"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So here's the trillion-dollar question that keeps policymakers awake at night. What actually happens on the day the world decides it needs a whole lot fewer dollars?",
+      "pose": "think",
+      "bubble": "what if that stops?",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "the whole system"
+        },
+        {
+          "name": "warning",
+          "label": "…if it slips?"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "borrowing trillions at near-zero rates",
+      "memeBottom": "only because the world needs dollars",
+      "narration": "The answer reveals just how much of America's power, and your cost of living, secretly depends on a single, quiet arrangement that most people never think about."
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "To grasp the scale, look at the reserves. Around sixty percent of all the money central banks hold in reserve, worldwide, is still in US dollars. The euro, in a distant second, is around twenty. Nothing else comes close.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "~60% of reserves"
+        },
+        {
+          "name": "euro",
+          "label": "euro ~20%"
+        },
+        {
+          "name": "globe",
+          "label": "the rest, tiny"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what does being the reserve currency actually buy America?",
+      "heading": "The Privilege",
+      "kicker": "four quiet superpowers"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "A reserve currency is one held by governments and central banks as part of their foreign exchange reserves. Right now, the dollar is the overwhelming king of them all.",
+      "sourceId": "wiki-reserve"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "Because every country needs dollars for oil, trade, and reserves, there's a permanent, bottomless global demand for them. The whole planet, in a real sense, runs on American money.",
+      "motif": "dollarreserve",
+      "caption": "everyone needs dollars"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "That gives America what's literally called the exorbitant privilege — the benefits the US derives from its own currency being the international reserve currency.",
+      "sourceId": "wiki-exorbitant"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "A French finance minister coined that phrase, 'exorbitant privilege,' decades ago — half in admiration, half in envy. It captures a genuinely unfair advantage: America can buy from the world simply by printing more of its own paper.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "euro",
+          "label": "the French complaint"
+        },
+        {
+          "name": "printer",
+          "label": "print to buy"
+        },
+        {
+          "name": "scale",
+          "label": "a real unfair edge"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "Perk one: it can borrow incredibly cheaply. Because the world always needs somewhere safe to park dollars, it buys US government debt no matter what — letting America run enormous deficits at rock-bottom interest rates.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bond",
+          "label": "endless buyers"
+        },
+        {
+          "name": "percent",
+          "label": "rock-bottom rates"
+        },
+        {
+          "name": "debtclock",
+          "label": "huge deficits, no problem"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "Perk two: cheap imports. Constant demand for dollars keeps the dollar strong, so Americans can buy the world's goods — cars, electronics, oil — at prices that feel like a permanent discount.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "cheap imports"
+        },
+        {
+          "name": "cargoship",
+          "label": "the world's goods"
+        },
+        {
+          "name": "dollar",
+          "label": "a strong dollar"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Perk three: the ultimate weapon. Because the dollar system flows through American banks, the US can cut any enemy off from it — freezing their money and locking them out of the global economy, with no army required.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "the sanctions weapon"
+        },
+        {
+          "name": "warning",
+          "label": "freeze any enemy"
+        },
+        {
+          "name": "globe",
+          "label": "no army needed"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "And perk four: it can, within limits, simply print. When the world will happily absorb more dollars, the US can create money to fight crises on a scale that would wreck almost any other nation.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "printer",
+          "label": "print to fight crises"
+        },
+        {
+          "name": "scepter",
+          "label": "the dollar's reign"
+        },
+        {
+          "name": "shield",
+          "label": "a cushion others lack"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Put together, these four perks are worth a staggering amount — effectively a permanent subsidy from the rest of the world to American consumers, companies, and the government, year after year, just for issuing the money everyone needs.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "a vast subsidy"
+        },
+        {
+          "name": "crown",
+          "label": "paid by the world"
+        },
+        {
+          "name": "flagUS",
+          "label": "to America, yearly"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So that's the prize. Now, why would anyone ever give it up?",
+      "heading": "Why It Erodes",
+      "kicker": "the cracks appear"
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "Partly because America keeps using the dollar as a weapon. Every time it freezes a rival's reserves, it quietly tells every other country: your dollars are only safe until you anger Washington. And that makes them nervous.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "weaponized too often"
+        },
+        {
+          "name": "warning",
+          "label": "a message to rivals"
+        },
+        {
+          "name": "globe",
+          "label": "everyone takes note"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "So some nations pursue de-dollarisation — efforts to reduce the use of the US dollar in reserves, trade invoicing, and settlement. A slow, deliberate search for the exits.",
+      "sourceId": "wiki-dedollar"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "China trades some oil in its own currency. Russia dumped its dollars. The BRICS bloc talks of alternatives. And central banks everywhere are quietly stockpiling gold instead of American debt.",
+      "motif": "dedollarize",
+      "caption": "a slow drift away from the dollar"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The gold rush is especially telling. Central banks have been buying gold at the fastest pace in decades — quietly swapping some of their US debt for the one reserve asset that no foreign government can ever freeze.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "central banks hoard gold"
+        },
+        {
+          "name": "padlock",
+          "label": "can't be frozen"
+        },
+        {
+          "name": "chartup",
+          "label": "fastest pace in decades"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "So now the big one. Imagine that erosion actually tips over — and the world really does start ditching the dollar. What breaks?",
+      "heading": "If It Slips",
+      "kicker": "the dominoes fall"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "The core problem is simple: if the world needs fewer dollars, the single pillar holding up all four of those perks begins to wobble. And the privilege quietly starts to reverse.",
+      "motif": "crownslips",
+      "caption": "if the world needs fewer dollars…"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "Consequence one, and the scariest: borrowing costs explode. If foreign buyers no longer need to hoard US debt, America has to tempt them with much higher interest rates to sell its bonds at all.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "bond",
+          "label": "no automatic buyers"
+        },
+        {
+          "name": "percent",
+          "label": "rates must rise"
+        },
+        {
+          "name": "chartup",
+          "label": "to attract anyone"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "With fewer guaranteed buyers, the US government would have to offer sharply higher yields — and suddenly, just paying the interest on its massive debt could swallow an enormous chunk of the entire federal budget.",
+      "motif": "nobuyers",
+      "caption": "US borrowing gets expensive, fast"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And this is where it turns into a vicious spiral. Higher interest means a bigger deficit, which means issuing even more debt, which scares off even more buyers, which pushes rates higher still. A doom loop that reserve status had been holding at bay.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "rates up"
+        },
+        {
+          "name": "debtclock",
+          "label": "deficit up"
+        },
+        {
+          "name": "warning",
+          "label": "a doom loop"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Consequence two: inflation at home. As global demand for dollars drops, the dollar weakens — and everything America imports, from oil to electronics to food, suddenly costs a lot more. The discount vanishes.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "imports cost more"
+        },
+        {
+          "name": "chartup",
+          "label": "prices rise"
+        },
+        {
+          "name": "gaspump",
+          "label": "oil, food, everything"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "That's textbook inflation — an increase in the average price of goods and services. For ordinary Americans, a falling dollar quietly shows up as a rising cost of living.",
+      "sourceId": "wiki-inflation"
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "narration": "So the weaker dollar lands right in your shopping basket. The same goods, more dollars — a steady squeeze on living standards that the reserve-currency discount had been hiding for decades.",
+      "motif": "importinflation",
+      "caption": "a weaker dollar → costlier imports"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "This is exactly what hits ordinary countries when their currency weakens — sudden, painful import inflation. Reserve status has quietly spared Americans that pain for generations. Losing it would mean finally feeling it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "import inflation"
+        },
+        {
+          "name": "globe",
+          "label": "what others endure"
+        },
+        {
+          "name": "flagUS",
+          "label": "the shield drops"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "Consequence three: the sanctions weapon rusts. If countries can trade and settle outside the dollar, America can no longer strangle an enemy's economy with the stroke of a pen. A huge tool of foreign policy simply fades.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "the weapon rusts"
+        },
+        {
+          "name": "warning",
+          "label": "enemies escape"
+        },
+        {
+          "name": "scale",
+          "label": "lost leverage"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "If the dollar is no longer the only pipe, pulling the plug stops working. Rivals can simply route around America entirely — and one of its quietest, most powerful levers goes dead.",
+      "motif": "swiftweapon",
+      "caption": "the dollar becomes a weapon"
+    },
+    {
+      "id": "s56",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "weaponize the dollar against enemies",
+      "memeBottom": "give every rival a reason to abandon it",
+      "narration": "It's the central irony of the whole thing. The more aggressively America wields the dollar as a weapon, the faster it teaches the world to build a system that no longer needs it."
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "There's a deep irony baked into all of this, with a famous name.",
+      "heading": "The Trap",
+      "kicker": "the Triffin dilemma"
+    },
+    {
+      "id": "s27",
+      "type": "screenshot",
+      "narration": "Economists call it the Triffin dilemma — the conflict that arises between a country's short-term domestic goals and the long-term needs of being the world's currency.",
+      "sourceId": "wiki-triffin"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "To supply the world with all the dollars it craves, America must run endless trade deficits, flooding the globe with currency. But those same endless deficits slowly erode the world's confidence in the dollar. The privilege contains the seed of its own decline.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "printer",
+          "label": "must supply dollars"
+        },
+        {
+          "name": "debtclock",
+          "label": "→ endless deficits"
+        },
+        {
+          "name": "warning",
+          "label": "→ erodes trust"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "This is the knife America walks. To keep the privilege, it must keep flooding the world with dollars through deficits. But flood too much, for too long, and you eventually drown the very trust the whole system rests on.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the Triffin knife"
+        },
+        {
+          "name": "printer",
+          "label": "supply dollars"
+        },
+        {
+          "name": "warning",
+          "label": "…but erode trust"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "If all this sounds unprecedented, it isn't. We have watched a world reserve currency fall before.",
+      "heading": "The Precedent",
+      "kicker": "the pound's long goodbye"
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "Before the dollar, there was sterling — the pound, the currency of the British Empire, which was the world's dominant reserve currency for over a century.",
+      "sourceId": "wiki-sterling"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "At its peak, the world ran on the pound the way it runs on the dollar today. Then two world wars, mountainous debt, and a fading empire slowly stripped that status away — and the dollar quietly took the crown.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pound",
+          "label": "sterling ruled"
+        },
+        {
+          "name": "bomb",
+          "label": "wars & debt"
+        },
+        {
+          "name": "hourglass",
+          "label": "status slipped away"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "But here's the crucial detail: it took decades. The pound didn't collapse overnight. It faded, slowly, across two generations — which is almost certainly how any dollar decline would actually play out, too.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "it took decades"
+        },
+        {
+          "name": "chartdown",
+          "label": "a slow fade"
+        },
+        {
+          "name": "scale",
+          "label": "not a cliff"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "timeline",
+      "title": "The pound's long goodbye",
+      "narration": "The pound's fall was a slow-motion affair. Dominant before World War One. Shaken by it. Overtaken by the dollar between the wars. And only formally dethroned decades later. These things take generations, not weeks.",
+      "events": [
+        {
+          "year": "1914",
+          "label": "pound rules",
+          "icon": "pound"
+        },
+        {
+          "year": "1920s",
+          "label": "$ rises",
+          "icon": "dollar"
+        },
+        {
+          "year": "1944",
+          "label": "dollar wins",
+          "icon": "flagUS"
+        },
+        {
+          "year": "1970s",
+          "label": "pound ordinary",
+          "icon": "chartdown"
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "Which brings us to the single biggest reason the dollar isn't going anywhere soon.",
+      "heading": "No Replacement",
+      "kicker": "the least dirty shirt"
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "To dethrone the dollar, the world needs something to replace it with. And when you actually look at the candidates, every single one has a fatal flaw.",
+      "pose": "think",
+      "bubble": "but replaced by what?",
+      "props": [
+        {
+          "name": "euro",
+          "label": "the euro?"
+        },
+        {
+          "name": "yen",
+          "label": "the yuan?"
+        },
+        {
+          "name": "goldbar",
+          "label": "gold?"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "stage",
+      "narration": "The euro is split across too many squabbling governments. China's yuan isn't freely tradable and nobody fully trusts Beijing's controls. Gold is clunky and can't run a modern economy. And bitcoin is far too wild.",
+      "motif": "noreplacement",
+      "caption": "every candidate has a fatal flaw"
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "Even a brand-new digital currency — a central-bank digital dollar, or a rival's digital yuan — doesn't change the core problem. A currency's global role rests on trust, open markets, and the rule of law, not on the technology it runs on.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "digital money"
+        },
+        {
+          "name": "scale",
+          "label": "trust, not tech"
+        },
+        {
+          "name": "warning",
+          "label": "no magic fix"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "This is why traders call the dollar 'the least dirty shirt in the laundry.' It has real problems — but every alternative has bigger ones. And a massive network effect keeps everyone using it, simply because everyone else does.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "flawed, but best"
+        },
+        {
+          "name": "globe",
+          "label": "network effect"
+        },
+        {
+          "name": "scale",
+          "label": "no real rival"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "And the network effect is colossal. Everyone uses dollars because everyone else does — contracts, oil, debt, savings, all denominated in them. Unwinding a web that deep and that global is the work of generations, not a single crisis.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "a deep global web"
+        },
+        {
+          "name": "chain",
+          "label": "everything is in dollars"
+        },
+        {
+          "name": "hourglass",
+          "label": "generations to unwind"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "the dollar won't collapse — it will slowly, quietly lose altitude",
+      "narration": "So the realistic future isn't a dramatic overnight crash. It's a slow, quiet erosion — the dollar staying dominant, but a little less absolutely, year by year."
+    },
+    {
+      "id": "s38",
+      "type": "title",
+      "narration": "So, pulling it together — what does losing reserve status really mean?",
+      "heading": "The Verdict",
+      "kicker": "erosion, not apocalypse"
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "Most likely, not a sudden collapse, but a gradual loss of privilege. Slightly higher borrowing costs. Slightly more inflation. Slightly less power to sanction. A rich country becoming, bit by bit, a bit more ordinary.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "pricier borrowing"
+        },
+        {
+          "name": "grocerybag",
+          "label": "more inflation"
+        },
+        {
+          "name": "scale",
+          "label": "less leverage"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "To be fair, there's an upside for the world, too. A less dollar-dominated system could be more balanced and less hostage to one country's politics. The end of the privilege isn't only an American loss — it's also a rebalancing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "a rebalancing"
+        },
+        {
+          "name": "globe",
+          "label": "more balanced"
+        },
+        {
+          "name": "handshake",
+          "label": "not only a loss"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "The deepest change would be psychological. For eighty years, America has lived with a unique financial cushion the rest of the world could only dream of. Losing it would mean finally facing the same hard trade-offs everyone else does.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "the cushion fades"
+        },
+        {
+          "name": "scale",
+          "label": "real trade-offs return"
+        },
+        {
+          "name": "flagUS",
+          "label": "a normal country"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "title",
+      "narration": "And what should you actually do with all this?",
+      "heading": "What It Means",
+      "kicker": "for your own money"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "First: don't panic-predict a collapse that probably isn't coming. But second: it's a sensible reason to not keep every single egg in one currency's basket — to own some global assets, and perhaps a little gold, as a quiet hedge.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "globe",
+          "label": "own global assets"
+        },
+        {
+          "name": "goldbar",
+          "label": "a little gold"
+        },
+        {
+          "name": "shield",
+          "label": "a quiet hedge"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And third: understand that a slowly weakening dollar means gentle, persistent pressure on the cost of living. The best defense, as always, is owning real, productive assets that grow faster than prices do.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "own productive assets"
+        },
+        {
+          "name": "house",
+          "label": "beat inflation"
+        },
+        {
+          "name": "pie",
+          "label": "stay diversified"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "image",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "time the end of a 80-year monetary era",
+      "narration": "Nobody can tell you the year the dollar's reign ends — maybe it's decades away, maybe it never fully does. Which is exactly why the smart move is quiet, boring diversification, not a dramatic bet."
+    },
+    {
+      "id": "s44",
+      "type": "title",
+      "narration": "So let's total up the end of a privilege.",
+      "heading": "The Final Math",
+      "kicker": "the cushion, deflating"
+    },
+    {
+      "id": "s45",
+      "type": "chalkboard",
+      "narration": "Reserve status lets America borrow cheap, import cheap, sanction freely, and print. Lose it, and rates rise, inflation bites, and the leverage fades. But with no replacement ready, it happens slowly — a fade, not a crash.",
+      "lines": [
+        "privilege = cheap debt + cheap imports + sanctions + printing",
+        "lose it → higher rates + inflation + lost leverage",
+        "the Triffin trap guarantees slow erosion",
+        "no replacement → a fade, not a collapse"
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "The dollar's reign has given Americans a hidden subsidy on their entire way of life. Its slow fading wouldn't be the end of the world — just the slow, quiet end of an extraordinary free lunch.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scepter",
+          "label": "a hidden subsidy"
+        },
+        {
+          "name": "grocerybag",
+          "label": "the free lunch"
+        },
+        {
+          "name": "hourglass",
+          "label": "slowly ending"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "So the next time you hear someone scream that the dollar is about to collapse tomorrow, you'll know the duller truth: it's not a cliff. It's a long, gentle slope — and we may already be walking down it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "a gentle slope"
+        },
+        {
+          "name": "calculator",
+          "label": "not a cliff"
+        },
+        {
+          "name": "dollar",
+          "label": "still king, for now"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "If this made the dollar's hidden power finally click, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-reserve",
+      "name": "Reserve currency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reserve_currency",
+      "quote": "or other monetary authorities as part of their"
+    },
+    {
+      "id": "wiki-exorbitant",
+      "name": "Exorbitant privilege (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exorbitant_privilege",
+      "quote": "the benefits that the United States"
+    },
+    {
+      "id": "wiki-dedollar",
+      "name": "Dedollarisation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/De-dollarisation",
+      "quote": "reduce the use of the U.S. dollar in reserves, trade invoicing and settlement"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price of goods and services"
+    },
+    {
+      "id": "wiki-triffin",
+      "name": "Triffin dilemma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Triffin_dilemma",
+      "quote": "the conflict of economic interests that arises between short-term domestic and long-term international objectives"
+    },
+    {
+      "id": "wiki-sterling",
+      "name": "Pound sterling (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pound_sterling",
+      "quote": "the currency of the United Kingdom"
+    }
+  ],
+  "youtube": {
+    "title": "What Happens If the Dollar Loses Reserve Status",
+    "alts": [
+      "The Dollar's 'Exorbitant Privilege' — and What Happens If It Ends",
+      "If the Dollar Stops Being the World's Reserve Currency, This Happens"
+    ],
+    "hook": "Every day, the US does something no other country can: spend more than it earns, borrow trillions cheaply, and print the money the whole world needs — all because the dollar is the global reserve currency. This is what happens if it loses that status, by the numbers: the four perks of the 'exorbitant privilege,' why it's eroding, the scenario if it slips (spiking rates, inflation, lost sanctions power), the Triffin dilemma, the British pound precedent, and why — with no replacement ready — it would be a slow fade, not a crash. Fully cited.",
+    "bullets": [
+      "The 'exorbitant privilege': borrow cheap, import cheap, sanction, and print",
+      "Why de-dollarization and weaponizing the dollar are eroding it",
+      "If it slips: spiking borrowing costs and imported inflation",
+      "The sanctions weapon rusting — and the Triffin dilemma trap",
+      "The British pound precedent: a reserve currency fading over decades",
+      "Why no replacement means a slow erosion, not a sudden collapse"
+    ],
+    "tags": [
+      "dollar reserve currency",
+      "what happens if the dollar collapses",
+      "de-dollarization",
+      "exorbitant privilege",
+      "dollar dominance",
+      "triffin dilemma",
+      "reserve currency explained",
+      "us dollar",
+      "end of the dollar",
+      "petrodollar",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#dollar",
+      "#economics",
+      "#dedollarization",
+      "#inflation"
+    ],
+    "thumbnail": {
+      "hookTop": "IF THE DOLLAR",
+      "hookBot": "LOSES ITS CROWN",
+      "napkinNumber": "4 perks",
+      "napkinSub": "that quietly vanish",
+      "deco": "scepter"
+    },
+    "chapters": [
+      [
+        "the world's reserve currency",
+        "The privilege"
+      ],
+      [
+        "exorbitant privilege",
+        "The four perks"
+      ],
+      [
+        "why would anyone ever give it up",
+        "Why it erodes"
+      ],
+      [
+        "borrowing costs explode",
+        "If it slips"
+      ],
+      [
+        "the sanctions weapon rusts",
+        "Lost leverage"
+      ],
+      [
+        "pound didn't collapse overnight",
+        "The precedent"
+      ],
+      [
+        "every single one has a fatal flaw",
+        "No replacement"
+      ],
+      [
+        "own some global assets",
+        "What it means"
+      ]
+    ]
+  }
+}
