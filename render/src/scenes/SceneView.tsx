@@ -4273,6 +4273,93 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={492} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>crashes become discounts — dollar-cost averaging</text>
       </svg>
     );
+  } else if (m === "longclimb") {
+    // $1,000 in 1950 → millions by 2024, with crash dips along the way.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const pts: [number, number][] = [[120, 440], [250, 400], [360, 350], [430, 410], [520, 300], [600, 360], [690, 230], [760, 320], [840, 150], [900, 110]];
+    const segs = pts.slice(1).map(([x, y], i) => { const [px, py] = pts[i]; const t = interpolate(draw, [i / (pts.length - 1), (i + 1) / (pts.length - 1)], [0, 1], clampBoth); return `L${px + (x - px) * t} ${py + (y - py) * t}`; });
+    const amt = Math.round(1 + 2999 * Math.pow(draw, 2));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1,000 in 1950 → today</text>
+        <RLine x1={110} y1={460} x2={VW - 50} y2={460} stroke={ink} strokeWidth={3} />
+        <path d={`M120 440 ${segs.join(" ")}`} fill="none" stroke={green} strokeWidth={5} strokeLinecap="round" />
+        <text x={130} y={436} fontSize={15} fontWeight={800} fill={ink} fontFamily={sans}>$1K</text>
+        <g transform="translate(900 110)"><circle r={8} fill={green} stroke={ink} strokeWidth={3} /></g>
+        <text x={VW / 2} y={430} fontSize={30} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">${amt >= 3000 ? "3,000,000" : (amt * 1000).toLocaleString("en-US")}</text>
+        <text x={VW / 2} y={496} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>…if you survived every crash on the way up</text>
+      </svg>
+    );
+  } else if (m === "dividendsnowball") {
+    // Price-only vs dividends-reinvested — dividends did most of the work.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const priceH = 300 * (400 / 3000), totalH = 300;
+    const baseY = 440;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">dividends did most of the work</text>
+        <g transform="translate(300 0)"><rect x={-70} y={baseY - priceH * grow} width={140} height={priceH * grow} fill={blue} stroke={ink} strokeWidth={4} /><text x={0} y={baseY + 26} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>price only</text><text x={0} y={baseY - priceH * grow - 12} fontSize={17} fontWeight={900} fill={blue} textAnchor="middle" fontFamily="Georgia, serif">~$400K</text></g>
+        <g transform="translate(640 0)"><rect x={-70} y={baseY - totalH * grow} width={140} height={totalH * grow} fill={green} stroke={ink} strokeWidth={4} /><text x={0} y={baseY + 26} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>dividends reinvested</text><text x={0} y={baseY - totalH * grow - 12} fontSize={17} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">~$3M</text></g>
+        <RLine x1={110} y1={baseY} x2={VW - 60} y2={baseY} stroke={ink} strokeWidth={3} />
+        <text x={VW / 2} y={496} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>reinvesting dividends was ~7× the difference</text>
+      </svg>
+    );
+  } else if (m === "crashgauntlet") {
+    // The series of crashes the $1,000 had to survive.
+    const crashes: [string, string][] = [["1973", "−48%"], ["1987", "−22%"], ["2000", "−49%"], ["2008", "−57%"], ["2020", "−34%"]];
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the gauntlet you had to survive</text>
+        {crashes.map(([yr, pct], i) => {
+          const op = interpolate(reveal, [i * 0.17, i * 0.17 + 0.22], [0, 1], clampBoth);
+          const x = 150 + i * 170;
+          return <g key={i} opacity={op}><circle cx={x} cy={270} r={52} fill={red} stroke={ink} strokeWidth={4} /><text x={x} y={262} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{yr}</text><text x={x} y={286} fontSize={16} fontWeight={900} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>{pct}</text><text x={x} y={350} fontSize={13} fontWeight={700} fill={green} textAnchor="middle" fontFamily={sans}>recovered</text></g>;
+        })}
+        <text x={VW / 2} y={430} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>every one felt like the end of the world</text>
+        <text x={VW / 2} y={462} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">every one was a buying opportunity</text>
+      </svg>
+    );
+  } else if (m === "panicvshold") {
+    // Panic-seller locks in the loss; holder recovers and soars.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the crash: two choices</text>
+        <RLine x1={110} y1={300} x2={VW - 60} y2={300} stroke={ink} strokeWidth={2} />
+        <path d="M120 240 Q200 420 280 420" fill="none" stroke={ink} strokeWidth={4} />
+        <circle cx={280} cy={420} r={10} fill={red} stroke={ink} strokeWidth={3} />
+        <text x={300} y={426} fontSize={16} fontWeight={900} fill={red} fontFamily={sans}>PANIC: sells at the bottom, loss locked in</text>
+        <path d={`M120 240 Q200 420 ${120 + 740 * draw} ${draw < 0.5 ? 420 - (draw - 0.3) * 0 : interpolate(draw, [0.5, 1], [400, 130], clampBoth)}`} fill="none" stroke={green} strokeWidth={5} opacity={interpolate(draw, [0.45, 0.6], [0, 1], clampBoth)} />
+        <text x={620} y={150} fontSize={16} fontWeight={900} fill={green} fontFamily={sans}>HOLD: rides it back up, soars higher</text>
+        <text x={VW / 2} y={492} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the loss was only real for the one who sold</text>
+      </svg>
+    );
+  } else if (m === "realvsnominal") {
+    // $3M nominal vs ~$250K in 1950 purchasing power — both still huge.
+    const pop = spring({ frame, fps, delay: fps * 1.0, config: { damping: 10 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">but inflation takes a bite</text>
+        <g transform="translate(300 290)"><circle r={96} fill={green} stroke={ink} strokeWidth={6} /><text y={-10} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>on paper</text><text y={20} fontSize={30} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$3M</text></g>
+        <path d="M410 290 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform={`translate(700 290) scale(${Math.min(1, pop)})`}><circle r={70} fill={gold} stroke={ink} strokeWidth={5} /><text y={-8} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>in 1950 money</text><text y={20} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">~$250K</text></g>
+        <text x={VW / 2} y={468} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>still a ~250× REAL gain — it crushed inflation</text>
+      </svg>
+    );
+  } else if (m === "missedbestdays") {
+    // Missing the handful of best days guts the return.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["stayed fully invested", 300, green], ["missed 10 best days", 150, gold], ["missed 30 best days", 60, red]];
+    const vals = ["$3M", "$1.1M", "$250K"];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">miss a few days, lose a fortune</text>
+        <RLine x1={90} y1={440} x2={VW - 60} y2={440} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, h, col], i) => { const x = 160 + i * 250; const hh = (h as number) * grow; return <g key={i}><rect x={x} y={440 - hh} width={160} height={hh} fill={col as string} stroke={ink} strokeWidth={4} /><text x={x + 80} y={440 - hh - 12} fontSize={19} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{vals[i]}</text><text x={x + 80} y={462} fontSize={13} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{lab as string}</text></g>; })}
+        <text x={VW / 2} y={496} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>and the best days cluster right after the crashes</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

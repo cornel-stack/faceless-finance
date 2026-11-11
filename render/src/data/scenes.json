@@ -2,784 +2,537 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "What happens if you invest just a hundred dollars a month — the price of a few takeout dinners? The answer is genuinely shocking. Depending on nothing more than the age you start, that trivial little habit turns into anywhere from eighteen thousand dollars to over half a million. Same hundred dollars. The entire difference is time.",
+    "narration": "In 1950, imagine your grandparent put a thousand dollars into the US stock market — about thirteen thousand dollars in today's money. They then did something almost nobody can do: absolutely nothing. They never touched it again. Seventy-four years later, what's sitting in that account?",
     "pose": "explain",
     "props": [
       {
-        "name": "coffeecup",
-        "label": "just $100/month"
+        "name": "calendar",
+        "label": "1950: invest $1,000"
       },
       {
-        "name": "snowball",
-        "label": "$18K… or $500K+"
+        "name": "vault",
+        "label": "never touch it"
       },
       {
         "name": "clock",
-        "label": "it's all about time"
+        "label": "wait 74 years"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the headline. Start investing a hundred dollars a month at age twenty-five, and by sixty-five you'd have around three hundred and fifty thousand dollars. But you only put in forty-eight thousand of it. The market quietly handed you the other three hundred thousand.",
-    "text": "$349,000",
-    "sub": "$100/mo from 25 to 65 — you only paid in $48K",
+    "narration": "The answer is almost unbelievable. With dividends reinvested, that single thousand-dollar bet would be worth roughly three million dollars today. From one thousand, to three million, without adding another cent.",
+    "text": "$3,000,000",
+    "sub": "what $1,000 in 1950 became (dividends reinvested)",
     "icon": "snowball"
   },
   {
-    "id": "s43",
+    "id": "s42",
     "type": "character",
-    "narration": "And in the right account — a Roth I-R-A — that entire three hundred forty-nine thousand can come out completely tax-free. You pay in after-tax hundreds, and decades of growth are never taxed again. It's the closest thing to a legal cheat code in all of personal finance.",
+    "narration": "The hard part was never the investing — it was the holding. Over those seventy-four years, you'd have watched that account get cut in half more than once. Almost nobody can actually sit through that. Which is exactly why almost nobody ends up with the three million.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "vault",
-        "label": "a Roth IRA"
+        "name": "diamond",
+        "label": "holding is the hard part"
       },
       {
-        "name": "taxform",
-        "label": "grows tax-free"
+        "name": "chartdown",
+        "label": "cut in half, twice"
       },
       {
-        "name": "snowball",
-        "label": "a legal cheat code"
+        "name": "crowd",
+        "label": "almost nobody does it"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "That's not a trick or a get-rich scheme. It's just math — the quiet, relentless math of compounding, running on the most ordinary amount of money imaginable. And once you see how it changes with your age, you'll never look at a hundred dollars the same way again.",
+    "narration": "But here's what that clean number hides. The journey from a thousand to three million was not a smooth, happy line upward. It was a white-knuckle rollercoaster — a ride that would have terrified you, and tempted you to bail, at least a dozen times.",
     "pose": "explain",
     "props": [
       {
-        "name": "snowball",
-        "label": "just compounding"
+        "name": "rollercoaster",
+        "label": "not a smooth line"
       },
       {
-        "name": "coins",
-        "label": "an ordinary $100"
+        "name": "chartdown",
+        "label": "terror, a dozen times"
       },
       {
-        "name": "calculator",
-        "label": "pure math"
+        "name": "diamond",
+        "label": "you had to hold"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "wait until I earn more to start investing",
-    "memeBottom": "lose the one thing that made it work — time",
-    "narration": "And stick around, because the single most expensive mistake isn't investing too little. It's waiting. We'll put an exact price tag on every decade you delay — and it will probably stun you."
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "my portfolio just dropped 50%",
+    "memeBottom": "this is fine (it was, if you didn't sell)",
+    "narration": "Because the three million dollars wasn't a reward for being smart, or lucky, or good at picking stocks. It was a reward for one rare trait: the iron stomach to hold on, through crash after crash, when every instinct screamed at you to sell."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the engine that makes a hundred dollars explode.",
-    "heading": "The Engine",
-    "kicker": "compounding + the market"
+    "narration": "First, let's understand the engine behind that absurd number.",
+    "heading": "The Headline Number",
+    "kicker": "$1,000 → $3 million"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "The fuel is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Your money earns a return, and then that return earns its own return, and the whole thing snowballs, faster and faster.",
-    "sourceId": "wiki-compound"
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "But compounding plays a cruel trick early on. For the first several years, your balance barely beats what you've put in, and it honestly feels pointless. Then it quietly bends upward into a hockey stick — and most of the real gains arrive near the very end.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "slow, then explosive"
-      },
-      {
-        "name": "hourglass",
-        "label": "feels pointless early"
-      },
-      {
-        "name": "snowball",
-        "label": "a hockey stick"
-      }
-    ]
+    "narration": "Our thousand dollars went into what became the S&P 500 — a fund tracking the stock performance of 500 companies, the biggest in America. Over the long run, that basket has returned roughly ten to eleven percent a year, including dividends.",
+    "sourceId": "wiki-sp500"
   },
   {
     "id": "s7",
     "type": "stage",
-    "narration": "So picture a hundred dollars going in every month, month after month, for decades. Each one barely matters on its own. But stacked together and left to compound, they quietly grow into a pile far bigger than everything you ever put in.",
-    "motif": "hundredamonth",
-    "caption": "quietly becomes a fortune by 65"
+    "narration": "At that rate, compounding over seventy-four years does something that looks almost like a typo. A thousand dollars doubles, and doubles, and doubles again — eleven times over — until that tiny seed has grown into a three-million-dollar tree. Same thousand bucks, just given an extraordinary amount of time.",
+    "motif": "longclimb",
+    "caption": "…if you survived every crash on the way up"
   },
   {
-    "id": "s45",
+    "id": "s43",
     "type": "character",
-    "narration": "This is exactly why so many people quit too soon. They grind for five years, glance at a boring little balance, and give up right before the magic kicks in. The investors who win are simply the ones who don't stop before the curve bends.",
+    "narration": "And the growth is wildly lopsided. It took decades just to crawl from a thousand dollars to a hundred thousand. But the jump from one million to three million happened in only the last short stretch. The biggest gains always arrive at the very end.",
     "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "most quit too early"
+        "name": "seedling",
+        "label": "slow for decades"
       },
       {
-        "name": "clock",
-        "label": "right before the magic"
+        "name": "chartup",
+        "label": "then explosive"
       },
       {
-        "name": "trophy",
-        "label": "winners don't stop"
+        "name": "snowball",
+        "label": "biggest gains come last"
       }
     ]
   },
   {
     "id": "s8",
-    "type": "screenshot",
-    "narration": "Where do you get that growth? Historically, from the stock market — specifically a fund tracking the stock performance of 500 companies, the S&P 500, which has returned roughly ten percent a year on average over the long run.",
-    "sourceId": "wiki-sp500"
+    "type": "title",
+    "narration": "But there's a secret ingredient most people completely overlook.",
+    "heading": "The Dividend Secret",
+    "kicker": "where most of it came from"
   },
   {
     "id": "s9",
-    "type": "character",
-    "narration": "To stay cautious, let's use a more conservative eight percent a year for all our numbers, to quietly account for inflation and bad decades. Even at that gentler rate, the results are frankly ridiculous. So let's run the exact same hundred dollars a month, starting at four different ages.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "assume a modest 8%"
-      },
-      {
-        "name": "chartup",
-        "label": "the long-run average"
-      },
-      {
-        "name": "calendar",
-        "label": "4 starting ages"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "That ingredient is the dividend — the distribution of profits by a corporation to its shareholders. Every year, the companies you own mail you a slice of their profits, just for holding the stock.",
+    "sourceId": "wiki-dividend"
   },
   {
-    "id": "s46",
+    "id": "s44",
     "type": "character",
-    "narration": "And why eight percent, not the market's historical ten? Because inflation quietly steals two to three percent of your returns every year. Eight is roughly what's left in real, spendable purchasing power — so every number here is deliberately on the cautious side.",
+    "narration": "And dividends used to be even juicier. For much of the last century, stocks paid a fat four or five percent a year in dividends alone. Reinvested, decade after decade, those humble payments quietly became the lion's share of the entire fortune.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "market ~10%"
+        "name": "coins",
+        "label": "4-5% yields"
       },
       {
-        "name": "grocerybag",
-        "label": "inflation takes ~3%"
+        "name": "snowball",
+        "label": "reinvested for decades"
       },
       {
-        "name": "shield",
-        "label": "we use a safe 8%"
+        "name": "moneytree",
+        "label": "the lion's share"
       }
     ]
   },
   {
     "id": "s10",
-    "type": "title",
-    "narration": "Let's start with the person who begins young.",
-    "heading": "Starting at 25",
-    "kicker": "the dream scenario"
-  },
-  {
-    "id": "s11",
     "type": "character",
-    "narration": "Begin at twenty-five, and you give your money forty full years to grow. Over that time you'll contribute forty-eight thousand dollars of your own — a hundred a month, every month. And by sixty-five, it's blossomed into roughly three hundred and forty-nine thousand dollars.",
+    "narration": "And here's the magic move: instead of spending those dividends, you automatically use them to buy even more shares. Which then pay even more dividends. Which buy even more shares. It's a compounding engine bolted on top of the compounding engine.",
     "pose": "explain",
     "props": [
-      {
-        "name": "seedling",
-        "label": "40 years to grow"
-      },
       {
         "name": "coins",
-        "label": "you put in $48K"
+        "label": "dividends paid out"
       },
       {
         "name": "snowball",
-        "label": "you end with ~$349K"
-      }
-    ]
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "Here's a quick way to feel the power: the Rule of 72. At eight percent, your money doubles about every nine years. So a single dollar invested at twenty-five doubles roughly four and a half times by sixty-five — quietly turning into more than twenty dollars.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "72 ÷ 8 ≈ 9 yrs"
-      },
-      {
-        "name": "snowball",
-        "label": "doubles ~4.5×"
+        "label": "buy more shares"
       },
       {
         "name": "moneytree",
-        "label": "$1 → $20+"
+        "label": "an engine on an engine"
       }
     ]
+  },
+  {
+    "id": "s11",
+    "type": "screenshot",
+    "narration": "Experts measure this with total shareholder return, which combines share price appreciation and dividends paid. And over decades, the dividend part isn't a footnote — it's the overwhelming majority of the entire result.",
+    "sourceId": "wiki-tsr"
   },
   {
     "id": "s12",
     "type": "stage",
-    "narration": "And here's the part that should make you sit up. Of that three hundred forty-nine thousand, only forty-eight thousand was your actual money. The other three hundred thousand — the overwhelming majority — was pure growth. Compounding did about eighty-six percent of the work for you.",
-    "motif": "contribvsgrowth",
-    "caption": "compounding did 86% of the work"
+    "narration": "Look at the difference it makes. Without reinvesting dividends — just the price going up — your thousand dollars would have grown to around four hundred thousand. Impressive. But reinvest those dividends, and it explodes to three million. Reinvesting was worth roughly seven times more.",
+    "motif": "dividendsnowball",
+    "caption": "reinvesting dividends was ~7× the difference"
   },
   {
-    "id": "s48",
+    "id": "s45",
     "type": "character",
-    "narration": "And the last double is always the giant one. Your balance might crawl from a few thousand to fifty thousand over twenty years — then leap from a hundred and seventy-five thousand all the way to three hundred and fifty thousand in the final decade alone.",
+    "narration": "The tool that makes this effortless is a D-R-I-P — a dividend reinvestment plan. You switch it on once, and from then on every dividend automatically buys more shares, forever, with zero effort from you. It's the quiet machine behind that sevenfold difference.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "last double is biggest"
+        "name": "gear",
+        "label": "flip it on once"
       },
       {
         "name": "snowball",
-        "label": "+$175K in 10 yrs"
+        "label": "auto-buys shares"
       },
       {
-        "name": "clock",
-        "label": "the final decade wins"
+        "name": "vault",
+        "label": "the quiet machine"
       }
     ]
   },
   {
     "id": "s13",
-    "type": "title",
-    "narration": "Now watch what happens if that same person waits just ten years.",
-    "heading": "Starting at 35",
-    "kicker": "the ten-year cost"
+    "type": "character",
+    "narration": "So lesson one, before we even get to the drama: always reinvest your dividends. That single automatic setting, left alone for a lifetime, is quietly responsible for the vast majority of long-term stock market wealth. Most people never even notice it.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "gear",
+        "label": "auto-reinvest"
+      },
+      {
+        "name": "snowball",
+        "label": "most of the wealth"
+      },
+      {
+        "name": "moneytree",
+        "label": "set it and forget it"
+      }
+    ]
   },
   {
     "id": "s14",
-    "type": "character",
-    "narration": "Start at thirty-five instead, and you still invest for thirty solid years. You put in thirty-six thousand dollars — only twelve thousand less than the early starter. But at sixty-five, you end up with just a hundred and forty-nine thousand. Less than half.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "30 years, not 40"
-      },
-      {
-        "name": "coins",
-        "label": "you put in $36K"
-      },
-      {
-        "name": "snowball",
-        "label": "you end with ~$149K"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "And if you're thirty-five, this is not a funeral. A hundred and forty-nine thousand, from just thirty-six thousand invested, is still a wonderful deal. The only truly wrong move is to read this, feel behind, and then wait even longer. So start now.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "snowball",
-        "label": "$149K is great"
-      },
-      {
-        "name": "seedling",
-        "label": "not too late"
-      },
-      {
-        "name": "clock",
-        "label": "just don't wait more"
-      }
-    ]
+    "type": "title",
+    "narration": "Now for the part the three-million-dollar number hides: the terror.",
+    "heading": "The Gauntlet",
+    "kicker": "every crash you survived"
   },
   {
     "id": "s15",
     "type": "stage",
-    "narration": "Sit with that for a second. The twenty-five-year-old and the thirty-five-year-old invested almost the same amount — just twelve thousand dollars apart. Yet the early starter ends up with two hundred thousand dollars more. A single decade of waiting cost a fortune.",
-    "motif": "costofwaiting",
-    "caption": "waiting one decade cost ~$200,000"
+    "narration": "To collect that three million, your money had to march through a gauntlet of brutal crashes. A savage bear market in 1973. Black Monday in 1987. The dot-com collapse in 2000. The 2008 meltdown. The COVID crash of 2020. Each one felt, at the time, like the end of the world.",
+    "motif": "crashgauntlet",
+    "caption": "every one was a buying opportunity"
   },
   {
-    "id": "s50",
+    "id": "s46",
     "type": "character",
-    "narration": "And here's the quietly brutal part of waiting. That lost two hundred thousand dollars wasn't money you failed to contribute — it was growth, compounding you can simply never get back. You can always invest more later. You can never buy back the lost time.",
+    "narration": "And the cruelest stretch wasn't even a sharp crash — it was the 1970s. A decade of stagflation, where the market went essentially nowhere for years while inflation ate your money alive. Going nowhere for ten years tests your nerve even harder than a crash does.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "clock",
-        "label": "it's lost growth"
+        "name": "hourglass",
+        "label": "a decade of nothing"
+      },
+      {
+        "name": "grocerybag",
+        "label": "inflation ate it"
       },
       {
         "name": "warning",
-        "label": "never recoverable"
-      },
-      {
-        "name": "hourglass",
-        "label": "time can't be rebought"
+        "label": "patience tested"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "title",
-    "narration": "Push the start date later still, and the numbers fall off a cliff.",
-    "heading": "Starting at 45 & 55",
-    "kicker": "the late starters"
+    "type": "timeline",
+    "title": "The ride from $1,000 to $3 million",
+    "narration": "Here's the whole journey on one line. Decades of growth, violently interrupted again and again — and every single time, the market eventually clawed back to new highs. The dips look tiny from here. Living through them was a different story.",
+    "events": [
+      {
+        "year": "1950",
+        "label": "invest $1K",
+        "icon": "coins"
+      },
+      {
+        "year": "1973",
+        "label": "−48%",
+        "icon": "chartdown"
+      },
+      {
+        "year": "1987",
+        "label": "Black Monday",
+        "icon": "bomb"
+      },
+      {
+        "year": "2008",
+        "label": "−57%",
+        "icon": "wreckingball"
+      },
+      {
+        "year": "today",
+        "label": "$3M",
+        "icon": "moneytree"
+      }
+    ],
+    "highlight": 4
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "narration": "Then came 2020. In just a few weeks, the market plunged over a third as the world locked down — the fastest crash in history. Utterly terrifying. Yet it was also the fastest recovery in history, back to new highs within months. Blink, and you missed the rebound.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "fastest crash ever"
+      },
+      {
+        "name": "rocket",
+        "label": "fastest recovery ever"
+      },
+      {
+        "name": "clock",
+        "label": "back in months"
+      }
+    ]
   },
   {
     "id": "s17",
+    "type": "screenshot",
+    "narration": "Take the worst single day. Black Monday was a global, severe and largely unexpected stock market crash — on one day in October 1987, the market fell over twenty percent. In hours, a fifth of everyone's wealth simply evaporated.",
+    "sourceId": "wiki-blackmonday"
+  },
+  {
+    "id": "s18",
     "type": "character",
-    "narration": "Begin at forty-five, with twenty years to grow, and your hundred a month becomes about fifty-nine thousand dollars. Begin at fifty-five, with just ten years, and it's only around eighteen thousand — barely more than the twelve thousand you put in. Late in the game, there's simply no time for the snowball to roll.",
+    "narration": "Imagine watching that happen to your account in an afternoon. Every fiber of your being is screaming to sell what's left before it all vanishes. And yet — within two years, the market had fully recovered. The ones who sold in the panic locked in the loss forever.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "snowball",
-        "label": "45: ~$59K"
-      },
-      {
-        "name": "hourglass",
-        "label": "55: ~$18K"
+        "name": "chartdown",
+        "label": "−22% in a day"
       },
       {
         "name": "warning",
-        "label": "no time to compound"
+        "label": "every instinct: SELL"
+      },
+      {
+        "name": "diamond",
+        "label": "recovered in 2 years"
       }
     ]
   },
   {
-    "id": "s51",
+    "id": "s48",
     "type": "character",
-    "narration": "But late starters aren't helpless — they have one powerful weapon: income. At fifty-five, you likely earn far more than you did at twenty-five. Investing five hundred or even a thousand a month, instead of a hundred, can partly make up for those lost decades.",
+    "narration": "Black Monday was so violent it permanently changed the rules. Afterward, exchanges installed 'circuit breakers' that automatically halt all trading when prices fall too fast — a built-in pause button, designed to stop blind panic from feeding on itself.",
     "pose": "explain",
     "props": [
       {
-        "name": "briefcase",
-        "label": "higher income"
+        "name": "bomb",
+        "label": "1987's violence"
       },
       {
-        "name": "coins",
-        "label": "invest $500-$1K/mo"
+        "name": "barrier",
+        "label": "circuit breakers born"
       },
       {
-        "name": "scale",
-        "label": "partly makes up for it"
+        "name": "shield",
+        "label": "a pause on panic"
       }
     ]
   },
   {
-    "id": "s18",
-    "type": "stage",
-    "narration": "Line them all up, and the lesson is impossible to miss. The exact same hundred dollars a month produces three hundred forty-nine thousand at twenty-five, a hundred forty-nine at thirty-five, fifty-nine at forty-five, and just eighteen at fifty-five. Your start date matters far more than your contribution.",
-    "motif": "startagebars",
-    "caption": "same $100 — the start date changes everything"
-  },
-  {
     "id": "s19",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "$100/mo invested — balance at 65, by start age ($K)",
-    "unit": "$K",
-    "narration": "On a chart it's almost violent. Each decade you wait doesn't just shave a little off the top — it roughly halves your final result. Time, not money, is doing nearly all the heavy lifting here.",
-    "data": [
-      {
-        "label": "from 25",
-        "value": 349
-      },
-      {
-        "label": "from 35",
-        "value": 149
-      },
-      {
-        "label": "from 45",
-        "value": 59
-      },
-      {
-        "label": "from 55",
-        "value": 18
-      }
-    ],
-    "highlight": 0
-  },
-  {
-    "id": "s52",
-    "type": "callout",
-    "narration": "Here's a sobering rule of thumb for the cost of delay. To match the sixty-five balance of someone who started at twenty-five, a forty-five-year-old has to invest roughly four times as much each month. Four hundred dollars, versus a hundred — just to break even on lost time.",
-    "text": "4×",
-    "sub": "the monthly catch-up cost of starting 20 years late",
-    "icon": "coins"
+    "type": "screenshot",
+    "narration": "Then came the dot-com bubble — a stock market bubble that developed during the late 1990s, as internet mania sent valuations insane. When it burst in 2000, the market lost nearly half its value over two agonizing years.",
+    "sourceId": "wiki-dotcom"
   },
   {
     "id": "s20",
-    "type": "title",
-    "narration": "So why does waiting cost so insanely much?",
-    "heading": "Why Waiting Hurts",
-    "kicker": "the magic is in the tail"
+    "type": "screenshot",
+    "narration": "And barely recovered, it got hit again by the Great Recession — a period of contraction in economies around the world from 2007 to 2009. At its worst, the stock market had fallen a gut-wrenching fifty-seven percent.",
+    "sourceId": "wiki-recession"
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "This is exactly where legends are made. In the depths of 2008, while everyone else fled, Warren Buffett famously urged people to be greedy when others are fearful — and bought aggressively. Those terrifying bottoms are precisely when the great fortunes are quietly built.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "greedy when fearful"
+      },
+      {
+        "name": "chartdown",
+        "label": "buy the bottom"
+      },
+      {
+        "name": "moneytree",
+        "label": "fortunes built here"
+      }
+    ]
   },
   {
     "id": "s21",
     "type": "character",
-    "narration": "The secret is that compounding does almost all its magic at the very end. The money you invest in your twenties doesn't just grow — it has forty years to double, and double, and double again. Those early dollars are the seed of the entire forest.",
+    "narration": "Think about that 2008 moment. More than half your life savings — gone. Headlines screaming that capitalism itself was ending. It would have taken superhuman nerve to keep holding, let alone keep buying. But those who did saw their money more than quadruple in the decade that followed.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "seedling",
-        "label": "early dollars = seeds"
+        "name": "chartdown",
+        "label": "−57% in 2008"
       },
       {
-        "name": "snowball",
-        "label": "double, double, double"
+        "name": "newspaper",
+        "label": "'the end of capitalism'"
       },
       {
-        "name": "moneytree",
-        "label": "they grow the forest"
+        "name": "rocket",
+        "label": "4× in the next decade"
       }
     ]
   },
   {
-    "id": "s53",
+    "id": "s50",
     "type": "character",
-    "narration": "Now flip it around. Every hundred dollars you blow on junk in your twenties isn't really costing you a hundred dollars. It's costing you the roughly fifteen hundred it would have become by retirement. Spending in your twenties carries a brutal hidden exchange rate.",
+    "narration": "And in every single crash, the news was certain it was different this time — that this collapse was permanent, that the system was broken for good. It never was. 'This time is different' are, reliably, the four most expensive words in all of investing.",
     "pose": "explain",
     "props": [
       {
-        "name": "grocerybag",
-        "label": "$100 on junk now"
+        "name": "newspaper",
+        "label": "'it's different now'"
       },
       {
         "name": "warning",
-        "label": "× ~15 by 65"
+        "label": "4 costly words"
       },
       {
-        "name": "snowball",
-        "label": "a brutal rate"
+        "name": "chartup",
+        "label": "it never was"
       }
     ]
   },
   {
     "id": "s22",
-    "type": "screenshot",
-    "narration": "This is really the time value of money in action — the idea that there's a greater benefit to receiving a sum of money now rather than an identical sum later. A dollar today, given time to grow, is worth many dollars tomorrow.",
-    "sourceId": "wiki-timevalue"
+    "type": "image",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "panic-sell everything at the bottom",
+    "memeBottom": "do nothing and let it recover to new highs",
+    "narration": "This is the whole game in one image. In every single crash, there were two types of investor. The one who panicked and sold — and the one who did absolutely nothing. Decades later, their outcomes weren't just different. They were opposite."
   },
   {
     "id": "s23",
-    "type": "screenshot",
-    "narration": "Which means waiting carries a brutal opportunity cost — the value of the best alternative forgone. Every year you don't invest, you're not just losing the hundred dollars. You're losing every dollar it would have grown into over your whole life.",
-    "sourceId": "wiki-opportunity"
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "But this isn't a sermon to never enjoy your money. The goal was never to live like a hermit. It's to automate a sensible slice first — pay the future you — and then spend the rest genuinely guilt-free. Balance, not misery.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "gear",
-        "label": "automate a slice first"
-      },
-      {
-        "name": "coffeecup",
-        "label": "then enjoy guilt-free"
-      },
-      {
-        "name": "scale",
-        "label": "balance, not misery"
-      }
-    ]
+    "type": "title",
+    "narration": "So let's look at exactly what panic costs.",
+    "heading": "Panic vs. Hold",
+    "kicker": "the price of fear"
   },
   {
     "id": "s24",
-    "type": "title",
-    "narration": "Now let's reframe that hundred dollars in a way that stings a little.",
-    "heading": "The $5 a Day",
-    "kicker": "it's smaller than you think"
-  },
-  {
-    "id": "s25",
     "type": "stage",
-    "narration": "A hundred dollars a month is barely more than three dollars a day — one fancy coffee. Bump it to five dollars a day, the price of a proper latte, and started young, that daily habit alone grows into over half a million dollars by retirement.",
-    "motif": "fivedollarday",
-    "caption": "invested instead of sipped, for 40 years"
+    "narration": "When the market crashes, you face a choice. Sell, and you turn a temporary paper loss into a permanent real one — then you watch, frozen, as it recovers without you. Hold, and that same crash becomes just another dip on the long road up. The loss was only ever real for the one who sold.",
+    "motif": "panicvshold",
+    "caption": "the loss was only real for the one who sold"
   },
   {
-    "id": "s55",
+    "id": "s51",
     "type": "character",
-    "narration": "And don't over-obsess on the coffee itself. Skipping one latte helps, but it's small. The real 'latte factor' is the mindset — once you see that every small recurring cost has a giant future price tag, you start winning the big decisions too: the car, the rent, the subscriptions.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coffeecup",
-        "label": "the latte is small"
-      },
-      {
-        "name": "car",
-        "label": "big wins matter more"
-      },
-      {
-        "name": "calculator",
-        "label": "see the true price"
-      }
-    ]
-  },
-  {
-    "id": "s26",
-    "type": "character",
-    "narration": "This isn't about never enjoying a coffee again — life is for living. It's about realizing that tiny, repeated amounts are not trivial. In the hands of time and compounding, five dollars a day is a genuinely life-changing sum. Small is not the same as unimportant.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coffeecup",
-        "label": "small daily habit"
-      },
-      {
-        "name": "snowball",
-        "label": "= life-changing sum"
-      },
-      {
-        "name": "scale",
-        "label": "small ≠ unimportant"
-      }
-    ]
-  },
-  {
-    "id": "s56",
-    "type": "callout",
-    "narration": "And if a hundred a month is genuinely out of reach right now, start with twenty-five. Even twenty-five dollars a month, invested from twenty-five, still grows to nearly ninety thousand dollars by sixty-five. The amount is almost beside the point. Starting is the whole game.",
-    "text": "$90,000",
-    "sub": "from just $25/month, started at 25",
-    "icon": "seedling"
-  },
-  {
-    "id": "s27",
-    "type": "title",
-    "narration": "And of course, you can pour more fuel on the fire.",
-    "heading": "Scaling It Up",
-    "kicker": "$500 a month"
-  },
-  {
-    "id": "s28",
-    "type": "character",
-    "narration": "Because it all scales in a straight line, just multiply. Five hundred dollars a month from age twenty-five, at that same eight percent, grows into roughly one and three-quarter million dollars by sixty-five. The same simple habit — just a bigger monthly bite.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "$500/mo from 25"
-      },
-      {
-        "name": "snowball",
-        "label": "~$1.75 million"
-      },
-      {
-        "name": "chartup",
-        "label": "it scales linearly"
-      }
-    ]
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "Want a concrete target beyond a hundred? Maxing out a Roth I-R-A is a brilliant one — currently around five hundred eighty a month. Do that consistently from a young age, and you're looking at roughly two million dollars of completely tax-free money at retirement.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "vault",
-        "label": "max a Roth IRA"
-      },
-      {
-        "name": "coins",
-        "label": "~$580/mo"
-      },
-      {
-        "name": "snowball",
-        "label": "~$2M tax-free"
-      }
-    ]
-  },
-  {
-    "id": "s29",
-    "type": "character",
-    "narration": "So the real target isn't a magic number — it's a habit and a percentage. Invest whatever you honestly can, as early as you can, and then crank the amount up a little with every raise. The hundred dollars is just the beginning.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "gear",
-        "label": "build the habit"
-      },
-      {
-        "name": "chartup",
-        "label": "raise it over time"
-      },
-      {
-        "name": "snowball",
-        "label": "$100 is the start"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "narration": "The winning pattern is simple: start with whatever you can, automate it, and bump it up with every raise and every debt you clear. A hundred quietly becomes two hundred, then five hundred, almost painlessly, as your life grows around it.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "seedling",
-        "label": "start small"
-      },
-      {
-        "name": "gear",
-        "label": "automate it"
-      },
-      {
-        "name": "chartup",
-        "label": "ratchet it up"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "title",
-    "narration": "Now for the question everyone asks: where does the hundred dollars actually go?",
-    "heading": "Where It Goes",
-    "kicker": "just buy the market"
-  },
-  {
-    "id": "s31",
-    "type": "screenshot",
-    "narration": "For most people, the answer is an index fund — a fund with the goal of replicating, before fees and expenses, the performance of a whole market index. One cheap fund that quietly owns a slice of hundreds of companies at once.",
-    "sourceId": "wiki-index"
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "narration": "One warning when you pick that fund: fees are a silent killer. A fund charging just one percent a year doesn't sound like much — but over forty years, it can quietly swallow a quarter or more of your final balance. Always choose the cheapest broad index fund you can find.",
+    "narration": "There's a brutal statistic for this. The average investor consistently earns less than the very funds they own — because they buy high in euphoria and sell low in panic. Their own emotions quietly steal a huge slice of their returns, every cycle.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
+        "name": "warning",
+        "label": "buy high, sell low"
+      },
+      {
         "name": "percent",
-        "label": "a 1% fee"
+        "label": "lose to your own fund"
+      },
+      {
+        "name": "brain",
+        "label": "emotions steal returns"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "screenshot",
+    "narration": "Markets move in long waves — a perceived tendency of the financial markets to move in a particular direction over time. The scary down-waves, the bear markets, are real. But historically, every one of them has been temporary. The long-term direction has been relentlessly up.",
+    "sourceId": "wiki-beartrend"
+  },
+  {
+    "id": "s26",
+    "type": "character",
+    "narration": "And here's the cruel irony that traps the panicker. The market's single best days almost always come clustered right after its worst ones — in the chaos of the recovery. So if you sell to escape the crash, you are almost guaranteed to miss the explosive rebound.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "best days follow worst"
       },
       {
         "name": "warning",
-        "label": "eats ~25% over 40 yrs"
+        "label": "sell = miss the rebound"
       },
       {
-        "name": "scissors",
-        "label": "pick the cheapest fund"
+        "name": "rocket",
+        "label": "the recovery is sudden"
       }
     ]
   },
   {
-    "id": "s32",
+    "id": "s52",
     "type": "character",
-    "narration": "This is the boring, beautiful secret. You don't pick stocks. You don't time anything. You just buy the whole market, for almost no fee, and let it compound. It's exactly how the eight-percent engine in all our examples actually works in real life.",
+    "narration": "And here's the trap in hard numbers. Many of the market's ten best days in history landed within days of its worst ones — deep inside the 2008 and 2020 crashes. Flee the storm, and you slam the door on the exact days that make you rich.",
     "pose": "explain",
     "props": [
       {
-        "name": "basket",
-        "label": "own the whole market"
+        "name": "chartup",
+        "label": "best days in the crash"
       },
       {
-        "name": "pie",
-        "label": "hundreds of companies"
+        "name": "warning",
+        "label": "flee = miss them"
       },
       {
-        "name": "percent",
-        "label": "almost no fee"
+        "name": "bomb",
+        "label": "inside 2008 & 2020"
       }
     ]
   },
   {
-    "id": "s60",
-    "type": "character",
-    "narration": "And don't agonize over which index. A total-market fund or a plain S&P 500 fund are both excellent — they own basically the same giant companies. The only things that truly matter are that it's broad, and that it's cheap.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "basket",
-        "label": "total market"
-      },
-      {
-        "name": "pie",
-        "label": "or the S&P 500"
-      },
-      {
-        "name": "scale",
-        "label": "broad & cheap is all"
-      }
-    ]
-  },
-  {
-    "id": "s33",
-    "type": "screenshot",
-    "narration": "And the engine that makes it steady is dollar-cost averaging — an investment strategy of putting in the same amount at regular intervals. A hundred dollars, every single month, no matter what the market is doing.",
-    "sourceId": "wiki-dca"
-  },
-  {
-    "id": "s34",
+    "id": "s27",
     "type": "stage",
-    "narration": "This is why crashes aren't the enemy of the steady investor — they're a gift. When the market tanks, your fixed hundred dollars automatically buys more shares, on sale. You quietly scoop up bargains in the panic, and they power your biggest gains in the recovery.",
-    "motif": "dcathroughcrashes",
-    "caption": "crashes become discounts — dollar-cost averaging"
+    "narration": "Look at what missing just a handful of days does. Stay fully invested the whole time, and you get your three million. But miss just the ten best days across those decades, and you're left with barely a third of it. Miss the best thirty days, and almost all the magic is gone.",
+    "motif": "missedbestdays",
+    "caption": "the best days cluster right after the crashes"
   },
   {
-    "id": "s61",
+    "id": "s28",
     "type": "character",
-    "narration": "History proves it. Someone who calmly kept buying their hundred dollars straight through the 2008 crash was scooping up shares at rock-bottom prices — and those exact shares went on to drive their biggest gains in the decade-long boom that followed.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "kept buying in 2008"
-      },
-      {
-        "name": "coins",
-        "label": "bought the bottom"
-      },
-      {
-        "name": "trophy",
-        "label": "huge gains after"
-      }
-    ]
-  },
-  {
-    "id": "s35",
-    "type": "character",
-    "narration": "So the worst thing you can do in a crash is stop. The investor who panics and sells locks in the loss. The one who keeps calmly buying their hundred dollars through the storm is the one who comes out the other side dramatically richer.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "don't panic-sell"
-      },
-      {
-        "name": "snowball",
-        "label": "keep buying"
-      },
-      {
-        "name": "trophy",
-        "label": "come out richer"
-      }
-    ]
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "There's a famous statistic: miss just the ten best days in the market over a few decades, and your total returns can be cut in half. And the catch? Those best days almost always arrive right after the scariest crashes. Time in the market beats timing the market.",
+    "narration": "This is the real meaning of that famous phrase: time in the market beats timing the market. It's not being clever that builds the fortune. It's simply being present — sitting through the terror and refusing to get up from the table.",
     "pose": "explain",
     "props": [
       {
@@ -787,55 +540,189 @@
         "label": "time IN the market"
       },
       {
-        "name": "chartup",
-        "label": "the 10 best days"
+        "name": "diamond",
+        "label": "just stay seated"
       },
       {
-        "name": "warning",
-        "label": "right after crashes"
+        "name": "trophy",
+        "label": "presence > cleverness"
       }
     ]
   },
   {
-    "id": "s36",
+    "id": "s53",
+    "type": "character",
+    "narration": "Even holding isn't always comfortable. From 2000 to roughly 2013, American stocks went almost nowhere — a 'lost decade' bookended by two brutal crashes. But those who kept calmly buying straight through it were rewarded enormously in the boom that followed.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "2000-2013: flat"
+      },
+      {
+        "name": "diamond",
+        "label": "kept buying anyway"
+      },
+      {
+        "name": "rocket",
+        "label": "then it soared"
+      }
+    ]
+  },
+  {
+    "id": "s29",
     "type": "title",
-    "narration": "Let's turn all of this into exactly what you should do.",
-    "heading": "What To Do",
-    "kicker": "start the $100 today"
+    "narration": "But before you get too excited about three million dollars, there's a reality check.",
+    "heading": "The Inflation Catch",
+    "kicker": "real vs. on paper"
   },
   {
-    "id": "s37",
+    "id": "s30",
     "type": "character",
-    "narration": "Step one: start today, with whatever you can — even if it's just that hundred a month. Every single day you wait is quietly handing money to the version of you that could have started now. The best time was twenty years ago. The second best is this afternoon.",
-    "pose": "present",
+    "narration": "Three million dollars today is not the fortune it would have been in 1950. Over seventy-four years, inflation has quietly shrunk what a dollar can buy to a fraction of what it was. So we have to translate that pile back into real, honest purchasing power.",
+    "pose": "explain",
     "props": [
       {
-        "name": "seedling",
-        "label": "start today"
+        "name": "grocerybag",
+        "label": "a dollar buys less"
       },
       {
-        "name": "clock",
-        "label": "every day counts"
+        "name": "hourglass",
+        "label": "74 years of inflation"
       },
       {
-        "name": "coins",
-        "label": "even just $100"
+        "name": "scale",
+        "label": "translate to real terms"
       }
     ]
   },
   {
-    "id": "s38",
+    "id": "s54",
     "type": "character",
-    "narration": "Step two: automate it and buy a low-cost index fund. Set the hundred dollars to invest itself the day after payday, before you can spend it, straight into a fund that owns the whole market. Then, crucially, do absolutely nothing.",
-    "pose": "present",
+    "narration": "Strip out inflation, and the market's real return has been roughly seven percent a year over the long run. Seven percent doesn't sound dramatic. But compounded across an entire lifetime, it's the whole difference between a thousand dollars and a fortune.",
+    "pose": "explain",
     "props": [
       {
-        "name": "gear",
-        "label": "automate it"
+        "name": "percent",
+        "label": "~7% real return"
+      },
+      {
+        "name": "grocerybag",
+        "label": "after inflation"
+      },
+      {
+        "name": "snowball",
+        "label": "a lifetime = a fortune"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "stage",
+    "narration": "In 1950 purchasing power, that three million is worth more like two hundred and fifty thousand dollars. Which sounds like a let-down — until you remember you started with just a thousand. Even after inflation, that's still a staggering, roughly two-hundred-and-fifty-fold increase in real wealth.",
+    "motif": "realvsnominal",
+    "caption": "still a ~250× REAL gain — it crushed inflation"
+  },
+  {
+    "id": "s32",
+    "type": "character",
+    "narration": "And that's the real point of investing in stocks. It isn't just to grow your number. It's to decisively beat inflation — to make sure your money grows faster than prices rise. Cash under a mattress since 1950 would have quietly lost over ninety percent of its power. Stocks obliterated that.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "cash lost 90%+"
+      },
+      {
+        "name": "chartup",
+        "label": "stocks beat inflation"
+      },
+      {
+        "name": "shield",
+        "label": "that's the real job"
+      }
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "narration": "And over that same stretch, nothing else came close. Gold roughly protected you, bonds plodded gently along, and cash quietly bled out to inflation. Dollar for dollar, owning a slice of growing businesses crushed every other mainstream option by a mile.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldbar",
+        "label": "gold: ok"
+      },
+      {
+        "name": "bond",
+        "label": "bonds: plodded"
+      },
+      {
+        "name": "chartup",
+        "label": "stocks: crushed it"
+      }
+    ]
+  },
+  {
+    "id": "s33",
+    "type": "title",
+    "narration": "So what do seventy-four years of market history actually teach us?",
+    "heading": "The Lessons",
+    "kicker": "what history screams"
+  },
+  {
+    "id": "s34",
+    "type": "character",
+    "narration": "Lesson one: the market's long-term direction is up — stubbornly, reliably up. Wars, crashes, recessions, pandemics, oil shocks — it has survived and surpassed every single one of them. Betting against the long-run American economy has been a losing trade for a century.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "long-run: always up"
+      },
+      {
+        "name": "globe",
+        "label": "survived everything"
+      },
+      {
+        "name": "trophy",
+        "label": "a century of recovery"
+      }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "character",
+    "narration": "Now, one honest caveat. America's market was the great winner of the last century — not every country's was. Which is why wise investors own the whole world, not just one nation. The real lesson is 'own businesses broadly,' never 'bet everything on a single flag.'",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flagUS",
+        "label": "US won last century"
+      },
+      {
+        "name": "globe",
+        "label": "own the whole world"
+      },
+      {
+        "name": "scale",
+        "label": "diversify, don't bet one flag"
+      }
+    ]
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "Lesson two: the whole reward goes to those who can simply sit still. The fortune wasn't built by trading or timing. It was built by buying a broad basket, reinvesting the dividends, and then developing the emotional strength to do nothing for decades.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "diamond",
+        "label": "sit still"
       },
       {
         "name": "basket",
-        "label": "buy the index"
+        "label": "buy broad"
       },
       {
         "name": "hammock",
@@ -844,87 +731,160 @@
     ]
   },
   {
-    "id": "s63",
+    "id": "s57",
     "type": "character",
-    "narration": "And actually doing this is easier than you fear. You can open a brokerage or Roth account on your phone in about twenty minutes, set up a hundred-dollar automatic transfer, and buy one index fund. Honestly, the hardest part is just starting.",
+    "narration": "There's a famous, darkly funny finding. A big brokerage once studied its best-performing accounts — and found many belonged to people who had died, or completely forgotten they even had an account. The ultimate buy-and-hold strategy was, quite literally, doing absolutely nothing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "diamond",
+        "label": "the best accounts…"
+      },
+      {
+        "name": "vault",
+        "label": "forgotten & untouched"
+      },
+      {
+        "name": "trophy",
+        "label": "doing nothing won"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "Lesson three: the crashes are not the enemy. They are the toll you pay for the extraordinary long-term returns. If stocks never crashed, they'd be as safe as cash — and they'd pay about as little. The gut-wrenching volatility is precisely why they reward you so richly.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "rollercoaster",
+        "label": "crashes = the toll"
+      },
+      {
+        "name": "percent",
+        "label": "volatility = the reward"
+      },
+      {
+        "name": "diamond",
+        "label": "the price of returns"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "So the practical takeaway is beautifully boring. Buy a low-cost fund that owns the whole market. Turn on automatic dividend reinvestment. Keep buying through every scary headline. And then, crucially, don't check it, don't tinker with it, and above all, don't sell in a panic.",
     "pose": "present",
     "props": [
       {
-        "name": "phone",
-        "label": "open it in 20 min"
+        "name": "basket",
+        "label": "own the whole market"
       },
       {
         "name": "gear",
-        "label": "auto-transfer $100"
+        "label": "reinvest dividends"
       },
       {
-        "name": "basket",
-        "label": "buy one fund"
+        "name": "diamond",
+        "label": "never panic-sell"
+      }
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "And if you think 1950 was cherry-picked — it wasn't. History shows that every single rolling period of about twenty years or more in the US market has ended positive. Pick almost any start date you like; you just have to give it enough time.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "pick any start date"
+      },
+      {
+        "name": "clock",
+        "label": "~20+ years"
+      },
+      {
+        "name": "chartup",
+        "label": "always ended positive"
+      }
+    ]
+  },
+  {
+    "id": "s38",
+    "type": "character",
+    "narration": "Because the story of that thousand dollars isn't really about money. It's about temperament. The market handed three million dollars not to the smartest person in 1950, but to the calmest one — the one who could watch the world seem to end, over and over, and simply refuse to flinch.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "diamond",
+        "label": "it rewards temperament"
+      },
+      {
+        "name": "rollercoaster",
+        "label": "watch the world 'end'"
+      },
+      {
+        "name": "trophy",
+        "label": "and refuse to flinch"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "So the final, humbling lesson is this. The greatest threat to that three million was never the crash, the recession, or the scary headline. It was you — your own fear, in the worst possible moment. Master that one thing, and the market quietly does the rest.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "brain",
+        "label": "the real enemy is you"
+      },
+      {
+        "name": "warning",
+        "label": "fear at the worst moment"
+      },
+      {
+        "name": "diamond",
+        "label": "master it, and win"
       }
     ]
   },
   {
     "id": "s39",
-    "type": "stage",
-    "narration": "Because that's the whole secret the numbers scream at us. It is not about being rich, or clever, or lucky. The twenty-five-year-old investing a humble hundred dollars beats the fifty-five-year-old investing the same — every single time. Starting early simply wins.",
-    "motif": "startearly",
-    "caption": "the one asset you can't buy back: time"
-  },
-  {
-    "id": "s64",
     "type": "character",
-    "narration": "And the most beautiful version of all: do it for a child. A small amount invested for a newborn, left alone for sixty-five years, can quietly make them a millionaire — from contributions a parent would barely even notice. Time really is the greatest gift you can give.",
-    "pose": "explain",
+    "narration": "So the next time the headlines are screaming and your portfolio is bleeding red, remember the grandparent and their thousand dollars. Every crash on that chart felt exactly this terrifying in the moment. And every single one, in the end, was just another step on the climb to three million.",
+    "pose": "present",
     "props": [
       {
-        "name": "baby",
-        "label": "invest for a newborn"
+        "name": "newspaper",
+        "label": "headlines screaming"
+      },
+      {
+        "name": "rollercoaster",
+        "label": "it always felt like this"
       },
       {
         "name": "moneytree",
-        "label": "65 years to grow"
-      },
-      {
-        "name": "trophy",
-        "label": "a future millionaire"
+        "label": "just another step up"
       }
     ]
   },
   {
     "id": "s40",
     "type": "character",
-    "narration": "So the next time you tell yourself a hundred dollars is too small to bother with, remember the chart. In the hands of time, that hundred dollars isn't small at all. It's the seed of a three-hundred-thousand-dollar tree — if you plant it today.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "seedling",
-        "label": "$100 is a seed"
-      },
-      {
-        "name": "moneytree",
-        "label": "→ a $300K+ tree"
-      },
-      {
-        "name": "calendar",
-        "label": "if you plant it now"
-      }
-    ]
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "If this finally made compounding click, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this gave you the nerve to hold through the next storm, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "snowball",
+        "name": "diamond",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s42",
+    "id": "s41",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

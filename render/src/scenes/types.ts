@@ -176,7 +176,9 @@ export interface StageScene extends Base {
     // EP055 (how much to retire at every age) additions:
     | "twentyfivex" | "safewithdrawal" | "earlycostmore" | "bridgeyears" | "sequencerisk" | "longevityrisk"
     // EP056 (invest $100/month at every age) additions:
-    | "hundredamonth" | "startagebars" | "costofwaiting" | "contribvsgrowth" | "fivedollarday" | "dcathroughcrashes";
+    | "hundredamonth" | "startagebars" | "costofwaiting" | "contribvsgrowth" | "fivedollarday" | "dcathroughcrashes"
+    // EP057 ($1,000 invested since 1950) additions:
+    | "longclimb" | "dividendsnowball" | "crashgauntlet" | "panicvshold" | "realvsnominal" | "missedbestdays";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

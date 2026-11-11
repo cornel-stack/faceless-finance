@@ -103,6 +103,8 @@ export type DoodleName =
   | "hammock" | "medkit"
   // EP056 (invest $100/month at every age) additions:
   | "coffeecup" | "snowball"
+  // EP057 ($1,000 invested since 1950) additions:
+  | "rollercoaster" | "diamond"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1862,6 +1864,30 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={30} cy={72} d={16} fill="#eef3f6" strokeWidth={SW} />
           <RCircle cx={62} cy={60} d={40} fill="#eef3f6" strokeWidth={SW} />
           <RPath d="M20 66 Q40 56 48 64" fill="none" strokeWidth={1.4} />
+        </>
+      );
+    case "rollercoaster":
+      // A rollercoaster track — the terrifying ride of the market.
+      return (
+        <>
+          <RPath d="M12 40 Q28 12 44 40 Q56 62 68 30 Q80 10 90 34" fill="none" stroke={RED} strokeWidth={3} />
+          <RLine x1={12} y1={40} x2={12} y2={84} strokeWidth={1.6} />
+          <RLine x1={44} y1={40} x2={44} y2={84} strokeWidth={1.6} />
+          <RLine x1={68} y1={34} x2={68} y2={84} strokeWidth={1.6} />
+          <RLine x1={12} y1={84} x2={90} y2={84} strokeWidth={SW} />
+          <RRect x={78} y={26} w={14} h={10} fill={GOLD} strokeWidth={1.6} />
+        </>
+      );
+    case "diamond":
+      // A diamond — "diamond hands", holding through the crashes.
+      return (
+        <>
+          <RPath d="M30 34 L70 34 L84 50 L50 86 L16 50 Z" fill="#bfe3ea" strokeWidth={SW} />
+          <RLine x1={30} y1={34} x2={42} y2={50} strokeWidth={1.6} />
+          <RLine x1={70} y1={34} x2={58} y2={50} strokeWidth={1.6} />
+          <RLine x1={16} y1={50} x2={84} y2={50} strokeWidth={1.6} />
+          <RLine x1={42} y1={50} x2={50} y2={86} strokeWidth={1.6} />
+          <RLine x1={58} y1={50} x2={50} y2={86} strokeWidth={1.6} />
         </>
       );
   }
