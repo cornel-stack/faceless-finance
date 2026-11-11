@@ -99,6 +99,8 @@ export type DoodleName =
   | "safetynet" | "gear"
   // EP054 (how banks treat you at every level) additions:
   | "velvetrope" | "goldcard"
+  // EP055 (how much to retire at every age) additions:
+  | "hammock" | "medkit"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1818,6 +1820,26 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={24} y={40} w={16} h={12} fill={PARCH} strokeWidth={1.6} />
           <RLine x1={24} y1={62} x2={64} y2={62} strokeWidth={1.8} />
           <text x={50} y={50} fontSize={9} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">VIP</text>
+        </>
+      );
+    case "hammock":
+      // A hammock slung between two posts — retirement / leisure.
+      return (
+        <>
+          <RLine x1={16} y1={24} x2={16} y2={84} strokeWidth={SW} />
+          <RLine x1={84} y1={24} x2={84} y2={84} strokeWidth={SW} />
+          <RPath d="M16 40 Q50 84 84 40" fill={TAN} strokeWidth={SW} />
+          <RPath d="M16 40 Q50 72 84 40" fill="none" strokeWidth={1.4} />
+        </>
+      );
+    case "medkit":
+      // A medical kit — healthcare costs before Medicare.
+      return (
+        <>
+          <RRect x={18} y={34} w={64} h={48} fill={RED} strokeWidth={SW} />
+          <RRect x={40} y={26} w={20} h={10} fill="none" strokeWidth={SW} />
+          <RLine x1={50} y1={46} x2={50} y2={70} stroke="#fff" strokeWidth={5} />
+          <RLine x1={38} y1={58} x2={62} y2={58} stroke="#fff" strokeWidth={5} />
         </>
       );
   }

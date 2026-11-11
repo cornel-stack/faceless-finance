@@ -4095,6 +4095,103 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a private staff for one family's fortune</text>
       </svg>
     );
+  } else if (m === "twentyfivex") {
+    // Your number = annual spending × 25.
+    const pop = spring({ frame, fps, delay: fps * 1.2, config: { damping: 9 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your retirement number</text>
+        <g transform="translate(220 280)"><circle r={78} fill={blue} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>yearly</text><text y={16} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>spending</text><text y={42} fontSize={18} fontWeight={900} fill="#eaf0fa" textAnchor="middle" fontFamily={sans}>$50K</text></g>
+        <text x={420} y={296} fontSize={50} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">× 25</text>
+        <path d="M520 280 l70 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform={`translate(760 280) scale(${Math.min(1, pop)})`}><circle r={92} fill={green} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={18} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>nest egg</text><text y={24} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$1.25M</text></g>
+        <text x={VW / 2} y={470} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">spending, not income, sets the number</text>
+      </svg>
+    );
+  } else if (m === "safewithdrawal") {
+    // The 4% rule: draw 4% a year, growth refills it, it lasts.
+    const yr = Math.floor(interpolate(frame, [fps * 0.5, fps * 2.6], [0, 5], clampBoth));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 4% rule</text>
+        <g transform="translate(300 300)">
+          <circle r={96} fill={gold} stroke={ink} strokeWidth={6} />
+          <text y={-6} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>nest egg</text>
+          <text y={22} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>stays full</text>
+        </g>
+        <path d="M400 260 q120 -30 190 0" fill="none" stroke={green} strokeWidth={5} strokeDasharray="6 6" />
+        <text x={500} y={226} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>growth refills it</text>
+        <path d="M400 340 l170 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={red} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(680 340)"><rect x={-70} y={-34} width={140} height={68} rx={8} fill={red} stroke={ink} strokeWidth={4} /><text y={-4} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>take 4%/yr</text><text y={20} fontSize={15} fontWeight={800} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>to live on</text></g>
+        <text x={VW / 2} y={470} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>draw 4% a year → it can last 30+ years · year {yr + 1}</text>
+      </svg>
+    );
+  } else if (m === "earlycostmore") {
+    // The younger you retire, the bigger the pile you need.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["retire 40", 300, red], ["retire 50", 230, "#d98b5f"], ["retire 55", 190, gold], ["retire 65", 140, green]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={66} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">retire younger, need a bigger pile</text>
+        <RLine x1={90} y1={440} x2={VW - 60} y2={440} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, h, col], i) => {
+          const x = 150 + i * 190; const hh = (h as number) * grow;
+          return <g key={i}><rect x={x} y={440 - hh} width={130} height={hh} fill={col as string} stroke={ink} strokeWidth={4} /><text x={x + 65} y={440 - hh - 12} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text><text x={x + 65} y={464} fontSize={14} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{["~33×","~28×","~27×","~25×"][i]} spend</text></g>;
+        })}
+        <text x={VW / 2} y={498} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>more years to fund · no Social Security yet</text>
+      </svg>
+    );
+  } else if (m === "bridgeyears") {
+    // The self-funded gap before Social Security & Medicare.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">retire early = build a bridge</text>
+        <RLine x1={x0} y1={300} x2={x1} y2={300} stroke={ink} strokeWidth={3} />
+        {[["40", x0], ["62", 560], ["65", 700], ["90", x1]].map(([lab, x], i) => <g key={i}><line x1={x as number} y1={294} x2={x as number} y2={312} stroke={ink} strokeWidth={3} /><text x={x as number} y={338} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>age {lab}</text></g>)}
+        <rect x={x0} y={250} width={(560 - x0) * draw} height={40} rx={6} fill={red} stroke={ink} strokeWidth={3} />
+        <text x={(x0 + 560) / 2} y={236} fontSize={16} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>you fund 100% of this</text>
+        <rect x={560} y={250} width={(x1 - 560) * interpolate(draw, [0.6, 1], [0, 1], clampBoth)} height={40} rx={6} fill={green} stroke={ink} strokeWidth={3} opacity={0.8} />
+        <text x={(560 + x1) / 2} y={378} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>Social Security + Medicare help</text>
+        <text x={VW / 2} y={470} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>no SS till 62, no Medicare till 65 — the bridge is all you</text>
+      </svg>
+    );
+  } else if (m === "sequencerisk") {
+    // A crash early in retirement is far more dangerous than a late one.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">timing of a crash decides everything</text>
+        <g>
+          <text x={250} y={120} fontSize={16} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>crash EARLY</text>
+          <RLine x1={120} y1={240} x2={380} y2={240} stroke={ink} strokeWidth={2} />
+          <path d={`M120 180 Q160 320 ${120 + 260 * draw} ${Math.min(360, 180 + 260 * draw)}`} fill="none" stroke={red} strokeWidth={5} />
+          <text x={250} y={300} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>runs out</text>
+        </g>
+        <g>
+          <text x={720} y={120} fontSize={16} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>crash LATE</text>
+          <RLine x1={600} y1={240} x2={860} y2={240} stroke={ink} strokeWidth={2} />
+          <path d={`M600 230 Q720 120 ${600 + 260 * draw} ${230 - 70 * draw}`} fill="none" stroke={green} strokeWidth={5} />
+          <text x={760} y={150} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>survives</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>same crash, opposite outcome — this is sequence risk</text>
+      </svg>
+    );
+  } else if (m === "longevityrisk") {
+    // The money has to outlast you — and you might live to 95.
+    const race = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your money has to outlast you</text>
+        <RLine x1={120} y1={250} x2={880} y2={250} stroke={ink} strokeWidth={3} />
+        {[["65", 120], ["80", 430], ["95", 740], ["100+", 860]].map(([lab, x], i) => <g key={i}><line x1={x as number} y1={244} x2={x as number} y2={262} stroke={ink} strokeWidth={3} /><text x={x as number} y={286} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>)}
+        <rect x={120} y={200} width={620 * race} height={36} rx={6} fill={green} stroke={ink} strokeWidth={3} />
+        <text x={120 + 620 * race} y={190} fontSize={14} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>your money</text>
+        <text x={740} y={340} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>plan to ~95, not ~78</text>
+        <text x={VW / 2} y={470} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>running out at 85 is the real retirement nightmare</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

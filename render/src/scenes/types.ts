@@ -172,7 +172,9 @@ export interface StageScene extends Base {
     // EP053 (how much you should have saved) additions:
     | "savingsrate" | "fiftythirtytwenty" | "emergencyfund" | "employermatch" | "ruleof72"
     // EP054 (how banks treat you at every level) additions:
-    | "bankladder" | "feesupperksdown" | "overdrafttrap" | "privatebanker" | "poorpaymore" | "familyoffice";
+    | "bankladder" | "feesupperksdown" | "overdrafttrap" | "privatebanker" | "poorpaymore" | "familyoffice"
+    // EP055 (how much to retire at every age) additions:
+    | "twentyfivex" | "safewithdrawal" | "earlycostmore" | "bridgeyears" | "sequencerisk" | "longevityrisk";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

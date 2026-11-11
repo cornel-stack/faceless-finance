@@ -2,832 +2,916 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Two people walk into the exact same bank on the same afternoon. To the first, the bank is a predator — slapping them with a thirty-five-dollar fee for being five dollars short. To the second, the bank is a butler — waiving every charge and sending a personal banker to their office. Same bank. The only difference is the number in their account.",
+    "narration": "What's the magic number you need to retire? A million? Five? The honest answer is: it depends entirely on one thing almost nobody mentions — not how much you have, but how young you are when you stop. Retiring at forty can require nearly double what retiring at sixty-five does. Let's find your real number.",
     "pose": "explain",
     "props": [
       {
-        "name": "bank",
-        "label": "the same bank"
+        "name": "hammock",
+        "label": "the magic number?"
       },
       {
-        "name": "warning",
-        "label": "a predator to one"
+        "name": "calendar",
+        "label": "depends on your age"
       },
       {
-        "name": "goldcard",
-        "label": "a butler to the other"
+        "name": "nestegg",
+        "label": "40 needs ~2× of 65"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Start with the fee that defines the bottom. Overdraw your account by five dollars, and a typical bank charges you around thirty-five. That's effectively a seven-hundred-percent penalty — charged almost exclusively to the people who can least afford it.",
-    "text": "$35",
-    "sub": "to overdraw by $5 — if you're poor",
-    "icon": "warning"
+    "narration": "Here's the one rule that cuts through all the confusion. To retire, you need roughly twenty-five times your annual spending saved up. Spend fifty thousand dollars a year? Your target is about one and a quarter million.",
+    "text": "25×",
+    "sub": "your annual spending = your nest egg",
+    "icon": "nestegg"
+  },
+  {
+    "id": "s41",
+    "type": "callout",
+    "narration": "A million-dollar nest egg, under the four-percent rule, hands you about forty thousand dollars in your very first year of retirement — then a raise for inflation every year after. That's the engine that turns a lump sum into a salary which never clocks out.",
+    "text": "$40,000",
+    "sub": "a year, from $1M (the 4% rule)",
+    "icon": "nestegg"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "And this isn't a glitch. The system is designed this way. Banking has levels, like a video game — and the number in your account quietly decides which level you're playing. At the bottom, you pay the bank. At the very top, the bank pays you.",
+    "narration": "Notice the word that changes everything: spending, not income. Your retirement number has almost nothing to do with your salary and everything to do with your lifestyle. Two people earning the same can need wildly different piles — because one lives on half of what the other does.",
     "pose": "explain",
     "props": [
       {
-        "name": "ladder",
-        "label": "banking has levels"
+        "name": "grocerybag",
+        "label": "it's about spending"
       },
       {
-        "name": "coins",
-        "label": "bottom: you pay"
-      },
-      {
-        "name": "crown",
-        "label": "top: they pay you"
-      }
-    ]
-  },
-  {
-    "id": "s4",
-    "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "charge the millionaire a $35 fee",
-    "memeBottom": "charge the guy with $12 in his account a $35 fee",
-    "narration": "Today we're climbing all six levels of how banks treat you — from the people they bleed with fees, to the families they serve like royalty. And once you see the ladder, you'll know exactly how to climb it."
-  },
-  {
-    "id": "s5",
-    "type": "title",
-    "narration": "First, what is a bank even doing with your money?",
-    "heading": "The Banking Ladder",
-    "kicker": "six levels of service"
-  },
-  {
-    "id": "s6",
-    "type": "screenshot",
-    "narration": "At its core, a bank is an institution that accepts deposits from the public and creates a demand deposit, while making loans. In plain English: it takes your money, promises to give it back, and lends it out to earn far more in the meantime.",
-    "sourceId": "wiki-bank"
-  },
-  {
-    "id": "s7",
-    "type": "stage",
-    "narration": "And it quietly sorts every customer onto a ladder. At the bottom, the unbanked, who have no account at all. Then basic checking, the mass market, the 'preferred' tier, private banking, and at the very top, the family office. Six rungs — and the service could not be more different.",
-    "motif": "bankladder",
-    "caption": "six levels, wildly different treatment"
-  },
-  {
-    "id": "s8",
-    "type": "stage",
-    "narration": "Here's the single rule that governs the whole ladder. Fees flow up from the bottom, and perks flow down from the top. The poorest customers generate fee after fee — which quietly helps fund the red-carpet treatment handed to the richest. The bottom subsidizes the top.",
-    "motif": "feesupperksdown",
-    "caption": "the poor quietly subsidize the rich"
-  },
-  {
-    "id": "s49",
-    "type": "callout",
-    "narration": "And the scale of the bottom rung is staggering. Americans pay well over ten billion dollars in overdraft fees every single year — and the vast majority of it is squeezed from a small group of the most financially stressed accounts, hit again and again.",
-    "text": "$10 billion+",
-    "sub": "overdraft fees Americans pay every year",
-    "icon": "receipt"
-  },
-  {
-    "id": "s9",
-    "type": "title",
-    "narration": "Let's start at the very bottom — outside the system entirely.",
-    "heading": "Level 0 — Unbanked",
-    "kicker": "no account at all"
-  },
-  {
-    "id": "s10",
-    "type": "screenshot",
-    "narration": "Millions of people are unbanked — adults who do not have their own bank accounts. Shut out, or priced out, of the system most of us take completely for granted.",
-    "sourceId": "wiki-unbanked"
-  },
-  {
-    "id": "s11",
-    "type": "character",
-    "narration": "Without an account, every basic task costs money. You pay a check-casher a cut just to get your own wages. You buy prepaid cards with fees. You turn to payday lenders at triple-digit rates. It is, bitterly, the most expensive way in the world to be poor.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "fees to cash a check"
-      },
-      {
-        "name": "creditcard",
-        "label": "prepaid card fees"
-      },
-      {
-        "name": "percent",
-        "label": "payday loan rates"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "And skipping a bank often isn't even a choice. Past overdrafts can get you blacklisted from opening a new account. Minimum balances you simply can't meet. A deep distrust after being burned once too often. The system quietly pushes the most vulnerable out — then charges them more to live outside it.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "blacklisted by fees"
-      },
-      {
-        "name": "bank",
-        "label": "can't meet minimums"
-      },
-      {
-        "name": "globe",
-        "label": "pushed out, charged more"
-      }
-    ]
-  },
-  {
-    "id": "s12",
-    "type": "title",
-    "narration": "Open a basic account, and you climb one rung — into the fee machine.",
-    "heading": "Level 1 — Scraping By",
-    "kicker": "the fee machine"
-  },
-  {
-    "id": "s13",
-    "type": "screenshot",
-    "narration": "This level is ruled by the overdraft, which occurs when something is withdrawn in excess of what is in a current account. Spend money you don't quite have, and the penalties begin.",
-    "sourceId": "wiki-overdraft"
-  },
-  {
-    "id": "s14",
-    "type": "stage",
-    "narration": "And the overdraft is brutal maths. Buy a three-dollar coffee with two dollars in your account, and the bank hands you a thirty-five-dollar fee. That's a penalty of over a thousand percent — triggered not by recklessness, but simply by being broke at the wrong moment.",
-    "motif": "overdrafttrap",
-    "caption": "a 1,000%+ penalty for being broke"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "Really, an overdraft is a tiny, brutal loan you never agreed to take. Borrow five dollars for a few days, pay thirty-five back — an interest rate that would make a loan shark blush. And it lands hardest, over and over, on people already living paycheck to paycheck.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "creditcard",
-        "label": "a loan you didn't ask for"
-      },
-      {
-        "name": "percent",
-        "label": "loan-shark rates"
-      },
-      {
-        "name": "warning",
-        "label": "hits the poorest"
-      }
-    ]
-  },
-  {
-    "id": "s15",
-    "type": "screenshot",
-    "narration": "It's all built on the humble fee — the price one pays as remuneration for rights or services. Except here, the 'service' is often just... having an account at all.",
-    "sourceId": "wiki-fee"
-  },
-  {
-    "id": "s16",
-    "type": "character",
-    "narration": "The fees pile up from every direction. Monthly maintenance fees. Minimum-balance fees for dropping below a threshold. Out-of-network ATM fees. Each one is small — but together, they act as a quiet, relentless tax on not having enough money.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "maintenance fees"
-      },
-      {
-        "name": "warning",
-        "label": "minimum-balance fees"
-      },
-      {
-        "name": "coins",
-        "label": "a tax on being poor"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "And notice the cruel catch. That monthly maintenance fee is usually waived — if you keep, say, fifteen hundred dollars in the account at all times. So the fee punishes precisely the people who can't afford to leave money sitting idle. You end up paying, quite literally, for being poor.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "fee waived if you keep $1,500"
-      },
-      {
-        "name": "piggybank",
-        "label": "can't spare the cash?"
-      },
-      {
-        "name": "receipt",
-        "label": "then you pay"
-      }
-    ]
-  },
-  {
-    "id": "s17",
-    "type": "character",
-    "narration": "There's even a dark art to it. Some banks have reordered the day's transactions largest-first, specifically so your account hits zero sooner — triggering the maximum number of overdraft fees in a single day. The fine print was quietly working against you.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "shredder",
-        "label": "transactions reordered"
-      },
-      {
-        "name": "warning",
-        "label": "to maximize fees"
-      },
-      {
-        "name": "magnifier",
-        "label": "buried in fine print"
-      }
-    ]
-  },
-  {
-    "id": "s61",
-    "type": "character",
-    "narration": "The outrage eventually got loud enough that regulators and lawsuits forced many banks to rein in the worst of these tricks — and some dropped overdraft fees entirely. Which proves the bottom rung isn't a law of nature. It's a choice banks make, and increasingly, one you can refuse.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "regulators pushed back"
-      },
-      {
-        "name": "bank",
-        "label": "some dropped fees"
-      },
-      {
-        "name": "shield",
-        "label": "you can refuse it"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "title",
-    "narration": "Keep a steady balance, and the bank mostly stops noticing you at all.",
-    "heading": "Level 2 — Mass Market",
-    "kicker": "politely ignored"
-  },
-  {
-    "id": "s19",
-    "type": "character",
-    "narration": "This is where most people live: free checking, direct deposit, a debit card. No fees, but no attention either. You're not the customer here so much as the raw material — the bank quietly lends your deposits out and keeps the profit.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "creditcard",
-        "label": "free checking"
-      },
-      {
-        "name": "bank",
-        "label": "no attention"
-      },
-      {
-        "name": "coins",
-        "label": "you're the raw material"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "narration": "Because here's the quiet trick at this level: your deposit is a loan to the bank — one you make at nearly zero percent interest. They pay you a fraction of a percent, lend it out at six or seven, and pocket the gap. You're financing them, and barely noticing.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "you lend them cash"
-      },
-      {
-        "name": "percent",
-        "label": "at ~0%"
-      },
-      {
-        "name": "moneybag",
-        "label": "they keep the gap"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "Multiply that tiny gap by millions of accounts and trillions of dollars, and the mass market becomes the bank's golden goose. Your idle balance, earning you almost nothing, is lent and re-lent to earn the bank a fortune. Quiet, invisible, and absolutely enormous.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "millions of balances"
-      },
-      {
-        "name": "bank",
-        "label": "lent & re-lent"
-      },
-      {
-        "name": "moneybag",
-        "label": "a quiet fortune"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "title",
-    "narration": "Cross a hidden threshold, and suddenly the bank remembers your name.",
-    "heading": "Level 3 — 'Preferred'",
-    "kicker": "the perks begin"
-  },
-  {
-    "id": "s22",
-    "type": "character",
-    "narration": "Once you've got roughly a hundred to two hundred fifty thousand dollars across your accounts, the velvet rope lifts a little. Welcome to 'preferred' or 'priority' banking — where fees quietly vanish, and the perks begin.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "velvetrope",
-        "label": "~$100K+"
-      },
-      {
-        "name": "goldcard",
-        "label": "'preferred' status"
-      },
-      {
-        "name": "handshake",
-        "label": "fees start vanishing"
-      }
-    ]
-  },
-  {
-    "id": "s23",
-    "type": "character",
-    "narration": "The perks are small but telling. A dedicated phone line that skips the queue. Waived fees. A slightly better interest rate. A shinier card. None of it is life-changing — but notice the direction has flipped. The bank is now trying to please you.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "skip the queue"
-      },
-      {
-        "name": "percent",
-        "label": "a better rate"
-      },
-      {
-        "name": "goldcard",
-        "label": "the bank courts you"
-      }
-    ]
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "And those preferred perks aren't pure generosity — they're a hook. Hand you a shiny status and a dedicated banker, and you'll consolidate everything with them and never shop around again. The perks are quietly engineered to make you stickier, and far more profitable to keep.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "goldcard",
-        "label": "shiny status"
-      },
-      {
-        "name": "velvetrope",
-        "label": "a retention hook"
-      },
-      {
-        "name": "bank",
-        "label": "you never leave"
-      }
-    ]
-  },
-  {
-    "id": "s24",
-    "type": "title",
-    "narration": "Add a zero, and you enter a different world entirely.",
-    "heading": "Level 4 — Private Banking",
-    "kicker": "a banker of your own"
-  },
-  {
-    "id": "s25",
-    "type": "screenshot",
-    "narration": "Around a million dollars unlocks private banking — services provided primarily to high-net-worth individuals, presented as an exclusive subset of wealth management. This is where banking stops being a product and becomes a relationship.",
-    "sourceId": "wiki-private"
-  },
-  {
-    "id": "s26",
-    "type": "stage",
-    "narration": "Now you get a private banker — a single human who knows your name and answers your calls. Fees evaporate. You get the best rates, cheap credit against your assets, and invitations to deals ordinary customers never even hear about. The bank officially works for you.",
-    "motif": "privatebanker",
-    "caption": "the bank now works for you"
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "narration": "And the private-banking perks are startlingly concrete. Jumbo mortgages at the very lowest rates. A line of credit against your stock portfolio, available in a day. Early access to investments ordinary customers can't even see. Cheap money, flowing straight to the people who need it least.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "cheap jumbo mortgage"
-      },
-      {
-        "name": "vault",
-        "label": "credit vs. portfolio"
-      },
-      {
-        "name": "chartup",
-        "label": "early deal access"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "character",
-    "narration": "And this is where it compounds. The rich borrow against their investments at rock-bottom rates — the exact opposite of the payday borrower. Cheap credit for those who need it least, brutal credit for those who need it most. The ladder rewards you more at every rung.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "cheap credit"
-      },
-      {
-        "name": "vault",
-        "label": "borrow vs assets"
+        "name": "paystub",
+        "label": "NOT your income"
       },
       {
         "name": "scale",
-        "label": "the reverse of payday"
-      }
-    ]
-  },
-  {
-    "id": "s28",
-    "type": "title",
-    "narration": "Higher still, you stop hiring a banker — and start hiring a team.",
-    "heading": "Level 5 — Wealth Management",
-    "kicker": "a team on retainer"
-  },
-  {
-    "id": "s29",
-    "type": "screenshot",
-    "narration": "In the tens of millions, you reach full wealth management — an industry built to help the very rich preserve and increase their wealth, across tax planning, estate planning, and more. It's less a bank account than a command center.",
-    "sourceId": "wiki-wealthmgmt"
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "Here, a team of specialists manages your taxes, your investments, your estate, and your trusts — all coordinated, all optimized. The goal shifts from growing the money to protecting it, shielding it from taxes, and quietly passing it on intact.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "a team of specialists"
-      },
-      {
-        "name": "taxform",
-        "label": "shield it from tax"
-      },
-      {
-        "name": "shield",
-        "label": "protect & pass it on"
-      }
-    ]
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "narration": "Here the fees flip one last time — now you pay the bank a management fee, often around one percent a year. But at this level, that fee buys tax savings and estate planning worth far more than it costs. The rich, remarkably, pay fees that actually make them richer.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "~1% fee"
-      },
-      {
-        "name": "taxform",
-        "label": "buys tax savings"
-      },
-      {
-        "name": "moneytree",
-        "label": "worth far more"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "title",
-    "narration": "And at the very top sits the final level — your own private institution.",
-    "heading": "Level 6 — Family Office",
-    "kicker": "your own institution"
-  },
-  {
-    "id": "s32",
-    "type": "screenshot",
-    "narration": "This is the family office — a privately held company that handles investment and wealth management for a single wealthy family, built to grow and transfer wealth across generations. It is a bank that exists to serve exactly one family: yours.",
-    "sourceId": "wiki-family"
-  },
-  {
-    "id": "s33",
-    "type": "stage",
-    "narration": "Picture an entire private company — investment pros, tax lawyers, estate planners, even philanthropy advisors — all employed full-time to manage one family's fortune. At this altitude, you don't visit a bank. You own one, pointed entirely at your own dynasty.",
-    "motif": "familyoffice",
-    "caption": "a private staff for one family's fortune"
-  },
-  {
-    "id": "s34",
-    "type": "character",
-    "narration": "And the perks here are so large they become a second income. Preferential access to investments. Loans at rates ordinary people will never see. The very richest are, quite literally, paid handsomely by the financial system — for the crime of already being rich.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "moneytree",
-        "label": "perks = a 2nd income"
-      },
-      {
-        "name": "crown",
-        "label": "paid to be rich"
-      },
-      {
-        "name": "vault",
-        "label": "access others never get"
-      }
-    ]
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "There are even tiers within the top. A single-family office serves just one clan and can cost millions a year to run — so it only makes sense north of a hundred million dollars. Below that, families share a multi-family office, splitting the cost of the royal treatment between them.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "mansion",
-        "label": "single-family office"
-      },
-      {
-        "name": "crowd",
-        "label": "multi-family office"
-      },
-      {
-        "name": "crown",
-        "label": "$100M+ to go solo"
-      }
-    ]
-  },
-  {
-    "id": "s35",
-    "type": "title",
-    "narration": "Step back, and the cruel shape of the whole ladder appears.",
-    "heading": "The Inversion",
-    "kicker": "the less you have, the more you pay"
-  },
-  {
-    "id": "s36",
-    "type": "stage",
-    "narration": "Here's the whole system in one line. The less money you have, the more banking costs you — in fees, in penalties, in predatory rates. The more money you have, the more the bank pays you — in perks, in interest, in cheap credit. It is perfectly, precisely upside down.",
-    "motif": "poorpaymore",
-    "caption": "the less you have, the more you pay"
-  },
-  {
-    "id": "s37",
-    "type": "screenshot",
-    "narration": "The flip happens around that classic line where someone maintains liquid assets at or above a certain threshold — roughly a million dollars. Cross it, and you transform in the bank's eyes from a source of fees into a prize to be courted.",
-    "sourceId": "wiki-hnwi"
-  },
-  {
-    "id": "s38",
-    "type": "character",
-    "narration": "Zoom out, and the bank is really just a mirror of inequality — and a pump that makes it worse. It gently drains fees from the bottom and showers benefits on the top. Money, through the banking system, relentlessly gravitates toward more money.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "a mirror of inequality"
-      },
-      {
-        "name": "faucet",
-        "label": "drains the bottom"
-      },
-      {
-        "name": "moneytree",
-        "label": "showers the top"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "callout",
-    "narration": "Measured as a share of income, the gap is obscene. The poorest households can lose several percent of everything they earn just to bank fees, overdrafts, and check-cashing. For the wealthy, that number is effectively zero — and often, thanks to interest and perks, it's negative.",
-    "text": "~5%",
-    "sub": "of a poor household's income lost to fees",
-    "icon": "receipt"
-  },
-  {
-    "id": "s39",
-    "type": "compare",
-    "narration": "So the same institution runs two completely different businesses. For the poor customer, it's a toll booth, collecting fees at every step. For the rich one, it's a concierge, removing every obstacle. One bank, two opposite faces.",
-    "left": {
-      "title": "The poor customer",
-      "value": "a toll booth",
-      "icon": "receipt"
-    },
-    "right": {
-      "title": "The rich customer",
-      "value": "a concierge",
-      "icon": "goldcard"
-    }
-  },
-  {
-    "id": "s40",
-    "type": "title",
-    "narration": "So how do you actually climb this ladder — and get treated better starting now?",
-    "heading": "How to Climb",
-    "kicker": "make the bank work for you"
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "Step one: ruthlessly kill fees. Never, ever overdraft — turn the feature off entirely. Switch to a bank or credit union with free checking and no minimums. The fees you avoid at the bottom are the first dollars that start you climbing.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "scissors",
-        "label": "turn off overdraft"
-      },
-      {
-        "name": "bank",
-        "label": "free checking / credit union"
-      },
-      {
-        "name": "coins",
-        "label": "kept fees = first dollars"
+        "label": "lifestyle sets it"
       }
     ]
   },
   {
     "id": "s42",
     "type": "character",
-    "narration": "Step two: use the rich people's tools that are now free to everyone. High-yield savings accounts pay real interest. No-fee brokerages let you buy index funds for nothing. A lot of the old private-client advantages are now one app download away.",
-    "pose": "present",
+    "narration": "Picture two sixty-five-year-olds. One spends forty thousand a year and needs about a million. The other spends a hundred and twenty thousand and needs three million. Same age, same markets — three times the pile, purely because of lifestyle.",
+    "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "high-yield savings"
+        "name": "grocerybag",
+        "label": "$40K → ~$1M"
       },
       {
-        "name": "phone",
-        "label": "no-fee brokerage app"
+        "name": "mansion",
+        "label": "$120K → ~$3M"
       },
       {
-        "name": "pie",
-        "label": "cheap index funds"
+        "name": "scale",
+        "label": "lifestyle decides"
       }
     ]
   },
   {
-    "id": "s59",
-    "type": "character",
-    "narration": "And here's the genuinely good news. Online banks and credit unions have blown the old model wide open. No branches means no fees and real interest. A credit union is literally owned by its own customers. You can opt out of the predatory bottom rungs entirely — starting today.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "phone",
-        "label": "online banks"
-      },
-      {
-        "name": "handshake",
-        "label": "customer-owned credit unions"
-      },
-      {
-        "name": "coins",
-        "label": "no fees, real interest"
-      }
-    ]
+    "id": "s4",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "save a huge number to retire",
+    "memeBottom": "shrink your spending, and the huge number shrinks with it",
+    "narration": "And that's the quiet trick most people miss. Because your number is a multiple of your spending, cutting what you need to live on doesn't just save money — it slashes the entire mountain you have to climb. Spend less, and the finish line sprints toward you."
+  },
+  {
+    "id": "s5",
+    "type": "title",
+    "narration": "So where does this twenty-five times rule actually come from?",
+    "heading": "The 4% Rule",
+    "kicker": "where 25× comes from"
+  },
+  {
+    "id": "s6",
+    "type": "screenshot",
+    "narration": "It comes from a famous piece of research nicknamed the Trinity study, which set out to find safe withdrawal rates from retirement portfolios that contain stocks. The question it asked: how much can you pull out each year without ever running dry?",
+    "sourceId": "wiki-trinity"
+  },
+  {
+    "id": "s7",
+    "type": "stage",
+    "narration": "Its famous answer was about four percent. If you withdraw roughly four percent of your nest egg in year one, then adjust for inflation after that, your money has historically survived thirty years or more. And four percent a year is just the flip side of having twenty-five times your spending.",
+    "motif": "safewithdrawal",
+    "caption": "the 4% rule"
   },
   {
     "id": "s43",
     "type": "character",
-    "narration": "Step three: consolidate and climb deliberately. Those perk tiers trigger on your total balance at one institution. Pooling your accounts can quietly tip you over a threshold — unlocking waived fees and better rates you were already entitled to.",
-    "pose": "present",
+    "narration": "One important catch: the original study assumed a thirty-year retirement. Stretch that to forty or fifty years, and four percent starts to look a little too brave. The longer your horizon, the more gently you have to sip from the pot.",
+    "pose": "explain",
     "props": [
       {
-        "name": "vault",
-        "label": "pool your accounts"
+        "name": "hourglass",
+        "label": "built for ~30 years"
       },
       {
-        "name": "velvetrope",
-        "label": "cross the threshold"
+        "name": "percent",
+        "label": "longer = sip less"
       },
       {
-        "name": "goldcard",
-        "label": "unlock the perks"
+        "name": "warning",
+        "label": "4% isn't universal"
       }
     ]
   },
   {
+    "id": "s8",
+    "type": "stage",
+    "narration": "So the whole calculation is beautifully simple. Take your annual spending, multiply by twenty-five, and that's your target. Fifty thousand a year becomes one and a quarter million. Eighty thousand a year becomes two million. Your lifestyle, times twenty-five.",
+    "motif": "twentyfivex",
+    "caption": "spending, not income, sets the number"
+  },
+  {
     "id": "s44",
     "type": "character",
-    "narration": "And step four, the mindset: the bank is a tool, never a friend. It is not loyal to you, and the warm branding is marketing. Treat it coldly, shop it like any vendor, and make it compete for the privilege of holding your money.",
+    "narration": "And your withdrawals aren't frozen in place. Each year you give yourself a raise to match inflation, so your spending power holds steady as prices climb. The rule already bakes in that quiet erosion — which is exactly why it demands such a big starting pile.",
     "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "not your friend"
+        "name": "chartup",
+        "label": "withdrawals rise"
       },
       {
-        "name": "scale",
-        "label": "shop it like a vendor"
+        "name": "grocerybag",
+        "label": "keep up with prices"
       },
       {
-        "name": "bank",
-        "label": "make it compete"
+        "name": "nestegg",
+        "label": "why the pile is big"
+      }
+    ]
+  },
+  {
+    "id": "s9",
+    "type": "screenshot",
+    "narration": "Hit that number, and you've reached financial independence — enough resources to cover your cost-of-living expenses without depending on active employment. At that point, work becomes a choice, not a sentence.",
+    "sourceId": "wiki-fi"
+  },
+  {
+    "id": "s10",
+    "type": "title",
+    "narration": "But here's the twist the simple rule hides: the number changes with your age. Let's start at the classic finish line.",
+    "heading": "Retiring at 65",
+    "kicker": "easy mode"
+  },
+  {
+    "id": "s11",
+    "type": "character",
+    "narration": "Sixty-five is retirement on easy mode. You only need to fund maybe twenty-five to thirty years, the classic four-percent math fits perfectly, and crucially, you get a powerful helper. So for fifty thousand a year of spending, somewhere around one and a quarter million does the job.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hammock",
+        "label": "fund ~25-30 years"
+      },
+      {
+        "name": "nestegg",
+        "label": "~$1.25M for $50K/yr"
+      },
+      {
+        "name": "retiree",
+        "label": "the 4% rule fits"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "Because that's the real lesson of the ladder. Every single rung you climb, the relationship flips a little more in your favor. You pay the bank a little less — and it starts paying you a little more. The goal isn't to beat the bank. It's to make it work for you.",
+    "narration": "A quiet trick at this age: Social Security pays you more the longer you wait. Claim at sixty-two and the checks are permanently smaller. Hold out to seventy, and they jump by well over seventy percent. Waiting can be one of the best investments a retiree ever makes.",
     "pose": "explain",
     "props": [
       {
-        "name": "ladder",
-        "label": "every rung flips it"
+        "name": "capitol",
+        "label": "wait = bigger checks"
       },
       {
-        "name": "moneytree",
-        "label": "they pay you more"
+        "name": "calendar",
+        "label": "62 vs 70"
       },
       {
-        "name": "crown",
-        "label": "make it work for you"
+        "name": "chartup",
+        "label": "+70% for patience"
       }
     ]
   },
   {
-    "id": "s60",
-    "type": "character",
-    "narration": "So the ladder is real — but it is not a prison. Every rung you climb, you shed a little of the predatory bottom and gain a little of the privileged top. The whole system quietly rewards momentum, which means the single best move you can make is simply to start climbing.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "ladder",
-        "label": "not a prison"
-      },
-      {
-        "name": "chartup",
-        "label": "climb one rung"
-      },
-      {
-        "name": "crown",
-        "label": "shed the bottom"
-      }
-    ]
+    "id": "s12",
+    "type": "screenshot",
+    "narration": "That helper is Social Security — the federal program administered by the Social Security Administration that sends retirees a monthly check for life. For an average earner, it can replace around forty percent of their old income, dramatically shrinking the pile they need to save themselves.",
+    "sourceId": "wiki-ss"
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "So the next time your bank hits you with a fee, or rolls out a red carpet, you'll know exactly what's happening. It's not being cruel or kind. It's just reading the number in your account — and treating you precisely according to your level.",
-    "pose": "present",
+    "narration": "But don't lean on it entirely. Social Security was never designed to be your whole retirement — only a floor under it. And with its trust fund under long-term strain, the wise move is to treat any check as a welcome bonus, not the foundation.",
+    "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "bank",
-        "label": "it's reading your balance"
+        "name": "capitol",
+        "label": "just a floor"
       },
       {
-        "name": "ladder",
-        "label": "treating you by level"
+        "name": "warning",
+        "label": "trust fund strained"
       },
       {
-        "name": "calculator",
-        "label": "now you see it"
+        "name": "shield",
+        "label": "a bonus, not the base"
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "type": "character",
+    "narration": "This is why sixty-five is the gentle option. Social Security covers a big chunk of your spending, so your own savings only have to fill the gap. A paid-off house and a modest nest egg, plus that monthly check, and a comfortable retirement is genuinely within reach.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "SS fills ~40%"
+      },
+      {
+        "name": "house",
+        "label": "paid-off home"
+      },
+      {
+        "name": "nestegg",
+        "label": "savings fill the gap"
       }
     ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "If this changed how you see your bank, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "The single biggest lever at any age is your housing. A paid-off home slashes your annual spending — and because your number is twenty-five times that spending, erasing a mortgage can quietly wipe hundreds of thousands of dollars off the pile you need.",
+    "pose": "explain",
     "props": [
       {
-        "name": "goldcard",
-        "label": "which number next?"
+        "name": "house",
+        "label": "paid-off home"
+      },
+      {
+        "name": "scissors",
+        "label": "slashes spending"
+      },
+      {
+        "name": "nestegg",
+        "label": "−$ hundreds of K"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "title",
+    "narration": "Now pull that date earlier, and the math gets harder in a hurry.",
+    "heading": "Retiring at 55",
+    "kicker": "the bridge begins"
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "narration": "Retire at fifty-five, and two problems appear at once. You now need to fund thirty-five, maybe forty years. And you have a long wait before any Social Security arrives. So the comfortable target climbs — closer to twenty-seven times your spending, or roughly one and a half million for that same fifty thousand a year.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "fund 35-40 years"
+      },
+      {
+        "name": "nestegg",
+        "label": "~$1.5M now"
+      },
+      {
+        "name": "calendar",
+        "label": "no SS for years"
       }
     ]
   },
   {
     "id": "s48",
+    "type": "character",
+    "narration": "There's a handy loophole here called the Rule of 55. Leave your job in the year you turn fifty-five or later, and you can tap that employer's 401(k) penalty-free — years before the usual fifty-nine and a half. A small gift for the near-retiree.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "vault",
+        "label": "the Rule of 55"
+      },
+      {
+        "name": "calendar",
+        "label": "penalty-free early"
+      },
+      {
+        "name": "handshake",
+        "label": "if you leave the job"
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "type": "stage",
+    "narration": "This is the first taste of the bridge problem. Social Security won't start until at least sixty-two, and Medicare health coverage not until sixty-five. So every single year between retiring and those ages is one hundred percent on you — a gap you must fund entirely from your own savings.",
+    "motif": "bridgeyears",
+    "caption": "retire early = build a bridge"
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "Early retirees also use a clever move called a Roth conversion ladder. Each year you quietly shift money from a traditional account into a Roth, and after a five-year wait, you can withdraw it penalty-free. It's how the FIRE crowd unlocks their accounts decades early.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "vault",
+        "label": "convert each year"
+      },
+      {
+        "name": "ladder",
+        "label": "the 5-year ladder"
+      },
+      {
+        "name": "taxform",
+        "label": "penalty-free access"
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "type": "character",
+    "narration": "And don't forget that bridge includes health insurance. Before Medicare kicks in at sixty-five, you're buying your own coverage — which can cost a retiring couple many thousands of dollars a year. It's one of the single biggest, and most forgotten, costs of retiring early.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "medkit",
+        "label": "buy your own coverage"
+      },
+      {
+        "name": "hospital",
+        "label": "no Medicare till 65"
+      },
+      {
+        "name": "warning",
+        "label": "a huge hidden cost"
+      }
+    ]
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "There's relief on healthcare, too. Because early retirees often show low taxable income, many qualify for sizable subsidies on the insurance marketplace. Carefully managing the income you report can turn a terrifying medical bill into a very manageable one.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "medkit",
+        "label": "marketplace coverage"
+      },
+      {
+        "name": "percent",
+        "label": "big subsidies"
+      },
+      {
+        "name": "calculator",
+        "label": "manage reported income"
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "type": "title",
+    "narration": "Push it to fifty, and you're firmly in serious-planning territory.",
+    "heading": "Retiring at 50",
+    "kicker": "serious money"
+  },
+  {
+    "id": "s19",
+    "type": "character",
+    "narration": "At fifty, you're potentially funding forty-five years of life with no paycheck. The safe withdrawal rate has to drop a little for such a long horizon — meaning you need a bigger multiple, closer to twenty-eight times. For fifty thousand a year, you're now looking at roughly one point seven million dollars.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "~45 years to fund"
+      },
+      {
+        "name": "percent",
+        "label": "lower safe rate"
+      },
+      {
+        "name": "nestegg",
+        "label": "~$1.7M"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "And remember, the taxman follows you into retirement. Withdrawals from a traditional 401(k) are taxed as ordinary income. So your real target has to cover those taxes too — the headline number always needs a little padding for what you'll still owe.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "withdrawals taxed"
+      },
+      {
+        "name": "warning",
+        "label": "pad the number"
+      },
+      {
+        "name": "nestegg",
+        "label": "target after tax"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "narration": "There's also a tax wrinkle. Most retirement accounts, like a 401(k), penalize withdrawals before age fifty-nine and a half. So an early retiree needs a chunk of money in regular, accessible accounts too — savings they can actually touch during those bridge years without a penalty.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "vault",
+        "label": "401(k) locked till 59½"
+      },
+      {
+        "name": "piggybank",
+        "label": "need accessible savings"
+      },
+      {
+        "name": "taxform",
+        "label": "penalty before then"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "And now the extreme end of the spectrum — retiring with half your life still ahead of you.",
+    "heading": "Retiring at 40",
+    "kicker": "hard mode"
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "narration": "This is the dream of the FIRE movement — Financial Independence, Retire Early — built on accumulating sufficient assets to cover living expenses, through ferociously high savings rates, decades ahead of schedule.",
+    "sourceId": "wiki-fire"
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "FIRE even comes in flavors. Lean FIRE means retiring on a bare-bones budget. Fat FIRE means doing it in luxury, which takes a far bigger pile. And Barista FIRE means semi-retiring, covering the gap with an easy, enjoyable part-time job.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "grocerybag",
+        "label": "Lean FIRE"
+      },
+      {
+        "name": "yacht",
+        "label": "Fat FIRE"
+      },
+      {
+        "name": "briefcase",
+        "label": "Barista FIRE"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "narration": "But retiring at forty is genuinely hard mode. You might need to fund fifty years or more. The safe withdrawal rate drops toward three and a half, even three percent. That pushes your multiple past thirty times — so fifty thousand a year of spending now demands closer to two million dollars.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "50+ years to fund"
+      },
+      {
+        "name": "percent",
+        "label": "~3.5% safe rate"
+      },
+      {
+        "name": "nestegg",
+        "label": "~$2M for $50K/yr"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "Be honest about the risk, though. A fifty-year retirement has essentially never been stress-tested by history. That's why the most careful early retirees aim for a three-percent rate and stay flexible — ready to earn a bit, or spend a bit less, if markets turn ugly.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "50 yrs is untested"
+      },
+      {
+        "name": "percent",
+        "label": "aim nearer 3%"
+      },
+      {
+        "name": "shield",
+        "label": "stay flexible"
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "type": "stage",
+    "narration": "Here's that pattern in one picture. The younger you retire, the bigger the multiple you need — from around twenty-five times at sixty-five, up past thirty times at forty. More years to fund, a lower safe rate, and no Social Security for decades all stack up against you.",
+    "motif": "earlycostmore",
+    "caption": "retire younger, need a bigger pile"
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "Here's the most underrated shortcut of all. Even a small, steady income in early retirement dramatically shrinks the pile you need. Earning just ten thousand dollars a year from a hobby can knock a quarter of a million dollars clean off your target.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "a little income"
+      },
+      {
+        "name": "coins",
+        "label": "$10K a year"
+      },
+      {
+        "name": "nestegg",
+        "label": "−$250K needed"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "title",
+    "narration": "Two hidden dangers lurk behind every one of these numbers. Miss them, and even a big nest egg can fail.",
+    "heading": "The Two Killers",
+    "kicker": "what breaks retirements"
+  },
+  {
+    "id": "s26",
+    "type": "screenshot",
+    "narration": "The first is living longer than you planned. Life expectancy is the average remaining years of life at a given age — and 'average' is the trap. Plan only to the average, and there's a fifty-percent chance you outlive your money entirely.",
+    "sourceId": "wiki-life"
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "narration": "And if you're part of a couple, the math gets harsher. The odds that at least one of you reaches ninety are surprisingly high. Your money has to last not just your life, but the longer of two lives — often well into the nineties.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "couple",
+        "label": "two lives"
+      },
+      {
+        "name": "hourglass",
+        "label": "one likely hits 90+"
+      },
+      {
+        "name": "nestegg",
+        "label": "fund the longer one"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "stage",
+    "narration": "This is longevity risk. If you retire at sixty-five, you shouldn't plan to seventy-eight, the rough average — you should plan to ninety-five, because you just might get there. The real retirement nightmare isn't dying with money left over. It's running out at eighty-five, with decades of life still to pay for.",
+    "motif": "longevityrisk",
+    "caption": "your money has to outlast you"
+  },
+  {
+    "id": "s56",
+    "type": "character",
+    "narration": "One way to defuse longevity risk is an annuity. You hand an insurer a lump sum, and they pay you a guaranteed income for life, no matter how long you live. It isn't glamorous — but it's a floor you literally cannot outlive.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "shield",
+        "label": "a guaranteed floor"
+      },
+      {
+        "name": "capitol",
+        "label": "income for life"
+      },
+      {
+        "name": "hammock",
+        "label": "can't outlive it"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "character",
+    "narration": "The second killer is sneakier, and it's all about timing. It's called sequence-of-returns risk — and it means a market crash in the first few years of retirement can be catastrophic, even if the long-term average looks fine.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "a crash early on"
+      },
+      {
+        "name": "warning",
+        "label": "timing, not average"
+      },
+      {
+        "name": "hourglass",
+        "label": "sequence risk"
+      }
+    ]
+  },
+  {
+    "id": "s29",
+    "type": "stage",
+    "narration": "Here's why. If the market crashes right after you retire, you're forced to sell investments while they're down just to eat — permanently shrinking the pile that was supposed to recover. The exact same crash, ten years later, barely leaves a scratch. Same average return, opposite fate.",
+    "motif": "sequencerisk",
+    "caption": "timing of a crash decides everything"
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "narration": "The classic defense against a bad early crash is the 'bond tent.' You hold extra safe bonds right around your retirement date, so a plunge can't force you to sell stocks at the bottom — then you let stocks grow back once the danger has passed.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "shield",
+        "label": "extra bonds early"
+      },
+      {
+        "name": "chartdown",
+        "label": "survive the crash"
+      },
+      {
+        "name": "nestegg",
+        "label": "then grow back"
+      }
+    ]
+  },
+  {
+    "id": "s30",
+    "type": "character",
+    "narration": "The defense against both is a cushion. Keep a year or two of spending in cash so you never have to sell in a crash. And plan with a slightly lower withdrawal rate than you think you need. A little conservatism is what turns a fragile retirement into a bulletproof one.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "shield",
+        "label": "1-2 yrs cash cushion"
+      },
+      {
+        "name": "percent",
+        "label": "withdraw a bit less"
+      },
+      {
+        "name": "nestegg",
+        "label": "fragile → bulletproof"
+      }
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "Smart retirees also use guardrails instead of a rigid four percent. In great market years, you give yourself a raise. In brutal ones, you trim spending a little. That simple flexibility lets you safely start a touch higher — and still sleep soundly at night.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "flexible withdrawals"
+      },
+      {
+        "name": "chartup",
+        "label": "good year: more"
+      },
+      {
+        "name": "scissors",
+        "label": "bad year: trim"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "title",
+    "narration": "So let's turn all of this into your actual plan.",
+    "heading": "Your Real Number",
+    "kicker": "how to find it"
+  },
+  {
+    "id": "s32",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Nest egg to spend $50K/yr, by retirement age ($K)",
+    "unit": "$K",
+    "narration": "Here's the whole picture for someone who wants to spend fifty thousand a year. Retire at sixty-five, and you need around one and a quarter million. At fifty-five, about one and a half. At fifty, roughly one point seven. And at forty, closer to two million. Same lifestyle — the clock sets the price.",
+    "data": [
+      {
+        "label": "at 65",
+        "value": 1250
+      },
+      {
+        "label": "at 55",
+        "value": 1500
+      },
+      {
+        "label": "at 50",
+        "value": 1700
+      },
+      {
+        "label": "at 40",
+        "value": 2000
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s33",
+    "type": "character",
+    "narration": "So step one is the only homework that matters: figure out your real annual spending. Not your income — the actual amount it costs to run your life for a year. That single number, more than anything else, determines the entire size of your retirement.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "track a year of spending"
+      },
+      {
+        "name": "grocerybag",
+        "label": "what life really costs"
+      },
+      {
+        "name": "ledger",
+        "label": "this sets everything"
+      }
+    ]
+  },
+  {
+    "id": "s34",
+    "type": "character",
+    "narration": "Step two: multiply it by twenty-five for a standard retirement, and lean toward thirty if you're retiring early. Then subtract whatever Social Security or a pension will eventually cover. What's left is the pile you personally have to build.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "nestegg",
+        "label": "spending × 25 (or 30)"
+      },
+      {
+        "name": "capitol",
+        "label": "minus Social Security"
+      },
+      {
+        "name": "scale",
+        "label": "the rest is on you"
+      }
+    ]
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "And here's the most empowering part. You can attack this number from both ends. Save and invest more to push the pile up — or quietly cut your spending to pull the target down. Every thousand a year you trim off your lifestyle erases twenty-five thousand from the mountain.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "push savings up"
+      },
+      {
+        "name": "scissors",
+        "label": "cut spending down"
+      },
+      {
+        "name": "mountain",
+        "label": "-$1K/yr = -$25K needed"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "And you can attack the spending side geographically. The same nest egg that barely covers a pricey coastal city can fund a lavish life in a cheaper town — or another country entirely. Move where your money stretches, and your number can fall by half.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "move somewhere cheaper"
+      },
+      {
+        "name": "luggage",
+        "label": "geographic arbitrage"
+      },
+      {
+        "name": "nestegg",
+        "label": "number can halve"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "There's even a halfway house called Coast FIRE. Invest aggressively while you're young, and once your pot is big enough that compounding alone will carry it to a full retirement, you can ease off — and just coast, working only to cover today's bills.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "seedling",
+        "label": "front-load investing"
+      },
+      {
+        "name": "moneytree",
+        "label": "let it coast"
+      },
+      {
+        "name": "hammock",
+        "label": "ease off early"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "Finally, beware the 'one more year' trap. Many who hit their number simply can't bring themselves to stop, endlessly chasing a bigger cushion they'll never actually spend. At some point, the bravest financial move is to trust the math — and actually retire.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "'one more year'…"
+      },
+      {
+        "name": "nestegg",
+        "label": "you hit the number"
+      },
+      {
+        "name": "hammock",
+        "label": "trust it & stop"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "So the real answer to 'how much do I need to retire?' isn't a single number someone can hand you. It's a formula: your spending, times a multiple set by your age, minus your safety nets. Plug in your own life, and the fog finally clears.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "it's a formula"
+      },
+      {
+        "name": "hammock",
+        "label": "spending × age-multiple"
+      },
+      {
+        "name": "nestegg",
+        "label": "minus your safety nets"
+      }
+    ]
+  },
+  {
+    "id": "s38",
+    "type": "character",
+    "narration": "And the deepest lesson is this: retirement isn't an age the government picks for you. It's a number. The day your nest egg crosses twenty-five times your spending, you're free to stop — whether that day arrives at sixty-five, or at forty.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "hammock",
+        "label": "it's a number, not an age"
+      },
+      {
+        "name": "nestegg",
+        "label": "cross 25× and you're free"
+      },
+      {
+        "name": "clock",
+        "label": "at 65… or 40"
+      }
+    ]
+  },
+  {
+    "id": "s39",
+    "type": "character",
+    "narration": "If this finally made the retirement number make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "hammock",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s40",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

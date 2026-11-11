@@ -1,0 +1,1053 @@
+{
+  "id": "EP055",
+  "series": "Napkin Numbers",
+  "title": "How Much Money You Need to Retire at 40, 50, 55, and 65",
+  "slug": "how-much-to-retire-at-every-age",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP055 — Every Level series (row 45). The WITHDRAWAL side: the 25× rule from the 4% safe-withdrawal rate; your number = annual SPENDING × 25; then how the number rises the younger you retire (more years, no Social Security/Medicare yet, lower safe rate, sequence risk). Covers bridge years, longevity risk, sequence-of-returns risk, Social Security, FIRE. 6 new motifs (twentyfivex/safewithdrawal/earlycostmore/bridgeyears/sequencerisk/longevityrisk) + doodles hammock/medkit. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "What's the magic number you need to retire? A million? Five? The honest answer is: it depends entirely on one thing almost nobody mentions — not how much you have, but how young you are when you stop. Retiring at forty can require nearly double what retiring at sixty-five does. Let's find your real number.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "the magic number?"
+        },
+        {
+          "name": "calendar",
+          "label": "depends on your age"
+        },
+        {
+          "name": "nestegg",
+          "label": "40 needs ~2× of 65"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the one rule that cuts through all the confusion. To retire, you need roughly twenty-five times your annual spending saved up. Spend fifty thousand dollars a year? Your target is about one and a quarter million.",
+      "text": "25×",
+      "sub": "your annual spending = your nest egg",
+      "icon": "nestegg"
+    },
+    {
+      "id": "s41",
+      "type": "callout",
+      "narration": "A million-dollar nest egg, under the four-percent rule, hands you about forty thousand dollars in your very first year of retirement — then a raise for inflation every year after. That's the engine that turns a lump sum into a salary which never clocks out.",
+      "text": "$40,000",
+      "sub": "a year, from $1M (the 4% rule)",
+      "icon": "nestegg"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "Notice the word that changes everything: spending, not income. Your retirement number has almost nothing to do with your salary and everything to do with your lifestyle. Two people earning the same can need wildly different piles — because one lives on half of what the other does.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "it's about spending"
+        },
+        {
+          "name": "paystub",
+          "label": "NOT your income"
+        },
+        {
+          "name": "scale",
+          "label": "lifestyle sets it"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "Picture two sixty-five-year-olds. One spends forty thousand a year and needs about a million. The other spends a hundred and twenty thousand and needs three million. Same age, same markets — three times the pile, purely because of lifestyle.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "$40K → ~$1M"
+        },
+        {
+          "name": "mansion",
+          "label": "$120K → ~$3M"
+        },
+        {
+          "name": "scale",
+          "label": "lifestyle decides"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "save a huge number to retire",
+      "memeBottom": "shrink your spending, and the huge number shrinks with it",
+      "narration": "And that's the quiet trick most people miss. Because your number is a multiple of your spending, cutting what you need to live on doesn't just save money — it slashes the entire mountain you have to climb. Spend less, and the finish line sprints toward you."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "So where does this twenty-five times rule actually come from?",
+      "heading": "The 4% Rule",
+      "kicker": "where 25× comes from"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "It comes from a famous piece of research nicknamed the Trinity study, which set out to find safe withdrawal rates from retirement portfolios that contain stocks. The question it asked: how much can you pull out each year without ever running dry?",
+      "sourceId": "wiki-trinity"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "Its famous answer was about four percent. If you withdraw roughly four percent of your nest egg in year one, then adjust for inflation after that, your money has historically survived thirty years or more. And four percent a year is just the flip side of having twenty-five times your spending.",
+      "motif": "safewithdrawal",
+      "caption": "the 4% rule"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "One important catch: the original study assumed a thirty-year retirement. Stretch that to forty or fifty years, and four percent starts to look a little too brave. The longer your horizon, the more gently you have to sip from the pot.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "built for ~30 years"
+        },
+        {
+          "name": "percent",
+          "label": "longer = sip less"
+        },
+        {
+          "name": "warning",
+          "label": "4% isn't universal"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "narration": "So the whole calculation is beautifully simple. Take your annual spending, multiply by twenty-five, and that's your target. Fifty thousand a year becomes one and a quarter million. Eighty thousand a year becomes two million. Your lifestyle, times twenty-five.",
+      "motif": "twentyfivex",
+      "caption": "spending, not income, sets the number"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "And your withdrawals aren't frozen in place. Each year you give yourself a raise to match inflation, so your spending power holds steady as prices climb. The rule already bakes in that quiet erosion — which is exactly why it demands such a big starting pile.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "withdrawals rise"
+        },
+        {
+          "name": "grocerybag",
+          "label": "keep up with prices"
+        },
+        {
+          "name": "nestegg",
+          "label": "why the pile is big"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "Hit that number, and you've reached financial independence — enough resources to cover your cost-of-living expenses without depending on active employment. At that point, work becomes a choice, not a sentence.",
+      "sourceId": "wiki-fi"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "But here's the twist the simple rule hides: the number changes with your age. Let's start at the classic finish line.",
+      "heading": "Retiring at 65",
+      "kicker": "easy mode"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Sixty-five is retirement on easy mode. You only need to fund maybe twenty-five to thirty years, the classic four-percent math fits perfectly, and crucially, you get a powerful helper. So for fifty thousand a year of spending, somewhere around one and a quarter million does the job.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "fund ~25-30 years"
+        },
+        {
+          "name": "nestegg",
+          "label": "~$1.25M for $50K/yr"
+        },
+        {
+          "name": "retiree",
+          "label": "the 4% rule fits"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "A quiet trick at this age: Social Security pays you more the longer you wait. Claim at sixty-two and the checks are permanently smaller. Hold out to seventy, and they jump by well over seventy percent. Waiting can be one of the best investments a retiree ever makes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "wait = bigger checks"
+        },
+        {
+          "name": "calendar",
+          "label": "62 vs 70"
+        },
+        {
+          "name": "chartup",
+          "label": "+70% for patience"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "screenshot",
+      "narration": "That helper is Social Security — the federal program administered by the Social Security Administration that sends retirees a monthly check for life. For an average earner, it can replace around forty percent of their old income, dramatically shrinking the pile they need to save themselves.",
+      "sourceId": "wiki-ss"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "But don't lean on it entirely. Social Security was never designed to be your whole retirement — only a floor under it. And with its trust fund under long-term strain, the wise move is to treat any check as a welcome bonus, not the foundation.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "just a floor"
+        },
+        {
+          "name": "warning",
+          "label": "trust fund strained"
+        },
+        {
+          "name": "shield",
+          "label": "a bonus, not the base"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "This is why sixty-five is the gentle option. Social Security covers a big chunk of your spending, so your own savings only have to fill the gap. A paid-off house and a modest nest egg, plus that monthly check, and a comfortable retirement is genuinely within reach.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "SS fills ~40%"
+        },
+        {
+          "name": "house",
+          "label": "paid-off home"
+        },
+        {
+          "name": "nestegg",
+          "label": "savings fill the gap"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "The single biggest lever at any age is your housing. A paid-off home slashes your annual spending — and because your number is twenty-five times that spending, erasing a mortgage can quietly wipe hundreds of thousands of dollars off the pile you need.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "paid-off home"
+        },
+        {
+          "name": "scissors",
+          "label": "slashes spending"
+        },
+        {
+          "name": "nestegg",
+          "label": "−$ hundreds of K"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Now pull that date earlier, and the math gets harder in a hurry.",
+      "heading": "Retiring at 55",
+      "kicker": "the bridge begins"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Retire at fifty-five, and two problems appear at once. You now need to fund thirty-five, maybe forty years. And you have a long wait before any Social Security arrives. So the comfortable target climbs — closer to twenty-seven times your spending, or roughly one and a half million for that same fifty thousand a year.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "fund 35-40 years"
+        },
+        {
+          "name": "nestegg",
+          "label": "~$1.5M now"
+        },
+        {
+          "name": "calendar",
+          "label": "no SS for years"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "There's a handy loophole here called the Rule of 55. Leave your job in the year you turn fifty-five or later, and you can tap that employer's 401(k) penalty-free — years before the usual fifty-nine and a half. A small gift for the near-retiree.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "the Rule of 55"
+        },
+        {
+          "name": "calendar",
+          "label": "penalty-free early"
+        },
+        {
+          "name": "handshake",
+          "label": "if you leave the job"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "This is the first taste of the bridge problem. Social Security won't start until at least sixty-two, and Medicare health coverage not until sixty-five. So every single year between retiring and those ages is one hundred percent on you — a gap you must fund entirely from your own savings.",
+      "motif": "bridgeyears",
+      "caption": "retire early = build a bridge"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Early retirees also use a clever move called a Roth conversion ladder. Each year you quietly shift money from a traditional account into a Roth, and after a five-year wait, you can withdraw it penalty-free. It's how the FIRE crowd unlocks their accounts decades early.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "convert each year"
+        },
+        {
+          "name": "ladder",
+          "label": "the 5-year ladder"
+        },
+        {
+          "name": "taxform",
+          "label": "penalty-free access"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "And don't forget that bridge includes health insurance. Before Medicare kicks in at sixty-five, you're buying your own coverage — which can cost a retiring couple many thousands of dollars a year. It's one of the single biggest, and most forgotten, costs of retiring early.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "buy your own coverage"
+        },
+        {
+          "name": "hospital",
+          "label": "no Medicare till 65"
+        },
+        {
+          "name": "warning",
+          "label": "a huge hidden cost"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "There's relief on healthcare, too. Because early retirees often show low taxable income, many qualify for sizable subsidies on the insurance marketplace. Carefully managing the income you report can turn a terrifying medical bill into a very manageable one.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "marketplace coverage"
+        },
+        {
+          "name": "percent",
+          "label": "big subsidies"
+        },
+        {
+          "name": "calculator",
+          "label": "manage reported income"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Push it to fifty, and you're firmly in serious-planning territory.",
+      "heading": "Retiring at 50",
+      "kicker": "serious money"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "At fifty, you're potentially funding forty-five years of life with no paycheck. The safe withdrawal rate has to drop a little for such a long horizon — meaning you need a bigger multiple, closer to twenty-eight times. For fifty thousand a year, you're now looking at roughly one point seven million dollars.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "~45 years to fund"
+        },
+        {
+          "name": "percent",
+          "label": "lower safe rate"
+        },
+        {
+          "name": "nestegg",
+          "label": "~$1.7M"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And remember, the taxman follows you into retirement. Withdrawals from a traditional 401(k) are taxed as ordinary income. So your real target has to cover those taxes too — the headline number always needs a little padding for what you'll still owe.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "taxform",
+          "label": "withdrawals taxed"
+        },
+        {
+          "name": "warning",
+          "label": "pad the number"
+        },
+        {
+          "name": "nestegg",
+          "label": "target after tax"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "There's also a tax wrinkle. Most retirement accounts, like a 401(k), penalize withdrawals before age fifty-nine and a half. So an early retiree needs a chunk of money in regular, accessible accounts too — savings they can actually touch during those bridge years without a penalty.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "401(k) locked till 59½"
+        },
+        {
+          "name": "piggybank",
+          "label": "need accessible savings"
+        },
+        {
+          "name": "taxform",
+          "label": "penalty before then"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "And now the extreme end of the spectrum — retiring with half your life still ahead of you.",
+      "heading": "Retiring at 40",
+      "kicker": "hard mode"
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "This is the dream of the FIRE movement — Financial Independence, Retire Early — built on accumulating sufficient assets to cover living expenses, through ferociously high savings rates, decades ahead of schedule.",
+      "sourceId": "wiki-fire"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "FIRE even comes in flavors. Lean FIRE means retiring on a bare-bones budget. Fat FIRE means doing it in luxury, which takes a far bigger pile. And Barista FIRE means semi-retiring, covering the gap with an easy, enjoyable part-time job.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "Lean FIRE"
+        },
+        {
+          "name": "yacht",
+          "label": "Fat FIRE"
+        },
+        {
+          "name": "briefcase",
+          "label": "Barista FIRE"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "But retiring at forty is genuinely hard mode. You might need to fund fifty years or more. The safe withdrawal rate drops toward three and a half, even three percent. That pushes your multiple past thirty times — so fifty thousand a year of spending now demands closer to two million dollars.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "50+ years to fund"
+        },
+        {
+          "name": "percent",
+          "label": "~3.5% safe rate"
+        },
+        {
+          "name": "nestegg",
+          "label": "~$2M for $50K/yr"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "Be honest about the risk, though. A fifty-year retirement has essentially never been stress-tested by history. That's why the most careful early retirees aim for a three-percent rate and stay flexible — ready to earn a bit, or spend a bit less, if markets turn ugly.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "50 yrs is untested"
+        },
+        {
+          "name": "percent",
+          "label": "aim nearer 3%"
+        },
+        {
+          "name": "shield",
+          "label": "stay flexible"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "Here's that pattern in one picture. The younger you retire, the bigger the multiple you need — from around twenty-five times at sixty-five, up past thirty times at forty. More years to fund, a lower safe rate, and no Social Security for decades all stack up against you.",
+      "motif": "earlycostmore",
+      "caption": "retire younger, need a bigger pile"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "Here's the most underrated shortcut of all. Even a small, steady income in early retirement dramatically shrinks the pile you need. Earning just ten thousand dollars a year from a hobby can knock a quarter of a million dollars clean off your target.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "a little income"
+        },
+        {
+          "name": "coins",
+          "label": "$10K a year"
+        },
+        {
+          "name": "nestegg",
+          "label": "−$250K needed"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Two hidden dangers lurk behind every one of these numbers. Miss them, and even a big nest egg can fail.",
+      "heading": "The Two Killers",
+      "kicker": "what breaks retirements"
+    },
+    {
+      "id": "s26",
+      "type": "screenshot",
+      "narration": "The first is living longer than you planned. Life expectancy is the average remaining years of life at a given age — and 'average' is the trap. Plan only to the average, and there's a fifty-percent chance you outlive your money entirely.",
+      "sourceId": "wiki-life"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And if you're part of a couple, the math gets harsher. The odds that at least one of you reaches ninety are surprisingly high. Your money has to last not just your life, but the longer of two lives — often well into the nineties.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "two lives"
+        },
+        {
+          "name": "hourglass",
+          "label": "one likely hits 90+"
+        },
+        {
+          "name": "nestegg",
+          "label": "fund the longer one"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "stage",
+      "narration": "This is longevity risk. If you retire at sixty-five, you shouldn't plan to seventy-eight, the rough average — you should plan to ninety-five, because you just might get there. The real retirement nightmare isn't dying with money left over. It's running out at eighty-five, with decades of life still to pay for.",
+      "motif": "longevityrisk",
+      "caption": "your money has to outlast you"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "One way to defuse longevity risk is an annuity. You hand an insurer a lump sum, and they pay you a guaranteed income for life, no matter how long you live. It isn't glamorous — but it's a floor you literally cannot outlive.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "a guaranteed floor"
+        },
+        {
+          "name": "capitol",
+          "label": "income for life"
+        },
+        {
+          "name": "hammock",
+          "label": "can't outlive it"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "The second killer is sneakier, and it's all about timing. It's called sequence-of-returns risk — and it means a market crash in the first few years of retirement can be catastrophic, even if the long-term average looks fine.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "a crash early on"
+        },
+        {
+          "name": "warning",
+          "label": "timing, not average"
+        },
+        {
+          "name": "hourglass",
+          "label": "sequence risk"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "stage",
+      "narration": "Here's why. If the market crashes right after you retire, you're forced to sell investments while they're down just to eat — permanently shrinking the pile that was supposed to recover. The exact same crash, ten years later, barely leaves a scratch. Same average return, opposite fate.",
+      "motif": "sequencerisk",
+      "caption": "timing of a crash decides everything"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "The classic defense against a bad early crash is the 'bond tent.' You hold extra safe bonds right around your retirement date, so a plunge can't force you to sell stocks at the bottom — then you let stocks grow back once the danger has passed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "extra bonds early"
+        },
+        {
+          "name": "chartdown",
+          "label": "survive the crash"
+        },
+        {
+          "name": "nestegg",
+          "label": "then grow back"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "The defense against both is a cushion. Keep a year or two of spending in cash so you never have to sell in a crash. And plan with a slightly lower withdrawal rate than you think you need. A little conservatism is what turns a fragile retirement into a bulletproof one.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "1-2 yrs cash cushion"
+        },
+        {
+          "name": "percent",
+          "label": "withdraw a bit less"
+        },
+        {
+          "name": "nestegg",
+          "label": "fragile → bulletproof"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "Smart retirees also use guardrails instead of a rigid four percent. In great market years, you give yourself a raise. In brutal ones, you trim spending a little. That simple flexibility lets you safely start a touch higher — and still sleep soundly at night.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "flexible withdrawals"
+        },
+        {
+          "name": "chartup",
+          "label": "good year: more"
+        },
+        {
+          "name": "scissors",
+          "label": "bad year: trim"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "So let's turn all of this into your actual plan.",
+      "heading": "Your Real Number",
+      "kicker": "how to find it"
+    },
+    {
+      "id": "s32",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Nest egg to spend $50K/yr, by retirement age ($K)",
+      "unit": "$K",
+      "narration": "Here's the whole picture for someone who wants to spend fifty thousand a year. Retire at sixty-five, and you need around one and a quarter million. At fifty-five, about one and a half. At fifty, roughly one point seven. And at forty, closer to two million. Same lifestyle — the clock sets the price.",
+      "data": [
+        {
+          "label": "at 65",
+          "value": 1250
+        },
+        {
+          "label": "at 55",
+          "value": 1500
+        },
+        {
+          "label": "at 50",
+          "value": 1700
+        },
+        {
+          "label": "at 40",
+          "value": 2000
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "So step one is the only homework that matters: figure out your real annual spending. Not your income — the actual amount it costs to run your life for a year. That single number, more than anything else, determines the entire size of your retirement.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "track a year of spending"
+        },
+        {
+          "name": "grocerybag",
+          "label": "what life really costs"
+        },
+        {
+          "name": "ledger",
+          "label": "this sets everything"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Step two: multiply it by twenty-five for a standard retirement, and lean toward thirty if you're retiring early. Then subtract whatever Social Security or a pension will eventually cover. What's left is the pile you personally have to build.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "spending × 25 (or 30)"
+        },
+        {
+          "name": "capitol",
+          "label": "minus Social Security"
+        },
+        {
+          "name": "scale",
+          "label": "the rest is on you"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "And here's the most empowering part. You can attack this number from both ends. Save and invest more to push the pile up — or quietly cut your spending to pull the target down. Every thousand a year you trim off your lifestyle erases twenty-five thousand from the mountain.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "push savings up"
+        },
+        {
+          "name": "scissors",
+          "label": "cut spending down"
+        },
+        {
+          "name": "mountain",
+          "label": "-$1K/yr = -$25K needed"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And you can attack the spending side geographically. The same nest egg that barely covers a pricey coastal city can fund a lavish life in a cheaper town — or another country entirely. Move where your money stretches, and your number can fall by half.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "move somewhere cheaper"
+        },
+        {
+          "name": "luggage",
+          "label": "geographic arbitrage"
+        },
+        {
+          "name": "nestegg",
+          "label": "number can halve"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "There's even a halfway house called Coast FIRE. Invest aggressively while you're young, and once your pot is big enough that compounding alone will carry it to a full retirement, you can ease off — and just coast, working only to cover today's bills.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "front-load investing"
+        },
+        {
+          "name": "moneytree",
+          "label": "let it coast"
+        },
+        {
+          "name": "hammock",
+          "label": "ease off early"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "Finally, beware the 'one more year' trap. Many who hit their number simply can't bring themselves to stop, endlessly chasing a bigger cushion they'll never actually spend. At some point, the bravest financial move is to trust the math — and actually retire.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "'one more year'…"
+        },
+        {
+          "name": "nestegg",
+          "label": "you hit the number"
+        },
+        {
+          "name": "hammock",
+          "label": "trust it & stop"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "So the real answer to 'how much do I need to retire?' isn't a single number someone can hand you. It's a formula: your spending, times a multiple set by your age, minus your safety nets. Plug in your own life, and the fog finally clears.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "it's a formula"
+        },
+        {
+          "name": "hammock",
+          "label": "spending × age-multiple"
+        },
+        {
+          "name": "nestegg",
+          "label": "minus your safety nets"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "And the deepest lesson is this: retirement isn't an age the government picks for you. It's a number. The day your nest egg crosses twenty-five times your spending, you're free to stop — whether that day arrives at sixty-five, or at forty.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "it's a number, not an age"
+        },
+        {
+          "name": "nestegg",
+          "label": "cross 25× and you're free"
+        },
+        {
+          "name": "clock",
+          "label": "at 65… or 40"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this finally made the retirement number make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-trinity",
+      "name": "Trinity study (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trinity_study",
+      "quote": "from retirement portfolios that contain stocks"
+    },
+    {
+      "id": "wiki-fi",
+      "name": "Financial independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_independence",
+      "quote": "cover its cost-of-living expenses without depending on active employment"
+    },
+    {
+      "id": "wiki-ss",
+      "name": "Social Security (United States) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Social_Security_(United_States)",
+      "quote": "administered by the Social Security Administration"
+    },
+    {
+      "id": "wiki-fire",
+      "name": "FIRE movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FIRE_movement",
+      "quote": "accumulating sufficient assets to cover living expenses"
+    },
+    {
+      "id": "wiki-life",
+      "name": "Life expectancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Life_expectancy",
+      "quote": "the average remaining years of life at a given age"
+    }
+  ],
+  "youtube": {
+    "title": "How Much Money You Need to Retire at 40, 50, 55, and 65",
+    "alts": [
+      "The Real Retirement Number for Every Age (40 to 65)",
+      "Why Retiring at 40 Needs Double What 65 Does"
+    ],
+    "hook": "How much do you actually need to retire? There's no single magic number — it depends massively on WHEN you stop. Using the 4% rule and the Trinity study, your target is roughly 25× your annual SPENDING (not income). But the multiple climbs the younger you retire: ~25× at 65, ~27× at 55, ~28× at 50, and past 30× at 40 — because you fund more years, get no Social Security or Medicare for decades, and must use a lower safe withdrawal rate. We break down the number for each age, plus the two silent killers (longevity risk and sequence-of-returns risk), the bridge years, healthcare before Medicare, and FIRE / Coast FIRE. Fully cited.",
+    "bullets": [
+      "The 25× rule and where the 4% rule comes from (Trinity study)",
+      "Your number is 25× SPENDING, not income",
+      "Why retiring at 40 needs ~2× what retiring at 65 does",
+      "The bridge years: no Social Security till 62, no Medicare till 65",
+      "The two killers: longevity risk and sequence-of-returns risk",
+      "Attack the number from both ends — save more OR spend less"
+    ],
+    "tags": [
+      "how much to retire",
+      "how much do i need to retire",
+      "retire at 40",
+      "retire early",
+      "4 percent rule",
+      "25x rule",
+      "FIRE movement",
+      "safe withdrawal rate",
+      "sequence of returns risk",
+      "retirement planning",
+      "financial independence",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#retirement",
+      "#FIRE",
+      "#personalfinance",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "RETIRE AT",
+      "hookBot": "40 · 50 · 55 · 65",
+      "napkinNumber": "25×",
+      "napkinSub": "your spending",
+      "deco": "hammock"
+    },
+    "chapters": [
+      [
+        "twenty-five times your annual spending",
+        "The 25× rule"
+      ],
+      [
+        "where does this twenty-five times rule actually come from",
+        "The 4% rule"
+      ],
+      [
+        "Sixty-five is retirement on easy mode",
+        "Retiring at 65"
+      ],
+      [
+        "the first taste of the bridge problem",
+        "Retiring at 55"
+      ],
+      [
+        "firmly in serious-planning territory",
+        "Retiring at 50"
+      ],
+      [
+        "the dream of the FIRE movement",
+        "Retiring at 40"
+      ],
+      [
+        "Two hidden dangers",
+        "The two killers"
+      ],
+      [
+        "figure out your real annual spending",
+        "Your real number"
+      ],
+      [
+        "retirement isn't an age the government picks",
+        "The lesson"
+      ]
+    ]
+  }
+}
