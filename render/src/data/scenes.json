@@ -2,868 +2,858 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "The single most profitable product ever invented isn't oil, or the smartphone, or artificial intelligence. It's older, simpler, and it's quietly wrapped around almost every part of your life. It's debt.",
+    "narration": "Pull a twenty-dollar bill out of your wallet and really look at it. It's a scrap of cotton and linen, worth maybe a few cents to make. You can't eat it, build with it, or burn it for much heat. And yet it can buy you a hot meal, a tank of gas, or an hour of a stranger's work.",
     "pose": "explain",
     "props": [
       {
-        "name": "oilbarrel",
-        "label": "not oil"
+        "name": "banknote",
+        "label": "a few cents of paper"
       },
       {
-        "name": "phone",
-        "label": "not phones"
+        "name": "grocerybag",
+        "label": "buys real food"
       },
       {
-        "name": "ballchain",
-        "label": "…it's debt"
+        "name": "gaspump",
+        "label": "a tank of gas"
       }
     ]
   },
   {
     "id": "s2",
-    "type": "stage",
-    "narration": "Because somebody figured out a magic trick. You can sell a customer money, charge them to use it, and then get all of it back — plus more. The product never wears out, and the buyer pays you for the privilege of returning it.",
-    "motif": "sellmoney",
-    "caption": "sell money, get more money back"
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "Debt is almost unbelievably ancient — older, in fact, than coins. The earliest writing we've ever found isn't poetry; it's clay tablets recording who owed whom how much grain. We were tracking debts before we even had money.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "iou",
-        "label": "older than coins"
-      },
-      {
-        "name": "blueprint",
-        "label": "clay-tablet IOUs"
-      },
-      {
-        "name": "handshake",
-        "label": "5,000 years old"
-      }
-    ]
+    "type": "callout",
+    "narration": "Now here's the number that should stop you cold. The amount of gold, silver, or any physical thing backing that twenty dollars — or any dollar in the world today — is exactly zero.",
+    "text": "$0",
+    "sub": "of gold or silver backs a modern dollar",
+    "icon": "goldbar"
   },
   {
     "id": "s3",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "sell a product once",
-    "memeBottom": "sell money, get it back with interest, forever",
-    "narration": "When you really understand why debt is such a perfect product, you understand why banking became the most powerful industry on Earth — and which side of it you want to be on."
+    "type": "character",
+    "narration": "There is nothing behind the note. No gold waiting in a vault. No silver you could trade it in for. No commodity promised in return. Since 1971, the money in your pocket is backed by, essentially, nothing you can touch. So why on Earth does it work?",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "vault",
+        "label": "an empty vault"
+      },
+      {
+        "name": "goldbar",
+        "label": "no gold behind it"
+      },
+      {
+        "name": "warning",
+        "label": "…so why does it work?"
+      }
+    ]
   },
   {
     "id": "s4",
-    "type": "title",
-    "narration": "To see the genius, start with what debt actually is.",
-    "heading": "The Product",
-    "kicker": "a promise that pays"
+    "type": "image",
+    "src": "img/memes/simply.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "trust a scrap of paper backed by nothing",
+    "narration": "It sounds absurd when you say it out loud. We've handed the keys to our entire economy to a piece of paper that promises you nothing. But the reasons it works are far stranger, and far more clever, than almost anyone realizes."
   },
   {
     "id": "s5",
-    "type": "screenshot",
-    "narration": "At its core, debt is an obligation that requires one party, the debtor, to pay back money borrowed from another, the creditor. It is, simply, a promise to repay — with interest.",
-    "sourceId": "wiki-debt"
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "The modern trick was born with medieval goldsmiths. People stored gold with them for safekeeping, and got paper receipts. The goldsmiths quickly realized they could lend out receipts for gold that wasn't really there — and modern banking was born.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "goldbar",
-        "label": "gold stored safely"
-      },
-      {
-        "name": "iou",
-        "label": "paper receipts"
-      },
-      {
-        "name": "magichat",
-        "label": "lend what isn't there"
-      }
-    ]
+    "type": "title",
+    "narration": "To understand it, you first have to understand what this kind of money actually is.",
+    "heading": "Backed By Nothing",
+    "kicker": "the money illusion"
   },
   {
     "id": "s6",
-    "type": "character",
-    "narration": "And interest is the whole game. Lend a hundred dollars, get a hundred and twenty back. You've been paid twenty dollars for doing nothing but temporarily parting with money you'll get back anyway. No factory, no shipping, no inventory.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "lend $100"
-      },
-      {
-        "name": "moneybag",
-        "label": "get $120 back"
-      },
-      {
-        "name": "percent",
-        "label": "paid to wait"
-      }
-    ]
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "Interest exists because time has value. A dollar today is worth more than a dollar next year — so the lender charges rent on time itself. Debt is, quite literally, the business of selling time, and almost nothing is more universally in demand than that.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "clock",
-        "label": "time has value"
-      },
-      {
-        "name": "percent",
-        "label": "rent on time"
-      },
-      {
-        "name": "globe",
-        "label": "always in demand"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The technical name for it is fiat money. It's a government-issued currency, usually created by a central bank, that is declared to be money, but is not backed by any precious metal like gold or silver.",
+    "sourceId": "wiki-fiat"
   },
   {
     "id": "s7",
     "type": "character",
-    "narration": "Compare that to any normal business. A carmaker builds a car, sells it once, and it's gone. A lender 'sells' money, gets the exact same money back, plus a fee — and can then immediately lend it out all over again.",
+    "narration": "The word 'fiat' is Latin for 'let it be done.' And that's the whole idea. This money has value because the government simply decrees that it does. It's money by command, not money because of what it's made of.",
     "pose": "explain",
     "props": [
       {
-        "name": "factory",
-        "label": "a car sells once"
+        "name": "decree",
+        "label": "'let it be done'"
       },
       {
-        "name": "refinance",
-        "label": "money comes back"
+        "name": "capitol",
+        "label": "value by decree"
       },
       {
-        "name": "chartup",
-        "label": "then lend it again"
-      }
-    ]
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "Banks supercharge all of this with leverage. For every dollar of their own, a bank may lend out ten or more. So that juicy spread isn't earned on their money — it's earned on a giant pile of other people's, multiplying the profit enormously.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "~10x leverage"
-      },
-      {
-        "name": "moneybag",
-        "label": "on others' money"
-      },
-      {
-        "name": "chartup",
-        "label": "profit multiplied"
+        "name": "banknote",
+        "label": "not by its substance"
       }
     ]
   },
   {
     "id": "s8",
-    "type": "title",
-    "narration": "But here's the part that turns a great product into an unbelievable one.",
-    "heading": "Free Raw Material",
-    "kicker": "money from nothing"
+    "type": "stage",
+    "narration": "Think about what that means. A plain scrap of paper is worth almost nothing. But the moment the state stamps it and says 'this is twenty dollars,' it becomes twenty dollars. The value didn't come from the paper. It was declared into existence.",
+    "motif": "fiatdecree",
+    "caption": "value by declaration, not substance"
   },
   {
     "id": "s9",
     "type": "character",
-    "narration": "For almost any product, your biggest cost is the raw material. But a bank's raw material — the money it lends — costs it almost nothing to produce. Because, as we've covered before, banks largely create it.",
+    "narration": "And this isn't some fringe experiment. Every single major currency on Earth — the dollar, the euro, the yen, the pound — is now fiat money. The entire global economy, trillions upon trillions of dollars, runs on this one strange idea.",
     "pose": "explain",
     "props": [
       {
-        "name": "moneytree",
-        "label": "near-free raw material"
+        "name": "dollar",
+        "label": "the dollar"
       },
       {
-        "name": "printer",
-        "label": "they create it"
+        "name": "euro",
+        "label": "the euro"
       },
       {
-        "name": "bank",
-        "label": "at almost no cost"
+        "name": "globe",
+        "label": "all of it, fiat"
       }
     ]
   },
   {
     "id": "s10",
-    "type": "screenshot",
-    "narration": "This is fractional-reserve banking: banks keep only a small part of their deposits in reserve, and lend out the rest — creating new money in the process.",
-    "sourceId": "wiki-fractional"
+    "type": "title",
+    "narration": "But a decree alone can't force people to actually want something. So what gives it real, everyday value?",
+    "heading": "The Three Jobs",
+    "kicker": "what money has to do"
   },
   {
     "id": "s11",
-    "type": "stage",
-    "narration": "So when a bank makes you a loan, it doesn't dig into a vault of cash. It mostly just types a number into your account — creating new money on the spot. The raw material of its most profitable product is conjured from almost nothing.",
-    "motif": "freerawmaterial",
-    "caption": "the raw material is created from nothing"
-  },
-  {
-    "id": "s46",
-    "type": "character",
-    "narration": "And the safest, biggest debt product of all is government bonds. Lending to a stable government is considered so safe that its interest rate is called the 'risk-free rate' — the very foundation that every other price in finance is built on top of.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "capitol",
-        "label": "lend to governments"
-      },
-      {
-        "name": "shield",
-        "label": "the 'risk-free rate'"
-      },
-      {
-        "name": "scale",
-        "label": "finance's foundation"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Start with what money is for. Economists say money is anything generally accepted as payment for goods, services, and debts. It isn't defined by what it's made of — it's defined by what it does.",
+    "sourceId": "wiki-money"
   },
   {
     "id": "s12",
-    "type": "title",
-    "narration": "Now combine a near-free raw material with the one simple number at the heart of banking: the spread.",
-    "heading": "The Spread",
-    "kicker": "borrow cheap, lend dear"
+    "type": "stage",
+    "narration": "And money has three jobs to do. It has to be a medium of exchange, something you can swap for stuff. A unit of account, a ruler you price everything in. And a store of value, a way to hold your wealth over time. Pull off all three, and you are money.",
+    "motif": "moneyjobs",
+    "caption": "the three jobs of money"
   },
   {
     "id": "s13",
     "type": "character",
-    "narration": "A bank's whole engine is beautifully simple. It pays you a tiny amount of interest on your savings — and charges a much bigger amount of interest on its loans. The gap between those two numbers is almost pure profit.",
+    "narration": "The first job quietly solves an ancient nightmare: barter. In a world without money, if you raise chickens and want shoes, you have to find a shoemaker who happens to want chickens, right now. Money ends that madness. Everyone accepts it, so everyone can trade with everyone.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "pays you 1%"
+        "name": "basket",
+        "label": "chickens for shoes?"
       },
       {
-        "name": "mortgage",
-        "label": "charges 7%"
-      },
-      {
-        "name": "moneybag",
-        "label": "pockets the gap"
-      }
-    ]
-  },
-  {
-    "id": "s63",
-    "type": "character",
-    "narration": "Banks also perform a clever trick called maturity transformation. They borrow short — your deposits, which you can grab any day — and lend long, like a thirty-year mortgage. Pulling that off safely is a tightrope act, and it's precisely what a bank run shatters.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "borrow short"
-      },
-      {
-        "name": "mortgage",
-        "label": "lend long"
-      },
-      {
-        "name": "warning",
-        "label": "a risky tightrope"
-      }
-    ],
-    "expression": "worried"
-  },
-  {
-    "id": "s14",
-    "type": "screenshot",
-    "narration": "That gap has a name: the net interest margin — the difference between the interest income a bank earns and the interest it pays out. It is the core of how banks make money.",
-    "sourceId": "wiki-nim"
-  },
-  {
-    "id": "s47",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Market size ($ trillions)",
-    "unit": "$T",
-    "narration": "And debt dwarfs everything. The global bond market — just tradable debt — is even bigger than the entire world stock market. When people picture finance, they think of stocks. But the real giant is debt.",
-    "data": [
-      {
-        "label": "stocks",
-        "value": 110
-      },
-      {
-        "label": "bonds (debt)",
-        "value": 140
-      }
-    ],
-    "highlight": 1
-  },
-  {
-    "id": "s15",
-    "type": "stage",
-    "narration": "Borrow at one percent, lend at seven, and keep the difference — on billions and billions of dollars, over and over, forever. A small spread on an enormous pile of money is a staggering, relentless river of profit.",
-    "motif": "thespread",
-    "caption": "borrow cheap, lend dear"
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "And here's a twist: you probably own a huge pile of this debt without realizing it. Your pension and your index funds hold bonds — loans to governments and companies. In that sense, you're already quietly on the lender's side of the game.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pie",
-        "label": "your pension holds bonds"
-      },
-      {
-        "name": "bond",
-        "label": "you ARE a lender"
+        "name": "exchange",
+        "label": "money ends barter"
       },
       {
         "name": "handshake",
-        "label": "the other side"
+        "label": "anyone can trade"
       }
     ]
   },
   {
-    "id": "s16",
-    "type": "title",
-    "narration": "And just when you think it can't get better for the lender, there's the move that made modern finance explode.",
-    "heading": "Securitization",
-    "kicker": "sell the debt itself"
-  },
-  {
-    "id": "s17",
+    "id": "s14",
     "type": "character",
-    "narration": "Here's the problem the spread creates: once a bank lends out its money, it's stuck waiting years to get it back, limiting how many loans it can make. So Wall Street invented a way to un-stick it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "clock",
-        "label": "stuck waiting years"
-      },
-      {
-        "name": "bank",
-        "label": "limited lending"
-      },
-      {
-        "name": "magichat",
-        "label": "a clever fix"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "screenshot",
-    "narration": "The fix is securitization — pooling together loads of debts, like mortgages, and selling their future payments to investors as a brand-new security.",
-    "sourceId": "wiki-securitization"
-  },
-  {
-    "id": "s19",
-    "type": "stage",
-    "narration": "So a bank makes a thousand loans, bundles them into a bond, and sells that bond to investors. It instantly gets its cash back — plus fees — and can immediately lend it all out again. The same dollar, working again and again.",
-    "motif": "securitizemachine",
-    "caption": "package debt, sell it, lend the same dollar again"
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "In 2008, this machine went berserk. Banks bundled rotten mortgages into complex bonds called CDOs, got them stamped 'safe,' and sold them worldwide. When the underlying loans failed, the securitization machine didn't just stall — it detonated the planet.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "houseofcards",
-        "label": "rotten loans, bundled"
-      },
-      {
-        "name": "shredder",
-        "label": "stamped 'safe'"
-      },
-      {
-        "name": "bomb",
-        "label": "then it blew up"
-      }
-    ],
-    "expression": "worried"
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "narration": "This turned debt from a slow, patient business into a high-speed factory. Banks could now originate loans endlessly, collecting fees at every step, while passing the risk off to someone else entirely.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "factory",
-        "label": "a debt factory"
-      },
-      {
-        "name": "receipt",
-        "label": "fees at every step"
-      },
-      {
-        "name": "warning",
-        "label": "risk passed on"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "screenshot",
-    "narration": "The ultimate form is the bond — a security where the issuer, the debtor, owes the holder, the creditor, a stream of payments. Debt, turned into a tradable product you can buy and sell like a stock.",
-    "sourceId": "wiki-bond"
-  },
-  {
-    "id": "s50",
-    "type": "timeline",
-    "title": "The history of debt",
-    "narration": "The whole arc is remarkable. Clay-tablet IOUs in ancient Mesopotamia. The goldsmiths' trick. Government bonds funding wars and railroads. The securitization boom. The 2008 blow-up. And today, a booming new world of private credit.",
-    "events": [
-      {
-        "year": "ancient",
-        "label": "clay tablets",
-        "icon": "iou"
-      },
-      {
-        "year": "1600s",
-        "label": "goldsmiths",
-        "icon": "goldbar"
-      },
-      {
-        "year": "1800s",
-        "label": "bonds",
-        "icon": "capitol"
-      },
-      {
-        "year": "2008",
-        "label": "the blow-up",
-        "icon": "bomb"
-      },
-      {
-        "year": "today",
-        "label": "private credit",
-        "icon": "bank"
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s22",
-    "type": "title",
-    "narration": "And underneath it all hums the quiet engine that makes debt so powerful over time.",
-    "heading": "It Compounds",
-    "kicker": "interest on interest"
-  },
-  {
-    "id": "s23",
-    "type": "screenshot",
-    "narration": "That engine is compound interest — interest charged not just on the original sum, but on the accumulated interest, too. For a lender, it's a money machine. For a borrower, it's a trap.",
-    "sourceId": "wiki-compound"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "There's a sly final perk, mostly for governments: inflation. When prices rise, the real value of a fixed debt quietly shrinks. So a little inflation is a silent gift to every big borrower — which is a large part of why the biggest debtors rarely fear it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "grocerybag",
-        "label": "inflation rises"
-      },
-      {
-        "name": "iou",
-        "label": "debt shrinks in real terms"
-      },
-      {
-        "name": "capitol",
-        "label": "a gift to borrowers"
-      }
-    ]
-  },
-  {
-    "id": "s24",
-    "type": "stage",
-    "narration": "An unpaid debt doesn't just grow. It accelerates — interest piling onto interest, the balance swelling faster and faster. The same magic that builds a saver's fortune works, in reverse, to swell a borrower's burden.",
-    "motif": "debtcompounds",
-    "caption": "it compounds, forever"
-  },
-  {
-    "id": "s52",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "borrow a fortune at a fixed rate",
-    "memeBottom": "let inflation quietly shrink what you owe",
-    "narration": "It's the oldest trick in the sovereign playbook: borrow heavily, then gently inflate the currency, and the mountain of debt quietly melts away — paid off in ever-cheaper dollars."
-  },
-  {
-    "id": "s25",
-    "type": "title",
-    "narration": "Put all of this together, and you see why debt didn't just become profitable. It took over.",
-    "heading": "It Took Over",
-    "kicker": "debt is everywhere"
-  },
-  {
-    "id": "s26",
-    "type": "stage",
-    "narration": "Look around and almost everything runs on debt. Your home is a mortgage. Your car, a loan. Your purchases, a credit card. Your degree, a student loan. And your government runs on a mountain of bonds.",
-    "motif": "debteverywhere",
-    "caption": "it's embedded in everything"
-  },
-  {
-    "id": "s64",
-    "type": "character",
-    "narration": "The single biggest customer for debt is the one that can never be cut off: the government. Nations borrow endlessly, roll the debt over forever, and almost never fully repay — making government bonds the largest, steadiest debt product on Earth.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "capitol",
-        "label": "the biggest borrower"
-      },
-      {
-        "name": "bond",
-        "label": "rolls over forever"
-      },
-      {
-        "name": "debtclock",
-        "label": "never really repaid"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "screenshot",
-    "narration": "Economists even have a word for this takeover: financialization — the growing dominance of finance, in which debt levels and financial services swelled to the center of the whole economy.",
-    "sourceId": "wiki-financialization"
-  },
-  {
-    "id": "s28",
-    "type": "character",
-    "narration": "The numbers are staggering. Total global debt is now hundreds of trillions of dollars — several times the size of the entire world economy. We don't just use debt. In a real sense, the modern economy is built out of it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "debtclock",
-        "label": "hundreds of $trillions"
-      },
-      {
-        "name": "globe",
-        "label": "> the world economy"
-      },
-      {
-        "name": "ballchain",
-        "label": "built out of debt"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "The scariest part is that it never seems to stop. Global debt has climbed, decade after decade, through every crisis, in what some call a 'debt super-cycle.' We solve a debt crisis, remarkably, mostly by creating even more debt.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "debt only rises"
-      },
-      {
-        "name": "debtclock",
-        "label": "a 'super-cycle'"
-      },
-      {
-        "name": "warning",
-        "label": "more debt fixes debt"
-      }
-    ],
-    "expression": "worried"
-  },
-  {
-    "id": "s29",
-    "type": "title",
-    "narration": "But a product this powerful has a very dark side.",
-    "heading": "The Dark Side",
-    "kicker": "when the product bites"
-  },
-  {
-    "id": "s30",
-    "type": "screenshot",
-    "narration": "At its worst, lending becomes usury — making loans that unfairly enrich the lender, trapping the borrower. For thousands of years, it was condemned as a sin for exactly this reason.",
-    "sourceId": "wiki-usury"
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "Not every culture embraced it, either. Charging interest, as 'usury,' has been condemned by major religions for millennia — and Islamic finance to this day is built around sharing profit and risk instead of simply charging interest. Debt's dominance was never inevitable.",
+    "narration": "The second job is a hidden superpower. Money is a common ruler. It lets you compare a house, an hour of work, and a cup of coffee on one single scale. Without a shared unit of account, you simply couldn't run a modern economy at all.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "condemned for ages"
+        "label": "one common ruler"
+      },
+      {
+        "name": "house",
+        "label": "price a house…"
+      },
+      {
+        "name": "pricetag",
+        "label": "…and a coffee"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "screenshot",
+    "narration": "The third job is the trickiest for fiat money: being a store of value, something that holds its purchasing power into the future, so what you save today is still worth something tomorrow.",
+    "sourceId": "wiki-store"
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "narration": "This is fiat's weak spot, and we'll come back to it. Gold holds its value for centuries. Paper money slowly leaks value to inflation every single year. But as long as that leak stays slow, the paper does the job well enough — and it's far more convenient.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldbar",
+        "label": "gold holds for ages"
+      },
+      {
+        "name": "bucket",
+        "label": "paper slowly leaks"
+      },
+      {
+        "name": "percent",
+        "label": "…if the leak stays slow"
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "type": "title",
+    "narration": "So money is defined by what it does. But what actually forces people to use this particular paper?",
+    "heading": "Legal Tender",
+    "kicker": "you must accept it"
+  },
+  {
+    "id": "s18",
+    "type": "screenshot",
+    "narration": "The first answer is a legal one. Fiat money is legal tender — a form of money the law recognizes as valid for settling a debt. If someone owes you money, you can't legally refuse these notes.",
+    "sourceId": "wiki-legal"
+  },
+  {
+    "id": "s19",
+    "type": "character",
+    "narration": "Look closely and you'll see it printed right on a dollar bill: 'this note is legal tender for all debts, public and private.' It's a quiet little promise from the government, baked right into the paper, that this thing will always settle what you owe.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "banknote",
+        "label": "printed on the bill"
+      },
+      {
+        "name": "decree",
+        "label": "'legal tender…'"
       },
       {
         "name": "handshake",
-        "label": "share risk instead"
+        "label": "settles all debts"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "image",
+    "src": "img/memes/change.jpg",
+    "meme": "Change My Mind",
+    "memeTop": "money only has value",
+    "memeBottom": "because we all agree it does",
+    "narration": "But if you push on it, legal tender still feels flimsy. A law can tell you to accept the paper, but it can't really force you to want it. There has to be something deeper creating genuine, burning demand. And there is."
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "This next reason is the one almost nobody thinks about — and it might be the most important of all.",
+    "heading": "The Real Anchor: Taxes",
+    "kicker": "why you truly need it"
+  },
+  {
+    "id": "s22",
+    "type": "character",
+    "narration": "Here's the deepest answer to our whole question. The government doesn't just print the money. It also demands that you pay your taxes — and it will only accept its own currency to settle them. Suddenly, every single person needs those dollars.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "you owe taxes"
       },
       {
-        "name": "globe",
-        "label": "another way exists"
+        "name": "dollar",
+        "label": "payable only in $"
+      },
+      {
+        "name": "crowd",
+        "label": "everyone needs $"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "narration": "There's a whole theory built on this idea, called chartalism. It holds that fiat currency has value because governments impose taxes that must be paid in the currency they issue, creating demand for it.",
+    "sourceId": "wiki-chartalism"
+  },
+  {
+    "id": "s24",
+    "type": "stage",
+    "narration": "So picture the chain. The taxman only accepts dollars. That means every worker, shop, and company has to get their hands on dollars, or face the consequences. The government manufactures the demand for its own paper — simply by taxing you in it.",
+    "motif": "taxdemand",
+    "caption": "taxes manufacture the demand"
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "narration": "This is why a brand-new country can launch a brand-new currency, and have it work almost overnight. It doesn't need a mountain of gold. It just needs a tax, a police force to collect it, and the credible power to say: pay me in this, or else.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flag",
+        "label": "a new currency"
+      },
+      {
+        "name": "taxform",
+        "label": "+ a tax to back it"
+      },
+      {
+        "name": "shield",
+        "label": "works overnight"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "title",
+    "narration": "Taxes create the demand. But what turns that demand into trust you'd stake your savings on?",
+    "heading": "The Shared Story",
+    "kicker": "a collective belief"
+  },
+  {
+    "id": "s27",
+    "type": "character",
+    "narration": "Beyond the law and the taxman, there's one more ingredient, and it's almost magical: collective belief. You accept a dollar for your work only because you're confident the next person will accept it from you. It's a shared story we all agree to keep telling.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "we all accept it…"
+      },
+      {
+        "name": "handshake",
+        "label": "…because others will"
+      },
+      {
+        "name": "banknote",
+        "label": "a shared story"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "stage",
+    "narration": "Money is really a giant network of trust. Each person holds the note because everyone around them does too. Break that circle of belief, and the paper instantly becomes what it always physically was: nothing. Keep it, and the paper stays powerful.",
+    "motif": "sharedbelief",
+    "caption": "it works because we all agree it does"
+  },
+  {
+    "id": "s29",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "trade goats for grain",
+    "memeBottom": "trade paper that's just a shared belief — and it works better",
+    "narration": "It's easy to sneer at 'money is just belief.' But belief is an incredibly powerful technology. A shared fiction that millions of strangers all trust is exactly what lets a complex society function without everyone hauling gold around."
+  },
+  {
+    "id": "s30",
+    "type": "character",
+    "narration": "To see how flexible money really is, look at prisons, where cash is banned. Inmates spontaneously invent their own currencies — packs of cigarettes, or pouches of mackerel. It becomes money for one reason only: everyone inside agrees to accept it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "prison",
+        "label": "cash banned"
+      },
+      {
+        "name": "token",
+        "label": "cigarettes = money"
+      },
+      {
+        "name": "crowd",
+        "label": "because all agree"
       }
     ]
   },
   {
     "id": "s31",
+    "type": "title",
+    "narration": "But belief can't be infinite. If anyone could make this stuff, it would be worthless. So who controls the supply?",
+    "heading": "Who Controls It",
+    "kicker": "the scarcity engine"
+  },
+  {
+    "id": "s32",
+    "type": "screenshot",
+    "narration": "That job belongs to the central bank. A central bank is the institution that manages a nation's money, and crucially, it holds a monopoly on increasing the monetary base — the raw supply of money itself.",
+    "sourceId": "wiki-centralbank"
+  },
+  {
+    "id": "s33",
     "type": "character",
-    "narration": "The same compounding that quietly builds the bank's fortune can bury a family — payday loans at four hundred percent, credit card spirals, debts that grow faster than any paycheck can ever hope to shrink them.",
+    "narration": "This is the final piece. If you could print dollars at home, they'd be worthless. Fiat money only holds value because exactly one entity is allowed to create it, and it's trusted to keep it scarce. Trusted scarcity, not gold, is what props up the value.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "mousetrap",
-        "label": "the debt trap"
+        "name": "bank",
+        "label": "only one printer"
       },
       {
-        "name": "creditcard",
-        "label": "spiraling balances"
+        "name": "padlock",
+        "label": "kept scarce"
       },
       {
-        "name": "ballchain",
-        "label": "a weight that grows"
+        "name": "scale",
+        "label": "trusted scarcity"
       }
     ]
   },
   {
-    "id": "s32",
+    "id": "s34",
+    "type": "stage",
+    "narration": "And this is the knife's edge the whole system balances on. Print a sensible amount, and the money stays strong and trusted. Print too much, flooding the economy with paper, and each note is worth less and less. The power to create money is also the power to destroy it.",
+    "motif": "printmoney",
+    "caption": "scarcity is the discipline"
+  },
+  {
+    "id": "s35",
+    "type": "title",
+    "narration": "If trust and scarcity are what matter, you might wonder how we ever ended up relying on gold in the first place.",
+    "heading": "How We Got Here",
+    "kicker": "gold to paper to nothing"
+  },
+  {
+    "id": "s36",
     "type": "character",
-    "narration": "And when the debt factory gets reckless, the whole thing can blow up — as it did in 2008, when securitized mortgage debt, built on loans that could never be repaid, detonated the global economy.",
+    "narration": "For almost all of history, money had to be a thing. Gold and silver coins were money precisely because the metal was valuable, scarce, and hard to fake. The coin was worth something even if you melted it down. That's called commodity money.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldbar",
+        "label": "gold had value"
+      },
+      {
+        "name": "coins",
+        "label": "worth the metal"
+      },
+      {
+        "name": "nugget",
+        "label": "commodity money"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "screenshot",
+    "narration": "That evolved into the gold standard — a system where the currency's value was defined by a fixed quantity of gold, and you could, in theory, trade your paper notes in for the real metal.",
+    "sourceId": "wiki-gold"
+  },
+  {
+    "id": "s38",
+    "type": "character",
+    "narration": "So for a long time, paper money was really just a convenient claim ticket. The note was a promise: hand it in, and we'll give you this much gold. The paper was trusted because, in the vault, there was supposed to be real metal behind it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "banknote",
+        "label": "a claim on gold"
+      },
+      {
+        "name": "vault",
+        "label": "metal in the vault"
+      },
+      {
+        "name": "decree",
+        "label": "'redeemable for gold'"
+      }
+    ]
+  },
+  {
+    "id": "s39",
+    "type": "timeline",
+    "title": "From barter to pure belief",
+    "narration": "So the arc of money runs like this. Barter, then gold and silver coins, then paper notes backed by gold, then, in 1971, a single decision that cut the final cord — and today, money backed by nothing but trust.",
+    "events": [
+      {
+        "year": "ancient",
+        "label": "barter",
+        "icon": "basket"
+      },
+      {
+        "year": "coins",
+        "label": "gold & silver",
+        "icon": "coins"
+      },
+      {
+        "year": "1800s",
+        "label": "gold standard",
+        "icon": "goldbar"
+      },
+      {
+        "year": "1971",
+        "label": "cord cut",
+        "icon": "scissors"
+      },
+      {
+        "year": "today",
+        "label": "pure fiat",
+        "icon": "banknote"
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s40",
+    "type": "character",
+    "narration": "That 1971 moment has a name: the Nixon shock. Facing a run on America's gold, President Nixon went on television and suspended the dollar's convertibility into gold. He called it temporary. It was permanent.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "August 1971"
+      },
+      {
+        "name": "goldbar",
+        "label": "a run on the gold"
+      },
+      {
+        "name": "scissors",
+        "label": "'temporary'… forever"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "image",
+    "src": "img/nixon.jpg",
+    "label": "RICHARD NIXON",
+    "caption": "Closed the gold window, Aug 15, 1971",
+    "narration": "With a few words, Richard Nixon severed the thousands-of-years-old link between money and metal. The dollar — and soon every currency chained to it — became pure fiat, floating free. It was one of the biggest financial decisions in human history."
+  },
+  {
+    "id": "s42",
+    "type": "stage",
+    "narration": "Picture the dollar as a balloon that had always been tied, by a golden string, to a bar of real metal. In 1971, someone cut the string. The dollar didn't crash. It just floated up, untethered — its value now resting on trust alone.",
+    "motif": "goldcut",
+    "caption": "the gold anchor is cut — money floats free"
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "narration": "Here's why that was so tempting. Gold is rigid. There's only so much of it, so a government on a gold standard can't easily respond to a crisis. Fiat money is flexible — in a crash or a war, the central bank can create money fast to keep things from seizing up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldbar",
+        "label": "gold is rigid"
+      },
+      {
+        "name": "printer",
+        "label": "fiat is flexible"
+      },
+      {
+        "name": "lifering",
+        "label": "rescue in a crisis"
+      }
+    ]
+  },
+  {
+    "id": "s44",
+    "type": "title",
+    "narration": "That flexibility is fiat's great gift. It's also its great curse. Because the whole thing rests on one fragile thing.",
+    "heading": "When Trust Dies",
+    "kicker": "the dark side"
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "If fiat money's value comes from trust, then the terrifying flip side is obvious. When that trust evaporates, the value can vanish just as fast. A currency backed by belief is only ever as strong as the belief behind it.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "bomb",
-        "label": "2008"
+        "name": "gauge",
+        "label": "trust is the fuel"
       },
       {
-        "name": "houseofcards",
-        "label": "debt built on debt"
+        "name": "banknote",
+        "label": "value is belief"
       },
       {
-        "name": "chartdown",
-        "label": "it detonated"
+        "name": "warning",
+        "label": "belief can vanish"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "screenshot",
+    "narration": "When belief breaks, you get hyperinflation — a very high and accelerating inflation that quickly erodes the real value of the local currency, until people rush to get rid of it.",
+    "sourceId": "wiki-hyper"
+  },
+  {
+    "id": "s47",
+    "type": "stage",
+    "narration": "Watch what happens. As confidence in the money drops, its real worth melts away with it. The number on the note stays the same, but what it can actually buy collapses toward zero. Trust and value fall together, hand in hand.",
+    "motif": "confidencecollapse",
+    "caption": "when trust dies, so does the money"
+  },
+  {
+    "id": "s48",
+    "type": "character",
+    "narration": "The classic nightmare is Weimar Germany in the 1920s. Prices doubled every few days. People were paid twice a day and ran to spend it before it halved. Money became so worthless that it was cheaper to burn banknotes for heat than to buy firewood with them.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "wheelbarrow",
+        "label": "a barrow of cash"
+      },
+      {
+        "name": "brokennote",
+        "label": "worth less than paper"
+      },
+      {
+        "name": "thermometer",
+        "label": "burned for heat"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Peak monthly inflation (%, log-ish scale)",
+    "unit": "x",
+    "narration": "And it keeps happening. Zimbabwe printed a one-hundred-trillion-dollar note. Venezuela's currency became so worthless that shopkeepers weighed stacks of it instead of counting it. Different countries, different decades, but the exact same story: trust broke.",
+    "data": [
+      {
+        "label": "normal",
+        "value": 2
+      },
+      {
+        "label": "Weimar",
+        "value": 300
+      },
+      {
+        "label": "Zimbabwe",
+        "value": 790
+      }
+    ],
+    "highlight": 2
+  },
+  {
+    "id": "s50",
+    "type": "image",
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "can't pay the bills? just print more money",
+    "memeBottom": "nobody trusts the money anymore — hyperinflation",
+    "narration": "Hyperinflation almost always starts the same way: a government that can't pay its bills just prints the money to cover them. It works for a moment. Then people notice, trust snaps, and the paper races toward its true physical value — nothing."
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "This is the deep paradox of fiat money. The very flexibility that lets it rescue an economy is the same power that can wreck it. There is no gold in a vault standing in the way. The only real limit is the discipline, and the trust, of the people in charge.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "printer",
+        "label": "no physical limit"
+      },
+      {
+        "name": "scale",
+        "label": "only discipline"
+      },
+      {
+        "name": "gauge",
+        "label": "and trust"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "It's also why some people flee to gold, or to Bitcoin, whenever they stop trusting the money-printers. The whole pitch of those assets is the same: something that no government can quietly create more of in the middle of the night.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldbar",
+        "label": "flee to gold…"
+      },
+      {
+        "name": "token",
+        "label": "…or Bitcoin"
+      },
+      {
+        "name": "padlock",
+        "label": "can't be printed"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "title",
+    "narration": "So, after all that, what's the real lesson sitting inside that twenty-dollar bill?",
+    "heading": "The Lesson",
+    "kicker": "trust, taxes, scarcity"
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "Fiat money isn't a scam, and it isn't magic. It's a piece of social technology. Its value stands on three legs: the state demands it through taxes, the law backs it as legal tender, and we all collectively believe in it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "taxes demand it"
+      },
+      {
+        "name": "decree",
+        "label": "law backs it"
+      },
+      {
+        "name": "crowd",
+        "label": "we believe in it"
       }
     ]
   },
   {
     "id": "s55",
-    "type": "image",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "loans too risky for banks",
-    "memeBottom": "booming 'private credit' funds, lightly watched",
-    "narration": "And the machine keeps evolving. The hot new frontier is 'private credit' — lightly regulated funds lending where banks now fear to, quietly building the next tower of debt, further from any watchdog's eye."
-  },
-  {
-    "id": "s33",
-    "type": "title",
-    "narration": "So what's the real lesson hiding inside the most profitable product in history?",
-    "heading": "The Lesson",
-    "kicker": "which side are you on?"
-  },
-  {
-    "id": "s34",
-    "type": "character",
-    "narration": "Debt itself isn't evil. It's a genuine miracle. It lets you buy a home decades early, start a business, or build a railroad. Used well, borrowing against the future can build an entire modern world.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "buy a home early"
-      },
-      {
-        "name": "factory",
-        "label": "start a business"
-      },
-      {
-        "name": "bridge",
-        "label": "build the world"
-      }
-    ]
+    "type": "compare",
+    "narration": "And compared to the old way, it's a genuine marvel. Commodity money was honest but rigid — your economy was shackled to how much metal you could dig up. Fiat money is flexible and convenient, but it demands something priceless in return: trust that doesn't get abused.",
+    "left": {
+      "title": "Commodity money",
+      "value": "honest, but rigid",
+      "icon": "goldbar"
+    },
+    "right": {
+      "title": "Fiat money",
+      "value": "flexible, but fragile",
+      "icon": "banknote"
+    }
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "This is the crucial distinction: good debt versus bad debt. Borrowing cheaply to buy an asset that grows — a home, a business, an education — can build wealth. Borrowing expensively to buy things that shrink — gadgets on a credit card — quietly destroys it.",
+    "narration": "That flexibility genuinely changed the world. Being able to create money in an emergency is a big part of why modern recessions are painful but survivable, instead of the decade-long collapses of the gold-standard era. Fiat, handled well, is a powerful tool.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "good: buy growth"
+        "name": "lifering",
+        "label": "rescue in a crash"
       },
       {
-        "name": "creditcard",
-        "label": "bad: buy junk"
+        "name": "chartup",
+        "label": "faster recovery"
       },
       {
-        "name": "scale",
-        "label": "know the difference"
-      }
-    ]
-  },
-  {
-    "id": "s35",
-    "type": "character",
-    "narration": "The whole game comes down to one brutal question: which side of the debt are you on? Are you the one paying the interest — or the one collecting it? Because those two people have wildly different futures.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "ballchain",
-        "label": "paying interest?"
-      },
-      {
-        "name": "moneytree",
-        "label": "or collecting it?"
-      },
-      {
-        "name": "scale",
-        "label": "two different lives"
-      }
-    ]
-  },
-  {
-    "id": "s65",
-    "type": "character",
-    "narration": "And the asymmetry is brutal. The lender's interest compounds in their favor while they sleep. The borrower's interest compounds against them while they panic. Same force, same math — pointed in opposite directions, at two very different people.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "moneytree",
-        "label": "lender: grows asleep"
-      },
-      {
-        "name": "ballchain",
-        "label": "borrower: grows in panic"
-      },
-      {
-        "name": "scale",
-        "label": "same math, opposite ends"
-      }
-    ],
-    "expression": "worried"
-  },
-  {
-    "id": "s36",
-    "type": "character",
-    "narration": "So the practical takeaway is simple, if not easy. Ruthlessly avoid being the high-interest borrower — the credit card, the payday loan. And wherever you can, become the lender instead, by owning the banks and bonds through your investments.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "scissors",
-        "label": "kill bad debt"
-      },
-      {
-        "name": "bond",
-        "label": "own bonds"
-      },
-      {
-        "name": "pie",
-        "label": "own the banks"
+        "name": "bridge",
+        "label": "it built the modern world"
       }
     ]
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "And becoming the lender is easier than it sounds. You don't need to open a bank. Simply by owning broad index funds, you already own slices of the banks and the bonds — quietly collecting a sliver of that endless river of interest yourself.",
-    "pose": "present",
+    "narration": "But never forget the fragile part. Because fiat money slowly leaks value to inflation, quietly holding all your wealth in cash is a slow bleed. Over decades, the paper is designed to lose purchasing power. That's not a bug — it's how the system runs.",
+    "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "pie",
-        "label": "own index funds"
+        "name": "bucket",
+        "label": "cash slowly leaks"
       },
       {
-        "name": "bank",
-        "label": "= own the lenders"
+        "name": "grocerybag",
+        "label": "buys less each year"
       },
       {
-        "name": "moneytree",
-        "label": "collect the interest"
+        "name": "percent",
+        "label": "by design"
       }
     ]
   },
   {
-    "id": "s37",
-    "type": "title",
-    "narration": "So let's total up the perfect product.",
-    "heading": "The Final Math",
-    "kicker": "why debt wins"
-  },
-  {
-    "id": "s38",
-    "type": "chalkboard",
-    "narration": "Sell money and get more back. Create the raw material from nothing. Pocket the spread between what you pay and charge. Securitize it to lend again. Let it compound. And wrap it around everything. That's the most profitable product ever built.",
-    "lines": [
-      "sell money → get more back (interest)",
-      "raw material → created from nothing",
-      "the spread + securitization → lend endlessly",
-      "+ compounding, in everything → debt wins"
+    "id": "s58",
+    "type": "character",
+    "narration": "So the practical takeaway is simple. Use fiat money for what it's brilliant at — spending and trading. But don't trust it to store your wealth for decades. Convert your savings into things that hold value: ownership of businesses, property, and real assets.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "coins",
+        "label": "spend in cash"
+      },
+      {
+        "name": "pie",
+        "label": "save in assets"
+      },
+      {
+        "name": "house",
+        "label": "own real things"
+      }
     ]
   },
   {
-    "id": "s39",
+    "id": "s59",
+    "type": "chalkboard",
+    "narration": "So let's total it all up. Why is a scrap of paper worth twenty dollars? Because the government commands it, taxes force you to want it, the law makes you accept it, we all agree to believe in it, and one trusted institution keeps it scarce.",
+    "lines": [
+      "the state decrees it → legal tender",
+      "taxes must be paid in it → real demand",
+      "we all believe in it → a shared story",
+      "the central bank keeps it scarce → it holds value"
+    ]
+  },
+  {
+    "id": "s60",
     "type": "character",
-    "narration": "Debt is the quiet operating system of the modern world. It built our cities and our fortunes — and it also built our traps. The difference between those two outcomes is almost always which side of the loan you're standing on.",
+    "narration": "The value was never in the paper. It never was. The value lives in the promise, the law, the taxman, and the trust of millions of strangers all agreeing, every single day, to keep the story going.",
     "pose": "explain",
     "props": [
       {
-        "name": "bridge",
-        "label": "it built the world"
+        "name": "banknote",
+        "label": "not in the paper"
       },
       {
-        "name": "mousetrap",
-        "label": "and the traps"
+        "name": "handshake",
+        "label": "in the promise"
       },
       {
-        "name": "scale",
-        "label": "pick your side"
+        "name": "crowd",
+        "label": "and the shared trust"
       }
     ]
   },
   {
-    "id": "s40",
+    "id": "s61",
     "type": "character",
-    "narration": "So the next time a bank offers you a shiny new loan with a friendly smile, you'll remember what's really happening — they're selling you the most profitable product in history, and quietly hoping you'll be the one who pays for it.",
+    "narration": "So the next time someone hands you a twenty, you'll see it for what it really is. Not a thing of value, but a tiny, portable piece of trust — a shared belief that is, quite literally, holding the whole modern world together.",
     "pose": "present",
     "props": [
       {
-        "name": "bank",
-        "label": "the friendly offer"
+        "name": "banknote",
+        "label": "a piece of trust"
       },
       {
-        "name": "ballchain",
-        "label": "the real product"
+        "name": "globe",
+        "label": "holds the world together"
       },
       {
-        "name": "calculator",
+        "name": "handshake",
         "label": "now you see it"
       }
     ]
   },
   {
-    "id": "s41",
+    "id": "s62",
     "type": "character",
-    "narration": "If this changed how you see that little word 'debt,' hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this changed how you look at the cash in your wallet, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "moneytree",
+        "name": "banknote",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s42",
+    "id": "s63",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

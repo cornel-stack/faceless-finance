@@ -162,7 +162,9 @@ export interface StageScene extends Base {
     // EP048 (gold) additions:
     | "goldrecord" | "goldvsrates" | "relationshipbreaks" | "cbgoldbuying" | "antidollar" | "insurancenotengine"
     // EP049 (debt as a product) additions:
-    | "sellmoney" | "freerawmaterial" | "thespread" | "securitizemachine" | "debtcompounds" | "debteverywhere";
+    | "sellmoney" | "freerawmaterial" | "thespread" | "securitizemachine" | "debtcompounds" | "debteverywhere"
+    // EP050 (why fiat money has value) additions:
+    | "fiatdecree" | "taxdemand" | "moneyjobs" | "sharedbelief" | "goldcut" | "confidencecollapse";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

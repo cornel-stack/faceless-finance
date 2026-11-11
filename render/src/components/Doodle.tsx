@@ -89,6 +89,8 @@ export type DoodleName =
   | "umbrella" | "nugget"
   // EP049 (debt as a product) additions:
   | "moneytree" | "ballchain"
+  // EP050 (why fiat money has value) additions:
+  | "decree" | "brokennote"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1688,6 +1690,29 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={30} cy={34} d={12} fill="none" strokeWidth={SW} />
           <RCircle cx={40} cy={47} d={12} fill="none" strokeWidth={SW} />
           <RLine x1={46} y1={54} x2={52} y2={60} strokeWidth={SW} />
+        </>
+      );
+    case "decree":
+      // A rolled certificate / proclamation with a wax seal — "by government order".
+      return (
+        <>
+          <RRect x={22} y={20} w={56} h={60} fill={PARCH} strokeWidth={SW} />
+          <RLine x1={30} y1={34} x2={70} y2={34} strokeWidth={1.8} />
+          <RLine x1={30} y1={44} x2={70} y2={44} strokeWidth={1.8} />
+          <RLine x1={30} y1={54} x2={62} y2={54} strokeWidth={1.8} />
+          <RCircle cx={64} cy={70} d={22} fill={RED} strokeWidth={SW} />
+          <text x={64} y={75} fontSize={12} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">★</text>
+        </>
+      );
+    case "brokennote":
+      // A torn banknote — a currency that has lost its value / trust.
+      return (
+        <>
+          <RPath d="M12 34 L46 30 L44 72 L12 76 Z" fill="#cfe3d4" strokeWidth={SW} />
+          <RPath d="M54 30 L88 34 L88 76 L56 72 Z" fill="#cfe3d4" strokeWidth={SW} />
+          <RPath d="M46 30 L50 42 L44 52 L50 62 L44 72" fill="none" strokeWidth={1.8} />
+          <RPath d="M54 30 L50 42 L56 52 L50 62 L56 72" fill="none" strokeWidth={1.8} />
+          <text x={28} y={58} fontSize={16} fontWeight={900} fill="#2f6b46" textAnchor="middle" fontFamily="Georgia, serif">$</text>
         </>
       );
   }

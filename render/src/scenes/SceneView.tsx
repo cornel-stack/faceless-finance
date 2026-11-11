@@ -3473,6 +3473,152 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={502} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">it's embedded in everything</text>
       </svg>
     );
+  } else if (m === "fiatdecree") {
+    // A plain scrap of paper becomes money the instant the state stamps it.
+    const stamp = spring({ frame, fps, delay: fps * 0.9, config: { damping: 9 } });
+    const become = interpolate(frame, [fps * 1.3, fps * 2.1], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>a worthless scrap of paper…</text>
+        <g transform="translate(490 290)">
+          <rect x={-150} y={-85} width={300} height={170} rx={10} fill={interpolate(become, [0, 1], [0.0001, 1]) < 0.5 ? "#efe9da" : green} stroke={ink} strokeWidth={5} />
+          <rect x={-150} y={-85} width={300} height={170} rx={10} fill={green} stroke={ink} strokeWidth={5} opacity={become} />
+          <text y={-6} fontSize={64} fontWeight={900} fill={become > 0.5 ? "#fff" : "#b9b3a4"} textAnchor="middle" fontFamily="Georgia, serif">$20</text>
+          <text y={40} fontSize={18} fontWeight={800} fill={become > 0.5 ? "#eafaf0" : "#b9b3a4"} textAnchor="middle" fontFamily={sans} opacity={become}>now worth $20</text>
+        </g>
+        <g transform={`translate(490 170) scale(${Math.min(1.1, stamp)}) rotate(-12)`} opacity={Math.min(1, stamp)}>
+          <rect x={-120} y={-34} width={240} height={68} rx={8} fill="none" stroke={red} strokeWidth={6} />
+          <text y={12} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">LEGAL TENDER</text>
+        </g>
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">value by declaration, not substance</text>
+      </svg>
+    );
+  } else if (m === "taxdemand") {
+    // The taxman accepts only the state's currency — so everyone must get it.
+    const reveal = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    const people = [0, 1, 2, 3];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 150)">
+          <rect x={-110} y={-56} width={220} height={112} rx={10} fill={tan} stroke={ink} strokeWidth={5} />
+          <text y={-14} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>THE TAXMAN</text>
+          <text y={22} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>"pay me in $ — only $"</text>
+        </g>
+        {people.map((i) => {
+          const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth);
+          const x = 140 + i * 240;
+          const y = 400;
+          return (
+            <g key={i} opacity={op}>
+              <circle cx={x} cy={y} r={26} fill={parch} stroke={ink} strokeWidth={4} />
+              <text x={x} y={y + 7} fontSize={22} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+              <path d={`M${x} ${y - 32} Q${490} ${y - 170} 490 ${210}`} fill="none" stroke={green} strokeWidth={3} strokeDasharray="6 6" />
+              <text x={x} y={y + 54} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>must get $</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">taxes manufacture the demand</text>
+      </svg>
+    );
+  } else if (m === "moneyjobs") {
+    // The three jobs money has to do.
+    const jobs: [string, string, number][] = [
+      ["medium of\nexchange", "swap it for stuff", 0],
+      ["unit of\naccount", "price everything in it", 1],
+      ["store of\nvalue", "hold wealth over time", 2],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">money has three jobs</text>
+        {jobs.map(([title, sub, i]) => {
+          const pop = spring({ frame, fps, delay: fps * (0.5 + (i as number) * 0.5), config: { damping: 10 } });
+          const x = 190 + (i as number) * 300;
+          return (
+            <g key={i as number} transform={`translate(${x} 290) scale(${Math.min(1, pop)})`}>
+              <circle r={92} fill={[blue, gold, green][i as number]} stroke={ink} strokeWidth={5} />
+              {(title as string).split("\n").map((ln, k) => (
+                <text key={k} y={-8 + k * 24} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{ln}</text>
+              ))}
+              <text y={130} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{sub as string}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={492} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">do all three, and you are money</text>
+      </svg>
+    );
+  } else if (m === "sharedbelief") {
+    // A ring of people all accepting the same note — value from consensus.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const n = 7;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 280)">
+          <circle r={62} fill={green} stroke={ink} strokeWidth={5} />
+          <text y={10} fontSize={40} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </g>
+        {Array.from({ length: n }).map((_, i) => {
+          const a = (i / n) * 6.283 - 1.57;
+          const op = interpolate(reveal, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          const x = 490 + 230 * Math.cos(a);
+          const y = 280 + 170 * Math.sin(a);
+          return (
+            <g key={i} opacity={op}>
+              <line x1={490} y1={280} x2={x} y2={y} stroke={gold} strokeWidth={2.5} strokeDasharray="5 5" />
+              <circle cx={x} cy={y} r={24} fill={parch} stroke={ink} strokeWidth={4} />
+              <text x={x} y={y + 6} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>✓</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={498} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">it works because we all agree it does</text>
+      </svg>
+    );
+  } else if (m === "goldcut") {
+    // 1971: the chain tethering the dollar to gold is cut; it floats free.
+    const cut = interpolate(frame, [fps * 1.1, fps * 1.5], [0, 1], clampBoth);
+    const drift = interpolate(frame, [fps * 1.5, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>August 15, 1971</text>
+        <g transform="translate(300 360)">
+          <rect x={-70} y={-40} width={140} height={80} rx={8} fill={gold} stroke={ink} strokeWidth={5} />
+          <text y={8} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>GOLD</text>
+        </g>
+        <path d={`M300 320 Q400 ${230 + cut * 0} 490 ${200 - drift * 110}`} fill="none" stroke={ink} strokeWidth={5} strokeDasharray="10 8" opacity={1 - cut} />
+        <g transform={`translate(${490 + drift * 150} ${200 - drift * 120}) rotate(${drift * 18})`}>
+          <rect x={-74} y={-44} width={148} height={88} rx={8} fill={green} stroke={ink} strokeWidth={5} />
+          <text y={12} fontSize={44} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </g>
+        {cut > 0.2 && (
+          <g transform="translate(400 258)" opacity={interpolate(cut, [0.2, 0.6], [0, 1], clampBoth)}>
+            <text fontSize={40} textAnchor="middle" fontFamily={sans}>✂</text>
+          </g>
+        )}
+        <text x={VW / 2} y={494} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the gold anchor is cut — money floats free</text>
+      </svg>
+    );
+  } else if (m === "confidencecollapse") {
+    // Confidence gauge drops; the note's real value melts toward zero.
+    const drop = interpolate(frame, [fps * 0.6, fps * 2.4], [0, 1], clampBoth);
+    const conf = Math.round(100 * (1 - drop));
+    const worth = Math.max(0, Math.round(100 * Math.pow(1 - drop, 3)));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>lose the trust, lose the money</text>
+        <g transform="translate(290 300)">
+          <text y={-120} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>confidence</text>
+          <rect x={-46} y={-100} width={92} height={200} rx={10} fill="#efe9da" stroke={ink} strokeWidth={5} />
+          <rect x={-46} y={100 - 2 * conf} width={92} height={2 * conf} rx={6} fill={drop > 0.6 ? red : green} />
+          <text y={140} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{conf}%</text>
+        </g>
+        <path d="M400 290 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform={`translate(700 300) scale(${0.6 + 0.4 * (worth / 100)})`} opacity={0.35 + 0.65 * (worth / 100)}>
+          <rect x={-100} y={-58} width={200} height={116} rx={8} fill={green} stroke={ink} strokeWidth={5} />
+          <text y={2} fontSize={34} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">worth</text>
+          <text y={40} fontSize={26} fontWeight={900} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>{worth}¢</text>
+        </g>
+        <text x={VW / 2} y={494} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">when trust dies, so does the money</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
