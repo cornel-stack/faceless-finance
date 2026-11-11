@@ -3095,6 +3095,72 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">algorithms trading in microseconds</text>
       </svg>
     );
+  } else if (m === "fundpool") {
+    // Many small investors' money flows into one shared fund.
+    const t = interpolate(frame, [fps * 0.3, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {Array.from({ length: 7 }, (_, i) => { const a = (i / 7) * 6.283; const x0 = 490 + 300 * Math.cos(a); const y0 = 270 + 300 * Math.sin(a); const x = x0 + (490 - x0) * t; const y = y0 + (270 - y0) * t; return <g key={i} transform={`translate(${x} ${y})`} opacity={1 - t * 0.4}><circle r={22} fill="#8a929a" stroke={ink} strokeWidth={3} /><text y={6} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <g transform="translate(490 270)"><circle r={70 * (0.6 + 0.4 * t)} fill={gold} stroke={ink} strokeWidth={6} /><text y={8} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one fund</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">many wallets → one big pool</text>
+      </svg>
+    );
+  } else if (m === "mutualvsetf") {
+    // A mutual fund prices once a day (clock) vs an ETF trading live (ticker).
+    const tick = frame;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(270 250)"><circle r={90} fill="#fff" stroke={ink} strokeWidth={6} /><line x1={0} y1={0} x2={0} y2={-60} stroke={ink} strokeWidth={5} transform={`rotate(${(tick * 0.6) % 360})`} /><text y={150} fontSize={20} fontWeight={900} fill={blue} textAnchor="middle" fontFamily={sans}>MUTUAL FUND</text><text y={178} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>priced once a day</text></g>
+        <g transform="translate(720 250)"><rect x={-100} y={-70} width={200} height={140} rx={10} fill="#2b2f33" stroke={ink} strokeWidth={5} /><path d={`M-80 ${20 + Math.sin(tick / 8) * 18} L-40 ${0 + Math.sin(tick / 7) * 18} L0 ${20 + Math.sin(tick / 9) * 18} L40 ${-10 + Math.sin(tick / 6) * 18} L80 ${5 + Math.sin(tick / 8) * 18}`} fill="none" stroke={green} strokeWidth={4} /><text y={150} fontSize={20} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>ETF</text><text y={178} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>trades all day long</text></g>
+        <text x={VW / 2} y={480} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">same idea, different plumbing</text>
+      </svg>
+    );
+  } else if (m === "fundmatrix") {
+    // A four-cell grid comparing the fund types.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const cells: [string, string, string][] = [["Index", "cheap · passive", green], ["Mutual", "active · daily", blue], ["ETF", "cheap · trades live", gold], ["Hedge", "pricey · exclusive", red]];
+    art = (
+      <svg width={VW} height={VH}>
+        {cells.map(([n, d, c], i) => { const op = interpolate(reveal, [i * 0.2, i * 0.2 + 0.25], [0, 1], clampBoth); const x = 300 + (i % 2) * 380; const y = 190 + Math.floor(i / 2) * 180; return <g key={i} opacity={op} transform={`translate(${x} ${y})`}><rect x={-162} y={-70} width={324} height={140} rx={12} fill={c} stroke={ink} strokeWidth={5} /><text y={-14} fontSize={28} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{n}</text><text y={28} fontSize={18} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+        <text x={VW / 2} y={500} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">four ways to own a basket of assets</text>
+      </svg>
+    );
+  } else if (m === "twentytwenty") {
+    // The hedge-fund '2 and 20' fee eating into your gains.
+    const t = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={490} y={120} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">"2 and 20"</text>
+        <g transform="translate(490 290)">
+          <rect x={-160} y={-120} width={320} height={240} rx={10} fill={green} stroke={ink} strokeWidth={5} />
+          <text y={-74} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>your gains</text>
+          <rect x={-160} y={-120} width={320} height={44 * t} fill={red} opacity={0.85} />
+          <rect x={44} y={-120} width={116} height={240 * t} fill={red} opacity={0.6} />
+        </g>
+        <text x={VW / 2} y={470} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">2% of everything + 20% of profits</text>
+      </svg>
+    );
+  } else if (m === "feeladder") {
+    // Expense ratios climbing: index tiny, active bigger, hedge enormous.
+    const grow = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    const bars: [string, string, number, string][] = [["index fund", "0.05%", 20, green], ["active mutual", "~1%", 120, blue], ["hedge fund", "2 + 20", 280, red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={78} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what they charge you</text>
+        <RLine x1={120} y1={430} x2={VW - 120} y2={430} stroke={ink} strokeWidth={4} />
+        {bars.map(([lab, val, h, c], i) => { const x = 300 + i * 210; const bh = h * grow; return <g key={i}><rect x={x - 76} y={430 - bh} width={152} height={bh} fill={c} stroke={ink} strokeWidth={4} /><text x={x} y={460} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text><text x={x} y={430 - bh - 12} fontSize={18} fontWeight={900} fill={c} textAnchor="middle" fontFamily="Georgia, serif">{val}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "accessgate") {
+    // Index/ETF open to all; hedge funds behind a velvet rope.
+    const t = interpolate(frame, [fps * 0.4, fps * 1.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(270 270)"><rect x={-92} y={-112} width={184} height={224} rx={8} fill={green} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>INDEX / ETF</text><text y={30} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>open to all</text></g>
+        <g transform="translate(720 270)"><rect x={-92} y={-112} width={184} height={224} rx={8} fill={ink} /><text y={-6} fontSize={20} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>HEDGE FUND</text><text y={22} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>the rich only</text><g opacity={t}><circle cx={-70} cy={70} r={8} fill={gold} /><circle cx={70} cy={70} r={8} fill={gold} /><path d="M-70 70 Q0 96 70 70" fill="none" stroke={red} strokeWidth={8} /></g></g>
+        <text x={VW / 2} y={470} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one of them has a velvet rope</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

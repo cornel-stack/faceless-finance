@@ -1,221 +1,253 @@
 [
   {
     "id": "s1",
+    "type": "stage",
+    "narration": "Here's something strange. One of these funds charges you almost nothing. Another charges two percent a year plus twenty percent of your profits — and, as a group, still loses to the cheap one. Yet they often own nearly the same things.",
+    "motif": "feeladder",
+    "caption": "what they charge you"
+  },
+  {
+    "id": "s2",
+    "type": "callout",
+    "narration": "A top hedge fund can take fifty times more in fees than a simple index fund — for results that, over time, are usually worse. So why does anyone pick the expensive one?",
+    "text": "50x the fees",
+    "sub": "…often for worse results",
+    "icon": "warning"
+  },
+  {
+    "id": "s3",
     "type": "character",
-    "narration": "Everyone in the stock market calls themselves 'an investor.' But that single word hides a dozen wildly different species — from the patient tortoise who barely trades, to the frantic gambler betting by the second.",
+    "narration": "Mutual funds, index funds, ETFs, hedge funds — the names get thrown around like they're wildly different beasts. In truth, three of them are cousins, and one is the odd, exclusive one out.",
+    "pose": "think",
+    "bubble": "what's the actual difference?",
+    "props": [
+      {
+        "name": "pie",
+        "label": "index"
+      },
+      {
+        "name": "basket",
+        "label": "mutual"
+      },
+      {
+        "name": "stockscreen",
+        "label": "ETF"
+      },
+      {
+        "name": "rope",
+        "label": "hedge"
+      }
+    ]
+  },
+  {
+    "id": "s4",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "'they're all totally different'",
+    "memeBottom": "three are the same idea in different wrappers",
+    "narration": "So let's untangle all four — because understanding the difference is worth, quite literally, a fortune in fees over your lifetime."
+  },
+  {
+    "id": "s5",
+    "type": "title",
+    "narration": "Start with the one idea they all share.",
+    "heading": "One Shared Idea",
+    "kicker": "pooling and baskets"
+  },
+  {
+    "id": "s6",
+    "type": "character",
+    "narration": "Every one of these is a 'fund' — a way to pool your money with thousands of other people, so that together you can buy a huge basket of assets no single one of you could afford alone.",
     "pose": "explain",
     "props": [
       {
-        "name": "turtle",
-        "label": "the patient tortoise"
+        "name": "crowd",
+        "label": "many people"
       },
       {
-        "name": "hare",
-        "label": "the frantic trader"
+        "name": "moneybag",
+        "label": "pool the cash"
       },
       {
-        "name": "dice",
-        "label": "the gambler"
+        "name": "pie",
+        "label": "buy a big basket"
+      }
+    ]
+  },
+  {
+    "id": "s7",
+    "type": "stage",
+    "narration": "That's the magic of a fund. A little money from a lot of people becomes one giant pot — instantly spreading your risk across dozens, hundreds, even thousands of different investments.",
+    "motif": "fundpool",
+    "caption": "many wallets → one big pool"
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "The idea is a century old. The first modern mutual fund appeared in the 1920s, letting ordinary people pool their savings and own a slice of the whole market for the very first time. It democratized investing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "born in the 1920s"
       },
       {
-        "name": "chartup",
-        "label": "…who wins?"
+        "name": "crowd",
+        "label": "ordinary savers"
+      },
+      {
+        "name": "pie",
+        "label": "own the market"
+      }
+    ]
+  },
+  {
+    "id": "s8",
+    "type": "character",
+    "narration": "The differences come down to just four questions. Who runs it? How do you buy it? What does it cost? And who's even allowed in? Answer those, and you've mastered all four types.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "who runs it?"
+      },
+      {
+        "name": "cardreader",
+        "label": "how to buy?"
+      },
+      {
+        "name": "receipt",
+        "label": "what cost?"
+      },
+      {
+        "name": "rope",
+        "label": "who's allowed?"
+      }
+    ]
+  },
+  {
+    "id": "s9",
+    "type": "title",
+    "narration": "First, the original: the mutual fund.",
+    "heading": "The Mutual Fund",
+    "kicker": "the classic pool"
+  },
+  {
+    "id": "s10",
+    "type": "screenshot",
+    "narration": "A mutual fund is an investment fund that pools money from many investors to purchase securities. It's the grandparent of the whole family.",
+    "sourceId": "wiki-mutual"
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "One classic trap with older mutual funds is the 'load' — a sales commission, sometimes five percent, skimmed off the top the moment you buy in. Always look for 'no-load' funds, where every dollar you invest actually gets invested.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "a 'load' = sales fee"
+      },
+      {
+        "name": "warning",
+        "label": "up to 5% gone"
+      },
+      {
+        "name": "shield",
+        "label": "choose 'no-load'"
+      }
+    ],
+    "expression": "worried"
+  },
+  {
+    "id": "s11",
+    "type": "character",
+    "narration": "A professional manager runs it, deciding what to buy and sell. You hand over your money, they invest it, and you own a slice of the whole pot. Simple, and for decades, the default way ordinary people invested.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "a pro manages it"
+      },
+      {
+        "name": "pie",
+        "label": "you own a slice"
+      },
+      {
+        "name": "handshake",
+        "label": "the old default"
+      }
+    ]
+  },
+  {
+    "id": "s12",
+    "type": "character",
+    "narration": "But the classic mutual fund has two quirks. One: it's usually 'actively managed,' so it charges higher fees for that manager's supposed skill. Two: you can only buy or sell it once a day, at a single set price.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "higher fees"
+      },
+      {
+        "name": "clock",
+        "label": "priced once a day"
+      },
+      {
+        "name": "warning",
+        "label": "sometimes sales 'loads'"
       }
     ]
   },
   {
     "id": "s51",
-    "type": "callout",
-    "narration": "Here's the number almost nobody tells you: studies of active day traders find the vast majority — often around ninety percent — lose money over time. Meanwhile, the laziest investor in the room quietly gets rich.",
-    "text": "90%",
-    "sub": "of day traders lose — so who wins?",
-    "icon": "bear"
-  },
-  {
-    "id": "s2",
     "type": "character",
-    "narration": "And they are not all the same. Some of these styles reliably build wealth over a lifetime. Others, the data shows, reliably destroy it. So let's meet them all — and ask who actually wins.",
-    "pose": "think",
-    "bubble": "which one really wins?"
-  },
-  {
-    "id": "s3",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "'I'm an investor'",
-    "memeBottom": "day-trading meme stocks at 2am",
-    "narration": "Because the gap between the best and worst styles isn't small. It's the difference between quietly getting rich, and quietly going broke."
-  },
-  {
-    "id": "s4",
-    "type": "stage",
-    "narration": "The best way to see it is as one long spectrum. At one end, pure investing — patient, owning a piece of a business. At the other, pure gambling — fast, betting on a price. Everyone sits somewhere on this line.",
-    "motif": "investorspectrum",
-    "caption": "one long line, patient to reckless"
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "The grandfather of all this, Benjamin Graham, imagined the market as a moody business partner called 'Mr Market' — who offers you a crazy price every single day. Your only job is to decide when he's being a fool.",
+    "narration": "There's also a quieter mechanical split: most funds are 'open-end,' creating new shares as money flows in. A few are 'closed-end,' with a fixed number of shares that trade at their own price — a detail that trips up a lot of beginners.",
     "pose": "explain",
     "props": [
       {
-        "name": "crowd",
-        "label": "'Mr Market'"
+        "name": "bank",
+        "label": "'open-end' flexes"
+      },
+      {
+        "name": "lockhouse",
+        "label": "'closed-end' is fixed"
       },
       {
         "name": "gauge",
-        "label": "wildly moody"
-      },
-      {
-        "name": "scale",
-        "label": "is he sane today?"
+        "label": "a common confusion"
       }
     ]
-  },
-  {
-    "id": "s5",
-    "type": "title",
-    "narration": "Let's start at the calm end, with the style that built the most fortunes.",
-    "heading": "The Value Investor",
-    "kicker": "buy a dollar for 50 cents"
-  },
-  {
-    "id": "s6",
-    "type": "screenshot",
-    "narration": "Value investing means buying securities that appear underpriced by some form of fundamental analysis. In plain terms: buying good things when they're cheap.",
-    "sourceId": "wiki-value"
-  },
-  {
-    "id": "s7",
-    "type": "image",
-    "src": "img/graham.jpg",
-    "label": "BENJAMIN GRAHAM",
-    "caption": "father of value investing",
-    "narration": "The philosophy comes from Benjamin Graham, the father of value investing. His core idea was the 'margin of safety': only buy when the price is far below what the thing is truly worth."
-  },
-  {
-    "id": "s8",
-    "type": "image",
-    "src": "img/warren.jpg",
-    "label": "WARREN BUFFETT",
-    "caption": "Graham's most famous student",
-    "narration": "His most famous student, Warren Buffett, turned it into the greatest investing record in history — by buying wonderful businesses at fair prices and then holding them, patiently, for decades."
-  },
-  {
-    "id": "s9",
-    "type": "character",
-    "narration": "The value investor is a bargain hunter and a pessimist's optimist. They read boring financial statements, ignore the hype, and wait — sometimes years — for the right price. It is slow, and it works.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magnifier",
-        "label": "patient bargain hunting"
-      },
-      {
-        "name": "pricetag",
-        "label": "buy it cheap"
-      },
-      {
-        "name": "scale",
-        "label": "vs true worth"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "The hard part of value investing isn't finding cheap stocks — it's the waiting. You might sit on a 'bargain' for years while it goes nowhere, needing iron patience to ignore a market screaming that you're wrong.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "years of waiting"
-      },
-      {
-        "name": "magnifier",
-        "label": "trust your analysis"
-      },
-      {
-        "name": "shield",
-        "label": "ignore the noise"
-      }
-    ],
-    "expression": "worried"
-  },
-  {
-    "id": "s10",
-    "type": "title",
-    "narration": "Next, value's more glamorous cousin: the growth investor.",
-    "heading": "The Growth Investor",
-    "kicker": "pay up for the future"
-  },
-  {
-    "id": "s11",
-    "type": "screenshot",
-    "narration": "Growth investing is a strategy focused on capital appreciation — investing in companies expected to grow much faster than average.",
-    "sourceId": "wiki-growth"
-  },
-  {
-    "id": "s12",
-    "type": "stage",
-    "narration": "So where value asks 'is this cheap?', growth asks 'how big could this become?' The growth investor will happily pay a high price today for a company they believe will be enormous tomorrow.",
-    "motif": "valuevsgrowth",
-    "caption": "cheap-and-proven vs expensive-and-promising"
   },
   {
     "id": "s13",
-    "type": "character",
-    "narration": "Done well, growth investing catches the next giant early and makes a fortune. Done badly, it's just paying absurd prices for exciting stories — the exact trap that fuelled the dot-com and AI manias.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "rocket",
-        "label": "bet on the next giant"
-      },
-      {
-        "name": "chartup",
-        "label": "explosive growth"
-      },
-      {
-        "name": "warning",
-        "label": "…or a bubble"
-      }
-    ]
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "The growth investor's nightmare is paying a fortune for a story that never delivers. For every giant they catch early, there's a graveyard of 'next big things' that quietly went to zero.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "rocket",
-        "label": "catch the giant"
-      },
-      {
-        "name": "tombstone",
-        "label": "…or the graveyard"
-      },
-      {
-        "name": "warning",
-        "label": "the price can be insane"
-      }
-    ],
-    "expression": "worried"
+    "type": "title",
+    "narration": "Which brings us to its cheaper, smarter child: the index fund.",
+    "heading": "The Index Fund",
+    "kicker": "a type, not a rival"
   },
   {
     "id": "s14",
-    "type": "title",
-    "narration": "Then there's the style that quietly beats most of the others — by refusing to pick at all.",
-    "heading": "The Index Investor",
-    "kicker": "own everything, do nothing"
+    "type": "character",
+    "narration": "Here's the key confusion to clear up. An index fund isn't really a separate competitor. It's a style of fund — one that can be packaged as either a mutual fund or an ETF. The difference is what's inside.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "pie",
+        "label": "a style, not a rival"
+      },
+      {
+        "name": "scale",
+        "label": "mutual OR etf"
+      }
+    ]
   },
   {
     "id": "s15",
     "type": "screenshot",
-    "narration": "The index investor just buys an index fund, replicating a whole market by holding the same securities as the index — and then does almost nothing.",
+    "narration": "An index fund simply aims to replicate a market index by holding the same securities as the index — instead of a manager trying to pick winners.",
     "sourceId": "wiki-index"
   },
   {
@@ -223,601 +255,654 @@
     "type": "image",
     "src": "img/bogle.jpg",
     "label": "JOHN BOGLE",
-    "caption": "gave us the index fund",
-    "narration": "This is the gospel of John Bogle: don't try to find the needle, just buy the whole haystack. Own a tiny slice of everything, keep costs near zero, and let time do the work."
+    "caption": "invented the index fund",
+    "narration": "This is the invention of John Bogle: don't pay a manager to guess. Just buy the whole market, keep fees microscopic, and quietly beat most of the pros who are trying so hard."
   },
   {
     "id": "s17",
+    "type": "stage",
+    "narration": "Because it just copies a list instead of paying a star manager, the index fund is astonishingly cheap — often charging a few cents per hundred dollars, versus a dollar or more for active funds.",
+    "motif": "feedrag",
+    "caption": "small fees, enormous gap"
+  },
+  {
+    "id": "s52",
+    "type": "timeline",
+    "title": "The fund family tree",
+    "narration": "Here's the family tree in time. The first mutual fund in the 1920s. Bogle's first index fund in 1976, mocked at launch. The first ETF in 1993. And by 2019, passive funds overtaking active ones entirely.",
+    "events": [
+      {
+        "year": "1924",
+        "label": "mutual fund",
+        "icon": "handshake"
+      },
+      {
+        "year": "1976",
+        "label": "index fund",
+        "icon": "pie"
+      },
+      {
+        "year": "1993",
+        "label": "first ETF",
+        "icon": "stockscreen"
+      },
+      {
+        "year": "2019",
+        "label": "passive > active",
+        "icon": "trophy"
+      }
+    ],
+    "highlight": 1
+  },
+  {
+    "id": "s53",
     "type": "character",
-    "narration": "It sounds lazy. It sounds boring. And as we've covered before, it quietly beats the large majority of highly-paid professionals over the long run. For most people, this is simply the answer.",
+    "narration": "That passive revolution is staggering in scale. Firms like Vanguard and BlackRock now manage tens of trillions of dollars in cheap index funds and ETFs — a tidal wave of money that fled the expensive, actively-managed world.",
     "pose": "explain",
     "props": [
       {
-        "name": "turtle",
-        "label": "boring, and winning"
+        "name": "bank",
+        "label": "trillions managed"
       },
       {
-        "name": "coins",
-        "label": "near-zero cost"
+        "name": "pie",
+        "label": "cheap index funds"
       },
       {
-        "name": "trophy",
-        "label": "beats the pros"
+        "name": "chartup",
+        "label": "a tidal wave"
       }
     ]
   },
   {
     "id": "s18",
     "type": "title",
-    "narration": "Some investors don't chase price gains at all. They just want to get paid.",
-    "heading": "The Income Investor",
-    "kicker": "paid to hold"
+    "narration": "Now the modern superstar, the one that trades like a stock: the ETF.",
+    "heading": "The ETF",
+    "kicker": "a fund that trades live"
   },
   {
     "id": "s19",
     "type": "screenshot",
-    "narration": "They live on dividends — the distribution of a company's profits to its shareholders. Buy solid, profitable companies, and they mail you a slice of the earnings, year after year.",
-    "sourceId": "wiki-dividend"
+    "narration": "An exchange-traded fund, or ETF, is an investment fund that is bought and sold on stock exchanges — trading all day long, just like a share of a company.",
+    "sourceId": "wiki-etf"
   },
   {
     "id": "s20",
     "type": "stage",
-    "narration": "The income investor builds a portfolio like an orchard: planted once, then harvested forever. They care less about the share price bouncing around, and more about the steady stream of cash it pays out.",
-    "motif": "dividendstream",
-    "caption": "paid just for holding"
+    "narration": "That's the crucial difference from a mutual fund. A mutual fund prices once a day, after the market closes. An ETF has a live, moving price all day, and you can buy or sell it in a single click, any time.",
+    "motif": "mutualvsetf",
+    "caption": "same idea, different plumbing"
   },
   {
-    "id": "s55",
+    "id": "s54",
     "type": "character",
-    "narration": "And the quiet magic is reinvestment. Feed those dividends back in to buy more shares, which pay more dividends, which buy still more shares — a snowball of income rolling downhill for decades.",
-    "pose": "present",
+    "narration": "ETFs have a sneaky tax advantage, too. Thanks to a clever share-creation mechanism, they rarely pass taxable gains onto you while you hold them — so, outside a retirement account especially, they can quietly beat an identical mutual fund.",
+    "pose": "explain",
     "props": [
       {
-        "name": "coins",
-        "label": "reinvest the cash"
+        "name": "stockscreen",
+        "label": "clever structure"
       },
       {
-        "name": "chartup",
-        "label": "a growing snowball"
+        "name": "receipt",
+        "label": "fewer tax bills"
       },
       {
-        "name": "hourglass",
-        "label": "for decades"
+        "name": "trophy",
+        "label": "a quiet edge"
       }
     ]
   },
   {
     "id": "s21",
-    "type": "title",
-    "narration": "Now we speed up — and start sliding toward the gambling end of the spectrum.",
-    "heading": "The Traders",
-    "kicker": "riding the waves"
-  },
-  {
-    "id": "s22",
-    "type": "screenshot",
-    "narration": "First, the momentum trader. Momentum investing means buying securities that have risen strongly over recent months, and selling those that have fallen.",
-    "sourceId": "wiki-momentum"
-  },
-  {
-    "id": "s23",
     "type": "character",
-    "narration": "Their motto is 'the trend is your friend.' They don't much care what a company is worth — only which way its price is moving. Buy what's hot, sell what's not, and try to jump off before the music stops.",
+    "narration": "Most ETFs are actually index funds in a sleeker wrapper — cheap, tracking an index, but tradeable live. They're also usually more tax-efficient, which is why they've quietly exploded in popularity.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "'ride the trend'"
+        "name": "stockscreen",
+        "label": "trades live"
       },
       {
-        "name": "bull",
-        "label": "ride it up"
+        "name": "pie",
+        "label": "usually an index"
       },
       {
-        "name": "chartdown",
-        "label": "dump the fallers"
+        "name": "receipt",
+        "label": "tax-efficient"
       }
     ]
+  },
+  {
+    "id": "s55",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Fee over 30 years on $100k ($ lost)",
+    "unit": "$",
+    "narration": "Put the fees in real money. On a hundred thousand dollars over thirty years, a rock-bottom index fee costs you a few thousand. A one-percent active fee costs tens of thousands. The hedge-fund model can cost a fortune.",
+    "data": [
+      {
+        "label": "index 0.05%",
+        "value": 3000
+      },
+      {
+        "label": "active 1%",
+        "value": 40000
+      },
+      {
+        "label": "hedge 2+20",
+        "value": 120000
+      }
+    ],
+    "highlight": 2
+  },
+  {
+    "id": "s22",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "index mutual fund",
+    "memeBottom": "index ETF",
+    "narration": "For most people, the choice between an index mutual fund and an index ETF barely matters. They can hold the exact same thing. One just trades live, and the other prices once a day."
+  },
+  {
+    "id": "s56",
+    "type": "image",
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "pay 2% + 20% for a star manager",
+    "memeBottom": "underperform a fund that charges 0.05%",
+    "narration": "It is the great running joke of modern finance: paying the highest fees in the industry, very often, buys you the privilege of below-average returns."
+  },
+  {
+    "id": "s23",
+    "type": "title",
+    "narration": "And finally, the exclusive, expensive, mysterious one: the hedge fund.",
+    "heading": "The Hedge Fund",
+    "kicker": "behind the velvet rope"
   },
   {
     "id": "s24",
     "type": "screenshot",
-    "narration": "Faster still is the day trader — a form of speculation in securities, buying and selling within a single trading day.",
-    "sourceId": "wiki-daytrade"
+    "narration": "A hedge fund is a pooled investment fund that makes use of complex trading and risk-management techniques — far beyond simply buying and holding stocks.",
+    "sourceId": "wiki-hedge"
   },
   {
     "id": "s25",
     "type": "character",
-    "narration": "The day trader holds nothing overnight, glued to charts, hunting tiny moves. It looks like the most active, intense kind of investing. Statistically, it's the closest thing to a casino on this whole list.",
+    "narration": "Hedge funds can do things normal funds can't: short-selling to profit when prices fall, piling on leverage, and making huge bets on currencies, commodities, or whole economies. High risk, in search of high reward.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "in and out, same day"
-      },
-      {
-        "name": "dice",
-        "label": "pure odds"
-      },
-      {
         "name": "chartdown",
-        "label": "most lose"
+        "label": "bet on falls too"
+      },
+      {
+        "name": "bank",
+        "label": "heavy leverage"
+      },
+      {
+        "name": "globe",
+        "label": "bet on anything"
       }
     ]
   },
   {
-    "id": "s56",
-    "type": "stage",
-    "narration": "At the opposite end of temperament sits the contrarian — who does the single hardest thing in markets: stays calm and buys precisely when everyone else is terrified and selling.",
-    "motif": "contrarian",
-    "caption": "be greedy when others are fearful"
-  },
-  {
-    "id": "s26",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "own a business for a decade",
-    "memeBottom": "flip a ticker in 90 seconds",
-    "narration": "Notice the pattern: the further right we move, the shorter the time horizon, and the more it stops being investing and starts being betting."
-  },
-  {
     "id": "s57",
     "type": "character",
-    "narration": "It sounds simple and feels impossible. Buying during a crash, while headlines scream that the world is ending and your own portfolio bleeds, takes nerves of steel — which is exactly why so few people actually do it.",
+    "narration": "Hedge funds come in many flavors. 'Long-short' funds bet on some stocks rising and others falling. 'Global macro' funds, like Soros's, bet on whole economies. 'Quant' funds, like Simons's, let the algorithms decide. Each a different way to gamble for an edge.",
     "pose": "explain",
     "props": [
       {
-        "name": "bear",
-        "label": "buy the panic"
+        "name": "chartup",
+        "label": "long / short"
       },
       {
-        "name": "warning",
-        "label": "nerves of steel"
+        "name": "globe",
+        "label": "global macro"
       },
       {
-        "name": "trophy",
-        "label": "historically rewarded"
+        "name": "brain",
+        "label": "quant algorithms"
       }
-    ],
-    "expression": "worried"
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "stage",
+    "narration": "But the first thing to know is that you probably can't even invest in one. Hedge funds are gated — legally restricted to the wealthy and big institutions, not the general public.",
+    "motif": "accessgate",
+    "caption": "one of them has a velvet rope"
   },
   {
     "id": "s27",
-    "type": "title",
-    "narration": "At the big-money end sit the players who move markets, not just ride them.",
-    "heading": "The Big Players",
-    "kicker": "macro, activist, speculator"
+    "type": "screenshot",
+    "narration": "That's because they're marketed only to institutional investors and high-net-worth individuals — the exclusive club of big money.",
+    "sourceId": "wiki-hedge2"
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "And the exclusivity comes with a catch: your money can get locked up. Many hedge funds impose 'lock-up' periods, where you simply cannot withdraw your cash for months or years. An index ETF, by contrast, you can sell in seconds.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "padlock",
+        "label": "money locked up"
+      },
+      {
+        "name": "clock",
+        "label": "for months or years"
+      },
+      {
+        "name": "stockscreen",
+        "label": "vs sell anytime"
+      }
+    ],
+    "expression": "worried"
   },
   {
     "id": "s28",
     "type": "image",
-    "src": "img/soros.jpg",
-    "label": "GEORGE SOROS",
-    "caption": "the macro speculator",
-    "narration": "The macro speculator, like George Soros, bets on huge economic shifts — currencies, interest rates, whole countries. Soros famously 'broke the Bank of England,' making a billion dollars betting against the pound."
+    "src": "img/dalio.jpg",
+    "label": "RAY DALIO",
+    "caption": "built the biggest hedge fund",
+    "narration": "The legends are real. Ray Dalio built Bridgewater into the biggest hedge fund on Earth, managing the money of pensions and governments with his own grand theories of how economies work."
   },
   {
     "id": "s29",
     "type": "image",
-    "src": "img/icahn.jpg",
-    "label": "CARL ICAHN",
-    "caption": "the activist investor",
-    "narration": "The activist investor, like Carl Icahn, buys a big stake in a company specifically to force change — shaking up management, demanding buybacks or break-ups, and profiting from the shake-up."
-  },
-  {
-    "id": "s30",
-    "type": "screenshot",
-    "narration": "That's shareholder activism — using an equity stake to put pressure on a company's management. A fairly small stake can be enough to launch a loud campaign.",
-    "sourceId": "wiki-activist"
-  },
-  {
-    "id": "s31",
-    "type": "image",
-    "src": "img/livermore.jpg",
-    "label": "JESSE LIVERMORE",
-    "caption": "the great speculator",
-    "narration": "And at the very far edge sits the pure speculator, like the legendary Jesse Livermore — making enormous, often leveraged bets on price swings. He made, and then lost, several fortunes, and died broke."
-  },
-  {
-    "id": "s58",
-    "type": "stage",
-    "narration": "And in the shadows runs a very different beast entirely: the quant. No gut feelings, no stories — just mathematicians and algorithms firing thousands of trades a second, hunting patterns invisible to humans.",
-    "motif": "quantbot",
-    "caption": "algorithms trading in microseconds"
-  },
-  {
-    "id": "s32",
-    "type": "screenshot",
-    "narration": "That's the dictionary definition of speculation: buying an asset hoping it becomes more valuable in a brief amount of time. All hope, all timing, no ownership.",
-    "sourceId": "wiki-speculation"
+    "src": "img/simons.jpg",
+    "label": "JIM SIMONS",
+    "caption": "the quant who truly beat the market",
+    "narration": "And Jim Simons, a mathematician, built Renaissance — whose secretive quant fund posted returns so absurdly good they may be the best in all of financial history. These outliers are why the dream persists."
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "Quant funds hire physicists and build superfast computers to exploit tiny, fleeting edges. For an ordinary person, trying to out-trade these machines by hand is like racing a Formula One car on a bicycle.",
+    "narration": "Be very skeptical of the dazzling hedge-fund track records, too. Thousands of funds launch; the losers quietly shut down and vanish from the averages. What you see is survivorship bias — the flattering, cherry-picked survivors.",
     "pose": "explain",
     "props": [
       {
-        "name": "brain",
-        "label": "physicists & math"
+        "name": "shredder",
+        "label": "losers vanish"
       },
       {
-        "name": "server",
-        "label": "microsecond speed"
+        "name": "magnifier",
+        "label": "survivorship bias"
       },
       {
         "name": "warning",
-        "label": "you can't outrun them"
+        "label": "flattering numbers"
       }
     ],
     "expression": "worried"
+  },
+  {
+    "id": "s30",
+    "type": "title",
+    "narration": "But those legends hide the thing that really defines a hedge fund: the fees.",
+    "heading": "The Fees",
+    "kicker": "'two and twenty'"
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "narration": "Hedge funds famously charge what's called 'two and twenty.' That means two percent of all your money every year, no matter what — plus twenty percent of any profits they make.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "percent",
+        "label": "2% of everything"
+      },
+      {
+        "name": "coins",
+        "label": "+ 20% of gains"
+      },
+      {
+        "name": "warning",
+        "label": "win or lose"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "stage",
+    "narration": "Think about how brutal that is. Even in a flat year where they make you nothing, they take two percent. And when they do win, they pocket a fifth of your profit before you see a cent.",
+    "motif": "twentytwenty",
+    "caption": "2% of everything + 20% of profits"
   },
   {
     "id": "s60",
     "type": "character",
-    "narration": "Which points to the biggest divide of all: retail versus institutional. On one side, you, on your phone. On the other, trillion-dollar funds with armies of analysts, instant data, and the fastest machines on Earth.",
+    "narration": "The most famous proof is Warren Buffett's bet. He wagered a million dollars that a simple index fund would beat a basket of elite hedge funds over ten years. He won in a landslide, and gave the winnings to charity.",
     "pose": "explain",
     "props": [
       {
-        "name": "phone",
-        "label": "you"
-      },
-      {
-        "name": "bank",
-        "label": "vs the giants"
-      },
-      {
         "name": "scale",
-        "label": "a lopsided fight"
+        "label": "Buffett's $1M bet"
+      },
+      {
+        "name": "trophy",
+        "label": "the index won big"
+      },
+      {
+        "name": "handshake",
+        "label": "gave it to charity"
       }
-    ],
-    "expression": "worried"
+    ]
   },
   {
     "id": "s33",
-    "type": "title",
-    "narration": "So with this whole zoo of styles, how do you tell the winners from the losers? There's one axis that explains almost everything.",
-    "heading": "The One Axis",
-    "kicker": "it's all about time"
+    "type": "screenshot",
+    "narration": "It all comes down to the expense ratio — the annual cost of owning a fund. And across these four, that single number varies more than almost anything else.",
+    "sourceId": "wiki-expense"
   },
   {
     "id": "s34",
-    "type": "stage",
-    "narration": "Forget value versus growth for a second. The real divide is time horizon. How long do you intend to hold? The longer your horizon, the more you're investing. The shorter it is, the more you're gambling.",
-    "motif": "timehorizons",
-    "caption": "shorter horizon = closer to a casino"
-  },
-  {
-    "id": "s35",
     "type": "character",
-    "narration": "Over decades, owning good businesses lets the magic of compounding and real earnings work for you. Over seconds, you're just betting against faster, better-funded players on a random price wiggle.",
+    "narration": "And here's the punchline the industry hates. After those enormous fees, the average hedge fund has, for many years, failed to beat a simple, cheap index fund that a child could buy. You pay a fortune to underperform.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "hourglass",
-        "label": "time is the great divider"
+        "name": "chartdown",
+        "label": "they lag the index"
       },
       {
-        "name": "chartup",
-        "label": "decades = investing"
+        "name": "moneybag",
+        "label": "huge fees"
       },
       {
-        "name": "dice",
-        "label": "seconds = gambling"
+        "name": "warning",
+        "label": "pay more, get less"
       }
     ]
   },
   {
     "id": "s61",
-    "type": "compare",
-    "narration": "So weigh the two mindsets directly. The long-term owner lets compounding and real profits do the work. The short-term bettor is just guessing which way a price wiggles next.",
-    "left": {
-      "title": "Long horizon",
-      "value": "own & compound",
-      "icon": "turtle"
-    },
-    "right": {
-      "title": "Short horizon",
-      "value": "guess the wiggle",
-      "icon": "dice"
-    }
+    "type": "image",
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "paying 2 and 20 for years",
+    "memeBottom": "still trailing a free index fund",
+    "narration": "For most hedge-fund clients, that's the quiet reality underneath the glamour: enormous fees, lock-ups, and complexity, in exchange for returns a cheap fund would have beaten."
   },
   {
-    "id": "s36",
-    "type": "title",
-    "narration": "Which finally lets us answer the question in the title: who actually wins?",
-    "heading": "Who Wins",
-    "kicker": "the data is brutal"
-  },
-  {
-    "id": "s37",
-    "type": "stage",
-    "narration": "The data is remarkably consistent. The long-term, low-cost, patient investors — especially the boring index crowd — reliably come out ahead. The frantic day traders, as a group, reliably lose.",
-    "motif": "whowins",
-    "caption": "who actually wins, long-term"
-  },
-  {
-    "id": "s38",
-    "type": "character",
-    "narration": "The uncomfortable truth is that the winning styles are the slow, dull ones. And the exciting, high-adrenaline styles — the ones that feel the most like 'real' investing — are where most people quietly lose money.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "turtle",
-        "label": "boring wins the race"
-      },
-      {
-        "name": "hare",
-        "label": "the flashy loser"
-      },
-      {
-        "name": "trophy",
-        "label": "slow wins"
-      }
-    ]
+    "id": "s35",
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "for most people, a cheap index ETF beats an expensive hedge fund",
+    "narration": "For the tiny handful of true geniuses like Simons, the fees are worth it. For the vast majority of hedge funds, you're paying Ferrari prices for a car that finishes behind the bus."
   },
   {
     "id": "s62",
     "type": "character",
-    "narration": "There's a newer species too: the crypto 'HODLer,' who buys a volatile coin and vows to never, ever sell. It's part investing, part identity, part religion — and a vivid reminder that conviction and a good plan are not the same thing.",
+    "narration": "So why do they still exist? Partly the dream of the next Simons. Partly because the ultra-rich want something exclusive, uncorrelated, or tailored. And partly, frankly, because 'I'm in a hedge fund' sounds a lot better at dinner than 'I own an index fund.'",
     "pose": "explain",
     "props": [
       {
         "name": "token",
-        "label": "'HODL forever'"
+        "label": "chasing the dream"
       },
       {
-        "name": "crowd",
-        "label": "part tribe"
+        "name": "rope",
+        "label": "exclusivity sells"
       },
       {
-        "name": "warning",
-        "label": "conviction is not a plan"
-      }
-    ],
-    "expression": "worried"
-  },
-  {
-    "id": "s63",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "pick exciting stocks to beat the market",
-    "memeBottom": "quietly underperform a boring index fund",
-    "narration": "And this is the humbling reality that unites almost all the active styles: as a group, they struggle to beat the simple index they're trying so hard to outsmart."
-  },
-  {
-    "id": "s39",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "the most boring investor usually beats the most exciting one",
-    "narration": "It's the tortoise and the hare, played out with real money. The dazzling hare sprints and stumbles. The dull tortoise just keeps walking — and finishes first."
-  },
-  {
-    "id": "s40",
-    "type": "title",
-    "narration": "So which one are you — and which one should you be?",
-    "heading": "Which Are You?",
-    "kicker": "temperament over genius"
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "Here's the secret the pros understand: it's not about which style is smartest. It's about temperament. The best strategy in the world is useless if you can't stick to it through fear and greed.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "brain",
-        "label": "temperament beats IQ"
-      },
-      {
-        "name": "scale",
-        "label": "discipline"
-      },
-      {
-        "name": "warning",
-        "label": "fear & greed"
+        "name": "magichat",
+        "label": "status, really"
       }
     ]
   },
   {
-    "id": "s42",
+    "id": "s36",
+    "type": "title",
+    "narration": "So let's line all four up, side by side.",
+    "heading": "The Showdown",
+    "kicker": "four funds, one table"
+  },
+  {
+    "id": "s37",
+    "type": "stage",
+    "narration": "Index funds: cheap, passive, own-everything. Mutual funds: often active, priced daily. ETFs: cheap and tradeable live. Hedge funds: pricey, exclusive, complex. Four wrappers around the same core idea.",
+    "motif": "fundmatrix",
+    "caption": "four ways to own a basket of assets"
+  },
+  {
+    "id": "s63",
+    "type": "compare",
+    "narration": "Compare the two honest paths for a normal person. Pick your own stocks, and you're a lone amateur against the pros. Buy one index fund, and you instantly own a slice of everything, cheaply.",
+    "left": {
+      "title": "DIY stock-picking",
+      "value": "you vs the pros",
+      "icon": "warning"
+    },
+    "right": {
+      "title": "One index fund",
+      "value": "own it all, cheap",
+      "icon": "pie"
+    }
+  },
+  {
+    "id": "s38",
     "type": "character",
-    "narration": "If you have the patience of a Buffett, value investing can work. If you don't, that's completely fine — because the index approach is specifically designed to win without requiring any special skill or nerve at all.",
+    "narration": "Three of them — index funds, most ETFs, and passive mutual funds — are really the same sensible strategy: own the whole market cheaply. The hedge fund is the one playing a completely different, far riskier game.",
     "pose": "explain",
     "props": [
       {
+        "name": "pie",
+        "label": "3 are 'own it all'"
+      },
+      {
+        "name": "rope",
+        "label": "1 plays a wild game"
+      },
+      {
         "name": "scale",
-        "label": "pick a style you can keep"
+        "label": "very different risk"
       }
     ]
   },
   {
     "id": "s64",
     "type": "character",
-    "narration": "So the real first step isn't picking stocks — it's knowing yourself. Are you genuinely patient, or do you panic? Do you love research, or hate it? Be honest, because the market will find out either way.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "brain",
-        "label": "know thyself"
-      },
-      {
-        "name": "gauge",
-        "label": "patient or panicky?"
-      },
-      {
-        "name": "handshake",
-        "label": "be honest"
-      }
-    ]
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "What almost nobody should be is a full-time day trader or a leveraged speculator. The thrill is real, but so are the odds — and the odds, over time, are brutal.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "warning",
-        "label": "avoid the casino end"
-      },
-      {
-        "name": "dice",
-        "label": "the odds"
-      },
-      {
-        "name": "bear",
-        "label": "brutal losses"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "title",
-    "narration": "So let's total up the whole zoo.",
-    "heading": "The Final Math",
-    "kicker": "find your species"
-  },
-  {
-    "id": "s45",
-    "type": "chalkboard",
-    "narration": "Value buys cheap. Growth buys the future. Index buys everything. Income buys cash flow. Traders ride momentum. And speculators gamble on price. All on one line — from patient owning to frantic betting.",
-    "lines": [
-      "value · growth · index · income",
-      "momentum · day trade · macro",
-      "activist · speculator · quant",
-      "→ investing on the left, gambling on the right"
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "character",
-    "narration": "And the single most important finding is this: the winners cluster at the patient, low-cost, long-term end. The further you drift toward fast and leveraged, the worse the odds become.",
+    "narration": "There are handy hybrids, too. A 'target-date fund' automatically shifts you from risky stocks toward safer bonds as you age — a whole retirement strategy, on autopilot, inside a single fund you never have to touch.",
     "pose": "explain",
     "props": [
       {
-        "name": "bull",
-        "label": "patience is the edge"
+        "name": "calendar",
+        "label": "'target-date' fund"
       },
       {
-        "name": "hourglass",
-        "label": "give it time"
+        "name": "scale",
+        "label": "auto-adjusts risk"
       },
       {
-        "name": "coins",
-        "label": "low cost"
+        "name": "shield",
+        "label": "set and forget"
+      }
+    ]
+  },
+  {
+    "id": "s39",
+    "type": "title",
+    "narration": "Which leaves the only question that matters: which one is for you?",
+    "heading": "Who Wins",
+    "kicker": "and who's it for"
+  },
+  {
+    "id": "s40",
+    "type": "stage",
+    "narration": "The data, again, is blunt. Over the long run, the cheap, boring, passive options reliably beat the expensive, exciting, active ones. Cost is the single best predictor of who wins.",
+    "motif": "whowins",
+    "caption": "who actually wins, long-term"
+  },
+  {
+    "id": "s41",
+    "type": "character",
+    "narration": "So for almost everyone, the answer is a low-cost index fund or index ETF. It's cheap, it's diversified, it requires no genius, and it quietly outperforms the fancy stuff over time.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "pie",
+        "label": "a low-cost index"
+      },
+      {
+        "name": "turtle",
+        "label": "boring, winning"
+      },
+      {
+        "name": "trophy",
+        "label": "beats the fancy stuff"
       }
     ]
   },
   {
     "id": "s65",
+    "type": "image",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "go wrong with a low-cost, broad index fund",
+    "narration": "It is genuinely hard to make a serious mistake with a cheap, diversified index fund held for the long term. That's exactly what makes it such a powerful default."
+  },
+  {
+    "id": "s66",
     "type": "character",
-    "narration": "And whatever style you choose, two quiet forces decide most of your result: cost and time. Keep your fees near zero, give it decades, and the boring arithmetic does more than any brilliant stock pick ever could.",
+    "narration": "Buying one is now trivial. Open a brokerage account, search for a broad, low-cost index fund or ETF, and buy it like any stock. The whole thing can take about ten minutes — the hard part, as always, is just leaving it alone.",
     "pose": "present",
     "props": [
       {
-        "name": "coins",
-        "label": "low fees"
+        "name": "phone",
+        "label": "open an account"
+      },
+      {
+        "name": "pie",
+        "label": "buy a broad index"
       },
       {
         "name": "hourglass",
-        "label": "long time"
+        "label": "then leave it alone"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "character",
+    "narration": "An actively-managed mutual fund can make sense in a few niche corners. And a hedge fund can make sense if you're ultra-wealthy, chasing a specific edge, and fully understand the odds. For everyone else? Keep it simple.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "active: niche uses"
       },
       {
+        "name": "rope",
+        "label": "hedge: ultra-rich only"
+      },
+      {
+        "name": "shield",
+        "label": "everyone else: simple"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "title",
+    "narration": "So let's total up the four funds.",
+    "heading": "The Final Math",
+    "kicker": "wrappers around a basket"
+  },
+  {
+    "id": "s44",
+    "type": "chalkboard",
+    "narration": "A mutual fund pools money, priced daily. An index fund just tracks the market, cheaply. An ETF does that but trades live. A hedge fund charges a fortune to gamble — for the wealthy only.",
+    "lines": [
+      "mutual fund → pooled, priced daily",
+      "index fund → tracks the market, cheap",
+      "ETF → like an index fund, trades live",
+      "hedge fund → 2 and 20, rich only"
+    ]
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "Strip away the jargon and it's almost funny how simple it is. They are all just baskets. The real differences are cost, how you buy, and who's allowed in — and on cost, cheaper has reliably meant richer.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "pie",
+        "label": "all just baskets"
+      },
+      {
+        "name": "receipt",
+        "label": "cost is king"
+      },
+      {
+        "name": "coins",
+        "label": "cheap = richer"
+      }
+    ]
+  },
+  {
+    "id": "s67",
+    "type": "character",
+    "narration": "Step back and the shift is historic. Trillions of dollars have marched out of expensive, hand-picked funds and into cheap, automatic ones — the biggest quiet victory for ordinary investors in a generation.",
+    "pose": "explain",
+    "props": [
+      {
         "name": "chartup",
-        "label": "compounding wins"
+        "label": "trillions moved"
+      },
+      {
+        "name": "pie",
+        "label": "into cheap funds"
+      },
+      {
+        "name": "trophy",
+        "label": "a win for the little guy"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "So the next time someone brags about their exclusive hedge fund, you can smile — and remember that the boring index ETF in your pocket has quietly beaten most of them, for a fraction of the price.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "stockscreen",
+        "label": "your boring ETF"
+      },
+      {
+        "name": "trophy",
+        "label": "quietly winning"
+      },
+      {
+        "name": "calculator",
+        "label": "for almost nothing"
       }
     ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "So don't ask 'which style is the most exciting?' Ask 'which style can I actually stick to for twenty years?' For most people, honestly, the answer is a boring index fund and a lot of patience.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "turtle",
-        "label": "boring, on purpose"
-      },
-      {
-        "name": "basket",
-        "label": "just an index fund"
-      },
-      {
-        "name": "calendar",
-        "label": "for 20 years"
-      }
-    ]
-  },
-  {
-    "id": "s66",
-    "type": "character",
-    "narration": "The practical trick is to make good behaviour automatic. Set up an automatic monthly investment into a broad fund, and you quietly become the patient, winning investor — without needing any willpower at all.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "automate it"
-      },
-      {
-        "name": "basket",
-        "label": "broad fund"
-      },
-      {
-        "name": "shield",
-        "label": "no willpower needed"
-      }
-    ]
-  },
-  {
-    "id": "s67",
-    "type": "image",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "out-trade the robots and win long-term",
-    "narration": "For the vast majority of people, trying to beat the market by hand is a losing game. Joining it, cheaply and patiently, is a winning one."
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "Because in the end, the market doesn't pay you for being the smartest, the fastest, or the most exciting investor in the room. It pays you, mostly, for being the most patient.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "patience gets paid"
-      },
-      {
-        "name": "trophy",
-        "label": "the real reward"
-      },
-      {
-        "name": "bull",
-        "label": "compounding"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "If this helped you find your species, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this finally untangled the four funds, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "bull",
+        "name": "pie",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s50",
+    "id": "s48",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

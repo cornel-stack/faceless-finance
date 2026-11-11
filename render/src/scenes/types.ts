@@ -152,7 +152,9 @@ export interface StageScene extends Base {
     // EP043 (credit cards) additions:
     | "threeprofit" | "minimumpaymenttrap" | "interchangeskim" | "rewardsfunnel" | "gracefloat"
     // EP044 (every type of investor) additions:
-    | "investorspectrum" | "valuevsgrowth" | "timehorizons" | "whowins" | "dividendstream" | "contrarian" | "quantbot";
+    | "investorspectrum" | "valuevsgrowth" | "timehorizons" | "whowins" | "dividendstream" | "contrarian" | "quantbot"
+    // EP045 (fund types) additions:
+    | "fundpool" | "mutualvsetf" | "fundmatrix" | "twentytwenty" | "feeladder" | "accessgate";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

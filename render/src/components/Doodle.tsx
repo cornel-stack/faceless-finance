@@ -79,6 +79,8 @@ export type DoodleName =
   | "cardreader" | "mousetrap"
   // EP044 (every type of investor) additions:
   | "bull" | "bear"
+  // EP045 (fund types) additions:
+  | "pie" | "rope"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1571,6 +1573,29 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={42} cy={52} d={5} fill={INK} strokeWidth={0.5} />
           <RCircle cx={58} cy={52} d={5} fill={INK} strokeWidth={0.5} />
           <RPath d="M42 66 L50 76 L58 66" fill="none" strokeWidth={2.4} />
+        </>
+      );
+
+    // ---- EP045 (fund types) doodles ----
+    case "pie":
+      // A pie chart — a diversified basket of holdings.
+      return (
+        <>
+          <RCircle cx={50} cy={52} d={60} fill={TAN} strokeWidth={SW} />
+          <RPath d="M50 52 L50 22 A30 30 0 0 1 76 66 Z" fill={GOLD} strokeWidth={1.4} />
+          <RPath d="M50 52 L76 66 A30 30 0 0 1 28 70 Z" fill={GREEN} strokeWidth={1.4} />
+          <RLine x1={50} y1={52} x2={28} y2={70} strokeWidth={1.4} />
+        </>
+      );
+    case "rope":
+      // A velvet rope — exclusivity / access.
+      return (
+        <>
+          <RLine x1={26} y1={36} x2={26} y2={82} strokeWidth={SW} />
+          <RLine x1={74} y1={36} x2={74} y2={82} strokeWidth={SW} />
+          <RCircle cx={26} cy={32} d={10} fill={GOLD} strokeWidth={1.4} />
+          <RCircle cx={74} cy={32} d={10} fill={GOLD} strokeWidth={1.4} />
+          <RPath d="M26 42 Q50 72 74 42" fill="none" stroke={RED} strokeWidth={5} />
         </>
       );
   }
