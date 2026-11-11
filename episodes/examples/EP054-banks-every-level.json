@@ -1,0 +1,991 @@
+{
+  "id": "EP054",
+  "series": "Napkin Numbers",
+  "title": "How Banks Treat You at Every Level of Wealth",
+  "slug": "how-banks-treat-you-at-every-level",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP054 — Every Level series (row 44). FRESH angle: the tiers of banking from unbanked → overdraft-fee poor → mass market → 'preferred' → private banking → wealth management → family office. The mechanic: fees flow UP from the poor, perks flow DOWN to the rich; the less you have the more you pay. 6 new motifs (bankladder/feesupperksdown/overdrafttrap/privatebanker/poorpaymore/familyoffice) + doodles velvetrope/goldcard. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Two people walk into the exact same bank on the same afternoon. To the first, the bank is a predator — slapping them with a thirty-five-dollar fee for being five dollars short. To the second, the bank is a butler — waiving every charge and sending a personal banker to their office. Same bank. The only difference is the number in their account.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "the same bank"
+        },
+        {
+          "name": "warning",
+          "label": "a predator to one"
+        },
+        {
+          "name": "goldcard",
+          "label": "a butler to the other"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Start with the fee that defines the bottom. Overdraw your account by five dollars, and a typical bank charges you around thirty-five. That's effectively a seven-hundred-percent penalty — charged almost exclusively to the people who can least afford it.",
+      "text": "$35",
+      "sub": "to overdraw by $5 — if you're poor",
+      "icon": "warning"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "And this isn't a glitch. The system is designed this way. Banking has levels, like a video game — and the number in your account quietly decides which level you're playing. At the bottom, you pay the bank. At the very top, the bank pays you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "banking has levels"
+        },
+        {
+          "name": "coins",
+          "label": "bottom: you pay"
+        },
+        {
+          "name": "crown",
+          "label": "top: they pay you"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "charge the millionaire a $35 fee",
+      "memeBottom": "charge the guy with $12 in his account a $35 fee",
+      "narration": "Today we're climbing all six levels of how banks treat you — from the people they bleed with fees, to the families they serve like royalty. And once you see the ladder, you'll know exactly how to climb it."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what is a bank even doing with your money?",
+      "heading": "The Banking Ladder",
+      "kicker": "six levels of service"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "At its core, a bank is an institution that accepts deposits from the public and creates a demand deposit, while making loans. In plain English: it takes your money, promises to give it back, and lends it out to earn far more in the meantime.",
+      "sourceId": "wiki-bank"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "And it quietly sorts every customer onto a ladder. At the bottom, the unbanked, who have no account at all. Then basic checking, the mass market, the 'preferred' tier, private banking, and at the very top, the family office. Six rungs — and the service could not be more different.",
+      "motif": "bankladder",
+      "caption": "six levels, wildly different treatment"
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "narration": "Here's the single rule that governs the whole ladder. Fees flow up from the bottom, and perks flow down from the top. The poorest customers generate fee after fee — which quietly helps fund the red-carpet treatment handed to the richest. The bottom subsidizes the top.",
+      "motif": "feesupperksdown",
+      "caption": "the poor quietly subsidize the rich"
+    },
+    {
+      "id": "s49",
+      "type": "callout",
+      "narration": "And the scale of the bottom rung is staggering. Americans pay well over ten billion dollars in overdraft fees every single year — and the vast majority of it is squeezed from a small group of the most financially stressed accounts, hit again and again.",
+      "text": "$10 billion+",
+      "sub": "overdraft fees Americans pay every year",
+      "icon": "receipt"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "Let's start at the very bottom — outside the system entirely.",
+      "heading": "Level 0 — Unbanked",
+      "kicker": "no account at all"
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "narration": "Millions of people are unbanked — adults who do not have their own bank accounts. Shut out, or priced out, of the system most of us take completely for granted.",
+      "sourceId": "wiki-unbanked"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Without an account, every basic task costs money. You pay a check-casher a cut just to get your own wages. You buy prepaid cards with fees. You turn to payday lenders at triple-digit rates. It is, bitterly, the most expensive way in the world to be poor.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "fees to cash a check"
+        },
+        {
+          "name": "creditcard",
+          "label": "prepaid card fees"
+        },
+        {
+          "name": "percent",
+          "label": "payday loan rates"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And skipping a bank often isn't even a choice. Past overdrafts can get you blacklisted from opening a new account. Minimum balances you simply can't meet. A deep distrust after being burned once too often. The system quietly pushes the most vulnerable out — then charges them more to live outside it.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "blacklisted by fees"
+        },
+        {
+          "name": "bank",
+          "label": "can't meet minimums"
+        },
+        {
+          "name": "globe",
+          "label": "pushed out, charged more"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Open a basic account, and you climb one rung — into the fee machine.",
+      "heading": "Level 1 — Scraping By",
+      "kicker": "the fee machine"
+    },
+    {
+      "id": "s13",
+      "type": "screenshot",
+      "narration": "This level is ruled by the overdraft, which occurs when something is withdrawn in excess of what is in a current account. Spend money you don't quite have, and the penalties begin.",
+      "sourceId": "wiki-overdraft"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "narration": "And the overdraft is brutal maths. Buy a three-dollar coffee with two dollars in your account, and the bank hands you a thirty-five-dollar fee. That's a penalty of over a thousand percent — triggered not by recklessness, but simply by being broke at the wrong moment.",
+      "motif": "overdrafttrap",
+      "caption": "a 1,000%+ penalty for being broke"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Really, an overdraft is a tiny, brutal loan you never agreed to take. Borrow five dollars for a few days, pay thirty-five back — an interest rate that would make a loan shark blush. And it lands hardest, over and over, on people already living paycheck to paycheck.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "a loan you didn't ask for"
+        },
+        {
+          "name": "percent",
+          "label": "loan-shark rates"
+        },
+        {
+          "name": "warning",
+          "label": "hits the poorest"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "It's all built on the humble fee — the price one pays as remuneration for rights or services. Except here, the 'service' is often just... having an account at all.",
+      "sourceId": "wiki-fee"
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "The fees pile up from every direction. Monthly maintenance fees. Minimum-balance fees for dropping below a threshold. Out-of-network ATM fees. Each one is small — but together, they act as a quiet, relentless tax on not having enough money.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "maintenance fees"
+        },
+        {
+          "name": "warning",
+          "label": "minimum-balance fees"
+        },
+        {
+          "name": "coins",
+          "label": "a tax on being poor"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "And notice the cruel catch. That monthly maintenance fee is usually waived — if you keep, say, fifteen hundred dollars in the account at all times. So the fee punishes precisely the people who can't afford to leave money sitting idle. You end up paying, quite literally, for being poor.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "fee waived if you keep $1,500"
+        },
+        {
+          "name": "piggybank",
+          "label": "can't spare the cash?"
+        },
+        {
+          "name": "receipt",
+          "label": "then you pay"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "There's even a dark art to it. Some banks have reordered the day's transactions largest-first, specifically so your account hits zero sooner — triggering the maximum number of overdraft fees in a single day. The fine print was quietly working against you.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "shredder",
+          "label": "transactions reordered"
+        },
+        {
+          "name": "warning",
+          "label": "to maximize fees"
+        },
+        {
+          "name": "magnifier",
+          "label": "buried in fine print"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "The outrage eventually got loud enough that regulators and lawsuits forced many banks to rein in the worst of these tricks — and some dropped overdraft fees entirely. Which proves the bottom rung isn't a law of nature. It's a choice banks make, and increasingly, one you can refuse.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "regulators pushed back"
+        },
+        {
+          "name": "bank",
+          "label": "some dropped fees"
+        },
+        {
+          "name": "shield",
+          "label": "you can refuse it"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Keep a steady balance, and the bank mostly stops noticing you at all.",
+      "heading": "Level 2 — Mass Market",
+      "kicker": "politely ignored"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "This is where most people live: free checking, direct deposit, a debit card. No fees, but no attention either. You're not the customer here so much as the raw material — the bank quietly lends your deposits out and keeps the profit.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "free checking"
+        },
+        {
+          "name": "bank",
+          "label": "no attention"
+        },
+        {
+          "name": "coins",
+          "label": "you're the raw material"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "Because here's the quiet trick at this level: your deposit is a loan to the bank — one you make at nearly zero percent interest. They pay you a fraction of a percent, lend it out at six or seven, and pocket the gap. You're financing them, and barely noticing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "you lend them cash"
+        },
+        {
+          "name": "percent",
+          "label": "at ~0%"
+        },
+        {
+          "name": "moneybag",
+          "label": "they keep the gap"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "Multiply that tiny gap by millions of accounts and trillions of dollars, and the mass market becomes the bank's golden goose. Your idle balance, earning you almost nothing, is lent and re-lent to earn the bank a fortune. Quiet, invisible, and absolutely enormous.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "millions of balances"
+        },
+        {
+          "name": "bank",
+          "label": "lent & re-lent"
+        },
+        {
+          "name": "moneybag",
+          "label": "a quiet fortune"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Cross a hidden threshold, and suddenly the bank remembers your name.",
+      "heading": "Level 3 — 'Preferred'",
+      "kicker": "the perks begin"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "Once you've got roughly a hundred to two hundred fifty thousand dollars across your accounts, the velvet rope lifts a little. Welcome to 'preferred' or 'priority' banking — where fees quietly vanish, and the perks begin.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "velvetrope",
+          "label": "~$100K+"
+        },
+        {
+          "name": "goldcard",
+          "label": "'preferred' status"
+        },
+        {
+          "name": "handshake",
+          "label": "fees start vanishing"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "The perks are small but telling. A dedicated phone line that skips the queue. Waived fees. A slightly better interest rate. A shinier card. None of it is life-changing — but notice the direction has flipped. The bank is now trying to please you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "skip the queue"
+        },
+        {
+          "name": "percent",
+          "label": "a better rate"
+        },
+        {
+          "name": "goldcard",
+          "label": "the bank courts you"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And those preferred perks aren't pure generosity — they're a hook. Hand you a shiny status and a dedicated banker, and you'll consolidate everything with them and never shop around again. The perks are quietly engineered to make you stickier, and far more profitable to keep.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "goldcard",
+          "label": "shiny status"
+        },
+        {
+          "name": "velvetrope",
+          "label": "a retention hook"
+        },
+        {
+          "name": "bank",
+          "label": "you never leave"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "Add a zero, and you enter a different world entirely.",
+      "heading": "Level 4 — Private Banking",
+      "kicker": "a banker of your own"
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "Around a million dollars unlocks private banking — services provided primarily to high-net-worth individuals, presented as an exclusive subset of wealth management. This is where banking stops being a product and becomes a relationship.",
+      "sourceId": "wiki-private"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "Now you get a private banker — a single human who knows your name and answers your calls. Fees evaporate. You get the best rates, cheap credit against your assets, and invitations to deals ordinary customers never even hear about. The bank officially works for you.",
+      "motif": "privatebanker",
+      "caption": "the bank now works for you"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And the private-banking perks are startlingly concrete. Jumbo mortgages at the very lowest rates. A line of credit against your stock portfolio, available in a day. Early access to investments ordinary customers can't even see. Cheap money, flowing straight to the people who need it least.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "cheap jumbo mortgage"
+        },
+        {
+          "name": "vault",
+          "label": "credit vs. portfolio"
+        },
+        {
+          "name": "chartup",
+          "label": "early deal access"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "And this is where it compounds. The rich borrow against their investments at rock-bottom rates — the exact opposite of the payday borrower. Cheap credit for those who need it least, brutal credit for those who need it most. The ladder rewards you more at every rung.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "cheap credit"
+        },
+        {
+          "name": "vault",
+          "label": "borrow vs assets"
+        },
+        {
+          "name": "scale",
+          "label": "the reverse of payday"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "Higher still, you stop hiring a banker — and start hiring a team.",
+      "heading": "Level 5 — Wealth Management",
+      "kicker": "a team on retainer"
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "In the tens of millions, you reach full wealth management — an industry built to help the very rich preserve and increase their wealth, across tax planning, estate planning, and more. It's less a bank account than a command center.",
+      "sourceId": "wiki-wealthmgmt"
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "Here, a team of specialists manages your taxes, your investments, your estate, and your trusts — all coordinated, all optimized. The goal shifts from growing the money to protecting it, shielding it from taxes, and quietly passing it on intact.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "a team of specialists"
+        },
+        {
+          "name": "taxform",
+          "label": "shield it from tax"
+        },
+        {
+          "name": "shield",
+          "label": "protect & pass it on"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "Here the fees flip one last time — now you pay the bank a management fee, often around one percent a year. But at this level, that fee buys tax savings and estate planning worth far more than it costs. The rich, remarkably, pay fees that actually make them richer.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "~1% fee"
+        },
+        {
+          "name": "taxform",
+          "label": "buys tax savings"
+        },
+        {
+          "name": "moneytree",
+          "label": "worth far more"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "And at the very top sits the final level — your own private institution.",
+      "heading": "Level 6 — Family Office",
+      "kicker": "your own institution"
+    },
+    {
+      "id": "s32",
+      "type": "screenshot",
+      "narration": "This is the family office — a privately held company that handles investment and wealth management for a single wealthy family, built to grow and transfer wealth across generations. It is a bank that exists to serve exactly one family: yours.",
+      "sourceId": "wiki-family"
+    },
+    {
+      "id": "s33",
+      "type": "stage",
+      "narration": "Picture an entire private company — investment pros, tax lawyers, estate planners, even philanthropy advisors — all employed full-time to manage one family's fortune. At this altitude, you don't visit a bank. You own one, pointed entirely at your own dynasty.",
+      "motif": "familyoffice",
+      "caption": "a private staff for one family's fortune"
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "And the perks here are so large they become a second income. Preferential access to investments. Loans at rates ordinary people will never see. The very richest are, quite literally, paid handsomely by the financial system — for the crime of already being rich.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneytree",
+          "label": "perks = a 2nd income"
+        },
+        {
+          "name": "crown",
+          "label": "paid to be rich"
+        },
+        {
+          "name": "vault",
+          "label": "access others never get"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "There are even tiers within the top. A single-family office serves just one clan and can cost millions a year to run — so it only makes sense north of a hundred million dollars. Below that, families share a multi-family office, splitting the cost of the royal treatment between them.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mansion",
+          "label": "single-family office"
+        },
+        {
+          "name": "crowd",
+          "label": "multi-family office"
+        },
+        {
+          "name": "crown",
+          "label": "$100M+ to go solo"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "title",
+      "narration": "Step back, and the cruel shape of the whole ladder appears.",
+      "heading": "The Inversion",
+      "kicker": "the less you have, the more you pay"
+    },
+    {
+      "id": "s36",
+      "type": "stage",
+      "narration": "Here's the whole system in one line. The less money you have, the more banking costs you — in fees, in penalties, in predatory rates. The more money you have, the more the bank pays you — in perks, in interest, in cheap credit. It is perfectly, precisely upside down.",
+      "motif": "poorpaymore",
+      "caption": "the less you have, the more you pay"
+    },
+    {
+      "id": "s37",
+      "type": "screenshot",
+      "narration": "The flip happens around that classic line where someone maintains liquid assets at or above a certain threshold — roughly a million dollars. Cross it, and you transform in the bank's eyes from a source of fees into a prize to be courted.",
+      "sourceId": "wiki-hnwi"
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "Zoom out, and the bank is really just a mirror of inequality — and a pump that makes it worse. It gently drains fees from the bottom and showers benefits on the top. Money, through the banking system, relentlessly gravitates toward more money.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "a mirror of inequality"
+        },
+        {
+          "name": "faucet",
+          "label": "drains the bottom"
+        },
+        {
+          "name": "moneytree",
+          "label": "showers the top"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "callout",
+      "narration": "Measured as a share of income, the gap is obscene. The poorest households can lose several percent of everything they earn just to bank fees, overdrafts, and check-cashing. For the wealthy, that number is effectively zero — and often, thanks to interest and perks, it's negative.",
+      "text": "~5%",
+      "sub": "of a poor household's income lost to fees",
+      "icon": "receipt"
+    },
+    {
+      "id": "s39",
+      "type": "compare",
+      "narration": "So the same institution runs two completely different businesses. For the poor customer, it's a toll booth, collecting fees at every step. For the rich one, it's a concierge, removing every obstacle. One bank, two opposite faces.",
+      "left": {
+        "title": "The poor customer",
+        "value": "a toll booth",
+        "icon": "receipt"
+      },
+      "right": {
+        "title": "The rich customer",
+        "value": "a concierge",
+        "icon": "goldcard"
+      }
+    },
+    {
+      "id": "s40",
+      "type": "title",
+      "narration": "So how do you actually climb this ladder — and get treated better starting now?",
+      "heading": "How to Climb",
+      "kicker": "make the bank work for you"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Step one: ruthlessly kill fees. Never, ever overdraft — turn the feature off entirely. Switch to a bank or credit union with free checking and no minimums. The fees you avoid at the bottom are the first dollars that start you climbing.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "turn off overdraft"
+        },
+        {
+          "name": "bank",
+          "label": "free checking / credit union"
+        },
+        {
+          "name": "coins",
+          "label": "kept fees = first dollars"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "Step two: use the rich people's tools that are now free to everyone. High-yield savings accounts pay real interest. No-fee brokerages let you buy index funds for nothing. A lot of the old private-client advantages are now one app download away.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "high-yield savings"
+        },
+        {
+          "name": "phone",
+          "label": "no-fee brokerage app"
+        },
+        {
+          "name": "pie",
+          "label": "cheap index funds"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And here's the genuinely good news. Online banks and credit unions have blown the old model wide open. No branches means no fees and real interest. A credit union is literally owned by its own customers. You can opt out of the predatory bottom rungs entirely — starting today.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "phone",
+          "label": "online banks"
+        },
+        {
+          "name": "handshake",
+          "label": "customer-owned credit unions"
+        },
+        {
+          "name": "coins",
+          "label": "no fees, real interest"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "Step three: consolidate and climb deliberately. Those perk tiers trigger on your total balance at one institution. Pooling your accounts can quietly tip you over a threshold — unlocking waived fees and better rates you were already entitled to.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "vault",
+          "label": "pool your accounts"
+        },
+        {
+          "name": "velvetrope",
+          "label": "cross the threshold"
+        },
+        {
+          "name": "goldcard",
+          "label": "unlock the perks"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "And step four, the mindset: the bank is a tool, never a friend. It is not loyal to you, and the warm branding is marketing. Treat it coldly, shop it like any vendor, and make it compete for the privilege of holding your money.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "not your friend"
+        },
+        {
+          "name": "scale",
+          "label": "shop it like a vendor"
+        },
+        {
+          "name": "bank",
+          "label": "make it compete"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Because that's the real lesson of the ladder. Every single rung you climb, the relationship flips a little more in your favor. You pay the bank a little less — and it starts paying you a little more. The goal isn't to beat the bank. It's to make it work for you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "every rung flips it"
+        },
+        {
+          "name": "moneytree",
+          "label": "they pay you more"
+        },
+        {
+          "name": "crown",
+          "label": "make it work for you"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "So the ladder is real — but it is not a prison. Every rung you climb, you shed a little of the predatory bottom and gain a little of the privileged top. The whole system quietly rewards momentum, which means the single best move you can make is simply to start climbing.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "not a prison"
+        },
+        {
+          "name": "chartup",
+          "label": "climb one rung"
+        },
+        {
+          "name": "crown",
+          "label": "shed the bottom"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So the next time your bank hits you with a fee, or rolls out a red carpet, you'll know exactly what's happening. It's not being cruel or kind. It's just reading the number in your account — and treating you precisely according to your level.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "bank",
+          "label": "it's reading your balance"
+        },
+        {
+          "name": "ladder",
+          "label": "treating you by level"
+        },
+        {
+          "name": "calculator",
+          "label": "now you see it"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "If this changed how you see your bank, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "goldcard",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-bank",
+      "name": "Bank (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bank",
+      "quote": "accepts deposits from the public and creates a demand deposit"
+    },
+    {
+      "id": "wiki-unbanked",
+      "name": "Unbanked (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Unbanked",
+      "quote": "adults who do not have their own bank accounts"
+    },
+    {
+      "id": "wiki-overdraft",
+      "name": "Overdraft (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Overdraft",
+      "quote": "when something is withdrawn in excess of what is in a current account"
+    },
+    {
+      "id": "wiki-fee",
+      "name": "Fee (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fee",
+      "quote": "the price one pays as remuneration for rights or services"
+    },
+    {
+      "id": "wiki-private",
+      "name": "Private banking (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Private_banking",
+      "quote": "an exclusive subset of wealth management"
+    },
+    {
+      "id": "wiki-wealthmgmt",
+      "name": "Wealth management (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth_management",
+      "quote": "preserve and increase their wealth"
+    },
+    {
+      "id": "wiki-family",
+      "name": "Family office (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Family_office",
+      "quote": "grow and transfer wealth across generations"
+    },
+    {
+      "id": "wiki-hnwi",
+      "name": "High-net-worth individual (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/High-net-worth_individual",
+      "quote": "maintains liquid assets at or above a certain threshold"
+    }
+  ],
+  "youtube": {
+    "title": "How Banks Treat You at Every Level of Wealth",
+    "alts": [
+      "The 6 Levels of Banking: From $35 Fees to Your Own Private Bank",
+      "Why the Poor Pay More to Bank Than the Rich (Every Level)"
+    ],
+    "hook": "The same bank treats a broke customer and a rich one in completely opposite ways — and the only thing that changes is the number in the account. This is how banks treat you at every level of wealth, by the numbers: the unbanked who pay the most, the overdraft-fee trap (a $35 penalty for a $3 coffee), the ignored mass market, the 'preferred' tier where perks begin, private banking (your own banker at ~$1M), full wealth management, and the family office at the very top. The iron rule: fees flow UP from the poor, perks flow DOWN to the rich — the less you have, the more you pay. Plus exactly how to climb the ladder. Fully cited.",
+    "bullets": [
+      "The 6 levels of banking, from unbanked to family office",
+      "The overdraft trap: a 1,000%+ penalty for being broke",
+      "Why your deposit is a near-0% loan to the bank",
+      "'Preferred', private banking, and the perks that flow down",
+      "The inversion: the less you have, the more you pay",
+      "How to climb the ladder and make the bank work for you"
+    ],
+    "tags": [
+      "how banks treat you",
+      "levels of banking",
+      "private banking explained",
+      "overdraft fees",
+      "family office",
+      "wealth management",
+      "why the poor pay more",
+      "how banks make money",
+      "unbanked",
+      "every level of wealth",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#banking",
+      "#money",
+      "#wealth",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "HOW BANKS TREAT YOU",
+      "hookBot": "AT EVERY LEVEL",
+      "napkinNumber": "fees UP",
+      "napkinSub": "perks DOWN",
+      "deco": "goldcard"
+    },
+    "chapters": [
+      [
+        "six levels of how banks treat you",
+        "The banking ladder"
+      ],
+      [
+        "Fees flow up from the bottom",
+        "Fees up, perks down"
+      ],
+      [
+        "Millions of people are unbanked",
+        "Level 0 — unbanked"
+      ],
+      [
+        "ruled by the overdraft",
+        "Level 1 — scraping by"
+      ],
+      [
+        "where most people live",
+        "Level 2 — mass market"
+      ],
+      [
+        "the velvet rope lifts a little",
+        "Level 3 — preferred"
+      ],
+      [
+        "a private banker",
+        "Level 4 — private banking"
+      ],
+      [
+        "your own private institution",
+        "Level 6 — family office"
+      ],
+      [
+        "the cruel shape of the whole ladder",
+        "The inversion"
+      ],
+      [
+        "how do you actually climb this ladder",
+        "How to climb"
+      ]
+    ]
+  }
+}

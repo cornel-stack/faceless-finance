@@ -97,6 +97,8 @@ export type DoodleName =
   | "birthdaycake" | "seedling"
   // EP053 (how much you should have saved) additions:
   | "safetynet" | "gear"
+  // EP054 (how banks treat you at every level) additions:
+  | "velvetrope" | "goldcard"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1795,6 +1797,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={68} y1={68} x2={78} y2={78} strokeWidth={SW} />
           <RLine x1={78} y1={22} x2={68} y2={32} strokeWidth={SW} />
           <RLine x1={32} y1={68} x2={22} y2={78} strokeWidth={SW} />
+        </>
+      );
+    case "velvetrope":
+      // A VIP velvet rope between two posts — exclusivity.
+      return (
+        <>
+          <RLine x1={24} y1={30} x2={24} y2={84} strokeWidth={SW} />
+          <RCircle cx={24} cy={24} d={12} fill={GOLD} strokeWidth={SW} />
+          <RLine x1={76} y1={30} x2={76} y2={84} strokeWidth={SW} />
+          <RCircle cx={76} cy={24} d={12} fill={GOLD} strokeWidth={SW} />
+          <RPath d="M24 34 Q50 62 76 34" fill="none" stroke={RED} strokeWidth={4} />
+        </>
+      );
+    case "goldcard":
+      // A premium metal card — VIP banking status.
+      return (
+        <>
+          <RRect x={16} y={30} w={68} h={44} fill={GOLD} strokeWidth={SW} />
+          <RRect x={24} y={40} w={16} h={12} fill={PARCH} strokeWidth={1.6} />
+          <RLine x1={24} y1={62} x2={64} y2={62} strokeWidth={1.8} />
+          <text x={50} y={50} fontSize={9} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">VIP</text>
         </>
       );
   }

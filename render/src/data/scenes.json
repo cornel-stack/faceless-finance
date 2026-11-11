@@ -2,787 +2,832 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "How much should you actually have saved by thirty? By forty? By fifty? It's one of the most-Googled money questions on the planet — and almost every answer is either uselessly vague or completely terrifying. So today, the real targets by age, and the dead-simple system that hits them on almost any income.",
+    "narration": "Two people walk into the exact same bank on the same afternoon. To the first, the bank is a predator — slapping them with a thirty-five-dollar fee for being five dollars short. To the second, the bank is a butler — waiving every charge and sending a personal banker to their office. Same bank. The only difference is the number in their account.",
     "pose": "explain",
     "props": [
       {
-        "name": "birthdaycake",
-        "label": "by 30? 40? 50?"
+        "name": "bank",
+        "label": "the same bank"
       },
       {
-        "name": "calculator",
-        "label": "the real targets"
+        "name": "warning",
+        "label": "a predator to one"
       },
       {
-        "name": "piggybank",
-        "label": "on any income"
+        "name": "goldcard",
+        "label": "a butler to the other"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the headline number everyone quotes. By the time you're thirty, you should have roughly one times your annual salary saved up. Earn sixty grand? You'd want about sixty thousand saved. And most people are nowhere close.",
-    "text": "1× salary",
-    "sub": "the classic target by age 30",
-    "icon": "paystub"
+    "narration": "Start with the fee that defines the bottom. Overdraw your account by five dollars, and a typical bank charges you around thirty-five. That's effectively a seven-hundred-percent penalty — charged almost exclusively to the people who can least afford it.",
+    "text": "$35",
+    "sub": "to overdraw by $5 — if you're poor",
+    "icon": "warning"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "But if you only chase that number, you'll miss the real secret. Because the amount you've saved by any age is driven far less by how much you earn — and far more by one quiet little percentage: your savings rate. That's the real engine we're going to build today.",
+    "narration": "And this isn't a glitch. The system is designed this way. Banking has levels, like a video game — and the number in your account quietly decides which level you're playing. At the bottom, you pay the bank. At the very top, the bank pays you.",
     "pose": "explain",
     "props": [
       {
-        "name": "gauge",
-        "label": "the real engine"
+        "name": "ladder",
+        "label": "banking has levels"
       },
       {
-        "name": "percent",
-        "label": "your savings rate"
+        "name": "coins",
+        "label": "bottom: you pay"
       },
       {
-        "name": "nestegg",
-        "label": "not just your salary"
+        "name": "crown",
+        "label": "top: they pay you"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "no savings, retirement in 30 years",
-    "memeBottom": "this is fine",
-    "narration": "And if you've got almost nothing saved right now, don't panic and don't click away. By the end of this, you'll have a concrete number for your age and a step-by-step plan — and you'll see exactly why starting today, at any amount, changes everything."
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "charge the millionaire a $35 fee",
+    "memeBottom": "charge the guy with $12 in his account a $35 fee",
+    "narration": "Today we're climbing all six levels of how banks treat you — from the people they bleed with fees, to the families they serve like royalty. And once you see the ladder, you'll know exactly how to climb it."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "Let's start with the targets everyone wants — the milestones by age.",
-    "heading": "The Targets by Age",
-    "kicker": "multiples of your salary"
+    "narration": "First, what is a bank even doing with your money?",
+    "heading": "The Banking Ladder",
+    "kicker": "six levels of service"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "First, what counts as 'saving'? Simply put, saving is income not spent — deferred consumption. Money you earned and deliberately did not blow, set aside to work for your future self instead.",
-    "sourceId": "wiki-saving"
+    "narration": "At its core, a bank is an institution that accepts deposits from the public and creates a demand deposit, while making loans. In plain English: it takes your money, promises to give it back, and lends it out to earn far more in the meantime.",
+    "sourceId": "wiki-bank"
   },
   {
     "id": "s7",
     "type": "stage",
-    "narration": "The most useful benchmark comes from retirement research, and it's framed as multiples of your salary. Aim for one times your salary saved by thirty, three times by forty, six times by fifty, eight times by sixty, and ten times by sixty-seven. Hit those, and retirement basically takes care of itself.",
-    "motif": "salarymultiple",
-    "caption": "a cleaner target: multiples of your salary"
+    "narration": "And it quietly sorts every customer onto a ladder. At the bottom, the unbanked, who have no account at all. Then basic checking, the mass market, the 'preferred' tier, private banking, and at the very top, the family office. Six rungs — and the service could not be more different.",
+    "motif": "bankladder",
+    "caption": "six levels, wildly different treatment"
   },
   {
     "id": "s8",
-    "type": "character",
-    "narration": "The beauty of multiples is they scale to your real life. Someone earning forty thousand and someone earning two hundred thousand need completely different piles — but the same simple ratio. It quietly asks the only question that matters: are you on track for your own life?",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "scales to you"
-      },
-      {
-        "name": "paystub",
-        "label": "based on your salary"
-      },
-      {
-        "name": "calculator",
-        "label": "on track for YOUR life?"
-      }
-    ]
+    "type": "stage",
+    "narration": "Here's the single rule that governs the whole ladder. Fees flow up from the bottom, and perks flow down from the top. The poorest customers generate fee after fee — which quietly helps fund the red-carpet treatment handed to the richest. The bottom subsidizes the top.",
+    "motif": "feesupperksdown",
+    "caption": "the poor quietly subsidize the rich"
+  },
+  {
+    "id": "s49",
+    "type": "callout",
+    "narration": "And the scale of the bottom rung is staggering. Americans pay well over ten billion dollars in overdraft fees every single year — and the vast majority of it is squeezed from a small group of the most financially stressed accounts, hit again and again.",
+    "text": "$10 billion+",
+    "sub": "overdraft fees Americans pay every year",
+    "icon": "receipt"
   },
   {
     "id": "s9",
-    "type": "callout",
-    "narration": "Now brace yourself for the reality gap. The typical American under thirty-five has a net worth of about thirty-nine thousand dollars — a fraction of one times salary for most. If you're behind the targets, you are in enormous company. The point isn't guilt. It's direction.",
-    "text": "$39,000",
-    "sub": "median under 35 — most are behind the targets",
-    "icon": "piggybank"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "Here's the fastest way to lift your savings rate: attack the big three. Housing, transportation, and food devour the majority of almost every budget. Skipping lattes barely moves the needle — but a cheaper apartment or a paid-off used car can free up hundreds of dollars every single month, automatically.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "housing"
-      },
-      {
-        "name": "car",
-        "label": "transport"
-      },
-      {
-        "name": "grocerybag",
-        "label": "food"
-      }
-    ]
+    "type": "title",
+    "narration": "Let's start at the very bottom — outside the system entirely.",
+    "heading": "Level 0 — Unbanked",
+    "kicker": "no account at all"
   },
   {
     "id": "s10",
-    "type": "title",
-    "narration": "So how do you actually hit those multiples? Not by obsessing over them — but by fixing the engine underneath.",
-    "heading": "The Real Engine",
-    "kicker": "your savings rate"
+    "type": "screenshot",
+    "narration": "Millions of people are unbanked — adults who do not have their own bank accounts. Shut out, or priced out, of the system most of us take completely for granted.",
+    "sourceId": "wiki-unbanked"
   },
   {
     "id": "s11",
     "type": "character",
-    "narration": "Here's the mindset shift. The targets are the destination. Your savings rate — the percentage of your income you keep instead of spend — is the engine that gets you there. And it matters far more than most people ever realize.",
+    "narration": "Without an account, every basic task costs money. You pay a check-casher a cut just to get your own wages. You buy prepaid cards with fees. You turn to payday lenders at triple-digit rates. It is, bitterly, the most expensive way in the world to be poor.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "mountain",
-        "label": "targets = destination"
+        "name": "receipt",
+        "label": "fees to cash a check"
       },
       {
-        "name": "gear",
-        "label": "savings rate = engine"
+        "name": "creditcard",
+        "label": "prepaid card fees"
       },
       {
         "name": "percent",
-        "label": "the % you keep"
+        "label": "payday loan rates"
+      }
+    ]
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "And skipping a bank often isn't even a choice. Past overdrafts can get you blacklisted from opening a new account. Minimum balances you simply can't meet. A deep distrust after being burned once too often. The system quietly pushes the most vulnerable out — then charges them more to live outside it.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "blacklisted by fees"
+      },
+      {
+        "name": "bank",
+        "label": "can't meet minimums"
+      },
+      {
+        "name": "globe",
+        "label": "pushed out, charged more"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "stage",
-    "narration": "Look at what your savings rate actually does. Save just five percent of your income, and you're looking at working for around fifty years. Save twenty percent, and it drops to the mid-thirties. Save fifty percent, and you could be financially free in under twenty. Same salary — wildly different lives.",
-    "motif": "savingsrate",
-    "caption": "your savings RATE sets the clock"
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "And you don't have to conjure twenty percent overnight. The painless trick is to save every raise. Each time your pay goes up, route half of it straight into savings before you ever upgrade your lifestyle. Your rate climbs quietly, year after year, and you never actually feel poorer.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "save every raise"
-      },
-      {
-        "name": "percent",
-        "label": "+1% at a time"
-      },
-      {
-        "name": "piggybank",
-        "label": "never feel poorer"
-      }
-    ]
+    "type": "title",
+    "narration": "Open a basic account, and you climb one rung — into the fee machine.",
+    "heading": "Level 1 — Scraping By",
+    "kicker": "the fee machine"
   },
   {
     "id": "s13",
-    "type": "character",
-    "narration": "This is why you cannot out-earn a bad savings rate. We've all heard of lottery winners and star athletes who made fortunes and still went broke. If you spend everything you make, it doesn't matter how big the 'everything' is. The gap between earning and spending is the whole game.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "huge earners…"
-      },
-      {
-        "name": "creditcard",
-        "label": "…still go broke"
-      },
-      {
-        "name": "percent",
-        "label": "the gap is everything"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "This level is ruled by the overdraft, which occurs when something is withdrawn in excess of what is in a current account. Spend money you don't quite have, and the penalties begin.",
+    "sourceId": "wiki-overdraft"
   },
   {
     "id": "s14",
-    "type": "title",
-    "narration": "Okay. Let's build the actual system, step by step. Five moves.",
-    "heading": "The System",
-    "kicker": "five simple moves"
+    "type": "stage",
+    "narration": "And the overdraft is brutal maths. Buy a three-dollar coffee with two dollars in your account, and the bank hands you a thirty-five-dollar fee. That's a penalty of over a thousand percent — triggered not by recklessness, but simply by being broke at the wrong moment.",
+    "motif": "overdrafttrap",
+    "caption": "a 1,000%+ penalty for being broke"
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "Really, an overdraft is a tiny, brutal loan you never agreed to take. Borrow five dollars for a few days, pay thirty-five back — an interest rate that would make a loan shark blush. And it lands hardest, over and over, on people already living paycheck to paycheck.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "creditcard",
+        "label": "a loan you didn't ask for"
+      },
+      {
+        "name": "percent",
+        "label": "loan-shark rates"
+      },
+      {
+        "name": "warning",
+        "label": "hits the poorest"
+      }
+    ]
   },
   {
     "id": "s15",
     "type": "screenshot",
-    "narration": "Step one: a budget. And a budget is just a calculation plan — usually financial, for a defined period, like a month. It's not a punishment. It's simply knowing where your money is actually going, instead of wondering where it went.",
-    "sourceId": "wiki-budget"
+    "narration": "It's all built on the humble fee — the price one pays as remuneration for rights or services. Except here, the 'service' is often just... having an account at all.",
+    "sourceId": "wiki-fee"
   },
   {
     "id": "s16",
-    "type": "stage",
-    "narration": "The simplest version is the fifty-thirty-twenty rule. Fifty percent of your take-home pay goes to needs — rent, food, bills. Thirty percent to wants — fun, dining, hobbies. And twenty percent straight to savings and debt payoff. That twenty is the slice that builds your future.",
-    "motif": "fiftythirtytwenty",
-    "caption": "the 50 / 30 / 20 paycheck"
-  },
-  {
-    "id": "s53",
     "type": "character",
-    "narration": "Before you cut anything, just look. Most people genuinely have no idea where their money goes — forgotten subscriptions, creeping bills, a dozen tiny taps all running at once. One honest hour with your bank statements almost always uncovers money you didn't even know you were losing.",
+    "narration": "The fees pile up from every direction. Monthly maintenance fees. Minimum-balance fees for dropping below a threshold. Out-of-network ATM fees. Each one is small — but together, they act as a quiet, relentless tax on not having enough money.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "magnifier",
-        "label": "track it honestly"
+        "name": "receipt",
+        "label": "maintenance fees"
       },
       {
-        "name": "phone",
-        "label": "forgotten subscriptions"
+        "name": "warning",
+        "label": "minimum-balance fees"
       },
       {
-        "name": "scissors",
-        "label": "plug the leaks"
+        "name": "coins",
+        "label": "a tax on being poor"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "And notice the cruel catch. That monthly maintenance fee is usually waived — if you keep, say, fifteen hundred dollars in the account at all times. So the fee punishes precisely the people who can't afford to leave money sitting idle. You end up paying, quite literally, for being poor.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "fee waived if you keep $1,500"
+      },
+      {
+        "name": "piggybank",
+        "label": "can't spare the cash?"
+      },
+      {
+        "name": "receipt",
+        "label": "then you pay"
       }
     ]
   },
   {
     "id": "s17",
     "type": "character",
-    "narration": "If twenty percent feels impossible right now, start with five, or even one. The exact number matters less than the habit. A savings rate you actually stick to beats a heroic one you abandon in a month. You can ratchet it up a little with every raise.",
+    "narration": "There's even a dark art to it. Some banks have reordered the day's transactions largest-first, specifically so your account hits zero sooner — triggering the maximum number of overdraft fees in a single day. The fine print was quietly working against you.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "shredder",
+        "label": "transactions reordered"
+      },
+      {
+        "name": "warning",
+        "label": "to maximize fees"
+      },
+      {
+        "name": "magnifier",
+        "label": "buried in fine print"
+      }
+    ]
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "narration": "The outrage eventually got loud enough that regulators and lawsuits forced many banks to rein in the worst of these tricks — and some dropped overdraft fees entirely. Which proves the bottom rung isn't a law of nature. It's a choice banks make, and increasingly, one you can refuse.",
     "pose": "explain",
     "props": [
       {
-        "name": "seedling",
-        "label": "start at 1% if you must"
+        "name": "scale",
+        "label": "regulators pushed back"
       },
       {
-        "name": "gauge",
-        "label": "the habit matters most"
+        "name": "bank",
+        "label": "some dropped fees"
       },
       {
-        "name": "chartup",
-        "label": "raise it with each raise"
+        "name": "shield",
+        "label": "you can refuse it"
       }
     ]
   },
   {
     "id": "s18",
     "type": "title",
-    "narration": "Before you invest a single dollar, there's a step most people skip — and regret.",
-    "heading": "Safety First",
-    "kicker": "the emergency fund"
+    "narration": "Keep a steady balance, and the bank mostly stops noticing you at all.",
+    "heading": "Level 2 — Mass Market",
+    "kicker": "politely ignored"
   },
   {
     "id": "s19",
-    "type": "screenshot",
-    "narration": "Step two: an emergency fund — a stash set aside as a financial safety net for unexpected expenses. The whole job of this money is to keep one bad surprise from turning into a spiral of debt.",
-    "sourceId": "wiki-emergency"
-  },
-  {
-    "id": "s20",
-    "type": "stage",
-    "narration": "The target is three to six months of essential expenses, sitting safely in a savings account — not invested, just there. When the car dies or the job vanishes, this buffer absorbs the hit, so you never have to reach for a credit card at twenty-four percent interest.",
-    "motif": "emergencyfund",
-    "caption": "first: a 3–6 month buffer"
-  },
-  {
-    "id": "s54",
     "type": "character",
-    "narration": "And keep that emergency fund in the right place: a separate, high-yield savings account. Not in checking, where you'll quietly spend it. Not in stocks, where a crash could halve it at the exact moment you need it. Boring, safe, and instantly available — that's the entire job.",
+    "narration": "This is where most people live: free checking, direct deposit, a debit card. No fees, but no attention either. You're not the customer here so much as the raw material — the bank quietly lends your deposits out and keeps the profit.",
     "pose": "explain",
     "props": [
       {
+        "name": "creditcard",
+        "label": "free checking"
+      },
+      {
         "name": "bank",
-        "label": "high-yield savings"
+        "label": "no attention"
       },
       {
-        "name": "shield",
-        "label": "safe, not invested"
+        "name": "coins",
+        "label": "you're the raw material"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "narration": "Because here's the quiet trick at this level: your deposit is a loan to the bank — one you make at nearly zero percent interest. They pay you a fraction of a percent, lend it out at six or seven, and pocket the gap. You're financing them, and barely noticing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "you lend them cash"
       },
       {
-        "name": "safetynet",
-        "label": "instantly available"
+        "name": "percent",
+        "label": "at ~0%"
+      },
+      {
+        "name": "moneybag",
+        "label": "they keep the gap"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "Multiply that tiny gap by millions of accounts and trillions of dollars, and the mass market becomes the bank's golden goose. Your idle balance, earning you almost nothing, is lent and re-lent to earn the bank a fortune. Quiet, invisible, and absolutely enormous.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "millions of balances"
+      },
+      {
+        "name": "bank",
+        "label": "lent & re-lent"
+      },
+      {
+        "name": "moneybag",
+        "label": "a quiet fortune"
       }
     ]
   },
   {
     "id": "s21",
+    "type": "title",
+    "narration": "Cross a hidden threshold, and suddenly the bank remembers your name.",
+    "heading": "Level 3 — 'Preferred'",
+    "kicker": "the perks begin"
+  },
+  {
+    "id": "s22",
     "type": "character",
-    "narration": "This is the step that quietly separates people who build wealth from people who don't. Without a buffer, every emergency becomes new debt, and you're forever climbing out of the same hole. With one, your savings can finally stay invested and grow, undisturbed.",
+    "narration": "Once you've got roughly a hundred to two hundred fifty thousand dollars across your accounts, the velvet rope lifts a little. Welcome to 'preferred' or 'priority' banking — where fees quietly vanish, and the perks begin.",
     "pose": "explain",
     "props": [
       {
-        "name": "safetynet",
-        "label": "absorbs the shock"
+        "name": "velvetrope",
+        "label": "~$100K+"
       },
       {
-        "name": "ballchain",
-        "label": "no new debt"
+        "name": "goldcard",
+        "label": "'preferred' status"
       },
       {
-        "name": "moneytree",
-        "label": "savings stay invested"
+        "name": "handshake",
+        "label": "fees start vanishing"
       }
     ]
   },
   {
-    "id": "s22",
-    "type": "title",
-    "narration": "Now for the single best deal in all of personal finance.",
-    "heading": "Grab the Free Money",
-    "kicker": "the 401(k) match"
+    "id": "s23",
+    "type": "character",
+    "narration": "The perks are small but telling. A dedicated phone line that skips the queue. Waived fees. A slightly better interest rate. A shinier card. None of it is life-changing — but notice the direction has flipped. The bank is now trying to please you.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "phone",
+        "label": "skip the queue"
+      },
+      {
+        "name": "percent",
+        "label": "a better rate"
+      },
+      {
+        "name": "goldcard",
+        "label": "the bank courts you"
+      }
+    ]
   },
   {
-    "id": "s23",
-    "type": "screenshot",
-    "narration": "Step three: the 401(k). In the US, a 401(k) is an employer-sponsored retirement account where contributions come directly out of your paychecks — before you ever see the money, and often before it's taxed.",
-    "sourceId": "wiki-401k"
+    "id": "s54",
+    "type": "character",
+    "narration": "And those preferred perks aren't pure generosity — they're a hook. Hand you a shiny status and a dedicated banker, and you'll consolidate everything with them and never shop around again. The perks are quietly engineered to make you stickier, and far more profitable to keep.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "goldcard",
+        "label": "shiny status"
+      },
+      {
+        "name": "velvetrope",
+        "label": "a retention hook"
+      },
+      {
+        "name": "bank",
+        "label": "you never leave"
+      }
+    ]
   },
   {
     "id": "s24",
-    "type": "screenshot",
-    "narration": "And here's the magic part: the employer match — an employer's payment into your 401(k) that depends on how much you put in. Your company literally adds free money on top of your own contributions.",
-    "sourceId": "wiki-match"
+    "type": "title",
+    "narration": "Add a zero, and you enter a different world entirely.",
+    "heading": "Level 4 — Private Banking",
+    "kicker": "a banker of your own"
   },
   {
     "id": "s25",
-    "type": "stage",
-    "narration": "Think about what this means. You put in a hundred dollars, and your employer drops in another hundred to match it. You just earned an instant, guaranteed one hundred percent return — before the market does anything at all. There is nothing else like it.",
-    "motif": "employermatch",
-    "caption": "the employer match = free money"
+    "type": "screenshot",
+    "narration": "Around a million dollars unlocks private banking — services provided primarily to high-net-worth individuals, presented as an exclusive subset of wealth management. This is where banking stops being a product and becomes a relationship.",
+    "sourceId": "wiki-private"
   },
   {
     "id": "s26",
+    "type": "stage",
+    "narration": "Now you get a private banker — a single human who knows your name and answers your calls. Fees evaporate. You get the best rates, cheap credit against your assets, and invitations to deals ordinary customers never even hear about. The bank officially works for you.",
+    "motif": "privatebanker",
+    "caption": "the bank now works for you"
+  },
+  {
+    "id": "s55",
     "type": "character",
-    "narration": "So the rule is absolute: always contribute at least enough to capture the full match. Leaving it on the table is turning down a raise your boss is begging to give you. It's the closest thing to free money you will ever find.",
-    "pose": "present",
+    "narration": "And the private-banking perks are startlingly concrete. Jumbo mortgages at the very lowest rates. A line of credit against your stock portfolio, available in a day. Early access to investments ordinary customers can't even see. Cheap money, flowing straight to the people who need it least.",
+    "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "capture the full match"
+        "name": "house",
+        "label": "cheap jumbo mortgage"
       },
       {
-        "name": "moneybag",
-        "label": "it's a free raise"
+        "name": "vault",
+        "label": "credit vs. portfolio"
       },
       {
-        "name": "warning",
-        "label": "never skip it"
+        "name": "chartup",
+        "label": "early deal access"
       }
     ]
   },
   {
     "id": "s27",
-    "type": "chalkboard",
-    "narration": "That gives us a clean order of operations. First, grab the full employer match. Second, build your emergency fund. Third, crush any high-interest debt like credit cards. Then, pour everything else into low-cost index funds. Follow that order, and you're ahead of almost everyone.",
-    "lines": [
-      "1. grab the full 401(k) match (free money)",
-      "2. build the 3–6 month emergency fund",
-      "3. kill high-interest debt (cards, payday)",
-      "4. invest the rest in low-cost index funds"
-    ]
-  },
-  {
-    "id": "s55",
     "type": "character",
-    "narration": "Then add one more layer: tax-advantaged accounts. Beyond the 401(k), a Roth I-R-A lets your investments grow and come out completely tax-free in retirement. Sheltering your money from decades of taxes is like quietly adding free points to your return, every single year.",
+    "narration": "And this is where it compounds. The rich borrow against their investments at rock-bottom rates — the exact opposite of the payday borrower. Cheap credit for those who need it least, brutal credit for those who need it most. The ladder rewards you more at every rung.",
     "pose": "explain",
     "props": [
       {
-        "name": "taxform",
-        "label": "shelter from tax"
+        "name": "percent",
+        "label": "cheap credit"
       },
       {
         "name": "vault",
-        "label": "a Roth IRA"
+        "label": "borrow vs assets"
       },
       {
-        "name": "moneytree",
-        "label": "tax-free growth"
+        "name": "scale",
+        "label": "the reverse of payday"
       }
     ]
   },
   {
     "id": "s28",
     "type": "title",
-    "narration": "Now the move that makes the whole system run without you.",
-    "heading": "Make It Automatic",
-    "kicker": "beat your own willpower"
+    "narration": "Higher still, you stop hiring a banker — and start hiring a team.",
+    "heading": "Level 5 — Wealth Management",
+    "kicker": "a team on retainer"
   },
   {
     "id": "s29",
-    "type": "character",
-    "narration": "Step four: automate everything. The oldest trick in the book is 'pay yourself first' — the moment your paycheck lands, money is whisked into savings and investments automatically, before you ever get the chance to spend it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "gear",
-        "label": "automate it"
-      },
-      {
-        "name": "faucet",
-        "label": "pay yourself first"
-      },
-      {
-        "name": "piggybank",
-        "label": "before you can spend"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "In the tens of millions, you reach full wealth management — an industry built to help the very rich preserve and increase their wealth, across tax planning, estate planning, and more. It's less a bank account than a command center.",
+    "sourceId": "wiki-wealthmgmt"
   },
   {
     "id": "s30",
     "type": "character",
-    "narration": "This works because automation quietly beats willpower every time. You don't have to feel disciplined twice a month. You set it up once, the transfers happen in the background, and your savings grow whether you're motivated that week or not.",
+    "narration": "Here, a team of specialists manages your taxes, your investments, your estate, and your trusts — all coordinated, all optimized. The goal shifts from growing the money to protecting it, shielding it from taxes, and quietly passing it on intact.",
     "pose": "explain",
     "props": [
       {
-        "name": "gear",
-        "label": "set it once"
+        "name": "briefcase",
+        "label": "a team of specialists"
       },
       {
-        "name": "calendar",
-        "label": "runs in the background"
+        "name": "taxform",
+        "label": "shield it from tax"
       },
       {
-        "name": "chartup",
-        "label": "grows regardless"
+        "name": "shield",
+        "label": "protect & pass it on"
+      }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "character",
+    "narration": "Here the fees flip one last time — now you pay the bank a management fee, often around one percent a year. But at this level, that fee buys tax savings and estate planning worth far more than it costs. The rich, remarkably, pay fees that actually make them richer.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "percent",
+        "label": "~1% fee"
+      },
+      {
+        "name": "taxform",
+        "label": "buys tax savings"
+      },
+      {
+        "name": "moneytree",
+        "label": "worth far more"
       }
     ]
   },
   {
     "id": "s31",
-    "type": "screenshot",
-    "narration": "Step five is how you invest it: dollar-cost averaging — an investment strategy of putting in the same amount of money at regular intervals, no matter what the market is doing. Same amount, every single month, forever.",
-    "sourceId": "wiki-dca"
+    "type": "title",
+    "narration": "And at the very top sits the final level — your own private institution.",
+    "heading": "Level 6 — Family Office",
+    "kicker": "your own institution"
   },
   {
     "id": "s32",
-    "type": "character",
-    "narration": "This frees you from the impossible game of timing the market. When prices are low, your fixed amount buys more shares. When they're high, it buys fewer. You just keep buying, automatically, through every crash and every boom — and let the decades average it out.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "same amount monthly"
-      },
-      {
-        "name": "chartdown",
-        "label": "buy more when low"
-      },
-      {
-        "name": "gear",
-        "label": "never time the market"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "narration": "And what should you actually buy with all of it? For most people, the answer is gloriously boring: a low-cost index fund that owns a tiny slice of the entire market at once. One cheap fund, bought automatically forever, quietly beats the vast majority of expert stock-pickers over time.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "basket",
-        "label": "own the whole market"
-      },
-      {
-        "name": "coins",
-        "label": "one cheap fund"
-      },
-      {
-        "name": "trophy",
-        "label": "beats the pros"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "This is the family office — a privately held company that handles investment and wealth management for a single wealthy family, built to grow and transfer wealth across generations. It is a bank that exists to serve exactly one family: yours.",
+    "sourceId": "wiki-family"
   },
   {
     "id": "s33",
-    "type": "title",
-    "narration": "And now the force that turns modest savings into real wealth.",
-    "heading": "Let Time Work",
-    "kicker": "compounding + the Rule of 72"
+    "type": "stage",
+    "narration": "Picture an entire private company — investment pros, tax lawyers, estate planners, even philanthropy advisors — all employed full-time to manage one family's fortune. At this altitude, you don't visit a bank. You own one, pointed entirely at your own dynasty.",
+    "motif": "familyoffice",
+    "caption": "a private staff for one family's fortune"
   },
   {
     "id": "s34",
-    "type": "screenshot",
-    "narration": "That force is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Your money earns money, and then that money earns money too. Give it enough time, and the growth becomes almost absurd.",
-    "sourceId": "wiki-compound"
-  },
-  {
-    "id": "s35",
-    "type": "stage",
-    "narration": "There's even a quick mental shortcut for it, the Rule of 72. Divide seventy-two by your annual return to see how fast your money doubles. At eight percent, your money doubles roughly every nine years — doubling again, and again, the longer you leave it alone.",
-    "motif": "ruleof72",
-    "caption": "the Rule of 72"
-  },
-  {
-    "id": "s56",
-    "type": "callout",
-    "narration": "Watch the Rule of 72 do its thing. Ten thousand dollars at eight percent becomes twenty thousand in nine years. Forty in eighteen. Eighty in twenty-seven. The same money, doubling and doubling, until the later leaps are bigger than everything you originally put in.",
-    "text": "$80,000",
-    "sub": "$10K doubling at 8% over ~27 years",
-    "icon": "moneytree"
-  },
-  {
-    "id": "s36",
-    "type": "stage",
-    "narration": "Which is why starting early beats everything. Someone who begins at twenty-five can finish with nearly double what a thirty-five-year-old does, saving the exact same amount — purely because their money got an extra decade to compound. Time is the one ingredient you can never buy back.",
-    "motif": "startearly",
-    "caption": "the one asset you can't buy back: time"
-  },
-  {
-    "id": "s37",
-    "type": "callout",
-    "narration": "Let's make it real. Just five hundred dollars a month, invested steadily from age twenty-five to sixty-five at a normal market return, can grow into well over a million dollars. Not from a huge salary — from a modest, automatic habit, left alone for forty years.",
-    "text": "$1,000,000",
-    "sub": "$500/mo from 25 to 65 at ~8%",
-    "icon": "moneytree"
-  },
-  {
-    "id": "s38",
-    "type": "title",
-    "narration": "So let's put honest numbers on each age, for a typical earner.",
-    "heading": "The Honest Targets",
-    "kicker": "by 25, 30, 40, 50"
-  },
-  {
-    "id": "s39",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Target savings by age — $60K earner ($K)",
-    "unit": "$K",
-    "narration": "For someone earning sixty thousand dollars, the multiples translate to clear goals. Around sixty thousand saved by thirty. A hundred eighty thousand by forty. Three hundred sixty thousand by fifty. And nearly half a million by sixty. Ambitious — but very doable on autopilot.",
-    "data": [
-      {
-        "label": "by 30",
-        "value": 60
-      },
-      {
-        "label": "by 40",
-        "value": 180
-      },
-      {
-        "label": "by 50",
-        "value": 360
-      },
-      {
-        "label": "by 60",
-        "value": 480
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s40",
     "type": "character",
-    "narration": "By twenty-five, don't stress about a big number. The target is simply this: have a small starter emergency fund, and be investing something every month to grab that employer match. At this age, building the habit is worth more than the balance.",
+    "narration": "And the perks here are so large they become a second income. Preferential access to investments. Loans at rates ordinary people will never see. The very richest are, quite literally, paid handsomely by the financial system — for the crime of already being rich.",
     "pose": "explain",
     "props": [
       {
-        "name": "safetynet",
-        "label": "a starter buffer"
+        "name": "moneytree",
+        "label": "perks = a 2nd income"
       },
       {
-        "name": "seedling",
-        "label": "just start investing"
+        "name": "crown",
+        "label": "paid to be rich"
       },
       {
-        "name": "handshake",
-        "label": "grab the match"
-      }
-    ]
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "By thirty, aim for roughly one times your salary. By forty, about three times. If you're hitting these, you are quietly, genuinely on track for a comfortable retirement — even if your bank account doesn't feel glamorous along the way.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "paystub",
-        "label": "30: ~1× salary"
-      },
-      {
-        "name": "chartup",
-        "label": "40: ~3× salary"
-      },
-      {
-        "name": "trophy",
-        "label": "quietly on track"
-      }
-    ]
-  },
-  {
-    "id": "s42",
-    "type": "character",
-    "narration": "By fifty, you're aiming for around six times your salary — and if you're behind, the tax system hands you a gift: bigger 'catch-up' contributions. A focused decade of aggressive saving in your fifties can still dramatically rescue your retirement.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "nestegg",
-        "label": "50: ~6× salary"
-      },
-      {
-        "name": "piggybank",
-        "label": "bigger catch-up limits"
-      },
-      {
-        "name": "retiree",
-        "label": "it's not too late"
+        "name": "vault",
+        "label": "access others never get"
       }
     ]
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "And if you're forty and have barely started, don't despair — but do get serious. You still have twenty-plus years of compounding ahead, which is a lot of runway. Crank your savings rate hard for a decade, max out every tax-advantaged account, and a genuinely comfortable retirement is still firmly on the table.",
+    "narration": "There are even tiers within the top. A single-family office serves just one clan and can cost millions a year to run — so it only makes sense north of a hundred million dollars. Below that, families share a multi-family office, splitting the cost of the royal treatment between them.",
     "pose": "explain",
     "props": [
       {
-        "name": "retiree",
-        "label": "40 and behind?"
+        "name": "mansion",
+        "label": "single-family office"
       },
       {
-        "name": "percent",
-        "label": "crank the rate"
+        "name": "crowd",
+        "label": "multi-family office"
       },
       {
-        "name": "nestegg",
-        "label": "still very doable"
+        "name": "crown",
+        "label": "$100M+ to go solo"
+      }
+    ]
+  },
+  {
+    "id": "s35",
+    "type": "title",
+    "narration": "Step back, and the cruel shape of the whole ladder appears.",
+    "heading": "The Inversion",
+    "kicker": "the less you have, the more you pay"
+  },
+  {
+    "id": "s36",
+    "type": "stage",
+    "narration": "Here's the whole system in one line. The less money you have, the more banking costs you — in fees, in penalties, in predatory rates. The more money you have, the more the bank pays you — in perks, in interest, in cheap credit. It is perfectly, precisely upside down.",
+    "motif": "poorpaymore",
+    "caption": "the less you have, the more you pay"
+  },
+  {
+    "id": "s37",
+    "type": "screenshot",
+    "narration": "The flip happens around that classic line where someone maintains liquid assets at or above a certain threshold — roughly a million dollars. Cross it, and you transform in the bank's eyes from a source of fees into a prize to be courted.",
+    "sourceId": "wiki-hnwi"
+  },
+  {
+    "id": "s38",
+    "type": "character",
+    "narration": "Zoom out, and the bank is really just a mirror of inequality — and a pump that makes it worse. It gently drains fees from the bottom and showers benefits on the top. Money, through the banking system, relentlessly gravitates toward more money.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bank",
+        "label": "a mirror of inequality"
+      },
+      {
+        "name": "faucet",
+        "label": "drains the bottom"
+      },
+      {
+        "name": "moneytree",
+        "label": "showers the top"
+      }
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "callout",
+    "narration": "Measured as a share of income, the gap is obscene. The poorest households can lose several percent of everything they earn just to bank fees, overdrafts, and check-cashing. For the wealthy, that number is effectively zero — and often, thanks to interest and perks, it's negative.",
+    "text": "~5%",
+    "sub": "of a poor household's income lost to fees",
+    "icon": "receipt"
+  },
+  {
+    "id": "s39",
+    "type": "compare",
+    "narration": "So the same institution runs two completely different businesses. For the poor customer, it's a toll booth, collecting fees at every step. For the rich one, it's a concierge, removing every obstacle. One bank, two opposite faces.",
+    "left": {
+      "title": "The poor customer",
+      "value": "a toll booth",
+      "icon": "receipt"
+    },
+    "right": {
+      "title": "The rich customer",
+      "value": "a concierge",
+      "icon": "goldcard"
+    }
+  },
+  {
+    "id": "s40",
+    "type": "title",
+    "narration": "So how do you actually climb this ladder — and get treated better starting now?",
+    "heading": "How to Climb",
+    "kicker": "make the bank work for you"
+  },
+  {
+    "id": "s41",
+    "type": "character",
+    "narration": "Step one: ruthlessly kill fees. Never, ever overdraft — turn the feature off entirely. Switch to a bank or credit union with free checking and no minimums. The fees you avoid at the bottom are the first dollars that start you climbing.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "scissors",
+        "label": "turn off overdraft"
+      },
+      {
+        "name": "bank",
+        "label": "free checking / credit union"
+      },
+      {
+        "name": "coins",
+        "label": "kept fees = first dollars"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "character",
+    "narration": "Step two: use the rich people's tools that are now free to everyone. High-yield savings accounts pay real interest. No-fee brokerages let you buy index funds for nothing. A lot of the old private-client advantages are now one app download away.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "high-yield savings"
+      },
+      {
+        "name": "phone",
+        "label": "no-fee brokerage app"
+      },
+      {
+        "name": "pie",
+        "label": "cheap index funds"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "And here's the genuinely good news. Online banks and credit unions have blown the old model wide open. No branches means no fees and real interest. A credit union is literally owned by its own customers. You can opt out of the predatory bottom rungs entirely — starting today.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "phone",
+        "label": "online banks"
+      },
+      {
+        "name": "handshake",
+        "label": "customer-owned credit unions"
+      },
+      {
+        "name": "coins",
+        "label": "no fees, real interest"
       }
     ]
   },
   {
     "id": "s43",
-    "type": "compare",
-    "narration": "And this is the whole thing in two people. Same salary, same job. One saves twenty percent on autopilot and grabs the match. The other saves nothing and spends it all. Thirty years later, one retires early and free — the other can't afford to stop at all.",
-    "left": {
-      "title": "Saves 20%, automated",
-      "value": "retires free",
-      "icon": "nestegg"
-    },
-    "right": {
-      "title": "Saves nothing",
-      "value": "can never stop",
-      "icon": "ballchain"
-    }
+    "type": "character",
+    "narration": "Step three: consolidate and climb deliberately. Those perk tiers trigger on your total balance at one institution. Pooling your accounts can quietly tip you over a threshold — unlocking waived fees and better rates you were already entitled to.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "vault",
+        "label": "pool your accounts"
+      },
+      {
+        "name": "velvetrope",
+        "label": "cross the threshold"
+      },
+      {
+        "name": "goldcard",
+        "label": "unlock the perks"
+      }
+    ]
   },
   {
     "id": "s44",
-    "type": "title",
-    "narration": "So what's the real lesson hiding under all these numbers?",
-    "heading": "The Lesson",
-    "kicker": "rate beats everything"
+    "type": "character",
+    "narration": "And step four, the mindset: the bank is a tool, never a friend. It is not loyal to you, and the warm branding is marketing. Treat it coldly, shop it like any vendor, and make it compete for the privilege of holding your money.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "not your friend"
+      },
+      {
+        "name": "scale",
+        "label": "shop it like a vendor"
+      },
+      {
+        "name": "bank",
+        "label": "make it compete"
+      }
+    ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "The age targets are a map. Your savings rate is the engine. And time is the fuel. Get those three working together, and the exact numbers almost take care of themselves. Miss the engine, and no salary on Earth will save you.",
+    "narration": "Because that's the real lesson of the ladder. Every single rung you climb, the relationship flips a little more in your favor. You pay the bank a little less — and it starts paying you a little more. The goal isn't to beat the bank. It's to make it work for you.",
     "pose": "explain",
     "props": [
       {
-        "name": "mountain",
-        "label": "targets = the map"
+        "name": "ladder",
+        "label": "every rung flips it"
       },
       {
-        "name": "gear",
-        "label": "rate = the engine"
+        "name": "moneytree",
+        "label": "they pay you more"
       },
       {
-        "name": "hourglass",
-        "label": "time = the fuel"
+        "name": "crown",
+        "label": "make it work for you"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "So the ladder is real — but it is not a prison. Every rung you climb, you shed a little of the predatory bottom and gain a little of the privileged top. The whole system quietly rewards momentum, which means the single best move you can make is simply to start climbing.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "ladder",
+        "label": "not a prison"
+      },
+      {
+        "name": "chartup",
+        "label": "climb one rung"
+      },
+      {
+        "name": "crown",
+        "label": "shed the bottom"
       }
     ]
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "So don't wait to earn more before you start. You don't need a bigger salary — you need a bigger gap between what you earn and what you spend. That gap, automated and left to compound, is how ordinary incomes quietly turn into real wealth.",
+    "narration": "So the next time your bank hits you with a fee, or rolls out a red carpet, you'll know exactly what's happening. It's not being cruel or kind. It's just reading the number in your account — and treating you precisely according to your level.",
     "pose": "present",
     "props": [
       {
-        "name": "percent",
-        "label": "widen the gap"
+        "name": "bank",
+        "label": "it's reading your balance"
       },
       {
-        "name": "gear",
-        "label": "automate it"
+        "name": "ladder",
+        "label": "treating you by level"
       },
       {
-        "name": "moneytree",
-        "label": "then wait"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "narration": "And guard fiercely against lifestyle creep. The real danger was never earning more — it's letting your spending rise to swallow every raise, so a bigger paycheck leaves you exactly as broke as before. Lock your lifestyle in place, bank the difference, and let that gap widen all on its own.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "raises roll in"
-      },
-      {
-        "name": "grocerybag",
-        "label": "don't let spending chase"
-      },
-      {
-        "name": "piggybank",
-        "label": "bank the difference"
+        "name": "calculator",
+        "label": "now you see it"
       }
     ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "Here's your whole plan in one breath. Automate twenty percent. Grab the full match. Keep a three-to-six-month buffer. Buy index funds every month. Then ignore it for thirty years. Boring — and almost unfairly effective.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "gear",
-        "label": "automate 20%"
-      },
-      {
-        "name": "safetynet",
-        "label": "keep the buffer"
-      },
-      {
-        "name": "seedling",
-        "label": "then wait 30 years"
-      }
-    ]
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "Because in the end, you're not really chasing a number on a screen. You're buying back your own time — the freedom to one day work because you want to, not because you have to. That's what every one of these targets is secretly for.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "clock",
-        "label": "you're buying time"
-      },
-      {
-        "name": "nestegg",
-        "label": "freedom to choose"
-      },
-      {
-        "name": "mountain",
-        "label": "that's the real goal"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "If this gave you a real plan for your age, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this changed how you see your bank, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "piggybank",
+        "name": "goldcard",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s50",
+    "id": "s48",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

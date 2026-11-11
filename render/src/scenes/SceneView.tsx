@@ -3993,6 +3993,108 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={492} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>a little math that shows the magic</text>
       </svg>
     );
+  } else if (m === "bankladder") {
+    // The tiers of banking, from unbanked to family office.
+    const tiers: [string, string][] = [["unbanked", "pays the most"], ["basic checking", "$35 fees"], ["mass market", "ignored"], ["'preferred'", "perks begin"], ["private bank", "a personal banker"], ["family office", "a whole team"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([lab, sub], i) => {
+          const w = 150 + i * 130;
+          const y = 90 + i * 66;
+          const op = interpolate(climb, [i * 0.13, i * 0.13 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <rect x={VW / 2 - w / 2} y={y} width={w} height={54} rx={7} fill={[parch, "#e8d7bf", tan, "#cfe3d4", green, gold][i]} stroke={ink} strokeWidth={4} />
+              <text x={VW / 2} y={y + 24} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text>
+              <text x={VW / 2} y={y + 44} fontSize={13} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{sub}</text>
+            </g>
+          );
+        })}
+        <text x={150} y={130} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>poor</text>
+        <text x={830} y={470} fontSize={14} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>ultra-rich</text>
+      </svg>
+    );
+  } else if (m === "feesupperksdown") {
+    // Fees flow up from the poor; perks flow down to the rich.
+    const up = interpolate(frame, [fps * 0.5, fps * 1.8], [0, 1], clampBoth);
+    const down = interpolate(frame, [fps * 1.4, fps * 2.7], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 120)"><circle r={58} fill={gold} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>the rich</text><text y={22} fontSize={13} fontWeight={700} fill={ink} textAnchor="middle" fontFamily={sans}>get perks</text></g>
+        <g transform="translate(300 450)"><circle r={58} fill={parch} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>the poor</text><text y={22} fontSize={13} fontWeight={700} fill={ink} textAnchor="middle" fontFamily={sans}>pay fees</text></g>
+        <g opacity={up}><path d="M420 440 L420 160" stroke={red} strokeWidth={6} fill="none" markerEnd="" /><path d="M420 160 l-12 22 m12 -22 l12 22" stroke={red} strokeWidth={6} fill="none" strokeLinecap="round" /><text x={448} y={300} fontSize={20} fontWeight={900} fill={red} fontFamily="Georgia, serif">FEES ↑</text></g>
+        <g opacity={down}><path d="M620 160 L620 440" stroke={green} strokeWidth={6} fill="none" /><path d="M620 440 l-12 -22 m12 22 l12 -22" stroke={green} strokeWidth={6} fill="none" strokeLinecap="round" /><text x={648} y={300} fontSize={20} fontWeight={900} fill={green} fontFamily="Georgia, serif">PERKS ↓</text></g>
+        <text x={VW / 2} y={40} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the poor quietly subsidize the rich</text>
+      </svg>
+    );
+  } else if (m === "overdrafttrap") {
+    // A $3 coffee triggers a $35 overdraft fee.
+    const buy = spring({ frame, fps, delay: fps * 0.7, config: { damping: 10 } });
+    const fee = spring({ frame, fps, delay: fps * 1.7, config: { damping: 8 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(280 290) scale(${Math.min(1, buy)})`}><circle r={60} fill={tan} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={30} textAnchor="middle" fontFamily={sans}>☕</text><text y={30} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>$3 coffee</text></g>
+        <path d="M360 290 l90 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={interpolate(fee, [0, 0.4], [0, 1], clampBoth)} />
+        <g transform={`translate(680 290) scale(${Math.min(1.05, fee)})`}><circle r={78} fill={red} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={40} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$35</text><text y={30} fontSize={16} fontWeight={800} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>overdraft fee</text></g>
+        <text x={VW / 2} y={470} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a 1,000%+ penalty — for being broke</text>
+      </svg>
+    );
+  } else if (m === "privatebanker") {
+    // The concierge treatment for the wealthy client.
+    const pop = spring({ frame, fps, delay: fps * 0.7, config: { damping: 11 } });
+    const perks = ["waived fees", "best rates", "24/7 banker", "exclusive access"];
+    const reveal = interpolate(frame, [fps * 1.0, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(260 280) scale(${Math.min(1, pop)})`}>
+          <circle r={66} fill={gold} stroke={ink} strokeWidth={5} />
+          <text y={-6} fontSize={30} textAnchor="middle" fontFamily={sans}>🤵</text>
+          <text y={30} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>your banker</text>
+        </g>
+        {perks.map((p, i) => {
+          const op = interpolate(reveal, [i * 0.2, i * 0.2 + 0.25], [0, 1], clampBoth);
+          return <g key={i} opacity={op} transform={`translate(560 ${160 + i * 76})`}><rect x={-10} y={-26} width={330} height={52} rx={10} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text x={155} y={8} fontSize={19} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>✓ {p}</text></g>;
+        })}
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the bank now works for you</text>
+      </svg>
+    );
+  } else if (m === "poorpaymore") {
+    // The paradox: low balance = high cost; high balance = paid to bank.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const x0 = 120, x1 = 860, y0 = 440, yTop = 120;
+    const px = x0 + (x1 - x0) * draw;
+    const curveY = (t: number) => y0 - (y0 - yTop) * Math.pow(1 - t, 2.4);
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <text x={70} y={yTop} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>cost of</text>
+        <text x={70} y={yTop + 16} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>banking</text>
+        <path d={`M${x0} ${curveY(0)} ${Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `L${x0 + (x1 - x0) * t} ${curveY(t)}`; }).join(" ")}`} fill="none" stroke={red} strokeWidth={6} />
+        <text x={180} y={190} fontSize={16} fontWeight={900} fill={red} fontFamily={sans}>broke = you pay</text>
+        <text x={640} y={420} fontSize={16} fontWeight={900} fill={green} fontFamily={sans}>rich = you get paid</text>
+        <text x={x0 + 10} y={468} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>$0</text>
+        <text x={x1 - 40} y={468} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>$10M+</text>
+        <text x={VW / 2} y={66} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the less you have, the more you pay</text>
+      </svg>
+    );
+  } else if (m === "familyoffice") {
+    // A whole team orbiting one wealthy family.
+    const reveal = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const team = ["investing", "taxes", "estate", "legal", "philanthropy"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 290)"><circle r={62} fill={gold} stroke={ink} strokeWidth={6} /><text y={-4} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>one</text><text y={20} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>family</text></g>
+        {team.map((t, i) => {
+          const a = (i / team.length) * 6.283 - 1.57;
+          const op = interpolate(reveal, [i * 0.14, i * 0.14 + 0.2], [0, 1], clampBoth);
+          const x = 490 + 240 * Math.cos(a), y = 290 + 165 * Math.sin(a);
+          return <g key={i} opacity={op}><line x1={490} y1={290} x2={x} y2={y} stroke={theme.inkSoft} strokeWidth={2} strokeDasharray="5 5" /><g transform={`translate(${x} ${y})`}><rect x={-72} y={-24} width={144} height={48} rx={9} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text y={6} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{t}</text></g></g>;
+        })}
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a private staff for one family's fortune</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

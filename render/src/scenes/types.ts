@@ -170,7 +170,9 @@ export interface StageScene extends Base {
     // EP052 (net worth by age) additions:
     | "agecurve" | "rankmeter" | "medianvsmean" | "salarymultiple" | "generationgap" | "startearly"
     // EP053 (how much you should have saved) additions:
-    | "savingsrate" | "fiftythirtytwenty" | "emergencyfund" | "employermatch" | "ruleof72";
+    | "savingsrate" | "fiftythirtytwenty" | "emergencyfund" | "employermatch" | "ruleof72"
+    // EP054 (how banks treat you at every level) additions:
+    | "bankladder" | "feesupperksdown" | "overdrafttrap" | "privatebanker" | "poorpaymore" | "familyoffice";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
