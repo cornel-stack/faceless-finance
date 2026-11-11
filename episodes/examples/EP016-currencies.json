@@ -16,8 +16,16 @@
       "id": "s1",
       "type": "doodle",
       "narration": "One dollar. Ninety euro cents. A hundred and fifty Japanese yen. Three totally different numbers — and in much of the world, each one buys you about the same cup of coffee.",
-      "items": ["dollar", "euro", "yen"],
-      "labels": ["$1", "€0.90", "¥150"],
+      "items": [
+        "dollar",
+        "euro",
+        "yen"
+      ],
+      "labels": [
+        "$1",
+        "€0.90",
+        "¥150"
+      ],
       "caption": "…all buy one coffee"
     },
     {
@@ -26,7 +34,12 @@
       "narration": "So why is one dollar worth a hundred and fifty of something else? And why does that number change every single second?",
       "pose": "think",
       "bubble": "why 150?",
-      "props": [{ "name": "exchange", "label": "…and why does it move?" }]
+      "props": [
+        {
+          "name": "exchange",
+          "label": "…and why does it move?"
+        }
+      ]
     },
     {
       "id": "s3",
@@ -51,13 +64,17 @@
       "kicker": "Money, explained",
       "sub": "It's a price — set by supply, demand, and trust."
     },
-
     {
       "id": "s6",
       "type": "character",
       "narration": "Start with the thing almost everyone gets wrong. The value of a currency is not printed on the note.",
       "pose": "explain",
-      "props": [{ "name": "banknote", "label": "…not the paper" }]
+      "props": [
+        {
+          "name": "banknote",
+          "label": "…not the paper"
+        }
+      ]
     },
     {
       "id": "s7",
@@ -76,8 +93,16 @@
       "id": "s9",
       "type": "compare",
       "narration": "So 'one dollar equals a hundred and fifty yen' just means: today, in the market, a dollar trades for a hundred and fifty yen. Tomorrow it might be a hundred and forty-eight.",
-      "left": { "title": "1 US dollar", "value": "$1", "icon": "dollar" },
-      "right": { "title": "trades for", "value": "¥150", "icon": "yen" }
+      "left": {
+        "title": "1 US dollar",
+        "value": "$1",
+        "icon": "dollar"
+      },
+      "right": {
+        "title": "trades for",
+        "value": "¥150",
+        "icon": "yen"
+      }
     },
     {
       "id": "s10",
@@ -86,23 +111,38 @@
       "pose": "point",
       "expression": "happy",
       "bubble": "big number ≠ poor",
-      "props": [{ "name": "warning", "label": "myth #1" }]
+      "props": [
+        {
+          "name": "warning",
+          "label": "myth #1"
+        }
+      ]
     },
     {
       "id": "s11",
       "type": "doodle",
       "narration": "One dollar is worth about a hundred and fifty yen. Japan is one of the richest countries on Earth. The number is just history — decades ago they sized the yen small, and it stuck.",
-      "items": ["flagJP", "yen"],
-      "labels": ["Japan", "¥150 per $1"],
+      "items": [
+        "flagJP",
+        "yen"
+      ],
+      "labels": [
+        "Japan",
+        "¥150 per $1"
+      ],
       "caption": "rich — and still ¥150 to the dollar"
     },
     {
       "id": "s12",
       "type": "chalkboard",
       "narration": "A dollar buys about eighty-three Indian rupees, or over a thousand Korean won. Those are just the sizes each country chose for its money. Big number, small number — it says nothing about rich or poor.",
-      "lines": ["$1 = ¥150", "$1 = ₹83", "$1 = 1,300 ₩", "…none of this means \"poor\""]
+      "lines": [
+        "$1 = ¥150",
+        "$1 = ₹83",
+        "$1 = 1,300 ₩",
+        "…none of this means \"poor\""
+      ]
     },
-
     {
       "id": "s13",
       "type": "character",
@@ -134,14 +174,27 @@
       "type": "character",
       "narration": "So what makes someone want a particular currency in the first place?",
       "pose": "explain",
-      "props": [{ "name": "crowd", "label": "who wants it?" }]
+      "props": [
+        {
+          "name": "crowd",
+          "label": "who wants it?"
+        }
+      ]
     },
     {
       "id": "s18",
       "type": "doodle",
       "narration": "Simple. To buy that country's stuff. If you want American goods, American stocks, or American property, first you have to buy dollars.",
-      "items": ["crowd", "dollar", "factory"],
-      "labels": ["foreigners", "buy $", "to buy US goods"],
+      "items": [
+        "crowd",
+        "dollar",
+        "factory"
+      ],
+      "labels": [
+        "foreigners",
+        "buy $",
+        "to buy US goods"
+      ],
       "caption": "want the goods → want the money",
       "flow": true
     },
@@ -151,17 +204,59 @@
       "narration": "Tourists, importers, giant investment funds — everyone who wants in has to swap into that country's currency. Each swap is a little tug on the price.",
       "title": "What creates demand for a currency",
       "nodes": [
-        { "id": "trade", "label": "buy its exports", "icon": "factory", "x": 0.17, "y": 0.26 },
-        { "id": "invest", "label": "invest there", "icon": "chartup", "x": 0.17, "y": 0.56 },
-        { "id": "tour", "label": "visit it", "icon": "globe", "x": 0.17, "y": 0.86 },
-        { "id": "dem", "label": "demand for its money", "icon": "exchange", "x": 0.54, "y": 0.56 },
-        { "id": "val", "label": "price rises", "icon": "chartup", "x": 0.86, "y": 0.56 }
+        {
+          "id": "trade",
+          "label": "buy its exports",
+          "icon": "factory",
+          "x": 0.17,
+          "y": 0.26
+        },
+        {
+          "id": "invest",
+          "label": "invest there",
+          "icon": "chartup",
+          "x": 0.17,
+          "y": 0.56
+        },
+        {
+          "id": "tour",
+          "label": "visit it",
+          "icon": "globe",
+          "x": 0.17,
+          "y": 0.86
+        },
+        {
+          "id": "dem",
+          "label": "demand for its money",
+          "icon": "exchange",
+          "x": 0.54,
+          "y": 0.56
+        },
+        {
+          "id": "val",
+          "label": "price rises",
+          "icon": "chartup",
+          "x": 0.86,
+          "y": 0.56
+        }
       ],
       "edges": [
-        { "from": "trade", "to": "dem" },
-        { "from": "invest", "to": "dem" },
-        { "from": "tour", "to": "dem" },
-        { "from": "dem", "to": "val" }
+        {
+          "from": "trade",
+          "to": "dem"
+        },
+        {
+          "from": "invest",
+          "to": "dem"
+        },
+        {
+          "from": "tour",
+          "to": "dem"
+        },
+        {
+          "from": "dem",
+          "to": "val"
+        }
       ]
     },
     {
@@ -170,11 +265,16 @@
       "narration": "More buyers than sellers, the price rises. More sellers than buyers, it falls. A currency is strong when the world wants what that country is selling.",
       "pose": "explain",
       "props": [
-        { "name": "chartup", "label": "more buyers → up" },
-        { "name": "chartdown", "label": "more sellers → down" }
+        {
+          "name": "chartup",
+          "label": "more buyers → up"
+        },
+        {
+          "name": "chartdown",
+          "label": "more sellers → down"
+        }
       ]
     },
-
     {
       "id": "s21",
       "type": "title",
@@ -202,8 +302,14 @@
       "narration": "So when the Federal Reserve hikes, money floods toward dollars and the dollar climbs — often before a single rate even changes, just on the expectation.",
       "pose": "point",
       "props": [
-        { "name": "magnet", "label": "higher rate" },
-        { "name": "dollar", "label": "$ climbs" }
+        {
+          "name": "magnet",
+          "label": "higher rate"
+        },
+        {
+          "name": "dollar",
+          "label": "$ climbs"
+        }
       ]
     },
     {
@@ -218,8 +324,14 @@
       "narration": "Borrow where money is cheap; invest where it pays more. Do that with hundreds of billions, and these flows alone can shove exchange rates around for years.",
       "pose": "explain",
       "props": [
-        { "name": "yen", "label": "borrow cheap ¥" },
-        { "name": "dollar", "label": "…earn more in $" }
+        {
+          "name": "yen",
+          "label": "borrow cheap ¥"
+        },
+        {
+          "name": "dollar",
+          "label": "…earn more in $"
+        }
       ]
     },
     {
@@ -242,11 +354,26 @@
       "chartType": "line",
       "title": "More money printed → one unit buys less",
       "data": [
-        { "label": "Yr 1", "value": 100 },
-        { "label": "Yr 2", "value": 92 },
-        { "label": "Yr 3", "value": 78 },
-        { "label": "Yr 4", "value": 60 },
-        { "label": "Yr 5", "value": 41 }
+        {
+          "label": "Yr 1",
+          "value": 100
+        },
+        {
+          "label": "Yr 2",
+          "value": 92
+        },
+        {
+          "label": "Yr 3",
+          "value": 78
+        },
+        {
+          "label": "Yr 4",
+          "value": 60
+        },
+        {
+          "label": "Yr 5",
+          "value": 41
+        }
       ],
       "highlight": 4,
       "note": "value of one unit"
@@ -255,8 +382,16 @@
       "id": "s30",
       "type": "compare",
       "narration": "Force three: trade. Sell more to the world than you buy, and demand for your money runs hot. Buy more than you sell, and it slowly leaks away.",
-      "left": { "title": "exports more", "value": "stronger", "icon": "chartup" },
-      "right": { "title": "imports more", "value": "weaker", "icon": "chartdown" }
+      "left": {
+        "title": "exports more",
+        "value": "stronger",
+        "icon": "chartup"
+      },
+      "right": {
+        "title": "imports more",
+        "value": "weaker",
+        "icon": "chartdown"
+      }
     },
     {
       "id": "s31",
@@ -264,27 +399,46 @@
       "narration": "And here's a twist most people miss. Plenty of countries actually want a weaker currency.",
       "pose": "think",
       "bubble": "weaker… on purpose?",
-      "props": [{ "name": "factory", "label": "cheaper exports" }]
+      "props": [
+        {
+          "name": "factory",
+          "label": "cheaper exports"
+        }
+      ]
     },
     {
       "id": "s32",
       "type": "stage",
       "narration": "A weaker currency makes your exports cheaper for foreigners, so your factories sell more. That's why you'll hear accusations of countries quietly pushing their own currency down.",
-      "icons": ["factory", "globe"],
+      "icons": [
+        "factory",
+        "globe"
+      ],
       "caption": "weak money = cheap exports"
     },
     {
       "id": "s33",
       "type": "compare",
       "narration": "A strong currency is great for shoppers and travelers, and rough on exporters. A weak one is the exact reverse. There's no 'best' — only trade-offs.",
-      "left": { "title": "strong currency", "value": "cheap imports", "icon": "basket" },
-      "right": { "title": "weak currency", "value": "booming exports", "icon": "factory" }
+      "left": {
+        "title": "strong currency",
+        "value": "cheap imports",
+        "icon": "basket"
+      },
+      "right": {
+        "title": "weak currency",
+        "value": "booming exports",
+        "icon": "factory"
+      }
     },
     {
       "id": "s34",
       "type": "stage",
       "narration": "And force four, the quiet one that rules them all: trust. Will this country stay stable? Will it pay its debts? Will your money still be safe here next year?",
-      "icons": ["scale", "handshake"],
+      "icons": [
+        "scale",
+        "handshake"
+      ],
       "caption": "4) trust in the country behind it"
     },
     {
@@ -300,11 +454,16 @@
       "pose": "explain",
       "expression": "worried",
       "props": [
-        { "name": "phone", "label": "one sentence…" },
-        { "name": "ticker", "label": "…markets lurch" }
+        {
+          "name": "phone",
+          "label": "one sentence…"
+        },
+        {
+          "name": "ticker",
+          "label": "…markets lurch"
+        }
       ]
     },
-
     {
       "id": "s37",
       "type": "title",
@@ -333,10 +492,22 @@
       "title": "The same cart of groceries, in US dollars",
       "unit": "USD",
       "data": [
-        { "label": "Mumbai", "value": 45 },
-        { "label": "Tokyo", "value": 72 },
-        { "label": "New York", "value": 100 },
-        { "label": "Zurich", "value": 130 }
+        {
+          "label": "Mumbai",
+          "value": 45
+        },
+        {
+          "label": "Tokyo",
+          "value": 72
+        },
+        {
+          "label": "New York",
+          "value": 100
+        },
+        {
+          "label": "Zurich",
+          "value": 130
+        }
       ],
       "highlight": 3,
       "note": "same cart, double the price"
@@ -353,9 +524,13 @@
       "narration": "So a strong currency and a cheap place to live are not the same sentence. The exchange rate and the real buying power are two different things. Hold that thought.",
       "pose": "think",
       "bubble": "rate ≠ real value",
-      "props": [{ "name": "basket", "label": "what it really buys" }]
+      "props": [
+        {
+          "name": "basket",
+          "label": "what it really buys"
+        }
+      ]
     },
-
     {
       "id": "s43",
       "type": "title",
@@ -367,14 +542,20 @@
       "id": "s44",
       "type": "stage",
       "narration": "When your currency is strong, every holiday abroad, every imported gadget, every online order from overseas quietly gets cheaper.",
-      "icons": ["globe", "pricetag"],
+      "icons": [
+        "globe",
+        "pricetag"
+      ],
       "caption": "a strong currency = cheaper travel"
     },
     {
       "id": "s45",
       "type": "stage",
       "narration": "When it weakens, the opposite happens. Imported cars, phones, even your fuel can creep upward in price — without a single tax ever changing.",
-      "icons": ["gaspump", "chartup"],
+      "icons": [
+        "gaspump",
+        "chartup"
+      ],
       "caption": "a weak currency = pricier imports"
     },
     {
@@ -383,11 +564,16 @@
       "narration": "Because so much of the world's oil and goods are priced in dollars, a weaker local currency means you hand over more of it for the exact same barrel.",
       "pose": "explain",
       "props": [
-        { "name": "oilbarrel", "label": "priced in $" },
-        { "name": "gaspump", "label": "…costs you more" }
+        {
+          "name": "oilbarrel",
+          "label": "priced in $"
+        },
+        {
+          "name": "gaspump",
+          "label": "…costs you more"
+        }
       ]
     },
-
     {
       "id": "s47",
       "type": "title",
@@ -413,7 +599,10 @@
       "id": "s50",
       "type": "stage",
       "narration": "Oil, ships, commodities, huge piles of global debt — all quoted in dollars. So almost everyone needs a stack of them, all the time.",
-      "icons": ["oilbarrel", "dollar"],
+      "icons": [
+        "oilbarrel",
+        "dollar"
+      ],
       "caption": "oil & world trade priced in $"
     },
     {
@@ -436,15 +625,48 @@
       "narration": "Add it up and the dollar has built-in demand no one else gets. The world needs dollars just to function, which keeps a permanent floor under the price.",
       "title": "The dollar's built-in demand",
       "nodes": [
-        { "id": "oil", "label": "oil & trade in $", "icon": "oilbarrel", "x": 0.18, "y": 0.3 },
-        { "id": "safe", "label": "US debt = the safe asset", "icon": "bank", "x": 0.18, "y": 0.74 },
-        { "id": "need", "label": "everyone needs dollars", "icon": "dollar", "x": 0.54, "y": 0.52 },
-        { "id": "strong", "label": "steady demand", "icon": "chartup", "x": 0.86, "y": 0.52 }
+        {
+          "id": "oil",
+          "label": "oil & trade in $",
+          "icon": "oilbarrel",
+          "x": 0.18,
+          "y": 0.3
+        },
+        {
+          "id": "safe",
+          "label": "US debt = the safe asset",
+          "icon": "bank",
+          "x": 0.18,
+          "y": 0.74
+        },
+        {
+          "id": "need",
+          "label": "everyone needs dollars",
+          "icon": "dollar",
+          "x": 0.54,
+          "y": 0.52
+        },
+        {
+          "id": "strong",
+          "label": "steady demand",
+          "icon": "chartup",
+          "x": 0.86,
+          "y": 0.52
+        }
       ],
       "edges": [
-        { "from": "oil", "to": "need" },
-        { "from": "safe", "to": "need" },
-        { "from": "need", "to": "strong" }
+        {
+          "from": "oil",
+          "to": "need"
+        },
+        {
+          "from": "safe",
+          "to": "need"
+        },
+        {
+          "from": "need",
+          "to": "strong"
+        }
       ]
     },
     {
@@ -453,11 +675,16 @@
       "narration": "It lets the dollar stay strong even when America borrows enormous amounts — a privilege economists call its exorbitant advantage.",
       "pose": "explain",
       "props": [
-        { "name": "globe", "label": "the world's money" },
-        { "name": "dollar", "label": "…stays strong anyway" }
+        {
+          "name": "globe",
+          "label": "the world's money"
+        },
+        {
+          "name": "dollar",
+          "label": "…stays strong anyway"
+        }
       ]
     },
-
     {
       "id": "s55",
       "type": "title",
@@ -477,10 +704,26 @@
       "narration": "It wasn't always this way. For decades, major currencies were fixed to gold. Then in 1971 the US cut that cord, and by 1973 the modern free-floating world began.",
       "title": "How we got to floating money",
       "events": [
-        { "year": "1944", "label": "Bretton Woods: fixed to gold", "icon": "goldbar" },
-        { "year": "1971", "label": "US ends the gold window", "icon": "warning" },
-        { "year": "1973", "label": "currencies start to float", "icon": "exchange" },
-        { "year": "today", "label": "the market sets the price", "icon": "candles" }
+        {
+          "year": "1944",
+          "label": "Bretton Woods: fixed to gold",
+          "icon": "goldbar"
+        },
+        {
+          "year": "1971",
+          "label": "US ends the gold window",
+          "icon": "warning"
+        },
+        {
+          "year": "1973",
+          "label": "currencies start to float",
+          "icon": "exchange"
+        },
+        {
+          "year": "today",
+          "label": "the market sets the price",
+          "icon": "candles"
+        }
       ],
       "highlight": 2
     },
@@ -504,8 +747,14 @@
       "pose": "explain",
       "expression": "worried",
       "props": [
-        { "name": "vault", "label": "spend the reserves" },
-        { "name": "anchor", "label": "…defend the peg" }
+        {
+          "name": "vault",
+          "label": "spend the reserves"
+        },
+        {
+          "name": "anchor",
+          "label": "…defend the peg"
+        }
       ]
     },
     {
@@ -521,9 +770,23 @@
       "pose": "explain",
       "expression": "worried",
       "props": [
-        { "name": "ticker", "label": "sell the pound" },
-        { "name": "bank", "label": "…defend it!" }
+        {
+          "name": "ticker",
+          "label": "sell the pound"
+        },
+        {
+          "name": "bank",
+          "label": "…defend it!"
+        }
       ]
+    },
+    {
+      "id": "s62b",
+      "type": "image",
+      "src": "img/soros.jpg",
+      "label": "GEORGE SOROS",
+      "caption": "the man who broke the Bank of England",
+      "narration": "And that's the man who did it — George Soros. His bet against the pound on Black Wednesday reportedly earned him over a billion dollars in a single day."
     },
     {
       "id": "s63",
@@ -538,7 +801,10 @@
       "id": "s64",
       "type": "stage",
       "narration": "That was the lesson markets never forgot. If a fixed rate drifts too far from reality, enough money betting against it can break even a mighty central bank.",
-      "icons": ["flagGB", "chartdown"],
+      "icons": [
+        "flagGB",
+        "chartdown"
+      ],
       "caption": "the market beat the central bank"
     },
     {
@@ -553,11 +819,16 @@
       "id": "s66",
       "type": "doodle",
       "narration": "It's a story that has played out again and again — a proud fixed rate, then a sudden, brutal devaluation that wipes out savings in a single day.",
-      "items": ["flagAR", "chartdown"],
-      "labels": ["Argentina", "again and again"],
+      "items": [
+        "flagAR",
+        "chartdown"
+      ],
+      "labels": [
+        "Argentina",
+        "again and again"
+      ],
       "caption": "the cost of a broken peg"
     },
-
     {
       "id": "s67",
       "type": "screenshot",
@@ -568,7 +839,10 @@
       "id": "s68",
       "type": "stage",
       "narration": "Around twenty nations share the euro. One money, no exchange-rate friction between them — but also no private lever left to adjust when their own economy needs it.",
-      "icons": ["euro", "handshake"],
+      "icons": [
+        "euro",
+        "handshake"
+      ],
       "caption": "20 countries, one currency"
     },
     {
@@ -577,11 +851,16 @@
       "narration": "Others simply adopt the US dollar outright — Ecuador, El Salvador, Panama. They import America's stability, and hand their monetary steering wheel straight to the Federal Reserve.",
       "pose": "explain",
       "props": [
-        { "name": "dollar", "label": "adopt the $" },
-        { "name": "capitol", "label": "…the Fed decides" }
+        {
+          "name": "dollar",
+          "label": "adopt the $"
+        },
+        {
+          "name": "capitol",
+          "label": "…the Fed decides"
+        }
       ]
     },
-
     {
       "id": "s70",
       "type": "title",
@@ -621,8 +900,16 @@
       "id": "s75",
       "type": "doodle",
       "narration": "Weimar Germany, Zimbabwe, Venezuela — different decades, identical pattern. Once people stop believing the number on the note, the number means nothing.",
-      "items": ["flagAR", "flagLK", "flagGR"],
-      "labels": ["Argentina", "Sri Lanka", "Greece"],
+      "items": [
+        "flagAR",
+        "flagLK",
+        "flagGR"
+      ],
+      "labels": [
+        "Argentina",
+        "Sri Lanka",
+        "Greece"
+      ],
       "caption": "trust, once gone, is brutal to rebuild"
     },
     {
@@ -633,7 +920,6 @@
       "caption": "…the belief, gone",
       "accent": true
     },
-
     {
       "id": "s77",
       "type": "character",
@@ -658,7 +944,12 @@
       "id": "s80",
       "type": "chalkboard",
       "narration": "So the value of a currency is really three questions wearing a trench coat. What can it buy? Who wants it? And do you trust the people behind it?",
-      "lines": ["a currency is worth…", "what it can buy,", "who wants it,", "and whether you trust it."]
+      "lines": [
+        "a currency is worth…",
+        "what it can buy,",
+        "who wants it,",
+        "and whether you trust it."
+      ]
     },
     {
       "id": "s81",
@@ -666,16 +957,28 @@
       "narration": "Change any one of those three, and the price on the screen moves. That, honestly, is the whole game.",
       "pose": "explain",
       "props": [
-        { "name": "basket", "label": "what it buys" },
-        { "name": "exchange", "label": "who wants it" },
-        { "name": "scale", "label": "do you trust it" }
+        {
+          "name": "basket",
+          "label": "what it buys"
+        },
+        {
+          "name": "exchange",
+          "label": "who wants it"
+        },
+        {
+          "name": "scale",
+          "label": "do you trust it"
+        }
       ]
     },
     {
       "id": "s82",
       "type": "stage",
       "narration": "It's exactly why some people turned to crypto — an attempt to build money that needs no government's promise. But as we've seen on this channel, that just moves the question of trust somewhere else.",
-      "icons": ["token", "scale"],
+      "icons": [
+        "token",
+        "scale"
+      ],
       "caption": "crypto tried to remove the trust"
     },
     {
@@ -690,7 +993,10 @@
       "id": "s84",
       "type": "stage",
       "narration": "A dollar, a euro, a yen — each one is just a promise that billions of people have quietly agreed to believe. That shared agreement is the value.",
-      "icons": ["coins", "globe"],
+      "icons": [
+        "coins",
+        "globe"
+      ],
       "caption": "a promise the whole world agreed to"
     },
     {
@@ -699,7 +1005,12 @@
       "narration": "So next time an exchange rate jumps and the headlines panic, you'll know what actually moved. Not the paper — the demand, the printing, or the trust behind it.",
       "pose": "present",
       "bubble": "now you can see it",
-      "props": [{ "name": "candles", "label": "…read the real story" }]
+      "props": [
+        {
+          "name": "candles",
+          "label": "…read the real story"
+        }
+      ]
     },
     {
       "id": "s86",
@@ -707,7 +1018,12 @@
       "narration": "If this made the number on the money finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
       "pose": "celebrate",
       "expression": "happy",
-      "props": [{ "name": "exchange", "label": "which number next?" }]
+      "props": [
+        {
+          "name": "exchange",
+          "label": "which number next?"
+        }
+      ]
     },
     {
       "id": "s87",
@@ -715,30 +1031,135 @@
       "narration": "I do the reading. You get the parts that matter.",
       "pose": "celebrate",
       "expression": "happy",
-      "props": [{ "name": "newspaper", "label": "…what matters" }]
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
     }
   ],
   "sources": [
-    { "id": "wiki-exchange", "name": "Exchange rate (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Exchange_rate", "quote": "exchange rate" },
-    { "id": "wiki-forex", "name": "Foreign exchange market (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Foreign_exchange_market", "quote": "foreign exchange market" },
-    { "id": "wiki-supplydemand", "name": "Supply and demand (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Supply_and_demand", "quote": "supply and demand" },
-    { "id": "wiki-currency", "name": "Currency (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Currency", "quote": "currency" },
-    { "id": "wiki-centralbank", "name": "Central bank (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Central_bank", "quote": "central bank" },
-    { "id": "wiki-carry", "name": "Carry trade (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Carry_(investment)", "quote": "carry trade" },
-    { "id": "wiki-inflation", "name": "Inflation (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Inflation", "quote": "inflation" },
-    { "id": "wiki-ppp", "name": "Purchasing power parity (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Purchasing_power_parity", "quote": "purchasing power" },
-    { "id": "wiki-bigmac", "name": "Big Mac Index (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Big_Mac_Index", "quote": "Big Mac Index" },
-    { "id": "wiki-reserve", "name": "Reserve currency (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Reserve_currency", "quote": "reserve currency" },
-    { "id": "wiki-reserves", "name": "Foreign exchange reserves (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Foreign_exchange_reserves", "quote": "foreign exchange reserves" },
-    { "id": "wiki-float", "name": "Floating exchange rate (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Floating_exchange_rate", "quote": "floating exchange rate" },
-    { "id": "wiki-fixed", "name": "Fixed exchange rate system (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Fixed_exchange_rate_system", "quote": "fixed exchange rate" },
-    { "id": "wiki-blackwed", "name": "Black Wednesday (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Black_Wednesday", "quote": "Black Wednesday" },
-    { "id": "wiki-euro", "name": "Euro (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Euro", "quote": "euro" },
-    { "id": "wiki-bretton", "name": "Bretton Woods system (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Bretton_Woods_system", "quote": "Bretton Woods" },
-    { "id": "wiki-hyper", "name": "Hyperinflation (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Hyperinflation", "quote": "hyperinflation" },
-    { "id": "wiki-fiat", "name": "Fiat money (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Fiat_money", "quote": "fiat money" },
-    { "id": "bis-fx", "name": "BIS Triennial Central Bank Survey 2022 (FX turnover)", "url": "https://www.bis.org/statistics/rpfx22_fx.htm", "quote": "turnover" },
-    { "id": "wiki-zim", "name": "Zimbabwean dollar (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Zimbabwean_dollar", "quote": "hyperinflation" }
+    {
+      "id": "wiki-exchange",
+      "name": "Exchange rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exchange_rate",
+      "quote": "exchange rate"
+    },
+    {
+      "id": "wiki-forex",
+      "name": "Foreign exchange market (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Foreign_exchange_market",
+      "quote": "foreign exchange market"
+    },
+    {
+      "id": "wiki-supplydemand",
+      "name": "Supply and demand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+      "quote": "supply and demand"
+    },
+    {
+      "id": "wiki-currency",
+      "name": "Currency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Currency",
+      "quote": "currency"
+    },
+    {
+      "id": "wiki-centralbank",
+      "name": "Central bank (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Central_bank",
+      "quote": "central bank"
+    },
+    {
+      "id": "wiki-carry",
+      "name": "Carry trade (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carry_(investment)",
+      "quote": "carry trade"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "inflation"
+    },
+    {
+      "id": "wiki-ppp",
+      "name": "Purchasing power parity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+      "quote": "purchasing power"
+    },
+    {
+      "id": "wiki-bigmac",
+      "name": "Big Mac Index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+      "quote": "Big Mac Index"
+    },
+    {
+      "id": "wiki-reserve",
+      "name": "Reserve currency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reserve_currency",
+      "quote": "reserve currency"
+    },
+    {
+      "id": "wiki-reserves",
+      "name": "Foreign exchange reserves (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Foreign_exchange_reserves",
+      "quote": "foreign exchange reserves"
+    },
+    {
+      "id": "wiki-float",
+      "name": "Floating exchange rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Floating_exchange_rate",
+      "quote": "floating exchange rate"
+    },
+    {
+      "id": "wiki-fixed",
+      "name": "Fixed exchange rate system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fixed_exchange_rate_system",
+      "quote": "fixed exchange rate"
+    },
+    {
+      "id": "wiki-blackwed",
+      "name": "Black Wednesday (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Black_Wednesday",
+      "quote": "Black Wednesday"
+    },
+    {
+      "id": "wiki-euro",
+      "name": "Euro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Euro",
+      "quote": "euro"
+    },
+    {
+      "id": "wiki-bretton",
+      "name": "Bretton Woods system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+      "quote": "Bretton Woods"
+    },
+    {
+      "id": "wiki-hyper",
+      "name": "Hyperinflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hyperinflation",
+      "quote": "hyperinflation"
+    },
+    {
+      "id": "wiki-fiat",
+      "name": "Fiat money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fiat_money",
+      "quote": "fiat money"
+    },
+    {
+      "id": "bis-fx",
+      "name": "BIS Triennial Central Bank Survey 2022 (FX turnover)",
+      "url": "https://www.bis.org/statistics/rpfx22_fx.htm",
+      "quote": "turnover"
+    },
+    {
+      "id": "wiki-zim",
+      "name": "Zimbabwean dollar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zimbabwean_dollar",
+      "quote": "hyperinflation"
+    }
   ],
   "youtube": {
     "title": "Why Different Currencies Have Different Values",
@@ -775,7 +1196,12 @@
       "economics explained",
       "Napkin Numbers"
     ],
-    "hashtags": ["#economics", "#finance", "#currency", "#money"],
+    "hashtags": [
+      "#economics",
+      "#finance",
+      "#currency",
+      "#money"
+    ],
     "thumbnail": {
       "hookTop": "WHY IS $1",
       "hookBot": "WORTH ¥150?",
@@ -784,15 +1210,50 @@
       "deco": "exchange"
     },
     "chapters": [
-      ["ninety euro cents", "What a currency is worth"],
-      ["who sets that price", "Supply, demand & the FX market"],
-      ["four big forces", "The four forces that move it"],
-      ["purchasing power", "What it actually buys"],
-      ["reach straight into your daily life", "What it means for you"],
-      ["world's reserve currency", "Why the dollar is different"],
-      ["some countries peg", "Floating, fixed & pegged"],
-      ["trust behind a currency completely", "When trust runs out"],
-      ["backed by trust", "What money really is"]
+      [
+        "ninety euro cents",
+        "What a currency is worth"
+      ],
+      [
+        "who sets that price",
+        "Supply, demand & the FX market"
+      ],
+      [
+        "four big forces",
+        "The four forces that move it"
+      ],
+      [
+        "purchasing power",
+        "What it actually buys"
+      ],
+      [
+        "reach straight into your daily life",
+        "What it means for you"
+      ],
+      [
+        "world's reserve currency",
+        "Why the dollar is different"
+      ],
+      [
+        "some countries peg",
+        "Floating, fixed & pegged"
+      ],
+      [
+        "trust behind a currency completely",
+        "When trust runs out"
+      ],
+      [
+        "backed by trust",
+        "What money really is"
+      ]
+    ]
+  },
+  "media": {
+    "people": [
+      {
+        "query": "George Soros",
+        "slug": "soros"
+      }
     ]
   }
 }
