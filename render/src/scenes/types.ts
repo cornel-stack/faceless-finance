@@ -158,7 +158,9 @@ export interface StageScene extends Base {
     // EP046 (US dominance ending) additions:
     | "gdpshare" | "convergemath" | "fourpercent" | "multipolarshift" | "pppcross" | "debtburden"
     // EP047 (dollar reserve status) additions:
-    | "privilegeperks" | "crownslips" | "importinflation" | "nobuyers" | "noreplacement";
+    | "privilegeperks" | "crownslips" | "importinflation" | "nobuyers" | "noreplacement"
+    // EP048 (gold) additions:
+    | "goldrecord" | "goldvsrates" | "relationshipbreaks" | "cbgoldbuying" | "antidollar" | "insurancenotengine";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

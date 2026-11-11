@@ -85,6 +85,8 @@ export type DoodleName =
   | "chessking" | "risingcity"
   // EP047 (dollar reserve status) additions:
   | "grocerybag" | "scepter"
+  // EP048 (gold) additions:
+  | "umbrella" | "nugget"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1643,6 +1645,25 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={38} y1={82} x2={62} y2={30} strokeWidth={5} />
           <RCircle cx={64} cy={26} d={16} fill={GOLD} strokeWidth={SW} />
           <RPath d="M64 16 L64 10 M60 13 L68 13" strokeWidth={2.4} />
+        </>
+      );
+
+    // ---- EP048 (gold) doodles ----
+    case "umbrella":
+      // A safe haven.
+      return (
+        <>
+          <RPath d="M20 48 Q50 18 80 48 Z" fill={RED} strokeWidth={SW} />
+          <RLine x1={50} y1={48} x2={50} y2={80} strokeWidth={SW} />
+          <RPath d="M50 80 Q58 80 58 72" fill="none" strokeWidth={SW} />
+        </>
+      );
+    case "nugget":
+      // A nugget of gold.
+      return (
+        <>
+          <RPath d="M30 56 Q26 40 44 38 Q52 28 66 36 Q82 40 74 56 Q78 72 58 72 Q38 74 30 56 Z" fill={GOLD} strokeWidth={SW} />
+          <RCircle cx={48} cy={50} d={5} fill="#fff" strokeWidth={0.5} />
         </>
       );
   }

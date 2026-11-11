@@ -3310,6 +3310,94 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={500} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">every candidate has a fatal flaw</text>
       </svg>
     );
+  } else if (m === "goldrecord") {
+    // Gold's price soaring to an all-time high.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const path = "M 90 420 L 250 400 L 400 352 L 540 300 L 660 220 L 780 140 L 880 90";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={gold} strokeWidth={7} seed={3} /></g>
+        {rev > 0.85 && <g><circle cx={880} cy={90} r={12} fill={gold} stroke={ink} strokeWidth={3} /><text x={812} y={70} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">all-time high</text></g>}
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the highest gold price in history</text>
+      </svg>
+    );
+  } else if (m === "goldvsrates") {
+    // The old inverse rule: real rates up, gold down.
+    const tilt = interpolate(frame, [fps * 0.6, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <polygon points="490,304 458,364 522,364" fill={ink} />
+        <g transform={`translate(490 300) rotate(${tilt * 14})`}>
+          <RLine x1={-280} y1={0} x2={280} y2={0} stroke={ink} strokeWidth={10} />
+          <g transform="translate(-240 -44)"><circle r={44} fill={blue} stroke={ink} strokeWidth={4} /><text y={0} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>real</text><text y={18} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>rates</text></g>
+          <g transform="translate(240 -44)"><circle r={44} fill={gold} stroke={ink} strokeWidth={4} /><text y={6} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Au</text></g>
+        </g>
+        <text x={VW / 2} y={452} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the old rule: rates up → gold down</text>
+      </svg>
+    );
+  } else if (m === "relationshipbreaks") {
+    // Two lines that used to move opposite now rise together.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const rates = "M 90 360 L 300 360 L 500 280 L 700 220 L 880 190";
+    const goldl = "M 90 360 L 300 360 L 500 280 L 700 180 L 880 110";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <line x1={500} y1={90} x2={500} y2={440} stroke={ink} strokeWidth={2} strokeDasharray="6 6" />
+        <text x={300} y={128} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>used to move opposite</text>
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={rates} stroke={blue} strokeWidth={6} seed={3} />
+          <RPath d={goldl} stroke={gold} strokeWidth={6} seed={6} />
+        </g>
+        {rev > 0.7 && <text x={710} y={132} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">now both rise!</text>}
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a 50-year relationship just broke</text>
+      </svg>
+    );
+  } else if (m === "cbgoldbuying") {
+    // Central-bank vaults filling with gold bars at a record pace.
+    const fill = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={92} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">central-bank vaults, filling up</text>
+        <g transform="translate(490 300)">
+          <rect x={-160} y={-150} width={320} height={300} rx={10} fill={tan} stroke={ink} strokeWidth={6} />
+          {Array.from({ length: 12 }, (_, i) => { const show = fill > i / 12; const row = Math.floor(i / 3); const col = i % 3; return show ? <rect key={i} x={-120 + col * 80} y={120 - row * 44} width={70} height={34} rx={4} fill={gold} stroke={ink} strokeWidth={3} /> : null; })}
+        </g>
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">buying gold at a record pace</text>
+      </svg>
+    );
+  } else if (m === "antidollar") {
+    // Gold as the anti-dollar: no counterparty, can't be printed or frozen.
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(270 270)"><circle r={90} fill={green} stroke={ink} strokeWidth={6} /><text y={18} fontSize={54} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text><text y={134} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>printed & freezable</text></g>
+        <g transform="translate(720 270)"><circle r={90} fill={gold} stroke={ink} strokeWidth={6} /><text y={18} fontSize={44} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Au</text><text y={134} fontSize={18} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>no counterparty</text></g>
+        <text x={VW / 2} y={476} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">gold is the anti-dollar</text>
+      </svg>
+    );
+  } else if (m === "insurancenotengine") {
+    // Gold is flat insurance; stocks are the growth engine.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.2], [0, 1], clampBoth);
+    const stocks = "M 100 400 L 300 320 L 500 240 L 700 150 L 880 90";
+    const goldl = "M 100 360 L 300 350 L 500 340 L 700 330 L 880 320";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={90} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={stocks} stroke={green} strokeWidth={6} seed={3} />
+          <RPath d={goldl} stroke={gold} strokeWidth={6} seed={6} />
+        </g>
+        {rev > 0.8 && <g><text x={812} y={78} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>stocks: the engine</text><text x={812} y={342} fontSize={18} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>gold: the insurance</text></g>}
+        <text x={VW / 2} y={490} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">gold protects; it doesn't compound</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
