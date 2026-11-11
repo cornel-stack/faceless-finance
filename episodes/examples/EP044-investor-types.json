@@ -1,0 +1,1001 @@
+{
+  "id": "EP044",
+  "series": "Napkin Numbers",
+  "title": "Every Type of Investor Explained (and Who Wins)",
+  "slug": "every-type-of-investor-explained-and-who-wins",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP044 — explainer (By the Numbers, row 34). A taxonomy of investor types (value, growth, index, dividend, momentum, day trader, macro, activist, contrarian, quant) on one spectrum from investing to gambling — and the data on who actually wins (the patient). Real portraits reused (Graham, Buffett, Bogle, Soros, Icahn, Livermore). 5 new motifs (investorspectrum, valuevsgrowth, timehorizons, whowins, dividendstream) + doodles (bull, bear). Target 12–15 min.",
+  "media": {
+    "people": [
+      {
+        "query": "Benjamin Graham",
+        "slug": "graham"
+      },
+      {
+        "query": "Warren Buffett",
+        "slug": "warren"
+      },
+      {
+        "query": "John C. Bogle",
+        "slug": "bogle"
+      },
+      {
+        "query": "George Soros",
+        "slug": "soros"
+      },
+      {
+        "query": "Carl Icahn",
+        "slug": "icahn"
+      },
+      {
+        "query": "Jesse Lauriston Livermore",
+        "slug": "livermore"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Everyone in the stock market calls themselves 'an investor.' But that single word hides a dozen wildly different species — from the patient tortoise who barely trades, to the frantic gambler betting by the second.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "turtle",
+          "label": "the patient tortoise"
+        },
+        {
+          "name": "hare",
+          "label": "the frantic trader"
+        },
+        {
+          "name": "dice",
+          "label": "the gambler"
+        },
+        {
+          "name": "chartup",
+          "label": "…who wins?"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "callout",
+      "narration": "Here's the number almost nobody tells you: studies of active day traders find the vast majority — often around ninety percent — lose money over time. Meanwhile, the laziest investor in the room quietly gets rich.",
+      "text": "90%",
+      "sub": "of day traders lose — so who wins?",
+      "icon": "bear"
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "And they are not all the same. Some of these styles reliably build wealth over a lifetime. Others, the data shows, reliably destroy it. So let's meet them all — and ask who actually wins.",
+      "pose": "think",
+      "bubble": "which one really wins?"
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "'I'm an investor'",
+      "memeBottom": "day-trading meme stocks at 2am",
+      "narration": "Because the gap between the best and worst styles isn't small. It's the difference between quietly getting rich, and quietly going broke."
+    },
+    {
+      "id": "s4",
+      "type": "stage",
+      "narration": "The best way to see it is as one long spectrum. At one end, pure investing — patient, owning a piece of a business. At the other, pure gambling — fast, betting on a price. Everyone sits somewhere on this line.",
+      "motif": "investorspectrum",
+      "caption": "one long line, patient to reckless"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "The grandfather of all this, Benjamin Graham, imagined the market as a moody business partner called 'Mr Market' — who offers you a crazy price every single day. Your only job is to decide when he's being a fool.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "'Mr Market'"
+        },
+        {
+          "name": "gauge",
+          "label": "wildly moody"
+        },
+        {
+          "name": "scale",
+          "label": "is he sane today?"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "Let's start at the calm end, with the style that built the most fortunes.",
+      "heading": "The Value Investor",
+      "kicker": "buy a dollar for 50 cents"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Value investing means buying securities that appear underpriced by some form of fundamental analysis. In plain terms: buying good things when they're cheap.",
+      "sourceId": "wiki-value"
+    },
+    {
+      "id": "s7",
+      "type": "image",
+      "src": "img/graham.jpg",
+      "label": "BENJAMIN GRAHAM",
+      "caption": "father of value investing",
+      "narration": "The philosophy comes from Benjamin Graham, the father of value investing. His core idea was the 'margin of safety': only buy when the price is far below what the thing is truly worth."
+    },
+    {
+      "id": "s8",
+      "type": "image",
+      "src": "img/warren.jpg",
+      "label": "WARREN BUFFETT",
+      "caption": "Graham's most famous student",
+      "narration": "His most famous student, Warren Buffett, turned it into the greatest investing record in history — by buying wonderful businesses at fair prices and then holding them, patiently, for decades."
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "The value investor is a bargain hunter and a pessimist's optimist. They read boring financial statements, ignore the hype, and wait — sometimes years — for the right price. It is slow, and it works.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "patient bargain hunting"
+        },
+        {
+          "name": "pricetag",
+          "label": "buy it cheap"
+        },
+        {
+          "name": "scale",
+          "label": "vs true worth"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The hard part of value investing isn't finding cheap stocks — it's the waiting. You might sit on a 'bargain' for years while it goes nowhere, needing iron patience to ignore a market screaming that you're wrong.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "years of waiting"
+        },
+        {
+          "name": "magnifier",
+          "label": "trust your analysis"
+        },
+        {
+          "name": "shield",
+          "label": "ignore the noise"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "Next, value's more glamorous cousin: the growth investor.",
+      "heading": "The Growth Investor",
+      "kicker": "pay up for the future"
+    },
+    {
+      "id": "s11",
+      "type": "screenshot",
+      "narration": "Growth investing is a strategy focused on capital appreciation — investing in companies expected to grow much faster than average.",
+      "sourceId": "wiki-growth"
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "narration": "So where value asks 'is this cheap?', growth asks 'how big could this become?' The growth investor will happily pay a high price today for a company they believe will be enormous tomorrow.",
+      "motif": "valuevsgrowth",
+      "caption": "cheap-and-proven vs expensive-and-promising"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "Done well, growth investing catches the next giant early and makes a fortune. Done badly, it's just paying absurd prices for exciting stories — the exact trap that fuelled the dot-com and AI manias.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "rocket",
+          "label": "bet on the next giant"
+        },
+        {
+          "name": "chartup",
+          "label": "explosive growth"
+        },
+        {
+          "name": "warning",
+          "label": "…or a bubble"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "The growth investor's nightmare is paying a fortune for a story that never delivers. For every giant they catch early, there's a graveyard of 'next big things' that quietly went to zero.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "rocket",
+          "label": "catch the giant"
+        },
+        {
+          "name": "tombstone",
+          "label": "…or the graveyard"
+        },
+        {
+          "name": "warning",
+          "label": "the price can be insane"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Then there's the style that quietly beats most of the others — by refusing to pick at all.",
+      "heading": "The Index Investor",
+      "kicker": "own everything, do nothing"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "The index investor just buys an index fund, replicating a whole market by holding the same securities as the index — and then does almost nothing.",
+      "sourceId": "wiki-index"
+    },
+    {
+      "id": "s16",
+      "type": "image",
+      "src": "img/bogle.jpg",
+      "label": "JOHN BOGLE",
+      "caption": "gave us the index fund",
+      "narration": "This is the gospel of John Bogle: don't try to find the needle, just buy the whole haystack. Own a tiny slice of everything, keep costs near zero, and let time do the work."
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "It sounds lazy. It sounds boring. And as we've covered before, it quietly beats the large majority of highly-paid professionals over the long run. For most people, this is simply the answer.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "turtle",
+          "label": "boring, and winning"
+        },
+        {
+          "name": "coins",
+          "label": "near-zero cost"
+        },
+        {
+          "name": "trophy",
+          "label": "beats the pros"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Some investors don't chase price gains at all. They just want to get paid.",
+      "heading": "The Income Investor",
+      "kicker": "paid to hold"
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "They live on dividends — the distribution of a company's profits to its shareholders. Buy solid, profitable companies, and they mail you a slice of the earnings, year after year.",
+      "sourceId": "wiki-dividend"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "The income investor builds a portfolio like an orchard: planted once, then harvested forever. They care less about the share price bouncing around, and more about the steady stream of cash it pays out.",
+      "motif": "dividendstream",
+      "caption": "paid just for holding"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And the quiet magic is reinvestment. Feed those dividends back in to buy more shares, which pay more dividends, which buy still more shares — a snowball of income rolling downhill for decades.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "coins",
+          "label": "reinvest the cash"
+        },
+        {
+          "name": "chartup",
+          "label": "a growing snowball"
+        },
+        {
+          "name": "hourglass",
+          "label": "for decades"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Now we speed up — and start sliding toward the gambling end of the spectrum.",
+      "heading": "The Traders",
+      "kicker": "riding the waves"
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "First, the momentum trader. Momentum investing means buying securities that have risen strongly over recent months, and selling those that have fallen.",
+      "sourceId": "wiki-momentum"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "Their motto is 'the trend is your friend.' They don't much care what a company is worth — only which way its price is moving. Buy what's hot, sell what's not, and try to jump off before the music stops.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "'ride the trend'"
+        },
+        {
+          "name": "bull",
+          "label": "ride it up"
+        },
+        {
+          "name": "chartdown",
+          "label": "dump the fallers"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "narration": "Faster still is the day trader — a form of speculation in securities, buying and selling within a single trading day.",
+      "sourceId": "wiki-daytrade"
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "The day trader holds nothing overnight, glued to charts, hunting tiny moves. It looks like the most active, intense kind of investing. Statistically, it's the closest thing to a casino on this whole list.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "stockscreen",
+          "label": "in and out, same day"
+        },
+        {
+          "name": "dice",
+          "label": "pure odds"
+        },
+        {
+          "name": "chartdown",
+          "label": "most lose"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "stage",
+      "narration": "At the opposite end of temperament sits the contrarian — who does the single hardest thing in markets: stays calm and buys precisely when everyone else is terrified and selling.",
+      "motif": "contrarian",
+      "caption": "be greedy when others are fearful"
+    },
+    {
+      "id": "s26",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "own a business for a decade",
+      "memeBottom": "flip a ticker in 90 seconds",
+      "narration": "Notice the pattern: the further right we move, the shorter the time horizon, and the more it stops being investing and starts being betting."
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "It sounds simple and feels impossible. Buying during a crash, while headlines scream that the world is ending and your own portfolio bleeds, takes nerves of steel — which is exactly why so few people actually do it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bear",
+          "label": "buy the panic"
+        },
+        {
+          "name": "warning",
+          "label": "nerves of steel"
+        },
+        {
+          "name": "trophy",
+          "label": "historically rewarded"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "At the big-money end sit the players who move markets, not just ride them.",
+      "heading": "The Big Players",
+      "kicker": "macro, activist, speculator"
+    },
+    {
+      "id": "s28",
+      "type": "image",
+      "src": "img/soros.jpg",
+      "label": "GEORGE SOROS",
+      "caption": "the macro speculator",
+      "narration": "The macro speculator, like George Soros, bets on huge economic shifts — currencies, interest rates, whole countries. Soros famously 'broke the Bank of England,' making a billion dollars betting against the pound."
+    },
+    {
+      "id": "s29",
+      "type": "image",
+      "src": "img/icahn.jpg",
+      "label": "CARL ICAHN",
+      "caption": "the activist investor",
+      "narration": "The activist investor, like Carl Icahn, buys a big stake in a company specifically to force change — shaking up management, demanding buybacks or break-ups, and profiting from the shake-up."
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "That's shareholder activism — using an equity stake to put pressure on a company's management. A fairly small stake can be enough to launch a loud campaign.",
+      "sourceId": "wiki-activist"
+    },
+    {
+      "id": "s31",
+      "type": "image",
+      "src": "img/livermore.jpg",
+      "label": "JESSE LIVERMORE",
+      "caption": "the great speculator",
+      "narration": "And at the very far edge sits the pure speculator, like the legendary Jesse Livermore — making enormous, often leveraged bets on price swings. He made, and then lost, several fortunes, and died broke."
+    },
+    {
+      "id": "s58",
+      "type": "stage",
+      "narration": "And in the shadows runs a very different beast entirely: the quant. No gut feelings, no stories — just mathematicians and algorithms firing thousands of trades a second, hunting patterns invisible to humans.",
+      "motif": "quantbot",
+      "caption": "algorithms trading in microseconds"
+    },
+    {
+      "id": "s32",
+      "type": "screenshot",
+      "narration": "That's the dictionary definition of speculation: buying an asset hoping it becomes more valuable in a brief amount of time. All hope, all timing, no ownership.",
+      "sourceId": "wiki-speculation"
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "Quant funds hire physicists and build superfast computers to exploit tiny, fleeting edges. For an ordinary person, trying to out-trade these machines by hand is like racing a Formula One car on a bicycle.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brain",
+          "label": "physicists & math"
+        },
+        {
+          "name": "server",
+          "label": "microsecond speed"
+        },
+        {
+          "name": "warning",
+          "label": "you can't outrun them"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "Which points to the biggest divide of all: retail versus institutional. On one side, you, on your phone. On the other, trillion-dollar funds with armies of analysts, instant data, and the fastest machines on Earth.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "you"
+        },
+        {
+          "name": "bank",
+          "label": "vs the giants"
+        },
+        {
+          "name": "scale",
+          "label": "a lopsided fight"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "So with this whole zoo of styles, how do you tell the winners from the losers? There's one axis that explains almost everything.",
+      "heading": "The One Axis",
+      "kicker": "it's all about time"
+    },
+    {
+      "id": "s34",
+      "type": "stage",
+      "narration": "Forget value versus growth for a second. The real divide is time horizon. How long do you intend to hold? The longer your horizon, the more you're investing. The shorter it is, the more you're gambling.",
+      "motif": "timehorizons",
+      "caption": "shorter horizon = closer to a casino"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Over decades, owning good businesses lets the magic of compounding and real earnings work for you. Over seconds, you're just betting against faster, better-funded players on a random price wiggle.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "time is the great divider"
+        },
+        {
+          "name": "chartup",
+          "label": "decades = investing"
+        },
+        {
+          "name": "dice",
+          "label": "seconds = gambling"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "compare",
+      "narration": "So weigh the two mindsets directly. The long-term owner lets compounding and real profits do the work. The short-term bettor is just guessing which way a price wiggles next.",
+      "left": {
+        "title": "Long horizon",
+        "value": "own & compound",
+        "icon": "turtle"
+      },
+      "right": {
+        "title": "Short horizon",
+        "value": "guess the wiggle",
+        "icon": "dice"
+      }
+    },
+    {
+      "id": "s36",
+      "type": "title",
+      "narration": "Which finally lets us answer the question in the title: who actually wins?",
+      "heading": "Who Wins",
+      "kicker": "the data is brutal"
+    },
+    {
+      "id": "s37",
+      "type": "stage",
+      "narration": "The data is remarkably consistent. The long-term, low-cost, patient investors — especially the boring index crowd — reliably come out ahead. The frantic day traders, as a group, reliably lose.",
+      "motif": "whowins",
+      "caption": "who actually wins, long-term"
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "The uncomfortable truth is that the winning styles are the slow, dull ones. And the exciting, high-adrenaline styles — the ones that feel the most like 'real' investing — are where most people quietly lose money.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "turtle",
+          "label": "boring wins the race"
+        },
+        {
+          "name": "hare",
+          "label": "the flashy loser"
+        },
+        {
+          "name": "trophy",
+          "label": "slow wins"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "There's a newer species too: the crypto 'HODLer,' who buys a volatile coin and vows to never, ever sell. It's part investing, part identity, part religion — and a vivid reminder that conviction and a good plan are not the same thing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "token",
+          "label": "'HODL forever'"
+        },
+        {
+          "name": "crowd",
+          "label": "part tribe"
+        },
+        {
+          "name": "warning",
+          "label": "conviction is not a plan"
+        }
+      ],
+      "expression": "worried"
+    },
+    {
+      "id": "s63",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "pick exciting stocks to beat the market",
+      "memeBottom": "quietly underperform a boring index fund",
+      "narration": "And this is the humbling reality that unites almost all the active styles: as a group, they struggle to beat the simple index they're trying so hard to outsmart."
+    },
+    {
+      "id": "s39",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "the most boring investor usually beats the most exciting one",
+      "narration": "It's the tortoise and the hare, played out with real money. The dazzling hare sprints and stumbles. The dull tortoise just keeps walking — and finishes first."
+    },
+    {
+      "id": "s40",
+      "type": "title",
+      "narration": "So which one are you — and which one should you be?",
+      "heading": "Which Are You?",
+      "kicker": "temperament over genius"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Here's the secret the pros understand: it's not about which style is smartest. It's about temperament. The best strategy in the world is useless if you can't stick to it through fear and greed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brain",
+          "label": "temperament beats IQ"
+        },
+        {
+          "name": "scale",
+          "label": "discipline"
+        },
+        {
+          "name": "warning",
+          "label": "fear & greed"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "If you have the patience of a Buffett, value investing can work. If you don't, that's completely fine — because the index approach is specifically designed to win without requiring any special skill or nerve at all.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "pick a style you can keep"
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "So the real first step isn't picking stocks — it's knowing yourself. Are you genuinely patient, or do you panic? Do you love research, or hate it? Be honest, because the market will find out either way.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "brain",
+          "label": "know thyself"
+        },
+        {
+          "name": "gauge",
+          "label": "patient or panicky?"
+        },
+        {
+          "name": "handshake",
+          "label": "be honest"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "What almost nobody should be is a full-time day trader or a leveraged speculator. The thrill is real, but so are the odds — and the odds, over time, are brutal.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "warning",
+          "label": "avoid the casino end"
+        },
+        {
+          "name": "dice",
+          "label": "the odds"
+        },
+        {
+          "name": "bear",
+          "label": "brutal losses"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "title",
+      "narration": "So let's total up the whole zoo.",
+      "heading": "The Final Math",
+      "kicker": "find your species"
+    },
+    {
+      "id": "s45",
+      "type": "chalkboard",
+      "narration": "Value buys cheap. Growth buys the future. Index buys everything. Income buys cash flow. Traders ride momentum. And speculators gamble on price. All on one line — from patient owning to frantic betting.",
+      "lines": [
+        "value · growth · index · income",
+        "momentum · day trade · macro",
+        "activist · speculator · quant",
+        "→ investing on the left, gambling on the right"
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "And the single most important finding is this: the winners cluster at the patient, low-cost, long-term end. The further you drift toward fast and leveraged, the worse the odds become.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bull",
+          "label": "patience is the edge"
+        },
+        {
+          "name": "hourglass",
+          "label": "give it time"
+        },
+        {
+          "name": "coins",
+          "label": "low cost"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "And whatever style you choose, two quiet forces decide most of your result: cost and time. Keep your fees near zero, give it decades, and the boring arithmetic does more than any brilliant stock pick ever could.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "coins",
+          "label": "low fees"
+        },
+        {
+          "name": "hourglass",
+          "label": "long time"
+        },
+        {
+          "name": "chartup",
+          "label": "compounding wins"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "So don't ask 'which style is the most exciting?' Ask 'which style can I actually stick to for twenty years?' For most people, honestly, the answer is a boring index fund and a lot of patience.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "turtle",
+          "label": "boring, on purpose"
+        },
+        {
+          "name": "basket",
+          "label": "just an index fund"
+        },
+        {
+          "name": "calendar",
+          "label": "for 20 years"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "character",
+      "narration": "The practical trick is to make good behaviour automatic. Set up an automatic monthly investment into a broad fund, and you quietly become the patient, winning investor — without needing any willpower at all.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "automate it"
+        },
+        {
+          "name": "basket",
+          "label": "broad fund"
+        },
+        {
+          "name": "shield",
+          "label": "no willpower needed"
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "type": "image",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "out-trade the robots and win long-term",
+      "narration": "For the vast majority of people, trying to beat the market by hand is a losing game. Joining it, cheaply and patiently, is a winning one."
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "Because in the end, the market doesn't pay you for being the smartest, the fastest, or the most exciting investor in the room. It pays you, mostly, for being the most patient.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "patience gets paid"
+        },
+        {
+          "name": "trophy",
+          "label": "the real reward"
+        },
+        {
+          "name": "bull",
+          "label": "compounding"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "If this helped you find your species, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "bull",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-value",
+      "name": "Value investing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Value_investing",
+      "quote": "buying securities that appear underpriced by some form of fundamental analysis"
+    },
+    {
+      "id": "wiki-growth",
+      "name": "Growth investing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Growth_investing",
+      "quote": "a type of investment strategy focused on capital appreciation"
+    },
+    {
+      "id": "wiki-index",
+      "name": "Index fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Index_fund",
+      "quote": "holding the same securities as the index in the same proportions"
+    },
+    {
+      "id": "wiki-dividend",
+      "name": "Dividend (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dividend",
+      "quote": "the distribution of profits by a corporation to its shareholders"
+    },
+    {
+      "id": "wiki-momentum",
+      "name": "Momentum investing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Momentum_investing",
+      "quote": "buying stocks or other securities that have had high returns over the past three-to-twelve months"
+    },
+    {
+      "id": "wiki-daytrade",
+      "name": "Day trading (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Day_trading",
+      "quote": "a form of speculation in securities"
+    },
+    {
+      "id": "wiki-activist",
+      "name": "Activist shareholder (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Activist_shareholder",
+      "quote": "shareholders use equity stakes in a corporation to put pressure on its management"
+    },
+    {
+      "id": "wiki-speculation",
+      "name": "Speculation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Speculation",
+      "quote": "with the hope that that asset will become more valuable"
+    }
+  ],
+  "youtube": {
+    "title": "Every Type of Investor Explained (and Who Wins)",
+    "alts": [
+      "Value, Growth, Index, Day Trader: Which Investor Wins?",
+      "The 10 Types of Investor — and the Data on Who Actually Wins"
+    ],
+    "hook": "Everyone calls themselves 'an investor' — but there are a dozen wildly different species, from the patient value investor to the frantic day trader. This is every type of investor explained, by the numbers: value (Graham, Buffett), growth, index (Bogle), income/dividends, momentum, day trading, macro (Soros), activism (Icahn), and pure speculation (Livermore) — all on one spectrum from investing to gambling. Then the brutal data on who actually wins: the patient, low-cost, long-term crowd. Fully cited.",
+    "bullets": [
+      "The spectrum from pure investing to pure gambling",
+      "Value vs growth — buying cheap vs paying up for the future",
+      "The index investor who beats most professionals by doing nothing",
+      "Momentum, day trading, and the slide toward the casino",
+      "The big players: macro (Soros), activist (Icahn), speculator (Livermore)",
+      "The one axis that decides it all — time — and who actually wins"
+    ],
+    "tags": [
+      "types of investors",
+      "every type of investor explained",
+      "value investing",
+      "growth investing",
+      "index investing",
+      "day trading",
+      "warren buffett",
+      "george soros",
+      "carl icahn",
+      "investing strategies",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#investing",
+      "#stocks",
+      "#valueinvesting",
+      "#indexfunds"
+    ],
+    "thumbnail": {
+      "hookTop": "EVERY INVESTOR TYPE",
+      "hookBot": "WHO ACTUALLY WINS?",
+      "napkinNumber": "10 types",
+      "napkinSub": "one of them wins",
+      "deco": "bull"
+    },
+    "chapters": [
+      [
+        "a dozen wildly different species",
+        "The spectrum"
+      ],
+      [
+        "value investor is a bargain",
+        "Value"
+      ],
+      [
+        "index investor just buys",
+        "Index"
+      ],
+      [
+        "the day trader",
+        "The traders"
+      ],
+      [
+        "macro speculator, like",
+        "The big players"
+      ],
+      [
+        "real divide is time horizon",
+        "Time horizon"
+      ],
+      [
+        "who actually wins",
+        "Who wins"
+      ],
+      [
+        "which one are you",
+        "Which are you"
+      ]
+    ]
+  }
+}

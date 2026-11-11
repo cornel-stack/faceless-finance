@@ -76,24 +76,45 @@ const Character: React.FC<{ scene: CharacterScene }> = ({ scene }) => {
     ? PROP_SLOTS[slotN].map((s) => (charRight ? { ...s, x: 1920 - s.x } : s))
     : [];
   const enter = spring({ frame, fps, config: { damping: 13, mass: 0.7 } });
+  // Mascot anchor point that the explanation lines spring out from (near the hands).
+  const anchorX = charLeft + mW / 2;
+  const anchorY = 560;
 
   return (
     <AbsoluteFill>
-      {/* props: show the first `reveal`; newest pops in, earlier ones hold still */}
+      {/* Animated connector lines drawn FROM the mascot TO each visible prop — the
+          "explain" gesture. Each draws on as its prop springs in, so the scene
+          reads as the host actively pointing things out, not a static tableau. */}
+      {hasProps && (
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          {props.slice(0, slots.length).map((p, i) => {
+            if (i >= reveal) return null;
+            const slot = slots[i];
+            const app = interpolate(frame, [3 + i * 7, 16 + i * 7], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+            const midX = (anchorX + slot.x) / 2;
+            const d = `M ${anchorX} ${anchorY} Q ${midX} ${anchorY - 70} ${slot.x} ${slot.y + slot.s / 2 - 6}`;
+            const len = Math.hypot(slot.x - anchorX, slot.y - anchorY) + 120;
+            return <path key={i} d={d} fill="none" stroke={theme.accent} strokeWidth={5} strokeLinecap="round" strokeDasharray={`${len}`} strokeDashoffset={len * (1 - app)} opacity={0.55} />;
+          })}
+        </svg>
+      )}
+      {/* props: all visible props stay lively — each springs in on a stagger and
+          keeps a gentle bob so nothing is ever dead-static. */}
       {hasProps && props.slice(0, slots.length).map((p, i) => {
         if (i >= reveal) return null;
         const slot = slots[i];
-        const isNewest = i === reveal - 1;
-        const s = isNewest ? spring({ frame, fps, delay: 3, config: { damping: 12, mass: 0.6 } }) : 1;
+        const s = spring({ frame, fps, delay: 3 + i * 7, config: { damping: 11, mass: 0.6 } });
+        const bob = Math.sin((frame - i * 11) / 16) * 7;
+        const lab = interpolate(frame, [10 + i * 7, 22 + i * 7], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
         return (
-          <div key={i} style={{ position: "absolute", left: slot.x - slot.s / 2, top: slot.y - slot.s / 2, width: slot.s, transform: `scale(${s})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
+          <div key={i} style={{ position: "absolute", left: slot.x - slot.s / 2, top: slot.y - slot.s / 2, width: slot.s, transform: `translateY(${bob}px) scale(${Math.min(1, s)})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
             <Doodle name={p.name} size={slot.s} />
-            {p.label && <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 34, color: theme.ink, textAlign: "center" }}>{p.label}</div>}
+            {p.label && <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 34, color: theme.ink, textAlign: "center", opacity: lab, transform: `translateY(${(1 - lab) * 10}px)` }}>{p.label}</div>}
           </div>
         );
       })}
-      {/* character */}
-      <div style={{ position: "absolute", left: charLeft, bottom: 10, width: mW, height: mH, transform: `translateY(${(1 - enter) * 40}px) scale(${0.92 + enter * 0.08})`, transformOrigin: "bottom center" }}>
+      {/* character — a gentle idle sway so the host feels alive, not a cardboard cut-out */}
+      <div style={{ position: "absolute", left: charLeft, bottom: 10, width: mW, height: mH, transform: `translateY(${(1 - enter) * 40}px) scale(${0.92 + enter * 0.08}) rotate(${Math.sin(frame / 28) * 0.8}deg)`, transformOrigin: "bottom center" }}>
         <Mascot pose={scene.pose ?? "stand"} expression={scene.expression} variant={scene.variant} flip={flip} width={mW} height={mH} />
       </div>
       {hasBubble && (
@@ -2992,6 +3013,86 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <g transform="translate(260 270)"><rect x={-112} y={-72} width={224} height={144} rx={10} fill={green} stroke={ink} strokeWidth={5} /><text y={-20} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>pays in full</text><text y={14} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>0% interest</text><text y={42} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>'transactor'</text></g>
         <g transform="translate(720 270)"><rect x={-112} y={-72} width={224} height={144} rx={10} fill={red} stroke={ink} strokeWidth={5} /><text y={-20} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>carries a balance</text><text y={14} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>20%+ interest</text><text y={42} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>'revolver'</text></g>
         <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">two customers, opposite outcomes</text>
+      </svg>
+    );
+  } else if (m === "investorspectrum") {
+    // A spectrum from patient investing to reckless gambling.
+    const reveal = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const pts: [string, number, string][] = [["index", 0.1, green], ["value", 0.3, blue], ["growth", 0.5, gold], ["momentum", 0.7, "#d98b5f"], ["day trade", 0.92, red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={110} y1={270} x2={VW - 110} y2={270} stroke={ink} strokeWidth={5} />
+        <text x={150} y={330} fontSize={18} fontWeight={800} fill={green} fontFamily={sans}>◄ investing</text>
+        <text x={VW - 150} y={330} fontSize={18} fontWeight={800} fill={red} textAnchor="end" fontFamily={sans}>gambling ►</text>
+        {pts.map(([lab, x, c], i) => { const op = interpolate(reveal, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth); const px = 110 + (VW - 220) * x; return <g key={i} opacity={op}><circle cx={px} cy={270} r={12} fill={c} stroke={ink} strokeWidth={3} /><text x={px} y={228} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={420} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one long line, patient to reckless</text>
+      </svg>
+    );
+  } else if (m === "valuevsgrowth") {
+    // Value (buy cheap) vs growth (pay up for the future).
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(270 270)"><rect x={-132} y={-122} width={264} height={244} rx={12} fill={blue} stroke={ink} strokeWidth={5} /><text y={-70} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">VALUE</text><text y={-20} fontSize={18} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>buy it cheap</text><text y={14} fontSize={17} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>'a dollar for 50¢'</text><text y={56} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>margin of safety</text></g>
+        <g transform="translate(720 270)"><rect x={-132} y={-122} width={264} height={244} rx={12} fill={gold} stroke={ink} strokeWidth={5} /><text y={-70} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">GROWTH</text><text y={-20} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>pay up for the future</text><text y={14} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>'the next big thing'</text><text y={56} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>bet on the story</text></g>
+        <text x={VW / 2} y={462} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">cheap-and-proven vs expensive-and-promising</text>
+      </svg>
+    );
+  } else if (m === "timehorizons") {
+    // The real axis: time horizon, from seconds to decades.
+    const reveal = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    const rows: [string, string, string][] = [["seconds–minutes", "day trader", red], ["days–weeks", "swing trader", gold], ["years", "the investor", blue], ["decades", "the patient", green]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={92} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the one axis that matters: time</text>
+        {rows.map(([t, who, c], i) => { const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); const y = 150 + i * 76; return <g key={i} opacity={op}><rect x={200} y={y - 28} width={290} height={56} rx={8} fill={c} stroke={ink} strokeWidth={3} /><text x={345} y={y + 6} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{t}</text><text x={520} y={y + 6} fontSize={18} fontWeight={800} fill={ink} fontFamily={sans}>{who}</text></g>; })}
+        <text x={VW / 2} y={468} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">shorter horizon = closer to a casino</text>
+      </svg>
+    );
+  } else if (m === "whowins") {
+    // Who actually wins long-term: the patient, not the frantic.
+    const grow = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["patient index", 260, green], ["value investor", 200, blue], ["day trader", 48, red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={82} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">who actually wins, long-term</text>
+        <RLine x1={120} y1={430} x2={VW - 120} y2={430} stroke={ink} strokeWidth={4} />
+        {bars.map(([lab, h, c], i) => { const x = 290 + i * 210; const bh = h * grow; return <g key={i}><rect x={x - 78} y={430 - bh} width={156} height={bh} fill={c} stroke={ink} strokeWidth={4} /><text x={x} y={460} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "dividendstream") {
+    // A share quietly dripping dividends into steady income.
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 170)"><rect x={-82} y={-56} width={164} height={112} rx={10} fill={blue} stroke={ink} strokeWidth={5} /><text y={8} fontSize={24} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">a share</text></g>
+        {Array.from({ length: 6 }, (_, i) => { const p = ((frame * 5 + i * 40) % 200) / 200; const y = 240 + p * 170; return <g key={i} transform={`translate(${490 - 60 + (i % 3) * 60} ${y})`} opacity={1 - p * 0.5}><circle r={18} fill={gold} stroke={ink} strokeWidth={3} /><text y={6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <g transform="translate(490 440)"><rect x={-92} y={-18} width={184} height={44} rx={8} fill={green} stroke={ink} strokeWidth={4} /><text y={12} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>steady income</text></g>
+        <text x={VW / 2} y={500} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">paid just for holding</text>
+      </svg>
+    );
+  } else if (m === "contrarian") {
+    // The crowd panics and flees one way; the contrarian calmly buys the other.
+    const flee = interpolate(frame, [fps * 0.3, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={150} fontSize={21} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>everyone panics and sells →</text>
+        {Array.from({ length: 6 }, (_, i) => { const x = 180 + i * 90 + flee * 320; return <g key={i} transform={`translate(${x} ${230 + (i % 2) * 40})`}><circle r={20} fill="#8a929a" stroke={ink} strokeWidth={3} /><text y={6} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>!</text></g>; })}
+        <g transform={`translate(${720 - flee * 280} 380)`}><circle r={32} fill={green} stroke={ink} strokeWidth={4} /><text y={8} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>buy</text></g>
+        <text x={VW / 2} y={456} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">be greedy when others are fearful</text>
+      </svg>
+    );
+  } else if (m === "quantbot") {
+    // An algorithm crunching data and firing trades in microseconds.
+    const t = frame;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(430 260)">
+          <rect x={-92} y={-92} width={184} height={184} rx={16} fill="#2b2f33" stroke={ink} strokeWidth={6} />
+          <rect x={-62} y={-62} width={124} height={62} rx={6} fill="#13331c" stroke={ink} strokeWidth={2} />
+          {[0, 1, 2].map((i) => <text key={i} x={0} y={-50 + ((t * 3 + i * 22) % 62)} fontSize={14} fill="#7fe08a" textAnchor="middle" fontFamily="monospace">{i % 2 ? "BUY 0101" : "SELL 1100"}</text>)}
+          <circle cx={-40} cy={44} r={9} fill={gold} /><circle cx={40} cy={44} r={9} fill={gold} />
+        </g>
+        {Array.from({ length: 6 }, (_, i) => { const p = ((t * 6 + i * 22) % 120) / 120; return <circle key={i} cx={540 + p * 320} cy={244 - 20 + i * 8} r={7} fill={i % 2 ? green : red} opacity={1 - p} />; })}
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">algorithms trading in microseconds</text>
       </svg>
     );
   } else {

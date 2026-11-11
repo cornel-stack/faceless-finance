@@ -77,6 +77,8 @@ export type DoodleName =
   | "dialup" | "sockpuppet"
   // EP043 (credit cards) additions:
   | "cardreader" | "mousetrap"
+  // EP044 (every type of investor) additions:
+  | "bull" | "bear"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1543,6 +1545,32 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={24} y={60} w={52} h={24} fill="#8a5a2b" strokeWidth={SW} />
           <RPath d="M30 60 L30 36 L70 44" fill="none" strokeWidth={SW} />
           <RCircle cx={58} cy={70} d={12} fill={GOLD} strokeWidth={1.4} />
+        </>
+      );
+
+    // ---- EP044 (every type of investor) doodles ----
+    case "bull":
+      // Bull — the optimist (up).
+      return (
+        <>
+          <RCircle cx={50} cy={56} d={40} fill={GREEN} strokeWidth={SW} />
+          <RPath d="M30 42 Q20 28 30 22" fill="none" strokeWidth={SW} />
+          <RPath d="M70 42 Q80 28 70 22" fill="none" strokeWidth={SW} />
+          <RCircle cx={42} cy={52} d={5} fill={INK} strokeWidth={0.5} />
+          <RCircle cx={58} cy={52} d={5} fill={INK} strokeWidth={0.5} />
+          <RPath d="M42 74 L50 64 L58 74" fill="none" strokeWidth={2.4} />
+        </>
+      );
+    case "bear":
+      // Bear — the pessimist (down).
+      return (
+        <>
+          <RCircle cx={50} cy={56} d={40} fill={RED} strokeWidth={SW} />
+          <RCircle cx={32} cy={34} d={16} fill={RED} strokeWidth={SW} />
+          <RCircle cx={68} cy={34} d={16} fill={RED} strokeWidth={SW} />
+          <RCircle cx={42} cy={52} d={5} fill={INK} strokeWidth={0.5} />
+          <RCircle cx={58} cy={52} d={5} fill={INK} strokeWidth={0.5} />
+          <RPath d="M42 66 L50 76 L58 66" fill="none" strokeWidth={2.4} />
         </>
       );
   }

@@ -2,717 +2,822 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "A credit card feels like free money. No annual fee, cashback on every purchase, a whole month to pay it back, and someone else's protection if it's stolen. It seems almost too generous.",
+    "narration": "Everyone in the stock market calls themselves 'an investor.' But that single word hides a dozen wildly different species — from the patient tortoise who barely trades, to the frantic gambler betting by the second.",
     "pose": "explain",
     "props": [
       {
-        "name": "creditcard",
-        "label": "'free' money?"
+        "name": "turtle",
+        "label": "the patient tortoise"
+      },
+      {
+        "name": "hare",
+        "label": "the frantic trader"
+      },
+      {
+        "name": "dice",
+        "label": "the gambler"
+      },
+      {
+        "name": "chartup",
+        "label": "…who wins?"
       }
     ]
   },
   {
+    "id": "s51",
+    "type": "callout",
+    "narration": "Here's the number almost nobody tells you: studies of active day traders find the vast majority — often around ninety percent — lose money over time. Meanwhile, the laziest investor in the room quietly gets rich.",
+    "text": "90%",
+    "sub": "of day traders lose — so who wins?",
+    "icon": "bear"
+  },
+  {
     "id": "s2",
     "type": "character",
-    "narration": "So here's the puzzle. If credit cards are such a great deal for you, how do banks make tens of billions of dollars a year from them? The answer: in three very clever ways.",
+    "narration": "And they are not all the same. Some of these styles reliably build wealth over a lifetime. Others, the data shows, reliably destroy it. So let's meet them all — and ask who actually wins.",
     "pose": "think",
-    "bubble": "so who's really paying?"
+    "bubble": "which one really wins?"
   },
   {
     "id": "s3",
     "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "'I pay it off every month, it's free!'",
-    "memeBottom": "the bank is still making money off you",
-    "narration": "Even if you're a perfect customer who never pays a cent of interest, the bank is still earning from you. To see how, you have to understand what a credit card really is."
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "'I'm an investor'",
+    "memeBottom": "day-trading meme stocks at 2am",
+    "narration": "Because the gap between the best and worst styles isn't small. It's the difference between quietly getting rich, and quietly going broke."
   },
   {
     "id": "s4",
-    "type": "screenshot",
-    "narration": "A credit card is a payment card, usually issued by a bank, that lets you buy things on credit. Card use thereby accrues debt that must be repaid later.",
-    "sourceId": "wiki-creditcard"
+    "type": "stage",
+    "narration": "The best way to see it is as one long spectrum. At one end, pure investing — patient, owning a piece of a business. At the other, pure gambling — fast, betting on a price. Everyone sits somewhere on this line.",
+    "motif": "investorspectrum",
+    "caption": "one long line, patient to reckless"
   },
   {
-    "id": "s53",
+    "id": "s52",
     "type": "character",
-    "narration": "The idea is surprisingly young. The first charge card, Diners Club, appeared in 1950 — reportedly after a businessman was caught without enough cash at dinner. Bank cards followed in the late 1950s.",
+    "narration": "The grandfather of all this, Benjamin Graham, imagined the market as a moody business partner called 'Mr Market' — who offers you a crazy price every single day. Your only job is to decide when he's being a fool.",
     "pose": "explain",
     "props": [
       {
-        "name": "cardreader",
-        "label": "born in 1950"
+        "name": "crowd",
+        "label": "'Mr Market'"
+      },
+      {
+        "name": "gauge",
+        "label": "wildly moody"
+      },
+      {
+        "name": "scale",
+        "label": "is he sane today?"
       }
     ]
   },
   {
     "id": "s5",
+    "type": "title",
+    "narration": "Let's start at the calm end, with the style that built the most fortunes.",
+    "heading": "The Value Investor",
+    "kicker": "buy a dollar for 50 cents"
+  },
+  {
+    "id": "s6",
+    "type": "screenshot",
+    "narration": "Value investing means buying securities that appear underpriced by some form of fundamental analysis. In plain terms: buying good things when they're cheap.",
+    "sourceId": "wiki-value"
+  },
+  {
+    "id": "s7",
+    "type": "image",
+    "src": "img/graham.jpg",
+    "label": "BENJAMIN GRAHAM",
+    "caption": "father of value investing",
+    "narration": "The philosophy comes from Benjamin Graham, the father of value investing. His core idea was the 'margin of safety': only buy when the price is far below what the thing is truly worth."
+  },
+  {
+    "id": "s8",
+    "type": "image",
+    "src": "img/warren.jpg",
+    "label": "WARREN BUFFETT",
+    "caption": "Graham's most famous student",
+    "narration": "His most famous student, Warren Buffett, turned it into the greatest investing record in history — by buying wonderful businesses at fair prices and then holding them, patiently, for decades."
+  },
+  {
+    "id": "s9",
     "type": "character",
-    "narration": "That last part is the key. A credit card isn't really a payment tool. It's a tiny, instant loan — and loans are how banks make money. The whole glossy product is a lending machine in disguise.",
+    "narration": "The value investor is a bargain hunter and a pessimist's optimist. They read boring financial statements, ignore the hype, and wait — sometimes years — for the right price. It is slow, and it works.",
     "pose": "explain",
     "props": [
       {
-        "name": "bank",
-        "label": "a loan in your pocket"
+        "name": "magnifier",
+        "label": "patient bargain hunting"
+      },
+      {
+        "name": "pricetag",
+        "label": "buy it cheap"
+      },
+      {
+        "name": "scale",
+        "label": "vs true worth"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "The hard part of value investing isn't finding cheap stocks — it's the waiting. You might sit on a 'bargain' for years while it goes nowhere, needing iron patience to ignore a market screaming that you're wrong.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "years of waiting"
+      },
+      {
+        "name": "magnifier",
+        "label": "trust your analysis"
+      },
+      {
+        "name": "shield",
+        "label": "ignore the noise"
+      }
+    ],
+    "expression": "worried"
+  },
+  {
+    "id": "s10",
+    "type": "title",
+    "narration": "Next, value's more glamorous cousin: the growth investor.",
+    "heading": "The Growth Investor",
+    "kicker": "pay up for the future"
+  },
+  {
+    "id": "s11",
+    "type": "screenshot",
+    "narration": "Growth investing is a strategy focused on capital appreciation — investing in companies expected to grow much faster than average.",
+    "sourceId": "wiki-growth"
+  },
+  {
+    "id": "s12",
+    "type": "stage",
+    "narration": "So where value asks 'is this cheap?', growth asks 'how big could this become?' The growth investor will happily pay a high price today for a company they believe will be enormous tomorrow.",
+    "motif": "valuevsgrowth",
+    "caption": "cheap-and-proven vs expensive-and-promising"
+  },
+  {
+    "id": "s13",
+    "type": "character",
+    "narration": "Done well, growth investing catches the next giant early and makes a fortune. Done badly, it's just paying absurd prices for exciting stories — the exact trap that fuelled the dot-com and AI manias.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "rocket",
+        "label": "bet on the next giant"
+      },
+      {
+        "name": "chartup",
+        "label": "explosive growth"
+      },
+      {
+        "name": "warning",
+        "label": "…or a bubble"
       }
     ]
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "Adoption was aggressive. In one infamous 1958 experiment, a bank mailed sixty thousand live, ready-to-use credit cards to everyone in one city — no application needed. The age of easy credit had begun.",
+    "narration": "The growth investor's nightmare is paying a fortune for a story that never delivers. For every giant they catch early, there's a graveyard of 'next big things' that quietly went to zero.",
     "pose": "explain",
     "props": [
       {
-        "name": "envelope",
-        "label": "cards mailed to everyone"
-      }
-    ]
-  },
-  {
-    "id": "s6",
-    "type": "title",
-    "narration": "So let's run the numbers on exactly how that machine earns. It profits in three ways.",
-    "heading": "Three Profit Engines",
-    "kicker": "interest, interchange, fees"
-  },
-  {
-    "id": "s7",
-    "type": "stage",
-    "narration": "Engine one: interest, paid by you. Engine two: interchange, paid by the shops. Engine three: fees, also paid by you. Three streams of money, all flowing to the bank.",
-    "motif": "threeprofit",
-    "caption": "interest · interchange · fees"
-  },
-  {
-    "id": "s8",
-    "type": "title",
-    "narration": "The biggest engine by far is the first one: interest.",
-    "heading": "Engine 1: Interest",
-    "kicker": "the big one"
-  },
-  {
-    "id": "s9",
-    "type": "screenshot",
-    "narration": "Credit card interest is, in Wikipedia's blunt words, 'a way in which credit card issuers generate revenue.' It is, by design, their core business.",
-    "sourceId": "wiki-cardinterest"
-  },
-  {
-    "id": "s10",
-    "type": "character",
-    "narration": "If you don't pay your full balance each month, the leftover amount starts charging interest — at a rate that is, frankly, staggering compared to almost any other loan.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "percent",
-        "label": "interest on the leftover"
-      }
-    ]
-  },
-  {
-    "id": "s11",
-    "type": "screenshot",
-    "narration": "That rate is the APR — the annual percentage rate, the interest for a whole year. On credit cards, it is routinely north of twenty percent.",
-    "sourceId": "wiki-apr"
-  },
-  {
-    "id": "s12",
-    "type": "callout",
-    "narration": "The average US credit card now charges well over twenty percent a year. For comparison, a mortgage might charge six or seven. This is some of the most expensive debt available to ordinary people.",
-    "text": "20%+ APR",
-    "sub": "among the priciest debt there is",
-    "icon": "percent"
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "narration": "Make it painfully concrete. Put a thousand dollars on a card at twenty-four percent and pay only the minimum, and you can end up repaying it for well over a decade — handing over hundreds, even thousands, in extra interest.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "$1,000 → years of interest"
-      }
-    ]
-  },
-  {
-    "id": "s13",
-    "type": "character",
-    "narration": "And this is compound interest working against you. Interest gets charged on your balance — and then, next month, on the interest too. The same force that builds wealth now quietly devours it.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "compounding, in reverse"
-      }
-    ]
-  },
-  {
-    "id": "s56",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Rewards vs the interest you pay",
-    "unit": "%",
-    "narration": "And here's the trap in one picture. Your rewards might be worth two percent. The interest on a carried balance is around twenty-four. Chase the first while paying the second, and you lose badly.",
-    "data": [
-      {
-        "label": "your cashback",
-        "value": 2
+        "name": "rocket",
+        "label": "catch the giant"
       },
       {
-        "label": "your interest",
-        "value": 24
+        "name": "tombstone",
+        "label": "…or the graveyard"
+      },
+      {
+        "name": "warning",
+        "label": "the price can be insane"
       }
     ],
-    "highlight": 1
+    "expression": "worried"
   },
   {
     "id": "s14",
     "type": "title",
-    "narration": "And this is where the single most profitable trick in the whole industry lives.",
-    "heading": "The Minimum Trap",
-    "kicker": "designed to keep you paying"
+    "narration": "Then there's the style that quietly beats most of the others — by refusing to pick at all.",
+    "heading": "The Index Investor",
+    "kicker": "own everything, do nothing"
   },
   {
     "id": "s15",
-    "type": "character",
-    "narration": "Every statement shows a reassuringly small 'minimum payment' — often just two or three percent of what you owe. It feels manageable. It is a trap.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "mousetrap",
-        "label": "the 'minimum payment'"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The index investor just buys an index fund, replicating a whole market by holding the same securities as the index — and then does almost nothing.",
+    "sourceId": "wiki-index"
   },
   {
     "id": "s16",
-    "type": "stage",
-    "narration": "Pay only that minimum on a five-thousand-dollar balance, and you can be stuck repaying it for well over a decade — handing the bank thousands of dollars in interest, sometimes more than the original balance.",
-    "motif": "minimumpaymenttrap",
-    "caption": "the minimum keeps you in debt for decades"
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "This trap was so effective that regulators stepped in. A 2009 law now forces card statements to spell out, in black and white, how many years it will take to clear your balance if you only pay the minimum.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "the law made them warn you"
-      }
-    ]
+    "type": "image",
+    "src": "img/bogle.jpg",
+    "label": "JOHN BOGLE",
+    "caption": "gave us the index fund",
+    "narration": "This is the gospel of John Bogle: don't try to find the needle, just buy the whole haystack. Own a tiny slice of everything, keep costs near zero, and let time do the work."
   },
   {
     "id": "s17",
     "type": "character",
-    "narration": "That isn't an accident. The minimum is set low on purpose — just enough to feel painless, but small enough to keep you in debt, and paying interest, for as long as humanly possible.",
+    "narration": "It sounds lazy. It sounds boring. And as we've covered before, it quietly beats the large majority of highly-paid professionals over the long run. For most people, this is simply the answer.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "painless by design"
+        "name": "turtle",
+        "label": "boring, and winning"
+      },
+      {
+        "name": "coins",
+        "label": "near-zero cost"
+      },
+      {
+        "name": "trophy",
+        "label": "beats the pros"
       }
     ]
   },
   {
     "id": "s18",
     "type": "title",
-    "narration": "To see who the bank really loves, you need two words: transactors and revolvers.",
-    "heading": "Two Customers",
-    "kicker": "who the bank really wants"
+    "narration": "Some investors don't chase price gains at all. They just want to get paid.",
+    "heading": "The Income Investor",
+    "kicker": "paid to hold"
   },
   {
     "id": "s19",
     "type": "screenshot",
-    "narration": "A credit card is a form of revolving credit — a type of credit that doesn't have a fixed number of payments. You can carry a balance and 'revolve' it month after month.",
-    "sourceId": "wiki-revolving"
+    "narration": "They live on dividends — the distribution of a company's profits to its shareholders. Buy solid, profitable companies, and they mail you a slice of the earnings, year after year.",
+    "sourceId": "wiki-dividend"
   },
   {
     "id": "s20",
     "type": "stage",
-    "narration": "If you pay in full each month, you're a 'transactor' — you pay no interest at all, thanks to a grace period. If you carry a balance, you're a 'revolver,' paying that brutal interest. Banks adore revolvers.",
-    "motif": "gracefloat",
-    "caption": "two customers, opposite outcomes"
+    "narration": "The income investor builds a portfolio like an orchard: planted once, then harvested forever. They care less about the share price bouncing around, and more about the steady stream of cash it pays out.",
+    "motif": "dividendstream",
+    "caption": "paid just for holding"
   },
   {
-    "id": "s21",
+    "id": "s55",
     "type": "character",
-    "narration": "A huge share of all credit card profit comes from revolvers — the people, often those who can least afford it, who carry a balance and pay interest month after month after month.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "And the quiet magic is reinvestment. Feed those dividends back in to buy more shares, which pay more dividends, which buy still more shares — a snowball of income rolling downhill for decades.",
+    "pose": "present",
     "props": [
       {
         "name": "coins",
-        "label": "revolvers = the profit"
+        "label": "reinvest the cash"
+      },
+      {
+        "name": "chartup",
+        "label": "a growing snowball"
+      },
+      {
+        "name": "hourglass",
+        "label": "for decades"
       }
     ]
   },
   {
-    "id": "s58",
-    "type": "callout",
-    "narration": "And collectively, it's enormous. Americans now carry well over a trillion dollars in credit card debt — an all-time record, racking up interest at those sky-high rates.",
-    "text": "$1 trillion+",
-    "sub": "in US card debt — a record",
-    "icon": "debtclock"
+    "id": "s21",
+    "type": "title",
+    "narration": "Now we speed up — and start sliding toward the gambling end of the spectrum.",
+    "heading": "The Traders",
+    "kicker": "riding the waves"
   },
   {
     "id": "s22",
-    "type": "title",
-    "narration": "Now for engine two — the one you never even see.",
-    "heading": "Engine 2: Interchange",
-    "kicker": "a tax on every swipe"
+    "type": "screenshot",
+    "narration": "First, the momentum trader. Momentum investing means buying securities that have risen strongly over recent months, and selling those that have fallen.",
+    "sourceId": "wiki-momentum"
   },
   {
     "id": "s23",
-    "type": "screenshot",
-    "narration": "Every time you swipe, there's an interchange fee — a fee paid between banks for accepting a card transaction. Essentially, the shop's bank pays a slice to your bank.",
-    "sourceId": "wiki-interchange"
-  },
-  {
-    "id": "s59",
     "type": "character",
-    "narration": "There's another winner hiding in the middle: the networks. Visa and Mastercard don't lend you a cent — they just run the rails that every swipe travels on, and take a tiny toll on each one. It's one of the most profitable businesses on Earth.",
+    "narration": "Their motto is 'the trend is your friend.' They don't much care what a company is worth — only which way its price is moving. Buy what's hot, sell what's not, and try to jump off before the music stops.",
     "pose": "explain",
     "props": [
       {
-        "name": "server",
-        "label": "Visa & Mastercard: the toll booth"
+        "name": "chartup",
+        "label": "'ride the trend'"
+      },
+      {
+        "name": "bull",
+        "label": "ride it up"
+      },
+      {
+        "name": "chartdown",
+        "label": "dump the fallers"
       }
     ]
   },
   {
     "id": "s24",
-    "type": "stage",
-    "narration": "On every single purchase, the merchant hands over a cut — typically around one and a half to three percent — just for the privilege of accepting your card. Multiply that across billions of swipes.",
-    "motif": "interchangeskim",
-    "caption": "every swipe skims ~2% for the banks"
-  },
-  {
-    "id": "s60",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "run the payment rails",
-    "memeBottom": "take a cut of nearly every purchase, forever",
-    "narration": "The card networks took almost no lending risk, built the toll road everyone must use, and quietly collect a slice of a huge share of all the spending on the planet."
+    "type": "screenshot",
+    "narration": "Faster still is the day trader — a form of speculation in securities, buying and selling within a single trading day.",
+    "sourceId": "wiki-daytrade"
   },
   {
     "id": "s25",
     "type": "character",
-    "narration": "Here's the sneaky part. Merchants don't just eat that fee — they bake it into their prices. So everyone pays slightly more, including people paying with cash, who get no rewards at all.",
+    "narration": "The day trader holds nothing overnight, glued to charts, hunting tiny moves. It looks like the most active, intense kind of investing. Statistically, it's the closest thing to a casino on this whole list.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "pricetag",
-        "label": "it's hidden in prices"
+        "name": "stockscreen",
+        "label": "in and out, same day"
+      },
+      {
+        "name": "dice",
+        "label": "pure odds"
+      },
+      {
+        "name": "chartdown",
+        "label": "most lose"
       }
     ]
   },
   {
+    "id": "s56",
+    "type": "stage",
+    "narration": "At the opposite end of temperament sits the contrarian — who does the single hardest thing in markets: stays calm and buys precisely when everyone else is terrified and selling.",
+    "motif": "contrarian",
+    "caption": "be greedy when others are fearful"
+  },
+  {
     "id": "s26",
-    "type": "title",
-    "narration": "And engine three is the simplest of all: fees.",
-    "heading": "Engine 3: Fees",
-    "kicker": "a menu of penalties"
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "own a business for a decade",
+    "memeBottom": "flip a ticker in 90 seconds",
+    "narration": "Notice the pattern: the further right we move, the shorter the time horizon, and the more it stops being investing and starts being betting."
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "narration": "It sounds simple and feels impossible. Buying during a crash, while headlines scream that the world is ending and your own portfolio bleeds, takes nerves of steel — which is exactly why so few people actually do it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bear",
+        "label": "buy the panic"
+      },
+      {
+        "name": "warning",
+        "label": "nerves of steel"
+      },
+      {
+        "name": "trophy",
+        "label": "historically rewarded"
+      }
+    ],
+    "expression": "worried"
   },
   {
     "id": "s27",
+    "type": "title",
+    "narration": "At the big-money end sit the players who move markets, not just ride them.",
+    "heading": "The Big Players",
+    "kicker": "macro, activist, speculator"
+  },
+  {
+    "id": "s28",
+    "type": "image",
+    "src": "img/soros.jpg",
+    "label": "GEORGE SOROS",
+    "caption": "the macro speculator",
+    "narration": "The macro speculator, like George Soros, bets on huge economic shifts — currencies, interest rates, whole countries. Soros famously 'broke the Bank of England,' making a billion dollars betting against the pound."
+  },
+  {
+    "id": "s29",
+    "type": "image",
+    "src": "img/icahn.jpg",
+    "label": "CARL ICAHN",
+    "caption": "the activist investor",
+    "narration": "The activist investor, like Carl Icahn, buys a big stake in a company specifically to force change — shaking up management, demanding buybacks or break-ups, and profiting from the shake-up."
+  },
+  {
+    "id": "s30",
+    "type": "screenshot",
+    "narration": "That's shareholder activism — using an equity stake to put pressure on a company's management. A fairly small stake can be enough to launch a loud campaign.",
+    "sourceId": "wiki-activist"
+  },
+  {
+    "id": "s31",
+    "type": "image",
+    "src": "img/livermore.jpg",
+    "label": "JESSE LIVERMORE",
+    "caption": "the great speculator",
+    "narration": "And at the very far edge sits the pure speculator, like the legendary Jesse Livermore — making enormous, often leveraged bets on price swings. He made, and then lost, several fortunes, and died broke."
+  },
+  {
+    "id": "s58",
+    "type": "stage",
+    "narration": "And in the shadows runs a very different beast entirely: the quant. No gut feelings, no stories — just mathematicians and algorithms firing thousands of trades a second, hunting patterns invisible to humans.",
+    "motif": "quantbot",
+    "caption": "algorithms trading in microseconds"
+  },
+  {
+    "id": "s32",
+    "type": "screenshot",
+    "narration": "That's the dictionary definition of speculation: buying an asset hoping it becomes more valuable in a brief amount of time. All hope, all timing, no ownership.",
+    "sourceId": "wiki-speculation"
+  },
+  {
+    "id": "s59",
     "type": "character",
-    "narration": "Late fees. Annual fees. Over-limit fees. Cash advance fees — often with interest from day one. Foreign transaction fees. And penalty rates that jack your APR up even higher if you slip.",
+    "narration": "Quant funds hire physicists and build superfast computers to exploit tiny, fleeting edges. For an ordinary person, trying to out-trade these machines by hand is like racing a Formula One car on a bicycle.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "receipt",
-        "label": "a whole menu of fees"
+        "name": "brain",
+        "label": "physicists & math"
+      },
+      {
+        "name": "server",
+        "label": "microsecond speed"
+      },
+      {
+        "name": "warning",
+        "label": "you can't outrun them"
+      }
+    ],
+    "expression": "worried"
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "Which points to the biggest divide of all: retail versus institutional. On one side, you, on your phone. On the other, trillion-dollar funds with armies of analysts, instant data, and the fastest machines on Earth.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "phone",
+        "label": "you"
+      },
+      {
+        "name": "bank",
+        "label": "vs the giants"
+      },
+      {
+        "name": "scale",
+        "label": "a lopsided fight"
+      }
+    ],
+    "expression": "worried"
+  },
+  {
+    "id": "s33",
+    "type": "title",
+    "narration": "So with this whole zoo of styles, how do you tell the winners from the losers? There's one axis that explains almost everything.",
+    "heading": "The One Axis",
+    "kicker": "it's all about time"
+  },
+  {
+    "id": "s34",
+    "type": "stage",
+    "narration": "Forget value versus growth for a second. The real divide is time horizon. How long do you intend to hold? The longer your horizon, the more you're investing. The shorter it is, the more you're gambling.",
+    "motif": "timehorizons",
+    "caption": "shorter horizon = closer to a casino"
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "Over decades, owning good businesses lets the magic of compounding and real earnings work for you. Over seconds, you're just betting against faster, better-funded players on a random price wiggle.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "time is the great divider"
+      },
+      {
+        "name": "chartup",
+        "label": "decades = investing"
+      },
+      {
+        "name": "dice",
+        "label": "seconds = gambling"
       }
     ]
   },
   {
     "id": "s61",
+    "type": "compare",
+    "narration": "So weigh the two mindsets directly. The long-term owner lets compounding and real profits do the work. The short-term bettor is just guessing which way a price wiggles next.",
+    "left": {
+      "title": "Long horizon",
+      "value": "own & compound",
+      "icon": "turtle"
+    },
+    "right": {
+      "title": "Short horizon",
+      "value": "guess the wiggle",
+      "icon": "dice"
+    }
+  },
+  {
+    "id": "s36",
+    "type": "title",
+    "narration": "Which finally lets us answer the question in the title: who actually wins?",
+    "heading": "Who Wins",
+    "kicker": "the data is brutal"
+  },
+  {
+    "id": "s37",
+    "type": "stage",
+    "narration": "The data is remarkably consistent. The long-term, low-cost, patient investors — especially the boring index crowd — reliably come out ahead. The frantic day traders, as a group, reliably lose.",
+    "motif": "whowins",
+    "caption": "who actually wins, long-term"
+  },
+  {
+    "id": "s38",
     "type": "character",
-    "narration": "And the fine print bites. 'Penalty APRs' can spike your rate to thirty percent if you're late. Cash advances charge interest from the very first second, with no grace period at all.",
+    "narration": "The uncomfortable truth is that the winning styles are the slow, dull ones. And the exciting, high-adrenaline styles — the ones that feel the most like 'real' investing — are where most people quietly lose money.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "penalty rates & cash advances"
+        "name": "turtle",
+        "label": "boring wins the race"
+      },
+      {
+        "name": "hare",
+        "label": "the flashy loser"
+      },
+      {
+        "name": "trophy",
+        "label": "slow wins"
       }
     ]
-  },
-  {
-    "id": "s28",
-    "type": "screenshot",
-    "narration": "It all adds up to credit card debt, where, in Wikipedia's words, debt grows through the accrual of interest and penalties when you don't repay.",
-    "sourceId": "wiki-ccdebt"
   },
   {
     "id": "s62",
     "type": "character",
-    "narration": "Even the friendly 'zero percent intro offer' can hide teeth: so-called deferred interest, where if you don't clear the whole balance by the deadline, you're suddenly charged interest, backdated to day one.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "mousetrap",
-        "label": "'0% intro'… with a catch"
-      }
-    ]
-  },
-  {
-    "id": "s29",
-    "type": "title",
-    "narration": "Which brings us to the most brilliant, and most uncomfortable, part of the whole system: the rewards.",
-    "heading": "The Rewards Paradox",
-    "kicker": "who pays for your points?"
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "Cashback and points feel like the bank giving you free money. But banks don't give away money. So where do the rewards actually come from? From the other two engines.",
-    "pose": "think",
-    "bubble": "who funds the points?"
-  },
-  {
-    "id": "s31",
-    "type": "character",
-    "narration": "Rewards are funded by the interchange fees merchants pay, and by the mountain of interest that revolvers pay. Your points are paid for by other people's purchases — and other people's debt.",
+    "narration": "There's a newer species too: the crypto 'HODLer,' who buys a volatile coin and vows to never, ever sell. It's part investing, part identity, part religion — and a vivid reminder that conviction and a good plan are not the same thing.",
     "pose": "explain",
     "props": [
       {
-        "name": "coins",
-        "label": "rewards come from elsewhere"
+        "name": "token",
+        "label": "'HODL forever'"
+      },
+      {
+        "name": "crowd",
+        "label": "part tribe"
+      },
+      {
+        "name": "warning",
+        "label": "conviction is not a plan"
       }
-    ]
-  },
-  {
-    "id": "s32",
-    "type": "stage",
-    "narration": "And this creates a quiet, upside-down transfer. Wealthier people with good credit collect the best rewards — funded partly by the fees and interest paid by poorer people carrying balances. The poor subsidize the rich's points.",
-    "motif": "rewardsfunnel",
-    "caption": "the poor quietly fund the rich's rewards"
+    ],
+    "expression": "worried"
   },
   {
     "id": "s63",
-    "type": "timeline",
-    "title": "The credit card, 1950–today",
-    "narration": "The whole arc in one line. Diners Club in 1950. Bank cards in 1958. Mass adoption through the 70s and 80s. New protections in 2009. And a record trillion-dollar debt pile today.",
-    "events": [
-      {
-        "year": "1950",
-        "label": "Diners Club",
-        "icon": "cardreader"
-      },
-      {
-        "year": "1958",
-        "label": "bank cards",
-        "icon": "creditcard"
-      },
-      {
-        "year": "1980s",
-        "label": "mass adoption",
-        "icon": "crowd"
-      },
-      {
-        "year": "2009",
-        "label": "new rules",
-        "icon": "scale"
-      },
-      {
-        "year": "today",
-        "label": "$1T+ debt",
-        "icon": "debtclock"
-      }
-    ],
-    "highlight": 4
-  },
-  {
-    "id": "s33",
     "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "earn 2% cashback",
-    "memeBottom": "pay 24% interest on the balance",
-    "narration": "Here's the cruel math: chasing two percent in rewards while carrying a balance at twenty-four percent interest means you are losing badly, no matter how good the points feel."
-  },
-  {
-    "id": "s64",
-    "type": "character",
-    "narration": "At the top end, premium cards flip the model: huge annual fees in exchange for lavish perks. The bank is betting that status-conscious spenders will put so much through the card that the interchange more than covers it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "goldbar",
-        "label": "premium 'status' cards"
-      }
-    ]
-  },
-  {
-    "id": "s34",
-    "type": "title",
-    "narration": "On top of all that, the card is quietly rewiring how you spend.",
-    "heading": "The Psychology",
-    "kicker": "why cards make you spend more"
-  },
-  {
-    "id": "s35",
-    "type": "character",
-    "narration": "Studies consistently find that people spend significantly more when paying by card than with cash — sometimes dramatically more. Handing over physical cash hurts. Tapping a card doesn't.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "cards remove the 'ouch'"
-      }
-    ]
-  },
-  {
-    "id": "s65",
-    "type": "character",
-    "narration": "Psychologists call part of this 'decoupling' — the card separates the joy of buying from the pain of paying, pushing them weeks apart. Your brain enjoys the purchase now and barely registers the cost later.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "brain",
-        "label": "buy now, feel it later"
-      }
-    ]
-  },
-  {
-    "id": "s36",
-    "type": "character",
-    "narration": "That's the real genius. By removing the small sting of paying, the card gently nudges you to buy more — and the rewards nudge you again, turning spending itself into a little game you want to play.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magichat",
-        "label": "spending, gamified"
-      }
-    ]
-  },
-  {
-    "id": "s66",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "pay with cash and feel every dollar",
-    "memeBottom": "tap a card and feel nothing at all",
-    "narration": "That tiny numbing of the 'ouch' of spending is worth a fortune — because, reliably, it makes almost all of us spend just a little bit more."
-  },
-  {
-    "id": "s37",
-    "type": "title",
-    "narration": "And the whole thing runs on one number that follows you everywhere.",
-    "heading": "The Score",
-    "kicker": "your financial reputation"
-  },
-  {
-    "id": "s38",
-    "type": "screenshot",
-    "narration": "That number is your credit score — a numerical expression that represents the creditworthiness of an individual. It decides which cards, loans, and rates you can get.",
-    "sourceId": "wiki-creditscore"
-  },
-  {
-    "id": "s67",
-    "type": "character",
-    "narration": "For beginners, the ladder is real too. A 'secured' card, backed by a small deposit, lets someone with no history start building a score safely — the honest, useful side of this same system.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "ladder",
-        "label": "a real way to build credit"
-      }
-    ]
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "pick exciting stocks to beat the market",
+    "memeBottom": "quietly underperform a boring index fund",
+    "narration": "And this is the humbling reality that unites almost all the active styles: as a group, they struggle to beat the simple index they're trying so hard to outsmart."
   },
   {
     "id": "s39",
-    "type": "character",
-    "narration": "Used well, a credit card quietly builds that score, unlocking cheaper mortgages and loans later. Used badly, it wrecks it. The same tool can be a ladder or a trap — depending entirely on how you use it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "ladder",
-        "label": "a ladder, or a trap"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "the most boring investor usually beats the most exciting one",
+    "narration": "It's the tortoise and the hare, played out with real money. The dazzling hare sprints and stumbles. The dull tortoise just keeps walking — and finishes first."
   },
   {
     "id": "s40",
     "type": "title",
-    "narration": "So how do you make sure you're on the winning side of this machine?",
-    "heading": "How to Win",
-    "kicker": "be the transactor"
+    "narration": "So which one are you — and which one should you be?",
+    "heading": "Which Are You?",
+    "kicker": "temperament over genius"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "Rule one, above all others: pay the statement in full, every single month. Do that, and you pay zero interest — and the single most profitable engine against you simply shuts off.",
-    "pose": "present",
+    "narration": "Here's the secret the pros understand: it's not about which style is smartest. It's about temperament. The best strategy in the world is useless if you can't stick to it through fear and greed.",
+    "pose": "explain",
     "props": [
       {
-        "name": "shield",
-        "label": "pay in full, always"
+        "name": "brain",
+        "label": "temperament beats IQ"
+      },
+      {
+        "name": "scale",
+        "label": "discipline"
+      },
+      {
+        "name": "warning",
+        "label": "fear & greed"
       }
     ]
   },
   {
     "id": "s42",
     "type": "character",
-    "narration": "Rule two: treat the card exactly like a debit card. Only ever spend money you already have sitting in your account. The credit limit is not your money — it's the bank's bait.",
+    "narration": "If you have the patience of a Buffett, value investing can work. If you don't, that's completely fine — because the index approach is specifically designed to win without requiring any special skill or nerve at all.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "pick a style you can keep"
+      }
+    ]
+  },
+  {
+    "id": "s64",
+    "type": "character",
+    "narration": "So the real first step isn't picking stocks — it's knowing yourself. Are you genuinely patient, or do you panic? Do you love research, or hate it? Be honest, because the market will find out either way.",
     "pose": "present",
     "props": [
       {
-        "name": "cardreader",
-        "label": "spend only what you have"
+        "name": "brain",
+        "label": "know thyself"
+      },
+      {
+        "name": "gauge",
+        "label": "patient or panicky?"
+      },
+      {
+        "name": "handshake",
+        "label": "be honest"
       }
     ]
   },
   {
     "id": "s43",
     "type": "character",
-    "narration": "Rule three: never, ever carry a balance to chase rewards. If you revolve debt, cut up the rewards card and kill that balance first. The interest will always dwarf the points.",
+    "narration": "What almost nobody should be is a full-time day trader or a leveraged speculator. The thrill is real, but so are the odds — and the odds, over time, are brutal.",
     "pose": "present",
     "props": [
       {
-        "name": "scissors",
-        "label": "kill the balance first"
+        "name": "warning",
+        "label": "avoid the casino end"
+      },
+      {
+        "name": "dice",
+        "label": "the odds"
+      },
+      {
+        "name": "bear",
+        "label": "brutal losses"
       }
     ]
-  },
-  {
-    "id": "s68",
-    "type": "compare",
-    "narration": "So picture the two lifetimes. The disciplined transactor collects years of rewards and pays nothing for them. The revolver pays thousands in interest for the exact same cards and perks.",
-    "left": {
-      "title": "The transactor",
-      "value": "rewards, $0 interest",
-      "icon": "trophy"
-    },
-    "right": {
-      "title": "The revolver",
-      "value": "thousands in interest",
-      "icon": "mousetrap"
-    }
   },
   {
     "id": "s44",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "credit card rewards are only 'free' if you never pay a cent of interest",
-    "narration": "Rewards are genuinely great — but only for the disciplined transactor who pays in full. For everyone else, they're a lure on a very expensive hook."
-  },
-  {
-    "id": "s69",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeTop": "",
-    "memeBottom": "the credit limit is the bank's money — not yours",
-    "narration": "The simplest mindset shift of all: your credit limit is not a measure of what you can afford. It's a measure of how much the bank would love to lend you, at twenty-plus percent."
+    "type": "title",
+    "narration": "So let's total up the whole zoo.",
+    "heading": "The Final Math",
+    "kicker": "find your species"
   },
   {
     "id": "s45",
-    "type": "character",
-    "narration": "Do all that, and you flip the whole thing around. You collect the rewards, build your score, enjoy the protections — and the bank earns only a sliver of interchange, instead of a fortune in interest.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "beat the machine"
-      }
-    ]
-  },
-  {
-    "id": "s70",
-    "type": "character",
-    "narration": "And a new cousin has appeared: 'buy now, pay later.' It splits purchases into easy instalments and feels different from a card — but it runs on the same psychology of making spending feel painless.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "'buy now, pay later'"
-      }
+    "type": "chalkboard",
+    "narration": "Value buys cheap. Growth buys the future. Index buys everything. Income buys cash flow. Traders ride momentum. And speculators gamble on price. All on one line — from patient owning to frantic betting.",
+    "lines": [
+      "value · growth · index · income",
+      "momentum · day trade · macro",
+      "activist · speculator · quant",
+      "→ investing on the left, gambling on the right"
     ]
   },
   {
     "id": "s46",
-    "type": "title",
-    "narration": "So let's total up how the card really earns.",
-    "heading": "The Final Math",
-    "kicker": "where the billions come from"
+    "type": "character",
+    "narration": "And the single most important finding is this: the winners cluster at the patient, low-cost, long-term end. The further you drift toward fast and leveraged, the worse the odds become.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bull",
+        "label": "patience is the edge"
+      },
+      {
+        "name": "hourglass",
+        "label": "give it time"
+      },
+      {
+        "name": "coins",
+        "label": "low cost"
+      }
+    ]
+  },
+  {
+    "id": "s65",
+    "type": "character",
+    "narration": "And whatever style you choose, two quiet forces decide most of your result: cost and time. Keep your fees near zero, give it decades, and the boring arithmetic does more than any brilliant stock pick ever could.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "coins",
+        "label": "low fees"
+      },
+      {
+        "name": "hourglass",
+        "label": "long time"
+      },
+      {
+        "name": "chartup",
+        "label": "compounding wins"
+      }
+    ]
   },
   {
     "id": "s47",
-    "type": "chalkboard",
-    "narration": "Interest from revolvers, at twenty-plus percent. Interchange skimmed from every swipe. A menu of fees. And rewards, funded by all of it — flowing from the indebted to the wealthy.",
-    "lines": [
-      "interest (20%+) → from revolvers",
-      "interchange (~2%) → from every swipe",
-      "fees → late, annual, penalty",
-      "rewards → paid by the people in debt"
+    "type": "character",
+    "narration": "So don't ask 'which style is the most exciting?' Ask 'which style can I actually stick to for twenty years?' For most people, honestly, the answer is a boring index fund and a lot of patience.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "turtle",
+        "label": "boring, on purpose"
+      },
+      {
+        "name": "basket",
+        "label": "just an index fund"
+      },
+      {
+        "name": "calendar",
+        "label": "for 20 years"
+      }
     ]
+  },
+  {
+    "id": "s66",
+    "type": "character",
+    "narration": "The practical trick is to make good behaviour automatic. Set up an automatic monthly investment into a broad fund, and you quietly become the patient, winning investor — without needing any willpower at all.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "automate it"
+      },
+      {
+        "name": "basket",
+        "label": "broad fund"
+      },
+      {
+        "name": "shield",
+        "label": "no willpower needed"
+      }
+    ]
+  },
+  {
+    "id": "s67",
+    "type": "image",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "out-trade the robots and win long-term",
+    "narration": "For the vast majority of people, trying to beat the market by hand is a losing game. Joining it, cheaply and patiently, is a winning one."
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "The uncomfortable truth is that the credit card system is largely funded by people who struggle with it. A minority carrying heavy, expensive debt pays for the convenience and perks of everyone else.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "Because in the end, the market doesn't pay you for being the smartest, the fastest, or the most exciting investor in the room. It pays you, mostly, for being the most patient.",
+    "pose": "present",
     "props": [
       {
-        "name": "crowd",
-        "label": "a few pay for the many"
+        "name": "hourglass",
+        "label": "patience gets paid"
+      },
+      {
+        "name": "trophy",
+        "label": "the real reward"
+      },
+      {
+        "name": "bull",
+        "label": "compounding"
       }
     ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "So no — the card is never truly free. Someone always pays. The entire game is to make sure, through sheer discipline, that the someone paying is not you.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "creditcard",
-        "label": "it's free — for the disciplined"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "So the next time a shiny new card offers you five percent back and a zero-percent intro rate, you'll see the machine behind the magic — and you'll know exactly how to use it without being used by it.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "use it, don't get used"
-      }
-    ]
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "If this changed how you see that little piece of plastic, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this helped you find your species, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "creditcard",
+        "name": "bull",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s52",
+    "id": "s50",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

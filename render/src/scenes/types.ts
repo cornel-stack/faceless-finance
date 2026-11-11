@@ -150,7 +150,9 @@ export interface StageScene extends Base {
     // EP042 (dot-com bubble) additions:
     | "dotcompeak" | "eyeballs" | "burnrate" | "profitlessvaluation" | "bubbleecho"
     // EP043 (credit cards) additions:
-    | "threeprofit" | "minimumpaymenttrap" | "interchangeskim" | "rewardsfunnel" | "gracefloat";
+    | "threeprofit" | "minimumpaymenttrap" | "interchangeskim" | "rewardsfunnel" | "gracefloat"
+    // EP044 (every type of investor) additions:
+    | "investorspectrum" | "valuevsgrowth" | "timehorizons" | "whowins" | "dividendstream" | "contrarian" | "quantbot";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
