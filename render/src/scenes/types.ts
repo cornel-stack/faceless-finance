@@ -142,7 +142,9 @@ export interface StageScene extends Base {
     // EP038 (the petrodollar) additions:
     | "goldwindow" | "petrodealflow" | "dollarreserve" | "swiftweapon" | "dedollarize"
     // EP039 (why the dumbest investors win) additions:
-    | "dumbvssmart" | "feedrag" | "donothing" | "indexbasket" | "behaviorgap";
+    | "dumbvssmart" | "feedrag" | "donothing" | "indexbasket" | "behaviorgap"
+    // EP040 (Wirecard) additions:
+    | "fakebalance" | "escrowtrust" | "regulatorbackwards" | "fugitivejet" | "stocktozero";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

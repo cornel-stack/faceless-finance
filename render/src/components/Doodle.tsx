@@ -69,6 +69,8 @@ export type DoodleName =
   | "pumpjack" | "crown"
   // EP039 (why the dumbest investors win) additions:
   | "turtle" | "hare"
+  // EP040 (Wirecard) additions:
+  | "spy" | "magnifier"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1450,6 +1452,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M58 42 Q56 22 64 22 Q68 34 66 44 Z" fill="#b0a89a" strokeWidth={SW} />
           <RPath d="M66 42 Q68 22 76 24 Q76 36 72 46 Z" fill="#b0a89a" strokeWidth={SW} />
           <RCircle cx={70} cy={48} d={4} fill={INK} strokeWidth={0.5} />
+        </>
+      );
+
+    // ---- EP040 (Wirecard) doodles ----
+    case "spy":
+      // A trench-coat figure — the fugitive, suspected spy.
+      return (
+        <>
+          <RRect x={38} y={26} w={24} h={14} fill={INK} strokeWidth={SW} />
+          <RPath d="M30 40 Q50 32 70 40 L70 45 L30 45 Z" fill={INK} strokeWidth={SW} />
+          <RCircle cx={50} cy={58} d={22} fill={PARCH} strokeWidth={SW} />
+          <RRect x={38} y={52} w={24} h={7} fill={INK} strokeWidth={1} />
+          <RPath d="M34 84 Q50 70 66 84" fill="none" strokeWidth={SW} />
+        </>
+      );
+    case "magnifier":
+      // The investigation — journalists and short-sellers.
+      return (
+        <>
+          <RCircle cx={44} cy={44} d={40} fill="#bfe0ef" strokeWidth={SW} />
+          <RLine x1={62} y1={62} x2={82} y2={82} strokeWidth={6} />
         </>
       );
   }

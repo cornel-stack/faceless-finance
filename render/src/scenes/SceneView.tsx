@@ -2725,6 +2725,79 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         {g > 0.9 && <text x={490} y={175} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the behavior gap</text>}
       </svg>
     );
+  } else if (m === "fakebalance") {
+    // €1.9bn of 'cash' on the balance sheet; the vault is empty.
+    const open = interpolate(frame, [fps * 0.9, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 270)">
+          <rect x={-110} y={-120} width={220} height={240} rx={8} fill={parch} stroke={ink} strokeWidth={5} />
+          <text y={-92} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">BALANCE SHEET</text>
+          {[0, 1, 2].map((i) => <RLine key={i} x1={-84} y1={-58 + i * 30} x2={84} y2={-58 + i * 30} stroke={theme.inkSoft} strokeWidth={4} seed={i} />)}
+          <rect x={-96} y={48} width={192} height={44} rx={6} fill={green} opacity={0.3} />
+          <text y={78} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">cash: €1.9bn</text>
+        </g>
+        <g transform="translate(730 270)">
+          <rect x={-80} y={-80} width={160} height={160} rx={10} fill={tan} stroke={ink} strokeWidth={6} />
+          <circle cx={0} cy={0} r={34} fill="none" stroke={ink} strokeWidth={5} />
+          <text y={12} fontSize={38} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={open}>€0</text>
+        </g>
+        <path d="M420 270 l70 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the cash on paper wasn't there</text>
+      </svg>
+    );
+  } else if (m === "escrowtrust") {
+    // Billions supposedly held in Asian escrow accounts — that were empty.
+    const t = interpolate(frame, [fps * 0.5, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(260 270)"><rect x={-82} y={-50} width={164} height={100} rx={10} fill={blue} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>Wirecard</text><text y={20} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>"our billions"</text></g>
+        <g transform="translate(720 270)"><rect x={-104} y={-62} width={208} height={124} rx={10} fill={parch} stroke={ink} strokeWidth={5} strokeDasharray="7 7" /><text y={-16} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">"escrow" in Asia</text><text y={16} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={t}>EMPTY</text></g>
+        <g opacity={t}><path d="M346 250 q180 -50 268 0" fill="none" stroke={theme.inkSoft} strokeWidth={4} strokeDasharray="6 6" /></g>
+        <text x={VW / 2} y={462} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">held by a trustee who… wasn't</text>
+      </svg>
+    );
+  } else if (m === "regulatorbackwards") {
+    // The watchdog investigates the reporters, not the fraud.
+    const aim = interpolate(frame, [fps * 0.6, fps * 1.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 150)"><rect x={-72} y={-40} width={144} height={80} rx={10} fill={ink} /><text y={6} fontSize={22} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>regulator</text></g>
+        <g opacity={aim}><path d="M430 182 L300 300" stroke={red} strokeWidth={6} fill="none" strokeLinecap="round" /><text x={248} y={338} fontSize={17} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>investigates the reporters</text></g>
+        <g opacity={0.4}><rect x={640} y={250} width={184} height={92} rx={10} fill={tan} stroke={ink} strokeWidth={4} /><text x={732} y={302} fontSize={17} fontWeight={900} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the real fraud →</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the watchdog aimed the wrong way</text>
+      </svg>
+    );
+  } else if (m === "fugitivejet") {
+    // The COO flees on a private jet and vanishes.
+    const fly = interpolate(frame, [fps * 0.6, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <path d={`M200 300 q${fly * 300} -40 ${fly * 600} -130`} fill="none" stroke="#cfd8dc" strokeWidth={5} opacity={0.6} />
+        <g transform={`translate(${200 + fly * 620} ${280 - fly * 130}) rotate(-10)`}>
+          <path d="M-70 0 L40 -10 L82 0 L40 14 Z" fill="#dfe6ea" stroke={ink} strokeWidth={5} />
+          <path d="M-10 -8 L-32 -42 L2 -10 Z" fill="#cfd8dc" stroke={ink} strokeWidth={3} />
+          <path d="M-10 8 L-32 42 L2 10 Z" fill="#cfd8dc" stroke={ink} strokeWidth={3} />
+        </g>
+        <text x={300} y={430} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">…vanished</text>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the COO fled, and disappeared</text>
+      </svg>
+    );
+  } else if (m === "stocktozero") {
+    // A DAX-darling share price that collapses to nothing.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const path = "M 90 360 L 220 300 L 340 230 L 440 150 L 520 170 L 560 430 L 640 440 L 880 442";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={442} x2={VW - 40} y2={442} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={6} seed={5} /></g>
+        {rev > 0.4 && rev < 0.62 && <text x={460} y={128} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a €24bn darling</text>}
+        {rev > 0.85 && <text x={760} y={420} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">€0</text>}
+        <text x={VW / 2} y={490} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">from DAX star to worthless in days</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
