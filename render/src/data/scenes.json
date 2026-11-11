@@ -2,796 +2,825 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Getting rich is slow. It's decades of saving, boring index funds, and compounding you can barely feel happening. Getting poor, though, can be shockingly, terrifyingly fast.",
+    "narration": "A quiet man in a gray suit walks up to a microphone, clears his throat, and reads a few careful sentences. Within seconds, trillions of dollars move around the world.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "rich = slow"
-      },
-      {
-        "name": "chartdown",
-        "label": "poor = fast"
+        "name": "podium",
+        "label": "a few careful words"
       }
     ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "You can spend twenty years building a nest egg — and lose the whole thing in an afternoon. So today, let's do something a little dark, and map the fastest ways to get poor.",
+    "narration": "He didn't pass a law. He didn't launch a product. He just… talked. And stock markets lurched, mortgage rates twitched, and currencies swung — all on his word choice.",
     "pose": "think",
-    "bubble": "how fast can it vanish?"
+    "bubble": "how do WORDS do that?"
   },
   {
     "id": "s3",
     "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "'it's just one little bet'",
-    "memeBottom": "the account at $0",
-    "narration": "Not to be cruel — but because almost every fast route to broke shares the same hidden math. And once you see it, you can step around it."
+    "src": "img/powell.jpg",
+    "label": "JEROME POWELL",
+    "caption": "chaired the Fed, 2018–2026",
+    "narration": "This is the kind of person we mean. Jerome Powell, who chaired the US Federal Reserve. When he spoke, every trader on Earth leaned in to parse each syllable."
   },
   {
     "id": "s4",
-    "type": "stage",
-    "narration": "Here's the asymmetry at the heart of it all. Wealth takes years of patient effort to build — and, with the right mistake, seconds to destroy.",
-    "motif": "slowfastwealth",
-    "caption": "slow to build, instant to destroy"
+    "type": "callout",
+    "narration": "A single central-bank meeting can move stock and bond markets by trillions of dollars — more than almost any company on the planet could ever manage.",
+    "text": "$trillions",
+    "sub": "moved by a short statement",
+    "icon": "megaphone"
+  },
+  {
+    "id": "s62",
+    "type": "character",
+    "narration": "And they're juggling two goals at once, often called the dual mandate: keep people employed, and keep prices stable. Those two aims constantly pull in opposite directions.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "jobs vs prices"
+      }
+    ]
   },
   {
     "id": "s5",
-    "type": "callout",
-    "narration": "And the single common ingredient in the fastest wipeouts is this: a bad bet, made with borrowed money.",
-    "text": "bad odds + debt",
-    "sub": "the recipe for ruin",
-    "icon": "bomb"
+    "type": "character",
+    "narration": "So why does the entire financial world hang on the words of a handful of unelected officials? The answer is one of the most important ideas in all of finance.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bank",
+        "label": "the most-watched words"
+      }
+    ]
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "So let's run the numbers on the quickest ways to turn a fortune into nothing.",
-    "heading": "The Fastest Way to Get Poor",
-    "kicker": "the data on going broke",
-    "sub": "bad odds, borrowed money"
+    "narration": "Let's run the numbers on why markets panic the moment central banks open their mouths.",
+    "heading": "Why Markets Panic When Central Banks Speak",
+    "kicker": "when words move trillions",
+    "sub": "the power of the podium"
   },
   {
     "id": "s7",
     "type": "title",
-    "narration": "Start with the classic: gambling. Because the math of gambling is pure, and it is merciless.",
-    "heading": "The Gambling Math",
-    "kicker": "the house always wins"
+    "narration": "Start with what a central bank actually does — because it is not a normal bank at all.",
+    "heading": "What the Fed Does",
+    "kicker": "the bank above the banks"
   },
   {
     "id": "s8",
-    "type": "character",
-    "narration": "Every casino game, every sports bet, every spin is built with one feature: a house edge. On average, each dollar you wager is worth slightly less than a dollar the moment you place it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "dice",
-        "label": "a built-in house edge"
-      }
-    ]
-  },
-  {
-    "id": "s61",
-    "type": "character",
-    "narration": "Picture a simple coin-flip bet where the house pays you less than fair odds. Each flip, you expect to lose a few cents on the dollar. One flip is harmless. Ten thousand flips is a guarantee.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "dice",
-        "label": "a few cents lost per bet"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "A central bank is the institution that manages the monetary policy of a country or monetary union. It sits above the ordinary banks you and I use.",
+    "sourceId": "wiki-centralbank"
   },
   {
     "id": "s9",
-    "type": "stage",
-    "narration": "That's because every single bet quietly skims a cut for the house. Win or lose tonight, over enough spins, that edge grinds your money down.",
-    "motif": "housewins",
-    "caption": "every spin, the house takes a cut"
+    "type": "screenshot",
+    "narration": "In the United States, that's the Federal Reserve — the central banking system of the United States, created in 1913 after a wave of financial panics.",
+    "sourceId": "wiki-fed"
   },
   {
-    "id": "s62",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Roughly how much the house keeps",
-    "unit": "%",
-    "narration": "And the edge varies by game. Roulette quietly keeps a few cents on the dollar. Slot machines, more. The lottery is in a brutal league of its own.",
-    "data": [
+    "id": "s63",
+    "type": "timeline",
+    "title": "When central-bank words made history",
+    "narration": "A quick tour of the greatest hits. Volcker's resolve in 1979. Greenspan's warning in 1996. The 2008 rescue. Draghi's three words in 2012. The taper tantrum in 2013. And the flood of 2020.",
+    "events": [
       {
-        "label": "roulette",
-        "value": 5
+        "year": "1979",
+        "label": "Volcker",
+        "icon": "podium"
       },
       {
-        "label": "slots",
-        "value": 9
+        "year": "1996",
+        "label": "'exuberance'",
+        "icon": "chartdown"
       },
       {
-        "label": "lottery",
-        "value": 50
+        "year": "2008",
+        "label": "QE begins",
+        "icon": "printer"
+      },
+      {
+        "year": "2012",
+        "label": "'whatever it takes'",
+        "icon": "megaphone"
+      },
+      {
+        "year": "2013",
+        "label": "taper tantrum",
+        "icon": "warning"
+      },
+      {
+        "year": "2020",
+        "label": "'unlimited'",
+        "icon": "bomb"
       }
     ],
-    "highlight": 2
+    "highlight": 3
   },
   {
     "id": "s10",
     "type": "screenshot",
-    "narration": "There's even a mathematical name for your fate: gambler's ruin. A gambler playing a game with non-positive expected value will eventually go bankrupt — guaranteed.",
-    "sourceId": "wiki-gamblersruin"
+    "narration": "Its job, broadly, is monetary policy aimed at goals like high employment and stable prices. In practice, that means controlling one magical thing: the price of money.",
+    "sourceId": "wiki-monetary"
   },
   {
     "id": "s11",
-    "type": "stage",
-    "narration": "It doesn't matter how clever your system is. Bad odds plus enough time equals ruin. The only winning move is fewer bets, or none.",
-    "motif": "gamblersruin",
-    "caption": "bad odds + time = ruin, guaranteed"
-  },
-  {
-    "id": "s63",
     "type": "character",
-    "narration": "And legal sports betting has poured gasoline on this. Tens of billions are now wagered every year through apps that live in your pocket and never, ever close.",
+    "narration": "And the price of money has a name: the interest rate. It's what it costs to borrow, and what you earn to save. The central bank sets the benchmark that everything else is built on.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "phone",
-        "label": "betting, 24/7"
+        "name": "percent",
+        "label": "money has a price"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "character",
-    "narration": "And modern phones have turned this into a weapon. Sports betting and casino apps are engineered, like slot machines, to keep you tapping — fast, frictionless, and always available at 3 a.m.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "slotmachine",
-        "label": "a casino in your pocket"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The key one in the US is the federal funds rate — an important benchmark in financial markets that ripples out into almost every other rate.",
+    "sourceId": "wiki-fedfunds"
   },
   {
     "id": "s13",
-    "type": "screenshot",
-    "narration": "For some, it tips into problem gambling — repetitive gambling behavior despite real harm and negative consequences. It's not a character flaw; it's a recognized disorder.",
-    "sourceId": "wiki-problemgambling"
-  },
-  {
-    "id": "s14",
-    "type": "title",
-    "narration": "Which brings us to gambling's most socially acceptable cousin — and the worst odds of all.",
-    "heading": "The Lottery",
-    "kicker": "a tax on hope"
-  },
-  {
-    "id": "s15",
-    "type": "screenshot",
-    "narration": "A lottery is simply a form of gambling that involves drawing numbers at random for a prize. Legal, cheerful, and mathematically brutal.",
-    "sourceId": "wiki-lottery"
-  },
-  {
-    "id": "s16",
-    "type": "callout",
-    "narration": "The odds of a big jackpot can be worse than one in three hundred million. You are far likelier to be struck by lightning — twice.",
-    "text": "1 in 300 million",
-    "sub": "the jackpot odds",
-    "icon": "warning"
+    "type": "stage",
+    "narration": "Think of it as one giant lever. The central bank nudges that single rate — and mortgages, car loans, business lending, savings accounts, and stock prices all swing in response.",
+    "motif": "ratelever",
+    "caption": "one rate moves the whole economy"
   },
   {
     "id": "s64",
     "type": "character",
-    "narration": "To make one in three hundred million feel real: you could buy a ticket every single day for a million years and still, most likely, never hit the top prize.",
+    "narration": "But the lever is slow and sticky. Economists say rate changes hit the economy with 'long and variable lags' — the full effect can take a year or more to arrive, which makes the job maddeningly hard.",
     "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "a million years of tickets"
+        "name": "hourglass",
+        "label": "long, variable lags"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "character",
+    "narration": "When they cut rates, borrowing gets cheap, money floods in, and asset prices tend to rise. When they raise rates, money gets expensive, and the party cools down fast.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "cheap money lifts prices"
+      }
+    ]
+  },
+  {
+    "id": "s65",
+    "type": "chart",
+    "chartType": "line",
+    "title": "A typical hiking cycle (policy rate, %)",
+    "unit": "%",
+    "narration": "So they move the rate in steps across a whole cycle — from near zero, up and up to cool an overheating economy, then back down again when the danger passes.",
+    "data": [
+      {
+        "label": "'21",
+        "value": 0
+      },
+      {
+        "label": "'22",
+        "value": 2
+      },
+      {
+        "label": "'23",
+        "value": 5
+      },
+      {
+        "label": "'24",
+        "value": 5
+      },
+      {
+        "label": "'25",
+        "value": 3
+      }
+    ],
+    "highlight": 2
+  },
+  {
+    "id": "s15",
+    "type": "title",
+    "narration": "But here's the subtle part — the part that makes markets so twitchy. It's not just what they do. It's what they say they'll do.",
+    "heading": "The Price of the Future",
+    "kicker": "why talk matters"
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "narration": "Markets are not really about today. A stock price is a bet on all the future profits a company will ever make. So prices move on expectations of the future, not the present.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "prices = future bets"
       }
     ]
   },
   {
     "id": "s17",
     "type": "character",
-    "narration": "It's often called a tax on people who are bad at math. A dollar in buys, on average, far less than a dollar of expected prize. The rest funds the state, and the dream.",
+    "narration": "And interest rates are the yardstick for measuring that future. A higher rate makes a dollar next year worth less today — which quietly lowers the value of almost every asset at once.",
     "pose": "explain",
     "props": [
       {
-        "name": "cheque",
-        "label": "pay $1, get ~50¢ back"
-      }
-    ]
-  },
-  {
-    "id": "s65",
-    "type": "character",
-    "narration": "And lotteries hit hardest where it hurts most. Study after study shows lower-income households spend a far bigger share of their money on tickets — chasing an exit that almost never comes.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "a regressive bet"
+        "name": "scale",
+        "label": "rates value the future"
       }
     ]
   },
   {
     "id": "s18",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "invest $20 a week",
-    "memeBottom": "buy $20 of scratch tickets",
-    "narration": "Twenty dollars a week in lottery tickets feels like hope. The same twenty dollars invested for thirty years is a small fortune. Same money, opposite destiny."
-  },
-  {
-    "id": "s19",
     "type": "character",
-    "narration": "And here's the cruel twist: even winning can wreck you. A striking share of big lottery winners end up bankrupt within a few years — because a windfall can't fix a leak in how you handle money.",
+    "narration": "So if the central bank even hints that rates will rise, traders don't wait. They reprice everything immediately — today — based on a future that hasn't happened yet.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "chartdown",
-        "label": "winners go broke too"
+        "name": "ticker",
+        "label": "they move on the hint"
       }
     ]
   },
   {
     "id": "s66",
-    "type": "image",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "won the lottery",
-    "memeBottom": "broke again in 5 years",
-    "narration": "A sudden windfall lands on the same habits that had no savings before. Without new habits, the money finds its way back out the door."
-  },
-  {
-    "id": "s20",
-    "type": "title",
-    "narration": "Now to a slower-looking killer that's just as deadly: high-interest debt.",
-    "heading": "The Debt Trap",
-    "kicker": "compounding in reverse"
-  },
-  {
-    "id": "s21",
     "type": "character",
-    "narration": "Compound interest is the most powerful force in building wealth. The problem is, it works exactly as hard in the other direction — against you.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "compounding cuts both ways"
-      }
-    ]
-  },
-  {
-    "id": "s22",
-    "type": "screenshot",
-    "narration": "Compound interest is interest accumulated on a principal sum and on previously accumulated interest. On debt, that means interest piling onto interest.",
-    "sourceId": "wiki-compound"
-  },
-  {
-    "id": "s67",
-    "type": "character",
-    "narration": "Here's the reverse-compounding example. Put a thousand dollars on a card at twenty-four percent and make only minimum payments, and you can end up paying back two or three times what you borrowed.",
+    "narration": "And there's an even scarier enforcer lurking behind them: the bond market. If investors don't believe a central bank will control inflation, they dump bonds — and force rates up anyway.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "creditcard",
-        "label": "pay back 2–3x"
+        "name": "bond",
+        "label": "the bond market bites back"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "title",
+    "narration": "Central banks figured this out, and turned talk itself into a tool. It even has a name.",
+    "heading": "Forward Guidance",
+    "kicker": "steering with words"
+  },
+  {
+    "id": "s20",
+    "type": "screenshot",
+    "narration": "It's called forward guidance — a tool used by a central bank to influence market expectations of future levels of interest rates. In plain English: steering the market by telling it what's probably coming.",
+    "sourceId": "wiki-forward"
+  },
+  {
+    "id": "s67",
+    "type": "character",
+    "narration": "This openness is new. For decades the Fed was deliberately secret — it didn't even announce its rate decisions until 1994. Markets had to guess by watching its market operations.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "padlock",
+        "label": "secret until 1994"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "stage",
+    "narration": "Done well, they barely have to act at all. Just signposting where rates are heading makes markets move there on their own — the hint does the heavy lifting.",
+    "motif": "forwardguidance",
+    "caption": "markets move on the hint, not the act"
+  },
+  {
+    "id": "s22",
+    "type": "character",
+    "narration": "Which is why every word is weighed like gold. Do they say rates will stay low for a 'considerable time,' or just 'a while'? Are they 'patient,' or merely 'data-dependent'? Each phrase is a signal.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "megaphone",
+        "label": "every word is parsed"
       }
     ]
   },
   {
     "id": "s23",
-    "type": "screenshot",
-    "narration": "Credit card debt grows through the accrual of interest and penalties when you don't repay. At twenty-plus percent a year, a balance can snowball frighteningly fast.",
-    "sourceId": "wiki-ccdebt"
+    "type": "stage",
+    "narration": "So a single adjective — swapped in or quietly dropped from a statement — can send markets soaring or crashing in minutes. One word really can move trillions.",
+    "motif": "fedspeak",
+    "caption": "one word moves trillions"
   },
   {
     "id": "s68",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "$1,000 debt at ~24%, minimum payments",
-    "unit": "$",
-    "narration": "Watch a thousand-dollar balance you barely pay down. Year after year, interest piles on interest, and the amount you owe just keeps climbing.",
-    "data": [
+    "type": "character",
+    "narration": "They even publish a chart of their own guesses, nicknamed the 'dot plot' — each official's forecast for where rates are heading. Markets pore over those dots like tea leaves.",
+    "pose": "explain",
+    "props": [
       {
-        "label": "start",
-        "value": 1000
-      },
-      {
-        "label": "yr 3",
-        "value": 1500
-      },
-      {
-        "label": "yr 6",
-        "value": 2200
+        "name": "ticker",
+        "label": "the 'dot plot'"
       }
-    ],
-    "highlight": 2
+    ]
   },
   {
     "id": "s24",
-    "type": "screenshot",
-    "narration": "But the true accelerant is the payday loan — a short-term unsecured loan characterized by very high interest rates, marketed to people with no other options.",
-    "sourceId": "wiki-payday"
+    "type": "title",
+    "narration": "This gave rise to a strange, almost theatrical language all its own.",
+    "heading": "Fed Speak",
+    "kicker": "the art of saying nothing"
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "narration": "Central bankers speak in deliberately vague, hedged, careful language — sometimes called 'Fed speak.' The goal is to guide markets without ever boxing themselves in.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "podium",
+        "label": "deliberately vague"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "image",
+    "src": "img/greenspan.jpg",
+    "label": "ALAN GREENSPAN",
+    "caption": "the master of vague",
+    "narration": "The grand master was Alan Greenspan, who chaired the Fed for nearly two decades. He once joked that if you understood what he'd said, he must have misspoken."
   },
   {
     "id": "s69",
     "type": "character",
-    "narration": "Modern 'buy now, pay later' apps add a frictionless new twist: splitting purchases into easy installments that quietly stack up into debt you forgot you signed up for.",
+    "narration": "The theater got absurd. For years, analysts literally measured the thickness of Greenspan's briefcase on meeting days, convinced a fat one meant a rate change was coming.",
     "pose": "explain",
     "props": [
       {
-        "name": "phone",
-        "label": "'buy now, pay later'"
+        "name": "briefcase",
+        "label": "the briefcase indicator"
       }
     ]
-  },
-  {
-    "id": "s25",
-    "type": "stage",
-    "narration": "A payday loan's rate, annualized, can reach four hundred percent or more. Borrow a little, and the debt balloons — trapping people in a cycle of re-borrowing just to pay the last loan.",
-    "motif": "aprballoon",
-    "caption": "high-interest debt compounds against you"
-  },
-  {
-    "id": "s26",
-    "type": "callout",
-    "narration": "At four hundred percent a year, a small debt doesn't just grow — it detonates, often faster than any paycheck can keep up.",
-    "text": "400% APR",
-    "sub": "the payday-loan trap",
-    "icon": "bomb"
   },
   {
     "id": "s27",
-    "type": "title",
-    "narration": "Now the fastest route of all — the one that turns a bad day into total ruin: leverage.",
-    "heading": "Leverage",
-    "kicker": "borrowing to bet"
-  },
-  {
-    "id": "s28",
-    "type": "screenshot",
-    "narration": "Leverage, in finance, is any technique involving borrowing funds to buy an investment. It multiplies your gains — and, far more dangerously, your losses.",
-    "sourceId": "wiki-leverage"
-  },
-  {
-    "id": "s29",
     "type": "character",
-    "narration": "Here's the trap. If you buy a stock with your own cash and it drops ten percent, you're down ten percent. Painful, but survivable.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "−10% on your cash"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "stage",
-    "narration": "But borrow nine dollars for every one of your own — ten times leverage — and that same ten percent dip doesn't dent you. It erases you. Your entire stake is gone.",
-    "motif": "leveragewipeout",
-    "caption": "a 10% dip, a 100% loss"
-  },
-  {
-    "id": "s70",
-    "type": "character",
-    "narration": "This isn't new. In the 1920s, people bought stocks with as little as ten percent of their own money. When prices fell, the margin calls cascaded — and helped turn a crash into the Great Depression.",
+    "narration": "In 1996, Greenspan wondered aloud whether markets were gripped by 'irrational exuberance.' Just two words — and stock markets around the world dropped overnight.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
         "name": "chartdown",
-        "label": "1929: bought on margin"
+        "label": "'irrational exuberance'"
       }
     ]
   },
   {
+    "id": "s28",
+    "type": "character",
+    "narration": "Traders now talk about central banks being 'hawkish' or 'dovish.' Hawkish means leaning toward higher rates to fight inflation. Dovish means lower rates to support growth.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "hawkish vs dovish"
+      }
+    ]
+  },
+  {
+    "id": "s70",
+    "type": "image",
+    "src": "img/yellen.jpg",
+    "label": "JANET YELLEN",
+    "caption": "telegraphed every move",
+    "narration": "Later chairs leaned the other way, toward total clarity. Janet Yellen made a point of telegraphing moves far in advance — so that when they came, markets barely flinched."
+  },
+  {
+    "id": "s29",
+    "type": "compare",
+    "narration": "The whole market tries to sort every sentence into one of two buckets — and bets accordingly, often before the speaker has even finished talking.",
+    "left": {
+      "title": "Hawkish",
+      "value": "rates up, cool it down",
+      "icon": "chartdown"
+    },
+    "right": {
+      "title": "Dovish",
+      "value": "rates down, let it run",
+      "icon": "chartup"
+    }
+  },
+  {
+    "id": "s30",
+    "type": "title",
+    "narration": "To really feel the power of this, look at a few words that genuinely changed history.",
+    "heading": "The Famous Lines",
+    "kicker": "when words made history"
+  },
+  {
     "id": "s31",
+    "type": "image",
+    "src": "img/volcker.jpg",
+    "label": "PAUL VOLCKER",
+    "caption": "the credibility to crush inflation",
+    "narration": "In the early 1980s, Paul Volcker didn't just raise rates toward twenty percent. He convinced the world he truly would do whatever it took — and that resolve is what finally broke inflation."
+  },
+  {
+    "id": "s32",
+    "type": "image",
+    "src": "img/draghi.jpg",
+    "label": "MARIO DRAGHI",
+    "caption": "'whatever it takes' — 2012",
+    "narration": "In 2012, with the euro on the brink of collapse, the European Central Bank's Mario Draghi said the currency would be defended, 'whatever it takes.'"
+  },
+  {
+    "id": "s33",
+    "type": "callout",
+    "narration": "Those three words — 'whatever it takes' — calmed a continent-sized panic almost instantly, and the ECB barely had to spend a thing to back them up.",
+    "text": "3 words",
+    "sub": "that saved the euro",
+    "icon": "megaphone"
+  },
+  {
+    "id": "s34",
+    "type": "image",
+    "src": "img/memes/brain4.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "spend billions to calm markets",
+    "memeBottom": "say three words and calm them for free",
+    "narration": "That's the dream for a central banker: move the whole market with a sentence, and never have to open the wallet at all."
+  },
+  {
+    "id": "s35",
+    "type": "title",
+    "narration": "But words can cut the other way too — and cause the very panic they were meant to prevent.",
+    "heading": "The Taper Tantrum",
+    "kicker": "when a hint backfires"
+  },
+  {
+    "id": "s36",
+    "type": "image",
+    "src": "img/bernanke.jpg",
+    "label": "BEN BERNANKE",
+    "caption": "one hint, a global tantrum",
+    "narration": "In 2013, Fed chair Ben Bernanke merely hinted that the Fed might slow — 'taper' — its bond buying at some point in the future. He didn't actually do anything yet."
+  },
+  {
+    "id": "s37",
     "type": "screenshot",
-    "narration": "That's the mechanism of margin — collateral you post to borrow and trade. When the trade moves against you, the broker can force a sale at the worst possible moment.",
-    "sourceId": "wiki-margin"
+    "narration": "Remember, since 2008 the Fed had been doing quantitative easing — purchasing huge amounts of government bonds to pump money into the system.",
+    "sourceId": "wiki-qe"
   },
   {
     "id": "s71",
     "type": "character",
-    "narration": "And it still happens at the top. In 2021, a secretive fund called Archegos used enormous hidden leverage — and imploded in days, erasing something like twenty billion dollars almost overnight.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "bomb",
-        "label": "Archegos: ~$20B in days"
-      }
-    ]
-  },
-  {
-    "id": "s32",
-    "type": "character",
-    "narration": "It's called a margin call. The market dips, your collateral isn't enough, and your position is liquidated automatically — locking in the loss before you can even react.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "the margin call"
-      }
-    ]
-  },
-  {
-    "id": "s33",
-    "type": "image",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "survive a 10% dip at 10x leverage",
-    "narration": "Leverage is why people lose more than everything they had — ending a trade not at zero, but in debt."
-  },
-  {
-    "id": "s34",
-    "type": "title",
-    "narration": "Leverage's flashy modern cousins deserve their own warning: speculation dressed up as investing.",
-    "heading": "Speculation",
-    "kicker": "get-rich-quick = get-poor-quick"
-  },
-  {
-    "id": "s35",
-    "type": "screenshot",
-    "narration": "Day trading is a form of speculation in securities, buying and selling within a single day. It looks like a job. For the overwhelming majority, it's a slow bleed.",
-    "sourceId": "wiki-daytrading"
-  },
-  {
-    "id": "s72",
-    "type": "character",
-    "narration": "The recent boom made it worse. Easy apps turned millions of people into day traders overnight, many of them trading options — essentially leveraged bets on short-term price moves.",
+    "narration": "This was the firepower behind the fear. After the 2008 crisis, the Fed created money on a vast scale and bought trillions in bonds — proof that it truly could do what it threatened.",
     "pose": "explain",
     "props": [
       {
-        "name": "phone",
-        "label": "everyone a day trader"
-      }
-    ]
-  },
-  {
-    "id": "s36",
-    "type": "callout",
-    "narration": "Study after study finds the same thing: the vast majority of active day traders lose money over time. Only a tiny fraction consistently beat simply holding the market.",
-    "text": "most lose money",
-    "sub": "the day-trading reality",
-    "icon": "chartdown"
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "narration": "Then there are the manias: meme stocks, options bets, and crypto coins flipped like casino chips. The stories you hear are the winners. The silent majority quietly got wiped out.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "token",
-        "label": "survivorship bias"
-      }
-    ]
-  },
-  {
-    "id": "s73",
-    "type": "image",
-    "src": "img/livermore.jpg",
-    "label": "JESSE LIVERMORE",
-    "caption": "made & lost fortunes on leverage",
-    "narration": "History is full of cautionary tales. Jesse Livermore was perhaps the most famous speculator who ever lived — and he made, and then lost, several enormous fortunes trading on leverage."
-  },
-  {
-    "id": "s74",
-    "type": "character",
-    "narration": "That's the pattern with pure speculation: the wins are loud and the losses are silent. You hear about the one person who tripled their money, never the ten behind them who were quietly wiped out.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "crowd",
-        "label": "you only hear the winners"
+        "name": "printer",
+        "label": "trillions, conjured"
       }
     ]
   },
   {
     "id": "s38",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "put my savings in a hot tip",
-    "memeBottom": "watch it go to zero",
-    "narration": "Every get-rich-quick scheme is, statistically, a get-poor-quick scheme wearing a disguise. The quicker the promised riches, the faster the likely ruin."
+    "type": "stage",
+    "narration": "Just the hint of pulling back was enough. Bond yields spiked, markets lurched worldwide, and money fled emerging economies. They named it the 'taper tantrum.'",
+    "motif": "tapertantrum",
+    "caption": "one word, a global tantrum"
+  },
+  {
+    "id": "s72",
+    "type": "character",
+    "narration": "And the pain went global. As US yields jumped during the taper tantrum, money yanked out of emerging economies overnight — their currencies and markets tumbling on a hint aimed at America.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "globe",
+        "label": "the whole world felt it"
+      }
+    ]
   },
   {
     "id": "s39",
-    "type": "title",
-    "narration": "And finally, the quietest wealth-killer of all — the one that doesn't feel like a mistake at all.",
-    "heading": "The Slow Leak",
-    "kicker": "lifestyle creep"
+    "type": "character",
+    "narration": "Nothing had actually changed yet. No bond had been sold. The markets panicked purely over a shift in expectations about the future. That's how powerful mere words have become.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "panic over a hint"
+      }
+    ]
   },
   {
     "id": "s40",
-    "type": "screenshot",
-    "narration": "Lifestyle creep is when, as you earn more, former luxuries quietly become perceived necessities. The raise arrives, and the spending rises to swallow it.",
-    "sourceId": "wiki-lifestyle"
+    "type": "title",
+    "narration": "So why does this trigger outright panic, rather than a calm little adjustment?",
+    "heading": "Why Panic?",
+    "kicker": "the herd and the leverage"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "This is how people earning very good money still end up with nothing saved. It's not one disaster — it's a thousand small upgrades that leave no gap between income and spending.",
+    "narration": "Reason one: everyone is watching the exact same signal at the exact same moment. When millions of traders all react to one sentence at once, small moves become stampedes.",
     "pose": "explain",
     "props": [
       {
-        "name": "dining",
-        "label": "spending eats the raise"
+        "name": "crowd",
+        "label": "everyone reacts at once"
       }
     ]
   },
   {
     "id": "s42",
     "type": "character",
-    "narration": "It won't make you poor overnight like leverage will. But over a career, lifestyle creep can quietly ensure you never build any wealth at all — a slow puncture instead of a blowout.",
+    "narration": "Reason two: leverage. So much of the market runs on borrowed money, and borrowing costs depend directly on these rates. A rate surprise can trigger forced selling in seconds.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "bucket",
-        "label": "a slow, steady leak"
-      }
-    ]
-  },
-  {
-    "id": "s75",
-    "type": "character",
-    "narration": "Psychologists call the engine behind it hedonic adaptation. Every upgrade feels amazing for a month, then becomes the new normal — so you reach for the next one, and the gap never closes.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "dining",
-        "label": "the upgrade treadmill"
+        "name": "bank",
+        "label": "leverage amplifies it"
       }
     ]
   },
   {
     "id": "s43",
-    "type": "title",
-    "narration": "So step back. What do all these fast roads to broke actually have in common?",
-    "heading": "The Common Thread",
-    "kicker": "why they're all fast"
+    "type": "character",
+    "narration": "Reason three: central banks are, quite simply, the biggest players in the room. They can create money and buy assets at a scale no hedge fund could ever dream of matching.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "printer",
+        "label": "they can print money"
+      }
+    ]
+  },
+  {
+    "id": "s73",
+    "type": "character",
+    "narration": "In 2020, as the pandemic hit, the Fed effectively promised unlimited support — buying bonds without a stated cap. Markets, which had been crashing, turned on a dime and roared back.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bomb",
+        "label": "2020: 'unlimited'"
+      }
+    ]
   },
   {
     "id": "s44",
+    "type": "stage",
+    "narration": "Which leads to Wall Street's oldest rule of survival: don't fight the Fed. Betting against the institution that can conjure unlimited money is a very fast way to lose.",
+    "motif": "dontfightthefed",
+    "caption": "don't fight the Fed"
+  },
+  {
+    "id": "s74",
     "type": "character",
-    "narration": "Thread one: negative expected value. Gambling, the lottery, most short-term trading — on average, each play is designed to lose. Repeat a losing bet enough, and ruin is just math.",
+    "narration": "Over time this bred a belief traders call the 'Fed put' — a quiet faith that whenever markets fall far enough, the central bank will always ride in to rescue them.",
     "pose": "explain",
     "props": [
       {
-        "name": "dice",
-        "label": "the odds are against you"
+        "name": "shield",
+        "label": "the 'Fed put'"
       }
     ]
-  },
-  {
-    "id": "s76",
-    "type": "compare",
-    "narration": "So compare the two engines directly. A casino is built to bleed you a little on every play. The broad market, historically, has drifted the other way — paying owners over time.",
-    "left": {
-      "title": "The casino",
-      "value": "edge against you",
-      "icon": "dice"
-    },
-    "right": {
-      "title": "Owning the market",
-      "value": "drift for you",
-      "icon": "chartup"
-    }
   },
   {
     "id": "s45",
-    "type": "character",
-    "narration": "Thread two: leverage. Borrowed money removes your safety net. It turns a survivable setback into a total, unrecoverable wipeout.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "debt removes the net"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/onedoesnot.jpg",
+    "meme": "One Does Not Simply",
+    "memeTop": "one does not simply",
+    "memeBottom": "out-print the money printer",
+    "narration": "You can disagree with the central bank all you like. But in a staring contest with the people who print the money, you tend to blink first."
   },
   {
     "id": "s46",
-    "type": "character",
-    "narration": "Thread three: speed and emotion. Fast, 24/7, one-tap access — to bets, to loans, to trades — strips out the pause where common sense would normally step in.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "phone",
-        "label": "no time to think"
-      }
-    ]
-  },
-  {
-    "id": "s77",
-    "type": "character",
-    "narration": "This is why the single most profitable habit in finance is often just… waiting. A built-in pause — sleeping on any big money decision — defuses most fast disasters before they start.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "sleep on it"
-      }
-    ]
+    "type": "title",
+    "narration": "All of which creates a genuinely strange situation for the modern economy.",
+    "heading": "The Paradox",
+    "kicker": "ruling by expectation"
   },
   {
     "id": "s47",
+    "type": "character",
+    "narration": "The central bank's most powerful tool is no longer just money. It's expectations — the stories markets tell themselves about what comes next. They manage a mood as much as a money supply.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "brain",
+        "label": "managing expectations"
+      }
+    ]
+  },
+  {
+    "id": "s75",
     "type": "image",
-    "src": "img/memes/brain4.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "a slow, boring index fund",
-    "memeBottom": "a thrilling leveraged bet to zero",
-    "narration": "The thrill is the warning sign. If a money move feels exciting and urgent, it's usually optimized for someone else's profit — not yours."
+    "src": "img/lagarde.jpg",
+    "label": "CHRISTINE LAGARDE",
+    "caption": "now leads the ECB",
+    "narration": "And this isn't just an American story. Every major economy has its own version — like Christine Lagarde at the European Central Bank — and the entire world listens to all of them."
   },
   {
     "id": "s48",
-    "type": "title",
-    "narration": "So let's flip it around — because avoiding poor is mostly about not doing a short list of things.",
-    "heading": "How Not to Get Poor",
-    "kicker": "the boring playbook"
+    "type": "screenshot",
+    "narration": "The committee that actually makes these calls, the Federal Open Market Committee, makes key decisions about interest rates — and every word of its statement is dissected for hours.",
+    "sourceId": "wiki-fomc"
+  },
+  {
+    "id": "s76",
+    "type": "character",
+    "narration": "On decision day, pros read three things in order: the official statement, then the forecasts, then the press conference — hunting for any gap between what was written and what gets said out loud.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "newspaper",
+        "label": "statement, dots, presser"
+      }
+    ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "Rule one: never bet with money you can't afford to lose, and never, ever add leverage to a bet. Borrowed money and gambling are the single most dangerous combination in finance.",
-    "pose": "present",
+    "narration": "So they walk a tightrope. Say too little, and markets guess wild. Say too much, and they're trapped by their own promise. The job is half economics, half careful theater.",
+    "pose": "explain",
     "props": [
       {
-        "name": "shield",
-        "label": "no leverage on bets"
+        "name": "scale",
+        "label": "a careful tightrope"
       }
     ]
   },
   {
     "id": "s50",
     "type": "character",
-    "narration": "Rule two: treat high-interest debt like a fire. Payday loans and lingering credit card balances compound against you — kill them first, before you do anything else.",
-    "pose": "present",
+    "narration": "And credibility is everything. Draghi's three words worked because markets believed him. A central banker nobody trusts can shout all day and move nothing at all.",
+    "pose": "explain",
     "props": [
       {
-        "name": "creditcard",
-        "label": "kill high-interest debt"
+        "name": "handshake",
+        "label": "trust is the real power"
+      }
+    ]
+  },
+  {
+    "id": "s77",
+    "type": "character",
+    "narration": "And they guard one thing above all: independence. A central bank that bows to politicians loses credibility — and once markets stop believing it, its words stop working entirely.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "independence is sacred"
       }
     ]
   },
   {
     "id": "s51",
+    "type": "title",
+    "narration": "So what do you actually do with all this, as a normal person?",
+    "heading": "The Lesson",
+    "kicker": "tune the signal, not the noise"
+  },
+  {
+    "id": "s52",
     "type": "character",
-    "narration": "Rule three: choose positive expected value, and let time do the work. Owning the whole market has, historically, drifted upward — the exact opposite of the casino's edge.",
+    "narration": "First: understand that the most powerful words in finance aren't a CEO's or a president's. They belong to a central banker most people couldn't name.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "podium",
+        "label": "the quiet superpower"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "Second: don't fight the Fed, but don't obsess over its every syllable either. The daily panic is mostly noise. The direction of rates, over months, is the signal that matters.",
     "pose": "present",
     "props": [
       {
-        "name": "chartup",
-        "label": "put the odds on your side"
+        "name": "gauge",
+        "label": "watch the trend, not the twitch"
       }
     ]
   },
   {
     "id": "s78",
     "type": "character",
-    "narration": "Build one boring thing first: an emergency fund. A few months of expenses in cash is what stops a bad week from ever becoming a payday loan or a forced, panicked sale.",
+    "narration": "If you do want to follow along, watch the economic calendar for the meeting days — and then largely ignore the first frantic hour of market reaction, which is mostly noise.",
     "pose": "present",
     "props": [
       {
-        "name": "shield",
-        "label": "an emergency fund"
+        "name": "calendar",
+        "label": "know the meeting days"
       }
     ]
   },
   {
-    "id": "s52",
+    "id": "s54",
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "for long-term investors, most Fed-day drama is just noise",
+    "narration": "The headlines scream at every meeting. But for a patient investor, almost all of that drama is noise you can simply let wash over you."
+  },
+  {
+    "id": "s55",
     "type": "character",
-    "narration": "And rule four: when you earn more, bank the difference before your lifestyle notices. Quietly widening the gap between income and spending is how ordinary people actually get rich.",
-    "pose": "present",
+    "narration": "Third: remember what they ultimately control. Interest rates touch your mortgage, your savings, your job, and your investments. This isn't abstract — it's the weather system your whole financial life lives inside.",
+    "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "bank the raise"
+        "name": "house",
+        "label": "it reaches your life"
       }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "title",
+    "narration": "So let's total up the power of the podium.",
+    "heading": "The Final Math",
+    "kicker": "how words move the world"
+  },
+  {
+    "id": "s57",
+    "type": "chalkboard",
+    "narration": "They set the price of money. Markets price the future. So a hint about tomorrow reprices everything today. Add leverage and a watching herd — and words alone can move trillions.",
+    "lines": [
+      "central bank sets the price of money",
+      "markets price the future, not today",
+      "so a hint reprices everything now",
+      "leverage + herd → words move trillions"
     ]
   },
   {
     "id": "s79",
     "type": "character",
-    "narration": "And automate it. Money that moves into savings and investments the day you're paid can't be quietly spent — you've removed the decision, and the temptation, entirely.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "automate the saving"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "boring, slow, and diversified beats fast, thrilling, and leveraged",
-    "narration": "Building wealth is supposed to be boring. If it feels like a casino, you're probably playing one."
-  },
-  {
-    "id": "s54",
-    "type": "title",
-    "narration": "So let's total up the fast lanes to broke.",
-    "heading": "The Final Math",
-    "kicker": "how fortunes vanish"
-  },
-  {
-    "id": "s55",
-    "type": "chalkboard",
-    "narration": "Gambling and lotteries guarantee loss over time. High-interest debt compounds against you. Leverage turns a dip into a wipeout. And lifestyle creep quietly leaks it all away.",
-    "lines": [
-      "gambling & lottery → negative odds",
-      "high-interest debt → compounds on you",
-      "leverage → a dip becomes a wipeout",
-      "lifestyle creep → the silent leak"
-    ]
-  },
-  {
-    "id": "s56",
-    "type": "stage",
-    "narration": "Every one of them is just a different way of putting bad odds, borrowed money, or both, between you and your future. Remove those, and 'getting poor fast' gets surprisingly hard to do.",
-    "motif": "slowfastwealth",
-    "caption": "slow to build, instant to destroy"
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "Because the house, the lender, and the app all profit from your speed. Your single greatest defense is the willingness to be slow, boring, and patient instead.",
+    "narration": "Step back and the shift is remarkable. A century ago, central banking was done in secret. Today, its single most powerful instrument is a carefully worded paragraph everyone can read.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "slow is the cheat code"
+        "name": "megaphone",
+        "label": "from secrecy to signaling"
       }
     ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "So the next time something promises to make you rich fast, remember the math — and ask who's really getting rich off your hurry.",
-    "pose": "present",
+    "narration": "It's a kind of magic trick built on trust. A few trusted sentences can do the work of a trillion dollars — as long as everyone believes they'd spend it if they had to.",
+    "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "always check the odds"
+        "name": "magichat",
+        "label": "trust is the trick"
       }
     ]
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "If this helped you dodge a fast road to broke, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "So the next time markets lurch and the headlines blame a central banker's speech, you'll know exactly why — and you'll be able to tell the signal from the noise.",
+    "pose": "present",
     "props": [
       {
-        "name": "shield",
-        "label": "which number next?"
+        "name": "calculator",
+        "label": "now you see the trick"
       }
     ]
   },
   {
     "id": "s60",
+    "type": "character",
+    "narration": "If this made the Fed finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "podium",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s61",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

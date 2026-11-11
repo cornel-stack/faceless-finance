@@ -2344,6 +2344,89 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={492} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">slow to build, instant to destroy</text>
       </svg>
     );
+  } else if (m === "fedspeak") {
+    // One careful word from the podium whips the market around.
+    const say = interpolate(frame, [fps * 0.4, fps * 1.0], [0, 1], clampBoth);
+    const react = interpolate(frame, [fps * 1.2, fps * 2.2], [0, 1], clampBoth);
+    const clipId = React.useId().replace(/:/g, "");
+    const path = "M 90 300 L 220 300 L 270 292 L 330 150 L 410 420 L 500 300 L 880 300";
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(220 200)">
+          <rect x={-50} y={-30} width={100} height={110} fill={tan} stroke={ink} strokeWidth={5} />
+          <circle cx={0} cy={-56} r={26} fill={parch} stroke={ink} strokeWidth={4} />
+          <line x1={0} y1={-30} x2={0} y2={-14} stroke={ink} strokeWidth={4} />
+        </g>
+        <g opacity={say} transform="translate(440 120)">
+          <rect x={-112} y={-44} width={224} height={78} rx={14} fill="#fff" stroke={ink} strokeWidth={4} />
+          <path d="M-30 32 L-10 60 L10 32 Z" fill="#fff" stroke={ink} strokeWidth={4} />
+          <text y={8} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">"patient"</text>
+        </g>
+        <RLine x1={70} y1={430} x2={VW - 40} y2={430} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * react} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`} transform="translate(0 120)"><RPath d={path} stroke={red} strokeWidth={5} seed={6} /></g>
+        <text x={VW / 2} y={492} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one word moves trillions</text>
+      </svg>
+    );
+  } else if (m === "ratelever") {
+    // The Fed pulls one lever; borrowing, stocks and savings all swing.
+    const pull = interpolate(frame, [fps * 0.6, fps * 1.6], [-28, 28], clampBoth);
+    const rows = ["mortgages", "car loans", "stocks", "savings"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 300)">
+          <rect x={-22} y={0} width={44} height={120} fill={ink} />
+          <g transform={`rotate(${pull})`}><rect x={-8} y={-140} width={16} height={150} rx={8} fill={red} stroke={ink} strokeWidth={3} /><circle cx={0} cy={-140} r={22} fill={red} stroke={ink} strokeWidth={4} /></g>
+          <text x={0} y={162} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">RATES</text>
+        </g>
+        {rows.map((t, i) => { const app = interpolate(frame, [fps * 1.0 + i * 6, fps * 1.3 + i * 6], [0, 1], clampBoth); return <g key={i} opacity={app} transform={`translate(630 ${140 + i * 78})`}><rect x={0} y={-26} width={240} height={48} rx={8} fill={parch} stroke={ink} strokeWidth={3} /><text x={120} y={6} fontSize={22} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{t}</text></g>; })}
+        <text x={VW / 2} y={494} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one rate moves the whole economy</text>
+      </svg>
+    );
+  } else if (m === "forwardguidance") {
+    // Markets rush toward a signposted future before the Fed even acts.
+    const move = interpolate(frame, [fps * 0.6, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(770 210)">
+          <rect x={-10} y={0} width={20} height={190} fill={tan} stroke={ink} strokeWidth={3} />
+          <rect x={-122} y={-54} width={244} height={74} rx={8} fill={gold} stroke={ink} strokeWidth={5} />
+          <text y={-10} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">rates up, soon</text>
+        </g>
+        {Array.from({ length: 4 }, (_, i) => { const x = 170 + 540 * interpolate(move, [i * 0.12, i * 0.12 + 0.5], [0, 1], clampBoth); return <g key={i} transform={`translate(${x} ${300 + i * 2})`}><circle r={20} fill={blue} stroke={ink} strokeWidth={3} /><text y={6} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text></g>; })}
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">markets move on the hint, not the act</text>
+      </svg>
+    );
+  } else if (m === "tapertantrum") {
+    // Calm bond yields spike the instant the Fed hints at 'tapering'.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.2], [0, 1], clampBoth);
+    const path = "M 90 360 L 300 352 L 450 356 L 480 356 L 530 150 L 640 182 L 880 160";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={430} x2={VW - 40} y2={430} stroke={ink} strokeWidth={3} />
+        <text x={122} y={120} fontSize={22} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>bond yields</text>
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={6} seed={5} /></g>
+        {rev > 0.62 && <text x={540} y={118} fontSize={26} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">"taper"</text>}
+        <text x={VW / 2} y={490} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one word, a global tantrum</text>
+      </svg>
+    );
+  } else if (m === "dontfightthefed") {
+    // A giant Fed dwarfs the lone investor who bets against it.
+    const rise = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(640 0)" opacity={rise}>
+          <path d="M-170 120 L0 40 L170 120 Z" fill={parch} stroke={ink} strokeWidth={6} />
+          <rect x={-150} y={120} width={300} height={300} fill={tan} stroke={ink} strokeWidth={6} />
+          {[-110, -55, 0, 55, 110].map((x, i) => <line key={i} x1={x} y1={130} x2={x} y2={410} stroke={ink} strokeWidth={6} />)}
+          <text y={394} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">THE FED</text>
+        </g>
+        <g transform="translate(200 350)"><circle cx={0} cy={-40} r={22} fill={parch} stroke={ink} strokeWidth={4} /><line x1={0} y1={-18} x2={0} y2={30} stroke={ink} strokeWidth={4} /><text y={70} fontSize={20} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>you</text></g>
+        <text x={VW / 2} y={470} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">don't fight the Fed</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

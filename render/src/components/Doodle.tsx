@@ -59,6 +59,8 @@ export type DoodleName =
   | "pickuptruck" | "mansion"
   // EP034 (the fastest way to get poor) additions:
   | "dice" | "slotmachine"
+  // EP035 (why markets panic when central banks speak) additions:
+  | "podium" | "megaphone"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1330,6 +1332,28 @@ function shape(name: DoodleName): React.ReactNode {
           <text x={50} y={49} fontSize={15} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">7 7</text>
           <RLine x1={74} y1={44} x2={84} y2={44} strokeWidth={SW} />
           <RCircle cx={86} cy={44} d={11} fill={GOLD} strokeWidth={1.4} />
+        </>
+      );
+
+    // ---- EP035 (why markets panic when central banks speak) doodles ----
+    case "podium":
+      // A speaker's lectern with a microphone — the central-bank presser.
+      return (
+        <>
+          <RPath d="M36 84 L34 46 L66 46 L64 84 Z" fill={TAN} strokeWidth={SW} />
+          <RRect x={30} y={40} w={40} h={8} fill={TAN} strokeWidth={1.4} />
+          <RLine x1={50} y1={40} x2={50} y2={26} strokeWidth={2.4} />
+          <RCircle cx={50} cy={22} d={11} fill={INK} strokeWidth={1} />
+        </>
+      );
+    case "megaphone":
+      // An announcement that moves the market.
+      return (
+        <>
+          <RPath d="M22 42 L54 30 L54 70 L22 58 Z" fill={RED} strokeWidth={SW} />
+          <RRect x={54} y={34} w={14} h={32} fill="#b83227" strokeWidth={1.4} />
+          <RPath d="M74 36 Q84 50 74 64" fill="none" strokeWidth={2.6} />
+          <RLine x1={30} y1={58} x2={30} y2={74} strokeWidth={SW} />
         </>
       );
   }

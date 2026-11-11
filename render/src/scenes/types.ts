@@ -132,7 +132,9 @@ export interface StageScene extends Base {
     // EP033 (why the rich pretend to be poor) additions:
     | "buyborrowdie" | "assetvsincome" | "unrealizedgains" | "frugalflex" | "truetaxrate"
     // EP034 (the fastest way to get poor) additions:
-    | "leveragewipeout" | "gamblersruin" | "aprballoon" | "housewins" | "slowfastwealth";
+    | "leveragewipeout" | "gamblersruin" | "aprballoon" | "housewins" | "slowfastwealth"
+    // EP035 (why markets panic when central banks speak) additions:
+    | "fedspeak" | "ratelever" | "forwardguidance" | "tapertantrum" | "dontfightthefed";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
