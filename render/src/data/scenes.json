@@ -2,311 +2,159 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "There's a single number that quietly defines your whole life, and most people have no idea what theirs even is. It isn't your salary. It's your net worth — everything you own, minus everything you owe. And as that one number climbs from zero to a hundred million dollars, your life doesn't just get comfier. It turns into completely different worlds.",
+    "narration": "Be honest. You've looked at your bank account and wondered the same thing everyone does: am I ahead, or am I behind for my age? It turns out there's an actual answer — measured, every few years, by the Federal Reserve. And the number that counts as perfectly normal at each age is going to surprise you.",
     "pose": "explain",
     "props": [
       {
+        "name": "birthdaycake",
+        "label": "ahead… or behind?"
+      },
+      {
         "name": "calculator",
-        "label": "everything you own"
+        "label": "there's a real answer"
       },
       {
-        "name": "iou",
-        "label": "minus what you owe"
-      },
-      {
-        "name": "mountain",
-        "label": "$0 → $100M"
+        "name": "ledger",
+        "label": "measured by the Fed"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Let's anchor it in reality first. According to the Federal Reserve, the typical American household has a net worth of about one hundred ninety-three thousand dollars. Not their income — their entire pile of wealth, built over a lifetime.",
-    "text": "$192,900",
-    "sub": "the median US household's entire net worth (Fed)",
-    "icon": "house"
+    "narration": "Let's rip the band-aid off. The typical American under thirty-five has a net worth of about thirty-nine thousand dollars. Not thirty-nine thousand in savings — thirty-nine thousand total, everything they own minus everything they owe.",
+    "text": "$39,000",
+    "sub": "median net worth, under 35 (Fed SCF)",
+    "icon": "piggybank"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "But that median hides almost everything interesting. The real story is the climb — and at each level, roughly every time you add a zero, money stops meaning one thing and starts meaning something entirely new. So let's climb it, level by level, with the real numbers.",
+    "narration": "If that feels low, that's the point. Most people wildly overestimate where everyone else is. Social media shows you the winners. The Fed shows you reality. So today, let's find out exactly where you rank — at every age, with the real numbers.",
     "pose": "explain",
     "props": [
       {
-        "name": "ladder",
-        "label": "the median hides it all"
-      },
-      {
-        "name": "mountain",
-        "label": "climb it level by level"
+        "name": "phone",
+        "label": "social media lies"
       },
       {
         "name": "ledger",
-        "label": "with real Fed data"
+        "label": "the Fed tells the truth"
+      },
+      {
+        "name": "mountain",
+        "label": "where do YOU rank?"
       }
     ]
   },
   {
     "id": "s4",
-    "type": "stage",
-    "narration": "Here's the whole journey on one staircase. Zero. Ten thousand. A hundred thousand. A million. Ten million. A hundred million. Each step is ten times the last — and each one is, quite literally, a different world to live in.",
-    "motif": "networthladder",
-    "caption": "every ×10 is a different world"
+    "type": "image",
+    "src": "img/memes/change.jpg",
+    "meme": "Change My Mind",
+    "memeTop": "your net worth matters less",
+    "memeBottom": "than whether it's bigger than last year's",
+    "narration": "And stick around to the end, because the real lesson isn't about beating other people. It's a single number you should actually be chasing — and it has almost nothing to do with your age."
   },
   {
     "id": "s5",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "save a little money",
-    "memeBottom": "own enough that the money earns more than you do",
-    "narration": "And the goal of this whole climb isn't really the fancy stuff. It's one quiet finish line: the moment your money starts earning more than you do. Everything below that line is work. Everything above it is freedom."
+    "type": "title",
+    "narration": "First, two quick rules so these numbers actually mean something.",
+    "heading": "Reading the Numbers",
+    "kicker": "median, not average"
   },
   {
     "id": "s6",
-    "type": "title",
-    "narration": "Before we climb, you need the two rules that govern every single level.",
-    "heading": "The Rules of the Climb",
-    "kicker": "how the game actually works"
+    "type": "screenshot",
+    "narration": "Rule one: everything here is net worth — the value of all your assets, minus the value of all your outstanding liabilities. Your house, car, savings, and investments, minus every debt you carry.",
+    "sourceId": "wiki-networth"
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "narration": "Rule one: we're measuring net worth. It's the value of all the assets you own, minus the value of all your outstanding liabilities — your debts. It is not your paycheck. A surgeon on three hundred grand with huge loans can be worth less than a frugal teacher.",
-    "sourceId": "wiki-networth"
+    "narration": "Rule two: we use the median, not the average. The median is the value separating the higher half from the lower half — the person smack in the middle. It's the honest number, because it isn't skewed by a handful of billionaires.",
+    "sourceId": "wiki-median"
   },
   {
     "id": "s8",
+    "type": "stage",
+    "narration": "This matters enormously. The average, or mean, American under thirty-five looks rich — about a hundred and eighty-four thousand dollars. But that's a lie told by a few mega-fortunes dragging the average up. The median — the real middle person — is that humble thirty-nine thousand.",
+    "motif": "medianvsmean",
+    "caption": "why the 'average' lies"
+  },
+  {
+    "id": "s49",
     "type": "character",
-    "narration": "This trips up almost everyone. Income is the river flowing in. Net worth is the lake you've actually managed to keep. Plenty of high earners have a roaring river and a puddle of a lake — because it all flows straight back out again.",
+    "narration": "This is exactly why everyone feels poor. You see one friend with a new Tesla and assume you're hopelessly behind. But you're comparing your real, median life to someone else's highlight reel — or to a skewed average puffed up by a few billionaires. The honest comparison almost always says you're more normal than you feel.",
     "pose": "explain",
     "props": [
       {
-        "name": "faucet",
-        "label": "income = the river"
+        "name": "phone",
+        "label": "highlight reels"
       },
       {
-        "name": "bucket",
-        "label": "net worth = the lake"
+        "name": "crowd",
+        "label": "you're more normal"
       },
       {
-        "name": "grocerybag",
-        "label": "most of it flows out"
+        "name": "scale",
+        "label": "compare honestly"
       }
     ]
   },
   {
     "id": "s9",
     "type": "screenshot",
-    "narration": "And our numbers aren't made up. They come from the Survey of Consumer Finances — a detailed statistical survey of the balance sheet of American families, run by the Federal Reserve. This is the real data.",
+    "narration": "And all of this comes from the Survey of Consumer Finances — a detailed statistical survey of the balance sheet of American families, run by the Federal Reserve. It's the gold standard for this data.",
     "sourceId": "wiki-scf"
   },
   {
-    "id": "s52",
-    "type": "character",
-    "narration": "Here's a sly trick hiding in the averages. The mean American net worth is over a million dollars — but that number is wildly misleading. A handful of billionaires yank the average way up. The median, the household right in the middle, is that hundred ninety-three thousand. On wealth, always trust the median.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pie",
-        "label": "mean: $1M+"
-      },
-      {
-        "name": "crowd",
-        "label": "median: $193K"
-      },
-      {
-        "name": "magnifier",
-        "label": "trust the median"
-      }
-    ]
-  },
-  {
     "id": "s10",
-    "type": "character",
-    "narration": "Rule two is the most important idea in this entire video. At low levels, you work for money. At high levels, money works for you. The whole climb is really just the story of crossing from one side of that line to the other.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "you work for money"
-      },
-      {
-        "name": "nestegg",
-        "label": "money works for you"
-      },
-      {
-        "name": "scale",
-        "label": "the whole game"
-      }
-    ]
+    "type": "title",
+    "narration": "Now the big idea that makes comparing yourself to others mostly pointless.",
+    "heading": "The Life-Cycle Hump",
+    "kicker": "wealth rises, peaks, falls"
   },
   {
     "id": "s11",
-    "type": "stage",
-    "narration": "Think of it in two phases. In phase one, you're pushing a boulder uphill — grinding, saving, every dollar coming from your own effort. In phase two, the boulder becomes a snowball rolling downhill, growing on its own, whether you work that day or not.",
-    "motif": "twophases",
-    "caption": "phase 1: you push · phase 2: it rolls"
+    "type": "screenshot",
+    "narration": "Economists have a model for this called the life-cycle hypothesis — a model that tries to explain the consumption patterns of individuals across their whole life. In short: you borrow when young, save in middle age, and spend it down in retirement.",
+    "sourceId": "wiki-lifecycle"
   },
   {
     "id": "s12",
-    "type": "screenshot",
-    "narration": "That second phase has a name: passive income — a type of unearned income acquired with little to no labor. Rent, dividends, interest. Money that shows up whether you get out of bed or not.",
-    "sourceId": "wiki-passive"
-  },
-  {
-    "id": "s13",
     "type": "stage",
-    "narration": "Picture two lines over your life. One is the income from your job — it rises a bit, then flattens, and it always stops the day you do. The other is the income thrown off by your investments. Early on it's nothing. But it grows, and grows, until one day it crosses your salary. That crossover is the real prize.",
-    "motif": "moneycrossover",
-    "caption": "when money out-earns you, you're free"
+    "narration": "So net worth isn't flat. It's a hump. It starts near zero in your twenties, climbs steadily through your working years, peaks right around retirement, and then gently declines as you spend your savings. Comparing a twenty-five-year-old to a sixty-year-old is comparing two totally different points on this curve.",
+    "motif": "agecurve",
+    "caption": "wealth is a life-cycle hump"
   },
   {
-    "id": "s14",
-    "type": "title",
-    "narration": "Okay. Let's start at the bottom, where almost all of us begin.",
-    "heading": "Level 1 — $0",
-    "kicker": "survival"
-  },
-  {
-    "id": "s15",
+    "id": "s62",
     "type": "character",
-    "narration": "Level one is zero — or less. And this isn't a small club. A huge share of American households sit near zero or are actually underwater, owing more than they own, thanks to student loans, car loans, and credit cards. Even plenty of six-figure earners live right here.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "creditcard",
-        "label": "owe more than you own"
-      },
-      {
-        "name": "gradcap",
-        "label": "student loans"
-      },
-      {
-        "name": "car",
-        "label": "car loans"
-      }
-    ]
-  },
-  {
-    "id": "s16",
-    "type": "character",
-    "narration": "At this level, money means one thing only: survival. Every single dollar is already spoken for before it arrives. There's no buffer, no cushion — you are exactly one broken-down car or one surprise bill away from a genuine crisis.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "grocerybag",
-        "label": "every dollar spoken for"
-      },
-      {
-        "name": "warning",
-        "label": "no cushion at all"
-      },
-      {
-        "name": "car",
-        "label": "one bill from crisis"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "And level one is stickier than it looks. When you're near zero, every raise gets instantly swallowed — a higher rent, a newer car, a bit more stuff. Lifestyle rises to eat the income. Escaping the bottom is less about earning more, and far more about the brutal discipline of keeping some.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "paystub",
-        "label": "every raise vanishes"
-      },
-      {
-        "name": "car",
-        "label": "lifestyle eats it"
-      },
-      {
-        "name": "scissors",
-        "label": "keep some, ruthlessly"
-      }
-    ]
-  },
-  {
-    "id": "s17",
-    "type": "character",
-    "narration": "The cruel trap of level one is that debt runs the two-phase rule in reverse. Here, money works against you — interest compounding on your credit cards while you sleep. The first job of the climb isn't to get rich. It's just to claw your way back up to zero.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "ballchain",
-        "label": "money works against you"
-      },
-      {
-        "name": "percent",
-        "label": "interest while you sleep"
-      },
-      {
-        "name": "ladder",
-        "label": "first, just reach zero"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "title",
-    "narration": "Climb one rung, add a zero, and the air already feels different.",
-    "heading": "Level 2 — $10,000",
-    "kicker": "stability"
-  },
-  {
-    "id": "s19",
-    "type": "character",
-    "narration": "Ten thousand dollars is your first real emergency fund, and psychologically it's enormous. For the first time, a flat tire or a medical bill is an annoyance, not a catastrophe. You've bought yourself the single most valuable thing money offers early on: a good night's sleep.",
+    "narration": "So never compare your number to someone a decade older. Of course a fifty-five-year-old has more than you — they've had twenty extra years on the curve. The only fair comparisons are to people exactly your age, and to your own self, last year.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "first emergency fund"
+        "name": "birthdaycake",
+        "label": "same age only"
       },
       {
-        "name": "shield",
-        "label": "a real cushion"
-      },
-      {
-        "name": "house",
-        "label": "you can finally sleep"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "narration": "At this level, money becomes stability — breathing room. You can take a slightly riskier, better job. You can say no to a bad deal. That small cushion quietly starts giving you something you never had before: a few choices.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "take a better job"
-      },
-      {
-        "name": "handshake",
-        "label": "say no to bad deals"
+        "name": "calendar",
+        "label": "+ your past self"
       },
       {
         "name": "scale",
-        "label": "a few real choices"
+        "label": "a fair comparison"
       }
     ]
   },
   {
-    "id": "s21",
+    "id": "s13",
     "type": "chart",
     "chartType": "bar",
     "title": "Median net worth by age ($ thousands)",
     "unit": "$K",
-    "narration": "And where you sit depends a lot on age. The Fed's data shows the typical household under thirty-five is worth around thirty-nine thousand dollars. By the mid-forties it's about a hundred and thirty-five thousand. Wealth, for most people, is a slow climb stacked over decades.",
+    "narration": "Here's the whole hump in real Fed numbers. Thirty-nine thousand under thirty-five. A hundred thirty-five thousand in your late thirties and early forties. Two hundred forty-seven thousand in your late forties. Three hundred sixty-five thousand approaching retirement, peaking near four hundred ten thousand in your late sixties.",
     "data": [
       {
         "label": "<35",
@@ -322,7 +170,7 @@
       },
       {
         "label": "55-64",
-        "value": 364
+        "value": 365
       },
       {
         "label": "65-74",
@@ -332,511 +180,641 @@
     "highlight": 4
   },
   {
-    "id": "s54",
+    "id": "s50",
     "type": "character",
-    "narration": "Notice what's really doing the work in that age chart: time. A twenty-five-year-old who invests a little every month can quietly coast past a fifty-year-old who started late — without ever earning a bigger paycheck. On this ladder, starting early beats starting rich.",
+    "narration": "And here's what hides inside these numbers: for the typical family, the bulk of that net worth isn't a brokerage account — it's home equity. Their house, slowly paid down over decades, is the single biggest brick in the pile. Which is why owning where you live is still the default road to middle-class wealth.",
     "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "time does the work"
+        "name": "house",
+        "label": "mostly home equity"
       },
       {
-        "name": "calendar",
-        "label": "start early"
+        "name": "mortgage",
+        "label": "slowly paid down"
       },
       {
-        "name": "chartup",
-        "label": "beats starting rich"
+        "name": "pie",
+        "label": "the biggest brick"
       }
     ]
   },
   {
-    "id": "s22",
+    "id": "s14",
     "type": "title",
-    "narration": "Now we hit the single hardest, most important jump in the entire climb.",
-    "heading": "Level 3 — $100,000",
-    "kicker": "liftoff"
+    "narration": "Let's walk up the curve, decade by decade, and see where you stand.",
+    "heading": "Your 20s & Early 30s",
+    "kicker": "under 35 — the foundation"
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "narration": "Under thirty-five, the median is thirty-nine thousand — but this group is wildly spread out. A huge share are at zero or negative, buried under student loans and car payments. If you've simply clawed your way to a positive net worth in your twenties, you are genuinely ahead of the pack.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gradcap",
+        "label": "student loans"
+      },
+      {
+        "name": "car",
+        "label": "car payments"
+      },
+      {
+        "name": "seedling",
+        "label": "positive = ahead"
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "narration": "At this age, the actual dollar amount barely matters. What matters is the habit. The twenty-five-year-old who invests two hundred dollars a month is quietly building a machine that will out-earn almost any amount of frantic catch-up later. This is the cheapest, most powerful decade you'll ever get.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "seedling",
+        "label": "plant the habit"
+      },
+      {
+        "name": "coins",
+        "label": "$200 a month"
+      },
+      {
+        "name": "moneytree",
+        "label": "a machine for later"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "callout",
+    "narration": "To see why your twenties are pure gold, look at a single dollar. One dollar invested at twenty-five can become roughly fifteen dollars by sixty-five. The same dollar invested at forty-five becomes only about four. Your young dollars aren't just dollars — they're seeds with decades to grow.",
+    "text": "$15",
+    "sub": "what $1 invested at age 25 becomes by 65",
+    "icon": "seedling"
+  },
+  {
+    "id": "s17",
+    "type": "title",
+    "narration": "Add a decade, and the picture changes fast.",
+    "heading": "Your Late 30s & 40s",
+    "kicker": "35–44 — the build"
+  },
+  {
+    "id": "s18",
+    "type": "character",
+    "narration": "From thirty-five to forty-four, the median jumps to about a hundred thirty-five thousand. This is the accumulation decade — careers peak, salaries rise, and for most people a house quietly becomes their single biggest asset. The hump officially starts climbing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "career climbing"
+      },
+      {
+        "name": "house",
+        "label": "your biggest asset"
+      },
+      {
+        "name": "chartup",
+        "label": "the hump climbs"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "character",
+    "narration": "But this is also the decade of the great squeeze. Mortgages, childcare, and keeping up with the neighbors devour the income. Plenty of people earning serious money still have a thin net worth here — because it's all flowing straight back out the door.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "house",
+        "label": "mortgage"
+      },
+      {
+        "name": "baby",
+        "label": "childcare"
+      },
+      {
+        "name": "grocerybag",
+        "label": "it all flows out"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "And not all of that debt is a disaster. A mortgage on a home that appreciates, or a loan for a skill that lifts your income, can be genuinely good debt. The real killer is the other kind — high-interest credit cards and car loans on things that only lose value. Kill those first, with a vengeance.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "house",
+        "label": "good debt: grows"
+      },
+      {
+        "name": "creditcard",
+        "label": "bad debt: shrinks you"
+      },
+      {
+        "name": "scissors",
+        "label": "kill the bad first"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "title",
+    "narration": "Now we hit the decade where the gap between people explodes.",
+    "heading": "Your 40s & 50s",
+    "kicker": "45–54 — peak earning"
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "narration": "From forty-five to fifty-four, the median hits about two hundred forty-seven thousand. These are usually your peak earning years — and the compounding you started decades ago is finally doing visible, heavy lifting. For savers, net worth can now jump by tens of thousands a year on its own.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "peak earnings"
+      },
+      {
+        "name": "moneytree",
+        "label": "compounding kicks in"
+      },
+      {
+        "name": "chartup",
+        "label": "+tens of thousands/yr"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "callout",
+    "narration": "Watch what that compounding actually does. A hundred thousand dollars invested at age forty-five, left completely alone at a normal market return, can quietly grow past three hundred thousand by the time you retire — without you adding another single cent.",
+    "text": "$300,000",
+    "sub": "$100K invested at 45, untouched, by retirement",
+    "icon": "moneytree"
+  },
+  {
+    "id": "s22",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "earn a bigger salary",
+    "memeBottom": "own assets that quietly grow while you earn the salary",
+    "narration": "And this is where the two types of people visibly split. One has a big salary and a small net worth. The other has let assets quietly compound for twenty years — and is now pulling away, fast, almost without effort."
   },
   {
     "id": "s23",
+    "type": "title",
+    "narration": "Approaching the finish line, the hump reaches its peak.",
+    "heading": "Your 50s & 60s",
+    "kicker": "55–74 — the peak"
+  },
+  {
+    "id": "s24",
     "type": "character",
-    "narration": "A hundred thousand dollars. This is the milestone that quietly changes everything — and it's brutally hard to reach, because at this stage you're building it almost entirely from your own savings. There's no momentum yet. It is all push.",
+    "narration": "From fifty-five to sixty-four, the median climbs to around three hundred sixty-five thousand, peaking near four hundred ten thousand in the late sixties. This is the top of the hump — the moment of truth, when decades of saving either add up to a comfortable retirement, or they don't.",
     "pose": "explain",
     "props": [
       {
         "name": "mountain",
-        "label": "the hardest climb"
+        "label": "top of the hump"
       },
       {
-        "name": "briefcase",
-        "label": "built from pure saving"
+        "name": "nestegg",
+        "label": "the moment of truth"
       },
       {
-        "name": "hourglass",
-        "label": "no momentum yet"
+        "name": "retiree",
+        "label": "retirement looms"
       }
     ]
   },
   {
-    "id": "s24",
-    "type": "image",
-    "src": "img/munger.jpg",
-    "label": "CHARLIE MUNGER",
-    "caption": "Warren Buffett's partner, Berkshire Hathaway",
-    "narration": "The legendary investor Charlie Munger put it bluntly. He said the first hundred thousand dollars is the hardest — a real grind — but once you have it, the game changes. Get there however you can, he advised, because that's where the magic starts."
+    "id": "s54",
+    "type": "character",
+    "narration": "Now, it's not quite as scary as it sounds, because most retirees also collect Social Security — a monthly check from the government. But for an average earner, that replaces only around forty percent of their old paycheck. It's a floor, not a hammock. Your own savings still have to do the heavy lifting.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "Social Security"
+      },
+      {
+        "name": "paystub",
+        "label": "~40% of income"
+      },
+      {
+        "name": "warning",
+        "label": "a floor, not a hammock"
+      }
+    ]
   },
   {
     "id": "s25",
     "type": "screenshot",
-    "narration": "That magic is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Once you have a hundred grand invested, it can start throwing off thousands of dollars a year, entirely on its own.",
-    "sourceId": "wiki-compound"
+    "narration": "After this, net worth usually falls — because retirement is, by definition, the withdrawal from one's active working life. You stop earning and start spending down the pile you spent forty years building.",
+    "sourceId": "wiki-retirement"
   },
   {
     "id": "s26",
     "type": "character",
-    "narration": "This is where phase two is finally born. A hundred thousand dollars invested at a normal market return quietly earns several thousand a year — without you lifting a finger. For the first time, the snowball starts to roll on its own, even if it's still small.",
+    "narration": "And here's the sobering part: for most households, that peak of around four hundred thousand dollars is dangerously thin for a thirty-year retirement. A huge slice of Americans arrive at sixty-five with far too little — which is exactly why knowing these numbers early matters so much.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
         "name": "nestegg",
-        "label": "$100K invested"
+        "label": "~$400K is thin"
       },
       {
-        "name": "moneytree",
-        "label": "earns on its own"
+        "name": "hourglass",
+        "label": "30-year retirement"
       },
       {
-        "name": "chartup",
-        "label": "the snowball rolls"
+        "name": "warning",
+        "label": "most arrive short"
       }
     ]
   },
   {
     "id": "s55",
     "type": "callout",
-    "narration": "To see why a hundred thousand is the magic number, watch it work. Left alone at a typical market return, it roughly doubles every decade. So a hundred grand quietly becomes two hundred, then four hundred, then eight hundred thousand — while you do absolutely nothing.",
-    "text": "$800,000",
-    "sub": "what $100K can become in ~30 years, untouched",
-    "icon": "moneytree"
+    "narration": "Run the famous four-percent rule on that peak. A four-hundred-thousand-dollar nest egg safely throws off only about sixteen thousand dollars a year. Add Social Security on top and it's survivable — but it is nobody's dream retirement.",
+    "text": "$16,000",
+    "sub": "a year from a $400K nest egg (the 4% rule)",
+    "icon": "nestegg"
   },
   {
     "id": "s27",
     "type": "title",
-    "narration": "Add one more zero, and you reach the number everyone dreams about.",
-    "heading": "Level 4 — $1,000,000",
-    "kicker": "security"
+    "narration": "So you've seen the medians. But a median only tells you the middle. How do you actually rank?",
+    "heading": "Where Do You Rank?",
+    "kicker": "the percentile game"
   },
   {
     "id": "s28",
-    "type": "screenshot",
-    "narration": "A million dollars makes you, by the classic definition, a high-net-worth individual — someone whose assets are valued at over one million US dollars. The word that's followed that number for a century: millionaire.",
-    "sourceId": "wiki-hnwi"
-  },
-  {
-    "id": "s29",
-    "type": "character",
-    "narration": "But here's the reality check. A million dollars today is not the private-jet fortune the movies promised. It's roughly what a careful saver needs just to retire comfortably. It puts you in the top ten percent or so of US households — genuinely well-off, but not the yacht life.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "retiree",
-        "label": "enough to retire"
-      },
-      {
-        "name": "pie",
-        "label": "top ~10% of US"
-      },
-      {
-        "name": "yacht",
-        "label": "…but no yacht yet"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "At a million, money means security. Using the rough four-percent rule, that pile can safely throw off around forty thousand dollars a year, basically forever. That's not quit-everything money for most — but for the first time, work is starting to become optional.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "nestegg",
-        "label": "~$40K a year, forever"
-      },
-      {
-        "name": "percent",
-        "label": "the 4% rule"
-      },
-      {
-        "name": "umbrella",
-        "label": "work becomes optional"
-      }
-    ]
+    "type": "stage",
+    "narration": "Think of everyone your age lined up from poorest to richest. The median is the person dead center — the fiftieth percentile. If you've got double the median for your age, you're knocking on the top twenty-five percent. Hit roughly five times the median, and you're brushing the top ten.",
+    "motif": "rankmeter",
+    "caption": "where do you rank, for your age?"
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "But be warned: a million dollars isn't the finish line it used to be. Fifty years ago, it was true, jaw-dropping wealth. Today, after decades of inflation, it's a comfortable retirement — not a mansion and a yacht. The number stayed famous, but its buying power quietly shrank.",
+    "narration": "And if you're wondering what truly elite looks like: the top one percent threshold climbs with age too. For younger households it's a couple of million. By your sixties, cracking the top one percent takes well over ten million dollars. The ceiling rises just as fast as the floor.",
     "pose": "explain",
     "props": [
       {
-        "name": "mansion",
-        "label": "not a mansion"
-      },
-      {
-        "name": "grocerybag",
-        "label": "inflation shrank it"
-      },
-      {
-        "name": "retiree",
-        "label": "a comfy retirement"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "title",
-    "narration": "But a million isn't the top. Not even close. Add a zero.",
-    "heading": "Level 5 — $10,000,000",
-    "kicker": "freedom"
-  },
-  {
-    "id": "s32",
-    "type": "character",
-    "narration": "Ten million dollars is where you cross into genuinely rich — and into the top one percent of American households. At this level, the math completely flips. Your money now earns dramatically more than you ever could from a job.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "genuinely rich"
-      },
-      {
-        "name": "pie",
+        "name": "crown",
         "label": "the top 1%"
       },
       {
+        "name": "mountain",
+        "label": "rises with age"
+      },
+      {
         "name": "chartup",
-        "label": "money out-earns you"
+        "label": "$10M+ by your 60s"
       }
     ]
   },
   {
-    "id": "s33",
-    "type": "character",
-    "narration": "Here, that same four-percent rule throws off around four hundred thousand dollars a year — far more than almost any salary. You have officially, permanently crossed the crossover line. You never have to work again, and your wealth still grows while you sleep.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "nestegg",
-        "label": "~$400K a year"
-      },
-      {
-        "name": "mansion",
-        "label": "work truly optional"
-      },
-      {
-        "name": "moneytree",
-        "label": "grows while you sleep"
-      }
-    ]
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "And here's a key truth about the upper levels: almost nobody salaries their way to ten million. They get there by owning — equity in a business, a growing stake, real estate. Past a certain point, real wealth is built by owning things, not by being paid for your time.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "officetower",
-        "label": "own a business"
-      },
-      {
-        "name": "pie",
-        "label": "own equity"
-      },
-      {
-        "name": "house",
-        "label": "own real estate"
-      }
-    ]
-  },
-  {
-    "id": "s34",
+    "id": "s29",
     "type": "chart",
     "chartType": "bar",
-    "title": "Net worth to reach each tier ($ thousands)",
+    "title": "Median vs. average net worth by age ($K)",
     "unit": "$K",
-    "narration": "Look at how the thresholds explode. The median household is worth about a hundred ninety-three thousand. To crack the top ten percent takes nearly two million. And to enter the top one percent, you need somewhere north of eleven million dollars.",
+    "narration": "And watch the gap between the median and the average balloon with age. Under thirty-five, the average is around a hundred eighty-four thousand versus a median of thirty-nine. By your late fifties, the average rockets past one and a half million — while the median sits near three hundred sixty-five thousand. The rich pull away harder every decade.",
     "data": [
       {
-        "label": "median",
-        "value": 193
+        "label": "<35 avg",
+        "value": 184
       },
       {
-        "label": "top 10%",
-        "value": 1900
+        "label": "45-54 avg",
+        "value": 976
       },
       {
-        "label": "top 1%",
-        "value": 11600
+        "label": "55-64 avg",
+        "value": 1567
       }
     ],
     "highlight": 2
   },
   {
-    "id": "s35",
+    "id": "s30",
     "type": "title",
-    "narration": "And then there's the final level — a place that barely feels like money anymore.",
-    "heading": "Level 6 — $100,000,000",
-    "kicker": "power"
+    "narration": "Chasing a percentile can feel hopeless. So here's a far better target.",
+    "heading": "A Cleaner Target",
+    "kicker": "multiples of your salary"
   },
   {
-    "id": "s36",
+    "id": "s31",
+    "type": "stage",
+    "narration": "Instead of a raw dollar amount, aim for a multiple of your own salary. A popular benchmark says: have one times your salary saved by thirty, three times by forty, six times by fifty, eight times by sixty, and ten times by sixty-seven. It scales to your life, not a stranger's.",
+    "motif": "salarymultiple",
+    "caption": "a cleaner target: multiples of your salary"
+  },
+  {
+    "id": "s32",
     "type": "character",
-    "narration": "A hundred million dollars. At this level, there are fewer than ten thousand people in the entire United States. You could never spend it on yourself in ten lifetimes. So it stops being about lifestyle completely — and becomes about something else entirely: power.",
+    "narration": "This is so much fairer than a flat number. Someone earning fifty thousand and someone earning two hundred thousand need wildly different piles to retire. The multiple adjusts automatically — it asks not 'are you rich?' but 'are you on track for your own life?'",
     "pose": "explain",
     "props": [
       {
-        "name": "crown",
-        "label": "<10,000 in the US"
+        "name": "scale",
+        "label": "scales to you"
       },
       {
-        "name": "mansion",
-        "label": "unspendable on yourself"
+        "name": "paystub",
+        "label": "based on your salary"
       },
       {
-        "name": "chessking",
-        "label": "it becomes power"
+        "name": "calculator",
+        "label": "are YOU on track?"
       }
     ]
   },
   {
-    "id": "s37",
-    "type": "image",
-    "src": "img/rockefeller.jpg",
-    "label": "JOHN D. ROCKEFELLER",
-    "caption": "America's first billionaire (1916)",
-    "narration": "This is the realm John D. Rockefeller entered when he became America's first billionaire. At this altitude, money is no longer a tool for buying things. It's a tool for buying influence — companies, media, politicians, and the fate of whole industries.",
-    "circle": true
+    "id": "s57",
+    "type": "callout",
+    "narration": "Make it concrete. If you earn sixty thousand dollars a year, your targets are simple: sixty thousand saved by thirty, a hundred eighty thousand by forty, three hundred sixty thousand by fifty. Suddenly the vague question 'where should I be?' has a real, personal answer.",
+    "text": "$180,000",
+    "sub": "3× a $60K salary — your target by 40",
+    "icon": "paystub"
   },
   {
-    "id": "s38",
+    "id": "s33",
+    "type": "title",
+    "narration": "But there's an elephant in the room. Why does it feel so much harder than it did for your parents?",
+    "heading": "The Generation Gap",
+    "kicker": "it's not just you"
+  },
+  {
+    "id": "s34",
     "type": "character",
-    "narration": "At a hundred million, you don't invest in companies — you own them. You don't worry about retirement — you build dynasties. Your money now shapes the very levels the rest of us are climbing. It's a different universe, with different rules entirely.",
+    "narration": "Because it genuinely is harder. Compared to earlier generations at the same age, younger people today face far pricier homes, mountains of student debt, and wages that haven't kept pace. Feeling behind isn't always a personal failing — sometimes the track itself got steeper.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "officetower",
-        "label": "you own the companies"
+        "name": "house",
+        "label": "pricier homes"
       },
       {
-        "name": "moneytree",
-        "label": "you build dynasties"
+        "name": "gradcap",
+        "label": "more student debt"
       },
       {
-        "name": "globe",
-        "label": "a different universe"
+        "name": "turtle",
+        "label": "wages lag"
       }
     ]
+  },
+  {
+    "id": "s35",
+    "type": "stage",
+    "narration": "And the wealth itself is lopsided by generation. Baby boomers alone hold roughly half of all the wealth in the country. Gen X holds a chunk, Millennials a sliver, and Gen Z barely a rounding error — and that gap is wider than age alone can explain.",
+    "motif": "generationgap",
+    "caption": "share of US wealth, by generation"
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "At the very top, the goal quietly shifts to permanence. Structured right, a hundred-million-dollar fortune can fund a family for generations — never fully spent, just endlessly compounding. This is exactly how a handful of families manage to stay wealthy for a century or more.",
+    "narration": "And dig into the why, and it's not avocado toast. Since the eighties, home prices have far outrun wages, the cost of college exploded, and secure pensions quietly vanished. Younger generations are running the very same race — on a track that genuinely got steeper and more expensive.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "house",
+        "label": "homes outran wages"
+      },
+      {
+        "name": "gradcap",
+        "label": "college exploded"
+      },
+      {
+        "name": "hourglass",
+        "label": "pensions vanished"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "screenshot",
+    "narration": "Who are the boomers hogging all of it? The demographic cohort of people born from 1946 to 1964 — the huge generation that bought homes cheap, rode decades of rising markets, and now sits on most of the nation's assets.",
+    "sourceId": "wiki-boomers"
+  },
+  {
+    "id": "s37",
+    "type": "screenshot",
+    "narration": "This isn't your imagination, either. Wealth inequality has substantially increased in the United States since the late 1980s — the top has pulled away from everyone else, and the young are furthest from the top.",
+    "sourceId": "wiki-inequality"
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "narration": "There is one twist on the horizon. As the boomers age, tens of trillions of dollars are set to pass down — the biggest wealth transfer in history. Some younger people will inherit a fortune. Most won't — which makes quietly building your own, from scratch, matter more than ever.",
     "pose": "explain",
     "props": [
       {
         "name": "moneytree",
-        "label": "funds generations"
+        "label": "the great wealth transfer"
       },
       {
         "name": "couple",
-        "label": "a family dynasty"
+        "label": "trillions passed down"
       },
       {
-        "name": "crown",
-        "label": "wealth that never dies"
+        "name": "warning",
+        "label": "most won't inherit"
       }
     ]
   },
   {
+    "id": "s38",
+    "type": "title",
+    "narration": "So if the track is steeper and the numbers are daunting, what actually works?",
+    "heading": "The One Real Lever",
+    "kicker": "time beats everything"
+  },
+  {
     "id": "s39",
-    "type": "stage",
-    "narration": "Step back and look at all six levels on one line, and the cruelest trick of the climb appears. Each jump is the same single step on our staircase — but in real dollars, each one is ten times bigger than the last. The leap from one to ten million is a hundred times the leap from zero to a hundred thousand.",
-    "motif": "levelgaps",
-    "caption": "each level is 10× the last"
+    "type": "screenshot",
+    "narration": "The answer is the quiet engine behind every one of these numbers: compound interest — interest accumulated on a principal sum and on previously accumulated interest. It rewards one thing above all else: time in the market.",
+    "sourceId": "wiki-compound"
   },
   {
     "id": "s40",
     "type": "stage",
-    "narration": "And this is who ends up where. In America, the bottom half of households together hold just a few percent of all the wealth. The top ten percent hold most of it, and the top one percent alone own roughly a third of everything.",
-    "motif": "wealthpyramid",
-    "caption": "who owns what in America"
-  },
-  {
-    "id": "s41",
-    "type": "screenshot",
-    "narration": "This gap isn't your imagination. Wealth inequality has substantially increased in the United States since the late 1980s — the top levels have pulled away from everyone below them, faster and faster.",
-    "sourceId": "wiki-inequality"
-  },
-  {
-    "id": "s42",
-    "type": "title",
-    "narration": "So what do you actually do with all this? Here's the part that matters for you.",
-    "heading": "The Real Lesson",
-    "kicker": "aim at the line, not the number"
-  },
-  {
-    "id": "s43",
-    "type": "stage",
-    "narration": "Here's how the levels really feel. At ten thousand, money is survival — rent and groceries covered. At a million, it's security — work becomes optional. At a hundred million, it's power — you move markets and families. Same word, three completely different meanings.",
-    "motif": "richworlds",
-    "caption": "money means something new at each level"
-  },
-  {
-    "id": "s44",
-    "type": "screenshot",
-    "narration": "But notice the real finish line isn't a specific dollar amount. It's financial independence — having enough resources to cover your living costs without depending on active employment. That line is different for everyone.",
-    "sourceId": "wiki-fi"
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "This is the liberating part. You don't actually need a hundred million dollars. You need the number where your investments quietly cover your life. For a modest spender, that crossover can arrive at one or two million — a fraction of the top of the ladder.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "nestegg",
-        "label": "cover your life"
-      },
-      {
-        "name": "house",
-        "label": "spend modestly"
-      },
-      {
-        "name": "umbrella",
-        "label": "freedom, far below the top"
-      }
-    ]
+    "narration": "Look at what a ten-year head start does. Someone who starts saving at twenty-five, versus someone who starts the exact same amount at thirty-five, can end up with nearly double the money by sixty-five. Same effort — the early starter just gave compounding an extra decade to work.",
+    "motif": "startearly",
+    "caption": "the one asset you can't buy back: time"
   },
   {
     "id": "s59",
     "type": "callout",
-    "narration": "There's even a quick rule of thumb for your own crossover. Take your annual spending, and multiply it by twenty-five. That rough pile is what your investments need to be worth to cover your life, essentially forever. That's your real finish line.",
-    "text": "× 25",
-    "sub": "your yearly spending = your freedom number",
-    "icon": "nestegg"
+    "narration": "Put a price tag on procrastination. Delaying your investing by just ten years can cost you hundreds of thousands of dollars by retirement — not because you invested any less, but purely because you gave that money less time. Waiting is quietly the most expensive thing you can do.",
+    "text": "$400,000",
+    "sub": "the price of waiting 10 years to start",
+    "icon": "hourglass"
   },
   {
-    "id": "s46",
+    "id": "s41",
+    "type": "image",
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "wait until I earn more to start investing",
+    "memeBottom": "lose the one thing money can't buy back — a decade",
+    "narration": "This is why 'I'll start investing once I earn more' is the most expensive sentence in personal finance. The dollars you invest in your twenties are worth far more than the dollars you'll invest in your forties — because they get decades more to grow."
+  },
+  {
+    "id": "s42",
+    "type": "title",
+    "narration": "So let's turn all of this into what you should actually do tomorrow morning.",
+    "heading": "What To Do",
+    "kicker": "beat your past self"
+  },
+  {
+    "id": "s43",
     "type": "character",
-    "narration": "So focus relentlessly on two things. First, grind out that brutal first hundred thousand, however you can — because that's where your money finally starts working for you. Second, keep your spending low, so your crossover line stays within reach.",
+    "narration": "First, stop comparing yourself to other people and other ages. The only scoreboard that matters is you, last year. Is your net worth higher than it was twelve months ago? Then you won. That's the entire game, repeated.",
     "pose": "present",
     "props": [
       {
-        "name": "mountain",
-        "label": "grind the first $100K"
+        "name": "calendar",
+        "label": "beat last year"
       },
       {
-        "name": "piggybank",
-        "label": "keep spending low"
+        "name": "chartup",
+        "label": "higher than before?"
       },
       {
-        "name": "nestegg",
-        "label": "reach your crossover"
-      }
-    ]
-  },
-  {
-    "id": "s47",
-    "type": "compare",
-    "narration": "Because that's the whole secret the levels reveal. One person earns three hundred grand and spends all of it, trapped forever in phase one. Another earns far less, but owns assets that cover their life — and is quietly, permanently free.",
-    "left": {
-      "title": "High income, no assets",
-      "value": "trapped in phase one",
-      "icon": "ballchain"
-    },
-    "right": {
-      "title": "Assets cover your life",
-      "value": "quietly free",
-      "icon": "nestegg"
-    }
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "Your net worth isn't a scoreboard for showing off. It's a measure of one thing: how much of your own time you've bought back. Every level up the ladder is really just more freedom, more choices, and more of your life that belongs to you.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "clock",
-        "label": "time bought back"
-      },
-      {
-        "name": "scale",
-        "label": "freedom and choices"
-      },
-      {
-        "name": "mountain",
-        "label": "your life, your own"
+        "name": "trophy",
+        "label": "then you won"
       }
     ]
   },
   {
     "id": "s60",
     "type": "character",
-    "narration": "And here's the strangest truth on the whole ladder. The jump from survival to security transforms your life. But the jump from rich to ultra-rich barely touches your daily happiness at all. Past the level marked 'enough,' you're mostly just climbing for the scoreboard.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "survival→security: huge"
-      },
-      {
-        "name": "yacht",
-        "label": "rich→ultra: tiny"
-      },
-      {
-        "name": "scale",
-        "label": "find your 'enough'"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "So wherever you are on this ladder right now — even if you're below zero — the next level is always the same simple move. Own a little more than you did last year. Owe a little less. Let the crossover creep closer. That's the entire game, from zero to a hundred million.",
+    "narration": "So actually measure it. Once a year, on your birthday, add up everything you own, subtract everything you owe, and write that one number down. That single habit — just watching the line move — quietly turns vague money anxiety into a plan you can actually win.",
     "pose": "present",
     "props": [
       {
-        "name": "ladder",
-        "label": "own more, owe less"
+        "name": "birthdaycake",
+        "label": "once a year"
       },
       {
-        "name": "nestegg",
-        "label": "crossover creeps closer"
+        "name": "calculator",
+        "label": "own minus owe"
       },
       {
-        "name": "mountain",
-        "label": "$0 to $100M"
+        "name": "ledger",
+        "label": "write it down"
       }
     ]
   },
   {
-    "id": "s50",
+    "id": "s44",
     "type": "character",
-    "narration": "If you want to know exactly which level you're on and how to reach the next one, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "Second, aim for the salary multiples, not the headlines. One times your salary by thirty, three times by forty. They're concrete, personal, and completely achievable on an ordinary income — if you start, and you stay consistent.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "hit the multiples"
+      },
+      {
+        "name": "piggybank",
+        "label": "on an ordinary income"
+      },
+      {
+        "name": "scale",
+        "label": "concrete & personal"
+      }
+    ]
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "Third, and most important: start now, whatever your age. The best time to plant the tree was twenty years ago. The second best time is this afternoon. Every single day you wait hands a little more of your future wealth to the person who didn't.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "seedling",
+        "label": "plant it today"
+      },
+      {
+        "name": "clock",
+        "label": "every day counts"
+      },
+      {
+        "name": "moneytree",
+        "label": "your future self wins"
+      }
+    ]
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "narration": "And if you're in your fifties and feel hopelessly behind — you're not. The tax system actually rewards you with bigger catch-up contributions after fifty. A determined decade of aggressive saving can still rescue a retirement. The one truly fatal move is deciding it's too late and giving up.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "retiree",
+        "label": "50 and behind?"
+      },
+      {
+        "name": "piggybank",
+        "label": "bigger catch-up limits"
+      },
+      {
+        "name": "seedling",
+        "label": "still not too late"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "Because here's the truth hiding under all these charts. Your net worth by age isn't really a test you pass or fail. It's a trajectory. And the only question that actually matters is whether that line, however low it starts, is pointed up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "it's a trajectory"
+      },
+      {
+        "name": "mountain",
+        "label": "is the line pointed up?"
+      },
+      {
+        "name": "seedling",
+        "label": "that's all that counts"
+      }
+    ]
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "narration": "If this helped you figure out exactly where you stand, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "mountain",
+        "name": "birthdaycake",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s51",
+    "id": "s48",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

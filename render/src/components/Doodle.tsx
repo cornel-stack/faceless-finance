@@ -93,6 +93,8 @@ export type DoodleName =
   | "decree" | "brokennote"
   // EP051 (your money at every level) additions:
   | "mountain" | "nestegg"
+  // EP052 (net worth by age) additions:
+  | "birthdaycake" | "seedling"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1737,6 +1739,30 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={44} y1={44} x2={40} y2={50} strokeWidth={1.4} />
           <RLine x1={24} y1={62} x2={16} y2={60} strokeWidth={1.4} />
           <RLine x1={76} y1={62} x2={84} y2={60} strokeWidth={1.4} />
+        </>
+      );
+    case "birthdaycake":
+      // A birthday cake with candles — age / milestones.
+      return (
+        <>
+          <RRect x={22} y={52} w={56} h={34} fill={PINK} strokeWidth={SW} />
+          <RPath d="M22 62 Q35 70 48 62 Q61 54 78 62" fill="none" strokeWidth={1.8} />
+          <RLine x1={36} y1={52} x2={36} y2={38} strokeWidth={SW} />
+          <RLine x1={50} y1={52} x2={50} y2={36} strokeWidth={SW} />
+          <RLine x1={64} y1={52} x2={64} y2={38} strokeWidth={SW} />
+          <RCircle cx={36} cy={34} d={7} fill={GOLD} strokeWidth={1.4} />
+          <RCircle cx={50} cy={32} d={7} fill={GOLD} strokeWidth={1.4} />
+          <RCircle cx={64} cy={34} d={7} fill={GOLD} strokeWidth={1.4} />
+        </>
+      );
+    case "seedling":
+      // A sprouting seedling — start early, let it grow.
+      return (
+        <>
+          <RPath d="M38 86 Q50 70 62 86" fill={TAN} strokeWidth={SW} />
+          <RLine x1={50} y1={84} x2={50} y2={40} strokeWidth={SW} />
+          <RPath d="M50 54 Q32 48 28 32 Q46 34 50 54 Z" fill={GREEN} strokeWidth={1.8} />
+          <RPath d="M50 48 Q68 42 72 26 Q54 28 50 48 Z" fill={GREEN} strokeWidth={1.8} />
         </>
       );
   }

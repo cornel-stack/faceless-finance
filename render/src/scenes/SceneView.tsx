@@ -3753,6 +3753,144 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">money means something new at each level</text>
       </svg>
     );
+  } else if (m === "agecurve") {
+    // The life-cycle hump: net worth rises with age, peaks near retirement, then dips.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const pts: [number, number][] = [[120, 430], [270, 400], [430, 320], [600, 220], [760, 180], [880, 250]];
+    const totalLen = pts.length - 1;
+    const segs = pts.slice(1).map(([x, y], i) => {
+      const [px, py] = pts[i];
+      const segStart = i / totalLen, segEnd = (i + 1) / totalLen;
+      const t = interpolate(draw, [segStart, segEnd], [0, 1], clampBoth);
+      return `L${px + (x - px) * t} ${py + (y - py) * t}`;
+    });
+    const ages = ["<35", "35-44", "45-54", "55-64", "65-74", "75+"];
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={100} y1={450} x2={VW - 60} y2={450} stroke={ink} strokeWidth={3} />
+        <RLine x1={100} y1={140} x2={100} y2={450} stroke={ink} strokeWidth={3} />
+        <text x={70} y={150} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>net worth</text>
+        <path d={`M120 430 ${segs.join(" ")}`} fill="none" stroke={green} strokeWidth={6} strokeLinecap="round" />
+        {pts.map(([x], i) => <text key={i} x={x} y={478} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{ages[i]}</text>)}
+        {draw > 0.82 && <text x={760} y={158} fontSize={16} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>peak, then drawdown</text>}
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">wealth is a life-cycle hump</text>
+      </svg>
+    );
+  } else if (m === "rankmeter") {
+    // A percentile ranking bar: where do you land for your age?
+    const slide = interpolate(frame, [fps * 0.6, fps * 2.0], [0, 1], clampBoth);
+    const youX = 180 + 560 * slide;
+    const marks: [number, string][] = [[180, "bottom"], [460, "median\n(50th)"], [740, "top 10%"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <defs>
+          <linearGradient id="rankgrad" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stopColor="#efe9da" />
+            <stop offset="1" stopColor={green} />
+          </linearGradient>
+        </defs>
+        <rect x={180} y={280} width={560} height={46} rx={23} fill="url(#rankgrad)" stroke={ink} strokeWidth={4} />
+        {marks.map(([x, lab], i) => (
+          <g key={i}>
+            <line x1={x} y1={326} x2={x} y2={352} stroke={ink} strokeWidth={3} />
+            {lab.split("\n").map((ln, k) => <text key={k} x={x} y={374 + k * 18} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{ln}</text>)}
+          </g>
+        ))}
+        <g transform={`translate(${youX} 250)`}>
+          <path d="M0 24 L-14 0 L14 0 Z" fill={red} stroke={ink} strokeWidth={3} />
+          <text y={-10} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">YOU?</text>
+        </g>
+        <text x={VW / 2} y={100} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where do you rank, for your age?</text>
+      </svg>
+    );
+  } else if (m === "medianvsmean") {
+    // A seesaw: the median person vs the mean, dragged up by a few huge fortunes.
+    const tip = interpolate(frame, [fps * 0.8, fps * 2.2], [0, 10], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">why the "average" lies</text>
+        <g transform="translate(260 300)">
+          <circle r={56} fill={green} stroke={ink} strokeWidth={5} />
+          <text y={-4} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>median</text>
+          <text y={20} fontSize={16} fontWeight={900} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>$39K</text>
+          <text y={100} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the typical person</text>
+        </g>
+        <g transform="translate(720 300)">
+          <circle r={56} fill={gold} stroke={ink} strokeWidth={5} />
+          <text y={-4} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>mean</text>
+          <text y={20} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>$184K</text>
+          <text y={100} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>dragged up by the rich</text>
+        </g>
+        <g transform={`translate(880 ${180 - tip * 3})`} opacity={interpolate(tip, [2, 6], [0, 1], clampBoth)}>
+          <circle r={30} fill={red} stroke={ink} strokeWidth={4} />
+          <text y={6} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>$10M+</text>
+        </g>
+        <path d={`M770 250 Q840 ${210 - tip * 2} 870 ${200 - tip * 2}`} fill="none" stroke={red} strokeWidth={3} strokeDasharray="5 5" opacity={interpolate(tip, [2, 6], [0, 1], clampBoth)} />
+      </svg>
+    );
+  } else if (m === "salarymultiple") {
+    // Fidelity-style milestones: multiples of salary saved by each age.
+    const mults: [string, string, number][] = [["30", "1×", 0], ["40", "3×", 1], ["50", "6×", 2], ["60", "8×", 3], ["67", "10×", 4]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={66} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a cleaner target: multiples of your salary</text>
+        <RLine x1={90} y1={450} x2={VW - 60} y2={450} stroke={ink} strokeWidth={3} />
+        {mults.map(([age, mult, i]) => {
+          const x = 140 + (i as number) * 170;
+          const h = 55 + (i as number) * 70;
+          const op = interpolate(climb, [(i as number) * 0.16, (i as number) * 0.16 + 0.22], [0, 1], clampBoth);
+          return (
+            <g key={i as number} opacity={op}>
+              <rect x={x} y={450 - h} width={120} height={h} rx={6} fill={[parch, tan, "#cfe3d4", green, gold][i as number]} stroke={ink} strokeWidth={4} />
+              <text x={x + 60} y={450 - h - 32} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{mult as string}</text>
+              <text x={x + 60} y={450 - h - 10} fontSize={15} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>salary</text>
+              <text x={x + 60} y={474} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>by {age as string}</text>
+            </g>
+          );
+        })}
+      </svg>
+    );
+  } else if (m === "generationgap") {
+    // Boomers hold a huge pile; younger generations a small one at the same age.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    const gens: [string, number, string][] = [["Boomers", 260, gold], ["Gen X", 150, green], ["Millennials", 70, blue], ["Gen Z", 28, tan]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={66} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">share of US wealth, by generation</text>
+        <RLine x1={120} y1={450} x2={VW - 90} y2={450} stroke={ink} strokeWidth={3} />
+        {gens.map(([lab, h, col], i) => {
+          const x = 170 + i * 180;
+          const hh = (h as number) * grow;
+          return (
+            <g key={i}>
+              <rect x={x} y={450 - hh} width={120} height={hh} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text x={x + 60} y={450 - hh - 12} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab as string}</text>
+              <text x={x + 60} y={474} fontSize={14} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{["~51%", "~26%", "~10%", "~3%"][i]}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={500} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the young hold a sliver — even adjusting for age</text>
+      </svg>
+    );
+  } else if (m === "startearly") {
+    // Two savers: start at 25 vs 35 — the early starter ends far ahead by 65.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const early = Math.round(900 * Math.pow(grow, 1.6));
+    const late = Math.round(380 * Math.pow(grow, 1.6));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={66} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the one asset you can't buy back: time</text>
+        <RLine x1={100} y1={440} x2={VW - 60} y2={440} stroke={ink} strokeWidth={3} />
+        <path d={`M140 440 Q500 ${440 - 260 * grow} 860 ${440 - 300 * grow}`} fill="none" stroke={green} strokeWidth={6} />
+        <path d={`M300 440 Q580 ${440 - 90 * grow} 860 ${440 - 130 * grow}`} fill="none" stroke={blue} strokeWidth={6} />
+        <text x={150} y={430} fontSize={15} fontWeight={800} fill={green} fontFamily={sans}>starts at 25</text>
+        <text x={310} y={430} fontSize={15} fontWeight={800} fill={blue} fontFamily={sans}>starts at 35</text>
+        <g transform={`translate(880 ${440 - 300 * grow})`}><text fontSize={18} fontWeight={900} fill={green} textAnchor="end" fontFamily="Georgia, serif">${early}K</text></g>
+        <g transform={`translate(880 ${440 - 130 * grow})`}><text fontSize={18} fontWeight={900} fill={blue} textAnchor="end" fontFamily="Georgia, serif">${late}K</text></g>
+        <text x={VW / 2} y={496} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a 10-year head start can double your finish</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

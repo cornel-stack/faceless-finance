@@ -166,7 +166,9 @@ export interface StageScene extends Base {
     // EP050 (why fiat money has value) additions:
     | "fiatdecree" | "taxdemand" | "moneyjobs" | "sharedbelief" | "goldcut" | "confidencecollapse"
     // EP051 (your money at every level) additions:
-    | "networthladder" | "moneycrossover" | "wealthpyramid" | "levelgaps" | "twophases" | "richworlds";
+    | "networthladder" | "moneycrossover" | "wealthpyramid" | "levelgaps" | "twophases" | "richworlds"
+    // EP052 (net worth by age) additions:
+    | "agecurve" | "rankmeter" | "medianvsmean" | "salarymultiple" | "generationgap" | "startearly";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
