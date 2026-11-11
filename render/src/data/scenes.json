@@ -2,907 +2,881 @@
   {
     "id": "s1",
     "type": "stage",
-    "narration": "Here's something strange. One of these funds charges you almost nothing. Another charges two percent a year plus twenty percent of your profits — and, as a group, still loses to the cheap one. Yet they often own nearly the same things.",
-    "motif": "feeladder",
-    "caption": "what they charge you"
+    "narration": "Start with a number that should feel impossible. The United States is home to about four percent of all the people on Earth — yet it commands around a quarter of the entire world's economy.",
+    "motif": "fourpercent",
+    "caption": "…an outsized slice of the wealth"
   },
   {
     "id": "s2",
-    "type": "callout",
-    "narration": "A top hedge fund can take fifty times more in fees than a simple index fund — for results that, over time, are usually worse. So why does anyone pick the expensive one?",
-    "text": "50x the fees",
-    "sub": "…often for worse results",
-    "icon": "warning"
+    "type": "character",
+    "narration": "For eighty years, that staggering imbalance has felt like a permanent law of nature. American money, American companies, American power, on top of everything. But it was never a law. It was a historical moment — and the math says that moment is quietly ending.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flagUS",
+        "label": "on top for 80 yrs"
+      },
+      {
+        "name": "chessking",
+        "label": "the lone superpower"
+      },
+      {
+        "name": "hourglass",
+        "label": "but not forever"
+      }
+    ]
   },
   {
     "id": "s3",
+    "type": "image",
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "'America will always be number one'",
+    "memeBottom": "4% of people can't be 25% forever",
+    "narration": "And to be crystal clear up front: this is not a doom prophecy about American collapse. It's something stranger, and more certain. It's arithmetic."
+  },
+  {
+    "id": "s47",
     "type": "character",
-    "narration": "Mutual funds, index funds, ETFs, hedge funds — the names get thrown around like they're wildly different beasts. In truth, three of them are cousins, and one is the odd, exclusive one out.",
-    "pose": "think",
-    "bubble": "what's the actual difference?",
+    "narration": "We've actually seen this exact movie before. In 1870, the British Empire sat at the centre of the world, the pound was the global reserve currency, and Britain made up a huge share of world output. Within a century, it had faded to an ordinary mid-sized economy.",
+    "pose": "explain",
     "props": [
       {
-        "name": "pie",
-        "label": "index"
+        "name": "flag",
+        "label": "Britain, 1870"
       },
       {
-        "name": "basket",
-        "label": "mutual"
+        "name": "pound",
+        "label": "the pound ruled"
       },
       {
-        "name": "stockscreen",
-        "label": "ETF"
-      },
-      {
-        "name": "rope",
-        "label": "hedge"
+        "name": "hourglass",
+        "label": "faded in a century"
       }
     ]
   },
   {
     "id": "s4",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "'they're all totally different'",
-    "memeBottom": "three are the same idea in different wrappers",
-    "narration": "So let's untangle all four — because understanding the difference is worth, quite literally, a fortune in fees over your lifetime."
+    "type": "title",
+    "narration": "To see it, you first have to understand why America ever got so dominant in the first place.",
+    "heading": "The Blip",
+    "kicker": "an accident of history"
   },
   {
     "id": "s5",
-    "type": "title",
-    "narration": "Start with the one idea they all share.",
-    "heading": "One Shared Idea",
-    "kicker": "pooling and baskets"
+    "type": "character",
+    "narration": "Rewind to 1945. The Second World War had flattened Europe, Japan, the Soviet Union, and China. Factories, cities, whole economies — reduced to rubble. One major power emerged untouched, and booming.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bomb",
+        "label": "the world in ruins"
+      },
+      {
+        "name": "flagUS",
+        "label": "…one winner standing"
+      },
+      {
+        "name": "factory",
+        "label": "its factories intact"
+      }
+    ]
   },
   {
     "id": "s6",
-    "type": "character",
-    "narration": "Every one of these is a 'fund' — a way to pool your money with thousands of other people, so that together you can buy a huge basket of assets no single one of you could afford alone.",
-    "pose": "explain",
-    "props": [
+    "type": "stage",
+    "narration": "So in the late 1940s, this one country made up nearly forty percent of the entire global economy. Not because of some permanent magic — but because almost everyone else had been bombed into the ground.",
+    "motif": "gdpshare",
+    "caption": "shrinking as the world grows up"
+  },
+  {
+    "id": "s48",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "US share of world GDP (%)",
+    "unit": "%",
+    "narration": "Watch the slide in numbers. Around 1960, the US was still roughly forty percent of the world economy. By 2000, about thirty. Today, closer to twenty-five — a steady, decades-long decline in share.",
+    "data": [
       {
-        "name": "crowd",
-        "label": "many people"
+        "label": "1960",
+        "value": 40
       },
       {
-        "name": "moneybag",
-        "label": "pool the cash"
+        "label": "2000",
+        "value": 30
       },
       {
-        "name": "pie",
-        "label": "buy a big basket"
+        "label": "2025",
+        "value": 25
       }
-    ]
+    ],
+    "highlight": 2
   },
   {
     "id": "s7",
-    "type": "stage",
-    "narration": "That's the magic of a fund. A little money from a lot of people becomes one giant pot — instantly spreading your risk across dozens, hundreds, even thousands of different investments.",
-    "motif": "fundpool",
-    "caption": "many wallets → one big pool"
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "The idea is a century old. The first modern mutual fund appeared in the 1920s, letting ordinary people pool their savings and own a slice of the whole market for the very first time. It democratized investing.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "handshake",
-        "label": "born in the 1920s"
-      },
-      {
-        "name": "crowd",
-        "label": "ordinary savers"
-      },
-      {
-        "name": "pie",
-        "label": "own the market"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Remember what we're measuring: gross domestic product — the total market value of all the goods and services a country produces. America's share of that global total was simply off the charts.",
+    "sourceId": "wiki-gdp"
   },
   {
     "id": "s8",
     "type": "character",
-    "narration": "The differences come down to just four questions. Who runs it? How do you buy it? What does it cost? And who's even allowed in? Answer those, and you've mastered all four types.",
+    "narration": "But here's the thing about rubble: people rebuild. And as the rest of the world got back on its feet and then roared ahead, the American slice of the pie could only do one thing — shrink. Not because America got worse. Because everyone else caught up.",
     "pose": "explain",
     "props": [
       {
-        "name": "briefcase",
-        "label": "who runs it?"
+        "name": "risingcity",
+        "label": "others rebuilt"
       },
       {
-        "name": "cardreader",
-        "label": "how to buy?"
+        "name": "chartdown",
+        "label": "US share fell"
       },
       {
-        "name": "receipt",
-        "label": "what cost?"
+        "name": "globe",
+        "label": "the pie grew"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "Step back far enough and it's a pattern as old as civilization. The Portuguese, then the Dutch, then the British, then the Americans — each dominant for a time, each eventually matched as rivals learned, copied, and caught up. Dominance has always been a relay, not a throne.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chessking",
+        "label": "empires take turns"
       },
       {
-        "name": "rope",
-        "label": "who's allowed?"
+        "name": "globe",
+        "label": "each one fades"
+      },
+      {
+        "name": "hourglass",
+        "label": "a relay, not a throne"
       }
     ]
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "First, the original: the mutual fund.",
-    "heading": "The Mutual Fund",
-    "kicker": "the classic pool"
+    "narration": "That catch-up isn't random. It's a deep economic force with a name — and it's the heart of the 'mathematically' in our title.",
+    "heading": "The Math",
+    "kicker": "convergence"
   },
   {
     "id": "s10",
     "type": "screenshot",
-    "narration": "A mutual fund is an investment fund that pools money from many investors to purchase securities. It's the grandparent of the whole family.",
-    "sourceId": "wiki-mutual"
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "One classic trap with older mutual funds is the 'load' — a sales commission, sometimes five percent, skimmed off the top the moment you buy in. Always look for 'no-load' funds, where every dollar you invest actually gets invested.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "a 'load' = sales fee"
-      },
-      {
-        "name": "warning",
-        "label": "up to 5% gone"
-      },
-      {
-        "name": "shield",
-        "label": "choose 'no-load'"
-      }
-    ],
-    "expression": "worried"
+    "narration": "The idea is called convergence: the hypothesis that poorer economies' per-capita incomes tend to grow at faster rates than richer economies.",
+    "sourceId": "wiki-convergence"
   },
   {
     "id": "s11",
     "type": "character",
-    "narration": "A professional manager runs it, deciding what to buy and sell. You hand over your money, they invest it, and you own a slice of the whole pot. Simple, and for decades, the default way ordinary people invested.",
+    "narration": "Why would poorer countries grow faster? Because catching up is easier than inventing. They can adopt technology that already exists, build modern factories from scratch, and move millions from farms into higher-paying industry. The rich world has to invent its growth; the poor world can simply copy it.",
     "pose": "explain",
     "props": [
       {
-        "name": "briefcase",
-        "label": "a pro manages it"
+        "name": "risingcity",
+        "label": "copy what works"
       },
       {
-        "name": "pie",
-        "label": "you own a slice"
+        "name": "factory",
+        "label": "leap ahead fast"
       },
       {
-        "name": "handshake",
-        "label": "the old default"
+        "name": "chartup",
+        "label": "8% vs 2% growth"
       }
     ]
   },
   {
     "id": "s12",
+    "type": "stage",
+    "narration": "And this is pure arithmetic. If a poor economy grows at eight percent while a rich one grows at two, the gap closes, year after year, like a slow-motion race where the person behind is simply running faster.",
+    "motif": "convergemath",
+    "caption": "poorer economies grow faster — and catch up"
+  },
+  {
+    "id": "s50",
     "type": "character",
-    "narration": "But the classic mutual fund has two quirks. One: it's usually 'actively managed,' so it charges higher fees for that manager's supposed skill. Two: you can only buy or sell it once a day, at a single set price.",
+    "narration": "Now the honest caveat: convergence isn't guaranteed. Plenty of countries get stuck in a 'middle-income trap' — growing fast for a while, then stalling before they ever get rich. Catching up is the tendency, not an iron law.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "receipt",
-        "label": "higher fees"
-      },
-      {
-        "name": "clock",
-        "label": "priced once a day"
+        "name": "risingcity",
+        "label": "fast, then stuck"
       },
       {
         "name": "warning",
-        "label": "sometimes sales 'loads'"
+        "label": "the middle-income trap"
+      },
+      {
+        "name": "scale",
+        "label": "a tendency, not a law"
+      }
+    ],
+    "expression": "worried"
+  },
+  {
+    "id": "s13",
+    "type": "character",
+    "narration": "So America keeping a quarter of the world economy, forever, would require the other ninety-six percent of humanity to just… stop getting richer. That is not going to happen. Billions of people are, right now, catching up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "billions rising"
+      },
+      {
+        "name": "globe",
+        "label": "the world levels up"
+      },
+      {
+        "name": "scale",
+        "label": "the gap must close"
       }
     ]
   },
   {
     "id": "s51",
     "type": "character",
-    "narration": "There's also a quieter mechanical split: most funds are 'open-end,' creating new shares as money flows in. A few are 'closed-end,' with a fixed number of shares that trade at their own price — a detail that trips up a lot of beginners.",
+    "narration": "And remember the difference between total and per-person. China's economy may be huge, but spread across more than a billion people, the average American is still several times richer than the average Chinese citizen. Size and wealth-per-head are very different things.",
     "pose": "explain",
     "props": [
       {
-        "name": "bank",
-        "label": "'open-end' flexes"
+        "name": "globe",
+        "label": "big TOTAL economy"
       },
       {
-        "name": "lockhouse",
-        "label": "'closed-end' is fixed"
+        "name": "crowd",
+        "label": "÷ 1.4 billion people"
       },
       {
-        "name": "gauge",
-        "label": "a common confusion"
+        "name": "coins",
+        "label": "US richer per person"
       }
     ]
-  },
-  {
-    "id": "s13",
-    "type": "title",
-    "narration": "Which brings us to its cheaper, smarter child: the index fund.",
-    "heading": "The Index Fund",
-    "kicker": "a type, not a rival"
   },
   {
     "id": "s14",
-    "type": "character",
-    "narration": "Here's the key confusion to clear up. An index fund isn't really a separate competitor. It's a style of fund — one that can be packaged as either a mutual fund or an ETF. The difference is what's inside.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pie",
-        "label": "a style, not a rival"
-      },
-      {
-        "name": "scale",
-        "label": "mutual OR etf"
-      }
-    ]
+    "type": "title",
+    "narration": "Nowhere is this clearer than in the giant that has already pulled off the fastest catch-up in human history.",
+    "heading": "The Crossing",
+    "kicker": "China, by the numbers"
   },
   {
     "id": "s15",
     "type": "screenshot",
-    "narration": "An index fund simply aims to replicate a market index by holding the same securities as the index — instead of a manager trying to pick winners.",
-    "sourceId": "wiki-index"
-  },
-  {
-    "id": "s16",
-    "type": "image",
-    "src": "img/bogle.jpg",
-    "label": "JOHN BOGLE",
-    "caption": "invented the index fund",
-    "narration": "This is the invention of John Bogle: don't pay a manager to guess. Just buy the whole market, keep fees microscopic, and quietly beat most of the pros who are trying so hard."
-  },
-  {
-    "id": "s17",
-    "type": "stage",
-    "narration": "Because it just copies a list instead of paying a star manager, the index fund is astonishingly cheap — often charging a few cents per hundred dollars, versus a dollar or more for active funds.",
-    "motif": "feedrag",
-    "caption": "small fees, enormous gap"
+    "narration": "China now has the world's second-largest economy by one common measure — having grown from desperately poor to a superpower in a single generation.",
+    "sourceId": "wiki-chinaecon"
   },
   {
     "id": "s52",
-    "type": "timeline",
-    "title": "The fund family tree",
-    "narration": "Here's the family tree in time. The first mutual fund in the 1920s. Bogle's first index fund in 1976, mocked at launch. The first ETF in 1993. And by 2019, passive funds overtaking active ones entirely.",
-    "events": [
-      {
-        "year": "1924",
-        "label": "mutual fund",
-        "icon": "handshake"
-      },
-      {
-        "year": "1976",
-        "label": "index fund",
-        "icon": "pie"
-      },
-      {
-        "year": "1993",
-        "label": "first ETF",
-        "icon": "stockscreen"
-      },
-      {
-        "year": "2019",
-        "label": "passive > active",
-        "icon": "trophy"
-      }
-    ],
-    "highlight": 1
-  },
-  {
-    "id": "s53",
     "type": "character",
-    "narration": "That passive revolution is staggering in scale. Firms like Vanguard and BlackRock now manage tens of trillions of dollars in cheap index funds and ETFs — a tidal wave of money that fled the expensive, actively-managed world.",
+    "narration": "China is no sure thing, either. It faces its own brutal headwinds: a rapidly aging population, a mountain of property and local debt, and a shrinking workforce. The rising challenger has serious problems of its own.",
     "pose": "explain",
     "props": [
       {
-        "name": "bank",
-        "label": "trillions managed"
+        "name": "retiree",
+        "label": "aging fast"
       },
       {
-        "name": "pie",
-        "label": "cheap index funds"
+        "name": "debtclock",
+        "label": "heavy debt"
       },
       {
-        "name": "chartup",
-        "label": "a tidal wave"
+        "name": "chartdown",
+        "label": "shrinking workforce"
+      }
+    ],
+    "expression": "worried"
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "narration": "And on one important measure, it has already passed America. Economists use 'purchasing power parity' to compare what money can actually buy in each country, rather than just exchange rates.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "exchange",
+        "label": "purchasing power"
+      },
+      {
+        "name": "basket",
+        "label": "what money buys"
+      },
+      {
+        "name": "scale",
+        "label": "a fairer compare"
       }
     ]
   },
   {
+    "id": "s17",
+    "type": "screenshot",
+    "narration": "Purchasing power parity is a measure used to compare the absolute purchasing power of different countries' currencies — and by it, China's real economy is already the biggest on Earth.",
+    "sourceId": "wiki-ppp"
+  },
+  {
     "id": "s18",
-    "type": "title",
-    "narration": "Now the modern superstar, the one that trades like a stock: the ETF.",
-    "heading": "The ETF",
-    "kicker": "a fund that trades live"
+    "type": "stage",
+    "narration": "Adjusted for what money actually buys, China's economy quietly overtook America's around the mid-2010s. On the headline exchange-rate numbers it's still behind — but the lines are converging fast.",
+    "motif": "pppcross",
+    "caption": "on some measures, already overtaken"
+  },
+  {
+    "id": "s53",
+    "type": "timeline",
+    "title": "Who held the crown",
+    "narration": "Zoom out across the centuries, and the crown keeps moving. Dutch dominance in the 1600s. British in the 1800s. American in the 1900s. And a shared, multipolar board for the century now unfolding.",
+    "events": [
+      {
+        "year": "1600s",
+        "label": "Dutch",
+        "icon": "globe"
+      },
+      {
+        "year": "1800s",
+        "label": "British",
+        "icon": "flag"
+      },
+      {
+        "year": "1900s",
+        "label": "American",
+        "icon": "flagUS"
+      },
+      {
+        "year": "2000s",
+        "label": "multipolar",
+        "icon": "chessking"
+      }
+    ],
+    "highlight": 3
   },
   {
     "id": "s19",
-    "type": "screenshot",
-    "narration": "An exchange-traded fund, or ETF, is an investment fund that is bought and sold on stock exchanges — trading all day long, just like a share of a company.",
-    "sourceId": "wiki-etf"
-  },
-  {
-    "id": "s20",
-    "type": "stage",
-    "narration": "That's the crucial difference from a mutual fund. A mutual fund prices once a day, after the market closes. An ETF has a live, moving price all day, and you can buy or sell it in a single click, any time.",
-    "motif": "mutualvsetf",
-    "caption": "same idea, different plumbing"
+    "type": "character",
+    "narration": "And it's not just China. India, with over a billion people, is now the fastest-growing major economy, racing up the same curve. The sheer weight of Asia's billions is tilting the whole planet's center of gravity.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flagCN",
+        "label": "China risen"
+      },
+      {
+        "name": "risingcity",
+        "label": "India racing up"
+      },
+      {
+        "name": "crowd",
+        "label": "Asia's billions"
+      }
+    ]
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "ETFs have a sneaky tax advantage, too. Thanks to a clever share-creation mechanism, they rarely pass taxable gains onto you while you hold them — so, outside a retirement account especially, they can quietly beat an identical mutual fund.",
+    "narration": "Together, China and India alone hold around a third of all humanity. As billions of those people move into the middle class, the sheer gravitational pull of their spending reshapes global demand, trade, and power. This is why many call it the coming 'Asian century.'",
     "pose": "explain",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "clever structure"
+        "name": "crowd",
+        "label": "~35% of humanity"
       },
       {
-        "name": "receipt",
-        "label": "fewer tax bills"
-      },
-      {
-        "name": "trophy",
-        "label": "a quiet edge"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "narration": "Most ETFs are actually index funds in a sleeker wrapper — cheap, tracking an index, but tradeable live. They're also usually more tax-efficient, which is why they've quietly exploded in popularity.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "stockscreen",
-        "label": "trades live"
-      },
-      {
-        "name": "pie",
-        "label": "usually an index"
-      },
-      {
-        "name": "receipt",
-        "label": "tax-efficient"
-      }
-    ]
-  },
-  {
-    "id": "s55",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Fee over 30 years on $100k ($ lost)",
-    "unit": "$",
-    "narration": "Put the fees in real money. On a hundred thousand dollars over thirty years, a rock-bottom index fee costs you a few thousand. A one-percent active fee costs tens of thousands. The hedge-fund model can cost a fortune.",
-    "data": [
-      {
-        "label": "index 0.05%",
-        "value": 3000
-      },
-      {
-        "label": "active 1%",
-        "value": 40000
-      },
-      {
-        "label": "hedge 2+20",
-        "value": 120000
-      }
-    ],
-    "highlight": 2
-  },
-  {
-    "id": "s22",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "index mutual fund",
-    "memeBottom": "index ETF",
-    "narration": "For most people, the choice between an index mutual fund and an index ETF barely matters. They can hold the exact same thing. One just trades live, and the other prices once a day."
-  },
-  {
-    "id": "s56",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "pay 2% + 20% for a star manager",
-    "memeBottom": "underperform a fund that charges 0.05%",
-    "narration": "It is the great running joke of modern finance: paying the highest fees in the industry, very often, buys you the privilege of below-average returns."
-  },
-  {
-    "id": "s23",
-    "type": "title",
-    "narration": "And finally, the exclusive, expensive, mysterious one: the hedge fund.",
-    "heading": "The Hedge Fund",
-    "kicker": "behind the velvet rope"
-  },
-  {
-    "id": "s24",
-    "type": "screenshot",
-    "narration": "A hedge fund is a pooled investment fund that makes use of complex trading and risk-management techniques — far beyond simply buying and holding stocks.",
-    "sourceId": "wiki-hedge"
-  },
-  {
-    "id": "s25",
-    "type": "character",
-    "narration": "Hedge funds can do things normal funds can't: short-selling to profit when prices fall, piling on leverage, and making huge bets on currencies, commodities, or whole economies. High risk, in search of high reward.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "bet on falls too"
-      },
-      {
-        "name": "bank",
-        "label": "heavy leverage"
+        "name": "risingcity",
+        "label": "a rising middle class"
       },
       {
         "name": "globe",
-        "label": "bet on anything"
+        "label": "the 'Asian century'"
       }
     ]
+  },
+  {
+    "id": "s20",
+    "type": "title",
+    "narration": "Add it all together, and you get a fundamentally different-shaped world.",
+    "heading": "The Multipolar World",
+    "kicker": "from one pole to many"
+  },
+  {
+    "id": "s21",
+    "type": "screenshot",
+    "narration": "International relations scholars talk about 'polarity' — the various ways power is distributed in the global system. For a brief moment after the Cold War, the world was 'unipolar': one dominant superpower.",
+    "sourceId": "wiki-multipolar"
+  },
+  {
+    "id": "s22",
+    "type": "stage",
+    "narration": "That single-superpower moment is fading. We're sliding into a 'multipolar' world — the US, China, the European Union, India, and others, each a serious center of power. Not one giant, but several.",
+    "motif": "multipolarshift",
+    "caption": "from one superpower to many"
+  },
+  {
+    "id": "s55",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "one dominant superpower",
+    "memeBottom": "a crowded table of great powers",
+    "narration": "The comfortable, simple world of one clear leader is giving way to something messier and more balanced — a negotiation between several big players, none able to simply dictate to the rest."
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "narration": "In the language of geopolitics, there are now several 'great powers' — each a state with the ability to exert its influence on a global scale. The age of a single, unchallenged leader is closing.",
+    "sourceId": "wiki-greatpower"
+  },
+  {
+    "id": "s56",
+    "type": "character",
+    "narration": "Historians warn of a danger here, the so-called 'Thucydides trap': when a rising power challenges a ruling one, the friction has often, historically, ended in conflict. Managing this transition peacefully is one of the century's great tests.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chessking",
+        "label": "rising vs ruling"
+      },
+      {
+        "name": "bomb",
+        "label": "friction & risk"
+      },
+      {
+        "name": "handshake",
+        "label": "manage it carefully"
+      }
+    ],
+    "expression": "worried"
+  },
+  {
+    "id": "s24",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "'America is declining'",
+    "memeBottom": "America is shrinking in RELATIVE terms as the world catches up",
+    "narration": "This is the crucial distinction almost everyone misses. 'Dominance ending' does not mean 'America failing.' It means the gap between America and everyone else is closing."
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "Hedge funds come in many flavors. 'Long-short' funds bet on some stocks rising and others falling. 'Global macro' funds, like Soros's, bet on whole economies. 'Quant' funds, like Simons's, let the algorithms decide. Each a different way to gamble for an edge.",
+    "narration": "You can see the realignment forming. Groups like the expanding BRICS bloc are explicitly trying to build an economic order less centered on America and its dollar — a direct, deliberate push toward a more balanced world.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "long / short"
-      },
-      {
         "name": "globe",
-        "label": "global macro"
+        "label": "the BRICS bloc"
       },
       {
-        "name": "brain",
-        "label": "quant algorithms"
+        "name": "flagCN",
+        "label": "a new alignment"
+      },
+      {
+        "name": "dollar",
+        "label": "less dollar-centric"
       }
     ]
   },
   {
-    "id": "s26",
-    "type": "stage",
-    "narration": "But the first thing to know is that you probably can't even invest in one. Hedge funds are gated — legally restricted to the wealthy and big institutions, not the general public.",
-    "motif": "accessgate",
-    "caption": "one of them has a velvet rope"
+    "id": "s25",
+    "type": "title",
+    "narration": "Which is exactly why we have to be honest about what is NOT ending.",
+    "heading": "The Caveats",
+    "kicker": "where America still rules"
   },
   {
-    "id": "s27",
-    "type": "screenshot",
-    "narration": "That's because they're marketed only to institutional investors and high-net-worth individuals — the exclusive club of big money.",
-    "sourceId": "wiki-hedge2"
+    "id": "s26",
+    "type": "character",
+    "narration": "Because in the ways that matter most, the US still utterly dominates. The dollar runs global finance. American technology companies rule the digital world. Its military outspends the next ten countries combined.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "dollar",
+        "label": "the dollar rules"
+      },
+      {
+        "name": "chip",
+        "label": "US tech leads"
+      },
+      {
+        "name": "shield",
+        "label": "unmatched military"
+      }
+    ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "And the exclusivity comes with a catch: your money can get locked up. Many hedge funds impose 'lock-up' periods, where you simply cannot withdraw your cash for months or years. An index ETF, by contrast, you can sell in seconds.",
+    "narration": "America's deepest moat is the dollar. As we've explored before, the world runs on it — for oil, trade, and reserves. That gives the US a financial superpower no rival comes close to matching, and it will be the very last pillar of dominance to fall.",
     "pose": "explain",
     "props": [
       {
-        "name": "padlock",
-        "label": "money locked up"
+        "name": "dollar",
+        "label": "the dollar moat"
       },
       {
-        "name": "clock",
-        "label": "for months or years"
+        "name": "globe",
+        "label": "the world runs on it"
       },
       {
-        "name": "stockscreen",
-        "label": "vs sell anytime"
+        "name": "shield",
+        "label": "the last pillar"
       }
-    ],
-    "expression": "worried"
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "character",
+    "narration": "Add the world's top universities, its deepest financial markets, Hollywood, and an unrivaled ability to attract talented immigrants, and American 'soft power' remains in a league of its own.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gradcap",
+        "label": "top universities"
+      },
+      {
+        "name": "globe",
+        "label": "global soft power"
+      },
+      {
+        "name": "crowd",
+        "label": "magnet for talent"
+      }
+    ]
   },
   {
     "id": "s28",
-    "type": "image",
-    "src": "img/dalio.jpg",
-    "label": "RAY DALIO",
-    "caption": "built the biggest hedge fund",
-    "narration": "The legends are real. Ray Dalio built Bridgewater into the biggest hedge fund on Earth, managing the money of pensions and governments with his own grand theories of how economies work."
-  },
-  {
-    "id": "s29",
-    "type": "image",
-    "src": "img/simons.jpg",
-    "label": "JIM SIMONS",
-    "caption": "the quant who truly beat the market",
-    "narration": "And Jim Simons, a mathematician, built Renaissance — whose secretive quant fund posted returns so absurdly good they may be the best in all of financial history. These outliers are why the dream persists."
+    "type": "character",
+    "narration": "So this isn't collapse. A country can shrink from forty percent of the world economy to twenty-five, and still be the single most powerful nation on the planet. Relative decline is not the same as absolute decline.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "flagUS",
+        "label": "still number one"
+      },
+      {
+        "name": "chartdown",
+        "label": "but relatively smaller"
+      },
+      {
+        "name": "scale",
+        "label": "relative ≠ absolute"
+      }
+    ]
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "Be very skeptical of the dazzling hedge-fund track records, too. Thousands of funds launch; the losers quietly shut down and vanish from the averages. What you see is survivorship bias — the flattering, cherry-picked survivors.",
+    "narration": "There are real tailwinds, too. The shale revolution turned America into the world's top energy producer, handing it an independence most great powers can only dream of. Strength and relative decline can genuinely coexist.",
     "pose": "explain",
     "props": [
       {
-        "name": "shredder",
-        "label": "losers vanish"
+        "name": "pumpjack",
+        "label": "energy independent"
       },
       {
-        "name": "magnifier",
-        "label": "survivorship bias"
+        "name": "chartup",
+        "label": "a real tailwind"
       },
       {
-        "name": "warning",
-        "label": "flattering numbers"
+        "name": "scale",
+        "label": "strong AND shrinking"
       }
-    ],
-    "expression": "worried"
+    ]
+  },
+  {
+    "id": "s29",
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeBottom": "relative decline is not collapse — it's just everyone else catching up",
+    "narration": "Getting this right matters, because the two stories lead to wildly different conclusions. One is panic. The other is simply understanding a changing world."
   },
   {
     "id": "s30",
     "type": "title",
-    "narration": "But those legends hide the thing that really defines a hedge fund: the fees.",
-    "heading": "The Fees",
-    "kicker": "'two and twenty'"
+    "narration": "That said, America does face some very real headwinds that will speed the shift along.",
+    "heading": "The Headwinds",
+    "kicker": "debt and demographics"
   },
   {
     "id": "s31",
-    "type": "character",
-    "narration": "Hedge funds famously charge what's called 'two and twenty.' That means two percent of all your money every year, no matter what — plus twenty percent of any profits they make.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "percent",
-        "label": "2% of everything"
-      },
-      {
-        "name": "coins",
-        "label": "+ 20% of gains"
-      },
-      {
-        "name": "warning",
-        "label": "win or lose"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The first is debt. The national debt of the United States — the total owed by the federal government — has climbed to a genuinely enormous level.",
+    "sourceId": "wiki-usdebt"
   },
   {
     "id": "s32",
     "type": "stage",
-    "narration": "Think about how brutal that is. Even in a flat year where they make you nothing, they take two percent. And when they do win, they pocket a fifth of your profit before you see a cent.",
-    "motif": "twentytwenty",
-    "caption": "2% of everything + 20% of profits"
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "narration": "The most famous proof is Warren Buffett's bet. He wagered a million dollars that a simple index fund would beat a basket of elite hedge funds over ten years. He won in a landslide, and gave the winnings to charity.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "Buffett's $1M bet"
-      },
-      {
-        "name": "trophy",
-        "label": "the index won big"
-      },
-      {
-        "name": "handshake",
-        "label": "gave it to charity"
-      }
-    ]
+    "narration": "That debt is now around thirty-six trillion dollars, and as interest rates rise, simply paying the interest on it is becoming one of the government's single biggest expenses — crowding out everything else.",
+    "motif": "debtburden",
+    "caption": "a mountain of debt, and rising interest"
   },
   {
     "id": "s33",
     "type": "screenshot",
-    "narration": "It all comes down to the expense ratio — the annual cost of owning a fund. And across these four, that single number varies more than almost anything else.",
-    "sourceId": "wiki-expense"
+    "narration": "The second is people. The US has about four percent of the world's population — and, like most rich nations, it's aging, with a slowing birth rate to support a growing number of retirees.",
+    "sourceId": "wiki-usdemo"
   },
   {
     "id": "s34",
     "type": "character",
-    "narration": "And here's the punchline the industry hates. After those enormous fees, the average hedge fund has, for many years, failed to beat a simple, cheap index fund that a child could buy. You pay a fortune to underperform.",
+    "narration": "An aging population, a mountain of debt, and deep political division all chip away at the edges — while younger, hungrier, faster-growing nations keep closing the gap from below.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "chartdown",
-        "label": "they lag the index"
+        "name": "retiree",
+        "label": "aging population"
       },
       {
-        "name": "moneybag",
-        "label": "huge fees"
+        "name": "debtclock",
+        "label": "soaring debt"
       },
       {
-        "name": "warning",
-        "label": "pay more, get less"
+        "name": "protest",
+        "label": "political division"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "And here's America's quiet demographic superpower: immigration. While rivals age and shrink, the US can, if it chooses, keep topping up its workforce with the world's talent — a lever to slow its own relative decline that almost no competitor possesses.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "immigration"
+      },
+      {
+        "name": "chip",
+        "label": "the world's talent"
+      },
+      {
+        "name": "flagUS",
+        "label": "a unique lever"
+      }
+    ]
+  },
+  {
+    "id": "s35",
+    "type": "title",
+    "narration": "So, pulling it all together — what does the math actually say?",
+    "heading": "The Verdict",
+    "kicker": "a crowded new century"
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "It says the question was never really 'is America declining?' The real question is: can any single country stay a quarter of the world economy, with just four percent of its people, forever? And mathematically, the answer is simply no.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "it's just arithmetic"
+      },
+      {
+        "name": "globe",
+        "label": "the world catches up"
+      },
+      {
+        "name": "scale",
+        "label": "the gap must close"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "The twenty-first century won't belong to one superpower the way the twentieth did. It will be shared, contested, and multipolar — a crowded table of great powers, rather than one giant at the head of it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chessking",
+        "label": "many players now"
+      },
+      {
+        "name": "flagCN",
+        "label": "China"
+      },
+      {
+        "name": "flagEU",
+        "label": "the EU"
+      },
+      {
+        "name": "risingcity",
+        "label": "the rest, rising"
       }
     ]
   },
   {
     "id": "s61",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "paying 2 and 20 for years",
-    "memeBottom": "still trailing a free index fund",
-    "narration": "For most hedge-fund clients, that's the quiet reality underneath the glamour: enormous fees, lock-ups, and complexity, in exchange for returns a cheap fund would have beaten."
-  },
-  {
-    "id": "s35",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "for most people, a cheap index ETF beats an expensive hedge fund",
-    "narration": "For the tiny handful of true geniuses like Simons, the fees are worth it. For the vast majority of hedge funds, you're paying Ferrari prices for a car that finishes behind the bus."
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "So why do they still exist? Partly the dream of the next Simons. Partly because the ultra-rich want something exclusive, uncorrelated, or tailored. And partly, frankly, because 'I'm in a hedge fund' sounds a lot better at dinner than 'I own an index fund.'",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "token",
-        "label": "chasing the dream"
-      },
-      {
-        "name": "rope",
-        "label": "exclusivity sells"
-      },
-      {
-        "name": "magichat",
-        "label": "status, really"
-      }
-    ]
-  },
-  {
-    "id": "s36",
-    "type": "title",
-    "narration": "So let's line all four up, side by side.",
-    "heading": "The Showdown",
-    "kicker": "four funds, one table"
-  },
-  {
-    "id": "s37",
-    "type": "stage",
-    "narration": "Index funds: cheap, passive, own-everything. Mutual funds: often active, priced daily. ETFs: cheap and tradeable live. Hedge funds: pricey, exclusive, complex. Four wrappers around the same core idea.",
-    "motif": "fundmatrix",
-    "caption": "four ways to own a basket of assets"
-  },
-  {
-    "id": "s63",
     "type": "compare",
-    "narration": "Compare the two honest paths for a normal person. Pick your own stocks, and you're a lone amateur against the pros. Buy one index fund, and you instantly own a slice of everything, cheaply.",
+    "narration": "So hold the two truths together. By total size, the world is rapidly leveling out and going multipolar. By wealth and power per person, America remains comfortably, enormously ahead.",
     "left": {
-      "title": "DIY stock-picking",
-      "value": "you vs the pros",
-      "icon": "warning"
+      "title": "Total economy",
+      "value": "leveling out",
+      "icon": "globe"
     },
     "right": {
-      "title": "One index fund",
-      "value": "own it all, cheap",
-      "icon": "pie"
+      "title": "Per person",
+      "value": "US still way ahead",
+      "icon": "coins"
     }
   },
   {
     "id": "s38",
-    "type": "character",
-    "narration": "Three of them — index funds, most ETFs, and passive mutual funds — are really the same sensible strategy: own the whole market cheaply. The hedge fund is the one playing a completely different, far riskier game.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pie",
-        "label": "3 are 'own it all'"
-      },
-      {
-        "name": "rope",
-        "label": "1 plays a wild game"
-      },
-      {
-        "name": "scale",
-        "label": "very different risk"
-      }
-    ]
-  },
-  {
-    "id": "s64",
-    "type": "character",
-    "narration": "There are handy hybrids, too. A 'target-date fund' automatically shifts you from risky stocks toward safer bonds as you age — a whole retirement strategy, on autopilot, inside a single fund you never have to touch.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "'target-date' fund"
-      },
-      {
-        "name": "scale",
-        "label": "auto-adjusts risk"
-      },
-      {
-        "name": "shield",
-        "label": "set and forget"
-      }
-    ]
+    "type": "title",
+    "narration": "And this isn't just geopolitics — it quietly matters for your own money.",
+    "heading": "What It Means",
+    "kicker": "for your portfolio"
   },
   {
     "id": "s39",
-    "type": "title",
-    "narration": "Which leaves the only question that matters: which one is for you?",
-    "heading": "Who Wins",
-    "kicker": "and who's it for"
-  },
-  {
-    "id": "s40",
-    "type": "stage",
-    "narration": "The data, again, is blunt. Over the long run, the cheap, boring, passive options reliably beat the expensive, exciting, active ones. Cost is the single best predictor of who wins.",
-    "motif": "whowins",
-    "caption": "who actually wins, long-term"
-  },
-  {
-    "id": "s41",
     "type": "character",
-    "narration": "So for almost everyone, the answer is a low-cost index fund or index ETF. It's cheap, it's diversified, it requires no genius, and it quietly outperforms the fancy stuff over time.",
-    "pose": "present",
+    "narration": "For decades, 'just buy American stocks' has been a phenomenal strategy. But if the US is set to be a steadily smaller share of a bigger world, betting everything on one shrinking slice starts to look a little less obvious.",
+    "pose": "explain",
     "props": [
       {
-        "name": "pie",
-        "label": "a low-cost index"
+        "name": "flagUS",
+        "label": "US stocks won big"
       },
       {
-        "name": "turtle",
-        "label": "boring, winning"
+        "name": "chartdown",
+        "label": "but a shrinking slice"
       },
       {
-        "name": "trophy",
-        "label": "beats the fancy stuff"
+        "name": "warning",
+        "label": "don't assume forever"
       }
     ]
   },
   {
-    "id": "s65",
+    "id": "s40",
+    "type": "character",
+    "narration": "It's a strong argument for owning a piece of the whole world, not just one country — capturing the growth of the billions who are catching up, instead of betting it all on the one nation that's mathematically destined to shrink in relative terms.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "globe",
+        "label": "own the whole world"
+      },
+      {
+        "name": "pie",
+        "label": "not just one country"
+      },
+      {
+        "name": "risingcity",
+        "label": "ride the catch-up"
+      }
+    ]
+  },
+  {
+    "id": "s62",
     "type": "image",
     "src": "img/memes/onedoesnot.jpg",
     "meme": "One Does Not Simply",
     "memeTop": "one does not simply",
-    "memeBottom": "go wrong with a low-cost, broad index fund",
-    "narration": "It is genuinely hard to make a serious mistake with a cheap, diversified index fund held for the long term. That's exactly what makes it such a powerful default."
+    "memeBottom": "bet your whole future on one shrinking slice of the world",
+    "narration": "The practical takeaway is humble and powerful: own a piece of the entire growing world, and you win no matter which flag ends up on top."
   },
   {
-    "id": "s66",
-    "type": "character",
-    "narration": "Buying one is now trivial. Open a brokerage account, search for a broad, low-cost index fund or ETF, and buy it like any stock. The whole thing can take about ten minutes — the hard part, as always, is just leaving it alone.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "phone",
-        "label": "open an account"
-      },
-      {
-        "name": "pie",
-        "label": "buy a broad index"
-      },
-      {
-        "name": "hourglass",
-        "label": "then leave it alone"
-      }
-    ]
+    "id": "s41",
+    "type": "title",
+    "narration": "So let's total up the end of an era.",
+    "heading": "The Final Math",
+    "kicker": "the blip, fading"
   },
   {
     "id": "s42",
-    "type": "character",
-    "narration": "An actively-managed mutual fund can make sense in a few niche corners. And a hedge fund can make sense if you're ultra-wealthy, chasing a specific edge, and fully understand the odds. For everyone else? Keep it simple.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "active: niche uses"
-      },
-      {
-        "name": "rope",
-        "label": "hedge: ultra-rich only"
-      },
-      {
-        "name": "shield",
-        "label": "everyone else: simple"
-      }
+    "type": "chalkboard",
+    "narration": "America hit forty percent of the world economy only because the rest was in ruins. Convergence means the poor grow faster. So the US slice shrank toward a quarter — and a multipolar world was born. It's not collapse. It's catch-up.",
+    "lines": [
+      "1945: ~40% of world GDP (everyone else bombed)",
+      "convergence → the poor grow faster",
+      "US slice → falls toward ~25%",
+      "→ a multipolar world, by arithmetic"
     ]
   },
   {
     "id": "s43",
-    "type": "title",
-    "narration": "So let's total up the four funds.",
-    "heading": "The Final Math",
-    "kicker": "wrappers around a basket"
+    "type": "character",
+    "narration": "The era of a single, overwhelming superpower was always the exception, not the rule. It was built on the ashes of a world war — and it was mathematically guaranteed to fade as that world rebuilt and caught up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hourglass",
+        "label": "always temporary"
+      },
+      {
+        "name": "bomb",
+        "label": "born of ruins"
+      },
+      {
+        "name": "globe",
+        "label": "fading by design"
+      }
+    ]
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "narration": "None of this is a prophecy of doom or decline. It's simply the end of an unusual, rubble-built moment — and the slow, mathematical return to a world with many centers of power, the way almost all of history has actually looked.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "globe",
+        "label": "many centers"
+      },
+      {
+        "name": "hourglass",
+        "label": "back to normal"
+      },
+      {
+        "name": "scale",
+        "label": "not doom, just math"
+      }
+    ]
   },
   {
     "id": "s44",
-    "type": "chalkboard",
-    "narration": "A mutual fund pools money, priced daily. An index fund just tracks the market, cheaply. An ETF does that but trades live. A hedge fund charges a fortune to gamble — for the wealthy only.",
-    "lines": [
-      "mutual fund → pooled, priced daily",
-      "index fund → tracks the market, cheap",
-      "ETF → like an index fund, trades live",
-      "hedge fund → 2 and 20, rich only"
+    "type": "character",
+    "narration": "So the next time you hear that America is either eternally invincible or on the brink of collapse, you'll know the duller, truer answer: it's simply becoming one great power among several, in a world that finally caught up.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "chessking",
+        "label": "one power among many"
+      },
+      {
+        "name": "scale",
+        "label": "the honest middle"
+      },
+      {
+        "name": "calculator",
+        "label": "just do the math"
+      }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "Strip away the jargon and it's almost funny how simple it is. They are all just baskets. The real differences are cost, how you buy, and who's allowed in — and on cost, cheaper has reliably meant richer.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pie",
-        "label": "all just baskets"
-      },
-      {
-        "name": "receipt",
-        "label": "cost is king"
-      },
-      {
-        "name": "coins",
-        "label": "cheap = richer"
-      }
-    ]
-  },
-  {
-    "id": "s67",
-    "type": "character",
-    "narration": "Step back and the shift is historic. Trillions of dollars have marched out of expensive, hand-picked funds and into cheap, automatic ones — the biggest quiet victory for ordinary investors in a generation.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "trillions moved"
-      },
-      {
-        "name": "pie",
-        "label": "into cheap funds"
-      },
-      {
-        "name": "trophy",
-        "label": "a win for the little guy"
-      }
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "character",
-    "narration": "So the next time someone brags about their exclusive hedge fund, you can smile — and remember that the boring index ETF in your pocket has quietly beaten most of them, for a fraction of the price.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "stockscreen",
-        "label": "your boring ETF"
-      },
-      {
-        "name": "trophy",
-        "label": "quietly winning"
-      },
-      {
-        "name": "calculator",
-        "label": "for almost nothing"
-      }
-    ]
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "If this finally untangled the four funds, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this reframed the whole 'rise and fall' debate for you, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "pie",
+        "name": "globe",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s48",
+    "id": "s46",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

@@ -3161,6 +3161,96 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one of them has a velvet rope</text>
       </svg>
     );
+  } else if (m === "gdpshare") {
+    // The US slice of the world economy shrinking as others grow.
+    const shrink = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    const us = 0.40 - 0.15 * shrink;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={100} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">US share of the world economy</text>
+        <g transform="translate(490 280)">
+          <rect x={-260} y={-70} width={520} height={140} rx={10} fill="#8a929a" stroke={ink} strokeWidth={5} />
+          <rect x={-260} y={-70} width={520 * us} height={140} rx={10} fill={blue} stroke={ink} strokeWidth={5} />
+          <text x={-260 + 520 * us / 2} y={12} fontSize={28} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{Math.round(us * 100)}%</text>
+          <text x={210} y={12} fontSize={20} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>rest of world</text>
+        </g>
+        <text x={VW / 2} y={452} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">shrinking as the world grows up</text>
+      </svg>
+    );
+  } else if (m === "convergemath") {
+    // Poorer economies grow faster and converge on the rich ones.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const rich = "M 100 160 L 300 150 L 500 145 L 700 142 L 880 140";
+    const poor = "M 100 420 L 300 340 L 500 260 L 700 190 L 880 150";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={90} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={rich} stroke={blue} strokeWidth={6} seed={3} />
+          <RPath d={poor} stroke={red} strokeWidth={6} seed={6} />
+        </g>
+        {rev > 0.3 && <text x={320} y={132} fontSize={18} fontWeight={900} fill={blue} textAnchor="middle" fontFamily={sans}>rich: slow growth</text>}
+        {rev > 0.5 && <text x={320} y={372} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>poor: fast growth</text>}
+        {rev > 0.9 && <text x={800} y={120} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">they converge</text>}
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">poorer economies grow faster — and catch up</text>
+      </svg>
+    );
+  } else if (m === "fourpercent") {
+    // 4% of the world's people, but ~25% of its GDP.
+    const g = interpolate(frame, [fps * 0.3, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={92} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">4% of the world's people…</text>
+        <g transform="translate(490 200)"><rect x={-300} y={-28} width={600} height={56} rx={8} fill="#8a929a" stroke={ink} strokeWidth={4} /><rect x={-300} y={-28} width={600 * 0.04 * g} height={56} fill={blue} /><text x={-294} y={70} fontSize={18} fontWeight={800} fill={blue} fontFamily={sans}>US = 4% of people</text></g>
+        <g transform="translate(490 360)"><rect x={-300} y={-28} width={600} height={56} rx={8} fill="#8a929a" stroke={ink} strokeWidth={4} /><rect x={-300} y={-28} width={600 * 0.25 * g} height={56} fill={gold} /><text x={-294} y={70} fontSize={18} fontWeight={800} fill={ink} fontFamily={sans}>US = ~25% of GDP</text></g>
+        <text x={VW / 2} y={476} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">…an outsized slice of the wealth</text>
+      </svg>
+    );
+  } else if (m === "multipolarshift") {
+    // One dominant US pole gives way to several rising powers.
+    const t = interpolate(frame, [fps * 0.5, fps * 2.0], [0, 1], clampBoth);
+    const poles: [string, number, number, string][] = [["China", 250, 330, red], ["EU", 730, 230, "#3a6ea5"], ["India", 730, 410, "#d98b5f"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 270)"><circle r={120 * (1 - 0.5 * t)} fill={blue} stroke={ink} strokeWidth={5} /><text y={8} fontSize={26 * (1 - 0.3 * t)} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">US</text></g>
+        {poles.map(([lab, x, y, c], i) => <g key={i} opacity={t} transform={`translate(${x} ${y})`}><circle r={72 * t} fill={c} stroke={ink} strokeWidth={4} /><text y={6} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{lab}</text></g>)}
+        <text x={VW / 2} y={476} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">from one superpower to many</text>
+      </svg>
+    );
+  } else if (m === "pppcross") {
+    // China's economy crossing the US on a purchasing-power basis.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const us = "M 100 300 L 300 270 L 500 250 L 700 235 L 880 225";
+    const cn = "M 100 420 L 300 350 L 500 268 L 700 200 L 880 150";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={90} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}>
+          <RPath d={us} stroke={blue} strokeWidth={6} seed={3} />
+          <RPath d={cn} stroke={red} strokeWidth={6} seed={6} />
+        </g>
+        {rev > 0.52 && <circle cx={525} cy={260} r={10} fill={ink} />}
+        {rev > 0.9 && <g><text x={824} y={214} fontSize={18} fontWeight={900} fill={blue} textAnchor="middle" fontFamily={sans}>US</text><text x={824} y={136} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>China</text></g>}
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">on some measures, already overtaken</text>
+      </svg>
+    );
+  } else if (m === "debtburden") {
+    // A mountain of national debt with rising interest.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(470 400)">
+          <path d={`M -220 0 L 0 ${-340 * grow} L 220 0 Z`} fill={tan} stroke={ink} strokeWidth={5} />
+          <text y={-120} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif" opacity={grow}>$36 trillion</text>
+        </g>
+        {grow > 0.6 && <g opacity={interpolate(grow, [0.6, 1], [0, 1], clampBoth)}><rect x={700} y={130} width={210} height={60} rx={8} fill={red} stroke={ink} strokeWidth={3} /><text x={805} y={168} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>interest ↑↑</text></g>}
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a mountain of debt, and rising interest</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

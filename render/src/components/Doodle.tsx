@@ -81,6 +81,8 @@ export type DoodleName =
   | "bull" | "bear"
   // EP045 (fund types) additions:
   | "pie" | "rope"
+  // EP046 (US dominance ending) additions:
+  | "chessking" | "risingcity"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1596,6 +1598,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={26} cy={32} d={10} fill={GOLD} strokeWidth={1.4} />
           <RCircle cx={74} cy={32} d={10} fill={GOLD} strokeWidth={1.4} />
           <RPath d="M26 42 Q50 72 74 42" fill="none" stroke={RED} strokeWidth={5} />
+        </>
+      );
+
+    // ---- EP046 (US dominance ending) doodles ----
+    case "chessking":
+      // A chess king — global power and strategy.
+      return (
+        <>
+          <RLine x1={44} y1={26} x2={56} y2={26} strokeWidth={3} />
+          <RLine x1={50} y1={20} x2={50} y2={36} strokeWidth={3} />
+          <RPath d="M38 44 Q50 34 62 44 L58 76 L42 76 Z" fill={GOLD} strokeWidth={SW} />
+          <RRect x={34} y={76} w={32} h={10} fill={GOLD} strokeWidth={SW} />
+        </>
+      );
+    case "risingcity":
+      // A skyline of growing towers — emerging economies.
+      return (
+        <>
+          <RRect x={22} y={60} w={14} h={24} fill={GREEN} strokeWidth={SW} />
+          <RRect x={40} y={46} w={14} h={38} fill={GREEN} strokeWidth={SW} />
+          <RRect x={58} y={30} w={14} h={54} fill={GREEN} strokeWidth={SW} />
+          <RPath d="M18 32 L30 24 M34 28 L46 20" fill="none" stroke={INK} strokeWidth={2} />
         </>
       );
   }
