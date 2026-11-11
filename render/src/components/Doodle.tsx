@@ -61,6 +61,8 @@ export type DoodleName =
   | "dice" | "slotmachine"
   // EP035 (why markets panic when central banks speak) additions:
   | "podium" | "megaphone"
+  // EP036 (how scammers rig the stock market) additions:
+  | "telephone" | "stockscreen"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1354,6 +1356,23 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={54} y={34} w={14} h={32} fill="#b83227" strokeWidth={1.4} />
           <RPath d="M74 36 Q84 50 74 64" fill="none" strokeWidth={2.6} />
           <RLine x1={30} y1={58} x2={30} y2={74} strokeWidth={SW} />
+        </>
+      );
+
+    // ---- EP036 (how scammers rig the stock market) doodles ----
+    case "telephone":
+      // A classic handset — the boiler-room cold call.
+      return (
+        <RPath d="M30 26 Q36 20 44 26 L50 40 Q46 46 42 44 Q36 58 50 72 Q52 68 58 72 L72 78 Q78 86 72 92 Q48 96 30 68 Q18 44 30 26 Z" fill={INK} strokeWidth={SW} />
+      );
+    case "stockscreen":
+      // A trading monitor with a candlestick chart.
+      return (
+        <>
+          <RRect x={18} y={22} w={64} h={48} fill="#17120f" strokeWidth={SW} />
+          <RPath d="M24 60 L36 50 L46 56 L58 36 L68 44 L76 30" fill="none" stroke={GREEN} strokeWidth={2.8} />
+          <RLine x1={40} y1={80} x2={60} y2={80} strokeWidth={SW} />
+          <RLine x1={50} y1={70} x2={50} y2={80} strokeWidth={SW} />
         </>
       );
   }

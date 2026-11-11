@@ -2427,6 +2427,79 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={25} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">don't fight the Fed</text>
       </svg>
     );
+  } else if (m === "pumpdump") {
+    // Hype pumps the price, insiders sell the top, the crowd eats the crash.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.4], [0, 1], clampBoth);
+    const path = "M 90 400 L 210 360 L 310 280 L 410 160 L 470 92 L 540 240 L 650 384 L 820 438";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={440} x2={VW - 40} y2={440} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={gold} strokeWidth={7} seed={5} /></g>
+        {rev > 0.32 && rev < 0.58 && <text x={300} y={250} fontSize={22} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">PUMP — hype it</text>}
+        {rev > 0.55 && <g><circle cx={470} cy={92} r={9} fill={red} /><text x={470} y={66} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">insiders sell</text></g>}
+        {rev > 0.85 && <text x={720} y={404} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">DUMP — on you</text>}
+        <text x={VW / 2} y={490} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">pump the hype, dump on the crowd</text>
+      </svg>
+    );
+  } else if (m === "spoofing") {
+    // A huge fake order flashes to fool the book, then vanishes before it fills.
+    const phase = (frame / (fps * 1.2)) % 1;
+    const show = phase < 0.6;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={110} fontSize={24} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>the order book</text>
+        {[0, 1, 2].map((i) => <rect key={i} x={340} y={160 + i * 44} width={120} height={32} rx={4} fill={blue} stroke={ink} strokeWidth={2} />)}
+        <g opacity={show ? 1 : 0.08}>
+          <rect x={330} y={300} width={380} height={50} rx={6} fill={red} stroke={ink} strokeWidth={3} />
+          <text x={520} y={332} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>HUGE fake buy order</text>
+        </g>
+        {!show && <text x={520} y={332} fontSize={24} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">…gone</text>}
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">fake orders that vanish before they fill</text>
+      </svg>
+    );
+  } else if (m === "washtrade") {
+    // One entity buys and sells to itself, faking volume.
+    const t = frame * 4;
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 260)">
+          <circle r={130} fill="none" stroke={ink} strokeWidth={4} strokeDasharray="8 8" />
+          <g transform={`rotate(${t})`}><circle cx={0} cy={-130} r={16} fill={gold} stroke={ink} strokeWidth={3} /><text x={0} y={-124} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>
+          <rect x={-62} y={-24} width={124} height={48} rx={8} fill={ink} /><text y={8} fontSize={18} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>same guy</text>
+          <text x={-168} y={6} fontSize={18} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>buys</text>
+          <text x={168} y={6} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>sells</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">trading with yourself to fake volume</text>
+      </svg>
+    );
+  } else if (m === "frontrun") {
+    // A broker jumps ahead of a big client order to profit from it.
+    const jump = interpolate(frame, [fps * 0.8, fps * 1.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(690 260)"><rect x={-92} y={-52} width={184} height={104} rx={10} fill={blue} stroke={ink} strokeWidth={4} /><text y={-6} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>BIG client</text><text y={22} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>buy order</text></g>
+        <g transform={`translate(${520 - jump * 150} 260)`}><circle r={36} fill={red} stroke={ink} strokeWidth={4} /><text y={6} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>broker</text></g>
+        {jump > 0.8 && <text x={350} y={196} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">buys first!</text>}
+        <path d="M300 350 l250 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={4} fill="none" strokeLinecap="round" />
+        <text x={VW / 2} y={470} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">jump ahead of the client's order</text>
+      </svg>
+    );
+  } else if (m === "flashcrash") {
+    // The market plunges vertically in minutes, then snaps back.
+    const clipId = React.useId().replace(/:/g, "");
+    const rev = interpolate(frame, [6, fps * 2.2], [0, 1], clampBoth);
+    const path = "M 90 200 L 300 200 L 400 212 L 432 432 L 470 432 L 520 232 L 880 222";
+    art = (
+      <svg width={VW} height={VH}>
+        <RLine x1={80} y1={452} x2={VW - 40} y2={452} stroke={ink} strokeWidth={3} />
+        <defs><clipPath id={clipId}><rect x={0} y={0} width={VW * rev} height={VH} /></clipPath></defs>
+        <g clipPath={`url(#${clipId})`}><RPath d={path} stroke={red} strokeWidth={6} seed={4} /></g>
+        {rev > 0.45 && rev < 0.72 && <text x={452} y={424} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">−1000 pts in minutes</text>}
+        <text x={VW / 2} y={492} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">algorithms crash it in seconds</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

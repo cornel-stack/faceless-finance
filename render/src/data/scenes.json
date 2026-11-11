@@ -2,825 +2,763 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "A quiet man in a gray suit walks up to a microphone, clears his throat, and reads a few careful sentences. Within seconds, trillions of dollars move around the world.",
+    "narration": "The stock market looks like a fair auction. Millions of buyers and sellers, a transparent price, everyone playing by the same rules. For most of us, most of the time, that's true.",
     "pose": "explain",
     "props": [
       {
-        "name": "podium",
-        "label": "a few careful words"
+        "name": "stockscreen",
+        "label": "looks like a fair auction"
       }
     ]
   },
   {
     "id": "s2",
     "type": "character",
-    "narration": "He didn't pass a law. He didn't launch a product. He just… talked. And stock markets lurched, mortgage rates twitched, and currencies swung — all on his word choice.",
+    "narration": "But underneath, there's a whole hidden menu of tricks designed to tilt that game before you ever place a bet. Fake demand, fake supply, fake information — all quietly rigging the price.",
     "pose": "think",
-    "bubble": "how do WORDS do that?"
+    "bubble": "how is it rigged?"
   },
   {
     "id": "s3",
     "type": "image",
-    "src": "img/powell.jpg",
-    "label": "JEROME POWELL",
-    "caption": "chaired the Fed, 2018–2026",
-    "narration": "This is the kind of person we mean. Jerome Powell, who chaired the US Federal Reserve. When he spoke, every trader on Earth leaned in to parse each syllable."
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "'the market is perfectly fair'",
+    "memeBottom": "spoofers, pumpers & insiders at work",
+    "narration": "Some of these tricks are ancient. Some are brand new and run by algorithms in millionths of a second. All of them have one goal: to separate you from your money."
   },
   {
     "id": "s4",
-    "type": "callout",
-    "narration": "A single central-bank meeting can move stock and bond markets by trillions of dollars — more than almost any company on the planet could ever manage.",
-    "text": "$trillions",
-    "sub": "moved by a short statement",
-    "icon": "megaphone"
+    "type": "screenshot",
+    "narration": "The umbrella term is market manipulation — when someone intentionally alters the supply or demand of a security to influence its price.",
+    "sourceId": "wiki-manipulation"
   },
   {
-    "id": "s62",
+    "id": "s58",
     "type": "character",
-    "narration": "And they're juggling two goals at once, often called the dual mandate: keep people employed, and keep prices stable. Those two aims constantly pull in opposite directions.",
+    "narration": "And a fair price only means something if three things are honest: real supply, real demand, and real information. Every scam in this video is just an attack on one of those three.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "jobs vs prices"
+        "label": "supply · demand · info"
       }
     ]
   },
   {
     "id": "s5",
-    "type": "character",
-    "narration": "So why does the entire financial world hang on the words of a handful of unelected officials? The answer is one of the most important ideas in all of finance.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "the most-watched words"
-      }
-    ]
+    "type": "callout",
+    "narration": "It is illegal, it is everywhere, and most of its victims never even realize a game was being played on them.",
+    "text": "mostly invisible",
+    "sub": "and usually illegal",
+    "icon": "warning"
   },
   {
     "id": "s6",
     "type": "title",
-    "narration": "Let's run the numbers on why markets panic the moment central banks open their mouths.",
-    "heading": "Why Markets Panic When Central Banks Speak",
-    "kicker": "when words move trillions",
-    "sub": "the power of the podium"
+    "narration": "So let's run the numbers on the most common ways scammers rig the market — and how to spot them.",
+    "heading": "How Scammers Rig the Stock Market",
+    "kicker": "the manipulation playbook",
+    "sub": "fake supply, demand & information"
   },
   {
     "id": "s7",
     "type": "title",
-    "narration": "Start with what a central bank actually does — because it is not a normal bank at all.",
-    "heading": "What the Fed Does",
-    "kicker": "the bank above the banks"
+    "narration": "Start with the most famous trick of all — the one Hollywood made a movie about.",
+    "heading": "Pump and Dump",
+    "kicker": "hype it, then dump it"
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "narration": "A central bank is the institution that manages the monetary policy of a country or monetary union. It sits above the ordinary banks you and I use.",
-    "sourceId": "wiki-centralbank"
+    "narration": "A pump and dump artificially inflates the price of an owned stock through false and misleading positive statements — the pump — so the scammer can sell high.",
+    "sourceId": "wiki-pumpdump"
   },
   {
     "id": "s9",
-    "type": "screenshot",
-    "narration": "In the United States, that's the Federal Reserve — the central banking system of the United States, created in 1913 after a wave of financial panics.",
-    "sourceId": "wiki-fed"
-  },
-  {
-    "id": "s63",
-    "type": "timeline",
-    "title": "When central-bank words made history",
-    "narration": "A quick tour of the greatest hits. Volcker's resolve in 1979. Greenspan's warning in 1996. The 2008 rescue. Draghi's three words in 2012. The taper tantrum in 2013. And the flood of 2020.",
-    "events": [
-      {
-        "year": "1979",
-        "label": "Volcker",
-        "icon": "podium"
-      },
-      {
-        "year": "1996",
-        "label": "'exuberance'",
-        "icon": "chartdown"
-      },
-      {
-        "year": "2008",
-        "label": "QE begins",
-        "icon": "printer"
-      },
-      {
-        "year": "2012",
-        "label": "'whatever it takes'",
-        "icon": "megaphone"
-      },
-      {
-        "year": "2013",
-        "label": "taper tantrum",
-        "icon": "warning"
-      },
-      {
-        "year": "2020",
-        "label": "'unlimited'",
-        "icon": "bomb"
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s10",
-    "type": "screenshot",
-    "narration": "Its job, broadly, is monetary policy aimed at goals like high employment and stable prices. In practice, that means controlling one magical thing: the price of money.",
-    "sourceId": "wiki-monetary"
-  },
-  {
-    "id": "s11",
     "type": "character",
-    "narration": "And the price of money has a name: the interest rate. It's what it costs to borrow, and what you earn to save. The central bank sets the benchmark that everything else is built on.",
+    "narration": "The recipe is simple. First, quietly buy a huge pile of some tiny, cheap stock almost nobody is watching. You now own most of it, dirt cheap.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "money has a price"
+        "name": "coins",
+        "label": "1. buy it cheap"
+      }
+    ]
+  },
+  {
+    "id": "s10",
+    "type": "character",
+    "narration": "Then, hype it relentlessly. Hot tips, breathless messages, fake news of a 'can't-miss' opportunity. Excited new buyers pile in, and the price rockets up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "megaphone",
+        "label": "2. hype it hard"
+      }
+    ]
+  },
+  {
+    "id": "s11",
+    "type": "stage",
+    "narration": "And at the peak — while the crowd is euphoric and buying — the scammer quietly dumps their entire stack. The price collapses, and everyone who believed the hype is left holding the wreckage.",
+    "motif": "pumpdump",
+    "caption": "pump the hype, dump on the crowd"
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "Social media turbocharged this. A coordinated crowd in a chat room can now pump a stock in hours, with coordinated 'to the moon' hype — and someone at the top is always quietly selling into it.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "phone",
+        "label": "the group-chat pump"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "screenshot",
-    "narration": "The key one in the US is the federal funds rate — an important benchmark in financial markets that ripples out into almost every other rate.",
-    "sourceId": "wiki-fedfunds"
+    "type": "image",
+    "src": "img/belfort.jpg",
+    "label": "JORDAN BELFORT",
+    "caption": "the 'Wolf of Wall Street'",
+    "narration": "The most infamous practitioner is Jordan Belfort — the 'Wolf of Wall Street' — who ran exactly this scam on cheap stocks and was convicted of fraud for it."
   },
   {
     "id": "s13",
-    "type": "stage",
-    "narration": "Think of it as one giant lever. The central bank nudges that single rate — and mortgages, car loans, business lending, savings accounts, and stock prices all swing in response.",
-    "motif": "ratelever",
-    "caption": "one rate moves the whole economy"
+    "type": "screenshot",
+    "narration": "His weapon was the boiler room — an outbound call center selling questionable investments by telephone, using high-pressure, dishonest sales tactics.",
+    "sourceId": "wiki-boiler"
   },
   {
-    "id": "s64",
+    "id": "s60",
     "type": "character",
-    "narration": "But the lever is slow and sticky. Economists say rate changes hit the economy with 'long and variable lags' — the full effect can take a year or more to arrive, which makes the job maddeningly hard.",
+    "narration": "These scams are a century old. In the 1920s, shady 'bucket shops' let people bet on stock prices that the shop itself secretly controlled — the original rigged game.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "long, variable lags"
+        "name": "telephone",
+        "label": "bucket shops, 1920s"
       }
     ]
   },
   {
     "id": "s14",
     "type": "character",
-    "narration": "When they cut rates, borrowing gets cheap, money floods in, and asset prices tend to rise. When they raise rates, money gets expensive, and the party cools down fast.",
+    "narration": "Rooms full of slick salespeople cold-call strangers, pushing worthless 'penny stocks' with scripted urgency. 'It's moving right now — you have to buy today.' It's theater, engineered to switch off your caution.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "chartup",
-        "label": "cheap money lifts prices"
+        "name": "telephone",
+        "label": "high-pressure cold calls"
       }
     ]
-  },
-  {
-    "id": "s65",
-    "type": "chart",
-    "chartType": "line",
-    "title": "A typical hiking cycle (policy rate, %)",
-    "unit": "%",
-    "narration": "So they move the rate in steps across a whole cycle — from near zero, up and up to cool an overheating economy, then back down again when the danger passes.",
-    "data": [
-      {
-        "label": "'21",
-        "value": 0
-      },
-      {
-        "label": "'22",
-        "value": 2
-      },
-      {
-        "label": "'23",
-        "value": 5
-      },
-      {
-        "label": "'24",
-        "value": 5
-      },
-      {
-        "label": "'25",
-        "value": 3
-      }
-    ],
-    "highlight": 2
   },
   {
     "id": "s15",
-    "type": "title",
-    "narration": "But here's the subtle part — the part that makes markets so twitchy. It's not just what they do. It's what they say they'll do.",
-    "heading": "The Price of the Future",
-    "kicker": "why talk matters"
+    "type": "character",
+    "narration": "Today the boiler room has gone digital. The cold call became the group chat, the spam text, the influencer 'alert,' and the too-good-to-be-true direct message. Same scam, bigger reach.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "phone",
+        "label": "now it's your DMs"
+      }
+    ]
   },
   {
     "id": "s16",
-    "type": "character",
-    "narration": "Markets are not really about today. A stock price is a bet on all the future profits a company will ever make. So prices move on expectations of the future, not the present.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "prices = future bets"
-      }
-    ]
+    "type": "title",
+    "narration": "The next trick is invisible to the human eye — it happens in the machines.",
+    "heading": "Spoofing",
+    "kicker": "fake orders, real lies"
   },
   {
     "id": "s17",
-    "type": "character",
-    "narration": "And interest rates are the yardstick for measuring that future. A higher rate makes a dollar next year worth less today — which quietly lowers the value of almost every asset at once.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "rates value the future"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Spoofing is a disruptive algorithmic trading tactic. Spoofers feign interest in trading, creating an illusion of the demand and supply of the traded asset.",
+    "sourceId": "wiki-spoofing"
   },
   {
     "id": "s18",
     "type": "character",
-    "narration": "So if the central bank even hints that rates will rise, traders don't wait. They reprice everything immediately — today — based on a future that hasn't happened yet.",
+    "narration": "Here's how it works. A trader places a giant order to buy — making everyone think big demand has arrived — but they never intend to actually complete it.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "ticker",
-        "label": "they move on the hint"
-      }
-    ]
-  },
-  {
-    "id": "s66",
-    "type": "character",
-    "narration": "And there's an even scarier enforcer lurking behind them: the bond market. If investors don't believe a central bank will control inflation, they dump bonds — and force rates up anyway.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "bond",
-        "label": "the bond market bites back"
+        "name": "stockscreen",
+        "label": "a huge fake order"
       }
     ]
   },
   {
     "id": "s19",
-    "type": "title",
-    "narration": "Central banks figured this out, and turned talk itself into a tool. It even has a name.",
-    "heading": "Forward Guidance",
-    "kicker": "steering with words"
+    "type": "stage",
+    "narration": "Other traders and algorithms see the fake wall of demand and rush in. The price ticks up — and the instant it does, the spoofer cancels the fake order and sells into the buyers they just tricked.",
+    "motif": "spoofing",
+    "caption": "fake orders that vanish before they fill"
   },
   {
     "id": "s20",
-    "type": "screenshot",
-    "narration": "It's called forward guidance — a tool used by a central bank to influence market expectations of future levels of interest rates. In plain English: steering the market by telling it what's probably coming.",
-    "sourceId": "wiki-forward"
-  },
-  {
-    "id": "s67",
     "type": "character",
-    "narration": "This openness is new. For decades the Fed was deliberately secret — it didn't even announce its rate decisions until 1994. Markets had to guess by watching its market operations.",
+    "narration": "It happens in milliseconds, thousands of times a day. You'd never see it. But regulators have fined banks and traders hundreds of millions of dollars for exactly this.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "padlock",
-        "label": "secret until 1994"
+        "name": "warning",
+        "label": "fined by the millions"
+      }
+    ]
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "narration": "And the fines are staggering. In 2020, one major bank paid about nine hundred and twenty million dollars to settle spoofing charges — the biggest penalty of its kind.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "warning",
+        "label": "$920M spoofing fine"
       }
     ]
   },
   {
     "id": "s21",
-    "type": "stage",
-    "narration": "Done well, they barely have to act at all. Just signposting where rates are heading makes markets move there on their own — the hint does the heavy lifting.",
-    "motif": "forwardguidance",
-    "caption": "markets move on the hint, not the act"
+    "type": "title",
+    "narration": "A close cousin fakes something else entirely: how much a stock is even being traded.",
+    "heading": "Wash Trading",
+    "kicker": "faking the volume"
   },
   {
     "id": "s22",
-    "type": "character",
-    "narration": "Which is why every word is weighed like gold. Do they say rates will stay low for a 'considerable time,' or just 'a while'? Are they 'patient,' or merely 'data-dependent'? Each phrase is a signal.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "megaphone",
-        "label": "every word is parsed"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Wash trading is manipulation where an entity simultaneously sells and buys the same instrument — creating a false impression of market activity.",
+    "sourceId": "wiki-wash"
   },
   {
     "id": "s23",
     "type": "stage",
-    "narration": "So a single adjective — swapped in or quietly dropped from a statement — can send markets soaring or crashing in minutes. One word really can move trillions.",
-    "motif": "fedspeak",
-    "caption": "one word moves trillions"
+    "narration": "Basically, you trade with yourself. Buy and sell the same thing back and forth, generating tons of fake volume to make a dead stock look hot and exciting — luring in real buyers.",
+    "motif": "washtrade",
+    "caption": "trading with yourself to fake volume"
   },
   {
-    "id": "s68",
+    "id": "s24",
     "type": "character",
-    "narration": "They even publish a chart of their own guesses, nicknamed the 'dot plot' — each official's forecast for where rates are heading. Markets pore over those dots like tea leaves.",
+    "narration": "It's especially rampant in lightly-regulated corners, where 'trending' and 'high volume' are exactly the signals naive investors chase. The activity is real; the interest behind it is a complete fiction.",
     "pose": "explain",
     "props": [
       {
         "name": "ticker",
-        "label": "the 'dot plot'"
+        "label": "fake 'hot' activity"
       }
     ]
   },
   {
-    "id": "s24",
-    "type": "title",
-    "narration": "This gave rise to a strange, almost theatrical language all its own.",
-    "heading": "Fed Speak",
-    "kicker": "the art of saying nothing"
+    "id": "s62",
+    "type": "timeline",
+    "title": "A century of market rigging",
+    "narration": "This is a very old story. Bucket shops in the 1920s. Ivan Boesky's insider ring in the 80s. Belfort's boiler room in the 90s. The flash crash in 2010. And record spoofing fines in 2020.",
+    "events": [
+      {
+        "year": "1920s",
+        "label": "bucket shops",
+        "icon": "telephone"
+      },
+      {
+        "year": "1986",
+        "label": "insider ring",
+        "icon": "handcuffs"
+      },
+      {
+        "year": "1990s",
+        "label": "boiler rooms",
+        "icon": "megaphone"
+      },
+      {
+        "year": "2010",
+        "label": "flash crash",
+        "icon": "chartdown"
+      },
+      {
+        "year": "2020",
+        "label": "spoofing fines",
+        "icon": "warning"
+      }
+    ],
+    "highlight": 3
   },
   {
     "id": "s25",
-    "type": "character",
-    "narration": "Central bankers speak in deliberately vague, hedged, careful language — sometimes called 'Fed speak.' The goal is to guide markets without ever boxing themselves in.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "podium",
-        "label": "deliberately vague"
-      }
-    ]
+    "type": "title",
+    "narration": "The next one doesn't fake demand — it fakes the story, to crash a price on purpose.",
+    "heading": "Short and Distort",
+    "kicker": "lie it down"
   },
   {
     "id": "s26",
-    "type": "image",
-    "src": "img/greenspan.jpg",
-    "label": "ALAN GREENSPAN",
-    "caption": "the master of vague",
-    "narration": "The grand master was Alan Greenspan, who chaired the Fed for nearly two decades. He once joked that if you understood what he'd said, he must have misspoken."
+    "type": "screenshot",
+    "narration": "Short and distort is securities fraud where investors short sell a stock and then spread negative rumors to drive the price down.",
+    "sourceId": "wiki-shortdistort"
   },
   {
-    "id": "s69",
+    "id": "s63",
     "type": "character",
-    "narration": "The theater got absurd. For years, analysts literally measured the thickness of Greenspan's briefcase on meeting days, convinced a fat one meant a rate change was coming.",
+    "narration": "One important distinction. Honest short selling — betting a stock will fall — is legal and useful. Short sellers helped expose frauds like Enron. The crime isn't the bet. It's deliberately spreading lies to force it true.",
     "pose": "explain",
     "props": [
       {
-        "name": "briefcase",
-        "label": "the briefcase indicator"
+        "name": "scale",
+        "label": "shorting ≠ the crime"
       }
     ]
   },
   {
     "id": "s27",
     "type": "character",
-    "narration": "In 1996, Greenspan wondered aloud whether markets were gripped by 'irrational exuberance.' Just two words — and stock markets around the world dropped overnight.",
+    "narration": "It's the evil twin of the pump and dump. Instead of hyping a stock you own, you bet against a stock — then spread scary lies about the company to make your bet pay off.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
         "name": "chartdown",
-        "label": "'irrational exuberance'"
+        "label": "bet down, then lie"
       }
     ]
   },
   {
     "id": "s28",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "pump a stock you own",
+    "memeBottom": "trash a stock you shorted",
+    "narration": "Pump or distort, the engine is identical: control the story, and you can move the price — regardless of what the company is actually worth."
+  },
+  {
+    "id": "s29",
+    "type": "title",
+    "narration": "Now the classic that needs no fake orders at all — just a secret.",
+    "heading": "Insider Trading",
+    "kicker": "playing with marked cards"
+  },
+  {
+    "id": "s30",
+    "type": "screenshot",
+    "narration": "Insider trading is trading a company's stock based on material, nonpublic information — knowing something market-moving before everyone else does.",
+    "sourceId": "wiki-insider"
+  },
+  {
+    "id": "s64",
+    "type": "image",
+    "src": "img/rajaratnam.jpg",
+    "label": "RAJ RAJARATNAM",
+    "caption": "hedge-fund insider ring",
+    "narration": "In one of the biggest cases ever, hedge-fund manager Raj Rajaratnam ran a vast insider-trading network — and was caught on wiretaps, then sentenced to eleven years in prison."
+  },
+  {
+    "id": "s31",
     "type": "character",
-    "narration": "Traders now talk about central banks being 'hawkish' or 'dovish.' Hawkish means leaning toward higher rates to fight inflation. Dovish means lower rates to support growth.",
+    "narration": "Imagine knowing a company will be bought out tomorrow at double the price. Buy today, and it's free money — stolen from the person on the other side who didn't have the secret.",
     "pose": "explain",
     "props": [
       {
-        "name": "gauge",
-        "label": "hawkish vs dovish"
+        "name": "handshake",
+        "label": "a market-moving secret"
       }
     ]
   },
   {
-    "id": "s70",
+    "id": "s65",
     "type": "image",
-    "src": "img/yellen.jpg",
-    "label": "JANET YELLEN",
-    "caption": "telegraphed every move",
-    "narration": "Later chairs leaned the other way, toward total clarity. Janet Yellen made a point of telegraphing moves far in advance — so that when they came, markets barely flinched."
-  },
-  {
-    "id": "s29",
-    "type": "compare",
-    "narration": "The whole market tries to sort every sentence into one of two buckets — and bets accordingly, often before the speaker has even finished talking.",
-    "left": {
-      "title": "Hawkish",
-      "value": "rates up, cool it down",
-      "icon": "chartdown"
-    },
-    "right": {
-      "title": "Dovish",
-      "value": "rates down, let it run",
-      "icon": "chartup"
-    }
-  },
-  {
-    "id": "s30",
-    "type": "title",
-    "narration": "To really feel the power of this, look at a few words that genuinely changed history.",
-    "heading": "The Famous Lines",
-    "kicker": "when words made history"
-  },
-  {
-    "id": "s31",
-    "type": "image",
-    "src": "img/volcker.jpg",
-    "label": "PAUL VOLCKER",
-    "caption": "the credibility to crush inflation",
-    "narration": "In the early 1980s, Paul Volcker didn't just raise rates toward twenty percent. He convinced the world he truly would do whatever it took — and that resolve is what finally broke inflation."
+    "src": "img/stewart.jpg",
+    "label": "MARTHA STEWART",
+    "caption": "a small trade, a big symbol",
+    "narration": "Even a relatively small, well-timed sale can bring you down. Martha Stewart famously served prison time in a case tied to suspiciously-timed trading — proof that nobody is too famous to be caught."
   },
   {
     "id": "s32",
     "type": "image",
-    "src": "img/draghi.jpg",
-    "label": "MARIO DRAGHI",
-    "caption": "'whatever it takes' — 2012",
-    "narration": "In 2012, with the euro on the brink of collapse, the European Central Bank's Mario Draghi said the currency would be defended, 'whatever it takes.'"
+    "src": "img/milken.jpg",
+    "label": "MICHAEL MILKEN",
+    "caption": "the 1980s junk-bond scandal",
+    "narration": "The 1980s were the golden age of this. Financier Michael Milken, the 'junk bond king,' sat at the center of a vast insider scandal — and was convicted of securities violations."
   },
   {
     "id": "s33",
-    "type": "callout",
-    "narration": "Those three words — 'whatever it takes' — calmed a continent-sized panic almost instantly, and the ECB barely had to spend a thing to back them up.",
-    "text": "3 words",
-    "sub": "that saved the euro",
-    "icon": "megaphone"
-  },
-  {
-    "id": "s34",
-    "type": "image",
-    "src": "img/memes/brain4.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "spend billions to calm markets",
-    "memeBottom": "say three words and calm them for free",
-    "narration": "That's the dream for a central banker: move the whole market with a sentence, and never have to open the wallet at all."
-  },
-  {
-    "id": "s35",
-    "type": "title",
-    "narration": "But words can cut the other way too — and cause the very panic they were meant to prevent.",
-    "heading": "The Taper Tantrum",
-    "kicker": "when a hint backfires"
-  },
-  {
-    "id": "s36",
-    "type": "image",
-    "src": "img/bernanke.jpg",
-    "label": "BEN BERNANKE",
-    "caption": "one hint, a global tantrum",
-    "narration": "In 2013, Fed chair Ben Bernanke merely hinted that the Fed might slow — 'taper' — its bond buying at some point in the future. He didn't actually do anything yet."
-  },
-  {
-    "id": "s37",
-    "type": "screenshot",
-    "narration": "Remember, since 2008 the Fed had been doing quantitative easing — purchasing huge amounts of government bonds to pump money into the system.",
-    "sourceId": "wiki-qe"
-  },
-  {
-    "id": "s71",
     "type": "character",
-    "narration": "This was the firepower behind the fear. After the 2008 crisis, the Fed created money on a vast scale and bought trillions in bonds — proof that it truly could do what it threatened.",
+    "narration": "It's hard to detect, because it hides inside perfectly normal-looking trades. But when regulators catch it, the prison sentences are long — because it strikes at the market's one essential promise: a level playing field.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "prison",
+        "label": "serious prison time"
+      }
+    ]
+  },
+  {
+    "id": "s66",
+    "type": "character",
+    "narration": "Catching it takes serious firepower: wiretaps, informants, and software that flags a suspiciously perfect trade placed just before big news. Insiders feel invisible — right up until they aren't.",
     "pose": "explain",
     "props": [
       {
-        "name": "printer",
-        "label": "trillions, conjured"
+        "name": "padlock",
+        "label": "wiretaps & pattern-spotting"
+      }
+    ]
+  },
+  {
+    "id": "s34",
+    "type": "title",
+    "narration": "The next trick is quieter, faster, and may be happening to your trades right now.",
+    "heading": "Front Running",
+    "kicker": "cutting the line"
+  },
+  {
+    "id": "s35",
+    "type": "screenshot",
+    "narration": "Front running is trading to capitalize on advance, nonpublic knowledge of a large pending transaction that will move the price.",
+    "sourceId": "wiki-frontrun"
+  },
+  {
+    "id": "s36",
+    "type": "stage",
+    "narration": "Say a broker sees a huge client order about to hit. If they quickly buy for themselves first, then let the big order push the price up, they pocket the difference — by jumping ahead of their own customer.",
+    "motif": "frontrun",
+    "caption": "jump ahead of the client's order"
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "In the modern market, the fastest computers do a legal-grey version of this at light speed — spotting your order and darting ahead of it in microseconds to skim a tiny slice, millions of times a day.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "server",
+        "label": "the speed-of-light skim"
+      }
+    ]
+  },
+  {
+    "id": "s67",
+    "type": "character",
+    "narration": "This is the world of the book 'Flash Boys': high-frequency firms paying for a head start, then racing ahead of ordinary orders through hidden venues called 'dark pools.'",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "server",
+        "label": "'Flash Boys' & dark pools"
       }
     ]
   },
   {
     "id": "s38",
-    "type": "stage",
-    "narration": "Just the hint of pulling back was enough. Bond yields spiked, markets lurched worldwide, and money fled emerging economies. They named it the 'taper tantrum.'",
-    "motif": "tapertantrum",
-    "caption": "one word, a global tantrum"
+    "type": "title",
+    "narration": "And when enough of these machines interact at once, they can break the whole market in an instant.",
+    "heading": "The Flash Crash",
+    "kicker": "when the algos panic"
   },
   {
-    "id": "s72",
+    "id": "s68",
     "type": "character",
-    "narration": "And the pain went global. As US yields jumped during the taper tantrum, money yanked out of emerging economies overnight — their currencies and markets tumbling on a hint aimed at America.",
+    "narration": "Ever wonder why your trading app is 'free'? Often it sells your orders to big trading firms — a practice called payment for order flow. You're not the customer; your order is the product.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "globe",
-        "label": "the whole world felt it"
+        "name": "stockscreen",
+        "label": "why your app is 'free'"
       }
     ]
   },
   {
     "id": "s39",
+    "type": "screenshot",
+    "narration": "On May 6th, 2010, the US market suffered a trillion-dollar 'flash crash' — a staggering plunge that lasted only about thirty-six minutes.",
+    "sourceId": "wiki-flashcrash"
+  },
+  {
+    "id": "s40",
+    "type": "stage",
+    "narration": "In minutes, major stocks lost almost all their value, then bounced back. Investigators later tied part of it to a trader spoofing fake orders — a single manipulator helping tip a cascade of panicking algorithms.",
+    "motif": "flashcrash",
+    "caption": "algorithms crash it in seconds"
+  },
+  {
+    "id": "s41",
     "type": "character",
-    "narration": "Nothing had actually changed yet. No bond had been sold. The markets panicked purely over a shift in expectations about the future. That's how powerful mere words have become.",
+    "narration": "It was a terrifying glimpse of how fragile a machine-driven market can be — and how a little manipulation, at the wrong moment, can ripple into chaos.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
         "name": "warning",
-        "label": "panic over a hint"
+        "label": "fragile machinery"
       }
     ]
   },
   {
-    "id": "s40",
-    "type": "title",
-    "narration": "So why does this trigger outright panic, rather than a calm little adjustment?",
-    "heading": "Why Panic?",
-    "kicker": "the herd and the leverage"
-  },
-  {
-    "id": "s41",
+    "id": "s69",
     "type": "character",
-    "narration": "Reason one: everyone is watching the exact same signal at the exact same moment. When millions of traders all react to one sentence at once, small moves become stampedes.",
+    "narration": "There's an even older trick: cornering a market. In 1980, two brothers tried to buy up almost all the world's silver to control the price — before the whole scheme collapsed on them spectacularly.",
     "pose": "explain",
     "props": [
       {
-        "name": "crowd",
-        "label": "everyone reacts at once"
+        "name": "goldbar",
+        "label": "cornering a market"
       }
     ]
   },
   {
     "id": "s42",
-    "type": "character",
-    "narration": "Reason two: leverage. So much of the market runs on borrowed money, and borrowing costs depend directly on these rates. A rate surprise can trigger forced selling in seconds.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "bank",
-        "label": "leverage amplifies it"
-      }
-    ]
+    "type": "title",
+    "narration": "So if the market is this riggable, why isn't it total anarchy?",
+    "heading": "The Watchdogs",
+    "kicker": "why it mostly holds together"
   },
   {
     "id": "s43",
     "type": "character",
-    "narration": "Reason three: central banks are, quite simply, the biggest players in the room. They can create money and buy assets at a scale no hedge fund could ever dream of matching.",
+    "narration": "The honest answer: most of the time, it mostly works. Regulators run huge surveillance systems, scanning for odd patterns, and the penalties — fines and prison — are real deterrents.",
     "pose": "explain",
     "props": [
       {
-        "name": "printer",
-        "label": "they can print money"
+        "name": "scale",
+        "label": "surveillance & penalties"
       }
     ]
   },
   {
-    "id": "s73",
+    "id": "s70",
     "type": "character",
-    "narration": "In 2020, as the pandemic hit, the Fed effectively promised unlimited support — buying bonds without a stated cap. Markets, which had been crashing, turned on a dime and roared back.",
+    "narration": "And regulators now pay for help. Whistleblowers who report serious fraud can collect a slice of the fines — turning insiders' own colleagues into a small army of watchers.",
     "pose": "explain",
     "props": [
       {
-        "name": "bomb",
-        "label": "2020: 'unlimited'"
+        "name": "shield",
+        "label": "whistleblower bounties"
       }
     ]
   },
   {
     "id": "s44",
-    "type": "stage",
-    "narration": "Which leads to Wall Street's oldest rule of survival: don't fight the Fed. Betting against the institution that can conjure unlimited money is a very fast way to lose.",
-    "motif": "dontfightthefed",
-    "caption": "don't fight the Fed"
-  },
-  {
-    "id": "s74",
     "type": "character",
-    "narration": "Over time this bred a belief traders call the 'Fed put' — a quiet faith that whenever markets fall far enough, the central bank will always ride in to rescue them.",
+    "narration": "But enforcement is a step behind the scammers, especially in new, fast, or lightly-regulated markets. The rigging never fully stops — it just moves to wherever the watchdogs aren't yet looking.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "shield",
-        "label": "the 'Fed put'"
+        "name": "padlock",
+        "label": "always a step behind"
+      }
+    ]
+  },
+  {
+    "id": "s71",
+    "type": "character",
+    "narration": "The newest frontier is crypto and finfluencers. Lightly regulated tokens and paid-for 'alerts' have revived every old trick at once — pump-and-dumps and wash trades, running wide open, all day.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "token",
+        "label": "crypto's wild west"
       }
     ]
   },
   {
     "id": "s45",
-    "type": "image",
-    "src": "img/memes/onedoesnot.jpg",
-    "meme": "One Does Not Simply",
-    "memeTop": "one does not simply",
-    "memeBottom": "out-print the money printer",
-    "narration": "You can disagree with the central bank all you like. But in a staring contest with the people who print the money, you tend to blink first."
+    "type": "title",
+    "narration": "Which means your best protection isn't the regulator. It's you.",
+    "heading": "How to Protect Yourself",
+    "kicker": "don't be the exit liquidity"
   },
   {
     "id": "s46",
-    "type": "title",
-    "narration": "All of which creates a genuinely strange situation for the modern economy.",
-    "heading": "The Paradox",
-    "kicker": "ruling by expectation"
+    "type": "character",
+    "narration": "Rule one: treat every hot tip as a red flag. If a stranger online, a group chat, or a slick caller is urging you to buy some obscure stock right now, you are probably the dump, not the winner.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "megaphone",
+        "label": "hot tip = red flag"
+      }
+    ]
+  },
+  {
+    "id": "s72",
+    "type": "character",
+    "narration": "And watch for the magic phrase: 'guaranteed returns.' No honest investment can promise that. The moment you hear it, you are almost certainly being set up as someone's exit.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "warning",
+        "label": "'guaranteed' = lie"
+      }
+    ]
   },
   {
     "id": "s47",
-    "type": "character",
-    "narration": "The central bank's most powerful tool is no longer just money. It's expectations — the stories markets tell themselves about what comes next. They manage a mood as much as a money supply.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "brain",
-        "label": "managing expectations"
-      }
-    ]
-  },
-  {
-    "id": "s75",
     "type": "image",
-    "src": "img/lagarde.jpg",
-    "label": "CHRISTINE LAGARDE",
-    "caption": "now leads the ECB",
-    "narration": "And this isn't just an American story. Every major economy has its own version — like Christine Lagarde at the European Central Bank — and the entire world listens to all of them."
+    "src": "img/memes/gru.jpg",
+    "meme": "Gru's Plan",
+    "memeTop": "buy the stock a DM hyped",
+    "memeBottom": "be the one left holding it",
+    "narration": "The people pumping a stock to you are not your friends. By the time the tip reaches you, you're usually the last buyer they need."
   },
   {
     "id": "s48",
-    "type": "screenshot",
-    "narration": "The committee that actually makes these calls, the Federal Open Market Committee, makes key decisions about interest rates — and every word of its statement is dissected for hours.",
-    "sourceId": "wiki-fomc"
-  },
-  {
-    "id": "s76",
     "type": "character",
-    "narration": "On decision day, pros read three things in order: the official statement, then the forecasts, then the press conference — hunting for any gap between what was written and what gets said out loud.",
-    "pose": "explain",
+    "narration": "Rule two: avoid tiny, illiquid penny stocks. Manipulation thrives where a stock is cheap, obscure, and easy to push around. The big, boring, heavily-traded stuff is far harder to rig.",
+    "pose": "present",
     "props": [
       {
-        "name": "newspaper",
-        "label": "statement, dots, presser"
+        "name": "stockscreen",
+        "label": "skip the penny stocks"
       }
     ]
+  },
+  {
+    "id": "s73",
+    "type": "compare",
+    "narration": "So keep the two worlds straight. Real investing is slow, diversified, and boring. Manipulation is fast, concentrated, and thrilling. If it feels like a thrilling tip, it's probably the trap.",
+    "left": {
+      "title": "Real investing",
+      "value": "slow & boring",
+      "icon": "basket"
+    },
+    "right": {
+      "title": "The rig",
+      "value": "fast & thrilling",
+      "icon": "stockscreen"
+    }
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "So they walk a tightrope. Say too little, and markets guess wild. Say too much, and they're trapped by their own promise. The job is half economics, half careful theater.",
-    "pose": "explain",
+    "narration": "Rule three: distrust urgency. Every one of these scams needs you to act fast, before you think. Real investing is boring and slow — the panic button is the manipulator's favorite tool.",
+    "pose": "present",
     "props": [
       {
-        "name": "scale",
-        "label": "a careful tightrope"
+        "name": "clock",
+        "label": "urgency is the trap"
       }
     ]
   },
   {
     "id": "s50",
     "type": "character",
-    "narration": "And credibility is everything. Draghi's three words worked because markets believed him. A central banker nobody trusts can shout all day and move nothing at all.",
-    "pose": "explain",
+    "narration": "And rule four: own broad, diversified funds instead of chasing individual 'winners.' It's remarkably hard to manipulate an entire index — and nearly impossible to pump a whole market onto one person's bags.",
+    "pose": "present",
     "props": [
       {
-        "name": "handshake",
-        "label": "trust is the real power"
+        "name": "basket",
+        "label": "own the whole market"
       }
     ]
   },
   {
-    "id": "s77",
+    "id": "s74",
     "type": "character",
-    "narration": "And they guard one thing above all: independence. A central bank that bows to politicians loses credibility — and once markets stop believing it, its words stop working entirely.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "One more: only ever use a properly regulated broker, and check it. A huge share of outright scams start by luring you onto a slick but completely fake 'trading platform.'",
+    "pose": "present",
     "props": [
       {
-        "name": "capitol",
-        "label": "independence is sacred"
+        "name": "bank",
+        "label": "use a regulated broker"
       }
     ]
   },
   {
     "id": "s51",
     "type": "title",
-    "narration": "So what do you actually do with all this, as a normal person?",
-    "heading": "The Lesson",
-    "kicker": "tune the signal, not the noise"
+    "narration": "So let's total up the rigging.",
+    "heading": "The Final Math",
+    "kicker": "the whole playbook"
   },
   {
     "id": "s52",
-    "type": "character",
-    "narration": "First: understand that the most powerful words in finance aren't a CEO's or a president's. They belong to a central banker most people couldn't name.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "podium",
-        "label": "the quiet superpower"
-      }
+    "type": "chalkboard",
+    "narration": "Pump-and-dumps fake demand. Wash trades fake volume. Spoofing fakes orders. Short-and-distort fakes the story. Insiders cheat with secrets. And front-runners cut the line.",
+    "lines": [
+      "pump & dump → fake demand",
+      "wash trade → fake volume",
+      "spoofing → fake orders",
+      "insider / front-run → cheat the line"
     ]
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "Second: don't fight the Fed, but don't obsess over its every syllable either. The daily panic is mostly noise. The direction of rates, over months, is the signal that matters.",
-    "pose": "present",
+    "narration": "Every single one is a way to fake supply, demand, or information — the three things a fair price is supposed to be built from. Rig any of them, and you've rigged the price.",
+    "pose": "explain",
     "props": [
       {
-        "name": "gauge",
-        "label": "watch the trend, not the twitch"
+        "name": "scale",
+        "label": "fake the inputs, fake the price"
       }
     ]
   },
   {
-    "id": "s78",
+    "id": "s75",
     "type": "character",
-    "narration": "If you do want to follow along, watch the economic calendar for the meeting days — and then largely ignore the first frantic hour of market reaction, which is mostly noise.",
-    "pose": "present",
+    "narration": "And yes, sometimes the crowd flips the game. In 2021, an army of small traders squeezed big funds that had shorted a struggling retailer — a wild reminder that manipulation can run in every direction.",
+    "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "know the meeting days"
+        "name": "crowd",
+        "label": "the crowd can squeeze too"
       }
     ]
   },
   {
     "id": "s54",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeBottom": "for long-term investors, most Fed-day drama is just noise",
-    "narration": "The headlines scream at every meeting. But for a patient investor, almost all of that drama is noise you can simply let wash over you."
+    "type": "character",
+    "narration": "And the deepest cost isn't any single scam. It's trust. A market only works when people believe the price is real — and every rig chips away at the foundation the whole thing stands on.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "bank",
+        "label": "it erodes trust itself"
+      }
+    ]
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "Third: remember what they ultimately control. Interest rates touch your mortgage, your savings, your job, and your investments. This isn't abstract — it's the weather system your whole financial life lives inside.",
-    "pose": "explain",
+    "narration": "So the next time a stock 'mysteriously' triples on a tip you got in a message, you'll know exactly which game is being played — and you'll know not to be the one holding the bag.",
+    "pose": "present",
     "props": [
       {
-        "name": "house",
-        "label": "it reaches your life"
+        "name": "calculator",
+        "label": "now you see the game"
       }
     ]
   },
   {
     "id": "s56",
-    "type": "title",
-    "narration": "So let's total up the power of the podium.",
-    "heading": "The Final Math",
-    "kicker": "how words move the world"
-  },
-  {
-    "id": "s57",
-    "type": "chalkboard",
-    "narration": "They set the price of money. Markets price the future. So a hint about tomorrow reprices everything today. Add leverage and a watching herd — and words alone can move trillions.",
-    "lines": [
-      "central bank sets the price of money",
-      "markets price the future, not today",
-      "so a hint reprices everything now",
-      "leverage + herd → words move trillions"
-    ]
-  },
-  {
-    "id": "s79",
     "type": "character",
-    "narration": "Step back and the shift is remarkable. A century ago, central banking was done in secret. Today, its single most powerful instrument is a carefully worded paragraph everyone can read.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "megaphone",
-        "label": "from secrecy to signaling"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "narration": "It's a kind of magic trick built on trust. A few trusted sentences can do the work of a trillion dollars — as long as everyone believes they'd spend it if they had to.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "magichat",
-        "label": "trust is the trick"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "narration": "So the next time markets lurch and the headlines blame a central banker's speech, you'll know exactly why — and you'll be able to tell the signal from the noise.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "now you see the trick"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "narration": "If this made the Fed finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this helped you spot the rig, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "podium",
+        "name": "stockscreen",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s61",
+    "id": "s57",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

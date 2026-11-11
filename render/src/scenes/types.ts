@@ -134,7 +134,9 @@ export interface StageScene extends Base {
     // EP034 (the fastest way to get poor) additions:
     | "leveragewipeout" | "gamblersruin" | "aprballoon" | "housewins" | "slowfastwealth"
     // EP035 (why markets panic when central banks speak) additions:
-    | "fedspeak" | "ratelever" | "forwardguidance" | "tapertantrum" | "dontfightthefed";
+    | "fedspeak" | "ratelever" | "forwardguidance" | "tapertantrum" | "dontfightthefed"
+    // EP036 (how scammers rig the stock market) additions:
+    | "pumpdump" | "spoofing" | "washtrade" | "frontrun" | "flashcrash";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
