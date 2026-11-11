@@ -95,6 +95,8 @@ export type DoodleName =
   | "mountain" | "nestegg"
   // EP052 (net worth by age) additions:
   | "birthdaycake" | "seedling"
+  // EP053 (how much you should have saved) additions:
+  | "safetynet" | "gear"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1763,6 +1765,36 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={50} y1={84} x2={50} y2={40} strokeWidth={SW} />
           <RPath d="M50 54 Q32 48 28 32 Q46 34 50 54 Z" fill={GREEN} strokeWidth={1.8} />
           <RPath d="M50 48 Q68 42 72 26 Q54 28 50 48 Z" fill={GREEN} strokeWidth={1.8} />
+        </>
+      );
+    case "safetynet":
+      // A safety net catching a falling coin — the emergency fund.
+      return (
+        <>
+          <RPath d="M14 54 Q50 72 86 54" fill="none" strokeWidth={SW} />
+          <RLine x1={14} y1={54} x2={20} y2={70} strokeWidth={1.6} />
+          <RLine x1={86} y1={54} x2={80} y2={70} strokeWidth={1.6} />
+          <RLine x1={30} y1={60} x2={34} y2={72} strokeWidth={1.4} />
+          <RLine x1={50} y1={64} x2={50} y2={76} strokeWidth={1.4} />
+          <RLine x1={70} y1={60} x2={66} y2={72} strokeWidth={1.4} />
+          <RCircle cx={50} cy={30} d={20} fill={GOLD} strokeWidth={SW} />
+          <text x={50} y={36} fontSize={15} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </>
+      );
+    case "gear":
+      // A gear — automation / "set it and forget it".
+      return (
+        <>
+          <RCircle cx={50} cy={50} d={46} fill={TAN} strokeWidth={SW} />
+          <RCircle cx={50} cy={50} d={18} fill={PARCH} strokeWidth={SW} />
+          <RLine x1={50} y1={10} x2={50} y2={24} strokeWidth={SW} />
+          <RLine x1={50} y1={76} x2={50} y2={90} strokeWidth={SW} />
+          <RLine x1={10} y1={50} x2={24} y2={50} strokeWidth={SW} />
+          <RLine x1={76} y1={50} x2={90} y2={50} strokeWidth={SW} />
+          <RLine x1={22} y1={22} x2={32} y2={32} strokeWidth={SW} />
+          <RLine x1={68} y1={68} x2={78} y2={78} strokeWidth={SW} />
+          <RLine x1={78} y1={22} x2={68} y2={32} strokeWidth={SW} />
+          <RLine x1={32} y1={68} x2={22} y2={78} strokeWidth={SW} />
         </>
       );
   }

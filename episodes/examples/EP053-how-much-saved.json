@@ -1,0 +1,940 @@
+{
+  "id": "EP053",
+  "series": "Napkin Numbers",
+  "title": "How Much You Should Have Saved by 25, 30, 40, and 50",
+  "slug": "how-much-you-should-have-saved",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP053 — Every Level series (row 43). The SAVINGS PLAYBOOK (distinct from EP052 net-worth-ranking): age targets (salary multiples) but the real engine = savings RATE; the system — 50/30/20, emergency fund first, grab the 401(k) match, automate, dollar-cost average, let compounding + rule of 72 work. 5 new motifs (savingsrate/fiftythirtytwenty/emergencyfund/employermatch/ruleof72) + reuse salarymultiple/startearly + doodles safetynet/gear. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "How much should you actually have saved by thirty? By forty? By fifty? It's one of the most-Googled money questions on the planet — and almost every answer is either uselessly vague or completely terrifying. So today, the real targets by age, and the dead-simple system that hits them on almost any income.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "birthdaycake",
+          "label": "by 30? 40? 50?"
+        },
+        {
+          "name": "calculator",
+          "label": "the real targets"
+        },
+        {
+          "name": "piggybank",
+          "label": "on any income"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the headline number everyone quotes. By the time you're thirty, you should have roughly one times your annual salary saved up. Earn sixty grand? You'd want about sixty thousand saved. And most people are nowhere close.",
+      "text": "1× salary",
+      "sub": "the classic target by age 30",
+      "icon": "paystub"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "But if you only chase that number, you'll miss the real secret. Because the amount you've saved by any age is driven far less by how much you earn — and far more by one quiet little percentage: your savings rate. That's the real engine we're going to build today.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "the real engine"
+        },
+        {
+          "name": "percent",
+          "label": "your savings rate"
+        },
+        {
+          "name": "nestegg",
+          "label": "not just your salary"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "no savings, retirement in 30 years",
+      "memeBottom": "this is fine",
+      "narration": "And if you've got almost nothing saved right now, don't panic and don't click away. By the end of this, you'll have a concrete number for your age and a step-by-step plan — and you'll see exactly why starting today, at any amount, changes everything."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "Let's start with the targets everyone wants — the milestones by age.",
+      "heading": "The Targets by Age",
+      "kicker": "multiples of your salary"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "First, what counts as 'saving'? Simply put, saving is income not spent — deferred consumption. Money you earned and deliberately did not blow, set aside to work for your future self instead.",
+      "sourceId": "wiki-saving"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "The most useful benchmark comes from retirement research, and it's framed as multiples of your salary. Aim for one times your salary saved by thirty, three times by forty, six times by fifty, eight times by sixty, and ten times by sixty-seven. Hit those, and retirement basically takes care of itself.",
+      "motif": "salarymultiple",
+      "caption": "a cleaner target: multiples of your salary"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "The beauty of multiples is they scale to your real life. Someone earning forty thousand and someone earning two hundred thousand need completely different piles — but the same simple ratio. It quietly asks the only question that matters: are you on track for your own life?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "scales to you"
+        },
+        {
+          "name": "paystub",
+          "label": "based on your salary"
+        },
+        {
+          "name": "calculator",
+          "label": "on track for YOUR life?"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "callout",
+      "narration": "Now brace yourself for the reality gap. The typical American under thirty-five has a net worth of about thirty-nine thousand dollars — a fraction of one times salary for most. If you're behind the targets, you are in enormous company. The point isn't guilt. It's direction.",
+      "text": "$39,000",
+      "sub": "median under 35 — most are behind the targets",
+      "icon": "piggybank"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Here's the fastest way to lift your savings rate: attack the big three. Housing, transportation, and food devour the majority of almost every budget. Skipping lattes barely moves the needle — but a cheaper apartment or a paid-off used car can free up hundreds of dollars every single month, automatically.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "housing"
+        },
+        {
+          "name": "car",
+          "label": "transport"
+        },
+        {
+          "name": "grocerybag",
+          "label": "food"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "So how do you actually hit those multiples? Not by obsessing over them — but by fixing the engine underneath.",
+      "heading": "The Real Engine",
+      "kicker": "your savings rate"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Here's the mindset shift. The targets are the destination. Your savings rate — the percentage of your income you keep instead of spend — is the engine that gets you there. And it matters far more than most people ever realize.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "targets = destination"
+        },
+        {
+          "name": "gear",
+          "label": "savings rate = engine"
+        },
+        {
+          "name": "percent",
+          "label": "the % you keep"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "narration": "Look at what your savings rate actually does. Save just five percent of your income, and you're looking at working for around fifty years. Save twenty percent, and it drops to the mid-thirties. Save fifty percent, and you could be financially free in under twenty. Same salary — wildly different lives.",
+      "motif": "savingsrate",
+      "caption": "your savings RATE sets the clock"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "And you don't have to conjure twenty percent overnight. The painless trick is to save every raise. Each time your pay goes up, route half of it straight into savings before you ever upgrade your lifestyle. Your rate climbs quietly, year after year, and you never actually feel poorer.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "save every raise"
+        },
+        {
+          "name": "percent",
+          "label": "+1% at a time"
+        },
+        {
+          "name": "piggybank",
+          "label": "never feel poorer"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "This is why you cannot out-earn a bad savings rate. We've all heard of lottery winners and star athletes who made fortunes and still went broke. If you spend everything you make, it doesn't matter how big the 'everything' is. The gap between earning and spending is the whole game.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "huge earners…"
+        },
+        {
+          "name": "creditcard",
+          "label": "…still go broke"
+        },
+        {
+          "name": "percent",
+          "label": "the gap is everything"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Okay. Let's build the actual system, step by step. Five moves.",
+      "heading": "The System",
+      "kicker": "five simple moves"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "Step one: a budget. And a budget is just a calculation plan — usually financial, for a defined period, like a month. It's not a punishment. It's simply knowing where your money is actually going, instead of wondering where it went.",
+      "sourceId": "wiki-budget"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "The simplest version is the fifty-thirty-twenty rule. Fifty percent of your take-home pay goes to needs — rent, food, bills. Thirty percent to wants — fun, dining, hobbies. And twenty percent straight to savings and debt payoff. That twenty is the slice that builds your future.",
+      "motif": "fiftythirtytwenty",
+      "caption": "the 50 / 30 / 20 paycheck"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "Before you cut anything, just look. Most people genuinely have no idea where their money goes — forgotten subscriptions, creeping bills, a dozen tiny taps all running at once. One honest hour with your bank statements almost always uncovers money you didn't even know you were losing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "track it honestly"
+        },
+        {
+          "name": "phone",
+          "label": "forgotten subscriptions"
+        },
+        {
+          "name": "scissors",
+          "label": "plug the leaks"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "If twenty percent feels impossible right now, start with five, or even one. The exact number matters less than the habit. A savings rate you actually stick to beats a heroic one you abandon in a month. You can ratchet it up a little with every raise.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "start at 1% if you must"
+        },
+        {
+          "name": "gauge",
+          "label": "the habit matters most"
+        },
+        {
+          "name": "chartup",
+          "label": "raise it with each raise"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Before you invest a single dollar, there's a step most people skip — and regret.",
+      "heading": "Safety First",
+      "kicker": "the emergency fund"
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "Step two: an emergency fund — a stash set aside as a financial safety net for unexpected expenses. The whole job of this money is to keep one bad surprise from turning into a spiral of debt.",
+      "sourceId": "wiki-emergency"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "The target is three to six months of essential expenses, sitting safely in a savings account — not invested, just there. When the car dies or the job vanishes, this buffer absorbs the hit, so you never have to reach for a credit card at twenty-four percent interest.",
+      "motif": "emergencyfund",
+      "caption": "first: a 3–6 month buffer"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And keep that emergency fund in the right place: a separate, high-yield savings account. Not in checking, where you'll quietly spend it. Not in stocks, where a crash could halve it at the exact moment you need it. Boring, safe, and instantly available — that's the entire job.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "high-yield savings"
+        },
+        {
+          "name": "shield",
+          "label": "safe, not invested"
+        },
+        {
+          "name": "safetynet",
+          "label": "instantly available"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "This is the step that quietly separates people who build wealth from people who don't. Without a buffer, every emergency becomes new debt, and you're forever climbing out of the same hole. With one, your savings can finally stay invested and grow, undisturbed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "safetynet",
+          "label": "absorbs the shock"
+        },
+        {
+          "name": "ballchain",
+          "label": "no new debt"
+        },
+        {
+          "name": "moneytree",
+          "label": "savings stay invested"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Now for the single best deal in all of personal finance.",
+      "heading": "Grab the Free Money",
+      "kicker": "the 401(k) match"
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "Step three: the 401(k). In the US, a 401(k) is an employer-sponsored retirement account where contributions come directly out of your paychecks — before you ever see the money, and often before it's taxed.",
+      "sourceId": "wiki-401k"
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "narration": "And here's the magic part: the employer match — an employer's payment into your 401(k) that depends on how much you put in. Your company literally adds free money on top of your own contributions.",
+      "sourceId": "wiki-match"
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "Think about what this means. You put in a hundred dollars, and your employer drops in another hundred to match it. You just earned an instant, guaranteed one hundred percent return — before the market does anything at all. There is nothing else like it.",
+      "motif": "employermatch",
+      "caption": "the employer match = free money"
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "So the rule is absolute: always contribute at least enough to capture the full match. Leaving it on the table is turning down a raise your boss is begging to give you. It's the closest thing to free money you will ever find.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "capture the full match"
+        },
+        {
+          "name": "moneybag",
+          "label": "it's a free raise"
+        },
+        {
+          "name": "warning",
+          "label": "never skip it"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "chalkboard",
+      "narration": "That gives us a clean order of operations. First, grab the full employer match. Second, build your emergency fund. Third, crush any high-interest debt like credit cards. Then, pour everything else into low-cost index funds. Follow that order, and you're ahead of almost everyone.",
+      "lines": [
+        "1. grab the full 401(k) match (free money)",
+        "2. build the 3–6 month emergency fund",
+        "3. kill high-interest debt (cards, payday)",
+        "4. invest the rest in low-cost index funds"
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "Then add one more layer: tax-advantaged accounts. Beyond the 401(k), a Roth I-R-A lets your investments grow and come out completely tax-free in retirement. Sheltering your money from decades of taxes is like quietly adding free points to your return, every single year.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "taxform",
+          "label": "shelter from tax"
+        },
+        {
+          "name": "vault",
+          "label": "a Roth IRA"
+        },
+        {
+          "name": "moneytree",
+          "label": "tax-free growth"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "Now the move that makes the whole system run without you.",
+      "heading": "Make It Automatic",
+      "kicker": "beat your own willpower"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "Step four: automate everything. The oldest trick in the book is 'pay yourself first' — the moment your paycheck lands, money is whisked into savings and investments automatically, before you ever get the chance to spend it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gear",
+          "label": "automate it"
+        },
+        {
+          "name": "faucet",
+          "label": "pay yourself first"
+        },
+        {
+          "name": "piggybank",
+          "label": "before you can spend"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "This works because automation quietly beats willpower every time. You don't have to feel disciplined twice a month. You set it up once, the transfers happen in the background, and your savings grow whether you're motivated that week or not.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gear",
+          "label": "set it once"
+        },
+        {
+          "name": "calendar",
+          "label": "runs in the background"
+        },
+        {
+          "name": "chartup",
+          "label": "grows regardless"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "screenshot",
+      "narration": "Step five is how you invest it: dollar-cost averaging — an investment strategy of putting in the same amount of money at regular intervals, no matter what the market is doing. Same amount, every single month, forever.",
+      "sourceId": "wiki-dca"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "This frees you from the impossible game of timing the market. When prices are low, your fixed amount buys more shares. When they're high, it buys fewer. You just keep buying, automatically, through every crash and every boom — and let the decades average it out.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "same amount monthly"
+        },
+        {
+          "name": "chartdown",
+          "label": "buy more when low"
+        },
+        {
+          "name": "gear",
+          "label": "never time the market"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And what should you actually buy with all of it? For most people, the answer is gloriously boring: a low-cost index fund that owns a tiny slice of the entire market at once. One cheap fund, bought automatically forever, quietly beats the vast majority of expert stock-pickers over time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "basket",
+          "label": "own the whole market"
+        },
+        {
+          "name": "coins",
+          "label": "one cheap fund"
+        },
+        {
+          "name": "trophy",
+          "label": "beats the pros"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "And now the force that turns modest savings into real wealth.",
+      "heading": "Let Time Work",
+      "kicker": "compounding + the Rule of 72"
+    },
+    {
+      "id": "s34",
+      "type": "screenshot",
+      "narration": "That force is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Your money earns money, and then that money earns money too. Give it enough time, and the growth becomes almost absurd.",
+      "sourceId": "wiki-compound"
+    },
+    {
+      "id": "s35",
+      "type": "stage",
+      "narration": "There's even a quick mental shortcut for it, the Rule of 72. Divide seventy-two by your annual return to see how fast your money doubles. At eight percent, your money doubles roughly every nine years — doubling again, and again, the longer you leave it alone.",
+      "motif": "ruleof72",
+      "caption": "the Rule of 72"
+    },
+    {
+      "id": "s56",
+      "type": "callout",
+      "narration": "Watch the Rule of 72 do its thing. Ten thousand dollars at eight percent becomes twenty thousand in nine years. Forty in eighteen. Eighty in twenty-seven. The same money, doubling and doubling, until the later leaps are bigger than everything you originally put in.",
+      "text": "$80,000",
+      "sub": "$10K doubling at 8% over ~27 years",
+      "icon": "moneytree"
+    },
+    {
+      "id": "s36",
+      "type": "stage",
+      "narration": "Which is why starting early beats everything. Someone who begins at twenty-five can finish with nearly double what a thirty-five-year-old does, saving the exact same amount — purely because their money got an extra decade to compound. Time is the one ingredient you can never buy back.",
+      "motif": "startearly",
+      "caption": "the one asset you can't buy back: time"
+    },
+    {
+      "id": "s37",
+      "type": "callout",
+      "narration": "Let's make it real. Just five hundred dollars a month, invested steadily from age twenty-five to sixty-five at a normal market return, can grow into well over a million dollars. Not from a huge salary — from a modest, automatic habit, left alone for forty years.",
+      "text": "$1,000,000",
+      "sub": "$500/mo from 25 to 65 at ~8%",
+      "icon": "moneytree"
+    },
+    {
+      "id": "s38",
+      "type": "title",
+      "narration": "So let's put honest numbers on each age, for a typical earner.",
+      "heading": "The Honest Targets",
+      "kicker": "by 25, 30, 40, 50"
+    },
+    {
+      "id": "s39",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Target savings by age — $60K earner ($K)",
+      "unit": "$K",
+      "narration": "For someone earning sixty thousand dollars, the multiples translate to clear goals. Around sixty thousand saved by thirty. A hundred eighty thousand by forty. Three hundred sixty thousand by fifty. And nearly half a million by sixty. Ambitious — but very doable on autopilot.",
+      "data": [
+        {
+          "label": "by 30",
+          "value": 60
+        },
+        {
+          "label": "by 40",
+          "value": 180
+        },
+        {
+          "label": "by 50",
+          "value": 360
+        },
+        {
+          "label": "by 60",
+          "value": 480
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "By twenty-five, don't stress about a big number. The target is simply this: have a small starter emergency fund, and be investing something every month to grab that employer match. At this age, building the habit is worth more than the balance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "safetynet",
+          "label": "a starter buffer"
+        },
+        {
+          "name": "seedling",
+          "label": "just start investing"
+        },
+        {
+          "name": "handshake",
+          "label": "grab the match"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "By thirty, aim for roughly one times your salary. By forty, about three times. If you're hitting these, you are quietly, genuinely on track for a comfortable retirement — even if your bank account doesn't feel glamorous along the way.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "30: ~1× salary"
+        },
+        {
+          "name": "chartup",
+          "label": "40: ~3× salary"
+        },
+        {
+          "name": "trophy",
+          "label": "quietly on track"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "By fifty, you're aiming for around six times your salary — and if you're behind, the tax system hands you a gift: bigger 'catch-up' contributions. A focused decade of aggressive saving in your fifties can still dramatically rescue your retirement.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "50: ~6× salary"
+        },
+        {
+          "name": "piggybank",
+          "label": "bigger catch-up limits"
+        },
+        {
+          "name": "retiree",
+          "label": "it's not too late"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And if you're forty and have barely started, don't despair — but do get serious. You still have twenty-plus years of compounding ahead, which is a lot of runway. Crank your savings rate hard for a decade, max out every tax-advantaged account, and a genuinely comfortable retirement is still firmly on the table.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "40 and behind?"
+        },
+        {
+          "name": "percent",
+          "label": "crank the rate"
+        },
+        {
+          "name": "nestegg",
+          "label": "still very doable"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "compare",
+      "narration": "And this is the whole thing in two people. Same salary, same job. One saves twenty percent on autopilot and grabs the match. The other saves nothing and spends it all. Thirty years later, one retires early and free — the other can't afford to stop at all.",
+      "left": {
+        "title": "Saves 20%, automated",
+        "value": "retires free",
+        "icon": "nestegg"
+      },
+      "right": {
+        "title": "Saves nothing",
+        "value": "can never stop",
+        "icon": "ballchain"
+      }
+    },
+    {
+      "id": "s44",
+      "type": "title",
+      "narration": "So what's the real lesson hiding under all these numbers?",
+      "heading": "The Lesson",
+      "kicker": "rate beats everything"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "The age targets are a map. Your savings rate is the engine. And time is the fuel. Get those three working together, and the exact numbers almost take care of themselves. Miss the engine, and no salary on Earth will save you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "targets = the map"
+        },
+        {
+          "name": "gear",
+          "label": "rate = the engine"
+        },
+        {
+          "name": "hourglass",
+          "label": "time = the fuel"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So don't wait to earn more before you start. You don't need a bigger salary — you need a bigger gap between what you earn and what you spend. That gap, automated and left to compound, is how ordinary incomes quietly turn into real wealth.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "percent",
+          "label": "widen the gap"
+        },
+        {
+          "name": "gear",
+          "label": "automate it"
+        },
+        {
+          "name": "moneytree",
+          "label": "then wait"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "And guard fiercely against lifestyle creep. The real danger was never earning more — it's letting your spending rise to swallow every raise, so a bigger paycheck leaves you exactly as broke as before. Lock your lifestyle in place, bank the difference, and let that gap widen all on its own.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "raises roll in"
+        },
+        {
+          "name": "grocerybag",
+          "label": "don't let spending chase"
+        },
+        {
+          "name": "piggybank",
+          "label": "bank the difference"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Here's your whole plan in one breath. Automate twenty percent. Grab the full match. Keep a three-to-six-month buffer. Buy index funds every month. Then ignore it for thirty years. Boring — and almost unfairly effective.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "gear",
+          "label": "automate 20%"
+        },
+        {
+          "name": "safetynet",
+          "label": "keep the buffer"
+        },
+        {
+          "name": "seedling",
+          "label": "then wait 30 years"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "Because in the end, you're not really chasing a number on a screen. You're buying back your own time — the freedom to one day work because you want to, not because you have to. That's what every one of these targets is secretly for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "you're buying time"
+        },
+        {
+          "name": "nestegg",
+          "label": "freedom to choose"
+        },
+        {
+          "name": "mountain",
+          "label": "that's the real goal"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "If this gave you a real plan for your age, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-saving",
+      "name": "Saving (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saving",
+      "quote": "income not spent, or deferred consumption"
+    },
+    {
+      "id": "wiki-budget",
+      "name": "Budget (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Budget",
+      "quote": "a calculation plan, usually but not always financial"
+    },
+    {
+      "id": "wiki-emergency",
+      "name": "Emergency fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emergency_fund",
+      "quote": "a financial safety net for future mishaps or unexpected expenses"
+    },
+    {
+      "id": "wiki-401k",
+      "name": "401(k) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/401(k)",
+      "quote": "contributions come directly out of their paychecks"
+    },
+    {
+      "id": "wiki-match",
+      "name": "Employer matching program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Employer_matching_program",
+      "quote": "an employer's potential payment to their 401(k) plan"
+    },
+    {
+      "id": "wiki-dca",
+      "name": "Dollar-cost averaging (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+      "quote": "an investment strategy which aims to apply value investing principles"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal sum and previously accumulated interest"
+    }
+  ],
+  "youtube": {
+    "title": "How Much You Should Have Saved by 25, 30, 40, and 50",
+    "alts": [
+      "The Exact Savings Targets for Every Age (And How to Hit Them)",
+      "How Much to Save by 30, 40, 50 — The Dead-Simple Playbook"
+    ],
+    "hook": "How much should you have saved by 25, 30, 40, and 50? Here are the real age targets — framed as multiples of your salary (1x by 30, 3x by 40, 6x by 50, 8x by 60, 10x by 67) — plus the dead-simple system that hits them on any income. The twist: the number you hit is driven less by your salary and more by your savings RATE. We cover the 5-step playbook: budget with 50/30/20, build a 3–6 month emergency fund, grab the full 401(k) employer match (an instant 100% return), automate everything (pay yourself first), dollar-cost average into index funds, and let compounding + the Rule of 72 do the heavy lifting. Fully cited.",
+    "bullets": [
+      "The age targets as salary multiples (1x by 30, 3x by 40…)",
+      "Why your savings RATE matters more than your salary",
+      "The 50/30/20 rule and the correct order of operations",
+      "The 401(k) employer match — an instant 100% return",
+      "Automate it: pay yourself first + dollar-cost averaging",
+      "The Rule of 72 and why starting early beats everything"
+    ],
+    "tags": [
+      "how much should i have saved by 30",
+      "how much to save by age",
+      "savings by age",
+      "savings rate",
+      "50 30 20 rule",
+      "emergency fund",
+      "401k employer match",
+      "dollar cost averaging",
+      "rule of 72",
+      "compound interest",
+      "how to save money",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#savings",
+      "#personalfinance",
+      "#money",
+      "#investing"
+    ],
+    "thumbnail": {
+      "hookTop": "SAVED BY",
+      "hookBot": "25 · 30 · 40 · 50",
+      "napkinNumber": "1× by 30",
+      "napkinSub": "3× by 40",
+      "deco": "piggybank"
+    },
+    "chapters": [
+      [
+        "the real targets by age",
+        "The targets by age"
+      ],
+      [
+        "one quiet little percentage: your savings rate",
+        "The real engine"
+      ],
+      [
+        "you cannot out-earn a bad savings rate",
+        "Rate beats salary"
+      ],
+      [
+        "the fifty-thirty-twenty rule",
+        "The 50/30/20 rule"
+      ],
+      [
+        "an emergency fund",
+        "Safety first"
+      ],
+      [
+        "the single best deal in all of personal finance",
+        "Grab the free money"
+      ],
+      [
+        "automate everything",
+        "Make it automatic"
+      ],
+      [
+        "compound interest",
+        "Let time work"
+      ],
+      [
+        "honest numbers on each age",
+        "The honest targets"
+      ],
+      [
+        "buying back your own time",
+        "The lesson"
+      ]
+    ]
+  }
+}

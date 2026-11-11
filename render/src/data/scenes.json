@@ -2,528 +2,84 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Be honest. You've looked at your bank account and wondered the same thing everyone does: am I ahead, or am I behind for my age? It turns out there's an actual answer — measured, every few years, by the Federal Reserve. And the number that counts as perfectly normal at each age is going to surprise you.",
+    "narration": "How much should you actually have saved by thirty? By forty? By fifty? It's one of the most-Googled money questions on the planet — and almost every answer is either uselessly vague or completely terrifying. So today, the real targets by age, and the dead-simple system that hits them on almost any income.",
     "pose": "explain",
     "props": [
       {
         "name": "birthdaycake",
-        "label": "ahead… or behind?"
+        "label": "by 30? 40? 50?"
       },
       {
         "name": "calculator",
-        "label": "there's a real answer"
+        "label": "the real targets"
       },
       {
-        "name": "ledger",
-        "label": "measured by the Fed"
+        "name": "piggybank",
+        "label": "on any income"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Let's rip the band-aid off. The typical American under thirty-five has a net worth of about thirty-nine thousand dollars. Not thirty-nine thousand in savings — thirty-nine thousand total, everything they own minus everything they owe.",
-    "text": "$39,000",
-    "sub": "median net worth, under 35 (Fed SCF)",
-    "icon": "piggybank"
+    "narration": "Here's the headline number everyone quotes. By the time you're thirty, you should have roughly one times your annual salary saved up. Earn sixty grand? You'd want about sixty thousand saved. And most people are nowhere close.",
+    "text": "1× salary",
+    "sub": "the classic target by age 30",
+    "icon": "paystub"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "If that feels low, that's the point. Most people wildly overestimate where everyone else is. Social media shows you the winners. The Fed shows you reality. So today, let's find out exactly where you rank — at every age, with the real numbers.",
+    "narration": "But if you only chase that number, you'll miss the real secret. Because the amount you've saved by any age is driven far less by how much you earn — and far more by one quiet little percentage: your savings rate. That's the real engine we're going to build today.",
     "pose": "explain",
     "props": [
       {
-        "name": "phone",
-        "label": "social media lies"
+        "name": "gauge",
+        "label": "the real engine"
       },
       {
-        "name": "ledger",
-        "label": "the Fed tells the truth"
+        "name": "percent",
+        "label": "your savings rate"
       },
       {
-        "name": "mountain",
-        "label": "where do YOU rank?"
+        "name": "nestegg",
+        "label": "not just your salary"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/change.jpg",
-    "meme": "Change My Mind",
-    "memeTop": "your net worth matters less",
-    "memeBottom": "than whether it's bigger than last year's",
-    "narration": "And stick around to the end, because the real lesson isn't about beating other people. It's a single number you should actually be chasing — and it has almost nothing to do with your age."
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "no savings, retirement in 30 years",
+    "memeBottom": "this is fine",
+    "narration": "And if you've got almost nothing saved right now, don't panic and don't click away. By the end of this, you'll have a concrete number for your age and a step-by-step plan — and you'll see exactly why starting today, at any amount, changes everything."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, two quick rules so these numbers actually mean something.",
-    "heading": "Reading the Numbers",
-    "kicker": "median, not average"
+    "narration": "Let's start with the targets everyone wants — the milestones by age.",
+    "heading": "The Targets by Age",
+    "kicker": "multiples of your salary"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "Rule one: everything here is net worth — the value of all your assets, minus the value of all your outstanding liabilities. Your house, car, savings, and investments, minus every debt you carry.",
-    "sourceId": "wiki-networth"
+    "narration": "First, what counts as 'saving'? Simply put, saving is income not spent — deferred consumption. Money you earned and deliberately did not blow, set aside to work for your future self instead.",
+    "sourceId": "wiki-saving"
   },
   {
     "id": "s7",
-    "type": "screenshot",
-    "narration": "Rule two: we use the median, not the average. The median is the value separating the higher half from the lower half — the person smack in the middle. It's the honest number, because it isn't skewed by a handful of billionaires.",
-    "sourceId": "wiki-median"
-  },
-  {
-    "id": "s8",
     "type": "stage",
-    "narration": "This matters enormously. The average, or mean, American under thirty-five looks rich — about a hundred and eighty-four thousand dollars. But that's a lie told by a few mega-fortunes dragging the average up. The median — the real middle person — is that humble thirty-nine thousand.",
-    "motif": "medianvsmean",
-    "caption": "why the 'average' lies"
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "This is exactly why everyone feels poor. You see one friend with a new Tesla and assume you're hopelessly behind. But you're comparing your real, median life to someone else's highlight reel — or to a skewed average puffed up by a few billionaires. The honest comparison almost always says you're more normal than you feel.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "phone",
-        "label": "highlight reels"
-      },
-      {
-        "name": "crowd",
-        "label": "you're more normal"
-      },
-      {
-        "name": "scale",
-        "label": "compare honestly"
-      }
-    ]
-  },
-  {
-    "id": "s9",
-    "type": "screenshot",
-    "narration": "And all of this comes from the Survey of Consumer Finances — a detailed statistical survey of the balance sheet of American families, run by the Federal Reserve. It's the gold standard for this data.",
-    "sourceId": "wiki-scf"
-  },
-  {
-    "id": "s10",
-    "type": "title",
-    "narration": "Now the big idea that makes comparing yourself to others mostly pointless.",
-    "heading": "The Life-Cycle Hump",
-    "kicker": "wealth rises, peaks, falls"
-  },
-  {
-    "id": "s11",
-    "type": "screenshot",
-    "narration": "Economists have a model for this called the life-cycle hypothesis — a model that tries to explain the consumption patterns of individuals across their whole life. In short: you borrow when young, save in middle age, and spend it down in retirement.",
-    "sourceId": "wiki-lifecycle"
-  },
-  {
-    "id": "s12",
-    "type": "stage",
-    "narration": "So net worth isn't flat. It's a hump. It starts near zero in your twenties, climbs steadily through your working years, peaks right around retirement, and then gently declines as you spend your savings. Comparing a twenty-five-year-old to a sixty-year-old is comparing two totally different points on this curve.",
-    "motif": "agecurve",
-    "caption": "wealth is a life-cycle hump"
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "So never compare your number to someone a decade older. Of course a fifty-five-year-old has more than you — they've had twenty extra years on the curve. The only fair comparisons are to people exactly your age, and to your own self, last year.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "birthdaycake",
-        "label": "same age only"
-      },
-      {
-        "name": "calendar",
-        "label": "+ your past self"
-      },
-      {
-        "name": "scale",
-        "label": "a fair comparison"
-      }
-    ]
-  },
-  {
-    "id": "s13",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Median net worth by age ($ thousands)",
-    "unit": "$K",
-    "narration": "Here's the whole hump in real Fed numbers. Thirty-nine thousand under thirty-five. A hundred thirty-five thousand in your late thirties and early forties. Two hundred forty-seven thousand in your late forties. Three hundred sixty-five thousand approaching retirement, peaking near four hundred ten thousand in your late sixties.",
-    "data": [
-      {
-        "label": "<35",
-        "value": 39
-      },
-      {
-        "label": "35-44",
-        "value": 135
-      },
-      {
-        "label": "45-54",
-        "value": 247
-      },
-      {
-        "label": "55-64",
-        "value": 365
-      },
-      {
-        "label": "65-74",
-        "value": 410
-      }
-    ],
-    "highlight": 4
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "And here's what hides inside these numbers: for the typical family, the bulk of that net worth isn't a brokerage account — it's home equity. Their house, slowly paid down over decades, is the single biggest brick in the pile. Which is why owning where you live is still the default road to middle-class wealth.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "mostly home equity"
-      },
-      {
-        "name": "mortgage",
-        "label": "slowly paid down"
-      },
-      {
-        "name": "pie",
-        "label": "the biggest brick"
-      }
-    ]
-  },
-  {
-    "id": "s14",
-    "type": "title",
-    "narration": "Let's walk up the curve, decade by decade, and see where you stand.",
-    "heading": "Your 20s & Early 30s",
-    "kicker": "under 35 — the foundation"
-  },
-  {
-    "id": "s15",
-    "type": "character",
-    "narration": "Under thirty-five, the median is thirty-nine thousand — but this group is wildly spread out. A huge share are at zero or negative, buried under student loans and car payments. If you've simply clawed your way to a positive net worth in your twenties, you are genuinely ahead of the pack.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "gradcap",
-        "label": "student loans"
-      },
-      {
-        "name": "car",
-        "label": "car payments"
-      },
-      {
-        "name": "seedling",
-        "label": "positive = ahead"
-      }
-    ]
-  },
-  {
-    "id": "s16",
-    "type": "character",
-    "narration": "At this age, the actual dollar amount barely matters. What matters is the habit. The twenty-five-year-old who invests two hundred dollars a month is quietly building a machine that will out-earn almost any amount of frantic catch-up later. This is the cheapest, most powerful decade you'll ever get.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "seedling",
-        "label": "plant the habit"
-      },
-      {
-        "name": "coins",
-        "label": "$200 a month"
-      },
-      {
-        "name": "moneytree",
-        "label": "a machine for later"
-      }
-    ]
-  },
-  {
-    "id": "s51",
-    "type": "callout",
-    "narration": "To see why your twenties are pure gold, look at a single dollar. One dollar invested at twenty-five can become roughly fifteen dollars by sixty-five. The same dollar invested at forty-five becomes only about four. Your young dollars aren't just dollars — they're seeds with decades to grow.",
-    "text": "$15",
-    "sub": "what $1 invested at age 25 becomes by 65",
-    "icon": "seedling"
-  },
-  {
-    "id": "s17",
-    "type": "title",
-    "narration": "Add a decade, and the picture changes fast.",
-    "heading": "Your Late 30s & 40s",
-    "kicker": "35–44 — the build"
-  },
-  {
-    "id": "s18",
-    "type": "character",
-    "narration": "From thirty-five to forty-four, the median jumps to about a hundred thirty-five thousand. This is the accumulation decade — careers peak, salaries rise, and for most people a house quietly becomes their single biggest asset. The hump officially starts climbing.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "career climbing"
-      },
-      {
-        "name": "house",
-        "label": "your biggest asset"
-      },
-      {
-        "name": "chartup",
-        "label": "the hump climbs"
-      }
-    ]
-  },
-  {
-    "id": "s19",
-    "type": "character",
-    "narration": "But this is also the decade of the great squeeze. Mortgages, childcare, and keeping up with the neighbors devour the income. Plenty of people earning serious money still have a thin net worth here — because it's all flowing straight back out the door.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "house",
-        "label": "mortgage"
-      },
-      {
-        "name": "baby",
-        "label": "childcare"
-      },
-      {
-        "name": "grocerybag",
-        "label": "it all flows out"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "And not all of that debt is a disaster. A mortgage on a home that appreciates, or a loan for a skill that lifts your income, can be genuinely good debt. The real killer is the other kind — high-interest credit cards and car loans on things that only lose value. Kill those first, with a vengeance.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "good debt: grows"
-      },
-      {
-        "name": "creditcard",
-        "label": "bad debt: shrinks you"
-      },
-      {
-        "name": "scissors",
-        "label": "kill the bad first"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "title",
-    "narration": "Now we hit the decade where the gap between people explodes.",
-    "heading": "Your 40s & 50s",
-    "kicker": "45–54 — peak earning"
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "narration": "From forty-five to fifty-four, the median hits about two hundred forty-seven thousand. These are usually your peak earning years — and the compounding you started decades ago is finally doing visible, heavy lifting. For savers, net worth can now jump by tens of thousands a year on its own.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "peak earnings"
-      },
-      {
-        "name": "moneytree",
-        "label": "compounding kicks in"
-      },
-      {
-        "name": "chartup",
-        "label": "+tens of thousands/yr"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "callout",
-    "narration": "Watch what that compounding actually does. A hundred thousand dollars invested at age forty-five, left completely alone at a normal market return, can quietly grow past three hundred thousand by the time you retire — without you adding another single cent.",
-    "text": "$300,000",
-    "sub": "$100K invested at 45, untouched, by retirement",
-    "icon": "moneytree"
-  },
-  {
-    "id": "s22",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "earn a bigger salary",
-    "memeBottom": "own assets that quietly grow while you earn the salary",
-    "narration": "And this is where the two types of people visibly split. One has a big salary and a small net worth. The other has let assets quietly compound for twenty years — and is now pulling away, fast, almost without effort."
-  },
-  {
-    "id": "s23",
-    "type": "title",
-    "narration": "Approaching the finish line, the hump reaches its peak.",
-    "heading": "Your 50s & 60s",
-    "kicker": "55–74 — the peak"
-  },
-  {
-    "id": "s24",
-    "type": "character",
-    "narration": "From fifty-five to sixty-four, the median climbs to around three hundred sixty-five thousand, peaking near four hundred ten thousand in the late sixties. This is the top of the hump — the moment of truth, when decades of saving either add up to a comfortable retirement, or they don't.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "mountain",
-        "label": "top of the hump"
-      },
-      {
-        "name": "nestegg",
-        "label": "the moment of truth"
-      },
-      {
-        "name": "retiree",
-        "label": "retirement looms"
-      }
-    ]
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "Now, it's not quite as scary as it sounds, because most retirees also collect Social Security — a monthly check from the government. But for an average earner, that replaces only around forty percent of their old paycheck. It's a floor, not a hammock. Your own savings still have to do the heavy lifting.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "capitol",
-        "label": "Social Security"
-      },
-      {
-        "name": "paystub",
-        "label": "~40% of income"
-      },
-      {
-        "name": "warning",
-        "label": "a floor, not a hammock"
-      }
-    ]
-  },
-  {
-    "id": "s25",
-    "type": "screenshot",
-    "narration": "After this, net worth usually falls — because retirement is, by definition, the withdrawal from one's active working life. You stop earning and start spending down the pile you spent forty years building.",
-    "sourceId": "wiki-retirement"
-  },
-  {
-    "id": "s26",
-    "type": "character",
-    "narration": "And here's the sobering part: for most households, that peak of around four hundred thousand dollars is dangerously thin for a thirty-year retirement. A huge slice of Americans arrive at sixty-five with far too little — which is exactly why knowing these numbers early matters so much.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "nestegg",
-        "label": "~$400K is thin"
-      },
-      {
-        "name": "hourglass",
-        "label": "30-year retirement"
-      },
-      {
-        "name": "warning",
-        "label": "most arrive short"
-      }
-    ]
-  },
-  {
-    "id": "s55",
-    "type": "callout",
-    "narration": "Run the famous four-percent rule on that peak. A four-hundred-thousand-dollar nest egg safely throws off only about sixteen thousand dollars a year. Add Social Security on top and it's survivable — but it is nobody's dream retirement.",
-    "text": "$16,000",
-    "sub": "a year from a $400K nest egg (the 4% rule)",
-    "icon": "nestegg"
-  },
-  {
-    "id": "s27",
-    "type": "title",
-    "narration": "So you've seen the medians. But a median only tells you the middle. How do you actually rank?",
-    "heading": "Where Do You Rank?",
-    "kicker": "the percentile game"
-  },
-  {
-    "id": "s28",
-    "type": "stage",
-    "narration": "Think of everyone your age lined up from poorest to richest. The median is the person dead center — the fiftieth percentile. If you've got double the median for your age, you're knocking on the top twenty-five percent. Hit roughly five times the median, and you're brushing the top ten.",
-    "motif": "rankmeter",
-    "caption": "where do you rank, for your age?"
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "narration": "And if you're wondering what truly elite looks like: the top one percent threshold climbs with age too. For younger households it's a couple of million. By your sixties, cracking the top one percent takes well over ten million dollars. The ceiling rises just as fast as the floor.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crown",
-        "label": "the top 1%"
-      },
-      {
-        "name": "mountain",
-        "label": "rises with age"
-      },
-      {
-        "name": "chartup",
-        "label": "$10M+ by your 60s"
-      }
-    ]
-  },
-  {
-    "id": "s29",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Median vs. average net worth by age ($K)",
-    "unit": "$K",
-    "narration": "And watch the gap between the median and the average balloon with age. Under thirty-five, the average is around a hundred eighty-four thousand versus a median of thirty-nine. By your late fifties, the average rockets past one and a half million — while the median sits near three hundred sixty-five thousand. The rich pull away harder every decade.",
-    "data": [
-      {
-        "label": "<35 avg",
-        "value": 184
-      },
-      {
-        "label": "45-54 avg",
-        "value": 976
-      },
-      {
-        "label": "55-64 avg",
-        "value": 1567
-      }
-    ],
-    "highlight": 2
-  },
-  {
-    "id": "s30",
-    "type": "title",
-    "narration": "Chasing a percentile can feel hopeless. So here's a far better target.",
-    "heading": "A Cleaner Target",
-    "kicker": "multiples of your salary"
-  },
-  {
-    "id": "s31",
-    "type": "stage",
-    "narration": "Instead of a raw dollar amount, aim for a multiple of your own salary. A popular benchmark says: have one times your salary saved by thirty, three times by forty, six times by fifty, eight times by sixty, and ten times by sixty-seven. It scales to your life, not a stranger's.",
+    "narration": "The most useful benchmark comes from retirement research, and it's framed as multiples of your salary. Aim for one times your salary saved by thirty, three times by forty, six times by fifty, eight times by sixty, and ten times by sixty-seven. Hit those, and retirement basically takes care of itself.",
     "motif": "salarymultiple",
     "caption": "a cleaner target: multiples of your salary"
   },
   {
-    "id": "s32",
+    "id": "s8",
     "type": "character",
-    "narration": "This is so much fairer than a flat number. Someone earning fifty thousand and someone earning two hundred thousand need wildly different piles to retire. The multiple adjusts automatically — it asks not 'are you rich?' but 'are you on track for your own life?'",
+    "narration": "The beauty of multiples is they scale to your real life. Someone earning forty thousand and someone earning two hundred thousand need completely different piles — but the same simple ratio. It quietly asks the only question that matters: are you on track for your own life?",
     "pose": "explain",
     "props": [
       {
@@ -536,285 +92,697 @@
       },
       {
         "name": "calculator",
-        "label": "are YOU on track?"
+        "label": "on track for YOUR life?"
       }
     ]
   },
   {
-    "id": "s57",
+    "id": "s9",
     "type": "callout",
-    "narration": "Make it concrete. If you earn sixty thousand dollars a year, your targets are simple: sixty thousand saved by thirty, a hundred eighty thousand by forty, three hundred sixty thousand by fifty. Suddenly the vague question 'where should I be?' has a real, personal answer.",
-    "text": "$180,000",
-    "sub": "3× a $60K salary — your target by 40",
-    "icon": "paystub"
+    "narration": "Now brace yourself for the reality gap. The typical American under thirty-five has a net worth of about thirty-nine thousand dollars — a fraction of one times salary for most. If you're behind the targets, you are in enormous company. The point isn't guilt. It's direction.",
+    "text": "$39,000",
+    "sub": "median under 35 — most are behind the targets",
+    "icon": "piggybank"
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "Here's the fastest way to lift your savings rate: attack the big three. Housing, transportation, and food devour the majority of almost every budget. Skipping lattes barely moves the needle — but a cheaper apartment or a paid-off used car can free up hundreds of dollars every single month, automatically.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "house",
+        "label": "housing"
+      },
+      {
+        "name": "car",
+        "label": "transport"
+      },
+      {
+        "name": "grocerybag",
+        "label": "food"
+      }
+    ]
+  },
+  {
+    "id": "s10",
+    "type": "title",
+    "narration": "So how do you actually hit those multiples? Not by obsessing over them — but by fixing the engine underneath.",
+    "heading": "The Real Engine",
+    "kicker": "your savings rate"
+  },
+  {
+    "id": "s11",
+    "type": "character",
+    "narration": "Here's the mindset shift. The targets are the destination. Your savings rate — the percentage of your income you keep instead of spend — is the engine that gets you there. And it matters far more than most people ever realize.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mountain",
+        "label": "targets = destination"
+      },
+      {
+        "name": "gear",
+        "label": "savings rate = engine"
+      },
+      {
+        "name": "percent",
+        "label": "the % you keep"
+      }
+    ]
+  },
+  {
+    "id": "s12",
+    "type": "stage",
+    "narration": "Look at what your savings rate actually does. Save just five percent of your income, and you're looking at working for around fifty years. Save twenty percent, and it drops to the mid-thirties. Save fifty percent, and you could be financially free in under twenty. Same salary — wildly different lives.",
+    "motif": "savingsrate",
+    "caption": "your savings RATE sets the clock"
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "And you don't have to conjure twenty percent overnight. The painless trick is to save every raise. Each time your pay goes up, route half of it straight into savings before you ever upgrade your lifestyle. Your rate climbs quietly, year after year, and you never actually feel poorer.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "save every raise"
+      },
+      {
+        "name": "percent",
+        "label": "+1% at a time"
+      },
+      {
+        "name": "piggybank",
+        "label": "never feel poorer"
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "type": "character",
+    "narration": "This is why you cannot out-earn a bad savings rate. We've all heard of lottery winners and star athletes who made fortunes and still went broke. If you spend everything you make, it doesn't matter how big the 'everything' is. The gap between earning and spending is the whole game.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "huge earners…"
+      },
+      {
+        "name": "creditcard",
+        "label": "…still go broke"
+      },
+      {
+        "name": "percent",
+        "label": "the gap is everything"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "title",
+    "narration": "Okay. Let's build the actual system, step by step. Five moves.",
+    "heading": "The System",
+    "kicker": "five simple moves"
+  },
+  {
+    "id": "s15",
+    "type": "screenshot",
+    "narration": "Step one: a budget. And a budget is just a calculation plan — usually financial, for a defined period, like a month. It's not a punishment. It's simply knowing where your money is actually going, instead of wondering where it went.",
+    "sourceId": "wiki-budget"
+  },
+  {
+    "id": "s16",
+    "type": "stage",
+    "narration": "The simplest version is the fifty-thirty-twenty rule. Fifty percent of your take-home pay goes to needs — rent, food, bills. Thirty percent to wants — fun, dining, hobbies. And twenty percent straight to savings and debt payoff. That twenty is the slice that builds your future.",
+    "motif": "fiftythirtytwenty",
+    "caption": "the 50 / 30 / 20 paycheck"
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "Before you cut anything, just look. Most people genuinely have no idea where their money goes — forgotten subscriptions, creeping bills, a dozen tiny taps all running at once. One honest hour with your bank statements almost always uncovers money you didn't even know you were losing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "magnifier",
+        "label": "track it honestly"
+      },
+      {
+        "name": "phone",
+        "label": "forgotten subscriptions"
+      },
+      {
+        "name": "scissors",
+        "label": "plug the leaks"
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "type": "character",
+    "narration": "If twenty percent feels impossible right now, start with five, or even one. The exact number matters less than the habit. A savings rate you actually stick to beats a heroic one you abandon in a month. You can ratchet it up a little with every raise.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "seedling",
+        "label": "start at 1% if you must"
+      },
+      {
+        "name": "gauge",
+        "label": "the habit matters most"
+      },
+      {
+        "name": "chartup",
+        "label": "raise it with each raise"
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "type": "title",
+    "narration": "Before you invest a single dollar, there's a step most people skip — and regret.",
+    "heading": "Safety First",
+    "kicker": "the emergency fund"
+  },
+  {
+    "id": "s19",
+    "type": "screenshot",
+    "narration": "Step two: an emergency fund — a stash set aside as a financial safety net for unexpected expenses. The whole job of this money is to keep one bad surprise from turning into a spiral of debt.",
+    "sourceId": "wiki-emergency"
+  },
+  {
+    "id": "s20",
+    "type": "stage",
+    "narration": "The target is three to six months of essential expenses, sitting safely in a savings account — not invested, just there. When the car dies or the job vanishes, this buffer absorbs the hit, so you never have to reach for a credit card at twenty-four percent interest.",
+    "motif": "emergencyfund",
+    "caption": "first: a 3–6 month buffer"
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "And keep that emergency fund in the right place: a separate, high-yield savings account. Not in checking, where you'll quietly spend it. Not in stocks, where a crash could halve it at the exact moment you need it. Boring, safe, and instantly available — that's the entire job.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bank",
+        "label": "high-yield savings"
+      },
+      {
+        "name": "shield",
+        "label": "safe, not invested"
+      },
+      {
+        "name": "safetynet",
+        "label": "instantly available"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "narration": "This is the step that quietly separates people who build wealth from people who don't. Without a buffer, every emergency becomes new debt, and you're forever climbing out of the same hole. With one, your savings can finally stay invested and grow, undisturbed.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "safetynet",
+        "label": "absorbs the shock"
+      },
+      {
+        "name": "ballchain",
+        "label": "no new debt"
+      },
+      {
+        "name": "moneytree",
+        "label": "savings stay invested"
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "type": "title",
+    "narration": "Now for the single best deal in all of personal finance.",
+    "heading": "Grab the Free Money",
+    "kicker": "the 401(k) match"
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "narration": "Step three: the 401(k). In the US, a 401(k) is an employer-sponsored retirement account where contributions come directly out of your paychecks — before you ever see the money, and often before it's taxed.",
+    "sourceId": "wiki-401k"
+  },
+  {
+    "id": "s24",
+    "type": "screenshot",
+    "narration": "And here's the magic part: the employer match — an employer's payment into your 401(k) that depends on how much you put in. Your company literally adds free money on top of your own contributions.",
+    "sourceId": "wiki-match"
+  },
+  {
+    "id": "s25",
+    "type": "stage",
+    "narration": "Think about what this means. You put in a hundred dollars, and your employer drops in another hundred to match it. You just earned an instant, guaranteed one hundred percent return — before the market does anything at all. There is nothing else like it.",
+    "motif": "employermatch",
+    "caption": "the employer match = free money"
+  },
+  {
+    "id": "s26",
+    "type": "character",
+    "narration": "So the rule is absolute: always contribute at least enough to capture the full match. Leaving it on the table is turning down a raise your boss is begging to give you. It's the closest thing to free money you will ever find.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "capture the full match"
+      },
+      {
+        "name": "moneybag",
+        "label": "it's a free raise"
+      },
+      {
+        "name": "warning",
+        "label": "never skip it"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "chalkboard",
+    "narration": "That gives us a clean order of operations. First, grab the full employer match. Second, build your emergency fund. Third, crush any high-interest debt like credit cards. Then, pour everything else into low-cost index funds. Follow that order, and you're ahead of almost everyone.",
+    "lines": [
+      "1. grab the full 401(k) match (free money)",
+      "2. build the 3–6 month emergency fund",
+      "3. kill high-interest debt (cards, payday)",
+      "4. invest the rest in low-cost index funds"
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "narration": "Then add one more layer: tax-advantaged accounts. Beyond the 401(k), a Roth I-R-A lets your investments grow and come out completely tax-free in retirement. Sheltering your money from decades of taxes is like quietly adding free points to your return, every single year.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "taxform",
+        "label": "shelter from tax"
+      },
+      {
+        "name": "vault",
+        "label": "a Roth IRA"
+      },
+      {
+        "name": "moneytree",
+        "label": "tax-free growth"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "title",
+    "narration": "Now the move that makes the whole system run without you.",
+    "heading": "Make It Automatic",
+    "kicker": "beat your own willpower"
+  },
+  {
+    "id": "s29",
+    "type": "character",
+    "narration": "Step four: automate everything. The oldest trick in the book is 'pay yourself first' — the moment your paycheck lands, money is whisked into savings and investments automatically, before you ever get the chance to spend it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gear",
+        "label": "automate it"
+      },
+      {
+        "name": "faucet",
+        "label": "pay yourself first"
+      },
+      {
+        "name": "piggybank",
+        "label": "before you can spend"
+      }
+    ]
+  },
+  {
+    "id": "s30",
+    "type": "character",
+    "narration": "This works because automation quietly beats willpower every time. You don't have to feel disciplined twice a month. You set it up once, the transfers happen in the background, and your savings grow whether you're motivated that week or not.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gear",
+        "label": "set it once"
+      },
+      {
+        "name": "calendar",
+        "label": "runs in the background"
+      },
+      {
+        "name": "chartup",
+        "label": "grows regardless"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "screenshot",
+    "narration": "Step five is how you invest it: dollar-cost averaging — an investment strategy of putting in the same amount of money at regular intervals, no matter what the market is doing. Same amount, every single month, forever.",
+    "sourceId": "wiki-dca"
+  },
+  {
+    "id": "s32",
+    "type": "character",
+    "narration": "This frees you from the impossible game of timing the market. When prices are low, your fixed amount buys more shares. When they're high, it buys fewer. You just keep buying, automatically, through every crash and every boom — and let the decades average it out.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "same amount monthly"
+      },
+      {
+        "name": "chartdown",
+        "label": "buy more when low"
+      },
+      {
+        "name": "gear",
+        "label": "never time the market"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "And what should you actually buy with all of it? For most people, the answer is gloriously boring: a low-cost index fund that owns a tiny slice of the entire market at once. One cheap fund, bought automatically forever, quietly beats the vast majority of expert stock-pickers over time.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "basket",
+        "label": "own the whole market"
+      },
+      {
+        "name": "coins",
+        "label": "one cheap fund"
+      },
+      {
+        "name": "trophy",
+        "label": "beats the pros"
+      }
+    ]
   },
   {
     "id": "s33",
     "type": "title",
-    "narration": "But there's an elephant in the room. Why does it feel so much harder than it did for your parents?",
-    "heading": "The Generation Gap",
-    "kicker": "it's not just you"
+    "narration": "And now the force that turns modest savings into real wealth.",
+    "heading": "Let Time Work",
+    "kicker": "compounding + the Rule of 72"
   },
   {
     "id": "s34",
-    "type": "character",
-    "narration": "Because it genuinely is harder. Compared to earlier generations at the same age, younger people today face far pricier homes, mountains of student debt, and wages that haven't kept pace. Feeling behind isn't always a personal failing — sometimes the track itself got steeper.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "house",
-        "label": "pricier homes"
-      },
-      {
-        "name": "gradcap",
-        "label": "more student debt"
-      },
-      {
-        "name": "turtle",
-        "label": "wages lag"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "That force is compound interest — interest accumulated on a principal sum and on previously accumulated interest. Your money earns money, and then that money earns money too. Give it enough time, and the growth becomes almost absurd.",
+    "sourceId": "wiki-compound"
   },
   {
     "id": "s35",
     "type": "stage",
-    "narration": "And the wealth itself is lopsided by generation. Baby boomers alone hold roughly half of all the wealth in the country. Gen X holds a chunk, Millennials a sliver, and Gen Z barely a rounding error — and that gap is wider than age alone can explain.",
-    "motif": "generationgap",
-    "caption": "share of US wealth, by generation"
+    "narration": "There's even a quick mental shortcut for it, the Rule of 72. Divide seventy-two by your annual return to see how fast your money doubles. At eight percent, your money doubles roughly every nine years — doubling again, and again, the longer you leave it alone.",
+    "motif": "ruleof72",
+    "caption": "the Rule of 72"
   },
   {
-    "id": "s58",
-    "type": "character",
-    "narration": "And dig into the why, and it's not avocado toast. Since the eighties, home prices have far outrun wages, the cost of college exploded, and secure pensions quietly vanished. Younger generations are running the very same race — on a track that genuinely got steeper and more expensive.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "house",
-        "label": "homes outran wages"
-      },
-      {
-        "name": "gradcap",
-        "label": "college exploded"
-      },
-      {
-        "name": "hourglass",
-        "label": "pensions vanished"
-      }
-    ]
+    "id": "s56",
+    "type": "callout",
+    "narration": "Watch the Rule of 72 do its thing. Ten thousand dollars at eight percent becomes twenty thousand in nine years. Forty in eighteen. Eighty in twenty-seven. The same money, doubling and doubling, until the later leaps are bigger than everything you originally put in.",
+    "text": "$80,000",
+    "sub": "$10K doubling at 8% over ~27 years",
+    "icon": "moneytree"
   },
   {
     "id": "s36",
-    "type": "screenshot",
-    "narration": "Who are the boomers hogging all of it? The demographic cohort of people born from 1946 to 1964 — the huge generation that bought homes cheap, rode decades of rising markets, and now sits on most of the nation's assets.",
-    "sourceId": "wiki-boomers"
-  },
-  {
-    "id": "s37",
-    "type": "screenshot",
-    "narration": "This isn't your imagination, either. Wealth inequality has substantially increased in the United States since the late 1980s — the top has pulled away from everyone else, and the young are furthest from the top.",
-    "sourceId": "wiki-inequality"
-  },
-  {
-    "id": "s63",
-    "type": "character",
-    "narration": "There is one twist on the horizon. As the boomers age, tens of trillions of dollars are set to pass down — the biggest wealth transfer in history. Some younger people will inherit a fortune. Most won't — which makes quietly building your own, from scratch, matter more than ever.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "moneytree",
-        "label": "the great wealth transfer"
-      },
-      {
-        "name": "couple",
-        "label": "trillions passed down"
-      },
-      {
-        "name": "warning",
-        "label": "most won't inherit"
-      }
-    ]
-  },
-  {
-    "id": "s38",
-    "type": "title",
-    "narration": "So if the track is steeper and the numbers are daunting, what actually works?",
-    "heading": "The One Real Lever",
-    "kicker": "time beats everything"
-  },
-  {
-    "id": "s39",
-    "type": "screenshot",
-    "narration": "The answer is the quiet engine behind every one of these numbers: compound interest — interest accumulated on a principal sum and on previously accumulated interest. It rewards one thing above all else: time in the market.",
-    "sourceId": "wiki-compound"
-  },
-  {
-    "id": "s40",
     "type": "stage",
-    "narration": "Look at what a ten-year head start does. Someone who starts saving at twenty-five, versus someone who starts the exact same amount at thirty-five, can end up with nearly double the money by sixty-five. Same effort — the early starter just gave compounding an extra decade to work.",
+    "narration": "Which is why starting early beats everything. Someone who begins at twenty-five can finish with nearly double what a thirty-five-year-old does, saving the exact same amount — purely because their money got an extra decade to compound. Time is the one ingredient you can never buy back.",
     "motif": "startearly",
     "caption": "the one asset you can't buy back: time"
   },
   {
-    "id": "s59",
+    "id": "s37",
     "type": "callout",
-    "narration": "Put a price tag on procrastination. Delaying your investing by just ten years can cost you hundreds of thousands of dollars by retirement — not because you invested any less, but purely because you gave that money less time. Waiting is quietly the most expensive thing you can do.",
-    "text": "$400,000",
-    "sub": "the price of waiting 10 years to start",
-    "icon": "hourglass"
+    "narration": "Let's make it real. Just five hundred dollars a month, invested steadily from age twenty-five to sixty-five at a normal market return, can grow into well over a million dollars. Not from a huge salary — from a modest, automatic habit, left alone for forty years.",
+    "text": "$1,000,000",
+    "sub": "$500/mo from 25 to 65 at ~8%",
+    "icon": "moneytree"
+  },
+  {
+    "id": "s38",
+    "type": "title",
+    "narration": "So let's put honest numbers on each age, for a typical earner.",
+    "heading": "The Honest Targets",
+    "kicker": "by 25, 30, 40, 50"
+  },
+  {
+    "id": "s39",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Target savings by age — $60K earner ($K)",
+    "unit": "$K",
+    "narration": "For someone earning sixty thousand dollars, the multiples translate to clear goals. Around sixty thousand saved by thirty. A hundred eighty thousand by forty. Three hundred sixty thousand by fifty. And nearly half a million by sixty. Ambitious — but very doable on autopilot.",
+    "data": [
+      {
+        "label": "by 30",
+        "value": 60
+      },
+      {
+        "label": "by 40",
+        "value": 180
+      },
+      {
+        "label": "by 50",
+        "value": 360
+      },
+      {
+        "label": "by 60",
+        "value": 480
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s40",
+    "type": "character",
+    "narration": "By twenty-five, don't stress about a big number. The target is simply this: have a small starter emergency fund, and be investing something every month to grab that employer match. At this age, building the habit is worth more than the balance.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "safetynet",
+        "label": "a starter buffer"
+      },
+      {
+        "name": "seedling",
+        "label": "just start investing"
+      },
+      {
+        "name": "handshake",
+        "label": "grab the match"
+      }
+    ]
   },
   {
     "id": "s41",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "wait until I earn more to start investing",
-    "memeBottom": "lose the one thing money can't buy back — a decade",
-    "narration": "This is why 'I'll start investing once I earn more' is the most expensive sentence in personal finance. The dollars you invest in your twenties are worth far more than the dollars you'll invest in your forties — because they get decades more to grow."
-  },
-  {
-    "id": "s42",
-    "type": "title",
-    "narration": "So let's turn all of this into what you should actually do tomorrow morning.",
-    "heading": "What To Do",
-    "kicker": "beat your past self"
-  },
-  {
-    "id": "s43",
     "type": "character",
-    "narration": "First, stop comparing yourself to other people and other ages. The only scoreboard that matters is you, last year. Is your net worth higher than it was twelve months ago? Then you won. That's the entire game, repeated.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "beat last year"
-      },
-      {
-        "name": "chartup",
-        "label": "higher than before?"
-      },
-      {
-        "name": "trophy",
-        "label": "then you won"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "narration": "So actually measure it. Once a year, on your birthday, add up everything you own, subtract everything you owe, and write that one number down. That single habit — just watching the line move — quietly turns vague money anxiety into a plan you can actually win.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "birthdaycake",
-        "label": "once a year"
-      },
-      {
-        "name": "calculator",
-        "label": "own minus owe"
-      },
-      {
-        "name": "ledger",
-        "label": "write it down"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "Second, aim for the salary multiples, not the headlines. One times your salary by thirty, three times by forty. They're concrete, personal, and completely achievable on an ordinary income — if you start, and you stay consistent.",
-    "pose": "present",
+    "narration": "By thirty, aim for roughly one times your salary. By forty, about three times. If you're hitting these, you are quietly, genuinely on track for a comfortable retirement — even if your bank account doesn't feel glamorous along the way.",
+    "pose": "explain",
     "props": [
       {
         "name": "paystub",
-        "label": "hit the multiples"
+        "label": "30: ~1× salary"
       },
       {
-        "name": "piggybank",
-        "label": "on an ordinary income"
+        "name": "chartup",
+        "label": "40: ~3× salary"
       },
       {
-        "name": "scale",
-        "label": "concrete & personal"
+        "name": "trophy",
+        "label": "quietly on track"
       }
     ]
   },
   {
-    "id": "s45",
+    "id": "s42",
     "type": "character",
-    "narration": "Third, and most important: start now, whatever your age. The best time to plant the tree was twenty years ago. The second best time is this afternoon. Every single day you wait hands a little more of your future wealth to the person who didn't.",
-    "pose": "present",
+    "narration": "By fifty, you're aiming for around six times your salary — and if you're behind, the tax system hands you a gift: bigger 'catch-up' contributions. A focused decade of aggressive saving in your fifties can still dramatically rescue your retirement.",
+    "pose": "explain",
     "props": [
       {
-        "name": "seedling",
-        "label": "plant it today"
-      },
-      {
-        "name": "clock",
-        "label": "every day counts"
-      },
-      {
-        "name": "moneytree",
-        "label": "your future self wins"
-      }
-    ]
-  },
-  {
-    "id": "s61",
-    "type": "character",
-    "narration": "And if you're in your fifties and feel hopelessly behind — you're not. The tax system actually rewards you with bigger catch-up contributions after fifty. A determined decade of aggressive saving can still rescue a retirement. The one truly fatal move is deciding it's too late and giving up.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "retiree",
-        "label": "50 and behind?"
+        "name": "nestegg",
+        "label": "50: ~6× salary"
       },
       {
         "name": "piggybank",
         "label": "bigger catch-up limits"
       },
       {
-        "name": "seedling",
-        "label": "still not too late"
+        "name": "retiree",
+        "label": "it's not too late"
+      }
+    ]
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "narration": "And if you're forty and have barely started, don't despair — but do get serious. You still have twenty-plus years of compounding ahead, which is a lot of runway. Crank your savings rate hard for a decade, max out every tax-advantaged account, and a genuinely comfortable retirement is still firmly on the table.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "retiree",
+        "label": "40 and behind?"
+      },
+      {
+        "name": "percent",
+        "label": "crank the rate"
+      },
+      {
+        "name": "nestegg",
+        "label": "still very doable"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "compare",
+    "narration": "And this is the whole thing in two people. Same salary, same job. One saves twenty percent on autopilot and grabs the match. The other saves nothing and spends it all. Thirty years later, one retires early and free — the other can't afford to stop at all.",
+    "left": {
+      "title": "Saves 20%, automated",
+      "value": "retires free",
+      "icon": "nestegg"
+    },
+    "right": {
+      "title": "Saves nothing",
+      "value": "can never stop",
+      "icon": "ballchain"
+    }
+  },
+  {
+    "id": "s44",
+    "type": "title",
+    "narration": "So what's the real lesson hiding under all these numbers?",
+    "heading": "The Lesson",
+    "kicker": "rate beats everything"
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "The age targets are a map. Your savings rate is the engine. And time is the fuel. Get those three working together, and the exact numbers almost take care of themselves. Miss the engine, and no salary on Earth will save you.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mountain",
+        "label": "targets = the map"
+      },
+      {
+        "name": "gear",
+        "label": "rate = the engine"
+      },
+      {
+        "name": "hourglass",
+        "label": "time = the fuel"
       }
     ]
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "Because here's the truth hiding under all these charts. Your net worth by age isn't really a test you pass or fail. It's a trajectory. And the only question that actually matters is whether that line, however low it starts, is pointed up.",
+    "narration": "So don't wait to earn more before you start. You don't need a bigger salary — you need a bigger gap between what you earn and what you spend. That gap, automated and left to compound, is how ordinary incomes quietly turn into real wealth.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "percent",
+        "label": "widen the gap"
+      },
+      {
+        "name": "gear",
+        "label": "automate it"
+      },
+      {
+        "name": "moneytree",
+        "label": "then wait"
+      }
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "And guard fiercely against lifestyle creep. The real danger was never earning more — it's letting your spending rise to swallow every raise, so a bigger paycheck leaves you exactly as broke as before. Lock your lifestyle in place, bank the difference, and let that gap widen all on its own.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
         "name": "chartup",
-        "label": "it's a trajectory"
+        "label": "raises roll in"
       },
       {
-        "name": "mountain",
-        "label": "is the line pointed up?"
+        "name": "grocerybag",
+        "label": "don't let spending chase"
       },
       {
-        "name": "seedling",
-        "label": "that's all that counts"
+        "name": "piggybank",
+        "label": "bank the difference"
       }
     ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "If this helped you figure out exactly where you stand, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "Here's your whole plan in one breath. Automate twenty percent. Grab the full match. Keep a three-to-six-month buffer. Buy index funds every month. Then ignore it for thirty years. Boring — and almost unfairly effective.",
+    "pose": "present",
     "props": [
       {
-        "name": "birthdaycake",
-        "label": "which number next?"
+        "name": "gear",
+        "label": "automate 20%"
+      },
+      {
+        "name": "safetynet",
+        "label": "keep the buffer"
+      },
+      {
+        "name": "seedling",
+        "label": "then wait 30 years"
       }
     ]
   },
   {
     "id": "s48",
+    "type": "character",
+    "narration": "Because in the end, you're not really chasing a number on a screen. You're buying back your own time — the freedom to one day work because you want to, not because you have to. That's what every one of these targets is secretly for.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "clock",
+        "label": "you're buying time"
+      },
+      {
+        "name": "nestegg",
+        "label": "freedom to choose"
+      },
+      {
+        "name": "mountain",
+        "label": "that's the real goal"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "If this gave you a real plan for your age, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s50",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

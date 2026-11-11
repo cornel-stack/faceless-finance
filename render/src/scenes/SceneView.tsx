@@ -3891,6 +3891,108 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={496} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a 10-year head start can double your finish</text>
       </svg>
     );
+  } else if (m === "savingsrate") {
+    // The savings rate dial: the % you keep decides years-to-freedom.
+    const sweep = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    const rows: [string, string, string][] = [["save 5%", "~50 years", red], ["save 20%", "~37 years", gold], ["save 50%", "~17 years", green]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your savings RATE sets the clock</text>
+        {rows.map(([lab, yrs, col], i) => {
+          const y = 170 + i * 100;
+          const w = [120, 420, 760][i] * sweep;
+          return (
+            <g key={i}>
+              <text x={90} y={y + 6} fontSize={20} fontWeight={900} fill={ink} fontFamily={sans}>{lab}</text>
+              <rect x={260} y={y - 26} width={w} height={48} rx={8} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text x={260 + w + 14} y={y + 7} fontSize={18} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{yrs}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={492} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>years until work is optional</text>
+      </svg>
+    );
+  } else if (m === "fiftythirtytwenty") {
+    // The 50/30/20 split of a paycheck.
+    const grow = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    const parts: [string, string, number, number, string][] = [["50%", "needs", 0, 50, blue], ["30%", "wants", 50, 30, gold], ["20%", "savings", 80, 20, green]];
+    const barX = 160, barW = 660, barY = 250, barH = 90;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={120} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 50 / 30 / 20 paycheck</text>
+        {parts.map(([pct, lab, start, span, col], i) => {
+          const x = barX + barW * ((start as number) / 100);
+          const w = barW * ((span as number) / 100) * grow;
+          return (
+            <g key={i}>
+              <rect x={x} y={barY} width={w} height={barH} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text x={x + w / 2} y={barY + 42} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif" opacity={grow}>{pct}</text>
+              <text x={x + w / 2} y={barY + 70} fontSize={16} fontWeight={800} fill="#f3efe2" textAnchor="middle" fontFamily={sans} opacity={grow}>{lab}</text>
+            </g>
+          );
+        })}
+        <text x={820} y={barY + 58} fontSize={16} fontWeight={800} fill={green} fontFamily={sans} opacity={interpolate(grow, [0.8, 1], [0, 1], clampBoth)}>pay this first</text>
+      </svg>
+    );
+  } else if (m === "emergencyfund") {
+    // A moat/buffer of months of expenses absorbing a shock.
+    const fill = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 6], clampBoth);
+    const hit = interpolate(frame, [fps * 2.1, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">first: a 3–6 month buffer</text>
+        <g transform="translate(300 300)">
+          <circle r={70} fill={parch} stroke={ink} strokeWidth={5} />
+          <text y={-6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>YOU</text>
+          <text y={18} fontSize={13} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>+ your life</text>
+        </g>
+        {Array.from({ length: 6 }).map((_, i) => {
+          const on = fill > i + 0.5;
+          const a = (i / 6) * 6.283 - 1.57;
+          const x = 300 + 150 * Math.cos(a), y = 300 + 150 * Math.sin(a);
+          return <g key={i} opacity={on ? 1 : 0.15}><rect x={x - 22} y={y - 16} width={44} height={32} rx={5} fill={green} stroke={ink} strokeWidth={3} /><text x={x} y={y + 6} fontSize={13} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>1mo</text></g>;
+        })}
+        <g transform={`translate(${760 - hit * 300} 300)`} opacity={hit < 1 ? 1 : 0.25}>
+          <path d="M0 -30 L18 0 L0 30 L-18 0 Z" fill={red} stroke={ink} strokeWidth={4} />
+          <text y={54} fontSize={15} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>a shock</text>
+        </g>
+        <text x={VW / 2} y={494} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">it absorbs the hit, so debt doesn't</text>
+      </svg>
+    );
+  } else if (m === "employermatch") {
+    // Employer match = free money: you put in, they double part of it.
+    const t = interpolate(frame, [fps * 0.4, fps * 1.6], [0, 1], clampBoth);
+    const pop = spring({ frame, fps, delay: fps * 1.7, config: { damping: 9 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the employer match = free money</text>
+        <g transform="translate(260 290)" opacity={t}>
+          <circle r={58} fill={blue} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>you</text><text y={22} fontSize={16} fontWeight={900} fill="#eaf0fa" textAnchor="middle" fontFamily={sans}>$100</text>
+        </g>
+        <text x={490} y={300} fontSize={40} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif" opacity={interpolate(t, [0.5, 1], [0, 1], clampBoth)}>+</text>
+        <g transform={`translate(720 290) scale(${Math.min(1, pop)})`}>
+          <circle r={58} fill={green} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>boss</text><text y={22} fontSize={16} fontWeight={900} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>+$100</text>
+        </g>
+        <text x={VW / 2} y={430} fontSize={22} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif" opacity={Math.min(1, pop)}>= $200, an instant 100% return</text>
+        <text x={VW / 2} y={494} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>never leave it on the table</text>
+      </svg>
+    );
+  } else if (m === "ruleof72") {
+    // Rule of 72: 72 ÷ rate = years to double.
+    const show = interpolate(frame, [fps * 0.5, fps * 1.4], [0, 1], clampBoth);
+    const rows: [string, string][] = [["at 6%", "~12 yrs to double"], ["at 8%", "~9 yrs to double"], ["at 10%", "~7 yrs to double"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={90} fontSize={26} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the Rule of 72</text>
+        <text x={VW / 2} y={140} fontSize={22} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>72 ÷ your return = years to double</text>
+        {rows.map(([r, yrs], i) => {
+          const op = interpolate(show, [i * 0.2, i * 0.2 + 0.3], [0, 1], clampBoth);
+          const y = 230 + i * 70;
+          return <g key={i} opacity={op}><text x={360} y={y} fontSize={22} fontWeight={900} fill={ink} textAnchor="end" fontFamily="Georgia, serif">{r}</text><text x={420} y={y} fontSize={22} fontWeight={800} fill={green} fontFamily={sans}>{yrs}</text></g>;
+        })}
+        <text x={VW / 2} y={492} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>a little math that shows the magic</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
