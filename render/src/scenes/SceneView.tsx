@@ -2937,6 +2937,63 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={480} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">history doesn't repeat — it rhymes</text>
       </svg>
     );
+  } else if (m === "threeprofit") {
+    // Three revenue streams feed the bank: interest, interchange, fees.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const streams: [string, string, string][] = [["interest", "from you", red], ["interchange", "from shops", gold], ["fees", "from you", red]];
+    art = (
+      <svg width={VW} height={VH}>
+        {streams.map(([lab, src, c], i) => { const x = 180 + i * 310; const op = interpolate(t, [i * 0.22, i * 0.22 + 0.3], [0, 1], clampBoth); return <g key={i} opacity={op}><path d={`M${x} 120 L490 250`} stroke={theme.inkSoft} strokeWidth={3} strokeDasharray="5 5" /><rect x={x - 92} y={92} width={184} height={74} rx={8} fill={c} stroke={ink} strokeWidth={4} /><text x={x} y={122} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{lab}</text><text x={x} y={146} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{src}</text></g>; })}
+        <g transform="translate(490 300)"><rect x={-92} y={-58} width={184} height={120} rx={10} fill={ink} /><text y={-8} fontSize={22} fontWeight={900} fill={gold} textAnchor="middle" fontFamily="Georgia, serif">the bank</text><text y={22} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>profits 3 ways</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">interest · interchange · fees</text>
+      </svg>
+    );
+  } else if (m === "minimumpaymenttrap") {
+    // Paying only the minimum keeps a balance alive for decades.
+    const t = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={120} fontSize={24} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>pay only the minimum…</text>
+        <g transform="translate(490 290)">
+          <rect x={-160} y={-40} width={320 * (1 - 0.12 * t)} height={80} rx={8} fill={red} stroke={ink} strokeWidth={5} />
+          <text x={-146} y={10} fontSize={24} fontWeight={900} fill="#fff" fontFamily="Georgia, serif">$5,000</text>
+        </g>
+        <text x={490} y={400} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">…{Math.round(t * 20)} years later</text>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the minimum keeps you in debt for decades</text>
+      </svg>
+    );
+  } else if (m === "interchangeskim") {
+    // Every swipe skims a small percentage for the banks.
+    const swipe = interpolate(frame, [fps * 0.4, fps * 1.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 270)"><rect x={-72} y={-12} width={144} height={92} rx={8} fill="#3a6ea5" stroke={ink} strokeWidth={5} /><rect x={-72 + swipe * 120} y={-42} width={16} height={30} rx={3} fill={gold} stroke={ink} strokeWidth={2} /></g>
+        <g transform="translate(720 270)"><rect x={-72} y={-52} width={144} height={104} rx={10} fill={ink} /><text y={6} fontSize={20} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>banks</text></g>
+        <g opacity={swipe}><circle cx={520} cy={210} r={18} fill={gold} stroke={ink} strokeWidth={3} /><text x={520} y={216} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>%</text><path d="M400 240 L640 250" stroke={theme.inkSoft} strokeWidth={2} strokeDasharray="5 5" /></g>
+        <text x={VW / 2} y={462} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">every swipe skims ~2% for the banks</text>
+      </svg>
+    );
+  } else if (m === "rewardsfunnel") {
+    // Fees and interest from debtors flow into the wealthy's rewards.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(250 220)"><circle r={56} fill="#8a929a" stroke={ink} strokeWidth={5} /><text y={-2} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>people in</text><text y={18} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>debt</text></g>
+        <g transform="translate(730 360)"><circle r={56} fill={gold} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>wealthy</text><text y={18} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>'points'</text></g>
+        <path d="M304 244 q220 60 376 92" fill="none" stroke={red} strokeWidth={5} strokeDasharray="6 6" opacity={t} />
+        <text x={500} y={248} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans} opacity={t}>fees + interest →</text>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the poor quietly fund the rich's rewards</text>
+      </svg>
+    );
+  } else if (m === "gracefloat") {
+    // Transactor (pays in full, 0% interest) vs revolver (carries a balance).
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(260 270)"><rect x={-112} y={-72} width={224} height={144} rx={10} fill={green} stroke={ink} strokeWidth={5} /><text y={-20} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>pays in full</text><text y={14} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>0% interest</text><text y={42} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>'transactor'</text></g>
+        <g transform="translate(720 270)"><rect x={-112} y={-72} width={224} height={144} rx={10} fill={red} stroke={ink} strokeWidth={5} /><text y={-20} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>carries a balance</text><text y={14} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>20%+ interest</text><text y={42} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>'revolver'</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">two customers, opposite outcomes</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

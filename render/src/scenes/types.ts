@@ -148,7 +148,9 @@ export interface StageScene extends Base {
     // EP041 (Lehman Brothers) additions:
     | "subprimestack" | "leveragetower" | "weekendphones" | "creditfreeze" | "toobigtofail"
     // EP042 (dot-com bubble) additions:
-    | "dotcompeak" | "eyeballs" | "burnrate" | "profitlessvaluation" | "bubbleecho";
+    | "dotcompeak" | "eyeballs" | "burnrate" | "profitlessvaluation" | "bubbleecho"
+    // EP043 (credit cards) additions:
+    | "threeprofit" | "minimumpaymenttrap" | "interchangeskim" | "rewardsfunnel" | "gracefloat";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

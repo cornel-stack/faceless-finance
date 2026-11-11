@@ -1,0 +1,868 @@
+{
+  "id": "EP043",
+  "series": "Napkin Numbers",
+  "title": "How Credit Cards Actually Make Money Off You",
+  "slug": "how-credit-cards-actually-make-money-off-you",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP043 — explainer (By the Numbers, row 33). The three profit engines of credit cards: interest (APR + the minimum-payment trap), interchange/swipe fees, and penalty fees — plus the rewards paradox (the poor subsidize the rich), the spending psychology, and how to win. 5 new motifs (threeprofit, minimumpaymenttrap, interchangeskim, rewardsfunnel, gracefloat) + doodles (cardreader, mousetrap). No faces (conceptual). Target 12–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "A credit card feels like free money. No annual fee, cashback on every purchase, a whole month to pay it back, and someone else's protection if it's stolen. It seems almost too generous.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "'free' money?"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "character",
+      "narration": "So here's the puzzle. If credit cards are such a great deal for you, how do banks make tens of billions of dollars a year from them? The answer: in three very clever ways.",
+      "pose": "think",
+      "bubble": "so who's really paying?"
+    },
+    {
+      "id": "s3",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "'I pay it off every month, it's free!'",
+      "memeBottom": "the bank is still making money off you",
+      "narration": "Even if you're a perfect customer who never pays a cent of interest, the bank is still earning from you. To see how, you have to understand what a credit card really is."
+    },
+    {
+      "id": "s4",
+      "type": "screenshot",
+      "narration": "A credit card is a payment card, usually issued by a bank, that lets you buy things on credit. Card use thereby accrues debt that must be repaid later.",
+      "sourceId": "wiki-creditcard"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The idea is surprisingly young. The first charge card, Diners Club, appeared in 1950 — reportedly after a businessman was caught without enough cash at dinner. Bank cards followed in the late 1950s.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "cardreader",
+          "label": "born in 1950"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "character",
+      "narration": "That last part is the key. A credit card isn't really a payment tool. It's a tiny, instant loan — and loans are how banks make money. The whole glossy product is a lending machine in disguise.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "a loan in your pocket"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "Adoption was aggressive. In one infamous 1958 experiment, a bank mailed sixty thousand live, ready-to-use credit cards to everyone in one city — no application needed. The age of easy credit had begun.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "envelope",
+          "label": "cards mailed to everyone"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "So let's run the numbers on exactly how that machine earns. It profits in three ways.",
+      "heading": "Three Profit Engines",
+      "kicker": "interest, interchange, fees"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "Engine one: interest, paid by you. Engine two: interchange, paid by the shops. Engine three: fees, also paid by you. Three streams of money, all flowing to the bank.",
+      "motif": "threeprofit",
+      "caption": "interest · interchange · fees"
+    },
+    {
+      "id": "s8",
+      "type": "title",
+      "narration": "The biggest engine by far is the first one: interest.",
+      "heading": "Engine 1: Interest",
+      "kicker": "the big one"
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "Credit card interest is, in Wikipedia's blunt words, 'a way in which credit card issuers generate revenue.' It is, by design, their core business.",
+      "sourceId": "wiki-cardinterest"
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "If you don't pay your full balance each month, the leftover amount starts charging interest — at a rate that is, frankly, staggering compared to almost any other loan.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "interest on the leftover"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "screenshot",
+      "narration": "That rate is the APR — the annual percentage rate, the interest for a whole year. On credit cards, it is routinely north of twenty percent.",
+      "sourceId": "wiki-apr"
+    },
+    {
+      "id": "s12",
+      "type": "callout",
+      "narration": "The average US credit card now charges well over twenty percent a year. For comparison, a mortgage might charge six or seven. This is some of the most expensive debt available to ordinary people.",
+      "text": "20%+ APR",
+      "sub": "among the priciest debt there is",
+      "icon": "percent"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "Make it painfully concrete. Put a thousand dollars on a card at twenty-four percent and pay only the minimum, and you can end up repaying it for well over a decade — handing over hundreds, even thousands, in extra interest.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "$1,000 → years of interest"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "And this is compound interest working against you. Interest gets charged on your balance — and then, next month, on the interest too. The same force that builds wealth now quietly devours it.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "compounding, in reverse"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Rewards vs the interest you pay",
+      "unit": "%",
+      "narration": "And here's the trap in one picture. Your rewards might be worth two percent. The interest on a carried balance is around twenty-four. Chase the first while paying the second, and you lose badly.",
+      "data": [
+        {
+          "label": "your cashback",
+          "value": 2
+        },
+        {
+          "label": "your interest",
+          "value": 24
+        }
+      ],
+      "highlight": 1
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "And this is where the single most profitable trick in the whole industry lives.",
+      "heading": "The Minimum Trap",
+      "kicker": "designed to keep you paying"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Every statement shows a reassuringly small 'minimum payment' — often just two or three percent of what you owe. It feels manageable. It is a trap.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "mousetrap",
+          "label": "the 'minimum payment'"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "Pay only that minimum on a five-thousand-dollar balance, and you can be stuck repaying it for well over a decade — handing the bank thousands of dollars in interest, sometimes more than the original balance.",
+      "motif": "minimumpaymenttrap",
+      "caption": "the minimum keeps you in debt for decades"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "This trap was so effective that regulators stepped in. A 2009 law now forces card statements to spell out, in black and white, how many years it will take to clear your balance if you only pay the minimum.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the law made them warn you"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "That isn't an accident. The minimum is set low on purpose — just enough to feel painless, but small enough to keep you in debt, and paying interest, for as long as humanly possible.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "painless by design"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "To see who the bank really loves, you need two words: transactors and revolvers.",
+      "heading": "Two Customers",
+      "kicker": "who the bank really wants"
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "A credit card is a form of revolving credit — a type of credit that doesn't have a fixed number of payments. You can carry a balance and 'revolve' it month after month.",
+      "sourceId": "wiki-revolving"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "If you pay in full each month, you're a 'transactor' — you pay no interest at all, thanks to a grace period. If you carry a balance, you're a 'revolver,' paying that brutal interest. Banks adore revolvers.",
+      "motif": "gracefloat",
+      "caption": "two customers, opposite outcomes"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "A huge share of all credit card profit comes from revolvers — the people, often those who can least afford it, who carry a balance and pay interest month after month after month.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "coins",
+          "label": "revolvers = the profit"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "callout",
+      "narration": "And collectively, it's enormous. Americans now carry well over a trillion dollars in credit card debt — an all-time record, racking up interest at those sky-high rates.",
+      "text": "$1 trillion+",
+      "sub": "in US card debt — a record",
+      "icon": "debtclock"
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Now for engine two — the one you never even see.",
+      "heading": "Engine 2: Interchange",
+      "kicker": "a tax on every swipe"
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "Every time you swipe, there's an interchange fee — a fee paid between banks for accepting a card transaction. Essentially, the shop's bank pays a slice to your bank.",
+      "sourceId": "wiki-interchange"
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "There's another winner hiding in the middle: the networks. Visa and Mastercard don't lend you a cent — they just run the rails that every swipe travels on, and take a tiny toll on each one. It's one of the most profitable businesses on Earth.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "server",
+          "label": "Visa & Mastercard: the toll booth"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "On every single purchase, the merchant hands over a cut — typically around one and a half to three percent — just for the privilege of accepting your card. Multiply that across billions of swipes.",
+      "motif": "interchangeskim",
+      "caption": "every swipe skims ~2% for the banks"
+    },
+    {
+      "id": "s60",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "run the payment rails",
+      "memeBottom": "take a cut of nearly every purchase, forever",
+      "narration": "The card networks took almost no lending risk, built the toll road everyone must use, and quietly collect a slice of a huge share of all the spending on the planet."
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "Here's the sneaky part. Merchants don't just eat that fee — they bake it into their prices. So everyone pays slightly more, including people paying with cash, who get no rewards at all.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "pricetag",
+          "label": "it's hidden in prices"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "And engine three is the simplest of all: fees.",
+      "heading": "Engine 3: Fees",
+      "kicker": "a menu of penalties"
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "Late fees. Annual fees. Over-limit fees. Cash advance fees — often with interest from day one. Foreign transaction fees. And penalty rates that jack your APR up even higher if you slip.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "a whole menu of fees"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "And the fine print bites. 'Penalty APRs' can spike your rate to thirty percent if you're late. Cash advances charge interest from the very first second, with no grace period at all.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "penalty rates & cash advances"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "screenshot",
+      "narration": "It all adds up to credit card debt, where, in Wikipedia's words, debt grows through the accrual of interest and penalties when you don't repay.",
+      "sourceId": "wiki-ccdebt"
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "Even the friendly 'zero percent intro offer' can hide teeth: so-called deferred interest, where if you don't clear the whole balance by the deadline, you're suddenly charged interest, backdated to day one.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "mousetrap",
+          "label": "'0% intro'… with a catch"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "Which brings us to the most brilliant, and most uncomfortable, part of the whole system: the rewards.",
+      "heading": "The Rewards Paradox",
+      "kicker": "who pays for your points?"
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "Cashback and points feel like the bank giving you free money. But banks don't give away money. So where do the rewards actually come from? From the other two engines.",
+      "pose": "think",
+      "bubble": "who funds the points?"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "Rewards are funded by the interchange fees merchants pay, and by the mountain of interest that revolvers pay. Your points are paid for by other people's purchases — and other people's debt.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "rewards come from elsewhere"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "stage",
+      "narration": "And this creates a quiet, upside-down transfer. Wealthier people with good credit collect the best rewards — funded partly by the fees and interest paid by poorer people carrying balances. The poor subsidize the rich's points.",
+      "motif": "rewardsfunnel",
+      "caption": "the poor quietly fund the rich's rewards"
+    },
+    {
+      "id": "s63",
+      "type": "timeline",
+      "title": "The credit card, 1950–today",
+      "narration": "The whole arc in one line. Diners Club in 1950. Bank cards in 1958. Mass adoption through the 70s and 80s. New protections in 2009. And a record trillion-dollar debt pile today.",
+      "events": [
+        {
+          "year": "1950",
+          "label": "Diners Club",
+          "icon": "cardreader"
+        },
+        {
+          "year": "1958",
+          "label": "bank cards",
+          "icon": "creditcard"
+        },
+        {
+          "year": "1980s",
+          "label": "mass adoption",
+          "icon": "crowd"
+        },
+        {
+          "year": "2009",
+          "label": "new rules",
+          "icon": "scale"
+        },
+        {
+          "year": "today",
+          "label": "$1T+ debt",
+          "icon": "debtclock"
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s33",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "earn 2% cashback",
+      "memeBottom": "pay 24% interest on the balance",
+      "narration": "Here's the cruel math: chasing two percent in rewards while carrying a balance at twenty-four percent interest means you are losing badly, no matter how good the points feel."
+    },
+    {
+      "id": "s64",
+      "type": "character",
+      "narration": "At the top end, premium cards flip the model: huge annual fees in exchange for lavish perks. The bank is betting that status-conscious spenders will put so much through the card that the interchange more than covers it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "premium 'status' cards"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "On top of all that, the card is quietly rewiring how you spend.",
+      "heading": "The Psychology",
+      "kicker": "why cards make you spend more"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Studies consistently find that people spend significantly more when paying by card than with cash — sometimes dramatically more. Handing over physical cash hurts. Tapping a card doesn't.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "cards remove the 'ouch'"
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "type": "character",
+      "narration": "Psychologists call part of this 'decoupling' — the card separates the joy of buying from the pain of paying, pushing them weeks apart. Your brain enjoys the purchase now and barely registers the cost later.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brain",
+          "label": "buy now, feel it later"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "That's the real genius. By removing the small sting of paying, the card gently nudges you to buy more — and the rewards nudge you again, turning spending itself into a little game you want to play.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magichat",
+          "label": "spending, gamified"
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "pay with cash and feel every dollar",
+      "memeBottom": "tap a card and feel nothing at all",
+      "narration": "That tiny numbing of the 'ouch' of spending is worth a fortune — because, reliably, it makes almost all of us spend just a little bit more."
+    },
+    {
+      "id": "s37",
+      "type": "title",
+      "narration": "And the whole thing runs on one number that follows you everywhere.",
+      "heading": "The Score",
+      "kicker": "your financial reputation"
+    },
+    {
+      "id": "s38",
+      "type": "screenshot",
+      "narration": "That number is your credit score — a numerical expression that represents the creditworthiness of an individual. It decides which cards, loans, and rates you can get.",
+      "sourceId": "wiki-creditscore"
+    },
+    {
+      "id": "s67",
+      "type": "character",
+      "narration": "For beginners, the ladder is real too. A 'secured' card, backed by a small deposit, lets someone with no history start building a score safely — the honest, useful side of this same system.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "a real way to build credit"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "Used well, a credit card quietly builds that score, unlocking cheaper mortgages and loans later. Used badly, it wrecks it. The same tool can be a ladder or a trap — depending entirely on how you use it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "a ladder, or a trap"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "title",
+      "narration": "So how do you make sure you're on the winning side of this machine?",
+      "heading": "How to Win",
+      "kicker": "be the transactor"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Rule one, above all others: pay the statement in full, every single month. Do that, and you pay zero interest — and the single most profitable engine against you simply shuts off.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "pay in full, always"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "Rule two: treat the card exactly like a debit card. Only ever spend money you already have sitting in your account. The credit limit is not your money — it's the bank's bait.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "cardreader",
+          "label": "spend only what you have"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "Rule three: never, ever carry a balance to chase rewards. If you revolve debt, cut up the rewards card and kill that balance first. The interest will always dwarf the points.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "kill the balance first"
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "type": "compare",
+      "narration": "So picture the two lifetimes. The disciplined transactor collects years of rewards and pays nothing for them. The revolver pays thousands in interest for the exact same cards and perks.",
+      "left": {
+        "title": "The transactor",
+        "value": "rewards, $0 interest",
+        "icon": "trophy"
+      },
+      "right": {
+        "title": "The revolver",
+        "value": "thousands in interest",
+        "icon": "mousetrap"
+      }
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeBottom": "credit card rewards are only 'free' if you never pay a cent of interest",
+      "narration": "Rewards are genuinely great — but only for the disciplined transactor who pays in full. For everyone else, they're a lure on a very expensive hook."
+    },
+    {
+      "id": "s69",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeTop": "",
+      "memeBottom": "the credit limit is the bank's money — not yours",
+      "narration": "The simplest mindset shift of all: your credit limit is not a measure of what you can afford. It's a measure of how much the bank would love to lend you, at twenty-plus percent."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Do all that, and you flip the whole thing around. You collect the rewards, build your score, enjoy the protections — and the bank earns only a sliver of interchange, instead of a fortune in interest.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "beat the machine"
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "type": "character",
+      "narration": "And a new cousin has appeared: 'buy now, pay later.' It splits purchases into easy instalments and feels different from a card — but it runs on the same psychology of making spending feel painless.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "'buy now, pay later'"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "title",
+      "narration": "So let's total up how the card really earns.",
+      "heading": "The Final Math",
+      "kicker": "where the billions come from"
+    },
+    {
+      "id": "s47",
+      "type": "chalkboard",
+      "narration": "Interest from revolvers, at twenty-plus percent. Interchange skimmed from every swipe. A menu of fees. And rewards, funded by all of it — flowing from the indebted to the wealthy.",
+      "lines": [
+        "interest (20%+) → from revolvers",
+        "interchange (~2%) → from every swipe",
+        "fees → late, annual, penalty",
+        "rewards → paid by the people in debt"
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "The uncomfortable truth is that the credit card system is largely funded by people who struggle with it. A minority carrying heavy, expensive debt pays for the convenience and perks of everyone else.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "a few pay for the many"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "So no — the card is never truly free. Someone always pays. The entire game is to make sure, through sheer discipline, that the someone paying is not you.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "it's free — for the disciplined"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "So the next time a shiny new card offers you five percent back and a zero-percent intro rate, you'll see the machine behind the magic — and you'll know exactly how to use it without being used by it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "use it, don't get used"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "If this changed how you see that little piece of plastic, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-creditcard",
+      "name": "Credit card (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card",
+      "quote": "allowing the card's users to purchase goods and services"
+    },
+    {
+      "id": "wiki-cardinterest",
+      "name": "Credit card interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+      "quote": "a way in which credit card issuers generate revenue"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "the interest rate for a whole year"
+    },
+    {
+      "id": "wiki-revolving",
+      "name": "Revolving credit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Revolving_credit",
+      "quote": "a type of credit that does not have a fixed number of payments"
+    },
+    {
+      "id": "wiki-interchange",
+      "name": "Interchange fee (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interchange_fee",
+      "quote": "a fee paid between banks for the acceptance of card-based transactions"
+    },
+    {
+      "id": "wiki-ccdebt",
+      "name": "Credit card debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_debt",
+      "quote": "Debt grows through the accrual of interest and penalties"
+    },
+    {
+      "id": "wiki-creditscore",
+      "name": "Credit score (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_score",
+      "quote": "to represent the creditworthiness of an individual"
+    },
+    {
+      "id": "wiki-creditcard2",
+      "name": "Credit card (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card",
+      "quote": "Card use thereby accrues debt that must be repaid later"
+    }
+  ],
+  "youtube": {
+    "title": "How Credit Cards Actually Make Money Off You",
+    "alts": [
+      "The Hidden Business Model of Your Credit Card",
+      "Credit Cards: Why 'Free' Rewards Aren't Free"
+    ],
+    "hook": "A credit card feels like free money — no fee, cashback, a month to pay. So how do banks make tens of billions a year from them? This is how credit cards actually make money off you, by the numbers: the three profit engines (20%+ interest, ~2% interchange on every swipe, and a menu of fees), the minimum-payment trap, the rewards paradox where people in debt subsidize the wealthy's points, the spending psychology, and exactly how to flip the game and win. Fully cited.",
+    "bullets": [
+      "The three profit engines: interest, interchange, and fees",
+      "20%+ APR and the minimum-payment trap that lasts decades",
+      "Transactors vs revolvers — who the bank really wants",
+      "Interchange: the ~2% skim hidden in every price you pay",
+      "The rewards paradox: how the poor subsidize the rich's points",
+      "How to win: pay in full, treat it like debit, never chase points into debt"
+    ],
+    "tags": [
+      "how credit cards work",
+      "credit cards explained",
+      "credit card interest",
+      "minimum payment trap",
+      "interchange fees",
+      "credit card rewards",
+      "apr explained",
+      "revolving credit",
+      "personal finance",
+      "credit score",
+      "economics explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#creditcards",
+      "#personalfinance",
+      "#debt",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "CREDIT CARDS:",
+      "hookBot": "HOW THEY WIN",
+      "napkinNumber": "20%+",
+      "napkinSub": "APR, by design",
+      "deco": "creditcard"
+    },
+    "chapters": [
+      [
+        "how do banks make tens of billions",
+        "The puzzle"
+      ],
+      [
+        "profits in three ways",
+        "Three engines"
+      ],
+      [
+        "biggest engine by far",
+        "Interest"
+      ],
+      [
+        "the single most profitable trick",
+        "The minimum trap"
+      ],
+      [
+        "time you swipe",
+        "Interchange"
+      ],
+      [
+        "where do the rewards actually come from",
+        "The rewards paradox"
+      ],
+      [
+        "spend significantly more when paying by card",
+        "The psychology"
+      ],
+      [
+        "pay the statement in full",
+        "How to win"
+      ]
+    ]
+  }
+}

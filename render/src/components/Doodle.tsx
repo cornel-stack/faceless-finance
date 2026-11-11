@@ -75,6 +75,8 @@ export type DoodleName =
   | "gorilla" | "tombstone"
   // EP042 (dot-com bubble) additions:
   | "dialup" | "sockpuppet"
+  // EP043 (credit cards) additions:
+  | "cardreader" | "mousetrap"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1519,6 +1521,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M38 28 Q50 20 60 30 L66 60 Q68 80 50 84 Q40 82 40 66 L28 54 Q26 40 38 28 Z" fill="#e8e2d6" strokeWidth={SW} />
           <RCircle cx={50} cy={40} d={6} fill={INK} strokeWidth={0.5} />
           <RLine x1={28} y1={54} x2={40} y2={52} strokeWidth={2} />
+        </>
+      );
+
+    // ---- EP043 (credit cards) doodles ----
+    case "cardreader":
+      // A card payment terminal.
+      return (
+        <>
+          <RRect x={30} y={30} w={40} h={56} fill="#2b2f33" strokeWidth={SW} />
+          <RRect x={36} y={38} w={28} h={18} fill={GREEN} strokeWidth={1.4} />
+          <RLine x1={36} y1={66} x2={64} y2={66} strokeWidth={2} />
+          <RLine x1={36} y1={74} x2={64} y2={74} strokeWidth={2} />
+          <RRect x={40} y={20} w={20} h={10} fill={GOLD} strokeWidth={1.4} />
+        </>
+      );
+    case "mousetrap":
+      // The debt trap.
+      return (
+        <>
+          <RRect x={24} y={60} w={52} h={24} fill="#8a5a2b" strokeWidth={SW} />
+          <RPath d="M30 60 L30 36 L70 44" fill="none" strokeWidth={SW} />
+          <RCircle cx={58} cy={70} d={12} fill={GOLD} strokeWidth={1.4} />
         </>
       );
   }
