@@ -87,6 +87,8 @@ export type DoodleName =
   | "grocerybag" | "scepter"
   // EP048 (gold) additions:
   | "umbrella" | "nugget"
+  // EP049 (debt as a product) additions:
+  | "moneytree" | "ballchain"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1664,6 +1666,28 @@ function shape(name: DoodleName): React.ReactNode {
         <>
           <RPath d="M30 56 Q26 40 44 38 Q52 28 66 36 Q82 40 74 56 Q78 72 58 72 Q38 74 30 56 Z" fill={GOLD} strokeWidth={SW} />
           <RCircle cx={48} cy={50} d={5} fill="#fff" strokeWidth={0.5} />
+        </>
+      );
+
+    // ---- EP049 (debt as a product) doodles ----
+    case "moneytree":
+      // Money from nothing.
+      return (
+        <>
+          <RLine x1={50} y1={88} x2={50} y2={56} strokeWidth={5} />
+          <RCircle cx={50} cy={40} d={46} fill={GREEN} strokeWidth={SW} />
+          <text x={50} y={47} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <RRect x={42} y={86} w={16} h={8} fill={TAN} strokeWidth={1.4} />
+        </>
+      );
+    case "ballchain":
+      // The debt trap.
+      return (
+        <>
+          <RCircle cx={58} cy={70} d={34} fill={INK} strokeWidth={SW} />
+          <RCircle cx={30} cy={34} d={12} fill="none" strokeWidth={SW} />
+          <RCircle cx={40} cy={47} d={12} fill="none" strokeWidth={SW} />
+          <RLine x1={46} y1={54} x2={52} y2={60} strokeWidth={SW} />
         </>
       );
   }

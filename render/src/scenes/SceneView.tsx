@@ -3398,6 +3398,81 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={490} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">gold protects; it doesn't compound</text>
       </svg>
     );
+  } else if (m === "sellmoney") {
+    // The perfect product: lend $100, get $120 back, and the product returns.
+    const out = interpolate(frame, [fps * 0.4, fps * 1.2], [0, 1], clampBoth);
+    const back = interpolate(frame, [fps * 1.3, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(250 270)"><rect x={-80} y={-60} width={160} height={120} rx={10} fill={ink} /><text y={6} fontSize={22} fontWeight={900} fill={gold} textAnchor="middle" fontFamily={sans}>the bank</text></g>
+        <g transform="translate(730 270)"><circle r={54} fill="#8a929a" stroke={ink} strokeWidth={4} /><text y={6} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>you</text></g>
+        <g opacity={out}><path d="M340 230 q190 -50 334 0" fill="none" stroke={green} strokeWidth={5} /><text x={500} y={168} fontSize={20} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>lend $100 →</text></g>
+        <g opacity={back}><path d="M674 322 q-190 60 -334 0" fill="none" stroke={red} strokeWidth={5} /><text x={500} y={392} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>← get $120 back</text></g>
+        <text x={VW / 2} y={476} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">sell money, get more money back</text>
+      </svg>
+    );
+  } else if (m === "freerawmaterial") {
+    // Banks create the money they lend with a keystroke.
+    const pop = spring({ frame, fps, delay: fps * 0.8, config: { damping: 8 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(300 280)"><rect x={-90} y={-60} width={180} height={120} rx={8} fill="#2b2f33" stroke={ink} strokeWidth={5} /><rect x={-70} y={-40} width={140} height={44} rx={4} fill={green} opacity={0.8} /><text y={42} fontSize={16} fontWeight={800} fill="#c7c2b6" textAnchor="middle" fontFamily={sans}>a keystroke</text></g>
+        <path d="M410 280 l70 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform={`translate(720 280) scale(${Math.min(1, pop)})`}><circle r={70} fill={gold} stroke={ink} strokeWidth={5} /><text y={18} fontSize={50} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>
+        <text x={VW / 2} y={470} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the raw material is created from nothing</text>
+      </svg>
+    );
+  } else if (m === "thespread") {
+    // Borrow cheap, lend dear; the gap is the profit.
+    const g = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">borrow cheap, lend dear</text>
+        <RLine x1={120} y1={430} x2={VW - 120} y2={430} stroke={ink} strokeWidth={3} />
+        <g transform="translate(290 0)"><rect x={-74} y={430 - 50 * g} width={148} height={50 * g} fill={blue} stroke={ink} strokeWidth={4} /><text x={0} y={462} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>pays you 1%</text></g>
+        <g transform="translate(700 0)"><rect x={-74} y={430 - 260 * g} width={148} height={260 * g} fill={red} stroke={ink} strokeWidth={4} /><text x={0} y={462} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>charges you 7%</text></g>
+        {g > 0.85 && <g><rect x={430} y={200} width={160} height={70} rx={8} fill={gold} stroke={ink} strokeWidth={4} /><text x={510} y={244} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the spread</text></g>}
+      </svg>
+    );
+  } else if (m === "securitizemachine") {
+    // Loans packaged into a bond, sold to investors, capital recycled.
+    const t = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(200 260)"><rect x={-70} y={-50} width={140} height={100} rx={8} fill="#d98b5f" stroke={ink} strokeWidth={4} /><text y={6} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>loans</text></g>
+        <g transform="translate(490 260)"><rect x={-70} y={-50} width={140} height={100} rx={8} fill={gold} stroke={ink} strokeWidth={4} /><text y={6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>a bond</text></g>
+        <g transform="translate(780 260)" opacity={interpolate(t, [0.5, 0.8], [0, 1], clampBoth)}><circle r={52} fill={green} stroke={ink} strokeWidth={4} /><text y={6} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>investors</text></g>
+        <path d="M278 260 L410 260 M562 260 L720 260" stroke={ink} strokeWidth={4} fill="none" />
+        <path d="M780 322 q-130 120 -580 20" fill="none" stroke={green} strokeWidth={4} strokeDasharray="6 6" opacity={interpolate(t, [0.72, 1], [0, 1], clampBoth)} />
+        <text x={420} y={430} fontSize={16} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans} opacity={interpolate(t, [0.72, 1], [0, 1], clampBoth)}>cash back → lend again</text>
+        <text x={VW / 2} y={488} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">package debt, sell it, lend the same dollar again</text>
+      </svg>
+    );
+  } else if (m === "debtcompounds") {
+    // A debt snowball growing via interest on interest.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.0], [0, 1], clampBoth);
+    const amt = Math.round(1000 * Math.pow(3, grow));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={110} fontSize={22} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>interest on interest…</text>
+        <g transform={`translate(${VW / 2} 300)`}>
+          <circle r={58 + 130 * grow} fill={red} stroke={ink} strokeWidth={5} />
+          <text y={10} fontSize={26 + 14 * grow} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">${amt.toLocaleString("en-US")}</text>
+        </g>
+        <text x={VW / 2} y={494} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">it compounds, forever</text>
+      </svg>
+    );
+  } else if (m === "debteverywhere") {
+    // Debt radiating into every corner of life.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const items = ["a mortgage", "a car loan", "credit cards", "student loans", "government debt"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 270)"><circle r={64} fill={red} stroke={ink} strokeWidth={6} /><text y={10} fontSize={34} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">debt</text></g>
+        {items.map((lab, i) => { const a = (i / 5) * 6.283 - 1.57; const op = interpolate(reveal, [i * 0.16, i * 0.16 + 0.2], [0, 1], clampBoth); const x = 490 + 290 * Math.cos(a); const y = 270 + 180 * Math.sin(a); return <g key={i} opacity={op}><line x1={490} y1={270} x2={x} y2={y} stroke={theme.inkSoft} strokeWidth={2} strokeDasharray="5 5" /><g transform={`translate(${x} ${y})`}><rect x={-98} y={-26} width={196} height={52} rx={8} fill={parch} stroke={ink} strokeWidth={3} /><text y={6} fontSize={18} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g></g>; })}
+        <text x={VW / 2} y={502} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">it's embedded in everything</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

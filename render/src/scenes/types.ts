@@ -160,7 +160,9 @@ export interface StageScene extends Base {
     // EP047 (dollar reserve status) additions:
     | "privilegeperks" | "crownslips" | "importinflation" | "nobuyers" | "noreplacement"
     // EP048 (gold) additions:
-    | "goldrecord" | "goldvsrates" | "relationshipbreaks" | "cbgoldbuying" | "antidollar" | "insurancenotengine";
+    | "goldrecord" | "goldvsrates" | "relationshipbreaks" | "cbgoldbuying" | "antidollar" | "insurancenotengine"
+    // EP049 (debt as a product) additions:
+    | "sellmoney" | "freerawmaterial" | "thespread" | "securitizemachine" | "debtcompounds" | "debteverywhere";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
