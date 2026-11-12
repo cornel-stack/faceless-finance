@@ -143,6 +143,7 @@ export type DoodleName =
   | "diploma" | "books"
   | "ticket" | "clover"
   | "rockingchair" | "goldwatch"
+  | "mapleleaf"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2391,6 +2392,13 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={42} y={76} w={16} h={12} fill={TAN} strokeWidth={2} />
           <RLine x1={50} y1={52} x2={50} y2={38} strokeWidth={2.4} />
           <RLine x1={50} y1={52} x2={62} y2={56} strokeWidth={2.4} />
+        </>
+      );
+    case "mapleleaf":
+      // A maple leaf — Canada.
+      return (
+        <>
+          <RPath d="M50 16 L55 34 L70 28 L62 44 L82 48 L66 56 L72 72 L54 64 L50 84 L46 64 L28 72 L34 56 L18 48 L38 44 L30 28 L45 34 Z" fill={RED} strokeWidth={SW} />
         </>
       );
   }

@@ -224,7 +224,9 @@ export interface StageScene extends Base {
     // EP079 (every level of retirement age) additions:
     | "retireageladder" | "eggneededbyage" | "ssclaimingage" | "healthcaregap" | "oneyearsyndrome" | "yearsfreevsyearssaving"
     // EP080 (every level of compound interest) additions:
-    | "rateladdergrowth" | "hockeystickcurve" | "doublingtime" | "ratefeedrag" | "timevsrate" | "inflationnegcompound";
+    | "rateladdergrowth" | "hockeystickcurve" | "doublingtime" | "ratefeedrag" | "timevsrate" | "inflationnegcompound"
+    // EP081 (The Price Tag — Canada housing) additions:
+    | "pricetoincomeladder" | "thelockout" | "demandvssupply" | "canadarisecurve";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

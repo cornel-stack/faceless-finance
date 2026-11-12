@@ -2,761 +2,811 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Einstein supposedly called it the eighth wonder of the world. It's the quiet force that turns ten thousand dollars into fifteen thousand — or into nearly three million — depending on one number. Compound interest. Today we climb every level of it, from one percent to fifteen, and reveal why that one number decides almost everything.",
+    "narration": "A single-family home in Vancouver can cost more than twelve times what a typical family earns in a year. In the healthiest housing markets, that number is three. Canada didn't just get expensive — it became one of the least affordable places on earth to own a home. Today, the price tag on an entire country, and why nobody can afford it anymore.",
     "pose": "explain",
     "props": [
       {
-        "name": "snowball",
-        "label": "the eighth wonder"
+        "name": "mapleleaf",
+        "label": "Canada"
       },
       {
-        "name": "chartup",
-        "label": "1% → 15%"
+        "name": "house",
+        "label": "12× a year's income"
       },
       {
-        "name": "moneytree",
-        "label": "one number decides everything"
+        "name": "warning",
+        "label": "healthy is ~3×"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the jaw-dropper up front. Ten thousand dollars, left alone for forty years, grows to about fifteen thousand at one percent — but to around four hundred fifty thousand at ten percent. Same money, same time. The only difference is the rate, and it changes the outcome by a factor of thirty.",
-    "text": "$15K vs $453K",
-    "sub": "same $10K, same 40 years — only the rate differs",
+    "narration": "Here's the number that captures the whole crisis. Across Canada's big cities, home prices have roughly tripled since the early two thousands — while wages barely moved. An entire generation now earns a normal salary in a country where a normal home costs a fortune. The math simply stopped working.",
+    "text": "~3× since 2002",
+    "sub": "home prices tripled while incomes barely budged",
     "icon": "chartup"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "And that's with a single lump sum. Now add just five hundred dollars a month on top, compounding at ten percent for forty years, and you don't end with hundreds of thousands — you end with well over three million. The same boring habit, powered by compounding, quietly builds a genuine fortune.",
+    "narration": "Let that tripling sink in with a real example. A modest home that cost three hundred thousand dollars in the early two thousands is now often nine hundred thousand or more — the exact same house, same walls, same leaky roof. Nothing improved except the price. The owner got rich by doing absolutely nothing but existing.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "+ $500/mo"
+        "name": "house",
+        "label": "$300K home → $900K+"
       },
       {
-        "name": "snowball",
-        "label": "at 10% for 40 yrs"
+        "name": "warning",
+        "label": "same house, nothing improved"
       },
       {
-        "name": "moneytree",
-        "label": "= $3 million+"
+        "name": "moneybag",
+        "label": "rich by doing nothing"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So we'll climb every rate and see what your money becomes, meet the Rule of seventy-two that predicts it in seconds, expose how fees quietly compound against you, and settle the eternal fight between a higher rate and more time. By the end, compounding will never look boring again. Let's go.",
+    "narration": "So we'll break down exactly how expensive Canada got, why prices exploded while paychecks didn't, who got locked out and who cashed in, how it stacks up against the rest of the world, and what it would actually take to fix it. This is the price tag on the Canadian dream. Let's go.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "every rate"
+        "name": "skyline",
+        "label": "how expensive"
       },
       {
-        "name": "calculator",
-        "label": "the Rule of 72"
+        "name": "padlock",
+        "label": "who got locked out"
       },
       {
-        "name": "hourglass",
-        "label": "rate vs time"
+        "name": "mappin",
+        "label": "vs the world"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/brain4.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "chase a hot stock tip",
-    "memeBottom": "let an index fund compound for 40 years",
-    "narration": "Because most people chase the thrill of a quick win, while the real fortune is built by the dullest force imaginable — money quietly multiplying on itself for decades. Before we climb, let's understand what compounding actually is."
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "paying 60% of income on a tiny condo",
+    "memeBottom": "being told to just cut back on coffee",
+    "narration": "Because Canadians have been told for years that homeownership is just around the corner if they budget harder. But when prices triple and wages don't, no amount of skipped lattes closes that gap. First, let's measure just how bad it really got."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what compound interest really is.",
-    "heading": "The Basics",
-    "kicker": "interest on interest"
+    "narration": "First, how we measure 'unaffordable.'",
+    "heading": "The Measure",
+    "kicker": "price-to-income"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "Compound interest is interest accumulated from a principal sum and previously accumulated interest. In plain English: you earn interest, and then that interest earns its own interest. Your money starts having babies — and then those babies have babies. That loop, running for decades, is the whole magic.",
-    "sourceId": "wiki-compound"
+    "narration": "Economists judge affordability with a housing affordability index — an index that measures housing affordability, usually how easily a typical family can afford a typical home. The simplest version is the price-to-income ratio: take the home price, divide by yearly household income, and you get how many years of pay a house costs.",
+    "sourceId": "wiki-hai"
   },
   {
     "id": "s7",
-    "type": "character",
-    "narration": "Contrast it with simple interest, where only your original money earns. Put in a thousand at ten percent, and simple interest pays you a hundred every year, forever. Compound interest pays a hundred the first year — then a hundred and ten, then a hundred twenty-one — because you're earning on the gains, too. The gap between the two explodes over time.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "simple: same $100/yr"
-      },
-      {
-        "name": "snowball",
-        "label": "compound: $100→$110→$121"
-      },
-      {
-        "name": "chartup",
-        "label": "the gap explodes"
-      }
-    ]
+    "type": "stage",
+    "narration": "And this ratio is the whole story. A healthy, affordable market sits around three to five years of income. The US average is roughly five. Toronto is around ten. And Vancouver sits near twelve — meaning a family would have to save every single dollar they earn for twelve years, spending nothing, just to buy an average home.",
+    "motif": "pricetoincomeladder",
+    "caption": "years of income to buy an average home"
   },
   {
     "id": "s42",
     "type": "callout",
-    "narration": "Here's the riddle that makes it click. Would you rather have a million dollars cash, or a single penny that doubles every day for a month? Take the penny. After thirty days of doubling, it becomes over five million dollars. That is the terrifying, beautiful power of compounding — and exactly why it feels so slow until it doesn't.",
-    "text": "1¢ → $5,000,000+",
-    "sub": "a penny doubled daily for 30 days beats $1M cash",
-    "icon": "snowball"
+    "narration": "In raw dollars, it's staggering. The average home in the Greater Toronto Area has hovered around a million dollars, and in Greater Vancouver even higher. These aren't mansions — they're ordinary houses and modest condos. A seven-figure price tag has quietly become the normal cost of a normal home.",
+    "text": "~$1,000,000",
+    "sub": "the average home in Toronto / Vancouver",
+    "icon": "house"
   },
   {
     "id": "s8",
-    "type": "stage",
-    "narration": "And this is what compounding actually looks like: a hockey stick. For years it feels painfully slow, almost pointless — your money barely moves. Then the curve bends upward and, near the end, it goes nearly vertical. Most of the wealth is created in the final stretch, which is exactly why most people quit too early to see it.",
-    "motif": "hockeystickcurve",
-    "caption": "slow and boring — then it explodes"
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "And this curve explains why so few people ever get rich from investing, even though the formula is public and free. The payoff lives at the far right of the hockey stick. The boring, flat middle is where almost everyone gives up, cashes out, or chases something shinier — right before the magic was about to start.",
-    "pose": "explain",
-    "props": [
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Price-to-income ratio by city (years of income per home)",
+    "unit": "×",
+    "narration": "Put the cities side by side and the problem is undeniable. A healthy market is three. Calgary, more reasonable, around five. Toronto, ten. Vancouver, twelve. Canada's biggest cities have drifted into territory usually seen only in a handful of the most expensive places on the planet.",
+    "data": [
       {
-        "name": "hourglass",
-        "label": "payoff is at the far right"
+        "label": "Healthy",
+        "value": 3
       },
       {
-        "name": "warning",
-        "label": "most quit in the flat middle"
+        "label": "Calgary",
+        "value": 5
       },
       {
-        "name": "chartdown",
-        "label": "right before the magic"
+        "label": "Toronto",
+        "value": 10
+      },
+      {
+        "label": "Vancouver",
+        "value": 12
       }
-    ]
+    ],
+    "highlight": 3
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's climb the rates — and watch what your money becomes.",
-    "heading": "The Ladder",
-    "kicker": "1% to 15%"
+    "narration": "So how did prices climb so far, so fast?",
+    "heading": "The Climb",
+    "kicker": "2002 to today"
   },
   {
     "id": "s10",
     "type": "stage",
-    "narration": "Here's ten thousand dollars, left for forty years, at each rate. At one percent it crawls to fifteen thousand. At three, thirty-three. At six, a hundred and three thousand. At eight, over two hundred thousand. At ten, four hundred fifty-three thousand. And at fifteen percent, an absurd two point seven million. Feast your eyes on the power of the rate.",
-    "motif": "rateladdergrowth",
-    "caption": "$10,000 over 40 years, at every rate"
+    "narration": "Here's the curve that broke a generation's plans. Starting in the early two thousands, Canadian home prices began a near-vertical climb, roughly tripling over two decades with only brief dips. Incomes, meanwhile, crept up at their usual slow pace. The gap between the two lines is the entire affordability crisis in one picture.",
+    "motif": "canadarisecurve",
+    "caption": "prices went vertical; incomes crept"
   },
   {
-    "id": "s44",
-    "type": "image",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "leaving life savings in a 1% account",
-    "memeBottom": "watching inflation quietly torch its value",
-    "narration": "This is the quiet tragedy of the bottom of the ladder. Money that feels 'safe' in a one-percent account is actually losing a race it doesn't even know it's running — against inflation, every single year."
-  },
-  {
-    "id": "s11",
+    "id": "s43",
     "type": "character",
-    "narration": "Start at the bottom. One percent is a basic savings account — and it's heartbreaking, because after inflation you're actually losing money. Three percent is bonds or a high-yield savings account: safe, but barely keeping pace with rising prices. At these rates, compounding is technically working, but far too slowly to build real wealth.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "1%: savings account"
-      },
-      {
-        "name": "chartdown",
-        "label": "loses to inflation"
-      },
-      {
-        "name": "warning",
-        "label": "too slow to build wealth"
-      }
-    ]
-  },
-  {
-    "id": "s12",
-    "type": "title",
-    "narration": "Now the rates where real wealth actually gets built.",
-    "heading": "6% to 10%",
-    "kicker": "the wealth zone"
-  },
-  {
-    "id": "s13",
-    "type": "character",
-    "narration": "Six to ten percent is the wealth-building zone, and it's where the stock market historically lives. A broad index fund has returned roughly ten percent a year on average over the long run, or about seven after inflation. This is the rate that turns a steady saver into a millionaire — not luck, just time in the market.",
+    "narration": "And notice the dips on that curve barely register. Prices wobbled in 2008 and again around 2018, and cooled when rates rose in 2022 — but each time they came roaring back. For two decades, 'housing always goes up' became gospel, which only fueled more buying and more speculation.",
     "pose": "explain",
     "props": [
       {
         "name": "chartup",
-        "label": "6-10%: the stock market"
+        "label": "dips barely registered"
       },
       {
-        "name": "moneytree",
-        "label": "~10% long-run average"
+        "name": "rollercoaster",
+        "label": "always roared back"
       },
       {
-        "name": "trophy",
-        "label": "steady saver → millionaire"
+        "name": "warning",
+        "label": "'housing only goes up'"
+      }
+    ]
+  },
+  {
+    "id": "s11",
+    "type": "screenshot",
+    "narration": "Economists have a blunt name for this kind of run-up: a real estate bubble — a type of economic bubble that occurs periodically in local or global real estate markets. Whether Canada's is a true bubble or a permanent new reality is fiercely debated — but either way, the prices are very, very real to anyone trying to buy.",
+    "sourceId": "wiki-bubble"
+  },
+  {
+    "id": "s12",
+    "type": "title",
+    "narration": "To understand why, you only need one idea from economics.",
+    "heading": "The Cause",
+    "kicker": "supply vs demand"
+  },
+  {
+    "id": "s13",
+    "type": "screenshot",
+    "narration": "It all comes down to supply and demand — an economic model of price determination in a market. When the number of people who want homes grows much faster than the number of homes being built, price is the release valve. And in Canada, demand surged while supply stalled for years.",
+    "sourceId": "wiki-supplydemand"
+  },
+  {
+    "id": "s44",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "build enough homes for everyone",
+    "memeBottom": "protect my own home's soaring value",
+    "narration": "And this is the impossible button every homeowner-voter faces. Everyone agrees we should build more — just not in a way that dents the value of the home they already own. That quiet contradiction is a huge part of why nothing gets built."
+  },
+  {
+    "id": "s14",
+    "type": "stage",
+    "narration": "Picture the scale tipping. On the demand side: record immigration, rock-bottom interest rates for a decade, and investors treating homes as assets. On the supply side: not nearly enough building, tangled zoning, and slow permits. Too many buyers chasing too few homes can only do one thing — send prices through the roof.",
+    "motif": "demandvssupply",
+    "caption": "demand surged, building stalled"
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "narration": "Take demand first. Canada welcomes a huge number of new residents every year relative to its population — among the highest rates in the developed world. That's wonderful for the economy, but each newcomer needs somewhere to live. Pour rising demand into a housing supply that isn't growing fast enough, and prices have nowhere to go but up.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "record immigration"
+      },
+      {
+        "name": "house",
+        "label": "everyone needs a home"
+      },
+      {
+        "name": "chartup",
+        "label": "demand outruns supply"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "Let's make the wealth zone concrete. Invest two hundred dollars a month — about seven dollars a day — from age twenty-five to sixty-five, at ten percent. You'd personally put in under a hundred thousand dollars. But compounding turns it into roughly one point three million. You contributed the thousands; the rate and the time created the millions.",
+    "narration": "One fair point before we blame any single cause: immigration is an easy scapegoat, but it's not the villain. Newcomers fuel the economy and fill vital jobs. The real failure is that Canada kept inviting people in while refusing to build the homes to house them. The problem isn't the demand — it's the supply that never showed up.",
     "pose": "explain",
     "props": [
       {
-        "name": "coins",
-        "label": "$200/mo, age 25-65"
+        "name": "handshake",
+        "label": "newcomers fuel the economy"
       },
       {
-        "name": "calculator",
-        "label": "you add <$100K"
+        "name": "warning",
+        "label": "immigration isn't the villain"
       },
       {
-        "name": "moneytree",
-        "label": "it becomes ~$1.3M"
+        "name": "crane",
+        "label": "the homes never got built"
       }
     ]
   },
   {
-    "id": "s14",
-    "type": "screenshot",
-    "narration": "That percentage is your rate of return — and remember, return is simply a profit on an investment. The whole game of investing is choosing where to put your money so that this one number is as high as it reliably can be, without taking insane risk to get there.",
-    "sourceId": "wiki-ror"
-  },
-  {
-    "id": "s15",
+    "id": "s16",
     "type": "character",
-    "narration": "And fifteen percent? That's the fantasy rate — the realm of elite investors in their best years, and of every scam artist who ever lived. Almost nobody sustains it for decades. If someone promises you a guaranteed fifteen percent, you haven't found a genius. You've found a liar.",
+    "narration": "Then there were the ultra-low interest rates. For over a decade, borrowing was historically cheap, which let buyers take on enormous mortgages for the same monthly payment. Cheap money doesn't make homes more affordable — it just lets everyone bid more, and that extra borrowing power gets baked straight into higher prices.",
     "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "15%: the fantasy rate"
+        "name": "percent",
+        "label": "a decade of cheap rates"
       },
       {
-        "name": "rocket",
-        "label": "elite + unsustainable"
+        "name": "mortgage",
+        "label": "bigger mortgages, same payment"
       },
       {
-        "name": "scale",
-        "label": "'guaranteed 15%' = a scam"
+        "name": "chartup",
+        "label": "it all bids prices up"
       }
     ]
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "Remember Bernie Madoff? His entire fraud was built on promising steady, too-good returns, year after year. Real markets lurch, crash, and recover — they never hand you a smooth, guaranteed high number. So when an investment looks suspiciously consistent and suspiciously high, that consistency isn't skill. It's the single biggest red flag there is.",
+    "narration": "Then came the twist. When interest rates finally shot up in 2022, prices dipped — but affordability got worse, not better. Why? A smaller mortgage at a much higher rate can cost more per month than a bigger one did when money was cheap. Buyers got squeezed from both directions at once.",
     "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "Madoff: steady 'too-good' returns"
+        "name": "percent",
+        "label": "rates shot up in 2022"
       },
       {
         "name": "chartdown",
-        "label": "real markets lurch & crash"
+        "label": "prices dipped…"
       },
       {
-        "name": "scale",
-        "label": "smooth + high = red flag"
+        "name": "warning",
+        "label": "…but payments rose"
       }
     ]
   },
   {
-    "id": "s16",
-    "type": "title",
-    "narration": "Now a trick that lets you predict all of this in your head.",
-    "heading": "The Rule of 72",
-    "kicker": "doubling in seconds"
-  },
-  {
     "id": "s17",
-    "type": "screenshot",
-    "narration": "There's a beautiful shortcut called the Rule of 72 — one of several methods for estimating an investment's doubling time. You simply divide seventy-two by your interest rate, and the answer is roughly how many years it takes your money to double. No calculator, no spreadsheet, just mental math.",
-    "sourceId": "wiki-rule72"
-  },
-  {
-    "id": "s18",
-    "type": "stage",
-    "narration": "Watch how powerful this is. At one percent, your money takes seventy-two years to double — basically a lifetime. At six percent, just twelve years. At ten percent, about seven. At fifteen, around five. The higher the rate, the more times your money doubles in a life — and each doubling is worth more than the last.",
-    "motif": "doublingtime",
-    "caption": "72 ÷ rate = years to double your money"
+    "type": "character",
+    "narration": "And homes stopped being just places to live. Investors, both domestic and foreign, poured money into Canadian real estate as a reliable store of wealth. When a house is treated as a stock that you can also live in, ordinary families end up bidding against deep-pocketed investors for the same roof — and usually losing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "homes became assets"
+      },
+      {
+        "name": "skyline",
+        "label": "investor demand"
+      },
+      {
+        "name": "warning",
+        "label": "families outbid"
+      }
+    ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "Flip the Rule of 72 toward retirement and it gets motivating. If your money doubles every seven years at ten percent, then whatever you've saved by fifty-eight roughly doubles by sixty-five — untouched. Your last working decade can quietly add as much as your first three combined. The final doublings are the giants.",
+    "narration": "Investment demand runs deep in the culture. Pre-construction condos get bought and flipped before anyone ever lives in them. Basements and spare rooms become income streams. Housing stopped being shelter and became the national retirement plan — which means any drop in prices now threatens millions of people's nest eggs.",
     "pose": "explain",
     "props": [
       {
-        "name": "snowball",
-        "label": "doubles every ~7 years"
+        "name": "skyline",
+        "label": "pre-sale condo flipping"
       },
       {
-        "name": "chartup",
-        "label": "58 → 65: it doubles again"
+        "name": "moneybag",
+        "label": "housing = retirement plan"
       },
       {
-        "name": "trophy",
-        "label": "final doublings are giants"
+        "name": "warning",
+        "label": "prices can't fall safely"
       }
     ]
+  },
+  {
+    "id": "s18",
+    "type": "title",
+    "narration": "Now the supply side — the half nobody fixed.",
+    "heading": "The Shortage",
+    "kicker": "not enough homes"
   },
   {
     "id": "s19",
-    "type": "character",
-    "narration": "And doublings are where the real drama hides. Money at ten percent doubles roughly every seven years. So over forty years it doubles about six times: ten thousand becomes twenty, then forty, then eighty, then one-sixty, three-twenty, six-forty. That final doubling alone adds more than the first five combined. The end is everything.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "snowball",
-        "label": "6 doublings in 40 yrs"
-      },
-      {
-        "name": "chartup",
-        "label": "10K→20→40→80→160→320"
-      },
-      {
-        "name": "trophy",
-        "label": "the last double is the biggest"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "title",
-    "narration": "So why does a few percent matter so insanely much?",
-    "heading": "The Gap",
-    "kicker": "why rate is everything"
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "narration": "Because compounding is exponential, not linear. The difference between eight and ten percent sounds tiny — just two points. But over forty years, that two percent can more than double your final balance. Small gaps in the rate don't add up over time; they multiply. That's the single most underestimated idea in all of personal finance.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "8% vs 10%: 'just 2 points'"
-      },
-      {
-        "name": "chartup",
-        "label": "can double the ending"
-      },
-      {
-        "name": "magnet",
-        "label": "gaps multiply, not add"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "This is where real estate economics — the application of economic techniques to real estate markets — delivers a harsh verdict. Canada has simply not built enough housing for its growing population for years. Restrictive zoning, slow permitting, and a shortage of construction labor all throttled new supply while demand roared.",
+    "sourceId": "wiki-reecon"
   },
   {
     "id": "s48",
     "type": "callout",
-    "narration": "Put real numbers on that 'tiny' gap. Ten thousand dollars over forty years grows to about two hundred seventeen thousand at eight percent — but four hundred fifty-three thousand at ten. Two percentage points more than doubled the result. In compounding, a small edge isn't small. It's everything.",
-    "text": "$217K vs $453K",
-    "sub": "8% vs 10% on $10K over 40 years — a 2-point gap",
-    "icon": "magnet"
+    "narration": "The scale of the shortfall is jaw-dropping. Canada's own housing agency has estimated the country needs millions of additional homes — on top of what's already planned — within a few years just to restore affordability. That's a building pace Canada hasn't hit in generations.",
+    "text": "millions short",
+    "sub": "extra homes Canada needs this decade to restore affordability",
+    "icon": "crane"
   },
   {
-    "id": "s22",
-    "type": "title",
-    "narration": "Which means the same force can quietly work against you.",
-    "heading": "The Dark Side",
-    "kicker": "fees compound too"
-  },
-  {
-    "id": "s23",
-    "type": "stage",
-    "narration": "Here's the part the finance industry hopes you never learn. Fees compound exactly like returns — just in reverse. A fund charging two percent a year instead of near-zero doesn't cost you two percent. Over a lifetime, it can quietly swallow a third to half of your entire final balance. The same math that builds you can bleed you.",
-    "motif": "ratefeedrag",
-    "caption": "a 2% fee can eat HALF your lifetime returns",
-    "props": []
+    "id": "s20",
+    "type": "character",
+    "narration": "Much of Canada's land is zoned for detached single-family homes only, especially in the cities where people most want to live. That makes it legally difficult to build the dense, affordable apartments and townhomes a growing population actually needs. The homes people can afford are often the ones it's illegal to build.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "house",
+        "label": "zoned single-family only"
+      },
+      {
+        "name": "crane",
+        "label": "can't build dense + cheap"
+      },
+      {
+        "name": "warning",
+        "label": "affordable = often illegal"
+      }
+    ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "Here's the honest way to judge a fee. An advisor charging 'just one percent' sounds modest — but if the market returns seven percent, that fee is eating one-seventh of your entire return, every year, forever. Framed as a slice of your actual gains, a one-percent fee is enormous. Always ask what percent of returns it really is.",
+    "narration": "Housing economists call the solution the 'missing middle' — duplexes, triplexes, and low-rise apartments that sit between single houses and giant towers. For decades it was effectively banned by zoning. Encouragingly, cities and provinces are now starting to legalize it again — the first real crack in the wall.",
     "pose": "explain",
     "props": [
       {
-        "name": "warning",
-        "label": "'just 1%' of your money…"
+        "name": "apartment",
+        "label": "the 'missing middle'"
       },
       {
-        "name": "percent",
-        "label": "…is 1/7 of a 7% return"
+        "name": "house",
+        "label": "duplexes + low-rise"
       },
+      {
+        "name": "crane",
+        "label": "finally being legalized"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "So who actually got hurt — and who got rich?",
+    "heading": "Winners & Losers",
+    "kicker": "the great divide"
+  },
+  {
+    "id": "s22",
+    "type": "stage",
+    "narration": "The result is a brutal generational split. Older Canadians who bought decades ago are sitting on homes worth many times what they paid — paper millionaires who did nothing but hold. Younger Canadians, earning decent salaries, find the first rung of the ladder has been lifted clean out of reach. Same country, two totally different worlds.",
+    "motif": "thelockout",
+    "caption": "the ladder pulled up behind a generation"
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "The data on the divide is stark. Homeownership rates among young Canadians have been falling, and a huge share of first-time buyers now rely on the 'Bank of Mom and Dad' for their down payment. If your parents owned, you have a shot. If they didn't, the gap compounds into the next generation.",
+    "pose": "explain",
+    "props": [
       {
         "name": "chartdown",
-        "label": "enormous, every year"
+        "label": "young ownership falling"
+      },
+      {
+        "name": "handshake",
+        "label": "'Bank of Mom & Dad'"
+      },
+      {
+        "name": "warning",
+        "label": "the gap compounds"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "narration": "For a young couple today, the down payment alone is the killer. Saving twenty percent on a million-dollar home means setting aside two hundred thousand dollars — while also paying some of the highest rents in the country. It's like being asked to save for a house while the cost of merely existing eats everything you earn.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "$200K down payment"
+      },
+      {
+        "name": "apartment",
+        "label": "while rents devour income"
+      },
+      {
+        "name": "warning",
+        "label": "saving feels impossible"
       }
     ]
   },
   {
     "id": "s24",
     "type": "character",
-    "narration": "This is why low-cost index funds are so beloved by people who understand the math. Shaving your fees from two percent down to a tenth of a percent can leave you with hundreds of thousands of dollars more at the end — for doing absolutely nothing except refusing to overpay. Cutting fees is a guaranteed raise on your returns.",
+    "narration": "So families adapt in telling ways. Adult children live with parents into their thirties. Buyers pool money across generations. People flee the big cities entirely for smaller towns — only to watch prices there surge as everyone else has the same idea. The crisis doesn't stay contained; it spreads outward.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "cheap index funds win"
+        "name": "house",
+        "label": "living with parents at 35"
       },
       {
-        "name": "coins",
-        "label": "2% → 0.1% = +$100Ks"
+        "name": "handshake",
+        "label": "pooling family money"
       },
       {
-        "name": "smiley",
-        "label": "a guaranteed raise"
-      }
-    ]
-  },
-  {
-    "id": "s25",
-    "type": "title",
-    "narration": "Now the eternal question: what matters more, a higher rate or more time?",
-    "heading": "Time vs Rate",
-    "kicker": "the real winner"
-  },
-  {
-    "id": "s26",
-    "type": "stage",
-    "narration": "Here's the surprise: time usually wins. Someone who starts at twenty-five earning a modest seven percent will often end up with more than someone who starts at forty earning a fat ten percent. Fifteen extra years of compounding beats a higher rate, because those early dollars get the most doublings. Starting early is the closest thing to a cheat code.",
-    "motif": "timevsrate",
-    "caption": "15 early years can beat a 3-point-higher return",
-    "props": []
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "The famous example seals it. One twin invests for only ten years in her twenties, then stops forever. The other waits, then invests for thirty straight years into her fifties. The early twin, who put in far less, usually ends up with more. Ten early years beat thirty late ones. Time is that powerful.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "10 early years vs 30 late"
-      },
-      {
-        "name": "chartup",
-        "label": "the early saver wins"
-      },
-      {
-        "name": "seedling",
-        "label": "start young, even briefly"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "screenshot",
-    "narration": "This is really the time value of money — the idea that there's a greater benefit to receiving a sum of money now rather than the identical sum later. A dollar today is worth more than a dollar tomorrow, precisely because today's dollar has more time to compound. Time, not timing, is the investor's greatest asset.",
-    "sourceId": "wiki-tvm"
-  },
-  {
-    "id": "s28",
-    "type": "character",
-    "narration": "So the most valuable thing a young person owns isn't money — it's decades. A twenty-year-old with almost nothing to invest holds something a rich fifty-year-old cannot buy at any price: time for compounding to work. Spend that gift early, and even small amounts grow monstrous. Waste it, and no later income fully makes up the loss.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "youth owns decades"
-      },
-      {
-        "name": "seedling",
-        "label": "small amounts grow monstrous"
-      },
-      {
-        "name": "warning",
-        "label": "lost time can't be rebought"
+        "name": "mappin",
+        "label": "fleeing to small towns"
       }
     ]
   },
   {
     "id": "s51",
     "type": "character",
-    "narration": "But if you're starting later, do not despair — this is the trap that stops people cold. Even at fifty, you likely have twenty, thirty, maybe forty years of compounding ahead, because you'll live and invest well past retirement. The worst move at any age is to decide it's too late and do nothing. It never is.",
+    "narration": "And here's a quiet alarm bell: some young, educated Canadians are simply leaving — moving to countries or regions where their salary can actually buy a life. When a nation prices out its own talent, it doesn't just lose buyers; it loses the workers, doctors, and builders it desperately needs. Unaffordability becomes a brain drain.",
     "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "starting at 50? still decades"
+        "name": "mappin",
+        "label": "young talent leaving"
       },
       {
         "name": "warning",
-        "label": "'too late' is the real trap"
+        "label": "brain drain"
       },
       {
-        "name": "smiley",
-        "label": "the worst move is nothing"
+        "name": "chartdown",
+        "label": "losing the workers it needs"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "title",
+    "narration": "So how does Canada stack up against the rest of the world?",
+    "heading": "Vs the World",
+    "kicker": "a global ranking"
+  },
+  {
+    "id": "s26",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Home price-to-income ratio, major markets (×)",
+    "unit": "×",
+    "narration": "Against its peers, Canada looks genuinely extreme. The United States sits around five times income. The United Kingdom, higher, around eight. Australia, another famously pricey market, around nine. And Canada's hottest cities blow past all of them near twelve. We're not a little expensive — we're a global outlier.",
+    "data": [
+      {
+        "label": "US",
+        "value": 5
+      },
+      {
+        "label": "UK",
+        "value": 8
+      },
+      {
+        "label": "Australia",
+        "value": 9
+      },
+      {
+        "label": "Canada (hot)",
+        "value": 12
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "Notice the pattern in that ranking: the US, UK, Australia, and Canada all ran versions of the same playbook — cheap credit, under-building, and homes-as-investments. These English-speaking economies turned housing into a wealth machine for owners, and every one of them is now wrestling with a priced-out generation.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "same playbook, 4 countries"
+      },
+      {
+        "name": "moneybag",
+        "label": "housing as a wealth machine"
+      },
+      {
+        "name": "warning",
+        "label": "all priced out their young"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "screenshot",
+    "narration": "This is what economists mean by the Canadian property bubble — the significant rise in Canadian real estate prices over the past two decades. Whatever you call it, Canada has earned a spot alongside the priciest housing markets on the planet, despite having vast amounts of empty land.",
+    "sourceId": "wiki-canbubble"
+  },
+  {
+    "id": "s28",
+    "type": "character",
+    "narration": "And that's the great irony. Canada is the second-largest country on earth by land area, yet it crams most of its people and nearly all of its jobs into a few metro areas near the southern border. The country isn't short on land. It's short on homes in the places people actually need to live.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mapleleaf",
+        "label": "2nd-biggest country"
+      },
+      {
+        "name": "skyline",
+        "label": "jobs in a few metros"
+      },
+      {
+        "name": "warning",
+        "label": "short on homes, not land"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "The 'empty land' comfort also misses something. Much of Canada is frozen wilderness, far from any job, and people reasonably want to live near work, transit, and family in a handful of mild-climate metros. The scarcity isn't of land in general — it's of homes in the few places life actually happens.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "most land is remote"
+      },
+      {
+        "name": "skyline",
+        "label": "jobs in a few metros"
+      },
+      {
+        "name": "house",
+        "label": "scarcity of the right homes"
       }
     ]
   },
   {
     "id": "s29",
     "type": "title",
-    "narration": "But there's a villain running this same math in the opposite direction.",
-    "heading": "The Enemy",
-    "kicker": "inflation"
+    "narration": "So what would it actually take to fix this?",
+    "heading": "The Fix",
+    "kicker": "build, build, build"
   },
   {
     "id": "s30",
-    "type": "screenshot",
-    "narration": "That villain is inflation — an increase in the average price of goods and services in terms of money. Inflation is compounding in reverse: it quietly eats the buying power of your money year after year, at its own compounding rate. Your investments aren't just racing to grow — they're racing to outrun this.",
-    "sourceId": "wiki-inflation"
-  },
-  {
-    "id": "s31",
-    "type": "stage",
-    "narration": "And it's brutal. At three percent inflation, the value of your money is cut in half in about twenty-four years — by the same Rule of 72, running against you. This is why cash under the mattress isn't safe; it's slowly melting. To merely stand still, your money has to compound at least as fast as prices rise.",
-    "motif": "inflationnegcompound",
-    "caption": "inflation halves your money's value in ~24 years",
-    "props": []
-  },
-  {
-    "id": "s52",
     "type": "character",
-    "narration": "This is why hoarding cash feels safe but isn't, and why bonds alone rarely cut it. Both struggle to beat inflation over the long run, so your real wealth slowly erodes. To truly outrun rising prices over decades, most people need to own a slice of the growing economy itself — which, in practice, means stocks.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "warning",
-        "label": "cash & bonds lag inflation"
-      },
-      {
-        "name": "chartup",
-        "label": "own the growing economy"
-      },
-      {
-        "name": "moneytree",
-        "label": "stocks beat it long-term"
-      }
-    ]
-  },
-  {
-    "id": "s32",
-    "type": "character",
-    "narration": "So the number that actually matters is your real return — your rate minus inflation. Earn ten percent while inflation runs three, and your real growth is seven. Earn one percent in a savings account while inflation runs three, and your real return is negative two. You're compounding, yes — but compounding backward.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "real return = rate − inflation"
-      },
-      {
-        "name": "chartup",
-        "label": "10% − 3% = +7%"
-      },
-      {
-        "name": "chartdown",
-        "label": "1% − 3% = −2%"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "callout",
-    "narration": "And this is grounded in history, not hope. Over the last century, the broad US stock market has returned roughly seven percent a year after inflation — through wars, crashes, and recessions. That seven percent real return is the single most reliable wealth-building engine ordinary people have ever had access to.",
-    "text": "~7% real",
-    "sub": "the stock market's long-run return after inflation",
-    "icon": "chartup"
-  },
-  {
-    "id": "s33",
-    "type": "title",
-    "narration": "So what rate should you actually plan around?",
-    "heading": "Your Rate",
-    "kicker": "aim realistic"
-  },
-  {
-    "id": "s34",
-    "type": "character",
-    "narration": "Plan around a realistic seven percent after inflation — the long-run reward of simply owning the whole stock market through low-cost index funds. Don't chase the fantasy of fifteen, and don't settle for the one percent that loses to inflation. Capture the market's return, keep your fees near zero, and let time do the heavy lifting.",
+    "narration": "Almost every economist lands on the same unglamorous answer: build far more homes, especially dense ones, and build them fast. That means overhauling zoning to allow apartments and townhomes, speeding up permits, and training a bigger construction workforce. There's no clever trick — the only real cure for too few homes is more homes.",
     "pose": "present",
     "props": [
       {
+        "name": "crane",
+        "label": "build way more, denser"
+      },
+      {
+        "name": "house",
+        "label": "fix zoning + permits"
+      },
+      {
         "name": "chartup",
-        "label": "aim for ~7% real"
-      },
-      {
-        "name": "percent",
-        "label": "own the whole market"
-      },
-      {
-        "name": "hourglass",
-        "label": "let time do the work"
+        "label": "the only real cure"
       }
     ]
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "Two quick technical boosts. Reinvesting your dividends instead of spending them is a huge, underrated part of that historical return — it's compounding fuel. And always invest inside tax-sheltered accounts when you can, because taxes, like fees, quietly compound against you too. Shelter the money, reinvest everything, and the engine runs cleaner.",
+    "narration": "And this isn't hopeless theory — it's been done. Cities like Auckland and Minneapolis loosened zoning to allow far more housing, and rents and prices rose noticeably slower than their neighbors. Build enough, consistently, and affordability genuinely improves. The cure works; the hard part is the political will to swallow it.",
     "pose": "present",
     "props": [
       {
-        "name": "snowball",
-        "label": "reinvest dividends"
+        "name": "crane",
+        "label": "Auckland + Minneapolis did it"
       },
       {
-        "name": "vault",
-        "label": "use tax-sheltered accounts"
+        "name": "chartdown",
+        "label": "prices rose slower"
       },
       {
-        "name": "chartup",
-        "label": "the engine runs cleaner"
+        "name": "smiley",
+        "label": "the cure actually works"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "narration": "Governments have also tried demand-side moves — taxes on empty and foreign-owned homes, and temporary limits on foreign buyers. These can cool things at the margins, but they treat the symptom. If you don't build enough homes, prices stay high no matter how many buyers you shoo away.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "vacancy + foreign-buyer taxes"
+      },
+      {
+        "name": "warning",
+        "label": "treats the symptom"
+      },
+      {
+        "name": "crane",
+        "label": "supply is the real cure"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "character",
+    "narration": "There's also a painful political trap. Most Canadian voters already own homes, and falling prices would shrink their biggest asset. So there's quiet pressure to keep prices high for owners, even as that locks out the young. Fixing affordability means some existing wealth has to stop growing — and that's a very hard sell at the ballot box.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "owners vs buyers"
+      },
+      {
+        "name": "house",
+        "label": "voters want prices high"
+      },
+      {
+        "name": "warning",
+        "label": "the political trap"
+      }
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "callout",
+    "narration": "If it stays unfixed, the endgame is a two-tier society: a class of homeowners whose wealth keeps compounding, and a permanent class of renters locked out forever, their incomes flowing straight to landlords. That's not just an economic problem — it's a recipe for deep generational resentment.",
+    "text": "two-tier future",
+    "sub": "owners compounding wealth vs lifelong renters, if unfixed",
+    "icon": "scale"
+  },
+  {
+    "id": "s33",
+    "type": "title",
+    "narration": "So what does this mean if you're living it?",
+    "heading": "What To Do",
+    "kicker": "playing a hard game"
+  },
+  {
+    "id": "s34",
+    "type": "character",
+    "narration": "If you're trying to buy in Canada, be ruthless about the math. Consider cheaper cities or provinces where the ratio is sane. Look at townhomes and condos, not just detached houses. And never stretch into a mortgage that leaves you house-poor — a home you can't afford isn't a dream, it's a trap with a nice kitchen.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "cheaper cities"
+      },
+      {
+        "name": "apartment",
+        "label": "condos, not just houses"
+      },
+      {
+        "name": "warning",
+        "label": "never go house-poor"
       }
     ]
   },
   {
     "id": "s35",
     "type": "character",
-    "narration": "And the three levers are simple: the rate, the time, and the amount you add. You can't control the market's rate, and you can't buy back lost time — so the one lever fully in your hands today is starting now, and adding consistently. Automate it, forget it, and let decades of doublings quietly make you wealthy.",
+    "narration": "And if buying genuinely doesn't make sense where you are, renting and investing the difference is not failure — it's often the smarter move in an overpriced market. You can build real wealth in index funds while staying mobile, and let the overheated housing market be someone else's problem, not your prison.",
     "pose": "present",
     "props": [
       {
-        "name": "seedling",
-        "label": "start now, add consistently"
-      },
-      {
-        "name": "calendar",
-        "label": "automate and forget"
-      },
-      {
-        "name": "moneytree",
-        "label": "decades of doublings"
-      }
-    ]
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "narration": "And the hardest lever isn't math — it's behavior. Compounding only works if you leave it alone. The investors who win aren't the smartest; they're the ones who don't panic-sell in crashes and don't tinker out of boredom. Set it up, automate it, and then have the discipline to simply do nothing for decades.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "shield",
-        "label": "don't panic-sell"
-      },
-      {
-        "name": "calendar",
-        "label": "automate, then leave it"
+        "name": "chartup",
+        "label": "rent + invest the gap"
       },
       {
         "name": "smiley",
-        "label": "discipline beats genius"
-      }
-    ]
-  },
-  {
-    "id": "s36",
-    "type": "character",
-    "narration": "Because here's the real lesson that ties this whole series together: wealth isn't usually built by a brilliant move or a lucky bet. It's built by an ordinary amount of money, compounding at a decent rate, for an extraordinary length of time. Boring, patient, and almost unstoppable.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "snowball",
-        "label": "ordinary money"
+        "label": "stay mobile"
       },
       {
-        "name": "percent",
-        "label": "a decent rate"
-      },
-      {
-        "name": "hourglass",
-        "label": "an extraordinary time"
-      }
-    ]
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "narration": "So find your rate, respect the exponential curve, and start the clock today instead of tomorrow. The best time to let compounding begin was twenty years ago. The second best time, as the saying goes, is right now. Every single day you wait is a doubling you quietly give away.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "clock",
-        "label": "start the clock today"
-      },
-      {
-        "name": "seedling",
-        "label": "the 2nd best time is now"
-      },
-      {
-        "name": "chartup",
-        "label": "each day = a lost doubling"
+        "name": "piggybank",
+        "label": "build wealth elsewhere"
       }
     ]
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "And if you really want to feel the power, do it for someone young. A small amount invested for a baby, left for sixty-five years, can compound into millions by the time they retire. Teaching a child about compounding early is one of the greatest financial gifts you can possibly give.",
-    "pose": "explain",
+    "narration": "Above all, don't panic-buy at any price just to get in — chasing a peak out of fear is how people get financially crushed. And don't despair either. Markets this stretched do eventually correct or stagnate while incomes catch up. Keep saving, stay flexible, and be ready to move when the math finally makes sense.",
+    "pose": "present",
     "props": [
       {
-        "name": "seedling",
-        "label": "invest for a child"
+        "name": "warning",
+        "label": "don't panic-buy the peak"
       },
       {
-        "name": "moneytree",
-        "label": "65 years → millions"
+        "name": "piggybank",
+        "label": "keep saving"
       },
       {
         "name": "smiley",
-        "label": "the greatest gift"
+        "label": "be ready when math works"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "Because the real lesson of Canada is a warning for every country. When a basic human need like shelter turns into a speculative asset, and building doesn't keep up, an entire generation can get priced out of the life their parents took for granted. It's happening far beyond Canada — it's just furthest along there.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "house",
+        "label": "shelter became a bet"
+      },
+      {
+        "name": "warning",
+        "label": "a generation priced out"
+      },
+      {
+        "name": "mappin",
+        "label": "not just Canada"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "The fix is known, and it's simple to say and brutally hard to do: build more homes than the market thinks it needs, for years on end, until shelter is a place to live again instead of a lottery ticket. Until then, the price tag on Canada stays stubbornly, painfully high.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crane",
+        "label": "build, for years"
+      },
+      {
+        "name": "house",
+        "label": "shelter, not a lottery"
+      },
+      {
+        "name": "mapleleaf",
+        "label": "the price tag stays high"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "That wraps our entire tour of money, level by level — from net worth to rent, debt to lottery wins, and now the quiet engine underneath it all. Understand compounding, and you understand the one force that turns small, patient habits into a genuinely free life.",
-    "pose": "explain",
+    "narration": "So whether you're in Toronto, Sydney, London, or a hot corner of the US, watch that price-to-income ratio like a hawk. It's the single clearest signal of whether a place has quietly priced out the people who live there — and whether the dream of owning a home is still real, or just a story.",
+    "pose": "present",
     "props": [
       {
-        "name": "moneytree",
-        "label": "the engine under it all"
+        "name": "scale",
+        "label": "watch price-to-income"
       },
       {
-        "name": "snowball",
-        "label": "small habits"
+        "name": "mappin",
+        "label": "everywhere, not just Canada"
       },
       {
-        "name": "smiley",
-        "label": "a genuinely free life"
+        "name": "house",
+        "label": "is the dream still real?"
       }
     ]
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "If this finally made compound interest click, hit subscribe — and tell me which number you want me to break down next.",
+    "narration": "If this made the Canadian housing crisis finally make sense, hit subscribe — and tell me which country's price tag you want me to break down next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "snowball",
-        "label": "which number next?"
+        "name": "mapleleaf",
+        "label": "which country next?"
       }
     ]
   },

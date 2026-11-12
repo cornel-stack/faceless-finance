@@ -1,0 +1,949 @@
+{
+  "id": "EP081",
+  "series": "Napkin Numbers",
+  "title": "Why Nobody Can Afford Canada Anymore",
+  "slug": "why-nobody-can-afford-canada",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP081 — The Price Tag series (topic 71, FIRST of the series). Canada housing unaffordability: price-to-income ratios exploded (Vancouver ~12x, Toronto ~10x vs healthy 3-5x); the 2002-2022 price tripling while incomes crept; supply shortage + demand (immigration, investors, low rates); the generational lockout; Canada vs world; what it would take to fix. Chart-heavy (bars by city/country). 4 new motifs (pricetoincomeladder/thelockout/demandvssupply/canadarisecurve) + doodle mapleleaf. Sources: Canadian property bubble/Real estate bubble/Supply and demand/Real estate economics/Housing affordability index. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "A single-family home in Vancouver can cost more than twelve times what a typical family earns in a year. In the healthiest housing markets, that number is three. Canada didn't just get expensive — it became one of the least affordable places on earth to own a home. Today, the price tag on an entire country, and why nobody can afford it anymore.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mapleleaf",
+          "label": "Canada"
+        },
+        {
+          "name": "house",
+          "label": "12× a year's income"
+        },
+        {
+          "name": "warning",
+          "label": "healthy is ~3×"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that captures the whole crisis. Across Canada's big cities, home prices have roughly tripled since the early two thousands — while wages barely moved. An entire generation now earns a normal salary in a country where a normal home costs a fortune. The math simply stopped working.",
+      "text": "~3× since 2002",
+      "sub": "home prices tripled while incomes barely budged",
+      "icon": "chartup"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Let that tripling sink in with a real example. A modest home that cost three hundred thousand dollars in the early two thousands is now often nine hundred thousand or more — the exact same house, same walls, same leaky roof. Nothing improved except the price. The owner got rich by doing absolutely nothing but existing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "$300K home → $900K+"
+        },
+        {
+          "name": "warning",
+          "label": "same house, nothing improved"
+        },
+        {
+          "name": "moneybag",
+          "label": "rich by doing nothing"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So we'll break down exactly how expensive Canada got, why prices exploded while paychecks didn't, who got locked out and who cashed in, how it stacks up against the rest of the world, and what it would actually take to fix it. This is the price tag on the Canadian dream. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "how expensive"
+        },
+        {
+          "name": "padlock",
+          "label": "who got locked out"
+        },
+        {
+          "name": "mappin",
+          "label": "vs the world"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "paying 60% of income on a tiny condo",
+      "memeBottom": "being told to just cut back on coffee",
+      "narration": "Because Canadians have been told for years that homeownership is just around the corner if they budget harder. But when prices triple and wages don't, no amount of skipped lattes closes that gap. First, let's measure just how bad it really got."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, how we measure 'unaffordable.'",
+      "heading": "The Measure",
+      "kicker": "price-to-income"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Economists judge affordability with a housing affordability index — an index that measures housing affordability, usually how easily a typical family can afford a typical home. The simplest version is the price-to-income ratio: take the home price, divide by yearly household income, and you get how many years of pay a house costs.",
+      "sourceId": "wiki-hai"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "And this ratio is the whole story. A healthy, affordable market sits around three to five years of income. The US average is roughly five. Toronto is around ten. And Vancouver sits near twelve — meaning a family would have to save every single dollar they earn for twelve years, spending nothing, just to buy an average home.",
+      "motif": "pricetoincomeladder",
+      "caption": "years of income to buy an average home"
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "In raw dollars, it's staggering. The average home in the Greater Toronto Area has hovered around a million dollars, and in Greater Vancouver even higher. These aren't mansions — they're ordinary houses and modest condos. A seven-figure price tag has quietly become the normal cost of a normal home.",
+      "text": "~$1,000,000",
+      "sub": "the average home in Toronto / Vancouver",
+      "icon": "house"
+    },
+    {
+      "id": "s8",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Price-to-income ratio by city (years of income per home)",
+      "unit": "×",
+      "narration": "Put the cities side by side and the problem is undeniable. A healthy market is three. Calgary, more reasonable, around five. Toronto, ten. Vancouver, twelve. Canada's biggest cities have drifted into territory usually seen only in a handful of the most expensive places on the planet.",
+      "data": [
+        {
+          "label": "Healthy",
+          "value": 3
+        },
+        {
+          "label": "Calgary",
+          "value": 5
+        },
+        {
+          "label": "Toronto",
+          "value": 10
+        },
+        {
+          "label": "Vancouver",
+          "value": 12
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So how did prices climb so far, so fast?",
+      "heading": "The Climb",
+      "kicker": "2002 to today"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "Here's the curve that broke a generation's plans. Starting in the early two thousands, Canadian home prices began a near-vertical climb, roughly tripling over two decades with only brief dips. Incomes, meanwhile, crept up at their usual slow pace. The gap between the two lines is the entire affordability crisis in one picture.",
+      "motif": "canadarisecurve",
+      "caption": "prices went vertical; incomes crept"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And notice the dips on that curve barely register. Prices wobbled in 2008 and again around 2018, and cooled when rates rose in 2022 — but each time they came roaring back. For two decades, 'housing always goes up' became gospel, which only fueled more buying and more speculation.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "dips barely registered"
+        },
+        {
+          "name": "rollercoaster",
+          "label": "always roared back"
+        },
+        {
+          "name": "warning",
+          "label": "'housing only goes up'"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "screenshot",
+      "narration": "Economists have a blunt name for this kind of run-up: a real estate bubble — a type of economic bubble that occurs periodically in local or global real estate markets. Whether Canada's is a true bubble or a permanent new reality is fiercely debated — but either way, the prices are very, very real to anyone trying to buy.",
+      "sourceId": "wiki-bubble"
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "To understand why, you only need one idea from economics.",
+      "heading": "The Cause",
+      "kicker": "supply vs demand"
+    },
+    {
+      "id": "s13",
+      "type": "screenshot",
+      "narration": "It all comes down to supply and demand — an economic model of price determination in a market. When the number of people who want homes grows much faster than the number of homes being built, price is the release valve. And in Canada, demand surged while supply stalled for years.",
+      "sourceId": "wiki-supplydemand"
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "build enough homes for everyone",
+      "memeBottom": "protect my own home's soaring value",
+      "narration": "And this is the impossible button every homeowner-voter faces. Everyone agrees we should build more — just not in a way that dents the value of the home they already own. That quiet contradiction is a huge part of why nothing gets built."
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "narration": "Picture the scale tipping. On the demand side: record immigration, rock-bottom interest rates for a decade, and investors treating homes as assets. On the supply side: not nearly enough building, tangled zoning, and slow permits. Too many buyers chasing too few homes can only do one thing — send prices through the roof.",
+      "motif": "demandvssupply",
+      "caption": "demand surged, building stalled"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Take demand first. Canada welcomes a huge number of new residents every year relative to its population — among the highest rates in the developed world. That's wonderful for the economy, but each newcomer needs somewhere to live. Pour rising demand into a housing supply that isn't growing fast enough, and prices have nowhere to go but up.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "record immigration"
+        },
+        {
+          "name": "house",
+          "label": "everyone needs a home"
+        },
+        {
+          "name": "chartup",
+          "label": "demand outruns supply"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "One fair point before we blame any single cause: immigration is an easy scapegoat, but it's not the villain. Newcomers fuel the economy and fill vital jobs. The real failure is that Canada kept inviting people in while refusing to build the homes to house them. The problem isn't the demand — it's the supply that never showed up.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "newcomers fuel the economy"
+        },
+        {
+          "name": "warning",
+          "label": "immigration isn't the villain"
+        },
+        {
+          "name": "crane",
+          "label": "the homes never got built"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "Then there were the ultra-low interest rates. For over a decade, borrowing was historically cheap, which let buyers take on enormous mortgages for the same monthly payment. Cheap money doesn't make homes more affordable — it just lets everyone bid more, and that extra borrowing power gets baked straight into higher prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "a decade of cheap rates"
+        },
+        {
+          "name": "mortgage",
+          "label": "bigger mortgages, same payment"
+        },
+        {
+          "name": "chartup",
+          "label": "it all bids prices up"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Then came the twist. When interest rates finally shot up in 2022, prices dipped — but affordability got worse, not better. Why? A smaller mortgage at a much higher rate can cost more per month than a bigger one did when money was cheap. Buyers got squeezed from both directions at once.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "rates shot up in 2022"
+        },
+        {
+          "name": "chartdown",
+          "label": "prices dipped…"
+        },
+        {
+          "name": "warning",
+          "label": "…but payments rose"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "And homes stopped being just places to live. Investors, both domestic and foreign, poured money into Canadian real estate as a reliable store of wealth. When a house is treated as a stock that you can also live in, ordinary families end up bidding against deep-pocketed investors for the same roof — and usually losing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "homes became assets"
+        },
+        {
+          "name": "skyline",
+          "label": "investor demand"
+        },
+        {
+          "name": "warning",
+          "label": "families outbid"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Investment demand runs deep in the culture. Pre-construction condos get bought and flipped before anyone ever lives in them. Basements and spare rooms become income streams. Housing stopped being shelter and became the national retirement plan — which means any drop in prices now threatens millions of people's nest eggs.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "pre-sale condo flipping"
+        },
+        {
+          "name": "moneybag",
+          "label": "housing = retirement plan"
+        },
+        {
+          "name": "warning",
+          "label": "prices can't fall safely"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Now the supply side — the half nobody fixed.",
+      "heading": "The Shortage",
+      "kicker": "not enough homes"
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "This is where real estate economics — the application of economic techniques to real estate markets — delivers a harsh verdict. Canada has simply not built enough housing for its growing population for years. Restrictive zoning, slow permitting, and a shortage of construction labor all throttled new supply while demand roared.",
+      "sourceId": "wiki-reecon"
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "The scale of the shortfall is jaw-dropping. Canada's own housing agency has estimated the country needs millions of additional homes — on top of what's already planned — within a few years just to restore affordability. That's a building pace Canada hasn't hit in generations.",
+      "text": "millions short",
+      "sub": "extra homes Canada needs this decade to restore affordability",
+      "icon": "crane"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "Much of Canada's land is zoned for detached single-family homes only, especially in the cities where people most want to live. That makes it legally difficult to build the dense, affordable apartments and townhomes a growing population actually needs. The homes people can afford are often the ones it's illegal to build.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "zoned single-family only"
+        },
+        {
+          "name": "crane",
+          "label": "can't build dense + cheap"
+        },
+        {
+          "name": "warning",
+          "label": "affordable = often illegal"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Housing economists call the solution the 'missing middle' — duplexes, triplexes, and low-rise apartments that sit between single houses and giant towers. For decades it was effectively banned by zoning. Encouragingly, cities and provinces are now starting to legalize it again — the first real crack in the wall.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "the 'missing middle'"
+        },
+        {
+          "name": "house",
+          "label": "duplexes + low-rise"
+        },
+        {
+          "name": "crane",
+          "label": "finally being legalized"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "So who actually got hurt — and who got rich?",
+      "heading": "Winners & Losers",
+      "kicker": "the great divide"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "The result is a brutal generational split. Older Canadians who bought decades ago are sitting on homes worth many times what they paid — paper millionaires who did nothing but hold. Younger Canadians, earning decent salaries, find the first rung of the ladder has been lifted clean out of reach. Same country, two totally different worlds.",
+      "motif": "thelockout",
+      "caption": "the ladder pulled up behind a generation"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "The data on the divide is stark. Homeownership rates among young Canadians have been falling, and a huge share of first-time buyers now rely on the 'Bank of Mom and Dad' for their down payment. If your parents owned, you have a shot. If they didn't, the gap compounds into the next generation.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "young ownership falling"
+        },
+        {
+          "name": "handshake",
+          "label": "'Bank of Mom & Dad'"
+        },
+        {
+          "name": "warning",
+          "label": "the gap compounds"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "For a young couple today, the down payment alone is the killer. Saving twenty percent on a million-dollar home means setting aside two hundred thousand dollars — while also paying some of the highest rents in the country. It's like being asked to save for a house while the cost of merely existing eats everything you earn.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "$200K down payment"
+        },
+        {
+          "name": "apartment",
+          "label": "while rents devour income"
+        },
+        {
+          "name": "warning",
+          "label": "saving feels impossible"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "So families adapt in telling ways. Adult children live with parents into their thirties. Buyers pool money across generations. People flee the big cities entirely for smaller towns — only to watch prices there surge as everyone else has the same idea. The crisis doesn't stay contained; it spreads outward.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "living with parents at 35"
+        },
+        {
+          "name": "handshake",
+          "label": "pooling family money"
+        },
+        {
+          "name": "mappin",
+          "label": "fleeing to small towns"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And here's a quiet alarm bell: some young, educated Canadians are simply leaving — moving to countries or regions where their salary can actually buy a life. When a nation prices out its own talent, it doesn't just lose buyers; it loses the workers, doctors, and builders it desperately needs. Unaffordability becomes a brain drain.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "young talent leaving"
+        },
+        {
+          "name": "warning",
+          "label": "brain drain"
+        },
+        {
+          "name": "chartdown",
+          "label": "losing the workers it needs"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "So how does Canada stack up against the rest of the world?",
+      "heading": "Vs the World",
+      "kicker": "a global ranking"
+    },
+    {
+      "id": "s26",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Home price-to-income ratio, major markets (×)",
+      "unit": "×",
+      "narration": "Against its peers, Canada looks genuinely extreme. The United States sits around five times income. The United Kingdom, higher, around eight. Australia, another famously pricey market, around nine. And Canada's hottest cities blow past all of them near twelve. We're not a little expensive — we're a global outlier.",
+      "data": [
+        {
+          "label": "US",
+          "value": 5
+        },
+        {
+          "label": "UK",
+          "value": 8
+        },
+        {
+          "label": "Australia",
+          "value": 9
+        },
+        {
+          "label": "Canada (hot)",
+          "value": 12
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Notice the pattern in that ranking: the US, UK, Australia, and Canada all ran versions of the same playbook — cheap credit, under-building, and homes-as-investments. These English-speaking economies turned housing into a wealth machine for owners, and every one of them is now wrestling with a priced-out generation.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "same playbook, 4 countries"
+        },
+        {
+          "name": "moneybag",
+          "label": "housing as a wealth machine"
+        },
+        {
+          "name": "warning",
+          "label": "all priced out their young"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "screenshot",
+      "narration": "This is what economists mean by the Canadian property bubble — the significant rise in Canadian real estate prices over the past two decades. Whatever you call it, Canada has earned a spot alongside the priciest housing markets on the planet, despite having vast amounts of empty land.",
+      "sourceId": "wiki-canbubble"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "And that's the great irony. Canada is the second-largest country on earth by land area, yet it crams most of its people and nearly all of its jobs into a few metro areas near the southern border. The country isn't short on land. It's short on homes in the places people actually need to live.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mapleleaf",
+          "label": "2nd-biggest country"
+        },
+        {
+          "name": "skyline",
+          "label": "jobs in a few metros"
+        },
+        {
+          "name": "warning",
+          "label": "short on homes, not land"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The 'empty land' comfort also misses something. Much of Canada is frozen wilderness, far from any job, and people reasonably want to live near work, transit, and family in a handful of mild-climate metros. The scarcity isn't of land in general — it's of homes in the few places life actually happens.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "most land is remote"
+        },
+        {
+          "name": "skyline",
+          "label": "jobs in a few metros"
+        },
+        {
+          "name": "house",
+          "label": "scarcity of the right homes"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "So what would it actually take to fix this?",
+      "heading": "The Fix",
+      "kicker": "build, build, build"
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "Almost every economist lands on the same unglamorous answer: build far more homes, especially dense ones, and build them fast. That means overhauling zoning to allow apartments and townhomes, speeding up permits, and training a bigger construction workforce. There's no clever trick — the only real cure for too few homes is more homes.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "crane",
+          "label": "build way more, denser"
+        },
+        {
+          "name": "house",
+          "label": "fix zoning + permits"
+        },
+        {
+          "name": "chartup",
+          "label": "the only real cure"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And this isn't hopeless theory — it's been done. Cities like Auckland and Minneapolis loosened zoning to allow far more housing, and rents and prices rose noticeably slower than their neighbors. Build enough, consistently, and affordability genuinely improves. The cure works; the hard part is the political will to swallow it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "crane",
+          "label": "Auckland + Minneapolis did it"
+        },
+        {
+          "name": "chartdown",
+          "label": "prices rose slower"
+        },
+        {
+          "name": "smiley",
+          "label": "the cure actually works"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "Governments have also tried demand-side moves — taxes on empty and foreign-owned homes, and temporary limits on foreign buyers. These can cool things at the margins, but they treat the symptom. If you don't build enough homes, prices stay high no matter how many buyers you shoo away.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "vacancy + foreign-buyer taxes"
+        },
+        {
+          "name": "warning",
+          "label": "treats the symptom"
+        },
+        {
+          "name": "crane",
+          "label": "supply is the real cure"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "There's also a painful political trap. Most Canadian voters already own homes, and falling prices would shrink their biggest asset. So there's quiet pressure to keep prices high for owners, even as that locks out the young. Fixing affordability means some existing wealth has to stop growing — and that's a very hard sell at the ballot box.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "owners vs buyers"
+        },
+        {
+          "name": "house",
+          "label": "voters want prices high"
+        },
+        {
+          "name": "warning",
+          "label": "the political trap"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "If it stays unfixed, the endgame is a two-tier society: a class of homeowners whose wealth keeps compounding, and a permanent class of renters locked out forever, their incomes flowing straight to landlords. That's not just an economic problem — it's a recipe for deep generational resentment.",
+      "text": "two-tier future",
+      "sub": "owners compounding wealth vs lifelong renters, if unfixed",
+      "icon": "scale"
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "So what does this mean if you're living it?",
+      "heading": "What To Do",
+      "kicker": "playing a hard game"
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "If you're trying to buy in Canada, be ruthless about the math. Consider cheaper cities or provinces where the ratio is sane. Look at townhomes and condos, not just detached houses. And never stretch into a mortgage that leaves you house-poor — a home you can't afford isn't a dream, it's a trap with a nice kitchen.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "cheaper cities"
+        },
+        {
+          "name": "apartment",
+          "label": "condos, not just houses"
+        },
+        {
+          "name": "warning",
+          "label": "never go house-poor"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "And if buying genuinely doesn't make sense where you are, renting and investing the difference is not failure — it's often the smarter move in an overpriced market. You can build real wealth in index funds while staying mobile, and let the overheated housing market be someone else's problem, not your prison.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "rent + invest the gap"
+        },
+        {
+          "name": "smiley",
+          "label": "stay mobile"
+        },
+        {
+          "name": "piggybank",
+          "label": "build wealth elsewhere"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "Above all, don't panic-buy at any price just to get in — chasing a peak out of fear is how people get financially crushed. And don't despair either. Markets this stretched do eventually correct or stagnate while incomes catch up. Keep saving, stay flexible, and be ready to move when the math finally makes sense.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "warning",
+          "label": "don't panic-buy the peak"
+        },
+        {
+          "name": "piggybank",
+          "label": "keep saving"
+        },
+        {
+          "name": "smiley",
+          "label": "be ready when math works"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Because the real lesson of Canada is a warning for every country. When a basic human need like shelter turns into a speculative asset, and building doesn't keep up, an entire generation can get priced out of the life their parents took for granted. It's happening far beyond Canada — it's just furthest along there.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "shelter became a bet"
+        },
+        {
+          "name": "warning",
+          "label": "a generation priced out"
+        },
+        {
+          "name": "mappin",
+          "label": "not just Canada"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "The fix is known, and it's simple to say and brutally hard to do: build more homes than the market thinks it needs, for years on end, until shelter is a place to live again instead of a lottery ticket. Until then, the price tag on Canada stays stubbornly, painfully high.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crane",
+          "label": "build, for years"
+        },
+        {
+          "name": "house",
+          "label": "shelter, not a lottery"
+        },
+        {
+          "name": "mapleleaf",
+          "label": "the price tag stays high"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So whether you're in Toronto, Sydney, London, or a hot corner of the US, watch that price-to-income ratio like a hawk. It's the single clearest signal of whether a place has quietly priced out the people who live there — and whether the dream of owning a home is still real, or just a story.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "watch price-to-income"
+        },
+        {
+          "name": "mappin",
+          "label": "everywhere, not just Canada"
+        },
+        {
+          "name": "house",
+          "label": "is the dream still real?"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this made the Canadian housing crisis finally make sense, hit subscribe — and tell me which country's price tag you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "mapleleaf",
+          "label": "which country next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-hai",
+      "name": "Housing affordability index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "an index that measures housing affordability"
+    },
+    {
+      "id": "wiki-bubble",
+      "name": "Real estate bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_bubble",
+      "quote": "a type of economic bubble that occurs periodically"
+    },
+    {
+      "id": "wiki-supplydemand",
+      "name": "Supply and demand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+      "quote": "an economic model of price determination in a market"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "the application of economic techniques to real estate markets"
+    },
+    {
+      "id": "wiki-canbubble",
+      "name": "Canadian property bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Canadian_property_bubble",
+      "quote": "the significant rise in Canadian real estate prices"
+    }
+  ],
+  "youtube": {
+    "title": "Why Nobody Can Afford Canada Anymore",
+    "alts": [
+      "Why Canada Became Impossible to Afford",
+      "The Price Tag on Canada: Why Nobody Can Buy a Home"
+    ],
+    "hook": "A home in Vancouver can cost more than 12 times a family's yearly income — in a healthy market that number is 3. Canada became one of the least affordable places on earth to own a home. This is the price tag on an entire country: prices roughly tripled since 2002 while wages barely moved, driven by record immigration, a decade of cheap money, and investors treating homes as assets — all slamming into a housing supply that never kept up (restrictive zoning, slow permits). We rank Canada's cities and compare it to the US, UK, and Australia, explain the brutal generational lockout, and lay out the only real fix: build far more homes. Fully cited.",
+    "bullets": [
+      "Price-to-income: Vancouver ~12x, Toronto ~10x vs healthy ~3x",
+      "Prices roughly tripled since 2002 while wages barely moved",
+      "The cause: demand surged (immigration, cheap rates, investors)",
+      "The shortage: zoning and permits throttled new supply",
+      "Canada vs US, UK, Australia — a global outlier",
+      "The only real fix: build far more homes, for years"
+    ],
+    "tags": [
+      "canada housing",
+      "why nobody can afford canada",
+      "canada housing crisis",
+      "why are houses so expensive in canada",
+      "vancouver housing",
+      "toronto real estate",
+      "housing affordability",
+      "price to income ratio",
+      "canadian property bubble",
+      "housing market",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#canada",
+      "#housing",
+      "#realestate",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "CANADA",
+      "hookBot": "NOBODY CAN AFFORD IT",
+      "napkinNumber": "12×",
+      "napkinSub": "home vs yearly income",
+      "deco": "mapleleaf"
+    },
+    "chapters": [
+      [
+        "how we measure",
+        "The measure"
+      ],
+      [
+        "how did prices climb so far",
+        "The climb"
+      ],
+      [
+        "one idea from economics",
+        "The cause"
+      ],
+      [
+        "the supply side",
+        "The shortage"
+      ],
+      [
+        "who actually got hurt",
+        "Winners & losers"
+      ],
+      [
+        "how does canada stack up against the rest of the world",
+        "Vs the world"
+      ],
+      [
+        "what would it actually take to fix this",
+        "The fix"
+      ],
+      [
+        "what does this mean if you're living it",
+        "What to do"
+      ]
+    ]
+  }
+}

@@ -6011,6 +6011,66 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>3% inflation halves your money's value in ~24 years</text>
       </svg>
     );
+  } else if (m === "pricetoincomeladder") {
+    // Price-to-income ratio by city; healthy = 3-5.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["healthy", 4, "#9cc47f"], ["US avg", 5, gold], ["Toronto", 10, "#d98b5f"], ["Vancouver", 12, red]];
+    const base = 440, maxH = 250, maxV = 12;
+    const healthyY = base - maxH * (4 / maxV);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">home price ÷ yearly income</text>
+        <RLine x1={110} y1={base} x2={880} y2={base} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, v, col], i) => { const h = maxH * (v / maxV) * draw; const x = 220 + i * 180; return <g key={i}><rect x={x - 60} y={base - h} width={120} height={h} rx={5} fill={col as string} stroke={ink} strokeWidth={3.5} /><text x={x} y={base + 24} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text><text x={x} y={base - h - 10} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{v}×</text></g>; })}
+        <line x1={110} y1={healthyY} x2={880} y2={healthyY} stroke={green} strokeWidth={3} strokeDasharray="8 6" />
+        <text x={820} y={healthyY - 8} fontSize={12} fontWeight={800} fill={green} textAnchor="end" fontFamily={sans}>affordable ≈ 3-5×</text>
+      </svg>
+    );
+  } else if (m === "thelockout") {
+    // Young buyers locked out behind a gate.
+    const pull = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a generation locked out</text>
+        <g transform="translate(640 250)"><rect x={-70} y={-10} width={140} height={110} fill="#efe9da" stroke={ink} strokeWidth={5} /><path d="M-80 -10 L0 -70 L80 -10 Z" fill={gold} stroke={ink} strokeWidth={5} /><rect x={-20} y={40} width={40} height={60} fill={ink} /></g>
+        <g transform={`translate(${260 - 60 * pull} 300)`}><circle r={26} fill={gold} stroke={ink} strokeWidth={4} /><rect x={-18} y={26} width={36} height={56} rx={8} fill={blue} stroke={ink} strokeWidth={4} /></g>
+        {[0, 1, 2, 3].map((i) => <RLine key={i} x1={430 + i * 30} y1={180} x2={430 + i * 30} y2={420} stroke={ink} strokeWidth={6} />)}
+        <text x={VW / 2} y={470} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the ladder's been pulled up behind them</text>
+      </svg>
+    );
+  } else if (m === "demandvssupply") {
+    // Too many buyers, too few homes — a tipping scale.
+    const tip = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const ang = -10 * tip;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">too many buyers, too few homes</text>
+        <g transform={`translate(${VW / 2} 230) rotate(${ang})`}>
+          <RLine x1={-250} y1={0} x2={250} y2={0} stroke={ink} strokeWidth={8} />
+          <g transform="translate(-250 40)"><circle r={44} fill={red} stroke={ink} strokeWidth={4} /><text y={-2} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>demand</text><text y={16} fontSize={11} fontWeight={700} fill="#fff" textAnchor="middle" fontFamily={sans}>buyers++</text></g>
+          <g transform="translate(250 40)"><circle r={30} fill={blue} stroke={ink} strokeWidth={4} /><text y={2} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>supply</text></g>
+        </g>
+        <RLine x1={VW / 2} y1={230} x2={VW / 2} y2={420} stroke={ink} strokeWidth={8} />
+        <text x={VW / 2} y={460} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>immigration + investors up, building down → prices soar</text>
+      </svg>
+    );
+  } else if (m === "canadarisecurve") {
+    // The 2002->2022 price explosion.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 440, yTop = 110;
+    const f = (t: number) => y0 - (y0 - yTop) * Math.pow(t, 1.7);
+    const seg = Array.from({ length: 44 }).map((_, i) => { const t = (i / 43) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Canadian home prices, 2002 → today</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg} fill="none" stroke={red} strokeWidth={6} />
+        <text x={x0 + 70} y={y0 - 14} fontSize={13} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>2002</text>
+        <text x={x1 - 40} y={f(1) + 24} fontSize={14} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>roughly tripled</text>
+        <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>incomes crept up; prices went vertical</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
