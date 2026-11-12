@@ -6589,6 +6589,81 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={x} y={442} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">≈ a house, paid in 18 years</text>
       </svg>
     );
+  } else if (m === "nesteggbycountry") {
+    // Private nest egg needed to retire, by country — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string, string][] = [
+      ["Thailand", 200, "$200K", green],
+      ["Mexico", 300, "$300K", "#9cc47f"],
+      ["Germany", 400, "$400K", gold],
+      ["UK", 550, "$550K", gold],
+      ["Australia", 640, "$640K", "#d98b5f"],
+      ["US", 1200, "$1.2M", red],
+    ];
+    const x0 = 250, xMax = 850, maxV = 1200;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">private nest egg needed to retire</text>
+        {rows.map(([lab, v, tag, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{tag}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the US retiree must save up to 6× a cheaper country's</text>
+      </svg>
+    );
+  } else if (m === "threepillars") {
+    // Three pillars of retirement income.
+    const rise = (d: number) => interpolate(frame, [fps * d, fps * (d + 0.8)], [0, 1], clampBoth);
+    const pillars: [string, string, number, string][] = [
+      ["state\npension", "the government pays", 230, gold],
+      ["workplace\npension", "you + employer save", 180, "#9cc47f"],
+      ["private\nsavings", "your own nest egg", 260, green],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the three pillars of retirement</text>
+        {pillars.map(([lab, note, h, col], i) => {
+          const x = 260 + i * 240; const g = rise(0.4 + i * 0.4); const hh = h * g;
+          return (
+            <g key={i}>
+              <rect x={x - 62} y={420 - hh} width={124} height={hh} rx={6} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text x={x} y={412 - hh} fontSize={13} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab.split("\n").map((ln, j) => <tspan key={j} x={x} dy={j === 0 ? 0 : 15}>{ln}</tspan>)}</text>
+              <text x={x} y={446} fontSize={12} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{note}</text>
+            </g>
+          );
+        })}
+        <RLine x1={150} y1={420} x2={830} y2={420} stroke={ink} strokeWidth={4} />
+        <text x={VW / 2} y={482} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>taller state + workplace pillars = a smaller nest egg you need</text>
+      </svg>
+    );
+  } else if (m === "retireabroadmap") {
+    // Cheap-retirement destinations with cost multipliers.
+    const pop = (d: number) => Math.min(1, spring({ frame, fps, delay: d, config: { damping: 12 } }));
+    const spots: [string, string][] = [["Portugal", "~50% cheaper"], ["Mexico", "~60% cheaper"], ["Spain", "~45% cheaper"], ["Thailand", "~65% cheaper"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where a pension stretches twice as far</text>
+        {spots.map(([place, note], i) => {
+          const x = 240 + (i % 2) * 320; const y = 130 + Math.floor(i / 2) * 150;
+          const s = pop(fps * (0.4 + i * 0.3));
+          return (
+            <g key={i} transform={`translate(${x} ${y}) scale(${s})`}>
+              <rect x={-130} y={-45} width={260} height={100} rx={14} fill={["#cfe3d4", gold, "#9cc47f", "#d9c89a"][i]} stroke={ink} strokeWidth={4} />
+              <text x={0} y={-6} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{place}</text>
+              <text x={0} y={26} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>{note}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={476} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>retirement visas + low costs = retire years earlier</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

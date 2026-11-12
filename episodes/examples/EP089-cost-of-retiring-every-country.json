@@ -1,0 +1,818 @@
+{
+  "id": "EP089",
+  "series": "Napkin Numbers",
+  "title": "The Cost of Retiring in Every Country",
+  "slug": "cost-of-retiring-every-country",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP089 — The Price Tag series (topic 79). Rank the private nest egg needed to retire by country: US ~$1.2M (thin state pension + costly healthcare) vs far less where state pension is big + care is free + cost of living low (Germany ~$400K, Mexico/Thailand ~$200-300K). 25x/4% rule, the 3 pillars (state/workplace/private), social pension, the healthcare bomb (US retiree ~$300K+; long-term care), retire-abroad arbitrage + catches (visas/tax/healthcare/family). 3 new motifs (nesteggbycountry/threepillars/retireabroadmap) + reuse twentyfivex/safewithdrawal/healthcaregap (EP055/EP079). Sources: Pension/Social pension/Pensions in the US/Cost of living/Retirement. Distinct from EP055/EP079 (US retirement age/amount). Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "To retire comfortably in the United States, the rule of thumb says you need around one point two million dollars saved. In some countries, you can retire well on a fraction of that — because the state pension is bigger, healthcare is free, and daily life costs far less. Same retirement, wildly different price. Today we rank what it actually costs to stop working, country by country.",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "US: ~$1.2M needed"
+        },
+        {
+          "name": "globe",
+          "label": "elsewhere: a fraction"
+        },
+        {
+          "name": "scale",
+          "label": "ranked by country"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that haunts American workers. To replace a comfortable income without ever running out, you need roughly one point two million dollars in private savings. That's the price of freedom in a country with a thin safety net — and it's precisely why so many people fear they'll never be able to stop working at all.",
+      "text": "$1.2M",
+      "sub": "private savings to retire comfortably in the US",
+      "icon": "nestegg"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we price out retirement everywhere. We'll find the magic number with the four percent rule, rank the nest egg each country actually requires, break down the three pillars that fund old age, expose the healthcare bomb waiting for American retirees, and reveal the countries where your savings stretch twice as far. Because when you retire matters — but where you retire can matter even more.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "the 4% rule"
+        },
+        {
+          "name": "globe",
+          "label": "nest egg by country"
+        },
+        {
+          "name": "hammock",
+          "label": "where it stretches"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "grind for 40 years to save $1.2 million",
+      "memeBottom": "retire on a beach abroad for a fraction",
+      "narration": "Because the difference between retiring in a high-cost country and a cheap one can be decades of extra work — or decades of extra freedom. Before we rank them, let's find the number that defines retirement everywhere."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the one number that defines retirement.",
+      "heading": "The Number",
+      "kicker": "the 4% rule"
+    },
+    {
+      "id": "s6",
+      "type": "stage",
+      "motif": "twentyfivex",
+      "caption": "your number = 25× what you spend in a year",
+      "narration": "The whole thing starts with one elegant rule. To retire, you need a nest egg worth about twenty-five times your annual spending. Live on forty thousand a year, you need roughly a million. Live on eighty, you need two. It's not your salary that sets the target — it's your spending. And that's the first clue to why the country you retire in changes everything."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the twenty-five-times rule reveals a secret: cutting your spending is twice as powerful as it looks. Trim four thousand a year from your retirement budget, and you just shrank the nest egg you need by a hundred thousand dollars. In a cheap country, where life naturally costs less, that effect compounds — which is why location and spending are really the same lever.",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "cut $4K spending"
+        },
+        {
+          "name": "nestegg",
+          "label": "= $100K less needed"
+        },
+        {
+          "name": "scale",
+          "label": "spending is the lever"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "motif": "safewithdrawal",
+      "caption": "draw ~4% a year and the pot should last",
+      "narration": "The flip side is the four percent rule. Once you've saved that pot, you can withdraw about four percent of it each year, adjust for inflation, and it should last roughly thirty years. Four percent of a million is forty thousand a year, for life. That single percentage quietly decides how big a pile every retiree on Earth needs to build."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the four percent rule hides a brutal truth about early retirement. The younger you stop, the longer your money must last, so the more you need. Retire at forty instead of sixty-five and the same lifestyle can require a far bigger pile, because it has to survive fifty years, not twenty. Time isn't just money in retirement — it's the whole equation.",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "earlier = longer"
+        },
+        {
+          "name": "nestegg",
+          "label": "far bigger pile"
+        },
+        {
+          "name": "warning",
+          "label": "must last 50 years"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "sourceId": "wiki-pension",
+      "narration": "But private savings are only part of the picture. There's also your pension — a fund or pay-as-you-go scheme into which amounts are paid regularly during your career, then paid back out in retirement. In some countries that pension is generous enough to do most of the heavy lifting. In others, it barely covers the basics, and the rest is on you."
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And pensions come in two flavors that change everything. A defined-benefit pension promises a set income for life — the gold standard, now rare. A defined-contribution pension, like a US four-oh-one-k, only promises whatever you managed to save and grow. The rich world quietly shifted the risk from employers onto individuals, which is a big reason modern retirement feels so precarious.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "defined benefit: set income"
+        },
+        {
+          "name": "dice",
+          "label": "defined contribution: you risk it"
+        },
+        {
+          "name": "warning",
+          "label": "risk shifted to you"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "Which brings us to how retirement is actually funded.",
+      "heading": "The Three Pillars",
+      "kicker": "who pays for old age"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "threepillars",
+      "caption": "state + workplace + private savings",
+      "narration": "Every retirement stands on three pillars. The first is the state pension — what the government pays you. The second is workplace pensions — what you and your employer set aside. The third is your own private savings and investments. The magic is this: the taller a country builds the first two pillars, the smaller the third one — your personal nest egg — has to be."
+    },
+    {
+      "id": "s11",
+      "type": "screenshot",
+      "sourceId": "wiki-socialpension",
+      "narration": "That first pillar is powerful. A social pension is a stream of payments from the state to an individual that starts when someone retires and continues until death. In countries with a strong one, that guaranteed check covers most of a modest retirement by itself — so citizens there need far less of their own savings to feel secure."
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And state pensions are quietly under strain everywhere. Aging populations mean fewer workers supporting more retirees, so governments are nudging retirement ages up and benefits down. The generous first pillar today's retirees enjoy may be thinner for the next generation — which means younger workers should plan to lean harder on their own savings, not less.",
+      "props": [
+        {
+          "name": "pyramid",
+          "label": "aging populations"
+        },
+        {
+          "name": "chartdown",
+          "label": "benefits under strain"
+        },
+        {
+          "name": "warning",
+          "label": "plan for a thinner pillar"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is the hidden reason the price of retirement swings so wildly. In a country with a big, reliable state pension, you might need a small personal pot on top. In a country with a thin one — like the US, where Social Security replaces only part of your income — you have to self-fund the enormous gap. Same lifestyle, totally different savings target.",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "big state pension = small pot"
+        },
+        {
+          "name": "chartdown",
+          "label": "thin pension = huge gap"
+        },
+        {
+          "name": "scale",
+          "label": "same life, different target"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "callout",
+      "narration": "Put the gap in stark terms. The US Social Security system replaces only about forty percent of an average worker's income — but experts say you need roughly seventy to eighty percent to live comfortably. That missing thirty to forty points is the gap every American must fund alone, and it's exactly why the nest egg has to be so huge.",
+      "text": "40%",
+      "sub": "of US income replaced by Social Security — the rest is on you",
+      "icon": "percent"
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So let's rank the nest egg each country actually demands.",
+      "heading": "The Ranking",
+      "kicker": "what you must save"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "nesteggbycountry",
+      "caption": "private savings needed to retire, by country",
+      "narration": "Here's the private savings a comfortable retirement requires, once you account for the local state pension and cost of living. The United States tops the list near one point two million dollars. Australia and Britain need several hundred thousand. Germany, with its strong pension, needs less. And in lower-cost countries like Mexico or Thailand, a few hundred thousand can fund a genuinely comfortable life."
+    },
+    {
+      "id": "s15",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Private nest egg needed to retire ($K)",
+      "unit": "$K",
+      "narration": "Put the numbers in a row. Thailand, around two hundred thousand. Mexico, near three. Germany, about four hundred. Britain, over five. Australia, in the six hundreds. And the United States, roughly one point two million. The American retiree has to save three to six times what a retiree in a cheaper, better-cushioned country does.",
+      "data": [
+        {
+          "label": "Thailand",
+          "value": 200
+        },
+        {
+          "label": "Mexico",
+          "value": 300
+        },
+        {
+          "label": "Germany",
+          "value": 400
+        },
+        {
+          "label": "UK",
+          "value": 550
+        },
+        {
+          "label": "Australia",
+          "value": 640
+        },
+        {
+          "label": "US",
+          "value": 1200
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And remember what sits underneath these numbers: cost of living. A million dollars isn't a fixed amount of retirement — it's a different number of years in every country. In an expensive one it buys fifteen comfortable years; in a cheap one, thirty or more. The same savings can mean scraping by or living like royalty, depending only on the border.",
+      "props": [
+        {
+          "name": "globe",
+          "label": "$1M = different years"
+        },
+        {
+          "name": "hammock",
+          "label": "15 years or 30"
+        },
+        {
+          "name": "scale",
+          "label": "set by the border"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "State pension: % of pay it replaces",
+      "unit": "%",
+      "narration": "And here's why. This is how much of your working income the state pension replaces. In the Netherlands it's near eighty percent, in Germany over fifty — so retirees there lean on the state, not a giant nest egg. In the US and UK it's only around thirty to forty percent, leaving a vast gap that private savings alone must fill.",
+      "data": [
+        {
+          "label": "UK",
+          "value": 30
+        },
+        {
+          "label": "Mexico",
+          "value": 30
+        },
+        {
+          "label": "US",
+          "value": 40
+        },
+        {
+          "label": "Germany",
+          "value": 55
+        },
+        {
+          "label": "Netherlands",
+          "value": 80
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "Here's the whole episode in one contrast. A comfortable retirement might require around one point two million dollars in savings in the United States, but closer to two hundred thousand in a low-cost country with decent public support. That's a six-fold difference — for a retiree living essentially the same comfortable day.",
+      "text": "6×",
+      "sub": "the gap in nest egg needed, US vs a cheap country",
+      "icon": "scale"
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So the US lands at the top of the cost list for two compounding reasons. Its state pension replaces less of your income than most rich countries, and its retirees face uniquely high healthcare costs. Thin public support plus expensive medicine equals the biggest private nest egg in the developed world. You're not saving more because you want to — you're saving more because you have to.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "thin state pension"
+        },
+        {
+          "name": "hospital",
+          "label": "costly healthcare"
+        },
+        {
+          "name": "nestegg",
+          "label": "= biggest nest egg needed"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "And that second reason deserves its own warning.",
+      "heading": "The Healthcare Bomb",
+      "kicker": "the retiree's hidden cost"
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "motif": "healthcaregap",
+      "caption": "medical costs can detonate a retirement",
+      "narration": "Here's the bomb buried in every American retirement plan. In most rich countries, healthcare stays free or nearly free into old age, so a serious illness doesn't threaten your savings. In the US, even with Medicare at sixty-five, retirees face premiums, co-pays, and the monster that is long-term care. A single health event can vaporize a nest egg that took forty years to build."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the scariest line isn't routine medicine — it's long-term care. A few years in a nursing home or with full-time help can cost hundreds of thousands of dollars in the US, and it's largely not covered by Medicare. Many countries fold this into public care. For Americans, it's the silent nest-egg killer almost nobody plans for.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "long-term care"
+        },
+        {
+          "name": "warning",
+          "label": "not covered by Medicare"
+        },
+        {
+          "name": "nestegg",
+          "label": "the silent killer"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "screenshot",
+      "sourceId": "wiki-uspension",
+      "narration": "And the American system is a patchwork. Pensions in the United States consist of the Social Security system, plus workplace plans and private savings stitched together by each individual. There's no single, guaranteed, cover-everything backstop. If one of those pieces falls short — and for many people it does — the retiree absorbs the hit personally."
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Estimates suggest an average American couple needs well over three hundred thousand dollars set aside just for healthcare in retirement — on top of everything else. In a country with universal coverage, that line item is close to zero. That one difference, healthcare, explains a huge slice of why the American number is so terrifyingly large.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "$300K+ just for health"
+        },
+        {
+          "name": "globe",
+          "label": "≈ $0 where it's universal"
+        },
+        {
+          "name": "warning",
+          "label": "the biggest US gap"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "$1.2M nest egg, one hospital stay away from zero",
+      "memeBottom": "this is fine",
+      "narration": "For many American near-retirees, this is the quiet anxiety underneath the spreadsheet. You can do everything right, hit your number, and still watch a single health crisis threaten it all. In a universal-coverage country, that specific fear simply doesn't exist."
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "All of which leads to a fast-growing escape hatch.",
+      "heading": "Retire Abroad",
+      "kicker": "where your money doubles"
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "motif": "retireabroadmap",
+      "caption": "the cheap-retirement destinations",
+      "narration": "A wave of retirees is discovering geographic arbitrage. Take a modest American or British pension to Portugal, Mexico, Spain, or Thailand, and it suddenly funds a comfortable, even luxurious, life. Rent, food, and healthcare cost a fraction of what they do back home. Many countries now offer special retirement visas to welcome exactly these people — and their steady foreign income."
+    },
+    {
+      "id": "s46",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "work 10 more years to afford retiring at home",
+      "memeBottom": "retire now somewhere cheaper",
+      "narration": "This is the choice a surprising number of retirees now face. Grind another decade to afford staying put, or retire today by moving somewhere your money goes further. Once you run the numbers, the second button stops looking radical and starts looking obvious."
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "sourceId": "wiki-col",
+      "narration": "It all comes back to cost of living — the cost of maintaining a certain standard of living in a given place. Your pension doesn't change when you cross a border, but what it buys does, dramatically. The same monthly check that means scraping by in London can mean a maid, a sea view, and private healthcare in a lower-cost country."
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the dollar's strength is a hidden retirement superpower. When you earn or save in a strong currency and spend in a weaker one, your money quietly buys more every year the gap holds. A US or UK pension in Southeast Asia or Latin America isn't just cheaper to spend — it's effectively a permanent raise, courtesy of the exchange rate.",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "strong currency, weak prices"
+        },
+        {
+          "name": "moneybag",
+          "label": "a permanent raise"
+        },
+        {
+          "name": "globe",
+          "label": "courtesy of the FX rate"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The math is staggering. A couple that needs five thousand dollars a month to live in a major US city might live the same lifestyle on two thousand in parts of Mexico or Southeast Asia. That shrinks the nest egg they need by more than half — effectively letting them retire a decade earlier, on the exact same savings.",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "$5K life for $2K"
+        },
+        {
+          "name": "nestegg",
+          "label": "half the nest egg"
+        },
+        {
+          "name": "chartup",
+          "label": "retire a decade sooner"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And it's not only exotic destinations. Within a single country, moving from a high-cost city to a cheaper region can achieve the same effect without a passport. A retiree leaving an expensive coast for a quiet, low-cost town can stretch the same savings years longer — the domestic version of retiring abroad, minus the jet lag.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "cheaper region at home"
+        },
+        {
+          "name": "house",
+          "label": "same effect, no passport"
+        },
+        {
+          "name": "hammock",
+          "label": "savings last years longer"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "explain",
+      "narration": "But retiring abroad has real catches. Healthcare access and quality vary enormously, and your home coverage usually won't travel with you. There are visa rules, currency risk, language barriers, and the quiet cost of living far from family and friends. The cheapest country on paper isn't always the one where you'll actually want to grow old.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "healthcare + visas"
+        },
+        {
+          "name": "exchange",
+          "label": "currency risk"
+        },
+        {
+          "name": "heart",
+          "label": "far from family"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And watch the tax trap of retiring abroad. Some countries tax your foreign pension; a few, like the US, tax citizens no matter where they live. Smart retirees check tax treaties before they pack, because the wrong country can quietly claw back the savings a low cost of living just handed them. Cheap rent means nothing if the tax office takes the difference.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "foreign pension taxes"
+        },
+        {
+          "name": "warning",
+          "label": "check tax treaties"
+        },
+        {
+          "name": "scale",
+          "label": "tax can erase the saving"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "So how do you actually plan around all this?",
+      "heading": "What To Do",
+      "kicker": "hit your number"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "pose": "present",
+      "narration": "First, find your real number. Take the annual spending you want in retirement, subtract whatever state pension you'll receive, and multiply the gap by twenty-five. That's the nest egg you personally must build. Most people never do this subtraction — and either panic needlessly or, worse, wildly undersave for the gap that's actually there.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "(spending − pension) × 25"
+        },
+        {
+          "name": "nestegg",
+          "label": "your true target"
+        },
+        {
+          "name": "warning",
+          "label": "most never do the math"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And start before you feel ready, because time is the real currency of retirement. Thanks to compounding, money invested in your twenties does far more work than money saved in your fifties. The person who begins early needs to save a fraction as much each month to hit the same number. Waiting is the most expensive retirement choice there is.",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "start early"
+        },
+        {
+          "name": "hourglass",
+          "label": "time beats amount"
+        },
+        {
+          "name": "chartup",
+          "label": "waiting costs most"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "pose": "present",
+      "narration": "Second, treat location as a retirement strategy, not an afterthought. Where you retire can cut your required savings in half or double how long your money lasts. You don't have to move abroad — even choosing a lower-cost region at home can transform the math. Geography is the single most underused lever in all of retirement planning.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "location = strategy"
+        },
+        {
+          "name": "hammock",
+          "label": "halve what you need"
+        },
+        {
+          "name": "globe",
+          "label": "the underused lever"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "present",
+      "narration": "And don't forget taxes in retirement — they're the stealth cost of your nest egg. Where your savings sit, which country you live in, and how you withdraw can swing your real income by thousands a year. Two retirees with identical pots can end up with very different spending money, purely from how cleverly they handle the tax side.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "withdrawal taxes"
+        },
+        {
+          "name": "scale",
+          "label": "same pot, different income"
+        },
+        {
+          "name": "calculator",
+          "label": "plan the tax side"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "sourceId": "wiki-retirement",
+      "narration": "And remember retirement isn't all-or-nothing. A person may also semi-retire by reducing work hours or workload — a phased exit that lets your savings keep growing while you still enjoy life. In a high-cost country, part-time work for a few extra years can shrink the nest egg you need far more than most people realize."
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And delaying your state pension can be a quiet superpower. In many countries, including the US, holding off a few years permanently boosts your monthly check — sometimes by thirty percent or more. That guaranteed, inflation-protected raise can shrink the private nest egg you need, and it's one of the best risk-free returns in all of finance.",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "delay the state pension"
+        },
+        {
+          "name": "chartup",
+          "label": "+30% monthly, for life"
+        },
+        {
+          "name": "shield",
+          "label": "a risk-free raise"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Retirement doesn't have one price — it has a different one in every country, set by how much the state carries, what healthcare costs, and how expensive daily life is. The question isn't just how much you need to retire. It's where you choose to do it. Pick the right country, and freedom gets a lot cheaper.",
+      "props": [
+        {
+          "name": "globe",
+          "label": "a different price everywhere"
+        },
+        {
+          "name": "scale",
+          "label": "state + health + cost"
+        },
+        {
+          "name": "hammock",
+          "label": "pick where, not just how much"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this put a real number on retirement for you, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-pension",
+      "name": "Pension (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pension",
+      "quote": "a fund or pay-as-you-go scheme into which amounts are paid regularly"
+    },
+    {
+      "id": "wiki-socialpension",
+      "name": "Social pension (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Social_pension",
+      "quote": "a stream of payments from the state to an individual that starts when someone retires"
+    },
+    {
+      "id": "wiki-uspension",
+      "name": "Pensions in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pensions_in_the_United_States",
+      "quote": "Pensions in the United States consist of the Social Security system"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "the cost of maintaining a certain standard of living"
+    },
+    {
+      "id": "wiki-retirement",
+      "name": "Retirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement",
+      "quote": "semi-retire by reducing work hours or workload"
+    }
+  ],
+  "youtube": {
+    "title": "The Cost of Retiring in Every Country",
+    "alts": [
+      "How Much You Need to Retire in Every Country",
+      "Why Retirement Costs $1.2M in America and Far Less Abroad"
+    ],
+    "hook": "To retire comfortably in the United States, the rule of thumb says you need about $1.2 million saved — in many other countries you can retire well on a fraction of that, because the state pension is bigger, healthcare is free, and daily life costs far less. This is the cost of retiring in every country, ranked. We find your magic number with the 25x / 4% rule, rank the private nest egg each country actually requires (US ~$1.2M vs Germany ~$400K vs Mexico/Thailand ~$200-300K), break down the three pillars that fund old age (state pension, workplace pension, private savings), expose the healthcare bomb facing US retirees (~$300K+ just for medical, plus long-term care Medicare won't cover), and reveal the geographic-arbitrage escape — retiring abroad in Portugal, Mexico, Spain or Thailand where a modest pension funds a comfortable life. Plus the catches (visas, taxes, healthcare, family) and exactly how to hit your number. Fully cited.",
+    "bullets": [
+      "Your number: the 25x rule and the 4% withdrawal rate",
+      "Nest egg ranked: ~$1.2M (US) vs a fraction elsewhere",
+      "The three pillars — and why a big state pension shrinks yours",
+      "The healthcare bomb: ~$300K+ for US retirees, ~$0 abroad",
+      "Retire abroad: where your pension stretches twice as far",
+      "The catches + how to find your real retirement number"
+    ],
+    "tags": [
+      "cost of retirement",
+      "how much to retire",
+      "retire abroad",
+      "retirement by country",
+      "4 percent rule",
+      "retirement savings",
+      "best countries to retire",
+      "nest egg",
+      "retire early",
+      "pension",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#retirement",
+      "#fire",
+      "#retireabroad",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "RETIRING COSTS",
+      "hookBot": "EVERY COUNTRY RANKED",
+      "napkinNumber": "$1.2M vs $200K",
+      "napkinSub": "US vs a cheaper country",
+      "deco": "hammock"
+    },
+    "chapters": [
+      [
+        "the one number that defines retirement",
+        "The number"
+      ],
+      [
+        "how retirement is actually funded",
+        "Three pillars"
+      ],
+      [
+        "rank the nest egg each country actually demands",
+        "The ranking"
+      ],
+      [
+        "that second reason deserves its own warning",
+        "Healthcare bomb"
+      ],
+      [
+        "a fast-growing escape hatch",
+        "Retire abroad"
+      ],
+      [
+        "how do you actually plan around all this",
+        "What to do"
+      ],
+      [
+        "doesn't have one price",
+        "The real lesson"
+      ]
+    ]
+  }
+}
