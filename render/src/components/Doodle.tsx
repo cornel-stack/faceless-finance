@@ -121,6 +121,8 @@ export type DoodleName =
   | "mailbox" | "moon"
   // EP065 (money every decade of life) additions:
   | "cane" | "backpack"
+  // EP066 (every level of millionaire) additions:
+  | "moneystack" | "stadium"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2068,6 +2070,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M36 34 Q36 18 50 18 Q64 18 64 34" fill="none" strokeWidth={SW} />
           <RRect x={38} y={52} w={24} h={20} fill={PARCH} strokeWidth={1.6} />
           <RLine x1={50} y1={40} x2={50} y2={48} strokeWidth={1.6} />
+        </>
+      );
+    case "moneystack":
+      // A tall stack of cash bundles — scale of wealth.
+      return (
+        <>
+          <RRect x={24} y={62} w={52} h={16} fill={GREEN} strokeWidth={1.8} />
+          <RRect x={24} y={46} w={52} h={16} fill={GREEN} strokeWidth={1.8} />
+          <RRect x={24} y={30} w={52} h={16} fill={GREEN} strokeWidth={1.8} />
+          <RRect x={24} y={14} w={52} h={16} fill={GREEN} strokeWidth={1.8} />
+          <text x={50} y={74} fontSize={10} fontWeight={900} fill="#2f6b46" textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </>
+      );
+    case "stadium":
+      // A sports stadium — what $100M buys.
+      return (
+        <>
+          <REllipse cx={50} cy={56} w={76} h={44} fill={TAN} strokeWidth={SW} />
+          <REllipse cx={50} cy={56} w={44} h={22} fill={GREEN} strokeWidth={1.8} />
+          <RLine x1={14} y1={56} x2={14} y2={44} strokeWidth={1.4} />
+          <RLine x1={86} y1={56} x2={86} y2={44} strokeWidth={1.4} />
         </>
       );
   }

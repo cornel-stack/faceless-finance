@@ -194,7 +194,9 @@ export interface StageScene extends Base {
     // EP064 (every level of passive income) additions:
     | "passiveincomeladder" | "capitalyieldconverter" | "incometocapital" | "passivespectrum" | "sourcemenu" | "moneywhileyousleep"
     // EP065 (money every decade of life) additions:
-    | "lifedecades" | "twentiestime" | "fortiesfork" | "peaktodrawdown" | "prioritiesbydecade" | "catchupdecade";
+    | "lifedecades" | "twentiestime" | "fortiesfork" | "peaktodrawdown" | "prioritiesbydecade" | "catchupdecade"
+    // EP066 (every level of millionaire) additions:
+    | "millionvsbillionscale" | "secondsscale" | "whatitbuys" | "timetospend" | "millionairerarity" | "millionairetiers";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

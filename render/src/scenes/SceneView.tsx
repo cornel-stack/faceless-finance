@@ -5007,6 +5007,75 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={480} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>after 50, the tax code lets you save extra — use it</text>
       </svg>
     );
+  } else if (m === "millionvsbillionscale") {
+    // A $1M stack vs a $1B stack — 1000x taller.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a million vs a billion</text>
+        <g transform="translate(250 0)"><rect x={-30} y={440 - 20 * grow} width={60} height={20 * grow} fill={green} stroke={ink} strokeWidth={3} /><text x={0} y={470} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1M</text><text x={0} y={414} fontSize={13} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>knee-high</text></g>
+        <g transform="translate(680 0)"><rect x={-40} y={110} width={80} height={330 * grow} fill={gold} stroke={ink} strokeWidth={4} /><text x={0} y={470} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1B</text><text x={0} y={95} fontSize={13} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>a skyscraper</text></g>
+        <text x={VW / 2} y={300} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">1,000× bigger</text>
+      </svg>
+    );
+  } else if (m === "secondsscale") {
+    // A million seconds vs a billion seconds.
+    const pop = spring({ frame, fps, delay: fps * 1.2, config: { damping: 10 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={100} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">count it in seconds</text>
+        <g transform="translate(280 290)"><circle r={90} fill={green} stroke={ink} strokeWidth={6} /><text y={-16} fontSize={18} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>1 million sec</text><text y={14} fontSize={24} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">11 days</text></g>
+        <g transform={`translate(710 290) scale(${Math.min(1, pop)})`}><circle r={90} fill={red} stroke={ink} strokeWidth={6} /><text y={-16} fontSize={18} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>1 billion sec</text><text y={14} fontSize={24} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">32 years</text></g>
+        <text x={VW / 2} y={456} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>that's the real gap between a millionaire and a billionaire</text>
+      </svg>
+    );
+  } else if (m === "whatitbuys") {
+    // What each tier can literally buy.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string, string][] = [["$1M", "a paid-off home", "🏡"], ["$10M", "a private-jet life", "✈️"], ["$100M", "a mega-yacht, a team", "🛥️"], ["$1B", "islands, media, power", "🌍"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what each level actually buys</text>
+        {rows.map(([amt, what, emo], i) => { const y = 110 + i * 86; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={150} y={y} width={140} height={62} rx={8} fill={["#cfe3d4", green, gold, "#bfa0d8"][i]} stroke={ink} strokeWidth={4} /><text x={220} y={y + 40} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={330} y={y + 42} fontSize={30} textAnchor="middle" fontFamily={sans}>{emo}</text><text x={400} y={y + 40} fontSize={19} fontWeight={800} fill={ink} fontFamily={sans}>{what}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "timetospend") {
+    // At $1,000/day, how long to burn each fortune.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const rows: [string, string, number][] = [["$1M", "~3 years", 40], ["$10M", "~27 years", 120], ["$100M", "~274 years", 300], ["$1B", "~2,740 years", 560]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">spending $1,000 a day, every day</text>
+        {rows.map(([amt, t, w], i) => { const y = 110 + i * 84; return <g key={i} opacity={interpolate(grow, [i * 0.16, i * 0.16 + 0.2], [0, 1], clampBoth)}><text x={200} y={y + 34} fontSize={20} fontWeight={900} fill={ink} textAnchor="end" fontFamily="Georgia, serif">{amt}</text><rect x={220} y={y + 4} width={Math.min(620, (w as number)) * grow} height={44} rx={6} fill={[green, "#cfe3d4", gold, red][i]} stroke={ink} strokeWidth={3} /><text x={220 + Math.min(620, (w as number)) * grow + 70} y={y + 34} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{t}</text></g>; })}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>you could never spend a billion in a lifetime</text>
+      </svg>
+    );
+  } else if (m === "millionairerarity") {
+    // How many of each exist.
+    const pop = (d: number) => spring({ frame, fps, delay: d, config: { damping: 11 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how rare is each?</text>
+        <g transform={`translate(230 290) scale(${Math.min(1, pop(fps * 0.4))})`}><circle r={86} fill={green} stroke={ink} strokeWidth={5} /><text y={-10} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>millionaires</text><text y={18} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">~22M</text></g>
+        <g transform={`translate(500 290) scale(${Math.min(1, pop(fps * 1.0))})`}><circle r={52} fill={gold} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>$100M+</text><text y={16} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">~10K</text></g>
+        <g transform={`translate(740 290) scale(${Math.min(1, pop(fps * 1.6))})`}><circle r={30} fill={red} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>billionaires</text><text y={16} fontSize={13} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">~2.7K</text></g>
+        <text x={VW / 2} y={456} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>(US millionaires; billionaires worldwide)</text>
+      </svg>
+    );
+  } else if (m === "millionairetiers") {
+    // The $1M/$10M/$100M/$1B ladder with 'what changes'.
+    const tiers: [string, string][] = [["$1M", "freedom"], ["$10M", "luxury"], ["$100M", "power"], ["$1B", "a different planet"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => {
+          const w = 200 + i * 180; const y = 130 + i * 86;
+          const op = interpolate(climb, [i * 0.18, i * 0.18 + 0.22], [0, 1], clampBoth);
+          return <g key={i} opacity={op}><rect x={VW / 2 - w / 2} y={y} width={w} height={66} rx={8} fill={["#cfe3d4", green, gold, red][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 42} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 70} y={y + 41} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>;
+        })}
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">each ×10 is a new universe</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
