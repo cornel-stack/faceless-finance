@@ -232,7 +232,9 @@ export interface StageScene extends Base {
     // EP083 (The Price Tag — healthcare cost) additions:
     | "healthspendbars" | "spendvsoutcome" | "uscostdrivers" | "medicalbankruptcy"
     // EP084 (The Price Tag — housing market 2026 by state) additions:
-    | "statepriceladder" | "whatfourhundredkbuys" | "sunbeltmigration" | "crashornocrash";
+    | "statepriceladder" | "whatfourhundredkbuys" | "sunbeltmigration" | "crashornocrash"
+    // EP085 (The Price Tag — cost of a degree by country) additions:
+    | "tuitionbars" | "tuitioninflationcurve" | "whyustuition" | "freecollegemodel";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

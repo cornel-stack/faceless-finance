@@ -6207,6 +6207,94 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={450} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>most likely: stall, not collapse — a slow grind</text>
       </svg>
     );
+  } else if (m === "tuitionbars") {
+    // Annual university tuition by country — horizontal bars so $0 shows.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string, string][] = [
+      ["Germany", 0, "$0", green],
+      ["Nordic (Norway)", 0, "$0", green],
+      ["France", 1, "~$1K", "#9cc47f"],
+      ["Canada", 7, "~$7K", gold],
+      ["UK", 11, "~$11K", gold],
+      ["US (public)", 11, "~$11K", "#d98b5f"],
+      ["US (private)", 38, "~$38K", red],
+    ];
+    const x0 = 300, xMax = 870, maxV = 38;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={46} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">average tuition per year, by country</text>
+        {rows.map(([lab, v, tag, col], i) => {
+          const y = 80 + i * 58;
+          const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 26} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={34} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 30} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{tag}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={498} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>free in much of Europe — a small fortune in America</text>
+      </svg>
+    );
+  } else if (m === "tuitioninflationcurve") {
+    // US tuition exploding over the decades.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 140, x1 = 880, y0 = 440, yTop = 100;
+    const f = (t: number) => y0 - (y0 - yTop) * Math.pow(t, 1.9);
+    const seg = Array.from({ length: 44 }).map((_, i) => { const t = (i / 43) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    const cpi = (t: number) => y0 - (y0 - yTop) * 0.22 * t;
+    const segC = Array.from({ length: 44 }).map((_, i) => { const t = (i / 43) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${cpi(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">US tuition since 1980 vs everything else</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={segC} fill="none" stroke={blue} strokeWidth={5} />
+        <path d={seg} fill="none" stroke={red} strokeWidth={6} />
+        <text x={x0 + 50} y={y0 - 12} fontSize={13} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>1980</text>
+        <text x={x1 - 40} y={f(1) + 6} fontSize={14} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>tuition: up ~1,200%</text>
+        <text x={x1 - 40} y={cpi(1) - 12} fontSize={13} fontWeight={900} fill={blue} textAnchor="end" fontFamily={sans}>general prices</text>
+        <text x={VW / 2} y={y0 + 34} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>tuition outran inflation by roughly 3× — year after year</text>
+      </svg>
+    );
+  } else if (m === "whyustuition") {
+    // The four drivers of runaway US tuition.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string, string][] = [
+      ["no price caps", "schools set any price"],
+      ["loan-fueled inflation", "easy loans push prices up"],
+      ["administrative bloat", "more deans than teachers"],
+      ["college as a product", "dorms, gyms, amenities"],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">why the US sticker price keeps climbing</text>
+        {items.map(([t, d], i) => { const x = i % 2 === 0 ? 300 : 660; const y = i < 2 ? 110 : 290; const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 150} y={y} width={300} height={130} rx={12} fill={["#d98b5f", red, gold, "#c0583a"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={y + 52} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={y + 84} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "freecollegemodel") {
+    // The tax-funded model, and its trade-offs.
+    const flow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={56} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how &ldquo;free&rdquo; college actually works</text>
+        <g transform="translate(180 210)" opacity={interpolate(flow, [0, 0.3], [0, 1], clampBoth)}><rect x={-80} y={-40} width={160} height={90} rx={10} fill={gold} stroke={ink} strokeWidth={4} /><text y={-8} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>taxpayers</text><text y={16} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>higher taxes</text></g>
+        <path d={`M270 210 l${110 * flow} 0`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <path d={`M${270 + 110 * flow} 210 l-16 -7 m16 7 l-16 7`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={flow} />
+        <g transform="translate(500 210)" opacity={interpolate(flow, [0.3, 0.6], [0, 1], clampBoth)}><rect x={-70} y={-40} width={140} height={90} rx={10} fill="#cfe3d4" stroke={ink} strokeWidth={4} /><text y={-8} fontSize={13} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>government</text><text y={16} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>pays the bill</text></g>
+        <path d={`M580 210 l${110 * flow} 0`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <path d={`M${580 + 110 * flow} 210 l-16 -7 m16 7 l-16 7`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={flow} />
+        <g transform="translate(810 210)" opacity={interpolate(flow, [0.6, 0.9], [0, 1], clampBoth)}><rect x={-80} y={-40} width={160} height={90} rx={10} fill={green} stroke={ink} strokeWidth={4} /><text y={-8} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>students</text><text y={16} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>$0 tuition</text></g>
+        <g transform="translate(0 340)" opacity={interpolate(flow, [0.7, 1], [0, 1], clampBoth)}>
+          <text x={300} y={30} fontSize={15} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">the upside</text>
+          <text x={300} y={58} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>no debt · access by merit</text>
+          <text x={680} y={30} fontSize={15} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the trade-off</text>
+          <text x={680} y={58} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>higher taxes · fewer, pickier slots</text>
+        </g>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

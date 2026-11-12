@@ -2,766 +2,740 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "The same amount of money that buys a cramped studio in San Francisco buys a mansion with land in rural Ohio. Across the fifty states, the price of an identical American dream swings by five times or more. Today we rank the entire US housing market in twenty twenty-six — the priciest states, the cheapest, and whether a crash is actually coming.",
     "pose": "explain",
+    "narration": "A four-year degree at a top American private university now carries a sticker price north of a quarter of a million dollars. The exact same four years in Germany costs a student almost nothing — tuition is zero. Same diploma, wildly different price tag. Today we rank what a degree actually costs in every country, and why America's is in a league of its own.",
     "props": [
       {
-        "name": "house",
-        "label": "studio vs mansion"
+        "name": "gradcap",
+        "label": "4 years of university"
       },
       {
-        "name": "mappin",
-        "label": "5× price gap by state"
+        "name": "dollar",
+        "label": "US private: ~$240K"
       },
       {
-        "name": "scale",
-        "label": "all 50 ranked"
+        "name": "globe",
+        "label": "Germany: $0"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the gap in one line. The median home in Hawaii runs well over eight hundred thousand dollars. In West Virginia, it's around a hundred and sixty thousand. Same country, same currency, same year — and one state's typical house costs five times another's. Where you live isn't a detail. It's the whole price tag.",
-    "text": "$850K vs $160K",
-    "sub": "median home: priciest state vs cheapest",
-    "icon": "house"
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "And the gap is even crueler at the down payment. Twenty percent down on that Hawaii home is around a hundred seventy thousand dollars — more than the entire price of a house in West Virginia. In one state, your deposit alone could buy a whole home in another, outright, with cash to spare.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "coins",
-        "label": "HI down payment: ~$170K"
-      },
-      {
-        "name": "house",
-        "label": "= a whole WV house"
-      },
-      {
-        "name": "warning",
-        "label": "the deposit gap is brutal"
-      }
-    ]
+    "narration": "Start with the number that breaks people's brains. A four-year bachelor's degree at a private US college now runs well over two hundred forty thousand dollars in tuition. In much of Europe, the same degree costs the student essentially nothing. It may be the widest price gap for one identical product anywhere in the modern economy.",
+    "text": "$240,000",
+    "sub": "4-year US private degree, sticker price",
+    "icon": "dollar"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we rank the states from most to least expensive, show what the same four hundred thousand dollars buys in wildly different places, follow the migration reshaping the whole map, and settle the question everyone's asking: is the twenty twenty-six housing market about to crash, or not? Let's go.",
-    "pose": "explain",
+    "pose": "present",
+    "narration": "So today we rank tuition in every major country from free to brutal, expose exactly why the American price exploded while the rest of the world's didn't, tour the free-college model and its hidden trade-offs, and finally answer the only question that matters: with all that debt, is a degree even worth it anymore? Let's go.",
     "props": [
       {
         "name": "scale",
-        "label": "rank the states"
+        "label": "rank every country"
       },
       {
-        "name": "truck",
-        "label": "the migration"
+        "name": "chartup",
+        "label": "why the US exploded"
       },
       {
-        "name": "warning",
-        "label": "crash or not?"
+        "name": "diploma",
+        "label": "is it worth it?"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "stay in your expensive home state",
-    "memeBottom": "move somewhere you can actually afford",
-    "narration": "Because for millions of Americans, the biggest financial decision of the decade isn't when to buy — it's which state to buy in. Before we rank them, let's agree on how we measure a housing market."
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "pay $38,000 a year for tuition",
+    "memeBottom": "fly to Germany and study for free",
+    "narration": "Because for a growing number of students, the smartest financial move isn't picking a major — it's picking a country. Before we rank them, let's agree on what tuition even is."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, how we rank a housing market.",
-    "heading": "The Measure",
-    "kicker": "price and affordability"
+    "narration": "First, the one word that decides everything: tuition.",
+    "heading": "The Sticker Price",
+    "kicker": "what you actually pay"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "We track prices with a house price index, which measures the price changes of residential housing as a percentage change from a start date. But the raw price alone lies. A five-hundred-thousand-dollar home is cheap on a big salary and crushing on a small one. So we pair price with local income to find true affordability.",
-    "sourceId": "wiki-hpi"
+    "sourceId": "wiki-tuition",
+    "narration": "Tuition is simply the fee an institution charges you for instruction. And here's the quiet fact most Americans never hear: across much of the developed world, that fee barely exists. In Scandinavia and continental Europe, there are no or only nominal tuition fees for all forms of education, university included. Free isn't a radical experiment there. It's the default."
   },
   {
-    "id": "s7",
-    "type": "screenshot",
-    "narration": "And the number at the center of it all is the median — the value separating the higher half from the lower half of the data. The median home price is the one right in the middle of a state: half cost more, half cost less. It's the fairest single snapshot of what housing really costs there.",
-    "sourceId": "wiki-median"
-  },
-  {
-    "id": "s8",
-    "type": "title",
-    "narration": "So let's rank them — the priciest states versus the cheapest.",
-    "heading": "The Ranking",
-    "kicker": "most vs least expensive"
-  },
-  {
-    "id": "s9",
-    "type": "stage",
-    "narration": "Here's the split. At the top: Hawaii, California, Massachusetts, and Colorado, where median homes run from six hundred thousand to well past eight. At the bottom: West Virginia, Mississippi, Iowa, and Ohio, where a typical home sits between a hundred and sixty and two hundred thirty thousand. Same dream, wildly different deposit.",
-    "motif": "statepriceladder",
-    "caption": "priciest vs cheapest states, 2026"
-  },
-  {
-    "id": "s10",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Median home price by state ($K)",
-    "unit": "$K",
-    "narration": "Put the extremes on one chart. Hawaii towers near eight hundred fifty thousand, California close behind. The US as a whole sits around four hundred thousand. And West Virginia anchors the bottom near a hundred sixty. The national average is almost meaningless — it's really fifty different housing markets wearing one flag.",
-    "data": [
-      {
-        "label": "W. Virginia",
-        "value": 160
-      },
-      {
-        "label": "US avg",
-        "value": 400
-      },
-      {
-        "label": "California",
-        "value": 780
-      },
-      {
-        "label": "Hawaii",
-        "value": 850
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s42",
-    "type": "callout",
-    "narration": "Don't forget the vast middle. A huge band of states — Texas, Georgia, North Carolina, Tennessee — sit in the three to four hundred thousand range: not dirt cheap, not coastal-crazy. This sweet-spot middle, with jobs and reasonable prices, is exactly where most of the migration is landing.",
-    "text": "~$300-400K",
-    "sub": "the sweet-spot middle: TX, GA, NC, TN",
-    "icon": "house"
-  },
-  {
-    "id": "s11",
+    "id": "s46",
     "type": "character",
-    "narration": "But price alone isn't the full story — a state can be expensive and still livable if incomes are high. California and Hawaii are brutal because prices outrun even their big salaries. Meanwhile some cheaper states are quietly unaffordable too, because local wages are low. Affordability is always price divided by paycheck.",
     "pose": "explain",
+    "narration": "And this split is decades deep. Generations of Europeans went to university without ever seeing a tuition bill, treating higher education like a public road or a library — infrastructure, not a luxury. Americans grew up assuming massive debt is simply the price of admission to the middle class.",
     "props": [
       {
-        "name": "scale",
-        "label": "price ÷ paycheck"
+        "name": "globe",
+        "label": "free for generations"
       },
       {
-        "name": "warning",
-        "label": "high price, high pay can work"
+        "name": "bridge",
+        "label": "education as infrastructure"
       },
       {
-        "name": "chartdown",
-        "label": "cheap + low wages still hurts"
+        "name": "ballchain",
+        "label": "US: debt as normal"
       }
     ]
   },
   {
-    "id": "s43",
+    "id": "s7",
     "type": "character",
-    "narration": "And the sticker price hides a twist: property taxes. Texas has famously affordable homes but some of the highest property tax rates in the country, while a pricier state might tax lightly. Two identical-price homes can cost thousands more per year in one state. Always rank by the total yearly cost, not just the price.",
     "pose": "explain",
+    "narration": "In the United States, college took the opposite path. It became, in practice, a product to be sold — with brochures, amenities, and a price that rises every single year. And almost uniquely, nobody caps that price. A school can charge whatever families, and the loans behind them, are willing to pay.",
     "props": [
       {
-        "name": "receipt",
-        "label": "Texas: cheap homes, high tax"
+        "name": "school",
+        "label": "college as a product"
       },
       {
-        "name": "scale",
-        "label": "rank total yearly cost"
+        "name": "pricetag",
+        "label": "rises every year"
       },
       {
         "name": "warning",
-        "label": "price hides the tax bill"
+        "label": "no price cap"
+      }
+    ]
+  },
+  {
+    "id": "s8",
+    "type": "screenshot",
+    "sourceId": "wiki-ushe",
+    "narration": "That's not an accident — it's by design. The system is deliberately decentralized, and as the encyclopedia puts it, US higher education is loosely regulated by the government. Nearly four thousand degree-granting institutions each set their own prices, with no national ceiling. Loose regulation is exactly how you get a thousand different prices for the same credential."
+  },
+  {
+    "id": "s9",
+    "type": "title",
+    "narration": "So let's line the whole world up, cheapest to most expensive.",
+    "heading": "The Ranking",
+    "kicker": "tuition by country"
+  },
+  {
+    "id": "s10",
+    "type": "stage",
+    "motif": "tuitionbars",
+    "caption": "average annual tuition, by country",
+    "narration": "Here's the planet on one chart. Germany, Norway, and most of the Nordics: zero. France: a few hundred dollars, basically nominal. Canada and Australia sit in the middle, a few thousand a year. England caps its fees around eleven thousand. And then, alone at the top, the United States — where a private college charges nearly forty thousand dollars a year."
+  },
+  {
+    "id": "s11",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Tuition per year by country ($K)",
+    "unit": "$K",
+    "narration": "Put the hard numbers side by side. Germany, zero. France, about one thousand. Canada, around seven. Australia, roughly eight. England, about eleven. And a US private university, near thirty-eight thousand dollars a year. The American bar doesn't just win — it towers over every other country on Earth.",
+    "data": [
+      {
+        "label": "Germany",
+        "value": 0
+      },
+      {
+        "label": "France",
+        "value": 1
+      },
+      {
+        "label": "Canada",
+        "value": 7
+      },
+      {
+        "label": "Australia",
+        "value": 8
+      },
+      {
+        "label": "UK",
+        "value": 11
+      },
+      {
+        "label": "US private",
+        "value": 38
+      }
+    ],
+    "highlight": 5
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And notice the sticker price isn't even the whole bill. In America, tuition is just the headline. Add room, board, fees, books, and living costs and a single year at a private school can clear eighty thousand dollars. The forty-thousand tuition figure is the floor of the American price — not the ceiling.",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "tuition is just the start"
+      },
+      {
+        "name": "house",
+        "label": "+ room, board, fees"
+      },
+      {
+        "name": "warning",
+        "label": "~$80K all-in per year"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "title",
-    "narration": "Which brings us to the most shareable comparison of all.",
-    "heading": "$400K",
-    "kicker": "what it buys where"
+    "type": "character",
+    "pose": "explain",
+    "narration": "Sit with the size of that gap. At the extremes, a single year at a US private school costs more than an entire four-year degree in half of Europe. An American family can pay thirty times what a German family pays — for a credential that, on paper, does the exact same job in the labor market.",
+    "props": [
+      {
+        "name": "dollar",
+        "label": "1 US year > 4 EU years"
+      },
+      {
+        "name": "scale",
+        "label": "up to 30× the price"
+      },
+      {
+        "name": "diploma",
+        "label": "same credential"
+      }
+    ]
   },
   {
     "id": "s13",
-    "type": "stage",
-    "narration": "Take four hundred thousand dollars — roughly the national median — and watch what it buys. In San Francisco, a tiny studio condo, if you're lucky. In Austin, a comfortable starter home. In rural Ohio or Mississippi, a sprawling house with acreage to spare. The same check, a closet in one place and a palace in another.",
-    "motif": "whatfourhundredkbuys",
-    "caption": "$400K: a studio or a mansion, depending on the state"
-  },
-  {
-    "id": "s44",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "grind for a raise to afford your city",
-    "memeBottom": "keep the salary, move to a cheaper state",
-    "narration": "This is the geographic-arbitrage brain. Instead of fighting for a raise to survive an expensive state, you keep the income and change the state. In a remote-work world, it's the closest thing to a cheat code American housing offers."
+    "type": "callout",
+    "narration": "There's the headline ratio. Per year, a US private degree can cost around thirty times what a student pays in tuition-free Germany. Nowhere else in modern life does the identical product carry a thirty-fold price difference depending purely on which border you were born behind.",
+    "text": "30×",
+    "sub": "US private tuition vs Germany, per year",
+    "icon": "percent"
   },
   {
     "id": "s14",
-    "type": "character",
-    "narration": "This single fact is the most powerful lever in American personal finance that almost nobody pulls. Your home is likely your biggest expense, and its price is set almost entirely by geography. Move two states over, and you can cut your housing cost in half overnight — without earning a dollar more, especially if you work remotely.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "geography sets the price"
-      },
-      {
-        "name": "chartdown",
-        "label": "move = housing cost halved"
-      },
-      {
-        "name": "smiley",
-        "label": "no raise required"
-      }
-    ]
+    "type": "compare",
+    "narration": "Zoom out to the full four years and it's even starker. In Germany, the all-in tuition bill for a bachelor's degree rounds to zero. At a private US university, that same four years can clear a quarter of a million dollars in tuition alone. One student walks out owing nothing. The other walks out owing a house.",
+    "left": {
+      "title": "Germany, 4-year tuition",
+      "value": "~$0",
+      "icon": "globe"
+    },
+    "right": {
+      "title": "US private, 4-year tuition",
+      "value": "~$240K",
+      "icon": "dollar"
+    }
   },
   {
     "id": "s15",
     "type": "title",
-    "narration": "And that's exactly what millions of Americans are now doing.",
-    "heading": "The Migration",
-    "kicker": "chasing affordability"
+    "narration": "Which raises the obvious question: why is America so expensive?",
+    "heading": "Why America Costs More",
+    "kicker": "four forces"
   },
   {
     "id": "s16",
     "type": "stage",
-    "narration": "There's a great migration underway. People are leaving expensive, high-tax states like California, New York, and Illinois, and pouring into cheaper, fast-building Sun Belt states — Texas, Florida, the Carolinas, Arizona. They're chasing lower prices and more space, and in doing so, they're redrawing America's economic map in real time.",
-    "motif": "sunbeltmigration",
-    "caption": "out of the coasts, into the Sun Belt"
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "narration": "The scale of the move is historic. California and New York have each lost hundreds of thousands of net residents in recent years, while Texas and Florida gained comparable numbers. Entire moving-truck companies ran out of one-way trucks leaving California. People are voting on housing prices with their feet.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "truck",
-        "label": "CA/NY: huge net losses"
-      },
-      {
-        "name": "mappin",
-        "label": "TX/FL: huge gains"
-      },
-      {
-        "name": "chartup",
-        "label": "voting with their feet"
-      }
-    ]
+    "motif": "whyustuition",
+    "caption": "the four engines of runaway tuition",
+    "narration": "Four forces drive it. First, no price caps — schools charge whatever they like. Second, easy loans, which quietly let colleges raise prices knowing students can borrow more. Third, administrative bloat: campuses now hire more administrators than teaching staff. And fourth, college sold as a product — luxury dorms, climbing walls, all baked into your tuition."
   },
   {
     "id": "s17",
+    "type": "stage",
+    "motif": "tuitioninflationcurve",
+    "caption": "US tuition vs everything else since 1980",
+    "narration": "And this is what those forces did over forty years. Since nineteen eighty, the general price of everything roughly tripled. US college tuition rose by well over a thousand percent — outpacing normal inflation by about three to one, year after year, decade after decade. No other consumer price in America ran this hot for this long."
+  },
+  {
+    "id": "s49",
     "type": "character",
-    "narration": "But there's a twist, and it's important. All that demand flooding into the Sun Belt has driven prices there up fast. Cities like Austin, Phoenix, and Tampa, once famous bargains, have surged. The migrants are slowly exporting the very price problem they fled — proof that no place stays cheap once everyone rushes in.",
     "pose": "explain",
+    "narration": "And the cruelest part of that curve is who it hit. For older generations, a summer job could genuinely cover a year of tuition. Today, that same year can cost more than many workers earn in an entire year. College went from a cheap ticket to the middle class to one of the largest debts a young person will ever take on.",
     "props": [
       {
+        "name": "calendar",
+        "label": "once: a summer job"
+      },
+      {
         "name": "chartup",
-        "label": "Sun Belt prices surged"
+        "label": "now: a year's salary"
       },
       {
-        "name": "warning",
-        "label": "the bargain fades"
-      },
-      {
-        "name": "mappin",
-        "label": "they export the problem"
+        "name": "ballchain",
+        "label": "a lifelong debt"
       }
     ]
   },
   {
     "id": "s18",
     "type": "screenshot",
-    "narration": "And the Sun Belt's secret weapon is building. Real estate economics — the application of economic techniques to real estate markets — is blunt about it: states that build lots of homes keep prices tamer, even with booming demand. Texas and Florida build aggressively, which is why they've absorbed millions of people without California-level prices.",
-    "sourceId": "wiki-reecon"
-  },
-  {
-    "id": "s46",
-    "type": "callout",
-    "narration": "The building gap is stark. Fast-growing states like Texas issue several times more home-building permits per person than California does. That single difference — whether a state actually lets homes get built — explains more about its prices than almost anything else you could measure.",
-    "text": "TX builds ~3× CA",
-    "sub": "home permits per person — the real price driver",
-    "icon": "crane"
+    "sourceId": "wiki-loans",
+    "narration": "At the center of it sits the loan machine. By twenty eighteen, seventy percent of higher education graduates had used loans to cover some or all of their expenses. Borrowing isn't the exception in America — it's the norm. And when almost everyone can borrow, schools discover they can raise the price almost without limit."
   },
   {
     "id": "s19",
-    "type": "title",
-    "narration": "Now the question everyone actually clicked for: is 2026 a crash?",
-    "heading": "Crash or Not?",
-    "kicker": "the 2026 debate"
+    "type": "character",
+    "pose": "explain",
+    "narration": "Economists even have a name for this feedback loop. The theory goes that every time the government expands student loans, colleges simply raise tuition to capture the extra money. The aid meant to make college affordable gets quietly swallowed by the price itself — so students borrow more, and end up no better off.",
+    "props": [
+      {
+        "name": "banknote",
+        "label": "more loans available"
+      },
+      {
+        "name": "chartup",
+        "label": "schools raise tuition"
+      },
+      {
+        "name": "warning",
+        "label": "aid gets swallowed"
+      }
+    ]
   },
   {
     "id": "s20",
-    "type": "stage",
-    "narration": "There are two camps, and both have real evidence. The crash camp points to prices stretched far above incomes, high mortgage rates strangling demand, and affordability at record lows. The no-crash camp points to a chronic shortage of homes and millions of owners locked into cheap old mortgages, refusing to sell. It's a genuine standoff.",
-    "motif": "crashornocrash",
-    "caption": "stretched prices vs a chronic shortage"
+    "type": "character",
+    "pose": "explain",
+    "narration": "Then there's the arms race almost nobody mentions: bureaucracy. Over recent decades the number of college administrators ballooned far faster than the number of professors. Someone has to pay those salaries, those glossy buildings, those marketing budgets — and that someone is you, through a tuition line that never stops climbing.",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "administrators ballooned"
+      },
+      {
+        "name": "paystub",
+        "label": "their salaries, your bill"
+      },
+      {
+        "name": "pricetag",
+        "label": "tuition climbs"
+      }
+    ]
   },
   {
     "id": "s21",
-    "type": "character",
-    "narration": "Here's the key insight that breaks the tie. A crash needs forced sellers — people who must sell into a falling market, like in two thousand eight. But today, most homeowners are locked into ultra-low pandemic-era mortgage rates. They simply won't sell and give that up. No flood of desperate sellers, no classic crash.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "owners locked to low rates"
-      },
-      {
-        "name": "warning",
-        "label": "no forced sellers"
-      },
-      {
-        "name": "house",
-        "label": "no flood = no crash"
-      }
-    ]
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "This creates something called the lock-in effect, and it's freezing the whole market. Owners with a three-percent mortgage won't sell to take on a seven-percent one, so almost nobody lists. Fewer homes for sale means prices stay propped up even as sales volume collapses. It's a market that's expensive and frozen at the same time.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "the 'lock-in effect'"
-      },
-      {
-        "name": "warning",
-        "label": "nobody lists their home"
-      },
-      {
-        "name": "house",
-        "label": "expensive AND frozen"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "go $100,000 into debt",
+    "memeBottom": "learn German and pay nothing",
+    "narration": "This is the real dilemma facing a smart eighteen-year-old today. One button is six figures of debt for a domestic degree. The other is a passport and a free one abroad. More and more students are starting to eye that second button — and the free-college countries know it."
   },
   {
     "id": "s22",
-    "type": "screenshot",
-    "narration": "That's the crucial difference from the United States housing bubble of the two-thousands, when US housing prices experienced a sharp run up and subsequent collapse. That crash was fueled by reckless lending and buyers who couldn't actually afford their loans. Today's lending is far stricter — so the fragile foundation that shattered then mostly isn't there now.",
-    "sourceId": "wiki-usbubble"
+    "type": "title",
+    "narration": "So how does free college actually work — and what's the catch?",
+    "heading": "The Free Model",
+    "kicker": "who really pays"
   },
   {
     "id": "s23",
-    "type": "character",
-    "narration": "So the most likely twenty twenty-six outcome isn't a dramatic collapse — it's a stall. Prices flatten or dip modestly, especially in the overheated Sun Belt, while the chronic shortage stops them from falling far. Not a crash, but a long, grinding plateau where incomes slowly try to catch up to prices.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "flatten or dip modestly"
-      },
-      {
-        "name": "scale",
-        "label": "shortage stops a big fall"
-      },
-      {
-        "name": "hourglass",
-        "label": "a long grinding plateau"
-      }
-    ]
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "That said, some overheated metros are already quietly correcting. Austin, after doubling in a few years, has fallen meaningfully from its peak. Boise, Phoenix, and parts of Florida have softened too. So the honest answer on a crash is local: no national collapse, but real, sharp dips in the places that flew highest.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "Austin down from peak"
-      },
-      {
-        "name": "mappin",
-        "label": "Boise, Phoenix soft too"
-      },
-      {
-        "name": "scale",
-        "label": "the crash is local"
-      }
-    ]
+    "type": "stage",
+    "motif": "freecollegemodel",
+    "caption": "how 'free' college is actually funded",
+    "narration": "Free college isn't magic — it's a transfer. Taxpayers fund it through higher taxes, the government pays the universities, and students walk in owing zero tuition. The cost doesn't vanish; it moves. Instead of landing on one eighteen-year-old as crushing personal debt, it's spread thinly across every worker in the country."
   },
   {
     "id": "s24",
-    "type": "title",
-    "narration": "But some regional markets are genuinely more at risk than others.",
-    "heading": "The Risk Map",
-    "kicker": "where prices could fall"
+    "type": "screenshot",
+    "sourceId": "wiki-free",
+    "narration": "That's the textbook definition. Free education is education funded through government spending or charitable organizations rather than tuition funding. The word free is doing a lot of lifting — it means free at the point of use. Society still pays in full. It just chooses to pay collectively, upfront, through the tax system."
   },
   {
     "id": "s25",
     "type": "character",
-    "narration": "The most vulnerable spots are the ones that boomed hardest and built the most — pockets of Texas, Florida, and the mountain west — where a wave of new supply is finally arriving just as migration cools. That's exactly where you could see real price drops. Ironically, the places that built the most are now the likeliest to dip.",
     "pose": "explain",
+    "narration": "And that model comes with real trade-offs. Taxes are higher — noticeably higher — across the free-college countries. Universities are often more selective, with fewer seats, so entry can be fiercely competitive. And budgets are political, meaning the funding can be squeezed when governments tighten their belts. Free, but not frictionless.",
     "props": [
-      {
-        "name": "crane",
-        "label": "boom-and-build metros"
-      },
-      {
-        "name": "chartdown",
-        "label": "new supply + cooling demand"
-      },
-      {
-        "name": "warning",
-        "label": "likeliest real dips"
-      }
-    ]
-  },
-  {
-    "id": "s26",
-    "type": "character",
-    "narration": "Meanwhile, supply-starved markets — much of the Northeast, the West Coast, and the Midwest's job centers — are likely to stay stubbornly expensive. They never built enough, so even weak demand keeps prices high. The crash you're hoping for is least likely exactly where homes cost the most.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "skyline",
-        "label": "supply-starved metros"
-      },
-      {
-        "name": "chartup",
-        "label": "stay stubbornly pricey"
-      },
-      {
-        "name": "warning",
-        "label": "no crash where it's priciest"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "narration": "And watch a brutal hidden cost: insurance. In Florida and California, soaring home-insurance premiums — driven by hurricanes and wildfires — are quietly adding hundreds a month to ownership, and in some zones insurers are leaving entirely. A cheap-looking home in a disaster zone can become impossible to insure, or afford.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "warning",
-        "label": "FL/CA insurance soaring"
-      },
-      {
-        "name": "shield",
-        "label": "insurers leaving zones"
-      },
       {
         "name": "receipt",
-        "label": "a huge hidden cost"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "title",
-    "narration": "So what should you actually do with all this?",
-    "heading": "What To Do",
-    "kicker": "buyer, owner, mover"
-  },
-  {
-    "id": "s28",
-    "type": "character",
-    "narration": "If you're a buyer, stop waiting for a crash that probably isn't coming — but do buy where the math works. Run the price-to-income number for any state you're eyeing. And never stretch into a payment that assumes prices will keep rising. Buy the home, not the bet.",
-    "pose": "present",
-    "props": [
+        "label": "higher taxes"
+      },
       {
-        "name": "scale",
-        "label": "run price-to-income"
+        "name": "barrier",
+        "label": "fewer, pickier slots"
       },
       {
         "name": "warning",
-        "label": "don't wait for a crash"
-      },
-      {
-        "name": "house",
-        "label": "buy the home, not the bet"
-      }
-    ]
-  },
-  {
-    "id": "s29",
-    "type": "character",
-    "narration": "If you're flexible — especially remote — treat your state as a financial choice. Earning a coastal salary while paying Midwestern or Southern prices is the single fastest way to build wealth in America right now. The gap between what you earn and what your housing costs is pure, compounding freedom.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "pick your state deliberately"
-      },
-      {
-        "name": "moneybag",
-        "label": "coastal pay, cheap rent"
-      },
-      {
-        "name": "chartup",
-        "label": "the gap compounds"
+        "label": "budget-dependent"
       }
     ]
   },
   {
     "id": "s50",
     "type": "character",
-    "narration": "Before you pack the truck, weigh the whole move, not just the home price. Some cheap-home states have high income or sales taxes; some have tougher job markets or real climate risk. The smartest movers compare total cost of living and career options — not just the number on the listing.",
-    "pose": "present",
+    "pose": "explain",
+    "narration": "And the free model isn't limited to Europe. Public universities across Latin America charge little or nothing. Many Asian systems heavily subsidize tuition. Scotland is free for its own students while England charges. Over and over, the same pattern: the United States isn't the global norm for expensive college — it's the global outlier.",
     "props": [
       {
-        "name": "scale",
-        "label": "weigh the whole move"
+        "name": "globe",
+        "label": "free across many regions"
       },
       {
-        "name": "receipt",
-        "label": "state taxes, job market"
+        "name": "mappin",
+        "label": "Scotland free, England not"
       },
       {
         "name": "warning",
-        "label": "not just the sticker"
+        "label": "the US is the outlier"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "character",
+    "pose": "explain",
+    "narration": "So which is fairer? The American system says the person who benefits should pay — you get the degree, you carry the cost. The European system says an educated population benefits everyone, so everyone chips in. Neither is free. One bills the individual; the other bills the nation. That single philosophical choice explains almost the entire price gap.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "user pays vs all pay"
+      },
+      {
+        "name": "crowd",
+        "label": "who benefits?"
+      },
+      {
+        "name": "globe",
+        "label": "a national choice"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "title",
+    "narration": "Now follow the money all the way to graduation day.",
+    "heading": "The Debt",
+    "kicker": "what grads owe"
+  },
+  {
+    "id": "s28",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Average debt per graduate ($K)",
+    "unit": "$K",
+    "narration": "Here's what the average graduate actually owes, by country. Germany and France: a couple thousand, basically a rounding error. Canada and Australia: in the twenties. The United States: around thirty-eight thousand. And the shock at the top — England, near sixty thousand, the highest paper debt in the world. But that English number hides a twist.",
+    "data": [
+      {
+        "label": "Germany",
+        "value": 2
+      },
+      {
+        "label": "France",
+        "value": 3
+      },
+      {
+        "label": "Canada",
+        "value": 20
+      },
+      {
+        "label": "Australia",
+        "value": 24
+      },
+      {
+        "label": "US",
+        "value": 38
+      },
+      {
+        "label": "UK",
+        "value": 57
+      }
+    ],
+    "highlight": 5
+  },
+  {
+    "id": "s29",
+    "type": "character",
+    "pose": "explain",
+    "narration": "The twist is how the debt behaves. England's loans are income-contingent: you repay a small slice of income above a threshold, and whatever's left is wiped after thirty years. Australia runs the same gentle system. American debt is the opposite — it accrues interest relentlessly, and it's brutally hard to erase, even in bankruptcy.",
+    "props": [
+      {
+        "name": "shield",
+        "label": "UK/AU: income-contingent"
+      },
+      {
+        "name": "ballchain",
+        "label": "US: relentless interest"
+      },
+      {
+        "name": "warning",
+        "label": "hard to ever erase"
       }
     ]
   },
   {
     "id": "s30",
-    "type": "character",
-    "narration": "And whatever you do, know your local affordability rule: housing — rent or mortgage, plus taxes and insurance — ideally under about thirty percent of your income. The further above that line a state pushes you, the more of your life it quietly eats. That one ratio is the clearest verdict on any housing market.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "percent",
-        "label": "keep housing under ~30%"
-      },
-      {
-        "name": "gauge",
-        "label": "the clearest verdict"
-      },
-      {
-        "name": "warning",
-        "label": "above it = life eaten"
-      }
-    ]
+    "type": "callout",
+    "narration": "And the American pile is staggering in aggregate. Collectively, US borrowers now owe over one point seven trillion dollars in student debt — more than the entire country owes on credit cards or car loans. It's a debt the size of a major economy, carried on the backs of people who just wanted an education.",
+    "text": "$1.7T",
+    "sub": "total US student debt — more than all credit cards",
+    "icon": "debtclock"
   },
   {
     "id": "s51",
-    "type": "callout",
-    "narration": "Put it in income terms. To comfortably buy a median home, you'd need roughly thirty thousand a year in the cheapest states — and north of two hundred thousand in Hawaii or coastal California. The salary required to own a normal home is itself one of the widest gaps between states in the country.",
-    "text": "$30K vs $200K+",
-    "sub": "income needed to buy a median home, by state",
-    "icon": "calculator"
+    "type": "character",
+    "pose": "explain",
+    "narration": "And that mountain of debt reshapes a whole economy. Buried under loans, young Americans delay buying homes, starting families, and launching businesses. A system meant to build the middle class now quietly postpones the very milestones that define it.",
+    "props": [
+      {
+        "name": "house",
+        "label": "homes delayed"
+      },
+      {
+        "name": "baby",
+        "label": "families delayed"
+      },
+      {
+        "name": "hourglass",
+        "label": "milestones postponed"
+      }
+    ]
   },
   {
     "id": "s31",
-    "type": "screenshot",
-    "narration": "Because the real goal is affordable housing — housing deemed affordable to those with a household income at or below the median. In 2026, whether you reach it depends less on timing the market, and far more on simply choosing a state where the median home still fits a median income.",
-    "sourceId": "wiki-affordhousing"
+    "type": "image",
+    "src": "img/memes/thisisfine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "$38,000 in loans, $44,000 starting salary",
+    "memeBottom": "this is fine",
+    "narration": "For millions of American grads, this is the morning after the ceremony: a five-figure balance, interest already ticking, and a first paycheck that barely covers rent and the minimum payment. Which forces the hardest question of all — after all of that, is the degree even worth it?"
   },
   {
     "id": "s32",
-    "type": "character",
-    "narration": "Because the real lesson of the 2026 map is this: there is no single American housing market. There are fifty of them, running at completely different speeds and prices. The crash question is the wrong one. The right question is simpler — which state's price tag actually fits your life?",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "50 markets, not one"
-      },
-      {
-        "name": "scale",
-        "label": "crash is the wrong question"
-      },
-      {
-        "name": "house",
-        "label": "which price fits your life?"
-      }
-    ]
+    "type": "title",
+    "narration": "Time for the uncomfortable cost-benefit math.",
+    "heading": "Is It Worth It?",
+    "kicker": "the degree premium"
   },
   {
     "id": "s33",
-    "type": "character",
-    "narration": "So before you obsess over whether prices will drop five percent next year, zoom out and ask whether you're even in the right state. A different zip code can change your housing cost more than a decade of market swings ever will. Geography is the lever almost nobody pulls — and it's the biggest one you've got.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "right state > market timing"
-      },
-      {
-        "name": "chartup",
-        "label": "geography is the big lever"
-      },
-      {
-        "name": "smiley",
-        "label": "pull it"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "And don't overlook help. Many states run first-time-buyer programs with down-payment assistance, and government-backed loans can let you buy with as little as three to three-and-a-half percent down. In an expensive state, these can be the difference between buying now and waiting another decade. Check your state's programs before you give up.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "handshake",
-        "label": "first-time-buyer programs"
-      },
-      {
-        "name": "coins",
-        "label": "as little as 3% down"
-      },
-      {
-        "name": "smiley",
-        "label": "check before giving up"
-      }
-    ]
+    "type": "stage",
+    "motif": "collegeroi",
+    "caption": "the college wage premium — if the debt stays sane",
+    "narration": "Start with the good news, because it's real. On average, a bachelor's degree still pays. US workers with no degree earn around forty-four thousand a year; those with a bachelor's, closer to seventy. Over a full career, that gap compounds into a serious lead. Education economics has studied this relationship for decades."
   },
   {
     "id": "s34",
-    "type": "character",
-    "narration": "If you're staying put in an expensive state, play defense: lock a fixed-rate mortgage, avoid stretching, and remember your home is shelter first and an investment second. If you're free to move, the whole country is on sale somewhere — you just have to be willing to look past the coasts.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "padlock",
-        "label": "staying: lock a fixed rate"
-      },
-      {
-        "name": "truck",
-        "label": "moving: the country's on sale"
-      },
-      {
-        "name": "house",
-        "label": "shelter first, bet second"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-edecon",
+    "narration": "That's exactly what this field exists to measure. Education economics studies the demand for education, its financing, and crucially, the comparative efficiency of various educational programs. Translation: not every degree pays off equally. The return depends enormously on what you study — and on how much you paid to study it."
   },
   {
     "id": "s35",
-    "type": "character",
-    "narration": "So watch the ranking, not the rumors. Median price, local income, and how much a state is building — those three numbers tell you everything about where a housing market is headed. Chase affordability, respect the shortage, and stop waiting for a crash that the math says probably won't come.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "scale",
-        "label": "price, income, building"
-      },
-      {
-        "name": "crane",
-        "label": "respect the shortage"
-      },
-      {
-        "name": "warning",
-        "label": "stop waiting for a crash"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "One last rule: judge a home by its total monthly cost, not its price. Mortgage, property tax, insurance, any HOA fees, and utilities — all of it. A cheaper house with high taxes and sky-high insurance can cost more each month than a pricier one somewhere sane. The listing price is the start of the math, never the end.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "total monthly, not price"
-      },
-      {
-        "name": "receipt",
-        "label": "tax + insurance + HOA"
-      },
-      {
-        "name": "scale",
-        "label": "price is just the start"
-      }
-    ]
+    "type": "callout",
+    "narration": "Averaged across a lifetime, a US bachelor's degree is associated with roughly one point two million dollars in extra earnings compared to a high-school diploma. That's a genuinely huge number — the single best argument for going to college. But an average hides winners and losers, and the losers are getting more common.",
+    "text": "$1.2M",
+    "sub": "lifetime earnings premium of a US bachelor's degree",
+    "icon": "moneybag"
   },
   {
     "id": "s36",
     "type": "character",
-    "narration": "Because the harshest truth of the 2026 market is that waiting rarely works. Rents rise while you wait, prices mostly grind upward, and the mythical crash keeps not arriving. The people who win are the ones who found a state they could afford and simply started building equity — boring, early, and somewhere sensible.",
     "pose": "explain",
+    "narration": "Because that premium isn't evenly shared. An engineering or nursing degree can pay for itself in a few years. A degree in a low-wage field, bought at a private school for two hundred grand, might never break even. The equation is simple and ruthless: your return is the salary your field commands, minus the price you paid to enter it.",
     "props": [
       {
-        "name": "hourglass",
-        "label": "waiting rarely wins"
-      },
-      {
         "name": "chartup",
-        "label": "start building equity"
+        "label": "engineering: pays fast"
       },
       {
-        "name": "mappin",
-        "label": "somewhere affordable"
+        "name": "chartdown",
+        "label": "low-wage field: may not"
+      },
+      {
+        "name": "scale",
+        "label": "salary minus price"
       }
     ]
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "The American dream of owning a home isn't dead. It just quietly moved — out of the famous, photogenic, unaffordable coasts, and into the affordable, fast-building middle. In 2026, the dream is alive and well. It simply has a different zip code than it used to.",
     "pose": "explain",
+    "narration": "And this is precisely why the price gap matters so much. A German engineer and an American engineer might earn similar salaries — but the German started that career with zero debt, while the American started thirty or forty thousand in the hole. Same degree, same job, but one of them spent a decade just climbing back to zero.",
     "props": [
       {
-        "name": "house",
-        "label": "the dream isn't dead"
+        "name": "handshake",
+        "label": "similar salaries"
       },
       {
-        "name": "mappin",
-        "label": "it moved zip codes"
+        "name": "ballchain",
+        "label": "US starts in the hole"
       },
       {
-        "name": "smiley",
-        "label": "alive in the middle"
+        "name": "hourglass",
+        "label": "a decade to break even"
       }
     ]
   },
   {
     "id": "s38",
-    "type": "character",
-    "narration": "So find your state, run the three numbers, and buy a life you can actually afford — not the one a listing photo is trying to sell you. The map is the strategy.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "find your state"
-      },
-      {
-        "name": "calculator",
-        "label": "run the three numbers"
-      },
-      {
-        "name": "house",
-        "label": "the map is the strategy"
-      }
-    ]
+    "type": "title",
+    "narration": "So what should you actually do with all this?",
+    "heading": "What To Do",
+    "kicker": "smarter than the sticker"
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "If this ranked the housing market in a way that finally made sense, hit subscribe — and tell me which price tag you want me to break down next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "pose": "present",
+    "narration": "If you're an American, the single biggest lever is where you enroll. An in-state public university often costs a third of a private one for a nearly identical education. Starting at a community college and transferring can halve the bill again. The name on the diploma matters far less than the debt behind it.",
     "props": [
       {
-        "name": "house",
-        "label": "which price tag next?"
+        "name": "school",
+        "label": "in-state public = 1/3 price"
+      },
+      {
+        "name": "books",
+        "label": "community college transfer"
+      },
+      {
+        "name": "scissors",
+        "label": "cut the debt, not the degree"
       }
     ]
   },
   {
     "id": "s40",
     "type": "character",
-    "narration": "I do the reading. You get the parts that matter.",
+    "pose": "present",
+    "narration": "Here's the option almost no one considers: leave. Germany, Norway, and a growing list of countries offer free or near-free degrees — many taught entirely in English, open to international students. For the price of one year at a US private school, you could fund an entire degree abroad, passport stamps included.",
+    "props": [
+      {
+        "name": "luggage",
+        "label": "study abroad"
+      },
+      {
+        "name": "globe",
+        "label": "free, taught in English"
+      },
+      {
+        "name": "gradcap",
+        "label": "1 US year = a full degree"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "pose": "present",
+    "narration": "And hunt relentlessly for free money before you borrow a cent. Scholarships, grants, and employer tuition programs are left unclaimed every single year because nobody applied. Every dollar of aid you win is a dollar you never have to repay with interest. Treat chasing it like a part-time job — because financially, it pays like one.",
+    "props": [
+      {
+        "name": "trophy",
+        "label": "scholarships & grants"
+      },
+      {
+        "name": "handshake",
+        "label": "employer tuition aid"
+      },
+      {
+        "name": "moneybag",
+        "label": "free beats borrowed"
+      }
+    ]
+  },
+  {
+    "id": "s41",
+    "type": "character",
+    "pose": "present",
+    "narration": "And whatever you choose, obey one rule: never borrow more than you expect to earn in your first year out. Owe forty thousand, aim for a field that starts around forty. Cross that line and the debt stops being an investment and becomes an anchor. Run the number before you sign, not after.",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "borrow < first-year salary"
+      },
+      {
+        "name": "warning",
+        "label": "cross it = an anchor"
+      },
+      {
+        "name": "paystub",
+        "label": "run it before you sign"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson of the whole global map. The degree itself isn't the scam — education genuinely pays. The scam is the price. The rest of the developed world proved you can educate a population without burying it in debt. America chose a different path, and an entire generation is paying the interest.",
+    "props": [
+      {
+        "name": "diploma",
+        "label": "the degree isn't the scam"
+      },
+      {
+        "name": "pricetag",
+        "label": "the price is"
+      },
+      {
+        "name": "globe",
+        "label": "the world chose differently"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "pose": "explain",
+    "narration": "So before you sign away your twenties, zoom out and ask the question the sticker price hopes you won't: not just which school, but which system, which country, which field. In a world where the exact same degree ranges from totally free to a quarter-million dollars, where you choose to study is the biggest financial decision you'll make before thirty.",
+    "props": [
+      {
+        "name": "globe",
+        "label": "which country?"
+      },
+      {
+        "name": "scale",
+        "label": "free to $240K"
+      },
+      {
+        "name": "gradcap",
+        "label": "biggest call before 30"
+      }
+    ]
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And watch where the world is drifting. As American tuition climbs and free-college countries open their doors to foreign students, the smartest young people are quietly voting with their feet. In the end, a country that prices education like a luxury may slowly export its own future.",
+    "props": [
+      {
+        "name": "luggage",
+        "label": "students voting with feet"
+      },
+      {
+        "name": "globe",
+        "label": "studying where it's cheap"
+      },
+      {
+        "name": "warning",
+        "label": "exporting the future"
+      }
+    ]
+  },
+  {
+    "id": "s44",
+    "type": "character",
     "pose": "celebrate",
     "expression": "happy",
+    "narration": "If this finally made the true cost of a degree make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+    "props": [
+      {
+        "name": "diploma",
+        "label": "which price tag next?"
+      }
+    ]
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "pose": "celebrate",
+    "expression": "happy",
+    "narration": "I do the reading. You get the parts that matter.",
     "props": [
       {
         "name": "newspaper",
