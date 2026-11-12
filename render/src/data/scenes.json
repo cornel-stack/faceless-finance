@@ -3,135 +3,89 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "Since the year two thousand, a flat-screen TV got about ninety-five percent cheaper — while a year of college got nearly two hundred percent more expensive. We blame inflation for everything, but here's the secret: not everything inflated. Some things quietly collapsed in price while others exploded. Today we rank what got wildly more expensive, what got cheaper, and the single rule that explains the whole bizarre split.",
+    "narration": "Just existing for one week — a tank of gas, a cart of groceries, and seven nights under a roof — costs more than twice as much in Hawaii as it does in Mississippi. Same tank, same food, same roof. Today we rank the true weekly price of a normal life across all fifty states, and expose what's really driving the gap.",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "TVs: −95%"
+        "name": "gaspump",
+        "label": "gas + groceries + rent"
       },
       {
-        "name": "gradcap",
-        "label": "college: +200%"
+        "name": "basket",
+        "label": "2× HI vs MS"
       },
       {
         "name": "scale",
-        "label": "ranked by category"
+        "label": "all 50 states ranked"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the contrast that breaks the inflation story. The price of a college education has risen roughly two hundred percent this century. Over the same years, televisions, toys, and gadgets fell so far they're almost free. Same economy, same decades — and prices sprinting in opposite directions depending entirely on what you were buying.",
-    "text": "+200%",
-    "sub": "college since 2000 — while TVs fell ~95%",
-    "icon": "gradcap"
+    "narration": "Here's the number nobody adds up. In the priciest states, the bare weekly cost of gas, groceries, and your share of rent runs close to nine hundred dollars — before you've done anything fun. In the cheapest, it's under four hundred. That's the invisible meter running on your life, and it reads wildly differently depending on your zip code.",
+    "text": "$880 vs $390",
+    "sub": "weekly gas + groceries + rent: priciest vs cheapest state",
+    "icon": "basket"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we unpack the most important economic chart you've never seen. We'll rank the categories that exploded, the ones that cratered, reveal the one rule that explains which is which, expose the subsidy trap behind the risers, and show how to budget and invest around it. Because once you see the pattern, you can never unsee why everything feels so expensive.",
+    "narration": "So today we add up the weekly running cost of simply being alive in America. We'll rank the states, break down what drives the gap between them, reveal how it looks against local wages, and pinpoint the cheapest and most expensive places to cover the basics. Because it's not the big purchases that quietly drain you — it's the weekly ones, repeated fifty-two times a year.",
     "props": [
       {
-        "name": "chartup",
-        "label": "rank risers & fallers"
+        "name": "scale",
+        "label": "rank the states"
       },
       {
-        "name": "brain",
-        "label": "the one rule"
+        "name": "receipt",
+        "label": "what drives the gap"
       },
       {
-        "name": "moneybag",
-        "label": "what to do"
+        "name": "calendar",
+        "label": "×52 a year"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "everything is getting more expensive",
-    "memeBottom": "the things made of human time are — gadgets got cheaper",
-    "narration": "This is the upgrade your brain needs. 'Everything costs more' is the beginner take. The truth is far stranger and far more useful. Before we rank anything, let's agree on how prices are even measured."
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "chase a higher salary",
+    "memeBottom": "move where a week of life costs half as much",
+    "narration": "Because a raise you hand straight back to higher gas, pricier groceries, and steeper rent isn't a raise at all. Before we rank the states, let's agree on what goes in the weekly basket."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, how we measure the price of everything.",
-    "heading": "The Great Divergence",
-    "kicker": "how prices are tracked"
+    "narration": "First, what a week of ordinary life actually includes.",
+    "heading": "The Weekly Basket",
+    "kicker": "gas, groceries, rent"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-cpi",
-    "narration": "We track prices with the consumer price index — calculated as the weighted average price of a market basket of consumer goods and services. It bundles everything a typical household buys into one number. The problem is that a single average quietly hides a violent split, because the items inside that basket are moving in completely opposite directions."
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the basket itself is a quiet battleground. Which items go in, and how they're weighted, changes the headline inflation number governments report. Critics argue the official basket understates the true squeeze, because it leans on the things that got cheaper and underweights the essentials that exploded. The number you're told rarely matches the number you feel.",
-    "props": [
-      {
-        "name": "basket",
-        "label": "what goes in the basket"
-      },
-      {
-        "name": "scale",
-        "label": "weighting changes the number"
-      },
-      {
-        "name": "warning",
-        "label": "reported ≠ felt"
-      }
-    ]
-  },
-  {
-    "id": "s7",
-    "type": "screenshot",
-    "sourceId": "wiki-inflation",
-    "narration": "And inflation itself is just an increase in the average price of goods and services in terms of money. The word average is doing enormous, misleading work. The overall rate might read a tame two or three percent a year, while underneath it one category doubles and another gets cut in half. The headline number is a blur hiding a battle."
+    "sourceId": "wiki-food",
+    "narration": "Start with food. Food prices track the average price level for food across a region, and they swing a lot by state — driven by distance from farms, local taxes, and shipping. An identical cart of groceries can cost thirty or forty percent more in one state than another, and you refill that cart every single week."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And this is why two people can argue about inflation and both be right. The person who just bought a laptop and a new wardrobe feels like prices are falling. The person paying tuition, rent, and a hospital bill feels robbed. They're living in the same economy, shopping in different halves of the same basket. The average they share describes neither of them.",
+    "narration": "And groceries sneak up on people because the price is invisible until checkout. A few extra dollars on milk, eggs, bread, and meat feels like nothing in the moment. But a family refills that cart week after week, so a thirty-percent grocery gap between states quietly becomes thousands of dollars a year — paid in small, forgettable increments.",
     "props": [
       {
-        "name": "laptop",
-        "label": "gadget-buyer feels fine"
+        "name": "basket",
+        "label": "invisible until checkout"
       },
       {
-        "name": "hospital",
-        "label": "bill-payer feels robbed"
-      },
-      {
-        "name": "scale",
-        "label": "same basket, two halves"
-      }
-    ]
-  },
-  {
-    "id": "s8",
-    "type": "character",
-    "pose": "explain",
-    "narration": "So the real story isn't the average — it's the spread. Some prices rocketed up far faster than inflation, while others fell for decades straight. When you pull them apart and line them up, a startlingly clean pattern appears. And that pattern explains why your paycheck feels squeezed even when inflation looks low.",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "some rocketed up"
-      },
-      {
-        "name": "chartdown",
-        "label": "some fell for decades"
+        "name": "calendar",
+        "label": "refilled every week"
       },
       {
         "name": "warning",
-        "label": "the average hides it"
+        "label": "thousands a year"
       }
     ]
   },
@@ -139,422 +93,273 @@
     "id": "s52",
     "type": "character",
     "pose": "explain",
-    "narration": "And the spread has a name worth knowing: relative prices. Overall inflation tells you the average is drifting up, but relative prices tell you which things are winning and losing against that average. The entire modern cost-of-living story is really a story about relative prices quietly, permanently diverging.",
+    "narration": "And food is the weekly cost you can't pause. You can delay a trip or skip a purchase, but everyone eats every week, at whatever the local store charges. That makes groceries the most relentless line in the basket — small per trip, unavoidable, and quietly different in every state you might call home.",
     "props": [
       {
-        "name": "chartup",
-        "label": "relative prices"
+        "name": "basket",
+        "label": "you can't pause eating"
       },
       {
-        "name": "chartdown",
-        "label": "winners and losers"
+        "name": "calendar",
+        "label": "every week, no exceptions"
       },
       {
         "name": "scale",
-        "label": "the real story"
+        "label": "different in every state"
       }
     ]
+  },
+  {
+    "id": "s7",
+    "type": "screenshot",
+    "sourceId": "wiki-gas",
+    "narration": "Then gas. The price paid by consumers largely reflects pricing policy — and in the US, that means state taxes and rules. Two drivers filling identical tanks can pay dollars apart per gallon depending only on which state line they're on. Multiply that by a weekly commute, and the gap compounds fast."
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And gas quietly shapes more than your tank — it taxes your whole week. In sprawling, car-dependent states, a long daily commute multiplies every cent of that gas-price gap. Two workers with identical cars can spend hundreds of dollars a year apart, just because one lives where the pump, and the drive, cost more.",
+    "props": [
+      {
+        "name": "gaspump",
+        "label": "gas taxes the whole week"
+      },
+      {
+        "name": "car",
+        "label": "long commutes multiply it"
+      },
+      {
+        "name": "warning",
+        "label": "hundreds a year apart"
+      }
+    ]
+  },
+  {
+    "id": "s8",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the giant in the basket is rent — your weekly share of a roof. Spread a monthly rent across the weeks and it dwarfs gas and groceries combined. So while people obsess over the price of eggs or a gallon of gas, it's the housing slice that truly decides whether a state is cheap or brutal to live in week to week.",
+    "props": [
+      {
+        "name": "house",
+        "label": "rent is the giant"
+      },
+      {
+        "name": "gaspump",
+        "label": "dwarfs gas + food"
+      },
+      {
+        "name": "scale",
+        "label": "housing decides it"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "callout",
+    "narration": "Put rent's dominance in perspective. In most states, your weekly share of rent is bigger than gas and groceries combined — often two or three times over. So while the news obsesses over gas prices, the real driver of whether a state is affordable is sitting quietly in your lease.",
+    "text": "rent > gas + food",
+    "sub": "your weekly rent share dwarfs the rest",
+    "icon": "house"
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "Which brings us to the chart that explains the modern economy.",
-    "heading": "The Chart of the Century",
-    "kicker": "prices, pulled apart"
+    "narration": "So let's add it up and rank every state.",
+    "heading": "The Ranking",
+    "kicker": "a week of life, by state"
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "pricechartofcentury",
-    "caption": "since 2000: some prices soar, some collapse",
-    "narration": "Here it is — sometimes called the chart of the century. Plot the price of everything since two thousand and the lines fan apart dramatically. Shooting upward: hospital care, college, childcare, and housing. Crashing downward: TVs, software, toys, phones, and clothing. One economy, one time period, and a fan of lines heading to opposite corners of the page."
+    "motif": "weeklybasketbars",
+    "caption": "weekly gas + groceries + rent, by state",
+    "narration": "Here's the weekly damage. Hawaii tops the list near nine hundred dollars a week just for the basics — island shipping makes everything dearer. California and New York follow close behind. The affordable middle — Texas, Ohio — sits under five hundred. And states like Mississippi anchor the bottom near three hundred ninety. Same life, more than double the weekly price."
   },
   {
-    "id": "s42",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the fan of lines has been widening for decades without stopping. This isn't a blip from one bad year or one crisis — it's a steady, structural drift that's been running since before most workers today were born. Which means it's not about to reverse on its own. The split is the baseline, not the anomaly.",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "widening for decades"
-      },
-      {
-        "name": "calendar",
-        "label": "structural, not a blip"
-      },
-      {
-        "name": "warning",
-        "label": "won't reverse on its own"
-      }
-    ]
+    "id": "s53",
+    "type": "callout",
+    "narration": "Here's the island penalty in one line. Because nearly everything in Hawaii arrives by ship or plane, groceries, gas, and rent all carry a shipping premium stacked on top. It's the clearest example of a simple rule: the harder it is to get goods to a place, the more a normal week costs to live there.",
+    "text": "+shipping",
+    "sub": "why island and remote states cost the most",
+    "icon": "cargoship"
   },
   {
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Price RISE since 2000 (%)",
-    "unit": "%",
-    "narration": "First, the things that exploded. Hospital services, up well over two hundred percent. College tuition, close behind. Childcare and housing, each up more than a hundred. Even overall prices rose around seventy-five. These are the big, unavoidable pillars of a modern life — and every one of them outran your wages.",
+    "title": "Weekly cost of the basics ($)",
+    "unit": "$",
+    "narration": "Put the numbers side by side. Mississippi around three hundred ninety a week, Ohio four hundred thirty, Texas four seventy, Florida five sixty, California seven eighty, and Hawaii near eight eighty. The gap between the top and bottom is almost five hundred dollars — every single week, for the exact same tank, cart, and roof.",
     "data": [
       {
-        "label": "Overall CPI",
-        "value": 75
+        "label": "Mississippi",
+        "value": 390
       },
       {
-        "label": "Housing",
-        "value": 115
+        "label": "Ohio",
+        "value": 430
       },
       {
-        "label": "Childcare",
-        "value": 130
+        "label": "Texas",
+        "value": 470
       },
       {
-        "label": "College",
-        "value": 180
+        "label": "Florida",
+        "value": 560
       },
       {
-        "label": "Hospital",
-        "value": 220
+        "label": "California",
+        "value": 780
+      },
+      {
+        "label": "Hawaii",
+        "value": 880
       }
     ],
-    "highlight": 4
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And notice these risers are the non-negotiables. You can skip a new phone, but you can't skip a place to live, getting sick, or caring for a child. That's what makes their rise so painful: they hit everyone, they can't be avoided, and they've climbed fastest precisely because demand for them never drops no matter the price.",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "the non-negotiables"
-      },
-      {
-        "name": "house",
-        "label": "can't be skipped"
-      },
-      {
-        "name": "warning",
-        "label": "demand never drops"
-      }
-    ]
-  },
-  {
-    "id": "s12",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "How much CHEAPER since 2000 (%)",
-    "unit": "%",
-    "narration": "Now the things that collapsed. Televisions, around ninety-five percent cheaper. Toys and software, down roughly seventy. Phones and cellphone service, down more than half. Clothing, modestly cheaper. The stuff we fill our homes with got dramatically more affordable — even as the roof over those homes did the exact opposite.",
-    "data": [
-      {
-        "label": "Clothing",
-        "value": 10
-      },
-      {
-        "label": "Phones",
-        "value": 55
-      },
-      {
-        "label": "Software",
-        "value": 65
-      },
-      {
-        "label": "Toys",
-        "value": 70
-      },
-      {
-        "label": "TVs",
-        "value": 95
-      }
-    ],
-    "highlight": 4
+    "highlight": 5
   },
   {
     "id": "s43",
-    "type": "callout",
-    "narration": "Put the full gap in one number. Between the fastest riser and the fastest faller, the price gap since two thousand is well over three hundred percentage points. Two products sitting in the same shopping cart have had completely opposite fates — one nearly tripled, the other nearly vanished.",
-    "text": "300+ points",
-    "sub": "gap between the biggest riser and faller since 2000",
-    "icon": "chartup"
-  },
-  {
-    "id": "s13",
     "type": "character",
     "pose": "explain",
-    "narration": "Stare at those two lists and the pattern jumps out. The things that got cheaper are gadgets, goods, physical products. The things that got brutally expensive are services — care, teaching, shelter, attention. The divide isn't random at all. It's the single most important line in the whole economy, and there's one rule that draws it.",
+    "narration": "And notice the giant middle of the country. A huge band of states — the Midwest, the South, parts of the Mountain West — cluster between four and five hundred dollars a week. Not dirt cheap, not coastal-brutal. For most Americans, this affordable middle is where the weekly math actually works out in their favor.",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "goods → cheaper"
+        "name": "mappin",
+        "label": "the affordable middle"
       },
       {
-        "name": "hospital",
-        "label": "services → pricier"
+        "name": "house",
+        "label": "$400-500 a week"
       },
       {
-        "name": "scale",
-        "label": "one rule draws the line"
+        "name": "smiley",
+        "label": "where the math works"
       }
     ]
   },
   {
     "id": "s54",
-    "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "blame 'inflation' for everything",
-    "memeBottom": "goods got cheaper, human services got dearer",
-    "narration": "Once you internalize this, the lazy explanation stops satisfying you. It isn't that money simply buys less across the board. It's that the economy quietly sorted every price into one of two buckets — and which bucket decided its entire fate."
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the ranking barely moves year to year, which is the scary part. These aren't temporary spikes from one bad month — they're structural gaps baked into each state's housing market and tax code. The expensive states have been expensive for decades, and without a move, that weekly premium simply compounds against you year after year.",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "structural, not a spike"
+      },
+      {
+        "name": "chartup",
+        "label": "compounds for decades"
+      },
+      {
+        "name": "warning",
+        "label": "it won't fix itself"
+      }
+    ]
   },
   {
-    "id": "s14",
-    "type": "title",
-    "narration": "So here is the rule that explains all of it.",
-    "heading": "The One Rule",
-    "kicker": "things vs human time"
-  },
-  {
-    "id": "s15",
-    "type": "stage",
-    "motif": "thingsvsservices",
-    "caption": "things get cheaper; human time gets dearer",
-    "narration": "The rule is this: anything you can manufacture, globalize, or automate gets cheaper over time. Anything made of irreplaceable human time gets more expensive. A TV can be built by robots in a cheaper country every year. A teacher, a nurse, a doctor, a daycare worker — their hours can't be shipped overseas or handed to a machine. One side of the economy scales. The other can't."
+    "id": "s12",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And watch what that weekly gap becomes over a year. Five hundred dollars a week, times fifty-two, is twenty-six thousand dollars. That's the annual penalty for covering the identical basics in the priciest state versus the cheapest. It's a brand-new car, every year, vanishing into nothing more than ordinary daily life.",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "$500/wk × 52"
+      },
+      {
+        "name": "car",
+        "label": "= $26K a year"
+      },
+      {
+        "name": "warning",
+        "label": "gone to just existing"
+      }
+    ]
   },
   {
     "id": "s44",
     "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "a cheaper TV every single year",
-    "memeBottom": "a doctor's visit you can actually afford",
-    "narration": "This is the trade the modern economy quietly forced on us. Endless cheaper gadgets, or affordable essentials. We got the first button pressed over and over, and the second one taken away. Entertainment has never been cheaper; a stable life has rarely been dearer."
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "$880 a week before anything fun",
+    "memeBottom": "this is fine",
+    "narration": "For people in the priciest states, this is the quiet weekly reality: most of the paycheck gone to gas, groceries, and rent before a single dollar goes toward a life. It isn't overspending. It's the weekly meter of an expensive state, running whether you like it or not."
   },
   {
-    "id": "s16",
-    "type": "screenshot",
-    "sourceId": "wiki-global",
-    "narration": "The cheap side runs on globalization — the process of increasing interdependence and integration among the economies of the world. Once a product could be made anywhere and shipped everywhere, competition and cheaper factories drove its price relentlessly down. Your electronics got cheaper because the entire planet was suddenly competing to build them."
+    "id": "s62",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And twenty-six thousand a year isn't just lost spending — it's lost compounding. Invested instead over a working life, that weekly gap between a cheap and an expensive state becomes a fortune. The priciest states don't only cost you more each week; they quietly steal the wealth that money could have grown into.",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "$26K/yr could compound"
+      },
+      {
+        "name": "chartup",
+        "label": "into a fortune"
+      },
+      {
+        "name": "warning",
+        "label": "stolen future wealth"
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "type": "title",
+    "narration": "So what actually drives that enormous gap?",
+    "heading": "The Drivers",
+    "kicker": "rent, gas tax, grocery tax"
   },
   {
     "id": "s55",
     "type": "character",
     "pose": "explain",
-    "narration": "And globalization didn't just lower prices — it capped them. The moment a product can be made anywhere, no single company can charge much more than the cheapest global producer. That ceiling is why gadget prices barely budge even now. Services never got that ceiling, because you can't import a haircut, a surgery, or a kindergarten teacher from across the world.",
+    "narration": "And the drivers explain some surprising upsets. A state with no income tax can still be pricey to live in week to week if its rents and sales taxes are high. The weekly basket doesn't care about headline tax rates — it only cares about what gas, groceries, and rent actually cost you, added up at the register.",
     "props": [
       {
-        "name": "cargoship",
-        "label": "a global price ceiling"
+        "name": "receipt",
+        "label": "no-income-tax ≠ cheap"
       },
       {
-        "name": "stockscreen",
-        "label": "gadgets capped"
+        "name": "basket",
+        "label": "the basket is what counts"
       },
       {
-        "name": "hospital",
-        "label": "services uncapped"
+        "name": "scale",
+        "label": "added at the register"
       }
     ]
   },
   {
-    "id": "s17",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Add automation on top, and goods got even cheaper. Every year, factories make TVs, clothes, and toys with less human labor and more machinery. Productivity soars, costs fall, and the savings land in your lap as lower prices. For physical, tradable things, technology has been a relentless, decades-long discount machine.",
-    "props": [
-      {
-        "name": "factory",
-        "label": "automation + productivity"
-      },
-      {
-        "name": "chartdown",
-        "label": "costs keep falling"
-      },
-      {
-        "name": "cardreader",
-        "label": "a discount machine"
-      }
-    ]
+    "id": "s14",
+    "type": "stage",
+    "motif": "whatdrivesthegap",
+    "caption": "rent, fuel tax, and grocery tax",
+    "narration": "Three forces set a state's weekly price. First and biggest, rent — the housing market alone explains most of the gap. Second, the fuel tax baked into every gallon, which varies by state. And third, whether groceries get hit with sales tax. Stack those three, and you've explained why one state quietly costs double another to simply live in."
   },
   {
     "id": "s45",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice the quality twist. The cheap stuff didn't just get cheaper — it got better. Today's budget TV would humiliate a top-of-the-line model from two thousand. But a doctor's hour is still a doctor's hour, and a classroom is still a classroom. On one side, more for less. On the other, the same, for much more.",
+    "narration": "And the drivers stack in sneaky ways. A state can advertise cheap housing but claw it back with high fuel and grocery taxes. Another can look pricey on rent but exempt food and keep gas cheap. You have to add up the whole weekly basket, not cherry-pick one number, to know what a state really costs to live in.",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "cheaper AND better"
-      },
-      {
-        "name": "hospital",
-        "label": "same hour, higher price"
+        "name": "receipt",
+        "label": "the drivers stack"
       },
       {
         "name": "scale",
-        "label": "opposite trajectories"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the cheap side quietly subsidized the expensive side for years. Falling gadget and clothing prices held the overall inflation number down, masking how fast the essentials were climbing. For two decades, cheap imported goods let politicians and central banks claim inflation was tame — while rent, tuition, and healthcare quietly doubled underneath that comfortable average.",
-    "props": [
-      {
-        "name": "stockscreen",
-        "label": "cheap goods masked it"
-      },
-      {
-        "name": "chartup",
-        "label": "essentials doubled"
+        "label": "add the whole basket"
       },
       {
         "name": "warning",
-        "label": "tame average, hidden squeeze"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "stage",
-    "motif": "whyservicesrise",
-    "caption": "why human-powered services keep rising",
-    "narration": "But services are the opposite. A string quartet needs the same four musicians it did two centuries ago — you can't automate it. Yet those musicians' wages still rise to keep up with the rest of the economy. So the cost of anything made of human time climbs relentlessly, even without getting any better. Economists call this cost disease, and it quietly governs healthcare, education, and care."
-  },
-  {
-    "id": "s19",
-    "type": "screenshot",
-    "sourceId": "wiki-baumol",
-    "narration": "The research is blunt about the result: in these labor-heavy fields, these sectors of the economy become more expensive over time, no matter what. There's no productivity miracle coming for a one-on-one doctor's visit or a classroom. So their prices rise, decade after decade, built into the very structure of how an economy works."
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And cost disease sounds like a flaw, but it's partly a sign of success. Services feel expensive precisely because everything else got so productive and cheap. A rich economy can afford to pay teachers and nurses rising wages — the dear price of human care is, strangely, the price of broad prosperity. That doesn't make the bill easier to pay.",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "a sign of prosperity"
-      },
-      {
-        "name": "heart",
-        "label": "we can afford to pay people"
-      },
-      {
-        "name": "warning",
-        "label": "still a brutal bill"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "title",
-    "narration": "But cost disease alone doesn't explain the worst offenders.",
-    "heading": "The Subsidy Trap",
-    "kicker": "when demand is fueled"
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "pose": "explain",
-    "narration": "The true runaways — college, healthcare, housing — share a second accelerant: subsidized or financed demand. When governments guarantee student loans, when insurance hides the true price of care, when cheap mortgages flood housing, buyers can pay more, so sellers charge more. The help meant to make things affordable quietly pushes their prices even higher.",
-    "props": [
-      {
-        "name": "banknote",
-        "label": "loans + insurance + cheap credit"
-      },
-      {
-        "name": "chartup",
-        "label": "buyers can pay more"
-      },
-      {
-        "name": "warning",
-        "label": "so sellers charge more"
-      }
-    ]
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the subsidy trap is a vicious loop. Prices rise, so the public demands more help affording them. The extra help lets buyers pay even more, so prices rise again, triggering calls for yet more aid. College and healthcare have been spinning this exact wheel for decades — each round of assistance quietly swallowed by the next price increase.",
-    "props": [
-      {
-        "name": "banknote",
-        "label": "more aid → higher prices"
-      },
-      {
-        "name": "chartup",
-        "label": "a spinning wheel"
-      },
-      {
-        "name": "warning",
-        "label": "aid gets swallowed"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "callout",
-    "narration": "Here's the subsidy trap in one line. Decades of research link easy student loans directly to rising tuition: for every extra dollar of loan money made available, colleges captured a large share of it as higher prices. The aid didn't make college cheaper for students. It mostly made it more expensive for everyone.",
-    "text": "loans → tuition",
-    "sub": "subsidized demand captured as higher prices",
-    "icon": "banknote"
-  },
-  {
-    "id": "s22",
-    "type": "stage",
-    "motif": "risingvsfalling",
-    "caption": "the essentials soared; the extras got cheap",
-    "narration": "And here's the cruel twist in one image. The categories that soared are the essentials — the things you must buy to build a stable life: a home, healthcare, a degree, childcare. The categories that got cheaper are the extras — the TVs, gadgets, and toys. Life's necessities inflated. Life's distractions went on sale. That's the squeeze, in a single picture."
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And supply constraints pour fuel on the fire. Zoning laws throttle how many homes get built. Medical schools and licensing limit how many doctors exist. When demand is subsidized but supply is legally capped, prices don't just rise — they scream upward. The worst offenders are almost always the ones where we fuel buying and forbid building.",
-    "props": [
-      {
-        "name": "barrier",
-        "label": "zoning + licensing caps"
-      },
-      {
-        "name": "chartup",
-        "label": "demand up, supply blocked"
-      },
-      {
-        "name": "warning",
-        "label": "prices scream"
-      }
-    ]
-  },
-  {
-    "id": "s23",
-    "type": "screenshot",
-    "sourceId": "wiki-realnom",
-    "narration": "Measured properly, it's stark. Real value takes into account inflation and the value of an asset against what it can actually buy. In real terms, your television is nearly free — but your rent, your doctor, and your child's school each quietly cost twice what they did at the start of the century. You feel richer in stuff and poorer in life."
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this explains a generational mystery. Older relatives insist a single salary once bought a house, a family, and a comfortable life. They're not misremembering. Back then, the essentials were cheap and only the gadgets were dear. Today it's flipped — so the same salary buys a wall of cheap electronics but can't cover the life that used to come standard.",
-    "props": [
-      {
-        "name": "house",
-        "label": "one salary once did it"
-      },
-      {
-        "name": "stockscreen",
-        "label": "now: cheap gadgets only"
-      },
-      {
-        "name": "warning",
-        "label": "the life got pricey"
+        "label": "don't cherry-pick"
       }
     ]
   },
@@ -562,164 +367,369 @@
     "id": "s61",
     "type": "character",
     "pose": "explain",
-    "narration": "And this reframes the whole 'kids these days' debate. Young people aren't worse with money because they own nice phones and cheap clothes — those are the categories that collapsed in price. They're struggling because the things that signal a stable adult life, a home and a family, sit squarely on the side that exploded. The goalposts physically moved.",
+    "narration": "And rent sets the ceiling for everything else. In a high-rent state, landlords, stores, and services all face higher costs too, so they charge more — the pricey rent quietly drags up the price of groceries, gas, and haircuts alike. Housing isn't just the biggest line in the basket. It's the gravity that pulls every other line upward.",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "cheap phones aren't the problem"
-      },
-      {
         "name": "house",
-        "label": "homes & families exploded"
+        "label": "rent sets the ceiling"
       },
       {
-        "name": "warning",
-        "label": "the goalposts moved"
+        "name": "chartup",
+        "label": "drags up everything"
+      },
+      {
+        "name": "scale",
+        "label": "housing is gravity"
       }
     ]
   },
   {
-    "id": "s24",
-    "type": "title",
-    "narration": "So what do you actually do about living inside this split?",
-    "heading": "What To Do",
-    "kicker": "budget and invest the gap"
+    "id": "s15",
+    "type": "screenshot",
+    "sourceId": "wiki-fueltax",
+    "narration": "Take fuel tax — an excise tax imposed on the sale of fuel. States set their own, and the spread is large: some add barely a dime a gallon, others well over fifty cents. For a regular commuter, that single state policy difference can mean hundreds of dollars a year, invisibly added at the pump."
   },
   {
-    "id": "s25",
+    "id": "s56",
+    "type": "callout",
+    "narration": "Put the fuel-tax spread in weekly terms. Between the lowest and highest states, the gas tax difference alone can be fifty cents a gallon or more. For a commuter filling up weekly, that single policy choice quietly adds up to several hundred dollars a year — paid entirely to the state, right there at the pump.",
+    "text": "$0.50+/gal",
+    "sub": "the gas-tax gap between states, paid weekly",
+    "icon": "gaspump"
+  },
+  {
+    "id": "s16",
+    "type": "screenshot",
+    "sourceId": "wiki-salestax",
+    "narration": "Then groceries. Sales tax is governed at the state level, and no national general sales tax exists — so each state decides. Most exempt groceries, but some still tax the food you eat, quietly adding to every weekly shop. Where you buy your bread can cost you, purely because of a line in a state tax code."
+  },
+  {
+    "id": "s46",
     "type": "character",
-    "pose": "present",
-    "narration": "First, stop budgeting for the cheap stuff and start obsessing over the expensive stuff. The gadgets and clothes barely move your finances anymore. Housing, healthcare, education, and childcare are the entire game. Win on those four, and you win the decade. Agonizing over the price of a TV while overpaying on rent is fighting the wrong war entirely.",
+    "pose": "explain",
+    "narration": "And taxes on the basics are quietly regressive — they hit lower earners hardest. A grocery sales tax takes a far bigger bite from a tight budget than a comfortable one, because the basics eat a bigger share of a small paycheck. So the states that tax food and fuel heavily are often toughest on exactly the people with the least room to absorb it.",
     "props": [
       {
-        "name": "house",
-        "label": "focus on the big 4"
-      },
-      {
-        "name": "scale",
-        "label": "housing, health, school, care"
+        "name": "receipt",
+        "label": "taxes on basics"
       },
       {
         "name": "warning",
-        "label": "ignore the cheap stuff"
+        "label": "hit low earners hardest"
+      },
+      {
+        "name": "scale",
+        "label": "quietly regressive"
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "type": "title",
+    "narration": "But raw cost is only half the story — compare it to local pay.",
+    "heading": "Cost vs Wages",
+    "kicker": "what it eats of your week"
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And wages and prices don't rise together neatly. Some expensive states do pay more, but rarely enough to fully offset the higher basics. And some cheap states pay so little that their low prices are an illusion. The only honest comparison is always the same: what does a week cost, and what does a week earn you, right there?",
+    "props": [
+      {
+        "name": "scale",
+        "label": "wages lag prices"
+      },
+      {
+        "name": "warning",
+        "label": "low pay fakes cheapness"
+      },
+      {
+        "name": "paystub",
+        "label": "cost vs earn, locally"
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "type": "stage",
+    "motif": "weeklycostvswage",
+    "caption": "weekly basics as a share of the weekly wage",
+    "narration": "A high weekly cost can be survivable if wages are high too. So here's the honest measure: the basics as a share of a state's typical weekly paycheck. And it's brutal. In Hawaii and California, the bare essentials devour the majority of a median week's pay. In cheaper states, the same basket leaves far more of the paycheck standing. Affordability is always cost divided by wage."
+  },
+  {
+    "id": "s19",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Basics as % of median weekly wage",
+    "unit": "%",
+    "narration": "Here's the share of a median weekly paycheck that just the basics consume. In Ohio and Texas, under half. In Mississippi, a bit more, because wages there are low. But in Hawaii it tops eighty percent, and California isn't far behind. In the priciest states, you work most of the week just to cover gas, food, and rent.",
+    "data": [
+      {
+        "label": "Ohio",
+        "value": 45
+      },
+      {
+        "label": "Texas",
+        "value": 48
+      },
+      {
+        "label": "Mississippi",
+        "value": 55
+      },
+      {
+        "label": "New York",
+        "value": 68
+      },
+      {
+        "label": "California",
+        "value": 72
+      },
+      {
+        "label": "Hawaii",
+        "value": 85
+      }
+    ],
+    "highlight": 5
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And this is why 'the cost of living' is really the cost of a week. Big one-off prices grab headlines, but it's the relentless weekly spend that sets your true standard of living. A state where the basics eat eighty percent of your wage leaves almost nothing to save, invest, or enjoy — no matter how good the salary looked on paper.",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "cost of living = cost of a week"
+      },
+      {
+        "name": "chartdown",
+        "label": "80% leaves nothing"
+      },
+      {
+        "name": "warning",
+        "label": "salary looked fine on paper"
       }
     ]
   },
   {
     "id": "s58",
     "type": "character",
-    "pose": "present",
-    "narration": "And protect yourself by buying the durable stuff when it's cheap and refusing to overpay for status versions of it. A modest phone, a used car, last year's model — the goods side rewards patience with ever-lower prices. Every dollar you don't waste proving status on cheap categories is a dollar freed up for the essentials that actually decide your future.",
+    "pose": "explain",
+    "narration": "And this share is the real affordability number. When the basics eat eighty percent of your weekly pay, there's almost nothing left for emergencies, let alone saving or investing. That's how people earning a solid salary in an expensive state still live paycheck to paycheck — the weekly meter quietly claims it before they ever see it.",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "buy goods cheap"
+        "name": "chartdown",
+        "label": "80% gone to basics"
       },
       {
-        "name": "car",
-        "label": "used, last year's model"
+        "name": "warning",
+        "label": "nothing left to save"
       },
       {
-        "name": "moneybag",
-        "label": "free up cash for essentials"
+        "name": "calendar",
+        "label": "paycheck to paycheck"
       }
     ]
   },
   {
-    "id": "s26",
+    "id": "s20",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And this flips some assumptions. A cheap state with low wages, like Mississippi, can quietly be harder to live in than its low prices suggest, because the paychecks are small too. Meanwhile a mid-cost, decent-wage state can be the real sweet spot. The best state isn't the cheapest — it's the one where your wage beats the weekly meter by the widest margin.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "cost ÷ wage"
+      },
+      {
+        "name": "warning",
+        "label": "cheap + low pay still hurts"
+      },
+      {
+        "name": "smiley",
+        "label": "the real sweet spot"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "image",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "brag about your big-state salary",
+    "memeBottom": "brag about what's left after the weekly basket",
+    "narration": "This is the mindset shift. The number worth bragging about was never the salary — it's what survives a week of gas, groceries, and rent. Once you measure states that way, the glamorous expensive ones stop looking like winners."
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "So what do you actually do about the weekly meter?",
+    "heading": "What To Do",
+    "kicker": "shrink the basics"
+  },
+  {
+    "id": "s22",
+    "type": "stage",
+    "motif": "samesalarystates",
+    "caption": "the same salary, two different weeks",
+    "narration": "Here's the same paycheck living two different weeks. In a high-cost state, the basics swallow it and nothing's left to save. In a low-cost one, the same money covers the basics with hundreds to spare. Identical income, opposite outcomes — written entirely by the weekly price of the state around it."
+  },
+  {
+    "id": "s48",
     "type": "character",
     "pose": "present",
-    "narration": "Second, get on the owning side of the things that inflate. If housing keeps rising, own a home instead of renting the increase. If a sector's prices climb forever, investing in it means the inflation works for you, not against you. The same forces squeezing you as a consumer can enrich you as an owner. Pick which side of the chart you're on.",
+    "narration": "And shrink the recurring costs with boring, repeatable habits. A grocery list that kills impulse buys, buying gas on the cheaper side of a state line, cooking instead of ordering in. None of it is glamorous, but because these costs repeat fifty-two times a year, small weekly wins compound into serious annual money.",
+    "props": [
+      {
+        "name": "basket",
+        "label": "a strict grocery list"
+      },
+      {
+        "name": "gaspump",
+        "label": "cheaper gas runs"
+      },
+      {
+        "name": "snowball",
+        "label": "small weekly wins compound"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "pose": "present",
+    "narration": "First, attack the giant: rent. It's the biggest slice of the weekly basket by far, so a smaller place, a roommate, or a cheaper neighborhood moves your weekly number more than any coupon ever could. Win on housing and the entire weekly meter drops. Everything else is rounding by comparison.",
     "props": [
       {
         "name": "house",
-        "label": "own what inflates"
+        "label": "attack rent first"
       },
       {
-        "name": "chartup",
-        "label": "inflation works for you"
+        "name": "couple",
+        "label": "roommate or smaller place"
+      },
+      {
+        "name": "scale",
+        "label": "everything else is rounding"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "pose": "present",
+    "narration": "And buy the recurring stuff in bulk and on cycle. The basics repeat, so systems beat willpower: a staples run once a month, store-brand swaps, a full tank on the cheap day. Because these costs come back fifty-two times a year, a small, permanent habit quietly out-saves any one-time splurge cut you could make.",
+    "props": [
+      {
+        "name": "basket",
+        "label": "buy staples in bulk"
+      },
+      {
+        "name": "calendar",
+        "label": "systems beat willpower"
+      },
+      {
+        "name": "snowball",
+        "label": "small habits, 52× a year"
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "type": "character",
+    "pose": "present",
+    "narration": "Second, treat the state itself as a lever. If your work travels, moving from a top-cost state to an affordable one can hand you that twenty-six-thousand-a-year difference without earning a cent more. It's the single biggest, most overlooked raise hiding in plain sight — just a change of address.",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "the state is a lever"
       },
       {
         "name": "moneybag",
-        "label": "be the owner"
+        "label": "+$26K without a raise"
+      },
+      {
+        "name": "truck",
+        "label": "a change of address"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "pose": "present",
+    "narration": "And look one town over, not just one state over. Within a single state, a cheaper suburb or a lower-tax county can cut your weekly basket meaningfully without uprooting your whole life. The state sets the broad price, but the exact town you pick fine-tunes the weekly meter in ways most people never bother to check.",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "one town over"
+      },
+      {
+        "name": "house",
+        "label": "cheaper suburb or county"
+      },
+      {
+        "name": "scale",
+        "label": "fine-tune the meter"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. It's not the rare big purchase that decides your finances — it's the boring weekly basket, repeated fifty-two times a year, for decades. Master the quiet, recurring cost of simply living, and you've mastered the number that actually shapes your whole financial life. Watch the week, and the years take care of themselves.",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "the weekly basket wins"
+      },
+      {
+        "name": "basket",
+        "label": "×52, for decades"
+      },
+      {
+        "name": "chartup",
+        "label": "master the week"
       }
     ]
   },
   {
     "id": "s50",
     "type": "character",
-    "pose": "present",
-    "narration": "And where you can, shift spending from the dear side to the cheap side on purpose. Stream entertainment instead of chasing status, but never cheap out on the leverage points — a home in the right place, your health, your skills. Starve the categories technology made cheap, and fund the ones that actually compound your life.",
+    "pose": "explain",
+    "narration": "And the compounding cuts both ways. The money a cheaper state saves you each week only builds wealth if you actually invest the difference, instead of inflating your life to match. Keep your weekly basket lean, put the gap to work, and the boring week-to-week discipline quietly funds the freedom the expensive states can only promise.",
     "props": [
       {
-        "name": "laptop",
-        "label": "cheap out on extras"
+        "name": "seedling",
+        "label": "invest the weekly gap"
       },
       {
-        "name": "house",
-        "label": "invest in the essentials"
+        "name": "snowball",
+        "label": "don't inflate your life"
       },
-      {
-        "name": "smiley",
-        "label": "spend where it compounds"
-      }
-    ]
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "pose": "present",
-    "narration": "And turn the rule into an investing compass. The sectors with pricing power — the ones that can raise prices every year because demand never quits — are exactly the ones worth owning a piece of. Healthcare, essential housing, and the companies behind them ride the same wave that drowns you as a consumer. Own the tollbooths you're forced to pay.",
-    "props": [
       {
         "name": "chartup",
-        "label": "own pricing power"
-      },
-      {
-        "name": "hospital",
-        "label": "demand never quits"
-      },
-      {
-        "name": "moneybag",
-        "label": "own the tollbooths"
+        "label": "the week funds freedom"
       }
     ]
   },
   {
-    "id": "s27",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Because here's the real lesson. The economy didn't get uniformly more expensive — it split in two. The things made by machines got cheaper, and the things made by people got dearer. And almost everything that actually matters for a good life sits on the expensive side. That's not bad luck. It's the deep structure of a modern economy, finally made visible.",
-    "props": [
-      {
-        "name": "scale",
-        "label": "the economy split in two"
-      },
-      {
-        "name": "factory",
-        "label": "machines cheap, people dear"
-      },
-      {
-        "name": "brain",
-        "label": "the deep structure"
-      }
-    ]
-  },
-  {
-    "id": "s28",
+    "id": "s26",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this finally explained why everything feels so expensive, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this changed how you see the cost of a normal week, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "chartup",
+        "name": "basket",
         "label": "which price tag next?"
       }
     ]
   },
   {
-    "id": "s29",
+    "id": "s27",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",

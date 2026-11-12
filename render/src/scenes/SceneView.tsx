@@ -6731,6 +6731,88 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={448} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>necessities inflated — distractions went on sale</text>
       </svg>
     );
+  } else if (m === "weeklybasketbars") {
+    // Weekly cost of the basics by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Mississippi", 390, green],
+      ["Ohio", 430, "#9cc47f"],
+      ["Texas", 470, gold],
+      ["Florida", 560, gold],
+      ["California", 780, "#d98b5f"],
+      ["Hawaii", 880, red],
+    ];
+    const x0 = 250, xMax = 850, maxV = 880;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">weekly gas + groceries + rent, by state</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same tank, cart & roof — more than double the price</text>
+      </svg>
+    );
+  } else if (m === "whatdrivesthegap") {
+    // The three drivers: rent (big), fuel tax, grocery tax.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const parts: [string, string, number, string][] = [
+      ["rent", "the giant — most of the gap", 300, red],
+      ["fuel tax", "baked into every gallon", 90, gold],
+      ["grocery tax", "on the food you eat", 60, "#9cc47f"],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">three forces set a state's weekly price</text>
+        {parts.map(([lab, note, w, col], i) => {
+          const y = 120 + i * 100; const ww = w * grow;
+          const op = interpolate(grow, [i * 0.2, i * 0.2 + 0.25], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <rect x={150} y={y} width={ww} height={64} rx={8} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text x={168} y={y + 40} fontSize={19} fontWeight={900} fill="#fff" fontFamily="Georgia, serif">{lab}</text>
+              <text x={170 + w + 14} y={y + 40} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>{note}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>rent dwarfs the rest — housing decides the state</text>
+      </svg>
+    );
+  } else if (m === "weeklycostvswage") {
+    // Weekly basics as a share of the weekly paycheck.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Ohio", 45, green],
+      ["Texas", 48, "#9cc47f"],
+      ["Mississippi", 55, gold],
+      ["California", 72, "#d98b5f"],
+      ["Hawaii", 85, red],
+    ];
+    const base = 430, maxH = 300;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">basics as a share of the weekly paycheck</text>
+        <RLine x1={110} y1={base} x2={880} y2={base} stroke={ink} strokeWidth={3} />
+        {rows.map(([lab, pct, col], i) => {
+          const h = maxH * (pct / 100) * grow; const x = 200 + i * 140;
+          return (
+            <g key={i}>
+              <rect x={x - 55} y={base - h} width={110} height={h} rx={5} fill={col as string} stroke={ink} strokeWidth={3.5} />
+              <text x={x} y={base - h - 10} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{pct}%</text>
+              <text x={x} y={base + 24} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={base + 48} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>in Hawaii you work most of the week just for the basics</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

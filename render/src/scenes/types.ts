@@ -244,7 +244,9 @@ export interface StageScene extends Base {
     // EP089 (The Price Tag — cost of retiring by country) additions:
     | "nesteggbycountry" | "threepillars" | "retireabroadmap"
     // EP090 (The Price Tag — why everything got expensive) additions:
-    | "pricechartofcentury" | "thingsvsservices" | "whyservicesrise" | "risingvsfalling";
+    | "pricechartofcentury" | "thingsvsservices" | "whyservicesrise" | "risingvsfalling"
+    // EP091 (The Price Tag — weekly basics by state) additions:
+    | "weeklybasketbars" | "whatdrivesthegap" | "weeklycostvswage";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
