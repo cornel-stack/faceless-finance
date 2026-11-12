@@ -6664,6 +6664,73 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={476} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>retirement visas + low costs = retire years earlier</text>
       </svg>
     );
+  } else if (m === "pricechartofcentury") {
+    // Diverging price lines since 2000 — some soar, some collapse.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 150, x1 = 840, yMid = 280;
+    const ups: [string, number, string][] = [["hospital", -170, red], ["college", -140, "#c0583a"], ["housing", -95, "#d98b5f"]];
+    const downs: [string, number, string][] = [["TVs", 150, green], ["software", 110, "#6f9f5b"], ["toys", 90, "#9cc47f"]];
+    const line = (end: number) => Array.from({ length: 30 }).map((_, i) => { const t = (i / 29) * draw; const x = x0 + (x1 - x0) * t; const y = yMid + end * Math.pow(t, 1.4); return `${i === 0 ? "M" : "L"}${x} ${y}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={44} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the chart of the century: prices since 2000</text>
+        <RLine x1={x0} y1={yMid} x2={x1} y2={yMid} stroke={theme.inkSoft} strokeWidth={2} />
+        <text x={x0 + 4} y={yMid - 6} fontSize={12} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>2000</text>
+        {[...ups, ...downs].map(([lab, end, col], i) => (
+          <g key={i}>
+            <path d={line(end)} fill="none" stroke={col as string} strokeWidth={5} />
+            <text x={x1 + 6} y={yMid + end * draw + 4} fontSize={13} fontWeight={900} fill={col as string} fontFamily={sans}>{lab}</text>
+          </g>
+        ))}
+        <text x={x0 + 40} y={110} fontSize={13} fontWeight={900} fill={red} fontFamily={sans}>services ↑</text>
+        <text x={x0 + 40} y={460} fontSize={13} fontWeight={900} fill={green} fontFamily={sans}>goods ↓</text>
+      </svg>
+    );
+  } else if (m === "thingsvsservices") {
+    // Two columns: things (cheaper) vs human time (dearer).
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const things = ["TVs", "phones", "clothes", "toys"];
+    const svcs = ["healthcare", "teaching", "childcare", "housing"];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={300} y={70} fontSize={19} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">you can make it → cheaper</text>
+        <text x={690} y={70} fontSize={19} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">made of human time → dearer</text>
+        {things.map((t, i) => { const y = 120 + i * 70; return <g key={i} opacity={interpolate(reveal, [i * 0.14, i * 0.14 + 0.2], [0, 1], clampBoth)}><rect x={130} y={y} width={330} height={54} rx={9} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text x={160} y={y + 34} fontSize={16} fontWeight={800} fill={ink} fontFamily={sans}>{t}</text><text x={430} y={y + 34} fontSize={16} fontWeight={900} fill={green} textAnchor="end" fontFamily={sans}>↓</text></g>; })}
+        {svcs.map((t, i) => { const y = 120 + i * 70; return <g key={i} opacity={interpolate(reveal, [i * 0.14 + 0.2, i * 0.14 + 0.4], [0, 1], clampBoth)}><rect x={520} y={y} width={330} height={54} rx={9} fill="#f0d9cf" stroke={ink} strokeWidth={3} /><text x={550} y={y + 34} fontSize={16} fontWeight={800} fill={ink} fontFamily={sans}>{t}</text><text x={820} y={y + 34} fontSize={16} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>↑</text></g>; })}
+      </svg>
+    );
+  } else if (m === "whyservicesrise") {
+    // Cost disease: same human labor, rising wage, rising price.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">cost disease: you can't automate a person</text>
+        <g transform="translate(250 250)"><circle r={60} fill={gold} stroke={ink} strokeWidth={5} /><text y={8} fontSize={30} textAnchor="middle">🎻</text><text y={95} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>same 4 players</text><text y={115} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>as 200 years ago</text></g>
+        <path d={`M330 250 l${180 * grow} 0`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <path d={`M${330 + 180 * grow} 250 l-16 -8 m16 8 l-16 8`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={grow} />
+        <g transform="translate(680 250)" opacity={grow}><rect x={-110} y={-70} width={220} height={140} rx={12} fill={red} stroke={ink} strokeWidth={5} /><text y={-28} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>wages must rise</text><text y={2} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>to match the economy</text><text y={34} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">so the price rises</text></g>
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>no productivity miracle is coming for a doctor's hour</text>
+      </svg>
+    );
+  } else if (m === "risingvsfalling") {
+    // Essentials soared; extras got cheap.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the essentials soared; the extras got cheap</text>
+        <g opacity={interpolate(reveal, [0, 0.4], [0, 1], clampBoth)}>
+          <rect x={120} y={110} width={360} height={300} rx={14} fill="#f0d9cf" stroke={ink} strokeWidth={4} />
+          <text x={300} y={150} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">NEEDS ↑</text>
+          {["a home", "healthcare", "a degree", "childcare"].map((t, i) => <text key={i} x={300} y={200 + i * 48} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{t}</text>)}
+        </g>
+        <g opacity={interpolate(reveal, [0.4, 0.8], [0, 1], clampBoth)}>
+          <rect x={520} y={110} width={360} height={300} rx={14} fill="#cfe3d4" stroke={ink} strokeWidth={4} />
+          <text x={700} y={150} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">EXTRAS ↓</text>
+          {["TVs", "gadgets", "toys", "clothes"].map((t, i) => <text key={i} x={700} y={200 + i * 48} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{t}</text>)}
+        </g>
+        <text x={VW / 2} y={448} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>necessities inflated — distractions went on sale</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

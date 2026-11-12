@@ -242,7 +242,9 @@ export interface StageScene extends Base {
     // EP088 (The Price Tag — cost of a baby by country) additions:
     | "birthcostbars" | "childcarevs2ndsalary" | "paidleavemap" | "costtoraisestack"
     // EP089 (The Price Tag — cost of retiring by country) additions:
-    | "nesteggbycountry" | "threepillars" | "retireabroadmap";
+    | "nesteggbycountry" | "threepillars" | "retireabroadmap"
+    // EP090 (The Price Tag — why everything got expensive) additions:
+    | "pricechartofcentury" | "thingsvsservices" | "whyservicesrise" | "risingvsfalling";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
