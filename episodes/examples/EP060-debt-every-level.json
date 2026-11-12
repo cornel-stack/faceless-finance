@@ -1,0 +1,1011 @@
+{
+  "id": "EP060",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Debt: From $0 to $1 Million Owed",
+  "slug": "every-level-of-debt",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP060 — Every Level series (row 50). The LEVELS-of-personal-debt ladder: $0 → $1M, good vs bad debt, the interest-rate spectrum (mortgage ~7% → credit card ~24% → payday ~400%), APR, climb by type (cards/car/student/mortgage), min-payment trap (reuse minimumpaymenttrap), the spiral/default (reuse debtspiral/aprballoon), underwater, DTI danger, dig-out strategies (avalanche vs snowball), debt-free power. 6 new motifs (debtladder/rateladder/goodbaddebt/avalanchesnowball/debtfreedom/underwaterdebt) + doodles shovel/brokenchain. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "A million dollars of debt can make you rich. Five thousand dollars of debt can quietly destroy you. That sounds backwards — but it's the single most important truth about borrowing. It was never really about how much you owe. It's about the type of debt, and the rate.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mortgage",
+          "label": "$1M can make you rich"
+        },
+        {
+          "name": "creditcard",
+          "label": "$5K can destroy you"
+        },
+        {
+          "name": "percent",
+          "label": "it's the type & rate"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that proves it. Borrow from a mortgage, and you pay around seven percent a year. Borrow the exact same dollar from a payday lender, and you can pay four hundred percent. The same debt, costing nearly sixty times as much.",
+      "text": "400%",
+      "sub": "payday loan APR — vs ~7% for a mortgage",
+      "icon": "percent"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Remember, the same compound interest that quietly builds a saver's fortune runs in reverse against a borrower. On high-interest debt, the interest itself starts earning interest for the lender. Left alone, bad debt doesn't just sit there — it actively grows, while you sleep.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "compounding in reverse"
+        },
+        {
+          "name": "percent",
+          "label": "interest on interest"
+        },
+        {
+          "name": "warning",
+          "label": "it grows while you sleep"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we're climbing every level of debt — from zero, all the way to a million owed — and at each one, asking the only questions that matter. Is this debt building you up, or burying you? And how do you climb back down if you're stuck?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "$0 → $1M owed"
+        },
+        {
+          "name": "shovel",
+          "label": "building or burying?"
+        },
+        {
+          "name": "brokenchain",
+          "label": "how to climb out"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "borrow cheaply to buy something that grows",
+      "memeBottom": "borrow expensively to buy something that shrinks",
+      "narration": "Because there are really two completely different things we both call 'debt.' One is a powerful tool the wealthy use to get richer. The other is a trap that quietly keeps people poor for life. Telling them apart is the whole game."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what debt actually is — and the one line that splits it in two.",
+      "heading": "Good vs. Bad",
+      "kicker": "the great divide"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "At its core, debt is simply an obligation to pay money borrowed or otherwise withheld from another party. You get money now, and you promise to pay it back later — plus interest, the price of borrowing.",
+      "sourceId": "wiki-debt"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "And here's the line that divides all debt. Good debt is money borrowed cheaply to buy something that grows in value — a home, an education, a business. Bad debt is money borrowed expensively to buy something that shrinks — gadgets, nights out, a car you can't afford. One builds you up. The other eats you alive.",
+      "motif": "goodbaddebt",
+      "caption": "one builds you up, one eats you alive"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Of course, real life has a gray zone. A modest loan for a reliable car to get to work isn't exactly 'good' debt, but it's necessary debt — a sensible tool. The goal was never zero debt at all costs. It's to be ruthlessly honest about which kind you're actually signing up for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "necessary debt"
+        },
+        {
+          "name": "scale",
+          "label": "be honest about it"
+        },
+        {
+          "name": "handshake",
+          "label": "a sensible tool"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "The number that tells you which is which is the APR — the interest rate for a whole year. It's the single most honest measure of how expensive a debt truly is. The higher the APR, the more likely it's the dangerous kind.",
+      "sourceId": "wiki-apr"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Look at the full spectrum. A mortgage, around seven percent. Student loans, roughly six. A car loan, maybe nine. A credit card, a brutal twenty-four. And a payday loan, an almost unbelievable four hundred percent. The cost of the exact same borrowed dollar explodes as you go down the list.",
+      "motif": "rateladder",
+      "caption": "the real cost of each debt"
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "Make it concrete with ten thousand dollars borrowed for one year. At a mortgage's seven percent, the interest is seven hundred dollars. On a credit card, two thousand four hundred. From a payday lender, that same ten thousand can cost you forty thousand in a single year. Same loan, unrecognizable price.",
+      "text": "$40,000",
+      "sub": "a year's interest on $10K at a payday rate",
+      "icon": "warning"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "So let's climb the ladder, starting at the best possible level.",
+      "heading": "Level 0 — $0",
+      "kicker": "debt-free"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Zero debt. No payments, no interest, no one with a claim on your future income. It's rarer than you'd think — and it's quietly one of the most powerful financial positions there is. Every dollar you earn is fully, completely yours.",
+      "motif": "debtfreedom",
+      "caption": "$0 debt is a weight lifting off your chest"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And debt-free is more than a number — it's a superpower. With no payments hanging over you, you can take a risk, quit a toxic job, start a business, or ride out a layoff without panic. Zero debt quietly buys you something priceless: options.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brokenchain",
+          "label": "no payments"
+        },
+        {
+          "name": "briefcase",
+          "label": "take real risks"
+        },
+        {
+          "name": "smiley",
+          "label": "options = freedom"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "But here's the twist: zero debt isn't automatically the goal. Someone with no debt and no assets is worse off than someone with a cheap mortgage on a growing home. Debt-free is wonderful — but using cheap debt wisely can build wealth even faster.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "$0 debt, $0 assets…"
+        },
+        {
+          "name": "house",
+          "label": "vs. cheap mortgage, growing"
+        },
+        {
+          "name": "scale",
+          "label": "debt-free ≠ always best"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "Now the first rung most people actually land on — and the most dangerous.",
+      "heading": "Credit Card Debt",
+      "kicker": "the silent killer"
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "narration": "The average American household carries several thousand dollars in credit card debt. And credit card interest is, quite openly, a way in which card issuers generate revenue. You are the revenue.",
+      "sourceId": "wiki-cc"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "But here's the crucial secret about credit cards: used right, the interest is zero. If you pay the full balance every single month, you ride the grace period and never pay a cent of interest. A credit card is only a trap if you carry a balance. Pay in full, and you actually win.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "pay in full"
+        },
+        {
+          "name": "percent",
+          "label": "0% interest"
+        },
+        {
+          "name": "smiley",
+          "label": "ride the grace period"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "At twenty-plus percent, this is the most toxic common debt there is. It's almost always 'bad debt' — borrowed to buy things that are already losing value the moment you own them. And it has a secret weapon designed to keep you paying forever.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "20%+ APR"
+        },
+        {
+          "name": "grocerybag",
+          "label": "buys shrinking stuff"
+        },
+        {
+          "name": "mousetrap",
+          "label": "a hidden trap"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "That weapon is the minimum payment. The card cheerfully asks for a tiny amount each month — but at that rate, a few thousand dollars of debt can take over a decade to clear, and you'll pay back double or triple what you borrowed. The minimum payment is a trap dressed up as a kindness.",
+      "motif": "minimumpaymenttrap",
+      "caption": "the minimum payment is a trap"
+    },
+    {
+      "id": "s51",
+      "type": "callout",
+      "narration": "Here's the trap in hard numbers. Put five thousand dollars on a card at twenty-four percent, and pay only the minimum each month. It takes you well over fifteen years to clear it — and you hand the bank nearly six thousand dollars in pure interest. You end up paying for everything twice.",
+      "text": "$5,800",
+      "sub": "interest on a $5K card paying only the minimum",
+      "icon": "creditcard"
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Climb to a bigger number — but a very different kind of debt.",
+      "heading": "The Car Loan",
+      "kicker": "borrowing for a brick that shrinks"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "The average new car loan is now pushing forty thousand dollars. And this is a special kind of bad debt, because you're borrowing a large sum to buy an asset that loses value fast — a new car can drop twenty percent the moment you drive it off the lot.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "~$40K borrowed"
+        },
+        {
+          "name": "chartdown",
+          "label": "−20% off the lot"
+        },
+        {
+          "name": "warning",
+          "label": "debt on a shrinking asset"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "There's a simple guardrail for car debt: the twenty / four / ten rule. Put at least twenty percent down, finance for no more than four years, and keep all your car costs under ten percent of your income. If a car breaks those rules, it is quietly too expensive for you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "20% down"
+        },
+        {
+          "name": "calculator",
+          "label": "≤ 4-year loan"
+        },
+        {
+          "name": "percent",
+          "label": "≤ 10% of income"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "This creates a nasty situation called being 'underwater.' The car's value drops faster than you pay the loan down — so for years, you owe more than the car is actually worth. If you crash it or sell it, you're left paying for a car you no longer even have.",
+      "motif": "underwaterdebt",
+      "caption": "'underwater': you owe more than it's worth"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "And here's how the underwater trap deepens. Desperate to escape, people roll the leftover debt from their old car straight into the loan on a new one. Now they owe even more, on an even faster-depreciating asset. The hole just follows them, from car to car to car.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "car",
+          "label": "roll old debt in"
+        },
+        {
+          "name": "chartdown",
+          "label": "owe even more"
+        },
+        {
+          "name": "ballchain",
+          "label": "the hole follows you"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "Now a debt that's supposed to be an investment in yourself.",
+      "heading": "Student Loans",
+      "kicker": "'good debt' gone sideways"
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "narration": "A student loan is a loan designed to help students pay for tertiary education — the classic example of 'good debt,' because a degree is meant to boost your lifetime income far beyond what it costs.",
+      "sourceId": "wiki-student"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "And in theory, it is good debt. But it only works if the degree actually pays off. Borrow forty thousand for a high-demand skill, and it's a brilliant investment. Borrow a hundred thousand for a degree with few job prospects, and that 'good debt' becomes a decades-long anchor.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gradcap",
+          "label": "degree boosts income?"
+        },
+        {
+          "name": "chartup",
+          "label": "good: high-demand skill"
+        },
+        {
+          "name": "anchor",
+          "label": "bad: no job prospects"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "So treat a student loan like any investment: weigh the cost against the return. Borrowing for a degree that reliably leads to a strong income can be one of the best bets you'll ever make. Borrowing the same amount for one that doesn't is just expensive bad debt in a cap and gown.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gradcap",
+          "label": "weigh cost vs return"
+        },
+        {
+          "name": "chartup",
+          "label": "good ROI = great bet"
+        },
+        {
+          "name": "warning",
+          "label": "bad ROI = bad debt"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "title",
+      "narration": "And now the giant — the 'good debt' most people will ever take on.",
+      "heading": "The Mortgage",
+      "kicker": "debt that builds wealth"
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "A three-hundred-thousand-dollar mortgage sounds terrifying. But it's usually the best debt a normal person can get. It's cheap, it's borrowed against an asset that tends to grow, and every payment slowly converts debt into ownership — into equity that's truly yours.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "cheap rate"
+        },
+        {
+          "name": "chartup",
+          "label": "asset that grows"
+        },
+        {
+          "name": "keys",
+          "label": "builds your equity"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And mortgages have their own key choice. A thirty-year loan means low payments but far more total interest. A fifteen-year means higher payments, but you own the home in half the time, for a fraction of the interest. Shorter is dramatically cheaper — if you can handle the bigger bite.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "30-yr: low payment"
+        },
+        {
+          "name": "clock",
+          "label": "15-yr: own it sooner"
+        },
+        {
+          "name": "percent",
+          "label": "far less interest"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "This is the debt the wealthy actually love. Borrowing at seven percent to own something that grows faster than that, over decades, is how ordinary families quietly build most of their net worth. Big number, but the right kind of big.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "borrow at 7%…"
+        },
+        {
+          "name": "moneytree",
+          "label": "…own what grows faster"
+        },
+        {
+          "name": "nestegg",
+          "label": "most families' wealth"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "Push to the top of the ladder — a million dollars owed.",
+      "heading": "$1 Million Owed",
+      "kicker": "leverage or ruin"
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "At a million in debt, the two worlds split completely. A business owner or real-estate investor with a million in low-cost debt against income-producing assets can be seriously wealthy. It's called leverage — using borrowed money to control far more than you could alone.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "debt on assets"
+        },
+        {
+          "name": "chartup",
+          "label": "= leverage"
+        },
+        {
+          "name": "crown",
+          "label": "seriously wealthy"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "But one serious warning about leverage: it magnifies everything, including losses. Borrow heavily to buy an asset, and if its value falls, your debt stays exactly the same — it can wipe you out far faster than you ever built up. The tool that makes fortunes also makes spectacular ruins.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "magnifies gains…"
+        },
+        {
+          "name": "chartdown",
+          "label": "…and losses"
+        },
+        {
+          "name": "warning",
+          "label": "can wipe you out"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "But a million in consumer and high-interest debt is a financial death sentence. Same headline number — a million owed — but one person is building an empire, and the other is drowning. The only difference is what the debt was used to buy.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "high-interest $1M"
+        },
+        {
+          "name": "chartdown",
+          "label": "a death sentence"
+        },
+        {
+          "name": "scale",
+          "label": "same number, opposite fate"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "So how do you know when any level of debt has become too much?",
+      "heading": "The Danger Zone",
+      "kicker": "when debt owns you"
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "Lenders watch your debt-to-income ratio — the percentage of your monthly gross income that goes toward paying debts. It's the clearest gauge of whether you're in control, or whether your debts are in control of you.",
+      "sourceId": "wiki-dti"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "Your debt behavior also feeds your credit score — the number that decides what rates you're offered on everything. A big factor is utilization: try to use less than thirty percent of your available credit. Ironically, how you handle debt quietly decides how expensive your next debt will be.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "your credit score"
+        },
+        {
+          "name": "percent",
+          "label": "keep usage < 30%"
+        },
+        {
+          "name": "scale",
+          "label": "it sets your future rates"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "A rough guide: under thirty-six percent of your income going to debt is manageable. Push past forty-three percent, and you're in the danger zone, where most lenders won't touch you — and where one missed paycheck starts a chain reaction.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "<36% = okay"
+        },
+        {
+          "name": "warning",
+          "label": ">43% = danger"
+        },
+        {
+          "name": "percent",
+          "label": "one shock from a spiral"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "stage",
+      "narration": "And that chain reaction has a name: the debt spiral. You borrow to cover the payments on debt you already have. The balances compound against you, faster than you can earn. Each month, the hole gets deeper, and climbing out gets harder.",
+      "motif": "debtspiral",
+      "caption": "borrowing to pay off borrowing"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "If you're drowning in high-interest debt, there's a lifeline: consolidation. Roll several nasty balances into one lower-rate loan, or a zero-percent balance transfer. It genuinely helps — but only if you also stop adding new debt. Otherwise you've just emptied the card so you can fill it up again.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "lifering",
+          "label": "consolidate to lower rate"
+        },
+        {
+          "name": "creditcard",
+          "label": "0% balance transfer"
+        },
+        {
+          "name": "warning",
+          "label": "…then STOP borrowing"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "screenshot",
+      "narration": "At the bottom of the spiral is default — the failure to meet the legal obligations of a loan. Missed payments, wrecked credit, repossession, bankruptcy. The final, brutal stop on the wrong side of the debt ladder.",
+      "sourceId": "wiki-default"
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "The worst of all of it hides at the very bottom — preying on the desperate.",
+      "heading": "The Predators",
+      "kicker": "payday loans"
+    },
+    {
+      "id": "s35",
+      "type": "screenshot",
+      "narration": "A payday loan is a short-term unsecured loan, aimed at people who need cash before their next paycheck. They sound small and harmless. Their effective interest rates are anything but — often reaching into the hundreds of percent.",
+      "sourceId": "wiki-payday"
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "Payday loans are engineered to trap. Most borrowers can't repay in two weeks, so they 'roll it over' — paying another huge fee just to extend. The average payday borrower ends up in debt for most of the year, paying fees that utterly dwarf the tiny amount they first borrowed.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "mousetrap",
+          "label": "designed to trap"
+        },
+        {
+          "name": "clock",
+          "label": "rolled over all year"
+        },
+        {
+          "name": "warning",
+          "label": "fees dwarf the loan"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "screenshot",
+      "narration": "This is the modern face of usury — the practice of making loans that are seen as unfairly enriching the lender. For thousands of years it was condemned as a sin. Today, it's a storefront on the corner, trapping the most vulnerable in an endless cycle.",
+      "sourceId": "wiki-usury"
+    },
+    {
+      "id": "s37",
+      "type": "title",
+      "narration": "So if you're stuck somewhere on this ladder, here's how to climb back down.",
+      "heading": "Digging Out",
+      "kicker": "the escape plan"
+    },
+    {
+      "id": "s38",
+      "type": "stage",
+      "narration": "There are two proven ways to kill debt. The avalanche: attack the highest-interest debt first, which saves you the most money. Or the snowball: pay off the smallest balance first, which gives you fast wins and keeps you motivated. Both work — pick the one you'll actually stick to.",
+      "motif": "avalanchesnowball",
+      "caption": "two ways to dig out"
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "One critical step before you attack the debt: build a small starter emergency fund — even just a thousand dollars. Without it, the next surprise expense goes straight back onto a credit card, and you're stuck in the cycle forever. That tiny buffer is what finally breaks it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "safetynet",
+          "label": "a $1K starter buffer"
+        },
+        {
+          "name": "shovel",
+          "label": "then attack the debt"
+        },
+        {
+          "name": "brokenchain",
+          "label": "breaks the cycle"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "The non-negotiable rule is this: never carry a credit card balance. If you take one thing from this entire video, let it be that. At twenty-plus percent, credit card debt will outrun almost any good you can do with your money elsewhere. Kill it first, always.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "never carry a balance"
+        },
+        {
+          "name": "scissors",
+          "label": "kill it first"
+        },
+        {
+          "name": "warning",
+          "label": "20% outruns everything"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "And here's a free trick almost nobody uses: just ask. Call your credit card company and ask them to lower your rate. If you've paid on time, they surprisingly often will — they'd rather cut your rate than lose you entirely. One ten-minute phone call can save you hundreds of dollars.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "phone",
+          "label": "just call and ask"
+        },
+        {
+          "name": "percent",
+          "label": "they often lower it"
+        },
+        {
+          "name": "moneybag",
+          "label": "saves you hundreds"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "And flip the whole thing around. Once the bad debt is gone, the same tool that trapped you can start building you up. Use cheap, good debt to buy assets that grow — and suddenly you're playing the game the wealthy have played all along.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "brokenchain",
+          "label": "bad debt gone"
+        },
+        {
+          "name": "house",
+          "label": "cheap debt → assets"
+        },
+        {
+          "name": "moneytree",
+          "label": "now it builds you"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "And the ultimate flip: once you're free of bad debt, you can quietly switch sides of the whole game. By owning broad index funds, you own slices of the very banks and lenders charging all that interest. You go from paying the interest, to collecting it — from the prey, to the owner.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "brokenchain",
+          "label": "escape the debt"
+        },
+        {
+          "name": "bond",
+          "label": "own the lenders"
+        },
+        {
+          "name": "moneytree",
+          "label": "collect the interest"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "stage",
+      "narration": "So here's the whole ladder. Zero is freedom. Credit cards and car loans are the traps. Student loans are a gamble. A mortgage is the wealth-builder. And a million can be either an empire or a grave — it all depends on what the debt bought, and what it cost.",
+      "motif": "debtladder",
+      "caption": "it's not the amount — it's the type"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "Because debt itself was never good or evil. It's a lever. Pointed at an asset that grows, borrowed cheaply, it quietly builds fortunes. Pointed at junk that shrinks, borrowed expensively, it quietly destroys them. The number on the statement matters far less than the direction you point it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "debt is just a lever"
+        },
+        {
+          "name": "moneytree",
+          "label": "at assets → wealth"
+        },
+        {
+          "name": "ballchain",
+          "label": "at junk → ruin"
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "type": "character",
+      "narration": "And if a situation is truly hopeless, know that bankruptcy exists for a reason. It's a brutal, scarring reset — but it is a reset, a legal fresh start for when debt becomes mathematically impossible. It should always be the last resort, never the first. But it is not the end of your story.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "a legal fresh start"
+        },
+        {
+          "name": "warning",
+          "label": "last resort only"
+        },
+        {
+          "name": "seedling",
+          "label": "not the end"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "So wherever you sit on this ladder tonight, the move is always the same. Ruthlessly kill the high-interest debt that's burying you. Keep only the cheap debt that's building you. And never, ever let a payday lender or a credit card decide your future.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shovel",
+          "label": "kill the bad debt"
+        },
+        {
+          "name": "house",
+          "label": "keep the good"
+        },
+        {
+          "name": "brokenchain",
+          "label": "own your future"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "If this finally made debt make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "brokenchain",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-debt",
+      "name": "Debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt",
+      "quote": "to pay money borrowed or otherwise withheld from another party"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "the interest rate for a whole year"
+    },
+    {
+      "id": "wiki-cc",
+      "name": "Credit card interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+      "quote": "a way in which credit card issuers generate revenue"
+    },
+    {
+      "id": "wiki-student",
+      "name": "Student loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_loan",
+      "quote": "designed to help students pay for tertiary education"
+    },
+    {
+      "id": "wiki-dti",
+      "name": "Debt-to-income ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt-to-income_ratio",
+      "quote": "the percentage of a consumer's monthly gross income"
+    },
+    {
+      "id": "wiki-default",
+      "name": "Default (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Default_(finance)",
+      "quote": "failure to meet the legal obligations"
+    },
+    {
+      "id": "wiki-payday",
+      "name": "Payday loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Payday_loan",
+      "quote": "a short-term unsecured loan"
+    },
+    {
+      "id": "wiki-usury",
+      "name": "Usury (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Usury",
+      "quote": "the practice of making loans that are seen as unfairly enriching the lender"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Debt: From $0 to $1 Million Owed",
+    "alts": [
+      "Good Debt vs Bad Debt: Every Level From $0 to $1M",
+      "Why $1M of Debt Can Make You Rich and $5K Can Ruin You"
+    ],
+    "hook": "A million dollars of debt can make you rich — and $5,000 can quietly destroy you. It was never about the amount; it's about the type and the rate. This is every level of debt, by the numbers: good vs bad debt, the interest-rate spectrum (mortgage ~7%, student ~6%, car ~9%, credit card ~24%, payday ~400%), APR, and the climb from $0 (debt-free) through credit cards, car loans, student loans, and a mortgage, up to $1M owed (leverage or ruin). Plus the minimum-payment trap, being 'underwater,' the debt spiral and default, DTI danger zones, and how to dig out with the avalanche vs snowball methods. Fully cited.",
+    "bullets": [
+      "Good debt vs bad debt — the one line that divides it all",
+      "The interest-rate spectrum: 7% mortgage to 400% payday",
+      "The minimum-payment trap on credit cards",
+      "Being 'underwater' on a car loan",
+      "The debt spiral, default, and DTI danger zones",
+      "Digging out: the avalanche vs snowball methods"
+    ],
+    "tags": [
+      "every level of debt",
+      "good debt vs bad debt",
+      "credit card debt",
+      "debt avalanche vs snowball",
+      "payday loans",
+      "student loans",
+      "debt to income ratio",
+      "how to get out of debt",
+      "APR explained",
+      "types of debt",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#debt",
+      "#personalfinance",
+      "#creditcards",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "EVERY LEVEL OF DEBT",
+      "hookBot": "$0 → $1,000,000",
+      "napkinNumber": "400%",
+      "napkinSub": "vs 7% mortgage",
+      "deco": "brokenchain"
+    },
+    "chapters": [
+      [
+        "the one line that splits it in two",
+        "Good vs bad"
+      ],
+      [
+        "Look at the full spectrum",
+        "The rate spectrum"
+      ],
+      [
+        "starting at the best possible level",
+        "Level 0 — debt-free"
+      ],
+      [
+        "the most dangerous",
+        "Credit card debt"
+      ],
+      [
+        "a very different kind of debt",
+        "The car loan"
+      ],
+      [
+        "an investment in yourself",
+        "Student loans"
+      ],
+      [
+        "the 'good debt' most people will ever take on",
+        "The mortgage"
+      ],
+      [
+        "a million dollars owed",
+        "$1 million owed"
+      ],
+      [
+        "when any level of debt has become too much",
+        "The danger zone"
+      ],
+      [
+        "how to climb back down",
+        "Digging out"
+      ]
+    ]
+  }
+}

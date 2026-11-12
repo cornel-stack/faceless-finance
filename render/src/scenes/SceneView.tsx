@@ -4523,6 +4523,99 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={492} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>max out the house, and it devours the rest of your life</text>
       </svg>
     );
+  } else if (m === "debtladder") {
+    // The levels of personal debt by type and amount.
+    const tiers: [string, string][] = [["$0", "debt-free"], ["$6K", "credit cards"], ["$30K", "car loan"], ["$40K", "student loans"], ["$300K", "mortgage"], ["$1M+", "leverage… or ruin"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => {
+          const w = 150 + i * 128; const y = 90 + i * 66;
+          const op = interpolate(climb, [i * 0.13, i * 0.13 + 0.2], [0, 1], clampBoth);
+          return <g key={i} opacity={op}><rect x={VW / 2 - w / 2} y={y} width={w} height={54} rx={7} fill={[green, "#e8d7bf", gold, "#cfe3d4", "#d98b5f", red][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 45} y={y + 34} fontSize={19} fontWeight={900} fill={i === 0 ? "#fff" : ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 55} y={y + 33} fontSize={14} fontWeight={800} fill={i === 0 ? "#fff" : ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>;
+        })}
+        <text x={VW / 2} y={470} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>it's not the amount — it's the type</text>
+      </svg>
+    );
+  } else if (m === "rateladder") {
+    // The interest-rate spectrum, cheap to predatory.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string, number, string][] = [["mortgage", "~7%", 70, green], ["student", "~6%", 60, "#cfe3d4"], ["car loan", "~9%", 90, gold], ["credit card", "~24%", 240, red], ["payday loan", "~400%", 520, "#7a1f16"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the real cost of each debt</text>
+        {rows.map(([lab, rate, w, col], i) => {
+          const y = 100 + i * 74;
+          return <g key={i} opacity={interpolate(grow, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><text x={230} y={y + 30} fontSize={17} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text><rect x={250} y={y + 6} width={Math.min(560, (w as number)) * grow} height={40} rx={6} fill={col as string} stroke={ink} strokeWidth={3} /><text x={250 + Math.min(560, (w as number)) * grow + 42} y={y + 32} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{rate}</text></g>;
+        })}
+      </svg>
+    );
+  } else if (m === "goodbaddebt") {
+    // Good debt buys growing assets; bad debt buys shrinking junk.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(290 290)">
+          <circle r={92} fill={green} stroke={ink} strokeWidth={6} /><text y={-30} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">GOOD debt</text><text y={2} fontSize={15} fontWeight={800} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>buys assets</text><text y={24} fontSize={15} fontWeight={800} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>that GROW</text>
+          <path d={`M-10 50 l0 ${30 * t}`} stroke="#eafaf0" strokeWidth={3} /><text y={100} fontSize={22} fill="#eafaf0" textAnchor="middle" opacity={t}>↑</text>
+        </g>
+        <g transform="translate(690 290)">
+          <circle r={92} fill={red} stroke={ink} strokeWidth={6} /><text y={-30} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">BAD debt</text><text y={2} fontSize={15} fontWeight={800} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>buys junk</text><text y={24} fontSize={15} fontWeight={800} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>that SHRINKS</text>
+          <text y={110} fontSize={22} fill="#ffe8e4" textAnchor="middle" opacity={t}>↓</text>
+        </g>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one builds you up, one eats you alive</text>
+      </svg>
+    );
+  } else if (m === "avalanchesnowball") {
+    // Two payoff strategies side by side.
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">two ways to dig out</text>
+        <g transform="translate(270 0)">
+          <text x={0} y={120} fontSize={20} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">Avalanche</text>
+          <text x={0} y={150} fontSize={14} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>highest rate first</text>
+          {[["payday 400%", red], ["card 24%", "#d98b5f"], ["car 9%", gold], ["student 6%", green]].map(([l, c], i) => <g key={i}><rect x={-120} y={180 + i * 58} width={240} height={46} rx={6} fill={c as string} stroke={ink} strokeWidth={3} opacity={interpolate(frame, [fps * (0.4 + i * 0.3), fps * (0.8 + i * 0.3)], [1, 0.25], clampBoth)} /><text x={0} y={180 + i * 58 + 29} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{l as string}</text></g>)}
+          <text x={0} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>saves the most money</text>
+        </g>
+        <g transform="translate(710 0)">
+          <text x={0} y={120} fontSize={20} fontWeight={900} fill={blue} textAnchor="middle" fontFamily="Georgia, serif">Snowball</text>
+          <text x={0} y={150} fontSize={14} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>smallest balance first</text>
+          {[["$500", green], ["$2K", gold], ["$8K", "#d98b5f"], ["$20K", red]].map(([l, c], i) => <g key={i}><rect x={-120} y={180 + i * 58} width={240} height={46} rx={6} fill={c as string} stroke={ink} strokeWidth={3} opacity={interpolate(frame, [fps * (0.4 + i * 0.3), fps * (0.8 + i * 0.3)], [1, 0.25], clampBoth)} /><text x={0} y={180 + i * 58 + 29} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{l as string}</text></g>)}
+          <text x={0} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>feels the most motivating</text>
+        </g>
+      </svg>
+    );
+  } else if (m === "debtfreedom") {
+    // The weight of debt lifting off at $0.
+    const lift = interpolate(frame, [fps * 0.8, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform={`translate(490 ${330 - 120 * lift})`}>
+          <circle cx={0} cy={-40} r={30} fill={parch} stroke={ink} strokeWidth={5} />
+          <path d="M0 -10 L0 60 M0 10 L-34 40 M0 10 L34 40 M0 60 L-26 110 M0 60 L26 110" stroke={ink} strokeWidth={6} fill="none" strokeLinecap="round" />
+          {lift > 0.5 && <text x={0} y={-70} fontSize={26} fill={gold} textAnchor="middle">✦</text>}
+        </g>
+        <g transform={`translate(490 440)`} opacity={1 - lift}><rect x={-70} y={-30} width={140} height={56} rx={8} fill={ink} /><text y={8} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>DEBT</text></g>
+        <text x={VW / 2} y={492} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$0 debt is a weight lifting off your chest</text>
+      </svg>
+    );
+  } else if (m === "underwaterdebt") {
+    // Owing more than the thing is worth.
+    const sink = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    const waterY = 230;
+    art = (
+      <svg width={VW} height={VH}>
+        <rect x={0} y={waterY} width={VW} height={VH - waterY} fill="#bfe0ee" opacity={0.55} />
+        <line x1={0} y1={waterY} x2={VW} y2={waterY} stroke={blue} strokeWidth={3} />
+        <text x={150} y={waterY - 14} fontSize={16} fontWeight={800} fill={blue} fontFamily={sans}>what it's worth</text>
+        <g transform={`translate(490 ${270 + 150 * sink})`}>
+          <rect x={-90} y={-50} width={180} height={100} rx={10} fill={gold} stroke={ink} strokeWidth={5} />
+          <text y={-6} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>$40K car</text>
+          <text y={22} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>$30K still owed</text>
+        </g>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">'underwater': you owe more than it's worth</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

@@ -2,894 +2,852 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "When you ask how much house you can afford, there are really two answers — and they're wildly different. There's the giant number the bank will happily approve you for. And there's the much smaller number that actually keeps your life free. Confuse the two, and you become what's called 'house poor.'",
+    "narration": "A million dollars of debt can make you rich. Five thousand dollars of debt can quietly destroy you. That sounds backwards — but it's the single most important truth about borrowing. It was never really about how much you owe. It's about the type of debt, and the rate.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "two different answers"
+        "name": "mortgage",
+        "label": "$1M can make you rich"
       },
       {
-        "name": "bank",
-        "label": "what the bank approves"
+        "name": "creditcard",
+        "label": "$5K can destroy you"
       },
       {
-        "name": "ballchain",
-        "label": "vs. what keeps you free"
+        "name": "percent",
+        "label": "it's the type & rate"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that shocks everyone. A solid sixty-thousand-dollar salary — above the US median — safely affords a house of only around two hundred thousand dollars at today's rates. Far less than the prices you see on your screen every day.",
-    "text": "$205,000",
-    "sub": "the house a $60K salary safely affords",
-    "icon": "house"
+    "narration": "Here's the number that proves it. Borrow from a mortgage, and you pay around seven percent a year. Borrow the exact same dollar from a payday lender, and you can pay four hundred percent. The same debt, costing nearly sixty times as much.",
+    "text": "400%",
+    "sub": "payday loan APR — vs ~7% for a mortgage",
+    "icon": "percent"
   },
   {
-    "id": "s43",
+    "id": "s46",
     "type": "character",
-    "narration": "There used to be a dead-simple rule: buy a house up to three times your income. At the low rates of the past, that worked beautifully. But at seven percent, that same three-times house has a monthly payment that blows right past the safe limit. The old rule quietly broke.",
+    "narration": "Remember, the same compound interest that quietly builds a saver's fortune runs in reverse against a borrower. On high-interest debt, the interest itself starts earning interest for the lender. Left alone, bad debt doesn't just sit there — it actively grows, while you sleep.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "house",
-        "label": "old rule: 3× income"
+        "name": "snowball",
+        "label": "compounding in reverse"
       },
       {
         "name": "percent",
-        "label": "broke at 7%"
+        "label": "interest on interest"
       },
       {
         "name": "warning",
-        "label": "payment too high now"
+        "label": "it grows while you sleep"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we're running the real math at every salary — forty thousand, all the way up to two hundred thousand — and showing exactly how much house each one actually buys. Plus the hidden costs, and the one rule that keeps you from drowning.",
+    "narration": "So today we're climbing every level of debt — from zero, all the way to a million owed — and at each one, asking the only questions that matter. Is this debt building you up, or burying you? And how do you climb back down if you're stuck?",
     "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "the real math"
-      },
-      {
         "name": "ladder",
-        "label": "$40K → $200K"
+        "label": "$0 → $1M owed"
       },
       {
-        "name": "sofa",
-        "label": "what each buys"
+        "name": "shovel",
+        "label": "building or burying?"
+      },
+      {
+        "name": "brokenchain",
+        "label": "how to climb out"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "get approved for the biggest mortgage I can",
-    "memeBottom": "spend the next 30 years unable to afford anything else",
-    "narration": "Because the bank's job isn't to protect your lifestyle. It's to lend you the absolute maximum you can technically repay. If you take every dollar they offer, you can end up with a beautiful house — and no money left for a life."
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "borrow cheaply to buy something that grows",
+    "memeBottom": "borrow expensively to buy something that shrinks",
+    "narration": "Because there are really two completely different things we both call 'debt.' One is a powerful tool the wealthy use to get richer. The other is a trap that quietly keeps people poor for life. Telling them apart is the whole game."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the golden rule lenders use to decide.",
-    "heading": "The 28/36 Rule",
-    "kicker": "how 'afford' is defined"
+    "narration": "First, what debt actually is — and the one line that splits it in two.",
+    "heading": "Good vs. Bad",
+    "kicker": "the great divide"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "A mortgage is a loan used by buyers of real property to raise funds to buy real estate, secured by the home itself. If you stop paying, the bank takes the house. That's why they care intensely about whether you can really keep up.",
-    "sourceId": "wiki-mortgage"
+    "narration": "At its core, debt is simply an obligation to pay money borrowed or otherwise withheld from another party. You get money now, and you promise to pay it back later — plus interest, the price of borrowing.",
+    "sourceId": "wiki-debt"
   },
   {
     "id": "s7",
-    "type": "screenshot",
-    "narration": "The tool they use is your debt-to-income ratio — the percentage of your monthly gross income that goes toward paying debts. The lower it is, the safer you look to a lender, and the more they'll offer.",
-    "sourceId": "wiki-dti"
+    "type": "stage",
+    "narration": "And here's the line that divides all debt. Good debt is money borrowed cheaply to buy something that grows in value — a home, an education, a business. Bad debt is money borrowed expensively to buy something that shrinks — gadgets, nights out, a car you can't afford. One builds you up. The other eats you alive.",
+    "motif": "goodbaddebt",
+    "caption": "one builds you up, one eats you alive"
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "narration": "Of course, real life has a gray zone. A modest loan for a reliable car to get to work isn't exactly 'good' debt, but it's necessary debt — a sensible tool. The goal was never zero debt at all costs. It's to be ruthlessly honest about which kind you're actually signing up for.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "car",
+        "label": "necessary debt"
+      },
+      {
+        "name": "scale",
+        "label": "be honest about it"
+      },
+      {
+        "name": "handshake",
+        "label": "a sensible tool"
+      }
+    ]
   },
   {
     "id": "s8",
-    "type": "stage",
-    "narration": "That feeds the classic twenty-eight / thirty-six rule. Your total housing payment should stay under twenty-eight percent of your gross monthly income. And all your debts combined — housing, car, student loans — should stay under thirty-six percent. Cross those lines, and you're in dangerous territory.",
-    "motif": "rule2836",
-    "caption": "the 28 / 36 rule"
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "Lenders actually run two numbers. The front-end ratio is just your housing cost against income — that's the twenty-eight. The back-end adds every other debt you carry — that's the thirty-six. So a big car payment or student loan quietly shrinks the house you can qualify for.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "front-end: housing"
-      },
-      {
-        "name": "creditcard",
-        "label": "back-end: all debt"
-      },
-      {
-        "name": "scissors",
-        "label": "other debt shrinks it"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "The number that tells you which is which is the APR — the interest rate for a whole year. It's the single most honest measure of how expensive a debt truly is. The higher the APR, the more likely it's the dangerous kind.",
+    "sourceId": "wiki-apr"
   },
   {
     "id": "s9",
-    "type": "character",
-    "narration": "Let's make it concrete. On a sixty-thousand-dollar salary, that's five thousand a month gross. Twenty-eight percent of that is fourteen hundred dollars for your entire housing payment. And fourteen hundred a month, at today's rates, simply doesn't stretch as far as people hope.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "paystub",
-        "label": "$5,000/mo gross"
-      },
-      {
-        "name": "percent",
-        "label": "28% = $1,400/mo"
-      },
-      {
-        "name": "house",
-        "label": "doesn't stretch far"
-      }
-    ]
+    "type": "stage",
+    "narration": "Look at the full spectrum. A mortgage, around seven percent. Student loans, roughly six. A car loan, maybe nine. A credit card, a brutal twenty-four. And a payday loan, an almost unbelievable four hundred percent. The cost of the exact same borrowed dollar explodes as you go down the list.",
+    "motif": "rateladder",
+    "caption": "the real cost of each debt"
   },
   {
-    "id": "s45",
-    "type": "character",
-    "narration": "Now, lenders will often let you stretch much further — some loan programs approve a debt ratio over forty, even fifty percent. They will happily hand you the rope. Whether you choose to hang your whole lifestyle with it is entirely up to you.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "handshake",
-        "label": "they'll stretch to 50%"
-      },
-      {
-        "name": "warning",
-        "label": "they hand you the rope"
-      },
-      {
-        "name": "ballchain",
-        "label": "your choice to take it"
-      }
-    ]
+    "id": "s48",
+    "type": "callout",
+    "narration": "Make it concrete with ten thousand dollars borrowed for one year. At a mortgage's seven percent, the interest is seven hundred dollars. On a credit card, two thousand four hundred. From a payday lender, that same ten thousand can cost you forty thousand in a single year. Same loan, unrecognizable price.",
+    "text": "$40,000",
+    "sub": "a year's interest on $10K at a payday rate",
+    "icon": "warning"
   },
   {
     "id": "s10",
     "type": "title",
-    "narration": "And whether that payment buys a mansion or a shoebox comes down to one brutal number.",
-    "heading": "The Rate Is King",
-    "kicker": "why timing matters"
+    "narration": "So let's climb the ladder, starting at the best possible level.",
+    "heading": "Level 0 — $0",
+    "kicker": "debt-free"
   },
   {
     "id": "s11",
-    "type": "screenshot",
-    "narration": "Your mortgage payment is set by an amortization schedule — the process of paying off a debt over time through regular, equal payments. Early on, almost all of each payment is pure interest, barely denting what you owe.",
-    "sourceId": "wiki-amort"
+    "type": "stage",
+    "narration": "Zero debt. No payments, no interest, no one with a claim on your future income. It's rarer than you'd think — and it's quietly one of the most powerful financial positions there is. Every dollar you earn is fully, completely yours.",
+    "motif": "debtfreedom",
+    "caption": "$0 debt is a weight lifting off your chest"
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "And debt-free is more than a number — it's a superpower. With no payments hanging over you, you can take a risk, quit a toxic job, start a business, or ride out a layoff without panic. Zero debt quietly buys you something priceless: options.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "brokenchain",
+        "label": "no payments"
+      },
+      {
+        "name": "briefcase",
+        "label": "take real risks"
+      },
+      {
+        "name": "smiley",
+        "label": "options = freedom"
+      }
+    ]
   },
   {
     "id": "s12",
     "type": "character",
-    "narration": "And the interest rate controls everything. A higher rate doesn't just cost a little more — it dramatically shrinks the size of the loan your fixed payment can support. The exact same monthly budget buys a wildly different house depending on where rates sit.",
+    "narration": "But here's the twist: zero debt isn't automatically the goal. Someone with no debt and no assets is worse off than someone with a cheap mortgage on a growing home. Debt-free is wonderful — but using cheap debt wisely can build wealth even faster.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "the rate rules all"
-      },
-      {
-        "name": "mortgage",
-        "label": "same payment…"
+        "name": "piggybank",
+        "label": "$0 debt, $0 assets…"
       },
       {
         "name": "house",
-        "label": "…very different house"
+        "label": "vs. cheap mortgage, growing"
+      },
+      {
+        "name": "scale",
+        "label": "debt-free ≠ always best"
       }
     ]
   },
   {
     "id": "s13",
-    "type": "stage",
-    "narration": "Watch what rates do to a hundred-thousand-dollar earner. At a three percent rate, their budget buys a four-hundred-thousand-dollar home. At seven percent, that same budget buys barely two hundred fifty thousand. Rates rising quietly erased a hundred and fifty thousand dollars of house — with no change in salary at all.",
-    "motif": "ratekillsaffordability",
-    "caption": "higher rates quietly shrink the house in half"
-  },
-  {
-    "id": "s46",
-    "type": "callout",
-    "narration": "And here's what the monthly payment quietly hides. On a thirty-year mortgage at seven percent, you don't just pay back the house — you pay back roughly double. A four-hundred-thousand-dollar loan ends up costing you close to a million dollars by the final payment.",
-    "text": "$960,000",
-    "sub": "total paid on a $400K loan at 7% over 30 years",
-    "icon": "mortgage"
+    "type": "title",
+    "narration": "Now the first rung most people actually land on — and the most dangerous.",
+    "heading": "Credit Card Debt",
+    "kicker": "the silent killer"
   },
   {
     "id": "s14",
-    "type": "title",
-    "narration": "So let's climb the salaries and see what each one really buys, at today's rates.",
-    "heading": "House by Salary",
-    "kicker": "the real numbers"
+    "type": "screenshot",
+    "narration": "The average American household carries several thousand dollars in credit card debt. And credit card interest is, quite openly, a way in which card issuers generate revenue. You are the revenue.",
+    "sourceId": "wiki-cc"
   },
   {
-    "id": "s15",
-    "type": "stage",
-    "narration": "Here's the rough reality, assuming a seven percent rate and twenty percent down. Forty thousand a year affords around a hundred and thirty-five thousand of house. Sixty thousand, about two hundred five. A hundred thousand, roughly three hundred forty. And two hundred thousand, about six hundred eighty. Call it three to three-and-a-half times your income.",
-    "motif": "salarytohouse",
-    "caption": "salary → the house it really buys"
-  },
-  {
-    "id": "s47",
+    "id": "s50",
     "type": "character",
-    "narration": "And notice: most buyers today aren't single. Two incomes roughly double the house a couple can afford — which is a big reason the whole market is priced the way it is. For a solo buyer, that same ladder is brutally, almost impossibly, steeper.",
+    "narration": "But here's the crucial secret about credit cards: used right, the interest is zero. If you pay the full balance every single month, you ride the grace period and never pay a cent of interest. A credit card is only a trap if you carry a balance. Pay in full, and you actually win.",
     "pose": "explain",
     "props": [
       {
-        "name": "couple",
-        "label": "two incomes = 2× house"
+        "name": "creditcard",
+        "label": "pay in full"
       },
       {
-        "name": "house",
-        "label": "the market assumes it"
+        "name": "percent",
+        "label": "0% interest"
       },
       {
-        "name": "warning",
-        "label": "solo buyers struggle"
+        "name": "smiley",
+        "label": "ride the grace period"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "narration": "At twenty-plus percent, this is the most toxic common debt there is. It's almost always 'bad debt' — borrowed to buy things that are already losing value the moment you own them. And it has a secret weapon designed to keep you paying forever.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "creditcard",
+        "label": "20%+ APR"
+      },
+      {
+        "name": "grocerybag",
+        "label": "buys shrinking stuff"
+      },
+      {
+        "name": "mousetrap",
+        "label": "a hidden trap"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "character",
-    "narration": "Notice how far these fall below the headlines. With the median US home now well over four hundred thousand dollars, a household needs to earn well into six figures just to afford an average house. That gap is exactly why so many feel permanently priced out.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "house",
-        "label": "median home $400K+"
-      },
-      {
-        "name": "paystub",
-        "label": "needs 6-figure income"
-      },
-      {
-        "name": "warning",
-        "label": "the affordability gap"
-      }
-    ]
+    "type": "stage",
+    "narration": "That weapon is the minimum payment. The card cheerfully asks for a tiny amount each month — but at that rate, a few thousand dollars of debt can take over a decade to clear, and you'll pay back double or triple what you borrowed. The minimum payment is a trap dressed up as a kindness.",
+    "motif": "minimumpaymenttrap",
+    "caption": "the minimum payment is a trap"
   },
   {
-    "id": "s48",
-    "type": "character",
-    "narration": "The squeeze is real and measurable. The typical first-time buyer is now pushing forty years old — up from the late twenties just a generation ago. People today aren't failing at this. The underlying math simply got dramatically harder.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "birthdaycake",
-        "label": "first buyer ~38"
-      },
-      {
-        "name": "clock",
-        "label": "up from late 20s"
-      },
-      {
-        "name": "warning",
-        "label": "the math got harder"
-      }
-    ]
+    "id": "s51",
+    "type": "callout",
+    "narration": "Here's the trap in hard numbers. Put five thousand dollars on a card at twenty-four percent, and pay only the minimum each month. It takes you well over fifteen years to clear it — and you hand the bank nearly six thousand dollars in pure interest. You end up paying for everything twice.",
+    "text": "$5,800",
+    "sub": "interest on a $5K card paying only the minimum",
+    "icon": "creditcard"
   },
   {
     "id": "s17",
     "type": "title",
-    "narration": "But the sticker price is only the beginning. Now the trap almost everyone falls into.",
-    "heading": "The Hidden Half",
-    "kicker": "the costs you don't see"
+    "narration": "Climb to a bigger number — but a very different kind of debt.",
+    "heading": "The Car Loan",
+    "kicker": "borrowing for a brick that shrinks"
   },
   {
     "id": "s18",
-    "type": "stage",
-    "narration": "People budget for the mortgage and forget everything underneath it. But the mortgage is just the tip of the iceberg. Below the surface sit property taxes, home insurance, ongoing maintenance, and often HOA fees — a whole second mountain of cost.",
-    "motif": "truehousecost",
-    "caption": "the mortgage is only the tip"
-  },
-  {
-    "id": "s49",
     "type": "character",
-    "narration": "There's another up-front bite almost nobody warns you about: closing costs. On top of the down payment, expect to hand over another two to five percent of the price at signing — for the lender, the title, and a pile of fees. More cash, gone before you even move in.",
+    "narration": "The average new car loan is now pushing forty thousand dollars. And this is a special kind of bad debt, because you're borrowing a large sum to buy an asset that loses value fast — a new car can drop twenty percent the moment you drive it off the lot.",
     "pose": "explain",
     "props": [
       {
-        "name": "receipt",
-        "label": "+2-5% at closing"
+        "name": "car",
+        "label": "~$40K borrowed"
       },
       {
-        "name": "moneybag",
-        "label": "on top of the down payment"
+        "name": "chartdown",
+        "label": "−20% off the lot"
       },
       {
         "name": "warning",
-        "label": "gone before move-in"
-      }
-    ]
-  },
-  {
-    "id": "s19",
-    "type": "screenshot",
-    "narration": "Take property tax — an ad valorem tax on the value of a property, paid every single year, forever. On a four-hundred-thousand-dollar home, that can easily be four to eight thousand dollars annually, depending on your state.",
-    "sourceId": "wiki-proptax"
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "And property tax isn't frozen. As your home's assessed value rises, so does the bill — year after year. A tax you could just barely afford at purchase can quietly balloon over a decade, long after your mortgage payment itself is locked in place.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "assessed value rises"
-      },
-      {
-        "name": "receipt",
-        "label": "tax bill climbs"
-      },
-      {
-        "name": "warning",
-        "label": "it balloons over time"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "narration": "Then add insurance, and the big silent one: maintenance. A good rule is to budget about one percent of the home's value every year for repairs — a new roof, a dead furnace, a burst pipe. On a four-hundred-thousand home, that's four thousand dollars a year, just to stand still.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "wrench",
-        "label": "maintenance ~1%/yr"
-      },
-      {
-        "name": "house",
-        "label": "roof, furnace, pipes"
-      },
-      {
-        "name": "receipt",
-        "label": "+$4K/yr to stand still"
-      }
-    ]
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "And maintenance isn't just a leaky tap. It's the five-figure gut-punches: a new roof can run fifteen thousand dollars, a new heating and cooling system eight. As a homeowner, every one of those disasters is now entirely, personally, your problem.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "wrench",
-        "label": "roof: ~$15K"
-      },
-      {
-        "name": "house",
-        "label": "HVAC: ~$8K"
-      },
-      {
-        "name": "warning",
-        "label": "all yours now"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "narration": "Stack it all up, and the true cost of owning is often thirty to fifty percent more than the mortgage payment alone. The house you can 'afford' on paper quietly costs far more than the number the calculator showed you.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "mortgage was a lie"
-      },
-      {
-        "name": "percent",
-        "label": "+30-50% in reality"
-      },
-      {
-        "name": "warning",
-        "label": "budget for all of it"
-      }
-    ]
-  },
-  {
-    "id": "s22",
-    "type": "title",
-    "narration": "Now the pile of cash standing between you and the keys.",
-    "heading": "The Down Payment",
-    "kicker": "and the PMI trap"
-  },
-  {
-    "id": "s23",
-    "type": "screenshot",
-    "narration": "To buy, you first need a down payment — an initial up-front partial payment for the purchase. For a house, the classic target is twenty percent of the price, paid in cash before you own a single brick.",
-    "sourceId": "wiki-downpayment"
-  },
-  {
-    "id": "s24",
-    "type": "character",
-    "narration": "Twenty percent is a daunting wall. On a three-hundred-thousand-dollar home, that's sixty thousand dollars in cash, on top of closing costs. It's the single biggest reason would-be buyers stay renters for years, quietly saving up.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "20% = $60K cash"
-      },
-      {
-        "name": "house",
-        "label": "on a $300K home"
-      },
-      {
-        "name": "apartment",
-        "label": "why renters wait"
+        "label": "debt on a shrinking asset"
       }
     ]
   },
   {
     "id": "s52",
     "type": "character",
-    "narration": "And saving that down payment is a marathon of its own. On a median income, stashing twenty percent for a median home can take the better part of a decade — all while rising prices try to outrun your savings. It's a race a lot of people feel they're quietly losing.",
+    "narration": "There's a simple guardrail for car debt: the twenty / four / ten rule. Put at least twenty percent down, finance for no more than four years, and keep all your car costs under ten percent of your income. If a car breaks those rules, it is quietly too expensive for you.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "car",
+        "label": "20% down"
+      },
+      {
+        "name": "calculator",
+        "label": "≤ 4-year loan"
+      },
+      {
+        "name": "percent",
+        "label": "≤ 10% of income"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "stage",
+    "narration": "This creates a nasty situation called being 'underwater.' The car's value drops faster than you pay the loan down — so for years, you owe more than the car is actually worth. If you crash it or sell it, you're left paying for a car you no longer even have.",
+    "motif": "underwaterdebt",
+    "caption": "'underwater': you owe more than it's worth"
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "And here's how the underwater trap deepens. Desperate to escape, people roll the leftover debt from their old car straight into the loan on a new one. Now they owe even more, on an even faster-depreciating asset. The hole just follows them, from car to car to car.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "piggybank",
-        "label": "save for ~a decade"
+        "name": "car",
+        "label": "roll old debt in"
+      },
+      {
+        "name": "chartdown",
+        "label": "owe even more"
+      },
+      {
+        "name": "ballchain",
+        "label": "the hole follows you"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "title",
+    "narration": "Now a debt that's supposed to be an investment in yourself.",
+    "heading": "Student Loans",
+    "kicker": "'good debt' gone sideways"
+  },
+  {
+    "id": "s21",
+    "type": "screenshot",
+    "narration": "A student loan is a loan designed to help students pay for tertiary education — the classic example of 'good debt,' because a degree is meant to boost your lifetime income far beyond what it costs.",
+    "sourceId": "wiki-student"
+  },
+  {
+    "id": "s22",
+    "type": "character",
+    "narration": "And in theory, it is good debt. But it only works if the degree actually pays off. Borrow forty thousand for a high-demand skill, and it's a brilliant investment. Borrow a hundred thousand for a degree with few job prospects, and that 'good debt' becomes a decades-long anchor.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gradcap",
+        "label": "degree boosts income?"
       },
       {
         "name": "chartup",
-        "label": "prices run away"
+        "label": "good: high-demand skill"
+      },
+      {
+        "name": "anchor",
+        "label": "bad: no job prospects"
+      }
+    ]
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "So treat a student loan like any investment: weigh the cost against the return. Borrowing for a degree that reliably leads to a strong income can be one of the best bets you'll ever make. Borrowing the same amount for one that doesn't is just expensive bad debt in a cap and gown.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gradcap",
+        "label": "weigh cost vs return"
+      },
+      {
+        "name": "chartup",
+        "label": "good ROI = great bet"
+      },
+      {
+        "name": "warning",
+        "label": "bad ROI = bad debt"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "title",
+    "narration": "And now the giant — the 'good debt' most people will ever take on.",
+    "heading": "The Mortgage",
+    "kicker": "debt that builds wealth"
+  },
+  {
+    "id": "s24",
+    "type": "character",
+    "narration": "A three-hundred-thousand-dollar mortgage sounds terrifying. But it's usually the best debt a normal person can get. It's cheap, it's borrowed against an asset that tends to grow, and every payment slowly converts debt into ownership — into equity that's truly yours.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "house",
+        "label": "cheap rate"
+      },
+      {
+        "name": "chartup",
+        "label": "asset that grows"
+      },
+      {
+        "name": "keys",
+        "label": "builds your equity"
+      }
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "narration": "And mortgages have their own key choice. A thirty-year loan means low payments but far more total interest. A fifteen-year means higher payments, but you own the home in half the time, for a fraction of the interest. Shorter is dramatically cheaper — if you can handle the bigger bite.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "house",
+        "label": "30-yr: low payment"
       },
       {
         "name": "clock",
-        "label": "a race against time"
+        "label": "15-yr: own it sooner"
+      },
+      {
+        "name": "percent",
+        "label": "far less interest"
       }
     ]
   },
   {
     "id": "s25",
-    "type": "screenshot",
-    "narration": "You can buy with less down — but then you trigger private mortgage insurance, a type of insurance payable to a lender that protects them, not you, if you default. It's an extra monthly fee for the privilege of a small down payment.",
-    "sourceId": "wiki-pmi"
-  },
-  {
-    "id": "s53",
     "type": "character",
-    "narration": "The small mercy with PMI is that it's usually not forever. Once you've paid down enough to own twenty percent of the home, you can typically cancel it. But on some government-backed loans, it clings on for the entire life of the loan — so read the fine print carefully.",
+    "narration": "This is the debt the wealthy actually love. Borrowing at seven percent to own something that grows faster than that, over decades, is how ordinary families quietly build most of their net worth. Big number, but the right kind of big.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "cancel at 20% equity"
+        "name": "house",
+        "label": "borrow at 7%…"
       },
       {
-        "name": "scissors",
-        "label": "then it's gone"
+        "name": "moneytree",
+        "label": "…own what grows faster"
       },
       {
-        "name": "warning",
-        "label": "some loans: forever"
+        "name": "nestegg",
+        "label": "most families' wealth"
       }
     ]
   },
   {
     "id": "s26",
-    "type": "stage",
-    "narration": "So twenty percent down is the magic line. Cross it, and you skip PMI entirely and get a smaller, cheaper loan. Fall short, and you pay a monthly penalty that protects the bank, not you — pure dead money, until you build enough equity to shed it.",
-    "motif": "downpaymentpmi",
-    "caption": "under 20%, you rent your risk from an insurer"
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "This is why a bigger down payment is a genuine double win. It skips PMI entirely, and it shrinks the loan you're paying interest on — quietly lowering your monthly payment twice over. Every extra dollar you put down works for you, silently, for thirty years.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "more down"
-      },
-      {
-        "name": "scissors",
-        "label": "no PMI"
-      },
-      {
-        "name": "chartdown",
-        "label": "lower payment too"
-      }
-    ]
+    "type": "title",
+    "narration": "Push to the top of the ladder — a million dollars owed.",
+    "heading": "$1 Million Owed",
+    "kicker": "leverage or ruin"
   },
   {
     "id": "s27",
-    "type": "title",
-    "narration": "Which brings us to the most important distinction in this entire video.",
-    "heading": "Approved ≠ Afford",
-    "kicker": "don't be house poor"
-  },
-  {
-    "id": "s28",
-    "type": "stage",
-    "narration": "The bank might approve you for the absolute maximum — a payment eating forty-three percent of your income. Take it, and you become house poor: a gorgeous home, and nothing left for savings, travel, emergencies, or fun. The house slowly devours your entire life.",
-    "motif": "housepoor",
-    "caption": "max out the house, and it devours the rest of your life"
-  },
-  {
-    "id": "s55",
     "type": "character",
-    "narration": "Here's a simple gut-check. If your housing eats anywhere near half your take-home pay, you are deep in the danger zone. At that point, one job loss, one medical bill, one broken furnace — and the whole thing can come crashing down. The cushion is simply gone.",
+    "narration": "At a million in debt, the two worlds split completely. A business owner or real-estate investor with a million in low-cost debt against income-producing assets can be seriously wealthy. It's called leverage — using borrowed money to control far more than you could alone.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "percent",
-        "label": "~50% of pay = danger"
+        "name": "officetower",
+        "label": "debt on assets"
       },
       {
-        "name": "warning",
-        "label": "one shock away"
+        "name": "chartup",
+        "label": "= leverage"
       },
       {
-        "name": "ballchain",
-        "label": "no cushion left"
-      }
-    ]
-  },
-  {
-    "id": "s29",
-    "type": "character",
-    "narration": "This is the quiet tragedy of over-buying. You stretch for the dream house, and then you can't afford to furnish it, fix it, or ever leave it. You're technically a homeowner — but you're trapped, one lost paycheck away from losing everything.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "lockhouse",
-        "label": "can't furnish or leave"
-      },
-      {
-        "name": "ballchain",
-        "label": "trapped by the dream"
-      },
-      {
-        "name": "warning",
-        "label": "one paycheck from ruin"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "The fix is simple: buy well below your approval. A great habit is to use the twenty-eight percent rule on your take-home pay, not your gross. That quietly leaves a generous cushion for everything else life throws at you.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "scissors",
-        "label": "buy below your max"
-      },
-      {
-        "name": "paystub",
-        "label": "28% of take-home"
-      },
-      {
-        "name": "smiley",
-        "label": "keep a cushion"
+        "name": "crown",
+        "label": "seriously wealthy"
       }
     ]
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "And be aware of the gentle pressure in the room. Your real-estate agent earns a commission based on the price — so they're quietly incentivized to nudge you toward 'just a little more.' They're often lovely people, but their paycheck grows right alongside your mortgage.",
+    "narration": "But one serious warning about leverage: it magnifies everything, including losses. Borrow heavily to buy an asset, and if its value falls, your debt stays exactly the same — it can wipe you out far faster than you ever built up. The tool that makes fortunes also makes spectacular ruins.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "handshake",
-        "label": "agent earns commission"
+        "name": "chartup",
+        "label": "magnifies gains…"
       },
       {
-        "name": "chartup",
-        "label": "paid on the price"
+        "name": "chartdown",
+        "label": "…and losses"
       },
       {
         "name": "warning",
-        "label": "nudged to overpay"
+        "label": "can wipe you out"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "character",
+    "narration": "But a million in consumer and high-interest debt is a financial death sentence. Same headline number — a million owed — but one person is building an empire, and the other is drowning. The only difference is what the debt was used to buy.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "ballchain",
+        "label": "high-interest $1M"
+      },
+      {
+        "name": "chartdown",
+        "label": "a death sentence"
+      },
+      {
+        "name": "scale",
+        "label": "same number, opposite fate"
+      }
+    ]
+  },
+  {
+    "id": "s29",
+    "type": "title",
+    "narration": "So how do you know when any level of debt has become too much?",
+    "heading": "The Danger Zone",
+    "kicker": "when debt owns you"
+  },
+  {
+    "id": "s30",
+    "type": "screenshot",
+    "narration": "Lenders watch your debt-to-income ratio — the percentage of your monthly gross income that goes toward paying debts. It's the clearest gauge of whether you're in control, or whether your debts are in control of you.",
+    "sourceId": "wiki-dti"
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "narration": "Your debt behavior also feeds your credit score — the number that decides what rates you're offered on everything. A big factor is utilization: try to use less than thirty percent of your available credit. Ironically, how you handle debt quietly decides how expensive your next debt will be.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "your credit score"
+      },
+      {
+        "name": "percent",
+        "label": "keep usage < 30%"
+      },
+      {
+        "name": "scale",
+        "label": "it sets your future rates"
       }
     ]
   },
   {
     "id": "s31",
-    "type": "title",
-    "narration": "And there's a question we've skipped entirely — one you should always ask first.",
-    "heading": "Should You Even Buy?",
-    "kicker": "rent isn't 'throwing money away'"
-  },
-  {
-    "id": "s32",
     "type": "character",
-    "narration": "We're taught that renting is throwing money away. But that's a myth. When you own, a huge chunk of your early payments is interest, taxes, and maintenance — money that also vanishes, just to the bank and the government instead of a landlord.",
+    "narration": "A rough guide: under thirty-six percent of your income going to debt is manageable. Push past forty-three percent, and you're in the danger zone, where most lenders won't touch you — and where one missed paycheck starts a chain reaction.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "apartment",
-        "label": "renting isn't waste"
+        "name": "gauge",
+        "label": "<36% = okay"
+      },
+      {
+        "name": "warning",
+        "label": ">43% = danger"
       },
       {
         "name": "percent",
-        "label": "owning burns interest too"
-      },
-      {
-        "name": "scale",
-        "label": "it's not so simple"
+        "label": "one shock from a spiral"
       }
     ]
   },
   {
-    "id": "s57",
+    "id": "s32",
+    "type": "stage",
+    "narration": "And that chain reaction has a name: the debt spiral. You borrow to cover the payments on debt you already have. The balances compound against you, faster than you can earn. Each month, the hole gets deeper, and climbing out gets harder.",
+    "motif": "debtspiral",
+    "caption": "borrowing to pay off borrowing"
+  },
+  {
+    "id": "s58",
     "type": "character",
-    "narration": "Here's a quick rent-versus-buy test called the five-percent rule. Multiply a home's price by five percent, divide by twelve — that's the rough monthly cost of owning it, beyond the mortgage itself. If you can rent a similar place for less, renting may genuinely be the smarter move.",
+    "narration": "If you're drowning in high-interest debt, there's a lifeline: consolidation. Roll several nasty balances into one lower-rate loan, or a zero-percent balance transfer. It genuinely helps — but only if you also stop adding new debt. Otherwise you've just emptied the card so you can fill it up again.",
     "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "price × 5% ÷ 12"
+        "name": "lifering",
+        "label": "consolidate to lower rate"
       },
       {
-        "name": "apartment",
-        "label": "rent cheaper? rent"
+        "name": "creditcard",
+        "label": "0% balance transfer"
       },
       {
-        "name": "scale",
-        "label": "a 30-second test"
+        "name": "warning",
+        "label": "…then STOP borrowing"
       }
     ]
   },
   {
     "id": "s33",
-    "type": "character",
-    "narration": "Sometimes renting and investing the difference genuinely beats buying — especially if you might move within a few years, or in cities where prices are sky-high relative to rents. Buying only truly shines when you stay put long enough to outrun the massive up-front costs.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "rent + invest can win"
-      },
-      {
-        "name": "luggage",
-        "label": "if you might move"
-      },
-      {
-        "name": "clock",
-        "label": "buy only to stay put"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "narration": "And don't forget what that down payment could otherwise be doing. Sixty thousand dollars locked into a house is sixty thousand not growing in the market. For some people, keeping that money invested and simply renting quietly builds more wealth than owning ever would.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "$60K in the house"
-      },
-      {
-        "name": "chartup",
-        "label": "vs. invested & growing"
-      },
-      {
-        "name": "scale",
-        "label": "owning ≠ always richer"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "At the bottom of the spiral is default — the failure to meet the legal obligations of a loan. Missed payments, wrecked credit, repossession, bankruptcy. The final, brutal stop on the wrong side of the debt ladder.",
+    "sourceId": "wiki-default"
   },
   {
     "id": "s34",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "House you can afford by salary ($K, 7% rate)",
-    "unit": "$K",
-    "narration": "So here's the whole ladder in one chart. Forty thousand buys around a hundred thirty-five thousand of house. Eighty thousand, about two hundred seventy. A hundred fifty thousand, roughly five hundred ten. The rule of thumb holds: a safe house costs about three to three-and-a-half times your salary.",
-    "data": [
-      {
-        "label": "$40K",
-        "value": 135
-      },
-      {
-        "label": "$80K",
-        "value": 270
-      },
-      {
-        "label": "$150K",
-        "value": 510
-      },
-      {
-        "label": "$200K",
-        "value": 680
-      }
-    ],
-    "highlight": 2
+    "type": "title",
+    "narration": "The worst of all of it hides at the very bottom — preying on the desperate.",
+    "heading": "The Predators",
+    "kicker": "payday loans"
   },
   {
     "id": "s35",
-    "type": "title",
-    "narration": "So let's turn all of this into a simple plan.",
-    "heading": "The Playbook",
-    "kicker": "buy a home, not a trap"
-  },
-  {
-    "id": "s36",
-    "type": "character",
-    "narration": "Step one: ignore the bank's maximum. Start from the twenty-eight percent rule on your take-home pay, and treat that as your hard ceiling, not your target. The goal is a home you barely notice in your budget, not one that defines it.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "percent",
-        "label": "28% of take-home"
-      },
-      {
-        "name": "scissors",
-        "label": "a ceiling, not a target"
-      },
-      {
-        "name": "smiley",
-        "label": "barely notice it"
-      }
-    ]
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "narration": "Step two: aim for twenty percent down to dodge PMI, and only buy if you plan to stay put for at least five years. That's roughly how long it takes for appreciation to cover the brutal up-front costs of buying and later selling.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "20% down"
-      },
-      {
-        "name": "calendar",
-        "label": "stay 5+ years"
-      },
-      {
-        "name": "house",
-        "label": "then buying wins"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "A payday loan is a short-term unsecured loan, aimed at people who need cash before their next paycheck. They sound small and harmless. Their effective interest rates are anything but — often reaching into the hundreds of percent.",
+    "sourceId": "wiki-payday"
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "This is exactly why buying for the short term is a trap. Between realtor commissions and closing costs, simply buying and later selling can burn eight to ten percent of the home's value. You need years of appreciation just to break even on those fees alone.",
+    "narration": "Payday loans are engineered to trap. Most borrowers can't repay in two weeks, so they 'roll it over' — paying another huge fee just to extend. The average payday borrower ends up in debt for most of the year, paying fees that utterly dwarf the tiny amount they first borrowed.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "receipt",
-        "label": "~8-10% to buy & sell"
+        "name": "mousetrap",
+        "label": "designed to trap"
       },
       {
         "name": "clock",
-        "label": "years just to break even"
+        "label": "rolled over all year"
       },
       {
         "name": "warning",
-        "label": "short-term = a loss"
+        "label": "fees dwarf the loan"
       }
     ]
   },
   {
+    "id": "s36",
+    "type": "screenshot",
+    "narration": "This is the modern face of usury — the practice of making loans that are seen as unfairly enriching the lender. For thousands of years it was condemned as a sin. Today, it's a storefront on the corner, trapping the most vulnerable in an endless cycle.",
+    "sourceId": "wiki-usury"
+  },
+  {
+    "id": "s37",
+    "type": "title",
+    "narration": "So if you're stuck somewhere on this ladder, here's how to climb back down.",
+    "heading": "Digging Out",
+    "kicker": "the escape plan"
+  },
+  {
     "id": "s38",
+    "type": "stage",
+    "narration": "There are two proven ways to kill debt. The avalanche: attack the highest-interest debt first, which saves you the most money. Or the snowball: pay off the smallest balance first, which gives you fast wins and keeps you motivated. Both work — pick the one you'll actually stick to.",
+    "motif": "avalanchesnowball",
+    "caption": "two ways to dig out"
+  },
+  {
+    "id": "s60",
     "type": "character",
-    "narration": "Step three: always budget for the hidden half. Add property tax, insurance, and about one percent a year for maintenance into your real cost. If you can comfortably cover all of that, then — and only then — can you truly afford the house.",
+    "narration": "One critical step before you attack the debt: build a small starter emergency fund — even just a thousand dollars. Without it, the next surprise expense goes straight back onto a credit card, and you're stuck in the cycle forever. That tiny buffer is what finally breaks it.",
     "pose": "present",
     "props": [
       {
-        "name": "wrench",
-        "label": "budget the hidden half"
+        "name": "safetynet",
+        "label": "a $1K starter buffer"
       },
       {
-        "name": "receipt",
-        "label": "tax + insurance + upkeep"
+        "name": "shovel",
+        "label": "then attack the debt"
       },
       {
-        "name": "calculator",
-        "label": "cover it = you can afford it"
+        "name": "brokenchain",
+        "label": "breaks the cycle"
       }
     ]
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "Because a house should be a foundation for your life, not a cage around it. Bought carefully, well within your means, it's one of the great wealth-builders there is. Bought at the bank's maximum, it quietly becomes the most beautiful trap you'll ever own.",
-    "pose": "explain",
+    "narration": "The non-negotiable rule is this: never carry a credit card balance. If you take one thing from this entire video, let it be that. At twenty-plus percent, credit card debt will outrun almost any good you can do with your money elsewhere. Kill it first, always.",
+    "pose": "present",
     "props": [
       {
-        "name": "house",
-        "label": "a foundation…"
+        "name": "creditcard",
+        "label": "never carry a balance"
       },
       {
-        "name": "ballchain",
-        "label": "…or a cage"
+        "name": "scissors",
+        "label": "kill it first"
       },
       {
-        "name": "scale",
-        "label": "the difference is the math"
+        "name": "warning",
+        "label": "20% outruns everything"
       }
     ]
   },
   {
-    "id": "s60",
+    "id": "s61",
     "type": "character",
-    "narration": "And one genuine piece of good news: your rate is not a life sentence. If you buy when rates are high and they later fall, you can refinance — swap your loan for a cheaper one and drop your payment. As they say, you marry the house, but you only date the rate.",
-    "pose": "explain",
+    "narration": "And here's a free trick almost nobody uses: just ask. Call your credit card company and ask them to lower your rate. If you've paid on time, they surprisingly often will — they'd rather cut your rate than lose you entirely. One ten-minute phone call can save you hundreds of dollars.",
+    "pose": "present",
     "props": [
       {
-        "name": "mortgage",
-        "label": "buy now, high rate"
+        "name": "phone",
+        "label": "just call and ask"
       },
       {
         "name": "percent",
-        "label": "refinance if rates fall"
+        "label": "they often lower it"
       },
       {
-        "name": "smiley",
-        "label": "date the rate"
+        "name": "moneybag",
+        "label": "saves you hundreds"
       }
     ]
   },
   {
     "id": "s40",
     "type": "character",
-    "narration": "So before you fall in love with a listing, run the real numbers. Know what your salary can truly carry, leave room for the hidden half, and buy the house that sets you free — not the one the bank is quietly hoping you'll overpay for.",
+    "narration": "And flip the whole thing around. Once the bad debt is gone, the same tool that trapped you can start building you up. Use cheap, good debt to buy assets that grow — and suddenly you're playing the game the wealthy have played all along.",
     "pose": "present",
     "props": [
       {
-        "name": "calculator",
-        "label": "run the real numbers"
+        "name": "brokenchain",
+        "label": "bad debt gone"
       },
       {
-        "name": "sofa",
-        "label": "buy the freeing house"
+        "name": "house",
+        "label": "cheap debt → assets"
       },
       {
-        "name": "keys",
-        "label": "now you see it"
+        "name": "moneytree",
+        "label": "now it builds you"
+      }
+    ]
+  },
+  {
+    "id": "s62",
+    "type": "character",
+    "narration": "And the ultimate flip: once you're free of bad debt, you can quietly switch sides of the whole game. By owning broad index funds, you own slices of the very banks and lenders charging all that interest. You go from paying the interest, to collecting it — from the prey, to the owner.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "brokenchain",
+        "label": "escape the debt"
+      },
+      {
+        "name": "bond",
+        "label": "own the lenders"
+      },
+      {
+        "name": "moneytree",
+        "label": "collect the interest"
       }
     ]
   },
   {
     "id": "s41",
+    "type": "stage",
+    "narration": "So here's the whole ladder. Zero is freedom. Credit cards and car loans are the traps. Student loans are a gamble. A mortgage is the wealth-builder. And a million can be either an empire or a grave — it all depends on what the debt bought, and what it cost.",
+    "motif": "debtladder",
+    "caption": "it's not the amount — it's the type"
+  },
+  {
+    "id": "s42",
     "type": "character",
-    "narration": "If this saved you from becoming house poor, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "Because debt itself was never good or evil. It's a lever. Pointed at an asset that grows, borrowed cheaply, it quietly builds fortunes. Pointed at junk that shrinks, borrowed expensively, it quietly destroys them. The number on the statement matters far less than the direction you point it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "debt is just a lever"
+      },
+      {
+        "name": "moneytree",
+        "label": "at assets → wealth"
+      },
+      {
+        "name": "ballchain",
+        "label": "at junk → ruin"
+      }
+    ]
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "narration": "And if a situation is truly hopeless, know that bankruptcy exists for a reason. It's a brutal, scarring reset — but it is a reset, a legal fresh start for when debt becomes mathematically impossible. It should always be the last resort, never the first. But it is not the end of your story.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "shield",
+        "label": "a legal fresh start"
+      },
+      {
+        "name": "warning",
+        "label": "last resort only"
+      },
+      {
+        "name": "seedling",
+        "label": "not the end"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "narration": "So wherever you sit on this ladder tonight, the move is always the same. Ruthlessly kill the high-interest debt that's burying you. Keep only the cheap debt that's building you. And never, ever let a payday lender or a credit card decide your future.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "shovel",
+        "label": "kill the bad debt"
+      },
+      {
+        "name": "house",
+        "label": "keep the good"
+      },
+      {
+        "name": "brokenchain",
+        "label": "own your future"
+      }
+    ]
+  },
+  {
+    "id": "s44",
+    "type": "character",
+    "narration": "If this finally made debt make sense, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "house",
+        "name": "brokenchain",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s42",
+    "id": "s45",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

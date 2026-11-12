@@ -109,6 +109,8 @@ export type DoodleName =
   | "smiley" | "balloon"
   // EP059 (how much house at every salary) additions:
   | "wrench" | "sofa"
+  // EP060 (every level of debt) additions:
+  | "shovel" | "brokenchain"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1932,6 +1934,26 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={28} y={42} w={44} h={12} fill="#e8d7bf" strokeWidth={1.6} />
           <RLine x1={22} y1={76} x2={22} y2={84} strokeWidth={SW} />
           <RLine x1={78} y1={76} x2={78} y2={84} strokeWidth={SW} />
+        </>
+      );
+    case "shovel":
+      // A shovel — digging out of (or into) debt.
+      return (
+        <>
+          <RLine x1={62} y1={18} x2={34} y2={60} strokeWidth={SW} />
+          <RPath d="M22 54 L46 54 L40 78 Q34 86 28 78 Z" fill={TAN} strokeWidth={SW} />
+          <RRect x={58} y={12} w={14} h={10} fill={TAN} strokeWidth={1.6} />
+        </>
+      );
+    case "brokenchain":
+      // A snapped chain link — breaking free of debt.
+      return (
+        <>
+          <REllipse cx={30} cy={50} w={30} h={20} fill="none" strokeWidth={SW} />
+          <REllipse cx={70} cy={50} w={30} h={20} fill="none" strokeWidth={SW} />
+          <RPath d="M44 44 L50 38 L46 50 L52 46" fill="none" strokeWidth={1.8} />
+          <RLine x1={48} y1={30} x2={44} y2={40} strokeWidth={1.4} />
+          <RLine x1={54} y1={30} x2={58} y2={40} strokeWidth={1.4} />
         </>
       );
   }

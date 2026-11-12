@@ -182,7 +182,9 @@ export interface StageScene extends Base {
     // EP058 (every level of salary) additions:
     | "salaryladder" | "grossnetshrink" | "happinessplateau" | "bracketladder" | "raiseeaten" | "samesalarydifferentlife"
     // EP059 (how much house at every salary) additions:
-    | "rule2836" | "salarytohouse" | "ratekillsaffordability" | "truehousecost" | "downpaymentpmi" | "housepoor";
+    | "rule2836" | "salarytohouse" | "ratekillsaffordability" | "truehousecost" | "downpaymentpmi" | "housepoor"
+    // EP060 (every level of debt) additions:
+    | "debtladder" | "rateladder" | "goodbaddebt" | "avalanchesnowball" | "debtfreedom" | "underwaterdebt";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
