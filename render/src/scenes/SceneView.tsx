@@ -4690,6 +4690,86 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <g transform={`translate(720 350) scale(${Math.min(1, pop)})`}><circle r={78} fill={gold} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>what you're</text><text y={18} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">really worth</text></g>
       </svg>
     );
+  } else if (m === "richtiers") {
+    // The tiers of rich with thresholds.
+    const tiers: [string, string][] = [["$1M", "Comfortable"], ["$5M", "Wealthy"], ["$30M", "Rich (UHNWI)"], ["$100M", "Ultra-Rich"], ["$1B+", "A different planet"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => {
+          const w = 180 + i * 150; const y = 110 + i * 74;
+          const op = interpolate(climb, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth);
+          return <g key={i} opacity={op}><rect x={VW / 2 - w / 2} y={y} width={w} height={58} rx={8} fill={["#cfe3d4", green, gold, "#d98b5f", "#bfa0d8"][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 37} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 60} y={y + 36} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>;
+        })}
+        <text x={VW / 2} y={62} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the levels of rich</text>
+      </svg>
+    );
+  } else if (m === "howmoneyheld") {
+    // Where the money actually sits at each level.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string, string][] = [["Comfortable", "a paycheck + a nest egg", "#cfe3d4"], ["Wealthy", "investments & property", green], ["Rich", "businesses they own", gold], ["Ultra-Rich", "influence & whole industries", "#bfa0d8"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where the money actually sits</text>
+        {rows.map(([lvl, what, col], i) => {
+          const y = 110 + i * 86;
+          return <g key={i} opacity={interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth)}><rect x={120} y={y} width={220} height={60} rx={8} fill={col as string} stroke={ink} strokeWidth={3} /><text x={230} y={y + 37} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lvl}</text><path d={`M350 ${y + 30} l40 0 m0 0 l-12 -8 m12 8 l-12 8`} stroke={ink} strokeWidth={3} fill="none" /><text x={410} y={y + 37} fontSize={17} fontWeight={800} fill={ink} fontFamily={sans}>{what}</text></g>;
+        })}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>you climb by owning more, and earning wages less</text>
+      </svg>
+    );
+  } else if (m === "lifestylevspower") {
+    // Lifestyle flattens; power keeps rising.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 440, yTop = 120;
+    const life = (t: number) => y0 - (y0 - yTop) * 0.75 * (1 - Math.exp(-4 * t));
+    const power = (t: number) => y0 - (y0 - yTop) * Math.pow(t, 1.5);
+    const seg = (f: (t: number) => number) => Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">lifestyle plateaus — power doesn't</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg(life)} fill="none" stroke={blue} strokeWidth={6} />
+        <path d={seg(power)} fill="none" stroke={red} strokeWidth={6} />
+        <text x={760} y={life(1) - 16} fontSize={16} fontWeight={800} fill={blue} textAnchor="middle" fontFamily={sans}>lifestyle</text>
+        <text x={780} y={power(1) + 6} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>power</text>
+        <text x={VW / 2} y={476} fontSize={15} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>$1M → $1B: your daily life barely changes; your influence explodes</text>
+      </svg>
+    );
+  } else if (m === "spendingplateau") {
+    // You can only consume so much.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">you can only consume so much</text>
+        <g transform="translate(260 300)"><rect x={-90} y={-60} width={180} height={120} rx={10} fill={green} stroke={ink} strokeWidth={5} /><text y={-16} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>one home</text><text y={10} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>one bed</text><text y={36} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>three meals</text></g>
+        <path d="M370 300 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={t} />
+        <g transform={`translate(680 300)`} opacity={t}><circle r={92} fill={gold} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the rest just</text><text y={18} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">compounds</text></g>
+        <text x={VW / 2} y={476} fontSize={17} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>past 'rich', money stops being for spending</text>
+      </svg>
+    );
+  } else if (m === "oldvsnewmoney") {
+    // New money flashes; old money hides.
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">new money vs. old money</text>
+        <g transform="translate(275 300)"><circle r={100} fill="#f3cfc8" stroke={ink} strokeWidth={5} /><text y={-44} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">NEW money</text><text y={-10} fontSize={30} textAnchor="middle" fontFamily={sans}>🏎️</text><text y={34} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>flashy, loud,</text><text y={56} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>spends to show it</text></g>
+        <g transform="translate(725 300)"><circle r={100} fill="#cfe3d4" stroke={ink} strokeWidth={5} /><text y={-44} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">OLD money</text><text y={-10} fontSize={30} textAnchor="middle" fontFamily={sans}>🤫</text><text y={34} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>quiet, invisible,</text><text y={56} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>preserves & hides it</text></g>
+        <text x={VW / 2} y={484} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the truly rich are often the ones you can't spot</text>
+      </svg>
+    );
+  } else if (m === "dynastywealth") {
+    // Multi-generational wealth tree.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the ultra-rich build dynasties</text>
+        <g transform="translate(490 150)"><circle r={44} fill={gold} stroke={ink} strokeWidth={5} /><text y={6} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>founder</text></g>
+        {[-240, -80, 80, 240].map((dx, i) => <g key={i} opacity={interpolate(grow, [0.3 + i * 0.12, 0.5 + i * 0.12], [0, 1], clampBoth)}><line x1={490} y1={194} x2={490 + dx} y2={300} stroke={theme.inkSoft} strokeWidth={2} strokeDasharray="5 5" /><circle cx={490 + dx} cy={330} r={34} fill="#cfe3d4" stroke={ink} strokeWidth={4} /><text x={490 + dx} y={336} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>heir</text></g>)}
+        {[-300, -160, -20, 120, 260, 360].map((dx, i) => <circle key={i} cx={430 + dx} cy={440} r={20} fill={parch} stroke={ink} strokeWidth={3} opacity={interpolate(grow, [0.6, 0.95], [0, 1], clampBoth)} />)}
+        <text x={VW / 2} y={490} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>wealth engineered to outlive everyone who made it</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

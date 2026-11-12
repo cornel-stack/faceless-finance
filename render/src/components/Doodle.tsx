@@ -113,6 +113,8 @@ export type DoodleName =
   | "shovel" | "brokenchain"
   // EP061 (cost of living by state) additions:
   | "palmtree" | "mappin"
+  // EP062 (every level of rich) additions:
+  | "tophat" | "champagne"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1977,6 +1979,26 @@ function shape(name: DoodleName): React.ReactNode {
         <>
           <RPath d="M50 86 Q24 54 24 38 a26 26 0 0 1 52 0 Q76 54 50 86 Z" fill={RED} strokeWidth={SW} />
           <RCircle cx={50} cy={38} d={18} fill={PARCH} strokeWidth={1.8} />
+        </>
+      );
+    case "tophat":
+      // A top hat — classic old-money wealth.
+      return (
+        <>
+          <RRect x={30} y={18} w={40} h={46} fill={INK} strokeWidth={SW} />
+          <RRect x={16} y={62} w={68} h={12} fill={INK} strokeWidth={SW} />
+          <RRect x={30} y={52} w={40} h={10} fill={RED} strokeWidth={1.6} />
+        </>
+      );
+    case "champagne":
+      // A champagne flute — luxury / celebration.
+      return (
+        <>
+          <RPath d="M38 20 L62 20 L57 46 Q50 54 43 46 Z" fill="#f2e6a8" strokeWidth={SW} />
+          <RLine x1={50} y1={54} x2={50} y2={80} strokeWidth={SW} />
+          <RLine x1={38} y1={82} x2={62} y2={82} strokeWidth={SW} />
+          <RCircle cx={46} cy={16} d={5} fill={GOLD} strokeWidth={1.2} />
+          <RCircle cx={58} cy={12} d={5} fill={GOLD} strokeWidth={1.2} />
         </>
       );
   }

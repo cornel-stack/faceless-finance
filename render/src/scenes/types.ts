@@ -186,7 +186,9 @@ export interface StageScene extends Base {
     // EP060 (every level of debt) additions:
     | "debtladder" | "rateladder" | "goodbaddebt" | "avalanchesnowball" | "debtfreedom" | "underwaterdebt"
     // EP061 (cost of living by state) additions:
-    | "stateheatmap" | "colindex100" | "samesalarystates" | "housingdriver" | "notaxstates" | "realwealthformula";
+    | "stateheatmap" | "colindex100" | "samesalarystates" | "housingdriver" | "notaxstates" | "realwealthformula"
+    // EP062 (every level of rich) additions:
+    | "richtiers" | "howmoneyheld" | "lifestylevspower" | "spendingplateau" | "oldvsnewmoney" | "dynastywealth";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
