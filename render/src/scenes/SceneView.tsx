@@ -6392,6 +6392,91 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={496} fontSize={13} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>in the priciest cities, the trickle is shockingly thin</text>
       </svg>
     );
+  } else if (m === "rentbycitybars") {
+    // Median one-bed rent per month, by city — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Houston", 1400, "#9cc47f"],
+      ["Austin", 1700, "#9cc47f"],
+      ["Chicago", 2000, gold],
+      ["Miami", 2800, "#d98b5f"],
+      ["San Francisco", 3300, "#d98b5f"],
+      ["New York", 4000, red],
+    ];
+    const x0 = 280, xMax = 850, maxV = 4000;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">median one-bedroom rent, per month</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 90 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={14} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${(v as number).toLocaleString()}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a 3× gap — for the same single bedroom</text>
+      </svg>
+    );
+  } else if (m === "salaryneededladder") {
+    // Income required to rent, by city (rent × 40).
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Houston", 56, "#9cc47f"],
+      ["Austin", 68, "#9cc47f"],
+      ["Chicago", 80, gold],
+      ["Miami", 112, "#d98b5f"],
+      ["San Francisco", 132, "#d98b5f"],
+      ["New York", 160, red],
+    ];
+    const x0 = 280, xMax = 850, maxV = 160;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">salary needed to rent a one-bed ($K/yr)</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 90 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the income a single bedroom silently demands</text>
+      </svg>
+    );
+  } else if (m === "rentburdenmap") {
+    // Shares of renters over the 30% and 50% lines.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const tiers: [string, string, number, string][] = [
+      ["under 30%", "comfortable", 30, green],
+      ["30–50%", "rent-burdened", 45, gold],
+      ["over 50%", "severely burdened", 25, red],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how big-city renters split</text>
+        <text x={VW / 2} y={88} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>share of income going to rent</text>
+        {tiers.map(([band, note, pct, col], i) => {
+          const x = 300 + i * 190; const h = 200 * (pct as number) / 50 * grow;
+          const op = interpolate(grow, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <rect x={x - 70} y={400 - h} width={140} height={h} rx={6} fill={col as string} stroke={ink} strokeWidth={3.5} />
+              <text x={x} y={390 - h} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{pct}%</text>
+              <text x={x} y={424} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{band}</text>
+              <text x={x} y={444} fontSize={12} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{note}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={482} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>in pricey cities, most renters are now over the line</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

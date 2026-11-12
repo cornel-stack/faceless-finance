@@ -3,363 +3,424 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "A software engineer earning two hundred thousand dollars in New York City can end the year with less cash in the bank than someone earning ninety thousand in a cheaper town. Same effort, bigger paycheck, less money kept. Because the real cost of a city isn't your salary — it's what's left after the city takes its cut. Today we rank the world's cities by what you actually keep.",
+    "narration": "To rent a normal one-bedroom apartment in New York City today, landlords want you to earn about a hundred and sixty thousand dollars a year. For the same apartment in a cheaper major city, the number can be under forty thousand. Same four walls, same single bedroom — and a salary requirement that swings by four times depending only on the city. Today we rank what rent costs in every major city, and the salary you'd need to actually afford it.",
     "props": [
       {
-        "name": "skyline",
-        "label": "$200K in NYC"
+        "name": "apartment",
+        "label": "1-bed in NYC"
       },
       {
-        "name": "moneybag",
-        "label": "less kept than $90K elsewhere"
+        "name": "paystub",
+        "label": "needs ~$160K/yr"
       },
       {
         "name": "scale",
-        "label": "ranked by what's left"
+        "label": "4× swing by city"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that stops people cold. Take a comfortable one hundred twenty thousand dollar salary in New York. After income tax, and after the rent a professional actually pays there, you're left with roughly twenty thousand dollars of real breathing room for the entire year. The headline salary is a mirage. What you keep is the truth.",
-    "text": "$20K",
-    "sub": "kept from a $120K NYC salary, after tax & rent",
-    "icon": "moneybag"
+    "narration": "Here's the rule quietly running your life. Most landlords require your annual income to be at least forty times the monthly rent — which is the same as saying rent should eat no more than thirty percent of your pay. Flip it around, and every rent price hides a salary you must earn just to be allowed through the door.",
+    "text": "40×",
+    "sub": "income landlords require vs the monthly rent",
+    "icon": "apartment"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank cities by what you keep, not what you earn. We'll expose the gross-pay illusion, measure the tax wedge that bites first, follow your paycheck down the funnel of rent and cost of living, and reveal where your money actually stretches furthest on Earth. The most expensive city isn't the priciest — it's the one that keeps the most of you.",
+    "narration": "So today we rank major cities by rent, convert each one into the salary you'd actually need, expose the thirty-percent rule landlords enforce, map where renters are most crushed, and reveal where your paycheck buys the most roof. Because rent isn't just a bill. It's an invisible salary requirement stamped on every city.",
     "props": [
       {
         "name": "scale",
-        "label": "keep, not earn"
+        "label": "rent, then salary needed"
       },
       {
         "name": "percent",
-        "label": "the tax wedge"
+        "label": "the 30% rule"
       },
       {
         "name": "globe",
-        "label": "where money stretches"
+        "label": "where rent is bearable"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "chase the biggest salary",
-    "memeBottom": "chase the biggest take-home",
-    "narration": "Because almost everyone optimizes the wrong number. They chase the biggest offer, move to the glamorous expensive city, and wonder why they feel broke on six figures. The winners optimize take-home. First, let's define the number that actually matters."
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "live in the city you love",
+    "memeBottom": "live in a city you can afford",
+    "narration": "Because for millions of renters, this is the real monthly decision — the dream city, or the affordable one. Before we rank them, let's nail down the one rule that turns any rent into a salary."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the only paycheck number that really counts.",
-    "heading": "What You Keep",
-    "kicker": "gross is a lie"
+    "narration": "First, the rule that turns rent into a required salary.",
+    "heading": "The 30% Rule",
+    "kicker": "rent to income"
   },
   {
     "id": "s6",
-    "type": "screenshot",
-    "sourceId": "wiki-disposable",
-    "narration": "The number that matters is disposable income. The definition is blunt: it's total personal income minus current taxes on income. That's the money that actually lands in your account. But even that isn't the end — because out of what's left, your city demands rent, and rent is where the real damage happens."
+    "type": "stage",
+    "motif": "thirtypercentrule",
+    "caption": "rent should take no more than ~30% of pay",
+    "narration": "The anchor is simple: housing should cost no more than about thirty percent of your gross income. Cross that line and you're officially rent-burdened, with too little left for everything else. Landlords turn the same rule into a wall — most won't even rent to you unless you earn forty times the monthly rent. That's the thirty-percent rule, enforced."
   },
   {
-    "id": "s50",
+    "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice how backwards our instincts are. We celebrate the big salary and the famous skyline, and quietly pity the person who took less money in a smaller city. But if the smaller-city worker keeps more, invests more, and stresses less, who exactly is winning? The prestige and the wealth are often pointing in opposite directions.",
+    "narration": "And the thirty-percent line isn't arbitrary — it's the point where a budget starts to crack. Below it, you can save, handle a surprise, and build a life. Above it, one broken car or missed shift can mean a missed rent payment. That single line separates renters who are building a future from renters who are just surviving the month.",
     "props": [
       {
-        "name": "skyline",
-        "label": "we cheer the big salary"
-      },
-      {
-        "name": "moneybag",
-        "label": "but who keeps more?"
+        "name": "percent",
+        "label": "the 30% line"
       },
       {
         "name": "scale",
-        "label": "prestige vs wealth"
+        "label": "saving vs surviving"
+      },
+      {
+        "name": "warning",
+        "label": "one shock from the edge"
       }
     ]
   },
   {
     "id": "s7",
+    "type": "screenshot",
+    "sourceId": "wiki-renting",
+    "narration": "And renting is its own kind of contract. It's an agreement where you pay to use property owned by someone else, with a signed lease to establish the roles and expectations of both the tenant and landlord. You're not buying a home — you're buying time in it, month by month, at whatever price the local market sets."
+  },
+  {
+    "id": "s51",
     "type": "character",
     "pose": "explain",
-    "narration": "So there are really three salaries hiding in one offer. There's gross — the big number on the contract. There's net — what survives taxes. And there's what's left after rent and basic living, the only number that buys you a life. Two cities can show the same gross and leave you with wildly different thirds.",
+    "narration": "And a lease is a promise with teeth. Sign a twelve-month lease and you owe every month of it, whether you stay or not. Break it early and you can forfeit your deposit or owe the balance. That's why the salary question matters so much up front: you're not committing to one month of rent, you're committing to a year of it.",
     "props": [
       {
-        "name": "paystub",
-        "label": "gross: the headline"
+        "name": "lease",
+        "label": "a year-long promise"
       },
       {
-        "name": "scissors",
-        "label": "net: after tax"
+        "name": "ballchain",
+        "label": "owe it even if you leave"
       },
       {
-        "name": "moneybag",
-        "label": "kept: after rent"
+        "name": "warning",
+        "label": "commit to 12 months"
       }
     ]
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "sourceId": "wiki-col",
-    "narration": "That third number is governed by cost of living — the cost of maintaining a certain standard of living in a given place. Two engineers with identical jobs and identical pay can live like royalty in one city and paycheck-to-paycheck in another, purely because of what the same basket of life costs where they signed the lease."
+    "sourceId": "wiki-gross",
+    "narration": "And notice the rule is measured against gross income — the sum of your earnings before any deductions or taxes. That's the catch landlords rarely mention: they test you on your pre-tax salary, but you pay rent out of your take-home. So the real bite on your actual paycheck is always even bigger than thirty percent."
   },
   {
-    "id": "s41",
+    "id": "s42",
     "type": "character",
     "pose": "explain",
-    "narration": "And cost of living is really a bundle of separate monsters. Rent is the biggest, but taxes, transport, groceries, healthcare, and childcare all cost more in a pricey city too. Each one is quietly inflated. Stack them up and an expensive city isn't a little pricier than a cheap one — it can be twice as expensive to live the exact same day.",
+    "narration": "And here's the quiet trap inside that gross-income rule. A city with high rent usually has high taxes too, so your take-home shrinks exactly where rent grows. The listing tests your pre-tax salary, but the rent comes out of what's left after the government's cut. On a real paycheck, thirty percent gross can easily be forty percent of what you actually bring home.",
     "props": [
       {
-        "name": "basket",
-        "label": "rent, tax, food, care"
+        "name": "scissors",
+        "label": "taxes shrink take-home"
       },
       {
-        "name": "chartup",
-        "label": "each one inflated"
+        "name": "apartment",
+        "label": "rent grows anyway"
       },
       {
         "name": "warning",
-        "label": "2× for the same day"
+        "label": "30% gross ≈ 40% net"
       }
     ]
   },
   {
     "id": "s9",
-    "type": "stage",
-    "motif": "grosspayillusion",
-    "caption": "same salary, very different reality",
-    "narration": "This is the gross-pay illusion in one picture. Two workers both earn the same six-figure salary. One lives in a high-tax, high-rent megacity; the other in a low-tax, affordable one. Same gross. But by the time the city finishes taking its share, one keeps a sliver and the other keeps a fortune. The headline number told you nothing."
+    "type": "title",
+    "narration": "So let's rank the cities by raw monthly rent.",
+    "heading": "The Rent",
+    "kicker": "per month, by city"
   },
   {
     "id": "s10",
-    "type": "screenshot",
-    "sourceId": "wiki-realincome",
-    "narration": "Economists fixed this confusion long ago with real income — the income of individuals or nations after adjusting for inflation, and for local prices. A dollar in Manhattan and a dollar in Houston are simply not the same dollar. Real income strips away the illusion and asks the only honest question: how much life can this money actually buy here?"
+    "type": "stage",
+    "motif": "rentbycitybars",
+    "caption": "median one-bed rent, by major city",
+    "narration": "Here's the monthly damage for a typical one-bedroom. New York leads near four thousand dollars a month. San Francisco and the glamour cities aren't far behind. The pricey-but-sane tier sits around two thousand. And affordable boomtowns still land near fourteen or fifteen hundred. Between the top and the bottom of this list is a threefold gap — for the exact same apartment."
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And these are just the asking rents — the number on the listing. The real cost of landing an apartment in a hot city includes bidding wars, where desperate renters offer months of rent up front just to win the unit. In the tightest markets, the advertised price is the floor of what you'll actually pay, not the ceiling.",
+    "props": [
+      {
+        "name": "apartment",
+        "label": "asking rent is the floor"
+      },
+      {
+        "name": "crowd",
+        "label": "bidding wars"
+      },
+      {
+        "name": "warning",
+        "label": "you pay above list"
+      }
+    ]
   },
   {
     "id": "s11",
-    "type": "character",
-    "pose": "explain",
-    "narration": "So a dollar is not a dollar everywhere. In an expensive city, every dollar is quietly shrunk — by taxes first, then by rent, then by the premium on everything from coffee to childcare. The same paycheck can be worth twice as much two hundred miles away. Your salary doesn't set your standard of living. Your city does.",
-    "props": [
-      {
-        "name": "dollar",
-        "label": "a dollar isn't a dollar"
-      },
-      {
-        "name": "faucet",
-        "label": "shrunk by tax, then rent"
-      },
-      {
-        "name": "globe",
-        "label": "your city sets your life"
-      }
-    ]
-  },
-  {
-    "id": "s51",
-    "type": "stage",
-    "motif": "colindex100",
-    "caption": "the cost-of-living index — 100 is average",
-    "narration": "This is how the pros measure it: a cost-of-living index, where a hundred is the national average. A city at sixty-five is a third cheaper than normal; a city at two hundred costs twice as much for the identical life. Put your salary against that index, and a dazzling offer in a two-hundred city can be worth less than a modest one at seventy."
-  },
-  {
-    "id": "s12",
-    "type": "title",
-    "narration": "So let's rank them by the only metric that counts.",
-    "heading": "The Ranking",
-    "kicker": "money left standing"
-  },
-  {
-    "id": "s13",
-    "type": "stage",
-    "motif": "citykeepbars",
-    "caption": "what a pro keeps after tax & rent, by city",
-    "narration": "Take a single well-paid professional and drop them into each city on the same real job. Then measure what's left after income tax and typical rent. New York, San Francisco, and London hemorrhage the most — glamorous, high-paying, and quietly brutal on the wallet. Meanwhile, low-tax hubs and affordable boomtowns let that exact worker keep two or three times more."
-  },
-  {
-    "id": "s14",
     "type": "chart",
     "chartType": "bar",
-    "title": "Money kept per year after tax & rent ($K)",
-    "unit": "$K",
-    "narration": "Put real numbers on it. On a comparable salary, our worker keeps around twenty thousand a year in New York, a little more in London and San Francisco, more again in Toronto, close to fifty thousand in Austin, and about sixty thousand in no-income-tax Dubai. Same job, same effort — and triple the money kept, depending only on the city.",
+    "title": "Median 1-bed rent per month ($)",
+    "unit": "$",
+    "narration": "Put the numbers side by side. New York around four thousand a month, San Francisco thirty-three hundred, Miami near twenty-eight, Chicago about two thousand, Austin seventeen hundred, Houston closer to fourteen. The most expensive city charges nearly three times the cheapest — for four walls and a single bedroom in each.",
     "data": [
       {
-        "label": "New York",
-        "value": 20
+        "label": "Houston",
+        "value": 1400
       },
       {
-        "label": "London",
-        "value": 24
+        "label": "Austin",
+        "value": 1700
+      },
+      {
+        "label": "Chicago",
+        "value": 2000
+      },
+      {
+        "label": "Miami",
+        "value": 2800
       },
       {
         "label": "San Fran",
-        "value": 28
+        "value": 3300
       },
       {
-        "label": "Toronto",
-        "value": 34
-      },
-      {
-        "label": "Austin",
-        "value": 46
-      },
-      {
-        "label": "Dubai",
-        "value": 60
+        "label": "New York",
+        "value": 4000
       }
     ],
-    "highlight": 0
-  },
-  {
-    "id": "s42",
-    "type": "callout",
-    "narration": "Say the quiet part out loud. In New York, roughly four out of every five dollars of a professional's salary are gone to taxes and rent before anything else. You work most of the year just to pay the government and a landlord. Only the final sliver is actually, truly yours to keep.",
-    "text": "78%",
-    "sub": "of a NYC paycheck gone to tax + rent",
-    "icon": "percent"
-  },
-  {
-    "id": "s15",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Flip the usual list upside down and it gets uncomfortable. The cities we treat as the ultimate prizes — New York, San Francisco, London — are the ones that leave you with the least. By the measure that matters, the most prestigious addresses on Earth are among the most expensive places you can possibly try to build wealth.",
-    "props": [
-      {
-        "name": "skyline",
-        "label": "the 'prize' cities"
-      },
-      {
-        "name": "chartdown",
-        "label": "keep the least"
-      },
-      {
-        "name": "warning",
-        "label": "prestige ≠ wealth"
-      }
-    ]
+    "highlight": 5
   },
   {
     "id": "s43",
+    "type": "callout",
+    "narration": "Stack it up over a year and the gap is staggering. A New York renter pays nearly thirty thousand dollars more per year than a Houston renter — for the same one-bedroom. Over a decade, that's a quarter of a million dollars, gone to a landlord, that the cheaper-city renter could have invested instead.",
+    "text": "$30K/yr",
+    "sub": "NYC vs Houston rent gap — same 1-bed",
+    "icon": "apartment"
+  },
+  {
+    "id": "s12",
     "type": "character",
     "pose": "explain",
-    "narration": "Now add the cruelest twist: the high-salary cities are high-salary precisely because they're expensive. Companies pay New York and London premiums to offset the cost — but the offset is never enough, and it's fully taxed. You get a bigger number and a smaller life. The raise was bait, and the city swallowed it whole.",
+    "narration": "But a raw rent number is only half the story. Four thousand a month is punishing on an average salary and trivial on a huge one. The honest way to compare cities isn't the rent itself — it's the salary that rent silently demands. So let's convert every one of these prices into the income you'd need to clear the door.",
     "props": [
       {
-        "name": "magnet",
-        "label": "pay premium as bait"
+        "name": "apartment",
+        "label": "rent is only half"
       },
       {
-        "name": "scissors",
-        "label": "offset gets taxed away"
+        "name": "paystub",
+        "label": "the hidden salary"
       },
       {
-        "name": "warning",
-        "label": "bigger number, smaller life"
+        "name": "scale",
+        "label": "convert rent → income"
       }
     ]
-  },
-  {
-    "id": "s16",
-    "type": "title",
-    "narration": "Because before rent even arrives, the tax wedge strikes first.",
-    "heading": "The Tax Wedge",
-    "kicker": "who takes the first cut"
-  },
-  {
-    "id": "s17",
-    "type": "stage",
-    "motif": "taxwedgebite",
-    "caption": "the first bite out of every paycheck",
-    "narration": "The tax wedge is the chunk of your paycheck that never reaches you. In a high-tax city like New York, you stack federal, state, and city income taxes on top of each other — the only major US city that taxes your income a third time. By contrast, a handful of places take almost nothing. That first bite sets the entire game."
   },
   {
     "id": "s52",
+    "type": "callout",
+    "narration": "Here's the whole trick in one line. Multiply any monthly rent by forty and you get the salary a landlord wants you to earn. Four thousand a month? A hundred and sixty thousand a year. Memorize that one multiplication and you can read the true price of any city the instant you see a listing.",
+    "text": "rent × 40",
+    "sub": "= the salary a landlord requires",
+    "icon": "calculator"
+  },
+  {
+    "id": "s13",
+    "type": "title",
+    "narration": "So here's the number nobody puts on the listing.",
+    "heading": "The Salary Needed",
+    "kicker": "to clear the door"
+  },
+  {
+    "id": "s14",
+    "type": "stage",
+    "motif": "salaryneededladder",
+    "caption": "income required to rent, by city",
+    "narration": "Run every rent through the forty-times rule and the cities transform into salary requirements. New York demands around a hundred and sixty thousand a year to rent a basic one-bed. San Francisco, roughly a hundred and thirty. Even the mid-tier cities quietly require six figures. The affordable ones ask fifty to seventy thousand. The apartment didn't change. The salary to unlock it did."
+  },
+  {
+    "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "And the tax wedge is sneaky because it's invisible. It never hits your bank account, so you never feel it leave — but it's often the single biggest expense of your entire year, bigger than rent, bigger than anything. The cities that win on take-home usually win right here, by simply never taking that first, enormous, silent bite.",
+    "narration": "And flip the rule to protect yourself. Whatever you earn, divide by forty to find the highest rent you can truly carry. Earn eighty thousand? Your ceiling is two thousand a month. It feels brutal in an expensive city, but that line is the difference between a home that funds your life and one that quietly consumes it.",
     "props": [
       {
-        "name": "scissors",
-        "label": "the silent first bite"
+        "name": "calculator",
+        "label": "salary ÷ 40 = max rent"
       },
       {
-        "name": "receipt",
-        "label": "often bigger than rent"
+        "name": "apartment",
+        "label": "your honest ceiling"
       },
       {
-        "name": "warning",
-        "label": "you never feel it leave"
+        "name": "scale",
+        "label": "home vs trap"
       }
     ]
   },
   {
-    "id": "s18",
-    "type": "screenshot",
-    "sourceId": "wiki-incidence",
-    "narration": "Economists study exactly this with tax incidence, which measures who actually pays for a tax. The lesson for you is simple: before you accept an offer, find out who really takes the first cut of your pay. In some cities three separate governments do. In others, barely one. That difference alone can be worth tens of thousands a year."
-  },
-  {
-    "id": "s19",
+    "id": "s15",
     "type": "chart",
     "chartType": "bar",
-    "title": "Tax + rent as % of a $120K salary",
-    "unit": "%",
-    "narration": "Here's how much of a professional's salary vanishes to tax plus rent before they buy a single thing. In New York it's nearly eighty percent gone. London and Toronto aren't far behind. Austin keeps that combined bite closer to half. And Dubai, with no income tax, lets you hold on to the lion's share. Most of your raise is really a geography decision.",
+    "title": "Salary needed to rent a 1-bed ($K/yr)",
+    "unit": "$K",
+    "narration": "Here it is in black and white. To rent that one-bedroom, New York wants about a hundred and sixty thousand a year, San Francisco a hundred and thirty, Miami over a hundred, Chicago around eighty, Austin near seventy, Houston in the mid-fifties. These aren't luxury numbers — they're the price of a single ordinary bedroom in each city.",
     "data": [
       {
-        "label": "New York",
-        "value": 78
-      },
-      {
-        "label": "London",
-        "value": 72
-      },
-      {
-        "label": "Toronto",
-        "value": 62
+        "label": "Houston",
+        "value": 56
       },
       {
         "label": "Austin",
-        "value": 52
+        "value": 68
       },
       {
-        "label": "Dubai",
-        "value": 32
+        "label": "Chicago",
+        "value": 80
+      },
+      {
+        "label": "Miami",
+        "value": 112
+      },
+      {
+        "label": "San Fran",
+        "value": 132
+      },
+      {
+        "label": "New York",
+        "value": 160
       }
     ],
-    "highlight": 0
+    "highlight": 5
   },
   {
     "id": "s44",
     "type": "character",
     "pose": "explain",
-    "narration": "And taxes aren't one tax — they stack. Federal income tax, then state income tax, then in a few places a city income tax, plus sales taxes and property taxes layered on top. Each layer is small-sounding on its own. Together they can quietly claim close to half of a high earner's pay before rent even enters the picture.",
+    "narration": "And remember, this is the salary for just one bedroom. Add a partner who also needs space, or kids who need their own rooms, and the required income climbs fast. A family that wants a modest two or three bedrooms in a top city can need a quarter of a million dollars a year just to clear the rent rule.",
     "props": [
       {
-        "name": "receipt",
-        "label": "federal + state + city"
+        "name": "apartment",
+        "label": "this is ONE bedroom"
       },
       {
-        "name": "ledger",
-        "label": "sales + property too"
+        "name": "couple",
+        "label": "add a family"
       },
       {
         "name": "warning",
-        "label": "~half, before rent"
+        "label": "~$250K for 3 beds"
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Now compare that to what people actually earn. The median worker in most of these cities makes nowhere near the salary their own rent requires. In New York, the income needed to rent comfortably is roughly double the city's median wage. The math simply doesn't close — which is why so many renters are quietly drowning.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "needed vs median wage"
+      },
+      {
+        "name": "chartdown",
+        "label": "the math doesn't close"
+      },
+      {
+        "name": "warning",
+        "label": "renters quietly drowning"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "callout",
+    "narration": "Here's the gap that breaks the system. In many top cities, the salary a landlord requires to rent a one-bedroom is nearly double what the typical worker there actually earns. The people who keep the city running simply cannot, on paper, qualify to rent in it. That's not a glitch — it's the whole crisis in one number.",
+    "text": "2×",
+    "sub": "salary needed vs what the median worker earns",
+    "icon": "scale"
+  },
+  {
+    "id": "s17",
+    "type": "title",
+    "narration": "Which is why a word has quietly taken over housing: rent-burdened.",
+    "heading": "Rent-Burdened",
+    "kicker": "over the 30% line"
+  },
+  {
+    "id": "s18",
+    "type": "stage",
+    "motif": "rentburdenmap",
+    "caption": "renters paying over 30% of income on rent",
+    "narration": "When rent crosses thirty percent of your income, you're rent-burdened. Cross fifty percent and you're severely rent-burdened. In the priciest cities, the majority of renters are now over that first line, and a huge share are over the second — handing more than half of every paycheck to a landlord before they've eaten, commuted, or saved a single dollar."
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And rent burden quietly steals your future, not just your month. Every extra dollar handed to a landlord is a dollar that never becomes savings, investments, or a down payment. The severely burdened renter isn't just poorer today — they're locked out of ever building the wealth that would let them escape renting at all.",
+    "props": [
+      {
+        "name": "apartment",
+        "label": "rent eats the surplus"
+      },
+      {
+        "name": "seedling",
+        "label": "nothing left to invest"
+      },
+      {
+        "name": "warning",
+        "label": "locked out of wealth"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "screenshot",
+    "sourceId": "wiki-hai",
+    "narration": "Economists track this with a housing affordability index, which measures the degree to which the median person or family can actually afford local housing. When that index collapses, it's not a statistic — it's roommates into your thirties, three jobs to make rent, and a whole generation priced out of the cities built for them."
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the burden falls hardest on exactly the people a city needs most. Teachers, nurses, baristas, and artists — the workers who make a city run — are the first to be priced out when rent outruns wages. A city that no one but bankers can afford to rent in slowly loses the very people who made it worth living in.",
+    "props": [
+      {
+        "name": "hospital",
+        "label": "nurses, teachers priced out"
+      },
+      {
+        "name": "crowd",
+        "label": "the workers a city needs"
+      },
+      {
+        "name": "warning",
+        "label": "the city hollows out"
       }
     ]
   },
@@ -367,177 +428,158 @@
     "id": "s20",
     "type": "character",
     "pose": "explain",
-    "narration": "This is why the no-income-tax havens punch so far above their weight. Dubai, and US states like Texas, Florida, and Nevada, simply never take that first slice. A mid-level salary there can out-keep a huge salary in a triple-taxed city. The money isn't about how much you make. It's about how many hands reach in before you.",
-    "props": [
-      {
-        "name": "shield",
-        "label": "no-income-tax havens"
-      },
-      {
-        "name": "moneybag",
-        "label": "keep the first slice"
-      },
-      {
-        "name": "mappin",
-        "label": "TX · FL · NV · Dubai"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "callout",
-    "narration": "And the havens are closer than you think. Nine US states charge zero income tax at all — Texas, Florida, Nevada, Washington, Tennessee, and more. For a high earner, simply crossing a state line can mean keeping an extra ten, twenty, even thirty thousand dollars a year, for the exact same job and the exact same paycheck on paper.",
-    "text": "9 states",
-    "sub": "charge zero income tax — TX, FL, NV, WA, TN…",
-    "icon": "mappin"
-  },
-  {
-    "id": "s21",
-    "type": "title",
-    "narration": "Watch your whole paycheck travel down the funnel.",
-    "heading": "The Funnel",
-    "kicker": "where it all goes"
-  },
-  {
-    "id": "s22",
-    "type": "stage",
-    "motif": "whatyoukeepfunnel",
-    "caption": "gross in the top, a trickle out the bottom",
-    "narration": "Picture your gross salary poured in at the top. First the tax wedge drains away a third or more. Then rent — the single biggest expense — takes another enormous gulp. Then transport, food, and the big-city premium on everything. What trickles out the bottom is what you keep. In the priciest cities, that trickle is shockingly thin."
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the funnel has a sneaky leak most people forget: lifestyle creep. Expensive cities don't just cost more — they tempt you to spend more, on dinners, status, and keeping up. So the pricey city drains you twice: once through unavoidable costs, and again through the spending it quietly pressures you into. The thin trickle gets thinner.",
-    "props": [
-      {
-        "name": "champagne",
-        "label": "lifestyle creep"
-      },
-      {
-        "name": "faucet",
-        "label": "drained twice"
-      },
-      {
-        "name": "chartdown",
-        "label": "the trickle thins"
-      }
-    ]
-  },
-  {
-    "id": "s23",
-    "type": "screenshot",
-    "sourceId": "wiki-ppp",
-    "narration": "And what you keep only matters by its purchasing power — the amount of products and services available for purchase with it. Twenty thousand dollars kept in a cheap city buys a real life: savings, travel, a cushion. The same twenty thousand kept in Manhattan barely covers a few months of ordinary expenses. It's not the pile that counts. It's what the pile can buy."
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Purchasing power is why travelers feel rich abroad and locals feel broke at home. The same kept dollars that feel tight in London stretch into a comfortable life in a cheaper country. When you measure wealth in what your money buys rather than the number itself, the global map of 'expensive' and 'cheap' completely rearranges.",
-    "props": [
-      {
-        "name": "globe",
-        "label": "rich abroad, broke at home"
-      },
-      {
-        "name": "basket",
-        "label": "measure what it buys"
-      },
-      {
-        "name": "scale",
-        "label": "the map rearranges"
-      }
-    ]
-  },
-  {
-    "id": "s24",
-    "type": "stage",
-    "motif": "samesalarystates",
-    "caption": "one salary, two completely different lives",
-    "narration": "Here's the same hundred-thousand-dollar salary living two different lives. In the expensive city it means a cramped apartment, a long commute, and nothing left to save. In the affordable one it means a house, a yard, and a growing investment account. Identical income, opposite outcomes — written entirely by the cost of the city around it."
-  },
-  {
-    "id": "s46",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "six-figure salary, broke in Manhattan",
-    "memeBottom": "smaller salary, wealthy in Austin",
-    "narration": "This is the choice modern workers actually face, even if nobody frames it this way. The glamorous broke life, or the quiet wealthy one. Once you start measuring by what you keep, the sweaty indecision disappears — and the obvious answer is rarely the famous city."
-  },
-  {
-    "id": "s25",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the beast at the center of the funnel is always rent. In the priciest cities, housing alone can eat forty to fifty percent of a take-home paycheck, leaving almost nothing for everything else. Tame your rent and you tame the whole equation. It is, by far, the biggest lever over what any city lets you keep.",
+    "narration": "And rent burden is uniquely vicious because it never stops. A mortgage is mostly fixed and eventually ends. Rent renews every single year, usually upward, for as long as you live there. The rent-burdened renter isn't climbing toward anything — they're running in place, paying more each year for the exact same room.",
     "props": [
       {
         "name": "apartment",
-        "label": "rent is the beast"
+        "label": "rent renews — upward"
       },
       {
-        "name": "percent",
-        "label": "40-50% of take-home"
+        "name": "stopwatch",
+        "label": "running in place"
       },
       {
-        "name": "scale",
-        "label": "tame rent, tame it all"
+        "name": "warning",
+        "label": "never builds equity"
       }
     ]
   },
   {
     "id": "s55",
+    "type": "callout",
+    "narration": "And the burden is spreading fast. Across the biggest US cities, roughly half of all renters now spend more than thirty percent of their income on rent, and about a quarter spend more than half. Being rent-burdened used to be a crisis. In the priciest cities, it's quietly become the norm.",
+    "text": "50%",
+    "sub": "of big-city renters are now rent-burdened",
+    "icon": "crowd"
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "So why is rent in these cities so insane in the first place?",
+    "heading": "Why So High",
+    "kicker": "and the rent-control fight"
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "sourceId": "wiki-rentcontrol",
+    "narration": "The oldest attempted fix is rent control — a system of laws for the rental market of dwellings that caps how fast rent can rise. It genuinely protects the people already in those apartments. But economists widely argue it also discourages new building and shrinks supply over time, which can quietly make the shortage — and the prices for everyone else — even worse."
+  },
+  {
+    "id": "s46",
+    "type": "image",
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "half my paycheck to a landlord",
+    "memeBottom": "this is fine",
+    "narration": "For the severely rent-burdened, this is the monthly mood: more than half the paycheck gone before anything else, and a quiet acceptance that this is just how it is now. It isn't how it has to be — but only if you treat rent as the salary test it really is."
+  },
+  {
+    "id": "s23",
     "type": "character",
     "pose": "explain",
-    "narration": "And rent has a cruel feature: it rises with the city's success. The more desirable and high-paying a city becomes, the faster rents climb to swallow those higher salaries. It's a treadmill — earn more, pay more, keep the same. Which is exactly why raw salary growth in a hot city so rarely turns into real, kept wealth.",
+    "narration": "The deeper cause is the same one behind every housing crisis: too many people chasing too few homes. The most desirable cities simply don't build enough apartments for everyone who wants in. Scarcity hands landlords the power to name their price — and in a city everyone's fighting to live in, that price only goes one direction.",
     "props": [
       {
+        "name": "crowd",
+        "label": "too many renters"
+      },
+      {
         "name": "apartment",
-        "label": "rent chases salaries up"
+        "label": "too few homes"
       },
       {
-        "name": "stopwatch",
-        "label": "the treadmill"
-      },
-      {
-        "name": "warning",
-        "label": "earn more, keep the same"
+        "name": "chartup",
+        "label": "scarcity sets the price"
       }
     ]
   },
   {
+    "id": "s56",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And wages are the other half of the equation everyone ignores. Rent can only rise as far as it does because, in the richest cities, enough high earners exist to pay it. Their big salaries set the market price — and everyone earning a normal wage is forced to compete against a banker's paycheck for the same one-bedroom.",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "high earners set the price"
+      },
+      {
+        "name": "crowd",
+        "label": "normal wages compete"
+      },
+      {
+        "name": "warning",
+        "label": "priced by the top"
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "type": "title",
+    "narration": "And the same rent buys wildly different lives.",
+    "heading": "What Rent Buys",
+    "kicker": "same money, different roof"
+  },
+  {
+    "id": "s25",
+    "type": "stage",
+    "motif": "whatrentbuys",
+    "caption": "the same rent, a closet or a house",
+    "narration": "Take two thousand dollars a month. In New York or San Francisco, that's a room in a shared apartment, maybe a tiny studio if you're lucky. In an affordable city, the same two thousand rents a spacious two-bedroom with parking and a yard. Identical money, and the roof over your head quadruples in size."
+  },
+  {
+    "id": "s62",
+    "type": "callout",
+    "narration": "Say the location premium out loud. The same two-thousand-dollar budget rents a shared room in Manhattan or an entire two-bedroom house with a yard in an affordable city. You're not paying for more space in the expensive city — you're paying purely for the zip code. The walls are smaller; only the address is bigger.",
+    "text": "$2,000",
+    "sub": "a shared room, or a whole house — same money",
+    "icon": "house"
+  },
+  {
     "id": "s26",
     "type": "title",
-    "narration": "So how do you actually win this game?",
+    "narration": "So what should a renter actually do with all this?",
     "heading": "What To Do",
-    "kicker": "optimize take-home"
+    "kicker": "beat the salary trap"
   },
   {
     "id": "s27",
-    "type": "stage",
-    "motif": "realwealthformula",
-    "caption": "wealth = what you keep, not what you earn",
-    "narration": "The whole thing collapses to one formula. Your real progress isn't your salary — it's your income, minus taxes, minus the cost of your city, with whatever's left going to work for you. Chase that bottom line, not the headline. A smaller salary in the right city can build wealth faster than a huge one in the wrong one."
-  },
-  {
-    "id": "s47",
     "type": "character",
     "pose": "present",
-    "narration": "One more rule: protect what you keep from inflation and taxes, don't just hoard it. The money a cheap city lets you save only builds wealth if you invest it. The real magic isn't keeping more — it's keeping more and putting it to work, so a low-cost city funds the compounding a high-cost one never could.",
+    "narration": "First, know your real number before you ever tour a place. Multiply your gross salary by thirty percent, divide by twelve — that's your true monthly ceiling. If a city's median rent sits above that line, you're not underpaid, you're in the wrong city for your income. Run the number first, fall in love second.",
     "props": [
       {
-        "name": "seedling",
-        "label": "invest what you keep"
+        "name": "calculator",
+        "label": "salary × 30% ÷ 12"
       },
       {
-        "name": "snowball",
-        "label": "let it compound"
+        "name": "apartment",
+        "label": "your true rent ceiling"
       },
       {
-        "name": "chartup",
-        "label": "the city funds it"
+        "name": "warning",
+        "label": "number first, love second"
+      }
+    ]
+  },
+  {
+    "id": "s63",
+    "type": "character",
+    "pose": "present",
+    "narration": "And audit the rent you already pay. Most renters never run their own thirty-percent number, then wonder why money evaporates. Pull up your lease, divide the rent by your monthly take-home, and look at the real percentage. If it's well over a third, you've found the leak draining your entire budget — and the biggest single thing you can fix.",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "run your own number"
+      },
+      {
+        "name": "percent",
+        "label": "rent ÷ take-home"
+      },
+      {
+        "name": "warning",
+        "label": "find the budget leak"
       }
     ]
   },
@@ -545,39 +587,39 @@
     "id": "s28",
     "type": "character",
     "pose": "present",
-    "narration": "So negotiate net, not gross. A higher offer in a brutally taxed, sky-high-rent city can be a pay cut in disguise. Before you accept, run the real math: subtract that city's taxes and that city's rent, and compare what's actually left. The best offer is the one with the biggest number at the bottom, not the top.",
+    "narration": "Second, attack the biggest rent with the oldest trick: split it. A roommate often cuts your single biggest expense in half instantly — no raise, no move required. In the priciest cities, sharing isn't failure, it's math. One roommate can be the difference between rent-burdened and actually saving money.",
     "props": [
       {
-        "name": "calculator",
-        "label": "negotiate net, not gross"
-      },
-      {
-        "name": "warning",
-        "label": "a 'raise' can be a cut"
+        "name": "couple",
+        "label": "split the rent"
       },
       {
         "name": "moneybag",
-        "label": "biggest bottom line wins"
+        "label": "instant 50% cut"
+      },
+      {
+        "name": "smiley",
+        "label": "burdened → saving"
       }
     ]
   },
   {
-    "id": "s56",
+    "id": "s58",
     "type": "character",
     "pose": "present",
-    "narration": "And look past income tax to the full tax picture. A state with no income tax might claw it back through high property or sales taxes. A country with brutal income tax might offer free healthcare and schooling that quietly hands the money back. Always compare the whole package — total taxes in, real services out — not a single headline rate.",
+    "narration": "And treat rent as temporary, not permanent. The goal for most people is to rent lean, invest the gap, and eventually trade rising rent for a fixed mortgage that ends. A renter who keeps costs down and buys when the math works turns today's discipline into tomorrow's paid-off home.",
     "props": [
       {
-        "name": "ledger",
-        "label": "see the full tax picture"
+        "name": "apartment",
+        "label": "rent lean now"
       },
       {
-        "name": "hospital",
-        "label": "services handed back"
+        "name": "snowball",
+        "label": "invest the gap"
       },
       {
-        "name": "scale",
-        "label": "total in, real out"
+        "name": "house",
+        "label": "fixed, ending mortgage later"
       }
     ]
   },
@@ -585,39 +627,39 @@
     "id": "s29",
     "type": "character",
     "pose": "present",
-    "narration": "And if your work travels, treat your city as your single biggest financial decision. Earning a big-city salary while living somewhere low-tax and affordable is the closest thing to a cheat code modern work offers. You keep the income and delete the two biggest costs. That gap — between a fat paycheck and a cheap city — is pure, compounding wealth.",
+    "narration": "Third, if your job travels, let your rent travel with it. Earning a big-city salary while renting in a cheaper city is the single fastest downgrade to your biggest bill. You don't need a raise to feel richer — you need a zip code where the rent stops demanding a six-figure salary for one bedroom.",
     "props": [
       {
         "name": "laptop",
-        "label": "remote = cheat code"
+        "label": "rent follows the job"
       },
       {
         "name": "mappin",
-        "label": "big pay, cheap city"
+        "label": "big pay, cheap rent"
       },
       {
         "name": "chartup",
-        "label": "the gap compounds"
+        "label": "instant raise"
       }
     ]
   },
   {
-    "id": "s48",
+    "id": "s64",
     "type": "character",
     "pose": "present",
-    "narration": "But don't move on the spreadsheet alone. A city is family, friends, climate, and career ladders, not just a tax rate. The point isn't to chase the cheapest dot on the map — it's to stop overpaying blindly, and to know the true price of the city you love. Sometimes it's worth it. Just never by accident.",
+    "narration": "And time your move to the market, not your mood. Rents swing with the seasons — winter is quiet and cheap, summer is a feeding frenzy. Signing a lease in the slow months, or renewing early before a hike, can lock in hundreds less a month. The same apartment has a different price depending only on when you sign.",
     "props": [
       {
-        "name": "heart",
-        "label": "not just a number"
+        "name": "calendar",
+        "label": "winter = cheaper"
       },
       {
-        "name": "scale",
-        "label": "know the true price"
+        "name": "apartment",
+        "label": "avoid the summer rush"
       },
       {
-        "name": "smiley",
-        "label": "worth it, on purpose"
+        "name": "moneybag",
+        "label": "hundreds less a month"
       }
     ]
   },
@@ -625,39 +667,39 @@
     "id": "s30",
     "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson. The most expensive city on Earth isn't the one with the highest prices — it's the one that keeps the most of your life in exchange for the least in return. Rank your options by what you keep, and the glamorous, famous, 'successful' cities suddenly look like the worst deals of all.",
+    "narration": "Because here's the real lesson. Every rent price is really a salary requirement in disguise, and most people discover theirs only after the city has already broken their budget. Read the requirement first. Rank your cities by the income their rent silently demands — and refuse to let a single bedroom quietly set the entire course of your financial life.",
     "props": [
       {
-        "name": "skyline",
-        "label": "expensive = keeps the most of you"
+        "name": "apartment",
+        "label": "rent = a salary rule"
       },
       {
         "name": "scale",
-        "label": "rank by what you keep"
+        "label": "rank by income demanded"
       },
       {
-        "name": "warning",
-        "label": "glamour is a bad deal"
+        "name": "paystub",
+        "label": "don't let a room decide"
       }
     ]
   },
   {
-    "id": "s57",
+    "id": "s50",
     "type": "character",
     "pose": "explain",
-    "narration": "And the cost compounds in a way that's easy to miss. Keeping an extra twenty thousand a year in a cheap city, invested for a few decades, becomes a fortune. The expensive city didn't just cost you that twenty thousand — it cost you everything that money would have grown into. The priciest cities are quietly the most expensive places to build a future.",
+    "narration": "And zoom out on the decades. A renter who keeps housing near thirty percent and invests the difference can retire comfortably. One who lets rent creep to half their income, in a city they couldn't really afford, may never catch up. The rent you choose today quietly writes the size of the life you'll be able to afford later.",
     "props": [
       {
         "name": "snowball",
-        "label": "the gap compounds"
-      },
-      {
-        "name": "moneytree",
-        "label": "it costs the future too"
+        "label": "invest the difference"
       },
       {
         "name": "chartup",
-        "label": "decades of lost growth"
+        "label": "30% renter retires"
+      },
+      {
+        "name": "warning",
+        "label": "50% renter never catches up"
       }
     ]
   },
@@ -666,10 +708,10 @@
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this changed how you read a job offer, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this changed how you read a rent listing, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "moneybag",
+        "name": "apartment",
         "label": "which price tag next?"
       }
     ]

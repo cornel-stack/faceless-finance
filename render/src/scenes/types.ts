@@ -236,7 +236,9 @@ export interface StageScene extends Base {
     // EP085 (The Price Tag — cost of a degree by country) additions:
     | "tuitionbars" | "tuitioninflationcurve" | "whyustuition" | "freecollegemodel"
     // EP086 (The Price Tag — expensive cities by what you keep) additions:
-    | "grosspayillusion" | "citykeepbars" | "taxwedgebite" | "whatyoukeepfunnel";
+    | "grosspayillusion" | "citykeepbars" | "taxwedgebite" | "whatyoukeepfunnel"
+    // EP087 (The Price Tag — rent by city vs salary needed) additions:
+    | "rentbycitybars" | "salaryneededladder" | "rentburdenmap";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
