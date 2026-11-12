@@ -230,7 +230,9 @@ export interface StageScene extends Base {
     // EP082 (The Price Tag — houses expensive, 4-country) additions:
     | "sameplaybook" | "buildingdeficit" | "homesasinvestment"
     // EP083 (The Price Tag — healthcare cost) additions:
-    | "healthspendbars" | "spendvsoutcome" | "uscostdrivers" | "medicalbankruptcy";
+    | "healthspendbars" | "spendvsoutcome" | "uscostdrivers" | "medicalbankruptcy"
+    // EP084 (The Price Tag — housing market 2026 by state) additions:
+    | "statepriceladder" | "whatfourhundredkbuys" | "sunbeltmigration" | "crashornocrash";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

@@ -6158,6 +6158,55 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={460} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>getting sick can bankrupt you — almost only in America</text>
       </svg>
     );
+  } else if (m === "statepriceladder") {
+    // Most expensive vs cheapest states by median home price.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const high: [string, string][] = [["Hawaii", "$850K"], ["California", "$780K"], ["Massachusetts", "$600K"]];
+    const low: [string, string][] = [["West Virginia", "$160K"], ["Mississippi", "$180K"], ["Ohio", "$230K"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={300} y={70} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">most expensive</text>
+        <text x={680} y={70} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">cheapest</text>
+        {high.map(([s, p], i) => { const y = 110 + i * 70; return <g key={i} opacity={interpolate(reveal, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={120} y={y} width={360} height={56} rx={8} fill="#d98b5f" stroke={ink} strokeWidth={3} /><text x={150} y={y + 35} fontSize={16} fontWeight={800} fill="#fff" fontFamily={sans}>{s}</text><text x={450} y={y + 35} fontSize={16} fontWeight={900} fill="#fff" textAnchor="end" fontFamily="Georgia, serif">{p}</text></g>; })}
+        {low.map(([s, p], i) => { const y = 110 + i * 70; return <g key={i} opacity={interpolate(reveal, [i * 0.15 + 0.3, i * 0.15 + 0.5], [0, 1], clampBoth)}><rect x={500} y={y} width={360} height={56} rx={8} fill="#9cc47f" stroke={ink} strokeWidth={3} /><text x={530} y={y + 35} fontSize={15} fontWeight={800} fill={ink} fontFamily={sans}>{s}</text><text x={830} y={y + 35} fontSize={16} fontWeight={900} fill={ink} textAnchor="end" fontFamily="Georgia, serif">{p}</text></g>; })}
+        <text x={VW / 2} y={400} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a 5× price gap — within one country</text>
+      </svg>
+    );
+  } else if (m === "whatfourhundredkbuys") {
+    // What $400K buys in different states.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const cols: [string, string][] = [["San Francisco", "a tiny studio"], ["Austin", "a starter home"], ["rural Ohio", "a mansion + land"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what $400,000 buys</text>
+        {cols.map(([place, what], i) => { const x = 200 + i * 290; const op = interpolate(reveal, [i * 0.22, i * 0.22 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 125} y={180} width={250} height={150} rx={12} fill={[red, gold, green][i]} stroke={ink} strokeWidth={4} /><text x={x} y={228} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{place}</text><text x={x} y={262} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{what.split(" ").slice(0,2).join(" ")}</text><text x={x} y={284} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{what.split(" ").slice(2).join(" ")}</text></g>; })}
+        <text x={VW / 2} y={400} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>same money, a closet or a palace</text>
+      </svg>
+    );
+  } else if (m === "sunbeltmigration") {
+    // Migration flowing to the Sun Belt.
+    const flow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the great migration south</text>
+        <g transform="translate(220 250)"><rect x={-70} y={-40} width={140} height={90} rx={10} fill="#cfe3d4" stroke={ink} strokeWidth={4} /><text y={-8} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>NY · CA · IL</text><text y={16} fontSize={12} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>pricey, leaving</text></g>
+        <path d={`M300 250 C 450 200, 550 320, ${300 + 380 * flow} 300`} fill="none" stroke={gold} strokeWidth={5} strokeLinecap="round" />
+        <path d={`M${300 + 380 * flow} 300 l-16 -6 m16 6 l-10 12`} stroke={gold} strokeWidth={5} fill="none" strokeLinecap="round" opacity={flow} />
+        <g transform="translate(730 280)"><rect x={-80} y={-45} width={160} height={100} rx={10} fill="#9cc47f" stroke={ink} strokeWidth={4} /><text y={-12} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>TX · FL · NC</text><text y={12} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>cheaper, building</text><text y={32} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>booming</text></g>
+        <text x={VW / 2} y={450} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>people chase affordability — and reshape the map</text>
+      </svg>
+    );
+  } else if (m === "crashornocrash") {
+    // The 2026 crash debate — a tug of war.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">is a crash coming in 2026?</text>
+        <g transform="translate(270 280)" opacity={interpolate(t, [0, 0.5], [0, 1], clampBoth)}><rect x={-140} y={-70} width={280} height={150} rx={12} fill={red} stroke={ink} strokeWidth={4} /><text y={-40} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>CRASH side</text><text y={-10} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>prices vs incomes stretched</text><text y={14} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>high rates cooling demand</text><text y={40} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>affordability at record lows</text></g>
+        <g transform="translate(730 280)" opacity={interpolate(t, [0.4, 0.9], [0, 1], clampBoth)}><rect x={-140} y={-70} width={280} height={150} rx={12} fill={green} stroke={ink} strokeWidth={4} /><text y={-40} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>NO-CRASH side</text><text y={-10} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>chronic housing shortage</text><text y={14} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>locked-in low-rate owners</text><text y={40} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>strong demand, few sellers</text></g>
+        <text x={VW / 2} y={450} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>most likely: stall, not collapse — a slow grind</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

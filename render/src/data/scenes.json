@@ -2,790 +2,756 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "The United States spends more on healthcare per person than almost any country in human history — roughly double what other rich nations spend. And in return, Americans live shorter lives than people in those cheaper systems. More money, worse results. Today, the true cost of healthcare around the world, and the mystery of where all that money actually goes.",
+    "narration": "The same amount of money that buys a cramped studio in San Francisco buys a mansion with land in rural Ohio. Across the fifty states, the price of an identical American dream swings by five times or more. Today we rank the entire US housing market in twenty twenty-six — the priciest states, the cheapest, and whether a crash is actually coming.",
     "pose": "explain",
     "props": [
       {
-        "name": "medkit",
-        "label": "US: ~2× the spending"
+        "name": "house",
+        "label": "studio vs mansion"
       },
       {
-        "name": "heart",
-        "label": "shorter lives"
+        "name": "mappin",
+        "label": "5× price gap by state"
       },
       {
-        "name": "warning",
-        "label": "where does it go?"
+        "name": "scale",
+        "label": "all 50 ranked"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that frames everything. The US spends around thirteen thousand dollars per person per year on health. The UK, Canada, and Australia spend roughly five to seven thousand — for universal coverage. Same medicine, same science. One country just pays double for it, and quietly gets less.",
-    "text": "$13K vs $5-7K",
-    "sub": "US health spend per person vs other rich nations",
-    "icon": "medkit"
+    "narration": "Here's the gap in one line. The median home in Hawaii runs well over eight hundred thousand dollars. In West Virginia, it's around a hundred and sixty thousand. Same country, same currency, same year — and one state's typical house costs five times another's. Where you live isn't a detail. It's the whole price tag.",
+    "text": "$850K vs $160K",
+    "sub": "median home: priciest state vs cheapest",
+    "icon": "house"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "Zoom out and the totals are staggering. The US spends roughly four and a half trillion dollars a year on healthcare — close to one in every five dollars in the entire economy. Other rich countries spend around ten to eleven percent of their economy on health. America spends nearly eighteen. That gap alone is trillions.",
+    "narration": "And the gap is even crueler at the down payment. Twenty percent down on that Hawaii home is around a hundred seventy thousand dollars — more than the entire price of a house in West Virginia. In one state, your deposit alone could buy a whole home in another, outright, with cash to spare.",
     "pose": "explain",
     "props": [
       {
-        "name": "moneybag",
-        "label": "~$4.5 trillion/year"
+        "name": "coins",
+        "label": "HI down payment: ~$170K"
       },
       {
-        "name": "percent",
-        "label": "~18% of US economy"
+        "name": "house",
+        "label": "= a whole WV house"
       },
       {
         "name": "warning",
-        "label": "others: ~10-11%"
+        "label": "the deposit gap is brutal"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we rank what healthcare actually costs across the rich world, uncover why the American bill is so monstrously high, follow the money through the insurance maze, and reveal the uniquely American outcome nobody else faces. If you've ever stared at a medical bill in disbelief, this explains why. Let's go.",
+    "narration": "So today we rank the states from most to least expensive, show what the same four hundred thousand dollars buys in wildly different places, follow the migration reshaping the whole map, and settle the question everyone's asking: is the twenty twenty-six housing market about to crash, or not? Let's go.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "rank the costs"
+        "label": "rank the states"
       },
       {
-        "name": "receipt",
-        "label": "the insurance maze"
+        "name": "truck",
+        "label": "the migration"
       },
       {
         "name": "warning",
-        "label": "the American outcome"
+        "label": "crash or not?"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "a $2,000 bill for a 10-minute ER visit",
-    "memeBottom": "and that's WITH insurance",
-    "narration": "Because in America, even having insurance doesn't protect you from a bill that would be unthinkable almost anywhere else. Before we rank the costs, let's be clear on what a healthcare system even is."
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "stay in your expensive home state",
+    "memeBottom": "move somewhere you can actually afford",
+    "narration": "Because for millions of Americans, the biggest financial decision of the decade isn't when to buy — it's which state to buy in. Before we rank them, let's agree on how we measure a housing market."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what a health system actually is.",
-    "heading": "The Basics",
-    "kicker": "how care gets paid for"
+    "narration": "First, how we rank a housing market.",
+    "heading": "The Measure",
+    "kicker": "price and affordability"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "A health system is a set of organizations, institutions and resources whose primary goal is to produce actions to improve health. Every rich country has excellent doctors and hospitals. What differs — massively — is how the whole thing is paid for. And that payment design is where almost the entire cost gap comes from.",
-    "sourceId": "wiki-healthsys"
+    "narration": "We track prices with a house price index, which measures the price changes of residential housing as a percentage change from a start date. But the raw price alone lies. A five-hundred-thousand-dollar home is cheap on a big salary and crushing on a small one. So we pair price with local income to find true affordability.",
+    "sourceId": "wiki-hpi"
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "narration": "Most wealthy countries run some form of universal health care — a system in which all citizens of a country have some level of health coverage. Taxes fund it, everyone's in, and the government negotiates prices on behalf of the entire nation. It's not free, but it's collectively bought, in bulk, at a discount.",
-    "sourceId": "wiki-uhc"
+    "narration": "And the number at the center of it all is the median — the value separating the higher half from the lower half of the data. The median home price is the one right in the middle of a state: half cost more, half cost less. It's the fairest single snapshot of what housing really costs there.",
+    "sourceId": "wiki-median"
   },
   {
     "id": "s8",
-    "type": "screenshot",
-    "narration": "The US took a different road. Healthcare in the United States is largely provided by private sector facilities and paid for through a patchwork of private insurance, employers, and government programs. No single buyer, no single price list — a fragmented market where, remarkably, almost nobody knows what anything costs until the bill arrives.",
-    "sourceId": "wiki-ushealth"
-  },
-  {
-    "id": "s42",
-    "type": "character",
-    "narration": "And the American patchwork has strange holes. Tens of millions are uninsured or underinsured. Most working-age people get coverage through their employer — a historical accident — which means losing your job can mean losing your healthcare, and changing jobs can mean changing doctors. Coverage is quietly chained to employment.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "warning",
-        "label": "tens of millions uninsured"
-      },
-      {
-        "name": "handshake",
-        "label": "coverage tied to your job"
-      },
-      {
-        "name": "medkit",
-        "label": "lose the job, lose the care"
-      }
-    ]
+    "type": "title",
+    "narration": "So let's rank them — the priciest states versus the cheapest.",
+    "heading": "The Ranking",
+    "kicker": "most vs least expensive"
   },
   {
     "id": "s9",
-    "type": "title",
-    "narration": "So let's see the raw numbers, country by country.",
-    "heading": "The Ranking",
-    "kicker": "spend per person"
+    "type": "stage",
+    "narration": "Here's the split. At the top: Hawaii, California, Massachusetts, and Colorado, where median homes run from six hundred thousand to well past eight. At the bottom: West Virginia, Mississippi, Iowa, and Ohio, where a typical home sits between a hundred and sixty and two hundred thirty thousand. Same dream, wildly different deposit.",
+    "motif": "statepriceladder",
+    "caption": "priciest vs cheapest states, 2026"
   },
   {
     "id": "s10",
-    "type": "stage",
-    "narration": "Here's annual health spending per person. The UK runs around five thousand dollars. Australia and Canada, six to seven. And the United States towers over all of them near thirteen thousand — far more than any peer. Every one of those cheaper countries covers everyone. The US, spending double, still leaves millions underinsured.",
-    "motif": "healthspendbars",
-    "caption": "the US pays roughly double — and covers fewer"
-  },
-  {
-    "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Health spending per person per year ($K)",
+    "title": "Median home price by state ($K)",
     "unit": "$K",
-    "narration": "Put them side by side and the gap is almost comical. The UK at five. Canada and Australia around six and seven. And the US at thirteen thousand dollars a head. That difference, multiplied across three hundred million people, is trillions of dollars a year — vanishing into a more expensive way to buy the same care.",
+    "narration": "Put the extremes on one chart. Hawaii towers near eight hundred fifty thousand, California close behind. The US as a whole sits around four hundred thousand. And West Virginia anchors the bottom near a hundred sixty. The national average is almost meaningless — it's really fifty different housing markets wearing one flag.",
     "data": [
       {
-        "label": "UK",
-        "value": 5
+        "label": "W. Virginia",
+        "value": 160
       },
       {
-        "label": "Canada",
-        "value": 6
+        "label": "US avg",
+        "value": 400
       },
       {
-        "label": "Australia",
-        "value": 7
+        "label": "California",
+        "value": 780
       },
       {
-        "label": "US",
-        "value": 13
+        "label": "Hawaii",
+        "value": 850
       }
     ],
     "highlight": 3
   },
   {
-    "id": "s43",
+    "id": "s42",
     "type": "callout",
-    "narration": "And remember what that cheaper spending buys elsewhere: care that's essentially free at the point of use. No bill after a hospital stay, no deductible before treatment, no bankruptcy from getting sick. Citizens in those countries pay through taxes — but they never get handed a surprise invoice for surviving.",
-    "text": "free at point of use",
-    "sub": "cheaper systems still cover everyone, with no surprise bill",
-    "icon": "shield"
+    "narration": "Don't forget the vast middle. A huge band of states — Texas, Georgia, North Carolina, Tennessee — sit in the three to four hundred thousand range: not dirt cheap, not coastal-crazy. This sweet-spot middle, with jobs and reasonable prices, is exactly where most of the migration is landing.",
+    "text": "~$300-400K",
+    "sub": "the sweet-spot middle: TX, GA, NC, TN",
+    "icon": "house"
   },
   {
-    "id": "s12",
-    "type": "title",
-    "narration": "So where does all that extra American money actually go?",
-    "heading": "The Drivers",
-    "kicker": "why the US pays double"
-  },
-  {
-    "id": "s13",
-    "type": "stage",
-    "narration": "It's not that Americans use more care — they actually visit doctors less than many peers. The money disappears into four holes: staggering administrative overhead, sky-high drug prices, a fee-for-service model that rewards doing more, and prices set in secret with nobody negotiating them down. Higher prices, not more care, is the whole story.",
-    "motif": "uscostdrivers",
-    "caption": "higher prices, not more care"
-  },
-  {
-    "id": "s44",
-    "type": "image",
-    "src": "img/memes/changemymind.jpg",
-    "meme": "Change My Mind",
-    "memeTop": "US healthcare is a free market that sets fair prices",
-    "memeBottom": "you can't see the price until after you're treated",
-    "narration": "This is the myth that props the whole thing up. A real free market needs prices you can see and compare. In US healthcare, you often can't learn the price until the bill arrives — which isn't a free market at all. It's a blindfolded one."
-  },
-  {
-    "id": "s14",
+    "id": "s11",
     "type": "character",
-    "narration": "Take administration first. In a fragmented system with thousands of insurers, every hospital needs armies of staff just to argue over billing codes and claims. Studies suggest the US spends several times more on healthcare administration than single-payer countries. A huge slice of your medical bill pays for paperwork, not medicine.",
+    "narration": "But price alone isn't the full story — a state can be expensive and still livable if incomes are high. California and Hawaii are brutal because prices outrun even their big salaries. Meanwhile some cheaper states are quietly unaffordable too, because local wages are low. Affordability is always price divided by paycheck.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "price ÷ paycheck"
+      },
+      {
+        "name": "warning",
+        "label": "high price, high pay can work"
+      },
+      {
+        "name": "chartdown",
+        "label": "cheap + low wages still hurts"
+      }
+    ]
+  },
+  {
+    "id": "s43",
+    "type": "character",
+    "narration": "And the sticker price hides a twist: property taxes. Texas has famously affordable homes but some of the highest property tax rates in the country, while a pricier state might tax lightly. Two identical-price homes can cost thousands more per year in one state. Always rank by the total yearly cost, not just the price.",
     "pose": "explain",
     "props": [
       {
         "name": "receipt",
-        "label": "armies of billing staff"
+        "label": "Texas: cheap homes, high tax"
+      },
+      {
+        "name": "scale",
+        "label": "rank total yearly cost"
       },
       {
         "name": "warning",
-        "label": "many insurers, endless codes"
+        "label": "price hides the tax bill"
+      }
+    ]
+  },
+  {
+    "id": "s12",
+    "type": "title",
+    "narration": "Which brings us to the most shareable comparison of all.",
+    "heading": "$400K",
+    "kicker": "what it buys where"
+  },
+  {
+    "id": "s13",
+    "type": "stage",
+    "narration": "Take four hundred thousand dollars — roughly the national median — and watch what it buys. In San Francisco, a tiny studio condo, if you're lucky. In Austin, a comfortable starter home. In rural Ohio or Mississippi, a sprawling house with acreage to spare. The same check, a closet in one place and a palace in another.",
+    "motif": "whatfourhundredkbuys",
+    "caption": "$400K: a studio or a mansion, depending on the state"
+  },
+  {
+    "id": "s44",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "grind for a raise to afford your city",
+    "memeBottom": "keep the salary, move to a cheaper state",
+    "narration": "This is the geographic-arbitrage brain. Instead of fighting for a raise to survive an expensive state, you keep the income and change the state. In a remote-work world, it's the closest thing to a cheat code American housing offers."
+  },
+  {
+    "id": "s14",
+    "type": "character",
+    "narration": "This single fact is the most powerful lever in American personal finance that almost nobody pulls. Your home is likely your biggest expense, and its price is set almost entirely by geography. Move two states over, and you can cut your housing cost in half overnight — without earning a dollar more, especially if you work remotely.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "geography sets the price"
       },
       {
-        "name": "medkit",
-        "label": "paperwork, not medicine"
+        "name": "chartdown",
+        "label": "move = housing cost halved"
+      },
+      {
+        "name": "smiley",
+        "label": "no raise required"
       }
     ]
   },
   {
     "id": "s15",
-    "type": "character",
-    "narration": "Then there are drug prices. The exact same medication, made by the exact same company, routinely costs two, three, even ten times more in the US than abroad. Why? Other countries negotiate as one giant buyer and say no to high prices. America's fragmented system largely doesn't — so it pays whatever is asked.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "pills",
-        "label": "same drug, 2-10× the price"
-      },
-      {
-        "name": "mappin",
-        "label": "others negotiate as one buyer"
-      },
-      {
-        "name": "warning",
-        "label": "the US mostly doesn't"
-      }
-    ]
+    "type": "title",
+    "narration": "And that's exactly what millions of Americans are now doing.",
+    "heading": "The Migration",
+    "kicker": "chasing affordability"
+  },
+  {
+    "id": "s16",
+    "type": "stage",
+    "narration": "There's a great migration underway. People are leaving expensive, high-tax states like California, New York, and Illinois, and pouring into cheaper, fast-building Sun Belt states — Texas, Florida, the Carolinas, Arizona. They're chasing lower prices and more space, and in doing so, they're redrawing America's economic map in real time.",
+    "motif": "sunbeltmigration",
+    "caption": "out of the coasts, into the Sun Belt"
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "The clearest example is insulin. A vial that costs a few dollars to make, and sells for around thirty in other countries, has cost Americans hundreds. Same drug, same maker — the only difference is who's allowed to negotiate the price. Recent caps helped, but the underlying pricing power is the real story.",
+    "narration": "The scale of the move is historic. California and New York have each lost hundreds of thousands of net residents in recent years, while Texas and Florida gained comparable numbers. Entire moving-truck companies ran out of one-way trucks leaving California. People are voting on housing prices with their feet.",
     "pose": "explain",
     "props": [
       {
-        "name": "pills",
-        "label": "insulin: ~$30 abroad"
+        "name": "truck",
+        "label": "CA/NY: huge net losses"
       },
       {
-        "name": "warning",
-        "label": "hundreds in the US"
-      },
-      {
-        "name": "scale",
-        "label": "same drug, different negotiator"
-      }
-    ]
-  },
-  {
-    "id": "s16",
-    "type": "character",
-    "narration": "And the payment model itself pushes costs up. In a fee-for-service system, providers are paid for every test, scan, and procedure they perform — not for keeping you healthy. That quietly rewards doing more, ordering more, billing more. The incentives are pointed in exactly the wrong direction.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "paid per procedure"
-      },
-      {
-        "name": "warning",
-        "label": "rewards doing MORE"
-      },
-      {
-        "name": "receipt",
-        "label": "not keeping you well"
-      }
-    ]
-  },
-  {
-    "id": "s46",
-    "type": "character",
-    "narration": "Fee-for-service also breeds defensive medicine. When every extra test is billable — and doctors fear lawsuits — the safe move is to order more scans, more labs, more follow-ups. A lot of that care adds cost without adding health. The system pays generously for doing something, and almost nothing for simply saying 'you're fine.'",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "extra tests = extra billing"
-      },
-      {
-        "name": "warning",
-        "label": "defensive medicine"
+        "name": "mappin",
+        "label": "TX/FL: huge gains"
       },
       {
         "name": "chartup",
-        "label": "cost up, health flat"
+        "label": "voting with their feet"
       }
     ]
   },
   {
     "id": "s17",
-    "type": "title",
-    "narration": "Now follow the money through the maze most Americans live inside.",
-    "heading": "The Maze",
-    "kicker": "premiums & deductibles"
+    "type": "character",
+    "narration": "But there's a twist, and it's important. All that demand flooding into the Sun Belt has driven prices there up fast. Cities like Austin, Phoenix, and Tampa, once famous bargains, have surged. The migrants are slowly exporting the very price problem they fled — proof that no place stays cheap once everyone rushes in.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "Sun Belt prices surged"
+      },
+      {
+        "name": "warning",
+        "label": "the bargain fades"
+      },
+      {
+        "name": "mappin",
+        "label": "they export the problem"
+      }
+    ]
   },
   {
     "id": "s18",
     "type": "screenshot",
-    "narration": "Most Americans rely on health insurance — a type of insurance that covers the whole or a part of the risk of a person incurring medical expenses. But American insurance is a maze of premiums, deductibles, copays, and networks so complex that even insured people routinely get hit with surprise bills they can't decode.",
-    "sourceId": "wiki-healthins"
+    "narration": "And the Sun Belt's secret weapon is building. Real estate economics — the application of economic techniques to real estate markets — is blunt about it: states that build lots of homes keep prices tamer, even with booming demand. Texas and Florida build aggressively, which is why they've absorbed millions of people without California-level prices.",
+    "sourceId": "wiki-reecon"
+  },
+  {
+    "id": "s46",
+    "type": "callout",
+    "narration": "The building gap is stark. Fast-growing states like Texas issue several times more home-building permits per person than California does. That single difference — whether a state actually lets homes get built — explains more about its prices than almost anything else you could measure.",
+    "text": "TX builds ~3× CA",
+    "sub": "home permits per person — the real price driver",
+    "icon": "crane"
   },
   {
     "id": "s19",
+    "type": "title",
+    "narration": "Now the question everyone actually clicked for: is 2026 a crash?",
+    "heading": "Crash or Not?",
+    "kicker": "the 2026 debate"
+  },
+  {
+    "id": "s20",
+    "type": "stage",
+    "narration": "There are two camps, and both have real evidence. The crash camp points to prices stretched far above incomes, high mortgage rates strangling demand, and affordability at record lows. The no-crash camp points to a chronic shortage of homes and millions of owners locked into cheap old mortgages, refusing to sell. It's a genuine standoff.",
+    "motif": "crashornocrash",
+    "caption": "stretched prices vs a chronic shortage"
+  },
+  {
+    "id": "s21",
     "type": "character",
-    "narration": "Walk the maze. First you pay a monthly premium just to have coverage. Then a deductible — often thousands — that you pay before insurance pays anything. Then copays and coinsurance on top. Go to the wrong, out-of-network hospital, and you can owe the full, uncapped price. It's insurance that still leaves you exposed.",
+    "narration": "Here's the key insight that breaks the tie. A crash needs forced sellers — people who must sell into a falling market, like in two thousand eight. But today, most homeowners are locked into ultra-low pandemic-era mortgage rates. They simply won't sell and give that up. No flood of desperate sellers, no classic crash.",
     "pose": "explain",
     "props": [
       {
-        "name": "receipt",
-        "label": "premium + deductible + copay"
+        "name": "padlock",
+        "label": "owners locked to low rates"
       },
       {
         "name": "warning",
-        "label": "out-of-network = full price"
+        "label": "no forced sellers"
       },
       {
-        "name": "coins",
-        "label": "covered, but still exposed"
+        "name": "house",
+        "label": "no flood = no crash"
       }
     ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "The employer link creates a quiet trap called job lock. People stay in jobs they hate, or avoid starting a business, purely to keep their health insurance. In universal systems, your coverage follows you no matter what you do. In the US, a career move can be a medical gamble — which subtly shrinks everyone's freedom.",
+    "narration": "This creates something called the lock-in effect, and it's freezing the whole market. Owners with a three-percent mortgage won't sell to take on a seven-percent one, so almost nobody lists. Fewer homes for sale means prices stay propped up even as sales volume collapses. It's a market that's expensive and frozen at the same time.",
     "pose": "explain",
     "props": [
       {
-        "name": "handshake",
-        "label": "'job lock'"
+        "name": "padlock",
+        "label": "the 'lock-in effect'"
       },
       {
         "name": "warning",
-        "label": "can't risk losing coverage"
+        "label": "nobody lists their home"
       },
       {
-        "name": "medkit",
-        "label": "freedom quietly shrinks"
+        "name": "house",
+        "label": "expensive AND frozen"
       }
     ]
-  },
-  {
-    "id": "s20",
-    "type": "title",
-    "narration": "And that exposure leads somewhere no other rich country goes.",
-    "heading": "The Outcome",
-    "kicker": "medical bankruptcy"
-  },
-  {
-    "id": "s21",
-    "type": "stage",
-    "narration": "Here's the result that stuns the rest of the world: in America, getting sick can bankrupt you. Medical bills are among the leading causes of personal bankruptcy in the United States — a phenomenon that is virtually nonexistent in countries with universal care. Nowhere else does an illness routinely become a financial catastrophe.",
-    "motif": "medicalbankruptcy",
-    "caption": "a top cause of US bankruptcy — almost unique"
-  },
-  {
-    "id": "s48",
-    "type": "callout",
-    "narration": "The scale is uniquely grim. Medical debt sits on the credit reports of tens of millions of Americans, and online fundraisers for medical bills — a genre that barely exists elsewhere — are everywhere. In most rich countries, 'crowdfunding your surgery' would sound like a dystopian joke. In the US, it's Tuesday.",
-    "text": "100M+ with medical debt",
-    "sub": "and a whole industry of crowdfunding medical bills",
-    "icon": "receipt"
   },
   {
     "id": "s22",
+    "type": "screenshot",
+    "narration": "That's the crucial difference from the United States housing bubble of the two-thousands, when US housing prices experienced a sharp run up and subsequent collapse. That crash was fueled by reckless lending and buyers who couldn't actually afford their loans. Today's lending is far stricter — so the fragile foundation that shattered then mostly isn't there now.",
+    "sourceId": "wiki-usbubble"
+  },
+  {
+    "id": "s23",
     "type": "character",
-    "narration": "Think about how strange that is. In the UK, Canada, or Australia, you can have a heart attack, spend a week in intensive care, and walk out owing essentially nothing. In the US, that same week can arrive as a bill for tens, even hundreds of thousands of dollars. Same treatment, wildly different aftermath.",
+    "narration": "So the most likely twenty twenty-six outcome isn't a dramatic collapse — it's a stall. Prices flatten or dip modestly, especially in the overheated Sun Belt, while the chronic shortage stops them from falling far. Not a crash, but a long, grinding plateau where incomes slowly try to catch up to prices.",
     "pose": "explain",
     "props": [
       {
-        "name": "heart",
-        "label": "same heart attack"
+        "name": "chartdown",
+        "label": "flatten or dip modestly"
       },
       {
-        "name": "smiley",
-        "label": "UK/CA/AU: owe ~nothing"
+        "name": "scale",
+        "label": "shortage stops a big fall"
       },
       {
-        "name": "warning",
-        "label": "US: a six-figure bill"
+        "name": "hourglass",
+        "label": "a long grinding plateau"
       }
     ]
   },
   {
-    "id": "s23",
-    "type": "title",
-    "narration": "But here's the question that really matters: is the expensive system better?",
-    "heading": "Spend vs Health",
-    "kicker": "does the money buy health?"
+    "id": "s48",
+    "type": "character",
+    "narration": "That said, some overheated metros are already quietly correcting. Austin, after doubling in a few years, has fallen meaningfully from its peak. Boise, Phoenix, and parts of Florida have softened too. So the honest answer on a crash is local: no national collapse, but real, sharp dips in the places that flew highest.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "Austin down from peak"
+      },
+      {
+        "name": "mappin",
+        "label": "Boise, Phoenix soft too"
+      },
+      {
+        "name": "scale",
+        "label": "the crash is local"
+      }
+    ]
   },
   {
     "id": "s24",
-    "type": "stage",
-    "narration": "This is the gut-punch. If spending double bought better health, you could maybe justify it. But it doesn't. The US spends the most of any major nation — and has a lower life expectancy than the UK, Canada, Australia, and most of the developed world. The extra trillions simply don't show up in longer lives.",
-    "motif": "spendvsoutcome",
-    "caption": "most spending, shorter lives"
+    "type": "title",
+    "narration": "But some regional markets are genuinely more at risk than others.",
+    "heading": "The Risk Map",
+    "kicker": "where prices could fall"
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "narration": "The most vulnerable spots are the ones that boomed hardest and built the most — pockets of Texas, Florida, and the mountain west — where a wave of new supply is finally arriving just as migration cools. That's exactly where you could see real price drops. Ironically, the places that built the most are now the likeliest to dip.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crane",
+        "label": "boom-and-build metros"
+      },
+      {
+        "name": "chartdown",
+        "label": "new supply + cooling demand"
+      },
+      {
+        "name": "warning",
+        "label": "likeliest real dips"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "character",
+    "narration": "Meanwhile, supply-starved markets — much of the Northeast, the West Coast, and the Midwest's job centers — are likely to stay stubbornly expensive. They never built enough, so even weak demand keeps prices high. The crash you're hoping for is least likely exactly where homes cost the most.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "skyline",
+        "label": "supply-starved metros"
+      },
+      {
+        "name": "chartup",
+        "label": "stay stubbornly pricey"
+      },
+      {
+        "name": "warning",
+        "label": "no crash where it's priciest"
+      }
+    ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "To be fair, not all of the outcome gap is the system's fault — diet, cars, and other factors play a role. But a big piece is healthcare itself: when millions delay or skip care because they fear the bill, problems that are cheap to catch early become expensive, deadly emergencies later. Avoiding the doctor to save money quietly costs lives.",
+    "narration": "And watch a brutal hidden cost: insurance. In Florida and California, soaring home-insurance premiums — driven by hurricanes and wildfires — are quietly adding hundreds a month to ownership, and in some zones insurers are leaving entirely. A cheap-looking home in a disaster zone can become impossible to insure, or afford.",
     "pose": "explain",
     "props": [
       {
         "name": "warning",
-        "label": "skipping care to save money"
+        "label": "FL/CA insurance soaring"
       },
       {
-        "name": "heart",
-        "label": "small problems turn deadly"
+        "name": "shield",
+        "label": "insurers leaving zones"
       },
       {
-        "name": "scale",
-        "label": "not all the gap is the system"
-      }
-    ]
-  },
-  {
-    "id": "s25",
-    "type": "screenshot",
-    "narration": "That outcome is measured by life expectancy — a statistical estimate of the average remaining years of life at a given age. Despite leading the world in spending, the US trails its peers by several years. Money is clearly flowing somewhere other than into keeping Americans alive longer.",
-    "sourceId": "wiki-lifeexp"
-  },
-  {
-    "id": "s26",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Life expectancy at birth (years)",
-    "unit": "yrs",
-    "narration": "Here are the lifespans. Australia near eighty-three. Canada around eighty-two. The UK about eighty-one. And the US, despite spending nearly double, down around seventy-seven to seventy-eight. The country paying the most to stay alive lives the fewest years. That single comparison breaks the 'you get what you pay for' assumption entirely.",
-    "data": [
-      {
-        "label": "US",
-        "value": 77
-      },
-      {
-        "label": "UK",
-        "value": 81
-      },
-      {
-        "label": "Canada",
-        "value": 82
-      },
-      {
-        "label": "Australia",
-        "value": 83
-      }
-    ],
-    "highlight": 0
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "And the US average hides brutal inequality. Wealthy, insured Americans can get some of the finest care on earth. Poor and uninsured Americans have outcomes closer to far less developed nations. The system delivers world-leading medicine to some, and a health crisis to others — in the same country, often the same city.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "huge gaps by income"
-      },
-      {
-        "name": "smiley",
-        "label": "rich: world-class care"
-      },
-      {
-        "name": "warning",
-        "label": "poor: left behind"
+        "name": "receipt",
+        "label": "a huge hidden cost"
       }
     ]
   },
   {
     "id": "s27",
     "type": "title",
-    "narration": "So why doesn't America just switch to the cheaper system?",
-    "heading": "Why Not Switch?",
-    "kicker": "the trillion-dollar trap"
+    "narration": "So what should you actually do with all this?",
+    "heading": "What To Do",
+    "kicker": "buyer, owner, mover"
   },
   {
     "id": "s28",
     "type": "character",
-    "narration": "Because that 'wasted' spending is somebody's income. Every dollar of America's sky-high bill is revenue for insurers, hospitals, and drug companies — a multi-trillion-dollar industry that lobbies fiercely to keep things as they are. The system isn't broken from their point of view. For them, the high price is the entire point.",
-    "pose": "explain",
+    "narration": "If you're a buyer, stop waiting for a crash that probably isn't coming — but do buy where the math works. Run the price-to-income number for any state you're eyeing. And never stretch into a payment that assumes prices will keep rising. Buy the home, not the bet.",
+    "pose": "present",
     "props": [
       {
-        "name": "moneybag",
-        "label": "the bill = their revenue"
-      },
-      {
-        "name": "bank",
-        "label": "a multi-trillion industry"
+        "name": "scale",
+        "label": "run price-to-income"
       },
       {
         "name": "warning",
-        "label": "high price IS the point"
+        "label": "don't wait for a crash"
+      },
+      {
+        "name": "house",
+        "label": "buy the home, not the bet"
       }
     ]
   },
   {
     "id": "s29",
     "type": "character",
-    "narration": "There are also real fears about change. People worry about higher taxes, longer wait times, and losing the cutting-edge care the US genuinely does well. Those concerns aren't silly — but the data shows other countries deliver universal coverage, similar or better outcomes, and still spend far less. The trade-offs are smaller than the fear suggests.",
-    "pose": "explain",
+    "narration": "If you're flexible — especially remote — treat your state as a financial choice. Earning a coastal salary while paying Midwestern or Southern prices is the single fastest way to build wealth in America right now. The gap between what you earn and what your housing costs is pure, compounding freedom.",
+    "pose": "present",
     "props": [
       {
-        "name": "scale",
-        "label": "real fears: taxes, waits"
+        "name": "mappin",
+        "label": "pick your state deliberately"
       },
       {
-        "name": "smiley",
-        "label": "others: cover all, spend less"
+        "name": "moneybag",
+        "label": "coastal pay, cheap rent"
       },
       {
-        "name": "chartdown",
-        "label": "trade-offs smaller than feared"
+        "name": "chartup",
+        "label": "the gap compounds"
       }
     ]
   },
   {
-    "id": "s51",
+    "id": "s50",
     "type": "character",
-    "narration": "And debunk the wait-times myth while we're here. The US has long waits too — for appointments, for prior authorizations, for insurer approvals. Universal systems do triage non-urgent care, so a minor issue may wait. But for anything serious, outcomes and timeliness are broadly comparable, at half the price.",
-    "pose": "explain",
+    "narration": "Before you pack the truck, weigh the whole move, not just the home price. Some cheap-home states have high income or sales taxes; some have tougher job markets or real climate risk. The smartest movers compare total cost of living and career options — not just the number on the listing.",
+    "pose": "present",
     "props": [
       {
-        "name": "warning",
-        "label": "the US waits too"
-      },
-      {
         "name": "scale",
-        "label": "comparable for serious care"
+        "label": "weigh the whole move"
       },
       {
-        "name": "coins",
-        "label": "at half the price"
+        "name": "receipt",
+        "label": "state taxes, job market"
+      },
+      {
+        "name": "warning",
+        "label": "not just the sticker"
       }
     ]
   },
   {
     "id": "s30",
-    "type": "title",
-    "narration": "So what does this mean for you, living inside whichever system you've got?",
-    "heading": "What To Do",
-    "kicker": "surviving the bill"
+    "type": "character",
+    "narration": "And whatever you do, know your local affordability rule: housing — rent or mortgage, plus taxes and insurance — ideally under about thirty percent of your income. The further above that line a state pushes you, the more of your life it quietly eats. That one ratio is the clearest verdict on any housing market.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "percent",
+        "label": "keep housing under ~30%"
+      },
+      {
+        "name": "gauge",
+        "label": "the clearest verdict"
+      },
+      {
+        "name": "warning",
+        "label": "above it = life eaten"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "callout",
+    "narration": "Put it in income terms. To comfortably buy a median home, you'd need roughly thirty thousand a year in the cheapest states — and north of two hundred thousand in Hawaii or coastal California. The salary required to own a normal home is itself one of the widest gaps between states in the country.",
+    "text": "$30K vs $200K+",
+    "sub": "income needed to buy a median home, by state",
+    "icon": "calculator"
   },
   {
     "id": "s31",
-    "type": "character",
-    "narration": "If you're in the US, treat healthcare like the financial minefield it is. Never skip employer coverage that includes a match or subsidy. Always check if a provider is in-network before you go. And for any big procedure, ask for the price in advance and negotiate the bill afterward — hospitals quietly discount far more often than you'd think.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "shield",
-        "label": "take subsidized coverage"
-      },
-      {
-        "name": "mappin",
-        "label": "check in-network first"
-      },
-      {
-        "name": "receipt",
-        "label": "ask the price, then negotiate"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "A few concrete money-savers in the US: use telehealth and urgent care for minor issues instead of the ER, which can cost ten times more. Always ask for the generic version of any drug. And for scheduled procedures, get an itemized estimate in writing — vague 'it depends' answers are how surprise bills are born.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "medkit",
-        "label": "urgent care, not the ER"
-      },
-      {
-        "name": "pills",
-        "label": "ask for generics"
-      },
-      {
-        "name": "receipt",
-        "label": "get an itemized estimate"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Because the real goal is affordable housing — housing deemed affordable to those with a household income at or below the median. In 2026, whether you reach it depends less on timing the market, and far more on simply choosing a state where the median home still fits a median income.",
+    "sourceId": "wiki-affordhousing"
   },
   {
     "id": "s32",
     "type": "character",
-    "narration": "Build a health emergency fund, and if you're on a high-deductible plan, use a health savings account — it's triple tax-advantaged and one of the best accounts in all of American finance. In a system that can hand you a surprise five-figure bill, a dedicated cash cushion isn't optional. It's armor.",
-    "pose": "present",
+    "narration": "Because the real lesson of the 2026 map is this: there is no single American housing market. There are fifty of them, running at completely different speeds and prices. The crash question is the wrong one. The right question is simpler — which state's price tag actually fits your life?",
+    "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "health emergency fund"
+        "name": "mappin",
+        "label": "50 markets, not one"
       },
       {
-        "name": "chartup",
-        "label": "HSA: triple tax-advantaged"
+        "name": "scale",
+        "label": "crash is the wrong question"
       },
       {
-        "name": "shield",
-        "label": "a cushion is armor"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "One underused American superpower: the health savings account. Money goes in tax-free, grows tax-free, and comes out tax-free for medical costs — the only account with all three perks. And after sixty-five it works like a retirement account. Max it, invest it, and it quietly becomes one of the best wealth tools you have.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "HSA: triple tax-free"
-      },
-      {
-        "name": "piggybank",
-        "label": "invest it, don't spend it"
-      },
-      {
-        "name": "smiley",
-        "label": "a stealth retirement account"
+        "name": "house",
+        "label": "which price fits your life?"
       }
     ]
   },
   {
     "id": "s33",
     "type": "character",
-    "narration": "And know your rights. The US has curbed some of the worst surprise out-of-network billing, hospitals must publish prices, and non-profit hospitals are required to offer financial assistance. Most people never ask. The bill you first receive is very often a starting offer, not a final, fixed price.",
+    "narration": "So before you obsess over whether prices will drop five percent next year, zoom out and ask whether you're even in the right state. A different zip code can change your housing cost more than a decade of market swings ever will. Geography is the lever almost nobody pulls — and it's the biggest one you've got.",
     "pose": "present",
     "props": [
       {
-        "name": "receipt",
-        "label": "the first bill is an offer"
+        "name": "mappin",
+        "label": "right state > market timing"
       },
       {
-        "name": "handshake",
-        "label": "ask for financial aid"
+        "name": "chartup",
+        "label": "geography is the big lever"
       },
       {
         "name": "smiley",
-        "label": "most never ask"
+        "label": "pull it"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "And don't overlook help. Many states run first-time-buyer programs with down-payment assistance, and government-backed loans can let you buy with as little as three to three-and-a-half percent down. In an expensive state, these can be the difference between buying now and waiting another decade. Check your state's programs before you give up.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "first-time-buyer programs"
+      },
+      {
+        "name": "coins",
+        "label": "as little as 3% down"
+      },
+      {
+        "name": "smiley",
+        "label": "check before giving up"
       }
     ]
   },
   {
     "id": "s34",
     "type": "character",
-    "narration": "And wherever you live, understand this is the single biggest hidden line item in your life. Americans pay for healthcare through premiums, taxes, and lower wages, often without ever seeing the true total. In universal systems, it's paid through taxes up front. Either way, you're paying — the only question is how visibly, and how much.",
-    "pose": "explain",
+    "narration": "If you're staying put in an expensive state, play defense: lock a fixed-rate mortgage, avoid stretching, and remember your home is shelter first and an investment second. If you're free to move, the whole country is on sale somewhere — you just have to be willing to look past the coasts.",
+    "pose": "present",
     "props": [
       {
-        "name": "receipt",
-        "label": "you always pay"
+        "name": "padlock",
+        "label": "staying: lock a fixed rate"
       },
       {
-        "name": "percent",
-        "label": "premiums, taxes, or wages"
+        "name": "truck",
+        "label": "moving: the country's on sale"
       },
       {
-        "name": "scale",
-        "label": "the only question is how much"
+        "name": "house",
+        "label": "shelter first, bet second"
       }
     ]
   },
   {
-    "id": "s54",
-    "type": "callout",
-    "narration": "Put a lifetime number on it. The average American will pay somewhere around half a million dollars or more for healthcare over their life — through premiums, taxes, and out-of-pocket costs combined. It quietly rivals the cost of a house. Treating it as a major life expense, not an afterthought, is simply realistic.",
-    "text": "~$500,000+",
-    "sub": "lifetime healthcare cost per person — rivals a house",
-    "icon": "moneybag"
-  },
-  {
     "id": "s35",
     "type": "character",
-    "narration": "Because the real lesson is counterintuitive: in healthcare, more spending does not mean more health. The most expensive system on earth delivers middle-of-the-pack results, because so much of the money is eaten by prices, paperwork, and profit before it ever reaches a patient. Efficiency, not spending, is what actually buys longer lives.",
-    "pose": "explain",
+    "narration": "So watch the ranking, not the rumors. Median price, local income, and how much a state is building — those three numbers tell you everything about where a housing market is headed. Chase affordability, respect the shortage, and stop waiting for a crash that the math says probably won't come.",
+    "pose": "present",
     "props": [
       {
-        "name": "moneybag",
-        "label": "more spend ≠ more health"
+        "name": "scale",
+        "label": "price, income, building"
+      },
+      {
+        "name": "crane",
+        "label": "respect the shortage"
       },
       {
         "name": "warning",
-        "label": "eaten by prices + paperwork"
+        "label": "stop waiting for a crash"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "One last rule: judge a home by its total monthly cost, not its price. Mortgage, property tax, insurance, any HOA fees, and utilities — all of it. A cheaper house with high taxes and sky-high insurance can cost more each month than a pricier one somewhere sane. The listing price is the start of the math, never the end.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "total monthly, not price"
       },
       {
-        "name": "heart",
-        "label": "efficiency buys the years"
+        "name": "receipt",
+        "label": "tax + insurance + HOA"
+      },
+      {
+        "name": "scale",
+        "label": "price is just the start"
       }
     ]
   },
   {
     "id": "s36",
     "type": "character",
-    "narration": "So when you see that eye-watering medical bill, remember you're not mostly paying for better doctors or better science — you're paying for a uniquely expensive way to organize the exact same care. The treatment is world-class. The price tag is a choice.",
+    "narration": "Because the harshest truth of the 2026 market is that waiting rarely works. Rents rise while you wait, prices mostly grind upward, and the mythical crash keeps not arriving. The people who win are the ones who found a state they could afford and simply started building equity — boring, early, and somewhere sensible.",
     "pose": "explain",
     "props": [
       {
-        "name": "medkit",
-        "label": "same world-class care"
+        "name": "hourglass",
+        "label": "waiting rarely wins"
       },
       {
-        "name": "receipt",
-        "label": "a costlier way to buy it"
+        "name": "chartup",
+        "label": "start building equity"
       },
-      {
-        "name": "scale",
-        "label": "the price is a choice"
-      }
-    ]
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "narration": "It's gotten so lopsided that medical tourism is now a real industry: Americans flying to Mexico, Thailand, or Europe for surgery, dental work, and procedures — paying out of pocket, including the flight, for a fraction of the US price. When it's cheaper to buy a plane ticket than to get care at home, the price tag has truly broken.",
-    "pose": "explain",
-    "props": [
       {
         "name": "mappin",
-        "label": "fly abroad for surgery"
-      },
-      {
-        "name": "coins",
-        "label": "cheaper, flight included"
-      },
-      {
-        "name": "warning",
-        "label": "the price tag has broken"
+        "label": "somewhere affordable"
       }
     ]
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "And if there's one number to watch, it's spending per person versus life expectancy. That ratio tells you whether a country's healthcare money is actually buying health — or just buying cost. By that measure, nearly every developed nation quietly outscores the United States.",
-    "pose": "present",
+    "narration": "The American dream of owning a home isn't dead. It just quietly moved — out of the famous, photogenic, unaffordable coasts, and into the affordable, fast-building middle. In 2026, the dream is alive and well. It simply has a different zip code than it used to.",
+    "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "spend ÷ lifespan"
-      },
-      {
-        "name": "heart",
-        "label": "is money buying health?"
+        "name": "house",
+        "label": "the dream isn't dead"
       },
       {
         "name": "mappin",
-        "label": "the US quietly loses"
+        "label": "it moved zip codes"
+      },
+      {
+        "name": "smiley",
+        "label": "alive in the middle"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "So protect yourself ruthlessly inside whatever system you've got — and understand what you're really paying for. Healthcare is the one bill where the sticker price tells you almost nothing about the quality underneath.",
+    "narration": "So find your state, run the three numbers, and buy a life you can actually afford — not the one a listing photo is trying to sell you. The map is the strategy.",
     "pose": "present",
     "props": [
       {
-        "name": "shield",
-        "label": "protect yourself"
+        "name": "mappin",
+        "label": "find your state"
       },
       {
-        "name": "receipt",
-        "label": "know what you pay for"
+        "name": "calculator",
+        "label": "run the three numbers"
       },
       {
-        "name": "medkit",
-        "label": "price ≠ quality"
+        "name": "house",
+        "label": "the map is the strategy"
       }
     ]
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "If this explained your medical bills, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this ranked the housing market in a way that finally made sense, hit subscribe — and tell me which price tag you want me to break down next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "medkit",
+        "name": "house",
         "label": "which price tag next?"
       }
     ]

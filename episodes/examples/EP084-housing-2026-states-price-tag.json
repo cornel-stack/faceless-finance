@@ -1,0 +1,895 @@
+{
+  "id": "EP084",
+  "series": "Napkin Numbers",
+  "title": "Housing Market 2026: Every US State Ranked",
+  "slug": "housing-market-2026-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP084 — The Price Tag series (topic 74). Rank US states by home price + affordability in 2026: priciest (HI/CA/MA/CO) vs cheapest (WV/MS/IA/OH); median price by state, price-to-income, what $400K buys, the Sun Belt migration (TX/FL/NC), is a crash coming (the stall-not-collapse take). Chart-heavy. 4 new motifs (statepriceladder/whatfourhundredkbuys/sunbeltmigration/crashornocrash). Sources: US housing bubble/Real estate economics/House price index/Affordable housing/Median. Distinct from EP061 (cost of living) & EP082 (global housing). Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "The same amount of money that buys a cramped studio in San Francisco buys a mansion with land in rural Ohio. Across the fifty states, the price of an identical American dream swings by five times or more. Today we rank the entire US housing market in twenty twenty-six — the priciest states, the cheapest, and whether a crash is actually coming.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "studio vs mansion"
+        },
+        {
+          "name": "mappin",
+          "label": "5× price gap by state"
+        },
+        {
+          "name": "scale",
+          "label": "all 50 ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap in one line. The median home in Hawaii runs well over eight hundred thousand dollars. In West Virginia, it's around a hundred and sixty thousand. Same country, same currency, same year — and one state's typical house costs five times another's. Where you live isn't a detail. It's the whole price tag.",
+      "text": "$850K vs $160K",
+      "sub": "median home: priciest state vs cheapest",
+      "icon": "house"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "And the gap is even crueler at the down payment. Twenty percent down on that Hawaii home is around a hundred seventy thousand dollars — more than the entire price of a house in West Virginia. In one state, your deposit alone could buy a whole home in another, outright, with cash to spare.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "HI down payment: ~$170K"
+        },
+        {
+          "name": "house",
+          "label": "= a whole WV house"
+        },
+        {
+          "name": "warning",
+          "label": "the deposit gap is brutal"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we rank the states from most to least expensive, show what the same four hundred thousand dollars buys in wildly different places, follow the migration reshaping the whole map, and settle the question everyone's asking: is the twenty twenty-six housing market about to crash, or not? Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the states"
+        },
+        {
+          "name": "truck",
+          "label": "the migration"
+        },
+        {
+          "name": "warning",
+          "label": "crash or not?"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "stay in your expensive home state",
+      "memeBottom": "move somewhere you can actually afford",
+      "narration": "Because for millions of Americans, the biggest financial decision of the decade isn't when to buy — it's which state to buy in. Before we rank them, let's agree on how we measure a housing market."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, how we rank a housing market.",
+      "heading": "The Measure",
+      "kicker": "price and affordability"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "We track prices with a house price index, which measures the price changes of residential housing as a percentage change from a start date. But the raw price alone lies. A five-hundred-thousand-dollar home is cheap on a big salary and crushing on a small one. So we pair price with local income to find true affordability.",
+      "sourceId": "wiki-hpi"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "And the number at the center of it all is the median — the value separating the higher half from the lower half of the data. The median home price is the one right in the middle of a state: half cost more, half cost less. It's the fairest single snapshot of what housing really costs there.",
+      "sourceId": "wiki-median"
+    },
+    {
+      "id": "s8",
+      "type": "title",
+      "narration": "So let's rank them — the priciest states versus the cheapest.",
+      "heading": "The Ranking",
+      "kicker": "most vs least expensive"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Here's the split. At the top: Hawaii, California, Massachusetts, and Colorado, where median homes run from six hundred thousand to well past eight. At the bottom: West Virginia, Mississippi, Iowa, and Ohio, where a typical home sits between a hundred and sixty and two hundred thirty thousand. Same dream, wildly different deposit.",
+      "motif": "statepriceladder",
+      "caption": "priciest vs cheapest states, 2026"
+    },
+    {
+      "id": "s10",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Median home price by state ($K)",
+      "unit": "$K",
+      "narration": "Put the extremes on one chart. Hawaii towers near eight hundred fifty thousand, California close behind. The US as a whole sits around four hundred thousand. And West Virginia anchors the bottom near a hundred sixty. The national average is almost meaningless — it's really fifty different housing markets wearing one flag.",
+      "data": [
+        {
+          "label": "W. Virginia",
+          "value": 160
+        },
+        {
+          "label": "US avg",
+          "value": 400
+        },
+        {
+          "label": "California",
+          "value": 780
+        },
+        {
+          "label": "Hawaii",
+          "value": 850
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Don't forget the vast middle. A huge band of states — Texas, Georgia, North Carolina, Tennessee — sit in the three to four hundred thousand range: not dirt cheap, not coastal-crazy. This sweet-spot middle, with jobs and reasonable prices, is exactly where most of the migration is landing.",
+      "text": "~$300-400K",
+      "sub": "the sweet-spot middle: TX, GA, NC, TN",
+      "icon": "house"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "But price alone isn't the full story — a state can be expensive and still livable if incomes are high. California and Hawaii are brutal because prices outrun even their big salaries. Meanwhile some cheaper states are quietly unaffordable too, because local wages are low. Affordability is always price divided by paycheck.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "price ÷ paycheck"
+        },
+        {
+          "name": "warning",
+          "label": "high price, high pay can work"
+        },
+        {
+          "name": "chartdown",
+          "label": "cheap + low wages still hurts"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And the sticker price hides a twist: property taxes. Texas has famously affordable homes but some of the highest property tax rates in the country, while a pricier state might tax lightly. Two identical-price homes can cost thousands more per year in one state. Always rank by the total yearly cost, not just the price.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "Texas: cheap homes, high tax"
+        },
+        {
+          "name": "scale",
+          "label": "rank total yearly cost"
+        },
+        {
+          "name": "warning",
+          "label": "price hides the tax bill"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Which brings us to the most shareable comparison of all.",
+      "heading": "$400K",
+      "kicker": "what it buys where"
+    },
+    {
+      "id": "s13",
+      "type": "stage",
+      "narration": "Take four hundred thousand dollars — roughly the national median — and watch what it buys. In San Francisco, a tiny studio condo, if you're lucky. In Austin, a comfortable starter home. In rural Ohio or Mississippi, a sprawling house with acreage to spare. The same check, a closet in one place and a palace in another.",
+      "motif": "whatfourhundredkbuys",
+      "caption": "$400K: a studio or a mansion, depending on the state"
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "grind for a raise to afford your city",
+      "memeBottom": "keep the salary, move to a cheaper state",
+      "narration": "This is the geographic-arbitrage brain. Instead of fighting for a raise to survive an expensive state, you keep the income and change the state. In a remote-work world, it's the closest thing to a cheat code American housing offers."
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "This single fact is the most powerful lever in American personal finance that almost nobody pulls. Your home is likely your biggest expense, and its price is set almost entirely by geography. Move two states over, and you can cut your housing cost in half overnight — without earning a dollar more, especially if you work remotely.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "geography sets the price"
+        },
+        {
+          "name": "chartdown",
+          "label": "move = housing cost halved"
+        },
+        {
+          "name": "smiley",
+          "label": "no raise required"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "title",
+      "narration": "And that's exactly what millions of Americans are now doing.",
+      "heading": "The Migration",
+      "kicker": "chasing affordability"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "There's a great migration underway. People are leaving expensive, high-tax states like California, New York, and Illinois, and pouring into cheaper, fast-building Sun Belt states — Texas, Florida, the Carolinas, Arizona. They're chasing lower prices and more space, and in doing so, they're redrawing America's economic map in real time.",
+      "motif": "sunbeltmigration",
+      "caption": "out of the coasts, into the Sun Belt"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "The scale of the move is historic. California and New York have each lost hundreds of thousands of net residents in recent years, while Texas and Florida gained comparable numbers. Entire moving-truck companies ran out of one-way trucks leaving California. People are voting on housing prices with their feet.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "truck",
+          "label": "CA/NY: huge net losses"
+        },
+        {
+          "name": "mappin",
+          "label": "TX/FL: huge gains"
+        },
+        {
+          "name": "chartup",
+          "label": "voting with their feet"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "But there's a twist, and it's important. All that demand flooding into the Sun Belt has driven prices there up fast. Cities like Austin, Phoenix, and Tampa, once famous bargains, have surged. The migrants are slowly exporting the very price problem they fled — proof that no place stays cheap once everyone rushes in.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "Sun Belt prices surged"
+        },
+        {
+          "name": "warning",
+          "label": "the bargain fades"
+        },
+        {
+          "name": "mappin",
+          "label": "they export the problem"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "narration": "And the Sun Belt's secret weapon is building. Real estate economics — the application of economic techniques to real estate markets — is blunt about it: states that build lots of homes keep prices tamer, even with booming demand. Texas and Florida build aggressively, which is why they've absorbed millions of people without California-level prices.",
+      "sourceId": "wiki-reecon"
+    },
+    {
+      "id": "s46",
+      "type": "callout",
+      "narration": "The building gap is stark. Fast-growing states like Texas issue several times more home-building permits per person than California does. That single difference — whether a state actually lets homes get built — explains more about its prices than almost anything else you could measure.",
+      "text": "TX builds ~3× CA",
+      "sub": "home permits per person — the real price driver",
+      "icon": "crane"
+    },
+    {
+      "id": "s19",
+      "type": "title",
+      "narration": "Now the question everyone actually clicked for: is 2026 a crash?",
+      "heading": "Crash or Not?",
+      "kicker": "the 2026 debate"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "There are two camps, and both have real evidence. The crash camp points to prices stretched far above incomes, high mortgage rates strangling demand, and affordability at record lows. The no-crash camp points to a chronic shortage of homes and millions of owners locked into cheap old mortgages, refusing to sell. It's a genuine standoff.",
+      "motif": "crashornocrash",
+      "caption": "stretched prices vs a chronic shortage"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Here's the key insight that breaks the tie. A crash needs forced sellers — people who must sell into a falling market, like in two thousand eight. But today, most homeowners are locked into ultra-low pandemic-era mortgage rates. They simply won't sell and give that up. No flood of desperate sellers, no classic crash.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "owners locked to low rates"
+        },
+        {
+          "name": "warning",
+          "label": "no forced sellers"
+        },
+        {
+          "name": "house",
+          "label": "no flood = no crash"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "This creates something called the lock-in effect, and it's freezing the whole market. Owners with a three-percent mortgage won't sell to take on a seven-percent one, so almost nobody lists. Fewer homes for sale means prices stay propped up even as sales volume collapses. It's a market that's expensive and frozen at the same time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "the 'lock-in effect'"
+        },
+        {
+          "name": "warning",
+          "label": "nobody lists their home"
+        },
+        {
+          "name": "house",
+          "label": "expensive AND frozen"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "That's the crucial difference from the United States housing bubble of the two-thousands, when US housing prices experienced a sharp run up and subsequent collapse. That crash was fueled by reckless lending and buyers who couldn't actually afford their loans. Today's lending is far stricter — so the fragile foundation that shattered then mostly isn't there now.",
+      "sourceId": "wiki-usbubble"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "So the most likely twenty twenty-six outcome isn't a dramatic collapse — it's a stall. Prices flatten or dip modestly, especially in the overheated Sun Belt, while the chronic shortage stops them from falling far. Not a crash, but a long, grinding plateau where incomes slowly try to catch up to prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "flatten or dip modestly"
+        },
+        {
+          "name": "scale",
+          "label": "shortage stops a big fall"
+        },
+        {
+          "name": "hourglass",
+          "label": "a long grinding plateau"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "That said, some overheated metros are already quietly correcting. Austin, after doubling in a few years, has fallen meaningfully from its peak. Boise, Phoenix, and parts of Florida have softened too. So the honest answer on a crash is local: no national collapse, but real, sharp dips in the places that flew highest.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "Austin down from peak"
+        },
+        {
+          "name": "mappin",
+          "label": "Boise, Phoenix soft too"
+        },
+        {
+          "name": "scale",
+          "label": "the crash is local"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "But some regional markets are genuinely more at risk than others.",
+      "heading": "The Risk Map",
+      "kicker": "where prices could fall"
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "The most vulnerable spots are the ones that boomed hardest and built the most — pockets of Texas, Florida, and the mountain west — where a wave of new supply is finally arriving just as migration cools. That's exactly where you could see real price drops. Ironically, the places that built the most are now the likeliest to dip.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crane",
+          "label": "boom-and-build metros"
+        },
+        {
+          "name": "chartdown",
+          "label": "new supply + cooling demand"
+        },
+        {
+          "name": "warning",
+          "label": "likeliest real dips"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "Meanwhile, supply-starved markets — much of the Northeast, the West Coast, and the Midwest's job centers — are likely to stay stubbornly expensive. They never built enough, so even weak demand keeps prices high. The crash you're hoping for is least likely exactly where homes cost the most.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "supply-starved metros"
+        },
+        {
+          "name": "chartup",
+          "label": "stay stubbornly pricey"
+        },
+        {
+          "name": "warning",
+          "label": "no crash where it's priciest"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And watch a brutal hidden cost: insurance. In Florida and California, soaring home-insurance premiums — driven by hurricanes and wildfires — are quietly adding hundreds a month to ownership, and in some zones insurers are leaving entirely. A cheap-looking home in a disaster zone can become impossible to insure, or afford.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "FL/CA insurance soaring"
+        },
+        {
+          "name": "shield",
+          "label": "insurers leaving zones"
+        },
+        {
+          "name": "receipt",
+          "label": "a huge hidden cost"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "So what should you actually do with all this?",
+      "heading": "What To Do",
+      "kicker": "buyer, owner, mover"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "If you're a buyer, stop waiting for a crash that probably isn't coming — but do buy where the math works. Run the price-to-income number for any state you're eyeing. And never stretch into a payment that assumes prices will keep rising. Buy the home, not the bet.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "run price-to-income"
+        },
+        {
+          "name": "warning",
+          "label": "don't wait for a crash"
+        },
+        {
+          "name": "house",
+          "label": "buy the home, not the bet"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "If you're flexible — especially remote — treat your state as a financial choice. Earning a coastal salary while paying Midwestern or Southern prices is the single fastest way to build wealth in America right now. The gap between what you earn and what your housing costs is pure, compounding freedom.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "pick your state deliberately"
+        },
+        {
+          "name": "moneybag",
+          "label": "coastal pay, cheap rent"
+        },
+        {
+          "name": "chartup",
+          "label": "the gap compounds"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "Before you pack the truck, weigh the whole move, not just the home price. Some cheap-home states have high income or sales taxes; some have tougher job markets or real climate risk. The smartest movers compare total cost of living and career options — not just the number on the listing.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "weigh the whole move"
+        },
+        {
+          "name": "receipt",
+          "label": "state taxes, job market"
+        },
+        {
+          "name": "warning",
+          "label": "not just the sticker"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "And whatever you do, know your local affordability rule: housing — rent or mortgage, plus taxes and insurance — ideally under about thirty percent of your income. The further above that line a state pushes you, the more of your life it quietly eats. That one ratio is the clearest verdict on any housing market.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "percent",
+          "label": "keep housing under ~30%"
+        },
+        {
+          "name": "gauge",
+          "label": "the clearest verdict"
+        },
+        {
+          "name": "warning",
+          "label": "above it = life eaten"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "callout",
+      "narration": "Put it in income terms. To comfortably buy a median home, you'd need roughly thirty thousand a year in the cheapest states — and north of two hundred thousand in Hawaii or coastal California. The salary required to own a normal home is itself one of the widest gaps between states in the country.",
+      "text": "$30K vs $200K+",
+      "sub": "income needed to buy a median home, by state",
+      "icon": "calculator"
+    },
+    {
+      "id": "s31",
+      "type": "screenshot",
+      "narration": "Because the real goal is affordable housing — housing deemed affordable to those with a household income at or below the median. In 2026, whether you reach it depends less on timing the market, and far more on simply choosing a state where the median home still fits a median income.",
+      "sourceId": "wiki-affordhousing"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Because the real lesson of the 2026 map is this: there is no single American housing market. There are fifty of them, running at completely different speeds and prices. The crash question is the wrong one. The right question is simpler — which state's price tag actually fits your life?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "50 markets, not one"
+        },
+        {
+          "name": "scale",
+          "label": "crash is the wrong question"
+        },
+        {
+          "name": "house",
+          "label": "which price fits your life?"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "So before you obsess over whether prices will drop five percent next year, zoom out and ask whether you're even in the right state. A different zip code can change your housing cost more than a decade of market swings ever will. Geography is the lever almost nobody pulls — and it's the biggest one you've got.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "right state > market timing"
+        },
+        {
+          "name": "chartup",
+          "label": "geography is the big lever"
+        },
+        {
+          "name": "smiley",
+          "label": "pull it"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "And don't overlook help. Many states run first-time-buyer programs with down-payment assistance, and government-backed loans can let you buy with as little as three to three-and-a-half percent down. In an expensive state, these can be the difference between buying now and waiting another decade. Check your state's programs before you give up.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "first-time-buyer programs"
+        },
+        {
+          "name": "coins",
+          "label": "as little as 3% down"
+        },
+        {
+          "name": "smiley",
+          "label": "check before giving up"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "If you're staying put in an expensive state, play defense: lock a fixed-rate mortgage, avoid stretching, and remember your home is shelter first and an investment second. If you're free to move, the whole country is on sale somewhere — you just have to be willing to look past the coasts.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "staying: lock a fixed rate"
+        },
+        {
+          "name": "truck",
+          "label": "moving: the country's on sale"
+        },
+        {
+          "name": "house",
+          "label": "shelter first, bet second"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "So watch the ranking, not the rumors. Median price, local income, and how much a state is building — those three numbers tell you everything about where a housing market is headed. Chase affordability, respect the shortage, and stop waiting for a crash that the math says probably won't come.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "price, income, building"
+        },
+        {
+          "name": "crane",
+          "label": "respect the shortage"
+        },
+        {
+          "name": "warning",
+          "label": "stop waiting for a crash"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "One last rule: judge a home by its total monthly cost, not its price. Mortgage, property tax, insurance, any HOA fees, and utilities — all of it. A cheaper house with high taxes and sky-high insurance can cost more each month than a pricier one somewhere sane. The listing price is the start of the math, never the end.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "total monthly, not price"
+        },
+        {
+          "name": "receipt",
+          "label": "tax + insurance + HOA"
+        },
+        {
+          "name": "scale",
+          "label": "price is just the start"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Because the harshest truth of the 2026 market is that waiting rarely works. Rents rise while you wait, prices mostly grind upward, and the mythical crash keeps not arriving. The people who win are the ones who found a state they could afford and simply started building equity — boring, early, and somewhere sensible.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "waiting rarely wins"
+        },
+        {
+          "name": "chartup",
+          "label": "start building equity"
+        },
+        {
+          "name": "mappin",
+          "label": "somewhere affordable"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "The American dream of owning a home isn't dead. It just quietly moved — out of the famous, photogenic, unaffordable coasts, and into the affordable, fast-building middle. In 2026, the dream is alive and well. It simply has a different zip code than it used to.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "the dream isn't dead"
+        },
+        {
+          "name": "mappin",
+          "label": "it moved zip codes"
+        },
+        {
+          "name": "smiley",
+          "label": "alive in the middle"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So find your state, run the three numbers, and buy a life you can actually afford — not the one a listing photo is trying to sell you. The map is the strategy.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "find your state"
+        },
+        {
+          "name": "calculator",
+          "label": "run the three numbers"
+        },
+        {
+          "name": "house",
+          "label": "the map is the strategy"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this ranked the housing market in a way that finally made sense, hit subscribe — and tell me which price tag you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "house",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-hpi",
+      "name": "House price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_price_index",
+      "quote": "measures the price changes of residential housing as a percentage change"
+    },
+    {
+      "id": "wiki-median",
+      "name": "Median (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median",
+      "quote": "the value separating the higher half from the lower half"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "the application of economic techniques to real estate markets"
+    },
+    {
+      "id": "wiki-usbubble",
+      "name": "United States housing bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_States_housing_bubble",
+      "quote": "United States housing prices experienced a sharp run up and subsequent collapse"
+    },
+    {
+      "id": "wiki-affordhousing",
+      "name": "Affordable housing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affordable_housing",
+      "quote": "housing which is deemed affordable to those with a household income at or below the median"
+    }
+  ],
+  "youtube": {
+    "title": "Housing Market 2026: Every US State Ranked",
+    "alts": [
+      "The 2026 Housing Market, Every State Ranked by Price",
+      "Where to Buy a House in 2026: All 50 States Ranked"
+    ],
+    "hook": "The same money that buys a cramped studio in San Francisco buys a mansion with land in rural Ohio — America's home prices swing 5x or more across the 50 states. This is the 2026 housing market, every state ranked: the priciest (Hawaii ~$850K, California ~$780K, Massachusetts, Colorado) vs the cheapest (West Virginia ~$160K, Mississippi, Iowa, Ohio). We show what $400K buys in different states, the Sun Belt migration reshaping the map (and why Austin/Phoenix/Tampa surged), and settle the big question: is a 2026 crash coming? (Spoiler: a stall, not a collapse — because rate-locked owners won't sell and there's a chronic shortage.) Plus exactly what buyers, owners, and movers should do. Fully cited.",
+    "bullets": [
+      "Median home price by state: ~$850K (HI) vs ~$160K (WV)",
+      "What $400K buys: a studio or a mansion, by state",
+      "The Sun Belt migration — and why those bargains faded",
+      "Is 2026 a crash? Why it's a stall, not a collapse",
+      "Where prices could actually dip (boom-and-build metros)",
+      "What buyers, owners, and movers should do now"
+    ],
+    "tags": [
+      "housing market 2026",
+      "housing market crash",
+      "best states to buy a house",
+      "cheapest states to live",
+      "us housing market",
+      "home prices by state",
+      "real estate 2026",
+      "sun belt migration",
+      "should i buy a house 2026",
+      "housing affordability",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#housingmarket",
+      "#realestate",
+      "#housing2026",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "HOUSING 2026",
+      "hookBot": "EVERY STATE RANKED",
+      "napkinNumber": "$850K vs $160K",
+      "napkinSub": "priciest vs cheapest state",
+      "deco": "house"
+    },
+    "chapters": [
+      [
+        "how we rank a housing market",
+        "The measure"
+      ],
+      [
+        "the priciest states versus the cheapest",
+        "The ranking"
+      ],
+      [
+        "the most shareable comparison of all",
+        "$400K"
+      ],
+      [
+        "millions of americans are now doing",
+        "The migration"
+      ],
+      [
+        "is 2026 a crash",
+        "Crash or not?"
+      ],
+      [
+        "some regional markets are genuinely more at risk",
+        "The risk map"
+      ],
+      [
+        "what should you actually do",
+        "What to do"
+      ],
+      [
+        "the real lesson of the 2026 map",
+        "50 markets"
+      ]
+    ]
+  }
+}
