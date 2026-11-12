@@ -133,6 +133,8 @@ export type DoodleName =
   | "parachute" | "bargaintag"
   // EP071 (every level of interest rate) additions:
   | "thermostat" | "brake"
+  // EP072 (every level of emergency fund) additions:
+  | "fireextinguisher" | "pillow"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2207,6 +2209,25 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={38} y1={84} x2={54} y2={30} strokeWidth={SW} />
           <RRect x={44} y={18} w={28} h={16} fill={RED} strokeWidth={SW} />
           <RCircle cx={38} cy={84} d={10} fill={INK} strokeWidth={1.4} />
+        </>
+      );
+    case "fireextinguisher":
+      // A fire extinguisher — the emergency tool.
+      return (
+        <>
+          <RRect x={36} y={30} w={30} h={54} fill={RED} strokeWidth={SW} />
+          <RRect x={44} y={22} w={14} h={10} fill={INK} strokeWidth={1.6} />
+          <RLine x1={58} y1={26} x2={74} y2={34} strokeWidth={SW} />
+          <RRect x={40} y={44} w={22} h={18} fill={PARCH} strokeWidth={1.4} />
+        </>
+      );
+    case "pillow":
+      // A pillow — sleep-at-night peace of mind.
+      return (
+        <>
+          <RPath d="M18 42 Q50 30 82 42 Q86 64 82 74 Q50 86 18 74 Q14 64 18 42 Z" fill="#eef3f6" strokeWidth={SW} />
+          <RCircle cx={30} cy={52} d={6} fill="none" strokeWidth={1.2} />
+          <RCircle cx={70} cy={52} d={6} fill="none" strokeWidth={1.2} />
         </>
       );
   }

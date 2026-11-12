@@ -5405,6 +5405,56 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={430} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>if inflation beats your rate, you're quietly losing money</text>
       </svg>
     );
+  } else if (m === "efundlevels") {
+    // Emergency-fund levels and who survives.
+    const tiers: [string, string, string][] = [["$0", "one bill from disaster", red], ["$1K", "small emergencies", "#d98b5f"], ["3 months", "survive a job loss", gold], ["6 months", "the solid standard", "#9cc47f"], ["1 year", "bulletproof", green]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab, col], i) => { const w = 170 + i * 130; const y = 100 + i * 72; return <g key={i} opacity={interpolate(climb, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={VW / 2 - w / 2} y={y} width={w} height={56} rx={7} fill={col as string} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 50} y={y + 36} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 55} y={y + 35} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the levels of a safety net</text>
+      </svg>
+    );
+  } else if (m === "survivalbyshock") {
+    // Which shock you survive at each level.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string][] = [["$1K", "a flat tire, a vet bill"], ["3 months", "a layoff, a job hunt"], ["6 months", "a long layoff + medical"], ["1 year", "almost any disaster"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what each level lets you survive</text>
+        {rows.map(([amt, shock], i) => { const y = 110 + i * 82; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={150} y={y} width={180} height={60} rx={9} fill={gold} stroke={ink} strokeWidth={3} /><text x={240} y={y + 37} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><path d={`M340 ${y + 30} l35 0 m0 0 l-12 -8 m12 8 l-12 8`} stroke={ink} strokeWidth={3} fill="none" /><rect x={390} y={y} width={420} height={60} rx={9} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text x={600} y={y + 37} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>✓ {shock}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "peaceofmindcurve") {
+    // Calm rises fast then plateaus.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 440, yTop = 130;
+    const f = (t: number) => y0 - (y0 - yTop) * (1 - Math.exp(-3.4 * t));
+    const segs = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the peace-of-mind curve</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <text x={66} y={yTop + 10} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>calm</text>
+        <path d={segs} fill="none" stroke={green} strokeWidth={6} />
+        <text x={300} y={y0 + 26} fontSize={13} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>$0 → 3 mo: huge</text>
+        <text x={740} y={y0 + 26} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>1yr+: flattens</text>
+        <text x={VW / 2} y={y0 - 20} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>most of the calm comes early</text>
+      </svg>
+    );
+  } else if (m === "cashdrag") {
+    // Too much cash loses to inflation.
+    const shrink = interpolate(frame, [fps * 0.5, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">you can hold too much cash</text>
+        <g transform="translate(300 300)"><circle r={96} fill="#efe9da" stroke={ink} strokeWidth={5} /><text y={-6} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>2 years cash</text><text y={18} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>idle</text></g>
+        <path d="M410 300 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(700 300)"><circle r={96 - 36 * shrink} fill={red} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>loses to</text><text y={18} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>inflation</text></g>
+        <text x={VW / 2} y={460} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>past ~1 year, extra cash should be invested, not idle</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

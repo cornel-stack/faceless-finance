@@ -206,7 +206,9 @@ export interface StageScene extends Base {
     // EP070 (every level of stock market crash) additions:
     | "crashseverityladder" | "recoverytime" | "crashfrequency" | "whattodoincrash"
     // EP071 (every level of interest rate) additions:
-    | "interestratelevels" | "saversvsborrowers" | "rateripple" | "realrate";
+    | "interestratelevels" | "saversvsborrowers" | "rateripple" | "realrate"
+    // EP072 (every level of emergency fund) additions:
+    | "efundlevels" | "survivalbyshock" | "peaceofmindcurve" | "cashdrag";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
