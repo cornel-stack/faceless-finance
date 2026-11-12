@@ -129,6 +129,8 @@ export type DoodleName =
   | "gift" | "will"
   // EP069 (every level of home ownership) additions:
   | "paidstamp" | "confetti"
+  // EP070 (every level of stock market crash) additions:
+  | "parachute" | "bargaintag"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2162,6 +2164,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={64} cy={58} d={9} fill={RED} strokeWidth={1.2} />
           <RRect x={30} y={74} w={10} h={10} fill={GREEN} strokeWidth={1.2} />
           <RRect x={60} y={78} w={10} h={10} fill={PINK} strokeWidth={1.2} />
+        </>
+      );
+    case "parachute":
+      // A parachute — surviving the fall.
+      return (
+        <>
+          <RPath d="M14 46 Q50 6 86 46 Z" fill={GREEN} strokeWidth={SW} />
+          <RLine x1={14} y1={46} x2={50} y2={46} strokeWidth={1.4} />
+          <RLine x1={86} y1={46} x2={50} y2={46} strokeWidth={1.4} />
+          <RLine x1={14} y1={46} x2={44} y2={76} strokeWidth={1.6} />
+          <RLine x1={86} y1={46} x2={56} y2={76} strokeWidth={1.6} />
+          <RLine x1={50} y1={46} x2={50} y2={76} strokeWidth={1.6} />
+          <RCircle cx={50} cy={82} d={12} fill={PARCH} strokeWidth={SW} />
+        </>
+      );
+    case "bargaintag":
+      // A sale/bargain price tag — crash = discount.
+      return (
+        <>
+          <RPath d="M20 30 L56 30 L84 58 L56 86 L20 58 Z" fill={RED} strokeWidth={SW} />
+          <RCircle cx={36} cy={48} d={9} fill={PARCH} strokeWidth={1.6} />
+          <text x={56} y={66} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">SALE</text>
         </>
       );
   }

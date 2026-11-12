@@ -5311,6 +5311,50 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={430} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>every payment quietly moves value from the bank's side to yours</text>
       </svg>
     );
+  } else if (m === "crashseverityladder") {
+    // The severity ladder: -10 to -80%.
+    const tiers: [string, string, string][] = [["−5%", "a dip", "#9cc47f"], ["−10%", "correction", gold], ["−20%", "bear market", "#d98b5f"], ["−40%", "a crash", red], ["−80%", "depression", "#7a1f16"]];
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the levels of a market fall</text>
+        {tiers.map(([pct, lab, col], i) => { const y = 100 + i * 72; const w = 180 + i * 130; return <g key={i} opacity={interpolate(reveal, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={120} y={y} width={w} height={56} rx={7} fill={col as string} stroke={ink} strokeWidth={4} /><text x={150} y={y + 36} fontSize={22} fontWeight={900} fill="#fff" fontFamily="Georgia, serif">{pct}</text><text x={150 + w - 20} y={y + 35} fontSize={16} fontWeight={800} fill="#fff" textAnchor="end" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the deeper it falls, the rarer — and the longer to climb back</text>
+      </svg>
+    );
+  } else if (m === "recoverytime") {
+    // How long each severity took to recover.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const rows: [string, string, number, string][] = [["correction −10%", "~4 months", 90, "#9cc47f"], ["bear −20%", "~2 years", 200, gold], ["crash −40%", "~4 years", 330, "#d98b5f"], ["depression −80%", "~decades", 520, red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how long to climb back</text>
+        {rows.map(([lab, t, w, col], i) => { const y = 120 + i * 82; return <g key={i} opacity={interpolate(grow, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><text x={260} y={y + 32} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text><rect x={280} y={y + 6} width={Math.min(560, (w as number)) * grow} height={40} rx={6} fill={col as string} stroke={ink} strokeWidth={3} /><text x={280 + Math.min(560, (w as number)) * grow + 60} y={y + 32} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{t}</text></g>; })}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>but every single one, eventually, fully recovered</text>
+      </svg>
+    );
+  } else if (m === "crashfrequency") {
+    // How often each severity happens.
+    const pop = (d: number) => spring({ frame, fps, delay: d, config: { damping: 11 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how often they strike</text>
+        <g transform={`translate(230 300) scale(${Math.min(1, pop(fps * 0.4))})`}><circle r={80} fill="#9cc47f" stroke={ink} strokeWidth={5} /><text y={-6} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>correction</text><text y={18} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>~every year</text></g>
+        <g transform={`translate(500 300) scale(${Math.min(1, pop(fps * 1.0))})`}><circle r={56} fill={gold} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>bear</text><text y={16} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>~6 years</text></g>
+        <g transform={`translate(740 300) scale(${Math.min(1, pop(fps * 1.6))})`}><circle r={34} fill={red} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={12} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>depression</text><text y={15} fontSize={11} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>~a century</text></g>
+        <text x={VW / 2} y={460} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>small dips are constant; true catastrophes are rare</text>
+      </svg>
+    );
+  } else if (m === "whattodoincrash") {
+    // The right action at each severity.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const rows: [string, string][] = [["a dip / correction", "ignore it — it's noise"], ["a bear market", "keep buying on schedule"], ["a −40% crash", "buy more if you can; never sell"], ["any crash", "do NOT panic-sell"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what to actually do</text>
+        {rows.map(([sit, act], i) => { const y = 120 + i * 80; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={150} y={y} width={290} height={60} rx={9} fill="#f3cfc8" stroke={ink} strokeWidth={3} /><text x={295} y={y + 37} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{sit}</text><path d={`M445 ${y + 30} l35 0 m0 0 l-12 -8 m12 8 l-12 8`} stroke={ink} strokeWidth={3} fill="none" /><rect x={495} y={y} width={320} height={60} rx={9} fill={green} stroke={ink} strokeWidth={3} /><text x={655} y={y + 37} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{act}</text></g>; })}
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

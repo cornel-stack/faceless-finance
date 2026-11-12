@@ -1,0 +1,975 @@
+{
+  "id": "EP070",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Stock Market Crash: -10% to -80% (And What Happened Next)",
+  "slug": "every-level-of-stock-market-crash",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP070 — Every Level series (row 60, LAST-ish). The LADDER of crash severities: dip -5% → correction -10% → bear -20% → crash -30 to -50% → depression -50 to -80%+. Real examples (2020 -34%, 2022 -25%, 2008 -57%, dot-com -49%, 1929-32 -89%), recovery times, frequency, and what to DO at each. 4 new motifs (crashseverityladder/recoverytime/crashfrequency/whattodoincrash) + reuse crashgauntlet/panicvshold/longclimb + doodles parachute/bargaintag. Sources: Stock market crash/correction/Market trend/Great Depression/Recession/Black Monday. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "The market is falling. But how scared should you actually be? Because there are levels to a market drop — from a tiny dip that's pure noise, to a once-in-a-century collapse that wipes out most of everything. Knowing which level you're in is the difference between panic and opportunity.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "the market is falling"
+        },
+        {
+          "name": "rollercoaster",
+          "label": "there are levels to it"
+        },
+        {
+          "name": "scale",
+          "label": "panic, or opportunity?"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the fact that should calm you down. In the entire history of the US stock market, every single crash — every correction, every bear market, every catastrophe — has eventually recovered to new all-time highs. The score so far is crashes: zero, the market: every single time.",
+      "text": "100%",
+      "sub": "of US market crashes that eventually recovered to new highs",
+      "icon": "chartup"
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "The numbers behind that are reassuring. On average, a ten-percent correction hits about once a year, and a twenty-percent bear market roughly every six. If you invest for decades, you will live through many of both. They aren't disasters — they're the weather.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "correction ~yearly"
+        },
+        {
+          "name": "bear",
+          "label": "bear ~every 6 yrs"
+        },
+        {
+          "name": "smiley",
+          "label": "it's just the weather"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we're climbing every level of market crash — ten percent, twenty, forty, all the way to eighty — with the real historical examples, how long each took to recover, and exactly what a smart investor should do at every single level.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "−10% to −80%"
+        },
+        {
+          "name": "calendar",
+          "label": "recovery times"
+        },
+        {
+          "name": "diamond",
+          "label": "what to do"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/thisisfine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "my portfolio is down 30%",
+      "memeBottom": "this is fine — historically, it always has been",
+      "narration": "Because the crash itself almost never ruins investors. What ruins them is panicking at the wrong level — selling at the bottom, and missing the recovery that, historically, has always come."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the official ladder of how far markets fall.",
+      "heading": "The Ladder",
+      "kicker": "dip to depression"
+    },
+    {
+      "id": "s6",
+      "type": "stage",
+      "narration": "There are five rough levels. A dip — down five percent — is just noise. A correction is down ten. A bear market is down twenty. A full crash is down thirty to fifty. And a depression-level collapse is down fifty to eighty percent or more. Each level is a different beast entirely.",
+      "motif": "crashseverityladder",
+      "caption": "the deeper it falls, the rarer — and the longer to climb back"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "And the levels have different causes. Shallow dips are just mood and sentiment. Bear markets usually ride a real recession. And the deepest collapses need something systemic — a banking crisis, a giant bubble bursting, a shock to the whole economy. Severity tracks the cause.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brain",
+          "label": "dips = mood"
+        },
+        {
+          "name": "chartdown",
+          "label": "bears = recession"
+        },
+        {
+          "name": "bomb",
+          "label": "depressions = systemic"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "title",
+      "narration": "Level one is so common it barely counts.",
+      "heading": "The Dip: -5%",
+      "kicker": "pure noise"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "A five-percent dip happens several times a year, every year. It's the market breathing. By the time the news notices, it's often already over. At this level, the only correct move is to completely ignore it — and maybe not even look at your account.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "−5%, several times a year"
+        },
+        {
+          "name": "smiley",
+          "label": "just the market breathing"
+        },
+        {
+          "name": "shield",
+          "label": "ignore it entirely"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "A big reason dips feel scary is the media. A one-percent wobble becomes a flashing red 'MARKETS PLUNGE' banner. The financial news profits from your fear and your attention. The calmest investors are very often the ones who simply stopped watching the daily ticker.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "'MARKETS PLUNGE!'"
+        },
+        {
+          "name": "phone",
+          "label": "profits from fear"
+        },
+        {
+          "name": "shield",
+          "label": "stop watching daily"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "Drop twice as far, and it earns an official name.",
+      "heading": "The Correction: -10%",
+      "kicker": "almost yearly"
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "narration": "A correction is typically defined as a drop of more than ten percent in the value of a stock index. It sounds scary, but corrections happen on average about once a year — a completely normal, healthy part of how markets work.",
+      "sourceId": "wiki-correction"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And corrections actually do a job. They shake out wild speculation, reset silly valuations, and stop bubbles from growing even more dangerous. A market that never corrected would be a far scarier thing. Think of them as the market quietly taking out the trash.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "shake out froth"
+        },
+        {
+          "name": "chartdown",
+          "label": "reset valuations"
+        },
+        {
+          "name": "smiley",
+          "label": "a healthy reset"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Historically, a correction takes only around four months to recover. Blink, and it's gone. At this level, the smart investor doesn't flinch — they keep buying on schedule, quietly picking up shares at a small discount while everyone else frets over the headlines.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "~4 months to recover"
+        },
+        {
+          "name": "snowball",
+          "label": "keep buying"
+        },
+        {
+          "name": "bargaintag",
+          "label": "shares on sale"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Double it again, and we enter bear territory.",
+      "heading": "The Bear Market: -20%",
+      "kicker": "every few years"
+    },
+    {
+      "id": "s13",
+      "type": "screenshot",
+      "narration": "A bear market — a down leg in the broader market trend, a perceived tendency of the financial markets to move in a particular direction — is officially a drop of twenty percent or more. This is where real fear sets in, and the headlines turn genuinely grim.",
+      "sourceId": "wiki-trend"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "Here's the quietly hopeful asymmetry. Bull markets — the up periods — last far longer and climb far higher than bear markets fall. On average, bulls run for years; bears last mere months. Over time, the ups simply dwarf the downs. The house, for once, is you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bull",
+          "label": "bulls run for years"
+        },
+        {
+          "name": "bear",
+          "label": "bears last months"
+        },
+        {
+          "name": "chartup",
+          "label": "ups dwarf downs"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "Bear markets arrive roughly every six years, and on average take around two years to fully recover. The 2022 market, down about twenty-five percent, was a classic bear. Painful — but historically routine, and always, so far, temporary.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bear",
+          "label": "−20%+, every ~6 yrs"
+        },
+        {
+          "name": "calendar",
+          "label": "~2 yrs to recover"
+        },
+        {
+          "name": "chartdown",
+          "label": "2022: −25%"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "And here's a trick of the mind: bear markets feel far longer than they actually are. The pain of watching your money fall stretches time. In reality, the average bear is over in about a year — but living through it can feel like a solid decade of dread.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "feels like a decade"
+        },
+        {
+          "name": "bear",
+          "label": "~1 year in reality"
+        },
+        {
+          "name": "brain",
+          "label": "pain stretches time"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "title",
+      "narration": "Now we reach the level that makes history books.",
+      "heading": "The Crash: -30% to -50%",
+      "kicker": "the big ones"
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "narration": "This is a true stock market crash — a sudden, dramatic decline of stock prices across a major cross-section of the market. These are the ones that get names, and that people remember for the rest of their lives.",
+      "sourceId": "wiki-crash"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "And don't believe anyone who claims they can time these. Crashes are, almost by definition, a surprise — if everyone saw them coming, they'd already have happened. Even the pros fail to predict them reliably. Time IN the market beats timing the market, every single time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "nobody predicts them"
+        },
+        {
+          "name": "warning",
+          "label": "even the pros fail"
+        },
+        {
+          "name": "clock",
+          "label": "time IN > timing"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "stage",
+      "narration": "The modern hall of fame is brutal. Black Monday, 1987. The dot-com crash, down about forty-nine percent. The 2008 meltdown, down fifty-seven. The COVID crash of 2020, down thirty-four in mere weeks. Each one felt, at the time, like the end of the financial world.",
+      "motif": "crashgauntlet",
+      "caption": "every one was a buying opportunity"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Look closer, and each great crash had its own villain. 1987 was computers and panic. 2000 was the internet bubble. 2008 was housing and debt. 2020 was a pandemic. Totally different triggers — but the exact same pattern: a terrifying drop, then a full recovery.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "stockscreen",
+          "label": "1987: computers"
+        },
+        {
+          "name": "dialup",
+          "label": "2000: dot-com"
+        },
+        {
+          "name": "house",
+          "label": "2008: housing"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "narration": "Take the worst modern one: the 2008 crash, part of the Great Recession — a period of contraction in economies around the world. The market lost well over half its value, and it genuinely felt like the system itself might collapse.",
+      "sourceId": "wiki-recession"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "And yet. A crash of this size has historically taken around four years to recover — and then it kept climbing to spectacular new highs. The investors who held through 2008, and especially those who kept buying, saw their money more than quadruple in the decade that followed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "~4 years to recover"
+        },
+        {
+          "name": "chartup",
+          "label": "then new highs"
+        },
+        {
+          "name": "trophy",
+          "label": "holders 4×'d their money"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "This is exactly where the legends feed. In the depths of 2008, while the whole world fled, Warren Buffett urged people to be greedy when others are fearful — and bought aggressively. The most terrifying bottoms are precisely when the greatest fortunes get quietly made.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "greedy when fearful"
+        },
+        {
+          "name": "chartdown",
+          "label": "buy the bottom"
+        },
+        {
+          "name": "moneytree",
+          "label": "fortunes made here"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "And then there's the final level — the one that haunts every investor.",
+      "heading": "The Depression: -50% to -80%+",
+      "kicker": "the nightmare"
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "narration": "The ultimate catastrophe is a depression-level collapse, like the Great Depression — a severe global economic downturn from 1929 to 1939. At its worst, the US stock market fell an almost unimaginable eighty-nine percent.",
+      "sourceId": "wiki-depression"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "Eighty-nine percent. A million-dollar portfolio would have shrunk to a hundred and ten thousand. This is the level that genuinely destroys lives — and it took the market around twenty-five years to claw all the way back to its old nominal high. The one level that truly tests everything.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "−89% (1929-32)"
+        },
+        {
+          "name": "warning",
+          "label": "$1M → $110K"
+        },
+        {
+          "name": "calendar",
+          "label": "~25 yrs to recover"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Why was 1929 so uniquely catastrophic? A perfect storm: reckless borrowing to buy stocks, no safety nets, waves of bank failures, and policy blunders that choked the economy. It wasn't just a crash — it was a total system collapse, with nothing there to catch the fall.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "reckless margin debt"
+        },
+        {
+          "name": "bank",
+          "label": "waves of bank failures"
+        },
+        {
+          "name": "chartdown",
+          "label": "a system collapse"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "But even here, there's a crucial nerve-saving footnote. If you had kept reinvesting dividends and buying through the 1930s, you actually recovered far faster than that scary twenty-five-year headline suggests — because you were buying the whole market at once-in-a-century prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "kept buying the bottom"
+        },
+        {
+          "name": "bargaintag",
+          "label": "century-low prices"
+        },
+        {
+          "name": "chartup",
+          "label": "recovered far faster"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "The good news is we built guardrails from that disaster. Circuit breakers now halt panicked trading. Bank deposits are insured. And central banks act fast to stop collapses from spiraling. A full 1929-style depression is far less likely today — though never, ever impossible.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "barrier",
+          "label": "circuit breakers"
+        },
+        {
+          "name": "shield",
+          "label": "insured deposits"
+        },
+        {
+          "name": "capitol",
+          "label": "central banks act"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "So let's put the whole ladder together — the key insight is in the recovery.",
+      "heading": "What Happened Next",
+      "kicker": "it always came back"
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "Here's the pattern across every level. A correction recovers in months. A bear market, a couple of years. A full crash, around four. Even a depression eventually heals. The deeper the fall, the longer the climb — but the direction, given enough time, has always been back up.",
+      "motif": "recoverytime",
+      "caption": "but every single one, eventually, fully recovered"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And those scary recovery times assume you only watch the price. If you keep reinvesting dividends the whole way through, you recover meaningfully faster — because every payout is quietly buying you more shares at crushed, discounted prices. Dividends shorten the pain.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "reinvest dividends"
+        },
+        {
+          "name": "bargaintag",
+          "label": "buy at the bottom"
+        },
+        {
+          "name": "clock",
+          "label": "recover faster"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "And notice the frequency. Small dips and corrections happen constantly — practically every year. Real bear markets come every several years. But a true, life-altering depression has struck only about once a century. The scary levels are, thankfully, the rarest.",
+      "motif": "crashfrequency",
+      "caption": "small dips are constant; true catastrophes are rare"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "So plan for it like weather you know is coming. Over a thirty-year investing life, expect to live through maybe five bear markets and a couple of real crashes. They are not a question of 'if,' but of 'when.' Build your whole plan assuming they will absolutely happen.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "~5 bears in 30 yrs"
+        },
+        {
+          "name": "rollercoaster",
+          "label": "expect the drops"
+        },
+        {
+          "name": "shield",
+          "label": "plan for 'when'"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "Which means the real danger was never the crash itself.",
+      "heading": "The Real Danger",
+      "kicker": "it's you"
+    },
+    {
+      "id": "s28",
+      "type": "stage",
+      "narration": "At every level, the crash doesn't ruin you — selling does. Panic at the bottom, and you turn a temporary paper loss into a permanent real one, then watch the recovery happen without you. The investor who simply holds turns every one of these crashes into just another dip on a long climb up.",
+      "motif": "panicvshold",
+      "caption": "the loss was only real for the one who sold"
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "There's a brutal statistic for the panic-seller. The average investor badly underperforms the very funds they own — often by several percent a year — purely because they buy high in euphoria and sell low in fear. Your own emotions are the single biggest crash risk you face.",
+      "text": "−3%/yr",
+      "sub": "how much the average investor lags their own funds",
+      "icon": "brain"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "And here's the cruel trap. The market's best days cluster right next to its worst — deep inside the crashes. So the panic-seller, fleeing the storm, almost always misses the explosive rebound. Trying to dodge the crash is how you miss the recovery.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "best days hide in crashes"
+        },
+        {
+          "name": "warning",
+          "label": "sell = miss the bounce"
+        },
+        {
+          "name": "rollercoaster",
+          "label": "stay on the ride"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "callout",
+      "narration": "And here's the cost of fleeing, in one number. Stay fully invested across the decades, and you capture the full return. Miss just the ten best days — which almost always land inside the crashes — and your final result can be cut roughly in half.",
+      "text": "−50%",
+      "sub": "your return if you miss the 10 best days",
+      "icon": "chartup"
+    },
+    {
+      "id": "s30",
+      "type": "stage",
+      "narration": "Zoom all the way out, and every crash in history — every one of these terrifying drops — is just a small wobble on a line that marches relentlessly upward over the decades. From a distance, the catastrophes shrink to tiny notches on an extraordinary climb.",
+      "motif": "longclimb",
+      "caption": "…if you survived every crash on the way up"
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "So here's exactly what to do at each level.",
+      "heading": "The Playbook",
+      "kicker": "by severity"
+    },
+    {
+      "id": "s32",
+      "type": "stage",
+      "narration": "Match your action to the level. A dip or correction? Ignore it — it's noise. A bear market? Just keep buying on your normal schedule. A full crash? Buy even more if you can, and whatever you do, never sell. And in any crash, the one unbreakable rule: do not panic-sell.",
+      "motif": "whattodoincrash",
+      "caption": "what to actually do"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "One disciplined trick turns crashes to your advantage automatically: rebalancing. When stocks crash, you sell a little of what held up — your bonds — and buy more cheap stocks to restore your target mix. It forces you to buy low and sell high, with zero emotion required.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rebalance"
+        },
+        {
+          "name": "chartdown",
+          "label": "buy the cheap stocks"
+        },
+        {
+          "name": "gear",
+          "label": "buy low, automatically"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "The single best defense is built before the crash ever comes: an emergency fund and the right mindset. If you never have to sell your investments to pay the bills, a crash can never actually hurt you. It becomes a spectator sport — or a shopping spree.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "an emergency fund"
+        },
+        {
+          "name": "diamond",
+          "label": "never a forced seller"
+        },
+        {
+          "name": "bargaintag",
+          "label": "a crash becomes a sale"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "This is why a cushion of bonds or cash matters, especially near retirement. If a crash hits, you spend from the safe money and leave your stocks completely alone to recover. The forced seller gets crushed; the cushioned investor simply waits out the storm in comfort.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "bonds/cash cushion"
+        },
+        {
+          "name": "bear",
+          "label": "spend the safe money"
+        },
+        {
+          "name": "diamond",
+          "label": "wait out the storm"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "And flip your entire mindset about falling markets. For a long-term investor still buying, a crash isn't a disaster — it's the single best thing that can happen. It's a rare chance to buy years of future growth at a steep, temporary discount. Crashes build fortunes for the calm.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bargaintag",
+          "label": "a crash = a sale"
+        },
+        {
+          "name": "parachute",
+          "label": "the calm survive"
+        },
+        {
+          "name": "moneytree",
+          "label": "it builds fortunes"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And the simplest winning move needs no courage at all: dollar-cost averaging. Keep investing the same amount every month, automatically, straight through every crash. You'll buy more shares when they're cheap, fewer when they're dear, and never once have to make a scary decision.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "gear",
+          "label": "same amount monthly"
+        },
+        {
+          "name": "snowball",
+          "label": "buy more when cheap"
+        },
+        {
+          "name": "smiley",
+          "label": "no scary decisions"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Real crashes & recovery time (years)",
+      "unit": "yrs",
+      "narration": "Here's history in one chart. The 2020 crash recovered in under a year. The 2008 crash, about four. The dot-com crash, roughly six. And the Great Depression, around twenty-five. Deeper falls take longer — but every bar on this chart ends in a full recovery.",
+      "data": [
+        {
+          "label": "2020 (-34%)",
+          "value": 1
+        },
+        {
+          "label": "2008 (-57%)",
+          "value": 4
+        },
+        {
+          "label": "dot-com",
+          "value": 6
+        },
+        {
+          "label": "1929 (-89%)",
+          "value": 25
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "So the next time the market tumbles and the headlines scream, don't ask 'should I sell?' Ask 'which level is this?' A dip, a correction, a bear, a crash — each one has a name, a history, and a track record of recovery. Knowing the level turns raw fear into a calm plan.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "headlines scream"
+        },
+        {
+          "name": "scale",
+          "label": "'which level is this?'"
+        },
+        {
+          "name": "diamond",
+          "label": "fear → a plan"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "Here's a mindset that flips crashes entirely. The deeper the market falls, the bigger the future discount you're being offered. So the correct emotional response to a bigger crash isn't more fear — it's more interest. The best sales, after all, are the ones nobody wants to shop.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bargaintag",
+          "label": "deeper = bigger discount"
+        },
+        {
+          "name": "chartdown",
+          "label": "more fall, more interest"
+        },
+        {
+          "name": "moneytree",
+          "label": "the best sale"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the whole history of the market delivers one stubborn message. Crashes are not the exception — they're the toll you pay for the long-term returns. They are terrifying, temporary, and, so far, always followed by new highs. Survive them, and time quietly does the rest.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "rollercoaster",
+          "label": "crashes are the toll"
+        },
+        {
+          "name": "chartup",
+          "label": "always new highs after"
+        },
+        {
+          "name": "diamond",
+          "label": "just survive them"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "So make peace with the ride. That gut-churning volatility isn't a flaw in the stock market — it's the admission price for its extraordinary long-term returns. If stocks never crashed, they'd be as safe, and as low-paying, as cash. The fear is literally what you get paid for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "rollercoaster",
+          "label": "volatility = the price"
+        },
+        {
+          "name": "percent",
+          "label": "paid for the fear"
+        },
+        {
+          "name": "chartup",
+          "label": "it's a feature"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "If this calmed your nerves about the next crash, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "diamond",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-correction",
+      "name": "Stock market correction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stock_market_correction",
+      "quote": "a drop of more than 10% in the value of a stock index"
+    },
+    {
+      "id": "wiki-trend",
+      "name": "Market trend (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Market_trend",
+      "quote": "a perceived tendency of the financial markets to move in a particular direction"
+    },
+    {
+      "id": "wiki-crash",
+      "name": "Stock market crash (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stock_market_crash",
+      "quote": "a sudden dramatic decline of stock prices"
+    },
+    {
+      "id": "wiki-recession",
+      "name": "Great Recession (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Recession",
+      "quote": "a period of contraction in economies around the world"
+    },
+    {
+      "id": "wiki-depression",
+      "name": "Great Depression (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Depression",
+      "quote": "a severe global economic downturn from 1929 to 1939"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Stock Market Crash: -10% to -80% (And What Happened Next)",
+    "alts": [
+      "Dip, Correction, Bear, Crash, Depression: Every Level of a Market Fall",
+      "How Bad Is This Crash? Every Level, and the Recovery"
+    ],
+    "hook": "The market is falling — but how scared should you be? There are levels to a market drop, and knowing which one you're in is the difference between panic and opportunity. This is every level of a stock market crash, by the numbers: the dip (-5%, pure noise), the correction (-10%, almost yearly, recovers in ~4 months), the bear market (-20%, every ~6 years, ~2 years to recover), the full crash (-30% to -50%: 2008 -57%, dot-com -49%, COVID -34%), and the depression-level collapse (1929-32: -89%, ~25 years to recover). Plus what happened next (every single one recovered to new highs), how often each strikes, and exactly what to do at each level. Fully cited.",
+    "bullets": [
+      "The 5 levels: dip, correction, bear, crash, depression",
+      "Real examples: 2020 -34%, 2008 -57%, 1929 -89%",
+      "Recovery time for each level (months to decades)",
+      "Why 100% of US crashes recovered to new highs",
+      "Why the best days hide inside the worst crashes",
+      "Exactly what to do at every level (hint: don't sell)"
+    ],
+    "tags": [
+      "stock market crash",
+      "market correction vs crash",
+      "bear market explained",
+      "how long to recover from a crash",
+      "stock market history",
+      "what to do in a crash",
+      "market crash levels",
+      "2008 crash",
+      "great depression stocks",
+      "buy and hold",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#stockmarket",
+      "#investing",
+      "#marketcrash",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "EVERY LEVEL OF CRASH",
+      "hookBot": "-10% → -80%",
+      "napkinNumber": "100%",
+      "napkinSub": "recovered, eventually",
+      "deco": "rollercoaster"
+    },
+    "chapters": [
+      [
+        "the official ladder of how far markets fall",
+        "The ladder"
+      ],
+      [
+        "so common it barely counts",
+        "The dip -5%"
+      ],
+      [
+        "it earns an official name",
+        "The correction -10%"
+      ],
+      [
+        "we enter bear territory",
+        "The bear -20%"
+      ],
+      [
+        "the level that makes history books",
+        "The crash -30 to -50%"
+      ],
+      [
+        "the one that haunts every investor",
+        "The depression"
+      ],
+      [
+        "the real danger was never the crash itself",
+        "The real danger"
+      ],
+      [
+        "exactly what to do at each level",
+        "The playbook"
+      ]
+    ]
+  }
+}

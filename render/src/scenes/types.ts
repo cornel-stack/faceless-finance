@@ -202,7 +202,9 @@ export interface StageScene extends Base {
     // EP068 (every level of inheritance) additions:
     | "estatetaxcliff" | "inheritancetiers" | "estatevsinheritance" | "steppedupbasis" | "dodgetheestatetax" | "iratax"
     // EP069 (every level of home ownership) additions:
-    | "ownershipstages" | "equitybuilds" | "interestvsprincipal" | "rentvsownjourney" | "paidoffmilestone" | "equityformula";
+    | "ownershipstages" | "equitybuilds" | "interestvsprincipal" | "rentvsownjourney" | "paidoffmilestone" | "equityformula"
+    // EP070 (every level of stock market crash) additions:
+    | "crashseverityladder" | "recoverytime" | "crashfrequency" | "whattodoincrash";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

@@ -2,867 +2,836 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Home ownership isn't one thing — it's a journey through distinct stages, and most people never see the whole map. From your very first rent check to the day you finally burn the mortgage, your relationship to your home, and the wealth it quietly builds, transforms completely. Today, we walk every single level.",
+    "narration": "The market is falling. But how scared should you actually be? Because there are levels to a market drop — from a tiny dip that's pure noise, to a once-in-a-century collapse that wipes out most of everything. Knowing which level you're in is the difference between panic and opportunity.",
     "pose": "explain",
     "props": [
       {
-        "name": "apartment",
-        "label": "first rent check"
+        "name": "chartdown",
+        "label": "the market is falling"
       },
       {
-        "name": "house",
-        "label": "to a paid-off home"
+        "name": "rollercoaster",
+        "label": "there are levels to it"
       },
       {
-        "name": "keys",
-        "label": "every stage between"
+        "name": "scale",
+        "label": "panic, or opportunity?"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that stuns new buyers. On a typical thirty-year mortgage, your first two-thousand-dollar payment might put only about three hundred dollars toward actually owning the house. The other seventeen hundred? Pure interest to the bank. Ownership is shockingly back-loaded.",
-    "text": "$300 of $2,000",
-    "sub": "how little of an early mortgage payment is really yours",
-    "icon": "mortgage"
+    "narration": "Here's the fact that should calm you down. In the entire history of the US stock market, every single crash — every correction, every bear market, every catastrophe — has eventually recovered to new all-time highs. The score so far is crashes: zero, the market: every single time.",
+    "text": "100%",
+    "sub": "of US market crashes that eventually recovered to new highs",
+    "icon": "chartup"
   },
   {
     "id": "s40",
-    "type": "callout",
-    "narration": "Stretch that across thirty years, and the total is brutal. On a three-hundred-thousand-dollar loan at seven percent, you repay over seven hundred thousand — more than double the price of the house. The home cost three hundred; the mortgage quietly cost you four hundred thousand more in interest.",
-    "text": "$700,000",
-    "sub": "total repaid on a $300K mortgage at 7%",
-    "icon": "mortgage"
+    "type": "character",
+    "narration": "The numbers behind that are reassuring. On average, a ten-percent correction hits about once a year, and a twenty-percent bear market roughly every six. If you invest for decades, you will live through many of both. They aren't disasters — they're the weather.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "correction ~yearly"
+      },
+      {
+        "name": "bear",
+        "label": "bear ~every 6 yrs"
+      },
+      {
+        "name": "smiley",
+        "label": "it's just the weather"
+      }
+    ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we climb all the levels — renting, saving, buying, building equity, and finally owning it free and clear — and reveal the quiet machine that turns your monthly payment into a six-figure pile of net worth, almost without you noticing.",
+    "narration": "So today we're climbing every level of market crash — ten percent, twenty, forty, all the way to eighty — with the real historical examples, how long each took to recover, and exactly what a smart investor should do at every single level.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "rent → own → free"
+        "name": "chartdown",
+        "label": "−10% to −80%"
       },
       {
-        "name": "chartup",
-        "label": "the equity machine"
+        "name": "calendar",
+        "label": "recovery times"
       },
       {
-        "name": "nestegg",
-        "label": "payment → net worth"
+        "name": "diamond",
+        "label": "what to do"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "buying a home is 'owning' it",
-    "memeBottom": "buying a home is slowly BUYING it from the bank, payment by payment",
-    "narration": "Because the day you get the keys, you don't really own your home — the bank owns almost all of it. What follows is a decades-long, quiet handover, where each payment moves another brick of ownership from them, to you."
+    "src": "img/memes/thisisfine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "my portfolio is down 30%",
+    "memeBottom": "this is fine — historically, it always has been",
+    "narration": "Because the crash itself almost never ruins investors. What ruins them is panicking at the wrong level — selling at the bottom, and missing the recovery that, historically, has always come."
   },
   {
     "id": "s5",
+    "type": "title",
+    "narration": "First, the official ladder of how far markets fall.",
+    "heading": "The Ladder",
+    "kicker": "dip to depression"
+  },
+  {
+    "id": "s6",
     "type": "stage",
-    "narration": "Here's the whole journey. You start renting, owning zero percent. You save for a down payment. You buy, owning just a sliver. You build equity for years. Maybe you refinance or trade up. And finally, you reach the summit: paid off, one hundred percent yours.",
-    "motif": "ownershipstages",
-    "caption": "the home-ownership journey"
+    "narration": "There are five rough levels. A dip — down five percent — is just noise. A correction is down ten. A bear market is down twenty. A full crash is down thirty to fifty. And a depression-level collapse is down fifty to eighty percent or more. Each level is a different beast entirely.",
+    "motif": "crashseverityladder",
+    "caption": "the deeper it falls, the rarer — and the longer to climb back"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "This journey is the default dream: around two in three American households own their home. It's the single biggest source of wealth for the middle class — and for most families, the home is, by far, the largest asset they will ever own.",
+    "narration": "And the levels have different causes. Shallow dips are just mood and sentiment. Bear markets usually ride a real recession. And the deepest collapses need something systemic — a banking crisis, a giant bubble bursting, a shock to the whole economy. Severity tracks the cause.",
     "pose": "explain",
     "props": [
       {
-        "name": "crowd",
-        "label": "~65% own"
+        "name": "brain",
+        "label": "dips = mood"
       },
       {
-        "name": "house",
-        "label": "the biggest asset"
+        "name": "chartdown",
+        "label": "bears = recession"
       },
       {
-        "name": "nestegg",
-        "label": "middle-class wealth"
+        "name": "bomb",
+        "label": "depressions = systemic"
       }
     ]
   },
   {
-    "id": "s6",
-    "type": "title",
-    "narration": "Let's start at level zero — where everyone begins.",
-    "heading": "Level 0: Renting",
-    "kicker": "0% ownership, 100% flexible"
-  },
-  {
     "id": "s7",
-    "type": "screenshot",
-    "narration": "Renting is an agreement where a payment is made for the use of a property owned by another. You get a place to live, with total flexibility — but you build zero ownership. Every payment buys you this month, and nothing more.",
-    "sourceId": "wiki-renting"
+    "type": "title",
+    "narration": "Level one is so common it barely counts.",
+    "heading": "The Dip: -5%",
+    "kicker": "pure noise"
   },
   {
     "id": "s8",
     "type": "character",
-    "narration": "We're taught renting is 'throwing money away,' but that's too harsh. You're buying flexibility, zero maintenance costs, and freedom to move. For many people and many seasons of life, renting is genuinely the smarter, cheaper choice. It's not a failure — it's the starting line.",
+    "narration": "A five-percent dip happens several times a year, every year. It's the market breathing. By the time the news notices, it's often already over. At this level, the only correct move is to completely ignore it — and maybe not even look at your account.",
     "pose": "explain",
     "props": [
       {
-        "name": "apartment",
-        "label": "total flexibility"
-      },
-      {
-        "name": "wrench",
-        "label": "no repair bills"
+        "name": "chartdown",
+        "label": "−5%, several times a year"
       },
       {
         "name": "smiley",
-        "label": "not a failure"
+        "label": "just the market breathing"
+      },
+      {
+        "name": "shield",
+        "label": "ignore it entirely"
       }
     ]
   },
   {
     "id": "s42",
     "type": "character",
-    "narration": "And here's the fair counter-argument. A disciplined renter who invests the difference — the down payment plus the extra costs of owning — can sometimes end up just as wealthy, in stocks instead of a house. Renting isn't losing. It's just a different road to the same destination.",
+    "narration": "A big reason dips feel scary is the media. A one-percent wobble becomes a flashing red 'MARKETS PLUNGE' banner. The financial news profits from your fear and your attention. The calmest investors are very often the ones who simply stopped watching the daily ticker.",
     "pose": "explain",
     "props": [
       {
-        "name": "apartment",
-        "label": "rent…"
+        "name": "newspaper",
+        "label": "'MARKETS PLUNGE!'"
       },
       {
-        "name": "chartup",
-        "label": "…invest the difference"
+        "name": "phone",
+        "label": "profits from fear"
       },
       {
-        "name": "scale",
-        "label": "a different path"
+        "name": "shield",
+        "label": "stop watching daily"
       }
     ]
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "Level one is the hardest gate on the whole journey.",
-    "heading": "Level 1: Saving",
-    "kicker": "the down payment wall"
+    "narration": "Drop twice as far, and it earns an official name.",
+    "heading": "The Correction: -10%",
+    "kicker": "almost yearly"
   },
   {
     "id": "s10",
-    "type": "character",
-    "narration": "Before you can own anything, you have to clear the down payment wall — often tens of thousands of dollars in cash. This single hurdle is the number-one reason renters stay renters, sometimes for years, slowly stacking savings while prices keep climbing ahead of them.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "tens of thousands"
-      },
-      {
-        "name": "chartup",
-        "label": "prices climb away"
-      },
-      {
-        "name": "warning",
-        "label": "the hardest gate"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "A correction is typically defined as a drop of more than ten percent in the value of a stock index. It sounds scary, but corrections happen on average about once a year — a completely normal, healthy part of how markets work.",
+    "sourceId": "wiki-correction"
   },
   {
     "id": "s43",
     "type": "character",
-    "narration": "You don't always need twenty percent, though. Some loans let you buy with just three to five percent down — getting you onto the ladder years sooner. The trade-off is PMI, that extra insurance fee, until you build enough equity. Sometimes getting in early is worth the small penalty.",
+    "narration": "And corrections actually do a job. They shake out wild speculation, reset silly valuations, and stop bubbles from growing even more dangerous. A market that never corrected would be a far scarier thing. Think of them as the market quietly taking out the trash.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "3-5% down options"
+        "name": "scissors",
+        "label": "shake out froth"
       },
       {
-        "name": "percent",
-        "label": "the PMI trade-off"
+        "name": "chartdown",
+        "label": "reset valuations"
       },
       {
-        "name": "ladder",
-        "label": "get on sooner"
+        "name": "smiley",
+        "label": "a healthy reset"
       }
     ]
   },
   {
     "id": "s11",
-    "type": "title",
-    "narration": "Clear that wall, and you reach the stage everyone celebrates — getting the keys.",
-    "heading": "Level 2: Buying",
-    "kicker": "you own… a sliver"
-  },
-  {
-    "id": "s12",
-    "type": "screenshot",
-    "narration": "Now you're in owner-occupancy — where a person owns the home in which they live. It feels like a huge leap. But on day one, after a small down payment, the bank effectively owns eighty or ninety percent of your house. You own a sliver.",
-    "sourceId": "wiki-owner"
-  },
-  {
-    "id": "s44",
     "type": "character",
-    "narration": "And day one stings twice. On top of the down payment, closing costs eat another two to five percent. Between those fees and a tiny starting equity, if you had to sell in the first couple of years, you could actually lose money. The early days are the most fragile of all.",
+    "narration": "Historically, a correction takes only around four months to recover. Blink, and it's gone. At this level, the smart investor doesn't flinch — they keep buying on schedule, quietly picking up shares at a small discount while everyone else frets over the headlines.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "receipt",
-        "label": "closing costs 2-5%"
+        "name": "clock",
+        "label": "~4 months to recover"
       },
       {
-        "name": "warning",
-        "label": "fragile early on"
+        "name": "snowball",
+        "label": "keep buying"
       },
       {
-        "name": "chartdown",
-        "label": "could sell at a loss"
+        "name": "bargaintag",
+        "label": "shares on sale"
       }
     ]
   },
   {
+    "id": "s12",
+    "type": "title",
+    "narration": "Double it again, and we enter bear territory.",
+    "heading": "The Bear Market: -20%",
+    "kicker": "every few years"
+  },
+  {
     "id": "s13",
+    "type": "screenshot",
+    "narration": "A bear market — a down leg in the broader market trend, a perceived tendency of the financial markets to move in a particular direction — is officially a drop of twenty percent or more. This is where real fear sets in, and the headlines turn genuinely grim.",
+    "sourceId": "wiki-trend"
+  },
+  {
+    "id": "s44",
     "type": "character",
-    "narration": "And the costs explode overnight. Suddenly you're paying the mortgage, property taxes, insurance, and every repair yourself. The true monthly cost of owning is usually far higher than the rent you left behind. This is the stage where many first-time buyers get a nasty shock.",
+    "narration": "Here's the quietly hopeful asymmetry. Bull markets — the up periods — last far longer and climb far higher than bear markets fall. On average, bulls run for years; bears last mere months. Over time, the ups simply dwarf the downs. The house, for once, is you.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "mortgage",
-        "label": "mortgage + taxes"
+        "name": "bull",
+        "label": "bulls run for years"
       },
       {
-        "name": "wrench",
-        "label": "every repair is yours"
+        "name": "bear",
+        "label": "bears last months"
       },
       {
-        "name": "warning",
-        "label": "costs more than rent"
+        "name": "chartup",
+        "label": "ups dwarf downs"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "character",
+    "narration": "Bear markets arrive roughly every six years, and on average take around two years to fully recover. The 2022 market, down about twenty-five percent, was a classic bear. Painful — but historically routine, and always, so far, temporary.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bear",
+        "label": "−20%+, every ~6 yrs"
+      },
+      {
+        "name": "calendar",
+        "label": "~2 yrs to recover"
+      },
+      {
+        "name": "chartdown",
+        "label": "2022: −25%"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "And budget for the silent cost: maintenance. A good rule is one percent of the home's value every year — four thousand dollars on a four-hundred-thousand home — for the roof, the furnace, the thousand small repairs. Owners who quietly skip this steadily fall behind.",
+    "narration": "And here's a trick of the mind: bear markets feel far longer than they actually are. The pain of watching your money fall stretches time. In reality, the average bear is over in about a year — but living through it can feel like a solid decade of dread.",
     "pose": "explain",
     "props": [
       {
-        "name": "wrench",
-        "label": "budget ~1%/yr"
+        "name": "clock",
+        "label": "feels like a decade"
       },
       {
-        "name": "house",
-        "label": "roof, furnace, repairs"
+        "name": "bear",
+        "label": "~1 year in reality"
       },
       {
-        "name": "warning",
-        "label": "don't skip it"
+        "name": "brain",
+        "label": "pain stretches time"
       }
     ]
   },
   {
-    "id": "s14",
-    "type": "title",
-    "narration": "Now the quiet magic begins — the engine that builds the wealth.",
-    "heading": "Level 3: Building Equity",
-    "kicker": "the slow handover"
-  },
-  {
     "id": "s15",
-    "type": "screenshot",
-    "narration": "The wealth you build is home equity — the difference between the property's current market value and the total balances of all loans secured by the home. It's the portion of the house that is genuinely, truly yours.",
-    "sourceId": "wiki-homeequity"
+    "type": "title",
+    "narration": "Now we reach the level that makes history books.",
+    "heading": "The Crash: -30% to -50%",
+    "kicker": "the big ones"
   },
   {
     "id": "s16",
-    "type": "stage",
-    "narration": "And here's the simple formula. Your equity equals your home's value, minus what you still owe. A four-hundred-thousand-dollar home with a two-hundred-fifty-thousand-dollar loan means a hundred and fifty thousand dollars of equity is already yours. Every payment, and every price rise, grows that number.",
-    "motif": "equityformula",
-    "caption": "every payment quietly moves value from the bank's side to yours"
+    "type": "screenshot",
+    "narration": "This is a true stock market crash — a sudden, dramatic decline of stock prices across a major cross-section of the market. These are the ones that get names, and that people remember for the rest of their lives.",
+    "sourceId": "wiki-crash"
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "And equity can go negative. If home prices fall below what you owe, you're 'underwater' — stuck with negative equity, trapped in a house you can't sell without writing a check. It's rare — but 2008 showed it can happen to millions of people all at once.",
+    "narration": "And don't believe anyone who claims they can time these. Crashes are, almost by definition, a surprise — if everyone saw them coming, they'd already have happened. Even the pros fail to predict them reliably. Time IN the market beats timing the market, every single time.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "chartdown",
-        "label": "prices fall"
+        "name": "magnifier",
+        "label": "nobody predicts them"
       },
       {
         "name": "warning",
-        "label": "negative equity"
+        "label": "even the pros fail"
       },
       {
-        "name": "lockhouse",
-        "label": "trapped, underwater"
+        "name": "clock",
+        "label": "time IN > timing"
       }
     ]
   },
   {
     "id": "s17",
-    "type": "screenshot",
-    "narration": "Equity grows through amortization — the process of paying off a debt over time through regular payments. Each month, a bit more of your payment goes to the actual loan, and a bit less to interest. The handover slowly accelerates.",
-    "sourceId": "wiki-amort"
+    "type": "stage",
+    "narration": "The modern hall of fame is brutal. Black Monday, 1987. The dot-com crash, down about forty-nine percent. The 2008 meltdown, down fifty-seven. The COVID crash of 2020, down thirty-four in mere weeks. Each one felt, at the time, like the end of the financial world.",
+    "motif": "crashgauntlet",
+    "caption": "every one was a buying opportunity"
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "Here's a lever that supercharges the handover: extra principal payments. Throw even a little extra at the loan each month, and because it skips all the future interest on that money, you can knock years off the mortgage and save tens of thousands. Every extra dollar punches far above its weight.",
+    "narration": "Look closer, and each great crash had its own villain. 1987 was computers and panic. 2000 was the internet bubble. 2008 was housing and debt. 2020 was a pandemic. Totally different triggers — but the exact same pattern: a terrifying drop, then a full recovery.",
     "pose": "explain",
     "props": [
       {
-        "name": "scissors",
-        "label": "extra principal"
+        "name": "stockscreen",
+        "label": "1987: computers"
       },
       {
-        "name": "percent",
-        "label": "skips future interest"
+        "name": "dialup",
+        "label": "2000: dot-com"
       },
       {
-        "name": "paidstamp",
-        "label": "years off the loan"
+        "name": "house",
+        "label": "2008: housing"
       }
     ]
   },
   {
     "id": "s18",
-    "type": "stage",
-    "narration": "But that handover starts painfully slow. In year one, almost your entire payment is interest — you barely dent what you owe. By year thirty, it completely flips, and nearly every dollar builds your ownership. The mortgage is designed to pay the bank first, and you last.",
-    "motif": "interestvsprincipal",
-    "caption": "where your payment really goes"
+    "type": "screenshot",
+    "narration": "Take the worst modern one: the 2008 crash, part of the Great Recession — a period of contraction in economies around the world. The market lost well over half its value, and it genuinely felt like the system itself might collapse.",
+    "sourceId": "wiki-recession"
   },
   {
-    "id": "s48",
+    "id": "s19",
     "type": "character",
-    "narration": "This front-loaded interest is why selling early feels so disappointing. Sell after five years, and you'll find you've barely dented the loan — most of your payments went straight to the bank as interest. The equity machine only truly rewards those who stay for the long haul.",
+    "narration": "And yet. A crash of this size has historically taken around four years to recover — and then it kept climbing to spectacular new highs. The investors who held through 2008, and especially those who kept buying, saw their money more than quadruple in the decade that followed.",
     "pose": "explain",
     "props": [
       {
         "name": "clock",
-        "label": "sell after 5 yrs"
+        "label": "~4 years to recover"
       },
       {
-        "name": "chartdown",
-        "label": "barely dented the loan"
+        "name": "chartup",
+        "label": "then new highs"
       },
       {
-        "name": "warning",
-        "label": "it rewards patience"
+        "name": "trophy",
+        "label": "holders 4×'d their money"
       }
     ]
   },
   {
-    "id": "s19",
-    "type": "stage",
-    "narration": "Watch the two forces work together over the years. Your loan balance slowly shrinks as you pay it down. And your home's value tends to rise with the market. The growing gap between those two lines is your equity — quietly ballooning into the biggest asset most families ever own.",
-    "motif": "equitybuilds",
-    "caption": "your equity quietly grows"
-  },
-  {
-    "id": "s49",
+    "id": "s48",
     "type": "character",
-    "narration": "And a reality check on appreciation. Over the long run, home prices have risen only around three or four percent a year — roughly keeping pace with inflation, not a lottery. The real magic of a home was never crazy appreciation. It's the leverage, and the forced saving.",
+    "narration": "This is exactly where the legends feed. In the depths of 2008, while the whole world fled, Warren Buffett urged people to be greedy when others are fearful — and bought aggressively. The most terrifying bottoms are precisely when the greatest fortunes get quietly made.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "~3-4%/yr"
+        "name": "trophy",
+        "label": "greedy when fearful"
       },
       {
-        "name": "grocerybag",
-        "label": "≈ inflation"
+        "name": "chartdown",
+        "label": "buy the bottom"
       },
       {
-        "name": "scale",
-        "label": "not a lottery"
+        "name": "moneytree",
+        "label": "fortunes made here"
       }
     ]
   },
   {
     "id": "s20",
+    "type": "title",
+    "narration": "And then there's the final level — the one that haunts every investor.",
+    "heading": "The Depression: -50% to -80%+",
+    "kicker": "the nightmare"
+  },
+  {
+    "id": "s21",
+    "type": "screenshot",
+    "narration": "The ultimate catastrophe is a depression-level collapse, like the Great Depression — a severe global economic downturn from 1929 to 1939. At its worst, the US stock market fell an almost unimaginable eighty-nine percent.",
+    "sourceId": "wiki-depression"
+  },
+  {
+    "id": "s22",
     "type": "character",
-    "narration": "And this reveals the secret hiding inside a mortgage: it's a forced savings plan in disguise. Every single payment quietly sweeps a little money out of your pocket and into your net worth. Most homeowners build their entire fortune this way, almost by accident.",
+    "narration": "Eighty-nine percent. A million-dollar portfolio would have shrunk to a hundred and ten thousand. This is the level that genuinely destroys lives — and it took the market around twenty-five years to claw all the way back to its old nominal high. The one level that truly tests everything.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "piggybank",
-        "label": "forced savings"
+        "name": "chartdown",
+        "label": "−89% (1929-32)"
       },
       {
-        "name": "house",
-        "label": "hidden in the mortgage"
+        "name": "warning",
+        "label": "$1M → $110K"
       },
       {
-        "name": "nestegg",
-        "label": "wealth by accident"
+        "name": "calendar",
+        "label": "~25 yrs to recover"
       }
     ]
   },
   {
-    "id": "s50",
-    "type": "callout",
-    "narration": "The Fed's own data makes the case. The median homeowner has a net worth roughly forty times that of the median renter. Not because owners earn more — but because the mortgage quietly forced them to save, decade after decade, whether they ever meant to or not.",
-    "text": "40×",
-    "sub": "median homeowner net worth vs renter (Fed)",
-    "icon": "nestegg"
-  },
-  {
-    "id": "s21",
-    "type": "title",
-    "narration": "Level four is where owners start getting clever with all that equity.",
-    "heading": "Level 4: Optimizing",
-    "kicker": "refinance, trade up, tap it"
-  },
-  {
-    "id": "s22",
-    "type": "screenshot",
-    "narration": "One key move is refinancing — the replacement of an existing debt obligation with another, under a different term and interest rate. If rates fall after you buy, you can swap your old loan for a cheaper one, and cut your payment.",
-    "sourceId": "wiki-refi"
-  },
-  {
-    "id": "s51",
+    "id": "s49",
     "type": "character",
-    "narration": "But refinancing isn't free. It comes with its own closing costs, so there's a break-even point — the months it takes for the lower payment to repay those fees. Refinance only if you'll stay long enough to come out ahead. Otherwise, you've just paid for the privilege.",
+    "narration": "Why was 1929 so uniquely catastrophic? A perfect storm: reckless borrowing to buy stocks, no safety nets, waves of bank failures, and policy blunders that choked the economy. It wasn't just a crash — it was a total system collapse, with nothing there to catch the fall.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "percent",
-        "label": "a lower rate"
+        "name": "warning",
+        "label": "reckless margin debt"
       },
       {
-        "name": "receipt",
-        "label": "but new closing costs"
+        "name": "bank",
+        "label": "waves of bank failures"
       },
       {
-        "name": "scale",
-        "label": "mind the break-even"
+        "name": "chartdown",
+        "label": "a system collapse"
       }
     ]
   },
   {
     "id": "s23",
     "type": "character",
-    "narration": "At this stage, your options multiply. Refinance to a lower rate. Sell and trade up to a bigger home, rolling your equity forward. Or borrow against your equity with a home-equity loan. Your house has quietly become a financial tool, not just a place to live.",
+    "narration": "But even here, there's a crucial nerve-saving footnote. If you had kept reinvesting dividends and buying through the 1930s, you actually recovered far faster than that scary twenty-five-year headline suggests — because you were buying the whole market at once-in-a-century prices.",
     "pose": "explain",
     "props": [
       {
-        "name": "percent",
-        "label": "refinance lower"
+        "name": "snowball",
+        "label": "kept buying the bottom"
       },
       {
-        "name": "sold",
-        "label": "trade up"
+        "name": "bargaintag",
+        "label": "century-low prices"
       },
       {
-        "name": "vault",
-        "label": "borrow against equity"
+        "name": "chartup",
+        "label": "recovered far faster"
       }
     ]
   },
   {
-    "id": "s52",
+    "id": "s50",
     "type": "character",
-    "narration": "And beware the move-up treadmill. Each time you trade up to a bigger, nicer home, you reset the mortgage clock and swell the payment. Do it again and again, and you can spend your whole life in year one of a new loan — never actually getting closer to owning anything outright.",
+    "narration": "The good news is we built guardrails from that disaster. Circuit breakers now halt panicked trading. Bank deposits are insured. And central banks act fast to stop collapses from spiraling. A full 1929-style depression is far less likely today — though never, ever impossible.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "sold",
-        "label": "trade up again"
+        "name": "barrier",
+        "label": "circuit breakers"
       },
       {
-        "name": "mortgage",
-        "label": "reset the clock"
+        "name": "shield",
+        "label": "insured deposits"
       },
       {
-        "name": "warning",
-        "label": "never finish paying"
+        "name": "capitol",
+        "label": "central banks act"
       }
     ]
   },
   {
     "id": "s24",
-    "type": "character",
-    "narration": "But a warning at this level: tapping your equity can be a trap. Borrowing against your home to fund vacations or cars quietly resets your progress, turning years of hard-won ownership back into debt. The equity is real wealth — treat it with respect, not as a piggy bank for toys.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "don't raid it for toys"
-      },
-      {
-        "name": "chartdown",
-        "label": "resets your progress"
-      },
-      {
-        "name": "shield",
-        "label": "treat equity with respect"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "narration": "And a hard warning on tapping equity. A home-equity line of credit is cheap and tempting — but your house is the collateral. Borrow against it for the wrong reasons, fall behind, and you can lose the very home you spent decades building. Treat it strictly as a last resort.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "vault",
-        "label": "a HELOC"
-      },
-      {
-        "name": "house",
-        "label": "your home is collateral"
-      },
-      {
-        "name": "warning",
-        "label": "you can lose it"
-      }
-    ]
+    "type": "title",
+    "narration": "So let's put the whole ladder together — the key insight is in the recovery.",
+    "heading": "What Happened Next",
+    "kicker": "it always came back"
   },
   {
     "id": "s25",
-    "type": "title",
-    "narration": "And finally — the summit of the entire journey.",
-    "heading": "Level 5: Paid Off",
-    "kicker": "100% yours"
+    "type": "stage",
+    "narration": "Here's the pattern across every level. A correction recovers in months. A bear market, a couple of years. A full crash, around four. Even a depression eventually heals. The deeper the fall, the longer the climb — but the direction, given enough time, has always been back up.",
+    "motif": "recoverytime",
+    "caption": "but every single one, eventually, fully recovered"
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "And those scary recovery times assume you only watch the price. If you keep reinvesting dividends the whole way through, you recover meaningfully faster — because every payout is quietly buying you more shares at crushed, discounted prices. Dividends shorten the pain.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "reinvest dividends"
+      },
+      {
+        "name": "bargaintag",
+        "label": "buy at the bottom"
+      },
+      {
+        "name": "clock",
+        "label": "recover faster"
+      }
+    ]
   },
   {
     "id": "s26",
     "type": "stage",
-    "narration": "The final level: the mortgage is gone. After decades of payments, you own one hundred percent of your home, free and clear. And your single biggest monthly bill — that mortgage payment — simply vanishes forever. All that's left is property taxes and upkeep.",
-    "motif": "paidoffmilestone",
-    "caption": "your biggest bill vanishes — just taxes & upkeep remain"
+    "narration": "And notice the frequency. Small dips and corrections happen constantly — practically every year. Real bear markets come every several years. But a true, life-altering depression has struck only about once a century. The scary levels are, thankfully, the rarest.",
+    "motif": "crashfrequency",
+    "caption": "small dips are constant; true catastrophes are rare"
   },
   {
-    "id": "s54",
+    "id": "s52",
     "type": "character",
-    "narration": "There's a famous debate right at the summit: pay off the mortgage early, or invest that extra money instead? Mathematically, investing often wins. But emotionally, a paid-off home — total security, no payment, no fear — is a return no spreadsheet can capture. Both answers are genuinely right.",
-    "pose": "explain",
+    "narration": "So plan for it like weather you know is coming. Over a thirty-year investing life, expect to live through maybe five bear markets and a couple of real crashes. They are not a question of 'if,' but of 'when.' Build your whole plan assuming they will absolutely happen.",
+    "pose": "present",
     "props": [
       {
-        "name": "scale",
-        "label": "pay off vs invest"
+        "name": "calendar",
+        "label": "~5 bears in 30 yrs"
       },
       {
-        "name": "chartup",
-        "label": "math says invest"
+        "name": "rollercoaster",
+        "label": "expect the drops"
       },
       {
-        "name": "smiley",
-        "label": "peace says pay off"
+        "name": "shield",
+        "label": "plan for 'when'"
       }
     ]
   },
   {
     "id": "s27",
+    "type": "title",
+    "narration": "Which means the real danger was never the crash itself.",
+    "heading": "The Real Danger",
+    "kicker": "it's you"
+  },
+  {
+    "id": "s28",
+    "type": "stage",
+    "narration": "At every level, the crash doesn't ruin you — selling does. Panic at the bottom, and you turn a temporary paper loss into a permanent real one, then watch the recovery happen without you. The investor who simply holds turns every one of these crashes into just another dip on a long climb up.",
+    "motif": "panicvshold",
+    "caption": "the loss was only real for the one who sold"
+  },
+  {
+    "id": "s53",
+    "type": "callout",
+    "narration": "There's a brutal statistic for the panic-seller. The average investor badly underperforms the very funds they own — often by several percent a year — purely because they buy high in euphoria and sell low in fear. Your own emotions are the single biggest crash risk you face.",
+    "text": "−3%/yr",
+    "sub": "how much the average investor lags their own funds",
+    "icon": "brain"
+  },
+  {
+    "id": "s29",
     "type": "character",
-    "narration": "This is a profound kind of security. A paid-off home means you will always have a place to live, almost no matter what happens to your income. It dramatically lowers the cost of your life, which makes retirement vastly easier and your whole existence more resilient.",
+    "narration": "And here's the cruel trap. The market's best days cluster right next to its worst — deep inside the crashes. So the panic-seller, fleeing the storm, almost always misses the explosive rebound. Trying to dodge the crash is how you miss the recovery.",
     "pose": "explain",
     "props": [
       {
-        "name": "paidstamp",
-        "label": "100% yours"
+        "name": "chartup",
+        "label": "best days hide in crashes"
       },
       {
-        "name": "shield",
-        "label": "always a place to live"
+        "name": "warning",
+        "label": "sell = miss the bounce"
       },
       {
-        "name": "hammock",
-        "label": "retirement gets easy"
+        "name": "rollercoaster",
+        "label": "stay on the ride"
       }
     ]
+  },
+  {
+    "id": "s54",
+    "type": "callout",
+    "narration": "And here's the cost of fleeing, in one number. Stay fully invested across the decades, and you capture the full return. Miss just the ten best days — which almost always land inside the crashes — and your final result can be cut roughly in half.",
+    "text": "−50%",
+    "sub": "your return if you miss the 10 best days",
+    "icon": "chartup"
+  },
+  {
+    "id": "s30",
+    "type": "stage",
+    "narration": "Zoom all the way out, and every crash in history — every one of these terrifying drops — is just a small wobble on a line that marches relentlessly upward over the decades. From a distance, the catastrophes shrink to tiny notches on an extraordinary climb.",
+    "motif": "longclimb",
+    "caption": "…if you survived every crash on the way up"
+  },
+  {
+    "id": "s31",
+    "type": "title",
+    "narration": "So here's exactly what to do at each level.",
+    "heading": "The Playbook",
+    "kicker": "by severity"
+  },
+  {
+    "id": "s32",
+    "type": "stage",
+    "narration": "Match your action to the level. A dip or correction? Ignore it — it's noise. A bear market? Just keep buying on your normal schedule. A full crash? Buy even more if you can, and whatever you do, never sell. And in any crash, the one unbreakable rule: do not panic-sell.",
+    "motif": "whattodoincrash",
+    "caption": "what to actually do"
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "And late in life, the equity can flow back to you. A reverse mortgage lets older owners tap their home's value for income without selling — turning decades of forced savings back into usable cash. It's complex and has real pitfalls, but it quietly closes the circle of the whole journey.",
-    "pose": "explain",
+    "narration": "One disciplined trick turns crashes to your advantage automatically: rebalancing. When stocks crash, you sell a little of what held up — your bonds — and buy more cheap stocks to restore your target mix. It forces you to buy low and sell high, with zero emotion required.",
+    "pose": "present",
     "props": [
-      {
-        "name": "retiree",
-        "label": "tap it in old age"
-      },
-      {
-        "name": "house",
-        "label": "without selling"
-      },
-      {
-        "name": "warning",
-        "label": "complex — tread carefully"
-      }
-    ]
-  },
-  {
-    "id": "s28",
-    "type": "title",
-    "narration": "So let's settle the eternal question this whole journey raises.",
-    "heading": "Rent or Own?",
-    "kicker": "the real comparison"
-  },
-  {
-    "id": "s29",
-    "type": "stage",
-    "narration": "Here's thirty years, side by side. The renter pays every month and ends with zero — they bought flexibility. The owner pays a similar amount, rides the ups and downs, and ends with a fully paid-off house worth hundreds of thousands. Same monthly cost, wildly different ending.",
-    "motif": "rentvsownjourney",
-    "caption": "same monthly cost, wildly different ending"
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "narration": "And here's a subtle edge owning has: leverage. You control a four-hundred-thousand-dollar asset with maybe eighty thousand down. So if the home rises even modestly, the gain on your small down payment is enormous. That built-in leverage is a big part of why owning builds wealth so effectively.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "control $400K…"
-      },
-      {
-        "name": "piggybank",
-        "label": "…with $80K down"
-      },
-      {
-        "name": "chartup",
-        "label": "leveraged gains"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "But owning only wins if you stay put long enough. The huge up-front costs of buying and selling mean you often need to hold a home for at least five years just to break even. For the frequent mover, renting genuinely can be the richer choice.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "hold 5+ years"
-      },
       {
         "name": "scale",
-        "label": "or renting wins"
+        "label": "rebalance"
       },
       {
-        "name": "movingbox",
-        "label": "movers: rent"
+        "name": "chartdown",
+        "label": "buy the cheap stocks"
+      },
+      {
+        "name": "gear",
+        "label": "buy low, automatically"
       }
     ]
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "Remember the friction, too. Buying and selling a home can burn eight to ten percent of its value in agent fees, taxes, and closing costs. That's exactly why the journey rewards staying put. Every move resets your progress and skims a real chunk off the top.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "~8-10% to buy & sell"
-      },
-      {
-        "name": "clock",
-        "label": "stay put to win"
-      },
-      {
-        "name": "scissors",
-        "label": "moves skim the top"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Your equity over 30 years ($K)",
-    "unit": "$K",
-    "narration": "Here's the equity journey in one chart, on a four-hundred-thousand-dollar home. Year one, maybe twenty thousand. Year ten, around a hundred and twenty. Year twenty, nearly three hundred. And by year thirty, the full value — a paid-off house, every dollar of it yours.",
-    "data": [
-      {
-        "label": "year 1",
-        "value": 20
-      },
-      {
-        "label": "year 10",
-        "value": 120
-      },
-      {
-        "label": "year 20",
-        "value": 290
-      },
-      {
-        "label": "year 30",
-        "value": 480
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s32",
-    "type": "title",
-    "narration": "So how do you actually move up these levels wisely?",
-    "heading": "The Playbook",
-    "kicker": "climb it smart"
   },
   {
     "id": "s33",
     "type": "character",
-    "narration": "First, don't rush off the renting level. Buy only when you're financially ready and plan to stay put. A home bought too early, or stretched too thin, becomes an anchor, not an asset. There is no prize for owning before you're genuinely ready.",
+    "narration": "The single best defense is built before the crash ever comes: an emergency fund and the right mindset. If you never have to sell your investments to pay the bills, a crash can never actually hurt you. It becomes a spectator sport — or a shopping spree.",
     "pose": "present",
     "props": [
       {
-        "name": "apartment",
-        "label": "don't rush"
-      },
-      {
-        "name": "calendar",
-        "label": "buy when ready & staying"
-      },
-      {
         "name": "shield",
-        "label": "no prize for rushing"
+        "label": "an emergency fund"
+      },
+      {
+        "name": "diamond",
+        "label": "never a forced seller"
+      },
+      {
+        "name": "bargaintag",
+        "label": "a crash becomes a sale"
       }
     ]
   },
   {
-    "id": "s58",
+    "id": "s56",
     "type": "character",
-    "narration": "And never climb a level before you're ready. Buying at the very top of your budget makes you 'house poor' — a beautiful home, and no money left for an actual life. The smart move is to buy below your max, leaving room to live, and to keep building other wealth alongside it.",
+    "narration": "This is why a cushion of bonds or cash matters, especially near retirement. If a crash hits, you spend from the safe money and leave your stocks completely alone to recover. The forced seller gets crushed; the cushioned investor simply waits out the storm in comfort.",
     "pose": "present",
     "props": [
       {
-        "name": "house",
-        "label": "don't max out"
+        "name": "shield",
+        "label": "bonds/cash cushion"
       },
       {
-        "name": "ballchain",
-        "label": "'house poor'"
+        "name": "bear",
+        "label": "spend the safe money"
       },
       {
-        "name": "smiley",
-        "label": "buy below your means"
+        "name": "diamond",
+        "label": "wait out the storm"
       }
     ]
   },
   {
     "id": "s34",
     "type": "character",
-    "narration": "Second, once you own, let the equity engine run. Make every payment, let amortization and appreciation work their slow magic, and resist the urge to constantly tap your equity. Patience, here, quietly compounds into one of the largest assets you'll ever hold.",
+    "narration": "And flip your entire mindset about falling markets. For a long-term investor still buying, a crash isn't a disaster — it's the single best thing that can happen. It's a rare chance to buy years of future growth at a steep, temporary discount. Crashes build fortunes for the calm.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bargaintag",
+        "label": "a crash = a sale"
+      },
+      {
+        "name": "parachute",
+        "label": "the calm survive"
+      },
+      {
+        "name": "moneytree",
+        "label": "it builds fortunes"
+      }
+    ]
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "narration": "And the simplest winning move needs no courage at all: dollar-cost averaging. Keep investing the same amount every month, automatically, straight through every crash. You'll buy more shares when they're cheap, fewer when they're dear, and never once have to make a scary decision.",
     "pose": "present",
     "props": [
       {
-        "name": "chartup",
-        "label": "let equity build"
+        "name": "gear",
+        "label": "same amount monthly"
       },
       {
-        "name": "scissors",
-        "label": "don't raid it"
+        "name": "snowball",
+        "label": "buy more when cheap"
       },
       {
-        "name": "nestegg",
-        "label": "patience compounds"
+        "name": "smiley",
+        "label": "no scary decisions"
       }
     ]
   },
   {
     "id": "s35",
-    "type": "character",
-    "narration": "Third, consider racing to the summit. Making small extra payments toward the principal can knock years off your mortgage and save a fortune in interest. For many, the deep peace of a paid-off home is worth more than any extra investment return.",
-    "pose": "present",
-    "props": [
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Real crashes & recovery time (years)",
+    "unit": "yrs",
+    "narration": "Here's history in one chart. The 2020 crash recovered in under a year. The 2008 crash, about four. The dot-com crash, roughly six. And the Great Depression, around twenty-five. Deeper falls take longer — but every bar on this chart ends in a full recovery.",
+    "data": [
       {
-        "name": "percent",
-        "label": "pay extra principal"
+        "label": "2020 (-34%)",
+        "value": 1
       },
       {
-        "name": "scissors",
-        "label": "years off the loan"
+        "label": "2008 (-57%)",
+        "value": 4
       },
       {
-        "name": "paidstamp",
-        "label": "race to paid-off"
+        "label": "dot-com",
+        "value": 6
+      },
+      {
+        "label": "1929 (-89%)",
+        "value": 25
       }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "narration": "So the pay-it-off choice really comes down to who you are. If the debt keeps you up at night, race to burn it and buy your own peace. If you're a disciplined investor, that money may grow more elsewhere. There's no wrong answer here — only the one that lets you sleep.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "paidstamp",
-        "label": "burn the mortgage?"
-      },
-      {
-        "name": "chartup",
-        "label": "or invest it?"
-      },
-      {
-        "name": "smiley",
-        "label": "pick what lets you sleep"
-      }
-    ]
+    ],
+    "highlight": 3
   },
   {
     "id": "s36",
     "type": "character",
-    "narration": "Because the real lesson of this journey is that a home is secretly two things at once. It's a place to live — and a decades-long machine that quietly converts your monthly housing cost into lasting net worth. Rent only ever buys the first. Ownership, over time, buys both.",
-    "pose": "explain",
+    "narration": "So the next time the market tumbles and the headlines scream, don't ask 'should I sell?' Ask 'which level is this?' A dip, a correction, a bear, a crash — each one has a name, a history, and a track record of recovery. Knowing the level turns raw fear into a calm plan.",
+    "pose": "present",
     "props": [
       {
-        "name": "sofa",
-        "label": "a place to live"
-      },
-      {
-        "name": "moneytree",
-        "label": "+ a wealth machine"
+        "name": "newspaper",
+        "label": "headlines scream"
       },
       {
         "name": "scale",
-        "label": "ownership buys both"
+        "label": "'which level is this?'"
+      },
+      {
+        "name": "diamond",
+        "label": "fear → a plan"
+      }
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "Here's a mindset that flips crashes entirely. The deeper the market falls, the bigger the future discount you're being offered. So the correct emotional response to a bigger crash isn't more fear — it's more interest. The best sales, after all, are the ones nobody wants to shop.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "bargaintag",
+        "label": "deeper = bigger discount"
+      },
+      {
+        "name": "chartdown",
+        "label": "more fall, more interest"
+      },
+      {
+        "name": "moneytree",
+        "label": "the best sale"
       }
     ]
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "So wherever you are on this ladder tonight — renting, scrimping for a down payment, newly keyed-in, or watching your equity climb — you now know exactly what stage you're in, and what the next one quietly builds toward. That full-value summit is closer than it looks.",
-    "pose": "present",
+    "narration": "Because the whole history of the market delivers one stubborn message. Crashes are not the exception — they're the toll you pay for the long-term returns. They are terrifying, temporary, and, so far, always followed by new highs. Survive them, and time quietly does the rest.",
+    "pose": "explain",
     "props": [
       {
-        "name": "keys",
-        "label": "know your stage"
+        "name": "rollercoaster",
+        "label": "crashes are the toll"
       },
       {
         "name": "chartup",
-        "label": "what's next"
+        "label": "always new highs after"
       },
       {
-        "name": "confetti",
-        "label": "the summit awaits"
+        "name": "diamond",
+        "label": "just survive them"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "So make peace with the ride. That gut-churning volatility isn't a flaw in the stock market — it's the admission price for its extraordinary long-term returns. If stocks never crashed, they'd be as safe, and as low-paying, as cash. The fear is literally what you get paid for.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "rollercoaster",
+        "label": "volatility = the price"
+      },
+      {
+        "name": "percent",
+        "label": "paid for the fear"
+      },
+      {
+        "name": "chartup",
+        "label": "it's a feature"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "If this mapped out the whole home-ownership journey for you, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this calmed your nerves about the next crash, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "house",
+        "name": "diamond",
         "label": "which number next?"
       }
     ]
