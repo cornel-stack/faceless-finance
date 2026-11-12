@@ -218,7 +218,9 @@ export interface StageScene extends Base {
     // EP076 (every level of car payment) additions:
     | "carpaymentladder" | "depreciationcliff" | "truecarcost" | "car2041010rule" | "underwaterloan" | "caroppcost"
     // EP077 (every level of student debt) additions:
-    | "studentdebtladder" | "debttoincomebyfield" | "interestballoon" | "collegeroi" | "repaymentpaths" | "delayedlife";
+    | "studentdebtladder" | "debttoincomebyfield" | "interestballoon" | "collegeroi" | "repaymentpaths" | "delayedlife"
+    // EP078 (every level of lottery win) additions:
+    | "lotterywinladder" | "lotteryoddsscale" | "lumpsumvsannuity" | "lotterytaxbite" | "lotterycurse" | "wintoincome" | "lotteryplaybook";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

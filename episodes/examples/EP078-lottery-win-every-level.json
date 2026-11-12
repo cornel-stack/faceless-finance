@@ -1,0 +1,922 @@
+{
+  "id": "EP078",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Lottery Win: $1,000 to $1 Billion",
+  "slug": "every-level-of-lottery-win",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP078 — Every Level series (row 68). Lottery-win tiers $1K/$100K/$1M/$100M/$1B and what each actually does; the odds (lightning vs 1-in-300M jackpot), lump sum vs annuity (~half), the tax bite (~37%+ → $1B ≈ $300M), the win-to-income 4% reality ($1M ≠ retire forever), the lottery curse (~1/3 bankrupt), the smart-money playbook. 7 new motifs (lotterywinladder/lotteryoddsscale/lumpsumvsannuity/lotterytaxbite/wintoincome/lotterycurse/lotteryplaybook) + doodles ticket/clover. Sources: Lottery/Lump sum/Windfall gain/Powerball/Progressive jackpot. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "You've daydreamed about it — the winning ticket, the life that changes overnight. But here's what nobody tells you: the amount you win changes everything, and even winning big is nothing like you imagine. From a thousand dollars to a billion, today we climb every level of lottery win — and expose what each one actually does to your life.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ticket",
+          "label": "the winning ticket"
+        },
+        {
+          "name": "moneybag",
+          "label": "$1K → $1B"
+        },
+        {
+          "name": "warning",
+          "label": "not what you imagine"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Start with the fact that ruins the fantasy. Your odds of winning a major jackpot are around one in three hundred million. You are roughly three hundred times more likely to be struck by lightning. The lottery isn't an investment plan — it's a tax on hope, and the house always, always wins.",
+      "text": "~1 in 300,000,000",
+      "sub": "you're ~300× likelier to be struck by lightning",
+      "icon": "ticket"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "So why do people play at all? Because the ticket isn't really buying a prize — it's buying a daydream. For a couple of dollars, you get days of imagining the mansion, the freedom, the revenge on your boss. That fantasy is the actual product. The lottery sells hope, and hope is worth a lot.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ticket",
+          "label": "you're buying a daydream"
+        },
+        {
+          "name": "smiley",
+          "label": "days of imagining"
+        },
+        {
+          "name": "warning",
+          "label": "hope is the real product"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "But let's play the game anyway. We'll climb from a small win to the biggest jackpots on earth, reveal why you get only half the headline number, how taxes gut it further, and why a third of big winners end up broke. Understanding this teaches you more about money than the ticket ever could. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clover",
+          "label": "$1K → $1B"
+        },
+        {
+          "name": "scale",
+          "label": "half, then taxed"
+        },
+        {
+          "name": "chartdown",
+          "label": "1/3 go broke"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "spending $300 a month on tickets",
+      "memeBottom": "the retirement plan is 'win the lottery'",
+      "narration": "Because millions treat the lottery as a genuine retirement strategy — and that's the real tragedy. Before we climb the levels, let's understand what you're actually buying with that ticket."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what a lottery actually is.",
+      "heading": "The Basics",
+      "kicker": "a tax on hope"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "A lottery is a form of gambling that involves the drawing of numbers at random for a prize. That's the whole thing — pure chance, no skill, no strategy. Every ticket in the draw has the same microscopic odds, and no system, pattern, or lucky number changes them even slightly.",
+      "sourceId": "wiki-lottery"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "And those odds are almost impossible to grasp, so let's make them concrete. Your chance of being struck by lightning in your lifetime is about one in a million. Your chance of hitting a major jackpot is about one in three hundred million. You'd have to be hit by lightning three hundred times over to match the unluckiness of winning.",
+      "motif": "lotteryoddsscale",
+      "caption": "the odds you're really up against"
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here's how absurd those odds are. If you bought one ticket for every single drawing, twice a week, you'd expect to wait roughly three million years to hit the jackpot once. The universe will end before your numbers come up. This is not a strategy — it's a very slow, very expensive way to feel hopeful.",
+      "text": "~3,000,000 years",
+      "sub": "expected wait to win, buying every drawing",
+      "icon": "hourglass"
+    },
+    {
+      "id": "s8",
+      "type": "title",
+      "narration": "But say the impossible happens. Let's climb the levels of winning.",
+      "heading": "The Ladder",
+      "kicker": "$1,000 to $1 billion"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Here's the whole climb. A thousand dollars is a nice weekend. A hundred thousand is a car or a down payment. A million is genuinely life-changing — but, as we'll see, not retire-forever money. A hundred million is true generational wealth. And a billion is a dynasty. Same word, 'winner,' describing five completely different outcomes.",
+      "motif": "lotterywinladder",
+      "caption": "what each level of win actually does"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And notice the tax starts biting immediately, at every level. Even a modest win is taxed as income — win fifty thousand and a big chunk is gone before you see it. There is no level of lottery win where you keep the whole number. The taxman is a silent co-winner on every single ticket.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "taxed at every level"
+        },
+        {
+          "name": "scale",
+          "label": "never keep the whole number"
+        },
+        {
+          "name": "warning",
+          "label": "the taxman co-wins"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "A thousand dollars is the most common 'big' win people actually get. It's a treat — a weekend away, a bill knocked out. The smart move is boring: throw it at debt or savings. The tragic move, which is incredibly common, is to funnel it straight back into more tickets.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "$1K: a nice treat"
+        },
+        {
+          "name": "piggybank",
+          "label": "smart: debt or savings"
+        },
+        {
+          "name": "warning",
+          "label": "tragic: more tickets"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "A hundred thousand dollars is the first truly meaningful win. It's a car in cash, a house down payment, or a wiped-out pile of student debt. It won't make you rich, but used well, it can genuinely accelerate your life by years. Used badly, it evaporates in eighteen months with nothing to show for it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "$100K: a down payment"
+        },
+        {
+          "name": "rocket",
+          "label": "accelerates life by years"
+        },
+        {
+          "name": "hourglass",
+          "label": "or gone in 18 months"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/grus.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "win $100K · buy a $90K car",
+      "memeBottom": "now broke with a depreciating car",
+      "narration": "This is the classic hundred-thousand-dollar mistake. The life-changing win becomes a flashy car that's worth half as much in five years — turning a rare windfall into nothing but a monthly insurance bill."
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Now the number everyone dreams of — and misunderstands most.",
+      "heading": "$1 Million",
+      "kicker": "not what you think"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "A million dollars. The ultimate dream number. And it is life-changing — but here's the shock: a million dollars is not 'never work again' money for a young person. Blow it on a mansion and cars, and it's gone in a few years. It's a powerful tool, not an infinite one.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trophy",
+          "label": "$1M: the dream number"
+        },
+        {
+          "name": "warning",
+          "label": "NOT retire-forever money"
+        },
+        {
+          "name": "mansion",
+          "label": "gone fast if you splurge"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Let's do the real math on that million. Invested at a safe four percent, it pays about forty thousand a year, forever. For a sixty-five-year-old, that plus Social Security is a comfortable retirement. For a thirty-year-old with fifty years ahead and lifestyle creep? Forty thousand a year does not mean never working again.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "$1M → ~$40K/yr"
+        },
+        {
+          "name": "smiley",
+          "label": "great at 65"
+        },
+        {
+          "name": "warning",
+          "label": "not 'quit forever' at 30"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "And then the numbers that actually do change a bloodline.",
+      "heading": "$100M to $1B",
+      "kicker": "dynasty money"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "A hundred million is true generational wealth — invested sensibly, it throws off millions a year without ever touching the principal. A billion is a dynasty: private jets, foundations, and enough that your great-grandchildren will still be living off it. At this level, the money stops being spendable and becomes a permanent institution.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "jet",
+          "label": "$100M+: generational"
+        },
+        {
+          "name": "crown",
+          "label": "$1B: a dynasty"
+        },
+        {
+          "name": "vault",
+          "label": "a permanent institution"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "And the top really is staggering. The biggest jackpots in history have crossed two billion dollars — single tickets worth more than many entire companies. At that scale the money becomes almost abstract: you genuinely cannot spend it in a lifetime, no matter how hard you try. It stops being money and becomes power.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crown",
+          "label": "$2B+ record jackpots"
+        },
+        {
+          "name": "vault",
+          "label": "can't spend in a lifetime"
+        },
+        {
+          "name": "jet",
+          "label": "money becomes power"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "But here's the first brutal reality check: you don't actually get the headline number.",
+      "heading": "Lump vs Annuity",
+      "kicker": "the first cut"
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "When you win, you choose how to take it. The annuity pays the full headline amount, but spread over about thirty years. Or you take a lump sum — a single payment of money, right now. Almost everyone takes the lump sum, because money today beats money over decades.",
+      "sourceId": "wiki-lump"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "But here's the catch that shocks people. That billion-dollar headline is the annuity value. Choose the lump sum — which nearly everyone does — and you get roughly half. The billion-dollar jackpot is really about five hundred million in cash, before a single dollar of tax.",
+      "motif": "lumpsumvsannuity",
+      "caption": "the headline is the annuity — the cash is ~half"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "So why do the savvy still take the lump sum, even losing half? Because a few hundred million invested today, growing in the market, can out-earn the full annuity over those same thirty years — and you control it, not the lottery. The lump sum trades a bigger headline for real freedom and flexibility.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "invest it, out-earn the annuity"
+        },
+        {
+          "name": "handshake",
+          "label": "you control it"
+        },
+        {
+          "name": "scale",
+          "label": "freedom over headline"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "title",
+      "narration": "And then the taxman takes his enormous slice.",
+      "heading": "The Tax Bite",
+      "kicker": "the second cut"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "Lottery winnings are taxed as income — the top federal rate alone is thirty-seven percent, and many states pile on more. So that five-hundred-million lump sum gets cut down to somewhere around three hundred million. A one-billion-dollar jackpot becomes, realistically, about three hundred million in your actual bank account.",
+      "motif": "lotterytaxbite",
+      "caption": "$1B headline → ~$300M actually in the bank"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "And watch a nasty tax surprise. The lottery withholds around twenty-four percent up front — but the top federal rate is thirty-seven. That gap means a nine-figure winner can owe tens of millions more at tax time than was withheld. Spend as if the withheld number is yours, and April arrives like a wrecking ball.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "24% withheld, 37% owed"
+        },
+        {
+          "name": "receipt",
+          "label": "a huge gap at tax time"
+        },
+        {
+          "name": "chartdown",
+          "label": "April wrecking ball"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Still an absurd amount, of course. But sit with the math: the glowing billboard said one billion, and the number that lands in your account is less than a third of it. Between the lump-sum discount and the taxes, two-thirds of the dream vanishes before you've spent a cent.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "$1B → ~$300M"
+        },
+        {
+          "name": "receipt",
+          "label": "lump cut + taxes"
+        },
+        {
+          "name": "scale",
+          "label": "2/3 gone before spending"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Now the single most useful idea in this whole video.",
+      "heading": "Win to Income",
+      "kicker": "what it really pays"
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "narration": "Don't think of a win as a pile to spend — think of it as an income machine. Invested sensibly, it safely pays you about four percent a year, forever. So a million dollars isn't infinite money; it's about forty thousand a year. A good salary — but a salary, not a bottomless well.",
+      "motif": "wintoincome",
+      "caption": "every win is really an annual income at 4%"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "This reframe is the whole ballgame. Lifestyle inflation is what kills winners: the mansion needs staff, the yacht needs a crew, the jet needs fuel. Costs that scale with your new life can devour even a huge win. The ones who stay rich keep their lifestyle far below what their four-percent income allows.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mansion",
+          "label": "mansions need staff"
+        },
+        {
+          "name": "yacht",
+          "label": "costs that scale up"
+        },
+        {
+          "name": "shield",
+          "label": "live below the 4%"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "This is the lens that separates the winners who stay rich from the ones who go broke. The broke ones see a million and think 'a million things to buy.' The smart ones see forty thousand a year, for life, and never touch the golden goose that lays it. Spend the eggs, never the goose.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "never touch the principal"
+        },
+        {
+          "name": "coins",
+          "label": "live off the 4%"
+        },
+        {
+          "name": "smiley",
+          "label": "spend eggs, keep the goose"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "callout",
+      "narration": "If you want the real 'never work again at any age' number, it's closer to ten million. At four percent that's four hundred thousand a year, enough to absorb a generous lifestyle and still never touch the principal. A million changes your life; ten million changes your family's forever.",
+      "text": "~$10M",
+      "sub": "the real 'never work again' number at any age",
+      "icon": "vault"
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Which brings us to the curse nobody believes until it's too late.",
+      "heading": "The Curse",
+      "kicker": "why winners go broke"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "It sounds like a myth, but it's real: studies suggest roughly a third of big lottery winners eventually go bankrupt. People who won millions end up with nothing — sometimes less than nothing. Sudden wealth, handed to someone with no money skills, isn't a blessing. It's a loaded gun.",
+      "motif": "lotterycurse",
+      "caption": "~1 in 3 big winners goes bankrupt"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "The horror stories are grimly similar. Winners of tens of millions who, within a decade, were bankrupt, divorced, estranged, sometimes worse off than before they won. It happens so reliably that it has a name — the curse — but it isn't magic. It's just human beings meeting more money than they ever learned to handle.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "millions → bankrupt in a decade"
+        },
+        {
+          "name": "warning",
+          "label": "divorce, estrangement"
+        },
+        {
+          "name": "scale",
+          "label": "not magic — just human"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "screenshot",
+      "narration": "Economists call this kind of money a windfall gain — a sudden and usually unexpected addition to income. And decades of research shows humans handle windfalls terribly. Money that arrives without being earned is spent as if it will never run out — until, suddenly, it does.",
+      "sourceId": "wiki-windfall"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "There's a psychology to it. Money you earn carries a mental weight — you know what it cost you, so you guard it. Money that falls from the sky feels unreal, almost like play money, so it gets spent recklessly. The very easiness of the win is exactly what makes it so easy to lose.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "earned money feels heavy"
+        },
+        {
+          "name": "ticket",
+          "label": "won money feels unreal"
+        },
+        {
+          "name": "warning",
+          "label": "easy come, easy go"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "The ways it unravels are heartbreakingly predictable. Lifestyle explodes overnight — mansions and cars with huge upkeep. Every relative and old friend appears with a request. Bad investments from people you trust. And the quiet loss of the daily purpose a job used to give. The money magnifies whatever you already were.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mansion",
+          "label": "lifestyle explodes"
+        },
+        {
+          "name": "handshake",
+          "label": "everyone wants a cut"
+        },
+        {
+          "name": "warning",
+          "label": "it magnifies who you are"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "And the human swarm is relentless. Every distant cousin, old classmate, and stranger with a 'business idea' finds you. Say no and you're the villain; say yes to everyone and you're broke. Many winners describe the money not as freedom, but as the moment they lost the ability to trust anyone around them.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "everyone finds you"
+        },
+        {
+          "name": "warning",
+          "label": "say no = villain"
+        },
+        {
+          "name": "shield",
+          "label": "trust evaporates"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "So if you did win — how would you not become that statistic?",
+      "heading": "The Playbook",
+      "kicker": "how to not blow it"
+    },
+    {
+      "id": "s30",
+      "type": "stage",
+      "narration": "Here's the smart-money playbook. First, tell no one and stay anonymous if your state allows it. Hire a lawyer and a fee-only advisor before you claim. Take the lump sum and invest it in boring index funds. Set a safe withdrawal rate. And whatever you do, don't blow up your whole life overnight.",
+      "motif": "lotteryplaybook",
+      "caption": "the steps that keep winners rich"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "So before claiming, you build a team — but carefully. A lawyer to claim it correctly, a CPA for the taxes, and a fee-only fiduciary advisor who's legally bound to act in your interest. Avoid anyone paid by commission; a sudden fortune draws financial predators like nothing else on earth.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "lawyer + CPA + fiduciary"
+        },
+        {
+          "name": "shield",
+          "label": "fee-only, not commission"
+        },
+        {
+          "name": "warning",
+          "label": "predators circle fortunes"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "That 'tell no one' rule is the most important and most ignored. The moment people know, you become a target — for relatives, scammers, long-lost friends, and lawsuits. Many of the worst lottery horror stories begin the day the winner posed smiling with the giant novelty check.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "stay anonymous"
+        },
+        {
+          "name": "warning",
+          "label": "you become a target"
+        },
+        {
+          "name": "ticket",
+          "label": "no giant-check photo"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And the scams are endless. Fake investment schemes, sob stories, romance cons, relatives 'borrowing' sums they'll never repay. The anonymity isn't paranoia — it's armor. The winners who quietly told no one, claimed through a trust, and changed nothing visible are the ones you never hear about, because they're still rich.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "warning",
+          "label": "scams and cons everywhere"
+        },
+        {
+          "name": "shield",
+          "label": "anonymity is armor"
+        },
+        {
+          "name": "smiley",
+          "label": "the quiet ones stay rich"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "And the counterintuitive one: don't quit everything immediately. The winners who stay happiest keep some structure — a business, a project, a purpose. The ones who quit everything and chase pure leisure often spiral fastest. Money can buy freedom, but it can't manufacture meaning. You still have to build that yourself.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "keep some purpose"
+        },
+        {
+          "name": "smiley",
+          "label": "structure keeps you sane"
+        },
+        {
+          "name": "warning",
+          "label": "freedom isn't meaning"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "So here's the twist that makes this whole episode useful.",
+      "heading": "The Real Jackpot",
+      "kicker": "you can build it"
+    },
+    {
+      "id": "s34",
+      "type": "screenshot",
+      "narration": "Think about how the jackpot itself works. A progressive jackpot is one that increases each time the game is played but isn't won — a growing pot built from countless losing tickets. That's the real lesson: the house is running the only guaranteed winning strategy. To get rich, you don't want to buy the ticket. You want to be the one who built the machine.",
+      "sourceId": "wiki-progjackpot"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And here's the cold math behind that growing pot: on average, every dollar you put into a lottery returns only about fifty cents in prizes. The other half funds the state and the winners. You are playing a game designed, with mathematical certainty, for you to lose a little every single time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "$1 in → ~$0.50 out"
+        },
+        {
+          "name": "chartdown",
+          "label": "designed for you to lose"
+        },
+        {
+          "name": "scale",
+          "label": "the house keeps the rest"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Because here's the number that should end your lottery habit for good. Put the money you'd spend on tickets — say two hundred dollars a month — into index funds instead, and over a working life it can grow into hundreds of thousands of dollars. That's a jackpot with odds of basically one hundred percent.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "$200/mo invested"
+        },
+        {
+          "name": "chartup",
+          "label": "= hundreds of thousands"
+        },
+        {
+          "name": "clover",
+          "label": "odds: ~100%"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "callout",
+      "narration": "Run it to the end: forty years of lottery money, say fifty dollars a week, redirected into an index fund earning normal market returns, can grow past half a million dollars. That's a real jackpot you're almost guaranteed to win — built from the exact cash most people quietly feed to the machine.",
+      "text": "~$500,000+",
+      "sub": "40 years of ticket money, invested instead",
+      "icon": "chartup"
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "So play the lottery for fun if you enjoy it — a few dollars for a daydream is harmless. But never, ever treat it as a plan. The real path to wealth is slower, duller, and almost guaranteed: earn, save, invest, and let compounding be the lucky number that actually pays off.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "ticket",
+          "label": "fun, not a plan"
+        },
+        {
+          "name": "piggybank",
+          "label": "earn, save, invest"
+        },
+        {
+          "name": "chartup",
+          "label": "compounding is the real luck"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the real lesson of every lottery level is this: money you didn't earn is far easier to lose than money you built. The skill of keeping wealth matters more than the luck of getting it. And that skill, unlike a jackpot, is something anyone can actually learn.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "keeping > getting"
+        },
+        {
+          "name": "seedling",
+          "label": "the skill anyone can learn"
+        },
+        {
+          "name": "trophy",
+          "label": "built beats won"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "So the final scoreboard is clear. Luck hands you money; skill lets you keep it. The lottery is a dream you rent for a couple of dollars — harmless in small doses, ruinous as a plan. Build the boring machine, and you become the thing the ticket only pretends to offer: genuinely, durably free.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "luck gives, skill keeps"
+        },
+        {
+          "name": "ticket",
+          "label": "rent the dream, cheaply"
+        },
+        {
+          "name": "smiley",
+          "label": "build the real freedom"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So dream about the jackpot if you like — but build like you'll never win it. Because you almost certainly won't, and the quiet, boring plan beats the lottery every single time. That's the real winning ticket.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "clover",
+          "label": "dream, but build"
+        },
+        {
+          "name": "chartup",
+          "label": "the boring plan wins"
+        },
+        {
+          "name": "smiley",
+          "label": "the real winning ticket"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this changed how you see that ticket, hit subscribe — and tell me which number you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "ticket",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-lottery",
+      "name": "Lottery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lottery",
+      "quote": "a form of gambling that involves the drawing of numbers at random for a prize"
+    },
+    {
+      "id": "wiki-lump",
+      "name": "Lump sum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lump_sum",
+      "quote": "a single payment of money"
+    },
+    {
+      "id": "wiki-windfall",
+      "name": "Windfall gain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Windfall_gain",
+      "quote": "a sudden and usually unexpected addition to income"
+    },
+    {
+      "id": "wiki-progjackpot",
+      "name": "Progressive jackpot (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Progressive_jackpot",
+      "quote": "increases each time the game is played"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Lottery Win: $1,000 to $1 Billion",
+    "alts": [
+      "What Each Level of Lottery Win Actually Does ($1K to $1B)",
+      "If You Won the Lottery: Every Level from $1,000 to $1 Billion"
+    ],
+    "hook": "You've daydreamed about the winning ticket — but the amount changes everything, and even winning big is nothing like you imagine. This is every level of lottery win: $1,000 (a treat), $100K (a down payment), $1M (life-changing but NOT retire-forever), $100M (generational), and $1B (a dynasty). We cover the real odds (you're ~300× likelier to be struck by lightning), why you only get ~half the headline (lump sum vs annuity), the brutal tax bite (a $1B jackpot ≈ $300M in the bank), the win-to-income reality at 4%, the lottery curse (~1 in 3 big winners go bankrupt), the smart-money playbook, and why investing your ticket money is a jackpot with ~100% odds. Fully cited.",
+    "bullets": [
+      "What each win does: $1,000 → $1 billion",
+      "The real odds — ~1 in 300 million",
+      "Lump sum vs annuity — you get about half",
+      "The tax bite — a $1B jackpot ≈ $300M in the bank",
+      "The lottery curse — ~1 in 3 big winners go bankrupt",
+      "The playbook, and why investing beats playing"
+    ],
+    "tags": [
+      "lottery",
+      "lottery winner",
+      "what if you won the lottery",
+      "lottery lump sum vs annuity",
+      "lottery taxes",
+      "lottery curse",
+      "powerball",
+      "mega millions",
+      "lottery odds",
+      "sudden wealth",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#lottery",
+      "#powerball",
+      "#personalfinance",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "LOTTERY WIN",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "$1B",
+      "napkinSub": "= ~$300M in the bank",
+      "deco": "ticket"
+    },
+    "chapters": [
+      [
+        "what a lottery actually is",
+        "The basics"
+      ],
+      [
+        "let's climb the levels of winning",
+        "The ladder"
+      ],
+      [
+        "the number everyone dreams of",
+        "$1 million"
+      ],
+      [
+        "you don't actually get the headline number",
+        "Lump vs annuity"
+      ],
+      [
+        "the taxman takes his enormous slice",
+        "The tax bite"
+      ],
+      [
+        "the single most useful idea",
+        "Win to income"
+      ],
+      [
+        "the curse nobody believes",
+        "The curse"
+      ],
+      [
+        "how would you not become that statistic",
+        "The playbook"
+      ],
+      [
+        "the twist that makes this whole episode useful",
+        "The real jackpot"
+      ]
+    ]
+  }
+}

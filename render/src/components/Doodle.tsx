@@ -141,6 +141,7 @@ export type DoodleName =
   | "skyline" | "lease"
   | "truck" | "steeringwheel"
   | "diploma" | "books"
+  | "ticket" | "clover"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2343,6 +2344,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={20} y={46} w={56} h={16} fill={GOLD} strokeWidth={SW} />
           <RRect x={26} y={30} w={48} h={16} fill={ARMY} strokeWidth={SW} />
           <RLine x1={30} y1={38} x2={30} y2={78} strokeWidth={1.4} />
+        </>
+      );
+    case "ticket":
+      // A lottery ticket.
+      return (
+        <>
+          <RRect x={16} y={34} w={68} h={34} fill={GOLD} strokeWidth={SW} />
+          <RLine x1={54} y1={34} x2={54} y2={68} strokeWidth={1.6} />
+          <text x={35} y={56} fontSize={13} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+          <text x={69} y={55} fontSize={11} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">777</text>
+        </>
+      );
+    case "clover":
+      // A four-leaf clover — luck.
+      return (
+        <>
+          <RCircle cx={40} cy={40} d={22} fill={GREEN} strokeWidth={1.6} />
+          <RCircle cx={60} cy={40} d={22} fill={GREEN} strokeWidth={1.6} />
+          <RCircle cx={40} cy={60} d={22} fill={GREEN} strokeWidth={1.6} />
+          <RCircle cx={60} cy={60} d={22} fill={GREEN} strokeWidth={1.6} />
+          <RLine x1={50} y1={58} x2={54} y2={82} strokeWidth={2.4} />
         </>
       );
   }

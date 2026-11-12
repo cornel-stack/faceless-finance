@@ -5776,6 +5776,83 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={456} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the real cost isn't just money — it's years of your life</text>
       </svg>
     );
+  } else if (m === "lotterywinladder") {
+    // Lottery-win tiers $1K → $1B and what each does.
+    const tiers: [string, string][] = [["$1K", "a nice weekend"], ["$100K", "a car or down payment"], ["$1M", "life-changing, not forever"], ["$100M", "true generational wealth"], ["$1B", "a dynasty"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => { const w = 180 + i * 130; const y = 100 + i * 74; return <g key={i} opacity={interpolate(climb, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={VW / 2 - w / 2} y={y} width={w} height={58} rx={7} fill={[parch, "#e8d7bf", gold, "#9cc47f", green][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 37} fontSize={18} fontWeight={900} fill={i >= 4 ? "#fff" : ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 60} y={y + 36} fontSize={13} fontWeight={800} fill={i >= 4 ? "#fff" : ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the lottery-win ladder</text>
+      </svg>
+    );
+  } else if (m === "lotteryoddsscale") {
+    // The odds: lightning vs the jackpot.
+    const pop = (d: number) => Math.min(1, spring({ frame, fps, delay: d, config: { damping: 12 } }));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the odds you never hear about</text>
+        <g transform={`translate(300 270) scale(${pop(fps * 0.4)})`}><circle r={92} fill={gold} stroke={ink} strokeWidth={5} /><text y={-16} fontSize={30} textAnchor="middle">⚡</text><text y={16} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>struck by lightning</text><text y={38} fontSize={13} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>~1 in 1 million</text></g>
+        <g transform={`translate(700 270) scale(${pop(fps * 1.0)})`}><circle r={92} fill={red} stroke={ink} strokeWidth={5} /><text y={-16} fontSize={26} textAnchor="middle">🎟️</text><text y={16} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>the jackpot</text><text y={38} fontSize={13} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>~1 in 300 million</text></g>
+        <text x={VW / 2} y={430} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>you're ~300× likelier to be hit by lightning than win</text>
+      </svg>
+    );
+  } else if (m === "lumpsumvsannuity") {
+    // Lump sum (~half now) vs annuity (full, over 30 yrs).
+    const reveal = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1 billion jackpot — two choices</text>
+        <g opacity={interpolate(reveal, [0, 0.5], [0, 1], clampBoth)} transform="translate(300 270)"><rect x={-130} y={-70} width={260} height={150} rx={12} fill={gold} stroke={ink} strokeWidth={4} /><text y={-38} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>LUMP SUM</text><text y={-4} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">~$500M</text><text y={28} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>cash now</text><text y={52} fontSize={11} fontWeight={700} fill={ink} textAnchor="middle" fontFamily={sans}>(before tax)</text></g>
+        <g opacity={interpolate(reveal, [0.4, 0.9], [0, 1], clampBoth)} transform="translate(700 270)"><rect x={-130} y={-70} width={260} height={150} rx={12} fill="#9cc47f" stroke={ink} strokeWidth={4} /><text y={-38} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>ANNUITY</text><text y={-4} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1B</text><text y={28} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>full amount</text><text y={52} fontSize={11} fontWeight={700} fill={ink} textAnchor="middle" fontFamily={sans}>over 30 years</text></g>
+        <text x={VW / 2} y={430} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the headline number is the annuity — the cash is about half</text>
+      </svg>
+    );
+  } else if (m === "lotterytaxbite") {
+    // The tax bite on the lump sum.
+    const cut = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1B headline → what you keep</text>
+        <g transform="translate(220 280)"><circle r={78} fill={gold} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>headline</text><text y={18} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1B</text></g>
+        <g transform="translate(490 280)" opacity={cut}><rect x={-80} y={-50} width={160} height={46} rx={7} fill="#d98b5f" stroke={ink} strokeWidth={3} /><text y={-20} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>lump sum: ~half</text><rect x={-80} y={6} width={160} height={46} rx={7} fill={red} stroke={ink} strokeWidth={3} /><text y={36} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>taxes: ~37%+</text></g>
+        <g transform="translate(790 280)"><circle r={78 - 34 * cut} fill={green} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>you keep</text><text y={18} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">~$300M</text></g>
+        <text x={VW / 2} y={450} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a $1B jackpot is really about $300M in the bank</text>
+      </svg>
+    );
+  } else if (m === "lotterycurse") {
+    // The lottery curse: a third go bankrupt.
+    const fill = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const total = 30, bankrupt = Math.round(10 * fill);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the lottery curse</text>
+        {Array.from({ length: total }).map((_, i) => { const col = i % 10, row = Math.floor(i / 10); const x = 320 + col * 48; const y = 130 + row * 70; const isB = i < bankrupt * 3; return <g key={i}><circle cx={x} cy={y} r={16} fill={isB ? red : "#9cc47f"} stroke={ink} strokeWidth={2.5} /></g>; })}
+        <text x={VW / 2} y={360} fontSize={17} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>roughly 1 in 3 big winners goes broke</text>
+        <text x={VW / 2} y={400} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>sudden money with no money skills is a time bomb</text>
+      </svg>
+    );
+  } else if (m === "wintoincome") {
+    // What each win safely generates at 4%.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string][] = [["$100K", "$4,000 / year"], ["$1M", "$40,000 / year"], ["$10M", "$400,000 / year"], ["$100M", "$4,000,000 / year"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what the win safely pays, forever (4%)</text>
+        {rows.map(([amt, inc], i) => { const y = 100 + i * 72; return <g key={i} opacity={interpolate(reveal, [i * 0.18, i * 0.18 + 0.22], [0, 1], clampBoth)}><rect x={250} y={y} width={200} height={56} rx={8} fill={gold} stroke={ink} strokeWidth={3} /><text x={350} y={y + 35} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><path d={`M460 ${y + 28} l50 0 m0 0 l-14 -9 m14 9 l-14 9`} stroke={ink} strokeWidth={3} fill="none" /><rect x={520} y={y} width={230} height={56} rx={8} fill={green} stroke={ink} strokeWidth={3} /><text x={635} y={y + 35} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{inc}</text></g>; })}
+        <text x={VW / 2} y={448} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>$1M sounds infinite — it's really a solid salary</text>
+      </svg>
+    );
+  } else if (m === "lotteryplaybook") {
+    // The smart-money steps after a win.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const steps: string[] = ["stay anonymous, tell no one", "hire a lawyer + fee-only advisor", "take the lump sum, invest in index funds", "set a safe withdrawal rate", "don't quit your life overnight"];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the smart-money playbook</text>
+        {steps.map((t, i) => { const y = 98 + i * 62; return <g key={i} opacity={interpolate(reveal, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><circle cx={250} cy={y + 24} r={18} fill={gold} stroke={ink} strokeWidth={3} /><text x={250} y={y + 30} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{i + 1}</text><rect x={288} y={y} width={440} height={48} rx={8} fill="#efe9da" stroke={ink} strokeWidth={3} /><text x={308} y={y + 30} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>{t}</text></g>; })}
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
