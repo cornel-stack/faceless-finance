@@ -4852,6 +4852,82 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={430} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a 50% saver works one career and funds two lifetimes</text>
       </svg>
     );
+  } else if (m === "passiveincomeladder") {
+    // The monthly passive-income tiers and what each covers.
+    const tiers: [string, string][] = [["$100/mo", "a phone bill"], ["$500/mo", "groceries"], ["$1,000/mo", "a car + more"], ["$2,500/mo", "the rent"], ["$5,000/mo", "a modest life"], ["$10,000/mo", "quit forever"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => {
+          const w = 160 + i * 128; const y = 90 + i * 66;
+          const op = interpolate(climb, [i * 0.13, i * 0.13 + 0.2], [0, 1], clampBoth);
+          return <g key={i} opacity={op}><rect x={VW / 2 - w / 2} y={y} width={w} height={54} rx={7} fill={[parch, "#e8d7bf", "#cfe3d4", gold, green, "#bfa0d8"][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 34} fontSize={19} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 62} y={y + 33} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>;
+        })}
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">money that arrives while you sleep</text>
+      </svg>
+    );
+  } else if (m === "capitalyieldconverter") {
+    // capital × yield = monthly income.
+    const pop = spring({ frame, fps, delay: fps * 1.0, config: { damping: 10 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={110} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the one formula of passive income</text>
+        <g transform="translate(250 290)"><circle r={78} fill={green} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>your capital</text><text y={18} fontSize={16} fontWeight={900} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>(the pile)</text></g>
+        <text x={430} y={300} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">×</text>
+        <g transform="translate(560 290)"><circle r={60} fill={gold} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>yield</text><text y={20} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>~4-5%</text></g>
+        <text x={700} y={300} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">=</text>
+        <g transform={`translate(820 290) scale(${Math.min(1, pop)})`}><circle r={58} fill={blue} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>income</text><text y={20} fontSize={14} fontWeight={800} fill="#eaf0fa" textAnchor="middle" fontFamily={sans}>/month</text></g>
+        <text x={VW / 2} y={456} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>passive income is just capital, doing a job for you</text>
+      </svg>
+    );
+  } else if (m === "incometocapital") {
+    // How much invested you need for each monthly income.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string, number][] = [["$500/mo", "~$150K", 120], ["$1,000/mo", "~$300K", 190], ["$2,500/mo", "~$750K", 320], ["$10,000/mo", "~$3M", 470]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what each income needs invested</text>
+        {rows.map(([inc, cap, w], i) => { const y = 120 + i * 86; return <g key={i} opacity={interpolate(grow, [i * 0.16, i * 0.16 + 0.2], [0, 1], clampBoth)}><text x={200} y={y + 34} fontSize={18} fontWeight={900} fill={ink} textAnchor="end" fontFamily="Georgia, serif">{inc}</text><rect x={220} y={y} width={(w as number) * grow} height={54} rx={7} fill={[parch, "#cfe3d4", gold, green][i]} stroke={ink} strokeWidth={4} /><text x={220 + (w as number) * grow + 56} y={y + 34} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{cap}</text></g>; })}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>passive income isn't free — it's bought with capital</text>
+      </svg>
+    );
+  } else if (m === "passivespectrum") {
+    // From truly passive to basically a job.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const items: [string, number][] = [["index funds", 0.08], ["dividends", 0.26], ["bonds / HYSA", 0.42], ["rental property", 0.68], ["a business", 0.92]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how 'passive' is it, really?</text>
+        <defs><linearGradient id="passgrad" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stopColor={green} /><stop offset="1" stopColor={red} /></linearGradient></defs>
+        <rect x={120} y={250} width={740} height={40} rx={20} fill="url(#passgrad)" stroke={ink} strokeWidth={4} />
+        <text x={120} y={320} fontSize={15} fontWeight={800} fill={green} fontFamily={sans}>truly passive</text>
+        <text x={860} y={320} fontSize={15} fontWeight={800} fill={red} textAnchor="end" fontFamily={sans}>basically a job</text>
+        {items.map(([lab, t], i) => <g key={i} opacity={interpolate(draw, [t as number, (t as number) + 0.12], [0, 1], clampBoth)}><line x1={120 + 740 * (t as number)} y1={244} x2={120 + 740 * (t as number)} y2={210 - (i % 2) * 36} stroke={ink} strokeWidth={2} /><text x={120 + 740 * (t as number)} y={200 - (i % 2) * 36} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>)}
+        <text x={VW / 2} y={380} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>'passive' is a spectrum — some of it is real work</text>
+      </svg>
+    );
+  } else if (m === "sourcemenu") {
+    // The menu of passive-income sources.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const srcs: [string, string][] = [["dividends", "own companies"], ["interest", "lend money"], ["rent", "own property"], ["royalties", "own creations"], ["index funds", "own the market"], ["a business", "own a system"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the menu — every one is 'own something'</text>
+        {srcs.map(([s, how], i) => { const op = interpolate(reveal, [i * 0.12, i * 0.12 + 0.2], [0, 1], clampBoth); const x = 180 + (i % 3) * 300; const y = 170 + Math.floor(i / 3) * 150; return <g key={i} opacity={op} transform={`translate(${x} ${y})`}><rect x={-120} y={-44} width={240} height={88} rx={10} fill="#cfe3d4" stroke={ink} strokeWidth={4} /><text y={-8} fontSize={19} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{s}</text><text y={22} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{how}</text></g>; })}
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the common thread: you must OWN an asset</text>
+      </svg>
+    );
+  } else if (m === "moneywhileyousleep") {
+    // Income landing while the person sleeps.
+    const drops = Math.floor(interpolate(frame, [fps * 0.5, fps * 2.6], [0, 6], clampBoth));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">it earns while you sleep</text>
+        <g transform="translate(300 340)"><rect x={-110} y={-30} width={220} height={70} rx={12} fill={tan} stroke={ink} strokeWidth={5} /><circle cx={-60} cy={-10} r={20} fill={parch} stroke={ink} strokeWidth={4} /><text x={10} y={2} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>💤 asleep</text></g>
+        {Array.from({ length: 6 }).map((_, i) => <g key={i} opacity={drops > i ? 1 : 0}><circle cx={620 + (i % 3) * 70} cy={200 + Math.floor(i / 3) * 70} r={22} fill={gold} stroke={ink} strokeWidth={3} /><text x={620 + (i % 3) * 70} y={206 + Math.floor(i / 3) * 70} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$</text></g>)}
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>your assets clock in so you don't have to</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

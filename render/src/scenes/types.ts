@@ -190,7 +190,9 @@ export interface StageScene extends Base {
     // EP062 (every level of rich) additions:
     | "richtiers" | "howmoneyheld" | "lifestylevspower" | "spendingplateau" | "oldvsnewmoney" | "dynastywealth"
     // EP063 (retirement at every savings rate) additions:
-    | "ratetimecurve" | "thesimpletable" | "incomeirrelevant" | "twosidedeffect" | "savingsgapfuel" | "fiftypercentclub";
+    | "ratetimecurve" | "thesimpletable" | "incomeirrelevant" | "twosidedeffect" | "savingsgapfuel" | "fiftypercentclub"
+    // EP064 (every level of passive income) additions:
+    | "passiveincomeladder" | "capitalyieldconverter" | "incometocapital" | "passivespectrum" | "sourcemenu" | "moneywhileyousleep";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

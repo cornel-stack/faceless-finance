@@ -117,6 +117,8 @@ export type DoodleName =
   | "tophat" | "champagne"
   // EP063 (retirement at every savings rate) additions:
   | "stopwatch" | "finishflag"
+  // EP064 (every level of passive income) additions:
+  | "mailbox" | "moon"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2026,6 +2028,26 @@ function shape(name: DoodleName): React.ReactNode {
           <RRect x={64} y={29} w={12} h={11} fill={INK} strokeWidth={0} />
           <RRect x={28} y={40} w={12} h={12} fill={INK} strokeWidth={0} />
           <RRect x={52} y={40} w={12} h={12} fill={INK} strokeWidth={0} />
+        </>
+      );
+    case "mailbox":
+      // A mailbox with the flag up — passive checks arriving.
+      return (
+        <>
+          <RRect x={30} y={44} w={46} h={34} fill={GREEN} strokeWidth={SW} />
+          <RPath d="M30 44 Q53 28 76 44" fill={GREEN} strokeWidth={SW} />
+          <RLine x1={40} y1={78} x2={40} y2={90} strokeWidth={SW} />
+          <RRect x={76} y={40} w={4} h={20} fill={RED} strokeWidth={1.4} />
+          <RRect x={78} y={40} w={12} h={10} fill={RED} strokeWidth={1.4} />
+        </>
+      );
+    case "moon":
+      // A crescent moon — earning while you sleep.
+      return (
+        <>
+          <RPath d="M62 20 a34 34 0 1 0 0 60 a26 26 0 0 1 0 -60 Z" fill={YELLOW} strokeWidth={SW} />
+          <RCircle cx={44} cy={30} d={5} fill="none" strokeWidth={1.2} />
+          <RCircle cx={40} cy={66} d={4} fill="none" strokeWidth={1.2} />
         </>
       );
   }
