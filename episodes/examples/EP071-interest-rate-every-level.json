@@ -1,0 +1,1042 @@
+{
+  "id": "EP071",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Interest Rate: 0% to 20% (And Who Wins)",
+  "slug": "every-level-of-interest-rate",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP071 — Every Level series (row 61). Interest-rate levels 0%→2%→5%→10%→20% and WHO WINS/LOSES (savers vs borrowers vs economy). The Fed sets the base (fed funds) which ripples everywhere; the saver-vs-borrower see-saw; real rate = nominal − inflation; why rates rise (fight inflation) & fall (fight recession). 4 new motifs (interestratelevels/saversvsborrowers/rateripple/realrate) + reuse ratelever/seesaw + doodles thermostat/brake. Sources: Interest rate/Fed funds rate/Monetary policy/Real interest rate/Central bank. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "One number, set by a handful of people in a single room, quietly decides who gets rich and who gets squeezed. It sets your mortgage, your savings, your rent, and the fate of the entire economy. It's the interest rate — and at every level, from zero to twenty percent, there are clear winners and clear losers.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "one number"
+        },
+        {
+          "name": "podium",
+          "label": "set in one room"
+        },
+        {
+          "name": "scale",
+          "label": "winners & losers"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the flip in one example. At a zero-percent rate, a hundred thousand dollars in savings earns you nothing — absolutely nothing. At five percent, that exact same money earns five thousand dollars a year, for doing nothing at all. The rate alone decides whether your cash is treasure or trash.",
+      "text": "$0 vs $5,000",
+      "sub": "a year on $100K saved — at 0% vs 5%",
+      "icon": "piggybank"
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Now flip it to the borrower. A three-hundred-thousand-dollar mortgage costs about twelve hundred dollars a month at three percent — but nearly two thousand at seven. Same house, same loan. Eight hundred dollars a month, gone, purely because of where the rate sits.",
+      "text": "$1,200 vs $2,000",
+      "sub": "monthly on a $300K mortgage — at 3% vs 7%",
+      "icon": "mortgage"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we climb every level of interest rate, and reveal exactly who wins and who loses at each one — the saver, the borrower, the homeowner, the whole economy. Because the rate isn't good or bad. It's a dial that quietly transfers wealth from one group to another.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "0% → 20%"
+        },
+        {
+          "name": "handshake",
+          "label": "who wins?"
+        },
+        {
+          "name": "scale",
+          "label": "a wealth-transfer dial"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "'rates went up' = bad news",
+      "memeBottom": "'rates went up' = great for savers, brutal for borrowers",
+      "narration": "Because 'rates went up' isn't simply good or bad news. It's fantastic news if you're a saver, and brutal news if you're a borrower. The very same headline lands completely differently depending on which side you're standing on."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what an interest rate even is — and who sets it.",
+      "heading": "The Dial",
+      "kicker": "the price of money"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "An interest rate is simply the amount of interest due per period, as a proportion of the amount lent, deposited, or borrowed. In plain terms, it's the price of money — the rent you pay to borrow it, or earn to lend it.",
+      "sourceId": "wiki-rate"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "And the master rate is the federal funds rate — the interest rate at which banks lend reserve balances to each other overnight. The Federal Reserve sets this one number, and everything else is built on top of it.",
+      "sourceId": "wiki-ffr"
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "narration": "From that one base rate, everything ripples outward. The Fed nudges its rate, and within weeks your mortgage rate, your credit card rate, your savings rate, and your car loan all move with it. One dial, in one building, quietly re-prices the entire economy.",
+      "motif": "rateripple",
+      "caption": "one rate ripples through everything"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And rate changes don't hit instantly. They ripple out over many months — old loans keep their rate, new ones reprice first. This lag is exactly why the Fed often seems to act 'too late,' and why its moves can overshoot before anyone actually feels them.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "a months-long lag"
+        },
+        {
+          "name": "mortgage",
+          "label": "old loans keep their rate"
+        },
+        {
+          "name": "warning",
+          "label": "it can overshoot"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "Setting that rate is the heart of monetary policy — the policy adopted by the monetary authority of a nation to steer financial conditions toward goals like stable prices and high employment. The rate is the Fed's single most powerful lever.",
+      "sourceId": "wiki-monetary"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "So let's climb the levels — and see who wins at each.",
+      "heading": "The Levels",
+      "kicker": "0% to 20%"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Here's the whole ladder. Zero percent is free money — a borrower's paradise. Two to three is cheap, and assets boom. Five percent is normal and balanced. Ten percent is high — savers rejoice, borrowers suffer. And twenty percent is the extreme inflation-killer that triggers recessions. Each level crowns a different winner.",
+      "motif": "interestratelevels",
+      "caption": "the levels of interest rate"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "There's even a theoretical 'natural rate' — the level that keeps the economy humming without overheating or stalling. The Fed is always hunting for it, half-blind. Set rates above it to cool things down, below it to heat them up. Nobody knows the exact number.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "thermostat",
+          "label": "the 'natural rate'"
+        },
+        {
+          "name": "gauge",
+          "label": "neither hot nor cold"
+        },
+        {
+          "name": "magnifier",
+          "label": "nobody knows it exactly"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Start at the bottom — the level that defined the last decade.",
+      "heading": "0% — Free Money",
+      "kicker": "borrowers' paradise"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "At near-zero rates, money is almost free to borrow. It's a paradise for borrowers, businesses, and especially owners of assets. Cheap loans flood in, so people pile into houses and stocks, and their prices soar. The 2010s ran on exactly this fuel.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "cheap to borrow"
+        },
+        {
+          "name": "chartup",
+          "label": "assets soar"
+        },
+        {
+          "name": "balloon",
+          "label": "the 2010s boom"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Rates can even go below zero. In parts of Europe and Japan, central banks pushed rates negative — literally charging banks to hold cash, trying to force money out the door. Savers were paid to borrow and penalized to save. The dial can get far stranger than you'd think.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "negative rates!"
+        },
+        {
+          "name": "globe",
+          "label": "Europe & Japan"
+        },
+        {
+          "name": "warning",
+          "label": "paid to borrow"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "But someone always loses. At zero percent, savers are crushed — their cash earns nothing, slowly losing value to inflation. Zero rates quietly punish the cautious and reward the bold and the borrowed. They also, dangerously, inflate the very bubbles that later burst.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "savers earn nothing"
+        },
+        {
+          "name": "grocerybag",
+          "label": "inflation eats cash"
+        },
+        {
+          "name": "warning",
+          "label": "it inflates bubbles"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Economists have a blunt name for crushing savers with low rates: financial repression. It quietly transfers wealth from cautious savers to big borrowers — chiefly, the government. Keep rates below inflation long enough, and the saver silently funds everyone else's debt.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "savers pay"
+        },
+        {
+          "name": "capitol",
+          "label": "govt benefits"
+        },
+        {
+          "name": "scale",
+          "label": "a silent transfer"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "title",
+      "narration": "Nudge rates up to the comfortable middle.",
+      "heading": "5% — Normal",
+      "kicker": "the balanced zone"
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "Around five percent is historically normal and healthy. Borrowing costs real money, so people are more careful. But savers finally earn a genuine return again — a safe five percent on cash. It's the balanced zone, where neither side is punished and the economy can run steadily.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "balanced"
+        },
+        {
+          "name": "piggybank",
+          "label": "savers earn ~5%"
+        },
+        {
+          "name": "handshake",
+          "label": "neither side crushed"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "And five percent isn't random — it's roughly the historical norm. Over the last century, rates have averaged somewhere around four to five percent. The near-zero decade we just lived through was the true anomaly — not the higher rates that followed it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "~5% for a century"
+        },
+        {
+          "name": "chartdown",
+          "label": "0% was the anomaly"
+        },
+        {
+          "name": "scale",
+          "label": "back to normal"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Now push into high-rate territory.",
+      "heading": "10% — High",
+      "kicker": "savers' revenge"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "At ten percent, the whole board flips. Savers are suddenly winning big — cash and bonds pay beautifully. But borrowers are in agony: mortgages become unaffordable, credit cards punishing. And stocks and housing usually fall, as all that expensive money drains out of risky assets.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "savers win big"
+        },
+        {
+          "name": "mortgage",
+          "label": "borrowers in agony"
+        },
+        {
+          "name": "chartdown",
+          "label": "stocks & housing fall"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "High rates also hammer existing bonds, through a see-saw most people miss. When new bonds pay more, old low-paying bonds are worth less — so their price falls. It's why 2022's rate spike hurt 'safe' bonds almost as badly as stocks.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bond",
+          "label": "rates up…"
+        },
+        {
+          "name": "chartdown",
+          "label": "…old bond prices down"
+        },
+        {
+          "name": "scale",
+          "label": "the bond see-saw"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "title",
+      "narration": "And at the extreme end — the nuclear option.",
+      "heading": "20% — Extreme",
+      "kicker": "the inflation killer"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "Twenty percent is the emergency brake. In the early 1980s, the Fed cranked rates this high to strangle runaway inflation. It worked — but it also caused a brutal recession. Rates this extreme are a last resort, deliberately crashing the economy to kill something even worse.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "brake",
+          "label": "the emergency brake"
+        },
+        {
+          "name": "podium",
+          "label": "1980s: kill inflation"
+        },
+        {
+          "name": "chartdown",
+          "label": "caused a recession"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Was the 1980s pain worth it? Brutally, yes. Those twenty-percent rates finally broke a decade of runaway inflation — and set up a whole generation of stable growth that followed. Sometimes the cure is a short, sharp shock nobody enjoys, but everybody needed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "brake",
+          "label": "20% rates"
+        },
+        {
+          "name": "chartdown",
+          "label": "a harsh recession"
+        },
+        {
+          "name": "chartup",
+          "label": "then stable growth"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Notice the pattern running through every level.",
+      "heading": "The See-Saw",
+      "kicker": "one wins, one loses"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "Every interest rate is a see-saw between two groups. Savers want rates high, so their cash earns more. Borrowers want rates low, so their debt costs less. The rate can't please both. Whenever it moves, it quietly transfers wealth from one side of the board to the other.",
+      "motif": "saversvsborrowers",
+      "caption": "a rate that helps one side always hurts the other"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And here's who quietly loves low rates most of all: the government. It's the biggest borrower on Earth, with trillions in debt. Every cut saves it a fortune in interest; every hike costs it dearly. The very entity setting the rate has a huge stake in keeping it low.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "the biggest borrower"
+        },
+        {
+          "name": "percent",
+          "label": "low rates save $trillions"
+        },
+        {
+          "name": "warning",
+          "label": "a built-in bias"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "So the key question isn't 'are rates good or bad?' It's 'which side of the see-saw am I on?' If you're swimming in savings, you cheer high rates. If you're carrying a mortgage and loans, you pray for low ones. Your own balance sheet decides who you root for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "lots of savings?"
+        },
+        {
+          "name": "creditcard",
+          "label": "lots of debt?"
+        },
+        {
+          "name": "scale",
+          "label": "pick your side"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "There's a rough age pattern, too. The young, with mortgages and loans, are usually net borrowers — they quietly want low rates. The old, living off savings and bonds, are net savers — they want high ones. Interest rates gently pit the generations against each other.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "baby",
+          "label": "young = borrowers"
+        },
+        {
+          "name": "retiree",
+          "label": "old = savers"
+        },
+        {
+          "name": "scale",
+          "label": "generations divided"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "But there's a hidden rate that matters more than the one on the sign.",
+      "heading": "The Real Rate",
+      "kicker": "rate minus inflation"
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "That's the real interest rate — the rate of interest an investor, saver or lender actually receives after allowing for inflation. It's the only rate that tells you whether your money is truly growing, or quietly shrinking.",
+      "sourceId": "wiki-real"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "The math is simple but brutal. Take your rate, and subtract inflation. Earning five percent in your savings feels great — but if inflation is three percent, your real gain is only two. And if inflation is six, that 'nice' five-percent rate is actually losing you money every year.",
+      "motif": "realrate",
+      "caption": "if inflation beats your rate, you're quietly losing money"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "This is the government's favorite quiet trick. Keep rates below inflation — a negative real rate — and the real value of its massive debt silently shrinks every single year. Savers unknowingly foot the bill. It's how nations have always, gently, inflated their debts away.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "rate below inflation"
+        },
+        {
+          "name": "capitol",
+          "label": "debt shrinks in real terms"
+        },
+        {
+          "name": "grocerybag",
+          "label": "savers pay for it"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "This is the trick that fools savers at zero rates. Earning nothing while inflation runs at five percent means you're losing five percent of your purchasing power a year — a deeply negative real rate. The number on the account said zero. Reality said you were quietly going backwards.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "0% rate"
+        },
+        {
+          "name": "grocerybag",
+          "label": "−5% to inflation"
+        },
+        {
+          "name": "chartdown",
+          "label": "going backwards"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "Savers do have a shield: inflation-protected bonds, like I-bonds and TIPS. Their payout rises right along with inflation, guaranteeing a positive real return. When real rates go negative, these are one of the few places a cautious saver can hide and not lose ground.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "inflation-protected bonds"
+        },
+        {
+          "name": "percent",
+          "label": "payout tracks inflation"
+        },
+        {
+          "name": "piggybank",
+          "label": "a saver's hideout"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "So why do the people in that room move the dial at all?",
+      "heading": "Why Rates Move",
+      "kicker": "fire and ice"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "It comes down to two enemies. When inflation runs too hot, the Fed raises rates to cool the economy down — making money expensive to slow spending. When recession looms, it slashes rates to heat things up — making money cheap to spark borrowing. The rate is the economy's thermostat.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "thermostat",
+          "label": "the economy's thermostat"
+        },
+        {
+          "name": "chartup",
+          "label": "inflation hot → raise"
+        },
+        {
+          "name": "chartdown",
+          "label": "recession → cut"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "The Fed is juggling two goals at once — its 'dual mandate': stable prices and maximum employment. The trouble is they often conflict. Fighting inflation with high rates can throw people out of work. Every rate decision is a tightrope walk between the two.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "stable prices…"
+        },
+        {
+          "name": "briefcase",
+          "label": "…+ jobs"
+        },
+        {
+          "name": "warning",
+          "label": "they often conflict"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "stage",
+      "narration": "Picture it as a giant lever in the Fed's hands. Pull it up, and borrowing gets expensive, the economy slows, and inflation cools. Push it down, and money floods in, spending surges, and growth heats up. The whole economy swings on this one lever.",
+      "motif": "ratelever",
+      "caption": "the lever that moves the whole economy"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And the Fed is less all-powerful than it looks. It directly sets only the short-term rate. Long-term rates — like your thirty-year mortgage — are largely set by the bond market's bets on the future. The Fed steers the ship, but it doesn't fully control it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "podium",
+          "label": "Fed sets short rates"
+        },
+        {
+          "name": "bond",
+          "label": "market sets long rates"
+        },
+        {
+          "name": "scale",
+          "label": "it steers, not controls"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "And this is why the Fed can never win for everyone. Every move helps one group and hurts another. Raise rates to protect savers and tame inflation, and you punish borrowers and risk a recession. There is no setting that makes everybody happy — only trade-offs.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "every move = a trade-off"
+        },
+        {
+          "name": "scale",
+          "label": "someone always loses"
+        },
+        {
+          "name": "podium",
+          "label": "no perfect rate"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "That lag creates the Fed's recurring nightmare: overshooting. Because rate changes take a year or more to fully bite, the Fed is always driving while staring in the rear-view mirror. Hike too hard, and you only discover the recession you caused many months later.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "clock",
+          "label": "a 1-year+ lag"
+        },
+        {
+          "name": "brake",
+          "label": "hikes too hard"
+        },
+        {
+          "name": "chartdown",
+          "label": "recession, found late"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Underpinning it all is the central bank's unique power. A central bank holds a monopoly on increasing the monetary base — it alone can create the base money and set its price. No other institution on Earth has a dial that moves so much, so quietly.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "the central bank"
+        },
+        {
+          "name": "percent",
+          "label": "sets the price of money"
+        },
+        {
+          "name": "globe",
+          "label": "moves everything"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "$100K in savings earns per year, by rate ($)",
+      "unit": "$",
+      "narration": "Here's what the rate does to a saver, in dollars. At zero percent, a hundred thousand earns nothing. At five, five thousand a year. At ten, ten thousand. At twenty, twenty thousand — all for the same money, just sitting there. The rate alone sets the reward for saving.",
+      "data": [
+        {
+          "label": "0%",
+          "value": 0
+        },
+        {
+          "label": "5%",
+          "value": 5000
+        },
+        {
+          "label": "10%",
+          "value": 10000
+        },
+        {
+          "label": "20%",
+          "value": 20000
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "So how do you actually play whatever level we're at?",
+      "heading": "The Playbook",
+      "kicker": "position for the rate"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "When rates are low, lean into borrowing wisely and owning assets. Lock in a cheap, long mortgage. Buy appreciating things while money is cheap. Low rates are the time to borrow sensibly and own — because the system is quietly paying you to.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "house",
+          "label": "low rates: lock cheap debt"
+        },
+        {
+          "name": "chartup",
+          "label": "own assets"
+        },
+        {
+          "name": "percent",
+          "label": "borrow sensibly"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "When rates fall, a specific window opens: refinancing. If you locked a mortgage at seven percent and rates drop to four, you can refinance and slash your payment overnight. Smart borrowers watch for these windows and pounce — it's quietly free money for the attentive.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "house",
+          "label": "rates drop"
+        },
+        {
+          "name": "percent",
+          "label": "refinance lower"
+        },
+        {
+          "name": "moneybag",
+          "label": "slash the payment"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "When rates are high, flip your strategy. Grab those juicy savings and bond yields while they last. Be very cautious with new debt. And remember that high rates often knock down stocks and housing — which, for the patient buyer with cash, quietly creates a rare sale.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "high rates: lock in yields"
+        },
+        {
+          "name": "scissors",
+          "label": "avoid new debt"
+        },
+        {
+          "name": "bargaintag",
+          "label": "assets on sale"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "And when rates are high, lock them in while they last. A one-year savings rate can vanish in months, but a multi-year CD or a longer bond freezes today's juicy yield for years. High rates are temporary — the savvy saver nails them down before they fall.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "vault",
+          "label": "lock in a CD/bond"
+        },
+        {
+          "name": "clock",
+          "label": "before rates drop"
+        },
+        {
+          "name": "piggybank",
+          "label": "freeze the yield"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "And always judge by the real rate, not the headline. A high rate with even higher inflation is a trap for savers. A modest rate with low inflation can be genuinely rewarding. Subtract inflation first — that's the only number that tells you the truth.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "percent",
+          "label": "rate − inflation"
+        },
+        {
+          "name": "scale",
+          "label": "judge the REAL rate"
+        },
+        {
+          "name": "smiley",
+          "label": "the only honest number"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And rates flip the classic 'pay off debt or invest?' question. At two percent, keep the cheap mortgage and invest the difference instead. At eight percent, paying off that guaranteed eight-percent debt is often the better, safer return. The right answer changes with the rate.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "pay off or invest?"
+        },
+        {
+          "name": "percent",
+          "label": "2% → invest"
+        },
+        {
+          "name": "house",
+          "label": "8% → pay it off"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "Because the deepest truth is this: the interest rate isn't a weather event that happens to you. It's a dial that constantly transfers wealth between savers and borrowers. Understand which side you're on, and you can position yourself to win at every single level.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "it's a dial, not weather"
+        },
+        {
+          "name": "scale",
+          "label": "know your side"
+        },
+        {
+          "name": "handshake",
+          "label": "win at any level"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "Rates even reach across borders. High rates tend to strengthen a country's currency, because global money flows in chasing the better yield. So when the Fed hikes, the dollar usually rises — making imports cheaper at home, and everyone else's dollar debts heavier abroad.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "high rates…"
+        },
+        {
+          "name": "globe",
+          "label": "…strengthen the currency"
+        },
+        {
+          "name": "chartup",
+          "label": "the dollar rises"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "So the next time the Fed moves rates and the headlines panic, you won't. You'll just ask the only question that matters: which side of the see-saw am I on — and how do I position for the level we're heading into?",
+      "pose": "present",
+      "props": [
+        {
+          "name": "podium",
+          "label": "the Fed moves rates"
+        },
+        {
+          "name": "scale",
+          "label": "which side am I on?"
+        },
+        {
+          "name": "smiley",
+          "label": "position, don't panic"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "If this finally made interest rates make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "percent",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-rate",
+      "name": "Interest rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interest_rate",
+      "quote": "the amount of interest due per period"
+    },
+    {
+      "id": "wiki-ffr",
+      "name": "Federal funds rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federal_funds_rate",
+      "quote": "overnight on an uncollateralized basis"
+    },
+    {
+      "id": "wiki-monetary",
+      "name": "Monetary policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Monetary_policy",
+      "quote": "the policy adopted by the monetary authority of a nation"
+    },
+    {
+      "id": "wiki-real",
+      "name": "Real interest rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+      "quote": "the rate of interest an investor, saver or lender receives"
+    },
+    {
+      "id": "wiki-centralbank",
+      "name": "Central bank (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Central_bank",
+      "quote": "a monopoly on increasing the monetary base"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Interest Rate: 0% to 20% (And Who Wins)",
+    "alts": [
+      "Who Actually Wins at 0% vs 20% Interest Rates",
+      "The Interest Rate See-Saw: Savers vs Borrowers at Every Level"
+    ],
+    "hook": "One number, set by a handful of people in a single room, quietly decides who gets rich and who gets squeezed — your mortgage, your savings, your rent, the whole economy. This is every level of interest rate, by the numbers: 0% (free money, a borrower's paradise, savers crushed), 2–3% (cheap, assets boom), 5% (normal, balanced), 10% (savers win, borrowers suffer, stocks fall), and 20% (the 1980s inflation-killer that caused a recession). We show how the Fed's base rate ripples to everything, the saver-vs-borrower see-saw, the real rate (rate minus inflation) that actually matters, why rates rise and fall, and how to position for whatever level we're at. Fully cited.",
+    "bullets": [
+      "What an interest rate is and how the Fed's base rate ripples out",
+      "0% to 20%: who wins and loses at each level",
+      "The see-saw: savers want high, borrowers want low",
+      "The real rate (rate − inflation) is the only one that matters",
+      "Why rates rise (fight inflation) and fall (fight recession)",
+      "How to position for low-rate vs high-rate worlds"
+    ],
+    "tags": [
+      "interest rates explained",
+      "how interest rates work",
+      "fed funds rate",
+      "who wins from high interest rates",
+      "savers vs borrowers",
+      "real interest rate",
+      "monetary policy",
+      "0 percent rates",
+      "how the fed works",
+      "inflation and interest rates",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#interestrates",
+      "#thefed",
+      "#economics",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "INTEREST RATES",
+      "hookBot": "0% → 20%: WHO WINS?",
+      "napkinNumber": "$0 vs $5,000",
+      "napkinSub": "on $100K, at 0% vs 5%",
+      "deco": "percent"
+    },
+    "chapters": [
+      [
+        "what an interest rate even is",
+        "The dial"
+      ],
+      [
+        "everything ripples outward",
+        "The ripple"
+      ],
+      [
+        "see who wins at each",
+        "The levels"
+      ],
+      [
+        "the level that defined the last decade",
+        "0% — free money"
+      ],
+      [
+        "high-rate territory",
+        "10% — savers' revenge"
+      ],
+      [
+        "the pattern running through every level",
+        "The see-saw"
+      ],
+      [
+        "a hidden rate that matters more",
+        "The real rate"
+      ],
+      [
+        "why do the people in that room move the dial",
+        "Why rates move"
+      ],
+      [
+        "play whatever level we're at",
+        "The playbook"
+      ]
+    ]
+  }
+}

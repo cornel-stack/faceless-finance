@@ -131,6 +131,8 @@ export type DoodleName =
   | "paidstamp" | "confetti"
   // EP070 (every level of stock market crash) additions:
   | "parachute" | "bargaintag"
+  // EP071 (every level of interest rate) additions:
+  | "thermostat" | "brake"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2186,6 +2188,25 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M20 30 L56 30 L84 58 L56 86 L20 58 Z" fill={RED} strokeWidth={SW} />
           <RCircle cx={36} cy={48} d={9} fill={PARCH} strokeWidth={1.6} />
           <text x={56} y={66} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">SALE</text>
+        </>
+      );
+    case "thermostat":
+      // A thermostat — rates as the economy's temperature dial.
+      return (
+        <>
+          <RCircle cx={50} cy={54} d={64} fill={PARCH} strokeWidth={SW} />
+          <RCircle cx={50} cy={54} d={10} fill={RED} strokeWidth={1.6} />
+          <RLine x1={50} y1={54} x2={68} y2={38} strokeWidth={SW} />
+          {[0,1,2,3,4].map(i=> <RLine key={i} x1={50 + 26*Math.cos((i/4)*3.14 - 3.14)} y1={54 + 26*Math.sin((i/4)*3.14 - 3.14)} x2={50 + 30*Math.cos((i/4)*3.14 - 3.14)} y2={54 + 30*Math.sin((i/4)*3.14 - 3.14)} strokeWidth={1.4} />)}
+        </>
+      );
+    case "brake":
+      // A brake pedal / hand brake — rates slowing the economy.
+      return (
+        <>
+          <RLine x1={38} y1={84} x2={54} y2={30} strokeWidth={SW} />
+          <RRect x={44} y={18} w={28} h={16} fill={RED} strokeWidth={SW} />
+          <RCircle cx={38} cy={84} d={10} fill={INK} strokeWidth={1.4} />
         </>
       );
   }

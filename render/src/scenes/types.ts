@@ -204,7 +204,9 @@ export interface StageScene extends Base {
     // EP069 (every level of home ownership) additions:
     | "ownershipstages" | "equitybuilds" | "interestvsprincipal" | "rentvsownjourney" | "paidoffmilestone" | "equityformula"
     // EP070 (every level of stock market crash) additions:
-    | "crashseverityladder" | "recoverytime" | "crashfrequency" | "whattodoincrash";
+    | "crashseverityladder" | "recoverytime" | "crashfrequency" | "whattodoincrash"
+    // EP071 (every level of interest rate) additions:
+    | "interestratelevels" | "saversvsborrowers" | "rateripple" | "realrate";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

@@ -5355,6 +5355,56 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         {rows.map(([sit, act], i) => { const y = 120 + i * 80; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={150} y={y} width={290} height={60} rx={9} fill="#f3cfc8" stroke={ink} strokeWidth={3} /><text x={295} y={y + 37} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{sit}</text><path d={`M445 ${y + 30} l35 0 m0 0 l-12 -8 m12 8 l-12 8`} stroke={ink} strokeWidth={3} fill="none" /><rect x={495} y={y} width={320} height={60} rx={9} fill={green} stroke={ink} strokeWidth={3} /><text x={655} y={y + 37} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{act}</text></g>; })}
       </svg>
     );
+  } else if (m === "interestratelevels") {
+    // Rate levels 0-20% and who wins at each.
+    const rows: [string, string, string][] = [["0%", "free money: borrowers win, savers lose", red], ["2-3%", "cheap: assets boom", "#d98b5f"], ["5%", "normal: savers get real yield", gold], ["10%", "high: savers win, borrowers hurt", "#9cc47f"], ["20%", "extreme: inflation-killer, recession", green]];
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the levels of interest rate</text>
+        {rows.map(([pct, lab, col], i) => { const y = 100 + i * 72; return <g key={i} opacity={interpolate(reveal, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={120} y={y} width={120} height={56} rx={7} fill={col as string} stroke={ink} strokeWidth={4} /><text x={180} y={y + 37} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{pct}</text><text x={260} y={y + 35} fontSize={16} fontWeight={800} fill={ink} fontFamily={sans}>{lab}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "saversvsborrowers") {
+    // A seesaw: rates help one side, hurt the other.
+    const tip = interpolate(frame, [fps * 0.6, fps * 2.2], [-12, 12], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">every rate is a see-saw</text>
+        <g transform={`translate(490 300) rotate(${tip})`}>
+          <RLine x1={-320} y1={0} x2={320} y2={0} stroke={ink} strokeWidth={8} />
+          <g transform="translate(-280 -60)"><circle r={54} fill={green} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>savers</text><text y={20} fontSize={13} fontWeight={800} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>love high</text></g>
+          <g transform="translate(280 -60)"><circle r={54} fill={red} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>borrowers</text><text y={20} fontSize={13} fontWeight={800} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>love low</text></g>
+        </g>
+        <path d="M490 300 L460 380 L520 380 Z" fill={ink} />
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a rate that helps one side always hurts the other</text>
+      </svg>
+    );
+  } else if (m === "rateripple") {
+    // The Fed's base rate ripples to everything.
+    const reveal = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const spokes = ["mortgages", "credit cards", "savings", "car loans", "the economy"];
+    art = (
+      <svg width={VW} height={VH}>
+        <g transform="translate(490 290)"><circle r={60} fill={gold} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the Fed's</text><text y={16} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>base rate</text></g>
+        {spokes.map((s, i) => { const a = (i / spokes.length) * 6.283 - 1.5708; const op = interpolate(reveal, [i * 0.14, i * 0.14 + 0.2], [0, 1], clampBoth); const x = 490 + 250 * Math.cos(a), y = 290 + 170 * Math.sin(a); return <g key={i} opacity={op}><line x1={490} y1={290} x2={x} y2={y} stroke={theme.inkSoft} strokeWidth={2} strokeDasharray="5 5" /><g transform={`translate(${x} ${y})`}><rect x={-72} y={-24} width={144} height={48} rx={9} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text y={6} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{s}</text></g></g>; })}
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">one rate ripples through everything</text>
+      </svg>
+    );
+  } else if (m === "realrate") {
+    // nominal rate − inflation = real rate.
+    const pop = spring({ frame, fps, delay: fps * 1.0, config: { damping: 10 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={120} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the rate that actually matters</text>
+        <g transform="translate(250 290)"><rect x={-100} y={-45} width={200} height={90} rx={10} fill={gold} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>your rate</text><text y={18} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">5%</text></g>
+        <text x={420} y={300} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">−</text>
+        <g transform="translate(560 290)"><rect x={-100} y={-45} width={200} height={90} rx={10} fill={red} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>inflation</text><text y={18} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">3%</text></g>
+        <text x={710} y={300} fontSize={30} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">=</text>
+        <g transform={`translate(830 290) scale(${Math.min(1, pop)})`}><circle r={56} fill={green} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>real</text><text y={20} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">2%</text></g>
+        <text x={VW / 2} y={430} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>if inflation beats your rate, you're quietly losing money</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

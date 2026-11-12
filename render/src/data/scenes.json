@@ -2,842 +2,905 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "The market is falling. But how scared should you actually be? Because there are levels to a market drop — from a tiny dip that's pure noise, to a once-in-a-century collapse that wipes out most of everything. Knowing which level you're in is the difference between panic and opportunity.",
+    "narration": "One number, set by a handful of people in a single room, quietly decides who gets rich and who gets squeezed. It sets your mortgage, your savings, your rent, and the fate of the entire economy. It's the interest rate — and at every level, from zero to twenty percent, there are clear winners and clear losers.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartdown",
-        "label": "the market is falling"
+        "name": "percent",
+        "label": "one number"
       },
       {
-        "name": "rollercoaster",
-        "label": "there are levels to it"
+        "name": "podium",
+        "label": "set in one room"
       },
       {
         "name": "scale",
-        "label": "panic, or opportunity?"
+        "label": "winners & losers"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the fact that should calm you down. In the entire history of the US stock market, every single crash — every correction, every bear market, every catastrophe — has eventually recovered to new all-time highs. The score so far is crashes: zero, the market: every single time.",
-    "text": "100%",
-    "sub": "of US market crashes that eventually recovered to new highs",
-    "icon": "chartup"
+    "narration": "Here's the flip in one example. At a zero-percent rate, a hundred thousand dollars in savings earns you nothing — absolutely nothing. At five percent, that exact same money earns five thousand dollars a year, for doing nothing at all. The rate alone decides whether your cash is treasure or trash.",
+    "text": "$0 vs $5,000",
+    "sub": "a year on $100K saved — at 0% vs 5%",
+    "icon": "piggybank"
   },
   {
-    "id": "s40",
-    "type": "character",
-    "narration": "The numbers behind that are reassuring. On average, a ten-percent correction hits about once a year, and a twenty-percent bear market roughly every six. If you invest for decades, you will live through many of both. They aren't disasters — they're the weather.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "correction ~yearly"
-      },
-      {
-        "name": "bear",
-        "label": "bear ~every 6 yrs"
-      },
-      {
-        "name": "smiley",
-        "label": "it's just the weather"
-      }
-    ]
+    "id": "s42",
+    "type": "callout",
+    "narration": "Now flip it to the borrower. A three-hundred-thousand-dollar mortgage costs about twelve hundred dollars a month at three percent — but nearly two thousand at seven. Same house, same loan. Eight hundred dollars a month, gone, purely because of where the rate sits.",
+    "text": "$1,200 vs $2,000",
+    "sub": "monthly on a $300K mortgage — at 3% vs 7%",
+    "icon": "mortgage"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we're climbing every level of market crash — ten percent, twenty, forty, all the way to eighty — with the real historical examples, how long each took to recover, and exactly what a smart investor should do at every single level.",
+    "narration": "So today we climb every level of interest rate, and reveal exactly who wins and who loses at each one — the saver, the borrower, the homeowner, the whole economy. Because the rate isn't good or bad. It's a dial that quietly transfers wealth from one group to another.",
     "pose": "explain",
     "props": [
       {
-        "name": "chartdown",
-        "label": "−10% to −80%"
+        "name": "gauge",
+        "label": "0% → 20%"
       },
       {
-        "name": "calendar",
-        "label": "recovery times"
+        "name": "handshake",
+        "label": "who wins?"
       },
       {
-        "name": "diamond",
-        "label": "what to do"
+        "name": "scale",
+        "label": "a wealth-transfer dial"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/thisisfine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "my portfolio is down 30%",
-    "memeBottom": "this is fine — historically, it always has been",
-    "narration": "Because the crash itself almost never ruins investors. What ruins them is panicking at the wrong level — selling at the bottom, and missing the recovery that, historically, has always come."
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "'rates went up' = bad news",
+    "memeBottom": "'rates went up' = great for savers, brutal for borrowers",
+    "narration": "Because 'rates went up' isn't simply good or bad news. It's fantastic news if you're a saver, and brutal news if you're a borrower. The very same headline lands completely differently depending on which side you're standing on."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the official ladder of how far markets fall.",
-    "heading": "The Ladder",
-    "kicker": "dip to depression"
+    "narration": "First, what an interest rate even is — and who sets it.",
+    "heading": "The Dial",
+    "kicker": "the price of money"
   },
   {
     "id": "s6",
-    "type": "stage",
-    "narration": "There are five rough levels. A dip — down five percent — is just noise. A correction is down ten. A bear market is down twenty. A full crash is down thirty to fifty. And a depression-level collapse is down fifty to eighty percent or more. Each level is a different beast entirely.",
-    "motif": "crashseverityladder",
-    "caption": "the deeper it falls, the rarer — and the longer to climb back"
-  },
-  {
-    "id": "s41",
-    "type": "character",
-    "narration": "And the levels have different causes. Shallow dips are just mood and sentiment. Bear markets usually ride a real recession. And the deepest collapses need something systemic — a banking crisis, a giant bubble bursting, a shock to the whole economy. Severity tracks the cause.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "brain",
-        "label": "dips = mood"
-      },
-      {
-        "name": "chartdown",
-        "label": "bears = recession"
-      },
-      {
-        "name": "bomb",
-        "label": "depressions = systemic"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "An interest rate is simply the amount of interest due per period, as a proportion of the amount lent, deposited, or borrowed. In plain terms, it's the price of money — the rent you pay to borrow it, or earn to lend it.",
+    "sourceId": "wiki-rate"
   },
   {
     "id": "s7",
-    "type": "title",
-    "narration": "Level one is so common it barely counts.",
-    "heading": "The Dip: -5%",
-    "kicker": "pure noise"
+    "type": "screenshot",
+    "narration": "And the master rate is the federal funds rate — the interest rate at which banks lend reserve balances to each other overnight. The Federal Reserve sets this one number, and everything else is built on top of it.",
+    "sourceId": "wiki-ffr"
   },
   {
     "id": "s8",
-    "type": "character",
-    "narration": "A five-percent dip happens several times a year, every year. It's the market breathing. By the time the news notices, it's often already over. At this level, the only correct move is to completely ignore it — and maybe not even look at your account.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "−5%, several times a year"
-      },
-      {
-        "name": "smiley",
-        "label": "just the market breathing"
-      },
-      {
-        "name": "shield",
-        "label": "ignore it entirely"
-      }
-    ]
+    "type": "stage",
+    "narration": "From that one base rate, everything ripples outward. The Fed nudges its rate, and within weeks your mortgage rate, your credit card rate, your savings rate, and your car loan all move with it. One dial, in one building, quietly re-prices the entire economy.",
+    "motif": "rateripple",
+    "caption": "one rate ripples through everything"
   },
   {
-    "id": "s42",
+    "id": "s43",
     "type": "character",
-    "narration": "A big reason dips feel scary is the media. A one-percent wobble becomes a flashing red 'MARKETS PLUNGE' banner. The financial news profits from your fear and your attention. The calmest investors are very often the ones who simply stopped watching the daily ticker.",
+    "narration": "And rate changes don't hit instantly. They ripple out over many months — old loans keep their rate, new ones reprice first. This lag is exactly why the Fed often seems to act 'too late,' and why its moves can overshoot before anyone actually feels them.",
     "pose": "explain",
     "props": [
       {
-        "name": "newspaper",
-        "label": "'MARKETS PLUNGE!'"
+        "name": "clock",
+        "label": "a months-long lag"
       },
       {
-        "name": "phone",
-        "label": "profits from fear"
+        "name": "mortgage",
+        "label": "old loans keep their rate"
       },
       {
-        "name": "shield",
-        "label": "stop watching daily"
+        "name": "warning",
+        "label": "it can overshoot"
       }
     ]
   },
   {
     "id": "s9",
-    "type": "title",
-    "narration": "Drop twice as far, and it earns an official name.",
-    "heading": "The Correction: -10%",
-    "kicker": "almost yearly"
+    "type": "screenshot",
+    "narration": "Setting that rate is the heart of monetary policy — the policy adopted by the monetary authority of a nation to steer financial conditions toward goals like stable prices and high employment. The rate is the Fed's single most powerful lever.",
+    "sourceId": "wiki-monetary"
   },
   {
     "id": "s10",
-    "type": "screenshot",
-    "narration": "A correction is typically defined as a drop of more than ten percent in the value of a stock index. It sounds scary, but corrections happen on average about once a year — a completely normal, healthy part of how markets work.",
-    "sourceId": "wiki-correction"
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "And corrections actually do a job. They shake out wild speculation, reset silly valuations, and stop bubbles from growing even more dangerous. A market that never corrected would be a far scarier thing. Think of them as the market quietly taking out the trash.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scissors",
-        "label": "shake out froth"
-      },
-      {
-        "name": "chartdown",
-        "label": "reset valuations"
-      },
-      {
-        "name": "smiley",
-        "label": "a healthy reset"
-      }
-    ]
+    "type": "title",
+    "narration": "So let's climb the levels — and see who wins at each.",
+    "heading": "The Levels",
+    "kicker": "0% to 20%"
   },
   {
     "id": "s11",
+    "type": "stage",
+    "narration": "Here's the whole ladder. Zero percent is free money — a borrower's paradise. Two to three is cheap, and assets boom. Five percent is normal and balanced. Ten percent is high — savers rejoice, borrowers suffer. And twenty percent is the extreme inflation-killer that triggers recessions. Each level crowns a different winner.",
+    "motif": "interestratelevels",
+    "caption": "the levels of interest rate"
+  },
+  {
+    "id": "s44",
     "type": "character",
-    "narration": "Historically, a correction takes only around four months to recover. Blink, and it's gone. At this level, the smart investor doesn't flinch — they keep buying on schedule, quietly picking up shares at a small discount while everyone else frets over the headlines.",
+    "narration": "There's even a theoretical 'natural rate' — the level that keeps the economy humming without overheating or stalling. The Fed is always hunting for it, half-blind. Set rates above it to cool things down, below it to heat them up. Nobody knows the exact number.",
     "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "~4 months to recover"
+        "name": "thermostat",
+        "label": "the 'natural rate'"
       },
       {
-        "name": "snowball",
-        "label": "keep buying"
+        "name": "gauge",
+        "label": "neither hot nor cold"
       },
       {
-        "name": "bargaintag",
-        "label": "shares on sale"
+        "name": "magnifier",
+        "label": "nobody knows it exactly"
       }
     ]
   },
   {
     "id": "s12",
     "type": "title",
-    "narration": "Double it again, and we enter bear territory.",
-    "heading": "The Bear Market: -20%",
-    "kicker": "every few years"
+    "narration": "Start at the bottom — the level that defined the last decade.",
+    "heading": "0% — Free Money",
+    "kicker": "borrowers' paradise"
   },
   {
     "id": "s13",
-    "type": "screenshot",
-    "narration": "A bear market — a down leg in the broader market trend, a perceived tendency of the financial markets to move in a particular direction — is officially a drop of twenty percent or more. This is where real fear sets in, and the headlines turn genuinely grim.",
-    "sourceId": "wiki-trend"
-  },
-  {
-    "id": "s44",
     "type": "character",
-    "narration": "Here's the quietly hopeful asymmetry. Bull markets — the up periods — last far longer and climb far higher than bear markets fall. On average, bulls run for years; bears last mere months. Over time, the ups simply dwarf the downs. The house, for once, is you.",
+    "narration": "At near-zero rates, money is almost free to borrow. It's a paradise for borrowers, businesses, and especially owners of assets. Cheap loans flood in, so people pile into houses and stocks, and their prices soar. The 2010s ran on exactly this fuel.",
     "pose": "explain",
     "props": [
       {
-        "name": "bull",
-        "label": "bulls run for years"
-      },
-      {
-        "name": "bear",
-        "label": "bears last months"
+        "name": "house",
+        "label": "cheap to borrow"
       },
       {
         "name": "chartup",
-        "label": "ups dwarf downs"
-      }
-    ]
-  },
-  {
-    "id": "s14",
-    "type": "character",
-    "narration": "Bear markets arrive roughly every six years, and on average take around two years to fully recover. The 2022 market, down about twenty-five percent, was a classic bear. Painful — but historically routine, and always, so far, temporary.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bear",
-        "label": "−20%+, every ~6 yrs"
+        "label": "assets soar"
       },
       {
-        "name": "calendar",
-        "label": "~2 yrs to recover"
-      },
-      {
-        "name": "chartdown",
-        "label": "2022: −25%"
+        "name": "balloon",
+        "label": "the 2010s boom"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "And here's a trick of the mind: bear markets feel far longer than they actually are. The pain of watching your money fall stretches time. In reality, the average bear is over in about a year — but living through it can feel like a solid decade of dread.",
+    "narration": "Rates can even go below zero. In parts of Europe and Japan, central banks pushed rates negative — literally charging banks to hold cash, trying to force money out the door. Savers were paid to borrow and penalized to save. The dial can get far stranger than you'd think.",
     "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "feels like a decade"
+        "name": "percent",
+        "label": "negative rates!"
       },
       {
-        "name": "bear",
-        "label": "~1 year in reality"
+        "name": "globe",
+        "label": "Europe & Japan"
       },
       {
-        "name": "brain",
-        "label": "pain stretches time"
+        "name": "warning",
+        "label": "paid to borrow"
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "type": "character",
+    "narration": "But someone always loses. At zero percent, savers are crushed — their cash earns nothing, slowly losing value to inflation. Zero rates quietly punish the cautious and reward the bold and the borrowed. They also, dangerously, inflate the very bubbles that later burst.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "savers earn nothing"
+      },
+      {
+        "name": "grocerybag",
+        "label": "inflation eats cash"
+      },
+      {
+        "name": "warning",
+        "label": "it inflates bubbles"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "Economists have a blunt name for crushing savers with low rates: financial repression. It quietly transfers wealth from cautious savers to big borrowers — chiefly, the government. Keep rates below inflation long enough, and the saver silently funds everyone else's debt.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "savers pay"
+      },
+      {
+        "name": "capitol",
+        "label": "govt benefits"
+      },
+      {
+        "name": "scale",
+        "label": "a silent transfer"
       }
     ]
   },
   {
     "id": "s15",
     "type": "title",
-    "narration": "Now we reach the level that makes history books.",
-    "heading": "The Crash: -30% to -50%",
-    "kicker": "the big ones"
+    "narration": "Nudge rates up to the comfortable middle.",
+    "heading": "5% — Normal",
+    "kicker": "the balanced zone"
   },
   {
     "id": "s16",
-    "type": "screenshot",
-    "narration": "This is a true stock market crash — a sudden, dramatic decline of stock prices across a major cross-section of the market. These are the ones that get names, and that people remember for the rest of their lives.",
-    "sourceId": "wiki-crash"
-  },
-  {
-    "id": "s46",
     "type": "character",
-    "narration": "And don't believe anyone who claims they can time these. Crashes are, almost by definition, a surprise — if everyone saw them coming, they'd already have happened. Even the pros fail to predict them reliably. Time IN the market beats timing the market, every single time.",
+    "narration": "Around five percent is historically normal and healthy. Borrowing costs real money, so people are more careful. But savers finally earn a genuine return again — a safe five percent on cash. It's the balanced zone, where neither side is punished and the economy can run steadily.",
     "pose": "explain",
     "props": [
       {
-        "name": "magnifier",
-        "label": "nobody predicts them"
+        "name": "scale",
+        "label": "balanced"
       },
       {
-        "name": "warning",
-        "label": "even the pros fail"
+        "name": "piggybank",
+        "label": "savers earn ~5%"
       },
       {
-        "name": "clock",
-        "label": "time IN > timing"
+        "name": "handshake",
+        "label": "neither side crushed"
+      }
+    ]
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "narration": "And five percent isn't random — it's roughly the historical norm. Over the last century, rates have averaged somewhere around four to five percent. The near-zero decade we just lived through was the true anomaly — not the higher rates that followed it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "~5% for a century"
+      },
+      {
+        "name": "chartdown",
+        "label": "0% was the anomaly"
+      },
+      {
+        "name": "scale",
+        "label": "back to normal"
       }
     ]
   },
   {
     "id": "s17",
-    "type": "stage",
-    "narration": "The modern hall of fame is brutal. Black Monday, 1987. The dot-com crash, down about forty-nine percent. The 2008 meltdown, down fifty-seven. The COVID crash of 2020, down thirty-four in mere weeks. Each one felt, at the time, like the end of the financial world.",
-    "motif": "crashgauntlet",
-    "caption": "every one was a buying opportunity"
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "Look closer, and each great crash had its own villain. 1987 was computers and panic. 2000 was the internet bubble. 2008 was housing and debt. 2020 was a pandemic. Totally different triggers — but the exact same pattern: a terrifying drop, then a full recovery.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "stockscreen",
-        "label": "1987: computers"
-      },
-      {
-        "name": "dialup",
-        "label": "2000: dot-com"
-      },
-      {
-        "name": "house",
-        "label": "2008: housing"
-      }
-    ]
+    "type": "title",
+    "narration": "Now push into high-rate territory.",
+    "heading": "10% — High",
+    "kicker": "savers' revenge"
   },
   {
     "id": "s18",
-    "type": "screenshot",
-    "narration": "Take the worst modern one: the 2008 crash, part of the Great Recession — a period of contraction in economies around the world. The market lost well over half its value, and it genuinely felt like the system itself might collapse.",
-    "sourceId": "wiki-recession"
-  },
-  {
-    "id": "s19",
     "type": "character",
-    "narration": "And yet. A crash of this size has historically taken around four years to recover — and then it kept climbing to spectacular new highs. The investors who held through 2008, and especially those who kept buying, saw their money more than quadruple in the decade that followed.",
+    "narration": "At ten percent, the whole board flips. Savers are suddenly winning big — cash and bonds pay beautifully. But borrowers are in agony: mortgages become unaffordable, credit cards punishing. And stocks and housing usually fall, as all that expensive money drains out of risky assets.",
     "pose": "explain",
     "props": [
       {
-        "name": "clock",
-        "label": "~4 years to recover"
+        "name": "piggybank",
+        "label": "savers win big"
       },
       {
-        "name": "chartup",
-        "label": "then new highs"
+        "name": "mortgage",
+        "label": "borrowers in agony"
       },
       {
-        "name": "trophy",
-        "label": "holders 4×'d their money"
+        "name": "chartdown",
+        "label": "stocks & housing fall"
       }
     ]
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "This is exactly where the legends feed. In the depths of 2008, while the whole world fled, Warren Buffett urged people to be greedy when others are fearful — and bought aggressively. The most terrifying bottoms are precisely when the greatest fortunes get quietly made.",
+    "narration": "High rates also hammer existing bonds, through a see-saw most people miss. When new bonds pay more, old low-paying bonds are worth less — so their price falls. It's why 2022's rate spike hurt 'safe' bonds almost as badly as stocks.",
     "pose": "explain",
     "props": [
       {
-        "name": "trophy",
-        "label": "greedy when fearful"
+        "name": "bond",
+        "label": "rates up…"
       },
       {
         "name": "chartdown",
-        "label": "buy the bottom"
+        "label": "…old bond prices down"
       },
       {
-        "name": "moneytree",
-        "label": "fortunes made here"
+        "name": "scale",
+        "label": "the bond see-saw"
       }
     ]
   },
   {
-    "id": "s20",
+    "id": "s19",
     "type": "title",
-    "narration": "And then there's the final level — the one that haunts every investor.",
-    "heading": "The Depression: -50% to -80%+",
-    "kicker": "the nightmare"
+    "narration": "And at the extreme end — the nuclear option.",
+    "heading": "20% — Extreme",
+    "kicker": "the inflation killer"
   },
   {
-    "id": "s21",
-    "type": "screenshot",
-    "narration": "The ultimate catastrophe is a depression-level collapse, like the Great Depression — a severe global economic downturn from 1929 to 1939. At its worst, the US stock market fell an almost unimaginable eighty-nine percent.",
-    "sourceId": "wiki-depression"
-  },
-  {
-    "id": "s22",
+    "id": "s20",
     "type": "character",
-    "narration": "Eighty-nine percent. A million-dollar portfolio would have shrunk to a hundred and ten thousand. This is the level that genuinely destroys lives — and it took the market around twenty-five years to claw all the way back to its old nominal high. The one level that truly tests everything.",
+    "narration": "Twenty percent is the emergency brake. In the early 1980s, the Fed cranked rates this high to strangle runaway inflation. It worked — but it also caused a brutal recession. Rates this extreme are a last resort, deliberately crashing the economy to kill something even worse.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
+        "name": "brake",
+        "label": "the emergency brake"
+      },
+      {
+        "name": "podium",
+        "label": "1980s: kill inflation"
+      },
+      {
         "name": "chartdown",
-        "label": "−89% (1929-32)"
-      },
-      {
-        "name": "warning",
-        "label": "$1M → $110K"
-      },
-      {
-        "name": "calendar",
-        "label": "~25 yrs to recover"
+        "label": "caused a recession"
       }
     ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "Why was 1929 so uniquely catastrophic? A perfect storm: reckless borrowing to buy stocks, no safety nets, waves of bank failures, and policy blunders that choked the economy. It wasn't just a crash — it was a total system collapse, with nothing there to catch the fall.",
+    "narration": "Was the 1980s pain worth it? Brutally, yes. Those twenty-percent rates finally broke a decade of runaway inflation — and set up a whole generation of stable growth that followed. Sometimes the cure is a short, sharp shock nobody enjoys, but everybody needed.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "warning",
-        "label": "reckless margin debt"
-      },
-      {
-        "name": "bank",
-        "label": "waves of bank failures"
+        "name": "brake",
+        "label": "20% rates"
       },
       {
         "name": "chartdown",
-        "label": "a system collapse"
+        "label": "a harsh recession"
+      },
+      {
+        "name": "chartup",
+        "label": "then stable growth"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "Notice the pattern running through every level.",
+    "heading": "The See-Saw",
+    "kicker": "one wins, one loses"
+  },
+  {
+    "id": "s22",
+    "type": "stage",
+    "narration": "Every interest rate is a see-saw between two groups. Savers want rates high, so their cash earns more. Borrowers want rates low, so their debt costs less. The rate can't please both. Whenever it moves, it quietly transfers wealth from one side of the board to the other.",
+    "motif": "saversvsborrowers",
+    "caption": "a rate that helps one side always hurts the other"
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "And here's who quietly loves low rates most of all: the government. It's the biggest borrower on Earth, with trillions in debt. Every cut saves it a fortune in interest; every hike costs it dearly. The very entity setting the rate has a huge stake in keeping it low.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "capitol",
+        "label": "the biggest borrower"
+      },
+      {
+        "name": "percent",
+        "label": "low rates save $trillions"
+      },
+      {
+        "name": "warning",
+        "label": "a built-in bias"
       }
     ]
   },
   {
     "id": "s23",
     "type": "character",
-    "narration": "But even here, there's a crucial nerve-saving footnote. If you had kept reinvesting dividends and buying through the 1930s, you actually recovered far faster than that scary twenty-five-year headline suggests — because you were buying the whole market at once-in-a-century prices.",
+    "narration": "So the key question isn't 'are rates good or bad?' It's 'which side of the see-saw am I on?' If you're swimming in savings, you cheer high rates. If you're carrying a mortgage and loans, you pray for low ones. Your own balance sheet decides who you root for.",
     "pose": "explain",
     "props": [
       {
-        "name": "snowball",
-        "label": "kept buying the bottom"
+        "name": "piggybank",
+        "label": "lots of savings?"
       },
       {
-        "name": "bargaintag",
-        "label": "century-low prices"
+        "name": "creditcard",
+        "label": "lots of debt?"
       },
       {
-        "name": "chartup",
-        "label": "recovered far faster"
+        "name": "scale",
+        "label": "pick your side"
       }
     ]
   },
   {
-    "id": "s50",
+    "id": "s51",
     "type": "character",
-    "narration": "The good news is we built guardrails from that disaster. Circuit breakers now halt panicked trading. Bank deposits are insured. And central banks act fast to stop collapses from spiraling. A full 1929-style depression is far less likely today — though never, ever impossible.",
+    "narration": "There's a rough age pattern, too. The young, with mortgages and loans, are usually net borrowers — they quietly want low rates. The old, living off savings and bonds, are net savers — they want high ones. Interest rates gently pit the generations against each other.",
     "pose": "explain",
     "props": [
       {
-        "name": "barrier",
-        "label": "circuit breakers"
+        "name": "baby",
+        "label": "young = borrowers"
       },
       {
-        "name": "shield",
-        "label": "insured deposits"
+        "name": "retiree",
+        "label": "old = savers"
       },
       {
-        "name": "capitol",
-        "label": "central banks act"
+        "name": "scale",
+        "label": "generations divided"
       }
     ]
   },
   {
     "id": "s24",
     "type": "title",
-    "narration": "So let's put the whole ladder together — the key insight is in the recovery.",
-    "heading": "What Happened Next",
-    "kicker": "it always came back"
+    "narration": "But there's a hidden rate that matters more than the one on the sign.",
+    "heading": "The Real Rate",
+    "kicker": "rate minus inflation"
   },
   {
     "id": "s25",
-    "type": "stage",
-    "narration": "Here's the pattern across every level. A correction recovers in months. A bear market, a couple of years. A full crash, around four. Even a depression eventually heals. The deeper the fall, the longer the climb — but the direction, given enough time, has always been back up.",
-    "motif": "recoverytime",
-    "caption": "but every single one, eventually, fully recovered"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "And those scary recovery times assume you only watch the price. If you keep reinvesting dividends the whole way through, you recover meaningfully faster — because every payout is quietly buying you more shares at crushed, discounted prices. Dividends shorten the pain.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "snowball",
-        "label": "reinvest dividends"
-      },
-      {
-        "name": "bargaintag",
-        "label": "buy at the bottom"
-      },
-      {
-        "name": "clock",
-        "label": "recover faster"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "That's the real interest rate — the rate of interest an investor, saver or lender actually receives after allowing for inflation. It's the only rate that tells you whether your money is truly growing, or quietly shrinking.",
+    "sourceId": "wiki-real"
   },
   {
     "id": "s26",
     "type": "stage",
-    "narration": "And notice the frequency. Small dips and corrections happen constantly — practically every year. Real bear markets come every several years. But a true, life-altering depression has struck only about once a century. The scary levels are, thankfully, the rarest.",
-    "motif": "crashfrequency",
-    "caption": "small dips are constant; true catastrophes are rare"
+    "narration": "The math is simple but brutal. Take your rate, and subtract inflation. Earning five percent in your savings feels great — but if inflation is three percent, your real gain is only two. And if inflation is six, that 'nice' five-percent rate is actually losing you money every year.",
+    "motif": "realrate",
+    "caption": "if inflation beats your rate, you're quietly losing money"
   },
   {
     "id": "s52",
     "type": "character",
-    "narration": "So plan for it like weather you know is coming. Over a thirty-year investing life, expect to live through maybe five bear markets and a couple of real crashes. They are not a question of 'if,' but of 'when.' Build your whole plan assuming they will absolutely happen.",
-    "pose": "present",
+    "narration": "This is the government's favorite quiet trick. Keep rates below inflation — a negative real rate — and the real value of its massive debt silently shrinks every single year. Savers unknowingly foot the bill. It's how nations have always, gently, inflated their debts away.",
+    "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "calendar",
-        "label": "~5 bears in 30 yrs"
+        "name": "percent",
+        "label": "rate below inflation"
       },
       {
-        "name": "rollercoaster",
-        "label": "expect the drops"
+        "name": "capitol",
+        "label": "debt shrinks in real terms"
       },
       {
-        "name": "shield",
-        "label": "plan for 'when'"
+        "name": "grocerybag",
+        "label": "savers pay for it"
       }
     ]
   },
   {
     "id": "s27",
-    "type": "title",
-    "narration": "Which means the real danger was never the crash itself.",
-    "heading": "The Real Danger",
-    "kicker": "it's you"
-  },
-  {
-    "id": "s28",
-    "type": "stage",
-    "narration": "At every level, the crash doesn't ruin you — selling does. Panic at the bottom, and you turn a temporary paper loss into a permanent real one, then watch the recovery happen without you. The investor who simply holds turns every one of these crashes into just another dip on a long climb up.",
-    "motif": "panicvshold",
-    "caption": "the loss was only real for the one who sold"
+    "type": "character",
+    "narration": "This is the trick that fools savers at zero rates. Earning nothing while inflation runs at five percent means you're losing five percent of your purchasing power a year — a deeply negative real rate. The number on the account said zero. Reality said you were quietly going backwards.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "percent",
+        "label": "0% rate"
+      },
+      {
+        "name": "grocerybag",
+        "label": "−5% to inflation"
+      },
+      {
+        "name": "chartdown",
+        "label": "going backwards"
+      }
+    ]
   },
   {
     "id": "s53",
-    "type": "callout",
-    "narration": "There's a brutal statistic for the panic-seller. The average investor badly underperforms the very funds they own — often by several percent a year — purely because they buy high in euphoria and sell low in fear. Your own emotions are the single biggest crash risk you face.",
-    "text": "−3%/yr",
-    "sub": "how much the average investor lags their own funds",
-    "icon": "brain"
+    "type": "character",
+    "narration": "Savers do have a shield: inflation-protected bonds, like I-bonds and TIPS. Their payout rises right along with inflation, guaranteeing a positive real return. When real rates go negative, these are one of the few places a cautious saver can hide and not lose ground.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "shield",
+        "label": "inflation-protected bonds"
+      },
+      {
+        "name": "percent",
+        "label": "payout tracks inflation"
+      },
+      {
+        "name": "piggybank",
+        "label": "a saver's hideout"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "title",
+    "narration": "So why do the people in that room move the dial at all?",
+    "heading": "Why Rates Move",
+    "kicker": "fire and ice"
   },
   {
     "id": "s29",
     "type": "character",
-    "narration": "And here's the cruel trap. The market's best days cluster right next to its worst — deep inside the crashes. So the panic-seller, fleeing the storm, almost always misses the explosive rebound. Trying to dodge the crash is how you miss the recovery.",
+    "narration": "It comes down to two enemies. When inflation runs too hot, the Fed raises rates to cool the economy down — making money expensive to slow spending. When recession looms, it slashes rates to heat things up — making money cheap to spark borrowing. The rate is the economy's thermostat.",
     "pose": "explain",
     "props": [
       {
+        "name": "thermostat",
+        "label": "the economy's thermostat"
+      },
+      {
         "name": "chartup",
-        "label": "best days hide in crashes"
+        "label": "inflation hot → raise"
       },
       {
-        "name": "warning",
-        "label": "sell = miss the bounce"
-      },
-      {
-        "name": "rollercoaster",
-        "label": "stay on the ride"
+        "name": "chartdown",
+        "label": "recession → cut"
       }
     ]
   },
   {
     "id": "s54",
-    "type": "callout",
-    "narration": "And here's the cost of fleeing, in one number. Stay fully invested across the decades, and you capture the full return. Miss just the ten best days — which almost always land inside the crashes — and your final result can be cut roughly in half.",
-    "text": "−50%",
-    "sub": "your return if you miss the 10 best days",
-    "icon": "chartup"
-  },
-  {
-    "id": "s30",
-    "type": "stage",
-    "narration": "Zoom all the way out, and every crash in history — every one of these terrifying drops — is just a small wobble on a line that marches relentlessly upward over the decades. From a distance, the catastrophes shrink to tiny notches on an extraordinary climb.",
-    "motif": "longclimb",
-    "caption": "…if you survived every crash on the way up"
-  },
-  {
-    "id": "s31",
-    "type": "title",
-    "narration": "So here's exactly what to do at each level.",
-    "heading": "The Playbook",
-    "kicker": "by severity"
-  },
-  {
-    "id": "s32",
-    "type": "stage",
-    "narration": "Match your action to the level. A dip or correction? Ignore it — it's noise. A bear market? Just keep buying on your normal schedule. A full crash? Buy even more if you can, and whatever you do, never sell. And in any crash, the one unbreakable rule: do not panic-sell.",
-    "motif": "whattodoincrash",
-    "caption": "what to actually do"
-  },
-  {
-    "id": "s55",
     "type": "character",
-    "narration": "One disciplined trick turns crashes to your advantage automatically: rebalancing. When stocks crash, you sell a little of what held up — your bonds — and buy more cheap stocks to restore your target mix. It forces you to buy low and sell high, with zero emotion required.",
-    "pose": "present",
+    "narration": "The Fed is juggling two goals at once — its 'dual mandate': stable prices and maximum employment. The trouble is they often conflict. Fighting inflation with high rates can throw people out of work. Every rate decision is a tightrope walk between the two.",
+    "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "rebalance"
+        "label": "stable prices…"
       },
       {
-        "name": "chartdown",
-        "label": "buy the cheap stocks"
+        "name": "briefcase",
+        "label": "…+ jobs"
       },
       {
-        "name": "gear",
-        "label": "buy low, automatically"
+        "name": "warning",
+        "label": "they often conflict"
       }
     ]
   },
   {
-    "id": "s33",
+    "id": "s30",
+    "type": "stage",
+    "narration": "Picture it as a giant lever in the Fed's hands. Pull it up, and borrowing gets expensive, the economy slows, and inflation cools. Push it down, and money floods in, spending surges, and growth heats up. The whole economy swings on this one lever.",
+    "motif": "ratelever",
+    "caption": "the lever that moves the whole economy"
+  },
+  {
+    "id": "s55",
     "type": "character",
-    "narration": "The single best defense is built before the crash ever comes: an emergency fund and the right mindset. If you never have to sell your investments to pay the bills, a crash can never actually hurt you. It becomes a spectator sport — or a shopping spree.",
-    "pose": "present",
+    "narration": "And the Fed is less all-powerful than it looks. It directly sets only the short-term rate. Long-term rates — like your thirty-year mortgage — are largely set by the bond market's bets on the future. The Fed steers the ship, but it doesn't fully control it.",
+    "pose": "explain",
     "props": [
       {
-        "name": "shield",
-        "label": "an emergency fund"
+        "name": "podium",
+        "label": "Fed sets short rates"
       },
       {
-        "name": "diamond",
-        "label": "never a forced seller"
+        "name": "bond",
+        "label": "market sets long rates"
       },
       {
-        "name": "bargaintag",
-        "label": "a crash becomes a sale"
+        "name": "scale",
+        "label": "it steers, not controls"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "narration": "And this is why the Fed can never win for everyone. Every move helps one group and hurts another. Raise rates to protect savers and tame inflation, and you punish borrowers and risk a recession. There is no setting that makes everybody happy — only trade-offs.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "every move = a trade-off"
+      },
+      {
+        "name": "scale",
+        "label": "someone always loses"
+      },
+      {
+        "name": "podium",
+        "label": "no perfect rate"
       }
     ]
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "This is why a cushion of bonds or cash matters, especially near retirement. If a crash hits, you spend from the safe money and leave your stocks completely alone to recover. The forced seller gets crushed; the cushioned investor simply waits out the storm in comfort.",
-    "pose": "present",
+    "narration": "That lag creates the Fed's recurring nightmare: overshooting. Because rate changes take a year or more to fully bite, the Fed is always driving while staring in the rear-view mirror. Hike too hard, and you only discover the recession you caused many months later.",
+    "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "shield",
-        "label": "bonds/cash cushion"
+        "name": "clock",
+        "label": "a 1-year+ lag"
       },
       {
-        "name": "bear",
-        "label": "spend the safe money"
+        "name": "brake",
+        "label": "hikes too hard"
       },
       {
-        "name": "diamond",
-        "label": "wait out the storm"
+        "name": "chartdown",
+        "label": "recession, found late"
       }
     ]
   },
   {
-    "id": "s34",
+    "id": "s32",
     "type": "character",
-    "narration": "And flip your entire mindset about falling markets. For a long-term investor still buying, a crash isn't a disaster — it's the single best thing that can happen. It's a rare chance to buy years of future growth at a steep, temporary discount. Crashes build fortunes for the calm.",
+    "narration": "Underpinning it all is the central bank's unique power. A central bank holds a monopoly on increasing the monetary base — it alone can create the base money and set its price. No other institution on Earth has a dial that moves so much, so quietly.",
     "pose": "explain",
     "props": [
       {
-        "name": "bargaintag",
-        "label": "a crash = a sale"
+        "name": "bank",
+        "label": "the central bank"
       },
       {
-        "name": "parachute",
-        "label": "the calm survive"
+        "name": "percent",
+        "label": "sets the price of money"
       },
       {
-        "name": "moneytree",
-        "label": "it builds fortunes"
+        "name": "globe",
+        "label": "moves everything"
+      }
+    ]
+  },
+  {
+    "id": "s33",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "$100K in savings earns per year, by rate ($)",
+    "unit": "$",
+    "narration": "Here's what the rate does to a saver, in dollars. At zero percent, a hundred thousand earns nothing. At five, five thousand a year. At ten, ten thousand. At twenty, twenty thousand — all for the same money, just sitting there. The rate alone sets the reward for saving.",
+    "data": [
+      {
+        "label": "0%",
+        "value": 0
+      },
+      {
+        "label": "5%",
+        "value": 5000
+      },
+      {
+        "label": "10%",
+        "value": 10000
+      },
+      {
+        "label": "20%",
+        "value": 20000
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s34",
+    "type": "title",
+    "narration": "So how do you actually play whatever level we're at?",
+    "heading": "The Playbook",
+    "kicker": "position for the rate"
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "When rates are low, lean into borrowing wisely and owning assets. Lock in a cheap, long mortgage. Buy appreciating things while money is cheap. Low rates are the time to borrow sensibly and own — because the system is quietly paying you to.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "house",
+        "label": "low rates: lock cheap debt"
+      },
+      {
+        "name": "chartup",
+        "label": "own assets"
+      },
+      {
+        "name": "percent",
+        "label": "borrow sensibly"
       }
     ]
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "And the simplest winning move needs no courage at all: dollar-cost averaging. Keep investing the same amount every month, automatically, straight through every crash. You'll buy more shares when they're cheap, fewer when they're dear, and never once have to make a scary decision.",
+    "narration": "When rates fall, a specific window opens: refinancing. If you locked a mortgage at seven percent and rates drop to four, you can refinance and slash your payment overnight. Smart borrowers watch for these windows and pounce — it's quietly free money for the attentive.",
     "pose": "present",
     "props": [
       {
-        "name": "gear",
-        "label": "same amount monthly"
+        "name": "house",
+        "label": "rates drop"
       },
       {
-        "name": "snowball",
-        "label": "buy more when cheap"
+        "name": "percent",
+        "label": "refinance lower"
       },
       {
-        "name": "smiley",
-        "label": "no scary decisions"
+        "name": "moneybag",
+        "label": "slash the payment"
       }
     ]
   },
   {
-    "id": "s35",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Real crashes & recovery time (years)",
-    "unit": "yrs",
-    "narration": "Here's history in one chart. The 2020 crash recovered in under a year. The 2008 crash, about four. The dot-com crash, roughly six. And the Great Depression, around twenty-five. Deeper falls take longer — but every bar on this chart ends in a full recovery.",
-    "data": [
-      {
-        "label": "2020 (-34%)",
-        "value": 1
-      },
-      {
-        "label": "2008 (-57%)",
-        "value": 4
-      },
-      {
-        "label": "dot-com",
-        "value": 6
-      },
-      {
-        "label": "1929 (-89%)",
-        "value": 25
-      }
-    ],
-    "highlight": 3
-  },
-  {
     "id": "s36",
     "type": "character",
-    "narration": "So the next time the market tumbles and the headlines scream, don't ask 'should I sell?' Ask 'which level is this?' A dip, a correction, a bear, a crash — each one has a name, a history, and a track record of recovery. Knowing the level turns raw fear into a calm plan.",
+    "narration": "When rates are high, flip your strategy. Grab those juicy savings and bond yields while they last. Be very cautious with new debt. And remember that high rates often knock down stocks and housing — which, for the patient buyer with cash, quietly creates a rare sale.",
     "pose": "present",
     "props": [
       {
-        "name": "newspaper",
-        "label": "headlines scream"
+        "name": "piggybank",
+        "label": "high rates: lock in yields"
       },
       {
-        "name": "scale",
-        "label": "'which level is this?'"
+        "name": "scissors",
+        "label": "avoid new debt"
       },
       {
-        "name": "diamond",
-        "label": "fear → a plan"
+        "name": "bargaintag",
+        "label": "assets on sale"
       }
     ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "Here's a mindset that flips crashes entirely. The deeper the market falls, the bigger the future discount you're being offered. So the correct emotional response to a bigger crash isn't more fear — it's more interest. The best sales, after all, are the ones nobody wants to shop.",
-    "pose": "explain",
+    "narration": "And when rates are high, lock them in while they last. A one-year savings rate can vanish in months, but a multi-year CD or a longer bond freezes today's juicy yield for years. High rates are temporary — the savvy saver nails them down before they fall.",
+    "pose": "present",
     "props": [
       {
-        "name": "bargaintag",
-        "label": "deeper = bigger discount"
+        "name": "vault",
+        "label": "lock in a CD/bond"
       },
       {
-        "name": "chartdown",
-        "label": "more fall, more interest"
+        "name": "clock",
+        "label": "before rates drop"
       },
       {
-        "name": "moneytree",
-        "label": "the best sale"
+        "name": "piggybank",
+        "label": "freeze the yield"
       }
     ]
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "Because the whole history of the market delivers one stubborn message. Crashes are not the exception — they're the toll you pay for the long-term returns. They are terrifying, temporary, and, so far, always followed by new highs. Survive them, and time quietly does the rest.",
-    "pose": "explain",
+    "narration": "And always judge by the real rate, not the headline. A high rate with even higher inflation is a trap for savers. A modest rate with low inflation can be genuinely rewarding. Subtract inflation first — that's the only number that tells you the truth.",
+    "pose": "present",
     "props": [
       {
-        "name": "rollercoaster",
-        "label": "crashes are the toll"
+        "name": "percent",
+        "label": "rate − inflation"
       },
       {
-        "name": "chartup",
-        "label": "always new highs after"
+        "name": "scale",
+        "label": "judge the REAL rate"
       },
       {
-        "name": "diamond",
-        "label": "just survive them"
+        "name": "smiley",
+        "label": "the only honest number"
       }
     ]
   },
   {
     "id": "s59",
     "type": "character",
-    "narration": "So make peace with the ride. That gut-churning volatility isn't a flaw in the stock market — it's the admission price for its extraordinary long-term returns. If stocks never crashed, they'd be as safe, and as low-paying, as cash. The fear is literally what you get paid for.",
-    "pose": "explain",
+    "narration": "And rates flip the classic 'pay off debt or invest?' question. At two percent, keep the cheap mortgage and invest the difference instead. At eight percent, paying off that guaranteed eight-percent debt is often the better, safer return. The right answer changes with the rate.",
+    "pose": "present",
     "props": [
       {
-        "name": "rollercoaster",
-        "label": "volatility = the price"
+        "name": "scale",
+        "label": "pay off or invest?"
       },
       {
         "name": "percent",
-        "label": "paid for the fear"
+        "label": "2% → invest"
       },
       {
-        "name": "chartup",
-        "label": "it's a feature"
+        "name": "house",
+        "label": "8% → pay it off"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "If this calmed your nerves about the next crash, hit subscribe — and tell me which number you want me to pull apart next.",
-    "pose": "celebrate",
-    "expression": "happy",
+    "narration": "Because the deepest truth is this: the interest rate isn't a weather event that happens to you. It's a dial that constantly transfers wealth between savers and borrowers. Understand which side you're on, and you can position yourself to win at every single level.",
+    "pose": "explain",
     "props": [
       {
-        "name": "diamond",
-        "label": "which number next?"
+        "name": "gauge",
+        "label": "it's a dial, not weather"
+      },
+      {
+        "name": "scale",
+        "label": "know your side"
+      },
+      {
+        "name": "handshake",
+        "label": "win at any level"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "Rates even reach across borders. High rates tend to strengthen a country's currency, because global money flows in chasing the better yield. So when the Fed hikes, the dollar usually rises — making imports cheaper at home, and everyone else's dollar debts heavier abroad.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "percent",
+        "label": "high rates…"
+      },
+      {
+        "name": "globe",
+        "label": "…strengthen the currency"
+      },
+      {
+        "name": "chartup",
+        "label": "the dollar rises"
       }
     ]
   },
   {
     "id": "s39",
+    "type": "character",
+    "narration": "So the next time the Fed moves rates and the headlines panic, you won't. You'll just ask the only question that matters: which side of the see-saw am I on — and how do I position for the level we're heading into?",
+    "pose": "present",
+    "props": [
+      {
+        "name": "podium",
+        "label": "the Fed moves rates"
+      },
+      {
+        "name": "scale",
+        "label": "which side am I on?"
+      },
+      {
+        "name": "smiley",
+        "label": "position, don't panic"
+      }
+    ]
+  },
+  {
+    "id": "s40",
+    "type": "character",
+    "narration": "If this finally made interest rates make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "pose": "celebrate",
+    "expression": "happy",
+    "props": [
+      {
+        "name": "percent",
+        "label": "which number next?"
+      }
+    ]
+  },
+  {
+    "id": "s41",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",
