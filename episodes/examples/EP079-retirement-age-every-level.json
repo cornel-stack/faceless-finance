@@ -1,0 +1,923 @@
+{
+  "id": "EP079",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Retirement Age: 40 to 70",
+  "slug": "every-level-of-retirement-age",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP079 — Every Level series (row 69). Retirement-age dial 40/50/55/62/67/70 — what each REQUIRES (nest egg via 25x/4%) and GIVES (free years vs more savings + bigger SS + compounding). Themes: the trade-off (earlier = bigger pile + lost compounding), Social Security claiming (62 ~-30%, 70 ~+24%), the pre-Medicare healthcare gap, sequence+longevity risk, 'one more year' syndrome. 6 new motifs (retireageladder/eggneededbyage/ssclaimingage/healthcaregap/oneyearsyndrome/yearsfreevsyearssaving) + doodles rockingchair/goldwatch. Distinct from EP055 (how much to retire at 40/50/55/65). Sources: Retirement age/Social Security (US)/FIRE movement/Trinity study/Medicare (US). Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "There's a single dial that decides the entire shape of your retirement — and it's not how much you make. It's the age you stop. Retire at forty, and you get decades of freedom but need a fortune. Retire at seventy, and the money is easy but the years are fewer. Today we climb every level of retirement age.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "the age you stop"
+        },
+        {
+          "name": "hammock",
+          "label": "40: freedom, needs a fortune"
+        },
+        {
+          "name": "goldwatch",
+          "label": "70: easy money, fewer years"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the trade-off that governs everything. Every year you retire earlier, you need a dramatically bigger nest egg — and you forfeit a year of saving and compounding. Every year you wait, the money gets easier, but you're spending your healthiest, most precious years at work. There is no free lunch on this dial.",
+      "text": "earlier = harder",
+      "sub": "retire younger and you need far more, saved in less time",
+      "icon": "scale"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "And here's the reframe that makes this real. Money is just stored life energy — hours of your one finite life, traded for dollars. So your retirement age is really the moment you stop trading your hours for money and start spending them on whatever you actually want. The dial isn't about wealth. It's about time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "money = stored life energy"
+        },
+        {
+          "name": "goldwatch",
+          "label": "stop trading hours for dollars"
+        },
+        {
+          "name": "smiley",
+          "label": "the dial is really about time"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So we'll climb from forty all the way to seventy, show exactly what nest egg each age demands, reveal how Social Security quietly rewards waiting, and expose the two traps that catch early and late retirees alike. By the end, you'll know which age is really yours. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "40 → 70"
+        },
+        {
+          "name": "nestegg",
+          "label": "what each age needs"
+        },
+        {
+          "name": "goldwatch",
+          "label": "the Social Security twist"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/rollsafe.jpg",
+      "meme": "Roll Safe Think About It",
+      "memeTop": "can't run out of money in retirement",
+      "memeBottom": "if you just never stop working",
+      "narration": "Now, working forever is one way to never run out of money — but it rather defeats the point. The real goal is to pick the earliest age you can stop without the money running out. So let's define what that age actually means."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what retirement age really is.",
+      "heading": "The Basics",
+      "kicker": "the age you're free"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Retirement age is simply the age at which a person is expected or required to cease work. But here's the key shift: you don't have to wait for the government's official age. Your real retirement age is whenever your investments can pay your bills without you. That's a number you control.",
+      "sourceId": "wiki-retage"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "That's the whole idea behind the Trinity study — an influential 1998 paper by three professors of finance that gave us the famous four-percent rule. It found that a portfolio could safely pay out about four percent a year and last for decades. Flip that around, and it tells you exactly how big your nest egg must be.",
+      "sourceId": "wiki-trinity"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "And the flip is beautifully simple: you need about twenty-five times your annual spending saved. Spend forty thousand a year? You need a million. Spend eighty? Two million. This one number — twenty-five times your spending — is the finish line for every single age on this ladder.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "25× your yearly spending"
+        },
+        {
+          "name": "nestegg",
+          "label": "$40K/yr → $1M"
+        },
+        {
+          "name": "scale",
+          "label": "the finish line for every age"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Let's make the finish line concrete. Spend forty thousand a year, you need about a million. Spend sixty thousand, one and a half million. Spend a hundred thousand, two and a half million. Notice: the number is driven by your spending, not your income. Control your spending, and you shrink the whole mountain.",
+      "text": "25× spending",
+      "sub": "$40K→$1M · $60K→$1.5M · $100K→$2.5M",
+      "icon": "calculator"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's climb the ages — and see what each one demands and gives.",
+      "heading": "The Dial",
+      "kicker": "40 to 70"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "Here's the whole dial. Forty is hardcore financial independence — decades of freedom. Fifty is early and bold. Fifty-five is a common sweet spot. Sixty-two is the earliest you can claim Social Security. Sixty-seven is the full Social Security age for most people today. And seventy is where Social Security maxes out. Each age is a completely different deal.",
+      "motif": "retireageladder",
+      "caption": "the retirement-age dial, 40 to 70"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "One sobering reality first: most Americans don't actually get to pick. The average person retires around sixty-two to sixty-five — but often because of layoffs, health problems, or caregiving, not choice. That's the strongest argument for saving hard early: so that when the dial gets spun, you're the one spinning it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "most don't get to choose"
+        },
+        {
+          "name": "calendar",
+          "label": "avg retirement ~62-65"
+        },
+        {
+          "name": "piggybank",
+          "label": "save early = you decide"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Retiring at forty is the dream of the FIRE movement — and it's brutally demanding. With no Social Security for decades and a retirement that might last fifty years, you need an enormous pile relative to your spending, often well over thirty times your expenses to be truly safe. It's possible, but it asks for monk-like saving.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "40: the FIRE dream"
+        },
+        {
+          "name": "nestegg",
+          "label": "30×+ expenses to be safe"
+        },
+        {
+          "name": "warning",
+          "label": "a 50-year retirement"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/brain4.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "retire at 65 the normal way",
+      "memeBottom": "save 60% and retire at 40 on 'lean FIRE'",
+      "narration": "And FIRE itself has flavors. 'Lean FIRE' means retiring early on a frugal budget; 'fat FIRE' means a luxurious one that needs a far bigger pile. Same early-freedom goal, wildly different numbers — pick the version your spending can actually sustain."
+    },
+    {
+      "id": "s12",
+      "type": "screenshot",
+      "narration": "That movement has a name: Financial Independence, Retire Early — characterized by high savings rates, often far above the ten to fifteen percent planners usually recommend. FIRE devotees save fifty, sixty, even seventy percent of their income to buy back decades of their life. It's extreme, but the math genuinely works.",
+      "sourceId": "wiki-fire"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "Fifty-five is a classic target, and for good reason. You've had decades to compound, you're likely at peak net worth, and a quirk in some retirement plans lets you access funds penalty-free at fifty-five if you retire then. It's early enough to enjoy, late enough to be achievable for diligent savers.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "55: decades of compounding"
+        },
+        {
+          "name": "piggybank",
+          "label": "peak net worth"
+        },
+        {
+          "name": "smiley",
+          "label": "early but achievable"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "That fifty-five perk has a name — the 'rule of fifty-five' — letting you tap a workplace plan penalty-free if you leave that job at fifty-five or later. Early retirees also use special withdrawal schedules to reach retirement money before fifty-nine and a half without the usual ten-percent penalty. The access problem is solvable.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "the 'rule of 55'"
+        },
+        {
+          "name": "nestegg",
+          "label": "penalty-free early access"
+        },
+        {
+          "name": "smiley",
+          "label": "the access problem is solvable"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Now the age where the whole conversation changes: Social Security kicks in.",
+      "heading": "62 to 70",
+      "kicker": "the Social Security years"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "Here's where a second income appears. Social Security is the commonly used term for the federal program that pays most retired Americans a monthly check for life. For the first time on the dial, you're no longer funding everything yourself — the government covers part of the bill.",
+      "sourceId": "wiki-ss"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "But when you claim it changes everything. Take it at sixty-two, the earliest age, and your check is permanently cut by about thirty percent. Wait until your full age of sixty-seven, you get one hundred percent. Hold out to seventy, and it grows by roughly another twenty-four percent — a bigger check, for the rest of your life.",
+      "motif": "ssclaimingage",
+      "caption": "claim at 62 and lose ~30%; wait to 70 and gain ~24%"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So when does claiming early actually make sense? If you're in poor health, truly need the income, or have no other savings, taking it at sixty-two can be the right call. There's a rough breakeven around age eighty: live past it and waiting wins; die before it and claiming early won. It's partly a bet on your own longevity.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "poor health? claim early"
+        },
+        {
+          "name": "scale",
+          "label": "breakeven around age 80"
+        },
+        {
+          "name": "hourglass",
+          "label": "a bet on longevity"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "So waiting is like buying the best annuity on earth. Every year you delay from sixty-two to seventy, your guaranteed, inflation-adjusted income jumps. For healthy people who expect to live into their eighties or beyond, delaying Social Security is often the single highest-return move in all of retirement planning.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "goldwatch",
+          "label": "delaying = a bigger check"
+        },
+        {
+          "name": "chartup",
+          "label": "inflation-adjusted, for life"
+        },
+        {
+          "name": "shield",
+          "label": "the best annuity there is"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "And don't overestimate the check. For an average earner, Social Security replaces only about forty percent of pre-retirement income — enough to matter enormously, nowhere near enough to live on alone. It's the sturdy floor beneath your retirement, never the whole house. Your savings still do most of the heavy lifting.",
+      "text": "~40%",
+      "sub": "of income replaced by Social Security — a floor, not the house",
+      "icon": "shield"
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "Now let's put real numbers on what each age actually costs you.",
+      "heading": "The Price",
+      "kicker": "nest egg by age"
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "Watch how the pile shrinks as you wait. To retire at forty you might need thirty or more times your spending. By sixty, with Social Security on the horizon and fewer years to fund, you need far less. The exact same lifestyle costs a radically different nest egg depending purely on when you stop.",
+      "motif": "eggneededbyage",
+      "caption": "retire later, and the required pile shrinks fast"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "Here's why those final working years are so disproportionately powerful. Late in a long savings career, your investment gains in a single good year can exceed your entire salary. Working from sixty to sixty-five isn't just five more years of saving — it can be the years your balance quietly doubles. Quitting right before that is costly.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "late gains > your salary"
+        },
+        {
+          "name": "coins",
+          "label": "the balance can double"
+        },
+        {
+          "name": "hourglass",
+          "label": "the last years compound hardest"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "There are two reasons later is cheaper. One, you have fewer retirement years left to fund. And two — the sneaky one — every extra year working is both a year you add money and a year your existing investments keep compounding. Those final working years are astonishingly powerful for your balance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "fewer years to fund"
+        },
+        {
+          "name": "chartup",
+          "label": "+ a year of compounding"
+        },
+        {
+          "name": "coins",
+          "label": "the last years are huge"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "But retiring early hides an expensive surprise most people forget.",
+      "heading": "The Gap",
+      "kicker": "healthcare before 65"
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "In America, there's Medicare — a federal health insurance program for people age sixty-five or older. It's a lifeline. But notice the age: sixty-five. If you retire before then, you are on your own for health insurance, and that gap is brutally expensive.",
+      "sourceId": "wiki-medicare"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "The good news for early retirees: you have tools. Because marketplace health subsidies are based on your taxable income, a retiree living off savings can show low income on paper and qualify for substantial help. Managing your reported income becomes a genuine skill that can slash that healthcare bill dramatically.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "ACA subsidies by income"
+        },
+        {
+          "name": "calculator",
+          "label": "low taxable income = help"
+        },
+        {
+          "name": "shield",
+          "label": "manage income, cut the bill"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "narration": "This is the pre-Medicare gap, and it ambushes early retirees. Retire at fifty-five and you have a full ten years of buying your own health insurance before Medicare begins — easily tens of thousands of dollars a year for a couple. Any early-retirement plan that forgets this gap is dangerously incomplete.",
+      "motif": "healthcaregap",
+      "caption": "retire before 65 and you self-fund health insurance",
+      "props": []
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "Still, budget it honestly. A couple retiring in their fifties can easily face fifteen to twenty-five thousand dollars a year in health premiums and out-of-pocket costs until Medicare. Over a ten-year gap, that's a quarter-million dollars — a line item that can single-handedly push your retirement age a year or two later.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "$15-25K/yr in the gap"
+        },
+        {
+          "name": "receipt",
+          "label": "~$250K over 10 years"
+        },
+        {
+          "name": "calendar",
+          "label": "can push your age later"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "So early retirees have to budget for that gap specifically — through a marketplace plan, a spouse's coverage, or a part-time job that includes benefits. It's not a reason to abandon early retirement, but it is a line item that can quietly add hundreds of thousands to the number you need.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "budget the gap"
+        },
+        {
+          "name": "shield",
+          "label": "marketplace or spouse plan"
+        },
+        {
+          "name": "warning",
+          "label": "+$100Ks to your number"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "And then the two psychological traps — one for each end of the dial.",
+      "heading": "The Traps",
+      "kicker": "too early, too late"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "The late trap is 'one more year' syndrome. You actually have enough — but fear whispers 'just one more year' to feel safe, and then it whispers it again, and again. People work years past freedom, trading their healthiest time for money they'll never spend. At some point, more savings buys nothing but lost life.",
+      "motif": "oneyearsyndrome",
+      "caption": "the late trap: working past the finish line forever"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And 'one more year' isn't only about fear of money — it's about identity. For many, the job is who they are: the status, the purpose, the built-in friends. Retiring means rebuilding all of that from scratch, which is genuinely scary. The ones who retire happiest plan their time, not just their money.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "the job is an identity"
+        },
+        {
+          "name": "warning",
+          "label": "status, purpose, friends"
+        },
+        {
+          "name": "smiley",
+          "label": "plan your time, not just money"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "The early trap is sequence-of-returns risk. If a market crash hits in the first few years of retirement, while you're drawing down, it can permanently cripple a portfolio that would otherwise have lasted. Early retirees are especially exposed, because their money has to survive so many more years of market storms.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "a crash early = danger"
+        },
+        {
+          "name": "warning",
+          "label": "sequence-of-returns risk"
+        },
+        {
+          "name": "hourglass",
+          "label": "decades to survive"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Luckily, sequence risk has defenses. Keep a year or two of spending in cash so you never sell stocks into a crash. Stay flexible — trim spending in down years. Some retirees use a 'bond tent,' holding extra bonds right around retirement. The goal is simple: survive the dangerous first few years intact.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "1-2 yrs cash buffer"
+        },
+        {
+          "name": "scale",
+          "label": "flex spending in down years"
+        },
+        {
+          "name": "chartup",
+          "label": "survive the first years"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "And overshadowing the whole dial is longevity risk — the chance you live far longer than you planned. Retire at forty and your money might need to last fifty or sixty years. Running out at eighty-five is a real catastrophe. The longer your retirement, the more cushion, flexibility, and conservatism your plan demands.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "cane",
+          "label": "you might live to 95+"
+        },
+        {
+          "name": "hourglass",
+          "label": "money must last 50+ yrs"
+        },
+        {
+          "name": "shield",
+          "label": "build in a cushion"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "And respect the longevity numbers. For a healthy sixty-five-year-old couple today, there's a very good chance at least one of them lives past ninety. Planning to only ninety can leave you dangerously short. A retirement plan that fails at eighty-eight isn't a plan — it's a slow-motion emergency.",
+      "text": "past 90",
+      "sub": "odds at least one of a 65-yr-old couple lives this long",
+      "icon": "cane"
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "So how do you actually choose your number on this dial?",
+      "heading": "Choosing",
+      "kicker": "the earliest you safely can"
+    },
+    {
+      "id": "s30",
+      "type": "stage",
+      "narration": "Really, the whole dial is one trade-off: free years versus financial security. Retire at forty-five and you buy twenty extra years of freedom, but you need a mountain of money and carry real risk. Retire at sixty-five and the money is comfortable, with Social Security and Medicare — but those early years are gone. You're choosing which to maximize.",
+      "motif": "yearsfreevsyearssaving",
+      "caption": "free years vs security — you can't fully max both"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And listen to the regret data, because it's remarkably one-sided. People at the end of life rarely wish they'd worked more or saved a bit more. They wish they'd had more time — with family, for health, for the things money was only ever meant to buy. Almost nobody regrets retiring a year too early.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "nobody wishes they'd worked more"
+        },
+        {
+          "name": "hammock",
+          "label": "they wish for more time"
+        },
+        {
+          "name": "smiley",
+          "label": "early rarely regretted"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "My honest take: aim for the earliest age you can hit without white-knuckling the money. For most diligent savers that lands somewhere in the late fifties to early sixties — early enough to enjoy real health and freedom, late enough that Social Security and Medicare are close enough to lean on.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "earliest you safely can"
+        },
+        {
+          "name": "calendar",
+          "label": "often late 50s–early 60s"
+        },
+        {
+          "name": "hammock",
+          "label": "health + freedom + safety"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "And the single biggest lever to move your age earlier isn't a higher income — it's your savings rate. Save fifteen percent and you're on a forty-year track. Save fifty percent and you can retire in under two decades. How much you keep, not how much you make, is what spins this dial toward freedom.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "savings rate is the lever"
+        },
+        {
+          "name": "chartup",
+          "label": "50% saved → ~17 years"
+        },
+        {
+          "name": "rockingchair",
+          "label": "spins the dial earlier"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And drop the idea that retirement is a hard on-off switch. More and more people are choosing 'encore' careers — part-time, passion projects, consulting — that blend income with freedom. You can step off the treadmill at fifty-five into something lighter, rather than sprinting to sixty-seven and slamming on the brakes.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "encore / part-time careers"
+        },
+        {
+          "name": "smiley",
+          "label": "blend income + freedom"
+        },
+        {
+          "name": "rockingchair",
+          "label": "not an on-off switch"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Consider a 'coast' or part-time bridge, too. Many people hit a point where their investments will grow into enough on their own, so they downshift to part-time work that covers today's bills while the nest egg quietly finishes cooking. It's a gentle middle path between grinding full-time and fully stopping.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "coast: let it finish growing"
+        },
+        {
+          "name": "briefcase",
+          "label": "part-time bridge"
+        },
+        {
+          "name": "smiley",
+          "label": "a gentle middle path"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "And whatever age you pick, plan the claiming separately. You can retire at sixty and still delay Social Security to seventy, living off savings in between to lock in that bigger check for life. Retirement age and Social Security age are two different dials — and the savviest retirees tune them independently.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "goldwatch",
+          "label": "retire ≠ claim age"
+        },
+        {
+          "name": "calendar",
+          "label": "retire 60, claim 70"
+        },
+        {
+          "name": "chartup",
+          "label": "two dials, tuned apart"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Because here's the real lesson of the whole dial: retirement isn't an age the government hands you — it's a math problem you solve. The day your investments can pay your bills forever, you're free, whether that's forty or seventy. Your job is simply to reach that day as early as you sanely can.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "it's a math problem"
+        },
+        {
+          "name": "nestegg",
+          "label": "investments pay the bills"
+        },
+        {
+          "name": "hammock",
+          "label": "that day = freedom"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "One last silent threat: inflation. Over a thirty or forty-year retirement, rising prices can cut your money's buying power in half or worse. That's why your nest egg has to keep partly invested for growth, not sit in cash — and why Social Security's inflation adjustment is quietly one of its most valuable features.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "inflation halves your dollars"
+        },
+        {
+          "name": "chartup",
+          "label": "stay partly invested"
+        },
+        {
+          "name": "shield",
+          "label": "SS adjusts for inflation"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "So find your twenty-five-times number, check it against each age, and build the plan backward from the life you want. Account for the healthcare gap, respect the risks, and don't let fear steal years you've already earned. The dial is yours to set.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "build backward from the life"
+        },
+        {
+          "name": "medkit",
+          "label": "mind the healthcare gap"
+        },
+        {
+          "name": "smiley",
+          "label": "the dial is yours"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the cruelest mistake isn't retiring a year too early — it's retiring years too late, with a full bank account and no health left to enjoy it. Money you can rebuild. The years between fifty-five and seventy-five, in good health, you absolutely cannot. Weigh the dial with that in mind.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "too late is the real risk"
+        },
+        {
+          "name": "cane",
+          "label": "health doesn't come back"
+        },
+        {
+          "name": "scale",
+          "label": "weigh time, not just money"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So run your number today, pick your age, and start spinning the dial toward it with every dollar you save. The sooner you know the target, the sooner you reach it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "run your number today"
+        },
+        {
+          "name": "rockingchair",
+          "label": "pick your age"
+        },
+        {
+          "name": "chartup",
+          "label": "spin toward it"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this helped you see retirement as a dial you control, hit subscribe — and tell me which number you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "goldwatch",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-retage",
+      "name": "Retirement age (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement_age",
+      "quote": "the age at which a person is expected or required to cease work"
+    },
+    {
+      "id": "wiki-trinity",
+      "name": "Trinity study (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trinity_study",
+      "quote": "an influential 1998 paper by three professors of finance"
+    },
+    {
+      "id": "wiki-fire",
+      "name": "FIRE movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FIRE_movement",
+      "quote": "characterized by high savings rates"
+    },
+    {
+      "id": "wiki-ss",
+      "name": "Social Security (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Social_Security_(United_States)",
+      "quote": "the commonly used term for the federal"
+    },
+    {
+      "id": "wiki-medicare",
+      "name": "Medicare (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Medicare_(United_States)",
+      "quote": "a federal health insurance program in the United States for people age 65 or older"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Retirement Age: 40 to 70",
+    "alts": [
+      "What Each Retirement Age Really Costs You (40 to 70)",
+      "The Retirement-Age Dial: Retiring at 40 vs 70 Explained"
+    ],
+    "hook": "One dial decides the entire shape of your retirement — and it's not how much you make, it's the age you stop. This is every level of retirement age: 40 (FIRE — decades of freedom, but you need a fortune), 50, 55 (a sweet spot), 62 (earliest Social Security, ~30% haircut), 67 (full), and 70 (max — ~24% bigger checks for life). We cover the 25x nest-egg each age requires, how Social Security rewards waiting, the brutal pre-Medicare healthcare gap before 65, sequence-of-returns and longevity risk, and the 'one more year' trap that steals your healthiest years. Your real retirement age is whenever your investments can pay your bills — here's how to find it. Fully cited.",
+    "bullets": [
+      "What each age requires: the 25x nest egg from 40 to 70",
+      "Social Security: claim at 62 (−30%) vs 70 (+24%)",
+      "The pre-Medicare healthcare gap before 65",
+      "Sequence-of-returns risk and longevity risk",
+      "The 'one more year' trap — and the early-retirement risks",
+      "Why your savings rate, not income, sets your age"
+    ],
+    "tags": [
+      "retirement age",
+      "when can I retire",
+      "early retirement",
+      "FIRE movement",
+      "social security claiming age",
+      "4 percent rule",
+      "how much to retire",
+      "retire at 55",
+      "retire at 40",
+      "medicare gap",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#retirement",
+      "#FIRE",
+      "#socialsecurity",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "RETIREMENT AGE",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "40 vs 70",
+      "napkinSub": "same life, different dial",
+      "deco": "goldwatch"
+    },
+    "chapters": [
+      [
+        "what retirement age really is",
+        "The basics"
+      ],
+      [
+        "see what each one demands and gives",
+        "The dial"
+      ],
+      [
+        "the whole conversation changes",
+        "62 to 70"
+      ],
+      [
+        "what each age actually costs you",
+        "The price"
+      ],
+      [
+        "retiring early hides an expensive surprise",
+        "The gap"
+      ],
+      [
+        "the two psychological traps",
+        "The traps"
+      ],
+      [
+        "how do you actually choose your number",
+        "Choosing"
+      ],
+      [
+        "the real lesson of the whole dial",
+        "It's a math problem"
+      ]
+    ]
+  }
+}

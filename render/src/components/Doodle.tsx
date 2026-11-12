@@ -142,6 +142,7 @@ export type DoodleName =
   | "truck" | "steeringwheel"
   | "diploma" | "books"
   | "ticket" | "clover"
+  | "rockingchair" | "goldwatch"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2365,6 +2366,31 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={40} cy={60} d={22} fill={GREEN} strokeWidth={1.6} />
           <RCircle cx={60} cy={60} d={22} fill={GREEN} strokeWidth={1.6} />
           <RLine x1={50} y1={58} x2={54} y2={82} strokeWidth={2.4} />
+        </>
+      );
+    case "rockingchair":
+      // A rocking chair — retirement.
+      return (
+        <>
+          <RLine x1={38} y1={26} x2={38} y2={70} strokeWidth={SW} />
+          <RLine x1={38} y1={26} x2={58} y2={34} strokeWidth={SW} />
+          <RLine x1={38} y1={48} x2={64} y2={54} strokeWidth={SW} />
+          <RLine x1={38} y1={70} x2={66} y2={70} strokeWidth={SW} />
+          <RLine x1={64} y1={54} x2={66} y2={70} strokeWidth={SW} />
+          <RPath d="M30 78 Q50 86 74 76" fill="none" strokeWidth={SW} />
+          <RLine x1={38} y1={70} x2={34} y2={78} strokeWidth={2} />
+          <RLine x1={66} y1={70} x2={70} y2={77} strokeWidth={2} />
+        </>
+      );
+    case "goldwatch":
+      // A gold watch — the classic retirement gift.
+      return (
+        <>
+          <RCircle cx={50} cy={52} d={44} fill={GOLD} strokeWidth={SW} />
+          <RRect x={42} y={16} w={16} h={12} fill={TAN} strokeWidth={2} />
+          <RRect x={42} y={76} w={16} h={12} fill={TAN} strokeWidth={2} />
+          <RLine x1={50} y1={52} x2={50} y2={38} strokeWidth={2.4} />
+          <RLine x1={50} y1={52} x2={62} y2={56} strokeWidth={2.4} />
         </>
       );
   }

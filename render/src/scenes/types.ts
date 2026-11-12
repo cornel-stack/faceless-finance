@@ -220,7 +220,9 @@ export interface StageScene extends Base {
     // EP077 (every level of student debt) additions:
     | "studentdebtladder" | "debttoincomebyfield" | "interestballoon" | "collegeroi" | "repaymentpaths" | "delayedlife"
     // EP078 (every level of lottery win) additions:
-    | "lotterywinladder" | "lotteryoddsscale" | "lumpsumvsannuity" | "lotterytaxbite" | "lotterycurse" | "wintoincome" | "lotteryplaybook";
+    | "lotterywinladder" | "lotteryoddsscale" | "lumpsumvsannuity" | "lotterytaxbite" | "lotterycurse" | "wintoincome" | "lotteryplaybook"
+    // EP079 (every level of retirement age) additions:
+    | "retireageladder" | "eggneededbyage" | "ssclaimingage" | "healthcaregap" | "oneyearsyndrome" | "yearsfreevsyearssaving";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
