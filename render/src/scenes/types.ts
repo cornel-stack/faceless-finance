@@ -238,7 +238,9 @@ export interface StageScene extends Base {
     // EP086 (The Price Tag — expensive cities by what you keep) additions:
     | "grosspayillusion" | "citykeepbars" | "taxwedgebite" | "whatyoukeepfunnel"
     // EP087 (The Price Tag — rent by city vs salary needed) additions:
-    | "rentbycitybars" | "salaryneededladder" | "rentburdenmap";
+    | "rentbycitybars" | "salaryneededladder" | "rentburdenmap"
+    // EP088 (The Price Tag — cost of a baby by country) additions:
+    | "birthcostbars" | "childcarevs2ndsalary" | "paidleavemap" | "costtoraisestack";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

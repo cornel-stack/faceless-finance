@@ -3,315 +3,254 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "To rent a normal one-bedroom apartment in New York City today, landlords want you to earn about a hundred and sixty thousand dollars a year. For the same apartment in a cheaper major city, the number can be under forty thousand. Same four walls, same single bedroom — and a salary requirement that swings by four times depending only on the city. Today we rank what rent costs in every major city, and the salary you'd need to actually afford it.",
+    "narration": "In the United States, simply giving birth can cost a family thousands of dollars out of pocket — even with good insurance. In most of the rich world, the birth is free, the hospital stay is covered, and the government hands you a check for having the baby. Same event, opposite price. Today we rank what having a child actually costs, country by country.",
     "props": [
       {
-        "name": "apartment",
-        "label": "1-bed in NYC"
+        "name": "baby",
+        "label": "US birth: $$$ out of pocket"
       },
       {
-        "name": "paystub",
-        "label": "needs ~$160K/yr"
+        "name": "globe",
+        "label": "elsewhere: free + a check"
       },
       {
         "name": "scale",
-        "label": "4× swing by city"
+        "label": "ranked by country"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the rule quietly running your life. Most landlords require your annual income to be at least forty times the monthly rent — which is the same as saying rent should eat no more than thirty percent of your pay. Flip it around, and every rent price hides a salary you must earn just to be allowed through the door.",
-    "text": "40×",
-    "sub": "income landlords require vs the monthly rent",
-    "icon": "apartment"
+    "narration": "And the birth is just the opening bill. Raising a single child to age eighteen in America now costs well over three hundred thousand dollars — before a dollar of college tuition. That's a second mortgage, paid in diapers, daycare, and dinners, over eighteen relentless years.",
+    "text": "$300,000",
+    "sub": "cost to raise one US child to 18 — before college",
+    "icon": "baby"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank major cities by rent, convert each one into the salary you'd actually need, expose the thirty-percent rule landlords enforce, map where renters are most crushed, and reveal where your paycheck buys the most roof. Because rent isn't just a bill. It's an invisible salary requirement stamped on every city.",
+    "narration": "So today we price out a child from day one. We'll rank the cost of the birth itself, the brutal math of childcare, the paid leave you do or don't get, the monthly checks some governments send, and the full bill to eighteen. Then we'll expose why America is uniquely expensive — and what it quietly costs your career on top.",
     "props": [
       {
-        "name": "scale",
-        "label": "rent, then salary needed"
+        "name": "baby",
+        "label": "birth → age 18"
       },
       {
-        "name": "percent",
-        "label": "the 30% rule"
+        "name": "calculator",
+        "label": "the full bill"
       },
       {
         "name": "globe",
-        "label": "where rent is bearable"
+        "label": "why the US is worst"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "live in the city you love",
-    "memeBottom": "live in a city you can afford",
-    "narration": "Because for millions of renters, this is the real monthly decision — the dream city, or the affordable one. Before we rank them, let's nail down the one rule that turns any rent into a salary."
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "a surprise $20,000 hospital bill for the birth",
+    "memeBottom": "free birth and a year of paid leave",
+    "narration": "Because the gap between having a baby in America and having one almost anywhere else in the developed world is genuinely staggering. Before we rank the costs, let's agree on what we're even counting."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the rule that turns rent into a required salary.",
-    "heading": "The 30% Rule",
-    "kicker": "rent to income"
+    "narration": "First, what a child actually costs.",
+    "heading": "The Price of a Child",
+    "kicker": "what we're counting"
   },
   {
     "id": "s6",
-    "type": "stage",
-    "motif": "thirtypercentrule",
-    "caption": "rent should take no more than ~30% of pay",
-    "narration": "The anchor is simple: housing should cost no more than about thirty percent of your gross income. Cross that line and you're officially rent-burdened, with too little left for everything else. Landlords turn the same rule into a wall — most won't even rent to you unless you earn forty times the monthly rent. That's the thirty-percent rule, enforced."
+    "type": "screenshot",
+    "sourceId": "wiki-costraise",
+    "narration": "Start with the blunt truth from the research: the cost of raising a child varies widely from country to country. It's not a fixed number written in biology — it's a policy choice. The same baby, the same needs, can bankrupt a family in one country and be comfortably supported in another, purely because of how each society decides to share the cost."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And the thirty-percent line isn't arbitrary — it's the point where a budget starts to crack. Below it, you can save, handle a surprise, and build a life. Above it, one broken car or missed shift can mean a missed rent payment. That single line separates renters who are building a future from renters who are just surviving the month.",
+    "narration": "And the variation is enormous, not marginal. By some estimates, raising a child to adulthood ranges from under a hundred thousand dollars in a supportive, subsidized country to well over three hundred thousand in the United States. That's not a small premium for the same outcome — it's two to three times the price for raising the exact same kid.",
     "props": [
       {
-        "name": "percent",
-        "label": "the 30% line"
+        "name": "scale",
+        "label": "under $100K to $300K+"
       },
       {
-        "name": "scale",
-        "label": "saving vs surviving"
+        "name": "globe",
+        "label": "same kid, 2-3× price"
       },
       {
         "name": "warning",
-        "label": "one shock from the edge"
+        "label": "policy, not biology"
       }
     ]
   },
   {
     "id": "s7",
-    "type": "screenshot",
-    "sourceId": "wiki-renting",
-    "narration": "And renting is its own kind of contract. It's an agreement where you pay to use property owned by someone else, with a signed lease to establish the roles and expectations of both the tenant and landlord. You're not buying a home — you're buying time in it, month by month, at whatever price the local market sets."
-  },
-  {
-    "id": "s51",
     "type": "character",
     "pose": "explain",
-    "narration": "And a lease is a promise with teeth. Sign a twelve-month lease and you owe every month of it, whether you stay or not. Break it early and you can forfeit your deposit or owe the balance. That's why the salary question matters so much up front: you're not committing to one month of rent, you're committing to a year of it.",
+    "narration": "And that cost arrives in three giant waves. First, the birth itself — the hospital and medical bill. Second, childcare, the crushing early-years expense while you work. And third, the long tail: eighteen years of food, housing, clothes, and everything else. Each wave hits completely differently depending on which country you're standing in.",
     "props": [
       {
-        "name": "lease",
-        "label": "a year-long promise"
+        "name": "hospital",
+        "label": "1. the birth"
       },
       {
-        "name": "ballchain",
-        "label": "owe it even if you leave"
+        "name": "baby",
+        "label": "2. childcare"
       },
       {
-        "name": "warning",
-        "label": "commit to 12 months"
+        "name": "house",
+        "label": "3. 18 years of life"
       }
     ]
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "sourceId": "wiki-gross",
-    "narration": "And notice the rule is measured against gross income — the sum of your earnings before any deductions or taxes. That's the catch landlords rarely mention: they test you on your pre-tax salary, but you pay rent out of your take-home. So the real bite on your actual paycheck is always even bigger than thirty percent."
+    "sourceId": "wiki-childcare",
+    "narration": "That second wave is the sneakiest. Child care is simply the care and supervision of one or more children while parents work — but in some countries it's nearly free, and in others it costs more than rent or college. For many families, daycare is the single most expensive line item of their entire adult lives."
   },
   {
-    "id": "s42",
+    "id": "s51",
     "type": "character",
     "pose": "explain",
-    "narration": "And here's the quiet trap inside that gross-income rule. A city with high rent usually has high taxes too, so your take-home shrinks exactly where rent grows. The listing tests your pre-tax salary, but the rent comes out of what's left after the government's cut. On a real paycheck, thirty percent gross can easily be forty percent of what you actually bring home.",
+    "narration": "And childcare is uniquely merciless because it can't be deferred. You can delay a vacation, skip a new car, or rent smaller — but a toddler needs supervision every single working day, now, at whatever the market charges. There's no cheaper year to buy. That non-negotiable, full-price, daily bill is what quietly breaks so many young family budgets.",
     "props": [
       {
-        "name": "scissors",
-        "label": "taxes shrink take-home"
+        "name": "baby",
+        "label": "can't be deferred"
       },
       {
-        "name": "apartment",
-        "label": "rent grows anyway"
+        "name": "calendar",
+        "label": "every working day"
       },
       {
         "name": "warning",
-        "label": "30% gross ≈ 40% net"
+        "label": "full price, right now"
       }
     ]
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's rank the cities by raw monthly rent.",
-    "heading": "The Rent",
-    "kicker": "per month, by city"
+    "narration": "So let's start at the very beginning — the birth.",
+    "heading": "The Birth",
+    "kicker": "the cost of delivery"
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "rentbycitybars",
-    "caption": "median one-bed rent, by major city",
-    "narration": "Here's the monthly damage for a typical one-bedroom. New York leads near four thousand dollars a month. San Francisco and the glamour cities aren't far behind. The pricey-but-sane tier sits around two thousand. And affordable boomtowns still land near fourteen or fifteen hundred. Between the top and the bottom of this list is a threefold gap — for the exact same apartment."
+    "motif": "birthcostbars",
+    "caption": "out-of-pocket cost to give birth, by country",
+    "narration": "Here's what it costs just to have the baby. In the United Kingdom, Canada, Germany, and most of the developed world, the out-of-pocket cost of a normal birth is essentially zero — it's covered. In the United States, even a smooth, insured delivery routinely leaves families owing thousands, and a complicated one can run into the tens of thousands. America is almost the only rich country that charges you to be born."
   },
   {
-    "id": "s59",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And these are just the asking rents — the number on the listing. The real cost of landing an apartment in a hot city includes bidding wars, where desperate renters offer months of rent up front just to win the unit. In the tightest markets, the advertised price is the floor of what you'll actually pay, not the ceiling.",
-    "props": [
-      {
-        "name": "apartment",
-        "label": "asking rent is the floor"
-      },
-      {
-        "name": "crowd",
-        "label": "bidding wars"
-      },
-      {
-        "name": "warning",
-        "label": "you pay above list"
-      }
-    ]
+    "id": "s42",
+    "type": "callout",
+    "narration": "Put a number on the American birth. Even with employer insurance, the average US family pays close to three thousand dollars out of pocket just for the delivery. Uninsured, a routine birth can bill out well past fifteen thousand, and a C-section far more. In most peer countries, that same line reads: zero.",
+    "text": "$3,000",
+    "sub": "avg US out-of-pocket to give birth, even insured",
+    "icon": "hospital"
   },
   {
     "id": "s11",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Median 1-bed rent per month ($)",
-    "unit": "$",
-    "narration": "Put the numbers side by side. New York around four thousand a month, San Francisco thirty-three hundred, Miami near twenty-eight, Chicago about two thousand, Austin seventeen hundred, Houston closer to fourteen. The most expensive city charges nearly three times the cheapest — for four walls and a single bedroom in each.",
-    "data": [
-      {
-        "label": "Houston",
-        "value": 1400
-      },
-      {
-        "label": "Austin",
-        "value": 1700
-      },
-      {
-        "label": "Chicago",
-        "value": 2000
-      },
-      {
-        "label": "Miami",
-        "value": 2800
-      },
-      {
-        "label": "San Fran",
-        "value": 3300
-      },
-      {
-        "label": "New York",
-        "value": 4000
-      }
-    ],
-    "highlight": 5
-  },
-  {
-    "id": "s43",
-    "type": "callout",
-    "narration": "Stack it up over a year and the gap is staggering. A New York renter pays nearly thirty thousand dollars more per year than a Houston renter — for the same one-bedroom. Over a decade, that's a quarter of a million dollars, gone to a landlord, that the cheaper-city renter could have invested instead.",
-    "text": "$30K/yr",
-    "sub": "NYC vs Houston rent gap — same 1-bed",
-    "icon": "apartment"
-  },
-  {
-    "id": "s12",
     "type": "character",
     "pose": "explain",
-    "narration": "But a raw rent number is only half the story. Four thousand a month is punishing on an average salary and trivial on a huge one. The honest way to compare cities isn't the rent itself — it's the salary that rent silently demands. So let's convert every one of these prices into the income you'd need to clear the door.",
+    "narration": "This traces straight back to how America pays for healthcare. With no universal system, a birth is billed like any other hospital procedure — itemized, marked up, and split between insurer and family. Deductibles, co-pays, and surprise out-of-network charges mean two families in neighboring rooms can pay wildly different amounts for the identical delivery.",
     "props": [
       {
-        "name": "apartment",
-        "label": "rent is only half"
+        "name": "hospital",
+        "label": "billed like a procedure"
       },
       {
-        "name": "paystub",
-        "label": "the hidden salary"
+        "name": "receipt",
+        "label": "deductibles + surprise bills"
       },
       {
-        "name": "scale",
-        "label": "convert rent → income"
+        "name": "warning",
+        "label": "no universal coverage"
       }
     ]
   },
   {
     "id": "s52",
-    "type": "callout",
-    "narration": "Here's the whole trick in one line. Multiply any monthly rent by forty and you get the salary a landlord wants you to earn. Four thousand a month? A hundred and sixty thousand a year. Memorize that one multiplication and you can read the true price of any city the instant you see a listing.",
-    "text": "rent × 40",
-    "sub": "= the salary a landlord requires",
-    "icon": "calculator"
-  },
-  {
-    "id": "s13",
-    "type": "title",
-    "narration": "So here's the number nobody puts on the listing.",
-    "heading": "The Salary Needed",
-    "kicker": "to clear the door"
-  },
-  {
-    "id": "s14",
-    "type": "stage",
-    "motif": "salaryneededladder",
-    "caption": "income required to rent, by city",
-    "narration": "Run every rent through the forty-times rule and the cities transform into salary requirements. New York demands around a hundred and sixty thousand a year to rent a basic one-bed. San Francisco, roughly a hundred and thirty. Even the mid-tier cities quietly require six figures. The affordable ones ask fifty to seventy thousand. The apartment didn't change. The salary to unlock it did."
-  },
-  {
-    "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "And flip the rule to protect yourself. Whatever you earn, divide by forty to find the highest rent you can truly carry. Earn eighty thousand? Your ceiling is two thousand a month. It feels brutal in an expensive city, but that line is the difference between a home that funds your life and one that quietly consumes it.",
+    "narration": "And the American birth bill is maddening because it's unpredictable. You can't shop it, you rarely get a price up front, and the final number depends on your room, your doctors, and whether anything went slightly wrong. Families budget for a baby and then get an itemized surprise weeks later. In universal-coverage countries, the price is known in advance: nothing.",
     "props": [
       {
-        "name": "calculator",
-        "label": "salary ÷ 40 = max rent"
+        "name": "receipt",
+        "label": "no price up front"
       },
       {
-        "name": "apartment",
-        "label": "your honest ceiling"
+        "name": "hospital",
+        "label": "an itemized surprise"
       },
       {
-        "name": "scale",
-        "label": "home vs trap"
+        "name": "warning",
+        "label": "can't shop a birth"
       }
     ]
   },
   {
-    "id": "s15",
+    "id": "s12",
+    "type": "title",
+    "narration": "Then comes the expense that ambushes every new parent.",
+    "heading": "Childcare",
+    "kicker": "the real budget-killer"
+  },
+  {
+    "id": "s13",
+    "type": "stage",
+    "motif": "childcarevs2ndsalary",
+    "caption": "when daycare eats a whole salary",
+    "narration": "Here's the trap that stuns new parents. In America, full-time daycare for one child can cost fifteen to twenty-five thousand dollars a year — and for two kids, it can quietly swallow an entire parent's salary. Many families do the math and realize one parent is now working almost entirely to pay for the childcare that lets them work. In subsidized countries, that trap barely exists."
+  },
+  {
+    "id": "s43",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "keep working and hand your salary to daycare",
+    "memeBottom": "quit work to raise the kid yourself",
+    "narration": "This is the impossible button every American parent of a toddler faces. Work to pay for the childcare that lets you work — or leave the workforce and lose your income and momentum. In countries with subsidized daycare, this sweaty dilemma simply isn't a dilemma at all."
+  },
+  {
+    "id": "s14",
     "type": "chart",
     "chartType": "bar",
-    "title": "Salary needed to rent a 1-bed ($K/yr)",
+    "title": "Yearly childcare cost per child ($K)",
     "unit": "$K",
-    "narration": "Here it is in black and white. To rent that one-bedroom, New York wants about a hundred and sixty thousand a year, San Francisco a hundred and thirty, Miami over a hundred, Chicago around eighty, Austin near seventy, Houston in the mid-fifties. These aren't luxury numbers — they're the price of a single ordinary bedroom in each city.",
+    "narration": "Compare the yearly childcare bill. In the United States it's around fifteen thousand dollars and climbing, among the highest on Earth. Britain and Australia aren't far behind. But Germany's heavily subsidized system runs a few thousand, and in Sweden it's capped near nothing by law. Same toddler, same care — and a sevenfold gap in what parents pay.",
     "data": [
       {
-        "label": "Houston",
-        "value": 56
+        "label": "Sweden",
+        "value": 2
       },
       {
-        "label": "Austin",
-        "value": 68
+        "label": "Germany",
+        "value": 4
       },
       {
-        "label": "Chicago",
-        "value": 80
+        "label": "Canada",
+        "value": 9
       },
       {
-        "label": "Miami",
-        "value": 112
+        "label": "Australia",
+        "value": 10
       },
       {
-        "label": "San Fran",
-        "value": 132
+        "label": "UK",
+        "value": 12
       },
       {
-        "label": "New York",
-        "value": 160
+        "label": "US",
+        "value": 15
       }
     ],
     "highlight": 5
@@ -320,177 +259,272 @@
     "id": "s44",
     "type": "character",
     "pose": "explain",
-    "narration": "And remember, this is the salary for just one bedroom. Add a partner who also needs space, or kids who need their own rooms, and the required income climbs fast. A family that wants a modest two or three bedrooms in a top city can need a quarter of a million dollars a year just to clear the rent rule.",
+    "narration": "And the childcare crunch warps entire life decisions. Couples delay having kids, stop at one, or space them out purely around daycare costs. When the care for two children under five rivals a second mortgage, family size itself quietly becomes a budgeting exercise — and birth rates in the priciest countries are falling for exactly this reason.",
     "props": [
       {
-        "name": "apartment",
-        "label": "this is ONE bedroom"
+        "name": "baby",
+        "label": "delay or stop at one"
       },
       {
-        "name": "couple",
-        "label": "add a family"
+        "name": "calculator",
+        "label": "family size = a budget"
+      },
+      {
+        "name": "chartdown",
+        "label": "birth rates falling"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And childcare has a cruel timing problem. It hits hardest in your late twenties and thirties — exactly when your salary is lowest and your career is most fragile. You're asked to pay the biggest bill of early parenthood at the precise moment you can least afford it, which is why so many families go into debt or push one parent out of work entirely.",
+    "props": [
+      {
+        "name": "baby",
+        "label": "peaks when pay is low"
+      },
+      {
+        "name": "chartdown",
+        "label": "career most fragile"
       },
       {
         "name": "warning",
-        "label": "~$250K for 3 beds"
+        "label": "debt or drop out of work"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Now compare that to what people actually earn. The median worker in most of these cities makes nowhere near the salary their own rent requires. In New York, the income needed to rent comfortably is roughly double the city's median wage. The math simply doesn't close — which is why so many renters are quietly drowning.",
-    "props": [
-      {
-        "name": "scale",
-        "label": "needed vs median wage"
-      },
-      {
-        "name": "chartdown",
-        "label": "the math doesn't close"
-      },
-      {
-        "name": "warning",
-        "label": "renters quietly drowning"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "callout",
-    "narration": "Here's the gap that breaks the system. In many top cities, the salary a landlord requires to rent a one-bedroom is nearly double what the typical worker there actually earns. The people who keep the city running simply cannot, on paper, qualify to rent in it. That's not a glitch — it's the whole crisis in one number.",
-    "text": "2×",
-    "sub": "salary needed vs what the median worker earns",
-    "icon": "scale"
+    "type": "title",
+    "narration": "Which collides head-on with the next question: who pays you to stay home?",
+    "heading": "Paid Leave",
+    "kicker": "time off with a baby"
   },
   {
     "id": "s17",
-    "type": "title",
-    "narration": "Which is why a word has quietly taken over housing: rent-burdened.",
-    "heading": "Rent-Burdened",
-    "kicker": "over the 30% line"
+    "type": "stage",
+    "motif": "paidleavemap",
+    "caption": "paid parental leave, by country",
+    "narration": "Here's where America stands truly alone. Sweden offers parents well over a year of paid leave to share. Germany and Japan offer around a year. Canada and Britain offer the better part of one. The United States federally guarantees exactly zero paid days. New American parents often burn vacation, take unpaid time, or are back at a desk within weeks of giving birth."
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And paid leave isn't just about money — it's about health. Those early weeks matter enormously for a newborn's bonding and a mother's recovery. Countries fund long leave because the research is overwhelming that it improves outcomes for both. Rushing a parent back to work in two weeks isn't just financially brutal — it's a documented health cost too.",
+    "props": [
+      {
+        "name": "heart",
+        "label": "bonding + recovery"
+      },
+      {
+        "name": "baby",
+        "label": "better outcomes"
+      },
+      {
+        "name": "warning",
+        "label": "rushing back has costs"
+      }
+    ]
   },
   {
     "id": "s18",
-    "type": "stage",
-    "motif": "rentburdenmap",
-    "caption": "renters paying over 30% of income on rent",
-    "narration": "When rent crosses thirty percent of your income, you're rent-burdened. Cross fifty percent and you're severely rent-burdened. In the priciest cities, the majority of renters are now over that first line, and a huge share are over the second — handing more than half of every paycheck to a landlord before they've eaten, commuted, or saved a single dollar."
-  },
-  {
-    "id": "s61",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And rent burden quietly steals your future, not just your month. Every extra dollar handed to a landlord is a dollar that never becomes savings, investments, or a down payment. The severely burdened renter isn't just poorer today — they're locked out of ever building the wealth that would let them escape renting at all.",
-    "props": [
-      {
-        "name": "apartment",
-        "label": "rent eats the surplus"
-      },
-      {
-        "name": "seedling",
-        "label": "nothing left to invest"
-      },
-      {
-        "name": "warning",
-        "label": "locked out of wealth"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-leave",
+    "narration": "And this isn't some rare luxury. Paid parental leave is an employee benefit available in almost all countries — it's the global default, not the exception. The United States is one of a tiny handful of nations on the planet, and the only wealthy one, with no national paid parental leave at all. On this, America is genuinely an outlier among outliers."
   },
   {
     "id": "s19",
-    "type": "screenshot",
-    "sourceId": "wiki-hai",
-    "narration": "Economists track this with a housing affordability index, which measures the degree to which the median person or family can actually afford local housing. When that index collapses, it's not a statistic — it's roommates into your thirties, three jobs to make rent, and a whole generation priced out of the cities built for them."
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Paid parental leave (weeks)",
+    "unit": "wks",
+    "narration": "Put it in weeks and the gap is almost cartoonish. Sweden, around sixty-eight weeks. Japan and Germany, close to sixty. Britain, near forty. Canada, in the mid-thirties. The United States, federally — zero. That bar doesn't just lose the race. It never leaves the starting line.",
+    "data": [
+      {
+        "label": "US",
+        "value": 0
+      },
+      {
+        "label": "Canada",
+        "value": 35
+      },
+      {
+        "label": "UK",
+        "value": 39
+      },
+      {
+        "label": "Germany",
+        "value": 58
+      },
+      {
+        "label": "Japan",
+        "value": 58
+      },
+      {
+        "label": "Sweden",
+        "value": 68
+      }
+    ],
+    "highlight": 0
   },
   {
     "id": "s45",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the burden falls hardest on exactly the people a city needs most. Teachers, nurses, baristas, and artists — the workers who make a city run — are the first to be priced out when rent outruns wages. A city that no one but bankers can afford to rent in slowly loses the very people who made it worth living in.",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "nurses, teachers priced out"
-      },
-      {
-        "name": "crowd",
-        "label": "the workers a city needs"
-      },
-      {
-        "name": "warning",
-        "label": "the city hollows out"
-      }
-    ]
+    "type": "callout",
+    "narration": "Here's the stat that says it all. The United States is one of only a small handful of countries on Earth with no national paid parental leave — alongside a few of the poorest nations in the world. The richest country in history simply chooses not to pay new parents to recover and bond.",
+    "text": "0 weeks",
+    "sub": "US federal paid parental leave guarantee",
+    "icon": "calendar"
   },
   {
     "id": "s20",
     "type": "character",
     "pose": "explain",
-    "narration": "And rent burden is uniquely vicious because it never stops. A mortgage is mostly fixed and eventually ends. Rent renews every single year, usually upward, for as long as you live there. The rent-burdened renter isn't climbing toward anything — they're running in place, paying more each year for the exact same room.",
+    "narration": "And unpaid leave is a cost all its own. The weeks a parent takes off without pay are weeks of lost income stacked on top of the new baby's expenses. So the American parent often gets hit twice: the paycheck stops exactly as the bills explode. In paid-leave countries, that double blow simply never lands.",
     "props": [
       {
-        "name": "apartment",
-        "label": "rent renews — upward"
+        "name": "paystub",
+        "label": "paycheck stops"
       },
       {
-        "name": "stopwatch",
-        "label": "running in place"
+        "name": "baby",
+        "label": "bills explode"
       },
       {
         "name": "warning",
-        "label": "never builds equity"
+        "label": "hit twice at once"
+      }
+    ]
+  },
+  {
+    "id": "s54",
+    "type": "image",
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "two weeks of leave, a $20K bill, $15K daycare",
+    "memeBottom": "this is fine",
+    "narration": "For a lot of new American parents, this is the honest emotional state of month one: a newborn, a stack of bills, no leave left, and a quiet 'we'll figure it out.' It isn't a personal failure. It's a system that leaves families to absorb a cost the rest of the rich world shares."
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "But many countries actively pay you to have the child.",
+    "heading": "The Help",
+    "kicker": "checks from the government"
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "sourceId": "wiki-benefit",
+    "narration": "Across much of the world there's a child benefit — a payment which is distributed to the parents or guardians of children, every month, for years. In Germany, Canada, Britain, and beyond, having a kid triggers a recurring government deposit worth thousands a year. In America, the help is thinner, mostly a once-a-year tax credit rather than a monthly check."
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And child benefits genuinely move the needle. Research shows that a child benefit worth around ten percent of income measurably raises birth rates, because it eases the exact financial fear that stops people having kids. Countries worried about shrinking populations are now writing bigger and bigger checks — because the cost of a child, it turns out, shapes whether there's a child at all.",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "benefits lift birth rates"
+      },
+      {
+        "name": "baby",
+        "label": "eases the money fear"
+      },
+      {
+        "name": "chartup",
+        "label": "bigger checks coming"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "sourceId": "wiki-welfare",
+    "narration": "This flows from the idea of a welfare state, where the state protects and promotes the economic and social well-being of its citizens. Countries that embrace it treat children as a shared investment in the nation's future, so they socialize the cost. Countries that don't leave that cost sitting squarely, and heavily, on the individual family."
+  },
+  {
+    "id": "s24",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Add it up and the direction of money completely flips. In a generous welfare state, the government offsets a large chunk of a child's cost through free birth, subsidized daycare, paid leave, and monthly benefits. In America, families largely shoulder the whole thing alone — which is exactly why the same child costs so dramatically more there.",
+    "props": [
+      {
+        "name": "globe",
+        "label": "state shares the cost"
+      },
+      {
+        "name": "moneybag",
+        "label": "or the family alone"
+      },
+      {
+        "name": "scale",
+        "label": "why the US bill is huge"
       }
     ]
   },
   {
     "id": "s55",
     "type": "callout",
-    "narration": "And the burden is spreading fast. Across the biggest US cities, roughly half of all renters now spend more than thirty percent of their income on rent, and about a quarter spend more than half. Being rent-burdened used to be a crisis. In the priciest cities, it's quietly become the norm.",
-    "text": "50%",
-    "sub": "of big-city renters are now rent-burdened",
-    "icon": "crowd"
+    "narration": "Here's the flip side of the welfare model in one number. A typical European child benefit can hand a family well over two thousand dollars a year, per child, for years — money that simply shows up to help. Across a childhood, that's tens of thousands of dollars the government contributes that an American family must find entirely on its own.",
+    "text": "$2,000/yr",
+    "sub": "typical child benefit per child — money the US mostly doesn't send",
+    "icon": "moneybag"
   },
   {
-    "id": "s21",
+    "id": "s25",
     "type": "title",
-    "narration": "So why is rent in these cities so insane in the first place?",
-    "heading": "Why So High",
-    "kicker": "and the rent-control fight"
+    "narration": "So what does the whole thing add up to?",
+    "heading": "The Full Bill",
+    "kicker": "birth to eighteen"
   },
   {
-    "id": "s22",
-    "type": "screenshot",
-    "sourceId": "wiki-rentcontrol",
-    "narration": "The oldest attempted fix is rent control — a system of laws for the rental market of dwellings that caps how fast rent can rise. It genuinely protects the people already in those apartments. But economists widely argue it also discourages new building and shrinks supply over time, which can quietly make the shortage — and the prices for everyone else — even worse."
+    "id": "s26",
+    "type": "stage",
+    "motif": "costtoraisestack",
+    "caption": "where the $300K to raise a US child goes",
+    "narration": "Here's where that three-hundred-thousand-dollar American figure actually goes. The biggest slice is housing — a bigger place for a bigger family. Then childcare and education. Then food, then healthcare, then transport, clothes, and everything else. Stacked together over eighteen years, one child costs about what a house did a generation ago."
   },
   {
-    "id": "s46",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "half my paycheck to a landlord",
-    "memeBottom": "this is fine",
-    "narration": "For the severely rent-burdened, this is the monthly mood: more than half the paycheck gone before anything else, and a quiet acceptance that this is just how it is now. It isn't how it has to be — but only if you treat rent as the salary test it really is."
-  },
-  {
-    "id": "s23",
+    "id": "s48",
     "type": "character",
     "pose": "explain",
-    "narration": "The deeper cause is the same one behind every housing crisis: too many people chasing too few homes. The most desirable cities simply don't build enough apartments for everyone who wants in. Scarcity hands landlords the power to name their price — and in a city everyone's fighting to live in, that price only goes one direction.",
+    "narration": "And that three hundred thousand is an average — your number swings hard with geography. Raise a child in an expensive coastal city and the housing and childcare slices balloon past four hundred thousand. Raise one in a low-cost region and it can land well under. The single biggest variable, as always, is the cost of the roof over the family's head.",
     "props": [
       {
-        "name": "crowd",
-        "label": "too many renters"
+        "name": "house",
+        "label": "housing is the big slice"
       },
       {
-        "name": "apartment",
-        "label": "too few homes"
+        "name": "mappin",
+        "label": "city vs low-cost region"
       },
       {
-        "name": "chartup",
-        "label": "scarcity sets the price"
+        "name": "scale",
+        "label": "$400K or far less"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And notice what that total leaves out: college. The three hundred thousand gets your child only to age eighteen. In America, a degree can add tens or hundreds of thousands more on top. In free-tuition countries, that final, massive wave simply doesn't exist — the number stops where the American one is just getting started.",
+    "props": [
+      {
+        "name": "gradcap",
+        "label": "college not included"
+      },
+      {
+        "name": "dollar",
+        "label": "+$100K+ in the US"
+      },
+      {
+        "name": "globe",
+        "label": "free elsewhere"
       }
     ]
   },
@@ -498,226 +532,184 @@
     "id": "s56",
     "type": "character",
     "pose": "explain",
-    "narration": "And wages are the other half of the equation everyone ignores. Rent can only rise as far as it does because, in the richest cities, enough high earners exist to pay it. Their big salaries set the market price — and everyone earning a normal wage is forced to compete against a banker's paycheck for the same one-bedroom.",
+    "narration": "And zoom out on what that full bill really represents. Three hundred thousand dollars, invested instead over the same eighteen years, would grow into a fortune. That's not an argument against having kids — it's the honest opportunity cost. A child is, in pure financial terms, one of the most expensive choices a person will ever make. People just rarely see the receipt.",
     "props": [
       {
-        "name": "paystub",
-        "label": "high earners set the price"
+        "name": "snowball",
+        "label": "$300K could compound"
       },
       {
-        "name": "crowd",
-        "label": "normal wages compete"
+        "name": "baby",
+        "label": "the honest trade-off"
       },
       {
-        "name": "warning",
-        "label": "priced by the top"
-      }
-    ]
-  },
-  {
-    "id": "s24",
-    "type": "title",
-    "narration": "And the same rent buys wildly different lives.",
-    "heading": "What Rent Buys",
-    "kicker": "same money, different roof"
-  },
-  {
-    "id": "s25",
-    "type": "stage",
-    "motif": "whatrentbuys",
-    "caption": "the same rent, a closet or a house",
-    "narration": "Take two thousand dollars a month. In New York or San Francisco, that's a room in a shared apartment, maybe a tiny studio if you're lucky. In an affordable city, the same two thousand rents a spacious two-bedroom with parking and a yard. Identical money, and the roof over your head quadruples in size."
-  },
-  {
-    "id": "s62",
-    "type": "callout",
-    "narration": "Say the location premium out loud. The same two-thousand-dollar budget rents a shared room in Manhattan or an entire two-bedroom house with a yard in an affordable city. You're not paying for more space in the expensive city — you're paying purely for the zip code. The walls are smaller; only the address is bigger.",
-    "text": "$2,000",
-    "sub": "a shared room, or a whole house — same money",
-    "icon": "house"
-  },
-  {
-    "id": "s26",
-    "type": "title",
-    "narration": "So what should a renter actually do with all this?",
-    "heading": "What To Do",
-    "kicker": "beat the salary trap"
-  },
-  {
-    "id": "s27",
-    "type": "character",
-    "pose": "present",
-    "narration": "First, know your real number before you ever tour a place. Multiply your gross salary by thirty percent, divide by twelve — that's your true monthly ceiling. If a city's median rent sits above that line, you're not underpaid, you're in the wrong city for your income. Run the number first, fall in love second.",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "salary × 30% ÷ 12"
-      },
-      {
-        "name": "apartment",
-        "label": "your true rent ceiling"
-      },
-      {
-        "name": "warning",
-        "label": "number first, love second"
-      }
-    ]
-  },
-  {
-    "id": "s63",
-    "type": "character",
-    "pose": "present",
-    "narration": "And audit the rent you already pay. Most renters never run their own thirty-percent number, then wonder why money evaporates. Pull up your lease, divide the rent by your monthly take-home, and look at the real percentage. If it's well over a third, you've found the leak draining your entire budget — and the biggest single thing you can fix.",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "run your own number"
-      },
-      {
-        "name": "percent",
-        "label": "rent ÷ take-home"
-      },
-      {
-        "name": "warning",
-        "label": "find the budget leak"
+        "name": "scale",
+        "label": "rarely see the receipt"
       }
     ]
   },
   {
     "id": "s28",
     "type": "character",
-    "pose": "present",
-    "narration": "Second, attack the biggest rent with the oldest trick: split it. A roommate often cuts your single biggest expense in half instantly — no raise, no move required. In the priciest cities, sharing isn't failure, it's math. One roommate can be the difference between rent-burdened and actually saving money.",
+    "pose": "explain",
+    "narration": "So why is America the outlier on every single line? Three reasons stack up. No universal healthcare, so the birth gets billed. No federal paid leave, so time off costs income. And a mostly private childcare market with little subsidy, so daycare runs sky-high. Each gap is survivable alone. Together, they make the American child the most expensive in the developed world.",
     "props": [
       {
-        "name": "couple",
-        "label": "split the rent"
+        "name": "hospital",
+        "label": "no universal care"
       },
       {
-        "name": "moneybag",
-        "label": "instant 50% cut"
+        "name": "calendar",
+        "label": "no paid leave"
       },
       {
-        "name": "smiley",
-        "label": "burdened → saving"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "pose": "present",
-    "narration": "And treat rent as temporary, not permanent. The goal for most people is to rent lean, invest the gap, and eventually trade rising rent for a fixed mortgage that ends. A renter who keeps costs down and buys when the math works turns today's discipline into tomorrow's paid-off home.",
-    "props": [
-      {
-        "name": "apartment",
-        "label": "rent lean now"
-      },
-      {
-        "name": "snowball",
-        "label": "invest the gap"
-      },
-      {
-        "name": "house",
-        "label": "fixed, ending mortgage later"
+        "name": "baby",
+        "label": "private childcare"
       }
     ]
   },
   {
     "id": "s29",
     "type": "character",
-    "pose": "present",
-    "narration": "Third, if your job travels, let your rent travel with it. Earning a big-city salary while renting in a cheaper city is the single fastest downgrade to your biggest bill. You don't need a raise to feel richer — you need a zip code where the rent stops demanding a six-figure salary for one bedroom.",
+    "pose": "explain",
+    "narration": "And there's a hidden cost no spreadsheet captures: the career hit. The parent who steps back — still usually the mother — loses not just a salary but raises, promotions, and years of compounding retirement savings. Economists call it the motherhood penalty, and over a lifetime it can dwarf every daycare bill combined. The real price of a child is often a career.",
     "props": [
       {
-        "name": "laptop",
-        "label": "rent follows the job"
+        "name": "chartdown",
+        "label": "the 'motherhood penalty'"
       },
       {
-        "name": "mappin",
-        "label": "big pay, cheap rent"
+        "name": "paystub",
+        "label": "lost raises + savings"
       },
       {
-        "name": "chartup",
-        "label": "instant raise"
+        "name": "warning",
+        "label": "bigger than daycare"
       }
     ]
   },
   {
-    "id": "s64",
+    "id": "s49",
     "type": "character",
-    "pose": "present",
-    "narration": "And time your move to the market, not your mood. Rents swing with the seasons — winter is quiet and cheap, summer is a feeding frenzy. Signing a lease in the slow months, or renewing early before a hike, can lock in hundreds less a month. The same apartment has a different price depending only on when you sign.",
+    "pose": "explain",
+    "narration": "And the penalty compounds exactly like an investment in reverse. A few years of lower earnings early on means lower raises later, and far less money compounding for retirement across a whole career. A parent who steps back at thirty can reach sixty with hundreds of thousands less saved — a cost that never appears on any daycare invoice.",
     "props": [
       {
-        "name": "calendar",
-        "label": "winter = cheaper"
+        "name": "snowball",
+        "label": "compounding in reverse"
       },
       {
-        "name": "apartment",
-        "label": "avoid the summer rush"
+        "name": "chartdown",
+        "label": "less saved by 60"
       },
       {
-        "name": "moneybag",
-        "label": "hundreds less a month"
+        "name": "warning",
+        "label": "invisible on any bill"
       }
     ]
   },
   {
     "id": "s30",
+    "type": "title",
+    "narration": "So what can a parent actually do about any of this?",
+    "heading": "What To Do",
+    "kicker": "blunt the bill"
+  },
+  {
+    "id": "s31",
     "type": "character",
-    "pose": "explain",
-    "narration": "Because here's the real lesson. Every rent price is really a salary requirement in disguise, and most people discover theirs only after the city has already broken their budget. Read the requirement first. Rank your cities by the income their rent silently demands — and refuse to let a single bedroom quietly set the entire course of your financial life.",
+    "pose": "present",
+    "narration": "If you're in America, squeeze every program that exists. Use a dependent-care FSA to pay childcare with pre-tax dollars. Claim the child tax credit and the child-and-dependent-care credit. Milk every week of employer leave before unpaid time. None of it fixes the system — but together they can claw back thousands a year that most parents leave on the table.",
     "props": [
       {
-        "name": "apartment",
-        "label": "rent = a salary rule"
+        "name": "calculator",
+        "label": "dependent-care FSA"
       },
       {
-        "name": "scale",
-        "label": "rank by income demanded"
+        "name": "receipt",
+        "label": "child tax credits"
       },
       {
-        "name": "paystub",
-        "label": "don't let a room decide"
+        "name": "handshake",
+        "label": "use employer leave"
+      }
+    ]
+  },
+  {
+    "id": "s32",
+    "type": "character",
+    "pose": "present",
+    "narration": "And treat geography as part of the plan. Childcare costs, state benefits, and even paid-leave laws vary enormously within a country. A handful of US states now mandate paid family leave and subsidize daycare; others offer nothing. Where you raise a child can swing the cost by tens of thousands — the same lever we keep finding behind every price tag.",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "states differ hugely"
+      },
+      {
+        "name": "baby",
+        "label": "leave + daycare laws"
+      },
+      {
+        "name": "moneybag",
+        "label": "tens of thousands"
       }
     ]
   },
   {
     "id": "s50",
     "type": "character",
-    "pose": "explain",
-    "narration": "And zoom out on the decades. A renter who keeps housing near thirty percent and invests the difference can retire comfortably. One who lets rent creep to half their income, in a city they couldn't really afford, may never catch up. The rent you choose today quietly writes the size of the life you'll be able to afford later.",
+    "pose": "present",
+    "narration": "And start the child's own money early. A small amount invested from birth — baby gifts, benefit checks, spare cash — has eighteen years to compound before they're grown, and decades more after. You can't fix a country's policy, but you can quietly turn the cost of a child into the start of their wealth.",
     "props": [
       {
+        "name": "seedling",
+        "label": "invest from birth"
+      },
+      {
         "name": "snowball",
-        "label": "invest the difference"
+        "label": "18+ years to compound"
       },
       {
-        "name": "chartup",
-        "label": "30% renter retires"
-      },
-      {
-        "name": "warning",
-        "label": "50% renter never catches up"
+        "name": "smiley",
+        "label": "cost becomes their wealth"
       }
     ]
   },
   {
-    "id": "s31",
+    "id": "s33",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. A child costs roughly the same to feed and love anywhere on Earth. What changes, violently, is how much of that cost a society decides to carry with you. The price of a baby isn't really about the baby. It's a mirror, reflecting exactly how much your country has your back.",
+    "props": [
+      {
+        "name": "baby",
+        "label": "the child costs the same"
+      },
+      {
+        "name": "globe",
+        "label": "society shares — or doesn't"
+      },
+      {
+        "name": "scale",
+        "label": "a mirror of your country"
+      }
+    ]
+  },
+  {
+    "id": "s34",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this changed how you read a rent listing, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this put a real number on parenthood for you, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "apartment",
+        "name": "baby",
         "label": "which price tag next?"
       }
     ]
   },
   {
-    "id": "s32",
+    "id": "s35",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",

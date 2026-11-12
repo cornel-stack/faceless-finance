@@ -6477,6 +6477,118 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={482} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>in pricey cities, most renters are now over the line</text>
       </svg>
     );
+  } else if (m === "birthcostbars") {
+    // Out-of-pocket cost to give birth, by country — US towers.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const rows: [string, number, string, string][] = [
+      ["UK", 0, "$0", green],
+      ["Canada", 0, "$0", green],
+      ["Germany", 0, "$0", green],
+      ["Australia", 1, "~$1K", "#9cc47f"],
+      ["US (insured)", 3, "~$3K", "#d98b5f"],
+      ["US (uninsured)", 15, "~$15K+", red],
+    ];
+    const x0 = 290, xMax = 860, maxV = 15;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">out-of-pocket cost to give birth</text>
+        {rows.map(([lab, v, tag, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={14} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{tag}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>almost the only rich country that bills you to be born</text>
+      </svg>
+    );
+  } else if (m === "childcarevs2ndsalary") {
+    // Daycare cost devouring a second salary.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const eaten = 0.82 * grow;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">when daycare eats a whole salary</text>
+        <g transform="translate(300 270)">
+          <rect x={-90} y={-150} width={180} height={300} rx={8} fill="#efe9da" stroke={ink} strokeWidth={4} />
+          <rect x={-90} y={-150 + 300 * (1 - eaten)} width={180} height={300 * eaten} rx={8} fill={red} stroke={ink} strokeWidth={4} />
+          <text x={0} y={180} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a 2nd salary</text>
+          <text x={0} y={10} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>daycare</text>
+          <text x={0} y={32} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>eats ~80%</text>
+        </g>
+        <g transform="translate(680 270)">
+          <text x={0} y={-30} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>two kids in care</text>
+          <text x={0} y={2} fontSize={30} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">$30K+/yr</text>
+          <text x={0} y={34} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>often more than rent</text>
+          <text x={0} y={58} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>or a mortgage</text>
+        </g>
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>working just to pay for the care that lets you work</text>
+      </svg>
+    );
+  } else if (m === "paidleavemap") {
+    // Paid parental leave in weeks, by country — US at zero.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["US", 0, red],
+      ["Canada", 35, gold],
+      ["UK", 39, gold],
+      ["Germany", 58, "#9cc47f"],
+      ["Japan", 58, "#9cc47f"],
+      ["Sweden", 68, green],
+    ];
+    const x0 = 250, xMax = 860, maxV = 68;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">paid parental leave (weeks)</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{v} wks</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the US bar never leaves the starting line</text>
+      </svg>
+    );
+  } else if (m === "costtoraisestack") {
+    // Stacked breakdown of the ~$300K to raise a US child.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const parts: [string, number, string][] = [
+      ["housing", 29, gold],
+      ["childcare + education", 23, "#d98b5f"],
+      ["food", 18, "#9cc47f"],
+      ["healthcare", 9, red],
+      ["transport", 9, blue],
+      ["everything else", 12, tan],
+    ];
+    const total = 300; const barH = 320; const x = 360; let acc = 0;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where ~$300K to raise a US child goes</text>
+        <g>
+          {parts.map(([lab, pct, col], i) => {
+            const h = barH * (pct / 100); const y = 90 + barH * (acc / 100) * grow;
+            const hh = h * grow; acc += pct;
+            const op = interpolate(grow, [i * 0.12, i * 0.12 + 0.2], [0, 1], clampBoth);
+            return (
+              <g key={i} opacity={op}>
+                <rect x={x - 90} y={y} width={180} height={hh} fill={col as string} stroke={ink} strokeWidth={3} />
+                <text x={x + 110} y={y + hh / 2 + 5} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>{lab} · {pct}%</text>
+              </g>
+            );
+          })}
+        </g>
+        <text x={x} y={442} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">≈ a house, paid in 18 years</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
