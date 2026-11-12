@@ -1,0 +1,1057 @@
+{
+  "id": "EP067",
+  "series": "Napkin Numbers",
+  "title": "What Each Credit Score Costs You Over a Lifetime",
+  "slug": "what-each-credit-score-costs",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP067 — Every Level series (row 57). Credit-score bands (poor→excellent, 300-850) and the lifetime dollar cost of a low score ($100K+ more on the same loans). Covers: what a score is, the 5 factors (payment 35/utilization 30/age 15/mix 10/new 10), mortgage rate gap by band, the 'poor pay more' spiral, how to climb the bands (free), score myths. 6 new motifs (scorebands/fivefactors/ratebyband/lifetimecost/creditspiral/climbthebands) + doodles reportcard/trafficlight. Sources: Credit score/US/history/FICO/APR. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "There's a three-digit number you rarely even look at that quietly decides how much everything in your life costs. The same house, the same car, the same credit card — a person with a bad version of this number pays tens of thousands more than a person with a good one. It's your credit score.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trafficlight",
+          "label": "a 3-digit number"
+        },
+        {
+          "name": "house",
+          "label": "same house…"
+        },
+        {
+          "name": "warning",
+          "label": "…very different price"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "And the lifetime stakes are enormous. Over a lifetime of mortgages, car loans, and credit cards, a poor credit score can cost you over a hundred thousand dollars more than an excellent one — for buying the exact same things. It's a silent, six-figure tax on bad credit.",
+      "text": "$100,000+",
+      "sub": "extra paid over a lifetime with poor vs excellent credit",
+      "icon": "warning"
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "And the maddening part? Most people have never even looked at it. Your score is free to check — through your bank, your credit card, or free websites — yet millions are being quietly overcharged by a single number they have never once seen.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "free to check"
+        },
+        {
+          "name": "phone",
+          "label": "via your bank or card"
+        },
+        {
+          "name": "warning",
+          "label": "most never look"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we're breaking down every level of credit score — from poor to excellent — and showing exactly what each one costs you. Plus the simple, completely free moves that can climb you from the expensive bottom to the cheap top.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "trafficlight",
+          "label": "poor → excellent"
+        },
+        {
+          "name": "calculator",
+          "label": "what each costs"
+        },
+        {
+          "name": "ladder",
+          "label": "how to climb, free"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "ignore a number you can't see",
+      "memeBottom": "realize that number quietly costs or saves you $100,000",
+      "narration": "Because your credit score might be the single highest-return number in your entire financial life — and the wild part is, improving it costs nothing but a little knowledge and a little patience."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what this number actually is.",
+      "heading": "The Number",
+      "kicker": "a trust score"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "A credit score is a numerical expression used to represent the creditworthiness of an individual. In plain terms, it's a single number that tells lenders how much they can trust you to pay them back.",
+      "sourceId": "wiki-creditscore"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Think of it as a reputation. Every time you borrow and repay, you build a track record. Lenders can't know you personally, so they trust this one cold number instead — a three-digit summary of whether you reliably keep your financial promises.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "a reputation"
+        },
+        {
+          "name": "reportcard",
+          "label": "your track record"
+        },
+        {
+          "name": "trafficlight",
+          "label": "do you keep promises?"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "More precisely, it estimates the relative likelihood that the individual will repay debts and meet other financial obligations. The higher your score, the safer you look — and the less lenders charge you to borrow.",
+      "sourceId": "wiki-csus"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "The most common version is the FICO score — named for the company Fair, Isaac — which has become the standard measure of consumer credit risk used across American lending.",
+      "sourceId": "wiki-fico"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Scores run from three hundred to eight hundred fifty, split into bands. Below five-eighty is poor. Up to six-sixty-nine is fair. Up to seven-thirty-nine is good. Up to seven-ninety-nine is very good. And eight hundred and up is excellent. The band you land in sets the price of your entire financial life.",
+      "motif": "scorebands",
+      "caption": "a 3-digit number that prices your whole life"
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "To see where you'd stand, the average American score is around seven hundred and fifteen — which lands in 'good.' But a huge share of people sit in 'fair' or 'poor,' quietly overpaying on everything, often with no idea a better band is within easy reach.",
+      "text": "715",
+      "sub": "the average US credit score (lands in 'good')",
+      "icon": "gauge"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "So what actually moves this number up and down?",
+      "heading": "The 5 Factors",
+      "kicker": "what builds the score"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Your score is built from five ingredients. The two giants are payment history — whether you pay on time — at thirty-five percent, and utilization — how much of your available credit you're using — at thirty percent. Then the age of your accounts, your mix of credit types, and how much new credit you've sought.",
+      "motif": "fivefactors",
+      "caption": "what builds your score"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "A warning about that biggest factor. A single payment over thirty days late can stay on your report for seven years and drop your score by a hundred points. Payment history is the one factor you must protect at all costs — slow to build, and terrifyingly fast to break.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "one late payment"
+        },
+        {
+          "name": "hourglass",
+          "label": "haunts you 7 years"
+        },
+        {
+          "name": "warning",
+          "label": "−100 points"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "The headline is simple: two-thirds of your score is just paying on time and not maxing out your cards. Nail those two habits, and almost everything else takes care of itself. Credit scoring looks mysterious, but it rewards boringly responsible behavior.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "pay on time (35%)"
+        },
+        {
+          "name": "creditcard",
+          "label": "don't max out (30%)"
+        },
+        {
+          "name": "smiley",
+          "label": "that's 65% of it"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "On utilization, there are magic lines. Staying under thirty percent of your limit is good; under ten percent is excellent. And it resets every month — so it's not about never using cards, just about not carrying a high balance when the score is calculated.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "under 30% = good"
+        },
+        {
+          "name": "percent",
+          "label": "under 10% = great"
+        },
+        {
+          "name": "calendar",
+          "label": "it resets monthly"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "screenshot",
+      "narration": "All of it is built on your credit history — a record of a borrower's responsible repayment of debts, collected by the credit bureaus from banks, lenders, and card companies into your credit report.",
+      "sourceId": "wiki-history"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Your history lives at three big bureaus — Equifax, Experian, and TransUnion. And here's the scary part: studies find a large share of reports contain errors. An old debt that isn't yours, a payment marked late that wasn't. Always check all three, and dispute any mistakes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "reportcard",
+          "label": "3 bureaus"
+        },
+        {
+          "name": "magnifier",
+          "label": "errors are common"
+        },
+        {
+          "name": "scissors",
+          "label": "dispute them"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Now the part that actually hits your wallet: the price of each band.",
+      "heading": "The Rate Gap",
+      "kicker": "same loan, different cost"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "The score controls your APR — the interest rate for a whole year on everything you borrow. A great score earns you the lowest advertised rate. A poor score bumps you up, sometimes dramatically, on every single loan.",
+      "sourceId": "wiki-apr"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "Look at a mortgage. With excellent credit, you might get six and a half percent. Good credit, seven. Fair, over eight. And poor credit can push you past nine and a half. The exact same house, the exact same loan — priced completely differently, based only on your score.",
+      "motif": "ratebyband",
+      "caption": "a low score adds 3%+ to every loan you'll ever take"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "The same gap hammers your car. On a typical auto loan, a poor-credit buyer can pay several thousand dollars more in interest than an excellent-credit one — for the identical car, off the identical lot. The score follows you into every single showroom.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "same car"
+        },
+        {
+          "name": "percent",
+          "label": "poor pays more"
+        },
+        {
+          "name": "moneybag",
+          "label": "+$ thousands"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "That gap sounds small — three percent — but on a three-hundred-thousand-dollar mortgage over thirty years, it's staggering. The poor-credit borrower can pay well over a hundred thousand dollars in extra interest, for living in the identical house. Same walls, a six-figure penalty.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "same $300K house"
+        },
+        {
+          "name": "percent",
+          "label": "+3% rate"
+        },
+        {
+          "name": "moneybag",
+          "label": "+$100K interest"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Run the mortgage math fully. Three percentage points higher on a three-hundred-thousand-dollar, thirty-year loan is over two hundred thousand dollars in extra interest across the life of the loan. The score didn't change the house — it quietly doubled what the house truly cost.",
+      "text": "$200,000",
+      "sub": "extra interest on one mortgage from a poor score",
+      "icon": "house"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "And it's not just the mortgage. The same gap hits your car loan, your credit cards, and even things you'd never expect — your insurance premiums, and whether a landlord will even rent to you. A low score quietly surcharges your entire life.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "car loans"
+        },
+        {
+          "name": "creditcard",
+          "label": "cards & insurance"
+        },
+        {
+          "name": "house",
+          "label": "even renting"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "And it's crept far beyond loans. Landlords check it before renting to you. Insurers use it to set your premiums. Some employers even check a version of it before hiring. A low score can quietly cost you an apartment, or even a job — not just a loan.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "landlords check it"
+        },
+        {
+          "name": "shield",
+          "label": "insurers use it"
+        },
+        {
+          "name": "briefcase",
+          "label": "even employers"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "Add it all up across a lifetime, and the excellent-credit person and the poor-credit person, buying the exact same homes and cars, end up a six-figure fortune apart. Over a lifetime, your credit score can quietly cost — or save — you well over a hundred thousand dollars.",
+      "motif": "lifetimecost",
+      "caption": "same houses, same cars — a six-figure penalty for bad credit"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And remember what that wasted interest could have been. A hundred thousand dollars in extra lifetime interest, invested instead, could have grown into a seven-figure retirement. The true cost of bad credit isn't just the interest — it's the fortune that money never got to become.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "wasted interest"
+        },
+        {
+          "name": "chartup",
+          "label": "could've been invested"
+        },
+        {
+          "name": "warning",
+          "label": "a lost fortune"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "And here's the cruel twist that keeps people stuck at the bottom.",
+      "heading": "The Trap",
+      "kicker": "the poor pay more"
+    },
+    {
+      "id": "s21",
+      "type": "stage",
+      "narration": "A low score creates a vicious circle. It gets you high interest rates, which make your payments bigger and harder to meet. Miss a payment, and your score drops even further — raising your rates again. The system charges the struggling the most, making it harder to ever stop struggling.",
+      "motif": "creditspiral",
+      "caption": "a bad score makes it harder to fix a bad score"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "At the very bottom, a poor score pushes you into the subprime world — payday lenders and buy-here-pay-here lots charging brutal rates. It's the most expensive borrowing there is, aimed squarely at the people a low score has already trapped. The floor is a very costly place to stand.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "subprime lenders"
+        },
+        {
+          "name": "percent",
+          "label": "brutal rates"
+        },
+        {
+          "name": "ballchain",
+          "label": "the costly floor"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "This is the same brutal pattern we see everywhere in finance: the poor pay more. The person who can least afford high interest is charged the highest interest. Your credit score isn't just a number — it's one of the quiet engines of who gets ahead and who stays behind.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the poor pay more"
+        },
+        {
+          "name": "percent",
+          "label": "highest rates to those who struggle"
+        },
+        {
+          "name": "warning",
+          "label": "it keeps you behind"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And there's an even worse spot than a bad score: no score at all. Tens of millions are 'credit invisible,' with no history for lenders to judge. Ironically, you often have to borrow to prove you can be trusted to borrow. Building from zero is its own strange challenge.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "'credit invisible'"
+        },
+        {
+          "name": "reportcard",
+          "label": "no history to judge"
+        },
+        {
+          "name": "scale",
+          "label": "a catch-22"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "title",
+      "narration": "But here's the good news — climbing out is genuinely simple, and free.",
+      "heading": "How to Climb",
+      "kicker": "the free moves"
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "The moves to climb the bands are surprisingly few. Pay every bill on time — that's thirty-five percent of your score. Keep your card balances under thirty percent of their limits. Keep your oldest cards open to age your credit. And don't apply for lots of new credit at once.",
+      "motif": "climbthebands",
+      "caption": "how to climb the bands — free"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "If you're starting from zero or rock bottom, the on-ramp is a secured card or a credit-builder loan. You put down a small deposit, use it lightly, pay it off, and quietly build a track record. Within a year, you can go from invisible to a genuinely solid score.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "a secured card"
+        },
+        {
+          "name": "seedling",
+          "label": "build from scratch"
+        },
+        {
+          "name": "chartup",
+          "label": "invisible → solid"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "The single most powerful move is automating your payments. Payment history is the biggest factor by far, and one missed payment can tank your score for years. Set every bill to auto-pay at least the minimum, and you've protected the most important ingredient on autopilot.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "gear",
+          "label": "auto-pay everything"
+        },
+        {
+          "name": "calendar",
+          "label": "never miss a date"
+        },
+        {
+          "name": "shield",
+          "label": "protects 35% of your score"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "A crucial safety net: a payment usually isn't reported late until it's a full thirty days overdue. So if you miss a due date, paying within that window often saves your score entirely. Don't panic over a slip — just fix it fast, before the thirty days are up.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "the 30-day window"
+        },
+        {
+          "name": "calendar",
+          "label": "fix it fast"
+        },
+        {
+          "name": "shield",
+          "label": "saves your score"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "The second lever is utilization. If your card limit is ten thousand, try to keep the balance below three thousand. Simply asking for a higher limit — and not spending it — instantly lowers your utilization and can nudge your score up, almost overnight.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "stay under 30%"
+        },
+        {
+          "name": "chartup",
+          "label": "or raise your limit"
+        },
+        {
+          "name": "percent",
+          "label": "a fast, free boost"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "A pro trick for utilization: pay your card down before the statement closes, not just before it's due. The balance reported to the bureaus is usually the statement balance — so paying early makes your reported utilization look tiny, even if you use the card a lot.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "pay before statement date"
+        },
+        {
+          "name": "percent",
+          "label": "low reported balance"
+        },
+        {
+          "name": "chartup",
+          "label": "a quiet score bump"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "And let's bust the myths that keep people making it worse.",
+      "heading": "The Myths",
+      "kicker": "stop believing these"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "Myth one: checking your own score hurts it. It doesn't — checking your own score is harmless, and you should do it often. Only a lender's hard inquiry, when you apply for new credit, gives a tiny, temporary ding.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "checking yours = safe"
+        },
+        {
+          "name": "reportcard",
+          "label": "do it often"
+        },
+        {
+          "name": "smiley",
+          "label": "no penalty"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "The key is soft versus hard inquiries. You checking your own score is a 'soft' pull — completely invisible to your score. A lender checking it for a new loan is a 'hard' pull, which dings you a few points for a few months. So check yourself freely; apply for new credit sparingly.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "soft pull = safe"
+        },
+        {
+          "name": "handshake",
+          "label": "hard pull = tiny ding"
+        },
+        {
+          "name": "smiley",
+          "label": "check freely"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "Myth two: carrying a balance helps your score. This one's expensive and completely false. You do not need to pay interest to build credit. Paying your balance in full every month builds a perfect history and costs you nothing. Carrying a balance just makes the bank rich.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "'carry a balance'? no"
+        },
+        {
+          "name": "creditcard",
+          "label": "pay in full"
+        },
+        {
+          "name": "smiley",
+          "label": "builds credit for free"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "To be crystal clear on the balance myth: credit cards give you a grace period. Pay the full statement balance every month, and you pay zero interest while still building perfect credit. Carrying a balance doesn't help your score one bit — it just quietly enriches the bank.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "creditcard",
+          "label": "the grace period"
+        },
+        {
+          "name": "percent",
+          "label": "pay in full = 0%"
+        },
+        {
+          "name": "smiley",
+          "label": "perfect credit, free"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "Myth three: closing old credit cards helps. Usually the opposite. Closing an old card can shorten your credit age and spike your utilization — both of which can drop your score. Often, the best move with an old, no-fee card is simply to leave it open and forget about it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "closing old cards?"
+        },
+        {
+          "name": "warning",
+          "label": "often hurts you"
+        },
+        {
+          "name": "clock",
+          "label": "leave it open"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "A genuine fast-track trick: become an authorized user on the account of someone with great, old credit — a parent or partner. Their long, clean history can get added to your report, instantly aging your credit and boosting your score, without you spending a single cent.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "authorized user"
+        },
+        {
+          "name": "reportcard",
+          "label": "inherit their history"
+        },
+        {
+          "name": "chartup",
+          "label": "an instant boost"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Mortgage rate by credit band (%)",
+      "unit": "%",
+      "narration": "Here's the gap in one chart. Excellent credit, around six and a half percent. Good, about seven. Fair, over eight. Poor, nearing ten. Each step down the bands adds roughly a full percentage point — and tens of thousands of dollars — to the cost of the very same loan.",
+      "data": [
+        {
+          "label": "excellent",
+          "value": 7
+        },
+        {
+          "label": "good",
+          "value": 7
+        },
+        {
+          "label": "fair",
+          "value": 8
+        },
+        {
+          "label": "poor",
+          "value": 10
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s32",
+      "type": "title",
+      "narration": "So how should you actually think about all this?",
+      "heading": "The Real Lesson",
+      "kicker": "a free financial asset"
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Think of your credit score as a financial asset you build — one of the highest-return, lowest-effort ones there is. Moving from poor to excellent can save you more than most people ever earn from investing, and it costs you nothing but good habits over time.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "reportcard",
+          "label": "an asset you build"
+        },
+        {
+          "name": "chartup",
+          "label": "huge return, free"
+        },
+        {
+          "name": "handshake",
+          "label": "just good habits"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "Put a number on it. Raising your score a hundred points can cut your mortgage rate by a full percentage point or more — saving you tens of thousands of dollars. No investment on Earth reliably pays that well for a few months of simple habits. It's the best return in personal finance.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "+100 points"
+        },
+        {
+          "name": "percent",
+          "label": "−1% on every loan"
+        },
+        {
+          "name": "moneybag",
+          "label": "the best ROI there is"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "It's really a trust score. The whole game is proving, slowly and consistently, that you reliably pay people back. Do that, and the entire financial system quietly rewards you with lower prices on everything. Break that trust, and it charges you a fortune.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "it's a trust score"
+        },
+        {
+          "name": "trafficlight",
+          "label": "prove you pay back"
+        },
+        {
+          "name": "percent",
+          "label": "trust = lower prices"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And here's the hopeful part: nothing is permanent. Most negative marks fall off your report after seven years, and their sting fades long before that. Credit is endlessly rebuildable. A rough financial past does not sentence you to a lifetime of bad credit.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "negatives fade in 7 yrs"
+        },
+        {
+          "name": "seedling",
+          "label": "always rebuildable"
+        },
+        {
+          "name": "smiley",
+          "label": "not a life sentence"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "So start today. Check your score — it's free and harmless. Set every bill to auto-pay. Keep your card balances low. And then just let time and consistency do the rest. In a year or two, you can climb from the expensive bottom to the cheap top, and keep that six figures for yourself.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "check it (free)"
+        },
+        {
+          "name": "gear",
+          "label": "automate + stay low"
+        },
+        {
+          "name": "ladder",
+          "label": "climb to the top"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "So do a free audit. Pull all three reports, read them line by line, and dispute anything that's wrong — it's free, and the bureaus are legally required to investigate. Fixing a single reporting error can jump your score overnight, at zero cost to you.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "pull all 3 reports"
+        },
+        {
+          "name": "scissors",
+          "label": "dispute errors"
+        },
+        {
+          "name": "chartup",
+          "label": "an overnight jump"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Because the difference between a poor score and an excellent one isn't luck, or income. It's a handful of simple habits, repeated. And the reward for those boring habits is one of the biggest, quietest bargains in all of personal finance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "simple habits, repeated"
+        },
+        {
+          "name": "trafficlight",
+          "label": "poor → excellent"
+        },
+        {
+          "name": "moneybag",
+          "label": "a six-figure reward"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "And be patient but consistent. Building great credit isn't instant — it takes months of on-time payments and low balances to climb the bands. But it is utterly reliable. Do the boring things, every single month, and the number will climb. It always, eventually, does.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "months of consistency"
+        },
+        {
+          "name": "ladder",
+          "label": "climb the bands"
+        },
+        {
+          "name": "trophy",
+          "label": "it always works"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "So the next time you're tempted to ignore that little three-digit number, remember: it's quietly deciding the price tag on your whole life. Master it, and you tilt every loan, every rate, every big purchase, permanently in your favor.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "trafficlight",
+          "label": "don't ignore it"
+        },
+        {
+          "name": "house",
+          "label": "it prices your life"
+        },
+        {
+          "name": "smiley",
+          "label": "master it, win"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "If this made that mystery number finally make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "trafficlight",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-creditscore",
+      "name": "Credit score (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_score",
+      "quote": "to represent the creditworthiness of an individual"
+    },
+    {
+      "id": "wiki-csus",
+      "name": "Credit score in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_score_in_the_United_States",
+      "quote": "the relative likelihood that the individual will repay debts"
+    },
+    {
+      "id": "wiki-fico",
+      "name": "FICO (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FICO",
+      "quote": "a measure of consumer credit risk"
+    },
+    {
+      "id": "wiki-history",
+      "name": "Credit history (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_history",
+      "quote": "a record of a borrower's responsible repayment of debts"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "the interest rate for a whole year"
+    }
+  ],
+  "youtube": {
+    "title": "What Each Credit Score Costs You Over a Lifetime",
+    "alts": [
+      "Your Credit Score at Every Level (And the $100,000 It Costs)",
+      "Poor vs Excellent Credit: The Lifetime Price Tag"
+    ],
+    "hook": "A three-digit number you rarely look at quietly decides the price of your whole life — the same house, same car, same card cost a poor-credit borrower over $100,000 more than an excellent-credit one. This is what each credit score costs you, by the numbers: the bands (poor 300–579 to excellent 800–850), the 5 factors that build your score (payment history 35%, utilization 30%, age 15%, mix 10%, new credit 10%), the mortgage-rate gap by band (a low score adds 3%+ to every loan), the 'poor pay more' spiral, the free moves to climb the bands, and the myths that keep people stuck. Fully cited.",
+    "bullets": [
+      "The credit score bands: poor to excellent (300–850)",
+      "The 5 factors — and why 2 of them are 65% of your score",
+      "The mortgage rate gap: a low score adds 3%+ to every loan",
+      "The lifetime cost: $100,000+ more for the same houses and cars",
+      "The free moves to climb from poor to excellent",
+      "The costly myths (carrying a balance does NOT help)"
+    ],
+    "tags": [
+      "credit score explained",
+      "what credit score costs",
+      "credit score ranges",
+      "how to improve credit score",
+      "credit score factors",
+      "fico score",
+      "credit utilization",
+      "mortgage rate by credit score",
+      "credit myths",
+      "poor pay more",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#creditscore",
+      "#credit",
+      "#personalfinance",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "YOUR CREDIT SCORE",
+      "hookBot": "COSTS $100,000+",
+      "napkinNumber": "poor → excellent",
+      "napkinSub": "a 3% rate gap",
+      "deco": "trafficlight"
+    },
+    "chapters": [
+      [
+        "what this number actually is",
+        "The number"
+      ],
+      [
+        "what actually moves this number",
+        "The 5 factors"
+      ],
+      [
+        "the part that actually hits your wallet",
+        "The rate gap"
+      ],
+      [
+        "across a lifetime",
+        "The lifetime cost"
+      ],
+      [
+        "the cruel twist",
+        "The trap"
+      ],
+      [
+        "climbing out is genuinely simple",
+        "How to climb"
+      ],
+      [
+        "bust the myths",
+        "The myths"
+      ],
+      [
+        "a financial asset you build",
+        "The real lesson"
+      ]
+    ]
+  }
+}

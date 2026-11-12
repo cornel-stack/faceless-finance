@@ -5076,6 +5076,77 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">each ×10 is a new universe</text>
       </svg>
     );
+  } else if (m === "scorebands") {
+    // The 300-850 credit score gauge with bands.
+    const sweep = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    const bands: [string, string, string][] = [["300-579", "poor", red], ["580-669", "fair", "#d98b5f"], ["670-739", "good", gold], ["740-799", "very good", "#9cc47f"], ["800-850", "excellent", green]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the credit score bands</text>
+        {bands.map(([rng, lab, col], i) => { const x = 120 + i * 150; return <g key={i} opacity={interpolate(sweep, [i * 0.14, i * 0.14 + 0.2], [0, 1], clampBoth)}><rect x={x} y={200} width={135} height={90} rx={8} fill={col as string} stroke={ink} strokeWidth={4} /><text x={x + 67} y={238} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{rng}</text><text x={x + 67} y={266} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={190} y={340} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>pay the most</text>
+        <text x={790} y={340} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>pay the least</text>
+        <text x={VW / 2} y={420} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a 3-digit number that prices your whole life</text>
+      </svg>
+    );
+  } else if (m === "fivefactors") {
+    // The 5 factors as a pie.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    const parts: [string, number, string][] = [["payment history", 35, green], ["utilization", 30, gold], ["age of credit", 15, blue], ["credit mix", 10, "#d98b5f"], ["new credit", 10, "#bfa0d8"]];
+    let acc = 0;
+    const cx = 320, cy = 290, r = 130;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what builds your score</text>
+        {parts.map(([lab, pct, col], i) => { const a0 = acc / 100 * 6.283 - 1.5708; acc += (pct as number) * grow; const a1 = acc / 100 * 6.283 - 1.5708; const large = (a1 - a0) > Math.PI ? 1 : 0; const x0 = cx + r * Math.cos(a0), y0v = cy + r * Math.sin(a0), x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1); return <path key={i} d={`M${cx} ${cy} L${x0} ${y0v} A${r} ${r} 0 ${large} 1 ${x1} ${y1} Z`} fill={col as string} stroke={ink} strokeWidth={3} />; })}
+        {parts.map(([lab, pct], i) => <g key={i}><rect x={560} y={150 + i * 56} width={26} height={26} fill={["#5aa469", "#e8b73a", "#4a7fb5", "#d98b5f", "#bfa0d8"][i]} stroke={ink} strokeWidth={2} /><text x={598} y={170 + i * 56} fontSize={17} fontWeight={800} fill={ink} fontFamily={sans}>{lab} — {pct}%</text></g>)}
+      </svg>
+    );
+  } else if (m === "ratebyband") {
+    // Mortgage rate by credit band.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const rows: [string, string, number, string][] = [["excellent", "6.5%", 160, green], ["good", "7.1%", 200, gold], ["fair", "8.2%", 280, "#d98b5f"], ["poor", "9.5%+", 360, red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">same mortgage, different rate</text>
+        {rows.map(([lab, rate, w, col], i) => { const y = 120 + i * 82; return <g key={i} opacity={interpolate(grow, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><text x={240} y={y + 34} fontSize={17} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text><rect x={260} y={y + 6} width={(w as number) * grow} height={42} rx={6} fill={col as string} stroke={ink} strokeWidth={3} /><text x={260 + (w as number) * grow + 48} y={y + 34} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{rate}</text></g>; })}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a low score adds 3%+ to every loan you'll ever take</text>
+      </svg>
+    );
+  } else if (m === "lifetimecost") {
+    // The lifetime extra cost of a poor score.
+    const pop = spring({ frame, fps, delay: fps * 1.0, config: { damping: 9 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={100} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the lifetime price of a bad score</text>
+        <g transform="translate(270 300)"><circle r={78} fill={green} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>excellent</text><text y={18} fontSize={16} fontWeight={900} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>pays $X</text></g>
+        <text x={470} y={310} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">+</text>
+        <g transform={`translate(700 300) scale(${Math.min(1, pop)})`}><circle r={98} fill={red} stroke={ink} strokeWidth={6} /><text y={-10} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>poor pays</text><text y={18} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">+$100K+</text></g>
+        <text x={VW / 2} y={460} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>same houses, same cars — a six-figure penalty for bad credit</text>
+      </svg>
+    );
+  } else if (m === "creditspiral") {
+    // Bad score → high rates → struggle → worse score.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const steps = ["low score", "high rates", "payments strain", "missed payments", "score drops more"];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the credit trap, going in circles</text>
+        {steps.map((s, i) => { const a = (i / steps.length) * 6.283 - 1.5708; const op = interpolate(reveal, [i * 0.16, i * 0.16 + 0.2], [0, 1], clampBoth); const x = 490 + 180 * Math.cos(a), y = 290 + 150 * Math.sin(a); return <g key={i} opacity={op}><circle cx={x} cy={y} r={54} fill={i % 2 ? "#f3cfc8" : red} stroke={ink} strokeWidth={4} /><text x={x} y={y + 5} fontSize={13} fontWeight={800} fill={i % 2 ? ink : "#fff"} textAnchor="middle" fontFamily={sans}>{s}</text></g>; })}
+        <text x={490} y={296} fontSize={30} textAnchor="middle" fontFamily={sans}>↻</text>
+        <text x={VW / 2} y={492} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a bad score makes it harder to fix a bad score</text>
+      </svg>
+    );
+  } else if (m === "climbthebands") {
+    // The moves to climb from poor to excellent.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const moves: [string, string][] = [["pay on time", "35% of your score"], ["use < 30% of limits", "30% of your score"], ["keep old cards open", "ages your credit"], ["don't over-apply", "limits new dings"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how to climb the bands — free</text>
+        {moves.map(([m2, why], i) => { const y = 120 + i * 82; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={160} y={y} width={640} height={62} rx={10} fill={i === 0 ? green : "#cfe3d4"} stroke={ink} strokeWidth={4} /><text x={190} y={y + 38} fontSize={19} fontWeight={900} fill={ink} fontFamily={sans}>✓ {m2}</text><text x={780} y={y + 38} fontSize={15} fontWeight={700} fill={ink} textAnchor="end" fontFamily={sans}>{why}</text></g>; })}
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

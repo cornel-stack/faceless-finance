@@ -196,7 +196,9 @@ export interface StageScene extends Base {
     // EP065 (money every decade of life) additions:
     | "lifedecades" | "twentiestime" | "fortiesfork" | "peaktodrawdown" | "prioritiesbydecade" | "catchupdecade"
     // EP066 (every level of millionaire) additions:
-    | "millionvsbillionscale" | "secondsscale" | "whatitbuys" | "timetospend" | "millionairerarity" | "millionairetiers";
+    | "millionvsbillionscale" | "secondsscale" | "whatitbuys" | "timetospend" | "millionairerarity" | "millionairetiers"
+    // EP067 (what each credit score costs) additions:
+    | "scorebands" | "fivefactors" | "ratebyband" | "lifetimecost" | "creditspiral" | "climbthebands";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

@@ -123,6 +123,8 @@ export type DoodleName =
   | "cane" | "backpack"
   // EP066 (every level of millionaire) additions:
   | "moneystack" | "stadium"
+  // EP067 (what each credit score costs) additions:
+  | "reportcard" | "trafficlight"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2091,6 +2093,27 @@ function shape(name: DoodleName): React.ReactNode {
           <REllipse cx={50} cy={56} w={44} h={22} fill={GREEN} strokeWidth={1.8} />
           <RLine x1={14} y1={56} x2={14} y2={44} strokeWidth={1.4} />
           <RLine x1={86} y1={56} x2={86} y2={44} strokeWidth={1.4} />
+        </>
+      );
+    case "reportcard":
+      // A report card / credit report with a grade.
+      return (
+        <>
+          <RRect x={24} y={16} w={52} h={68} fill={PARCH} strokeWidth={SW} />
+          <RLine x1={32} y1={30} x2={56} y2={30} strokeWidth={1.6} />
+          <RLine x1={32} y1={40} x2={56} y2={40} strokeWidth={1.6} />
+          <RCircle cx={56} cy={64} d={26} fill={GREEN} strokeWidth={SW} />
+          <text x={56} y={70} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">A</text>
+        </>
+      );
+    case "trafficlight":
+      // A traffic light — red/yellow/green score bands.
+      return (
+        <>
+          <RRect x={38} y={12} w={24} h={76} fill={INK} strokeWidth={SW} />
+          <RCircle cx={50} cy={28} d={14} fill={RED} strokeWidth={1.4} />
+          <RCircle cx={50} cy={50} d={14} fill={YELLOW} strokeWidth={1.4} />
+          <RCircle cx={50} cy={72} d={14} fill={GREEN} strokeWidth={1.4} />
         </>
       );
   }
