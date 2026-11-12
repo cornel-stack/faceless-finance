@@ -216,7 +216,9 @@ export interface StageScene extends Base {
     // EP075 (every level of rent) additions:
     | "renttierladder" | "thirtypercentrule" | "rentvsownlifetime" | "whatrentbuys" | "renthiddencosts"
     // EP076 (every level of car payment) additions:
-    | "carpaymentladder" | "depreciationcliff" | "truecarcost" | "car2041010rule" | "underwaterloan" | "caroppcost";
+    | "carpaymentladder" | "depreciationcliff" | "truecarcost" | "car2041010rule" | "underwaterloan" | "caroppcost"
+    // EP077 (every level of student debt) additions:
+    | "studentdebtladder" | "debttoincomebyfield" | "interestballoon" | "collegeroi" | "repaymentpaths" | "delayedlife";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

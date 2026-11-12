@@ -5706,6 +5706,76 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={450} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the luxury payment is a multi-million-dollar choice</text>
       </svg>
     );
+  } else if (m === "studentdebtladder") {
+    // Student-debt tiers $10K → $300K and what each means.
+    const tiers: [string, string][] = [["$10K", "manageable"], ["$30K", "the US average"], ["$60K", "a grad degree"], ["$100K", "professional school"], ["$300K", "med / law / dental"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => { const w = 180 + i * 130; const y = 100 + i * 74; return <g key={i} opacity={interpolate(climb, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={VW / 2 - w / 2} y={y} width={w} height={58} rx={7} fill={[parch, gold, "#d98b5f", "#c0583a", red][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 37} fontSize={18} fontWeight={900} fill={i >= 2 ? "#fff" : ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 60} y={y + 36} fontSize={13} fontWeight={800} fill={i >= 2 ? "#fff" : ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the student-debt ladder</text>
+      </svg>
+    );
+  } else if (m === "debttoincomebyfield") {
+    // Which degrees pay the debt back — salary vs debt by field.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const rows: [string, string, boolean][] = [["engineering / CS", "high pay, low debt", true], ["nursing", "steady pay, fair debt", true], ["business", "it depends", true], ["law (non-elite)", "big debt, uneven pay", false], ["arts / humanities", "low pay, same debt", false]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">does the degree pay the debt back?</text>
+        {rows.map(([field, note, good], i) => { const y = 92 + i * 72; return <g key={i} opacity={interpolate(reveal, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={200} y={y} width={360} height={56} rx={8} fill="#efe9da" stroke={ink} strokeWidth={3} /><text x={220} y={y + 34} fontSize={15} fontWeight={800} fill={ink} fontFamily={sans}>{field}</text><rect x={580} y={y} width={220} height={56} rx={8} fill={good ? green : red} stroke={ink} strokeWidth={3} /><text x={690} y={y + 29} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{good ? "✓" : "✕"} {note}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "interestballoon") {
+    // Negative amortization — paying, but the balance still grows.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 130, x1 = 870, y0 = 430, yTop = 150;
+    const bal = (t: number) => y0 - (y0 - yTop) * (0.45 + 0.55 * t);
+    const seg = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${bal(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">paying every month — and it still grows</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg} fill="none" stroke={red} strokeWidth={6} />
+        <text x={x0 + 120} y={bal(0) + 30} fontSize={13} fontWeight={800} fill={ink} fontFamily={sans}>you start here</text>
+        <text x={x1 - 40} y={bal(1) - 14} fontSize={14} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>balance keeps rising</text>
+        <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>when the payment is less than the interest, the debt grows</text>
+      </svg>
+    );
+  } else if (m === "collegeroi") {
+    // Degree wage premium vs no degree.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the college wage premium</text>
+        <g transform="translate(320 0)"><rect x={-70} y={430 - 150 * grow} width={140} height={150 * grow} rx={6} fill="#bdbdbd" stroke={ink} strokeWidth={4} /><text x={0} y={456} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>no degree</text><text x={0} y={420 - 150 * grow} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">~$44K</text></g>
+        <g transform="translate(660 0)"><rect x={-70} y={430 - 250 * grow} width={140} height={250 * grow} rx={6} fill={green} stroke={ink} strokeWidth={4} /><text x={0} y={456} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>bachelor's</text><text x={0} y={420 - 250 * grow} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">~$70K</text></g>
+        <text x={VW / 2} y={110} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a degree pays — but only if the debt stays sane</text>
+      </svg>
+    );
+  } else if (m === "repaymentpaths") {
+    // Three repayment paths.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const cols: [string, string][] = [["standard", "10 yrs, highest payment, least interest"], ["income-driven", "% of income, longer, more interest"], ["forgiveness", "PSLF: 10 yrs of public service, wiped"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">three ways to pay it back</text>
+        {cols.map(([t, d], i) => { const x = 200 + i * 290; const op = interpolate(reveal, [i * 0.22, i * 0.22 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 125} y={190} width={250} height={130} rx={12} fill={[gold, "#9cc47f", "#cfe3d4"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={226} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={258} fontSize={11.5} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{d.split(",").map((ln, j) => <tspan key={j} x={x} dy={j === 0 ? 0 : 16}>{ln.trim()}</tspan>)}</text></g>; })}
+        <text x={VW / 2} y={400} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>pick the path that fits your field and your salary</text>
+      </svg>
+    );
+  } else if (m === "delayedlife") {
+    // Debt delays the milestones of adult life.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const items: [string][] = [["buying a house"], ["getting married"], ["having kids"], ["starting a business"], ["saving for retirement"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what the debt quietly delays</text>
+        {items.map(([lab], i) => { const y = 112 + i * 64; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={280} y={y} width={440} height={50} rx={9} fill="#efe9da" stroke={ink} strokeWidth={3} /><text x={310} y={y + 32} fontSize={16} fontWeight={800} fill={ink} fontFamily={sans}>{lab}</text><text x={690} y={y + 32} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>⏳</text></g>; })}
+        <text x={VW / 2} y={456} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the real cost isn't just money — it's years of your life</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

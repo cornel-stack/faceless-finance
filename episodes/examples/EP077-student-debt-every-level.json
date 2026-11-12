@@ -1,0 +1,920 @@
+{
+  "id": "EP077",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Student Debt: $10K to $300K",
+  "slug": "every-level-of-student-debt",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP077 — Every Level series (row 67). Student-debt tiers $10K/$30K/$60K/$100K/$300K and what each means (payment, years, delayed life); the ROI question (college wage premium + which degrees pay back = debt-to-income by field), the interest balloon (negative amortization), repayment paths (standard/income-driven/PSLF forgiveness), delayed-life cost, is college worth it, how to climb down. 6 new motifs (studentdebtladder/debttoincomebyfield/interestballoon/collegeroi/repaymentpaths/delayedlife) + doodles diploma/books. Sources: Student loan/Student debt/Income-driven repayment/Public Service Loan Forgiveness/Education economics. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "For some people it was the best investment they ever made. For others, the worst financial decision of their lives. Same piece of paper — a college degree — and somewhere between ten thousand and three hundred thousand dollars of debt to pay for it. Today we climb every level of student debt, and ask the question that actually matters: was it worth it?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "diploma",
+          "label": "the degree"
+        },
+        {
+          "name": "ballchain",
+          "label": "$10K → $300K"
+        },
+        {
+          "name": "scale",
+          "label": "was it worth it?"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the idea that reframes the whole thing. A student loan isn't good debt or bad debt by default — it's an investment, and like any investment it can pay off spectacularly or blow up in your face. The number that decides which isn't the debt. It's what the degree earns you afterward.",
+      "text": "it's an investment",
+      "sub": "a degree can pay off — or blow up. The field decides which.",
+      "icon": "gradcap"
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "And the scale of this is staggering. Americans now owe well over a trillion and a half dollars in student debt, spread across more than forty million borrowers. It's the second-largest category of household debt in the country, behind only mortgages. This isn't a niche problem — it's reshaping an entire generation's finances.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "$1.7 trillion+ owed"
+        },
+        {
+          "name": "warning",
+          "label": "40M+ borrowers"
+        },
+        {
+          "name": "chartup",
+          "label": "#2 household debt, after mortgages"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So we'll climb the debt ladder from ten thousand to three hundred thousand, reveal which degrees actually pay their debt back and which quietly bury you, expose the interest trap where you pay for years and owe more than you started, and show the hidden cost that isn't money at all. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "$10K → $300K"
+        },
+        {
+          "name": "chartup",
+          "label": "which degrees pay back"
+        },
+        {
+          "name": "hourglass",
+          "label": "the hidden cost: time"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/onedoesnot.jpg",
+      "meme": "One Does Not Simply",
+      "memeTop": "one does not simply",
+      "memeBottom": "pay off $200K in debt on a $40K salary",
+      "narration": "Because the real disaster isn't borrowing for school — it's borrowing a fortune for a degree that was never going to pay it back. Before we climb the levels, let's be clear on what this debt actually is."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what student debt really is.",
+      "heading": "The Basics",
+      "kicker": "borrowing for a future"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Student debt is simply the debt incurred by an individual to pay for education-related expenses — tuition, books, housing, living costs. You borrow against your future earnings, betting that the degree will boost your income by more than the loan will cost you. Sometimes that bet is brilliant. Sometimes it's brutal.",
+      "sourceId": "wiki-sdebt"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "And it comes as a student loan — a type of loan designed to help students pay for tertiary education. The good news: these loans often carry lower interest and gentler repayment terms than other debt. The bad news: unlike almost any other debt, student loans are extraordinarily hard to erase, even in bankruptcy.",
+      "sourceId": "wiki-sloan"
+    },
+    {
+      "id": "s41",
+      "type": "callout",
+      "narration": "For a sense of the typical borrower: the average balance sits around thirty-five to forty thousand dollars, with a monthly payment of roughly three to four hundred dollars. For millions, that payment lands every month for ten, twenty, even twenty-five years — a quiet tax on their entire early adult life.",
+      "text": "~$38,000",
+      "sub": "the average balance — a payment lasting 10-25 years",
+      "icon": "receipt"
+    },
+    {
+      "id": "s8",
+      "type": "title",
+      "narration": "So let's climb the levels — and see what each one means for your life.",
+      "heading": "The Ladder",
+      "kicker": "$10K to $300K"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Here's the whole climb. Ten thousand is manageable. Thirty thousand is roughly the US average for a bachelor's. Sixty thousand usually means a graduate degree. A hundred thousand points to professional school. And three hundred thousand is the crushing top — medical, law, or dental school. The same word, 'student debt,' describes radically different futures.",
+      "motif": "studentdebtladder",
+      "caption": "what each level of student debt means"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "That sixty-thousand-dollar level — the graduate degree — deserves a special warning. A master's can genuinely supercharge a career, or it can simply double your debt for a modest salary bump. Grad school is where smart, ambitious people most often over-borrow, because 'more education' always feels responsible. It isn't always.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "books",
+          "label": "$60K: the master's"
+        },
+        {
+          "name": "scale",
+          "label": "supercharge — or just double the debt"
+        },
+        {
+          "name": "warning",
+          "label": "where the ambitious over-borrow"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "Ten thousand dollars is the manageable level. On a standard plan that's roughly a hundred-dollar monthly payment — about a car insurance bill. For almost any degree that leads to a real job, this amount pays for itself quickly. If this is your level, breathe: you're going to be completely fine.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "$10K: ~$100/mo"
+        },
+        {
+          "name": "smiley",
+          "label": "pays itself back fast"
+        },
+        {
+          "name": "gradcap",
+          "label": "you'll be fine"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Thirty thousand is where most graduates actually land — the national average. That's around three hundred dollars a month for ten years. Totally survivable on a decent salary, but heavy enough to delay your first house or your first real savings. This is the level where the debt starts to shape your choices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "diploma",
+          "label": "$30K: the US average"
+        },
+        {
+          "name": "receipt",
+          "label": "~$300/mo for 10 years"
+        },
+        {
+          "name": "house",
+          "label": "delays the first home"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "image",
+      "src": "img/memes/brain4.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "borrow $30K for a degree that pays $70K",
+      "memeBottom": "borrow $150K for a degree that pays $35K",
+      "narration": "This is the entire game in one image. The exact same act — borrowing for college — is brilliant at one ratio and catastrophic at another. The debt number alone tells you almost nothing without the salary beside it."
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Now the level where debt stops being an inconvenience and starts being a weight.",
+      "heading": "$100,000",
+      "kicker": "professional school"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "A hundred thousand dollars usually means professional school or a pricey private university. That's over a thousand dollars a month — a second rent. At this level, the degree absolutely must deliver a high income, or the math simply never closes. The stakes of 'what did you study' just became enormous.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "$100K: ~$1,100/mo"
+        },
+        {
+          "name": "warning",
+          "label": "the degree MUST deliver"
+        },
+        {
+          "name": "scale",
+          "label": "the math gets tight"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "The hundred-thousand-dollar level is where I see the most heartbreak. A private university, a field that pays modestly, and a graduate who did everything they were told — studied hard, got the degree — and still ends up buried. The system rarely warns seventeen-year-olds that effort and the wrong numbers can still equal disaster.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "$100K + modest salary"
+        },
+        {
+          "name": "warning",
+          "label": "did everything 'right'"
+        },
+        {
+          "name": "hourglass",
+          "label": "still buried"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "And then the number that sounds insane — because it is.",
+      "heading": "$300,000",
+      "kicker": "the crushing top"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Three hundred thousand dollars is the world of medical, dental, and law school. It's a mortgage with no house attached. The saving grace is that these degrees often lead to very high incomes — but the graduate spends their entire thirties digging out of a hole most people never even see the bottom of.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "$300K: med / law / dental"
+        },
+        {
+          "name": "house",
+          "label": "a mortgage, no house"
+        },
+        {
+          "name": "hourglass",
+          "label": "your whole 30s digging out"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "So here's the question that decides everything: does the degree pay the debt back?",
+      "heading": "The ROI",
+      "kicker": "is it worth it?"
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "This is the heart of education economics — the study of economic issues relating to education, including whether a given degree actually pays off. And the honest answer is: it depends enormously on what you study, not just whether you study.",
+      "sourceId": "wiki-edecon"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "On average, a college degree still pays. A bachelor's holder earns dramatically more over a lifetime than someone with only a high school diploma — often over a million dollars more. That wage premium is real, and it's why college, done affordably, is still one of the best investments out there.",
+      "motif": "collegeroi",
+      "caption": "the degree premium is real — if the debt stays sane"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "One honest caveat on that wage premium: it's an average, and averages mislead. Plenty of degree-holders earn less than skilled tradespeople with zero debt. The premium is real and powerful — but it is not a guarantee stamped on the diploma. It has to be earned in the job market afterward.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the premium is an average"
+        },
+        {
+          "name": "wrench",
+          "label": "some tradespeople out-earn grads"
+        },
+        {
+          "name": "warning",
+          "label": "not guaranteed by the paper"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "But the average hides everything. What really matters is the ratio of your debt to your future income. Engineering, computing, and nursing tend to pay the debt back easily. Many arts and humanities degrees carry the exact same debt — but with salaries that make it a lifelong anchor. The field, not the diploma, decides your fate.",
+      "motif": "debttoincomebyfield",
+      "caption": "same debt, wildly different payback by field"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "And let's be fair about the 'useless degree' insult, because it's lazy. There's nothing wrong with studying history or art — the problem is only ever the debt attached to it. Study whatever you love at a price that your future salary can actually carry, and no field is a mistake. It's the ratio, never the subject.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "books",
+          "label": "no subject is 'useless'"
+        },
+        {
+          "name": "calculator",
+          "label": "the debt is the problem"
+        },
+        {
+          "name": "scale",
+          "label": "it's the ratio, not the major"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "So before you borrow, run the single most important number: your expected starting salary versus your total debt. A rough rule — try not to borrow more in total than you expect to earn in your first year out. Break that rule, and the repayment goes from annoying to genuinely dangerous.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "debt ≤ first-year salary"
+        },
+        {
+          "name": "scale",
+          "label": "the rule that protects you"
+        },
+        {
+          "name": "warning",
+          "label": "break it = danger"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Make it concrete. Borrow thirty thousand for a job that pays fifty — comfortable, pays off in a few years. Borrow a hundred and twenty thousand for a job that pays forty — that's a decade or more of your income held hostage. Same determination, opposite lives, decided entirely by that one ratio.",
+      "text": "debt vs. salary",
+      "sub": "$30K→$50K job = fine · $120K→$40K job = trapped",
+      "icon": "scale"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Now the trap that makes big debt even scarier than it looks.",
+      "heading": "The Balloon",
+      "kicker": "paying, and still growing"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "Here's the cruelest part. On some plans, your monthly payment is smaller than the interest piling up — so you pay faithfully every month, and your balance still grows. It's called negative amortization, and it's how people pay for a decade and somehow owe more than the day they graduated.",
+      "motif": "interestballoon",
+      "caption": "when the payment is less than the interest, debt grows"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "There's a sneaky cousin of this called capitalized interest. When you pause payments — in school, or during a deferment — the unpaid interest often gets added onto your principal. From then on, you're paying interest on interest. Those innocent-looking pauses can quietly inflate the debt by thousands before you even start repaying.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "paused? interest capitalizes"
+        },
+        {
+          "name": "chartup",
+          "label": "interest on interest"
+        },
+        {
+          "name": "warning",
+          "label": "pauses inflate the balance"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "This is why the interest rate and the repayment plan matter almost as much as the debt itself. A big balance at a high rate is a snowball rolling the wrong way. The faster you can attack the principal, the less of your life you spend simply paying the lender to let the debt exist.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "a snowball rolling the wrong way"
+        },
+        {
+          "name": "percent",
+          "label": "the rate matters enormously"
+        },
+        {
+          "name": "chartdown",
+          "label": "attack the principal"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And know the difference between federal and private loans, because it's enormous. Federal loans come with income-driven plans, forgiveness, and deferment options — real safety nets. Private loans usually have none of that: miss payments and there's little mercy. As a rule, exhaust every federal option before you ever touch a private loan.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "federal: safety nets"
+        },
+        {
+          "name": "warning",
+          "label": "private: little mercy"
+        },
+        {
+          "name": "handshake",
+          "label": "federal first, always"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "So how do you actually pay it off? There are a few very different paths.",
+      "heading": "Repayment",
+      "kicker": "three paths out"
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "There are three main routes. The standard ten-year plan: highest monthly payment, but the least interest and the fastest freedom. Income-driven plans: payments scale to your income, which helps your cash flow but stretches the debt and the interest for decades. And forgiveness programs, for those who qualify.",
+      "motif": "repaymentpaths",
+      "caption": "standard, income-driven, or forgiveness"
+    },
+    {
+      "id": "s26",
+      "type": "screenshot",
+      "narration": "Income-driven repayment is a program where the amount a borrower is required to pay is adjusted based on the borrower's income. It can be a lifeline when your salary is low — but understand the trade: lower payments now usually mean far more total interest, and many more years in debt.",
+      "sourceId": "wiki-idr"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And watch for the trap at the end of income-driven plans. After twenty or twenty-five years, any remaining balance can be forgiven — but that forgiven amount may be taxed as income, landing you a surprise tax bill of thousands in a single year. Freedom from the loan can come with one last, nasty invoice.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "forgiven after 20-25 yrs"
+        },
+        {
+          "name": "receipt",
+          "label": "but taxed as income"
+        },
+        {
+          "name": "warning",
+          "label": "a surprise final bill"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "screenshot",
+      "narration": "And for some, there's genuine rescue: Public Service Loan Forgiveness — a government program offering indebted professionals a way out of their federal student loan debt. Work ten years in public service, make your payments, and the rest is wiped. For teachers, nurses, and public lawyers, it can erase six figures.",
+      "sourceId": "wiki-pslf"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Public service forgiveness is powerful, but historically it was a bureaucratic nightmare — huge numbers of applicants were rejected over tiny paperwork technicalities. It has improved a lot recently. If you're chasing it, document everything obsessively and confirm your employer and payments qualify every single year. Don't assume — verify.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "diploma",
+          "label": "PSLF: powerful but finicky"
+        },
+        {
+          "name": "warning",
+          "label": "once denied over paperwork"
+        },
+        {
+          "name": "calculator",
+          "label": "document + verify yearly"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "But the biggest cost of student debt was never really the money.",
+      "heading": "The Real Cost",
+      "kicker": "it's the years"
+    },
+    {
+      "id": "s29",
+      "type": "stage",
+      "narration": "The true price of big student debt is measured in delayed life. Every dollar going to loans is a dollar not buying a house, not starting a family, not launching a business, not compounding for retirement. A whole generation is postponing the milestones of adulthood — and that delay is the cost that never shows up on the loan statement.",
+      "motif": "delayedlife",
+      "caption": "the cost that never appears on the statement"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "The numbers on delayed life are stark. Borrowers with heavy student debt are measurably less likely to own a home, and they buy their first house years later than their debt-free peers. The loan doesn't just cost you payments — it literally pushes the milestones of a stable adult life further down the road.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "homeownership delayed years"
+        },
+        {
+          "name": "baby",
+          "label": "family postponed"
+        },
+        {
+          "name": "hourglass",
+          "label": "milestones pushed back"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "And this is the quiet tragedy of the compounding you lose. The twenties are the most powerful decade for investing, because that money has forty years to grow. Spend them shoveling cash at loans instead, and you don't just lose the payments — you lose everything those dollars could have become.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "your 20s = peak compounding"
+        },
+        {
+          "name": "chartdown",
+          "label": "spent on loans instead"
+        },
+        {
+          "name": "hourglass",
+          "label": "lost decades, not just dollars"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "Put the lost compounding in numbers. Four hundred dollars a month — a typical loan payment — invested instead from age twenty-two to sixty-two could grow to well over a million dollars. That's the true, hidden price tag of a big balance: not the debt itself, but the fortune those same dollars never got to become.",
+      "text": "~$1M+",
+      "sub": "what a $400/mo payment could have become over a career",
+      "icon": "seedling"
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "So how do you keep your debt off the dangerous end of this ladder?",
+      "heading": "Climbing Down",
+      "kicker": "borrow less, pay faster"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Move one: borrow as little as possible in the first place. Start at a community college and transfer. Choose an in-state public school over a glamorous private one. Chase scholarships relentlessly. The exact same degree can cost a fifth as much — and nobody ever asks where you did your first two years.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "school",
+          "label": "community college → transfer"
+        },
+        {
+          "name": "piggybank",
+          "label": "in-state over private"
+        },
+        {
+          "name": "diploma",
+          "label": "same degree, 1/5 the cost"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "There are more ways to slash the bill than people realize. Earn college credit in high school with AP or dual-enrollment classes. Test out of courses with CLEP exams. Have an employer that offers tuition assistance? Use every cent of it. Each of these can quietly chop a semester — or a year — off what you borrow.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "books",
+          "label": "AP + dual enrollment"
+        },
+        {
+          "name": "diploma",
+          "label": "test out with CLEP"
+        },
+        {
+          "name": "handshake",
+          "label": "employer tuition aid"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Move two: choose the field with your eyes open. You can absolutely study what you love — but go in knowing what it pays, and borrow accordingly. Passion plus a hundred thousand in debt and a thirty-thousand-dollar salary isn't a dream; it's a trap you'll spend a decade escaping.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "books",
+          "label": "study what you love"
+        },
+        {
+          "name": "calculator",
+          "label": "but know what it pays"
+        },
+        {
+          "name": "warning",
+          "label": "borrow accordingly"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And remember college isn't the only road. Skilled trades — electrician, plumber, welder — pay extremely well, are in desperate demand, and often come with little or no debt because you earn while you learn. For plenty of people, that's a smarter financial path than a four-year degree they'd have to borrow heavily for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "wrench",
+          "label": "trades pay very well"
+        },
+        {
+          "name": "coins",
+          "label": "earn while you learn"
+        },
+        {
+          "name": "smiley",
+          "label": "often little or no debt"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Move three: if you're already in debt, attack it with everything you've got. Pay more than the minimum, throw every windfall at the principal, and refinance if a lower rate is available. The faster you kill it, the sooner your income becomes yours again — and the delayed life finally begins.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "brokenchain",
+          "label": "pay above the minimum"
+        },
+        {
+          "name": "rocket",
+          "label": "throw windfalls at principal"
+        },
+        {
+          "name": "smiley",
+          "label": "your income becomes yours"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "One caution on refinancing, though: refinancing federal loans into a private one can lower your rate, but you permanently give up all those federal protections — income-driven plans, forgiveness, deferment. Only refinance federal debt if you have a rock-solid high income and will never need the safety net. For everyone else, keep it federal.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "percent",
+          "label": "refinance = lower rate"
+        },
+        {
+          "name": "warning",
+          "label": "but lose federal protections"
+        },
+        {
+          "name": "shield",
+          "label": "only if you'll never need them"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "And if you're a parent or a teenager watching this: the decision made at seventeen, about where to go and what to borrow, can shape the next twenty years of a life. It deserves far more thought than it usually gets. Treat the college choice like the six-figure investment it actually is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "backpack",
+          "label": "the choice at 17"
+        },
+        {
+          "name": "scale",
+          "label": "shapes 20 years"
+        },
+        {
+          "name": "gradcap",
+          "label": "a six-figure decision"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Because here's the real lesson: college can be one of the best investments of your life, or one of the worst — and the deciding factor is almost never intelligence or effort. It's the ratio between what you borrow and what the degree earns. Respect that ratio, and the debt is a ladder. Ignore it, and it's an anchor.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "right ratio: a ladder"
+        },
+        {
+          "name": "anchor",
+          "label": "wrong ratio: an anchor"
+        },
+        {
+          "name": "scale",
+          "label": "debt vs earnings decides"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "So don't let a decision made at seventeen quietly run your thirties. Whether you're about to borrow, or already deep in it, the move is the same: face the real numbers, choose the cheapest path that still pays, and attack the balance with everything you have. Information now is worth tens of thousands later.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "backpack",
+          "label": "a 17-year-old's choice"
+        },
+        {
+          "name": "calculator",
+          "label": "face the real numbers"
+        },
+        {
+          "name": "rocket",
+          "label": "worth tens of thousands"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "So find your level, run the debt-to-salary check, and pick the cheapest path to the degree that actually pays. A smart borrower turns a loan into a career. A careless one turns it into a decade-long sentence. The paper is the same — the math is everything.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "run debt-vs-salary"
+        },
+        {
+          "name": "diploma",
+          "label": "cheapest path to a paying degree"
+        },
+        {
+          "name": "chartup",
+          "label": "the math is everything"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "If this helped you see student debt for what it really is — an investment that lives or dies on the numbers — hit subscribe, and tell me which number you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "diploma",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-sdebt",
+      "name": "Student debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_debt",
+      "quote": "the debt incurred by an individual to pay for education-related expenses"
+    },
+    {
+      "id": "wiki-sloan",
+      "name": "Student loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_loan",
+      "quote": "a type of loan designed to help students pay for tertiary education"
+    },
+    {
+      "id": "wiki-edecon",
+      "name": "Education economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Education_economics",
+      "quote": "the study of economic issues relating to education"
+    },
+    {
+      "id": "wiki-idr",
+      "name": "Income-driven repayment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income-driven_repayment",
+      "quote": "the amount a borrower is required to pay is adjusted based on the borrower's income"
+    },
+    {
+      "id": "wiki-pslf",
+      "name": "Public Service Loan Forgiveness (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Public_Service_Loan_Forgiveness",
+      "quote": "a way out of their federal student loan debt"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Student Debt: $10K to $300K",
+    "alts": [
+      "What Each Level of Student Debt Really Means ($10K to $300K)",
+      "Student Debt Explained: From $10K to a $300K Hole"
+    ],
+    "hook": "For some it was the best investment of their lives; for others, the worst financial decision they ever made. Same degree — and anywhere from $10K to $300K of debt to pay for it. This is every level of student debt: $10K (manageable), $30K (the US average), $60K (grad school), $100K (professional school), and $300K (med/law/dental). We answer the only question that matters — does the degree pay the debt back? — with the college wage premium, debt-to-income by field, the negative-amortization trap (paying for years and owing MORE), the repayment paths (standard, income-driven, PSLF forgiveness), the delayed-life cost, and how to borrow less and pay it off faster. Fully cited.",
+    "bullets": [
+      "What each level means: $10K → $300K",
+      "Does the degree pay the debt back? (ROI by field)",
+      "The negative-amortization trap — paying and still growing",
+      "Repayment paths: standard, income-driven, PSLF forgiveness",
+      "The real cost: delayed house, family, and retirement",
+      "How to borrow less and pay it off faster"
+    ],
+    "tags": [
+      "student debt",
+      "student loans",
+      "student loan debt",
+      "is college worth it",
+      "income driven repayment",
+      "PSLF",
+      "student loan forgiveness",
+      "college ROI",
+      "how to pay off student loans",
+      "negative amortization",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#studentdebt",
+      "#studentloans",
+      "#personalfinance",
+      "#college"
+    ],
+    "thumbnail": {
+      "hookTop": "STUDENT DEBT",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "$300K",
+      "napkinSub": "a mortgage, no house",
+      "deco": "diploma"
+    },
+    "chapters": [
+      [
+        "what student debt really is",
+        "The basics"
+      ],
+      [
+        "see what each one means for your life",
+        "The ladder"
+      ],
+      [
+        "debt stops being an inconvenience and starts being a weight",
+        "$100,000"
+      ],
+      [
+        "the number that sounds insane",
+        "$300,000"
+      ],
+      [
+        "does the degree pay the debt back",
+        "The ROI"
+      ],
+      [
+        "the trap that makes big debt even scarier",
+        "The balloon"
+      ],
+      [
+        "how do you actually pay it off",
+        "Repayment"
+      ],
+      [
+        "the biggest cost of student debt was never really the money",
+        "The real cost"
+      ],
+      [
+        "keep your debt off the dangerous end",
+        "Climbing down"
+      ]
+    ]
+  }
+}

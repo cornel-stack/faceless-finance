@@ -140,6 +140,7 @@ export type DoodleName =
   | "camera" | "shoppingcart"
   | "skyline" | "lease"
   | "truck" | "steeringwheel"
+  | "diploma" | "books"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2320,6 +2321,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={50} y1={61} x2={50} y2={82} strokeWidth={SW} />
           <RLine x1={41} y1={48} x2={23} y2={40} strokeWidth={SW} />
           <RLine x1={59} y1={48} x2={77} y2={40} strokeWidth={SW} />
+        </>
+      );
+    case "diploma":
+      // A rolled diploma with a ribbon.
+      return (
+        <>
+          <RRect x={22} y={40} w={56} h={26} fill={PARCH} strokeWidth={SW} />
+          <RCircle cx={22} cy={53} d={26} fill={PARCH} strokeWidth={SW} />
+          <RCircle cx={78} cy={53} d={26} fill={PARCH} strokeWidth={SW} />
+          <RLine x1={36} y1={50} x2={64} y2={50} strokeWidth={2} />
+          <RLine x1={36} y1={57} x2={60} y2={57} strokeWidth={2} />
+          <RCircle cx={50} cy={72} d={12} fill={RED} strokeWidth={1.6} />
+        </>
+      );
+    case "books":
+      // A stack of books — education.
+      return (
+        <>
+          <RRect x={24} y={62} w={52} h={16} fill={RED} strokeWidth={SW} />
+          <RRect x={20} y={46} w={56} h={16} fill={GOLD} strokeWidth={SW} />
+          <RRect x={26} y={30} w={48} h={16} fill={ARMY} strokeWidth={SW} />
+          <RLine x1={30} y1={38} x2={30} y2={78} strokeWidth={1.4} />
         </>
       );
   }
