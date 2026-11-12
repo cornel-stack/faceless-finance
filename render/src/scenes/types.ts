@@ -234,7 +234,9 @@ export interface StageScene extends Base {
     // EP084 (The Price Tag — housing market 2026 by state) additions:
     | "statepriceladder" | "whatfourhundredkbuys" | "sunbeltmigration" | "crashornocrash"
     // EP085 (The Price Tag — cost of a degree by country) additions:
-    | "tuitionbars" | "tuitioninflationcurve" | "whyustuition" | "freecollegemodel";
+    | "tuitionbars" | "tuitioninflationcurve" | "whyustuition" | "freecollegemodel"
+    // EP086 (The Price Tag — expensive cities by what you keep) additions:
+    | "grosspayillusion" | "citykeepbars" | "taxwedgebite" | "whatyoukeepfunnel";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

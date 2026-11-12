@@ -6295,6 +6295,103 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         </g>
       </svg>
     );
+  } else if (m === "grosspayillusion") {
+    // Same gross salary, two very different amounts kept.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const cols: [string, string, number, string][] = [
+      ["high-tax\nmegacity", "keeps a sliver", 36, red],
+      ["low-tax\naffordable city", "keeps a fortune", 230, green],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">same gross salary — what's left</text>
+        <text x={VW / 2} y={84} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>both earn the exact same six figures</text>
+        {cols.map(([lab, note, kept, col], i) => {
+          const x = 300 + i * 380; const full = 300; const keptH = full * (kept / 300) * grow;
+          return (
+            <g key={i}>
+              <rect x={x - 70} y={440 - full} width={140} height={full} rx={6} fill="#efe9da" stroke={ink} strokeWidth={3} />
+              <rect x={x - 70} y={440 - keptH} width={140} height={keptH} rx={6} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x} y={468} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab.split("\n").map((ln, j) => <tspan key={j} x={x} dy={j === 0 ? 0 : 15}>{ln}</tspan>)}</text>
+              <text x={x} y={430 - keptH} fontSize={13} fontWeight={900} fill={col as string} textAnchor="middle" fontFamily={sans}>{note}</text>
+            </g>
+          );
+        })}
+        <text x={300} y={150} fontSize={12} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>tax + rent</text>
+      </svg>
+    );
+  } else if (m === "citykeepbars") {
+    // What a pro keeps after tax & rent, by city — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["New York", 20, red],
+      ["London", 24, "#d98b5f"],
+      ["San Francisco", 28, "#d98b5f"],
+      ["Toronto", 34, gold],
+      ["Austin", 46, "#9cc47f"],
+      ["Dubai", 60, green],
+    ];
+    const x0 = 250, xMax = 850, maxV = 60;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">money kept per year, after tax &amp; rent</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 90 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same job, same effort — triple the money kept</text>
+      </svg>
+    );
+  } else if (m === "taxwedgebite") {
+    // A paycheck pie with a tax wedge bitten out of it.
+    const bite = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    const ang = (wedgeFrac: number) => wedgeFrac * Math.PI * 2;
+    const frac = 0.42 * bite;
+    const ex = 490 + 160 * Math.sin(ang(frac));
+    const ey = 270 - 160 * Math.cos(ang(frac));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the tax wedge takes the first bite</text>
+        <g transform="translate(490 270)">
+          <circle r={160} fill={gold} stroke={ink} strokeWidth={5} />
+          <path d={`M0 0 L0 -160 A160 160 0 ${frac > 0.5 ? 1 : 0} 1 ${ex - 490} ${ey - 270} Z`} fill={red} stroke={ink} strokeWidth={4} opacity={bite} />
+          <text y={40} x={30} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>you keep</text>
+          <text y={-80} x={-40} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans} opacity={bite}>taxes</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>NYC stacks federal + state + city tax — three bites, not one</text>
+      </svg>
+    );
+  } else if (m === "whatyoukeepfunnel") {
+    // Gross poured in top, a thin trickle kept at bottom.
+    const flow = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const stages: [string, string][] = [["GROSS SALARY", gold], ["− taxes", "#d98b5f"], ["− rent", red], ["− living premium", "#c0583a"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the paycheck funnel</text>
+        {stages.map(([lab, col], i) => {
+          const y = 90 + i * 78; const w = 420 - i * 70;
+          const op = interpolate(flow, [i * 0.2, i * 0.2 + 0.25], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <rect x={VW / 2 - w / 2} y={y} width={w} height={56} rx={8} fill={col as string} stroke={ink} strokeWidth={3.5} />
+              <text x={VW / 2} y={y + 35} fontSize={16} fontWeight={900} fill={i === 0 ? ink : "#fff"} textAnchor="middle" fontFamily={i === 0 ? "Georgia, serif" : sans}>{lab}</text>
+            </g>
+          );
+        })}
+        <g opacity={interpolate(flow, [0.8, 1], [0, 1], clampBoth)}>
+          <rect x={VW / 2 - 70} y={420} width={140} height={48} rx={8} fill={green} stroke={ink} strokeWidth={4} />
+          <text x={VW / 2} y={451} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>what you keep</text>
+        </g>
+        <text x={VW / 2} y={496} fontSize={13} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>in the priciest cities, the trickle is shockingly thin</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

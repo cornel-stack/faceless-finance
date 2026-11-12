@@ -1,0 +1,809 @@
+{
+  "id": "EP086",
+  "series": "Napkin Numbers",
+  "title": "The Most Expensive Cities by What You Actually Keep",
+  "slug": "expensive-cities-what-you-keep",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP086 — The Price Tag series (topic 76). Rank cities by DISPOSABLE income (what you keep after tax + rent), not gross pay: NYC/SF/London keep least; Austin/Dubai/no-income-tax hubs keep 2-3x more. Gross-pay illusion, real income, the tax wedge (NYC triple-taxed), the funnel (tax->rent->premium), purchasing power, same-salary-two-lives, negotiate-net + remote arbitrage. Chart-heavy. 4 new motifs (grosspayillusion/citykeepbars/taxwedgebite/whatyoukeepfunnel) + reuse samesalarystates/realwealthformula (EP061). Sources: Disposable income/Cost of living/Real income/Tax incidence/Purchasing power. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "A software engineer earning two hundred thousand dollars in New York City can end the year with less cash in the bank than someone earning ninety thousand in a cheaper town. Same effort, bigger paycheck, less money kept. Because the real cost of a city isn't your salary — it's what's left after the city takes its cut. Today we rank the world's cities by what you actually keep.",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "$200K in NYC"
+        },
+        {
+          "name": "moneybag",
+          "label": "less kept than $90K elsewhere"
+        },
+        {
+          "name": "scale",
+          "label": "ranked by what's left"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that stops people cold. Take a comfortable one hundred twenty thousand dollar salary in New York. After income tax, and after the rent a professional actually pays there, you're left with roughly twenty thousand dollars of real breathing room for the entire year. The headline salary is a mirage. What you keep is the truth.",
+      "text": "$20K",
+      "sub": "kept from a $120K NYC salary, after tax & rent",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank cities by what you keep, not what you earn. We'll expose the gross-pay illusion, measure the tax wedge that bites first, follow your paycheck down the funnel of rent and cost of living, and reveal where your money actually stretches furthest on Earth. The most expensive city isn't the priciest — it's the one that keeps the most of you.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "keep, not earn"
+        },
+        {
+          "name": "percent",
+          "label": "the tax wedge"
+        },
+        {
+          "name": "globe",
+          "label": "where money stretches"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "chase the biggest salary",
+      "memeBottom": "chase the biggest take-home",
+      "narration": "Because almost everyone optimizes the wrong number. They chase the biggest offer, move to the glamorous expensive city, and wonder why they feel broke on six figures. The winners optimize take-home. First, let's define the number that actually matters."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the only paycheck number that really counts.",
+      "heading": "What You Keep",
+      "kicker": "gross is a lie"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-disposable",
+      "narration": "The number that matters is disposable income. The definition is blunt: it's total personal income minus current taxes on income. That's the money that actually lands in your account. But even that isn't the end — because out of what's left, your city demands rent, and rent is where the real damage happens."
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice how backwards our instincts are. We celebrate the big salary and the famous skyline, and quietly pity the person who took less money in a smaller city. But if the smaller-city worker keeps more, invests more, and stresses less, who exactly is winning? The prestige and the wealth are often pointing in opposite directions.",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "we cheer the big salary"
+        },
+        {
+          "name": "moneybag",
+          "label": "but who keeps more?"
+        },
+        {
+          "name": "scale",
+          "label": "prestige vs wealth"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So there are really three salaries hiding in one offer. There's gross — the big number on the contract. There's net — what survives taxes. And there's what's left after rent and basic living, the only number that buys you a life. Two cities can show the same gross and leave you with wildly different thirds.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "gross: the headline"
+        },
+        {
+          "name": "scissors",
+          "label": "net: after tax"
+        },
+        {
+          "name": "moneybag",
+          "label": "kept: after rent"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "sourceId": "wiki-col",
+      "narration": "That third number is governed by cost of living — the cost of maintaining a certain standard of living in a given place. Two engineers with identical jobs and identical pay can live like royalty in one city and paycheck-to-paycheck in another, purely because of what the same basket of life costs where they signed the lease."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And cost of living is really a bundle of separate monsters. Rent is the biggest, but taxes, transport, groceries, healthcare, and childcare all cost more in a pricey city too. Each one is quietly inflated. Stack them up and an expensive city isn't a little pricier than a cheap one — it can be twice as expensive to live the exact same day.",
+      "props": [
+        {
+          "name": "basket",
+          "label": "rent, tax, food, care"
+        },
+        {
+          "name": "chartup",
+          "label": "each one inflated"
+        },
+        {
+          "name": "warning",
+          "label": "2× for the same day"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "motif": "grosspayillusion",
+      "caption": "same salary, very different reality",
+      "narration": "This is the gross-pay illusion in one picture. Two workers both earn the same six-figure salary. One lives in a high-tax, high-rent megacity; the other in a low-tax, affordable one. Same gross. But by the time the city finishes taking its share, one keeps a sliver and the other keeps a fortune. The headline number told you nothing."
+    },
+    {
+      "id": "s10",
+      "type": "screenshot",
+      "sourceId": "wiki-realincome",
+      "narration": "Economists fixed this confusion long ago with real income — the income of individuals or nations after adjusting for inflation, and for local prices. A dollar in Manhattan and a dollar in Houston are simply not the same dollar. Real income strips away the illusion and asks the only honest question: how much life can this money actually buy here?"
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So a dollar is not a dollar everywhere. In an expensive city, every dollar is quietly shrunk — by taxes first, then by rent, then by the premium on everything from coffee to childcare. The same paycheck can be worth twice as much two hundred miles away. Your salary doesn't set your standard of living. Your city does.",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "a dollar isn't a dollar"
+        },
+        {
+          "name": "faucet",
+          "label": "shrunk by tax, then rent"
+        },
+        {
+          "name": "globe",
+          "label": "your city sets your life"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "stage",
+      "motif": "colindex100",
+      "caption": "the cost-of-living index — 100 is average",
+      "narration": "This is how the pros measure it: a cost-of-living index, where a hundred is the national average. A city at sixty-five is a third cheaper than normal; a city at two hundred costs twice as much for the identical life. Put your salary against that index, and a dazzling offer in a two-hundred city can be worth less than a modest one at seventy."
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "So let's rank them by the only metric that counts.",
+      "heading": "The Ranking",
+      "kicker": "money left standing"
+    },
+    {
+      "id": "s13",
+      "type": "stage",
+      "motif": "citykeepbars",
+      "caption": "what a pro keeps after tax & rent, by city",
+      "narration": "Take a single well-paid professional and drop them into each city on the same real job. Then measure what's left after income tax and typical rent. New York, San Francisco, and London hemorrhage the most — glamorous, high-paying, and quietly brutal on the wallet. Meanwhile, low-tax hubs and affordable boomtowns let that exact worker keep two or three times more."
+    },
+    {
+      "id": "s14",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Money kept per year after tax & rent ($K)",
+      "unit": "$K",
+      "narration": "Put real numbers on it. On a comparable salary, our worker keeps around twenty thousand a year in New York, a little more in London and San Francisco, more again in Toronto, close to fifty thousand in Austin, and about sixty thousand in no-income-tax Dubai. Same job, same effort — and triple the money kept, depending only on the city.",
+      "data": [
+        {
+          "label": "New York",
+          "value": 20
+        },
+        {
+          "label": "London",
+          "value": 24
+        },
+        {
+          "label": "San Fran",
+          "value": 28
+        },
+        {
+          "label": "Toronto",
+          "value": 34
+        },
+        {
+          "label": "Austin",
+          "value": 46
+        },
+        {
+          "label": "Dubai",
+          "value": 60
+        }
+      ],
+      "highlight": 0
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Say the quiet part out loud. In New York, roughly four out of every five dollars of a professional's salary are gone to taxes and rent before anything else. You work most of the year just to pay the government and a landlord. Only the final sliver is actually, truly yours to keep.",
+      "text": "78%",
+      "sub": "of a NYC paycheck gone to tax + rent",
+      "icon": "percent"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Flip the usual list upside down and it gets uncomfortable. The cities we treat as the ultimate prizes — New York, San Francisco, London — are the ones that leave you with the least. By the measure that matters, the most prestigious addresses on Earth are among the most expensive places you can possibly try to build wealth.",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "the 'prize' cities"
+        },
+        {
+          "name": "chartdown",
+          "label": "keep the least"
+        },
+        {
+          "name": "warning",
+          "label": "prestige ≠ wealth"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Now add the cruelest twist: the high-salary cities are high-salary precisely because they're expensive. Companies pay New York and London premiums to offset the cost — but the offset is never enough, and it's fully taxed. You get a bigger number and a smaller life. The raise was bait, and the city swallowed it whole.",
+      "props": [
+        {
+          "name": "magnet",
+          "label": "pay premium as bait"
+        },
+        {
+          "name": "scissors",
+          "label": "offset gets taxed away"
+        },
+        {
+          "name": "warning",
+          "label": "bigger number, smaller life"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "Because before rent even arrives, the tax wedge strikes first.",
+      "heading": "The Tax Wedge",
+      "kicker": "who takes the first cut"
+    },
+    {
+      "id": "s17",
+      "type": "stage",
+      "motif": "taxwedgebite",
+      "caption": "the first bite out of every paycheck",
+      "narration": "The tax wedge is the chunk of your paycheck that never reaches you. In a high-tax city like New York, you stack federal, state, and city income taxes on top of each other — the only major US city that taxes your income a third time. By contrast, a handful of places take almost nothing. That first bite sets the entire game."
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the tax wedge is sneaky because it's invisible. It never hits your bank account, so you never feel it leave — but it's often the single biggest expense of your entire year, bigger than rent, bigger than anything. The cities that win on take-home usually win right here, by simply never taking that first, enormous, silent bite.",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "the silent first bite"
+        },
+        {
+          "name": "receipt",
+          "label": "often bigger than rent"
+        },
+        {
+          "name": "warning",
+          "label": "you never feel it leave"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-incidence",
+      "narration": "Economists study exactly this with tax incidence, which measures who actually pays for a tax. The lesson for you is simple: before you accept an offer, find out who really takes the first cut of your pay. In some cities three separate governments do. In others, barely one. That difference alone can be worth tens of thousands a year."
+    },
+    {
+      "id": "s19",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Tax + rent as % of a $120K salary",
+      "unit": "%",
+      "narration": "Here's how much of a professional's salary vanishes to tax plus rent before they buy a single thing. In New York it's nearly eighty percent gone. London and Toronto aren't far behind. Austin keeps that combined bite closer to half. And Dubai, with no income tax, lets you hold on to the lion's share. Most of your raise is really a geography decision.",
+      "data": [
+        {
+          "label": "New York",
+          "value": 78
+        },
+        {
+          "label": "London",
+          "value": 72
+        },
+        {
+          "label": "Toronto",
+          "value": 62
+        },
+        {
+          "label": "Austin",
+          "value": 52
+        },
+        {
+          "label": "Dubai",
+          "value": 32
+        }
+      ],
+      "highlight": 0
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And taxes aren't one tax — they stack. Federal income tax, then state income tax, then in a few places a city income tax, plus sales taxes and property taxes layered on top. Each layer is small-sounding on its own. Together they can quietly claim close to half of a high earner's pay before rent even enters the picture.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "federal + state + city"
+        },
+        {
+          "name": "ledger",
+          "label": "sales + property too"
+        },
+        {
+          "name": "warning",
+          "label": "~half, before rent"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is why the no-income-tax havens punch so far above their weight. Dubai, and US states like Texas, Florida, and Nevada, simply never take that first slice. A mid-level salary there can out-keep a huge salary in a triple-taxed city. The money isn't about how much you make. It's about how many hands reach in before you.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "no-income-tax havens"
+        },
+        {
+          "name": "moneybag",
+          "label": "keep the first slice"
+        },
+        {
+          "name": "mappin",
+          "label": "TX · FL · NV · Dubai"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "And the havens are closer than you think. Nine US states charge zero income tax at all — Texas, Florida, Nevada, Washington, Tennessee, and more. For a high earner, simply crossing a state line can mean keeping an extra ten, twenty, even thirty thousand dollars a year, for the exact same job and the exact same paycheck on paper.",
+      "text": "9 states",
+      "sub": "charge zero income tax — TX, FL, NV, WA, TN…",
+      "icon": "mappin"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Watch your whole paycheck travel down the funnel.",
+      "heading": "The Funnel",
+      "kicker": "where it all goes"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "motif": "whatyoukeepfunnel",
+      "caption": "gross in the top, a trickle out the bottom",
+      "narration": "Picture your gross salary poured in at the top. First the tax wedge drains away a third or more. Then rent — the single biggest expense — takes another enormous gulp. Then transport, food, and the big-city premium on everything. What trickles out the bottom is what you keep. In the priciest cities, that trickle is shockingly thin."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the funnel has a sneaky leak most people forget: lifestyle creep. Expensive cities don't just cost more — they tempt you to spend more, on dinners, status, and keeping up. So the pricey city drains you twice: once through unavoidable costs, and again through the spending it quietly pressures you into. The thin trickle gets thinner.",
+      "props": [
+        {
+          "name": "champagne",
+          "label": "lifestyle creep"
+        },
+        {
+          "name": "faucet",
+          "label": "drained twice"
+        },
+        {
+          "name": "chartdown",
+          "label": "the trickle thins"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "sourceId": "wiki-ppp",
+      "narration": "And what you keep only matters by its purchasing power — the amount of products and services available for purchase with it. Twenty thousand dollars kept in a cheap city buys a real life: savings, travel, a cushion. The same twenty thousand kept in Manhattan barely covers a few months of ordinary expenses. It's not the pile that counts. It's what the pile can buy."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Purchasing power is why travelers feel rich abroad and locals feel broke at home. The same kept dollars that feel tight in London stretch into a comfortable life in a cheaper country. When you measure wealth in what your money buys rather than the number itself, the global map of 'expensive' and 'cheap' completely rearranges.",
+      "props": [
+        {
+          "name": "globe",
+          "label": "rich abroad, broke at home"
+        },
+        {
+          "name": "basket",
+          "label": "measure what it buys"
+        },
+        {
+          "name": "scale",
+          "label": "the map rearranges"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "motif": "samesalarystates",
+      "caption": "one salary, two completely different lives",
+      "narration": "Here's the same hundred-thousand-dollar salary living two different lives. In the expensive city it means a cramped apartment, a long commute, and nothing left to save. In the affordable one it means a house, a yard, and a growing investment account. Identical income, opposite outcomes — written entirely by the cost of the city around it."
+    },
+    {
+      "id": "s46",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "six-figure salary, broke in Manhattan",
+      "memeBottom": "smaller salary, wealthy in Austin",
+      "narration": "This is the choice modern workers actually face, even if nobody frames it this way. The glamorous broke life, or the quiet wealthy one. Once you start measuring by what you keep, the sweaty indecision disappears — and the obvious answer is rarely the famous city."
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the beast at the center of the funnel is always rent. In the priciest cities, housing alone can eat forty to fifty percent of a take-home paycheck, leaving almost nothing for everything else. Tame your rent and you tame the whole equation. It is, by far, the biggest lever over what any city lets you keep.",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "rent is the beast"
+        },
+        {
+          "name": "percent",
+          "label": "40-50% of take-home"
+        },
+        {
+          "name": "scale",
+          "label": "tame rent, tame it all"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And rent has a cruel feature: it rises with the city's success. The more desirable and high-paying a city becomes, the faster rents climb to swallow those higher salaries. It's a treadmill — earn more, pay more, keep the same. Which is exactly why raw salary growth in a hot city so rarely turns into real, kept wealth.",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "rent chases salaries up"
+        },
+        {
+          "name": "stopwatch",
+          "label": "the treadmill"
+        },
+        {
+          "name": "warning",
+          "label": "earn more, keep the same"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "So how do you actually win this game?",
+      "heading": "What To Do",
+      "kicker": "optimize take-home"
+    },
+    {
+      "id": "s27",
+      "type": "stage",
+      "motif": "realwealthformula",
+      "caption": "wealth = what you keep, not what you earn",
+      "narration": "The whole thing collapses to one formula. Your real progress isn't your salary — it's your income, minus taxes, minus the cost of your city, with whatever's left going to work for you. Chase that bottom line, not the headline. A smaller salary in the right city can build wealth faster than a huge one in the wrong one."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "present",
+      "narration": "One more rule: protect what you keep from inflation and taxes, don't just hoard it. The money a cheap city lets you save only builds wealth if you invest it. The real magic isn't keeping more — it's keeping more and putting it to work, so a low-cost city funds the compounding a high-cost one never could.",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "invest what you keep"
+        },
+        {
+          "name": "snowball",
+          "label": "let it compound"
+        },
+        {
+          "name": "chartup",
+          "label": "the city funds it"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "pose": "present",
+      "narration": "So negotiate net, not gross. A higher offer in a brutally taxed, sky-high-rent city can be a pay cut in disguise. Before you accept, run the real math: subtract that city's taxes and that city's rent, and compare what's actually left. The best offer is the one with the biggest number at the bottom, not the top.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "negotiate net, not gross"
+        },
+        {
+          "name": "warning",
+          "label": "a 'raise' can be a cut"
+        },
+        {
+          "name": "moneybag",
+          "label": "biggest bottom line wins"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "present",
+      "narration": "And look past income tax to the full tax picture. A state with no income tax might claw it back through high property or sales taxes. A country with brutal income tax might offer free healthcare and schooling that quietly hands the money back. Always compare the whole package — total taxes in, real services out — not a single headline rate.",
+      "props": [
+        {
+          "name": "ledger",
+          "label": "see the full tax picture"
+        },
+        {
+          "name": "hospital",
+          "label": "services handed back"
+        },
+        {
+          "name": "scale",
+          "label": "total in, real out"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if your work travels, treat your city as your single biggest financial decision. Earning a big-city salary while living somewhere low-tax and affordable is the closest thing to a cheat code modern work offers. You keep the income and delete the two biggest costs. That gap — between a fat paycheck and a cheap city — is pure, compounding wealth.",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "remote = cheat code"
+        },
+        {
+          "name": "mappin",
+          "label": "big pay, cheap city"
+        },
+        {
+          "name": "chartup",
+          "label": "the gap compounds"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "present",
+      "narration": "But don't move on the spreadsheet alone. A city is family, friends, climate, and career ladders, not just a tax rate. The point isn't to chase the cheapest dot on the map — it's to stop overpaying blindly, and to know the true price of the city you love. Sometimes it's worth it. Just never by accident.",
+      "props": [
+        {
+          "name": "heart",
+          "label": "not just a number"
+        },
+        {
+          "name": "scale",
+          "label": "know the true price"
+        },
+        {
+          "name": "smiley",
+          "label": "worth it, on purpose"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. The most expensive city on Earth isn't the one with the highest prices — it's the one that keeps the most of your life in exchange for the least in return. Rank your options by what you keep, and the glamorous, famous, 'successful' cities suddenly look like the worst deals of all.",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "expensive = keeps the most of you"
+        },
+        {
+          "name": "scale",
+          "label": "rank by what you keep"
+        },
+        {
+          "name": "warning",
+          "label": "glamour is a bad deal"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the cost compounds in a way that's easy to miss. Keeping an extra twenty thousand a year in a cheap city, invested for a few decades, becomes a fortune. The expensive city didn't just cost you that twenty thousand — it cost you everything that money would have grown into. The priciest cities are quietly the most expensive places to build a future.",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "the gap compounds"
+        },
+        {
+          "name": "moneytree",
+          "label": "it costs the future too"
+        },
+        {
+          "name": "chartup",
+          "label": "decades of lost growth"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this changed how you read a job offer, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-disposable",
+      "name": "Disposable and discretionary income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Disposable_and_discretionary_income",
+      "quote": "total personal income minus current taxes on income"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "the cost of maintaining a certain standard of living"
+    },
+    {
+      "id": "wiki-realincome",
+      "name": "Real income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_income",
+      "quote": "the income of individuals or nations after adjusting for inflation"
+    },
+    {
+      "id": "wiki-incidence",
+      "name": "Tax incidence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_incidence",
+      "quote": "the tax incidence measures who actually pays for a tax"
+    },
+    {
+      "id": "wiki-ppp",
+      "name": "Purchasing power (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power",
+      "quote": "the amount of products and services available for purchase"
+    }
+  ],
+  "youtube": {
+    "title": "The Most Expensive Cities by What You Actually Keep",
+    "alts": [
+      "Why $200K in New York Is Poorer Than $90K Elsewhere",
+      "Cities Ranked by What You Actually Keep (Not What You Earn)"
+    ],
+    "hook": "A $200,000 salary in New York can leave you with less cash than $90,000 in a cheaper city — because the real cost of a city isn't your salary, it's what you keep after taxes and rent. This is every major city ranked by disposable income: what a professional actually keeps after income tax and typical rent. New York, San Francisco and London keep the least (in NYC, ~80% of a $120K salary is gone to tax + rent before you buy a thing). Low-tax, affordable hubs like Austin — and no-income-tax Dubai — let the same worker keep two or three times more. We break down the gross-pay illusion, the tax wedge (NYC is the only major US city that taxes income three times), real income vs nominal, purchasing power, the paycheck funnel, and exactly how to optimize take-home: negotiate net not gross, and use remote-work geographic arbitrage. Fully cited.",
+    "bullets": [
+      "Cities ranked by what you KEEP after tax & rent",
+      "The gross-pay illusion: why six figures feels broke",
+      "The tax wedge — and NYC's rare triple income tax",
+      "No-income-tax havens: Dubai, Texas, Florida, Nevada",
+      "The paycheck funnel: tax, then rent, then the premium",
+      "How to win: negotiate net, not gross — and arbitrage"
+    ],
+    "tags": [
+      "cost of living",
+      "most expensive cities",
+      "disposable income",
+      "take home pay",
+      "cities ranked",
+      "new york cost of living",
+      "dubai no income tax",
+      "geographic arbitrage",
+      "best cities for money",
+      "real income",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#costofliving",
+      "#takehomepay",
+      "#personalfinance",
+      "#citiesranked"
+    ],
+    "thumbnail": {
+      "hookTop": "CITIES BY WHAT",
+      "hookBot": "YOU ACTUALLY KEEP",
+      "napkinNumber": "$200K < $90K",
+      "napkinSub": "NYC vs a cheap city",
+      "deco": "skyline"
+    },
+    "chapters": [
+      [
+        "the only paycheck number that really counts",
+        "What you keep"
+      ],
+      [
+        "the gross-pay illusion in one picture",
+        "The illusion"
+      ],
+      [
+        "rank them by the only metric that counts",
+        "The ranking"
+      ],
+      [
+        "the tax wedge strikes first",
+        "The tax wedge"
+      ],
+      [
+        "your whole paycheck travel down the funnel",
+        "The funnel"
+      ],
+      [
+        "how do you actually win this game",
+        "What to do"
+      ],
+      [
+        "most expensive city on Earth",
+        "The real lesson"
+      ]
+    ]
+  }
+}

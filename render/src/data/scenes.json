@@ -3,47 +3,47 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "A four-year degree at a top American private university now carries a sticker price north of a quarter of a million dollars. The exact same four years in Germany costs a student almost nothing — tuition is zero. Same diploma, wildly different price tag. Today we rank what a degree actually costs in every country, and why America's is in a league of its own.",
+    "narration": "A software engineer earning two hundred thousand dollars in New York City can end the year with less cash in the bank than someone earning ninety thousand in a cheaper town. Same effort, bigger paycheck, less money kept. Because the real cost of a city isn't your salary — it's what's left after the city takes its cut. Today we rank the world's cities by what you actually keep.",
     "props": [
       {
-        "name": "gradcap",
-        "label": "4 years of university"
+        "name": "skyline",
+        "label": "$200K in NYC"
       },
       {
-        "name": "dollar",
-        "label": "US private: ~$240K"
+        "name": "moneybag",
+        "label": "less kept than $90K elsewhere"
       },
       {
-        "name": "globe",
-        "label": "Germany: $0"
+        "name": "scale",
+        "label": "ranked by what's left"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Start with the number that breaks people's brains. A four-year bachelor's degree at a private US college now runs well over two hundred forty thousand dollars in tuition. In much of Europe, the same degree costs the student essentially nothing. It may be the widest price gap for one identical product anywhere in the modern economy.",
-    "text": "$240,000",
-    "sub": "4-year US private degree, sticker price",
-    "icon": "dollar"
+    "narration": "Here's the number that stops people cold. Take a comfortable one hundred twenty thousand dollar salary in New York. After income tax, and after the rent a professional actually pays there, you're left with roughly twenty thousand dollars of real breathing room for the entire year. The headline salary is a mirage. What you keep is the truth.",
+    "text": "$20K",
+    "sub": "kept from a $120K NYC salary, after tax & rent",
+    "icon": "moneybag"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank tuition in every major country from free to brutal, expose exactly why the American price exploded while the rest of the world's didn't, tour the free-college model and its hidden trade-offs, and finally answer the only question that matters: with all that debt, is a degree even worth it anymore? Let's go.",
+    "narration": "So today we rank cities by what you keep, not what you earn. We'll expose the gross-pay illusion, measure the tax wedge that bites first, follow your paycheck down the funnel of rent and cost of living, and reveal where your money actually stretches furthest on Earth. The most expensive city isn't the priciest — it's the one that keeps the most of you.",
     "props": [
       {
         "name": "scale",
-        "label": "rank every country"
+        "label": "keep, not earn"
       },
       {
-        "name": "chartup",
-        "label": "why the US exploded"
+        "name": "percent",
+        "label": "the tax wedge"
       },
       {
-        "name": "diploma",
-        "label": "is it worth it?"
+        "name": "globe",
+        "label": "where money stretches"
       }
     ]
   },
@@ -52,40 +52,40 @@
     "type": "image",
     "src": "img/memes/drake.jpg",
     "meme": "Drake Hotline Bling",
-    "memeTop": "pay $38,000 a year for tuition",
-    "memeBottom": "fly to Germany and study for free",
-    "narration": "Because for a growing number of students, the smartest financial move isn't picking a major — it's picking a country. Before we rank them, let's agree on what tuition even is."
+    "memeTop": "chase the biggest salary",
+    "memeBottom": "chase the biggest take-home",
+    "narration": "Because almost everyone optimizes the wrong number. They chase the biggest offer, move to the glamorous expensive city, and wonder why they feel broke on six figures. The winners optimize take-home. First, let's define the number that actually matters."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the one word that decides everything: tuition.",
-    "heading": "The Sticker Price",
-    "kicker": "what you actually pay"
+    "narration": "First, the only paycheck number that really counts.",
+    "heading": "What You Keep",
+    "kicker": "gross is a lie"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-tuition",
-    "narration": "Tuition is simply the fee an institution charges you for instruction. And here's the quiet fact most Americans never hear: across much of the developed world, that fee barely exists. In Scandinavia and continental Europe, there are no or only nominal tuition fees for all forms of education, university included. Free isn't a radical experiment there. It's the default."
+    "sourceId": "wiki-disposable",
+    "narration": "The number that matters is disposable income. The definition is blunt: it's total personal income minus current taxes on income. That's the money that actually lands in your account. But even that isn't the end — because out of what's left, your city demands rent, and rent is where the real damage happens."
   },
   {
-    "id": "s46",
+    "id": "s50",
     "type": "character",
     "pose": "explain",
-    "narration": "And this split is decades deep. Generations of Europeans went to university without ever seeing a tuition bill, treating higher education like a public road or a library — infrastructure, not a luxury. Americans grew up assuming massive debt is simply the price of admission to the middle class.",
+    "narration": "And notice how backwards our instincts are. We celebrate the big salary and the famous skyline, and quietly pity the person who took less money in a smaller city. But if the smaller-city worker keeps more, invests more, and stresses less, who exactly is winning? The prestige and the wealth are often pointing in opposite directions.",
     "props": [
       {
-        "name": "globe",
-        "label": "free for generations"
+        "name": "skyline",
+        "label": "we cheer the big salary"
       },
       {
-        "name": "bridge",
-        "label": "education as infrastructure"
+        "name": "moneybag",
+        "label": "but who keeps more?"
       },
       {
-        "name": "ballchain",
-        "label": "US: debt as normal"
+        "name": "scale",
+        "label": "prestige vs wealth"
       }
     ]
   },
@@ -93,587 +93,162 @@
     "id": "s7",
     "type": "character",
     "pose": "explain",
-    "narration": "In the United States, college took the opposite path. It became, in practice, a product to be sold — with brochures, amenities, and a price that rises every single year. And almost uniquely, nobody caps that price. A school can charge whatever families, and the loans behind them, are willing to pay.",
+    "narration": "So there are really three salaries hiding in one offer. There's gross — the big number on the contract. There's net — what survives taxes. And there's what's left after rent and basic living, the only number that buys you a life. Two cities can show the same gross and leave you with wildly different thirds.",
     "props": [
       {
-        "name": "school",
-        "label": "college as a product"
+        "name": "paystub",
+        "label": "gross: the headline"
       },
       {
-        "name": "pricetag",
-        "label": "rises every year"
+        "name": "scissors",
+        "label": "net: after tax"
       },
       {
-        "name": "warning",
-        "label": "no price cap"
+        "name": "moneybag",
+        "label": "kept: after rent"
       }
     ]
   },
   {
     "id": "s8",
     "type": "screenshot",
-    "sourceId": "wiki-ushe",
-    "narration": "That's not an accident — it's by design. The system is deliberately decentralized, and as the encyclopedia puts it, US higher education is loosely regulated by the government. Nearly four thousand degree-granting institutions each set their own prices, with no national ceiling. Loose regulation is exactly how you get a thousand different prices for the same credential."
-  },
-  {
-    "id": "s9",
-    "type": "title",
-    "narration": "So let's line the whole world up, cheapest to most expensive.",
-    "heading": "The Ranking",
-    "kicker": "tuition by country"
-  },
-  {
-    "id": "s10",
-    "type": "stage",
-    "motif": "tuitionbars",
-    "caption": "average annual tuition, by country",
-    "narration": "Here's the planet on one chart. Germany, Norway, and most of the Nordics: zero. France: a few hundred dollars, basically nominal. Canada and Australia sit in the middle, a few thousand a year. England caps its fees around eleven thousand. And then, alone at the top, the United States — where a private college charges nearly forty thousand dollars a year."
-  },
-  {
-    "id": "s11",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Tuition per year by country ($K)",
-    "unit": "$K",
-    "narration": "Put the hard numbers side by side. Germany, zero. France, about one thousand. Canada, around seven. Australia, roughly eight. England, about eleven. And a US private university, near thirty-eight thousand dollars a year. The American bar doesn't just win — it towers over every other country on Earth.",
-    "data": [
-      {
-        "label": "Germany",
-        "value": 0
-      },
-      {
-        "label": "France",
-        "value": 1
-      },
-      {
-        "label": "Canada",
-        "value": 7
-      },
-      {
-        "label": "Australia",
-        "value": 8
-      },
-      {
-        "label": "UK",
-        "value": 11
-      },
-      {
-        "label": "US private",
-        "value": 38
-      }
-    ],
-    "highlight": 5
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And notice the sticker price isn't even the whole bill. In America, tuition is just the headline. Add room, board, fees, books, and living costs and a single year at a private school can clear eighty thousand dollars. The forty-thousand tuition figure is the floor of the American price — not the ceiling.",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "tuition is just the start"
-      },
-      {
-        "name": "house",
-        "label": "+ room, board, fees"
-      },
-      {
-        "name": "warning",
-        "label": "~$80K all-in per year"
-      }
-    ]
-  },
-  {
-    "id": "s12",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Sit with the size of that gap. At the extremes, a single year at a US private school costs more than an entire four-year degree in half of Europe. An American family can pay thirty times what a German family pays — for a credential that, on paper, does the exact same job in the labor market.",
-    "props": [
-      {
-        "name": "dollar",
-        "label": "1 US year > 4 EU years"
-      },
-      {
-        "name": "scale",
-        "label": "up to 30× the price"
-      },
-      {
-        "name": "diploma",
-        "label": "same credential"
-      }
-    ]
-  },
-  {
-    "id": "s13",
-    "type": "callout",
-    "narration": "There's the headline ratio. Per year, a US private degree can cost around thirty times what a student pays in tuition-free Germany. Nowhere else in modern life does the identical product carry a thirty-fold price difference depending purely on which border you were born behind.",
-    "text": "30×",
-    "sub": "US private tuition vs Germany, per year",
-    "icon": "percent"
-  },
-  {
-    "id": "s14",
-    "type": "compare",
-    "narration": "Zoom out to the full four years and it's even starker. In Germany, the all-in tuition bill for a bachelor's degree rounds to zero. At a private US university, that same four years can clear a quarter of a million dollars in tuition alone. One student walks out owing nothing. The other walks out owing a house.",
-    "left": {
-      "title": "Germany, 4-year tuition",
-      "value": "~$0",
-      "icon": "globe"
-    },
-    "right": {
-      "title": "US private, 4-year tuition",
-      "value": "~$240K",
-      "icon": "dollar"
-    }
-  },
-  {
-    "id": "s15",
-    "type": "title",
-    "narration": "Which raises the obvious question: why is America so expensive?",
-    "heading": "Why America Costs More",
-    "kicker": "four forces"
-  },
-  {
-    "id": "s16",
-    "type": "stage",
-    "motif": "whyustuition",
-    "caption": "the four engines of runaway tuition",
-    "narration": "Four forces drive it. First, no price caps — schools charge whatever they like. Second, easy loans, which quietly let colleges raise prices knowing students can borrow more. Third, administrative bloat: campuses now hire more administrators than teaching staff. And fourth, college sold as a product — luxury dorms, climbing walls, all baked into your tuition."
-  },
-  {
-    "id": "s17",
-    "type": "stage",
-    "motif": "tuitioninflationcurve",
-    "caption": "US tuition vs everything else since 1980",
-    "narration": "And this is what those forces did over forty years. Since nineteen eighty, the general price of everything roughly tripled. US college tuition rose by well over a thousand percent — outpacing normal inflation by about three to one, year after year, decade after decade. No other consumer price in America ran this hot for this long."
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the cruelest part of that curve is who it hit. For older generations, a summer job could genuinely cover a year of tuition. Today, that same year can cost more than many workers earn in an entire year. College went from a cheap ticket to the middle class to one of the largest debts a young person will ever take on.",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "once: a summer job"
-      },
-      {
-        "name": "chartup",
-        "label": "now: a year's salary"
-      },
-      {
-        "name": "ballchain",
-        "label": "a lifelong debt"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "screenshot",
-    "sourceId": "wiki-loans",
-    "narration": "At the center of it sits the loan machine. By twenty eighteen, seventy percent of higher education graduates had used loans to cover some or all of their expenses. Borrowing isn't the exception in America — it's the norm. And when almost everyone can borrow, schools discover they can raise the price almost without limit."
-  },
-  {
-    "id": "s19",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Economists even have a name for this feedback loop. The theory goes that every time the government expands student loans, colleges simply raise tuition to capture the extra money. The aid meant to make college affordable gets quietly swallowed by the price itself — so students borrow more, and end up no better off.",
-    "props": [
-      {
-        "name": "banknote",
-        "label": "more loans available"
-      },
-      {
-        "name": "chartup",
-        "label": "schools raise tuition"
-      },
-      {
-        "name": "warning",
-        "label": "aid gets swallowed"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Then there's the arms race almost nobody mentions: bureaucracy. Over recent decades the number of college administrators ballooned far faster than the number of professors. Someone has to pay those salaries, those glossy buildings, those marketing budgets — and that someone is you, through a tuition line that never stops climbing.",
-    "props": [
-      {
-        "name": "officetower",
-        "label": "administrators ballooned"
-      },
-      {
-        "name": "paystub",
-        "label": "their salaries, your bill"
-      },
-      {
-        "name": "pricetag",
-        "label": "tuition climbs"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "go $100,000 into debt",
-    "memeBottom": "learn German and pay nothing",
-    "narration": "This is the real dilemma facing a smart eighteen-year-old today. One button is six figures of debt for a domestic degree. The other is a passport and a free one abroad. More and more students are starting to eye that second button — and the free-college countries know it."
-  },
-  {
-    "id": "s22",
-    "type": "title",
-    "narration": "So how does free college actually work — and what's the catch?",
-    "heading": "The Free Model",
-    "kicker": "who really pays"
-  },
-  {
-    "id": "s23",
-    "type": "stage",
-    "motif": "freecollegemodel",
-    "caption": "how 'free' college is actually funded",
-    "narration": "Free college isn't magic — it's a transfer. Taxpayers fund it through higher taxes, the government pays the universities, and students walk in owing zero tuition. The cost doesn't vanish; it moves. Instead of landing on one eighteen-year-old as crushing personal debt, it's spread thinly across every worker in the country."
-  },
-  {
-    "id": "s24",
-    "type": "screenshot",
-    "sourceId": "wiki-free",
-    "narration": "That's the textbook definition. Free education is education funded through government spending or charitable organizations rather than tuition funding. The word free is doing a lot of lifting — it means free at the point of use. Society still pays in full. It just chooses to pay collectively, upfront, through the tax system."
-  },
-  {
-    "id": "s25",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And that model comes with real trade-offs. Taxes are higher — noticeably higher — across the free-college countries. Universities are often more selective, with fewer seats, so entry can be fiercely competitive. And budgets are political, meaning the funding can be squeezed when governments tighten their belts. Free, but not frictionless.",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "higher taxes"
-      },
-      {
-        "name": "barrier",
-        "label": "fewer, pickier slots"
-      },
-      {
-        "name": "warning",
-        "label": "budget-dependent"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the free model isn't limited to Europe. Public universities across Latin America charge little or nothing. Many Asian systems heavily subsidize tuition. Scotland is free for its own students while England charges. Over and over, the same pattern: the United States isn't the global norm for expensive college — it's the global outlier.",
-    "props": [
-      {
-        "name": "globe",
-        "label": "free across many regions"
-      },
-      {
-        "name": "mappin",
-        "label": "Scotland free, England not"
-      },
-      {
-        "name": "warning",
-        "label": "the US is the outlier"
-      }
-    ]
-  },
-  {
-    "id": "s26",
-    "type": "character",
-    "pose": "explain",
-    "narration": "So which is fairer? The American system says the person who benefits should pay — you get the degree, you carry the cost. The European system says an educated population benefits everyone, so everyone chips in. Neither is free. One bills the individual; the other bills the nation. That single philosophical choice explains almost the entire price gap.",
-    "props": [
-      {
-        "name": "scale",
-        "label": "user pays vs all pay"
-      },
-      {
-        "name": "crowd",
-        "label": "who benefits?"
-      },
-      {
-        "name": "globe",
-        "label": "a national choice"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "title",
-    "narration": "Now follow the money all the way to graduation day.",
-    "heading": "The Debt",
-    "kicker": "what grads owe"
-  },
-  {
-    "id": "s28",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Average debt per graduate ($K)",
-    "unit": "$K",
-    "narration": "Here's what the average graduate actually owes, by country. Germany and France: a couple thousand, basically a rounding error. Canada and Australia: in the twenties. The United States: around thirty-eight thousand. And the shock at the top — England, near sixty thousand, the highest paper debt in the world. But that English number hides a twist.",
-    "data": [
-      {
-        "label": "Germany",
-        "value": 2
-      },
-      {
-        "label": "France",
-        "value": 3
-      },
-      {
-        "label": "Canada",
-        "value": 20
-      },
-      {
-        "label": "Australia",
-        "value": 24
-      },
-      {
-        "label": "US",
-        "value": 38
-      },
-      {
-        "label": "UK",
-        "value": 57
-      }
-    ],
-    "highlight": 5
-  },
-  {
-    "id": "s29",
-    "type": "character",
-    "pose": "explain",
-    "narration": "The twist is how the debt behaves. England's loans are income-contingent: you repay a small slice of income above a threshold, and whatever's left is wiped after thirty years. Australia runs the same gentle system. American debt is the opposite — it accrues interest relentlessly, and it's brutally hard to erase, even in bankruptcy.",
-    "props": [
-      {
-        "name": "shield",
-        "label": "UK/AU: income-contingent"
-      },
-      {
-        "name": "ballchain",
-        "label": "US: relentless interest"
-      },
-      {
-        "name": "warning",
-        "label": "hard to ever erase"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "callout",
-    "narration": "And the American pile is staggering in aggregate. Collectively, US borrowers now owe over one point seven trillion dollars in student debt — more than the entire country owes on credit cards or car loans. It's a debt the size of a major economy, carried on the backs of people who just wanted an education.",
-    "text": "$1.7T",
-    "sub": "total US student debt — more than all credit cards",
-    "icon": "debtclock"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And that mountain of debt reshapes a whole economy. Buried under loans, young Americans delay buying homes, starting families, and launching businesses. A system meant to build the middle class now quietly postpones the very milestones that define it.",
-    "props": [
-      {
-        "name": "house",
-        "label": "homes delayed"
-      },
-      {
-        "name": "baby",
-        "label": "families delayed"
-      },
-      {
-        "name": "hourglass",
-        "label": "milestones postponed"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "image",
-    "src": "img/memes/thisisfine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "$38,000 in loans, $44,000 starting salary",
-    "memeBottom": "this is fine",
-    "narration": "For millions of American grads, this is the morning after the ceremony: a five-figure balance, interest already ticking, and a first paycheck that barely covers rent and the minimum payment. Which forces the hardest question of all — after all of that, is the degree even worth it?"
-  },
-  {
-    "id": "s32",
-    "type": "title",
-    "narration": "Time for the uncomfortable cost-benefit math.",
-    "heading": "Is It Worth It?",
-    "kicker": "the degree premium"
-  },
-  {
-    "id": "s33",
-    "type": "stage",
-    "motif": "collegeroi",
-    "caption": "the college wage premium — if the debt stays sane",
-    "narration": "Start with the good news, because it's real. On average, a bachelor's degree still pays. US workers with no degree earn around forty-four thousand a year; those with a bachelor's, closer to seventy. Over a full career, that gap compounds into a serious lead. Education economics has studied this relationship for decades."
-  },
-  {
-    "id": "s34",
-    "type": "screenshot",
-    "sourceId": "wiki-edecon",
-    "narration": "That's exactly what this field exists to measure. Education economics studies the demand for education, its financing, and crucially, the comparative efficiency of various educational programs. Translation: not every degree pays off equally. The return depends enormously on what you study — and on how much you paid to study it."
-  },
-  {
-    "id": "s35",
-    "type": "callout",
-    "narration": "Averaged across a lifetime, a US bachelor's degree is associated with roughly one point two million dollars in extra earnings compared to a high-school diploma. That's a genuinely huge number — the single best argument for going to college. But an average hides winners and losers, and the losers are getting more common.",
-    "text": "$1.2M",
-    "sub": "lifetime earnings premium of a US bachelor's degree",
-    "icon": "moneybag"
-  },
-  {
-    "id": "s36",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Because that premium isn't evenly shared. An engineering or nursing degree can pay for itself in a few years. A degree in a low-wage field, bought at a private school for two hundred grand, might never break even. The equation is simple and ruthless: your return is the salary your field commands, minus the price you paid to enter it.",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "engineering: pays fast"
-      },
-      {
-        "name": "chartdown",
-        "label": "low-wage field: may not"
-      },
-      {
-        "name": "scale",
-        "label": "salary minus price"
-      }
-    ]
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this is precisely why the price gap matters so much. A German engineer and an American engineer might earn similar salaries — but the German started that career with zero debt, while the American started thirty or forty thousand in the hole. Same degree, same job, but one of them spent a decade just climbing back to zero.",
-    "props": [
-      {
-        "name": "handshake",
-        "label": "similar salaries"
-      },
-      {
-        "name": "ballchain",
-        "label": "US starts in the hole"
-      },
-      {
-        "name": "hourglass",
-        "label": "a decade to break even"
-      }
-    ]
-  },
-  {
-    "id": "s38",
-    "type": "title",
-    "narration": "So what should you actually do with all this?",
-    "heading": "What To Do",
-    "kicker": "smarter than the sticker"
-  },
-  {
-    "id": "s39",
-    "type": "character",
-    "pose": "present",
-    "narration": "If you're an American, the single biggest lever is where you enroll. An in-state public university often costs a third of a private one for a nearly identical education. Starting at a community college and transferring can halve the bill again. The name on the diploma matters far less than the debt behind it.",
-    "props": [
-      {
-        "name": "school",
-        "label": "in-state public = 1/3 price"
-      },
-      {
-        "name": "books",
-        "label": "community college transfer"
-      },
-      {
-        "name": "scissors",
-        "label": "cut the debt, not the degree"
-      }
-    ]
-  },
-  {
-    "id": "s40",
-    "type": "character",
-    "pose": "present",
-    "narration": "Here's the option almost no one considers: leave. Germany, Norway, and a growing list of countries offer free or near-free degrees — many taught entirely in English, open to international students. For the price of one year at a US private school, you could fund an entire degree abroad, passport stamps included.",
-    "props": [
-      {
-        "name": "luggage",
-        "label": "study abroad"
-      },
-      {
-        "name": "globe",
-        "label": "free, taught in English"
-      },
-      {
-        "name": "gradcap",
-        "label": "1 US year = a full degree"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "pose": "present",
-    "narration": "And hunt relentlessly for free money before you borrow a cent. Scholarships, grants, and employer tuition programs are left unclaimed every single year because nobody applied. Every dollar of aid you win is a dollar you never have to repay with interest. Treat chasing it like a part-time job — because financially, it pays like one.",
-    "props": [
-      {
-        "name": "trophy",
-        "label": "scholarships & grants"
-      },
-      {
-        "name": "handshake",
-        "label": "employer tuition aid"
-      },
-      {
-        "name": "moneybag",
-        "label": "free beats borrowed"
-      }
-    ]
+    "sourceId": "wiki-col",
+    "narration": "That third number is governed by cost of living — the cost of maintaining a certain standard of living in a given place. Two engineers with identical jobs and identical pay can live like royalty in one city and paycheck-to-paycheck in another, purely because of what the same basket of life costs where they signed the lease."
   },
   {
     "id": "s41",
     "type": "character",
-    "pose": "present",
-    "narration": "And whatever you choose, obey one rule: never borrow more than you expect to earn in your first year out. Owe forty thousand, aim for a field that starts around forty. Cross that line and the debt stops being an investment and becomes an anchor. Run the number before you sign, not after.",
+    "pose": "explain",
+    "narration": "And cost of living is really a bundle of separate monsters. Rent is the biggest, but taxes, transport, groceries, healthcare, and childcare all cost more in a pricey city too. Each one is quietly inflated. Stack them up and an expensive city isn't a little pricier than a cheap one — it can be twice as expensive to live the exact same day.",
     "props": [
       {
-        "name": "calculator",
-        "label": "borrow < first-year salary"
+        "name": "basket",
+        "label": "rent, tax, food, care"
+      },
+      {
+        "name": "chartup",
+        "label": "each one inflated"
       },
       {
         "name": "warning",
-        "label": "cross it = an anchor"
-      },
-      {
-        "name": "paystub",
-        "label": "run it before you sign"
+        "label": "2× for the same day"
       }
     ]
   },
   {
-    "id": "s42",
+    "id": "s9",
+    "type": "stage",
+    "motif": "grosspayillusion",
+    "caption": "same salary, very different reality",
+    "narration": "This is the gross-pay illusion in one picture. Two workers both earn the same six-figure salary. One lives in a high-tax, high-rent megacity; the other in a low-tax, affordable one. Same gross. But by the time the city finishes taking its share, one keeps a sliver and the other keeps a fortune. The headline number told you nothing."
+  },
+  {
+    "id": "s10",
+    "type": "screenshot",
+    "sourceId": "wiki-realincome",
+    "narration": "Economists fixed this confusion long ago with real income — the income of individuals or nations after adjusting for inflation, and for local prices. A dollar in Manhattan and a dollar in Houston are simply not the same dollar. Real income strips away the illusion and asks the only honest question: how much life can this money actually buy here?"
+  },
+  {
+    "id": "s11",
     "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson of the whole global map. The degree itself isn't the scam — education genuinely pays. The scam is the price. The rest of the developed world proved you can educate a population without burying it in debt. America chose a different path, and an entire generation is paying the interest.",
+    "narration": "So a dollar is not a dollar everywhere. In an expensive city, every dollar is quietly shrunk — by taxes first, then by rent, then by the premium on everything from coffee to childcare. The same paycheck can be worth twice as much two hundred miles away. Your salary doesn't set your standard of living. Your city does.",
     "props": [
       {
-        "name": "diploma",
-        "label": "the degree isn't the scam"
+        "name": "dollar",
+        "label": "a dollar isn't a dollar"
       },
       {
-        "name": "pricetag",
-        "label": "the price is"
+        "name": "faucet",
+        "label": "shrunk by tax, then rent"
       },
       {
         "name": "globe",
-        "label": "the world chose differently"
+        "label": "your city sets your life"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "stage",
+    "motif": "colindex100",
+    "caption": "the cost-of-living index — 100 is average",
+    "narration": "This is how the pros measure it: a cost-of-living index, where a hundred is the national average. A city at sixty-five is a third cheaper than normal; a city at two hundred costs twice as much for the identical life. Put your salary against that index, and a dazzling offer in a two-hundred city can be worth less than a modest one at seventy."
+  },
+  {
+    "id": "s12",
+    "type": "title",
+    "narration": "So let's rank them by the only metric that counts.",
+    "heading": "The Ranking",
+    "kicker": "money left standing"
+  },
+  {
+    "id": "s13",
+    "type": "stage",
+    "motif": "citykeepbars",
+    "caption": "what a pro keeps after tax & rent, by city",
+    "narration": "Take a single well-paid professional and drop them into each city on the same real job. Then measure what's left after income tax and typical rent. New York, San Francisco, and London hemorrhage the most — glamorous, high-paying, and quietly brutal on the wallet. Meanwhile, low-tax hubs and affordable boomtowns let that exact worker keep two or three times more."
+  },
+  {
+    "id": "s14",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Money kept per year after tax & rent ($K)",
+    "unit": "$K",
+    "narration": "Put real numbers on it. On a comparable salary, our worker keeps around twenty thousand a year in New York, a little more in London and San Francisco, more again in Toronto, close to fifty thousand in Austin, and about sixty thousand in no-income-tax Dubai. Same job, same effort — and triple the money kept, depending only on the city.",
+    "data": [
+      {
+        "label": "New York",
+        "value": 20
+      },
+      {
+        "label": "London",
+        "value": 24
+      },
+      {
+        "label": "San Fran",
+        "value": 28
+      },
+      {
+        "label": "Toronto",
+        "value": 34
+      },
+      {
+        "label": "Austin",
+        "value": 46
+      },
+      {
+        "label": "Dubai",
+        "value": 60
+      }
+    ],
+    "highlight": 0
+  },
+  {
+    "id": "s42",
+    "type": "callout",
+    "narration": "Say the quiet part out loud. In New York, roughly four out of every five dollars of a professional's salary are gone to taxes and rent before anything else. You work most of the year just to pay the government and a landlord. Only the final sliver is actually, truly yours to keep.",
+    "text": "78%",
+    "sub": "of a NYC paycheck gone to tax + rent",
+    "icon": "percent"
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Flip the usual list upside down and it gets uncomfortable. The cities we treat as the ultimate prizes — New York, San Francisco, London — are the ones that leave you with the least. By the measure that matters, the most prestigious addresses on Earth are among the most expensive places you can possibly try to build wealth.",
+    "props": [
+      {
+        "name": "skyline",
+        "label": "the 'prize' cities"
+      },
+      {
+        "name": "chartdown",
+        "label": "keep the least"
+      },
+      {
+        "name": "warning",
+        "label": "prestige ≠ wealth"
       }
     ]
   },
@@ -681,57 +256,426 @@
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "So before you sign away your twenties, zoom out and ask the question the sticker price hopes you won't: not just which school, but which system, which country, which field. In a world where the exact same degree ranges from totally free to a quarter-million dollars, where you choose to study is the biggest financial decision you'll make before thirty.",
+    "narration": "Now add the cruelest twist: the high-salary cities are high-salary precisely because they're expensive. Companies pay New York and London premiums to offset the cost — but the offset is never enough, and it's fully taxed. You get a bigger number and a smaller life. The raise was bait, and the city swallowed it whole.",
     "props": [
       {
-        "name": "globe",
-        "label": "which country?"
+        "name": "magnet",
+        "label": "pay premium as bait"
       },
       {
-        "name": "scale",
-        "label": "free to $240K"
+        "name": "scissors",
+        "label": "offset gets taxed away"
       },
       {
-        "name": "gradcap",
-        "label": "biggest call before 30"
+        "name": "warning",
+        "label": "bigger number, smaller life"
       }
     ]
+  },
+  {
+    "id": "s16",
+    "type": "title",
+    "narration": "Because before rent even arrives, the tax wedge strikes first.",
+    "heading": "The Tax Wedge",
+    "kicker": "who takes the first cut"
+  },
+  {
+    "id": "s17",
+    "type": "stage",
+    "motif": "taxwedgebite",
+    "caption": "the first bite out of every paycheck",
+    "narration": "The tax wedge is the chunk of your paycheck that never reaches you. In a high-tax city like New York, you stack federal, state, and city income taxes on top of each other — the only major US city that taxes your income a third time. By contrast, a handful of places take almost nothing. That first bite sets the entire game."
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the tax wedge is sneaky because it's invisible. It never hits your bank account, so you never feel it leave — but it's often the single biggest expense of your entire year, bigger than rent, bigger than anything. The cities that win on take-home usually win right here, by simply never taking that first, enormous, silent bite.",
+    "props": [
+      {
+        "name": "scissors",
+        "label": "the silent first bite"
+      },
+      {
+        "name": "receipt",
+        "label": "often bigger than rent"
+      },
+      {
+        "name": "warning",
+        "label": "you never feel it leave"
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "type": "screenshot",
+    "sourceId": "wiki-incidence",
+    "narration": "Economists study exactly this with tax incidence, which measures who actually pays for a tax. The lesson for you is simple: before you accept an offer, find out who really takes the first cut of your pay. In some cities three separate governments do. In others, barely one. That difference alone can be worth tens of thousands a year."
+  },
+  {
+    "id": "s19",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Tax + rent as % of a $120K salary",
+    "unit": "%",
+    "narration": "Here's how much of a professional's salary vanishes to tax plus rent before they buy a single thing. In New York it's nearly eighty percent gone. London and Toronto aren't far behind. Austin keeps that combined bite closer to half. And Dubai, with no income tax, lets you hold on to the lion's share. Most of your raise is really a geography decision.",
+    "data": [
+      {
+        "label": "New York",
+        "value": 78
+      },
+      {
+        "label": "London",
+        "value": 72
+      },
+      {
+        "label": "Toronto",
+        "value": 62
+      },
+      {
+        "label": "Austin",
+        "value": 52
+      },
+      {
+        "label": "Dubai",
+        "value": 32
+      }
+    ],
+    "highlight": 0
+  },
+  {
+    "id": "s44",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And taxes aren't one tax — they stack. Federal income tax, then state income tax, then in a few places a city income tax, plus sales taxes and property taxes layered on top. Each layer is small-sounding on its own. Together they can quietly claim close to half of a high earner's pay before rent even enters the picture.",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "federal + state + city"
+      },
+      {
+        "name": "ledger",
+        "label": "sales + property too"
+      },
+      {
+        "name": "warning",
+        "label": "~half, before rent"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "pose": "explain",
+    "narration": "This is why the no-income-tax havens punch so far above their weight. Dubai, and US states like Texas, Florida, and Nevada, simply never take that first slice. A mid-level salary there can out-keep a huge salary in a triple-taxed city. The money isn't about how much you make. It's about how many hands reach in before you.",
+    "props": [
+      {
+        "name": "shield",
+        "label": "no-income-tax havens"
+      },
+      {
+        "name": "moneybag",
+        "label": "keep the first slice"
+      },
+      {
+        "name": "mappin",
+        "label": "TX · FL · NV · Dubai"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "callout",
+    "narration": "And the havens are closer than you think. Nine US states charge zero income tax at all — Texas, Florida, Nevada, Washington, Tennessee, and more. For a high earner, simply crossing a state line can mean keeping an extra ten, twenty, even thirty thousand dollars a year, for the exact same job and the exact same paycheck on paper.",
+    "text": "9 states",
+    "sub": "charge zero income tax — TX, FL, NV, WA, TN…",
+    "icon": "mappin"
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "Watch your whole paycheck travel down the funnel.",
+    "heading": "The Funnel",
+    "kicker": "where it all goes"
+  },
+  {
+    "id": "s22",
+    "type": "stage",
+    "motif": "whatyoukeepfunnel",
+    "caption": "gross in the top, a trickle out the bottom",
+    "narration": "Picture your gross salary poured in at the top. First the tax wedge drains away a third or more. Then rent — the single biggest expense — takes another enormous gulp. Then transport, food, and the big-city premium on everything. What trickles out the bottom is what you keep. In the priciest cities, that trickle is shockingly thin."
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the funnel has a sneaky leak most people forget: lifestyle creep. Expensive cities don't just cost more — they tempt you to spend more, on dinners, status, and keeping up. So the pricey city drains you twice: once through unavoidable costs, and again through the spending it quietly pressures you into. The thin trickle gets thinner.",
+    "props": [
+      {
+        "name": "champagne",
+        "label": "lifestyle creep"
+      },
+      {
+        "name": "faucet",
+        "label": "drained twice"
+      },
+      {
+        "name": "chartdown",
+        "label": "the trickle thins"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "sourceId": "wiki-ppp",
+    "narration": "And what you keep only matters by its purchasing power — the amount of products and services available for purchase with it. Twenty thousand dollars kept in a cheap city buys a real life: savings, travel, a cushion. The same twenty thousand kept in Manhattan barely covers a few months of ordinary expenses. It's not the pile that counts. It's what the pile can buy."
   },
   {
     "id": "s54",
     "type": "character",
     "pose": "explain",
-    "narration": "And watch where the world is drifting. As American tuition climbs and free-college countries open their doors to foreign students, the smartest young people are quietly voting with their feet. In the end, a country that prices education like a luxury may slowly export its own future.",
+    "narration": "Purchasing power is why travelers feel rich abroad and locals feel broke at home. The same kept dollars that feel tight in London stretch into a comfortable life in a cheaper country. When you measure wealth in what your money buys rather than the number itself, the global map of 'expensive' and 'cheap' completely rearranges.",
     "props": [
       {
-        "name": "luggage",
-        "label": "students voting with feet"
-      },
-      {
         "name": "globe",
-        "label": "studying where it's cheap"
+        "label": "rich abroad, broke at home"
       },
       {
-        "name": "warning",
-        "label": "exporting the future"
+        "name": "basket",
+        "label": "measure what it buys"
+      },
+      {
+        "name": "scale",
+        "label": "the map rearranges"
       }
     ]
   },
   {
-    "id": "s44",
+    "id": "s24",
+    "type": "stage",
+    "motif": "samesalarystates",
+    "caption": "one salary, two completely different lives",
+    "narration": "Here's the same hundred-thousand-dollar salary living two different lives. In the expensive city it means a cramped apartment, a long commute, and nothing left to save. In the affordable one it means a house, a yard, and a growing investment account. Identical income, opposite outcomes — written entirely by the cost of the city around it."
+  },
+  {
+    "id": "s46",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "six-figure salary, broke in Manhattan",
+    "memeBottom": "smaller salary, wealthy in Austin",
+    "narration": "This is the choice modern workers actually face, even if nobody frames it this way. The glamorous broke life, or the quiet wealthy one. Once you start measuring by what you keep, the sweaty indecision disappears — and the obvious answer is rarely the famous city."
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the beast at the center of the funnel is always rent. In the priciest cities, housing alone can eat forty to fifty percent of a take-home paycheck, leaving almost nothing for everything else. Tame your rent and you tame the whole equation. It is, by far, the biggest lever over what any city lets you keep.",
+    "props": [
+      {
+        "name": "apartment",
+        "label": "rent is the beast"
+      },
+      {
+        "name": "percent",
+        "label": "40-50% of take-home"
+      },
+      {
+        "name": "scale",
+        "label": "tame rent, tame it all"
+      }
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And rent has a cruel feature: it rises with the city's success. The more desirable and high-paying a city becomes, the faster rents climb to swallow those higher salaries. It's a treadmill — earn more, pay more, keep the same. Which is exactly why raw salary growth in a hot city so rarely turns into real, kept wealth.",
+    "props": [
+      {
+        "name": "apartment",
+        "label": "rent chases salaries up"
+      },
+      {
+        "name": "stopwatch",
+        "label": "the treadmill"
+      },
+      {
+        "name": "warning",
+        "label": "earn more, keep the same"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "title",
+    "narration": "So how do you actually win this game?",
+    "heading": "What To Do",
+    "kicker": "optimize take-home"
+  },
+  {
+    "id": "s27",
+    "type": "stage",
+    "motif": "realwealthformula",
+    "caption": "wealth = what you keep, not what you earn",
+    "narration": "The whole thing collapses to one formula. Your real progress isn't your salary — it's your income, minus taxes, minus the cost of your city, with whatever's left going to work for you. Chase that bottom line, not the headline. A smaller salary in the right city can build wealth faster than a huge one in the wrong one."
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "pose": "present",
+    "narration": "One more rule: protect what you keep from inflation and taxes, don't just hoard it. The money a cheap city lets you save only builds wealth if you invest it. The real magic isn't keeping more — it's keeping more and putting it to work, so a low-cost city funds the compounding a high-cost one never could.",
+    "props": [
+      {
+        "name": "seedling",
+        "label": "invest what you keep"
+      },
+      {
+        "name": "snowball",
+        "label": "let it compound"
+      },
+      {
+        "name": "chartup",
+        "label": "the city funds it"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "character",
+    "pose": "present",
+    "narration": "So negotiate net, not gross. A higher offer in a brutally taxed, sky-high-rent city can be a pay cut in disguise. Before you accept, run the real math: subtract that city's taxes and that city's rent, and compare what's actually left. The best offer is the one with the biggest number at the bottom, not the top.",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "negotiate net, not gross"
+      },
+      {
+        "name": "warning",
+        "label": "a 'raise' can be a cut"
+      },
+      {
+        "name": "moneybag",
+        "label": "biggest bottom line wins"
+      }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "character",
+    "pose": "present",
+    "narration": "And look past income tax to the full tax picture. A state with no income tax might claw it back through high property or sales taxes. A country with brutal income tax might offer free healthcare and schooling that quietly hands the money back. Always compare the whole package — total taxes in, real services out — not a single headline rate.",
+    "props": [
+      {
+        "name": "ledger",
+        "label": "see the full tax picture"
+      },
+      {
+        "name": "hospital",
+        "label": "services handed back"
+      },
+      {
+        "name": "scale",
+        "label": "total in, real out"
+      }
+    ]
+  },
+  {
+    "id": "s29",
+    "type": "character",
+    "pose": "present",
+    "narration": "And if your work travels, treat your city as your single biggest financial decision. Earning a big-city salary while living somewhere low-tax and affordable is the closest thing to a cheat code modern work offers. You keep the income and delete the two biggest costs. That gap — between a fat paycheck and a cheap city — is pure, compounding wealth.",
+    "props": [
+      {
+        "name": "laptop",
+        "label": "remote = cheat code"
+      },
+      {
+        "name": "mappin",
+        "label": "big pay, cheap city"
+      },
+      {
+        "name": "chartup",
+        "label": "the gap compounds"
+      }
+    ]
+  },
+  {
+    "id": "s48",
+    "type": "character",
+    "pose": "present",
+    "narration": "But don't move on the spreadsheet alone. A city is family, friends, climate, and career ladders, not just a tax rate. The point isn't to chase the cheapest dot on the map — it's to stop overpaying blindly, and to know the true price of the city you love. Sometimes it's worth it. Just never by accident.",
+    "props": [
+      {
+        "name": "heart",
+        "label": "not just a number"
+      },
+      {
+        "name": "scale",
+        "label": "know the true price"
+      },
+      {
+        "name": "smiley",
+        "label": "worth it, on purpose"
+      }
+    ]
+  },
+  {
+    "id": "s30",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. The most expensive city on Earth isn't the one with the highest prices — it's the one that keeps the most of your life in exchange for the least in return. Rank your options by what you keep, and the glamorous, famous, 'successful' cities suddenly look like the worst deals of all.",
+    "props": [
+      {
+        "name": "skyline",
+        "label": "expensive = keeps the most of you"
+      },
+      {
+        "name": "scale",
+        "label": "rank by what you keep"
+      },
+      {
+        "name": "warning",
+        "label": "glamour is a bad deal"
+      }
+    ]
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the cost compounds in a way that's easy to miss. Keeping an extra twenty thousand a year in a cheap city, invested for a few decades, becomes a fortune. The expensive city didn't just cost you that twenty thousand — it cost you everything that money would have grown into. The priciest cities are quietly the most expensive places to build a future.",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "the gap compounds"
+      },
+      {
+        "name": "moneytree",
+        "label": "it costs the future too"
+      },
+      {
+        "name": "chartup",
+        "label": "decades of lost growth"
+      }
+    ]
+  },
+  {
+    "id": "s31",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this finally made the true cost of a degree make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this changed how you read a job offer, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "diploma",
+        "name": "moneybag",
         "label": "which price tag next?"
       }
     ]
   },
   {
-    "id": "s45",
+    "id": "s32",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
