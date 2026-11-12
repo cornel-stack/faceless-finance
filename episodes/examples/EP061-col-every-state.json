@@ -1,0 +1,1013 @@
+{
+  "id": "EP061",
+  "series": "Napkin Numbers",
+  "title": "Cost of Living at Every Level: Every US State Ranked",
+  "slug": "cost-of-living-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP061 — Every Level series (row 51). Cost-of-living by US state: the index (100=avg), cheapest (MS/AR/OK ~85) vs priciest (HI ~190, CA ~140), purchasing power, housing as THE swing factor, no-income-tax states (and how they claw it back), real vs nominal income (a $60K in MS beats $90K in CA), remote-work arbitrage, real wealth = salary ÷ COL. 6 new motifs (stateheatmap/colindex100/samesalarystates/housingdriver/notaxstates/realwealthformula) + doodles palmtree/mappin. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "A sixty-thousand-dollar salary can make you comfortably middle-class in one state — and leave you scraping by in another. Because the dollar in your pocket is not worth the same across America. Depending on which state you live in, the exact same life can cost you nearly double.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "same $60K salary"
+        },
+        {
+          "name": "mappin",
+          "label": "different state…"
+        },
+        {
+          "name": "scale",
+          "label": "…up to 2× the cost"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap that defines it. If an average American state scores a hundred on the cost-of-living index, Mississippi comes in around eighty-five — and Hawaii sits near one hundred and ninety. The same basket of life costs more than twice as much in one state as another.",
+      "text": "190 vs 85",
+      "sub": "Hawaii vs Mississippi cost-of-living index (100 = avg)",
+      "icon": "mappin"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "That index isn't a guess. It's a fixed basket — rent, groceries, utilities, transport, and healthcare — priced in every location, then compared. It's the closest thing we have to an honest, apples-to-apples measure of what a normal life actually costs where you are.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "a fixed basket"
+        },
+        {
+          "name": "house",
+          "label": "rent + bills"
+        },
+        {
+          "name": "scale",
+          "label": "apples-to-apples"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we're ranking the cost of living across all fifty states — and showing why your real wealth has far less to do with your salary than with the map. Where you choose to live might be the single biggest money decision you ever make.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "globe",
+          "label": "all 50 states ranked"
+        },
+        {
+          "name": "mappin",
+          "label": "the map decides"
+        },
+        {
+          "name": "moneybag",
+          "label": "a huge money choice"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "chase the biggest salary",
+      "memeBottom": "chase the biggest salary minus your cost of living",
+      "narration": "Because a huge paycheck in an expensive city can quietly leave you poorer than a modest one somewhere cheap. The number that actually matters isn't what you earn. It's what you earn, divided by what your life costs."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what cost of living actually measures.",
+      "heading": "The Index",
+      "kicker": "100 = average"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Cost of living is simply the cost of maintaining a certain standard of living — the price of the same basket of housing, food, transport, and bills, measured in different places.",
+      "sourceId": "wiki-col"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "To compare places, economists build a cost-of-living index, which measures relative cost of living over time or regions. The national average is set to one hundred, so every state becomes a simple number above or below it.",
+      "sourceId": "wiki-colindex"
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "narration": "Here's how to read it. A state at one hundred is dead average. Mississippi, around eighty-five, is fifteen percent cheaper than average. California, near one-forty, is forty percent more expensive. And Hawaii, close to one-ninety, costs nearly double the national norm.",
+      "motif": "colindex100",
+      "caption": "Hawaii costs more than double Mississippi"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And states are only the average. Zoom into cities, and it gets wild. Manhattan can score over two hundred and thirty — more than double the US norm — while a rural town in the very same region might sit below ninety. Your city can matter even more than your state.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "Manhattan 230+"
+        },
+        {
+          "name": "house",
+          "label": "rural town <90"
+        },
+        {
+          "name": "mappin",
+          "label": "city > state"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "This directly controls your purchasing power — the amount of products and services available for purchase with a certain amount of money. The same dollar simply buys more goods in a cheap state than in an expensive one.",
+      "sourceId": "wiki-pp"
+    },
+    {
+      "id": "s44",
+      "type": "callout",
+      "narration": "The government even measures this directly. A hundred dollars in Mississippi effectively buys about a hundred and sixteen dollars' worth of goods. That same hundred in California or New York buys barely eighty-seven. The bill looks identical — but the value inside it absolutely isn't.",
+      "text": "$116 vs $87",
+      "sub": "what $100 really buys in Mississippi vs California",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "So let's rank them, starting with where your money stretches the furthest.",
+      "heading": "The Rankings",
+      "kicker": "cheapest vs priciest"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "At the affordable end, it's mostly the South and the Midwest. Mississippi, Arkansas, Oklahoma, and Kansas all sit well below average — around eighty-five to ninety. At the expensive end: Hawaii far out front, then California, Massachusetts, and New York. The spread between them is enormous.",
+      "motif": "stateheatmap",
+      "caption": "cost-of-living index — 100 = US average"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "And if you want cheap with amenities, the sweet spot is often mid-sized cities in affordable states — places across Texas, the Carolinas, or the Midwest. You get real city life, solid jobs, and culture, at a genuine fraction of coastal prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "risingcity",
+          "label": "mid-sized cities"
+        },
+        {
+          "name": "mappin",
+          "label": "TX, Carolinas, Midwest"
+        },
+        {
+          "name": "smiley",
+          "label": "city life, half price"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "And the pattern is clear. Cheap states tend to be inland, rural, and spread out, with plenty of land. Expensive states are coastal, dense, and desirable — places where a lot of people want to live, and there simply isn't enough room for all of them.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "cheap: inland, spacious"
+        },
+        {
+          "name": "palmtree",
+          "label": "pricey: coastal, dense"
+        },
+        {
+          "name": "crowd",
+          "label": "everyone wants in"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So why are the coasts so brutally expensive? Simple supply and demand. Everyone wants to live near the ocean, the jobs, and the weather — but the land is physically limited, and strict building rules keep new housing scarce. Scarcity plus demand equals sky-high prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "palmtree",
+          "label": "everyone wants the coast"
+        },
+        {
+          "name": "barrier",
+          "label": "strict building rules"
+        },
+        {
+          "name": "chartup",
+          "label": "scarcity → high prices"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "And almost all of that difference comes down to one single thing.",
+      "heading": "It's the Housing",
+      "kicker": "the one big swing"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "narration": "People assume everything costs more in expensive states. It doesn't. A gallon of milk, a tank of gas, a restaurant meal — those barely change from state to state. The entire gap is housing. Rent and home prices swing wildly, and they drag the whole index with them.",
+      "motif": "housingdriver",
+      "caption": "rent & home prices swing wildly; a gallon of milk barely moves"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "And this hits renters and buyers alike. In the priciest states, a tiny apartment can cost more to rent than an entire house costs to own somewhere cheap. The roof over your head is, by a mile, the biggest line item the map controls.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "pricey rental"
+        },
+        {
+          "name": "house",
+          "label": "vs a cheap home"
+        },
+        {
+          "name": "scale",
+          "label": "the biggest line item"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "The numbers are stark. A typical home in Mississippi might cost under two hundred thousand dollars. The same family home in California can run well over eight hundred thousand — or in parts of Hawaii, over a million. Four or five times the price, for a roof over your head.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "MS: under $200K"
+        },
+        {
+          "name": "mansion",
+          "label": "CA: $800K+"
+        },
+        {
+          "name": "palmtree",
+          "label": "HI: $1M+"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "The real affordability red flag is the price-to-income ratio. In cheap states, a home costs roughly three years of income. In the priciest metros, it can be ten years or more — a wall so high that ordinary workers simply cannot climb it anymore.",
+      "text": "10×",
+      "sub": "home price vs annual income in the priciest metros",
+      "icon": "house"
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "But the sticker price of life isn't the only thing the map changes. There's also the taxman.",
+      "heading": "The Tax Map",
+      "kicker": "where the state takes a cut"
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "On top of federal tax, most individual U.S. states collect a state income tax — another slice of every paycheck, which varies enormously depending on where you live.",
+      "sourceId": "wiki-statetax"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "At the other end of the tax map sit the high-tax states. California's top income-tax rate passes thirteen percent. New York, New Jersey, and Hawaii aren't far behind. Stacked on top of federal tax, a high earner in those states can lose nearly half their income to taxes.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "taxform",
+          "label": "CA top rate 13%+"
+        },
+        {
+          "name": "mappin",
+          "label": "NY, NJ, HI"
+        },
+        {
+          "name": "warning",
+          "label": "~half to taxes"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "But a lucky handful of states take zero income tax at all. Texas, Florida, Washington, Nevada, Tennessee, and a few others let you keep your whole paycheck, at least from the state. For a high earner, that alone can be worth tens of thousands a year.",
+      "motif": "notaxstates",
+      "caption": "…but they claw it back via property & sales tax"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "This is exactly why so many retirees flock to Florida. On a fixed retirement income, escaping state income tax — plus generally lower costs — can add years of life to their savings. The tax map quietly reshapes where millions of people choose to grow old.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "retirees → Florida"
+        },
+        {
+          "name": "taxform",
+          "label": "no state income tax"
+        },
+        {
+          "name": "nestegg",
+          "label": "savings last longer"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "But beware the catch. No-income-tax states still need money — so they quietly claw it back through higher property taxes, sales taxes, and fees. Texas, famously, has no income tax but some of the steepest property taxes in the country. The state always gets paid, somehow.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "taxform",
+          "label": "no income tax…"
+        },
+        {
+          "name": "house",
+          "label": "…high property tax"
+        },
+        {
+          "name": "warning",
+          "label": "the state gets paid"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "The clawback comes in two main forms. Sales tax can add up to ten percent to everything you buy. And property tax, charged every year on your home's value, can quietly cost more over a lifetime than an income tax ever would. There is no truly tax-free state.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "sales tax ~10%"
+        },
+        {
+          "name": "house",
+          "label": "yearly property tax"
+        },
+        {
+          "name": "warning",
+          "label": "no free lunch"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "Now put it all together, and your salary starts to mean something completely different.",
+      "heading": "Real vs. Nominal",
+      "kicker": "what your pay really buys"
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "narration": "This is the difference between nominal and real value. Your nominal salary is the number on the paycheck. Your real income is that salary measured against the actual goods or services it can actually buy where you live.",
+      "sourceId": "wiki-realnominal"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "When the government re-ranks states by real income — pay adjusted for local prices — the whole list flips. Some glamorous high-wage coastal states tumble down it, while modest-wage, low-cost states quietly climb. On paper you earn less; in real life, you often have much more.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "high-wage states fall"
+        },
+        {
+          "name": "chartup",
+          "label": "low-cost states rise"
+        },
+        {
+          "name": "scale",
+          "label": "real income flips it"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "Watch what that does. A sixty-thousand-dollar salary in Mississippi, after its low costs, feels like earning seventy thousand. The exact same sixty thousand in California, after its brutal costs, feels more like forty-three. Same paycheck — a seventy-thousand-dollar life, or a forty-three-thousand-dollar one.",
+      "motif": "samesalarystates",
+      "caption": "a $60K salary — two different lives"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "And it's not just rent. Childcare, healthcare, and even car insurance swing hard by location too. In some expensive states, daycare for a single child rivals a second rent payment. These quiet costs can matter just as much as the mortgage.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "baby",
+          "label": "childcare"
+        },
+        {
+          "name": "hospital",
+          "label": "healthcare"
+        },
+        {
+          "name": "car",
+          "label": "insurance too"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "This flips everything you think you know. A job offering ninety thousand in San Francisco can genuinely leave you poorer than a sixty-thousand job in Oklahoma. The bigger number looks better on paper — but the smaller one buys a far bigger life.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "$90K in SF"
+        },
+        {
+          "name": "chartdown",
+          "label": "poorer than…"
+        },
+        {
+          "name": "house",
+          "label": "$60K in Oklahoma"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "People fall for this constantly. They take an exciting twenty-percent raise to move to a glamorous, expensive city — and are stunned to find themselves more broke than before. A raise that gets swallowed by rent isn't a raise. It's a pay cut with a nicer view.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "+20% raise"
+        },
+        {
+          "name": "mansion",
+          "label": "to an expensive city"
+        },
+        {
+          "name": "chartdown",
+          "label": "secretly poorer"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "narration": "That's why economists track household income alongside cost of living. Household income is an economic measure of one household's total income — but on its own, it's only half the story. You have to divide it by what life actually costs.",
+      "sourceId": "wiki-household"
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Which leads to the single most important formula in this whole video.",
+      "heading": "Real Wealth",
+      "kicker": "salary ÷ cost of living"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "Here it is. Your real wealth isn't your salary. It's your salary divided by your cost of living. A modest income in a cheap place can crush a big income in an expensive one. The map, quietly, is doing the division for you — whether you notice or not.",
+      "motif": "realwealthformula",
+      "caption": "your REAL wealth"
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "Just run the formula. Sixty thousand dollars divided by Mississippi's low costs gives you real spending power of around seventy thousand. Ninety thousand divided by California's high costs? Barely sixty-four. The lower salary, quite literally, wins the real-life comparison.",
+      "text": "$70K vs $64K",
+      "sub": "real spending power: $60K in MS vs $90K in CA",
+      "icon": "scale"
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "And this creates one of the greatest money opportunities of our time.",
+      "heading": "The Arbitrage",
+      "kicker": "earn big, live cheap"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "It's called geographic arbitrage. Thanks to remote work, you can now earn a big-city salary while living in a low-cost state. Collect a San Francisco paycheck, pay Tennessee prices, and the gap between the two pours straight into your savings. It's the ultimate cheat code.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "earn big-city pay"
+        },
+        {
+          "name": "house",
+          "label": "pay cheap-state prices"
+        },
+        {
+          "name": "moneytree",
+          "label": "the gap = savings"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "One honest warning about the remote dream: some companies now adjust your pay to your location. Move somewhere cheap, and they may quietly cut your salary to match. The arbitrage is real — but read your contract, because the company may want that gap for itself, not for you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "remote pay"
+        },
+        {
+          "name": "scissors",
+          "label": "cut to match location"
+        },
+        {
+          "name": "warning",
+          "label": "read the contract"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "People are doing exactly this at scale, quietly leaving California and New York for Texas, Florida, and Tennessee. Same job, same salary, half the cost of living, no state income tax. For many, it's like getting an enormous raise overnight — without changing jobs at all.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "luggage",
+          "label": "leaving CA & NY"
+        },
+        {
+          "name": "mappin",
+          "label": "for TX, FL, TN"
+        },
+        {
+          "name": "chartup",
+          "label": "like a huge raise"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And this isn't theoretical — it's a mass movement. For years now, the population has steadily drained out of high-cost, high-tax states and flooded into low-cost ones. Millions of people are, quite literally, voting with their feet for a dollar that stretches further.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "millions moving"
+        },
+        {
+          "name": "luggage",
+          "label": "high-cost → low-cost"
+        },
+        {
+          "name": "mappin",
+          "label": "voting with their feet"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "title",
+      "narration": "But before you pack your bags, there are real trade-offs to weigh.",
+      "heading": "The Trade-Offs",
+      "kicker": "cheap isn't always better"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "Cheap states are cheap for reasons. They often have lower local salaries if you work there, fewer high-paying industries, and sometimes less spending on schools, services, and infrastructure. The low cost of living and the lower wages usually travel together.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "lower local wages"
+        },
+        {
+          "name": "school",
+          "label": "less on services"
+        },
+        {
+          "name": "scale",
+          "label": "cost & pay move together"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "Be clear-eyed about the downsides, though. Cheaper states can mean fewer specialist jobs, longer drives to a good hospital, and weaker public services. Sometimes you really do get what you pay for — the low cost is the whole package, not just the cheaper housing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "fewer services"
+        },
+        {
+          "name": "briefcase",
+          "label": "fewer specialist jobs"
+        },
+        {
+          "name": "scale",
+          "label": "you get what you pay for"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "And expensive places aren't expensive by accident. You're often paying a premium for high salaries, world-class jobs, culture, weather, and opportunity. For some careers, being in an expensive hub is exactly what makes the big income possible in the first place.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "world-class jobs"
+        },
+        {
+          "name": "palmtree",
+          "label": "weather & culture"
+        },
+        {
+          "name": "chartup",
+          "label": "opportunity premium"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And the expensive hubs exist for a reason. Industries cluster — tech in California, finance in New York — and being in the room can unlock opportunities and salaries that simply don't exist anywhere else. Sometimes the expensive city is the investment that pays for itself.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "officetower",
+          "label": "industries cluster"
+        },
+        {
+          "name": "handshake",
+          "label": "being in the room"
+        },
+        {
+          "name": "chartup",
+          "label": "pays for itself"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Cost-of-living index by state (100 = US avg)",
+      "unit": "idx",
+      "narration": "So here's the spread in one chart. Mississippi near eighty-five, Texas close to average at around ninety-three, California up near one-forty, and Hawaii way out at a hundred and ninety. The same life, priced from a bargain to a fortune, purely by geography.",
+      "data": [
+        {
+          "label": "Mississippi",
+          "value": 85
+        },
+        {
+          "label": "Texas",
+          "value": 93
+        },
+        {
+          "label": "California",
+          "value": 140
+        },
+        {
+          "label": "Hawaii",
+          "value": 190
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "So what do you actually do with all of this?",
+      "heading": "The Playbook",
+      "kicker": "make the map work for you"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "First, never judge a job offer by the salary alone. Always divide it by the local cost of living. A quick online cost-of-living calculator can tell you in seconds whether that shiny raise in a new city is actually a raise — or a secret pay cut.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "divide by local cost"
+        },
+        {
+          "name": "paystub",
+          "label": "is the raise real?"
+        },
+        {
+          "name": "scale",
+          "label": "or a secret pay cut?"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "And if a company wants you to move, negotiate. Ask for a cost-of-living adjustment, a relocation package, or a raise that genuinely reflects the new city's prices. The move only makes sense if your real income — after those higher costs — actually goes up, not down.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "negotiate a COL raise"
+        },
+        {
+          "name": "calculator",
+          "label": "does real income rise?"
+        },
+        {
+          "name": "scale",
+          "label": "only move if it does"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Second, if your work is remote, treat location as a financial superpower. Deliberately choosing a low-cost, low-tax state while keeping a high salary can be worth more than years of raises and promotions — instantly, and for the rest of your life.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "location = a lever"
+        },
+        {
+          "name": "mappin",
+          "label": "pick low cost + low tax"
+        },
+        {
+          "name": "moneytree",
+          "label": "worth years of raises"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "And third, weigh the whole picture, not just the dollars. Family, friends, climate, career, and the life you actually want all matter. The cheapest state on the map isn't automatically the best place to live. But knowing the real numbers lets you choose with your eyes wide open.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "family & friends"
+        },
+        {
+          "name": "smiley",
+          "label": "the life you want"
+        },
+        {
+          "name": "scale",
+          "label": "choose with eyes open"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "But never let a spreadsheet make the entire decision. Being near aging parents, a real support network, or a place you simply love carries a value no index can capture. Optimize the money — but don't sacrifice the very life that money was supposed to buy.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "family & roots"
+        },
+        {
+          "name": "smiley",
+          "label": "a life you love"
+        },
+        {
+          "name": "scale",
+          "label": "money serves the life"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "Because the deepest lesson here is simple. Two people can earn the exact same salary and live completely different lives — one comfortable and saving, one stressed and broke — based on nothing more than the state line they happen to live on.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "same salary"
+        },
+        {
+          "name": "mappin",
+          "label": "different state line"
+        },
+        {
+          "name": "scale",
+          "label": "opposite lives"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "So the next time you see a salary, don't ask 'is that a lot?' Ask 'a lot, where?' Your paycheck is only ever half the equation. The cost of living — the quiet number hiding behind the map — decides what it's really worth.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "'a lot… where?'"
+        },
+        {
+          "name": "mappin",
+          "label": "the map is half of it"
+        },
+        {
+          "name": "moneybag",
+          "label": "now you see it"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "If this changed how you see your paycheck and your zip code, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "the cost of maintaining a certain standard of living"
+    },
+    {
+      "id": "wiki-colindex",
+      "name": "Cost-of-living index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost-of-living_index",
+      "quote": "measures relative cost of living over time or regions"
+    },
+    {
+      "id": "wiki-pp",
+      "name": "Purchasing power (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power",
+      "quote": "the amount of products and services available for purchase"
+    },
+    {
+      "id": "wiki-statetax",
+      "name": "State income tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_income_tax",
+      "quote": "most individual U.S. states collect a state income tax"
+    },
+    {
+      "id": "wiki-realnominal",
+      "name": "Real vs. nominal value (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_versus_nominal_value_(economics)",
+      "quote": "measured against the actual goods or services"
+    },
+    {
+      "id": "wiki-household",
+      "name": "Household income in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_income_in_the_United_States",
+      "quote": "an economic measure of one household's total income"
+    }
+  ],
+  "youtube": {
+    "title": "Cost of Living at Every Level: Every US State Ranked",
+    "alts": [
+      "The Cheapest and Most Expensive States to Live In (Ranked)",
+      "Why $60K in Mississippi Beats $90K in California"
+    ],
+    "hook": "The same $60,000 salary can make you middle-class in one state and broke in another — because the dollar isn't worth the same across America. This is cost of living at every level, all 50 states ranked by the cost-of-living index (100 = average): the cheapest (Mississippi ~85, Arkansas, Oklahoma) vs the priciest (Hawaii ~190, California ~140). We cover purchasing power, why housing is the one factor driving almost the entire gap, the no-income-tax states (and how they claw it back), real vs nominal income (a $60K Mississippi life beats a $90K California one), and geographic arbitrage with remote work. The real formula: your wealth = salary ÷ cost of living. Fully cited.",
+    "bullets": [
+      "The cost-of-living index: cheapest vs priciest states",
+      "Why housing drives almost the entire difference",
+      "The no-income-tax states (and how they claw it back)",
+      "Real vs nominal income: why $60K in MS beats $90K in CA",
+      "Geographic arbitrage: earn big-city pay, live cheap",
+      "The formula: real wealth = salary ÷ cost of living"
+    ],
+    "tags": [
+      "cost of living by state",
+      "cheapest states to live",
+      "most expensive states",
+      "cost of living index",
+      "real vs nominal income",
+      "geographic arbitrage",
+      "no income tax states",
+      "purchasing power",
+      "best states for money",
+      "remote work salary",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#costofliving",
+      "#personalfinance",
+      "#money",
+      "#remotework"
+    ],
+    "thumbnail": {
+      "hookTop": "COST OF LIVING",
+      "hookBot": "EVERY STATE RANKED",
+      "napkinNumber": "190 vs 85",
+      "napkinSub": "Hawaii vs Mississippi",
+      "deco": "mappin"
+    },
+    "chapters": [
+      [
+        "what cost of living actually measures",
+        "The index"
+      ],
+      [
+        "where your money stretches the furthest",
+        "The rankings"
+      ],
+      [
+        "comes down to one single thing",
+        "It's the housing"
+      ],
+      [
+        "also the taxman",
+        "The tax map"
+      ],
+      [
+        "your salary starts to mean something completely different",
+        "Real vs nominal"
+      ],
+      [
+        "the single most important formula",
+        "Real wealth"
+      ],
+      [
+        "one of the greatest money opportunities",
+        "The arbitrage"
+      ],
+      [
+        "real trade-offs to weigh",
+        "The trade-offs"
+      ],
+      [
+        "never judge a job offer by the salary alone",
+        "The playbook"
+      ]
+    ]
+  }
+}

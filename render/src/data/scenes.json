@@ -2,852 +2,870 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "A million dollars of debt can make you rich. Five thousand dollars of debt can quietly destroy you. That sounds backwards — but it's the single most important truth about borrowing. It was never really about how much you owe. It's about the type of debt, and the rate.",
+    "narration": "A sixty-thousand-dollar salary can make you comfortably middle-class in one state — and leave you scraping by in another. Because the dollar in your pocket is not worth the same across America. Depending on which state you live in, the exact same life can cost you nearly double.",
     "pose": "explain",
     "props": [
       {
-        "name": "mortgage",
-        "label": "$1M can make you rich"
+        "name": "paystub",
+        "label": "same $60K salary"
       },
       {
-        "name": "creditcard",
-        "label": "$5K can destroy you"
+        "name": "mappin",
+        "label": "different state…"
       },
       {
-        "name": "percent",
-        "label": "it's the type & rate"
+        "name": "scale",
+        "label": "…up to 2× the cost"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that proves it. Borrow from a mortgage, and you pay around seven percent a year. Borrow the exact same dollar from a payday lender, and you can pay four hundred percent. The same debt, costing nearly sixty times as much.",
-    "text": "400%",
-    "sub": "payday loan APR — vs ~7% for a mortgage",
-    "icon": "percent"
+    "narration": "Here's the gap that defines it. If an average American state scores a hundred on the cost-of-living index, Mississippi comes in around eighty-five — and Hawaii sits near one hundred and ninety. The same basket of life costs more than twice as much in one state as another.",
+    "text": "190 vs 85",
+    "sub": "Hawaii vs Mississippi cost-of-living index (100 = avg)",
+    "icon": "mappin"
   },
   {
-    "id": "s46",
+    "id": "s42",
     "type": "character",
-    "narration": "Remember, the same compound interest that quietly builds a saver's fortune runs in reverse against a borrower. On high-interest debt, the interest itself starts earning interest for the lender. Left alone, bad debt doesn't just sit there — it actively grows, while you sleep.",
+    "narration": "That index isn't a guess. It's a fixed basket — rent, groceries, utilities, transport, and healthcare — priced in every location, then compared. It's the closest thing we have to an honest, apples-to-apples measure of what a normal life actually costs where you are.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "snowball",
-        "label": "compounding in reverse"
+        "name": "grocerybag",
+        "label": "a fixed basket"
       },
       {
-        "name": "percent",
-        "label": "interest on interest"
+        "name": "house",
+        "label": "rent + bills"
       },
       {
-        "name": "warning",
-        "label": "it grows while you sleep"
+        "name": "scale",
+        "label": "apples-to-apples"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we're climbing every level of debt — from zero, all the way to a million owed — and at each one, asking the only questions that matter. Is this debt building you up, or burying you? And how do you climb back down if you're stuck?",
+    "narration": "So today we're ranking the cost of living across all fifty states — and showing why your real wealth has far less to do with your salary than with the map. Where you choose to live might be the single biggest money decision you ever make.",
     "pose": "explain",
     "props": [
       {
-        "name": "ladder",
-        "label": "$0 → $1M owed"
+        "name": "globe",
+        "label": "all 50 states ranked"
       },
       {
-        "name": "shovel",
-        "label": "building or burying?"
+        "name": "mappin",
+        "label": "the map decides"
       },
       {
-        "name": "brokenchain",
-        "label": "how to climb out"
+        "name": "moneybag",
+        "label": "a huge money choice"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "borrow cheaply to buy something that grows",
-    "memeBottom": "borrow expensively to buy something that shrinks",
-    "narration": "Because there are really two completely different things we both call 'debt.' One is a powerful tool the wealthy use to get richer. The other is a trap that quietly keeps people poor for life. Telling them apart is the whole game."
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "chase the biggest salary",
+    "memeBottom": "chase the biggest salary minus your cost of living",
+    "narration": "Because a huge paycheck in an expensive city can quietly leave you poorer than a modest one somewhere cheap. The number that actually matters isn't what you earn. It's what you earn, divided by what your life costs."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what debt actually is — and the one line that splits it in two.",
-    "heading": "Good vs. Bad",
-    "kicker": "the great divide"
+    "narration": "First, what cost of living actually measures.",
+    "heading": "The Index",
+    "kicker": "100 = average"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "At its core, debt is simply an obligation to pay money borrowed or otherwise withheld from another party. You get money now, and you promise to pay it back later — plus interest, the price of borrowing.",
-    "sourceId": "wiki-debt"
+    "narration": "Cost of living is simply the cost of maintaining a certain standard of living — the price of the same basket of housing, food, transport, and bills, measured in different places.",
+    "sourceId": "wiki-col"
   },
   {
     "id": "s7",
-    "type": "stage",
-    "narration": "And here's the line that divides all debt. Good debt is money borrowed cheaply to buy something that grows in value — a home, an education, a business. Bad debt is money borrowed expensively to buy something that shrinks — gadgets, nights out, a car you can't afford. One builds you up. The other eats you alive.",
-    "motif": "goodbaddebt",
-    "caption": "one builds you up, one eats you alive"
+    "type": "screenshot",
+    "narration": "To compare places, economists build a cost-of-living index, which measures relative cost of living over time or regions. The national average is set to one hundred, so every state becomes a simple number above or below it.",
+    "sourceId": "wiki-colindex"
   },
   {
-    "id": "s47",
+    "id": "s8",
+    "type": "stage",
+    "narration": "Here's how to read it. A state at one hundred is dead average. Mississippi, around eighty-five, is fifteen percent cheaper than average. California, near one-forty, is forty percent more expensive. And Hawaii, close to one-ninety, costs nearly double the national norm.",
+    "motif": "colindex100",
+    "caption": "Hawaii costs more than double Mississippi"
+  },
+  {
+    "id": "s43",
     "type": "character",
-    "narration": "Of course, real life has a gray zone. A modest loan for a reliable car to get to work isn't exactly 'good' debt, but it's necessary debt — a sensible tool. The goal was never zero debt at all costs. It's to be ruthlessly honest about which kind you're actually signing up for.",
+    "narration": "And states are only the average. Zoom into cities, and it gets wild. Manhattan can score over two hundred and thirty — more than double the US norm — while a rural town in the very same region might sit below ninety. Your city can matter even more than your state.",
     "pose": "explain",
     "props": [
       {
-        "name": "car",
-        "label": "necessary debt"
+        "name": "officetower",
+        "label": "Manhattan 230+"
       },
       {
-        "name": "scale",
-        "label": "be honest about it"
+        "name": "house",
+        "label": "rural town <90"
       },
       {
-        "name": "handshake",
-        "label": "a sensible tool"
+        "name": "mappin",
+        "label": "city > state"
       }
     ]
   },
   {
-    "id": "s8",
-    "type": "screenshot",
-    "narration": "The number that tells you which is which is the APR — the interest rate for a whole year. It's the single most honest measure of how expensive a debt truly is. The higher the APR, the more likely it's the dangerous kind.",
-    "sourceId": "wiki-apr"
-  },
-  {
     "id": "s9",
-    "type": "stage",
-    "narration": "Look at the full spectrum. A mortgage, around seven percent. Student loans, roughly six. A car loan, maybe nine. A credit card, a brutal twenty-four. And a payday loan, an almost unbelievable four hundred percent. The cost of the exact same borrowed dollar explodes as you go down the list.",
-    "motif": "rateladder",
-    "caption": "the real cost of each debt"
+    "type": "screenshot",
+    "narration": "This directly controls your purchasing power — the amount of products and services available for purchase with a certain amount of money. The same dollar simply buys more goods in a cheap state than in an expensive one.",
+    "sourceId": "wiki-pp"
   },
   {
-    "id": "s48",
+    "id": "s44",
     "type": "callout",
-    "narration": "Make it concrete with ten thousand dollars borrowed for one year. At a mortgage's seven percent, the interest is seven hundred dollars. On a credit card, two thousand four hundred. From a payday lender, that same ten thousand can cost you forty thousand in a single year. Same loan, unrecognizable price.",
-    "text": "$40,000",
-    "sub": "a year's interest on $10K at a payday rate",
-    "icon": "warning"
+    "narration": "The government even measures this directly. A hundred dollars in Mississippi effectively buys about a hundred and sixteen dollars' worth of goods. That same hundred in California or New York buys barely eighty-seven. The bill looks identical — but the value inside it absolutely isn't.",
+    "text": "$116 vs $87",
+    "sub": "what $100 really buys in Mississippi vs California",
+    "icon": "moneybag"
   },
   {
     "id": "s10",
     "type": "title",
-    "narration": "So let's climb the ladder, starting at the best possible level.",
-    "heading": "Level 0 — $0",
-    "kicker": "debt-free"
+    "narration": "So let's rank them, starting with where your money stretches the furthest.",
+    "heading": "The Rankings",
+    "kicker": "cheapest vs priciest"
   },
   {
     "id": "s11",
     "type": "stage",
-    "narration": "Zero debt. No payments, no interest, no one with a claim on your future income. It's rarer than you'd think — and it's quietly one of the most powerful financial positions there is. Every dollar you earn is fully, completely yours.",
-    "motif": "debtfreedom",
-    "caption": "$0 debt is a weight lifting off your chest"
+    "narration": "At the affordable end, it's mostly the South and the Midwest. Mississippi, Arkansas, Oklahoma, and Kansas all sit well below average — around eighty-five to ninety. At the expensive end: Hawaii far out front, then California, Massachusetts, and New York. The spread between them is enormous.",
+    "motif": "stateheatmap",
+    "caption": "cost-of-living index — 100 = US average"
   },
   {
-    "id": "s49",
+    "id": "s45",
     "type": "character",
-    "narration": "And debt-free is more than a number — it's a superpower. With no payments hanging over you, you can take a risk, quit a toxic job, start a business, or ride out a layoff without panic. Zero debt quietly buys you something priceless: options.",
+    "narration": "And if you want cheap with amenities, the sweet spot is often mid-sized cities in affordable states — places across Texas, the Carolinas, or the Midwest. You get real city life, solid jobs, and culture, at a genuine fraction of coastal prices.",
     "pose": "explain",
     "props": [
       {
-        "name": "brokenchain",
-        "label": "no payments"
+        "name": "risingcity",
+        "label": "mid-sized cities"
       },
       {
-        "name": "briefcase",
-        "label": "take real risks"
+        "name": "mappin",
+        "label": "TX, Carolinas, Midwest"
       },
       {
         "name": "smiley",
-        "label": "options = freedom"
+        "label": "city life, half price"
       }
     ]
   },
   {
     "id": "s12",
     "type": "character",
-    "narration": "But here's the twist: zero debt isn't automatically the goal. Someone with no debt and no assets is worse off than someone with a cheap mortgage on a growing home. Debt-free is wonderful — but using cheap debt wisely can build wealth even faster.",
+    "narration": "And the pattern is clear. Cheap states tend to be inland, rural, and spread out, with plenty of land. Expensive states are coastal, dense, and desirable — places where a lot of people want to live, and there simply isn't enough room for all of them.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "$0 debt, $0 assets…"
-      },
-      {
         "name": "house",
-        "label": "vs. cheap mortgage, growing"
+        "label": "cheap: inland, spacious"
       },
       {
-        "name": "scale",
-        "label": "debt-free ≠ always best"
+        "name": "palmtree",
+        "label": "pricey: coastal, dense"
+      },
+      {
+        "name": "crowd",
+        "label": "everyone wants in"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "So why are the coasts so brutally expensive? Simple supply and demand. Everyone wants to live near the ocean, the jobs, and the weather — but the land is physically limited, and strict building rules keep new housing scarce. Scarcity plus demand equals sky-high prices.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "palmtree",
+        "label": "everyone wants the coast"
+      },
+      {
+        "name": "barrier",
+        "label": "strict building rules"
+      },
+      {
+        "name": "chartup",
+        "label": "scarcity → high prices"
       }
     ]
   },
   {
     "id": "s13",
     "type": "title",
-    "narration": "Now the first rung most people actually land on — and the most dangerous.",
-    "heading": "Credit Card Debt",
-    "kicker": "the silent killer"
+    "narration": "And almost all of that difference comes down to one single thing.",
+    "heading": "It's the Housing",
+    "kicker": "the one big swing"
   },
   {
     "id": "s14",
-    "type": "screenshot",
-    "narration": "The average American household carries several thousand dollars in credit card debt. And credit card interest is, quite openly, a way in which card issuers generate revenue. You are the revenue.",
-    "sourceId": "wiki-cc"
+    "type": "stage",
+    "narration": "People assume everything costs more in expensive states. It doesn't. A gallon of milk, a tank of gas, a restaurant meal — those barely change from state to state. The entire gap is housing. Rent and home prices swing wildly, and they drag the whole index with them.",
+    "motif": "housingdriver",
+    "caption": "rent & home prices swing wildly; a gallon of milk barely moves"
   },
   {
-    "id": "s50",
+    "id": "s47",
     "type": "character",
-    "narration": "But here's the crucial secret about credit cards: used right, the interest is zero. If you pay the full balance every single month, you ride the grace period and never pay a cent of interest. A credit card is only a trap if you carry a balance. Pay in full, and you actually win.",
+    "narration": "And this hits renters and buyers alike. In the priciest states, a tiny apartment can cost more to rent than an entire house costs to own somewhere cheap. The roof over your head is, by a mile, the biggest line item the map controls.",
     "pose": "explain",
     "props": [
       {
-        "name": "creditcard",
-        "label": "pay in full"
+        "name": "apartment",
+        "label": "pricey rental"
       },
       {
-        "name": "percent",
-        "label": "0% interest"
+        "name": "house",
+        "label": "vs a cheap home"
       },
       {
-        "name": "smiley",
-        "label": "ride the grace period"
+        "name": "scale",
+        "label": "the biggest line item"
       }
     ]
   },
   {
     "id": "s15",
     "type": "character",
-    "narration": "At twenty-plus percent, this is the most toxic common debt there is. It's almost always 'bad debt' — borrowed to buy things that are already losing value the moment you own them. And it has a secret weapon designed to keep you paying forever.",
+    "narration": "The numbers are stark. A typical home in Mississippi might cost under two hundred thousand dollars. The same family home in California can run well over eight hundred thousand — or in parts of Hawaii, over a million. Four or five times the price, for a roof over your head.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
-        "name": "creditcard",
-        "label": "20%+ APR"
+        "name": "house",
+        "label": "MS: under $200K"
       },
       {
-        "name": "grocerybag",
-        "label": "buys shrinking stuff"
+        "name": "mansion",
+        "label": "CA: $800K+"
       },
       {
-        "name": "mousetrap",
-        "label": "a hidden trap"
+        "name": "palmtree",
+        "label": "HI: $1M+"
       }
     ]
+  },
+  {
+    "id": "s48",
+    "type": "callout",
+    "narration": "The real affordability red flag is the price-to-income ratio. In cheap states, a home costs roughly three years of income. In the priciest metros, it can be ten years or more — a wall so high that ordinary workers simply cannot climb it anymore.",
+    "text": "10×",
+    "sub": "home price vs annual income in the priciest metros",
+    "icon": "house"
   },
   {
     "id": "s16",
-    "type": "stage",
-    "narration": "That weapon is the minimum payment. The card cheerfully asks for a tiny amount each month — but at that rate, a few thousand dollars of debt can take over a decade to clear, and you'll pay back double or triple what you borrowed. The minimum payment is a trap dressed up as a kindness.",
-    "motif": "minimumpaymenttrap",
-    "caption": "the minimum payment is a trap"
-  },
-  {
-    "id": "s51",
-    "type": "callout",
-    "narration": "Here's the trap in hard numbers. Put five thousand dollars on a card at twenty-four percent, and pay only the minimum each month. It takes you well over fifteen years to clear it — and you hand the bank nearly six thousand dollars in pure interest. You end up paying for everything twice.",
-    "text": "$5,800",
-    "sub": "interest on a $5K card paying only the minimum",
-    "icon": "creditcard"
+    "type": "title",
+    "narration": "But the sticker price of life isn't the only thing the map changes. There's also the taxman.",
+    "heading": "The Tax Map",
+    "kicker": "where the state takes a cut"
   },
   {
     "id": "s17",
-    "type": "title",
-    "narration": "Climb to a bigger number — but a very different kind of debt.",
-    "heading": "The Car Loan",
-    "kicker": "borrowing for a brick that shrinks"
+    "type": "screenshot",
+    "narration": "On top of federal tax, most individual U.S. states collect a state income tax — another slice of every paycheck, which varies enormously depending on where you live.",
+    "sourceId": "wiki-statetax"
   },
   {
-    "id": "s18",
+    "id": "s49",
     "type": "character",
-    "narration": "The average new car loan is now pushing forty thousand dollars. And this is a special kind of bad debt, because you're borrowing a large sum to buy an asset that loses value fast — a new car can drop twenty percent the moment you drive it off the lot.",
+    "narration": "At the other end of the tax map sit the high-tax states. California's top income-tax rate passes thirteen percent. New York, New Jersey, and Hawaii aren't far behind. Stacked on top of federal tax, a high earner in those states can lose nearly half their income to taxes.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "car",
-        "label": "~$40K borrowed"
+        "name": "taxform",
+        "label": "CA top rate 13%+"
       },
       {
-        "name": "chartdown",
-        "label": "−20% off the lot"
+        "name": "mappin",
+        "label": "NY, NJ, HI"
       },
       {
         "name": "warning",
-        "label": "debt on a shrinking asset"
+        "label": "~half to taxes"
       }
     ]
   },
   {
-    "id": "s52",
+    "id": "s18",
+    "type": "stage",
+    "narration": "But a lucky handful of states take zero income tax at all. Texas, Florida, Washington, Nevada, Tennessee, and a few others let you keep your whole paycheck, at least from the state. For a high earner, that alone can be worth tens of thousands a year.",
+    "motif": "notaxstates",
+    "caption": "…but they claw it back via property & sales tax"
+  },
+  {
+    "id": "s50",
     "type": "character",
-    "narration": "There's a simple guardrail for car debt: the twenty / four / ten rule. Put at least twenty percent down, finance for no more than four years, and keep all your car costs under ten percent of your income. If a car breaks those rules, it is quietly too expensive for you.",
+    "narration": "This is exactly why so many retirees flock to Florida. On a fixed retirement income, escaping state income tax — plus generally lower costs — can add years of life to their savings. The tax map quietly reshapes where millions of people choose to grow old.",
     "pose": "explain",
     "props": [
       {
-        "name": "car",
-        "label": "20% down"
+        "name": "retiree",
+        "label": "retirees → Florida"
       },
       {
-        "name": "calculator",
-        "label": "≤ 4-year loan"
+        "name": "taxform",
+        "label": "no state income tax"
       },
       {
-        "name": "percent",
-        "label": "≤ 10% of income"
+        "name": "nestegg",
+        "label": "savings last longer"
       }
     ]
   },
   {
     "id": "s19",
-    "type": "stage",
-    "narration": "This creates a nasty situation called being 'underwater.' The car's value drops faster than you pay the loan down — so for years, you owe more than the car is actually worth. If you crash it or sell it, you're left paying for a car you no longer even have.",
-    "motif": "underwaterdebt",
-    "caption": "'underwater': you owe more than it's worth"
-  },
-  {
-    "id": "s53",
     "type": "character",
-    "narration": "And here's how the underwater trap deepens. Desperate to escape, people roll the leftover debt from their old car straight into the loan on a new one. Now they owe even more, on an even faster-depreciating asset. The hole just follows them, from car to car to car.",
+    "narration": "But beware the catch. No-income-tax states still need money — so they quietly claw it back through higher property taxes, sales taxes, and fees. Texas, famously, has no income tax but some of the steepest property taxes in the country. The state always gets paid, somehow.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "car",
-        "label": "roll old debt in"
+        "name": "taxform",
+        "label": "no income tax…"
       },
       {
-        "name": "chartdown",
-        "label": "owe even more"
+        "name": "house",
+        "label": "…high property tax"
       },
       {
-        "name": "ballchain",
-        "label": "the hole follows you"
+        "name": "warning",
+        "label": "the state gets paid"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "The clawback comes in two main forms. Sales tax can add up to ten percent to everything you buy. And property tax, charged every year on your home's value, can quietly cost more over a lifetime than an income tax ever would. There is no truly tax-free state.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "sales tax ~10%"
+      },
+      {
+        "name": "house",
+        "label": "yearly property tax"
+      },
+      {
+        "name": "warning",
+        "label": "no free lunch"
       }
     ]
   },
   {
     "id": "s20",
     "type": "title",
-    "narration": "Now a debt that's supposed to be an investment in yourself.",
-    "heading": "Student Loans",
-    "kicker": "'good debt' gone sideways"
+    "narration": "Now put it all together, and your salary starts to mean something completely different.",
+    "heading": "Real vs. Nominal",
+    "kicker": "what your pay really buys"
   },
   {
     "id": "s21",
     "type": "screenshot",
-    "narration": "A student loan is a loan designed to help students pay for tertiary education — the classic example of 'good debt,' because a degree is meant to boost your lifetime income far beyond what it costs.",
-    "sourceId": "wiki-student"
+    "narration": "This is the difference between nominal and real value. Your nominal salary is the number on the paycheck. Your real income is that salary measured against the actual goods or services it can actually buy where you live.",
+    "sourceId": "wiki-realnominal"
   },
   {
-    "id": "s22",
+    "id": "s52",
     "type": "character",
-    "narration": "And in theory, it is good debt. But it only works if the degree actually pays off. Borrow forty thousand for a high-demand skill, and it's a brilliant investment. Borrow a hundred thousand for a degree with few job prospects, and that 'good debt' becomes a decades-long anchor.",
+    "narration": "When the government re-ranks states by real income — pay adjusted for local prices — the whole list flips. Some glamorous high-wage coastal states tumble down it, while modest-wage, low-cost states quietly climb. On paper you earn less; in real life, you often have much more.",
     "pose": "explain",
     "props": [
       {
-        "name": "gradcap",
-        "label": "degree boosts income?"
+        "name": "chartdown",
+        "label": "high-wage states fall"
       },
       {
         "name": "chartup",
-        "label": "good: high-demand skill"
+        "label": "low-cost states rise"
       },
       {
-        "name": "anchor",
-        "label": "bad: no job prospects"
+        "name": "scale",
+        "label": "real income flips it"
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "type": "stage",
+    "narration": "Watch what that does. A sixty-thousand-dollar salary in Mississippi, after its low costs, feels like earning seventy thousand. The exact same sixty thousand in California, after its brutal costs, feels more like forty-three. Same paycheck — a seventy-thousand-dollar life, or a forty-three-thousand-dollar one.",
+    "motif": "samesalarystates",
+    "caption": "a $60K salary — two different lives"
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "narration": "And it's not just rent. Childcare, healthcare, and even car insurance swing hard by location too. In some expensive states, daycare for a single child rivals a second rent payment. These quiet costs can matter just as much as the mortgage.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "baby",
+        "label": "childcare"
+      },
+      {
+        "name": "hospital",
+        "label": "healthcare"
+      },
+      {
+        "name": "car",
+        "label": "insurance too"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "narration": "This flips everything you think you know. A job offering ninety thousand in San Francisco can genuinely leave you poorer than a sixty-thousand job in Oklahoma. The bigger number looks better on paper — but the smaller one buys a far bigger life.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "briefcase",
+        "label": "$90K in SF"
+      },
+      {
+        "name": "chartdown",
+        "label": "poorer than…"
+      },
+      {
+        "name": "house",
+        "label": "$60K in Oklahoma"
       }
     ]
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "So treat a student loan like any investment: weigh the cost against the return. Borrowing for a degree that reliably leads to a strong income can be one of the best bets you'll ever make. Borrowing the same amount for one that doesn't is just expensive bad debt in a cap and gown.",
+    "narration": "People fall for this constantly. They take an exciting twenty-percent raise to move to a glamorous, expensive city — and are stunned to find themselves more broke than before. A raise that gets swallowed by rent isn't a raise. It's a pay cut with a nicer view.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "gradcap",
-        "label": "weigh cost vs return"
+        "name": "briefcase",
+        "label": "+20% raise"
       },
       {
-        "name": "chartup",
-        "label": "good ROI = great bet"
+        "name": "mansion",
+        "label": "to an expensive city"
       },
       {
-        "name": "warning",
-        "label": "bad ROI = bad debt"
+        "name": "chartdown",
+        "label": "secretly poorer"
       }
     ]
-  },
-  {
-    "id": "s23",
-    "type": "title",
-    "narration": "And now the giant — the 'good debt' most people will ever take on.",
-    "heading": "The Mortgage",
-    "kicker": "debt that builds wealth"
   },
   {
     "id": "s24",
-    "type": "character",
-    "narration": "A three-hundred-thousand-dollar mortgage sounds terrifying. But it's usually the best debt a normal person can get. It's cheap, it's borrowed against an asset that tends to grow, and every payment slowly converts debt into ownership — into equity that's truly yours.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "cheap rate"
-      },
-      {
-        "name": "chartup",
-        "label": "asset that grows"
-      },
-      {
-        "name": "keys",
-        "label": "builds your equity"
-      }
-    ]
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "narration": "And mortgages have their own key choice. A thirty-year loan means low payments but far more total interest. A fifteen-year means higher payments, but you own the home in half the time, for a fraction of the interest. Shorter is dramatically cheaper — if you can handle the bigger bite.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "30-yr: low payment"
-      },
-      {
-        "name": "clock",
-        "label": "15-yr: own it sooner"
-      },
-      {
-        "name": "percent",
-        "label": "far less interest"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "That's why economists track household income alongside cost of living. Household income is an economic measure of one household's total income — but on its own, it's only half the story. You have to divide it by what life actually costs.",
+    "sourceId": "wiki-household"
   },
   {
     "id": "s25",
-    "type": "character",
-    "narration": "This is the debt the wealthy actually love. Borrowing at seven percent to own something that grows faster than that, over decades, is how ordinary families quietly build most of their net worth. Big number, but the right kind of big.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "borrow at 7%…"
-      },
-      {
-        "name": "moneytree",
-        "label": "…own what grows faster"
-      },
-      {
-        "name": "nestegg",
-        "label": "most families' wealth"
-      }
-    ]
+    "type": "title",
+    "narration": "Which leads to the single most important formula in this whole video.",
+    "heading": "Real Wealth",
+    "kicker": "salary ÷ cost of living"
   },
   {
     "id": "s26",
-    "type": "title",
-    "narration": "Push to the top of the ladder — a million dollars owed.",
-    "heading": "$1 Million Owed",
-    "kicker": "leverage or ruin"
+    "type": "stage",
+    "narration": "Here it is. Your real wealth isn't your salary. It's your salary divided by your cost of living. A modest income in a cheap place can crush a big income in an expensive one. The map, quietly, is doing the division for you — whether you notice or not.",
+    "motif": "realwealthformula",
+    "caption": "your REAL wealth"
+  },
+  {
+    "id": "s55",
+    "type": "callout",
+    "narration": "Just run the formula. Sixty thousand dollars divided by Mississippi's low costs gives you real spending power of around seventy thousand. Ninety thousand divided by California's high costs? Barely sixty-four. The lower salary, quite literally, wins the real-life comparison.",
+    "text": "$70K vs $64K",
+    "sub": "real spending power: $60K in MS vs $90K in CA",
+    "icon": "scale"
   },
   {
     "id": "s27",
+    "type": "title",
+    "narration": "And this creates one of the greatest money opportunities of our time.",
+    "heading": "The Arbitrage",
+    "kicker": "earn big, live cheap"
+  },
+  {
+    "id": "s28",
     "type": "character",
-    "narration": "At a million in debt, the two worlds split completely. A business owner or real-estate investor with a million in low-cost debt against income-producing assets can be seriously wealthy. It's called leverage — using borrowed money to control far more than you could alone.",
-    "pose": "explain",
+    "narration": "It's called geographic arbitrage. Thanks to remote work, you can now earn a big-city salary while living in a low-cost state. Collect a San Francisco paycheck, pay Tennessee prices, and the gap between the two pours straight into your savings. It's the ultimate cheat code.",
+    "pose": "present",
     "props": [
       {
-        "name": "officetower",
-        "label": "debt on assets"
+        "name": "laptop",
+        "label": "earn big-city pay"
       },
       {
-        "name": "chartup",
-        "label": "= leverage"
+        "name": "house",
+        "label": "pay cheap-state prices"
       },
       {
-        "name": "crown",
-        "label": "seriously wealthy"
+        "name": "moneytree",
+        "label": "the gap = savings"
       }
     ]
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "But one serious warning about leverage: it magnifies everything, including losses. Borrow heavily to buy an asset, and if its value falls, your debt stays exactly the same — it can wipe you out far faster than you ever built up. The tool that makes fortunes also makes spectacular ruins.",
+    "narration": "One honest warning about the remote dream: some companies now adjust your pay to your location. Move somewhere cheap, and they may quietly cut your salary to match. The arbitrage is real — but read your contract, because the company may want that gap for itself, not for you.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "chartup",
-        "label": "magnifies gains…"
+        "name": "laptop",
+        "label": "remote pay"
       },
       {
-        "name": "chartdown",
-        "label": "…and losses"
+        "name": "scissors",
+        "label": "cut to match location"
       },
       {
         "name": "warning",
-        "label": "can wipe you out"
-      }
-    ]
-  },
-  {
-    "id": "s28",
-    "type": "character",
-    "narration": "But a million in consumer and high-interest debt is a financial death sentence. Same headline number — a million owed — but one person is building an empire, and the other is drowning. The only difference is what the debt was used to buy.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "ballchain",
-        "label": "high-interest $1M"
-      },
-      {
-        "name": "chartdown",
-        "label": "a death sentence"
-      },
-      {
-        "name": "scale",
-        "label": "same number, opposite fate"
+        "label": "read the contract"
       }
     ]
   },
   {
     "id": "s29",
-    "type": "title",
-    "narration": "So how do you know when any level of debt has become too much?",
-    "heading": "The Danger Zone",
-    "kicker": "when debt owns you"
-  },
-  {
-    "id": "s30",
-    "type": "screenshot",
-    "narration": "Lenders watch your debt-to-income ratio — the percentage of your monthly gross income that goes toward paying debts. It's the clearest gauge of whether you're in control, or whether your debts are in control of you.",
-    "sourceId": "wiki-dti"
-  },
-  {
-    "id": "s57",
     "type": "character",
-    "narration": "Your debt behavior also feeds your credit score — the number that decides what rates you're offered on everything. A big factor is utilization: try to use less than thirty percent of your available credit. Ironically, how you handle debt quietly decides how expensive your next debt will be.",
+    "narration": "People are doing exactly this at scale, quietly leaving California and New York for Texas, Florida, and Tennessee. Same job, same salary, half the cost of living, no state income tax. For many, it's like getting an enormous raise overnight — without changing jobs at all.",
     "pose": "explain",
     "props": [
       {
-        "name": "gauge",
-        "label": "your credit score"
+        "name": "luggage",
+        "label": "leaving CA & NY"
       },
       {
-        "name": "percent",
-        "label": "keep usage < 30%"
+        "name": "mappin",
+        "label": "for TX, FL, TN"
       },
       {
-        "name": "scale",
-        "label": "it sets your future rates"
+        "name": "chartup",
+        "label": "like a huge raise"
       }
     ]
   },
   {
-    "id": "s31",
+    "id": "s57",
     "type": "character",
-    "narration": "A rough guide: under thirty-six percent of your income going to debt is manageable. Push past forty-three percent, and you're in the danger zone, where most lenders won't touch you — and where one missed paycheck starts a chain reaction.",
+    "narration": "And this isn't theoretical — it's a mass movement. For years now, the population has steadily drained out of high-cost, high-tax states and flooded into low-cost ones. Millions of people are, quite literally, voting with their feet for a dollar that stretches further.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "gauge",
-        "label": "<36% = okay"
+        "name": "crowd",
+        "label": "millions moving"
       },
       {
-        "name": "warning",
-        "label": ">43% = danger"
+        "name": "luggage",
+        "label": "high-cost → low-cost"
       },
       {
-        "name": "percent",
-        "label": "one shock from a spiral"
+        "name": "mappin",
+        "label": "voting with their feet"
+      }
+    ]
+  },
+  {
+    "id": "s30",
+    "type": "title",
+    "narration": "But before you pack your bags, there are real trade-offs to weigh.",
+    "heading": "The Trade-Offs",
+    "kicker": "cheap isn't always better"
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "narration": "Cheap states are cheap for reasons. They often have lower local salaries if you work there, fewer high-paying industries, and sometimes less spending on schools, services, and infrastructure. The low cost of living and the lower wages usually travel together.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "lower local wages"
+      },
+      {
+        "name": "school",
+        "label": "less on services"
+      },
+      {
+        "name": "scale",
+        "label": "cost & pay move together"
+      }
+    ]
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "narration": "Be clear-eyed about the downsides, though. Cheaper states can mean fewer specialist jobs, longer drives to a good hospital, and weaker public services. Sometimes you really do get what you pay for — the low cost is the whole package, not just the cheaper housing.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "hospital",
+        "label": "fewer services"
+      },
+      {
+        "name": "briefcase",
+        "label": "fewer specialist jobs"
+      },
+      {
+        "name": "scale",
+        "label": "you get what you pay for"
       }
     ]
   },
   {
     "id": "s32",
-    "type": "stage",
-    "narration": "And that chain reaction has a name: the debt spiral. You borrow to cover the payments on debt you already have. The balances compound against you, faster than you can earn. Each month, the hole gets deeper, and climbing out gets harder.",
-    "motif": "debtspiral",
-    "caption": "borrowing to pay off borrowing"
-  },
-  {
-    "id": "s58",
     "type": "character",
-    "narration": "If you're drowning in high-interest debt, there's a lifeline: consolidation. Roll several nasty balances into one lower-rate loan, or a zero-percent balance transfer. It genuinely helps — but only if you also stop adding new debt. Otherwise you've just emptied the card so you can fill it up again.",
+    "narration": "And expensive places aren't expensive by accident. You're often paying a premium for high salaries, world-class jobs, culture, weather, and opportunity. For some careers, being in an expensive hub is exactly what makes the big income possible in the first place.",
     "pose": "explain",
     "props": [
       {
-        "name": "lifering",
-        "label": "consolidate to lower rate"
+        "name": "officetower",
+        "label": "world-class jobs"
       },
       {
-        "name": "creditcard",
-        "label": "0% balance transfer"
+        "name": "palmtree",
+        "label": "weather & culture"
       },
       {
-        "name": "warning",
-        "label": "…then STOP borrowing"
+        "name": "chartup",
+        "label": "opportunity premium"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "And the expensive hubs exist for a reason. Industries cluster — tech in California, finance in New York — and being in the room can unlock opportunities and salaries that simply don't exist anywhere else. Sometimes the expensive city is the investment that pays for itself.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "officetower",
+        "label": "industries cluster"
+      },
+      {
+        "name": "handshake",
+        "label": "being in the room"
+      },
+      {
+        "name": "chartup",
+        "label": "pays for itself"
       }
     ]
   },
   {
     "id": "s33",
-    "type": "screenshot",
-    "narration": "At the bottom of the spiral is default — the failure to meet the legal obligations of a loan. Missed payments, wrecked credit, repossession, bankruptcy. The final, brutal stop on the wrong side of the debt ladder.",
-    "sourceId": "wiki-default"
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Cost-of-living index by state (100 = US avg)",
+    "unit": "idx",
+    "narration": "So here's the spread in one chart. Mississippi near eighty-five, Texas close to average at around ninety-three, California up near one-forty, and Hawaii way out at a hundred and ninety. The same life, priced from a bargain to a fortune, purely by geography.",
+    "data": [
+      {
+        "label": "Mississippi",
+        "value": 85
+      },
+      {
+        "label": "Texas",
+        "value": 93
+      },
+      {
+        "label": "California",
+        "value": 140
+      },
+      {
+        "label": "Hawaii",
+        "value": 190
+      }
+    ],
+    "highlight": 3
   },
   {
     "id": "s34",
     "type": "title",
-    "narration": "The worst of all of it hides at the very bottom — preying on the desperate.",
-    "heading": "The Predators",
-    "kicker": "payday loans"
+    "narration": "So what do you actually do with all of this?",
+    "heading": "The Playbook",
+    "kicker": "make the map work for you"
   },
   {
     "id": "s35",
-    "type": "screenshot",
-    "narration": "A payday loan is a short-term unsecured loan, aimed at people who need cash before their next paycheck. They sound small and harmless. Their effective interest rates are anything but — often reaching into the hundreds of percent.",
-    "sourceId": "wiki-payday"
-  },
-  {
-    "id": "s59",
     "type": "character",
-    "narration": "Payday loans are engineered to trap. Most borrowers can't repay in two weeks, so they 'roll it over' — paying another huge fee just to extend. The average payday borrower ends up in debt for most of the year, paying fees that utterly dwarf the tiny amount they first borrowed.",
-    "pose": "explain",
-    "expression": "worried",
+    "narration": "First, never judge a job offer by the salary alone. Always divide it by the local cost of living. A quick online cost-of-living calculator can tell you in seconds whether that shiny raise in a new city is actually a raise — or a secret pay cut.",
+    "pose": "present",
     "props": [
       {
-        "name": "mousetrap",
-        "label": "designed to trap"
+        "name": "calculator",
+        "label": "divide by local cost"
       },
       {
-        "name": "clock",
-        "label": "rolled over all year"
+        "name": "paystub",
+        "label": "is the raise real?"
       },
       {
-        "name": "warning",
-        "label": "fees dwarf the loan"
+        "name": "scale",
+        "label": "or a secret pay cut?"
+      }
+    ]
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "narration": "And if a company wants you to move, negotiate. Ask for a cost-of-living adjustment, a relocation package, or a raise that genuinely reflects the new city's prices. The move only makes sense if your real income — after those higher costs — actually goes up, not down.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "negotiate a COL raise"
+      },
+      {
+        "name": "calculator",
+        "label": "does real income rise?"
+      },
+      {
+        "name": "scale",
+        "label": "only move if it does"
       }
     ]
   },
   {
     "id": "s36",
-    "type": "screenshot",
-    "narration": "This is the modern face of usury — the practice of making loans that are seen as unfairly enriching the lender. For thousands of years it was condemned as a sin. Today, it's a storefront on the corner, trapping the most vulnerable in an endless cycle.",
-    "sourceId": "wiki-usury"
-  },
-  {
-    "id": "s37",
-    "type": "title",
-    "narration": "So if you're stuck somewhere on this ladder, here's how to climb back down.",
-    "heading": "Digging Out",
-    "kicker": "the escape plan"
-  },
-  {
-    "id": "s38",
-    "type": "stage",
-    "narration": "There are two proven ways to kill debt. The avalanche: attack the highest-interest debt first, which saves you the most money. Or the snowball: pay off the smallest balance first, which gives you fast wins and keeps you motivated. Both work — pick the one you'll actually stick to.",
-    "motif": "avalanchesnowball",
-    "caption": "two ways to dig out"
-  },
-  {
-    "id": "s60",
     "type": "character",
-    "narration": "One critical step before you attack the debt: build a small starter emergency fund — even just a thousand dollars. Without it, the next surprise expense goes straight back onto a credit card, and you're stuck in the cycle forever. That tiny buffer is what finally breaks it.",
+    "narration": "Second, if your work is remote, treat location as a financial superpower. Deliberately choosing a low-cost, low-tax state while keeping a high salary can be worth more than years of raises and promotions — instantly, and for the rest of your life.",
     "pose": "present",
     "props": [
       {
-        "name": "safetynet",
-        "label": "a $1K starter buffer"
+        "name": "laptop",
+        "label": "location = a lever"
       },
       {
-        "name": "shovel",
-        "label": "then attack the debt"
+        "name": "mappin",
+        "label": "pick low cost + low tax"
       },
       {
-        "name": "brokenchain",
-        "label": "breaks the cycle"
+        "name": "moneytree",
+        "label": "worth years of raises"
       }
     ]
   },
   {
-    "id": "s39",
+    "id": "s37",
     "type": "character",
-    "narration": "The non-negotiable rule is this: never carry a credit card balance. If you take one thing from this entire video, let it be that. At twenty-plus percent, credit card debt will outrun almost any good you can do with your money elsewhere. Kill it first, always.",
-    "pose": "present",
+    "narration": "And third, weigh the whole picture, not just the dollars. Family, friends, climate, career, and the life you actually want all matter. The cheapest state on the map isn't automatically the best place to live. But knowing the real numbers lets you choose with your eyes wide open.",
+    "pose": "explain",
     "props": [
       {
-        "name": "creditcard",
-        "label": "never carry a balance"
+        "name": "couple",
+        "label": "family & friends"
       },
       {
-        "name": "scissors",
-        "label": "kill it first"
+        "name": "smiley",
+        "label": "the life you want"
       },
       {
-        "name": "warning",
-        "label": "20% outruns everything"
+        "name": "scale",
+        "label": "choose with eyes open"
       }
     ]
   },
   {
     "id": "s61",
     "type": "character",
-    "narration": "And here's a free trick almost nobody uses: just ask. Call your credit card company and ask them to lower your rate. If you've paid on time, they surprisingly often will — they'd rather cut your rate than lose you entirely. One ten-minute phone call can save you hundreds of dollars.",
+    "narration": "But never let a spreadsheet make the entire decision. Being near aging parents, a real support network, or a place you simply love carries a value no index can capture. Optimize the money — but don't sacrifice the very life that money was supposed to buy.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "couple",
+        "label": "family & roots"
+      },
+      {
+        "name": "smiley",
+        "label": "a life you love"
+      },
+      {
+        "name": "scale",
+        "label": "money serves the life"
+      }
+    ]
+  },
+  {
+    "id": "s38",
+    "type": "character",
+    "narration": "Because the deepest lesson here is simple. Two people can earn the exact same salary and live completely different lives — one comfortable and saving, one stressed and broke — based on nothing more than the state line they happen to live on.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "same salary"
+      },
+      {
+        "name": "mappin",
+        "label": "different state line"
+      },
+      {
+        "name": "scale",
+        "label": "opposite lives"
+      }
+    ]
+  },
+  {
+    "id": "s39",
+    "type": "character",
+    "narration": "So the next time you see a salary, don't ask 'is that a lot?' Ask 'a lot, where?' Your paycheck is only ever half the equation. The cost of living — the quiet number hiding behind the map — decides what it's really worth.",
     "pose": "present",
     "props": [
       {
-        "name": "phone",
-        "label": "just call and ask"
+        "name": "paystub",
+        "label": "'a lot… where?'"
       },
       {
-        "name": "percent",
-        "label": "they often lower it"
+        "name": "mappin",
+        "label": "the map is half of it"
       },
       {
         "name": "moneybag",
-        "label": "saves you hundreds"
+        "label": "now you see it"
       }
     ]
   },
   {
     "id": "s40",
     "type": "character",
-    "narration": "And flip the whole thing around. Once the bad debt is gone, the same tool that trapped you can start building you up. Use cheap, good debt to buy assets that grow — and suddenly you're playing the game the wealthy have played all along.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "brokenchain",
-        "label": "bad debt gone"
-      },
-      {
-        "name": "house",
-        "label": "cheap debt → assets"
-      },
-      {
-        "name": "moneytree",
-        "label": "now it builds you"
-      }
-    ]
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "narration": "And the ultimate flip: once you're free of bad debt, you can quietly switch sides of the whole game. By owning broad index funds, you own slices of the very banks and lenders charging all that interest. You go from paying the interest, to collecting it — from the prey, to the owner.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "brokenchain",
-        "label": "escape the debt"
-      },
-      {
-        "name": "bond",
-        "label": "own the lenders"
-      },
-      {
-        "name": "moneytree",
-        "label": "collect the interest"
-      }
-    ]
-  },
-  {
-    "id": "s41",
-    "type": "stage",
-    "narration": "So here's the whole ladder. Zero is freedom. Credit cards and car loans are the traps. Student loans are a gamble. A mortgage is the wealth-builder. And a million can be either an empire or a grave — it all depends on what the debt bought, and what it cost.",
-    "motif": "debtladder",
-    "caption": "it's not the amount — it's the type"
-  },
-  {
-    "id": "s42",
-    "type": "character",
-    "narration": "Because debt itself was never good or evil. It's a lever. Pointed at an asset that grows, borrowed cheaply, it quietly builds fortunes. Pointed at junk that shrinks, borrowed expensively, it quietly destroys them. The number on the statement matters far less than the direction you point it.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "debt is just a lever"
-      },
-      {
-        "name": "moneytree",
-        "label": "at assets → wealth"
-      },
-      {
-        "name": "ballchain",
-        "label": "at junk → ruin"
-      }
-    ]
-  },
-  {
-    "id": "s63",
-    "type": "character",
-    "narration": "And if a situation is truly hopeless, know that bankruptcy exists for a reason. It's a brutal, scarring reset — but it is a reset, a legal fresh start for when debt becomes mathematically impossible. It should always be the last resort, never the first. But it is not the end of your story.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "shield",
-        "label": "a legal fresh start"
-      },
-      {
-        "name": "warning",
-        "label": "last resort only"
-      },
-      {
-        "name": "seedling",
-        "label": "not the end"
-      }
-    ]
-  },
-  {
-    "id": "s43",
-    "type": "character",
-    "narration": "So wherever you sit on this ladder tonight, the move is always the same. Ruthlessly kill the high-interest debt that's burying you. Keep only the cheap debt that's building you. And never, ever let a payday lender or a credit card decide your future.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "shovel",
-        "label": "kill the bad debt"
-      },
-      {
-        "name": "house",
-        "label": "keep the good"
-      },
-      {
-        "name": "brokenchain",
-        "label": "own your future"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "If this finally made debt make sense, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this changed how you see your paycheck and your zip code, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "brokenchain",
+        "name": "mappin",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s45",
+    "id": "s41",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

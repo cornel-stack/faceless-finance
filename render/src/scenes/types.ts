@@ -184,7 +184,9 @@ export interface StageScene extends Base {
     // EP059 (how much house at every salary) additions:
     | "rule2836" | "salarytohouse" | "ratekillsaffordability" | "truehousecost" | "downpaymentpmi" | "housepoor"
     // EP060 (every level of debt) additions:
-    | "debtladder" | "rateladder" | "goodbaddebt" | "avalanchesnowball" | "debtfreedom" | "underwaterdebt";
+    | "debtladder" | "rateladder" | "goodbaddebt" | "avalanchesnowball" | "debtfreedom" | "underwaterdebt"
+    // EP061 (cost of living by state) additions:
+    | "stateheatmap" | "colindex100" | "samesalarystates" | "housingdriver" | "notaxstates" | "realwealthformula";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

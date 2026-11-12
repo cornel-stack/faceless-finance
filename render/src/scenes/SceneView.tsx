@@ -4616,6 +4616,80 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">'underwater': you owe more than it's worth</text>
       </svg>
     );
+  } else if (m === "stateheatmap") {
+    // Stylized cheap-vs-expensive states.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const cheap: [string, string][] = [["Mississippi", "85"], ["Arkansas", "87"], ["Oklahoma", "87"], ["Kansas", "88"]];
+    const pricey: [string, string][] = [["Hawaii", "190"], ["California", "140"], ["Massachusetts", "135"], ["New York", "125"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={270} y={90} fontSize={20} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">cheapest</text>
+        <text x={720} y={90} fontSize={20} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">priciest</text>
+        {cheap.map(([st, idx], i) => <g key={i} opacity={interpolate(reveal, [i * 0.12, i * 0.12 + 0.2], [0, 1], clampBoth)}><rect x={120} y={120 + i * 72} width={300} height={56} rx={8} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text x={140} y={155 + i * 72} fontSize={18} fontWeight={800} fill={ink} fontFamily={sans}>{st}</text><text x={400} y={155 + i * 72} fontSize={18} fontWeight={900} fill={green} textAnchor="end" fontFamily="Georgia, serif">{idx}</text></g>)}
+        {pricey.map(([st, idx], i) => <g key={i} opacity={interpolate(reveal, [i * 0.12 + 0.2, i * 0.12 + 0.4], [0, 1], clampBoth)}><rect x={560} y={120 + i * 72} width={300} height={56} rx={8} fill="#f3cfc8" stroke={ink} strokeWidth={3} /><text x={580} y={155 + i * 72} fontSize={18} fontWeight={800} fill={ink} fontFamily={sans}>{st}</text><text x={840} y={155 + i * 72} fontSize={18} fontWeight={900} fill={red} textAnchor="end" fontFamily="Georgia, serif">{idx}</text></g>)}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>cost-of-living index — 100 = US average</text>
+      </svg>
+    );
+  } else if (m === "colindex100") {
+    // The index number line, 100 = average.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880;
+    const pts: [string, number][] = [["MS 85", 85], ["US 100", 100], ["CA 140", 140], ["HI 190", 190]];
+    const xfor = (v: number) => x0 + (x1 - x0) * ((v - 80) / 120);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={90} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the cost-of-living scale</text>
+        <RLine x1={x0} y1={280} x2={x1} y2={280} stroke={ink} strokeWidth={4} />
+        <line x1={xfor(100)} y1={240} x2={xfor(100)} y2={320} stroke={blue} strokeWidth={3} strokeDasharray="6 6" />
+        {pts.map(([lab, v], i) => <g key={i} opacity={interpolate(draw, [i * 0.18, i * 0.18 + 0.2], [0, 1], clampBoth)}><circle cx={xfor(v)} cy={280} r={11} fill={v < 100 ? green : v < 130 ? gold : red} stroke={ink} strokeWidth={4} /><text x={xfor(v)} y={250} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{lab}</text></g>)}
+        <text x={VW / 2} y={360} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>Hawaii costs more than double Mississippi</text>
+      </svg>
+    );
+  } else if (m === "samesalarystates") {
+    // Same salary, different real life by state.
+    const pop = spring({ frame, fps, delay: fps * 0.8, config: { damping: 11 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a $60K salary — two different lives</text>
+        <g transform={`translate(280 300) scale(${Math.min(1, pop)})`}><rect x={-130} y={-110} width={260} height={220} rx={14} fill="#cfe3d4" stroke={ink} strokeWidth={5} /><text y={-62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Mississippi</text><text y={-12} fontSize={34} textAnchor="middle" fontFamily={sans}>🏡</text><text y={44} fontSize={16} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>feels like $70K</text><text y={68} fontSize={15} fontWeight={700} fill={ink} textAnchor="middle" fontFamily={sans}>house + savings</text></g>
+        <g transform={`translate(700 300) scale(${Math.min(1, pop)})`}><rect x={-130} y={-110} width={260} height={220} rx={14} fill="#f3cfc8" stroke={ink} strokeWidth={5} /><text y={-62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">California</text><text y={-12} fontSize={34} textAnchor="middle" fontFamily={sans}>🏙️</text><text y={44} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>feels like $43K</text><text y={68} fontSize={15} fontWeight={700} fill={ink} textAnchor="middle" fontFamily={sans}>tiny rental</text></g>
+      </svg>
+    );
+  } else if (m === "housingdriver") {
+    // Housing swings far more than other costs.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    const rows: [string, number][] = [["housing", 460], ["groceries", 90], ["gas", 70], ["utilities", 80]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">housing is the whole story</text>
+        {rows.map(([lab, w], i) => { const y = 120 + i * 80; return <g key={i}><text x={230} y={y + 30} fontSize={18} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text><rect x={250} y={y + 4} width={(w as number) * grow} height={42} rx={6} fill={i === 0 ? red : gold} stroke={ink} strokeWidth={3} /></g>; })}
+        <text x={VW / 2} y={476} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>rent & home prices swing wildly; a gallon of milk barely moves</text>
+      </svg>
+    );
+  } else if (m === "notaxstates") {
+    // The no-income-tax states (but they claw it back).
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.0], [0, 1], clampBoth);
+    const states = ["Texas", "Florida", "Washington", "Nevada", "Tennessee"];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">states with no income tax</text>
+        {states.map((s, i) => { const op = interpolate(reveal, [i * 0.14, i * 0.14 + 0.2], [0, 1], clampBoth); const x = 170 + (i % 3) * 300; const y = 160 + Math.floor(i / 3) * 110; return <g key={i} opacity={op} transform={`translate(${x} ${y})`}><rect x={-120} y={-34} width={240} height={68} rx={10} fill={green} stroke={ink} strokeWidth={4} /><text y={8} fontSize={19} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{s}</text></g>; })}
+        <text x={VW / 2} y={430} fontSize={18} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>…but they claw it back via property & sales tax</text>
+      </svg>
+    );
+  } else if (m === "realwealthformula") {
+    // Real wealth = salary ÷ cost of living.
+    const pop = spring({ frame, fps, delay: fps * 1.0, config: { damping: 10 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={120} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your REAL wealth</text>
+        <g transform="translate(300 290)"><rect x={-130} y={-40} width={260} height={80} rx={10} fill={green} stroke={ink} strokeWidth={5} /><text y={8} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>your salary</text></g>
+        <line x1={170} y1={350} x2={430} y2={350} stroke={ink} strokeWidth={4} />
+        <g transform="translate(300 400)"><text y={8} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>cost of living</text></g>
+        <text x={520} y={360} fontSize={44} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">=</text>
+        <g transform={`translate(720 350) scale(${Math.min(1, pop)})`}><circle r={78} fill={gold} stroke={ink} strokeWidth={6} /><text y={-6} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>what you're</text><text y={18} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">really worth</text></g>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

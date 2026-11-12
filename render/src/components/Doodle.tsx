@@ -111,6 +111,8 @@ export type DoodleName =
   | "wrench" | "sofa"
   // EP060 (every level of debt) additions:
   | "shovel" | "brokenchain"
+  // EP061 (cost of living by state) additions:
+  | "palmtree" | "mappin"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1954,6 +1956,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M44 44 L50 38 L46 50 L52 46" fill="none" strokeWidth={1.8} />
           <RLine x1={48} y1={30} x2={44} y2={40} strokeWidth={1.4} />
           <RLine x1={54} y1={30} x2={58} y2={40} strokeWidth={1.4} />
+        </>
+      );
+    case "palmtree":
+      // A palm tree — high-cost paradise (Hawaii/California).
+      return (
+        <>
+          <RPath d="M48 84 Q46 56 50 36" fill="none" strokeWidth={SW} />
+          <RPath d="M50 36 Q30 26 14 32" fill="none" strokeWidth={SW} />
+          <RPath d="M50 36 Q70 26 86 32" fill="none" strokeWidth={SW} />
+          <RPath d="M50 36 Q34 20 22 14" fill="none" strokeWidth={SW} />
+          <RPath d="M50 36 Q66 20 78 14" fill="none" strokeWidth={SW} />
+          <RCircle cx={50} cy={34} d={8} fill={GOLD} strokeWidth={1.4} />
+          <RPath d="M38 84 Q50 90 60 84" fill={TAN} strokeWidth={1.6} />
+        </>
+      );
+    case "mappin":
+      // A location pin — place / geography.
+      return (
+        <>
+          <RPath d="M50 86 Q24 54 24 38 a26 26 0 0 1 52 0 Q76 54 50 86 Z" fill={RED} strokeWidth={SW} />
+          <RCircle cx={50} cy={38} d={18} fill={PARCH} strokeWidth={1.8} />
         </>
       );
   }
