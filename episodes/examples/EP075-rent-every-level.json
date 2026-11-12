@@ -1,0 +1,933 @@
+{
+  "id": "EP075",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Rent: $800 to $8,000 a Month",
+  "slug": "every-level-of-rent",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP075 — Every Level series (row 65). Rent tiers $800 → $1,500 → $2,500 → $4,000 → $8,000/mo and what each buys + who it's for; the 30%-of-income rule (rent-burdened), what rent actually pays for (location/space/amenities), the lifetime opportunity cost (~$1M over 40 yrs, nothing owned), hidden move-in costs (deposit/broker fee/utilities/insurance), the affordability crisis, how to climb down. 5 new motifs (renttierladder/thirtypercentrule/whatrentbuys/rentvsownlifetime/renthiddencosts) + doodles skyline/lease. Distinct from EP069 (ownership journey). Sources: Renting/Housing affordability index/Security deposit/Cost of living/Affordable housing. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "It's the single biggest check most people write every month — bigger than food, bigger than their car, bigger than everything. Rent. And at every level, from eight hundred dollars to eight thousand, it buys a completely different life. Today we climb every level of rent, and show exactly what each one gets you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "the biggest monthly check"
+        },
+        {
+          "name": "moneybag",
+          "label": "$800 → $8,000"
+        },
+        {
+          "name": "skyline",
+          "label": "a different life at each level"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that should haunt every renter. Pay two thousand dollars a month in rent for forty years, and you'll hand a landlord nearly a million dollars — for which you own absolutely nothing at the end. Rent isn't just an expense. It's the most expensive thing you'll ever buy and never keep.",
+      "text": "~$960,000",
+      "sub": "$2,000/mo rent over 40 years — and you own nothing",
+      "icon": "warning"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Put two renters and one owner side by side for those forty years. The renters each hand over nearly a million dollars and walk away with a stack of receipts. The owner pays a similar amount — but ends up holding a paid-off house worth several hundred thousand. Same monthly cost, wildly different ending.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "renter: $1M in receipts"
+        },
+        {
+          "name": "house",
+          "label": "owner: a paid-off asset"
+        },
+        {
+          "name": "scale",
+          "label": "same cost, different ending"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So we'll climb the rent ladder from eight hundred to eight thousand, reveal the thirty-percent rule that decides if your rent is sane or crushing, break down what you're actually paying for, and expose the hidden move-in costs that ambush you. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "$800 → $8,000"
+        },
+        {
+          "name": "gauge",
+          "label": "the 30% rule"
+        },
+        {
+          "name": "lease",
+          "label": "the hidden costs"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/thisisfine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "half my paycheck goes to rent",
+      "memeBottom": "but the apartment has a nice gym",
+      "narration": "Because millions of people are quietly handing over half their income for a roof, telling themselves it's fine. But before we climb the levels, let's be clear on what renting actually is."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what you're really doing when you rent.",
+      "heading": "The Basics",
+      "kicker": "paying to use, not to own"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Renting is simply an agreement where a payment is made for the use of property owned by another. That's the whole deal in one line: you pay for the right to use something you will never own. The landlord owns the asset; you rent the roof.",
+      "sourceId": "wiki-rent"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "And never forget the other side of that agreement. Your rent is someone else's income — the landlord's. Your monthly payment covers their mortgage, their taxes, their profit, and slowly buys them the very building you live in. You're not just paying for shelter; you're funding someone else's wealth-building.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "your rent = their income"
+        },
+        {
+          "name": "house",
+          "label": "you fund their mortgage"
+        },
+        {
+          "name": "chartup",
+          "label": "their asset, your payment"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "character",
+      "narration": "And that single fact is the hinge of this entire video. Every dollar of rent buys you something real — shelter, location, flexibility — but it builds you zero equity. A mortgage payment slowly buys a house. A rent payment buys one more month of living there, and nothing else.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "mortgage = you buy it"
+        },
+        {
+          "name": "apartment",
+          "label": "rent = one more month"
+        },
+        {
+          "name": "chartdown",
+          "label": "zero equity built"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "title",
+      "narration": "So let's climb the levels — and see what each one gets you.",
+      "heading": "The Ladder",
+      "kicker": "$800 to $8K a month"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Here's the whole climb. Eight hundred gets a room or a place in a rural town. Fifteen hundred, a modest one-bedroom in a mid-size city. Twenty-five hundred, a nice apartment in a big city. Four thousand, luxury in a prime metro. And eight thousand a month is ultra-prime Manhattan or San Francisco. Same word, five different universes.",
+      "motif": "renttierladder",
+      "caption": "what each level of rent gets you"
+    },
+    {
+      "id": "s43",
+      "type": "callout",
+      "narration": "For context, the typical American renter now pays somewhere around fifteen hundred to two thousand dollars a month — a number that has climbed dramatically over the past decade, far faster than most paychecks. The middle of this ladder isn't a luxury anymore; it's just the going rate.",
+      "text": "~$1,500–2,000",
+      "sub": "the typical US rent today — up sharply in a decade",
+      "icon": "receipt"
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "Eight hundred a month is the entry level — a room in a shared house, or a whole place in a small town far from the big cities. It's not glamorous, but it's the secret weapon of people who save aggressively: keep your rent here while your income grows, and you can build wealth faster than almost anyone.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "$800: a room or rural town"
+        },
+        {
+          "name": "piggybank",
+          "label": "the aggressive saver's secret"
+        },
+        {
+          "name": "chartup",
+          "label": "low rent = fast wealth"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Fifteen hundred a month gets you a modest one-bedroom in a mid-size city — your own space, your own door, no roommates. For most of the country, this is the real cost of basic independence. It feels like a huge upgrade, and for your budget, it's a serious commitment.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "keys",
+          "label": "$1,500: your own 1-bed"
+        },
+        {
+          "name": "smiley",
+          "label": "no roommates"
+        },
+        {
+          "name": "mappin",
+          "label": "mid-size city"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "And what that fifteen hundred gets you swings wildly. In an affordable mid-size city, it might be a bright, spacious one-bedroom with a balcony. In a coastal metro, that exact same budget gets you a cramped studio with no closet — or a room in someone else's apartment. The dollars are identical; the life isn't.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "keys",
+          "label": "$1,500 in Ohio: a 1-bed + balcony"
+        },
+        {
+          "name": "apartment",
+          "label": "$1,500 in LA: a studio"
+        },
+        {
+          "name": "mappin",
+          "label": "same money, different life"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Now the level where big-city life really begins.",
+      "heading": "$2,500/mo",
+      "kicker": "a nice place, big city"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "Twenty-five hundred a month is roughly the average for a one-bedroom in a major American city. This is the big-city tax: the same apartment that costs fifteen hundred in Ohio costs twenty-five hundred in Boston or Seattle. You're not paying for more space — you're paying for the zip code.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "$2,500: big-city average"
+        },
+        {
+          "name": "mappin",
+          "label": "paying for the zip code"
+        },
+        {
+          "name": "receipt",
+          "label": "the big-city tax"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "image",
+      "src": "img/memes/distracted.jpg",
+      "meme": "Distracted Boyfriend",
+      "memeTop": "renter eyeing a cheaper city",
+      "memeBottom": "while clinging to a $2,500 big-city apartment",
+      "narration": "This is the quiet tension of the big-city level. You know the exact same life costs half as much two states over — but the job, the friends, the energy keep you paying the premium anyway."
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "Four thousand a month enters luxury territory — a spacious apartment in a prime neighborhood, or a two-bedroom in an expensive metro. Doorman, gym, rooftop, the works. At this level you're no longer just buying shelter; you're buying a lifestyle, and paying handsomely for the convenience and the address.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "$4,000: luxury / prime metro"
+        },
+        {
+          "name": "smiley",
+          "label": "doorman, gym, rooftop"
+        },
+        {
+          "name": "dollar",
+          "label": "buying a lifestyle"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "title",
+      "narration": "And then the level that sounds made up.",
+      "heading": "$8,000/mo",
+      "kicker": "ultra-prime"
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "Eight thousand dollars a month — ninety-six thousand a year, in rent alone — is ultra-prime Manhattan or San Francisco. That's an entire comfortable household income, spent purely on a place to sleep. At this level, people are usually either very high earners, or quietly drowning to keep up an address.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "$8,000: NYC / SF ultra-prime"
+        },
+        {
+          "name": "moneybag",
+          "label": "$96K/year in rent"
+        },
+        {
+          "name": "warning",
+          "label": "very rich — or drowning"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So who actually pays eight thousand a month? Usually one of three people: a high earner in finance or tech who barely notices it, a dual-income couple pooling two big salaries, or — more often than you'd think — someone stretching dangerously to project a lifestyle they can't really afford. The address lies about the bank balance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "finance / tech earner"
+        },
+        {
+          "name": "handshake",
+          "label": "two salaries pooled"
+        },
+        {
+          "name": "warning",
+          "label": "or quietly stretching"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "So how do you know if your rent is sane? There's a rule for that.",
+      "heading": "The 30% Rule",
+      "kicker": "sane or crushing"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "The classic rule says your rent should take no more than thirty percent of your gross income. Cross that line, and economists officially call you rent-burdened — the point where housing starts crowding out savings, emergencies, and everything else. It's the single fastest check on whether your rent is affordable or quietly sinking you.",
+      "motif": "thirtypercentrule",
+      "caption": "rent above 30% of income = rent-burdened"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "And here's the uncomfortable truth: by that thirty-percent line, roughly half of all American renters are now officially rent-burdened. For a huge share of them, rent devours not thirty but forty or even fifty percent of their income, leaving almost nothing for saving, investing, or escaping the cycle.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "~half of renters: burdened"
+        },
+        {
+          "name": "chartdown",
+          "label": "40-50% of income on rent"
+        },
+        {
+          "name": "warning",
+          "label": "nothing left to save"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "This is measured by a housing affordability index — an index that measures housing affordability for the typical household. And by that measure, a huge share of renters are now over the line, spending far more than thirty percent and falling behind on everything else.",
+      "sourceId": "wiki-afford"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "So here's the quick math on every level. To afford eight hundred without strain, you'd want to earn around thirty-two thousand a year. Fifteen hundred needs sixty thousand. Twenty-five hundred needs a hundred thousand. And that eight-thousand-dollar apartment quietly demands a three-hundred-thousand-dollar income to rent it sanely.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "rent × 40 = income needed"
+        },
+        {
+          "name": "scale",
+          "label": "$2,500 → $100K/yr"
+        },
+        {
+          "name": "gauge",
+          "label": "$8K → $300K/yr"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "Landlords use the mirror image of this rule to screen you. Most require that your gross annual income is at least forty times the monthly rent — so a two-thousand-dollar apartment quietly demands an eighty-thousand-dollar salary on paper just to qualify. Know this number before you apply.",
+      "text": "income ≥ 40× rent",
+      "sub": "the landlord's screening rule — know it before you apply",
+      "icon": "calculator"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "But what are you actually paying for as the number climbs?",
+      "heading": "What Rent Buys",
+      "kicker": "three things"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "Rent really pays for just three things: location, space, and amenities. And location dominates — it's by far the biggest driver of price. That's why the exact same apartment can cost fifteen hundred in one city and five thousand in another. You're mostly paying for where, not what.",
+      "motif": "whatrentbuys",
+      "caption": "location, space, amenities — location wins"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And be honest about the amenities you're paying for. That gleaming gym, the rooftop lounge, the concierge — they can add hundreds a month to your rent, and surveys show most tenants barely use them. You're often paying a premium for a brochure photo you'll walk past every day and never actually touch.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "dollar",
+          "label": "amenities = +$100s/mo"
+        },
+        {
+          "name": "warning",
+          "label": "most go unused"
+        },
+        {
+          "name": "receipt",
+          "label": "paying for the brochure"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "That's the cost of living at work — the cost of maintaining a certain standard of living, which swings wildly from one place to another. The same salary that makes you comfortable in one city leaves you rent-burdened in the next, entirely because of what housing costs there.",
+      "sourceId": "wiki-costliving"
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "This is the renter's superpower that few people use: geographic arbitrage. Earn a big-city salary, especially remotely, but pay small-town rent — and the gap between the two becomes the fastest wealth you'll ever build. Where you choose to rent can matter more than how much you earn.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "big-city pay, small-town rent"
+        },
+        {
+          "name": "chartup",
+          "label": "the gap = fast wealth"
+        },
+        {
+          "name": "palmtree",
+          "label": "where you rent > what you earn"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "Remote work blew this door wide open. For the first time, millions can earn a high-cost-city salary while paying low-cost-city rent — a gap that can be worth twenty or thirty thousand dollars a year, tax-free, just by choosing where to sign the lease. It's the biggest raise most people will never ask their boss for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "remote = earn anywhere"
+        },
+        {
+          "name": "mappin",
+          "label": "big pay, cheap rent"
+        },
+        {
+          "name": "moneybag",
+          "label": "a $20-30K invisible raise"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Now the real price of renting — the one nobody puts on the listing.",
+      "heading": "The True Cost",
+      "kicker": "a lifetime of rent"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "Here's the number that reframes everything. Two thousand a month, paid for forty years, is nearly a million dollars handed to landlords — and at the end, you own nothing. That same money, if it had gone toward a home or into investments, could have become the foundation of real wealth. That's the true cost of renting.",
+      "motif": "rentvsownlifetime",
+      "caption": "a lifetime of rent ≈ a million dollars, zero equity"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "But don't let that million-dollar number stampede you into buying badly. There's a rule of thumb: if you won't stay put for at least five years, renting often wins, because the huge upfront costs of buying — closing fees, agent commissions, repairs — need years to pay off. Renting isn't failure; sometimes it's just math.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "staying <5 years?"
+        },
+        {
+          "name": "scale",
+          "label": "then renting often wins"
+        },
+        {
+          "name": "smiley",
+          "label": "it's math, not failure"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "Now — to be fair, renting isn't simply throwing money away, the way people love to say. You're buying flexibility, zero maintenance costs, and the freedom to move for a job or a life change in a single month. For many people, in many seasons, that freedom is genuinely worth the price.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "movingbox",
+          "label": "flexibility to move"
+        },
+        {
+          "name": "shield",
+          "label": "no maintenance, no risk"
+        },
+        {
+          "name": "smiley",
+          "label": "freedom has real value"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "And then there's the ambush almost every first-time renter walks into.",
+      "heading": "Move-In Costs",
+      "kicker": "the hidden bill"
+    },
+    {
+      "id": "s29",
+      "type": "stage",
+      "narration": "The sticker price is never the real price to move in. You need the first month up front, a security deposit, often a broker fee, plus utilities and renters insurance. A two-thousand-dollar apartment can quietly demand six thousand dollars or more just to walk through the door.",
+      "motif": "renthiddencosts",
+      "caption": "a $2K apartment can cost $6K+ to move in"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "The broker fee is the one that blindsides people. In a few hot markets, like New York, you can be charged a full month's rent — or more — just for the privilege of being shown an apartment, on top of everything else. Always ask who pays the broker before you fall in love with a place.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "broker fee = +1 month"
+        },
+        {
+          "name": "mappin",
+          "label": "brutal in NYC"
+        },
+        {
+          "name": "lease",
+          "label": "ask who pays — first"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "The biggest of these is the security deposit — a sum of money held in trust by the landlord against damage or unpaid rent. You get it back when you leave, in theory — but it ties up a full month or two of cash for the entire time you live there.",
+      "sourceId": "wiki-deposit"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "And to actually get that deposit back, document everything the day you move in. Photograph every scratch, dent, and stain, timestamped, and send the list to your landlord in writing. Deposits vanish into vague 'damage' claims all the time — proof on day one is what forces them to return your money.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "camera",
+          "label": "photograph everything, day 1"
+        },
+        {
+          "name": "lease",
+          "label": "send it in writing"
+        },
+        {
+          "name": "piggybank",
+          "label": "proof = deposit back"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "So always budget three to four times the monthly rent just to move in, and read the lease for every fee before you sign. Pet rent, parking, amenity charges, mandatory insurance — the headline number is a starting point, not the total. The real rent is almost always higher than the ad.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "lease",
+          "label": "read every fee"
+        },
+        {
+          "name": "calculator",
+          "label": "budget 3-4× to move in"
+        },
+        {
+          "name": "warning",
+          "label": "the ad is never the total"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "title",
+      "narration": "So how do you climb this ladder in the right direction — downward?",
+      "heading": "Climbing Down",
+      "kicker": "paying less for more"
+    },
+    {
+      "id": "s33",
+      "type": "screenshot",
+      "narration": "The goal most people chase is affordable housing — housing which is deemed affordable to those with a household income at or below the median. Getting your rent into that range, below thirty percent of your income, is what frees up money for everything else in your life.",
+      "sourceId": "wiki-affordhousing"
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Move one: get a roommate. Splitting a two-bedroom can cut your rent nearly in half for a small loss of privacy — easily the single most powerful lever a renter has. Two people sharing can each live in a far nicer place than either could alone.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "split the rent"
+        },
+        {
+          "name": "sofa",
+          "label": "nearly half off"
+        },
+        {
+          "name": "piggybank",
+          "label": "the biggest lever"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "One honest caveat on roommates: you're trading money for friction. Shared kitchens, different schedules, someone else's dishes, the awkward rent-is-late conversation. For a few years and a few hundred saved each month, it's usually worth it — but go in with clear, written house rules, not just good vibes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "sofa",
+          "label": "money for friction"
+        },
+        {
+          "name": "handshake",
+          "label": "set written rules"
+        },
+        {
+          "name": "smiley",
+          "label": "worth it for a season"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Move two: negotiate, especially at renewal. Landlords quietly fear a vacancy more than they fear giving you a discount — an empty unit costs them a full month to re-rent. Ask for a lower increase, or a free month, and point to cheaper comparable listings nearby. It works far more often than people expect.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "lease",
+          "label": "negotiate at renewal"
+        },
+        {
+          "name": "coins",
+          "label": "ask for a free month"
+        },
+        {
+          "name": "chartdown",
+          "label": "a vacancy scares them more"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "And put a number on that negotiation. One free month on a year's lease isn't a small favor — it's roughly an eight-percent discount on your entire year of rent. Landlords often prefer quietly giving you that than risking an empty unit, so it never hurts to ask at renewal.",
+      "text": "1 free month ≈ 8% off",
+      "sub": "why asking at renewal is almost always worth it",
+      "icon": "coins"
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Move three: the big one — consider moving cities, or house-hacking. Rent somewhere cheaper, or buy a small place and rent out the spare rooms so your tenants cover your mortgage. That's how renters quietly flip from paying rent forever to collecting it instead.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "movingbox",
+          "label": "move cheaper"
+        },
+        {
+          "name": "house",
+          "label": "house-hack: tenants pay you"
+        },
+        {
+          "name": "chartup",
+          "label": "flip from paying to collecting"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And house-hacking is more reachable than people think. With certain low-down-payment loans, you can buy a small two or three-unit place for a modest deposit, live in one unit, and rent the others. Done right, your tenants cover most or all of the mortgage — and you've stopped paying rent entirely while building equity.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "house",
+          "label": "low-down-payment loan"
+        },
+        {
+          "name": "handshake",
+          "label": "tenants cover the mortgage"
+        },
+        {
+          "name": "chartup",
+          "label": "live free, build equity"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the real lesson is this: rent is the price of flexibility, and flexibility is worth paying for — right up until it quietly costs you a fortune. Every month you keep your rent low is a month you can send toward the one thing rent never buys you: ownership.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "rent = flexibility"
+        },
+        {
+          "name": "hourglass",
+          "label": "cheap for a season, costly for a life"
+        },
+        {
+          "name": "house",
+          "label": "aim the savings at ownership"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So find your level, run the thirty-percent check, and be honest about what you're paying for. Keep that number low while your income climbs, and the gap becomes your future. Rent the cheapest place you'll genuinely be happy in — not the most expensive one you can technically afford.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "run the 30% check"
+        },
+        {
+          "name": "piggybank",
+          "label": "keep it low, bank the gap"
+        },
+        {
+          "name": "smiley",
+          "label": "happy, not maxed out"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "So reframe the whole thing. Rent isn't a failure or a trap — it's a tool. Used carelessly, it quietly drains a fortune over a lifetime. Used deliberately — kept low, negotiated, arbitraged — it buys you the freedom and the savings to eventually own the roof over your head.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "rent = a tool"
+        },
+        {
+          "name": "warning",
+          "label": "careless: drains a fortune"
+        },
+        {
+          "name": "house",
+          "label": "deliberate: buys freedom"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this showed you what your rent really costs — and really buys — hit subscribe, and tell me which number you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-rent",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "an agreement where a payment is made for the use"
+    },
+    {
+      "id": "wiki-afford",
+      "name": "Housing affordability index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "an index that measures housing affordability"
+    },
+    {
+      "id": "wiki-costliving",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "the cost of maintaining a certain standard of living"
+    },
+    {
+      "id": "wiki-deposit",
+      "name": "Security deposit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Security_deposit",
+      "quote": "a sum of money held in trust"
+    },
+    {
+      "id": "wiki-affordhousing",
+      "name": "Affordable housing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affordable_housing",
+      "quote": "housing which is deemed affordable to those with a household income at or below the median"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Rent: $800 to $8,000 a Month",
+    "alts": [
+      "What Each Level of Rent Actually Gets You ($800 to $8K/mo)",
+      "The Rent Ladder: From $800 to $8,000 a Month Explained"
+    ],
+    "hook": "Rent is the biggest check most people write every month — and at every level it buys a completely different life. This is every level of rent: $800 (a room or rural town), $1,500 (a modest 1-bed), $2,500 (a nice big-city place), $4,000 (luxury/prime metro), and $8,000/mo (ultra-prime NYC/SF). We cover the 30% rule (when you're officially 'rent-burdened'), what rent actually pays for (location dominates), the brutal lifetime cost (~$960K over 40 years with zero equity), the hidden move-in costs (deposit, broker fee, utilities, insurance), and how to climb DOWN — roommates, negotiating, geographic arbitrage, and house-hacking. Fully cited.",
+    "bullets": [
+      "What each level gets you: $800 → $8,000 a month",
+      "The 30% rule — when you're officially rent-burdened",
+      "What rent really buys: location, space, amenities",
+      "The lifetime cost: ~$960K over 40 years, zero equity",
+      "Hidden move-in costs: deposit, broker fee, utilities, insurance",
+      "How to pay less: roommates, negotiation, arbitrage, house-hacking"
+    ],
+    "tags": [
+      "rent",
+      "cost of rent",
+      "how much rent can I afford",
+      "30 percent rule rent",
+      "rent vs buy",
+      "rent burdened",
+      "cost of living",
+      "apartment hunting",
+      "geographic arbitrage",
+      "house hacking",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#rent",
+      "#costofliving",
+      "#personalfinance",
+      "#renting"
+    ],
+    "thumbnail": {
+      "hookTop": "RENT",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "$8K/mo",
+      "napkinSub": "= $96K a year to sleep",
+      "deco": "apartment"
+    },
+    "chapters": [
+      [
+        "what you're really doing when you rent",
+        "The basics"
+      ],
+      [
+        "see what each one gets you",
+        "The ladder"
+      ],
+      [
+        "the level where big-city life really begins",
+        "$2,500/mo"
+      ],
+      [
+        "the level that sounds made up",
+        "$8,000/mo"
+      ],
+      [
+        "how do you know if your rent is sane",
+        "The 30% rule"
+      ],
+      [
+        "what are you actually paying for",
+        "What rent buys"
+      ],
+      [
+        "the real price of renting",
+        "The true cost"
+      ],
+      [
+        "the ambush almost every first-time renter",
+        "Move-in costs"
+      ],
+      [
+        "climb this ladder in the right direction",
+        "Climbing down"
+      ]
+    ]
+  }
+}

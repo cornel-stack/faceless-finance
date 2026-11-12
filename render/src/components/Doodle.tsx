@@ -138,6 +138,7 @@ export type DoodleName =
   // EP073 (every level of 401k balance) additions:
   | "jar" | "medal"
   | "camera" | "shoppingcart"
+  | "skyline" | "lease"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2272,6 +2273,30 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M32 36 L80 36 L74 58 L40 58 Z" fill={GOLD} strokeWidth={SW} />
           <RCircle cx={44} cy={74} d={8} fill={INK} strokeWidth={1.6} />
           <RCircle cx={70} cy={74} d={8} fill={INK} strokeWidth={1.6} />
+        </>
+      );
+    case "skyline":
+      // A city skyline — urban rent.
+      return (
+        <>
+          <RRect x={16} y={46} w={20} h={40} fill={TAN} strokeWidth={SW} />
+          <RRect x={40} y={24} w={22} h={62} fill={GOLD} strokeWidth={SW} />
+          <RRect x={66} y={38} w={20} h={48} fill={PARCH} strokeWidth={SW} />
+          <RRect x={46} y={32} w={4} h={6} fill={INK} strokeWidth={1} />
+          <RRect x={54} y={32} w={4} h={6} fill={INK} strokeWidth={1} />
+          <RRect x={46} y={46} w={4} h={6} fill={INK} strokeWidth={1} />
+          <RRect x={54} y={46} w={4} h={6} fill={INK} strokeWidth={1} />
+        </>
+      );
+    case "lease":
+      // A lease document with a signature line.
+      return (
+        <>
+          <RRect x={28} y={16} w={44} h={68} fill={PARCH} strokeWidth={SW} />
+          <RLine x1={34} y1={30} x2={66} y2={30} strokeWidth={2} />
+          <RLine x1={34} y1={40} x2={66} y2={40} strokeWidth={2} />
+          <RLine x1={34} y1={50} x2={60} y2={50} strokeWidth={2} />
+          <RPath d="M36 70 q6 -8 12 0 q6 8 12 -2" fill="none" strokeWidth={2.2} stroke={RED} />
         </>
       );
   }

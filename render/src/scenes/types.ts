@@ -212,7 +212,9 @@ export interface StageScene extends Base {
     // EP073 (every level of 401k balance) additions:
     | "k401ladder" | "balancetoincome" | "k401millionaire"
     // EP074 (every level of side income) additions:
-    | "sideincomeladder" | "activevsscalable" | "hoursvsincome" | "sidetaxbite" | "hustletobusiness";
+    | "sideincomeladder" | "activevsscalable" | "hoursvsincome" | "sidetaxbite" | "hustletobusiness"
+    // EP075 (every level of rent) additions:
+    | "renttierladder" | "thirtypercentrule" | "rentvsownlifetime" | "whatrentbuys" | "renthiddencosts";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

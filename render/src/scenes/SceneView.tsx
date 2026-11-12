@@ -5559,6 +5559,70 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={400} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the line you cross: it earns while you sleep</text>
       </svg>
     );
+  } else if (m === "renttierladder") {
+    // Rent tiers $800 → $8K and what each gets you.
+    const tiers: [string, string][] = [["$800", "a room or rural town"], ["$1,500", "a modest 1-bed, mid city"], ["$2,500", "a nice place, big city"], ["$4,000", "luxury / prime metro"], ["$8,000", "ultra-prime NYC / SF"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => { const w = 180 + i * 130; const y = 100 + i * 74; return <g key={i} opacity={interpolate(climb, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={VW / 2 - w / 2} y={y} width={w} height={58} rx={7} fill={[parch, "#e8d7bf", gold, "#d98b5f", red][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 37} fontSize={18} fontWeight={900} fill={i >= 3 ? "#fff" : ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}/mo</text><text x={VW / 2 + 60} y={y + 36} fontSize={13} fontWeight={800} fill={i >= 3 ? "#fff" : ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the rent ladder</text>
+      </svg>
+    );
+  } else if (m === "thirtypercentrule") {
+    // The 30%-of-income rule; above it you're rent-burdened.
+    const fill = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const barY = 160, barH = 220, barX = VW / 2 - 70;
+    const thirty = barY + barH * 0.7;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={90} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 30% rule</text>
+        <rect x={barX} y={barY} width={140} height={barH} rx={8} fill="#efe9da" stroke={ink} strokeWidth={4} />
+        <rect x={barX} y={barY + barH * (1 - 0.7 * fill)} width={140} height={barH * 0.7 * fill} rx={8} fill={green} stroke={ink} strokeWidth={3} />
+        <RLine x1={barX - 30} y1={thirty} x2={barX + 170} y2={thirty} stroke={red} strokeWidth={4} />
+        <text x={barX + 180} y={thirty + 5} fontSize={15} fontWeight={900} fill={red} fontFamily={sans}>30% of income</text>
+        <text x={barX + 70} y={barY + barH + 30} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>your rent</text>
+        <text x={VW / 2} y={450} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>spend more than 30% on rent and you're "rent-burdened"</text>
+      </svg>
+    );
+  } else if (m === "rentvsownlifetime") {
+    // Rent over a lifetime = a fortune, nothing owned.
+    const grow = interpolate(frame, [fps * 0.5, fps * 2.6], [0, 1], clampBoth);
+    const total = Math.round(960000 * grow);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$2,000/mo rent, for 40 years</text>
+        <g transform={`translate(${VW / 2} 250)`}>
+          <circle r={95} fill={red} stroke={ink} strokeWidth={6} />
+          <text y={-6} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>paid out</text>
+          <text y={24} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">${total.toLocaleString("en-US")}</text>
+        </g>
+        <text x={VW / 2} y={400} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>nearly a million dollars — and you own nothing</text>
+        <text x={VW / 2} y={432} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>(rent buys a place to live, never an asset)</text>
+      </svg>
+    );
+  } else if (m === "whatrentbuys") {
+    // Rent pays for three things: location, space, amenities.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const cols: [string, string][] = [["location", "the #1 price driver"], ["space", "beds, baths, square feet"], ["amenities", "gym, doorman, parking"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={90} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what your rent actually pays for</text>
+        {cols.map(([t, d], i) => { const x = 200 + i * 290; const op = interpolate(reveal, [i * 0.22, i * 0.22 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 120} y={200} width={240} height={110} rx={12} fill={[gold, "#9cc47f", "#cfe3d4"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={242} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={274} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+        <text x={VW / 2} y={400} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>same salary buys a mansion in one city, a studio in another</text>
+      </svg>
+    );
+  } else if (m === "renthiddencosts") {
+    // The move-in costs stacked on top of rent.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const items: [string, string][] = [["first month", "$2,000"], ["security deposit", "$2,000"], ["broker fee", "$2,000"], ["utilities + insurance", "$200/mo"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the real cost of moving in</text>
+        {items.map(([lab, amt], i) => { const y = 120 + i * 72; return <g key={i} opacity={interpolate(reveal, [i * 0.18, i * 0.18 + 0.22], [0, 1], clampBoth)}><rect x={260} y={y} width={300} height={56} rx={8} fill={i === 3 ? "#e8d7bf" : "#efe9da"} stroke={ink} strokeWidth={3} /><text x={280} y={y + 35} fontSize={15} fontWeight={800} fill={ink} fontFamily={sans}>{lab}</text><rect x={580} y={y} width={160} height={56} rx={8} fill={red} stroke={ink} strokeWidth={3} /><text x={660} y={y + 35} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{amt}</text></g>; })}
+        <text x={VW / 2} y={450} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a $2K apartment can need $6K+ just to walk in the door</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
