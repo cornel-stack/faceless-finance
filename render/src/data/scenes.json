@@ -2,68 +2,56 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "Someone leaves you money. The first panicked question is always the same: how much does the government take? The answer shocks almost everyone — because for the vast majority of people, the government takes exactly nothing. The famous 'death tax' is one of the most misunderstood ideas in all of money.",
+    "narration": "Home ownership isn't one thing — it's a journey through distinct stages, and most people never see the whole map. From your very first rent check to the day you finally burn the mortgage, your relationship to your home, and the wealth it quietly builds, transforms completely. Today, we walk every single level.",
     "pose": "explain",
     "props": [
       {
-        "name": "will",
-        "label": "you inherit money"
+        "name": "apartment",
+        "label": "first rent check"
       },
       {
-        "name": "taxform",
-        "label": "how much is taxed?"
+        "name": "house",
+        "label": "to a paid-off home"
       },
       {
-        "name": "smiley",
-        "label": "usually… nothing"
+        "name": "keys",
+        "label": "every stage between"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that ends most of the fear. The federal estate tax only kicks in on estates worth more than about thirteen point six million dollars per person. Below that line, the federal government takes zero. Which means over ninety-nine percent of inheritances are completely federally tax-free.",
-    "text": "$13,600,000",
-    "sub": "the estate-tax exemption — below it, $0 federal tax",
-    "icon": "capitol"
+    "narration": "Here's the number that stuns new buyers. On a typical thirty-year mortgage, your first two-thousand-dollar payment might put only about three hundred dollars toward actually owning the house. The other seventeen hundred? Pure interest to the bank. Ownership is shockingly back-loaded.",
+    "text": "$300 of $2,000",
+    "sub": "how little of an early mortgage payment is really yours",
+    "icon": "mortgage"
   },
   {
-    "id": "s41",
-    "type": "character",
-    "narration": "That thirteen-point-six-million exemption is historically enormous — it was roughly doubled in recent years. But it's set to drop by about half around 2026, unless the law changes. Even then, it'll sit near seven million, so the vast majority of people will still owe exactly nothing.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "historically huge"
-      },
-      {
-        "name": "calendar",
-        "label": "set to halve ~2026"
-      },
-      {
-        "name": "smiley",
-        "label": "most still pay $0"
-      }
-    ]
+    "id": "s40",
+    "type": "callout",
+    "narration": "Stretch that across thirty years, and the total is brutal. On a three-hundred-thousand-dollar loan at seven percent, you repay over seven hundred thousand — more than double the price of the house. The home cost three hundred; the mortgage quietly cost you four hundred thousand more in interest.",
+    "text": "$700,000",
+    "sub": "total repaid on a $300K mortgage at 7%",
+    "icon": "mortgage"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we're climbing every level of inheritance — from ten thousand dollars to a hundred million — and showing exactly what the government really takes at each one. The myths, the brutal exceptions for the ultra-rich, and the giant loophole that lets fortunes pass almost untouched.",
+    "narration": "So today we climb all the levels — renting, saving, buying, building equity, and finally owning it free and clear — and reveal the quiet machine that turns your monthly payment into a six-figure pile of net worth, almost without you noticing.",
     "pose": "explain",
     "props": [
       {
-        "name": "gift",
-        "label": "$10K → $100M"
+        "name": "piggybank",
+        "label": "rent → own → free"
       },
       {
-        "name": "scale",
-        "label": "what's really taxed"
+        "name": "chartup",
+        "label": "the equity machine"
       },
       {
-        "name": "vault",
-        "label": "the big loophole"
+        "name": "nestegg",
+        "label": "payment → net worth"
       }
     ]
   },
@@ -72,769 +60,815 @@
     "type": "image",
     "src": "img/memes/expanding.jpg",
     "meme": "Expanding Brain",
-    "memeTop": "the government takes half of any inheritance",
-    "memeBottom": "almost no one pays estate tax — and the rich dodge even that",
-    "narration": "Because the story everyone believes — that the taxman grabs a huge chunk of whatever you inherit — is almost completely backwards. The real system is stranger, more generous to most, and far more generous to the rich, than you'd ever guess."
+    "memeTop": "buying a home is 'owning' it",
+    "memeBottom": "buying a home is slowly BUYING it from the bank, payment by payment",
+    "narration": "Because the day you get the keys, you don't really own your home — the bank owns almost all of it. What follows is a decades-long, quiet handover, where each payment moves another brick of ownership from them, to you."
   },
   {
     "id": "s5",
-    "type": "title",
-    "narration": "First, the crucial distinction nobody explains.",
-    "heading": "Estate vs. Inheritance",
-    "kicker": "who actually pays"
+    "type": "stage",
+    "narration": "Here's the whole journey. You start renting, owning zero percent. You save for a down payment. You buy, owning just a sliver. You build equity for years. Maybe you refinance or trade up. And finally, you reach the summit: paid off, one hundred percent yours.",
+    "motif": "ownershipstages",
+    "caption": "the home-ownership journey"
+  },
+  {
+    "id": "s41",
+    "type": "character",
+    "narration": "This journey is the default dream: around two in three American households own their home. It's the single biggest source of wealth for the middle class — and for most families, the home is, by far, the largest asset they will ever own.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "~65% own"
+      },
+      {
+        "name": "house",
+        "label": "the biggest asset"
+      },
+      {
+        "name": "nestegg",
+        "label": "middle-class wealth"
+      }
+    ]
   },
   {
     "id": "s6",
-    "type": "screenshot",
-    "narration": "Start with inheritance itself — the practice of receiving private property, money, and assets upon the death of an individual. What you receive is the inheritance. The question is who, if anyone, gets taxed on it.",
-    "sourceId": "wiki-inheritance"
+    "type": "title",
+    "narration": "Let's start at level zero — where everyone begins.",
+    "heading": "Level 0: Renting",
+    "kicker": "0% ownership, 100% flexible"
   },
   {
     "id": "s7",
-    "type": "stage",
-    "narration": "There are two completely different taxes people confuse. An estate tax is paid by the estate of the person who died, before anything reaches you. An inheritance tax is paid by you, the heir, after you receive it. They sound identical, but who pays — and whether it applies at all — is totally different.",
-    "motif": "estatevsinheritance",
-    "caption": "the US has a federal ESTATE tax — and no federal inheritance tax"
+    "type": "screenshot",
+    "narration": "Renting is an agreement where a payment is made for the use of a property owned by another. You get a place to live, with total flexibility — but you build zero ownership. Every payment buys you this month, and nothing more.",
+    "sourceId": "wiki-renting"
   },
   {
     "id": "s8",
-    "type": "screenshot",
-    "narration": "In the US, the big one is the estate tax — a federal tax on the transfer of the estate of a person who dies. Crucially, there is no federal inheritance tax at all. As the heir, you almost never owe the federal government a cent on what you receive.",
-    "sourceId": "wiki-estatetax"
+    "type": "character",
+    "narration": "We're taught renting is 'throwing money away,' but that's too harsh. You're buying flexibility, zero maintenance costs, and freedom to move. For many people and many seasons of life, renting is genuinely the smarter, cheaper choice. It's not a failure — it's the starting line.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "apartment",
+        "label": "total flexibility"
+      },
+      {
+        "name": "wrench",
+        "label": "no repair bills"
+      },
+      {
+        "name": "smiley",
+        "label": "not a failure"
+      }
+    ]
   },
   {
     "id": "s42",
     "type": "character",
-    "narration": "Those handful of states with their own inheritance tax are the exception, not the rule — places like Pennsylvania and New Jersey. And even there, money left to a spouse or children is usually taxed lightly or not at all. It's distant relatives and friends who pay the most.",
+    "narration": "And here's the fair counter-argument. A disciplined renter who invests the difference — the down payment plus the extra costs of owning — can sometimes end up just as wealthy, in stocks instead of a house. Renting isn't losing. It's just a different road to the same destination.",
     "pose": "explain",
     "props": [
       {
-        "name": "mappin",
-        "label": "only a few states"
+        "name": "apartment",
+        "label": "rent…"
       },
       {
-        "name": "couple",
-        "label": "family: little or none"
+        "name": "chartup",
+        "label": "…invest the difference"
       },
       {
-        "name": "warning",
-        "label": "distant heirs pay"
+        "name": "scale",
+        "label": "a different path"
       }
     ]
   },
   {
     "id": "s9",
-    "type": "screenshot",
-    "narration": "A handful of states do levy their own inheritance tax — a tax paid by a person who inherits money or property — but only six states have one, and close family is often exempt or lightly taxed. For most people, in most places, it simply doesn't apply.",
-    "sourceId": "wiki-inhtax"
+    "type": "title",
+    "narration": "Level one is the hardest gate on the whole journey.",
+    "heading": "Level 1: Saving",
+    "kicker": "the down payment wall"
   },
   {
     "id": "s10",
-    "type": "title",
-    "narration": "Now the single most important feature of the whole system: the cliff.",
-    "heading": "The Exemption Cliff",
-    "kicker": "$0, then suddenly 40%"
-  },
-  {
-    "id": "s11",
-    "type": "stage",
-    "narration": "Picture a cliff. Every dollar of an estate below about thirteen point six million is taxed at zero percent by the federal government. But every dollar above that line is taxed at a brutal rate of up to forty percent. Nothing, nothing, nothing — then suddenly, nearly half.",
-    "motif": "estatetaxcliff",
-    "caption": "below the line: nothing. above it: nearly half."
+    "type": "character",
+    "narration": "Before you can own anything, you have to clear the down payment wall — often tens of thousands of dollars in cash. This single hurdle is the number-one reason renters stay renters, sometimes for years, slowly stacking savings while prices keep climbing ahead of them.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "tens of thousands"
+      },
+      {
+        "name": "chartup",
+        "label": "prices climb away"
+      },
+      {
+        "name": "warning",
+        "label": "the hardest gate"
+      }
+    ]
   },
   {
     "id": "s43",
     "type": "character",
-    "narration": "And even above the line, it works like income tax: only the dollars over the exemption get taxed, not the whole estate. An estate of fourteen million isn't taxed on all fourteen — just on the roughly four hundred thousand that pokes above the line.",
+    "narration": "You don't always need twenty percent, though. Some loans let you buy with just three to five percent down — getting you onto the ladder years sooner. The trade-off is PMI, that extra insurance fee, until you build enough equity. Sometimes getting in early is worth the small penalty.",
     "pose": "explain",
     "props": [
       {
-        "name": "scale",
-        "label": "only dollars ABOVE"
+        "name": "piggybank",
+        "label": "3-5% down options"
       },
       {
         "name": "percent",
-        "label": "not the whole estate"
+        "label": "the PMI trade-off"
       },
       {
-        "name": "smiley",
-        "label": "the first $13.6M is safe"
+        "name": "ladder",
+        "label": "get on sooner"
       }
     ]
   },
   {
+    "id": "s11",
+    "type": "title",
+    "narration": "Clear that wall, and you reach the stage everyone celebrates — getting the keys.",
+    "heading": "Level 2: Buying",
+    "kicker": "you own… a sliver"
+  },
+  {
     "id": "s12",
-    "type": "character",
-    "narration": "And for a married couple, that exemption doubles to over twenty-seven million dollars. So a family can pass an enormous fortune — a successful business, multiple homes, millions in investments — to their kids, and owe the federal government absolutely nothing in estate tax.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "couple",
-        "label": "couples: ~$27M"
-      },
-      {
-        "name": "house",
-        "label": "homes, business, investments"
-      },
-      {
-        "name": "smiley",
-        "label": "$0 federal estate tax"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "Now you're in owner-occupancy — where a person owns the home in which they live. It feels like a huge leap. But on day one, after a small down payment, the bank effectively owns eighty or ninety percent of your house. You own a sliver.",
+    "sourceId": "wiki-owner"
   },
   {
     "id": "s44",
     "type": "character",
-    "narration": "And couples get a bonus called portability. When the first spouse dies, the survivor can inherit their unused exemption — stacking the two together. It's why a well-advised couple can shield over twenty-seven million dollars with almost no effort at all.",
+    "narration": "And day one stings twice. On top of the down payment, closing costs eat another two to five percent. Between those fees and a tiny starting equity, if you had to sell in the first couple of years, you could actually lose money. The early days are the most fragile of all.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "couple",
-        "label": "portability"
+        "name": "receipt",
+        "label": "closing costs 2-5%"
       },
       {
-        "name": "shield",
-        "label": "stack both exemptions"
+        "name": "warning",
+        "label": "fragile early on"
       },
       {
-        "name": "vault",
-        "label": "~$27M shielded"
+        "name": "chartdown",
+        "label": "could sell at a loss"
       }
     ]
   },
   {
     "id": "s13",
-    "type": "title",
-    "narration": "So let's climb the levels and see what each inheritance really means.",
-    "heading": "The Levels",
-    "kicker": "$10K to $100M"
-  },
-  {
-    "id": "s14",
-    "type": "stage",
-    "narration": "Here's the whole ladder. Ten thousand dollars: tax-free. A hundred thousand: tax-free. A million: tax-free. Even ten million: still under the exemption, federally tax-free. It's only at a hundred million — far above the line — that the government finally takes a giant bite.",
-    "motif": "inheritancetiers",
-    "caption": "what the government takes"
-  },
-  {
-    "id": "s15",
     "type": "character",
-    "narration": "At the everyday levels — ten thousand, a hundred thousand, even a million dollars — the money lands in your account whole. No federal estate tax, no federal inheritance tax. The thing most people dread simply never happens. The inheritance arrives intact.",
+    "narration": "And the costs explode overnight. Suddenly you're paying the mortgage, property taxes, insurance, and every repair yourself. The true monthly cost of owning is usually far higher than the rent you left behind. This is the stage where many first-time buyers get a nasty shock.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "gift",
-        "label": "$10K-$1M"
+        "name": "mortgage",
+        "label": "mortgage + taxes"
       },
       {
-        "name": "moneybag",
-        "label": "lands whole"
+        "name": "wrench",
+        "label": "every repair is yours"
       },
       {
-        "name": "smiley",
-        "label": "no federal tax"
-      }
-    ]
-  },
-  {
-    "id": "s16",
-    "type": "character",
-    "narration": "Even a ten-million-dollar inheritance usually passes federally tax-free, because it sits just under that exemption. This is why the 'death tax' is, for almost everyone, a myth. You could inherit a genuine fortune and owe the federal government precisely nothing.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "vault",
-        "label": "$10M, still under the line"
-      },
-      {
-        "name": "capitol",
-        "label": "$0 federal estate tax"
-      },
-      {
-        "name": "scale",
-        "label": "the 'death tax' myth"
+        "name": "warning",
+        "label": "costs more than rent"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "One catch at the higher levels: a dozen states levy their own estate tax, often with far lower thresholds — some as low as one or two million dollars. So an inheritance that's 'tax-free' federally can still get taxed by the state. Geography matters, even in death.",
+    "narration": "And budget for the silent cost: maintenance. A good rule is one percent of the home's value every year — four thousand dollars on a four-hundred-thousand home — for the roof, the furnace, the thousand small repairs. Owners who quietly skip this steadily fall behind.",
     "pose": "explain",
     "props": [
       {
-        "name": "mappin",
-        "label": "state estate taxes"
+        "name": "wrench",
+        "label": "budget ~1%/yr"
+      },
+      {
+        "name": "house",
+        "label": "roof, furnace, repairs"
       },
       {
         "name": "warning",
-        "label": "thresholds as low as $1-2M"
-      },
-      {
-        "name": "scale",
-        "label": "geography matters"
+        "label": "don't skip it"
       }
     ]
   },
   {
-    "id": "s17",
+    "id": "s14",
+    "type": "title",
+    "narration": "Now the quiet magic begins — the engine that builds the wealth.",
+    "heading": "Level 3: Building Equity",
+    "kicker": "the slow handover"
+  },
+  {
+    "id": "s15",
+    "type": "screenshot",
+    "narration": "The wealth you build is home equity — the difference between the property's current market value and the total balances of all loans secured by the home. It's the portion of the house that is genuinely, truly yours.",
+    "sourceId": "wiki-homeequity"
+  },
+  {
+    "id": "s16",
+    "type": "stage",
+    "narration": "And here's the simple formula. Your equity equals your home's value, minus what you still owe. A four-hundred-thousand-dollar home with a two-hundred-fifty-thousand-dollar loan means a hundred and fifty thousand dollars of equity is already yours. Every payment, and every price rise, grows that number.",
+    "motif": "equityformula",
+    "caption": "every payment quietly moves value from the bank's side to yours"
+  },
+  {
+    "id": "s46",
     "type": "character",
-    "narration": "It's only at the very top — a hundred million dollars — that the estate tax roars to life. On an estate that size, with roughly eighty-six million above the exemption taxed near forty percent, the government can take over thirty million dollars. Finally, the famous tax actually bites.",
+    "narration": "And equity can go negative. If home prices fall below what you owe, you're 'underwater' — stuck with negative equity, trapped in a house you can't sell without writing a check. It's rare — but 2008 showed it can happen to millions of people all at once.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
         "name": "chartdown",
-        "label": "$100M estate"
+        "label": "prices fall"
       },
       {
-        "name": "taxform",
-        "label": "~40% above the line"
+        "name": "warning",
+        "label": "negative equity"
       },
       {
-        "name": "capitol",
-        "label": "$30M+ to the govt"
+        "name": "lockhouse",
+        "label": "trapped, underwater"
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "type": "screenshot",
+    "narration": "Equity grows through amortization — the process of paying off a debt over time through regular payments. Each month, a bit more of your payment goes to the actual loan, and a bit less to interest. The handover slowly accelerates.",
+    "sourceId": "wiki-amort"
+  },
+  {
+    "id": "s47",
+    "type": "character",
+    "narration": "Here's a lever that supercharges the handover: extra principal payments. Throw even a little extra at the loan each month, and because it skips all the future interest on that money, you can knock years off the mortgage and save tens of thousands. Every extra dollar punches far above its weight.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scissors",
+        "label": "extra principal"
+      },
+      {
+        "name": "percent",
+        "label": "skips future interest"
+      },
+      {
+        "name": "paidstamp",
+        "label": "years off the loan"
       }
     ]
   },
   {
     "id": "s18",
-    "type": "title",
-    "narration": "But even the richest have a giant loophole — and it quietly saves everyone else, too.",
-    "heading": "The Loophole",
-    "kicker": "stepped-up basis"
-  },
-  {
-    "id": "s19",
-    "type": "screenshot",
-    "narration": "It's called stepped-up basis. When you inherit an asset, its cost basis resets to its market value at the time the benefactor dies. That one rule quietly erases a lifetime of capital gains taxes, in an instant.",
-    "sourceId": "wiki-steppedup"
-  },
-  {
-    "id": "s20",
     "type": "stage",
-    "narration": "Watch the magic. Grandpa bought a stock for a hundred thousand dollars. By the time he dies, it's worth a million. Normally, selling that would trigger tax on nine hundred thousand of gains. But you inherit it at the stepped-up value — a million. Sell it, and the taxable gain is zero.",
-    "motif": "steppedupbasis",
-    "caption": "heirs inherit at today's value — the lifetime of gains vanishes, untaxed"
-  },
-  {
-    "id": "s46",
-    "type": "character",
-    "narration": "There's a key catch to that stepped-up basis: it only happens at death. Give the very same stock away while you're alive, and your heir inherits your old, low basis — and the full tax bill along with it. Dying, strangely enough, is the tax-efficient move.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "will",
-        "label": "stepped-up only at death"
-      },
-      {
-        "name": "gift",
-        "label": "gift early = old basis"
-      },
-      {
-        "name": "scale",
-        "label": "dying is tax-smart"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "narration": "This is one of the most powerful breaks in the entire tax code — and it's the final piece of the 'buy, borrow, die' strategy the wealthy use. Hold appreciating assets until death, and all those decades of gains pass to your heirs completely tax-free. The gains simply disappear.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "decades of gains…"
-      },
-      {
-        "name": "vault",
-        "label": "…vanish at death"
-      },
-      {
-        "name": "handshake",
-        "label": "'buy, borrow, die'"
-      }
-    ]
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "narration": "This loophole is hugely controversial. Critics say it lets the biggest fortunes escape capital-gains tax forever, across generations. There are regular proposals to close it — so it may not last. But for now, it remains one of the single greatest gifts in the entire tax code.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "hugely debated"
-      },
-      {
-        "name": "chartup",
-        "label": "gains escape forever"
-      },
-      {
-        "name": "warning",
-        "label": "may not last"
-      }
-    ]
-  },
-  {
-    "id": "s22",
-    "type": "title",
-    "narration": "So if inheritances are mostly tax-free, where does the taxman actually show up?",
-    "heading": "The Real Trap",
-    "kicker": "inherited retirement accounts"
-  },
-  {
-    "id": "s23",
-    "type": "stage",
-    "narration": "Here's the tax most heirs actually face. A cash inheritance or a house? Tax-free. But inherit a traditional 401(k) or IRA, and it's completely different. Every dollar you pull out is taxed as your ordinary income — and new rules usually force you to empty the whole account within ten years.",
-    "motif": "iratax",
-    "caption": "a cash inheritance is tax-free; an inherited IRA is not"
+    "narration": "But that handover starts painfully slow. In year one, almost your entire payment is interest — you barely dent what you owe. By year thirty, it completely flips, and nearly every dollar builds your ownership. The mortgage is designed to pay the bank first, and you last.",
+    "motif": "interestvsprincipal",
+    "caption": "where your payment really goes"
   },
   {
     "id": "s48",
     "type": "character",
-    "narration": "One bright exception inside that IRA trap: a Roth account. Because the tax was already paid up front, an inherited Roth comes out completely tax-free. So if you're leaving retirement money behind, a Roth is a far kinder gift to your heirs than a traditional account.",
+    "narration": "This front-loaded interest is why selling early feels so disappointing. Sell after five years, and you'll find you've barely dented the loan — most of your payments went straight to the bank as interest. The equity machine only truly rewards those who stay for the long haul.",
     "pose": "explain",
     "props": [
       {
+        "name": "clock",
+        "label": "sell after 5 yrs"
+      },
+      {
+        "name": "chartdown",
+        "label": "barely dented the loan"
+      },
+      {
+        "name": "warning",
+        "label": "it rewards patience"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "stage",
+    "narration": "Watch the two forces work together over the years. Your loan balance slowly shrinks as you pay it down. And your home's value tends to rise with the market. The growing gap between those two lines is your equity — quietly ballooning into the biggest asset most families ever own.",
+    "motif": "equitybuilds",
+    "caption": "your equity quietly grows"
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "narration": "And a reality check on appreciation. Over the long run, home prices have risen only around three or four percent a year — roughly keeping pace with inflation, not a lottery. The real magic of a home was never crazy appreciation. It's the leverage, and the forced saving.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "~3-4%/yr"
+      },
+      {
+        "name": "grocerybag",
+        "label": "≈ inflation"
+      },
+      {
+        "name": "scale",
+        "label": "not a lottery"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "narration": "And this reveals the secret hiding inside a mortgage: it's a forced savings plan in disguise. Every single payment quietly sweeps a little money out of your pocket and into your net worth. Most homeowners build their entire fortune this way, almost by accident.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "forced savings"
+      },
+      {
+        "name": "house",
+        "label": "hidden in the mortgage"
+      },
+      {
+        "name": "nestegg",
+        "label": "wealth by accident"
+      }
+    ]
+  },
+  {
+    "id": "s50",
+    "type": "callout",
+    "narration": "The Fed's own data makes the case. The median homeowner has a net worth roughly forty times that of the median renter. Not because owners earn more — but because the mortgage quietly forced them to save, decade after decade, whether they ever meant to or not.",
+    "text": "40×",
+    "sub": "median homeowner net worth vs renter (Fed)",
+    "icon": "nestegg"
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "Level four is where owners start getting clever with all that equity.",
+    "heading": "Level 4: Optimizing",
+    "kicker": "refinance, trade up, tap it"
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "narration": "One key move is refinancing — the replacement of an existing debt obligation with another, under a different term and interest rate. If rates fall after you buy, you can swap your old loan for a cheaper one, and cut your payment.",
+    "sourceId": "wiki-refi"
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "narration": "But refinancing isn't free. It comes with its own closing costs, so there's a break-even point — the months it takes for the lower payment to repay those fees. Refinance only if you'll stay long enough to come out ahead. Otherwise, you've just paid for the privilege.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "percent",
+        "label": "a lower rate"
+      },
+      {
+        "name": "receipt",
+        "label": "but new closing costs"
+      },
+      {
+        "name": "scale",
+        "label": "mind the break-even"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "narration": "At this stage, your options multiply. Refinance to a lower rate. Sell and trade up to a bigger home, rolling your equity forward. Or borrow against your equity with a home-equity loan. Your house has quietly become a financial tool, not just a place to live.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "percent",
+        "label": "refinance lower"
+      },
+      {
+        "name": "sold",
+        "label": "trade up"
+      },
+      {
         "name": "vault",
-        "label": "inherited Roth"
+        "label": "borrow against equity"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "And beware the move-up treadmill. Each time you trade up to a bigger, nicer home, you reset the mortgage clock and swell the payment. Do it again and again, and you can spend your whole life in year one of a new loan — never actually getting closer to owning anything outright.",
+    "pose": "explain",
+    "expression": "worried",
+    "props": [
+      {
+        "name": "sold",
+        "label": "trade up again"
       },
       {
-        "name": "smiley",
-        "label": "100% tax-free"
+        "name": "mortgage",
+        "label": "reset the clock"
       },
       {
-        "name": "gift",
-        "label": "a kinder gift"
+        "name": "warning",
+        "label": "never finish paying"
       }
     ]
   },
   {
     "id": "s24",
     "type": "character",
-    "narration": "This catches families completely off guard. Inherit a large retirement account while you're in your peak earning years, drain it over a decade, and it can push you into the highest tax brackets — handing a big chunk straight to the government. The account type matters more than the amount.",
+    "narration": "But a warning at this level: tapping your equity can be a trap. Borrowing against your home to fund vacations or cars quietly resets your progress, turning years of hard-won ownership back into debt. The equity is real wealth — treat it with respect, not as a piggy bank for toys.",
     "pose": "explain",
     "expression": "worried",
     "props": [
       {
         "name": "warning",
-        "label": "drains over 10 years"
+        "label": "don't raid it for toys"
       },
       {
-        "name": "taxform",
-        "label": "taxed as income"
+        "name": "chartdown",
+        "label": "resets your progress"
       },
       {
-        "name": "scale",
-        "label": "account type > amount"
+        "name": "shield",
+        "label": "treat equity with respect"
       }
     ]
   },
   {
-    "id": "s49",
+    "id": "s53",
     "type": "character",
-    "narration": "And spouses get special treatment everywhere. A surviving spouse can inherit a retirement account and treat it as their own, with none of the brutal ten-year drain rule. Those harsh rules mostly fall on children and other non-spouse heirs. Marriage, even here, has its privileges.",
+    "narration": "And a hard warning on tapping equity. A home-equity line of credit is cheap and tempting — but your house is the collateral. Borrow against it for the wrong reasons, fall behind, and you can lose the very home you spent decades building. Treat it strictly as a last resort.",
     "pose": "explain",
+    "expression": "worried",
     "props": [
       {
-        "name": "couple",
-        "label": "spouses: special rules"
+        "name": "vault",
+        "label": "a HELOC"
       },
       {
-        "name": "smiley",
-        "label": "no 10-year drain"
+        "name": "house",
+        "label": "your home is collateral"
       },
       {
         "name": "warning",
-        "label": "kids hit harder"
+        "label": "you can lose it"
       }
     ]
   },
   {
     "id": "s25",
     "type": "title",
-    "narration": "Now, for the ultra-rich who do face that forty-percent cliff — how do they escape it?",
-    "heading": "Dodging the 40%",
-    "kicker": "trusts, gifts, and charity"
+    "narration": "And finally — the summit of the entire journey.",
+    "heading": "Level 5: Paid Off",
+    "kicker": "100% yours"
   },
   {
     "id": "s26",
-    "type": "screenshot",
-    "narration": "One tool is the gift tax — the tax on money or property that one living person gives to another. You can give away money while alive to shrink your estate, using a yearly exemption, chipping the fortune down below the taxable line over time.",
-    "sourceId": "wiki-gifttax"
-  },
-  {
-    "id": "s50",
-    "type": "callout",
-    "narration": "And almost nobody uses the simplest tool of all: the annual gift exclusion. You can give any person around eighteen thousand dollars a year, to as many people as you like, completely tax-free, without ever touching your lifetime exemption. A quiet, powerful way to pass money early.",
-    "text": "$18,000",
-    "sub": "you can gift this per person, per year, tax-free",
-    "icon": "gift"
-  },
-  {
-    "id": "s27",
     "type": "stage",
-    "narration": "The rich combine three moves. They gift money away each year, tax-free. They donate to charity, which is fully deductible. And above all, they use trusts to move assets legally outside their taxable estate. Shrink the estate below the line, and the forty-percent tax quietly shrinks too.",
-    "motif": "dodgetheestatetax",
-    "caption": "shrink the taxable estate, shrink the tax"
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "narration": "The trusts have exotic names — irrevocable trusts, G-R-A-Ts, dynasty trusts — but they all do one thing: move assets out of your taxable estate while keeping them in the family. It's completely legal, wildly effective, and the entire reason estate lawyers exist.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "vault",
-        "label": "irrevocable & dynasty trusts"
-      },
-      {
-        "name": "handshake",
-        "label": "legal & effective"
-      },
-      {
-        "name": "capitol",
-        "label": "assets leave the estate"
-      }
-    ]
-  },
-  {
-    "id": "s28",
-    "type": "character",
-    "narration": "This is why, in practice, the estate tax raises surprisingly little money. The families it targets can afford the lawyers to plan around it. So the 'tax on the rich' is often quietly sidestepped by the very richest, while landing mostly on the merely-wealthy who didn't plan ahead.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "scale",
-        "label": "the richest plan around it"
-      },
-      {
-        "name": "vault",
-        "label": "trusts & lawyers"
-      },
-      {
-        "name": "warning",
-        "label": "it raises little"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "callout",
-    "narration": "Here's proof the system barely bites. The federal estate tax raises less than one percent of all government revenue. It's a 'tax on the rich' that the rich have largely learned to sidestep — collecting, in the end, far more fear than actual money.",
-    "text": "<1%",
-    "sub": "of federal revenue comes from the estate tax",
-    "icon": "capitol"
-  },
-  {
-    "id": "s29",
-    "type": "title",
-    "narration": "Step back, and all of this is about to matter more than ever.",
-    "heading": "The Great Transfer",
-    "kicker": "the biggest handover ever"
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "We're at the start of the largest wealth transfer in human history. Over the coming decades, the older generations will pass tens of trillions of dollars down to their heirs. For millions of families, an inheritance will be the single biggest financial event of their lives.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "moneytree",
-        "label": "tens of trillions"
-      },
-      {
-        "name": "couple",
-        "label": "passing down"
-      },
-      {
-        "name": "globe",
-        "label": "the biggest transfer ever"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "callout",
-    "narration": "Put a real number on the handover that's coming. Analysts estimate around eighty-four trillion dollars will pass from older generations down to their heirs over the next couple of decades — the 'great wealth transfer.' It will quietly reshape who holds money in this country.",
-    "text": "$84 trillion",
-    "sub": "the 'great wealth transfer' now underway",
-    "icon": "moneytree"
-  },
-  {
-    "id": "s31",
-    "type": "character",
-    "narration": "But here's the sobering flip side. Most of that wealth is concentrated at the very top. For the average family, the inheritance may be modest — or nothing at all. The great transfer will make some heirs instantly rich, and leave most exactly where they started.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "crown",
-        "label": "concentrated at the top"
-      },
-      {
-        "name": "scale",
-        "label": "most inherit little"
-      },
-      {
-        "name": "warning",
-        "label": "it widens the gap"
-      }
-    ]
+    "narration": "The final level: the mortgage is gone. After decades of payments, you own one hundred percent of your home, free and clear. And your single biggest monthly bill — that mortgage payment — simply vanishes forever. All that's left is property taxes and upkeep.",
+    "motif": "paidoffmilestone",
+    "caption": "your biggest bill vanishes — just taxes & upkeep remain"
   },
   {
     "id": "s54",
     "type": "character",
-    "narration": "And it's a powerful engine of inequality. The wealthy don't just earn more — they inherit more, tax-advantaged, generation after generation. A large share of the richest families' fortunes was handed to them, not built. Inheritance quietly stacks the deck before the game even starts.",
+    "narration": "There's a famous debate right at the summit: pay off the mortgage early, or invest that extra money instead? Mathematically, investing often wins. But emotionally, a paid-off home — total security, no payment, no fear — is a return no spreadsheet can capture. Both answers are genuinely right.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "crown",
-        "label": "the rich inherit more"
+        "name": "scale",
+        "label": "pay off vs invest"
       },
       {
         "name": "chartup",
-        "label": "tax-advantaged, stacked"
+        "label": "math says invest"
       },
       {
-        "name": "warning",
-        "label": "it widens the gap"
+        "name": "smiley",
+        "label": "peace says pay off"
       }
     ]
   },
   {
-    "id": "s32",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Federal estate tax owed by estate size ($M)",
-    "unit": "$M",
-    "narration": "Here's the whole system in one chart. On a one-million, ten-million, even thirteen-million-dollar estate, the federal tax is zero. It's only when you blow past the exemption — at fifty million, a hundred million — that the tax suddenly appears and grows fast.",
-    "data": [
-      {
-        "label": "$1M",
-        "value": 0
-      },
-      {
-        "label": "$13M",
-        "value": 0
-      },
-      {
-        "label": "$50M",
-        "value": 15
-      },
-      {
-        "label": "$100M",
-        "value": 35
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s33",
-    "type": "title",
-    "narration": "So what should you actually do — whether you're inheriting, or leaving something behind?",
-    "heading": "The Playbook",
-    "kicker": "for heirs and givers"
-  },
-  {
-    "id": "s34",
+    "id": "s27",
     "type": "character",
-    "narration": "If you're inheriting a normal amount, relax about the estate tax — you almost certainly owe nothing. Instead, watch the one real trap: inherited retirement accounts. Get advice before you drain them, so you don't accidentally hand a fortune to the taxman over those ten years.",
-    "pose": "present",
+    "narration": "This is a profound kind of security. A paid-off home means you will always have a place to live, almost no matter what happens to your income. It dramatically lowers the cost of your life, which makes retirement vastly easier and your whole existence more resilient.",
+    "pose": "explain",
     "props": [
       {
-        "name": "smiley",
-        "label": "no estate tax to fear"
+        "name": "paidstamp",
+        "label": "100% yours"
       },
       {
-        "name": "warning",
-        "label": "mind inherited IRAs"
+        "name": "shield",
+        "label": "always a place to live"
       },
       {
-        "name": "handshake",
-        "label": "get advice first"
+        "name": "hammock",
+        "label": "retirement gets easy"
       }
     ]
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "And a serious warning for heirs: a sudden inheritance can vanish shockingly fast. Studies suggest a huge share of inherited money is spent or lost within just a few years. 'Sudden wealth' overwhelms people. Slow down, park it somewhere safe, and make no big decisions for a full year.",
-    "pose": "present",
+    "narration": "And late in life, the equity can flow back to you. A reverse mortgage lets older owners tap their home's value for income without selling — turning decades of forced savings back into usable cash. It's complex and has real pitfalls, but it quietly closes the circle of the whole journey.",
+    "pose": "explain",
     "props": [
       {
-        "name": "moneybag",
-        "label": "a sudden windfall"
+        "name": "retiree",
+        "label": "tap it in old age"
       },
       {
-        "name": "chartdown",
-        "label": "often gone in years"
+        "name": "house",
+        "label": "without selling"
       },
       {
-        "name": "shield",
-        "label": "slow down, park it"
+        "name": "warning",
+        "label": "complex — tread carefully"
       }
     ]
   },
   {
-    "id": "s35",
-    "type": "character",
-    "narration": "If you're leaving money behind, the gifts are simple. Hold your appreciating assets until death, so your heirs get that magical stepped-up basis. Keep your beneficiaries updated on every account. And if your estate is large, see an estate lawyer — trusts can save your family a fortune.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "hold assets for stepped-up basis"
-      },
-      {
-        "name": "will",
-        "label": "update beneficiaries"
-      },
-      {
-        "name": "vault",
-        "label": "big estate? use trusts"
-      }
-    ]
+    "id": "s28",
+    "type": "title",
+    "narration": "So let's settle the eternal question this whole journey raises.",
+    "heading": "Rent or Own?",
+    "kicker": "the real comparison"
+  },
+  {
+    "id": "s29",
+    "type": "stage",
+    "narration": "Here's thirty years, side by side. The renter pays every month and ends with zero — they bought flexibility. The owner pays a similar amount, rides the ups and downs, and ends with a fully paid-off house worth hundreds of thousands. Same monthly cost, wildly different ending.",
+    "motif": "rentvsownjourney",
+    "caption": "same monthly cost, wildly different ending"
   },
   {
     "id": "s56",
     "type": "character",
-    "narration": "One elegant tool for givers: life insurance. A payout generally passes to your beneficiaries income-tax-free, and can be structured entirely outside your estate. For many families, it's the cleanest way to leave a tax-free sum — or to cover an estate-tax bill without selling the family business.",
-    "pose": "present",
+    "narration": "And here's a subtle edge owning has: leverage. You control a four-hundred-thousand-dollar asset with maybe eighty thousand down. So if the home rises even modestly, the gain on your small down payment is enormous. That built-in leverage is a big part of why owning builds wealth so effectively.",
+    "pose": "explain",
     "props": [
       {
-        "name": "shield",
-        "label": "life insurance"
+        "name": "house",
+        "label": "control $400K…"
       },
       {
-        "name": "smiley",
-        "label": "pays out tax-free"
+        "name": "piggybank",
+        "label": "…with $80K down"
       },
       {
-        "name": "handshake",
-        "label": "a clean inheritance"
+        "name": "chartup",
+        "label": "leveraged gains"
       }
     ]
   },
   {
-    "id": "s36",
+    "id": "s30",
     "type": "character",
-    "narration": "And whatever the size, write a will. Die without one, and the state decides who gets everything, through a slow, public, expensive process called probate. A simple will is one of the kindest, cheapest gifts you can ever leave the people you love.",
-    "pose": "present",
+    "narration": "But owning only wins if you stay put long enough. The huge up-front costs of buying and selling mean you often need to hold a home for at least five years just to break even. For the frequent mover, renting genuinely can be the richer choice.",
+    "pose": "explain",
     "props": [
       {
-        "name": "will",
-        "label": "write a will"
+        "name": "calendar",
+        "label": "hold 5+ years"
       },
       {
-        "name": "warning",
-        "label": "no will = the state decides"
+        "name": "scale",
+        "label": "or renting wins"
       },
       {
-        "name": "handshake",
-        "label": "a gift to your family"
+        "name": "movingbox",
+        "label": "movers: rent"
       }
     ]
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "And here's a crucial, often-fatal detail: the beneficiary you named on an account overrides your will. An ex-spouse left on an old 401(k) will inherit it, no matter what your will says. Check every beneficiary designation — it's exactly where fortunes go tragically to the wrong person.",
-    "pose": "present",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "will",
-        "label": "beneficiaries beat the will"
-      },
-      {
-        "name": "warning",
-        "label": "an old ex could inherit"
-      },
-      {
-        "name": "scissors",
-        "label": "update them all"
-      }
-    ]
-  },
-  {
-    "id": "s37",
-    "type": "character",
-    "narration": "Because the real lesson of inheritance is this: for almost everyone, the government is not the villain. The tax you feared mostly isn't there. The dangers that are real — the IRA trap, dying without a will, family conflict — are the quiet ones nobody warns you about.",
+    "narration": "Remember the friction, too. Buying and selling a home can burn eight to ten percent of its value in agent fees, taxes, and closing costs. That's exactly why the journey rewards staying put. Every move resets your progress and skims a real chunk off the top.",
     "pose": "explain",
     "props": [
       {
-        "name": "smiley",
-        "label": "the tax you feared isn't there"
+        "name": "receipt",
+        "label": "~8-10% to buy & sell"
       },
       {
-        "name": "warning",
-        "label": "the real traps are quiet"
+        "name": "clock",
+        "label": "stay put to win"
       },
       {
-        "name": "scale",
-        "label": "plan for those instead"
+        "name": "scissors",
+        "label": "moves skim the top"
       }
     ]
   },
   {
-    "id": "s38",
+    "id": "s31",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Your equity over 30 years ($K)",
+    "unit": "$K",
+    "narration": "Here's the equity journey in one chart, on a four-hundred-thousand-dollar home. Year one, maybe twenty thousand. Year ten, around a hundred and twenty. Year twenty, nearly three hundred. And by year thirty, the full value — a paid-off house, every dollar of it yours.",
+    "data": [
+      {
+        "label": "year 1",
+        "value": 20
+      },
+      {
+        "label": "year 10",
+        "value": 120
+      },
+      {
+        "label": "year 20",
+        "value": 290
+      },
+      {
+        "label": "year 30",
+        "value": 480
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s32",
+    "type": "title",
+    "narration": "So how do you actually move up these levels wisely?",
+    "heading": "The Playbook",
+    "kicker": "climb it smart"
+  },
+  {
+    "id": "s33",
     "type": "character",
-    "narration": "So the next time you hear someone rage about the government seizing half of every inheritance, you'll know the truth. For nearly everyone, inheritances pass tax-free. And for the few who face the tax, an army of lawyers is usually already quietly planning the escape.",
+    "narration": "First, don't rush off the renting level. Buy only when you're financially ready and plan to stay put. A home bought too early, or stretched too thin, becomes an anchor, not an asset. There is no prize for owning before you're genuinely ready.",
     "pose": "present",
     "props": [
       {
-        "name": "capitol",
-        "label": "most pass tax-free"
+        "name": "apartment",
+        "label": "don't rush"
       },
       {
-        "name": "vault",
-        "label": "the rich plan around it"
+        "name": "calendar",
+        "label": "buy when ready & staying"
       },
       {
-        "name": "smiley",
-        "label": "now you know the truth"
+        "name": "shield",
+        "label": "no prize for rushing"
       }
     ]
   },
   {
     "id": "s58",
     "type": "character",
-    "narration": "And maybe the deepest lesson of all: consider giving with a warm hand, not a cold one. Helping your family while you're alive to see it — a home deposit, a tuition bill — is often worth far more than any inheritance. Money given in time can change a life more than money left behind.",
+    "narration": "And never climb a level before you're ready. Buying at the very top of your budget makes you 'house poor' — a beautiful home, and no money left for an actual life. The smart move is to buy below your max, leaving room to live, and to keep building other wealth alongside it.",
     "pose": "present",
     "props": [
       {
-        "name": "gift",
-        "label": "give while alive"
+        "name": "house",
+        "label": "don't max out"
       },
       {
-        "name": "couple",
-        "label": "help them now"
+        "name": "ballchain",
+        "label": "'house poor'"
       },
       {
         "name": "smiley",
-        "label": "a warm hand"
+        "label": "buy below your means"
       }
     ]
   },
   {
-    "id": "s39",
+    "id": "s34",
     "type": "character",
-    "narration": "If this cleared up what the government really takes, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "Second, once you own, let the equity engine run. Make every payment, let amortization and appreciation work their slow magic, and resist the urge to constantly tap your equity. Patience, here, quietly compounds into one of the largest assets you'll ever hold.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "let equity build"
+      },
+      {
+        "name": "scissors",
+        "label": "don't raid it"
+      },
+      {
+        "name": "nestegg",
+        "label": "patience compounds"
+      }
+    ]
+  },
+  {
+    "id": "s35",
+    "type": "character",
+    "narration": "Third, consider racing to the summit. Making small extra payments toward the principal can knock years off your mortgage and save a fortune in interest. For many, the deep peace of a paid-off home is worth more than any extra investment return.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "percent",
+        "label": "pay extra principal"
+      },
+      {
+        "name": "scissors",
+        "label": "years off the loan"
+      },
+      {
+        "name": "paidstamp",
+        "label": "race to paid-off"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "narration": "So the pay-it-off choice really comes down to who you are. If the debt keeps you up at night, race to burn it and buy your own peace. If you're a disciplined investor, that money may grow more elsewhere. There's no wrong answer here — only the one that lets you sleep.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "paidstamp",
+        "label": "burn the mortgage?"
+      },
+      {
+        "name": "chartup",
+        "label": "or invest it?"
+      },
+      {
+        "name": "smiley",
+        "label": "pick what lets you sleep"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "Because the real lesson of this journey is that a home is secretly two things at once. It's a place to live — and a decades-long machine that quietly converts your monthly housing cost into lasting net worth. Rent only ever buys the first. Ownership, over time, buys both.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "sofa",
+        "label": "a place to live"
+      },
+      {
+        "name": "moneytree",
+        "label": "+ a wealth machine"
+      },
+      {
+        "name": "scale",
+        "label": "ownership buys both"
+      }
+    ]
+  },
+  {
+    "id": "s37",
+    "type": "character",
+    "narration": "So wherever you are on this ladder tonight — renting, scrimping for a down payment, newly keyed-in, or watching your equity climb — you now know exactly what stage you're in, and what the next one quietly builds toward. That full-value summit is closer than it looks.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "keys",
+        "label": "know your stage"
+      },
+      {
+        "name": "chartup",
+        "label": "what's next"
+      },
+      {
+        "name": "confetti",
+        "label": "the summit awaits"
+      }
+    ]
+  },
+  {
+    "id": "s38",
+    "type": "character",
+    "narration": "If this mapped out the whole home-ownership journey for you, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "gift",
+        "name": "house",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s40",
+    "id": "s39",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

@@ -1,0 +1,1006 @@
+{
+  "id": "EP069",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Home Ownership: From First Rent to Paid-Off",
+  "slug": "every-level-of-home-ownership",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP069 — Every Level series (row 59). The JOURNEY/stages of owning (distinct from EP059 affordability): rent → save down payment → first buy (tiny equity) → build equity (amortization + appreciation) → refinance/trade-up → paid-off. The equity engine (value − loans), the amortization curve (early=interest, late=principal), mortgage as forced savings, the mortgage-free milestone. 6 new motifs (ownershipstages/equitybuilds/interestvsprincipal/rentvsownjourney/paidoffmilestone/equityformula) + doodles paidstamp/confetti. Sources: Owner-occupancy/Home equity/Refinancing/Amortization/Renting/Mortgage. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Home ownership isn't one thing — it's a journey through distinct stages, and most people never see the whole map. From your very first rent check to the day you finally burn the mortgage, your relationship to your home, and the wealth it quietly builds, transforms completely. Today, we walk every single level.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "first rent check"
+        },
+        {
+          "name": "house",
+          "label": "to a paid-off home"
+        },
+        {
+          "name": "keys",
+          "label": "every stage between"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that stuns new buyers. On a typical thirty-year mortgage, your first two-thousand-dollar payment might put only about three hundred dollars toward actually owning the house. The other seventeen hundred? Pure interest to the bank. Ownership is shockingly back-loaded.",
+      "text": "$300 of $2,000",
+      "sub": "how little of an early mortgage payment is really yours",
+      "icon": "mortgage"
+    },
+    {
+      "id": "s40",
+      "type": "callout",
+      "narration": "Stretch that across thirty years, and the total is brutal. On a three-hundred-thousand-dollar loan at seven percent, you repay over seven hundred thousand — more than double the price of the house. The home cost three hundred; the mortgage quietly cost you four hundred thousand more in interest.",
+      "text": "$700,000",
+      "sub": "total repaid on a $300K mortgage at 7%",
+      "icon": "mortgage"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we climb all the levels — renting, saving, buying, building equity, and finally owning it free and clear — and reveal the quiet machine that turns your monthly payment into a six-figure pile of net worth, almost without you noticing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "rent → own → free"
+        },
+        {
+          "name": "chartup",
+          "label": "the equity machine"
+        },
+        {
+          "name": "nestegg",
+          "label": "payment → net worth"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "buying a home is 'owning' it",
+      "memeBottom": "buying a home is slowly BUYING it from the bank, payment by payment",
+      "narration": "Because the day you get the keys, you don't really own your home — the bank owns almost all of it. What follows is a decades-long, quiet handover, where each payment moves another brick of ownership from them, to you."
+    },
+    {
+      "id": "s5",
+      "type": "stage",
+      "narration": "Here's the whole journey. You start renting, owning zero percent. You save for a down payment. You buy, owning just a sliver. You build equity for years. Maybe you refinance or trade up. And finally, you reach the summit: paid off, one hundred percent yours.",
+      "motif": "ownershipstages",
+      "caption": "the home-ownership journey"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "This journey is the default dream: around two in three American households own their home. It's the single biggest source of wealth for the middle class — and for most families, the home is, by far, the largest asset they will ever own.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "~65% own"
+        },
+        {
+          "name": "house",
+          "label": "the biggest asset"
+        },
+        {
+          "name": "nestegg",
+          "label": "middle-class wealth"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "type": "title",
+      "narration": "Let's start at level zero — where everyone begins.",
+      "heading": "Level 0: Renting",
+      "kicker": "0% ownership, 100% flexible"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "Renting is an agreement where a payment is made for the use of a property owned by another. You get a place to live, with total flexibility — but you build zero ownership. Every payment buys you this month, and nothing more.",
+      "sourceId": "wiki-renting"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "We're taught renting is 'throwing money away,' but that's too harsh. You're buying flexibility, zero maintenance costs, and freedom to move. For many people and many seasons of life, renting is genuinely the smarter, cheaper choice. It's not a failure — it's the starting line.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "total flexibility"
+        },
+        {
+          "name": "wrench",
+          "label": "no repair bills"
+        },
+        {
+          "name": "smiley",
+          "label": "not a failure"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "And here's the fair counter-argument. A disciplined renter who invests the difference — the down payment plus the extra costs of owning — can sometimes end up just as wealthy, in stocks instead of a house. Renting isn't losing. It's just a different road to the same destination.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "rent…"
+        },
+        {
+          "name": "chartup",
+          "label": "…invest the difference"
+        },
+        {
+          "name": "scale",
+          "label": "a different path"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "Level one is the hardest gate on the whole journey.",
+      "heading": "Level 1: Saving",
+      "kicker": "the down payment wall"
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "Before you can own anything, you have to clear the down payment wall — often tens of thousands of dollars in cash. This single hurdle is the number-one reason renters stay renters, sometimes for years, slowly stacking savings while prices keep climbing ahead of them.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "tens of thousands"
+        },
+        {
+          "name": "chartup",
+          "label": "prices climb away"
+        },
+        {
+          "name": "warning",
+          "label": "the hardest gate"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "You don't always need twenty percent, though. Some loans let you buy with just three to five percent down — getting you onto the ladder years sooner. The trade-off is PMI, that extra insurance fee, until you build enough equity. Sometimes getting in early is worth the small penalty.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "3-5% down options"
+        },
+        {
+          "name": "percent",
+          "label": "the PMI trade-off"
+        },
+        {
+          "name": "ladder",
+          "label": "get on sooner"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "title",
+      "narration": "Clear that wall, and you reach the stage everyone celebrates — getting the keys.",
+      "heading": "Level 2: Buying",
+      "kicker": "you own… a sliver"
+    },
+    {
+      "id": "s12",
+      "type": "screenshot",
+      "narration": "Now you're in owner-occupancy — where a person owns the home in which they live. It feels like a huge leap. But on day one, after a small down payment, the bank effectively owns eighty or ninety percent of your house. You own a sliver.",
+      "sourceId": "wiki-owner"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "And day one stings twice. On top of the down payment, closing costs eat another two to five percent. Between those fees and a tiny starting equity, if you had to sell in the first couple of years, you could actually lose money. The early days are the most fragile of all.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "closing costs 2-5%"
+        },
+        {
+          "name": "warning",
+          "label": "fragile early on"
+        },
+        {
+          "name": "chartdown",
+          "label": "could sell at a loss"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "And the costs explode overnight. Suddenly you're paying the mortgage, property taxes, insurance, and every repair yourself. The true monthly cost of owning is usually far higher than the rent you left behind. This is the stage where many first-time buyers get a nasty shock.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "mortgage",
+          "label": "mortgage + taxes"
+        },
+        {
+          "name": "wrench",
+          "label": "every repair is yours"
+        },
+        {
+          "name": "warning",
+          "label": "costs more than rent"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "And budget for the silent cost: maintenance. A good rule is one percent of the home's value every year — four thousand dollars on a four-hundred-thousand home — for the roof, the furnace, the thousand small repairs. Owners who quietly skip this steadily fall behind.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "wrench",
+          "label": "budget ~1%/yr"
+        },
+        {
+          "name": "house",
+          "label": "roof, furnace, repairs"
+        },
+        {
+          "name": "warning",
+          "label": "don't skip it"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Now the quiet magic begins — the engine that builds the wealth.",
+      "heading": "Level 3: Building Equity",
+      "kicker": "the slow handover"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "narration": "The wealth you build is home equity — the difference between the property's current market value and the total balances of all loans secured by the home. It's the portion of the house that is genuinely, truly yours.",
+      "sourceId": "wiki-homeequity"
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "And here's the simple formula. Your equity equals your home's value, minus what you still owe. A four-hundred-thousand-dollar home with a two-hundred-fifty-thousand-dollar loan means a hundred and fifty thousand dollars of equity is already yours. Every payment, and every price rise, grows that number.",
+      "motif": "equityformula",
+      "caption": "every payment quietly moves value from the bank's side to yours"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "And equity can go negative. If home prices fall below what you owe, you're 'underwater' — stuck with negative equity, trapped in a house you can't sell without writing a check. It's rare — but 2008 showed it can happen to millions of people all at once.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "prices fall"
+        },
+        {
+          "name": "warning",
+          "label": "negative equity"
+        },
+        {
+          "name": "lockhouse",
+          "label": "trapped, underwater"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "Equity grows through amortization — the process of paying off a debt over time through regular payments. Each month, a bit more of your payment goes to the actual loan, and a bit less to interest. The handover slowly accelerates.",
+      "sourceId": "wiki-amort"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Here's a lever that supercharges the handover: extra principal payments. Throw even a little extra at the loan each month, and because it skips all the future interest on that money, you can knock years off the mortgage and save tens of thousands. Every extra dollar punches far above its weight.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "extra principal"
+        },
+        {
+          "name": "percent",
+          "label": "skips future interest"
+        },
+        {
+          "name": "paidstamp",
+          "label": "years off the loan"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "But that handover starts painfully slow. In year one, almost your entire payment is interest — you barely dent what you owe. By year thirty, it completely flips, and nearly every dollar builds your ownership. The mortgage is designed to pay the bank first, and you last.",
+      "motif": "interestvsprincipal",
+      "caption": "where your payment really goes"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "This front-loaded interest is why selling early feels so disappointing. Sell after five years, and you'll find you've barely dented the loan — most of your payments went straight to the bank as interest. The equity machine only truly rewards those who stay for the long haul.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "sell after 5 yrs"
+        },
+        {
+          "name": "chartdown",
+          "label": "barely dented the loan"
+        },
+        {
+          "name": "warning",
+          "label": "it rewards patience"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "Watch the two forces work together over the years. Your loan balance slowly shrinks as you pay it down. And your home's value tends to rise with the market. The growing gap between those two lines is your equity — quietly ballooning into the biggest asset most families ever own.",
+      "motif": "equitybuilds",
+      "caption": "your equity quietly grows"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And a reality check on appreciation. Over the long run, home prices have risen only around three or four percent a year — roughly keeping pace with inflation, not a lottery. The real magic of a home was never crazy appreciation. It's the leverage, and the forced saving.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "~3-4%/yr"
+        },
+        {
+          "name": "grocerybag",
+          "label": "≈ inflation"
+        },
+        {
+          "name": "scale",
+          "label": "not a lottery"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "And this reveals the secret hiding inside a mortgage: it's a forced savings plan in disguise. Every single payment quietly sweeps a little money out of your pocket and into your net worth. Most homeowners build their entire fortune this way, almost by accident.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "forced savings"
+        },
+        {
+          "name": "house",
+          "label": "hidden in the mortgage"
+        },
+        {
+          "name": "nestegg",
+          "label": "wealth by accident"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "callout",
+      "narration": "The Fed's own data makes the case. The median homeowner has a net worth roughly forty times that of the median renter. Not because owners earn more — but because the mortgage quietly forced them to save, decade after decade, whether they ever meant to or not.",
+      "text": "40×",
+      "sub": "median homeowner net worth vs renter (Fed)",
+      "icon": "nestegg"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Level four is where owners start getting clever with all that equity.",
+      "heading": "Level 4: Optimizing",
+      "kicker": "refinance, trade up, tap it"
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "One key move is refinancing — the replacement of an existing debt obligation with another, under a different term and interest rate. If rates fall after you buy, you can swap your old loan for a cheaper one, and cut your payment.",
+      "sourceId": "wiki-refi"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "But refinancing isn't free. It comes with its own closing costs, so there's a break-even point — the months it takes for the lower payment to repay those fees. Refinance only if you'll stay long enough to come out ahead. Otherwise, you've just paid for the privilege.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "a lower rate"
+        },
+        {
+          "name": "receipt",
+          "label": "but new closing costs"
+        },
+        {
+          "name": "scale",
+          "label": "mind the break-even"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "At this stage, your options multiply. Refinance to a lower rate. Sell and trade up to a bigger home, rolling your equity forward. Or borrow against your equity with a home-equity loan. Your house has quietly become a financial tool, not just a place to live.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "refinance lower"
+        },
+        {
+          "name": "sold",
+          "label": "trade up"
+        },
+        {
+          "name": "vault",
+          "label": "borrow against equity"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "And beware the move-up treadmill. Each time you trade up to a bigger, nicer home, you reset the mortgage clock and swell the payment. Do it again and again, and you can spend your whole life in year one of a new loan — never actually getting closer to owning anything outright.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "sold",
+          "label": "trade up again"
+        },
+        {
+          "name": "mortgage",
+          "label": "reset the clock"
+        },
+        {
+          "name": "warning",
+          "label": "never finish paying"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "But a warning at this level: tapping your equity can be a trap. Borrowing against your home to fund vacations or cars quietly resets your progress, turning years of hard-won ownership back into debt. The equity is real wealth — treat it with respect, not as a piggy bank for toys.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "don't raid it for toys"
+        },
+        {
+          "name": "chartdown",
+          "label": "resets your progress"
+        },
+        {
+          "name": "shield",
+          "label": "treat equity with respect"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "And a hard warning on tapping equity. A home-equity line of credit is cheap and tempting — but your house is the collateral. Borrow against it for the wrong reasons, fall behind, and you can lose the very home you spent decades building. Treat it strictly as a last resort.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "vault",
+          "label": "a HELOC"
+        },
+        {
+          "name": "house",
+          "label": "your home is collateral"
+        },
+        {
+          "name": "warning",
+          "label": "you can lose it"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "And finally — the summit of the entire journey.",
+      "heading": "Level 5: Paid Off",
+      "kicker": "100% yours"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "The final level: the mortgage is gone. After decades of payments, you own one hundred percent of your home, free and clear. And your single biggest monthly bill — that mortgage payment — simply vanishes forever. All that's left is property taxes and upkeep.",
+      "motif": "paidoffmilestone",
+      "caption": "your biggest bill vanishes — just taxes & upkeep remain"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "There's a famous debate right at the summit: pay off the mortgage early, or invest that extra money instead? Mathematically, investing often wins. But emotionally, a paid-off home — total security, no payment, no fear — is a return no spreadsheet can capture. Both answers are genuinely right.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "pay off vs invest"
+        },
+        {
+          "name": "chartup",
+          "label": "math says invest"
+        },
+        {
+          "name": "smiley",
+          "label": "peace says pay off"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "This is a profound kind of security. A paid-off home means you will always have a place to live, almost no matter what happens to your income. It dramatically lowers the cost of your life, which makes retirement vastly easier and your whole existence more resilient.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paidstamp",
+          "label": "100% yours"
+        },
+        {
+          "name": "shield",
+          "label": "always a place to live"
+        },
+        {
+          "name": "hammock",
+          "label": "retirement gets easy"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And late in life, the equity can flow back to you. A reverse mortgage lets older owners tap their home's value for income without selling — turning decades of forced savings back into usable cash. It's complex and has real pitfalls, but it quietly closes the circle of the whole journey.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "tap it in old age"
+        },
+        {
+          "name": "house",
+          "label": "without selling"
+        },
+        {
+          "name": "warning",
+          "label": "complex — tread carefully"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "So let's settle the eternal question this whole journey raises.",
+      "heading": "Rent or Own?",
+      "kicker": "the real comparison"
+    },
+    {
+      "id": "s29",
+      "type": "stage",
+      "narration": "Here's thirty years, side by side. The renter pays every month and ends with zero — they bought flexibility. The owner pays a similar amount, rides the ups and downs, and ends with a fully paid-off house worth hundreds of thousands. Same monthly cost, wildly different ending.",
+      "motif": "rentvsownjourney",
+      "caption": "same monthly cost, wildly different ending"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And here's a subtle edge owning has: leverage. You control a four-hundred-thousand-dollar asset with maybe eighty thousand down. So if the home rises even modestly, the gain on your small down payment is enormous. That built-in leverage is a big part of why owning builds wealth so effectively.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "control $400K…"
+        },
+        {
+          "name": "piggybank",
+          "label": "…with $80K down"
+        },
+        {
+          "name": "chartup",
+          "label": "leveraged gains"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "But owning only wins if you stay put long enough. The huge up-front costs of buying and selling mean you often need to hold a home for at least five years just to break even. For the frequent mover, renting genuinely can be the richer choice.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "hold 5+ years"
+        },
+        {
+          "name": "scale",
+          "label": "or renting wins"
+        },
+        {
+          "name": "movingbox",
+          "label": "movers: rent"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "Remember the friction, too. Buying and selling a home can burn eight to ten percent of its value in agent fees, taxes, and closing costs. That's exactly why the journey rewards staying put. Every move resets your progress and skims a real chunk off the top.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "~8-10% to buy & sell"
+        },
+        {
+          "name": "clock",
+          "label": "stay put to win"
+        },
+        {
+          "name": "scissors",
+          "label": "moves skim the top"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Your equity over 30 years ($K)",
+      "unit": "$K",
+      "narration": "Here's the equity journey in one chart, on a four-hundred-thousand-dollar home. Year one, maybe twenty thousand. Year ten, around a hundred and twenty. Year twenty, nearly three hundred. And by year thirty, the full value — a paid-off house, every dollar of it yours.",
+      "data": [
+        {
+          "label": "year 1",
+          "value": 20
+        },
+        {
+          "label": "year 10",
+          "value": 120
+        },
+        {
+          "label": "year 20",
+          "value": 290
+        },
+        {
+          "label": "year 30",
+          "value": 480
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s32",
+      "type": "title",
+      "narration": "So how do you actually move up these levels wisely?",
+      "heading": "The Playbook",
+      "kicker": "climb it smart"
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "First, don't rush off the renting level. Buy only when you're financially ready and plan to stay put. A home bought too early, or stretched too thin, becomes an anchor, not an asset. There is no prize for owning before you're genuinely ready.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "don't rush"
+        },
+        {
+          "name": "calendar",
+          "label": "buy when ready & staying"
+        },
+        {
+          "name": "shield",
+          "label": "no prize for rushing"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "And never climb a level before you're ready. Buying at the very top of your budget makes you 'house poor' — a beautiful home, and no money left for an actual life. The smart move is to buy below your max, leaving room to live, and to keep building other wealth alongside it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "house",
+          "label": "don't max out"
+        },
+        {
+          "name": "ballchain",
+          "label": "'house poor'"
+        },
+        {
+          "name": "smiley",
+          "label": "buy below your means"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Second, once you own, let the equity engine run. Make every payment, let amortization and appreciation work their slow magic, and resist the urge to constantly tap your equity. Patience, here, quietly compounds into one of the largest assets you'll ever hold.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "let equity build"
+        },
+        {
+          "name": "scissors",
+          "label": "don't raid it"
+        },
+        {
+          "name": "nestegg",
+          "label": "patience compounds"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Third, consider racing to the summit. Making small extra payments toward the principal can knock years off your mortgage and save a fortune in interest. For many, the deep peace of a paid-off home is worth more than any extra investment return.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "percent",
+          "label": "pay extra principal"
+        },
+        {
+          "name": "scissors",
+          "label": "years off the loan"
+        },
+        {
+          "name": "paidstamp",
+          "label": "race to paid-off"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "So the pay-it-off choice really comes down to who you are. If the debt keeps you up at night, race to burn it and buy your own peace. If you're a disciplined investor, that money may grow more elsewhere. There's no wrong answer here — only the one that lets you sleep.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "paidstamp",
+          "label": "burn the mortgage?"
+        },
+        {
+          "name": "chartup",
+          "label": "or invest it?"
+        },
+        {
+          "name": "smiley",
+          "label": "pick what lets you sleep"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Because the real lesson of this journey is that a home is secretly two things at once. It's a place to live — and a decades-long machine that quietly converts your monthly housing cost into lasting net worth. Rent only ever buys the first. Ownership, over time, buys both.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "sofa",
+          "label": "a place to live"
+        },
+        {
+          "name": "moneytree",
+          "label": "+ a wealth machine"
+        },
+        {
+          "name": "scale",
+          "label": "ownership buys both"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "So wherever you are on this ladder tonight — renting, scrimping for a down payment, newly keyed-in, or watching your equity climb — you now know exactly what stage you're in, and what the next one quietly builds toward. That full-value summit is closer than it looks.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "keys",
+          "label": "know your stage"
+        },
+        {
+          "name": "chartup",
+          "label": "what's next"
+        },
+        {
+          "name": "confetti",
+          "label": "the summit awaits"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "If this mapped out the whole home-ownership journey for you, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "house",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-renting",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "an agreement where a payment is made for the use"
+    },
+    {
+      "id": "wiki-owner",
+      "name": "Owner-occupancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Owner-occupancy",
+      "quote": "owns the home in which they live"
+    },
+    {
+      "id": "wiki-homeequity",
+      "name": "Home equity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_equity",
+      "quote": "the difference between the property's current market value"
+    },
+    {
+      "id": "wiki-amort",
+      "name": "Amortization schedule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amortization_schedule",
+      "quote": "over time through regular payments"
+    },
+    {
+      "id": "wiki-refi",
+      "name": "Refinancing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Refinancing",
+      "quote": "the replacement of an existing debt obligation"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Home Ownership: From First Rent to Paid-Off",
+    "alts": [
+      "The 6 Stages of Owning a Home (From Renting to Mortgage-Free)",
+      "How a Mortgage Quietly Turns Your Rent Into a Fortune"
+    ],
+    "hook": "Home ownership isn't one thing — it's a journey through distinct stages, and most people never see the map. From your first rent check to the day you burn the mortgage, we walk every level: renting (0% ownership), saving the brutal down payment, buying (where the bank owns 80–90% on day one), building equity (the quiet wealth machine), refinancing and trading up, and finally paid-off (100% yours). We reveal how shockingly little of an early mortgage payment is really yours, the amortization curve that flips interest to principal, why a mortgage is forced savings in disguise, and the real rent-vs-own math. Fully cited.",
+    "bullets": [
+      "The 6 stages: rent → save → buy → build equity → optimize → paid off",
+      "Why your first mortgage payment is almost all interest",
+      "Home equity = value − what you owe (your real wealth)",
+      "The amortization curve: interest early, principal late",
+      "Why a mortgage is 'forced savings' in disguise",
+      "Rent vs own: the real 30-year comparison"
+    ],
+    "tags": [
+      "home ownership",
+      "stages of buying a home",
+      "home equity explained",
+      "mortgage amortization",
+      "rent vs buy",
+      "building home equity",
+      "paying off mortgage",
+      "first time home buyer",
+      "refinancing explained",
+      "forced savings",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#homeownership",
+      "#realestate",
+      "#mortgage",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "RENT → PAID-OFF",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "$300 of $2,000",
+      "napkinSub": "is really yours (year 1)",
+      "deco": "house"
+    },
+    "chapters": [
+      [
+        "where everyone begins",
+        "Renting"
+      ],
+      [
+        "the hardest gate",
+        "Saving"
+      ],
+      [
+        "getting the keys",
+        "Buying"
+      ],
+      [
+        "the quiet magic begins",
+        "Building equity"
+      ],
+      [
+        "getting clever with all that equity",
+        "Optimizing"
+      ],
+      [
+        "the summit of the entire journey",
+        "Paid off"
+      ],
+      [
+        "the eternal question",
+        "Rent or own?"
+      ],
+      [
+        "move up these levels wisely",
+        "The playbook"
+      ]
+    ]
+  }
+}

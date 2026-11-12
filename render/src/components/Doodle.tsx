@@ -127,6 +127,8 @@ export type DoodleName =
   | "reportcard" | "trafficlight"
   // EP068 (every level of inheritance) additions:
   | "gift" | "will"
+  // EP069 (every level of home ownership) additions:
+  | "paidstamp" | "confetti"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2139,6 +2141,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={34} y1={50} x2={66} y2={50} strokeWidth={1.6} />
           <RLine x1={34} y1={58} x2={58} y2={58} strokeWidth={1.6} />
           <RCircle cx={60} cy={72} d={16} fill={RED} strokeWidth={1.6} />
+        </>
+      );
+    case "paidstamp":
+      // A 'PAID' stamp — mortgage paid off.
+      return (
+        <>
+          <RPath d="M22 38 L78 32 L80 60 L24 66 Z" fill="none" stroke={GREEN} strokeWidth={4} />
+          <text x={50} y={56} fontSize={20} fontWeight={900} fill={GREEN} textAnchor="middle" fontFamily="Georgia, serif" transform="rotate(-6 50 50)">PAID</text>
+        </>
+      );
+    case "confetti":
+      // Celebration confetti.
+      return (
+        <>
+          <RRect x={20} y={24} w={10} h={10} fill={RED} strokeWidth={1.2} />
+          <RRect x={46} y={16} w={10} h={10} fill={GOLD} strokeWidth={1.2} />
+          <RRect x={72} y={28} w={10} h={10} fill={GREEN} strokeWidth={1.2} />
+          <RCircle cx={34} cy={54} d={9} fill={GOLD} strokeWidth={1.2} />
+          <RCircle cx={64} cy={58} d={9} fill={RED} strokeWidth={1.2} />
+          <RRect x={30} y={74} w={10} h={10} fill={GREEN} strokeWidth={1.2} />
+          <RRect x={60} y={78} w={10} h={10} fill={PINK} strokeWidth={1.2} />
         </>
       );
   }

@@ -5223,6 +5223,94 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a cash inheritance is tax-free; an inherited IRA is not</text>
       </svg>
     );
+  } else if (m === "ownershipstages") {
+    // The stages from renting to paid-off.
+    const stages: [string, string][] = [["rent", "0% yours"], ["save", "the down payment"], ["buy", "a sliver yours"], ["build", "equity grows"], ["refi / trade up", "optimize"], ["paid off", "100% yours"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {stages.map(([lab, sub], i) => {
+          const w = 150 + i * 128; const y = 90 + i * 66;
+          const op = interpolate(climb, [i * 0.13, i * 0.13 + 0.2], [0, 1], clampBoth);
+          return <g key={i} opacity={op}><rect x={VW / 2 - w / 2} y={y} width={w} height={54} rx={7} fill={[parch, "#e8d7bf", "#cfe3d4", "#9cc47f", gold, green][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 45} y={y + 34} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{lab}</text><text x={VW / 2 + 60} y={y + 33} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{sub}</text></g>;
+        })}
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the home-ownership journey</text>
+      </svg>
+    );
+  } else if (m === "equitybuilds") {
+    // Equity grows as the loan shrinks and value rises.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 440, yTop = 120;
+    const loan = (t: number) => yTop + (y0 - yTop) * t;
+    const value = (t: number) => (y0 - 40) - 120 * t;
+    const seg = (f: (t: number) => number) => Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your equity quietly grows</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg(value)} fill="none" stroke={green} strokeWidth={5} />
+        <path d={seg(loan)} fill="none" stroke={red} strokeWidth={5} />
+        <text x={x1 - 10} y={value(1) - 12} fontSize={15} fontWeight={800} fill={green} textAnchor="end" fontFamily={sans}>home value ↑</text>
+        <text x={x1 - 10} y={loan(1) + 24} fontSize={15} fontWeight={800} fill={red} textAnchor="end" fontFamily={sans}>loan owed ↓</text>
+        <text x={620} y={300} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">= your equity</text>
+        <text x={VW / 2} y={y0 + 26} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>years →</text>
+      </svg>
+    );
+  } else if (m === "interestvsprincipal") {
+    // The amortization curve flipping interest→principal.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const bars = 10;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where your payment really goes</text>
+        <RLine x1={90} y1={420} x2={VW - 60} y2={420} stroke={ink} strokeWidth={3} />
+        {Array.from({ length: bars }).map((_, i) => { const on = draw > i / bars; const x = 120 + i * 75; const intFrac = 1 - i / (bars - 1); const h = 220; return <g key={i} opacity={on ? 1 : 0.12}><rect x={x} y={420 - h * intFrac} width={56} height={h * intFrac} fill={red} stroke={ink} strokeWidth={2} /><rect x={x} y={420 - h} width={56} height={h * (1 - intFrac)} fill={green} stroke={ink} strokeWidth={2} /></g>; })}
+        <text x={160} y={448} fontSize={13} fontWeight={800} fill={red} fontFamily={sans}>year 1</text>
+        <text x={800} y={448} fontSize={13} fontWeight={800} fill={green} fontFamily={sans}>year 30</text>
+        <g><rect x={360} y={452} width={18} height={18} fill={red} /><text x={384} y={466} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>interest</text><rect x={500} y={452} width={18} height={18} fill={green} /><text x={524} y={466} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>principal (yours)</text></g>
+      </svg>
+    );
+  } else if (m === "rentvsownjourney") {
+    // Renter's $0 equity vs owner's growing equity over time.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 430;
+    const own = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${y0 - 280 * t * t}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">30 years of rent vs. owning</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <line x1={x0} y1={y0} x2={x0 + (x1 - x0) * draw} y2={y0} stroke={red} strokeWidth={6} />
+        <path d={own} fill="none" stroke={green} strokeWidth={6} />
+        <text x={x1 - 10} y={y0 - 14} fontSize={15} fontWeight={800} fill={red} textAnchor="end" fontFamily={sans}>renter: $0 equity</text>
+        <text x={x1 - 10} y={y0 - 280 * draw * draw - 14} fontSize={15} fontWeight={800} fill={green} textAnchor="end" fontFamily={sans}>owner: a paid-off house</text>
+        <text x={VW / 2} y={y0 + 28} fontSize={15} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>same monthly cost, wildly different ending</text>
+      </svg>
+    );
+  } else if (m === "paidoffmilestone") {
+    // Mortgage-free: housing cost collapses.
+    const burn = interpolate(frame, [fps * 0.6, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the day the mortgage dies</text>
+        <g transform="translate(300 300)"><rect x={-90} y={-60} width={180} height={120} rx={10} fill={green} stroke={ink} strokeWidth={6} /><text y={-8} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>100%</text><text y={18} fontSize={16} fontWeight={800} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>yours</text></g>
+        <g transform="translate(680 300)"><rect x={-90} y={60 - 120 * (1 - burn)} width={180} height={120 * (1 - burn)} rx={6} fill={red} stroke={ink} strokeWidth={4} opacity={1 - burn} /><text y={90} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>monthly payment</text>{burn > 0.8 && <text y={0} fontSize={20} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">$0</text>}</g>
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>your biggest bill vanishes — just taxes & upkeep remain</text>
+      </svg>
+    );
+  } else if (m === "equityformula") {
+    // Equity = market value − loans owed.
+    const pop = spring({ frame, fps, delay: fps * 1.0, config: { damping: 10 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={120} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what 'equity' actually is</text>
+        <g transform="translate(250 290)"><rect x={-110} y={-45} width={220} height={90} rx={10} fill={green} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>home's value</text><text y={18} fontSize={16} fontWeight={900} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>$400K</text></g>
+        <text x={440} y={300} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">−</text>
+        <g transform="translate(590 290)"><rect x={-100} y={-45} width={200} height={90} rx={10} fill={red} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>loan owed</text><text y={18} fontSize={16} fontWeight={900} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>$250K</text></g>
+        <text x={735} y={300} fontSize={34} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">=</text>
+        <g transform={`translate(840 290) scale(${Math.min(1, pop)})`}><circle r={56} fill={gold} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>yours</text><text y={20} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$150K</text></g>
+        <text x={VW / 2} y={430} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>every payment quietly moves value from the bank's side to yours</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
