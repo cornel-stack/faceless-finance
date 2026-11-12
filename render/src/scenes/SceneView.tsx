@@ -5492,6 +5492,73 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>max it out from 25, and you're a millionaire by your 40s</text>
       </svg>
     );
+  } else if (m === "sideincomeladder") {
+    // Side-income tiers $500 → $10K/mo and what each unlocks.
+    const tiers: [string, string][] = [["$500", "a bill covered"], ["$1K", "groceries + breathing room"], ["$2.5K", "rent covered"], ["$5K", "a second salary"], ["$10K", "quit-your-job money"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => { const w = 170 + i * 135; const y = 100 + i * 74; return <g key={i} opacity={interpolate(climb, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={VW / 2 - w / 2} y={y} width={w} height={58} rx={7} fill={[parch, "#e8d7bf", gold, "#9cc47f", green][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 37} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}/mo</text><text x={VW / 2 + 60} y={y + 36} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the side-income ladder</text>
+      </svg>
+    );
+  } else if (m === "activevsscalable") {
+    // The spectrum: trade time for money vs build an asset.
+    const slide = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the side-income spectrum</text>
+        <defs><linearGradient id="spec74" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor={red} /><stop offset="1" stopColor={green} /></linearGradient></defs>
+        <rect x={120} y={200} width={740} height={34} rx={17} fill="url(#spec74)" stroke={ink} strokeWidth={4} />
+        <g transform="translate(220 320)" opacity={interpolate(slide, [0, 0.5], [0, 1], clampBoth)}><rect x={-120} y={-44} width={240} height={88} rx={10} fill={red} stroke={ink} strokeWidth={4} /><text y={-10} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>ACTIVE</text><text y={14} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>trade time for money</text><text y={32} fontSize={11} fontWeight={700} fill="#fff" textAnchor="middle" fontFamily={sans}>gig · freelance · services</text></g>
+        <g transform="translate(760 320)" opacity={interpolate(slide, [0.4, 0.9], [0, 1], clampBoth)}><rect x={-120} y={-44} width={240} height={88} rx={10} fill={green} stroke={ink} strokeWidth={4} /><text y={-10} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>SCALABLE</text><text y={14} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>build an asset once</text><text y={32} fontSize={11} fontWeight={700} fill="#fff" textAnchor="middle" fontFamily={sans}>content · products · apps</text></g>
+        <text x={VW / 2} y={460} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the goal: slide from selling hours to building assets</text>
+      </svg>
+    );
+  } else if (m === "hoursvsincome") {
+    // Active caps out with hours; scalable keeps rising.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 130, x1 = 870, y0 = 430, yTop = 120;
+    const flat = (t: number) => y0 - (y0 - 250) * Math.min(1, t * 1.6);
+    const rise = (t: number) => y0 - (y0 - yTop) * (t * t);
+    const seg = (f: (t: number) => number) => Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">income vs the hours you put in</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <text x={VW / 2} y={y0 + 28} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>hours worked →</text>
+        <path d={seg(flat)} fill="none" stroke={red} strokeWidth={6} />
+        <path d={seg(rise)} fill="none" stroke={green} strokeWidth={6} />
+        <text x={x1 - 60} y={255} fontSize={13} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>active: caps out</text>
+        <text x={x1 - 90} y={yTop + 20} fontSize={13} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>scalable: keeps climbing</text>
+      </svg>
+    );
+  } else if (m === "sidetaxbite") {
+    // Self-employment tax takes a slice of 1099 income.
+    const cut = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the side-hustle tax bite</text>
+        <g transform="translate(250 300)"><circle r={92} fill={gold} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>you earn</text><text y={20} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$5,000</text></g>
+        <path d="M365 300 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(540 230)" opacity={cut}><rect x={-70} y={-26} width={150} height={52} rx={8} fill={red} stroke={ink} strokeWidth={4} /><text y={-2} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>self-employ. tax</text><text y={16} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>~15.3%</text></g>
+        <g transform="translate(540 320)" opacity={cut}><rect x={-70} y={-26} width={150} height={52} rx={8} fill="#d98b5f" stroke={ink} strokeWidth={4} /><text y={-2} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>income tax</text><text y={16} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>your bracket</text></g>
+        <g transform="translate(800 300)"><circle r={92 - 30 * cut} fill={green} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>you keep</text><text y={18} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">less</text></g>
+        <text x={VW / 2} y={470} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>no employer withholds for you — set aside ~25-30% yourself</text>
+      </svg>
+    );
+  } else if (m === "hustletobusiness") {
+    // When a side hustle becomes a real business.
+    const stages: [string, string][] = [["side hustle", "a few hours, pocket money"], ["side business", "systems, repeat clients"], ["real business", "runs without you"]];
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">when a hustle becomes a business</text>
+        {stages.map(([t, d], i) => { const x = 180 + i * 300; const op = interpolate(reveal, [i * 0.28, i * 0.28 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 115} y={220} width={230} height={100} rx={12} fill={[parch, gold, green][i]} stroke={ink} strokeWidth={4} /><text x={x} y={258} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={288} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{d}</text>{i < 2 ? <path d={`M${x + 125} 270 l50 0 m0 0 l-14 -9 m14 9 l-14 9`} stroke={ink} strokeWidth={4} fill="none" strokeLinecap="round" /> : null}</g>; })}
+        <text x={VW / 2} y={400} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the line you cross: it earns while you sleep</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

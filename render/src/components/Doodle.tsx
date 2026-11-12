@@ -137,6 +137,7 @@ export type DoodleName =
   | "fireextinguisher" | "pillow"
   // EP073 (every level of 401k balance) additions:
   | "jar" | "medal"
+  | "camera" | "shoppingcart"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2250,6 +2251,27 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M62 18 L64 48 L54 48 Z" fill={ARMY} strokeWidth={1.6} />
           <RCircle cx={50} cy={64} d={34} fill={GOLD} strokeWidth={SW} />
           <text x={50} y={70} fontSize={16} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">★</text>
+        </>
+      );
+    case "camera":
+      // A camera — content creation.
+      return (
+        <>
+          <RRect x={20} y={36} w={60} h={40} fill={TAN} strokeWidth={SW} />
+          <RRect x={36} y={28} w={20} h={10} fill={INK} strokeWidth={1.6} />
+          <RCircle cx={50} cy={56} d={22} fill={PARCH} strokeWidth={SW} />
+          <RCircle cx={50} cy={56} d={10} fill={INK} strokeWidth={1.6} />
+          <RCircle cx={70} cy={44} d={5} fill={RED} strokeWidth={1.2} />
+        </>
+      );
+    case "shoppingcart":
+      // A shopping cart — e-commerce.
+      return (
+        <>
+          <RPath d="M20 28 L30 28 L40 64 L74 64" fill="none" strokeWidth={SW} />
+          <RPath d="M32 36 L80 36 L74 58 L40 58 Z" fill={GOLD} strokeWidth={SW} />
+          <RCircle cx={44} cy={74} d={8} fill={INK} strokeWidth={1.6} />
+          <RCircle cx={70} cy={74} d={8} fill={INK} strokeWidth={1.6} />
         </>
       );
   }
