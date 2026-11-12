@@ -6813,6 +6813,95 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={base + 48} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>in Hawaii you work most of the week just for the basics</text>
       </svg>
     );
+  } else if (m === "carcostbystate") {
+    // True 10-year cost to own a car, by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Maine", 68, green],
+      ["Ohio", 74, "#9cc47f"],
+      ["Texas", 82, gold],
+      ["Florida", 95, "#d98b5f"],
+      ["California", 102, "#c0583a"],
+      ["Michigan", 110, red],
+    ];
+    const x0 = 250, xMax = 850, maxV = 110;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">true 10-year cost to own a car ($K)</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same car — a $40K+ gap over the decade</text>
+      </svg>
+    );
+  } else if (m === "insurancebystate") {
+    // Annual car insurance premium, by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Maine", 900, green],
+      ["Ohio", 1100, "#9cc47f"],
+      ["Texas", 1600, gold],
+      ["California", 2200, "#d98b5f"],
+      ["Florida", 2800, "#c0583a"],
+      ["Michigan", 3200, red],
+    ];
+    const x0 = 250, xMax = 850, maxV = 3200;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">average car insurance, per year</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={14} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${(v as number).toLocaleString()}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same driver, triple the premium — set by your state</text>
+      </svg>
+    );
+  } else if (m === "tenyearstack") {
+    // Stacked breakdown of the ~$100K 10-year cost of a car.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const parts: [string, number, string][] = [
+      ["depreciation", 34, red],
+      ["fuel", 20, "#d98b5f"],
+      ["insurance", 18, gold],
+      ["maintenance", 14, "#9cc47f"],
+      ["taxes + fees", 8, blue],
+      ["interest", 6, tan],
+    ];
+    const barH = 330; const x = 360; let acc = 0;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={52} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where the ~$100K over 10 years goes</text>
+        <g>
+          {parts.map(([lab, pct, col], i) => {
+            const h = barH * (pct / 100); const y = 86 + barH * (acc / 100) * grow;
+            const hh = h * grow; acc += pct;
+            const op = interpolate(grow, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+            return (
+              <g key={i} opacity={op}>
+                <rect x={x - 90} y={y} width={180} height={hh} fill={col as string} stroke={ink} strokeWidth={3} />
+                <text x={x + 110} y={y + hh / 2 + 5} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>{lab} · {pct}%</text>
+              </g>
+            );
+          })}
+        </g>
+        <text x={x} y={448} fontSize={14} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the sticker is just one block</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

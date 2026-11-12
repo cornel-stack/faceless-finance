@@ -3,15 +3,15 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "Just existing for one week — a tank of gas, a cart of groceries, and seven nights under a roof — costs more than twice as much in Hawaii as it does in Mississippi. Same tank, same food, same roof. Today we rank the true weekly price of a normal life across all fifty states, and expose what's really driving the gap.",
+    "narration": "That thirty-thousand-dollar car in the driveway? Over ten years, it doesn't cost you thirty thousand. It costs closer to a hundred thousand — and how close depends enormously on which state you park it in. Same car, same decade, but the true bill can swing by forty thousand dollars from one state to the next. Today we rank what a car really costs to own over ten years, state by state.",
     "props": [
       {
-        "name": "gaspump",
-        "label": "gas + groceries + rent"
+        "name": "car",
+        "label": "$30K sticker"
       },
       {
-        "name": "basket",
-        "label": "2× HI vs MS"
+        "name": "receipt",
+        "label": "~$100K over 10 years"
       },
       {
         "name": "scale",
@@ -22,28 +22,28 @@
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number nobody adds up. In the priciest states, the bare weekly cost of gas, groceries, and your share of rent runs close to nine hundred dollars — before you've done anything fun. In the cheapest, it's under four hundred. That's the invisible meter running on your life, and it reads wildly differently depending on your zip code.",
-    "text": "$880 vs $390",
-    "sub": "weekly gas + groceries + rent: priciest vs cheapest state",
-    "icon": "basket"
+    "narration": "Here's the number that reframes car buying forever. The sticker price is maybe a third of the real cost. Add a decade of insurance, gas, repairs, registration, and the brutal hit of depreciation, and a typical new car quietly costs around a hundred thousand dollars to own for ten years. The price on the window is just the down payment on the truth.",
+    "text": "$100,000",
+    "sub": "true 10-year cost of a $30K car",
+    "icon": "car"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we add up the weekly running cost of simply being alive in America. We'll rank the states, break down what drives the gap between them, reveal how it looks against local wages, and pinpoint the cheapest and most expensive places to cover the basics. Because it's not the big purchases that quietly drain you — it's the weekly ones, repeated fifty-two times a year.",
+    "narration": "So today we add up the real ten-year cost of a car, rank the states from cheapest to most brutal, expose the hidden expenses that dwarf the sticker price, show why insurance and gas make some states twice as costly as others, and reveal how to slash the whole bill. Because the car isn't the purchase. The decade of owning it is.",
     "props": [
       {
         "name": "scale",
         "label": "rank the states"
       },
       {
-        "name": "receipt",
-        "label": "what drives the gap"
+        "name": "gaspump",
+        "label": "hidden costs exposed"
       },
       {
-        "name": "calendar",
-        "label": "×52 a year"
+        "name": "moneybag",
+        "label": "how to slash it"
       }
     ]
   },
@@ -52,684 +52,672 @@
     "type": "image",
     "src": "img/memes/twobuttons.jpg",
     "meme": "Two Buttons",
-    "memeTop": "chase a higher salary",
-    "memeBottom": "move where a week of life costs half as much",
-    "narration": "Because a raise you hand straight back to higher gas, pricier groceries, and steeper rent isn't a raise at all. Before we rank the states, let's agree on what goes in the weekly basket."
+    "memeTop": "buy the car you want",
+    "memeBottom": "buy the car you can afford to own for 10 years",
+    "narration": "Because almost everyone budgets for the purchase and forgets the ownership — the part that actually drains the bank account. Before we rank the states, let's define what a car truly costs."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what a week of ordinary life actually includes.",
-    "heading": "The Weekly Basket",
-    "kicker": "gas, groceries, rent"
+    "narration": "First, the real price of owning a car.",
+    "heading": "The True Cost",
+    "kicker": "sticker is just the start"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-food",
-    "narration": "Start with food. Food prices track the average price level for food across a region, and they swing a lot by state — driven by distance from farms, local taxes, and shipping. An identical cart of groceries can cost thirty or forty percent more in one state than another, and you refill that cart every single week."
+    "sourceId": "wiki-tco",
+    "narration": "The concept is total cost of ownership, and its core insight is blunt: ownership costs are significantly greater than the cost of purchasing or acquiring a product. A car is the perfect example. The purchase is the loud, obvious number — but it's quietly outweighed by years of expenses that arrive long after you drive off the lot."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And groceries sneak up on people because the price is invisible until checkout. A few extra dollars on milk, eggs, bread, and meat feels like nothing in the moment. But a family refills that cart week after week, so a thirty-percent grocery gap between states quietly becomes thousands of dollars a year — paid in small, forgettable increments.",
+    "narration": "And this is exactly why car ads only ever show you one number. The monthly payment, or the sticker, is designed to be the only figure you think about. The dealership has no incentive to mention the decade of insurance, fuel, and repairs waiting behind it. Total cost of ownership is the number they hope you never calculate.",
     "props": [
       {
-        "name": "basket",
-        "label": "invisible until checkout"
+        "name": "car",
+        "label": "ads show one number"
       },
       {
-        "name": "calendar",
-        "label": "refilled every week"
+        "name": "receipt",
+        "label": "the decade stays hidden"
       },
       {
         "name": "warning",
-        "label": "thousands a year"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And food is the weekly cost you can't pause. You can delay a trip or skip a purchase, but everyone eats every week, at whatever the local store charges. That makes groceries the most relentless line in the basket — small per trip, unavoidable, and quietly different in every state you might call home.",
-    "props": [
-      {
-        "name": "basket",
-        "label": "you can't pause eating"
-      },
-      {
-        "name": "calendar",
-        "label": "every week, no exceptions"
-      },
-      {
-        "name": "scale",
-        "label": "different in every state"
+        "label": "the number they hide"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-gas",
-    "narration": "Then gas. The price paid by consumers largely reflects pricing policy — and in the US, that means state taxes and rules. Two drivers filling identical tanks can pay dollars apart per gallon depending only on which state line they're on. Multiply that by a weekly commute, and the gap compounds fast."
+    "sourceId": "wiki-depr",
+    "narration": "And the biggest hidden cost is depreciation — an actual reduction in the fair value of an asset over time. A new car can lose twenty percent of its value the moment you drive it home, and roughly sixty percent over five years. That lost value is real money, gone, even if you never spend another cent on the car."
   },
   {
     "id": "s51",
     "type": "character",
     "pose": "explain",
-    "narration": "And gas quietly shapes more than your tank — it taxes your whole week. In sprawling, car-dependent states, a long daily commute multiplies every cent of that gas-price gap. Two workers with identical cars can spend hundreds of dollars a year apart, just because one lives where the pump, and the drive, cost more.",
+    "narration": "And depreciation is the cost people understand the least because you never write a check for it. There's no monthly depreciation bill — it just quietly happens in the background, showing up only the day you sell or trade in for far less than you hoped. It's the biggest expense of owning a car, and it's completely invisible until it's too late.",
     "props": [
       {
-        "name": "gaspump",
-        "label": "gas taxes the whole week"
+        "name": "chartdown",
+        "label": "no check to write"
       },
       {
         "name": "car",
-        "label": "long commutes multiply it"
+        "label": "hits you at resale"
       },
       {
         "name": "warning",
-        "label": "hundreds a year apart"
+        "label": "invisible until too late"
       }
     ]
   },
   {
     "id": "s8",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the giant in the basket is rent — your weekly share of a roof. Spread a monthly rent across the weeks and it dwarfs gas and groceries combined. So while people obsess over the price of eggs or a gallon of gas, it's the housing slice that truly decides whether a state is cheap or brutal to live in week to week.",
-    "props": [
-      {
-        "name": "house",
-        "label": "rent is the giant"
-      },
-      {
-        "name": "gaspump",
-        "label": "dwarfs gas + food"
-      },
-      {
-        "name": "scale",
-        "label": "housing decides it"
-      }
-    ]
+    "type": "stage",
+    "motif": "depreciationcliff",
+    "caption": "the value falls off a cliff",
+    "narration": "Here's that depreciation cliff. The steepest drop happens in the first few years, which is why a car is worth so much less the instant it's used. For the buyer of a brand-new car, this invisible loss is usually the single largest line item of the entire ten years — bigger than gas, bigger than insurance, bigger than repairs."
   },
   {
     "id": "s42",
     "type": "callout",
-    "narration": "Put rent's dominance in perspective. In most states, your weekly share of rent is bigger than gas and groceries combined — often two or three times over. So while the news obsesses over gas prices, the real driver of whether a state is affordable is sitting quietly in your lease.",
-    "text": "rent > gas + food",
-    "sub": "your weekly rent share dwarfs the rest",
-    "icon": "house"
+    "narration": "Put depreciation in dollars. A thirty-thousand-dollar car is often worth only about twelve thousand after five years. That's eighteen thousand dollars of value quietly evaporated — more than most people spend on gas and insurance combined in that time. And you feel none of it until the day you try to sell.",
+    "text": "−60%",
+    "sub": "a new car's value lost in ~5 years",
+    "icon": "chartdown"
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's add it up and rank every state.",
-    "heading": "The Ranking",
-    "kicker": "a week of life, by state"
+    "narration": "So let's stack up every dollar a car demands.",
+    "heading": "The Full Stack",
+    "kicker": "where $100K goes"
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And here's why the stack matters more than the sticker. Two people can buy the exact same car, but the one who financed it for seven years, insures it in a pricey state, and trades it in after three pays dramatically more than the one who bought used, insured cheaply, and kept it a decade. Same car, wildly different ten-year bills.",
+    "props": [
+      {
+        "name": "car",
+        "label": "same car, different owners"
+      },
+      {
+        "name": "receipt",
+        "label": "the stack decides it"
+      },
+      {
+        "name": "scale",
+        "label": "wildly different bills"
+      }
+    ]
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "weeklybasketbars",
-    "caption": "weekly gas + groceries + rent, by state",
-    "narration": "Here's the weekly damage. Hawaii tops the list near nine hundred dollars a week just for the basics — island shipping makes everything dearer. California and New York follow close behind. The affordable middle — Texas, Ohio — sits under five hundred. And states like Mississippi anchor the bottom near three hundred ninety. Same life, more than double the weekly price."
-  },
-  {
-    "id": "s53",
-    "type": "callout",
-    "narration": "Here's the island penalty in one line. Because nearly everything in Hawaii arrives by ship or plane, groceries, gas, and rent all carry a shipping premium stacked on top. It's the clearest example of a simple rule: the harder it is to get goods to a place, the more a normal week costs to live there.",
-    "text": "+shipping",
-    "sub": "why island and remote states cost the most",
-    "icon": "cargoship"
-  },
-  {
-    "id": "s11",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Weekly cost of the basics ($)",
-    "unit": "$",
-    "narration": "Put the numbers side by side. Mississippi around three hundred ninety a week, Ohio four hundred thirty, Texas four seventy, Florida five sixty, California seven eighty, and Hawaii near eight eighty. The gap between the top and bottom is almost five hundred dollars — every single week, for the exact same tank, cart, and roof.",
-    "data": [
-      {
-        "label": "Mississippi",
-        "value": 390
-      },
-      {
-        "label": "Ohio",
-        "value": 430
-      },
-      {
-        "label": "Texas",
-        "value": 470
-      },
-      {
-        "label": "Florida",
-        "value": 560
-      },
-      {
-        "label": "California",
-        "value": 780
-      },
-      {
-        "label": "Hawaii",
-        "value": 880
-      }
-    ],
-    "highlight": 5
+    "motif": "tenyearstack",
+    "caption": "the real 10-year cost, broken down",
+    "narration": "Here's where the hundred thousand goes. Depreciation is the biggest slice. Then fuel, over a decade of driving. Then insurance, ten years of premiums. Then maintenance and repairs, climbing as the car ages. Then taxes, registration, and financing interest. The purchase price you obsessed over is just one block in a much taller tower."
   },
   {
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice the giant middle of the country. A huge band of states — the Midwest, the South, parts of the Mountain West — cluster between four and five hundred dollars a week. Not dirt cheap, not coastal-brutal. For most Americans, this affordable middle is where the weekly math actually works out in their favor.",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "the affordable middle"
-      },
-      {
-        "name": "house",
-        "label": "$400-500 a week"
-      },
-      {
-        "name": "smiley",
-        "label": "where the math works"
-      }
-    ]
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the ranking barely moves year to year, which is the scary part. These aren't temporary spikes from one bad month — they're structural gaps baked into each state's housing market and tax code. The expensive states have been expensive for decades, and without a move, that weekly premium simply compounds against you year after year.",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "structural, not a spike"
-      },
-      {
-        "name": "chartup",
-        "label": "compounds for decades"
-      },
-      {
-        "name": "warning",
-        "label": "it won't fix itself"
-      }
-    ]
-  },
-  {
-    "id": "s12",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And watch what that weekly gap becomes over a year. Five hundred dollars a week, times fifty-two, is twenty-six thousand dollars. That's the annual penalty for covering the identical basics in the priciest state versus the cheapest. It's a brand-new car, every year, vanishing into nothing more than ordinary daily life.",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "$500/wk × 52"
-      },
-      {
-        "name": "car",
-        "label": "= $26K a year"
-      },
-      {
-        "name": "warning",
-        "label": "gone to just existing"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "$880 a week before anything fun",
-    "memeBottom": "this is fine",
-    "narration": "For people in the priciest states, this is the quiet weekly reality: most of the paycheck gone to gas, groceries, and rent before a single dollar goes toward a life. It isn't overspending. It's the weekly meter of an expensive state, running whether you like it or not."
-  },
-  {
-    "id": "s62",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And twenty-six thousand a year isn't just lost spending — it's lost compounding. Invested instead over a working life, that weekly gap between a cheap and an expensive state becomes a fortune. The priciest states don't only cost you more each week; they quietly steal the wealth that money could have grown into.",
-    "props": [
-      {
-        "name": "snowball",
-        "label": "$26K/yr could compound"
-      },
-      {
-        "name": "chartup",
-        "label": "into a fortune"
-      },
-      {
-        "name": "warning",
-        "label": "stolen future wealth"
-      }
-    ]
-  },
-  {
-    "id": "s13",
-    "type": "title",
-    "narration": "So what actually drives that enormous gap?",
-    "heading": "The Drivers",
-    "kicker": "rent, gas tax, grocery tax"
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the drivers explain some surprising upsets. A state with no income tax can still be pricey to live in week to week if its rents and sales taxes are high. The weekly basket doesn't care about headline tax rates — it only cares about what gas, groceries, and rent actually cost you, added up at the register.",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "no-income-tax ≠ cheap"
-      },
-      {
-        "name": "basket",
-        "label": "the basket is what counts"
-      },
-      {
-        "name": "scale",
-        "label": "added at the register"
-      }
-    ]
-  },
-  {
-    "id": "s14",
-    "type": "stage",
-    "motif": "whatdrivesthegap",
-    "caption": "rent, fuel tax, and grocery tax",
-    "narration": "Three forces set a state's weekly price. First and biggest, rent — the housing market alone explains most of the gap. Second, the fuel tax baked into every gallon, which varies by state. And third, whether groceries get hit with sales tax. Stack those three, and you've explained why one state quietly costs double another to simply live in."
-  },
-  {
-    "id": "s45",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the drivers stack in sneaky ways. A state can advertise cheap housing but claw it back with high fuel and grocery taxes. Another can look pricey on rent but exempt food and keep gas cheap. You have to add up the whole weekly basket, not cherry-pick one number, to know what a state really costs to live in.",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "the drivers stack"
-      },
-      {
-        "name": "scale",
-        "label": "add the whole basket"
-      },
-      {
-        "name": "warning",
-        "label": "don't cherry-pick"
-      }
-    ]
-  },
-  {
-    "id": "s61",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And rent sets the ceiling for everything else. In a high-rent state, landlords, stores, and services all face higher costs too, so they charge more — the pricey rent quietly drags up the price of groceries, gas, and haircuts alike. Housing isn't just the biggest line in the basket. It's the gravity that pulls every other line upward.",
-    "props": [
-      {
-        "name": "house",
-        "label": "rent sets the ceiling"
-      },
-      {
-        "name": "chartup",
-        "label": "drags up everything"
-      },
-      {
-        "name": "scale",
-        "label": "housing is gravity"
-      }
-    ]
-  },
-  {
-    "id": "s15",
-    "type": "screenshot",
-    "sourceId": "wiki-fueltax",
-    "narration": "Take fuel tax — an excise tax imposed on the sale of fuel. States set their own, and the spread is large: some add barely a dime a gallon, others well over fifty cents. For a regular commuter, that single state policy difference can mean hundreds of dollars a year, invisibly added at the pump."
-  },
-  {
-    "id": "s56",
-    "type": "callout",
-    "narration": "Put the fuel-tax spread in weekly terms. Between the lowest and highest states, the gas tax difference alone can be fifty cents a gallon or more. For a commuter filling up weekly, that single policy choice quietly adds up to several hundred dollars a year — paid entirely to the state, right there at the pump.",
-    "text": "$0.50+/gal",
-    "sub": "the gas-tax gap between states, paid weekly",
-    "icon": "gaspump"
-  },
-  {
-    "id": "s16",
-    "type": "screenshot",
-    "sourceId": "wiki-salestax",
-    "narration": "Then groceries. Sales tax is governed at the state level, and no national general sales tax exists — so each state decides. Most exempt groceries, but some still tax the food you eat, quietly adding to every weekly shop. Where you buy your bread can cost you, purely because of a line in a state tax code."
-  },
-  {
-    "id": "s46",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And taxes on the basics are quietly regressive — they hit lower earners hardest. A grocery sales tax takes a far bigger bite from a tight budget than a comfortable one, because the basics eat a bigger share of a small paycheck. So the states that tax food and fuel heavily are often toughest on exactly the people with the least room to absorb it.",
-    "props": [
-      {
-        "name": "receipt",
-        "label": "taxes on basics"
-      },
-      {
-        "name": "warning",
-        "label": "hit low earners hardest"
-      },
-      {
-        "name": "scale",
-        "label": "quietly regressive"
-      }
-    ]
-  },
-  {
-    "id": "s17",
-    "type": "title",
-    "narration": "But raw cost is only half the story — compare it to local pay.",
-    "heading": "Cost vs Wages",
-    "kicker": "what it eats of your week"
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And wages and prices don't rise together neatly. Some expensive states do pay more, but rarely enough to fully offset the higher basics. And some cheap states pay so little that their low prices are an illusion. The only honest comparison is always the same: what does a week cost, and what does a week earn you, right there?",
-    "props": [
-      {
-        "name": "scale",
-        "label": "wages lag prices"
-      },
-      {
-        "name": "warning",
-        "label": "low pay fakes cheapness"
-      },
-      {
-        "name": "paystub",
-        "label": "cost vs earn, locally"
-      }
-    ]
-  },
-  {
-    "id": "s18",
-    "type": "stage",
-    "motif": "weeklycostvswage",
-    "caption": "weekly basics as a share of the weekly wage",
-    "narration": "A high weekly cost can be survivable if wages are high too. So here's the honest measure: the basics as a share of a state's typical weekly paycheck. And it's brutal. In Hawaii and California, the bare essentials devour the majority of a median week's pay. In cheaper states, the same basket leaves far more of the paycheck standing. Affordability is always cost divided by wage."
-  },
-  {
-    "id": "s19",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Basics as % of median weekly wage",
-    "unit": "%",
-    "narration": "Here's the share of a median weekly paycheck that just the basics consume. In Ohio and Texas, under half. In Mississippi, a bit more, because wages there are low. But in Hawaii it tops eighty percent, and California isn't far behind. In the priciest states, you work most of the week just to cover gas, food, and rent.",
-    "data": [
-      {
-        "label": "Ohio",
-        "value": 45
-      },
-      {
-        "label": "Texas",
-        "value": 48
-      },
-      {
-        "label": "Mississippi",
-        "value": 55
-      },
-      {
-        "label": "New York",
-        "value": 68
-      },
-      {
-        "label": "California",
-        "value": 72
-      },
-      {
-        "label": "Hawaii",
-        "value": 85
-      }
-    ],
-    "highlight": 5
-  },
-  {
-    "id": "s47",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this is why 'the cost of living' is really the cost of a week. Big one-off prices grab headlines, but it's the relentless weekly spend that sets your true standard of living. A state where the basics eat eighty percent of your wage leaves almost nothing to save, invest, or enjoy — no matter how good the salary looked on paper.",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "cost of living = cost of a week"
-      },
-      {
-        "name": "chartdown",
-        "label": "80% leaves nothing"
-      },
-      {
-        "name": "warning",
-        "label": "salary looked fine on paper"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this share is the real affordability number. When the basics eat eighty percent of your weekly pay, there's almost nothing left for emergencies, let alone saving or investing. That's how people earning a solid salary in an expensive state still live paycheck to paycheck — the weekly meter quietly claims it before they ever see it.",
+    "narration": "And notice how the blocks shift over the decade. Early on, depreciation and interest dominate. Later, as the car ages, repairs and maintenance climb while depreciation slows. The cost never really stops — it just changes shape, quietly moving from losing value to fixing what's worn out. A car is an expense that evolves, not one that ends.",
     "props": [
       {
         "name": "chartdown",
-        "label": "80% gone to basics"
+        "label": "early: depreciation + interest"
       },
       {
-        "name": "warning",
-        "label": "nothing left to save"
+        "name": "wrench",
+        "label": "later: repairs climb"
       },
       {
         "name": "calendar",
-        "label": "paycheck to paycheck"
-      }
-    ]
-  },
-  {
-    "id": "s20",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this flips some assumptions. A cheap state with low wages, like Mississippi, can quietly be harder to live in than its low prices suggest, because the paychecks are small too. Meanwhile a mid-cost, decent-wage state can be the real sweet spot. The best state isn't the cheapest — it's the one where your wage beats the weekly meter by the widest margin.",
-    "props": [
-      {
-        "name": "scale",
-        "label": "cost ÷ wage"
-      },
-      {
-        "name": "warning",
-        "label": "cheap + low pay still hurts"
-      },
-      {
-        "name": "smiley",
-        "label": "the real sweet spot"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "brag about your big-state salary",
-    "memeBottom": "brag about what's left after the weekly basket",
-    "narration": "This is the mindset shift. The number worth bragging about was never the salary — it's what survives a week of gas, groceries, and rent. Once you measure states that way, the glamorous expensive ones stop looking like winners."
-  },
-  {
-    "id": "s21",
-    "type": "title",
-    "narration": "So what do you actually do about the weekly meter?",
-    "heading": "What To Do",
-    "kicker": "shrink the basics"
-  },
-  {
-    "id": "s22",
-    "type": "stage",
-    "motif": "samesalarystates",
-    "caption": "the same salary, two different weeks",
-    "narration": "Here's the same paycheck living two different weeks. In a high-cost state, the basics swallow it and nothing's left to save. In a low-cost one, the same money covers the basics with hundreds to spare. Identical income, opposite outcomes — written entirely by the weekly price of the state around it."
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "pose": "present",
-    "narration": "And shrink the recurring costs with boring, repeatable habits. A grocery list that kills impulse buys, buying gas on the cheaper side of a state line, cooking instead of ordering in. None of it is glamorous, but because these costs repeat fifty-two times a year, small weekly wins compound into serious annual money.",
-    "props": [
-      {
-        "name": "basket",
-        "label": "a strict grocery list"
-      },
-      {
-        "name": "gaspump",
-        "label": "cheaper gas runs"
-      },
-      {
-        "name": "snowball",
-        "label": "small weekly wins compound"
-      }
-    ]
-  },
-  {
-    "id": "s23",
-    "type": "character",
-    "pose": "present",
-    "narration": "First, attack the giant: rent. It's the biggest slice of the weekly basket by far, so a smaller place, a roommate, or a cheaper neighborhood moves your weekly number more than any coupon ever could. Win on housing and the entire weekly meter drops. Everything else is rounding by comparison.",
-    "props": [
-      {
-        "name": "house",
-        "label": "attack rent first"
-      },
-      {
-        "name": "couple",
-        "label": "roommate or smaller place"
-      },
-      {
-        "name": "scale",
-        "label": "everything else is rounding"
+        "label": "the cost never stops"
       }
     ]
   },
   {
     "id": "s60",
     "type": "character",
-    "pose": "present",
-    "narration": "And buy the recurring stuff in bulk and on cycle. The basics repeat, so systems beat willpower: a staples run once a month, store-brand swaps, a full tank on the cheap day. Because these costs come back fifty-two times a year, a small, permanent habit quietly out-saves any one-time splurge cut you could make.",
+    "pose": "explain",
+    "narration": "And the stack has a cruel late twist: the repair curve. For the first few years a car barely breaks, lulling you into thinking it's cheap to run. Then around years seven to ten, big-ticket repairs — transmission, suspension, electronics — start arriving. The ownership cost you thought had settled suddenly spikes, right when the car is worth the least.",
     "props": [
       {
-        "name": "basket",
-        "label": "buy staples in bulk"
+        "name": "wrench",
+        "label": "repairs spike late"
+      },
+      {
+        "name": "chartup",
+        "label": "years 7-10 get costly"
+      },
+      {
+        "name": "warning",
+        "label": "worth least, costs most"
+      }
+    ]
+  },
+  {
+    "id": "s11",
+    "type": "stage",
+    "motif": "truecarcost",
+    "caption": "sticker vs the true cost",
+    "narration": "Put the sticker next to the truth and the gap is staggering. The window price might read thirty thousand. The ten-year reality is three times that. Every car you've ever owned cost you roughly triple what you thought you paid — you just never added up the receipts spread across all those years."
+  },
+  {
+    "id": "s44",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "can I afford the monthly payment?",
+    "memeBottom": "can I afford to OWN this for ten years?",
+    "narration": "This is the mental upgrade that saves people fortunes. The beginner asks whether the payment fits this month. The advanced question is whether the entire ten-year cost of ownership fits your life. Ask the second one, and you'll never be fooled by a low monthly payment again."
+  },
+  {
+    "id": "s12",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And crucially, several of those blocks are set by your state, not your car. Insurance premiums, fuel prices and fuel taxes, registration fees, and sales tax on the purchase all vary wildly by state. So two identical cars, bought the same day, can cost tens of thousands of dollars apart over ten years — decided entirely by where the license plate is from.",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "your state sets much of it"
+      },
+      {
+        "name": "car",
+        "label": "identical cars, different bills"
+      },
+      {
+        "name": "scale",
+        "label": "tens of thousands apart"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "callout",
+    "narration": "Put the state gap in one number. Between the cheapest and most expensive states, the ten-year cost of owning the identical car differs by more than forty thousand dollars. That's a second car's worth of money, decided not by what you drive, but purely by where you register and insure it.",
+    "text": "$40K+",
+    "sub": "10-year ownership gap, cheapest vs priciest state",
+    "icon": "scale"
+  },
+  {
+    "id": "s13",
+    "type": "title",
+    "narration": "So let's rank the states by the true ten-year bill.",
+    "heading": "The Ranking",
+    "kicker": "cheapest vs most brutal"
+  },
+  {
+    "id": "s14",
+    "type": "stage",
+    "motif": "carcostbystate",
+    "caption": "total 10-year cost to own, by state",
+    "narration": "Here's the spread. In low-cost states like Maine and Ohio, ten years of ownership runs around seventy thousand dollars. In the middle, Texas and Florida climb toward the eighties and nineties, pushed up by insurance and long commutes. And at the top, states like Michigan and California can clear a hundred and ten thousand — the same car, costing forty thousand more over the decade."
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And notice the ranking isn't just coastal-versus-heartland like housing was. Car costs scramble the map: some cheap-housing states have brutal insurance, and some expensive states keep car ownership reasonable. The lesson is that every big expense has its own geography. Being cheap to live in doesn't automatically mean it's cheap to drive in.",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "a different map"
+      },
+      {
+        "name": "car",
+        "label": "cheap to live ≠ cheap to drive"
+      },
+      {
+        "name": "scale",
+        "label": "every cost has its geography"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "True 10-year cost to own a car ($K)",
+    "unit": "$K",
+    "narration": "Put the numbers in a row. Maine around sixty-eight thousand, Ohio seventy-four, Texas eighty-two, Florida ninety-five, California a hundred and two, and Michigan near a hundred and ten. The gap between the cheapest and priciest state is over forty thousand dollars — for the identical vehicle, driven the identical way.",
+    "data": [
+      {
+        "label": "Maine",
+        "value": 68
+      },
+      {
+        "label": "Ohio",
+        "value": 74
+      },
+      {
+        "label": "Texas",
+        "value": 82
+      },
+      {
+        "label": "Florida",
+        "value": 95
+      },
+      {
+        "label": "California",
+        "value": 102
+      },
+      {
+        "label": "Michigan",
+        "value": 110
+      }
+    ],
+    "highlight": 5
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the ranking punishes a specific combination: expensive insurance plus long drives plus high gas taxes. States that stack all three — think big, car-dependent, high-premium places — become ownership traps. States with cheap insurance, short commutes, and low fuel taxes quietly let you own the identical car for a fraction of the lifetime cost.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "insurance + miles + gas tax"
+      },
+      {
+        "name": "car",
+        "label": "the ownership trap"
+      },
+      {
+        "name": "mappin",
+        "label": "stack decides the state"
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the single biggest reason one state crushes another isn't the car or the gas — it's insurance. Car insurance premiums vary more by state than almost any other cost, driven by local laws, accident rates, theft, and repair costs. In the worst states, a decade of premiums alone can cost more than a used car.",
+    "props": [
+      {
+        "name": "shield",
+        "label": "insurance is the big swing"
+      },
+      {
+        "name": "warning",
+        "label": "varies most by state"
+      },
+      {
+        "name": "car",
+        "label": "10 yrs > a used car"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And young drivers feel the insurance gap worst of all. A teenager or someone with a single ticket can pay double or triple the base rate, and in a high-premium state that surcharge is stacked on an already-huge number. For a young person in the wrong state, insurance alone can rival a rent payment.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "young drivers pay most"
+      },
+      {
+        "name": "shield",
+        "label": "double or triple rates"
+      },
+      {
+        "name": "house",
+        "label": "rivals a rent payment"
+      }
+    ]
+  },
+  {
+    "id": "s61",
+    "type": "callout",
+    "narration": "Here's how badly insurance can dominate. In the most expensive states, ten years of car insurance can total thirty thousand dollars or more — rivaling, and sometimes beating, what the driver originally paid for the car itself. You can buy the vehicle once and effectively buy it again in premiums.",
+    "text": "$30K",
+    "sub": "10 years of insurance in the priciest states",
+    "icon": "shield"
+  },
+  {
+    "id": "s17",
+    "type": "title",
+    "narration": "Which deserves its own ranking, because it's that brutal.",
+    "heading": "The Insurance Gap",
+    "kicker": "the state-made cost"
+  },
+  {
+    "id": "s18",
+    "type": "stage",
+    "motif": "insurancebystate",
+    "caption": "annual car insurance, by state",
+    "narration": "Here's the yearly insurance bill by state, and the spread is wild. In Maine and Ohio it can run under a thousand dollars a year. In Texas and California it climbs past two thousand. And in Michigan and Florida, thanks to unique state insurance laws and high claim rates, it can top three thousand a year. Over ten years, that's a thirty-thousand-dollar gap from a single line on your statement."
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And insurance is maddening because so little of it is about you. Your careful driving matters, but so do your neighbors' accident rates, local repair costs, how often cars get stolen nearby, and your state's legal system. You can be a flawless driver and still pay a fortune, simply because of the zip code on your policy.",
+    "props": [
+      {
+        "name": "shield",
+        "label": "mostly not about you"
+      },
+      {
+        "name": "mappin",
+        "label": "your neighbors' risk"
+      },
+      {
+        "name": "warning",
+        "label": "flawless driver, high bill"
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "type": "screenshot",
+    "sourceId": "wiki-insurance",
+    "narration": "Remember what insurance is for: to provide financial protection against physical damage or bodily injury from a crash. You can't skip it — most states legally require it. But its price is set by your state's rules and risk, which is why the exact same driver can pay triple just by crossing a state line. It's a cost you don't control, decided by a map."
+  },
+  {
+    "id": "s47",
+    "type": "callout",
+    "narration": "Here's the insurance gap over the full decade. Between the cheapest and most expensive states, the ten-year difference in premiums alone can top twenty-three thousand dollars. That's not the car, the gas, or the repairs — it's purely the cost of being legally allowed to drive, decided entirely by your state.",
+    "text": "$23K",
+    "sub": "10-year insurance gap, cheapest vs priciest state",
+    "icon": "shield"
+  },
+  {
+    "id": "s20",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Average annual car insurance ($)",
+    "unit": "$",
+    "narration": "The numbers are stark. Maine near nine hundred a year, Ohio around eleven hundred, Texas sixteen hundred, California twenty-two, Florida twenty-eight, and Michigan over three thousand. Multiply the worst by ten years and insurance alone can cost more than many people paid for the car itself.",
+    "data": [
+      {
+        "label": "Maine",
+        "value": 900
+      },
+      {
+        "label": "Ohio",
+        "value": 1100
+      },
+      {
+        "label": "Texas",
+        "value": 1600
+      },
+      {
+        "label": "California",
+        "value": 2200
+      },
+      {
+        "label": "Florida",
+        "value": 2800
+      },
+      {
+        "label": "Michigan",
+        "value": 3200
+      }
+    ],
+    "highlight": 5
+  },
+  {
+    "id": "s56",
+    "type": "image",
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "$3,200 a year to insure a paid-off car",
+    "memeBottom": "this is fine",
+    "narration": "For drivers in the priciest insurance states, this is the annual gut-punch: paying thousands to insure a car they already own outright. It isn't bad driving. It's a state-made cost, and recognizing that is the first step to shopping it down or planning around it."
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "Then come gas, taxes, and the fees nobody reads.",
+    "heading": "Gas, Tax & Fees",
+    "kicker": "the rest of the gap"
+  },
+  {
+    "id": "s22",
+    "type": "screenshot",
+    "sourceId": "wiki-roadtax",
+    "narration": "There's road tax — a tax which, in various forms, has to be paid on a motorised vehicle to use it on a public road. In the US that shows up as registration and, in some states, an annual vehicle property tax. A few states charge almost nothing; others bill you hundreds every single year, just for the privilege of keeping the car legal."
+  },
+  {
+    "id": "s57",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And a handful of states quietly charge an annual car property tax — a percentage of your vehicle's value, billed every single year you own it. On a newer car that can be hundreds of dollars annually, a cost most buyers never see coming. Two identical cars, one state apart, can differ by thousands over a decade on this line alone.",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "annual car property tax"
+      },
+      {
+        "name": "car",
+        "label": "a % of value, every year"
+      },
+      {
+        "name": "warning",
+        "label": "thousands over a decade"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Then fuel. States set their own gas taxes, so the price per gallon — and the ten-year fuel bill — swings hundreds or thousands of dollars by location. Add long rural commutes in some states versus short city trips in others, and the gap widens further. Where you drive quietly rewrites how much every mile costs you.",
+    "props": [
+      {
+        "name": "gaspump",
+        "label": "state gas taxes differ"
+      },
+      {
+        "name": "car",
+        "label": "commute length matters"
+      },
+      {
+        "name": "receipt",
+        "label": "every mile priced by place"
+      }
+    ]
+  },
+  {
+    "id": "s48",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And don't forget the quiet fees: title, registration renewals, emissions tests, tolls, and parking. Individually they're small and forgettable. Across ten years and a whole state's fee schedule, they can add up to thousands more. They're the barnacles of car ownership — tiny, constant, and collectively heavy.",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "title, tolls, parking, tests"
       },
       {
         "name": "calendar",
-        "label": "systems beat willpower"
+        "label": "small but constant"
       },
       {
-        "name": "snowball",
-        "label": "small habits, 52× a year"
+        "name": "warning",
+        "label": "thousands over a decade"
       }
     ]
   },
   {
     "id": "s24",
-    "type": "character",
-    "pose": "present",
-    "narration": "Second, treat the state itself as a lever. If your work travels, moving from a top-cost state to an affordable one can hand you that twenty-six-thousand-a-year difference without earning a cent more. It's the single biggest, most overlooked raise hiding in plain sight — just a change of address.",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "the state is a lever"
-      },
-      {
-        "name": "moneybag",
-        "label": "+$26K without a raise"
-      },
-      {
-        "name": "truck",
-        "label": "a change of address"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "pose": "present",
-    "narration": "And look one town over, not just one state over. Within a single state, a cheaper suburb or a lower-tax county can cut your weekly basket meaningfully without uprooting your whole life. The state sets the broad price, but the exact town you pick fine-tunes the weekly meter in ways most people never bother to check.",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "one town over"
-      },
-      {
-        "name": "house",
-        "label": "cheaper suburb or county"
-      },
-      {
-        "name": "scale",
-        "label": "fine-tune the meter"
-      }
-    ]
+    "type": "title",
+    "narration": "So how do you actually cut the ten-year bill?",
+    "heading": "What To Do",
+    "kicker": "slash the real cost"
   },
   {
     "id": "s25",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Because here's the real lesson. It's not the rare big purchase that decides your finances — it's the boring weekly basket, repeated fifty-two times a year, for decades. Master the quiet, recurring cost of simply living, and you've mastered the number that actually shapes your whole financial life. Watch the week, and the years take care of themselves.",
-    "props": [
-      {
-        "name": "calendar",
-        "label": "the weekly basket wins"
-      },
-      {
-        "name": "basket",
-        "label": "×52, for decades"
-      },
-      {
-        "name": "chartup",
-        "label": "master the week"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-carfinance",
+    "narration": "First, be careful with car finance — the financial products which allow individuals to purchase or lease a vehicle. Loans and leases make an expensive car feel affordable monthly, while quietly adding interest to an already-huge ten-year total. The easiest way to cut the bill is to borrow less, for a shorter term, on a cheaper car."
   },
   {
-    "id": "s50",
+    "id": "s58",
     "type": "character",
-    "pose": "explain",
-    "narration": "And the compounding cuts both ways. The money a cheaper state saves you each week only builds wealth if you actually invest the difference, instead of inflating your life to match. Keep your weekly basket lean, put the gap to work, and the boring week-to-week discipline quietly funds the freedom the expensive states can only promise.",
+    "pose": "present",
+    "narration": "And run the total-cost math before you fall in love with a model. A cheaper car with great reliability, cheap parts, and good gas mileage can cost half as much to own as a flashier one with the same sticker price. The smartest buyers compare ten-year costs, not window prices — and often walk away with more car for far less money.",
     "props": [
       {
-        "name": "seedling",
-        "label": "invest the weekly gap"
+        "name": "calculator",
+        "label": "compare 10-year costs"
       },
       {
-        "name": "snowball",
-        "label": "don't inflate your life"
+        "name": "wrench",
+        "label": "reliability + cheap parts"
       },
       {
-        "name": "chartup",
-        "label": "the week funds freedom"
+        "name": "moneybag",
+        "label": "more car, less money"
       }
     ]
   },
   {
     "id": "s26",
     "type": "character",
-    "pose": "celebrate",
-    "expression": "happy",
-    "narration": "If this changed how you see the cost of a normal week, hit subscribe — and tell me which price tag you want me to break down next.",
+    "pose": "present",
+    "narration": "Second, beat depreciation by buying lightly used. Let someone else eat that brutal first-year drop, then buy a two or three-year-old car and drive it for a decade. You get almost the same vehicle, minus the steepest part of the cliff. This one move can cut your true ten-year cost by tens of thousands of dollars.",
     "props": [
       {
-        "name": "basket",
-        "label": "which price tag next?"
+        "name": "car",
+        "label": "buy 2-3 years used"
+      },
+      {
+        "name": "chartdown",
+        "label": "skip the worst drop"
+      },
+      {
+        "name": "moneybag",
+        "label": "save tens of thousands"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "pose": "present",
+    "narration": "And resist the upgrade itch. The fastest way to blow up your car costs is trading a perfectly good vehicle for a newer one every few years, resetting the depreciation cliff each time. Every trade-in restarts the most expensive phase of ownership. Patience with a car you already own is one of the quietest, most reliable ways to build wealth.",
+    "props": [
+      {
+        "name": "car",
+        "label": "resist the upgrade itch"
+      },
+      {
+        "name": "chartdown",
+        "label": "each trade resets the cliff"
+      },
+      {
+        "name": "snowball",
+        "label": "patience builds wealth"
       }
     ]
   },
   {
     "id": "s27",
+    "type": "character",
+    "pose": "present",
+    "narration": "Third, shop insurance relentlessly and factor your state into the decision. Premiums for the identical driver can vary by hundreds between companies, and by thousands between states. If you're moving anyway, the cost to insure and register a car should be part of the math — it's a bigger lever than most people ever realize.",
+    "props": [
+      {
+        "name": "shield",
+        "label": "shop insurance hard"
+      },
+      {
+        "name": "mappin",
+        "label": "factor in your state"
+      },
+      {
+        "name": "scale",
+        "label": "a bigger lever than you think"
+      }
+    ]
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "pose": "present",
+    "narration": "And weigh whether you need the car at all, or just this many of them. A two-car household that drops to one, or a city dweller who leans on transit and the occasional rental, can erase an entire hundred-thousand-dollar ownership cost from their life. The cheapest car of all is the one you never had to own.",
+    "props": [
+      {
+        "name": "car",
+        "label": "do you need two?"
+      },
+      {
+        "name": "moneybag",
+        "label": "erase a $100K cost"
+      },
+      {
+        "name": "smiley",
+        "label": "the car you never own"
+      }
+    ]
+  },
+  {
+    "id": "s62",
+    "type": "character",
+    "pose": "present",
+    "narration": "And treat the whole thing as a system you design, not a single purchase you make. The car, the state, the financing, the insurer, and how long you keep it are all dials you control. Turn them together — cheaper car, cheaper state, less borrowing, longer ownership — and you can cut a hundred-thousand-dollar cost nearly in half.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "it's a system of dials"
+      },
+      {
+        "name": "calculator",
+        "label": "turn them together"
+      },
+      {
+        "name": "moneybag",
+        "label": "halve a $100K cost"
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. A car isn't a thirty-thousand-dollar purchase — it's a hundred-thousand-dollar, ten-year commitment, and a big chunk of that bill is set by your state and your choices, not the car itself. Add up the whole decade before you sign, and buy the ownership you can afford, not just the sticker.",
+    "props": [
+      {
+        "name": "car",
+        "label": "a 10-year commitment"
+      },
+      {
+        "name": "receipt",
+        "label": "add up the decade"
+      },
+      {
+        "name": "scale",
+        "label": "buy the ownership, not the sticker"
+      }
+    ]
+  },
+  {
+    "id": "s29",
+    "type": "character",
+    "pose": "celebrate",
+    "expression": "happy",
+    "narration": "If this changed how you see the real cost of a car, hit subscribe — and tell me which price tag you want me to break down next.",
+    "props": [
+      {
+        "name": "car",
+        "label": "which price tag next?"
+      }
+    ]
+  },
+  {
+    "id": "s30",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",

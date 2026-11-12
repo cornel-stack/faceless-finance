@@ -1,0 +1,851 @@
+{
+  "id": "EP092",
+  "series": "Napkin Numbers",
+  "title": "The Real Cost of a Car Over 10 Years in Every State",
+  "slug": "cost-of-a-car-10-years-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP092 — The Price Tag series (topic 82). The TRUE 10-year cost of car ownership by state (~$100K for a $30K car): depreciation (biggest), fuel, insurance, maintenance, taxes/registration, interest. Rank states ~$68K (Maine) to ~$110K (Michigan) — insurance is the biggest state swing ($900 to $3,200/yr). Drivers: insurance laws, gas tax, road/registration tax, commute. What-to-do: borrow less, buy lightly used (skip depreciation cliff), shop insurance, keep it 15 yrs, need fewer cars. 3 new motifs (carcostbystate/insurancebystate/tenyearstack) + reuse truecarcost/depreciationcliff (EP076). Sources: Total cost of ownership/Depreciation/Vehicle insurance/Road tax/Car finance. Callback EP076 but by-STATE. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "That thirty-thousand-dollar car in the driveway? Over ten years, it doesn't cost you thirty thousand. It costs closer to a hundred thousand — and how close depends enormously on which state you park it in. Same car, same decade, but the true bill can swing by forty thousand dollars from one state to the next. Today we rank what a car really costs to own over ten years, state by state.",
+      "props": [
+        {
+          "name": "car",
+          "label": "$30K sticker"
+        },
+        {
+          "name": "receipt",
+          "label": "~$100K over 10 years"
+        },
+        {
+          "name": "scale",
+          "label": "all 50 states ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that reframes car buying forever. The sticker price is maybe a third of the real cost. Add a decade of insurance, gas, repairs, registration, and the brutal hit of depreciation, and a typical new car quietly costs around a hundred thousand dollars to own for ten years. The price on the window is just the down payment on the truth.",
+      "text": "$100,000",
+      "sub": "true 10-year cost of a $30K car",
+      "icon": "car"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we add up the real ten-year cost of a car, rank the states from cheapest to most brutal, expose the hidden expenses that dwarf the sticker price, show why insurance and gas make some states twice as costly as others, and reveal how to slash the whole bill. Because the car isn't the purchase. The decade of owning it is.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the states"
+        },
+        {
+          "name": "gaspump",
+          "label": "hidden costs exposed"
+        },
+        {
+          "name": "moneybag",
+          "label": "how to slash it"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "buy the car you want",
+      "memeBottom": "buy the car you can afford to own for 10 years",
+      "narration": "Because almost everyone budgets for the purchase and forgets the ownership — the part that actually drains the bank account. Before we rank the states, let's define what a car truly costs."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the real price of owning a car.",
+      "heading": "The True Cost",
+      "kicker": "sticker is just the start"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-tco",
+      "narration": "The concept is total cost of ownership, and its core insight is blunt: ownership costs are significantly greater than the cost of purchasing or acquiring a product. A car is the perfect example. The purchase is the loud, obvious number — but it's quietly outweighed by years of expenses that arrive long after you drive off the lot."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is exactly why car ads only ever show you one number. The monthly payment, or the sticker, is designed to be the only figure you think about. The dealership has no incentive to mention the decade of insurance, fuel, and repairs waiting behind it. Total cost of ownership is the number they hope you never calculate.",
+      "props": [
+        {
+          "name": "car",
+          "label": "ads show one number"
+        },
+        {
+          "name": "receipt",
+          "label": "the decade stays hidden"
+        },
+        {
+          "name": "warning",
+          "label": "the number they hide"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-depr",
+      "narration": "And the biggest hidden cost is depreciation — an actual reduction in the fair value of an asset over time. A new car can lose twenty percent of its value the moment you drive it home, and roughly sixty percent over five years. That lost value is real money, gone, even if you never spend another cent on the car."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And depreciation is the cost people understand the least because you never write a check for it. There's no monthly depreciation bill — it just quietly happens in the background, showing up only the day you sell or trade in for far less than you hoped. It's the biggest expense of owning a car, and it's completely invisible until it's too late.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "no check to write"
+        },
+        {
+          "name": "car",
+          "label": "hits you at resale"
+        },
+        {
+          "name": "warning",
+          "label": "invisible until too late"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "motif": "depreciationcliff",
+      "caption": "the value falls off a cliff",
+      "narration": "Here's that depreciation cliff. The steepest drop happens in the first few years, which is why a car is worth so much less the instant it's used. For the buyer of a brand-new car, this invisible loss is usually the single largest line item of the entire ten years — bigger than gas, bigger than insurance, bigger than repairs."
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Put depreciation in dollars. A thirty-thousand-dollar car is often worth only about twelve thousand after five years. That's eighteen thousand dollars of value quietly evaporated — more than most people spend on gas and insurance combined in that time. And you feel none of it until the day you try to sell.",
+      "text": "−60%",
+      "sub": "a new car's value lost in ~5 years",
+      "icon": "chartdown"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's stack up every dollar a car demands.",
+      "heading": "The Full Stack",
+      "kicker": "where $100K goes"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And here's why the stack matters more than the sticker. Two people can buy the exact same car, but the one who financed it for seven years, insures it in a pricey state, and trades it in after three pays dramatically more than the one who bought used, insured cheaply, and kept it a decade. Same car, wildly different ten-year bills.",
+      "props": [
+        {
+          "name": "car",
+          "label": "same car, different owners"
+        },
+        {
+          "name": "receipt",
+          "label": "the stack decides it"
+        },
+        {
+          "name": "scale",
+          "label": "wildly different bills"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "tenyearstack",
+      "caption": "the real 10-year cost, broken down",
+      "narration": "Here's where the hundred thousand goes. Depreciation is the biggest slice. Then fuel, over a decade of driving. Then insurance, ten years of premiums. Then maintenance and repairs, climbing as the car ages. Then taxes, registration, and financing interest. The purchase price you obsessed over is just one block in a much taller tower."
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice how the blocks shift over the decade. Early on, depreciation and interest dominate. Later, as the car ages, repairs and maintenance climb while depreciation slows. The cost never really stops — it just changes shape, quietly moving from losing value to fixing what's worn out. A car is an expense that evolves, not one that ends.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "early: depreciation + interest"
+        },
+        {
+          "name": "wrench",
+          "label": "later: repairs climb"
+        },
+        {
+          "name": "calendar",
+          "label": "the cost never stops"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the stack has a cruel late twist: the repair curve. For the first few years a car barely breaks, lulling you into thinking it's cheap to run. Then around years seven to ten, big-ticket repairs — transmission, suspension, electronics — start arriving. The ownership cost you thought had settled suddenly spikes, right when the car is worth the least.",
+      "props": [
+        {
+          "name": "wrench",
+          "label": "repairs spike late"
+        },
+        {
+          "name": "chartup",
+          "label": "years 7-10 get costly"
+        },
+        {
+          "name": "warning",
+          "label": "worth least, costs most"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "motif": "truecarcost",
+      "caption": "sticker vs the true cost",
+      "narration": "Put the sticker next to the truth and the gap is staggering. The window price might read thirty thousand. The ten-year reality is three times that. Every car you've ever owned cost you roughly triple what you thought you paid — you just never added up the receipts spread across all those years."
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "can I afford the monthly payment?",
+      "memeBottom": "can I afford to OWN this for ten years?",
+      "narration": "This is the mental upgrade that saves people fortunes. The beginner asks whether the payment fits this month. The advanced question is whether the entire ten-year cost of ownership fits your life. Ask the second one, and you'll never be fooled by a low monthly payment again."
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And crucially, several of those blocks are set by your state, not your car. Insurance premiums, fuel prices and fuel taxes, registration fees, and sales tax on the purchase all vary wildly by state. So two identical cars, bought the same day, can cost tens of thousands of dollars apart over ten years — decided entirely by where the license plate is from.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "your state sets much of it"
+        },
+        {
+          "name": "car",
+          "label": "identical cars, different bills"
+        },
+        {
+          "name": "scale",
+          "label": "tens of thousands apart"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "Put the state gap in one number. Between the cheapest and most expensive states, the ten-year cost of owning the identical car differs by more than forty thousand dollars. That's a second car's worth of money, decided not by what you drive, but purely by where you register and insure it.",
+      "text": "$40K+",
+      "sub": "10-year ownership gap, cheapest vs priciest state",
+      "icon": "scale"
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So let's rank the states by the true ten-year bill.",
+      "heading": "The Ranking",
+      "kicker": "cheapest vs most brutal"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "carcostbystate",
+      "caption": "total 10-year cost to own, by state",
+      "narration": "Here's the spread. In low-cost states like Maine and Ohio, ten years of ownership runs around seventy thousand dollars. In the middle, Texas and Florida climb toward the eighties and nineties, pushed up by insurance and long commutes. And at the top, states like Michigan and California can clear a hundred and ten thousand — the same car, costing forty thousand more over the decade."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the ranking isn't just coastal-versus-heartland like housing was. Car costs scramble the map: some cheap-housing states have brutal insurance, and some expensive states keep car ownership reasonable. The lesson is that every big expense has its own geography. Being cheap to live in doesn't automatically mean it's cheap to drive in.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "a different map"
+        },
+        {
+          "name": "car",
+          "label": "cheap to live ≠ cheap to drive"
+        },
+        {
+          "name": "scale",
+          "label": "every cost has its geography"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "True 10-year cost to own a car ($K)",
+      "unit": "$K",
+      "narration": "Put the numbers in a row. Maine around sixty-eight thousand, Ohio seventy-four, Texas eighty-two, Florida ninety-five, California a hundred and two, and Michigan near a hundred and ten. The gap between the cheapest and priciest state is over forty thousand dollars — for the identical vehicle, driven the identical way.",
+      "data": [
+        {
+          "label": "Maine",
+          "value": 68
+        },
+        {
+          "label": "Ohio",
+          "value": 74
+        },
+        {
+          "label": "Texas",
+          "value": 82
+        },
+        {
+          "label": "Florida",
+          "value": 95
+        },
+        {
+          "label": "California",
+          "value": 102
+        },
+        {
+          "label": "Michigan",
+          "value": 110
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the ranking punishes a specific combination: expensive insurance plus long drives plus high gas taxes. States that stack all three — think big, car-dependent, high-premium places — become ownership traps. States with cheap insurance, short commutes, and low fuel taxes quietly let you own the identical car for a fraction of the lifetime cost.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "insurance + miles + gas tax"
+        },
+        {
+          "name": "car",
+          "label": "the ownership trap"
+        },
+        {
+          "name": "mappin",
+          "label": "stack decides the state"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the single biggest reason one state crushes another isn't the car or the gas — it's insurance. Car insurance premiums vary more by state than almost any other cost, driven by local laws, accident rates, theft, and repair costs. In the worst states, a decade of premiums alone can cost more than a used car.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "insurance is the big swing"
+        },
+        {
+          "name": "warning",
+          "label": "varies most by state"
+        },
+        {
+          "name": "car",
+          "label": "10 yrs > a used car"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And young drivers feel the insurance gap worst of all. A teenager or someone with a single ticket can pay double or triple the base rate, and in a high-premium state that surcharge is stacked on an already-huge number. For a young person in the wrong state, insurance alone can rival a rent payment.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "young drivers pay most"
+        },
+        {
+          "name": "shield",
+          "label": "double or triple rates"
+        },
+        {
+          "name": "house",
+          "label": "rivals a rent payment"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "callout",
+      "narration": "Here's how badly insurance can dominate. In the most expensive states, ten years of car insurance can total thirty thousand dollars or more — rivaling, and sometimes beating, what the driver originally paid for the car itself. You can buy the vehicle once and effectively buy it again in premiums.",
+      "text": "$30K",
+      "sub": "10 years of insurance in the priciest states",
+      "icon": "shield"
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Which deserves its own ranking, because it's that brutal.",
+      "heading": "The Insurance Gap",
+      "kicker": "the state-made cost"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "insurancebystate",
+      "caption": "annual car insurance, by state",
+      "narration": "Here's the yearly insurance bill by state, and the spread is wild. In Maine and Ohio it can run under a thousand dollars a year. In Texas and California it climbs past two thousand. And in Michigan and Florida, thanks to unique state insurance laws and high claim rates, it can top three thousand a year. Over ten years, that's a thirty-thousand-dollar gap from a single line on your statement."
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And insurance is maddening because so little of it is about you. Your careful driving matters, but so do your neighbors' accident rates, local repair costs, how often cars get stolen nearby, and your state's legal system. You can be a flawless driver and still pay a fortune, simply because of the zip code on your policy.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "mostly not about you"
+        },
+        {
+          "name": "mappin",
+          "label": "your neighbors' risk"
+        },
+        {
+          "name": "warning",
+          "label": "flawless driver, high bill"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "sourceId": "wiki-insurance",
+      "narration": "Remember what insurance is for: to provide financial protection against physical damage or bodily injury from a crash. You can't skip it — most states legally require it. But its price is set by your state's rules and risk, which is why the exact same driver can pay triple just by crossing a state line. It's a cost you don't control, decided by a map."
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Here's the insurance gap over the full decade. Between the cheapest and most expensive states, the ten-year difference in premiums alone can top twenty-three thousand dollars. That's not the car, the gas, or the repairs — it's purely the cost of being legally allowed to drive, decided entirely by your state.",
+      "text": "$23K",
+      "sub": "10-year insurance gap, cheapest vs priciest state",
+      "icon": "shield"
+    },
+    {
+      "id": "s20",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Average annual car insurance ($)",
+      "unit": "$",
+      "narration": "The numbers are stark. Maine near nine hundred a year, Ohio around eleven hundred, Texas sixteen hundred, California twenty-two, Florida twenty-eight, and Michigan over three thousand. Multiply the worst by ten years and insurance alone can cost more than many people paid for the car itself.",
+      "data": [
+        {
+          "label": "Maine",
+          "value": 900
+        },
+        {
+          "label": "Ohio",
+          "value": 1100
+        },
+        {
+          "label": "Texas",
+          "value": 1600
+        },
+        {
+          "label": "California",
+          "value": 2200
+        },
+        {
+          "label": "Florida",
+          "value": 2800
+        },
+        {
+          "label": "Michigan",
+          "value": 3200
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s56",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "$3,200 a year to insure a paid-off car",
+      "memeBottom": "this is fine",
+      "narration": "For drivers in the priciest insurance states, this is the annual gut-punch: paying thousands to insure a car they already own outright. It isn't bad driving. It's a state-made cost, and recognizing that is the first step to shopping it down or planning around it."
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Then come gas, taxes, and the fees nobody reads.",
+      "heading": "Gas, Tax & Fees",
+      "kicker": "the rest of the gap"
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "sourceId": "wiki-roadtax",
+      "narration": "There's road tax — a tax which, in various forms, has to be paid on a motorised vehicle to use it on a public road. In the US that shows up as registration and, in some states, an annual vehicle property tax. A few states charge almost nothing; others bill you hundreds every single year, just for the privilege of keeping the car legal."
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And a handful of states quietly charge an annual car property tax — a percentage of your vehicle's value, billed every single year you own it. On a newer car that can be hundreds of dollars annually, a cost most buyers never see coming. Two identical cars, one state apart, can differ by thousands over a decade on this line alone.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "annual car property tax"
+        },
+        {
+          "name": "car",
+          "label": "a % of value, every year"
+        },
+        {
+          "name": "warning",
+          "label": "thousands over a decade"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Then fuel. States set their own gas taxes, so the price per gallon — and the ten-year fuel bill — swings hundreds or thousands of dollars by location. Add long rural commutes in some states versus short city trips in others, and the gap widens further. Where you drive quietly rewrites how much every mile costs you.",
+      "props": [
+        {
+          "name": "gaspump",
+          "label": "state gas taxes differ"
+        },
+        {
+          "name": "car",
+          "label": "commute length matters"
+        },
+        {
+          "name": "receipt",
+          "label": "every mile priced by place"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And don't forget the quiet fees: title, registration renewals, emissions tests, tolls, and parking. Individually they're small and forgettable. Across ten years and a whole state's fee schedule, they can add up to thousands more. They're the barnacles of car ownership — tiny, constant, and collectively heavy.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "title, tolls, parking, tests"
+        },
+        {
+          "name": "calendar",
+          "label": "small but constant"
+        },
+        {
+          "name": "warning",
+          "label": "thousands over a decade"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "So how do you actually cut the ten-year bill?",
+      "heading": "What To Do",
+      "kicker": "slash the real cost"
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "sourceId": "wiki-carfinance",
+      "narration": "First, be careful with car finance — the financial products which allow individuals to purchase or lease a vehicle. Loans and leases make an expensive car feel affordable monthly, while quietly adding interest to an already-huge ten-year total. The easiest way to cut the bill is to borrow less, for a shorter term, on a cheaper car."
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And run the total-cost math before you fall in love with a model. A cheaper car with great reliability, cheap parts, and good gas mileage can cost half as much to own as a flashier one with the same sticker price. The smartest buyers compare ten-year costs, not window prices — and often walk away with more car for far less money.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "compare 10-year costs"
+        },
+        {
+          "name": "wrench",
+          "label": "reliability + cheap parts"
+        },
+        {
+          "name": "moneybag",
+          "label": "more car, less money"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "present",
+      "narration": "Second, beat depreciation by buying lightly used. Let someone else eat that brutal first-year drop, then buy a two or three-year-old car and drive it for a decade. You get almost the same vehicle, minus the steepest part of the cliff. This one move can cut your true ten-year cost by tens of thousands of dollars.",
+      "props": [
+        {
+          "name": "car",
+          "label": "buy 2-3 years used"
+        },
+        {
+          "name": "chartdown",
+          "label": "skip the worst drop"
+        },
+        {
+          "name": "moneybag",
+          "label": "save tens of thousands"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "present",
+      "narration": "And resist the upgrade itch. The fastest way to blow up your car costs is trading a perfectly good vehicle for a newer one every few years, resetting the depreciation cliff each time. Every trade-in restarts the most expensive phase of ownership. Patience with a car you already own is one of the quietest, most reliable ways to build wealth.",
+      "props": [
+        {
+          "name": "car",
+          "label": "resist the upgrade itch"
+        },
+        {
+          "name": "chartdown",
+          "label": "each trade resets the cliff"
+        },
+        {
+          "name": "snowball",
+          "label": "patience builds wealth"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "pose": "present",
+      "narration": "Third, shop insurance relentlessly and factor your state into the decision. Premiums for the identical driver can vary by hundreds between companies, and by thousands between states. If you're moving anyway, the cost to insure and register a car should be part of the math — it's a bigger lever than most people ever realize.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "shop insurance hard"
+        },
+        {
+          "name": "mappin",
+          "label": "factor in your state"
+        },
+        {
+          "name": "scale",
+          "label": "a bigger lever than you think"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And weigh whether you need the car at all, or just this many of them. A two-car household that drops to one, or a city dweller who leans on transit and the occasional rental, can erase an entire hundred-thousand-dollar ownership cost from their life. The cheapest car of all is the one you never had to own.",
+      "props": [
+        {
+          "name": "car",
+          "label": "do you need two?"
+        },
+        {
+          "name": "moneybag",
+          "label": "erase a $100K cost"
+        },
+        {
+          "name": "smiley",
+          "label": "the car you never own"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "pose": "present",
+      "narration": "And treat the whole thing as a system you design, not a single purchase you make. The car, the state, the financing, the insurer, and how long you keep it are all dials you control. Turn them together — cheaper car, cheaper state, less borrowing, longer ownership — and you can cut a hundred-thousand-dollar cost nearly in half.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "it's a system of dials"
+        },
+        {
+          "name": "calculator",
+          "label": "turn them together"
+        },
+        {
+          "name": "moneybag",
+          "label": "halve a $100K cost"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. A car isn't a thirty-thousand-dollar purchase — it's a hundred-thousand-dollar, ten-year commitment, and a big chunk of that bill is set by your state and your choices, not the car itself. Add up the whole decade before you sign, and buy the ownership you can afford, not just the sticker.",
+      "props": [
+        {
+          "name": "car",
+          "label": "a 10-year commitment"
+        },
+        {
+          "name": "receipt",
+          "label": "add up the decade"
+        },
+        {
+          "name": "scale",
+          "label": "buy the ownership, not the sticker"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this changed how you see the real cost of a car, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "car",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-tco",
+      "name": "Total cost of ownership (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Total_cost_of_ownership",
+      "quote": "ownership costs are significantly greater than the cost of purchasing or acquiring a product"
+    },
+    {
+      "id": "wiki-depr",
+      "name": "Depreciation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Depreciation",
+      "quote": "an actual reduction in the fair value of an asset"
+    },
+    {
+      "id": "wiki-insurance",
+      "name": "Vehicle insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vehicle_insurance",
+      "quote": "provide financial protection against physical damage or bodily injury"
+    },
+    {
+      "id": "wiki-roadtax",
+      "name": "Road tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Road_tax",
+      "quote": "a motorised vehicle to use it on a public road"
+    },
+    {
+      "id": "wiki-carfinance",
+      "name": "Car finance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Car_finance",
+      "quote": "financial products which allow individuals to purchase or lease a vehicle"
+    }
+  ],
+  "youtube": {
+    "title": "The Real Cost of a Car Over 10 Years in Every State",
+    "alts": [
+      "What a Car Really Costs Over 10 Years (Every State Ranked)",
+      "Why Your $30K Car Actually Costs $100K to Own"
+    ],
+    "hook": "That $30,000 car in the driveway doesn't cost $30,000 — over ten years it costs closer to $100,000, and how close depends enormously on which state you park it in. This is the true 10-year cost of owning a car, ranked across every US state. The sticker price is only about a third of the real bill: add depreciation (the biggest hidden cost — a new car loses ~60% of its value in 5 years), a decade of fuel, insurance, maintenance, registration/road tax, and financing interest, and the full cost swings by over $40,000 from the cheapest state (~$68K, Maine/Ohio) to the priciest (~$110K, Michigan/California). The single biggest state-level swing is car insurance — from under $900/year to over $3,200. We break down the full stack, rank the states, expose the insurance gap, and show exactly how to slash the bill: borrow less, buy lightly used to skip the depreciation cliff, shop insurance hard, keep a reliable car 15 years, and own fewer cars. Fully cited.",
+    "bullets": [
+      "The true 10-year cost: ~$100K for a $30K car",
+      "Depreciation: ~60% of value gone in 5 years",
+      "States ranked: ~$68K (Maine) to ~$110K (Michigan)",
+      "The insurance gap: under $900 to over $3,200 a year",
+      "Gas, road tax, and the fees nobody reads",
+      "How to slash it: used, insurance shopping, keep it longer"
+    ],
+    "tags": [
+      "cost of owning a car",
+      "true cost of car ownership",
+      "car costs by state",
+      "car insurance by state",
+      "depreciation",
+      "total cost of ownership",
+      "cheapest states to own a car",
+      "should i buy a car",
+      "car buying tips",
+      "used vs new car",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#cars",
+      "#carcost",
+      "#personalfinance",
+      "#carinsurance"
+    ],
+    "thumbnail": {
+      "hookTop": "A CAR OVER 10 YEARS",
+      "hookBot": "EVERY STATE RANKED",
+      "napkinNumber": "$30K = $100K",
+      "napkinSub": "true cost to own a decade",
+      "deco": "car"
+    },
+    "chapters": [
+      [
+        "the real price of owning a car",
+        "The true cost"
+      ],
+      [
+        "stack up every dollar a car demands",
+        "The full stack"
+      ],
+      [
+        "rank the states by the true ten-year bill",
+        "The ranking"
+      ],
+      [
+        "it's that brutal",
+        "The insurance gap"
+      ],
+      [
+        "gas, taxes, and the fees nobody reads",
+        "Gas, tax & fees"
+      ],
+      [
+        "how do you actually cut the ten-year bill",
+        "What to do"
+      ],
+      [
+        "car isn't a thirty-thousand-dollar purchase",
+        "The real lesson"
+      ]
+    ]
+  }
+}
