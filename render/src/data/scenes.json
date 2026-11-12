@@ -2,792 +2,790 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "In the nineteen-nineties, a house in most rich countries cost about three to four years of a family's income. Today, across the US, the UK, Canada, and Australia, it's often eight, ten, even twelve. Four different countries, four different governments — and the exact same crisis. Why did houses everywhere get so expensive, all at once?",
+    "narration": "The United States spends more on healthcare per person than almost any country in human history — roughly double what other rich nations spend. And in return, Americans live shorter lives than people in those cheaper systems. More money, worse results. Today, the true cost of healthcare around the world, and the mystery of where all that money actually goes.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "was 3-4× income"
+        "name": "medkit",
+        "label": "US: ~2× the spending"
       },
       {
-        "name": "chartup",
-        "label": "now 8-12×"
+        "name": "heart",
+        "label": "shorter lives"
       },
       {
-        "name": "mappin",
-        "label": "4 countries, 1 crisis"
+        "name": "warning",
+        "label": "where does it go?"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the clue that cracks the whole mystery. This didn't happen in just one country with one bad policy. It happened across four separate nations at roughly the same time. When the same disease breaks out everywhere at once, you're not looking at local bad luck — you're looking at a shared set of causes.",
-    "text": "4 nations, 1 pattern",
-    "sub": "the same housing crisis, everywhere at once",
-    "icon": "mappin"
+    "narration": "Here's the number that frames everything. The US spends around thirteen thousand dollars per person per year on health. The UK, Canada, and Australia spend roughly five to seven thousand — for universal coverage. Same medicine, same science. One country just pays double for it, and quietly gets less.",
+    "text": "$13K vs $5-7K",
+    "sub": "US health spend per person vs other rich nations",
+    "icon": "medkit"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "And it's actually bigger than four countries. New Zealand, Ireland, the Netherlands, much of urban Europe — the same unaffordability has erupted across the developed world. When a problem crosses this many borders with this little coordination, the cause can't be any one government. It has to be something structural they all share.",
+    "narration": "Zoom out and the totals are staggering. The US spends roughly four and a half trillion dollars a year on healthcare — close to one in every five dollars in the entire economy. Other rich countries spend around ten to eleven percent of their economy on health. America spends nearly eighteen. That gap alone is trillions.",
     "pose": "explain",
     "props": [
       {
-        "name": "mappin",
-        "label": "NZ, Ireland, Europe too"
+        "name": "moneybag",
+        "label": "~$4.5 trillion/year"
+      },
+      {
+        "name": "percent",
+        "label": "~18% of US economy"
       },
       {
         "name": "warning",
-        "label": "crosses every border"
-      },
-      {
-        "name": "scale",
-        "label": "the cause is structural"
+        "label": "others: ~10-11%"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we rank these four famous housing markets, uncover the identical four-part recipe that inflated them all, see which country is actually the worst, and reveal the single root cause hiding underneath. If you've ever wondered why a normal home now needs an abnormal income, this is your answer. Let's go.",
+    "narration": "So today we rank what healthcare actually costs across the rich world, uncover why the American bill is so monstrously high, follow the money through the insurance maze, and reveal the uniquely American outcome nobody else faces. If you've ever stared at a medical bill in disbelief, this explains why. Let's go.",
     "pose": "explain",
     "props": [
       {
         "name": "scale",
-        "label": "rank the 4"
+        "label": "rank the costs"
       },
       {
-        "name": "skyline",
-        "label": "the shared recipe"
+        "name": "receipt",
+        "label": "the insurance maze"
       },
       {
         "name": "warning",
-        "label": "the root cause"
+        "label": "the American outcome"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/disaster.jpg",
-    "meme": "Disaster Girl",
-    "memeTop": "told to 'just buy a house' like boomers did",
-    "memeBottom": "the house now costs 4x what it did back then",
-    "narration": "Because an entire generation keeps being told to simply do what their parents did — when the price tag on that advice has quadrupled. Before we rank the carnage, let's agree on how we measure it."
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "a $2,000 bill for a 10-minute ER visit",
+    "memeBottom": "and that's WITH insurance",
+    "narration": "Because in America, even having insurance doesn't protect you from a bill that would be unthinkable almost anywhere else. Before we rank the costs, let's be clear on what a healthcare system even is."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, how we compare housing across countries.",
-    "heading": "The Measure",
-    "kicker": "price vs income"
+    "narration": "First, what a health system actually is.",
+    "heading": "The Basics",
+    "kicker": "how care gets paid for"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "Economists track this with a house price index, which measures the price changes of residential housing as a percentage change from some start date. Line up those indexes against incomes, and you get the number that actually matters: how many years of pay a typical home costs. That's the fairest way to compare wildly different countries.",
-    "sourceId": "wiki-hpi"
+    "narration": "A health system is a set of organizations, institutions and resources whose primary goal is to produce actions to improve health. Every rich country has excellent doctors and hospitals. What differs — massively — is how the whole thing is paid for. And that payment design is where almost the entire cost gap comes from.",
+    "sourceId": "wiki-healthsys"
   },
   {
     "id": "s7",
-    "type": "stage",
-    "narration": "And the goal everyone's chasing is simple: affordable housing. Economists define it as housing which is deemed affordable to those with a household income at or below the median — the typical family. The rule of thumb is a home costing around three to five years of income. Every one of our four countries has blown past that.",
-    "motif": "pricetoincomeladder",
-    "caption": "affordable ≈ 3-5× income — all four blew past it"
+    "type": "screenshot",
+    "narration": "Most wealthy countries run some form of universal health care — a system in which all citizens of a country have some level of health coverage. Taxes fund it, everyone's in, and the government negotiates prices on behalf of the entire nation. It's not free, but it's collectively bought, in bulk, at a discount.",
+    "sourceId": "wiki-uhc"
   },
   {
     "id": "s8",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Home price-to-income ratio by country (×)",
-    "unit": "×",
-    "narration": "Here's the lineup. The United States, helped by lots of buildable land, sits around five times income. The United Kingdom, around eight. Australia, around nine. And Canada's hottest markets near twelve. Every single one is above the affordable range — some catastrophically so.",
-    "data": [
-      {
-        "label": "US",
-        "value": 5
-      },
-      {
-        "label": "UK",
-        "value": 8
-      },
-      {
-        "label": "Australia",
-        "value": 9
-      },
-      {
-        "label": "Canada",
-        "value": 12
-      }
-    ],
-    "highlight": 3
+    "type": "screenshot",
+    "narration": "The US took a different road. Healthcare in the United States is largely provided by private sector facilities and paid for through a patchwork of private insurance, employers, and government programs. No single buyer, no single price list — a fragmented market where, remarkably, almost nobody knows what anything costs until the bill arrives.",
+    "sourceId": "wiki-ushealth"
   },
   {
     "id": "s42",
-    "type": "callout",
-    "narration": "In raw prices, the gap is brutal. A typical US home runs around four hundred thousand dollars. In the UK, roughly three hundred thousand pounds. In Canada and Australia, well north of seven hundred thousand in local dollars — and far higher in their big cities. Different currencies, same sticker shock.",
-    "text": "$400K+ / £290K+",
-    "sub": "typical home prices — far higher in the big cities",
-    "icon": "house"
-  },
-  {
-    "id": "s43",
     "type": "character",
-    "narration": "To feel what a ratio of ten really means: a family would have to save every single dollar they earn — spending nothing on food, taxes, or rent — for a full decade, just to buy one average home outright. In reality, saving a fraction of income, it becomes the work of a lifetime.",
+    "narration": "And the American patchwork has strange holes. Tens of millions are uninsured or underinsured. Most working-age people get coverage through their employer — a historical accident — which means losing your job can mean losing your healthcare, and changing jobs can mean changing doctors. Coverage is quietly chained to employment.",
     "pose": "explain",
     "props": [
       {
-        "name": "coins",
-        "label": "10× = 10 years of all income"
-      },
-      {
-        "name": "hourglass",
-        "label": "realistically, a lifetime"
-      },
-      {
         "name": "warning",
-        "label": "to buy ONE home"
+        "label": "tens of millions uninsured"
+      },
+      {
+        "name": "handshake",
+        "label": "coverage tied to your job"
+      },
+      {
+        "name": "medkit",
+        "label": "lose the job, lose the care"
       }
     ]
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So why did all four climb together? Meet the recipe.",
-    "heading": "The Recipe",
-    "kicker": "four shared ingredients"
+    "narration": "So let's see the raw numbers, country by country.",
+    "heading": "The Ranking",
+    "kicker": "spend per person"
   },
   {
     "id": "s10",
     "type": "stage",
-    "narration": "Every one of these countries mixed the same four ingredients. Cheap credit, from a decade of ultra-low interest rates. Under-building, where supply never kept pace. Homes treated as investment assets, not just shelter. And tight zoning that made it hard to build density. Combine all four, and prices detonate — guaranteed.",
-    "motif": "sameplaybook",
-    "caption": "cheap credit + under-building + assets + zoning"
+    "narration": "Here's annual health spending per person. The UK runs around five thousand dollars. Australia and Canada, six to seven. And the United States towers over all of them near thirteen thousand — far more than any peer. Every one of those cheaper countries covers everyone. The US, spending double, still leaves millions underinsured.",
+    "motif": "healthspendbars",
+    "caption": "the US pays roughly double — and covers fewer"
   },
   {
     "id": "s11",
-    "type": "title",
-    "narration": "Ingredient one: a decade of nearly free money.",
-    "heading": "Cheap Credit",
-    "kicker": "low rates, big loans"
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Health spending per person per year ($K)",
+    "unit": "$K",
+    "narration": "Put them side by side and the gap is almost comical. The UK at five. Canada and Australia around six and seven. And the US at thirteen thousand dollars a head. That difference, multiplied across three hundred million people, is trillions of dollars a year — vanishing into a more expensive way to buy the same care.",
+    "data": [
+      {
+        "label": "UK",
+        "value": 5
+      },
+      {
+        "label": "Canada",
+        "value": 6
+      },
+      {
+        "label": "Australia",
+        "value": 7
+      },
+      {
+        "label": "US",
+        "value": 13
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s43",
+    "type": "callout",
+    "narration": "And remember what that cheaper spending buys elsewhere: care that's essentially free at the point of use. No bill after a hospital stay, no deductible before treatment, no bankruptcy from getting sick. Citizens in those countries pay through taxes — but they never get handed a surprise invoice for surviving.",
+    "text": "free at point of use",
+    "sub": "cheaper systems still cover everyone, with no surprise bill",
+    "icon": "shield"
   },
   {
     "id": "s12",
-    "type": "character",
-    "narration": "After the two thousand eight crash, central banks in all four countries slashed interest rates to near zero and held them there for over a decade. Suddenly, buyers could borrow enormous sums for tiny monthly payments. But cheap money doesn't make homes cheaper — it just hands everyone more to bid, and that extra firepower gets poured straight into prices.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "rates near zero for a decade"
-      },
-      {
-        "name": "bank",
-        "label": "huge loans, tiny payments"
-      },
-      {
-        "name": "chartup",
-        "label": "more to bid = higher prices"
-      }
-    ]
-  },
-  {
-    "id": "s44",
-    "type": "character",
-    "narration": "Then came the twist that made it even crueler. When rates finally shot up in 2022, prices dipped a little — but affordability got worse, not better. A smaller loan at a much higher rate can cost more per month than a bigger loan did when money was free. Buyers got squeezed coming and going.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "percent",
-        "label": "rates jumped in 2022"
-      },
-      {
-        "name": "chartdown",
-        "label": "prices dipped a little"
-      },
-      {
-        "name": "warning",
-        "label": "but payments rose"
-      }
-    ]
+    "type": "title",
+    "narration": "So where does all that extra American money actually go?",
+    "heading": "The Drivers",
+    "kicker": "why the US pays double"
   },
   {
     "id": "s13",
-    "type": "title",
-    "narration": "Ingredient two — and the deepest one: not enough homes.",
-    "heading": "The Shortage",
-    "kicker": "building too little"
+    "type": "stage",
+    "narration": "It's not that Americans use more care — they actually visit doctors less than many peers. The money disappears into four holes: staggering administrative overhead, sky-high drug prices, a fee-for-service model that rewards doing more, and prices set in secret with nobody negotiating them down. Higher prices, not more care, is the whole story.",
+    "motif": "uscostdrivers",
+    "caption": "higher prices, not more care"
+  },
+  {
+    "id": "s44",
+    "type": "image",
+    "src": "img/memes/changemymind.jpg",
+    "meme": "Change My Mind",
+    "memeTop": "US healthcare is a free market that sets fair prices",
+    "memeBottom": "you can't see the price until after you're treated",
+    "narration": "This is the myth that props the whole thing up. A real free market needs prices you can see and compare. In US healthcare, you often can't learn the price until the bill arrives — which isn't a free market at all. It's a blindfolded one."
   },
   {
     "id": "s14",
-    "type": "screenshot",
-    "narration": "This is where real estate economics — the application of economic techniques to real estate markets — points the finger. For decades, all four countries built fewer homes than their growing populations needed. Demand rose relentlessly; supply dragged behind. There is no way to escape that math except with a very large bill.",
-    "sourceId": "wiki-reecon"
-  },
-  {
-    "id": "s15",
-    "type": "stage",
-    "narration": "Picture the running gap. The number of homes needed climbs year after year with population and immigration. The number actually built limps along, held back by slow permits and labor shortages. The space between those two lines is the housing deficit — and it's measured in the millions of missing homes across these four countries.",
-    "motif": "buildingdeficit",
-    "caption": "needed kept rising; built fell behind"
-  },
-  {
-    "id": "s45",
-    "type": "image",
-    "src": "img/memes/gru.jpg",
-    "meme": "Gru's Plan",
-    "memeTop": "promise voters more affordable housing",
-    "memeBottom": "also protect every homeowner's rising value",
-    "narration": "And here's the contradiction baked into every one of these countries. Politicians promise cheaper homes for buyers while quietly protecting the soaring values of the owners who vote. You cannot do both — and that quiet impossibility is a huge reason nothing gets built."
-  },
-  {
-    "id": "s46",
     "type": "character",
-    "narration": "So why did building slow so badly? A pile-up of reasons: neighbors who fight new development, slow and costly permit processes, shortages of skilled construction labor, expensive materials, and developers who sometimes sit on land waiting for prices to rise. Each is small; together they strangle supply for decades.",
+    "narration": "Take administration first. In a fragmented system with thousands of insurers, every hospital needs armies of staff just to argue over billing codes and claims. Studies suggest the US spends several times more on healthcare administration than single-payer countries. A huge slice of your medical bill pays for paperwork, not medicine.",
     "pose": "explain",
     "props": [
       {
+        "name": "receipt",
+        "label": "armies of billing staff"
+      },
+      {
         "name": "warning",
-        "label": "neighbors fight new homes"
+        "label": "many insurers, endless codes"
       },
       {
-        "name": "crane",
-        "label": "slow permits, scarce labor"
+        "name": "medkit",
+        "label": "paperwork, not medicine"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "character",
+    "narration": "Then there are drug prices. The exact same medication, made by the exact same company, routinely costs two, three, even ten times more in the US than abroad. Why? Other countries negotiate as one giant buyer and say no to high prices. America's fragmented system largely doesn't — so it pays whatever is asked.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "pills",
+        "label": "same drug, 2-10× the price"
       },
       {
-        "name": "chartdown",
-        "label": "supply gets strangled"
+        "name": "mappin",
+        "label": "others negotiate as one buyer"
+      },
+      {
+        "name": "warning",
+        "label": "the US mostly doesn't"
+      }
+    ]
+  },
+  {
+    "id": "s45",
+    "type": "character",
+    "narration": "The clearest example is insulin. A vial that costs a few dollars to make, and sells for around thirty in other countries, has cost Americans hundreds. Same drug, same maker — the only difference is who's allowed to negotiate the price. Recent caps helped, but the underlying pricing power is the real story.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "pills",
+        "label": "insulin: ~$30 abroad"
+      },
+      {
+        "name": "warning",
+        "label": "hundreds in the US"
+      },
+      {
+        "name": "scale",
+        "label": "same drug, different negotiator"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "title",
-    "narration": "Ingredient three: the home stopped being just a home.",
-    "heading": "The Asset",
-    "kicker": "shelter as speculation"
-  },
-  {
-    "id": "s17",
-    "type": "stage",
-    "narration": "Across all four countries, housing quietly transformed from a place to live into the premier way to store and grow wealth. Once a home is treated like a stock that pays you to live in it, investors, landlords, and speculators flood in — bidding against ordinary families and pushing prices far above what local wages could ever justify.",
-    "motif": "homesasinvestment",
-    "caption": "a home became an asset class"
-  },
-  {
-    "id": "s47",
     "type": "character",
-    "narration": "The asset story has two sharp edges. Foreign investors park cash in these stable markets, sometimes leaving homes empty. And short-term rentals — think whole apartments turned into year-round holiday lets — quietly pull thousands of homes out of the market for locals. Both turn scarce shelter into someone else's income stream.",
+    "narration": "And the payment model itself pushes costs up. In a fee-for-service system, providers are paid for every test, scan, and procedure they perform — not for keeping you healthy. That quietly rewards doing more, ordering more, billing more. The incentives are pointed in exactly the wrong direction.",
     "pose": "explain",
     "props": [
       {
-        "name": "moneybag",
-        "label": "foreign cash, empty homes"
-      },
-      {
-        "name": "apartment",
-        "label": "short-term rentals"
+        "name": "chartup",
+        "label": "paid per procedure"
       },
       {
         "name": "warning",
-        "label": "homes pulled from locals"
+        "label": "rewards doing MORE"
+      },
+      {
+        "name": "receipt",
+        "label": "not keeping you well"
       }
     ]
+  },
+  {
+    "id": "s46",
+    "type": "character",
+    "narration": "Fee-for-service also breeds defensive medicine. When every extra test is billable — and doctors fear lawsuits — the safe move is to order more scans, more labs, more follow-ups. A lot of that care adds cost without adding health. The system pays generously for doing something, and almost nothing for simply saying 'you're fine.'",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "extra tests = extra billing"
+      },
+      {
+        "name": "warning",
+        "label": "defensive medicine"
+      },
+      {
+        "name": "chartup",
+        "label": "cost up, health flat"
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "type": "title",
+    "narration": "Now follow the money through the maze most Americans live inside.",
+    "heading": "The Maze",
+    "kicker": "premiums & deductibles"
   },
   {
     "id": "s18",
     "type": "screenshot",
-    "narration": "When prices climb that far above what incomes and rents justify, economists reach for a loaded word: an economic bubble — a period when current asset prices greatly exceed their intrinsic valuation. Whether these markets are true bubbles or a grim new normal is debated endlessly. But the detachment from wages is undeniable.",
-    "sourceId": "wiki-ecobubble"
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "And this creates a nasty trap. So much of each nation's wealth is now tied up in housing that nobody can afford to let prices truly fall. A big crash would wipe out homeowners and threaten the banks. So governments gently prop prices up — which protects today's owners while permanently locking out tomorrow's buyers.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "bank",
-        "label": "wealth tied up in homes"
-      },
-      {
-        "name": "warning",
-        "label": "a crash would hit banks"
-      },
-      {
-        "name": "scale",
-        "label": "so prices get propped up"
-      }
-    ]
+    "narration": "Most Americans rely on health insurance — a type of insurance that covers the whole or a part of the risk of a person incurring medical expenses. But American insurance is a maze of premiums, deductibles, copays, and networks so complex that even insured people routinely get hit with surprise bills they can't decode.",
+    "sourceId": "wiki-healthins"
   },
   {
     "id": "s19",
-    "type": "title",
-    "narration": "Ingredient four: it's often illegal to build the solution.",
-    "heading": "Zoning",
-    "kicker": "the rules that block homes"
-  },
-  {
-    "id": "s20",
     "type": "character",
-    "narration": "In all four countries, vast areas near jobs are zoned for detached single-family homes only. That makes the dense, cheaper apartments and townhomes a growing population needs effectively illegal to build in the very places people most want to live. The affordable home is often the one the rulebook forbids.",
+    "narration": "Walk the maze. First you pay a monthly premium just to have coverage. Then a deductible — often thousands — that you pay before insurance pays anything. Then copays and coinsurance on top. Go to the wrong, out-of-network hospital, and you can owe the full, uncapped price. It's insurance that still leaves you exposed.",
     "pose": "explain",
     "props": [
       {
-        "name": "house",
-        "label": "single-family-only zoning"
-      },
-      {
-        "name": "crane",
-        "label": "density is often banned"
+        "name": "receipt",
+        "label": "premium + deductible + copay"
       },
       {
         "name": "warning",
-        "label": "the cheap home is illegal"
+        "label": "out-of-network = full price"
+      },
+      {
+        "name": "coins",
+        "label": "covered, but still exposed"
       }
     ]
   },
   {
-    "id": "s49",
-    "type": "callout",
-    "narration": "There's a name for the banned solution: the 'missing middle' — duplexes, triplexes, and low-rise apartments between single houses and towers. For decades it was zoned out of existence. The encouraging news: cities from Auckland to Minneapolis have re-legalized it, and prices there rose markedly slower than their neighbors.",
-    "text": "the 'missing middle'",
-    "sub": "re-legalizing it worked in Auckland, Minneapolis & more",
-    "icon": "apartment"
+    "id": "s47",
+    "type": "character",
+    "narration": "The employer link creates a quiet trap called job lock. People stay in jobs they hate, or avoid starting a business, purely to keep their health insurance. In universal systems, your coverage follows you no matter what you do. In the US, a career move can be a medical gamble — which subtly shrinks everyone's freedom.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "'job lock'"
+      },
+      {
+        "name": "warning",
+        "label": "can't risk losing coverage"
+      },
+      {
+        "name": "medkit",
+        "label": "freedom quietly shrinks"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "title",
+    "narration": "And that exposure leads somewhere no other rich country goes.",
+    "heading": "The Outcome",
+    "kicker": "medical bankruptcy"
   },
   {
     "id": "s21",
-    "type": "title",
-    "narration": "So who actually has it worst?",
-    "heading": "The Ranking",
-    "kicker": "worst to least-bad"
+    "type": "stage",
+    "narration": "Here's the result that stuns the rest of the world: in America, getting sick can bankrupt you. Medical bills are among the leading causes of personal bankruptcy in the United States — a phenomenon that is virtually nonexistent in countries with universal care. Nowhere else does an illness routinely become a financial catastrophe.",
+    "motif": "medicalbankruptcy",
+    "caption": "a top cause of US bankruptcy — almost unique"
+  },
+  {
+    "id": "s48",
+    "type": "callout",
+    "narration": "The scale is uniquely grim. Medical debt sits on the credit reports of tens of millions of Americans, and online fundraisers for medical bills — a genre that barely exists elsewhere — are everywhere. In most rich countries, 'crowdfunding your surgery' would sound like a dystopian joke. In the US, it's Tuesday.",
+    "text": "100M+ with medical debt",
+    "sub": "and a whole industry of crowdfunding medical bills",
+    "icon": "receipt"
   },
   {
     "id": "s22",
     "type": "character",
-    "narration": "By the raw price-to-income ratio, Canada takes the grim crown, with Australia close behind — both cramming huge, growing populations into a few coastal cities. The UK suffers from centuries-old, extremely restrictive building rules. The US is the least unaffordable of the four overall, saved mostly by its sheer abundance of buildable land.",
+    "narration": "Think about how strange that is. In the UK, Canada, or Australia, you can have a heart attack, spend a week in intensive care, and walk out owing essentially nothing. In the US, that same week can arrive as a bill for tens, even hundreds of thousands of dollars. Same treatment, wildly different aftermath.",
     "pose": "explain",
     "props": [
       {
-        "name": "mapleleaf",
-        "label": "Canada: worst"
+        "name": "heart",
+        "label": "same heart attack"
       },
       {
-        "name": "mappin",
-        "label": "Australia close behind"
-      },
-      {
-        "name": "house",
-        "label": "US least-bad: more land"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "narration": "Each country has its own villain, too. Britain's is a near-sacred 'green belt' of protected land ringing its cities, plus some of the oldest, most restrictive planning laws on earth — so London builds painfully little while demand roars. The UK's crisis is less about new demand and more about centuries of 'no.'",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "mappin",
-        "label": "UK: the 'green belt'"
+        "name": "smiley",
+        "label": "UK/CA/AU: owe ~nothing"
       },
       {
         "name": "warning",
-        "label": "centuries of planning 'no'"
-      },
-      {
-        "name": "skyline",
-        "label": "London builds too little"
+        "label": "US: a six-figure bill"
       }
     ]
   },
   {
     "id": "s23",
+    "type": "title",
+    "narration": "But here's the question that really matters: is the expensive system better?",
+    "heading": "Spend vs Health",
+    "kicker": "does the money buy health?"
+  },
+  {
+    "id": "s24",
+    "type": "stage",
+    "narration": "This is the gut-punch. If spending double bought better health, you could maybe justify it. But it doesn't. The US spends the most of any major nation — and has a lower life expectancy than the UK, Canada, Australia, and most of the developed world. The extra trillions simply don't show up in longer lives.",
+    "motif": "spendvsoutcome",
+    "caption": "most spending, shorter lives"
+  },
+  {
+    "id": "s49",
     "type": "character",
-    "narration": "But the US hides a huge split. Build-friendly states like Texas kept homes relatively affordable by letting construction rip. Tightly-zoned coastal markets like California and New York are as brutal as anywhere on earth. The national average is gentle only because cheap, fast-building regions drag it down.",
+    "narration": "To be fair, not all of the outcome gap is the system's fault — diet, cars, and other factors play a role. But a big piece is healthcare itself: when millions delay or skip care because they fear the bill, problems that are cheap to catch early become expensive, deadly emergencies later. Avoiding the doctor to save money quietly costs lives.",
     "pose": "explain",
     "props": [
       {
-        "name": "crane",
-        "label": "Texas: built a lot, stayed cheap"
+        "name": "warning",
+        "label": "skipping care to save money"
       },
       {
-        "name": "skyline",
-        "label": "California: brutal"
+        "name": "heart",
+        "label": "small problems turn deadly"
       },
       {
         "name": "scale",
-        "label": "the average hides the split"
+        "label": "not all the gap is the system"
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "type": "screenshot",
+    "narration": "That outcome is measured by life expectancy — a statistical estimate of the average remaining years of life at a given age. Despite leading the world in spending, the US trails its peers by several years. Money is clearly flowing somewhere other than into keeping Americans alive longer.",
+    "sourceId": "wiki-lifeexp"
+  },
+  {
+    "id": "s26",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Life expectancy at birth (years)",
+    "unit": "yrs",
+    "narration": "Here are the lifespans. Australia near eighty-three. Canada around eighty-two. The UK about eighty-one. And the US, despite spending nearly double, down around seventy-seven to seventy-eight. The country paying the most to stay alive lives the fewest years. That single comparison breaks the 'you get what you pay for' assumption entirely.",
+    "data": [
+      {
+        "label": "US",
+        "value": 77
+      },
+      {
+        "label": "UK",
+        "value": 81
+      },
+      {
+        "label": "Canada",
+        "value": 82
+      },
+      {
+        "label": "Australia",
+        "value": 83
+      }
+    ],
+    "highlight": 0
+  },
+  {
+    "id": "s50",
+    "type": "character",
+    "narration": "And the US average hides brutal inequality. Wealthy, insured Americans can get some of the finest care on earth. Poor and uninsured Americans have outcomes closer to far less developed nations. The system delivers world-leading medicine to some, and a health crisis to others — in the same country, often the same city.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "huge gaps by income"
+      },
+      {
+        "name": "smiley",
+        "label": "rich: world-class care"
+      },
+      {
+        "name": "warning",
+        "label": "poor: left behind"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "title",
+    "narration": "So why doesn't America just switch to the cheaper system?",
+    "heading": "Why Not Switch?",
+    "kicker": "the trillion-dollar trap"
+  },
+  {
+    "id": "s28",
+    "type": "character",
+    "narration": "Because that 'wasted' spending is somebody's income. Every dollar of America's sky-high bill is revenue for insurers, hospitals, and drug companies — a multi-trillion-dollar industry that lobbies fiercely to keep things as they are. The system isn't broken from their point of view. For them, the high price is the entire point.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "the bill = their revenue"
+      },
+      {
+        "name": "bank",
+        "label": "a multi-trillion industry"
+      },
+      {
+        "name": "warning",
+        "label": "high price IS the point"
+      }
+    ]
+  },
+  {
+    "id": "s29",
+    "type": "character",
+    "narration": "There are also real fears about change. People worry about higher taxes, longer wait times, and losing the cutting-edge care the US genuinely does well. Those concerns aren't silly — but the data shows other countries deliver universal coverage, similar or better outcomes, and still spend far less. The trade-offs are smaller than the fear suggests.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "scale",
+        "label": "real fears: taxes, waits"
+      },
+      {
+        "name": "smiley",
+        "label": "others: cover all, spend less"
+      },
+      {
+        "name": "chartdown",
+        "label": "trade-offs smaller than feared"
       }
     ]
   },
   {
     "id": "s51",
     "type": "character",
-    "narration": "Australia has a special accelerant: generous tax breaks for property investors, like negative gearing, that make owning multiple homes extremely attractive. Pour tax-advantaged investor money into a tight supply, and you supercharge demand for the exact homes first-time buyers are trying to reach. The tax code itself bids against the young.",
+    "narration": "And debunk the wait-times myth while we're here. The US has long waits too — for appointments, for prior authorizations, for insurer approvals. Universal systems do triage non-urgent care, so a minor issue may wait. But for anything serious, outcomes and timeliness are broadly comparable, at half the price.",
     "pose": "explain",
     "props": [
       {
-        "name": "receipt",
-        "label": "AU: investor tax breaks"
-      },
-      {
-        "name": "moneybag",
-        "label": "many investors, few homes"
-      },
-      {
         "name": "warning",
-        "label": "the tax code bids against youth"
+        "label": "the US waits too"
+      },
+      {
+        "name": "scale",
+        "label": "comparable for serious care"
+      },
+      {
+        "name": "coins",
+        "label": "at half the price"
       }
     ]
   },
   {
-    "id": "s24",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Approx. home-price growth since 2000 (%)",
-    "unit": "%",
-    "narration": "Look at how far prices ran since the year two thousand. US homes roughly doubled in price. But the UK, Canada, and Australia saw prices climb two hundred, even three hundred percent and more. Incomes, in every one of these countries, grew only a fraction as fast.",
-    "data": [
-      {
-        "label": "US",
-        "value": 120
-      },
-      {
-        "label": "UK",
-        "value": 200
-      },
-      {
-        "label": "Australia",
-        "value": 250
-      },
-      {
-        "label": "Canada",
-        "value": 300
-      }
-    ],
-    "highlight": 3
-  },
-  {
-    "id": "s25",
+    "id": "s30",
     "type": "title",
-    "narration": "So what's the single thread tying all four together?",
-    "heading": "The Root",
-    "kicker": "it's supply"
+    "narration": "So what does this mean for you, living inside whichever system you've got?",
+    "heading": "What To Do",
+    "kicker": "surviving the bill"
   },
   {
-    "id": "s26",
-    "type": "stage",
-    "narration": "Strip away the details and one cause towers over the rest: supply and demand. You can blame rates, investors, or immigration — but every one of those is a demand story. The thing all four countries share is a chronic failure on the supply side. They simply did not build enough homes, for decades. Everything else just poured fuel on that fire.",
-    "motif": "demandvssupply",
-    "caption": "the common root: too few homes built"
+    "id": "s31",
+    "type": "character",
+    "narration": "If you're in the US, treat healthcare like the financial minefield it is. Never skip employer coverage that includes a match or subsidy. Always check if a provider is in-network before you go. And for any big procedure, ask for the price in advance and negotiate the bill afterward — hospitals quietly discount far more often than you'd think.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "shield",
+        "label": "take subsidized coverage"
+      },
+      {
+        "name": "mappin",
+        "label": "check in-network first"
+      },
+      {
+        "name": "receipt",
+        "label": "ask the price, then negotiate"
+      }
+    ]
   },
   {
     "id": "s52",
     "type": "character",
-    "narration": "Want the ultimate proof that supply is the answer? Look at Japan. Tokyo is one of the biggest cities on earth, yet it builds housing freely with light national zoning — and homes there stayed remarkably affordable for decades. Same global low rates, same rich-country demand. The difference was simply that Japan kept building.",
-    "pose": "explain",
+    "narration": "A few concrete money-savers in the US: use telehealth and urgent care for minor issues instead of the ER, which can cost ten times more. Always ask for the generic version of any drug. And for scheduled procedures, get an itemized estimate in writing — vague 'it depends' answers are how surprise bills are born.",
+    "pose": "present",
     "props": [
       {
-        "name": "skyline",
-        "label": "Tokyo builds freely"
+        "name": "medkit",
+        "label": "urgent care, not the ER"
       },
       {
-        "name": "crane",
-        "label": "light zoning"
+        "name": "pills",
+        "label": "ask for generics"
       },
       {
-        "name": "smiley",
-        "label": "stayed affordable"
+        "name": "receipt",
+        "label": "get an itemized estimate"
       }
     ]
-  },
-  {
-    "id": "s27",
-    "type": "character",
-    "narration": "And the clinching proof is the exception. The few places on earth that did build aggressively — parts of the US sunbelt, cities that aggressively upzoned — kept housing far more affordable, even with booming populations. Where homes got built, prices behaved. Where they didn't, prices exploded. Supply is the whole ballgame.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crane",
-        "label": "places that built"
-      },
-      {
-        "name": "smiley",
-        "label": "stayed affordable"
-      },
-      {
-        "name": "chartup",
-        "label": "places that didn't → exploded"
-      }
-    ]
-  },
-  {
-    "id": "s28",
-    "type": "title",
-    "narration": "What does this mean for the people living in it?",
-    "heading": "The Human Cost",
-    "kicker": "a locked-out generation"
-  },
-  {
-    "id": "s29",
-    "type": "screenshot",
-    "narration": "The casualty is owner-occupancy — a form of housing tenure in which a person owns the home in which they live. For generations it was the default path into the middle class. Across all four countries, homeownership rates among the young are now falling, as the first rung of the ladder drifts out of reach.",
-    "sourceId": "wiki-ownocc"
-  },
-  {
-    "id": "s53",
-    "type": "callout",
-    "narration": "The ownership numbers tell the story plainly. Homeownership among young adults has slid in all four countries over the past two decades, while the average age of a first-time buyer keeps climbing. A milestone that used to arrive in your twenties now often waits until your late thirties — if it arrives at all.",
-    "text": "first buyers: late 30s",
-    "sub": "young ownership falling across all four countries",
-    "icon": "chartdown"
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "The result is the same story in four accents. Young people living with parents longer. Record rents eating paychecks. Families relying on inheritance just to make a down payment. Shelter, the most basic need, has quietly become a dividing line between those whose families already own, and those locked out.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "house",
-        "label": "living home longer"
-      },
-      {
-        "name": "apartment",
-        "label": "record rents"
-      },
-      {
-        "name": "scale",
-        "label": "a new dividing line"
-      }
-    ]
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "And the ripple effects run deep. When shelter eats this much income, people delay marriage and children, birth rates sag, and wealth concentrates in the hands of those who already owned. A housing crisis isn't just about houses — it quietly reshapes families, demographics, and the entire social contract.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "warning",
-        "label": "delayed families, lower birth rates"
-      },
-      {
-        "name": "scale",
-        "label": "wealth concentrates"
-      },
-      {
-        "name": "house",
-        "label": "it reshapes society"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "title",
-    "narration": "So how does any country actually fix this?",
-    "heading": "The Fix",
-    "kicker": "build, and build more"
   },
   {
     "id": "s32",
     "type": "character",
-    "narration": "The cure is unglamorous and identical everywhere: build far more homes, especially dense ones, and reform the zoning that blocks them. Countries and cities that have loosened their rules are already seeing prices cool. The demand-side tricks — buyer taxes, grants, incentives — mostly just push prices around. Only supply truly brings them down.",
+    "narration": "Build a health emergency fund, and if you're on a high-deductible plan, use a health savings account — it's triple tax-advantaged and one of the best accounts in all of American finance. In a system that can hand you a surprise five-figure bill, a dedicated cash cushion isn't optional. It's armor.",
     "pose": "present",
     "props": [
       {
-        "name": "crane",
-        "label": "build way more, denser"
+        "name": "piggybank",
+        "label": "health emergency fund"
       },
       {
-        "name": "house",
-        "label": "reform zoning"
+        "name": "chartup",
+        "label": "HSA: triple tax-advantaged"
       },
       {
-        "name": "chartdown",
-        "label": "supply is the only cure"
+        "name": "shield",
+        "label": "a cushion is armor"
       }
     ]
   },
   {
-    "id": "s55",
+    "id": "s53",
     "type": "character",
-    "narration": "And beware the fake fixes. First-home-buyer grants, subsidies, and tax credits feel helpful, but in a supply shortage they mostly hand buyers more money to bid with — which sellers simply pocket as higher prices. Helping demand without adding supply is like pouring water into a leaking bucket. It vanishes into the price.",
+    "narration": "One underused American superpower: the health savings account. Money goes in tax-free, grows tax-free, and comes out tax-free for medical costs — the only account with all three perks. And after sixty-five it works like a retirement account. Max it, invest it, and it quietly becomes one of the best wealth tools you have.",
     "pose": "present",
     "props": [
       {
-        "name": "receipt",
-        "label": "first-buyer grants"
-      },
-      {
         "name": "chartup",
-        "label": "just raise prices"
+        "label": "HSA: triple tax-free"
       },
       {
-        "name": "warning",
-        "label": "water into a leaky bucket"
+        "name": "piggybank",
+        "label": "invest it, don't spend it"
+      },
+      {
+        "name": "smiley",
+        "label": "a stealth retirement account"
       }
     ]
   },
   {
     "id": "s33",
     "type": "character",
-    "narration": "But there's a shared political trap, too. In all four countries, most voters already own homes, and cheaper housing means their biggest asset stops growing. So governments quietly protect prices for owners while promising affordability for buyers — two goals that can't both be met. That contradiction is why the crisis drags on for decades.",
-    "pose": "explain",
+    "narration": "And know your rights. The US has curbed some of the worst surprise out-of-network billing, hospitals must publish prices, and non-profit hospitals are required to offer financial assistance. Most people never ask. The bill you first receive is very often a starting offer, not a final, fixed price.",
+    "pose": "present",
     "props": [
       {
-        "name": "scale",
-        "label": "owners vs buyers"
+        "name": "receipt",
+        "label": "the first bill is an offer"
       },
       {
-        "name": "warning",
-        "label": "two goals, can't both win"
+        "name": "handshake",
+        "label": "ask for financial aid"
       },
       {
-        "name": "house",
-        "label": "why it never gets fixed"
+        "name": "smiley",
+        "label": "most never ask"
       }
     ]
   },
   {
     "id": "s34",
-    "type": "title",
-    "narration": "So what do you do, living inside one of these markets?",
-    "heading": "What To Do",
-    "kicker": "play a rigged game well"
-  },
-  {
-    "id": "s35",
     "type": "character",
-    "narration": "Be geographically ruthless. The same salary that leaves you a lifelong renter in Sydney, Toronto, or London can buy a comfortable home in a cheaper, build-friendly region. The single biggest housing decision you can make isn't when to buy — it's where. Your zip code matters more than almost anything.",
-    "pose": "present",
+    "narration": "And wherever you live, understand this is the single biggest hidden line item in your life. Americans pay for healthcare through premiums, taxes, and lower wages, often without ever seeing the true total. In universal systems, it's paid through taxes up front. Either way, you're paying — the only question is how visibly, and how much.",
+    "pose": "explain",
     "props": [
       {
-        "name": "mappin",
-        "label": "where > when"
+        "name": "receipt",
+        "label": "you always pay"
       },
       {
-        "name": "house",
-        "label": "cheaper regions exist"
+        "name": "percent",
+        "label": "premiums, taxes, or wages"
       },
       {
-        "name": "keys",
-        "label": "your zip code is the lever"
+        "name": "scale",
+        "label": "the only question is how much"
       }
     ]
   },
   {
-    "id": "s56",
+    "id": "s54",
+    "type": "callout",
+    "narration": "Put a lifetime number on it. The average American will pay somewhere around half a million dollars or more for healthcare over their life — through premiums, taxes, and out-of-pocket costs combined. It quietly rivals the cost of a house. Treating it as a major life expense, not an afterthought, is simply realistic.",
+    "text": "~$500,000+",
+    "sub": "lifetime healthcare cost per person — rivals a house",
+    "icon": "moneybag"
+  },
+  {
+    "id": "s35",
     "type": "character",
-    "narration": "One genuine new escape valve: remote work. For the first time, millions can earn a big-city salary while living somewhere affordable. It won't fix the hottest metros, but it hands individuals a real exit — and spreads demand toward cheaper regions that are often far happier to build.",
-    "pose": "present",
+    "narration": "Because the real lesson is counterintuitive: in healthcare, more spending does not mean more health. The most expensive system on earth delivers middle-of-the-pack results, because so much of the money is eaten by prices, paperwork, and profit before it ever reaches a patient. Efficiency, not spending, is what actually buys longer lives.",
+    "pose": "explain",
     "props": [
       {
-        "name": "smiley",
-        "label": "remote work escape"
+        "name": "moneybag",
+        "label": "more spend ≠ more health"
       },
       {
-        "name": "mappin",
-        "label": "big pay, cheap region"
+        "name": "warning",
+        "label": "eaten by prices + paperwork"
       },
       {
-        "name": "crane",
-        "label": "spreads demand to builders"
+        "name": "heart",
+        "label": "efficiency buys the years"
       }
     ]
   },
   {
     "id": "s36",
     "type": "character",
-    "narration": "And never confuse a high price with a good investment. In these inflated markets, renting and investing the difference can easily beat stretching into a crushing mortgage. A home you can comfortably afford builds wealth; one that makes you house-poor just transfers your future to the bank. Run the real math, not the fear.",
-    "pose": "present",
+    "narration": "So when you see that eye-watering medical bill, remember you're not mostly paying for better doctors or better science — you're paying for a uniquely expensive way to organize the exact same care. The treatment is world-class. The price tag is a choice.",
+    "pose": "explain",
     "props": [
       {
-        "name": "chartup",
-        "label": "rent + invest can win"
+        "name": "medkit",
+        "label": "same world-class care"
       },
       {
-        "name": "warning",
-        "label": "don't go house-poor"
+        "name": "receipt",
+        "label": "a costlier way to buy it"
       },
       {
         "name": "scale",
-        "label": "run the math, not the fear"
+        "label": "the price is a choice"
+      }
+    ]
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "narration": "It's gotten so lopsided that medical tourism is now a real industry: Americans flying to Mexico, Thailand, or Europe for surgery, dental work, and procedures — paying out of pocket, including the flight, for a fraction of the US price. When it's cheaper to buy a plane ticket than to get care at home, the price tag has truly broken.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "fly abroad for surgery"
+      },
+      {
+        "name": "coins",
+        "label": "cheaper, flight included"
+      },
+      {
+        "name": "warning",
+        "label": "the price tag has broken"
       }
     ]
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "Because the real lesson spans all four countries and far beyond: when you let shelter become a speculative asset and refuse to build enough of it, you don't just raise prices. You quietly lock a whole generation out of the life their parents took for granted — in English, in four different accents at once.",
-    "pose": "explain",
+    "narration": "And if there's one number to watch, it's spending per person versus life expectancy. That ratio tells you whether a country's healthcare money is actually buying health — or just buying cost. By that measure, nearly every developed nation quietly outscores the United States.",
+    "pose": "present",
     "props": [
       {
-        "name": "moneybag",
-        "label": "shelter as a bet"
+        "name": "scale",
+        "label": "spend ÷ lifespan"
       },
       {
-        "name": "warning",
-        "label": "a generation locked out"
+        "name": "heart",
+        "label": "is money buying health?"
       },
       {
         "name": "mappin",
-        "label": "same story, 4 countries"
-      }
-    ]
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "narration": "And there's real reason for hope. A growing 'build more homes' movement is winning fights across all four countries — states and cities are tearing up old zoning and legalizing density again. The crisis took decades to build, and it'll take years to unwind. But the cure is finally being swallowed.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "crane",
-        "label": "the build-more movement"
-      },
-      {
-        "name": "house",
-        "label": "zoning being torn up"
-      },
-      {
-        "name": "smiley",
-        "label": "the cure is spreading"
+        "label": "the US quietly loses"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "So wherever you live, watch the price-to-income ratio and watch how much your region actually builds. Those two numbers tell you more about your future than any headline. Where homes get built, hope survives. Where they don't, the price tag just keeps climbing.",
+    "narration": "So protect yourself ruthlessly inside whatever system you've got — and understand what you're really paying for. Healthcare is the one bill where the sticker price tells you almost nothing about the quality underneath.",
     "pose": "present",
     "props": [
       {
-        "name": "scale",
-        "label": "watch price-to-income"
+        "name": "shield",
+        "label": "protect yourself"
       },
       {
-        "name": "crane",
-        "label": "watch what gets built"
+        "name": "receipt",
+        "label": "know what you pay for"
       },
       {
-        "name": "house",
-        "label": "the two numbers that matter"
+        "name": "medkit",
+        "label": "price ≠ quality"
       }
     ]
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "If this finally explained the global housing mystery, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this explained your medical bills, hit subscribe — and tell me which price tag you want me to break down next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "house",
+        "name": "medkit",
         "label": "which price tag next?"
       }
     ]

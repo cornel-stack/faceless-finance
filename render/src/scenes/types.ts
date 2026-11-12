@@ -228,7 +228,9 @@ export interface StageScene extends Base {
     // EP081 (The Price Tag — Canada housing) additions:
     | "pricetoincomeladder" | "thelockout" | "demandvssupply" | "canadarisecurve"
     // EP082 (The Price Tag — houses expensive, 4-country) additions:
-    | "sameplaybook" | "buildingdeficit" | "homesasinvestment";
+    | "sameplaybook" | "buildingdeficit" | "homesasinvestment"
+    // EP083 (The Price Tag — healthcare cost) additions:
+    | "healthspendbars" | "spendvsoutcome" | "uscostdrivers" | "medicalbankruptcy";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

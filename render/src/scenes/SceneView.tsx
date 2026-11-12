@@ -6112,6 +6112,52 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={460} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>shelter becomes a speculative asset — and prices detach from wages</text>
       </svg>
     );
+  } else if (m === "healthspendbars") {
+    // Health spend per person by country.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["UK", 5, "#9cc47f"], ["Australia", 6, gold], ["Canada", 6, gold], ["US", 13, red]];
+    const base = 440, maxH = 250, maxV = 13;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={58} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">health spending per person ($K/year)</text>
+        <RLine x1={110} y1={base} x2={880} y2={base} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, v, col], i) => { const h = maxH * (v / maxV) * draw; const x = 210 + i * 170; return <g key={i}><rect x={x - 58} y={base - h} width={116} height={h} rx={5} fill={col as string} stroke={ink} strokeWidth={3.5} /><text x={x} y={base + 24} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text><text x={x} y={base - h - 10} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">${v}K</text></g>; })}
+        <text x={VW / 2} y={base + 46} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the US pays about double — for worse results</text>
+      </svg>
+    );
+  } else if (m === "spendvsoutcome") {
+    // US: spends the most, lives the shortest.
+    const pop = (d: number) => Math.min(1, spring({ frame, fps, delay: d, config: { damping: 11 } }));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">more money, shorter lives</text>
+        <g transform={`translate(300 280) scale(${pop(fps * 0.4)})`}><circle r={96} fill={red} stroke={ink} strokeWidth={5} /><text y={-18} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>US spends</text><text y={8} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">the MOST</text><text y={34} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>~$13K/person</text></g>
+        <g transform={`translate(720 280) scale(${pop(fps * 1.0)})`}><circle r={76} fill={gold} stroke={ink} strokeWidth={5} /><text y={-14} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>yet lives</text><text y={10} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">SHORTER</text><text y={34} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>lower life expectancy</text></g>
+        <text x={VW / 2} y={450} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>spending more clearly isn't buying more health</text>
+      </svg>
+    );
+  } else if (m === "uscostdrivers") {
+    // Why US healthcare costs so much.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string, string][] = [["admin overhead", "armies of billing staff"], ["drug prices", "no national negotiator"], ["fee-for-service", "paid per procedure"], ["no price caps", "prices set in secret"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">why the US bill is so huge</text>
+        {items.map(([t, d], i) => { const x = i % 2 === 0 ? 300 : 660; const y = i < 2 ? 110 : 290; const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 150} y={y} width={300} height={130} rx={12} fill={["#d98b5f", red, gold, "#c0583a"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={y + 52} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={y + 84} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "medicalbankruptcy") {
+    // Medical debt as a uniquely-American driver of bankruptcy.
+    const fill = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the uniquely American outcome</text>
+        <g transform="translate(280 280)"><rect x={-70} y={-70} width={140} height={150} rx={10} fill="#efe9da" stroke={ink} strokeWidth={5} /><text y={-30} fontSize={30} textAnchor="middle">🏥</text><text y={40} fontSize={15} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">$$$ bill</text></g>
+        <path d="M380 280 l90 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={fill} />
+        <g transform="translate(700 280)" opacity={fill}><rect x={-90} y={-60} width={180} height={130} rx={10} fill={red} stroke={ink} strokeWidth={5} /><text y={-20} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>BANKRUPT</text><text y={10} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>a top cause of US</text><text y={30} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>personal bankruptcy</text></g>
+        <text x={VW / 2} y={460} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>getting sick can bankrupt you — almost only in America</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

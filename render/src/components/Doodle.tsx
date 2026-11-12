@@ -144,6 +144,7 @@ export type DoodleName =
   | "ticket" | "clover"
   | "rockingchair" | "goldwatch"
   | "mapleleaf"
+  | "pills" | "heart"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2399,6 +2400,22 @@ function shape(name: DoodleName): React.ReactNode {
       return (
         <>
           <RPath d="M50 16 L55 34 L70 28 L62 44 L82 48 L66 56 L72 72 L54 64 L50 84 L46 64 L28 72 L34 56 L18 48 L38 44 L30 28 L45 34 Z" fill={RED} strokeWidth={SW} />
+        </>
+      );
+    case "pills":
+      // Two pills / medication.
+      return (
+        <>
+          <g transform="rotate(-30 40 46)"><RRect x={22} y={36} w={40} h={22} fill={GOLD} strokeWidth={SW} /><RLine x1={42} y1={36} x2={42} y2={58} strokeWidth={2} /></g>
+          <RCircle cx={66} cy={66} d={30} fill={RED} strokeWidth={SW} />
+          <RLine x1={54} y1={60} x2={78} y2={72} strokeWidth={2} />
+        </>
+      );
+    case "heart":
+      // A heart — health / outcomes.
+      return (
+        <>
+          <RPath d="M50 80 C 20 58, 22 30, 42 30 C 50 30, 50 40, 50 40 C 50 40, 50 30, 58 30 C 78 30, 80 58, 50 80 Z" fill={RED} strokeWidth={SW} />
         </>
       );
   }

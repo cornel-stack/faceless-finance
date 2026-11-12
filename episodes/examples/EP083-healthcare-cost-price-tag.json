@@ -1,0 +1,929 @@
+{
+  "id": "EP083",
+  "series": "Napkin Numbers",
+  "title": "The True Cost of Healthcare in Every Country",
+  "slug": "true-cost-of-healthcare-by-country",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP083 — The Price Tag series (topic 73). Why the US spends ~2x per person on healthcare vs other rich countries yet gets worse outcomes (lower life expectancy). Chart health-spend per capita (US ~$13K vs UK/CA/AU ~$5-7K), US cost drivers (admin, drug prices, fee-for-service, no single negotiator), the insurance maze, medical bankruptcy, single-payer vs mixed, spend-vs-outcome. Chart-heavy. 4 new motifs (healthspendbars/spendvsoutcome/uscostdrivers/medicalbankruptcy) + doodles pills/heart. Sources: Health care in the US/Universal health care/Health insurance/Life expectancy/Health system. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "The United States spends more on healthcare per person than almost any country in human history — roughly double what other rich nations spend. And in return, Americans live shorter lives than people in those cheaper systems. More money, worse results. Today, the true cost of healthcare around the world, and the mystery of where all that money actually goes.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "US: ~2× the spending"
+        },
+        {
+          "name": "heart",
+          "label": "shorter lives"
+        },
+        {
+          "name": "warning",
+          "label": "where does it go?"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that frames everything. The US spends around thirteen thousand dollars per person per year on health. The UK, Canada, and Australia spend roughly five to seven thousand — for universal coverage. Same medicine, same science. One country just pays double for it, and quietly gets less.",
+      "text": "$13K vs $5-7K",
+      "sub": "US health spend per person vs other rich nations",
+      "icon": "medkit"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Zoom out and the totals are staggering. The US spends roughly four and a half trillion dollars a year on healthcare — close to one in every five dollars in the entire economy. Other rich countries spend around ten to eleven percent of their economy on health. America spends nearly eighteen. That gap alone is trillions.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "~$4.5 trillion/year"
+        },
+        {
+          "name": "percent",
+          "label": "~18% of US economy"
+        },
+        {
+          "name": "warning",
+          "label": "others: ~10-11%"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we rank what healthcare actually costs across the rich world, uncover why the American bill is so monstrously high, follow the money through the insurance maze, and reveal the uniquely American outcome nobody else faces. If you've ever stared at a medical bill in disbelief, this explains why. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the costs"
+        },
+        {
+          "name": "receipt",
+          "label": "the insurance maze"
+        },
+        {
+          "name": "warning",
+          "label": "the American outcome"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "a $2,000 bill for a 10-minute ER visit",
+      "memeBottom": "and that's WITH insurance",
+      "narration": "Because in America, even having insurance doesn't protect you from a bill that would be unthinkable almost anywhere else. Before we rank the costs, let's be clear on what a healthcare system even is."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what a health system actually is.",
+      "heading": "The Basics",
+      "kicker": "how care gets paid for"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "A health system is a set of organizations, institutions and resources whose primary goal is to produce actions to improve health. Every rich country has excellent doctors and hospitals. What differs — massively — is how the whole thing is paid for. And that payment design is where almost the entire cost gap comes from.",
+      "sourceId": "wiki-healthsys"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "Most wealthy countries run some form of universal health care — a system in which all citizens of a country have some level of health coverage. Taxes fund it, everyone's in, and the government negotiates prices on behalf of the entire nation. It's not free, but it's collectively bought, in bulk, at a discount.",
+      "sourceId": "wiki-uhc"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "The US took a different road. Healthcare in the United States is largely provided by private sector facilities and paid for through a patchwork of private insurance, employers, and government programs. No single buyer, no single price list — a fragmented market where, remarkably, almost nobody knows what anything costs until the bill arrives.",
+      "sourceId": "wiki-ushealth"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "And the American patchwork has strange holes. Tens of millions are uninsured or underinsured. Most working-age people get coverage through their employer — a historical accident — which means losing your job can mean losing your healthcare, and changing jobs can mean changing doctors. Coverage is quietly chained to employment.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "tens of millions uninsured"
+        },
+        {
+          "name": "handshake",
+          "label": "coverage tied to your job"
+        },
+        {
+          "name": "medkit",
+          "label": "lose the job, lose the care"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's see the raw numbers, country by country.",
+      "heading": "The Ranking",
+      "kicker": "spend per person"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "Here's annual health spending per person. The UK runs around five thousand dollars. Australia and Canada, six to seven. And the United States towers over all of them near thirteen thousand — far more than any peer. Every one of those cheaper countries covers everyone. The US, spending double, still leaves millions underinsured.",
+      "motif": "healthspendbars",
+      "caption": "the US pays roughly double — and covers fewer"
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Health spending per person per year ($K)",
+      "unit": "$K",
+      "narration": "Put them side by side and the gap is almost comical. The UK at five. Canada and Australia around six and seven. And the US at thirteen thousand dollars a head. That difference, multiplied across three hundred million people, is trillions of dollars a year — vanishing into a more expensive way to buy the same care.",
+      "data": [
+        {
+          "label": "UK",
+          "value": 5
+        },
+        {
+          "label": "Canada",
+          "value": 6
+        },
+        {
+          "label": "Australia",
+          "value": 7
+        },
+        {
+          "label": "US",
+          "value": 13
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s43",
+      "type": "callout",
+      "narration": "And remember what that cheaper spending buys elsewhere: care that's essentially free at the point of use. No bill after a hospital stay, no deductible before treatment, no bankruptcy from getting sick. Citizens in those countries pay through taxes — but they never get handed a surprise invoice for surviving.",
+      "text": "free at point of use",
+      "sub": "cheaper systems still cover everyone, with no surprise bill",
+      "icon": "shield"
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "So where does all that extra American money actually go?",
+      "heading": "The Drivers",
+      "kicker": "why the US pays double"
+    },
+    {
+      "id": "s13",
+      "type": "stage",
+      "narration": "It's not that Americans use more care — they actually visit doctors less than many peers. The money disappears into four holes: staggering administrative overhead, sky-high drug prices, a fee-for-service model that rewards doing more, and prices set in secret with nobody negotiating them down. Higher prices, not more care, is the whole story.",
+      "motif": "uscostdrivers",
+      "caption": "higher prices, not more care"
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeTop": "US healthcare is a free market that sets fair prices",
+      "memeBottom": "you can't see the price until after you're treated",
+      "narration": "This is the myth that props the whole thing up. A real free market needs prices you can see and compare. In US healthcare, you often can't learn the price until the bill arrives — which isn't a free market at all. It's a blindfolded one."
+    },
+    {
+      "id": "s14",
+      "type": "character",
+      "narration": "Take administration first. In a fragmented system with thousands of insurers, every hospital needs armies of staff just to argue over billing codes and claims. Studies suggest the US spends several times more on healthcare administration than single-payer countries. A huge slice of your medical bill pays for paperwork, not medicine.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "armies of billing staff"
+        },
+        {
+          "name": "warning",
+          "label": "many insurers, endless codes"
+        },
+        {
+          "name": "medkit",
+          "label": "paperwork, not medicine"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Then there are drug prices. The exact same medication, made by the exact same company, routinely costs two, three, even ten times more in the US than abroad. Why? Other countries negotiate as one giant buyer and say no to high prices. America's fragmented system largely doesn't — so it pays whatever is asked.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pills",
+          "label": "same drug, 2-10× the price"
+        },
+        {
+          "name": "mappin",
+          "label": "others negotiate as one buyer"
+        },
+        {
+          "name": "warning",
+          "label": "the US mostly doesn't"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "The clearest example is insulin. A vial that costs a few dollars to make, and sells for around thirty in other countries, has cost Americans hundreds. Same drug, same maker — the only difference is who's allowed to negotiate the price. Recent caps helped, but the underlying pricing power is the real story.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "pills",
+          "label": "insulin: ~$30 abroad"
+        },
+        {
+          "name": "warning",
+          "label": "hundreds in the US"
+        },
+        {
+          "name": "scale",
+          "label": "same drug, different negotiator"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "And the payment model itself pushes costs up. In a fee-for-service system, providers are paid for every test, scan, and procedure they perform — not for keeping you healthy. That quietly rewards doing more, ordering more, billing more. The incentives are pointed in exactly the wrong direction.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "paid per procedure"
+        },
+        {
+          "name": "warning",
+          "label": "rewards doing MORE"
+        },
+        {
+          "name": "receipt",
+          "label": "not keeping you well"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Fee-for-service also breeds defensive medicine. When every extra test is billable — and doctors fear lawsuits — the safe move is to order more scans, more labs, more follow-ups. A lot of that care adds cost without adding health. The system pays generously for doing something, and almost nothing for simply saying 'you're fine.'",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "extra tests = extra billing"
+        },
+        {
+          "name": "warning",
+          "label": "defensive medicine"
+        },
+        {
+          "name": "chartup",
+          "label": "cost up, health flat"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Now follow the money through the maze most Americans live inside.",
+      "heading": "The Maze",
+      "kicker": "premiums & deductibles"
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "narration": "Most Americans rely on health insurance — a type of insurance that covers the whole or a part of the risk of a person incurring medical expenses. But American insurance is a maze of premiums, deductibles, copays, and networks so complex that even insured people routinely get hit with surprise bills they can't decode.",
+      "sourceId": "wiki-healthins"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "Walk the maze. First you pay a monthly premium just to have coverage. Then a deductible — often thousands — that you pay before insurance pays anything. Then copays and coinsurance on top. Go to the wrong, out-of-network hospital, and you can owe the full, uncapped price. It's insurance that still leaves you exposed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "premium + deductible + copay"
+        },
+        {
+          "name": "warning",
+          "label": "out-of-network = full price"
+        },
+        {
+          "name": "coins",
+          "label": "covered, but still exposed"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "The employer link creates a quiet trap called job lock. People stay in jobs they hate, or avoid starting a business, purely to keep their health insurance. In universal systems, your coverage follows you no matter what you do. In the US, a career move can be a medical gamble — which subtly shrinks everyone's freedom.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "'job lock'"
+        },
+        {
+          "name": "warning",
+          "label": "can't risk losing coverage"
+        },
+        {
+          "name": "medkit",
+          "label": "freedom quietly shrinks"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "And that exposure leads somewhere no other rich country goes.",
+      "heading": "The Outcome",
+      "kicker": "medical bankruptcy"
+    },
+    {
+      "id": "s21",
+      "type": "stage",
+      "narration": "Here's the result that stuns the rest of the world: in America, getting sick can bankrupt you. Medical bills are among the leading causes of personal bankruptcy in the United States — a phenomenon that is virtually nonexistent in countries with universal care. Nowhere else does an illness routinely become a financial catastrophe.",
+      "motif": "medicalbankruptcy",
+      "caption": "a top cause of US bankruptcy — almost unique"
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "The scale is uniquely grim. Medical debt sits on the credit reports of tens of millions of Americans, and online fundraisers for medical bills — a genre that barely exists elsewhere — are everywhere. In most rich countries, 'crowdfunding your surgery' would sound like a dystopian joke. In the US, it's Tuesday.",
+      "text": "100M+ with medical debt",
+      "sub": "and a whole industry of crowdfunding medical bills",
+      "icon": "receipt"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "Think about how strange that is. In the UK, Canada, or Australia, you can have a heart attack, spend a week in intensive care, and walk out owing essentially nothing. In the US, that same week can arrive as a bill for tens, even hundreds of thousands of dollars. Same treatment, wildly different aftermath.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "heart",
+          "label": "same heart attack"
+        },
+        {
+          "name": "smiley",
+          "label": "UK/CA/AU: owe ~nothing"
+        },
+        {
+          "name": "warning",
+          "label": "US: a six-figure bill"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "title",
+      "narration": "But here's the question that really matters: is the expensive system better?",
+      "heading": "Spend vs Health",
+      "kicker": "does the money buy health?"
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "This is the gut-punch. If spending double bought better health, you could maybe justify it. But it doesn't. The US spends the most of any major nation — and has a lower life expectancy than the UK, Canada, Australia, and most of the developed world. The extra trillions simply don't show up in longer lives.",
+      "motif": "spendvsoutcome",
+      "caption": "most spending, shorter lives"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "To be fair, not all of the outcome gap is the system's fault — diet, cars, and other factors play a role. But a big piece is healthcare itself: when millions delay or skip care because they fear the bill, problems that are cheap to catch early become expensive, deadly emergencies later. Avoiding the doctor to save money quietly costs lives.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "skipping care to save money"
+        },
+        {
+          "name": "heart",
+          "label": "small problems turn deadly"
+        },
+        {
+          "name": "scale",
+          "label": "not all the gap is the system"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "That outcome is measured by life expectancy — a statistical estimate of the average remaining years of life at a given age. Despite leading the world in spending, the US trails its peers by several years. Money is clearly flowing somewhere other than into keeping Americans alive longer.",
+      "sourceId": "wiki-lifeexp"
+    },
+    {
+      "id": "s26",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Life expectancy at birth (years)",
+      "unit": "yrs",
+      "narration": "Here are the lifespans. Australia near eighty-three. Canada around eighty-two. The UK about eighty-one. And the US, despite spending nearly double, down around seventy-seven to seventy-eight. The country paying the most to stay alive lives the fewest years. That single comparison breaks the 'you get what you pay for' assumption entirely.",
+      "data": [
+        {
+          "label": "US",
+          "value": 77
+        },
+        {
+          "label": "UK",
+          "value": 81
+        },
+        {
+          "label": "Canada",
+          "value": 82
+        },
+        {
+          "label": "Australia",
+          "value": 83
+        }
+      ],
+      "highlight": 0
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And the US average hides brutal inequality. Wealthy, insured Americans can get some of the finest care on earth. Poor and uninsured Americans have outcomes closer to far less developed nations. The system delivers world-leading medicine to some, and a health crisis to others — in the same country, often the same city.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "huge gaps by income"
+        },
+        {
+          "name": "smiley",
+          "label": "rich: world-class care"
+        },
+        {
+          "name": "warning",
+          "label": "poor: left behind"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "So why doesn't America just switch to the cheaper system?",
+      "heading": "Why Not Switch?",
+      "kicker": "the trillion-dollar trap"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "Because that 'wasted' spending is somebody's income. Every dollar of America's sky-high bill is revenue for insurers, hospitals, and drug companies — a multi-trillion-dollar industry that lobbies fiercely to keep things as they are. The system isn't broken from their point of view. For them, the high price is the entire point.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "the bill = their revenue"
+        },
+        {
+          "name": "bank",
+          "label": "a multi-trillion industry"
+        },
+        {
+          "name": "warning",
+          "label": "high price IS the point"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "There are also real fears about change. People worry about higher taxes, longer wait times, and losing the cutting-edge care the US genuinely does well. Those concerns aren't silly — but the data shows other countries deliver universal coverage, similar or better outcomes, and still spend far less. The trade-offs are smaller than the fear suggests.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "real fears: taxes, waits"
+        },
+        {
+          "name": "smiley",
+          "label": "others: cover all, spend less"
+        },
+        {
+          "name": "chartdown",
+          "label": "trade-offs smaller than feared"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And debunk the wait-times myth while we're here. The US has long waits too — for appointments, for prior authorizations, for insurer approvals. Universal systems do triage non-urgent care, so a minor issue may wait. But for anything serious, outcomes and timeliness are broadly comparable, at half the price.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the US waits too"
+        },
+        {
+          "name": "scale",
+          "label": "comparable for serious care"
+        },
+        {
+          "name": "coins",
+          "label": "at half the price"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "title",
+      "narration": "So what does this mean for you, living inside whichever system you've got?",
+      "heading": "What To Do",
+      "kicker": "surviving the bill"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "If you're in the US, treat healthcare like the financial minefield it is. Never skip employer coverage that includes a match or subsidy. Always check if a provider is in-network before you go. And for any big procedure, ask for the price in advance and negotiate the bill afterward — hospitals quietly discount far more often than you'd think.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "take subsidized coverage"
+        },
+        {
+          "name": "mappin",
+          "label": "check in-network first"
+        },
+        {
+          "name": "receipt",
+          "label": "ask the price, then negotiate"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "A few concrete money-savers in the US: use telehealth and urgent care for minor issues instead of the ER, which can cost ten times more. Always ask for the generic version of any drug. And for scheduled procedures, get an itemized estimate in writing — vague 'it depends' answers are how surprise bills are born.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "urgent care, not the ER"
+        },
+        {
+          "name": "pills",
+          "label": "ask for generics"
+        },
+        {
+          "name": "receipt",
+          "label": "get an itemized estimate"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Build a health emergency fund, and if you're on a high-deductible plan, use a health savings account — it's triple tax-advantaged and one of the best accounts in all of American finance. In a system that can hand you a surprise five-figure bill, a dedicated cash cushion isn't optional. It's armor.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "health emergency fund"
+        },
+        {
+          "name": "chartup",
+          "label": "HSA: triple tax-advantaged"
+        },
+        {
+          "name": "shield",
+          "label": "a cushion is armor"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "One underused American superpower: the health savings account. Money goes in tax-free, grows tax-free, and comes out tax-free for medical costs — the only account with all three perks. And after sixty-five it works like a retirement account. Max it, invest it, and it quietly becomes one of the best wealth tools you have.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "HSA: triple tax-free"
+        },
+        {
+          "name": "piggybank",
+          "label": "invest it, don't spend it"
+        },
+        {
+          "name": "smiley",
+          "label": "a stealth retirement account"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "And know your rights. The US has curbed some of the worst surprise out-of-network billing, hospitals must publish prices, and non-profit hospitals are required to offer financial assistance. Most people never ask. The bill you first receive is very often a starting offer, not a final, fixed price.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "the first bill is an offer"
+        },
+        {
+          "name": "handshake",
+          "label": "ask for financial aid"
+        },
+        {
+          "name": "smiley",
+          "label": "most never ask"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "And wherever you live, understand this is the single biggest hidden line item in your life. Americans pay for healthcare through premiums, taxes, and lower wages, often without ever seeing the true total. In universal systems, it's paid through taxes up front. Either way, you're paying — the only question is how visibly, and how much.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "you always pay"
+        },
+        {
+          "name": "percent",
+          "label": "premiums, taxes, or wages"
+        },
+        {
+          "name": "scale",
+          "label": "the only question is how much"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "callout",
+      "narration": "Put a lifetime number on it. The average American will pay somewhere around half a million dollars or more for healthcare over their life — through premiums, taxes, and out-of-pocket costs combined. It quietly rivals the cost of a house. Treating it as a major life expense, not an afterthought, is simply realistic.",
+      "text": "~$500,000+",
+      "sub": "lifetime healthcare cost per person — rivals a house",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Because the real lesson is counterintuitive: in healthcare, more spending does not mean more health. The most expensive system on earth delivers middle-of-the-pack results, because so much of the money is eaten by prices, paperwork, and profit before it ever reaches a patient. Efficiency, not spending, is what actually buys longer lives.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "more spend ≠ more health"
+        },
+        {
+          "name": "warning",
+          "label": "eaten by prices + paperwork"
+        },
+        {
+          "name": "heart",
+          "label": "efficiency buys the years"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "So when you see that eye-watering medical bill, remember you're not mostly paying for better doctors or better science — you're paying for a uniquely expensive way to organize the exact same care. The treatment is world-class. The price tag is a choice.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "same world-class care"
+        },
+        {
+          "name": "receipt",
+          "label": "a costlier way to buy it"
+        },
+        {
+          "name": "scale",
+          "label": "the price is a choice"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "It's gotten so lopsided that medical tourism is now a real industry: Americans flying to Mexico, Thailand, or Europe for surgery, dental work, and procedures — paying out of pocket, including the flight, for a fraction of the US price. When it's cheaper to buy a plane ticket than to get care at home, the price tag has truly broken.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "fly abroad for surgery"
+        },
+        {
+          "name": "coins",
+          "label": "cheaper, flight included"
+        },
+        {
+          "name": "warning",
+          "label": "the price tag has broken"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "And if there's one number to watch, it's spending per person versus life expectancy. That ratio tells you whether a country's healthcare money is actually buying health — or just buying cost. By that measure, nearly every developed nation quietly outscores the United States.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "spend ÷ lifespan"
+        },
+        {
+          "name": "heart",
+          "label": "is money buying health?"
+        },
+        {
+          "name": "mappin",
+          "label": "the US quietly loses"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So protect yourself ruthlessly inside whatever system you've got — and understand what you're really paying for. Healthcare is the one bill where the sticker price tells you almost nothing about the quality underneath.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "protect yourself"
+        },
+        {
+          "name": "receipt",
+          "label": "know what you pay for"
+        },
+        {
+          "name": "medkit",
+          "label": "price ≠ quality"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this explained your medical bills, hit subscribe — and tell me which price tag you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-healthsys",
+      "name": "Health system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_system",
+      "quote": "whose primary goal is to produce actions"
+    },
+    {
+      "id": "wiki-uhc",
+      "name": "Universal health care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Universal_health_care",
+      "quote": "all citizens of a country have some level of health coverage"
+    },
+    {
+      "id": "wiki-ushealth",
+      "name": "Health care in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_care_in_the_United_States",
+      "quote": "largely provided by private sector healthcare facilities"
+    },
+    {
+      "id": "wiki-healthins",
+      "name": "Health insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_insurance",
+      "quote": "covers the whole or a part of the risk of a person incurring medical expenses"
+    },
+    {
+      "id": "wiki-lifeexp",
+      "name": "Life expectancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Life_expectancy",
+      "quote": "the estimate of the average remaining years of life"
+    }
+  ],
+  "youtube": {
+    "title": "The True Cost of Healthcare in Every Country",
+    "alts": [
+      "Why US Healthcare Costs Double (and Delivers Less)",
+      "Healthcare Costs by Country: Why America Pays the Most"
+    ],
+    "hook": "The US spends about $13,000 per person per year on healthcare — roughly double what the UK, Canada, and Australia spend — and Americans live SHORTER lives in return. This is the true cost of healthcare around the world: we rank health spending per person, explain why the American bill is so monstrous (administrative overhead, sky-high drug prices, fee-for-service incentives, and no single price negotiator), walk the premium-deductible-copay maze, expose medical bankruptcy (virtually unique to the US), and show the gut-punch — most spending, shortest lifespan. Plus how to protect yourself: in-network checks, HSAs, negotiating the bill. Fully cited.",
+    "bullets": [
+      "Health spending per person: US ~$13K vs UK/CA/AU ~$5-7K",
+      "Why the US pays double: admin, drug prices, fee-for-service",
+      "The premium-deductible-copay maze (insured and still exposed)",
+      "Medical bankruptcy — virtually unique to America",
+      "Most spending, shortest life expectancy — the gut-punch",
+      "How to protect yourself: in-network, HSA, negotiate the bill"
+    ],
+    "tags": [
+      "healthcare cost by country",
+      "us healthcare cost",
+      "why is us healthcare so expensive",
+      "healthcare comparison",
+      "universal healthcare",
+      "medical bankruptcy",
+      "health insurance explained",
+      "life expectancy by country",
+      "drug prices",
+      "health spending",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#healthcare",
+      "#healthinsurance",
+      "#personalfinance",
+      "#usa"
+    ],
+    "thumbnail": {
+      "hookTop": "US HEALTHCARE",
+      "hookBot": "DOUBLE THE COST",
+      "napkinNumber": "$13K",
+      "napkinSub": "per person — shorter lives",
+      "deco": "medkit"
+    },
+    "chapters": [
+      [
+        "what a health system actually is",
+        "The basics"
+      ],
+      [
+        "let's see the raw numbers",
+        "The ranking"
+      ],
+      [
+        "where does all that extra american money actually go",
+        "The drivers"
+      ],
+      [
+        "follow the money through the maze",
+        "The maze"
+      ],
+      [
+        "somewhere no other rich country goes",
+        "Medical bankruptcy"
+      ],
+      [
+        "is the expensive system better",
+        "Spend vs health"
+      ],
+      [
+        "why doesn't america just switch",
+        "Why not switch?"
+      ],
+      [
+        "what does this mean for you",
+        "What to do"
+      ]
+    ]
+  }
+}
