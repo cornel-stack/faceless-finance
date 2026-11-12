@@ -1,0 +1,938 @@
+{
+  "id": "EP073",
+  "series": "Napkin Numbers",
+  "title": "Your Life at Every Level of 401(k) Balance",
+  "slug": "every-level-of-401k-balance",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP073 — Every Level series (row 63). 401(k) balance milestones $0→$50K→$100K→$250K→$500K→$1M+ and what each MEANS for your retirement/life: the balance→income converter (every $100K ≈ $4K/yr at 4%), the match=free money, the first-$100K hump, the 401(k)-millionaire club, where you rank by age, how to climb. 3 new motifs (k401ladder/balancetoincome/k401millionaire) + reuse employermatch/startearly/salarymultiple + doodles jar/medal. Sources: 401(k)/Defined contribution plan/Employer match/Retirement/Compound. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "There's a single number quietly ticking away in the background of your working life that will, more than almost anything else, decide how your story ends. Not your salary. Your 401(k) balance. And at every level — from zero to a million and beyond — it buys a completely different retirement.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "jar",
+          "label": "your 401(k) balance"
+        },
+        {
+          "name": "gauge",
+          "label": "ticking in the background"
+        },
+        {
+          "name": "retiree",
+          "label": "it decides the ending"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the rule that turns that balance into real life. Whatever you've saved, multiply by four percent — that's roughly what it can safely pay you, every year, forever, in retirement. So every hundred thousand dollars in your 401(k) is about four thousand dollars a year of future income.",
+      "text": "$100K = $4K/yr",
+      "sub": "what each $100K of balance pays you, forever (4% rule)",
+      "icon": "nestegg"
+    },
+    {
+      "id": "s41",
+      "type": "callout",
+      "narration": "Flip that rule around and it gives you your real finish line. To fully replace an income, you need roughly twenty-five times your annual spending saved. Spend forty thousand a year? Your target is about a million. That multiple is the whole game.",
+      "text": "25x",
+      "sub": "save ~25x your yearly spending to retire on it",
+      "icon": "scale"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we climb every level of 401(k) balance — fifty thousand, a hundred, half a million, all the way to the millionaire's club — and show exactly what life each one actually buys. Plus the free money most people leave on the table, and how to climb faster.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "jar",
+          "label": "$0 → $1M+"
+        },
+        {
+          "name": "handshake",
+          "label": "the free money"
+        },
+        {
+          "name": "chartup",
+          "label": "climb faster"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "skip the 401(k) match to get a bit more paycheck",
+      "memeBottom": "grab the match — it's an instant, guaranteed 100% return",
+      "narration": "Because the biggest mistake isn't investing badly — it's leaving the single best deal in finance completely untouched. Before we climb the levels, you have to understand the one move that doubles your money the day you make it."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what this account actually is.",
+      "heading": "The Account",
+      "kicker": "your retirement machine"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "A 401(k) is an employer-sponsored retirement account where contributions come directly out of your paychecks — often before tax. It's the main way most Americans build their retirement, quietly, straight off the top of every paycheck.",
+      "sourceId": "wiki-401k"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "It's a type of defined contribution plan — where the employer, employee, or both make contributions, and your final balance depends on how much went in and how it grew. There's no guaranteed pension at the end; the balance is entirely on you.",
+      "sourceId": "wiki-dc"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "And the account comes with a huge tax break. In a traditional 401(k), the money goes in before tax, shrinking your tax bill today while it grows untouched for decades. In a Roth 401(k), you pay tax now so every dollar comes out completely tax-free later. Either way, the taxman waits.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "pre-tax: lower bill now"
+        },
+        {
+          "name": "shield",
+          "label": "Roth: tax-free later"
+        },
+        {
+          "name": "moneytree",
+          "label": "grows untaxed for decades"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "And here's the magic ingredient: the employer match — an employer's potential payment to their 401(k) plan that depends on how much you contribute. Your company literally adds free money on top of your own savings.",
+      "sourceId": "wiki-match"
+    },
+    {
+      "id": "s43",
+      "type": "callout",
+      "narration": "There's a ceiling on the generosity. In recent years you can put in around twenty-three thousand dollars a year of your own money if you're under fifty — and the employer match sits on top of that. Most people never get anywhere near the cap, which means there's almost always room to add more.",
+      "text": "~$23,000/yr",
+      "sub": "your own contribution cap (under 50) — match is extra",
+      "icon": "vault"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Think about what that means. You put in a hundred dollars, and your employer drops in another hundred to match it. That's an instant, guaranteed one hundred percent return, before the market does a single thing. Skipping the match is turning down a raise you've already been offered.",
+      "motif": "employermatch",
+      "caption": "the employer match = free money"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "A typical match looks like this: your employer puts in fifty cents for every dollar you contribute, up to six percent of your salary. Contribute that full six percent and you capture every cent. One catch — vesting: sometimes you have to stay a few years before the matched money is fully yours to keep.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "50% up to 6% of pay"
+        },
+        {
+          "name": "calendar",
+          "label": "vesting: stay to keep it"
+        },
+        {
+          "name": "coins",
+          "label": "free money, so grab it all"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "So let's climb the balance levels — and see what life each one buys.",
+      "heading": "The Levels",
+      "kicker": "$0 to $1M+"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Here's the whole ladder. Zero is the start line. Fifty thousand is momentum. A hundred thousand means the hardest part is behind you. A quarter million, compounding gets visible. Half a million, you're coasting. And a million-plus is the club everyone's quietly aiming for.",
+      "motif": "k401ladder",
+      "caption": "your 401(k) milestones"
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "Start at zero. Everyone begins here, and there's no shame in it. But the clock is the one thing you can't buy back, so the single most important move at this level is simply to start — even one percent — and at the very least, capture that full employer match.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "just start"
+        },
+        {
+          "name": "handshake",
+          "label": "grab the match"
+        },
+        {
+          "name": "calendar",
+          "label": "the clock is everything"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Good news if you're at zero and terrified: many employers now enroll you automatically, and even one or two percent, started young, snowballs into real money. The hardest dollar to invest is the first one — but it's also the single most powerful, because it has the most time to grow.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "auto-enrolled at 1-2%"
+        },
+        {
+          "name": "snowball",
+          "label": "tiny start, big finish"
+        },
+        {
+          "name": "hourglass",
+          "label": "first dollar = most time"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "At fifty thousand, you've got real momentum. It's roughly one year of a typical salary, saved. The habit is working, and for the first time, your account's own growth in a good year can start to rival what you personally contribute. The snowball is beginning to roll.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "$50K: momentum"
+        },
+        {
+          "name": "chartup",
+          "label": "growth rivals contributions"
+        },
+        {
+          "name": "smiley",
+          "label": "the habit is working"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Now the milestone that quietly changes everything.",
+      "heading": "$100,000",
+      "kicker": "the hard part's done"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "A hundred thousand is the legendary milestone — and it's the hardest to reach, because you build it almost entirely from your own contributions. But once you're there, Charlie Munger's famous words kick in: the first hundred thousand is the hardest. After this, compounding starts doing the heavy lifting.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "medal",
+          "label": "the first $100K"
+        },
+        {
+          "name": "briefcase",
+          "label": "built from your savings"
+        },
+        {
+          "name": "moneytree",
+          "label": "now compounding lifts"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "narration": "That heavy lifting is compound interest — interest accumulated on a principal sum and on previously accumulated interest. At a hundred thousand invested, a normal market year can add thousands to your balance, entirely on its own.",
+      "sourceId": "wiki-compound"
+    },
+    {
+      "id": "s46",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "save cash in a checking account for retirement",
+      "memeBottom": "let compounding inside a 401(k) do the saving for you",
+      "narration": "And this is the mental leap that changes everything. At a hundred thousand invested, the account can earn more in a flat year than many people manage to save — your money finally starts out-earning you."
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Keep climbing, and the account starts to feel alive.",
+      "heading": "$250K to $500K",
+      "kicker": "compounding takes over"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "Between a quarter and a half million, something wonderful happens: the account begins growing faster from market gains than from your own paychecks. In a good year, it can jump fifty thousand or more without you adding a cent. You're no longer pushing the snowball — it's rolling on its own.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneytree",
+          "label": "growth > contributions"
+        },
+        {
+          "name": "chartup",
+          "label": "+$50K in a good year"
+        },
+        {
+          "name": "snowball",
+          "label": "rolling on its own"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Here's the part that scares people: along the way, the market will crash. It always does. But every crash while you're still contributing is a fire sale — you're buying more shares cheaply, which supercharges the recovery. The investors who panic and sell are the only ones who truly lose.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "rollercoaster",
+          "label": "crashes are guaranteed"
+        },
+        {
+          "name": "chartup",
+          "label": "a crash = a fire sale"
+        },
+        {
+          "name": "warning",
+          "label": "only sellers lose"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "At half a million, you're genuinely coasting toward a comfortable retirement. Even if you stopped contributing entirely, compounding alone could carry that balance to well over a million by the time you retire. The hard work is mostly behind you; now time does the rest.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "$500K: coasting"
+        },
+        {
+          "name": "moneytree",
+          "label": "grows to $1M+ alone"
+        },
+        {
+          "name": "calendar",
+          "label": "time finishes the job"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "And then the number everyone secretly dreams about.",
+      "heading": "$1 Million+",
+      "kicker": "the 401(k) millionaire"
+    },
+    {
+      "id": "s21",
+      "type": "stage",
+      "narration": "The 401(k) millionaire. It sounds like a fantasy, but there are millions of ordinary people who've done it — not with huge salaries, but with decades of steady contributions and compounding. Start young and max it out, and you can quietly cross this line surprisingly early.",
+      "motif": "k401millionaire",
+      "caption": "max it out from 25, and you're a millionaire by your 40s"
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "And this club is bigger than you'd think. Retirement giant Fidelity has reported hundreds of thousands of ordinary savers with seven-figure 401(k) balances — teachers, nurses, engineers. Almost none of them are high earners. They're just early, consistent, and patient.",
+      "text": "500,000+",
+      "sub": "ordinary 401(k) millionaires — not high earners, just consistent",
+      "icon": "crown"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "And a million-dollar 401(k) isn't flashy — but it's freedom. At the four-percent rule, it throws off around forty thousand dollars a year, for life. Combined with Social Security, that's a genuinely comfortable retirement, funded entirely by your younger self.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "~$40K/yr for life"
+        },
+        {
+          "name": "retiree",
+          "label": "+ Social Security"
+        },
+        {
+          "name": "smiley",
+          "label": "comfortable, funded"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "One honest caveat, though: a million dollars in thirty years won't buy what a million buys today. Inflation quietly eats at every balance. So treat a million as a floor, not a ceiling — and let that push you to aim a little higher, not to give up.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "inflation erodes it"
+        },
+        {
+          "name": "warning",
+          "label": "$1M is a floor, not a ceiling"
+        },
+        {
+          "name": "chartup",
+          "label": "so aim higher"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "title",
+      "narration": "So let's make the whole thing concrete: what does each balance actually pay you?",
+      "heading": "Balance to Income",
+      "kicker": "the 4% translation"
+    },
+    {
+      "id": "s24",
+      "type": "stage",
+      "narration": "Here's the translator. Take your balance, multiply by four percent, and that's your rough yearly retirement income. Five hundred thousand gives you twenty thousand a year. A million gives you forty. Your balance isn't just a number — it's a future paycheck, waiting.",
+      "motif": "balancetoincome",
+      "caption": "every $100K ≈ $4,000 a year in retirement, forever"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And the four-percent figure is already built to survive inflation — the idea is that you can give yourself a small raise each year to keep pace with prices, and the balance should still last roughly thirty years. It's a rule of thumb, not a guarantee, but it's a remarkably sturdy one.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "4% rises with inflation"
+        },
+        {
+          "name": "calendar",
+          "label": "designed to last ~30 yrs"
+        },
+        {
+          "name": "scale",
+          "label": "sturdy rule of thumb"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "This flips how you see every contribution. That extra hundred dollars you add today isn't just a hundred dollars. Decades from now, grown by compounding, it becomes part of a paycheck that arrives every year of your retirement, long after you've stopped working for it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "$100 today…"
+        },
+        {
+          "name": "moneytree",
+          "label": "…grows for decades"
+        },
+        {
+          "name": "nestegg",
+          "label": "= a future paycheck"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "title",
+      "narration": "So where should your balance be, for your age?",
+      "heading": "Where You Rank",
+      "kicker": "the age benchmarks"
+    },
+    {
+      "id": "s27",
+      "type": "stage",
+      "narration": "A popular benchmark frames it as multiples of your salary. Aim to have one times your salary saved by thirty, three times by forty, six times by fifty, and ten times by sixty-seven. It's a simple yardstick to check whether your balance is quietly on track.",
+      "motif": "salarymultiple",
+      "caption": "a cleaner target: multiples of your salary"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Now brace yourself for the reality check. The median 401(k) balance in America is shockingly low — often just tens of thousands of dollars, even for people in their fifties. The averages look healthier only because a handful of huge accounts drag them up. Most people are nowhere near on track.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "median is shockingly low"
+        },
+        {
+          "name": "scale",
+          "label": "a few huge accounts skew it"
+        },
+        {
+          "name": "gauge",
+          "label": "most are behind"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "And if you're behind those benchmarks — don't panic. The majority of people are. What matters is the direction. A balance that's climbing every year, with the match captured and contributions rising, will catch up far faster than you'd expect, thanks to compounding's late-game magic.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "behind? most are"
+        },
+        {
+          "name": "chartup",
+          "label": "direction > position"
+        },
+        {
+          "name": "snowball",
+          "label": "it catches up fast"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Which is strangely freeing. If the typical balance is that low, then simply by capturing your match, investing in an index fund, and staying consistent, you quietly leapfrog the majority. You don't have to be exceptional to win this game — you just have to not quit.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "rocket",
+          "label": "leapfrog the majority"
+        },
+        {
+          "name": "pie",
+          "label": "match + index + consistency"
+        },
+        {
+          "name": "trophy",
+          "label": "just don't quit"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Yearly retirement income by 401(k) balance ($K, at 4%)",
+      "unit": "$K",
+      "narration": "Here's the whole ladder as income. A hundred thousand pays four thousand a year. Two-fifty pays ten. Half a million pays twenty. And a million pays forty thousand a year, for the rest of your life. The balance is just your future income, in disguise.",
+      "data": [
+        {
+          "label": "$100K",
+          "value": 4
+        },
+        {
+          "label": "$250K",
+          "value": 10
+        },
+        {
+          "label": "$500K",
+          "value": 20
+        },
+        {
+          "label": "$1M",
+          "value": 40
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s30",
+      "type": "title",
+      "narration": "So how do you climb these levels as fast as possible?",
+      "heading": "How to Climb",
+      "kicker": "the accelerators"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "Rule one, non-negotiable: always contribute enough to get the full employer match. It's free money and an instant hundred-percent return. Not doing this is the most expensive, most common mistake in all of retirement saving. Grab every cent of it, first.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "grab the full match"
+        },
+        {
+          "name": "percent",
+          "label": "100% instant return"
+        },
+        {
+          "name": "warning",
+          "label": "never skip it"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "One decision worth making deliberately: traditional or Roth. If you think your tax rate will be higher in retirement, Roth's tax-free withdrawals win. If you want the tax break now, go traditional. If you can't decide, many people simply split the difference and do some of each.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "traditional vs Roth"
+        },
+        {
+          "name": "receipt",
+          "label": "break now vs tax-free later"
+        },
+        {
+          "name": "handshake",
+          "label": "or split both"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "stage",
+      "narration": "Rule two: start as early as humanly possible. A dollar invested at twenty-five can be worth ten times a dollar invested at forty-five, purely from extra decades of compounding. On this ladder, time is a bigger accelerator than money. The early years are pure gold.",
+      "motif": "startearly",
+      "caption": "the one asset you can't buy back: time"
+    },
+    {
+      "id": "s54",
+      "type": "callout",
+      "narration": "Let this number sink in. Waiting just ten years to start — from twenty-five to thirty-five — can cut your final balance roughly in half, even if you contribute the exact same amount afterward. That's not a typo. A decade of lost compounding is the most expensive delay in personal finance.",
+      "text": "-50%",
+      "sub": "the cost of starting 10 years late, same contributions",
+      "icon": "hourglass"
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Rule three: ratchet up your contribution over time. Bump it one percent every year, or bank half of every raise straight into the account. You'll barely feel it — but over a career, that slow climb can add hundreds of thousands to your final balance.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "+1% every year"
+        },
+        {
+          "name": "piggybank",
+          "label": "bank half your raises"
+        },
+        {
+          "name": "moneytree",
+          "label": "+$100Ks at the end"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And once you hit fifty, the rules hand you a gift: catch-up contributions. You're suddenly allowed to stuff several thousand extra dollars a year into the account, on top of the normal limit — specifically designed to let late starters sprint for the finish line.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "stopwatch",
+          "label": "age 50+ catch-up"
+        },
+        {
+          "name": "vault",
+          "label": "thousands extra allowed"
+        },
+        {
+          "name": "rocket",
+          "label": "sprint to the finish"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Rule four: don't touch it. Cashing out a 401(k) when you change jobs triggers taxes, penalties, and — worst of all — robs you of decades of future compounding. Whatever you do, roll it over, never cash it out. Let the snowball keep rolling, untouched, for decades.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "padlock",
+          "label": "never cash it out"
+        },
+        {
+          "name": "warning",
+          "label": "taxes + penalties"
+        },
+        {
+          "name": "snowball",
+          "label": "let it keep rolling"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "And invest it, don't just park it. A shocking number of people contribute to their 401(k) but leave the money sitting in cash inside it, earning almost nothing. Make sure it's actually invested — usually in a low-cost index or target-date fund. Contributing isn't enough; it has to grow.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "warning",
+          "label": "don't leave it in cash"
+        },
+        {
+          "name": "pie",
+          "label": "buy an index fund"
+        },
+        {
+          "name": "chartup",
+          "label": "make it actually grow"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And watch the fees like a hawk. A fund charging one percent a year instead of a tenth of a percent sounds trivial — but over a career it can quietly devour a hundred thousand dollars or more of your final balance. Pick the cheapest broad index fund your plan offers, always.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "warning",
+          "label": "fees compound too"
+        },
+        {
+          "name": "chartdown",
+          "label": "1% vs 0.1% = -$100K"
+        },
+        {
+          "name": "pie",
+          "label": "pick the cheapest index"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "The end goal of this whole climb is retirement itself — the withdrawal from your active working life. The 401(k) is the engine that makes that possible without a paycheck. Every level you climb is another year of future freedom, quietly purchased today.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "retiree",
+          "label": "the goal: retirement"
+        },
+        {
+          "name": "hammock",
+          "label": "freedom without a paycheck"
+        },
+        {
+          "name": "jar",
+          "label": "bought level by level"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And once you've captured the full match, don't stop thinking. If you can save more, a separate account called an IRA gives you even more tax-advantaged room and wider investment choices. The 401(k) is the foundation — but it doesn't have to be the whole house.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "match first, then an IRA"
+        },
+        {
+          "name": "vault",
+          "label": "more tax-free room"
+        },
+        {
+          "name": "moneytree",
+          "label": "401k = foundation, not the whole house"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the real lesson is that a 401(k) is a time machine. It takes small, almost unnoticed amounts from your present, and sends them decades into the future, multiplied many times over, to fund a version of you that can finally stop working. The sooner you feed it, the more it sends back.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "jar",
+          "label": "a time machine"
+        },
+        {
+          "name": "moneytree",
+          "label": "small now → huge later"
+        },
+        {
+          "name": "retiree",
+          "label": "funds future you"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So check your balance today, and find your level. Then make the moves: grab the full match, bump your contribution, pick a cheap index fund, and never, ever cash it out. Do that, and your future self crosses into the millionaire's club without ever feeling like they sacrificed much at all.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "find your level"
+        },
+        {
+          "name": "handshake",
+          "label": "match + index + bump"
+        },
+        {
+          "name": "medal",
+          "label": "the millionaire's club"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this showed you exactly what your 401(k) balance really means, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "jar",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-401k",
+      "name": "401(k) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/401(k)",
+      "quote": "contributions come directly out of their paychecks"
+    },
+    {
+      "id": "wiki-dc",
+      "name": "Defined contribution plan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Defined_contribution_plan",
+      "quote": "the employer, employee or both make contributions"
+    },
+    {
+      "id": "wiki-match",
+      "name": "Employer matching program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Employer_matching_program",
+      "quote": "an employer's potential payment to their 401(k) plan"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal sum and previously accumulated interest"
+    },
+    {
+      "id": "wiki-retirement",
+      "name": "Retirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement",
+      "quote": "the withdrawal from one's position or occupation"
+    }
+  ],
+  "youtube": {
+    "title": "Your Life at Every Level of 401(k) Balance",
+    "alts": [
+      "What Your 401(k) Balance Really Means at Every Level",
+      "$0 to $1M in Your 401(k): What Each Level Buys"
+    ],
+    "hook": "One number quietly ticking in the background of your working life will decide how your story ends — not your salary, your 401(k) balance. This is your life at every level of 401(k) balance: $0 (start the clock), $50K (momentum), $100K (the hardest milestone — now compounding takes over), $250K–$500K (coasting), and $1M+ (the 401(k)-millionaire club). We translate every balance into real retirement income (each $100K ≈ $4,000/year, forever, at 4%), reveal the employer match (an instant 100% return most people skip), show the age benchmarks, and the moves to climb faster: grab the match, start early, ratchet contributions, never cash out, and actually invest it. Fully cited.",
+    "bullets": [
+      "Every $100K of balance ≈ $4,000/year of retirement income",
+      "The employer match — an instant, guaranteed 100% return",
+      "Why the first $100K is the hardest milestone",
+      "The 401(k) millionaire — reachable on an ordinary salary",
+      "Age benchmarks: 1x salary by 30, 3x by 40, 10x by 67",
+      "How to climb: match, start early, ratchet up, never cash out"
+    ],
+    "tags": [
+      "401k balance by age",
+      "401k explained",
+      "employer match",
+      "401k millionaire",
+      "how much 401k by age",
+      "retirement savings",
+      "4 percent rule",
+      "defined contribution plan",
+      "how to grow 401k",
+      "compound interest",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#401k",
+      "#retirement",
+      "#investing",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "YOUR 401(k)",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "$100K",
+      "napkinSub": "= $4K/yr forever",
+      "deco": "jar"
+    },
+    "chapters": [
+      [
+        "what this account actually is",
+        "The account"
+      ],
+      [
+        "the one move that doubles your money",
+        "The match"
+      ],
+      [
+        "see what life each one buys",
+        "The levels"
+      ],
+      [
+        "the milestone that quietly changes everything",
+        "$100K"
+      ],
+      [
+        "the number everyone secretly dreams about",
+        "$1 million+"
+      ],
+      [
+        "what does each balance actually pay you",
+        "Balance to income"
+      ],
+      [
+        "where should your balance be, for your age",
+        "Where you rank"
+      ],
+      [
+        "climb these levels as fast as possible",
+        "How to climb"
+      ]
+    ]
+  }
+}

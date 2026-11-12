@@ -2,846 +2,805 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "The difference between a minor annoyance and a total financial catastrophe often comes down to one number: how many months of expenses you have saved. The exact same job loss that devastates one family is a mere shrug for another. Your emergency fund quietly decides which family you are.",
+    "narration": "There's a single number quietly ticking away in the background of your working life that will, more than almost anything else, decide how your story ends. Not your salary. Your 401(k) balance. And at every level — from zero to a million and beyond — it buys a completely different retirement.",
     "pose": "explain",
     "props": [
       {
-        "name": "safetynet",
-        "label": "months of expenses saved"
+        "name": "jar",
+        "label": "your 401(k) balance"
       },
       {
-        "name": "briefcase",
-        "label": "same job loss…"
+        "name": "gauge",
+        "label": "ticking in the background"
       },
       {
-        "name": "scale",
-        "label": "catastrophe or shrug?"
+        "name": "retiree",
+        "label": "it decides the ending"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the terrifying starting point for most people. A huge share of Americans couldn't cover a single thousand-dollar surprise without borrowing. For them, one flat tire, one medical bill, is all it takes to begin a spiral into debt.",
-    "text": "$1,000",
-    "sub": "the surprise most Americans can't cover without debt",
-    "icon": "warning"
+    "narration": "Here's the rule that turns that balance into real life. Whatever you've saved, multiply by four percent — that's roughly what it can safely pay you, every year, forever, in retirement. So every hundred thousand dollars in your 401(k) is about four thousand dollars a year of future income.",
+    "text": "$100K = $4K/yr",
+    "sub": "what each $100K of balance pays you, forever (4% rule)",
+    "icon": "nestegg"
   },
   {
-    "id": "s42",
+    "id": "s41",
     "type": "callout",
-    "narration": "The data is stark. Surveys have repeatedly found that around forty percent of Americans would struggle to cover even a four-hundred-dollar emergency with cash. Four hundred dollars. That is the razor's edge a huge share of the entire country is living on.",
-    "text": "40%",
-    "sub": "of Americans can't cover a $400 emergency in cash",
-    "icon": "warning"
+    "narration": "Flip that rule around and it gives you your real finish line. To fully replace an income, you need roughly twenty-five times your annual spending saved. Spend forty thousand a year? Your target is about a million. That multiple is the whole game.",
+    "text": "25x",
+    "sub": "save ~25x your yearly spending to retire on it",
+    "icon": "scale"
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So today we climb every level of emergency fund — from zero, to a starter thousand, to three months, six months, a full year, and beyond — and show exactly which disasters you survive at each one. Because this single number buys something priceless: the ability to sleep at night.",
+    "narration": "So today we climb every level of 401(k) balance — fifty thousand, a hundred, half a million, all the way to the millionaire's club — and show exactly what life each one actually buys. Plus the free money most people leave on the table, and how to climb faster.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "$0 → 2 years"
+        "name": "jar",
+        "label": "$0 → $1M+"
       },
       {
-        "name": "shield",
-        "label": "what you survive"
+        "name": "handshake",
+        "label": "the free money"
       },
       {
-        "name": "pillow",
-        "label": "sleep at night"
+        "name": "chartup",
+        "label": "climb faster"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/thisisfine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "$0 saved, living paycheck to paycheck",
-    "memeBottom": "this is fine (until the first surprise bill)",
-    "narration": "Because an emergency fund isn't really an investment. It's insurance you sell to yourself — and the thing it protects isn't just your money. It's your peace of mind, your choices, and your ability to handle life without panic."
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "skip the 401(k) match to get a bit more paycheck",
+    "memeBottom": "grab the match — it's an instant, guaranteed 100% return",
+    "narration": "Because the biggest mistake isn't investing badly — it's leaving the single best deal in finance completely untouched. Before we climb the levels, you have to understand the one move that doubles your money the day you make it."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what an emergency fund actually is.",
-    "heading": "The Safety Net",
-    "kicker": "insurance you pay yourself"
+    "narration": "First, what this account actually is.",
+    "heading": "The Account",
+    "kicker": "your retirement machine"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "An emergency fund is simply money set aside as a financial safety net for future mishaps or unexpected expenses. Not for vacations or a new phone — for the genuine surprises: a lost job, a broken car, a hospital visit.",
-    "sourceId": "wiki-efund"
+    "narration": "A 401(k) is an employer-sponsored retirement account where contributions come directly out of your paychecks — often before tax. It's the main way most Americans build their retirement, quietly, straight off the top of every paycheck.",
+    "sourceId": "wiki-401k"
   },
   {
-    "id": "s43",
+    "id": "s7",
+    "type": "screenshot",
+    "narration": "It's a type of defined contribution plan — where the employer, employee, or both make contributions, and your final balance depends on how much went in and how it grew. There's no guaranteed pension at the end; the balance is entirely on you.",
+    "sourceId": "wiki-dc"
+  },
+  {
+    "id": "s42",
     "type": "character",
-    "narration": "And be clear about what actually counts. A true emergency is unexpected and urgent. Your car's annual service, holiday gifts, a known tax bill — those aren't emergencies, they're predictable. Save for those separately, in 'sinking funds,' so they never raid your real safety net.",
+    "narration": "And the account comes with a huge tax break. In a traditional 401(k), the money goes in before tax, shrinking your tax bill today while it grows untouched for decades. In a Roth 401(k), you pay tax now so every dollar comes out completely tax-free later. Either way, the taxman waits.",
     "pose": "explain",
     "props": [
       {
-        "name": "wrench",
-        "label": "known costs ≠ emergencies"
-      },
-      {
-        "name": "calendar",
-        "label": "save for those separately"
+        "name": "receipt",
+        "label": "pre-tax: lower bill now"
       },
       {
         "name": "shield",
-        "label": "protect the real fund"
+        "label": "Roth: tax-free later"
+      },
+      {
+        "name": "moneytree",
+        "label": "grows untaxed for decades"
       }
     ]
   },
   {
-    "id": "s7",
-    "type": "stage",
-    "narration": "Picture it as a moat around your life. When a shock comes — and it always eventually comes — the moat absorbs the hit, so it never reaches your debt, your investments, or your sanity. Without it, every surprise crashes straight through the gates.",
-    "motif": "emergencyfund",
-    "caption": "first: a 3–6 month buffer"
+    "id": "s8",
+    "type": "screenshot",
+    "narration": "And here's the magic ingredient: the employer match — an employer's potential payment to their 401(k) plan that depends on how much you contribute. Your company literally adds free money on top of your own savings.",
+    "sourceId": "wiki-match"
   },
   {
-    "id": "s8",
-    "type": "title",
-    "narration": "So let's climb the levels — and meet the disasters each one defeats.",
-    "heading": "The Levels",
-    "kicker": "$0 to 1 year+"
+    "id": "s43",
+    "type": "callout",
+    "narration": "There's a ceiling on the generosity. In recent years you can put in around twenty-three thousand dollars a year of your own money if you're under fifty — and the employer match sits on top of that. Most people never get anywhere near the cap, which means there's almost always room to add more.",
+    "text": "~$23,000/yr",
+    "sub": "your own contribution cap (under 50) — match is extra",
+    "icon": "vault"
   },
   {
     "id": "s9",
     "type": "stage",
-    "narration": "Here's the whole ladder. Zero dollars: one bill from disaster. A thousand: you survive the small stuff. Three months of expenses: you survive a job loss. Six months: the solid standard. And a full year: you're essentially bulletproof. Each rung buys a bigger shield.",
-    "motif": "efundlevels",
-    "caption": "the levels of a safety net"
-  },
-  {
-    "id": "s10",
-    "type": "title",
-    "narration": "Start at the bottom — where far too many people live.",
-    "heading": "Level 0: $0",
-    "kicker": "one bill from crisis"
-  },
-  {
-    "id": "s11",
-    "type": "character",
-    "narration": "With zero saved, you are permanently one surprise away from crisis. There's no buffer, so every unexpected expense must go onto a credit card or a loan. A single bad week can start a debt spiral that takes years to escape. This is the most financially fragile place to be.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "warning",
-        "label": "no buffer at all"
-      },
-      {
-        "name": "creditcard",
-        "label": "every shock = debt"
-      },
-      {
-        "name": "chartdown",
-        "label": "one week from a spiral"
-      }
-    ]
+    "narration": "Think about what that means. You put in a hundred dollars, and your employer drops in another hundred to match it. That's an instant, guaranteed one hundred percent return, before the market does a single thing. Skipping the match is turning down a raise you've already been offered.",
+    "motif": "employermatch",
+    "caption": "the employer match = free money"
   },
   {
     "id": "s44",
     "type": "character",
-    "narration": "The cruelest part of having zero is what it forces. With no cushion, every shock goes onto a credit card at twenty-plus percent. So the person who can least afford it ends up paying the most to handle a crisis. Having no emergency fund is, in itself, expensive.",
+    "narration": "A typical match looks like this: your employer puts in fifty cents for every dollar you contribute, up to six percent of your salary. Contribute that full six percent and you capture every cent. One catch — vesting: sometimes you have to stay a few years before the matched money is fully yours to keep.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
-        "name": "creditcard",
-        "label": "borrow at 20%+"
+        "name": "handshake",
+        "label": "50% up to 6% of pay"
       },
       {
-        "name": "warning",
-        "label": "the poorest pay most"
+        "name": "calendar",
+        "label": "vesting: stay to keep it"
       },
       {
-        "name": "chartdown",
-        "label": "no fund = costly"
+        "name": "coins",
+        "label": "free money, so grab it all"
       }
     ]
   },
   {
-    "id": "s12",
+    "id": "s10",
     "type": "title",
-    "narration": "The very first rung changes your life more than any other.",
-    "heading": "Level 1: $1,000",
-    "kicker": "the starter fund"
+    "narration": "So let's climb the balance levels — and see what life each one buys.",
+    "heading": "The Levels",
+    "kicker": "$0 to $1M+"
   },
   {
-    "id": "s13",
+    "id": "s11",
+    "type": "stage",
+    "narration": "Here's the whole ladder. Zero is the start line. Fifty thousand is momentum. A hundred thousand means the hardest part is behind you. A quarter million, compounding gets visible. Half a million, you're coasting. And a million-plus is the club everyone's quietly aiming for.",
+    "motif": "k401ladder",
+    "caption": "your 401(k) milestones"
+  },
+  {
+    "id": "s12",
     "type": "character",
-    "narration": "A thousand dollars is the famous starter emergency fund — and psychologically, it's enormous. Suddenly a flat tire, a vet bill, or a broken appliance is an annoyance, not a catastrophe. You've stepped off the knife's edge, and broken the cycle of borrowing for every little shock.",
+    "narration": "Start at zero. Everyone begins here, and there's no shame in it. But the clock is the one thing you can't buy back, so the single most important move at this level is simply to start — even one percent — and at the very least, capture that full employer match.",
     "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "the starter $1K"
+        "name": "seedling",
+        "label": "just start"
       },
       {
-        "name": "car",
-        "label": "a flat tire = annoyance"
+        "name": "handshake",
+        "label": "grab the match"
       },
       {
-        "name": "smiley",
-        "label": "off the knife's edge"
+        "name": "calendar",
+        "label": "the clock is everything"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "Why a thousand dollars specifically? Because most real-life emergencies — a car repair, an urgent flight, a broken boiler — land under that amount. A single thousand dollars catches the overwhelming majority of life's curveballs. It's the highest-leverage savings milestone there is.",
+    "narration": "Good news if you're at zero and terrified: many employers now enroll you automatically, and even one or two percent, started young, snowballs into real money. The hardest dollar to invest is the first one — but it's also the single most powerful, because it has the most time to grow.",
     "pose": "explain",
     "props": [
       {
-        "name": "car",
-        "label": "most shocks < $1K"
+        "name": "seedling",
+        "label": "auto-enrolled at 1-2%"
       },
       {
-        "name": "piggybank",
-        "label": "catches the majority"
+        "name": "snowball",
+        "label": "tiny start, big finish"
+      },
+      {
+        "name": "hourglass",
+        "label": "first dollar = most time"
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "type": "character",
+    "narration": "At fifty thousand, you've got real momentum. It's roughly one year of a typical salary, saved. The habit is working, and for the first time, your account's own growth in a good year can start to rival what you personally contribute. The snowball is beginning to roll.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "$50K: momentum"
+      },
+      {
+        "name": "chartup",
+        "label": "growth rivals contributions"
       },
       {
         "name": "smiley",
-        "label": "highest-leverage milestone"
+        "label": "the habit is working"
       }
     ]
   },
   {
     "id": "s14",
     "type": "title",
-    "narration": "Now we reach the level that protects against the big one: losing your income.",
-    "heading": "Level 2: 3 Months",
-    "kicker": "surviving a job loss"
+    "narration": "Now the milestone that quietly changes everything.",
+    "heading": "$100,000",
+    "kicker": "the hard part's done"
   },
   {
     "id": "s15",
-    "type": "screenshot",
-    "narration": "Three to six months of expenses is designed for the scariest shock of all: unemployment — the state of not being in paid employment but actively available for work. This is the fund that lets you survive losing your job.",
-    "sourceId": "wiki-unemployment"
-  },
-  {
-    "id": "s46",
-    "type": "callout",
-    "narration": "Here's why three to six months is the real target. The average job search, after a layoff, runs around five months. Your fund has to outlast the gap between paychecks — and five months is a very long time to pay the rent with nothing at all coming in.",
-    "text": "~5 months",
-    "sub": "the average job search after a layoff",
-    "icon": "briefcase"
-  },
-  {
-    "id": "s16",
     "type": "character",
-    "narration": "With three months saved, a layoff becomes a setback instead of a disaster. You can pay rent, keep the lights on, and job-hunt without panic for a while. Crucially, it means you don't have to grab the first desperate job offer — you can hold out for the right one.",
+    "narration": "A hundred thousand is the legendary milestone — and it's the hardest to reach, because you build it almost entirely from your own contributions. But once you're there, Charlie Munger's famous words kick in: the first hundred thousand is the hardest. After this, compounding starts doing the heavy lifting.",
     "pose": "explain",
     "props": [
       {
+        "name": "medal",
+        "label": "the first $100K"
+      },
+      {
         "name": "briefcase",
-        "label": "survive a layoff"
+        "label": "built from your savings"
       },
       {
-        "name": "house",
-        "label": "rent still covered"
+        "name": "moneytree",
+        "label": "now compounding lifts"
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "type": "screenshot",
+    "narration": "That heavy lifting is compound interest — interest accumulated on a principal sum and on previously accumulated interest. At a hundred thousand invested, a normal market year can add thousands to your balance, entirely on its own.",
+    "sourceId": "wiki-compound"
+  },
+  {
+    "id": "s46",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "save cash in a checking account for retirement",
+    "memeBottom": "let compounding inside a 401(k) do the saving for you",
+    "narration": "And this is the mental leap that changes everything. At a hundred thousand invested, the account can earn more in a flat year than many people manage to save — your money finally starts out-earning you."
+  },
+  {
+    "id": "s17",
+    "type": "title",
+    "narration": "Keep climbing, and the account starts to feel alive.",
+    "heading": "$250K to $500K",
+    "kicker": "compounding takes over"
+  },
+  {
+    "id": "s18",
+    "type": "character",
+    "narration": "Between a quarter and a half million, something wonderful happens: the account begins growing faster from market gains than from your own paychecks. In a good year, it can jump fifty thousand or more without you adding a cent. You're no longer pushing the snowball — it's rolling on its own.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "moneytree",
+        "label": "growth > contributions"
       },
       {
-        "name": "handshake",
-        "label": "hold out for the right job"
+        "name": "chartup",
+        "label": "+$50K in a good year"
+      },
+      {
+        "name": "snowball",
+        "label": "rolling on its own"
       }
     ]
   },
   {
     "id": "s47",
     "type": "character",
-    "narration": "And a key nuance: your emergency-fund months are counted on bare-bones survival expenses, not your full lifestyle. In a real crisis, you'd cut the extras instantly. So calculate it on rent, food, utilities, and insurance — the true must-pays. That makes your target smaller and far more reachable.",
+    "narration": "Here's the part that scares people: along the way, the market will crash. It always does. But every crash while you're still contributing is a fire sale — you're buying more shares cheaply, which supercharges the recovery. The investors who panic and sell are the only ones who truly lose.",
     "pose": "explain",
     "props": [
       {
-        "name": "grocerybag",
-        "label": "bare-bones expenses"
+        "name": "rollercoaster",
+        "label": "crashes are guaranteed"
       },
       {
-        "name": "scissors",
-        "label": "cut the extras in a crisis"
+        "name": "chartup",
+        "label": "a crash = a fire sale"
       },
       {
-        "name": "shield",
-        "label": "just the must-pays"
-      }
-    ]
-  },
-  {
-    "id": "s17",
-    "type": "title",
-    "narration": "Double it, and you reach the gold standard.",
-    "heading": "Level 3: 6 Months",
-    "kicker": "the solid standard"
-  },
-  {
-    "id": "s18",
-    "type": "character",
-    "narration": "Six months of expenses is the classic recommendation, and it's genuinely solid. It can carry you through a long job search, a major medical event, or a big home repair — all at once, without touching your investments or taking on a cent of debt. This is real resilience.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "shield",
-        "label": "6 months = resilient"
-      },
-      {
-        "name": "hospital",
-        "label": "a medical event"
-      },
-      {
-        "name": "house",
-        "label": "+ a big repair"
-      }
-    ]
-  },
-  {
-    "id": "s48",
-    "type": "character",
-    "narration": "Your situation shifts the target. A two-income household can often hold a little less — if one job vanishes, the other still pays some bills. A single earner supporting a family alone should lean to the higher end. The more fragile your income, the bigger the moat you need.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "couple",
-        "label": "two incomes = less needed"
-      },
-      {
-        "name": "house",
-        "label": "single earner = more"
-      },
-      {
-        "name": "gauge",
-        "label": "match your fragility"
+        "name": "warning",
+        "label": "only sellers lose"
       }
     ]
   },
   {
     "id": "s19",
-    "type": "title",
-    "narration": "And for the truly cautious — the bulletproof level.",
-    "heading": "Level 4: 1 Year",
-    "kicker": "bulletproof"
-  },
-  {
-    "id": "s20",
     "type": "character",
-    "narration": "A full year of expenses makes you nearly bulletproof. You could lose your job, face a crisis, and still have a long runway to recover, retrain, or even start a business. For people with unstable income or who simply crave deep security, this is the level of total calm.",
+    "narration": "At half a million, you're genuinely coasting toward a comfortable retirement. Even if you stopped contributing entirely, compounding alone could carry that balance to well over a million by the time you retire. The hard work is mostly behind you; now time does the rest.",
     "pose": "explain",
     "props": [
       {
-        "name": "shield",
-        "label": "a year's runway"
+        "name": "hammock",
+        "label": "$500K: coasting"
       },
       {
-        "name": "pillow",
-        "label": "total calm"
+        "name": "moneytree",
+        "label": "grows to $1M+ alone"
       },
       {
-        "name": "briefcase",
-        "label": "even start a business"
+        "name": "calendar",
+        "label": "time finishes the job"
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "type": "title",
+    "narration": "And then the number everyone secretly dreams about.",
+    "heading": "$1 Million+",
+    "kicker": "the 401(k) millionaire"
+  },
+  {
+    "id": "s21",
+    "type": "stage",
+    "narration": "The 401(k) millionaire. It sounds like a fantasy, but there are millions of ordinary people who've done it — not with huge salaries, but with decades of steady contributions and compounding. Start young and max it out, and you can quietly cross this line surprisingly early.",
+    "motif": "k401millionaire",
+    "caption": "max it out from 25, and you're a millionaire by your 40s"
+  },
+  {
+    "id": "s48",
+    "type": "callout",
+    "narration": "And this club is bigger than you'd think. Retirement giant Fidelity has reported hundreds of thousands of ordinary savers with seven-figure 401(k) balances — teachers, nurses, engineers. Almost none of them are high earners. They're just early, consistent, and patient.",
+    "text": "500,000+",
+    "sub": "ordinary 401(k) millionaires — not high earners, just consistent",
+    "icon": "crown"
+  },
+  {
+    "id": "s22",
+    "type": "character",
+    "narration": "And a million-dollar 401(k) isn't flashy — but it's freedom. At the four-percent rule, it throws off around forty thousand dollars a year, for life. Combined with Social Security, that's a genuinely comfortable retirement, funded entirely by your younger self.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "nestegg",
+        "label": "~$40K/yr for life"
+      },
+      {
+        "name": "retiree",
+        "label": "+ Social Security"
+      },
+      {
+        "name": "smiley",
+        "label": "comfortable, funded"
       }
     ]
   },
   {
     "id": "s49",
     "type": "character",
-    "narration": "And if you're self-employed or on commission, a year isn't a luxury — it's the baseline. Your income is lumpy and unpredictable, with no employer safety net and no guaranteed paycheck. For you, a big fund isn't being overly cautious. It's simply how you stay in business.",
+    "narration": "One honest caveat, though: a million dollars in thirty years won't buy what a million buys today. Inflation quietly eats at every balance. So treat a million as a floor, not a ceiling — and let that push you to aim a little higher, not to give up.",
     "pose": "explain",
     "props": [
       {
-        "name": "briefcase",
-        "label": "self-employed"
-      },
-      {
-        "name": "chartdown",
-        "label": "lumpy income"
-      },
-      {
-        "name": "shield",
-        "label": "a year is baseline"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "stage",
-    "narration": "And here's the key: which shock you survive scales with the level. A thousand dollars beats a flat tire. Three months beats a layoff. Six months beats a layoff plus a medical bill. And a year beats almost any disaster life can throw at you. Each level, a bigger catastrophe defeated.",
-    "motif": "survivalbyshock",
-    "caption": "what each level lets you survive"
-  },
-  {
-    "id": "s22",
-    "type": "title",
-    "narration": "But is there such a thing as too much? Yes — and this is where it flips.",
-    "heading": "Level 5: 2 Years",
-    "kicker": "too much of a good thing"
-  },
-  {
-    "id": "s23",
-    "type": "character",
-    "narration": "Beyond a year or so, an emergency fund can quietly become too big. Money sitting in cash is safe — but it barely grows, and it slowly loses value to inflation every year. Past a certain point, you're not buying security anymore. You're just leaving money to rot.",
-    "pose": "explain",
-    "expression": "worried",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "2 years in cash"
-      },
-      {
-        "name": "grocerybag",
-        "label": "loses to inflation"
+        "name": "hourglass",
+        "label": "inflation erodes it"
       },
       {
         "name": "warning",
-        "label": "money left to rot"
+        "label": "$1M is a floor, not a ceiling"
+      },
+      {
+        "name": "chartup",
+        "label": "so aim higher"
       }
     ]
   },
   {
-    "id": "s50",
-    "type": "callout",
-    "narration": "Put a number on over-saving. Fifty thousand dollars sitting idle beyond your real needs, instead of invested at eight percent, quietly costs you about four thousand dollars a year in missed growth. Safety is priceless — but hoarding far past 'safe' carries a very real price.",
-    "text": "$4,000/yr",
-    "sub": "lost growth on $50K of excess idle cash",
-    "icon": "chartdown"
+    "id": "s23",
+    "type": "title",
+    "narration": "So let's make the whole thing concrete: what does each balance actually pay you?",
+    "heading": "Balance to Income",
+    "kicker": "the 4% translation"
   },
   {
     "id": "s24",
     "type": "stage",
-    "narration": "This is the cash drag problem. Two years of cash feels ultra-safe, but it's a huge pile earning almost nothing while inflation eats away at it. Every dollar over your real safety needs should be out working for you — invested, not idling. Even safety has a sweet spot.",
-    "motif": "cashdrag",
-    "caption": "past ~1 year, extra cash should be invested, not idle"
+    "narration": "Here's the translator. Take your balance, multiply by four percent, and that's your rough yearly retirement income. Five hundred thousand gives you twenty thousand a year. A million gives you forty. Your balance isn't just a number — it's a future paycheck, waiting.",
+    "motif": "balancetoincome",
+    "caption": "every $100K ≈ $4,000 a year in retirement, forever"
   },
   {
-    "id": "s25",
-    "type": "title",
-    "narration": "So where should this money actually live?",
-    "heading": "Where to Keep It",
-    "kicker": "safe, but earning"
-  },
-  {
-    "id": "s26",
+    "id": "s50",
     "type": "character",
-    "narration": "The rules are simple. It must be safe — never in stocks, which could crash exactly when you need it. And it must be accessible — available within a day or two. But it should still earn something. The worst place for it is a regular checking account paying zero.",
+    "narration": "And the four-percent figure is already built to survive inflation — the idea is that you can give yourself a small raise each year to keep pace with prices, and the balance should still last roughly thirty years. It's a rule of thumb, not a guarantee, but it's a remarkably sturdy one.",
     "pose": "explain",
     "props": [
       {
-        "name": "shield",
-        "label": "safe, not stocks"
-      },
-      {
-        "name": "clock",
-        "label": "accessible in a day"
-      },
-      {
         "name": "percent",
-        "label": "but still earning"
+        "label": "4% rises with inflation"
+      },
+      {
+        "name": "calendar",
+        "label": "designed to last ~30 yrs"
+      },
+      {
+        "name": "scale",
+        "label": "sturdy rule of thumb"
       }
     ]
+  },
+  {
+    "id": "s25",
+    "type": "character",
+    "narration": "This flips how you see every contribution. That extra hundred dollars you add today isn't just a hundred dollars. Decades from now, grown by compounding, it becomes part of a paycheck that arrives every year of your retirement, long after you've stopped working for it.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "coins",
+        "label": "$100 today…"
+      },
+      {
+        "name": "moneytree",
+        "label": "…grows for decades"
+      },
+      {
+        "name": "nestegg",
+        "label": "= a future paycheck"
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "type": "title",
+    "narration": "So where should your balance be, for your age?",
+    "heading": "Where You Rank",
+    "kicker": "the age benchmarks"
+  },
+  {
+    "id": "s27",
+    "type": "stage",
+    "narration": "A popular benchmark frames it as multiples of your salary. Aim to have one times your salary saved by thirty, three times by forty, six times by fifty, and ten times by sixty-seven. It's a simple yardstick to check whether your balance is quietly on track.",
+    "motif": "salarymultiple",
+    "caption": "a cleaner target: multiples of your salary"
   },
   {
     "id": "s51",
     "type": "character",
-    "narration": "And never, ever keep your emergency fund in stocks. The whole point is that it's there when disaster strikes — but disasters and market crashes love to arrive together. A layoff in a recession is exactly when your stocks would be down forty percent. Safe has to mean safe.",
+    "narration": "Now brace yourself for the reality check. The median 401(k) balance in America is shockingly low — often just tens of thousands of dollars, even for people in their fifties. The averages look healthier only because a handful of huge accounts drag them up. Most people are nowhere near on track.",
     "pose": "explain",
-    "expression": "worried",
     "props": [
       {
         "name": "chartdown",
-        "label": "crashes + crises coincide"
+        "label": "median is shockingly low"
       },
       {
-        "name": "warning",
-        "label": "not in stocks"
+        "name": "scale",
+        "label": "a few huge accounts skew it"
       },
       {
-        "name": "shield",
-        "label": "safe means safe"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "screenshot",
-    "narration": "The ideal home is a high-yield savings account, or a money market account — a deposit account that pays interest based on current interest rates. You get full safety, quick access, and a real return, all at once. There's no reason to let it sit earning nothing.",
-    "sourceId": "wiki-mma"
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "And the account you choose matters more than people think. A big-bank savings account might pay a pathetic one-hundredth of a percent, while a high-yield account pays four or five. On six months of expenses, that's hundreds of free dollars a year — for one ten-minute switch.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "bank",
-        "label": "0.01% vs 4.5%"
-      },
-      {
-        "name": "percent",
-        "label": "hundreds of $ free"
-      },
-      {
-        "name": "smiley",
-        "label": "a 10-minute switch"
+        "name": "gauge",
+        "label": "most are behind"
       }
     ]
   },
   {
     "id": "s28",
-    "type": "title",
-    "narration": "Now here's the beautiful truth about how this fund pays you back.",
-    "heading": "The Peace Curve",
-    "kicker": "calm, not returns"
+    "type": "character",
+    "narration": "And if you're behind those benchmarks — don't panic. The majority of people are. What matters is the direction. A balance that's climbing every year, with the match captured and contributions rising, will catch up far faster than you'd expect, thanks to compounding's late-game magic.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "gauge",
+        "label": "behind? most are"
+      },
+      {
+        "name": "chartup",
+        "label": "direction > position"
+      },
+      {
+        "name": "snowball",
+        "label": "it catches up fast"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "narration": "Which is strangely freeing. If the typical balance is that low, then simply by capturing your match, investing in an index fund, and staying consistent, you quietly leapfrog the majority. You don't have to be exceptional to win this game — you just have to not quit.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "rocket",
+        "label": "leapfrog the majority"
+      },
+      {
+        "name": "pie",
+        "label": "match + index + consistency"
+      },
+      {
+        "name": "trophy",
+        "label": "just don't quit"
+      }
+    ]
   },
   {
     "id": "s29",
-    "type": "stage",
-    "narration": "The return on an emergency fund isn't measured in dollars — it's measured in calm. And most of that calm comes early. Going from zero to three months buys a massive leap in peace of mind. Going from one year to two barely moves the needle. The early rungs are the magic.",
-    "motif": "peaceofmindcurve",
-    "caption": "most of the calm comes early"
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Yearly retirement income by 401(k) balance ($K, at 4%)",
+    "unit": "$K",
+    "narration": "Here's the whole ladder as income. A hundred thousand pays four thousand a year. Two-fifty pays ten. Half a million pays twenty. And a million pays forty thousand a year, for the rest of your life. The balance is just your future income, in disguise.",
+    "data": [
+      {
+        "label": "$100K",
+        "value": 4
+      },
+      {
+        "label": "$250K",
+        "value": 10
+      },
+      {
+        "label": "$500K",
+        "value": 20
+      },
+      {
+        "label": "$1M",
+        "value": 40
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s30",
+    "type": "title",
+    "narration": "So how do you climb these levels as fast as possible?",
+    "heading": "How to Climb",
+    "kicker": "the accelerators"
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "narration": "Rule one, non-negotiable: always contribute enough to get the full employer match. It's free money and an instant hundred-percent return. Not doing this is the most expensive, most common mistake in all of retirement saving. Grab every cent of it, first.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "grab the full match"
+      },
+      {
+        "name": "percent",
+        "label": "100% instant return"
+      },
+      {
+        "name": "warning",
+        "label": "never skip it"
+      }
+    ]
   },
   {
     "id": "s53",
     "type": "character",
-    "narration": "And the biggest payoff doesn't show up in any account. Financial stress is one of the leading causes of anxiety, lost sleep, and even relationship breakdown. An emergency fund doesn't just protect your money — it protects your health, your marriage, and your peace of mind.",
-    "pose": "explain",
+    "narration": "One decision worth making deliberately: traditional or Roth. If you think your tax rate will be higher in retirement, Roth's tax-free withdrawals win. If you want the tax break now, go traditional. If you can't decide, many people simply split the difference and do some of each.",
+    "pose": "present",
     "props": [
       {
-        "name": "pillow",
-        "label": "better sleep"
+        "name": "scale",
+        "label": "traditional vs Roth"
       },
       {
-        "name": "couple",
-        "label": "fewer money fights"
+        "name": "receipt",
+        "label": "break now vs tax-free later"
       },
       {
-        "name": "smiley",
-        "label": "protects your mind"
+        "name": "handshake",
+        "label": "or split both"
       }
     ]
-  },
-  {
-    "id": "s30",
-    "type": "character",
-    "narration": "This is why the fund is insurance, not an investment. You don't build it to get rich. You build it so that a crisis stays a crisis — and never becomes a catastrophe. The 'return' is the debt you never take on, and the panic you never feel.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "fireextinguisher",
-        "label": "it's insurance"
-      },
-      {
-        "name": "shield",
-        "label": "crisis, not catastrophe"
-      },
-      {
-        "name": "pillow",
-        "label": "the return is calm"
-      }
-    ]
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "This fund also protects your future self. Without it, the first crisis forces you to sell investments at the worst possible time, or raid your retirement account and pay penalties. The emergency fund is the firewall that stops a short-term shock from torching your long-term wealth.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "fireextinguisher",
-        "label": "a firewall"
-      },
-      {
-        "name": "chartdown",
-        "label": "don't sell investments low"
-      },
-      {
-        "name": "nestegg",
-        "label": "protects retirement"
-      }
-    ]
-  },
-  {
-    "id": "s31",
-    "type": "title",
-    "narration": "So how do you actually build one, starting from nothing?",
-    "heading": "How to Build It",
-    "kicker": "zero to hero"
   },
   {
     "id": "s32",
-    "type": "screenshot",
-    "narration": "It starts with a budget — a calculation plan, usually financial, for a defined period. First, figure out your essential monthly expenses. That single number tells you exactly how big each level — three months, six months — actually is for you.",
-    "sourceId": "wiki-budget"
+    "type": "stage",
+    "narration": "Rule two: start as early as humanly possible. A dollar invested at twenty-five can be worth ten times a dollar invested at forty-five, purely from extra decades of compounding. On this ladder, time is a bigger accelerator than money. The early years are pure gold.",
+    "motif": "startearly",
+    "caption": "the one asset you can't buy back: time"
+  },
+  {
+    "id": "s54",
+    "type": "callout",
+    "narration": "Let this number sink in. Waiting just ten years to start — from twenty-five to thirty-five — can cut your final balance roughly in half, even if you contribute the exact same amount afterward. That's not a typo. A decade of lost compounding is the most expensive delay in personal finance.",
+    "text": "-50%",
+    "sub": "the cost of starting 10 years late, same contributions",
+    "icon": "hourglass"
   },
   {
     "id": "s33",
     "type": "character",
-    "narration": "Then the strategy is staged. First, sprint to that starter thousand dollars as fast as humanly possible — sell stuff, pick up a side gig, cut hard. That first grand is the single highest-value money you'll ever save, because it stops the bleeding.",
+    "narration": "Rule three: ratchet up your contribution over time. Bump it one percent every year, or bank half of every raise straight into the account. You'll barely feel it — but over a career, that slow climb can add hundreds of thousands to your final balance.",
     "pose": "present",
     "props": [
       {
+        "name": "chartup",
+        "label": "+1% every year"
+      },
+      {
         "name": "piggybank",
-        "label": "sprint to $1,000 first"
+        "label": "bank half your raises"
       },
       {
-        "name": "scissors",
-        "label": "sell, cut, hustle"
-      },
-      {
-        "name": "shield",
-        "label": "it stops the bleeding"
+        "name": "moneytree",
+        "label": "+$100Ks at the end"
       }
     ]
   },
   {
     "id": "s55",
     "type": "character",
-    "narration": "To build that first thousand fast, go into sprint mode. A thirty-day no-spend challenge, selling things you don't use, a few weekends of side work. It isn't forever — it's a short, intense push to build the one buffer that genuinely changes everything.",
+    "narration": "And once you hit fifty, the rules hand you a gift: catch-up contributions. You're suddenly allowed to stuff several thousand extra dollars a year into the account, on top of the normal limit — specifically designed to let late starters sprint for the finish line.",
     "pose": "present",
     "props": [
       {
-        "name": "scissors",
-        "label": "a no-spend month"
+        "name": "stopwatch",
+        "label": "age 50+ catch-up"
       },
       {
-        "name": "phone",
-        "label": "sell unused stuff"
+        "name": "vault",
+        "label": "thousands extra allowed"
       },
       {
-        "name": "piggybank",
-        "label": "a short, intense sprint"
+        "name": "rocket",
+        "label": "sprint to the finish"
       }
     ]
   },
   {
     "id": "s34",
     "type": "character",
-    "narration": "After that, automate it. Set a small, automatic transfer to a separate high-yield account every payday. Even fifty dollars a week quietly becomes thousands over a year. You won't miss what you never see — and the moat slowly, steadily rises on its own.",
+    "narration": "Rule four: don't touch it. Cashing out a 401(k) when you change jobs triggers taxes, penalties, and — worst of all — robs you of decades of future compounding. Whatever you do, roll it over, never cash it out. Let the snowball keep rolling, untouched, for decades.",
     "pose": "present",
     "props": [
       {
-        "name": "gear",
-        "label": "automate it"
+        "name": "padlock",
+        "label": "never cash it out"
       },
       {
-        "name": "bank",
-        "label": "a separate HYSA"
+        "name": "warning",
+        "label": "taxes + penalties"
       },
       {
-        "name": "chartup",
-        "label": "the moat rises"
-      }
-    ]
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "narration": "After the sprint, make it a bill you pay yourself. Automate a transfer the day your paycheck lands — before you can spend it. Treat your emergency fund like rent: non-negotiable, paid first, every single month. That's how the moat quietly fills itself while you forget about it.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "gear",
-        "label": "automate it"
-      },
-      {
-        "name": "calendar",
-        "label": "pay yourself first"
-      },
-      {
-        "name": "bank",
-        "label": "non-negotiable, like rent"
+        "name": "snowball",
+        "label": "let it keep rolling"
       }
     ]
   },
   {
     "id": "s35",
     "type": "character",
-    "narration": "And a critical rule: this money is sacred. It is not for a holiday, a sale, or a new gadget. An emergency is a job loss or a hospital bill — not a tempting deal. Guard it ruthlessly, and only ever touch it for a true, genuine emergency.",
+    "narration": "And invest it, don't just park it. A shocking number of people contribute to their 401(k) but leave the money sitting in cash inside it, earning almost nothing. Make sure it's actually invested — usually in a low-cost index or target-date fund. Contributing isn't enough; it has to grow.",
     "pose": "present",
     "props": [
       {
-        "name": "padlock",
-        "label": "it's sacred"
+        "name": "warning",
+        "label": "don't leave it in cash"
       },
+      {
+        "name": "pie",
+        "label": "buy an index fund"
+      },
+      {
+        "name": "chartup",
+        "label": "make it actually grow"
+      }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "character",
+    "narration": "And watch the fees like a hawk. A fund charging one percent a year instead of a tenth of a percent sounds trivial — but over a career it can quietly devour a hundred thousand dollars or more of your final balance. Pick the cheapest broad index fund your plan offers, always.",
+    "pose": "present",
+    "props": [
       {
         "name": "warning",
-        "label": "not for a 'deal'"
+        "label": "fees compound too"
       },
       {
-        "name": "fireextinguisher",
-        "label": "true emergencies only"
+        "name": "chartdown",
+        "label": "1% vs 0.1% = -$100K"
+      },
+      {
+        "name": "pie",
+        "label": "pick the cheapest index"
+      }
+    ]
+  },
+  {
+    "id": "s36",
+    "type": "character",
+    "narration": "The end goal of this whole climb is retirement itself — the withdrawal from your active working life. The 401(k) is the engine that makes that possible without a paycheck. Every level you climb is another year of future freedom, quietly purchased today.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "retiree",
+        "label": "the goal: retirement"
+      },
+      {
+        "name": "hammock",
+        "label": "freedom without a paycheck"
+      },
+      {
+        "name": "jar",
+        "label": "bought level by level"
       }
     ]
   },
   {
     "id": "s57",
     "type": "character",
-    "narration": "And one more rule: if you ever do use it, refill it immediately. The moment the crisis passes, your next mission is rebuilding the moat right back to full. An emergency fund you drained and never refilled is just a memory — and the next shock won't politely wait for you.",
-    "pose": "present",
+    "narration": "And once you've captured the full match, don't stop thinking. If you can save more, a separate account called an IRA gives you even more tax-advantaged room and wider investment choices. The 401(k) is the foundation — but it doesn't have to be the whole house.",
+    "pose": "explain",
     "props": [
       {
-        "name": "fireextinguisher",
-        "label": "used it? refill it"
+        "name": "bank",
+        "label": "match first, then an IRA"
       },
       {
-        "name": "gear",
-        "label": "rebuild to full"
+        "name": "vault",
+        "label": "more tax-free room"
       },
       {
-        "name": "shield",
-        "label": "stay protected"
+        "name": "moneytree",
+        "label": "401k = foundation, not the whole house"
       }
     ]
-  },
-  {
-    "id": "s36",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Emergency fund target by level (months of expenses)",
-    "unit": "mo",
-    "narration": "Here's the ladder in one view. A starter fund is a fraction of a month. The classic targets are three and six months. A year is the bulletproof level. And two years, for most people, is simply too much idle cash — the point where safety turns into drag.",
-    "data": [
-      {
-        "label": "starter",
-        "value": 1
-      },
-      {
-        "label": "standard",
-        "value": 3
-      },
-      {
-        "label": "solid",
-        "value": 6
-      },
-      {
-        "label": "bulletproof",
-        "value": 12
-      }
-    ],
-    "highlight": 2
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "How big your fund should be depends on your life. If your income is steady and secure, three months may be plenty. If it's unstable, commission-based, or you're self-employed, lean toward six months or a year. Match the moat to how choppy your waters are.",
+    "narration": "Because the real lesson is that a 401(k) is a time machine. It takes small, almost unnoticed amounts from your present, and sends them decades into the future, multiplied many times over, to fund a version of you that can finally stop working. The sooner you feed it, the more it sends back.",
     "pose": "explain",
     "props": [
       {
-        "name": "briefcase",
-        "label": "steady job? 3 months"
+        "name": "jar",
+        "label": "a time machine"
       },
       {
-        "name": "gauge",
-        "label": "unstable? 6-12 months"
+        "name": "moneytree",
+        "label": "small now → huge later"
       },
       {
-        "name": "scale",
-        "label": "match it to your risk"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "narration": "An advanced move: layer your defenses. Keep one or two months in instant-access cash for fast shocks, and the rest in a slightly-higher-yield spot you can reach in a few days. Some even keep a Roth account as a deep backstop, since contributions can be withdrawn if things get truly dire.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "safetynet",
-        "label": "layer 1: instant cash"
-      },
-      {
-        "name": "bank",
-        "label": "layer 2: HYSA"
-      },
-      {
-        "name": "vault",
-        "label": "backstop: a Roth"
+        "name": "retiree",
+        "label": "funds future you"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "Because the real lesson is that an emergency fund is the foundation everything else is built on. Without it, one bad day can undo years of investing. With it, you can invest boldly, take smart risks, and ride out any storm — because you know your floor will always hold.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "shield",
-        "label": "the foundation"
-      },
-      {
-        "name": "chartup",
-        "label": "lets you invest boldly"
-      },
-      {
-        "name": "pillow",
-        "label": "your floor holds"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "narration": "And remember where this sits in the whole plan. The emergency fund comes before aggressive investing, before extra debt payoff, before almost everything else. It's the foundation. You don't build wealth on quicksand — you build it on a solid, boring, fully-funded safety net.",
+    "narration": "So check your balance today, and find your level. Then make the moves: grab the full match, bump your contribution, pick a cheap index fund, and never, ever cash it out. Do that, and your future self crosses into the millionaire's club without ever feeling like they sacrificed much at all.",
     "pose": "present",
     "props": [
       {
-        "name": "shield",
-        "label": "fund it FIRST"
+        "name": "gauge",
+        "label": "find your level"
       },
       {
-        "name": "chartup",
-        "label": "then invest"
+        "name": "handshake",
+        "label": "match + index + bump"
       },
       {
-        "name": "smiley",
-        "label": "build on solid ground"
+        "name": "medal",
+        "label": "the millionaire's club"
       }
     ]
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "So wherever you are tonight — zero, a starter thousand, or a solid six months — know that the next rung buys real, measurable peace. Start with that first thousand, automate the climb to three months, and you will have built the single most important safety net in your financial life.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "piggybank",
-        "label": "start with $1K"
-      },
-      {
-        "name": "safetynet",
-        "label": "climb to 3 months"
-      },
-      {
-        "name": "smiley",
-        "label": "real, measurable peace"
-      }
-    ]
-  },
-  {
-    "id": "s40",
-    "type": "character",
-    "narration": "If this showed you exactly how big your safety net should be, hit subscribe — and tell me which number you want me to pull apart next.",
+    "narration": "If this showed you exactly what your 401(k) balance really means, hit subscribe — and tell me which number you want me to pull apart next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "safetynet",
+        "name": "jar",
         "label": "which number next?"
       }
     ]
   },
   {
-    "id": "s41",
+    "id": "s40",
     "type": "character",
     "narration": "I do the reading. You get the parts that matter.",
     "pose": "celebrate",

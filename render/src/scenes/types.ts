@@ -208,7 +208,9 @@ export interface StageScene extends Base {
     // EP071 (every level of interest rate) additions:
     | "interestratelevels" | "saversvsborrowers" | "rateripple" | "realrate"
     // EP072 (every level of emergency fund) additions:
-    | "efundlevels" | "survivalbyshock" | "peaceofmindcurve" | "cashdrag";
+    | "efundlevels" | "survivalbyshock" | "peaceofmindcurve" | "cashdrag"
+    // EP073 (every level of 401k balance) additions:
+    | "k401ladder" | "balancetoincome" | "k401millionaire";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

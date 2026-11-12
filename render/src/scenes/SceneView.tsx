@@ -5455,6 +5455,43 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={460} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>past ~1 year, extra cash should be invested, not idle</text>
       </svg>
     );
+  } else if (m === "k401ladder") {
+    // 401(k) balance milestones and what each means.
+    const tiers: [string, string][] = [["$0", "the start line"], ["$50K", "momentum"], ["$100K", "the hard part's done"], ["$250K", "compounding visible"], ["$500K", "coasting toward it"], ["$1M+", "the millionaire club"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => { const w = 150 + i * 128; const y = 90 + i * 66; return <g key={i} opacity={interpolate(climb, [i * 0.13, i * 0.13 + 0.2], [0, 1], clampBoth)}><rect x={VW / 2 - w / 2} y={y} width={w} height={54} rx={7} fill={[parch, "#e8d7bf", "#cfe3d4", "#9cc47f", gold, green][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 50} y={y + 34} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}</text><text x={VW / 2 + 55} y={y + 33} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your 401(k) milestones</text>
+      </svg>
+    );
+  } else if (m === "balancetoincome") {
+    // balance × 4% = annual retirement income.
+    const pop = spring({ frame, fps, delay: fps * 1.0, config: { damping: 10 } });
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={110} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what your balance really pays you</text>
+        <g transform="translate(250 290)"><circle r={78} fill={gold} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>balance</text><text y={18} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$500K</text></g>
+        <text x={430} y={300} fontSize={28} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">× 4%</text>
+        <path d="M520 290 l70 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform={`translate(760 290) scale(${Math.min(1, pop)})`}><circle r={70} fill={green} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>income</text><text y={18} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$20K/yr</text></g>
+        <text x={VW / 2} y={460} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>every $100K ≈ $4,000 a year in retirement, forever</text>
+      </svg>
+    );
+  } else if (m === "k401millionaire") {
+    // The 401(k) millionaire milestone & time to reach it.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const amt = Math.round(1000000 * Math.pow(grow, 1.8));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 401(k) millionaire</text>
+        <g transform={`translate(${VW / 2} 290)`}>
+          <circle r={70 + 50 * grow} fill={green} stroke={ink} strokeWidth={6} />
+          <text y={10} fontSize={22 + 6 * grow} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">${amt.toLocaleString("en-US")}</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>max it out from 25, and you're a millionaire by your 40s</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

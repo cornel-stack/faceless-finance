@@ -135,6 +135,8 @@ export type DoodleName =
   | "thermostat" | "brake"
   // EP072 (every level of emergency fund) additions:
   | "fireextinguisher" | "pillow"
+  // EP073 (every level of 401k balance) additions:
+  | "jar" | "medal"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2228,6 +2230,26 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M18 42 Q50 30 82 42 Q86 64 82 74 Q50 86 18 74 Q14 64 18 42 Z" fill="#eef3f6" strokeWidth={SW} />
           <RCircle cx={30} cy={52} d={6} fill="none" strokeWidth={1.2} />
           <RCircle cx={70} cy={52} d={6} fill="none" strokeWidth={1.2} />
+        </>
+      );
+    case "jar":
+      // A savings jar filling with coins.
+      return (
+        <>
+          <RRect x={28} y={26} w={44} h={58} fill="none" strokeWidth={SW} />
+          <RRect x={32} y={20} w={36} h={10} fill={TAN} strokeWidth={SW} />
+          <RRect x={30} y={56} w={40} h={26} fill={GOLD} strokeWidth={1.6} />
+          <text x={50} y={74} fontSize={13} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">$</text>
+        </>
+      );
+    case "medal":
+      // A medal — a milestone achieved.
+      return (
+        <>
+          <RPath d="M38 18 L46 48 L36 48 Z" fill={RED} strokeWidth={1.6} />
+          <RPath d="M62 18 L64 48 L54 48 Z" fill={ARMY} strokeWidth={1.6} />
+          <RCircle cx={50} cy={64} d={34} fill={GOLD} strokeWidth={SW} />
+          <text x={50} y={70} fontSize={16} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">★</text>
         </>
       );
   }
