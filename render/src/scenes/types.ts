@@ -188,7 +188,9 @@ export interface StageScene extends Base {
     // EP061 (cost of living by state) additions:
     | "stateheatmap" | "colindex100" | "samesalarystates" | "housingdriver" | "notaxstates" | "realwealthformula"
     // EP062 (every level of rich) additions:
-    | "richtiers" | "howmoneyheld" | "lifestylevspower" | "spendingplateau" | "oldvsnewmoney" | "dynastywealth";
+    | "richtiers" | "howmoneyheld" | "lifestylevspower" | "spendingplateau" | "oldvsnewmoney" | "dynastywealth"
+    // EP063 (retirement at every savings rate) additions:
+    | "ratetimecurve" | "thesimpletable" | "incomeirrelevant" | "twosidedeffect" | "savingsgapfuel" | "fiftypercentclub";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

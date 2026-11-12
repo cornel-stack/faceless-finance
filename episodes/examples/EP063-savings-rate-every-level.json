@@ -1,0 +1,1074 @@
+{
+  "id": "EP063",
+  "series": "Napkin Numbers",
+  "title": "Your Retirement at Every Savings Rate: 5% to 50%",
+  "slug": "retirement-at-every-savings-rate",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP063 — Every Level series (row 53). THE shockingly-simple-math deep dive: your savings RATE alone sets years-to-retirement, independent of income (5%→~66, 10%→~51, 15%→~43, 20%→~37, 25%→~32, 30%→~28, 40%→~22, 50%→~17, 65%→~10.5, 75%→~7). The two-sided magic (save more = bigger pile + smaller target); the gap is the engine. 6 new motifs (ratetimecurve/thesimpletable/incomeirrelevant/twosidedeffect/savingsgapfuel/fiftypercentclub) + doodles stopwatch/finishflag. Sources all reused. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Forget your salary for a second. There's one single number that decides when you can retire — and it has almost nothing to do with how much you earn. It's your savings rate: the percentage of your income you keep instead of spend. And the math behind it is shockingly simple.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "forget your salary"
+        },
+        {
+          "name": "percent",
+          "label": "your savings RATE"
+        },
+        {
+          "name": "stopwatch",
+          "label": "it sets your freedom date"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that stops people cold. Save half of your income, and from a standing start of zero, you can retire in about seventeen years — whether you earn forty thousand dollars, or four hundred thousand. The percentage is what matters, not the paycheck.",
+      "text": "17 years",
+      "sub": "to retire if you save 50% of your income",
+      "icon": "stopwatch"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "And here's the quietly alarming part. The actual American savings rate hovers around just three to five percent — which, on this chart, implies a working life that essentially never ends. Most people are unknowingly signed up for the slowest possible path to freedom.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "US rate ~3-5%"
+        },
+        {
+          "name": "hourglass",
+          "label": "a never-ending career"
+        },
+        {
+          "name": "warning",
+          "label": "the default is slow"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "This idea is so clean it's been called 'the shockingly simple math behind early retirement.' Once you see it, you can't unsee it — because it quietly puts your freedom date entirely in your own hands, at any income.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "shockingly simple math"
+        },
+        {
+          "name": "finishflag",
+          "label": "your freedom date"
+        },
+        {
+          "name": "smiley",
+          "label": "in your own hands"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "earn more to retire sooner",
+      "memeBottom": "save a higher percentage to retire sooner",
+      "narration": "Because the thing most people chase — a bigger salary — isn't actually the lever. We'll show you the real one: a single dial you can turn today that moves your retirement decades closer, no raise required."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, why the whole thing comes down to a percentage.",
+      "heading": "The One Dial",
+      "kicker": "savings rate = freedom date"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Start with what saving even is: income not spent, or deferred consumption. Your savings rate is simply how much of your income falls into that bucket, expressed as a percentage.",
+      "sourceId": "wiki-saving"
+    },
+    {
+      "id": "s7",
+      "type": "character",
+      "narration": "And the goal that rate is racing toward is financial independence. The day your investments can cover your life, work becomes optional. The only question this whole video answers is: how fast does your savings rate get you there?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "the goal: independence"
+        },
+        {
+          "name": "hammock",
+          "label": "work becomes optional"
+        },
+        {
+          "name": "stopwatch",
+          "label": "how fast you get there"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "We define that finish line with financial independence — having enough resources to cover your cost-of-living expenses without depending on active employment. Hit it, and you've won the game.",
+      "sourceId": "wiki-fi"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Here's the whole relationship on one curve. Your savings rate runs along the bottom. The years until you can retire run up the side. And the line plunges — steeply. Nudge your savings rate up, and your working years don't shrink a little. They collapse.",
+      "motif": "ratetimecurve",
+      "caption": "save more → retire sooner"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "And notice the curve isn't a straight line. At low rates, adding a few percent barely helps. But as you climb higher, each extra point does more and more — the curve gets steepest exactly where most people have already given up.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "steepens as you climb"
+        },
+        {
+          "name": "percent",
+          "label": "each point does more"
+        },
+        {
+          "name": "finishflag",
+          "label": "biggest gains up high"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "Now the part that feels almost too strange to be true.",
+      "heading": "Income Doesn't Matter",
+      "kicker": "it's the percentage"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Take two people. One earns forty thousand dollars, the other four hundred thousand. If they both save fifty percent of their income, they both retire in about seventeen years. The high earner's bigger pile is perfectly cancelled out by their bigger lifestyle. The rate is everything.",
+      "motif": "incomeirrelevant",
+      "caption": "your income barely matters"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "One honest caveat: this all assumes you can save at all. On a very low income, where every dollar goes to rent and food, a high savings rate simply isn't possible yet. For them, step one isn't a higher rate — it's a higher income.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "rent + food eat it all"
+        },
+        {
+          "name": "warning",
+          "label": "can't save yet"
+        },
+        {
+          "name": "chartup",
+          "label": "step 1: earn more"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "How can that be? Because a fifty-percent saver is doing two things at once. They're banking half their income — but they're also living on only the other half. So the pile they need to retire is small, because their life is cheap to run.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "bank half…"
+        },
+        {
+          "name": "grocerybag",
+          "label": "…live on half"
+        },
+        {
+          "name": "scale",
+          "label": "a cheap life = small target"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "And the flip side: a huge salary guarantees nothing. The classic trap is the high earner who spends it all — a tiny savings rate on a giant income still means working forever. Lifestyle inflation quietly cancels out the raise, every single time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "huge salary"
+        },
+        {
+          "name": "balloon",
+          "label": "spends it all"
+        },
+        {
+          "name": "ballchain",
+          "label": "still works forever"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "stage",
+      "narration": "This is the magic, and it works twice. Save a higher percentage, and your pile grows faster. But at the same time, because you live on less, the finish line itself moves closer. Both sides race toward each other — which is exactly why a high savings rate is so absurdly powerful.",
+      "motif": "twosidedeffect",
+      "caption": "both race toward each other — that's why it's so fast"
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Here's another way to see the magic. Save fifty percent, and every single year of work banks two years of expenses — one you lived on, one you stored away. You are literally buying a second year of freedom with every year that you work.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "save 50%"
+        },
+        {
+          "name": "stopwatch",
+          "label": "1 yr work = 2 yrs saved"
+        },
+        {
+          "name": "hammock",
+          "label": "buying freedom"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "So let's walk the whole ladder, from barely saving to saving like a machine.",
+      "heading": "Every Rate",
+      "kicker": "5% to 75%"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "At a five percent savings rate — roughly the American average — you're looking at working around sixty-six years. That's not a typo. Save a nickel of every dollar, and a full career still leaves you dependent on a paycheck for essentially your entire adult life.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "save 5%"
+        },
+        {
+          "name": "hourglass",
+          "label": "~66 years"
+        },
+        {
+          "name": "ballchain",
+          "label": "a lifetime on the paycheck"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Why is the average rate so low? A mix of stagnant wages, rising costs, easy debt, and relentless lifestyle creep. For most people, saving is treated as whatever happens to be left over at the end of the month — which is usually nothing at all.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "stagnant wages"
+        },
+        {
+          "name": "creditcard",
+          "label": "easy debt"
+        },
+        {
+          "name": "balloon",
+          "label": "lifestyle creep"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "Bump it to the commonly recommended ten to fifteen percent, and the timeline shrinks dramatically — to somewhere around forty-three to fifty-one years. That's the traditional 'work until sixty-five' retirement. Better, but still most of your life, chained to a job.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "save 10-15%"
+        },
+        {
+          "name": "clock",
+          "label": "~43-51 years"
+        },
+        {
+          "name": "briefcase",
+          "label": "the classic 'retire at 65'"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "This is exactly why 'retire at sixty-five' became the cultural default. It's simply what a ten-to-fifteen percent savings rate mathematically produces. The traditional retirement age isn't a law of nature — it's just the quiet output of the standard savings rate.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "save 10-15%"
+        },
+        {
+          "name": "clock",
+          "label": "→ age 65"
+        },
+        {
+          "name": "briefcase",
+          "label": "the default, explained"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "Push to a twenty-five percent savings rate, and something shifts. Now you're down to about thirty-two years. Start in your early twenties, and you could be free by your mid-fifties — a full decade before most people. One quarter of your income buys you a decade.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "save 25%"
+        },
+        {
+          "name": "stopwatch",
+          "label": "~32 years"
+        },
+        {
+          "name": "chartup",
+          "label": "free a decade early"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "At twenty-five percent, a powerful option appears: Coast FIRE. You front-load your investing, and once the pot is big enough that compounding alone will carry it all the way to retirement, you can ease off — and just coast, covering only today's bills.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "front-load investing"
+        },
+        {
+          "name": "moneytree",
+          "label": "let it coast"
+        },
+        {
+          "name": "hammock",
+          "label": "ease off early"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "At forty percent, you're down to around twenty-two years. And at the magic fifty percent, just seventeen. Save half your income starting at twenty-five, and you could walk away from work forever at around forty-two — with half your adult life still ahead of you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "save 40-50%"
+        },
+        {
+          "name": "finishflag",
+          "label": "~17-22 years"
+        },
+        {
+          "name": "hammock",
+          "label": "free at ~42"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Make no mistake, fifty percent takes real discipline. It usually means winning the big three: a cheap home, a cheap commute, and cooking your own food. Nail those three, and a fifty-percent savings rate is far more achievable than it first sounds.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "cheap home"
+        },
+        {
+          "name": "car",
+          "label": "cheap commute"
+        },
+        {
+          "name": "grocerybag",
+          "label": "cook your own food"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "And at the extreme end, the numbers get wild. Save sixty-five percent, and you're done in about ten and a half years. Save seventy-five percent, and it's just seven. It sounds impossible — but a small, intense community does exactly this, and retires absurdly young.",
+      "motif": "fiftypercentclub",
+      "caption": "save half, retire in ~17 years"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "But the extreme end carries real risks. Save seventy percent for a decade, and you might sacrifice too much of your youth, under-save for a long retirement, or forget rising healthcare costs. Fast is powerful — but don't starve the present just to feed the future.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "don't sacrifice youth"
+        },
+        {
+          "name": "medkit",
+          "label": "mind healthcare"
+        },
+        {
+          "name": "scale",
+          "label": "balance now & later"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "Here's the whole table in one place. Ten percent, fifty-one years. Twenty-five percent, thirty-two years. Fifty percent, seventeen. Seventy-five percent, just seven. Every single line is the same person, at the same income — with nothing different but the fraction they choose to keep.",
+      "motif": "thesimpletable",
+      "caption": "the shockingly simple math"
+    },
+    {
+      "id": "s51",
+      "type": "callout",
+      "narration": "Put real dollars on it. Earn fifty thousand, live on twenty-five, and invest the other twenty-five every year. In roughly seventeen years, that steady habit builds enough — about six hundred twenty-five thousand — to throw off your twenty-five thousand of spending forever.",
+      "text": "$625,000",
+      "sub": "25× a $25K lifestyle — your freedom number",
+      "icon": "nestegg"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "So what's the engine actually driving this?",
+      "heading": "The Engine",
+      "kicker": "the gap is everything"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "It's the gap between what you earn and what you spend. That gap is the only fuel there is. A big salary with a tiny gap goes nowhere. A modest salary with a huge gap flies. Everything in this video is just the story of widening that one gap.",
+      "motif": "savingsgapfuel",
+      "caption": "widen the gap, and the years to freedom collapse"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "You can widen that gap from either end. Earn more and bank the difference. Or spend less and cut the difference. The very fastest savers attack both at once — a steadily rising income meeting a flat, deliberately frugal lifestyle.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "earn more"
+        },
+        {
+          "name": "scissors",
+          "label": "spend less"
+        },
+        {
+          "name": "finishflag",
+          "label": "attack both ends"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "And filling that gap is compound interest — interest accumulated on a principal sum and on previously accumulated interest. The money you save doesn't just sit there; it grows, and its growth grows, quietly dragging your freedom date even closer.",
+      "sourceId": "wiki-compound"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "And because of compounding, your early savings do the heaviest lifting of all. The dollars you save in your first few working years have decades to grow — which is why starting your high savings rate young is worth far more than starting it later.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "early dollars"
+        },
+        {
+          "name": "clock",
+          "label": "decades to grow"
+        },
+        {
+          "name": "chartup",
+          "label": "start young, win big"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "screenshot",
+      "narration": "That growth comes from your rate of return — and in finance, return is simply a profit on an investment. Invest your savings in broad index funds, earn a reasonable long-run return, and the math in this video does the rest.",
+      "sourceId": "wiki-ror"
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Now, in fairness, the assumptions behind these numbers.",
+      "heading": "The Fine Print",
+      "kicker": "what the math assumes"
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "These timelines assume a few sensible things: you start from roughly zero, you invest your savings and earn a reasonable return after inflation, and you retire once you've saved about twenty-five times your annual spending — the classic four-percent rule.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "start from ~zero"
+        },
+        {
+          "name": "chartup",
+          "label": "invest, earn a return"
+        },
+        {
+          "name": "nestegg",
+          "label": "retire at 25× spending"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And if you're not starting from zero — good news. Any money you've already saved gives you a running head start, shaving years straight off the clock. The chart assumes you begin at nothing; your real timeline may be a good deal shorter than it looks.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "already have savings?"
+        },
+        {
+          "name": "stopwatch",
+          "label": "shaves years off"
+        },
+        {
+          "name": "smiley",
+          "label": "you're ahead"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "Change the assumptions, and the exact years shift a little. A higher return speeds it up; a cautious one slows it down. But the shape never changes. No matter the details, a higher savings rate always, dramatically, pulls your freedom closer.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "returns tweak the years"
+        },
+        {
+          "name": "scale",
+          "label": "but the shape holds"
+        },
+        {
+          "name": "stopwatch",
+          "label": "higher rate = sooner"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "One caution near the finish line: a market crash right as you retire can sting — the sequence-of-returns risk. So the wise early retiree keeps a cash cushion and stays a little flexible through those first, most fragile, years of retirement.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "a crash at the finish"
+        },
+        {
+          "name": "safetynet",
+          "label": "keep a cushion"
+        },
+        {
+          "name": "scale",
+          "label": "stay flexible early"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "And this isn't just theory. There's a whole movement built on it.",
+      "heading": "Real-World Proof",
+      "kicker": "the FIRE movement"
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "It's the FIRE movement — Financial Independence, Retire Early — built on accumulating sufficient assets to cover living expenses, through savings rates far above the usual advice. Real people, retiring in their thirties and forties, on ordinary incomes.",
+      "sourceId": "wiki-fire"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And FIRE comes in flavors to fit any rate. Lean FIRE, on a tight budget. Fat FIRE, in comfort, which needs a bigger pile. Barista FIRE, semi-retired with an easy job. And Coast FIRE, where you simply stop adding and let the money grow.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "Lean FIRE"
+        },
+        {
+          "name": "champagne",
+          "label": "Fat FIRE"
+        },
+        {
+          "name": "coffeecup",
+          "label": "Barista FIRE"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "The entire FIRE playbook is just this one chart, lived out. They don't win the lottery or earn millions. They simply crank their savings rate to forty, fifty, even sixty percent — and let the shockingly simple math do exactly what it promises.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "crank the rate to 50%+"
+        },
+        {
+          "name": "finishflag",
+          "label": "retire in their 30s-40s"
+        },
+        {
+          "name": "smiley",
+          "label": "on normal incomes"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "FIRE has fair critics too. It's far easier on a high income, it can mean trading memories now for freedom later, and 'retiring' at thirty-five rarely means doing nothing at all. For most people, the real prize isn't quitting — it's the power to choose.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "easier if you earn more"
+        },
+        {
+          "name": "smiley",
+          "label": "the prize is choice"
+        },
+        {
+          "name": "handshake",
+          "label": "not really 'nothing'"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "screenshot",
+      "narration": "Because the end state is just retirement — the withdrawal from one's active working life. The only radical thing FIRE does is refuse to wait until sixty-five to get there.",
+      "sourceId": "wiki-retirement"
+    },
+    {
+      "id": "s32",
+      "type": "title",
+      "narration": "So how do you actually use this in your own life?",
+      "heading": "Your Move",
+      "kicker": "turn the dial"
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Step one: find your real savings rate right now. Take everything you saved and invested last year, divide by what you earned, and get your percentage. Most people have never calculated it — and the number is often a quiet wake-up call.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "find your rate"
+        },
+        {
+          "name": "percent",
+          "label": "saved ÷ earned"
+        },
+        {
+          "name": "gauge",
+          "label": "a wake-up call"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "When you calculate your rate, count everything — your own contributions, plus any employer 401(k) match, plus extra debt payments. People often save more than they think. And if the number does come out low, that's not shame. It's just your starting line.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "count the match too"
+        },
+        {
+          "name": "calculator",
+          "label": "add it all up"
+        },
+        {
+          "name": "gauge",
+          "label": "your starting line"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Step two: realize that every single percentage point you add pulls your freedom date closer — often by a year or more. Going from ten percent to fifteen isn't a small tweak. On this curve, it can erase the better part of a decade of work.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "+1% = freedom sooner"
+        },
+        {
+          "name": "scissors",
+          "label": "10%→15% cuts years"
+        },
+        {
+          "name": "stopwatch",
+          "label": "the curve is steep"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "The easiest way to climb the curve painlessly: bank half of every future raise. You still enjoy a steadily rising lifestyle, but your savings rate quietly ratchets up year after year — pulling your freedom date closer with zero feeling of sacrifice.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "raise comes in"
+        },
+        {
+          "name": "scissors",
+          "label": "bank half of it"
+        },
+        {
+          "name": "stopwatch",
+          "label": "freedom creeps closer"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "And step three: attack the gap from both ends. Every raise you bank instead of spend, every expense you quietly cut, widens the gap and speeds the clock. You're not depriving yourself — you're trading stuff you won't remember for years of freedom you'll never forget.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "bank the raises"
+        },
+        {
+          "name": "scissors",
+          "label": "trim the spending"
+        },
+        {
+          "name": "hammock",
+          "label": "buy years of freedom"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "And remember where the gap is really won or lost: the big three. Housing, transport, and food swallow most of every budget. Optimize those just once, and your savings rate jumps permanently — far more than a lifetime of skipped lattes ever could.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "house",
+          "label": "housing"
+        },
+        {
+          "name": "car",
+          "label": "transport"
+        },
+        {
+          "name": "grocerybag",
+          "label": "food"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Because that's the real reframe hiding in this chart. You're not saving money. You're buying time — purchasing future years where your days belong entirely to you. Every point you add to your savings rate is another chunk of your one life, bought back.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "clock",
+          "label": "you're buying time"
+        },
+        {
+          "name": "finishflag",
+          "label": "years that are yours"
+        },
+        {
+          "name": "smiley",
+          "label": "your life, bought back"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "narration": "Try the reframe on something small. That fifty-dollar-a-month subscription isn't really fifty dollars. Invested instead, over a career it's thousands — and in freedom terms, it can quietly cost you weeks of extra work. Suddenly, 'is it worth it?' gets a much sharper answer.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "phone",
+          "label": "a $50/mo subscription"
+        },
+        {
+          "name": "stopwatch",
+          "label": "= weeks of work"
+        },
+        {
+          "name": "scale",
+          "label": "'is it worth it?'"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "So the next time you get a raise, or eye an upgrade you don't really need, picture the curve. Ask not 'can I afford this?' but 'how many weeks of freedom does this cost me?' That single question, asked often enough, can rewrite your entire timeline.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "'how much freedom?'"
+        },
+        {
+          "name": "stopwatch",
+          "label": "not 'can I afford it?'"
+        },
+        {
+          "name": "finishflag",
+          "label": "rewrite your timeline"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "character",
+      "narration": "And you don't have to reach the finish line to win. Even partial independence changes everything — just enough of a cushion to take a risk, leave a bad job, or weather a storm. Every point of savings rate buys a little more of that freedom, starting right now.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "safetynet",
+          "label": "even partial FI helps"
+        },
+        {
+          "name": "briefcase",
+          "label": "leave a bad job"
+        },
+        {
+          "name": "smiley",
+          "label": "freedom builds early"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "The savings rate is the one dial that quietly controls your freedom — and unlike your salary, you can reach out and turn it today. That's the whole, shockingly simple secret. Your retirement date was never really about how much you make. It's about how much you keep.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "one dial, in your hands"
+        },
+        {
+          "name": "percent",
+          "label": "how much you KEEP"
+        },
+        {
+          "name": "finishflag",
+          "label": "that's the secret"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this gave you a new way to see your paycheck, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "stopwatch",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-saving",
+      "name": "Saving (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saving",
+      "quote": "income not spent, or deferred consumption"
+    },
+    {
+      "id": "wiki-fi",
+      "name": "Financial independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_independence",
+      "quote": "cover its cost-of-living expenses without depending on active employment"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal sum and previously accumulated interest"
+    },
+    {
+      "id": "wiki-ror",
+      "name": "Rate of return (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rate_of_return",
+      "quote": "return is a profit on an investment"
+    },
+    {
+      "id": "wiki-fire",
+      "name": "FIRE movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FIRE_movement",
+      "quote": "accumulating sufficient assets to cover living expenses"
+    },
+    {
+      "id": "wiki-retirement",
+      "name": "Retirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement",
+      "quote": "the withdrawal from one's position or occupation"
+    }
+  ],
+  "youtube": {
+    "title": "Your Retirement at Every Savings Rate: 5% to 50%",
+    "alts": [
+      "The Shockingly Simple Math: How Your Savings Rate Sets Your Retirement",
+      "Save 5% vs 50%: When You Can Actually Retire"
+    ],
+    "hook": "Forget your salary — the one number that decides when you can retire is your savings RATE, the percentage of income you keep. And the math is shockingly simple: save 5% and you work ~66 years; 15% and it's ~43; 25% and it's ~32; 50% and it's just ~17 years — from zero, regardless of whether you earn $40K or $400K. We walk every savings rate, reveal why income barely matters, and explain the two-sided magic (saving more grows your pile AND shrinks the finish line at the same time), the gap that fuels it all, the assumptions behind the numbers, and the FIRE movement that proves it in real life. Fully cited.",
+    "bullets": [
+      "Why your savings RATE — not your salary — sets your retirement date",
+      "The full table: 5% → ~66 yrs, 25% → ~32 yrs, 50% → ~17 yrs",
+      "Why a $40K and a $400K earner retire at the same time",
+      "The two-sided magic: bigger pile AND smaller target",
+      "The gap between earning and spending is the only fuel",
+      "FIRE: real people proving the math in their 30s and 40s"
+    ],
+    "tags": [
+      "savings rate",
+      "how much to save for retirement",
+      "shockingly simple math",
+      "retire early",
+      "FIRE movement",
+      "financial independence",
+      "early retirement",
+      "savings rate retirement",
+      "how to retire early",
+      "compound interest",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#savingsrate",
+      "#FIRE",
+      "#retirement",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "SAVE 5% vs 50%",
+      "hookBot": "WHEN CAN YOU RETIRE?",
+      "napkinNumber": "50% = 17 yrs",
+      "napkinSub": "any income",
+      "deco": "stopwatch"
+    },
+    "chapters": [
+      [
+        "why the whole thing comes down to a percentage",
+        "The one dial"
+      ],
+      [
+        "too strange to be true",
+        "Income doesn't matter"
+      ],
+      [
+        "the magic, and it works twice",
+        "The two-sided magic"
+      ],
+      [
+        "from barely saving to saving like a machine",
+        "Every rate"
+      ],
+      [
+        "what's the engine actually driving this",
+        "The engine"
+      ],
+      [
+        "the assumptions behind these numbers",
+        "The fine print"
+      ],
+      [
+        "a whole movement built on it",
+        "FIRE"
+      ],
+      [
+        "how do you actually use this",
+        "Your move"
+      ]
+    ]
+  }
+}

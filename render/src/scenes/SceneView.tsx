@@ -4770,6 +4770,88 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={490} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>wealth engineered to outlive everyone who made it</text>
       </svg>
     );
+  } else if (m === "ratetimecurve") {
+    // Savings rate vs years-to-freedom — a steep dropping curve.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 130, x1 = 870, y0 = 440, yTop = 110;
+    const f = (t: number) => yTop + (y0 - yTop) * Math.pow(1 - t, 1.6);
+    const segs = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">save more → retire sooner</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <text x={70} y={yTop + 10} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>years</text>
+        <path d={segs} fill="none" stroke={green} strokeWidth={6} />
+        {[["10%", 0.06, "51 yrs"], ["25%", 0.28, "32 yrs"], ["50%", 0.6, "17 yrs"], ["75%", 0.95, "7 yrs"]].map(([lab, t, yr], i) => <g key={i} opacity={draw >= (t as number) ? 1 : 0}><circle cx={x0 + (x1 - x0) * (t as number)} cy={f(t as number)} r={8} fill={red} stroke={ink} strokeWidth={3} /><text x={x0 + (x1 - x0) * (t as number)} y={f(t as number) - 16} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{yr}</text></g>)}
+        <text x={x1} y={y0 + 24} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>savings rate →</text>
+      </svg>
+    );
+  } else if (m === "thesimpletable") {
+    // The famous savings-rate → years table.
+    const rows: [string, string][] = [["10%", "~51"], ["20%", "~37"], ["30%", "~28"], ["40%", "~22"], ["50%", "~17"], ["65%", "~10.5"], ["75%", "~7"]];
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the shockingly simple math</text>
+        <text x={340} y={100} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>savings rate</text>
+        <text x={640} y={100} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>years to retire</text>
+        {rows.map(([r, y], i) => { const yy = 130 + i * 52; const op = interpolate(reveal, [i * 0.12, i * 0.12 + 0.18], [0, 1], clampBoth); return <g key={i} opacity={op}><text x={340} y={yy + 22} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{r}</text><text x={640} y={yy + 22} fontSize={22} fontWeight={900} fill={i >= 4 ? green : i >= 2 ? gold : red} textAnchor="middle" fontFamily="Georgia, serif">{y}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "incomeirrelevant") {
+    // Same savings rate, different incomes, same timeline.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={66} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your income barely matters</text>
+        <g transform="translate(270 230)"><circle r={60} fill={blue} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>earns $40K</text><text y={20} fontSize={15} fontWeight={900} fill="#eaf0fa" textAnchor="middle" fontFamily={sans}>saves 50%</text></g>
+        <g transform="translate(710 230)"><circle r={60} fill={gold} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>earns $400K</text><text y={20} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>saves 50%</text></g>
+        <g transform={`translate(490 400)`} opacity={t}><rect x={-150} y={-36} width={300} height={72} rx={10} fill={green} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={16} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>BOTH retire in</text><text y={22} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">~17 years</text></g>
+        <path d="M300 290 Q400 360 345 366" fill="none" stroke={ink} strokeWidth={3} opacity={t} /><path d="M680 290 Q580 360 635 366" fill="none" stroke={ink} strokeWidth={3} opacity={t} />
+      </svg>
+    );
+  } else if (m === "twosidedeffect") {
+    // Saving more does double duty: bigger savings + smaller target.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">saving more works twice</text>
+        <g transform="translate(275 300)"><circle r={70 + 30 * t} fill={green} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>you save</text><text y={16} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>MORE ↑</text></g>
+        <g transform="translate(715 300)"><circle r={100 - 36 * t} fill={gold} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>you need</text><text y={16} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>LESS ↓</text></g>
+        <text x={275} y={440} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>bigger pile, faster</text>
+        <text x={715} y={440} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>smaller finish line</text>
+        <text x={VW / 2} y={492} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">both race toward each other — that's why it's so fast</text>
+      </svg>
+    );
+  } else if (m === "savingsgapfuel") {
+    // The gap between earning and spending is the fuel.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the gap is the whole engine</text>
+        <RLine x1={120} y1={440} x2={VW - 90} y2={440} stroke={ink} strokeWidth={3} />
+        <g transform="translate(240 0)"><rect x={-70} y={440 - 280} width={140} height={280} rx={6} fill={blue} stroke={ink} strokeWidth={4} /><text x={0} y={464} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>you earn</text></g>
+        <g transform="translate(500 0)"><rect x={-70} y={440 - 160} width={140} height={160} rx={6} fill={tan} stroke={ink} strokeWidth={4} /><text x={0} y={464} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>you spend</text></g>
+        <g transform="translate(760 0)"><rect x={-70} y={440 - 120 * grow} width={140} height={120 * grow} rx={6} fill={green} stroke={ink} strokeWidth={4} /><text x={0} y={464} fontSize={16} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>THE GAP</text></g>
+        <text x={VW / 2} y={70 + 0} />
+        <text x={VW / 2} y={496} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>widen the gap, and the years to freedom collapse</text>
+      </svg>
+    );
+  } else if (m === "fiftypercentclub") {
+    // Save 50% → one working life becomes two.
+    const t = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">save half, retire in ~17 years</text>
+        <RRect x={140} y={230} w={720} h={60} fill="#efe9da" strokeWidth={4} />
+        <rect x={140} y={230} width={360 * Math.min(1, t * 1.2)} height={60} fill={gold} stroke={ink} strokeWidth={4} />
+        <text x={320} y={268} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>~17 yrs working</text>
+        <text x={680} y={268} fontSize={17} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>then decades free</text>
+        <text x={VW / 2} y={360} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>start at 25, done by ~42</text>
+        <text x={VW / 2} y={430} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a 50% saver works one career and funds two lifetimes</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

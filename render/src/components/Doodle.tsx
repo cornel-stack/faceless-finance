@@ -115,6 +115,8 @@ export type DoodleName =
   | "palmtree" | "mappin"
   // EP062 (every level of rich) additions:
   | "tophat" | "champagne"
+  // EP063 (retirement at every savings rate) additions:
+  | "stopwatch" | "finishflag"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -1999,6 +2001,31 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={38} y1={82} x2={62} y2={82} strokeWidth={SW} />
           <RCircle cx={46} cy={16} d={5} fill={GOLD} strokeWidth={1.2} />
           <RCircle cx={58} cy={12} d={5} fill={GOLD} strokeWidth={1.2} />
+        </>
+      );
+    case "stopwatch":
+      // A stopwatch — years to freedom.
+      return (
+        <>
+          <RCircle cx={50} cy={56} d={56} fill={PARCH} strokeWidth={SW} />
+          <RRect x={42} y={12} w={16} h={10} fill={INK} strokeWidth={1.6} />
+          <RLine x1={50} y1={22} x2={50} y2={30} strokeWidth={SW} />
+          <RLine x1={50} y1={56} x2={50} y2={36} strokeWidth={SW} />
+          <RLine x1={50} y1={56} x2={66} y2={62} strokeWidth={SW} />
+        </>
+      );
+    case "finishflag":
+      // A checkered finish flag — the freedom finish line.
+      return (
+        <>
+          <RLine x1={28} y1={16} x2={28} y2={86} strokeWidth={SW} />
+          <RRect x={28} y={18} w={48} h={34} fill={PARCH} strokeWidth={SW} />
+          <RRect x={28} y={18} w={12} h={11} fill={INK} strokeWidth={0} />
+          <RRect x={52} y={18} w={12} h={11} fill={INK} strokeWidth={0} />
+          <RRect x={40} y={29} w={12} h={11} fill={INK} strokeWidth={0} />
+          <RRect x={64} y={29} w={12} h={11} fill={INK} strokeWidth={0} />
+          <RRect x={28} y={40} w={12} h={12} fill={INK} strokeWidth={0} />
+          <RRect x={52} y={40} w={12} h={12} fill={INK} strokeWidth={0} />
         </>
       );
   }
