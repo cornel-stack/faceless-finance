@@ -4928,6 +4928,85 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>your assets clock in so you don't have to</text>
       </svg>
     );
+  } else if (m === "lifedecades") {
+    // The arc of a financial life, decade by decade.
+    const decades: [string, string, number][] = [["20s", "building", 420], ["30s", "the squeeze", 370], ["40s", "peak earning", 290], ["50s", "catch-up", 210], ["60s", "the pivot", 150], ["70s+", "spend down", 200]];
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const xs = decades.map((_, i) => 140 + i * 140);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a money life, decade by decade</text>
+        <RLine x1={100} y1={470} x2={VW - 50} y2={470} stroke={ink} strokeWidth={3} />
+        <path d={`M${xs[0]} ${decades[0][2]} ${decades.slice(1).map(([, , y], i) => { const t = interpolate(draw, [(i + 1) / 6, (i + 2) / 6], [0, 1], clampBoth); return `L${xs[i] + (xs[i + 1] - xs[i]) * t} ${decades[i][2] + ((y as number) - decades[i][2]) * t}`; }).join(" ")}`} fill="none" stroke={green} strokeWidth={6} strokeLinecap="round" />
+        {decades.map(([d, lab, y], i) => <g key={i} opacity={interpolate(draw, [i / 6, i / 6 + 0.1], [0, 1], clampBoth)}><circle cx={xs[i]} cy={y as number} r={7} fill={red} stroke={ink} strokeWidth={3} /><text x={xs[i]} y={490} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{d}</text><text x={xs[i]} y={(y as number) - 16} fontSize={12} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{lab}</text></g>)}
+      </svg>
+    );
+  } else if (m === "twentiestime") {
+    // 20s: little money, but the most time — the secret asset.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">your 20s: broke, but time-rich</text>
+        <g transform="translate(280 300)"><circle r={55} fill="#efe9da" stroke={ink} strokeWidth={5} /><text y={-2} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>money</text><text y={20} fontSize={16} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">tiny</text></g>
+        <g transform="translate(700 300)"><circle r={55 + 55 * t} fill={gold} stroke={ink} strokeWidth={5} /><text y={-2} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>TIME</text><text y={20} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">enormous</text></g>
+        <text x={VW / 2} y={476} fontSize={17} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the one decade you can never get back — spend it investing</text>
+      </svg>
+    );
+  } else if (m === "fortiesfork") {
+    // The mid-life fork: on track vs behind.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the mid-life fork in the road</text>
+        <circle cx={300} cy={300} r={14} fill={ink} />
+        <path d={`M300 300 L${300 + 540 * draw} ${300 - 150 * draw}`} fill="none" stroke={green} strokeWidth={6} />
+        <path d={`M300 300 L${300 + 540 * draw} ${300 + 150 * draw}`} fill="none" stroke={red} strokeWidth={6} />
+        <text x={860} y={135} fontSize={16} fontWeight={800} fill={green} textAnchor="end" fontFamily={sans}>on track → compounding takes over</text>
+        <text x={860} y={475} fontSize={16} fontWeight={800} fill={red} textAnchor="end" fontFamily={sans}>behind → a frantic sprint begins</text>
+        <text x={VW / 2} y={300} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>age 40</text>
+      </svg>
+    );
+  } else if (m === "peaktodrawdown") {
+    // The pivot from accumulation to drawdown.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, peak = 560, y0 = 440, yTop = 130;
+    const f = (x: number) => x < peak ? y0 - (y0 - yTop) * ((x - x0) / (peak - x0)) : yTop + (y0 - yTop) * 0.5 * ((x - peak) / (x1 - peak));
+    const px = x0 + (x1 - x0) * t;
+    const segs = Array.from({ length: 40 }).map((_, i) => { const x = x0 + (px - x0) * (i / 39); return `${i === 0 ? "M" : "L"}${x} ${f(x)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the great pivot: build → spend</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={segs} fill="none" stroke={green} strokeWidth={6} />
+        <line x1={peak} y1={yTop} x2={peak} y2={y0} stroke={red} strokeWidth={2} strokeDasharray="6 6" />
+        <text x={peak} y={yTop - 10} fontSize={15} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>retirement</text>
+        <text x={340} y={y0 + 26} fontSize={15} fontWeight={800} fill={green} textAnchor="middle" fontFamily={sans}>accumulate (20s-60s)</text>
+        <text x={720} y={y0 + 26} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>draw down (60s+)</text>
+      </svg>
+    );
+  } else if (m === "prioritiesbydecade") {
+    // What money is FOR shifts each decade.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string][] = [["20s", "freedom & fun"], ["30s", "family & home"], ["40s", "security & catch-up"], ["50s", "the final sprint"], ["60s+", "legacy & peace"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what money is FOR keeps changing</text>
+        {rows.map(([d, p], i) => { const y = 120 + i * 70; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={200} y={y} width={120} height={54} rx={8} fill={gold} stroke={ink} strokeWidth={3} /><text x={260} y={y + 34} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{d}</text><path d={`M330 ${y + 28} l40 0 m0 0 l-12 -8 m12 8 l-12 8`} stroke={ink} strokeWidth={3} fill="none" /><text x={390} y={y + 34} fontSize={19} fontWeight={800} fill={ink} fontFamily={sans}>{p}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "catchupdecade") {
+    // The 50s catch-up sprint.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 50s: the catch-up sprint</text>
+        <RLine x1={120} y1={430} x2={VW - 90} y2={430} stroke={ink} strokeWidth={3} />
+        <g transform="translate(260 0)"><rect x={-60} y={430 - 150} width={120} height={150} rx={6} fill={tan} stroke={ink} strokeWidth={4} /><text x={0} y={454} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>normal limit</text></g>
+        <g transform="translate(560 0)"><rect x={-60} y={430 - 210 * grow} width={120} height={210 * grow} rx={6} fill={green} stroke={ink} strokeWidth={4} /><text x={0} y={454} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>+catch-up</text></g>
+        <g transform="translate(790 0)"><text x={0} y={250} fontSize={34} textAnchor="middle" fontFamily={sans}>🏃</text></g>
+        <text x={VW / 2} y={480} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>after 50, the tax code lets you save extra — use it</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

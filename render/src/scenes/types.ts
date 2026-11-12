@@ -192,7 +192,9 @@ export interface StageScene extends Base {
     // EP063 (retirement at every savings rate) additions:
     | "ratetimecurve" | "thesimpletable" | "incomeirrelevant" | "twosidedeffect" | "savingsgapfuel" | "fiftypercentclub"
     // EP064 (every level of passive income) additions:
-    | "passiveincomeladder" | "capitalyieldconverter" | "incometocapital" | "passivespectrum" | "sourcemenu" | "moneywhileyousleep";
+    | "passiveincomeladder" | "capitalyieldconverter" | "incometocapital" | "passivespectrum" | "sourcemenu" | "moneywhileyousleep"
+    // EP065 (money every decade of life) additions:
+    | "lifedecades" | "twentiestime" | "fortiesfork" | "peaktodrawdown" | "prioritiesbydecade" | "catchupdecade";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

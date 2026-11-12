@@ -119,6 +119,8 @@ export type DoodleName =
   | "stopwatch" | "finishflag"
   // EP064 (every level of passive income) additions:
   | "mailbox" | "moon"
+  // EP065 (money every decade of life) additions:
+  | "cane" | "backpack"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2048,6 +2050,24 @@ function shape(name: DoodleName): React.ReactNode {
           <RPath d="M62 20 a34 34 0 1 0 0 60 a26 26 0 0 1 0 -60 Z" fill={YELLOW} strokeWidth={SW} />
           <RCircle cx={44} cy={30} d={5} fill="none" strokeWidth={1.2} />
           <RCircle cx={40} cy={66} d={4} fill="none" strokeWidth={1.2} />
+        </>
+      );
+    case "cane":
+      // A walking cane — old age / later decades.
+      return (
+        <>
+          <RPath d="M42 20 Q62 20 62 40 L62 84" fill="none" strokeWidth={SW + 1} />
+          <RLine x1={54} y1={84} x2={70} y2={84} strokeWidth={1.6} />
+        </>
+      );
+    case "backpack":
+      // A backpack — youth / school / the 20s.
+      return (
+        <>
+          <RRect x={28} y={34} w={44} h={50} fill={GREEN} strokeWidth={SW} />
+          <RPath d="M36 34 Q36 18 50 18 Q64 18 64 34" fill="none" strokeWidth={SW} />
+          <RRect x={38} y={52} w={24} h={20} fill={PARCH} strokeWidth={1.6} />
+          <RLine x1={50} y1={40} x2={50} y2={48} strokeWidth={1.6} />
         </>
       );
   }

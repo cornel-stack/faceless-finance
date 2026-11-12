@@ -1,0 +1,1036 @@
+{
+  "id": "EP065",
+  "series": "Napkin Numbers",
+  "title": "How the Average American's Money Changes Every Decade of Life",
+  "slug": "money-every-decade-of-life",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP065 — Every Level series (row 55). The NARRATIVE of money through a life, decade by decade (20s→70s+) using real Fed SCF median net worth/income by age: 20s (debt + time), 30s (the squeeze), 40s (peak earning + the fork), 50s (catch-up sprint), 60s (the pivot to drawdown, peak net worth ~$410K), 70s+ (spend down, legacy). The life-cycle hump lived, not ranked. 6 new motifs (lifedecades/twentiestime/fortiesfork/peaktodrawdown/prioritiesbydecade/catchupdecade) + doodles cane/backpack. Sources reused. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Your relationship with money completely transforms every ten years. The twenty-year-old drowning in debt and the seventy-year-old carefully spending down a nest egg aren't just different ages — they're living in entirely different financial universes. Today, we walk the whole arc: how the average American's money changes, decade by decade.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "backpack",
+          "label": "the broke 20-something"
+        },
+        {
+          "name": "cane",
+          "label": "the retiree at 70"
+        },
+        {
+          "name": "calendar",
+          "label": "decade by decade"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the shape of a whole financial life in one number. The average American's net worth starts near zero in their twenties, and climbs for decades to a peak of around four hundred ten thousand dollars in their late sixties — right before they stop working.",
+      "text": "$410,000",
+      "sub": "peak median net worth, age 65-74 (Fed data)",
+      "icon": "mountain"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "One quick but vital note: these are medians — the typical, middle household. The average, or mean, is far higher, dragged up by a handful of mega-rich outliers. Always judge yourself against the median. It's the honest number for a normal life.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "median = typical"
+        },
+        {
+          "name": "pie",
+          "label": "mean skewed by the rich"
+        },
+        {
+          "name": "scale",
+          "label": "trust the median"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "stage",
+      "narration": "Plotted out, a money life isn't a straight climb — it's an arc. It rises slowly through your twenties, accelerates through your working years, peaks around retirement, and then gently declines as you spend it down. Each decade on this curve has its own distinct job.",
+      "motif": "lifedecades",
+      "caption": "a money life, decade by decade"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "Why this exact shape? It mirrors the life-cycle idea perfectly. Young, you borrow for education and a home. In midlife, your peak earnings finally outrun your costs, and you stockpile. Old, you stop earning and live off that stockpile. Borrow, save, spend — in that order.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gradcap",
+          "label": "young: borrow"
+        },
+        {
+          "name": "nestegg",
+          "label": "mid: save"
+        },
+        {
+          "name": "cane",
+          "label": "old: spend"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "I'll get serious about money later",
+      "memeBottom": "every decade has one job — and 'later' is the expensive answer",
+      "narration": "Because here's the trap: each decade has a specific financial mission. Nail your current decade's job, and the next one gets easier. Skip it, and you spend the following decade desperately trying to catch up."
+    },
+    {
+      "id": "s5",
+      "type": "screenshot",
+      "narration": "All our numbers come from the Survey of Consumer Finances — a detailed statistical survey of the balance sheet of American families, run by the Federal Reserve. This is the real, measured shape of a typical money life.",
+      "sourceId": "wiki-scf"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Economists even have a model for this arc: the life-cycle hypothesis, which tries to explain the consumption patterns of individuals over a lifetime. In short, we borrow when young, save in midlife, and spend it down in old age.",
+      "sourceId": "wiki-lifecycle"
+    },
+    {
+      "id": "s7",
+      "type": "title",
+      "narration": "Let's start where almost everyone begins — deep at the bottom.",
+      "heading": "Your 20s",
+      "kicker": "debt, and time"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "narration": "In your twenties, the money picture looks bleak. Low income, student loans, and often a negative net worth — you literally owe more than you own. The median under-thirty-five net worth is only around thirty-nine thousand dollars, and for many it's far less.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "gradcap",
+          "label": "student loans"
+        },
+        {
+          "name": "chartdown",
+          "label": "often negative net worth"
+        },
+        {
+          "name": "backpack",
+          "label": "median ~$39K"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "The great danger of the twenties is the first real paycheck. It's so tempting to instantly upgrade everything — the car, the apartment, the nights out. But a lifestyle locked in now follows you for decades. The frugal twenty-something quietly becomes the wealthy forty-something.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "the paycheck upgrade"
+        },
+        {
+          "name": "balloon",
+          "label": "lifestyle locks in"
+        },
+        {
+          "name": "smiley",
+          "label": "frugal now = rich later"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "But the twenty-something is secretly the richest person on this whole timeline — in the one currency that matters most. They have almost no money, but a vast, priceless surplus of time. And time, as we've seen, is the single most powerful force in all of finance.",
+      "motif": "twentiestime",
+      "caption": "the one decade you can never get back — spend it investing"
+    },
+    {
+      "id": "s44",
+      "type": "callout",
+      "narration": "Watch what the time advantage does. A hundred dollars a month invested at twenty-two beats three hundred a month started at thirty-five, by retirement. The early starter puts in far less, and ends up with far more. Time, not money, won the race.",
+      "text": "$100 beats $300",
+      "sub": "start at 22 vs 35 — the early, smaller amount wins",
+      "icon": "clock"
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "So the job of your twenties isn't to get rich. It's to build the habits and start the clock. Even tiny amounts invested now, given forty years to compound, will crush huge amounts invested later. This is the cheapest decade you will ever get.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "start the clock"
+        },
+        {
+          "name": "gear",
+          "label": "build the habits"
+        },
+        {
+          "name": "moneytree",
+          "label": "tiny now beats huge later"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "So in your twenties, two moves matter most. Grab every dollar of your employer's 401(k) match — it's free money, an instant hundred-percent return. And open a Roth account while your tax rate is low. Boring little moves that quietly pay off for fifty straight years.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "grab the full match"
+        },
+        {
+          "name": "vault",
+          "label": "open a Roth"
+        },
+        {
+          "name": "moneytree",
+          "label": "pays off for 50 years"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "title",
+      "narration": "A decade on, the income arrives — and so does the pressure.",
+      "heading": "Your 30s",
+      "kicker": "the squeeze"
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "In your thirties, your career takes off and income climbs fast. The median net worth jumps to around a hundred thirty-five thousand. But this is also the great squeeze: a mortgage, young kids, childcare, and the sheer cost of building a life all land at once.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "a mortgage"
+        },
+        {
+          "name": "baby",
+          "label": "kids & childcare"
+        },
+        {
+          "name": "chartup",
+          "label": "net worth ~$135K"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "The thirties often bring the 'sandwich' pressure — supporting young kids on one side, and sometimes aging parents on the other, all while trying to save for yourself. Three generations quietly leaning on one paycheck. It's the most financially stretched many people ever feel.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "baby",
+          "label": "kids below"
+        },
+        {
+          "name": "retiree",
+          "label": "parents above"
+        },
+        {
+          "name": "warning",
+          "label": "one paycheck, three gens"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "This is why so many high earners in their thirties still feel broke. The money is flowing in — but it's flowing straight back out just as fast. The job of this decade is to make sure your lifestyle doesn't rise quite as fast as your income, and protect that growing gap.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "faucet",
+          "label": "money flows in…"
+        },
+        {
+          "name": "grocerybag",
+          "label": "…and straight out"
+        },
+        {
+          "name": "scissors",
+          "label": "protect the gap"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "And a warning for dual-income families: it's easy to fall into the two-income trap, committing both salaries to fixed costs — a bigger mortgage, two car loans. If either job vanishes, the whole thing collapses. Always keep a little slack in the system.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "couple",
+          "label": "two incomes"
+        },
+        {
+          "name": "house",
+          "label": "both locked to costs"
+        },
+        {
+          "name": "warning",
+          "label": "no slack = fragile"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "Now you hit your peak — and a decisive fork in the road.",
+      "heading": "Your 40s",
+      "kicker": "the fork"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Your forties are typically your peak earning years, and the median net worth climbs to around two hundred forty-seven thousand. For the first time, the compounding you started decades ago becomes genuinely visible — your money starts making real money on its own.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "peak earnings"
+        },
+        {
+          "name": "moneytree",
+          "label": "compounding shows"
+        },
+        {
+          "name": "chartup",
+          "label": "net worth ~$247K"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "A hard truth of the forties: for most people, income stops climbing. The big promotions slow, and your salary plateaus near its lifetime peak. So from here, building wealth leans far less on raises — and much more on what you do with the money you already have.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "raises slow"
+        },
+        {
+          "name": "briefcase",
+          "label": "salary plateaus"
+        },
+        {
+          "name": "gear",
+          "label": "it's about managing now"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "stage",
+      "narration": "But your forties are also a fork in the road. Those who built good habits early now coast upward, as compounding does the heavy lifting. Those who didn't face a hard truth — and a frantic sprint to catch up before time runs out. Same age, two very different roads.",
+      "motif": "fortiesfork",
+      "caption": "the mid-life fork in the road"
+    },
+    {
+      "id": "s49",
+      "type": "callout",
+      "narration": "If you hit forty with little saved, the math is sobering but not hopeless. To retire comfortably, you may need to save twenty, even thirty percent of your income for the next two decades. Hard — but a focused forty-year-old can absolutely still get there.",
+      "text": "20-30%",
+      "sub": "savings rate to catch up if you start at 40",
+      "icon": "percent"
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "The fifties are the last great building decade — and the sprint to the finish.",
+      "heading": "Your 50s",
+      "kicker": "the catch-up sprint"
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "narration": "In your fifties, median net worth climbs again to around three hundred sixty-five thousand. Expenses often ease as the kids leave and the mortgage shrinks. This is the decade to pour everything you can into the finish, while your earning power is still high.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "net worth ~$365K"
+        },
+        {
+          "name": "house",
+          "label": "kids gone, costs ease"
+        },
+        {
+          "name": "nestegg",
+          "label": "pour it in"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "The fifties bring a hidden windfall: the empty nest. When the kids finally leave and their costs vanish, a huge chunk of income is suddenly freed up. The disciplined move is to funnel every dollar of it straight into savings — not into a shinier, fancier lifestyle.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "baby",
+          "label": "kids leave"
+        },
+        {
+          "name": "piggybank",
+          "label": "costs vanish → save it"
+        },
+        {
+          "name": "warning",
+          "label": "don't just upgrade"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "narration": "And the tax code hands you a gift here: catch-up contributions. After fifty, you're allowed to save extra in your retirement accounts, above the normal limits. It's designed for exactly this moment — the final, powerful sprint toward the finish line.",
+      "motif": "catchupdecade",
+      "caption": "after 50, the tax code lets you save extra — use it"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And the catch-up rules are generous. After fifty, you can put thousands of dollars extra into your 401(k) and I-R-A each year, beyond the standard caps. For a late starter in their peak-earning years, those higher limits can be the difference between a tight retirement and a comfortable one.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "vault",
+          "label": "extra into 401k & IRA"
+        },
+        {
+          "name": "coins",
+          "label": "thousands above the cap"
+        },
+        {
+          "name": "nestegg",
+          "label": "tight → comfortable"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "Then comes the single biggest turning point of your entire financial life.",
+      "heading": "Your 60s",
+      "kicker": "the great pivot"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Your sixties bring the peak. Median net worth tops out at around four hundred ten thousand dollars in the late sixties. This is the summit of the mountain you've spent forty years climbing — the most money you'll likely ever have at one time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "the summit"
+        },
+        {
+          "name": "nestegg",
+          "label": "peak ~$410K"
+        },
+        {
+          "name": "trophy",
+          "label": "40 years of climbing"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Approaching the peak, two traps appear. Retire before sixty-five, and you must self-fund health insurance until Medicare kicks in. And many fall into 'one more year' syndrome — too scared to stop, endlessly padding a pile they'll never actually finish spending.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "medkit",
+          "label": "bridge to Medicare"
+        },
+        {
+          "name": "hourglass",
+          "label": "'one more year'…"
+        },
+        {
+          "name": "warning",
+          "label": "fear of stopping"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "narration": "And then everything flips, because of retirement — the withdrawal from one's active working life. For the first time in forty years, money stops flowing in from a job, and starts flowing out of your savings instead.",
+      "sourceId": "wiki-retirement"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "A huge sixties decision: when to claim Social Security. Take it early at sixty-two, and the checks are permanently smaller. Wait until seventy, and they jump by over seventy percent. For many, delaying is one of the best, safest returns available anywhere.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "claim at 62… or 70"
+        },
+        {
+          "name": "chartup",
+          "label": "+70% for waiting"
+        },
+        {
+          "name": "scale",
+          "label": "a big, safe choice"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "narration": "This is the great pivot. Your entire financial life, until now, has been about accumulation — building the pile up. From here on, it's about drawdown — carefully spending that pile down without ever running out. It's a completely different, and frankly scarier, skill.",
+      "motif": "peaktodrawdown",
+      "caption": "the great pivot: build → spend"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And the pivot has a hidden danger: sequence-of-returns risk. A market crash in the first few years of retirement, while you're withdrawing, can be devastating. This is exactly why you shift toward safer assets and a cash cushion right as you cross that peak.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "a crash at the pivot"
+        },
+        {
+          "name": "shield",
+          "label": "shift to safety"
+        },
+        {
+          "name": "nestegg",
+          "label": "keep a cushion"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "And in the final decades, money's job changes one last time.",
+      "heading": "Your 70s+",
+      "kicker": "spend down & pass on"
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "narration": "After seventy, median net worth gently declines — down to around three hundred thirty-five thousand — exactly as the model predicts. You're now living off the fortune you built, converting decades of saving back into daily life. The hump is on its way down.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "cane",
+          "label": "living off the pile"
+        },
+        {
+          "name": "chartdown",
+          "label": "net worth ~$335K"
+        },
+        {
+          "name": "retiree",
+          "label": "the hump descends"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "In your seventies, the government stops being patient. Required minimum distributions force you to withdraw — and pay tax on — a rising slice of your retirement accounts each year, whether you need the money or not. The taxman always, eventually, collects his share.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "taxform",
+          "label": "forced withdrawals"
+        },
+        {
+          "name": "chartdown",
+          "label": "a rising slice each year"
+        },
+        {
+          "name": "warning",
+          "label": "the taxman collects"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "Two new forces dominate this decade: healthcare costs, which can be enormous, and legacy — deciding what to leave behind. Money stops being about building your own future, and starts being about comfort, care, and the people who come after you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "healthcare costs"
+        },
+        {
+          "name": "couple",
+          "label": "legacy & family"
+        },
+        {
+          "name": "handshake",
+          "label": "what you leave behind"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And this generation holds a staggering amount. As today's older Americans pass on, tens of trillions of dollars will transfer to their heirs — the largest wealth handover in history. For some families, this single event will matter more than a lifetime of their own saving.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneytree",
+          "label": "tens of trillions"
+        },
+        {
+          "name": "couple",
+          "label": "passed to heirs"
+        },
+        {
+          "name": "warning",
+          "label": "biggest transfer ever"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "Step back, and you can see what each decade was really asking of you.",
+      "heading": "The Shifting Job",
+      "kicker": "money's changing purpose"
+    },
+    {
+      "id": "s28",
+      "type": "stage",
+      "narration": "Notice how the entire purpose of money shifts as you age. In your twenties, it's freedom and fun. In your thirties, family and a home. In your forties, security and catching up. In your fifties, the final sprint. And in your sixties and beyond, legacy and peace of mind.",
+      "motif": "prioritiesbydecade",
+      "caption": "what money is FOR keeps changing"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "There's even a modern philosophy here called 'die with zero.' It argues the goal isn't to hoard the biggest possible pile, but to spend it on rich experiences while you're still healthy enough to enjoy them — and to time any inheritance for when your kids actually need it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hammock",
+          "label": "spend while healthy"
+        },
+        {
+          "name": "smiley",
+          "label": "rich experiences"
+        },
+        {
+          "name": "scale",
+          "label": "don't just hoard"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Median net worth by decade ($ thousands)",
+      "unit": "$K",
+      "narration": "Here's the whole life in one chart. Thirty-nine thousand in your early thirties, climbing through a hundred thirty-five, two hundred forty-seven, three hundred sixty-five, to a peak near four hundred ten — then easing back down. A lifetime of money, in a single curve.",
+      "data": [
+        {
+          "label": "<35",
+          "value": 39
+        },
+        {
+          "label": "35-44",
+          "value": 135
+        },
+        {
+          "label": "45-54",
+          "value": 247
+        },
+        {
+          "label": "55-64",
+          "value": 365
+        },
+        {
+          "label": "65-74",
+          "value": 410
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "Remember, all of this tracks your net worth — the value of all your assets, minus the value of all your outstanding liabilities. Early in life it's dragged down by debt; later, it's lifted by decades of patient saving.",
+      "sourceId": "wiki-networth"
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "So what do you actually do with this map of a money life?",
+      "heading": "The Playbook",
+      "kicker": "nail your decade"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "If you're in your twenties, the move is simple: start now, however small. You'll never again have this much time, and time is the ingredient you literally cannot buy back later. Begin the habit, and let the decades do the heavy lifting for you.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "backpack",
+          "label": "20s: just start"
+        },
+        {
+          "name": "clock",
+          "label": "time is everything"
+        },
+        {
+          "name": "seedling",
+          "label": "begin the habit"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "In your thirties and forties, the move is to survive the squeeze without surrendering. Protect that gap between earning and spending, resist the temptation to inflate your lifestyle with every raise, and keep feeding the machine even when money feels tightest.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "house",
+          "label": "30s-40s: survive the squeeze"
+        },
+        {
+          "name": "scissors",
+          "label": "don't inflate lifestyle"
+        },
+        {
+          "name": "moneytree",
+          "label": "keep feeding it"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "In your fifties, sprint. Use those catch-up contributions, bank the money the departing kids free up, and get deadly serious about your number. This is your last decade of peak earning power — don't waste a single year of it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "50s: sprint"
+        },
+        {
+          "name": "piggybank",
+          "label": "use catch-up limits"
+        },
+        {
+          "name": "calculator",
+          "label": "nail your number"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "A powerful fifties-and-sixties lever is the house itself. Downsizing from the big family home to something smaller can unlock a hundred thousand dollars or more of trapped equity — instantly boosting your nest egg and slashing your ongoing costs at the very same time.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "house",
+          "label": "big family home"
+        },
+        {
+          "name": "movingbox",
+          "label": "downsize"
+        },
+        {
+          "name": "nestegg",
+          "label": "unlock the equity"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "And in your sixties and beyond, master the pivot. Shift gently from risky growth toward safer, income-producing assets. Build a cash cushion against a bad early market. And then, crucially, give yourself permission to actually spend and enjoy what you spent a lifetime building.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "60s+: pivot safely"
+        },
+        {
+          "name": "nestegg",
+          "label": "toward income & cash"
+        },
+        {
+          "name": "smiley",
+          "label": "then enjoy it"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "And when you're finally living off the pile, use guardrails, not a rigid rule. In great market years, spend a little more. In bad ones, trim a little. That simple flexibility is what makes a nest egg last thirty years, through whatever the markets happen to throw at it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "flexible spending"
+        },
+        {
+          "name": "chartup",
+          "label": "good year: a bit more"
+        },
+        {
+          "name": "scissors",
+          "label": "bad year: trim"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "And if you feel behind for your decade — don't panic, and don't give up. The worst thing you can do is decide it's too late. A determined decade of focused effort can still transform your entire financial picture, at almost any age.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "behind? don't panic"
+        },
+        {
+          "name": "chartup",
+          "label": "one decade can transform it"
+        },
+        {
+          "name": "seedling",
+          "label": "it's never too late"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "And never believe the lie that a late start is a death sentence. Plenty of people built real wealth beginning in their forties, or even their fifties — through aggressive saving, a business, or simply refusing to quit. The best decade to start was the last one. The second best is this one.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "start at 40 or 50"
+        },
+        {
+          "name": "chartup",
+          "label": "aggressive saving works"
+        },
+        {
+          "name": "trophy",
+          "label": "it's never too late"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the real lesson of this arc is that money isn't a fixed thing you have or don't have. It's a flowing, changing current that moves through your whole life — and at every single stage, your only job is to understand the current you're in, and swim with it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "faucet",
+          "label": "money is a current"
+        },
+        {
+          "name": "calendar",
+          "label": "it changes each decade"
+        },
+        {
+          "name": "scale",
+          "label": "swim with your stage"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So wherever you are on this curve tonight — the broke twenty-something, the squeezed parent, the sprinting fifty-year-old, the newly retired — know that it's just a chapter. Play your decade's role well, and the whole arc quietly bends in your favor.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "it's just a chapter"
+        },
+        {
+          "name": "calendar",
+          "label": "play your decade well"
+        },
+        {
+          "name": "smiley",
+          "label": "the arc bends your way"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this helped you see exactly which money decade you're in, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-scf",
+      "name": "Survey of Consumer Finances (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survey_of_Consumer_Finances",
+      "quote": "a triennial statistical survey of the balance sheet"
+    },
+    {
+      "id": "wiki-lifecycle",
+      "name": "Life-cycle hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Life-cycle_hypothesis",
+      "quote": "explain the consumption patterns of individuals"
+    },
+    {
+      "id": "wiki-retirement",
+      "name": "Retirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement",
+      "quote": "the withdrawal from one's position or occupation"
+    },
+    {
+      "id": "wiki-networth",
+      "name": "Net worth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Net_worth",
+      "quote": "minus the value of all its outstanding liabilities"
+    }
+  ],
+  "youtube": {
+    "title": "How the Average American's Money Changes Every Decade of Life",
+    "alts": [
+      "Your Money in Your 20s, 30s, 40s, 50s, 60s, and 70s (Real Fed Data)",
+      "A Whole Money Life, Decade by Decade"
+    ],
+    "hook": "Your relationship with money completely transforms every ten years — and most people never see the whole arc. Using real Federal Reserve data, we walk a typical money life decade by decade: your 20s (debt and a negative net worth, but the priceless gift of TIME), 30s (income rises but the mortgage-and-kids squeeze hits), 40s (peak earning and the make-or-break fork), 50s (the catch-up sprint), 60s (the great pivot from building wealth to spending it, peaking around $410K), and 70s+ (drawing down, healthcare, and legacy). Each decade has one job — and nailing it makes the next one easier. Fully cited.",
+    "bullets": [
+      "The whole arc: net worth from ~$39K in your 20s to a ~$410K peak",
+      "Your 20s: broke, but the richest in TIME",
+      "The 30s squeeze — and why high earners still feel broke",
+      "The 40s fork: on track, or a frantic catch-up",
+      "The 60s pivot: from accumulation to drawdown",
+      "Each decade has one job — nail yours"
+    ],
+    "tags": [
+      "money by decade",
+      "money in your 20s 30s 40s",
+      "net worth by age",
+      "financial life stages",
+      "life cycle of money",
+      "survey of consumer finances",
+      "retirement drawdown",
+      "money every decade",
+      "average american net worth",
+      "personal finance by age",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#money",
+      "#personalfinance",
+      "#networth",
+      "#investing"
+    ],
+    "thumbnail": {
+      "hookTop": "YOUR MONEY LIFE",
+      "hookBot": "DECADE BY DECADE",
+      "napkinNumber": "$0 → $410K",
+      "napkinSub": "then back down",
+      "deco": "calendar"
+    },
+    "chapters": [
+      [
+        "where almost everyone begins",
+        "Your 20s"
+      ],
+      [
+        "the income arrives",
+        "Your 30s"
+      ],
+      [
+        "a decisive fork in the road",
+        "Your 40s"
+      ],
+      [
+        "the last great building decade",
+        "Your 50s"
+      ],
+      [
+        "the single biggest turning point",
+        "Your 60s"
+      ],
+      [
+        "money's job changes one last time",
+        "Your 70s+"
+      ],
+      [
+        "what each decade was really asking",
+        "The shifting job"
+      ],
+      [
+        "this map of a money life",
+        "The playbook"
+      ]
+    ]
+  }
+}
