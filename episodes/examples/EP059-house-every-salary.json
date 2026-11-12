@@ -1,0 +1,1033 @@
+{
+  "id": "EP059",
+  "series": "Napkin Numbers",
+  "title": "How Much House You Can Afford at Every Salary",
+  "slug": "how-much-house-at-every-salary",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP059 — Every Level series (row 49). HOUSING affordability math: the 28/36 rule, DTI, mortgage payment = f(price,rate,term,down), house price by salary ($40K–$200K), the rate shock (3% vs 7% halves the house), 20% down + PMI, the hidden-cost iceberg (tax/insurance/maintenance/HOA), approved≠affordable (house poor), rent-vs-buy. 6 new motifs (rule2836/salarytohouse/ratekillsaffordability/truehousecost/downpaymentpmi/housepoor) + doodles wrench/sofa. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "When you ask how much house you can afford, there are really two answers — and they're wildly different. There's the giant number the bank will happily approve you for. And there's the much smaller number that actually keeps your life free. Confuse the two, and you become what's called 'house poor.'",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "two different answers"
+        },
+        {
+          "name": "bank",
+          "label": "what the bank approves"
+        },
+        {
+          "name": "ballchain",
+          "label": "vs. what keeps you free"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that shocks everyone. A solid sixty-thousand-dollar salary — above the US median — safely affords a house of only around two hundred thousand dollars at today's rates. Far less than the prices you see on your screen every day.",
+      "text": "$205,000",
+      "sub": "the house a $60K salary safely affords",
+      "icon": "house"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "There used to be a dead-simple rule: buy a house up to three times your income. At the low rates of the past, that worked beautifully. But at seven percent, that same three-times house has a monthly payment that blows right past the safe limit. The old rule quietly broke.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "old rule: 3× income"
+        },
+        {
+          "name": "percent",
+          "label": "broke at 7%"
+        },
+        {
+          "name": "warning",
+          "label": "payment too high now"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we're running the real math at every salary — forty thousand, all the way up to two hundred thousand — and showing exactly how much house each one actually buys. Plus the hidden costs, and the one rule that keeps you from drowning.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "the real math"
+        },
+        {
+          "name": "ladder",
+          "label": "$40K → $200K"
+        },
+        {
+          "name": "sofa",
+          "label": "what each buys"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "get approved for the biggest mortgage I can",
+      "memeBottom": "spend the next 30 years unable to afford anything else",
+      "narration": "Because the bank's job isn't to protect your lifestyle. It's to lend you the absolute maximum you can technically repay. If you take every dollar they offer, you can end up with a beautiful house — and no money left for a life."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the golden rule lenders use to decide.",
+      "heading": "The 28/36 Rule",
+      "kicker": "how 'afford' is defined"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "A mortgage is a loan used by buyers of real property to raise funds to buy real estate, secured by the home itself. If you stop paying, the bank takes the house. That's why they care intensely about whether you can really keep up.",
+      "sourceId": "wiki-mortgage"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "The tool they use is your debt-to-income ratio — the percentage of your monthly gross income that goes toward paying debts. The lower it is, the safer you look to a lender, and the more they'll offer.",
+      "sourceId": "wiki-dti"
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "narration": "That feeds the classic twenty-eight / thirty-six rule. Your total housing payment should stay under twenty-eight percent of your gross monthly income. And all your debts combined — housing, car, student loans — should stay under thirty-six percent. Cross those lines, and you're in dangerous territory.",
+      "motif": "rule2836",
+      "caption": "the 28 / 36 rule"
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "Lenders actually run two numbers. The front-end ratio is just your housing cost against income — that's the twenty-eight. The back-end adds every other debt you carry — that's the thirty-six. So a big car payment or student loan quietly shrinks the house you can qualify for.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "front-end: housing"
+        },
+        {
+          "name": "creditcard",
+          "label": "back-end: all debt"
+        },
+        {
+          "name": "scissors",
+          "label": "other debt shrinks it"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "character",
+      "narration": "Let's make it concrete. On a sixty-thousand-dollar salary, that's five thousand a month gross. Twenty-eight percent of that is fourteen hundred dollars for your entire housing payment. And fourteen hundred a month, at today's rates, simply doesn't stretch as far as people hope.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "$5,000/mo gross"
+        },
+        {
+          "name": "percent",
+          "label": "28% = $1,400/mo"
+        },
+        {
+          "name": "house",
+          "label": "doesn't stretch far"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Now, lenders will often let you stretch much further — some loan programs approve a debt ratio over forty, even fifty percent. They will happily hand you the rope. Whether you choose to hang your whole lifestyle with it is entirely up to you.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "they'll stretch to 50%"
+        },
+        {
+          "name": "warning",
+          "label": "they hand you the rope"
+        },
+        {
+          "name": "ballchain",
+          "label": "your choice to take it"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "And whether that payment buys a mansion or a shoebox comes down to one brutal number.",
+      "heading": "The Rate Is King",
+      "kicker": "why timing matters"
+    },
+    {
+      "id": "s11",
+      "type": "screenshot",
+      "narration": "Your mortgage payment is set by an amortization schedule — the process of paying off a debt over time through regular, equal payments. Early on, almost all of each payment is pure interest, barely denting what you owe.",
+      "sourceId": "wiki-amort"
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "And the interest rate controls everything. A higher rate doesn't just cost a little more — it dramatically shrinks the size of the loan your fixed payment can support. The exact same monthly budget buys a wildly different house depending on where rates sit.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "the rate rules all"
+        },
+        {
+          "name": "mortgage",
+          "label": "same payment…"
+        },
+        {
+          "name": "house",
+          "label": "…very different house"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "stage",
+      "narration": "Watch what rates do to a hundred-thousand-dollar earner. At a three percent rate, their budget buys a four-hundred-thousand-dollar home. At seven percent, that same budget buys barely two hundred fifty thousand. Rates rising quietly erased a hundred and fifty thousand dollars of house — with no change in salary at all.",
+      "motif": "ratekillsaffordability",
+      "caption": "higher rates quietly shrink the house in half"
+    },
+    {
+      "id": "s46",
+      "type": "callout",
+      "narration": "And here's what the monthly payment quietly hides. On a thirty-year mortgage at seven percent, you don't just pay back the house — you pay back roughly double. A four-hundred-thousand-dollar loan ends up costing you close to a million dollars by the final payment.",
+      "text": "$960,000",
+      "sub": "total paid on a $400K loan at 7% over 30 years",
+      "icon": "mortgage"
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "So let's climb the salaries and see what each one really buys, at today's rates.",
+      "heading": "House by Salary",
+      "kicker": "the real numbers"
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "narration": "Here's the rough reality, assuming a seven percent rate and twenty percent down. Forty thousand a year affords around a hundred and thirty-five thousand of house. Sixty thousand, about two hundred five. A hundred thousand, roughly three hundred forty. And two hundred thousand, about six hundred eighty. Call it three to three-and-a-half times your income.",
+      "motif": "salarytohouse",
+      "caption": "salary → the house it really buys"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "And notice: most buyers today aren't single. Two incomes roughly double the house a couple can afford — which is a big reason the whole market is priced the way it is. For a solo buyer, that same ladder is brutally, almost impossibly, steeper.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "two incomes = 2× house"
+        },
+        {
+          "name": "house",
+          "label": "the market assumes it"
+        },
+        {
+          "name": "warning",
+          "label": "solo buyers struggle"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "Notice how far these fall below the headlines. With the median US home now well over four hundred thousand dollars, a household needs to earn well into six figures just to afford an average house. That gap is exactly why so many feel permanently priced out.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "house",
+          "label": "median home $400K+"
+        },
+        {
+          "name": "paystub",
+          "label": "needs 6-figure income"
+        },
+        {
+          "name": "warning",
+          "label": "the affordability gap"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "The squeeze is real and measurable. The typical first-time buyer is now pushing forty years old — up from the late twenties just a generation ago. People today aren't failing at this. The underlying math simply got dramatically harder.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "birthdaycake",
+          "label": "first buyer ~38"
+        },
+        {
+          "name": "clock",
+          "label": "up from late 20s"
+        },
+        {
+          "name": "warning",
+          "label": "the math got harder"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "But the sticker price is only the beginning. Now the trap almost everyone falls into.",
+      "heading": "The Hidden Half",
+      "kicker": "the costs you don't see"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "People budget for the mortgage and forget everything underneath it. But the mortgage is just the tip of the iceberg. Below the surface sit property taxes, home insurance, ongoing maintenance, and often HOA fees — a whole second mountain of cost.",
+      "motif": "truehousecost",
+      "caption": "the mortgage is only the tip"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "There's another up-front bite almost nobody warns you about: closing costs. On top of the down payment, expect to hand over another two to five percent of the price at signing — for the lender, the title, and a pile of fees. More cash, gone before you even move in.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "+2-5% at closing"
+        },
+        {
+          "name": "moneybag",
+          "label": "on top of the down payment"
+        },
+        {
+          "name": "warning",
+          "label": "gone before move-in"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "Take property tax — an ad valorem tax on the value of a property, paid every single year, forever. On a four-hundred-thousand-dollar home, that can easily be four to eight thousand dollars annually, depending on your state.",
+      "sourceId": "wiki-proptax"
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And property tax isn't frozen. As your home's assessed value rises, so does the bill — year after year. A tax you could just barely afford at purchase can quietly balloon over a decade, long after your mortgage payment itself is locked in place.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "assessed value rises"
+        },
+        {
+          "name": "receipt",
+          "label": "tax bill climbs"
+        },
+        {
+          "name": "warning",
+          "label": "it balloons over time"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "Then add insurance, and the big silent one: maintenance. A good rule is to budget about one percent of the home's value every year for repairs — a new roof, a dead furnace, a burst pipe. On a four-hundred-thousand home, that's four thousand dollars a year, just to stand still.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "wrench",
+          "label": "maintenance ~1%/yr"
+        },
+        {
+          "name": "house",
+          "label": "roof, furnace, pipes"
+        },
+        {
+          "name": "receipt",
+          "label": "+$4K/yr to stand still"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "And maintenance isn't just a leaky tap. It's the five-figure gut-punches: a new roof can run fifteen thousand dollars, a new heating and cooling system eight. As a homeowner, every one of those disasters is now entirely, personally, your problem.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "wrench",
+          "label": "roof: ~$15K"
+        },
+        {
+          "name": "house",
+          "label": "HVAC: ~$8K"
+        },
+        {
+          "name": "warning",
+          "label": "all yours now"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Stack it all up, and the true cost of owning is often thirty to fifty percent more than the mortgage payment alone. The house you can 'afford' on paper quietly costs far more than the number the calculator showed you.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "mortgage was a lie"
+        },
+        {
+          "name": "percent",
+          "label": "+30-50% in reality"
+        },
+        {
+          "name": "warning",
+          "label": "budget for all of it"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Now the pile of cash standing between you and the keys.",
+      "heading": "The Down Payment",
+      "kicker": "and the PMI trap"
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "narration": "To buy, you first need a down payment — an initial up-front partial payment for the purchase. For a house, the classic target is twenty percent of the price, paid in cash before you own a single brick.",
+      "sourceId": "wiki-downpayment"
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "Twenty percent is a daunting wall. On a three-hundred-thousand-dollar home, that's sixty thousand dollars in cash, on top of closing costs. It's the single biggest reason would-be buyers stay renters for years, quietly saving up.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "20% = $60K cash"
+        },
+        {
+          "name": "house",
+          "label": "on a $300K home"
+        },
+        {
+          "name": "apartment",
+          "label": "why renters wait"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "And saving that down payment is a marathon of its own. On a median income, stashing twenty percent for a median home can take the better part of a decade — all while rising prices try to outrun your savings. It's a race a lot of people feel they're quietly losing.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "save for ~a decade"
+        },
+        {
+          "name": "chartup",
+          "label": "prices run away"
+        },
+        {
+          "name": "clock",
+          "label": "a race against time"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "screenshot",
+      "narration": "You can buy with less down — but then you trigger private mortgage insurance, a type of insurance payable to a lender that protects them, not you, if you default. It's an extra monthly fee for the privilege of a small down payment.",
+      "sourceId": "wiki-pmi"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "The small mercy with PMI is that it's usually not forever. Once you've paid down enough to own twenty percent of the home, you can typically cancel it. But on some government-backed loans, it clings on for the entire life of the loan — so read the fine print carefully.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "cancel at 20% equity"
+        },
+        {
+          "name": "scissors",
+          "label": "then it's gone"
+        },
+        {
+          "name": "warning",
+          "label": "some loans: forever"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "So twenty percent down is the magic line. Cross it, and you skip PMI entirely and get a smaller, cheaper loan. Fall short, and you pay a monthly penalty that protects the bank, not you — pure dead money, until you build enough equity to shed it.",
+      "motif": "downpaymentpmi",
+      "caption": "under 20%, you rent your risk from an insurer"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "This is why a bigger down payment is a genuine double win. It skips PMI entirely, and it shrinks the loan you're paying interest on — quietly lowering your monthly payment twice over. Every extra dollar you put down works for you, silently, for thirty years.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "more down"
+        },
+        {
+          "name": "scissors",
+          "label": "no PMI"
+        },
+        {
+          "name": "chartdown",
+          "label": "lower payment too"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "Which brings us to the most important distinction in this entire video.",
+      "heading": "Approved ≠ Afford",
+      "kicker": "don't be house poor"
+    },
+    {
+      "id": "s28",
+      "type": "stage",
+      "narration": "The bank might approve you for the absolute maximum — a payment eating forty-three percent of your income. Take it, and you become house poor: a gorgeous home, and nothing left for savings, travel, emergencies, or fun. The house slowly devours your entire life.",
+      "motif": "housepoor",
+      "caption": "max out the house, and it devours the rest of your life"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "Here's a simple gut-check. If your housing eats anywhere near half your take-home pay, you are deep in the danger zone. At that point, one job loss, one medical bill, one broken furnace — and the whole thing can come crashing down. The cushion is simply gone.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "percent",
+          "label": "~50% of pay = danger"
+        },
+        {
+          "name": "warning",
+          "label": "one shock away"
+        },
+        {
+          "name": "ballchain",
+          "label": "no cushion left"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "This is the quiet tragedy of over-buying. You stretch for the dream house, and then you can't afford to furnish it, fix it, or ever leave it. You're technically a homeowner — but you're trapped, one lost paycheck away from losing everything.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "lockhouse",
+          "label": "can't furnish or leave"
+        },
+        {
+          "name": "ballchain",
+          "label": "trapped by the dream"
+        },
+        {
+          "name": "warning",
+          "label": "one paycheck from ruin"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "The fix is simple: buy well below your approval. A great habit is to use the twenty-eight percent rule on your take-home pay, not your gross. That quietly leaves a generous cushion for everything else life throws at you.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "buy below your max"
+        },
+        {
+          "name": "paystub",
+          "label": "28% of take-home"
+        },
+        {
+          "name": "smiley",
+          "label": "keep a cushion"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And be aware of the gentle pressure in the room. Your real-estate agent earns a commission based on the price — so they're quietly incentivized to nudge you toward 'just a little more.' They're often lovely people, but their paycheck grows right alongside your mortgage.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "agent earns commission"
+        },
+        {
+          "name": "chartup",
+          "label": "paid on the price"
+        },
+        {
+          "name": "warning",
+          "label": "nudged to overpay"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "And there's a question we've skipped entirely — one you should always ask first.",
+      "heading": "Should You Even Buy?",
+      "kicker": "rent isn't 'throwing money away'"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "We're taught that renting is throwing money away. But that's a myth. When you own, a huge chunk of your early payments is interest, taxes, and maintenance — money that also vanishes, just to the bank and the government instead of a landlord.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "renting isn't waste"
+        },
+        {
+          "name": "percent",
+          "label": "owning burns interest too"
+        },
+        {
+          "name": "scale",
+          "label": "it's not so simple"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "Here's a quick rent-versus-buy test called the five-percent rule. Multiply a home's price by five percent, divide by twelve — that's the rough monthly cost of owning it, beyond the mortgage itself. If you can rent a similar place for less, renting may genuinely be the smarter move.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "price × 5% ÷ 12"
+        },
+        {
+          "name": "apartment",
+          "label": "rent cheaper? rent"
+        },
+        {
+          "name": "scale",
+          "label": "a 30-second test"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "Sometimes renting and investing the difference genuinely beats buying — especially if you might move within a few years, or in cities where prices are sky-high relative to rents. Buying only truly shines when you stay put long enough to outrun the massive up-front costs.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "rent + invest can win"
+        },
+        {
+          "name": "luggage",
+          "label": "if you might move"
+        },
+        {
+          "name": "clock",
+          "label": "buy only to stay put"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "And don't forget what that down payment could otherwise be doing. Sixty thousand dollars locked into a house is sixty thousand not growing in the market. For some people, keeping that money invested and simply renting quietly builds more wealth than owning ever would.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "$60K in the house"
+        },
+        {
+          "name": "chartup",
+          "label": "vs. invested & growing"
+        },
+        {
+          "name": "scale",
+          "label": "owning ≠ always richer"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "House you can afford by salary ($K, 7% rate)",
+      "unit": "$K",
+      "narration": "So here's the whole ladder in one chart. Forty thousand buys around a hundred thirty-five thousand of house. Eighty thousand, about two hundred seventy. A hundred fifty thousand, roughly five hundred ten. The rule of thumb holds: a safe house costs about three to three-and-a-half times your salary.",
+      "data": [
+        {
+          "label": "$40K",
+          "value": 135
+        },
+        {
+          "label": "$80K",
+          "value": 270
+        },
+        {
+          "label": "$150K",
+          "value": 510
+        },
+        {
+          "label": "$200K",
+          "value": 680
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "id": "s35",
+      "type": "title",
+      "narration": "So let's turn all of this into a simple plan.",
+      "heading": "The Playbook",
+      "kicker": "buy a home, not a trap"
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Step one: ignore the bank's maximum. Start from the twenty-eight percent rule on your take-home pay, and treat that as your hard ceiling, not your target. The goal is a home you barely notice in your budget, not one that defines it.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "percent",
+          "label": "28% of take-home"
+        },
+        {
+          "name": "scissors",
+          "label": "a ceiling, not a target"
+        },
+        {
+          "name": "smiley",
+          "label": "barely notice it"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Step two: aim for twenty percent down to dodge PMI, and only buy if you plan to stay put for at least five years. That's roughly how long it takes for appreciation to cover the brutal up-front costs of buying and later selling.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "20% down"
+        },
+        {
+          "name": "calendar",
+          "label": "stay 5+ years"
+        },
+        {
+          "name": "house",
+          "label": "then buying wins"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "narration": "This is exactly why buying for the short term is a trap. Between realtor commissions and closing costs, simply buying and later selling can burn eight to ten percent of the home's value. You need years of appreciation just to break even on those fees alone.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "~8-10% to buy & sell"
+        },
+        {
+          "name": "clock",
+          "label": "years just to break even"
+        },
+        {
+          "name": "warning",
+          "label": "short-term = a loss"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "Step three: always budget for the hidden half. Add property tax, insurance, and about one percent a year for maintenance into your real cost. If you can comfortably cover all of that, then — and only then — can you truly afford the house.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "wrench",
+          "label": "budget the hidden half"
+        },
+        {
+          "name": "receipt",
+          "label": "tax + insurance + upkeep"
+        },
+        {
+          "name": "calculator",
+          "label": "cover it = you can afford it"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "Because a house should be a foundation for your life, not a cage around it. Bought carefully, well within your means, it's one of the great wealth-builders there is. Bought at the bank's maximum, it quietly becomes the most beautiful trap you'll ever own.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "a foundation…"
+        },
+        {
+          "name": "ballchain",
+          "label": "…or a cage"
+        },
+        {
+          "name": "scale",
+          "label": "the difference is the math"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "narration": "And one genuine piece of good news: your rate is not a life sentence. If you buy when rates are high and they later fall, you can refinance — swap your loan for a cheaper one and drop your payment. As they say, you marry the house, but you only date the rate.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mortgage",
+          "label": "buy now, high rate"
+        },
+        {
+          "name": "percent",
+          "label": "refinance if rates fall"
+        },
+        {
+          "name": "smiley",
+          "label": "date the rate"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "So before you fall in love with a listing, run the real numbers. Know what your salary can truly carry, leave room for the hidden half, and buy the house that sets you free — not the one the bank is quietly hoping you'll overpay for.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "run the real numbers"
+        },
+        {
+          "name": "sofa",
+          "label": "buy the freeing house"
+        },
+        {
+          "name": "keys",
+          "label": "now you see it"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "If this saved you from becoming house poor, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "house",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-mortgage",
+      "name": "Mortgage loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mortgage_loan",
+      "quote": "to raise funds to buy real estate"
+    },
+    {
+      "id": "wiki-dti",
+      "name": "Debt-to-income ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt-to-income_ratio",
+      "quote": "the percentage of a consumer's monthly gross income"
+    },
+    {
+      "id": "wiki-amort",
+      "name": "Amortization schedule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amortization_schedule",
+      "quote": "over time through regular payments"
+    },
+    {
+      "id": "wiki-proptax",
+      "name": "Property tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Property_tax",
+      "quote": "an ad valorem tax on the value of a property"
+    },
+    {
+      "id": "wiki-downpayment",
+      "name": "Down payment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Down_payment",
+      "quote": "an initial up-front partial payment for the purchase"
+    },
+    {
+      "id": "wiki-pmi",
+      "name": "Lenders mortgage insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lenders_mortgage_insurance",
+      "quote": "a type of insurance payable to a lender"
+    }
+  ],
+  "youtube": {
+    "title": "How Much House You Can Afford at Every Salary",
+    "alts": [
+      "The Real House Price Every Salary Can Afford ($40K to $200K)",
+      "How Much House Can You REALLY Afford? (Not What the Bank Says)"
+    ],
+    "hook": "How much house can you afford on your salary? There are two answers: the huge number the bank will approve, and the smaller one that keeps your life free. Using the 28/36 rule and real mortgage math, we show the house each salary truly affords ($40K ≈ $135K, $60K ≈ $205K, $100K ≈ $340K, $200K ≈ $680K — roughly 3–3.5× income at 7%). Plus: why rising rates can halve your house, the 20% down payment and the PMI trap, the hidden-cost iceberg (property tax, insurance, maintenance, HOA), why 'approved' is not 'affordable,' and the rent-vs-buy truth. Fully cited.",
+    "bullets": [
+      "The 28/36 rule — how lenders define 'afford'",
+      "How much house each salary really buys ($40K–$200K)",
+      "Why a higher rate can cut your house in half",
+      "The 20% down payment and the PMI trap",
+      "The hidden-cost iceberg: tax, insurance, maintenance",
+      "Approved ≠ affordable — how to avoid being house poor"
+    ],
+    "tags": [
+      "how much house can i afford",
+      "house affordability by salary",
+      "28 36 rule",
+      "mortgage explained",
+      "down payment",
+      "PMI explained",
+      "house poor",
+      "rent vs buy",
+      "debt to income ratio",
+      "home buying",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#housing",
+      "#mortgage",
+      "#personalfinance",
+      "#realestate"
+    ],
+    "thumbnail": {
+      "hookTop": "HOW MUCH HOUSE",
+      "hookBot": "AT EVERY SALARY",
+      "napkinNumber": "$60K",
+      "napkinSub": "≈ $205K house",
+      "deco": "house"
+    },
+    "chapters": [
+      [
+        "the golden rule lenders use",
+        "The 28/36 rule"
+      ],
+      [
+        "whether that payment buys a mansion or a shoebox",
+        "The rate is king"
+      ],
+      [
+        "see what each one really buys",
+        "House by salary"
+      ],
+      [
+        "the trap almost everyone falls into",
+        "The hidden half"
+      ],
+      [
+        "the pile of cash standing between you and the keys",
+        "The down payment"
+      ],
+      [
+        "the most important distinction",
+        "Approved vs afford"
+      ],
+      [
+        "a question we've skipped entirely",
+        "Should you even buy?"
+      ],
+      [
+        "turn all of this into a simple plan",
+        "The playbook"
+      ]
+    ]
+  }
+}

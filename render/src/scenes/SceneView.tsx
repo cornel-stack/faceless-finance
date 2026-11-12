@@ -4446,6 +4446,83 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <g transform={`translate(700 300) scale(${Math.min(1, pop)})`}><rect x={-130} y={-110} width={260} height={220} rx={14} fill={parch} stroke={ink} strokeWidth={5} /><text y={-60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">big city</text><text y={-10} fontSize={34} textAnchor="middle" fontFamily={sans}>🏙️</text><text y={44} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>tiny rental,</text><text y={68} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>paycheck to paycheck</text></g>
       </svg>
     );
+  } else if (m === "rule2836") {
+    // The 28/36 rule as two slices of your income.
+    const grow = interpolate(frame, [fps * 0.4, fps * 1.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={24} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 28 / 36 rule</text>
+        <text x={VW / 2} y={110} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>of your gross monthly income…</text>
+        <g transform="translate(290 300)"><circle r={100} fill="#efe9da" stroke={ink} strokeWidth={5} /><path d={`M0 0 L0 -100 A100 100 0 ${0.28 * grow > 0.5 ? 1 : 0} 1 ${100 * Math.sin(2 * Math.PI * 0.28 * grow)} ${-100 * Math.cos(2 * Math.PI * 0.28 * grow)} Z`} fill={green} stroke={ink} strokeWidth={4} /><text y={130} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">≤ 28% housing</text></g>
+        <g transform="translate(690 300)"><circle r={100} fill="#efe9da" stroke={ink} strokeWidth={5} /><path d={`M0 0 L0 -100 A100 100 0 ${0.36 * grow > 0.5 ? 1 : 0} 1 ${100 * Math.sin(2 * Math.PI * 0.36 * grow)} ${-100 * Math.cos(2 * Math.PI * 0.36 * grow)} Z`} fill={gold} stroke={ink} strokeWidth={4} /><text y={130} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">≤ 36% all debt</text></g>
+      </svg>
+    );
+  } else if (m === "salarytohouse") {
+    // Salary → the house price it can actually afford.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string, number][] = [["$40K", "~$135K", 110], ["$60K", "~$205K", 170], ["$100K", "~$340K", 280], ["$200K", "~$680K", 420]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={66} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">salary → the house it really buys</text>
+        {rows.map(([sal, price, w], i) => {
+          const y = 130 + i * 86;
+          return <g key={i} opacity={interpolate(grow, [i * 0.16, i * 0.16 + 0.2], [0, 1], clampBoth)}><text x={140} y={y + 34} fontSize={20} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{sal}</text><rect x={240} y={y} width={(w as number) * grow} height={54} rx={7} fill={[parch, "#cfe3d4", gold, green][i]} stroke={ink} strokeWidth={4} /><text x={240 + (w as number) * grow + 60} y={y + 34} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{price}</text></g>;
+        })}
+        <text x={VW / 2} y={480} fontSize={15} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>~3.5× income, at a 7% rate, 20% down</text>
+      </svg>
+    );
+  } else if (m === "ratekillsaffordability") {
+    // Same salary, higher rate → much less house.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.2], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["3%", 300, green], ["5%", 240, gold], ["7%", 190, "#d98b5f"], ["9%", 150, red]];
+    const vals = ["$400K", "$320K", "$255K", "$200K"];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">same $100K salary — the rate decides</text>
+        <RLine x1={90} y1={440} x2={VW - 60} y2={440} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, h, col], i) => { const x = 150 + i * 190; const hh = (h as number) * grow; return <g key={i}><rect x={x} y={440 - hh} width={130} height={hh} fill={col as string} stroke={ink} strokeWidth={4} /><text x={x + 65} y={440 - hh - 12} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{vals[i]}</text><text x={x + 65} y={464} fontSize={16} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>{lab} rate</text></g>; })}
+        <text x={VW / 2} y={496} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>higher rates quietly shrink the house in half</text>
+      </svg>
+    );
+  } else if (m === "truehousecost") {
+    // The iceberg: the mortgage is only the tip.
+    const reveal = interpolate(frame, [fps * 0.5, fps * 2.2], [0, 1], clampBoth);
+    const below = ["property tax", "insurance", "maintenance ~1%/yr", "HOA + utilities"];
+    art = (
+      <svg width={VW} height={VH}>
+        <line x1={80} y1={200} x2={VW - 80} y2={200} stroke={blue} strokeWidth={3} strokeDasharray="8 6" />
+        <g transform="translate(490 150)"><path d="M-80 50 L0 -60 L80 50 Z" fill="#dbeffb" stroke={ink} strokeWidth={4} /><text y={30} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>mortgage</text></g>
+        <path d="M-180 50 L180 50 L150 320 L-150 320 Z" transform="translate(490 150)" fill="#8fb8cf" stroke={ink} strokeWidth={4} opacity={reveal} />
+        {below.map((t, i) => <text key={i} x={490} y={260 + i * 44} fontSize={18} fontWeight={800} fill="#14303f" textAnchor="middle" fontFamily={sans} opacity={interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth)}>{t}</text>)}
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the mortgage is only the tip</text>
+      </svg>
+    );
+  } else if (m === "downpaymentpmi") {
+    // 20% down avoids PMI; less triggers the penalty.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 20% down line</text>
+        <g transform="translate(290 290)" opacity={t}><circle r={92} fill={green} stroke={ink} strokeWidth={6} /><text y={-10} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">20%+ down</text><text y={20} fontSize={15} fontWeight={800} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>no PMI,</text><text y={42} fontSize={15} fontWeight={800} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>lower payment</text></g>
+        <g transform="translate(690 290)" opacity={interpolate(t, [0.4, 1], [0, 1], clampBoth)}><circle r={92} fill={red} stroke={ink} strokeWidth={6} /><text y={-10} fontSize={20} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">under 20%</text><text y={20} fontSize={15} fontWeight={800} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>pay PMI —</text><text y={42} fontSize={15} fontWeight={800} fill="#ffe8e4" textAnchor="middle" fontFamily={sans}>a monthly penalty</text></g>
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>under 20%, you rent your risk from an insurer</text>
+      </svg>
+    );
+  } else if (m === "housepoor") {
+    // Approved for the max → the house eats everything.
+    const eat = interpolate(frame, [fps * 0.5, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">approved ≠ affordable</text>
+        <g transform="translate(490 300)">
+          <path d="M-150 40 L0 -110 L150 40 Z" fill={red} stroke={ink} strokeWidth={5} />
+          <rect x={-110} y={40} width={220} height={120} fill={red} stroke={ink} strokeWidth={5} />
+          <text y={110} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">the house</text>
+        </g>
+        {["savings", "travel", "freedom", "fun"].map((t, i) => { const a = (i / 4) * 6.283; const op = 1 - interpolate(eat, [i * 0.18, i * 0.18 + 0.3], [0, 1], clampBoth); return <text key={i} x={200 + (i % 2) * 580} y={200 + Math.floor(i / 2) * 200} fontSize={18} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans} opacity={op}>{t} ✗</text>; })}
+        <text x={VW / 2} y={492} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>max out the house, and it devours the rest of your life</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
