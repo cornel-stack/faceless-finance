@@ -1,0 +1,903 @@
+{
+  "id": "EP080",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Compound Interest: 1% to 15%",
+  "slug": "every-level-of-compound-interest",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP080 — Every Level series (row 70, LAST of the series). What $10,000 becomes over 40 years at 1/3/6/8/10/15%; compound interest = interest on interest (hockey-stick curve); the Rule of 72 (doubling time); why small rate gaps → massive wealth gaps (exponential); fees compound against you; time usually beats rate; inflation = negative compounding; realistic 7-10% vs 15% red-flag. 6 new motifs (rateladdergrowth/hockeystickcurve/doublingtime/ratefeedrag/timevsrate/inflationnegcompound). Sources: Compound interest/Rule of 72/Rate of return/Time value of money/Inflation. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Einstein supposedly called it the eighth wonder of the world. It's the quiet force that turns ten thousand dollars into fifteen thousand — or into nearly three million — depending on one number. Compound interest. Today we climb every level of it, from one percent to fifteen, and reveal why that one number decides almost everything.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "the eighth wonder"
+        },
+        {
+          "name": "chartup",
+          "label": "1% → 15%"
+        },
+        {
+          "name": "moneytree",
+          "label": "one number decides everything"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the jaw-dropper up front. Ten thousand dollars, left alone for forty years, grows to about fifteen thousand at one percent — but to around four hundred fifty thousand at ten percent. Same money, same time. The only difference is the rate, and it changes the outcome by a factor of thirty.",
+      "text": "$15K vs $453K",
+      "sub": "same $10K, same 40 years — only the rate differs",
+      "icon": "chartup"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "And that's with a single lump sum. Now add just five hundred dollars a month on top, compounding at ten percent for forty years, and you don't end with hundreds of thousands — you end with well over three million. The same boring habit, powered by compounding, quietly builds a genuine fortune.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "+ $500/mo"
+        },
+        {
+          "name": "snowball",
+          "label": "at 10% for 40 yrs"
+        },
+        {
+          "name": "moneytree",
+          "label": "= $3 million+"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So we'll climb every rate and see what your money becomes, meet the Rule of seventy-two that predicts it in seconds, expose how fees quietly compound against you, and settle the eternal fight between a higher rate and more time. By the end, compounding will never look boring again. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "every rate"
+        },
+        {
+          "name": "calculator",
+          "label": "the Rule of 72"
+        },
+        {
+          "name": "hourglass",
+          "label": "rate vs time"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/brain4.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "chase a hot stock tip",
+      "memeBottom": "let an index fund compound for 40 years",
+      "narration": "Because most people chase the thrill of a quick win, while the real fortune is built by the dullest force imaginable — money quietly multiplying on itself for decades. Before we climb, let's understand what compounding actually is."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what compound interest really is.",
+      "heading": "The Basics",
+      "kicker": "interest on interest"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Compound interest is interest accumulated from a principal sum and previously accumulated interest. In plain English: you earn interest, and then that interest earns its own interest. Your money starts having babies — and then those babies have babies. That loop, running for decades, is the whole magic.",
+      "sourceId": "wiki-compound"
+    },
+    {
+      "id": "s7",
+      "type": "character",
+      "narration": "Contrast it with simple interest, where only your original money earns. Put in a thousand at ten percent, and simple interest pays you a hundred every year, forever. Compound interest pays a hundred the first year — then a hundred and ten, then a hundred twenty-one — because you're earning on the gains, too. The gap between the two explodes over time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "simple: same $100/yr"
+        },
+        {
+          "name": "snowball",
+          "label": "compound: $100→$110→$121"
+        },
+        {
+          "name": "chartup",
+          "label": "the gap explodes"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here's the riddle that makes it click. Would you rather have a million dollars cash, or a single penny that doubles every day for a month? Take the penny. After thirty days of doubling, it becomes over five million dollars. That is the terrifying, beautiful power of compounding — and exactly why it feels so slow until it doesn't.",
+      "text": "1¢ → $5,000,000+",
+      "sub": "a penny doubled daily for 30 days beats $1M cash",
+      "icon": "snowball"
+    },
+    {
+      "id": "s8",
+      "type": "stage",
+      "narration": "And this is what compounding actually looks like: a hockey stick. For years it feels painfully slow, almost pointless — your money barely moves. Then the curve bends upward and, near the end, it goes nearly vertical. Most of the wealth is created in the final stretch, which is exactly why most people quit too early to see it.",
+      "motif": "hockeystickcurve",
+      "caption": "slow and boring — then it explodes"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And this curve explains why so few people ever get rich from investing, even though the formula is public and free. The payoff lives at the far right of the hockey stick. The boring, flat middle is where almost everyone gives up, cashes out, or chases something shinier — right before the magic was about to start.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "payoff is at the far right"
+        },
+        {
+          "name": "warning",
+          "label": "most quit in the flat middle"
+        },
+        {
+          "name": "chartdown",
+          "label": "right before the magic"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's climb the rates — and watch what your money becomes.",
+      "heading": "The Ladder",
+      "kicker": "1% to 15%"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "Here's ten thousand dollars, left for forty years, at each rate. At one percent it crawls to fifteen thousand. At three, thirty-three. At six, a hundred and three thousand. At eight, over two hundred thousand. At ten, four hundred fifty-three thousand. And at fifteen percent, an absurd two point seven million. Feast your eyes on the power of the rate.",
+      "motif": "rateladdergrowth",
+      "caption": "$10,000 over 40 years, at every rate"
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "leaving life savings in a 1% account",
+      "memeBottom": "watching inflation quietly torch its value",
+      "narration": "This is the quiet tragedy of the bottom of the ladder. Money that feels 'safe' in a one-percent account is actually losing a race it doesn't even know it's running — against inflation, every single year."
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Start at the bottom. One percent is a basic savings account — and it's heartbreaking, because after inflation you're actually losing money. Three percent is bonds or a high-yield savings account: safe, but barely keeping pace with rising prices. At these rates, compounding is technically working, but far too slowly to build real wealth.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "piggybank",
+          "label": "1%: savings account"
+        },
+        {
+          "name": "chartdown",
+          "label": "loses to inflation"
+        },
+        {
+          "name": "warning",
+          "label": "too slow to build wealth"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Now the rates where real wealth actually gets built.",
+      "heading": "6% to 10%",
+      "kicker": "the wealth zone"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "Six to ten percent is the wealth-building zone, and it's where the stock market historically lives. A broad index fund has returned roughly ten percent a year on average over the long run, or about seven after inflation. This is the rate that turns a steady saver into a millionaire — not luck, just time in the market.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "6-10%: the stock market"
+        },
+        {
+          "name": "moneytree",
+          "label": "~10% long-run average"
+        },
+        {
+          "name": "trophy",
+          "label": "steady saver → millionaire"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "Let's make the wealth zone concrete. Invest two hundred dollars a month — about seven dollars a day — from age twenty-five to sixty-five, at ten percent. You'd personally put in under a hundred thousand dollars. But compounding turns it into roughly one point three million. You contributed the thousands; the rate and the time created the millions.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "$200/mo, age 25-65"
+        },
+        {
+          "name": "calculator",
+          "label": "you add <$100K"
+        },
+        {
+          "name": "moneytree",
+          "label": "it becomes ~$1.3M"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "narration": "That percentage is your rate of return — and remember, return is simply a profit on an investment. The whole game of investing is choosing where to put your money so that this one number is as high as it reliably can be, without taking insane risk to get there.",
+      "sourceId": "wiki-ror"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "And fifteen percent? That's the fantasy rate — the realm of elite investors in their best years, and of every scam artist who ever lived. Almost nobody sustains it for decades. If someone promises you a guaranteed fifteen percent, you haven't found a genius. You've found a liar.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "15%: the fantasy rate"
+        },
+        {
+          "name": "rocket",
+          "label": "elite + unsustainable"
+        },
+        {
+          "name": "scale",
+          "label": "'guaranteed 15%' = a scam"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "Remember Bernie Madoff? His entire fraud was built on promising steady, too-good returns, year after year. Real markets lurch, crash, and recover — they never hand you a smooth, guaranteed high number. So when an investment looks suspiciously consistent and suspiciously high, that consistency isn't skill. It's the single biggest red flag there is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "Madoff: steady 'too-good' returns"
+        },
+        {
+          "name": "chartdown",
+          "label": "real markets lurch & crash"
+        },
+        {
+          "name": "scale",
+          "label": "smooth + high = red flag"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "Now a trick that lets you predict all of this in your head.",
+      "heading": "The Rule of 72",
+      "kicker": "doubling in seconds"
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "There's a beautiful shortcut called the Rule of 72 — one of several methods for estimating an investment's doubling time. You simply divide seventy-two by your interest rate, and the answer is roughly how many years it takes your money to double. No calculator, no spreadsheet, just mental math.",
+      "sourceId": "wiki-rule72"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "Watch how powerful this is. At one percent, your money takes seventy-two years to double — basically a lifetime. At six percent, just twelve years. At ten percent, about seven. At fifteen, around five. The higher the rate, the more times your money doubles in a life — and each doubling is worth more than the last.",
+      "motif": "doublingtime",
+      "caption": "72 ÷ rate = years to double your money"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Flip the Rule of 72 toward retirement and it gets motivating. If your money doubles every seven years at ten percent, then whatever you've saved by fifty-eight roughly doubles by sixty-five — untouched. Your last working decade can quietly add as much as your first three combined. The final doublings are the giants.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "doubles every ~7 years"
+        },
+        {
+          "name": "chartup",
+          "label": "58 → 65: it doubles again"
+        },
+        {
+          "name": "trophy",
+          "label": "final doublings are giants"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "And doublings are where the real drama hides. Money at ten percent doubles roughly every seven years. So over forty years it doubles about six times: ten thousand becomes twenty, then forty, then eighty, then one-sixty, three-twenty, six-forty. That final doubling alone adds more than the first five combined. The end is everything.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "6 doublings in 40 yrs"
+        },
+        {
+          "name": "chartup",
+          "label": "10K→20→40→80→160→320"
+        },
+        {
+          "name": "trophy",
+          "label": "the last double is the biggest"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "So why does a few percent matter so insanely much?",
+      "heading": "The Gap",
+      "kicker": "why rate is everything"
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "Because compounding is exponential, not linear. The difference between eight and ten percent sounds tiny — just two points. But over forty years, that two percent can more than double your final balance. Small gaps in the rate don't add up over time; they multiply. That's the single most underestimated idea in all of personal finance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "8% vs 10%: 'just 2 points'"
+        },
+        {
+          "name": "chartup",
+          "label": "can double the ending"
+        },
+        {
+          "name": "magnet",
+          "label": "gaps multiply, not add"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "Put real numbers on that 'tiny' gap. Ten thousand dollars over forty years grows to about two hundred seventeen thousand at eight percent — but four hundred fifty-three thousand at ten. Two percentage points more than doubled the result. In compounding, a small edge isn't small. It's everything.",
+      "text": "$217K vs $453K",
+      "sub": "8% vs 10% on $10K over 40 years — a 2-point gap",
+      "icon": "magnet"
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "Which means the same force can quietly work against you.",
+      "heading": "The Dark Side",
+      "kicker": "fees compound too"
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "narration": "Here's the part the finance industry hopes you never learn. Fees compound exactly like returns — just in reverse. A fund charging two percent a year instead of near-zero doesn't cost you two percent. Over a lifetime, it can quietly swallow a third to half of your entire final balance. The same math that builds you can bleed you.",
+      "motif": "ratefeedrag",
+      "caption": "a 2% fee can eat HALF your lifetime returns",
+      "props": []
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Here's the honest way to judge a fee. An advisor charging 'just one percent' sounds modest — but if the market returns seven percent, that fee is eating one-seventh of your entire return, every year, forever. Framed as a slice of your actual gains, a one-percent fee is enormous. Always ask what percent of returns it really is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "'just 1%' of your money…"
+        },
+        {
+          "name": "percent",
+          "label": "…is 1/7 of a 7% return"
+        },
+        {
+          "name": "chartdown",
+          "label": "enormous, every year"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "This is why low-cost index funds are so beloved by people who understand the math. Shaving your fees from two percent down to a tenth of a percent can leave you with hundreds of thousands of dollars more at the end — for doing absolutely nothing except refusing to overpay. Cutting fees is a guaranteed raise on your returns.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "cheap index funds win"
+        },
+        {
+          "name": "coins",
+          "label": "2% → 0.1% = +$100Ks"
+        },
+        {
+          "name": "smiley",
+          "label": "a guaranteed raise"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Now the eternal question: what matters more, a higher rate or more time?",
+      "heading": "Time vs Rate",
+      "kicker": "the real winner"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "Here's the surprise: time usually wins. Someone who starts at twenty-five earning a modest seven percent will often end up with more than someone who starts at forty earning a fat ten percent. Fifteen extra years of compounding beats a higher rate, because those early dollars get the most doublings. Starting early is the closest thing to a cheat code.",
+      "motif": "timevsrate",
+      "caption": "15 early years can beat a 3-point-higher return",
+      "props": []
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "The famous example seals it. One twin invests for only ten years in her twenties, then stops forever. The other waits, then invests for thirty straight years into her fifties. The early twin, who put in far less, usually ends up with more. Ten early years beat thirty late ones. Time is that powerful.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "10 early years vs 30 late"
+        },
+        {
+          "name": "chartup",
+          "label": "the early saver wins"
+        },
+        {
+          "name": "seedling",
+          "label": "start young, even briefly"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "screenshot",
+      "narration": "This is really the time value of money — the idea that there's a greater benefit to receiving a sum of money now rather than the identical sum later. A dollar today is worth more than a dollar tomorrow, precisely because today's dollar has more time to compound. Time, not timing, is the investor's greatest asset.",
+      "sourceId": "wiki-tvm"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "So the most valuable thing a young person owns isn't money — it's decades. A twenty-year-old with almost nothing to invest holds something a rich fifty-year-old cannot buy at any price: time for compounding to work. Spend that gift early, and even small amounts grow monstrous. Waste it, and no later income fully makes up the loss.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "youth owns decades"
+        },
+        {
+          "name": "seedling",
+          "label": "small amounts grow monstrous"
+        },
+        {
+          "name": "warning",
+          "label": "lost time can't be rebought"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "But if you're starting later, do not despair — this is the trap that stops people cold. Even at fifty, you likely have twenty, thirty, maybe forty years of compounding ahead, because you'll live and invest well past retirement. The worst move at any age is to decide it's too late and do nothing. It never is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "starting at 50? still decades"
+        },
+        {
+          "name": "warning",
+          "label": "'too late' is the real trap"
+        },
+        {
+          "name": "smiley",
+          "label": "the worst move is nothing"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "But there's a villain running this same math in the opposite direction.",
+      "heading": "The Enemy",
+      "kicker": "inflation"
+    },
+    {
+      "id": "s30",
+      "type": "screenshot",
+      "narration": "That villain is inflation — an increase in the average price of goods and services in terms of money. Inflation is compounding in reverse: it quietly eats the buying power of your money year after year, at its own compounding rate. Your investments aren't just racing to grow — they're racing to outrun this.",
+      "sourceId": "wiki-inflation"
+    },
+    {
+      "id": "s31",
+      "type": "stage",
+      "narration": "And it's brutal. At three percent inflation, the value of your money is cut in half in about twenty-four years — by the same Rule of 72, running against you. This is why cash under the mattress isn't safe; it's slowly melting. To merely stand still, your money has to compound at least as fast as prices rise.",
+      "motif": "inflationnegcompound",
+      "caption": "inflation halves your money's value in ~24 years",
+      "props": []
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "This is why hoarding cash feels safe but isn't, and why bonds alone rarely cut it. Both struggle to beat inflation over the long run, so your real wealth slowly erodes. To truly outrun rising prices over decades, most people need to own a slice of the growing economy itself — which, in practice, means stocks.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "cash & bonds lag inflation"
+        },
+        {
+          "name": "chartup",
+          "label": "own the growing economy"
+        },
+        {
+          "name": "moneytree",
+          "label": "stocks beat it long-term"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "So the number that actually matters is your real return — your rate minus inflation. Earn ten percent while inflation runs three, and your real growth is seven. Earn one percent in a savings account while inflation runs three, and your real return is negative two. You're compounding, yes — but compounding backward.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "real return = rate − inflation"
+        },
+        {
+          "name": "chartup",
+          "label": "10% − 3% = +7%"
+        },
+        {
+          "name": "chartdown",
+          "label": "1% − 3% = −2%"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "And this is grounded in history, not hope. Over the last century, the broad US stock market has returned roughly seven percent a year after inflation — through wars, crashes, and recessions. That seven percent real return is the single most reliable wealth-building engine ordinary people have ever had access to.",
+      "text": "~7% real",
+      "sub": "the stock market's long-run return after inflation",
+      "icon": "chartup"
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "So what rate should you actually plan around?",
+      "heading": "Your Rate",
+      "kicker": "aim realistic"
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "Plan around a realistic seven percent after inflation — the long-run reward of simply owning the whole stock market through low-cost index funds. Don't chase the fantasy of fifteen, and don't settle for the one percent that loses to inflation. Capture the market's return, keep your fees near zero, and let time do the heavy lifting.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "aim for ~7% real"
+        },
+        {
+          "name": "percent",
+          "label": "own the whole market"
+        },
+        {
+          "name": "hourglass",
+          "label": "let time do the work"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "Two quick technical boosts. Reinvesting your dividends instead of spending them is a huge, underrated part of that historical return — it's compounding fuel. And always invest inside tax-sheltered accounts when you can, because taxes, like fees, quietly compound against you too. Shelter the money, reinvest everything, and the engine runs cleaner.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "reinvest dividends"
+        },
+        {
+          "name": "vault",
+          "label": "use tax-sheltered accounts"
+        },
+        {
+          "name": "chartup",
+          "label": "the engine runs cleaner"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "And the three levers are simple: the rate, the time, and the amount you add. You can't control the market's rate, and you can't buy back lost time — so the one lever fully in your hands today is starting now, and adding consistently. Automate it, forget it, and let decades of doublings quietly make you wealthy.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "start now, add consistently"
+        },
+        {
+          "name": "calendar",
+          "label": "automate and forget"
+        },
+        {
+          "name": "moneytree",
+          "label": "decades of doublings"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And the hardest lever isn't math — it's behavior. Compounding only works if you leave it alone. The investors who win aren't the smartest; they're the ones who don't panic-sell in crashes and don't tinker out of boredom. Set it up, automate it, and then have the discipline to simply do nothing for decades.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "don't panic-sell"
+        },
+        {
+          "name": "calendar",
+          "label": "automate, then leave it"
+        },
+        {
+          "name": "smiley",
+          "label": "discipline beats genius"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "Because here's the real lesson that ties this whole series together: wealth isn't usually built by a brilliant move or a lucky bet. It's built by an ordinary amount of money, compounding at a decent rate, for an extraordinary length of time. Boring, patient, and almost unstoppable.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "ordinary money"
+        },
+        {
+          "name": "percent",
+          "label": "a decent rate"
+        },
+        {
+          "name": "hourglass",
+          "label": "an extraordinary time"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "So find your rate, respect the exponential curve, and start the clock today instead of tomorrow. The best time to let compounding begin was twenty years ago. The second best time, as the saying goes, is right now. Every single day you wait is a doubling you quietly give away.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "clock",
+          "label": "start the clock today"
+        },
+        {
+          "name": "seedling",
+          "label": "the 2nd best time is now"
+        },
+        {
+          "name": "chartup",
+          "label": "each day = a lost doubling"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "And if you really want to feel the power, do it for someone young. A small amount invested for a baby, left for sixty-five years, can compound into millions by the time they retire. Teaching a child about compounding early is one of the greatest financial gifts you can possibly give.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "invest for a child"
+        },
+        {
+          "name": "moneytree",
+          "label": "65 years → millions"
+        },
+        {
+          "name": "smiley",
+          "label": "the greatest gift"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "That wraps our entire tour of money, level by level — from net worth to rent, debt to lottery wins, and now the quiet engine underneath it all. Understand compounding, and you understand the one force that turns small, patient habits into a genuinely free life.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneytree",
+          "label": "the engine under it all"
+        },
+        {
+          "name": "snowball",
+          "label": "small habits"
+        },
+        {
+          "name": "smiley",
+          "label": "a genuinely free life"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this finally made compound interest click, hit subscribe — and tell me which number you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal sum and previously accumulated interest"
+    },
+    {
+      "id": "wiki-ror",
+      "name": "Rate of return (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rate_of_return",
+      "quote": "return is a profit on an investment"
+    },
+    {
+      "id": "wiki-rule72",
+      "name": "Rule of 72 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rule_of_72",
+      "quote": "divided by the interest percentage per period"
+    },
+    {
+      "id": "wiki-tvm",
+      "name": "Time value of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Time_value_of_money",
+      "quote": "a greater benefit to receiving a sum of money now rather than an identical sum later"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price of goods and services in terms of money"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Compound Interest: 1% to 15%",
+    "alts": [
+      "What $10,000 Becomes at Every Interest Rate (1% to 15%)",
+      "Compound Interest Explained: Every Rate from 1% to 15%"
+    ],
+    "hook": "Einstein supposedly called it the eighth wonder of the world — and one number decides whether your $10,000 becomes $15,000 or nearly $3 million. This is every level of compound interest: what $10K becomes over 40 years at 1%, 3%, 6%, 8%, 10%, and 15%. We explain interest-on-interest and the hockey-stick curve, the Rule of 72 (divide 72 by your rate for the doubling time), why a 2% gap multiplies rather than adds, how fees compound against you (a 2% fee can eat half your returns), why time usually beats a higher rate, and how inflation is compounding in reverse. Aim for a realistic ~7% real return, keep fees near zero, and start the clock today. Fully cited.",
+    "bullets": [
+      "What $10K becomes at 1% to 15% over 40 years",
+      "Compound interest = interest on interest (the hockey stick)",
+      "The Rule of 72 — doubling time in your head",
+      "Why a 2% gap multiplies your ending, not adds to it",
+      "Fees compound against you — a 2% fee can cost half",
+      "Time usually beats rate — plus inflation as reverse compounding"
+    ],
+    "tags": [
+      "compound interest",
+      "compound interest explained",
+      "rule of 72",
+      "how compound interest works",
+      "investing for beginners",
+      "index funds",
+      "time value of money",
+      "rate of return",
+      "power of compounding",
+      "inflation",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#compoundinterest",
+      "#investing",
+      "#personalfinance",
+      "#ruleof72"
+    ],
+    "thumbnail": {
+      "hookTop": "COMPOUND INTEREST",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "$10K→$2.7M",
+      "napkinSub": "1% vs 15%, 40 years",
+      "deco": "snowball"
+    },
+    "chapters": [
+      [
+        "what compound interest really is",
+        "The basics"
+      ],
+      [
+        "watch what your money becomes",
+        "The ladder"
+      ],
+      [
+        "where real wealth actually gets built",
+        "6% to 10%"
+      ],
+      [
+        "predict all of this in your head",
+        "The Rule of 72"
+      ],
+      [
+        "why does a few percent matter so insanely much",
+        "The gap"
+      ],
+      [
+        "the same force can quietly work against you",
+        "The dark side"
+      ],
+      [
+        "a higher rate or more time",
+        "Time vs rate"
+      ],
+      [
+        "a villain running this same math",
+        "Inflation"
+      ],
+      [
+        "what rate should you actually plan around",
+        "Your rate"
+      ]
+    ]
+  }
+}

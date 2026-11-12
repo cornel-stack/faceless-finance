@@ -2,784 +2,760 @@
   {
     "id": "s1",
     "type": "character",
-    "narration": "There's a single dial that decides the entire shape of your retirement — and it's not how much you make. It's the age you stop. Retire at forty, and you get decades of freedom but need a fortune. Retire at seventy, and the money is easy but the years are fewer. Today we climb every level of retirement age.",
+    "narration": "Einstein supposedly called it the eighth wonder of the world. It's the quiet force that turns ten thousand dollars into fifteen thousand — or into nearly three million — depending on one number. Compound interest. Today we climb every level of it, from one percent to fifteen, and reveal why that one number decides almost everything.",
     "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "the age you stop"
+        "name": "snowball",
+        "label": "the eighth wonder"
       },
       {
-        "name": "hammock",
-        "label": "40: freedom, needs a fortune"
+        "name": "chartup",
+        "label": "1% → 15%"
       },
       {
-        "name": "goldwatch",
-        "label": "70: easy money, fewer years"
+        "name": "moneytree",
+        "label": "one number decides everything"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the trade-off that governs everything. Every year you retire earlier, you need a dramatically bigger nest egg — and you forfeit a year of saving and compounding. Every year you wait, the money gets easier, but you're spending your healthiest, most precious years at work. There is no free lunch on this dial.",
-    "text": "earlier = harder",
-    "sub": "retire younger and you need far more, saved in less time",
-    "icon": "scale"
+    "narration": "Here's the jaw-dropper up front. Ten thousand dollars, left alone for forty years, grows to about fifteen thousand at one percent — but to around four hundred fifty thousand at ten percent. Same money, same time. The only difference is the rate, and it changes the outcome by a factor of thirty.",
+    "text": "$15K vs $453K",
+    "sub": "same $10K, same 40 years — only the rate differs",
+    "icon": "chartup"
   },
   {
     "id": "s41",
     "type": "character",
-    "narration": "And here's the reframe that makes this real. Money is just stored life energy — hours of your one finite life, traded for dollars. So your retirement age is really the moment you stop trading your hours for money and start spending them on whatever you actually want. The dial isn't about wealth. It's about time.",
+    "narration": "And that's with a single lump sum. Now add just five hundred dollars a month on top, compounding at ten percent for forty years, and you don't end with hundreds of thousands — you end with well over three million. The same boring habit, powered by compounding, quietly builds a genuine fortune.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "money = stored life energy"
+        "name": "piggybank",
+        "label": "+ $500/mo"
       },
       {
-        "name": "goldwatch",
-        "label": "stop trading hours for dollars"
+        "name": "snowball",
+        "label": "at 10% for 40 yrs"
       },
       {
-        "name": "smiley",
-        "label": "the dial is really about time"
+        "name": "moneytree",
+        "label": "= $3 million+"
       }
     ]
   },
   {
     "id": "s3",
     "type": "character",
-    "narration": "So we'll climb from forty all the way to seventy, show exactly what nest egg each age demands, reveal how Social Security quietly rewards waiting, and expose the two traps that catch early and late retirees alike. By the end, you'll know which age is really yours. Let's go.",
+    "narration": "So we'll climb every rate and see what your money becomes, meet the Rule of seventy-two that predicts it in seconds, expose how fees quietly compound against you, and settle the eternal fight between a higher rate and more time. By the end, compounding will never look boring again. Let's go.",
     "pose": "explain",
     "props": [
       {
-        "name": "retiree",
-        "label": "40 → 70"
+        "name": "percent",
+        "label": "every rate"
       },
       {
-        "name": "nestegg",
-        "label": "what each age needs"
+        "name": "calculator",
+        "label": "the Rule of 72"
       },
       {
-        "name": "goldwatch",
-        "label": "the Social Security twist"
+        "name": "hourglass",
+        "label": "rate vs time"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/rollsafe.jpg",
-    "meme": "Roll Safe Think About It",
-    "memeTop": "can't run out of money in retirement",
-    "memeBottom": "if you just never stop working",
-    "narration": "Now, working forever is one way to never run out of money — but it rather defeats the point. The real goal is to pick the earliest age you can stop without the money running out. So let's define what that age actually means."
+    "src": "img/memes/brain4.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "chase a hot stock tip",
+    "memeBottom": "let an index fund compound for 40 years",
+    "narration": "Because most people chase the thrill of a quick win, while the real fortune is built by the dullest force imaginable — money quietly multiplying on itself for decades. Before we climb, let's understand what compounding actually is."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what retirement age really is.",
+    "narration": "First, what compound interest really is.",
     "heading": "The Basics",
-    "kicker": "the age you're free"
+    "kicker": "interest on interest"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "narration": "Retirement age is simply the age at which a person is expected or required to cease work. But here's the key shift: you don't have to wait for the government's official age. Your real retirement age is whenever your investments can pay your bills without you. That's a number you control.",
-    "sourceId": "wiki-retage"
+    "narration": "Compound interest is interest accumulated from a principal sum and previously accumulated interest. In plain English: you earn interest, and then that interest earns its own interest. Your money starts having babies — and then those babies have babies. That loop, running for decades, is the whole magic.",
+    "sourceId": "wiki-compound"
   },
   {
     "id": "s7",
-    "type": "screenshot",
-    "narration": "That's the whole idea behind the Trinity study — an influential 1998 paper by three professors of finance that gave us the famous four-percent rule. It found that a portfolio could safely pay out about four percent a year and last for decades. Flip that around, and it tells you exactly how big your nest egg must be.",
-    "sourceId": "wiki-trinity"
-  },
-  {
-    "id": "s8",
     "type": "character",
-    "narration": "And the flip is beautifully simple: you need about twenty-five times your annual spending saved. Spend forty thousand a year? You need a million. Spend eighty? Two million. This one number — twenty-five times your spending — is the finish line for every single age on this ladder.",
+    "narration": "Contrast it with simple interest, where only your original money earns. Put in a thousand at ten percent, and simple interest pays you a hundred every year, forever. Compound interest pays a hundred the first year — then a hundred and ten, then a hundred twenty-one — because you're earning on the gains, too. The gap between the two explodes over time.",
     "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "25× your yearly spending"
+        "name": "coins",
+        "label": "simple: same $100/yr"
       },
       {
-        "name": "nestegg",
-        "label": "$40K/yr → $1M"
+        "name": "snowball",
+        "label": "compound: $100→$110→$121"
       },
       {
-        "name": "scale",
-        "label": "the finish line for every age"
+        "name": "chartup",
+        "label": "the gap explodes"
       }
     ]
   },
   {
     "id": "s42",
     "type": "callout",
-    "narration": "Let's make the finish line concrete. Spend forty thousand a year, you need about a million. Spend sixty thousand, one and a half million. Spend a hundred thousand, two and a half million. Notice: the number is driven by your spending, not your income. Control your spending, and you shrink the whole mountain.",
-    "text": "25× spending",
-    "sub": "$40K→$1M · $60K→$1.5M · $100K→$2.5M",
-    "icon": "calculator"
+    "narration": "Here's the riddle that makes it click. Would you rather have a million dollars cash, or a single penny that doubles every day for a month? Take the penny. After thirty days of doubling, it becomes over five million dollars. That is the terrifying, beautiful power of compounding — and exactly why it feels so slow until it doesn't.",
+    "text": "1¢ → $5,000,000+",
+    "sub": "a penny doubled daily for 30 days beats $1M cash",
+    "icon": "snowball"
   },
   {
-    "id": "s9",
-    "type": "title",
-    "narration": "So let's climb the ages — and see what each one demands and gives.",
-    "heading": "The Dial",
-    "kicker": "40 to 70"
-  },
-  {
-    "id": "s10",
+    "id": "s8",
     "type": "stage",
-    "narration": "Here's the whole dial. Forty is hardcore financial independence — decades of freedom. Fifty is early and bold. Fifty-five is a common sweet spot. Sixty-two is the earliest you can claim Social Security. Sixty-seven is the full Social Security age for most people today. And seventy is where Social Security maxes out. Each age is a completely different deal.",
-    "motif": "retireageladder",
-    "caption": "the retirement-age dial, 40 to 70"
+    "narration": "And this is what compounding actually looks like: a hockey stick. For years it feels painfully slow, almost pointless — your money barely moves. Then the curve bends upward and, near the end, it goes nearly vertical. Most of the wealth is created in the final stretch, which is exactly why most people quit too early to see it.",
+    "motif": "hockeystickcurve",
+    "caption": "slow and boring — then it explodes"
   },
   {
     "id": "s43",
     "type": "character",
-    "narration": "One sobering reality first: most Americans don't actually get to pick. The average person retires around sixty-two to sixty-five — but often because of layoffs, health problems, or caregiving, not choice. That's the strongest argument for saving hard early: so that when the dial gets spun, you're the one spinning it.",
+    "narration": "And this curve explains why so few people ever get rich from investing, even though the formula is public and free. The payoff lives at the far right of the hockey stick. The boring, flat middle is where almost everyone gives up, cashes out, or chases something shinier — right before the magic was about to start.",
     "pose": "explain",
     "props": [
       {
+        "name": "hourglass",
+        "label": "payoff is at the far right"
+      },
+      {
         "name": "warning",
-        "label": "most don't get to choose"
+        "label": "most quit in the flat middle"
       },
       {
-        "name": "calendar",
-        "label": "avg retirement ~62-65"
-      },
-      {
-        "name": "piggybank",
-        "label": "save early = you decide"
+        "name": "chartdown",
+        "label": "right before the magic"
       }
     ]
   },
   {
-    "id": "s11",
-    "type": "character",
-    "narration": "Retiring at forty is the dream of the FIRE movement — and it's brutally demanding. With no Social Security for decades and a retirement that might last fifty years, you need an enormous pile relative to your spending, often well over thirty times your expenses to be truly safe. It's possible, but it asks for monk-like saving.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hammock",
-        "label": "40: the FIRE dream"
-      },
-      {
-        "name": "nestegg",
-        "label": "30×+ expenses to be safe"
-      },
-      {
-        "name": "warning",
-        "label": "a 50-year retirement"
-      }
-    ]
+    "id": "s9",
+    "type": "title",
+    "narration": "So let's climb the rates — and watch what your money becomes.",
+    "heading": "The Ladder",
+    "kicker": "1% to 15%"
+  },
+  {
+    "id": "s10",
+    "type": "stage",
+    "narration": "Here's ten thousand dollars, left for forty years, at each rate. At one percent it crawls to fifteen thousand. At three, thirty-three. At six, a hundred and three thousand. At eight, over two hundred thousand. At ten, four hundred fifty-three thousand. And at fifteen percent, an absurd two point seven million. Feast your eyes on the power of the rate.",
+    "motif": "rateladdergrowth",
+    "caption": "$10,000 over 40 years, at every rate"
   },
   {
     "id": "s44",
     "type": "image",
-    "src": "img/memes/brain4.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "retire at 65 the normal way",
-    "memeBottom": "save 60% and retire at 40 on 'lean FIRE'",
-    "narration": "And FIRE itself has flavors. 'Lean FIRE' means retiring early on a frugal budget; 'fat FIRE' means a luxurious one that needs a far bigger pile. Same early-freedom goal, wildly different numbers — pick the version your spending can actually sustain."
+    "src": "img/memes/disaster.jpg",
+    "meme": "Disaster Girl",
+    "memeTop": "leaving life savings in a 1% account",
+    "memeBottom": "watching inflation quietly torch its value",
+    "narration": "This is the quiet tragedy of the bottom of the ladder. Money that feels 'safe' in a one-percent account is actually losing a race it doesn't even know it's running — against inflation, every single year."
+  },
+  {
+    "id": "s11",
+    "type": "character",
+    "narration": "Start at the bottom. One percent is a basic savings account — and it's heartbreaking, because after inflation you're actually losing money. Three percent is bonds or a high-yield savings account: safe, but barely keeping pace with rising prices. At these rates, compounding is technically working, but far too slowly to build real wealth.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "piggybank",
+        "label": "1%: savings account"
+      },
+      {
+        "name": "chartdown",
+        "label": "loses to inflation"
+      },
+      {
+        "name": "warning",
+        "label": "too slow to build wealth"
+      }
+    ]
   },
   {
     "id": "s12",
-    "type": "screenshot",
-    "narration": "That movement has a name: Financial Independence, Retire Early — characterized by high savings rates, often far above the ten to fifteen percent planners usually recommend. FIRE devotees save fifty, sixty, even seventy percent of their income to buy back decades of their life. It's extreme, but the math genuinely works.",
-    "sourceId": "wiki-fire"
+    "type": "title",
+    "narration": "Now the rates where real wealth actually gets built.",
+    "heading": "6% to 10%",
+    "kicker": "the wealth zone"
   },
   {
     "id": "s13",
     "type": "character",
-    "narration": "Fifty-five is a classic target, and for good reason. You've had decades to compound, you're likely at peak net worth, and a quirk in some retirement plans lets you access funds penalty-free at fifty-five if you retire then. It's early enough to enjoy, late enough to be achievable for diligent savers.",
+    "narration": "Six to ten percent is the wealth-building zone, and it's where the stock market historically lives. A broad index fund has returned roughly ten percent a year on average over the long run, or about seven after inflation. This is the rate that turns a steady saver into a millionaire — not luck, just time in the market.",
     "pose": "explain",
     "props": [
       {
         "name": "chartup",
-        "label": "55: decades of compounding"
+        "label": "6-10%: the stock market"
       },
       {
-        "name": "piggybank",
-        "label": "peak net worth"
+        "name": "moneytree",
+        "label": "~10% long-run average"
       },
       {
-        "name": "smiley",
-        "label": "early but achievable"
+        "name": "trophy",
+        "label": "steady saver → millionaire"
       }
     ]
   },
   {
     "id": "s45",
     "type": "character",
-    "narration": "That fifty-five perk has a name — the 'rule of fifty-five' — letting you tap a workplace plan penalty-free if you leave that job at fifty-five or later. Early retirees also use special withdrawal schedules to reach retirement money before fifty-nine and a half without the usual ten-percent penalty. The access problem is solvable.",
+    "narration": "Let's make the wealth zone concrete. Invest two hundred dollars a month — about seven dollars a day — from age twenty-five to sixty-five, at ten percent. You'd personally put in under a hundred thousand dollars. But compounding turns it into roughly one point three million. You contributed the thousands; the rate and the time created the millions.",
     "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "the 'rule of 55'"
+        "name": "coins",
+        "label": "$200/mo, age 25-65"
       },
       {
-        "name": "nestegg",
-        "label": "penalty-free early access"
+        "name": "calculator",
+        "label": "you add <$100K"
       },
       {
-        "name": "smiley",
-        "label": "the access problem is solvable"
+        "name": "moneytree",
+        "label": "it becomes ~$1.3M"
       }
     ]
   },
   {
     "id": "s14",
-    "type": "title",
-    "narration": "Now the age where the whole conversation changes: Social Security kicks in.",
-    "heading": "62 to 70",
-    "kicker": "the Social Security years"
+    "type": "screenshot",
+    "narration": "That percentage is your rate of return — and remember, return is simply a profit on an investment. The whole game of investing is choosing where to put your money so that this one number is as high as it reliably can be, without taking insane risk to get there.",
+    "sourceId": "wiki-ror"
   },
   {
     "id": "s15",
-    "type": "screenshot",
-    "narration": "Here's where a second income appears. Social Security is the commonly used term for the federal program that pays most retired Americans a monthly check for life. For the first time on the dial, you're no longer funding everything yourself — the government covers part of the bill.",
-    "sourceId": "wiki-ss"
-  },
-  {
-    "id": "s16",
-    "type": "stage",
-    "narration": "But when you claim it changes everything. Take it at sixty-two, the earliest age, and your check is permanently cut by about thirty percent. Wait until your full age of sixty-seven, you get one hundred percent. Hold out to seventy, and it grows by roughly another twenty-four percent — a bigger check, for the rest of your life.",
-    "motif": "ssclaimingage",
-    "caption": "claim at 62 and lose ~30%; wait to 70 and gain ~24%"
+    "type": "character",
+    "narration": "And fifteen percent? That's the fantasy rate — the realm of elite investors in their best years, and of every scam artist who ever lived. Almost nobody sustains it for decades. If someone promises you a guaranteed fifteen percent, you haven't found a genius. You've found a liar.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "warning",
+        "label": "15%: the fantasy rate"
+      },
+      {
+        "name": "rocket",
+        "label": "elite + unsustainable"
+      },
+      {
+        "name": "scale",
+        "label": "'guaranteed 15%' = a scam"
+      }
+    ]
   },
   {
     "id": "s46",
     "type": "character",
-    "narration": "So when does claiming early actually make sense? If you're in poor health, truly need the income, or have no other savings, taking it at sixty-two can be the right call. There's a rough breakeven around age eighty: live past it and waiting wins; die before it and claiming early won. It's partly a bet on your own longevity.",
+    "narration": "Remember Bernie Madoff? His entire fraud was built on promising steady, too-good returns, year after year. Real markets lurch, crash, and recover — they never hand you a smooth, guaranteed high number. So when an investment looks suspiciously consistent and suspiciously high, that consistency isn't skill. It's the single biggest red flag there is.",
     "pose": "explain",
     "props": [
       {
-        "name": "medkit",
-        "label": "poor health? claim early"
+        "name": "warning",
+        "label": "Madoff: steady 'too-good' returns"
+      },
+      {
+        "name": "chartdown",
+        "label": "real markets lurch & crash"
       },
       {
         "name": "scale",
-        "label": "breakeven around age 80"
-      },
-      {
-        "name": "hourglass",
-        "label": "a bet on longevity"
+        "label": "smooth + high = red flag"
       }
     ]
+  },
+  {
+    "id": "s16",
+    "type": "title",
+    "narration": "Now a trick that lets you predict all of this in your head.",
+    "heading": "The Rule of 72",
+    "kicker": "doubling in seconds"
   },
   {
     "id": "s17",
+    "type": "screenshot",
+    "narration": "There's a beautiful shortcut called the Rule of 72 — one of several methods for estimating an investment's doubling time. You simply divide seventy-two by your interest rate, and the answer is roughly how many years it takes your money to double. No calculator, no spreadsheet, just mental math.",
+    "sourceId": "wiki-rule72"
+  },
+  {
+    "id": "s18",
+    "type": "stage",
+    "narration": "Watch how powerful this is. At one percent, your money takes seventy-two years to double — basically a lifetime. At six percent, just twelve years. At ten percent, about seven. At fifteen, around five. The higher the rate, the more times your money doubles in a life — and each doubling is worth more than the last.",
+    "motif": "doublingtime",
+    "caption": "72 ÷ rate = years to double your money"
+  },
+  {
+    "id": "s47",
     "type": "character",
-    "narration": "So waiting is like buying the best annuity on earth. Every year you delay from sixty-two to seventy, your guaranteed, inflation-adjusted income jumps. For healthy people who expect to live into their eighties or beyond, delaying Social Security is often the single highest-return move in all of retirement planning.",
+    "narration": "Flip the Rule of 72 toward retirement and it gets motivating. If your money doubles every seven years at ten percent, then whatever you've saved by fifty-eight roughly doubles by sixty-five — untouched. Your last working decade can quietly add as much as your first three combined. The final doublings are the giants.",
     "pose": "explain",
     "props": [
       {
-        "name": "goldwatch",
-        "label": "delaying = a bigger check"
+        "name": "snowball",
+        "label": "doubles every ~7 years"
       },
       {
         "name": "chartup",
-        "label": "inflation-adjusted, for life"
+        "label": "58 → 65: it doubles again"
       },
       {
-        "name": "shield",
-        "label": "the best annuity there is"
+        "name": "trophy",
+        "label": "final doublings are giants"
       }
     ]
   },
   {
-    "id": "s47",
-    "type": "callout",
-    "narration": "And don't overestimate the check. For an average earner, Social Security replaces only about forty percent of pre-retirement income — enough to matter enormously, nowhere near enough to live on alone. It's the sturdy floor beneath your retirement, never the whole house. Your savings still do most of the heavy lifting.",
-    "text": "~40%",
-    "sub": "of income replaced by Social Security — a floor, not the house",
-    "icon": "shield"
-  },
-  {
-    "id": "s18",
-    "type": "title",
-    "narration": "Now let's put real numbers on what each age actually costs you.",
-    "heading": "The Price",
-    "kicker": "nest egg by age"
-  },
-  {
     "id": "s19",
-    "type": "stage",
-    "narration": "Watch how the pile shrinks as you wait. To retire at forty you might need thirty or more times your spending. By sixty, with Social Security on the horizon and fewer years to fund, you need far less. The exact same lifestyle costs a radically different nest egg depending purely on when you stop.",
-    "motif": "eggneededbyage",
-    "caption": "retire later, and the required pile shrinks fast"
-  },
-  {
-    "id": "s48",
     "type": "character",
-    "narration": "Here's why those final working years are so disproportionately powerful. Late in a long savings career, your investment gains in a single good year can exceed your entire salary. Working from sixty to sixty-five isn't just five more years of saving — it can be the years your balance quietly doubles. Quitting right before that is costly.",
+    "narration": "And doublings are where the real drama hides. Money at ten percent doubles roughly every seven years. So over forty years it doubles about six times: ten thousand becomes twenty, then forty, then eighty, then one-sixty, three-twenty, six-forty. That final doubling alone adds more than the first five combined. The end is everything.",
     "pose": "explain",
     "props": [
       {
+        "name": "snowball",
+        "label": "6 doublings in 40 yrs"
+      },
+      {
         "name": "chartup",
-        "label": "late gains > your salary"
+        "label": "10K→20→40→80→160→320"
       },
       {
-        "name": "coins",
-        "label": "the balance can double"
-      },
-      {
-        "name": "hourglass",
-        "label": "the last years compound hardest"
+        "name": "trophy",
+        "label": "the last double is the biggest"
       }
     ]
   },
   {
     "id": "s20",
-    "type": "character",
-    "narration": "There are two reasons later is cheaper. One, you have fewer retirement years left to fund. And two — the sneaky one — every extra year working is both a year you add money and a year your existing investments keep compounding. Those final working years are astonishingly powerful for your balance.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "fewer years to fund"
-      },
-      {
-        "name": "chartup",
-        "label": "+ a year of compounding"
-      },
-      {
-        "name": "coins",
-        "label": "the last years are huge"
-      }
-    ]
+    "type": "title",
+    "narration": "So why does a few percent matter so insanely much?",
+    "heading": "The Gap",
+    "kicker": "why rate is everything"
   },
   {
     "id": "s21",
-    "type": "title",
-    "narration": "But retiring early hides an expensive surprise most people forget.",
-    "heading": "The Gap",
-    "kicker": "healthcare before 65"
-  },
-  {
-    "id": "s22",
-    "type": "screenshot",
-    "narration": "In America, there's Medicare — a federal health insurance program for people age sixty-five or older. It's a lifeline. But notice the age: sixty-five. If you retire before then, you are on your own for health insurance, and that gap is brutally expensive.",
-    "sourceId": "wiki-medicare"
-  },
-  {
-    "id": "s49",
     "type": "character",
-    "narration": "The good news for early retirees: you have tools. Because marketplace health subsidies are based on your taxable income, a retiree living off savings can show low income on paper and qualify for substantial help. Managing your reported income becomes a genuine skill that can slash that healthcare bill dramatically.",
+    "narration": "Because compounding is exponential, not linear. The difference between eight and ten percent sounds tiny — just two points. But over forty years, that two percent can more than double your final balance. Small gaps in the rate don't add up over time; they multiply. That's the single most underestimated idea in all of personal finance.",
     "pose": "explain",
     "props": [
       {
-        "name": "medkit",
-        "label": "ACA subsidies by income"
+        "name": "percent",
+        "label": "8% vs 10%: 'just 2 points'"
       },
       {
-        "name": "calculator",
-        "label": "low taxable income = help"
+        "name": "chartup",
+        "label": "can double the ending"
       },
       {
-        "name": "shield",
-        "label": "manage income, cut the bill"
+        "name": "magnet",
+        "label": "gaps multiply, not add"
       }
     ]
+  },
+  {
+    "id": "s48",
+    "type": "callout",
+    "narration": "Put real numbers on that 'tiny' gap. Ten thousand dollars over forty years grows to about two hundred seventeen thousand at eight percent — but four hundred fifty-three thousand at ten. Two percentage points more than doubled the result. In compounding, a small edge isn't small. It's everything.",
+    "text": "$217K vs $453K",
+    "sub": "8% vs 10% on $10K over 40 years — a 2-point gap",
+    "icon": "magnet"
+  },
+  {
+    "id": "s22",
+    "type": "title",
+    "narration": "Which means the same force can quietly work against you.",
+    "heading": "The Dark Side",
+    "kicker": "fees compound too"
   },
   {
     "id": "s23",
     "type": "stage",
-    "narration": "This is the pre-Medicare gap, and it ambushes early retirees. Retire at fifty-five and you have a full ten years of buying your own health insurance before Medicare begins — easily tens of thousands of dollars a year for a couple. Any early-retirement plan that forgets this gap is dangerously incomplete.",
-    "motif": "healthcaregap",
-    "caption": "retire before 65 and you self-fund health insurance",
+    "narration": "Here's the part the finance industry hopes you never learn. Fees compound exactly like returns — just in reverse. A fund charging two percent a year instead of near-zero doesn't cost you two percent. Over a lifetime, it can quietly swallow a third to half of your entire final balance. The same math that builds you can bleed you.",
+    "motif": "ratefeedrag",
+    "caption": "a 2% fee can eat HALF your lifetime returns",
     "props": []
   },
   {
-    "id": "s50",
+    "id": "s49",
     "type": "character",
-    "narration": "Still, budget it honestly. A couple retiring in their fifties can easily face fifteen to twenty-five thousand dollars a year in health premiums and out-of-pocket costs until Medicare. Over a ten-year gap, that's a quarter-million dollars — a line item that can single-handedly push your retirement age a year or two later.",
+    "narration": "Here's the honest way to judge a fee. An advisor charging 'just one percent' sounds modest — but if the market returns seven percent, that fee is eating one-seventh of your entire return, every year, forever. Framed as a slice of your actual gains, a one-percent fee is enormous. Always ask what percent of returns it really is.",
     "pose": "explain",
     "props": [
       {
         "name": "warning",
-        "label": "$15-25K/yr in the gap"
+        "label": "'just 1%' of your money…"
       },
       {
-        "name": "receipt",
-        "label": "~$250K over 10 years"
+        "name": "percent",
+        "label": "…is 1/7 of a 7% return"
       },
       {
-        "name": "calendar",
-        "label": "can push your age later"
+        "name": "chartdown",
+        "label": "enormous, every year"
       }
     ]
   },
   {
     "id": "s24",
     "type": "character",
-    "narration": "So early retirees have to budget for that gap specifically — through a marketplace plan, a spouse's coverage, or a part-time job that includes benefits. It's not a reason to abandon early retirement, but it is a line item that can quietly add hundreds of thousands to the number you need.",
+    "narration": "This is why low-cost index funds are so beloved by people who understand the math. Shaving your fees from two percent down to a tenth of a percent can leave you with hundreds of thousands of dollars more at the end — for doing absolutely nothing except refusing to overpay. Cutting fees is a guaranteed raise on your returns.",
     "pose": "explain",
     "props": [
       {
-        "name": "medkit",
-        "label": "budget the gap"
+        "name": "chartup",
+        "label": "cheap index funds win"
       },
       {
-        "name": "shield",
-        "label": "marketplace or spouse plan"
+        "name": "coins",
+        "label": "2% → 0.1% = +$100Ks"
       },
       {
-        "name": "warning",
-        "label": "+$100Ks to your number"
+        "name": "smiley",
+        "label": "a guaranteed raise"
       }
     ]
   },
   {
     "id": "s25",
     "type": "title",
-    "narration": "And then the two psychological traps — one for each end of the dial.",
-    "heading": "The Traps",
-    "kicker": "too early, too late"
+    "narration": "Now the eternal question: what matters more, a higher rate or more time?",
+    "heading": "Time vs Rate",
+    "kicker": "the real winner"
   },
   {
     "id": "s26",
     "type": "stage",
-    "narration": "The late trap is 'one more year' syndrome. You actually have enough — but fear whispers 'just one more year' to feel safe, and then it whispers it again, and again. People work years past freedom, trading their healthiest time for money they'll never spend. At some point, more savings buys nothing but lost life.",
-    "motif": "oneyearsyndrome",
-    "caption": "the late trap: working past the finish line forever"
+    "narration": "Here's the surprise: time usually wins. Someone who starts at twenty-five earning a modest seven percent will often end up with more than someone who starts at forty earning a fat ten percent. Fifteen extra years of compounding beats a higher rate, because those early dollars get the most doublings. Starting early is the closest thing to a cheat code.",
+    "motif": "timevsrate",
+    "caption": "15 early years can beat a 3-point-higher return",
+    "props": []
   },
   {
-    "id": "s51",
+    "id": "s50",
     "type": "character",
-    "narration": "And 'one more year' isn't only about fear of money — it's about identity. For many, the job is who they are: the status, the purpose, the built-in friends. Retiring means rebuilding all of that from scratch, which is genuinely scary. The ones who retire happiest plan their time, not just their money.",
+    "narration": "The famous example seals it. One twin invests for only ten years in her twenties, then stops forever. The other waits, then invests for thirty straight years into her fifties. The early twin, who put in far less, usually ends up with more. Ten early years beat thirty late ones. Time is that powerful.",
     "pose": "explain",
     "props": [
       {
-        "name": "briefcase",
-        "label": "the job is an identity"
+        "name": "hourglass",
+        "label": "10 early years vs 30 late"
       },
       {
-        "name": "warning",
-        "label": "status, purpose, friends"
+        "name": "chartup",
+        "label": "the early saver wins"
       },
       {
-        "name": "smiley",
-        "label": "plan your time, not just money"
+        "name": "seedling",
+        "label": "start young, even briefly"
       }
     ]
   },
   {
     "id": "s27",
-    "type": "character",
-    "narration": "The early trap is sequence-of-returns risk. If a market crash hits in the first few years of retirement, while you're drawing down, it can permanently cripple a portfolio that would otherwise have lasted. Early retirees are especially exposed, because their money has to survive so many more years of market storms.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "a crash early = danger"
-      },
-      {
-        "name": "warning",
-        "label": "sequence-of-returns risk"
-      },
-      {
-        "name": "hourglass",
-        "label": "decades to survive"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "character",
-    "narration": "Luckily, sequence risk has defenses. Keep a year or two of spending in cash so you never sell stocks into a crash. Stay flexible — trim spending in down years. Some retirees use a 'bond tent,' holding extra bonds right around retirement. The goal is simple: survive the dangerous first few years intact.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "shield",
-        "label": "1-2 yrs cash buffer"
-      },
-      {
-        "name": "scale",
-        "label": "flex spending in down years"
-      },
-      {
-        "name": "chartup",
-        "label": "survive the first years"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "This is really the time value of money — the idea that there's a greater benefit to receiving a sum of money now rather than the identical sum later. A dollar today is worth more than a dollar tomorrow, precisely because today's dollar has more time to compound. Time, not timing, is the investor's greatest asset.",
+    "sourceId": "wiki-tvm"
   },
   {
     "id": "s28",
     "type": "character",
-    "narration": "And overshadowing the whole dial is longevity risk — the chance you live far longer than you planned. Retire at forty and your money might need to last fifty or sixty years. Running out at eighty-five is a real catastrophe. The longer your retirement, the more cushion, flexibility, and conservatism your plan demands.",
+    "narration": "So the most valuable thing a young person owns isn't money — it's decades. A twenty-year-old with almost nothing to invest holds something a rich fifty-year-old cannot buy at any price: time for compounding to work. Spend that gift early, and even small amounts grow monstrous. Waste it, and no later income fully makes up the loss.",
     "pose": "explain",
     "props": [
       {
-        "name": "cane",
-        "label": "you might live to 95+"
-      },
-      {
         "name": "hourglass",
-        "label": "money must last 50+ yrs"
+        "label": "youth owns decades"
       },
       {
-        "name": "shield",
-        "label": "build in a cushion"
+        "name": "seedling",
+        "label": "small amounts grow monstrous"
+      },
+      {
+        "name": "warning",
+        "label": "lost time can't be rebought"
       }
     ]
   },
   {
-    "id": "s53",
-    "type": "callout",
-    "narration": "And respect the longevity numbers. For a healthy sixty-five-year-old couple today, there's a very good chance at least one of them lives past ninety. Planning to only ninety can leave you dangerously short. A retirement plan that fails at eighty-eight isn't a plan — it's a slow-motion emergency.",
-    "text": "past 90",
-    "sub": "odds at least one of a 65-yr-old couple lives this long",
-    "icon": "cane"
+    "id": "s51",
+    "type": "character",
+    "narration": "But if you're starting later, do not despair — this is the trap that stops people cold. Even at fifty, you likely have twenty, thirty, maybe forty years of compounding ahead, because you'll live and invest well past retirement. The worst move at any age is to decide it's too late and do nothing. It never is.",
+    "pose": "explain",
+    "props": [
+      {
+        "name": "calendar",
+        "label": "starting at 50? still decades"
+      },
+      {
+        "name": "warning",
+        "label": "'too late' is the real trap"
+      },
+      {
+        "name": "smiley",
+        "label": "the worst move is nothing"
+      }
+    ]
   },
   {
     "id": "s29",
     "type": "title",
-    "narration": "So how do you actually choose your number on this dial?",
-    "heading": "Choosing",
-    "kicker": "the earliest you safely can"
+    "narration": "But there's a villain running this same math in the opposite direction.",
+    "heading": "The Enemy",
+    "kicker": "inflation"
   },
   {
     "id": "s30",
-    "type": "stage",
-    "narration": "Really, the whole dial is one trade-off: free years versus financial security. Retire at forty-five and you buy twenty extra years of freedom, but you need a mountain of money and carry real risk. Retire at sixty-five and the money is comfortable, with Social Security and Medicare — but those early years are gone. You're choosing which to maximize.",
-    "motif": "yearsfreevsyearssaving",
-    "caption": "free years vs security — you can't fully max both"
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "narration": "And listen to the regret data, because it's remarkably one-sided. People at the end of life rarely wish they'd worked more or saved a bit more. They wish they'd had more time — with family, for health, for the things money was only ever meant to buy. Almost nobody regrets retiring a year too early.",
-    "pose": "explain",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "nobody wishes they'd worked more"
-      },
-      {
-        "name": "hammock",
-        "label": "they wish for more time"
-      },
-      {
-        "name": "smiley",
-        "label": "early rarely regretted"
-      }
-    ]
+    "type": "screenshot",
+    "narration": "That villain is inflation — an increase in the average price of goods and services in terms of money. Inflation is compounding in reverse: it quietly eats the buying power of your money year after year, at its own compounding rate. Your investments aren't just racing to grow — they're racing to outrun this.",
+    "sourceId": "wiki-inflation"
   },
   {
     "id": "s31",
+    "type": "stage",
+    "narration": "And it's brutal. At three percent inflation, the value of your money is cut in half in about twenty-four years — by the same Rule of 72, running against you. This is why cash under the mattress isn't safe; it's slowly melting. To merely stand still, your money has to compound at least as fast as prices rise.",
+    "motif": "inflationnegcompound",
+    "caption": "inflation halves your money's value in ~24 years",
+    "props": []
+  },
+  {
+    "id": "s52",
     "type": "character",
-    "narration": "My honest take: aim for the earliest age you can hit without white-knuckling the money. For most diligent savers that lands somewhere in the late fifties to early sixties — early enough to enjoy real health and freedom, late enough that Social Security and Medicare are close enough to lean on.",
-    "pose": "present",
+    "narration": "This is why hoarding cash feels safe but isn't, and why bonds alone rarely cut it. Both struggle to beat inflation over the long run, so your real wealth slowly erodes. To truly outrun rising prices over decades, most people need to own a slice of the growing economy itself — which, in practice, means stocks.",
+    "pose": "explain",
     "props": [
       {
-        "name": "smiley",
-        "label": "earliest you safely can"
+        "name": "warning",
+        "label": "cash & bonds lag inflation"
       },
       {
-        "name": "calendar",
-        "label": "often late 50s–early 60s"
+        "name": "chartup",
+        "label": "own the growing economy"
       },
       {
-        "name": "hammock",
-        "label": "health + freedom + safety"
+        "name": "moneytree",
+        "label": "stocks beat it long-term"
       }
     ]
   },
   {
     "id": "s32",
     "type": "character",
-    "narration": "And the single biggest lever to move your age earlier isn't a higher income — it's your savings rate. Save fifteen percent and you're on a forty-year track. Save fifty percent and you can retire in under two decades. How much you keep, not how much you make, is what spins this dial toward freedom.",
-    "pose": "present",
+    "narration": "So the number that actually matters is your real return — your rate minus inflation. Earn ten percent while inflation runs three, and your real growth is seven. Earn one percent in a savings account while inflation runs three, and your real return is negative two. You're compounding, yes — but compounding backward.",
+    "pose": "explain",
     "props": [
       {
-        "name": "piggybank",
-        "label": "savings rate is the lever"
+        "name": "calculator",
+        "label": "real return = rate − inflation"
       },
       {
         "name": "chartup",
-        "label": "50% saved → ~17 years"
+        "label": "10% − 3% = +7%"
       },
       {
-        "name": "rockingchair",
-        "label": "spins the dial earlier"
+        "name": "chartdown",
+        "label": "1% − 3% = −2%"
       }
     ]
   },
   {
-    "id": "s55",
-    "type": "character",
-    "narration": "And drop the idea that retirement is a hard on-off switch. More and more people are choosing 'encore' careers — part-time, passion projects, consulting — that blend income with freedom. You can step off the treadmill at fifty-five into something lighter, rather than sprinting to sixty-seven and slamming on the brakes.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "encore / part-time careers"
-      },
-      {
-        "name": "smiley",
-        "label": "blend income + freedom"
-      },
-      {
-        "name": "rockingchair",
-        "label": "not an on-off switch"
-      }
-    ]
+    "id": "s53",
+    "type": "callout",
+    "narration": "And this is grounded in history, not hope. Over the last century, the broad US stock market has returned roughly seven percent a year after inflation — through wars, crashes, and recessions. That seven percent real return is the single most reliable wealth-building engine ordinary people have ever had access to.",
+    "text": "~7% real",
+    "sub": "the stock market's long-run return after inflation",
+    "icon": "chartup"
   },
   {
     "id": "s33",
-    "type": "character",
-    "narration": "Consider a 'coast' or part-time bridge, too. Many people hit a point where their investments will grow into enough on their own, so they downshift to part-time work that covers today's bills while the nest egg quietly finishes cooking. It's a gentle middle path between grinding full-time and fully stopping.",
-    "pose": "present",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "coast: let it finish growing"
-      },
-      {
-        "name": "briefcase",
-        "label": "part-time bridge"
-      },
-      {
-        "name": "smiley",
-        "label": "a gentle middle path"
-      }
-    ]
+    "type": "title",
+    "narration": "So what rate should you actually plan around?",
+    "heading": "Your Rate",
+    "kicker": "aim realistic"
   },
   {
     "id": "s34",
     "type": "character",
-    "narration": "And whatever age you pick, plan the claiming separately. You can retire at sixty and still delay Social Security to seventy, living off savings in between to lock in that bigger check for life. Retirement age and Social Security age are two different dials — and the savviest retirees tune them independently.",
+    "narration": "Plan around a realistic seven percent after inflation — the long-run reward of simply owning the whole stock market through low-cost index funds. Don't chase the fantasy of fifteen, and don't settle for the one percent that loses to inflation. Capture the market's return, keep your fees near zero, and let time do the heavy lifting.",
     "pose": "present",
     "props": [
       {
-        "name": "goldwatch",
-        "label": "retire ≠ claim age"
+        "name": "chartup",
+        "label": "aim for ~7% real"
       },
       {
-        "name": "calendar",
-        "label": "retire 60, claim 70"
+        "name": "percent",
+        "label": "own the whole market"
+      },
+      {
+        "name": "hourglass",
+        "label": "let time do the work"
+      }
+    ]
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "narration": "Two quick technical boosts. Reinvesting your dividends instead of spending them is a huge, underrated part of that historical return — it's compounding fuel. And always invest inside tax-sheltered accounts when you can, because taxes, like fees, quietly compound against you too. Shelter the money, reinvest everything, and the engine runs cleaner.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "reinvest dividends"
+      },
+      {
+        "name": "vault",
+        "label": "use tax-sheltered accounts"
       },
       {
         "name": "chartup",
-        "label": "two dials, tuned apart"
+        "label": "the engine runs cleaner"
       }
     ]
   },
   {
     "id": "s35",
     "type": "character",
-    "narration": "Because here's the real lesson of the whole dial: retirement isn't an age the government hands you — it's a math problem you solve. The day your investments can pay your bills forever, you're free, whether that's forty or seventy. Your job is simply to reach that day as early as you sanely can.",
-    "pose": "explain",
+    "narration": "And the three levers are simple: the rate, the time, and the amount you add. You can't control the market's rate, and you can't buy back lost time — so the one lever fully in your hands today is starting now, and adding consistently. Automate it, forget it, and let decades of doublings quietly make you wealthy.",
+    "pose": "present",
     "props": [
       {
-        "name": "calculator",
-        "label": "it's a math problem"
+        "name": "seedling",
+        "label": "start now, add consistently"
       },
       {
-        "name": "nestegg",
-        "label": "investments pay the bills"
+        "name": "calendar",
+        "label": "automate and forget"
       },
       {
-        "name": "hammock",
-        "label": "that day = freedom"
+        "name": "moneytree",
+        "label": "decades of doublings"
       }
     ]
   },
   {
-    "id": "s56",
+    "id": "s55",
     "type": "character",
-    "narration": "One last silent threat: inflation. Over a thirty or forty-year retirement, rising prices can cut your money's buying power in half or worse. That's why your nest egg has to keep partly invested for growth, not sit in cash — and why Social Security's inflation adjustment is quietly one of its most valuable features.",
-    "pose": "explain",
+    "narration": "And the hardest lever isn't math — it's behavior. Compounding only works if you leave it alone. The investors who win aren't the smartest; they're the ones who don't panic-sell in crashes and don't tinker out of boredom. Set it up, automate it, and then have the discipline to simply do nothing for decades.",
+    "pose": "present",
     "props": [
       {
-        "name": "chartdown",
-        "label": "inflation halves your dollars"
-      },
-      {
-        "name": "chartup",
-        "label": "stay partly invested"
-      },
-      {
         "name": "shield",
-        "label": "SS adjusts for inflation"
+        "label": "don't panic-sell"
+      },
+      {
+        "name": "calendar",
+        "label": "automate, then leave it"
+      },
+      {
+        "name": "smiley",
+        "label": "discipline beats genius"
       }
     ]
   },
   {
     "id": "s36",
     "type": "character",
-    "narration": "So find your twenty-five-times number, check it against each age, and build the plan backward from the life you want. Account for the healthcare gap, respect the risks, and don't let fear steal years you've already earned. The dial is yours to set.",
-    "pose": "present",
+    "narration": "Because here's the real lesson that ties this whole series together: wealth isn't usually built by a brilliant move or a lucky bet. It's built by an ordinary amount of money, compounding at a decent rate, for an extraordinary length of time. Boring, patient, and almost unstoppable.",
+    "pose": "explain",
     "props": [
       {
-        "name": "calendar",
-        "label": "build backward from the life"
+        "name": "snowball",
+        "label": "ordinary money"
       },
       {
-        "name": "medkit",
-        "label": "mind the healthcare gap"
+        "name": "percent",
+        "label": "a decent rate"
       },
       {
-        "name": "smiley",
-        "label": "the dial is yours"
+        "name": "hourglass",
+        "label": "an extraordinary time"
       }
     ]
   },
   {
     "id": "s37",
     "type": "character",
-    "narration": "Because the cruelest mistake isn't retiring a year too early — it's retiring years too late, with a full bank account and no health left to enjoy it. Money you can rebuild. The years between fifty-five and seventy-five, in good health, you absolutely cannot. Weigh the dial with that in mind.",
+    "narration": "So find your rate, respect the exponential curve, and start the clock today instead of tomorrow. The best time to let compounding begin was twenty years ago. The second best time, as the saying goes, is right now. Every single day you wait is a doubling you quietly give away.",
+    "pose": "present",
+    "props": [
+      {
+        "name": "clock",
+        "label": "start the clock today"
+      },
+      {
+        "name": "seedling",
+        "label": "the 2nd best time is now"
+      },
+      {
+        "name": "chartup",
+        "label": "each day = a lost doubling"
+      }
+    ]
+  },
+  {
+    "id": "s56",
+    "type": "character",
+    "narration": "And if you really want to feel the power, do it for someone young. A small amount invested for a baby, left for sixty-five years, can compound into millions by the time they retire. Teaching a child about compounding early is one of the greatest financial gifts you can possibly give.",
     "pose": "explain",
     "props": [
       {
-        "name": "hourglass",
-        "label": "too late is the real risk"
+        "name": "seedling",
+        "label": "invest for a child"
       },
       {
-        "name": "cane",
-        "label": "health doesn't come back"
+        "name": "moneytree",
+        "label": "65 years → millions"
       },
       {
-        "name": "scale",
-        "label": "weigh time, not just money"
+        "name": "smiley",
+        "label": "the greatest gift"
       }
     ]
   },
   {
     "id": "s38",
     "type": "character",
-    "narration": "So run your number today, pick your age, and start spinning the dial toward it with every dollar you save. The sooner you know the target, the sooner you reach it.",
-    "pose": "present",
+    "narration": "That wraps our entire tour of money, level by level — from net worth to rent, debt to lottery wins, and now the quiet engine underneath it all. Understand compounding, and you understand the one force that turns small, patient habits into a genuinely free life.",
+    "pose": "explain",
     "props": [
       {
-        "name": "calculator",
-        "label": "run your number today"
+        "name": "moneytree",
+        "label": "the engine under it all"
       },
       {
-        "name": "rockingchair",
-        "label": "pick your age"
+        "name": "snowball",
+        "label": "small habits"
       },
       {
-        "name": "chartup",
-        "label": "spin toward it"
+        "name": "smiley",
+        "label": "a genuinely free life"
       }
     ]
   },
   {
     "id": "s39",
     "type": "character",
-    "narration": "If this helped you see retirement as a dial you control, hit subscribe — and tell me which number you want me to break down next.",
+    "narration": "If this finally made compound interest click, hit subscribe — and tell me which number you want me to break down next.",
     "pose": "celebrate",
     "expression": "happy",
     "props": [
       {
-        "name": "goldwatch",
+        "name": "snowball",
         "label": "which number next?"
       }
     ]

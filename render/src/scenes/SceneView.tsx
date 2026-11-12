@@ -5928,6 +5928,89 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={110} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>free years vs security — you can't max both</text>
       </svg>
     );
+  } else if (m === "rateladdergrowth") {
+    // What $10K becomes over 40 years at each rate.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const bars: [string, string, number, string][] = [["1%", "$15K", 6, parch], ["3%", "$33K", 13, "#e8d7bf"], ["6%", "$103K", 40, gold], ["8%", "$217K", 84, "#9cc47f"], ["10%", "$453K", 175, "#3a9d53"], ["15%", "$2.7M", 240, green]];
+    const base = 440;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$10,000 over 40 years, by rate</text>
+        <RLine x1={90} y1={base} x2={910} y2={base} stroke={ink} strokeWidth={3} />
+        {bars.map(([rate, amt, h, col], i) => { const x = 150 + i * 125; const hh = h * draw; return <g key={i}><rect x={x - 48} y={base - hh} width={96} height={hh} rx={5} fill={col as string} stroke={ink} strokeWidth={3.5} /><text x={x} y={base + 24} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{rate}</text><text x={x} y={base - hh - 10} fontSize={12} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{amt}</text></g>; })}
+        <text x={VW / 2} y={base + 48} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a few % points = a life-changing gap</text>
+      </svg>
+    );
+  } else if (m === "hockeystickcurve") {
+    // The exponential hockey-stick of compounding.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 440, yTop = 110;
+    const f = (t: number) => y0 - (y0 - yTop) * (Math.exp(2.6 * t) - 1) / (Math.exp(2.6) - 1);
+    const seg = Array.from({ length: 48 }).map((_, i) => { const t = (i / 47) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the hockey stick of compounding</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg} fill="none" stroke={green} strokeWidth={6} />
+        <text x={x0 + 160} y={y0 - 18} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>slow, boring start…</text>
+        <text x={x1 - 110} y={f(0.82 * draw) - 16} fontSize={14} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>…then it explodes</text>
+        <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>time →   (most growth comes at the very end)</text>
+      </svg>
+    );
+  } else if (m === "doublingtime") {
+    // Rule of 72: doubling time by rate.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const rows: [string, string][] = [["1%", "72 years"], ["3%", "24 years"], ["6%", "12 years"], ["10%", "7 years"], ["15%", "~5 years"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the Rule of 72: time to double</text>
+        <text x={VW / 2} y={100} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>72 ÷ your rate = years to double your money</text>
+        {rows.map(([rate, yrs], i) => { const y = 130 + i * 62; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={300} y={y} width={150} height={48} rx={8} fill={gold} stroke={ink} strokeWidth={3} /><text x={375} y={y + 31} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{rate}</text><path d={`M460 ${y + 24} l40 0 m0 0 l-12 -8 m12 8 l-12 8`} stroke={ink} strokeWidth={3} fill="none" /><rect x={510} y={y} width={190} height={48} rx={8} fill={green} stroke={ink} strokeWidth={3} /><text x={605} y={y + 31} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{yrs}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "ratefeedrag") {
+    // Fees compound against you — the dark side.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 430, yTop = 130;
+    const full = (t: number) => y0 - (y0 - yTop) * (Math.exp(2.3 * t) - 1) / (Math.exp(2.3) - 1);
+    const afterFee = (t: number) => y0 - (y0 - yTop) * 0.5 * (Math.exp(2.3 * t) - 1) / (Math.exp(2.3) - 1);
+    const segA = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${full(t)}`; }).join(" ");
+    const segB = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${afterFee(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">fees compound against you, too</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={segA} fill="none" stroke={green} strokeWidth={6} />
+        <path d={segB} fill="none" stroke={red} strokeWidth={6} />
+        <text x={x1 - 60} y={full(1) - 12} fontSize={13} fontWeight={900} fill={green} textAnchor="end" fontFamily={sans}>no fees</text>
+        <text x={x1 - 60} y={afterFee(1) + 22} fontSize={13} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>−2% fee</text>
+        <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a 2% fee can quietly eat HALF your lifetime returns</text>
+      </svg>
+    );
+  } else if (m === "timevsrate") {
+    // Starting early beats a higher rate later.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">time usually beats rate</text>
+        <g transform="translate(300 0)"><rect x={-95} y={430 - 250 * draw} width={190} height={250 * draw} rx={6} fill={green} stroke={ink} strokeWidth={4} /><text x={0} y={456} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>starts at 25, 7%</text><text x={0} y={418 - 250 * draw} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">more</text></g>
+        <g transform="translate(680 0)"><rect x={-95} y={430 - 150 * draw} width={190} height={150 * draw} rx={6} fill={gold} stroke={ink} strokeWidth={4} /><text x={0} y={456} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>starts at 40, 10%</text><text x={0} y={418 - 150 * draw} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">less</text></g>
+        <text x={VW / 2} y={115} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>15 extra years can beat a 3-point-higher return</text>
+      </svg>
+    );
+  } else if (m === "inflationnegcompound") {
+    // Inflation as compounding working against you.
+    const shrink = interpolate(frame, [fps * 0.5, fps * 2.6], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">inflation: compounding in reverse</text>
+        <g transform="translate(280 290)"><circle r={96} fill={gold} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>$100 today</text><text y={18} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>full value</text></g>
+        <path d="M395 290 l90 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(720 290)"><circle r={96 - 44 * shrink} fill={red} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>in 30 yrs</text><text y={18} fontSize={14} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>~$40</text></g>
+        <text x={VW / 2} y={470} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>3% inflation halves your money's value in ~24 years</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
