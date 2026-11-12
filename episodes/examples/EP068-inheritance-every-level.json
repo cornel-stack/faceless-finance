@@ -1,0 +1,972 @@
+{
+  "id": "EP068",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Inheritance: $10K to $100M (And What the Government Takes)",
+  "slug": "every-level-of-inheritance",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP068 — Every Level series (row 58). Inheritance tiers $10K→$100M and what the government ACTUALLY takes. Big reveal: almost all inheritances are FEDERALLY TAX-FREE (estate tax only above ~$13.6M exemption; no federal inheritance tax). Covers estate vs inheritance tax, the exemption cliff (~40% above), stepped-up basis loophole, the inherited-IRA income-tax trap, gifting/trusts to dodge it, the great wealth transfer. 6 new motifs (estatetaxcliff/inheritancetiers/estatevsinheritance/steppedupbasis/dodgetheestatetax/iratax) + doodles gift/will. Sources: Inheritance/Inheritance tax/Estate tax US/Stepped-up basis/Gift tax. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Someone leaves you money. The first panicked question is always the same: how much does the government take? The answer shocks almost everyone — because for the vast majority of people, the government takes exactly nothing. The famous 'death tax' is one of the most misunderstood ideas in all of money.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "will",
+          "label": "you inherit money"
+        },
+        {
+          "name": "taxform",
+          "label": "how much is taxed?"
+        },
+        {
+          "name": "smiley",
+          "label": "usually… nothing"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that ends most of the fear. The federal estate tax only kicks in on estates worth more than about thirteen point six million dollars per person. Below that line, the federal government takes zero. Which means over ninety-nine percent of inheritances are completely federally tax-free.",
+      "text": "$13,600,000",
+      "sub": "the estate-tax exemption — below it, $0 federal tax",
+      "icon": "capitol"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "That thirteen-point-six-million exemption is historically enormous — it was roughly doubled in recent years. But it's set to drop by about half around 2026, unless the law changes. Even then, it'll sit near seven million, so the vast majority of people will still owe exactly nothing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "historically huge"
+        },
+        {
+          "name": "calendar",
+          "label": "set to halve ~2026"
+        },
+        {
+          "name": "smiley",
+          "label": "most still pay $0"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we're climbing every level of inheritance — from ten thousand dollars to a hundred million — and showing exactly what the government really takes at each one. The myths, the brutal exceptions for the ultra-rich, and the giant loophole that lets fortunes pass almost untouched.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gift",
+          "label": "$10K → $100M"
+        },
+        {
+          "name": "scale",
+          "label": "what's really taxed"
+        },
+        {
+          "name": "vault",
+          "label": "the big loophole"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "the government takes half of any inheritance",
+      "memeBottom": "almost no one pays estate tax — and the rich dodge even that",
+      "narration": "Because the story everyone believes — that the taxman grabs a huge chunk of whatever you inherit — is almost completely backwards. The real system is stranger, more generous to most, and far more generous to the rich, than you'd ever guess."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the crucial distinction nobody explains.",
+      "heading": "Estate vs. Inheritance",
+      "kicker": "who actually pays"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Start with inheritance itself — the practice of receiving private property, money, and assets upon the death of an individual. What you receive is the inheritance. The question is who, if anyone, gets taxed on it.",
+      "sourceId": "wiki-inheritance"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "There are two completely different taxes people confuse. An estate tax is paid by the estate of the person who died, before anything reaches you. An inheritance tax is paid by you, the heir, after you receive it. They sound identical, but who pays — and whether it applies at all — is totally different.",
+      "motif": "estatevsinheritance",
+      "caption": "the US has a federal ESTATE tax — and no federal inheritance tax"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "narration": "In the US, the big one is the estate tax — a federal tax on the transfer of the estate of a person who dies. Crucially, there is no federal inheritance tax at all. As the heir, you almost never owe the federal government a cent on what you receive.",
+      "sourceId": "wiki-estatetax"
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "narration": "Those handful of states with their own inheritance tax are the exception, not the rule — places like Pennsylvania and New Jersey. And even there, money left to a spouse or children is usually taxed lightly or not at all. It's distant relatives and friends who pay the most.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "only a few states"
+        },
+        {
+          "name": "couple",
+          "label": "family: little or none"
+        },
+        {
+          "name": "warning",
+          "label": "distant heirs pay"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "screenshot",
+      "narration": "A handful of states do levy their own inheritance tax — a tax paid by a person who inherits money or property — but only six states have one, and close family is often exempt or lightly taxed. For most people, in most places, it simply doesn't apply.",
+      "sourceId": "wiki-inhtax"
+    },
+    {
+      "id": "s10",
+      "type": "title",
+      "narration": "Now the single most important feature of the whole system: the cliff.",
+      "heading": "The Exemption Cliff",
+      "kicker": "$0, then suddenly 40%"
+    },
+    {
+      "id": "s11",
+      "type": "stage",
+      "narration": "Picture a cliff. Every dollar of an estate below about thirteen point six million is taxed at zero percent by the federal government. But every dollar above that line is taxed at a brutal rate of up to forty percent. Nothing, nothing, nothing — then suddenly, nearly half.",
+      "motif": "estatetaxcliff",
+      "caption": "below the line: nothing. above it: nearly half."
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "And even above the line, it works like income tax: only the dollars over the exemption get taxed, not the whole estate. An estate of fourteen million isn't taxed on all fourteen — just on the roughly four hundred thousand that pokes above the line.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "only dollars ABOVE"
+        },
+        {
+          "name": "percent",
+          "label": "not the whole estate"
+        },
+        {
+          "name": "smiley",
+          "label": "the first $13.6M is safe"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "And for a married couple, that exemption doubles to over twenty-seven million dollars. So a family can pass an enormous fortune — a successful business, multiple homes, millions in investments — to their kids, and owe the federal government absolutely nothing in estate tax.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "couples: ~$27M"
+        },
+        {
+          "name": "house",
+          "label": "homes, business, investments"
+        },
+        {
+          "name": "smiley",
+          "label": "$0 federal estate tax"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "And couples get a bonus called portability. When the first spouse dies, the survivor can inherit their unused exemption — stacking the two together. It's why a well-advised couple can shield over twenty-seven million dollars with almost no effort at all.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "portability"
+        },
+        {
+          "name": "shield",
+          "label": "stack both exemptions"
+        },
+        {
+          "name": "vault",
+          "label": "~$27M shielded"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So let's climb the levels and see what each inheritance really means.",
+      "heading": "The Levels",
+      "kicker": "$10K to $100M"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "narration": "Here's the whole ladder. Ten thousand dollars: tax-free. A hundred thousand: tax-free. A million: tax-free. Even ten million: still under the exemption, federally tax-free. It's only at a hundred million — far above the line — that the government finally takes a giant bite.",
+      "motif": "inheritancetiers",
+      "caption": "what the government takes"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "At the everyday levels — ten thousand, a hundred thousand, even a million dollars — the money lands in your account whole. No federal estate tax, no federal inheritance tax. The thing most people dread simply never happens. The inheritance arrives intact.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gift",
+          "label": "$10K-$1M"
+        },
+        {
+          "name": "moneybag",
+          "label": "lands whole"
+        },
+        {
+          "name": "smiley",
+          "label": "no federal tax"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "narration": "Even a ten-million-dollar inheritance usually passes federally tax-free, because it sits just under that exemption. This is why the 'death tax' is, for almost everyone, a myth. You could inherit a genuine fortune and owe the federal government precisely nothing.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "$10M, still under the line"
+        },
+        {
+          "name": "capitol",
+          "label": "$0 federal estate tax"
+        },
+        {
+          "name": "scale",
+          "label": "the 'death tax' myth"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "One catch at the higher levels: a dozen states levy their own estate tax, often with far lower thresholds — some as low as one or two million dollars. So an inheritance that's 'tax-free' federally can still get taxed by the state. Geography matters, even in death.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "state estate taxes"
+        },
+        {
+          "name": "warning",
+          "label": "thresholds as low as $1-2M"
+        },
+        {
+          "name": "scale",
+          "label": "geography matters"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "character",
+      "narration": "It's only at the very top — a hundred million dollars — that the estate tax roars to life. On an estate that size, with roughly eighty-six million above the exemption taxed near forty percent, the government can take over thirty million dollars. Finally, the famous tax actually bites.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "$100M estate"
+        },
+        {
+          "name": "taxform",
+          "label": "~40% above the line"
+        },
+        {
+          "name": "capitol",
+          "label": "$30M+ to the govt"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "title",
+      "narration": "But even the richest have a giant loophole — and it quietly saves everyone else, too.",
+      "heading": "The Loophole",
+      "kicker": "stepped-up basis"
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "narration": "It's called stepped-up basis. When you inherit an asset, its cost basis resets to its market value at the time the benefactor dies. That one rule quietly erases a lifetime of capital gains taxes, in an instant.",
+      "sourceId": "wiki-steppedup"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "narration": "Watch the magic. Grandpa bought a stock for a hundred thousand dollars. By the time he dies, it's worth a million. Normally, selling that would trigger tax on nine hundred thousand of gains. But you inherit it at the stepped-up value — a million. Sell it, and the taxable gain is zero.",
+      "motif": "steppedupbasis",
+      "caption": "heirs inherit at today's value — the lifetime of gains vanishes, untaxed"
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "There's a key catch to that stepped-up basis: it only happens at death. Give the very same stock away while you're alive, and your heir inherits your old, low basis — and the full tax bill along with it. Dying, strangely enough, is the tax-efficient move.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "will",
+          "label": "stepped-up only at death"
+        },
+        {
+          "name": "gift",
+          "label": "gift early = old basis"
+        },
+        {
+          "name": "scale",
+          "label": "dying is tax-smart"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "narration": "This is one of the most powerful breaks in the entire tax code — and it's the final piece of the 'buy, borrow, die' strategy the wealthy use. Hold appreciating assets until death, and all those decades of gains pass to your heirs completely tax-free. The gains simply disappear.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "decades of gains…"
+        },
+        {
+          "name": "vault",
+          "label": "…vanish at death"
+        },
+        {
+          "name": "handshake",
+          "label": "'buy, borrow, die'"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "This loophole is hugely controversial. Critics say it lets the biggest fortunes escape capital-gains tax forever, across generations. There are regular proposals to close it — so it may not last. But for now, it remains one of the single greatest gifts in the entire tax code.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "hugely debated"
+        },
+        {
+          "name": "chartup",
+          "label": "gains escape forever"
+        },
+        {
+          "name": "warning",
+          "label": "may not last"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "title",
+      "narration": "So if inheritances are mostly tax-free, where does the taxman actually show up?",
+      "heading": "The Real Trap",
+      "kicker": "inherited retirement accounts"
+    },
+    {
+      "id": "s23",
+      "type": "stage",
+      "narration": "Here's the tax most heirs actually face. A cash inheritance or a house? Tax-free. But inherit a traditional 401(k) or IRA, and it's completely different. Every dollar you pull out is taxed as your ordinary income — and new rules usually force you to empty the whole account within ten years.",
+      "motif": "iratax",
+      "caption": "a cash inheritance is tax-free; an inherited IRA is not"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "One bright exception inside that IRA trap: a Roth account. Because the tax was already paid up front, an inherited Roth comes out completely tax-free. So if you're leaving retirement money behind, a Roth is a far kinder gift to your heirs than a traditional account.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "inherited Roth"
+        },
+        {
+          "name": "smiley",
+          "label": "100% tax-free"
+        },
+        {
+          "name": "gift",
+          "label": "a kinder gift"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "narration": "This catches families completely off guard. Inherit a large retirement account while you're in your peak earning years, drain it over a decade, and it can push you into the highest tax brackets — handing a big chunk straight to the government. The account type matters more than the amount.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "warning",
+          "label": "drains over 10 years"
+        },
+        {
+          "name": "taxform",
+          "label": "taxed as income"
+        },
+        {
+          "name": "scale",
+          "label": "account type > amount"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "And spouses get special treatment everywhere. A surviving spouse can inherit a retirement account and treat it as their own, with none of the brutal ten-year drain rule. Those harsh rules mostly fall on children and other non-spouse heirs. Marriage, even here, has its privileges.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "couple",
+          "label": "spouses: special rules"
+        },
+        {
+          "name": "smiley",
+          "label": "no 10-year drain"
+        },
+        {
+          "name": "warning",
+          "label": "kids hit harder"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "Now, for the ultra-rich who do face that forty-percent cliff — how do they escape it?",
+      "heading": "Dodging the 40%",
+      "kicker": "trusts, gifts, and charity"
+    },
+    {
+      "id": "s26",
+      "type": "screenshot",
+      "narration": "One tool is the gift tax — the tax on money or property that one living person gives to another. You can give away money while alive to shrink your estate, using a yearly exemption, chipping the fortune down below the taxable line over time.",
+      "sourceId": "wiki-gifttax"
+    },
+    {
+      "id": "s50",
+      "type": "callout",
+      "narration": "And almost nobody uses the simplest tool of all: the annual gift exclusion. You can give any person around eighteen thousand dollars a year, to as many people as you like, completely tax-free, without ever touching your lifetime exemption. A quiet, powerful way to pass money early.",
+      "text": "$18,000",
+      "sub": "you can gift this per person, per year, tax-free",
+      "icon": "gift"
+    },
+    {
+      "id": "s27",
+      "type": "stage",
+      "narration": "The rich combine three moves. They gift money away each year, tax-free. They donate to charity, which is fully deductible. And above all, they use trusts to move assets legally outside their taxable estate. Shrink the estate below the line, and the forty-percent tax quietly shrinks too.",
+      "motif": "dodgetheestatetax",
+      "caption": "shrink the taxable estate, shrink the tax"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "The trusts have exotic names — irrevocable trusts, G-R-A-Ts, dynasty trusts — but they all do one thing: move assets out of your taxable estate while keeping them in the family. It's completely legal, wildly effective, and the entire reason estate lawyers exist.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "vault",
+          "label": "irrevocable & dynasty trusts"
+        },
+        {
+          "name": "handshake",
+          "label": "legal & effective"
+        },
+        {
+          "name": "capitol",
+          "label": "assets leave the estate"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "narration": "This is why, in practice, the estate tax raises surprisingly little money. The families it targets can afford the lawyers to plan around it. So the 'tax on the rich' is often quietly sidestepped by the very richest, while landing mostly on the merely-wealthy who didn't plan ahead.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the richest plan around it"
+        },
+        {
+          "name": "vault",
+          "label": "trusts & lawyers"
+        },
+        {
+          "name": "warning",
+          "label": "it raises little"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's proof the system barely bites. The federal estate tax raises less than one percent of all government revenue. It's a 'tax on the rich' that the rich have largely learned to sidestep — collecting, in the end, far more fear than actual money.",
+      "text": "<1%",
+      "sub": "of federal revenue comes from the estate tax",
+      "icon": "capitol"
+    },
+    {
+      "id": "s29",
+      "type": "title",
+      "narration": "Step back, and all of this is about to matter more than ever.",
+      "heading": "The Great Transfer",
+      "kicker": "the biggest handover ever"
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "We're at the start of the largest wealth transfer in human history. Over the coming decades, the older generations will pass tens of trillions of dollars down to their heirs. For millions of families, an inheritance will be the single biggest financial event of their lives.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneytree",
+          "label": "tens of trillions"
+        },
+        {
+          "name": "couple",
+          "label": "passing down"
+        },
+        {
+          "name": "globe",
+          "label": "the biggest transfer ever"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "Put a real number on the handover that's coming. Analysts estimate around eighty-four trillion dollars will pass from older generations down to their heirs over the next couple of decades — the 'great wealth transfer.' It will quietly reshape who holds money in this country.",
+      "text": "$84 trillion",
+      "sub": "the 'great wealth transfer' now underway",
+      "icon": "moneytree"
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "narration": "But here's the sobering flip side. Most of that wealth is concentrated at the very top. For the average family, the inheritance may be modest — or nothing at all. The great transfer will make some heirs instantly rich, and leave most exactly where they started.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crown",
+          "label": "concentrated at the top"
+        },
+        {
+          "name": "scale",
+          "label": "most inherit little"
+        },
+        {
+          "name": "warning",
+          "label": "it widens the gap"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And it's a powerful engine of inequality. The wealthy don't just earn more — they inherit more, tax-advantaged, generation after generation. A large share of the richest families' fortunes was handed to them, not built. Inheritance quietly stacks the deck before the game even starts.",
+      "pose": "explain",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "crown",
+          "label": "the rich inherit more"
+        },
+        {
+          "name": "chartup",
+          "label": "tax-advantaged, stacked"
+        },
+        {
+          "name": "warning",
+          "label": "it widens the gap"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Federal estate tax owed by estate size ($M)",
+      "unit": "$M",
+      "narration": "Here's the whole system in one chart. On a one-million, ten-million, even thirteen-million-dollar estate, the federal tax is zero. It's only when you blow past the exemption — at fifty million, a hundred million — that the tax suddenly appears and grows fast.",
+      "data": [
+        {
+          "label": "$1M",
+          "value": 0
+        },
+        {
+          "label": "$13M",
+          "value": 0
+        },
+        {
+          "label": "$50M",
+          "value": 15
+        },
+        {
+          "label": "$100M",
+          "value": 35
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "So what should you actually do — whether you're inheriting, or leaving something behind?",
+      "heading": "The Playbook",
+      "kicker": "for heirs and givers"
+    },
+    {
+      "id": "s34",
+      "type": "character",
+      "narration": "If you're inheriting a normal amount, relax about the estate tax — you almost certainly owe nothing. Instead, watch the one real trap: inherited retirement accounts. Get advice before you drain them, so you don't accidentally hand a fortune to the taxman over those ten years.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "no estate tax to fear"
+        },
+        {
+          "name": "warning",
+          "label": "mind inherited IRAs"
+        },
+        {
+          "name": "handshake",
+          "label": "get advice first"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And a serious warning for heirs: a sudden inheritance can vanish shockingly fast. Studies suggest a huge share of inherited money is spent or lost within just a few years. 'Sudden wealth' overwhelms people. Slow down, park it somewhere safe, and make no big decisions for a full year.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "a sudden windfall"
+        },
+        {
+          "name": "chartdown",
+          "label": "often gone in years"
+        },
+        {
+          "name": "shield",
+          "label": "slow down, park it"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "If you're leaving money behind, the gifts are simple. Hold your appreciating assets until death, so your heirs get that magical stepped-up basis. Keep your beneficiaries updated on every account. And if your estate is large, see an estate lawyer — trusts can save your family a fortune.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "hold assets for stepped-up basis"
+        },
+        {
+          "name": "will",
+          "label": "update beneficiaries"
+        },
+        {
+          "name": "vault",
+          "label": "big estate? use trusts"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "One elegant tool for givers: life insurance. A payout generally passes to your beneficiaries income-tax-free, and can be structured entirely outside your estate. For many families, it's the cleanest way to leave a tax-free sum — or to cover an estate-tax bill without selling the family business.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "shield",
+          "label": "life insurance"
+        },
+        {
+          "name": "smiley",
+          "label": "pays out tax-free"
+        },
+        {
+          "name": "handshake",
+          "label": "a clean inheritance"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "And whatever the size, write a will. Die without one, and the state decides who gets everything, through a slow, public, expensive process called probate. A simple will is one of the kindest, cheapest gifts you can ever leave the people you love.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "will",
+          "label": "write a will"
+        },
+        {
+          "name": "warning",
+          "label": "no will = the state decides"
+        },
+        {
+          "name": "handshake",
+          "label": "a gift to your family"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And here's a crucial, often-fatal detail: the beneficiary you named on an account overrides your will. An ex-spouse left on an old 401(k) will inherit it, no matter what your will says. Check every beneficiary designation — it's exactly where fortunes go tragically to the wrong person.",
+      "pose": "present",
+      "expression": "worried",
+      "props": [
+        {
+          "name": "will",
+          "label": "beneficiaries beat the will"
+        },
+        {
+          "name": "warning",
+          "label": "an old ex could inherit"
+        },
+        {
+          "name": "scissors",
+          "label": "update them all"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the real lesson of inheritance is this: for almost everyone, the government is not the villain. The tax you feared mostly isn't there. The dangers that are real — the IRA trap, dying without a will, family conflict — are the quiet ones nobody warns you about.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "the tax you feared isn't there"
+        },
+        {
+          "name": "warning",
+          "label": "the real traps are quiet"
+        },
+        {
+          "name": "scale",
+          "label": "plan for those instead"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So the next time you hear someone rage about the government seizing half of every inheritance, you'll know the truth. For nearly everyone, inheritances pass tax-free. And for the few who face the tax, an army of lawyers is usually already quietly planning the escape.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "most pass tax-free"
+        },
+        {
+          "name": "vault",
+          "label": "the rich plan around it"
+        },
+        {
+          "name": "smiley",
+          "label": "now you know the truth"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "And maybe the deepest lesson of all: consider giving with a warm hand, not a cold one. Helping your family while you're alive to see it — a home deposit, a tuition bill — is often worth far more than any inheritance. Money given in time can change a life more than money left behind.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "gift",
+          "label": "give while alive"
+        },
+        {
+          "name": "couple",
+          "label": "help them now"
+        },
+        {
+          "name": "smiley",
+          "label": "a warm hand"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this cleared up what the government really takes, hit subscribe — and tell me which number you want me to pull apart next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "gift",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-inheritance",
+      "name": "Inheritance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inheritance",
+      "quote": "the practice of receiving private property"
+    },
+    {
+      "id": "wiki-estatetax",
+      "name": "Estate tax in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States",
+      "quote": "a federal tax on the transfer of the estate"
+    },
+    {
+      "id": "wiki-inhtax",
+      "name": "Inheritance tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inheritance_tax",
+      "quote": "a tax paid by a person who inherits money or property"
+    },
+    {
+      "id": "wiki-steppedup",
+      "name": "Stepped-up basis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stepped-up_basis",
+      "quote": "its market value at the time the benefactor dies"
+    },
+    {
+      "id": "wiki-gifttax",
+      "name": "Gift tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gift_tax",
+      "quote": "the tax on money or property that one living person"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Inheritance: $10K to $100M (And What the Government Takes)",
+    "alts": [
+      "What the Government ACTUALLY Takes From Your Inheritance",
+      "The 'Death Tax' Myth: Who Really Pays on $10K to $100M"
+    ],
+    "hook": "Someone leaves you money — how much does the government take? The answer shocks everyone: for over 99% of people, nothing. This is every level of inheritance, by the numbers, from $10K to $100M: the difference between estate tax (paid by the estate) and inheritance tax (paid by you), the exemption cliff (zero federal tax below ~$13.6M, then up to 40% above), the giant stepped-up-basis loophole that erases a lifetime of capital gains, the REAL trap most heirs hit (inherited traditional IRAs taxed as income), how the ultra-rich dodge the 40% with trusts and gifts, and the great wealth transfer now underway. Fully cited.",
+    "bullets": [
+      "Estate tax vs inheritance tax — who actually pays",
+      "The cliff: $0 federal tax below ~$13.6M, up to 40% above",
+      "Why 99%+ of inheritances are completely tax-free",
+      "Stepped-up basis: the loophole that erases capital gains",
+      "The real trap: inherited IRAs taxed as income over 10 years",
+      "How the ultra-rich dodge the 40% with trusts and gifts"
+    ],
+    "tags": [
+      "inheritance tax explained",
+      "estate tax",
+      "death tax myth",
+      "stepped up basis",
+      "inherited ira rules",
+      "what the government takes",
+      "estate planning",
+      "gift tax",
+      "wealth transfer",
+      "trusts explained",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#inheritance",
+      "#estatetax",
+      "#personalfinance",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "INHERITANCE",
+      "hookBot": "WHAT THEY TAKE",
+      "napkinNumber": "under $13.6M",
+      "napkinSub": "= $0 federal tax",
+      "deco": "gift"
+    },
+    "chapters": [
+      [
+        "the crucial distinction nobody explains",
+        "Estate vs inheritance"
+      ],
+      [
+        "the single most important feature",
+        "The exemption cliff"
+      ],
+      [
+        "see what each inheritance really means",
+        "The levels"
+      ],
+      [
+        "even the richest have a giant loophole",
+        "The loophole"
+      ],
+      [
+        "where does the taxman actually show up",
+        "The real trap"
+      ],
+      [
+        "how do they escape it",
+        "Dodging the 40%"
+      ],
+      [
+        "the largest wealth transfer in human history",
+        "The great transfer"
+      ],
+      [
+        "whether you're inheriting, or leaving something behind",
+        "The playbook"
+      ]
+    ]
+  }
+}

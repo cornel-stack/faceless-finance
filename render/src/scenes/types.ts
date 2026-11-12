@@ -198,7 +198,9 @@ export interface StageScene extends Base {
     // EP066 (every level of millionaire) additions:
     | "millionvsbillionscale" | "secondsscale" | "whatitbuys" | "timetospend" | "millionairerarity" | "millionairetiers"
     // EP067 (what each credit score costs) additions:
-    | "scorebands" | "fivefactors" | "ratebyband" | "lifetimecost" | "creditspiral" | "climbthebands";
+    | "scorebands" | "fivefactors" | "ratebyband" | "lifetimecost" | "creditspiral" | "climbthebands"
+    // EP068 (every level of inheritance) additions:
+    | "estatetaxcliff" | "inheritancetiers" | "estatevsinheritance" | "steppedupbasis" | "dodgetheestatetax" | "iratax";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

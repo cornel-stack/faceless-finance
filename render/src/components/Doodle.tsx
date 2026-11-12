@@ -125,6 +125,8 @@ export type DoodleName =
   | "moneystack" | "stadium"
   // EP067 (what each credit score costs) additions:
   | "reportcard" | "trafficlight"
+  // EP068 (every level of inheritance) additions:
+  | "gift" | "will"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2114,6 +2116,29 @@ function shape(name: DoodleName): React.ReactNode {
           <RCircle cx={50} cy={28} d={14} fill={RED} strokeWidth={1.4} />
           <RCircle cx={50} cy={50} d={14} fill={YELLOW} strokeWidth={1.4} />
           <RCircle cx={50} cy={72} d={14} fill={GREEN} strokeWidth={1.4} />
+        </>
+      );
+    case "gift":
+      // A wrapped gift — gifting to reduce the estate.
+      return (
+        <>
+          <RRect x={24} y={40} w={52} h={44} fill={RED} strokeWidth={SW} />
+          <RRect x={20} y={32} w={60} h={12} fill={GOLD} strokeWidth={SW} />
+          <RLine x1={50} y1={32} x2={50} y2={84} strokeWidth={1.8} />
+          <RPath d="M50 32 Q38 18 32 26 Q40 32 50 32" fill={GOLD} strokeWidth={1.4} />
+          <RPath d="M50 32 Q62 18 68 26 Q60 32 50 32" fill={GOLD} strokeWidth={1.4} />
+        </>
+      );
+    case "will":
+      // A last will & testament scroll with a seal.
+      return (
+        <>
+          <RRect x={26} y={16} w={48} h={62} fill={PARCH} strokeWidth={SW} />
+          <text x={50} y={32} fontSize={10} fontWeight={900} fill={INK} textAnchor="middle" fontFamily="Georgia, serif">WILL</text>
+          <RLine x1={34} y1={42} x2={66} y2={42} strokeWidth={1.6} />
+          <RLine x1={34} y1={50} x2={66} y2={50} strokeWidth={1.6} />
+          <RLine x1={34} y1={58} x2={58} y2={58} strokeWidth={1.6} />
+          <RCircle cx={60} cy={72} d={16} fill={RED} strokeWidth={1.6} />
         </>
       );
   }

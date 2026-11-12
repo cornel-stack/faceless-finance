@@ -5147,6 +5147,82 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         {moves.map(([m2, why], i) => { const y = 120 + i * 82; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={160} y={y} width={640} height={62} rx={10} fill={i === 0 ? green : "#cfe3d4"} stroke={ink} strokeWidth={4} /><text x={190} y={y + 38} fontSize={19} fontWeight={900} fill={ink} fontFamily={sans}>✓ {m2}</text><text x={780} y={y + 38} fontSize={15} fontWeight={700} fill={ink} textAnchor="end" fontFamily={sans}>{why}</text></g>; })}
       </svg>
     );
+  } else if (m === "estatetaxcliff") {
+    // The exemption cliff: $0 tax below ~$13.6M, then ~40%.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, cliff = 560, y0 = 420;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the estate-tax cliff</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <line x1={cliff} y1={140} x2={cliff} y2={y0} stroke={red} strokeWidth={2} strokeDasharray="6 6" />
+        <rect x={x0} y={y0 - 20} width={(cliff - x0) * Math.min(1, draw * 2)} height={20} fill={green} stroke={ink} strokeWidth={3} />
+        <text x={(x0 + cliff) / 2} y={y0 - 34} fontSize={16} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>0% tax</text>
+        <rect x={cliff} y={y0 - 230 * interpolate(draw, [0.5, 1], [0, 1], clampBoth)} width={x1 - cliff} height={230 * interpolate(draw, [0.5, 1], [0, 1], clampBoth)} fill={red} stroke={ink} strokeWidth={3} />
+        <text x={(cliff + x1) / 2} y={160} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">~40% tax</text>
+        <text x={cliff} y={y0 + 26} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>~$13.6M</text>
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>below the line: nothing. above it: nearly half.</text>
+      </svg>
+    );
+  } else if (m === "inheritancetiers") {
+    // Inheritance tiers and what the govt takes.
+    const rows: [string, string, string][] = [["$10K", "$0 — tax-free", green], ["$100K", "$0 — tax-free", green], ["$1M", "$0 — tax-free", green], ["$10M", "$0 federal*", "#9cc47f"], ["$100M", "tens of millions", red]];
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what the government takes</text>
+        {rows.map(([amt, take, col], i) => { const y = 100 + i * 74; return <g key={i} opacity={interpolate(reveal, [i * 0.14, i * 0.14 + 0.2], [0, 1], clampBoth)}><text x={300} y={y + 34} fontSize={22} fontWeight={900} fill={ink} textAnchor="end" fontFamily="Georgia, serif">{amt}</text><rect x={330} y={y} width={320} height={52} rx={8} fill={col as string} stroke={ink} strokeWidth={3} /><text x={490} y={y + 33} fontSize={16} fontWeight={800} fill={i < 4 ? ink : "#fff"} textAnchor="middle" fontFamily={sans}>{take}</text></g>; })}
+        <text x={VW / 2} y={476} fontSize={14} fontWeight={700} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>*under the ~$13.6M exemption</text>
+      </svg>
+    );
+  } else if (m === "estatevsinheritance") {
+    // Who pays: the estate, or the heir.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">two different 'death taxes'</text>
+        <g transform="translate(275 300)" opacity={t}><circle r={92} fill={tan} stroke={ink} strokeWidth={5} /><text y={-28} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">ESTATE tax</text><text y={2} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>paid by the estate,</text><text y={24} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>before you get it</text></g>
+        <g transform={`translate(715 300)`} opacity={interpolate(t, [0.4, 1], [0, 1], clampBoth)}><circle r={92} fill="#cfe3d4" stroke={ink} strokeWidth={5} /><text y={-28} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">INHERITANCE tax</text><text y={2} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>paid by you,</text><text y={24} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the heir</text></g>
+        <text x={VW / 2} y={456} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the US has a federal ESTATE tax — and no federal inheritance tax</text>
+      </svg>
+    );
+  } else if (m === "steppedupbasis") {
+    // The loophole: basis resets to death-value, gains vanish.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the stepped-up basis loophole</text>
+        <g transform="translate(250 280)"><rect x={-90} y={-50} width={180} height={100} rx={8} fill={tan} stroke={ink} strokeWidth={4} /><text y={-12} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>bought for</text><text y={14} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$100K</text></g>
+        <path d="M350 280 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(560 280)"><rect x={-90} y={-50} width={180} height={100} rx={8} fill={gold} stroke={ink} strokeWidth={4} /><text y={-12} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>worth at death</text><text y={14} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1M</text></g>
+        <g transform="translate(820 280)" opacity={t}><circle r={60} fill={green} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>$900K gain</text><text y={16} fontSize={15} fontWeight={900} fill="#eafaf0" textAnchor="middle" fontFamily={sans}>taxed: $0</text></g>
+        <text x={VW / 2} y={456} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>heirs inherit at today's value — the lifetime of gains vanishes, untaxed</text>
+      </svg>
+    );
+  } else if (m === "dodgetheestatetax") {
+    // Trusts/gifting shrink the taxable estate.
+    const shrink = interpolate(frame, [fps * 0.5, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how the rich dodge the 40%</text>
+        <g transform="translate(300 300)"><circle r={110 - 50 * shrink} fill={gold} stroke={ink} strokeWidth={5} /><text y={-4} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>taxable</text><text y={18} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>estate ↓</text></g>
+        {["trusts", "gifting", "charity"].map((t, i) => <g key={i} transform={`translate(${620 + (i % 2) * 150} ${220 + i * 70})`} opacity={interpolate(shrink, [i * 0.2, i * 0.2 + 0.3], [0, 1], clampBoth)}><rect x={-80} y={-26} width={160} height={52} rx={9} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text y={6} fontSize={17} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{t}</text></g>)}
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>shrink the taxable estate, shrink the tax</text>
+      </svg>
+    );
+  } else if (m === "iratax") {
+    // The hidden trap: inherited traditional IRA/401k taxed as income.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.0], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the inherited-IRA trap</text>
+        <g transform="translate(250 290)"><rect x={-80} y={-50} width={160} height={100} rx={10} fill={gold} stroke={ink} strokeWidth={5} /><text y={-8} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>inherited</text><text y={16} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>401(k)/IRA</text></g>
+        <path d="M345 290 l80 0 m0 0 l-18 -12 m18 12 l-18 12" stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <g transform="translate(540 290)"><rect x={-70} y={-40} width={140} height={80} rx={8} fill={red} stroke={ink} strokeWidth={4} /><text y={-4} fontSize={14} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>taxed as</text><text y={20} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>INCOME</text></g>
+        <g transform="translate(790 290)" opacity={t}><text y={-6} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>+ must empty it</text><text y={18} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>within 10 years</text></g>
+        <text x={VW / 2} y={470} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a cash inheritance is tax-free; an inherited IRA is not</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
