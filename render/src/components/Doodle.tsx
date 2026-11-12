@@ -139,6 +139,7 @@ export type DoodleName =
   | "jar" | "medal"
   | "camera" | "shoppingcart"
   | "skyline" | "lease"
+  | "truck" | "steeringwheel"
   | "flagJP" | "flagUS" | "flagCN" | "flagGB" | "flagGR" | "flagAR" | "flagLK" | "flagEU";
 
 const FLAG_MAP: Partial<Record<DoodleName, Country>> = {
@@ -2297,6 +2298,28 @@ function shape(name: DoodleName): React.ReactNode {
           <RLine x1={34} y1={40} x2={66} y2={40} strokeWidth={2} />
           <RLine x1={34} y1={50} x2={60} y2={50} strokeWidth={2} />
           <RPath d="M36 70 q6 -8 12 0 q6 8 12 -2" fill="none" strokeWidth={2.2} stroke={RED} />
+        </>
+      );
+    case "truck":
+      // A pickup truck — the big-payment vehicle.
+      return (
+        <>
+          <RRect x={10} y={46} w={44} h={26} fill={GOLD} strokeWidth={SW} />
+          <RPath d="M54 50 L74 50 L88 62 L88 72 L54 72 Z" fill={PARCH} strokeWidth={SW} />
+          <RRect x={58} y={54} w={16} h={10} fill={INK} strokeWidth={1.4} />
+          <RCircle cx={28} cy={76} d={14} fill={INK} strokeWidth={SW} />
+          <RCircle cx={74} cy={76} d={14} fill={INK} strokeWidth={SW} />
+        </>
+      );
+    case "steeringwheel":
+      // A steering wheel.
+      return (
+        <>
+          <RCircle cx={50} cy={52} d={62} fill="none" strokeWidth={SW} />
+          <RCircle cx={50} cy={52} d={18} fill={GOLD} strokeWidth={SW} />
+          <RLine x1={50} y1={61} x2={50} y2={82} strokeWidth={SW} />
+          <RLine x1={41} y1={48} x2={23} y2={40} strokeWidth={SW} />
+          <RLine x1={59} y1={48} x2={77} y2={40} strokeWidth={SW} />
         </>
       );
   }

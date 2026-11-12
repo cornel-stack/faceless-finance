@@ -214,7 +214,9 @@ export interface StageScene extends Base {
     // EP074 (every level of side income) additions:
     | "sideincomeladder" | "activevsscalable" | "hoursvsincome" | "sidetaxbite" | "hustletobusiness"
     // EP075 (every level of rent) additions:
-    | "renttierladder" | "thirtypercentrule" | "rentvsownlifetime" | "whatrentbuys" | "renthiddencosts";
+    | "renttierladder" | "thirtypercentrule" | "rentvsownlifetime" | "whatrentbuys" | "renthiddencosts"
+    // EP076 (every level of car payment) additions:
+    | "carpaymentladder" | "depreciationcliff" | "truecarcost" | "car2041010rule" | "underwaterloan" | "caroppcost";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

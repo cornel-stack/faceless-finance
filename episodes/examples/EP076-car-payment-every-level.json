@@ -1,0 +1,915 @@
+{
+  "id": "EP076",
+  "series": "Napkin Numbers",
+  "title": "Every Level of Car Payment: $300 vs $1,200 a Month",
+  "slug": "every-level-of-car-payment",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP076 — Every Level series (row 66). Car-payment ladder $300/$500/$700/$900/$1,200+ and what each costs/signals; depreciation cliff (car = depreciating liability), the TRUE cost (payment+insurance+gas+maintenance), the 20/4/10 rule, the underwater/upside-down long-loan trap (72-84mo), the opportunity cost ($1,200/mo invested ≈ millions), new vs used vs lease, climb-down (buy used, pay cash, keep 10+ yrs). 6 new motifs (carpaymentladder/depreciationcliff/truecarcost/car2041010rule/underwaterloan/caroppcost) + doodles truck/steeringwheel. Sources: Depreciation/Total cost of ownership/Car finance/Loan/Lease. Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "Two people drive the exact same ten-mile commute to the exact same job. One pays three hundred dollars a month for the privilege. The other pays twelve hundred. Over a lifetime, that single difference is worth millions. Today we climb every level of car payment, and show what each one really costs you.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "same commute"
+        },
+        {
+          "name": "scale",
+          "label": "$300 vs $1,200"
+        },
+        {
+          "name": "moneybag",
+          "label": "worth millions over a life"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the fact that reframes every car ad you've ever seen. A car is not an asset — it's a liability with wheels. It loses value every single day you own it, guaranteed. You're not buying something that grows; you're buying something that's quietly dying from the moment you drive it home.",
+      "text": "a liability with wheels",
+      "sub": "a car loses value every day you own it — guaranteed",
+      "icon": "car"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "Compare it to the other big thing people borrow for: a house. A house generally rises in value and builds you equity — it works for you. A car does the exact opposite: it falls in value and drains you. They're the two biggest purchases of most lives, and they pull in completely opposite directions.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "house: rises, builds equity"
+        },
+        {
+          "name": "chartdown",
+          "label": "car: falls, drains you"
+        },
+        {
+          "name": "scale",
+          "label": "opposite directions"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So we'll climb the payment ladder from three hundred to twelve hundred a month, expose the depreciation cliff that eats your money, reveal the true monthly cost that's far bigger than the payment, and show the long-loan trap that leaves millions of people owing more than their car is worth. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "ladder",
+          "label": "$300 → $1,200"
+        },
+        {
+          "name": "chartdown",
+          "label": "the depreciation cliff"
+        },
+        {
+          "name": "anchor",
+          "label": "the underwater trap"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "finance a $60K truck to look successful",
+      "memeBottom": "the payment quietly makes you broke",
+      "narration": "Because nothing fakes wealth like a shiny new car — and nothing destroys real wealth faster. Before we climb the levels, let's understand what you're actually signing up for."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what a car payment really is.",
+      "heading": "The Basics",
+      "kicker": "borrowing to drive"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "A car payment comes from car finance — the various financial products which allow individuals to purchase or lease a vehicle. In plain terms, you borrow money to buy something that's losing value, and then pay interest on top. It's one of the few times people happily go into debt for a shrinking asset.",
+      "sourceId": "wiki-carfin"
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "narration": "Underneath it is a loan — the tender of money by one party to another, where the borrower pays interest for the use of the money. So your monthly payment is really two things stacked together: paying back the car's price, plus paying the lender a fee for every month you owe them.",
+      "sourceId": "wiki-loan"
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "And the averages have quietly exploded. The average new car now costs nearly fifty thousand dollars, the average loan stretches well past five years, and interest rates have climbed sharply. The result: record numbers of people with monthly car payments over a thousand dollars — a club nobody should want to join.",
+      "text": "~$48,000",
+      "sub": "the average new-car price today — on ever-longer loans",
+      "icon": "pricetag"
+    },
+    {
+      "id": "s8",
+      "type": "title",
+      "narration": "So let's climb the levels — and see what each payment really means.",
+      "heading": "The Ladder",
+      "kicker": "$300 to $1,200 a month"
+    },
+    {
+      "id": "s9",
+      "type": "stage",
+      "narration": "Here's the whole climb. Three hundred a month is a modest used car. Five hundred is roughly the average new-car payment in America. Seven hundred is a nicer new car. Nine hundred is entry luxury or a big truck. And twelve hundred a month and up is the payment trap — a car note the size of a rent check.",
+      "motif": "carpaymentladder",
+      "caption": "what each level of car payment means"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "Let's kill a myth right away: that a three-hundred-dollar used car means constant breakdowns. A well-chosen used car from a reliable brand, a few years old, will usually run trouble-free for another decade. Modern cars routinely last two hundred thousand miles. Cheap and reliable are not opposites — they're often the same car.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "used ≠ unreliable"
+        },
+        {
+          "name": "wrench",
+          "label": "good brands run 200K+ miles"
+        },
+        {
+          "name": "smiley",
+          "label": "cheap AND reliable"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "character",
+      "narration": "Three hundred a month is the smart money level — a reliable used car, a few years old, that someone else already took the big depreciation hit on. It's not flashy, but it's how wealthy-on-paper people quietly stay that way. Low payment, low insurance, maximum money left for everything else.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "$300: a reliable used car"
+        },
+        {
+          "name": "piggybank",
+          "label": "someone else ate the depreciation"
+        },
+        {
+          "name": "smiley",
+          "label": "the smart-money level"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "character",
+      "narration": "Five hundred a month is where most of America actually lives — it's roughly the average new-car payment now. It feels normal because everyone around you has one. But normal and affordable are not the same thing, and this level is where the quiet damage usually begins.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "$500: the average new car"
+        },
+        {
+          "name": "warning",
+          "label": "normal ≠ affordable"
+        },
+        {
+          "name": "receipt",
+          "label": "where the damage begins"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/changemymind.jpg",
+      "meme": "Change My Mind",
+      "memeTop": "a $500 car payment is just 'normal' now",
+      "memeBottom": "normal is not the same as affordable",
+      "narration": "This is the quiet lie of the average. Because everyone around you has a big car payment, it feels responsible to have one too — but a whole country doing something unaffordable doesn't make it affordable."
+    },
+    {
+      "id": "s12",
+      "type": "title",
+      "narration": "Now the level where it stops being transport and starts being a statement.",
+      "heading": "$900/mo",
+      "kicker": "the status jump"
+    },
+    {
+      "id": "s13",
+      "type": "character",
+      "narration": "Nine hundred a month buys entry-level luxury or a big new truck. This is where the car becomes a statement — a way to look successful. The problem is that the people genuinely able to afford this rarely bother, while the people who can't are the ones most tempted to sign.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "truck",
+          "label": "$900: luxury or a big truck"
+        },
+        {
+          "name": "pricetag",
+          "label": "a status statement"
+        },
+        {
+          "name": "warning",
+          "label": "signed by those who can't afford it"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "narration": "And the data is almost funny. Studies of actual millionaires find that most drive modest, used, unflashy cars — Toyotas and Hondas, paid off, kept for years. The flashy car in the next lane is far more likely financed by someone broke than owned by someone rich. The badge tells you nothing about the bank balance.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "millionaires drive used Toyotas"
+        },
+        {
+          "name": "truck",
+          "label": "the flashy one = often financed"
+        },
+        {
+          "name": "warning",
+          "label": "the badge lies"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "title",
+      "narration": "And then the level that quietly wrecks budgets.",
+      "heading": "$1,200+/mo",
+      "kicker": "the payment trap"
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "narration": "Twelve hundred dollars a month and up is a car payment the size of a rent check — over fourteen thousand dollars a year, going to a machine that's actively losing value. At this level, the car isn't driving you to wealth; it's driving you away from it, one autopay at a time.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "truck",
+          "label": "$1,200+: a rent-sized payment"
+        },
+        {
+          "name": "chartdown",
+          "label": "$14K/yr into a dying asset"
+        },
+        {
+          "name": "anchor",
+          "label": "driving away from wealth"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "How do people even end up at twelve hundred a month? Usually by stretching — a long loan, a thin down payment, and a focus on the monthly number instead of the total price. Dealers are experts at making a crushing car feel survivable by simply stretching the payment over more and more years.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "stretch the loan"
+        },
+        {
+          "name": "receipt",
+          "label": "focus on 'the monthly'"
+        },
+        {
+          "name": "warning",
+          "label": "crushing, made to feel survivable"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "Now the force that makes every one of these payments worse than it looks.",
+      "heading": "Depreciation",
+      "kicker": "the money that vanishes"
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "narration": "Depreciation is an actual reduction in the fair value of an asset over time. For cars, it's brutal and fast — and it's the single biggest cost of owning one, far bigger than gas or repairs. It's money that silently evaporates whether you drive the car or leave it parked.",
+      "sourceId": "wiki-deprec"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "narration": "And here's how savage it is. A new car can lose around twenty percent of its value the instant you drive it off the lot, and roughly sixty percent within five years. Pay forty thousand for a new car, and in five years it might be worth sixteen. That vanished value dwarfs every other cost of the car combined.",
+      "motif": "depreciationcliff",
+      "caption": "~20% gone off the lot, ~60% in five years"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "Depreciation isn't equal, either. Luxury cars and electric vehicles often depreciate fastest of all, while a few reliable models hold value remarkably well. Before you buy, look up the specific car's depreciation curve — choosing a slow-depreciating model can save you more than haggling ever will.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "luxury + EVs drop fastest"
+        },
+        {
+          "name": "car",
+          "label": "some models hold value"
+        },
+        {
+          "name": "calculator",
+          "label": "check the curve first"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "narration": "This is the secret behind buying used. Let someone else buy the new car and absorb that twenty-percent cliff in year one. You buy it at three years old, let them eat the steepest part of the loss, and get a car that's barely different — for tens of thousands less. The depreciation cliff is a gift to the patient buyer.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "car",
+          "label": "buy at 3 years old"
+        },
+        {
+          "name": "chartdown",
+          "label": "they ate the cliff"
+        },
+        {
+          "name": "piggybank",
+          "label": "tens of thousands saved"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "There's a genuine sweet spot: a car around two to four years old. The original owner has absorbed the brutal first-year cliff, the car still has most of its useful life and often some warranty left, and you pay a fraction of the new price. It's the single highest-value decision in all of car buying.",
+      "text": "2–4 years old",
+      "sub": "the used-car sweet spot: cliff absorbed, life remaining",
+      "icon": "car"
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "But the payment and the depreciation are still only part of the bill.",
+      "heading": "The True Cost",
+      "kicker": "far more than the payment"
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "narration": "What really matters is the total cost of ownership — the direct and indirect costs of a product or service. For a car, the sticker and the monthly payment hide a whole stack of other costs that arrive every single month, relentlessly.",
+      "sourceId": "wiki-tco"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "narration": "Add it up honestly. On top of your five-hundred-dollar payment: insurance, gas, maintenance, repairs, registration. The true monthly cost of that average car is closer to a thousand dollars than five hundred. The payment is just the part the dealership wants you to look at.",
+      "motif": "truecarcost",
+      "caption": "the payment is maybe half the real monthly cost"
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "narration": "Insurance deserves special fear. A pricier, faster, or luxury car can double or triple your premium, and for a young driver the insurance alone can rival the payment. Always get a real insurance quote on the exact car before you buy — not after you've already signed and driven it home.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "luxury = 2-3× premium"
+        },
+        {
+          "name": "warning",
+          "label": "young drivers hit hardest"
+        },
+        {
+          "name": "calculator",
+          "label": "quote it BEFORE you buy"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "And a more expensive car inflates every line in that stack. The luxury badge means premium gas, pricier insurance, costlier tires, and repairs that can make you weep. The jump from a three-hundred payment to a twelve-hundred one quietly drags everything else up with it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gaspump",
+          "label": "premium everything"
+        },
+        {
+          "name": "wrench",
+          "label": "repairs that hurt"
+        },
+        {
+          "name": "chartup",
+          "label": "the whole stack rises"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "And repairs are where expensive cars bite last and hardest. Once the warranty ends, a luxury or performance car can hand you repair bills of thousands for a single part. That cheap used economy car, by contrast, is cheap to fix precisely because parts are everywhere and any mechanic can work on it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "wrench",
+          "label": "luxury: $1000s per repair"
+        },
+        {
+          "name": "car",
+          "label": "economy: cheap parts, any shop"
+        },
+        {
+          "name": "receipt",
+          "label": "warranty ends, bills begin"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "So how much car can you actually afford? There's a simple rule.",
+      "heading": "The 20/4/10 Rule",
+      "kicker": "the sanity check"
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "narration": "The classic rule is twenty, four, ten. Put at least twenty percent down. Finance for no more than four years. And keep all your car costs — payment, insurance, gas, everything — under ten percent of your income. Break any one of these three, and the honest truth is the car is too expensive for you.",
+      "motif": "car2041010rule",
+      "caption": "20% down, 4-year loan, 10% of income — max"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Here's the sobering part: by this twenty-four-ten rule, the majority of Americans are driving cars they can't truly afford. Tiny down payments, loans stretched to six or seven years, total car costs eating fifteen or twenty percent of income. The rule isn't harsh — the market has just drifted far away from it.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "most break all three"
+        },
+        {
+          "name": "hourglass",
+          "label": "6-7 year loans"
+        },
+        {
+          "name": "warning",
+          "label": "15-20% of income on cars"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "narration": "That four-year limit is the one people hate most — and need most. If you can only afford the car by stretching the loan to six or seven years, you can't actually afford the car. A longer loan doesn't make it cheaper; it just hides the price and multiplies the interest.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "need a 7-yr loan?"
+        },
+        {
+          "name": "warning",
+          "label": "then you can't afford it"
+        },
+        {
+          "name": "receipt",
+          "label": "long loans hide the price"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "And stretching that loan leads straight into the nastiest trap of all.",
+      "heading": "Underwater",
+      "kicker": "owing more than it's worth"
+    },
+    {
+      "id": "s28",
+      "type": "stage",
+      "narration": "It's called being upside-down, or underwater: owing more on the loan than the car is actually worth. On a long seven-year loan, the car's value drops faster than you pay the loan down — so for years, if you sold it, you'd still owe money. A huge share of car owners are underwater right now.",
+      "motif": "underwaterloan",
+      "caption": "long loans keep you owing more than the car's worth"
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "And this isn't rare. Roughly one in four people trading in a car today still owes money on it — they're underwater, carrying negative equity into their next purchase. A trap that used to be unusual has quietly become the normal starting point for a huge share of buyers.",
+      "text": "~1 in 4",
+      "sub": "trade-ins that still owe more than the car is worth",
+      "icon": "anchor"
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "narration": "And that trap springs hardest when life changes. The car gets totaled, or you need to sell — and you discover you owe thousands more than you'll get back. People even roll that leftover debt into their next car loan, stacking old debt on new, sinking deeper with every trade. It's a cycle that's brutally hard to escape.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "anchor",
+          "label": "totaled + still owing"
+        },
+        {
+          "name": "brokenchain",
+          "label": "old debt rolled into new"
+        },
+        {
+          "name": "warning",
+          "label": "sinking deeper each trade"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "narration": "There's even an entire insurance product built around this trap, called gap insurance — it exists purely to cover the difference when your totaled car is worth less than you still owe. When the financial industry invents a product just to soften how often you go underwater, that tells you how common the problem really is.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "shield",
+          "label": "'gap insurance' exists"
+        },
+        {
+          "name": "anchor",
+          "label": "covers the underwater gap"
+        },
+        {
+          "name": "warning",
+          "label": "a product built for a trap"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "title",
+      "narration": "Now the number that should decide your next car.",
+      "heading": "The Real Cost",
+      "kicker": "what the payment could become"
+    },
+    {
+      "id": "s31",
+      "type": "stage",
+      "narration": "Here's the choice behind every car payment. That twelve-hundred-a-month luxury payment, invested instead over a forty-year working life, could grow into millions of dollars. You're not choosing between a cheap car and a nice car. You're choosing between a nice car and a rich retirement.",
+      "motif": "caroppcost",
+      "caption": "the luxury payment is a multi-million-dollar choice"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "You've heard of house-poor — well, this is car-poor, and it's everywhere. People with a gleaming car in the driveway and nothing in savings, one surprise bill from disaster, because the machine out front is eating the money that should have been building their future. A fancy car can quietly make you genuinely poor.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "truck",
+          "label": "shiny car, empty savings"
+        },
+        {
+          "name": "warning",
+          "label": "one bill from disaster"
+        },
+        {
+          "name": "chartdown",
+          "label": "'car-poor' is everywhere"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "Even the gap between a three-hundred and a five-hundred payment matters enormously. That's two hundred dollars a month — invested for decades, it becomes hundreds of thousands. The difference between a used car and a new one isn't just the sticker; it's a meaningful slice of your future net worth.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "just $200/mo difference"
+        },
+        {
+          "name": "seedling",
+          "label": "invested for decades"
+        },
+        {
+          "name": "chartup",
+          "label": "= hundreds of thousands"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "title",
+      "narration": "So what about leasing — isn't that the cheap way in?",
+      "heading": "Lease vs Buy",
+      "kicker": "the forever payment"
+    },
+    {
+      "id": "s34",
+      "type": "screenshot",
+      "narration": "A lease is a contractual arrangement calling for the user to pay the owner for the use of an asset. You get a lower monthly payment and a new car every few years — but you never own anything. Leasing is renting a car forever, which means a car payment that quite literally never ends.",
+      "sourceId": "wiki-lease"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "To be fair, leasing isn't always wrong. If you run a business and can write it off, or you simply must have a new luxury car every three years and accept the cost, a lease can fit. But as a way to afford more car than you should? It's a trap dressed up as a bargain — a payment with no finish line.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "business write-off: maybe"
+        },
+        {
+          "name": "warning",
+          "label": "to 'afford more': a trap"
+        },
+        {
+          "name": "hourglass",
+          "label": "a payment with no finish"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "The wealthiest move of all is the opposite of a lease: buy a solid car, pay it off in three or four years, then keep driving it for another six or eight with no payment at all. Those payment-free years, with the money redirected to investing, are where real wealth quietly gets built.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "keys",
+          "label": "pay it off, then keep it"
+        },
+        {
+          "name": "hourglass",
+          "label": "6-8 payment-free years"
+        },
+        {
+          "name": "chartup",
+          "label": "redirect it to investing"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "callout",
+      "narration": "Put a number on patience. Someone who buys a reliable car and keeps it fifteen years pays for maybe two cars in their life. Someone who trades every five years pays for six or more — plus endless interest and fresh depreciation each time. Same driving, wildly different lifetime cost.",
+      "text": "2 cars vs 6+",
+      "sub": "keeping a car 15 years vs trading every 5, over a lifetime",
+      "icon": "keys"
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "So here's how to climb this ladder downward. Buy used, ideally two to four years old. Pay cash if you possibly can, and if you finance, keep it to four years. Then drive that car until the wheels fall off. A reliable paid-off car is one of the most powerful wealth tools you'll ever own.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "car",
+          "label": "buy used, finance ≤4 yrs"
+        },
+        {
+          "name": "coins",
+          "label": "pay cash if you can"
+        },
+        {
+          "name": "keys",
+          "label": "drive it into the ground"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And one crucial tactic at the dealership: negotiate the total out-the-door price, never the monthly payment. The monthly number is the dealer's favorite magic trick — they'll happily lower it by stretching your loan while quietly raising what you actually pay. Talk total price, total interest, total everything.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "pricetag",
+          "label": "negotiate total price"
+        },
+        {
+          "name": "warning",
+          "label": "never 'the monthly'"
+        },
+        {
+          "name": "calculator",
+          "label": "total price + total interest"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the real lesson is this: a car is a tool to get you to the places that build your life — not a trophy to prove you've arrived. Every dollar you don't sink into a depreciating hunk of metal is a dollar free to grow into something that actually makes you richer.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "steeringwheel",
+          "label": "a tool, not a trophy"
+        },
+        {
+          "name": "car",
+          "label": "it gets you there"
+        },
+        {
+          "name": "chartup",
+          "label": "freed dollars grow"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So find your level, run the twenty-four-ten check, and remember what a car actually is. Buy less car than you can afford, keep it far longer than feels normal, and quietly send the difference toward your future. That's the whole game.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "gauge",
+          "label": "run the 20/4/10 check"
+        },
+        {
+          "name": "car",
+          "label": "less car, kept longer"
+        },
+        {
+          "name": "piggybank",
+          "label": "bank the difference"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "narration": "So embrace the quietly powerful combination: a boring car and an exciting portfolio. Let the person next to you have the loud, financed, depreciating trophy. You take the paid-off economy car and the growing investment account — and in twenty years, it won't even be close.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "car",
+          "label": "boring car"
+        },
+        {
+          "name": "chartup",
+          "label": "exciting portfolio"
+        },
+        {
+          "name": "smiley",
+          "label": "in 20 yrs, not even close"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this changed how you see your next car, hit subscribe — and tell me which number you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "car",
+          "label": "which number next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-carfin",
+      "name": "Car finance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Car_finance",
+      "quote": "the various financial products which allow individuals to purchase or lease a vehicle"
+    },
+    {
+      "id": "wiki-loan",
+      "name": "Loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Loan",
+      "quote": "the tender of money by one party to another"
+    },
+    {
+      "id": "wiki-deprec",
+      "name": "Depreciation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Depreciation",
+      "quote": "an actual reduction in the fair value of an asset"
+    },
+    {
+      "id": "wiki-tco",
+      "name": "Total cost of ownership (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Total_cost_of_ownership",
+      "quote": "the direct and indirect costs of a product or service"
+    },
+    {
+      "id": "wiki-lease",
+      "name": "Lease (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lease",
+      "quote": "A lease is a contractual arrangement"
+    }
+  ],
+  "youtube": {
+    "title": "Every Level of Car Payment: $300 vs $1,200 a Month",
+    "alts": [
+      "What Each Level of Car Payment Really Costs You ($300 to $1,200/mo)",
+      "The Car Payment Ladder: $300 vs $1,200 a Month Explained"
+    ],
+    "hook": "Two people drive the same commute to the same job — one pays $300 a month, the other $1,200. Over a lifetime that difference is worth millions. This is every level of car payment: $300 (a reliable used car), $500 (the average new car), $700, $900 (luxury/big truck), and $1,200+/mo (the payment trap). We expose the depreciation cliff (a new car loses ~20% off the lot, ~60% in 5 years), the TRUE cost of ownership (payment + insurance + gas + maintenance ≈ double the payment), the 20/4/10 rule, the underwater-loan trap of 72-84 month loans, the brutal opportunity cost, and lease vs buy. A car is a liability with wheels — here's how to make it cost you the least. Fully cited.",
+    "bullets": [
+      "What each level means: $300 → $1,200+ a month",
+      "The depreciation cliff — ~20% gone off the lot, ~60% in 5 years",
+      "True cost of ownership — payment is maybe half the real bill",
+      "The 20/4/10 rule — your car-affordability sanity check",
+      "The underwater trap of 72-84 month loans",
+      "Lease vs buy, and why a paid-off car builds wealth"
+    ],
+    "tags": [
+      "car payment",
+      "average car payment",
+      "car depreciation",
+      "how much car can I afford",
+      "20/4/10 rule",
+      "car loan explained",
+      "lease vs buy",
+      "upside down car loan",
+      "total cost of ownership",
+      "buying a used car",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#carpayment",
+      "#cars",
+      "#personalfinance",
+      "#carbuying"
+    ],
+    "thumbnail": {
+      "hookTop": "CAR PAYMENT",
+      "hookBot": "EVERY LEVEL",
+      "napkinNumber": "$1,200/mo",
+      "napkinSub": "vs $300 = millions lost",
+      "deco": "car"
+    },
+    "chapters": [
+      [
+        "what a car payment really is",
+        "The basics"
+      ],
+      [
+        "see what each payment really means",
+        "The ladder"
+      ],
+      [
+        "it stops being transport and starts being a statement",
+        "$900/mo"
+      ],
+      [
+        "the level that quietly wrecks budgets",
+        "$1,200+/mo"
+      ],
+      [
+        "the force that makes every one of these payments worse",
+        "Depreciation"
+      ],
+      [
+        "the payment and the depreciation are still only part",
+        "The true cost"
+      ],
+      [
+        "how much car can you actually afford",
+        "The 20/4/10 rule"
+      ],
+      [
+        "the nastiest trap of all",
+        "Underwater"
+      ],
+      [
+        "what about leasing",
+        "Lease vs buy"
+      ]
+    ]
+  }
+}

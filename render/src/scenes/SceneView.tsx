@@ -5623,6 +5623,89 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={450} fontSize={16} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a $2K apartment can need $6K+ just to walk in the door</text>
       </svg>
     );
+  } else if (m === "carpaymentladder") {
+    // Car-payment tiers $300 → $1,200/mo and what each means.
+    const tiers: [string, string][] = [["$300", "a modest used car"], ["$500", "an average new car"], ["$700", "a nicer new car"], ["$900", "entry luxury / big truck"], ["$1,200+", "the payment trap"]];
+    const climb = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        {tiers.map(([amt, lab], i) => { const w = 180 + i * 130; const y = 100 + i * 74; return <g key={i} opacity={interpolate(climb, [i * 0.15, i * 0.15 + 0.2], [0, 1], clampBoth)}><rect x={VW / 2 - w / 2} y={y} width={w} height={58} rx={7} fill={[parch, "#e8d7bf", gold, "#d98b5f", red][i]} stroke={ink} strokeWidth={4} /><text x={VW / 2 - 55} y={y + 37} fontSize={18} fontWeight={900} fill={i >= 3 ? "#fff" : ink} textAnchor="middle" fontFamily="Georgia, serif">{amt}/mo</text><text x={VW / 2 + 60} y={y + 36} fontSize={13} fontWeight={800} fill={i >= 3 ? "#fff" : ink} textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the car-payment ladder</text>
+      </svg>
+    );
+  } else if (m === "depreciationcliff") {
+    // A new car's value falling off a cliff over 5 years.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 130, x1 = 870, y0 = 430, yTop = 130;
+    const val = (t: number) => y0 - (y0 - yTop) * Math.exp(-1.9 * t);
+    const seg = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${val(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the depreciation cliff</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg} fill="none" stroke={red} strokeWidth={6} />
+        <text x={x0 + 30} y={yTop + 4} fontSize={13} fontWeight={800} fill={ink} fontFamily={sans}>new: 100%</text>
+        <text x={x0 + 150} y={val(0.08 * 1) - 14} fontSize={13} fontWeight={900} fill={red} fontFamily={sans}>−20% off the lot</text>
+        <text x={x1 - 60} y={y0 - 24} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>~40% left at 5 yrs</text>
+        <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>years of ownership →</text>
+      </svg>
+    );
+  } else if (m === "truecarcost") {
+    // The payment is only part of the real monthly cost.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const items: [string, string][] = [["loan payment", "$500"], ["insurance", "$180"], ["gas", "$180"], ["maintenance + repairs", "$120"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the payment is only the start</text>
+        {items.map(([lab, amt], i) => { const y = 104 + i * 64; return <g key={i} opacity={interpolate(reveal, [i * 0.16, i * 0.16 + 0.22], [0, 1], clampBoth)}><rect x={250} y={y} width={320} height={50} rx={8} fill={i === 0 ? gold : "#efe9da"} stroke={ink} strokeWidth={3} /><text x={270} y={y + 32} fontSize={15} fontWeight={800} fill={ink} fontFamily={sans}>{lab}</text><rect x={590} y={y} width={140} height={50} rx={8} fill={i === 0 ? ink : "#d98b5f"} stroke={ink} strokeWidth={3} /><text x={660} y={y + 32} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{amt}</text></g>; })}
+        <g opacity={interpolate(reveal, [0.75, 1], [0, 1], clampBoth)}><rect x={250} y={372} width={480} height={56} rx={9} fill={red} stroke={ink} strokeWidth={4} /><text x={270} y={407} fontSize={16} fontWeight={900} fill="#fff" fontFamily={sans}>REAL monthly cost</text><text x={700} y={407} fontSize={20} fontWeight={900} fill="#fff" textAnchor="end" fontFamily="Georgia, serif">~$980</text></g>
+      </svg>
+    );
+  } else if (m === "car2041010rule") {
+    // The 20/4/10 rule for buying a car sanely.
+    const pop = (d: number) => Math.min(1, spring({ frame, fps, delay: d, config: { damping: 11 } }));
+    const items: [string, string, string][] = [["20%", "down payment", gold], ["4 yrs", "max loan length", green], ["10%", "of income on all car costs", blue]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={90} fontSize={23} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the 20 / 4 / 10 rule</text>
+        {items.map(([big, lab, col], i) => { const x = 200 + i * 290; return <g key={i} transform={`translate(${x} 270) scale(${pop(fps * (0.4 + i * 0.4))})`}><circle r={82} fill={col as string} stroke={ink} strokeWidth={5} /><text y={-6} fontSize={26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{big}</text><text y={20} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{lab}</text></g>; })}
+        <text x={VW / 2} y={430} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>break any of the three, and the car is too expensive</text>
+      </svg>
+    );
+  } else if (m === "underwaterloan") {
+    // Long loans leave you owing more than the car is worth.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 130, x1 = 870, yTop = 140, mid = 300, y0 = 430;
+    const value = (t: number) => mid - (mid - yTop) + (y0 - yTop) * (1 - Math.exp(-1.6 * t));
+    const owed = (t: number) => yTop + (y0 - yTop) * t * 0.72;
+    const segV = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${value(t)}`; }).join(" ");
+    const segO = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${owed(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">upside-down: owing more than it's worth</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={segO} fill="none" stroke={red} strokeWidth={6} />
+        <path d={segV} fill="none" stroke={green} strokeWidth={6} />
+        <text x={x1 - 40} y={owed(1) - 12} fontSize={13} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>loan owed</text>
+        <text x={x1 - 40} y={value(1) + 24} fontSize={13} fontWeight={900} fill={green} textAnchor="end" fontFamily={sans}>car value</text>
+        <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={theme.inkSoft} textAnchor="middle" fontFamily={sans}>a 72-84 month loan keeps you underwater for years</text>
+      </svg>
+    );
+  } else if (m === "caroppcost") {
+    // A big car payment invested instead becomes a fortune.
+    const grow = interpolate(frame, [fps * 0.5, fps * 2.6], [0, 1], clampBoth);
+    const amt = Math.round(1800000 * Math.pow(grow, 1.7));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">$1,200/mo, invested instead, for 40 years</text>
+        <g transform={`translate(${VW / 2} 270)`}>
+          <circle r={80 + 45 * grow} fill={green} stroke={ink} strokeWidth={6} />
+          <text y={6} fontSize={24 + 4 * grow} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">${amt.toLocaleString("en-US")}</text>
+        </g>
+        <text x={VW / 2} y={450} fontSize={16} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the luxury payment is a multi-million-dollar choice</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
