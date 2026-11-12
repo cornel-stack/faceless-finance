@@ -248,7 +248,9 @@ export interface StageScene extends Base {
     // EP091 (The Price Tag — weekly basics by state) additions:
     | "weeklybasketbars" | "whatdrivesthegap" | "weeklycostvswage"
     // EP092 (The Price Tag — 10-year car cost by state) additions:
-    | "carcostbystate" | "insurancebystate" | "tenyearstack";
+    | "carcostbystate" | "insurancebystate" | "tenyearstack"
+    // EP093 (The Price Tag — take-home from $100K by state) additions:
+    | "takehomebystate" | "notaxcatch";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

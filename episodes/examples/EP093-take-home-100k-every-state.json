@@ -1,0 +1,836 @@
+{
+  "id": "EP093",
+  "series": "Napkin Numbers",
+  "title": "What You Actually Keep From $100K in Every US State",
+  "slug": "take-home-100k-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP093 — The Price Tag series (topic 83). Rank TAKE-HOME from a $100K salary by state: ~$76K Texas (no income tax) vs ~$67K Hawaii/CA — ~$9K/yr gap, all from the STATE layer (federal ~$25K is constant). The 9 no-income-tax states + the catch (sales/property tax clawback → total tax burden), progressive brackets + the bracket-myth debunk (raise always = more), effective vs top rate, cost-of-living-adjusted real take-home. What-to-do: compare real take-home, remote arbitrage, max pre-tax shelters. 2 new motifs (takehomebystate/notaxcatch) + reuse; 2 charts (take-home $K/state, top rate %). Sources: Income tax in the US/State income tax/Progressive tax/Tax bracket/Cost of living(reuse). Distinct from EP058 (salary levels) & EP086 (what you keep globally). Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Earn a hundred thousand dollars in Texas and you keep around seventy-six thousand of it. Earn the exact same hundred thousand in California or Hawaii, and you keep closer to sixty-seven. Same salary, same job, same federal tax — but nearly nine thousand dollars a year vanishes or survives depending purely on the state line you live behind. Today we rank what you actually keep from a hundred-thousand-dollar salary in every US state.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "$100K salary"
+        },
+        {
+          "name": "moneybag",
+          "label": "keep $76K or $67K"
+        },
+        {
+          "name": "scale",
+          "label": "all 50 states ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap nobody budgets for. On an identical six-figure salary, the difference in take-home pay between the most and least tax-friendly states is close to nine thousand dollars every single year. That's a vacation, a emergency fund, or a year of retirement savings — handed to a state tax office, or not, based on nothing but your address.",
+      "text": "$9,000",
+      "sub": "take-home gap on $100K: best vs worst state",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the states by what you keep from a hundred thousand dollars. We'll separate the federal tax everyone pays from the state tax that varies, expose the nine states with no income tax and the catch that comes with them, decode the brackets, and adjust it all for the cost of living. Because it's not what you earn that matters. It's what survives the tax code where you live.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the states"
+        },
+        {
+          "name": "receipt",
+          "label": "federal vs state"
+        },
+        {
+          "name": "house",
+          "label": "adjusted for cost of living"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "chase the highest salary",
+      "memeBottom": "chase the highest take-home",
+      "narration": "Because a raise that pushes you into a higher-tax state can quietly be a pay cut. Before we rank the states, let's agree on what actually comes out of that paycheck."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what actually gets taken from a paycheck.",
+      "heading": "The Deductions",
+      "kicker": "federal, state, FICA"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-usincome",
+      "narration": "Every US worker pays federal income tax, applied to taxable income — the total income less allowable deductions. On a hundred thousand dollars, that federal bite, plus Social Security and Medicare, takes out roughly a quarter before any state even gets involved. That part is the same whether you live in Miami or Manhattan."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice how much the federal government alone takes before states even appear. On a hundred thousand dollars, federal income tax plus Social Security and Medicare can total around twenty-four or twenty-five thousand dollars. A quarter of your salary is gone in every state — the state tax fight is really over the next few thousand on top.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "~$25K to the feds"
+        },
+        {
+          "name": "paystub",
+          "label": "a quarter, everywhere"
+        },
+        {
+          "name": "scale",
+          "label": "states fight over the rest"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-stateincome",
+      "narration": "Then comes the wild card: state income tax. And here's the fact that drives this whole episode — nine states impose no state income tax at all. In those states, the quarter the feds take is the end of the story. In the highest-tax states, you hand over thousands more on top, for the identical salary."
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here are the nine. Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Washington, Wyoming, and New Hampshire charge no tax on earned income. For a six-figure earner, living in one of these instead of a high-tax state can mean keeping an extra several thousand dollars a year, automatically.",
+      "text": "9 states",
+      "sub": "charge no tax on earned income",
+      "icon": "mappin"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So your take-home is really two layers. The federal layer is fixed, a flat national bite no one escapes. The state layer is a lottery decided by geography — zero in some states, over ten percent of top income in others. Stack the two, and the gap between states is entirely the second layer's doing.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "federal: fixed"
+        },
+        {
+          "name": "mappin",
+          "label": "state: the wild card"
+        },
+        {
+          "name": "scale",
+          "label": "the gap is all state"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And don't forget the quiet third layer: local taxes. A few cities, like New York City, stack their own income tax on top of federal and state. So a high earner in Manhattan faces three separate income taxes at once, while someone in a no-tax state faces just one. The layers are exactly why identical salaries live such different lives.",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "some cities tax too"
+        },
+        {
+          "name": "receipt",
+          "label": "three taxes at once"
+        },
+        {
+          "name": "warning",
+          "label": "NYC stacks a third"
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "type": "stage",
+      "motif": "grossnetshrink",
+      "caption": "gross shrinks to net — before the state",
+      "narration": "Watch the shrink happen. Your gross salary is the big, proud number on the offer. Then federal income tax takes its slice, then Social Security, then Medicare — and what's left, your net, is already far smaller. And we haven't even reached the state yet. The paycheck you actually spend is what survives this whole gauntlet."
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank the states by what you actually keep.",
+      "heading": "The Ranking",
+      "kicker": "take-home from $100K"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "takehomebystate",
+      "caption": "what you keep from $100K, by state",
+      "narration": "Here's the take-home on a hundred-thousand-dollar salary. In no-income-tax states like Texas, you keep around seventy-six thousand. In moderate states, low seventies. And in the highest-tax states — California, Hawaii, New York — you keep closer to sixty-seven or sixty-eight. The federal government took the same cut from everyone; the states wrote the rest of the story."
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Take-home from $100K ($K)",
+      "unit": "$K",
+      "narration": "Put the numbers in a line. Hawaii around sixty-seven thousand kept, California sixty-eight, New York seventy, Illinois seventy-two, Colorado seventy-three, and Texas near seventy-six. The spread from top to bottom is about nine thousand dollars a year — the exact same paycheck, carved differently by fifty different tax codes.",
+      "data": [
+        {
+          "label": "Hawaii",
+          "value": 67
+        },
+        {
+          "label": "California",
+          "value": 68
+        },
+        {
+          "label": "New York",
+          "value": 70
+        },
+        {
+          "label": "Illinois",
+          "value": 72
+        },
+        {
+          "label": "Colorado",
+          "value": 73
+        },
+        {
+          "label": "Texas",
+          "value": 76
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the gap explodes for high earners. At a hundred thousand the spread is around nine thousand, but at three hundred thousand or more, high-tax states can take twenty or thirty thousand dollars a year beyond what a no-tax state would. The more you earn, the more brutally your state of residence decides your real wealth.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "gap grows with income"
+        },
+        {
+          "name": "warning",
+          "label": "$20-30K at high incomes"
+        },
+        {
+          "name": "mappin",
+          "label": "your state decides"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And watch that yearly gap compound. Nine thousand dollars a year, invested over a thirty-year career, becomes well over half a million dollars with growth. Two identical earners, one in a no-tax state and one in a high-tax state, can retire with a fortune between them — built from nothing but a difference in state tax codes.",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "$9K/yr invested"
+        },
+        {
+          "name": "chartup",
+          "label": "$500K+ over a career"
+        },
+        {
+          "name": "mappin",
+          "label": "purely from the state"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is why high earners obsess over state residency. Athletes, executives, and founders will literally change which state they call home to protect their income, because at high salaries the state slice runs into tens of thousands a year. It's not tax evasion — it's simply living where the code is kinder, a legal lever anyone can pull.",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "high earners relocate"
+        },
+        {
+          "name": "mappin",
+          "label": "residency is a lever"
+        },
+        {
+          "name": "moneybag",
+          "label": "legal, not evasion"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So should everyone just move to a no-tax state?",
+      "heading": "The No-Tax Lure",
+      "kicker": "and the catch"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "notaxcatch",
+      "caption": "no income tax — but the money comes from somewhere",
+      "narration": "Here's the catch nobody mentions. States still need revenue, so the ones with no income tax simply collect it elsewhere — higher sales taxes, higher property taxes, or fees. Texas and New Hampshire have famously steep property taxes. So the money you save on income tax can quietly reappear on your home and at the register. No state is truly free."
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "move to a state with no income tax",
+      "memeBottom": "compare the TOTAL tax burden across all taxes",
+      "narration": "This is the upgrade most tax advice skips. Chasing zero income tax is the beginner move. The advanced move is adding up every tax — income, sales, property, and fees — and comparing the real total. Sometimes the no-tax state wins. Sometimes it quietly loses."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the clawback can be sneaky in its timing. Income tax hits only when you earn; property and sales taxes hit forever, every year and every purchase. So a no-income-tax state can feel great on payday and quietly expensive the rest of your life. The form the tax takes matters as much as the total.",
+      "props": [
+        {
+          "name": "house",
+          "label": "property tax: every year"
+        },
+        {
+          "name": "basket",
+          "label": "sales tax: every purchase"
+        },
+        {
+          "name": "warning",
+          "label": "the form matters"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Top state income tax rate (%)",
+      "unit": "%",
+      "narration": "Look at the top state income tax rates. Texas and Florida, zero. Colorado, a flat four. Illinois, about five. New York and Hawaii, around eleven at the top. And California tops out near thirteen percent — the highest in the nation. That top rate is why a high earner's take-home swings so hard from state to state.",
+      "data": [
+        {
+          "label": "Texas",
+          "value": 0
+        },
+        {
+          "label": "Colorado",
+          "value": 4
+        },
+        {
+          "label": "Illinois",
+          "value": 5
+        },
+        {
+          "label": "New York",
+          "value": 11
+        },
+        {
+          "label": "Hawaii",
+          "value": 11
+        },
+        {
+          "label": "California",
+          "value": 13
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So the honest comparison isn't income tax alone — it's the total tax burden. Add income, sales, and property taxes together, and some no-income-tax states are still cheaper overall, while others claw most of it back. The headline of zero income tax is a marketing line. The real number is everything the state takes, added up.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "total tax burden"
+        },
+        {
+          "name": "receipt",
+          "label": "income + sales + property"
+        },
+        {
+          "name": "warning",
+          "label": "'zero' is marketing"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And property tax is the sneakiest piece. A no-income-tax state often funds itself with high property taxes, so homeowners there quietly pay every year whether their income is high or low. For a retiree on a modest income, a high-property-tax, no-income-tax state can actually be the worst of both worlds.",
+      "props": [
+        {
+          "name": "house",
+          "label": "property tax funds it"
+        },
+        {
+          "name": "warning",
+          "label": "paid regardless of income"
+        },
+        {
+          "name": "retiree",
+          "label": "worst for retirees"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "And the tax itself isn't one flat bite — it climbs.",
+      "heading": "The Brackets",
+      "kicker": "how the slices work"
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-progressive",
+      "narration": "Most income tax is progressive — a tax in which the tax rate increases as the taxable amount increases. You don't pay your top rate on every dollar. You pay low rates on the first slice of income and higher rates only on the income above each threshold. It's why your average tax rate is always lower than the scary top number."
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And progressive taxation is why comparing states is tricky. A state can have a high top rate but low rates on middle incomes, so a hundred-thousand earner there might pay less than in a 'low-rate' flat-tax state. You have to run your actual income through each state's brackets — the headline rate alone can badly mislead you.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "run your real income"
+        },
+        {
+          "name": "percent",
+          "label": "high top rate ≠ high for you"
+        },
+        {
+          "name": "warning",
+          "label": "headline rates mislead"
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "type": "stage",
+      "motif": "bracketladder",
+      "caption": "you climb the brackets one rung at a time",
+      "narration": "Picture the brackets as a ladder. Your first dollars are taxed at the lowest rung, the next band at a higher rung, and only your very top dollars at the top rate. You climb it one rung at a time — which is why no single raise ever drops your take-home. You only ever pay the higher rate on the dollars above each step."
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "sourceId": "wiki-bracket",
+      "narration": "Those thresholds are tax brackets — the divisions at which tax rates change in a progressive system. Understanding them kills the biggest tax myth of all: that a raise can push you into a bracket that leaves you worse off. It can't. Only the dollars above the line get the higher rate. A raise always leaves you with more."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the bracket myth costs people real money, because some turn down raises or overtime fearing a higher bracket. That fear is pure fiction. Moving up a bracket only taxes the new dollars above the line at the higher rate; every dollar below stays taxed exactly as before. A raise is always, mathematically, more money in your pocket.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "a raise is always more"
+        },
+        {
+          "name": "warning",
+          "label": "the bracket myth"
+        },
+        {
+          "name": "paystub",
+          "label": "only new dollars taxed higher"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is why your effective tax rate — what you actually pay across all brackets — is far below your top rate. Someone 'in the twenty-four percent bracket' might really pay seventeen or eighteen percent overall. When comparing states, it's this effective rate, not the headline top rate, that decides what truly lands in your account.",
+      "props": [
+        {
+          "name": "percent",
+          "label": "effective < top rate"
+        },
+        {
+          "name": "paystub",
+          "label": "what really lands"
+        },
+        {
+          "name": "scale",
+          "label": "compare effective rates"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "See the difference in one example. A single filer earning a hundred thousand might sit 'in the twenty-four percent bracket,' yet pay an effective federal rate closer to seventeen percent once all the lower brackets are counted. The headline rate scares; the effective rate is what actually leaves your account.",
+      "text": "24% vs 17%",
+      "sub": "top bracket vs effective rate on $100K",
+      "icon": "percent"
+    },
+    {
+      "id": "s57",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "a quarter of my salary gone before I see it",
+      "memeBottom": "this is fine",
+      "narration": "For most workers, this is payday reality: the gross number on the offer letter and the net number in the account are two very different figures. Understanding exactly where that gap goes — federal, state, local, FICA — is the first step to legally shrinking it."
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "But take-home pay is only half the equation.",
+      "heading": "The Real Take-Home",
+      "kicker": "adjust for cost of living"
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "sourceId": "wiki-col",
+      "narration": "What matters is what that take-home buys — the cost of maintaining a certain standard of living. A no-tax state that keeps you an extra nine thousand dollars is a mirage if its housing and prices eat it twice over. The real winner is the state where a high take-home meets a low cost of living."
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Think of it as real, spendable income. Ten thousand dollars of extra take-home means nothing if rent is twenty thousand higher. The only honest ranking combines what the tax code leaves you with what the local economy charges you — take-home pay divided by the cost of a life. That's the number that actually fills your savings account.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "take-home ÷ cost of life"
+        },
+        {
+          "name": "house",
+          "label": "rent can erase the savings"
+        },
+        {
+          "name": "moneybag",
+          "label": "real spendable income"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is the exact trap of chasing a big-city salary. The offer looks huge, but between high state and local taxes and brutal rent, the take-home can buy less life than a smaller salary in a cheaper state. The glamorous number on the contract is not the number that funds your actual existence.",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "big-city salary trap"
+        },
+        {
+          "name": "house",
+          "label": "tax + rent eat it"
+        },
+        {
+          "name": "scale",
+          "label": "less life, bigger number"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this flips the rankings. High-tax California and New York are often also high-cost, so they lose on both ends. But some no-tax states, like Texas and Tennessee, pair solid take-home with reasonable living costs — the genuine sweet spot. Meanwhile a no-tax state with sky-high housing can quietly be worse than a modest-tax state that's cheap to live in.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "tax AND cost of living"
+        },
+        {
+          "name": "smiley",
+          "label": "the real sweet spot"
+        },
+        {
+          "name": "warning",
+          "label": "no-tax + high-cost loses"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And states compete on this openly now. Low-tax states advertise their take-home advantage to lure remote workers and retirees away from the coasts, and millions are moving. It's reshaping the country — a slow migration driven, in large part, by the simple question of which state lets you keep the most of what you earn.",
+      "props": [
+        {
+          "name": "truck",
+          "label": "states compete for you"
+        },
+        {
+          "name": "mappin",
+          "label": "migration to low-tax"
+        },
+        {
+          "name": "chartup",
+          "label": "reshaping the map"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "callout",
+      "narration": "Here's the sweet spot in one idea. The dream combination is a high take-home and a low cost of living at the same time — states like Texas, Tennessee, and Florida often land near it. Keep more of your paycheck and spend less of it to live, and your savings rate can quietly double versus a high-tax, high-cost coast.",
+      "text": "2× savings",
+      "sub": "high take-home + low cost of living",
+      "icon": "moneybag"
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "So what do you actually do with all this?",
+      "heading": "What To Do",
+      "kicker": "keep more of your $100K"
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "present",
+      "narration": "First, always compare offers on take-home, adjusted for cost of living — never on gross salary. A hundred and ten thousand in a high-tax, high-cost city can leave you poorer than ninety-five thousand somewhere cheaper and lighter on tax. Run the real number before you celebrate a bigger headline figure, or accept a move.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "compare real take-home"
+        },
+        {
+          "name": "warning",
+          "label": "a raise can be a cut"
+        },
+        {
+          "name": "moneybag",
+          "label": "run it before you move"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And max out the shelters the tax code hands you, in any state. Every dollar into a four-oh-one-k or an IRA lowers the income your state and the feds can tax. In a high-tax state especially, pre-tax retirement contributions are worth even more, because you're dodging a bigger combined bite. Shelter first, then compare what's left.",
+      "props": [
+        {
+          "name": "nestegg",
+          "label": "401k + IRA lower taxable income"
+        },
+        {
+          "name": "shield",
+          "label": "worth more in high-tax states"
+        },
+        {
+          "name": "moneybag",
+          "label": "shelter, then compare"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "present",
+      "narration": "And look past the income tax to your full picture. If you own a home, weigh property taxes. If you spend a lot, weigh sales tax. If you're retiring, check whether the state taxes Social Security or pensions — some do, some don't. The right state for a renter earning wages can be the wrong one for a retiree living off savings.",
+      "props": [
+        {
+          "name": "house",
+          "label": "owner: property tax"
+        },
+        {
+          "name": "retiree",
+          "label": "retiree: pension tax?"
+        },
+        {
+          "name": "scale",
+          "label": "match the state to you"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "present",
+      "narration": "Second, if your job is remote, your state is now a salary decision. Keeping a big-city paycheck while living in a no-tax, low-cost state is one of the most powerful money moves available today — you pocket both the tax savings and the cost-of-living savings at once. Few levers in personal finance are this large and this legal.",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "remote = pick your state"
+        },
+        {
+          "name": "mappin",
+          "label": "no-tax, low-cost"
+        },
+        {
+          "name": "chartup",
+          "label": "save on both at once"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Your salary is set by your job, but your take-home is set by your government — federal, then state. The federal slice you can't escape. The state slice you can choose. In a country of fifty different tax codes, where you live is one of the biggest, most ignored raises you'll ever give yourself.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "salary = your job"
+        },
+        {
+          "name": "mappin",
+          "label": "take-home = your state"
+        },
+        {
+          "name": "scale",
+          "label": "choose the slice you can"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this changed how you read a job offer, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-usincome",
+      "name": "Income tax in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income_tax_in_the_United_States",
+      "quote": "the total income less allowable deductions"
+    },
+    {
+      "id": "wiki-stateincome",
+      "name": "State income tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_income_tax",
+      "quote": "Nine states impose no state income tax"
+    },
+    {
+      "id": "wiki-progressive",
+      "name": "Progressive tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Progressive_tax",
+      "quote": "a tax in which the tax rate increases as the taxable amount increases"
+    },
+    {
+      "id": "wiki-bracket",
+      "name": "Tax bracket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_bracket",
+      "quote": "the divisions at which tax rates change in a progressive tax system"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "the cost of maintaining a certain standard of living"
+    }
+  ],
+  "youtube": {
+    "title": "What You Actually Keep From $100K in Every US State",
+    "alts": [
+      "Your Take-Home Pay on $100K in Every State, Ranked",
+      "Why $100K Leaves You $9,000 Poorer in Some States"
+    ],
+    "hook": "Earn $100,000 in Texas and you keep about $76,000 — earn the exact same $100,000 in California or Hawaii and you keep closer to $67,000. Same salary, same job, identical federal tax, but ~$9,000 a year survives or vanishes based purely on your state. This is what you actually keep from a $100K salary in every US state, ranked. We separate the federal tax everyone pays (~$25K including Social Security and Medicare) from the state income tax that varies wildly, expose the 9 states with no income tax — and the catch (they claw it back through higher sales and property taxes, so the real number is total tax burden), decode progressive brackets and debunk the bracket myth (a raise is always more money), explain effective vs top rate, and adjust everything for cost of living to find the real sweet-spot states. Plus how to keep more: compare real take-home not gross, remote-work arbitrage, and max out pre-tax retirement shelters. Fully cited.",
+    "bullets": [
+      "Take-home from $100K ranked: ~$76K (TX) vs ~$67K (HI)",
+      "Federal (~$25K, fixed) vs the state layer that varies",
+      "The 9 no-income-tax states — and the hidden catch",
+      "The bracket myth: why a raise is ALWAYS more money",
+      "Top rate vs effective rate (24% vs ~17%)",
+      "Cost-of-living-adjusted real take-home + how to keep more"
+    ],
+    "tags": [
+      "take home pay",
+      "state income tax",
+      "no income tax states",
+      "taxes by state",
+      "how much is 100k after taxes",
+      "tax brackets explained",
+      "best states for taxes",
+      "cost of living",
+      "net pay",
+      "progressive tax",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#taxes",
+      "#takehomepay",
+      "#personalfinance",
+      "#statetaxes"
+    ],
+    "thumbnail": {
+      "hookTop": "$100K: WHAT YOU KEEP",
+      "hookBot": "EVERY STATE RANKED",
+      "napkinNumber": "$76K vs $67K",
+      "napkinSub": "take-home: TX vs HI",
+      "deco": "moneybag"
+    },
+    "chapters": [
+      [
+        "what actually gets taken from a paycheck",
+        "The deductions"
+      ],
+      [
+        "rank the states by what you actually keep",
+        "The ranking"
+      ],
+      [
+        "should everyone just move to a no-tax state",
+        "The no-tax lure"
+      ],
+      [
+        "isn't one flat bite",
+        "The brackets"
+      ],
+      [
+        "take-home pay is only half the equation",
+        "Real take-home"
+      ],
+      [
+        "what do you actually do with all this",
+        "What to do"
+      ],
+      [
+        "salary is set by your job",
+        "The real lesson"
+      ]
+    ]
+  }
+}

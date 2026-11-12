@@ -6902,6 +6902,63 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={x} y={448} fontSize={14} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the sticker is just one block</text>
       </svg>
     );
+  } else if (m === "takehomebystate") {
+    // Take-home from $100K, by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Hawaii", 67, red],
+      ["California", 68, "#c0583a"],
+      ["New York", 70, "#d98b5f"],
+      ["Illinois", 72, gold],
+      ["Colorado", 73, "#9cc47f"],
+      ["Texas", 76, green],
+    ];
+    const x0 = 250, xMax = 850, maxV = 80;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what you keep from a $100K salary</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same salary, same federal tax — ~$9K decided by the state</text>
+      </svg>
+    );
+  } else if (m === "notaxcatch") {
+    // No income tax, but revenue reappears as sales/property tax.
+    const flow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={58} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">&ldquo;no income tax&rdquo; — but the money reappears</text>
+        <g transform="translate(250 230)" opacity={interpolate(flow, [0, 0.3], [0, 1], clampBoth)}>
+          <rect x={-120} y={-45} width={240} height={95} rx={12} fill={green} stroke={ink} strokeWidth={4} />
+          <text y={-10} fontSize={16} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>income tax</text>
+          <text y={18} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">$0</text>
+        </g>
+        <path d={`M370 230 C 470 230, 520 300, 600 300`} fill="none" stroke={ink} strokeWidth={5} opacity={flow} />
+        <path d={`M600 300 l-16 -7 m16 7 l-16 7`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={flow} />
+        <path d={`M370 230 C 470 230, 520 160, 600 160`} fill="none" stroke={ink} strokeWidth={5} opacity={flow} />
+        <path d={`M600 160 l-16 -7 m16 7 l-16 7`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={flow} />
+        <g transform="translate(720 160)" opacity={interpolate(flow, [0.5, 0.85], [0, 1], clampBoth)}>
+          <rect x={-110} y={-40} width={220} height={80} rx={10} fill="#d98b5f" stroke={ink} strokeWidth={4} />
+          <text y={-4} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>high property tax</text>
+          <text y={20} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>on your home</text>
+        </g>
+        <g transform="translate(720 300)" opacity={interpolate(flow, [0.6, 0.95], [0, 1], clampBoth)}>
+          <rect x={-110} y={-40} width={220} height={80} rx={10} fill={red} stroke={ink} strokeWidth={4} />
+          <text y={-4} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>high sales tax</text>
+          <text y={20} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>at the register</text>
+        </g>
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the state still gets paid — just not on payday</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
