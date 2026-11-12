@@ -6071,6 +6071,47 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>incomes crept up; prices went vertical</text>
       </svg>
     );
+  } else if (m === "sameplaybook") {
+    // The 4 shared ingredients of expensive housing.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string, string][] = [["cheap credit", "a decade of low rates"], ["under-building", "supply never kept up"], ["homes as assets", "investors piled in"], ["tight zoning", "hard to build density"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the same four-part recipe, everywhere</text>
+        {items.map(([t, d], i) => { const x = i % 2 === 0 ? 300 : 660; const y = i < 2 ? 120 : 290; const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 150} y={y} width={300} height={130} rx={12} fill={[gold, "#9cc47f", "#d98b5f", "#cfe3d4"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={y + 52} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={y + 84} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+      </svg>
+    );
+  } else if (m === "buildingdeficit") {
+    // Homes built vs homes needed — a widening gap.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 120, x1 = 880, y0 = 430, yTop = 130;
+    const needed = (t: number) => y0 - (y0 - yTop) * (0.3 + 0.7 * t);
+    const built = (t: number) => y0 - (y0 - yTop) * (0.3 + 0.18 * t);
+    const segN = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${needed(t)}`; }).join(" ");
+    const segB = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${built(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={70} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">homes needed vs homes built</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={segN} fill="none" stroke={red} strokeWidth={6} />
+        <path d={segB} fill="none" stroke={blue} strokeWidth={6} />
+        <text x={x1 - 40} y={needed(1) - 12} fontSize={13} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>homes needed</text>
+        <text x={x1 - 40} y={built(1) + 22} fontSize={13} fontWeight={900} fill={blue} textAnchor="end" fontFamily={sans}>homes built</text>
+        <text x={VW / 2} y={y0 + 30} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the gap between the lines is the shortage</text>
+      </svg>
+    );
+  } else if (m === "homesasinvestment") {
+    // A house turned into a stock chart.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={80} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">when a home becomes a stock</text>
+        <g transform="translate(300 270)"><rect x={-80} y={-30} width={160} height={110} fill="#efe9da" stroke={ink} strokeWidth={5} /><path d="M-95 -30 L0 -95 L95 -30 Z" fill={gold} stroke={ink} strokeWidth={5} /><rect x={-22} y={28} width={44} height={52} fill={ink} /></g>
+        <path d={`M470 390 L560 ${390 - 110 * draw} L620 ${390 - 70 * draw} L700 ${390 - 190 * draw} L780 ${390 - 240 * draw}`} fill="none" stroke={green} strokeWidth={6} />
+        <path d={`M780 ${390 - 240 * draw} l0 14 m0 -14 l-14 4`} stroke={green} strokeWidth={6} fill="none" strokeLinecap="round" opacity={draw} />
+        <text x={VW / 2} y={460} fontSize={15} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>shelter becomes a speculative asset — and prices detach from wages</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

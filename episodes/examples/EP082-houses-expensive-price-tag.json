@@ -1,0 +1,935 @@
+{
+  "id": "EP082",
+  "series": "Napkin Numbers",
+  "title": "Why Are Houses So Expensive? US vs UK vs Canada vs Australia",
+  "slug": "why-are-houses-so-expensive",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP082 — The Price Tag series (topic 72). Why houses got so expensive across US/UK/Canada/Australia: the shared playbook (cheap credit + under-building + homes-as-assets + tight zoning); ranked by price-to-income; the building deficit; who's worst; the common root (supply didn't keep up); the fix. Chart-heavy (price-to-income by country, growth since 2000, homes built). Reuse pricetoincomeladder/demandvssupply + 3 new motifs (sameplaybook/buildingdeficit/homesasinvestment). Sources: House price index/Owner-occupancy/Economic bubble/Affordable housing/Real estate economics. Distinct from EP081 (single-country Canada). Density bar EP044/45. Target 13–15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "narration": "In the nineteen-nineties, a house in most rich countries cost about three to four years of a family's income. Today, across the US, the UK, Canada, and Australia, it's often eight, ten, even twelve. Four different countries, four different governments — and the exact same crisis. Why did houses everywhere get so expensive, all at once?",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "was 3-4× income"
+        },
+        {
+          "name": "chartup",
+          "label": "now 8-12×"
+        },
+        {
+          "name": "mappin",
+          "label": "4 countries, 1 crisis"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the clue that cracks the whole mystery. This didn't happen in just one country with one bad policy. It happened across four separate nations at roughly the same time. When the same disease breaks out everywhere at once, you're not looking at local bad luck — you're looking at a shared set of causes.",
+      "text": "4 nations, 1 pattern",
+      "sub": "the same housing crisis, everywhere at once",
+      "icon": "mappin"
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "narration": "And it's actually bigger than four countries. New Zealand, Ireland, the Netherlands, much of urban Europe — the same unaffordability has erupted across the developed world. When a problem crosses this many borders with this little coordination, the cause can't be any one government. It has to be something structural they all share.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "NZ, Ireland, Europe too"
+        },
+        {
+          "name": "warning",
+          "label": "crosses every border"
+        },
+        {
+          "name": "scale",
+          "label": "the cause is structural"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "narration": "So today we rank these four famous housing markets, uncover the identical four-part recipe that inflated them all, see which country is actually the worst, and reveal the single root cause hiding underneath. If you've ever wondered why a normal home now needs an abnormal income, this is your answer. Let's go.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the 4"
+        },
+        {
+          "name": "skyline",
+          "label": "the shared recipe"
+        },
+        {
+          "name": "warning",
+          "label": "the root cause"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/disaster.jpg",
+      "meme": "Disaster Girl",
+      "memeTop": "told to 'just buy a house' like boomers did",
+      "memeBottom": "the house now costs 4x what it did back then",
+      "narration": "Because an entire generation keeps being told to simply do what their parents did — when the price tag on that advice has quadrupled. Before we rank the carnage, let's agree on how we measure it."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, how we compare housing across countries.",
+      "heading": "The Measure",
+      "kicker": "price vs income"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "narration": "Economists track this with a house price index, which measures the price changes of residential housing as a percentage change from some start date. Line up those indexes against incomes, and you get the number that actually matters: how many years of pay a typical home costs. That's the fairest way to compare wildly different countries.",
+      "sourceId": "wiki-hpi"
+    },
+    {
+      "id": "s7",
+      "type": "stage",
+      "narration": "And the goal everyone's chasing is simple: affordable housing. Economists define it as housing which is deemed affordable to those with a household income at or below the median — the typical family. The rule of thumb is a home costing around three to five years of income. Every one of our four countries has blown past that.",
+      "motif": "pricetoincomeladder",
+      "caption": "affordable ≈ 3-5× income — all four blew past it"
+    },
+    {
+      "id": "s8",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Home price-to-income ratio by country (×)",
+      "unit": "×",
+      "narration": "Here's the lineup. The United States, helped by lots of buildable land, sits around five times income. The United Kingdom, around eight. Australia, around nine. And Canada's hottest markets near twelve. Every single one is above the affordable range — some catastrophically so.",
+      "data": [
+        {
+          "label": "US",
+          "value": 5
+        },
+        {
+          "label": "UK",
+          "value": 8
+        },
+        {
+          "label": "Australia",
+          "value": 9
+        },
+        {
+          "label": "Canada",
+          "value": 12
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "In raw prices, the gap is brutal. A typical US home runs around four hundred thousand dollars. In the UK, roughly three hundred thousand pounds. In Canada and Australia, well north of seven hundred thousand in local dollars — and far higher in their big cities. Different currencies, same sticker shock.",
+      "text": "$400K+ / £290K+",
+      "sub": "typical home prices — far higher in the big cities",
+      "icon": "house"
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "narration": "To feel what a ratio of ten really means: a family would have to save every single dollar they earn — spending nothing on food, taxes, or rent — for a full decade, just to buy one average home outright. In reality, saving a fraction of income, it becomes the work of a lifetime.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "coins",
+          "label": "10× = 10 years of all income"
+        },
+        {
+          "name": "hourglass",
+          "label": "realistically, a lifetime"
+        },
+        {
+          "name": "warning",
+          "label": "to buy ONE home"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So why did all four climb together? Meet the recipe.",
+      "heading": "The Recipe",
+      "kicker": "four shared ingredients"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "narration": "Every one of these countries mixed the same four ingredients. Cheap credit, from a decade of ultra-low interest rates. Under-building, where supply never kept pace. Homes treated as investment assets, not just shelter. And tight zoning that made it hard to build density. Combine all four, and prices detonate — guaranteed.",
+      "motif": "sameplaybook",
+      "caption": "cheap credit + under-building + assets + zoning"
+    },
+    {
+      "id": "s11",
+      "type": "title",
+      "narration": "Ingredient one: a decade of nearly free money.",
+      "heading": "Cheap Credit",
+      "kicker": "low rates, big loans"
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "narration": "After the two thousand eight crash, central banks in all four countries slashed interest rates to near zero and held them there for over a decade. Suddenly, buyers could borrow enormous sums for tiny monthly payments. But cheap money doesn't make homes cheaper — it just hands everyone more to bid, and that extra firepower gets poured straight into prices.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "rates near zero for a decade"
+        },
+        {
+          "name": "bank",
+          "label": "huge loans, tiny payments"
+        },
+        {
+          "name": "chartup",
+          "label": "more to bid = higher prices"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "narration": "Then came the twist that made it even crueler. When rates finally shot up in 2022, prices dipped a little — but affordability got worse, not better. A smaller loan at a much higher rate can cost more per month than a bigger loan did when money was free. Buyers got squeezed coming and going.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "percent",
+          "label": "rates jumped in 2022"
+        },
+        {
+          "name": "chartdown",
+          "label": "prices dipped a little"
+        },
+        {
+          "name": "warning",
+          "label": "but payments rose"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "Ingredient two — and the deepest one: not enough homes.",
+      "heading": "The Shortage",
+      "kicker": "building too little"
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "narration": "This is where real estate economics — the application of economic techniques to real estate markets — points the finger. For decades, all four countries built fewer homes than their growing populations needed. Demand rose relentlessly; supply dragged behind. There is no way to escape that math except with a very large bill.",
+      "sourceId": "wiki-reecon"
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "narration": "Picture the running gap. The number of homes needed climbs year after year with population and immigration. The number actually built limps along, held back by slow permits and labor shortages. The space between those two lines is the housing deficit — and it's measured in the millions of missing homes across these four countries.",
+      "motif": "buildingdeficit",
+      "caption": "needed kept rising; built fell behind"
+    },
+    {
+      "id": "s45",
+      "type": "image",
+      "src": "img/memes/gru.jpg",
+      "meme": "Gru's Plan",
+      "memeTop": "promise voters more affordable housing",
+      "memeBottom": "also protect every homeowner's rising value",
+      "narration": "And here's the contradiction baked into every one of these countries. Politicians promise cheaper homes for buyers while quietly protecting the soaring values of the owners who vote. You cannot do both — and that quiet impossibility is a huge reason nothing gets built."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "narration": "So why did building slow so badly? A pile-up of reasons: neighbors who fight new development, slow and costly permit processes, shortages of skilled construction labor, expensive materials, and developers who sometimes sit on land waiting for prices to rise. Each is small; together they strangle supply for decades.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "neighbors fight new homes"
+        },
+        {
+          "name": "crane",
+          "label": "slow permits, scarce labor"
+        },
+        {
+          "name": "chartdown",
+          "label": "supply gets strangled"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "Ingredient three: the home stopped being just a home.",
+      "heading": "The Asset",
+      "kicker": "shelter as speculation"
+    },
+    {
+      "id": "s17",
+      "type": "stage",
+      "narration": "Across all four countries, housing quietly transformed from a place to live into the premier way to store and grow wealth. Once a home is treated like a stock that pays you to live in it, investors, landlords, and speculators flood in — bidding against ordinary families and pushing prices far above what local wages could ever justify.",
+      "motif": "homesasinvestment",
+      "caption": "a home became an asset class"
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "narration": "The asset story has two sharp edges. Foreign investors park cash in these stable markets, sometimes leaving homes empty. And short-term rentals — think whole apartments turned into year-round holiday lets — quietly pull thousands of homes out of the market for locals. Both turn scarce shelter into someone else's income stream.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "foreign cash, empty homes"
+        },
+        {
+          "name": "apartment",
+          "label": "short-term rentals"
+        },
+        {
+          "name": "warning",
+          "label": "homes pulled from locals"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "narration": "When prices climb that far above what incomes and rents justify, economists reach for a loaded word: an economic bubble — a period when current asset prices greatly exceed their intrinsic valuation. Whether these markets are true bubbles or a grim new normal is debated endlessly. But the detachment from wages is undeniable.",
+      "sourceId": "wiki-ecobubble"
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "narration": "And this creates a nasty trap. So much of each nation's wealth is now tied up in housing that nobody can afford to let prices truly fall. A big crash would wipe out homeowners and threaten the banks. So governments gently prop prices up — which protects today's owners while permanently locking out tomorrow's buyers.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "bank",
+          "label": "wealth tied up in homes"
+        },
+        {
+          "name": "warning",
+          "label": "a crash would hit banks"
+        },
+        {
+          "name": "scale",
+          "label": "so prices get propped up"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "title",
+      "narration": "Ingredient four: it's often illegal to build the solution.",
+      "heading": "Zoning",
+      "kicker": "the rules that block homes"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "narration": "In all four countries, vast areas near jobs are zoned for detached single-family homes only. That makes the dense, cheaper apartments and townhomes a growing population needs effectively illegal to build in the very places people most want to live. The affordable home is often the one the rulebook forbids.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "single-family-only zoning"
+        },
+        {
+          "name": "crane",
+          "label": "density is often banned"
+        },
+        {
+          "name": "warning",
+          "label": "the cheap home is illegal"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "callout",
+      "narration": "There's a name for the banned solution: the 'missing middle' — duplexes, triplexes, and low-rise apartments between single houses and towers. For decades it was zoned out of existence. The encouraging news: cities from Auckland to Minneapolis have re-legalized it, and prices there rose markedly slower than their neighbors.",
+      "text": "the 'missing middle'",
+      "sub": "re-legalizing it worked in Auckland, Minneapolis & more",
+      "icon": "apartment"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "So who actually has it worst?",
+      "heading": "The Ranking",
+      "kicker": "worst to least-bad"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "narration": "By the raw price-to-income ratio, Canada takes the grim crown, with Australia close behind — both cramming huge, growing populations into a few coastal cities. The UK suffers from centuries-old, extremely restrictive building rules. The US is the least unaffordable of the four overall, saved mostly by its sheer abundance of buildable land.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mapleleaf",
+          "label": "Canada: worst"
+        },
+        {
+          "name": "mappin",
+          "label": "Australia close behind"
+        },
+        {
+          "name": "house",
+          "label": "US least-bad: more land"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "narration": "Each country has its own villain, too. Britain's is a near-sacred 'green belt' of protected land ringing its cities, plus some of the oldest, most restrictive planning laws on earth — so London builds painfully little while demand roars. The UK's crisis is less about new demand and more about centuries of 'no.'",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "UK: the 'green belt'"
+        },
+        {
+          "name": "warning",
+          "label": "centuries of planning 'no'"
+        },
+        {
+          "name": "skyline",
+          "label": "London builds too little"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "narration": "But the US hides a huge split. Build-friendly states like Texas kept homes relatively affordable by letting construction rip. Tightly-zoned coastal markets like California and New York are as brutal as anywhere on earth. The national average is gentle only because cheap, fast-building regions drag it down.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crane",
+          "label": "Texas: built a lot, stayed cheap"
+        },
+        {
+          "name": "skyline",
+          "label": "California: brutal"
+        },
+        {
+          "name": "scale",
+          "label": "the average hides the split"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "narration": "Australia has a special accelerant: generous tax breaks for property investors, like negative gearing, that make owning multiple homes extremely attractive. Pour tax-advantaged investor money into a tight supply, and you supercharge demand for the exact homes first-time buyers are trying to reach. The tax code itself bids against the young.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "AU: investor tax breaks"
+        },
+        {
+          "name": "moneybag",
+          "label": "many investors, few homes"
+        },
+        {
+          "name": "warning",
+          "label": "the tax code bids against youth"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Approx. home-price growth since 2000 (%)",
+      "unit": "%",
+      "narration": "Look at how far prices ran since the year two thousand. US homes roughly doubled in price. But the UK, Canada, and Australia saw prices climb two hundred, even three hundred percent and more. Incomes, in every one of these countries, grew only a fraction as fast.",
+      "data": [
+        {
+          "label": "US",
+          "value": 120
+        },
+        {
+          "label": "UK",
+          "value": 200
+        },
+        {
+          "label": "Australia",
+          "value": 250
+        },
+        {
+          "label": "Canada",
+          "value": 300
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "So what's the single thread tying all four together?",
+      "heading": "The Root",
+      "kicker": "it's supply"
+    },
+    {
+      "id": "s26",
+      "type": "stage",
+      "narration": "Strip away the details and one cause towers over the rest: supply and demand. You can blame rates, investors, or immigration — but every one of those is a demand story. The thing all four countries share is a chronic failure on the supply side. They simply did not build enough homes, for decades. Everything else just poured fuel on that fire.",
+      "motif": "demandvssupply",
+      "caption": "the common root: too few homes built"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "narration": "Want the ultimate proof that supply is the answer? Look at Japan. Tokyo is one of the biggest cities on earth, yet it builds housing freely with light national zoning — and homes there stayed remarkably affordable for decades. Same global low rates, same rich-country demand. The difference was simply that Japan kept building.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "skyline",
+          "label": "Tokyo builds freely"
+        },
+        {
+          "name": "crane",
+          "label": "light zoning"
+        },
+        {
+          "name": "smiley",
+          "label": "stayed affordable"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "narration": "And the clinching proof is the exception. The few places on earth that did build aggressively — parts of the US sunbelt, cities that aggressively upzoned — kept housing far more affordable, even with booming populations. Where homes got built, prices behaved. Where they didn't, prices exploded. Supply is the whole ballgame.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crane",
+          "label": "places that built"
+        },
+        {
+          "name": "smiley",
+          "label": "stayed affordable"
+        },
+        {
+          "name": "chartup",
+          "label": "places that didn't → exploded"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "title",
+      "narration": "What does this mean for the people living in it?",
+      "heading": "The Human Cost",
+      "kicker": "a locked-out generation"
+    },
+    {
+      "id": "s29",
+      "type": "screenshot",
+      "narration": "The casualty is owner-occupancy — a form of housing tenure in which a person owns the home in which they live. For generations it was the default path into the middle class. Across all four countries, homeownership rates among the young are now falling, as the first rung of the ladder drifts out of reach.",
+      "sourceId": "wiki-ownocc"
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "The ownership numbers tell the story plainly. Homeownership among young adults has slid in all four countries over the past two decades, while the average age of a first-time buyer keeps climbing. A milestone that used to arrive in your twenties now often waits until your late thirties — if it arrives at all.",
+      "text": "first buyers: late 30s",
+      "sub": "young ownership falling across all four countries",
+      "icon": "chartdown"
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "narration": "The result is the same story in four accents. Young people living with parents longer. Record rents eating paychecks. Families relying on inheritance just to make a down payment. Shelter, the most basic need, has quietly become a dividing line between those whose families already own, and those locked out.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "house",
+          "label": "living home longer"
+        },
+        {
+          "name": "apartment",
+          "label": "record rents"
+        },
+        {
+          "name": "scale",
+          "label": "a new dividing line"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "narration": "And the ripple effects run deep. When shelter eats this much income, people delay marriage and children, birth rates sag, and wealth concentrates in the hands of those who already owned. A housing crisis isn't just about houses — it quietly reshapes families, demographics, and the entire social contract.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "warning",
+          "label": "delayed families, lower birth rates"
+        },
+        {
+          "name": "scale",
+          "label": "wealth concentrates"
+        },
+        {
+          "name": "house",
+          "label": "it reshapes society"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "title",
+      "narration": "So how does any country actually fix this?",
+      "heading": "The Fix",
+      "kicker": "build, and build more"
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "narration": "The cure is unglamorous and identical everywhere: build far more homes, especially dense ones, and reform the zoning that blocks them. Countries and cities that have loosened their rules are already seeing prices cool. The demand-side tricks — buyer taxes, grants, incentives — mostly just push prices around. Only supply truly brings them down.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "crane",
+          "label": "build way more, denser"
+        },
+        {
+          "name": "house",
+          "label": "reform zoning"
+        },
+        {
+          "name": "chartdown",
+          "label": "supply is the only cure"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "narration": "And beware the fake fixes. First-home-buyer grants, subsidies, and tax credits feel helpful, but in a supply shortage they mostly hand buyers more money to bid with — which sellers simply pocket as higher prices. Helping demand without adding supply is like pouring water into a leaking bucket. It vanishes into the price.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "first-buyer grants"
+        },
+        {
+          "name": "chartup",
+          "label": "just raise prices"
+        },
+        {
+          "name": "warning",
+          "label": "water into a leaky bucket"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "type": "character",
+      "narration": "But there's a shared political trap, too. In all four countries, most voters already own homes, and cheaper housing means their biggest asset stops growing. So governments quietly protect prices for owners while promising affordability for buyers — two goals that can't both be met. That contradiction is why the crisis drags on for decades.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "scale",
+          "label": "owners vs buyers"
+        },
+        {
+          "name": "warning",
+          "label": "two goals, can't both win"
+        },
+        {
+          "name": "house",
+          "label": "why it never gets fixed"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "type": "title",
+      "narration": "So what do you do, living inside one of these markets?",
+      "heading": "What To Do",
+      "kicker": "play a rigged game well"
+    },
+    {
+      "id": "s35",
+      "type": "character",
+      "narration": "Be geographically ruthless. The same salary that leaves you a lifelong renter in Sydney, Toronto, or London can buy a comfortable home in a cheaper, build-friendly region. The single biggest housing decision you can make isn't when to buy — it's where. Your zip code matters more than almost anything.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "where > when"
+        },
+        {
+          "name": "house",
+          "label": "cheaper regions exist"
+        },
+        {
+          "name": "keys",
+          "label": "your zip code is the lever"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "narration": "One genuine new escape valve: remote work. For the first time, millions can earn a big-city salary while living somewhere affordable. It won't fix the hottest metros, but it hands individuals a real exit — and spreads demand toward cheaper regions that are often far happier to build.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "remote work escape"
+        },
+        {
+          "name": "mappin",
+          "label": "big pay, cheap region"
+        },
+        {
+          "name": "crane",
+          "label": "spreads demand to builders"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "type": "character",
+      "narration": "And never confuse a high price with a good investment. In these inflated markets, renting and investing the difference can easily beat stretching into a crushing mortgage. A home you can comfortably afford builds wealth; one that makes you house-poor just transfers your future to the bank. Run the real math, not the fear.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "rent + invest can win"
+        },
+        {
+          "name": "warning",
+          "label": "don't go house-poor"
+        },
+        {
+          "name": "scale",
+          "label": "run the math, not the fear"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "type": "character",
+      "narration": "Because the real lesson spans all four countries and far beyond: when you let shelter become a speculative asset and refuse to build enough of it, you don't just raise prices. You quietly lock a whole generation out of the life their parents took for granted — in English, in four different accents at once.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "shelter as a bet"
+        },
+        {
+          "name": "warning",
+          "label": "a generation locked out"
+        },
+        {
+          "name": "mappin",
+          "label": "same story, 4 countries"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "narration": "And there's real reason for hope. A growing 'build more homes' movement is winning fights across all four countries — states and cities are tearing up old zoning and legalizing density again. The crisis took decades to build, and it'll take years to unwind. But the cure is finally being swallowed.",
+      "pose": "explain",
+      "props": [
+        {
+          "name": "crane",
+          "label": "the build-more movement"
+        },
+        {
+          "name": "house",
+          "label": "zoning being torn up"
+        },
+        {
+          "name": "smiley",
+          "label": "the cure is spreading"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "type": "character",
+      "narration": "So wherever you live, watch the price-to-income ratio and watch how much your region actually builds. Those two numbers tell you more about your future than any headline. Where homes get built, hope survives. Where they don't, the price tag just keeps climbing.",
+      "pose": "present",
+      "props": [
+        {
+          "name": "scale",
+          "label": "watch price-to-income"
+        },
+        {
+          "name": "crane",
+          "label": "watch what gets built"
+        },
+        {
+          "name": "house",
+          "label": "the two numbers that matter"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "type": "character",
+      "narration": "If this finally explained the global housing mystery, hit subscribe — and tell me which price tag you want me to break down next.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "house",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "type": "character",
+      "narration": "I do the reading. You get the parts that matter.",
+      "pose": "celebrate",
+      "expression": "happy",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-hpi",
+      "name": "House price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_price_index",
+      "quote": "measures the price changes of residential housing as a percentage change"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "the application of economic techniques to real estate markets"
+    },
+    {
+      "id": "wiki-ecobubble",
+      "name": "Economic bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_bubble",
+      "quote": "a period when current asset prices greatly exceed their intrinsic valuation"
+    },
+    {
+      "id": "wiki-ownocc",
+      "name": "Owner-occupancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Owner-occupancy",
+      "quote": "a form of housing tenure in which a person"
+    },
+    {
+      "id": "wiki-affordhousing",
+      "name": "Affordable housing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affordable_housing",
+      "quote": "housing which is deemed affordable to those with a household income at or below the median"
+    }
+  ],
+  "youtube": {
+    "title": "Why Are Houses So Expensive? US vs UK vs Canada vs Australia",
+    "alts": [
+      "Why Houses Got So Expensive Everywhere (US/UK/Canada/Australia)",
+      "The Global Housing Crisis: Why 4 Countries Share the Same Problem"
+    ],
+    "hook": "In the 1990s a house cost 3-4 years of income. Today across the US, UK, Canada, and Australia it's often 8, 10, even 12 — four different countries with the exact same crisis. This is why houses got so expensive everywhere at once: the identical four-part recipe (a decade of cheap credit, chronic under-building, homes treated as investment assets, and restrictive zoning). We rank the four markets by price-to-income, show how far prices ran since 2000, reveal who's worst (Canada and Australia) and why the US is least-bad (land + build-friendly states), and uncover the single root cause — supply. Fully cited.",
+    "bullets": [
+      "Price-to-income: US ~5x, UK ~8x, Australia ~9x, Canada ~12x",
+      "The shared recipe: cheap credit, under-building, assets, zoning",
+      "Prices since 2000: US ~2x, others up 200-300%+",
+      "Who's worst and why the US is least-unaffordable",
+      "The single root cause: chronic under-supply",
+      "The fix (build + upzone) and the political trap that blocks it"
+    ],
+    "tags": [
+      "why are houses so expensive",
+      "housing crisis",
+      "housing affordability",
+      "us vs uk vs canada vs australia housing",
+      "price to income ratio",
+      "real estate bubble",
+      "housing shortage",
+      "zoning reform",
+      "why is housing so expensive",
+      "home prices",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#housing",
+      "#realestate",
+      "#housingcrisis",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "WHY ARE HOUSES",
+      "hookBot": "SO EXPENSIVE?",
+      "napkinNumber": "12×",
+      "napkinSub": "income, in the worst markets",
+      "deco": "house"
+    },
+    "chapters": [
+      [
+        "how we compare housing across countries",
+        "The measure"
+      ],
+      [
+        "why did all four climb together",
+        "The recipe"
+      ],
+      [
+        "a decade of nearly free money",
+        "Cheap credit"
+      ],
+      [
+        "the deepest one: not enough homes",
+        "The shortage"
+      ],
+      [
+        "the home stopped being just a home",
+        "The asset"
+      ],
+      [
+        "it's often illegal to build the solution",
+        "Zoning"
+      ],
+      [
+        "who actually has it worst",
+        "The ranking"
+      ],
+      [
+        "the single thread tying all four together",
+        "The root"
+      ],
+      [
+        "how does any country actually fix this",
+        "The fix"
+      ]
+    ]
+  }
+}
