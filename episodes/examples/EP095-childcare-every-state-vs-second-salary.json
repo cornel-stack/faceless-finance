@@ -1,0 +1,858 @@
+{
+  "id": "EP095",
+  "series": "Napkin Numbers",
+  "title": "Childcare in Every State vs a Second Salary",
+  "slug": "childcare-every-state-vs-second-salary",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP095 — The Price Tag series (topic 85). Rank infant daycare cost by state (~$7K Mississippi to ~$24K DC) vs a second/lower salary — the 'working for free' trap (daycare can exceed 100% of the lower earner's pay). The hidden long-term cost = opportunity cost of leaving work (~$250K+ lifetime), so paying even at break-even usually wins. Why expensive (cost disease / ratios, can't automate), means-tested subsidies + the help gap, FSA/credits/care-types. 3 new motifs (childcarebystate/daycarecliff? -> used childcarebystate + reuse childcarevs2ndsalary EP088) actually NEW: childcarebystate only new here + reuse childcarevs2ndsalary; charts cost/state + %-of-salary. Sources: Child care(reuse)/Early childhood education/Opportunity cost/Cost of raising a child(reuse)/Means test. Callback EP088 but by-STATE + the 2nd-salary/career-cost focus. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "In much of America, full-time daycare for two young kids now costs more than rent, more than college, and in many states more than a second parent's entire take-home salary. So millions of parents discover a brutal truth: one of them is working full-time just to pay for the childcare that lets them work. Today we rank what childcare costs in every state, and whether that second salary even survives it.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "daycare > rent"
+        },
+        {
+          "name": "paystub",
+          "label": "eats a 2nd salary"
+        },
+        {
+          "name": "scale",
+          "label": "every state ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that stops new parents cold. In the most expensive states, infant daycare runs over twenty thousand dollars a year — per child. For two kids, that's forty thousand or more, out of after-tax income. It's quietly become the single largest line item in a young family's budget, bigger than housing itself.",
+      "text": "$24,000",
+      "sub": "a year for infant daycare in the priciest states",
+      "icon": "baby"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank childcare costs across all fifty states, measure them against a typical second salary, find the brutal break-even point where working stops paying, expose why childcare is so expensive, and reveal the hidden long-term cost of stepping out of the workforce. Because this isn't just a daycare bill. It's one of the biggest financial decisions a family will ever make.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the states"
+        },
+        {
+          "name": "calculator",
+          "label": "the break-even"
+        },
+        {
+          "name": "warning",
+          "label": "the hidden long-term cost"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "keep working and hand your salary to daycare",
+      "memeBottom": "quit work to raise the kids yourself",
+      "narration": "Because for a parent of young children, this is the real, sweaty, no-good-answer decision. And which button makes sense depends almost entirely on a number that changes wildly by state. Before we rank them, let's define what we're even paying for."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what childcare actually is — and why it costs so much.",
+      "heading": "The Daycare Bill",
+      "kicker": "care by the hour"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-childcare",
+      "narration": "Childcare is simply the care and supervision of one or more children, provided by someone who isn't the parent. It sounds basic, but it's extraordinarily labor-intensive. Safety rules require a small number of children per adult — sometimes just three or four infants per worker. That staffing ratio, more than anything, is why the bill is so enormous."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the ratios are non-negotiable for a reason. A single adult physically cannot keep four infants safe while changing, feeding, and soothing them all at once, which is why laws cap it. Every carer's wage has to be split across just a handful of children — so the math guarantees the price per child stays stubbornly, structurally high.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "4 infants per adult, max"
+        },
+        {
+          "name": "paystub",
+          "label": "wage split few ways"
+        },
+        {
+          "name": "warning",
+          "label": "structurally expensive"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-ece",
+      "narration": "And it isn't just babysitting. Early childhood education is described as an important period in child development, shaping language, behavior, and school readiness for life. Good care is genuinely valuable — which is exactly the tension. It's both something children deeply benefit from and something many families simply cannot afford."
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the payoff of good early care is real, which makes the cost sting more. Kids in quality programs tend to do better in school and later in work. So families aren't just buying supervision — they're buying a head start they know matters. That's what makes cutting corners feel impossible, and the price so emotionally loaded.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "quality care pays off"
+        },
+        {
+          "name": "gradcap",
+          "label": "a measurable head start"
+        },
+        {
+          "name": "warning",
+          "label": "hard to cut corners"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So childcare sits in a cruel spot: it must be high-quality and high-staffed, which makes it expensive to provide, yet it's bought by young families at the very moment their careers and incomes are weakest. Expensive to deliver, unaffordable to buy. That mismatch is the entire story of the American childcare crisis.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "costly to provide"
+        },
+        {
+          "name": "chartdown",
+          "label": "bought when income is low"
+        },
+        {
+          "name": "warning",
+          "label": "the core mismatch"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here's how it stacks against life's other giants. In dozens of states, a year of infant daycare now costs more than a year of in-state public college tuition. Families are paying university prices for a two-year-old — years before they've even started saving for the actual university.",
+      "text": "daycare > college",
+      "sub": "infant care beats in-state tuition in most states",
+      "icon": "gradcap"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank what a year of infant daycare costs by state.",
+      "heading": "The Ranking",
+      "kicker": "cost by state"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And infant care is the brutal peak. Babies need the most hands and the tightest ratios, so infant daycare is the single most expensive age. As kids hit three or four and move toward preschool ratios, the price eases. But that means the costliest care lands in your late twenties and thirties — precisely when careers and savings are most fragile.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "infants cost the most"
+        },
+        {
+          "name": "chartdown",
+          "label": "eases by preschool"
+        },
+        {
+          "name": "warning",
+          "label": "hits when you can least afford it"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "childcarebystate",
+      "caption": "yearly infant daycare, by state",
+      "narration": "Here's the spread. In lower-cost states like Mississippi, a year of infant daycare runs around seven thousand dollars. Texas and Florida land near eleven or twelve. But in the Northeast and on the coasts — New York, Massachusetts, and Washington D.C. — it rockets past twenty, even twenty-four thousand dollars a year. Same baby, same care, triple the price depending on the state line."
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Yearly infant daycare cost ($K)",
+      "unit": "$K",
+      "narration": "Put the numbers in a row. Mississippi around seven thousand, Texas eleven, Florida twelve, New York seventeen, Massachusetts twenty-one, and Washington D.C. near twenty-four. The gap from cheapest to priciest is over seventeen thousand dollars a year — for a single child, before you've added a second.",
+      "data": [
+        {
+          "label": "Mississippi",
+          "value": 7
+        },
+        {
+          "label": "Texas",
+          "value": 11
+        },
+        {
+          "label": "Florida",
+          "value": 12
+        },
+        {
+          "label": "New York",
+          "value": 17
+        },
+        {
+          "label": "Massachusetts",
+          "value": 21
+        },
+        {
+          "label": "Wash. D.C.",
+          "value": 24
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the ranking roughly tracks the cost of everything else: high-wage, high-rent states have high-cost daycare, because carers there must be paid enough to live. So the states where you most need two incomes to survive are the exact states where daycare is most likely to eat one of them. The squeeze compounds.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "tracks local wages & rent"
+        },
+        {
+          "name": "warning",
+          "label": "need 2 incomes most"
+        },
+        {
+          "name": "scale",
+          "label": "where daycare eats one"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And remember, that's one child. Most families who use daycare have two kids close in age, so you often double it. Forty to fifty thousand dollars a year, in after-tax money, is common in high-cost states. That's a number that rivals — and frequently beats — the entire salary of the lower-earning parent. Which leads to the trap.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "usually two kids"
+        },
+        {
+          "name": "receipt",
+          "label": "$40-50K after tax"
+        },
+        {
+          "name": "warning",
+          "label": "rivals a whole salary"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "Stack two kids in a high-cost state and the number turns surreal. Two in full-time care in New York or Massachusetts can run forty-five to fifty thousand dollars a year, in after-tax dollars. To afford that alone, a parent would need to earn perhaps seventy thousand pre-tax — just to break even on childcare.",
+      "text": "$50K/yr",
+      "sub": "two kids in full-time care, high-cost states",
+      "icon": "baby"
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "Which brings us to the math that reshapes families.",
+      "heading": "The Second-Salary Trap",
+      "kicker": "working for free"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "childcarevs2ndsalary",
+      "caption": "when daycare eats the lower salary whole",
+      "narration": "Here's the trap in one picture. Take a household where one parent earns less — still, usually, the mother. Subtract two kids' daycare from that salary, then subtract the extra taxes, commuting, and work costs that come with the job. In high-cost states, there's almost nothing left. That parent is, in pure cash terms, working full-time for close to zero."
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the work costs people forget make the trap worse. Going to a job means commuting, a professional wardrobe, lunches out, and often a higher tax bracket on the combined income. Stack those onto the daycare bill, and the lower earner's true take-home can quietly drop to almost nothing — or even go negative in the most expensive states.",
+      "props": [
+        {
+          "name": "car",
+          "label": "commute + work costs"
+        },
+        {
+          "name": "receipt",
+          "label": "higher combined tax"
+        },
+        {
+          "name": "warning",
+          "label": "true take-home near zero"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Daycare as % of the lower salary (2 kids)",
+      "unit": "%",
+      "narration": "Look at daycare as a share of a typical lower earner's salary, for two children. In cheaper states it might take thirty-five or forty-five percent — painful, but survivable. In New York and California it can hit seventy or seventy-five. And in the priciest spots it crosses one hundred percent — meaning the daycare bill is literally larger than the paycheck that's supposed to cover it.",
+      "data": [
+        {
+          "label": "Mississippi",
+          "value": 35
+        },
+        {
+          "label": "Texas",
+          "value": 45
+        },
+        {
+          "label": "Massachusetts",
+          "value": 65
+        },
+        {
+          "label": "New York",
+          "value": 75
+        },
+        {
+          "label": "California",
+          "value": 85
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice who the math falls on. Because daycare is usually subtracted from the lower earner's salary, and women still more often earn less, the trap overwhelmingly pushes mothers out of work. It's a huge, hidden driver of the gender pay gap — careers interrupted not by choice, but by a daycare bill that made staying look pointless.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "falls on the lower earner"
+        },
+        {
+          "name": "chartdown",
+          "label": "pushes mothers out"
+        },
+        {
+          "name": "scale",
+          "label": "fuels the pay gap"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So on paper, quitting looks obvious — why work to break even? But that short-term math hides a devastating long-term cost. The paycheck isn't the only thing you lose when you leave. You lose the raises, the promotions, the retirement contributions, and the career momentum that compound for decades. And that's the real trap.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "quitting looks obvious"
+        },
+        {
+          "name": "chartdown",
+          "label": "but you lose much more"
+        },
+        {
+          "name": "hourglass",
+          "label": "the real trap"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "quit to save on daycare",
+      "memeBottom": "pay for daycare to save your career",
+      "narration": "This is the counterintuitive flip the whole episode turns on. Quitting feels like the money-saving move, but once you count the decades of lost earnings, paying for daycare is usually the one that actually protects your wealth. The obvious choice and the right choice point in opposite directions."
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Because the true cost of leaving isn't one salary — it's a career.",
+      "heading": "The Career Cost",
+      "kicker": "the price of stepping out"
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-oppcost",
+      "narration": "Economists frame this with opportunity cost — the value of the best alternative forgone. Leaving work to avoid daycare doesn't just cost you nothing now; it costs you the entire career you gave up to do it. The lost future earnings, raises, and savings can dwarf a few years of daycare bills many times over."
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And opportunity cost explains why two families in identical situations make opposite calls. If one parent earns little and loves being home, leaving can genuinely be the best life choice. But if they have strong earning potential, stepping out forfeits a fortune. The right answer isn't universal — it's whatever your specific forgone future is actually worth.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "depends on earning potential"
+        },
+        {
+          "name": "couple",
+          "label": "same situation, different calls"
+        },
+        {
+          "name": "chartup",
+          "label": "value your forgone future"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "sourceId": "wiki-costraise",
+      "narration": "This is why the research on raising kids explicitly counts the opportunity costs of child care time — the income a parent forgoes by staying home. It's an invisible expense that never shows up on any bill, yet it can be the single most expensive part of having children, quietly erasing hundreds of thousands in lifetime earnings."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the opportunity cost is sneaky because it's invisible. No one mails you a bill for the promotion you didn't get or the raises you missed. So families naturally focus on the daycare invoice they can see, and ignore the far larger cost they can't. The visible bill wins the argument, even when it's the smaller number.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "no bill for lost raises"
+        },
+        {
+          "name": "receipt",
+          "label": "only daycare is visible"
+        },
+        {
+          "name": "scale",
+          "label": "smaller number wins"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Put numbers on it. A parent who steps out for just a few years in their thirties can lose not only those salaries, but a lifetime of compounding raises and retirement growth — often three to four times the wages they skipped. Paying for daycare, even at break-even, is frequently the cheaper choice once you count the decades you're protecting.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "lose 3-4× the wages skipped"
+        },
+        {
+          "name": "snowball",
+          "label": "lost compounding"
+        },
+        {
+          "name": "scale",
+          "label": "break-even can still win"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Put a figure on the career hit. Studies estimate that stepping out of the workforce for just a few prime years can cost a worker several times the wages they actually skipped, once lost raises and retirement growth are counted — often well over a quarter of a million dollars across a career.",
+      "text": "$250K+",
+      "sub": "lifetime cost of a few years out of work",
+      "icon": "chartdown"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "So why is it this expensive, and what help exists?",
+      "heading": "Why & The Help",
+      "kicker": "subsidies and gaps"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Childcare is expensive for a reason that can't be cheated: it's people caring for people, in tiny ratios, and you can't automate it or ship it overseas. It's the same cost disease that drives up healthcare and education. Wages for carers rightly rise with the economy, but there's no productivity miracle that makes one adult safely watch twenty infants.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "tiny adult-to-child ratios"
+        },
+        {
+          "name": "warning",
+          "label": "can't automate care"
+        },
+        {
+          "name": "chartup",
+          "label": "cost disease"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is why daycare centers can be both expensive and barely profitable at the same time. Most of what you pay goes straight to carers' wages and rent, leaving thin margins. Parents feel gouged, owners feel broke, and workers are still underpaid — a lose-lose-lose that only real public subsidy, as other countries use, tends to fix.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "pay goes to wages & rent"
+        },
+        {
+          "name": "warning",
+          "label": "thin margins"
+        },
+        {
+          "name": "globe",
+          "label": "subsidy is the usual fix"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "sourceId": "wiki-meanstest",
+      "narration": "Help does exist, but it's limited and usually means-tested — a determination of whether a family is eligible to receive government benefits based on income. Subsidies, vouchers, and tax credits can cut the bill, but many working families earn just a little too much to qualify, yet nowhere near enough to comfortably pay. They fall into the gap."
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the gap is a cruel design flaw. Subsidies phase out as income rises, so a modest raise can cost a family its childcare assistance and leave them worse off overall. Millions of middle-class households earn too much to qualify for help but far too little to absorb twenty-thousand-dollar bills comfortably. They're squeezed from both sides.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "raise can kill the subsidy"
+        },
+        {
+          "name": "chartdown",
+          "label": "too rich for help"
+        },
+        {
+          "name": "scale",
+          "label": "squeezed from both sides"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the subsidy maze varies wildly by state. Some states fund generous pre-K and childcare assistance; others offer almost nothing. So on top of the raw cost gap, there's a help gap — meaning the true, out-of-pocket burden on a family can differ even more between states than the sticker prices alone suggest.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "help varies by state"
+        },
+        {
+          "name": "scale",
+          "label": "a help gap on top"
+        },
+        {
+          "name": "warning",
+          "label": "true burden varies more"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "daycare is too expensive, so quit work",
+      "memeBottom": "daycare is a short-term cost protecting a long-term career",
+      "narration": "This is the reframe that changes the decision. Seen as a monthly bill, daycare looks like a loss. Seen as a few-year investment that keeps two careers alive and compounding, it's often the single most profitable expense a young family will ever pay."
+    },
+    {
+      "id": "s25",
+      "type": "title",
+      "narration": "So what should a family actually do with all this?",
+      "heading": "What To Do",
+      "kicker": "run the real math"
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "present",
+      "narration": "And get creative with the structure of care. A nanny-share split with another family, a relative who helps a few days, staggered work shifts so parents tag-team, or an employer with on-site or subsidized care — each can slash the bill without anyone leaving the workforce. The goal is to bridge the expensive years however you can.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "nanny-share, relatives"
+        },
+        {
+          "name": "calendar",
+          "label": "staggered shifts"
+        },
+        {
+          "name": "briefcase",
+          "label": "employer care perks"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "present",
+      "narration": "First, never decide on the daycare bill alone. Run the full math: the lower salary, minus daycare, minus work costs — but then weigh the lost raises, retirement, and career growth over the next twenty years. Nine times out of ten, powering through the expensive early years keeps far more wealth than stepping out to save on daycare.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "count the next 20 years"
+        },
+        {
+          "name": "chartup",
+          "label": "career growth counts"
+        },
+        {
+          "name": "scale",
+          "label": "power through usually wins"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And think in terms of the whole household, not two separate paychecks. If daycare temporarily wipes out the lower salary, that's painful but survivable when you remember the higher earner keeps climbing, and the lower earner's career keeps its place in line. You're not losing money — you're paying to protect the family's total future earning power.",
+      "props": [
+        {
+          "name": "couple",
+          "label": "think as one household"
+        },
+        {
+          "name": "chartup",
+          "label": "both careers survive"
+        },
+        {
+          "name": "scale",
+          "label": "protect total earning power"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "pose": "present",
+      "narration": "Second, attack the bill with every tool. Use a dependent-care FSA to pay with pre-tax dollars, claim the child-and-dependent-care tax credit, check your state's pre-K and subsidy programs, and compare care types — a home daycare or a nanny-share can cost far less than a big center. Each move can claw back thousands a year.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "FSA + tax credits"
+        },
+        {
+          "name": "mappin",
+          "label": "state pre-K programs"
+        },
+        {
+          "name": "handshake",
+          "label": "nanny-share, home daycare"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if one parent does step back, do it deliberately and briefly. Keep skills current, stay networked, and plan the return before you leave. A short, intentional pause is survivable; an open-ended exit is where the career damage compounds. The goal is to bend around the daycare years, not to snap your trajectory in half.",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "short and planned"
+        },
+        {
+          "name": "handshake",
+          "label": "stay networked"
+        },
+        {
+          "name": "chartup",
+          "label": "plan the return"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Childcare feels like a bill, but it's really a bridge — an expensive, brutal, few-year bridge that protects two careers and decades of earnings on the other side. The families who understand that it's temporary, and who refuse to torch a career to dodge it, come out dramatically ahead. The daycare years end. The career doesn't have to.",
+      "props": [
+        {
+          "name": "bridge",
+          "label": "a few-year bridge"
+        },
+        {
+          "name": "chartup",
+          "label": "protects two careers"
+        },
+        {
+          "name": "smiley",
+          "label": "the daycare years end"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the national picture. Countries that heavily subsidize childcare get more parents working, higher birth rates, and stronger long-run growth — which is why many treat it as an investment, not welfare. The US largely leaves families to solve it alone, and the result is exactly the brutal state-by-state lottery we just ranked.",
+      "props": [
+        {
+          "name": "globe",
+          "label": "subsidy = more parents working"
+        },
+        {
+          "name": "chartup",
+          "label": "treated as investment"
+        },
+        {
+          "name": "warning",
+          "label": "the US leaves it to families"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this made the real cost of childcare make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "baby",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-childcare",
+      "name": "Child care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Child_care",
+      "quote": "the care and supervision of one or more children"
+    },
+    {
+      "id": "wiki-ece",
+      "name": "Early childhood education (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Early_childhood_education",
+      "quote": "an important period in child development"
+    },
+    {
+      "id": "wiki-oppcost",
+      "name": "Opportunity cost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+      "quote": "the value of the best alternative forgone"
+    },
+    {
+      "id": "wiki-costraise",
+      "name": "Cost of raising a child (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_raising_a_child",
+      "quote": "opportunity costs of child care time"
+    },
+    {
+      "id": "wiki-meanstest",
+      "name": "Means test (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Means_test",
+      "quote": "whether an individual or family is eligible to receive government benefits"
+    }
+  ],
+  "youtube": {
+    "title": "Childcare in Every State vs a Second Salary",
+    "alts": [
+      "Why One Parent Works Just to Pay for Daycare",
+      "The Cost of Childcare in Every State (And the 2nd-Salary Trap)"
+    ],
+    "hook": "In much of America, full-time daycare for two young kids now costs more than rent, more than in-state college, and in many states more than a second parent's entire take-home salary — so millions of parents end up working full-time just to pay for the childcare that lets them work. This is the cost of childcare in every state, ranked, and measured against a second salary. Infant daycare runs from ~$7,000/year in Mississippi to ~$24,000 in Washington D.C. — and as a share of the lower earner's pay it can exceed 100%. We find the break-even where working stops paying, then expose the devastating long-term trap: the opportunity cost of stepping out of the workforce (lost raises, promotions and retirement growth) can top $250,000 over a career — so paying for daycare even at break-even usually wins. Plus why childcare is structurally this expensive (cost disease and staffing ratios you can't automate), the means-tested subsidy maze and the 'help gap', and exactly how to cut the bill (dependent-care FSA, tax credits, state pre-K, nanny-shares). Fully cited.",
+    "bullets": [
+      "Infant daycare ranked: ~$7K (MS) to ~$24K (DC)",
+      "The 2nd-salary trap: daycare can exceed 100% of the lower pay",
+      "The break-even where working stops paying",
+      "The hidden career cost of quitting: $250K+ over a lifetime",
+      "Why it's structurally so expensive (cost disease)",
+      "How to cut the bill: FSA, tax credits, state pre-K, shares"
+    ],
+    "tags": [
+      "cost of childcare",
+      "daycare costs",
+      "childcare by state",
+      "second salary daycare",
+      "cost of daycare",
+      "stay at home parent",
+      "opportunity cost",
+      "childcare crisis",
+      "working mom finances",
+      "family budget",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#childcare",
+      "#daycare",
+      "#parenting",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "DAYCARE vs YOUR",
+      "hookBot": "SECOND SALARY",
+      "napkinNumber": "$7K vs $24K",
+      "napkinSub": "infant care: MS vs DC",
+      "deco": "baby"
+    },
+    "chapters": [
+      [
+        "what childcare actually is",
+        "The daycare bill"
+      ],
+      [
+        "rank what a year of infant daycare costs",
+        "The ranking"
+      ],
+      [
+        "the math that reshapes families",
+        "The second-salary trap"
+      ],
+      [
+        "the true cost of leaving isn't one salary",
+        "The career cost"
+      ],
+      [
+        "why is it this expensive",
+        "Why & the help"
+      ],
+      [
+        "what should a family actually do",
+        "What to do"
+      ],
+      [
+        "feels like a bill",
+        "The real lesson"
+      ]
+    ]
+  }
+}

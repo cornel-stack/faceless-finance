@@ -7029,6 +7029,35 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the extra tax abroad prepays the bills Americans face alone</text>
       </svg>
     );
+  } else if (m === "childcarebystate") {
+    // Yearly infant daycare cost by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Mississippi", 7, green],
+      ["Texas", 11, "#9cc47f"],
+      ["Florida", 12, gold],
+      ["New York", 17, "#d98b5f"],
+      ["Massachusetts", 21, "#c0583a"],
+      ["Wash. D.C.", 24, red],
+    ];
+    const x0 = 270, xMax = 850, maxV = 24;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a year of infant daycare, by state</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same baby, same care — over 3× the price by state</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

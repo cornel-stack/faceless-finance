@@ -3,47 +3,47 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "An American keeps more of their paycheck than a Brit, a Canadian, or an Australian. It sounds like a clear win — until you remember the American then pays thousands out of pocket for healthcare, college, and childcare that the other three get largely for free. So who actually comes out ahead? Today we put the four big English-speaking tax systems head to head, and find out who really keeps the most.",
+    "narration": "In much of America, full-time daycare for two young kids now costs more than rent, more than college, and in many states more than a second parent's entire take-home salary. So millions of parents discover a brutal truth: one of them is working full-time just to pay for the childcare that lets them work. Today we rank what childcare costs in every state, and whether that second salary even survives it.",
     "props": [
       {
-        "name": "flagUS",
-        "label": "keeps more cash"
+        "name": "baby",
+        "label": "daycare > rent"
       },
       {
-        "name": "hospital",
-        "label": "but pays for healthcare"
+        "name": "paystub",
+        "label": "eats a 2nd salary"
       },
       {
         "name": "scale",
-        "label": "US vs UK vs CA vs AU"
+        "label": "every state ranked"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the split that defines everything. The United States has no national sales tax at all. The United Kingdom adds twenty percent to almost everything you buy. That single difference — a hidden consumption tax most Americans never pay — quietly reshapes how much each country's government takes, and what it hands back.",
-    "text": "0% vs 20%",
-    "sub": "national sales tax / VAT: US vs UK",
-    "icon": "receipt"
+    "narration": "Here's the number that stops new parents cold. In the most expensive states, infant daycare runs over twenty thousand dollars a year — per child. For two kids, that's forty thousand or more, out of after-tax income. It's quietly become the single largest line item in a young family's budget, bigger than housing itself.",
+    "text": "$24,000",
+    "sub": "a year for infant daycare in the priciest states",
+    "icon": "baby"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we compare four systems the right way. We'll line up their income taxes, expose the hidden consumption tax Americans don't pay, add up the total tax wedge each government takes, reveal what that tax actually buys back, and settle the real question: after taxes and the bills they cover, who keeps the most? Let's go.",
+    "narration": "So today we rank childcare costs across all fifty states, measure them against a typical second salary, find the brutal break-even point where working stops paying, expose why childcare is so expensive, and reveal the hidden long-term cost of stepping out of the workforce. Because this isn't just a daycare bill. It's one of the biggest financial decisions a family will ever make.",
     "props": [
       {
         "name": "scale",
-        "label": "income + consumption tax"
+        "label": "rank the states"
       },
       {
-        "name": "hospital",
-        "label": "what it buys back"
+        "name": "calculator",
+        "label": "the break-even"
       },
       {
-        "name": "moneybag",
-        "label": "who keeps the most"
+        "name": "warning",
+        "label": "the hidden long-term cost"
       }
     ]
   },
@@ -52,167 +52,183 @@
     "type": "image",
     "src": "img/memes/twobuttons.jpg",
     "meme": "Two Buttons",
-    "memeTop": "low taxes, pay for everything yourself",
-    "memeBottom": "high taxes, most things covered",
-    "narration": "Because this is the real choice between these countries — not high tax versus low tax, but who pays for life's big bills: you, or the government, using your taxes. Before we compare, let's define what a tax even is."
+    "memeTop": "keep working and hand your salary to daycare",
+    "memeBottom": "quit work to raise the kids yourself",
+    "narration": "Because for a parent of young children, this is the real, sweaty, no-good-answer decision. And which button makes sense depends almost entirely on a number that changes wildly by state. Before we rank them, let's define what we're even paying for."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the two completely different ways to tax a person.",
-    "heading": "Two Ways to Tax",
-    "kicker": "income vs consumption"
+    "narration": "First, what childcare actually is — and why it costs so much.",
+    "heading": "The Daycare Bill",
+    "kicker": "care by the hour"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-tax",
-    "narration": "A tax, at its core, is a mandatory financial charge or levy imposed on an individual or legal entity by a government. But governments collect it in two very different ways. They can tax the money you earn — income tax. Or they can tax the money you spend — a consumption tax. Every country leans on a different mix of the two, and that mix is the whole story."
+    "sourceId": "wiki-childcare",
+    "narration": "Childcare is simply the care and supervision of one or more children, provided by someone who isn't the parent. It sounds basic, but it's extraordinarily labor-intensive. Safety rules require a small number of children per adult — sometimes just three or four infants per worker. That staffing ratio, more than anything, is why the bill is so enormous."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And there's a third layer people forget: payroll taxes. In the US it's Social Security and Medicare; in the UK, National Insurance; in Canada and Australia, their own contributions. These come straight off your paycheck on top of income tax, quietly funding pensions and health. Any honest comparison has to count them — they're income tax by another name.",
+    "narration": "And the ratios are non-negotiable for a reason. A single adult physically cannot keep four infants safe while changing, feeding, and soothing them all at once, which is why laws cap it. Every carer's wage has to be split across just a handful of children — so the math guarantees the price per child stays stubbornly, structurally high.",
     "props": [
       {
-        "name": "paystub",
-        "label": "payroll taxes too"
+        "name": "baby",
+        "label": "4 infants per adult, max"
       },
       {
-        "name": "receipt",
-        "label": "Social Security, NI"
+        "name": "paystub",
+        "label": "wage split few ways"
       },
       {
         "name": "warning",
-        "label": "income tax by another name"
+        "label": "structurally expensive"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-rate",
-    "narration": "And the number everyone quotes — the tax rate — is simply determined by tax laws of the country, which makes it tempting to compare nations on a single headline figure. That's the trap. One nation's low income tax can hide a brutal consumption tax; another's scary income rate can come with almost everything covered. You have to add up the whole picture."
+    "sourceId": "wiki-ece",
+    "narration": "And it isn't just babysitting. Early childhood education is described as an important period in child development, shaping language, behavior, and school readiness for life. Good care is genuinely valuable — which is exactly the tension. It's both something children deeply benefit from and something many families simply cannot afford."
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the payoff of good early care is real, which makes the cost sting more. Kids in quality programs tend to do better in school and later in work. So families aren't just buying supervision — they're buying a head start they know matters. That's what makes cutting corners feel impossible, and the price so emotionally loaded.",
+    "props": [
+      {
+        "name": "baby",
+        "label": "quality care pays off"
+      },
+      {
+        "name": "gradcap",
+        "label": "a measurable head start"
+      },
+      {
+        "name": "warning",
+        "label": "hard to cut corners"
+      }
+    ]
   },
   {
     "id": "s8",
     "type": "character",
     "pose": "explain",
-    "narration": "So here's the fundamental split. America taxes income relatively lightly and barely taxes consumption at all — no national sales tax. The UK, Canada, and Australia tax income a bit harder and then add a large consumption tax on almost everything you buy. Same goal, raising revenue — but collected from opposite ends of your money.",
+    "narration": "So childcare sits in a cruel spot: it must be high-quality and high-staffed, which makes it expensive to provide, yet it's bought by young families at the very moment their careers and incomes are weakest. Expensive to deliver, unaffordable to buy. That mismatch is the entire story of the American childcare crisis.",
     "props": [
       {
-        "name": "flagUS",
-        "label": "US: light, income-only"
+        "name": "baby",
+        "label": "costly to provide"
       },
       {
-        "name": "flagGB",
-        "label": "UK/CA/AU: income + spending"
+        "name": "chartdown",
+        "label": "bought when income is low"
       },
       {
-        "name": "scale",
-        "label": "opposite ends of your money"
+        "name": "warning",
+        "label": "the core mismatch"
       }
     ]
   },
   {
     "id": "s42",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And why does this split exist at all? Consumption taxes are easy for governments to collect and hard for people to dodge — everyone shops. Income taxes are more visible and politically painful to raise. The US leaned into income and property taxes and never adopted a national sales tax; the rest of the developed world embraced VAT decades ago. It's a historical fork, not an accident.",
-    "props": [
-      {
-        "name": "store",
-        "label": "VAT: easy to collect"
-      },
-      {
-        "name": "paystub",
-        "label": "income tax: visible, painful"
-      },
-      {
-        "name": "globe",
-        "label": "a historical fork"
-      }
-    ]
+    "type": "callout",
+    "narration": "Here's how it stacks against life's other giants. In dozens of states, a year of infant daycare now costs more than a year of in-state public college tuition. Families are paying university prices for a two-year-old — years before they've even started saving for the actual university.",
+    "text": "daycare > college",
+    "sub": "infant care beats in-state tuition in most states",
+    "icon": "gradcap"
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's start with the tax everyone sees: income tax.",
-    "heading": "The Income Layer",
-    "kicker": "what the four take"
+    "narration": "So let's rank what a year of infant daycare costs by state.",
+    "heading": "The Ranking",
+    "kicker": "cost by state"
+  },
+  {
+    "id": "s54",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And infant care is the brutal peak. Babies need the most hands and the tightest ratios, so infant daycare is the single most expensive age. As kids hit three or four and move toward preschool ratios, the price eases. But that means the costliest care lands in your late twenties and thirties — precisely when careers and savings are most fragile.",
+    "props": [
+      {
+        "name": "baby",
+        "label": "infants cost the most"
+      },
+      {
+        "name": "chartdown",
+        "label": "eases by preschool"
+      },
+      {
+        "name": "warning",
+        "label": "hits when you can least afford it"
+      }
+    ]
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "countrytaxbars",
-    "caption": "what you keep from a median salary, by country",
-    "narration": "On income tax alone, the four are surprisingly close. Take a typical median salary, and the American keeps the most of it, around seventy-seven percent after income tax and payroll deductions. Australia is close behind. The UK and Canada take a bit more, leaving workers closer to seventy-two or seventy-three percent. On the paycheck alone, America wins — but only just, and only so far."
-  },
-  {
-    "id": "s55",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And remember these percentages are for a typical median earner. Change the income and the ranking shifts, because all four use progressive systems. A low earner can pay almost nothing in any of them, while a top earner in Canada or the UK faces combined rates near or above fifty percent. The 'winner' genuinely changes depending on where you sit on the income ladder.",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "progressive systems"
-      },
-      {
-        "name": "paystub",
-        "label": "winner shifts by income"
-      },
-      {
-        "name": "scale",
-        "label": "low vs top earner"
-      }
-    ]
+    "motif": "childcarebystate",
+    "caption": "yearly infant daycare, by state",
+    "narration": "Here's the spread. In lower-cost states like Mississippi, a year of infant daycare runs around seven thousand dollars. Texas and Florida land near eleven or twelve. But in the Northeast and on the coasts — New York, Massachusetts, and Washington D.C. — it rockets past twenty, even twenty-four thousand dollars a year. Same baby, same care, triple the price depending on the state line."
   },
   {
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Kept from a median salary, income tax (%)",
-    "unit": "%",
-    "narration": "Here it is in numbers. On a median wage, after income tax and payroll contributions, Canada leaves you about seventy-two percent, the UK seventy-three, Australia seventy-six, and the US around seventy-seven. The gap between the most and least is just five points. If the story ended at the paycheck, these four countries would look almost identical.",
+    "title": "Yearly infant daycare cost ($K)",
+    "unit": "$K",
+    "narration": "Put the numbers in a row. Mississippi around seven thousand, Texas eleven, Florida twelve, New York seventeen, Massachusetts twenty-one, and Washington D.C. near twenty-four. The gap from cheapest to priciest is over seventeen thousand dollars a year — for a single child, before you've added a second.",
     "data": [
       {
-        "label": "Canada",
-        "value": 72
+        "label": "Mississippi",
+        "value": 7
       },
       {
-        "label": "UK",
-        "value": 73
+        "label": "Texas",
+        "value": 11
       },
       {
-        "label": "Australia",
-        "value": 76
+        "label": "Florida",
+        "value": 12
       },
       {
-        "label": "US",
-        "value": 77
+        "label": "New York",
+        "value": 17
+      },
+      {
+        "label": "Massachusetts",
+        "value": 21
+      },
+      {
+        "label": "Wash. D.C.",
+        "value": 24
       }
     ],
-    "highlight": 3
+    "highlight": 5
   },
   {
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice how misleading that near-tie is. These paycheck percentages are exactly the numbers people screenshot to 'prove' America is far lower tax. But they capture only the first layer. Judging four tax systems by income tax alone is like judging four cars by their sticker price and ignoring the fuel, insurance, and repairs. The headline is the smallest part of the truth.",
+    "narration": "And the ranking roughly tracks the cost of everything else: high-wage, high-rent states have high-cost daycare, because carers there must be paid enough to live. So the states where you most need two incomes to survive are the exact states where daycare is most likely to eat one of them. The squeeze compounds.",
     "props": [
       {
+        "name": "mappin",
+        "label": "tracks local wages & rent"
+      },
+      {
         "name": "warning",
-        "label": "only the first layer"
+        "label": "need 2 incomes most"
       },
       {
         "name": "scale",
-        "label": "sticker price only"
-      },
-      {
-        "name": "receipt",
-        "label": "the rest is hidden"
+        "label": "where daycare eats one"
       }
     ]
   },
@@ -220,123 +236,200 @@
     "id": "s12",
     "type": "character",
     "pose": "explain",
-    "narration": "But the story absolutely does not end at the paycheck. Because the moment that take-home pay gets spent, a second, invisible tax kicks in for three of these four countries — and it's enormous. This is where the American advantage starts to blur, and where most paycheck comparisons quietly cheat.",
+    "narration": "And remember, that's one child. Most families who use daycare have two kids close in age, so you often double it. Forty to fifty thousand dollars a year, in after-tax money, is common in high-cost states. That's a number that rivals — and frequently beats — the entire salary of the lower-earning parent. Which leads to the trap.",
     "props": [
       {
-        "name": "warning",
-        "label": "the paycheck isn't the end"
+        "name": "baby",
+        "label": "usually two kids"
       },
       {
         "name": "receipt",
-        "label": "a second tax on spending"
+        "label": "$40-50K after tax"
       },
       {
-        "name": "scale",
-        "label": "where comparisons cheat"
+        "name": "warning",
+        "label": "rivals a whole salary"
       }
     ]
   },
   {
+    "id": "s55",
+    "type": "callout",
+    "narration": "Stack two kids in a high-cost state and the number turns surreal. Two in full-time care in New York or Massachusetts can run forty-five to fifty thousand dollars a year, in after-tax dollars. To afford that alone, a parent would need to earn perhaps seventy thousand pre-tax — just to break even on childcare.",
+    "text": "$50K/yr",
+    "sub": "two kids in full-time care, high-cost states",
+    "icon": "baby"
+  },
+  {
     "id": "s13",
     "type": "title",
-    "narration": "Which brings us to the tax Americans forget exists.",
-    "heading": "The Hidden Tax",
-    "kicker": "VAT and GST"
+    "narration": "Which brings us to the math that reshapes families.",
+    "heading": "The Second-Salary Trap",
+    "kicker": "working for free"
   },
   {
     "id": "s14",
     "type": "stage",
-    "motif": "vathiddentax",
-    "caption": "the consumption tax baked into every price",
-    "narration": "It's called value-added tax, or VAT — and goods and services tax, GST, elsewhere. In the UK it's twenty percent, baked silently into the price of almost everything. Australia's GST is ten percent, Canada's federal GST five, often more with provincial tax on top. And the US? Zero national rate. Americans genuinely do not pay this tax that quietly costs everyone else a fifth of every purchase."
+    "motif": "childcarevs2ndsalary",
+    "caption": "when daycare eats the lower salary whole",
+    "narration": "Here's the trap in one picture. Take a household where one parent earns less — still, usually, the mother. Subtract two kids' daycare from that salary, then subtract the extra taxes, commuting, and work costs that come with the job. In high-cost states, there's almost nothing left. That parent is, in pure cash terms, working full-time for close to zero."
   },
   {
-    "id": "s44",
-    "type": "callout",
-    "narration": "Put the VAT bite in real money. At a twenty percent rate, a Brit spending forty thousand pounds a year on taxable goods hands over around eight thousand in VAT alone — a second income tax they never see itemized. The American spending the same amount pays only small, visible state sales taxes, often a few percent, and nothing to the federal government.",
-    "text": "$8K",
-    "sub": "hidden VAT on £40K of UK spending",
-    "icon": "receipt"
+    "id": "s56",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the work costs people forget make the trap worse. Going to a job means commuting, a professional wardrobe, lunches out, and often a higher tax bracket on the combined income. Stack those onto the daycare bill, and the lower earner's true take-home can quietly drop to almost nothing — or even go negative in the most expensive states.",
+    "props": [
+      {
+        "name": "car",
+        "label": "commute + work costs"
+      },
+      {
+        "name": "receipt",
+        "label": "higher combined tax"
+      },
+      {
+        "name": "warning",
+        "label": "true take-home near zero"
+      }
+    ]
   },
   {
     "id": "s15",
-    "type": "screenshot",
-    "sourceId": "wiki-vat",
-    "narration": "The mechanics: VAT is a consumption tax that is levied on the value added at each stage of a product's journey to you. You never see it as a separate line — it's already inside the sticker price. That's what makes it so politically easy and so personally invisible. You pay it every single day without ever feeling the sting of writing a check."
-  },
-  {
-    "id": "s16",
     "type": "chart",
     "chartType": "bar",
-    "title": "Standard VAT / GST rate (%)",
+    "title": "Daycare as % of the lower salary (2 kids)",
     "unit": "%",
-    "narration": "Look at the consumption-tax gap. The United States, zero at the national level. Canada, a five percent federal GST. Australia, ten percent. And the United Kingdom, a full twenty percent on most of what you buy. That twenty-point swing is a massive, hidden chunk of the real tax burden that a simple income-tax comparison completely misses.",
+    "narration": "Look at daycare as a share of a typical lower earner's salary, for two children. In cheaper states it might take thirty-five or forty-five percent — painful, but survivable. In New York and California it can hit seventy or seventy-five. And in the priciest spots it crosses one hundred percent — meaning the daycare bill is literally larger than the paycheck that's supposed to cover it.",
     "data": [
       {
-        "label": "US",
-        "value": 0
+        "label": "Mississippi",
+        "value": 35
       },
       {
-        "label": "Canada",
-        "value": 5
+        "label": "Texas",
+        "value": 45
       },
       {
-        "label": "Australia",
-        "value": 10
+        "label": "Massachusetts",
+        "value": 65
       },
       {
-        "label": "UK",
-        "value": 20
+        "label": "New York",
+        "value": 75
+      },
+      {
+        "label": "California",
+        "value": 85
       }
     ],
-    "highlight": 3
+    "highlight": 4
   },
   {
     "id": "s45",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And notice who the math falls on. Because daycare is usually subtracted from the lower earner's salary, and women still more often earn less, the trap overwhelmingly pushes mothers out of work. It's a huge, hidden driver of the gender pay gap — careers interrupted not by choice, but by a daycare bill that made staying look pointless.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "falls on the lower earner"
+      },
+      {
+        "name": "chartdown",
+        "label": "pushes mothers out"
+      },
+      {
+        "name": "scale",
+        "label": "fuels the pay gap"
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "type": "character",
+    "pose": "explain",
+    "narration": "So on paper, quitting looks obvious — why work to break even? But that short-term math hides a devastating long-term cost. The paycheck isn't the only thing you lose when you leave. You lose the raises, the promotions, the retirement contributions, and the career momentum that compound for decades. And that's the real trap.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "quitting looks obvious"
+      },
+      {
+        "name": "chartdown",
+        "label": "but you lose much more"
+      },
+      {
+        "name": "hourglass",
+        "label": "the real trap"
+      }
+    ]
+  },
+  {
+    "id": "s57",
     "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "compare countries on income tax",
-    "memeBottom": "compare income tax + VAT + what it all buys back",
-    "narration": "This is the full-brain version of the tax debate. The beginner compares paychecks. The next level adds the hidden consumption tax. The master adds what the tax actually funds — and only then can you honestly say which country keeps you richer."
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "quit to save on daycare",
+    "memeBottom": "pay for daycare to save your career",
+    "narration": "This is the counterintuitive flip the whole episode turns on. Quitting feels like the money-saving move, but once you count the decades of lost earnings, paying for daycare is usually the one that actually protects your wealth. The obvious choice and the right choice point in opposite directions."
   },
   {
     "id": "s17",
     "type": "title",
-    "narration": "So let's add both layers into the number that counts.",
-    "heading": "The Total Wedge",
-    "kicker": "everything the state takes"
+    "narration": "Because the true cost of leaving isn't one salary — it's a career.",
+    "heading": "The Career Cost",
+    "kicker": "the price of stepping out"
   },
   {
     "id": "s18",
     "type": "screenshot",
-    "sourceId": "wiki-wedge",
-    "narration": "Economists call it the tax wedge — the difference between the price consumers pay and the value producers receive from a transaction. In plain terms, it's the total slice the government takes out of the economy around you. Stack income tax and consumption tax together, and the four countries suddenly look very different from the paycheck view."
+    "sourceId": "wiki-oppcost",
+    "narration": "Economists frame this with opportunity cost — the value of the best alternative forgone. Leaving work to avoid daycare doesn't just cost you nothing now; it costs you the entire career you gave up to do it. The lost future earnings, raises, and savings can dwarf a few years of daycare bills many times over."
+  },
+  {
+    "id": "s58",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And opportunity cost explains why two families in identical situations make opposite calls. If one parent earns little and loves being home, leaving can genuinely be the best life choice. But if they have strong earning potential, stepping out forfeits a fortune. The right answer isn't universal — it's whatever your specific forgone future is actually worth.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "depends on earning potential"
+      },
+      {
+        "name": "couple",
+        "label": "same situation, different calls"
+      },
+      {
+        "name": "chartup",
+        "label": "value your forgone future"
+      }
+    ]
   },
   {
     "id": "s19",
-    "type": "stage",
-    "motif": "taxwedgebite",
-    "caption": "income tax + consumption tax combined",
-    "narration": "Add it all up and the ranking tightens into a clear order. The US takes the smallest total bite of your money. Australia is next. Then the UK and Canada, where a hefty income tax plus a large consumption tax means the government touches a noticeably bigger share of everything you earn and spend. On total tax taken, America really is the low-tax country of the four."
+    "type": "screenshot",
+    "sourceId": "wiki-costraise",
+    "narration": "This is why the research on raising kids explicitly counts the opportunity costs of child care time — the income a parent forgoes by staying home. It's an invisible expense that never shows up on any bill, yet it can be the single most expensive part of having children, quietly erasing hundreds of thousands in lifetime earnings."
   },
   {
     "id": "s46",
     "type": "character",
     "pose": "explain",
-    "narration": "And the US makes up some of the gap in sneaky ways. With no national VAT, American states and cities layer their own sales taxes, property taxes, and fees — which is why the federal low-tax story isn't the whole picture even at home. Add state income and sales tax, and a Californian or New Yorker isn't living in a low-tax country at all.",
+    "narration": "And the opportunity cost is sneaky because it's invisible. No one mails you a bill for the promotion you didn't get or the raises you missed. So families naturally focus on the daycare invoice they can see, and ignore the far larger cost they can't. The visible bill wins the argument, even when it's the smaller number.",
     "props": [
       {
-        "name": "mappin",
-        "label": "state + local taxes"
+        "name": "warning",
+        "label": "no bill for lost raises"
       },
       {
         "name": "receipt",
-        "label": "sales + property stacked"
+        "label": "only daycare is visible"
       },
       {
-        "name": "warning",
-        "label": "not low-tax everywhere"
+        "name": "scale",
+        "label": "smaller number wins"
       }
     ]
   },
@@ -344,179 +437,216 @@
     "id": "s20",
     "type": "character",
     "pose": "explain",
-    "narration": "So on raw tax alone, America wins — clearly. An American hands over less of their money, both earning it and spending it, than a Brit, a Canadian, or an Australian. If the only thing that mattered were minimizing the government's cut, the United States would be the obvious champion. But taxes aren't charity. You're supposed to get something back.",
+    "narration": "Put numbers on it. A parent who steps out for just a few years in their thirties can lose not only those salaries, but a lifetime of compounding raises and retirement growth — often three to four times the wages they skipped. Paying for daycare, even at break-even, is frequently the cheaper choice once you count the decades you're protecting.",
     "props": [
       {
-        "name": "flagUS",
-        "label": "US takes the least"
+        "name": "chartdown",
+        "label": "lose 3-4× the wages skipped"
       },
       {
-        "name": "moneybag",
-        "label": "less earning + spending"
+        "name": "snowball",
+        "label": "lost compounding"
       },
       {
-        "name": "warning",
-        "label": "but what do you get back?"
+        "name": "scale",
+        "label": "break-even can still win"
       }
     ]
   },
   {
-    "id": "s57",
+    "id": "s47",
     "type": "callout",
-    "narration": "Put the total burden in one figure. Measured as all taxes collected against the size of the economy, the US government takes roughly a quarter to twenty-seven percent, while the UK, Canada, and Australia sit higher, often in the low-to-mid thirties. That gap of several points of an entire economy is the real, honest size of the difference.",
-    "text": "~27% vs ~33%",
-    "sub": "total tax as a share of the economy: US vs the others",
-    "icon": "scale"
+    "narration": "Put a figure on the career hit. Studies estimate that stepping out of the workforce for just a few prime years can cost a worker several times the wages they actually skipped, once lost raises and retirement growth are counted — often well over a quarter of a million dollars across a career.",
+    "text": "$250K+",
+    "sub": "lifetime cost of a few years out of work",
+    "icon": "chartdown"
   },
   {
     "id": "s21",
     "type": "title",
-    "narration": "Because the whole point of tax is what it buys you.",
-    "heading": "What It Buys Back",
-    "kicker": "the other side"
+    "narration": "So why is it this expensive, and what help exists?",
+    "heading": "Why & The Help",
+    "kicker": "subsidies and gaps"
   },
   {
     "id": "s22",
-    "type": "stage",
-    "motif": "taxvsservices",
-    "caption": "the big bills — covered, or on you",
-    "narration": "Here's what the higher-tax countries hand back. In the UK, Canada, and Australia, healthcare is largely free at the point of use. University is free or heavily capped. Childcare is subsidized, and pensions are stronger. In the US, you pay for all of that privately — and those bills are huge. The extra tax abroad isn't lost. It's prepaying the exact costs Americans face alone."
-  },
-  {
-    "id": "s47",
     "type": "character",
     "pose": "explain",
-    "narration": "And healthcare is the giant on this side of the ledger. The US spends about double per person on health compared to the others, yet leaves millions exposed to huge bills. The extra tax a Brit or Canadian pays is, in large part, simply a national health-insurance premium — one that can never be denied, dropped, or tied to a job.",
+    "narration": "Childcare is expensive for a reason that can't be cheated: it's people caring for people, in tiny ratios, and you can't automate it or ship it overseas. It's the same cost disease that drives up healthcare and education. Wages for carers rightly rise with the economy, but there's no productivity miracle that makes one adult safely watch twenty infants.",
     "props": [
       {
-        "name": "hospital",
-        "label": "US spends ~2x on health"
-      },
-      {
-        "name": "shield",
-        "label": "tax = national health premium"
+        "name": "baby",
+        "label": "tiny adult-to-child ratios"
       },
       {
         "name": "warning",
-        "label": "can't be dropped"
-      }
-    ]
-  },
-  {
-    "id": "s23",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And those American bills are staggering. Health insurance and out-of-pocket costs can run a family over twenty thousand dollars a year. College adds tens of thousands in debt. Childcare, another fifteen to twenty thousand per kid. The money a lower-tax American keeps gets quietly clawed back — not by the tax office, but by the hospital, the university, and the daycare.",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "health: $20K+/yr"
+        "label": "can't automate care"
       },
       {
-        "name": "gradcap",
-        "label": "college debt"
-      },
-      {
-        "name": "baby",
-        "label": "childcare $15-20K"
+        "name": "chartup",
+        "label": "cost disease"
       }
     ]
   },
   {
     "id": "s48",
-    "type": "callout",
-    "narration": "Stack the American private bills and the picture flips. Health premiums, college saving, and childcare can quietly cost a US family thirty to forty thousand dollars a year — money that, in the other three countries, the higher tax already covered. The low-tax paycheck can be an illusion the instant real life begins.",
-    "text": "$30-40K/yr",
-    "sub": "private bills a US family covers that others' taxes do",
-    "icon": "hospital"
-  },
-  {
-    "id": "s24",
-    "type": "title",
-    "narration": "So let's run the comparison the honest way.",
-    "heading": "The Real Number",
-    "kicker": "tax plus the bills"
-  },
-  {
-    "id": "s25",
-    "type": "stage",
-    "motif": "whatyoukeepfunnel",
-    "caption": "take-home, minus the bills others get free",
-    "narration": "Here's the funnel done properly. Start with gross pay. In every country, subtract the tax. Then, for the American, keep subtracting — health premiums, a college fund, childcare, retirement you fund yourself. For the others, those are already paid by the tax you took out. What trickles out the bottom, after everything, is the real, true take-home. And suddenly the American lead can shrink, vanish, or even reverse."
-  },
-  {
-    "id": "s49",
     "type": "character",
     "pose": "explain",
-    "narration": "And there's a risk dimension the funnel hides. In the higher-tax countries, your worst-case year is capped — a serious illness or job loss won't bankrupt you, because the safety net is prepaid. In America, you keep more in a good year but carry far more catastrophic risk in a bad one. You're not just comparing cost. You're comparing certainty.",
+    "narration": "And this is why daycare centers can be both expensive and barely profitable at the same time. Most of what you pay goes straight to carers' wages and rent, leaving thin margins. Parents feel gouged, owners feel broke, and workers are still underpaid — a lose-lose-lose that only real public subsidy, as other countries use, tends to fix.",
     "props": [
       {
-        "name": "shield",
-        "label": "abroad: worst case capped"
+        "name": "receipt",
+        "label": "pay goes to wages & rent"
       },
       {
         "name": "warning",
-        "label": "US: more catastrophic risk"
+        "label": "thin margins"
+      },
+      {
+        "name": "globe",
+        "label": "subsidy is the usual fix"
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "type": "screenshot",
+    "sourceId": "wiki-meanstest",
+    "narration": "Help does exist, but it's limited and usually means-tested — a determination of whether a family is eligible to receive government benefits based on income. Subsidies, vouchers, and tax credits can cut the bill, but many working families earn just a little too much to qualify, yet nowhere near enough to comfortably pay. They fall into the gap."
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the gap is a cruel design flaw. Subsidies phase out as income rises, so a modest raise can cost a family its childcare assistance and leave them worse off overall. Millions of middle-class households earn too much to qualify for help but far too little to absorb twenty-thousand-dollar bills comfortably. They're squeezed from both sides.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "raise can kill the subsidy"
+      },
+      {
+        "name": "chartdown",
+        "label": "too rich for help"
       },
       {
         "name": "scale",
-        "label": "cost vs certainty"
+        "label": "squeezed from both sides"
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the subsidy maze varies wildly by state. Some states fund generous pre-K and childcare assistance; others offer almost nothing. So on top of the raw cost gap, there's a help gap — meaning the true, out-of-pocket burden on a family can differ even more between states than the sticker prices alone suggest.",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "help varies by state"
+      },
+      {
+        "name": "scale",
+        "label": "a help gap on top"
+      },
+      {
+        "name": "warning",
+        "label": "true burden varies more"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "daycare is too expensive, so quit work",
+    "memeBottom": "daycare is a short-term cost protecting a long-term career",
+    "narration": "This is the reframe that changes the decision. Seen as a monthly bill, daycare looks like a loss. Seen as a few-year investment that keeps two careers alive and compounding, it's often the single most profitable expense a young family will ever pay."
+  },
+  {
+    "id": "s25",
+    "type": "title",
+    "narration": "So what should a family actually do with all this?",
+    "heading": "What To Do",
+    "kicker": "run the real math"
+  },
+  {
+    "id": "s60",
+    "type": "character",
+    "pose": "present",
+    "narration": "And get creative with the structure of care. A nanny-share split with another family, a relative who helps a few days, staggered work shifts so parents tag-team, or an employer with on-site or subsidized care — each can slash the bill without anyone leaving the workforce. The goal is to bridge the expensive years however you can.",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "nanny-share, relatives"
+      },
+      {
+        "name": "calendar",
+        "label": "staggered shifts"
+      },
+      {
+        "name": "briefcase",
+        "label": "employer care perks"
       }
     ]
   },
   {
     "id": "s26",
     "type": "character",
-    "pose": "explain",
-    "narration": "So the honest answer is: it depends who you are. A healthy, single, high earner with no kids often wins big in America — low taxes, few of those costly bills. But a family with children, health needs, and college ahead can easily end up better off in the higher-tax countries, where the scary tax rate already bought the things that would bankrupt them in the States.",
+    "pose": "present",
+    "narration": "First, never decide on the daycare bill alone. Run the full math: the lower salary, minus daycare, minus work costs — but then weigh the lost raises, retirement, and career growth over the next twenty years. Nine times out of ten, powering through the expensive early years keeps far more wealth than stepping out to save on daycare.",
     "props": [
       {
-        "name": "smiley",
-        "label": "healthy single earner → US"
+        "name": "calculator",
+        "label": "count the next 20 years"
       },
       {
-        "name": "couple",
-        "label": "family with kids → often abroad"
+        "name": "chartup",
+        "label": "career growth counts"
       },
       {
         "name": "scale",
-        "label": "it depends who you are"
+        "label": "power through usually wins"
       }
     ]
   },
   {
     "id": "s50",
-    "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "my country has the lowest taxes",
-    "memeBottom": "my country keeps the most after tax AND the bills",
-    "narration": "This is the mindset shift the whole episode is about. Bragging about low taxes is easy. The number that actually matters is what survives after both the tax office and the bills the tax was supposed to cover. Measure that, and the leaderboard looks nothing like the headlines."
-  },
-  {
-    "id": "s27",
-    "type": "title",
-    "narration": "So what should you actually take from all this?",
-    "heading": "What To Do",
-    "kicker": "read the whole system"
-  },
-  {
-    "id": "s28",
     "type": "character",
     "pose": "present",
-    "narration": "First, never judge a country, or a job offer abroad, on the headline tax rate. A low-tax country can be expensive to live in once you self-fund healthcare and education, and a high-tax one can be a bargain if it covers them. Always ask the real question: after tax and after the big bills, what actually lands in my life?",
+    "narration": "And think in terms of the whole household, not two separate paychecks. If daycare temporarily wipes out the lower salary, that's painful but survivable when you remember the higher earner keeps climbing, and the lower earner's career keeps its place in line. You're not losing money — you're paying to protect the family's total future earning power.",
     "props": [
       {
-        "name": "warning",
-        "label": "ignore the headline rate"
+        "name": "couple",
+        "label": "think as one household"
+      },
+      {
+        "name": "chartup",
+        "label": "both careers survive"
       },
       {
         "name": "scale",
-        "label": "tax + the big bills"
+        "label": "protect total earning power"
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "type": "character",
+    "pose": "present",
+    "narration": "Second, attack the bill with every tool. Use a dependent-care FSA to pay with pre-tax dollars, claim the child-and-dependent-care tax credit, check your state's pre-K and subsidy programs, and compare care types — a home daycare or a nanny-share can cost far less than a big center. Each move can claw back thousands a year.",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "FSA + tax credits"
       },
       {
-        "name": "moneybag",
-        "label": "what truly lands"
+        "name": "mappin",
+        "label": "state pre-K programs"
+      },
+      {
+        "name": "handshake",
+        "label": "nanny-share, home daycare"
       }
     ]
   },
@@ -524,117 +654,77 @@
     "id": "s51",
     "type": "character",
     "pose": "present",
-    "narration": "And if you're genuinely choosing between countries — for work or emigration — model your actual life, not an average. Price out your real healthcare needs, your kids, your housing, your income, in each system. The right country for a single software engineer is often the wrong one for a family of five, and only your own numbers can tell you which is which.",
+    "narration": "And if one parent does step back, do it deliberately and briefly. Keep skills current, stay networked, and plan the return before you leave. A short, intentional pause is survivable; an open-ended exit is where the career damage compounds. The goal is to bend around the daycare years, not to snap your trajectory in half.",
     "props": [
       {
-        "name": "calculator",
-        "label": "model your real life"
+        "name": "calendar",
+        "label": "short and planned"
       },
       {
-        "name": "couple",
-        "label": "not an average person"
+        "name": "handshake",
+        "label": "stay networked"
       },
       {
-        "name": "globe",
-        "label": "right country is personal"
+        "name": "chartup",
+        "label": "plan the return"
       }
     ]
   },
   {
-    "id": "s29",
+    "id": "s28",
     "type": "character",
-    "pose": "present",
-    "narration": "Second, know your own profile. If you're young, healthy, childless, and high-earning, a low-tax system rewards you — so bank the difference and self-insure aggressively. If you have a family, chronic health costs, or kids heading to college, the value of a system that pre-pays those is enormous. Match the system to your life, not to a slogan.",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. Childcare feels like a bill, but it's really a bridge — an expensive, brutal, few-year bridge that protects two careers and decades of earnings on the other side. The families who understand that it's temporary, and who refuse to torch a career to dodge it, come out dramatically ahead. The daycare years end. The career doesn't have to.",
     "props": [
       {
+        "name": "bridge",
+        "label": "a few-year bridge"
+      },
+      {
+        "name": "chartup",
+        "label": "protects two careers"
+      },
+      {
         "name": "smiley",
-        "label": "know your profile"
-      },
-      {
-        "name": "shield",
-        "label": "low-tax? self-insure"
-      },
-      {
-        "name": "couple",
-        "label": "family? value coverage"
+        "label": "the daycare years end"
       }
     ]
   },
   {
     "id": "s52",
     "type": "character",
-    "pose": "present",
-    "narration": "And wherever you land, use the system you're actually in. In a low-tax country, the burden of funding health, education, and retirement falls on you — so you must save and insure deliberately, because no one else will. In a high-tax country, you've already paid for a lot, so don't double-pay out of fear. Know what your taxes already bought.",
-    "props": [
-      {
-        "name": "shield",
-        "label": "low-tax: fund it yourself"
-      },
-      {
-        "name": "smiley",
-        "label": "high-tax: don't double-pay"
-      },
-      {
-        "name": "scale",
-        "label": "know what tax bought"
-      }
-    ]
-  },
-  {
-    "id": "s30",
-    "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson. There's no such thing as a low-tax country — only different ways of paying for the same things. America collects less tax and sends you the bills directly. The others collect more tax and pay the bills for you. The money leaves your hands either way. The only question is whether it goes through the government, or straight to the hospital.",
+    "narration": "And zoom out on the national picture. Countries that heavily subsidize childcare get more parents working, higher birth rates, and stronger long-run growth — which is why many treat it as an investment, not welfare. The US largely leaves families to solve it alone, and the result is exactly the brutal state-by-state lottery we just ranked.",
     "props": [
       {
-        "name": "scale",
-        "label": "no 'low-tax' country"
+        "name": "globe",
+        "label": "subsidy = more parents working"
       },
       {
-        "name": "hospital",
-        "label": "govt, or the hospital"
+        "name": "chartup",
+        "label": "treated as investment"
       },
       {
-        "name": "moneybag",
-        "label": "the money leaves either way"
+        "name": "warning",
+        "label": "the US leaves it to families"
       }
     ]
   },
   {
-    "id": "s53",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And zoom out on the deepest trade-off. Lower taxes mean more money and more freedom in your hands — and more personal risk if life goes wrong. Higher taxes mean less cash and less choice — but a floor you can't fall through. Neither is simply right. Every country is really just a different answer to one question: how much risk should a person carry alone?",
-    "props": [
-      {
-        "name": "moneybag",
-        "label": "low tax: freedom + risk"
-      },
-      {
-        "name": "shield",
-        "label": "high tax: a floor"
-      },
-      {
-        "name": "scale",
-        "label": "how much risk, alone?"
-      }
-    ]
-  },
-  {
-    "id": "s31",
+    "id": "s29",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this finally made the real tax comparison make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this made the real cost of childcare make sense, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "scale",
+        "name": "baby",
         "label": "which price tag next?"
       }
     ]
   },
   {
-    "id": "s32",
+    "id": "s30",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
