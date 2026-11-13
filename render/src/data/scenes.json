@@ -3,47 +3,47 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "Earn a hundred thousand dollars in Texas and you keep around seventy-six thousand of it. Earn the exact same hundred thousand in California or Hawaii, and you keep closer to sixty-seven. Same salary, same job, same federal tax — but nearly nine thousand dollars a year vanishes or survives depending purely on the state line you live behind. Today we rank what you actually keep from a hundred-thousand-dollar salary in every US state.",
+    "narration": "An American keeps more of their paycheck than a Brit, a Canadian, or an Australian. It sounds like a clear win — until you remember the American then pays thousands out of pocket for healthcare, college, and childcare that the other three get largely for free. So who actually comes out ahead? Today we put the four big English-speaking tax systems head to head, and find out who really keeps the most.",
     "props": [
       {
-        "name": "paystub",
-        "label": "$100K salary"
+        "name": "flagUS",
+        "label": "keeps more cash"
       },
       {
-        "name": "moneybag",
-        "label": "keep $76K or $67K"
+        "name": "hospital",
+        "label": "but pays for healthcare"
       },
       {
         "name": "scale",
-        "label": "all 50 states ranked"
+        "label": "US vs UK vs CA vs AU"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the gap nobody budgets for. On an identical six-figure salary, the difference in take-home pay between the most and least tax-friendly states is close to nine thousand dollars every single year. That's a vacation, a emergency fund, or a year of retirement savings — handed to a state tax office, or not, based on nothing but your address.",
-    "text": "$9,000",
-    "sub": "take-home gap on $100K: best vs worst state",
-    "icon": "moneybag"
+    "narration": "Here's the split that defines everything. The United States has no national sales tax at all. The United Kingdom adds twenty percent to almost everything you buy. That single difference — a hidden consumption tax most Americans never pay — quietly reshapes how much each country's government takes, and what it hands back.",
+    "text": "0% vs 20%",
+    "sub": "national sales tax / VAT: US vs UK",
+    "icon": "receipt"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank the states by what you keep from a hundred thousand dollars. We'll separate the federal tax everyone pays from the state tax that varies, expose the nine states with no income tax and the catch that comes with them, decode the brackets, and adjust it all for the cost of living. Because it's not what you earn that matters. It's what survives the tax code where you live.",
+    "narration": "So today we compare four systems the right way. We'll line up their income taxes, expose the hidden consumption tax Americans don't pay, add up the total tax wedge each government takes, reveal what that tax actually buys back, and settle the real question: after taxes and the bills they cover, who keeps the most? Let's go.",
     "props": [
       {
         "name": "scale",
-        "label": "rank the states"
+        "label": "income + consumption tax"
       },
       {
-        "name": "receipt",
-        "label": "federal vs state"
+        "name": "hospital",
+        "label": "what it buys back"
       },
       {
-        "name": "house",
-        "label": "adjusted for cost of living"
+        "name": "moneybag",
+        "label": "who keeps the most"
       }
     ]
   },
@@ -52,170 +52,167 @@
     "type": "image",
     "src": "img/memes/twobuttons.jpg",
     "meme": "Two Buttons",
-    "memeTop": "chase the highest salary",
-    "memeBottom": "chase the highest take-home",
-    "narration": "Because a raise that pushes you into a higher-tax state can quietly be a pay cut. Before we rank the states, let's agree on what actually comes out of that paycheck."
+    "memeTop": "low taxes, pay for everything yourself",
+    "memeBottom": "high taxes, most things covered",
+    "narration": "Because this is the real choice between these countries — not high tax versus low tax, but who pays for life's big bills: you, or the government, using your taxes. Before we compare, let's define what a tax even is."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what actually gets taken from a paycheck.",
-    "heading": "The Deductions",
-    "kicker": "federal, state, FICA"
+    "narration": "First, the two completely different ways to tax a person.",
+    "heading": "Two Ways to Tax",
+    "kicker": "income vs consumption"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-usincome",
-    "narration": "Every US worker pays federal income tax, applied to taxable income — the total income less allowable deductions. On a hundred thousand dollars, that federal bite, plus Social Security and Medicare, takes out roughly a quarter before any state even gets involved. That part is the same whether you live in Miami or Manhattan."
+    "sourceId": "wiki-tax",
+    "narration": "A tax, at its core, is a mandatory financial charge or levy imposed on an individual or legal entity by a government. But governments collect it in two very different ways. They can tax the money you earn — income tax. Or they can tax the money you spend — a consumption tax. Every country leans on a different mix of the two, and that mix is the whole story."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice how much the federal government alone takes before states even appear. On a hundred thousand dollars, federal income tax plus Social Security and Medicare can total around twenty-four or twenty-five thousand dollars. A quarter of your salary is gone in every state — the state tax fight is really over the next few thousand on top.",
+    "narration": "And there's a third layer people forget: payroll taxes. In the US it's Social Security and Medicare; in the UK, National Insurance; in Canada and Australia, their own contributions. These come straight off your paycheck on top of income tax, quietly funding pensions and health. Any honest comparison has to count them — they're income tax by another name.",
     "props": [
       {
-        "name": "receipt",
-        "label": "~$25K to the feds"
-      },
-      {
         "name": "paystub",
-        "label": "a quarter, everywhere"
+        "label": "payroll taxes too"
       },
       {
-        "name": "scale",
-        "label": "states fight over the rest"
+        "name": "receipt",
+        "label": "Social Security, NI"
+      },
+      {
+        "name": "warning",
+        "label": "income tax by another name"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-stateincome",
-    "narration": "Then comes the wild card: state income tax. And here's the fact that drives this whole episode — nine states impose no state income tax at all. In those states, the quarter the feds take is the end of the story. In the highest-tax states, you hand over thousands more on top, for the identical salary."
-  },
-  {
-    "id": "s42",
-    "type": "callout",
-    "narration": "Here are the nine. Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Washington, Wyoming, and New Hampshire charge no tax on earned income. For a six-figure earner, living in one of these instead of a high-tax state can mean keeping an extra several thousand dollars a year, automatically.",
-    "text": "9 states",
-    "sub": "charge no tax on earned income",
-    "icon": "mappin"
+    "sourceId": "wiki-rate",
+    "narration": "And the number everyone quotes — the tax rate — is simply determined by tax laws of the country, which makes it tempting to compare nations on a single headline figure. That's the trap. One nation's low income tax can hide a brutal consumption tax; another's scary income rate can come with almost everything covered. You have to add up the whole picture."
   },
   {
     "id": "s8",
     "type": "character",
     "pose": "explain",
-    "narration": "So your take-home is really two layers. The federal layer is fixed, a flat national bite no one escapes. The state layer is a lottery decided by geography — zero in some states, over ten percent of top income in others. Stack the two, and the gap between states is entirely the second layer's doing.",
+    "narration": "So here's the fundamental split. America taxes income relatively lightly and barely taxes consumption at all — no national sales tax. The UK, Canada, and Australia tax income a bit harder and then add a large consumption tax on almost everything you buy. Same goal, raising revenue — but collected from opposite ends of your money.",
     "props": [
       {
-        "name": "receipt",
-        "label": "federal: fixed"
+        "name": "flagUS",
+        "label": "US: light, income-only"
       },
       {
-        "name": "mappin",
-        "label": "state: the wild card"
+        "name": "flagGB",
+        "label": "UK/CA/AU: income + spending"
       },
       {
         "name": "scale",
-        "label": "the gap is all state"
+        "label": "opposite ends of your money"
       }
     ]
   },
   {
-    "id": "s51",
+    "id": "s42",
     "type": "character",
     "pose": "explain",
-    "narration": "And don't forget the quiet third layer: local taxes. A few cities, like New York City, stack their own income tax on top of federal and state. So a high earner in Manhattan faces three separate income taxes at once, while someone in a no-tax state faces just one. The layers are exactly why identical salaries live such different lives.",
+    "narration": "And why does this split exist at all? Consumption taxes are easy for governments to collect and hard for people to dodge — everyone shops. Income taxes are more visible and politically painful to raise. The US leaned into income and property taxes and never adopted a national sales tax; the rest of the developed world embraced VAT decades ago. It's a historical fork, not an accident.",
     "props": [
       {
-        "name": "capitol",
-        "label": "some cities tax too"
+        "name": "store",
+        "label": "VAT: easy to collect"
       },
       {
-        "name": "receipt",
-        "label": "three taxes at once"
+        "name": "paystub",
+        "label": "income tax: visible, painful"
       },
       {
-        "name": "warning",
-        "label": "NYC stacks a third"
+        "name": "globe",
+        "label": "a historical fork"
       }
     ]
-  },
-  {
-    "id": "s62",
-    "type": "stage",
-    "motif": "grossnetshrink",
-    "caption": "gross shrinks to net — before the state",
-    "narration": "Watch the shrink happen. Your gross salary is the big, proud number on the offer. Then federal income tax takes its slice, then Social Security, then Medicare — and what's left, your net, is already far smaller. And we haven't even reached the state yet. The paycheck you actually spend is what survives this whole gauntlet."
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's rank the states by what you actually keep.",
-    "heading": "The Ranking",
-    "kicker": "take-home from $100K"
+    "narration": "So let's start with the tax everyone sees: income tax.",
+    "heading": "The Income Layer",
+    "kicker": "what the four take"
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "takehomebystate",
-    "caption": "what you keep from $100K, by state",
-    "narration": "Here's the take-home on a hundred-thousand-dollar salary. In no-income-tax states like Texas, you keep around seventy-six thousand. In moderate states, low seventies. And in the highest-tax states — California, Hawaii, New York — you keep closer to sixty-seven or sixty-eight. The federal government took the same cut from everyone; the states wrote the rest of the story."
+    "motif": "countrytaxbars",
+    "caption": "what you keep from a median salary, by country",
+    "narration": "On income tax alone, the four are surprisingly close. Take a typical median salary, and the American keeps the most of it, around seventy-seven percent after income tax and payroll deductions. Australia is close behind. The UK and Canada take a bit more, leaving workers closer to seventy-two or seventy-three percent. On the paycheck alone, America wins — but only just, and only so far."
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And remember these percentages are for a typical median earner. Change the income and the ranking shifts, because all four use progressive systems. A low earner can pay almost nothing in any of them, while a top earner in Canada or the UK faces combined rates near or above fifty percent. The 'winner' genuinely changes depending on where you sit on the income ladder.",
+    "props": [
+      {
+        "name": "chartup",
+        "label": "progressive systems"
+      },
+      {
+        "name": "paystub",
+        "label": "winner shifts by income"
+      },
+      {
+        "name": "scale",
+        "label": "low vs top earner"
+      }
+    ]
   },
   {
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Take-home from $100K ($K)",
-    "unit": "$K",
-    "narration": "Put the numbers in a line. Hawaii around sixty-seven thousand kept, California sixty-eight, New York seventy, Illinois seventy-two, Colorado seventy-three, and Texas near seventy-six. The spread from top to bottom is about nine thousand dollars a year — the exact same paycheck, carved differently by fifty different tax codes.",
+    "title": "Kept from a median salary, income tax (%)",
+    "unit": "%",
+    "narration": "Here it is in numbers. On a median wage, after income tax and payroll contributions, Canada leaves you about seventy-two percent, the UK seventy-three, Australia seventy-six, and the US around seventy-seven. The gap between the most and least is just five points. If the story ended at the paycheck, these four countries would look almost identical.",
     "data": [
       {
-        "label": "Hawaii",
-        "value": 67
-      },
-      {
-        "label": "California",
-        "value": 68
-      },
-      {
-        "label": "New York",
-        "value": 70
-      },
-      {
-        "label": "Illinois",
+        "label": "Canada",
         "value": 72
       },
       {
-        "label": "Colorado",
+        "label": "UK",
         "value": 73
       },
       {
-        "label": "Texas",
+        "label": "Australia",
         "value": 76
+      },
+      {
+        "label": "US",
+        "value": 77
       }
     ],
-    "highlight": 5
+    "highlight": 3
   },
   {
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And the gap explodes for high earners. At a hundred thousand the spread is around nine thousand, but at three hundred thousand or more, high-tax states can take twenty or thirty thousand dollars a year beyond what a no-tax state would. The more you earn, the more brutally your state of residence decides your real wealth.",
+    "narration": "And notice how misleading that near-tie is. These paycheck percentages are exactly the numbers people screenshot to 'prove' America is far lower tax. But they capture only the first layer. Judging four tax systems by income tax alone is like judging four cars by their sticker price and ignoring the fuel, insurance, and repairs. The headline is the smallest part of the truth.",
     "props": [
       {
-        "name": "chartup",
-        "label": "gap grows with income"
-      },
-      {
         "name": "warning",
-        "label": "$20-30K at high incomes"
+        "label": "only the first layer"
       },
       {
-        "name": "mappin",
-        "label": "your state decides"
+        "name": "scale",
+        "label": "sticker price only"
+      },
+      {
+        "name": "receipt",
+        "label": "the rest is hidden"
       }
     ]
   },
@@ -223,223 +220,123 @@
     "id": "s12",
     "type": "character",
     "pose": "explain",
-    "narration": "And watch that yearly gap compound. Nine thousand dollars a year, invested over a thirty-year career, becomes well over half a million dollars with growth. Two identical earners, one in a no-tax state and one in a high-tax state, can retire with a fortune between them — built from nothing but a difference in state tax codes.",
+    "narration": "But the story absolutely does not end at the paycheck. Because the moment that take-home pay gets spent, a second, invisible tax kicks in for three of these four countries — and it's enormous. This is where the American advantage starts to blur, and where most paycheck comparisons quietly cheat.",
     "props": [
       {
-        "name": "snowball",
-        "label": "$9K/yr invested"
+        "name": "warning",
+        "label": "the paycheck isn't the end"
       },
       {
-        "name": "chartup",
-        "label": "$500K+ over a career"
+        "name": "receipt",
+        "label": "a second tax on spending"
       },
       {
-        "name": "mappin",
-        "label": "purely from the state"
-      }
-    ]
-  },
-  {
-    "id": "s53",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this is why high earners obsess over state residency. Athletes, executives, and founders will literally change which state they call home to protect their income, because at high salaries the state slice runs into tens of thousands a year. It's not tax evasion — it's simply living where the code is kinder, a legal lever anyone can pull.",
-    "props": [
-      {
-        "name": "briefcase",
-        "label": "high earners relocate"
-      },
-      {
-        "name": "mappin",
-        "label": "residency is a lever"
-      },
-      {
-        "name": "moneybag",
-        "label": "legal, not evasion"
+        "name": "scale",
+        "label": "where comparisons cheat"
       }
     ]
   },
   {
     "id": "s13",
     "type": "title",
-    "narration": "So should everyone just move to a no-tax state?",
-    "heading": "The No-Tax Lure",
-    "kicker": "and the catch"
+    "narration": "Which brings us to the tax Americans forget exists.",
+    "heading": "The Hidden Tax",
+    "kicker": "VAT and GST"
   },
   {
     "id": "s14",
     "type": "stage",
-    "motif": "notaxcatch",
-    "caption": "no income tax — but the money comes from somewhere",
-    "narration": "Here's the catch nobody mentions. States still need revenue, so the ones with no income tax simply collect it elsewhere — higher sales taxes, higher property taxes, or fees. Texas and New Hampshire have famously steep property taxes. So the money you save on income tax can quietly reappear on your home and at the register. No state is truly free."
+    "motif": "vathiddentax",
+    "caption": "the consumption tax baked into every price",
+    "narration": "It's called value-added tax, or VAT — and goods and services tax, GST, elsewhere. In the UK it's twenty percent, baked silently into the price of almost everything. Australia's GST is ten percent, Canada's federal GST five, often more with provincial tax on top. And the US? Zero national rate. Americans genuinely do not pay this tax that quietly costs everyone else a fifth of every purchase."
   },
   {
     "id": "s44",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "move to a state with no income tax",
-    "memeBottom": "compare the TOTAL tax burden across all taxes",
-    "narration": "This is the upgrade most tax advice skips. Chasing zero income tax is the beginner move. The advanced move is adding up every tax — income, sales, property, and fees — and comparing the real total. Sometimes the no-tax state wins. Sometimes it quietly loses."
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the clawback can be sneaky in its timing. Income tax hits only when you earn; property and sales taxes hit forever, every year and every purchase. So a no-income-tax state can feel great on payday and quietly expensive the rest of your life. The form the tax takes matters as much as the total.",
-    "props": [
-      {
-        "name": "house",
-        "label": "property tax: every year"
-      },
-      {
-        "name": "basket",
-        "label": "sales tax: every purchase"
-      },
-      {
-        "name": "warning",
-        "label": "the form matters"
-      }
-    ]
+    "type": "callout",
+    "narration": "Put the VAT bite in real money. At a twenty percent rate, a Brit spending forty thousand pounds a year on taxable goods hands over around eight thousand in VAT alone — a second income tax they never see itemized. The American spending the same amount pays only small, visible state sales taxes, often a few percent, and nothing to the federal government.",
+    "text": "$8K",
+    "sub": "hidden VAT on £40K of UK spending",
+    "icon": "receipt"
   },
   {
     "id": "s15",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "Top state income tax rate (%)",
-    "unit": "%",
-    "narration": "Look at the top state income tax rates. Texas and Florida, zero. Colorado, a flat four. Illinois, about five. New York and Hawaii, around eleven at the top. And California tops out near thirteen percent — the highest in the nation. That top rate is why a high earner's take-home swings so hard from state to state.",
-    "data": [
-      {
-        "label": "Texas",
-        "value": 0
-      },
-      {
-        "label": "Colorado",
-        "value": 4
-      },
-      {
-        "label": "Illinois",
-        "value": 5
-      },
-      {
-        "label": "New York",
-        "value": 11
-      },
-      {
-        "label": "Hawaii",
-        "value": 11
-      },
-      {
-        "label": "California",
-        "value": 13
-      }
-    ],
-    "highlight": 5
+    "type": "screenshot",
+    "sourceId": "wiki-vat",
+    "narration": "The mechanics: VAT is a consumption tax that is levied on the value added at each stage of a product's journey to you. You never see it as a separate line — it's already inside the sticker price. That's what makes it so politically easy and so personally invisible. You pay it every single day without ever feeling the sting of writing a check."
   },
   {
     "id": "s16",
-    "type": "character",
-    "pose": "explain",
-    "narration": "So the honest comparison isn't income tax alone — it's the total tax burden. Add income, sales, and property taxes together, and some no-income-tax states are still cheaper overall, while others claw most of it back. The headline of zero income tax is a marketing line. The real number is everything the state takes, added up.",
-    "props": [
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Standard VAT / GST rate (%)",
+    "unit": "%",
+    "narration": "Look at the consumption-tax gap. The United States, zero at the national level. Canada, a five percent federal GST. Australia, ten percent. And the United Kingdom, a full twenty percent on most of what you buy. That twenty-point swing is a massive, hidden chunk of the real tax burden that a simple income-tax comparison completely misses.",
+    "data": [
       {
-        "name": "scale",
-        "label": "total tax burden"
+        "label": "US",
+        "value": 0
       },
       {
-        "name": "receipt",
-        "label": "income + sales + property"
+        "label": "Canada",
+        "value": 5
       },
       {
-        "name": "warning",
-        "label": "'zero' is marketing"
+        "label": "Australia",
+        "value": 10
+      },
+      {
+        "label": "UK",
+        "value": 20
       }
-    ]
+    ],
+    "highlight": 3
   },
   {
     "id": "s45",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And property tax is the sneakiest piece. A no-income-tax state often funds itself with high property taxes, so homeowners there quietly pay every year whether their income is high or low. For a retiree on a modest income, a high-property-tax, no-income-tax state can actually be the worst of both worlds.",
-    "props": [
-      {
-        "name": "house",
-        "label": "property tax funds it"
-      },
-      {
-        "name": "warning",
-        "label": "paid regardless of income"
-      },
-      {
-        "name": "retiree",
-        "label": "worst for retirees"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "compare countries on income tax",
+    "memeBottom": "compare income tax + VAT + what it all buys back",
+    "narration": "This is the full-brain version of the tax debate. The beginner compares paychecks. The next level adds the hidden consumption tax. The master adds what the tax actually funds — and only then can you honestly say which country keeps you richer."
   },
   {
     "id": "s17",
     "type": "title",
-    "narration": "And the tax itself isn't one flat bite — it climbs.",
-    "heading": "The Brackets",
-    "kicker": "how the slices work"
+    "narration": "So let's add both layers into the number that counts.",
+    "heading": "The Total Wedge",
+    "kicker": "everything the state takes"
   },
   {
     "id": "s18",
     "type": "screenshot",
-    "sourceId": "wiki-progressive",
-    "narration": "Most income tax is progressive — a tax in which the tax rate increases as the taxable amount increases. You don't pay your top rate on every dollar. You pay low rates on the first slice of income and higher rates only on the income above each threshold. It's why your average tax rate is always lower than the scary top number."
-  },
-  {
-    "id": "s56",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And progressive taxation is why comparing states is tricky. A state can have a high top rate but low rates on middle incomes, so a hundred-thousand earner there might pay less than in a 'low-rate' flat-tax state. You have to run your actual income through each state's brackets — the headline rate alone can badly mislead you.",
-    "props": [
-      {
-        "name": "scale",
-        "label": "run your real income"
-      },
-      {
-        "name": "percent",
-        "label": "high top rate ≠ high for you"
-      },
-      {
-        "name": "warning",
-        "label": "headline rates mislead"
-      }
-    ]
-  },
-  {
-    "id": "s63",
-    "type": "stage",
-    "motif": "bracketladder",
-    "caption": "you climb the brackets one rung at a time",
-    "narration": "Picture the brackets as a ladder. Your first dollars are taxed at the lowest rung, the next band at a higher rung, and only your very top dollars at the top rate. You climb it one rung at a time — which is why no single raise ever drops your take-home. You only ever pay the higher rate on the dollars above each step."
+    "sourceId": "wiki-wedge",
+    "narration": "Economists call it the tax wedge — the difference between the price consumers pay and the value producers receive from a transaction. In plain terms, it's the total slice the government takes out of the economy around you. Stack income tax and consumption tax together, and the four countries suddenly look very different from the paycheck view."
   },
   {
     "id": "s19",
-    "type": "screenshot",
-    "sourceId": "wiki-bracket",
-    "narration": "Those thresholds are tax brackets — the divisions at which tax rates change in a progressive system. Understanding them kills the biggest tax myth of all: that a raise can push you into a bracket that leaves you worse off. It can't. Only the dollars above the line get the higher rate. A raise always leaves you with more."
+    "type": "stage",
+    "motif": "taxwedgebite",
+    "caption": "income tax + consumption tax combined",
+    "narration": "Add it all up and the ranking tightens into a clear order. The US takes the smallest total bite of your money. Australia is next. Then the UK and Canada, where a hefty income tax plus a large consumption tax means the government touches a noticeably bigger share of everything you earn and spend. On total tax taken, America really is the low-tax country of the four."
   },
   {
     "id": "s46",
     "type": "character",
     "pose": "explain",
-    "narration": "And the bracket myth costs people real money, because some turn down raises or overtime fearing a higher bracket. That fear is pure fiction. Moving up a bracket only taxes the new dollars above the line at the higher rate; every dollar below stays taxed exactly as before. A raise is always, mathematically, more money in your pocket.",
+    "narration": "And the US makes up some of the gap in sneaky ways. With no national VAT, American states and cities layer their own sales taxes, property taxes, and fees — which is why the federal low-tax story isn't the whole picture even at home. Add state income and sales tax, and a Californian or New Yorker isn't living in a low-tax country at all.",
     "props": [
       {
-        "name": "chartup",
-        "label": "a raise is always more"
+        "name": "mappin",
+        "label": "state + local taxes"
+      },
+      {
+        "name": "receipt",
+        "label": "sales + property stacked"
       },
       {
         "name": "warning",
-        "label": "the bracket myth"
-      },
-      {
-        "name": "paystub",
-        "label": "only new dollars taxed higher"
+        "label": "not low-tax everywhere"
       }
     ]
   },
@@ -447,89 +344,61 @@
     "id": "s20",
     "type": "character",
     "pose": "explain",
-    "narration": "This is why your effective tax rate — what you actually pay across all brackets — is far below your top rate. Someone 'in the twenty-four percent bracket' might really pay seventeen or eighteen percent overall. When comparing states, it's this effective rate, not the headline top rate, that decides what truly lands in your account.",
+    "narration": "So on raw tax alone, America wins — clearly. An American hands over less of their money, both earning it and spending it, than a Brit, a Canadian, or an Australian. If the only thing that mattered were minimizing the government's cut, the United States would be the obvious champion. But taxes aren't charity. You're supposed to get something back.",
     "props": [
       {
-        "name": "percent",
-        "label": "effective < top rate"
+        "name": "flagUS",
+        "label": "US takes the least"
       },
       {
-        "name": "paystub",
-        "label": "what really lands"
+        "name": "moneybag",
+        "label": "less earning + spending"
       },
       {
-        "name": "scale",
-        "label": "compare effective rates"
+        "name": "warning",
+        "label": "but what do you get back?"
       }
     ]
   },
   {
-    "id": "s47",
-    "type": "callout",
-    "narration": "See the difference in one example. A single filer earning a hundred thousand might sit 'in the twenty-four percent bracket,' yet pay an effective federal rate closer to seventeen percent once all the lower brackets are counted. The headline rate scares; the effective rate is what actually leaves your account.",
-    "text": "24% vs 17%",
-    "sub": "top bracket vs effective rate on $100K",
-    "icon": "percent"
-  },
-  {
     "id": "s57",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "a quarter of my salary gone before I see it",
-    "memeBottom": "this is fine",
-    "narration": "For most workers, this is payday reality: the gross number on the offer letter and the net number in the account are two very different figures. Understanding exactly where that gap goes — federal, state, local, FICA — is the first step to legally shrinking it."
+    "type": "callout",
+    "narration": "Put the total burden in one figure. Measured as all taxes collected against the size of the economy, the US government takes roughly a quarter to twenty-seven percent, while the UK, Canada, and Australia sit higher, often in the low-to-mid thirties. That gap of several points of an entire economy is the real, honest size of the difference.",
+    "text": "~27% vs ~33%",
+    "sub": "total tax as a share of the economy: US vs the others",
+    "icon": "scale"
   },
   {
     "id": "s21",
     "type": "title",
-    "narration": "But take-home pay is only half the equation.",
-    "heading": "The Real Take-Home",
-    "kicker": "adjust for cost of living"
+    "narration": "Because the whole point of tax is what it buys you.",
+    "heading": "What It Buys Back",
+    "kicker": "the other side"
   },
   {
     "id": "s22",
-    "type": "screenshot",
-    "sourceId": "wiki-col",
-    "narration": "What matters is what that take-home buys — the cost of maintaining a certain standard of living. A no-tax state that keeps you an extra nine thousand dollars is a mirage if its housing and prices eat it twice over. The real winner is the state where a high take-home meets a low cost of living."
+    "type": "stage",
+    "motif": "taxvsservices",
+    "caption": "the big bills — covered, or on you",
+    "narration": "Here's what the higher-tax countries hand back. In the UK, Canada, and Australia, healthcare is largely free at the point of use. University is free or heavily capped. Childcare is subsidized, and pensions are stronger. In the US, you pay for all of that privately — and those bills are huge. The extra tax abroad isn't lost. It's prepaying the exact costs Americans face alone."
   },
   {
-    "id": "s48",
+    "id": "s47",
     "type": "character",
     "pose": "explain",
-    "narration": "Think of it as real, spendable income. Ten thousand dollars of extra take-home means nothing if rent is twenty thousand higher. The only honest ranking combines what the tax code leaves you with what the local economy charges you — take-home pay divided by the cost of a life. That's the number that actually fills your savings account.",
+    "narration": "And healthcare is the giant on this side of the ledger. The US spends about double per person on health compared to the others, yet leaves millions exposed to huge bills. The extra tax a Brit or Canadian pays is, in large part, simply a national health-insurance premium — one that can never be denied, dropped, or tied to a job.",
     "props": [
       {
-        "name": "scale",
-        "label": "take-home ÷ cost of life"
+        "name": "hospital",
+        "label": "US spends ~2x on health"
       },
       {
-        "name": "house",
-        "label": "rent can erase the savings"
+        "name": "shield",
+        "label": "tax = national health premium"
       },
       {
-        "name": "moneybag",
-        "label": "real spendable income"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this is the exact trap of chasing a big-city salary. The offer looks huge, but between high state and local taxes and brutal rent, the take-home can buy less life than a smaller salary in a cheaper state. The glamorous number on the contract is not the number that funds your actual existence.",
-    "props": [
-      {
-        "name": "skyline",
-        "label": "big-city salary trap"
-      },
-      {
-        "name": "house",
-        "label": "tax + rent eat it"
-      },
-      {
-        "name": "scale",
-        "label": "less life, bigger number"
+        "name": "warning",
+        "label": "can't be dropped"
       }
     ]
   },
@@ -537,172 +406,235 @@
     "id": "s23",
     "type": "character",
     "pose": "explain",
-    "narration": "And this flips the rankings. High-tax California and New York are often also high-cost, so they lose on both ends. But some no-tax states, like Texas and Tennessee, pair solid take-home with reasonable living costs — the genuine sweet spot. Meanwhile a no-tax state with sky-high housing can quietly be worse than a modest-tax state that's cheap to live in.",
+    "narration": "And those American bills are staggering. Health insurance and out-of-pocket costs can run a family over twenty thousand dollars a year. College adds tens of thousands in debt. Childcare, another fifteen to twenty thousand per kid. The money a lower-tax American keeps gets quietly clawed back — not by the tax office, but by the hospital, the university, and the daycare.",
     "props": [
       {
-        "name": "scale",
-        "label": "tax AND cost of living"
+        "name": "hospital",
+        "label": "health: $20K+/yr"
       },
       {
-        "name": "smiley",
-        "label": "the real sweet spot"
+        "name": "gradcap",
+        "label": "college debt"
       },
       {
-        "name": "warning",
-        "label": "no-tax + high-cost loses"
+        "name": "baby",
+        "label": "childcare $15-20K"
       }
     ]
+  },
+  {
+    "id": "s48",
+    "type": "callout",
+    "narration": "Stack the American private bills and the picture flips. Health premiums, college saving, and childcare can quietly cost a US family thirty to forty thousand dollars a year — money that, in the other three countries, the higher tax already covered. The low-tax paycheck can be an illusion the instant real life begins.",
+    "text": "$30-40K/yr",
+    "sub": "private bills a US family covers that others' taxes do",
+    "icon": "hospital"
+  },
+  {
+    "id": "s24",
+    "type": "title",
+    "narration": "So let's run the comparison the honest way.",
+    "heading": "The Real Number",
+    "kicker": "tax plus the bills"
+  },
+  {
+    "id": "s25",
+    "type": "stage",
+    "motif": "whatyoukeepfunnel",
+    "caption": "take-home, minus the bills others get free",
+    "narration": "Here's the funnel done properly. Start with gross pay. In every country, subtract the tax. Then, for the American, keep subtracting — health premiums, a college fund, childcare, retirement you fund yourself. For the others, those are already paid by the tax you took out. What trickles out the bottom, after everything, is the real, true take-home. And suddenly the American lead can shrink, vanish, or even reverse."
   },
   {
     "id": "s49",
     "type": "character",
     "pose": "explain",
-    "narration": "And states compete on this openly now. Low-tax states advertise their take-home advantage to lure remote workers and retirees away from the coasts, and millions are moving. It's reshaping the country — a slow migration driven, in large part, by the simple question of which state lets you keep the most of what you earn.",
+    "narration": "And there's a risk dimension the funnel hides. In the higher-tax countries, your worst-case year is capped — a serious illness or job loss won't bankrupt you, because the safety net is prepaid. In America, you keep more in a good year but carry far more catastrophic risk in a bad one. You're not just comparing cost. You're comparing certainty.",
     "props": [
       {
-        "name": "truck",
-        "label": "states compete for you"
-      },
-      {
-        "name": "mappin",
-        "label": "migration to low-tax"
-      },
-      {
-        "name": "chartup",
-        "label": "reshaping the map"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "callout",
-    "narration": "Here's the sweet spot in one idea. The dream combination is a high take-home and a low cost of living at the same time — states like Texas, Tennessee, and Florida often land near it. Keep more of your paycheck and spend less of it to live, and your savings rate can quietly double versus a high-tax, high-cost coast.",
-    "text": "2× savings",
-    "sub": "high take-home + low cost of living",
-    "icon": "moneybag"
-  },
-  {
-    "id": "s24",
-    "type": "title",
-    "narration": "So what do you actually do with all this?",
-    "heading": "What To Do",
-    "kicker": "keep more of your $100K"
-  },
-  {
-    "id": "s25",
-    "type": "character",
-    "pose": "present",
-    "narration": "First, always compare offers on take-home, adjusted for cost of living — never on gross salary. A hundred and ten thousand in a high-tax, high-cost city can leave you poorer than ninety-five thousand somewhere cheaper and lighter on tax. Run the real number before you celebrate a bigger headline figure, or accept a move.",
-    "props": [
-      {
-        "name": "calculator",
-        "label": "compare real take-home"
+        "name": "shield",
+        "label": "abroad: worst case capped"
       },
       {
         "name": "warning",
-        "label": "a raise can be a cut"
-      },
-      {
-        "name": "moneybag",
-        "label": "run it before you move"
-      }
-    ]
-  },
-  {
-    "id": "s50",
-    "type": "character",
-    "pose": "present",
-    "narration": "And max out the shelters the tax code hands you, in any state. Every dollar into a four-oh-one-k or an IRA lowers the income your state and the feds can tax. In a high-tax state especially, pre-tax retirement contributions are worth even more, because you're dodging a bigger combined bite. Shelter first, then compare what's left.",
-    "props": [
-      {
-        "name": "nestegg",
-        "label": "401k + IRA lower taxable income"
-      },
-      {
-        "name": "shield",
-        "label": "worth more in high-tax states"
-      },
-      {
-        "name": "moneybag",
-        "label": "shelter, then compare"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "pose": "present",
-    "narration": "And look past the income tax to your full picture. If you own a home, weigh property taxes. If you spend a lot, weigh sales tax. If you're retiring, check whether the state taxes Social Security or pensions — some do, some don't. The right state for a renter earning wages can be the wrong one for a retiree living off savings.",
-    "props": [
-      {
-        "name": "house",
-        "label": "owner: property tax"
-      },
-      {
-        "name": "retiree",
-        "label": "retiree: pension tax?"
+        "label": "US: more catastrophic risk"
       },
       {
         "name": "scale",
-        "label": "match the state to you"
+        "label": "cost vs certainty"
       }
     ]
   },
   {
     "id": "s26",
     "type": "character",
-    "pose": "present",
-    "narration": "Second, if your job is remote, your state is now a salary decision. Keeping a big-city paycheck while living in a no-tax, low-cost state is one of the most powerful money moves available today — you pocket both the tax savings and the cost-of-living savings at once. Few levers in personal finance are this large and this legal.",
+    "pose": "explain",
+    "narration": "So the honest answer is: it depends who you are. A healthy, single, high earner with no kids often wins big in America — low taxes, few of those costly bills. But a family with children, health needs, and college ahead can easily end up better off in the higher-tax countries, where the scary tax rate already bought the things that would bankrupt them in the States.",
     "props": [
       {
-        "name": "laptop",
-        "label": "remote = pick your state"
+        "name": "smiley",
+        "label": "healthy single earner → US"
       },
       {
-        "name": "mappin",
-        "label": "no-tax, low-cost"
+        "name": "couple",
+        "label": "family with kids → often abroad"
       },
       {
-        "name": "chartup",
-        "label": "save on both at once"
+        "name": "scale",
+        "label": "it depends who you are"
       }
     ]
   },
   {
+    "id": "s50",
+    "type": "image",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "my country has the lowest taxes",
+    "memeBottom": "my country keeps the most after tax AND the bills",
+    "narration": "This is the mindset shift the whole episode is about. Bragging about low taxes is easy. The number that actually matters is what survives after both the tax office and the bills the tax was supposed to cover. Measure that, and the leaderboard looks nothing like the headlines."
+  },
+  {
     "id": "s27",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Because here's the real lesson. Your salary is set by your job, but your take-home is set by your government — federal, then state. The federal slice you can't escape. The state slice you can choose. In a country of fifty different tax codes, where you live is one of the biggest, most ignored raises you'll ever give yourself.",
-    "props": [
-      {
-        "name": "paystub",
-        "label": "salary = your job"
-      },
-      {
-        "name": "mappin",
-        "label": "take-home = your state"
-      },
-      {
-        "name": "scale",
-        "label": "choose the slice you can"
-      }
-    ]
+    "type": "title",
+    "narration": "So what should you actually take from all this?",
+    "heading": "What To Do",
+    "kicker": "read the whole system"
   },
   {
     "id": "s28",
     "type": "character",
-    "pose": "celebrate",
-    "expression": "happy",
-    "narration": "If this changed how you read a job offer, hit subscribe — and tell me which price tag you want me to break down next.",
+    "pose": "present",
+    "narration": "First, never judge a country, or a job offer abroad, on the headline tax rate. A low-tax country can be expensive to live in once you self-fund healthcare and education, and a high-tax one can be a bargain if it covers them. Always ask the real question: after tax and after the big bills, what actually lands in my life?",
     "props": [
       {
+        "name": "warning",
+        "label": "ignore the headline rate"
+      },
+      {
+        "name": "scale",
+        "label": "tax + the big bills"
+      },
+      {
         "name": "moneybag",
-        "label": "which price tag next?"
+        "label": "what truly lands"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "pose": "present",
+    "narration": "And if you're genuinely choosing between countries — for work or emigration — model your actual life, not an average. Price out your real healthcare needs, your kids, your housing, your income, in each system. The right country for a single software engineer is often the wrong one for a family of five, and only your own numbers can tell you which is which.",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "model your real life"
+      },
+      {
+        "name": "couple",
+        "label": "not an average person"
+      },
+      {
+        "name": "globe",
+        "label": "right country is personal"
       }
     ]
   },
   {
     "id": "s29",
+    "type": "character",
+    "pose": "present",
+    "narration": "Second, know your own profile. If you're young, healthy, childless, and high-earning, a low-tax system rewards you — so bank the difference and self-insure aggressively. If you have a family, chronic health costs, or kids heading to college, the value of a system that pre-pays those is enormous. Match the system to your life, not to a slogan.",
+    "props": [
+      {
+        "name": "smiley",
+        "label": "know your profile"
+      },
+      {
+        "name": "shield",
+        "label": "low-tax? self-insure"
+      },
+      {
+        "name": "couple",
+        "label": "family? value coverage"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "character",
+    "pose": "present",
+    "narration": "And wherever you land, use the system you're actually in. In a low-tax country, the burden of funding health, education, and retirement falls on you — so you must save and insure deliberately, because no one else will. In a high-tax country, you've already paid for a lot, so don't double-pay out of fear. Know what your taxes already bought.",
+    "props": [
+      {
+        "name": "shield",
+        "label": "low-tax: fund it yourself"
+      },
+      {
+        "name": "smiley",
+        "label": "high-tax: don't double-pay"
+      },
+      {
+        "name": "scale",
+        "label": "know what tax bought"
+      }
+    ]
+  },
+  {
+    "id": "s30",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. There's no such thing as a low-tax country — only different ways of paying for the same things. America collects less tax and sends you the bills directly. The others collect more tax and pay the bills for you. The money leaves your hands either way. The only question is whether it goes through the government, or straight to the hospital.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "no 'low-tax' country"
+      },
+      {
+        "name": "hospital",
+        "label": "govt, or the hospital"
+      },
+      {
+        "name": "moneybag",
+        "label": "the money leaves either way"
+      }
+    ]
+  },
+  {
+    "id": "s53",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And zoom out on the deepest trade-off. Lower taxes mean more money and more freedom in your hands — and more personal risk if life goes wrong. Higher taxes mean less cash and less choice — but a floor you can't fall through. Neither is simply right. Every country is really just a different answer to one question: how much risk should a person carry alone?",
+    "props": [
+      {
+        "name": "moneybag",
+        "label": "low tax: freedom + risk"
+      },
+      {
+        "name": "shield",
+        "label": "high tax: a floor"
+      },
+      {
+        "name": "scale",
+        "label": "how much risk, alone?"
+      }
+    ]
+  },
+  {
+    "id": "s31",
+    "type": "character",
+    "pose": "celebrate",
+    "expression": "happy",
+    "narration": "If this finally made the real tax comparison make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "which price tag next?"
+      }
+    ]
+  },
+  {
+    "id": "s32",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",

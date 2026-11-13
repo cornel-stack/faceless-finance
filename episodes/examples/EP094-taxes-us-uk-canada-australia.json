@@ -1,0 +1,772 @@
+{
+  "id": "EP094",
+  "series": "Napkin Numbers",
+  "title": "Taxes: US vs UK vs Canada vs Australia",
+  "slug": "taxes-us-uk-canada-australia",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP094 — The Price Tag series (topic 84). 4-country tax head-to-head (US/UK/CA/AU). Income tax alone: nearly tied (keep ~72-77% of median salary). The hidden layer: VAT/GST (US 0, CA 5, AU 10, UK 20) — Americans forget it exists. Total tax wedge: US takes least. BUT the twist: US self-funds healthcare/college/childcare (~$30-40K/yr) that the others' taxes cover → real take-home can reverse for families. 'No low-tax country, just different ways to pay'; cost vs certainty/risk. 3 new motifs (countrytaxbars/vathiddentax/taxvsservices) + reuse taxwedgebite/whatyoukeepfunnel (EP086); 2 charts (keep% income tax, VAT% ). Sources: Tax/Tax rate/Value-added tax/Tax wedge/Taxation in the UK. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "An American keeps more of their paycheck than a Brit, a Canadian, or an Australian. It sounds like a clear win — until you remember the American then pays thousands out of pocket for healthcare, college, and childcare that the other three get largely for free. So who actually comes out ahead? Today we put the four big English-speaking tax systems head to head, and find out who really keeps the most.",
+      "props": [
+        {
+          "name": "flagUS",
+          "label": "keeps more cash"
+        },
+        {
+          "name": "hospital",
+          "label": "but pays for healthcare"
+        },
+        {
+          "name": "scale",
+          "label": "US vs UK vs CA vs AU"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the split that defines everything. The United States has no national sales tax at all. The United Kingdom adds twenty percent to almost everything you buy. That single difference — a hidden consumption tax most Americans never pay — quietly reshapes how much each country's government takes, and what it hands back.",
+      "text": "0% vs 20%",
+      "sub": "national sales tax / VAT: US vs UK",
+      "icon": "receipt"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we compare four systems the right way. We'll line up their income taxes, expose the hidden consumption tax Americans don't pay, add up the total tax wedge each government takes, reveal what that tax actually buys back, and settle the real question: after taxes and the bills they cover, who keeps the most? Let's go.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "income + consumption tax"
+        },
+        {
+          "name": "hospital",
+          "label": "what it buys back"
+        },
+        {
+          "name": "moneybag",
+          "label": "who keeps the most"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "low taxes, pay for everything yourself",
+      "memeBottom": "high taxes, most things covered",
+      "narration": "Because this is the real choice between these countries — not high tax versus low tax, but who pays for life's big bills: you, or the government, using your taxes. Before we compare, let's define what a tax even is."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the two completely different ways to tax a person.",
+      "heading": "Two Ways to Tax",
+      "kicker": "income vs consumption"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-tax",
+      "narration": "A tax, at its core, is a mandatory financial charge or levy imposed on an individual or legal entity by a government. But governments collect it in two very different ways. They can tax the money you earn — income tax. Or they can tax the money you spend — a consumption tax. Every country leans on a different mix of the two, and that mix is the whole story."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And there's a third layer people forget: payroll taxes. In the US it's Social Security and Medicare; in the UK, National Insurance; in Canada and Australia, their own contributions. These come straight off your paycheck on top of income tax, quietly funding pensions and health. Any honest comparison has to count them — they're income tax by another name.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "payroll taxes too"
+        },
+        {
+          "name": "receipt",
+          "label": "Social Security, NI"
+        },
+        {
+          "name": "warning",
+          "label": "income tax by another name"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-rate",
+      "narration": "And the number everyone quotes — the tax rate — is simply determined by tax laws of the country, which makes it tempting to compare nations on a single headline figure. That's the trap. One nation's low income tax can hide a brutal consumption tax; another's scary income rate can come with almost everything covered. You have to add up the whole picture."
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So here's the fundamental split. America taxes income relatively lightly and barely taxes consumption at all — no national sales tax. The UK, Canada, and Australia tax income a bit harder and then add a large consumption tax on almost everything you buy. Same goal, raising revenue — but collected from opposite ends of your money.",
+      "props": [
+        {
+          "name": "flagUS",
+          "label": "US: light, income-only"
+        },
+        {
+          "name": "flagGB",
+          "label": "UK/CA/AU: income + spending"
+        },
+        {
+          "name": "scale",
+          "label": "opposite ends of your money"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And why does this split exist at all? Consumption taxes are easy for governments to collect and hard for people to dodge — everyone shops. Income taxes are more visible and politically painful to raise. The US leaned into income and property taxes and never adopted a national sales tax; the rest of the developed world embraced VAT decades ago. It's a historical fork, not an accident.",
+      "props": [
+        {
+          "name": "store",
+          "label": "VAT: easy to collect"
+        },
+        {
+          "name": "paystub",
+          "label": "income tax: visible, painful"
+        },
+        {
+          "name": "globe",
+          "label": "a historical fork"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's start with the tax everyone sees: income tax.",
+      "heading": "The Income Layer",
+      "kicker": "what the four take"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "countrytaxbars",
+      "caption": "what you keep from a median salary, by country",
+      "narration": "On income tax alone, the four are surprisingly close. Take a typical median salary, and the American keeps the most of it, around seventy-seven percent after income tax and payroll deductions. Australia is close behind. The UK and Canada take a bit more, leaving workers closer to seventy-two or seventy-three percent. On the paycheck alone, America wins — but only just, and only so far."
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And remember these percentages are for a typical median earner. Change the income and the ranking shifts, because all four use progressive systems. A low earner can pay almost nothing in any of them, while a top earner in Canada or the UK faces combined rates near or above fifty percent. The 'winner' genuinely changes depending on where you sit on the income ladder.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "progressive systems"
+        },
+        {
+          "name": "paystub",
+          "label": "winner shifts by income"
+        },
+        {
+          "name": "scale",
+          "label": "low vs top earner"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Kept from a median salary, income tax (%)",
+      "unit": "%",
+      "narration": "Here it is in numbers. On a median wage, after income tax and payroll contributions, Canada leaves you about seventy-two percent, the UK seventy-three, Australia seventy-six, and the US around seventy-seven. The gap between the most and least is just five points. If the story ended at the paycheck, these four countries would look almost identical.",
+      "data": [
+        {
+          "label": "Canada",
+          "value": 72
+        },
+        {
+          "label": "UK",
+          "value": 73
+        },
+        {
+          "label": "Australia",
+          "value": 76
+        },
+        {
+          "label": "US",
+          "value": 77
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice how misleading that near-tie is. These paycheck percentages are exactly the numbers people screenshot to 'prove' America is far lower tax. But they capture only the first layer. Judging four tax systems by income tax alone is like judging four cars by their sticker price and ignoring the fuel, insurance, and repairs. The headline is the smallest part of the truth.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "only the first layer"
+        },
+        {
+          "name": "scale",
+          "label": "sticker price only"
+        },
+        {
+          "name": "receipt",
+          "label": "the rest is hidden"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "But the story absolutely does not end at the paycheck. Because the moment that take-home pay gets spent, a second, invisible tax kicks in for three of these four countries — and it's enormous. This is where the American advantage starts to blur, and where most paycheck comparisons quietly cheat.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the paycheck isn't the end"
+        },
+        {
+          "name": "receipt",
+          "label": "a second tax on spending"
+        },
+        {
+          "name": "scale",
+          "label": "where comparisons cheat"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "Which brings us to the tax Americans forget exists.",
+      "heading": "The Hidden Tax",
+      "kicker": "VAT and GST"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "vathiddentax",
+      "caption": "the consumption tax baked into every price",
+      "narration": "It's called value-added tax, or VAT — and goods and services tax, GST, elsewhere. In the UK it's twenty percent, baked silently into the price of almost everything. Australia's GST is ten percent, Canada's federal GST five, often more with provincial tax on top. And the US? Zero national rate. Americans genuinely do not pay this tax that quietly costs everyone else a fifth of every purchase."
+    },
+    {
+      "id": "s44",
+      "type": "callout",
+      "narration": "Put the VAT bite in real money. At a twenty percent rate, a Brit spending forty thousand pounds a year on taxable goods hands over around eight thousand in VAT alone — a second income tax they never see itemized. The American spending the same amount pays only small, visible state sales taxes, often a few percent, and nothing to the federal government.",
+      "text": "$8K",
+      "sub": "hidden VAT on £40K of UK spending",
+      "icon": "receipt"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "sourceId": "wiki-vat",
+      "narration": "The mechanics: VAT is a consumption tax that is levied on the value added at each stage of a product's journey to you. You never see it as a separate line — it's already inside the sticker price. That's what makes it so politically easy and so personally invisible. You pay it every single day without ever feeling the sting of writing a check."
+    },
+    {
+      "id": "s16",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Standard VAT / GST rate (%)",
+      "unit": "%",
+      "narration": "Look at the consumption-tax gap. The United States, zero at the national level. Canada, a five percent federal GST. Australia, ten percent. And the United Kingdom, a full twenty percent on most of what you buy. That twenty-point swing is a massive, hidden chunk of the real tax burden that a simple income-tax comparison completely misses.",
+      "data": [
+        {
+          "label": "US",
+          "value": 0
+        },
+        {
+          "label": "Canada",
+          "value": 5
+        },
+        {
+          "label": "Australia",
+          "value": 10
+        },
+        {
+          "label": "UK",
+          "value": 20
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s45",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "compare countries on income tax",
+      "memeBottom": "compare income tax + VAT + what it all buys back",
+      "narration": "This is the full-brain version of the tax debate. The beginner compares paychecks. The next level adds the hidden consumption tax. The master adds what the tax actually funds — and only then can you honestly say which country keeps you richer."
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "So let's add both layers into the number that counts.",
+      "heading": "The Total Wedge",
+      "kicker": "everything the state takes"
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-wedge",
+      "narration": "Economists call it the tax wedge — the difference between the price consumers pay and the value producers receive from a transaction. In plain terms, it's the total slice the government takes out of the economy around you. Stack income tax and consumption tax together, and the four countries suddenly look very different from the paycheck view."
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "motif": "taxwedgebite",
+      "caption": "income tax + consumption tax combined",
+      "narration": "Add it all up and the ranking tightens into a clear order. The US takes the smallest total bite of your money. Australia is next. Then the UK and Canada, where a hefty income tax plus a large consumption tax means the government touches a noticeably bigger share of everything you earn and spend. On total tax taken, America really is the low-tax country of the four."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the US makes up some of the gap in sneaky ways. With no national VAT, American states and cities layer their own sales taxes, property taxes, and fees — which is why the federal low-tax story isn't the whole picture even at home. Add state income and sales tax, and a Californian or New Yorker isn't living in a low-tax country at all.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "state + local taxes"
+        },
+        {
+          "name": "receipt",
+          "label": "sales + property stacked"
+        },
+        {
+          "name": "warning",
+          "label": "not low-tax everywhere"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So on raw tax alone, America wins — clearly. An American hands over less of their money, both earning it and spending it, than a Brit, a Canadian, or an Australian. If the only thing that mattered were minimizing the government's cut, the United States would be the obvious champion. But taxes aren't charity. You're supposed to get something back.",
+      "props": [
+        {
+          "name": "flagUS",
+          "label": "US takes the least"
+        },
+        {
+          "name": "moneybag",
+          "label": "less earning + spending"
+        },
+        {
+          "name": "warning",
+          "label": "but what do you get back?"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "callout",
+      "narration": "Put the total burden in one figure. Measured as all taxes collected against the size of the economy, the US government takes roughly a quarter to twenty-seven percent, while the UK, Canada, and Australia sit higher, often in the low-to-mid thirties. That gap of several points of an entire economy is the real, honest size of the difference.",
+      "text": "~27% vs ~33%",
+      "sub": "total tax as a share of the economy: US vs the others",
+      "icon": "scale"
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Because the whole point of tax is what it buys you.",
+      "heading": "What It Buys Back",
+      "kicker": "the other side"
+    },
+    {
+      "id": "s22",
+      "type": "stage",
+      "motif": "taxvsservices",
+      "caption": "the big bills — covered, or on you",
+      "narration": "Here's what the higher-tax countries hand back. In the UK, Canada, and Australia, healthcare is largely free at the point of use. University is free or heavily capped. Childcare is subsidized, and pensions are stronger. In the US, you pay for all of that privately — and those bills are huge. The extra tax abroad isn't lost. It's prepaying the exact costs Americans face alone."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And healthcare is the giant on this side of the ledger. The US spends about double per person on health compared to the others, yet leaves millions exposed to huge bills. The extra tax a Brit or Canadian pays is, in large part, simply a national health-insurance premium — one that can never be denied, dropped, or tied to a job.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "US spends ~2x on health"
+        },
+        {
+          "name": "shield",
+          "label": "tax = national health premium"
+        },
+        {
+          "name": "warning",
+          "label": "can't be dropped"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And those American bills are staggering. Health insurance and out-of-pocket costs can run a family over twenty thousand dollars a year. College adds tens of thousands in debt. Childcare, another fifteen to twenty thousand per kid. The money a lower-tax American keeps gets quietly clawed back — not by the tax office, but by the hospital, the university, and the daycare.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "health: $20K+/yr"
+        },
+        {
+          "name": "gradcap",
+          "label": "college debt"
+        },
+        {
+          "name": "baby",
+          "label": "childcare $15-20K"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "Stack the American private bills and the picture flips. Health premiums, college saving, and childcare can quietly cost a US family thirty to forty thousand dollars a year — money that, in the other three countries, the higher tax already covered. The low-tax paycheck can be an illusion the instant real life begins.",
+      "text": "$30-40K/yr",
+      "sub": "private bills a US family covers that others' taxes do",
+      "icon": "hospital"
+    },
+    {
+      "id": "s24",
+      "type": "title",
+      "narration": "So let's run the comparison the honest way.",
+      "heading": "The Real Number",
+      "kicker": "tax plus the bills"
+    },
+    {
+      "id": "s25",
+      "type": "stage",
+      "motif": "whatyoukeepfunnel",
+      "caption": "take-home, minus the bills others get free",
+      "narration": "Here's the funnel done properly. Start with gross pay. In every country, subtract the tax. Then, for the American, keep subtracting — health premiums, a college fund, childcare, retirement you fund yourself. For the others, those are already paid by the tax you took out. What trickles out the bottom, after everything, is the real, true take-home. And suddenly the American lead can shrink, vanish, or even reverse."
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And there's a risk dimension the funnel hides. In the higher-tax countries, your worst-case year is capped — a serious illness or job loss won't bankrupt you, because the safety net is prepaid. In America, you keep more in a good year but carry far more catastrophic risk in a bad one. You're not just comparing cost. You're comparing certainty.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "abroad: worst case capped"
+        },
+        {
+          "name": "warning",
+          "label": "US: more catastrophic risk"
+        },
+        {
+          "name": "scale",
+          "label": "cost vs certainty"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So the honest answer is: it depends who you are. A healthy, single, high earner with no kids often wins big in America — low taxes, few of those costly bills. But a family with children, health needs, and college ahead can easily end up better off in the higher-tax countries, where the scary tax rate already bought the things that would bankrupt them in the States.",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "healthy single earner → US"
+        },
+        {
+          "name": "couple",
+          "label": "family with kids → often abroad"
+        },
+        {
+          "name": "scale",
+          "label": "it depends who you are"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "my country has the lowest taxes",
+      "memeBottom": "my country keeps the most after tax AND the bills",
+      "narration": "This is the mindset shift the whole episode is about. Bragging about low taxes is easy. The number that actually matters is what survives after both the tax office and the bills the tax was supposed to cover. Measure that, and the leaderboard looks nothing like the headlines."
+    },
+    {
+      "id": "s27",
+      "type": "title",
+      "narration": "So what should you actually take from all this?",
+      "heading": "What To Do",
+      "kicker": "read the whole system"
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "pose": "present",
+      "narration": "First, never judge a country, or a job offer abroad, on the headline tax rate. A low-tax country can be expensive to live in once you self-fund healthcare and education, and a high-tax one can be a bargain if it covers them. Always ask the real question: after tax and after the big bills, what actually lands in my life?",
+      "props": [
+        {
+          "name": "warning",
+          "label": "ignore the headline rate"
+        },
+        {
+          "name": "scale",
+          "label": "tax + the big bills"
+        },
+        {
+          "name": "moneybag",
+          "label": "what truly lands"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if you're genuinely choosing between countries — for work or emigration — model your actual life, not an average. Price out your real healthcare needs, your kids, your housing, your income, in each system. The right country for a single software engineer is often the wrong one for a family of five, and only your own numbers can tell you which is which.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "model your real life"
+        },
+        {
+          "name": "couple",
+          "label": "not an average person"
+        },
+        {
+          "name": "globe",
+          "label": "right country is personal"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "type": "character",
+      "pose": "present",
+      "narration": "Second, know your own profile. If you're young, healthy, childless, and high-earning, a low-tax system rewards you — so bank the difference and self-insure aggressively. If you have a family, chronic health costs, or kids heading to college, the value of a system that pre-pays those is enormous. Match the system to your life, not to a slogan.",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "know your profile"
+        },
+        {
+          "name": "shield",
+          "label": "low-tax? self-insure"
+        },
+        {
+          "name": "couple",
+          "label": "family? value coverage"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "present",
+      "narration": "And wherever you land, use the system you're actually in. In a low-tax country, the burden of funding health, education, and retirement falls on you — so you must save and insure deliberately, because no one else will. In a high-tax country, you've already paid for a lot, so don't double-pay out of fear. Know what your taxes already bought.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "low-tax: fund it yourself"
+        },
+        {
+          "name": "smiley",
+          "label": "high-tax: don't double-pay"
+        },
+        {
+          "name": "scale",
+          "label": "know what tax bought"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. There's no such thing as a low-tax country — only different ways of paying for the same things. America collects less tax and sends you the bills directly. The others collect more tax and pay the bills for you. The money leaves your hands either way. The only question is whether it goes through the government, or straight to the hospital.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "no 'low-tax' country"
+        },
+        {
+          "name": "hospital",
+          "label": "govt, or the hospital"
+        },
+        {
+          "name": "moneybag",
+          "label": "the money leaves either way"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the deepest trade-off. Lower taxes mean more money and more freedom in your hands — and more personal risk if life goes wrong. Higher taxes mean less cash and less choice — but a floor you can't fall through. Neither is simply right. Every country is really just a different answer to one question: how much risk should a person carry alone?",
+      "props": [
+        {
+          "name": "moneybag",
+          "label": "low tax: freedom + risk"
+        },
+        {
+          "name": "shield",
+          "label": "high tax: a floor"
+        },
+        {
+          "name": "scale",
+          "label": "how much risk, alone?"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this finally made the real tax comparison make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-tax",
+      "name": "Tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax",
+      "quote": "a mandatory financial charge or levy imposed on an individual or legal entity"
+    },
+    {
+      "id": "wiki-rate",
+      "name": "Tax rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_rate",
+      "quote": "determined by tax laws of the country"
+    },
+    {
+      "id": "wiki-vat",
+      "name": "Value-added tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Value-added_tax",
+      "quote": "a consumption tax that is levied on the value added at each stage"
+    },
+    {
+      "id": "wiki-wedge",
+      "name": "Tax wedge (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_wedge",
+      "quote": "the difference between the price consumers pay and the value producers receive"
+    },
+    {
+      "id": "wiki-uktax",
+      "name": "Taxation in the United Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Taxation_in_the_United_Kingdom",
+      "quote": "taxation may involve payments to at least three different levels of government"
+    }
+  ],
+  "youtube": {
+    "title": "Taxes: US vs UK vs Canada vs Australia",
+    "alts": [
+      "Who Really Pays More Tax: US vs UK vs Canada vs Australia",
+      "Why 'Low-Tax' America Isn't As Cheap As You Think"
+    ],
+    "hook": "An American keeps more of their paycheck than a Brit, Canadian, or Australian — but then pays thousands out of pocket for healthcare, college, and childcare the other three get largely for free. So who actually comes out ahead? This is the four big English-speaking tax systems, compared the honest way. On income tax alone they're nearly tied (workers keep ~72–77% of a median salary). But then comes the hidden layer Americans forget: VAT/GST — 0% in the US, 5% in Canada, 10% in Australia, a full 20% in the UK — a second, invisible consumption tax baked into every price. Add both layers into the total 'tax wedge' and the US genuinely takes the least. The twist: that lower tax gets clawed back by private bills (US health, college and childcare can cost a family $30–40K/year) that the higher-tax countries' taxes already cover. We run the comparison the honest way — take-home minus the bills others get free — and the American lead shrinks, vanishes, or reverses depending on who you are. There's no low-tax country, only different ways of paying for the same things. Fully cited.",
+    "bullets": [
+      "Income tax: nearly tied (keep ~72–77% of median pay)",
+      "The hidden tax: VAT/GST 0% (US) vs 20% (UK)",
+      "Total tax wedge: the US really does take the least",
+      "The twist: US private bills (~$30–40K/yr) others' taxes cover",
+      "The honest take-home: when the US lead reverses",
+      "Cost vs certainty — how much risk you carry alone"
+    ],
+    "tags": [
+      "taxes by country",
+      "us vs uk taxes",
+      "tax comparison",
+      "vat explained",
+      "tax wedge",
+      "which country has lowest taxes",
+      "us vs canada taxes",
+      "australia taxes",
+      "cost of living",
+      "healthcare costs",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#taxes",
+      "#vat",
+      "#personalfinance",
+      "#economics"
+    ],
+    "thumbnail": {
+      "hookTop": "TAXES: 4 COUNTRIES",
+      "hookBot": "WHO REALLY PAYS MORE?",
+      "napkinNumber": "0% vs 20%",
+      "napkinSub": "US vs UK sales tax",
+      "deco": "scale"
+    },
+    "chapters": [
+      [
+        "two completely different ways to tax",
+        "Two ways to tax"
+      ],
+      [
+        "start with the tax everyone sees",
+        "The income layer"
+      ],
+      [
+        "the tax Americans forget exists",
+        "The hidden tax"
+      ],
+      [
+        "add both layers into the number that counts",
+        "The total wedge"
+      ],
+      [
+        "the whole point of tax is what it buys",
+        "What it buys back"
+      ],
+      [
+        "run the comparison the honest way",
+        "The real number"
+      ],
+      [
+        "what should you actually take from all this",
+        "What to do"
+      ],
+      [
+        "no such thing as a low-tax country",
+        "The real lesson"
+      ]
+    ]
+  }
+}

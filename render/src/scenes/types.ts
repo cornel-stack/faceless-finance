@@ -250,7 +250,9 @@ export interface StageScene extends Base {
     // EP092 (The Price Tag — 10-year car cost by state) additions:
     | "carcostbystate" | "insurancebystate" | "tenyearstack"
     // EP093 (The Price Tag — take-home from $100K by state) additions:
-    | "takehomebystate" | "notaxcatch";
+    | "takehomebystate" | "notaxcatch"
+    // EP094 (The Price Tag — taxes US vs UK vs CA vs AU) additions:
+    | "countrytaxbars" | "vathiddentax" | "taxvsservices";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

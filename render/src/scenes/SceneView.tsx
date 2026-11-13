@@ -6959,6 +6959,76 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the state still gets paid — just not on payday</text>
       </svg>
     );
+  } else if (m === "countrytaxbars") {
+    // What you keep from a median salary (income tax), by country.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Canada", 72, "#d98b5f"],
+      ["UK", 73, gold],
+      ["Australia", 76, "#9cc47f"],
+      ["US", 77, green],
+    ];
+    const x0 = 250, xMax = 850, maxV = 80;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">kept from a median salary — income tax only</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 110 + i * 78; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.12, i * 0.12 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 32} fontSize={16} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={46} rx={6} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 38} fontSize={16} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{v}%</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>just a 5-point gap — the paycheck barely separates them</text>
+      </svg>
+    );
+  } else if (m === "vathiddentax") {
+    // The consumption tax baked into every price, by country.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const cols: [string, number, string][] = [["US", 0, green], ["Canada", 5, "#9cc47f"], ["Australia", 10, gold], ["UK", 20, red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the hidden tax inside every price</text>
+        {cols.map(([lab, pct, col], i) => {
+          const x = 220 + i * 185; const op = interpolate(grow, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth);
+          const tagH = 30 + pct * 6;
+          return (
+            <g key={i} opacity={op}>
+              <rect x={x - 70} y={300 - tagH} width={140} height={tagH} rx={6} fill={col as string} stroke={ink} strokeWidth={4} />
+              <rect x={x - 70} y={300} width={140} height={70} rx={6} fill="#efe9da" stroke={ink} strokeWidth={4} />
+              <text x={x} y={342} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>price</text>
+              <text x={x} y={300 - tagH - 10} fontSize={18} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">+{pct}%</text>
+              <text x={x} y={392} fontSize={15} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={448} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>Americans pay 0% to the feds — the UK pays 20% on almost everything</text>
+      </svg>
+    );
+  } else if (m === "taxvsservices") {
+    // Higher tax, but the big bills are covered.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string][] = [["healthcare"], ["university"], ["childcare"], ["pensions"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={300} y={70} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">UK · CA · AU: covered</text>
+        <text x={690} y={70} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">US: on you</text>
+        {items.map(([lab], i) => {
+          const y = 110 + i * 78;
+          return (
+            <g key={i} opacity={interpolate(reveal, [i * 0.15, i * 0.15 + 0.22], [0, 1], clampBoth)}>
+              <rect x={120} y={y} width={340} height={60} rx={10} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text x={150} y={y + 38} fontSize={16} fontWeight={800} fill={ink} fontFamily={sans}>{lab}</text><text x={430} y={y + 38} fontSize={18} fontWeight={900} fill={green} textAnchor="end" fontFamily={sans}>✓</text>
+              <rect x={520} y={y} width={340} height={60} rx={10} fill="#f0d9cf" stroke={ink} strokeWidth={3} /><text x={550} y={y + 38} fontSize={16} fontWeight={800} fill={ink} fontFamily={sans}>{lab}</text><text x={830} y={y + 38} fontSize={16} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>$$$</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the extra tax abroad prepays the bills Americans face alone</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
