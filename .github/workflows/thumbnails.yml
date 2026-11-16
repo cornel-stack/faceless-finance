@@ -1,0 +1,69 @@
+name: Render thumbnails
+
+# Renders the clickbait YouTube thumbnails for the Finance topic list
+# (thumbnails/manifest.json → ClickbaitThumb still per topic). Bundles once,
+# renders each as thumbnails/<N.Title>.png, and uploads the folder as an artifact.
+# Dispatch with an optional space-separated list of topic numbers to render a subset.
+on:
+  workflow_dispatch:
+    inputs:
+      topics:
+        description: "Topic numbers to render (space-separated). Empty = all 100."
+        default: ""
+        type: string
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Libraries Remotion's headless Chrome needs to render stills.
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 libdbus-1-3 libatk1.0-0 libatk-bridge2.0-0 libgbm-dev \
+            libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 \
+            libxcomposite1 libxdamage1 libpango-1.0-0 libcairo2 libcups2
+
+      - name: Install Node dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      # Rebuild the manifest from the current episode JSONs + face map so it's fresh.
+      - name: Build manifest
+        run: python tools/thumbs/build_manifest.py
+
+      - name: Render thumbnails
+        run: node tools/thumbs/render_all.mjs ${{ inputs.topics }}
+
+      - name: List output
+        run: ls -la thumbnails/ | head -120
+
+      - name: Upload thumbnails
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: "thumbnails-${{ github.run_number }}"
+          path: thumbnails/*.png
+          retention-days: 30
+
+      - name: Print download link
+        run: |
+          {
+            echo "### 🖼️ Thumbnails rendered"
+            echo ""
+            echo "**Download:** ${{ steps.upload.outputs.artifact-url }}"
+          } >> "$GITHUB_STEP_SUMMARY"

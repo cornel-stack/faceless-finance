@@ -51,3 +51,7 @@ renders/
 tools/gifs/.giphy_key
 tools/gifs/.tenor_key
 .env
+
+# Rendered thumbnail PNGs are delivered as CI artifacts, not committed
+thumbnails/*.png
+thumbnails/.props.json

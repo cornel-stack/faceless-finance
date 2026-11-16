@@ -9,9 +9,11 @@ import { MascotSheet } from "./MascotSheet";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import { Film, filmDurationInFrames } from "./Film";
 import { Thumbnail } from "./Thumbnail";
+import { ClickbaitThumb } from "./ClickbaitThumb";
 import { Logo } from "./brand/Logo";
 import { Banner } from "./brand/Banner";
 import { BrandThumbnail } from "./brand/BrandThumbnail";
+import { theme } from "./theme";
 import type { Scene } from "./scenes/types";
 import type { MocapClip, Episode as EpisodeType } from "./types";
 import probeData from "./data/_probe.json";
@@ -101,6 +103,25 @@ export const RemotionRoot: React.FC = () => {
         width={1280}
         height={720}
         defaultProps={{}}
+      />
+      <Composition
+        id="ClickbaitThumb"
+        component={ClickbaitThumb}
+        durationInFrames={1}
+        fps={FPS}
+        width={1280}
+        height={720}
+        defaultProps={{
+          num: 1,
+          title: "Why Every Country Is in Debt",
+          hookTop: "EVERY COUNTRY IS",
+          hookBot: "SECRETLY BROKE",
+          bigNumber: "$100T",
+          sub: "in government debt",
+          deco: "globe" as const,
+          faces: [] as { slug: string; label?: string }[],
+          accent: theme.accent,
+        }}
       />
       <Composition id="Logo" component={Logo} durationInFrames={1} fps={FPS} width={800} height={800} defaultProps={{}} />
       <Composition id="Banner" component={Banner} durationInFrames={1} fps={FPS} width={2560} height={1440} defaultProps={{}} />
