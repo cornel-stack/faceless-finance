@@ -3,47 +3,47 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "The same car, the same house, and the same body can cost you twice as much to insure in one state as in another. Between your auto, home, and health premiums, a family in a high-risk state can hand insurers over fourteen thousand dollars a year — while a family somewhere calmer pays half that, for identical coverage. Today we rank what insurance really costs in every state, and expose what's secretly driving your bill.",
+    "narration": "The average American wedding now costs around thirty-three thousand dollars — a house down payment, spent on a single day. In some states it's over fifty thousand; in others, half that. But here's the twist nobody at the bridal shop will tell you: the research says the more you spend on the wedding, the higher your odds of divorce. Today we rank what a wedding costs in every state — and what it should.",
     "props": [
       {
-        "name": "shield",
-        "label": "car + home + health"
+        "name": "champagne",
+        "label": "$33K average"
       },
       {
-        "name": "receipt",
-        "label": "$7K vs $14K/yr"
+        "name": "house",
+        "label": "a down payment, for a day"
       },
       {
         "name": "scale",
-        "label": "every state ranked"
+        "label": "cost vs what it should be"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number hiding in plain sight on your bank statement. Add up car, home, and health insurance, and a typical American household spends somewhere between seven and fourteen thousand dollars a year on premiums — one of the largest expenses most people never actually shop. And where you live can double it, for coverage that's basically the same.",
-    "text": "$7K-$14K/yr",
-    "sub": "a household's total insurance bill, by state",
-    "icon": "shield"
+    "narration": "Here's the number that should give every engaged couple pause. A single wedding day, in the priciest states, can cost over fifty thousand dollars — more than many Americans earn in a year. It's one of the largest discretionary purchases a person will ever make, and it buys something that's over in about six hours.",
+    "text": "$33,000",
+    "sub": "average US wedding — for one day",
+    "icon": "champagne"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank the states by their total insurance burden, explain how insurance actually works and why it's priced the way it is, expose the disasters and laws quietly inflating your premiums, warn about the places becoming literally uninsurable, and show how to cut the bill. Because insurance is the expense you pay forever, rarely use, and almost never question.",
+    "narration": "So today we rank wedding costs across the states, break down where all that money actually goes, expose the psychology and the industry quietly inflating the bill, reveal what the data says about spending and lasting marriages, and show what a wedding should really cost. Because few expenses blend love, pressure, and financial logic quite as messily as this one.",
     "props": [
       {
         "name": "scale",
         "label": "rank the states"
       },
       {
-        "name": "warning",
-        "label": "what drives premiums"
+        "name": "receipt",
+        "label": "where the money goes"
       },
       {
-        "name": "moneybag",
-        "label": "how to cut it"
+        "name": "warning",
+        "label": "cost vs the marriage"
       }
     ]
   },
@@ -52,129 +52,176 @@
     "type": "image",
     "src": "img/memes/expanding.jpg",
     "meme": "Expanding Brain",
-    "memeTop": "insurance is just a boring monthly bill",
-    "memeBottom": "insurance is a risk bet priced by your zip code",
-    "narration": "Because your premium isn't a fixed price — it's a calculated bet on how likely you are to file a claim, and that bet changes dramatically with geography. Before we rank the states, let's define what you're actually buying."
+    "memeTop": "spend big to show how much you love them",
+    "memeBottom": "spend less and start the marriage richer",
+    "narration": "Because a wedding is where emotion and money collide hardest — and the story the industry sells, that bigger means more love, turns out to be exactly backwards. Before we rank the states, let's separate the wedding from the marriage."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what insurance actually is, and how it's priced.",
-    "heading": "How It Works",
-    "kicker": "pooling risk"
+    "narration": "First, the crucial difference between a wedding and a marriage.",
+    "heading": "Wedding vs Marriage",
+    "kicker": "the day vs the life"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-insurance",
-    "narration": "At its core, insurance is a means of protection from financial loss. You pay a steady, predictable fee so that a rare, catastrophic cost — a crash, a fire, a hospital stay — doesn't bankrupt you. You're not really buying a service. You're buying certainty: trading a small, known loss every month for protection against a huge, unknown one."
+    "sourceId": "wiki-wedding",
+    "narration": "A wedding is a ceremony in which two people are united in marriage. That's it — a ceremony, a single event. Everything beyond the legal act of marrying is optional: the venue, the guests, the band, the three-tiered cake. We've bundled an enormous, expensive party onto what is, at its core, a short ceremony and a signature."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And this is why insurance can feel like a scam even when it isn't. Most years, you pay and get nothing back, which feels like pure loss. But that's the entire point: you're buying protection against the rare year that would otherwise destroy you. Insurance you never use isn't wasted money. It's the premium for sleeping at night.",
+    "narration": "And the modern 'traditional' wedding is younger than you think. The white dress, the diamond ring, the enormous reception — much of it was invented or supercharged by twentieth-century marketing, not ancient custom. The diamond engagement ring, famously, was a jewelry-industry campaign. A lot of what feels like timeless obligation is really advertising that worked a little too well.",
     "props": [
       {
+        "name": "diamond",
+        "label": "'traditions' = marketing"
+      },
+      {
         "name": "warning",
-        "label": "feels like a scam"
+        "label": "the diamond was an ad"
       },
       {
-        "name": "shield",
-        "label": "but it's buying certainty"
-      },
-      {
-        "name": "smiley",
-        "label": "the price of sleep"
+        "name": "champagne",
+        "label": "younger than you think"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-riskpool",
-    "narration": "It works through a risk pool — a form of risk management mostly practiced by insurance companies. Thousands of people each pay in, most never file a big claim, and that collected money covers the unlucky few who do. Your premium is really your share of the pool's total expected losses. The riskier your pool, the more everyone in it pays."
+    "sourceId": "wiki-marriage",
+    "narration": "The thing that actually lasts is marriage — a culturally and often legally recognised union between people called spouses. The marriage is the decades; the wedding is the afternoon. Yet couples routinely pour a year's income and months of stress into the afternoon, while investing almost nothing in preparing for the decades. We spend on the party and wing the partnership."
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And this split explains the strange grief many couples feel after the wedding. They poured a year of energy and savings into one afternoon, and then it's simply over — and the actual marriage, the hard and beautiful part, begins with a drained bank account. We front-load all the investment into the easy day and arrive at the hard decades empty-handed.",
+    "props": [
+      {
+        "name": "champagne",
+        "label": "all energy into one day"
+      },
+      {
+        "name": "warning",
+        "label": "then it's just over"
+      },
+      {
+        "name": "house",
+        "label": "the marriage starts drained"
+      }
+    ]
   },
   {
     "id": "s52",
-    "type": "stage",
-    "motif": "riskpoolhow",
-    "caption": "how the risk pool works",
-    "narration": "Picture the pool directly. A thousand homeowners each pay a premium into one giant pot. In a normal year, a handful suffer a fire or a flood, and the pot pays to rebuild their homes. Everyone else gets nothing but peace of mind. That's the whole machine: the many quietly cover the unlucky few, and your premium is simply your fair share of the group's expected bad luck."
+    "type": "callout",
+    "narration": "Here's the proportion that should stop couples cold. The legal act of getting married — the license and the officiant — typically costs a couple hundred dollars at most. Everything else, the other ninety-nine percent of a thirty-three-thousand-dollar wedding, is an optional party. You are not required to spend any of it to be just as married.",
+    "text": "99%",
+    "sub": "of a wedding's cost is optional party, not marriage",
+    "icon": "champagne"
+  },
+  {
+    "id": "s8",
+    "type": "character",
+    "pose": "explain",
+    "narration": "So the real question isn't how much a wedding costs — it's what you're actually buying. A legal marriage costs almost nothing: a license fee, often under a hundred dollars. Everything on top is a party, and a party's price is entirely a choice. The thirty-three-thousand-dollar average isn't the cost of getting married. It's the cost of the celebration we decided getting married requires.",
+    "props": [
+      {
+        "name": "decree",
+        "label": "a license: under $100"
+      },
+      {
+        "name": "champagne",
+        "label": "the rest is a party"
+      },
+      {
+        "name": "scale",
+        "label": "a choice, not a cost"
+      }
+    ]
+  },
+  {
+    "id": "s42",
+    "type": "callout",
+    "narration": "Put the opportunity cost in focus. Thirty-three thousand dollars invested instead of spent, growing over a thirty-year marriage, becomes well over two hundred thousand dollars. The real price of the average wedding isn't the thirty-three thousand. It's the quarter-million in retirement the couple quietly chose a party over.",
+    "text": "$250K+",
+    "sub": "what an average wedding could have grown into",
+    "icon": "chartup"
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the ring deserves its own reality check. The 'spend two months' salary' rule wasn't ancient wisdom — it was a jewelry marketing slogan, full stop. There's no law of love that sets a diamond's price. Couples spend thousands on a ring precisely because an ad campaign, decades ago, told them that's what commitment looks like. The tradition is real; its origin is a billboard.",
+    "props": [
+      {
+        "name": "diamond",
+        "label": "'two months salary' = an ad"
+      },
+      {
+        "name": "warning",
+        "label": "no law sets the price"
+      },
+      {
+        "name": "champagne",
+        "label": "tradition born from a billboard"
+      }
+    ]
+  },
+  {
+    "id": "s9",
+    "type": "title",
+    "narration": "So let's rank what a wedding costs by state.",
+    "heading": "The Ranking",
+    "kicker": "the price of the party"
   },
   {
     "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "And the pool only works if it's big and varied. If only the highest-risk people buy insurance, the pot drains fast and premiums skyrocket — a death spiral insurers fear. That's why healthy insurance spreads risk across millions of different people and places. The moment a pool fills with nothing but hurricane-coast homes, the math breaks, and that's exactly what's happening in the riskiest states.",
+    "narration": "One honest note on these state numbers: averages are dragged upward by lavish, high-end weddings. The typical couple often spends less than the headline average suggests, and plenty marry happily for a few thousand dollars. So don't read the state figure as a target you must hit. Read it as proof of how far the normal has drifted from the necessary.",
     "props": [
       {
-        "name": "crowd",
-        "label": "big, varied pool = stable"
-      },
-      {
         "name": "warning",
-        "label": "all-risk pool = death spiral"
+        "label": "averages skew high"
       },
       {
-        "name": "house",
-        "label": "coast-only pools break"
+        "name": "smiley",
+        "label": "many marry for a few $K"
+      },
+      {
+        "name": "scale",
+        "label": "normal ≠ necessary"
       }
     ]
   },
   {
-    "id": "s8",
-    "type": "screenshot",
-    "sourceId": "wiki-actuary",
-    "narration": "And the price is set by an actuary — a professional with advanced mathematical skills who deals with the measurement and management of risk. Actuaries crunch decades of data on crashes, storms, and illnesses to predict how likely you are to cost them money. Your premium isn't arbitrary. It's a precise mathematical estimate of your personal risk, priced to the dollar."
-  },
-  {
-    "id": "s42",
-    "type": "callout",
-    "narration": "Here's how finely they price you. Insurers now use dozens of variables — your exact address, your credit score, your car's model, even your past claim history — to estimate your risk to the cent. Two neighbors on the same street can pay noticeably different premiums. You aren't buying a product off a shelf. You're being individually quoted a number built just for you.",
-    "text": "dozens of factors",
-    "sub": "what actuaries use to price your personal risk",
-    "icon": "calculator"
-  },
-  {
-    "id": "s9",
-    "type": "title",
-    "narration": "So let's rank the states by total insurance cost.",
-    "heading": "The Ranking",
-    "kicker": "the premium burden"
+    "id": "s10",
+    "type": "stage",
+    "motif": "weddingcostbars",
+    "caption": "average wedding cost, by state",
+    "narration": "Here's the wedding leaderboard. In lower-cost states like Utah and much of the Mountain West and South, the average runs around twenty thousand dollars. The coasts climb fast. And in the Northeast — New York, New Jersey, Massachusetts — the average soars past fifty thousand, driven by pricey venues, big guest lists, and sky-high local costs. The same two people, the same vows, double the bill by geography."
   },
   {
     "id": "s54",
-    "type": "callout",
-    "narration": "Put the lifetime number in perspective. Over a forty-year adult life, a household spending ten thousand dollars a year on insurance will pay roughly four hundred thousand dollars in premiums — more than many people spend on their actual house. It's one of the largest lifetime expenses almost nobody ever adds up or shops around.",
-    "text": "$400K",
-    "sub": "lifetime insurance premiums for a typical household",
-    "icon": "receipt"
-  },
-  {
-    "id": "s10",
-    "type": "stage",
-    "motif": "insurancetotalbars",
-    "caption": "combined car + home + health premiums, by state",
-    "narration": "Here's the combined annual premium for car, home, and health, state by state. Calmer, lower-risk states like Vermont and Ohio sit near the bottom, around six or seven thousand. Texas and California climb higher. And disaster-prone states — Florida and Louisiana, battered by hurricanes — top the chart near fourteen thousand. Same coverage, but your state's luck and weather decide the bill."
-  },
-  {
-    "id": "s55",
     "type": "character",
     "pose": "explain",
-    "narration": "And the ranking has shifted fast. States that were cheap to insure a decade ago — parts of the Gulf Coast, wildfire country in the West — have rocketed up as disasters mounted. Insurance is a rear-view mirror on risk: today's premiums reflect yesterday's catastrophes, and they only move one direction once the losses start piling up.",
+    "narration": "And notice the pricey states aren't pricey because couples there love more — it's the same venue-and-vendor cost of living we keep finding. A Manhattan ballroom and a Nebraska barn host the identical vows, but one charges Manhattan prices. The geography of weddings is really just the geography of real estate and labor, wearing a tuxedo.",
     "props": [
       {
-        "name": "chartup",
-        "label": "rankings shifting fast"
-      },
-      {
-        "name": "warning",
-        "label": "disasters push states up"
-      },
-      {
         "name": "mappin",
-        "label": "risk moves, premiums follow"
+        "label": "venue cost of living"
+      },
+      {
+        "name": "champagne",
+        "label": "same vows, different rent"
+      },
+      {
+        "name": "scale",
+        "label": "real estate in a tuxedo"
       }
     ]
   },
@@ -182,33 +229,33 @@
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Combined car + home + health premiums ($/yr)",
-    "unit": "$",
-    "narration": "Put the totals in a row. Vermont around six thousand a year, Ohio seven, Texas nine, California ten, Florida thirteen, and Louisiana near fourteen thousand. The gap between the cheapest and priciest state is roughly eight thousand dollars a year — enough to fund a vacation or a retirement contribution, vanishing into premiums decided largely by your zip code.",
+    "title": "Average wedding cost ($K)",
+    "unit": "$K",
+    "narration": "Put the numbers in a row. Utah around twenty thousand, Texas twenty-eight, Florida thirty-two, California thirty-eight, New York forty-eight, and New Jersey leading near fifty-three. The gap between the cheapest and priciest state is over thirty thousand dollars — the difference, quite literally, between starting your marriage with a car or with a house deposit in the bank.",
     "data": [
       {
-        "label": "Vermont",
-        "value": 6000
-      },
-      {
-        "label": "Ohio",
-        "value": 7000
+        "label": "Utah",
+        "value": 20
       },
       {
         "label": "Texas",
-        "value": 9000
-      },
-      {
-        "label": "California",
-        "value": 10000
+        "value": 28
       },
       {
         "label": "Florida",
-        "value": 13000
+        "value": 32
       },
       {
-        "label": "Louisiana",
-        "value": 14000
+        "label": "California",
+        "value": 38
+      },
+      {
+        "label": "New York",
+        "value": 48
+      },
+      {
+        "label": "New Jersey",
+        "value": 53
       }
     ],
     "highlight": 5
@@ -217,212 +264,185 @@
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And health insurance is the giant inside this total, especially in America. For a family, health premiums alone can dwarf car and home combined — often over twenty thousand dollars a year between the employee and employer share. We fold in a typical personal portion here, but remember: in the US, the biggest insurance bill of all is usually the one for your own body.",
+    "narration": "And weddings suffer from a special kind of markup. Tell a vendor an event is a wedding, and quotes mysteriously rise — the same flowers, catering, or venue often cost noticeably more under the word 'wedding' than 'party.' The industry knows couples are emotional, time-pressured, and spending once in a lifetime. That combination is a pricing dream, and the bill reflects it.",
     "props": [
       {
-        "name": "hospital",
-        "label": "health is the giant"
+        "name": "warning",
+        "label": "the 'wedding' markup"
       },
       {
         "name": "receipt",
-        "label": "can dwarf car + home"
+        "label": "same service, higher quote"
       },
       {
-        "name": "warning",
-        "label": "the body costs most"
+        "name": "champagne",
+        "label": "emotion = a pricing dream"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And home insurance is where the state gap explodes the most. In a quiet inland state, insuring a house might cost under a thousand dollars a year. In hurricane-prone Florida or Louisiana, the same house can cost six or seven thousand — if you can get covered at all. Climate risk has turned home insurance from a routine bill into the fastest-rising cost of owning a home in disaster zones.",
-    "props": [
-      {
-        "name": "house",
-        "label": "home premiums swing most"
-      },
-      {
-        "name": "warning",
-        "label": "$800 vs $7,000"
-      },
-      {
-        "name": "chartup",
-        "label": "climate drives it"
-      }
-    ]
+    "type": "stage",
+    "motif": "weddingbreakdown",
+    "caption": "where the wedding money goes",
+    "narration": "And here's where all that money actually goes. The single biggest slice, by far, is the venue and catering — feeding and seating your guests can be half the entire budget. Then the ring, photography, attire, flowers, music, and a hundred small line items. The guest list is the hidden master dial: every extra head adds to catering, space, and favors. Invite fewer people, and almost everything shrinks at once."
   },
   {
     "id": "s44",
     "type": "image",
     "src": "img/memes/twobuttons.jpg",
     "meme": "Two Buttons",
-    "memeTop": "buy the beautiful coastal house",
-    "memeBottom": "be able to actually insure it",
-    "narration": "This is the brutal new calculation for anyone buying in a disaster zone. The dream home on the coast or in the hills comes with an insurance bill — or an insurance refusal — that can dwarf the mortgage. Increasingly, the question isn't whether you can afford the house. It's whether you can afford to protect it."
+    "memeTop": "invite everyone you've ever met",
+    "memeBottom": "a small wedding and a house deposit",
+    "narration": "This is the single most expensive decision in the whole budget: the guest list. Every name you add multiplies across catering, seating, drinks, and favors. Cutting the list isn't cutting love — it's the fastest, least painful way to turn a fifty-thousand-dollar wedding into a twenty-thousand-dollar one, with the people who actually matter still in the room."
   },
   {
     "id": "s13",
     "type": "title",
-    "narration": "So what actually sets your premium so high, or low?",
-    "heading": "The Drivers",
-    "kicker": "risk, disasters, laws"
+    "narration": "So why do we spend so wildly on a single day?",
+    "heading": "The Pressure",
+    "kicker": "why the bill balloons"
   },
   {
-    "id": "s56",
+    "id": "s55",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice how little of this is actually about you. You can have a perfect driving record, a brand-new roof, and flawless health, and still pay a fortune because of where you live and who else is in your pool. Insurance is one of the few big expenses where your personal virtue is often outweighed by your geography. The zip code frequently beats the behavior.",
+    "narration": "And there's a deep psychological trap called the sunk-prestige escalation. Once you book a nice venue, everything else must 'match' it — you can't put cheap flowers in a grand hall, or a budget dress against a designer backdrop. One upscale choice silently drags the entire budget up to its level. The expensive wedding isn't one big decision. It's a hundred small ones, each justified by the last.",
     "props": [
       {
-        "name": "mappin",
-        "label": "geography beats behavior"
-      },
-      {
         "name": "warning",
-        "label": "perfect record, high bill"
+        "label": "everything must 'match'"
       },
       {
-        "name": "scale",
-        "label": "the pool outweighs you"
+        "name": "chartup",
+        "label": "one splurge drags the rest"
+      },
+      {
+        "name": "champagne",
+        "label": "a hundred small yeses"
       }
     ]
   },
   {
     "id": "s14",
-    "type": "stage",
-    "motif": "premiumdrivers",
-    "caption": "what builds your insurance bill",
-    "narration": "Four forces set your premium. First, catastrophe risk — hurricanes, wildfires, floods, and the climate trends making them worse. Second, state laws and regulation, which decide required coverage and how freely insurers can raise rates. Third, local costs — pricier repairs, medical care, and litigation mean pricier claims. And fourth, you: your age, record, credit, and claim history. Stack those four, and you've explained almost any premium."
+    "type": "screenshot",
+    "sourceId": "wiki-joneses",
+    "narration": "A huge part of it is keeping up with the Joneses, where the neighbor serves as a benchmark for social class. Weddings are intensely public, compared, and now broadcast on social media. Couples benchmark against the lavish weddings they've attended and scrolled past, and quietly feel theirs must match. The bill balloons not from their own desires, but from the fear of falling short of everyone else's."
   },
   {
     "id": "s45",
     "type": "character",
     "pose": "explain",
-    "narration": "And state regulation cuts both ways, in ways that surprise people. States that tightly cap how much insurers can charge sound consumer-friendly — but insurers may respond by leaving the market, shrinking choice and coverage. States that let rates float freely keep insurers around, but premiums can spike. There's no free lunch: someone always pays for the risk, either in price or in availability.",
+    "narration": "And social media poured rocket fuel on all of it. Weddings are now content — photographed, posted, and compared against an endless feed of other people's highlight reels. Couples don't just host a wedding; they produce one for an audience that was never invited. That invisible pressure to be post-worthy has quietly added thousands to the modern wedding bill.",
     "props": [
       {
-        "name": "scale",
-        "label": "caps vs free rates"
+        "name": "phone",
+        "label": "weddings became content"
       },
       {
         "name": "warning",
-        "label": "caps can push insurers out"
+        "label": "producing for an audience"
       },
       {
-        "name": "receipt",
-        "label": "someone always pays"
+        "name": "chartup",
+        "label": "post-worthy = pricey"
       }
     ]
   },
   {
-    "id": "s59",
+    "id": "s60",
     "type": "character",
     "pose": "explain",
-    "narration": "And the fastest-rising driver by far is climate. Insured losses from storms, floods, and wildfires have climbed steeply over recent decades, and insurers price forward, not backward — they raise premiums today for the disasters they expect tomorrow. So even if your own area has been lucky, you can watch your bill rise simply because the models now see more risk on the horizon everywhere.",
+    "narration": "And parents and family can quietly inflate the whole thing. Who pays, who's invited, whose traditions are honored — each person added to the decision adds pressure and cost. A wedding that started as two people's celebration can balloon into a family political summit, with the budget as collateral damage. Protecting your number sometimes means protecting it from the people who love you most.",
     "props": [
       {
+        "name": "crowd",
+        "label": "family adds pressure"
+      },
+      {
         "name": "warning",
-        "label": "climate is the top driver"
+        "label": "guest list as politics"
       },
       {
-        "name": "chartup",
-        "label": "insurers price forward"
-      },
-      {
-        "name": "globe",
-        "label": "bills rise before the storm"
+        "name": "scale",
+        "label": "protect your number"
       }
     ]
   },
   {
     "id": "s15",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this is why identical people pay wildly different prices. Two drivers with spotless records, the same car, can pay double or half depending on their state's accident rates, repair costs, and insurance laws. You're not just insuring yourself — you're joining your state's risk pool, and inheriting the cost of everyone else's crashes, storms, and lawsuits along with it.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "you inherit the pool's risk"
-      },
-      {
-        "name": "car",
-        "label": "same driver, different price"
-      },
-      {
-        "name": "mappin",
-        "label": "your state's crashes & storms"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-conspicuous",
+    "narration": "It tips into conspicuous consumption — the consumer practice of buying and using goods of a higher quality or price than practical, specifically to signal status. A wedding is the ultimate stage for it: a public, once-in-a-lifetime chance to display taste and success. The open bar, the designer dress, the destination venue — much of it isn't for the couple's joy. It's a performance for the audience."
   },
   {
     "id": "s46",
-    "type": "callout",
-    "narration": "Here's a factor most people never suspect: your credit score. In the majority of US states, insurers are legally allowed to use credit to set your premium, arguing it predicts claims. So two identical drivers can pay very different rates purely because one has better credit. Fixing your credit can quietly cut your insurance bill as much as a clean driving record.",
-    "text": "your credit",
-    "sub": "secretly sets your premium in most states",
-    "icon": "creditcard"
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the cruelest trap is that the pressure often comes from love, not vanity. Parents want to show pride, couples want to honor their guests, nobody wants to seem cheap about something this meaningful. The wedding industry is brilliant precisely because it weaponizes generosity. Spending more feels like caring more — which is exactly the illusion that empties the bank account.",
+    "props": [
+      {
+        "name": "heart",
+        "label": "pressure from love"
+      },
+      {
+        "name": "warning",
+        "label": "spending feels like caring"
+      },
+      {
+        "name": "champagne",
+        "label": "generosity, weaponized"
+      }
+    ]
   },
   {
     "id": "s16",
     "type": "title",
-    "narration": "And in some states, the problem is no longer the price. It's getting covered at all.",
-    "heading": "The Uninsurable",
-    "kicker": "when insurers leave"
+    "narration": "And now the finding the wedding industry really doesn't want you to hear.",
+    "heading": "Cost vs Marriage",
+    "kicker": "the divorce data"
   },
   {
-    "id": "s57",
+    "id": "s56",
     "type": "image",
     "src": "img/memes/fine.jpg",
     "meme": "This Is Fine",
-    "memeTop": "my insurer just dropped my coverage",
+    "memeTop": "$40,000 in wedding debt, honeymoon on a credit card",
     "memeBottom": "this is fine",
-    "narration": "For a growing number of homeowners in disaster zones, this is the letter they dread: a non-renewal notice, dropping coverage through no fault of their own. It isn't a billing problem you can shop away — it's the market itself retreating. And it's the clearest sign yet that some places are becoming too risky to insure at any price."
+    "narration": "For too many newlyweds, this is the real morning after: not the joy of a marriage beginning, but the dawn of a debt that will shadow its first years. Starting a life together while digging out of a hole you dug for a single party is a brutal, avoidable way to begin."
   },
   {
     "id": "s17",
-    "type": "screenshot",
-    "sourceId": "wiki-homeins",
-    "narration": "Home insurance — a type of property insurance that covers a private residence — is quietly collapsing in the riskiest places. In parts of Florida, California, and Louisiana, major insurers have stopped writing new policies entirely, because the losses from hurricanes and wildfires have grown faster than any premium they could charge. The market is breaking exactly where people need it most."
+    "type": "stage",
+    "motif": "weddingcostvsmarriage",
+    "caption": "spend more, divorce more",
+    "narration": "Here's the twist. Researchers studying thousands of marriages found that, if anything, higher wedding spending is associated with a higher chance of divorce, not a lower one. Couples who spent the most on the ring and the wedding were more likely to split, while those who kept it modest tended to last. The expensive wedding isn't buying a stronger marriage. Sometimes it's quietly predicting a weaker one."
   },
   {
     "id": "s47",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the uninsurability wave is spreading inland, not just along the coasts. Wildfire risk is hitting the mountain West, flood risk is reaching places that never flooded before, and hail and tornado losses are rising across the middle of the country. The map of 'safe' states is shrinking every year. Insurance is becoming an early-warning system for where climate change is quietly hitting hardest.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "spreading inland"
-      },
-      {
-        "name": "globe",
-        "label": "wildfire, flood, hail"
-      },
-      {
-        "name": "chartup",
-        "label": "the 'safe' map shrinks"
-      }
-    ]
+    "type": "callout",
+    "narration": "Here's the study that reframes everything. Economists who tracked thousands of couples found those who spent the most on their weddings were among the most likely to divorce, while those who spent modestly, and had many guests but a cheap celebration, tended to last longest. Big crowd, small price was the winning combination — not a lavish, expensive show.",
+    "text": "spend more, split more",
+    "sub": "what the research actually found",
+    "icon": "warning"
   },
   {
     "id": "s18",
     "type": "character",
     "pose": "explain",
-    "narration": "And when private insurers flee, homeowners get pushed onto expensive last-resort state plans, or go uninsured entirely — which means a single disaster can wipe out their largest asset overnight. A house you can't insure is a house you can barely sell or mortgage. In the hardest-hit zones, the uninsurability crisis is quietly starting to cap home values and trap owners in place.",
+    "narration": "And it makes sense once you think about it. Starting a marriage with crushing debt or a drained savings account imports financial stress into the relationship from day one — and money fights are a leading cause of divorce. A giant wedding can literally fund its own undoing. Meanwhile, the couples who resisted the pressure often started richer, calmer, and on the same financial page.",
     "props": [
       {
         "name": "warning",
-        "label": "pushed to last-resort plans"
-      },
-      {
-        "name": "house",
-        "label": "can't insure, can't sell"
+        "label": "wedding debt = stress"
       },
       {
         "name": "chartdown",
-        "label": "it caps home values"
+        "label": "money fights end marriages"
+      },
+      {
+        "name": "smiley",
+        "label": "modest = richer, calmer"
       }
     ]
   },
@@ -430,72 +450,80 @@
     "id": "s48",
     "type": "character",
     "pose": "explain",
-    "narration": "And this creates a slow-motion trap for owners. If insurance becomes unaffordable or unavailable in your area after you've bought, you can't simply leave — buyers face the same problem, so your home gets harder to sell and worth less. The people most exposed are often those who bought their dream home years ago and are now stuck watching the insurance market close around them.",
+    "narration": "This doesn't mean a cheap wedding guarantees a happy marriage — correlation isn't destiny. But it shatters the core sales pitch: that a more expensive wedding is a more serious, more loving, more lasting one. At best, the money makes no difference to the marriage. At worst, the debt and stress it creates actively work against it. Either way, the big spend buys you nothing that lasts.",
     "props": [
       {
-        "name": "house",
-        "label": "hard to sell, worth less"
+        "name": "scale",
+        "label": "cheap ≠ guaranteed happy"
       },
       {
         "name": "warning",
-        "label": "stuck in place"
+        "label": "but expensive buys nothing"
       },
       {
-        "name": "chartdown",
-        "label": "the market closes in"
+        "name": "smiley",
+        "label": "the pitch is a myth"
       }
     ]
   },
   {
-    "id": "s19",
-    "type": "title",
-    "narration": "So how do you actually cut a bill you can't avoid?",
-    "heading": "What To Do",
-    "kicker": "shrink the premium"
+    "id": "s61",
+    "type": "callout",
+    "narration": "Flip the whole thing into a head start. Take even half of an average wedding budget — say fifteen thousand dollars — put it toward a home down payment or investments, and you've turned the most forgettable kind of spending into the foundation of a life. The best wedding gift a couple can give themselves is the one they don't spend.",
+    "text": "half the budget",
+    "sub": "redirected into a home or investments",
+    "icon": "house"
   },
   {
-    "id": "s58",
+    "id": "s19",
+    "type": "title",
+    "narration": "So what should a wedding actually cost?",
+    "heading": "What To Do",
+    "kicker": "spend on the marriage"
+  },
+  {
+    "id": "s57",
     "type": "character",
     "pose": "present",
-    "narration": "And review your coverage amounts, not just your price. Many people are quietly underinsured — their policy would rebuild a house at old costs, not today's, leaving a brutal gap after a disaster. Others pay for coverage they'll never use. Once a year, check that you're insured for what it would actually cost to replace what you have — no more, and crucially, no less.",
+    "narration": "And consider the quietly radical option: a tiny wedding, or eloping, then a bigger party later if you want one. Many couples who skipped the giant production report zero regret and a five-figure head start on their marriage. The fear is that you'll wish you'd done more. The reality, over and over, is that people wish they'd spent less and stressed less.",
     "props": [
       {
-        "name": "magnifier",
-        "label": "check coverage amounts"
+        "name": "smiley",
+        "label": "tiny wedding or elope"
+      },
+      {
+        "name": "moneybag",
+        "label": "a five-figure head start"
       },
       {
         "name": "warning",
-        "label": "underinsured = a gap"
-      },
-      {
-        "name": "scale",
-        "label": "match it to replacement cost"
+        "label": "people wish they'd spent less"
       }
     ]
   },
   {
     "id": "s20",
     "type": "screenshot",
-    "sourceId": "wiki-deductible",
-    "narration": "The most powerful lever is the deductible — the amount paid by the policy holder before an insurance provider will pay. Raise it, and your premium drops, sometimes sharply. The trick is to insure against disasters you can't afford, not minor dings you can. A high deductible with a healthy emergency fund behind it is often the cheapest smart way to be covered."
+    "sourceId": "wiki-reception",
+    "narration": "Most of the budget is the wedding reception — a party held after the ceremony as hospitality for those who attended. So that's where the real savings live. A smaller guest list, an off-peak date, a non-traditional venue, and skipping the status add-ons can cut a wedding by half or more without touching anything that actually matters to the couple. The ceremony is sacred; the party is negotiable."
   },
   {
     "id": "s49",
     "type": "character",
-    "pose": "explain",
-    "narration": "And understand what the deductible really trades. A low deductible means a smaller surprise when you claim, but a bigger bill every single month forever. A high deductible flips it: cheap every month, but you must be able to absorb the hit when disaster strikes. The right choice isn't about comfort — it's whether you have the savings to self-insure the small stuff.",
+    "pose": "present",
+    "narration": "And watch the sneaky budget-killers that add up fast. The open bar, the plus-ones, the Saturday-in-June premium, the elaborate florals that die by Monday, the save-the-dates and favors nobody keeps. None of these are what your guests will actually remember — they remember the people, the food, and the feeling. Cutting the forgettable extras is painless, and it's where the real money hides.",
     "props": [
       {
-        "name": "scale",
-        "label": "low vs high deductible"
+        "name": "warning",
+        "label": "open bar, favors, peak date"
       },
       {
-        "name": "jar",
-        "label": "need savings for high"
+        "name": "scissors",
+        "label": "cut the forgettable stuff"
       },
       {
-        "name": "moneybag",
-        "label": "self-insure the small stuff"
+        "name": "smiley",
+        "label": "guests remember people, not favors"
       }
     ]
   },
@@ -503,19 +531,19 @@
     "id": "s21",
     "type": "character",
     "pose": "present",
-    "narration": "Beyond that, shop relentlessly every year — loyalty is quietly punished, as insurers raise rates on customers who never leave. Bundle your car and home for a discount. Fix your credit, which secretly drives premiums in most states. And harden your home against your local disaster — a new roof, storm shutters, defensible space — because insurers reward lower risk with lower bills.",
+    "narration": "So decide your number first, as a couple, before anyone else weighs in — and protect it. Spend lavishly on the two or three things you'll genuinely remember, and ruthlessly cut the rest that's really there to impress guests. And take whatever you save and pour it into the marriage: a home, an emergency fund, a honeymoon you're not paying off for years. Start the life, don't just stage the day.",
     "props": [
       {
-        "name": "receipt",
-        "label": "shop yearly, bundle"
+        "name": "calculator",
+        "label": "set your number first"
       },
       {
-        "name": "creditcard",
-        "label": "fix your credit"
+        "name": "champagne",
+        "label": "splurge on 2-3 things"
       },
       {
-        "name": "shield",
-        "label": "harden the home"
+        "name": "house",
+        "label": "invest the rest in the life"
       }
     ]
   },
@@ -523,39 +551,19 @@
     "id": "s50",
     "type": "character",
     "pose": "present",
-    "narration": "And don't over-insure what you don't need to. Dropping collision coverage on an old car worth little, skipping extended warranties and tiny add-ons, and not insuring things you could easily replace yourself all cut the bill with zero real risk. Insure the catastrophes that would ruin you; proudly self-insure everything small enough to shrug off. That single principle quietly saves people thousands.",
+    "narration": "And here's a reframe that quietly saves marriages, not just money: spend a fraction of the wedding budget on actually preparing for marriage. A few sessions of premarital counseling, honest conversations about money, kids, and expectations — the things that genuinely predict whether a marriage lasts. It's the least glamorous line item imaginable, and by far the highest-return one.",
     "props": [
       {
-        "name": "scissors",
-        "label": "drop coverage you don't need"
+        "name": "handshake",
+        "label": "premarital counseling"
       },
       {
-        "name": "warning",
-        "label": "skip tiny add-ons"
+        "name": "calculator",
+        "label": "talk money & expectations"
       },
       {
-        "name": "shield",
-        "label": "insure only catastrophes"
-      }
-    ]
-  },
-  {
-    "id": "s61",
-    "type": "character",
-    "pose": "present",
-    "narration": "And ask about every discount, because insurers rarely volunteer them. Safety features, security systems, bundling, paying annually instead of monthly, low mileage, good-student and professional discounts — each shaves the bill, and most go unclaimed simply because no one asked. A single phone call reviewing available discounts can quietly cut a premium by ten or twenty percent.",
-    "props": [
-      {
-        "name": "phone",
-        "label": "ask about every discount"
-      },
-      {
-        "name": "shield",
-        "label": "safety, bundle, low-mileage"
-      },
-      {
-        "name": "moneybag",
-        "label": "often unclaimed"
+        "name": "chartup",
+        "label": "the highest-return spend"
       }
     ]
   },
@@ -563,39 +571,39 @@
     "id": "s22",
     "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson. Insurance is a bet on your risk, and your state fills in most of the odds before you ever sign. You can't change the hurricanes or the laws — but you can choose your deductible, your provider, and how much risk you quietly carry yourself. The goal was never zero risk. It's paying a fair price to protect what you genuinely can't afford to lose, and not a dollar more.",
+    "narration": "Because here's the real lesson. A wedding is one day; a marriage is the rest of your life — and the data is clear that spending more on the first does nothing to protect the second. The couples who win aren't the ones with the grandest party. They're the ones who refused to confuse the cost of a celebration with the strength of a commitment. Celebrate fully. Just don't mortgage the marriage to do it.",
     "props": [
       {
-        "name": "scale",
-        "label": "pay for real risk only"
-      },
-      {
-        "name": "shield",
-        "label": "protect what you can't lose"
+        "name": "heart",
+        "label": "a day vs a lifetime"
       },
       {
         "name": "warning",
-        "label": "not a dollar more"
+        "label": "cost ≠ commitment"
+      },
+      {
+        "name": "smiley",
+        "label": "celebrate, don't mortgage"
       }
     ]
   },
   {
-    "id": "s51",
+    "id": "s58",
     "type": "character",
     "pose": "explain",
-    "narration": "And zoom out on what insurance really is at a societal level: a promise that we catch each other when the worst happens. It only works when the pool is broad and the risk is shared. As climate and costs fracture that pool — splitting the lucky from the exposed — insurance is quietly becoming one of the clearest front lines of inequality. Where you can afford to live is starting to mean where you can afford to be protected.",
+    "narration": "And zoom out on what the wedding bill really measures. It's a near-perfect lab for every money lesson there is: social pressure, status signaling, the industry's markup, and the gap between what feels necessary and what actually is. Master your thinking here — on the most emotional purchase of your life — and you'll make calmer, clearer money decisions about everything that comes after it.",
     "props": [
       {
-        "name": "handshake",
-        "label": "catching each other"
+        "name": "scale",
+        "label": "a lab for every money lesson"
       },
       {
         "name": "warning",
-        "label": "the pool is fracturing"
+        "label": "pressure, status, markup"
       },
       {
-        "name": "scale",
-        "label": "protection as inequality"
+        "name": "smiley",
+        "label": "master it here, win everywhere"
       }
     ]
   },
@@ -604,10 +612,10 @@
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this made your insurance bill make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this reframed the big day for you, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "shield",
+        "name": "champagne",
         "label": "which price tag next?"
       }
     ]

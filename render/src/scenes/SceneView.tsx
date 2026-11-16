@@ -7819,6 +7819,85 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={430} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the many quietly cover the catastrophes of the few</text>
       </svg>
     );
+  } else if (m === "weddingcostbars") {
+    // Average wedding cost by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Utah", 20, green],
+      ["Texas", 28, "#9cc47f"],
+      ["Florida", 32, gold],
+      ["California", 38, "#d98b5f"],
+      ["New York", 48, "#c0583a"],
+      ["New Jersey", 53, red],
+    ];
+    const x0 = 270, xMax = 830, maxV = 53;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">average wedding cost, by state</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same vows — a car vs a house deposit, by geography</text>
+      </svg>
+    );
+  } else if (m === "weddingbreakdown") {
+    // Where the wedding money goes — stacked percentages.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const parts: [string, number, string][] = [
+      ["venue + catering", 45, red],
+      ["the ring", 18, "#d98b5f"],
+      ["photography", 10, gold],
+      ["attire", 8, "#9cc47f"],
+      ["flowers", 6, blue],
+      ["everything else", 13, tan],
+    ];
+    const barH = 330; const x = 360; let acc = 0;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={52} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where the wedding money goes</text>
+        <g>
+          {parts.map(([lab, pct, col], i) => {
+            const h = barH * (pct / 100); const y = 86 + barH * (acc / 100) * grow;
+            const hh = h * grow; acc += pct;
+            const op = interpolate(grow, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+            return (
+              <g key={i} opacity={op}>
+                <rect x={x - 90} y={y} width={180} height={hh} fill={col as string} stroke={ink} strokeWidth={3} />
+                <text x={x + 110} y={y + hh / 2 + 5} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>{lab} · {pct}%</text>
+              </g>
+            );
+          })}
+        </g>
+        <text x={x} y={448} fontSize={14} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the guest list is the hidden master dial</text>
+      </svg>
+    );
+  } else if (m === "weddingcostvsmarriage") {
+    // More spend, more divorce risk — rising line.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const x0 = 150, x1 = 860, y0 = 420, yTop = 120;
+    const f = (t: number) => y0 - (y0 - yTop) * (0.15 + 0.75 * t);
+    const seg = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${f(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">spend more → divorce more</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg} fill="none" stroke={red} strokeWidth={6} />
+        <text x={x0 + 20} y={y0 + 30} fontSize={13} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>cheap wedding</text>
+        <text x={x1 - 20} y={y0 + 30} fontSize={13} fontWeight={800} fill={theme.inkSoft} textAnchor="end" fontFamily={sans}>lavish wedding</text>
+        <text x={x0 - 8} y={yTop + 6} fontSize={13} fontWeight={800} fill={red} textAnchor="end" fontFamily={sans}>divorce risk ↑</text>
+        <text x={x1 - 40} y={f(1) - 14} fontSize={14} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>higher odds of splitting</text>
+        <text x={VW / 2} y={y0 + 56} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the expensive wedding buys a weaker marriage, not a stronger one</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

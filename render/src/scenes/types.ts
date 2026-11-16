@@ -276,7 +276,9 @@ export interface StageScene extends Base {
     // EP105 (The Price Tag — cost to start a business by state) additions:
     | "startupcostbars" | "structurecostladder" | "startuphiddencosts"
     // EP106 (The Price Tag — insurance by state) additions:
-    | "insurancetotalbars" | "premiumdrivers" | "riskpoolhow";
+    | "insurancetotalbars" | "premiumdrivers" | "riskpoolhow"
+    // EP107 (The Price Tag — wedding cost by state) additions:
+    | "weddingcostbars" | "weddingbreakdown" | "weddingcostvsmarriage";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
