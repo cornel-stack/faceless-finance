@@ -11,7 +11,7 @@ import {
 } from "remotion";
 import { theme } from "./theme";
 import { display, sans } from "./fonts";
-import { Globe, MoneyFlow, HomeMoney, FlagStack, BankPrint, CountUp, MoneyDust } from "./shorts/Doodles";
+import { Globe, MoneyFlow, HomeMoney, FlagStack, BankPrint, CountUp, MoneyDust, CrashChart, PriceTag, Lock, Building, Vault, USMap } from "./shorts/Doodles";
 
 // ---------------------------------------------------------------------------
 // Vertical YouTube Short (1080x1920). Animation-first: every beat is a bespoke
@@ -26,15 +26,32 @@ const PAPER_LINE = "#e7e0d3";
 
 export type ShortRow = { rank?: string; name: string; value: string; note?: string; color?: string; bar?: number };
 
-export type ShortArt = "globe" | "globeQ" | "moneyFlow" | "home" | "flagStack" | "bank";
+export type ShortArt =
+  | "globe"
+  | "globeQ"
+  | "moneyFlow"
+  | "home"
+  | "flagStack"
+  | "bank"
+  | "crashChart"
+  | "priceTag"
+  | "lock"
+  | "building"
+  | "vault"
+  | "map";
 
 export type ShortScene = {
   id: string;
   narration?: string;
-  block: "hook" | "label" | "truth" | "stat" | "rows" | "question";
+  block: "hook" | "label" | "truth" | "stat" | "rows" | "question" | "thennow";
   art?: ShortArt;
   country?: "jp" | "cn" | "us";
   trend?: "up" | "down";
+  // then-vs-now
+  thenValue?: string;
+  thenLabel?: string;
+  nowValue?: string;
+  nowLabel?: string;
   // text content (by block)
   lines?: string[]; // hook: stacked lines, last one red
   kicker?: string; // small label above the main content
@@ -106,6 +123,18 @@ const Art: React.FC<{ scene: ShortScene }> = ({ scene }) => {
       return <FlagStack country={scene.country ?? "us"} trend={scene.trend ?? "up"} size={430} />;
     case "bank":
       return <BankPrint size={470} />;
+    case "crashChart":
+      return <CrashChart size={640} />;
+    case "priceTag":
+      return <PriceTag size={360} />;
+    case "lock":
+      return <Lock size={320} />;
+    case "building":
+      return <Building size={430} />;
+    case "vault":
+      return <Vault size={440} />;
+    case "map":
+      return <USMap size={640} />;
     default:
       return null;
   }
@@ -202,6 +231,22 @@ const Card: React.FC<{ scene: ShortScene }> = ({ scene }) => {
           <RowsBlock scene={s} />
         </AbsoluteFill>
       </AbsoluteFill>
+    );
+  } else if (s.block === "thennow") {
+    text = (
+      <div style={{ textAlign: "center", padding: "0 56px", width: "100%" }}>
+        {s.kicker && <div style={{ ...usePop(2), fontFamily: sans, fontWeight: 700, fontSize: 42, color: theme.inkSoft, marginBottom: 24 }}>{s.kicker}</div>}
+        <div style={{ ...usePop(8), background: "#fff", border: `3px solid ${PAPER_LINE}`, borderRadius: 24, padding: "22px 20px", marginBottom: 10 }}>
+          <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 40, color: theme.inkSoft }}>{s.thenLabel ?? "THEN"}</div>
+          <div style={{ fontFamily: display, fontWeight: 900, fontSize: 120, lineHeight: 1, color: theme.ink }}>{s.thenValue}</div>
+        </div>
+        <div style={{ ...usePop(16), fontFamily: display, fontWeight: 900, fontSize: 70, color: theme.accent }}>↓</div>
+        <div style={{ ...usePop(22), background: theme.accent, borderRadius: 24, padding: "22px 20px", marginTop: 10 }}>
+          <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 40, color: "#ffd9d2" }}>{s.nowLabel ?? "NOW"}</div>
+          <div style={{ fontFamily: display, fontWeight: 900, fontSize: 120, lineHeight: 1, color: "#fff" }}>{s.nowValue}</div>
+        </div>
+        {s.sub && <div style={{ ...usePop(28), fontFamily: sans, fontWeight: 600, fontSize: 42, color: theme.inkSoft, marginTop: 26 }}>{s.sub}</div>}
+      </div>
     );
   } else if (s.block === "question") {
     text = (

@@ -276,6 +276,137 @@ export const CountUp: React.FC<{ value: number; prefix?: string; suffix?: string
   );
 };
 
+// ---- CRASH CHART: a line rises then plunges, drawn left→right -------------
+export const CrashChart: React.FC<{ size?: number }> = ({ size = 620 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = useT(2, 45, 1);
+  // rise to a peak at ~60%, then crash
+  const pts = [
+    [40, 250], [110, 220], [180, 180], [250, 120], [320, 70], [360, 60],
+    [400, 150], [440, 240], [480, 300], [520, 320],
+  ];
+  const d = "M" + pts.map((p) => `${p[0]} ${p[1]}`).join(" L ");
+  // head dot follows the reveal
+  const idx = Math.min(pts.length - 1, Math.floor(t * (pts.length - 1)));
+  const head = pts[idx];
+  const crashing = idx >= 5;
+  return (
+    <svg width={size} height={size * 0.6} viewBox="0 0 560 340">
+      {/* axes */}
+      <line x1={40} y1={320} x2={530} y2={320} stroke={INK} strokeWidth={4} opacity={0.5} />
+      <line x1={40} y1={40} x2={40} y2={320} stroke={INK} strokeWidth={4} opacity={0.5} />
+      <path d={d} fill="none" stroke={crashing ? RED : GREEN} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+      <circle cx={head[0]} cy={head[1]} r={12} fill={crashing ? RED : GREEN} />
+      {t > 0.95 && <polygon points="520,320 500,290 540,290" fill={RED} />}
+    </svg>
+  );
+};
+
+// ---- PRICE TAG: a swinging tag with a big $ label -------------------------
+export const PriceTag: React.FC<{ size?: number; label?: string }> = ({ size = 360, label = "$" }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = useT(2, 70);
+  const swing = bob(frame, fps, 0.5, 4);
+  return (
+    <svg width={size} height={size} viewBox="0 0 300 300">
+      <g transform={`rotate(${swing} 150 40)`}>
+        <line x1={150} y1={20} x2={150} y2={70} stroke={INK} strokeWidth={5} />
+        <g style={{ transform: `scale(${t})`, transformOrigin: "150px 170px" }}>
+          <path d="M110 80 L220 80 L250 150 L170 230 L90 150 Z" fill={RED} stroke={INK} strokeWidth={6} strokeLinejoin="round" />
+          <circle cx={135} cy={118} r={12} fill="#fff" stroke={INK} strokeWidth={5} />
+          <text x={170} y={172} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={54} fill="#fff">{label}</text>
+        </g>
+      </g>
+    </svg>
+  );
+};
+
+// ---- LOCK: a padlock, locked, with a little shake -------------------------
+export const Lock: React.FC<{ size?: number }> = ({ size = 320 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = useT(2, 80);
+  const shake = Math.sin(frame * 0.6) * 2 * Math.max(0, 1 - frame / 40);
+  return (
+    <svg width={size} height={size} viewBox="0 0 240 260">
+      <g transform={`translate(${shake} 0)`}>
+        <path d="M80 110 L80 70 A40 40 0 0 1 160 70 L160 110" fill="none" stroke={INK} strokeWidth={14} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+        <rect x={55} y={110} width={130} height={110} rx={16} fill={GOLD} stroke={INK} strokeWidth={8} style={{ transform: `scale(${t})`, transformOrigin: "120px 165px" }} />
+        <circle cx={120} cy={155} r={15} fill={INK} />
+        <rect x={113} y={155} width={14} height={38} rx={6} fill={INK} />
+      </g>
+    </svg>
+  );
+};
+
+// ---- BUILDING: a corporate tower that tilts + cracks (collapse) ------------
+export const Building: React.FC<{ size?: number; collapse?: boolean }> = ({ size = 420, collapse = true }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = useT(2, 60);
+  const tilt = collapse ? interpolate(t, [0.6, 1], [0, 7], { extrapolateLeft: "clamp" }) : 0;
+  const win = (r: number, c: number) => {
+    const lit = (r * 3 + c) % 4 !== 0 || t < 0.7;
+    return <rect key={`${r}-${c}`} x={70 + c * 52} y={90 + r * 56} width={34} height={38} rx={3} fill={lit ? GOLD : "#444"} stroke={INK} strokeWidth={3} opacity={t} />;
+  };
+  const rows = [0, 1, 2, 3, 4];
+  const cols = [0, 1, 2];
+  return (
+    <svg width={size} height={size} viewBox="0 0 360 420">
+      <g transform={`rotate(${tilt} 180 390)`}>
+        <rect x={56} y={60} width={200} height={330} fill="#fff" stroke={INK} strokeWidth={7} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+        {rows.map((r) => cols.map((c) => win(r, c)))}
+        {collapse && t > 0.75 && <path d="M156 60 L150 180 L168 250 L156 390" fill="none" stroke={RED} strokeWidth={5} />}
+      </g>
+      <rect x={30} y={388} width={300} height={16} fill={INK} />
+    </svg>
+  );
+};
+
+// ---- VAULT: a bank vault door, ajar and nearly empty ----------------------
+export const Vault: React.FC<{ size?: number }> = ({ size = 420 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = useT(2, 60);
+  const spin = frame * 2;
+  return (
+    <svg width={size} height={size} viewBox="0 0 400 360">
+      <rect x={40} y={40} width={320} height={280} rx={16} fill="#eceae4" stroke={INK} strokeWidth={8} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+      <circle cx={200} cy={180} r={110} fill="#fff" stroke={INK} strokeWidth={7} opacity={t} />
+      <circle cx={200} cy={180} r={78} fill="none" stroke={INK} strokeWidth={5} opacity={t} />
+      <g transform={`rotate(${spin} 200 180)`} opacity={t}>
+        <line x1={200} y1={120} x2={200} y2={240} stroke={INK} strokeWidth={10} strokeLinecap="round" />
+        <line x1={140} y1={180} x2={260} y2={180} stroke={INK} strokeWidth={10} strokeLinecap="round" />
+      </g>
+      {/* a lone coin rolling out (the "fraction" left) */}
+      {t > 0.7 && <Coin x={70 + bob(frame, fps, 0.5, 10)} y={300} r={18} />}
+    </svg>
+  );
+};
+
+// ---- US MAP: simplified silhouette with a pulsing pin (find your state) ----
+export const USMap: React.FC<{ size?: number }> = ({ size = 600 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = useT(2, 55);
+  const pulse = 1 + Math.sin(frame * 0.2) * 0.12;
+  const d =
+    "M40 110 L150 90 L300 80 L470 70 L560 95 L540 150 L560 200 L520 230 L470 220 L430 250 L300 255 L250 240 L160 240 L120 200 L70 190 Z";
+  return (
+    <svg width={size} height={size * 0.5} viewBox="0 0 600 300">
+      <path d={d} fill="#eef4f7" stroke={INK} strokeWidth={7} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+      {t > 0.7 && (
+        <g transform={`translate(320 150) scale(${pulse})`}>
+          <path d="M0 -44 C 26 -44 34 -20 0 26 C -34 -20 -26 -44 0 -44 Z" fill={RED} stroke={INK} strokeWidth={5} />
+          <circle cx={0} cy={-26} r={11} fill="#fff" />
+        </g>
+      )}
+    </svg>
+  );
+};
+
 // ---- Drifting $ background (subtle life behind every scene) ----------------
 export const MoneyDust: React.FC = () => {
   const frame = useCurrentFrame();

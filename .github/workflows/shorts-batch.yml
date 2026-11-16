@@ -1,0 +1,79 @@
+name: Render shorts batch
+
+# Renders every short listed in shorts/manifest.json in one job: for each,
+# extract scenes -> Edge TTS narration -> Remotion Short render, named
+# <NNN>.<slug>.mp4 (NNN = sheet number). Uploads the whole folder as one
+# artifact. Push any shorts-batch-* branch to run.
+on:
+  push:
+    branches: ["shorts-batch-*"]
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg \
+            libnss3 libdbus-1-3 libatk1.0-0 libatk-bridge2.0-0 libgbm-dev \
+            libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 \
+            libxcomposite1 libxdamage1 libpango-1.0-0 libcairo2 libcups2
+
+      - name: Install Node dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Install narration dependencies
+        run: pip install -r tools/narration/requirements.txt
+
+      - name: Render every short in the manifest
+        run: |
+          mkdir -p render/out upload
+          python - <<'PY' > /tmp/jobs.txt
+          import json
+          man = json.load(open("shorts/manifest.json"))
+          for m in man:
+              print(f"{m['num']:03d}\t{m['slug']}\t{m['path']}")
+          PY
+          while IFS=$'\t' read -r NUM SLUG PATHJSON; do
+            echo "::group::Short ${NUM} ${SLUG}"
+            python - "$PATHJSON" <<'PY'
+          import json, sys
+          sh = json.load(open(sys.argv[1]))
+          json.dump(sh["scenes"], open("render/src/data/scenes.json","w"), indent=2, ensure_ascii=False)
+          print(f"{len(sh['scenes'])} scenes")
+          PY
+            python tools/narration/synth.py --episode "$PATHJSON" --intro 0 --pad 0.35
+            pnpm --filter @ff/render exec remotion render Short "out/${NUM}.${SLUG}.mp4" --codec=h264
+            cp "render/out/${NUM}.${SLUG}.mp4" "upload/${NUM}.${SLUG}.mp4"
+            echo "::endgroup::"
+          done < /tmp/jobs.txt
+          ls -la upload/
+
+      - name: Upload shorts batch
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: "shorts-batch-${{ github.run_number }}"
+          path: upload/
+          retention-days: 30
+
+      - name: Print download link
+        run: |
+          {
+            echo "### ✅ Shorts batch rendered"
+            echo ""
+            echo "**Download:** ${{ steps.upload.outputs.artifact-url }}"
+          } >> "$GITHUB_STEP_SUMMARY"

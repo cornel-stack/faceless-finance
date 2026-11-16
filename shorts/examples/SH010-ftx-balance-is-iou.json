@@ -1,0 +1,54 @@
+{
+  "id": "SH010",
+  "num": 10,
+  "slug": "ftx-balance-is-iou",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP015",
+  "sourceTitle": "FTX: Where $8 Billion Went",
+  "title": "Your Exchange Balance Is Not Money",
+  "hook": "Your exchange balance is not money. It is an IOU.",
+  "question": "Who actually holds your coins?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "block": "hook",
+      "art": "vault",
+      "narration": "The number on your exchange app is not money. It is an IOU.",
+      "lines": [
+        "Your exchange balance",
+        "is not your money."
+      ]
+    },
+    {
+      "id": "s2",
+      "block": "truth",
+      "art": "vault",
+      "narration": "When you buy on an exchange, the exchange holds the coins. You hold a claim, a promise they will pay you back.",
+      "kicker": "what it really is",
+      "line": "A claim, not coins",
+      "sub": "the exchange holds them — you hold a promise"
+    },
+    {
+      "id": "s3",
+      "block": "stat",
+      "art": "vault",
+      "narration": "FTX customers found this out the hard way. Eight billion in claims, with the coins long gone.",
+      "kicker": "FTX customers learned this",
+      "big": "$8B",
+      "label": "of claims, no coins behind them"
+    },
+    {
+      "id": "s4",
+      "block": "question",
+      "art": "vault",
+      "narration": "Not your keys, not your coins. Who is really holding yours?",
+      "line": "Who holds your coins?",
+      "sub": "not your keys, not your coins"
+    }
+  ]
+}
