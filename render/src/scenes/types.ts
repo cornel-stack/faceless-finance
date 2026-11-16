@@ -280,7 +280,9 @@ export interface StageScene extends Base {
     // EP107 (The Price Tag — wedding cost by state) additions:
     | "weddingcostbars" | "weddingbreakdown" | "weddingcostvsmarriage"
     // EP108 (The Price Tag — GDP vs earnings) additions:
-    | "gdppercapitabars" | "wherethegdpgoes" | "averagevsmedian";
+    | "gdppercapitabars" | "wherethegdpgoes" | "averagevsmedian"
+    // EP109 (The Price Tag — 1970 vs 2026 prices) additions:
+    | "pricesthennowbars" | "wagevspricegap" | "realvsnominalflip";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

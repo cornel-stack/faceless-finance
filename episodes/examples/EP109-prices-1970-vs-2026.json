@@ -1,0 +1,699 @@
+{
+  "id": "EP109",
+  "series": "Napkin Numbers",
+  "title": "The Price of Everything in 1970 vs 2026",
+  "slug": "prices-1970-vs-2026",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP109 — The Price Tag series (topic 99). 1970 vs 2026 prices: $1 1970 ≈ $8 today (8x inflation tide). Rank 'times pricier since 1970' (gas 10, bread 12, car 14, house 18, college 28, healthcare 30+) — above 8x = truly pricier, below = cheaper real. Same rule as EP090: land/labor services exploded, manufactured goods got cheaper AND better. Real wages barely rose → single-income nostalgia explained (essentials were cheap vs pay). What got cheaper (TVs/clothes/appliances in hours-of-work). Own what outruns inflation; we could fix the big three with building/competition. 3 new motifs (pricesthennowbars/wagevspricegap/realvsnominalflip); 2 charts. Sources: Real vs nominal(reuse)/Inflation(reuse)/Real wages/CPI(reuse)/Price level. Distinct from EP090 (category ranking) — this is THEN-vs-NOW + wages. NO local synth. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "In 1970, a brand-new house cost about twenty-three thousand dollars. A gallon of gas was thirty-six cents. A year of college was a few hundred. Today those same things cost twenty, thirty, sometimes fifty times more. But here's the twist that changes the whole story: not everything got more expensive, and the things that exploded aren't random. Today we compare the price of everything in 1970 versus 2026 — and reveal what actually happened to your money.",
+      "props": [
+        {
+          "name": "house",
+          "label": "$23K → $420K"
+        },
+        {
+          "name": "gaspump",
+          "label": "36¢ → $3.50"
+        },
+        {
+          "name": "scale",
+          "label": "1970 vs 2026"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that frames it all. One dollar in 1970 has the buying power of roughly eight dollars today. Prices across the economy rose about eightfold in fifty-five years. So before you panic at any single price, remember: a huge part of every increase is just this — the slow, steady shrinking of what a dollar is worth.",
+      "text": "$1 → $8",
+      "sub": "what a 1970 dollar is worth in 2026",
+      "icon": "banknote"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we line up 1970 against 2026 across everyday life, separate the illusion of rising prices from the reality of rising costs, compare it all against what people actually earned, reveal which things secretly got cheaper, and expose the handful of costs that truly outran your paycheck. Because the real story of fifty years isn't that everything got pricier. It's which things did, and whether your wage kept up.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "1970 vs 2026"
+        },
+        {
+          "name": "paystub",
+          "label": "vs what you earned"
+        },
+        {
+          "name": "warning",
+          "label": "what outran wages"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "everything is so much more expensive than 1970",
+      "memeBottom": "in real terms, some things got cheaper and a few exploded",
+      "narration": "Because comparing raw 1970 prices to today without adjusting for the dollar — and for wages — is how almost everyone misreads the last half-century. Before we compare, let's learn the one adjustment that makes it make sense."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the difference between nominal prices and real ones.",
+      "heading": "Nominal vs Real",
+      "kicker": "the only adjustment that matters"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-realnom",
+      "narration": "The key idea is real value. Real value takes into account inflation and the value of an asset against what it can actually buy. A nominal price is just the number on the tag — thirty-six cents or three-fifty for gas. The real price adjusts for the shrinking dollar, so you can compare 1970 and 2026 fairly. Without that adjustment, every comparison is meaningless."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is exactly why old prices sound absurd. A thirty-five-cent gallon of gas, a nickel candy bar, a twenty-three-thousand-dollar house — they sound like a fantasy. But wages were tiny by today's standards too. The only honest way to feel the past is to shrink both the prices and the paychecks by the same eightfold, and compare them on equal footing.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "old prices sound absurd"
+        },
+        {
+          "name": "paystub",
+          "label": "but wages were tiny too"
+        },
+        {
+          "name": "scale",
+          "label": "shrink both to compare"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-inflation",
+      "narration": "The shrinking itself is inflation — an increase in the average price of goods and services in terms of money. Over fifty-five years, steady inflation compounded into that eightfold rise in the overall price level. So the first job, always, is to strip inflation out. Only then can you see which prices rose merely with the tide, and which ones truly climbed on their own."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the eightfold figure itself is worth sitting with. It means that steady, boring inflation of around four percent a year, compounded over fifty-five years, quietly multiplied prices by eight. No single year felt dramatic. But compounding is relentless — the same force that grows your investments also, year after invisible year, shrinks the value of every dollar sitting still in a drawer.",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "4%/yr compounded = 8×"
+        },
+        {
+          "name": "warning",
+          "label": "no year felt dramatic"
+        },
+        {
+          "name": "banknote",
+          "label": "dollars in a drawer shrink"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's a rule of thumb to carry forever. At around four percent inflation, prices double roughly every eighteen years. So across one lifetime, the price of almost everything doubles three or four times over — not from greed or crisis, just from the quiet mathematics of a steadily shrinking dollar.",
+      "text": "2× every ~18 yrs",
+      "sub": "how fast inflation doubles prices",
+      "icon": "hourglass"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So think of it in two layers. The bottom layer is the eightfold inflation that lifted almost every price together — that's the tide. The top layer is the extra, real increase or decrease on specific things — that's the signal. A price that rose exactly eightfold just kept pace. One that rose thirty-fold truly got more expensive. One that rose less than eightfold actually got cheaper in real terms.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "8× = the inflation tide"
+        },
+        {
+          "name": "chartup",
+          "label": "above 8× = truly pricier"
+        },
+        {
+          "name": "chartdown",
+          "label": "below 8× = cheaper in real terms"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Put the tide in perspective. Because prices rose roughly eightfold, a salary of ten thousand dollars in 1970 was, in real buying power, like earning around eighty thousand today. So when someone says their parents bought a house on one modest salary, remember that modest 1970 salary was worth a solid middle-class income in today's money. The comparison only works adjusted.",
+      "text": "$10K ≈ $80K",
+      "sub": "a 1970 salary in today's buying power",
+      "icon": "paystub"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's line up the prices: 1970 versus 2026.",
+      "heading": "Then vs Now",
+      "kicker": "the price of everything"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One honest caveat before the comparison: picking exact 1970 prices is messy. Models, quality, and regions all differ, and a 1970 car and a 2026 car are barely the same product. So treat these multiples as the shape of the story, not laboratory precision. The direction and the scale are what matter — and those are rock solid.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "exact prices are messy"
+        },
+        {
+          "name": "scale",
+          "label": "the shape, not precision"
+        },
+        {
+          "name": "smiley",
+          "label": "direction is solid"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "pricesthennowbars",
+      "caption": "how many times pricier since 1970",
+      "narration": "Here's how many times more expensive everyday things became. Remember, eightfold is just keeping pace with inflation. Gas rose about ten times — barely above the tide. Bread and a new car, twelve to fourteen. A house, around eighteen times. But college is up nearly thirty, and healthcare over thirty. The further a bar climbs past eightfold, the more it truly outran the shrinking dollar."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And watch where the bars cross the inflation line, because that's the whole diagnosis. Anything hugging the eightfold mark — gas, bread, basic goods — simply rode the tide and isn't really the problem. Everything towering far above it is where a real, extra cost piled on. The chart isn't a list of expensive things. It's a map of exactly where the last fifty years went wrong.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "watch the 8× line"
+        },
+        {
+          "name": "chartup",
+          "label": "towering = real extra cost"
+        },
+        {
+          "name": "warning",
+          "label": "a map of what went wrong"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Times more expensive since 1970 (×)",
+      "unit": "x",
+      "narration": "Put the multiples in a row. Gas up about ten times, bread twelve, a car fourteen, a house eighteen, college twenty-eight, and healthcare over thirty. The inflation tide was eightfold. So gas and bread basically just kept pace — but housing, college, and healthcare rose two, three, even four times faster than money itself shrank. Those three are where the real pain of fifty years lives.",
+      "data": [
+        {
+          "label": "inflation",
+          "value": 8
+        },
+        {
+          "label": "gas",
+          "value": 10
+        },
+        {
+          "label": "bread",
+          "value": 12
+        },
+        {
+          "label": "car",
+          "value": 14
+        },
+        {
+          "label": "house",
+          "value": 18
+        },
+        {
+          "label": "college",
+          "value": 28
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the house number hides an even harsher truth. A house rose about eighteen times in price, roughly double the inflation tide. But in the hottest markets it's far worse — and crucially, the house itself didn't get better in proportion. You're paying two or three times the real price for essentially the same shelter, mostly because of land and restricted supply, not granite countertops.",
+      "props": [
+        {
+          "name": "house",
+          "label": "~2× the real price"
+        },
+        {
+          "name": "warning",
+          "label": "same shelter, not better"
+        },
+        {
+          "name": "mappin",
+          "label": "land + restricted supply"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the pattern, because it's the same one every time. The things that truly exploded — housing, college, healthcare — are services and assets made of human labor, land, and limited supply. The things that merely kept pace or fell behind are manufactured goods and commodities. Half a century later, the same rule holds: what people make by hand got dear, and what machines make got cheap.",
+      "props": [
+        {
+          "name": "house",
+          "label": "land + labor = exploded"
+        },
+        {
+          "name": "stockscreen",
+          "label": "manufactured = kept pace"
+        },
+        {
+          "name": "scale",
+          "label": "the same rule, 50 years on"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "panic that bread costs 12x more",
+      "memeBottom": "notice that's basically just inflation",
+      "narration": "This is the mistake that fuels endless outrage. People fixate on the rising price of small everyday items — bread, coffee, eggs — which mostly just tracked inflation. Meanwhile the real damage, in housing and healthcare, happens quietly in the background, in numbers too big to buy every week and so too easy to ignore."
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "But a price only matters next to what you earned to pay it.",
+      "heading": "Prices vs Wages",
+      "kicker": "did pay keep up"
+    },
+    {
+      "id": "s55",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "wages flat for 50 years, house prices up 18x",
+      "memeBottom": "this is fine",
+      "narration": "For the typical worker, this is the quiet math of half a century: a paycheck that technically grew but barely gained real ground, chasing essentials that sprinted away. It isn't laziness or bad budgeting. It's a structural gap between what a life costs and what a wage earns, widening year after year."
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "sourceId": "wiki-realwages",
+      "narration": "This is where real wages matter — wages in terms of the amount of goods and services that can be bought. In 1970, the average wage was a few dollars an hour; today it's far higher in dollars. But after adjusting for that eightfold inflation, the shocking truth emerges: for the typical worker, real wages have barely risen in fifty years. The paycheck's number grew. Its buying power mostly didn't."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this explains the single-income nostalgia so precisely. In 1970, one earner could often cover a house, a car, and a family — not because wages were magically high, but because the big three essentials were cheap relative to pay. Today it frequently takes two incomes to afford what one bought, because housing, college, and healthcare each rose far faster than the paycheck did.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "one income once did it"
+        },
+        {
+          "name": "house",
+          "label": "essentials were cheap vs pay"
+        },
+        {
+          "name": "warning",
+          "label": "now it takes two"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "motif": "wagevspricegap",
+      "caption": "wages vs the things that exploded",
+      "narration": "Here's the squeeze, drawn out. Over fifty-five years, wages roughly kept pace with overall inflation — the eightfold line. But housing, college, and healthcare shot far above it. So a worker's pay could still buy the same bread and gas as in 1970, but a dramatically smaller slice of a house, a degree, or a hospital stay. The gap between the wage line and those three exploding costs is the entire modern affordability crisis, in one picture."
+    },
+    {
+      "id": "s46",
+      "type": "callout",
+      "narration": "Here's the gap in one brutal comparison. Since 1970, overall prices rose about eightfold and the typical real wage barely moved — but home prices rose roughly eighteenfold and college nearly thirtyfold. The essentials didn't just beat inflation; they lapped the worker's paycheck two and three times over. That's the arithmetic of feeling like you're running to stand still.",
+      "text": "18x vs flat",
+      "sub": "home prices vs real wages since 1970",
+      "icon": "warning"
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "And now the part nobody expects: the things that got cheaper.",
+      "heading": "The Cheaper Side",
+      "kicker": "what improved"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And measuring in hours of work is the great equalizer across time. Forget dollars entirely and ask: how long did the average person labor to afford this? By that honest yardstick, food, clothing, and electronics all take far fewer hours today than in 1970. The hours-of-work lens cuts straight through inflation and shows you what genuinely got easier, and what got brutally harder.",
+      "props": [
+        {
+          "name": "clock",
+          "label": "measure in hours worked"
+        },
+        {
+          "name": "smiley",
+          "label": "food, clothes, gadgets easier"
+        },
+        {
+          "name": "scale",
+          "label": "cuts through inflation"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "sourceId": "wiki-cpi",
+      "narration": "Tracked by the consumer price index — the weighted average price of a market basket of consumer goods — a whole category of life quietly got cheaper in real terms. Televisions, clothing, phones, toys, and appliances rose far less than eightfold, or even fell outright. A color TV that cost a worker weeks of wages in 1970 costs a few hours of work today. For manufactured goods, the last fifty years were a golden age of falling real prices."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the quality jump on the cheap side is staggering, which the raw price hides. A 1970 television was a fuzzy box; today's costs a fraction in real terms and is a razor-sharp wall of glass. A 1970 car was less safe and died at a hundred thousand miles; today's lasts twice as long. On the manufactured side, you get vastly more for far less — the opposite of the housing story.",
+      "props": [
+        {
+          "name": "stockscreen",
+          "label": "cheaper AND far better"
+        },
+        {
+          "name": "car",
+          "label": "lasts twice as long"
+        },
+        {
+          "name": "smiley",
+          "label": "more for less"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "realvsnominalflip",
+      "caption": "pricier in dollars, cheaper in real life",
+      "narration": "This is the great illusion. Almost everything costs more dollars than in 1970 — that's just the eightfold inflation. But measured in hours of work, or as a share of income, electronics, clothes, food, and appliances all became dramatically more affordable. We feel poorer because the big three — housing, college, healthcare — scream, while quietly, the gadgets and goods filling our homes have never been cheaper in real terms."
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this split is why people feel genuinely confused about whether life got better or worse. Materially, in gadgets, food variety, cars, and comforts, the average person is far richer than in 1970. But in security — owning a home, affording healthcare, graduating without debt — many feel poorer. Both are true at once. We are drowning in cheap stuff and starving for affordable essentials.",
+      "props": [
+        {
+          "name": "stockscreen",
+          "label": "richer in stuff"
+        },
+        {
+          "name": "house",
+          "label": "poorer in security"
+        },
+        {
+          "name": "scale",
+          "label": "both true at once"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "title",
+      "narration": "So what does fifty-five years of prices actually teach you?",
+      "heading": "What To Do",
+      "kicker": "read prices right"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "present",
+      "narration": "And treat any old price you see with instant suspicion. 'This cost a nickel in 1970' is almost always a trick of nostalgia unless you multiply by eight and compare to 1970 wages. Nearly every 'things were so cheap back then' story dissolves under that adjustment. Learn to do the eightfold math in your head, and you'll never be fooled by a vintage price tag again.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "old prices are nostalgia traps"
+        },
+        {
+          "name": "calculator",
+          "label": "always multiply by 8"
+        },
+        {
+          "name": "smiley",
+          "label": "never fooled again"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "screenshot",
+      "sourceId": "wiki-pricelevel",
+      "narration": "The lesson starts with the price level — a hypothetical measure of overall prices for some set of goods and services. Train yourself to always ask: did this rise faster than the price level, or slower? That one habit turns you from someone who panics at every number into someone who can see which costs are genuinely devouring their life and which are just inflation doing its quiet, normal thing."
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And here's the single most important number to track going forward: not prices, and not even wages alone, but the two together. Are home prices, tuition, and health costs rising faster or slower than your pay? That ratio, watched over years, tells you whether a secure life is getting closer or further away — far more honestly than any inflation headline ever will.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "prices vs your pay"
+        },
+        {
+          "name": "chartup",
+          "label": "the ratio over time"
+        },
+        {
+          "name": "house",
+          "label": "is a secure life closer?"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "pose": "present",
+      "narration": "So in your own life, guard hardest against the big three that truly outran wages: housing, education, and healthcare. These are where real affordability is won or lost. Be relaxed about the cheap, improving stuff — the gadgets and goods. And always measure costs in hours of your work, not just dollars, because that's the only number that honestly compares across time.",
+      "props": [
+        {
+          "name": "house",
+          "label": "guard the big three"
+        },
+        {
+          "name": "stockscreen",
+          "label": "relax on cheap goods"
+        },
+        {
+          "name": "clock",
+          "label": "measure in hours of work"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And turn the lesson into strategy: own the things that outrun inflation, don't just buy them. Housing, productive assets, and your own skills tend to rise faster than the price level over decades. Holding cash does the opposite — it quietly dissolves in that eightfold tide. The people who thrived across fifty years weren't the highest earners. They were the ones who owned the assets that inflation lifted.",
+      "props": [
+        {
+          "name": "house",
+          "label": "own what outruns inflation"
+        },
+        {
+          "name": "chartup",
+          "label": "assets + skills rise"
+        },
+        {
+          "name": "warning",
+          "label": "cash dissolves in the tide"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson of 1970 versus 2026. The complaint that everything got more expensive is half true and half an illusion. Most things simply rode the eightfold inflation tide, and a lucky category even got cheaper. But three essentials — a home, a degree, a healthy life — broke away and left wages behind. The fifty-year story isn't inflation. It's that the price of a secure life rose faster than the ability to earn one.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "half true, half illusion"
+        },
+        {
+          "name": "house",
+          "label": "the essentials broke away"
+        },
+        {
+          "name": "warning",
+          "label": "a secure life outran wages"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the hopeful half of the story. The same forces that made electronics and goods cheaper — technology, competition, scale — are exactly what we'd need to unleash on housing, education, and healthcare. The reason those three exploded isn't a law of nature; it's that we blocked the building, the competition, and the innovation. What we did for televisions, we could still do for homes.",
+      "props": [
+        {
+          "name": "crane",
+          "label": "we could fix the big three"
+        },
+        {
+          "name": "chartdown",
+          "label": "tech + competition cut prices"
+        },
+        {
+          "name": "smiley",
+          "label": "not a law of nature"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this finally made fifty years of prices make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-realnom",
+      "name": "Real versus nominal value (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_versus_nominal_value_(economics)",
+      "quote": "Real value takes into account inflation and the value of an asset"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price of goods and services in terms of money"
+    },
+    {
+      "id": "wiki-realwages",
+      "name": "Real wages (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_wages",
+      "quote": "wages in terms of the amount of goods and services that can be bought"
+    },
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "the weighted average price of a market basket of consumer goods"
+    },
+    {
+      "id": "wiki-pricelevel",
+      "name": "Price level (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Price_level",
+      "quote": "a hypothetical measure of overall prices for some set of goods and services"
+    }
+  ],
+  "youtube": {
+    "title": "The Price of Everything in 1970 vs 2026",
+    "alts": [
+      "1970 vs 2026: What Everything Really Cost (Adjusted)",
+      "Why 1970 Prices Lie — The Real Story of 55 Years"
+    ],
+    "hook": "In 1970 a new house cost about $23,000, gas was 36 cents a gallon, and a year of college was a few hundred dollars. Today those same things cost 20, 30, even 50 times more — but here's the twist that changes everything: not everything got more expensive, and the things that exploded aren't random. This is the price of everything in 1970 vs 2026, and what actually happened to your money. We start with the key fact ($1 in 1970 has the buying power of ~$8 today — prices rose ~8x), then learn the one adjustment that makes old prices make sense (nominal vs real value), and rank how many times pricier things got since 1970 (gas ~10x, bread ~12x, a car ~14x, a house ~18x, college ~28x, healthcare 30x+). The inflation 'tide' was 8x, so anything above that truly outran the shrinking dollar — and it's the same pattern as always: land- and labor-heavy essentials (housing, college, healthcare) exploded, while manufactured goods got cheaper AND better in real terms. Then the part nobody expects (TVs, clothes, phones and appliances became far more affordable measured in hours of work), why real wages barely rose (explaining the single-income nostalgia), and the real lesson: the price of a secure life rose faster than the ability to earn one. Fully cited.",
+    "bullets": [
+      "$1 in 1970 ≈ $8 today — the 8x inflation 'tide'",
+      "Times pricier since 1970: gas 10x, house 18x, college 28x",
+      "The rule: labor/land essentials exploded, goods got cheaper",
+      "Real wages barely rose — the single-income nostalgia explained",
+      "What got cheaper: TVs, clothes, appliances (in hours of work)",
+      "The real lesson: a secure life outran wages"
+    ],
+    "tags": [
+      "1970 vs 2026",
+      "inflation",
+      "cost of living then vs now",
+      "real vs nominal",
+      "prices over time",
+      "real wages",
+      "why everything is expensive",
+      "purchasing power",
+      "inflation explained",
+      "1970 prices",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#inflation",
+      "#costofliving",
+      "#economics",
+      "#1970s"
+    ],
+    "thumbnail": {
+      "hookTop": "1970 vs 2026:",
+      "hookBot": "THE REAL PRICES",
+      "napkinNumber": "$1 → $8",
+      "napkinSub": "what a 1970 dollar is worth now",
+      "deco": "pricetag"
+    },
+    "chapters": [
+      [
+        "the difference between nominal prices and real ones",
+        "Nominal vs real"
+      ],
+      [
+        "line up the prices",
+        "Then vs now"
+      ],
+      [
+        "a price only matters next to what you earned",
+        "Prices vs wages"
+      ],
+      [
+        "the things that got cheaper",
+        "The cheaper side"
+      ],
+      [
+        "fifty-five years of prices actually teach you",
+        "What to do"
+      ]
+    ]
+  }
+}

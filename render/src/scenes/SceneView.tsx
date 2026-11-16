@@ -7952,6 +7952,74 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>GDP per capita is that warped room average, nationwide</text>
       </svg>
     );
+  } else if (m === "pricesthennowbars") {
+    // Times pricier since 1970 — bars, with the 8x inflation line.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["inflation", 8, "#bdbdbd"],
+      ["gas", 10, "#9cc47f"],
+      ["bread", 12, gold],
+      ["car", 14, gold],
+      ["house", 18, "#d98b5f"],
+      ["college", 28, red],
+    ];
+    const x0 = 230, xMax = 820, maxV = 28;
+    const tideX = x0 + (xMax - x0) * (8 / maxV);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={46} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">times more expensive since 1970</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 76 + i * 60; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 26} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={34} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 10} y={y + 30} fontSize={14} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{v}×</text>
+            </g>
+          );
+        })}
+        <line x1={tideX} y1={64} x2={tideX} y2={440} stroke={ink} strokeWidth={3} strokeDasharray="8 6" />
+        <text x={tideX + 6} y={462} fontSize={13} fontWeight={900} fill={ink} fontFamily={sans}>8× = inflation tide</text>
+        <text x={VW / 2} y={462} fontSize={13} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>past 8× = truly pricier</text>
+      </svg>
+    );
+  } else if (m === "wagevspricegap") {
+    // Wages flat vs housing/college/healthcare soaring since 1970.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 140, x1 = 880, y0 = 430, yTop = 100;
+    const line = (end: number, curve: number) => Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; const y = y0 - (y0 - yTop) * end * Math.pow(t, curve); return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${y}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">wages vs the things that exploded (since 1970)</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={line(0.95, 1.7)} fill="none" stroke={red} strokeWidth={6} />
+        <path d={line(0.35, 1)} fill="none" stroke={ink} strokeWidth={6} strokeDasharray="10 7" />
+        <text x={x1 - 30} y={y0 - (y0 - yTop) * 0.95 + 4} fontSize={13} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>housing · college · health</text>
+        <text x={x1 - 30} y={y0 - (y0 - yTop) * 0.35 + 24} fontSize={13} fontWeight={900} fill={ink} textAnchor="end" fontFamily={sans}>real wages (flat)</text>
+        <text x={VW / 2} y={y0 + 34} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the gap between these lines is the affordability crisis</text>
+      </svg>
+    );
+  } else if (m === "realvsnominalflip") {
+    // Pricier in dollars, cheaper in hours of work.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={58} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">pricier in dollars, cheaper in real life</text>
+        <g opacity={interpolate(reveal, [0, 0.5], [0, 1], clampBoth)}>
+          <rect x={120} y={120} width={360} height={280} rx={14} fill="#f0d9cf" stroke={ink} strokeWidth={4} />
+          <text x={300} y={158} fontSize={17} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">in dollars ↑</text>
+          {["a TV: 8× more $", "clothes: pricier", "appliances: up"].map((s, i) => <text key={i} x={300} y={210 + i * 48} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{s}</text>)}
+        </g>
+        <g opacity={interpolate(reveal, [0.4, 0.9], [0, 1], clampBoth)}>
+          <rect x={520} y={120} width={360} height={280} rx={14} fill="#cfe3d4" stroke={ink} strokeWidth={4} />
+          <text x={700} y={158} fontSize={17} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">in hours of work ↓</text>
+          {["a TV: weeks → hours", "clothes: far cheaper", "way more for less"].map((s, i) => <text key={i} x={700} y={210 + i * 48} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{s}</text>)}
+        </g>
+        <text x={VW / 2} y={448} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the gadgets got cheaper; only the big three screamed</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

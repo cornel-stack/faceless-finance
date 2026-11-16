@@ -3,47 +3,47 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "The headlines say the average American produces about eighty thousand dollars a year. So why does the typical worker take home barely half of that? Across the world, there's a yawning gap between a country's GDP per person — what the economy makes per head — and what ordinary people actually earn. Today we rank the countries where that gap is widest, and expose why the number politicians brag about has almost nothing to do with your paycheck.",
+    "narration": "In 1970, a brand-new house cost about twenty-three thousand dollars. A gallon of gas was thirty-six cents. A year of college was a few hundred. Today those same things cost twenty, thirty, sometimes fifty times more. But here's the twist that changes the whole story: not everything got more expensive, and the things that exploded aren't random. Today we compare the price of everything in 1970 versus 2026 — and reveal what actually happened to your money.",
     "props": [
       {
-        "name": "chartup",
-        "label": "GDP: $80K per head"
+        "name": "house",
+        "label": "$23K → $420K"
       },
       {
-        "name": "paystub",
-        "label": "median take-home: half that"
+        "name": "gaspump",
+        "label": "36¢ → $3.50"
       },
       {
         "name": "scale",
-        "label": "the gap, ranked"
+        "label": "1970 vs 2026"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the gap that reframes everything. A country can post a GDP per person of a hundred thousand dollars while its typical worker earns thirty. That difference isn't a rounding error — it's the entire story of where a nation's wealth actually goes, and who actually gets it. GDP measures the pie. It says nothing about your slice.",
-    "text": "$100K vs $30K",
-    "sub": "GDP per person vs what the median worker earns",
-    "icon": "scale"
+    "narration": "Here's the number that frames it all. One dollar in 1970 has the buying power of roughly eight dollars today. Prices across the economy rose about eightfold in fifty-five years. So before you panic at any single price, remember: a huge part of every increase is just this — the slow, steady shrinking of what a dollar is worth.",
+    "text": "$1 → $8",
+    "sub": "what a 1970 dollar is worth in 2026",
+    "icon": "banknote"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank countries by GDP per person against what people really earn, explain why that gap exists and where the missing money goes, expose the countries whose GDP is a statistical illusion, and show why median income, not GDP, is the number that tells you how people actually live. Because the most quoted statistic in the world is also one of the most misleading about ordinary life.",
+    "narration": "So today we line up 1970 against 2026 across everyday life, separate the illusion of rising prices from the reality of rising costs, compare it all against what people actually earned, reveal which things secretly got cheaper, and expose the handful of costs that truly outran your paycheck. Because the real story of fifty years isn't that everything got pricier. It's which things did, and whether your wage kept up.",
     "props": [
       {
         "name": "scale",
-        "label": "GDP vs real earnings"
+        "label": "1970 vs 2026"
+      },
+      {
+        "name": "paystub",
+        "label": "vs what you earned"
       },
       {
         "name": "warning",
-        "label": "where the money goes"
-      },
-      {
-        "name": "house",
-        "label": "the number that matters"
+        "label": "what outran wages"
       }
     ]
   },
@@ -52,155 +52,156 @@
     "type": "image",
     "src": "img/memes/expanding.jpg",
     "meme": "Expanding Brain",
-    "memeTop": "my country's GDP per capita is huge, so I'm rich",
-    "memeBottom": "GDP per capita is not my salary",
-    "narration": "Because the leap from 'my country is wealthy' to 'I am wealthy' is exactly where almost everyone gets fooled. Before we rank the gaps, let's define what GDP actually measures."
+    "memeTop": "everything is so much more expensive than 1970",
+    "memeBottom": "in real terms, some things got cheaper and a few exploded",
+    "narration": "Because comparing raw 1970 prices to today without adjusting for the dollar — and for wages — is how almost everyone misreads the last half-century. Before we compare, let's learn the one adjustment that makes it make sense."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what GDP per capita actually is — and isn't.",
-    "heading": "The Big Number",
-    "kicker": "what GDP measures"
+    "narration": "First, the difference between nominal prices and real ones.",
+    "heading": "Nominal vs Real",
+    "kicker": "the only adjustment that matters"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-gdp",
-    "narration": "GDP is a monetary measure of all the final goods and services which are produced and rendered during a specific period of time by a country. Divide it by the population, and you get GDP per capita — the average economic output per person. It sounds like an average salary. It absolutely is not. It's everything the whole economy produces, including things that never land in a single worker's pocket."
+    "sourceId": "wiki-realnom",
+    "narration": "The key idea is real value. Real value takes into account inflation and the value of an asset against what it can actually buy. A nominal price is just the number on the tag — thirty-six cents or three-fifty for gas. The real price adjusts for the shrinking dollar, so you can compare 1970 and 2026 fairly. Without that adjustment, every comparison is meaningless."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And GDP counts some strange things as 'output.' A hurricane that destroys a city boosts GDP, because rebuilding it is economic activity. A longer commute burns more gas, lifting GDP. Even the costs of sickness and pollution can add to it. GDP measures motion, not necessarily progress — a lot of what it counts is a country running hard just to stay in place.",
+    "narration": "And this is exactly why old prices sound absurd. A thirty-five-cent gallon of gas, a nickel candy bar, a twenty-three-thousand-dollar house — they sound like a fantasy. But wages were tiny by today's standards too. The only honest way to feel the past is to shrink both the prices and the paychecks by the same eightfold, and compare them on equal footing.",
     "props": [
       {
-        "name": "warning",
-        "label": "disasters boost GDP"
+        "name": "banknote",
+        "label": "old prices sound absurd"
       },
       {
-        "name": "car",
-        "label": "longer commutes count"
-      },
-      {
-        "name": "chartup",
-        "label": "motion, not progress"
-      }
-    ]
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And GDP wasn't even built to measure how well-off people are. Its own inventor warned, nearly a century ago, that the welfare of a nation can scarcely be inferred from this number. It was designed to track wartime production capacity — how much a country could make — not whether its people were thriving. We've spent eighty years using a factory gauge to measure human happiness.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "GDP ≠ welfare, by design"
-      },
-      {
-        "name": "factory",
-        "label": "built for wartime output"
+        "name": "paystub",
+        "label": "but wages were tiny too"
       },
       {
         "name": "scale",
-        "label": "a factory gauge for lives"
+        "label": "shrink both to compare"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-medincome",
-    "narration": "The number that actually describes people is median income — the income amount that divides a population into two groups, half earning more and half earning less. The median is the person standing exactly in the middle. Unlike an average, it can't be distorted by a handful of billionaires at the top. It's the honest answer to the question: what does a normal person in this country actually make?"
+    "sourceId": "wiki-inflation",
+    "narration": "The shrinking itself is inflation — an increase in the average price of goods and services in terms of money. Over fifty-five years, steady inflation compounded into that eightfold rise in the overall price level. So the first job, always, is to strip inflation out. Only then can you see which prices rose merely with the tide, and which ones truly climbed on their own."
   },
   {
     "id": "s51",
-    "type": "stage",
-    "motif": "averagevsmedian",
-    "caption": "put a billionaire in the room",
-    "narration": "The difference between average and median is the whole trick, so hold onto it. Put a room of ten normal people with a billionaire, and the average net worth is over a hundred million dollars — yet nobody in the room except one feels remotely rich. The median, the middle person, stays ordinary. GDP per capita is that misleading room average, applied to an entire nation."
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the eightfold figure itself is worth sitting with. It means that steady, boring inflation of around four percent a year, compounded over fifty-five years, quietly multiplied prices by eight. No single year felt dramatic. But compounding is relentless — the same force that grows your investments also, year after invisible year, shrinks the value of every dollar sitting still in a drawer.",
+    "props": [
+      {
+        "name": "snowball",
+        "label": "4%/yr compounded = 8×"
+      },
+      {
+        "name": "warning",
+        "label": "no year felt dramatic"
+      },
+      {
+        "name": "banknote",
+        "label": "dollars in a drawer shrink"
+      }
+    ]
+  },
+  {
+    "id": "s52",
+    "type": "callout",
+    "narration": "Here's a rule of thumb to carry forever. At around four percent inflation, prices double roughly every eighteen years. So across one lifetime, the price of almost everything doubles three or four times over — not from greed or crisis, just from the quiet mathematics of a steadily shrinking dollar.",
+    "text": "2× every ~18 yrs",
+    "sub": "how fast inflation doubles prices",
+    "icon": "hourglass"
   },
   {
     "id": "s8",
     "type": "character",
     "pose": "explain",
-    "narration": "So we have two numbers that sound similar and mean completely different things. GDP per capita is the total pie divided by heads — an average, inflated by the richest and by corporate profits. Median income is the real person in the middle. The gap between them is one of the most revealing, and most hidden, statistics about any country on Earth.",
+    "narration": "So think of it in two layers. The bottom layer is the eightfold inflation that lifted almost every price together — that's the tide. The top layer is the extra, real increase or decrease on specific things — that's the signal. A price that rose exactly eightfold just kept pace. One that rose thirty-fold truly got more expensive. One that rose less than eightfold actually got cheaper in real terms.",
     "props": [
       {
-        "name": "pie",
-        "label": "GDP: the whole pie ÷ heads"
+        "name": "banknote",
+        "label": "8× = the inflation tide"
       },
       {
-        "name": "paystub",
-        "label": "median: the middle person"
+        "name": "chartup",
+        "label": "above 8× = truly pricier"
       },
       {
-        "name": "scale",
-        "label": "the gap reveals everything"
+        "name": "chartdown",
+        "label": "below 8× = cheaper in real terms"
       }
     ]
   },
   {
     "id": "s42",
     "type": "callout",
-    "narration": "Here's the distortion in one line. Because GDP per capita is an average, a country with a handful of billionaires and millions of poor people can post the same number as a country with a broad, comfortable middle class. The average is identical; the lived reality is a different planet. That's exactly why the middle person — the median — matters so much more.",
-    "text": "average lies",
-    "sub": "why GDP per capita hides how people really live",
-    "icon": "warning"
+    "narration": "Put the tide in perspective. Because prices rose roughly eightfold, a salary of ten thousand dollars in 1970 was, in real buying power, like earning around eighty thousand today. So when someone says their parents bought a house on one modest salary, remember that modest 1970 salary was worth a solid middle-class income in today's money. The comparison only works adjusted.",
+    "text": "$10K ≈ $80K",
+    "sub": "a 1970 salary in today's buying power",
+    "icon": "paystub"
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's rank countries by GDP per person versus real earnings.",
-    "heading": "The Ranking",
-    "kicker": "the pie vs the slice"
+    "narration": "So let's line up the prices: 1970 versus 2026.",
+    "heading": "Then vs Now",
+    "kicker": "the price of everything"
   },
   {
     "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "One honest note on comparing countries: you also have to adjust for prices. A dollar of GDP buys far more in Mexico than in Switzerland, so economists use purchasing-power adjustments to compare fairly. But even after that, the GDP-to-median gap remains — because adjusting for prices doesn't change who actually receives the money. Distribution is a separate problem from price levels.",
+    "narration": "One honest caveat before the comparison: picking exact 1970 prices is messy. Models, quality, and regions all differ, and a 1970 car and a 2026 car are barely the same product. So treat these multiples as the shape of the story, not laboratory precision. The direction and the scale are what matter — and those are rock solid.",
     "props": [
       {
-        "name": "exchange",
-        "label": "adjust for local prices"
+        "name": "warning",
+        "label": "exact prices are messy"
       },
       {
         "name": "scale",
-        "label": "but the gap remains"
+        "label": "the shape, not precision"
       },
       {
-        "name": "warning",
-        "label": "distribution ≠ prices"
+        "name": "smiley",
+        "label": "direction is solid"
       }
     ]
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "gdppercapitabars",
-    "caption": "GDP per person, by country",
-    "narration": "First, GDP per person, the number nations brag about. Ireland tops the list near a hundred and five thousand dollars, with Switzerland and the US close behind. Germany and the UK follow, and Mexico sits far lower. By this measure, Ireland looks like one of the richest places on Earth. But hold that thought — because its people's actual earnings tell a very different story."
+    "motif": "pricesthennowbars",
+    "caption": "how many times pricier since 1970",
+    "narration": "Here's how many times more expensive everyday things became. Remember, eightfold is just keeping pace with inflation. Gas rose about ten times — barely above the tide. Bread and a new car, twelve to fourteen. A house, around eighteen times. But college is up nearly thirty, and healthcare over thirty. The further a bar climbs past eightfold, the more it truly outran the shrinking dollar."
   },
   {
     "id": "s54",
     "type": "character",
     "pose": "explain",
-    "narration": "And the GDP leaderboard is full of these mirages. Tiny Luxembourg tops global charts partly because huge numbers of workers commute in from neighboring countries — they produce the GDP but aren't counted in the population, inflating the per-head number. Oil states look fabulously rich per capita while much of the wealth pools with the state and a few. The top of the GDP ranking is where the illusions cluster.",
+    "narration": "And watch where the bars cross the inflation line, because that's the whole diagnosis. Anything hugging the eightfold mark — gas, bread, basic goods — simply rode the tide and isn't really the problem. Everything towering far above it is where a real, extra cost piled on. The chart isn't a list of expensive things. It's a map of exactly where the last fifty years went wrong.",
     "props": [
       {
-        "name": "globe",
-        "label": "Luxembourg, oil states"
-      },
-      {
-        "name": "warning",
-        "label": "statistical mirages"
+        "name": "scale",
+        "label": "watch the 8× line"
       },
       {
         "name": "chartup",
-        "label": "illusions cluster at the top"
+        "label": "towering = real extra cost"
+      },
+      {
+        "name": "warning",
+        "label": "a map of what went wrong"
       }
     ]
   },
@@ -208,54 +209,54 @@
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "GDP per capita vs median income ($K)",
-    "unit": "$K",
-    "narration": "Now put GDP next to what the median worker actually takes home. In the US, eighty thousand of GDP becomes about forty-five in median disposable income. In Switzerland, a strong economy still passes a lot through — ninety-five becomes fifty-five. But look at Ireland: a hundred and five thousand in GDP, and a median income of just thirty. The pie is enormous. The typical slice is tiny.",
+    "title": "Times more expensive since 1970 (×)",
+    "unit": "x",
+    "narration": "Put the multiples in a row. Gas up about ten times, bread twelve, a car fourteen, a house eighteen, college twenty-eight, and healthcare over thirty. The inflation tide was eightfold. So gas and bread basically just kept pace — but housing, college, and healthcare rose two, three, even four times faster than money itself shrank. Those three are where the real pain of fifty years lives.",
     "data": [
       {
-        "label": "Mexico GDP",
+        "label": "inflation",
+        "value": 8
+      },
+      {
+        "label": "gas",
+        "value": 10
+      },
+      {
+        "label": "bread",
         "value": 12
       },
       {
-        "label": "Mexico med",
-        "value": 6
+        "label": "car",
+        "value": 14
       },
       {
-        "label": "US GDP",
-        "value": 80
+        "label": "house",
+        "value": 18
       },
       {
-        "label": "US med",
-        "value": 45
-      },
-      {
-        "label": "Ireland GDP",
-        "value": 105
-      },
-      {
-        "label": "Ireland med",
-        "value": 30
+        "label": "college",
+        "value": 28
       }
     ],
-    "highlight": 4
+    "highlight": 5
   },
   {
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And the US gap tells its own story. American GDP per capita is among the highest in the world, yet its median worker's pay has grown slowly for decades while the economy boomed. The pie got much bigger; the middle slice barely did. That's the clearest sign that national wealth and personal prosperity have quietly come apart — growth without broadly rising wages.",
+    "narration": "And the house number hides an even harsher truth. A house rose about eighteen times in price, roughly double the inflation tide. But in the hottest markets it's far worse — and crucially, the house itself didn't get better in proportion. You're paying two or three times the real price for essentially the same shelter, mostly because of land and restricted supply, not granite countertops.",
     "props": [
       {
-        "name": "chartup",
-        "label": "huge GDP"
-      },
-      {
-        "name": "chartdown",
-        "label": "flat median wages"
+        "name": "house",
+        "label": "~2× the real price"
       },
       {
         "name": "warning",
-        "label": "growth, slices unchanged"
+        "label": "same shelter, not better"
+      },
+      {
+        "name": "mappin",
+        "label": "land + restricted supply"
       }
     ]
   },
@@ -263,19 +264,19 @@
     "id": "s12",
     "type": "character",
     "pose": "explain",
-    "narration": "And Ireland is the perfect cautionary tale. Its sky-high GDP per capita isn't because Irish workers are the richest in the world — it's because dozens of giant multinational corporations book their global profits there for tax reasons. Those profits inflate the country's GDP enormously, but they flow to foreign shareholders, not Irish paychecks. The GDP is real on paper and almost fictional in people's wallets.",
+    "narration": "And notice the pattern, because it's the same one every time. The things that truly exploded — housing, college, healthcare — are services and assets made of human labor, land, and limited supply. The things that merely kept pace or fell behind are manufactured goods and commodities. Half a century later, the same rule holds: what people make by hand got dear, and what machines make got cheap.",
     "props": [
       {
-        "name": "factory",
-        "label": "multinationals book profits there"
+        "name": "house",
+        "label": "land + labor = exploded"
       },
       {
-        "name": "warning",
-        "label": "inflates GDP, not wages"
+        "name": "stockscreen",
+        "label": "manufactured = kept pace"
       },
       {
-        "name": "globe",
-        "label": "flows to foreign shareholders"
+        "name": "scale",
+        "label": "the same rule, 50 years on"
       }
     ]
   },
@@ -284,250 +285,197 @@
     "type": "image",
     "src": "img/memes/twobuttons.jpg",
     "meme": "Two Buttons",
-    "memeTop": "brag that your country's GDP is booming",
-    "memeBottom": "check if the median worker got a raise",
-    "narration": "This is the sleight of hand behind a thousand economic headlines. A booming GDP makes for a great speech, while the median paycheck — the thing people actually live on — can be flat or falling underneath it. The two numbers let leaders claim success even as ordinary life stands still."
+    "memeTop": "panic that bread costs 12x more",
+    "memeBottom": "notice that's basically just inflation",
+    "narration": "This is the mistake that fuels endless outrage. People fixate on the rising price of small everyday items — bread, coffee, eggs — which mostly just tracked inflation. Meanwhile the real damage, in housing and healthcare, happens quietly in the background, in numbers too big to buy every week and so too easy to ignore."
   },
   {
     "id": "s13",
     "type": "title",
-    "narration": "So where does all that missing money actually go?",
-    "heading": "The Gap",
-    "kicker": "who gets the pie"
+    "narration": "But a price only matters next to what you earned to pay it.",
+    "heading": "Prices vs Wages",
+    "kicker": "did pay keep up"
   },
   {
     "id": "s55",
     "type": "image",
     "src": "img/memes/fine.jpg",
     "meme": "This Is Fine",
-    "memeTop": "the economy grew 3% and I'm more broke than ever",
+    "memeTop": "wages flat for 50 years, house prices up 18x",
     "memeBottom": "this is fine",
-    "narration": "For millions of people, this is the quiet dissonance of modern economics: being told the country is thriving while their own life gets harder. It isn't confusion or ingratitude. It's the simple fact that GDP went up and their slice didn't — two true statements that feel like a contradiction only because we conflate the pie with the plate."
+    "narration": "For the typical worker, this is the quiet math of half a century: a paycheck that technically grew but barely gained real ground, chasing essentials that sprinted away. It isn't laziness or bad budgeting. It's a structural gap between what a life costs and what a wage earns, widening year after year."
   },
   {
     "id": "s14",
-    "type": "stage",
-    "motif": "wherethegdpgoes",
-    "caption": "where a country's output actually ends up",
-    "narration": "Here's where the pie really goes. A big chunk is corporate profits, flowing to shareholders, not workers. Another slice is taxes funding government. Some is reinvested, not paid out. And the share that does become wages is split unequally — the top earners capturing far more than the median. By the time the economy's total output trickles down to the person in the middle, it's a fraction of the GDP headline."
+    "type": "screenshot",
+    "sourceId": "wiki-realwages",
+    "narration": "This is where real wages matter — wages in terms of the amount of goods and services that can be bought. In 1970, the average wage was a few dollars an hour; today it's far higher in dollars. But after adjusting for that eightfold inflation, the shocking truth emerges: for the typical worker, real wages have barely risen in fifty years. The paycheck's number grew. Its buying power mostly didn't."
   },
   {
     "id": "s45",
     "type": "character",
     "pose": "explain",
-    "narration": "And a huge, invisible slice of GDP is things you never see as income at all. Economists add in the estimated 'rent' homeowners would pay themselves, government services, business investment, and more. It all counts as output. But none of it shows up in a worker's bank account. A big part of the GDP-to-paycheck gap is simply that GDP counts money that was never anyone's take-home pay.",
+    "narration": "And this explains the single-income nostalgia so precisely. In 1970, one earner could often cover a house, a car, and a family — not because wages were magically high, but because the big three essentials were cheap relative to pay. Today it frequently takes two incomes to afford what one bought, because housing, college, and healthcare each rose far faster than the paycheck did.",
     "props": [
+      {
+        "name": "paystub",
+        "label": "one income once did it"
+      },
       {
         "name": "house",
-        "label": "imputed homeowner 'rent'"
-      },
-      {
-        "name": "ledger",
-        "label": "services, investment"
+        "label": "essentials were cheap vs pay"
       },
       {
         "name": "warning",
-        "label": "never a take-home dollar"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the single biggest shift of the last few decades is where the pie's slices went. The share of GDP flowing to workers as wages has fallen, while the share flowing to capital — profits, dividends, rents — has risen. So even as economies grew, a shrinking cut reached paychecks. That quiet shift, from labor to capital, is most of why GDP and median pay drifted apart.",
-    "props": [
-      {
-        "name": "chartdown",
-        "label": "labor's share fell"
-      },
-      {
-        "name": "chartup",
-        "label": "capital's share rose"
-      },
-      {
-        "name": "warning",
-        "label": "growth bypassed wages"
+        "label": "now it takes two"
       }
     ]
   },
   {
     "id": "s15",
-    "type": "screenshot",
-    "sourceId": "wiki-inequality",
-    "narration": "This is really a story about distribution. Economists have long seen income and its distribution as a central concern. Two countries with the exact same GDP per capita can feel completely different to live in, depending on whether that output is shared broadly or captured at the top. GDP tells you how big the pie is. Inequality decides whether the average person ever tastes it."
+    "type": "stage",
+    "motif": "wagevspricegap",
+    "caption": "wages vs the things that exploded",
+    "narration": "Here's the squeeze, drawn out. Over fifty-five years, wages roughly kept pace with overall inflation — the eightfold line. But housing, college, and healthcare shot far above it. So a worker's pay could still buy the same bread and gas as in 1970, but a dramatically smaller slice of a house, a degree, or a hospital stay. The gap between the wage line and those three exploding costs is the entire modern affordability crisis, in one picture."
   },
   {
     "id": "s46",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this is why GDP growth can feel like a lie to ordinary people. When a country's economy grows five percent but almost all the gains go to the top one percent, the headline celebrates while the median family notices nothing. 'The economy is booming' and 'I can't afford groceries' are not contradictions — they're just two different numbers, measuring two different things.",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "economy up 5%"
-      },
-      {
-        "name": "warning",
-        "label": "gains to the top 1%"
-      },
-      {
-        "name": "scale",
-        "label": "booming ≠ felt"
-      }
-    ]
+    "type": "callout",
+    "narration": "Here's the gap in one brutal comparison. Since 1970, overall prices rose about eightfold and the typical real wage barely moved — but home prices rose roughly eighteenfold and college nearly thirtyfold. The essentials didn't just beat inflation; they lapped the worker's paycheck two and three times over. That's the arithmetic of feeling like you're running to stand still.",
+    "text": "18x vs flat",
+    "sub": "home prices vs real wages since 1970",
+    "icon": "warning"
   },
   {
     "id": "s16",
     "type": "title",
-    "narration": "Which is why GDP is a terrible measure of how people actually live.",
-    "heading": "What Life Feels Like",
-    "kicker": "GDP vs reality"
+    "narration": "And now the part nobody expects: the things that got cheaper.",
+    "heading": "The Cheaper Side",
+    "kicker": "what improved"
   },
   {
     "id": "s56",
     "type": "character",
     "pose": "explain",
-    "narration": "And GDP famously ignores everything that isn't bought and sold. A parent raising children, a volunteer, a home-cooked meal, a walk in a free park — none of it counts, because no money changed hands. So a country can get 'richer' by GDP simply by turning unpaid life into paid services, even if people are no better off. It measures the market, not the meaning.",
+    "narration": "And measuring in hours of work is the great equalizer across time. Forget dollars entirely and ask: how long did the average person labor to afford this? By that honest yardstick, food, clothing, and electronics all take far fewer hours today than in 1970. The hours-of-work lens cuts straight through inflation and shows you what genuinely got easier, and what got brutally harder.",
     "props": [
       {
-        "name": "heart",
-        "label": "unpaid care counts for $0"
-      },
-      {
-        "name": "warning",
-        "label": "market, not meaning"
+        "name": "clock",
+        "label": "measure in hours worked"
       },
       {
         "name": "smiley",
-        "label": "value GDP can't see"
+        "label": "food, clothes, gadgets easier"
+      },
+      {
+        "name": "scale",
+        "label": "cuts through inflation"
       }
     ]
   },
   {
     "id": "s17",
     "type": "screenshot",
-    "sourceId": "wiki-household",
-    "narration": "A better gauge is household income — a measure of income received by the household sector. It counts the salaries, benefits, and transfers that actually reach families. When you track that instead of GDP, the rankings scramble: some high-GDP countries drop, because their output never reaches households, while more equal countries rise, because theirs does. The map of 'rich' redraws itself."
+    "sourceId": "wiki-cpi",
+    "narration": "Tracked by the consumer price index — the weighted average price of a market basket of consumer goods — a whole category of life quietly got cheaper in real terms. Televisions, clothing, phones, toys, and appliances rose far less than eightfold, or even fell outright. A color TV that cost a worker weeks of wages in 1970 costs a few hours of work today. For manufactured goods, the last fifty years were a golden age of falling real prices."
   },
   {
     "id": "s47",
-    "type": "callout",
-    "narration": "Here's the reshuffle in practice. Rank countries by GDP and the US sits at or near the top. Rank them instead by median wealth per adult — what the middle person actually owns — and several more equal nations like Australia and Belgium leap ahead. Same world, different question, completely different leaderboard of who's really doing well.",
-    "text": "rankings flip",
-    "sub": "GDP vs median wealth: a different winner",
-    "icon": "scale"
-  },
-  {
-    "id": "s61",
     "type": "character",
     "pose": "explain",
-    "narration": "And transfers quietly rescue the picture in some countries. Pensions, healthcare, child benefits, and other government support don't show up as wages, but they massively raise what families actually have to live on. So a country with modest market wages but generous transfers can deliver a better real standard of living than a high-wage, low-support one. What reaches the household is what counts.",
+    "narration": "And the quality jump on the cheap side is staggering, which the raw price hides. A 1970 television was a fuzzy box; today's costs a fraction in real terms and is a razor-sharp wall of glass. A 1970 car was less safe and died at a hundred thousand miles; today's lasts twice as long. On the manufactured side, you get vastly more for far less — the opposite of the housing story.",
     "props": [
       {
-        "name": "handshake",
-        "label": "pensions, benefits, healthcare"
+        "name": "stockscreen",
+        "label": "cheaper AND far better"
       },
       {
-        "name": "house",
-        "label": "raise real household income"
+        "name": "car",
+        "label": "lasts twice as long"
       },
       {
-        "name": "scale",
-        "label": "what reaches home counts"
+        "name": "smiley",
+        "label": "more for less"
       }
     ]
   },
   {
     "id": "s18",
-    "type": "screenshot",
-    "sourceId": "wiki-sol",
-    "narration": "And the real goal was never GDP at all — it's standard of living, the comforts and services available to an individual. A country can have a towering GDP and a stressed, unequal, insecure population; another can have modest GDP but widely shared prosperity, healthcare, and time. GDP measures production. Standard of living measures life. The two can point in opposite directions."
+    "type": "stage",
+    "motif": "realvsnominalflip",
+    "caption": "pricier in dollars, cheaper in real life",
+    "narration": "This is the great illusion. Almost everything costs more dollars than in 1970 — that's just the eightfold inflation. But measured in hours of work, or as a share of income, electronics, clothes, food, and appliances all became dramatically more affordable. We feel poorer because the big three — housing, college, healthcare — scream, while quietly, the gadgets and goods filling our homes have never been cheaper in real terms."
   },
   {
     "id": "s48",
     "type": "character",
     "pose": "explain",
-    "narration": "And standard of living includes things GDP can't price: clean air, safety, healthcare you don't fear using, time off, a short commute, trust in institutions. Some lower-GDP countries quietly deliver more of these than richer ones. When people move abroad and feel suddenly 'richer' on a smaller salary, this is usually why. The paycheck shrank, but the life got bigger.",
+    "narration": "And this split is why people feel genuinely confused about whether life got better or worse. Materially, in gadgets, food variety, cars, and comforts, the average person is far richer than in 1970. But in security — owning a home, affording healthcare, graduating without debt — many feel poorer. Both are true at once. We are drowning in cheap stuff and starving for affordable essentials.",
     "props": [
       {
-        "name": "smiley",
-        "label": "air, safety, time, health"
-      },
-      {
-        "name": "globe",
-        "label": "low GDP, high living"
+        "name": "stockscreen",
+        "label": "richer in stuff"
       },
       {
         "name": "house",
-        "label": "smaller pay, bigger life"
+        "label": "poorer in security"
+      },
+      {
+        "name": "scale",
+        "label": "both true at once"
       }
     ]
   },
   {
     "id": "s19",
     "type": "title",
-    "narration": "So how should you actually read these numbers?",
+    "narration": "So what does fifty-five years of prices actually teach you?",
     "heading": "What To Do",
-    "kicker": "trust the median"
+    "kicker": "read prices right"
   },
   {
     "id": "s57",
     "type": "character",
     "pose": "present",
-    "narration": "And beware politicians of every stripe wielding whichever number flatters them. In a boom, incumbents quote GDP; critics quote median wages. The honest move is to always ask for both, plus the distribution. Anyone showing you only one of the three is selling a story, not describing reality. The full picture needs all three numbers standing together.",
+    "narration": "And treat any old price you see with instant suspicion. 'This cost a nickel in 1970' is almost always a trick of nostalgia unless you multiply by eight and compare to 1970 wages. Nearly every 'things were so cheap back then' story dissolves under that adjustment. Learn to do the eightfold math in your head, and you'll never be fooled by a vintage price tag again.",
     "props": [
       {
-        "name": "podium",
-        "label": "each side cherry-picks"
-      },
-      {
-        "name": "scale",
-        "label": "demand all three"
-      },
-      {
         "name": "warning",
-        "label": "one number = a story"
+        "label": "old prices are nostalgia traps"
+      },
+      {
+        "name": "calculator",
+        "label": "always multiply by 8"
+      },
+      {
+        "name": "smiley",
+        "label": "never fooled again"
       }
     ]
   },
   {
     "id": "s20",
-    "type": "character",
-    "pose": "present",
-    "narration": "When you hear GDP or GDP per capita, mentally cross it out and ask for the median instead. Median income, median wealth, and median wages tell you what a normal person experiences — the averages are hijacked by the top. Any politician or headline leaning on GDP to describe how people are doing is, knowingly or not, telling you about the pie while hiding your slice.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "cross out GDP"
-      },
-      {
-        "name": "paystub",
-        "label": "ask for the median"
-      },
-      {
-        "name": "scale",
-        "label": "pie vs your slice"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-pricelevel",
+    "narration": "The lesson starts with the price level — a hypothetical measure of overall prices for some set of goods and services. Train yourself to always ask: did this rise faster than the price level, or slower? That one habit turns you from someone who panics at every number into someone who can see which costs are genuinely devouring their life and which are just inflation doing its quiet, normal thing."
   },
   {
-    "id": "s49",
+    "id": "s58",
     "type": "character",
     "pose": "present",
-    "narration": "And learn the three numbers that actually matter together. GDP per capita tells you the size of the economy. Median income tells you the typical slice. And a measure of inequality tells you how unevenly it's cut. Any one alone can mislead; all three together give you an honest picture of a country — rich or poor, fair or lopsided, improving or stuck.",
+    "narration": "And here's the single most important number to track going forward: not prices, and not even wages alone, but the two together. Are home prices, tuition, and health costs rising faster or slower than your pay? That ratio, watched over years, tells you whether a secure life is getting closer or further away — far more honestly than any inflation headline ever will.",
     "props": [
       {
-        "name": "pie",
-        "label": "GDP: the size"
-      },
-      {
-        "name": "paystub",
-        "label": "median: the slice"
-      },
-      {
         "name": "scale",
-        "label": "inequality: the cut"
+        "label": "prices vs your pay"
+      },
+      {
+        "name": "chartup",
+        "label": "the ratio over time"
+      },
+      {
+        "name": "house",
+        "label": "is a secure life closer?"
       }
     ]
   },
@@ -535,39 +483,39 @@
     "id": "s21",
     "type": "character",
     "pose": "present",
-    "narration": "And apply it to your own life and decisions. Comparing countries to live or work in? Look at median take-home pay adjusted for cost of living, not GDP. Judging whether an economy is really working for people? Watch whether median wages are rising, not whether GDP is. The median is the number that quietly tracks whether ordinary life is getting better or worse.",
+    "narration": "So in your own life, guard hardest against the big three that truly outran wages: housing, education, and healthcare. These are where real affordability is won or lost. Be relaxed about the cheap, improving stuff — the gadgets and goods. And always measure costs in hours of your work, not just dollars, because that's the only number that honestly compares across time.",
     "props": [
       {
-        "name": "mappin",
-        "label": "compare medians, not GDP"
-      },
-      {
-        "name": "chartup",
-        "label": "watch median wages"
-      },
-      {
         "name": "house",
-        "label": "does life improve?"
+        "label": "guard the big three"
+      },
+      {
+        "name": "stockscreen",
+        "label": "relax on cheap goods"
+      },
+      {
+        "name": "clock",
+        "label": "measure in hours of work"
       }
     ]
   },
   {
-    "id": "s58",
+    "id": "s49",
     "type": "character",
     "pose": "present",
-    "narration": "And apply the same lens to your own finances. Your 'average' monthly spending can hide months that quietly bankrupt you; your average return can mask a brutal year. In your life, as in a country, the average is a comforting liar and the typical case is the truth. Budget and plan for the median month and the bad year, not the flattering average.",
+    "narration": "And turn the lesson into strategy: own the things that outrun inflation, don't just buy them. Housing, productive assets, and your own skills tend to rise faster than the price level over decades. Holding cash does the opposite — it quietly dissolves in that eightfold tide. The people who thrived across fifty years weren't the highest earners. They were the ones who owned the assets that inflation lifted.",
     "props": [
       {
-        "name": "calculator",
-        "label": "averages hide bad months"
+        "name": "house",
+        "label": "own what outruns inflation"
+      },
+      {
+        "name": "chartup",
+        "label": "assets + skills rise"
       },
       {
         "name": "warning",
-        "label": "the average comforts, misleads"
-      },
-      {
-        "name": "jar",
-        "label": "plan for the typical + the bad"
+        "label": "cash dissolves in the tide"
       }
     ]
   },
@@ -575,19 +523,19 @@
     "id": "s22",
     "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson. GDP per capita is the wealth of a country. Median income is the wealth of its people — and those are not the same thing. A nation can grow richer for decades while the typical person barely moves, if the gains pool at the top. Watch the gap between the two, and you're watching the single clearest measure of whether an economy is working for everyone, or just for someone.",
+    "narration": "Because here's the real lesson of 1970 versus 2026. The complaint that everything got more expensive is half true and half an illusion. Most things simply rode the eightfold inflation tide, and a lucky category even got cheaper. But three essentials — a home, a degree, a healthy life — broke away and left wages behind. The fifty-year story isn't inflation. It's that the price of a secure life rose faster than the ability to earn one.",
     "props": [
       {
-        "name": "chartup",
-        "label": "country rich ≠ people rich"
+        "name": "scale",
+        "label": "half true, half illusion"
       },
       {
-        "name": "scale",
-        "label": "watch the gap"
+        "name": "house",
+        "label": "the essentials broke away"
       },
       {
         "name": "warning",
-        "label": "for everyone, or someone?"
+        "label": "a secure life outran wages"
       }
     ]
   },
@@ -595,19 +543,19 @@
     "id": "s50",
     "type": "character",
     "pose": "explain",
-    "narration": "And zoom out on why this matters beyond trivia. Whole policies, elections, and national moods ride on GDP — a number that can rise for years while most people feel stuck. Learn to look past it to the median, and you gain a quiet superpower: the ability to tell when an economy is genuinely lifting people, and when it's just lifting a chart. That distinction is where the truth usually hides.",
+    "narration": "And zoom out on the hopeful half of the story. The same forces that made electronics and goods cheaper — technology, competition, scale — are exactly what we'd need to unleash on housing, education, and healthcare. The reason those three exploded isn't a law of nature; it's that we blocked the building, the competition, and the innovation. What we did for televisions, we could still do for homes.",
     "props": [
       {
-        "name": "podium",
-        "label": "policy rides on GDP"
+        "name": "crane",
+        "label": "we could fix the big three"
       },
       {
-        "name": "scale",
-        "label": "look to the median"
+        "name": "chartdown",
+        "label": "tech + competition cut prices"
       },
       {
         "name": "smiley",
-        "label": "tell truth from a chart"
+        "label": "not a law of nature"
       }
     ]
   },
@@ -616,10 +564,10 @@
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this changed how you read an economic headline, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this finally made fifty years of prices make sense, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "scale",
+        "name": "banknote",
         "label": "which price tag next?"
       }
     ]
