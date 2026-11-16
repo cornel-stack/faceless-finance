@@ -5,6 +5,10 @@ name: Render thumbnails
 # renders each as thumbnails/<N.Title>.png, and uploads the folder as an artifact.
 # Dispatch with an optional space-separated list of topic numbers to render a subset.
 on:
+  # push-triggered so it works WITHOUT the workflow being on the default branch:
+  # push any thumbs-render-* branch and this auto-renders all 100 thumbnails.
+  push:
+    branches: ["thumbs-render-*"]
   workflow_dispatch:
     inputs:
       topics:
@@ -50,10 +54,12 @@ jobs:
         run: node tools/thumbs/render_all.mjs ${{ inputs.topics }}
 
       - name: List output
+        if: always()
         run: ls -la thumbnails/ | head -120
 
       - name: Upload thumbnails
         id: upload
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: "thumbnails-${{ github.run_number }}"
