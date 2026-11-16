@@ -7898,6 +7898,60 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={y0 + 56} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the expensive wedding buys a weaker marriage, not a stronger one</text>
       </svg>
     );
+  } else if (m === "gdppercapitabars") {
+    // GDP per person by country — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Mexico", 12, "#9cc47f"],
+      ["UK", 50, gold],
+      ["Germany", 55, gold],
+      ["US", 80, "#d98b5f"],
+      ["Switzerland", 95, "#c0583a"],
+      ["Ireland", 105, red],
+    ];
+    const x0 = 270, xMax = 830, maxV = 105;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">GDP per person, by country ($K)</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>Ireland looks richest — hold that thought</text>
+      </svg>
+    );
+  } else if (m === "wherethegdpgoes") {
+    // Where a country's output ends up — slices.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string, string][] = [["corporate profits", "to shareholders"], ["taxes", "to government"], ["reinvestment", "not paid out"], ["top earners", "capture the wage share"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where the GDP pie actually goes</text>
+        {items.map(([t, d], i) => { const x = i % 2 === 0 ? 300 : 660; const y = i < 2 ? 110 : 290; const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 150} y={y} width={300} height={130} rx={12} fill={["#d98b5f", gold, "#9cc47f", "#c0583a"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={y + 52} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={y + 84} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+        <text x={VW / 2} y={462} fontSize={13} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the middle person gets only a fraction of the headline</text>
+      </svg>
+    );
+  } else if (m === "averagevsmedian") {
+    // Ten normal people + a billionaire: average soars, median stays.
+    const pop = (d: number) => Math.min(1, spring({ frame, fps, delay: d, config: { damping: 12 } }));
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={56} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">average vs median: the billionaire trick</text>
+        {Array.from({ length: 10 }).map((_, i) => { const x = 130 + i * 58; return <g key={i} opacity={pop(fps * (0.3 + i * 0.03))}><circle cx={x} cy={180} r={18} fill={gold} stroke={ink} strokeWidth={3} /></g>; })}
+        <g opacity={pop(fps * 0.9)}><circle cx={770} cy={175} r={40} fill={red} stroke={ink} strokeWidth={4} /><text x={770} y={182} fontSize={26} textAnchor="middle">🤑</text></g>
+        <text x={450} y={240} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>10 normal people + 1 billionaire</text>
+        <g transform="translate(300 350)" opacity={pop(fps * 1.3)}><rect x={-150} y={-40} width={300} height={90} rx={12} fill="#f0d9cf" stroke={ink} strokeWidth={4} /><text y={-8} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>AVERAGE</text><text y={22} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">$100M+ "rich"</text></g>
+        <g transform="translate(700 350)" opacity={pop(fps * 1.6)}><rect x={-150} y={-40} width={300} height={90} rx={12} fill="#cfe3d4" stroke={ink} strokeWidth={4} /><text y={-8} fontSize={15} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>MEDIAN</text><text y={22} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">still ordinary</text></g>
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>GDP per capita is that warped room average, nationwide</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

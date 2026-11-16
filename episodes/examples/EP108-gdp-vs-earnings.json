@@ -1,0 +1,751 @@
+{
+  "id": "EP108",
+  "series": "Napkin Numbers",
+  "title": "GDP per Capita vs What People Actually Earn, Every Country",
+  "slug": "gdp-vs-earnings",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP108 — The Price Tag series (topic 98). GDP per capita (US ~$80K) vs median take-home (~$45K) — the gap reveals who gets the pie. Rank GDP vs median by country; Ireland = cautionary tale (GDP ~$105K from multinationals booking profits, median ~$30K). Why the gap: corporate profits to shareholders, taxes, reinvestment, imputed rent/services never paid out, inequality (top captures wage share). Median > GDP for real life; standard of living includes unpriced things (air/safety/time). What to do: cross out GDP, watch median wages + inequality. 3 new motifs (gdppercapitabars/gdpvsmediangap->wherethegdpgoes/...); Sources: GDP/Median income/Income inequality/Disposable household income/Standard of living. NO local synth. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The headlines say the average American produces about eighty thousand dollars a year. So why does the typical worker take home barely half of that? Across the world, there's a yawning gap between a country's GDP per person — what the economy makes per head — and what ordinary people actually earn. Today we rank the countries where that gap is widest, and expose why the number politicians brag about has almost nothing to do with your paycheck.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "GDP: $80K per head"
+        },
+        {
+          "name": "paystub",
+          "label": "median take-home: half that"
+        },
+        {
+          "name": "scale",
+          "label": "the gap, ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap that reframes everything. A country can post a GDP per person of a hundred thousand dollars while its typical worker earns thirty. That difference isn't a rounding error — it's the entire story of where a nation's wealth actually goes, and who actually gets it. GDP measures the pie. It says nothing about your slice.",
+      "text": "$100K vs $30K",
+      "sub": "GDP per person vs what the median worker earns",
+      "icon": "scale"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank countries by GDP per person against what people really earn, explain why that gap exists and where the missing money goes, expose the countries whose GDP is a statistical illusion, and show why median income, not GDP, is the number that tells you how people actually live. Because the most quoted statistic in the world is also one of the most misleading about ordinary life.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "GDP vs real earnings"
+        },
+        {
+          "name": "warning",
+          "label": "where the money goes"
+        },
+        {
+          "name": "house",
+          "label": "the number that matters"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "my country's GDP per capita is huge, so I'm rich",
+      "memeBottom": "GDP per capita is not my salary",
+      "narration": "Because the leap from 'my country is wealthy' to 'I am wealthy' is exactly where almost everyone gets fooled. Before we rank the gaps, let's define what GDP actually measures."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what GDP per capita actually is — and isn't.",
+      "heading": "The Big Number",
+      "kicker": "what GDP measures"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-gdp",
+      "narration": "GDP is a monetary measure of all the final goods and services which are produced and rendered during a specific period of time by a country. Divide it by the population, and you get GDP per capita — the average economic output per person. It sounds like an average salary. It absolutely is not. It's everything the whole economy produces, including things that never land in a single worker's pocket."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And GDP counts some strange things as 'output.' A hurricane that destroys a city boosts GDP, because rebuilding it is economic activity. A longer commute burns more gas, lifting GDP. Even the costs of sickness and pollution can add to it. GDP measures motion, not necessarily progress — a lot of what it counts is a country running hard just to stay in place.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "disasters boost GDP"
+        },
+        {
+          "name": "car",
+          "label": "longer commutes count"
+        },
+        {
+          "name": "chartup",
+          "label": "motion, not progress"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And GDP wasn't even built to measure how well-off people are. Its own inventor warned, nearly a century ago, that the welfare of a nation can scarcely be inferred from this number. It was designed to track wartime production capacity — how much a country could make — not whether its people were thriving. We've spent eighty years using a factory gauge to measure human happiness.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "GDP ≠ welfare, by design"
+        },
+        {
+          "name": "factory",
+          "label": "built for wartime output"
+        },
+        {
+          "name": "scale",
+          "label": "a factory gauge for lives"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-medincome",
+      "narration": "The number that actually describes people is median income — the income amount that divides a population into two groups, half earning more and half earning less. The median is the person standing exactly in the middle. Unlike an average, it can't be distorted by a handful of billionaires at the top. It's the honest answer to the question: what does a normal person in this country actually make?"
+    },
+    {
+      "id": "s51",
+      "type": "stage",
+      "motif": "averagevsmedian",
+      "caption": "put a billionaire in the room",
+      "narration": "The difference between average and median is the whole trick, so hold onto it. Put a room of ten normal people with a billionaire, and the average net worth is over a hundred million dollars — yet nobody in the room except one feels remotely rich. The median, the middle person, stays ordinary. GDP per capita is that misleading room average, applied to an entire nation."
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So we have two numbers that sound similar and mean completely different things. GDP per capita is the total pie divided by heads — an average, inflated by the richest and by corporate profits. Median income is the real person in the middle. The gap between them is one of the most revealing, and most hidden, statistics about any country on Earth.",
+      "props": [
+        {
+          "name": "pie",
+          "label": "GDP: the whole pie ÷ heads"
+        },
+        {
+          "name": "paystub",
+          "label": "median: the middle person"
+        },
+        {
+          "name": "scale",
+          "label": "the gap reveals everything"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here's the distortion in one line. Because GDP per capita is an average, a country with a handful of billionaires and millions of poor people can post the same number as a country with a broad, comfortable middle class. The average is identical; the lived reality is a different planet. That's exactly why the middle person — the median — matters so much more.",
+      "text": "average lies",
+      "sub": "why GDP per capita hides how people really live",
+      "icon": "warning"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank countries by GDP per person versus real earnings.",
+      "heading": "The Ranking",
+      "kicker": "the pie vs the slice"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One honest note on comparing countries: you also have to adjust for prices. A dollar of GDP buys far more in Mexico than in Switzerland, so economists use purchasing-power adjustments to compare fairly. But even after that, the GDP-to-median gap remains — because adjusting for prices doesn't change who actually receives the money. Distribution is a separate problem from price levels.",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "adjust for local prices"
+        },
+        {
+          "name": "scale",
+          "label": "but the gap remains"
+        },
+        {
+          "name": "warning",
+          "label": "distribution ≠ prices"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "gdppercapitabars",
+      "caption": "GDP per person, by country",
+      "narration": "First, GDP per person, the number nations brag about. Ireland tops the list near a hundred and five thousand dollars, with Switzerland and the US close behind. Germany and the UK follow, and Mexico sits far lower. By this measure, Ireland looks like one of the richest places on Earth. But hold that thought — because its people's actual earnings tell a very different story."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the GDP leaderboard is full of these mirages. Tiny Luxembourg tops global charts partly because huge numbers of workers commute in from neighboring countries — they produce the GDP but aren't counted in the population, inflating the per-head number. Oil states look fabulously rich per capita while much of the wealth pools with the state and a few. The top of the GDP ranking is where the illusions cluster.",
+      "props": [
+        {
+          "name": "globe",
+          "label": "Luxembourg, oil states"
+        },
+        {
+          "name": "warning",
+          "label": "statistical mirages"
+        },
+        {
+          "name": "chartup",
+          "label": "illusions cluster at the top"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "GDP per capita vs median income ($K)",
+      "unit": "$K",
+      "narration": "Now put GDP next to what the median worker actually takes home. In the US, eighty thousand of GDP becomes about forty-five in median disposable income. In Switzerland, a strong economy still passes a lot through — ninety-five becomes fifty-five. But look at Ireland: a hundred and five thousand in GDP, and a median income of just thirty. The pie is enormous. The typical slice is tiny.",
+      "data": [
+        {
+          "label": "Mexico GDP",
+          "value": 12
+        },
+        {
+          "label": "Mexico med",
+          "value": 6
+        },
+        {
+          "label": "US GDP",
+          "value": 80
+        },
+        {
+          "label": "US med",
+          "value": 45
+        },
+        {
+          "label": "Ireland GDP",
+          "value": 105
+        },
+        {
+          "label": "Ireland med",
+          "value": 30
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the US gap tells its own story. American GDP per capita is among the highest in the world, yet its median worker's pay has grown slowly for decades while the economy boomed. The pie got much bigger; the middle slice barely did. That's the clearest sign that national wealth and personal prosperity have quietly come apart — growth without broadly rising wages.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "huge GDP"
+        },
+        {
+          "name": "chartdown",
+          "label": "flat median wages"
+        },
+        {
+          "name": "warning",
+          "label": "growth, slices unchanged"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And Ireland is the perfect cautionary tale. Its sky-high GDP per capita isn't because Irish workers are the richest in the world — it's because dozens of giant multinational corporations book their global profits there for tax reasons. Those profits inflate the country's GDP enormously, but they flow to foreign shareholders, not Irish paychecks. The GDP is real on paper and almost fictional in people's wallets.",
+      "props": [
+        {
+          "name": "factory",
+          "label": "multinationals book profits there"
+        },
+        {
+          "name": "warning",
+          "label": "inflates GDP, not wages"
+        },
+        {
+          "name": "globe",
+          "label": "flows to foreign shareholders"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "brag that your country's GDP is booming",
+      "memeBottom": "check if the median worker got a raise",
+      "narration": "This is the sleight of hand behind a thousand economic headlines. A booming GDP makes for a great speech, while the median paycheck — the thing people actually live on — can be flat or falling underneath it. The two numbers let leaders claim success even as ordinary life stands still."
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So where does all that missing money actually go?",
+      "heading": "The Gap",
+      "kicker": "who gets the pie"
+    },
+    {
+      "id": "s55",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "the economy grew 3% and I'm more broke than ever",
+      "memeBottom": "this is fine",
+      "narration": "For millions of people, this is the quiet dissonance of modern economics: being told the country is thriving while their own life gets harder. It isn't confusion or ingratitude. It's the simple fact that GDP went up and their slice didn't — two true statements that feel like a contradiction only because we conflate the pie with the plate."
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "wherethegdpgoes",
+      "caption": "where a country's output actually ends up",
+      "narration": "Here's where the pie really goes. A big chunk is corporate profits, flowing to shareholders, not workers. Another slice is taxes funding government. Some is reinvested, not paid out. And the share that does become wages is split unequally — the top earners capturing far more than the median. By the time the economy's total output trickles down to the person in the middle, it's a fraction of the GDP headline."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And a huge, invisible slice of GDP is things you never see as income at all. Economists add in the estimated 'rent' homeowners would pay themselves, government services, business investment, and more. It all counts as output. But none of it shows up in a worker's bank account. A big part of the GDP-to-paycheck gap is simply that GDP counts money that was never anyone's take-home pay.",
+      "props": [
+        {
+          "name": "house",
+          "label": "imputed homeowner 'rent'"
+        },
+        {
+          "name": "ledger",
+          "label": "services, investment"
+        },
+        {
+          "name": "warning",
+          "label": "never a take-home dollar"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the single biggest shift of the last few decades is where the pie's slices went. The share of GDP flowing to workers as wages has fallen, while the share flowing to capital — profits, dividends, rents — has risen. So even as economies grew, a shrinking cut reached paychecks. That quiet shift, from labor to capital, is most of why GDP and median pay drifted apart.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "labor's share fell"
+        },
+        {
+          "name": "chartup",
+          "label": "capital's share rose"
+        },
+        {
+          "name": "warning",
+          "label": "growth bypassed wages"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "sourceId": "wiki-inequality",
+      "narration": "This is really a story about distribution. Economists have long seen income and its distribution as a central concern. Two countries with the exact same GDP per capita can feel completely different to live in, depending on whether that output is shared broadly or captured at the top. GDP tells you how big the pie is. Inequality decides whether the average person ever tastes it."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is why GDP growth can feel like a lie to ordinary people. When a country's economy grows five percent but almost all the gains go to the top one percent, the headline celebrates while the median family notices nothing. 'The economy is booming' and 'I can't afford groceries' are not contradictions — they're just two different numbers, measuring two different things.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "economy up 5%"
+        },
+        {
+          "name": "warning",
+          "label": "gains to the top 1%"
+        },
+        {
+          "name": "scale",
+          "label": "booming ≠ felt"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "Which is why GDP is a terrible measure of how people actually live.",
+      "heading": "What Life Feels Like",
+      "kicker": "GDP vs reality"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And GDP famously ignores everything that isn't bought and sold. A parent raising children, a volunteer, a home-cooked meal, a walk in a free park — none of it counts, because no money changed hands. So a country can get 'richer' by GDP simply by turning unpaid life into paid services, even if people are no better off. It measures the market, not the meaning.",
+      "props": [
+        {
+          "name": "heart",
+          "label": "unpaid care counts for $0"
+        },
+        {
+          "name": "warning",
+          "label": "market, not meaning"
+        },
+        {
+          "name": "smiley",
+          "label": "value GDP can't see"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "sourceId": "wiki-household",
+      "narration": "A better gauge is household income — a measure of income received by the household sector. It counts the salaries, benefits, and transfers that actually reach families. When you track that instead of GDP, the rankings scramble: some high-GDP countries drop, because their output never reaches households, while more equal countries rise, because theirs does. The map of 'rich' redraws itself."
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Here's the reshuffle in practice. Rank countries by GDP and the US sits at or near the top. Rank them instead by median wealth per adult — what the middle person actually owns — and several more equal nations like Australia and Belgium leap ahead. Same world, different question, completely different leaderboard of who's really doing well.",
+      "text": "rankings flip",
+      "sub": "GDP vs median wealth: a different winner",
+      "icon": "scale"
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And transfers quietly rescue the picture in some countries. Pensions, healthcare, child benefits, and other government support don't show up as wages, but they massively raise what families actually have to live on. So a country with modest market wages but generous transfers can deliver a better real standard of living than a high-wage, low-support one. What reaches the household is what counts.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "pensions, benefits, healthcare"
+        },
+        {
+          "name": "house",
+          "label": "raise real household income"
+        },
+        {
+          "name": "scale",
+          "label": "what reaches home counts"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-sol",
+      "narration": "And the real goal was never GDP at all — it's standard of living, the comforts and services available to an individual. A country can have a towering GDP and a stressed, unequal, insecure population; another can have modest GDP but widely shared prosperity, healthcare, and time. GDP measures production. Standard of living measures life. The two can point in opposite directions."
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And standard of living includes things GDP can't price: clean air, safety, healthcare you don't fear using, time off, a short commute, trust in institutions. Some lower-GDP countries quietly deliver more of these than richer ones. When people move abroad and feel suddenly 'richer' on a smaller salary, this is usually why. The paycheck shrank, but the life got bigger.",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "air, safety, time, health"
+        },
+        {
+          "name": "globe",
+          "label": "low GDP, high living"
+        },
+        {
+          "name": "house",
+          "label": "smaller pay, bigger life"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "title",
+      "narration": "So how should you actually read these numbers?",
+      "heading": "What To Do",
+      "kicker": "trust the median"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "present",
+      "narration": "And beware politicians of every stripe wielding whichever number flatters them. In a boom, incumbents quote GDP; critics quote median wages. The honest move is to always ask for both, plus the distribution. Anyone showing you only one of the three is selling a story, not describing reality. The full picture needs all three numbers standing together.",
+      "props": [
+        {
+          "name": "podium",
+          "label": "each side cherry-picks"
+        },
+        {
+          "name": "scale",
+          "label": "demand all three"
+        },
+        {
+          "name": "warning",
+          "label": "one number = a story"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "present",
+      "narration": "When you hear GDP or GDP per capita, mentally cross it out and ask for the median instead. Median income, median wealth, and median wages tell you what a normal person experiences — the averages are hijacked by the top. Any politician or headline leaning on GDP to describe how people are doing is, knowingly or not, telling you about the pie while hiding your slice.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "cross out GDP"
+        },
+        {
+          "name": "paystub",
+          "label": "ask for the median"
+        },
+        {
+          "name": "scale",
+          "label": "pie vs your slice"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And learn the three numbers that actually matter together. GDP per capita tells you the size of the economy. Median income tells you the typical slice. And a measure of inequality tells you how unevenly it's cut. Any one alone can mislead; all three together give you an honest picture of a country — rich or poor, fair or lopsided, improving or stuck.",
+      "props": [
+        {
+          "name": "pie",
+          "label": "GDP: the size"
+        },
+        {
+          "name": "paystub",
+          "label": "median: the slice"
+        },
+        {
+          "name": "scale",
+          "label": "inequality: the cut"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "pose": "present",
+      "narration": "And apply it to your own life and decisions. Comparing countries to live or work in? Look at median take-home pay adjusted for cost of living, not GDP. Judging whether an economy is really working for people? Watch whether median wages are rising, not whether GDP is. The median is the number that quietly tracks whether ordinary life is getting better or worse.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "compare medians, not GDP"
+        },
+        {
+          "name": "chartup",
+          "label": "watch median wages"
+        },
+        {
+          "name": "house",
+          "label": "does life improve?"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And apply the same lens to your own finances. Your 'average' monthly spending can hide months that quietly bankrupt you; your average return can mask a brutal year. In your life, as in a country, the average is a comforting liar and the typical case is the truth. Budget and plan for the median month and the bad year, not the flattering average.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "averages hide bad months"
+        },
+        {
+          "name": "warning",
+          "label": "the average comforts, misleads"
+        },
+        {
+          "name": "jar",
+          "label": "plan for the typical + the bad"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. GDP per capita is the wealth of a country. Median income is the wealth of its people — and those are not the same thing. A nation can grow richer for decades while the typical person barely moves, if the gains pool at the top. Watch the gap between the two, and you're watching the single clearest measure of whether an economy is working for everyone, or just for someone.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "country rich ≠ people rich"
+        },
+        {
+          "name": "scale",
+          "label": "watch the gap"
+        },
+        {
+          "name": "warning",
+          "label": "for everyone, or someone?"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on why this matters beyond trivia. Whole policies, elections, and national moods ride on GDP — a number that can rise for years while most people feel stuck. Learn to look past it to the median, and you gain a quiet superpower: the ability to tell when an economy is genuinely lifting people, and when it's just lifting a chart. That distinction is where the truth usually hides.",
+      "props": [
+        {
+          "name": "podium",
+          "label": "policy rides on GDP"
+        },
+        {
+          "name": "scale",
+          "label": "look to the median"
+        },
+        {
+          "name": "smiley",
+          "label": "tell truth from a chart"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this changed how you read an economic headline, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-gdp",
+      "name": "Gross domestic product (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+      "quote": "which are produced and rendered during a specific period of time"
+    },
+    {
+      "id": "wiki-medincome",
+      "name": "Median income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median_income",
+      "quote": "the income amount that divides a population into two groups"
+    },
+    {
+      "id": "wiki-inequality",
+      "name": "Income inequality (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income_inequality",
+      "quote": "have long seen income and its distribution as a central concern"
+    },
+    {
+      "id": "wiki-household",
+      "name": "Disposable household and per capita income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Disposable_household_and_per_capita_income",
+      "quote": "a measure of income received by the household sector"
+    },
+    {
+      "id": "wiki-sol",
+      "name": "Standard of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Standard_of_living",
+      "quote": "comforts and services available to an individual"
+    }
+  ],
+  "youtube": {
+    "title": "GDP per Capita vs What People Actually Earn, Every Country",
+    "alts": [
+      "Why GDP per Capita Is Not Your Salary",
+      "The Gap Between a Country's Wealth and Its People's Pay"
+    ],
+    "hook": "Headlines say the average American produces about $80,000 a year — so why does the typical worker take home barely half of that? Across the world there's a yawning gap between a country's GDP per person (what the economy makes per head) and what ordinary people actually earn. This is the gap, ranked, and why the number politicians brag about has almost nothing to do with your paycheck. We separate GDP per capita (the whole economy's output divided by heads — an average inflated by corporate profits and top earners) from median income (the real person in the middle), rank countries by the two side by side, and expose the cautionary tale of Ireland (GDP per capita ~$105K because multinationals book global profits there for tax reasons, while the median worker earns ~$30K). Then where the missing money actually goes (corporate profits to shareholders, taxes, reinvestment, imputed 'rent' and services that are never anyone's take-home pay, and inequality capturing the wage share at the top), why standard of living — not GDP — is what life actually feels like, and how to read these numbers: cross out GDP, and watch median income and inequality instead. Fully cited.",
+    "bullets": [
+      "GDP per capita (~$80K US) vs median take-home (~$45K)",
+      "Ireland: $105K GDP, ~$30K median — the multinational illusion",
+      "Where the pie goes: profits, taxes, inequality",
+      "Why GDP counts money that's never your paycheck",
+      "Standard of living vs GDP — the rankings flip",
+      "Read the median, not GDP"
+    ],
+    "tags": [
+      "gdp per capita",
+      "median income",
+      "gdp explained",
+      "income inequality",
+      "gdp vs wages",
+      "standard of living",
+      "why gdp is misleading",
+      "median vs average",
+      "ireland gdp",
+      "economics explained",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#gdp",
+      "#economics",
+      "#inequality",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "YOUR COUNTRY IS RICH",
+      "hookBot": "ARE YOU?",
+      "napkinNumber": "$80K vs $45K",
+      "napkinSub": "GDP per head vs what you earn",
+      "deco": "scale"
+    },
+    "chapters": [
+      [
+        "what GDP per capita actually is",
+        "The big number"
+      ],
+      [
+        "rank countries by GDP per person versus real earnings",
+        "The ranking"
+      ],
+      [
+        "where does all that missing money actually go",
+        "The gap"
+      ],
+      [
+        "a terrible measure of how people actually live",
+        "What life feels like"
+      ],
+      [
+        "how should you actually read these numbers",
+        "What to do"
+      ]
+    ]
+  }
+}

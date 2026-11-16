@@ -278,7 +278,9 @@ export interface StageScene extends Base {
     // EP106 (The Price Tag — insurance by state) additions:
     | "insurancetotalbars" | "premiumdrivers" | "riskpoolhow"
     // EP107 (The Price Tag — wedding cost by state) additions:
-    | "weddingcostbars" | "weddingbreakdown" | "weddingcostvsmarriage";
+    | "weddingcostbars" | "weddingbreakdown" | "weddingcostvsmarriage"
+    // EP108 (The Price Tag — GDP vs earnings) additions:
+    | "gdppercapitabars" | "wherethegdpgoes" | "averagevsmedian";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

@@ -3,47 +3,47 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "The average American wedding now costs around thirty-three thousand dollars — a house down payment, spent on a single day. In some states it's over fifty thousand; in others, half that. But here's the twist nobody at the bridal shop will tell you: the research says the more you spend on the wedding, the higher your odds of divorce. Today we rank what a wedding costs in every state — and what it should.",
+    "narration": "The headlines say the average American produces about eighty thousand dollars a year. So why does the typical worker take home barely half of that? Across the world, there's a yawning gap between a country's GDP per person — what the economy makes per head — and what ordinary people actually earn. Today we rank the countries where that gap is widest, and expose why the number politicians brag about has almost nothing to do with your paycheck.",
     "props": [
       {
-        "name": "champagne",
-        "label": "$33K average"
+        "name": "chartup",
+        "label": "GDP: $80K per head"
       },
       {
-        "name": "house",
-        "label": "a down payment, for a day"
+        "name": "paystub",
+        "label": "median take-home: half that"
       },
       {
         "name": "scale",
-        "label": "cost vs what it should be"
+        "label": "the gap, ranked"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that should give every engaged couple pause. A single wedding day, in the priciest states, can cost over fifty thousand dollars — more than many Americans earn in a year. It's one of the largest discretionary purchases a person will ever make, and it buys something that's over in about six hours.",
-    "text": "$33,000",
-    "sub": "average US wedding — for one day",
-    "icon": "champagne"
+    "narration": "Here's the gap that reframes everything. A country can post a GDP per person of a hundred thousand dollars while its typical worker earns thirty. That difference isn't a rounding error — it's the entire story of where a nation's wealth actually goes, and who actually gets it. GDP measures the pie. It says nothing about your slice.",
+    "text": "$100K vs $30K",
+    "sub": "GDP per person vs what the median worker earns",
+    "icon": "scale"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank wedding costs across the states, break down where all that money actually goes, expose the psychology and the industry quietly inflating the bill, reveal what the data says about spending and lasting marriages, and show what a wedding should really cost. Because few expenses blend love, pressure, and financial logic quite as messily as this one.",
+    "narration": "So today we rank countries by GDP per person against what people really earn, explain why that gap exists and where the missing money goes, expose the countries whose GDP is a statistical illusion, and show why median income, not GDP, is the number that tells you how people actually live. Because the most quoted statistic in the world is also one of the most misleading about ordinary life.",
     "props": [
       {
         "name": "scale",
-        "label": "rank the states"
-      },
-      {
-        "name": "receipt",
-        "label": "where the money goes"
+        "label": "GDP vs real earnings"
       },
       {
         "name": "warning",
-        "label": "cost vs the marriage"
+        "label": "where the money goes"
+      },
+      {
+        "name": "house",
+        "label": "the number that matters"
       }
     ]
   },
@@ -52,176 +52,155 @@
     "type": "image",
     "src": "img/memes/expanding.jpg",
     "meme": "Expanding Brain",
-    "memeTop": "spend big to show how much you love them",
-    "memeBottom": "spend less and start the marriage richer",
-    "narration": "Because a wedding is where emotion and money collide hardest — and the story the industry sells, that bigger means more love, turns out to be exactly backwards. Before we rank the states, let's separate the wedding from the marriage."
+    "memeTop": "my country's GDP per capita is huge, so I'm rich",
+    "memeBottom": "GDP per capita is not my salary",
+    "narration": "Because the leap from 'my country is wealthy' to 'I am wealthy' is exactly where almost everyone gets fooled. Before we rank the gaps, let's define what GDP actually measures."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the crucial difference between a wedding and a marriage.",
-    "heading": "Wedding vs Marriage",
-    "kicker": "the day vs the life"
+    "narration": "First, what GDP per capita actually is — and isn't.",
+    "heading": "The Big Number",
+    "kicker": "what GDP measures"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-wedding",
-    "narration": "A wedding is a ceremony in which two people are united in marriage. That's it — a ceremony, a single event. Everything beyond the legal act of marrying is optional: the venue, the guests, the band, the three-tiered cake. We've bundled an enormous, expensive party onto what is, at its core, a short ceremony and a signature."
+    "sourceId": "wiki-gdp",
+    "narration": "GDP is a monetary measure of all the final goods and services which are produced and rendered during a specific period of time by a country. Divide it by the population, and you get GDP per capita — the average economic output per person. It sounds like an average salary. It absolutely is not. It's everything the whole economy produces, including things that never land in a single worker's pocket."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And the modern 'traditional' wedding is younger than you think. The white dress, the diamond ring, the enormous reception — much of it was invented or supercharged by twentieth-century marketing, not ancient custom. The diamond engagement ring, famously, was a jewelry-industry campaign. A lot of what feels like timeless obligation is really advertising that worked a little too well.",
+    "narration": "And GDP counts some strange things as 'output.' A hurricane that destroys a city boosts GDP, because rebuilding it is economic activity. A longer commute burns more gas, lifting GDP. Even the costs of sickness and pollution can add to it. GDP measures motion, not necessarily progress — a lot of what it counts is a country running hard just to stay in place.",
     "props": [
       {
-        "name": "diamond",
-        "label": "'traditions' = marketing"
+        "name": "warning",
+        "label": "disasters boost GDP"
       },
+      {
+        "name": "car",
+        "label": "longer commutes count"
+      },
+      {
+        "name": "chartup",
+        "label": "motion, not progress"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And GDP wasn't even built to measure how well-off people are. Its own inventor warned, nearly a century ago, that the welfare of a nation can scarcely be inferred from this number. It was designed to track wartime production capacity — how much a country could make — not whether its people were thriving. We've spent eighty years using a factory gauge to measure human happiness.",
+    "props": [
       {
         "name": "warning",
-        "label": "the diamond was an ad"
+        "label": "GDP ≠ welfare, by design"
       },
       {
-        "name": "champagne",
-        "label": "younger than you think"
+        "name": "factory",
+        "label": "built for wartime output"
+      },
+      {
+        "name": "scale",
+        "label": "a factory gauge for lives"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-marriage",
-    "narration": "The thing that actually lasts is marriage — a culturally and often legally recognised union between people called spouses. The marriage is the decades; the wedding is the afternoon. Yet couples routinely pour a year's income and months of stress into the afternoon, while investing almost nothing in preparing for the decades. We spend on the party and wing the partnership."
+    "sourceId": "wiki-medincome",
+    "narration": "The number that actually describes people is median income — the income amount that divides a population into two groups, half earning more and half earning less. The median is the person standing exactly in the middle. Unlike an average, it can't be distorted by a handful of billionaires at the top. It's the honest answer to the question: what does a normal person in this country actually make?"
   },
   {
     "id": "s51",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And this split explains the strange grief many couples feel after the wedding. They poured a year of energy and savings into one afternoon, and then it's simply over — and the actual marriage, the hard and beautiful part, begins with a drained bank account. We front-load all the investment into the easy day and arrive at the hard decades empty-handed.",
-    "props": [
-      {
-        "name": "champagne",
-        "label": "all energy into one day"
-      },
-      {
-        "name": "warning",
-        "label": "then it's just over"
-      },
-      {
-        "name": "house",
-        "label": "the marriage starts drained"
-      }
-    ]
-  },
-  {
-    "id": "s52",
-    "type": "callout",
-    "narration": "Here's the proportion that should stop couples cold. The legal act of getting married — the license and the officiant — typically costs a couple hundred dollars at most. Everything else, the other ninety-nine percent of a thirty-three-thousand-dollar wedding, is an optional party. You are not required to spend any of it to be just as married.",
-    "text": "99%",
-    "sub": "of a wedding's cost is optional party, not marriage",
-    "icon": "champagne"
+    "type": "stage",
+    "motif": "averagevsmedian",
+    "caption": "put a billionaire in the room",
+    "narration": "The difference between average and median is the whole trick, so hold onto it. Put a room of ten normal people with a billionaire, and the average net worth is over a hundred million dollars — yet nobody in the room except one feels remotely rich. The median, the middle person, stays ordinary. GDP per capita is that misleading room average, applied to an entire nation."
   },
   {
     "id": "s8",
     "type": "character",
     "pose": "explain",
-    "narration": "So the real question isn't how much a wedding costs — it's what you're actually buying. A legal marriage costs almost nothing: a license fee, often under a hundred dollars. Everything on top is a party, and a party's price is entirely a choice. The thirty-three-thousand-dollar average isn't the cost of getting married. It's the cost of the celebration we decided getting married requires.",
+    "narration": "So we have two numbers that sound similar and mean completely different things. GDP per capita is the total pie divided by heads — an average, inflated by the richest and by corporate profits. Median income is the real person in the middle. The gap between them is one of the most revealing, and most hidden, statistics about any country on Earth.",
     "props": [
       {
-        "name": "decree",
-        "label": "a license: under $100"
+        "name": "pie",
+        "label": "GDP: the whole pie ÷ heads"
       },
       {
-        "name": "champagne",
-        "label": "the rest is a party"
+        "name": "paystub",
+        "label": "median: the middle person"
       },
       {
         "name": "scale",
-        "label": "a choice, not a cost"
+        "label": "the gap reveals everything"
       }
     ]
   },
   {
     "id": "s42",
     "type": "callout",
-    "narration": "Put the opportunity cost in focus. Thirty-three thousand dollars invested instead of spent, growing over a thirty-year marriage, becomes well over two hundred thousand dollars. The real price of the average wedding isn't the thirty-three thousand. It's the quarter-million in retirement the couple quietly chose a party over.",
-    "text": "$250K+",
-    "sub": "what an average wedding could have grown into",
-    "icon": "chartup"
-  },
-  {
-    "id": "s59",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the ring deserves its own reality check. The 'spend two months' salary' rule wasn't ancient wisdom — it was a jewelry marketing slogan, full stop. There's no law of love that sets a diamond's price. Couples spend thousands on a ring precisely because an ad campaign, decades ago, told them that's what commitment looks like. The tradition is real; its origin is a billboard.",
-    "props": [
-      {
-        "name": "diamond",
-        "label": "'two months salary' = an ad"
-      },
-      {
-        "name": "warning",
-        "label": "no law sets the price"
-      },
-      {
-        "name": "champagne",
-        "label": "tradition born from a billboard"
-      }
-    ]
+    "narration": "Here's the distortion in one line. Because GDP per capita is an average, a country with a handful of billionaires and millions of poor people can post the same number as a country with a broad, comfortable middle class. The average is identical; the lived reality is a different planet. That's exactly why the middle person — the median — matters so much more.",
+    "text": "average lies",
+    "sub": "why GDP per capita hides how people really live",
+    "icon": "warning"
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's rank what a wedding costs by state.",
+    "narration": "So let's rank countries by GDP per person versus real earnings.",
     "heading": "The Ranking",
-    "kicker": "the price of the party"
+    "kicker": "the pie vs the slice"
   },
   {
     "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "One honest note on these state numbers: averages are dragged upward by lavish, high-end weddings. The typical couple often spends less than the headline average suggests, and plenty marry happily for a few thousand dollars. So don't read the state figure as a target you must hit. Read it as proof of how far the normal has drifted from the necessary.",
+    "narration": "One honest note on comparing countries: you also have to adjust for prices. A dollar of GDP buys far more in Mexico than in Switzerland, so economists use purchasing-power adjustments to compare fairly. But even after that, the GDP-to-median gap remains — because adjusting for prices doesn't change who actually receives the money. Distribution is a separate problem from price levels.",
     "props": [
       {
-        "name": "warning",
-        "label": "averages skew high"
-      },
-      {
-        "name": "smiley",
-        "label": "many marry for a few $K"
+        "name": "exchange",
+        "label": "adjust for local prices"
       },
       {
         "name": "scale",
-        "label": "normal ≠ necessary"
+        "label": "but the gap remains"
+      },
+      {
+        "name": "warning",
+        "label": "distribution ≠ prices"
       }
     ]
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "weddingcostbars",
-    "caption": "average wedding cost, by state",
-    "narration": "Here's the wedding leaderboard. In lower-cost states like Utah and much of the Mountain West and South, the average runs around twenty thousand dollars. The coasts climb fast. And in the Northeast — New York, New Jersey, Massachusetts — the average soars past fifty thousand, driven by pricey venues, big guest lists, and sky-high local costs. The same two people, the same vows, double the bill by geography."
+    "motif": "gdppercapitabars",
+    "caption": "GDP per person, by country",
+    "narration": "First, GDP per person, the number nations brag about. Ireland tops the list near a hundred and five thousand dollars, with Switzerland and the US close behind. Germany and the UK follow, and Mexico sits far lower. By this measure, Ireland looks like one of the richest places on Earth. But hold that thought — because its people's actual earnings tell a very different story."
   },
   {
     "id": "s54",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice the pricey states aren't pricey because couples there love more — it's the same venue-and-vendor cost of living we keep finding. A Manhattan ballroom and a Nebraska barn host the identical vows, but one charges Manhattan prices. The geography of weddings is really just the geography of real estate and labor, wearing a tuxedo.",
+    "narration": "And the GDP leaderboard is full of these mirages. Tiny Luxembourg tops global charts partly because huge numbers of workers commute in from neighboring countries — they produce the GDP but aren't counted in the population, inflating the per-head number. Oil states look fabulously rich per capita while much of the wealth pools with the state and a few. The top of the GDP ranking is where the illusions cluster.",
     "props": [
       {
-        "name": "mappin",
-        "label": "venue cost of living"
+        "name": "globe",
+        "label": "Luxembourg, oil states"
       },
       {
-        "name": "champagne",
-        "label": "same vows, different rent"
+        "name": "warning",
+        "label": "statistical mirages"
       },
       {
-        "name": "scale",
-        "label": "real estate in a tuxedo"
+        "name": "chartup",
+        "label": "illusions cluster at the top"
       }
     ]
   },
@@ -229,123 +208,126 @@
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Average wedding cost ($K)",
+    "title": "GDP per capita vs median income ($K)",
     "unit": "$K",
-    "narration": "Put the numbers in a row. Utah around twenty thousand, Texas twenty-eight, Florida thirty-two, California thirty-eight, New York forty-eight, and New Jersey leading near fifty-three. The gap between the cheapest and priciest state is over thirty thousand dollars — the difference, quite literally, between starting your marriage with a car or with a house deposit in the bank.",
+    "narration": "Now put GDP next to what the median worker actually takes home. In the US, eighty thousand of GDP becomes about forty-five in median disposable income. In Switzerland, a strong economy still passes a lot through — ninety-five becomes fifty-five. But look at Ireland: a hundred and five thousand in GDP, and a median income of just thirty. The pie is enormous. The typical slice is tiny.",
     "data": [
       {
-        "label": "Utah",
-        "value": 20
+        "label": "Mexico GDP",
+        "value": 12
       },
       {
-        "label": "Texas",
-        "value": 28
+        "label": "Mexico med",
+        "value": 6
       },
       {
-        "label": "Florida",
-        "value": 32
+        "label": "US GDP",
+        "value": 80
       },
       {
-        "label": "California",
-        "value": 38
+        "label": "US med",
+        "value": 45
       },
       {
-        "label": "New York",
-        "value": 48
+        "label": "Ireland GDP",
+        "value": 105
       },
       {
-        "label": "New Jersey",
-        "value": 53
+        "label": "Ireland med",
+        "value": 30
       }
     ],
-    "highlight": 5
+    "highlight": 4
   },
   {
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And weddings suffer from a special kind of markup. Tell a vendor an event is a wedding, and quotes mysteriously rise — the same flowers, catering, or venue often cost noticeably more under the word 'wedding' than 'party.' The industry knows couples are emotional, time-pressured, and spending once in a lifetime. That combination is a pricing dream, and the bill reflects it.",
+    "narration": "And the US gap tells its own story. American GDP per capita is among the highest in the world, yet its median worker's pay has grown slowly for decades while the economy boomed. The pie got much bigger; the middle slice barely did. That's the clearest sign that national wealth and personal prosperity have quietly come apart — growth without broadly rising wages.",
     "props": [
       {
+        "name": "chartup",
+        "label": "huge GDP"
+      },
+      {
+        "name": "chartdown",
+        "label": "flat median wages"
+      },
+      {
         "name": "warning",
-        "label": "the 'wedding' markup"
-      },
-      {
-        "name": "receipt",
-        "label": "same service, higher quote"
-      },
-      {
-        "name": "champagne",
-        "label": "emotion = a pricing dream"
+        "label": "growth, slices unchanged"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "stage",
-    "motif": "weddingbreakdown",
-    "caption": "where the wedding money goes",
-    "narration": "And here's where all that money actually goes. The single biggest slice, by far, is the venue and catering — feeding and seating your guests can be half the entire budget. Then the ring, photography, attire, flowers, music, and a hundred small line items. The guest list is the hidden master dial: every extra head adds to catering, space, and favors. Invite fewer people, and almost everything shrinks at once."
+    "type": "character",
+    "pose": "explain",
+    "narration": "And Ireland is the perfect cautionary tale. Its sky-high GDP per capita isn't because Irish workers are the richest in the world — it's because dozens of giant multinational corporations book their global profits there for tax reasons. Those profits inflate the country's GDP enormously, but they flow to foreign shareholders, not Irish paychecks. The GDP is real on paper and almost fictional in people's wallets.",
+    "props": [
+      {
+        "name": "factory",
+        "label": "multinationals book profits there"
+      },
+      {
+        "name": "warning",
+        "label": "inflates GDP, not wages"
+      },
+      {
+        "name": "globe",
+        "label": "flows to foreign shareholders"
+      }
+    ]
   },
   {
     "id": "s44",
     "type": "image",
     "src": "img/memes/twobuttons.jpg",
     "meme": "Two Buttons",
-    "memeTop": "invite everyone you've ever met",
-    "memeBottom": "a small wedding and a house deposit",
-    "narration": "This is the single most expensive decision in the whole budget: the guest list. Every name you add multiplies across catering, seating, drinks, and favors. Cutting the list isn't cutting love — it's the fastest, least painful way to turn a fifty-thousand-dollar wedding into a twenty-thousand-dollar one, with the people who actually matter still in the room."
+    "memeTop": "brag that your country's GDP is booming",
+    "memeBottom": "check if the median worker got a raise",
+    "narration": "This is the sleight of hand behind a thousand economic headlines. A booming GDP makes for a great speech, while the median paycheck — the thing people actually live on — can be flat or falling underneath it. The two numbers let leaders claim success even as ordinary life stands still."
   },
   {
     "id": "s13",
     "type": "title",
-    "narration": "So why do we spend so wildly on a single day?",
-    "heading": "The Pressure",
-    "kicker": "why the bill balloons"
+    "narration": "So where does all that missing money actually go?",
+    "heading": "The Gap",
+    "kicker": "who gets the pie"
   },
   {
     "id": "s55",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And there's a deep psychological trap called the sunk-prestige escalation. Once you book a nice venue, everything else must 'match' it — you can't put cheap flowers in a grand hall, or a budget dress against a designer backdrop. One upscale choice silently drags the entire budget up to its level. The expensive wedding isn't one big decision. It's a hundred small ones, each justified by the last.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "everything must 'match'"
-      },
-      {
-        "name": "chartup",
-        "label": "one splurge drags the rest"
-      },
-      {
-        "name": "champagne",
-        "label": "a hundred small yeses"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "the economy grew 3% and I'm more broke than ever",
+    "memeBottom": "this is fine",
+    "narration": "For millions of people, this is the quiet dissonance of modern economics: being told the country is thriving while their own life gets harder. It isn't confusion or ingratitude. It's the simple fact that GDP went up and their slice didn't — two true statements that feel like a contradiction only because we conflate the pie with the plate."
   },
   {
     "id": "s14",
-    "type": "screenshot",
-    "sourceId": "wiki-joneses",
-    "narration": "A huge part of it is keeping up with the Joneses, where the neighbor serves as a benchmark for social class. Weddings are intensely public, compared, and now broadcast on social media. Couples benchmark against the lavish weddings they've attended and scrolled past, and quietly feel theirs must match. The bill balloons not from their own desires, but from the fear of falling short of everyone else's."
+    "type": "stage",
+    "motif": "wherethegdpgoes",
+    "caption": "where a country's output actually ends up",
+    "narration": "Here's where the pie really goes. A big chunk is corporate profits, flowing to shareholders, not workers. Another slice is taxes funding government. Some is reinvested, not paid out. And the share that does become wages is split unequally — the top earners capturing far more than the median. By the time the economy's total output trickles down to the person in the middle, it's a fraction of the GDP headline."
   },
   {
     "id": "s45",
     "type": "character",
     "pose": "explain",
-    "narration": "And social media poured rocket fuel on all of it. Weddings are now content — photographed, posted, and compared against an endless feed of other people's highlight reels. Couples don't just host a wedding; they produce one for an audience that was never invited. That invisible pressure to be post-worthy has quietly added thousands to the modern wedding bill.",
+    "narration": "And a huge, invisible slice of GDP is things you never see as income at all. Economists add in the estimated 'rent' homeowners would pay themselves, government services, business investment, and more. It all counts as output. But none of it shows up in a worker's bank account. A big part of the GDP-to-paycheck gap is simply that GDP counts money that was never anyone's take-home pay.",
     "props": [
       {
-        "name": "phone",
-        "label": "weddings became content"
+        "name": "house",
+        "label": "imputed homeowner 'rent'"
+      },
+      {
+        "name": "ledger",
+        "label": "services, investment"
       },
       {
         "name": "warning",
-        "label": "producing for an audience"
-      },
-      {
-        "name": "chartup",
-        "label": "post-worthy = pricey"
+        "label": "never a take-home dollar"
       }
     ]
   },
@@ -353,177 +335,199 @@
     "id": "s60",
     "type": "character",
     "pose": "explain",
-    "narration": "And parents and family can quietly inflate the whole thing. Who pays, who's invited, whose traditions are honored — each person added to the decision adds pressure and cost. A wedding that started as two people's celebration can balloon into a family political summit, with the budget as collateral damage. Protecting your number sometimes means protecting it from the people who love you most.",
+    "narration": "And the single biggest shift of the last few decades is where the pie's slices went. The share of GDP flowing to workers as wages has fallen, while the share flowing to capital — profits, dividends, rents — has risen. So even as economies grew, a shrinking cut reached paychecks. That quiet shift, from labor to capital, is most of why GDP and median pay drifted apart.",
     "props": [
       {
-        "name": "crowd",
-        "label": "family adds pressure"
+        "name": "chartdown",
+        "label": "labor's share fell"
+      },
+      {
+        "name": "chartup",
+        "label": "capital's share rose"
       },
       {
         "name": "warning",
-        "label": "guest list as politics"
-      },
-      {
-        "name": "scale",
-        "label": "protect your number"
+        "label": "growth bypassed wages"
       }
     ]
   },
   {
     "id": "s15",
     "type": "screenshot",
-    "sourceId": "wiki-conspicuous",
-    "narration": "It tips into conspicuous consumption — the consumer practice of buying and using goods of a higher quality or price than practical, specifically to signal status. A wedding is the ultimate stage for it: a public, once-in-a-lifetime chance to display taste and success. The open bar, the designer dress, the destination venue — much of it isn't for the couple's joy. It's a performance for the audience."
+    "sourceId": "wiki-inequality",
+    "narration": "This is really a story about distribution. Economists have long seen income and its distribution as a central concern. Two countries with the exact same GDP per capita can feel completely different to live in, depending on whether that output is shared broadly or captured at the top. GDP tells you how big the pie is. Inequality decides whether the average person ever tastes it."
   },
   {
     "id": "s46",
     "type": "character",
     "pose": "explain",
-    "narration": "And the cruelest trap is that the pressure often comes from love, not vanity. Parents want to show pride, couples want to honor their guests, nobody wants to seem cheap about something this meaningful. The wedding industry is brilliant precisely because it weaponizes generosity. Spending more feels like caring more — which is exactly the illusion that empties the bank account.",
+    "narration": "And this is why GDP growth can feel like a lie to ordinary people. When a country's economy grows five percent but almost all the gains go to the top one percent, the headline celebrates while the median family notices nothing. 'The economy is booming' and 'I can't afford groceries' are not contradictions — they're just two different numbers, measuring two different things.",
     "props": [
       {
-        "name": "heart",
-        "label": "pressure from love"
+        "name": "chartup",
+        "label": "economy up 5%"
       },
       {
         "name": "warning",
-        "label": "spending feels like caring"
+        "label": "gains to the top 1%"
       },
       {
-        "name": "champagne",
-        "label": "generosity, weaponized"
+        "name": "scale",
+        "label": "booming ≠ felt"
       }
     ]
   },
   {
     "id": "s16",
     "type": "title",
-    "narration": "And now the finding the wedding industry really doesn't want you to hear.",
-    "heading": "Cost vs Marriage",
-    "kicker": "the divorce data"
+    "narration": "Which is why GDP is a terrible measure of how people actually live.",
+    "heading": "What Life Feels Like",
+    "kicker": "GDP vs reality"
   },
   {
     "id": "s56",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "$40,000 in wedding debt, honeymoon on a credit card",
-    "memeBottom": "this is fine",
-    "narration": "For too many newlyweds, this is the real morning after: not the joy of a marriage beginning, but the dawn of a debt that will shadow its first years. Starting a life together while digging out of a hole you dug for a single party is a brutal, avoidable way to begin."
+    "type": "character",
+    "pose": "explain",
+    "narration": "And GDP famously ignores everything that isn't bought and sold. A parent raising children, a volunteer, a home-cooked meal, a walk in a free park — none of it counts, because no money changed hands. So a country can get 'richer' by GDP simply by turning unpaid life into paid services, even if people are no better off. It measures the market, not the meaning.",
+    "props": [
+      {
+        "name": "heart",
+        "label": "unpaid care counts for $0"
+      },
+      {
+        "name": "warning",
+        "label": "market, not meaning"
+      },
+      {
+        "name": "smiley",
+        "label": "value GDP can't see"
+      }
+    ]
   },
   {
     "id": "s17",
-    "type": "stage",
-    "motif": "weddingcostvsmarriage",
-    "caption": "spend more, divorce more",
-    "narration": "Here's the twist. Researchers studying thousands of marriages found that, if anything, higher wedding spending is associated with a higher chance of divorce, not a lower one. Couples who spent the most on the ring and the wedding were more likely to split, while those who kept it modest tended to last. The expensive wedding isn't buying a stronger marriage. Sometimes it's quietly predicting a weaker one."
+    "type": "screenshot",
+    "sourceId": "wiki-household",
+    "narration": "A better gauge is household income — a measure of income received by the household sector. It counts the salaries, benefits, and transfers that actually reach families. When you track that instead of GDP, the rankings scramble: some high-GDP countries drop, because their output never reaches households, while more equal countries rise, because theirs does. The map of 'rich' redraws itself."
   },
   {
     "id": "s47",
     "type": "callout",
-    "narration": "Here's the study that reframes everything. Economists who tracked thousands of couples found those who spent the most on their weddings were among the most likely to divorce, while those who spent modestly, and had many guests but a cheap celebration, tended to last longest. Big crowd, small price was the winning combination — not a lavish, expensive show.",
-    "text": "spend more, split more",
-    "sub": "what the research actually found",
-    "icon": "warning"
+    "narration": "Here's the reshuffle in practice. Rank countries by GDP and the US sits at or near the top. Rank them instead by median wealth per adult — what the middle person actually owns — and several more equal nations like Australia and Belgium leap ahead. Same world, different question, completely different leaderboard of who's really doing well.",
+    "text": "rankings flip",
+    "sub": "GDP vs median wealth: a different winner",
+    "icon": "scale"
+  },
+  {
+    "id": "s61",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And transfers quietly rescue the picture in some countries. Pensions, healthcare, child benefits, and other government support don't show up as wages, but they massively raise what families actually have to live on. So a country with modest market wages but generous transfers can deliver a better real standard of living than a high-wage, low-support one. What reaches the household is what counts.",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "pensions, benefits, healthcare"
+      },
+      {
+        "name": "house",
+        "label": "raise real household income"
+      },
+      {
+        "name": "scale",
+        "label": "what reaches home counts"
+      }
+    ]
   },
   {
     "id": "s18",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And it makes sense once you think about it. Starting a marriage with crushing debt or a drained savings account imports financial stress into the relationship from day one — and money fights are a leading cause of divorce. A giant wedding can literally fund its own undoing. Meanwhile, the couples who resisted the pressure often started richer, calmer, and on the same financial page.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "wedding debt = stress"
-      },
-      {
-        "name": "chartdown",
-        "label": "money fights end marriages"
-      },
-      {
-        "name": "smiley",
-        "label": "modest = richer, calmer"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-sol",
+    "narration": "And the real goal was never GDP at all — it's standard of living, the comforts and services available to an individual. A country can have a towering GDP and a stressed, unequal, insecure population; another can have modest GDP but widely shared prosperity, healthcare, and time. GDP measures production. Standard of living measures life. The two can point in opposite directions."
   },
   {
     "id": "s48",
     "type": "character",
     "pose": "explain",
-    "narration": "This doesn't mean a cheap wedding guarantees a happy marriage — correlation isn't destiny. But it shatters the core sales pitch: that a more expensive wedding is a more serious, more loving, more lasting one. At best, the money makes no difference to the marriage. At worst, the debt and stress it creates actively work against it. Either way, the big spend buys you nothing that lasts.",
+    "narration": "And standard of living includes things GDP can't price: clean air, safety, healthcare you don't fear using, time off, a short commute, trust in institutions. Some lower-GDP countries quietly deliver more of these than richer ones. When people move abroad and feel suddenly 'richer' on a smaller salary, this is usually why. The paycheck shrank, but the life got bigger.",
     "props": [
       {
-        "name": "scale",
-        "label": "cheap ≠ guaranteed happy"
-      },
-      {
-        "name": "warning",
-        "label": "but expensive buys nothing"
-      },
-      {
         "name": "smiley",
-        "label": "the pitch is a myth"
+        "label": "air, safety, time, health"
+      },
+      {
+        "name": "globe",
+        "label": "low GDP, high living"
+      },
+      {
+        "name": "house",
+        "label": "smaller pay, bigger life"
       }
     ]
   },
   {
-    "id": "s61",
-    "type": "callout",
-    "narration": "Flip the whole thing into a head start. Take even half of an average wedding budget — say fifteen thousand dollars — put it toward a home down payment or investments, and you've turned the most forgettable kind of spending into the foundation of a life. The best wedding gift a couple can give themselves is the one they don't spend.",
-    "text": "half the budget",
-    "sub": "redirected into a home or investments",
-    "icon": "house"
-  },
-  {
     "id": "s19",
     "type": "title",
-    "narration": "So what should a wedding actually cost?",
+    "narration": "So how should you actually read these numbers?",
     "heading": "What To Do",
-    "kicker": "spend on the marriage"
+    "kicker": "trust the median"
   },
   {
     "id": "s57",
     "type": "character",
     "pose": "present",
-    "narration": "And consider the quietly radical option: a tiny wedding, or eloping, then a bigger party later if you want one. Many couples who skipped the giant production report zero regret and a five-figure head start on their marriage. The fear is that you'll wish you'd done more. The reality, over and over, is that people wish they'd spent less and stressed less.",
+    "narration": "And beware politicians of every stripe wielding whichever number flatters them. In a boom, incumbents quote GDP; critics quote median wages. The honest move is to always ask for both, plus the distribution. Anyone showing you only one of the three is selling a story, not describing reality. The full picture needs all three numbers standing together.",
     "props": [
       {
-        "name": "smiley",
-        "label": "tiny wedding or elope"
+        "name": "podium",
+        "label": "each side cherry-picks"
       },
       {
-        "name": "moneybag",
-        "label": "a five-figure head start"
+        "name": "scale",
+        "label": "demand all three"
       },
       {
         "name": "warning",
-        "label": "people wish they'd spent less"
+        "label": "one number = a story"
       }
     ]
   },
   {
     "id": "s20",
-    "type": "screenshot",
-    "sourceId": "wiki-reception",
-    "narration": "Most of the budget is the wedding reception — a party held after the ceremony as hospitality for those who attended. So that's where the real savings live. A smaller guest list, an off-peak date, a non-traditional venue, and skipping the status add-ons can cut a wedding by half or more without touching anything that actually matters to the couple. The ceremony is sacred; the party is negotiable."
+    "type": "character",
+    "pose": "present",
+    "narration": "When you hear GDP or GDP per capita, mentally cross it out and ask for the median instead. Median income, median wealth, and median wages tell you what a normal person experiences — the averages are hijacked by the top. Any politician or headline leaning on GDP to describe how people are doing is, knowingly or not, telling you about the pie while hiding your slice.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "cross out GDP"
+      },
+      {
+        "name": "paystub",
+        "label": "ask for the median"
+      },
+      {
+        "name": "scale",
+        "label": "pie vs your slice"
+      }
+    ]
   },
   {
     "id": "s49",
     "type": "character",
     "pose": "present",
-    "narration": "And watch the sneaky budget-killers that add up fast. The open bar, the plus-ones, the Saturday-in-June premium, the elaborate florals that die by Monday, the save-the-dates and favors nobody keeps. None of these are what your guests will actually remember — they remember the people, the food, and the feeling. Cutting the forgettable extras is painless, and it's where the real money hides.",
+    "narration": "And learn the three numbers that actually matter together. GDP per capita tells you the size of the economy. Median income tells you the typical slice. And a measure of inequality tells you how unevenly it's cut. Any one alone can mislead; all three together give you an honest picture of a country — rich or poor, fair or lopsided, improving or stuck.",
     "props": [
       {
-        "name": "warning",
-        "label": "open bar, favors, peak date"
+        "name": "pie",
+        "label": "GDP: the size"
       },
       {
-        "name": "scissors",
-        "label": "cut the forgettable stuff"
+        "name": "paystub",
+        "label": "median: the slice"
       },
       {
-        "name": "smiley",
-        "label": "guests remember people, not favors"
+        "name": "scale",
+        "label": "inequality: the cut"
       }
     ]
   },
@@ -531,39 +535,39 @@
     "id": "s21",
     "type": "character",
     "pose": "present",
-    "narration": "So decide your number first, as a couple, before anyone else weighs in — and protect it. Spend lavishly on the two or three things you'll genuinely remember, and ruthlessly cut the rest that's really there to impress guests. And take whatever you save and pour it into the marriage: a home, an emergency fund, a honeymoon you're not paying off for years. Start the life, don't just stage the day.",
+    "narration": "And apply it to your own life and decisions. Comparing countries to live or work in? Look at median take-home pay adjusted for cost of living, not GDP. Judging whether an economy is really working for people? Watch whether median wages are rising, not whether GDP is. The median is the number that quietly tracks whether ordinary life is getting better or worse.",
     "props": [
       {
-        "name": "calculator",
-        "label": "set your number first"
+        "name": "mappin",
+        "label": "compare medians, not GDP"
       },
       {
-        "name": "champagne",
-        "label": "splurge on 2-3 things"
+        "name": "chartup",
+        "label": "watch median wages"
       },
       {
         "name": "house",
-        "label": "invest the rest in the life"
+        "label": "does life improve?"
       }
     ]
   },
   {
-    "id": "s50",
+    "id": "s58",
     "type": "character",
     "pose": "present",
-    "narration": "And here's a reframe that quietly saves marriages, not just money: spend a fraction of the wedding budget on actually preparing for marriage. A few sessions of premarital counseling, honest conversations about money, kids, and expectations — the things that genuinely predict whether a marriage lasts. It's the least glamorous line item imaginable, and by far the highest-return one.",
+    "narration": "And apply the same lens to your own finances. Your 'average' monthly spending can hide months that quietly bankrupt you; your average return can mask a brutal year. In your life, as in a country, the average is a comforting liar and the typical case is the truth. Budget and plan for the median month and the bad year, not the flattering average.",
     "props": [
       {
-        "name": "handshake",
-        "label": "premarital counseling"
-      },
-      {
         "name": "calculator",
-        "label": "talk money & expectations"
+        "label": "averages hide bad months"
       },
       {
-        "name": "chartup",
-        "label": "the highest-return spend"
+        "name": "warning",
+        "label": "the average comforts, misleads"
+      },
+      {
+        "name": "jar",
+        "label": "plan for the typical + the bad"
       }
     ]
   },
@@ -571,39 +575,39 @@
     "id": "s22",
     "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson. A wedding is one day; a marriage is the rest of your life — and the data is clear that spending more on the first does nothing to protect the second. The couples who win aren't the ones with the grandest party. They're the ones who refused to confuse the cost of a celebration with the strength of a commitment. Celebrate fully. Just don't mortgage the marriage to do it.",
+    "narration": "Because here's the real lesson. GDP per capita is the wealth of a country. Median income is the wealth of its people — and those are not the same thing. A nation can grow richer for decades while the typical person barely moves, if the gains pool at the top. Watch the gap between the two, and you're watching the single clearest measure of whether an economy is working for everyone, or just for someone.",
     "props": [
       {
-        "name": "heart",
-        "label": "a day vs a lifetime"
+        "name": "chartup",
+        "label": "country rich ≠ people rich"
+      },
+      {
+        "name": "scale",
+        "label": "watch the gap"
       },
       {
         "name": "warning",
-        "label": "cost ≠ commitment"
-      },
-      {
-        "name": "smiley",
-        "label": "celebrate, don't mortgage"
+        "label": "for everyone, or someone?"
       }
     ]
   },
   {
-    "id": "s58",
+    "id": "s50",
     "type": "character",
     "pose": "explain",
-    "narration": "And zoom out on what the wedding bill really measures. It's a near-perfect lab for every money lesson there is: social pressure, status signaling, the industry's markup, and the gap between what feels necessary and what actually is. Master your thinking here — on the most emotional purchase of your life — and you'll make calmer, clearer money decisions about everything that comes after it.",
+    "narration": "And zoom out on why this matters beyond trivia. Whole policies, elections, and national moods ride on GDP — a number that can rise for years while most people feel stuck. Learn to look past it to the median, and you gain a quiet superpower: the ability to tell when an economy is genuinely lifting people, and when it's just lifting a chart. That distinction is where the truth usually hides.",
     "props": [
       {
-        "name": "scale",
-        "label": "a lab for every money lesson"
+        "name": "podium",
+        "label": "policy rides on GDP"
       },
       {
-        "name": "warning",
-        "label": "pressure, status, markup"
+        "name": "scale",
+        "label": "look to the median"
       },
       {
         "name": "smiley",
-        "label": "master it here, win everywhere"
+        "label": "tell truth from a chart"
       }
     ]
   },
@@ -612,10 +616,10 @@
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this reframed the big day for you, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this changed how you read an economic headline, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "champagne",
+        "name": "scale",
         "label": "which price tag next?"
       }
     ]
