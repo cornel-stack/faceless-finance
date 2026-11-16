@@ -1,0 +1,739 @@
+{
+  "id": "EP104",
+  "series": "Napkin Numbers",
+  "title": "Every Country Ranked by Household Debt",
+  "slug": "household-debt-by-country",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP104 — The Price Tag series (topic 94). Rank household debt as % of income by country (Netherlands/Australia/Switzerland/Canada ~200%+ vs Italy ~60%). Debt-to-income ratio, high debt = fragility not poverty (it's expensive housing + easy mortgage credit). Good debt (mortgage/asset) vs bad (consumer/credit card = fund consumption not investment). Debt→crises (2008: household not govt debt lit the fuse), deleveraging hangover, rate-rise trigger (Canada/Australia exposed). What to do: calc your DTI (<36%), kill bad debt, keep sensible good debt, build a buffer. 3 new motifs (debtbycountrybars/debttypessplit/debtcrisiscurve); 2 charts. Sources: Household debt/Debt-to-income ratio/Consumer debt/Debt/Deleveraging. NO local synth. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "In some of the richest countries on Earth, the average household owes more than twice everything it earns in a year. In others, families owe barely half their income. That single number — how much a nation's households are borrowed up to the hilt — quietly decides which economies are fragile and which can weather a storm. Today we rank every major country by household debt, and reveal who's living closest to the edge.",
+      "props": [
+        {
+          "name": "debtclock",
+          "label": "2× income owed"
+        },
+        {
+          "name": "scale",
+          "label": "every country ranked"
+        },
+        {
+          "name": "warning",
+          "label": "who's on the edge"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap that stuns people. In the most indebted countries — the Netherlands, Australia, Switzerland, Canada — households owe around two hundred percent of their yearly income, or more. In others, like much of southern and eastern Europe, it's under sixty. Same idea of a middle-class family, three times the debt load, depending on the flag.",
+      "text": "200% vs 60%",
+      "sub": "household debt as a share of income, by country",
+      "icon": "debtclock"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the world by household debt, break down what all that borrowing is actually for, explain why some debt builds wealth while other debt destroys it, trace how household debt quietly triggers the biggest crises in history, and show how to read your own number. Because a country's debt load, and yours, is one of the clearest predictors of financial trouble there is.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the countries"
+        },
+        {
+          "name": "house",
+          "label": "good vs bad debt"
+        },
+        {
+          "name": "warning",
+          "label": "debt and crises"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "debt is always bad",
+      "memeBottom": "some debt builds wealth, some debt destroys it",
+      "narration": "Because not all debt is created equal — a mortgage and a maxed-out credit card are opposites wearing the same word. Before we rank the countries, let's define what household debt really is."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what 'household debt' actually measures.",
+      "heading": "The Debt Load",
+      "kicker": "what a nation owes"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-hhdebt",
+      "narration": "Household debt is the combined debt of all people in a household, including mortgages, car loans, student loans, and credit cards. Add it up across a whole country and compare it to income, and you get a powerful gauge of financial health. The research is blunt that a sharp rise in this number has preceded many of history's worst economic crises."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And household debt is different from the government debt you usually hear about. A country can have modest national debt but households drowning in private loans — or the reverse. This is the one that lands directly on families: the mortgage payment, the car loan, the credit-card minimum. When economists want to know if ordinary people are in trouble, this is the number they watch first.",
+      "props": [
+        {
+          "name": "house",
+          "label": "private, not government debt"
+        },
+        {
+          "name": "warning",
+          "label": "it lands on families"
+        },
+        {
+          "name": "debtclock",
+          "label": "economists watch it first"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-dti",
+      "narration": "The key measure is the debt-to-income ratio — the monthly gross income that goes toward paying debts. At the household level, it tells a lender how stretched you are. At the national level, it tells you how much of a population's paycheck is already spoken for before they buy anything. The higher it climbs, the less cushion a family, or a country, has when trouble hits."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the ratio matters more than the raw dollar amount. A family owing half a million on a mortgage but earning three hundred thousand is fine; a family owing fifty thousand on credit cards while earning forty is in crisis. The number that predicts trouble isn't how much you owe — it's how big your debt is next to what you bring in. That ratio is the whole story.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "ratio beats raw dollars"
+        },
+        {
+          "name": "paystub",
+          "label": "debt vs income"
+        },
+        {
+          "name": "warning",
+          "label": "small debt can be a crisis"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's the US snapshot most people never see added up. American households together owe over seventeen trillion dollars — roughly twelve trillion in mortgages, and the rest in student loans, auto loans, and credit cards. It's a debt the size of a major economy, carried on millions of ordinary kitchen tables.",
+      "text": "$17T",
+      "sub": "total US household debt — mortgages, autos, cards, loans",
+      "icon": "debtclock"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So a high debt-to-income number isn't automatically a disaster — but it is fragility. A country where households owe two hundred percent of income can look rich and comfortable while the economy hums. But the moment interest rates rise or jobs disappear, all that debt turns from a convenience into a trap, fast. Debt is a loan against the future, and the future always eventually arrives.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "high debt = fragility"
+        },
+        {
+          "name": "warning",
+          "label": "fine until rates rise"
+        },
+        {
+          "name": "hourglass",
+          "label": "a loan against the future"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here's the leverage in one stark fact. In the most indebted countries, households owe more than two dollars for every single dollar they earn in a year. It would take them over two years of income, spending nothing on food, rent, or anything else, just to pay off what they already owe. That's how stretched the top of this ranking really is.",
+      "text": "2+ years",
+      "sub": "of total income to clear the debt in top countries",
+      "icon": "debtclock"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank the world by household debt.",
+      "heading": "The Ranking",
+      "kicker": "debt-to-income by country"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One caution reading this ranking: a low number isn't automatically healthy. Some countries have little household debt simply because credit is hard to get, or because people are too poor to borrow. A thriving middle class with sensible mortgages can look more indebted than a struggling population with no access to loans at all. Context, as always, decides what the number means.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "low debt ≠ always healthy"
+        },
+        {
+          "name": "scale",
+          "label": "no credit access vs choice"
+        },
+        {
+          "name": "globe",
+          "label": "context decides"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "debtbycountrybars",
+      "caption": "household debt as a share of income, by country",
+      "narration": "Here's the global leaderboard of borrowing. At the top: Switzerland, the Netherlands, Australia, and Canada, where households owe around two hundred percent of their income — often because of enormous mortgages on expensive homes. The US and UK sit lower, around a hundred. And much of southern and eastern Europe anchors the bottom, under sixty. The richest-looking countries are frequently the most leveraged."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And watch the trend, not just the level. A country whose household debt is still climbing fast is in a different place from one that's slowly paying down. Rapid, recent increases in borrowing are the real red flag economists hunt for — because it's the speed of the build-up, more than the size, that tends to precede a reckoning.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "watch the trend"
+        },
+        {
+          "name": "warning",
+          "label": "fast build-up = red flag"
+        },
+        {
+          "name": "scale",
+          "label": "speed, not just size"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Household debt as % of net income",
+      "unit": "%",
+      "narration": "Put the numbers in a row. Italy around sixty percent, Germany eighty-five, the US near a hundred, the UK a hundred and thirty, Canada one eighty-five, and the Netherlands and Australia over two hundred. The surprise for most people is that heavy household debt isn't a sign of poverty — it's often a sign of expensive housing and easy credit in wealthy nations.",
+      "data": [
+        {
+          "label": "Italy",
+          "value": 60
+        },
+        {
+          "label": "Germany",
+          "value": 85
+        },
+        {
+          "label": "US",
+          "value": 100
+        },
+        {
+          "label": "UK",
+          "value": 130
+        },
+        {
+          "label": "Canada",
+          "value": 185
+        },
+        {
+          "label": "Netherlands",
+          "value": 210
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice why the leaders are where they are. The Netherlands, Australia, Canada, and Switzerland all share expensive housing markets and easy mortgage credit. Their debt isn't reckless spending — it's the price of chasing a home in a pricey market. The ranking is, to a large degree, a map of where housing got most unaffordable, financed.",
+      "props": [
+        {
+          "name": "house",
+          "label": "expensive housing markets"
+        },
+        {
+          "name": "mappin",
+          "label": "pricey homes, big mortgages"
+        },
+        {
+          "name": "scale",
+          "label": "a map of unaffordability"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "motif": "debttypessplit",
+      "caption": "what the borrowing is actually for",
+      "narration": "But the raw number hides the most important thing: what the debt is for. In the heavily indebted countries, the vast majority is mortgage debt — borrowing to own a home that, hopefully, holds or grows in value. A much smaller slice is consumer debt: credit cards, car loans, and buy-now-pay-later. One of these builds a future. The other quietly dismantles it."
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the composition flips the risk entirely. A country that's heavily indebted but almost all in mortgages, on homes people actually live in, is far safer than one with lots of credit-card and consumer debt at the same total. Mortgage debt is backed by an asset and usually lower-interest. Consumer debt is backed by nothing and charges a fortune. Always ask not just how much, but what kind.",
+      "props": [
+        {
+          "name": "house",
+          "label": "mortgage: backed, cheap"
+        },
+        {
+          "name": "creditcard",
+          "label": "consumer: unbacked, costly"
+        },
+        {
+          "name": "scale",
+          "label": "ask what kind, not just how much"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "Which brings us to the great divide: good debt versus bad.",
+      "heading": "Good vs Bad Debt",
+      "kicker": "not all debt is equal"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "There's even a third category worth naming: in-between debt. A car loan buys something you genuinely need but that loses value fast. A student loan for a low-paying field is a bet that didn't pay off. Not all borrowing is cleanly good or bad — much of it depends entirely on the price you paid and the return you got. The label 'good debt' has to be earned, not assumed.",
+      "props": [
+        {
+          "name": "car",
+          "label": "needed, but depreciates"
+        },
+        {
+          "name": "gradcap",
+          "label": "depends on the payoff"
+        },
+        {
+          "name": "scale",
+          "label": "'good debt' must be earned"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "sourceId": "wiki-consumerdebt",
+      "narration": "The dangerous kind is consumer debt — debt which is used to fund consumption rather than investment. It's money borrowed for things that lose value the moment you own them: restaurant meals, gadgets, vacations, financed on a card at crushing interest. This debt doesn't build anything. It just pulls your future spending into the present, and charges you brutally for the privilege."
+    },
+    {
+      "id": "s45",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "borrow to buy an asset that grows",
+      "memeBottom": "borrow to buy stuff that's worthless by morning",
+      "narration": "This is the fork that decides whether debt lifts you or sinks you. The exact same act — borrowing money — builds wealth on one path and destroys it on the other. The word 'debt' tells you nothing. What you bought with it tells you everything."
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Contrast that with a mortgage or a student loan for a high-paying field. That's borrowing to acquire an asset — a home, or earning power — that can grow and pay you back over time. The debt is large, but it's working for you. The country that owes two hundred percent in mortgages is in a very different position from one drowning in credit-card balances, even at the same total.",
+      "props": [
+        {
+          "name": "house",
+          "label": "mortgage = an asset"
+        },
+        {
+          "name": "chartup",
+          "label": "debt that works for you"
+        },
+        {
+          "name": "scale",
+          "label": "same total, different risk"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "minimum payments on five maxed-out cards",
+      "memeBottom": "this is fine",
+      "narration": "For households deep in high-interest consumer debt, this is the quiet treadmill: paying every month, watching the balance barely move, as interest eats most of each payment. It isn't a spending problem you can shrug off — it's a trap engineered to keep you paying forever. Recognizing it is the first step off the treadmill."
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "And here's why this ranking really matters: crises.",
+      "heading": "The Debt Bomb",
+      "kicker": "how it blows up"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And debt crises have a terrifying feature: they're contagious. When overindebted households stop paying, banks take losses, so they lend less, so businesses cut jobs, so more households can't pay. One group's debt problem becomes everyone's economic problem. That chain reaction is why a number on a spreadsheet about private borrowing can end up on the front page as a global recession.",
+      "props": [
+        {
+          "name": "domino",
+          "label": "debt crises are contagious"
+        },
+        {
+          "name": "warning",
+          "label": "one group infects all"
+        },
+        {
+          "name": "chartdown",
+          "label": "private debt → global slump"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "sourceId": "wiki-debt",
+      "narration": "At its core, debt is an obligation that requires you to pay money borrowed or otherwise withheld from another party. That obligation doesn't care about your circumstances. When a whole nation's households are maxed out and a shock hits — a rate hike, a recession, a housing dip — millions can't pay at once. That synchronized failure is exactly how household debt turns into a national catastrophe."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the cruelest feature of debt is that it's rigid while life is not. Your income can fall, your hours can get cut, a recession can hit — but the loan payment stays exactly the same. That rigidity is why debt amplifies every downturn. In good times it's invisible; in bad times, it's the thing that turns a rough patch into a catastrophe.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "debt is rigid"
+        },
+        {
+          "name": "chartdown",
+          "label": "income can fall, payment can't"
+        },
+        {
+          "name": "bomb",
+          "label": "it amplifies downturns"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "debtcrisiscurve",
+      "caption": "debt climbs, then the crash",
+      "narration": "This is the pattern behind two thousand eight and nearly every crisis like it. Household debt climbs for years as credit gets easy and home prices soar. Everyone feels wealthy. Then rates rise or prices wobble, the borrowing can't be sustained, and the whole thing snaps. The higher a country let household debt climb, the harder and faster that snap tends to be."
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Say the 2008 lesson plainly. US household debt climbed to record highs on easy mortgages in the mid-two-thousands — then home prices fell, millions couldn't pay, and the synchronized collapse nearly took down the entire global financial system. It wasn't government debt that lit the fuse. It was households, borrowed to the limit, all breaking at once.",
+      "text": "2008",
+      "sub": "household debt, not government debt, lit the fuse",
+      "icon": "bomb"
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "sourceId": "wiki-deleverage",
+      "narration": "The painful cure is deleveraging — the reduction of the leverage ratio, as households scramble to pay down debt all at once. But when everyone stops spending to pay off loans simultaneously, the economy seizes up. It's a brutal, years-long hangover. The highly indebted countries aren't necessarily doomed — but they're the ones with the least room to maneuver when the music stops."
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And rising interest rates are the modern trigger to watch. Much of that two-hundred-percent debt sits on variable-rate or soon-to-reset mortgages. When central banks hike rates, those payments jump, sometimes by hundreds a month, with no warning. Highly indebted countries like Canada and Australia are especially exposed — their households feel every rate rise almost immediately.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "rates reset mortgages up"
+        },
+        {
+          "name": "warning",
+          "label": "payments jump overnight"
+        },
+        {
+          "name": "mappin",
+          "label": "Canada, Australia exposed"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "So how do you read your own number — and stay safe?",
+      "heading": "What To Do",
+      "kicker": "your personal ratio"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if you're carrying bad debt, use the two proven ways out. The avalanche method kills your highest-interest debt first, saving the most money. The snowball method clears your smallest balance first, for a motivating quick win. Pick whichever you'll actually stick with — the best debt-payoff plan is simply the one you don't abandon halfway through.",
+      "props": [
+        {
+          "name": "snowball",
+          "label": "avalanche vs snowball"
+        },
+        {
+          "name": "scissors",
+          "label": "highest rate or smallest first"
+        },
+        {
+          "name": "smiley",
+          "label": "the one you'll stick to"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "pose": "present",
+      "narration": "Start by calculating your own debt-to-income ratio: your monthly debt payments divided by your monthly income. Under about thirty-six percent is healthy; past forty-three, lenders get nervous and so should you. That one number tells you, honestly, how much of your life is already pledged to the past. Everyone should know it, and almost nobody does.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "debts ÷ income"
+        },
+        {
+          "name": "percent",
+          "label": "keep it under ~36%"
+        },
+        {
+          "name": "warning",
+          "label": "know your number"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And build the one thing debt steals: a buffer. Debt is dangerous mainly because it leaves no room for shocks. An emergency fund, even a small one, is what lets you keep paying through a job loss or a surprise bill without spiraling into more borrowing. The indebted who survive crises are almost always the ones who kept a little cash between themselves and the edge.",
+      "props": [
+        {
+          "name": "safetynet",
+          "label": "keep a buffer"
+        },
+        {
+          "name": "jar",
+          "label": "cash absorbs shocks"
+        },
+        {
+          "name": "smiley",
+          "label": "buffer beats the spiral"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "present",
+      "narration": "Then sort your debt. Attack the bad debt — credit cards and high-interest consumer loans — with everything you've got, because that's the debt actively making you poorer. Be comfortable with sensible good debt, like an affordable mortgage, that's buying a real asset. The goal was never zero debt. It's owning more than you owe, with the right kind of debt in between.",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "kill the bad debt"
+        },
+        {
+          "name": "house",
+          "label": "keep sensible good debt"
+        },
+        {
+          "name": "scale",
+          "label": "own more than you owe"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "present",
+      "narration": "And borrow for your future self, not against them. Before taking on any new debt, ask one question: will this still be paying me back long after the payments end? A home, an education that raises your income, a tool that earns — yes. A nicer car, a vacation, a gadget on a card — no. That single question quietly sorts the debt that builds lives from the debt that wrecks them.",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "borrow for your future self"
+        },
+        {
+          "name": "chartup",
+          "label": "will it still pay you back?"
+        },
+        {
+          "name": "scale",
+          "label": "builds vs wrecks"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. A country, or a person, drowning in debt can look identical to a wealthy one right up until the moment the bill comes due. Debt borrows prosperity from tomorrow to spend today — and the ranking we just saw is really a map of who will struggle most when tomorrow arrives. Watch the debt, not just the lifestyle. It tells you who's actually rich, and who only looks it.",
+      "props": [
+        {
+          "name": "debtclock",
+          "label": "debt hides fragility"
+        },
+        {
+          "name": "hourglass",
+          "label": "borrowed from tomorrow"
+        },
+        {
+          "name": "scale",
+          "label": "rich vs looks rich"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the quiet trade every borrower makes. Debt is simply time travel for money: it moves future earnings into the present. Used to buy an asset that outgrows the interest, that time travel makes you richer. Used to buy things that vanish, it makes your future self poorer to please your present self. The whole game is making sure the trade is worth it.",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "debt = time travel for money"
+        },
+        {
+          "name": "chartup",
+          "label": "worth it if the asset outgrows it"
+        },
+        {
+          "name": "warning",
+          "label": "else: robbing your future self"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this changed how you see debt — yours and the world's — hit subscribe, and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "debtclock",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-hhdebt",
+      "name": "Household debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_debt",
+      "quote": "the combined debt of all people in a household"
+    },
+    {
+      "id": "wiki-dti",
+      "name": "Debt-to-income ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt-to-income_ratio",
+      "quote": "monthly gross income that goes toward paying debts"
+    },
+    {
+      "id": "wiki-consumerdebt",
+      "name": "Consumer debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_debt",
+      "quote": "debt which is used to fund consumption rather than investment"
+    },
+    {
+      "id": "wiki-debt",
+      "name": "Debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt",
+      "quote": "to pay money borrowed or otherwise withheld from another party"
+    },
+    {
+      "id": "wiki-deleverage",
+      "name": "Deleveraging (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deleveraging",
+      "quote": "the reduction of the leverage ratio"
+    }
+  ],
+  "youtube": {
+    "title": "Every Country Ranked by Household Debt",
+    "alts": [
+      "Which Countries' Households Owe the Most?",
+      "The Most Indebted Countries on Earth (and Why It's the Rich Ones)"
+    ],
+    "hook": "In some of the richest countries on Earth, the average household owes more than twice everything it earns in a year — in others, families owe barely half their income. This is every major country ranked by household debt, and who's living closest to the edge. We rank household debt as a share of income (Switzerland, the Netherlands, Australia and Canada top 200%+, while much of southern/eastern Europe sits under 60%), explain the debt-to-income ratio, and reveal the surprise: heavy household debt usually isn't poverty — it's expensive housing plus easy mortgage credit in wealthy nations. Then the crucial divide between good debt (a mortgage or student loan buying an asset that grows) and bad debt (consumer debt that funds consumption, not investment, at crushing interest), how household debt — not government debt — lit the fuse of 2008 and nearly every crisis like it, the brutal deleveraging hangover, and the modern rate-rise trigger that hits Canada and Australia hardest. Plus how to read your own number: calculate your DTI (keep it under ~36%), kill the bad debt, keep sensible good debt, and build a buffer. Fully cited.",
+    "bullets": [
+      "Household debt ranked: ~200%+ (Netherlands) vs ~60% (Italy)",
+      "Why the richest countries are often the most indebted",
+      "Good debt (an asset) vs bad debt (consumption)",
+      "How household debt lit the fuse of 2008",
+      "The rate-rise trigger hitting Canada & Australia",
+      "Read your own number: DTI, kill bad debt, keep a buffer"
+    ],
+    "tags": [
+      "household debt",
+      "debt by country",
+      "debt to income ratio",
+      "consumer debt",
+      "good debt vs bad debt",
+      "most indebted countries",
+      "credit card debt",
+      "mortgage debt",
+      "2008 crisis",
+      "deleveraging",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#debt",
+      "#householddebt",
+      "#economics",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "WHO OWES THE",
+      "hookBot": "MOST?",
+      "napkinNumber": "200%+",
+      "napkinSub": "household debt vs income, by country",
+      "deco": "debtclock"
+    },
+    "chapters": [
+      [
+        "what 'household debt' actually measures",
+        "The debt load"
+      ],
+      [
+        "rank the world by household debt",
+        "The ranking"
+      ],
+      [
+        "good debt versus bad",
+        "Good vs bad debt"
+      ],
+      [
+        "why this ranking really matters",
+        "The debt bomb"
+      ],
+      [
+        "read your own number",
+        "What to do"
+      ]
+    ]
+  }
+}

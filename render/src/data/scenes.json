@@ -3,205 +3,205 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "The average American keeps most of their wealth in stocks. The average Japanese keeps it in cash. The average Indian keeps it in gold. Same goal — security and a better future — but three completely different bets, and over decades, three wildly different outcomes. Today we rank how the average person actually holds their money around the world, and reveal which choice quietly makes a country richer.",
+    "narration": "In some of the richest countries on Earth, the average household owes more than twice everything it earns in a year. In others, families owe barely half their income. That single number — how much a nation's households are borrowed up to the hilt — quietly decides which economies are fragile and which can weather a storm. Today we rank every major country by household debt, and reveal who's living closest to the edge.",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "US: stocks"
+        "name": "debtclock",
+        "label": "2× income owed"
       },
       {
-        "name": "banknote",
-        "label": "Japan: cash"
+        "name": "scale",
+        "label": "every country ranked"
       },
       {
-        "name": "goldbar",
-        "label": "India: gold"
+        "name": "warning",
+        "label": "who's on the edge"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the split that shapes nations. In the United States, around forty percent of household wealth sits in stocks. In Japan, more than half sits in cash earning almost nothing. That single difference in where people park their money compounds, over a lifetime, into one of the biggest wealth gaps between populations on Earth.",
-    "text": "40% vs 0%",
-    "sub": "US wealth in stocks vs Japan's return on cash",
-    "icon": "stockscreen"
+    "narration": "Here's the gap that stuns people. In the most indebted countries — the Netherlands, Australia, Switzerland, Canada — households owe around two hundred percent of their yearly income, or more. In others, like much of southern and eastern Europe, it's under sixty. Same idea of a middle-class family, three times the debt load, depending on the flag.",
+    "text": "200% vs 60%",
+    "sub": "household debt as a share of income, by country",
+    "icon": "debtclock"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we break down the asset mix of the average person by country, explain why stocks, cash, and gold produce such different fates, expose the quiet trap of holding cash, decode the cultures that hoard gold, and show what the data says you should actually own. Because it's not how much you earn that builds wealth. It's what you hold it in.",
+    "narration": "So today we rank the world by household debt, break down what all that borrowing is actually for, explain why some debt builds wealth while other debt destroys it, trace how household debt quietly triggers the biggest crises in history, and show how to read your own number. Because a country's debt load, and yours, is one of the clearest predictors of financial trouble there is.",
     "props": [
       {
-        "name": "pie",
-        "label": "the asset mix by country"
+        "name": "scale",
+        "label": "rank the countries"
+      },
+      {
+        "name": "house",
+        "label": "good vs bad debt"
       },
       {
         "name": "warning",
-        "label": "the cash trap"
-      },
-      {
-        "name": "chartup",
-        "label": "what to actually own"
+        "label": "debt and crises"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/drake.jpg",
-    "meme": "Drake Hotline Bling",
-    "memeTop": "keep your life savings safe in cash",
-    "memeBottom": "own productive assets that grow",
-    "narration": "Because the safest-feeling choice — piling up cash — is often the one that quietly makes you poorer every year. Before we rank the countries, let's define what people are actually choosing between."
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "debt is always bad",
+    "memeBottom": "some debt builds wealth, some debt destroys it",
+    "narration": "Because not all debt is created equal — a mortgage and a maxed-out credit card are opposites wearing the same word. Before we rank the countries, let's define what household debt really is."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the three places people stash their wealth.",
-    "heading": "Stocks, Cash, Gold",
-    "kicker": "three different bets"
+    "narration": "First, what 'household debt' actually measures.",
+    "heading": "The Debt Load",
+    "kicker": "what a nation owes"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-wealth",
-    "narration": "Wealth itself is simply the abundance of valuable financial assets or physical possessions. But the form it takes matters enormously. A million dollars in stocks, a million in cash, and a million in gold are worth the same today — and will be worth dramatically different amounts in thirty years. Wealth isn't just how much you have. It's what shape you keep it in."
+    "sourceId": "wiki-hhdebt",
+    "narration": "Household debt is the combined debt of all people in a household, including mortgages, car loans, student loans, and credit cards. Add it up across a whole country and compare it to income, and you get a powerful gauge of financial health. The research is blunt that a sharp rise in this number has preceded many of history's worst economic crises."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And most of the world forgets the biggest asset of all: a home. For the average household almost everywhere, property is the single largest holding — often more than stocks, cash, and gold combined. But a home you live in is tricky: it's shelter and an asset at once. Today we're focused on the liquid savings — the stocks, cash, and gold — where people's choices differ the most.",
+    "narration": "And household debt is different from the government debt you usually hear about. A country can have modest national debt but households drowning in private loans — or the reverse. This is the one that lands directly on families: the mortgage payment, the car loan, the credit-card minimum. When economists want to know if ordinary people are in trouble, this is the number they watch first.",
     "props": [
       {
         "name": "house",
-        "label": "property is the biggest slice"
+        "label": "private, not government debt"
       },
       {
         "name": "warning",
-        "label": "home = shelter + asset"
+        "label": "it lands on families"
       },
       {
-        "name": "scale",
-        "label": "we focus on liquid savings"
+        "name": "debtclock",
+        "label": "economists watch it first"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-finasset",
-    "narration": "Stocks and bonds are financial assets — a non-physical asset whose value is derived from a contractual claim. When you own a stock, you own a real slice of a real business that grows, earns, and pays you over time. That's the key: productive assets work for you, generating returns, while cash and gold mostly just sit there, waiting."
+    "sourceId": "wiki-dti",
+    "narration": "The key measure is the debt-to-income ratio — the monthly gross income that goes toward paying debts. At the household level, it tells a lender how stretched you are. At the national level, it tells you how much of a population's paycheck is already spoken for before they buy anything. The higher it climbs, the less cushion a family, or a country, has when trouble hits."
   },
   {
     "id": "s51",
     "type": "character",
     "pose": "explain",
-    "narration": "The word that captures it is productive. A productive asset puts your money to work: a company hires, builds, and sells; a bond funds projects that pay interest. Your wealth earns while you sleep. An unproductive store of value — cash under a mattress, gold in a safe — just holds a place. Both can be smart in moderation, but only productive assets quietly grow your pile for you.",
+    "narration": "And the ratio matters more than the raw dollar amount. A family owing half a million on a mortgage but earning three hundred thousand is fine; a family owing fifty thousand on credit cards while earning forty is in crisis. The number that predicts trouble isn't how much you owe — it's how big your debt is next to what you bring in. That ratio is the whole story.",
     "props": [
       {
-        "name": "factory",
-        "label": "productive = money works"
+        "name": "scale",
+        "label": "ratio beats raw dollars"
       },
       {
-        "name": "goldbar",
-        "label": "unproductive = money waits"
+        "name": "paystub",
+        "label": "debt vs income"
       },
       {
-        "name": "chartup",
-        "label": "only one grows for you"
+        "name": "warning",
+        "label": "small debt can be a crisis"
       }
     ]
   },
   {
     "id": "s52",
     "type": "callout",
-    "narration": "Here's the compounding gap in plain numbers. Historically, a broad stock market returns around seven percent a year after inflation; cash returns roughly zero. Over thirty years, seven percent turns one dollar into almost eight. Zero turns one dollar into one. That's the entire difference between stocks and cash — not luck, just time doing its work.",
-    "text": "$8 vs $1",
-    "sub": "stocks vs cash over 30 years, after inflation",
-    "icon": "chartup"
+    "narration": "Here's the US snapshot most people never see added up. American households together owe over seventeen trillion dollars — roughly twelve trillion in mortgages, and the rest in student loans, auto loans, and credit cards. It's a debt the size of a major economy, carried on millions of ordinary kitchen tables.",
+    "text": "$17T",
+    "sub": "total US household debt — mortgages, autos, cards, loans",
+    "icon": "debtclock"
   },
   {
     "id": "s8",
     "type": "character",
     "pose": "explain",
-    "narration": "So the three choices are really three different relationships with your money. Stocks are an ownership stake that compounds and grows. Cash is a parked claim that slowly erodes to inflation. And gold is an ancient store of value that holds, but doesn't produce. Each feels like saving — but only one of them reliably builds wealth over the long run.",
+    "narration": "So a high debt-to-income number isn't automatically a disaster — but it is fragility. A country where households owe two hundred percent of income can look rich and comfortable while the economy hums. But the moment interest rates rise or jobs disappear, all that debt turns from a convenience into a trap, fast. Debt is a loan against the future, and the future always eventually arrives.",
     "props": [
       {
-        "name": "stockscreen",
-        "label": "stocks: grow"
+        "name": "scale",
+        "label": "high debt = fragility"
       },
       {
-        "name": "banknote",
-        "label": "cash: erode"
+        "name": "warning",
+        "label": "fine until rates rise"
       },
       {
-        "name": "goldbar",
-        "label": "gold: hold"
+        "name": "hourglass",
+        "label": "a loan against the future"
       }
     ]
   },
   {
     "id": "s42",
     "type": "callout",
-    "narration": "Put the long-run gap in one number. Over the last century, a dollar in US stocks grew into hundreds of dollars after inflation. The same dollar held as cash lost most of its purchasing power. Gold roughly held its value. Same starting dollar, same decades — and the ending amounts aren't close.",
-    "text": "100s vs ~1",
-    "sub": "$1 in stocks vs cash over a century, after inflation",
-    "icon": "chartup"
+    "narration": "Here's the leverage in one stark fact. In the most indebted countries, households owe more than two dollars for every single dollar they earn in a year. It would take them over two years of income, spending nothing on food, rent, or anything else, just to pay off what they already owe. That's how stretched the top of this ranking really is.",
+    "text": "2+ years",
+    "sub": "of total income to clear the debt in top countries",
+    "icon": "debtclock"
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's rank how the average person holds wealth by country.",
+    "narration": "So let's rank the world by household debt.",
     "heading": "The Ranking",
-    "kicker": "the asset mix"
+    "kicker": "debt-to-income by country"
   },
   {
     "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "One honest note before the ranking: these are averages, and averages hide huge inequality. In every country, a small slice of wealthy households owns most of the stocks, while typical families hold far less. So 'the average American owns lots of stock' really means the wealthy do. Still, the national mix shapes who even has the chance to build wealth that way.",
+    "narration": "One caution reading this ranking: a low number isn't automatically healthy. Some countries have little household debt simply because credit is hard to get, or because people are too poor to borrow. A thriving middle class with sensible mortgages can look more indebted than a struggling population with no access to loans at all. Context, as always, decides what the number means.",
     "props": [
       {
         "name": "warning",
-        "label": "averages hide inequality"
-      },
-      {
-        "name": "stockscreen",
-        "label": "the wealthy own most stock"
+        "label": "low debt ≠ always healthy"
       },
       {
         "name": "scale",
-        "label": "the mix shapes the chance"
+        "label": "no credit access vs choice"
+      },
+      {
+        "name": "globe",
+        "label": "context decides"
       }
     ]
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "assetmixbars",
-    "caption": "share of household wealth in stocks, by country",
-    "narration": "Here's how much of household wealth sits in stocks, country by country. The United States leads by a mile, around forty percent — Americans are, by global standards, obsessed with the stock market. Sweden and the Netherlands follow. Then it drops sharply: Britain, Germany, and especially Japan hold far less in stocks and far more in cash. Same wealth, radically different engines underneath it."
+    "motif": "debtbycountrybars",
+    "caption": "household debt as a share of income, by country",
+    "narration": "Here's the global leaderboard of borrowing. At the top: Switzerland, the Netherlands, Australia, and Canada, where households owe around two hundred percent of their income — often because of enormous mortgages on expensive homes. The US and UK sit lower, around a hundred. And much of southern and eastern Europe anchors the bottom, under sixty. The richest-looking countries are frequently the most leveraged."
   },
   {
     "id": "s54",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice the pattern in the ranking: the stock-heavy countries tend to be the ones whose households got richer fastest over recent decades. It isn't a coincidence. When a nation's savings own a slice of its growing companies, the people share directly in that growth. When savings sit in cash, the growth happens around them, and they just watch.",
+    "narration": "And watch the trend, not just the level. A country whose household debt is still climbing fast is in a different place from one that's slowly paying down. Rapid, recent increases in borrowing are the real red flag economists hunt for — because it's the speed of the build-up, more than the size, that tends to precede a reckoning.",
     "props": [
       {
         "name": "chartup",
-        "label": "stock-heavy = richer faster"
-      },
-      {
-        "name": "stockscreen",
-        "label": "savings share the growth"
+        "label": "watch the trend"
       },
       {
         "name": "warning",
-        "label": "cash just watches"
+        "label": "fast build-up = red flag"
+      },
+      {
+        "name": "scale",
+        "label": "speed, not just size"
       }
     ]
   },
@@ -209,33 +209,33 @@
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Household wealth held in stocks (%)",
+    "title": "Household debt as % of net income",
     "unit": "%",
-    "narration": "Put the numbers side by side. India around five percent in stocks, Japan and Germany near ten, the UK about twenty, Sweden thirty, and the US a towering forty. The American willingness to own stocks — through retirement accounts and brokerages — is historically unusual. And over the last century, it's a huge reason American households, on average, grew so wealthy.",
+    "narration": "Put the numbers in a row. Italy around sixty percent, Germany eighty-five, the US near a hundred, the UK a hundred and thirty, Canada one eighty-five, and the Netherlands and Australia over two hundred. The surprise for most people is that heavy household debt isn't a sign of poverty — it's often a sign of expensive housing and easy credit in wealthy nations.",
     "data": [
       {
-        "label": "India",
-        "value": 5
-      },
-      {
-        "label": "Japan",
-        "value": 10
+        "label": "Italy",
+        "value": 60
       },
       {
         "label": "Germany",
-        "value": 12
-      },
-      {
-        "label": "UK",
-        "value": 20
-      },
-      {
-        "label": "Sweden",
-        "value": 30
+        "value": 85
       },
       {
         "label": "US",
-        "value": 40
+        "value": 100
+      },
+      {
+        "label": "UK",
+        "value": 130
+      },
+      {
+        "label": "Canada",
+        "value": 185
+      },
+      {
+        "label": "Netherlands",
+        "value": 210
       }
     ],
     "highlight": 5
@@ -244,278 +244,278 @@
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And the American stock habit isn't really about being braver — it's about plumbing. Automatic workplace retirement plans quietly funnel tens of millions of ordinary Americans into the stock market every payday, whether they think about it or not. Countries without that default, where saving means a bank account, end up cash-heavy by design. The system nudges the whole nation's asset mix.",
+    "narration": "And notice why the leaders are where they are. The Netherlands, Australia, Canada, and Switzerland all share expensive housing markets and easy mortgage credit. Their debt isn't reckless spending — it's the price of chasing a home in a pricey market. The ranking is, to a large degree, a map of where housing got most unaffordable, financed.",
     "props": [
       {
-        "name": "paystub",
-        "label": "auto retirement plans"
+        "name": "house",
+        "label": "expensive housing markets"
       },
       {
-        "name": "stockscreen",
-        "label": "nudged into stocks"
+        "name": "mappin",
+        "label": "pricey homes, big mortgages"
       },
       {
-        "name": "globe",
-        "label": "the system sets the mix"
+        "name": "scale",
+        "label": "a map of unaffordability"
       }
     ]
   },
   {
     "id": "s12",
     "type": "stage",
-    "motif": "cashtraplines",
-    "caption": "stocks grow; cash erodes",
-    "narration": "And here's why that mix matters so much, drawn over time. A dollar in stocks has historically grown many times over across decades. A dollar in cash, after inflation, has lost value nearly every year. So a country that holds stocks rides a rising line for generations, while a country that hoards cash watches its savings quietly shrink. Same discipline, opposite destinations."
+    "motif": "debttypessplit",
+    "caption": "what the borrowing is actually for",
+    "narration": "But the raw number hides the most important thing: what the debt is for. In the heavily indebted countries, the vast majority is mortgage debt — borrowing to own a home that, hopefully, holds or grows in value. A much smaller slice is consumer debt: credit cards, car loans, and buy-now-pay-later. One of these builds a future. The other quietly dismantles it."
   },
   {
     "id": "s44",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "save money in the bank",
-    "memeBottom": "own pieces of the companies the bank invests in",
-    "narration": "This is the mental leap that separates savers from investors. The cautious saver hands their cash to a bank — which then invests it in the very assets the saver was too nervous to own, and keeps most of the gains. You can either lend your money to the system, or own a piece of it."
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the composition flips the risk entirely. A country that's heavily indebted but almost all in mortgages, on homes people actually live in, is far safer than one with lots of credit-card and consumer debt at the same total. Mortgage debt is backed by an asset and usually lower-interest. Consumer debt is backed by nothing and charges a fortune. Always ask not just how much, but what kind.",
+    "props": [
+      {
+        "name": "house",
+        "label": "mortgage: backed, cheap"
+      },
+      {
+        "name": "creditcard",
+        "label": "consumer: unbacked, costly"
+      },
+      {
+        "name": "scale",
+        "label": "ask what kind, not just how much"
+      }
+    ]
   },
   {
     "id": "s13",
     "type": "title",
-    "narration": "Which exposes the most expensive safe choice in the world: cash.",
-    "heading": "The Cash Trap",
-    "kicker": "safe but shrinking"
+    "narration": "Which brings us to the great divide: good debt versus bad.",
+    "heading": "Good vs Bad Debt",
+    "kicker": "not all debt is equal"
   },
   {
     "id": "s55",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "keep it 100% safe in cash",
-    "memeBottom": "let inflation quietly eat it every year",
-    "narration": "This is the false choice the cash trap sells you. 'Safe' cash feels like the responsible button — but pressing it guarantees a slow loss to inflation. There is no truly risk-free option; there's only visible risk you fear and invisible risk you ignore. Cash just hides the risk where you won't look."
+    "type": "character",
+    "pose": "explain",
+    "narration": "There's even a third category worth naming: in-between debt. A car loan buys something you genuinely need but that loses value fast. A student loan for a low-paying field is a bet that didn't pay off. Not all borrowing is cleanly good or bad — much of it depends entirely on the price you paid and the return you got. The label 'good debt' has to be earned, not assumed.",
+    "props": [
+      {
+        "name": "car",
+        "label": "needed, but depreciates"
+      },
+      {
+        "name": "gradcap",
+        "label": "depends on the payoff"
+      },
+      {
+        "name": "scale",
+        "label": "'good debt' must be earned"
+      }
+    ]
   },
   {
     "id": "s14",
     "type": "screenshot",
-    "sourceId": "wiki-diversification",
-    "narration": "Smart investing relies on diversification — the process of allocating capital in a way that reduces the exposure to any one particular asset or risk. But cash-heavy savers get this backwards. Piling everything into cash feels like safety, yet it concentrates you in the one asset guaranteed to lose to inflation over time. The safest-feeling choice is, in the long run, one of the riskiest."
+    "sourceId": "wiki-consumerdebt",
+    "narration": "The dangerous kind is consumer debt — debt which is used to fund consumption rather than investment. It's money borrowed for things that lose value the moment you own them: restaurant meals, gadgets, vacations, financed on a card at crushing interest. This debt doesn't build anything. It just pulls your future spending into the present, and charges you brutally for the privilege."
+  },
+  {
+    "id": "s45",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "borrow to buy an asset that grows",
+    "memeBottom": "borrow to buy stuff that's worthless by morning",
+    "narration": "This is the fork that decides whether debt lifts you or sinks you. The exact same act — borrowing money — builds wealth on one path and destroys it on the other. The word 'debt' tells you nothing. What you bought with it tells you everything."
   },
   {
     "id": "s15",
     "type": "character",
     "pose": "explain",
-    "narration": "This is the cash trap, and whole countries fall into it. In Japan and much of Europe, deep cultural caution after past crises keeps households in cash and bonds, out of stocks. It feels responsible. But over thirty years, that caution can cost a family a fortune in missed growth. Avoiding the stock market's bumps means avoiding its enormous long-run climb, too.",
+    "narration": "Contrast that with a mortgage or a student loan for a high-paying field. That's borrowing to acquire an asset — a home, or earning power — that can grow and pay you back over time. The debt is large, but it's working for you. The country that owes two hundred percent in mortgages is in a very different position from one drowning in credit-card balances, even at the same total.",
     "props": [
       {
-        "name": "banknote",
-        "label": "cultural caution = cash"
+        "name": "house",
+        "label": "mortgage = an asset"
       },
       {
-        "name": "chartdown",
-        "label": "misses the long climb"
+        "name": "chartup",
+        "label": "debt that works for you"
       },
       {
-        "name": "warning",
-        "label": "caution has a cost"
+        "name": "scale",
+        "label": "same total, different risk"
       }
     ]
   },
   {
-    "id": "s45",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And inflation is the silent thief that makes the cash trap so cruel. At just three percent inflation, cash loses about half its purchasing power in twenty-four years. Your bank balance looks identical, even grows a little — but what it can actually buy quietly halves. Cash doesn't fail with a crash. It fails invisibly, one quiet year at a time.",
-    "props": [
-      {
-        "name": "banknote",
-        "label": "half its value in ~24 yrs"
-      },
-      {
-        "name": "warning",
-        "label": "the silent thief"
-      },
-      {
-        "name": "chartdown",
-        "label": "fails invisibly"
-      }
-    ]
+    "id": "s56",
+    "type": "image",
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "minimum payments on five maxed-out cards",
+    "memeBottom": "this is fine",
+    "narration": "For households deep in high-interest consumer debt, this is the quiet treadmill: paying every month, watching the balance barely move, as interest eats most of each payment. It isn't a spending problem you can shrug off — it's a trap engineered to keep you paying forever. Recognizing it is the first step off the treadmill."
   },
   {
     "id": "s16",
     "type": "title",
-    "narration": "And then there's the oldest asset of all: gold.",
-    "heading": "The Gold Cultures",
-    "kicker": "holding, not growing"
+    "narration": "And here's why this ranking really matters: crises.",
+    "heading": "The Debt Bomb",
+    "kicker": "how it blows up"
   },
   {
-    "id": "s56",
+    "id": "s57",
     "type": "character",
     "pose": "explain",
-    "narration": "And gold's appeal spikes in exactly the scary moments stocks wobble. When wars, inflation, or banking crises hit, money floods into gold as a safe haven, and its price jumps. That's its real job — insurance for chaos, not an engine for growth. Owning a little makes sense. Owning most of your wealth in it means betting your whole future on permanent disaster.",
+    "narration": "And debt crises have a terrifying feature: they're contagious. When overindebted households stop paying, banks take losses, so they lend less, so businesses cut jobs, so more households can't pay. One group's debt problem becomes everyone's economic problem. That chain reaction is why a number on a spreadsheet about private borrowing can end up on the front page as a global recession.",
     "props": [
       {
-        "name": "goldbar",
-        "label": "safe haven in chaos"
-      },
-      {
-        "name": "shield",
-        "label": "insurance, not an engine"
+        "name": "domino",
+        "label": "debt crises are contagious"
       },
       {
         "name": "warning",
-        "label": "all-gold = betting on disaster"
+        "label": "one group infects all"
+      },
+      {
+        "name": "chartdown",
+        "label": "private debt → global slump"
       }
     ]
   },
   {
     "id": "s17",
     "type": "screenshot",
-    "sourceId": "wiki-gold",
-    "narration": "In much of Asia and the Middle East, investors generally buy gold as a way of diversifying risk — and of storing family wealth across generations. In India and China especially, gold isn't just an investment; it's woven into weddings, festivals, and culture. Households there can hold a staggering share of their savings as physical gold, tucked away rather than invested."
+    "sourceId": "wiki-debt",
+    "narration": "At its core, debt is an obligation that requires you to pay money borrowed or otherwise withheld from another party. That obligation doesn't care about your circumstances. When a whole nation's households are maxed out and a shock hits — a rate hike, a recession, a housing dip — millions can't pay at once. That synchronized failure is exactly how household debt turns into a national catastrophe."
   },
   {
     "id": "s46",
     "type": "character",
     "pose": "explain",
-    "narration": "And it's easy to see why gold cultures distrust paper money — they earned that distrust. India, China, and much of the Middle East lived through currency collapses, colonial upheaval, and hyperinflations that wiped out cash savings overnight. Gold survived every one of them. When your grandparents watched paper money turn to confetti, trusting a metal you can hold isn't superstition. It's memory.",
+    "narration": "And the cruelest feature of debt is that it's rigid while life is not. Your income can fall, your hours can get cut, a recession can hit — but the loan payment stays exactly the same. That rigidity is why debt amplifies every downturn. In good times it's invisible; in bad times, it's the thing that turns a rough patch into a catastrophe.",
     "props": [
       {
-        "name": "goldbar",
-        "label": "gold survived collapses"
+        "name": "warning",
+        "label": "debt is rigid"
       },
       {
-        "name": "banknote",
-        "label": "paper money betrayed them"
+        "name": "chartdown",
+        "label": "income can fall, payment can't"
       },
       {
-        "name": "globe",
-        "label": "distrust is memory"
+        "name": "bomb",
+        "label": "it amplifies downturns"
       }
     ]
   },
   {
     "id": "s18",
     "type": "stage",
-    "motif": "goldculture",
-    "caption": "where the world hoards its gold",
-    "narration": "The scale is astonishing. Indian households alone are estimated to hold more gold than the official reserves of most national governments — thousands of tonnes, passed down through families. Gold has real virtues: it survives inflation, crises, and collapsing currencies, which is exactly why cultures that lived through those traumas trust it. But it has one catch that defines its whole story."
+    "motif": "debtcrisiscurve",
+    "caption": "debt climbs, then the crash",
+    "narration": "This is the pattern behind two thousand eight and nearly every crisis like it. Household debt climbs for years as credit gets easy and home prices soar. Everyone feels wealthy. Then rates rise or prices wobble, the borrowing can't be sustained, and the whole thing snaps. The higher a country let household debt climb, the harder and faster that snap tends to be."
   },
   {
     "id": "s47",
     "type": "callout",
-    "narration": "Here's the gold-hoard stat that stuns economists. Private households in India are estimated to hold on the order of twenty-five thousand tonnes of gold — worth well over a trillion dollars, and more than the reserves of the world's largest central banks. An entire nation's savings, sitting in jewelry boxes and safes instead of markets.",
-    "text": "25,000 tonnes",
-    "sub": "gold held by Indian households alone",
-    "icon": "goldbar"
+    "narration": "Say the 2008 lesson plainly. US household debt climbed to record highs on easy mortgages in the mid-two-thousands — then home prices fell, millions couldn't pay, and the synchronized collapse nearly took down the entire global financial system. It wasn't government debt that lit the fuse. It was households, borrowed to the limit, all breaking at once.",
+    "text": "2008",
+    "sub": "household debt, not government debt, lit the fuse",
+    "icon": "bomb"
   },
   {
     "id": "s19",
-    "type": "character",
-    "pose": "explain",
-    "narration": "That catch: gold doesn't produce anything. A share of a company earns profits and pays dividends; a bond pays interest; a rental property collects rent. Gold just sits in a vault, worth whatever the next person will pay. It holds value beautifully, but it doesn't compound. Over long stretches, stocks have left gold far behind — because a business works, and a metal only waits.",
-    "props": [
-      {
-        "name": "goldbar",
-        "label": "gold just sits"
-      },
-      {
-        "name": "stockscreen",
-        "label": "a business works"
-      },
-      {
-        "name": "chartup",
-        "label": "stocks leave it behind"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-deleverage",
+    "narration": "The painful cure is deleveraging — the reduction of the leverage ratio, as households scramble to pay down debt all at once. But when everyone stops spending to pay off loans simultaneously, the economy seizes up. It's a brutal, years-long hangover. The highly indebted countries aren't necessarily doomed — but they're the ones with the least room to maneuver when the music stops."
   },
   {
     "id": "s48",
     "type": "character",
     "pose": "explain",
-    "narration": "And this is the quiet cost of a gold-heavy culture. All that wealth, locked in metal, isn't funding businesses, factories, or innovation. It just sits. Economists argue that if even a fraction of hoarded household gold flowed into productive investment, it could transform an economy. Gold protects the family — but it doesn't build the future the way owning enterprises does.",
+    "narration": "And rising interest rates are the modern trigger to watch. Much of that two-hundred-percent debt sits on variable-rate or soon-to-reset mortgages. When central banks hike rates, those payments jump, sometimes by hundreds a month, with no warning. Highly indebted countries like Canada and Australia are especially exposed — their households feel every rate rise almost immediately.",
     "props": [
       {
-        "name": "goldbar",
-        "label": "wealth locked in metal"
+        "name": "chartup",
+        "label": "rates reset mortgages up"
       },
       {
         "name": "warning",
-        "label": "funds nothing"
+        "label": "payments jump overnight"
       },
       {
-        "name": "factory",
-        "label": "enterprises build the future"
+        "name": "mappin",
+        "label": "Canada, Australia exposed"
       }
     ]
   },
   {
     "id": "s20",
     "type": "title",
-    "narration": "So what does all this say you should actually own?",
+    "narration": "So how do you read your own number — and stay safe?",
     "heading": "What To Do",
-    "kicker": "the winning mix"
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And crypto now sits awkwardly in this picture as a new contender. Younger savers, especially in high-inflation countries, increasingly hold some wealth in Bitcoin as a kind of digital gold — scarce, borderless, beyond any government's printing press. It's far more volatile than gold, and unproven over the long run, but it's reshaping the asset mix of a whole generation in real time.",
-    "props": [
-      {
-        "name": "coins",
-        "label": "crypto as 'digital gold'"
-      },
-      {
-        "name": "warning",
-        "label": "far more volatile"
-      },
-      {
-        "name": "globe",
-        "label": "reshaping young portfolios"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "screenshot",
-    "sourceId": "wiki-allocation",
-    "narration": "The answer is good asset allocation — an investment strategy that attempts to balance risk versus reward by adjusting the percentage of each asset you hold. The data's lesson is clear: own productive assets, mostly stocks, for long-term growth. Keep enough cash for emergencies and near-term needs, but no more. And treat gold as a small insurance slice, not the core of your wealth."
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "pose": "present",
-    "narration": "And match the mix to your life stage, not your fears. Decades from retirement, you can hold mostly stocks and ride out the bumps, because time repairs them. Close to needing the money, you shift toward cash and bonds to protect it. The classic mistake is doing the opposite — timid in your twenties when you should be bold, reckless near the end when you should be safe.",
-    "props": [
-      {
-        "name": "hourglass",
-        "label": "young: mostly stocks"
-      },
-      {
-        "name": "shield",
-        "label": "near goal: more cash/bonds"
-      },
-      {
-        "name": "warning",
-        "label": "most people invert it"
-      }
-    ]
+    "kicker": "your personal ratio"
   },
   {
     "id": "s58",
     "type": "character",
     "pose": "present",
-    "narration": "And keep costs microscopic, because fees are the one headwind you fully control. A fund charging one percent a year sounds tiny, but over decades it can quietly eat a quarter of your returns. The cheapest broad index funds charge almost nothing. Choosing low-cost funds is a guaranteed raise on every dollar you invest, in any country.",
+    "narration": "And if you're carrying bad debt, use the two proven ways out. The avalanche method kills your highest-interest debt first, saving the most money. The snowball method clears your smallest balance first, for a motivating quick win. Pick whichever you'll actually stick with — the best debt-payoff plan is simply the one you don't abandon halfway through.",
     "props": [
       {
+        "name": "snowball",
+        "label": "avalanche vs snowball"
+      },
+      {
         "name": "scissors",
-        "label": "1% fee eats ~25%"
+        "label": "highest rate or smallest first"
       },
       {
-        "name": "stockscreen",
-        "label": "cheap index funds"
+        "name": "smiley",
+        "label": "the one you'll stick to"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "pose": "present",
+    "narration": "Start by calculating your own debt-to-income ratio: your monthly debt payments divided by your monthly income. Under about thirty-six percent is healthy; past forty-three, lenders get nervous and so should you. That one number tells you, honestly, how much of your life is already pledged to the past. Everyone should know it, and almost nobody does.",
+    "props": [
+      {
+        "name": "calculator",
+        "label": "debts ÷ income"
       },
       {
-        "name": "moneybag",
-        "label": "a guaranteed raise"
+        "name": "percent",
+        "label": "keep it under ~36%"
+      },
+      {
+        "name": "warning",
+        "label": "know your number"
+      }
+    ]
+  },
+  {
+    "id": "s49",
+    "type": "character",
+    "pose": "present",
+    "narration": "And build the one thing debt steals: a buffer. Debt is dangerous mainly because it leaves no room for shocks. An emergency fund, even a small one, is what lets you keep paying through a job loss or a surprise bill without spiraling into more borrowing. The indebted who survive crises are almost always the ones who kept a little cash between themselves and the edge.",
+    "props": [
+      {
+        "name": "safetynet",
+        "label": "keep a buffer"
+      },
+      {
+        "name": "jar",
+        "label": "cash absorbs shocks"
+      },
+      {
+        "name": "smiley",
+        "label": "buffer beats the spiral"
       }
     ]
   },
@@ -523,39 +523,39 @@
     "id": "s22",
     "type": "character",
     "pose": "present",
-    "narration": "So keep a few months of expenses in cash and stop there — extra cash beyond that is melting. Put the bulk of your long-term money into low-cost, diversified stock funds that own thousands of businesses at once. Add a small slice of gold if it helps you sleep. That simple mix quietly beats what the majority of the world's households actually do.",
+    "narration": "Then sort your debt. Attack the bad debt — credit cards and high-interest consumer loans — with everything you've got, because that's the debt actively making you poorer. Be comfortable with sensible good debt, like an affordable mortgage, that's buying a real asset. The goal was never zero debt. It's owning more than you owe, with the right kind of debt in between.",
     "props": [
       {
-        "name": "jar",
-        "label": "months of cash, no more"
+        "name": "scissors",
+        "label": "kill the bad debt"
       },
       {
-        "name": "stockscreen",
-        "label": "diversified stock funds"
+        "name": "house",
+        "label": "keep sensible good debt"
       },
       {
-        "name": "shield",
-        "label": "a small gold slice"
+        "name": "scale",
+        "label": "own more than you owe"
       }
     ]
   },
   {
-    "id": "s50",
+    "id": "s59",
     "type": "character",
     "pose": "present",
-    "narration": "And the single highest-impact move is just starting, in the right assets, now. You don't need to pick winning stocks or time the market — a broad, boring index fund owning the whole market has quietly beaten most experts for decades. The hard part was never the strategy. It's overcoming the very caution that keeps half the world sitting in cash.",
+    "narration": "And borrow for your future self, not against them. Before taking on any new debt, ask one question: will this still be paying me back long after the payments end? A home, an education that raises your income, a tool that earns — yes. A nicer car, a vacation, a gadget on a card — no. That single question quietly sorts the debt that builds lives from the debt that wrecks them.",
     "props": [
       {
-        "name": "seedling",
-        "label": "start now, broad index"
+        "name": "hourglass",
+        "label": "borrow for your future self"
       },
       {
         "name": "chartup",
-        "label": "beats most experts"
+        "label": "will it still pay you back?"
       },
       {
-        "name": "warning",
-        "label": "beat your own caution"
+        "name": "scale",
+        "label": "builds vs wrecks"
       }
     ]
   },
@@ -563,39 +563,39 @@
     "id": "s23",
     "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson. Two people, two countries, can earn and save the exact same amount — and end up decades apart in wealth, purely from what they held it in. Stocks built American fortunes. Cash quietly shrank Japanese ones. Gold preserved but didn't grow Asian ones. How much you save gets you in the game. What you hold decides whether you win it.",
+    "narration": "Because here's the real lesson. A country, or a person, drowning in debt can look identical to a wealthy one right up until the moment the bill comes due. Debt borrows prosperity from tomorrow to spend today — and the ranking we just saw is really a map of who will struggle most when tomorrow arrives. Watch the debt, not just the lifestyle. It tells you who's actually rich, and who only looks it.",
     "props": [
       {
+        "name": "debtclock",
+        "label": "debt hides fragility"
+      },
+      {
+        "name": "hourglass",
+        "label": "borrowed from tomorrow"
+      },
+      {
         "name": "scale",
-        "label": "same savings, different fate"
-      },
-      {
-        "name": "stockscreen",
-        "label": "what you hold decides"
-      },
-      {
-        "name": "chartup",
-        "label": "own productive assets"
+        "label": "rich vs looks rich"
       }
     ]
   },
   {
-    "id": "s59",
+    "id": "s50",
     "type": "character",
     "pose": "explain",
-    "narration": "And zoom out on the quiet unfairness of it all. Financial education, default retirement plans, and access to cheap stock funds decide a nation's asset mix as much as any culture does. People aren't cash-poor in wealth because they're foolish — often they were never shown the door to ownership. Learning this, and acting on it, is the closest thing to a free head start there is.",
+    "narration": "And zoom out on the quiet trade every borrower makes. Debt is simply time travel for money: it moves future earnings into the present. Used to buy an asset that outgrows the interest, that time travel makes you richer. Used to buy things that vanish, it makes your future self poorer to please your present self. The whole game is making sure the trade is worth it.",
     "props": [
       {
-        "name": "gradcap",
-        "label": "access & education decide it"
-      },
-      {
-        "name": "warning",
-        "label": "not foolishness — no door shown"
+        "name": "hourglass",
+        "label": "debt = time travel for money"
       },
       {
         "name": "chartup",
-        "label": "acting on it = a head start"
+        "label": "worth it if the asset outgrows it"
+      },
+      {
+        "name": "warning",
+        "label": "else: robbing your future self"
       }
     ]
   },
@@ -604,10 +604,10 @@
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this changed how you think about where your money lives, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this changed how you see debt — yours and the world's — hit subscribe, and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "stockscreen",
+        "name": "debtclock",
         "label": "which price tag next?"
       }
     ]

@@ -270,7 +270,9 @@ export interface StageScene extends Base {
     // EP102 (The Price Tag — fastest-growing cities) additions:
     | "boomcitybars" | "boompricecurve" | "boomtradeoffs"
     // EP103 (The Price Tag — assets by country) additions:
-    | "assetmixbars" | "cashtraplines" | "goldculture";
+    | "assetmixbars" | "cashtraplines" | "goldculture"
+    // EP104 (The Price Tag — household debt by country) additions:
+    | "debtbycountrybars" | "debttypessplit" | "debtcrisiscurve";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

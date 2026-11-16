@@ -7631,6 +7631,75 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={466} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a nation's savings — sitting in safes, not markets</text>
       </svg>
     );
+  } else if (m === "debtbycountrybars") {
+    // Household debt as % of income by country — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Italy", 60, green],
+      ["Germany", 85, "#9cc47f"],
+      ["US", 100, gold],
+      ["UK", 130, "#d98b5f"],
+      ["Canada", 185, "#c0583a"],
+      ["Netherlands", 210, red],
+    ];
+    const x0 = 270, xMax = 820, maxV = 210;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">household debt as a share of income</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{v}%</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the richest-looking countries are often the most leveraged</text>
+      </svg>
+    );
+  } else if (m === "debttypessplit") {
+    // Mortgage (good) vs consumer (bad) debt split.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={58} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what the borrowing is actually for</text>
+        <g transform="translate(330 300)" opacity={interpolate(grow, [0, 0.5], [0, 1], clampBoth)}>
+          <rect x={-150} y={-110} width={300} height={220} rx={14} fill="#cfe3d4" stroke={ink} strokeWidth={4} />
+          <text y={-62} fontSize={32} textAnchor="middle">🏠</text>
+          <text y={-10} fontSize={18} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">MORTGAGE</text>
+          <text y={22} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>buys an asset</text>
+          <text y={48} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>that can grow</text>
+          <text y={86} fontSize={15} fontWeight={900} fill={green} textAnchor="middle" fontFamily={sans}>builds a future</text>
+        </g>
+        <g transform="translate(700 300)" opacity={interpolate(grow, [0.4, 0.9], [0, 1], clampBoth)}>
+          <rect x={-150} y={-110} width={300} height={220} rx={14} fill="#f0d9cf" stroke={ink} strokeWidth={4} />
+          <text y={-62} fontSize={32} textAnchor="middle">💳</text>
+          <text y={-10} fontSize={18} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">CONSUMER</text>
+          <text y={22} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>buys things that</text>
+          <text y={48} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>lose value</text>
+          <text y={86} fontSize={15} fontWeight={900} fill={red} textAnchor="middle" fontFamily={sans}>dismantles it</text>
+        </g>
+      </svg>
+    );
+  } else if (m === "debtcrisiscurve") {
+    // Debt climbs for years, then the crash.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 140, x1 = 880, y0 = 430, yTop = 110;
+    const f = (t: number) => { const peak = 0.72; if (t < peak) return y0 - (y0 - yTop) * (0.2 + 1.0 * t); return y0 - (y0 - yTop) * (0.2 + 1.0 * peak) + (y0 - yTop) * 1.6 * (t - peak); };
+    const seg = Array.from({ length: 44 }).map((_, i) => { const t = (i / 43) * draw; const y = Math.min(y0, f(t)); return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${y}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">debt climbs for years — then it snaps</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={seg} fill="none" stroke={red} strokeWidth={6} />
+        <text x={x0 + (x1 - x0) * 0.4} y={yTop + 40} fontSize={14} fontWeight={900} fill={ink} fontFamily={sans}>easy credit, everyone feels rich</text>
+        <text x={x1 - 30} y={y0 - 24} fontSize={14} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>the crash</text>
+        <text x={VW / 2} y={y0 + 34} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the higher it climbed, the harder the fall</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
