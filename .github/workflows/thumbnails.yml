@@ -51,7 +51,9 @@ jobs:
         run: python tools/thumbs/build_manifest.py
 
       - name: Render thumbnails
-        run: node tools/thumbs/render_all.mjs ${{ inputs.topics }}
+        # Run via the @ff/render workspace so Node resolves @remotion/bundler
+        # + @remotion/renderer from render/node_modules (not the repo root).
+        run: pnpm --filter @ff/render exec node "$GITHUB_WORKSPACE/tools/thumbs/render_all.mjs" ${{ inputs.topics }}
 
       - name: List output
         if: always()
