@@ -172,8 +172,8 @@ def epid_for(num):
     if 1 <= num <= 14: return num + 10      # topics 1-14  -> EP011-EP024
     if num == 25:      return 25            # topic 25     -> EP025 (early)
     if 15 <= num <= 24: return num + 11     # topics 15-24 -> EP026-EP035
-    if 26 <= num <= 85: return num + 10     # topics 26-85 -> EP036-EP095
-    return None                              # 86-100 not yet built
+    if 26 <= num <= 100: return num + 10    # topics 26-100 -> EP036-EP110
+    return None
 
 def ep_thumb(num):
     epid = epid_for(num)
