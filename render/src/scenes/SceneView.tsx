@@ -7368,6 +7368,66 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the data costs the same — you pay for competition, or its absence</text>
       </svg>
     );
+  } else if (m === "doctorvisitbars") {
+    // Out-of-pocket cost of a routine visit by country — bars (handles $0).
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string, string][] = [
+      ["UK", 0, "$0", green],
+      ["Canada", 0, "$0", green],
+      ["Germany", 0, "$0", green],
+      ["Japan", 10, "~$10", "#9cc47f"],
+      ["US (insured)", 30, "~$30", "#d98b5f"],
+      ["US (uninsured)", 170, "~$170", red],
+    ];
+    const x0 = 300, xMax = 860, maxV = 170;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">out-of-pocket cost of a routine visit</text>
+        {rows.map(([lab, v, tag, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={14} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{tag}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same 15 minutes — only the bill changes</text>
+      </svg>
+    );
+  } else if (m === "erbillshock") {
+    // A basic ER visit: ~$0 abroad vs ~$2,000+ US.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const cols: [string, string, string][] = [["UK / Spain", "$0", green], ["Australia", "~$100", gold], ["Japan", "~$300", "#d98b5f"], ["United States", "$2,000+", red]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a basic ER visit, by country</text>
+        {cols.map(([lab, price, col], i) => {
+          const x = 200 + i * 230; const s = Math.min(1, spring({ frame, fps, delay: fps * (0.3 + i * 0.3), config: { damping: 12 } }));
+          return (
+            <g key={i} transform={`translate(${x} 270) scale(${s})`}>
+              <rect x={-100} y={-70} width={200} height={150} rx={14} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text y={-20} fontSize={15} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{lab}</text>
+              <text y={24} fontSize={i === 3 ? 30 : 26} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{price}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the same twisted ankle — a 20× price difference</text>
+      </svg>
+    );
+  } else if (m === "universalvspay") {
+    // Where the US healthcare dollar goes (the layers).
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string, string][] = [["billing & admin", "armies of coders and claims staff"], ["insurer margins", "a trillion-dollar middleman"], ["drug prices", "no national price negotiator"], ["no single payer", "no one forcing prices down"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">why the US bill is so high</text>
+        {items.map(([t, d], i) => { const x = i % 2 === 0 ? 300 : 660; const y = i < 2 ? 110 : 290; const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 150} y={y} width={300} height={130} rx={12} fill={["#d98b5f", red, gold, "#c0583a"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={y + 52} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={y + 84} fontSize={12.5} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+        <text x={VW / 2} y={462} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>every layer adds cost — and you pay it at the visit</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

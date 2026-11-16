@@ -262,7 +262,9 @@ export interface StageScene extends Base {
     // EP098 (The Price Tag — cost of dying by state) additions:
     | "deathcostbars" | "finalbillstack" | "estatetaxstates"
     // EP099 (The Price Tag — utility bills by country) additions:
-    | "utilitybillbars" | "powerpricedrivers" | "netmonopoly";
+    | "utilitybillbars" | "powerpricedrivers" | "netmonopoly"
+    // EP100 (The Price Tag — doctor visit cost by country) additions:
+    | "doctorvisitbars" | "erbillshock" | "universalvspay";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

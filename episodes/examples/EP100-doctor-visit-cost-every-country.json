@@ -1,0 +1,740 @@
+{
+  "id": "EP100",
+  "series": "Napkin Numbers",
+  "title": "What a Doctor Visit Costs in Every Country",
+  "slug": "doctor-visit-cost-every-country",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP100 — The Price Tag series (topic 90). Rank out-of-pocket cost of a routine doctor visit by country ($0 most of developed world; US ~$30 insured copay to ~$170 uninsured) + the ER bomb (US ~$2,000+ vs ~$0 elsewhere). Universal (tax-prepaid, free at door) vs US private-insurance pay-twice (premium + copay/deductible). Why US costs 2x (billing/admin armies, no single payer, secret prices, surprise bills). What to do (urgent care vs ER, know deductible, itemize + negotiate, cash-price apps). 3 new motifs (doctorvisitbars/erbillshock/universalvspay); 2 charts. Sources: Universal health care/Health insurance/Out-of-pocket expense/Health care prices in the US/Copayment. Distinct from EP083 (healthcare system overview) — this is per-VISIT price. NO local synth; CI synths. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "In most of the developed world, walking into a doctor's office and getting examined costs you exactly zero dollars at the point of care. In the United States, that same routine visit can cost a hundred and fifty to three hundred dollars out of pocket — and if you end up in the emergency room, the bill can top two thousand. Today we rank what a doctor actually costs in every country.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "$0 in most countries"
+        },
+        {
+          "name": "receipt",
+          "label": "$150-300 in the US"
+        },
+        {
+          "name": "scale",
+          "label": "every country ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap that stuns the rest of the world. The same fifteen-minute checkup — same stethoscope, same advice — costs nothing in Britain, Canada, or Germany, and well over a hundred and fifty dollars in America. It's the clearest single example of how one country turned basic healthcare into one of its most expensive products.",
+      "text": "$0 vs $170",
+      "sub": "a routine doctor visit: most countries vs the US",
+      "icon": "hospital"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the price of seeing a doctor around the world, explain why most countries charge nothing while America charges a fortune, expose the emergency-room bill that can bankrupt you, and show how to protect yourself inside the US system. Because this one price tag reveals more about a country than almost any other number.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the countries"
+        },
+        {
+          "name": "warning",
+          "label": "the ER bill"
+        },
+        {
+          "name": "shield",
+          "label": "how to protect yourself"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "healthcare is expensive everywhere",
+      "memeBottom": "it's basically free almost everywhere except America",
+      "narration": "Because the idea that a doctor visit is naturally pricey is mostly an American assumption. For most of the planet, it simply isn't. Before we rank them, let's define how countries pay for the doctor."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the two ways the world pays for a doctor.",
+      "heading": "Two Systems",
+      "kicker": "universal vs pay"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-uhc",
+      "narration": "Most rich countries run universal health care — a system in which all citizens of a country have some level of health coverage. You pay through taxes during your working life, and in return the doctor is free, or nearly free, when you actually need one. The cost is still there — it's just prepaid and shared, not billed at the door."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And universal doesn't mean identical. Some countries run a fully public system where the government owns the hospitals, like Britain. Others, like Germany or Japan, use tightly regulated insurance that everyone must have, with prices capped by the state. The common thread isn't who delivers the care — it's that no one gets a shock bill for walking in.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "public or regulated insurance"
+        },
+        {
+          "name": "globe",
+          "label": "many models"
+        },
+        {
+          "name": "smiley",
+          "label": "no shock bills"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-healthins",
+      "narration": "The US instead leans on private health insurance — a type of insurance that covers the whole or a part of the risk of a person incurring medical expenses. You, or your employer, pay a monthly premium, and the insurer covers some of the cost when you're sick. But you still pay again at the visit, through copays and deductibles. It's a system of paying twice."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And American health insurance is unusually tied to your job, which makes it fragile. Lose the job, lose the coverage, often right when you can least afford to. In universal systems, your access to a doctor has nothing to do with your employer — it follows you through unemployment, career changes, and starting a business. Health and work are simply not chained together.",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "coverage tied to your job"
+        },
+        {
+          "name": "warning",
+          "label": "lose job, lose coverage"
+        },
+        {
+          "name": "globe",
+          "label": "elsewhere: follows you"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's the scale of the middlemen. In the US, health insurance is a trillion-dollar industry sitting between you and your doctor, taking a cut to decide what gets paid. That entire layer — its profits, its salaries, its paperwork — is a cost universal systems largely skip. You're not just paying for care; you're paying for the referee.",
+      "text": "the middleman",
+      "sub": "a whole industry between you and the doctor",
+      "icon": "warning"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So the difference isn't whether you pay — everyone pays. It's when and how. In universal systems, you pay upfront through taxes and almost nothing at the clinic. In the American system, you pay a premium and then pay again every single time you walk through the door. That second payment, at the point of care, is what the rest of the world mostly abolished.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "everyone pays — just differently"
+        },
+        {
+          "name": "hospital",
+          "label": "universal: free at the door"
+        },
+        {
+          "name": "warning",
+          "label": "US: pay again each visit"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Put the double-payment in perspective. A typical American family already pays over twenty thousand dollars a year in health-insurance premiums between them and their employer — and then still pays copays and deductibles on top at every visit. In universal systems, that enormous premium simply doesn't exist as a separate bill.",
+      "text": "$20K+/yr",
+      "sub": "US family premiums — before a single copay",
+      "icon": "receipt"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank what a routine visit costs by country.",
+      "heading": "The Ranking",
+      "kicker": "price at the door"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "A quick note on these prices: they move depending on your plan, your state, and whether the visit counts as preventive. Many US plans now cover an annual checkup at zero — but step one inch outside 'preventive,' mention a new symptom, and the visit reclassifies and the bill appears. The free visit is real, but the line around it is razor-thin.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "'preventive' is free"
+        },
+        {
+          "name": "receipt",
+          "label": "one symptom = a bill"
+        },
+        {
+          "name": "scale",
+          "label": "a razor-thin line"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "doctorvisitbars",
+      "caption": "out-of-pocket cost of a routine visit, by country",
+      "narration": "Here's the price of seeing a doctor for a normal appointment. In the UK, Canada, Spain, and much of Europe, it's zero at the point of care. In Japan, a small copay of around ten dollars. In the US with insurance, a thirty to fifty dollar copay — and without insurance, a hundred and fifty to three hundred for the exact same fifteen minutes. The visit is identical. Only the bill changes."
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And look how small the copay countries keep it. Even systems that do charge something — Japan, France, Sweden — cap it at a token amount, often a few dollars, and waive it entirely for kids, the poor, and the chronically ill. The charge, where it exists at all, is designed to nudge, not to punish. America is nearly alone in letting a routine visit become a real financial decision.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "token copays abroad"
+        },
+        {
+          "name": "smiley",
+          "label": "waived for kids & the poor"
+        },
+        {
+          "name": "warning",
+          "label": "US: a real financial decision"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Out-of-pocket cost of a routine doctor visit ($)",
+      "unit": "$",
+      "narration": "Put the numbers side by side. The UK, Canada, Germany: zero. Japan, around ten dollars. A US insured copay, maybe thirty. And an uninsured American visit, a hundred and seventy dollars or more. The medicine is the same everywhere on Earth. What changes is whether your country decided to charge you for walking in.",
+      "data": [
+        {
+          "label": "UK",
+          "value": 0
+        },
+        {
+          "label": "Canada",
+          "value": 0
+        },
+        {
+          "label": "Germany",
+          "value": 0
+        },
+        {
+          "label": "Japan",
+          "value": 10
+        },
+        {
+          "label": "US insured",
+          "value": 30
+        },
+        {
+          "label": "US uninsured",
+          "value": 170
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the quiet cost of charging at the door: people avoid care. When a visit costs a hundred and fifty dollars, many Americans simply don't go — they wait, they ration, they skip checkups. Small problems become big ones. The point-of-care fee doesn't just cost money; it quietly makes a population sicker by discouraging the very visits that catch disease early.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "people skip care"
+        },
+        {
+          "name": "chartdown",
+          "label": "small problems grow"
+        },
+        {
+          "name": "hospital",
+          "label": "the fee makes people sicker"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the real American cost is even sneakier, because the copay isn't the whole story. Before insurance pays anything, you often have to clear a deductible — thousands of dollars you must spend first, every year. So for most of the year, many insured Americans are effectively paying the full, uninsured price for each visit anyway. The coverage kicks in only after you've already bled.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the deductible first"
+        },
+        {
+          "name": "receipt",
+          "label": "full price until it's met"
+        },
+        {
+          "name": "hospital",
+          "label": "coverage comes late"
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And high-deductible plans quietly became the norm. To keep premiums lower, employers shifted to plans where you pay the first several thousand dollars yourself. The result: millions of Americans are technically insured but functionally uninsured for routine care, paying full freight for every visit until a deductible they may never even reach that year.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "high-deductible = normal now"
+        },
+        {
+          "name": "hospital",
+          "label": "insured but paying full price"
+        },
+        {
+          "name": "receipt",
+          "label": "deductible you never hit"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "go to the doctor and get a bill",
+      "memeBottom": "wait and hope it goes away",
+      "narration": "This is the grim calculation millions of insured Americans actually run before booking an appointment. When seeing a doctor means a real bill, 'wait and see' stops being laziness and becomes a budget decision — one that occasionally turns a cheap problem into a catastrophic one."
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "But the routine visit is nothing next to the emergency room.",
+      "heading": "The ER Bomb",
+      "kicker": "where bills explode"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the ambulance is its own shock. In much of the world, calling for one is free. In the US, a single ambulance ride can cost over a thousand dollars, and is frequently not fully covered — so people in genuine emergencies sometimes take a taxi, or drive themselves, to avoid the bill. The price tag reaches all the way into life-or-death moments.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "ambulance: free elsewhere"
+        },
+        {
+          "name": "receipt",
+          "label": "$1,000+ in the US"
+        },
+        {
+          "name": "warning",
+          "label": "people risk driving themselves"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "sourceId": "wiki-usprices",
+      "narration": "The research is blunt: the prices of health care in the United States are higher than in other countries — often a third higher or more relative to the economy. Nowhere is that clearer than the emergency room, where a single visit for something minor can generate a bill of two thousand dollars or more, for care that's free or nearly free almost everywhere else."
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "a $2,000 bill for a 20-minute ER visit",
+      "memeBottom": "this is fine",
+      "narration": "For many Americans, this is the quiet dread of getting hurt: not just the injury, but the bill waiting behind it. In most of the world, an emergency is a medical event. In the US, it's also a financial one — and that fear itself changes how people live."
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "motif": "erbillshock",
+      "caption": "a basic ER visit, by country",
+      "narration": "Here's the emergency-room gap, and it's staggering. In Spain or the UK, an ER visit for a minor injury: zero. In Australia, maybe a hundred. In Japan, a few hundred. In the United States, that same visit averages well over two thousand dollars, and complex cases run far higher. A twisted ankle treated in two countries can differ in price by a factor of twenty or more."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the ER is expensive by design, not accident. It must stay staffed and open twenty-four hours, it legally can't turn you away, and its prices are set in a black box no patient ever sees before treatment. You agree to buy something with no idea of the price — the only major purchase in life that works that way. The bill arrives weeks later, and by then it's too late to shop.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "24/7, can't refuse"
+        },
+        {
+          "name": "warning",
+          "label": "price hidden until after"
+        },
+        {
+          "name": "receipt",
+          "label": "bill arrives weeks later"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "sourceId": "wiki-oop",
+      "narration": "This is where out-of-pocket expense becomes terrifying — the direct payment of money that may or may not be later reimbursed. An American can do everything right, carry insurance, and still get hit with thousands in surprise charges from an out-of-network doctor they never chose. Medical debt from these bills is a leading cause of bankruptcy in the US, and almost unheard of anywhere else."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And surprise billing is the cruelest twist. You can carefully choose an in-network hospital, then be treated by one out-of-network doctor inside it — an anesthesiologist, a radiologist — and get a separate, massive bill you never agreed to. Recent US laws curbed some of this, but the system that created it remains. Diligence alone can't fully protect you.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "out-of-network inside in-network"
+        },
+        {
+          "name": "receipt",
+          "label": "a bill you never agreed to"
+        },
+        {
+          "name": "hospital",
+          "label": "diligence isn't enough"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "callout",
+      "narration": "Here's the uniquely American statistic. Medical bills are involved in a huge share of US personal bankruptcies — a phenomenon that is virtually nonexistent in every other wealthy country. Getting sick, in America, is one of the fastest ways to go broke. In the rest of the rich world, that sentence barely makes sense.",
+      "text": "#1 cause",
+      "sub": "medical debt as a driver of US bankruptcy — unheard of elsewhere",
+      "icon": "warning"
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "So why is the American doctor so uniquely expensive?",
+      "heading": "Why So High",
+      "kicker": "billing, not medicine"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And drug prices pour fuel on the fire. The same medication, from the same factory, routinely costs several times more in the US than in countries that negotiate prices as a single national buyer. America largely doesn't, so manufacturers charge what the market bears. Your doctor visit is pricier, and so is almost everything they might prescribe at the end of it.",
+      "props": [
+        {
+          "name": "pills",
+          "label": "same drug, several× the price"
+        },
+        {
+          "name": "warning",
+          "label": "no national negotiator"
+        },
+        {
+          "name": "receipt",
+          "label": "pricier prescriptions too"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And there's a myth worth killing: that free healthcare means bad healthcare. The data doesn't support it. Many universal-care countries post better life expectancy, lower infant mortality, and higher patient satisfaction than the US — while spending far less. Paying more at the door buys Americans more paperwork and more stress, not more health.",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "free ≠ worse"
+        },
+        {
+          "name": "chartup",
+          "label": "better outcomes, less spend"
+        },
+        {
+          "name": "warning",
+          "label": "more cost ≠ more health"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "universalvspay",
+      "caption": "where your healthcare dollar goes",
+      "narration": "It isn't that American doctors are better paid alone. It's the machine around them. A vast billing industry, armies of administrators, insurers and providers negotiating secret prices, drug costs with no national cap, and the simple fact that there's no single payer forcing prices down. Every layer adds cost, and every layer has to be paid — by you, at the visit."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the paperwork alone is staggering. The US spends a far larger share of its health budget on administration — billing, coding, claims, and denials — than any universal system. A huge chunk of your doctor bill isn't paying for medicine at all. It's paying for the small army of people whose entire job is fighting over who owes what.",
+      "props": [
+        {
+          "name": "ledger",
+          "label": "billing & claims armies"
+        },
+        {
+          "name": "warning",
+          "label": "admin eats the budget"
+        },
+        {
+          "name": "receipt",
+          "label": "paying for paperwork"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "sourceId": "wiki-copay",
+      "narration": "Even the copayment itself — the patient's share of the cost for goods or services rendered — is a cost most of the world finds bizarre. In a universal system, the idea of being charged at the door to see a doctor you already funded through taxes feels backwards. In America, it's just Tuesday. Two systems, two completely different relationships with getting sick."
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "Say the outcome plainly. The US spends roughly twice as much per person on healthcare as the average rich country, yet has lower life expectancy and leaves millions underinsured. More money, charged at the door, buying worse results. It's the single clearest case of a price tag that doesn't match what it delivers.",
+      "text": "2× spend",
+      "sub": "US healthcare cost per person vs peers — worse outcomes",
+      "icon": "chartup"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "present",
+      "narration": "So if you're in the US, protect yourself. Know your deductible and copay before you need care. For non-emergencies, use urgent care or telehealth, which cost a fraction of the ER. Always ask for an itemized bill — they're riddled with errors — and negotiate; hospitals routinely cut prices for people who simply ask. And never skip real emergencies over fear of the bill.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "know your deductible"
+        },
+        {
+          "name": "hospital",
+          "label": "urgent care over ER"
+        },
+        {
+          "name": "receipt",
+          "label": "itemize + negotiate"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And a few more defenses. Ask the price before any non-urgent test or procedure — you're allowed to, and it's often negotiable. Check every bill against your insurer's summary; errors overwhelmingly favor the hospital. For prescriptions, cash-price apps can beat your insurance copay. In the American system, being an informed, pushy patient is worth real money.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "ask prices up front"
+        },
+        {
+          "name": "magnifier",
+          "label": "audit every bill"
+        },
+        {
+          "name": "moneybag",
+          "label": "be a pushy patient"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if you're uninsured, you have more power than you think. Hospitals have a 'cash price' and charity-care programs, and many will slash a bill by half or more for the uninsured who ask — because a partial payment beats chasing a bill forever. Never pay the first number on a hospital invoice. It's an opening offer, not a final one.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "ask for the cash price"
+        },
+        {
+          "name": "handshake",
+          "label": "charity-care programs"
+        },
+        {
+          "name": "moneybag",
+          "label": "the first number is negotiable"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. A doctor visit costs roughly the same to deliver anywhere — a trained person, a room, fifteen minutes. What differs, by a factor of ten or more, is whether your country decided that seeing a doctor should be a right you prepaid, or a product you're billed for. The price of a checkup isn't about medicine. It's about what a society decided healthcare is.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "the care costs the same"
+        },
+        {
+          "name": "scale",
+          "label": "right vs product"
+        },
+        {
+          "name": "globe",
+          "label": "a societal choice"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on what this price really buys a society. Countries that made the doctor free at the door get people seeking care early, catching disease sooner, and worrying less. Countries that charge get avoidance, debt, and fear stitched into daily life. The price of a visit isn't just a number on a bill — it quietly shapes how healthy and how anxious an entire nation is.",
+      "props": [
+        {
+          "name": "smiley",
+          "label": "free = early care, less fear"
+        },
+        {
+          "name": "warning",
+          "label": "charged = avoidance + debt"
+        },
+        {
+          "name": "globe",
+          "label": "it shapes a nation"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this reframed what a doctor really costs, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-uhc",
+      "name": "Universal health care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Universal_health_care",
+      "quote": "all citizens of a country have some level of health coverage"
+    },
+    {
+      "id": "wiki-healthins",
+      "name": "Health insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_insurance",
+      "quote": "covers the whole or a part of the risk of a person incurring medical expenses"
+    },
+    {
+      "id": "wiki-usprices",
+      "name": "Health care prices in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_care_prices_in_the_United_States",
+      "quote": "The prices of health care in the United States are higher than in other countries"
+    },
+    {
+      "id": "wiki-oop",
+      "name": "Out-of-pocket expense (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Out-of-pocket_expense",
+      "quote": "the direct payment of money that may or may not be later reimbursed"
+    },
+    {
+      "id": "wiki-copay",
+      "name": "Copayment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Copayment",
+      "quote": "the patient's share of the cost for goods or services rendered"
+    }
+  ],
+  "youtube": {
+    "title": "What a Doctor Visit Costs in Every Country",
+    "alts": [
+      "Why a Doctor Costs $0 in Most Countries and $170 in America",
+      "The Real Price of Seeing a Doctor Around the World"
+    ],
+    "hook": "In most of the developed world, seeing a doctor for a routine visit costs exactly $0 at the point of care. In the United States, the same 15-minute checkup can cost $150–$300 out of pocket — and an emergency-room trip can top $2,000. This is what a doctor visit actually costs in every country, ranked. We explain the two systems (universal health care, where you prepay through taxes and the doctor is free at the door, vs US private insurance, where you pay a premium AND pay again via copays and deductibles), rank routine-visit and ER prices by country (the US ER averages $2,000+ for care that's free almost everywhere else), expose why the US costs ~2x per person for worse outcomes (billing and admin armies, no single payer, secret prices, surprise out-of-network bills), and show how to protect yourself: urgent care over the ER, know your deductible, demand itemized bills and negotiate, and use cash-price apps. Fully cited.",
+    "bullets": [
+      "Routine visit ranked: $0 most countries vs ~$170 US uninsured",
+      "Universal (prepaid via tax) vs US pay-twice insurance",
+      "The ER bomb: $2,000+ in the US vs ~$0 elsewhere",
+      "Why the US costs ~2x per person — for worse outcomes",
+      "Surprise bills and the deductible trap",
+      "How to protect yourself in the US system"
+    ],
+    "tags": [
+      "cost of doctor visit",
+      "healthcare by country",
+      "us healthcare cost",
+      "emergency room cost",
+      "universal healthcare",
+      "health insurance",
+      "medical bills",
+      "cost of healthcare",
+      "doctor visit price",
+      "out of pocket",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#healthcare",
+      "#medicalbills",
+      "#health",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "A DOCTOR VISIT:",
+      "hookBot": "$0 OR $300",
+      "napkinNumber": "$0 vs $170",
+      "napkinSub": "same visit, by country",
+      "deco": "hospital"
+    },
+    "chapters": [
+      [
+        "the two ways the world pays for a doctor",
+        "Two systems"
+      ],
+      [
+        "rank what a routine visit costs by country",
+        "The ranking"
+      ],
+      [
+        "nothing next to the emergency room",
+        "The ER bomb"
+      ],
+      [
+        "why is the American doctor so uniquely expensive",
+        "Why so high"
+      ],
+      [
+        "the real lesson",
+        "A societal choice"
+      ]
+    ]
+  }
+}
