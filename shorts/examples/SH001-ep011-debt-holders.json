@@ -9,62 +9,73 @@
   "question": "Did you assume China?",
   "language": "en",
   "voice": { "voiceId": "en-US-BrianNeural" },
-  "note": "Myth-break. Figures pulled from EP011: Japan ~$1.1T (#1 foreign holder of U.S. debt), China under $1T and selling, the Fed held over $5T. Most sovereign debt is owed domestically.",
+  "note": "Myth-break. Figures pulled from EP011: Japan ~$1.1T (#1 foreign holder of U.S. debt), China under $1T and selling, the Fed held over $5T. Most sovereign debt is owed domestically. Every beat has a literal animated doodle.",
   "scenes": [
     {
       "id": "s1",
       "block": "hook",
+      "art": "globe",
       "narration": "Every country on Earth owes money. Almost nobody stops to ask who is actually holding it.",
-      "lines": ["Every country", "owes money.", "Nobody asks who holds it."]
+      "lines": ["Every country", "owes money.", "Who holds it?"]
     },
     {
       "id": "s2",
       "block": "label",
+      "art": "moneyFlow",
       "narration": "Most people picture China, holding America's debt across the ocean.",
-      "kicker": "You probably pictured",
-      "line": "CHINA",
-      "sub": "holding America's IOUs across the ocean"
+      "kicker": "You probably pictured this:",
+      "sub": "China → bankrolling America across the ocean"
     },
     {
       "id": "s3",
       "block": "truth",
+      "art": "home",
       "narration": "But most government debt is not owed abroad at all. It is owed at home, to a country's own central bank, its own banks, and its own pension funds.",
       "kicker": "The reality",
       "line": "It's owed at home",
-      "sub": "a country's own central bank, banks and pension funds"
+      "sub": "a country's own central bank, banks and pensions"
     },
     {
       "id": "s4",
       "block": "stat",
+      "art": "flagStack",
+      "country": "jp",
+      "trend": "up",
       "narration": "Even the biggest foreign holder of U.S. debt is not China. It is Japan, about one point one trillion dollars.",
       "kicker": "Biggest FOREIGN holder of U.S. debt",
-      "big": "$1.1T",
-      "label": "Japan — not China",
-      "sub": "the number one foreign lender"
+      "bigValue": 1.1,
+      "bigPrefix": "$",
+      "bigSuffix": "T",
+      "bigDecimals": 1,
+      "label": "Japan — not China"
     },
     {
       "id": "s5",
       "block": "stat",
+      "art": "flagStack",
+      "country": "cn",
+      "trend": "down",
       "narration": "China sits under a trillion, and it has been selling for years.",
       "kicker": "China",
       "big": "< $1T",
-      "label": "and selling for years",
-      "sub": "trimming its holdings, not hoarding them"
+      "label": "and selling for years"
     },
     {
       "id": "s6",
       "block": "rows",
+      "art": "bank",
       "narration": "The single biggest holder of all? America's own Federal Reserve, over five trillion dollars. The bank that prints the money, lending it right back to the government.",
       "kicker": "Who actually holds it",
       "rows": [
-        { "rank": "1", "name": "The Fed", "value": "$5T+", "note": "prints the dollars, lends them back", "color": "#c0392b" },
-        { "rank": "2", "name": "Japan", "value": "$1.1T", "note": "top foreign holder", "color": "#17120f" },
-        { "rank": "3", "name": "China", "value": "<$1T", "note": "and selling", "color": "#5c544c" }
+        { "rank": "1", "name": "The Fed", "value": "$5T+", "note": "prints the dollars, lends them back", "color": "#c0392b", "bar": 1.0 },
+        { "rank": "2", "name": "Japan", "value": "$1.1T", "note": "top foreign holder", "color": "#17120f", "bar": 0.38 },
+        { "rank": "3", "name": "China", "value": "<$1T", "note": "and selling", "color": "#5c544c", "bar": 0.26 }
       ]
     },
     {
       "id": "s7",
       "block": "question",
+      "art": "globeQ",
       "narration": "So. Did you assume it was China?",
       "line": "Did you assume China?",
       "sub": "Comment what surprised you — full story in the video"
