@@ -8020,6 +8020,75 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={448} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the gadgets got cheaper; only the big three screamed</text>
       </svg>
     );
+  } else if (m === "millionyearsbars") {
+    // How many years $1M funds a comfortable life, by country.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Switzerland", 15, "#d98b5f"],
+      ["US", 25, gold],
+      ["UK", 30, gold],
+      ["Mexico", 60, "#9cc47f"],
+      ["Thailand", 80, "#6f9f5b"],
+      ["India", 90, green],
+    ];
+    const x0 = 270, xMax = 830, maxV = 90;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">years $1M funds a comfortable life</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{v} yrs</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same pile of money — 6× the runway, by country</text>
+      </svg>
+    );
+  } else if (m === "millionabroad") {
+    // What $1M buys: a closet vs a villa.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.2], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what $1,000,000 buys</text>
+        <g transform="translate(290 290)" opacity={interpolate(t, [0, 0.5], [0, 1], clampBoth)}>
+          <rect x={-90} y={-60} width={180} height={150} rx={10} fill="#efe9da" stroke={ink} strokeWidth={5} /><rect x={-20} y={30} width={40} height={60} fill={ink} />
+          <text y={-80} fontSize={15} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">Monaco / London</text>
+          <text y={128} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a tiny apartment</text>
+        </g>
+        <g transform="translate(720 290)" opacity={interpolate(t, [0.45, 0.95], [0, 1], clampBoth)}>
+          <rect x={-140} y={-50} width={280} height={140} rx={10} fill="#cfe3d4" stroke={ink} strokeWidth={5} /><path d="M-155 -50 L0 -120 L155 -50 Z" fill={gold} stroke={ink} strokeWidth={5} />
+          <ellipse cx={0} cy={70} rx={70} ry={16} fill={blue} stroke={ink} strokeWidth={3} />
+          <text y={-100} fontSize={15} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">Bangkok / Mexico City</text>
+          <text y={128} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a villa with a pool</text>
+        </g>
+        <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a shoebox in one city, a palace in another</text>
+      </svg>
+    );
+  } else if (m === "millionaireillusion") {
+    // 1970 millionaire (huge) vs today's (modest).
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a million isn't what it was</text>
+        <g transform="translate(300 300)">
+          <rect x={-110} y={-110 * grow} width={220} height={220 * grow} rx={10} fill={gold} stroke={ink} strokeWidth={5} />
+          <text y={-130 * grow} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">1970 millionaire</text>
+          <text y={6} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif" opacity={grow}>≈ $8M</text>
+          <text y={34} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans} opacity={grow}>in today's money</text>
+        </g>
+        <g transform="translate(720 360)">
+          <rect x={-70} y={-70 * grow} width={140} height={70 * grow} rx={8} fill="#d98b5f" stroke={ink} strokeWidth={5} />
+          <text y={-90 * grow} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">today's millionaire</text>
+          <text y={-20} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans} opacity={grow}>comfortable</text>
+        </g>
+        <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>inflation quietly hollowed out the word</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

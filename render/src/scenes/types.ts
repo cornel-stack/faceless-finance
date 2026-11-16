@@ -282,7 +282,9 @@ export interface StageScene extends Base {
     // EP108 (The Price Tag — GDP vs earnings) additions:
     | "gdppercapitabars" | "wherethegdpgoes" | "averagevsmedian"
     // EP109 (The Price Tag — 1970 vs 2026 prices) additions:
-    | "pricesthennowbars" | "wagevspricegap" | "realvsnominalflip";
+    | "pricesthennowbars" | "wagevspricegap" | "realvsnominalflip"
+    // EP110 (The Price Tag FINALE — what $1M is worth by country) additions:
+    | "millionyearsbars" | "millionabroad" | "millionaireillusion";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
