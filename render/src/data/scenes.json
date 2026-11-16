@@ -3,15 +3,15 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "In most of the developed world, walking into a doctor's office and getting examined costs you exactly zero dollars at the point of care. In the United States, that same routine visit can cost a hundred and fifty to three hundred dollars out of pocket — and if you end up in the emergency room, the bill can top two thousand. Today we rank what a doctor actually costs in every country.",
+    "narration": "The exact same Big Mac — same two all-beef patties, same bun — costs about two dollars in India and nearly eight dollars in Switzerland. That's not really a story about burgers. That price gap is a secret window into which countries are expensive, which currencies are overvalued, and where your money would stretch the furthest on Earth. Today we rank the price of a Big Mac in every country, and decode what it reveals.",
     "props": [
       {
-        "name": "hospital",
-        "label": "$0 in most countries"
+        "name": "grocerybag",
+        "label": "$2 in India"
       },
       {
-        "name": "receipt",
-        "label": "$150-300 in the US"
+        "name": "moneybag",
+        "label": "$8 in Switzerland"
       },
       {
         "name": "scale",
@@ -22,28 +22,28 @@
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the gap that stuns the rest of the world. The same fifteen-minute checkup — same stethoscope, same advice — costs nothing in Britain, Canada, or Germany, and well over a hundred and fifty dollars in America. It's the clearest single example of how one country turned basic healthcare into one of its most expensive products.",
-    "text": "$0 vs $170",
-    "sub": "a routine doctor visit: most countries vs the US",
-    "icon": "hospital"
+    "narration": "Here's the gap that economists secretly love. The identical burger ranges from under two dollars to nearly eight, depending on the country. The Economist magazine turned this into a famous tool — the Big Mac Index — because a burger made almost the same way everywhere is a shockingly good measuring stick for the real value of money.",
+    "text": "$2 vs $8",
+    "sub": "the same Big Mac, cheapest vs priciest country",
+    "icon": "grocerybag"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank the price of seeing a doctor around the world, explain why most countries charge nothing while America charges a fortune, expose the emergency-room bill that can bankrupt you, and show how to protect yourself inside the US system. Because this one price tag reveals more about a country than almost any other number.",
+    "narration": "So today we rank Big Mac prices around the world, explain the clever economics hiding in a burger, reveal which currencies are secretly overvalued or dirt cheap, and show how long you'd have to work to afford one in each country. Because this silly-sounding index quietly explains exchange rates, cost of living, and where a traveler's dollar becomes a fortune.",
     "props": [
       {
         "name": "scale",
-        "label": "rank the countries"
+        "label": "rank the prices"
       },
       {
-        "name": "warning",
-        "label": "the ER bill"
+        "name": "exchange",
+        "label": "over or undervalued?"
       },
       {
-        "name": "shield",
-        "label": "how to protect yourself"
+        "name": "clock",
+        "label": "work to afford one"
       }
     ]
   },
@@ -52,156 +52,174 @@
     "type": "image",
     "src": "img/memes/expanding.jpg",
     "meme": "Expanding Brain",
-    "memeTop": "healthcare is expensive everywhere",
-    "memeBottom": "it's basically free almost everywhere except America",
-    "narration": "Because the idea that a doctor visit is naturally pricey is mostly an American assumption. For most of the planet, it simply isn't. Before we rank them, let's define how countries pay for the doctor."
+    "memeTop": "a Big Mac is just fast food",
+    "memeBottom": "a Big Mac is a global measure of currency value",
+    "narration": "Because buried inside the price of a burger is one of the simplest, most intuitive ideas in all of economics. Before we rank them, let's unwrap exactly what the Big Mac is measuring."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, the two ways the world pays for a doctor.",
-    "heading": "Two Systems",
-    "kicker": "universal vs pay"
+    "narration": "First, why a burger can measure the value of money.",
+    "heading": "The Burgernomics",
+    "kicker": "PPP in a bun"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-uhc",
-    "narration": "Most rich countries run universal health care — a system in which all citizens of a country have some level of health coverage. You pay through taxes during your working life, and in return the doctor is free, or nearly free, when you actually need one. The cost is still there — it's just prepaid and shared, not billed at the door."
+    "sourceId": "wiki-bigmac",
+    "narration": "The Big Mac Index is an informal way of measuring the purchasing power parity between two currencies. The logic is beautiful in its simplicity: a Big Mac is made from roughly the same ingredients everywhere, so if it costs far more in one country than another, that tells you something real about whether a currency is overpriced or cheap. A burger becomes an economist."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And universal doesn't mean identical. Some countries run a fully public system where the government owns the hospitals, like Britain. Others, like Germany or Japan, use tightly regulated insurance that everyone must have, with prices capped by the state. The common thread isn't who delivers the care — it's that no one gets a shock bill for walking in.",
+    "narration": "And the beauty is that it's deliberately unscientific. The Economist invented it in nineteen eighty-six half as a joke, a way to make exchange-rate theory digestible. But it worked so well that economists now use it seriously, and it has correctly flagged overvalued and undervalued currencies for decades. A gag became one of the most quoted numbers in global finance.",
     "props": [
       {
-        "name": "hospital",
-        "label": "public or regulated insurance"
+        "name": "newspaper",
+        "label": "invented 1986, half a joke"
+      },
+      {
+        "name": "chartup",
+        "label": "it actually works"
       },
       {
         "name": "globe",
-        "label": "many models"
+        "label": "now quoted worldwide"
+      }
+    ]
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the index quietly spawned imitators, which proves the idea travels. There's a tall-latte index, an iPhone index, even a Netflix index — each doing the same trick with a different standardized product. But the burger remains king, because almost nowhere on Earth is without a McDonald's, and almost everyone knows exactly what a Big Mac is.",
+    "props": [
+      {
+        "name": "coffeecup",
+        "label": "latte & iPhone indexes too"
       },
       {
-        "name": "smiley",
-        "label": "no shock bills"
+        "name": "globe",
+        "label": "McDonald's is everywhere"
+      },
+      {
+        "name": "grocerybag",
+        "label": "the burger stays king"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-healthins",
-    "narration": "The US instead leans on private health insurance — a type of insurance that covers the whole or a part of the risk of a person incurring medical expenses. You, or your employer, pay a monthly premium, and the insurer covers some of the cost when you're sick. But you still pay again at the visit, through copays and deductibles. It's a system of paying twice."
+    "sourceId": "wiki-ppp2",
+    "narration": "The deeper concept is purchasing power parity — a measure of the price of specific goods in different countries. The idea is that, in theory, the same item should cost the same everywhere once you convert currencies. When it doesn't — when a burger is twice the price across a border — the gap reveals that one currency is buying more, or less, than the exchange rate claims."
   },
   {
     "id": "s51",
     "type": "character",
     "pose": "explain",
-    "narration": "And American health insurance is unusually tied to your job, which makes it fragile. Lose the job, lose the coverage, often right when you can least afford to. In universal systems, your access to a doctor has nothing to do with your employer — it follows you through unemployment, career changes, and starting a business. Health and work are simply not chained together.",
+    "narration": "Think of purchasing power parity as the honest exchange rate. The rate on the currency market is set by traders, speculation, and capital flows. The PPP rate asks a simpler question: how much money do you need in each country to buy the same stuff? When those two rates disagree, the gap is where the opportunity, and the distortion, lives.",
     "props": [
       {
-        "name": "briefcase",
-        "label": "coverage tied to your job"
+        "name": "exchange",
+        "label": "market rate vs honest rate"
+      },
+      {
+        "name": "scale",
+        "label": "same stuff, how much money?"
       },
       {
         "name": "warning",
-        "label": "lose job, lose coverage"
-      },
-      {
-        "name": "globe",
-        "label": "elsewhere: follows you"
+        "label": "the gap is the signal"
       }
     ]
   },
   {
     "id": "s52",
     "type": "callout",
-    "narration": "Here's the scale of the middlemen. In the US, health insurance is a trillion-dollar industry sitting between you and your doctor, taking a cut to decide what gets paid. That entire layer — its profits, its salaries, its paperwork — is a cost universal systems largely skip. You're not just paying for care; you're paying for the referee.",
-    "text": "the middleman",
-    "sub": "a whole industry between you and the doctor",
-    "icon": "warning"
+    "narration": "Here's why the index endures. For nearly forty years, across booms, busts, and crises, a burger has quietly tracked the real value of the world's currencies better than you'd ever expect a sandwich to. Simplicity is its superpower: everyone understands a burger, and that makes a hard idea suddenly obvious.",
+    "text": "since 1986",
+    "sub": "a burger tracking world currencies for ~40 years",
+    "icon": "grocerybag"
   },
   {
     "id": "s8",
+    "type": "screenshot",
+    "sourceId": "wiki-loop",
+    "narration": "This rests on the law of one price, which holds that identical goods sold at different locations should be sold for the same price. In a perfect, frictionless world, a Big Mac would cost the same dollars everywhere. It doesn't — and every dollar of difference is a clue about wages, rents, taxes, and the true value of the local money."
+  },
+  {
+    "id": "s42",
     "type": "character",
     "pose": "explain",
-    "narration": "So the difference isn't whether you pay — everyone pays. It's when and how. In universal systems, you pay upfront through taxes and almost nothing at the clinic. In the American system, you pay a premium and then pay again every single time you walk through the door. That second payment, at the point of care, is what the rest of the world mostly abolished.",
+    "narration": "Why a Big Mac and not, say, gold or oil? Because it's gloriously standardized. McDonald's makes it to nearly the same specification in a hundred countries, using mostly local ingredients and local labor. That makes it the perfect test subject: hold the product constant, let the country vary, and whatever's left in the price difference is pure economics.",
     "props": [
       {
-        "name": "receipt",
-        "label": "everyone pays — just differently"
+        "name": "store",
+        "label": "same spec worldwide"
       },
       {
-        "name": "hospital",
-        "label": "universal: free at the door"
+        "name": "scale",
+        "label": "hold the product constant"
       },
       {
-        "name": "warning",
-        "label": "US: pay again each visit"
+        "name": "globe",
+        "label": "let the country vary"
       }
     ]
   },
   {
-    "id": "s42",
-    "type": "callout",
-    "narration": "Put the double-payment in perspective. A typical American family already pays over twenty thousand dollars a year in health-insurance premiums between them and their employer — and then still pays copays and deductibles on top at every visit. In universal systems, that enormous premium simply doesn't exist as a separate bill.",
-    "text": "$20K+/yr",
-    "sub": "US family premiums — before a single copay",
-    "icon": "receipt"
-  },
-  {
     "id": "s9",
     "type": "title",
-    "narration": "So let's rank what a routine visit costs by country.",
+    "narration": "So let's rank what a Big Mac actually costs by country.",
     "heading": "The Ranking",
-    "kicker": "price at the door"
+    "kicker": "burger by country"
   },
   {
     "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "A quick note on these prices: they move depending on your plan, your state, and whether the visit counts as preventive. Many US plans now cover an annual checkup at zero — but step one inch outside 'preventive,' mention a new symptom, and the visit reclassifies and the bill appears. The free visit is real, but the line around it is razor-thin.",
+    "narration": "One honest caveat before the ranking: the Big Mac isn't identical everywhere. In India it's made with chicken or paneer instead of beef, portion sizes vary, and local tastes tweak the recipe. The index isn't laboratory-perfect. But it's close enough that the price differences still tell a remarkably accurate story about money.",
     "props": [
       {
+        "name": "grocerybag",
+        "label": "recipe varies a bit"
+      },
+      {
         "name": "warning",
-        "label": "'preventive' is free"
+        "label": "not laboratory-perfect"
       },
       {
-        "name": "receipt",
-        "label": "one symptom = a bill"
-      },
-      {
-        "name": "scale",
-        "label": "a razor-thin line"
+        "name": "smiley",
+        "label": "still remarkably telling"
       }
     ]
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "doctorvisitbars",
-    "caption": "out-of-pocket cost of a routine visit, by country",
-    "narration": "Here's the price of seeing a doctor for a normal appointment. In the UK, Canada, Spain, and much of Europe, it's zero at the point of care. In Japan, a small copay of around ten dollars. In the US with insurance, a thirty to fifty dollar copay — and without insurance, a hundred and fifty to three hundred for the exact same fifteen minutes. The visit is identical. Only the bill changes."
+    "motif": "bigmacbars",
+    "caption": "price of a Big Mac, by country",
+    "narration": "Here's the burger leaderboard. Switzerland and Norway top it near eight dollars. The Eurozone and the US sit around six. Britain, about five. Then it drops — Japan near three, Mexico around four, and India, with its vegetarian version, closer to two. The same sandwich, same recipe, four times the price depending on which flag flies over the restaurant."
   },
   {
-    "id": "s61",
+    "id": "s54",
     "type": "character",
     "pose": "explain",
-    "narration": "And look how small the copay countries keep it. Even systems that do charge something — Japan, France, Sweden — cap it at a token amount, often a few dollars, and waive it entirely for kids, the poor, and the chronically ill. The charge, where it exists at all, is designed to nudge, not to punish. America is nearly alone in letting a routine visit become a real financial decision.",
+    "narration": "Notice what sits at the top: small, rich, high-wage nations — Switzerland, Norway, the Eurozone's wealthiest corners. And at the bottom, fast-growing but lower-wage economies. The burger ladder is almost a wealth ladder. Where people earn the most, the burger costs the most, because the worker behind the counter is part of what you're buying.",
     "props": [
       {
-        "name": "hospital",
-        "label": "token copays abroad"
+        "name": "mountain",
+        "label": "rich nations at the top"
       },
       {
-        "name": "smiley",
-        "label": "waived for kids & the poor"
+        "name": "chartup",
+        "label": "burger ladder = wealth ladder"
       },
       {
-        "name": "warning",
-        "label": "US: a real financial decision"
+        "name": "paystub",
+        "label": "you buy the worker too"
       }
     ]
   },
@@ -209,314 +227,340 @@
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Out-of-pocket cost of a routine doctor visit ($)",
+    "title": "Price of a Big Mac ($)",
     "unit": "$",
-    "narration": "Put the numbers side by side. The UK, Canada, Germany: zero. Japan, around ten dollars. A US insured copay, maybe thirty. And an uninsured American visit, a hundred and seventy dollars or more. The medicine is the same everywhere on Earth. What changes is whether your country decided to charge you for walking in.",
+    "narration": "Round the numbers and line them up. India around two dollars, Japan three, Mexico four, the UK five, the US six, and Switzerland near eight. That range isn't random. The priciest-burger countries tend to have strong currencies and high wages; the cheapest tend to have weaker currencies and lower costs. The burger is quietly ranking the world's money.",
     "data": [
       {
-        "label": "UK",
-        "value": 0
-      },
-      {
-        "label": "Canada",
-        "value": 0
-      },
-      {
-        "label": "Germany",
-        "value": 0
+        "label": "India",
+        "value": 2
       },
       {
         "label": "Japan",
-        "value": 10
+        "value": 3
       },
       {
-        "label": "US insured",
-        "value": 30
+        "label": "Mexico",
+        "value": 4
       },
       {
-        "label": "US uninsured",
-        "value": 170
+        "label": "UK",
+        "value": 5
+      },
+      {
+        "label": "US",
+        "value": 6
+      },
+      {
+        "label": "Switzerland",
+        "value": 8
       }
     ],
-    "highlight": 5
+    "highlight": 0
   },
   {
     "id": "s43",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And notice the quiet cost of charging at the door: people avoid care. When a visit costs a hundred and fifty dollars, many Americans simply don't go — they wait, they ration, they skip checkups. Small problems become big ones. The point-of-care fee doesn't just cost money; it quietly makes a population sicker by discouraging the very visits that catch disease early.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "people skip care"
-      },
-      {
-        "name": "chartdown",
-        "label": "small problems grow"
-      },
-      {
-        "name": "hospital",
-        "label": "the fee makes people sicker"
-      }
-    ]
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "think your country is cheap",
+    "memeBottom": "check what a Big Mac costs there first",
+    "narration": "This is the quiet humbling the index delivers. People assume they know whether their country is expensive — until they see the burger lined up against the world. The Big Mac has no national pride and no spin. It just quietly tells you where your money is weak and where it's strong."
   },
   {
     "id": "s12",
     "type": "character",
     "pose": "explain",
-    "narration": "And the real American cost is even sneakier, because the copay isn't the whole story. Before insurance pays anything, you often have to clear a deductible — thousands of dollars you must spend first, every year. So for most of the year, many insured Americans are effectively paying the full, uninsured price for each visit anyway. The coverage kicks in only after you've already bled.",
+    "narration": "And the US price is the anchor everything else is measured against. Because the Big Mac Index compares every country to the American burger, the US becomes the baseline. A country whose burger costs more than America's has a currency that looks overvalued; one whose burger costs less has a currency that looks cheap. One sandwich, and suddenly you can see the whole foreign-exchange market.",
     "props": [
       {
-        "name": "warning",
-        "label": "the deductible first"
+        "name": "flagUS",
+        "label": "US = the baseline"
       },
       {
-        "name": "receipt",
-        "label": "full price until it's met"
+        "name": "chartup",
+        "label": "pricier burger = overvalued"
       },
       {
-        "name": "hospital",
-        "label": "coverage comes late"
-      }
-    ]
-  },
-  {
-    "id": "s54",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And high-deductible plans quietly became the norm. To keep premiums lower, employers shifted to plans where you pay the first several thousand dollars yourself. The result: millions of Americans are technically insured but functionally uninsured for routine care, paying full freight for every visit until a deductible they may never even reach that year.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "high-deductible = normal now"
-      },
-      {
-        "name": "hospital",
-        "label": "insured but paying full price"
-      },
-      {
-        "name": "receipt",
-        "label": "deductible you never hit"
+        "name": "chartdown",
+        "label": "cheaper burger = undervalued"
       }
     ]
   },
   {
     "id": "s55",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "go to the doctor and get a bill",
-    "memeBottom": "wait and hope it goes away",
-    "narration": "This is the grim calculation millions of insured Americans actually run before booking an appointment. When seeing a doctor means a real bill, 'wait and see' stops being laziness and becomes a budget decision — one that occasionally turns a cheap problem into a catastrophic one."
-  },
-  {
-    "id": "s13",
-    "type": "title",
-    "narration": "But the routine visit is nothing next to the emergency room.",
-    "heading": "The ER Bomb",
-    "kicker": "where bills explode"
-  },
-  {
-    "id": "s56",
     "type": "character",
     "pose": "explain",
-    "narration": "And the ambulance is its own shock. In much of the world, calling for one is free. In the US, a single ambulance ride can cost over a thousand dollars, and is frequently not fully covered — so people in genuine emergencies sometimes take a taxi, or drive themselves, to avoid the bill. The price tag reaches all the way into life-or-death moments.",
+    "narration": "And this is why the index is such a great teaching tool for exchange rates, which otherwise feel abstract. 'The yen is undervalued' means nothing to most people. 'A Big Mac costs half as much in Tokyo as in Zurich' means everything. The burger translates the invisible machinery of global finance into something you can literally taste.",
     "props": [
       {
-        "name": "hospital",
-        "label": "ambulance: free elsewhere"
+        "name": "exchange",
+        "label": "abstract rates made real"
       },
       {
-        "name": "receipt",
-        "label": "$1,000+ in the US"
+        "name": "grocerybag",
+        "label": "you can taste it"
       },
       {
-        "name": "warning",
-        "label": "people risk driving themselves"
+        "name": "smiley",
+        "label": "finance, digestible"
       }
     ]
   },
   {
+    "id": "s13",
+    "type": "title",
+    "narration": "So what does the burger actually reveal about money?",
+    "heading": "The Reveal",
+    "kicker": "over or undervalued"
+  },
+  {
+    "id": "s56",
+    "type": "image",
+    "src": "img/memes/drake.jpg",
+    "meme": "Drake Hotline Bling",
+    "memeTop": "read a 40-page currency report",
+    "memeBottom": "just check the price of a Big Mac",
+    "narration": "This is the entire appeal in one image. You could wade through central-bank models and exchange-rate forecasts — or you could glance at what a burger costs in two countries and learn most of the same thing in five seconds. The Big Mac democratized a corner of economics that used to belong only to experts."
+  },
+  {
     "id": "s14",
-    "type": "screenshot",
-    "sourceId": "wiki-usprices",
-    "narration": "The research is blunt: the prices of health care in the United States are higher than in other countries — often a third higher or more relative to the economy. Nowhere is that clearer than the emergency room, where a single visit for something minor can generate a bill of two thousand dollars or more, for care that's free or nearly free almost everywhere else."
+    "type": "stage",
+    "motif": "currencyvaluation",
+    "caption": "which currencies are cheap vs dear",
+    "narration": "Here's the magic trick. Convert each country's burger price into dollars and compare it to the American one. The Swiss franc looks heavily overvalued — their burger costs far more than ours. The Japanese yen and the Indian rupee look deeply undervalued — their burgers are cheap. In one glance, the humble Big Mac tells you which currencies are running hot and which are bargains."
   },
   {
     "id": "s44",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "a $2,000 bill for a 20-minute ER visit",
-    "memeBottom": "this is fine",
-    "narration": "For many Americans, this is the quiet dread of getting hurt: not just the injury, but the bill waiting behind it. In most of the world, an emergency is a medical event. In the US, it's also a financial one — and that fear itself changes how people live."
+    "type": "callout",
+    "narration": "Put the extremes in one line. By the burger, the Swiss franc can look over thirty percent overvalued against the dollar, while currencies like the rupee or some emerging-market monies look forty to sixty percent undervalued. That means, in burger terms, your dollar buys roughly twice as much in the cheap countries as the exchange rate alone suggests.",
+    "text": "30% vs 60%",
+    "sub": "burger over- vs under-valuation vs the dollar",
+    "icon": "exchange"
   },
   {
     "id": "s15",
-    "type": "stage",
-    "motif": "erbillshock",
-    "caption": "a basic ER visit, by country",
-    "narration": "Here's the emergency-room gap, and it's staggering. In Spain or the UK, an ER visit for a minor injury: zero. In Australia, maybe a hundred. In Japan, a few hundred. In the United States, that same visit averages well over two thousand dollars, and complex cases run far higher. A twisted ankle treated in two countries can differ in price by a factor of twenty or more."
+    "type": "screenshot",
+    "sourceId": "wiki-exrate",
+    "narration": "This matters because an exchange rate is the rate at which one currency will be exchanged for another. Markets set those rates every second, but they often drift far from what things actually cost on the ground. The Big Mac exposes that drift: when the market rate and the burger rate disagree, it hints a currency may eventually rise or fall toward its true value."
   },
   {
     "id": "s45",
     "type": "character",
     "pose": "explain",
-    "narration": "And the ER is expensive by design, not accident. It must stay staffed and open twenty-four hours, it legally can't turn you away, and its prices are set in a black box no patient ever sees before treatment. You agree to buy something with no idea of the price — the only major purchase in life that works that way. The bill arrives weeks later, and by then it's too late to shop.",
+    "narration": "And sometimes the market slowly proves the burger right. A currency the index flags as badly overvalued often does weaken over the following years, and deeply cheap ones sometimes strengthen. It's far from perfect — but a burger invented as a joke has a genuine track record of spotting currencies that were out of line before the markets caught up.",
     "props": [
       {
-        "name": "hospital",
-        "label": "24/7, can't refuse"
+        "name": "chartdown",
+        "label": "overvalued often falls"
+      },
+      {
+        "name": "chartup",
+        "label": "cheap sometimes rises"
       },
       {
         "name": "warning",
-        "label": "price hidden until after"
-      },
-      {
-        "name": "receipt",
-        "label": "bill arrives weeks later"
+        "label": "imperfect, but telling"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "screenshot",
-    "sourceId": "wiki-oop",
-    "narration": "This is where out-of-pocket expense becomes terrifying — the direct payment of money that may or may not be later reimbursed. An American can do everything right, carry insurance, and still get hit with thousands in surprise charges from an out-of-network doctor they never chose. Medical debt from these bills is a leading cause of bankruptcy in the US, and almost unheard of anywhere else."
+    "type": "character",
+    "pose": "explain",
+    "narration": "But the law of one price breaks for a good reason, and it's the most useful lesson of all. A Big Mac isn't really tradable — you can't ship a cheap Indian burger to Switzerland. So its price is dominated by local costs: the wages of the staff, the rent of the building, local taxes, and beef prices. The burger is cheap where labor and rent are cheap. It's a cost-of-living meter in disguise.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "burgers aren't shippable"
+      },
+      {
+        "name": "house",
+        "label": "local wages + rent dominate"
+      },
+      {
+        "name": "scale",
+        "label": "a cost-of-living meter"
+      }
+    ]
   },
   {
     "id": "s46",
     "type": "character",
     "pose": "explain",
-    "narration": "And surprise billing is the cruelest twist. You can carefully choose an in-network hospital, then be treated by one out-of-network doctor inside it — an anesthesiologist, a radiologist — and get a separate, massive bill you never agreed to. Recent US laws curbed some of this, but the system that created it remains. Diligence alone can't fully protect you.",
+    "narration": "This is why rich countries almost always have pricier burgers, and it isn't a flaw in the index — it's the whole point. High wages mean the person flipping the burger is paid more, so the burger costs more. The Big Mac price is, to a huge degree, just a snapshot of local labor costs. Expensive burger, expensive place to live and work.",
     "props": [
       {
-        "name": "warning",
-        "label": "out-of-network inside in-network"
+        "name": "paystub",
+        "label": "high wages, pricey burger"
       },
       {
-        "name": "receipt",
-        "label": "a bill you never agreed to"
+        "name": "house",
+        "label": "labor cost baked in"
       },
       {
-        "name": "hospital",
-        "label": "diligence isn't enough"
+        "name": "scale",
+        "label": "burger ≈ local wages"
       }
     ]
   },
   {
-    "id": "s59",
-    "type": "callout",
-    "narration": "Here's the uniquely American statistic. Medical bills are involved in a huge share of US personal bankruptcies — a phenomenon that is virtually nonexistent in every other wealthy country. Getting sick, in America, is one of the fastest ways to go broke. In the rest of the rich world, that sentence barely makes sense.",
-    "text": "#1 cause",
-    "sub": "medical debt as a driver of US bankruptcy — unheard of elsewhere",
-    "icon": "warning"
+    "id": "s60",
+    "type": "character",
+    "pose": "explain",
+    "narration": "This is also why you can't get rich arbitraging burgers. If a Big Mac is cheaper in Mexico, you can't buy a truckload and sell them in Switzerland — they'd spoil, and shipping would erase the gap. Non-tradable goods are allowed to have different prices forever, which is exactly why they're such an honest window into local costs.",
+    "props": [
+      {
+        "name": "truck",
+        "label": "can't ship a burger"
+      },
+      {
+        "name": "warning",
+        "label": "no arbitrage"
+      },
+      {
+        "name": "scale",
+        "label": "honest local prices"
+      }
+    ]
   },
   {
     "id": "s17",
     "type": "title",
-    "narration": "So why is the American doctor so uniquely expensive?",
-    "heading": "Why So High",
-    "kicker": "billing, not medicine"
+    "narration": "Which leads to a better question than the raw price: can locals afford it?",
+    "heading": "The Real Cost",
+    "kicker": "burgers per hour"
   },
   {
     "id": "s57",
     "type": "character",
     "pose": "explain",
-    "narration": "And drug prices pour fuel on the fire. The same medication, from the same factory, routinely costs several times more in the US than in countries that negotiate prices as a single national buyer. America largely doesn't, so manufacturers charge what the market bears. Your doctor visit is pricier, and so is almost everything they might prescribe at the end of it.",
+    "narration": "Raw price and real affordability tell different stories, and conflating them is the classic mistake. A country with an expensive burger isn't necessarily a hard place to live — if wages are high, that pricey burger is easy to afford. The number that matters to a local isn't the dollar price. It's the price divided by what they earn.",
     "props": [
       {
-        "name": "pills",
-        "label": "same drug, several× the price"
+        "name": "scale",
+        "label": "price ÷ wages"
       },
       {
         "name": "warning",
-        "label": "no national negotiator"
+        "label": "pricey ≠ unaffordable"
       },
       {
-        "name": "receipt",
-        "label": "pricier prescriptions too"
-      }
-    ]
-  },
-  {
-    "id": "s58",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And there's a myth worth killing: that free healthcare means bad healthcare. The data doesn't support it. Many universal-care countries post better life expectancy, lower infant mortality, and higher patient satisfaction than the US — while spending far less. Paying more at the door buys Americans more paperwork and more stress, not more health.",
-    "props": [
-      {
-        "name": "smiley",
-        "label": "free ≠ worse"
-      },
-      {
-        "name": "chartup",
-        "label": "better outcomes, less spend"
-      },
-      {
-        "name": "warning",
-        "label": "more cost ≠ more health"
+        "name": "paystub",
+        "label": "what matters to a local"
       }
     ]
   },
   {
     "id": "s18",
     "type": "stage",
-    "motif": "universalvspay",
-    "caption": "where your healthcare dollar goes",
-    "narration": "It isn't that American doctors are better paid alone. It's the machine around them. A vast billing industry, armies of administrators, insurers and providers negotiating secret prices, drug costs with no national cap, and the simple fact that there's no single payer forcing prices down. Every layer adds cost, and every layer has to be paid — by you, at the visit."
+    "motif": "bigmacsperhour",
+    "caption": "Big Macs earned per hour of work",
+    "narration": "Here's the twist the sticker price hides. A Big Mac might cost more in dollars in Switzerland, but a Swiss worker earns so much per hour that they can buy many of them with an hour's pay. In a low-wage country, a cheaper burger can actually take far longer to earn. The true cost of anything isn't its price — it's how many minutes of your life it costs."
   },
   {
     "id": "s47",
     "type": "character",
     "pose": "explain",
-    "narration": "And the paperwork alone is staggering. The US spends a far larger share of its health budget on administration — billing, coding, claims, and denials — than any universal system. A huge chunk of your doctor bill isn't paying for medicine at all. It's paying for the small army of people whose entire job is fighting over who owes what.",
+    "narration": "Economists even built a souped-up version called the adjusted index, which accounts for the fact that poorer countries should have cheaper burgers simply because their wages are lower. It's a reminder that a cheap Big Mac isn't automatically a bargain — it might just reflect a place where everything, including pay, is low. Context turns the raw number into real insight.",
     "props": [
       {
-        "name": "ledger",
-        "label": "billing & claims armies"
+        "name": "calculator",
+        "label": "the GDP-adjusted index"
       },
       {
         "name": "warning",
-        "label": "admin eats the budget"
+        "label": "cheap ≠ automatically a deal"
       },
       {
-        "name": "receipt",
-        "label": "paying for paperwork"
+        "name": "scale",
+        "label": "context matters"
       }
     ]
   },
   {
     "id": "s19",
-    "type": "screenshot",
-    "sourceId": "wiki-copay",
-    "narration": "Even the copayment itself — the patient's share of the cost for goods or services rendered — is a cost most of the world finds bizarre. In a universal system, the idea of being charged at the door to see a doctor you already funded through taxes feels backwards. In America, it's just Tuesday. Two systems, two completely different relationships with getting sick."
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Big Macs earned per hour of average wage",
+    "unit": "x",
+    "narration": "Measure it in work instead of dollars. An average worker in Switzerland or the US can earn seven to nine Big Macs with a single hour of labor. In the UK, around five. In Mexico, maybe two. And in India, often less than one — a full hour of work for a single burger. By this measure, the rich-world burger is the cheapest of all, because the time to earn it is so small.",
+    "data": [
+      {
+        "label": "India",
+        "value": 1
+      },
+      {
+        "label": "Mexico",
+        "value": 2
+      },
+      {
+        "label": "UK",
+        "value": 5
+      },
+      {
+        "label": "US",
+        "value": 7
+      },
+      {
+        "label": "Switzerland",
+        "value": 9
+      }
+    ],
+    "highlight": 4
   },
   {
     "id": "s48",
     "type": "callout",
-    "narration": "Say the outcome plainly. The US spends roughly twice as much per person on healthcare as the average rich country, yet has lower life expectancy and leaves millions underinsured. More money, charged at the door, buying worse results. It's the single clearest case of a price tag that doesn't match what it delivers.",
-    "text": "2× spend",
-    "sub": "US healthcare cost per person vs peers — worse outcomes",
-    "icon": "chartup"
+    "narration": "Here's the affordability gap in plain terms. In the richest countries, a worker earns a Big Mac in a few minutes of labor. In the poorest, it can take over an hour — sometimes a big chunk of a daily wage. The same burger is a snack for one worker and a small luxury for another, measured not in money, but in time.",
+    "text": "minutes vs an hour",
+    "sub": "work to earn one Big Mac, rich vs poor country",
+    "icon": "clock"
   },
   {
     "id": "s20",
+    "type": "title",
+    "narration": "So how do you actually use burgernomics in real life?",
+    "heading": "What To Do",
+    "kicker": "your money abroad"
+  },
+  {
+    "id": "s58",
     "type": "character",
     "pose": "present",
-    "narration": "So if you're in the US, protect yourself. Know your deductible and copay before you need care. For non-emergencies, use urgent care or telehealth, which cost a fraction of the ER. Always ask for an itemized bill — they're riddled with errors — and negotiate; hospitals routinely cut prices for people who simply ask. And never skip real emergencies over fear of the bill.",
+    "narration": "And treat it as a sanity check, not gospel. Before assuming a country is a cheap paradise, glance at its burger alongside local wages and a basket of other goods. The index is a brilliant first signal — a five-second read on whether a currency and a cost of living are high or low — but pair it with real numbers before you book the one-way ticket.",
     "props": [
       {
-        "name": "calculator",
-        "label": "know your deductible"
+        "name": "magnifier",
+        "label": "a first signal, not gospel"
       },
       {
-        "name": "hospital",
-        "label": "urgent care over ER"
+        "name": "scale",
+        "label": "pair with real numbers"
       },
       {
-        "name": "receipt",
-        "label": "itemize + negotiate"
+        "name": "globe",
+        "label": "then book the ticket"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "pose": "present",
+    "narration": "The practical payoff is for travelers and remote workers. A strong currency at home plus a cheap-burger country abroad is a wealth cheat code — your money buys dramatically more life there. Check the Big Mac Index before a big trip or a move: a country with a deeply undervalued currency is one where your dollars quietly turn into a fortune.",
+    "props": [
+      {
+        "name": "luggage",
+        "label": "strong money, cheap country"
+      },
+      {
+        "name": "moneybag",
+        "label": "dollars become a fortune"
+      },
+      {
+        "name": "globe",
+        "label": "check before you go"
       }
     ]
   },
@@ -524,59 +568,59 @@
     "id": "s49",
     "type": "character",
     "pose": "present",
-    "narration": "And a few more defenses. Ask the price before any non-urgent test or procedure — you're allowed to, and it's often negotiable. Check every bill against your insurer's summary; errors overwhelmingly favor the hospital. For prescriptions, cash-price apps can beat your insurance copay. In the American system, being an informed, pushy patient is worth real money.",
+    "narration": "And flip it when you earn abroad. If you make money in a strong currency but spend it in a weak-currency country — the heart of the remote-work and digital-nomad boom — the Big Mac Index is basically your cheat sheet. The bigger a country's burger discount versus home, the more your same salary stretches once you land.",
     "props": [
       {
-        "name": "receipt",
-        "label": "ask prices up front"
+        "name": "laptop",
+        "label": "earn strong, spend weak"
       },
       {
-        "name": "magnifier",
-        "label": "audit every bill"
+        "name": "grocerybag",
+        "label": "the burger discount"
       },
       {
-        "name": "moneybag",
-        "label": "be a pushy patient"
+        "name": "chartup",
+        "label": "your salary stretches"
       }
     ]
   },
   {
-    "id": "s60",
+    "id": "s61",
     "type": "character",
     "pose": "present",
-    "narration": "And if you're uninsured, you have more power than you think. Hospitals have a 'cash price' and charity-care programs, and many will slash a bill by half or more for the uninsured who ask — because a partial payment beats chasing a bill forever. Never pay the first number on a hospital invoice. It's an opening offer, not a final one.",
+    "narration": "And watch the index over time for your own currency. If your money's burger starts looking badly overvalued, imports feel cheap and foreign trips are a bargain — but it may be a warning that the currency could weaken. If it looks cheap, your exports and tourism boom. The burger is a slow, friendly early-warning system for the money in your pocket.",
     "props": [
       {
-        "name": "receipt",
-        "label": "ask for the cash price"
+        "name": "chartup",
+        "label": "track your own currency"
       },
       {
-        "name": "handshake",
-        "label": "charity-care programs"
-      },
-      {
-        "name": "moneybag",
-        "label": "the first number is negotiable"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "character",
-    "pose": "explain",
-    "narration": "Because here's the real lesson. A doctor visit costs roughly the same to deliver anywhere — a trained person, a room, fifteen minutes. What differs, by a factor of ten or more, is whether your country decided that seeing a doctor should be a right you prepaid, or a product you're billed for. The price of a checkup isn't about medicine. It's about what a society decided healthcare is.",
-    "props": [
-      {
-        "name": "hospital",
-        "label": "the care costs the same"
-      },
-      {
-        "name": "scale",
-        "label": "right vs product"
+        "name": "warning",
+        "label": "overvalued = a warning"
       },
       {
         "name": "globe",
-        "label": "a societal choice"
+        "label": "a friendly early signal"
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. A Big Mac is the same burger everywhere, so whenever its price changes across a border, the burger isn't what changed — the money did. That one sandwich strips away the illusion of exchange rates and shows you the true value of a currency, the real cost of living, and exactly where a dollar is treated like a king. Economics, hiding in your lunch.",
+    "props": [
+      {
+        "name": "grocerybag",
+        "label": "the burger never changes"
+      },
+      {
+        "name": "exchange",
+        "label": "the money does"
+      },
+      {
+        "name": "scale",
+        "label": "truth, hiding in lunch"
       }
     ]
   },
@@ -584,37 +628,37 @@
     "id": "s50",
     "type": "character",
     "pose": "explain",
-    "narration": "And zoom out on what this price really buys a society. Countries that made the doctor free at the door get people seeking care early, catching disease sooner, and worrying less. Countries that charge get avoidance, debt, and fear stitched into daily life. The price of a visit isn't just a number on a bill — it quietly shapes how healthy and how anxious an entire nation is.",
+    "narration": "And zoom out on the big idea one more time. We think money has a fixed value — a dollar is a dollar. The burger proves it doesn't. What a unit of money is truly worth depends entirely on where you stand and what you're buying. The Big Mac is just the easiest place to see a truth that governs everything: value is local, even when money feels universal.",
     "props": [
       {
-        "name": "smiley",
-        "label": "free = early care, less fear"
-      },
-      {
-        "name": "warning",
-        "label": "charged = avoidance + debt"
+        "name": "exchange",
+        "label": "a dollar isn't a fixed dollar"
       },
       {
         "name": "globe",
-        "label": "it shapes a nation"
-      }
-    ]
-  },
-  {
-    "id": "s22",
-    "type": "character",
-    "pose": "celebrate",
-    "expression": "happy",
-    "narration": "If this reframed what a doctor really costs, hit subscribe — and tell me which price tag you want me to break down next.",
-    "props": [
+        "label": "value is local"
+      },
       {
-        "name": "hospital",
-        "label": "which price tag next?"
+        "name": "grocerybag",
+        "label": "the burger shows it"
       }
     ]
   },
   {
     "id": "s23",
+    "type": "character",
+    "pose": "celebrate",
+    "expression": "happy",
+    "narration": "If this made a burger explain the whole global economy, hit subscribe — and tell me which price tag you want me to break down next.",
+    "props": [
+      {
+        "name": "grocerybag",
+        "label": "which price tag next?"
+      }
+    ]
+  },
+  {
+    "id": "s24",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",

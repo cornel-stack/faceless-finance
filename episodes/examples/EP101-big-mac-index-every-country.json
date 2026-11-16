@@ -1,0 +1,784 @@
+{
+  "id": "EP101",
+  "series": "Napkin Numbers",
+  "title": "The Price of a Big Mac in Every Country (and What It Reveals)",
+  "slug": "big-mac-index-every-country",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP101 — The Price Tag series (topic 91). The Big Mac Index: same burger $2 (India) to ~$8 (Switzerland) → a PPP measure of currency over/undervaluation. Rank burger price by country; US = baseline; pricier burger = overvalued currency, cheaper = undervalued. Law of one price breaks because burgers aren't tradable → price = local wages+rent (cost-of-living meter). Affordability = Big Macs earned per hour (rich-world burger is 'cheapest' in time). Use for travel/remote-work arbitrage. 3 new motifs (bigmacbars/currencyvaluation/bigmacsperhour); 2 charts. Sources: Big Mac Index/Purchasing power parity/Exchange rate/Law of one price + 1. Named The Economist (a publication, not a person → no photo). NO local synth; CI synths. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The exact same Big Mac — same two all-beef patties, same bun — costs about two dollars in India and nearly eight dollars in Switzerland. That's not really a story about burgers. That price gap is a secret window into which countries are expensive, which currencies are overvalued, and where your money would stretch the furthest on Earth. Today we rank the price of a Big Mac in every country, and decode what it reveals.",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "$2 in India"
+        },
+        {
+          "name": "moneybag",
+          "label": "$8 in Switzerland"
+        },
+        {
+          "name": "scale",
+          "label": "every country ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap that economists secretly love. The identical burger ranges from under two dollars to nearly eight, depending on the country. The Economist magazine turned this into a famous tool — the Big Mac Index — because a burger made almost the same way everywhere is a shockingly good measuring stick for the real value of money.",
+      "text": "$2 vs $8",
+      "sub": "the same Big Mac, cheapest vs priciest country",
+      "icon": "grocerybag"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank Big Mac prices around the world, explain the clever economics hiding in a burger, reveal which currencies are secretly overvalued or dirt cheap, and show how long you'd have to work to afford one in each country. Because this silly-sounding index quietly explains exchange rates, cost of living, and where a traveler's dollar becomes a fortune.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the prices"
+        },
+        {
+          "name": "exchange",
+          "label": "over or undervalued?"
+        },
+        {
+          "name": "clock",
+          "label": "work to afford one"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "a Big Mac is just fast food",
+      "memeBottom": "a Big Mac is a global measure of currency value",
+      "narration": "Because buried inside the price of a burger is one of the simplest, most intuitive ideas in all of economics. Before we rank them, let's unwrap exactly what the Big Mac is measuring."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, why a burger can measure the value of money.",
+      "heading": "The Burgernomics",
+      "kicker": "PPP in a bun"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-bigmac",
+      "narration": "The Big Mac Index is an informal way of measuring the purchasing power parity between two currencies. The logic is beautiful in its simplicity: a Big Mac is made from roughly the same ingredients everywhere, so if it costs far more in one country than another, that tells you something real about whether a currency is overpriced or cheap. A burger becomes an economist."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the beauty is that it's deliberately unscientific. The Economist invented it in nineteen eighty-six half as a joke, a way to make exchange-rate theory digestible. But it worked so well that economists now use it seriously, and it has correctly flagged overvalued and undervalued currencies for decades. A gag became one of the most quoted numbers in global finance.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "invented 1986, half a joke"
+        },
+        {
+          "name": "chartup",
+          "label": "it actually works"
+        },
+        {
+          "name": "globe",
+          "label": "now quoted worldwide"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the index quietly spawned imitators, which proves the idea travels. There's a tall-latte index, an iPhone index, even a Netflix index — each doing the same trick with a different standardized product. But the burger remains king, because almost nowhere on Earth is without a McDonald's, and almost everyone knows exactly what a Big Mac is.",
+      "props": [
+        {
+          "name": "coffeecup",
+          "label": "latte & iPhone indexes too"
+        },
+        {
+          "name": "globe",
+          "label": "McDonald's is everywhere"
+        },
+        {
+          "name": "grocerybag",
+          "label": "the burger stays king"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-ppp2",
+      "narration": "The deeper concept is purchasing power parity — a measure of the price of specific goods in different countries. The idea is that, in theory, the same item should cost the same everywhere once you convert currencies. When it doesn't — when a burger is twice the price across a border — the gap reveals that one currency is buying more, or less, than the exchange rate claims."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Think of purchasing power parity as the honest exchange rate. The rate on the currency market is set by traders, speculation, and capital flows. The PPP rate asks a simpler question: how much money do you need in each country to buy the same stuff? When those two rates disagree, the gap is where the opportunity, and the distortion, lives.",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "market rate vs honest rate"
+        },
+        {
+          "name": "scale",
+          "label": "same stuff, how much money?"
+        },
+        {
+          "name": "warning",
+          "label": "the gap is the signal"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's why the index endures. For nearly forty years, across booms, busts, and crises, a burger has quietly tracked the real value of the world's currencies better than you'd ever expect a sandwich to. Simplicity is its superpower: everyone understands a burger, and that makes a hard idea suddenly obvious.",
+      "text": "since 1986",
+      "sub": "a burger tracking world currencies for ~40 years",
+      "icon": "grocerybag"
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "sourceId": "wiki-loop",
+      "narration": "This rests on the law of one price, which holds that identical goods sold at different locations should be sold for the same price. In a perfect, frictionless world, a Big Mac would cost the same dollars everywhere. It doesn't — and every dollar of difference is a clue about wages, rents, taxes, and the true value of the local money."
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Why a Big Mac and not, say, gold or oil? Because it's gloriously standardized. McDonald's makes it to nearly the same specification in a hundred countries, using mostly local ingredients and local labor. That makes it the perfect test subject: hold the product constant, let the country vary, and whatever's left in the price difference is pure economics.",
+      "props": [
+        {
+          "name": "store",
+          "label": "same spec worldwide"
+        },
+        {
+          "name": "scale",
+          "label": "hold the product constant"
+        },
+        {
+          "name": "globe",
+          "label": "let the country vary"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank what a Big Mac actually costs by country.",
+      "heading": "The Ranking",
+      "kicker": "burger by country"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One honest caveat before the ranking: the Big Mac isn't identical everywhere. In India it's made with chicken or paneer instead of beef, portion sizes vary, and local tastes tweak the recipe. The index isn't laboratory-perfect. But it's close enough that the price differences still tell a remarkably accurate story about money.",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "recipe varies a bit"
+        },
+        {
+          "name": "warning",
+          "label": "not laboratory-perfect"
+        },
+        {
+          "name": "smiley",
+          "label": "still remarkably telling"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "bigmacbars",
+      "caption": "price of a Big Mac, by country",
+      "narration": "Here's the burger leaderboard. Switzerland and Norway top it near eight dollars. The Eurozone and the US sit around six. Britain, about five. Then it drops — Japan near three, Mexico around four, and India, with its vegetarian version, closer to two. The same sandwich, same recipe, four times the price depending on which flag flies over the restaurant."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Notice what sits at the top: small, rich, high-wage nations — Switzerland, Norway, the Eurozone's wealthiest corners. And at the bottom, fast-growing but lower-wage economies. The burger ladder is almost a wealth ladder. Where people earn the most, the burger costs the most, because the worker behind the counter is part of what you're buying.",
+      "props": [
+        {
+          "name": "mountain",
+          "label": "rich nations at the top"
+        },
+        {
+          "name": "chartup",
+          "label": "burger ladder = wealth ladder"
+        },
+        {
+          "name": "paystub",
+          "label": "you buy the worker too"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Price of a Big Mac ($)",
+      "unit": "$",
+      "narration": "Round the numbers and line them up. India around two dollars, Japan three, Mexico four, the UK five, the US six, and Switzerland near eight. That range isn't random. The priciest-burger countries tend to have strong currencies and high wages; the cheapest tend to have weaker currencies and lower costs. The burger is quietly ranking the world's money.",
+      "data": [
+        {
+          "label": "India",
+          "value": 2
+        },
+        {
+          "label": "Japan",
+          "value": 3
+        },
+        {
+          "label": "Mexico",
+          "value": 4
+        },
+        {
+          "label": "UK",
+          "value": 5
+        },
+        {
+          "label": "US",
+          "value": 6
+        },
+        {
+          "label": "Switzerland",
+          "value": 8
+        }
+      ],
+      "highlight": 0
+    },
+    {
+      "id": "s43",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "think your country is cheap",
+      "memeBottom": "check what a Big Mac costs there first",
+      "narration": "This is the quiet humbling the index delivers. People assume they know whether their country is expensive — until they see the burger lined up against the world. The Big Mac has no national pride and no spin. It just quietly tells you where your money is weak and where it's strong."
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the US price is the anchor everything else is measured against. Because the Big Mac Index compares every country to the American burger, the US becomes the baseline. A country whose burger costs more than America's has a currency that looks overvalued; one whose burger costs less has a currency that looks cheap. One sandwich, and suddenly you can see the whole foreign-exchange market.",
+      "props": [
+        {
+          "name": "flagUS",
+          "label": "US = the baseline"
+        },
+        {
+          "name": "chartup",
+          "label": "pricier burger = overvalued"
+        },
+        {
+          "name": "chartdown",
+          "label": "cheaper burger = undervalued"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is why the index is such a great teaching tool for exchange rates, which otherwise feel abstract. 'The yen is undervalued' means nothing to most people. 'A Big Mac costs half as much in Tokyo as in Zurich' means everything. The burger translates the invisible machinery of global finance into something you can literally taste.",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "abstract rates made real"
+        },
+        {
+          "name": "grocerybag",
+          "label": "you can taste it"
+        },
+        {
+          "name": "smiley",
+          "label": "finance, digestible"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So what does the burger actually reveal about money?",
+      "heading": "The Reveal",
+      "kicker": "over or undervalued"
+    },
+    {
+      "id": "s56",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "read a 40-page currency report",
+      "memeBottom": "just check the price of a Big Mac",
+      "narration": "This is the entire appeal in one image. You could wade through central-bank models and exchange-rate forecasts — or you could glance at what a burger costs in two countries and learn most of the same thing in five seconds. The Big Mac democratized a corner of economics that used to belong only to experts."
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "currencyvaluation",
+      "caption": "which currencies are cheap vs dear",
+      "narration": "Here's the magic trick. Convert each country's burger price into dollars and compare it to the American one. The Swiss franc looks heavily overvalued — their burger costs far more than ours. The Japanese yen and the Indian rupee look deeply undervalued — their burgers are cheap. In one glance, the humble Big Mac tells you which currencies are running hot and which are bargains."
+    },
+    {
+      "id": "s44",
+      "type": "callout",
+      "narration": "Put the extremes in one line. By the burger, the Swiss franc can look over thirty percent overvalued against the dollar, while currencies like the rupee or some emerging-market monies look forty to sixty percent undervalued. That means, in burger terms, your dollar buys roughly twice as much in the cheap countries as the exchange rate alone suggests.",
+      "text": "30% vs 60%",
+      "sub": "burger over- vs under-valuation vs the dollar",
+      "icon": "exchange"
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "sourceId": "wiki-exrate",
+      "narration": "This matters because an exchange rate is the rate at which one currency will be exchanged for another. Markets set those rates every second, but they often drift far from what things actually cost on the ground. The Big Mac exposes that drift: when the market rate and the burger rate disagree, it hints a currency may eventually rise or fall toward its true value."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And sometimes the market slowly proves the burger right. A currency the index flags as badly overvalued often does weaken over the following years, and deeply cheap ones sometimes strengthen. It's far from perfect — but a burger invented as a joke has a genuine track record of spotting currencies that were out of line before the markets caught up.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "overvalued often falls"
+        },
+        {
+          "name": "chartup",
+          "label": "cheap sometimes rises"
+        },
+        {
+          "name": "warning",
+          "label": "imperfect, but telling"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "pose": "explain",
+      "narration": "But the law of one price breaks for a good reason, and it's the most useful lesson of all. A Big Mac isn't really tradable — you can't ship a cheap Indian burger to Switzerland. So its price is dominated by local costs: the wages of the staff, the rent of the building, local taxes, and beef prices. The burger is cheap where labor and rent are cheap. It's a cost-of-living meter in disguise.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "burgers aren't shippable"
+        },
+        {
+          "name": "house",
+          "label": "local wages + rent dominate"
+        },
+        {
+          "name": "scale",
+          "label": "a cost-of-living meter"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is why rich countries almost always have pricier burgers, and it isn't a flaw in the index — it's the whole point. High wages mean the person flipping the burger is paid more, so the burger costs more. The Big Mac price is, to a huge degree, just a snapshot of local labor costs. Expensive burger, expensive place to live and work.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "high wages, pricey burger"
+        },
+        {
+          "name": "house",
+          "label": "labor cost baked in"
+        },
+        {
+          "name": "scale",
+          "label": "burger ≈ local wages"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is also why you can't get rich arbitraging burgers. If a Big Mac is cheaper in Mexico, you can't buy a truckload and sell them in Switzerland — they'd spoil, and shipping would erase the gap. Non-tradable goods are allowed to have different prices forever, which is exactly why they're such an honest window into local costs.",
+      "props": [
+        {
+          "name": "truck",
+          "label": "can't ship a burger"
+        },
+        {
+          "name": "warning",
+          "label": "no arbitrage"
+        },
+        {
+          "name": "scale",
+          "label": "honest local prices"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Which leads to a better question than the raw price: can locals afford it?",
+      "heading": "The Real Cost",
+      "kicker": "burgers per hour"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Raw price and real affordability tell different stories, and conflating them is the classic mistake. A country with an expensive burger isn't necessarily a hard place to live — if wages are high, that pricey burger is easy to afford. The number that matters to a local isn't the dollar price. It's the price divided by what they earn.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "price ÷ wages"
+        },
+        {
+          "name": "warning",
+          "label": "pricey ≠ unaffordable"
+        },
+        {
+          "name": "paystub",
+          "label": "what matters to a local"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "bigmacsperhour",
+      "caption": "Big Macs earned per hour of work",
+      "narration": "Here's the twist the sticker price hides. A Big Mac might cost more in dollars in Switzerland, but a Swiss worker earns so much per hour that they can buy many of them with an hour's pay. In a low-wage country, a cheaper burger can actually take far longer to earn. The true cost of anything isn't its price — it's how many minutes of your life it costs."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Economists even built a souped-up version called the adjusted index, which accounts for the fact that poorer countries should have cheaper burgers simply because their wages are lower. It's a reminder that a cheap Big Mac isn't automatically a bargain — it might just reflect a place where everything, including pay, is low. Context turns the raw number into real insight.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "the GDP-adjusted index"
+        },
+        {
+          "name": "warning",
+          "label": "cheap ≠ automatically a deal"
+        },
+        {
+          "name": "scale",
+          "label": "context matters"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Big Macs earned per hour of average wage",
+      "unit": "x",
+      "narration": "Measure it in work instead of dollars. An average worker in Switzerland or the US can earn seven to nine Big Macs with a single hour of labor. In the UK, around five. In Mexico, maybe two. And in India, often less than one — a full hour of work for a single burger. By this measure, the rich-world burger is the cheapest of all, because the time to earn it is so small.",
+      "data": [
+        {
+          "label": "India",
+          "value": 1
+        },
+        {
+          "label": "Mexico",
+          "value": 2
+        },
+        {
+          "label": "UK",
+          "value": 5
+        },
+        {
+          "label": "US",
+          "value": 7
+        },
+        {
+          "label": "Switzerland",
+          "value": 9
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "Here's the affordability gap in plain terms. In the richest countries, a worker earns a Big Mac in a few minutes of labor. In the poorest, it can take over an hour — sometimes a big chunk of a daily wage. The same burger is a snack for one worker and a small luxury for another, measured not in money, but in time.",
+      "text": "minutes vs an hour",
+      "sub": "work to earn one Big Mac, rich vs poor country",
+      "icon": "clock"
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "So how do you actually use burgernomics in real life?",
+      "heading": "What To Do",
+      "kicker": "your money abroad"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And treat it as a sanity check, not gospel. Before assuming a country is a cheap paradise, glance at its burger alongside local wages and a basket of other goods. The index is a brilliant first signal — a five-second read on whether a currency and a cost of living are high or low — but pair it with real numbers before you book the one-way ticket.",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "a first signal, not gospel"
+        },
+        {
+          "name": "scale",
+          "label": "pair with real numbers"
+        },
+        {
+          "name": "globe",
+          "label": "then book the ticket"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "pose": "present",
+      "narration": "The practical payoff is for travelers and remote workers. A strong currency at home plus a cheap-burger country abroad is a wealth cheat code — your money buys dramatically more life there. Check the Big Mac Index before a big trip or a move: a country with a deeply undervalued currency is one where your dollars quietly turn into a fortune.",
+      "props": [
+        {
+          "name": "luggage",
+          "label": "strong money, cheap country"
+        },
+        {
+          "name": "moneybag",
+          "label": "dollars become a fortune"
+        },
+        {
+          "name": "globe",
+          "label": "check before you go"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And flip it when you earn abroad. If you make money in a strong currency but spend it in a weak-currency country — the heart of the remote-work and digital-nomad boom — the Big Mac Index is basically your cheat sheet. The bigger a country's burger discount versus home, the more your same salary stretches once you land.",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "earn strong, spend weak"
+        },
+        {
+          "name": "grocerybag",
+          "label": "the burger discount"
+        },
+        {
+          "name": "chartup",
+          "label": "your salary stretches"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "pose": "present",
+      "narration": "And watch the index over time for your own currency. If your money's burger starts looking badly overvalued, imports feel cheap and foreign trips are a bargain — but it may be a warning that the currency could weaken. If it looks cheap, your exports and tourism boom. The burger is a slow, friendly early-warning system for the money in your pocket.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "track your own currency"
+        },
+        {
+          "name": "warning",
+          "label": "overvalued = a warning"
+        },
+        {
+          "name": "globe",
+          "label": "a friendly early signal"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. A Big Mac is the same burger everywhere, so whenever its price changes across a border, the burger isn't what changed — the money did. That one sandwich strips away the illusion of exchange rates and shows you the true value of a currency, the real cost of living, and exactly where a dollar is treated like a king. Economics, hiding in your lunch.",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "the burger never changes"
+        },
+        {
+          "name": "exchange",
+          "label": "the money does"
+        },
+        {
+          "name": "scale",
+          "label": "truth, hiding in lunch"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the big idea one more time. We think money has a fixed value — a dollar is a dollar. The burger proves it doesn't. What a unit of money is truly worth depends entirely on where you stand and what you're buying. The Big Mac is just the easiest place to see a truth that governs everything: value is local, even when money feels universal.",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "a dollar isn't a fixed dollar"
+        },
+        {
+          "name": "globe",
+          "label": "value is local"
+        },
+        {
+          "name": "grocerybag",
+          "label": "the burger shows it"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this made a burger explain the whole global economy, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "grocerybag",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-bigmac",
+      "name": "Big Mac Index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+      "quote": "an informal way of measuring the purchasing power parity"
+    },
+    {
+      "id": "wiki-ppp2",
+      "name": "Purchasing power parity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+      "quote": "a measure of the price of specific goods in different countries"
+    },
+    {
+      "id": "wiki-loop",
+      "name": "Law of one price (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Law_of_one_price",
+      "quote": "identical goods sold at different locations should be sold for the same price"
+    },
+    {
+      "id": "wiki-exrate",
+      "name": "Exchange rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exchange_rate",
+      "quote": "the rate at which one currency will be exchanged for another currency"
+    },
+    {
+      "id": "wiki-currency",
+      "name": "Currency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Currency",
+      "quote": "a standardized form of money used as a medium of exchange"
+    }
+  ],
+  "youtube": {
+    "title": "The Price of a Big Mac in Every Country (and What It Reveals)",
+    "alts": [
+      "The Big Mac Index Explained: What a Burger Says About Money",
+      "Why the Same Big Mac Costs $2 in India and $8 in Switzerland"
+    ],
+    "hook": "The exact same Big Mac costs about $2 in India and nearly $8 in Switzerland — and that gap isn't really about burgers. It's The Economist's famous Big Mac Index, a surprisingly powerful way to measure purchasing power parity and reveal which currencies are overvalued and which are secretly cheap. This is the price of a Big Mac in every country, ranked, and what it reveals. We explain the economics hiding in a burger (purchasing power parity and the law of one price — identical goods 'should' cost the same everywhere), rank burger prices by country (with the US as the baseline: a pricier burger = an overvalued currency, a cheaper one = undervalued), show why the law breaks (a Big Mac isn't tradable, so its price is really a snapshot of local wages and rent — a cost-of-living meter), and measure true affordability in 'Big Macs earned per hour of work' (by which the rich-world burger is actually the cheapest). Plus how to use burgernomics as a traveler or remote worker to find where your money becomes a fortune. Fully cited.",
+    "bullets": [
+      "Big Mac price ranked: ~$2 (India) to ~$8 (Switzerland)",
+      "The Big Mac Index & purchasing power parity, explained",
+      "Which currencies are overvalued vs secretly cheap",
+      "Why the law of one price breaks (it's local wages & rent)",
+      "True cost: Big Macs earned per hour of work",
+      "Using burgernomics for travel & remote-work arbitrage"
+    ],
+    "tags": [
+      "big mac index",
+      "purchasing power parity",
+      "ppp explained",
+      "cost of living by country",
+      "currency valuation",
+      "exchange rates explained",
+      "big mac price",
+      "the economist",
+      "burgernomics",
+      "economics explained",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#bigmacindex",
+      "#economics",
+      "#currency",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "THE BIG MAC",
+      "hookBot": "INDEX",
+      "napkinNumber": "$2 vs $8",
+      "napkinSub": "same burger, by country",
+      "deco": "grocerybag"
+    },
+    "chapters": [
+      [
+        "why a burger can measure the value of money",
+        "Burgernomics"
+      ],
+      [
+        "rank what a Big Mac actually costs",
+        "The ranking"
+      ],
+      [
+        "what does the burger actually reveal",
+        "The reveal"
+      ],
+      [
+        "can locals afford it",
+        "The real cost"
+      ],
+      [
+        "use burgernomics in real life",
+        "What to do"
+      ]
+    ]
+  }
+}

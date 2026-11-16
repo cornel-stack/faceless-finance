@@ -7428,6 +7428,72 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={462} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>every layer adds cost — and you pay it at the visit</text>
       </svg>
     );
+  } else if (m === "bigmacbars") {
+    // Price of a Big Mac by country — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["India", 2, green],
+      ["Japan", 3, "#9cc47f"],
+      ["Mexico", 4, gold],
+      ["UK", 5, "#d98b5f"],
+      ["US", 6, "#c0583a"],
+      ["Switzerland", 8, red],
+    ];
+    const x0 = 270, xMax = 830, maxV = 8;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">price of a Big Mac, by country</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same burger, 4× the price — the money is what changed</text>
+      </svg>
+    );
+  } else if (m === "currencyvaluation") {
+    // Currencies over- / under-valued vs the dollar (burger view).
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const over: [string, string][] = [["Swiss franc", "+30%"], ["Norwegian krone", "+20%"]];
+    const under: [string, string][] = [["Japanese yen", "−40%"], ["Indian rupee", "−55%"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what the burger says about money</text>
+        <text x={300} y={98} fontSize={17} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">overvalued ↑</text>
+        <text x={690} y={98} fontSize={17} fontWeight={900} fill={green} textAnchor="middle" fontFamily="Georgia, serif">undervalued ↓</text>
+        {over.map(([n, v], i) => { const y = 140 + i * 90; return <g key={i} opacity={interpolate(grow, [i * 0.15, i * 0.15 + 0.3], [0, 1], clampBoth)}><rect x={120} y={y} width={360} height={70} rx={10} fill="#f0d9cf" stroke={ink} strokeWidth={3} /><text x={150} y={y + 44} fontSize={17} fontWeight={800} fill={ink} fontFamily={sans}>{n}</text><text x={450} y={y + 44} fontSize={20} fontWeight={900} fill={red} textAnchor="end" fontFamily="Georgia, serif">{v}</text></g>; })}
+        {under.map(([n, v], i) => { const y = 140 + i * 90; return <g key={i} opacity={interpolate(grow, [i * 0.15 + 0.2, i * 0.15 + 0.5], [0, 1], clampBoth)}><rect x={520} y={y} width={360} height={70} rx={10} fill="#cfe3d4" stroke={ink} strokeWidth={3} /><text x={550} y={y + 44} fontSize={17} fontWeight={800} fill={ink} fontFamily={sans}>{n}</text><text x={850} y={y + 44} fontSize={20} fontWeight={900} fill={green} textAnchor="end" fontFamily="Georgia, serif">{v}</text></g>; })}
+        <text x={VW / 2} y={400} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>vs the US dollar, by the price of a burger</text>
+      </svg>
+    );
+  } else if (m === "bigmacsperhour") {
+    // Big Macs earned per hour of average wage, by country.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["India", 1, red], ["Mexico", 2, "#d98b5f"], ["UK", 5, gold], ["US", 7, "#9cc47f"], ["Switzerland", 9, green]];
+    const base = 430, maxH = 300, maxV = 9;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">Big Macs earned per hour of work</text>
+        <RLine x1={110} y1={base} x2={880} y2={base} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, v, col], i) => {
+          const h = maxH * (v / maxV) * draw; const x = 200 + i * 150;
+          return (
+            <g key={i}>
+              <rect x={x - 52} y={base - h} width={104} height={h} rx={5} fill={col as string} stroke={ink} strokeWidth={3.5} />
+              <text x={x} y={base - h - 10} fontSize={17} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{v}</text>
+              <text x={x} y={base + 24} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={base + 48} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>in rich countries the burger is 'cheapest' — in time</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];
