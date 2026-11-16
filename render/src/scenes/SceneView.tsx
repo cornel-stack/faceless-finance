@@ -7700,6 +7700,70 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={y0 + 34} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the higher it climbed, the harder the fall</text>
       </svg>
     );
+  } else if (m === "startupcostbars") {
+    // First-year cost to form an LLC by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Kentucky", 40, green],
+      ["Ohio", 100, "#9cc47f"],
+      ["Texas", 300, gold],
+      ["Massachusetts", 500, "#d98b5f"],
+      ["California", 870, red],
+    ];
+    const x0 = 290, xMax = 840, maxV = 870;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={56} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">first-year cost to form an LLC, by state</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 96 + i * 66; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.12, i * 0.12 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 28} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={40} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 33} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same paperwork — a 20× toll to open the door</text>
+      </svg>
+    );
+  } else if (m === "structurecostladder") {
+    // Sole prop -> LLC -> corporation, rising cost + protection.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const steps: [string, string, string][] = [
+      ["sole proprietor", "free · no protection", green],
+      ["LLC", "modest fee · real protection", gold],
+      ["corporation", "priciest · built to raise capital", red],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the ladder of business structures</text>
+        {steps.map(([t, d], i) => {
+          const y = 360 - i * 96; const w = 320 + i * 120; const op = interpolate(reveal, [i * 0.2, i * 0.2 + 0.3], [0, 1], clampBoth);
+          const col = steps[i][2];
+          return (
+            <g key={i} opacity={op}>
+              <rect x={VW / 2 - w / 2} y={y} width={w} height={80} rx={10} fill={col} stroke={ink} strokeWidth={4} />
+              <text x={VW / 2} y={y + 34} fontSize={19} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{t}</text>
+              <text x={VW / 2} y={y + 60} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{d}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>pay more as you climb — get more protection &amp; options</text>
+      </svg>
+    );
+  } else if (m === "startuphiddencosts") {
+    // The pile of ongoing fees nobody mentions.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string, string][] = [["registered agent", "~$100+/yr"], ["annual report", "state fee"], ["franchise tax", "just to exist"], ["licenses & permits", "per trade"], ["insurance", "liability"], ["separate bank acct", "fees"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the fees nobody warns you about</text>
+        {items.map(([t, d], i) => { const x = i % 2 === 0 ? 300 : 680; const y = 110 + Math.floor(i / 2) * 110; const op = interpolate(reveal, [i * 0.12, i * 0.12 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 180} y={y} width={360} height={82} rx={10} fill={["#f0d9cf", "#efe9da", "#f0d9cf", "#efe9da", "#f0d9cf", "#efe9da"][i]} stroke={ink} strokeWidth={3} /><text x={x - 155} y={y + 38} fontSize={16} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{t}</text><text x={x - 155} y={y + 62} fontSize={13} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>{d}</text></g>; })}
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>small alone — together, $700-1,000 a year to stay legal</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

@@ -1,0 +1,715 @@
+{
+  "id": "EP105",
+  "series": "Napkin Numbers",
+  "title": "The Cost of Starting a Business in Every State",
+  "slug": "start-business-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP105 — The Price Tag series (topic 95). Rank cost to start a business by state: $0 sole prop; LLC $40 (KY/MT) to ~$870 first-year CA (incl $800 franchise tax). Structures ladder (sole prop free/no protection → LLC sweet spot → corp for VC). Hidden ongoing fees (registered agent, annual report, franchise tax, licenses, insurance = $700-1,000/yr). The fog-of-fees kills dreams. What to do: start sole-prop + validate, DIY the LLC filing, register where you operate (bust Delaware myth), separate bank account early. 3 new motifs (startupcostbars/structurecostladder/startuphiddencosts); 2 charts. Sources: Small business/Sole proprietorship/Incorporation/Business license/Startup company. NO local synth. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "You can legally start a business in America for zero dollars — or you can pay over eight hundred dollars a year just for the privilege of existing, before you've earned a single cent. The gap depends entirely on which state you register in and how you set it up. Today we rank the real cost of starting a business in every state, and expose the fees nobody warns you about.",
+      "props": [
+        {
+          "name": "store",
+          "label": "$0 to start"
+        },
+        {
+          "name": "receipt",
+          "label": "or $800+/yr to exist"
+        },
+        {
+          "name": "scale",
+          "label": "every state ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that surprises every new founder. Registering a simple company — an LLC — costs as little as forty dollars in some states, and several hundred up front plus hundreds every year in others. California alone charges an eight-hundred-dollar annual tax just to keep your business alive, profit or no profit. Where you incorporate is a financial decision before you've even started.",
+      "text": "$40 vs $800+",
+      "sub": "to start and keep a business, cheapest vs priciest state",
+      "icon": "store"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the cost of launching a business across the states, decode the business structures and what each one costs, expose the sneaky ongoing fees that ambush new owners, and show how to start lean and legal for almost nothing. Because the barrier to starting a business isn't usually a big idea or a bank loan. It's a pile of small fees most people never see coming.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the states"
+        },
+        {
+          "name": "briefcase",
+          "label": "structures & costs"
+        },
+        {
+          "name": "warning",
+          "label": "the hidden fees"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "form a company in your pricey home state",
+      "memeBottom": "register somewhere cheap and simple",
+      "narration": "Because thousands of would-be founders overpay to start, or get scared off entirely, simply because nobody told them how cheap it can be. Before we rank the states, let's define what you're actually paying to create."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what starting a business legally even means.",
+      "heading": "The Setup",
+      "kicker": "structure & registration"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-smallbiz",
+      "narration": "Most new ventures are small businesses — corporations, partnerships, or sole proprietorships which have a small number of employees. The cheapest path of all is the simplest: just start. In most places, if you sell something under your own name, you're already a business in the eyes of the law — no filing, no fee, nothing. The question is only how much structure you want on top of that."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the small-business label isn't just a vibe — it unlocks real advantages. Governments reserve grants, loans, and contracts specifically for businesses under certain size thresholds. So being officially small, and registered, can actually open doors that an unregistered side hustle can't. The paperwork isn't only a cost. Done right, it's a key to support most founders never claim.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "grants, loans, contracts"
+        },
+        {
+          "name": "store",
+          "label": "reserved for small biz"
+        },
+        {
+          "name": "smiley",
+          "label": "paperwork opens doors"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-sole",
+      "narration": "That simplest form is a sole proprietorship — a type of enterprise owned and run by only one person. It costs nothing to create; you and the business are legally the same. The catch is that there's no protection: if the business gets sued or owes money, your personal savings and home are on the line. Free to start, but your whole life is the collateral."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And most real businesses start exactly here, quietly. The vast majority of American companies are not venture-backed startups — they're sole proprietors: freelancers, contractors, tutors, shop owners, side-hustlers. They began with no fancy structure, no investors, no fees. If you've ever sold anything on your own, you were already walking the first, free step of this entire ladder.",
+      "props": [
+        {
+          "name": "store",
+          "label": "most firms start free"
+        },
+        {
+          "name": "laptop",
+          "label": "freelancers, side-hustlers"
+        },
+        {
+          "name": "smiley",
+          "label": "you've likely done step one"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's how common it is. Something like three-quarters of all US businesses have no employees at all — they're one-person operations. The image of starting a business as a big, expensive, risky leap is mostly a myth. For most founders, it begins as a quiet, nearly-free experiment that only later grows structure and cost.",
+      "text": "75%",
+      "sub": "of US businesses are one-person, no employees",
+      "icon": "store"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So the real decision is how much legal protection to buy. Stay a sole proprietor and it's free but risky. Form an LLC — a limited liability company — and for a modest fee, the business becomes a separate legal person, shielding your personal assets if things go wrong. That shield is what most of the fees in this episode are actually buying: a wall between your business and your life.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "sole prop: free but exposed"
+        },
+        {
+          "name": "shield",
+          "label": "LLC: a legal wall"
+        },
+        {
+          "name": "store",
+          "label": "fees buy protection"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here's the real reason the LLC exists. Without it, if your business is sued or can't pay a debt, creditors can come after your house, your car, and your savings. The LLC draws a legal line: lose the business, but keep your life. For a modest yearly fee, that protection is one of the best deals in all of finance.",
+      "text": "your house",
+      "sub": "what's at risk without the LLC's legal wall",
+      "icon": "shield"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank what it costs to form a company by state.",
+      "heading": "The Ranking",
+      "kicker": "the price to start"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One honest note before the ranking: the state filing fee is often the smallest number in the whole budget. For many businesses, the real start-up money goes to equipment, inventory, a website, or first rent — not the government. We're ranking the legal cost to exist, which is just the entry ticket. The cost to actually operate depends entirely on what you're building.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "filing fee is the small part"
+        },
+        {
+          "name": "store",
+          "label": "gear, inventory, rent cost more"
+        },
+        {
+          "name": "scale",
+          "label": "legal cost ≠ real cost"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "startupcostbars",
+      "caption": "first-year cost to form an LLC, by state",
+      "narration": "Here's the first-year cost to form an LLC, state by state. In the cheapest — Kentucky, Montana, Arizona — it's forty to fifty dollars, one time, and almost nothing after. In the middle, a couple hundred. And at the top, California stacks a seventy-dollar filing fee onto an eight-hundred-dollar annual franchise tax, so your first year costs nearly nine hundred dollars before you've sold a thing."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the cheap states aren't doing you a favor by accident — they want the businesses. Low-fee, low-tax states compete to attract entrepreneurs, betting that more companies means more jobs and more tax later. The pricey states are betting the opposite: that businesses will pay to access their big markets. Where you register is you picking a side in that quiet competition.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "cheap states court founders"
+        },
+        {
+          "name": "scale",
+          "label": "fees vs market access"
+        },
+        {
+          "name": "mappin",
+          "label": "you pick a side"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "First-year cost to form an LLC ($)",
+      "unit": "$",
+      "narration": "Put the numbers in a row. Kentucky around forty dollars, Ohio about a hundred, Texas three hundred, Massachusetts five hundred, and California nearly nine hundred once its franchise tax hits. Same business, same paperwork — but a twentyfold difference in what the state charges you just to open the door. The idea is identical everywhere. The toll is not.",
+      "data": [
+        {
+          "label": "Kentucky",
+          "value": 40
+        },
+        {
+          "label": "Ohio",
+          "value": 100
+        },
+        {
+          "label": "Texas",
+          "value": 300
+        },
+        {
+          "label": "Massachusetts",
+          "value": 500
+        },
+        {
+          "label": "California",
+          "value": 870
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the sneaky California franchise tax, because it catches thousands. It's eight hundred dollars a year, due even if your business makes zero dollars, even if it's dormant. Founders form an LLC for a side idea, forget it, and get hit with hundreds in penalties years later. In some states, simply existing as a company has a steep annual price, profit or not.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "$800 even at zero profit"
+        },
+        {
+          "name": "calendar",
+          "label": "due every single year"
+        },
+        {
+          "name": "receipt",
+          "label": "penalties pile up"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the up-front fee is the part that fools people. Many new owners proudly register in their expensive home state, then get a surprise bill every single year to keep the company active. The real cost of a business isn't forming it — it's maintaining it. A cheap state to start in can be an expensive state to stay in, and vice versa.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "up-front fee fools people"
+        },
+        {
+          "name": "calendar",
+          "label": "the yearly bill surprises"
+        },
+        {
+          "name": "scale",
+          "label": "start cheap vs stay cheap"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "Which depends a lot on the structure you choose.",
+      "heading": "The Structures",
+      "kicker": "what each one costs"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And don't over-engineer the structure, which is the classic rookie move. New founders obsess over S-corp versus C-corp versus LLC before they've earned a dollar, burning money on setups they don't need yet. The right structure for most people on day one is the simplest one that gives basic protection. You can always upgrade later — and by then you'll actually know what you need.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "don't over-engineer it"
+        },
+        {
+          "name": "shield",
+          "label": "simplest with protection"
+        },
+        {
+          "name": "chartup",
+          "label": "upgrade when you grow"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "structurecostladder",
+      "caption": "sole prop, LLC, corporation — rising cost",
+      "narration": "Here's the ladder of business structures and their costs. At the bottom, the sole proprietorship: free, instant, no protection. In the middle, the LLC: a modest fee, real liability protection, simple taxes — the sweet spot for most small businesses. At the top, the corporation: pricier to set up and maintain, more paperwork, but built for raising investment and going big. You pay more as you climb, and you get more protection and more options in return."
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "pay a lawyer thousands to incorporate",
+      "memeBottom": "file a simple LLC yourself for the state fee",
+      "narration": "This is the upgrade that saves new founders a fortune. Expensive lawyers and filing services sell convenience and fear, but forming a basic LLC is a short online form in most states. Unless your situation is genuinely complex, doing it yourself is the difference between spending fifty dollars and spending five hundred."
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "sourceId": "wiki-incorp",
+      "narration": "Going the corporate route means incorporation — the formation of a new corporate body. It's what you do if you plan to raise money from investors or issue stock. But it comes with the most fees, the most rules, and annual reports in every state you operate. For a freelancer or a local shop, it's usually overkill. For a startup chasing venture capital, it's essential."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And here's the Delaware myth worth busting. Everyone's heard you should incorporate in Delaware — but that advice is for startups raising venture capital, who benefit from its specialized courts. For a normal small business, registering in Delaware while operating elsewhere just means paying fees in two states instead of one. Register where you actually do business. Simpler is almost always cheaper.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "Delaware = for VC startups"
+        },
+        {
+          "name": "receipt",
+          "label": "else you pay two states"
+        },
+        {
+          "name": "mappin",
+          "label": "register where you operate"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "But the formation fee is just the beginning. Here come the hidden costs.",
+      "heading": "The Hidden Fees",
+      "kicker": "what ambushes you"
+    },
+    {
+      "id": "s56",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "six separate fees before my first sale",
+      "memeBottom": "this is fine",
+      "narration": "For a lot of first-time founders, this is the deflating moment: the idea was exciting, and then came the filing fee, the license, the agent, the insurance quote. It feels like death by a thousand small bills. The trick is knowing which of those bills you actually need on day one — and the honest answer is: far fewer than it seems."
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "sourceId": "wiki-license",
+      "narration": "First, licenses. On top of registering, many businesses need a business license — the authorization to start a business issued by the local government. A restaurant, a salon, a contractor, a daycare — each needs specific permits, and they stack: state, county, and city, each with its own fee and renewal. The registration was the easy part. The permits are where it gets real."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And licenses vary wildly by what you do, not just where. Sell coffee, and you need food permits and health inspections. Cut hair, and you need a cosmetology license. Build decks, and you need a contractor's license and bond. A plain online consultant might need nothing at all. Before you budget, find out exactly which permits your specific trade and town demand — the surprises live here.",
+      "props": [
+        {
+          "name": "store",
+          "label": "permits depend on the trade"
+        },
+        {
+          "name": "warning",
+          "label": "food, trades, beauty regulated"
+        },
+        {
+          "name": "magnifier",
+          "label": "check your specific rules"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "startuphiddencosts",
+      "caption": "the fees nobody warns you about",
+      "narration": "Then the pile nobody mentions. A registered agent, often a hundred-plus dollars a year. Annual report fees. Franchise or privilege taxes just for existing. Industry licenses and permits. Business insurance. A separate bank account's fees. None of them are huge alone, but together they can turn a 'free' business into a thousand-dollar-a-year commitment before you've made your first sale."
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Add up the quiet annual pile and it stings. A registered agent, an annual report fee, a state franchise tax, a basic license, and modest business insurance can easily total seven hundred to over a thousand dollars a year — the recurring cost of simply keeping a small company alive and legal, before any profit at all.",
+      "text": "$700-1,000/yr",
+      "sub": "the recurring cost just to keep a business legal",
+      "icon": "receipt"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is exactly where dreams quietly die. A would-be founder adds up the filing fee, the licenses, the agent, the insurance, the annual taxes — and decides it's all too expensive and too confusing to bother. The tragedy is that most of it is optional or tiny when you start lean. The fees didn't stop a bad business. They stopped a person from ever trying.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "where dreams die"
+        },
+        {
+          "name": "receipt",
+          "label": "the fees pile up"
+        },
+        {
+          "name": "smiley",
+          "label": "most are optional early"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And beware the service businesses that prey on this confusion. Flashy sites charge a few hundred dollars to file forms you could submit yourself for the state fee, then upsell registered-agent and compliance packages you rarely need at the start. They sell fear of getting it wrong. Learn the three or four things that actually matter, and you'll never need them.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "filing-service upsells"
+        },
+        {
+          "name": "receipt",
+          "label": "they sell fear"
+        },
+        {
+          "name": "smiley",
+          "label": "the basics are simple"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "So how do you actually start, cheaply and correctly?",
+      "heading": "What To Do",
+      "kicker": "start lean & legal"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "present",
+      "narration": "And use the free help that already exists. Nearly every state runs a small-business development center offering free guidance on exactly which fees, licenses, and forms you need. The government that charges the fees will also, for free, walk you through them. Most founders never ask — and overpay a filing service for information they could have gotten for nothing.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "free state biz centers"
+        },
+        {
+          "name": "store",
+          "label": "free guidance on fees"
+        },
+        {
+          "name": "moneybag",
+          "label": "skip the paid services"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "sourceId": "wiki-startup",
+      "narration": "Remember what a startup really is: a company or project typically undertaken by an entrepreneur. The entrepreneur's superpower is starting before everything is perfect. You don't need a fancy structure to test an idea — you need a customer. Begin as a simple sole proprietor, prove people will pay, and add the legal structure and its costs only once there's a real business worth protecting."
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "present",
+      "narration": "So start as a sole proprietor for free, validate that people will actually buy, and only then form an LLC — which you can do yourself online for the state fee, skipping the pricey lawyers and filing services. Choose your state deliberately: register where you actually operate, and don't fall for 'incorporate in Delaware' hype unless you're raising serious investment. Lean, legal, and cheap beats fancy and broke.",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "sole prop → validate first"
+        },
+        {
+          "name": "store",
+          "label": "DIY the LLC filing"
+        },
+        {
+          "name": "warning",
+          "label": "skip the Delaware hype"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And separate the business from yourself early, even cheaply. A dedicated bank account and simple bookkeeping from day one cost almost nothing but save you from tax nightmares and pierce-the-veil disasters later. Mixing personal and business money is the single most common, most expensive mistake new owners make. A free second account quietly prevents it.",
+      "props": [
+        {
+          "name": "bank",
+          "label": "separate bank account"
+        },
+        {
+          "name": "ledger",
+          "label": "simple bookkeeping"
+        },
+        {
+          "name": "warning",
+          "label": "never mix the money"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And budget for the taxes nobody mentions, because the real cost of a business shows up at tax time. As your own boss you owe self-employment tax on top of income tax, and you must set it aside yourself — no employer withholds it. Stash roughly a quarter to a third of profit for taxes from day one, and that painful April surprise simply never happens.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "self-employment tax"
+        },
+        {
+          "name": "jar",
+          "label": "set aside 25-33% of profit"
+        },
+        {
+          "name": "warning",
+          "label": "no one withholds it for you"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. The cost of starting a business has never been lower — a few hundred dollars, often less, versus the fortune it took a generation ago. The barrier today isn't money. It's the fog of fees and paperwork that makes it feel impossible, when it isn't. Cut through the fog, start lean, and you can be a legitimate business owner this week, for the price of a nice dinner.",
+      "props": [
+        {
+          "name": "store",
+          "label": "cheaper than ever"
+        },
+        {
+          "name": "warning",
+          "label": "the barrier is the fog"
+        },
+        {
+          "name": "smiley",
+          "label": "a business this week"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on what this really unlocks. For most of history, starting a business meant big capital, connections, and risk. Today, a laptop, a few small fees, and an afternoon of paperwork make almost anyone a business owner — with legal protection and access to support. The fees we ranked are real, but they're pocket change against the opportunity. The only unforgivable cost is never starting.",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "a laptop + small fees"
+        },
+        {
+          "name": "store",
+          "label": "almost anyone can start"
+        },
+        {
+          "name": "smiley",
+          "label": "the real cost is not trying"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this made starting a business feel possible, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "store",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-smallbiz",
+      "name": "Small business (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Small_business",
+      "quote": "which have a small number of employees"
+    },
+    {
+      "id": "wiki-sole",
+      "name": "Sole proprietorship (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sole_proprietorship",
+      "quote": "a type of enterprise owned and run by only one person"
+    },
+    {
+      "id": "wiki-incorp",
+      "name": "Incorporation (business) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Incorporation_(business)",
+      "quote": "the formation of a new corporate body"
+    },
+    {
+      "id": "wiki-license",
+      "name": "Business license (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Business_license",
+      "quote": "the authorization to start a business issued by the local government"
+    },
+    {
+      "id": "wiki-startup",
+      "name": "Startup company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Startup_company",
+      "quote": "a company or project typically undertaken by an entrepreneur"
+    }
+  ],
+  "youtube": {
+    "title": "The Cost of Starting a Business in Every State",
+    "alts": [
+      "How Much It Really Costs to Start a Business (Every State)",
+      "Why Starting a Business Costs $0 in One State and $870 in Another"
+    ],
+    "hook": "You can legally start a business in America for $0 — or pay over $800 a year just for the privilege of existing, before you earn a cent. It depends entirely on which state you register in and how you set it up. This is the real cost of starting a business in every state, ranked, plus the fees nobody warns you about. Forming a simple LLC costs as little as $40 in states like Kentucky and Montana, but California stacks a $70 filing fee onto an $800 annual franchise tax (due even at zero profit). We decode the structures and what each costs (a free sole proprietorship with no protection, the LLC sweet spot that shields your personal assets, and the pricier corporation built for raising investment), expose the hidden ongoing fees that ambush new owners (registered agent, annual reports, franchise taxes, licenses, insurance — often $700–$1,000/year), and show how to start lean and legal for almost nothing: begin as a sole proprietor, validate that people will pay, DIY your LLC filing for the state fee, register where you actually operate (and skip the Delaware hype unless you're raising venture capital), and separate your business bank account from day one. Fully cited.",
+    "bullets": [
+      "Cost to form an LLC ranked: ~$40 (KY) vs ~$870 (CA)",
+      "The structures: free sole prop vs LLC vs corporation",
+      "California's $800 franchise tax — due even at $0 profit",
+      "Hidden ongoing fees: ~$700–$1,000/year to stay legal",
+      "The Delaware myth, busted",
+      "How to start lean & legal for almost nothing"
+    ],
+    "tags": [
+      "start a business",
+      "cost of starting a business",
+      "LLC cost",
+      "how to start an LLC",
+      "small business",
+      "sole proprietorship",
+      "business license",
+      "llc by state",
+      "entrepreneurship",
+      "franchise tax",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#smallbusiness",
+      "#llc",
+      "#entrepreneur",
+      "#startup"
+    ],
+    "thumbnail": {
+      "hookTop": "STARTING A BUSINESS",
+      "hookBot": "IN EVERY STATE",
+      "napkinNumber": "$40 vs $870",
+      "napkinSub": "to form an LLC, by state",
+      "deco": "store"
+    },
+    "chapters": [
+      [
+        "what starting a business legally even means",
+        "The setup"
+      ],
+      [
+        "rank what it costs to form a company",
+        "The ranking"
+      ],
+      [
+        "the structure you choose",
+        "The structures"
+      ],
+      [
+        "come the hidden costs",
+        "The hidden fees"
+      ],
+      [
+        "start, cheaply and correctly",
+        "What to do"
+      ]
+    ]
+  }
+}

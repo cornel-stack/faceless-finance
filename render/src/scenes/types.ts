@@ -272,7 +272,9 @@ export interface StageScene extends Base {
     // EP103 (The Price Tag — assets by country) additions:
     | "assetmixbars" | "cashtraplines" | "goldculture"
     // EP104 (The Price Tag — household debt by country) additions:
-    | "debtbycountrybars" | "debttypessplit" | "debtcrisiscurve";
+    | "debtbycountrybars" | "debttypessplit" | "debtcrisiscurve"
+    // EP105 (The Price Tag — cost to start a business by state) additions:
+    | "startupcostbars" | "structurecostladder" | "startuphiddencosts";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
