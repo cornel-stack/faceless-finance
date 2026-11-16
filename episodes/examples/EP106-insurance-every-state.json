@@ -1,0 +1,739 @@
+{
+  "id": "EP106",
+  "series": "Napkin Numbers",
+  "title": "Insurance: What Car, Home and Health Cost in Every State",
+  "slug": "insurance-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP106 — The Price Tag series (topic 96). Rank combined car+home+health insurance premiums by state (~$6K Vermont to ~$14K Louisiana/Florida; home insurance swings most: $800 inland vs $7K hurricane zones). How insurance works (risk pool, actuaries price personal risk). Drivers: catastrophe/climate risk, state laws, local costs, your profile (incl credit score in most states). The uninsurability crisis (Florida/CA/LA insurers leaving; caps home values; spreading inland). What to do: raise deductible + emergency fund, shop yearly, bundle, fix credit, harden home, don't over-insure. 3 new motifs (insurancetotalbars/premiumdrivers/riskpoolhow-> used premiumdrivers only? actually used insurancetotalbars/premiumdrivers + need 3rd); Sources: Insurance/Risk pool/Actuary/Home insurance/Deductible. NO local synth. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The same car, the same house, and the same body can cost you twice as much to insure in one state as in another. Between your auto, home, and health premiums, a family in a high-risk state can hand insurers over fourteen thousand dollars a year — while a family somewhere calmer pays half that, for identical coverage. Today we rank what insurance really costs in every state, and expose what's secretly driving your bill.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "car + home + health"
+        },
+        {
+          "name": "receipt",
+          "label": "$7K vs $14K/yr"
+        },
+        {
+          "name": "scale",
+          "label": "every state ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number hiding in plain sight on your bank statement. Add up car, home, and health insurance, and a typical American household spends somewhere between seven and fourteen thousand dollars a year on premiums — one of the largest expenses most people never actually shop. And where you live can double it, for coverage that's basically the same.",
+      "text": "$7K-$14K/yr",
+      "sub": "a household's total insurance bill, by state",
+      "icon": "shield"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the states by their total insurance burden, explain how insurance actually works and why it's priced the way it is, expose the disasters and laws quietly inflating your premiums, warn about the places becoming literally uninsurable, and show how to cut the bill. Because insurance is the expense you pay forever, rarely use, and almost never question.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the states"
+        },
+        {
+          "name": "warning",
+          "label": "what drives premiums"
+        },
+        {
+          "name": "moneybag",
+          "label": "how to cut it"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "insurance is just a boring monthly bill",
+      "memeBottom": "insurance is a risk bet priced by your zip code",
+      "narration": "Because your premium isn't a fixed price — it's a calculated bet on how likely you are to file a claim, and that bet changes dramatically with geography. Before we rank the states, let's define what you're actually buying."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what insurance actually is, and how it's priced.",
+      "heading": "How It Works",
+      "kicker": "pooling risk"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-insurance",
+      "narration": "At its core, insurance is a means of protection from financial loss. You pay a steady, predictable fee so that a rare, catastrophic cost — a crash, a fire, a hospital stay — doesn't bankrupt you. You're not really buying a service. You're buying certainty: trading a small, known loss every month for protection against a huge, unknown one."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is why insurance can feel like a scam even when it isn't. Most years, you pay and get nothing back, which feels like pure loss. But that's the entire point: you're buying protection against the rare year that would otherwise destroy you. Insurance you never use isn't wasted money. It's the premium for sleeping at night.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "feels like a scam"
+        },
+        {
+          "name": "shield",
+          "label": "but it's buying certainty"
+        },
+        {
+          "name": "smiley",
+          "label": "the price of sleep"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-riskpool",
+      "narration": "It works through a risk pool — a form of risk management mostly practiced by insurance companies. Thousands of people each pay in, most never file a big claim, and that collected money covers the unlucky few who do. Your premium is really your share of the pool's total expected losses. The riskier your pool, the more everyone in it pays."
+    },
+    {
+      "id": "s52",
+      "type": "stage",
+      "motif": "riskpoolhow",
+      "caption": "how the risk pool works",
+      "narration": "Picture the pool directly. A thousand homeowners each pay a premium into one giant pot. In a normal year, a handful suffer a fire or a flood, and the pot pays to rebuild their homes. Everyone else gets nothing but peace of mind. That's the whole machine: the many quietly cover the unlucky few, and your premium is simply your fair share of the group's expected bad luck."
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the pool only works if it's big and varied. If only the highest-risk people buy insurance, the pot drains fast and premiums skyrocket — a death spiral insurers fear. That's why healthy insurance spreads risk across millions of different people and places. The moment a pool fills with nothing but hurricane-coast homes, the math breaks, and that's exactly what's happening in the riskiest states.",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "big, varied pool = stable"
+        },
+        {
+          "name": "warning",
+          "label": "all-risk pool = death spiral"
+        },
+        {
+          "name": "house",
+          "label": "coast-only pools break"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "sourceId": "wiki-actuary",
+      "narration": "And the price is set by an actuary — a professional with advanced mathematical skills who deals with the measurement and management of risk. Actuaries crunch decades of data on crashes, storms, and illnesses to predict how likely you are to cost them money. Your premium isn't arbitrary. It's a precise mathematical estimate of your personal risk, priced to the dollar."
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Here's how finely they price you. Insurers now use dozens of variables — your exact address, your credit score, your car's model, even your past claim history — to estimate your risk to the cent. Two neighbors on the same street can pay noticeably different premiums. You aren't buying a product off a shelf. You're being individually quoted a number built just for you.",
+      "text": "dozens of factors",
+      "sub": "what actuaries use to price your personal risk",
+      "icon": "calculator"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank the states by total insurance cost.",
+      "heading": "The Ranking",
+      "kicker": "the premium burden"
+    },
+    {
+      "id": "s54",
+      "type": "callout",
+      "narration": "Put the lifetime number in perspective. Over a forty-year adult life, a household spending ten thousand dollars a year on insurance will pay roughly four hundred thousand dollars in premiums — more than many people spend on their actual house. It's one of the largest lifetime expenses almost nobody ever adds up or shops around.",
+      "text": "$400K",
+      "sub": "lifetime insurance premiums for a typical household",
+      "icon": "receipt"
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "insurancetotalbars",
+      "caption": "combined car + home + health premiums, by state",
+      "narration": "Here's the combined annual premium for car, home, and health, state by state. Calmer, lower-risk states like Vermont and Ohio sit near the bottom, around six or seven thousand. Texas and California climb higher. And disaster-prone states — Florida and Louisiana, battered by hurricanes — top the chart near fourteen thousand. Same coverage, but your state's luck and weather decide the bill."
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the ranking has shifted fast. States that were cheap to insure a decade ago — parts of the Gulf Coast, wildfire country in the West — have rocketed up as disasters mounted. Insurance is a rear-view mirror on risk: today's premiums reflect yesterday's catastrophes, and they only move one direction once the losses start piling up.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "rankings shifting fast"
+        },
+        {
+          "name": "warning",
+          "label": "disasters push states up"
+        },
+        {
+          "name": "mappin",
+          "label": "risk moves, premiums follow"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Combined car + home + health premiums ($/yr)",
+      "unit": "$",
+      "narration": "Put the totals in a row. Vermont around six thousand a year, Ohio seven, Texas nine, California ten, Florida thirteen, and Louisiana near fourteen thousand. The gap between the cheapest and priciest state is roughly eight thousand dollars a year — enough to fund a vacation or a retirement contribution, vanishing into premiums decided largely by your zip code.",
+      "data": [
+        {
+          "label": "Vermont",
+          "value": 6000
+        },
+        {
+          "label": "Ohio",
+          "value": 7000
+        },
+        {
+          "label": "Texas",
+          "value": 9000
+        },
+        {
+          "label": "California",
+          "value": 10000
+        },
+        {
+          "label": "Florida",
+          "value": 13000
+        },
+        {
+          "label": "Louisiana",
+          "value": 14000
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And health insurance is the giant inside this total, especially in America. For a family, health premiums alone can dwarf car and home combined — often over twenty thousand dollars a year between the employee and employer share. We fold in a typical personal portion here, but remember: in the US, the biggest insurance bill of all is usually the one for your own body.",
+      "props": [
+        {
+          "name": "hospital",
+          "label": "health is the giant"
+        },
+        {
+          "name": "receipt",
+          "label": "can dwarf car + home"
+        },
+        {
+          "name": "warning",
+          "label": "the body costs most"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And home insurance is where the state gap explodes the most. In a quiet inland state, insuring a house might cost under a thousand dollars a year. In hurricane-prone Florida or Louisiana, the same house can cost six or seven thousand — if you can get covered at all. Climate risk has turned home insurance from a routine bill into the fastest-rising cost of owning a home in disaster zones.",
+      "props": [
+        {
+          "name": "house",
+          "label": "home premiums swing most"
+        },
+        {
+          "name": "warning",
+          "label": "$800 vs $7,000"
+        },
+        {
+          "name": "chartup",
+          "label": "climate drives it"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "buy the beautiful coastal house",
+      "memeBottom": "be able to actually insure it",
+      "narration": "This is the brutal new calculation for anyone buying in a disaster zone. The dream home on the coast or in the hills comes with an insurance bill — or an insurance refusal — that can dwarf the mortgage. Increasingly, the question isn't whether you can afford the house. It's whether you can afford to protect it."
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So what actually sets your premium so high, or low?",
+      "heading": "The Drivers",
+      "kicker": "risk, disasters, laws"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice how little of this is actually about you. You can have a perfect driving record, a brand-new roof, and flawless health, and still pay a fortune because of where you live and who else is in your pool. Insurance is one of the few big expenses where your personal virtue is often outweighed by your geography. The zip code frequently beats the behavior.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "geography beats behavior"
+        },
+        {
+          "name": "warning",
+          "label": "perfect record, high bill"
+        },
+        {
+          "name": "scale",
+          "label": "the pool outweighs you"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "premiumdrivers",
+      "caption": "what builds your insurance bill",
+      "narration": "Four forces set your premium. First, catastrophe risk — hurricanes, wildfires, floods, and the climate trends making them worse. Second, state laws and regulation, which decide required coverage and how freely insurers can raise rates. Third, local costs — pricier repairs, medical care, and litigation mean pricier claims. And fourth, you: your age, record, credit, and claim history. Stack those four, and you've explained almost any premium."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And state regulation cuts both ways, in ways that surprise people. States that tightly cap how much insurers can charge sound consumer-friendly — but insurers may respond by leaving the market, shrinking choice and coverage. States that let rates float freely keep insurers around, but premiums can spike. There's no free lunch: someone always pays for the risk, either in price or in availability.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "caps vs free rates"
+        },
+        {
+          "name": "warning",
+          "label": "caps can push insurers out"
+        },
+        {
+          "name": "receipt",
+          "label": "someone always pays"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the fastest-rising driver by far is climate. Insured losses from storms, floods, and wildfires have climbed steeply over recent decades, and insurers price forward, not backward — they raise premiums today for the disasters they expect tomorrow. So even if your own area has been lucky, you can watch your bill rise simply because the models now see more risk on the horizon everywhere.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "climate is the top driver"
+        },
+        {
+          "name": "chartup",
+          "label": "insurers price forward"
+        },
+        {
+          "name": "globe",
+          "label": "bills rise before the storm"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is why identical people pay wildly different prices. Two drivers with spotless records, the same car, can pay double or half depending on their state's accident rates, repair costs, and insurance laws. You're not just insuring yourself — you're joining your state's risk pool, and inheriting the cost of everyone else's crashes, storms, and lawsuits along with it.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "you inherit the pool's risk"
+        },
+        {
+          "name": "car",
+          "label": "same driver, different price"
+        },
+        {
+          "name": "mappin",
+          "label": "your state's crashes & storms"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "callout",
+      "narration": "Here's a factor most people never suspect: your credit score. In the majority of US states, insurers are legally allowed to use credit to set your premium, arguing it predicts claims. So two identical drivers can pay very different rates purely because one has better credit. Fixing your credit can quietly cut your insurance bill as much as a clean driving record.",
+      "text": "your credit",
+      "sub": "secretly sets your premium in most states",
+      "icon": "creditcard"
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "And in some states, the problem is no longer the price. It's getting covered at all.",
+      "heading": "The Uninsurable",
+      "kicker": "when insurers leave"
+    },
+    {
+      "id": "s57",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "my insurer just dropped my coverage",
+      "memeBottom": "this is fine",
+      "narration": "For a growing number of homeowners in disaster zones, this is the letter they dread: a non-renewal notice, dropping coverage through no fault of their own. It isn't a billing problem you can shop away — it's the market itself retreating. And it's the clearest sign yet that some places are becoming too risky to insure at any price."
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "sourceId": "wiki-homeins",
+      "narration": "Home insurance — a type of property insurance that covers a private residence — is quietly collapsing in the riskiest places. In parts of Florida, California, and Louisiana, major insurers have stopped writing new policies entirely, because the losses from hurricanes and wildfires have grown faster than any premium they could charge. The market is breaking exactly where people need it most."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the uninsurability wave is spreading inland, not just along the coasts. Wildfire risk is hitting the mountain West, flood risk is reaching places that never flooded before, and hail and tornado losses are rising across the middle of the country. The map of 'safe' states is shrinking every year. Insurance is becoming an early-warning system for where climate change is quietly hitting hardest.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "spreading inland"
+        },
+        {
+          "name": "globe",
+          "label": "wildfire, flood, hail"
+        },
+        {
+          "name": "chartup",
+          "label": "the 'safe' map shrinks"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And when private insurers flee, homeowners get pushed onto expensive last-resort state plans, or go uninsured entirely — which means a single disaster can wipe out their largest asset overnight. A house you can't insure is a house you can barely sell or mortgage. In the hardest-hit zones, the uninsurability crisis is quietly starting to cap home values and trap owners in place.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "pushed to last-resort plans"
+        },
+        {
+          "name": "house",
+          "label": "can't insure, can't sell"
+        },
+        {
+          "name": "chartdown",
+          "label": "it caps home values"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this creates a slow-motion trap for owners. If insurance becomes unaffordable or unavailable in your area after you've bought, you can't simply leave — buyers face the same problem, so your home gets harder to sell and worth less. The people most exposed are often those who bought their dream home years ago and are now stuck watching the insurance market close around them.",
+      "props": [
+        {
+          "name": "house",
+          "label": "hard to sell, worth less"
+        },
+        {
+          "name": "warning",
+          "label": "stuck in place"
+        },
+        {
+          "name": "chartdown",
+          "label": "the market closes in"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "title",
+      "narration": "So how do you actually cut a bill you can't avoid?",
+      "heading": "What To Do",
+      "kicker": "shrink the premium"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And review your coverage amounts, not just your price. Many people are quietly underinsured — their policy would rebuild a house at old costs, not today's, leaving a brutal gap after a disaster. Others pay for coverage they'll never use. Once a year, check that you're insured for what it would actually cost to replace what you have — no more, and crucially, no less.",
+      "props": [
+        {
+          "name": "magnifier",
+          "label": "check coverage amounts"
+        },
+        {
+          "name": "warning",
+          "label": "underinsured = a gap"
+        },
+        {
+          "name": "scale",
+          "label": "match it to replacement cost"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "screenshot",
+      "sourceId": "wiki-deductible",
+      "narration": "The most powerful lever is the deductible — the amount paid by the policy holder before an insurance provider will pay. Raise it, and your premium drops, sometimes sharply. The trick is to insure against disasters you can't afford, not minor dings you can. A high deductible with a healthy emergency fund behind it is often the cheapest smart way to be covered."
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And understand what the deductible really trades. A low deductible means a smaller surprise when you claim, but a bigger bill every single month forever. A high deductible flips it: cheap every month, but you must be able to absorb the hit when disaster strikes. The right choice isn't about comfort — it's whether you have the savings to self-insure the small stuff.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "low vs high deductible"
+        },
+        {
+          "name": "jar",
+          "label": "need savings for high"
+        },
+        {
+          "name": "moneybag",
+          "label": "self-insure the small stuff"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "character",
+      "pose": "present",
+      "narration": "Beyond that, shop relentlessly every year — loyalty is quietly punished, as insurers raise rates on customers who never leave. Bundle your car and home for a discount. Fix your credit, which secretly drives premiums in most states. And harden your home against your local disaster — a new roof, storm shutters, defensible space — because insurers reward lower risk with lower bills.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "shop yearly, bundle"
+        },
+        {
+          "name": "creditcard",
+          "label": "fix your credit"
+        },
+        {
+          "name": "shield",
+          "label": "harden the home"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And don't over-insure what you don't need to. Dropping collision coverage on an old car worth little, skipping extended warranties and tiny add-ons, and not insuring things you could easily replace yourself all cut the bill with zero real risk. Insure the catastrophes that would ruin you; proudly self-insure everything small enough to shrug off. That single principle quietly saves people thousands.",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "drop coverage you don't need"
+        },
+        {
+          "name": "warning",
+          "label": "skip tiny add-ons"
+        },
+        {
+          "name": "shield",
+          "label": "insure only catastrophes"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "pose": "present",
+      "narration": "And ask about every discount, because insurers rarely volunteer them. Safety features, security systems, bundling, paying annually instead of monthly, low mileage, good-student and professional discounts — each shaves the bill, and most go unclaimed simply because no one asked. A single phone call reviewing available discounts can quietly cut a premium by ten or twenty percent.",
+      "props": [
+        {
+          "name": "phone",
+          "label": "ask about every discount"
+        },
+        {
+          "name": "shield",
+          "label": "safety, bundle, low-mileage"
+        },
+        {
+          "name": "moneybag",
+          "label": "often unclaimed"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Insurance is a bet on your risk, and your state fills in most of the odds before you ever sign. You can't change the hurricanes or the laws — but you can choose your deductible, your provider, and how much risk you quietly carry yourself. The goal was never zero risk. It's paying a fair price to protect what you genuinely can't afford to lose, and not a dollar more.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "pay for real risk only"
+        },
+        {
+          "name": "shield",
+          "label": "protect what you can't lose"
+        },
+        {
+          "name": "warning",
+          "label": "not a dollar more"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on what insurance really is at a societal level: a promise that we catch each other when the worst happens. It only works when the pool is broad and the risk is shared. As climate and costs fracture that pool — splitting the lucky from the exposed — insurance is quietly becoming one of the clearest front lines of inequality. Where you can afford to live is starting to mean where you can afford to be protected.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "catching each other"
+        },
+        {
+          "name": "warning",
+          "label": "the pool is fracturing"
+        },
+        {
+          "name": "scale",
+          "label": "protection as inequality"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this made your insurance bill make sense, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-insurance",
+      "name": "Insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Insurance",
+      "quote": "a means of protection from financial loss"
+    },
+    {
+      "id": "wiki-riskpool",
+      "name": "Risk pool (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Risk_pool",
+      "quote": "a form of risk management that is mostly practiced by insurance companies"
+    },
+    {
+      "id": "wiki-actuary",
+      "name": "Actuary (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Actuary",
+      "quote": "a professional with advanced mathematical skills who deals with the measurement and management of risk"
+    },
+    {
+      "id": "wiki-homeins",
+      "name": "Home insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_insurance",
+      "quote": "a type of property insurance that covers a private residence"
+    },
+    {
+      "id": "wiki-deductible",
+      "name": "Deductible (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deductible",
+      "quote": "by the policy holder before an insurance provider will pay"
+    }
+  ],
+  "youtube": {
+    "title": "Insurance: What Car, Home and Health Cost in Every State",
+    "alts": [
+      "Why Insurance Costs Twice as Much in Some States",
+      "The Real Cost of Car, Home & Health Insurance by State"
+    ],
+    "hook": "The same car, house, and body can cost twice as much to insure in one state as another. Between auto, home and health premiums, a family in a high-risk state can hand insurers $14,000+ a year, while a family somewhere calmer pays half that for identical coverage. This is what insurance really costs in every state, ranked, and what's secretly driving your bill. We rank combined car + home + health premiums by state (~$6K in Vermont to ~$14K in Louisiana and Florida, where hurricanes send home insurance from under $1,000 to $6,000–$7,000), explain how insurance actually works (risk pools and actuaries pricing your personal risk to the dollar), expose the four forces behind your premium (catastrophe/climate risk, state laws, local repair and medical costs, and your own profile — including your credit score, which legally sets rates in most states), warn about the uninsurability crisis spreading from the coasts inland (major insurers leaving Florida, California and Louisiana, quietly capping home values), and show how to cut the bill: raise your deductible with an emergency fund behind it, shop every year, bundle, fix your credit, harden your home, and stop over-insuring the small stuff. Fully cited.",
+    "bullets": [
+      "Combined premiums ranked: ~$6K (VT) vs ~$14K (LA/FL)",
+      "How insurance works: risk pools and actuaries",
+      "The 4 drivers — including your credit score",
+      "Home insurance: $800 inland vs $7,000 in hurricane zones",
+      "The uninsurability crisis spreading inland",
+      "How to cut it: deductible, shopping, credit, hardening"
+    ],
+    "tags": [
+      "insurance by state",
+      "car insurance",
+      "home insurance",
+      "health insurance cost",
+      "cost of insurance",
+      "homeowners insurance",
+      "insurance premiums",
+      "deductible",
+      "uninsurable",
+      "climate risk insurance",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#insurance",
+      "#homeinsurance",
+      "#carinsurance",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "INSURANCE:",
+      "hookBot": "EVERY STATE",
+      "napkinNumber": "$6K vs $14K",
+      "napkinSub": "car + home + health, by state",
+      "deco": "shield"
+    },
+    "chapters": [
+      [
+        "what insurance actually is, and how it's priced",
+        "How it works"
+      ],
+      [
+        "rank the states by total insurance cost",
+        "The ranking"
+      ],
+      [
+        "what actually sets your premium",
+        "The drivers"
+      ],
+      [
+        "getting covered at all",
+        "The uninsurable"
+      ],
+      [
+        "cut a bill you can't avoid",
+        "What to do"
+      ]
+    ]
+  }
+}

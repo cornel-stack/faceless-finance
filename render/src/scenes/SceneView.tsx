@@ -7764,6 +7764,61 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>small alone — together, $700-1,000 a year to stay legal</text>
       </svg>
     );
+  } else if (m === "insurancetotalbars") {
+    // Combined car+home+health premiums by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Vermont", 6000, green],
+      ["Ohio", 7000, "#9cc47f"],
+      ["Texas", 9000, gold],
+      ["California", 10000, "#d98b5f"],
+      ["Florida", 13000, "#c0583a"],
+      ["Louisiana", 14000, red],
+    ];
+    const x0 = 270, xMax = 820, maxV = 14000;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={20} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">combined car + home + health premiums ($/yr)</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={14} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 10} y={y + 31} fontSize={14} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${((v as number) / 1000)}K</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same coverage — your zip code decides the bill</text>
+      </svg>
+    );
+  } else if (m === "premiumdrivers") {
+    // Four forces that set a premium.
+    const reveal = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const items: [string, string][] = [["catastrophe risk", "storms, fires, floods"], ["state laws", "coverage rules & rate caps"], ["local costs", "repairs, medical, lawsuits"], ["you", "age, record, credit, claims"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what builds your premium</text>
+        {items.map(([t, d], i) => { const x = i % 2 === 0 ? 300 : 660; const y = i < 2 ? 110 : 290; const op = interpolate(reveal, [i * 0.18, i * 0.18 + 0.25], [0, 1], clampBoth); return <g key={i} opacity={op}><rect x={x - 150} y={y} width={300} height={130} rx={12} fill={["#d98b5f", gold, "#9cc47f", "#c0583a"][i]} stroke={ink} strokeWidth={4} /><text x={x} y={y + 52} fontSize={18} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{t}</text><text x={x} y={y + 84} fontSize={13} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{d}</text></g>; })}
+        <text x={VW / 2} y={462} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>stack the four and you've explained almost any premium</text>
+      </svg>
+    );
+  } else if (m === "riskpoolhow") {
+    // Many pay in; the unlucky few get paid out.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={58} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">how the risk pool works</text>
+        {Array.from({ length: 10 }).map((_, i) => { const x = 150 + (i % 5) * 70; const y = 120 + Math.floor(i / 5) * 46; return <g key={i} opacity={interpolate(t, [0, 0.4], [0, 1], clampBoth)}><circle cx={x} cy={y} r={16} fill={gold} stroke={ink} strokeWidth={3} /></g>; })}
+        <text x={290} y={248} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>everyone pays in →</text>
+        <g transform="translate(560 190)" opacity={interpolate(t, [0.3, 0.6], [0, 1], clampBoth)}><rect x={-70} y={-50} width={140} height={100} rx={12} fill="#cfe3d4" stroke={ink} strokeWidth={4} /><text y={-10} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily={sans}>the pool</text><text y={18} fontSize={13} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>one big pot</text></g>
+        <path d={`M630 190 l${90 * t} 0`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
+        <path d={`M${630 + 90 * t} 190 l-16 -7 m16 7 l-16 7`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" opacity={t} />
+        <g transform="translate(790 190)" opacity={interpolate(t, [0.6, 0.95], [0, 1], clampBoth)}><rect x={-60} y={-50} width={120} height={100} rx={12} fill={red} stroke={ink} strokeWidth={4} /><text y={-28} fontSize={26} textAnchor="middle">🔥</text><text y={16} fontSize={13} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>the unlucky</text><text y={34} fontSize={12} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>few get paid</text></g>
+        <text x={VW / 2} y={430} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the many quietly cover the catastrophes of the few</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

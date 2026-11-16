@@ -3,15 +3,15 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "You can legally start a business in America for zero dollars — or you can pay over eight hundred dollars a year just for the privilege of existing, before you've earned a single cent. The gap depends entirely on which state you register in and how you set it up. Today we rank the real cost of starting a business in every state, and expose the fees nobody warns you about.",
+    "narration": "The same car, the same house, and the same body can cost you twice as much to insure in one state as in another. Between your auto, home, and health premiums, a family in a high-risk state can hand insurers over fourteen thousand dollars a year — while a family somewhere calmer pays half that, for identical coverage. Today we rank what insurance really costs in every state, and expose what's secretly driving your bill.",
     "props": [
       {
-        "name": "store",
-        "label": "$0 to start"
+        "name": "shield",
+        "label": "car + home + health"
       },
       {
         "name": "receipt",
-        "label": "or $800+/yr to exist"
+        "label": "$7K vs $14K/yr"
       },
       {
         "name": "scale",
@@ -22,186 +22,159 @@
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that surprises every new founder. Registering a simple company — an LLC — costs as little as forty dollars in some states, and several hundred up front plus hundreds every year in others. California alone charges an eight-hundred-dollar annual tax just to keep your business alive, profit or no profit. Where you incorporate is a financial decision before you've even started.",
-    "text": "$40 vs $800+",
-    "sub": "to start and keep a business, cheapest vs priciest state",
-    "icon": "store"
+    "narration": "Here's the number hiding in plain sight on your bank statement. Add up car, home, and health insurance, and a typical American household spends somewhere between seven and fourteen thousand dollars a year on premiums — one of the largest expenses most people never actually shop. And where you live can double it, for coverage that's basically the same.",
+    "text": "$7K-$14K/yr",
+    "sub": "a household's total insurance bill, by state",
+    "icon": "shield"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank the cost of launching a business across the states, decode the business structures and what each one costs, expose the sneaky ongoing fees that ambush new owners, and show how to start lean and legal for almost nothing. Because the barrier to starting a business isn't usually a big idea or a bank loan. It's a pile of small fees most people never see coming.",
+    "narration": "So today we rank the states by their total insurance burden, explain how insurance actually works and why it's priced the way it is, expose the disasters and laws quietly inflating your premiums, warn about the places becoming literally uninsurable, and show how to cut the bill. Because insurance is the expense you pay forever, rarely use, and almost never question.",
     "props": [
       {
         "name": "scale",
         "label": "rank the states"
       },
       {
-        "name": "briefcase",
-        "label": "structures & costs"
+        "name": "warning",
+        "label": "what drives premiums"
       },
       {
-        "name": "warning",
-        "label": "the hidden fees"
+        "name": "moneybag",
+        "label": "how to cut it"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "form a company in your pricey home state",
-    "memeBottom": "register somewhere cheap and simple",
-    "narration": "Because thousands of would-be founders overpay to start, or get scared off entirely, simply because nobody told them how cheap it can be. Before we rank the states, let's define what you're actually paying to create."
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "insurance is just a boring monthly bill",
+    "memeBottom": "insurance is a risk bet priced by your zip code",
+    "narration": "Because your premium isn't a fixed price — it's a calculated bet on how likely you are to file a claim, and that bet changes dramatically with geography. Before we rank the states, let's define what you're actually buying."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what starting a business legally even means.",
-    "heading": "The Setup",
-    "kicker": "structure & registration"
+    "narration": "First, what insurance actually is, and how it's priced.",
+    "heading": "How It Works",
+    "kicker": "pooling risk"
   },
   {
     "id": "s6",
     "type": "screenshot",
-    "sourceId": "wiki-smallbiz",
-    "narration": "Most new ventures are small businesses — corporations, partnerships, or sole proprietorships which have a small number of employees. The cheapest path of all is the simplest: just start. In most places, if you sell something under your own name, you're already a business in the eyes of the law — no filing, no fee, nothing. The question is only how much structure you want on top of that."
+    "sourceId": "wiki-insurance",
+    "narration": "At its core, insurance is a means of protection from financial loss. You pay a steady, predictable fee so that a rare, catastrophic cost — a crash, a fire, a hospital stay — doesn't bankrupt you. You're not really buying a service. You're buying certainty: trading a small, known loss every month for protection against a huge, unknown one."
   },
   {
     "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And the small-business label isn't just a vibe — it unlocks real advantages. Governments reserve grants, loans, and contracts specifically for businesses under certain size thresholds. So being officially small, and registered, can actually open doors that an unregistered side hustle can't. The paperwork isn't only a cost. Done right, it's a key to support most founders never claim.",
+    "narration": "And this is why insurance can feel like a scam even when it isn't. Most years, you pay and get nothing back, which feels like pure loss. But that's the entire point: you're buying protection against the rare year that would otherwise destroy you. Insurance you never use isn't wasted money. It's the premium for sleeping at night.",
     "props": [
       {
-        "name": "handshake",
-        "label": "grants, loans, contracts"
+        "name": "warning",
+        "label": "feels like a scam"
       },
       {
-        "name": "store",
-        "label": "reserved for small biz"
+        "name": "shield",
+        "label": "but it's buying certainty"
       },
       {
         "name": "smiley",
-        "label": "paperwork opens doors"
+        "label": "the price of sleep"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-sole",
-    "narration": "That simplest form is a sole proprietorship — a type of enterprise owned and run by only one person. It costs nothing to create; you and the business are legally the same. The catch is that there's no protection: if the business gets sued or owes money, your personal savings and home are on the line. Free to start, but your whole life is the collateral."
-  },
-  {
-    "id": "s51",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And most real businesses start exactly here, quietly. The vast majority of American companies are not venture-backed startups — they're sole proprietors: freelancers, contractors, tutors, shop owners, side-hustlers. They began with no fancy structure, no investors, no fees. If you've ever sold anything on your own, you were already walking the first, free step of this entire ladder.",
-    "props": [
-      {
-        "name": "store",
-        "label": "most firms start free"
-      },
-      {
-        "name": "laptop",
-        "label": "freelancers, side-hustlers"
-      },
-      {
-        "name": "smiley",
-        "label": "you've likely done step one"
-      }
-    ]
+    "sourceId": "wiki-riskpool",
+    "narration": "It works through a risk pool — a form of risk management mostly practiced by insurance companies. Thousands of people each pay in, most never file a big claim, and that collected money covers the unlucky few who do. Your premium is really your share of the pool's total expected losses. The riskier your pool, the more everyone in it pays."
   },
   {
     "id": "s52",
-    "type": "callout",
-    "narration": "Here's how common it is. Something like three-quarters of all US businesses have no employees at all — they're one-person operations. The image of starting a business as a big, expensive, risky leap is mostly a myth. For most founders, it begins as a quiet, nearly-free experiment that only later grows structure and cost.",
-    "text": "75%",
-    "sub": "of US businesses are one-person, no employees",
-    "icon": "store"
-  },
-  {
-    "id": "s8",
-    "type": "character",
-    "pose": "explain",
-    "narration": "So the real decision is how much legal protection to buy. Stay a sole proprietor and it's free but risky. Form an LLC — a limited liability company — and for a modest fee, the business becomes a separate legal person, shielding your personal assets if things go wrong. That shield is what most of the fees in this episode are actually buying: a wall between your business and your life.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "sole prop: free but exposed"
-      },
-      {
-        "name": "shield",
-        "label": "LLC: a legal wall"
-      },
-      {
-        "name": "store",
-        "label": "fees buy protection"
-      }
-    ]
-  },
-  {
-    "id": "s42",
-    "type": "callout",
-    "narration": "Here's the real reason the LLC exists. Without it, if your business is sued or can't pay a debt, creditors can come after your house, your car, and your savings. The LLC draws a legal line: lose the business, but keep your life. For a modest yearly fee, that protection is one of the best deals in all of finance.",
-    "text": "your house",
-    "sub": "what's at risk without the LLC's legal wall",
-    "icon": "shield"
-  },
-  {
-    "id": "s9",
-    "type": "title",
-    "narration": "So let's rank what it costs to form a company by state.",
-    "heading": "The Ranking",
-    "kicker": "the price to start"
+    "type": "stage",
+    "motif": "riskpoolhow",
+    "caption": "how the risk pool works",
+    "narration": "Picture the pool directly. A thousand homeowners each pay a premium into one giant pot. In a normal year, a handful suffer a fire or a flood, and the pot pays to rebuild their homes. Everyone else gets nothing but peace of mind. That's the whole machine: the many quietly cover the unlucky few, and your premium is simply your fair share of the group's expected bad luck."
   },
   {
     "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "One honest note before the ranking: the state filing fee is often the smallest number in the whole budget. For many businesses, the real start-up money goes to equipment, inventory, a website, or first rent — not the government. We're ranking the legal cost to exist, which is just the entry ticket. The cost to actually operate depends entirely on what you're building.",
+    "narration": "And the pool only works if it's big and varied. If only the highest-risk people buy insurance, the pot drains fast and premiums skyrocket — a death spiral insurers fear. That's why healthy insurance spreads risk across millions of different people and places. The moment a pool fills with nothing but hurricane-coast homes, the math breaks, and that's exactly what's happening in the riskiest states.",
     "props": [
       {
-        "name": "receipt",
-        "label": "filing fee is the small part"
+        "name": "crowd",
+        "label": "big, varied pool = stable"
       },
       {
-        "name": "store",
-        "label": "gear, inventory, rent cost more"
+        "name": "warning",
+        "label": "all-risk pool = death spiral"
       },
       {
-        "name": "scale",
-        "label": "legal cost ≠ real cost"
+        "name": "house",
+        "label": "coast-only pools break"
       }
     ]
   },
   {
-    "id": "s10",
-    "type": "stage",
-    "motif": "startupcostbars",
-    "caption": "first-year cost to form an LLC, by state",
-    "narration": "Here's the first-year cost to form an LLC, state by state. In the cheapest — Kentucky, Montana, Arizona — it's forty to fifty dollars, one time, and almost nothing after. In the middle, a couple hundred. And at the top, California stacks a seventy-dollar filing fee onto an eight-hundred-dollar annual franchise tax, so your first year costs nearly nine hundred dollars before you've sold a thing."
+    "id": "s8",
+    "type": "screenshot",
+    "sourceId": "wiki-actuary",
+    "narration": "And the price is set by an actuary — a professional with advanced mathematical skills who deals with the measurement and management of risk. Actuaries crunch decades of data on crashes, storms, and illnesses to predict how likely you are to cost them money. Your premium isn't arbitrary. It's a precise mathematical estimate of your personal risk, priced to the dollar."
+  },
+  {
+    "id": "s42",
+    "type": "callout",
+    "narration": "Here's how finely they price you. Insurers now use dozens of variables — your exact address, your credit score, your car's model, even your past claim history — to estimate your risk to the cent. Two neighbors on the same street can pay noticeably different premiums. You aren't buying a product off a shelf. You're being individually quoted a number built just for you.",
+    "text": "dozens of factors",
+    "sub": "what actuaries use to price your personal risk",
+    "icon": "calculator"
+  },
+  {
+    "id": "s9",
+    "type": "title",
+    "narration": "So let's rank the states by total insurance cost.",
+    "heading": "The Ranking",
+    "kicker": "the premium burden"
   },
   {
     "id": "s54",
+    "type": "callout",
+    "narration": "Put the lifetime number in perspective. Over a forty-year adult life, a household spending ten thousand dollars a year on insurance will pay roughly four hundred thousand dollars in premiums — more than many people spend on their actual house. It's one of the largest lifetime expenses almost nobody ever adds up or shops around.",
+    "text": "$400K",
+    "sub": "lifetime insurance premiums for a typical household",
+    "icon": "receipt"
+  },
+  {
+    "id": "s10",
+    "type": "stage",
+    "motif": "insurancetotalbars",
+    "caption": "combined car + home + health premiums, by state",
+    "narration": "Here's the combined annual premium for car, home, and health, state by state. Calmer, lower-risk states like Vermont and Ohio sit near the bottom, around six or seven thousand. Texas and California climb higher. And disaster-prone states — Florida and Louisiana, battered by hurricanes — top the chart near fourteen thousand. Same coverage, but your state's luck and weather decide the bill."
+  },
+  {
+    "id": "s55",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice the cheap states aren't doing you a favor by accident — they want the businesses. Low-fee, low-tax states compete to attract entrepreneurs, betting that more companies means more jobs and more tax later. The pricey states are betting the opposite: that businesses will pay to access their big markets. Where you register is you picking a side in that quiet competition.",
+    "narration": "And the ranking has shifted fast. States that were cheap to insure a decade ago — parts of the Gulf Coast, wildfire country in the West — have rocketed up as disasters mounted. Insurance is a rear-view mirror on risk: today's premiums reflect yesterday's catastrophes, and they only move one direction once the losses start piling up.",
     "props": [
       {
-        "name": "handshake",
-        "label": "cheap states court founders"
+        "name": "chartup",
+        "label": "rankings shifting fast"
       },
       {
-        "name": "scale",
-        "label": "fees vs market access"
+        "name": "warning",
+        "label": "disasters push states up"
       },
       {
         "name": "mappin",
-        "label": "you pick a side"
+        "label": "risk moves, premiums follow"
       }
     ]
   },
@@ -209,50 +182,54 @@
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "First-year cost to form an LLC ($)",
+    "title": "Combined car + home + health premiums ($/yr)",
     "unit": "$",
-    "narration": "Put the numbers in a row. Kentucky around forty dollars, Ohio about a hundred, Texas three hundred, Massachusetts five hundred, and California nearly nine hundred once its franchise tax hits. Same business, same paperwork — but a twentyfold difference in what the state charges you just to open the door. The idea is identical everywhere. The toll is not.",
+    "narration": "Put the totals in a row. Vermont around six thousand a year, Ohio seven, Texas nine, California ten, Florida thirteen, and Louisiana near fourteen thousand. The gap between the cheapest and priciest state is roughly eight thousand dollars a year — enough to fund a vacation or a retirement contribution, vanishing into premiums decided largely by your zip code.",
     "data": [
       {
-        "label": "Kentucky",
-        "value": 40
+        "label": "Vermont",
+        "value": 6000
       },
       {
         "label": "Ohio",
-        "value": 100
+        "value": 7000
       },
       {
         "label": "Texas",
-        "value": 300
-      },
-      {
-        "label": "Massachusetts",
-        "value": 500
+        "value": 9000
       },
       {
         "label": "California",
-        "value": 870
+        "value": 10000
+      },
+      {
+        "label": "Florida",
+        "value": 13000
+      },
+      {
+        "label": "Louisiana",
+        "value": 14000
       }
     ],
-    "highlight": 4
+    "highlight": 5
   },
   {
     "id": "s43",
     "type": "character",
     "pose": "explain",
-    "narration": "And notice the sneaky California franchise tax, because it catches thousands. It's eight hundred dollars a year, due even if your business makes zero dollars, even if it's dormant. Founders form an LLC for a side idea, forget it, and get hit with hundreds in penalties years later. In some states, simply existing as a company has a steep annual price, profit or not.",
+    "narration": "And health insurance is the giant inside this total, especially in America. For a family, health premiums alone can dwarf car and home combined — often over twenty thousand dollars a year between the employee and employer share. We fold in a typical personal portion here, but remember: in the US, the biggest insurance bill of all is usually the one for your own body.",
     "props": [
       {
-        "name": "warning",
-        "label": "$800 even at zero profit"
-      },
-      {
-        "name": "calendar",
-        "label": "due every single year"
+        "name": "hospital",
+        "label": "health is the giant"
       },
       {
         "name": "receipt",
-        "label": "penalties pile up"
+        "label": "can dwarf car + home"
+      },
+      {
+        "name": "warning",
+        "label": "the body costs most"
       }
     ]
   },
@@ -260,165 +237,192 @@
     "id": "s12",
     "type": "character",
     "pose": "explain",
-    "narration": "And the up-front fee is the part that fools people. Many new owners proudly register in their expensive home state, then get a surprise bill every single year to keep the company active. The real cost of a business isn't forming it — it's maintaining it. A cheap state to start in can be an expensive state to stay in, and vice versa.",
+    "narration": "And home insurance is where the state gap explodes the most. In a quiet inland state, insuring a house might cost under a thousand dollars a year. In hurricane-prone Florida or Louisiana, the same house can cost six or seven thousand — if you can get covered at all. Climate risk has turned home insurance from a routine bill into the fastest-rising cost of owning a home in disaster zones.",
     "props": [
       {
+        "name": "house",
+        "label": "home premiums swing most"
+      },
+      {
         "name": "warning",
-        "label": "up-front fee fools people"
+        "label": "$800 vs $7,000"
       },
       {
-        "name": "calendar",
-        "label": "the yearly bill surprises"
-      },
-      {
-        "name": "scale",
-        "label": "start cheap vs stay cheap"
+        "name": "chartup",
+        "label": "climate drives it"
       }
     ]
   },
   {
-    "id": "s13",
-    "type": "title",
-    "narration": "Which depends a lot on the structure you choose.",
-    "heading": "The Structures",
-    "kicker": "what each one costs"
+    "id": "s44",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "buy the beautiful coastal house",
+    "memeBottom": "be able to actually insure it",
+    "narration": "This is the brutal new calculation for anyone buying in a disaster zone. The dream home on the coast or in the hills comes with an insurance bill — or an insurance refusal — that can dwarf the mortgage. Increasingly, the question isn't whether you can afford the house. It's whether you can afford to protect it."
   },
   {
-    "id": "s55",
+    "id": "s13",
+    "type": "title",
+    "narration": "So what actually sets your premium so high, or low?",
+    "heading": "The Drivers",
+    "kicker": "risk, disasters, laws"
+  },
+  {
+    "id": "s56",
     "type": "character",
     "pose": "explain",
-    "narration": "And don't over-engineer the structure, which is the classic rookie move. New founders obsess over S-corp versus C-corp versus LLC before they've earned a dollar, burning money on setups they don't need yet. The right structure for most people on day one is the simplest one that gives basic protection. You can always upgrade later — and by then you'll actually know what you need.",
+    "narration": "And notice how little of this is actually about you. You can have a perfect driving record, a brand-new roof, and flawless health, and still pay a fortune because of where you live and who else is in your pool. Insurance is one of the few big expenses where your personal virtue is often outweighed by your geography. The zip code frequently beats the behavior.",
     "props": [
       {
+        "name": "mappin",
+        "label": "geography beats behavior"
+      },
+      {
         "name": "warning",
-        "label": "don't over-engineer it"
+        "label": "perfect record, high bill"
       },
       {
-        "name": "shield",
-        "label": "simplest with protection"
-      },
-      {
-        "name": "chartup",
-        "label": "upgrade when you grow"
+        "name": "scale",
+        "label": "the pool outweighs you"
       }
     ]
   },
   {
     "id": "s14",
     "type": "stage",
-    "motif": "structurecostladder",
-    "caption": "sole prop, LLC, corporation — rising cost",
-    "narration": "Here's the ladder of business structures and their costs. At the bottom, the sole proprietorship: free, instant, no protection. In the middle, the LLC: a modest fee, real liability protection, simple taxes — the sweet spot for most small businesses. At the top, the corporation: pricier to set up and maintain, more paperwork, but built for raising investment and going big. You pay more as you climb, and you get more protection and more options in return."
-  },
-  {
-    "id": "s44",
-    "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "pay a lawyer thousands to incorporate",
-    "memeBottom": "file a simple LLC yourself for the state fee",
-    "narration": "This is the upgrade that saves new founders a fortune. Expensive lawyers and filing services sell convenience and fear, but forming a basic LLC is a short online form in most states. Unless your situation is genuinely complex, doing it yourself is the difference between spending fifty dollars and spending five hundred."
-  },
-  {
-    "id": "s15",
-    "type": "screenshot",
-    "sourceId": "wiki-incorp",
-    "narration": "Going the corporate route means incorporation — the formation of a new corporate body. It's what you do if you plan to raise money from investors or issue stock. But it comes with the most fees, the most rules, and annual reports in every state you operate. For a freelancer or a local shop, it's usually overkill. For a startup chasing venture capital, it's essential."
+    "motif": "premiumdrivers",
+    "caption": "what builds your insurance bill",
+    "narration": "Four forces set your premium. First, catastrophe risk — hurricanes, wildfires, floods, and the climate trends making them worse. Second, state laws and regulation, which decide required coverage and how freely insurers can raise rates. Third, local costs — pricier repairs, medical care, and litigation mean pricier claims. And fourth, you: your age, record, credit, and claim history. Stack those four, and you've explained almost any premium."
   },
   {
     "id": "s45",
     "type": "character",
     "pose": "explain",
-    "narration": "And here's the Delaware myth worth busting. Everyone's heard you should incorporate in Delaware — but that advice is for startups raising venture capital, who benefit from its specialized courts. For a normal small business, registering in Delaware while operating elsewhere just means paying fees in two states instead of one. Register where you actually do business. Simpler is almost always cheaper.",
+    "narration": "And state regulation cuts both ways, in ways that surprise people. States that tightly cap how much insurers can charge sound consumer-friendly — but insurers may respond by leaving the market, shrinking choice and coverage. States that let rates float freely keep insurers around, but premiums can spike. There's no free lunch: someone always pays for the risk, either in price or in availability.",
     "props": [
       {
+        "name": "scale",
+        "label": "caps vs free rates"
+      },
+      {
         "name": "warning",
-        "label": "Delaware = for VC startups"
+        "label": "caps can push insurers out"
       },
       {
         "name": "receipt",
-        "label": "else you pay two states"
-      },
-      {
-        "name": "mappin",
-        "label": "register where you operate"
+        "label": "someone always pays"
       }
     ]
   },
   {
-    "id": "s16",
-    "type": "title",
-    "narration": "But the formation fee is just the beginning. Here come the hidden costs.",
-    "heading": "The Hidden Fees",
-    "kicker": "what ambushes you"
+    "id": "s59",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the fastest-rising driver by far is climate. Insured losses from storms, floods, and wildfires have climbed steeply over recent decades, and insurers price forward, not backward — they raise premiums today for the disasters they expect tomorrow. So even if your own area has been lucky, you can watch your bill rise simply because the models now see more risk on the horizon everywhere.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "climate is the top driver"
+      },
+      {
+        "name": "chartup",
+        "label": "insurers price forward"
+      },
+      {
+        "name": "globe",
+        "label": "bills rise before the storm"
+      }
+    ]
   },
   {
-    "id": "s56",
+    "id": "s15",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And this is why identical people pay wildly different prices. Two drivers with spotless records, the same car, can pay double or half depending on their state's accident rates, repair costs, and insurance laws. You're not just insuring yourself — you're joining your state's risk pool, and inheriting the cost of everyone else's crashes, storms, and lawsuits along with it.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "you inherit the pool's risk"
+      },
+      {
+        "name": "car",
+        "label": "same driver, different price"
+      },
+      {
+        "name": "mappin",
+        "label": "your state's crashes & storms"
+      }
+    ]
+  },
+  {
+    "id": "s46",
+    "type": "callout",
+    "narration": "Here's a factor most people never suspect: your credit score. In the majority of US states, insurers are legally allowed to use credit to set your premium, arguing it predicts claims. So two identical drivers can pay very different rates purely because one has better credit. Fixing your credit can quietly cut your insurance bill as much as a clean driving record.",
+    "text": "your credit",
+    "sub": "secretly sets your premium in most states",
+    "icon": "creditcard"
+  },
+  {
+    "id": "s16",
+    "type": "title",
+    "narration": "And in some states, the problem is no longer the price. It's getting covered at all.",
+    "heading": "The Uninsurable",
+    "kicker": "when insurers leave"
+  },
+  {
+    "id": "s57",
     "type": "image",
     "src": "img/memes/fine.jpg",
     "meme": "This Is Fine",
-    "memeTop": "six separate fees before my first sale",
+    "memeTop": "my insurer just dropped my coverage",
     "memeBottom": "this is fine",
-    "narration": "For a lot of first-time founders, this is the deflating moment: the idea was exciting, and then came the filing fee, the license, the agent, the insurance quote. It feels like death by a thousand small bills. The trick is knowing which of those bills you actually need on day one — and the honest answer is: far fewer than it seems."
+    "narration": "For a growing number of homeowners in disaster zones, this is the letter they dread: a non-renewal notice, dropping coverage through no fault of their own. It isn't a billing problem you can shop away — it's the market itself retreating. And it's the clearest sign yet that some places are becoming too risky to insure at any price."
   },
   {
     "id": "s17",
     "type": "screenshot",
-    "sourceId": "wiki-license",
-    "narration": "First, licenses. On top of registering, many businesses need a business license — the authorization to start a business issued by the local government. A restaurant, a salon, a contractor, a daycare — each needs specific permits, and they stack: state, county, and city, each with its own fee and renewal. The registration was the easy part. The permits are where it gets real."
+    "sourceId": "wiki-homeins",
+    "narration": "Home insurance — a type of property insurance that covers a private residence — is quietly collapsing in the riskiest places. In parts of Florida, California, and Louisiana, major insurers have stopped writing new policies entirely, because the losses from hurricanes and wildfires have grown faster than any premium they could charge. The market is breaking exactly where people need it most."
   },
   {
-    "id": "s46",
+    "id": "s47",
     "type": "character",
     "pose": "explain",
-    "narration": "And licenses vary wildly by what you do, not just where. Sell coffee, and you need food permits and health inspections. Cut hair, and you need a cosmetology license. Build decks, and you need a contractor's license and bond. A plain online consultant might need nothing at all. Before you budget, find out exactly which permits your specific trade and town demand — the surprises live here.",
+    "narration": "And the uninsurability wave is spreading inland, not just along the coasts. Wildfire risk is hitting the mountain West, flood risk is reaching places that never flooded before, and hail and tornado losses are rising across the middle of the country. The map of 'safe' states is shrinking every year. Insurance is becoming an early-warning system for where climate change is quietly hitting hardest.",
     "props": [
       {
-        "name": "store",
-        "label": "permits depend on the trade"
-      },
-      {
         "name": "warning",
-        "label": "food, trades, beauty regulated"
+        "label": "spreading inland"
       },
       {
-        "name": "magnifier",
-        "label": "check your specific rules"
+        "name": "globe",
+        "label": "wildfire, flood, hail"
+      },
+      {
+        "name": "chartup",
+        "label": "the 'safe' map shrinks"
       }
     ]
   },
   {
     "id": "s18",
-    "type": "stage",
-    "motif": "startuphiddencosts",
-    "caption": "the fees nobody warns you about",
-    "narration": "Then the pile nobody mentions. A registered agent, often a hundred-plus dollars a year. Annual report fees. Franchise or privilege taxes just for existing. Industry licenses and permits. Business insurance. A separate bank account's fees. None of them are huge alone, but together they can turn a 'free' business into a thousand-dollar-a-year commitment before you've made your first sale."
-  },
-  {
-    "id": "s47",
-    "type": "callout",
-    "narration": "Add up the quiet annual pile and it stings. A registered agent, an annual report fee, a state franchise tax, a basic license, and modest business insurance can easily total seven hundred to over a thousand dollars a year — the recurring cost of simply keeping a small company alive and legal, before any profit at all.",
-    "text": "$700-1,000/yr",
-    "sub": "the recurring cost just to keep a business legal",
-    "icon": "receipt"
-  },
-  {
-    "id": "s19",
     "type": "character",
     "pose": "explain",
-    "narration": "And this is exactly where dreams quietly die. A would-be founder adds up the filing fee, the licenses, the agent, the insurance, the annual taxes — and decides it's all too expensive and too confusing to bother. The tragedy is that most of it is optional or tiny when you start lean. The fees didn't stop a bad business. They stopped a person from ever trying.",
+    "narration": "And when private insurers flee, homeowners get pushed onto expensive last-resort state plans, or go uninsured entirely — which means a single disaster can wipe out their largest asset overnight. A house you can't insure is a house you can barely sell or mortgage. In the hardest-hit zones, the uninsurability crisis is quietly starting to cap home values and trap owners in place.",
     "props": [
       {
         "name": "warning",
-        "label": "where dreams die"
+        "label": "pushed to last-resort plans"
       },
       {
-        "name": "receipt",
-        "label": "the fees pile up"
+        "name": "house",
+        "label": "can't insure, can't sell"
       },
       {
-        "name": "smiley",
-        "label": "most are optional early"
+        "name": "chartdown",
+        "label": "it caps home values"
       }
     ]
   },
@@ -426,170 +430,190 @@
     "id": "s48",
     "type": "character",
     "pose": "explain",
-    "narration": "And beware the service businesses that prey on this confusion. Flashy sites charge a few hundred dollars to file forms you could submit yourself for the state fee, then upsell registered-agent and compliance packages you rarely need at the start. They sell fear of getting it wrong. Learn the three or four things that actually matter, and you'll never need them.",
+    "narration": "And this creates a slow-motion trap for owners. If insurance becomes unaffordable or unavailable in your area after you've bought, you can't simply leave — buyers face the same problem, so your home gets harder to sell and worth less. The people most exposed are often those who bought their dream home years ago and are now stuck watching the insurance market close around them.",
     "props": [
       {
+        "name": "house",
+        "label": "hard to sell, worth less"
+      },
+      {
         "name": "warning",
-        "label": "filing-service upsells"
+        "label": "stuck in place"
       },
       {
-        "name": "receipt",
-        "label": "they sell fear"
-      },
-      {
-        "name": "smiley",
-        "label": "the basics are simple"
+        "name": "chartdown",
+        "label": "the market closes in"
       }
     ]
   },
   {
-    "id": "s20",
+    "id": "s19",
     "type": "title",
-    "narration": "So how do you actually start, cheaply and correctly?",
+    "narration": "So how do you actually cut a bill you can't avoid?",
     "heading": "What To Do",
-    "kicker": "start lean & legal"
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "pose": "present",
-    "narration": "And use the free help that already exists. Nearly every state runs a small-business development center offering free guidance on exactly which fees, licenses, and forms you need. The government that charges the fees will also, for free, walk you through them. Most founders never ask — and overpay a filing service for information they could have gotten for nothing.",
-    "props": [
-      {
-        "name": "handshake",
-        "label": "free state biz centers"
-      },
-      {
-        "name": "store",
-        "label": "free guidance on fees"
-      },
-      {
-        "name": "moneybag",
-        "label": "skip the paid services"
-      }
-    ]
-  },
-  {
-    "id": "s21",
-    "type": "screenshot",
-    "sourceId": "wiki-startup",
-    "narration": "Remember what a startup really is: a company or project typically undertaken by an entrepreneur. The entrepreneur's superpower is starting before everything is perfect. You don't need a fancy structure to test an idea — you need a customer. Begin as a simple sole proprietor, prove people will pay, and add the legal structure and its costs only once there's a real business worth protecting."
-  },
-  {
-    "id": "s22",
-    "type": "character",
-    "pose": "present",
-    "narration": "So start as a sole proprietor for free, validate that people will actually buy, and only then form an LLC — which you can do yourself online for the state fee, skipping the pricey lawyers and filing services. Choose your state deliberately: register where you actually operate, and don't fall for 'incorporate in Delaware' hype unless you're raising serious investment. Lean, legal, and cheap beats fancy and broke.",
-    "props": [
-      {
-        "name": "seedling",
-        "label": "sole prop → validate first"
-      },
-      {
-        "name": "store",
-        "label": "DIY the LLC filing"
-      },
-      {
-        "name": "warning",
-        "label": "skip the Delaware hype"
-      }
-    ]
-  },
-  {
-    "id": "s49",
-    "type": "character",
-    "pose": "present",
-    "narration": "And separate the business from yourself early, even cheaply. A dedicated bank account and simple bookkeeping from day one cost almost nothing but save you from tax nightmares and pierce-the-veil disasters later. Mixing personal and business money is the single most common, most expensive mistake new owners make. A free second account quietly prevents it.",
-    "props": [
-      {
-        "name": "bank",
-        "label": "separate bank account"
-      },
-      {
-        "name": "ledger",
-        "label": "simple bookkeeping"
-      },
-      {
-        "name": "warning",
-        "label": "never mix the money"
-      }
-    ]
+    "kicker": "shrink the premium"
   },
   {
     "id": "s58",
     "type": "character",
     "pose": "present",
-    "narration": "And budget for the taxes nobody mentions, because the real cost of a business shows up at tax time. As your own boss you owe self-employment tax on top of income tax, and you must set it aside yourself — no employer withholds it. Stash roughly a quarter to a third of profit for taxes from day one, and that painful April surprise simply never happens.",
+    "narration": "And review your coverage amounts, not just your price. Many people are quietly underinsured — their policy would rebuild a house at old costs, not today's, leaving a brutal gap after a disaster. Others pay for coverage they'll never use. Once a year, check that you're insured for what it would actually cost to replace what you have — no more, and crucially, no less.",
     "props": [
       {
-        "name": "receipt",
-        "label": "self-employment tax"
-      },
-      {
-        "name": "jar",
-        "label": "set aside 25-33% of profit"
+        "name": "magnifier",
+        "label": "check coverage amounts"
       },
       {
         "name": "warning",
-        "label": "no one withholds it for you"
+        "label": "underinsured = a gap"
+      },
+      {
+        "name": "scale",
+        "label": "match it to replacement cost"
       }
     ]
   },
   {
-    "id": "s23",
+    "id": "s20",
+    "type": "screenshot",
+    "sourceId": "wiki-deductible",
+    "narration": "The most powerful lever is the deductible — the amount paid by the policy holder before an insurance provider will pay. Raise it, and your premium drops, sometimes sharply. The trick is to insure against disasters you can't afford, not minor dings you can. A high deductible with a healthy emergency fund behind it is often the cheapest smart way to be covered."
+  },
+  {
+    "id": "s49",
     "type": "character",
     "pose": "explain",
-    "narration": "Because here's the real lesson. The cost of starting a business has never been lower — a few hundred dollars, often less, versus the fortune it took a generation ago. The barrier today isn't money. It's the fog of fees and paperwork that makes it feel impossible, when it isn't. Cut through the fog, start lean, and you can be a legitimate business owner this week, for the price of a nice dinner.",
+    "narration": "And understand what the deductible really trades. A low deductible means a smaller surprise when you claim, but a bigger bill every single month forever. A high deductible flips it: cheap every month, but you must be able to absorb the hit when disaster strikes. The right choice isn't about comfort — it's whether you have the savings to self-insure the small stuff.",
     "props": [
       {
-        "name": "store",
-        "label": "cheaper than ever"
+        "name": "scale",
+        "label": "low vs high deductible"
       },
       {
-        "name": "warning",
-        "label": "the barrier is the fog"
+        "name": "jar",
+        "label": "need savings for high"
       },
       {
-        "name": "smiley",
-        "label": "a business this week"
+        "name": "moneybag",
+        "label": "self-insure the small stuff"
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "type": "character",
+    "pose": "present",
+    "narration": "Beyond that, shop relentlessly every year — loyalty is quietly punished, as insurers raise rates on customers who never leave. Bundle your car and home for a discount. Fix your credit, which secretly drives premiums in most states. And harden your home against your local disaster — a new roof, storm shutters, defensible space — because insurers reward lower risk with lower bills.",
+    "props": [
+      {
+        "name": "receipt",
+        "label": "shop yearly, bundle"
+      },
+      {
+        "name": "creditcard",
+        "label": "fix your credit"
+      },
+      {
+        "name": "shield",
+        "label": "harden the home"
       }
     ]
   },
   {
     "id": "s50",
     "type": "character",
-    "pose": "explain",
-    "narration": "And zoom out on what this really unlocks. For most of history, starting a business meant big capital, connections, and risk. Today, a laptop, a few small fees, and an afternoon of paperwork make almost anyone a business owner — with legal protection and access to support. The fees we ranked are real, but they're pocket change against the opportunity. The only unforgivable cost is never starting.",
+    "pose": "present",
+    "narration": "And don't over-insure what you don't need to. Dropping collision coverage on an old car worth little, skipping extended warranties and tiny add-ons, and not insuring things you could easily replace yourself all cut the bill with zero real risk. Insure the catastrophes that would ruin you; proudly self-insure everything small enough to shrug off. That single principle quietly saves people thousands.",
     "props": [
       {
-        "name": "laptop",
-        "label": "a laptop + small fees"
+        "name": "scissors",
+        "label": "drop coverage you don't need"
       },
       {
-        "name": "store",
-        "label": "almost anyone can start"
+        "name": "warning",
+        "label": "skip tiny add-ons"
       },
       {
-        "name": "smiley",
-        "label": "the real cost is not trying"
+        "name": "shield",
+        "label": "insure only catastrophes"
       }
     ]
   },
   {
-    "id": "s24",
+    "id": "s61",
+    "type": "character",
+    "pose": "present",
+    "narration": "And ask about every discount, because insurers rarely volunteer them. Safety features, security systems, bundling, paying annually instead of monthly, low mileage, good-student and professional discounts — each shaves the bill, and most go unclaimed simply because no one asked. A single phone call reviewing available discounts can quietly cut a premium by ten or twenty percent.",
+    "props": [
+      {
+        "name": "phone",
+        "label": "ask about every discount"
+      },
+      {
+        "name": "shield",
+        "label": "safety, bundle, low-mileage"
+      },
+      {
+        "name": "moneybag",
+        "label": "often unclaimed"
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. Insurance is a bet on your risk, and your state fills in most of the odds before you ever sign. You can't change the hurricanes or the laws — but you can choose your deductible, your provider, and how much risk you quietly carry yourself. The goal was never zero risk. It's paying a fair price to protect what you genuinely can't afford to lose, and not a dollar more.",
+    "props": [
+      {
+        "name": "scale",
+        "label": "pay for real risk only"
+      },
+      {
+        "name": "shield",
+        "label": "protect what you can't lose"
+      },
+      {
+        "name": "warning",
+        "label": "not a dollar more"
+      }
+    ]
+  },
+  {
+    "id": "s51",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And zoom out on what insurance really is at a societal level: a promise that we catch each other when the worst happens. It only works when the pool is broad and the risk is shared. As climate and costs fracture that pool — splitting the lucky from the exposed — insurance is quietly becoming one of the clearest front lines of inequality. Where you can afford to live is starting to mean where you can afford to be protected.",
+    "props": [
+      {
+        "name": "handshake",
+        "label": "catching each other"
+      },
+      {
+        "name": "warning",
+        "label": "the pool is fracturing"
+      },
+      {
+        "name": "scale",
+        "label": "protection as inequality"
+      }
+    ]
+  },
+  {
+    "id": "s23",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this made starting a business feel possible, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this made your insurance bill make sense, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "store",
+        "name": "shield",
         "label": "which price tag next?"
       }
     ]
   },
   {
-    "id": "s25",
+    "id": "s24",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
