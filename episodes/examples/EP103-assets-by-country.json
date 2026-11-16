@@ -1,0 +1,739 @@
+{
+  "id": "EP103",
+  "series": "Napkin Numbers",
+  "title": "What the Average Person Owns in Gold, Stocks and Cash, by Country",
+  "slug": "assets-by-country",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP103 — The Price Tag series (topic 93). How the average person holds wealth by country: US stock-heavy (~40%), Japan/Germany cash-heavy, India/China gold-heavy (Indian households ~25,000 tonnes). Why it matters: stocks compound/grow, cash erodes to inflation (half value in ~24yrs at 3%), gold holds but doesn't produce. The cash trap (safe-feeling = riskiest long-run), gold culture (currency-collapse memory; wealth locked unproductively), auto-retirement-plan plumbing nudges US into stocks. What to do: months of cash then stop, bulk in low-cost diversified stock funds, small gold slice. 3 new motifs (assetmixbars/cashtraplines/goldculture); 2 charts. Sources: Wealth/Financial asset/Diversification/Gold as an investment/Asset allocation. NO local synth. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The average American keeps most of their wealth in stocks. The average Japanese keeps it in cash. The average Indian keeps it in gold. Same goal — security and a better future — but three completely different bets, and over decades, three wildly different outcomes. Today we rank how the average person actually holds their money around the world, and reveal which choice quietly makes a country richer.",
+      "props": [
+        {
+          "name": "stockscreen",
+          "label": "US: stocks"
+        },
+        {
+          "name": "banknote",
+          "label": "Japan: cash"
+        },
+        {
+          "name": "goldbar",
+          "label": "India: gold"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the split that shapes nations. In the United States, around forty percent of household wealth sits in stocks. In Japan, more than half sits in cash earning almost nothing. That single difference in where people park their money compounds, over a lifetime, into one of the biggest wealth gaps between populations on Earth.",
+      "text": "40% vs 0%",
+      "sub": "US wealth in stocks vs Japan's return on cash",
+      "icon": "stockscreen"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we break down the asset mix of the average person by country, explain why stocks, cash, and gold produce such different fates, expose the quiet trap of holding cash, decode the cultures that hoard gold, and show what the data says you should actually own. Because it's not how much you earn that builds wealth. It's what you hold it in.",
+      "props": [
+        {
+          "name": "pie",
+          "label": "the asset mix by country"
+        },
+        {
+          "name": "warning",
+          "label": "the cash trap"
+        },
+        {
+          "name": "chartup",
+          "label": "what to actually own"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/drake.jpg",
+      "meme": "Drake Hotline Bling",
+      "memeTop": "keep your life savings safe in cash",
+      "memeBottom": "own productive assets that grow",
+      "narration": "Because the safest-feeling choice — piling up cash — is often the one that quietly makes you poorer every year. Before we rank the countries, let's define what people are actually choosing between."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the three places people stash their wealth.",
+      "heading": "Stocks, Cash, Gold",
+      "kicker": "three different bets"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-wealth",
+      "narration": "Wealth itself is simply the abundance of valuable financial assets or physical possessions. But the form it takes matters enormously. A million dollars in stocks, a million in cash, and a million in gold are worth the same today — and will be worth dramatically different amounts in thirty years. Wealth isn't just how much you have. It's what shape you keep it in."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And most of the world forgets the biggest asset of all: a home. For the average household almost everywhere, property is the single largest holding — often more than stocks, cash, and gold combined. But a home you live in is tricky: it's shelter and an asset at once. Today we're focused on the liquid savings — the stocks, cash, and gold — where people's choices differ the most.",
+      "props": [
+        {
+          "name": "house",
+          "label": "property is the biggest slice"
+        },
+        {
+          "name": "warning",
+          "label": "home = shelter + asset"
+        },
+        {
+          "name": "scale",
+          "label": "we focus on liquid savings"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-finasset",
+      "narration": "Stocks and bonds are financial assets — a non-physical asset whose value is derived from a contractual claim. When you own a stock, you own a real slice of a real business that grows, earns, and pays you over time. That's the key: productive assets work for you, generating returns, while cash and gold mostly just sit there, waiting."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The word that captures it is productive. A productive asset puts your money to work: a company hires, builds, and sells; a bond funds projects that pay interest. Your wealth earns while you sleep. An unproductive store of value — cash under a mattress, gold in a safe — just holds a place. Both can be smart in moderation, but only productive assets quietly grow your pile for you.",
+      "props": [
+        {
+          "name": "factory",
+          "label": "productive = money works"
+        },
+        {
+          "name": "goldbar",
+          "label": "unproductive = money waits"
+        },
+        {
+          "name": "chartup",
+          "label": "only one grows for you"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's the compounding gap in plain numbers. Historically, a broad stock market returns around seven percent a year after inflation; cash returns roughly zero. Over thirty years, seven percent turns one dollar into almost eight. Zero turns one dollar into one. That's the entire difference between stocks and cash — not luck, just time doing its work.",
+      "text": "$8 vs $1",
+      "sub": "stocks vs cash over 30 years, after inflation",
+      "icon": "chartup"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So the three choices are really three different relationships with your money. Stocks are an ownership stake that compounds and grows. Cash is a parked claim that slowly erodes to inflation. And gold is an ancient store of value that holds, but doesn't produce. Each feels like saving — but only one of them reliably builds wealth over the long run.",
+      "props": [
+        {
+          "name": "stockscreen",
+          "label": "stocks: grow"
+        },
+        {
+          "name": "banknote",
+          "label": "cash: erode"
+        },
+        {
+          "name": "goldbar",
+          "label": "gold: hold"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Put the long-run gap in one number. Over the last century, a dollar in US stocks grew into hundreds of dollars after inflation. The same dollar held as cash lost most of its purchasing power. Gold roughly held its value. Same starting dollar, same decades — and the ending amounts aren't close.",
+      "text": "100s vs ~1",
+      "sub": "$1 in stocks vs cash over a century, after inflation",
+      "icon": "chartup"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank how the average person holds wealth by country.",
+      "heading": "The Ranking",
+      "kicker": "the asset mix"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One honest note before the ranking: these are averages, and averages hide huge inequality. In every country, a small slice of wealthy households owns most of the stocks, while typical families hold far less. So 'the average American owns lots of stock' really means the wealthy do. Still, the national mix shapes who even has the chance to build wealth that way.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "averages hide inequality"
+        },
+        {
+          "name": "stockscreen",
+          "label": "the wealthy own most stock"
+        },
+        {
+          "name": "scale",
+          "label": "the mix shapes the chance"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "assetmixbars",
+      "caption": "share of household wealth in stocks, by country",
+      "narration": "Here's how much of household wealth sits in stocks, country by country. The United States leads by a mile, around forty percent — Americans are, by global standards, obsessed with the stock market. Sweden and the Netherlands follow. Then it drops sharply: Britain, Germany, and especially Japan hold far less in stocks and far more in cash. Same wealth, radically different engines underneath it."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the pattern in the ranking: the stock-heavy countries tend to be the ones whose households got richer fastest over recent decades. It isn't a coincidence. When a nation's savings own a slice of its growing companies, the people share directly in that growth. When savings sit in cash, the growth happens around them, and they just watch.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "stock-heavy = richer faster"
+        },
+        {
+          "name": "stockscreen",
+          "label": "savings share the growth"
+        },
+        {
+          "name": "warning",
+          "label": "cash just watches"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Household wealth held in stocks (%)",
+      "unit": "%",
+      "narration": "Put the numbers side by side. India around five percent in stocks, Japan and Germany near ten, the UK about twenty, Sweden thirty, and the US a towering forty. The American willingness to own stocks — through retirement accounts and brokerages — is historically unusual. And over the last century, it's a huge reason American households, on average, grew so wealthy.",
+      "data": [
+        {
+          "label": "India",
+          "value": 5
+        },
+        {
+          "label": "Japan",
+          "value": 10
+        },
+        {
+          "label": "Germany",
+          "value": 12
+        },
+        {
+          "label": "UK",
+          "value": 20
+        },
+        {
+          "label": "Sweden",
+          "value": 30
+        },
+        {
+          "label": "US",
+          "value": 40
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the American stock habit isn't really about being braver — it's about plumbing. Automatic workplace retirement plans quietly funnel tens of millions of ordinary Americans into the stock market every payday, whether they think about it or not. Countries without that default, where saving means a bank account, end up cash-heavy by design. The system nudges the whole nation's asset mix.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "auto retirement plans"
+        },
+        {
+          "name": "stockscreen",
+          "label": "nudged into stocks"
+        },
+        {
+          "name": "globe",
+          "label": "the system sets the mix"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "motif": "cashtraplines",
+      "caption": "stocks grow; cash erodes",
+      "narration": "And here's why that mix matters so much, drawn over time. A dollar in stocks has historically grown many times over across decades. A dollar in cash, after inflation, has lost value nearly every year. So a country that holds stocks rides a rising line for generations, while a country that hoards cash watches its savings quietly shrink. Same discipline, opposite destinations."
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "save money in the bank",
+      "memeBottom": "own pieces of the companies the bank invests in",
+      "narration": "This is the mental leap that separates savers from investors. The cautious saver hands their cash to a bank — which then invests it in the very assets the saver was too nervous to own, and keeps most of the gains. You can either lend your money to the system, or own a piece of it."
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "Which exposes the most expensive safe choice in the world: cash.",
+      "heading": "The Cash Trap",
+      "kicker": "safe but shrinking"
+    },
+    {
+      "id": "s55",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "keep it 100% safe in cash",
+      "memeBottom": "let inflation quietly eat it every year",
+      "narration": "This is the false choice the cash trap sells you. 'Safe' cash feels like the responsible button — but pressing it guarantees a slow loss to inflation. There is no truly risk-free option; there's only visible risk you fear and invisible risk you ignore. Cash just hides the risk where you won't look."
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "sourceId": "wiki-diversification",
+      "narration": "Smart investing relies on diversification — the process of allocating capital in a way that reduces the exposure to any one particular asset or risk. But cash-heavy savers get this backwards. Piling everything into cash feels like safety, yet it concentrates you in the one asset guaranteed to lose to inflation over time. The safest-feeling choice is, in the long run, one of the riskiest."
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is the cash trap, and whole countries fall into it. In Japan and much of Europe, deep cultural caution after past crises keeps households in cash and bonds, out of stocks. It feels responsible. But over thirty years, that caution can cost a family a fortune in missed growth. Avoiding the stock market's bumps means avoiding its enormous long-run climb, too.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "cultural caution = cash"
+        },
+        {
+          "name": "chartdown",
+          "label": "misses the long climb"
+        },
+        {
+          "name": "warning",
+          "label": "caution has a cost"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And inflation is the silent thief that makes the cash trap so cruel. At just three percent inflation, cash loses about half its purchasing power in twenty-four years. Your bank balance looks identical, even grows a little — but what it can actually buy quietly halves. Cash doesn't fail with a crash. It fails invisibly, one quiet year at a time.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "half its value in ~24 yrs"
+        },
+        {
+          "name": "warning",
+          "label": "the silent thief"
+        },
+        {
+          "name": "chartdown",
+          "label": "fails invisibly"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "And then there's the oldest asset of all: gold.",
+      "heading": "The Gold Cultures",
+      "kicker": "holding, not growing"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And gold's appeal spikes in exactly the scary moments stocks wobble. When wars, inflation, or banking crises hit, money floods into gold as a safe haven, and its price jumps. That's its real job — insurance for chaos, not an engine for growth. Owning a little makes sense. Owning most of your wealth in it means betting your whole future on permanent disaster.",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "safe haven in chaos"
+        },
+        {
+          "name": "shield",
+          "label": "insurance, not an engine"
+        },
+        {
+          "name": "warning",
+          "label": "all-gold = betting on disaster"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "sourceId": "wiki-gold",
+      "narration": "In much of Asia and the Middle East, investors generally buy gold as a way of diversifying risk — and of storing family wealth across generations. In India and China especially, gold isn't just an investment; it's woven into weddings, festivals, and culture. Households there can hold a staggering share of their savings as physical gold, tucked away rather than invested."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And it's easy to see why gold cultures distrust paper money — they earned that distrust. India, China, and much of the Middle East lived through currency collapses, colonial upheaval, and hyperinflations that wiped out cash savings overnight. Gold survived every one of them. When your grandparents watched paper money turn to confetti, trusting a metal you can hold isn't superstition. It's memory.",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "gold survived collapses"
+        },
+        {
+          "name": "banknote",
+          "label": "paper money betrayed them"
+        },
+        {
+          "name": "globe",
+          "label": "distrust is memory"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "goldculture",
+      "caption": "where the world hoards its gold",
+      "narration": "The scale is astonishing. Indian households alone are estimated to hold more gold than the official reserves of most national governments — thousands of tonnes, passed down through families. Gold has real virtues: it survives inflation, crises, and collapsing currencies, which is exactly why cultures that lived through those traumas trust it. But it has one catch that defines its whole story."
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Here's the gold-hoard stat that stuns economists. Private households in India are estimated to hold on the order of twenty-five thousand tonnes of gold — worth well over a trillion dollars, and more than the reserves of the world's largest central banks. An entire nation's savings, sitting in jewelry boxes and safes instead of markets.",
+      "text": "25,000 tonnes",
+      "sub": "gold held by Indian households alone",
+      "icon": "goldbar"
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "pose": "explain",
+      "narration": "That catch: gold doesn't produce anything. A share of a company earns profits and pays dividends; a bond pays interest; a rental property collects rent. Gold just sits in a vault, worth whatever the next person will pay. It holds value beautifully, but it doesn't compound. Over long stretches, stocks have left gold far behind — because a business works, and a metal only waits.",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "gold just sits"
+        },
+        {
+          "name": "stockscreen",
+          "label": "a business works"
+        },
+        {
+          "name": "chartup",
+          "label": "stocks leave it behind"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is the quiet cost of a gold-heavy culture. All that wealth, locked in metal, isn't funding businesses, factories, or innovation. It just sits. Economists argue that if even a fraction of hoarded household gold flowed into productive investment, it could transform an economy. Gold protects the family — but it doesn't build the future the way owning enterprises does.",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "wealth locked in metal"
+        },
+        {
+          "name": "warning",
+          "label": "funds nothing"
+        },
+        {
+          "name": "factory",
+          "label": "enterprises build the future"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "So what does all this say you should actually own?",
+      "heading": "What To Do",
+      "kicker": "the winning mix"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And crypto now sits awkwardly in this picture as a new contender. Younger savers, especially in high-inflation countries, increasingly hold some wealth in Bitcoin as a kind of digital gold — scarce, borderless, beyond any government's printing press. It's far more volatile than gold, and unproven over the long run, but it's reshaping the asset mix of a whole generation in real time.",
+      "props": [
+        {
+          "name": "coins",
+          "label": "crypto as 'digital gold'"
+        },
+        {
+          "name": "warning",
+          "label": "far more volatile"
+        },
+        {
+          "name": "globe",
+          "label": "reshaping young portfolios"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "screenshot",
+      "sourceId": "wiki-allocation",
+      "narration": "The answer is good asset allocation — an investment strategy that attempts to balance risk versus reward by adjusting the percentage of each asset you hold. The data's lesson is clear: own productive assets, mostly stocks, for long-term growth. Keep enough cash for emergencies and near-term needs, but no more. And treat gold as a small insurance slice, not the core of your wealth."
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And match the mix to your life stage, not your fears. Decades from retirement, you can hold mostly stocks and ride out the bumps, because time repairs them. Close to needing the money, you shift toward cash and bonds to protect it. The classic mistake is doing the opposite — timid in your twenties when you should be bold, reckless near the end when you should be safe.",
+      "props": [
+        {
+          "name": "hourglass",
+          "label": "young: mostly stocks"
+        },
+        {
+          "name": "shield",
+          "label": "near goal: more cash/bonds"
+        },
+        {
+          "name": "warning",
+          "label": "most people invert it"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And keep costs microscopic, because fees are the one headwind you fully control. A fund charging one percent a year sounds tiny, but over decades it can quietly eat a quarter of your returns. The cheapest broad index funds charge almost nothing. Choosing low-cost funds is a guaranteed raise on every dollar you invest, in any country.",
+      "props": [
+        {
+          "name": "scissors",
+          "label": "1% fee eats ~25%"
+        },
+        {
+          "name": "stockscreen",
+          "label": "cheap index funds"
+        },
+        {
+          "name": "moneybag",
+          "label": "a guaranteed raise"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "present",
+      "narration": "So keep a few months of expenses in cash and stop there — extra cash beyond that is melting. Put the bulk of your long-term money into low-cost, diversified stock funds that own thousands of businesses at once. Add a small slice of gold if it helps you sleep. That simple mix quietly beats what the majority of the world's households actually do.",
+      "props": [
+        {
+          "name": "jar",
+          "label": "months of cash, no more"
+        },
+        {
+          "name": "stockscreen",
+          "label": "diversified stock funds"
+        },
+        {
+          "name": "shield",
+          "label": "a small gold slice"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And the single highest-impact move is just starting, in the right assets, now. You don't need to pick winning stocks or time the market — a broad, boring index fund owning the whole market has quietly beaten most experts for decades. The hard part was never the strategy. It's overcoming the very caution that keeps half the world sitting in cash.",
+      "props": [
+        {
+          "name": "seedling",
+          "label": "start now, broad index"
+        },
+        {
+          "name": "chartup",
+          "label": "beats most experts"
+        },
+        {
+          "name": "warning",
+          "label": "beat your own caution"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Two people, two countries, can earn and save the exact same amount — and end up decades apart in wealth, purely from what they held it in. Stocks built American fortunes. Cash quietly shrank Japanese ones. Gold preserved but didn't grow Asian ones. How much you save gets you in the game. What you hold decides whether you win it.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "same savings, different fate"
+        },
+        {
+          "name": "stockscreen",
+          "label": "what you hold decides"
+        },
+        {
+          "name": "chartup",
+          "label": "own productive assets"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the quiet unfairness of it all. Financial education, default retirement plans, and access to cheap stock funds decide a nation's asset mix as much as any culture does. People aren't cash-poor in wealth because they're foolish — often they were never shown the door to ownership. Learning this, and acting on it, is the closest thing to a free head start there is.",
+      "props": [
+        {
+          "name": "gradcap",
+          "label": "access & education decide it"
+        },
+        {
+          "name": "warning",
+          "label": "not foolishness — no door shown"
+        },
+        {
+          "name": "chartup",
+          "label": "acting on it = a head start"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this changed how you think about where your money lives, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "stockscreen",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-wealth",
+      "name": "Wealth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth",
+      "quote": "the abundance of valuable financial assets or physical possessions"
+    },
+    {
+      "id": "wiki-finasset",
+      "name": "Financial asset (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_asset",
+      "quote": "a non-physical asset whose value is derived from a contractual claim"
+    },
+    {
+      "id": "wiki-diversification",
+      "name": "Diversification (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+      "quote": "the process of allocating capital in a way that reduces the exposure to any one particular asset or risk"
+    },
+    {
+      "id": "wiki-gold",
+      "name": "Gold as an investment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+      "quote": "Investors generally buy gold as a way of diversifying risk"
+    },
+    {
+      "id": "wiki-allocation",
+      "name": "Asset allocation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Asset_allocation",
+      "quote": "attempts to balance risk versus reward by adjusting the percentage of each asset"
+    }
+  ],
+  "youtube": {
+    "title": "What the Average Person Owns in Gold, Stocks and Cash, by Country",
+    "alts": [
+      "Stocks vs Cash vs Gold: How the World Holds Its Money",
+      "Why Americans Hold Stocks, Japan Holds Cash, and India Holds Gold"
+    ],
+    "hook": "The average American keeps most of their wealth in stocks, the average Japanese keeps it in cash, and the average Indian keeps it in gold — same goal, three completely different bets, and over decades, three wildly different outcomes. This is how the average person actually holds their money around the world, ranked, and which choice quietly makes a country richer. We break down the asset mix by country (the US holds ~40% of household wealth in stocks — historically unusual — while Japan and much of Europe sit cash-heavy, and India/China are gold-heavy, with Indian households alone estimated to hold ~25,000 tonnes of gold), and explain why it matters so much: stocks are productive assets that compound and grow, cash quietly erodes to inflation (losing ~half its value in 24 years at 3%), and gold holds value but produces nothing. We expose the 'cash trap' (the safest-feeling choice is the riskiest long-run), the currency-collapse memory behind gold cultures, how automatic retirement plans nudge Americans into stocks, and what the data says you should own: a few months of cash, the bulk in low-cost diversified stock funds, and a small gold slice. Fully cited.",
+    "bullets": [
+      "Asset mix by country: US ~40% stocks vs Japan cash-heavy",
+      "Why it matters: stocks grow, cash erodes, gold just holds",
+      "The cash trap: the safest-feeling choice is the riskiest",
+      "Gold cultures: India's households hold ~25,000 tonnes",
+      "Why Americans own stocks (auto retirement plans)",
+      "The winning mix: cash buffer, stock funds, small gold"
+    ],
+    "tags": [
+      "stocks vs cash vs gold",
+      "asset allocation",
+      "household wealth by country",
+      "gold investment",
+      "cash vs stocks",
+      "how to invest",
+      "diversification",
+      "where to put your money",
+      "wealth by country",
+      "investing basics",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#investing",
+      "#stocks",
+      "#gold",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "WHAT YOU OWN",
+      "hookBot": "BY COUNTRY",
+      "napkinNumber": "stocks vs cash vs gold",
+      "napkinSub": "the average person's money",
+      "deco": "goldbar"
+    },
+    "chapters": [
+      [
+        "the three places people stash their wealth",
+        "Stocks, cash, gold"
+      ],
+      [
+        "rank how the average person holds wealth",
+        "The ranking"
+      ],
+      [
+        "the most expensive safe choice in the world",
+        "The cash trap"
+      ],
+      [
+        "the oldest asset of all",
+        "The gold cultures"
+      ],
+      [
+        "what does all this say you should actually own",
+        "What to do"
+      ]
+    ]
+  }
+}

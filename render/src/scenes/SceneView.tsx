@@ -7561,6 +7561,76 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={442} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>real momentum and real risk, side by side</text>
       </svg>
     );
+  } else if (m === "assetmixbars") {
+    // Share of household wealth in stocks by country — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["India", 5, "#d98b5f"],
+      ["Japan", 10, gold],
+      ["Germany", 12, gold],
+      ["UK", 20, "#9cc47f"],
+      ["Sweden", 30, "#6f9f5b"],
+      ["US", 40, green],
+    ];
+    const x0 = 250, xMax = 830, maxV = 40;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">household wealth held in stocks, by country</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{v}%</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the US owns stocks like nowhere else — and it shows</text>
+      </svg>
+    );
+  } else if (m === "cashtraplines") {
+    // Stocks rising vs cash eroding over time.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 140, x1 = 880, y0 = 430, yTop = 100;
+    const up = (t: number) => y0 - (y0 - yTop) * Math.pow(t, 1.5);
+    const down = (t: number) => y0 - (y0 - yTop) * 0.35 * (1 - 0.5 * t);
+    const segU = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${up(t)}`; }).join(" ");
+    const segD = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${down(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">stocks grow; cash erodes</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={segU} fill="none" stroke={green} strokeWidth={6} />
+        <path d={segD} fill="none" stroke={red} strokeWidth={6} strokeDasharray="10 7" />
+        <text x={x1 - 40} y={up(1) + 6} fontSize={15} fontWeight={900} fill={green} textAnchor="end" fontFamily={sans}>stocks</text>
+        <text x={x1 - 40} y={down(1) + 26} fontSize={15} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>cash (real)</text>
+        <text x={VW / 2} y={y0 + 34} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>same discipline, opposite destinations</text>
+      </svg>
+    );
+  } else if (m === "goldculture") {
+    // Where the world hoards gold — big gold pile.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.4], [0, 1], clampBoth);
+    const spots: [string, string][] = [["India", "~25,000 tonnes"], ["China", "huge private stocks"], ["Middle East", "gold as savings"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where the world hoards its gold</text>
+        <g transform="translate(300 280)">
+          <g opacity={grow}>
+            <rect x={-80} y={20} width={60} height={34} rx={5} fill={gold} stroke={ink} strokeWidth={3} />
+            <rect x={-12} y={20} width={60} height={34} rx={5} fill={gold} stroke={ink} strokeWidth={3} />
+            <rect x={56} y={20} width={60} height={34} rx={5} fill={gold} stroke={ink} strokeWidth={3} />
+            <rect x={-46} y={-16} width={60} height={34} rx={5} fill="#e8c24a" stroke={ink} strokeWidth={3} />
+            <rect x={22} y={-16} width={60} height={34} rx={5} fill="#e8c24a" stroke={ink} strokeWidth={3} />
+            <rect x={-12} y={-52} width={60} height={34} rx={5} fill="#f0d36a" stroke={ink} strokeWidth={3} />
+          </g>
+        </g>
+        {spots.map(([n, d], i) => { const y = 140 + i * 90; return <g key={i} opacity={interpolate(grow, [i * 0.18, i * 0.18 + 0.3], [0, 1], clampBoth)}><text x={560} y={y} fontSize={19} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{n}</text><text x={560} y={y + 26} fontSize={14} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>{d}</text></g>; })}
+        <text x={VW / 2} y={466} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>a nation's savings — sitting in safes, not markets</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

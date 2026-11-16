@@ -268,7 +268,9 @@ export interface StageScene extends Base {
     // EP101 (The Price Tag — Big Mac index) additions:
     | "bigmacbars" | "currencyvaluation" | "bigmacsperhour"
     // EP102 (The Price Tag — fastest-growing cities) additions:
-    | "boomcitybars" | "boompricecurve" | "boomtradeoffs";
+    | "boomcitybars" | "boompricecurve" | "boomtradeoffs"
+    // EP103 (The Price Tag — assets by country) additions:
+    | "assetmixbars" | "cashtraplines" | "goldculture";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
