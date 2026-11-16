@@ -1,0 +1,119 @@
+name: Render short
+
+# Vertical YouTube Short (1080x1920). Same pipeline as the episode render —
+# Edge TTS narration + Remotion — but drives the Short composition from a
+# shorts JSON (scenes[].narration + block layout). No source screenshots,
+# no chapters. Hands back a downloadable MP4 + a small text package.
+on:
+  # Push any shorts-render-* branch and this auto-renders SH001 (the default).
+  # Set SHORT_JSON in the branch to override, or use workflow_dispatch once this
+  # workflow is on the default branch.
+  push:
+    branches: ["shorts-render-*"]
+  workflow_dispatch:
+    inputs:
+      short:
+        description: "Path to the short JSON (its scenes[] drive the Short render)"
+        default: "shorts/examples/SH001-ep011-debt-holders.json"
+        type: string
+      codec:
+        description: "Video codec"
+        default: "h264"
+        type: choice
+        options: ["h264", "h265", "vp8", "vp9"]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg \
+            libnss3 libdbus-1-3 libatk1.0-0 libatk-bridge2.0-0 libgbm-dev \
+            libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 \
+            libxcomposite1 libxdamage1 libpango-1.0-0 libcairo2 libcups2
+
+      - name: Install Node dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Install narration dependencies
+        run: pip install -r tools/narration/requirements.txt
+
+      # On push there are no inputs, so fall back to SH001.
+      - name: Resolve short path
+        run: |
+          SHORT="${{ inputs.short }}"
+          echo "SHORT=${SHORT:-shorts/examples/SH001-ep011-debt-holders.json}" >> "$GITHUB_ENV"
+
+      # The Short composition reads scenes.json / timing.json. Extract the
+      # short's scenes[] and stage a tiny YouTube text package from its fields.
+      - name: Prepare short (scenes are the source of truth)
+        run: |
+          python - "$SHORT" <<'PY'
+          import json, sys, os
+          sh = json.load(open(sys.argv[1]))
+          json.dump(sh["scenes"], open("render/src/data/scenes.json", "w"), indent=2, ensure_ascii=False)
+          shid = sh["id"]
+          pkg = f"shorts/{shid}/youtube"
+          os.makedirs(pkg, exist_ok=True)
+          open(f"{pkg}/title.txt", "w").write((sh.get("title") or "").strip() + "\n")
+          desc = []
+          if sh.get("hook"): desc.append(sh["hook"].strip())
+          if sh.get("question"): desc.append(sh["question"].strip())
+          desc.append("")
+          desc.append(f"Full story: {sh.get('sourceTitle','')} (Napkin Numbers).")
+          desc.append("#shorts #finance #economics #money #debt")
+          open(f"{pkg}/description.txt", "w").write("\n".join(desc) + "\n")
+          open(f"{pkg}/tags.txt", "w").write(
+              "finance,economics,money,national debt,US debt,China,Japan,federal reserve,explained,shorts\n")
+          with open(os.environ["GITHUB_ENV"], "a") as f:
+              f.write(f"SHID={shid}\n")
+          print(f"scenes.json: {len(sh['scenes'])} scenes · SHID={shid}")
+          PY
+
+      - name: Narrate with Edge TTS
+        run: python tools/narration/synth.py --episode "$SHORT" --intro 0 --pad 0.35
+
+      - name: Render vertical short (Short)
+        run: |
+          mkdir -p render/out
+          pnpm --filter @ff/render exec remotion render Short "out/${SHID}.mp4" --codec="${{ inputs.codec }}"
+
+      - name: Assemble upload bundle
+        run: |
+          mkdir -p upload/youtube
+          cp "render/out/${SHID}.mp4" upload/
+          cp -r "shorts/${SHID}/youtube/"* upload/youtube/ 2>/dev/null || true
+
+      - name: Upload short + text package
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ env.SHID }}-${{ github.run_number }}"
+          path: upload/
+          retention-days: 14
+
+      - name: Print download link
+        run: |
+          {
+            echo "### ✅ Short rendered — ${SHID}"
+            echo ""
+            echo "**Download:** ${{ steps.upload.outputs.artifact-url }}"
+            echo ""
+            echo "Unzip, then upload \`${SHID}.mp4\` to YouTube Shorts (title/description/tags in \`youtube/\`)."
+          } >> "$GITHUB_STEP_SUMMARY"

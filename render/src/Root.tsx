@@ -8,6 +8,7 @@ import { MotionLab, MotionReel } from "./MotionLab";
 import { MascotSheet } from "./MascotSheet";
 import { SourceCardDemo, SourceEntry } from "./SourceCardDemo";
 import { Film, filmDurationInFrames } from "./Film";
+import { Short, shortDurationInFrames, ShortScene } from "./Short";
 import { Thumbnail } from "./Thumbnail";
 import { ClickbaitThumb } from "./ClickbaitThumb";
 import { Logo } from "./brand/Logo";
@@ -21,6 +22,7 @@ import sourcesIndex from "./data/sources.index.json";
 import scenesData from "./data/scenes.json";
 
 const scenes = scenesData as unknown as Scene[];
+const shortScenes = scenesData as unknown as ShortScene[];
 
 // These three are produced by the pipeline (prepare/build-clips/narration) and
 // imported statically so the bundle is deterministic:
@@ -49,6 +51,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ scenes, timing, audioSrc, sources: sourcesIndex as unknown as Record<string, SourceEntry> }}
+      />
+      <Composition
+        id="Short"
+        component={Short}
+        durationInFrames={shortDurationInFrames(shortScenes, FPS, timing)}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ scenes: shortScenes, timing, audioSrc }}
       />
       <Composition
         id="StickFigureDemo"
