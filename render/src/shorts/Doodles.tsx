@@ -407,6 +407,87 @@ export const USMap: React.FC<{ size?: number }> = ({ size = 600 }) => {
   );
 };
 
+// ---- MINI ICONS: small animated props scattered around a shot -------------
+export type MiniName =
+  | "coin" | "bill" | "iou" | "question" | "bank" | "piggy" | "house"
+  | "chartDown" | "chartUp" | "x" | "check" | "loop" | "globe" | "fire" | "clock";
+
+export const MiniIcon: React.FC<{ name: MiniName; delay?: number; size?: number }> = ({ name, delay = 0, size = 92 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = spring({ frame: frame - delay, fps, config: { damping: 160, stiffness: 180, mass: 0.5 } });
+  const y = bob(frame, fps, 0.8, 6, delay);
+  const rot = Math.sin((frame / fps) * 2 + delay) * 5;
+  let art: React.ReactNode = null;
+  switch (name) {
+    case "coin":
+      art = (<><circle cx={50} cy={50} r={34} fill={GOLD} stroke={INK} strokeWidth={5} /><text x={50} y={64} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={40} fill={INK}>$</text></>);
+      break;
+    case "bill":
+      art = (<><rect x={14} y={28} width={72} height={44} rx={6} fill="#eaf6ec" stroke={GREEN} strokeWidth={5} /><circle cx={50} cy={50} r={13} fill="none" stroke={GREEN} strokeWidth={4} /><text x={50} y={60} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={22} fill={GREEN}>$</text></>);
+      break;
+    case "iou":
+      art = (<><rect x={14} y={30} width={72} height={40} rx={6} fill="#fff" stroke={RED} strokeWidth={5} /><text x={50} y={60} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={28} fill={RED}>IOU</text></>);
+      break;
+    case "question":
+      art = (<text x={50} y={74} textAnchor="middle" fontFamily={display} fontWeight={900} fontSize={84} fill={RED}>?</text>);
+      break;
+    case "bank":
+      art = (<><path d="M16 40 L50 20 L84 40 Z" fill="#f3d9b0" stroke={INK} strokeWidth={5} strokeLinejoin="round" /><rect x={22} y={44} width={10} height={30} fill="#fff" stroke={INK} strokeWidth={4} /><rect x={45} y={44} width={10} height={30} fill="#fff" stroke={INK} strokeWidth={4} /><rect x={68} y={44} width={10} height={30} fill="#fff" stroke={INK} strokeWidth={4} /><rect x={14} y={76} width={72} height={8} fill={INK} /></>);
+      break;
+    case "piggy":
+      art = (<><ellipse cx={50} cy={54} rx={34} ry={26} fill={RED} stroke={INK} strokeWidth={5} /><circle cx={64} cy={48} r={4} fill="#fff" /><rect x={40} y={24} width={16} height={8} rx={3} fill={RED} stroke={INK} strokeWidth={3} /><rect x={30} y={76} width={8} height={10} fill={INK} /><rect x={60} y={76} width={8} height={10} fill={INK} /></>);
+      break;
+    case "house":
+      art = (<><path d="M18 50 L50 24 L82 50 Z" fill="#f3d9b0" stroke={INK} strokeWidth={5} strokeLinejoin="round" /><rect x={28} y={50} width={44} height={30} fill="#fff" stroke={INK} strokeWidth={5} /><rect x={44} y={60} width={14} height={20} fill={GOLD} stroke={INK} strokeWidth={3} /></>);
+      break;
+    case "chartDown":
+      art = (<><polyline points="16,26 38,46 54,38 84,78" fill="none" stroke={RED} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" /><polygon points="84,78 66,74 78,60" fill={RED} /></>);
+      break;
+    case "chartUp":
+      art = (<><polyline points="16,78 38,52 54,60 84,24" fill="none" stroke={GREEN} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" /><polygon points="84,24 66,28 78,42" fill={GREEN} /></>);
+      break;
+    case "x":
+      art = (<><line x1={24} y1={24} x2={76} y2={76} stroke={RED} strokeWidth={11} strokeLinecap="round" /><line x1={76} y1={24} x2={24} y2={76} stroke={RED} strokeWidth={11} strokeLinecap="round" /></>);
+      break;
+    case "check":
+      art = (<polyline points="22,52 42,72 80,26" fill="none" stroke={GREEN} strokeWidth={11} strokeLinecap="round" strokeLinejoin="round" />);
+      break;
+    case "loop":
+      art = (<><path d="M30 64 A24 24 0 1 1 54 76" fill="none" stroke={BLUE} strokeWidth={7} strokeLinecap="round" /><polygon points="54,78 40,70 44,86" fill={BLUE} /></>);
+      break;
+    case "globe":
+      art = (<><circle cx={50} cy={50} r={32} fill="#eef4f7" stroke={INK} strokeWidth={5} /><ellipse cx={50} cy={50} rx={13} ry={32} fill="none" stroke={BLUE} strokeWidth={4} /><line x1={18} y1={50} x2={82} y2={50} stroke={BLUE} strokeWidth={4} /></>);
+      break;
+    case "fire":
+      art = (<path d="M50 20 C62 38 74 42 66 64 C62 78 38 78 34 64 C30 52 44 52 42 38 C50 46 44 30 50 20 Z" fill={RED} stroke={INK} strokeWidth={4} strokeLinejoin="round" />);
+      break;
+    case "clock":
+      art = (<><circle cx={50} cy={52} r={30} fill="#fff" stroke={INK} strokeWidth={5} /><line x1={50} y1={52} x2={50} y2={32} stroke={INK} strokeWidth={5} strokeLinecap="round" /><line x1={50} y1={52} x2={66} y2={58} stroke={INK} strokeWidth={5} strokeLinecap="round" /></>);
+      break;
+  }
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100" style={{ transform: `translateY(${y}px) rotate(${rot}deg) scale(${t})`, opacity: t }}>
+      {art}
+    </svg>
+  );
+};
+
+// ---- GLOBE with a big red X struck through (not abroad) --------------------
+export const GlobeX: React.FC<{ size?: number }> = ({ size = 440 }) => {
+  const frame = useCurrentFrame();
+  const t = useT(2, 90);
+  const x = useT(10, 120);
+  return (
+    <svg width={size} height={size} viewBox="0 0 400 400">
+      <circle cx={200} cy={200} r={140} fill="#eef4f7" stroke={INK} strokeWidth={7} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} opacity={0.7} />
+      <ellipse cx={200} cy={200} rx={56} ry={140} fill="none" stroke={BLUE} strokeWidth={4} opacity={0.5 * t} />
+      <line x1={200} y1={60} x2={200} y2={340} stroke={BLUE} strokeWidth={4} opacity={0.5 * t} />
+      <line x1={70} y1={70} x2={330} y2={330} stroke={RED} strokeWidth={22} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - x} />
+    </svg>
+  );
+};
+
 // ---- Drifting $ background (subtle life behind every scene) ----------------
 export const MoneyDust: React.FC = () => {
   const frame = useCurrentFrame();

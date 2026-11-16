@@ -11,62 +11,73 @@ import {
 } from "remotion";
 import { theme } from "./theme";
 import { display, sans } from "./fonts";
-import { Globe, MoneyFlow, HomeMoney, FlagStack, BankPrint, CountUp, MoneyDust, CrashChart, PriceTag, Lock, Building, Vault, USMap } from "./shorts/Doodles";
+import {
+  Globe,
+  GlobeX,
+  MoneyFlow,
+  HomeMoney,
+  FlagStack,
+  BankPrint,
+  CountUp,
+  MoneyDust,
+  CrashChart,
+  PriceTag,
+  Lock,
+  Building,
+  Vault,
+  USMap,
+  MiniIcon,
+  MiniName,
+} from "./shorts/Doodles";
 
 // ---------------------------------------------------------------------------
-// Vertical YouTube Short (1080x1920). Animation-first: every beat is a bespoke
-// moving doodle (globe of IOUs, money over the ocean, a house with money
-// circulating, flag + growing stacks, the Fed printing bills) with big readable
-// text under it. Reads the same scenes.json + timing.json + narration.mp3 the
-// episode pipeline produces, so CI synth/render is identical.
+// Vertical Short (1080x1920), long-video energy: a narrated sentence (scene)
+// is CUT into several fast shots. Every shot is a busy tableau — a doodle,
+// scattered animated mini-icons, moving text, and colour/background changes
+// per cut. Reads the same scenes.json + timing.json + narration.mp3 the
+// episode pipeline produces.
 // ---------------------------------------------------------------------------
 
 const CREAM = "#faf6ee";
 const PAPER_LINE = "#e7e0d3";
+const BGS: Record<string, string> = { cream: CREAM, ink: theme.ink, red: theme.accent, gold: "#e8a33d" };
+
+export type ShortArt =
+  | "globe" | "globeX" | "globeQ" | "moneyFlow" | "home" | "flagStack" | "bank"
+  | "crashChart" | "priceTag" | "lock" | "building" | "vault" | "map";
 
 export type ShortRow = { rank?: string; name: string; value: string; note?: string; color?: string; bar?: number };
 
-export type ShortArt =
-  | "globe"
-  | "globeQ"
-  | "moneyFlow"
-  | "home"
-  | "flagStack"
-  | "bank"
-  | "crashChart"
-  | "priceTag"
-  | "lock"
-  | "building"
-  | "vault"
-  | "map";
-
-export type ShortScene = {
-  id: string;
-  narration?: string;
-  block: "hook" | "label" | "truth" | "stat" | "rows" | "question" | "thennow";
+// A single visual shot. A scene is itself a view; `shots` splits it into cuts.
+export type ShortView = {
+  block?: "hook" | "center" | "flash" | "stat" | "rows" | "thennow" | "question";
+  bg?: "cream" | "ink" | "red" | "gold";
   art?: ShortArt;
   country?: "jp" | "cn" | "us";
   trend?: "up" | "down";
-  // then-vs-now
+  props?: MiniName[];
+  flash?: boolean;
+  lines?: string[];
+  kicker?: string;
+  line?: string;
+  sub?: string;
+  strike?: boolean;
+  big?: string;
+  bigValue?: number;
+  bigPrefix?: string;
+  bigSuffix?: string;
+  bigDecimals?: number;
+  label?: string;
+  rows?: ShortRow[];
   thenValue?: string;
   thenLabel?: string;
   nowValue?: string;
   nowLabel?: string;
-  // text content (by block)
-  lines?: string[]; // hook: stacked lines, last one red
-  kicker?: string; // small label above the main content
-  line?: string; // single emphasised line (label / truth / question)
-  sub?: string; // supporting line under the main content
-  big?: string; // stat: static giant number/word (when no count-up)
-  bigValue?: number; // stat: count-up target
-  bigPrefix?: string;
-  bigSuffix?: string;
-  bigDecimals?: number;
-  label?: string; // stat: label under the number
-  rows?: ShortRow[]; // rows: ranked list with growing bars
 };
 
-const DEFAULT_SECONDS = 4;
+export type ShortScene = ShortView & { id: string; narration?: string; shots?: ShortView[] };
+
+const DEFAULT_SECONDS = 2.5;
 
 export const shortDurationInFrames = (scenes: ShortScene[], fps: number, timing?: number[]) =>
   Math.max(
@@ -74,95 +85,92 @@ export const shortDurationInFrames = (scenes: ShortScene[], fps: number, timing?
     scenes.reduce((acc, _s, i) => acc + Math.round((timing?.[i] ?? DEFAULT_SECONDS) * fps), 0)
   );
 
-const usePop = (delay: number) => {
+const usePop = (delay: number, stiffness = 150) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const t = spring({ frame: frame - delay, fps, config: { damping: 200, stiffness: 130, mass: 0.7 } });
-  return {
-    opacity: interpolate(t, [0, 1], [0, 1]),
-    transform: `translateY(${interpolate(t, [0, 1], [26, 0])}px) scale(${interpolate(t, [0, 1], [0.92, 1])})`,
-  };
+  const t = spring({ frame: frame - delay, fps, config: { damping: 200, stiffness, mass: 0.6 } });
+  return { opacity: interpolate(t, [0, 1], [0, 1]), transform: `translateY(${interpolate(t, [0, 1], [22, 0])}px) scale(${interpolate(t, [0, 1], [0.9, 1])})` };
 };
 
-const SketchUnderline: React.FC<{ delay: number; width: number }> = ({ delay, width }) => {
+const SketchUnderline: React.FC<{ delay: number; width: number; color?: string }> = ({ delay, width, color = theme.accent }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = spring({ frame: frame - delay, fps, config: { damping: 200, stiffness: 90, mass: 0.8 } });
   return (
     <svg width={width} height={26} viewBox="0 0 320 26" style={{ display: "block", margin: "6px auto 0" }}>
-      <path d="M6 16 C 70 6, 150 24, 230 12 S 312 8, 314 14" fill="none" stroke={theme.accent} strokeWidth={7} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+      <path d="M6 16 C 70 6, 150 24, 230 12 S 312 8, 314 14" fill="none" stroke={color} strokeWidth={8} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
     </svg>
   );
 };
 
 const RankChip: React.FC<{ text: string; color: string }> = ({ text, color }) => (
-  <div style={{ width: 88, height: 88, borderRadius: 22, background: color, color: "#fff", fontFamily: display, fontWeight: 900, fontSize: 44, display: "flex", alignItems: "center", justifyContent: "center", flex: "0 0 auto", boxShadow: "0 8px 0 rgba(0,0,0,0.12)" }}>
-    {text}
+  <div style={{ width: 86, height: 86, borderRadius: 22, background: color, color: "#fff", fontFamily: display, fontWeight: 900, fontSize: 42, display: "flex", alignItems: "center", justifyContent: "center", flex: "0 0 auto", boxShadow: "0 7px 0 rgba(0,0,0,0.14)" }}>{text}</div>
+);
+
+const Wordmark: React.FC<{ dark: boolean }> = ({ dark }) => (
+  <div style={{ position: "absolute", top: 56, left: 0, right: 0, textAlign: "center", zIndex: 5 }}>
+    <span style={{ fontFamily: display, fontWeight: 900, fontSize: 34, letterSpacing: 4, color: dark ? CREAM : theme.ink, textTransform: "uppercase", opacity: 0.9 }}>Napkin Numbers</span>
   </div>
 );
 
-const Wordmark: React.FC = () => (
-  <div style={{ position: "absolute", top: 60, left: 0, right: 0, textAlign: "center" }}>
-    <span style={{ fontFamily: display, fontWeight: 900, fontSize: 38, letterSpacing: 4, color: theme.ink, textTransform: "uppercase" }}>Napkin Numbers</span>
-    <div style={{ width: 140, height: 5, background: theme.accent, borderRadius: 4, margin: "8px auto 0" }} />
-  </div>
-);
-
-// the animated illustration for a scene
-const Art: React.FC<{ scene: ShortScene }> = ({ scene }) => {
-  switch (scene.art) {
-    case "globe":
-      return <Globe size={460} />;
-    case "globeQ":
-      return <Globe size={460} question />;
-    case "moneyFlow":
-      return <MoneyFlow size={640} />;
-    case "home":
-      return <HomeMoney size={470} />;
-    case "flagStack":
-      return <FlagStack country={scene.country ?? "us"} trend={scene.trend ?? "up"} size={430} />;
-    case "bank":
-      return <BankPrint size={470} />;
-    case "crashChart":
-      return <CrashChart size={640} />;
-    case "priceTag":
-      return <PriceTag size={360} />;
-    case "lock":
-      return <Lock size={320} />;
-    case "building":
-      return <Building size={430} />;
-    case "vault":
-      return <Vault size={440} />;
-    case "map":
-      return <USMap size={640} />;
-    default:
-      return null;
+const ART_W = 460;
+const Art: React.FC<{ view: ShortView }> = ({ view }) => {
+  switch (view.art) {
+    case "globe": return <Globe size={ART_W} />;
+    case "globeQ": return <Globe size={ART_W} question />;
+    case "globeX": return <GlobeX size={ART_W} />;
+    case "moneyFlow": return <MoneyFlow size={640} />;
+    case "home": return <HomeMoney size={470} />;
+    case "flagStack": return <FlagStack country={view.country ?? "us"} trend={view.trend ?? "up"} size={430} />;
+    case "bank": return <BankPrint size={470} />;
+    case "crashChart": return <CrashChart size={640} />;
+    case "priceTag": return <PriceTag size={360} />;
+    case "lock": return <Lock size={320} />;
+    case "building": return <Building size={430} />;
+    case "vault": return <Vault size={440} />;
+    case "map": return <USMap size={640} />;
+    default: return null;
   }
 };
 
-const RowsBlock: React.FC<{ scene: ShortScene }> = ({ scene }) => {
+const PROP_ANCHORS = [
+  { x: 110, y: 360 }, { x: 880, y: 350 }, { x: 70, y: 980 }, { x: 930, y: 980 },
+  { x: 150, y: 1430 }, { x: 860, y: 1430 }, { x: 520, y: 300 }, { x: 520, y: 1500 },
+];
+const Props: React.FC<{ names?: MiniName[] }> = ({ names }) => {
+  if (!names || !names.length) return null;
+  return (
+    <>
+      {names.slice(0, PROP_ANCHORS.length).map((n, i) => (
+        <div key={i} style={{ position: "absolute", left: PROP_ANCHORS[i].x, top: PROP_ANCHORS[i].y, zIndex: 1 }}>
+          <MiniIcon name={n} delay={4 + i * 3} size={116} />
+        </div>
+      ))}
+    </>
+  );
+};
+
+const RowsBlock: React.FC<{ view: ShortView }> = ({ view }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const rows = scene.rows ?? [];
+  const rows = view.rows ?? [];
   return (
-    <div style={{ width: "100%", padding: "0 64px" }}>
-      {scene.kicker && (
-        <div style={{ ...usePop(2), textAlign: "center", fontFamily: display, fontWeight: 900, fontSize: 66, color: theme.ink, marginBottom: 40 }}>{scene.kicker}</div>
-      )}
+    <div style={{ width: "100%", padding: "0 60px" }}>
+      {view.kicker && <div style={{ ...usePop(2), textAlign: "center", fontFamily: display, fontWeight: 900, fontSize: 62, color: theme.ink, marginBottom: 32 }}>{view.kicker}</div>}
       {rows.map((r, i) => {
-        const delay = 8 + i * 9;
+        const delay = 6 + i * 7;
         const pop = usePop(delay);
-        const grow = spring({ frame: frame - delay - 4, fps, config: { damping: 200, stiffness: 60, mass: 1 } });
+        const grow = spring({ frame: frame - delay - 3, fps, config: { damping: 200, stiffness: 60, mass: 1 } });
         const w = (r.bar ?? 0.5) * grow;
         return (
-          <div key={i} style={{ ...pop, position: "relative", display: "flex", alignItems: "center", gap: 24, background: "#fff", border: `3px solid ${PAPER_LINE}`, borderRadius: 26, padding: "22px 28px", marginBottom: 26, overflow: "hidden", boxShadow: "0 10px 0 rgba(23,18,15,0.06)" }}>
-            <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${w * 100}%`, background: r.color ?? theme.accent, opacity: 0.1 }} />
+          <div key={i} style={{ ...pop, position: "relative", display: "flex", alignItems: "center", gap: 22, background: "#fff", border: `3px solid ${PAPER_LINE}`, borderRadius: 24, padding: "20px 26px", marginBottom: 24, overflow: "hidden", boxShadow: "0 9px 0 rgba(23,18,15,0.06)" }}>
+            <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${w * 100}%`, background: r.color ?? theme.accent, opacity: 0.12 }} />
             {r.rank && <RankChip text={r.rank} color={r.color ?? theme.ink} />}
             <div style={{ flex: 1, minWidth: 0, zIndex: 1 }}>
-              <div style={{ fontFamily: display, fontWeight: 900, fontSize: 58, color: theme.ink, lineHeight: 1 }}>{r.name}</div>
-              {r.note && <div style={{ fontFamily: sans, fontWeight: 600, fontSize: 33, color: theme.inkSoft, marginTop: 6 }}>{r.note}</div>}
+              <div style={{ fontFamily: display, fontWeight: 900, fontSize: 56, color: theme.ink, lineHeight: 1 }}>{r.name}</div>
+              {r.note && <div style={{ fontFamily: sans, fontWeight: 600, fontSize: 32, color: theme.inkSoft, marginTop: 5 }}>{r.note}</div>}
             </div>
-            <div style={{ fontFamily: display, fontWeight: 900, fontSize: 68, color: r.color ?? theme.accent, flex: "0 0 auto", zIndex: 1 }}>{r.value}</div>
+            <div style={{ fontFamily: display, fontWeight: 900, fontSize: 64, color: r.color ?? theme.accent, flex: "0 0 auto", zIndex: 1 }}>{r.value}</div>
           </div>
         );
       })}
@@ -170,104 +178,113 @@ const RowsBlock: React.FC<{ scene: ShortScene }> = ({ scene }) => {
   );
 };
 
-const Card: React.FC<{ scene: ShortScene }> = ({ scene }) => {
-  const s = scene;
-  const hasArt = !!s.art;
+const Content: React.FC<{ view: ShortView; dark: boolean }> = ({ view: s, dark }) => {
+  const main = dark ? CREAM : theme.ink;
+  const soft = dark ? "rgba(250,246,238,0.8)" : theme.inkSoft;
+  const hot = dark ? "#ffd9d2" : theme.accent;
+  const block = s.block ?? "center";
 
-  let text: React.ReactNode = null;
+  if (block === "rows") return <RowsBlock view={s} />;
 
-  if (s.block === "hook") {
-    const lines = s.lines ?? [];
-    text = (
-      <div style={{ textAlign: "center", padding: "0 64px" }}>
-        {lines.map((ln, i) => {
-          const last = i === lines.length - 1;
-          return (
-            <div key={i} style={{ ...usePop(6 + i * 7), fontFamily: display, fontWeight: last ? 900 : 700, fontSize: last ? 96 : 76, lineHeight: 1.05, color: last ? theme.accent : theme.ink, marginTop: i === 0 ? 0 : 18 }}>
-              {ln}
-            </div>
-          );
-        })}
-      </div>
-    );
-  } else if (s.block === "label") {
-    text = (
-      <div style={{ textAlign: "center", padding: "0 64px" }}>
-        {s.kicker && <div style={{ ...usePop(4), fontFamily: sans, fontWeight: 700, fontSize: 44, color: theme.inkSoft, marginBottom: 18 }}>{s.kicker}</div>}
-        {s.line && <div style={{ ...usePop(10), fontFamily: display, fontWeight: 900, fontSize: 104, lineHeight: 1.02, color: theme.ink }}>{s.line}</div>}
-        {s.sub && <div style={{ ...usePop(20), fontFamily: sans, fontWeight: 600, fontSize: 44, color: theme.inkSoft, marginTop: 20 }}>{s.sub}</div>}
-      </div>
-    );
-  } else if (s.block === "truth") {
-    text = (
-      <div style={{ textAlign: "center", padding: "0 56px" }}>
-        {s.kicker && <div style={{ ...usePop(4), fontFamily: sans, fontWeight: 700, fontSize: 40, color: theme.accent, textTransform: "uppercase", letterSpacing: 2, marginBottom: 18 }}>{s.kicker}</div>}
-        <div style={{ ...usePop(10), fontFamily: display, fontWeight: 900, fontSize: 96, lineHeight: 1.06, color: theme.ink }}>{s.line}</div>
-        <SketchUnderline delay={22} width={360} />
-        {s.sub && <div style={{ ...usePop(26), fontFamily: sans, fontWeight: 600, fontSize: 44, color: theme.inkSoft, marginTop: 24, lineHeight: 1.3 }}>{s.sub}</div>}
-      </div>
-    );
-  } else if (s.block === "stat") {
-    text = (
-      <div style={{ textAlign: "center", padding: "0 48px" }}>
-        {s.kicker && <div style={{ ...usePop(4), fontFamily: sans, fontWeight: 700, fontSize: 42, color: theme.inkSoft, marginBottom: 8 }}>{s.kicker}</div>}
-        <div style={{ ...usePop(6) }}>
-          {typeof s.bigValue === "number" ? (
-            <CountUp value={s.bigValue} prefix={s.bigPrefix} suffix={s.bigSuffix} decimals={s.bigDecimals} size={230} />
-          ) : (
-            <span style={{ fontFamily: display, fontWeight: 900, fontSize: 230, lineHeight: 0.92, color: theme.accent, letterSpacing: -4 }}>{s.big}</span>
-          )}
-        </div>
-        {s.label && <div style={{ ...usePop(16), fontFamily: display, fontWeight: 700, fontSize: 60, color: theme.ink, marginTop: 10 }}>{s.label}</div>}
-        {s.sub && <div style={{ ...usePop(24), fontFamily: sans, fontWeight: 600, fontSize: 42, color: theme.inkSoft, marginTop: 16 }}>{s.sub}</div>}
-      </div>
-    );
-  } else if (s.block === "rows") {
+  if (block === "flash") {
     return (
-      <AbsoluteFill style={{ background: "transparent" }}>
-        <Wordmark />
-        <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", paddingTop: 60 }}>
-          {s.art && <div style={{ marginBottom: 10 }}><Art scene={s} /></div>}
-          <RowsBlock scene={s} />
-        </AbsoluteFill>
-      </AbsoluteFill>
-    );
-  } else if (s.block === "thennow") {
-    text = (
-      <div style={{ textAlign: "center", padding: "0 56px", width: "100%" }}>
-        {s.kicker && <div style={{ ...usePop(2), fontFamily: sans, fontWeight: 700, fontSize: 42, color: theme.inkSoft, marginBottom: 24 }}>{s.kicker}</div>}
-        <div style={{ ...usePop(8), background: "#fff", border: `3px solid ${PAPER_LINE}`, borderRadius: 24, padding: "22px 20px", marginBottom: 10 }}>
-          <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 40, color: theme.inkSoft }}>{s.thenLabel ?? "THEN"}</div>
-          <div style={{ fontFamily: display, fontWeight: 900, fontSize: 120, lineHeight: 1, color: theme.ink }}>{s.thenValue}</div>
-        </div>
-        <div style={{ ...usePop(16), fontFamily: display, fontWeight: 900, fontSize: 70, color: theme.accent }}>↓</div>
-        <div style={{ ...usePop(22), background: theme.accent, borderRadius: 24, padding: "22px 20px", marginTop: 10 }}>
-          <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 40, color: "#ffd9d2" }}>{s.nowLabel ?? "NOW"}</div>
-          <div style={{ fontFamily: display, fontWeight: 900, fontSize: 120, lineHeight: 1, color: "#fff" }}>{s.nowValue}</div>
-        </div>
-        {s.sub && <div style={{ ...usePop(28), fontFamily: sans, fontWeight: 600, fontSize: 42, color: theme.inkSoft, marginTop: 26 }}>{s.sub}</div>}
-      </div>
-    );
-  } else if (s.block === "question") {
-    text = (
-      <div style={{ textAlign: "center", padding: "0 64px" }}>
-        <div style={{ ...usePop(6), fontFamily: display, fontWeight: 900, fontSize: 104, lineHeight: 1.06, color: theme.ink }}>{s.line}</div>
-        <SketchUnderline delay={18} width={400} />
-        <div style={{ ...usePop(30), fontFamily: sans, fontWeight: 700, fontSize: 46, color: theme.accent, marginTop: 40 }}>{s.sub ?? "Tell me in the comments"}</div>
+      <div style={{ textAlign: "center", padding: "0 60px" }}>
+        {s.kicker && <div style={{ ...usePop(2), fontFamily: sans, fontWeight: 800, fontSize: 48, color: soft, marginBottom: 14 }}>{s.kicker}</div>}
+        <div style={{ ...usePop(0, 220), fontFamily: display, fontWeight: 900, fontSize: 150, lineHeight: 1.0, color: dark ? "#fff" : theme.accent, textTransform: "uppercase", letterSpacing: -2 }}>{s.line}</div>
+        {s.sub && <div style={{ ...usePop(12), fontFamily: sans, fontWeight: 700, fontSize: 46, color: soft, marginTop: 20 }}>{s.sub}</div>}
       </div>
     );
   }
 
+  if (block === "stat") {
+    return (
+      <div style={{ textAlign: "center", padding: "0 44px" }}>
+        {s.kicker && <div style={{ ...usePop(2), fontFamily: sans, fontWeight: 700, fontSize: 42, color: soft, marginBottom: 6 }}>{s.kicker}</div>}
+        <div style={{ ...usePop(4, 200) }}>
+          {typeof s.bigValue === "number" ? (
+            <CountUp value={s.bigValue} prefix={s.bigPrefix} suffix={s.bigSuffix} decimals={s.bigDecimals} size={220} color={dark ? "#fff" : theme.accent} />
+          ) : (
+            <span style={{ fontFamily: display, fontWeight: 900, fontSize: 220, lineHeight: 0.9, color: dark ? "#fff" : theme.accent, letterSpacing: -4 }}>{s.big}</span>
+          )}
+        </div>
+        {s.label && <div style={{ ...usePop(12), fontFamily: display, fontWeight: 700, fontSize: 56, color: main, marginTop: 8 }}>{s.label}</div>}
+        {s.sub && <div style={{ ...usePop(18), fontFamily: sans, fontWeight: 600, fontSize: 40, color: soft, marginTop: 14 }}>{s.sub}</div>}
+      </div>
+    );
+  }
+
+  if (block === "thennow") {
+    return (
+      <div style={{ textAlign: "center", padding: "0 54px", width: "100%" }}>
+        {s.kicker && <div style={{ ...usePop(2), fontFamily: sans, fontWeight: 700, fontSize: 40, color: soft, marginBottom: 20 }}>{s.kicker}</div>}
+        <div style={{ ...usePop(6), background: "#fff", border: `3px solid ${PAPER_LINE}`, borderRadius: 22, padding: "20px" }}>
+          <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 38, color: theme.inkSoft }}>{s.thenLabel ?? "THEN"}</div>
+          <div style={{ fontFamily: display, fontWeight: 900, fontSize: 112, lineHeight: 1, color: theme.ink }}>{s.thenValue}</div>
+        </div>
+        <div style={{ ...usePop(12), fontFamily: display, fontWeight: 900, fontSize: 64, color: hot }}>↓</div>
+        <div style={{ ...usePop(16), background: theme.accent, borderRadius: 22, padding: "20px" }}>
+          <div style={{ fontFamily: sans, fontWeight: 700, fontSize: 38, color: "#ffd9d2" }}>{s.nowLabel ?? "NOW"}</div>
+          <div style={{ fontFamily: display, fontWeight: 900, fontSize: 112, lineHeight: 1, color: "#fff" }}>{s.nowValue}</div>
+        </div>
+        {s.sub && <div style={{ ...usePop(22), fontFamily: sans, fontWeight: 600, fontSize: 40, color: soft, marginTop: 20 }}>{s.sub}</div>}
+      </div>
+    );
+  }
+
+  if (block === "question") {
+    return (
+      <div style={{ textAlign: "center", padding: "0 60px" }}>
+        <div style={{ ...usePop(4), fontFamily: display, fontWeight: 900, fontSize: 100, lineHeight: 1.06, color: main }}>{s.line}</div>
+        <SketchUnderline delay={14} width={420} color={hot} />
+        <div style={{ ...usePop(24), fontFamily: sans, fontWeight: 700, fontSize: 44, color: hot, marginTop: 36 }}>{s.sub ?? "Tell me in the comments"}</div>
+      </div>
+    );
+  }
+
+  if (block === "hook") {
+    const lines = s.lines ?? [];
+    return (
+      <div style={{ textAlign: "center", padding: "0 56px" }}>
+        {lines.map((ln, i) => {
+          const last = i === lines.length - 1;
+          return <div key={i} style={{ ...usePop(4 + i * 6, 180), fontFamily: display, fontWeight: 900, fontSize: last ? 104 : 82, lineHeight: 1.05, color: last ? hot : main, marginTop: i === 0 ? 0 : 14 }}>{ln}</div>;
+        })}
+      </div>
+    );
+  }
+
+  // center: kicker + line + sub
   return (
-    <AbsoluteFill style={{ background: "transparent" }}>
-      <Wordmark />
-      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", paddingTop: 40, gap: 10 }}>
+    <div style={{ textAlign: "center", padding: "0 56px" }}>
+      {s.kicker && <div style={{ ...usePop(2), fontFamily: sans, fontWeight: 700, fontSize: 42, color: soft, marginBottom: 16 }}>{s.kicker}</div>}
+      {s.line && (
+        <div style={{ ...usePop(6), position: "relative", display: "inline-block" }}>
+          <div style={{ fontFamily: display, fontWeight: 900, fontSize: 96, lineHeight: 1.04, color: main }}>{s.line}</div>
+          {s.strike && <div style={{ position: "absolute", left: -8, right: -8, top: "52%", height: 12, background: theme.accent, borderRadius: 8, transform: "rotate(-4deg)" }} />}
+        </div>
+      )}
+      {s.sub && <div style={{ ...usePop(16), fontFamily: sans, fontWeight: 600, fontSize: 44, color: soft, marginTop: 22, lineHeight: 1.3 }}>{s.sub}</div>}
+    </div>
+  );
+};
+
+const Card: React.FC<{ view: ShortView }> = ({ view }) => {
+  const frame = useCurrentFrame();
+  const dark = view.bg === "ink" || view.bg === "red";
+  const bg = BGS[view.bg ?? "cream"];
+  const punch = view.flash ? interpolate(frame, [0, 5], [1.18, 1], { extrapolateRight: "clamp" }) : 1;
+  const hasArt = !!view.art;
+  return (
+    <AbsoluteFill style={{ background: bg }}>
+      <Props names={view.props} />
+      <Wordmark dark={dark} />
+      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", paddingTop: 30, gap: 8, transform: `scale(${punch})`, zIndex: 2 }}>
         {hasArt && (
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 620 }}>
-            <Art scene={s} />
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 600 }}>
+            <Art view={view} />
           </div>
         )}
-        {text}
+        <Content view={view} dark={dark} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -277,11 +294,10 @@ const Progress: React.FC<{ total: number }> = ({ total }) => {
   const frame = useCurrentFrame();
   const pct = total > 0 ? Math.min(1, frame / total) : 0;
   return (
-    <div style={{ position: "absolute", bottom: 130, left: 70, right: 70 }}>
-      <div style={{ height: 10, background: PAPER_LINE, borderRadius: 6, overflow: "hidden" }}>
+    <div style={{ position: "absolute", bottom: 120, left: 70, right: 70, zIndex: 6 }}>
+      <div style={{ height: 10, background: "rgba(23,18,15,0.12)", borderRadius: 6, overflow: "hidden" }}>
         <div style={{ width: `${pct * 100}%`, height: "100%", background: theme.accent }} />
       </div>
-      <div style={{ textAlign: "center", marginTop: 18, fontFamily: sans, fontWeight: 700, fontSize: 32, color: theme.inkSoft, letterSpacing: 1 }}>@NapkinNumbers</div>
     </div>
   );
 };
@@ -293,11 +309,17 @@ export const Short: React.FC<{ scenes: ShortScene[]; timing?: number[]; audioSrc
   let cursor = 0;
   scenes.forEach((scene, i) => {
     const dur = Math.round((timing?.[i] ?? DEFAULT_SECONDS) * fps);
-    seqs.push(
-      <Sequence key={scene.id ?? i} from={cursor} durationInFrames={dur}>
-        <Card scene={scene} />
-      </Sequence>
-    );
+    const shots = scene.shots && scene.shots.length ? scene.shots : [scene];
+    const n = shots.length;
+    shots.forEach((shot, j) => {
+      const from = cursor + Math.round((dur * j) / n);
+      const to = cursor + Math.round((dur * (j + 1)) / n);
+      seqs.push(
+        <Sequence key={`${scene.id}-${j}`} from={from} durationInFrames={Math.max(1, to - from)}>
+          <Card view={shot} />
+        </Sequence>
+      );
+    });
     cursor += dur;
   });
   return (

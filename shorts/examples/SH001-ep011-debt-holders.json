@@ -1,5 +1,7 @@
 {
   "id": "SH001",
+  "num": 1,
+  "slug": "ep011-debt-holders",
   "series": "Napkin Numbers Shorts",
   "format": "Myth-break",
   "sourceEp": "EP011",
@@ -8,77 +10,277 @@
   "hook": "Every country owes money. Almost nobody asks who holds it.",
   "question": "Did you assume China?",
   "language": "en",
-  "voice": { "voiceId": "en-US-BrianNeural" },
-  "note": "Myth-break. Figures pulled from EP011: Japan ~$1.1T (#1 foreign holder of U.S. debt), China under $1T and selling, the Fed held over $5T. Most sovereign debt is owed domestically. Every beat has a literal animated doodle.",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
   "scenes": [
     {
       "id": "s1",
-      "block": "hook",
-      "art": "globe",
-      "narration": "Every country on Earth owes money. Almost nobody stops to ask who is actually holding it.",
-      "lines": ["Every country", "owes money.", "Who holds it?"]
+      "narration": "Every country on Earth owes money — trillions and trillions of it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "iou",
+            "iou",
+            "coin"
+          ],
+          "lines": [
+            "Every country",
+            "owes money."
+          ]
+        },
+        {
+          "block": "flash",
+          "bg": "ink",
+          "big": "",
+          "line": "$100T+",
+          "kicker": "global government debt",
+          "props": [
+            "coin",
+            "bill",
+            "coin",
+            "bill"
+          ]
+        }
+      ]
     },
     {
       "id": "s2",
-      "block": "label",
-      "art": "moneyFlow",
-      "narration": "Most people picture China, holding America's debt across the ocean.",
-      "kicker": "You probably pictured this:",
-      "sub": "China → bankrolling America across the ocean"
+      "narration": "But almost nobody stops to ask who's actually holding it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globeQ",
+          "props": [
+            "question",
+            "question",
+            "iou"
+          ],
+          "lines": [
+            "Who",
+            "holds it?"
+          ]
+        }
+      ]
     },
     {
       "id": "s3",
-      "block": "truth",
-      "art": "home",
-      "narration": "But most government debt is not owed abroad at all. It is owed at home, to a country's own central bank, its own banks, and its own pension funds.",
-      "kicker": "The reality",
-      "line": "It's owed at home",
-      "sub": "a country's own central bank, banks and pensions"
+      "narration": "You probably pictured China, bankrolling America across the ocean.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "China?",
+          "props": [
+            "question"
+          ]
+        },
+        {
+          "block": "center",
+          "art": "moneyFlow",
+          "kicker": "the assumption"
+        }
+      ]
     },
     {
       "id": "s4",
-      "block": "stat",
-      "art": "flagStack",
-      "country": "jp",
-      "trend": "up",
-      "narration": "Even the biggest foreign holder of U.S. debt is not China. It is Japan, about one point one trillion dollars.",
-      "kicker": "Biggest FOREIGN holder of U.S. debt",
-      "bigValue": 1.1,
-      "bigPrefix": "$",
-      "bigSuffix": "T",
-      "bigDecimals": 1,
-      "label": "Japan — not China"
+      "narration": "And China does lend to the US. But here's the twist.",
+      "shots": [
+        {
+          "block": "center",
+          "art": "moneyFlow",
+          "kicker": "China → America"
+        },
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Plot twist",
+          "props": [
+            "fire"
+          ]
+        }
+      ]
     },
     {
       "id": "s5",
-      "block": "stat",
-      "art": "flagStack",
-      "country": "cn",
-      "trend": "down",
-      "narration": "China sits under a trillion, and it has been selling for years.",
-      "kicker": "China",
-      "big": "< $1T",
-      "label": "and selling for years"
+      "narration": "Most government debt isn't owed abroad at all.",
+      "shots": [
+        {
+          "block": "center",
+          "art": "globeX",
+          "line": "Not abroad",
+          "props": [
+            "x",
+            "x"
+          ]
+        }
+      ]
     },
     {
       "id": "s6",
-      "block": "rows",
-      "art": "bank",
-      "narration": "The single biggest holder of all? America's own Federal Reserve, over five trillion dollars. The bank that prints the money, lending it right back to the government.",
-      "kicker": "Who actually holds it",
-      "rows": [
-        { "rank": "1", "name": "The Fed", "value": "$5T+", "note": "prints the dollars, lends them back", "color": "#c0392b", "bar": 1.0 },
-        { "rank": "2", "name": "Japan", "value": "$1.1T", "note": "top foreign holder", "color": "#17120f", "bar": 0.38 },
-        { "rank": "3", "name": "China", "value": "<$1T", "note": "and selling", "color": "#5c544c", "bar": 0.26 }
+      "narration": "It's owed at home — to a country's own banks, its own pensions, its own central bank.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "coin"
+          ],
+          "lines": [
+            "Owed",
+            "at home"
+          ]
+        },
+        {
+          "block": "center",
+          "line": "Its own banks",
+          "props": [
+            "bank",
+            "bank",
+            "coin"
+          ]
+        },
+        {
+          "block": "center",
+          "line": "Its own pensions",
+          "props": [
+            "piggy",
+            "piggy",
+            "coin"
+          ]
+        }
       ]
     },
     {
       "id": "s7",
-      "block": "question",
-      "art": "globeQ",
-      "narration": "So. Did you assume it was China?",
-      "line": "Did you assume China?",
-      "sub": "Comment what surprised you — full story in the video"
+      "narration": "Even the biggest foreign lender to America isn't China.",
+      "shots": [
+        {
+          "block": "center",
+          "art": "flagStack",
+          "country": "cn",
+          "trend": "down",
+          "line": "Not China",
+          "props": [
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "It's Japan — about one point one trillion dollars.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "cream",
+          "line": "Japan",
+          "props": [
+            "check"
+          ]
+        },
+        {
+          "block": "stat",
+          "art": "flagStack",
+          "country": "jp",
+          "trend": "up",
+          "bigValue": 1.1,
+          "bigPrefix": "$",
+          "bigSuffix": "T",
+          "bigDecimals": 1,
+          "label": "Japan — #1 foreign holder",
+          "props": [
+            "bill",
+            "bill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "narration": "China sits under a trillion, and it's been selling for years.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "flagStack",
+          "country": "cn",
+          "trend": "down",
+          "big": "<$1T",
+          "label": "China — and selling",
+          "props": [
+            "chartDown",
+            "chartDown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "narration": "But the single biggest holder of all? America's own Federal Reserve.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "The #1 holder?",
+          "props": [
+            "question"
+          ]
+        },
+        {
+          "block": "center",
+          "art": "bank",
+          "line": "The Fed",
+          "props": [
+            "bill",
+            "bill",
+            "coin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "narration": "Over five trillion dollars — the bank that prints the money, lending it right back.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "bigValue": 5,
+          "bigPrefix": "$",
+          "bigSuffix": "T+",
+          "label": "held by the Fed",
+          "props": [
+            "bill",
+            "bill",
+            "bill"
+          ]
+        },
+        {
+          "block": "center",
+          "art": "bank",
+          "line": "Printed. Lent back.",
+          "props": [
+            "loop",
+            "loop",
+            "coin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "narration": "So — did you assume it was China?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globeQ",
+          "line": "Did you assume China?",
+          "sub": "Comment what surprised you"
+        }
+      ]
     }
   ]
 }
