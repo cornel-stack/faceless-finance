@@ -7298,6 +7298,76 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a few states charge both — some exempt as little as $1-2M</text>
       </svg>
     );
+  } else if (m === "utilitybillbars") {
+    // Combined monthly power + internet + phone by country — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["India", 40, green],
+      ["Mexico", 70, "#9cc47f"],
+      ["UK", 160, gold],
+      ["Australia", 190, "#d98b5f"],
+      ["Germany", 210, "#c0583a"],
+      ["US", 250, red],
+    ];
+    const x0 = 250, xMax = 850, maxV = 250;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">monthly power + internet + phone, by country</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same kilowatts &amp; gigabytes — a 6× monthly gap</text>
+      </svg>
+    );
+  } else if (m === "powerpricedrivers") {
+    // The three forces that build an electricity bill.
+    const grow = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    const items: [string, string][] = [["generation", "hydro cheap · imported gas dear"], ["taxes & fees", "50%+ of the bill in some of Europe"], ["the grid", "wires, upkeep, monopoly or rivals"]];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={60} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">what actually builds your power bill</text>
+        {items.map(([t, d], i) => {
+          const y = 120 + i * 108; const op = interpolate(grow, [i * 0.2, i * 0.2 + 0.25], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <rect x={190} y={y} width={700} height={82} rx={12} fill={["#cfe3d4", gold, "#d9c89a"][i]} stroke={ink} strokeWidth={4} />
+              <text x={220} y={y + 38} fontSize={20} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{t}</text>
+              <text x={220} y={y + 64} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>{d}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the meter spins the same — policy sets the price</text>
+      </svg>
+    );
+  } else if (m === "netmonopoly") {
+    // Few providers = high prices; many = cheap.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.4], [0, 1], clampBoth);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={58} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">why internet costs what it costs</text>
+        <g transform="translate(300 290)" opacity={interpolate(t, [0, 0.5], [0, 1], clampBoth)}>
+          <rect x={-150} y={-90} width={300} height={180} rx={14} fill={red} stroke={ink} strokeWidth={4} />
+          <text y={-46} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>1-2 providers</text>
+          <text y={-14} fontSize={30} textAnchor="middle">🏢</text>
+          <text y={34} fontSize={19} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">high price, slow</text>
+        </g>
+        <g transform="translate(700 290)" opacity={interpolate(t, [0.45, 0.95], [0, 1], clampBoth)}>
+          <rect x={-150} y={-90} width={300} height={180} rx={14} fill={green} stroke={ink} strokeWidth={4} />
+          <text y={-46} fontSize={17} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>many providers</text>
+          <text y={-14} fontSize={30} textAnchor="middle">🏢🏢🏢</text>
+          <text y={34} fontSize={19} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">cheap, fast</text>
+        </g>
+        <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>the data costs the same — you pay for competition, or its absence</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

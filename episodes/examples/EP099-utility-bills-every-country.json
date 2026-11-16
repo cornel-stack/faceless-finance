@@ -1,0 +1,802 @@
+{
+  "id": "EP099",
+  "series": "Napkin Numbers",
+  "title": "Electricity, Internet & Phone: Monthly Bills in Every Country",
+  "slug": "utility-bills-every-country",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP099 — The Price Tag series (topic 89). Rank combined monthly electricity+internet+phone by country (~$40 India to ~$250 US). Autopilot bills. Electricity price drivers (generation mix, taxes 50%+ in EU, grid) — ¢/kWh by country (US 16, Denmark 45). The internet paradox (US invented it, pays more for slower broadband; data marginal cost ~0; price = competition). Phone: carriers = competition readout (India 20-30× cheaper). What to do (deregulated supplier switch, off-peak, reshop internet/phone, use less). 3 new motifs (utilitybillbars/powerpricedrivers/netmonopoly); 2 charts. Sources: Electricity pricing/Internet access/Mobile phone/Broadband/Public utility. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The same electricity, the same internet connection, and the same phone plan can cost you five, even ten times more in one country than in another. An American family can pay two hundred fifty dollars a month to keep the lights on and stay connected; a family in parts of Asia pays under fifty for the equivalent. Today we rank the real monthly cost of electricity, internet, and phone in every country.",
+      "props": [
+        {
+          "name": "phone",
+          "label": "power + internet + phone"
+        },
+        {
+          "name": "receipt",
+          "label": "$250 vs under $50"
+        },
+        {
+          "name": "scale",
+          "label": "every country ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the gap nobody compares. Add up a typical household's electricity, home internet, and mobile phone, and the monthly total swings from around forty dollars in the cheapest countries to over two hundred fifty in the priciest. Same kilowatts, same gigabytes, same calls — and a sixfold difference in what you hand over every single month.",
+      "text": "$40 vs $250",
+      "sub": "monthly power + internet + phone, by country",
+      "icon": "phone"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank countries by their combined utility and connectivity bill, break down what actually sets the price of electricity, expose why some countries pay a fortune for slow internet, and show the levers you can actually pull. Because these are the quiet, automatic bills that drain your account every month on autopilot — and most people never question them.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the countries"
+        },
+        {
+          "name": "faucet",
+          "label": "what sets the price"
+        },
+        {
+          "name": "warning",
+          "label": "the autopilot bills"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "my bills are just what they are",
+      "memeBottom": "my bills are a policy choice made in another building",
+      "narration": "Because your monthly bills aren't a law of nature — they're the result of your country's energy mix, taxes, and how much competition it allows. Before we rank them, let's define what we're actually paying for."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the three bills that run on autopilot.",
+      "heading": "The Monthly Three",
+      "kicker": "power, net, phone"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-electricity",
+      "narration": "Start with the big one: electricity. The research is blunt that electricity pricing can vary widely by country or by locality within a country. It depends on how power is generated, the taxes layered on top, and the state of the grid. That's why two families using the identical amount of power can get wildly different bills, purely by geography."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And electricity is the bill most exposed to the wider world. When global gas prices spiked, European power bills doubled almost overnight, because much of the continent burns imported gas to make electricity. A country's power bill is quietly tied to geopolitics, weather, and energy policy decisions made years earlier — things no household controls.",
+      "props": [
+        {
+          "name": "factory",
+          "label": "tied to global fuel prices"
+        },
+        {
+          "name": "chartup",
+          "label": "Europe's bills doubled"
+        },
+        {
+          "name": "warning",
+          "label": "geopolitics in your bill"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-internet",
+      "narration": "Then internet access — a facility or service that provides connectivity for a computer or network to the Internet. It feels like a utility now, as essential as power or water. But unlike water, its price is set far more by how many companies compete for you than by the actual cost of delivering the data, which is often tiny."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And internet has quietly become non-negotiable, which changes the stakes. You can't work, bank, study, or apply for a job without it anymore. So a high internet bill isn't a luxury charge — it's a tax on participating in modern life. In countries where it stays expensive, the poorest are effectively priced out of the economy itself.",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "now non-negotiable"
+        },
+        {
+          "name": "warning",
+          "label": "a tax on modern life"
+        },
+        {
+          "name": "crowd",
+          "label": "the poor get priced out"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "sourceId": "wiki-mobile",
+      "narration": "And the third: the mobile phone — a portable wireless telephone that allows users to make and receive calls over a radio link. The service behind it, your monthly plan, ranges from a few dollars in fiercely competitive markets to over seventy in ones with only a handful of carriers. Same phone, same signal, a tenfold price gap."
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "The phone gap is almost comic. In India, fierce competition drove mobile data to among the cheapest on Earth — a month of generous data for the price of a coffee. In parts of the US and Canada, the same data can cost twenty or thirty times more. Identical technology, wildly different bills, set entirely by how many carriers fight for you.",
+      "text": "20-30×",
+      "sub": "the mobile data price gap between countries",
+      "icon": "phone"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank the combined monthly bill by country.",
+      "heading": "The Ranking",
+      "kicker": "power + net + phone"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "A quick caution on these rankings: usage varies, so we hold it roughly constant — a normal household's power, one home broadband line, one phone plan. The point isn't that Americans use more. It's that each unit costs more. When all three run expensive at once, the combined bill balloons even for identical consumption.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "usage held constant"
+        },
+        {
+          "name": "receipt",
+          "label": "it's the unit price"
+        },
+        {
+          "name": "warning",
+          "label": "three high bills at once"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "utilitybillbars",
+      "caption": "monthly electricity + internet + phone, by country",
+      "narration": "Here's the combined monthly damage for a typical household. In India and much of South Asia, around forty dollars for all three. Mexico, Eastern Europe: double that. Then the rich world climbs — the UK near a hundred and sixty, Japan, Australia, Germany around two hundred, and the United States often topping two hundred and fifty. The connected life has wildly different price tags."
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the counterintuitive winners. Some developing countries deliver dirt-cheap power and data not despite being poorer, but because they skipped straight to modern mobile networks and subsidize energy heavily. Meanwhile some of the richest nations carry the priciest bills. Wealth and cheap utilities simply don't move together — the policy underneath is what decides it.",
+      "props": [
+        {
+          "name": "globe",
+          "label": "poorer can be cheaper"
+        },
+        {
+          "name": "phone",
+          "label": "leapfrogged to mobile"
+        },
+        {
+          "name": "warning",
+          "label": "wealth ≠ cheap bills"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Monthly power + internet + phone ($)",
+      "unit": "$",
+      "narration": "Put the totals in a row. India around forty dollars a month, Mexico seventy, the UK a hundred and sixty, Australia one ninety, Germany two hundred ten, and the US near two hundred fifty. The American bar towers — not because Americans use dramatically more, but because each of the three underlying bills runs high at once. The costs stack.",
+      "data": [
+        {
+          "label": "India",
+          "value": 40
+        },
+        {
+          "label": "Mexico",
+          "value": 70
+        },
+        {
+          "label": "UK",
+          "value": 160
+        },
+        {
+          "label": "Australia",
+          "value": 190
+        },
+        {
+          "label": "Germany",
+          "value": 210
+        },
+        {
+          "label": "US",
+          "value": 250
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the pattern: the richest countries often pay the most, but not because they're richer. They pay more because of heavy energy taxes, expensive climate transitions, and concentrated telecom markets. Being a wealthy nation doesn't earn you cheap bills — in fact, it often comes bundled with the most expensive ones, hidden inside a comfortable salary.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "rich ≠ cheap bills"
+        },
+        {
+          "name": "receipt",
+          "label": "taxes + few telecoms"
+        },
+        {
+          "name": "scale",
+          "label": "hidden in the salary"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "callout",
+      "narration": "Stretch it over a lifetime and the gap is staggering. A two-hundred-dollar monthly gap between an expensive country and a cheap one is twenty-four hundred a year — and invested over forty years, that's well over two hundred thousand dollars. The humble utility bill is quietly one of the largest lifetime expenses nobody ever adds up.",
+      "text": "$200K+",
+      "sub": "lifetime cost of a $200/mo bill gap, invested",
+      "icon": "snowball"
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is money on total autopilot. Nobody reviews their electricity bill line by line, or re-shops their internet every year. These three charges just repeat, silently, month after month, for your entire adult life. Over decades, the gap between a cheap-bill country and an expensive one adds up to tens of thousands of dollars quietly leaving your account.",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "repeats every month"
+        },
+        {
+          "name": "receipt",
+          "label": "nobody re-shops it"
+        },
+        {
+          "name": "warning",
+          "label": "tens of thousands over time"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So what actually sets the price of your electricity?",
+      "heading": "The Power Price",
+      "kicker": "generation, tax, grid"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And electricity deserves the most attention because it's the most variable and the most controllable. Unlike a fixed phone plan, your power bill swings with the weather, the season, and your habits — and it's the one of the three where using less actually moves the number a lot. Master the electricity bill and you've mastered the biggest, most flexible piece.",
+      "props": [
+        {
+          "name": "thermostat",
+          "label": "most variable"
+        },
+        {
+          "name": "faucet",
+          "label": "habits move it"
+        },
+        {
+          "name": "scale",
+          "label": "the flexible piece"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "powerpricedrivers",
+      "caption": "what builds your electricity bill",
+      "narration": "Three forces set your power price. First, how it's generated — cheap hydro or heavily subsidized fuel keeps it low; imported gas or a rushed energy transition pushes it high. Second, taxes and fees, which in some European countries make up over half the bill. And third, the grid itself — the cost of wires, upkeep, and whether one monopoly or many competitors run it."
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And taxes on power can be staggering. In several European countries, more than half of the electricity bill isn't the electricity at all — it's taxes, grid fees, and green-energy levies stacked on top. The actual energy might be a minority of what you pay. You're often taxed for the privilege of being connected, not just for the power itself.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "taxes > the energy itself"
+        },
+        {
+          "name": "percent",
+          "label": "50%+ of the bill"
+        },
+        {
+          "name": "warning",
+          "label": "taxed to be connected"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Electricity price (cents per kWh)",
+      "unit": "¢",
+      "narration": "Look at the price of a single kilowatt-hour. In the US, around sixteen cents. Japan, twenty-six. The UK, thirty-five. Germany near forty, and Denmark up around forty-five — much of that pure tax. Some subsidized or hydro-rich countries pay under ten. The raw electricity is similar everywhere; it's policy that triples or quadruples the final price.",
+      "data": [
+        {
+          "label": "US",
+          "value": 16
+        },
+        {
+          "label": "Japan",
+          "value": 26
+        },
+        {
+          "label": "UK",
+          "value": 35
+        },
+        {
+          "label": "Germany",
+          "value": 40
+        },
+        {
+          "label": "Denmark",
+          "value": 45
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s55",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "half my power bill is taxes and fees",
+      "memeBottom": "this is fine",
+      "narration": "For households in high-tax energy markets, this is the quiet reality of opening the bill: most of it isn't even the electricity. It's levies, grid charges, and green fees stacked on top. The power is cheap; being connected to the system is what costs a fortune."
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So a high electricity bill is often a policy decision in disguise. Countries that tax energy heavily, or that bet on expensive imported fuel, hand their citizens big bills. Countries with cheap domestic generation — hydro, nuclear, or subsidized fossil fuels — keep them low. Your meter spins the same everywhere. What differs is who's taxing and subsidizing the spin.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "high bill = policy choice"
+        },
+        {
+          "name": "factory",
+          "label": "imported fuel = pricey"
+        },
+        {
+          "name": "droplet",
+          "label": "hydro/nuclear = cheap"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "cheap power from subsidized fossil fuels",
+      "memeBottom": "clean power but a much higher bill",
+      "narration": "This is the real trade-off buried in every electricity bill. Cheap, dirty, subsidized power keeps the monthly number low; a cleaner, taxed, transitioning grid pushes it up. Neither is simply right — but it explains why two wealthy democracies can have power bills that differ by double."
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "And then there's the bill that makes the least sense: internet.",
+      "heading": "The Internet Paradox",
+      "kicker": "paying more for less"
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And here's the twist that should make Americans angry: broadband is cheapest in places you might not expect — Romania, South Korea, parts of Russia and India — not the wealthiest countries. Being rich doesn't buy cheap internet. Forcing companies to compete does. The fastest, cheapest internet on Earth is a story about regulation, not wealth.",
+      "props": [
+        {
+          "name": "globe",
+          "label": "cheapest in Romania, Korea"
+        },
+        {
+          "name": "warning",
+          "label": "rich ≠ cheap internet"
+        },
+        {
+          "name": "handshake",
+          "label": "competition, not wealth"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-broadband",
+      "narration": "Modern internet means broadband, which is used in fast Internet access over cable, fiber, or wireless. Here's the paradox: the US invented the internet, yet Americans often pay far more for slower broadband than people in Seoul, Bucharest, or Paris. The cost of the data itself is nearly nothing. The price is almost entirely about competition."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And here's what makes the internet price almost absurd: the marginal cost of the data is close to zero. Once the fiber is in the ground, sending you another hundred gigabytes costs the provider almost nothing. So your bill isn't paying for data — it's paying for the lack of a competitor willing to charge you less. It's a price set by absence, not cost.",
+      "props": [
+        {
+          "name": "keyboard",
+          "label": "data costs ~nothing to send"
+        },
+        {
+          "name": "warning",
+          "label": "you pay for no rival"
+        },
+        {
+          "name": "scale",
+          "label": "price set by absence"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "motif": "netmonopoly",
+      "caption": "few providers means high prices",
+      "narration": "Here's why. In much of the US, a given address has only one or two broadband providers — a quiet monopoly or duopoly with no reason to cut prices or improve speed. In countries that forced open competition, with many providers sharing the same lines, prices collapsed and speeds soared. The data costs the same everywhere. Competition is what you're really paying for, or not."
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Put the speed-for-price insult in numbers. In parts of Eastern Europe and East Asia, gigabit fiber costs twenty or thirty dollars a month. In much of the US, slower service can run eighty or ninety. More money, less speed — the clearest sign that you're paying for a market structure, not a technology.",
+      "text": "$30 vs $90",
+      "sub": "fast fiber abroad vs slower US broadband",
+      "icon": "keyboard"
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the fix that worked abroad is boring but powerful: open access. Many countries force the company that owns the physical lines to rent them to competitors at fair rates. Suddenly a dozen providers compete over the same cable, and prices crater. The US mostly let whoever built the line own the customer — and the bills show it.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "open-access lines"
+        },
+        {
+          "name": "chartdown",
+          "label": "a dozen rivals = cheap"
+        },
+        {
+          "name": "warning",
+          "label": "the US chose owners over rivals"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Mobile phone plans follow the exact same logic. Markets with four, five, or more carriers fighting for customers — like India or much of Europe — have absurdly cheap data. Markets dominated by two or three giants charge many times more for the same gigabytes. Your phone bill isn't about technology. It's a direct readout of how much competition your government allowed.",
+      "props": [
+        {
+          "name": "phone",
+          "label": "many carriers = cheap"
+        },
+        {
+          "name": "warning",
+          "label": "few carriers = pricey"
+        },
+        {
+          "name": "scale",
+          "label": "a readout of competition"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And watch the sneaky tricks on connectivity bills. Promotional rates that jump after a year, equipment rental fees for a router you could buy once, bundles designed to confuse, and 'unlimited' plans that quietly throttle. The headline price is bait; the real monthly cost hides in the fine print. Connectivity providers are masters of the slow, silent increase.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "promo rates that jump"
+        },
+        {
+          "name": "receipt",
+          "label": "router rental fees"
+        },
+        {
+          "name": "magnifier",
+          "label": "the real cost hides"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the sneakiest phone trick is the subsidized handset. A 'free' flagship phone buried in your plan quietly locks you into a pricey contract for years, often costing far more than just buying the phone outright and taking a cheap plan. The bundle hides the true price of both. Separating the phone from the plan almost always wins.",
+      "props": [
+        {
+          "name": "phone",
+          "label": "the 'free' handset trap"
+        },
+        {
+          "name": "receipt",
+          "label": "locked into a pricey plan"
+        },
+        {
+          "name": "moneybag",
+          "label": "separate phone from plan"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "So what can you actually do about the autopilot bills?",
+      "heading": "What To Do",
+      "kicker": "take back the levers"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "present",
+      "narration": "And before the specific tricks, adopt the right mindset: these bills are negotiable and switchable far more often than you think. Treat them like subscriptions to audit once a year, not fixtures to pay forever. The companies count on your inertia — the single most profitable thing about you is that you never call. So call.",
+      "props": [
+        {
+          "name": "calendar",
+          "label": "audit yearly"
+        },
+        {
+          "name": "phone",
+          "label": "they count on inertia"
+        },
+        {
+          "name": "moneybag",
+          "label": "so call"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "sourceId": "wiki-utility",
+      "narration": "Remember what a utility is: an organization that maintains the infrastructure for a public service. In deregulated markets, you can often choose your electricity or gas supplier even though the wires stay the same. Many people never switch and silently overpay for years. Checking whether your market lets you shop suppliers is step one, and it's free."
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And whether you even can shop depends on your market's structure. Some places fully deregulated, so you pick your energy supplier and your internet from many rivals. Others locked in a single monopoly, and you simply take the price you're given. Knowing which world you live in tells you instantly whether your bills are a choice or a sentence.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "deregulated vs monopoly"
+        },
+        {
+          "name": "handshake",
+          "label": "many rivals = you choose"
+        },
+        {
+          "name": "warning",
+          "label": "monopoly = take the price"
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "type": "callout",
+      "narration": "Put a number on the laziness tax. Studies of switching show households that re-shop their energy, internet, and phone save on average fifteen to thirty percent — hundreds of dollars a year — versus those who auto-renew. That gap isn't a better deal you can't access. It's a discount you forfeit simply by not asking.",
+      "text": "15-30%",
+      "sub": "saved by re-shopping vs auto-renewing",
+      "icon": "receipt"
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "present",
+      "narration": "Then attack each bill. For power, shift heavy use to off-peak hours, seal the house, and switch suppliers where you can. For internet, call once a year and threaten to leave — retention discounts are real. For your phone, drop the big carrier for a cheaper one running on the same network. Twenty minutes of effort can cut these bills by a third.",
+      "props": [
+        {
+          "name": "faucet",
+          "label": "off-peak power + reshop"
+        },
+        {
+          "name": "phone",
+          "label": "cheaper carrier, same network"
+        },
+        {
+          "name": "moneybag",
+          "label": "cut ~a third"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And the biggest lever of all is using less, especially power. Heating, cooling, and water heating dominate the electricity bill — a smarter thermostat, better insulation, and efficient appliances cut the number permanently, in any country. You can't change your nation's energy policy, but you can shrink the amount of it you buy. That saving compounds every single month, for life.",
+      "props": [
+        {
+          "name": "thermostat",
+          "label": "heating/cooling dominate"
+        },
+        {
+          "name": "house",
+          "label": "insulate + efficient appliances"
+        },
+        {
+          "name": "snowball",
+          "label": "saves every month, for life"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Your monthly bills feel fixed, like weather. They aren't. They're set by your country's energy choices and how much competition it permits — forces you didn't pick, but can partly navigate. The cheapest countries didn't find magic power or free data. They just taxed less and allowed more rivals. Everything after that is just who gets to keep the difference: you, or the company.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "bills aren't weather"
+        },
+        {
+          "name": "warning",
+          "label": "taxes + competition set them"
+        },
+        {
+          "name": "moneybag",
+          "label": "who keeps the difference?"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this made you want to finally audit your bills, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "phone",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-electricity",
+      "name": "Electricity pricing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electricity_pricing",
+      "quote": "can vary widely by country or by locality within a country"
+    },
+    {
+      "id": "wiki-internet",
+      "name": "Internet access (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Internet_access",
+      "quote": "a facility or service that provides connectivity for a computer"
+    },
+    {
+      "id": "wiki-mobile",
+      "name": "Mobile phone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
+      "quote": "a portable wireless telephone that allows users to make and receive calls"
+    },
+    {
+      "id": "wiki-broadband",
+      "name": "Broadband (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Broadband",
+      "quote": "used in fast Internet access"
+    },
+    {
+      "id": "wiki-utility",
+      "name": "Public utility (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Public_utility",
+      "quote": "an organization that maintains the infrastructure for a public service"
+    }
+  ],
+  "youtube": {
+    "title": "Electricity, Internet & Phone: Monthly Bills in Every Country",
+    "alts": [
+      "Why Your Monthly Bills Cost 6x More in Some Countries",
+      "The Real Cost of Power, Internet & Phone Around the World"
+    ],
+    "hook": "The same electricity, the same internet, and the same phone plan can cost 5–10x more in one country than another. An American household often pays ~$250/month for power + home internet + mobile; a family in parts of Asia pays under $50 for the equivalent. This is the real monthly cost of electricity, internet and phone in every country, ranked (~$40 India to ~$250 US). We break down what actually sets your electricity price (generation mix, grid, and taxes that are 50%+ of the bill in some European countries — US ~16¢/kWh vs Denmark ~45¢), then the internet paradox (the US invented the internet yet pays more for slower broadband, because the data costs almost nothing and the price is really about competition), and why phone plans in competitive markets like India cost 20–30x less for the same data. Plus the levers you can actually pull: switch suppliers in deregulated markets, shift power to off-peak, re-shop internet and phone yearly, and simply use less. Fully cited.",
+    "bullets": [
+      "Combined monthly bill ranked: ~$40 (India) to ~$250 (US)",
+      "What sets your power price: generation, grid, and taxes",
+      "Electricity ¢/kWh: US ~16 vs Denmark ~45 (mostly tax)",
+      "The internet paradox: more money for slower broadband",
+      "Phone data 20–30x cheaper where carriers compete",
+      "How to cut the autopilot bills by a third"
+    ],
+    "tags": [
+      "cost of utilities",
+      "electricity prices by country",
+      "internet cost",
+      "phone bill",
+      "utility bills",
+      "broadband prices",
+      "cost of living",
+      "electricity price per kwh",
+      "why is internet so expensive",
+      "monthly bills",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#utilities",
+      "#internet",
+      "#costofliving",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "YOUR MONTHLY BILLS",
+      "hookBot": "AROUND THE WORLD",
+      "napkinNumber": "$40 vs $250",
+      "napkinSub": "power+internet+phone, by country",
+      "deco": "phone"
+    },
+    "chapters": [
+      [
+        "the three bills that run on autopilot",
+        "The monthly three"
+      ],
+      [
+        "rank the combined monthly bill by country",
+        "The ranking"
+      ],
+      [
+        "what actually sets the price of your electricity",
+        "The power price"
+      ],
+      [
+        "the bill that makes the least sense",
+        "The internet paradox"
+      ],
+      [
+        "what can you actually do about the autopilot bills",
+        "What to do"
+      ],
+      [
+        "monthly bills feel fixed",
+        "The real lesson"
+      ]
+    ]
+  }
+}
