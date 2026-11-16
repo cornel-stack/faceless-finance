@@ -258,7 +258,9 @@ export interface StageScene extends Base {
     // EP096 (The Price Tag — top inflation countries) additions:
     | "inflationcountrybars" | "moneyprintspiral" | "savingswipeout"
     // EP097 (The Price Tag — minimum wage vs rent) additions:
-    | "housingwagebars" | "hoursneededclock" | "minwagefrozen";
+    | "housingwagebars" | "hoursneededclock" | "minwagefrozen"
+    // EP098 (The Price Tag — cost of dying by state) additions:
+    | "deathcostbars" | "finalbillstack" | "estatetaxstates";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

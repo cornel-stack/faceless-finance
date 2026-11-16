@@ -7216,6 +7216,88 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={y0 + 34} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>one line never moved — the gap between them is the crisis</text>
       </svg>
     );
+  } else if (m === "deathcostbars") {
+    // Median funeral + burial cost by state — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Mississippi", 7000, green],
+      ["Texas", 8000, "#9cc47f"],
+      ["California", 9500, gold],
+      ["New York", 10500, "#d98b5f"],
+      ["Hawaii", 14500, red],
+    ];
+    const x0 = 270, xMax = 850, maxV = 14500;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={56} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">median funeral + burial, by state</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 96 + i * 66; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.12, i * 0.12 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 28} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={40} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 33} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${(v as number).toLocaleString()}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={462} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same goodbye, thousands apart by state</text>
+      </svg>
+    );
+  } else if (m === "finalbillstack") {
+    // Stacked breakdown of the death bill.
+    const grow = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const parts: [string, number, string][] = [
+      ["casket", 35, red],
+      ["funeral home fees", 25, "#d98b5f"],
+      ["burial plot + vault", 20, gold],
+      ["headstone", 10, "#9cc47f"],
+      ["flowers, transport", 10, tan],
+    ];
+    const barH = 330; const x = 360; let acc = 0;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={52} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">where the funeral bill actually goes</text>
+        <g>
+          {parts.map(([lab, pct, col], i) => {
+            const h = barH * (pct / 100); const y = 86 + barH * (acc / 100) * grow;
+            const hh = h * grow; acc += pct;
+            const op = interpolate(grow, [i * 0.12, i * 0.12 + 0.2], [0, 1], clampBoth);
+            return (
+              <g key={i} opacity={op}>
+                <rect x={x - 90} y={y} width={180} height={hh} fill={col as string} stroke={ink} strokeWidth={3} />
+                <text x={x + 110} y={y + hh / 2 + 5} fontSize={14} fontWeight={800} fill={ink} fontFamily={sans}>{lab} · {pct}%</text>
+              </g>
+            );
+          })}
+        </g>
+        <text x={x} y={448} fontSize={14} fontWeight={900} fill={red} textAnchor="middle" fontFamily="Georgia, serif">the casket alone is marked up several times over</text>
+      </svg>
+    );
+  } else if (m === "estatetaxstates") {
+    // Most states tax nothing; some levy estate/inheritance tax.
+    const pop = (d: number) => Math.min(1, spring({ frame, fps, delay: d, config: { damping: 12 } }));
+    const tiers: [string, string, string][] = [
+      ["most states", "no death tax", green],
+      ["~12 states", "estate tax", "#d98b5f"],
+      ["~6 states", "inheritance tax", red],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={64} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the states that tax you after death</text>
+        {tiers.map(([top, bot, col], i) => {
+          const x = 250 + i * 300; const s = pop(fps * (0.4 + i * 0.35));
+          return (
+            <g key={i} transform={`translate(${x} 270) scale(${s})`}>
+              <rect x={-130} y={-70} width={260} height={150} rx={14} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text x={0} y={-16} fontSize={22} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily="Georgia, serif">{top}</text>
+              <text x={0} y={22} fontSize={17} fontWeight={800} fill="#fff" textAnchor="middle" fontFamily={sans}>{bot}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={470} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>a few states charge both — some exempt as little as $1-2M</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

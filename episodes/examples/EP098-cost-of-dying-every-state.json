@@ -1,0 +1,786 @@
+{
+  "id": "EP098",
+  "series": "Napkin Numbers",
+  "title": "The Cost of Dying: Funerals, Probate and Estate Tax by State",
+  "slug": "cost-of-dying-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP098 — The Price Tag series (topic 88). The all-in cost of death by state (~$10-20K): funeral (~$8K+), burial vs cremation (direct cremation <$2K vs burial ~$12K), probate (3-7% of estate), the death tax (federal estate >~$14M hits almost nobody; but ~17 states+DC levy estate/inheritance tax, some exemptions as low as $1-2M). Rank funeral cost by state; the final-bill stack; why funerals cost so much (grief upsell, Funeral Rule rights); dodge probate (trust/beneficiary/TOD deed); plan-ahead. 3 new motifs (deathcostbars/finalbillstack/estatetaxstates) + reuse estatetaxcliff (EP068); 2 charts. Sources: Funeral/Cremation/Probate/Estate tax in the US/Inheritance tax. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The average American funeral now costs more than eight thousand dollars — and that's before the burial plot, the headstone, the probate lawyers, and, in some states, a tax on everything you leave behind. Dying, it turns out, is one of the most expensive things you'll ever do, and you won't even be around to shop around. Today we rank the true cost of death in every US state.",
+      "props": [
+        {
+          "name": "tombstone",
+          "label": "funeral $8K+"
+        },
+        {
+          "name": "receipt",
+          "label": "+ burial, probate, tax"
+        },
+        {
+          "name": "scale",
+          "label": "every state ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number nobody plans for. Between the funeral, the burial, and settling the estate, the total cost of an average American death lands somewhere between ten and twenty thousand dollars. It's a five-figure bill that arrives at the worst possible moment — handed to a grieving family who's in no state to negotiate.",
+      "text": "$10,000+",
+      "sub": "the all-in cost of an average US death",
+      "icon": "tombstone"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the cost of dying across the states, break the bill into its surprising pieces, explain why funerals got so expensive, map the states that still tax you after death, and show how to cut the whole thing dramatically. Because this is the one major expense in life that's a hundred percent guaranteed — and the only one you can plan entirely in advance.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the states"
+        },
+        {
+          "name": "receipt",
+          "label": "the pieces of the bill"
+        },
+        {
+          "name": "warning",
+          "label": "states that tax death"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "death is free, it's just the end",
+      "memeBottom": "death is a five-figure bill with its own tax",
+      "narration": "Because the one certainty in life isn't just taxes — it's that dying itself comes with an invoice. Before we rank the states, let's lay out exactly what you're paying for."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what you're actually paying for when someone dies.",
+      "heading": "The Final Bill",
+      "kicker": "four hidden pieces"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-funeral",
+      "narration": "Start with the funeral itself: a ceremony connected with the final disposition of a corpse. In America, that bundles a long list of line items — the casket, embalming, the viewing, the service, transport, and the funeral home's fees. Each one is priced separately, and the total climbs fast, especially when a grieving family isn't checking the itemized bill."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the itemized list is longer than most people imagine. A basic services fee the home charges no matter what. Transporting the body. Embalming and preparation. The viewing and the ceremony. A hearse. Printed programs. Each is a separate charge, and the home profits on every line. The bundle is designed to feel non-negotiable at exactly the moment you won't negotiate.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "every step a line item"
+        },
+        {
+          "name": "warning",
+          "label": "profit on each one"
+        },
+        {
+          "name": "tombstone",
+          "label": "feels non-negotiable"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-cremation",
+      "narration": "The single biggest choice is burial versus cremation — a method of final disposition of a corpse through burning. Cremation is dramatically cheaper, often half the cost of a full burial or less, which is why its popularity has soared. The decision between a casket-and-plot burial and a simple cremation can swing the entire bill by many thousands of dollars."
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Put the big choice in numbers. A traditional funeral with burial averages around nine to twelve thousand dollars. A cremation with a service runs closer to five or six. And a direct cremation — no ceremony, just the essentials — can be under two thousand. The same farewell, a five-to-tenfold difference in price.",
+      "text": "$2K vs $12K",
+      "sub": "direct cremation vs traditional burial",
+      "icon": "droplet"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Then comes a cost most people never see coming: settling the estate. Even a modest estate usually has to pass through a legal process before heirs get anything — and that process has its own fees. Add it up, and a death has four moving parts: the funeral, the method of disposition, the estate process, and, for some, a tax. We'll hit all four.",
+      "props": [
+        {
+          "name": "tombstone",
+          "label": "1. funeral"
+        },
+        {
+          "name": "droplet",
+          "label": "2. burial vs cremation"
+        },
+        {
+          "name": "will",
+          "label": "3. estate process + 4. tax"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And timing makes it uniquely cruel. Unlike almost any other big purchase, death gives you no chance to save up or shop around in the moment. The decisions get made in a day or two, under raw grief, often by someone who's never arranged a funeral before. It's the highest-pressure, lowest-information purchase most families will ever make.",
+      "props": [
+        {
+          "name": "clock",
+          "label": "decided in a day or two"
+        },
+        {
+          "name": "warning",
+          "label": "raw grief, no experience"
+        },
+        {
+          "name": "tombstone",
+          "label": "worst buying conditions"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank what a funeral actually costs by state.",
+      "heading": "The Ranking",
+      "kicker": "funeral cost by state"
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the cost gap between states isn't just the funeral home — it's everything around death. Land for burial, local labor, demand, and whether the state taxes the estate all stack up. Two identical goodbyes can differ by many thousands purely on geography, the same lever we keep finding behind every single price tag in this series.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "land, labor, demand, tax"
+        },
+        {
+          "name": "scale",
+          "label": "geography again"
+        },
+        {
+          "name": "warning",
+          "label": "thousands apart"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "deathcostbars",
+      "caption": "median funeral + burial, by state",
+      "narration": "Here's the spread. In lower-cost states like Mississippi and much of the South, a full funeral with burial runs around seven thousand dollars. In California and the Northeast, it climbs past nine or ten. And in the most expensive spots, like Hawaii, it can approach fifteen thousand. Same ceremony, same goodbye — thousands of dollars apart depending on the state."
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Watch the cremation shift, because it's reshaping these costs. A generation ago, most Americans chose burial; today the majority choose cremation, largely because of price. As demand swings that way, it's quietly pulling the average cost of dying down — proof that this bill does respond to consumer choice, when people feel free to make one.",
+      "props": [
+        {
+          "name": "droplet",
+          "label": "cremation now the majority"
+        },
+        {
+          "name": "chartdown",
+          "label": "pulling costs down"
+        },
+        {
+          "name": "smiley",
+          "label": "choice works"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Median funeral + burial cost ($)",
+      "unit": "$",
+      "narration": "Put the numbers side by side. Mississippi around seven thousand, Texas near eight, California ninety-five hundred, New York over ten thousand, and Hawaii approaching fifteen. The gap tracks local cost of living and the price of land — because remember, a traditional burial also means buying real estate: a plot, forever.",
+      "data": [
+        {
+          "label": "Mississippi",
+          "value": 7000
+        },
+        {
+          "label": "Texas",
+          "value": 8000
+        },
+        {
+          "label": "California",
+          "value": 9500
+        },
+        {
+          "label": "New York",
+          "value": 10500
+        },
+        {
+          "label": "Hawaii",
+          "value": 14500
+        }
+      ],
+      "highlight": 4
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And a traditional burial hides an asset purchase: the plot. You're buying a small piece of real estate, permanently, in a place where land is scarce. In dense, expensive cities, a single cemetery plot alone can cost more than the entire funeral does in a cheaper state. Death, like everything else, pays the local land premium.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "a plot = real estate"
+        },
+        {
+          "name": "house",
+          "label": "priciest where land is scarce"
+        },
+        {
+          "name": "warning",
+          "label": "pays the land premium"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "motif": "finalbillstack",
+      "caption": "where the death bill actually goes",
+      "narration": "And the funeral headline hides the full stack. The basic services fee, embalming, the casket — often two to five thousand on its own — the burial plot, the vault, the headstone, flowers, and transport. Each line looks small; together they build the ten-to-fifteen-thousand-dollar total. The casket alone can be marked up several times over what it costs to make."
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "give them the lavish send-off they deserve",
+      "memeBottom": "not go five figures into debt while grieving",
+      "narration": "This is the impossible choice families face at the worst possible time. Grief whispers that spending more is love, while the bill quietly climbs into five figures. Deciding in advance, calmly, is the only way to make this call with your head instead of your heartbreak."
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "But the funeral is only the visible half. Then comes the estate.",
+      "heading": "Probate & the Estate",
+      "kicker": "the legal bill"
+    },
+    {
+      "id": "s56",
+      "type": "callout",
+      "narration": "Here's the piece people never budget for. Probate can consume three to seven percent of an entire estate in court and legal fees, and take anywhere from six months to several years to finish. During that time, heirs often can't touch the money — it's frozen in a slow, public, fee-charging process.",
+      "text": "3-7%",
+      "sub": "of the estate lost to probate fees",
+      "icon": "ledger"
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "sourceId": "wiki-probate",
+      "narration": "When someone dies, their estate usually goes through probate — the court process that ends with a will accepted as a valid public document that is the true last testament of the deceased. It validates the will, pays debts, and distributes what's left. But it's slow, public, and it charges fees — court costs and lawyers that can eat several percent of the entire estate."
+    },
+    {
+      "id": "s57",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "the estate is stuck in probate for 2 years",
+      "memeBottom": "this is fine",
+      "narration": "For many heirs, this is the reality after a death: the inheritance exists on paper, but it's locked in a courthouse for months or years while fees nibble at it. Probate isn't a villain exactly — it's just slow, public, and expensive, which is precisely why smart planning routes around it."
+    },
+    {
+      "id": "s15",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Probate can drag on for months or even years, and the costs scale with the estate. Court fees, executor fees, and attorney fees commonly run three to seven percent of everything you owned. On a modest three-hundred-thousand-dollar estate, that's easily ten to twenty thousand dollars — gone to process, before a single heir sees a cent.",
+      "props": [
+        {
+          "name": "ledger",
+          "label": "3-7% of the estate"
+        },
+        {
+          "name": "clock",
+          "label": "months to years"
+        },
+        {
+          "name": "warning",
+          "label": "$10-20K on a $300K estate"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And probate is public, which surprises people. Because the court validates the will as a public document, anyone can look up what someone owned and who got it. Beyond the fees and delay, that loss of privacy is a real cost — and another reason the wealthy go to such lengths to keep their estates out of the courtroom entirely.",
+      "props": [
+        {
+          "name": "ledger",
+          "label": "probate is public record"
+        },
+        {
+          "name": "magnifier",
+          "label": "anyone can look it up"
+        },
+        {
+          "name": "warning",
+          "label": "privacy lost too"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "title",
+      "narration": "And in some states, the government taxes you one last time.",
+      "heading": "The Death Tax",
+      "kicker": "estate vs inheritance"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And clear up the biggest myth right away: for almost everyone, there is no federal death tax at all. The federal estate tax only touches estates worth more than roughly fourteen million dollars per person. So when politicians fight about the 'death tax', they're arguing over a levy that hits far less than one percent of estates. The real action is at the state level.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "myth: everyone pays"
+        },
+        {
+          "name": "scale",
+          "label": "federal hits <1% of estates"
+        },
+        {
+          "name": "mappin",
+          "label": "the action is state-level"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "screenshot",
+      "sourceId": "wiki-estatetax",
+      "narration": "At the federal level there's the estate tax — a federal tax on the transfer of the estate of a person who dies. The good news for most people: it only hits estates over about fourteen million dollars, so the vast majority of Americans never pay a cent of federal estate tax. The scary 'death tax' headline misses almost everyone."
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the federal exemption isn't fixed forever — it's a political football that rises and falls with each administration. Planners have to watch it, because an exemption that protects you today could be cut in half by a future law, suddenly pulling a once-safe estate into taxable territory. With death taxes, the rules themselves are a moving target.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "exemption rises and falls"
+        },
+        {
+          "name": "warning",
+          "label": "could be cut in half"
+        },
+        {
+          "name": "will",
+          "label": "a moving target"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-inheritancetax",
+      "narration": "But states are different. Several levy their own estate tax, and a handful levy an inheritance tax — a tax paid by a person who inherits money or property of a person who has died. The distinction matters: an estate tax comes out of the estate before heirs get it; an inheritance tax is charged to the heirs themselves, sometimes with far lower thresholds than the federal one."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The estate-versus-inheritance distinction has a real sting. An estate tax is paid once, by the estate, before anything is divided. An inheritance tax is charged to each heir who receives something — and the rate can depend on how closely related they are. A distant relative or a friend can be taxed far more heavily than a spouse or child on the very same gift.",
+      "props": [
+        {
+          "name": "will",
+          "label": "estate tax: paid once"
+        },
+        {
+          "name": "crowd",
+          "label": "inheritance tax: per heir"
+        },
+        {
+          "name": "warning",
+          "label": "distant heirs taxed more"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "motif": "estatetaxstates",
+      "caption": "the states that tax death",
+      "narration": "So the map splits. Most states tax nothing at death. But around a dozen states still charge an estate tax, and a handful charge an inheritance tax — a few charge both. States like Oregon and Massachusetts start taxing estates as low as one or two million, not fourteen. So where you die, and where your heirs live, can decide whether the government takes a final cut."
+    },
+    {
+      "id": "s47",
+      "type": "callout",
+      "narration": "Know the count. At the federal level only estates above roughly fourteen million dollars owe anything. But around seventeen states plus Washington D.C. levy their own estate or inheritance tax, several with exemptions as low as one or two million — so a paid-off home and a retirement account can be enough to trigger it.",
+      "text": "~17 states",
+      "sub": "that still tax estates or inheritances",
+      "icon": "mappin"
+    },
+    {
+      "id": "s20",
+      "type": "stage",
+      "motif": "estatetaxcliff",
+      "caption": "the threshold is everything",
+      "narration": "The whole game is the threshold. Below a state's exemption, you owe nothing; one dollar above it, and the tax kicks in, sometimes at ten to sixteen percent. For a family with a paid-off house and some savings in a low-exemption state, that can mean an unexpected five or six-figure bill — triggered simply by crossing an invisible line most people never knew existed."
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And here's the quiet trap: state exemptions often aren't indexed to inflation and home prices. As houses soar in value, more and more ordinary middle-class families drift above these old, low thresholds without ever feeling rich. A tax once aimed at tycoons slowly, silently reaches down toward regular homeowners.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "home values soar"
+        },
+        {
+          "name": "warning",
+          "label": "old thresholds don't adjust"
+        },
+        {
+          "name": "house",
+          "label": "reaches ordinary families"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "So why is all of this so expensive — and what can you do?",
+      "heading": "Why & What To Do",
+      "kicker": "plan the one certainty"
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the industry itself. American funerals became a multi-billion-dollar business built on a simple truth: demand never falls, customers can't comparison-shop in the moment, and emotion drives spending upward. Add a wave of consolidation, where big chains quietly own 'local' funeral homes, and you get steadily rising prices with very little competitive pressure.",
+      "props": [
+        {
+          "name": "store",
+          "label": "a multi-billion-$ industry"
+        },
+        {
+          "name": "warning",
+          "label": "big chains own 'local' homes"
+        },
+        {
+          "name": "chartup",
+          "label": "little price competition"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Funerals are expensive partly because of a brutal dynamic: you're buying under grief, under time pressure, and with a strong urge not to look cheap about a loved one. The industry knows this. Upselling a nicer casket or a bigger service is easy when the customer is heartbroken and rushed. It's one of the few purchases almost nobody comparison-shops.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "buying under grief"
+        },
+        {
+          "name": "receipt",
+          "label": "easy to upsell"
+        },
+        {
+          "name": "tombstone",
+          "label": "nobody shops around"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "explain",
+      "narration": "There's even a term for the regret: funeral poverty — families going into debt to bury someone they loved. Crowdfunding a funeral has become disturbingly common. It's the clearest proof that this cost ambushes people: a predictable, five-figure event that still routinely pushes grieving families into borrowing.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "'funeral poverty'"
+        },
+        {
+          "name": "receipt",
+          "label": "debt to bury someone"
+        },
+        {
+          "name": "tombstone",
+          "label": "a predictable ambush"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "present",
+      "narration": "So plan ahead, because this is the one bill you can fully control. Decide on cremation versus burial in advance — direct cremation can cost under two thousand dollars. Price-shop funeral homes; by law in the US they must give you an itemized price list. And consider prepaying or setting aside a dedicated fund so the cost never ambushes your family.",
+      "props": [
+        {
+          "name": "droplet",
+          "label": "direct cremation under $2K"
+        },
+        {
+          "name": "receipt",
+          "label": "demand the price list"
+        },
+        {
+          "name": "piggybank",
+          "label": "prepay or set aside"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "pose": "present",
+      "narration": "And don't overlook the simplest options at all. A direct cremation with a memorial you host yourself can be dignified, personal, and a fraction of the cost. Veterans can be buried free in a national cemetery. Home funerals are legal in most states. The most meaningful send-offs are often the least expensive — the price tag and the love are not the same thing.",
+      "props": [
+        {
+          "name": "droplet",
+          "label": "direct cremation + DIY memorial"
+        },
+        {
+          "name": "shield",
+          "label": "free veteran burial"
+        },
+        {
+          "name": "heart",
+          "label": "price ≠ love"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "present",
+      "narration": "And dodge probate legally, because that's where big money quietly leaks. A living trust, plus beneficiary designations on accounts and a transfer-on-death deed on your home, can pass assets directly to heirs — skipping the court, the delay, and the fees entirely. A few hours with an estate attorney can save your family tens of thousands and months of stress.",
+      "props": [
+        {
+          "name": "will",
+          "label": "a living trust"
+        },
+        {
+          "name": "handshake",
+          "label": "beneficiary designations"
+        },
+        {
+          "name": "moneybag",
+          "label": "skip probate's fees"
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "present",
+      "narration": "And match the plan to your state. If you live where estates are taxed at a low threshold, that's exactly where a trust, lifetime gifting, and good advice pay off most. A little planning turns a potential six-figure hit into a smooth, tax-efficient handoff. The families that get ambushed are almost always the ones who assumed death tax was only a billionaire's problem.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "plan for your state's rules"
+        },
+        {
+          "name": "will",
+          "label": "trust + lifetime gifting"
+        },
+        {
+          "name": "smiley",
+          "label": "a smooth handoff"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Death is the only expense in your entire life that is both absolutely guaranteed and completely plannable. Ignore it, and a grieving family overpays at the worst moment, loses a chunk to probate, and maybe hands the state a final tax. Plan it, and you spare them all three. The kindest financial gift you can leave is a bill already handled.",
+      "props": [
+        {
+          "name": "tombstone",
+          "label": "guaranteed + plannable"
+        },
+        {
+          "name": "scale",
+          "label": "ignore it = family overpays"
+        },
+        {
+          "name": "smiley",
+          "label": "plan it = a final gift"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And talk about it, because silence is the real cost multiplier. A family that knows your wishes, your documents, and your prepaid plan grieves without also panicking over money. The conversation is awkward for ten minutes; avoiding it can cost your loved ones thousands of dollars and months of chaos. The gift isn't the money. It's the clarity.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "tell your family the plan"
+        },
+        {
+          "name": "will",
+          "label": "where the documents are"
+        },
+        {
+          "name": "smiley",
+          "label": "clarity is the gift"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this made you think about the one bill everyone forgets, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "tombstone",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-funeral",
+      "name": "Funeral (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Funeral",
+      "quote": "a ceremony connected with the final disposition of a corpse"
+    },
+    {
+      "id": "wiki-cremation",
+      "name": "Cremation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cremation",
+      "quote": "a method of final disposition of a corpse"
+    },
+    {
+      "id": "wiki-probate",
+      "name": "Probate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Probate",
+      "quote": "accepted as a valid public document that is the true last testament of the deceased"
+    },
+    {
+      "id": "wiki-estatetax",
+      "name": "Estate tax in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States",
+      "quote": "a federal tax on the transfer of the estate of a person who dies"
+    },
+    {
+      "id": "wiki-inheritancetax",
+      "name": "Inheritance tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inheritance_tax",
+      "quote": "a tax paid by a person who inherits money or property of a person who has died"
+    }
+  ],
+  "youtube": {
+    "title": "The Cost of Dying: Funerals, Probate and Estate Tax by State",
+    "alts": [
+      "What Dying Actually Costs in Every US State",
+      "The Five-Figure Bill Nobody Plans For: The Cost of Dying"
+    ],
+    "hook": "The average American funeral now costs over $8,000 — and that's before the burial plot, the headstone, the probate lawyers, and, in some states, a tax on everything you leave behind. All in, an average US death runs $10,000–$20,000, a five-figure bill handed to a grieving family in no state to negotiate. This is the cost of dying in every US state, ranked. We break the bill into its four pieces — the funeral, burial vs cremation (a direct cremation can be under $2,000 vs ~$12,000 for a traditional burial), probate (court + lawyer fees of 3–7% of the estate), and the 'death tax' (federal estate tax only hits estates over ~$14M, but ~17 states + DC levy their own estate or inheritance tax, some with exemptions as low as $1–2M). We explain why funerals got so expensive (buying under grief, and the industry's upsell), map the states that still tax death, and show exactly how to slash it: choose cremation, use your Funeral Rule rights to an itemized price list, prepay, and dodge probate legally with a living trust and beneficiary designations. Fully cited.",
+    "bullets": [
+      "All-in cost of an average US death: $10,000–$20,000",
+      "Funeral cost ranked by state (~$7K to ~$15K)",
+      "Burial vs cremation: ~$12K vs under $2K",
+      "Probate: 3–7% of the estate, gone to fees",
+      "The death tax: ~17 states + DC still levy it",
+      "How to slash it: cremation, the Funeral Rule, dodge probate"
+    ],
+    "tags": [
+      "cost of dying",
+      "funeral cost",
+      "cost of a funeral",
+      "probate",
+      "estate tax",
+      "inheritance tax",
+      "death tax by state",
+      "cremation vs burial",
+      "funeral rule",
+      "estate planning",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#funeral",
+      "#estateplanning",
+      "#probate",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "DYING ISN'T",
+      "hookBot": "FREE EITHER",
+      "napkinNumber": "$10,000+",
+      "napkinSub": "funeral + probate + estate tax",
+      "deco": "tombstone"
+    },
+    "chapters": [
+      [
+        "what you're actually paying for when someone dies",
+        "The final bill"
+      ],
+      [
+        "rank what a funeral actually costs by state",
+        "The ranking"
+      ],
+      [
+        "the funeral is only the visible half",
+        "Probate & the estate"
+      ],
+      [
+        "the government taxes you one last time",
+        "The death tax"
+      ],
+      [
+        "why is all of this so expensive",
+        "Why & what to do"
+      ],
+      [
+        "the one bill everyone forgets",
+        "The real lesson"
+      ]
+    ]
+  }
+}
