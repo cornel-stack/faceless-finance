@@ -1,0 +1,760 @@
+{
+  "id": "EP102",
+  "series": "Napkin Numbers",
+  "title": "Fastest-Growing US Cities and What They Cost Now",
+  "slug": "fastest-growing-cities-cost",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP102 — The Price Tag series (topic 92). Rank fastest-growing US boomtowns by home-price surge since 2019 (US +30% vs Austin +62%, Boise +55%, Phoenix +50%, Tampa, Nashville). Why: internal migration out of coasts + remote work + low tax/sun/space. The hangover: gentrification/displacement, traffic, water limits (Phoenix), prices 2-3x outran wages (price-to-income 8x). Boom or bubble: cooling not crashing, over-built metros (Austin) already dipping, building = swing factor. What to do: don't buy the peak, find the NEXT boomtown, lock gains if you own. 3 new motifs (boomcitybars/boompricecurve/boomtradeoffs) + reuse sunbeltmigration (EP084); 2 charts. Sources: Boomtown/Internal migration/Gentrification/Real estate economics + Urbanization(unused? keep 5). NO local synth. Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "A decade ago, you could buy a nice house in Austin, Boise, or Phoenix for a couple hundred thousand dollars. Then everyone moved there at once — and prices exploded by fifty, sixty, even seventy percent in just a few years. America's fastest-growing cities made early movers rich and priced everyone else out almost overnight. Today we rank the boomtowns, show what they cost now, and ask whether the boom is about to break.",
+      "props": [
+        {
+          "name": "risingcity",
+          "label": "boomtowns"
+        },
+        {
+          "name": "chartup",
+          "label": "+50-70% in a few years"
+        },
+        {
+          "name": "scale",
+          "label": "ranked + priced"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that defines the last few years. In the hottest boom cities, the price of a typical home jumped by well over fifty percent between twenty nineteen and today — adding a hundred and fifty thousand dollars or more to the same house. The people who arrived early won a lottery. The people arriving now are paying the ticket price.",
+      "text": "+60%",
+      "sub": "home-price surge in the fastest-growing cities",
+      "icon": "chartup"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank America's fastest-growing cities, reveal how much their prices actually surged, explain the forces that turned sleepy towns into gold rushes, expose the traffic and affordability hangover that follows, and ask the trillion-dollar question: are these boomtowns a smart move now, or a bubble about to deflate? Let's go.",
+      "props": [
+        {
+          "name": "risingcity",
+          "label": "rank the boomtowns"
+        },
+        {
+          "name": "truck",
+          "label": "why they boomed"
+        },
+        {
+          "name": "warning",
+          "label": "boom or bubble?"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "move to the booming city everyone loves",
+      "memeBottom": "buy where it's cheap before everyone arrives",
+      "narration": "Because the whole game of a boomtown is timing — arrive before the crowd and you win, arrive after and you pay their price. Before we rank them, let's define what makes a city boom."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what actually turns a city into a boomtown.",
+      "heading": "The Boom",
+      "kicker": "why cities explode"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-boomtown",
+      "narration": "The classic definition: a boomtown is a community that undergoes sudden and rapid population and economic growth. Historically it was gold or oil. Today's precious resource is different — it's jobs, warm weather, low taxes, and space. But the pattern is identical to a gold rush: people pour in, demand explodes, and prices for everything, especially housing, go vertical."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The gold-rush comparison is more exact than it sounds. In an old mining boomtown, the people who got rich weren't usually the miners — it was whoever arrived first and owned the land, the store, the saloon. Same today: the early homeowners and landlords captured the windfall, while latecomers pay the inflated prices the boom created. Being early is the entire edge.",
+      "props": [
+        {
+          "name": "pickaxe",
+          "label": "like a gold rush"
+        },
+        {
+          "name": "house",
+          "label": "early owners win"
+        },
+        {
+          "name": "warning",
+          "label": "latecomers pay up"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-migration",
+      "narration": "What fuels it is internal migration — human migration within a country. Americans have been leaving expensive, high-tax coastal states and flooding into cheaper, faster-growing ones. When tens of thousands of people with coastal salaries move to a mid-sized city at once, they don't just fill it up. They bid up every home in it, fast."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And it isn't only the famous big names. Some of the fastest-growing places are small satellite towns on the edge of boom metros — suburbs of Austin, Phoenix, or Nashville that quietly doubled in population. As the core city gets expensive, the boom spills outward, and the real explosive growth often happens one ring out, where land was still cheap when the wave arrived.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "satellite towns boom too"
+        },
+        {
+          "name": "risingcity",
+          "label": "the wave spills outward"
+        },
+        {
+          "name": "house",
+          "label": "cheap land, one ring out"
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "type": "callout",
+      "narration": "Here's the scale of a single boom. Austin's metro added roughly a million people in about a decade — a pace that would strain any city on Earth. You simply cannot build homes, roads, and schools fast enough for growth like that, which is precisely why prices, not supply, do most of the adjusting in the early years.",
+      "text": "+1 million",
+      "sub": "people added to the Austin metro in ~a decade",
+      "icon": "risingcity"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And remote work poured gasoline on the fire. Once millions of people could keep a San Francisco or New York salary while living anywhere, they went hunting for sunshine, space, and no state income tax. The boom cities are simply where that money landed. A high salary, unchained from an expensive city, became a tidal wave of purchasing power hitting cheaper markets.",
+      "props": [
+        {
+          "name": "laptop",
+          "label": "remote work unchained salaries"
+        },
+        {
+          "name": "palmtree",
+          "label": "sun, space, low tax"
+        },
+        {
+          "name": "chartup",
+          "label": "a wave of purchasing power"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Quantify the migration wave. States like Texas and Florida have each gained hundreds of thousands of net new residents a year, much of it funneling into a handful of metros. When a city of a million suddenly absorbs a hundred thousand well-paid newcomers, its housing market simply cannot build fast enough — and prices do the adjusting instead.",
+      "text": "100,000s",
+      "sub": "net new residents a year flowing to boom states",
+      "icon": "truck"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank the boomtowns by how much they surged.",
+      "heading": "The Ranking",
+      "kicker": "the price explosion"
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One thing to watch as we rank: growth rate and price surge aren't always the same thing. Some towns grow fast in population but stay affordable because they build like crazy; others barely grow but see prices spike because they refuse to build. The most painful boomtowns are the ones that got the people but blocked the housing.",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "growth ≠ price surge"
+        },
+        {
+          "name": "crane",
+          "label": "building keeps it affordable"
+        },
+        {
+          "name": "warning",
+          "label": "people in, homes blocked"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "boomcitybars",
+      "caption": "home-price surge since 2019, by boom city",
+      "narration": "Here's the leaderboard of the boom. Cities like Austin, Boise, and Phoenix saw home prices rocket fifty to seventy percent in just a few years. Tampa, Nashville, and much of Florida and the Mountain West weren't far behind. For comparison, the US as a whole rose around thirty percent. The boomtowns didn't just beat the national market. They left it in the dust."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice the geography of the winners: almost all of them are in the Sun Belt and Mountain West. Warm weather, cheap land, business-friendly rules, and no or low state income tax. The boom map is essentially a map of where it's cheap to operate and pleasant to live — the two things remote-era Americans and their employers started optimizing for at the same time.",
+      "props": [
+        {
+          "name": "palmtree",
+          "label": "Sun Belt + Mountain West"
+        },
+        {
+          "name": "moneybag",
+          "label": "low tax, cheap land"
+        },
+        {
+          "name": "globe",
+          "label": "where everyone optimized"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Home-price surge since 2019 (%)",
+      "unit": "%",
+      "narration": "Put the surges in a row. The US average rose about thirty percent. But Nashville climbed forty, Tampa forty-five, Phoenix fifty, Boise fifty-five, and Austin a staggering sixty-plus. In a handful of years, these cities added what used to take decades of appreciation. If you owned a home there in twenty nineteen, you got rich sitting still.",
+      "data": [
+        {
+          "label": "US avg",
+          "value": 30
+        },
+        {
+          "label": "Nashville",
+          "value": 40
+        },
+        {
+          "label": "Tampa",
+          "value": 45
+        },
+        {
+          "label": "Phoenix",
+          "value": 50
+        },
+        {
+          "label": "Boise",
+          "value": 55
+        },
+        {
+          "label": "Austin",
+          "value": 62
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And wages did not keep up, which is the whole problem. In these cities, home prices often rose two or three times faster than local incomes. So even with the new high-paying jobs, the typical local worker fell further behind on housing. A booming economy and a brutal affordability crisis arrived in the exact same cities, at the exact same time.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "prices up 2-3× faster than pay"
+        },
+        {
+          "name": "warning",
+          "label": "locals fell behind"
+        },
+        {
+          "name": "scale",
+          "label": "boom + crisis together"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "stage",
+      "motif": "sunbeltmigration",
+      "caption": "out of the coasts, into the boomtowns",
+      "narration": "And the map tells the story. The flow is overwhelmingly out of California, New York, and Illinois, and into Texas, Florida, Arizona, Tennessee, and Idaho. People chased lower prices and lighter taxes — and in doing so, they carried the very price pressure they were fleeing straight into their new hometowns. The boomtowns are, in a sense, the coasts' overflow."
+    },
+    {
+      "id": "s44",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And there's a feedback loop that supercharges it. Early price gains attract investors and speculators, who buy homes expecting more gains — which pushes prices up further, attracting still more buyers. For a while, the boom feeds itself, detached from the people actually trying to live there. That's exactly the dynamic that later makes these markets so vulnerable.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "investors chase gains"
+        },
+        {
+          "name": "warning",
+          "label": "the boom feeds itself"
+        },
+        {
+          "name": "risingcity",
+          "label": "detached from real life"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So what do these cities actually cost now, after the boom?",
+      "heading": "The Hangover",
+      "kicker": "the affordability flip"
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the affordability flip hits newcomers hardest in a sneaky way. People move for a lower cost of living, sign a mortgage at the new, elevated price, and only then discover the city is no longer the bargain the headlines promised. They bought the reputation of cheapness after the cheapness was already gone. The brand lags the reality by years.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "bought the old reputation"
+        },
+        {
+          "name": "house",
+          "label": "cheapness already gone"
+        },
+        {
+          "name": "chartup",
+          "label": "the brand lags reality"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "boompricecurve",
+      "caption": "cheap, then a spike, then a plateau",
+      "narration": "Here's the cruel arc of a boomtown. It starts cheap — that's the draw. Prices spike as the crowd arrives. And then it plateaus at a new, high level, often cooling or dipping as the frenzy fades. The result is a city that's no longer cheap, but now has big-city prices with none of the old affordability that made it special. The bargain is gone; the traffic stayed."
+    },
+    {
+      "id": "s45",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "move to the cheap, fast-growing city",
+      "memeBottom": "realize you brought the high prices with you",
+      "narration": "This is the quiet irony every boomtown eventually discovers. The newcomers fled expensive cities for affordable ones — and by arriving en masse, they recreated the exact problem they left behind. The affordable city was affordable only until everyone agreed it was."
+    },
+    {
+      "id": "s15",
+      "type": "screenshot",
+      "sourceId": "wiki-gentrification",
+      "narration": "For longtime locals, the boom often means gentrification — the process whereby the character of a neighborhood changes through the influx of more affluent residents and investment. New arrivals with coastal salaries outbid the people who were already there. Teachers, service workers, and lifelong residents can find themselves priced out of the very city they built, by newcomers earning twice their wage."
+    },
+    {
+      "id": "s56",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Gentrification cuts both ways, and that's what makes it so divisive. New investment brings nicer restaurants, safer streets, and rising home values for existing owners — genuine wins. But renters and fixed-income residents get pushed out by the same rising prices. The same force that enriches one neighbor evicts another, which is why no city ever fully agrees on whether its boom was good or bad.",
+      "props": [
+        {
+          "name": "store",
+          "label": "investment + nicer amenities"
+        },
+        {
+          "name": "warning",
+          "label": "renters pushed out"
+        },
+        {
+          "name": "scale",
+          "label": "enriches some, evicts others"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the hidden costs pile up fast. Infrastructure built for a small town buckles under a flood of new residents — gridlocked traffic, overcrowded schools, strained water in desert cities like Phoenix. The boom brings jobs and energy, but it arrives faster than roads, pipes, and classrooms can be built. For a while, the city's success outruns its ability to handle it.",
+      "props": [
+        {
+          "name": "car",
+          "label": "gridlock traffic"
+        },
+        {
+          "name": "school",
+          "label": "overcrowded schools"
+        },
+        {
+          "name": "warning",
+          "label": "growth outruns the pipes"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And some boom cities face a limit money can't fix: water. Desert metros like Phoenix and parts of the Mountain West are growing fastest in exactly the places with the least water. Explosive population growth in an arid region is a slow-motion constraint that could eventually cap the boom harder than any price chart. Nature keeps its own ledger.",
+      "props": [
+        {
+          "name": "droplet",
+          "label": "desert cities, scarce water"
+        },
+        {
+          "name": "warning",
+          "label": "a limit money can't buy"
+        },
+        {
+          "name": "risingcity",
+          "label": "nature's ledger"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "Which brings us to the big question: boom, or bubble?",
+      "heading": "Boom or Bubble?",
+      "kicker": "is it about to break"
+    },
+    {
+      "id": "s57",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "bought at the peak of the boom",
+      "memeBottom": "this is fine",
+      "narration": "For the people who arrived at the very top of the frenzy, this is the quiet worry as prices flatten or dip. Buying a home is still buying shelter, not just a bet — but paying peak boomtown prices right before a cooldown is exactly the timing this whole episode is about avoiding."
+    },
+    {
+      "id": "s18",
+      "type": "screenshot",
+      "sourceId": "wiki-reecon",
+      "narration": "Real estate economics aims to describe and predict economic patterns of supply and demand. And it flags a warning on the hottest boomtowns: prices ran up faster than local incomes, which is the classic setup for a correction. When home prices double but paychecks don't, something eventually has to give — either wages catch up, or prices come back down."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And watch the building wave, because it's the swing factor. Boomtowns that built aggressively — much of Texas — now have a flood of new supply arriving just as migration cools, which pushes prices down. Those that couldn't or wouldn't build stay tighter and pricier. Whether a boom cools gently or corrects hard often comes down to one thing: did they build enough.",
+      "props": [
+        {
+          "name": "crane",
+          "label": "the building wave"
+        },
+        {
+          "name": "chartdown",
+          "label": "supply cools prices"
+        },
+        {
+          "name": "scale",
+          "label": "did they build enough?"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "stage",
+      "motif": "boomtradeoffs",
+      "caption": "the boomtown bet — upside vs risk",
+      "narration": "So here's the honest ledger. On the upside: these cities still have real job growth, business-friendly policies, and millions more people wanting in. On the risk side: prices stretched far above local wages, a wave of new building arriving all at once, and some metros, like Austin, already correcting from their peaks. A boomtown is a genuine bet — real momentum, real risk, side by side."
+    },
+    {
+      "id": "s48",
+      "type": "callout",
+      "narration": "Here's the risk in one comparison. In the frothiest boom metros, home prices climbed to seven, eight, even nine times local median income — levels that historically precede a stall or a drop. A healthy ratio is closer to three or four. The further a city floats above that line, the harder the eventual landing tends to be.",
+      "text": "8× income",
+      "sub": "price-to-income in the frothiest boom cities",
+      "icon": "warning"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The most likely outcome isn't a dramatic crash, but a cooling. The wildest boom cities over-built and over-shot, so some are already seeing prices dip from their highs. Others will simply flatten for years while incomes slowly catch up. The gold-rush phase — where you got rich just for showing up — is largely over. What's left is a normal, if pricier, city.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "cooling, not crashing"
+        },
+        {
+          "name": "warning",
+          "label": "gold-rush phase is over"
+        },
+        {
+          "name": "risingcity",
+          "label": "now just a pricier city"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And remember the comforting floor under these markets: real people still want to live there. Unlike a pure financial bubble, a boomtown is backed by genuine demand — jobs, sunshine, and ongoing migration. That's why most will cool rather than collapse. A city can give back some froth and still be fundamentally more valuable than it was before the boom began.",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "backed by real demand"
+        },
+        {
+          "name": "chartdown",
+          "label": "cool, not collapse"
+        },
+        {
+          "name": "risingcity",
+          "label": "still worth more than before"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "So should you chase a boomtown, or avoid one?",
+      "heading": "What To Do",
+      "kicker": "timing the boom"
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "present",
+      "narration": "And look for the tells of a rising, not peaked, city. Growing employers announcing new offices, an airport adding flights, rents ticking up before home prices fully have, and a cost of living still below the national average. Those are the early embers. By the time a boomtown is on every magazine cover, the easy gains have usually already been made.",
+      "props": [
+        {
+          "name": "briefcase",
+          "label": "new employers arriving"
+        },
+        {
+          "name": "chartup",
+          "label": "rents rising first"
+        },
+        {
+          "name": "warning",
+          "label": "magazine cover = too late"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "present",
+      "narration": "The rule is simple: never buy at the peak of a frenzy. If a city has already surged fifty percent and prices tower over local wages, you've likely missed the easy money and are buying the risk. The real opportunity is the next boomtown — the still-affordable city with the early signs: jobs arriving, people trickling in, prices that haven't yet gone vertical.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "don't buy the peak"
+        },
+        {
+          "name": "magnifier",
+          "label": "find the NEXT boomtown"
+        },
+        {
+          "name": "chartup",
+          "label": "early signs, low prices"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if you already own in a boomtown, think about locking the gain. Your home may have jumped a hundred and fifty thousand dollars on paper, but paper gains only become real if you sell, downsize, or borrow against them wisely. Many boomtown winners stay house-rich and cash-poor, watching the number without ever capturing it. A gain you never realize is just a bigger property-tax bill.",
+      "props": [
+        {
+          "name": "house",
+          "label": "paper gains aren't real"
+        },
+        {
+          "name": "moneybag",
+          "label": "sell, downsize, or tap wisely"
+        },
+        {
+          "name": "warning",
+          "label": "house-rich, cash-poor"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "present",
+      "narration": "And whatever you do, run the local math, not the hype. Price-to-income, how much the city is building, and whether wages are keeping up tell you far more than a 'best places to live' list. A boomtown where homes cost nine times local income is a warning, no matter how nice it looks. Let the numbers, not the vibes, decide where you plant roots.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "price-to-income + building"
+        },
+        {
+          "name": "warning",
+          "label": "9× income = warning"
+        },
+        {
+          "name": "scale",
+          "label": "numbers over vibes"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. A boomtown is a wave, and waves have a front and a back. Ride the front, catching a city before the crowd, and its growth lifts your wealth for free. Arrive at the back, after the surge, and you pay peak prices for someone else's gains. The money in a boom was never really about the city. It was always about the timing.",
+      "props": [
+        {
+          "name": "rollercoaster",
+          "label": "a wave with a front & back"
+        },
+        {
+          "name": "chartup",
+          "label": "front = free lift"
+        },
+        {
+          "name": "scale",
+          "label": "it's all about timing"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And zoom out on the bigger pattern this reveals. Boomtowns are just geography catching up to opportunity — and opportunity keeps moving. Yesterday it was San Francisco, then Austin, next it'll be somewhere cheaper still. The winners are the ones who spot where the wave is heading, not where it already crashed. Watch the migration data, not the headlines.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "opportunity keeps moving"
+        },
+        {
+          "name": "truck",
+          "label": "watch migration, not headlines"
+        },
+        {
+          "name": "chartup",
+          "label": "spot the next wave"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this changed how you see America's boomtowns, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "risingcity",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-boomtown",
+      "name": "Boomtown (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boomtown",
+      "quote": "a community that undergoes sudden and rapid population and economic growth"
+    },
+    {
+      "id": "wiki-migration",
+      "name": "Internal migration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Internal_migration",
+      "quote": "human migration within a country"
+    },
+    {
+      "id": "wiki-gentrification",
+      "name": "Gentrification (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gentrification",
+      "quote": "the character of a neighborhood changes through the influx of more affluent residents"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "to describe and predict economic patterns of supply and demand"
+    },
+    {
+      "id": "wiki-urban",
+      "name": "Urbanization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Urbanization",
+      "quote": "the population shift from rural to urban areas"
+    }
+  ],
+  "youtube": {
+    "title": "Fastest-Growing US Cities and What They Cost Now",
+    "alts": [
+      "America's Boomtowns: How Much They Cost After the Surge",
+      "The Cities That Boomed — and Whether the Boom Is Breaking"
+    ],
+    "hook": "A decade ago you could buy a nice house in Austin, Boise or Phoenix for a couple hundred grand. Then everyone moved there at once and prices exploded 50–70% in a few years. This is America's fastest-growing cities, ranked, what they cost now, and whether the boom is about to break. We rank the boomtowns by home-price surge since 2019 (the US rose ~30%, but Nashville +40%, Tampa +45%, Phoenix +50%, Boise +55%, Austin +62%), explain the forces behind it (internal migration out of expensive coastal states + remote work letting people keep big-city salaries while chasing sun, space and no income tax), and expose the hangover: gentrification and displacement, gridlock, strained water in desert metros, and prices that outran local wages 2–3x (pushing price-to-income to 7–9x). Then the big question — boom or bubble? (Most likely a cooling, not a crash; over-built metros like Austin are already dipping, and whether a city built enough homes is the swing factor.) Plus how to play it: don't buy the peak, find the NEXT boomtown, and lock your gains if you already own. Fully cited.",
+    "bullets": [
+      "Boomtowns ranked by price surge: +30% US vs +62% Austin",
+      "Why they boomed: migration + remote work + low tax",
+      "The hangover: gentrification, traffic, water limits",
+      "Prices outran wages 2–3x (price-to-income 7–9x)",
+      "Boom or bubble? Cooling, not crashing",
+      "How to play it: find the next boomtown, don't buy the peak"
+    ],
+    "tags": [
+      "fastest growing cities",
+      "boomtowns",
+      "austin housing",
+      "phoenix real estate",
+      "boise housing",
+      "housing market",
+      "internal migration",
+      "gentrification",
+      "where to move",
+      "real estate 2026",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#realestate",
+      "#boomtown",
+      "#housing",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "AMERICA'S BOOMTOWNS",
+      "hookBot": "AND THE CATCH",
+      "napkinNumber": "+62%",
+      "napkinSub": "home-price surge since 2019",
+      "deco": "risingcity"
+    },
+    "chapters": [
+      [
+        "what actually turns a city into a boomtown",
+        "The boom"
+      ],
+      [
+        "rank the boomtowns by how much they surged",
+        "The ranking"
+      ],
+      [
+        "what do these cities actually cost now",
+        "The hangover"
+      ],
+      [
+        "boom, or bubble",
+        "Boom or bubble?"
+      ],
+      [
+        "should you chase a boomtown",
+        "What to do"
+      ]
+    ]
+  }
+}

@@ -266,7 +266,9 @@ export interface StageScene extends Base {
     // EP100 (The Price Tag — doctor visit cost by country) additions:
     | "doctorvisitbars" | "erbillshock" | "universalvspay"
     // EP101 (The Price Tag — Big Mac index) additions:
-    | "bigmacbars" | "currencyvaluation" | "bigmacsperhour";
+    | "bigmacbars" | "currencyvaluation" | "bigmacsperhour"
+    // EP102 (The Price Tag — fastest-growing cities) additions:
+    | "boomcitybars" | "boompricecurve" | "boomtradeoffs";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above
