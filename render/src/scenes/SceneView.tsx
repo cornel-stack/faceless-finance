@@ -7140,6 +7140,82 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={base + 50} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the patient saver is punished the hardest</text>
       </svg>
     );
+  } else if (m === "housingwagebars") {
+    // Hourly wage needed to afford a 1-bed, by state — bars, with a min-wage line.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Ohio", 19, "#9cc47f"],
+      ["Texas", 22, gold],
+      ["Florida", 28, "#d98b5f"],
+      ["New York", 39, "#c0583a"],
+      ["California", 42, "#c0583a"],
+      ["Hawaii", 45, red],
+    ];
+    const x0 = 250, xMax = 820, maxV = 45;
+    const minWageX = x0 + (xMax - x0) * (7.25 / maxV);
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={46} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">wage needed to afford a 1-bed ($/hr)</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 76 + i * 60; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 26} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={34} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 10} y={y + 30} fontSize={14} fontWeight={900} fill={ink} fontFamily="Georgia, serif">${v}</text>
+            </g>
+          );
+        })}
+        {/* federal minimum wage reference line */}
+        <line x1={minWageX} y1={64} x2={minWageX} y2={440} stroke={ink} strokeWidth={3} strokeDasharray="8 6" />
+        <text x={minWageX + 6} y={462} fontSize={13} fontWeight={900} fill={ink} fontFamily={sans}>federal min $7.25</text>
+        <text x={VW / 2} y={462} fontSize={13} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>every bar towers over the minimum wage</text>
+      </svg>
+    );
+  } else if (m === "hoursneededclock") {
+    // Hours/week at minimum wage to afford a 1-bed vs the 40-hour week.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.6], [0, 1], clampBoth);
+    const bars: [string, number, string][] = [["a normal week", 40, "#9cc47f"], ["California", 70, gold], ["Florida", 92, "#d98b5f"], ["Texas", 104, "#c0583a"], ["Mississippi", 112, red]];
+    const base = 430, maxH = 300, maxV = 120;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">hours/week at min wage to afford a 1-bed</text>
+        <RLine x1={110} y1={base} x2={880} y2={base} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, v, col], i) => {
+          const h = maxH * (v / maxV) * draw; const x = 200 + i * 150;
+          return (
+            <g key={i}>
+              <rect x={x - 52} y={base - h} width={104} height={h} rx={5} fill={col as string} stroke={ink} strokeWidth={3.5} />
+              <text x={x} y={base - h - 10} fontSize={16} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{v}h</text>
+              <text x={x} y={base + 22} fontSize={12.5} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={base + 48} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>40 hours was never going to be enough</text>
+      </svg>
+    );
+  } else if (m === "minwagefrozen") {
+    // Two lines since 2009: flat minimum wage vs soaring rent.
+    const draw = interpolate(frame, [fps * 0.4, fps * 2.8], [0, 1], clampBoth);
+    const x0 = 140, x1 = 880, y0 = 430, yTop = 110;
+    const rent = (t: number) => y0 - (y0 - yTop) * (0.3 + 0.6 * t);
+    const wage = (t: number) => y0 - (y0 - yTop) * 0.22;
+    const segR = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${rent(t)}`; }).join(" ");
+    const segW = Array.from({ length: 40 }).map((_, i) => { const t = (i / 39) * draw; return `${i === 0 ? "M" : "L"}${x0 + (x1 - x0) * t} ${wage(t)}`; }).join(" ");
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={62} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">since 2009: the floor froze, the rent soared</text>
+        <RLine x1={x0} y1={y0} x2={x1} y2={y0} stroke={ink} strokeWidth={3} />
+        <RLine x1={x0} y1={yTop} x2={x0} y2={y0} stroke={ink} strokeWidth={3} />
+        <path d={segR} fill="none" stroke={red} strokeWidth={6} />
+        <path d={segW} fill="none" stroke={ink} strokeWidth={6} strokeDasharray="10 7" />
+        <text x={x0 + 54} y={y0 - 12} fontSize={13} fontWeight={800} fill={theme.inkSoft} fontFamily={sans}>2009</text>
+        <text x={x1 - 40} y={rent(1) - 10} fontSize={14} fontWeight={900} fill={red} textAnchor="end" fontFamily={sans}>rent ~doubled</text>
+        <text x={x1 - 40} y={wage(1) - 12} fontSize={14} fontWeight={900} fill={ink} textAnchor="end" fontFamily={sans}>min wage: flat $7.25</text>
+        <text x={VW / 2} y={y0 + 34} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>one line never moved — the gap between them is the crisis</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

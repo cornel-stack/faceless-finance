@@ -256,7 +256,9 @@ export interface StageScene extends Base {
     // EP095 (The Price Tag — childcare by state vs 2nd salary) additions:
     | "childcarebystate"
     // EP096 (The Price Tag — top inflation countries) additions:
-    | "inflationcountrybars" | "moneyprintspiral" | "savingswipeout";
+    | "inflationcountrybars" | "moneyprintspiral" | "savingswipeout"
+    // EP097 (The Price Tag — minimum wage vs rent) additions:
+    | "housingwagebars" | "hoursneededclock" | "minwagefrozen";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

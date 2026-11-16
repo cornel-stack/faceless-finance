@@ -1,0 +1,779 @@
+{
+  "id": "EP097",
+  "series": "Napkin Numbers",
+  "title": "Minimum Wage vs Rent in Every US State",
+  "slug": "minwage-vs-rent-every-state",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP097 — The Price Tag series (topic 87). No US state lets a full-time minimum-wage worker afford a modest 1-bed at 30%; 2-bed = 0 counties anywhere. Rank the 'housing wage' ($/hr needed for a 1-bed) by state ($19 OH to $45 HI) vs min wage ($7.25 federal frozen since 2009, up to ~$16 state). Translate to hours/week (70-112+). Why: federal floor frozen 15+ yrs while rent ~doubled (falling in real terms); states raised their own. Living wage vs minimum wage; working poor. 3 new motifs (housingwagebars/hoursneededclock/minwagefrozen) + reuse thirtypercentrule (EP075); 2 charts. Sources: Minimum wage/Minimum wage in the US/Living wage/Working poor/Housing affordability index(reuse). Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "There is not a single US state where a full-time minimum-wage worker can comfortably afford a modest one-bedroom apartment. Not one. In most states they'd have to work eighty, a hundred, even a hundred and twenty hours a week just to cover the rent under the standard affordability rule. Today we rank minimum wage against rent in every state, and expose the gap that's quietly swallowing the bottom of the workforce.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "min wage"
+        },
+        {
+          "name": "apartment",
+          "label": "vs a 1-bed"
+        },
+        {
+          "name": "scale",
+          "label": "every state ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that ends the debate. To afford a modest one-bedroom at the recommended thirty percent of income, the average American needs to earn well over twenty dollars an hour. The federal minimum wage is seven dollars and twenty-five cents. That gap — between what rent demands and what the floor pays — is the whole story.",
+      "text": "$7.25 vs $25",
+      "sub": "federal minimum wage vs the wage rent demands",
+      "icon": "apartment"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the states by the gap between minimum wage and rent, translate it into the brutal number of hours you'd have to work, show how the federal floor froze while rent sprinted away, and separate the minimum wage from the living wage. Because a wage that can't cover a roof isn't really a wage. It's a trap.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "the min-wage-vs-rent gap"
+        },
+        {
+          "name": "clock",
+          "label": "the hours it takes"
+        },
+        {
+          "name": "warning",
+          "label": "wage vs living wage"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "working full-time, can't afford a 1-bed anywhere",
+      "memeBottom": "this is fine",
+      "narration": "Because for millions of full-time workers, this is the quiet math of every month: a legal, full-time job that still doesn't cover a basic apartment. Before we rank the states, let's define the rule that sets the bar."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, the rule that decides what 'affordable' even means.",
+      "heading": "The Housing Wage",
+      "kicker": "30% of income"
+    },
+    {
+      "id": "s6",
+      "type": "stage",
+      "motif": "thirtypercentrule",
+      "caption": "rent should take no more than ~30% of pay",
+      "narration": "The standard says housing should cost no more than about thirty percent of your income. Flip that around for rent, and you get what advocates call the housing wage: the hourly pay a full-time worker needs so that a modest local apartment lands at thirty percent of their earnings. Every state has one — and almost everywhere, it towers over the minimum wage."
+    },
+    {
+      "id": "s41",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The thirty-percent line isn't arbitrary — it's the edge of a sustainable budget. Below it, a worker can cover food, transport, and maybe save a little. Above it, every emergency becomes a crisis. The housing wage simply asks: what would someone have to earn for rent to sit at that safe line? For most of America, the answer is a wage the minimum doesn't come close to.",
+      "props": [
+        {
+          "name": "percent",
+          "label": "30% = the safe line"
+        },
+        {
+          "name": "scale",
+          "label": "what rent demands at 30%"
+        },
+        {
+          "name": "warning",
+          "label": "min wage falls short"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-minwage",
+      "narration": "Start with what a minimum wage actually is: the lowest remuneration that employers can legally pay their employees. It's a floor, meant to guarantee that full-time work provides a basic standard of living. The question this whole episode asks is simple — in modern America, does that floor still clear the single biggest cost of living, rent?"
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice who actually earns the minimum. It's not just teenagers with summer jobs — that myth is long dead. A huge share of minimum and near-minimum workers are adults, many supporting families, in care work, retail, and food service. These are the people stocking shelves and minding kids, and the floor they stand on no longer reaches the rent.",
+      "props": [
+        {
+          "name": "crowd",
+          "label": "not just teenagers"
+        },
+        {
+          "name": "warning",
+          "label": "adults supporting families"
+        },
+        {
+          "name": "apartment",
+          "label": "the floor misses the rent"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "type": "screenshot",
+      "sourceId": "wiki-usminwage",
+      "narration": "And here's the structural problem. The minimum wage is set by federal U.S. labor law and a range of state and local laws. The federal floor is just seven dollars and twenty-five cents — and it hasn't moved since two thousand nine. Rents, of course, did not get the memo. They've climbed relentlessly for over fifteen years while the floor stood frozen."
+    },
+    {
+      "id": "s42",
+      "type": "callout",
+      "narration": "Sit with the timeline. The federal minimum wage last rose in July two thousand nine. Since then, the US has had multiple presidents, a pandemic, and rents that roughly doubled — but the floor for the lowest-paid workers hasn't budged by a single cent in over fifteen years.",
+      "text": "since 2009",
+      "sub": "the federal minimum wage hasn't risen in 15+ years",
+      "icon": "calendar"
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank the housing wage against the minimum in every state.",
+      "heading": "The Ranking",
+      "kicker": "the wage rent demands"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "One thing to hold in mind as we rank: a higher minimum wage doesn't automatically mean more affordable. California pays far more than Mississippi, but its rents are higher too. The real measure isn't the wage alone or the rent alone — it's the gap between them. That gap is what we're ranking, and it's brutal almost everywhere.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "it's the gap that matters"
+        },
+        {
+          "name": "chartup",
+          "label": "high wage, high rent"
+        },
+        {
+          "name": "warning",
+          "label": "brutal almost everywhere"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "housingwagebars",
+      "caption": "hourly wage needed to afford a 1-bed, by state",
+      "narration": "Here's the housing wage by state — the hourly pay you need to afford a modest one-bedroom. In the cheapest states, Ohio or Arkansas, it's around eighteen or nineteen dollars. In Texas and Florida, the mid-twenties. And in New York, California, and Hawaii, it rockets past forty dollars an hour. Compare any of those to a minimum wage stuck between seven and sixteen dollars, and the gap is undeniable."
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Wage needed to afford a 1-bed ($/hr)",
+      "unit": "$",
+      "narration": "Put the housing wage in a row. Ohio around nineteen dollars an hour, Texas twenty-two, Florida twenty-eight, New York thirty-nine, California forty-two, and Hawaii near forty-five. Now remember: the federal minimum is seven twenty-five. Even the most generous state minimums, around sixteen dollars, fall far short of what rent actually requires almost everywhere.",
+      "data": [
+        {
+          "label": "Ohio",
+          "value": 19
+        },
+        {
+          "label": "Texas",
+          "value": 22
+        },
+        {
+          "label": "Florida",
+          "value": 28
+        },
+        {
+          "label": "New York",
+          "value": 39
+        },
+        {
+          "label": "California",
+          "value": 42
+        },
+        {
+          "label": "Hawaii",
+          "value": 45
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And remember the housing wage assumes a modest, average rental — not a nice one. It's based on a plain one-bedroom at the typical market rent. So these already-painful numbers describe the floor of the rental market, not anything comfortable. For anything above bare-bones, the required wage climbs even higher above the minimum.",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "a plain, average 1-bed"
+        },
+        {
+          "name": "warning",
+          "label": "not comfortable"
+        },
+        {
+          "name": "chartup",
+          "label": "nicer = even higher"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is for a one-bedroom. The two-bedroom housing wage — what a parent with a kid actually needs — is higher still, often well over thirty dollars an hour even in cheaper states. There is genuinely no state in America where the minimum wage covers a modest two-bedroom at the thirty-percent rule. Not a single one.",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "this is just a 1-bed"
+        },
+        {
+          "name": "couple",
+          "label": "2-bed is far worse"
+        },
+        {
+          "name": "warning",
+          "label": "zero states cover it"
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "type": "callout",
+      "narration": "Say the headline finding plainly. According to national housing research, there is no state, metro area, or county in the entire United States where a full-time worker earning the local minimum wage can afford a modest two-bedroom rental at thirty percent of income. Zero. The map has no safe squares.",
+      "text": "0 counties",
+      "sub": "where min wage affords a modest 2-bed",
+      "icon": "mappin"
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So how many hours does that gap actually cost you?",
+      "heading": "The Hours",
+      "kicker": "a week that doesn't fit"
+    },
+    {
+      "id": "s54",
+      "type": "callout",
+      "narration": "Here's the gap as a single ratio. In the lowest-wage states, the rent for a modest one-bedroom can eat sixty to eighty percent of a full-time minimum-wage paycheck by itself — before food, transport, or anything else. The thirty-percent guideline isn't just missed. It's doubled or tripled.",
+      "text": "60-80%",
+      "sub": "of a full-time min-wage check eaten by one bedroom",
+      "icon": "apartment"
+    },
+    {
+      "id": "s14",
+      "type": "stage",
+      "motif": "hoursneededclock",
+      "caption": "hours a week at minimum wage to afford rent",
+      "narration": "Here's the gap as time instead of money. A standard full-time week is forty hours. But to afford that modest one-bedroom on a minimum wage, workers in most states would need to clock sixty, eighty, even over a hundred hours every week. There are only a hundred and sixty-eight hours in a week. In some states, affording rent on the minimum is mathematically impossible, no matter how hard you work."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Translating money into hours makes it visceral. Rent isn't just a number you can't reach — it's time you don't have. When affording a one-bedroom requires a hundred hours a week, there simply aren't enough hours left to sleep, let alone live. The gap stops being financial and becomes physical, a wall of hours no human can climb.",
+      "props": [
+        {
+          "name": "clock",
+          "label": "rent = time you lack"
+        },
+        {
+          "name": "warning",
+          "label": "100 hrs leaves none to sleep"
+        },
+        {
+          "name": "apartment",
+          "label": "a wall of hours"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Hours/week at min wage to afford a 1-bed",
+      "unit": "hrs",
+      "narration": "Count the hours. In California, with its higher minimum, you'd still need around seventy hours a week. In Florida, over ninety. In Texas, past a hundred. And in states sitting on the frozen federal floor, like Mississippi, it's over a hundred and ten hours a week — nearly three full-time jobs — just to pay rent. Forty hours was never going to be enough.",
+      "data": [
+        {
+          "label": "California",
+          "value": 70
+        },
+        {
+          "label": "Florida",
+          "value": 92
+        },
+        {
+          "label": "Texas",
+          "value": 104
+        },
+        {
+          "label": "Mississippi",
+          "value": 112
+        }
+      ],
+      "highlight": 3
+    },
+    {
+      "id": "s55",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And overtime can't save you, because there's a ceiling. Past forty hours there are only so many you can physically work, and many low-wage jobs cap hours to avoid paying benefits. So the hundred-hour figure isn't a plan — it's proof the math breaks. You cannot simply out-hustle a gap this wide; the hours to close it don't exist.",
+      "props": [
+        {
+          "name": "clock",
+          "label": "only so many hours exist"
+        },
+        {
+          "name": "warning",
+          "label": "hours capped to dodge benefits"
+        },
+        {
+          "name": "chartdown",
+          "label": "can't out-hustle it"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is why so many minimum-wage workers aren't housed by one job — they're housed by two, or by cramming four roommates into a two-bedroom, or by simply paying far more than thirty percent and going without everything else. The gap doesn't vanish. It just gets absorbed, invisibly, as exhaustion, overcrowding, and quiet financial desperation.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "two or three jobs"
+        },
+        {
+          "name": "crowd",
+          "label": "packed roommates"
+        },
+        {
+          "name": "chartdown",
+          "label": "paying way over 30%"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "work a second full-time job",
+      "memeBottom": "cram four people into a two-bedroom",
+      "narration": "This is the real, sweaty choice at the bottom of the wage scale — and it isn't between good options. When one full-time job can't cover one bedroom, every path left is some mix of exhaustion and overcrowding. The gap doesn't disappear; someone just absorbs it with their body and their time."
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "So how did the floor fall so far behind the rent?",
+      "heading": "The Frozen Floor",
+      "kicker": "2009 to now"
+    },
+    {
+      "id": "s56",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "just get a minimum-wage job and work hard",
+      "memeBottom": "the minimum wage hasn't covered rent in over a decade",
+      "narration": "This is the update a lot of advice never got. The old script — any full-time job keeps a roof over your head — quietly stopped being true for the bottom of the wage scale years ago. Working hard still matters; it just no longer guarantees the rent the way it once did."
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "minwagefrozen",
+      "caption": "the minimum froze while rent soared",
+      "narration": "Here's the core of it. The federal minimum wage has been frozen at seven twenty-five since two thousand nine — the longest stretch without a raise in its history. Over that same time, average rents roughly doubled. One line sat perfectly flat for over fifteen years while the other climbed relentlessly. The gap between them is this entire crisis, drawn as two lines."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the freeze is a choice, not an accident. Raising the federal minimum requires an act of Congress, and for over fifteen years that hasn't happened, even as prices climbed. Inflation quietly cuts the real floor every year it stays frozen. Doing nothing isn't neutral — it's a steady, silent pay cut for the lowest-paid workers in the country.",
+      "props": [
+        {
+          "name": "capitol",
+          "label": "raising it needs Congress"
+        },
+        {
+          "name": "chartdown",
+          "label": "inflation cuts it yearly"
+        },
+        {
+          "name": "warning",
+          "label": "doing nothing = a pay cut"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And inflation made it worse than flat. Seven twenty-five in two thousand nine had real buying power; today, after years of rising prices, that same seven twenty-five buys far less. So the minimum wage didn't just stand still — in real terms, it fell. Workers on the floor are earning meaningfully less than minimum-wage workers did a decade and a half ago.",
+      "props": [
+        {
+          "name": "chartdown",
+          "label": "frozen = falling in real terms"
+        },
+        {
+          "name": "banknote",
+          "label": "$7.25 buys far less now"
+        },
+        {
+          "name": "warning",
+          "label": "worse off than 2009"
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "type": "callout",
+      "narration": "Quantify the freeze in real terms. Adjusted for inflation, the federal minimum wage is worth less today than it was in nineteen sixty-eight, more than fifty years ago. A full-time worker on the floor in the nineteen-sixties could out-buy one standing on it now. The floor didn't just stall — it slid backward across generations.",
+      "text": "below 1968",
+      "sub": "the real value of today's federal minimum wage",
+      "icon": "chartdown"
+    },
+    {
+      "id": "s20",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is why states and cities took matters into their own hands. Many now set their own minimums far above the federal floor — fifteen, sixteen, even seventeen dollars in the priciest places. That's why the gap varies so much by state. But as our ranking showed, even those higher local minimums still can't close the distance to what rent now demands.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "states raised their own"
+        },
+        {
+          "name": "chartup",
+          "label": "$15-17 in pricey states"
+        },
+        {
+          "name": "warning",
+          "label": "still short of the rent"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "But higher state minimums aren't a free lunch either — critics warn they can nudge up prices or automation in the very places they apply. The honest picture is messy: raising the floor clearly helps those who keep their hours, while the debate rages over the edges. What's not debatable is the raw gap we've measured between the floor and the rent.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "raises have trade-offs"
+        },
+        {
+          "name": "warning",
+          "label": "prices, automation debated"
+        },
+        {
+          "name": "chartup",
+          "label": "the gap itself is real"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "type": "title",
+      "narration": "Which exposes the gap between two very different ideas of a wage.",
+      "heading": "Wage vs Living Wage",
+      "kicker": "legal vs livable"
+    },
+    {
+      "id": "s58",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the shortfall quietly lands on taxpayers. When full-time wages don't cover basics, workers lean on food assistance, housing vouchers, and Medicaid to survive. In effect, the public subsidizes employers who pay below a living wage. A low minimum doesn't remove the cost of living — it just shifts part of the bill from the company to the government.",
+      "props": [
+        {
+          "name": "receipt",
+          "label": "food aid, vouchers, Medicaid"
+        },
+        {
+          "name": "warning",
+          "label": "public subsidizes low pay"
+        },
+        {
+          "name": "scale",
+          "label": "the bill just moves"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "type": "screenshot",
+      "sourceId": "wiki-livingwage",
+      "narration": "There's a crucial distinction here. A living wage is the minimum income required for a worker to meet their basic needs — food, housing, and the essentials. The minimum wage is merely the legal floor. In modern America, those two numbers have drifted miles apart: the legal minimum is now far below what it actually costs to live."
+    },
+    {
+      "id": "s49",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the living wage varies wildly by place, just like rent. A living wage in rural Mississippi might be eighteen dollars an hour; in San Francisco, closer to thirty or thirty-five for a single adult, and far more with a child. There's no single national number for a decent life — which is exactly why a single national minimum wage fits almost nowhere.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "living wage varies by place"
+        },
+        {
+          "name": "scale",
+          "label": "$18 rural, $35+ in cities"
+        },
+        {
+          "name": "warning",
+          "label": "one national floor fits nowhere"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "screenshot",
+      "sourceId": "wiki-workingpoor",
+      "narration": "The result is a group economists call the working poor — working people whose incomes fall below a given poverty line despite holding down jobs. These aren't the unemployed. They're full-time workers, doing everything right by the old rules, who still can't afford a roof. When a full-time wage can't cover rent, poverty stops being about not working."
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the working poor face a cruel catch: they often earn just too much to qualify for aid, yet nowhere near enough to afford rent. A raise can cost them benefits worth more than the raise itself — a trap called the benefits cliff. So even climbing off the exact floor doesn't guarantee escape from the squeeze.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "too rich for aid, too poor for rent"
+        },
+        {
+          "name": "chartdown",
+          "label": "the benefits cliff"
+        },
+        {
+          "name": "scale",
+          "label": "a raise can cost you"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "present",
+      "narration": "So what do you actually do if you're caught in this gap? Chase the states and cities with both higher minimums and saner rents — that combination, not either alone, is what creates breathing room. Stack skills or certifications that lift you off the floor fast. And treat roommates and location not as failure, but as the math that buys you time to climb.",
+      "props": [
+        {
+          "name": "mappin",
+          "label": "higher wage + saner rent"
+        },
+        {
+          "name": "gradcap",
+          "label": "skills to leave the floor"
+        },
+        {
+          "name": "couple",
+          "label": "roommates buy time"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if you employ people or vote on this, understand what the number represents. A minimum wage that can't house a full-time worker pushes the shortfall onto someone — onto the worker's health, onto roommates, or onto public assistance that taxpayers fund anyway. The cost of a too-low floor doesn't disappear. It just moves to a different, often hidden, bill.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "the shortfall goes somewhere"
+        },
+        {
+          "name": "receipt",
+          "label": "onto workers or taxpayers"
+        },
+        {
+          "name": "scale",
+          "label": "a too-low floor has a cost"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. We're taught that a full-time job guarantees a basic life. For the bottom of the wage scale, that promise quietly broke — not because people stopped working, but because the floor froze while the roof kept rising. A wage is only meaningful next to the price of living. And right now, for millions, the two no longer meet.",
+      "props": [
+        {
+          "name": "paystub",
+          "label": "full-time ≠ a basic life"
+        },
+        {
+          "name": "apartment",
+          "label": "floor froze, roof rose"
+        },
+        {
+          "name": "scale",
+          "label": "wage vs the price of living"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "present",
+      "narration": "And zoom out on the fix, whichever side you're on. The gap only closes two ways: wages rise, or rent falls. Rent falls mainly when enough homes get built, which ties this episode straight back to the housing shortage. A higher floor helps today; more housing helps forever. Both target the same gap from opposite ends.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "wages up"
+        },
+        {
+          "name": "apartment",
+          "label": "or rent down = build homes"
+        },
+        {
+          "name": "scale",
+          "label": "close the gap from both ends"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this reframed the minimum wage for you, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "apartment",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-minwage",
+      "name": "Minimum wage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minimum_wage",
+      "quote": "the lowest remuneration that employers can legally pay their employees"
+    },
+    {
+      "id": "wiki-usminwage",
+      "name": "Minimum wage in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minimum_wage_in_the_United_States",
+      "quote": "set by federal U.S. labor law and a range of state and local laws"
+    },
+    {
+      "id": "wiki-livingwage",
+      "name": "Living wage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Living_wage",
+      "quote": "the minimum income required for a worker to meet their basic needs"
+    },
+    {
+      "id": "wiki-workingpoor",
+      "name": "Working poor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Working_poor",
+      "quote": "working people whose incomes fall below a given poverty line"
+    },
+    {
+      "id": "wiki-hai",
+      "name": "Housing affordability index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "the median person or family in a particular country or region can afford"
+    }
+  ],
+  "youtube": {
+    "title": "Minimum Wage vs Rent in Every US State",
+    "alts": [
+      "There's No State Where Minimum Wage Covers Rent",
+      "How Many Hours Minimum Wage Must Work to Afford Rent (Every State)"
+    ],
+    "hook": "There is not a single US state where a full-time minimum-wage worker can comfortably afford a modest one-bedroom apartment — and there's no county in the entire country where the minimum covers a 2-bedroom at the recommended 30% of income. This is minimum wage vs rent in every US state, ranked. We use the 'housing wage' (the hourly pay needed so rent lands at 30% of income): ~$19/hr in Ohio up to ~$45 in Hawaii — against a federal minimum frozen at $7.25 since 2009 (and state minimums up to ~$16). Translated into time, affording a 1-bed takes 70, 90, even 112+ hours a week in many states. We show how the federal floor froze while rents roughly doubled (so in real terms the minimum actually fell), why states raised their own minimums (and still fall short), and the gap between the legal minimum wage and a true living wage that's created a generation of 'working poor'. Plus what to do if you're stuck in the gap. Fully cited.",
+    "bullets": [
+      "No state: min wage can't afford a modest 1-bed at 30%",
+      "The 'housing wage' ranked: ~$19 (OH) to ~$45/hr (HI)",
+      "In hours: 70–112+ per week at minimum wage to make rent",
+      "The federal floor frozen at $7.25 since 2009 vs doubled rent",
+      "Minimum wage vs living wage, and the 'working poor'",
+      "What to do if you're caught in the gap"
+    ],
+    "tags": [
+      "minimum wage",
+      "rent vs minimum wage",
+      "housing wage",
+      "minimum wage by state",
+      "cost of rent",
+      "living wage",
+      "working poor",
+      "affordable housing",
+      "7.25 minimum wage",
+      "cost of living",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#minimumwage",
+      "#rent",
+      "#costofliving",
+      "#personalfinance"
+    ],
+    "thumbnail": {
+      "hookTop": "MINIMUM WAGE vs",
+      "hookBot": "THE RENT",
+      "napkinNumber": "$7.25 vs $25",
+      "napkinSub": "min wage vs the wage rent needs",
+      "deco": "apartment"
+    },
+    "chapters": [
+      [
+        "the rule that decides what 'affordable' even means",
+        "The housing wage"
+      ],
+      [
+        "rank the housing wage against the minimum",
+        "The ranking"
+      ],
+      [
+        "how many hours does that gap actually cost",
+        "The hours"
+      ],
+      [
+        "how did the floor fall so far behind",
+        "The frozen floor"
+      ],
+      [
+        "two very different ideas of a wage",
+        "Wage vs living wage"
+      ],
+      [
+        "the real lesson",
+        "The broken promise"
+      ]
+    ]
+  }
+}

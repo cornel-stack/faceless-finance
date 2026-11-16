@@ -3,608 +3,575 @@
     "id": "s1",
     "type": "character",
     "pose": "explain",
-    "narration": "Americans panicked when inflation hit nine percent in twenty twenty-two. In Zimbabwe, at the peak, prices doubled roughly every twenty-four hours — a loaf of bread could cost twice as much by dinner as it did at breakfast. Today we rank the countries with the highest inflation on Earth, show what it does to ordinary money, and explain exactly why a currency turns to confetti.",
+    "narration": "There is not a single US state where a full-time minimum-wage worker can comfortably afford a modest one-bedroom apartment. Not one. In most states they'd have to work eighty, a hundred, even a hundred and twenty hours a week just to cover the rent under the standard affordability rule. Today we rank minimum wage against rent in every state, and expose the gap that's quietly swallowing the bottom of the workforce.",
     "props": [
       {
-        "name": "chartup",
-        "label": "US panicked at 9%"
+        "name": "paystub",
+        "label": "min wage"
       },
       {
-        "name": "banknote",
-        "label": "Zimbabwe: 2× a day"
+        "name": "apartment",
+        "label": "vs a 1-bed"
       },
       {
         "name": "scale",
-        "label": "top countries ranked"
+        "label": "every state ranked"
       }
     ]
   },
   {
     "id": "s2",
     "type": "callout",
-    "narration": "Here's the number that breaks your sense of money. In the worst-hit countries today, annual inflation runs not in the single digits, but in the hundreds of percent — prices several times higher at the end of the year than the start. And in the history books, it gets almost unimaginably worse. This is what happens when money stops being trusted.",
-    "text": "500%+",
-    "sub": "yearly inflation in the worst countries today",
-    "icon": "chartup"
+    "narration": "Here's the number that ends the debate. To afford a modest one-bedroom at the recommended thirty percent of income, the average American needs to earn well over twenty dollars an hour. The federal minimum wage is seven dollars and twenty-five cents. That gap — between what rent demands and what the floor pays — is the whole story.",
+    "text": "$7.25 vs $25",
+    "sub": "federal minimum wage vs the wage rent demands",
+    "icon": "apartment"
   },
   {
     "id": "s3",
     "type": "character",
     "pose": "present",
-    "narration": "So today we rank the top countries by inflation, explain the one mechanism behind nearly every case, follow a paycheck as it dissolves in real time, and ask the question that should keep every government honest: could it ever happen to a rich, stable country like the US? Let's go.",
+    "narration": "So today we rank the states by the gap between minimum wage and rent, translate it into the brutal number of hours you'd have to work, show how the federal floor froze while rent sprinted away, and separate the minimum wage from the living wage. Because a wage that can't cover a roof isn't really a wage. It's a trap.",
     "props": [
       {
         "name": "scale",
-        "label": "rank the countries"
+        "label": "the min-wage-vs-rent gap"
       },
       {
-        "name": "printer",
-        "label": "the one mechanism"
+        "name": "clock",
+        "label": "the hours it takes"
       },
       {
         "name": "warning",
-        "label": "could it happen here?"
+        "label": "wage vs living wage"
       }
     ]
   },
   {
     "id": "s4",
     "type": "image",
-    "src": "img/memes/expanding.jpg",
-    "meme": "Expanding Brain",
-    "memeTop": "inflation means prices go up a bit",
-    "memeBottom": "inflation means your life savings vanish in a year",
-    "narration": "Because in the worst cases, inflation isn't an annoyance at the store — it's the total destruction of everything people saved. Before we rank them, let's define the monster we're dealing with."
+    "src": "img/memes/fine.jpg",
+    "meme": "This Is Fine",
+    "memeTop": "working full-time, can't afford a 1-bed anywhere",
+    "memeBottom": "this is fine",
+    "narration": "Because for millions of full-time workers, this is the quiet math of every month: a legal, full-time job that still doesn't cover a basic apartment. Before we rank the states, let's define the rule that sets the bar."
   },
   {
     "id": "s5",
     "type": "title",
-    "narration": "First, what turns normal inflation into a catastrophe.",
-    "heading": "From Inflation to Hyper",
-    "kicker": "when money breaks"
+    "narration": "First, the rule that decides what 'affordable' even means.",
+    "heading": "The Housing Wage",
+    "kicker": "30% of income"
   },
   {
     "id": "s6",
-    "type": "screenshot",
-    "sourceId": "wiki-inflation",
-    "narration": "Normal inflation is defined simply as an increase in the average price of goods and services in terms of money. But that definition hides the cause. Prices rising everywhere, all at once, is almost always a symptom of one deeper disease — too much money chasing the same goods. Remember that; it's the key to everything that follows."
+    "type": "stage",
+    "motif": "thirtypercentrule",
+    "caption": "rent should take no more than ~30% of pay",
+    "narration": "The standard says housing should cost no more than about thirty percent of your income. Flip that around for rent, and you get what advocates call the housing wage: the hourly pay a full-time worker needs so that a modest local apartment lands at thirty percent of their earnings. Every state has one — and almost everywhere, it towers over the minimum wage."
   },
   {
-    "id": "s51",
+    "id": "s41",
     "type": "character",
     "pose": "explain",
-    "narration": "And here's the uncomfortable truth hiding in that definition: inflation is, at root, always a choice. Prices don't rise on their own — they rise because someone created more money. Mild inflation is a gentle version of the same lever that, pulled too hard, destroys a currency entirely. It's a dial, and governments decide how far to turn it.",
+    "narration": "The thirty-percent line isn't arbitrary — it's the edge of a sustainable budget. Below it, a worker can cover food, transport, and maybe save a little. Above it, every emergency becomes a crisis. The housing wage simply asks: what would someone have to earn for rent to sit at that safe line? For most of America, the answer is a wage the minimum doesn't come close to.",
     "props": [
       {
-        "name": "printer",
-        "label": "inflation is a choice"
+        "name": "percent",
+        "label": "30% = the safe line"
       },
       {
-        "name": "banknote",
-        "label": "someone made more money"
+        "name": "scale",
+        "label": "what rent demands at 30%"
       },
       {
         "name": "warning",
-        "label": "a dial, turned too far"
+        "label": "min wage falls short"
       }
     ]
   },
   {
     "id": "s7",
     "type": "screenshot",
-    "sourceId": "wiki-hyperinflation",
-    "narration": "When it spirals out of control, it becomes hyperinflation, which quickly erodes the real value of the local currency. Economists often mark the line at fifty percent a month. Past that, money decays so fast that holding it for even a few days is a loss. People stop saving, stop trusting, and start spending the instant they're paid."
+    "sourceId": "wiki-minwage",
+    "narration": "Start with what a minimum wage actually is: the lowest remuneration that employers can legally pay their employees. It's a floor, meant to guarantee that full-time work provides a basic standard of living. The question this whole episode asks is simple — in modern America, does that floor still clear the single biggest cost of living, rent?"
   },
   {
-    "id": "s41",
-    "type": "callout",
-    "narration": "To grasp how far it can go, look at the record. At its twenty-oh-eight peak, Zimbabwe's monthly inflation reached an estimated seventy-nine billion percent. Prices doubled roughly every day. The government eventually printed a one-hundred-trillion-dollar note — worth, at the time, only a few US dollars.",
-    "text": "79,000,000,000%",
-    "sub": "Zimbabwe's peak monthly inflation, 2008",
-    "icon": "banknote"
+    "id": "s51",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And notice who actually earns the minimum. It's not just teenagers with summer jobs — that myth is long dead. A huge share of minimum and near-minimum workers are adults, many supporting families, in care work, retail, and food service. These are the people stocking shelves and minding kids, and the floor they stand on no longer reaches the rent.",
+    "props": [
+      {
+        "name": "crowd",
+        "label": "not just teenagers"
+      },
+      {
+        "name": "warning",
+        "label": "adults supporting families"
+      },
+      {
+        "name": "apartment",
+        "label": "the floor misses the rent"
+      }
+    ]
   },
   {
     "id": "s8",
-    "type": "character",
-    "pose": "explain",
-    "narration": "So there's a spectrum. Two or three percent a year is healthy. Ten percent is painful. A hundred percent a year means prices double annually. And true hyperinflation — fifty percent a month or more — means your money can lose half its value while you sleep. The countries we're about to rank live at the terrifying end of that scale.",
-    "props": [
-      {
-        "name": "thermometer",
-        "label": "2-3% healthy"
-      },
-      {
-        "name": "warning",
-        "label": "100% = prices double"
-      },
-      {
-        "name": "banknote",
-        "label": "50%/month = collapse"
-      }
-    ]
+    "type": "screenshot",
+    "sourceId": "wiki-usminwage",
+    "narration": "And here's the structural problem. The minimum wage is set by federal U.S. labor law and a range of state and local laws. The federal floor is just seven dollars and twenty-five cents — and it hasn't moved since two thousand nine. Rents, of course, did not get the memo. They've climbed relentlessly for over fifteen years while the floor stood frozen."
   },
   {
     "id": "s42",
-    "type": "character",
-    "pose": "explain",
-    "narration": "History is littered with these collapses. Weimar Germany in the nineteen-twenties, where people burned banknotes for heat because they were cheaper than firewood. Hungary after World War Two, the worst ever recorded. Yugoslavia, Venezuela, Zimbabwe. Different eras, different flags, but the exact same story each time — and the same single cause underneath.",
-    "props": [
-      {
-        "name": "banknote",
-        "label": "Weimar burned cash for heat"
-      },
-      {
-        "name": "globe",
-        "label": "Hungary, Yugoslavia, Venezuela"
-      },
-      {
-        "name": "warning",
-        "label": "same story every time"
-      }
-    ]
+    "type": "callout",
+    "narration": "Sit with the timeline. The federal minimum wage last rose in July two thousand nine. Since then, the US has had multiple presidents, a pandemic, and rents that roughly doubled — but the floor for the lowest-paid workers hasn't budged by a single cent in over fifteen years.",
+    "text": "since 2009",
+    "sub": "the federal minimum wage hasn't risen in 15+ years",
+    "icon": "calendar"
   },
   {
     "id": "s9",
     "type": "title",
-    "narration": "So let's rank the highest-inflation countries today.",
+    "narration": "So let's rank the housing wage against the minimum in every state.",
     "heading": "The Ranking",
-    "kicker": "the hyperinflation club"
+    "kicker": "the wage rent demands"
   },
   {
     "id": "s52",
     "type": "character",
     "pose": "explain",
-    "narration": "And a quick note on these numbers: they're slippery. Official rates are often massaged by the very governments causing the problem, so the real figure on the street is usually worse than the published one. When a government is printing to survive, it has every incentive to lie about how fast prices are actually rising.",
+    "narration": "One thing to hold in mind as we rank: a higher minimum wage doesn't automatically mean more affordable. California pays far more than Mississippi, but its rents are higher too. The real measure isn't the wage alone or the rent alone — it's the gap between them. That gap is what we're ranking, and it's brutal almost everywhere.",
     "props": [
       {
-        "name": "warning",
-        "label": "official numbers are massaged"
+        "name": "scale",
+        "label": "it's the gap that matters"
       },
       {
         "name": "chartup",
-        "label": "street rate is worse"
+        "label": "high wage, high rent"
       },
       {
-        "name": "scale",
-        "label": "they lie about it"
+        "name": "warning",
+        "label": "brutal almost everywhere"
       }
     ]
   },
   {
     "id": "s10",
     "type": "stage",
-    "motif": "inflationcountrybars",
-    "caption": "recent annual inflation, by country",
-    "narration": "Here's the grim leaderboard of recent years. Zimbabwe, again, near the top with rates in the hundreds of percent. Lebanon, Argentina, and Venezuela, each with annual inflation well over a hundred, sometimes two hundred percent. Sudan and Turkey round out the club. In every one of these places, the same salary buys dramatically less every single month."
+    "motif": "housingwagebars",
+    "caption": "hourly wage needed to afford a 1-bed, by state",
+    "narration": "Here's the housing wage by state — the hourly pay you need to afford a modest one-bedroom. In the cheapest states, Ohio or Arkansas, it's around eighteen or nineteen dollars. In Texas and Florida, the mid-twenties. And in New York, California, and Hawaii, it rockets past forty dollars an hour. Compare any of those to a minimum wage stuck between seven and sixteen dollars, and the gap is undeniable."
   },
   {
     "id": "s11",
     "type": "chart",
     "chartType": "bar",
-    "title": "Recent annual inflation (%)",
-    "unit": "%",
-    "narration": "Put rough recent figures side by side. Turkey around sixty-five percent, Sudan near one hundred forty-five, Venezuela about one hundred ninety, Argentina over two hundred, Lebanon similar, and Zimbabwe spiking past five hundred. These aren't typos. In Zimbabwe, prices more than quintupled in a single year — and that's the calm version of its history.",
+    "title": "Wage needed to afford a 1-bed ($/hr)",
+    "unit": "$",
+    "narration": "Put the housing wage in a row. Ohio around nineteen dollars an hour, Texas twenty-two, Florida twenty-eight, New York thirty-nine, California forty-two, and Hawaii near forty-five. Now remember: the federal minimum is seven twenty-five. Even the most generous state minimums, around sixteen dollars, fall far short of what rent actually requires almost everywhere.",
     "data": [
       {
-        "label": "Turkey",
-        "value": 65
+        "label": "Ohio",
+        "value": 19
       },
       {
-        "label": "Sudan",
-        "value": 145
+        "label": "Texas",
+        "value": 22
       },
       {
-        "label": "Venezuela",
-        "value": 190
+        "label": "Florida",
+        "value": 28
       },
       {
-        "label": "Argentina",
-        "value": 210
+        "label": "New York",
+        "value": 39
       },
       {
-        "label": "Lebanon",
-        "value": 220
+        "label": "California",
+        "value": 42
       },
       {
-        "label": "Zimbabwe",
-        "value": 560
+        "label": "Hawaii",
+        "value": 45
       }
     ],
     "highlight": 5
   },
   {
-    "id": "s43",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And notice these rankings shuffle constantly, because hyperinflation moves fast. A country can be stable one year and spiraling the next; Argentina has done this repeatedly for decades. The specific names on the leaderboard change, but the club always has members. Somewhere on Earth, a currency is always dying.",
-    "props": [
-      {
-        "name": "chartup",
-        "label": "rankings shuffle fast"
-      },
-      {
-        "name": "warning",
-        "label": "stable to spiral in a year"
-      },
-      {
-        "name": "globe",
-        "label": "the club always has members"
-      }
-    ]
-  },
-  {
     "id": "s53",
     "type": "character",
     "pose": "explain",
-    "narration": "And behind every percentage is a human scene. In Venezuela, people weighed stacks of banknotes instead of counting them, because counting took too long. In Lebanon, savers watched bank balances freeze and evaporate. These rates aren't abstract — they're queues, empty shelves, and a lifetime of work turning to paper overnight.",
+    "narration": "And remember the housing wage assumes a modest, average rental — not a nice one. It's based on a plain one-bedroom at the typical market rent. So these already-painful numbers describe the floor of the rental market, not anything comfortable. For anything above bare-bones, the required wage climbs even higher above the minimum.",
     "props": [
       {
-        "name": "banknote",
-        "label": "weighing cash, not counting"
+        "name": "apartment",
+        "label": "a plain, average 1-bed"
       },
       {
         "name": "warning",
-        "label": "frozen bank accounts"
+        "label": "not comfortable"
       },
       {
-        "name": "crowd",
-        "label": "queues and empty shelves"
+        "name": "chartup",
+        "label": "nicer = even higher"
       }
     ]
   },
   {
     "id": "s12",
-    "type": "chart",
-    "chartType": "bar",
-    "title": "US inflation vs the hyperinflation club (%)",
-    "unit": "%",
-    "narration": "Now the humbling comparison. The US inflation that caused years of headlines and political fury peaked around nine percent, and sits near three today. Put that next to Turkey's sixty-five, Argentina's two hundred, or Zimbabwe's five hundred, and the American bar almost disappears. We agonize over a sliver that other nations would consider a miracle.",
-    "data": [
-      {
-        "label": "US",
-        "value": 3
-      },
-      {
-        "label": "Turkey",
-        "value": 65
-      },
-      {
-        "label": "Argentina",
-        "value": 210
-      },
-      {
-        "label": "Zimbabwe",
-        "value": 560
-      }
-    ],
-    "highlight": 0
-  },
-  {
-    "id": "s44",
-    "type": "image",
-    "src": "img/memes/twobuttons.jpg",
-    "meme": "Two Buttons",
-    "memeTop": "complain about 3% US inflation",
-    "memeBottom": "imagine 300% like Argentina",
-    "narration": "This isn't to dismiss real pain — American inflation genuinely squeezed millions. But a little perspective reframes the whole conversation. The inflation that dominated US politics for years is a rounding error to a family in Buenos Aires or Beirut living it at a hundred times the rate."
-  },
-  {
-    "id": "s13",
-    "type": "title",
-    "narration": "So why does this happen? The cause is almost always the same.",
-    "heading": "The One Cause",
-    "kicker": "printing money"
-  },
-  {
-    "id": "s14",
-    "type": "screenshot",
-    "sourceId": "wiki-moneysupply",
-    "narration": "It starts with the money supply — the total volume of money held by the public at a particular point in time. A government that can't raise enough through taxes or borrowing has one tempting escape: print more. The central bank creates new currency to pay the government's bills. And that is where the spiral begins."
-  },
-  {
-    "id": "s54",
     "type": "character",
     "pose": "explain",
-    "narration": "And it's almost never a central bank acting alone — it's a government out of options. A war, a collapse in oil or export revenue, crushing debt, or political chaos blows a hole in the budget. Taxes can't fill it and no one will lend. Printing is the path of least resistance, chosen by desperate leaders who tell themselves it's temporary.",
+    "narration": "And this is for a one-bedroom. The two-bedroom housing wage — what a parent with a kid actually needs — is higher still, often well over thirty dollars an hour even in cheaper states. There is genuinely no state in America where the minimum wage covers a modest two-bedroom at the thirty-percent rule. Not a single one.",
     "props": [
       {
-        "name": "bomb",
-        "label": "war, lost revenue, debt"
+        "name": "apartment",
+        "label": "this is just a 1-bed"
       },
       {
-        "name": "printer",
-        "label": "printing = path of least resistance"
+        "name": "couple",
+        "label": "2-bed is far worse"
       },
       {
         "name": "warning",
-        "label": "'just temporary'"
+        "label": "zero states cover it"
       }
     ]
   },
   {
-    "id": "s15",
+    "id": "s44",
+    "type": "callout",
+    "narration": "Say the headline finding plainly. According to national housing research, there is no state, metro area, or county in the entire United States where a full-time worker earning the local minimum wage can afford a modest two-bedroom rental at thirty percent of income. Zero. The map has no safe squares.",
+    "text": "0 counties",
+    "sub": "where min wage affords a modest 2-bed",
+    "icon": "mappin"
+  },
+  {
+    "id": "s13",
+    "type": "title",
+    "narration": "So how many hours does that gap actually cost you?",
+    "heading": "The Hours",
+    "kicker": "a week that doesn't fit"
+  },
+  {
+    "id": "s54",
+    "type": "callout",
+    "narration": "Here's the gap as a single ratio. In the lowest-wage states, the rent for a modest one-bedroom can eat sixty to eighty percent of a full-time minimum-wage paycheck by itself — before food, transport, or anything else. The thirty-percent guideline isn't just missed. It's doubled or tripled.",
+    "text": "60-80%",
+    "sub": "of a full-time min-wage check eaten by one bedroom",
+    "icon": "apartment"
+  },
+  {
+    "id": "s14",
     "type": "stage",
-    "motif": "moneyprintspiral",
-    "caption": "the death spiral of the printing press",
-    "narration": "Here's the doom loop. The government prints money to cover its deficit. More money chasing the same goods pushes prices up. Higher prices mean the government needs even more money to function, so it prints more, which pushes prices higher still. Each turn of the press feeds the next. The spiral accelerates until the currency is worthless."
+    "motif": "hoursneededclock",
+    "caption": "hours a week at minimum wage to afford rent",
+    "narration": "Here's the gap as time instead of money. A standard full-time week is forty hours. But to afford that modest one-bedroom on a minimum wage, workers in most states would need to clock sixty, eighty, even over a hundred hours every week. There are only a hundred and sixty-eight hours in a week. In some states, affording rent on the minimum is mathematically impossible, no matter how hard you work."
   },
   {
     "id": "s45",
     "type": "character",
     "pose": "explain",
-    "narration": "And why don't governments just stop printing? Because stopping is agonizing. The moment the presses halt, the government can't pay soldiers, workers, or pensions, and the economy seizes. So weak or desperate governments keep printing to survive one more month, knowing it makes tomorrow worse. It's an addiction with a catastrophic ending.",
+    "narration": "Translating money into hours makes it visceral. Rent isn't just a number you can't reach — it's time you don't have. When affording a one-bedroom requires a hundred hours a week, there simply aren't enough hours left to sleep, let alone live. The gap stops being financial and becomes physical, a wall of hours no human can climb.",
     "props": [
       {
-        "name": "printer",
-        "label": "stopping is agony"
+        "name": "clock",
+        "label": "rent = time you lack"
       },
       {
         "name": "warning",
-        "label": "can't pay the bills"
+        "label": "100 hrs leaves none to sleep"
+      },
+      {
+        "name": "apartment",
+        "label": "a wall of hours"
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "type": "chart",
+    "chartType": "bar",
+    "title": "Hours/week at min wage to afford a 1-bed",
+    "unit": "hrs",
+    "narration": "Count the hours. In California, with its higher minimum, you'd still need around seventy hours a week. In Florida, over ninety. In Texas, past a hundred. And in states sitting on the frozen federal floor, like Mississippi, it's over a hundred and ten hours a week — nearly three full-time jobs — just to pay rent. Forty hours was never going to be enough.",
+    "data": [
+      {
+        "label": "California",
+        "value": 70
+      },
+      {
+        "label": "Florida",
+        "value": 92
+      },
+      {
+        "label": "Texas",
+        "value": 104
+      },
+      {
+        "label": "Mississippi",
+        "value": 112
+      }
+    ],
+    "highlight": 3
+  },
+  {
+    "id": "s55",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And overtime can't save you, because there's a ceiling. Past forty hours there are only so many you can physically work, and many low-wage jobs cap hours to avoid paying benefits. So the hundred-hour figure isn't a plan — it's proof the math breaks. You cannot simply out-hustle a gap this wide; the hours to close it don't exist.",
+    "props": [
+      {
+        "name": "clock",
+        "label": "only so many hours exist"
+      },
+      {
+        "name": "warning",
+        "label": "hours capped to dodge benefits"
       },
       {
         "name": "chartdown",
-        "label": "one more month, then collapse"
+        "label": "can't out-hustle it"
       }
     ]
   },
   {
     "id": "s16",
-    "type": "screenshot",
-    "sourceId": "wiki-qtm",
-    "narration": "This is the oldest rule in economics: the quantity theory of money. It holds that the general price level of goods and services is directly proportional to the amount of money in circulation. Double the money with no more goods to buy, and prices roughly double. Multiply the money by a thousand, and you get the history of hyperinflation."
-  },
-  {
-    "id": "s46",
     "type": "character",
     "pose": "explain",
-    "narration": "The math is brutally simple. If the amount of money in a country grows ten times but the goods for sale don't, then on average each thing now costs ten times as much. Hyperinflation is just this equation run amok — printing that outpaces the real economy by hundreds or thousands of times, until the numbers lose all meaning.",
+    "narration": "This is why so many minimum-wage workers aren't housed by one job — they're housed by two, or by cramming four roommates into a two-bedroom, or by simply paying far more than thirty percent and going without everything else. The gap doesn't vanish. It just gets absorbed, invisibly, as exhaustion, overcrowding, and quiet financial desperation.",
     "props": [
       {
-        "name": "calculator",
-        "label": "10× money, 10× prices"
-      },
-      {
-        "name": "printer",
-        "label": "printing outruns goods"
-      },
-      {
         "name": "warning",
-        "label": "numbers lose meaning"
+        "label": "two or three jobs"
+      },
+      {
+        "name": "crowd",
+        "label": "packed roommates"
+      },
+      {
+        "name": "chartdown",
+        "label": "paying way over 30%"
       }
     ]
   },
   {
-    "id": "s55",
-    "type": "callout",
-    "narration": "Here's the quantity theory in one line of history. To fund World War One and its aftermath, Weimar Germany expanded its money supply astronomically. Prices followed exactly as the theory predicts — rising about a trillionfold in a few years. The equation isn't a suggestion. It's gravity.",
-    "text": "1,000,000,000,000×",
-    "sub": "Weimar Germany's price rise — money supply × prices",
-    "icon": "printer"
+    "id": "s46",
+    "type": "image",
+    "src": "img/memes/twobuttons.jpg",
+    "meme": "Two Buttons",
+    "memeTop": "work a second full-time job",
+    "memeBottom": "cram four people into a two-bedroom",
+    "narration": "This is the real, sweaty choice at the bottom of the wage scale — and it isn't between good options. When one full-time job can't cover one bedroom, every path left is some mix of exhaustion and overcrowding. The gap doesn't disappear; someone just absorbs it with their body and their time."
   },
   {
     "id": "s17",
     "type": "title",
-    "narration": "But printing is only half of it. The other half is trust.",
-    "heading": "When Trust Dies",
-    "kicker": "the confidence collapse"
+    "narration": "So how did the floor fall so far behind the rent?",
+    "heading": "The Frozen Floor",
+    "kicker": "2009 to now"
+  },
+  {
+    "id": "s56",
+    "type": "image",
+    "src": "img/memes/expanding.jpg",
+    "meme": "Expanding Brain",
+    "memeTop": "just get a minimum-wage job and work hard",
+    "memeBottom": "the minimum wage hasn't covered rent in over a decade",
+    "narration": "This is the update a lot of advice never got. The old script — any full-time job keeps a roof over your head — quietly stopped being true for the bottom of the wage scale years ago. Working hard still matters; it just no longer guarantees the rent the way it once did."
   },
   {
     "id": "s18",
     "type": "stage",
-    "motif": "confidencecollapse",
-    "caption": "money is only worth what people believe",
-    "narration": "A currency has value only because people believe it will tomorrow. Once citizens see the printing and lose that faith, something vicious happens: they rush to spend money the instant they get it, before it decays. That frantic spending itself drives prices up faster, which destroys confidence further. Belief collapsing is what turns high inflation into a free fall."
+    "motif": "minwagefrozen",
+    "caption": "the minimum froze while rent soared",
+    "narration": "Here's the core of it. The federal minimum wage has been frozen at seven twenty-five since two thousand nine — the longest stretch without a raise in its history. Over that same time, average rents roughly doubled. One line sat perfectly flat for over fifteen years while the other climbed relentlessly. The gap between them is this entire crisis, drawn as two lines."
   },
   {
     "id": "s47",
     "type": "character",
     "pose": "explain",
-    "narration": "This is why hyperinflation ends almost overnight once it ends at all. The cure is restoring trust: a new currency, a credible promise to stop printing, often backing by dollars or gold. The instant people believe again, the panic spending stops and prices stabilize. Confidence is both the thing that dies and the only thing that can bring money back to life.",
+    "narration": "And the freeze is a choice, not an accident. Raising the federal minimum requires an act of Congress, and for over fifteen years that hasn't happened, even as prices climbed. Inflation quietly cuts the real floor every year it stays frozen. Doing nothing isn't neutral — it's a steady, silent pay cut for the lowest-paid workers in the country.",
     "props": [
       {
-        "name": "shield",
-        "label": "cure = restore trust"
+        "name": "capitol",
+        "label": "raising it needs Congress"
       },
       {
-        "name": "banknote",
-        "label": "new currency, a credible promise"
-      },
-      {
-        "name": "smiley",
-        "label": "belief brings money back"
-      }
-    ]
-  },
-  {
-    "id": "s56",
-    "type": "image",
-    "src": "img/memes/fine.jpg",
-    "meme": "This Is Fine",
-    "memeTop": "getting paid in a currency losing 50% a month",
-    "memeBottom": "this is fine",
-    "narration": "For people living inside a hyperinflation, this is the grim daily mood: paid in money that's already dying, racing to spend it before it's worth half as much. It isn't carelessness — it's the only rational response to a currency the government is quietly destroying."
-  },
-  {
-    "id": "s19",
-    "type": "screenshot",
-    "sourceId": "wiki-currencycrisis",
-    "narration": "And it often tips into a full currency crisis, where the value of foreign denominated debt will rise drastically as the home currency craters. A country that borrowed in dollars now owes a fortune it can't repay in its collapsing money. The crisis feeds on itself, and the currency can spiral from weak to worthless in a matter of months."
-  },
-  {
-    "id": "s57",
-    "type": "character",
-    "pose": "explain",
-    "narration": "And the dollar-debt trap is especially vicious. Many of these countries borrowed from the world in US dollars when times were good. As their own currency collapses, that dollar debt stays fixed — so it balloons in local terms to many times its original size. The collapse makes the debt unpayable, and the unpayable debt deepens the collapse.",
-    "props": [
-      {
-        "name": "ballchain",
-        "label": "borrowed in dollars"
-      },
-      {
-        "name": "chartup",
-        "label": "debt balloons as currency falls"
+        "name": "chartdown",
+        "label": "inflation cuts it yearly"
       },
       {
         "name": "warning",
-        "label": "collapse feeds on itself"
+        "label": "doing nothing = a pay cut"
       }
     ]
   },
   {
-    "id": "s20",
-    "type": "title",
-    "narration": "So what does this actually do to a normal person's money?",
-    "heading": "The Human Cost",
-    "kicker": "savings into confetti"
+    "id": "s19",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And inflation made it worse than flat. Seven twenty-five in two thousand nine had real buying power; today, after years of rising prices, that same seven twenty-five buys far less. So the minimum wage didn't just stand still — in real terms, it fell. Workers on the floor are earning meaningfully less than minimum-wage workers did a decade and a half ago.",
+    "props": [
+      {
+        "name": "chartdown",
+        "label": "frozen = falling in real terms"
+      },
+      {
+        "name": "banknote",
+        "label": "$7.25 buys far less now"
+      },
+      {
+        "name": "warning",
+        "label": "worse off than 2009"
+      }
+    ]
   },
   {
-    "id": "s21",
-    "type": "stage",
-    "motif": "savingswipeout",
-    "caption": "a lifetime of savings, erased",
-    "narration": "This is the cruelest part. Imagine a lifetime of careful saving in the local currency. In hyperinflation, that entire nest egg can lose ninety-nine percent of its value in a year — enough to buy a house one month, a sandwich the next. Pensions, bank accounts, and cash savings are simply vaporized. The patient, responsible savers are punished the hardest of all."
+    "id": "s57",
+    "type": "callout",
+    "narration": "Quantify the freeze in real terms. Adjusted for inflation, the federal minimum wage is worth less today than it was in nineteen sixty-eight, more than fifty years ago. A full-time worker on the floor in the nineteen-sixties could out-buy one standing on it now. The floor didn't just stall — it slid backward across generations.",
+    "text": "below 1968",
+    "sub": "the real value of today's federal minimum wage",
+    "icon": "chartdown"
+  },
+  {
+    "id": "s20",
+    "type": "character",
+    "pose": "explain",
+    "narration": "This is why states and cities took matters into their own hands. Many now set their own minimums far above the federal floor — fifteen, sixteen, even seventeen dollars in the priciest places. That's why the gap varies so much by state. But as our ranking showed, even those higher local minimums still can't close the distance to what rent now demands.",
+    "props": [
+      {
+        "name": "mappin",
+        "label": "states raised their own"
+      },
+      {
+        "name": "chartup",
+        "label": "$15-17 in pricey states"
+      },
+      {
+        "name": "warning",
+        "label": "still short of the rent"
+      }
+    ]
   },
   {
     "id": "s48",
     "type": "character",
     "pose": "explain",
-    "narration": "And the damage isn't only financial — it's social. When money dies, long-term planning becomes impossible. Nobody lends, nobody invests, contracts collapse, and the economy reverts to barter and foreign cash. A functioning society quietly runs on trust in its money; remove it, and daily life itself starts to break down.",
+    "narration": "But higher state minimums aren't a free lunch either — critics warn they can nudge up prices or automation in the very places they apply. The honest picture is messy: raising the floor clearly helps those who keep their hours, while the debate rages over the edges. What's not debatable is the raw gap we've measured between the floor and the rent.",
     "props": [
       {
-        "name": "handshake",
-        "label": "nobody lends or invests"
-      },
-      {
-        "name": "exchange",
-        "label": "back to barter"
+        "name": "scale",
+        "label": "raises have trade-offs"
       },
       {
         "name": "warning",
-        "label": "society runs on trust"
+        "label": "prices, automation debated"
+      },
+      {
+        "name": "chartup",
+        "label": "the gap itself is real"
       }
     ]
+  },
+  {
+    "id": "s21",
+    "type": "title",
+    "narration": "Which exposes the gap between two very different ideas of a wage.",
+    "heading": "Wage vs Living Wage",
+    "kicker": "legal vs livable"
   },
   {
     "id": "s58",
-    "type": "callout",
-    "narration": "Here's the saver's nightmare in one number. At just fifty percent monthly inflation — the technical floor of hyperinflation — money loses about ninety-nine percent of its value in a year. A fortune in January is pocket change by December. Hyperinflation is, quite literally, a hundred-percent tax on everyone holding cash.",
-    "text": "−99% / year",
-    "sub": "what cash loses at 'only' 50% monthly inflation",
-    "icon": "banknote"
-  },
-  {
-    "id": "s22",
     "type": "character",
     "pose": "explain",
-    "narration": "So people adapt in desperate ways. They spend their wages within hours of being paid. They hoard physical goods instead of cash. They abandon the local money entirely and switch to US dollars — a process called dollarization — or to gold and crypto. The official currency becomes something you offload as fast as humanly possible, not something you hold.",
+    "narration": "And the shortfall quietly lands on taxpayers. When full-time wages don't cover basics, workers lean on food assistance, housing vouchers, and Medicaid to survive. In effect, the public subsidizes employers who pay below a living wage. A low minimum doesn't remove the cost of living — it just shifts part of the bill from the company to the government.",
     "props": [
       {
-        "name": "exchange",
-        "label": "switch to US dollars"
-      },
-      {
-        "name": "goldbar",
-        "label": "hoard hard assets"
+        "name": "receipt",
+        "label": "food aid, vouchers, Medicaid"
       },
       {
         "name": "warning",
-        "label": "spend it within hours"
+        "label": "public subsidizes low pay"
+      },
+      {
+        "name": "scale",
+        "label": "the bill just moves"
       }
     ]
   },
   {
-    "id": "s49",
-    "type": "callout",
-    "narration": "Dollarization is so common it has a number. In severely hit countries, the US dollar can quietly become the real currency for the majority of serious transactions — homes, cars, savings — while the local money is used only for small daily change that nobody wants to hold overnight.",
-    "text": "the dollar wins",
-    "sub": "what people flee to when their currency dies",
-    "icon": "exchange"
+    "id": "s22",
+    "type": "screenshot",
+    "sourceId": "wiki-livingwage",
+    "narration": "There's a crucial distinction here. A living wage is the minimum income required for a worker to meet their basic needs — food, housing, and the essentials. The minimum wage is merely the legal floor. In modern America, those two numbers have drifted miles apart: the legal minimum is now far below what it actually costs to live."
   },
   {
-    "id": "s59",
+    "id": "s49",
     "type": "character",
     "pose": "explain",
-    "narration": "And this is why gold and, more recently, crypto catch fire in these countries. People aren't chasing a trend — they're desperate for anything the government cannot print more of. A scarce asset holds value precisely because no official can conjure billions more of it overnight. Scarcity becomes the whole point.",
+    "narration": "And the living wage varies wildly by place, just like rent. A living wage in rural Mississippi might be eighteen dollars an hour; in San Francisco, closer to thirty or thirty-five for a single adult, and far more with a child. There's no single national number for a decent life — which is exactly why a single national minimum wage fits almost nowhere.",
     "props": [
       {
-        "name": "goldbar",
-        "label": "gold & crypto catch fire"
+        "name": "mappin",
+        "label": "living wage varies by place"
       },
       {
-        "name": "printer",
-        "label": "can't be printed"
+        "name": "scale",
+        "label": "$18 rural, $35+ in cities"
       },
       {
-        "name": "shield",
-        "label": "scarcity = safety"
+        "name": "warning",
+        "label": "one national floor fits nowhere"
       }
     ]
   },
   {
     "id": "s23",
-    "type": "title",
-    "narration": "So could it ever happen to a rich, stable country?",
-    "heading": "Could It Happen Here?",
-    "kicker": "the honest answer"
+    "type": "screenshot",
+    "sourceId": "wiki-workingpoor",
+    "narration": "The result is a group economists call the working poor — working people whose incomes fall below a given poverty line despite holding down jobs. These aren't the unemployed. They're full-time workers, doing everything right by the old rules, who still can't afford a roof. When a full-time wage can't cover rent, poverty stops being about not working."
+  },
+  {
+    "id": "s59",
+    "type": "character",
+    "pose": "explain",
+    "narration": "And the working poor face a cruel catch: they often earn just too much to qualify for aid, yet nowhere near enough to afford rent. A raise can cost them benefits worth more than the raise itself — a trap called the benefits cliff. So even climbing off the exact floor doesn't guarantee escape from the squeeze.",
+    "props": [
+      {
+        "name": "warning",
+        "label": "too rich for aid, too poor for rent"
+      },
+      {
+        "name": "chartdown",
+        "label": "the benefits cliff"
+      },
+      {
+        "name": "scale",
+        "label": "a raise can cost you"
+      }
+    ]
   },
   {
     "id": "s24",
     "type": "character",
-    "pose": "explain",
-    "narration": "The honest answer: true hyperinflation is very unlikely in a country like the US, but not for the reason you'd think. It's not that America can't print money — it prints enormous amounts. It's that the dollar is still deeply trusted worldwide, and an independent central bank is willing to cause pain to defend that trust. Hyperinflation is ultimately a disease of lost confidence, not just big numbers.",
-    "props": [
-      {
-        "name": "shield",
-        "label": "the dollar is trusted"
-      },
-      {
-        "name": "bank",
-        "label": "independent central bank"
-      },
-      {
-        "name": "warning",
-        "label": "confidence is the firewall"
-      }
-    ]
-  },
-  {
-    "id": "s60",
-    "type": "character",
-    "pose": "explain",
-    "narration": "That said, the warning signs are universal, so watch them anywhere. Persistent large deficits funded by the central bank, a currency sliding fast, and a government leaning on the printing press are the early symptoms everywhere. No rich country is immune to the direction — only, for now, to the extreme. Trust is earned slowly and lost fast.",
-    "props": [
-      {
-        "name": "warning",
-        "label": "watch the warning signs"
-      },
-      {
-        "name": "printer",
-        "label": "deficits funded by printing"
-      },
-      {
-        "name": "chartdown",
-        "label": "trust lost fast"
-      }
-    ]
-  },
-  {
-    "id": "s25",
-    "type": "character",
     "pose": "present",
-    "narration": "But the lesson for you is universal, wherever you live. Cash is only ever as safe as the government behind it. The defense against inflation, mild or extreme, is owning things that can't be printed — stocks, real estate, and a sensible slice of hard assets. Money sitting idle always loses to inflation. The only question is how fast.",
+    "narration": "So what do you actually do if you're caught in this gap? Chase the states and cities with both higher minimums and saner rents — that combination, not either alone, is what creates breathing room. Stack skills or certifications that lift you off the floor fast. And treat roommates and location not as failure, but as the math that buys you time to climb.",
     "props": [
       {
-        "name": "chartup",
-        "label": "own what can't be printed"
+        "name": "mappin",
+        "label": "higher wage + saner rent"
       },
       {
-        "name": "house",
-        "label": "stocks, property, hard assets"
+        "name": "gradcap",
+        "label": "skills to leave the floor"
       },
       {
-        "name": "warning",
-        "label": "idle cash always loses"
+        "name": "couple",
+        "label": "roommates buy time"
       }
     ]
   },
@@ -612,77 +579,77 @@
     "id": "s50",
     "type": "character",
     "pose": "present",
-    "narration": "And if you ever live through high inflation, speed is everything. Move savings out of the collapsing currency into stable money or hard assets fast, borrow in the weak currency if you can repay it in cheaper future money, and never hold large cash balances. The rules flip entirely: in hyperinflation, debt can be a gift and cash is the trap.",
+    "narration": "And if you employ people or vote on this, understand what the number represents. A minimum wage that can't house a full-time worker pushes the shortfall onto someone — onto the worker's health, onto roommates, or onto public assistance that taxpayers fund anyway. The cost of a too-low floor doesn't disappear. It just moves to a different, often hidden, bill.",
     "props": [
       {
-        "name": "exchange",
-        "label": "flee the currency fast"
-      },
-      {
-        "name": "house",
-        "label": "hold hard assets"
-      },
-      {
         "name": "warning",
-        "label": "cash is the trap"
+        "label": "the shortfall goes somewhere"
+      },
+      {
+        "name": "receipt",
+        "label": "onto workers or taxpayers"
+      },
+      {
+        "name": "scale",
+        "label": "a too-low floor has a cost"
       }
     ]
   },
   {
-    "id": "s61",
+    "id": "s25",
+    "type": "character",
+    "pose": "explain",
+    "narration": "Because here's the real lesson. We're taught that a full-time job guarantees a basic life. For the bottom of the wage scale, that promise quietly broke — not because people stopped working, but because the floor froze while the roof kept rising. A wage is only meaningful next to the price of living. And right now, for millions, the two no longer meet.",
+    "props": [
+      {
+        "name": "paystub",
+        "label": "full-time ≠ a basic life"
+      },
+      {
+        "name": "apartment",
+        "label": "floor froze, roof rose"
+      },
+      {
+        "name": "scale",
+        "label": "wage vs the price of living"
+      }
+    ]
+  },
+  {
+    "id": "s60",
     "type": "character",
     "pose": "present",
-    "narration": "And the everyday takeaway is simply good financial hygiene. Don't hold more cash than you need; keep the rest in productive assets that grow with or beyond inflation. This protects you against the mild inflation you'll definitely face, and against the extreme kind you hopefully never will. The habit is the same either way.",
+    "narration": "And zoom out on the fix, whichever side you're on. The gap only closes two ways: wages rise, or rent falls. Rent falls mainly when enough homes get built, which ties this episode straight back to the housing shortage. A higher floor helps today; more housing helps forever. Both target the same gap from opposite ends.",
     "props": [
       {
         "name": "chartup",
-        "label": "keep cash productive"
+        "label": "wages up"
       },
       {
-        "name": "house",
-        "label": "assets that beat inflation"
+        "name": "apartment",
+        "label": "or rent down = build homes"
       },
       {
-        "name": "smiley",
-        "label": "same habit, both cases"
+        "name": "scale",
+        "label": "close the gap from both ends"
       }
     ]
   },
   {
     "id": "s26",
     "type": "character",
-    "pose": "explain",
-    "narration": "Because here's the real lesson. Money isn't wealth — it's a promise, and a promise is only worth the trust behind it. The countries at the top of our ranking didn't run out of paper. They ran out of trust. Watch how much a government prints, and how hard it protects its currency's credibility. That, far more than any number, tells you whether your savings are safe.",
-    "props": [
-      {
-        "name": "banknote",
-        "label": "money = a promise"
-      },
-      {
-        "name": "scale",
-        "label": "worth only the trust"
-      },
-      {
-        "name": "warning",
-        "label": "watch the printing"
-      }
-    ]
-  },
-  {
-    "id": "s27",
-    "type": "character",
     "pose": "celebrate",
     "expression": "happy",
-    "narration": "If this made inflation finally click, hit subscribe — and tell me which price tag you want me to break down next.",
+    "narration": "If this reframed the minimum wage for you, hit subscribe — and tell me which price tag you want me to break down next.",
     "props": [
       {
-        "name": "banknote",
+        "name": "apartment",
         "label": "which price tag next?"
       }
     ]
   },
   {
-    "id": "s28",
+    "id": "s27",
     "type": "character",
     "pose": "celebrate",
     "expression": "happy",
