@@ -254,7 +254,9 @@ export interface StageScene extends Base {
     // EP094 (The Price Tag — taxes US vs UK vs CA vs AU) additions:
     | "countrytaxbars" | "vathiddentax" | "taxvsservices"
     // EP095 (The Price Tag — childcare by state vs 2nd salary) additions:
-    | "childcarebystate";
+    | "childcarebystate"
+    // EP096 (The Price Tag — top inflation countries) additions:
+    | "inflationcountrybars" | "moneyprintspiral" | "savingswipeout";
   icons?: DoodleName[];   // big centered doodle(s) when no motif
   caption?: string;
   kicker?: string;        // small line above

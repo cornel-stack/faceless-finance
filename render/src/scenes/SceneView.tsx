@@ -7058,6 +7058,88 @@ const StageScene_: React.FC<{ scene: StageScene }> = ({ scene }) => {
         <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>same baby, same care — over 3× the price by state</text>
       </svg>
     );
+  } else if (m === "inflationcountrybars") {
+    // Recent annual inflation by country — horizontal bars.
+    const draw = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const rows: [string, number, string][] = [
+      ["Turkey", 65, gold],
+      ["Sudan", 145, "#d98b5f"],
+      ["Venezuela", 190, "#d98b5f"],
+      ["Argentina", 210, "#c0583a"],
+      ["Lebanon", 220, "#c0583a"],
+      ["Zimbabwe", 560, red],
+    ];
+    const x0 = 270, xMax = 850, maxV = 560;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={50} fontSize={21} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">recent annual inflation, by country</text>
+        {rows.map(([lab, v, col], i) => {
+          const y = 86 + i * 62; const w = (xMax - x0) * (v / maxV) * draw;
+          const op = interpolate(draw, [i * 0.1, i * 0.1 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <text x={x0 - 14} y={y + 27} fontSize={15} fontWeight={800} fill={ink} textAnchor="end" fontFamily={sans}>{lab}</text>
+              <rect x={x0} y={y + 6} width={Math.max(w, 4)} height={36} rx={5} fill={col as string} stroke={ink} strokeWidth={3} />
+              <text x={x0 + Math.max(w, 4) + 12} y={y + 31} fontSize={15} fontWeight={900} fill={ink} fontFamily="Georgia, serif">{v}%</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={478} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>prices several times higher by year's end</text>
+      </svg>
+    );
+  } else if (m === "moneyprintspiral") {
+    // The printing death spiral — a loop of arrows.
+    const t = interpolate(frame, [fps * 0.3, fps * 2.8], [0, 1], clampBoth);
+    const steps: [string, string, number, number][] = [
+      ["print money", "#9cc47f", 490, 150],
+      ["prices rise", gold, 770, 270],
+      ["need more money", "#d98b5f", 620, 410],
+      ["print even more", red, 340, 270],
+    ];
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={54} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">the printing death spiral</text>
+        {steps.map(([lab, col, x, y], i) => {
+          const op = interpolate(t, [i * 0.2, i * 0.2 + 0.2], [0, 1], clampBoth);
+          return (
+            <g key={i} opacity={op}>
+              <circle cx={x} cy={y} r={78} fill={col as string} stroke={ink} strokeWidth={4} />
+              <text x={x} y={y + 5} fontSize={15} fontWeight={900} fill="#fff" textAnchor="middle" fontFamily={sans}>{(lab as string).split(" ").map((w, j) => <tspan key={j} x={x} dy={j === 0 ? 0 : 17}>{w}</tspan>)}</text>
+            </g>
+          );
+        })}
+        {/* curved arrows between the four nodes, clockwise */}
+        <path d="M568 150 A 230 160 0 0 1 790 220" fill="none" stroke={ink} strokeWidth={5} opacity={interpolate(t,[0.2,0.4],[0,1],clampBoth)} />
+        <path d="M790 330 A 230 160 0 0 1 690 400" fill="none" stroke={ink} strokeWidth={5} opacity={interpolate(t,[0.4,0.6],[0,1],clampBoth)} />
+        <path d="M540 420 A 230 160 0 0 1 360 350" fill="none" stroke={ink} strokeWidth={5} opacity={interpolate(t,[0.6,0.8],[0,1],clampBoth)} />
+        <path d="M350 200 A 230 160 0 0 1 420 150" fill="none" stroke={ink} strokeWidth={5} opacity={interpolate(t,[0.8,1],[0,1],clampBoth)} />
+        <text x={VW / 2} y={490} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>each turn of the press feeds the next — until the money is worthless</text>
+      </svg>
+    );
+  } else if (m === "savingswipeout") {
+    // A pile of savings shrinking to nothing.
+    const t = interpolate(frame, [fps * 0.4, fps * 2.6], [0, 1], clampBoth);
+    const bars: [string, number][] = [["Jan", 100], ["Apr", 55], ["Jul", 20], ["Oct", 5], ["Dec", 1]];
+    const base = 430, maxH = 300;
+    art = (
+      <svg width={VW} height={VH}>
+        <text x={VW / 2} y={56} fontSize={22} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">a lifetime of savings, in one year of hyperinflation</text>
+        <RLine x1={120} y1={base} x2={880} y2={base} stroke={ink} strokeWidth={3} />
+        {bars.map(([lab, v], i) => {
+          const h = maxH * (v / 100) * interpolate(t, [i * 0.14, i * 0.14 + 0.4], [0, 1], clampBoth);
+          const x = 210 + i * 150;
+          const col = i === 0 ? "#9cc47f" : i < 3 ? gold : red;
+          return (
+            <g key={i}>
+              <rect x={x - 55} y={base - h} width={110} height={h} rx={5} fill={col} stroke={ink} strokeWidth={3.5} />
+              <text x={x} y={base - h - 10} fontSize={14} fontWeight={900} fill={ink} textAnchor="middle" fontFamily="Georgia, serif">{v === 100 ? "$100K" : v === 1 ? "~$0" : ""}</text>
+              <text x={x} y={base + 24} fontSize={14} fontWeight={800} fill={ink} textAnchor="middle" fontFamily={sans}>{lab}</text>
+            </g>
+          );
+        })}
+        <text x={VW / 2} y={base + 50} fontSize={14} fontWeight={800} fill={red} textAnchor="middle" fontFamily={sans}>the patient saver is punished the hardest</text>
+      </svg>
+    );
   } else {
     // big centered doodle(s) — no arrows
     const icons = scene.icons ?? [];

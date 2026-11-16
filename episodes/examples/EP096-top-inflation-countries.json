@@ -1,0 +1,816 @@
+{
+  "id": "EP096",
+  "series": "Napkin Numbers",
+  "title": "Top 10 Countries by Inflation (and Why Their Money Died)",
+  "slug": "top-inflation-countries",
+  "market": "US",
+  "language": "en",
+  "voice": {
+    "provider": "edge",
+    "voiceId": "en-US-BrianNeural",
+    "accent": "natural"
+  },
+  "note": "EP096 — The Price Tag series (topic 86). Rank highest-inflation countries (Zimbabwe/Lebanon/Argentina/Venezuela/Sudan/Turkey, recent annual %; historical: Zimbabwe 2008 ~79 billion %/month, Weimar, Hungary). US ~3% vs the club = humbling. The ONE cause: money printing to fund deficits → quantity theory of money → confidence collapse → currency crisis spiral. Human cost: savings vaporized, dollarization, barter. Could it happen in the US (no — dollar trust + independent Fed; confidence is the firewall). Lesson: own what can't be printed. 3 new motifs (inflationcountrybars/moneyprintspiral/savingswipeout) + reuse confidencecollapse (EP050); 2 charts. Sources: Inflation/Hyperinflation/Money supply/Quantity theory of money/Currency crisis. Data-driven (name countries not leaders → no photos). Target 14-15 min.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Americans panicked when inflation hit nine percent in twenty twenty-two. In Zimbabwe, at the peak, prices doubled roughly every twenty-four hours — a loaf of bread could cost twice as much by dinner as it did at breakfast. Today we rank the countries with the highest inflation on Earth, show what it does to ordinary money, and explain exactly why a currency turns to confetti.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "US panicked at 9%"
+        },
+        {
+          "name": "banknote",
+          "label": "Zimbabwe: 2× a day"
+        },
+        {
+          "name": "scale",
+          "label": "top countries ranked"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "callout",
+      "narration": "Here's the number that breaks your sense of money. In the worst-hit countries today, annual inflation runs not in the single digits, but in the hundreds of percent — prices several times higher at the end of the year than the start. And in the history books, it gets almost unimaginably worse. This is what happens when money stops being trusted.",
+      "text": "500%+",
+      "sub": "yearly inflation in the worst countries today",
+      "icon": "chartup"
+    },
+    {
+      "id": "s3",
+      "type": "character",
+      "pose": "present",
+      "narration": "So today we rank the top countries by inflation, explain the one mechanism behind nearly every case, follow a paycheck as it dissolves in real time, and ask the question that should keep every government honest: could it ever happen to a rich, stable country like the US? Let's go.",
+      "props": [
+        {
+          "name": "scale",
+          "label": "rank the countries"
+        },
+        {
+          "name": "printer",
+          "label": "the one mechanism"
+        },
+        {
+          "name": "warning",
+          "label": "could it happen here?"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "image",
+      "src": "img/memes/expanding.jpg",
+      "meme": "Expanding Brain",
+      "memeTop": "inflation means prices go up a bit",
+      "memeBottom": "inflation means your life savings vanish in a year",
+      "narration": "Because in the worst cases, inflation isn't an annoyance at the store — it's the total destruction of everything people saved. Before we rank them, let's define the monster we're dealing with."
+    },
+    {
+      "id": "s5",
+      "type": "title",
+      "narration": "First, what turns normal inflation into a catastrophe.",
+      "heading": "From Inflation to Hyper",
+      "kicker": "when money breaks"
+    },
+    {
+      "id": "s6",
+      "type": "screenshot",
+      "sourceId": "wiki-inflation",
+      "narration": "Normal inflation is defined simply as an increase in the average price of goods and services in terms of money. But that definition hides the cause. Prices rising everywhere, all at once, is almost always a symptom of one deeper disease — too much money chasing the same goods. Remember that; it's the key to everything that follows."
+    },
+    {
+      "id": "s51",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And here's the uncomfortable truth hiding in that definition: inflation is, at root, always a choice. Prices don't rise on their own — they rise because someone created more money. Mild inflation is a gentle version of the same lever that, pulled too hard, destroys a currency entirely. It's a dial, and governments decide how far to turn it.",
+      "props": [
+        {
+          "name": "printer",
+          "label": "inflation is a choice"
+        },
+        {
+          "name": "banknote",
+          "label": "someone made more money"
+        },
+        {
+          "name": "warning",
+          "label": "a dial, turned too far"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "type": "screenshot",
+      "sourceId": "wiki-hyperinflation",
+      "narration": "When it spirals out of control, it becomes hyperinflation, which quickly erodes the real value of the local currency. Economists often mark the line at fifty percent a month. Past that, money decays so fast that holding it for even a few days is a loss. People stop saving, stop trusting, and start spending the instant they're paid."
+    },
+    {
+      "id": "s41",
+      "type": "callout",
+      "narration": "To grasp how far it can go, look at the record. At its twenty-oh-eight peak, Zimbabwe's monthly inflation reached an estimated seventy-nine billion percent. Prices doubled roughly every day. The government eventually printed a one-hundred-trillion-dollar note — worth, at the time, only a few US dollars.",
+      "text": "79,000,000,000%",
+      "sub": "Zimbabwe's peak monthly inflation, 2008",
+      "icon": "banknote"
+    },
+    {
+      "id": "s8",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So there's a spectrum. Two or three percent a year is healthy. Ten percent is painful. A hundred percent a year means prices double annually. And true hyperinflation — fifty percent a month or more — means your money can lose half its value while you sleep. The countries we're about to rank live at the terrifying end of that scale.",
+      "props": [
+        {
+          "name": "thermometer",
+          "label": "2-3% healthy"
+        },
+        {
+          "name": "warning",
+          "label": "100% = prices double"
+        },
+        {
+          "name": "banknote",
+          "label": "50%/month = collapse"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "type": "character",
+      "pose": "explain",
+      "narration": "History is littered with these collapses. Weimar Germany in the nineteen-twenties, where people burned banknotes for heat because they were cheaper than firewood. Hungary after World War Two, the worst ever recorded. Yugoslavia, Venezuela, Zimbabwe. Different eras, different flags, but the exact same story each time — and the same single cause underneath.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "Weimar burned cash for heat"
+        },
+        {
+          "name": "globe",
+          "label": "Hungary, Yugoslavia, Venezuela"
+        },
+        {
+          "name": "warning",
+          "label": "same story every time"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "type": "title",
+      "narration": "So let's rank the highest-inflation countries today.",
+      "heading": "The Ranking",
+      "kicker": "the hyperinflation club"
+    },
+    {
+      "id": "s52",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And a quick note on these numbers: they're slippery. Official rates are often massaged by the very governments causing the problem, so the real figure on the street is usually worse than the published one. When a government is printing to survive, it has every incentive to lie about how fast prices are actually rising.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "official numbers are massaged"
+        },
+        {
+          "name": "chartup",
+          "label": "street rate is worse"
+        },
+        {
+          "name": "scale",
+          "label": "they lie about it"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "stage",
+      "motif": "inflationcountrybars",
+      "caption": "recent annual inflation, by country",
+      "narration": "Here's the grim leaderboard of recent years. Zimbabwe, again, near the top with rates in the hundreds of percent. Lebanon, Argentina, and Venezuela, each with annual inflation well over a hundred, sometimes two hundred percent. Sudan and Turkey round out the club. In every one of these places, the same salary buys dramatically less every single month."
+    },
+    {
+      "id": "s11",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "Recent annual inflation (%)",
+      "unit": "%",
+      "narration": "Put rough recent figures side by side. Turkey around sixty-five percent, Sudan near one hundred forty-five, Venezuela about one hundred ninety, Argentina over two hundred, Lebanon similar, and Zimbabwe spiking past five hundred. These aren't typos. In Zimbabwe, prices more than quintupled in a single year — and that's the calm version of its history.",
+      "data": [
+        {
+          "label": "Turkey",
+          "value": 65
+        },
+        {
+          "label": "Sudan",
+          "value": 145
+        },
+        {
+          "label": "Venezuela",
+          "value": 190
+        },
+        {
+          "label": "Argentina",
+          "value": 210
+        },
+        {
+          "label": "Lebanon",
+          "value": 220
+        },
+        {
+          "label": "Zimbabwe",
+          "value": 560
+        }
+      ],
+      "highlight": 5
+    },
+    {
+      "id": "s43",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And notice these rankings shuffle constantly, because hyperinflation moves fast. A country can be stable one year and spiraling the next; Argentina has done this repeatedly for decades. The specific names on the leaderboard change, but the club always has members. Somewhere on Earth, a currency is always dying.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "rankings shuffle fast"
+        },
+        {
+          "name": "warning",
+          "label": "stable to spiral in a year"
+        },
+        {
+          "name": "globe",
+          "label": "the club always has members"
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And behind every percentage is a human scene. In Venezuela, people weighed stacks of banknotes instead of counting them, because counting took too long. In Lebanon, savers watched bank balances freeze and evaporate. These rates aren't abstract — they're queues, empty shelves, and a lifetime of work turning to paper overnight.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "weighing cash, not counting"
+        },
+        {
+          "name": "warning",
+          "label": "frozen bank accounts"
+        },
+        {
+          "name": "crowd",
+          "label": "queues and empty shelves"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "type": "chart",
+      "chartType": "bar",
+      "title": "US inflation vs the hyperinflation club (%)",
+      "unit": "%",
+      "narration": "Now the humbling comparison. The US inflation that caused years of headlines and political fury peaked around nine percent, and sits near three today. Put that next to Turkey's sixty-five, Argentina's two hundred, or Zimbabwe's five hundred, and the American bar almost disappears. We agonize over a sliver that other nations would consider a miracle.",
+      "data": [
+        {
+          "label": "US",
+          "value": 3
+        },
+        {
+          "label": "Turkey",
+          "value": 65
+        },
+        {
+          "label": "Argentina",
+          "value": 210
+        },
+        {
+          "label": "Zimbabwe",
+          "value": 560
+        }
+      ],
+      "highlight": 0
+    },
+    {
+      "id": "s44",
+      "type": "image",
+      "src": "img/memes/twobuttons.jpg",
+      "meme": "Two Buttons",
+      "memeTop": "complain about 3% US inflation",
+      "memeBottom": "imagine 300% like Argentina",
+      "narration": "This isn't to dismiss real pain — American inflation genuinely squeezed millions. But a little perspective reframes the whole conversation. The inflation that dominated US politics for years is a rounding error to a family in Buenos Aires or Beirut living it at a hundred times the rate."
+    },
+    {
+      "id": "s13",
+      "type": "title",
+      "narration": "So why does this happen? The cause is almost always the same.",
+      "heading": "The One Cause",
+      "kicker": "printing money"
+    },
+    {
+      "id": "s14",
+      "type": "screenshot",
+      "sourceId": "wiki-moneysupply",
+      "narration": "It starts with the money supply — the total volume of money held by the public at a particular point in time. A government that can't raise enough through taxes or borrowing has one tempting escape: print more. The central bank creates new currency to pay the government's bills. And that is where the spiral begins."
+    },
+    {
+      "id": "s54",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And it's almost never a central bank acting alone — it's a government out of options. A war, a collapse in oil or export revenue, crushing debt, or political chaos blows a hole in the budget. Taxes can't fill it and no one will lend. Printing is the path of least resistance, chosen by desperate leaders who tell themselves it's temporary.",
+      "props": [
+        {
+          "name": "bomb",
+          "label": "war, lost revenue, debt"
+        },
+        {
+          "name": "printer",
+          "label": "printing = path of least resistance"
+        },
+        {
+          "name": "warning",
+          "label": "'just temporary'"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "type": "stage",
+      "motif": "moneyprintspiral",
+      "caption": "the death spiral of the printing press",
+      "narration": "Here's the doom loop. The government prints money to cover its deficit. More money chasing the same goods pushes prices up. Higher prices mean the government needs even more money to function, so it prints more, which pushes prices higher still. Each turn of the press feeds the next. The spiral accelerates until the currency is worthless."
+    },
+    {
+      "id": "s45",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And why don't governments just stop printing? Because stopping is agonizing. The moment the presses halt, the government can't pay soldiers, workers, or pensions, and the economy seizes. So weak or desperate governments keep printing to survive one more month, knowing it makes tomorrow worse. It's an addiction with a catastrophic ending.",
+      "props": [
+        {
+          "name": "printer",
+          "label": "stopping is agony"
+        },
+        {
+          "name": "warning",
+          "label": "can't pay the bills"
+        },
+        {
+          "name": "chartdown",
+          "label": "one more month, then collapse"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "type": "screenshot",
+      "sourceId": "wiki-qtm",
+      "narration": "This is the oldest rule in economics: the quantity theory of money. It holds that the general price level of goods and services is directly proportional to the amount of money in circulation. Double the money with no more goods to buy, and prices roughly double. Multiply the money by a thousand, and you get the history of hyperinflation."
+    },
+    {
+      "id": "s46",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The math is brutally simple. If the amount of money in a country grows ten times but the goods for sale don't, then on average each thing now costs ten times as much. Hyperinflation is just this equation run amok — printing that outpaces the real economy by hundreds or thousands of times, until the numbers lose all meaning.",
+      "props": [
+        {
+          "name": "calculator",
+          "label": "10× money, 10× prices"
+        },
+        {
+          "name": "printer",
+          "label": "printing outruns goods"
+        },
+        {
+          "name": "warning",
+          "label": "numbers lose meaning"
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "type": "callout",
+      "narration": "Here's the quantity theory in one line of history. To fund World War One and its aftermath, Weimar Germany expanded its money supply astronomically. Prices followed exactly as the theory predicts — rising about a trillionfold in a few years. The equation isn't a suggestion. It's gravity.",
+      "text": "1,000,000,000,000×",
+      "sub": "Weimar Germany's price rise — money supply × prices",
+      "icon": "printer"
+    },
+    {
+      "id": "s17",
+      "type": "title",
+      "narration": "But printing is only half of it. The other half is trust.",
+      "heading": "When Trust Dies",
+      "kicker": "the confidence collapse"
+    },
+    {
+      "id": "s18",
+      "type": "stage",
+      "motif": "confidencecollapse",
+      "caption": "money is only worth what people believe",
+      "narration": "A currency has value only because people believe it will tomorrow. Once citizens see the printing and lose that faith, something vicious happens: they rush to spend money the instant they get it, before it decays. That frantic spending itself drives prices up faster, which destroys confidence further. Belief collapsing is what turns high inflation into a free fall."
+    },
+    {
+      "id": "s47",
+      "type": "character",
+      "pose": "explain",
+      "narration": "This is why hyperinflation ends almost overnight once it ends at all. The cure is restoring trust: a new currency, a credible promise to stop printing, often backing by dollars or gold. The instant people believe again, the panic spending stops and prices stabilize. Confidence is both the thing that dies and the only thing that can bring money back to life.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "cure = restore trust"
+        },
+        {
+          "name": "banknote",
+          "label": "new currency, a credible promise"
+        },
+        {
+          "name": "smiley",
+          "label": "belief brings money back"
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "type": "image",
+      "src": "img/memes/fine.jpg",
+      "meme": "This Is Fine",
+      "memeTop": "getting paid in a currency losing 50% a month",
+      "memeBottom": "this is fine",
+      "narration": "For people living inside a hyperinflation, this is the grim daily mood: paid in money that's already dying, racing to spend it before it's worth half as much. It isn't carelessness — it's the only rational response to a currency the government is quietly destroying."
+    },
+    {
+      "id": "s19",
+      "type": "screenshot",
+      "sourceId": "wiki-currencycrisis",
+      "narration": "And it often tips into a full currency crisis, where the value of foreign denominated debt will rise drastically as the home currency craters. A country that borrowed in dollars now owes a fortune it can't repay in its collapsing money. The crisis feeds on itself, and the currency can spiral from weak to worthless in a matter of months."
+    },
+    {
+      "id": "s57",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the dollar-debt trap is especially vicious. Many of these countries borrowed from the world in US dollars when times were good. As their own currency collapses, that dollar debt stays fixed — so it balloons in local terms to many times its original size. The collapse makes the debt unpayable, and the unpayable debt deepens the collapse.",
+      "props": [
+        {
+          "name": "ballchain",
+          "label": "borrowed in dollars"
+        },
+        {
+          "name": "chartup",
+          "label": "debt balloons as currency falls"
+        },
+        {
+          "name": "warning",
+          "label": "collapse feeds on itself"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "type": "title",
+      "narration": "So what does this actually do to a normal person's money?",
+      "heading": "The Human Cost",
+      "kicker": "savings into confetti"
+    },
+    {
+      "id": "s21",
+      "type": "stage",
+      "motif": "savingswipeout",
+      "caption": "a lifetime of savings, erased",
+      "narration": "This is the cruelest part. Imagine a lifetime of careful saving in the local currency. In hyperinflation, that entire nest egg can lose ninety-nine percent of its value in a year — enough to buy a house one month, a sandwich the next. Pensions, bank accounts, and cash savings are simply vaporized. The patient, responsible savers are punished the hardest of all."
+    },
+    {
+      "id": "s48",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And the damage isn't only financial — it's social. When money dies, long-term planning becomes impossible. Nobody lends, nobody invests, contracts collapse, and the economy reverts to barter and foreign cash. A functioning society quietly runs on trust in its money; remove it, and daily life itself starts to break down.",
+      "props": [
+        {
+          "name": "handshake",
+          "label": "nobody lends or invests"
+        },
+        {
+          "name": "exchange",
+          "label": "back to barter"
+        },
+        {
+          "name": "warning",
+          "label": "society runs on trust"
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "type": "callout",
+      "narration": "Here's the saver's nightmare in one number. At just fifty percent monthly inflation — the technical floor of hyperinflation — money loses about ninety-nine percent of its value in a year. A fortune in January is pocket change by December. Hyperinflation is, quite literally, a hundred-percent tax on everyone holding cash.",
+      "text": "−99% / year",
+      "sub": "what cash loses at 'only' 50% monthly inflation",
+      "icon": "banknote"
+    },
+    {
+      "id": "s22",
+      "type": "character",
+      "pose": "explain",
+      "narration": "So people adapt in desperate ways. They spend their wages within hours of being paid. They hoard physical goods instead of cash. They abandon the local money entirely and switch to US dollars — a process called dollarization — or to gold and crypto. The official currency becomes something you offload as fast as humanly possible, not something you hold.",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "switch to US dollars"
+        },
+        {
+          "name": "goldbar",
+          "label": "hoard hard assets"
+        },
+        {
+          "name": "warning",
+          "label": "spend it within hours"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "type": "callout",
+      "narration": "Dollarization is so common it has a number. In severely hit countries, the US dollar can quietly become the real currency for the majority of serious transactions — homes, cars, savings — while the local money is used only for small daily change that nobody wants to hold overnight.",
+      "text": "the dollar wins",
+      "sub": "what people flee to when their currency dies",
+      "icon": "exchange"
+    },
+    {
+      "id": "s59",
+      "type": "character",
+      "pose": "explain",
+      "narration": "And this is why gold and, more recently, crypto catch fire in these countries. People aren't chasing a trend — they're desperate for anything the government cannot print more of. A scarce asset holds value precisely because no official can conjure billions more of it overnight. Scarcity becomes the whole point.",
+      "props": [
+        {
+          "name": "goldbar",
+          "label": "gold & crypto catch fire"
+        },
+        {
+          "name": "printer",
+          "label": "can't be printed"
+        },
+        {
+          "name": "shield",
+          "label": "scarcity = safety"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "type": "title",
+      "narration": "So could it ever happen to a rich, stable country?",
+      "heading": "Could It Happen Here?",
+      "kicker": "the honest answer"
+    },
+    {
+      "id": "s24",
+      "type": "character",
+      "pose": "explain",
+      "narration": "The honest answer: true hyperinflation is very unlikely in a country like the US, but not for the reason you'd think. It's not that America can't print money — it prints enormous amounts. It's that the dollar is still deeply trusted worldwide, and an independent central bank is willing to cause pain to defend that trust. Hyperinflation is ultimately a disease of lost confidence, not just big numbers.",
+      "props": [
+        {
+          "name": "shield",
+          "label": "the dollar is trusted"
+        },
+        {
+          "name": "bank",
+          "label": "independent central bank"
+        },
+        {
+          "name": "warning",
+          "label": "confidence is the firewall"
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "type": "character",
+      "pose": "explain",
+      "narration": "That said, the warning signs are universal, so watch them anywhere. Persistent large deficits funded by the central bank, a currency sliding fast, and a government leaning on the printing press are the early symptoms everywhere. No rich country is immune to the direction — only, for now, to the extreme. Trust is earned slowly and lost fast.",
+      "props": [
+        {
+          "name": "warning",
+          "label": "watch the warning signs"
+        },
+        {
+          "name": "printer",
+          "label": "deficits funded by printing"
+        },
+        {
+          "name": "chartdown",
+          "label": "trust lost fast"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "type": "character",
+      "pose": "present",
+      "narration": "But the lesson for you is universal, wherever you live. Cash is only ever as safe as the government behind it. The defense against inflation, mild or extreme, is owning things that can't be printed — stocks, real estate, and a sensible slice of hard assets. Money sitting idle always loses to inflation. The only question is how fast.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "own what can't be printed"
+        },
+        {
+          "name": "house",
+          "label": "stocks, property, hard assets"
+        },
+        {
+          "name": "warning",
+          "label": "idle cash always loses"
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "type": "character",
+      "pose": "present",
+      "narration": "And if you ever live through high inflation, speed is everything. Move savings out of the collapsing currency into stable money or hard assets fast, borrow in the weak currency if you can repay it in cheaper future money, and never hold large cash balances. The rules flip entirely: in hyperinflation, debt can be a gift and cash is the trap.",
+      "props": [
+        {
+          "name": "exchange",
+          "label": "flee the currency fast"
+        },
+        {
+          "name": "house",
+          "label": "hold hard assets"
+        },
+        {
+          "name": "warning",
+          "label": "cash is the trap"
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "type": "character",
+      "pose": "present",
+      "narration": "And the everyday takeaway is simply good financial hygiene. Don't hold more cash than you need; keep the rest in productive assets that grow with or beyond inflation. This protects you against the mild inflation you'll definitely face, and against the extreme kind you hopefully never will. The habit is the same either way.",
+      "props": [
+        {
+          "name": "chartup",
+          "label": "keep cash productive"
+        },
+        {
+          "name": "house",
+          "label": "assets that beat inflation"
+        },
+        {
+          "name": "smiley",
+          "label": "same habit, both cases"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "type": "character",
+      "pose": "explain",
+      "narration": "Because here's the real lesson. Money isn't wealth — it's a promise, and a promise is only worth the trust behind it. The countries at the top of our ranking didn't run out of paper. They ran out of trust. Watch how much a government prints, and how hard it protects its currency's credibility. That, far more than any number, tells you whether your savings are safe.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "money = a promise"
+        },
+        {
+          "name": "scale",
+          "label": "worth only the trust"
+        },
+        {
+          "name": "warning",
+          "label": "watch the printing"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "If this made inflation finally click, hit subscribe — and tell me which price tag you want me to break down next.",
+      "props": [
+        {
+          "name": "banknote",
+          "label": "which price tag next?"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "type": "character",
+      "pose": "celebrate",
+      "expression": "happy",
+      "narration": "I do the reading. You get the parts that matter.",
+      "props": [
+        {
+          "name": "newspaper",
+          "label": "…what matters"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price of goods and services in terms of money"
+    },
+    {
+      "id": "wiki-hyperinflation",
+      "name": "Hyperinflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hyperinflation",
+      "quote": "quickly erodes the real value of the local currency"
+    },
+    {
+      "id": "wiki-moneysupply",
+      "name": "Money supply (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_supply",
+      "quote": "the total volume of money held by the public at a particular point in time"
+    },
+    {
+      "id": "wiki-qtm",
+      "name": "Quantity theory of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Quantity_theory_of_money",
+      "quote": "the general price level of goods and services is directly proportional to the amount of money in circulation"
+    },
+    {
+      "id": "wiki-currencycrisis",
+      "name": "Currency crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Currency_crisis",
+      "quote": "the value of foreign denominated debt will rise drastically"
+    }
+  ],
+  "youtube": {
+    "title": "Top 10 Countries by Inflation (and Why Their Money Died)",
+    "alts": [
+      "The Countries Where Money Became Worthless",
+      "Why 3% Inflation Is Nothing: The Hyperinflation Club"
+    ],
+    "hook": "Americans panicked at 9% inflation in 2022 — in Zimbabwe, at the peak, prices doubled roughly every 24 hours, and the government printed a $100-trillion note worth a few US dollars. This is the top countries by inflation, ranked, and exactly why a currency turns to confetti. We cover the recent hyperinflation club (Zimbabwe, Lebanon, Argentina ~200%+, Venezuela, Sudan, Turkey ~65%), put US inflation (~3%) next to them for a humbling reality check, and explain the single mechanism behind nearly every case: a government printing money to fund its deficits (the quantity theory of money), which collapses public confidence and tips into a self-feeding currency crisis. Then the human cost — savings vaporized, dollarization, barter — and the big question: could it ever happen to a rich, stable country like the US? (Short answer: very unlikely, because hyperinflation is a disease of lost trust, and the dollar is still trusted — but idle cash always loses to inflation, so own what can't be printed.) Fully cited.",
+    "bullets": [
+      "The hyperinflation club ranked (recent annual rates)",
+      "US ~3% next to Argentina ~200% and Zimbabwe ~500%+",
+      "The one cause: printing money to fund deficits",
+      "The confidence collapse + currency-crisis spiral",
+      "The human cost: savings vaporized, dollarization, barter",
+      "Could it happen in the US? And how to protect yourself"
+    ],
+    "tags": [
+      "hyperinflation",
+      "inflation by country",
+      "highest inflation countries",
+      "zimbabwe inflation",
+      "argentina inflation",
+      "venezuela",
+      "money printing",
+      "currency collapse",
+      "quantity theory of money",
+      "dollarization",
+      "money explained",
+      "Napkin Numbers"
+    ],
+    "hashtags": [
+      "#inflation",
+      "#hyperinflation",
+      "#economics",
+      "#money"
+    ],
+    "thumbnail": {
+      "hookTop": "INFLATION GONE",
+      "hookBot": "COMPLETELY MAD",
+      "napkinNumber": "500%+",
+      "napkinSub": "the worst countries' yearly inflation",
+      "deco": "chartup"
+    },
+    "chapters": [
+      [
+        "what turns normal inflation into a catastrophe",
+        "Inflation to hyper"
+      ],
+      [
+        "rank the highest-inflation countries",
+        "The ranking"
+      ],
+      [
+        "why does this happen",
+        "The one cause"
+      ],
+      [
+        "other half is trust",
+        "When trust dies"
+      ],
+      [
+        "what does this actually do to a normal person",
+        "The human cost"
+      ],
+      [
+        "could it ever happen to a rich",
+        "Could it happen here?"
+      ],
+      [
+        "isn't wealth",
+        "The real lesson"
+      ]
+    ]
+  }
+}
