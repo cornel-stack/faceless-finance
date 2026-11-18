@@ -1,0 +1,179 @@
+{
+  "id": "SH034",
+  "num": 34,
+  "slug": "price-level-since-2020",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP028",
+  "sourceTitle": "Why Prices Won't Stop Rising",
+  "title": "The Price Level Since 2020, Drawn Honestly",
+  "hook": "The price level since 2020, drawn honestly.",
+  "question": "Does this match your receipts?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "the level of prices of goods and services",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price of goods and services",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-shrink",
+      "name": "Shrinkflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shrinkflation",
+      "quote": "the reduction of available products",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's draw the actual price level since twenty twenty, honestly, because the headlines keep saying inflation is beaten.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "coin"
+          ],
+          "lines": [
+            "Prices since",
+            "2020."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Inflation did cool from its peak. But cooling inflation only means prices climb slower, not that they fall.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "priceTag",
+          "kicker": "the key distinction",
+          "line": "Slower ≠ cheaper",
+          "sub": "the level never came back down"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Inflation is the rate the average price of goods and services goes up.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Stacked up since twenty twenty, the cumulative rise is roughly twenty percent on everyday goods.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~20%",
+          "label": "higher prices since 2020",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The CPI tracks that level, and the line just keeps grinding upward.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Zoom out further and about eighty-five percent of the nineteen seventy dollar's value is already gone.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "~85%",
+          "label": "of the 1970 dollar, gone",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And where prices can't rise, the package quietly shrinks instead.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-shrink",
+          "kicker": "Wikipedia · shrinkflation"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The dollar is, by design, a slowly melting ice cube.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A melting dollar",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So every single year you hold plain cash, a little more of its value quietly melts away for good.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Cash melts",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So does that rising line actually match your receipts?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Match your receipts?",
+          "sub": "Comment yes or no"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

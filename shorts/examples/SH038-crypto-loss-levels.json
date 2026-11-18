@@ -1,0 +1,194 @@
+{
+  "id": "SH038",
+  "num": 38,
+  "slug": "crypto-loss-levels",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP030",
+  "sourceTitle": "Crypto Is a Brilliant Scam and Here Is the Math",
+  "title": "Every Level Of Crypto Loss",
+  "hook": "Every level of crypto loss.",
+  "question": "Which rung did you hit?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-greaterfool",
+      "name": "Greater fool theory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greater_fool_theory",
+      "quote": "resold at an even higher price",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-pump",
+      "name": "Pump and dump (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pump_and_dump",
+      "quote": "artificially inflating the price",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ponzi",
+      "name": "Ponzi scheme (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ponzi_scheme",
+      "quote": "pays apparent profits to earlier investors",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's climb the ladder of how people actually lose money in crypto, rung by painful rung.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "coin"
+          ],
+          "lines": [
+            "Every level",
+            "of loss."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "First, you simply buy the top and ride it down. Then you get caught in a pump and dump. Then an outright rug pull. And at the bottom, a full Ponzi.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "How crypto money dies",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Bought the top",
+              "value": "–50%",
+              "note": "paper hands, red bags",
+              "color": "#5c544c",
+              "bar": 0.4
+            },
+            {
+              "rank": "2",
+              "name": "Pump & dump",
+              "value": "–80%",
+              "note": "insiders sold to you",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "Rug pull",
+              "value": "–100%",
+              "note": "team vanished",
+              "color": "#17120f",
+              "bar": 0.9
+            },
+            {
+              "rank": "4",
+              "name": "Ponzi",
+              "value": "–100%",
+              "note": "it was never real",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A pump and dump artificially inflates the price so insiders can sell to you.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-pump",
+          "kicker": "Wikipedia · pump and dump"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Across all these schemes, tens of billions of dollars vanish in a single year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "$tens of B",
+          "label": "lost to crypto scams a year",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A Ponzi just pays early investors with the money from new ones, until it collapses.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ponzi",
+          "kicker": "Wikipedia · Ponzi scheme"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Every rung relies on the same thing, a greater fool arriving behind you.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "A greater fool",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Without that next buyer, every level of this ladder caves in.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-greaterfool",
+          "kicker": "Wikipedia · greater fool theory"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And notice the pattern, almost every single level needs a fresh wave of buyers to keep it alive.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Needs new buyers",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So be honest, which rung did you hit?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "vault",
+          "line": "Which rung did you hit?",
+          "sub": "Comment the level"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}

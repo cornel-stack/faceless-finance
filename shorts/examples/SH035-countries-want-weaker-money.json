@@ -1,0 +1,167 @@
+{
+  "id": "SH035",
+  "num": 35,
+  "slug": "countries-want-weaker-money",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP029",
+  "sourceTitle": "Why Countries Want Weaker Currencies",
+  "title": "Countries Want Their Own Money Worth Less",
+  "hook": "Countries want their own money to be worth less.",
+  "question": "Would you want that?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-devaluation",
+      "name": "Devaluation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Devaluation",
+      "quote": "an official lowering of the value of a",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-export",
+      "name": "Export (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Export",
+      "quote": "a good produced in one country",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-currencywar",
+      "name": "Currency war (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Currency_war",
+      "quote": "countries seek to gain a trade advantage",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "It sounds insane, but many countries actively want their own currency to be worth less. On purpose.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "flagStack",
+          "country": "cn",
+          "trend": "down",
+          "props": [
+            "chartDown",
+            "globe"
+          ],
+          "lines": [
+            "They want it",
+            "worth less?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The reason is exports. A weaker currency makes everything a country sells cheaper for foreign buyers.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "globe",
+          "kicker": "the export trick",
+          "line": "Cheaper exports",
+          "sub": "a weak currency sells more abroad"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Exports are goods produced at home and sold to buyers in other countries.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-export",
+          "kicker": "Wikipedia · export"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "So a weaker currency can mean more factory orders, more jobs, and a bigger trade surplus.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "flagStack",
+          "country": "jp",
+          "trend": "down",
+          "big": "+exports",
+          "label": "the weak-currency payoff",
+          "props": [
+            "chartUp",
+            "bill"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Deliberately lowering a currency's value even has a name, devaluation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-devaluation",
+          "kicker": "Wikipedia · devaluation"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "When several countries try it at once, you get a race to the bottom, a currency war.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Currency war",
+          "props": [
+            "fire",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That's when countries compete to weaken their money for a trade advantage.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-currencywar",
+          "kicker": "Wikipedia · currency war"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A strong currency flatters the headlines, but a weaker one can quietly sell far more cars and steel abroad.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Weak sells more",
+          "props": [
+            "bill",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So knowing all that, would you actually want your money to be worth less?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globeQ",
+          "line": "Would you want that?",
+          "sub": "Comment your take"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}
