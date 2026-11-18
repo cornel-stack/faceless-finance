@@ -1,0 +1,199 @@
+{
+  "id": "SH193",
+  "num": 193,
+  "slug": "wedding-cost-vs-should",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP107",
+  "sourceTitle": "What a Wedding Costs vs What It Should",
+  "title": "What A Wedding Costs Against What It Should",
+  "hook": "What a wedding costs against what it should.",
+  "question": "What did yours cost?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-wedding",
+      "name": "Wedding (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wedding",
+      "quote": "wedding",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reception",
+      "name": "Wedding reception (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wedding_reception",
+      "quote": "wedding reception",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-conspicuous",
+      "name": "Conspicuous consumption (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Conspicuous_consumption",
+      "quote": "conspicuous consumption",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-marriage",
+      "name": "Marriage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Marriage",
+      "quote": "marriage",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The average American wedding costs a staggering amount, for a single day. Let's compare what it costs against what it needs to.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "What a wedding",
+            "really costs."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The average US wedding now runs around thirty-three thousand dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "$33,000",
+          "label": "average US wedding",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Most of that spend is the party, not the marriage itself.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wedding",
+          "kicker": "Wikipedia · wedding"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The actual legal act of getting married costs under a hundred dollars.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Wedding spend",
+          "thenLabel": "The party",
+          "thenValue": "$33K",
+          "nowLabel": "The marriage",
+          "nowValue": "<$100",
+          "sub": "99% is optional"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The reception, the venue and catering, eats most of the budget.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reception",
+          "kicker": "Wikipedia · wedding reception"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Invested instead, that thirty-three thousand could have grown into a quarter of a million over a lifetime.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$250K+",
+          "label": "what it could have grown into",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A lot of the spend is pure conspicuous consumption.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-conspicuous",
+          "kicker": "Wikipedia · conspicuous consumption"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Research even suggests bigger, pricier weddings correlate with higher divorce rates, not lower.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Spend more, split more",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "A single day's party, or a serious down payment on an actual shared future.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Party vs future",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The marriage is the contract; the rest is optional spending.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-marriage",
+          "kicker": "Wikipedia · marriage"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what did your wedding actually cost?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "What did yours cost?",
+          "sub": "Comment the number"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

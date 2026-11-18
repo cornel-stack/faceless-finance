@@ -1,0 +1,199 @@
+{
+  "id": "SH197",
+  "num": 197,
+  "slug": "prices-1970-vs-today",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP109",
+  "sourceTitle": "The Price of Everything in 1970 vs 2026",
+  "title": "Every Price In 1970 Against Today",
+  "hook": "Every price in 1970 against today.",
+  "question": "Which jumped the most?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "inflation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-realwages",
+      "name": "Real wages (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_wages",
+      "quote": "real wages",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "consumer price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-realnom",
+      "name": "Real versus nominal value (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_versus_nominal_value_(economics)",
+      "quote": "real versus nominal",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Line up the price of everyday things in nineteen seventy against today, and the numbers are almost comical.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "1970",
+            "vs today."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A single nineteen seventy dollar now buys what about eight dollars buys today.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "The dollar",
+          "thenLabel": "1970",
+          "thenValue": "$1",
+          "nowLabel": "Today",
+          "nowValue": "~$8",
+          "sub": "same buying power"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Inflation has steadily eroded the dollar for over fifty years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "At typical rates, prices roughly double every eighteen years, again and again.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "2× / 18 yrs",
+          "label": "how fast prices double",
+          "props": [
+            "chartUp",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The CPI has tracked that climb the entire time.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "But not everything rose evenly. Home prices jumped around eighteen times while real wages stayed almost flat.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "18× vs flat",
+          "label": "home prices vs real wages",
+          "props": [
+            "home",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Real wages measure what your pay can actually buy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-realwages",
+          "kicker": "Wikipedia · real wages"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Which is exactly why a single income stretched so much further back then.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "One income was enough",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "One income used to buy a house and raise a family; now it barely covers the rent.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "One income, then vs now",
+          "props": [
+            "home",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The trick is comparing real values, adjusted for inflation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-realnom",
+          "kicker": "Wikipedia · real versus nominal"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So out of everything, which price do you think jumped the most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "Which jumped most?",
+          "sub": "Comment your guess"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

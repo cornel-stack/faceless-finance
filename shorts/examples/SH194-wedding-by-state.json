@@ -1,0 +1,219 @@
+{
+  "id": "SH194",
+  "num": 194,
+  "slug": "wedding-by-state",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP107",
+  "sourceTitle": "What a Wedding Costs vs What It Should",
+  "title": "Wedding Costs, State By State",
+  "hook": "Wedding costs, state by state.",
+  "question": "Where does yours rank?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-wedding",
+      "name": "Wedding (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wedding",
+      "quote": "wedding",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-marriage",
+      "name": "Marriage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Marriage",
+      "quote": "marriage",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reception",
+      "name": "Wedding reception (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wedding_reception",
+      "quote": "wedding reception",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-conspicuous",
+      "name": "Conspicuous consumption (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Conspicuous_consumption",
+      "quote": "conspicuous consumption",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The price of the same wedding swings dramatically depending on which state you say I do in. Let's map it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "Weddings,",
+            "by state."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The priciest states can run two to three times the cheapest, for a similar celebration.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Average wedding cost",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "New Jersey / NY",
+              "value": "~$50K+",
+              "note": "priciest",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "US average",
+              "value": "~$33K",
+              "note": "the baseline",
+              "color": "#17120f",
+              "bar": 0.65
+            },
+            {
+              "rank": "3",
+              "name": "Cheaper states",
+              "value": "~$20K",
+              "note": "still huge",
+              "color": "#1f7a3d",
+              "bar": 0.4
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Venue and guest count drive most of the regional gap.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wedding",
+          "kicker": "Wikipedia · wedding"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Big coastal cities push the average up through sky-high venue and catering costs.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "venue",
+          "label": "the biggest line item",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The reception alone can be half the total budget.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reception",
+          "kicker": "Wikipedia · wedding reception"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Yet the marriage itself, the part that actually lasts, costs the same everywhere, almost nothing.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The vows are free",
+          "props": [
+            "check",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Marriage is a legal contract, not a spending requirement.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-marriage",
+          "kicker": "Wikipedia · marriage"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Your zip code alone can double the bill for the exact same celebration.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Zip code doubles it",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "A lot of the gap is pure conspicuous consumption.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-conspicuous",
+          "kicker": "Wikipedia · conspicuous consumption"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Same vows, same love, wildly different bill, all down to the venue's zip code.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same vows, diff bill",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So where does your state's wedding cost rank?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Where does yours rank?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

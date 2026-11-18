@@ -1,0 +1,197 @@
+{
+  "id": "SH195",
+  "num": 195,
+  "slug": "gdp-not-earnings",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP108",
+  "sourceTitle": "GDP per Capita vs What People Actually Earn",
+  "title": "GDP Per Capita Is Not What People Earn",
+  "hook": "GDP per capita is not what people earn.",
+  "question": "What is your gap?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-gdp",
+      "name": "Gross domestic product (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+      "quote": "gross domestic product",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-medincome",
+      "name": "Median income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median_income",
+      "quote": "median income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inequality",
+      "name": "Income inequality (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_inequality",
+      "quote": "income inequality",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sol",
+      "name": "Standard of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Standard_of_living",
+      "quote": "standard of living",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Politicians love quoting GDP per capita as proof people are rich. But it is not even close to what people actually earn.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "GDP per head",
+            "≠ your pay."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "GDP per capita just divides the whole economy by the population. It's an average, and averages lie.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "globe",
+          "kicker": "the trick",
+          "line": "It's an average",
+          "sub": "and averages hide the truth"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "GDP measures everything an economy produces, not take-home pay.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gdp",
+          "kicker": "Wikipedia · GDP"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A country can post a hundred thousand in GDP per person while the median worker earns thirty.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "$100K vs $30K",
+          "label": "GDP per head vs median earner",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The median income is what the person in the middle really earns.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-medincome",
+          "kicker": "Wikipedia · median income"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The gap is created when a huge share of the gains flows to the very top.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "the gap",
+          "label": "goes to the top",
+          "props": [
+            "chartUp",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That's income inequality, quietly inflating the average.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inequality",
+          "kicker": "Wikipedia · income inequality"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "So whenever you hear GDP per capita, ask about the median instead.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Ask for the median",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Next time a politician quotes GDP per head, quietly ask what the median worker earns.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Ask the median",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Median income tracks the real standard of living far better.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sol",
+          "kicker": "Wikipedia · standard of living"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So what's the gap between the average and the real worker in your country?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "What is your gap?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

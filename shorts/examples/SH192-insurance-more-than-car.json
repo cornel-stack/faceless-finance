@@ -1,0 +1,197 @@
+{
+  "id": "SH192",
+  "num": 192,
+  "slug": "insurance-more-than-car",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP106",
+  "sourceTitle": "Insurance: What Car, Home and Health Cost in Every State",
+  "title": "The State Where Insurance Costs More Than The Car",
+  "hook": "The state where insurance costs more than the car.",
+  "question": "Is it yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-insurance",
+      "name": "Insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Insurance",
+      "quote": "insurance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-riskpool",
+      "name": "Risk pool (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Risk_pool",
+      "quote": "risk pool",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-deductible",
+      "name": "Deductible (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deductible",
+      "quote": "deductible",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-actuary",
+      "name": "Actuary (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Actuary",
+      "quote": "actuary",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "In one state, insuring a car over a few years can cost more than the car itself. Let's rank the worst.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "car",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Insurance >",
+            "the car."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Premiums are driven by local risk, dense traffic, theft, weather, and how litigious the state is.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "car",
+          "kicker": "what drives it",
+          "line": "Local risk",
+          "sub": "traffic, theft, weather, lawsuits"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "You're pooled with everyone else in your area's risk.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-riskpool",
+          "kicker": "Wikipedia · risk pool"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "In the priciest states, a few years of premiums can quietly exceed a modest car's value.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "car",
+          "big": "> the car",
+          "label": "premiums vs the vehicle",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Insurance is priced on the chance and cost of a claim.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-insurance",
+          "kicker": "Wikipedia · insurance"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "You can lower the premium by raising your deductible, but that means more risk on you.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "car",
+          "big": "deductible",
+          "label": "the lever you control",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A deductible is what you pay before insurance kicks in.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deductible",
+          "kicker": "Wikipedia · deductible"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Which is why identical drivers pay wildly different premiums across a state line.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same driver, diff price",
+          "props": [
+            "car",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "You can't opt out of it, you can only shop around and raise your deductible.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Can't opt out",
+          "props": [
+            "car",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "An actuary prices your exact risk down to tiny details.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-actuary",
+          "kicker": "Wikipedia · actuary"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, is your state the one where insurance beats the car?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "car",
+          "line": "Is it yours?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

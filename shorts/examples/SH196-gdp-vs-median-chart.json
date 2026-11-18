@@ -1,0 +1,204 @@
+{
+  "id": "SH196",
+  "num": 196,
+  "slug": "gdp-vs-median-chart",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP108",
+  "sourceTitle": "GDP per Capita vs What People Actually Earn",
+  "title": "GDP Per Capita Against Median Income, By Country",
+  "hook": "GDP per capita against median income, by country.",
+  "question": "Which country is most honest?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-gdp",
+      "name": "Gross domestic product (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+      "quote": "gross domestic product",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-medincome",
+      "name": "Median income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median_income",
+      "quote": "median income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sol",
+      "name": "Standard of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Standard_of_living",
+      "quote": "standard of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inequality",
+      "name": "Economic inequality (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_inequality",
+      "quote": "income inequality",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Draw GDP per capita next to median income for each country, and the gap between the two tells you who's really doing well.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "GDP vs the",
+            "median earner."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In some countries the two lines sit close. In others, GDP towers far above what people actually take home.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "GDP vs median income",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Small gap",
+              "value": "honest",
+              "note": "gains shared",
+              "color": "#1f7a3d",
+              "bar": 0.4
+            },
+            {
+              "rank": "2",
+              "name": "US",
+              "value": "wide gap",
+              "note": "top-heavy",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "3",
+              "name": "Tax havens",
+              "value": "huge gap",
+              "note": "GDP wildly inflated",
+              "color": "#17120f",
+              "bar": 0.9
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A high GDP per capita can hide a struggling median worker.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gdp",
+          "kicker": "Wikipedia · GDP"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A smaller gap means the average and the typical person live similar lives.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "small gap",
+          "label": "= gains are shared",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Median income is the honest measure of a typical life.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-medincome",
+          "kicker": "Wikipedia · median income"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The rankings even flip. Some high-GDP countries fall far behind on what people actually keep.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Rankings flip",
+          "props": [
+            "globe",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Median income tracks the real standard of living far better.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sol",
+          "kicker": "Wikipedia · standard of living"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The widest gaps are exactly where a booming headline hides a quietly struggling middle class.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Headline hides it",
+          "props": [
+            "globe",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "That gap is a direct read on income inequality.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inequality",
+          "kicker": "Wikipedia · income inequality"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So which country's numbers look the most honest to you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "Which is most honest?",
+          "sub": "Comment your pick"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

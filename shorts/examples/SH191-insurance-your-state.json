@@ -1,0 +1,200 @@
+{
+  "id": "SH191",
+  "num": 191,
+  "slug": "insurance-your-state",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP106",
+  "sourceTitle": "Insurance: What Car, Home and Health Cost in Every State",
+  "title": "Car, Home And Health Insurance In Your State",
+  "hook": "Car, home and health insurance in your state.",
+  "question": "What is your total?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-insurance",
+      "name": "Insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Insurance",
+      "quote": "insurance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-actuary",
+      "name": "Actuary (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Actuary",
+      "quote": "actuary",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-homeins",
+      "name": "Home insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_insurance",
+      "quote": "home insurance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-deductible",
+      "name": "Deductible (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deductible",
+      "quote": "deductible",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Add up car, home, and health insurance, and it's one of the biggest bills nobody really tracks. It swings hugely by state.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "Insurance,",
+            "by state."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A household's total insurance bill ranges from around seven thousand to fourteen thousand dollars a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$7K–$14K",
+          "label": "total insurance, per year",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Insurance spreads individual risk across a large pool of people.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-insurance",
+          "kicker": "Wikipedia · insurance"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Behind your premium sits an actuary, weighing dozens of factors to price your personal risk.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "dozens",
+          "label": "of factors set your price",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "An actuary is the specialist who calculates those risks.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-actuary",
+          "kicker": "Wikipedia · actuary"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In most states, even your credit score secretly nudges your premium up or down.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Your credit sets it",
+          "props": [
+            "lock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Home insurance alone varies wildly with climate and local disasters.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-homeins",
+          "kicker": "Wikipedia · home insurance"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Over a lifetime, a typical household pays around four hundred thousand dollars in premiums.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$400K",
+          "label": "lifetime insurance premiums",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "It's a quiet, unavoidable tax on simply existing, and it quietly grows every single year.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "A tax on existing",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Raising your deductible is the main way to tame the premium.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deductible",
+          "kicker": "Wikipedia · deductible"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what does your insurance total actually come to?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "What is your total?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

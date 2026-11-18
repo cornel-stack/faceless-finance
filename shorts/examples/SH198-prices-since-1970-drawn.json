@@ -1,0 +1,227 @@
+{
+  "id": "SH198",
+  "num": 198,
+  "slug": "prices-since-1970-drawn",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP109",
+  "sourceTitle": "The Price of Everything in 1970 vs 2026",
+  "title": "Prices Since 1970, Drawn",
+  "hook": "Prices since 1970, drawn.",
+  "question": "What else should be on here?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "consumer price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-pricelevel",
+      "name": "Price level (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Price_level",
+      "quote": "price level",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-realwages",
+      "name": "Real wages (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_wages",
+      "quote": "real wages",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "inflation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's draw the price of everyday things since nineteen seventy on one chart. The lines climb a mountain.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "coin"
+          ],
+          "lines": [
+            "Prices since",
+            "1970."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The overall price level has climbed roughly eightfold over the span.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~8×",
+          "label": "the price level since 1970",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The price level is the overall cost of a basket of goods.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-pricelevel",
+          "kicker": "Wikipedia · price level"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "But the steepest lines are housing, healthcare, and college, far outrunning everything else.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Climb since 1970",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "College / health",
+              "value": "steepest",
+              "note": "far outran inflation",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Housing",
+              "value": "very steep",
+              "note": "18×",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "General prices",
+              "value": "~8×",
+              "note": "the baseline",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "4",
+              "name": "Real wages",
+              "value": "nearly flat",
+              "note": "the problem",
+              "color": "#5c544c",
+              "bar": 0.2
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The CPI tracks each of those categories separately.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The flattest line of all is the scary one, real wages that barely moved.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Wages stayed flat",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Which is why life feels harder even as the economy grew.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-realwages",
+          "kicker": "Wikipedia · real wages"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The scariest line is the flat one, the wages that simply refused to keep up.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "The flat line",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Inflation climbed while real pay barely moved for decades.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Everything got pricier except the one line that pays for it all, your wages.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Everything but wages",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So what else do you think belongs on that chart?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "What else belongs?",
+          "sub": "Comment a price"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
