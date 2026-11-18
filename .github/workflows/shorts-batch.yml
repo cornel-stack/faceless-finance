@@ -38,6 +38,9 @@ jobs:
       - name: Install narration dependencies
         run: pip install -r tools/narration/requirements.txt
 
+      - name: Install source-card browser (Playwright)
+        run: pnpm --filter @ff/sourcecards exec playwright install --with-deps chromium
+
       - name: Render every short in the manifest
         run: |
           mkdir -p render/out upload
@@ -56,6 +59,7 @@ jobs:
           print(f"{len(sh['scenes'])} scenes")
           PY
             python tools/narration/synth.py --episode "$PATHJSON" --intro 0 --pad 0.35
+            node tools/sourcecards/capture.mjs --episode "$PATHJSON" || echo "(no sources to capture)"
             pnpm --filter @ff/render exec remotion render Short "out/${NUM}.${SLUG}.mp4" --codec=h264
             cp "render/out/${NUM}.${SLUG}.mp4" "upload/${NUM}.${SLUG}.mp4"
             echo "::endgroup::"

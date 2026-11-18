@@ -11,6 +11,8 @@ import {
 } from "remotion";
 import { theme } from "./theme";
 import { display, sans } from "./fonts";
+import { ScreenshotSource } from "./components/ScreenshotSource";
+import type { SourceEntry } from "./SourceCardDemo";
 import {
   Globe,
   GlobeX,
@@ -50,9 +52,10 @@ export type ShortRow = { rank?: string; name: string; value: string; note?: stri
 
 // A single visual shot. A scene is itself a view; `shots` splits it into cuts.
 export type ShortView = {
-  block?: "hook" | "center" | "flash" | "stat" | "rows" | "thennow" | "question";
+  block?: "hook" | "center" | "flash" | "stat" | "rows" | "thennow" | "question" | "evidence";
   bg?: "cream" | "ink" | "red" | "gold";
   art?: ShortArt;
+  sourceId?: string;
   country?: "jp" | "cn" | "us";
   trend?: "up" | "down";
   props?: MiniName[];
@@ -268,12 +271,31 @@ const Content: React.FC<{ view: ShortView; dark: boolean }> = ({ view: s, dark }
   );
 };
 
-const Card: React.FC<{ view: ShortView }> = ({ view }) => {
+const EvidenceCard: React.FC<{ view: ShortView; entry?: SourceEntry }> = ({ view, entry }) => {
+  const dark = view.bg === "ink" || view.bg === "red";
+  return (
+    <AbsoluteFill style={{ background: BGS[view.bg ?? "cream"] }}>
+      <Wordmark dark={dark} />
+      <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 28, padding: "0 50px", zIndex: 2 }}>
+        {view.kicker && <div style={{ ...usePop(2), fontFamily: sans, fontWeight: 800, fontSize: 44, color: dark ? CREAM : theme.inkSoft, textTransform: "uppercase", letterSpacing: 1 }}>{view.kicker}</div>}
+        {entry ? (
+          <ScreenshotSource image={entry.image} naturalW={entry.width} naturalH={entry.height} url={entry.url} quoteRect={entry.quoteRect} words={entry.words} width={960} />
+        ) : (
+          <div style={{ fontFamily: sans, fontSize: 40, color: theme.inkSoft }}>[evidence: {view.sourceId}]</div>
+        )}
+        {view.line && <div style={{ ...usePop(10), fontFamily: display, fontWeight: 900, fontSize: 72, color: dark ? "#fff" : theme.ink, textAlign: "center", lineHeight: 1.05 }}>{view.line}</div>}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+const Card: React.FC<{ view: ShortView; sources?: Record<string, SourceEntry> }> = ({ view, sources }) => {
   const frame = useCurrentFrame();
   const dark = view.bg === "ink" || view.bg === "red";
   const bg = BGS[view.bg ?? "cream"];
   const punch = view.flash ? interpolate(frame, [0, 5], [1.18, 1], { extrapolateRight: "clamp" }) : 1;
   const hasArt = !!view.art;
+  if (view.block === "evidence") return <EvidenceCard view={view} entry={view.sourceId ? sources?.[view.sourceId] : undefined} />;
   return (
     <AbsoluteFill style={{ background: bg }}>
       <Props names={view.props} />
@@ -302,7 +324,7 @@ const Progress: React.FC<{ total: number }> = ({ total }) => {
   );
 };
 
-export const Short: React.FC<{ scenes: ShortScene[]; timing?: number[]; audioSrc?: string }> = ({ scenes, timing, audioSrc }) => {
+export const Short: React.FC<{ scenes: ShortScene[]; timing?: number[]; audioSrc?: string; sources?: Record<string, SourceEntry> }> = ({ scenes, timing, audioSrc, sources }) => {
   const { fps } = useVideoConfig();
   const total = shortDurationInFrames(scenes, fps, timing);
   const seqs: React.ReactNode[] = [];
@@ -316,7 +338,7 @@ export const Short: React.FC<{ scenes: ShortScene[]; timing?: number[]; audioSrc
       const to = cursor + Math.round((dur * (j + 1)) / n);
       seqs.push(
         <Sequence key={`${scene.id}-${j}`} from={from} durationInFrames={Math.max(1, to - from)}>
-          <Card view={shot} />
+          <Card view={shot} sources={sources} />
         </Sequence>
       );
     });

@@ -13,6 +13,15 @@
   "voice": {
     "voiceId": "en-US-BrianNeural"
   },
+  "sources": [
+    {
+      "id": "s-foreign",
+      "name": "National debt of the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
+      "quote": "foreigners held 33%",
+      "accessed": "2026-11-18"
+    }
+  ],
   "scenes": [
     {
       "id": "s1",
@@ -115,6 +124,17 @@
             "x",
             "x"
           ]
+        }
+      ]
+    },
+    {
+      "id": "s5b",
+      "narration": "Look it up — foreigners hold only about a third of it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "s-foreign",
+          "kicker": "The receipts"
         }
       ]
     },

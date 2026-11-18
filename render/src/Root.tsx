@@ -59,7 +59,7 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1080}
         height={1920}
-        defaultProps={{ scenes: shortScenes, timing, audioSrc }}
+        defaultProps={{ scenes: shortScenes, timing, audioSrc, sources: sourcesIndex as unknown as Record<string, SourceEntry> }}
       />
       <Composition
         id="StickFigureDemo"
