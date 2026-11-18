@@ -1,0 +1,182 @@
+{
+  "id": "SH051",
+  "num": 51,
+  "slug": "pump-and-dump-40s",
+  "series": "Napkin Numbers Shorts",
+  "format": "Scandal hook",
+  "sourceEp": "EP036",
+  "sourceTitle": "How Scammers Rig the Stock Market",
+  "title": "A Pump And Dump, In 40 Seconds",
+  "hook": "A pump and dump, in 40 seconds.",
+  "question": "Seen this on your feed?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-pumpdump",
+      "name": "Pump and dump (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pump_and_dump",
+      "quote": "artificially inflating the price",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-boiler",
+      "name": "Boiler room (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boiler_room_(business)",
+      "quote": "an outbound call center selling",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-manip",
+      "name": "Market manipulation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Market_manipulation",
+      "quote": "intentionally alters the supply or",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Here is exactly how a pump and dump works, start to finish, in about forty seconds. Watch for it on your feed.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "fire"
+          ],
+          "lines": [
+            "Pump and dump,",
+            "in 40 seconds."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "First, insiders quietly buy a tiny, cheap stock that almost nobody is watching.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "Step 1",
+          "label": "insiders load up quietly",
+          "props": [
+            "coin",
+            "building"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Then they hype it everywhere, promising it is the next huge thing, to pull in a crowd of buyers.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "Step 2",
+          "label": "hype pulls in the crowd",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A pump and dump artificially inflates a price so insiders can offload.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-pumpdump",
+          "kicker": "Wikipedia · pump and dump"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "As the price rockets on all that fresh demand, the insiders quietly dump every share they hold.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "They dump",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The price collapses, and the crowd that bought the hype is left holding worthless stock.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "Step 3",
+          "label": "the crowd is left holding it",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Classic versions ran out of boiler rooms, call centers selling junk stock.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-boiler",
+          "kicker": "Wikipedia · boiler room"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Today the boiler room is just a group chat or a slick video.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Now it's a group chat",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "It's textbook market manipulation, faking demand to move a price.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-manip",
+          "kicker": "Wikipedia · market manipulation"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, have you seen this exact playbook on your feed?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Seen it on your feed?",
+          "sub": "Comment where"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

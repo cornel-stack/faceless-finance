@@ -1,0 +1,181 @@
+{
+  "id": "SH053",
+  "num": 53,
+  "slug": "japan-decades-recover",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP037",
+  "sourceTitle": "Why Japan Is Stuck",
+  "title": "Japan's Market Took Decades To Recover",
+  "hook": "Japan's market took decades to recover its peak.",
+  "question": "Could you wait that long?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-bubble",
+      "name": "Japanese asset price bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_asset_price_bubble",
+      "quote": "real estate and stock market prices",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-nikkei",
+      "name": "Nikkei 225 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nikkei_225",
+      "quote": "a stock market index for the Tokyo",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lost",
+      "name": "Lost Decades (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lost_Decades",
+      "quote": "a lengthy period of economic stagnation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "At the end of nineteen eighty-nine, Japan's stock market hit a peak so high it then took more than thirty years to climb back.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "clock"
+          ],
+          "lines": [
+            "One peak.",
+            "30+ years back."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The bubble was almost unimaginable. At one point, the land under Tokyo was worth more than all of California.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "Tokyo > CA",
+          "label": "in land value, 1989",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Both real estate and stock prices were wildly, unsustainably inflated.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bubble",
+          "kicker": "Wikipedia · Japanese asset bubble"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Then it burst. The Nikkei peaked near thirty-nine thousand, and would not see that level again for a generation.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Nikkei 225",
+          "thenLabel": "1989 peak",
+          "thenValue": "~38,900",
+          "nowLabel": "Back above it",
+          "nowValue": "~2024",
+          "sub": "roughly 34 years later"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The Nikkei is the main stock index for the Tokyo market.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-nikkei",
+          "kicker": "Wikipedia · Nikkei 225"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In between came decades of flat growth and falling prices, nicknamed the Lost Decades.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "30+ yrs",
+          "label": "to reclaim the peak",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That long stretch of stagnation even has its own name.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lost",
+          "kicker": "Wikipedia · Lost Decades"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Imagine buying at the top and waiting your entire career just to break even.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A career to break even",
+          "props": [
+            "clock",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Thirty-four long years, just to climb back to where you had already started.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "34 years to break even",
+          "props": [
+            "clock",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So honestly, could you have waited that long?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Could you wait?",
+          "sub": "Comment your answer"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": "SH058",
+  "num": 58,
+  "slug": "trading-frequency-returns",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP039",
+  "sourceTitle": "Why the Dumbest Investors Win",
+  "title": "Trading More Means Earning Less",
+  "hook": "Trading frequency against returns.",
+  "question": "How often do you trade?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-active",
+      "name": "Active management (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Active_management",
+      "quote": "the investor selects the investments",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-indexfund",
+      "name": "Index fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Index_fund",
+      "quote": "holding the same securities as the",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-passive",
+      "name": "Passive management (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Passive_management",
+      "quote": "an investing strategy that tracks",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-bogle",
+      "name": "John C. Bogle (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/John_C._Bogle",
+      "quote": "credited with popularizing the index",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's rank investors by how often they trade, and line it up against what they actually earn. The pattern is brutal.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "clock"
+          ],
+          "lines": [
+            "Trade more,",
+            "earn less."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Day traders trade constantly and mostly lose. Active funds trade a lot and usually lag. The patient index investor barely trades, and wins.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Trading vs returns",
+          "rows": [
+            {
+              "rank": "4",
+              "name": "Day traders",
+              "value": "lose",
+              "note": "trade all day",
+              "color": "#c0392b",
+              "bar": 0.3
+            },
+            {
+              "rank": "3",
+              "name": "Active funds",
+              "value": "lag",
+              "note": "trade often",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "2",
+              "name": "Occasional",
+              "value": "so-so",
+              "note": "tinker sometimes",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "1",
+              "name": "Index + wait",
+              "value": "win",
+              "note": "barely trade",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Active management means constantly picking and switching investments.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-active",
+          "kicker": "Wikipedia · active management"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Over fifteen years, roughly ninety percent of active funds lose to a simple index.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~90%",
+          "label": "of active funds lose to the index",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "An index fund just holds the whole market, and trades almost never.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-indexfund",
+          "kicker": "Wikipedia · index fund"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Every trade carries fees, taxes, and a fresh chance to be wrong.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Every trade costs",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That's the whole case for passive investing, do less, keep more.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-passive",
+          "kicker": "Wikipedia · passive management"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The math behind it is almost insulting in just how simple it really is.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Insultingly simple",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Jack Bogle built an entire empire on exactly this boring idea.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bogle",
+          "kicker": "Wikipedia · John Bogle"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So be honest, how often do you actually trade?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "How often do you trade?",
+          "sub": "Comment your frequency"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}
