@@ -1,0 +1,200 @@
+{
+  "id": "SH153",
+  "num": 153,
+  "slug": "salary-to-rent-your-city",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP087",
+  "sourceTitle": "Rent in Every Major City vs the Salary You Need",
+  "title": "The Salary You Need To Rent In Your City",
+  "hook": "The salary you need to rent in your city.",
+  "question": "Do you earn it?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-renting",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "renting",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hai",
+      "name": "Housing affordability (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "housing affordability",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-medincome",
+      "name": "Median income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median_income",
+      "quote": "median income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-gross",
+      "name": "Gross income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gross_income",
+      "quote": "gross income",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Most landlords have a hidden rule that quietly sets the salary you need just to rent. Here it is.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "The salary to",
+            "rent here."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The rule is simple. Your annual income must be about forty times the monthly rent to even qualify.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "40×",
+          "label": "income vs monthly rent",
+          "props": [
+            "home",
+            "lock"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "It's the standard screening rule renters rarely hear about.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-renting",
+          "kicker": "Wikipedia · renting"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "So a two thousand dollar apartment quietly demands an eighty thousand dollar salary.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$80K",
+          "label": "to rent a $2,000 place",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "In many cities that's roughly double what the median worker earns.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hai",
+          "kicker": "Wikipedia · housing affordability"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Which is why, in the biggest cities, rent now demands about twice the median income.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "2×",
+          "label": "salary needed vs median earned",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The median income simply hasn't kept pace with rents.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-medincome",
+          "kicker": "Wikipedia · median income"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The same two thousand dollars buys a shared room in one city and a whole house in another.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same $2,000, different worlds",
+          "props": [
+            "home",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "That hidden multiplier prices huge numbers of people out before they even tour a place.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Priced out first",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Landlords screen on gross income, before a cent of tax comes out.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gross",
+          "kicker": "Wikipedia · gross income"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, do you actually earn the salary your city demands?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Do you earn it?",
+          "sub": "Comment your city"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "id": "SH157",
+  "num": 157,
+  "slug": "retirement-savings-last-longest",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP089",
+  "sourceTitle": "The Cost of Retiring in Every Country",
+  "title": "Where Your Retirement Savings Last Longest",
+  "hook": "Where your retirement savings last longest.",
+  "question": "Would you move?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-pension",
+      "name": "Pension (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pension",
+      "quote": "pension",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-retirement",
+      "name": "Retirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement",
+      "quote": "retirement",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-socialpension",
+      "name": "Social pension (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Social_pension",
+      "quote": "social pension",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The exact same nest egg can last fifteen years in one country or fifty in another. Let's rank where it stretches furthest.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Where savings",
+            "last longest."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "It's all driven by cost of living. Cheap countries let a modest pile fund a comfortable life.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "How far a nest egg goes",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "SE Asia / LatAm",
+              "value": "longest",
+              "note": "low cost",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Southern Europe",
+              "value": "long",
+              "note": "affordable",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "US average",
+              "value": "short",
+              "note": "pricey",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "4",
+              "name": "Switzerland",
+              "value": "shortest",
+              "note": "brutal costs",
+              "color": "#c0392b",
+              "bar": 0.25
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Cost of living is the single biggest factor in how long savings last.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "To retire comfortably in the US, you typically need around one point two million in private savings.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$1.2M",
+          "label": "to retire comfortably in the US",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Because US public support only replaces part of your income.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-retirement",
+          "kicker": "Wikipedia · retirement"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The gap is enormous. The nest egg needed can be roughly six times smaller in a cheap country.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "6×",
+          "label": "smaller nest egg needed",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Where your pension stretches furthest is a real, growing choice.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-pension",
+          "kicker": "Wikipedia · pension"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Your savings don't have to last longer, they just have to be spent somewhere far cheaper.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Spend it cheaper",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Some countries even add a social pension on top.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-socialpension",
+          "kicker": "Wikipedia · social pension"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, to make your savings last, would you actually move abroad?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "Would you move?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

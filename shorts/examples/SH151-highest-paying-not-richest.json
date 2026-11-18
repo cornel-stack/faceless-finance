@@ -1,0 +1,221 @@
+{
+  "id": "SH151",
+  "num": 151,
+  "slug": "highest-paying-not-richest",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP086",
+  "sourceTitle": "The Most Expensive Cities by What You Actually Keep",
+  "title": "The Highest-Paying City Is Not The Richest One",
+  "hook": "The highest-paying city is not the richest one.",
+  "question": "Which city wins?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-disposable",
+      "name": "Disposable income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Disposable_and_discretionary_income",
+      "quote": "disposable",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-realincome",
+      "name": "Real income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_income",
+      "quote": "real income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-incidence",
+      "name": "Tax incidence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_incidence",
+      "quote": "tax incidence",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The city that pays the biggest salary often leaves you with the least. Let's rank cities by what you actually keep.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Highest-paid",
+            "≠ richest."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A hundred twenty thousand dollar salary in New York sounds huge. After tax and rent, you might keep twenty.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$20K",
+          "label": "kept from a $120K NYC salary",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "What matters is disposable income, the cash left after the essentials.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-disposable",
+          "kicker": "Wikipedia · disposable income"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "In New York, tax and rent together can swallow nearly eighty percent of the paycheck.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "78%",
+          "label": "of a NYC paycheck, gone",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A high cost of living can erase a high salary completely.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "A smaller salary in a cheaper city can leave you with far more money in hand.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "What you actually keep",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Cheap metro",
+              "value": "most",
+              "note": "low tax + rent",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Mid-size city",
+              "value": "solid",
+              "note": "balanced",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "NYC / SF",
+              "value": "least",
+              "note": "huge pay, little kept",
+              "color": "#c0392b",
+              "bar": 0.3
+            }
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Real income adjusts your pay for what it can actually buy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-realincome",
+          "kicker": "Wikipedia · real income"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And nine states charge zero income tax, quietly handing residents a raise.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "9 states",
+          "label": "charge $0 income tax",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Chase the biggest number, and a brutal cost of living can quietly claw most of it right back.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Clawed back",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "High local taxes land squarely on the resident, not the employer.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-incidence",
+          "kicker": "Wikipedia · tax incidence"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, which city actually wins once you count what's left?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "Which city wins?",
+          "sub": "Comment your city"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "SH160",
+  "num": 160,
+  "slug": "price-rises-by-category",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP090",
+  "sourceTitle": "Why Everything Got So Expensive",
+  "title": "Price Rises By Category, Ranked",
+  "hook": "Price rises by category, ranked.",
+  "question": "Does this match your bills?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "consumer price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-baumol",
+      "name": "Baumol effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Baumol_effect",
+      "quote": "Baumol effect",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-global",
+      "name": "Globalization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Globalization",
+      "quote": "globalization",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "inflation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's draw price changes by category on one chart since two thousand. The lines fan out in opposite directions.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "chartDown"
+          ],
+          "lines": [
+            "Prices, by",
+            "category."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Some lines rocket up, others crater, and the gap between them is over three hundred points.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "300+ pts",
+          "label": "gap, top riser vs faller",
+          "props": [
+            "chartUp",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The CPI breaks inflation down category by category.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The up lines are services. Education, healthcare, childcare, the things delivered by people.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Up vs down since 2000",
+          "rows": [
+            {
+              "rank": "↑",
+              "name": "College / health",
+              "value": "soared",
+              "note": "people-heavy services",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "↑",
+              "name": "Housing",
+              "value": "up",
+              "note": "limited supply",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "↓",
+              "name": "Clothing",
+              "value": "flat/down",
+              "note": "global trade",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "↓",
+              "name": "TVs / toys",
+              "value": "collapsed",
+              "note": "mass production",
+              "color": "#1f7a3d",
+              "bar": 0.15
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The Baumol effect explains why human services keep getting pricier.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-baumol",
+          "kicker": "Wikipedia · Baumol effect"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The down lines are goods we learned to make cheaply, often made abroad.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "goods ↓",
+          "label": "made cheap, often overseas",
+          "props": [
+            "globe",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Globalization drove the price of manufactured goods down.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-global",
+          "kicker": "Wikipedia · globalization"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Anything a machine can make got cheaper; anything a person must do got dearer.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Machines vs people",
+          "props": [
+            "chartUp",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Which is why one inflation number hides a dozen different stories.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The chart you can't argue with is the one sitting in your own bank statement.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Your own bills",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So does that split, pricey services and cheap gadgets, match your own bills?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Match your bills?",
+          "sub": "Comment yes or no"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

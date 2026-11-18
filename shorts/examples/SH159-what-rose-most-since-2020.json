@@ -1,0 +1,225 @@
+{
+  "id": "SH159",
+  "num": 159,
+  "slug": "what-rose-most-since-2020",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP090",
+  "sourceTitle": "Why Everything Got So Expensive",
+  "title": "What Actually Rose The Most Since 2020",
+  "hook": "What actually rose the most since 2020.",
+  "question": "Which hurt you most?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "consumer price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "inflation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-baumol",
+      "name": "Baumol effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Baumol_effect",
+      "quote": "Baumol effect",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-global",
+      "name": "Globalization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Globalization",
+      "quote": "globalization",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Everything feels more expensive, but some things exploded while others quietly got cheaper. Let's rank what actually rose.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "fire"
+          ],
+          "lines": [
+            "What rose",
+            "the most?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The biggest risers are the essentials you can't skip, housing, healthcare, education, and childcare.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Price change since ~2000",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "College",
+              "value": "+200%",
+              "note": "the champion riser",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Healthcare",
+              "value": "way up",
+              "note": "relentless",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "Housing",
+              "value": "up sharply",
+              "note": "the big one",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "TVs / tech",
+              "value": "–95%",
+              "note": "collapsed",
+              "color": "#1f7a3d",
+              "bar": 0.1
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The CPI tracks exactly which categories climbed and which fell.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "College tuition rose about two hundred percent, while televisions fell roughly ninety-five.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "+200% vs –95%",
+          "label": "college vs TVs",
+          "props": [
+            "chartUp",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The headline inflation number hides these wild differences.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The pattern is clear. Things you can mass-produce got cheaper. Services run by people got dearer.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the rule",
+          "line": "People cost more",
+          "sub": "gadgets cost less"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Economists call that the Baumol effect.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-baumol",
+          "kicker": "Wikipedia · Baumol effect"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The things you literally cannot opt out of are precisely the things that rose the most.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Can't opt out",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Globalization crushed the price of anything that could be shipped.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-global",
+          "kicker": "Wikipedia · globalization"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The cheap gadgets distract you while the essentials quietly bankrupt you.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Gadgets distract",
+          "props": [
+            "chartUp",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So out of all of those, which rise hurt you the most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which hurt you most?",
+          "sub": "Comment the category"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

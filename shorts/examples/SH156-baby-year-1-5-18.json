@@ -1,0 +1,220 @@
+{
+  "id": "SH156",
+  "num": 156,
+  "slug": "baby-year-1-5-18",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP088",
+  "sourceTitle": "The Real Cost of Having a Baby in Every Country",
+  "title": "Year One, Year Five, Year Eighteen",
+  "hook": "Year one, year five, year eighteen.",
+  "question": "Did you expect that?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-costraise",
+      "name": "Cost of raising a child (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_raising_a_child",
+      "quote": "cost of raising a child",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-childcare",
+      "name": "Child care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Child_care",
+      "quote": "child care",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-benefit",
+      "name": "Child benefit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Child_benefit",
+      "quote": "child benefit",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-leave",
+      "name": "Parental leave (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Parental_leave",
+      "quote": "parental leave",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The cost of a child isn't one bill, it's a running total that climbs for eighteen straight years. Let's watch it build.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Year 1, 5, 18.",
+            "The total."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Year one is birth, gear, and sleepless nights. Then childcare arrives, often rivalling rent.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Running total to raise a child",
+          "rows": [
+            {
+              "rank": "Y1",
+              "name": "Year 1",
+              "value": "~$15K",
+              "note": "birth + gear",
+              "color": "#5c544c",
+              "bar": 0.15
+            },
+            {
+              "rank": "Y5",
+              "name": "By age 5",
+              "value": "~$90K",
+              "note": "childcare years",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "Y18",
+              "name": "By 18",
+              "value": "~$300K",
+              "note": "before college",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Estimates put the US total near three hundred thousand dollars.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-costraise",
+          "kicker": "Wikipedia · cost of raising a child"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The brutal middle years are childcare, which in many US cities costs more than college tuition.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": ">tuition",
+          "label": "childcare can cost more",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Child care is often a family's single biggest expense.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-childcare",
+          "kicker": "Wikipedia · child care"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Other countries blunt that curve with subsidies and monthly cash benefits.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "subsidies",
+          "label": "flatten the curve abroad",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A monthly child benefit quietly offsets years of cost.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-benefit",
+          "kicker": "Wikipedia · child benefit"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And remember, the three hundred thousand total is all before a single tuition bill.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Before college",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The years nobody warns you about are the brutal, expensive childcare years right in the middle.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "The childcare years",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And without paid leave, one parent often loses income too.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-leave",
+          "kicker": "Wikipedia · parental leave"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, did you expect that running total?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Did you expect that?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

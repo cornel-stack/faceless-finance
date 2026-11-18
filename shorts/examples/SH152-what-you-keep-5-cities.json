@@ -1,0 +1,212 @@
+{
+  "id": "SH152",
+  "num": 152,
+  "slug": "what-you-keep-5-cities",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP086",
+  "sourceTitle": "The Most Expensive Cities by What You Actually Keep",
+  "title": "What You Keep In Five Big Cities",
+  "hook": "What you keep in five big cities.",
+  "question": "What do you keep?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-disposable",
+      "name": "Disposable income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Disposable_and_discretionary_income",
+      "quote": "disposable",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ppp",
+      "name": "Purchasing power (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power",
+      "quote": "purchasing power",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-realincome",
+      "name": "Real income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_income",
+      "quote": "real income",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take the same solid salary into five big cities, and watch how differently it ends up in your pocket.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "Same salary,",
+            "5 cities."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The expensive coastal cities claw most of it back through tax and rent. The cheaper ones let you keep far more.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Kept from the same salary",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Austin / TX",
+              "value": "most",
+              "note": "no state tax",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Chicago",
+              "value": "decent",
+              "note": "middle ground",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "LA",
+              "value": "little",
+              "note": "high tax + rent",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "4",
+              "name": "NYC / SF",
+              "value": "least",
+              "note": "the squeeze",
+              "color": "#c0392b",
+              "bar": 0.25
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The cost of living quietly decides how far a paycheck stretches.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The gap between best and worst can be tens of thousands a year, on the identical salary.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$30K+",
+          "label": "gap, same salary",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Only your disposable income tells you how you'll actually live.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-disposable",
+          "kicker": "Wikipedia · disposable income"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "That's why chasing the biggest offer in the priciest city can leave you feeling broke.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Big offer, broke life",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It all comes down to purchasing power, what your money can buy locally.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ppp",
+          "kicker": "Wikipedia · purchasing power"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The offer letter is just a headline; what matters is the quiet number left after rent and tax.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "After rent & tax",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Real income is your pay measured by what it can actually buy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-realincome",
+          "kicker": "Wikipedia · real income"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So in your city, what do you actually get to keep?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "What do you keep?",
+          "sub": "Comment your city"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "id": "SH154",
+  "num": 154,
+  "slug": "rent-eats-half",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP087",
+  "sourceTitle": "Rent in Every Major City vs the Salary You Need",
+  "title": "Cities Where Rent Eats Half The Paycheck",
+  "hook": "Cities where rent eats half the paycheck.",
+  "question": "Is yours on it?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-renting",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "renting",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hai",
+      "name": "Housing affordability (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "housing affordability",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-rentcontrol",
+      "name": "Rent regulation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rent_regulation",
+      "quote": "rent regulation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-medincome",
+      "name": "Median income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median_income",
+      "quote": "median income",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Advice says keep rent under thirty percent of your income. In many big cities, that ship has completely sailed.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "x"
+          ],
+          "lines": [
+            "Rent eats",
+            "half."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In the most strained cities, around half of all renters are now rent-burdened.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "50%",
+          "label": "of big-city renters, rent-burdened",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Rent-burdened means spending over thirty percent of income on rent.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hai",
+          "kicker": "Wikipedia · housing affordability"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "At the extreme, rent swallows half the paycheck before food, transport, or savings.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Rent as share of pay",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Miami",
+              "value": "~50%+",
+              "note": "wages lag rents",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "NYC / LA",
+              "value": "~40–50%",
+              "note": "brutal",
+              "color": "#17120f",
+              "bar": 0.85
+            },
+            {
+              "rank": "3",
+              "name": "Mid-size",
+              "value": "~30%",
+              "note": "the old normal",
+              "color": "#17120f",
+              "bar": 0.55
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "When rent takes half, there's little left to build any future.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-renting",
+          "kicker": "Wikipedia · renting"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Rent control exists in a few places, but it covers only a sliver of renters.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "a sliver",
+          "label": "covered by rent control",
+          "props": [
+            "lock",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Rent regulation caps increases, but only for some units.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rentcontrol",
+          "kicker": "Wikipedia · rent regulation"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "When rent takes half your pay, saving, investing, and getting ahead all quietly become impossible.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Half = stuck",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Rents have simply outrun the median income for years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-medincome",
+          "kicker": "Wikipedia · median income"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Half your income to a landlord means the other half funds your entire life.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Half funds everything",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, is your city on the rent-eats-half list?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Is yours on it?",
+          "sub": "Comment your city"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

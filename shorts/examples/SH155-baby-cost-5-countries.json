@@ -1,0 +1,201 @@
+{
+  "id": "SH155",
+  "num": 155,
+  "slug": "baby-cost-5-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP088",
+  "sourceTitle": "The Real Cost of Having a Baby in Every Country",
+  "title": "What A Baby Costs In Five Countries",
+  "hook": "What a baby costs in five countries.",
+  "question": "Which shocked you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-costraise",
+      "name": "Cost of raising a child (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_raising_a_child",
+      "quote": "cost of raising a child",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-leave",
+      "name": "Parental leave (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Parental_leave",
+      "quote": "parental leave",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-benefit",
+      "name": "Child benefit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Child_benefit",
+      "quote": "child benefit",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-welfare",
+      "name": "Welfare state (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Welfare_state",
+      "quote": "welfare state",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Having a baby carries a price tag that varies enormously by country, mostly because of what the government does, or doesn't, do.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "A baby,",
+            "5 countries."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Just giving birth in the US can cost around three thousand dollars out of pocket, even with insurance.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$3,000",
+          "label": "US out-of-pocket to give birth",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "In most peer countries, the birth itself costs families almost nothing.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-costraise",
+          "kicker": "Wikipedia · cost of raising a child"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "And then there's time. The US guarantees zero weeks of federal paid parental leave.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "0 weeks",
+          "label": "US paid leave guarantee",
+          "props": [
+            "x",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Most rich countries guarantee months of paid parental leave.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-leave",
+          "kicker": "Wikipedia · parental leave"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Many countries also mail parents a monthly child benefit. The US mostly does not.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~$2K/yr",
+          "label": "child benefit, that US skips",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A child benefit is regular cash support per child.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-benefit",
+          "kicker": "Wikipedia · child benefit"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "All in, raising one US child to eighteen costs around three hundred thousand dollars, before college.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$300K",
+          "label": "to raise a US child to 18",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "In the US, a baby is a private expense; in much of the world, it's treated as a shared one.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Private vs shared",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "A welfare state spreads those early costs across everyone.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-welfare",
+          "kicker": "Wikipedia · welfare state"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So which of those numbers shocked you most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Which shocked you?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
