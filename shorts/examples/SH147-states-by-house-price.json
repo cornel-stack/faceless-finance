@@ -1,0 +1,228 @@
+{
+  "id": "SH147",
+  "num": 147,
+  "slug": "states-by-house-price",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP084",
+  "sourceTitle": "Housing Market 2026: Every US State Ranked",
+  "title": "Every State Ranked By House Price",
+  "hook": "Every state ranked by house price.",
+  "question": "Where is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hpi",
+      "name": "House price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_price_index",
+      "quote": "house price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-median",
+      "name": "Median (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median",
+      "quote": "the middle value",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-usbubble",
+      "name": "United States housing bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_States_housing_bubble",
+      "quote": "United States housing bubble",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "real estate economics",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's rank every US state by the price of a typical home. The gap from top to bottom is enormous.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "Every state,",
+            "by house price."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At the top, the median home runs around eight hundred fifty thousand. At the bottom, about a hundred sixty thousand.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Median home price",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Hawaii / CA",
+              "value": "~$850K",
+              "note": "priciest",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Northeast",
+              "value": "high",
+              "note": "pricey",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "TX, GA, NC",
+              "value": "~$300–400K",
+              "note": "the sweet spot",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "4",
+              "name": "West Virginia",
+              "value": "~$160K",
+              "note": "cheapest",
+              "color": "#1f7a3d",
+              "bar": 0.25
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A house price index tracks these state-by-state differences.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hpi",
+          "kicker": "Wikipedia · house price index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The income needed to buy a median home ranges from about thirty thousand to over two hundred thousand.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$30K vs $200K+",
+          "label": "income needed, by state",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The median is the middle price, not the skewed average.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-median",
+          "kicker": "Wikipedia · median"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The real driver is building. Texas permits roughly three times as many homes per person as California.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "TX builds 3×",
+          "label": "the homes California does",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Where building stalls, prices balloon.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-usbubble",
+          "kicker": "Wikipedia · US housing bubble"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Where homes are cheap, it's almost never luck, it's that they actually build them.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Cheap = they build",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Permitting and construction are the real price levers.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reecon",
+          "kicker": "Wikipedia · real estate economics"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Your state line alone can swing a home's price by hundreds of thousands.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The state line",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So where does your state land on that ranking?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Where is yours?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

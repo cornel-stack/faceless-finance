@@ -1,0 +1,227 @@
+{
+  "id": "SH142",
+  "num": 142,
+  "slug": "canada-cities-after-housing",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP081",
+  "sourceTitle": "Why Nobody Can Afford Canada Anymore",
+  "title": "Canadian Cities Ranked By What's Left After Housing",
+  "hook": "Canadian cities ranked by what is left after housing.",
+  "question": "Where is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hai",
+      "name": "Housing affordability (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "housing affordability",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-canbubble",
+      "name": "Canadian property bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Canadian_property_bubble",
+      "quote": "Canadian property bubble",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "real estate economics",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-supplydemand",
+      "name": "Supply and demand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+      "quote": "supply and demand",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Forget the salary. Let's rank Canadian cities by what's actually left in your pocket after housing eats its share.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "What's left",
+            "after rent?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In the priciest cities, housing can swallow well over half of take-home pay.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Left after housing",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Vancouver",
+              "value": "least",
+              "note": "housing devours it",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Toronto",
+              "value": "little",
+              "note": "brutal too",
+              "color": "#17120f",
+              "bar": 0.85
+            },
+            {
+              "rank": "3",
+              "name": "Montreal",
+              "value": "more",
+              "note": "relative relief",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "4",
+              "name": "Prairie cities",
+              "value": "most",
+              "note": "cheaper housing",
+              "color": "#1f7a3d",
+              "bar": 0.4
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Affordability is really about what remains once housing is paid.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hai",
+          "kicker": "Wikipedia · housing affordability"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A big salary in Vancouver can leave you poorer than a modest one elsewhere.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Big salary, less left",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Location, not just income, drives how far your money goes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reecon",
+          "kicker": "Wikipedia · real estate economics"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The cheaper prairie cities quietly leave families with far more breathing room.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "more room",
+          "label": "in cheaper cities",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The hottest markets are exactly where the squeeze is worst.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-canbubble",
+          "kicker": "Wikipedia · Canadian property bubble"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The salary on the offer letter means little until you subtract the rent it has to cover first.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Subtract the rent",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Where supply is tightest, housing devours the most income.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-supplydemand",
+          "kicker": "Wikipedia · supply and demand"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Two identical salaries, two cities, two completely different lives.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same pay, diff life",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So where does your city land on that after-housing ranking?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Where is yours?",
+          "sub": "Comment your city"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

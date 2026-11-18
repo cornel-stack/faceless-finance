@@ -1,0 +1,225 @@
+{
+  "id": "SH148",
+  "num": 148,
+  "slug": "state-house-prices-drawn",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP084",
+  "sourceTitle": "Housing Market 2026: Every US State Ranked",
+  "title": "State House Prices, Ranked And Drawn",
+  "hook": "State house prices, ranked and drawn.",
+  "question": "Did yours move?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hpi",
+      "name": "House price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_price_index",
+      "quote": "house price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "real estate economics",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-affordhousing",
+      "name": "Affordable housing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affordable_housing",
+      "quote": "affordable housing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-median",
+      "name": "Median (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median",
+      "quote": "the middle value",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's draw every state's median home price as one long bar chart, tallest to shortest. The spread is dramatic.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "chartUp"
+          ],
+          "lines": [
+            "States, drawn",
+            "by price."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A handful of coastal states tower over everyone. A cluster in the South and Midwest sits far below.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Median home, by region",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Coastal",
+              "value": "$700K+",
+              "note": "the giants",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Mountain West",
+              "value": "rising fast",
+              "note": "catching up",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "Sun Belt",
+              "value": "~$350K",
+              "note": "building a lot",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "4",
+              "name": "Heartland",
+              "value": "<$250K",
+              "note": "still affordable",
+              "color": "#1f7a3d",
+              "bar": 0.35
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The index shows which states are climbing fastest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hpi",
+          "kicker": "Wikipedia · house price index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The fastest climbers are states people are moving to, where demand outruns new building.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "home",
+          "kicker": "why they move",
+          "line": "Demand beats supply",
+          "sub": "movers push prices up"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It's demand chasing a limited housing stock.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reecon",
+          "kicker": "Wikipedia · real estate economics"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The affordable states almost always share one trait, they build aggressively.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "build more",
+          "label": "= cheaper homes",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "More supply is the clearest path back to affordability.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-affordhousing",
+          "kicker": "Wikipedia · affordable housing"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The tallest bars are the places everyone wants to live, and almost nobody is allowed to build.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Want in, can't build",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "These are median prices, the true middle of each state.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-median",
+          "kicker": "Wikipedia · median"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Same country, wildly different prices, decided mostly by local building rules.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Rules set the price",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So on that chart, did your state move up or down?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Did yours move?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

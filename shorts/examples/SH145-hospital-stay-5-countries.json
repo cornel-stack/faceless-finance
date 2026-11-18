@@ -1,0 +1,228 @@
+{
+  "id": "SH145",
+  "num": 145,
+  "slug": "hospital-stay-5-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP083",
+  "sourceTitle": "The True Cost of Healthcare in Every Country",
+  "title": "What A Hospital Stay Costs In Five Countries",
+  "hook": "What a hospital stay costs in five countries.",
+  "question": "What would yours cost?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-ushealth",
+      "name": "Health care in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_care_in_the_United_States",
+      "quote": "health care in the United States",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-uhc",
+      "name": "Universal health care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Universal_health_care",
+      "quote": "universal health care",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-healthins",
+      "name": "Health insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_insurance",
+      "quote": "health insurance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-healthsys",
+      "name": "Health system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_system",
+      "quote": "health system",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The same hospital stay has wildly different price tags around the world. Let's rank five countries. Brace yourself.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "A hospital stay,",
+            "5 countries."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In most rich nations, the stay is free or nearly free at the point of use. In the US, the bill can be enormous.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Cost to the patient",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "USA",
+              "value": "$$$$",
+              "note": "surprise bills",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Switzerland",
+              "value": "$$",
+              "note": "pricey, but capped",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "3",
+              "name": "UK / Canada",
+              "value": "~$0",
+              "note": "free at point of use",
+              "color": "#1f7a3d",
+              "bar": 0.2
+            },
+            {
+              "rank": "4",
+              "name": "Most of EU",
+              "value": "low",
+              "note": "covered",
+              "color": "#1f7a3d",
+              "bar": 0.25
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Most peer countries cover everyone through universal health care.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-uhc",
+          "kicker": "Wikipedia · universal health care"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "America spends about thirteen thousand dollars per person a year, far more than anyone else.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$13K",
+          "label": "US health spend per person",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Yet the US doesn't lead the world on health outcomes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ushealth",
+          "kicker": "Wikipedia · US health care"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "More than a hundred million Americans carry some form of medical debt.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "100M+",
+          "label": "with medical debt",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Even with insurance, surprise bills are routine.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-healthins",
+          "kicker": "Wikipedia · health insurance"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The United States spends the most on earth, and still doesn't live the longest.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Most spent, not longest",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "How a health system is funded decides who faces the bill.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-healthsys",
+          "kicker": "Wikipedia · health system"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "You're not paying for better medicine, just for a far more expensive system.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Not better, pricier",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So what would that same hospital stay actually cost you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "What would yours cost?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

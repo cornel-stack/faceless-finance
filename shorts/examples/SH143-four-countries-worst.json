@@ -1,0 +1,225 @@
+{
+  "id": "SH143",
+  "num": 143,
+  "slug": "four-countries-worst",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP082",
+  "sourceTitle": "Why Are Houses So Expensive?",
+  "title": "Four Countries. Who Has It Worst?",
+  "hook": "Four countries. Who has it worst?",
+  "question": "Which surprised you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hpi",
+      "name": "House price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_price_index",
+      "quote": "house price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-affordhousing",
+      "name": "Affordable housing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affordable_housing",
+      "quote": "affordable housing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "real estate economics",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ownocc",
+      "name": "Owner-occupancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Owner-occupancy",
+      "quote": "owner-occupancy",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The US, UK, Canada, and Australia all claim to have the worst housing crisis. Let's rank who actually does.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "home",
+            "globe"
+          ],
+          "lines": [
+            "4 countries.",
+            "Who's worst?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The fair measure is price-to-income, how many years of pay buys a typical home.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Home price ÷ income",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Australia",
+              "value": "worst",
+              "note": "among the highest on Earth",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Canada",
+              "value": "brutal",
+              "note": "close behind",
+              "color": "#17120f",
+              "bar": 0.9
+            },
+            {
+              "rank": "3",
+              "name": "UK",
+              "value": "high",
+              "note": "London skews it",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "USA",
+              "value": "bad",
+              "note": "but least extreme here",
+              "color": "#5c544c",
+              "bar": 0.55
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A house price index tracks how prices move against incomes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hpi",
+          "kicker": "Wikipedia · house price index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "All four share one pattern. Prices raced ahead of wages for two straight decades.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "priceTag",
+          "kicker": "the shared story",
+          "line": "Prices beat wages",
+          "sub": "everywhere at once"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It comes down to too little housing supply meeting too much demand.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reecon",
+          "kicker": "Wikipedia · real estate economics"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Places that re-legalized the missing middle, like Auckland, actually bent the curve.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "it's fixable",
+          "label": "where they build more",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "More affordable housing supply is the one lever that reliably works.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-affordhousing",
+          "kicker": "Wikipedia · affordable housing"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "It's the same disease in four countries, and the cure everywhere is simply building more homes.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same cure",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Owner-occupancy keeps falling for the young across all four.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ownocc",
+          "kicker": "Wikipedia · owner-occupancy"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And the countries that actually built more homes have already started to win.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Builders win",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So out of those four, which one surprised you most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "Which surprised you?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

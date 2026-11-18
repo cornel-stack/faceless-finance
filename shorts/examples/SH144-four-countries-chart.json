@@ -1,0 +1,197 @@
+{
+  "id": "SH144",
+  "num": 144,
+  "slug": "four-countries-chart",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP082",
+  "sourceTitle": "Why Are Houses So Expensive?",
+  "title": "Four Countries' House Prices Against Income",
+  "hook": "Four countries' house prices against income.",
+  "question": "Where does yours sit?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hpi",
+      "name": "House price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_price_index",
+      "quote": "house price index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "real estate economics",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ecobubble",
+      "name": "Economic bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_bubble",
+      "quote": "economic bubble",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-affordhousing",
+      "name": "Affordable housing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affordable_housing",
+      "quote": "affordable housing",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's draw house prices against incomes for four countries on one chart. The two lines refuse to stay together.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "home",
+            "chartUp"
+          ],
+          "lines": [
+            "Prices vs",
+            "income."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "For decades, the income line crawls while the price line climbs steeply away from it.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the gap",
+          "line": "The lines split",
+          "sub": "prices leave wages behind"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A house price index makes that divergence impossible to hide.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hpi",
+          "kicker": "Wikipedia · house price index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Typical homes now run over four hundred thousand dollars, far more in the big cities.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$400K+",
+          "label": "typical home price",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "When supply can't keep up, prices simply detach from wages.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reecon",
+          "kicker": "Wikipedia · real estate economics"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "First-time buyers keep getting older, now often not until their late thirties.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "late 30s",
+          "label": "first-time buyers now",
+          "props": [
+            "clock",
+            "home"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Some economists warn parts of it look like a classic bubble.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ecobubble",
+          "kicker": "Wikipedia · economic bubble"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The shape is nearly identical across all four countries.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same shape, 4 nations",
+          "props": [
+            "home",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "When the price line and the income line split like that, ordinary buyers simply get left behind.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Buyers left behind",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Only more affordable supply pulls those two lines back together.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-affordhousing",
+          "kicker": "Wikipedia · affordable housing"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So where does your own country sit on that chart?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Where does yours sit?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

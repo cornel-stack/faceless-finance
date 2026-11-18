@@ -1,0 +1,197 @@
+{
+  "id": "SH146",
+  "num": 146,
+  "slug": "same-operation-two-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP083",
+  "sourceTitle": "The True Cost of Healthcare in Every Country",
+  "title": "The Same Operation, Two Countries",
+  "hook": "The same operation, two countries.",
+  "question": "Which would you choose?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-uhc",
+      "name": "Universal health care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Universal_health_care",
+      "quote": "universal health care",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ushealth",
+      "name": "Health care in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_care_in_the_United_States",
+      "quote": "health care in the United States",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-healthsys",
+      "name": "Health system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_system",
+      "quote": "health system",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lifeexp",
+      "name": "Life expectancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Life_expectancy",
+      "quote": "life expectancy",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take the exact same routine operation, and perform it in two different countries. The price difference is almost unbelievable.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Same operation,",
+            "2 countries."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In a universal system, the patient often pays little or nothing directly. In the US, the same procedure can run tens of thousands.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Same procedure",
+          "thenLabel": "Universal system",
+          "thenValue": "~$0",
+          "nowLabel": "US system",
+          "nowValue": "$10,000s",
+          "sub": "identical operation"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Universal systems spread the cost across everyone through taxes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-uhc",
+          "kicker": "Wikipedia · universal health care"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "It's not that the surgery is better. The prices are simply set completely differently.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "building",
+          "kicker": "same surgery",
+          "line": "Only the price differs",
+          "sub": "not the medicine"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "How a health system is funded decides who gets the bill.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-healthsys",
+          "kicker": "Wikipedia · health system"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And the cheaper systems still manage to cover everyone, with no surprise invoice.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "covers all",
+          "label": "no surprise bill",
+          "props": [
+            "check",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Americans, by contrast, can face bills that rival a down payment.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ushealth",
+          "kicker": "Wikipedia · US health care"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Lifetime healthcare cost per person can top five hundred thousand dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$500K+",
+          "label": "lifetime, per person",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The medicine is completely identical. Only the invoice is wildly, and deliberately, different.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Same care, diff bill",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And the cheaper systems often post longer life expectancy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lifeexp",
+          "kicker": "Wikipedia · life expectancy"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, which country's system would you choose?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "Which would you choose?",
+          "sub": "Comment your pick"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

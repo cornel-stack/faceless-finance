@@ -1,0 +1,228 @@
+{
+  "id": "SH149",
+  "num": 149,
+  "slug": "degree-cost-5-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP085",
+  "sourceTitle": "The Real Cost of a Degree in Every Country",
+  "title": "What A Degree Costs In Five Countries",
+  "hook": "What a degree costs in five countries.",
+  "question": "Worth it where you are?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-tuition",
+      "name": "Tuition payments (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tuition_payments",
+      "quote": "tuition",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ushe",
+      "name": "Higher education in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Higher_education_in_the_United_States",
+      "quote": "higher education in the United States",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-free",
+      "name": "Free education (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Free_education",
+      "quote": "free education",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-loans",
+      "name": "Student loans in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_loans_in_the_United_States",
+      "quote": "student loans",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The same four-year degree has absurdly different price tags around the world. Let's rank five countries.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "lock",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "A degree,",
+            "5 countries."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In parts of Europe it's basically free. In the US, a private degree's sticker price can hit a quarter of a million.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "4-year degree cost",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "US private",
+              "value": "~$240K",
+              "note": "sticker price",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "US public",
+              "value": "~$100K",
+              "note": "out-of-state",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "3",
+              "name": "UK",
+              "value": "~£27K",
+              "note": "capped tuition",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "4",
+              "name": "Germany",
+              "value": "~$0",
+              "note": "free tuition",
+              "color": "#1f7a3d",
+              "bar": 0.1
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "US tuition can be thirty times higher than Germany's, per year.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tuition",
+          "kicker": "Wikipedia · tuition"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "That's helped push total US student debt past one point seven trillion dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "$1.7T",
+          "label": "total US student debt",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "More than all American credit-card debt combined.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ushe",
+          "kicker": "Wikipedia · US higher education"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And yet a US bachelor's still carries a lifetime earnings premium north of a million dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "$1.2M",
+          "label": "lifetime earnings premium",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Other countries simply fund it through taxes instead of debt.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-free",
+          "kicker": "Wikipedia · free education"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Same diploma, same four years, and a quarter-million-dollar swing just from the border you sit behind.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Same degree, huge gap",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Which is why American student loans dwarf every other country's.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-loans",
+          "kicker": "Wikipedia · student loans"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The degree is identical everywhere; only the debt behind it changes.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Same degree, new debt",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, is a degree actually worth it where you are?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "Worth it where you are?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
