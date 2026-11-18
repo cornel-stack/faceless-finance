@@ -15,6 +15,13 @@
   },
   "sources": [
     {
+      "id": "wiki-emh",
+      "name": "Efficient-market hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+      "quote": "asset prices reflect all available information",
+      "accessed": "2026-11-18"
+    },
+    {
       "id": "wiki-wareconomy",
       "name": "War economy (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/War_economy",
@@ -27,19 +34,11 @@
       "url": "https://en.wikipedia.org/wiki/Military-industrial_complex",
       "quote": "the relationship between a country's military and the defense industry",
       "accessed": "2026-11-18"
-    },
-    {
-      "id": "wiki-emh",
-      "name": "Efficient-market hypothesis (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
-      "quote": "asset prices reflect all available information",
-      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
     {
-      "id": "s1",
-      "narration": "War is terrible. And yet, markets usually rise right through it.",
+      "narration": "War is genuinely terrible. And yet, time after time, stock markets tend to rise right through the middle of it.",
       "shots": [
         {
           "block": "hook",
@@ -53,11 +52,11 @@
             "Stocks go up."
           ]
         }
-      ]
+      ],
+      "id": "s1"
     },
     {
-      "id": "s2",
-      "narration": "The market measures profit, not suffering.",
+      "narration": "The uncomfortable reason is that the market measures corporate profit. It does not measure human suffering.",
       "shots": [
         {
           "block": "truth",
@@ -66,33 +65,33 @@
           "line": "It counts profit",
           "sub": "not morality, not pain"
         }
-      ]
+      ],
+      "id": "s2"
     },
     {
-      "id": "s3",
-      "narration": "In theory, prices just reflect all the available information.",
+      "narration": "In theory, prices simply reflect all of the available information about future profit.",
       "shots": [
         {
           "block": "evidence",
           "sourceId": "wiki-emh",
           "kicker": "Wikipedia · efficient-market hypothesis"
         }
-      ]
+      ],
+      "id": "s3"
     },
     {
-      "id": "s4",
-      "narration": "War mobilizes an entire economy toward production.",
+      "narration": "And war mobilizes an entire economy toward furious, around-the-clock production.",
       "shots": [
         {
           "block": "evidence",
           "sourceId": "wiki-wareconomy",
           "kicker": "Wikipedia · war economy"
         }
-      ]
+      ],
+      "id": "s4"
     },
     {
-      "id": "s5",
-      "narration": "World War Two spending ended the Depression — unemployment fell to about two percent.",
+      "narration": "World War Two spending is what finally ended the Great Depression. US unemployment fell to around two percent.",
       "shots": [
         {
           "block": "stat",
@@ -104,22 +103,22 @@
             "chartUp"
           ]
         }
-      ]
+      ],
+      "id": "s5"
     },
     {
-      "id": "s6",
-      "narration": "And defense is now an eight hundred billion dollar industry.",
+      "narration": "And defense today is an eight hundred billion dollar a year industry.",
       "shots": [
         {
           "block": "evidence",
           "sourceId": "wiki-mic",
           "kicker": "Wikipedia · military–industrial complex"
         }
-      ]
+      ],
+      "id": "s6"
     },
     {
-      "id": "s7",
-      "narration": "Does that sit right with you?",
+      "narration": "The market is just counting profit, not morality. Does that honestly sit right with you?",
       "shots": [
         {
           "block": "question",
@@ -127,7 +126,8 @@
           "line": "Does that sit right?",
           "sub": "Comment honestly"
         }
-      ]
+      ],
+      "id": "s7"
     }
   ]
 }
