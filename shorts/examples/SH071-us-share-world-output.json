@@ -1,0 +1,164 @@
+{
+  "id": "SH071",
+  "num": 71,
+  "slug": "us-share-world-output",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP046",
+  "sourceTitle": "Why the Era of US Dominance Is (Mathematically) Ending",
+  "title": "America's Share Of World Output, 1960 To Now",
+  "hook": "America's share of world output, 1960 to now.",
+  "question": "Did you expect that shape?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-gdp",
+      "name": "Gross domestic product (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+      "quote": "Gross domestic product",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-conv",
+      "name": "Convergence (economics) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Convergence_(economics)",
+      "quote": "poorer economies tend to grow faster",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-multipolar",
+      "name": "Multipolarity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Polarity_(international_relations)",
+      "quote": "multipolar",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's chart America's share of the entire world's economic output, from nineteen sixty to today. The shape surprises people.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "globe",
+            "chartDown"
+          ],
+          "lines": [
+            "US share of",
+            "world output."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In nineteen sixty, the United States produced roughly forty percent of all global output. It was the undisputed giant.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "~40%",
+          "label": "US share of world output, 1960",
+          "props": [
+            "chartUp",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Gross domestic product is the total value of what an economy produces.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gdp",
+          "kicker": "Wikipedia · GDP"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Today that share is closer to a quarter, even though America itself kept growing the whole time.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "US share of world GDP",
+          "thenLabel": "1960",
+          "thenValue": "~40%",
+          "nowLabel": "Today",
+          "nowValue": "~25%",
+          "sub": "America grew — the world grew faster"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The key point is that this isn't America shrinking. It's the rest of the world catching up.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "globe",
+          "kicker": "what really happened",
+          "line": "Others caught up",
+          "sub": "not a US collapse"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Economists call it convergence, poorer economies tending to grow faster.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-conv",
+          "kicker": "Wikipedia · convergence"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "As China, India and others industrialized, the global pie got far bigger, and more evenly split.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "bigger pie",
+          "label": "more evenly shared",
+          "props": [
+            "globe",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The result is a more multipolar world, with power spread across many centers.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-multipolar",
+          "kicker": "Wikipedia · multipolarity"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So looking at that long slide, did you expect that shape?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Expect that shape?",
+          "sub": "Comment your guess"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}

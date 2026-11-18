@@ -1,0 +1,178 @@
+{
+  "id": "SH079",
+  "num": 79,
+  "slug": "fiat-backed-by-nothing",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP050",
+  "sourceTitle": "Why a Piece of Paper Is Worth $20",
+  "title": "The Note In Your Pocket Is Backed By Nothing",
+  "hook": "The note in your pocket is backed by nothing.",
+  "question": "Why does it still work?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-fiat",
+      "name": "Fiat money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fiat_money",
+      "quote": "fiat money",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-legal",
+      "name": "Legal tender (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Legal_tender",
+      "quote": "legal tender",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-chartalism",
+      "name": "Chartalism (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chartalism",
+      "quote": "chartalism",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Pull out any banknote. It promises nothing, and it's backed by no gold or silver at all. So why is it worth anything?",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "bill",
+            "x"
+          ],
+          "lines": [
+            "Backed by",
+            "nothing."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A modern dollar is fiat money. Its value comes purely from trust, not from any metal in a vault.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "priceTag",
+          "kicker": "what it is",
+          "line": "Fiat money",
+          "sub": "value by trust, not gold"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Fiat money is currency not backed by a physical commodity like gold.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fiat",
+          "kicker": "Wikipedia · fiat money"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Exactly zero gold or silver stands behind a dollar today.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "$0",
+          "label": "of gold backs a modern dollar",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "So what holds it up? First, the law says it must be accepted to settle debts.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The law backs it",
+          "props": [
+            "bill",
+            "check"
+          ]
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Legal tender is money that must be accepted to pay a debt.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-legal",
+          "kicker": "Wikipedia · legal tender"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Second, and bigger, is that the government demands its taxes be paid in it.",
+      "shots": [
+        {
+          "block": "center",
+          "art": "bank",
+          "line": "Taxes demand it",
+          "props": [
+            "bill",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "One theory, chartalism, says money has value because the state taxes in it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-chartalism",
+          "kicker": "Wikipedia · chartalism"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Trust, plus a little legal muscle, really is the whole trick.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Trust + the law",
+          "props": [
+            "bill",
+            "check"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So if it's backed by nothing solid, why does it still work?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "Why does it work?",
+          "sub": "Comment your take"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

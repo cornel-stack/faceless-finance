@@ -1,0 +1,212 @@
+{
+  "id": "SH078",
+  "num": 78,
+  "slug": "how-your-loan-is-sold",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP049",
+  "sourceTitle": "How Debt Became the Most Profitable Product in History",
+  "title": "How Your Loan Gets Sold, Step By Step",
+  "hook": "How your loan gets sold, step by step.",
+  "question": "Did you agree to that?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-sec",
+      "name": "Securitization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Securitization",
+      "quote": "securitization",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-bond",
+      "name": "Bond (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bond_(finance)",
+      "quote": "bond",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-finz",
+      "name": "Financialization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financialization",
+      "quote": "financialization",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The moment you sign a loan, it begins a journey you never see. Here's how your debt gets sold, step by step.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "bill",
+            "loop"
+          ],
+          "lines": [
+            "Your loan's",
+            "secret journey."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "First you borrow. Then the bank bundles your loan with thousands of others. Then it's sliced into bonds and sold to investors worldwide.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "The chain of ownership",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "You borrow",
+              "value": "→",
+              "note": "sign the loan",
+              "color": "#1f7a3d",
+              "bar": 0.3
+            },
+            {
+              "rank": "2",
+              "name": "Bundled",
+              "value": "→",
+              "note": "with thousands more",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "Sliced into bonds",
+              "value": "→",
+              "note": "sold to investors",
+              "color": "#17120f",
+              "bar": 0.85
+            },
+            {
+              "rank": "4",
+              "name": "Owned globally",
+              "value": "✓",
+              "note": "pensions, funds",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Turning those bundled loans into tradable securities is securitization.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sec",
+          "kicker": "Wikipedia · securitization"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Those slices get sold as bonds, each one a claim on a piece of your monthly payment.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "bonds",
+          "label": "claims on your payments",
+          "props": [
+            "bill",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A bond is just a tradable promise of future payments.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bond",
+          "kicker": "Wikipedia · bond"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Multiply that across every loan in the economy, and debt itself becomes the main product.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Debt is the product",
+          "props": [
+            "coin",
+            "loop"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That creeping dominance of finance has a name, financialization.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-finz",
+          "kicker": "Wikipedia · financialization"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "By the end of the chain, almost nobody who owns your loan has ever met you.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Strangers own it",
+          "props": [
+            "globe",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "And compounding quietly makes that stream of your payments even more valuable.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, did you ever actually agree to all of that?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Did you agree?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

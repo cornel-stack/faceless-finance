@@ -1,0 +1,212 @@
+{
+  "id": "SH073",
+  "num": 73,
+  "slug": "losing-reserve-status",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP047",
+  "sourceTitle": "What Happens If the Dollar Loses Reserve Status",
+  "title": "What Losing Reserve Status Would Do To Your Money",
+  "hook": "What it would actually do to your money.",
+  "question": "Which step worries you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-reserve",
+      "name": "Reserve currency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reserve_currency",
+      "quote": "reserve currency",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-exorbitant",
+      "name": "Exorbitant privilege (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exorbitant_privilege",
+      "quote": "exorbitant privilege",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dedollar",
+      "name": "De-dollarisation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/De-dollarisation",
+      "quote": "de-dollarisation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "If the dollar ever lost its reserve-currency crown, here's the chain of what it would actually do to your money.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "bill",
+            "x"
+          ],
+          "lines": [
+            "If the dollar",
+            "lost the crown."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "First, the world needs fewer dollars. Then demand drops. Then imports cost more. Then inflation bites, and borrowing gets dearer.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "The consequence chain",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Less demand",
+              "value": "→",
+              "note": "world holds fewer dollars",
+              "color": "#5c544c",
+              "bar": 0.3
+            },
+            {
+              "rank": "2",
+              "name": "Dollar falls",
+              "value": "→",
+              "note": "imports cost more",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "3",
+              "name": "Inflation",
+              "value": "↑",
+              "note": "your money buys less",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "4",
+              "name": "Rates rise",
+              "value": "↑",
+              "note": "debt gets dearer",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A reserve currency is one other nations hold and trade in by default.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reserve",
+          "kicker": "Wikipedia · reserve currency"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "That global demand is exactly what lets America import cheaply and borrow for less.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "the perk",
+          "label": "cheap imports, cheap debt",
+          "props": [
+            "bill",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Economists call that perk America's exorbitant privilege.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-exorbitant",
+          "kicker": "Wikipedia · exorbitant privilege"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Strip it away, and everyday prices and interest rates would likely grind higher.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Prices grind up",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A weaker currency feeds straight into higher inflation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And once that kind of spiral gets going, it tends to quietly feed on itself.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "It feeds itself",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "That is exactly why any talk of de-dollarisation makes policymakers so nervous.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dedollar",
+          "kicker": "Wikipedia · de-dollarisation"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So out of that whole chain, which step worries you the most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globeQ",
+          "line": "Which step worries you?",
+          "sub": "Comment below"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

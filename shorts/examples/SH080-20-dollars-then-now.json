@@ -1,0 +1,181 @@
+{
+  "id": "SH080",
+  "num": 80,
+  "slug": "20-dollars-then-now",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP050",
+  "sourceTitle": "Why a Piece of Paper Is Worth $20",
+  "title": "What $20 Bought In 1970 Against Today",
+  "hook": "What $20 bought in 1970 against today.",
+  "question": "What does yours buy?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-fiat",
+      "name": "Fiat money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fiat_money",
+      "quote": "fiat money",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-goldstd",
+      "name": "Gold standard (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gold_standard",
+      "quote": "gold standard",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take a single twenty-dollar bill and ask a simple question. What did it buy in nineteen seventy, versus today?",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "bill",
+            "clock"
+          ],
+          "lines": [
+            "$20 in 1970",
+            "vs today."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In nineteen seventy, twenty dollars could fill a grocery cart, or a tank of gas, with change to spare.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "What $20 buys",
+          "thenLabel": "1970",
+          "thenValue": "a cartful",
+          "nowLabel": "Today",
+          "nowValue": "a few items",
+          "sub": "same note, far less"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Inflation is the steady rise in the average price of goods.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The bill never changed. Its purchasing power quietly collapsed underneath it.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "~85%",
+          "label": "of its 1970 value, gone",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "This accelerated once money was fully cut loose from gold in nineteen seventy-one.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Cut from gold, 1971",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The old gold standard tied money to a fixed amount of metal.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-goldstd",
+          "kicker": "Wikipedia · gold standard"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Freed from that anchor, the supply of dollars, and prices, could rise without limit.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "no anchor",
+          "label": "prices rise freely",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Today every major currency is pure fiat, backed only by trust.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fiat",
+          "kicker": "Wikipedia · fiat money"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The note stayed exactly the same while everything around it quietly got pricier.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Same note, pricier world",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So in your hand, right now, what does twenty dollars actually buy?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "What does yours buy?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "id": "SH076",
+  "num": 76,
+  "slug": "gold-broken-correlation",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP048",
+  "sourceTitle": "Why Gold Is Doing Something It Has Never Done",
+  "title": "Gold Is Moving When It Historically Shouldn't",
+  "hook": "Gold is moving when it historically should not.",
+  "question": "What does that signal?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-realrate",
+      "name": "Real interest rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+      "quote": "real interest rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-goldres",
+      "name": "Gold reserve (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gold_reserve",
+      "quote": "gold reserve",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dedollar",
+      "name": "De-dollarisation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/De-dollarisation",
+      "quote": "de-dollarisation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "For decades, gold followed one simple rule. Now it's breaking that rule, doing something it historically should not.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "coin",
+            "fire"
+          ],
+          "lines": [
+            "Gold broke",
+            "the rule."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The old rule, when real interest rates rise, gold usually falls, because cash suddenly pays you to hold it.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the old rule",
+          "line": "High rates, low gold",
+          "sub": "they normally move opposite"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The real interest rate is the return on cash after inflation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-realrate",
+          "kicker": "Wikipedia · real interest rate"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Lately, real rates rose, and yet gold climbed to record highs anyway. The link snapped.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "both up",
+          "label": "rates AND gold — unusual",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "So who is buying so hard that they override the old math? Increasingly, it's central banks.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Central banks buying",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Central banks hold gold reserves as a backstop outside any one currency.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-goldres",
+          "kicker": "Wikipedia · gold reserve"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "They're quietly swapping dollars for gold, hedging against the dollar system itself.",
+      "shots": [
+        {
+          "block": "center",
+          "art": "crashChart",
+          "line": "Dollars → gold",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "That shift is the heart of de-dollarisation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dedollar",
+          "kicker": "Wikipedia · de-dollarisation"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "When the oldest rule in the market suddenly snaps, it pays to look closer.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Rule snapped",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So when gold breaks its own rules, what do you think it's signaling?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "What does it signal?",
+          "sub": "Comment your read"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

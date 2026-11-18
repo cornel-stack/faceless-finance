@@ -1,0 +1,194 @@
+{
+  "id": "SH075",
+  "num": 75,
+  "slug": "gold-vs-crises",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP048",
+  "sourceTitle": "Why Gold Is Doing Something It Has Never Done",
+  "title": "Gold Against Every Crisis Of The Last Fifty Years",
+  "hook": "Gold against every crisis of the last fifty years.",
+  "question": "What is it pricing now?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-goldinvest",
+      "name": "Gold as an investment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+      "quote": "gold",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sov",
+      "name": "Store of value (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Store_of_value",
+      "quote": "store of value",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dedollar",
+      "name": "De-dollarisation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/De-dollarisation",
+      "quote": "de-dollarisation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Lay gold's price over every major crisis of the last fifty years, and a pattern jumps out. It spikes on fear.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "coin",
+            "fire"
+          ],
+          "lines": [
+            "Gold vs",
+            "every crisis."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The seventies oil shocks, the two thousand eight crash, the twenty twenty panic. Gold surged through each one.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Gold spikes on fear",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "1970s oil",
+              "value": "↑↑",
+              "note": "stagflation",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "2",
+              "name": "2008 GFC",
+              "value": "↑↑",
+              "note": "financial panic",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "2020 COVID",
+              "value": "↑↑",
+              "note": "global shock",
+              "color": "#17120f",
+              "bar": 0.9
+            },
+            {
+              "rank": "4",
+              "name": "2020s",
+              "value": "↑↑↑",
+              "note": "record highs",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Gold is treated as a safe haven that investors flee to in a crisis.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-goldinvest",
+          "kicker": "Wikipedia · gold as an investment"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "That's because, for thousands of years, gold has been humanity's default store of value.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "5,000 yrs",
+          "label": "as a store of value",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A store of value is simply something that holds its worth over time.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sov",
+          "kicker": "Wikipedia · store of value"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "But lately gold is hitting record highs, even when there's no obvious panic at all.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Record highs, no panic",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Part of the story is de-dollarisation, as central banks buy gold instead of dollars.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dedollar",
+          "kicker": "Wikipedia · de-dollarisation"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Something underneath the entire global system is very clearly shifting right now.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Something's shifting",
+          "props": [
+            "globe",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So if it isn't pricing fear, what exactly is gold pricing right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "What's it pricing now?",
+          "sub": "Comment your theory"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}
