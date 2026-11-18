@@ -1,0 +1,167 @@
+{
+  "id": "SH173",
+  "num": 173,
+  "slug": "hours-minwage-for-rent",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP097",
+  "sourceTitle": "Minimum Wage vs Rent in Every US State",
+  "title": "Hours At Minimum Wage To Pay Rent In Your State",
+  "hook": "Hours at minimum wage to pay rent in your state.",
+  "question": "How many hours is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-minwage",
+      "name": "Minimum wage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minimum_wage",
+      "quote": "minimum wage",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-livingwage",
+      "name": "Living wage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Living_wage",
+      "quote": "living wage",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hai",
+      "name": "Housing affordability (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "housing affordability",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Here's a brutal way to measure rent, how many hours at minimum wage it takes to cover a one-bedroom. Let's map it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "clock"
+          ],
+          "lines": [
+            "Rent, in",
+            "minimum-wage hours."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The federal minimum wage is seven dollars twenty-five. The wage a modest rent actually demands is closer to twenty-five.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$7.25 vs $25",
+          "label": "min wage vs rent's demand",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A minimum wage is the legal floor on hourly pay.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-minwage",
+          "kicker": "Wikipedia · minimum wage"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "In much of the country, a full-time minimum-wage check isn't enough for a one-bedroom at all.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "60–80%",
+          "label": "of a full-time check, on one bedroom",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "By the affordability rule, rent should be under thirty percent of pay.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hai",
+          "kicker": "Wikipedia · housing affordability"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "There is effectively no county in America where minimum wage comfortably affords a two-bedroom.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "0 counties",
+          "label": "where min wage affords a 2-bed",
+          "props": [
+            "x",
+            "home"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That gap is the difference between a minimum wage and a living wage.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-livingwage",
+          "kicker": "Wikipedia · living wage"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The federal minimum hasn't risen since two thousand nine, so its real value keeps falling.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Frozen since 2009",
+          "props": [
+            "clock",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So in your state, how many hours of minimum wage does rent actually cost?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "How many hours?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}

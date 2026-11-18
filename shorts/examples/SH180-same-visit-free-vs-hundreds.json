@@ -1,0 +1,199 @@
+{
+  "id": "SH180",
+  "num": 180,
+  "slug": "same-visit-free-vs-hundreds",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP100",
+  "sourceTitle": "What a Doctor Visit Costs in Every Country",
+  "title": "The Same Visit. Free In One Country, Hundreds In Another.",
+  "hook": "The same visit. Free in one country, hundreds in another.",
+  "question": "Which do you live in?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-uhc",
+      "name": "Universal health care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Universal_health_care",
+      "quote": "universal health care",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-oop",
+      "name": "Out-of-pocket expense (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Out-of-pocket_expense",
+      "quote": "out-of-pocket",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-copay",
+      "name": "Copayment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Copayment",
+      "quote": "copayment",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-usprices",
+      "name": "Health care prices in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_care_prices_in_the_United_States",
+      "quote": "health care prices",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take the identical doctor visit and compare two countries side by side. In one it's free; in the other, hundreds.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Same visit.",
+            "Free vs $$$."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In a universal system, you walk in, get seen, and walk out with no bill at all.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Same checkup",
+          "thenLabel": "Universal system",
+          "thenValue": "$0",
+          "nowLabel": "US system",
+          "nowValue": "$170+",
+          "sub": "identical visit"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Universal health care spreads the cost across all taxpayers.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-uhc",
+          "kicker": "Wikipedia · universal health care"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "In the US, you face a copay, then possibly more once insurance decides what it'll cover.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "copay +",
+          "label": "then whatever insurance won't cover",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A copayment is the fixed fee you pay just to be seen.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-copay",
+          "kicker": "Wikipedia · copayment"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And that's before out-of-pocket costs, the gaps insurance quietly leaves you to fund.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "out-of-pocket",
+          "label": "the hidden extra",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Out-of-pocket costs are everything insurance doesn't pay.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-oop",
+          "kicker": "Wikipedia · out-of-pocket"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Same medicine, wildly different bill, decided entirely by which border you were born behind.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Decided by the border",
+          "props": [
+            "globe",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Same doctor, same advice, and a bill decided entirely by your postcode on Earth.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Decided by postcode",
+          "props": [
+            "globe",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "US prices run about double, with no better results.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-usprices",
+          "kicker": "Wikipedia · US health prices"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, which system do you actually live in?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "Which do you live in?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

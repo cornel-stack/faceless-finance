@@ -1,0 +1,228 @@
+{
+  "id": "SH178",
+  "num": 178,
+  "slug": "cheapest-country-lights-on",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP099",
+  "sourceTitle": "Electricity, Internet & Phone Bills in Every Country",
+  "title": "The Cheapest Country To Keep The Lights On",
+  "hook": "The cheapest country to keep the lights on.",
+  "question": "How does yours compare?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-electricity",
+      "name": "Electricity pricing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electricity_pricing",
+      "quote": "electricity pricing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mobile",
+      "name": "Mobile phone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
+      "quote": "mobile phone",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-utility",
+      "name": "Public utility (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Public_utility",
+      "quote": "public utility",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-internet",
+      "name": "Internet access (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Internet_access",
+      "quote": "internet access",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's rank countries by the simple cost of keeping the lights, the wifi, and the phone on each month.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "Cheapest place",
+            "for the basics."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A handful of countries make it remarkably cheap. Others, including the US, charge a premium for the same service.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Monthly utilities",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Low-cost Asia",
+              "value": "~$40",
+              "note": "cheapest",
+              "color": "#1f7a3d",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "Much of EU",
+              "value": "moderate",
+              "note": "competitive",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "3",
+              "name": "USA",
+              "value": "high",
+              "note": "pricey data + power",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "4",
+              "name": "Islands / remote",
+              "value": "~$250",
+              "note": "priciest",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Power is cheapest where generation is abundant and competitive.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-electricity",
+          "kicker": "Wikipedia · electricity pricing"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Mobile service is the biggest swing, driven almost entirely by how much competition there is.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "competition",
+          "label": "drives the price",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "More carriers competing means far cheaper phone plans.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mobile",
+          "kicker": "Wikipedia · mobile phone"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In many countries these are treated as regulated public utilities, which keeps prices down.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "regulated",
+          "label": "= cheaper bills",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A public utility is an essential service, often price-controlled.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-utility",
+          "kicker": "Wikipedia · public utility"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The same wifi and phone plan can cost five times more across a single border.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "5× across a border",
+          "props": [
+            "globe",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Where internet is competitive, the price collapses.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-internet",
+          "kicker": "Wikipedia · internet access"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Over a lifetime, that monthly gap quietly adds up to a small fortune.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A lifetime gap",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So how does your country compare on the monthly basics?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "How does yours compare?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

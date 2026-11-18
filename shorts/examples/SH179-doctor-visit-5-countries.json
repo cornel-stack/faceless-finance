@@ -1,0 +1,197 @@
+{
+  "id": "SH179",
+  "num": 179,
+  "slug": "doctor-visit-5-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP100",
+  "sourceTitle": "What a Doctor Visit Costs in Every Country",
+  "title": "What One Doctor Visit Costs In Five Countries",
+  "hook": "What one doctor visit costs in five countries.",
+  "question": "What is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-uhc",
+      "name": "Universal health care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Universal_health_care",
+      "quote": "universal health care",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-healthins",
+      "name": "Health insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_insurance",
+      "quote": "health insurance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-usprices",
+      "name": "Health care prices in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Health_care_prices_in_the_United_States",
+      "quote": "health care prices",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-oop",
+      "name": "Out-of-pocket expense (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Out-of-pocket_expense",
+      "quote": "out-of-pocket",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "One routine doctor visit. Same checkup, same advice. The price swings from zero to hundreds depending on the country.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "One doctor visit.",
+            "5 countries."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In most rich countries the visit is free at the point of care. In the US, it averages around a hundred seventy dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$0 vs $170",
+          "label": "a routine visit: most vs US",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Universal systems cover the visit through taxes, not a bill.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-uhc",
+          "kicker": "Wikipedia · universal health care"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The difference isn't better doctors. It's a whole industry of middlemen sitting between you and care.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "building",
+          "kicker": "the difference",
+          "line": "The middlemen",
+          "sub": "insurers between you and the doctor"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "US care runs through private insurance, each adding cost.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-healthins",
+          "kicker": "Wikipedia · health insurance"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "US family insurance premiums top twenty thousand dollars a year, before a single copay.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$20K+/yr",
+          "label": "US family premiums",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The US spends about double per person, for no better outcomes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-usprices",
+          "kicker": "Wikipedia · US health prices"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Which is why medical bills are a leading cause of US bankruptcy, almost unheard of elsewhere.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "#1 bankruptcy cause",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "You're not paying for better medicine, you're paying for the paperwork wrapped around it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Paying for paperwork",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And out-of-pocket costs land on top of the premiums.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-oop",
+          "kicker": "Wikipedia · out-of-pocket"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So what does one doctor visit cost you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "What is yours?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

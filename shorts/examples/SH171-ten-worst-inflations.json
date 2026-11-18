@@ -1,0 +1,200 @@
+{
+  "id": "SH171",
+  "num": 171,
+  "slug": "ten-worst-inflations",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP096",
+  "sourceTitle": "Top 10 Countries by Inflation",
+  "title": "The Ten Worst Inflations Happening Right Now",
+  "hook": "The ten worst inflations happening right now.",
+  "question": "Is yours on the board?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "inflation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hyperinflation",
+      "name": "Hyperinflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hyperinflation",
+      "quote": "hyperinflation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-qtm",
+      "name": "Quantity theory of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Quantity_theory_of_money",
+      "quote": "quantity theory of money",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-currencycrisis",
+      "name": "Currency crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Currency_crisis",
+      "quote": "currency crisis",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Inflation in most rich countries is a few percent. In the worst-hit countries right now, it's a different universe.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "fire",
+            "chartUp"
+          ],
+          "lines": [
+            "The 10 worst",
+            "inflations now."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At the top of the board today, prices are rising by well over five hundred percent a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "500%+",
+          "label": "yearly inflation, worst countries",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Inflation is the steady rise in the average price of goods.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "And history's record is almost unimaginable. Zimbabwe once hit seventy-nine billion percent in a single month.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "79,000,000,000%",
+          "label": "Zimbabwe's peak monthly rate",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Hyperinflation is when prices spiral completely out of control.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hyperinflation",
+          "kicker": "Wikipedia · hyperinflation"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "At even fifty percent a month, cash loses about ninety-nine percent of its value in a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "–99%/yr",
+          "label": "at 50% monthly inflation",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It happens when the money supply explodes faster than goods.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-qtm",
+          "kicker": "Wikipedia · quantity theory of money"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "When their money dies, people flee to one thing above all, the US dollar.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "They flee to the dollar",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "When a currency collapses, savings, salaries, and whole middle classes can vanish within months.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Middle class vanishes",
+          "props": [
+            "fire",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "It almost always tips into a full currency crisis.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-currencycrisis",
+          "kicker": "Wikipedia · currency crisis"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, is your country anywhere on that board?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Is yours on the board?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

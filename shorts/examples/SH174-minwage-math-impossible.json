@@ -1,0 +1,204 @@
+{
+  "id": "SH174",
+  "num": 174,
+  "slug": "minwage-math-impossible",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP097",
+  "sourceTitle": "Minimum Wage vs Rent in Every US State",
+  "title": "The State Where The Math Is Simply Impossible",
+  "hook": "The state where the math is simply impossible.",
+  "question": "Did you expect that one?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-usminwage",
+      "name": "Minimum wage in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minimum_wage_in_the_United_States",
+      "quote": "minimum wage in the United States",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-workingpoor",
+      "name": "Working poor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Working_poor",
+      "quote": "working poor",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hai",
+      "name": "Housing affordability (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_index",
+      "quote": "housing affordability",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-minwage",
+      "name": "Minimum wage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minimum_wage",
+      "quote": "minimum wage",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "In every state the minimum-wage-versus-rent math is tough. In one, it's flat-out impossible. Let's rank them.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "x"
+          ],
+          "lines": [
+            "Where the math",
+            "breaks."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The worst gaps show up where rents are high but the wage floor is still stuck near the federal minimum.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Min-wage hours for a 1-bed",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Hawaii",
+              "value": "impossible",
+              "note": "rent + low floor",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Coastal metros",
+              "value": "brutal",
+              "note": "90+ hrs/week",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "Higher-wage states",
+              "value": "hard",
+              "note": "but survivable",
+              "color": "#17120f",
+              "bar": 0.5
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Many states still sit right at the federal seven twenty-five.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-usminwage",
+          "kicker": "Wikipedia · US minimum wage"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "In the worst spots, affording a one-bedroom alone would take well over a hundred hours a week.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "100+ hrs",
+          "label": "a week, for one bedroom",
+          "props": [
+            "clock",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It traps millions in the category economists call the working poor.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-workingpoor",
+          "kicker": "Wikipedia · working poor"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "There are only a hundred sixty-eight hours in a week, so the math literally cannot close.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "It can't close",
+          "props": [
+            "clock",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It's the sharpest edge of the housing affordability crisis.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hai",
+          "kicker": "Wikipedia · housing affordability"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A full-time job that can't cover a single bedroom isn't really a wage, it's a trap.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Not a wage, a trap",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "A minimum wage is meant to be a floor, not a ceiling on survival.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-minwage",
+          "kicker": "Wikipedia · minimum wage"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, did you expect that particular state to top the list?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Did you expect that?",
+          "sub": "Comment your guess"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

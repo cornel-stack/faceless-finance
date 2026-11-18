@@ -1,0 +1,204 @@
+{
+  "id": "SH172",
+  "num": 172,
+  "slug": "100-percent-inflation-year",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP096",
+  "sourceTitle": "Top 10 Countries by Inflation",
+  "title": "What 100% Inflation Does To A Salary In One Year",
+  "hook": "What 100% inflation does to a salary in one year.",
+  "question": "Could you survive it?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hyperinflation",
+      "name": "Hyperinflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hyperinflation",
+      "quote": "hyperinflation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-moneysupply",
+      "name": "Money supply (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_supply",
+      "quote": "money supply",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-currencycrisis",
+      "name": "Currency crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Currency_crisis",
+      "quote": "currency crisis",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-qtm",
+      "name": "Quantity theory of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Quantity_theory_of_money",
+      "quote": "quantity theory of money",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Imagine inflation of one hundred percent a year. Let's walk your salary through it, month by month. It's brutal.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "coin",
+            "fire"
+          ],
+          "lines": [
+            "100% inflation.",
+            "One year."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At a hundred percent a year, prices roughly double over twelve months, so your pay buys about half as much.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Your salary's real value",
+          "rows": [
+            {
+              "rank": "Jan",
+              "name": "Month 1",
+              "value": "100%",
+              "note": "full value",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "Jun",
+              "name": "Month 6",
+              "value": "~70%",
+              "note": "slipping fast",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "Dec",
+              "name": "Month 12",
+              "value": "~50%",
+              "note": "half gone",
+              "color": "#c0392b",
+              "bar": 0.5
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Left unchecked, that doubling accelerates into hyperinflation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hyperinflation",
+          "kicker": "Wikipedia · hyperinflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Any savings in cash simply melt. Holding money becomes a guaranteed way to lose it.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "cash melts",
+          "label": "savings evaporate",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It's driven by the money supply ballooning out of control.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-moneysupply",
+          "kicker": "Wikipedia · money supply"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "People start spending wages the instant they're paid, because waiting a week means paying more.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Spend it instantly",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It usually tips into a full-blown currency crisis.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-currencycrisis",
+          "kicker": "Wikipedia · currency crisis"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The cruel part is it quietly rewards debt and punishes anyone who tried to save.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Debt wins, savers lose",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Print enough money, and prices follow it straight up.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-qtm",
+          "kicker": "Wikipedia · quantity theory of money"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So honestly, on a salary losing half its value in a year, could you survive it?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Could you survive it?",
+          "sub": "Comment your plan"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

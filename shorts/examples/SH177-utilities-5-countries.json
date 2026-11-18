@@ -1,0 +1,200 @@
+{
+  "id": "SH177",
+  "num": 177,
+  "slug": "utilities-5-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP099",
+  "sourceTitle": "Electricity, Internet & Phone Bills in Every Country",
+  "title": "Electricity, Internet And Phone In Five Countries",
+  "hook": "Electricity, internet and phone in five countries.",
+  "question": "What is your total?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-electricity",
+      "name": "Electricity pricing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electricity_pricing",
+      "quote": "electricity pricing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-internet",
+      "name": "Internet access (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Internet_access",
+      "quote": "internet access",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-broadband",
+      "name": "Broadband (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Broadband",
+      "quote": "broadband",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mobile",
+      "name": "Mobile phone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mobile_phone",
+      "quote": "mobile phone",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Your monthly bills for power, internet, and phone sound unavoidable. But the price swings massively by country.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "Power, net, phone.",
+            "5 countries."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The combined monthly bill ranges from around forty dollars in the cheapest country to two hundred fifty in the priciest.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$40 vs $250",
+          "label": "monthly power + net + phone",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Electricity prices alone vary several-fold between countries.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-electricity",
+          "kicker": "Wikipedia · electricity pricing"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Mobile data is the wildest. The price per gigabyte can differ twenty to thirty times across borders.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "20–30×",
+          "label": "mobile data price gap",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Competition and regulation decide how cheap your internet is.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-internet",
+          "kicker": "Wikipedia · internet access"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Fast fiber abroad can cost thirty dollars, while slower US broadband runs closer to ninety.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$30 vs $90",
+          "label": "fast fiber vs slow US broadband",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Where broadband is a competitive market, prices tumble.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-broadband",
+          "kicker": "Wikipedia · broadband"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Invested instead, a two-hundred-dollar monthly bill gap becomes over two hundred thousand across a lifetime.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "$200K lifetime gap",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "These feel like fixed costs, but half the bill is really just where you live.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Half is location",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Phone plans swing most, driven purely by competition.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mobile",
+          "kicker": "Wikipedia · mobile phone"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what does your monthly total actually come to?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "What is your total?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

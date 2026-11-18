@@ -1,0 +1,197 @@
+{
+  "id": "SH176",
+  "num": 176,
+  "slug": "estate-tax-by-state",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP098",
+  "sourceTitle": "The Cost of Dying",
+  "title": "Estate Tax, State By State",
+  "hook": "Estate tax, state by state.",
+  "question": "What would yours take?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-estatetax",
+      "name": "Estate tax in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States",
+      "quote": "estate tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inheritancetax",
+      "name": "Inheritance tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inheritance_tax",
+      "quote": "inheritance tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-probate",
+      "name": "Probate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Probate",
+      "quote": "probate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-funeral",
+      "name": "Funeral (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Funeral",
+      "quote": "funeral",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Beyond the federal rules, a surprising number of states take their own cut when you die. Let's map it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Estate tax,",
+            "by state."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Federally, you're exempt below a huge threshold. But some states tax estates far earlier.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "map",
+          "kicker": "the state layer",
+          "line": "States tax sooner",
+          "sub": "below the federal line"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The federal estate tax only bites above a multi-million exemption.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-estatetax",
+          "kicker": "Wikipedia · estate tax"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Around seventeen states still levy an estate or inheritance tax of their own.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "~17 states",
+          "label": "tax estates or inheritances",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "An inheritance tax is charged to the person receiving the money.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inheritancetax",
+          "kicker": "Wikipedia · inheritance tax"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "A few start taxing estates at just one or two million dollars, catching ordinary families.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$1–2M",
+          "label": "where some states start",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And that's on top of probate fees in every state.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-probate",
+          "kicker": "Wikipedia · probate"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Where you die, not just how rich you are, decides how much is taken.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Location taxes death",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Where you happen to die can quietly cost your family tens of thousands more.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Death by zip code",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The funeral itself is only the first line on the bill.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-funeral",
+          "kicker": "Wikipedia · funeral"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what would your state actually take?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "What would yours take?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
