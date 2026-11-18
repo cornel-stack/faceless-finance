@@ -1,0 +1,213 @@
+{
+  "id": "SH123",
+  "num": 123,
+  "slug": "emergency-fund-0-to-2yr",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP072",
+  "sourceTitle": "Every Level of Emergency Fund",
+  "title": "$0 To Two Years Saved, And Who Survives What",
+  "hook": "$0 to two years saved, and who survives what.",
+  "question": "How long could you last?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-efund",
+      "name": "Emergency fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emergency_fund",
+      "quote": "emergency fund",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-unemployment",
+      "name": "Unemployment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Unemployment",
+      "quote": "unemployment",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mma",
+      "name": "Money market account (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_market_account",
+      "quote": "money market account",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-budget",
+      "name": "Budget (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Budget",
+      "quote": "budget",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "How long could you survive with no income starting tomorrow? Your emergency fund decides. Let's climb the levels.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "lock",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "$0 to 2 years",
+            "saved."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At zero, one surprise bill becomes debt. At a few months, you can weather a layoff. At two years, you're nearly untouchable.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "What each level survives",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$0",
+              "value": "fragile",
+              "note": "one bill = debt",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "1 month",
+              "value": "a scare",
+              "note": "barely a buffer",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "6 months",
+              "value": "a layoff",
+              "note": "the standard goal",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "4",
+              "name": "2 years",
+              "value": "anything",
+              "note": "near-untouchable",
+              "color": "#1f7a3d",
+              "bar": 0.25
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "An emergency fund is cash set aside purely for the unexpected.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-efund",
+          "kicker": "Wikipedia · emergency fund"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The reality is grim. Around forty percent of Americans can't cover a four hundred dollar surprise in cash.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "40%",
+          "label": "can't cover a $400 emergency",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "And the average job search after a layoff runs about five months.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-unemployment",
+          "kicker": "Wikipedia · unemployment"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Which is exactly why the classic target is three to six months of expenses.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "3–6 mo",
+          "label": "the classic target",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Park it somewhere safe and liquid, like a money market account.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mma",
+          "kicker": "Wikipedia · money market account"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The buffer isn't about being wealthy, it's about how many bad weeks you can absorb.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Weeks you can absorb",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Building it starts with a budget that leaves something behind.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-budget",
+          "kicker": "Wikipedia · budget"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So honestly, with no income, how long could you actually last?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "How long could you last?",
+          "sub": "Comment the months"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

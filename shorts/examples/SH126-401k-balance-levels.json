@@ -1,0 +1,228 @@
+{
+  "id": "SH126",
+  "num": 126,
+  "slug": "401k-balance-levels",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP073",
+  "sourceTitle": "Your Life at Every Level of 401(k) Balance",
+  "title": "Every Balance Level And The Retirement It Buys",
+  "hook": "Every balance level and the retirement it buys.",
+  "question": "Which is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-401k",
+      "name": "401(k) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/401(k)",
+      "quote": "401(k)",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-retirement",
+      "name": "Retirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement",
+      "quote": "retirement",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dc",
+      "name": "Defined contribution plan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Defined_contribution_plan",
+      "quote": "defined contribution",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Your 401(k) balance isn't just a number. Each level buys a very different retirement. Let's climb them.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "Each balance,",
+            "a different retirement."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Using the four percent rule, each hundred thousand saved pays about four thousand a year, for life.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Balance → yearly income",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$100K",
+              "value": "$4K/yr",
+              "note": "a supplement",
+              "color": "#5c544c",
+              "bar": 0.1
+            },
+            {
+              "rank": "2",
+              "name": "$500K",
+              "value": "$20K/yr",
+              "note": "with Social Security, okay",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "3",
+              "name": "$1M",
+              "value": "$40K/yr",
+              "note": "comfortable",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "$2.5M",
+              "value": "$100K/yr",
+              "note": "the dream",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Your retirement income is really driven by your final balance.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-retirement",
+          "kicker": "Wikipedia · retirement"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "So to retire on a given income, you need roughly twenty-five times your annual spending saved.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "× 25",
+          "label": "spending = your target",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Most people build it inside a tax-advantaged 401(k).",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-401k",
+          "kicker": "Wikipedia · 401(k)"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And incredibly, over five hundred thousand ordinary people have reached a million, just by being consistent.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "500K+",
+          "label": "ordinary 401(k) millionaires",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "They did it with compounding and time, not huge salaries.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The real target isn't a round million, it's twenty-five times whatever you actually spend.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "25× spending",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Your final balance is entirely down to what you contribute.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dc",
+          "kicker": "Wikipedia · defined contribution"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Consistency, not a giant salary, is what quietly built most of them.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Consistency wins",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So which balance level, and which retirement, is actually yours?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which is yours?",
+          "sub": "Comment your level"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

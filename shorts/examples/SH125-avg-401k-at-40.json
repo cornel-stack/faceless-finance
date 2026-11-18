@@ -1,0 +1,197 @@
+{
+  "id": "SH125",
+  "num": 125,
+  "slug": "avg-401k-at-40",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP073",
+  "sourceTitle": "Your Life at Every Level of 401(k) Balance",
+  "title": "The Average 401(k) Balance At 40",
+  "hook": "The average 401(k) balance at 40.",
+  "question": "Above or below?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-401k",
+      "name": "401(k) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/401(k)",
+      "quote": "401(k)",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dc",
+      "name": "Defined contribution plan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Defined_contribution_plan",
+      "quote": "defined contribution",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-match",
+      "name": "Employer matching program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Employer_matching_program",
+      "quote": "employer matching",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Here's a number that quietly stresses out everyone in their forties. The average 401(k) balance at age forty.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "401(k) at 40?",
+            "The number."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A 401(k) is the main retirement account most American workers have.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "what it is",
+          "line": "Your work pension",
+          "sub": "a defined-contribution plan"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A 401(k) lets you invest for retirement straight from your paycheck.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-401k",
+          "kicker": "Wikipedia · 401(k)"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Guess your number, then brace yourself. The average at forty is often well under a hundred thousand dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "<$100K",
+          "label": "typical 401(k) at 40",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "In a defined-contribution plan, your balance depends on what you put in.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dc",
+          "kicker": "Wikipedia · defined contribution"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Averages are also skewed upward by a few big savers, so the median is even lower.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Median is lower",
+          "props": [
+            "chartDown",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The good news is compound interest still has decades to work.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Every hundred thousand saved eventually pays you about four thousand a year, forever.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$4K/yr",
+          "label": "per $100K, via the 4% rule",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The number stings, but you very likely still have decades for it to compound.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Decades left",
+          "props": [
+            "clock",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And an employer match is free money accelerating it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-match",
+          "kicker": "Wikipedia · employer matching"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, is your balance above or below the average for forty?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Above or below?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

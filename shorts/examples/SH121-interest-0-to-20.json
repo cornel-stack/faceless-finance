@@ -1,0 +1,213 @@
+{
+  "id": "SH121",
+  "num": 121,
+  "slug": "interest-0-to-20",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP071",
+  "sourceTitle": "Every Level of Interest Rate",
+  "title": "0% To 20%, And Who Wins At Each Rate",
+  "hook": "0% to 20%, and who wins at each rate.",
+  "question": "Which rate are you living in?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-rate",
+      "name": "Interest rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interest_rate",
+      "quote": "interest rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ffr",
+      "name": "Federal funds rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federal_funds_rate",
+      "quote": "federal funds rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-real",
+      "name": "Real interest rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+      "quote": "real interest rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-monetary",
+      "name": "Monetary policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Monetary_policy",
+      "quote": "monetary policy",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The interest rate quietly decides who gets richer and who gets squeezed. Let's climb it from zero to twenty percent.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "0% to 20%.",
+            "Who wins?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At zero, borrowers party and savers earn nothing. As rates climb, that flips completely.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Who wins at each rate",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "0%",
+              "value": "borrowers",
+              "note": "savers earn nothing",
+              "color": "#5c544c",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "5%",
+              "value": "balanced",
+              "note": "savers wake up",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "3",
+              "name": "10%",
+              "value": "savers",
+              "note": "borrowing hurts",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "20%",
+              "value": "lenders",
+              "note": "debt is brutal",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The interest rate is simply the price of borrowing money.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rate",
+          "kicker": "Wikipedia · interest rate"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "On a hundred thousand dollars saved, zero percent pays you nothing, five percent pays five thousand a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$0 vs $5,000",
+          "label": "a year on $100K saved",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Central banks set a base rate that drags all the others with it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ffr",
+          "kicker": "Wikipedia · federal funds rate"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And the same debt flips too. A three hundred thousand mortgage jumps from twelve hundred a month to two thousand.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$1,200 vs $2,000",
+          "label": "same mortgage, 3% vs 7%",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "What matters most is the real rate, after inflation is subtracted.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-real",
+          "kicker": "Wikipedia · real interest rate"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Flip the rate, and the exact same economy quietly rewards completely different people.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Rate flips winners",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Central banks move that rate to steer the whole economy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-monetary",
+          "kicker": "Wikipedia · monetary policy"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So right now, which interest-rate world are you actually living in?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which rate are you in?",
+          "sub": "Comment your rate"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

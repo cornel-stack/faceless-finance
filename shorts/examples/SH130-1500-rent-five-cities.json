@@ -1,0 +1,213 @@
+{
+  "id": "SH130",
+  "num": 130,
+  "slug": "1500-rent-five-cities",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP075",
+  "sourceTitle": "Every Level of Rent",
+  "title": "What $1,500 Rents In Five Different Cities",
+  "hook": "What $1,500 rents in five different cities.",
+  "question": "What does yours rent?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-rent",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "renting",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-afford",
+      "name": "Housing affordability in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_in_the_United_States",
+      "quote": "housing affordability",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-costliving",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-deposit",
+      "name": "Security deposit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Security_deposit",
+      "quote": "security deposit",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take the exact same fifteen hundred dollars a month and shop for rent in five different US cities. The results are jarring.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "$1,500 rent,",
+            "5 cities."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In cheaper metros, fifteen hundred gets you a whole apartment. In the priciest, barely a room.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "What $1,500/mo rents",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Midwest city",
+              "value": "2-bed",
+              "note": "room to spare",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Sun Belt",
+              "value": "1-bed",
+              "note": "comfortable",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "Big coastal",
+              "value": "studio",
+              "note": "if you're lucky",
+              "color": "#17120f",
+              "bar": 0.35
+            },
+            {
+              "rank": "4",
+              "name": "NYC / SF",
+              "value": "a room",
+              "note": "with roommates",
+              "color": "#c0392b",
+              "bar": 0.2
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The same dollars simply buy very different lives by city.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-costliving",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The typical US rent now sits somewhere around fifteen hundred to two thousand a month.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~$1,500+",
+          "label": "the typical US rent today",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "And it has climbed sharply over the last decade.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rent",
+          "kicker": "Wikipedia · renting"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Landlords often want your income to be about forty times the monthly rent to even apply.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "40×",
+          "label": "income vs rent, to qualify",
+          "props": [
+            "coin",
+            "lock"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That rule prices many people out before they even tour.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-afford",
+          "kicker": "Wikipedia · housing affordability"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Your city, far more than your salary, quietly decides what that money rents.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "City > salary",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "And every city wants a hefty security deposit up front too.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deposit",
+          "kicker": "Wikipedia · security deposit"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, what does fifteen hundred dollars rent where you live?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "What does yours rent?",
+          "sub": "Comment your city"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

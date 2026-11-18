@@ -1,0 +1,227 @@
+{
+  "id": "SH129",
+  "num": 129,
+  "slug": "rent-800-to-8000",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP075",
+  "sourceTitle": "Every Level of Rent",
+  "title": "$800 To $8,000 A Month, And What You Actually Get",
+  "hook": "$800 to $8,000 a month, and what you actually get.",
+  "question": "What do you pay?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-rent",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "renting",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-afford",
+      "name": "Housing affordability in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_affordability_in_the_United_States",
+      "quote": "housing affordability",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-costliving",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-deposit",
+      "name": "Security deposit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Security_deposit",
+      "quote": "security deposit",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Rent ranges from eight hundred dollars a month to eight thousand. But what you actually get for it is wildly uneven.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "$800 to $8,000",
+            "a month."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The jump in price buys far less space than you'd think, mostly it buys location.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Rent → what you get",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$800",
+              "value": "a room",
+              "note": "cheap metro",
+              "color": "#5c544c",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "$2,000",
+              "value": "typical 1-bed",
+              "note": "the US average zone",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "3",
+              "name": "$4,000",
+              "value": "nice, big city",
+              "note": "prime location",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "$8,000",
+              "value": "luxury",
+              "note": "you're paying for the view",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Renting means paying for a home in which you build no equity.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rent",
+          "kicker": "Wikipedia · renting"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "And here's the brutal math. Two thousand a month over forty years is nearly a million dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~$960K",
+          "label": "$2,000/mo over 40 years",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Rent is eating a record share of incomes in many cities.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-afford",
+          "kicker": "Wikipedia · housing affordability"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Spend all that, and at the end you own exactly nothing.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "You own nothing",
+          "props": [
+            "x",
+            "home"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It's usually the single biggest line in your cost of living.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-costliving",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Rent buys you a roof today, and absolutely nothing at all for tomorrow.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Roof, not equity",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Even the deposit is just your own money, held hostage.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deposit",
+          "kicker": "Wikipedia · security deposit"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Four decades of payments, and the keys still belong to someone else.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Keys stay theirs",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what do you actually pay in rent right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "What do you pay?",
+          "sub": "Comment your rent"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

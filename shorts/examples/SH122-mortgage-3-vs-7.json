@@ -1,0 +1,184 @@
+{
+  "id": "SH122",
+  "num": 122,
+  "slug": "mortgage-3-vs-7",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP071",
+  "sourceTitle": "Every Level of Interest Rate",
+  "title": "The Same Mortgage At 3% And At 7%",
+  "hook": "The same mortgage at 3% and at 7%.",
+  "question": "What is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-rate",
+      "name": "Interest rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interest_rate",
+      "quote": "interest rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ffr",
+      "name": "Federal funds rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federal_funds_rate",
+      "quote": "federal funds rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-monetary",
+      "name": "Monetary policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Monetary_policy",
+      "quote": "monetary policy",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-real",
+      "name": "Real interest rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+      "quote": "real interest rate",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take the exact same house, the exact same loan, and change only the interest rate. The payment transforms.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "Same mortgage.",
+            "3% vs 7%."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A three hundred thousand dollar mortgage at three percent costs around twelve hundred a month. At seven, about two thousand.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "$300K mortgage",
+          "thenLabel": "At 3%",
+          "thenValue": "$1,200/mo",
+          "nowLabel": "At 7%",
+          "nowValue": "$2,000/mo",
+          "sub": "same house, same loan"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The rate is the single biggest lever on your monthly payment.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rate",
+          "kicker": "Wikipedia · interest rate"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "That's eight hundred dollars more, every single month, for the identical home.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "+$800/mo",
+          "label": "for the exact same house",
+          "props": [
+            "fire",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "When the central bank hikes rates, mortgage rates follow.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ffr",
+          "kicker": "Wikipedia · federal funds rate"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Over thirty years, that gap adds up to hundreds of thousands in extra interest.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$280K+",
+          "label": "extra interest over 30 years",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It's monetary policy reaching straight into your bank account.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-monetary",
+          "kicker": "Wikipedia · monetary policy"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The house barely changed price. The interest rate quietly did all the damage.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Rate, not price",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "What really bites is the rate, not the sticker on the house.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-real",
+          "kicker": "Wikipedia · real interest rate"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So the house price barely moved. The rate did all the damage. What's yours?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "What is yours?",
+          "sub": "Comment your rate"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}
