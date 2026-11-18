@@ -1,0 +1,212 @@
+{
+  "id": "SH046",
+  "num": 46,
+  "slug": "money-mistake-levels",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP034",
+  "sourceTitle": "The Fastest Way to Get Poor",
+  "title": "Every Level Of Money Mistake, Cheapest To Worst",
+  "hook": "Every level of money mistake, cheapest to worst.",
+  "question": "Which have you made?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-ccdebt",
+      "name": "Credit card debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_debt",
+      "quote": "Debt grows through the accrual of",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-payday",
+      "name": "Payday loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Payday_loan",
+      "quote": "often characterized by high interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-leverage",
+      "name": "Leverage (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+      "quote": "any technique involving borrowing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "interest accumulated from a principal",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's rank money mistakes from the merely annoying to the truly catastrophic. See how many you recognise.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Money mistakes,",
+            "ranked."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At the bottom, small overspending. Then a credit card balance. Then a payday loan. And at the very top, trading on borrowed money.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Cheapest to worst",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Overspending",
+              "value": "$",
+              "note": "recoverable",
+              "color": "#5c544c",
+              "bar": 0.3
+            },
+            {
+              "rank": "2",
+              "name": "Credit card debt",
+              "value": "$$",
+              "note": "~20%+ APR",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "Payday loans",
+              "value": "$$$",
+              "note": "~400% APR",
+              "color": "#17120f",
+              "bar": 0.85
+            },
+            {
+              "rank": "4",
+              "name": "Leverage",
+              "value": "ruin",
+              "note": "borrowed bets",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Credit card balances compound against you through constant interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ccdebt",
+          "kicker": "Wikipedia · credit card debt"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The payday rung is brutal, with rates that can hit four hundred percent a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "400% APR",
+          "label": "the payday rung",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Payday loans are characterised by extremely high interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-payday",
+          "kicker": "Wikipedia · payday loan"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "But the top rung is the deadliest, because borrowing to invest magnifies every loss.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Leverage = ruin",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Leverage means borrowing funds to buy an investment, which cuts both ways.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-leverage",
+          "kicker": "Wikipedia · leverage"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Notice the jump. Each rung costs you several times more than the one right below it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Each rung multiplies",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The same compound interest that builds wealth works brutally in reverse.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So be honest, which of these rungs have you climbed?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which have you made?",
+          "sub": "Comment the level"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

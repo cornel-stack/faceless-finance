@@ -1,0 +1,186 @@
+{
+  "id": "SH044",
+  "num": 44,
+  "slug": "buy-borrow-die",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP033",
+  "sourceTitle": "Why the Rich Pretend to Be Poor",
+  "title": "Buy, Borrow, Die — In 45 Seconds",
+  "hook": "Buy, borrow, die, in 45 seconds.",
+  "question": "Should this be allowed?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-cgt",
+      "name": "Capital gains tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Capital_gains_tax",
+      "quote": "the tax on profits realised on the",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-stepup",
+      "name": "Stepped-up basis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stepped-up_basis",
+      "quote": "can greatly reduce the beneficiary",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-avoid",
+      "name": "Tax avoidance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_avoidance",
+      "quote": "the legal use of the tax regime",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "There's a three-step strategy the ultra-wealthy use to pay almost no tax. It's called buy, borrow, die.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "lock"
+          ],
+          "lines": [
+            "Buy. Borrow.",
+            "Die."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Step one, buy assets that grow. Step two, borrow cheaply against them instead of selling. Step three, pass them on at death.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "The three steps",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Buy",
+              "value": "assets",
+              "note": "stock, property",
+              "color": "#1f7a3d",
+              "bar": 0.6
+            },
+            {
+              "rank": "2",
+              "name": "Borrow",
+              "value": "tax-free",
+              "note": "loans aren't income",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "Die",
+              "value": "reset",
+              "note": "heirs pay no gains",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Because you only owe capital gains tax if you actually sell.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cgt",
+          "kicker": "Wikipedia · capital gains tax"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Loans are not income, so borrowing against your stock hands you tax-free cash to live on.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "tax-free",
+          "label": "loans aren't income",
+          "props": [
+            "coin",
+            "lock"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It is textbook tax avoidance, entirely legal use of the rules.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-avoid",
+          "kicker": "Wikipedia · tax avoidance"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And at death, a rule resets the asset's value, so the heirs owe tax on none of the gains.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "The gains vanish",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That stepped-up basis can wipe out a lifetime of untaxed gains.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-stepup",
+          "kicker": "Wikipedia · stepped-up basis"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "It is the single biggest reason the very richest Americans can pay the lowest real tax rates of all.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Lowest real rates",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So the gains are never taxed, at all. Should that be allowed?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Should this be allowed?",
+          "sub": "Comment below"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}

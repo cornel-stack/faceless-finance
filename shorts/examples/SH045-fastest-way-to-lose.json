@@ -1,0 +1,197 @@
+{
+  "id": "SH045",
+  "num": 45,
+  "slug": "fastest-way-to-lose",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP034",
+  "sourceTitle": "The Fastest Way to Get Poor",
+  "title": "The Fastest Way To Lose Money Isn't Gambling",
+  "hook": "The fastest way to lose money is not gambling.",
+  "question": "Guilty?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-ccdebt",
+      "name": "Credit card debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_debt",
+      "quote": "Debt grows through the accrual of",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-payday",
+      "name": "Payday loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Payday_loan",
+      "quote": "often characterized by high interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-gamblersruin",
+      "name": "Gambler's ruin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gambler%27s_ruin",
+      "quote": "a game with non-positive expected",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lottery",
+      "name": "Lottery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lottery",
+      "quote": "a form of gambling that involves the",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The fastest way to destroy your money isn't the casino. It's something that looks far more respectable.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "fire"
+          ],
+          "lines": [
+            "Not gambling.",
+            "Worse."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "It's high-interest debt, quietly compounding against you, month after month.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "lock",
+          "kicker": "the real killer",
+          "line": "High-interest debt",
+          "sub": "compounding the wrong way"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Credit card debt grows relentlessly through the accrual of interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ccdebt",
+          "kicker": "Wikipedia · credit card debt"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A payday loan can carry an interest rate of around four hundred percent a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "400% APR",
+          "label": "the payday-loan trap",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Payday loans are defined by their punishingly high interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-payday",
+          "kicker": "Wikipedia · payday loan"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Combine bad odds with borrowed money, and ruin is basically mathematical.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Bad odds + debt",
+          "props": [
+            "x",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "In any game with non-positive odds, keep playing and you eventually lose it all.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gamblersruin",
+          "kicker": "Wikipedia · gambler's ruin"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Lottery jackpot odds, for comparison, are about one in three hundred million.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "1 in 300M",
+          "label": "jackpot odds",
+          "props": [
+            "x",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "A casino is at least honest about its odds. A credit card buries them deep in the fine print.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The honest casino",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "A lottery is pure gambling, where almost everyone loses by design.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lottery",
+          "kicker": "Wikipedia · lottery"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, high-interest debt eating you alive. Guilty?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "Guilty?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
