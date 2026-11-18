@@ -1,0 +1,225 @@
+{
+  "id": "SH084",
+  "num": 84,
+  "slug": "networth-by-age",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP052",
+  "sourceTitle": "Net Worth by Age in 2026",
+  "title": "Net Worth By Age, 25 Through 65",
+  "hook": "Net worth by age, 25 through 65.",
+  "question": "Where do you land?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-scf",
+      "name": "Survey of Consumer Finances (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survey_of_Consumer_Finances",
+      "quote": "Survey of Consumer Finances",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lifecycle",
+      "name": "Life-cycle hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Life-cycle_hypothesis",
+      "quote": "life-cycle hypothesis",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-boomers",
+      "name": "Baby boomers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Baby_boomers",
+      "quote": "baby boomers",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's climb net worth by age, from twenty-five all the way to sixty-five, and see where you actually land.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Net worth",
+            "by age."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "It starts small, often negative, then builds through your working life and peaks near retirement.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Median net worth by age",
+          "rows": [
+            {
+              "rank": "25",
+              "name": "Under 35",
+              "value": "~$39K",
+              "note": "starting out",
+              "color": "#5c544c",
+              "bar": 0.1
+            },
+            {
+              "rank": "40",
+              "name": "35–44",
+              "value": "~$135K",
+              "note": "building",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "55",
+              "name": "45–54",
+              "value": "~$247K",
+              "note": "peak earning",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "65",
+              "name": "55–64",
+              "value": "~$365K",
+              "note": "near retirement",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "These medians are from the Federal Reserve's household survey.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-scf",
+          "kicker": "Wikipedia · Survey of Consumer Finances"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Economists expect this hump shape. You borrow young, save in midlife, then spend it down.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the pattern",
+          "line": "The wealth hump",
+          "sub": "borrow, save, spend down"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "That's the life-cycle hypothesis of how saving works over a lifetime.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lifecycle",
+          "kicker": "Wikipedia · life-cycle hypothesis"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The brutal lesson is time. A dollar invested at twenty-five can become fifteen by sixty-five.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$1 → $15",
+          "label": "invested at 25, by 65",
+          "props": [
+            "chartUp",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Compound interest rewards the years far more than the dollars.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Start early, and the whole curve bends sharply upward in your favor.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Start early",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Older generations also rode decades of steadily rising asset prices.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-boomers",
+          "kicker": "Wikipedia · baby boomers"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Miss those early years, and no amount of catching up later fully makes up for them.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Early years count most",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So on that curve by age, where exactly do you land?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Where do you land?",
+          "sub": "Comment your age + guess"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

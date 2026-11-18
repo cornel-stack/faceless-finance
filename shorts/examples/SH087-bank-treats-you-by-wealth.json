@@ -1,0 +1,210 @@
+{
+  "id": "SH087",
+  "num": 87,
+  "slug": "bank-treats-you-by-wealth",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP054",
+  "sourceTitle": "How Banks Treat You at Every Level of Wealth",
+  "title": "How Your Bank Treats You At Every Level Of Wealth",
+  "hook": "How your bank treats you at every level of wealth.",
+  "question": "Which tier are you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-overdraft",
+      "name": "Overdraft (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Overdraft",
+      "quote": "overdraft",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-private",
+      "name": "Private banking (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Private_banking",
+      "quote": "private banking",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-family",
+      "name": "Family office (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Family_office",
+      "quote": "family office",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Your bank does not treat everyone the same. The service you get climbs sharply with your wealth. Here are the tiers.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "lock"
+          ],
+          "lines": [
+            "Same bank.",
+            "Different you."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At the bottom, you get fees. Overdraw by five dollars and you can be charged thirty-five.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$35",
+          "label": "to overdraw by $5",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "An overdraft fee is charged when you spend past your balance.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-overdraft",
+          "kicker": "Wikipedia · overdraft"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Climb up, and the fees fade, replaced by perks, better rates, and a dedicated banker.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "How the bank treats you",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Low balance",
+              "value": "fees",
+              "note": "overdraft, minimums",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Comfortable",
+              "value": "perks",
+              "note": "fees waived",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "$1M+",
+              "value": "private bank",
+              "note": "a personal banker",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "4",
+              "name": "$100M+",
+              "value": "family office",
+              "note": "your own firm",
+              "color": "#5c544c",
+              "bar": 0.25
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Private banking offers the wealthy tailored service and better terms.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-private",
+          "kicker": "Wikipedia · private banking"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "At the very top, you don't visit a bank at all. A family office runs your money for you.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "family office",
+          "label": "your own private firm",
+          "props": [
+            "coin",
+            "lock"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A family office is a private firm managing one rich family's wealth.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-family",
+          "kicker": "Wikipedia · family office"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Americans pay over ten billion dollars in overdraft fees a year, mostly at the bottom.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "$10B+ in fees",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The exact same institution, quietly treating two customers like different species.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Different species",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So which tier does your bank quietly put you in?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which tier are you?",
+          "sub": "Comment your guess"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

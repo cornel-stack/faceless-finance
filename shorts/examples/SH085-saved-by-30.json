@@ -1,0 +1,180 @@
+{
+  "id": "SH085",
+  "num": 85,
+  "slug": "saved-by-30",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP053",
+  "sourceTitle": "How Much You Should Have Saved",
+  "title": "What You Should Have Saved By 30",
+  "hook": "What you should have saved by 30.",
+  "question": "Are you behind?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-401k",
+      "name": "401(k) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/401(k)",
+      "quote": "401(k)",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-saving",
+      "name": "Saving (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saving",
+      "quote": "income not spent",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "There's a classic rule of thumb for how much you should have saved by age thirty. Brace yourself.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Saved by 30?",
+            "The target."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The common target is to have one full year of your salary saved by the time you turn thirty.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "1× salary",
+          "label": "the classic target by 30",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Saving is simply the income you set aside instead of spending.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-saving",
+          "kicker": "Wikipedia · saving"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The reality? The median under thirty-five has about thirty-nine thousand, so most people are behind.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$39K",
+          "label": "median — most are behind",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "If that stings, here's the good news. The amount matters far less than the time.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "don't panic",
+          "line": "Time beats amount",
+          "sub": "starting matters most"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Compound interest means early dollars grow the most.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Ten thousand dollars, left to grow, can quietly double to twenty, then forty, then eighty.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$10K → $80K",
+          "label": "doubling over the decades",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A tax-advantaged 401(k) is where many people do this growing.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-401k",
+          "kicker": "Wikipedia · 401(k)"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "And missing that target at thirty is incredibly common, and far more fixable than it feels.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Common & fixable",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, measured against that target, are you behind?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Are you behind?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

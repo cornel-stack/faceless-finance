@@ -1,0 +1,228 @@
+{
+  "id": "SH090",
+  "num": 90,
+  "slug": "retirement-number-every-age",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP055",
+  "sourceTitle": "How Much Money You Need to Retire",
+  "title": "The Retirement Number At Every Age",
+  "hook": "The retirement number at every age.",
+  "question": "Which age are you aiming for?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-trinity",
+      "name": "Trinity study (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trinity_study",
+      "quote": "Trinity study",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fi",
+      "name": "Financial independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_independence",
+      "quote": "financial independence",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ss",
+      "name": "Social Security (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Social_Security_(United_States)",
+      "quote": "Social Security",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-life",
+      "name": "Life expectancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Life_expectancy",
+      "quote": "life expectancy",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Your retirement number isn't one figure. It shifts depending on the age you want to stop. Here's the ladder.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Retire at",
+            "40, 50, 60, 65?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The earlier you retire, the bigger the pile you need, because it has to last far longer.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "To spend ~$40K/yr",
+          "rows": [
+            {
+              "rank": "40",
+              "name": "Retire at 40",
+              "value": "~$1.0M",
+              "note": "must last 45+ yrs",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "50",
+              "name": "Retire at 50",
+              "value": "~$1.0M",
+              "note": "still decades",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "60",
+              "name": "Retire at 60",
+              "value": "less",
+              "note": "shorter horizon",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "65",
+              "name": "Retire at 65",
+              "value": "least",
+              "note": "plus Social Security",
+              "color": "#5c544c",
+              "bar": 0.4
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The target is still roughly twenty-five times what you spend.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fi",
+          "kicker": "Wikipedia · financial independence"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "At every age, the core rule holds. Twenty-five times your yearly spending.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "× 25",
+          "label": "your annual spending",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Based on the Trinity study's four percent withdrawal rule.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-trinity",
+          "kicker": "Wikipedia · Trinity study"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Retire later, and a paycheck from the government quietly lightens the load.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "+ SS",
+          "label": "Social Security helps later",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Social Security adds guaranteed income from your late sixties.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ss",
+          "kicker": "Wikipedia · Social Security"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The single biggest factor is simply how long the money has to last.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "How long it lasts",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Longer life expectancy means your savings must stretch further than ever.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-life",
+          "kicker": "Wikipedia · life expectancy"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Retire early, and the pile might need to survive half a century.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "50 years to last",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So which retirement age are you actually aiming for?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Which age?",
+          "sub": "Comment your target"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

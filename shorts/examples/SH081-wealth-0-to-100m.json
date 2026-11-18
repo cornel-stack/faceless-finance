@@ -1,0 +1,210 @@
+{
+  "id": "SH081",
+  "num": 81,
+  "slug": "wealth-0-to-100m",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP051",
+  "sourceTitle": "Your Money at Every Level",
+  "title": "$0 To $100 Million, One Rung At A Time",
+  "hook": "$0 to $100 million, one rung at a time.",
+  "question": "Which rung are you on?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-scf",
+      "name": "Survey of Consumer Finances (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survey_of_Consumer_Finances",
+      "quote": "Survey of Consumer Finances",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-networth",
+      "name": "Net worth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Net_worth",
+      "quote": "net worth",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hnwi",
+      "name": "High-net-worth individual (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/High-net-worth_individual",
+      "quote": "high-net-worth individual",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's climb the entire wealth ladder, from zero all the way to a hundred million dollars, one rung at a time.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "$0 to",
+            "$100M."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The median US household has a total net worth of about a hundred ninety-three thousand dollars. That's the real middle.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$192,900",
+          "label": "median US household net worth",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "That figure comes straight from the Federal Reserve's own survey.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-scf",
+          "kicker": "Wikipedia · Survey of Consumer Finances"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "From there the rungs climb fast. Six figures, then a million, then ten, then a hundred million.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "The wealth ladder",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Median",
+              "value": "~$193K",
+              "note": "the middle",
+              "color": "#5c544c",
+              "bar": 0.1
+            },
+            {
+              "rank": "2",
+              "name": "Comfortable",
+              "value": "$1M",
+              "note": "top ~18%",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "3",
+              "name": "Rich",
+              "value": "$10M",
+              "note": "top ~1%",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "4",
+              "name": "Ultra",
+              "value": "$100M",
+              "note": "a different planet",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Each rung isn't one step up. It's a whole multiple of the one below it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Each rung = ×10",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Net worth is everything you own minus everything you owe.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-networth",
+          "kicker": "Wikipedia · net worth"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And above a million in investable assets, you cross into what banks call high net worth.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "$1M+",
+          "label": "'high net worth' begins",
+          "props": [
+            "coin",
+            "lock"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A high-net-worth individual is defined by investable assets, not salary.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hnwi",
+          "kicker": "Wikipedia · high-net-worth individual"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The gaps between the rungs are staggering, far wider than they ever look.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Huge gaps",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So honestly, which rung of that ladder are you standing on right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which rung are you on?",
+          "sub": "Comment your level"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

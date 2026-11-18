@@ -1,0 +1,197 @@
+{
+  "id": "SH083",
+  "num": 83,
+  "slug": "median-networth-30",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP052",
+  "sourceTitle": "Net Worth by Age in 2026",
+  "title": "The Median Net Worth At 30",
+  "hook": "The median net worth at 30.",
+  "question": "Above or below?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-scf",
+      "name": "Survey of Consumer Finances (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survey_of_Consumer_Finances",
+      "quote": "Survey of Consumer Finances",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-networth",
+      "name": "Net worth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Net_worth",
+      "quote": "net worth",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-median",
+      "name": "Median (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median",
+      "quote": "the middle value",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ineq",
+      "name": "Wealth inequality in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth_inequality_in_the_United_States",
+      "quote": "wealth inequality",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Here's a number that either comforts you or stings. The median net worth for Americans under thirty-five.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Median net worth",
+            "at 30?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Take a guess before the reveal. Everything you own, minus everything you owe.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "net worth",
+          "line": "Own minus owe",
+          "sub": "guess your number first"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Net worth is total assets minus total debts.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-networth",
+          "kicker": "Wikipedia · net worth"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "For households under thirty-five, the median sits at roughly thirty-nine thousand dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$39,000",
+          "label": "median net worth, under 35",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "That comes from the Federal Reserve's Survey of Consumer Finances.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-scf",
+          "kicker": "Wikipedia · Survey of Consumer Finances"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Remember, median means the middle. Half of young households have less than that.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Half have less",
+          "props": [
+            "chartDown",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The median is the middle value, not the average, so outliers don't skew it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-median",
+          "kicker": "Wikipedia · median"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Student loans and rising rents keep that number low for a lot of people.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "debt drag",
+          "label": "loans + rent weigh it down",
+          "props": [
+            "x",
+            "home"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Comparison can be the thief of joy, but the real data is still worth knowing.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Know the number",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "US wealth is so unevenly split that plain averages badly mislead.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ineq",
+          "kicker": "Wikipedia · wealth inequality"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, are you above or below the median for your age?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Above or below?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

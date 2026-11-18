@@ -1,0 +1,213 @@
+{
+  "id": "SH086",
+  "num": 86,
+  "slug": "savings-targets-ladder",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP053",
+  "sourceTitle": "How Much You Should Have Saved",
+  "title": "Savings Targets At 25, 30, 40 And 50",
+  "hook": "Savings targets at 25, 30, 40 and 50.",
+  "question": "Which one did you miss?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-401k",
+      "name": "401(k) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/401(k)",
+      "quote": "401(k)",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-match",
+      "name": "Employer matching program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Employer_matching_program",
+      "quote": "employer matching",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dca",
+      "name": "Dollar cost averaging (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+      "quote": "dollar cost averaging",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Here are the savings targets for every big birthday, from twenty-five to fifty. See which ones you hit.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Saved by",
+            "25, 30, 40, 50?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The rule of thumb scales with your salary. Half by twenty-five, one time by thirty, three by forty, six by fifty.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Multiples of salary",
+          "rows": [
+            {
+              "rank": "25",
+              "name": "Age 25",
+              "value": "0.5×",
+              "note": "half a salary",
+              "color": "#5c544c",
+              "bar": 0.15
+            },
+            {
+              "rank": "30",
+              "name": "Age 30",
+              "value": "1×",
+              "note": "one salary",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "40",
+              "name": "Age 40",
+              "value": "3×",
+              "note": "three salaries",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "50",
+              "name": "Age 50",
+              "value": "6×",
+              "note": "six salaries",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The targets rise steeply because compounding is doing the heavy lifting.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The single easiest way to hit them is free money from your employer's match.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "free money",
+          "label": "the employer match",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "An employer match tops up your own contributions, for free.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-match",
+          "kicker": "Wikipedia · employer matching"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Five hundred dollars a month from twenty-five to sixty-five can grow to about a million.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$1M",
+          "label": "$500/mo from 25 to 65",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Most people reach it inside a tax-advantaged 401(k).",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-401k",
+          "kicker": "Wikipedia · 401(k)"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The jump from three times to six times your salary is where it gets serious.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "3× to 6×",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Steady monthly investing, dollar cost averaging, is how most people get there.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dca",
+          "kicker": "Wikipedia · dollar cost averaging"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So out of those four targets, which one did you miss?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which did you miss?",
+          "sub": "Comment the age"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}
