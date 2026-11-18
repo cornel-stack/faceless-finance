@@ -1,0 +1,184 @@
+{
+  "id": "SH033",
+  "num": 33,
+  "slug": "inflation-vs-level",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP028",
+  "sourceTitle": "Why Prices Won't Stop Rising",
+  "title": "Inflation Slowing Doesn't Mean Prices Falling",
+  "hook": "Inflation slowing does not mean prices falling.",
+  "question": "Has anything gotten cheaper?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-inflation",
+      "name": "Inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "quote": "an increase in the average price of goods and services",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "the level of prices of goods and services",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-shrink",
+      "name": "Shrinkflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shrinkflation",
+      "quote": "the reduction of available products",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-demand",
+      "name": "Demand-pull inflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Demand-pull_inflation",
+      "quote": "aggregate demand in an economy is more",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The news says inflation is cooling, and everyone feels lied to, because nothing at the store got cheaper. Here's why.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "chartUp",
+            "x"
+          ],
+          "lines": [
+            "Inflation slowed.",
+            "Prices didn't drop."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Inflation is the rate prices rise. When it falls from nine percent to three, prices are still rising, just slower.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Inflation vs the price level",
+          "thenLabel": "Rate",
+          "thenValue": "9% → 3%",
+          "nowLabel": "Prices",
+          "nowValue": "still UP",
+          "sub": "slower, but never reversed"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Inflation is the increase in the average price of goods and services.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inflation",
+          "kicker": "Wikipedia · inflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "For prices to actually fall, you'd need deflation, and nobody in charge wants that.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "~9%",
+          "label": "US inflation peak, 2022",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The CPI tracks the price level, and that level just keeps climbing.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Since twenty twenty, the cumulative rise means your dollar buys noticeably less than it did.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~20%",
+          "label": "higher prices since 2020",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And when prices can't rise, the package quietly shrinks instead.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-shrink",
+          "kicker": "Wikipedia · shrinkflation"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The uncomfortable truth is that your money is designed to lose value every year.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Built to lose value",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Economists split the causes into demand-pull and cost-push inflation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-demand",
+          "kicker": "Wikipedia · demand-pull inflation"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So be honest, has a single thing actually gotten cheaper for you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "Anything cheaper?",
+          "sub": "Comment one thing"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

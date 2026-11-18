@@ -1,0 +1,210 @@
+{
+  "id": "SH032",
+  "num": 32,
+  "slug": "deflation-sequence",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP027",
+  "sourceTitle": "What If Inflation Goes Negative?",
+  "title": "What Happens When Prices Fall, Month By Month",
+  "hook": "What happens when prices fall, month by month.",
+  "question": "Have you seen this anywhere?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-deflation",
+      "name": "Deflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deflation",
+      "quote": "a decrease in the general price level",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-thrift",
+      "name": "Paradox of thrift (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Paradox_of_thrift",
+      "quote": "an increase in autonomous saving leads",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-trap",
+      "name": "Liquidity trap (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Liquidity_trap",
+      "quote": "after the rate of interest has fallen",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-depression",
+      "name": "Great Depression (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Depression",
+      "quote": "a severe global economic downturn",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's walk the deflation spiral one step at a time, because each rung quietly makes the next one worse.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "clock"
+          ],
+          "lines": [
+            "Prices fall.",
+            "Then what?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "First, shoppers delay. Then sales drop. Then firms cut wages and jobs. Then people spend even less, and prices fall again.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "The deflation spiral",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Buyers wait",
+              "value": "↓",
+              "note": "it'll be cheaper later",
+              "color": "#5c544c",
+              "bar": 0.25
+            },
+            {
+              "rank": "2",
+              "name": "Sales fall",
+              "value": "↓",
+              "note": "revenue dries up",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "3",
+              "name": "Wages & jobs cut",
+              "value": "↓",
+              "note": "incomes shrink",
+              "color": "#17120f",
+              "bar": 0.75
+            },
+            {
+              "rank": "4",
+              "name": "Spend even less",
+              "value": "↺",
+              "note": "and it loops",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "That self-reinforcing fall in the price level is textbook deflation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deflation",
+          "kicker": "Wikipedia · deflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Economists even have a name for the core problem. Saving feels smart for you, but it's a disaster for everyone at once.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the paradox",
+          "line": "Paradox of thrift",
+          "sub": "good for one, bad for all"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "When everyone saves at once, total demand collapses.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-thrift",
+          "kicker": "Wikipedia · paradox of thrift"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And central banks lose their main tool, because rates can't fall much below zero.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "below 0%",
+          "label": "the number they fear",
+          "props": [
+            "x",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That dead end is known as a liquidity trap.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-trap",
+          "kicker": "Wikipedia · liquidity trap"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "We have watched this exact spiral play out before, in the nineteen thirties.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "We've seen it",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The Great Depression was deflation doing its very worst.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-depression",
+          "kicker": "Wikipedia · Great Depression"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Have you seen any of these rungs playing out around you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Seen this anywhere?",
+          "sub": "Comment where"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

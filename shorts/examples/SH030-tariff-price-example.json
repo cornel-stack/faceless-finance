@@ -1,0 +1,183 @@
+{
+  "id": "SH030",
+  "num": 30,
+  "slug": "tariff-price-example",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP026",
+  "sourceTitle": "Tariffs: Who Really Pays",
+  "title": "What A Tariff Really Adds To The Price",
+  "hook": "What a tariff adds to the price you pay.",
+  "question": "Worth it?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-tariff",
+      "name": "Tariff (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tariff",
+      "quote": "paid by the importer",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "the level of prices of goods and services",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-protectionism",
+      "name": "Protectionism (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Protectionism",
+      "quote": "the economic policy of restricting imports",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tradewar",
+      "name": "Trade war (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trade_war",
+      "quote": "states raise or implement tariffs",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's trace one product through a tariff and watch exactly what it does to the price on the shelf.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "bill",
+            "chartUp"
+          ],
+          "lines": [
+            "One product,",
+            "one tariff."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Start with an imported item at a hundred dollars. Slap a twenty-five percent tariff on it at the border.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "One imported item",
+          "thenLabel": "Before tariff",
+          "thenValue": "$100",
+          "nowLabel": "After 25%",
+          "nowValue": "$125",
+          "sub": "collected at the border"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Remember, the importer pays that twenty-five dollars, not the exporter.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tariff",
+          "kicker": "Wikipedia · tariff"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The importer doesn't just eat it. The cost gets marked up again and again on its way to you.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "$hundreds",
+          "label": "extra, per household, per year",
+          "props": [
+            "bill",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Multiply that across a cart of goods and it shows up in the CPI.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Domestic makers then quietly raise their prices too, because now they can.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Everyone raises prices",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That's the real cost of protectionism, paid quietly by every shopper.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-protectionism",
+          "kicker": "Wikipedia · protectionism"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And if the other country retaliates, your own exporters get hit next.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Then they retaliate",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "That tit-for-tat is exactly how a tariff escalates into a full trade war.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tradewar",
+          "kicker": "Wikipedia · trade war"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So for that one protected job, is it actually worth it?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "Worth it?",
+          "sub": "Comment your verdict"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

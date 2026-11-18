@@ -1,0 +1,212 @@
+{
+  "id": "SH028",
+  "num": 28,
+  "slug": "fed-rescued-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP024",
+  "sourceTitle": "Why America Keeps Bailing Out Other Countries' Currencies",
+  "title": "Every Country The Fed Has Quietly Rescued",
+  "hook": "Every country the Fed has quietly rescued.",
+  "question": "Was yours on the list?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-swap",
+      "name": "Central bank liquidity swap (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Central_bank_liquidity_swap",
+      "quote": "to provide liquidity",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reserve",
+      "name": "Reserve currency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reserve_currency",
+      "quote": "reserve currency",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fed",
+      "name": "Federal Reserve (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federal_Reserve",
+      "quote": "the central banking system of the United States",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-exorbitant",
+      "name": "Exorbitant privilege (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exorbitant_privilege",
+      "quote": "international reserve currency",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "When the dollar system seizes up, the Federal Reserve quietly rescues a very specific list of countries. Here's who.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "globe",
+            "bill"
+          ],
+          "lines": [
+            "Who the Fed",
+            "rescues."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The big allies get standing, unlimited swap lines. Europe, Japan, Britain, Canada, Switzerland.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Fed dollar swap lines",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "ECB (Europe)",
+              "value": "∞",
+              "note": "standing line",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Japan, UK",
+              "value": "∞",
+              "note": "standing line",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "Canada, Swiss",
+              "value": "∞",
+              "note": "standing line",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "Brazil, Korea…",
+              "value": "temp",
+              "note": "in crises only",
+              "color": "#5c544c",
+              "bar": 0.4
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "These liquidity swaps are how the Fed pushes dollars out to each of them.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-swap",
+          "kicker": "Wikipedia · liquidity swap"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A second tier of big emerging economies gets temporary lines, but only when a crisis hits.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "14",
+          "label": "countries in the 2020 round",
+          "props": [
+            "globe",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It all flows from the dollar being the world's reserve currency.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reserve",
+          "kicker": "Wikipedia · reserve currency"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Everyone else is simply left to fend for themselves.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Everyone else: alone",
+          "props": [
+            "x",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And the Fed, America's own central bank, decides exactly who makes the list.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fed",
+          "kicker": "Wikipedia · Federal Reserve"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "In effect, these swap lines make the Fed the world's central bank.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Fed = world's bank",
+          "props": [
+            "globe",
+            "bank"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "It all traces back to the dollar's exorbitant privilege as the reserve currency.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-exorbitant",
+          "kicker": "Wikipedia · exorbitant privilege"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So was your country on the list, or left out in the cold?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globeQ",
+          "line": "Was yours on the list?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

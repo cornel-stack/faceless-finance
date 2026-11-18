@@ -1,0 +1,164 @@
+{
+  "id": "SH029",
+  "num": 29,
+  "slug": "who-pays-tariffs",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP026",
+  "sourceTitle": "Tariffs: Who Really Pays",
+  "title": "Tariffs Aren't Paid By The Exporting Country",
+  "hook": "Tariffs are not paid by the exporting country.",
+  "question": "Who did you think paid?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-tariff",
+      "name": "Tariff (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tariff",
+      "quote": "paid by the importer",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-cpi",
+      "name": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+      "quote": "the level of prices of goods and services",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tradewar",
+      "name": "Trade war (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trade_war",
+      "quote": "states raise or implement tariffs",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "A tariff is sold to you as a tax on foreign countries. In reality, the foreign country pays almost none of it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "x",
+            "bill"
+          ],
+          "lines": [
+            "Who really",
+            "pays tariffs?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The exporting country writes a cheque of basically zero. The tariff is collected at your border, from the importer.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~$0",
+          "label": "paid by the exporting country",
+          "props": [
+            "x",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "By definition, a tariff is a tax paid by the importer, not the exporter.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tariff",
+          "kicker": "Wikipedia · tariff"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "And the importer passes that cost straight down the line, onto the price you pay at the till.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "priceTag",
+          "kicker": "the truth",
+          "line": "A tax on you",
+          "sub": "dressed up as a tax on them"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "You can watch it land in the consumer price index, the prices households actually pay.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cpi",
+          "kicker": "Wikipedia · consumer price index"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "After recent washing-machine tariffs, the price of domestic washers jumped about twelve percent.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "+12%",
+          "label": "on domestic washers, after the tariff",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And trade wars invite retaliation, which is why farmers needed tens of billions in bailouts.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tradewar",
+          "kicker": "Wikipedia · trade war"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "It is simply a tax on your own shopping cart, quietly collected at the border.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "A tax on your cart",
+          "props": [
+            "bill",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So before today, who did you actually think was paying the tariff?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "Who did you think paid?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}

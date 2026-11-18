@@ -1,0 +1,182 @@
+{
+  "id": "SH031",
+  "num": 31,
+  "slug": "deflation-is-worse",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP027",
+  "sourceTitle": "What If Inflation Goes Negative?",
+  "title": "Falling Prices Sound Great. They're Worse.",
+  "hook": "Falling prices sound great. They are worse.",
+  "question": "Would you still buy today?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-deflation",
+      "name": "Deflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deflation",
+      "quote": "a decrease in the general price level",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-debtdef",
+      "name": "Debt deflation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt_deflation",
+      "quote": "the overall level of debt rising in real",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-depression",
+      "name": "Great Depression (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Depression",
+      "quote": "a severe global economic downturn",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-monetary",
+      "name": "Monetary policy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Monetary_policy",
+      "quote": "to affect monetary and other financial",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Prices that fall every year sound like a dream. In practice, deflation is one of the most dangerous things in economics.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "x"
+          ],
+          "lines": [
+            "Falling prices?",
+            "That's worse."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Here's the trap. If things will be cheaper next month, you wait. So does everyone else.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the deflation trap",
+          "line": "Everyone waits",
+          "sub": "spending freezes, the economy stalls"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Deflation is a sustained decrease in the general price level.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deflation",
+          "kicker": "Wikipedia · deflation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "As spending freezes, companies cut wages and jobs, so people spend even less. The spiral feeds itself.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "30 years",
+          "label": "Japan, stuck in the trap",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Worse, your debts stay fixed while your income shrinks. That's debt deflation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-debtdef",
+          "kicker": "Wikipedia · debt deflation"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In the Great Depression, this spiral helped topple around nine thousand American banks.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "9,000",
+          "label": "US banks failed, 1929–33",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It turned a downturn into a decade-long global catastrophe.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-depression",
+          "kicker": "Wikipedia · Great Depression"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And once rates hit zero, central banks can barely fight it at all.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Rates stuck at zero",
+          "props": [
+            "x",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "At that point, normal monetary policy simply runs out of room.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-monetary",
+          "kicker": "Wikipedia · monetary policy"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So if prices were falling, would you still buy anything today?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Would you buy today?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

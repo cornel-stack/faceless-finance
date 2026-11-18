@@ -1,0 +1,187 @@
+{
+  "id": "SH026",
+  "num": 26,
+  "slug": "markets-during-war",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP023",
+  "sourceTitle": "If War Is Bad, Why Do Stocks Go Up?",
+  "title": "What Markets Did During Every Major War",
+  "hook": "Markets during every major war.",
+  "question": "Which one surprised you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-wareconomy",
+      "name": "War economy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_economy",
+      "quote": "to mobilize its economy for war production",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-stockmarket",
+      "name": "Stock market (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stock_market",
+      "quote": "which represent ownership claims on businesses",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mic",
+      "name": "Military–industrial complex (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military-industrial_complex",
+      "quote": "the relationship between a country's military and the defense industry",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's line up what the stock market actually did during every major war of the last century. The pattern is unsettling.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "fire"
+          ],
+          "lines": [
+            "Markets",
+            "in wartime."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "World War Two is the clearest case. The enormous war spending is what finally pulled America out of the Great Depression.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "WWII",
+          "label": "the spending that ended the Depression",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "War mobilizes an entire economy toward furious, around-the-clock production.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wareconomy",
+          "kicker": "Wikipedia · war economy"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Through most later conflicts, the broad market dipped on the first shock, then ground steadily higher.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Stocks through conflict",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "WWII",
+              "value": "UP",
+              "note": "ended the Depression",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Vietnam",
+              "value": "UP",
+              "note": "long grind higher",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "Gulf War",
+              "value": "UP",
+              "note": "dip, then rally",
+              "color": "#17120f",
+              "bar": 0.6
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Remember, a stock is just an ownership claim on a business's future profit.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-stockmarket",
+          "kicker": "Wikipedia · stock market"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And a huge slice of that profit flows to the defense industry, now an eight hundred billion dollar machine.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$800B+",
+          "label": "US annual military budget",
+          "props": [
+            "bill",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That is the military-industrial complex, wired directly into the market.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mic",
+          "kicker": "Wikipedia · military–industrial complex"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "We also only ever plot the winners. The markets that were wiped out simply vanish from the chart.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Survivors only",
+          "props": [
+            "chartUp",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So out of all those wars, which market reaction surprised you the most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which surprised you?",
+          "sub": "Comment the war"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}
