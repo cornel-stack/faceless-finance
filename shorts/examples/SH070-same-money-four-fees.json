@@ -1,0 +1,179 @@
+{
+  "id": "SH070",
+  "num": 70,
+  "slug": "same-money-four-fees",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP045",
+  "sourceTitle": "Mutual Funds vs Index Funds vs ETFs vs Hedge Funds",
+  "title": "The Same Money, Four Fee Structures, Thirty Years",
+  "hook": "The same money, four fee structures, thirty years.",
+  "question": "What are you paying?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-expense",
+      "name": "Expense ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Expense_ratio",
+      "quote": "expense ratio",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-index",
+      "name": "Index fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Index_fund",
+      "quote": "index fund",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hedge",
+      "name": "Hedge fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hedge_fund",
+      "quote": "hedge fund",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take the exact same money, invest it four ways, and run the clock thirty years. The fees quietly change everything.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Same money.",
+            "4 fees. 30 yrs."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A tiny difference in fees sounds harmless, until compounding gets hold of it for decades.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the silent drag",
+          "line": "Fees compound too",
+          "sub": "against you, every year"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The expense ratio is the annual fee a fund quietly takes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-expense",
+          "kicker": "Wikipedia · expense ratio"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A cheap index fund at a fraction of a percent lets almost all the growth stay yours.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "~0.03%",
+          "label": "index fund fee",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Index funds are famous for their rock-bottom fees.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-index",
+          "kicker": "Wikipedia · index fund"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "But a hedge fund's two and twenty can eat a huge slice of your final total.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "50x",
+          "label": "the fees, often for worse results",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Hedge funds charge vastly more, with no guarantee of beating the market.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hedge",
+          "kicker": "Wikipedia · hedge fund"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Over thirty years, high fees can quietly cost you a fortune.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "A hidden fortune",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "That tiny yearly percentage, compounded for decades, can quietly cost you hundreds of thousands.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Hundreds of thousands",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, what are you actually paying in fees right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "What are you paying?",
+          "sub": "Check your funds"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

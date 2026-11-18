@@ -1,0 +1,200 @@
+{
+  "id": "SH062",
+  "num": 62,
+  "slug": "lehman-share-price",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP041",
+  "sourceTitle": "Lehman Brothers: The 72 Hours That Broke the World",
+  "title": "Lehman's Share Price, Final Twelve Months",
+  "hook": "Lehman's share price, final twelve months.",
+  "question": "Would you have sold?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-lehman",
+      "name": "Lehman Brothers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lehman_Brothers",
+      "quote": "Lehman Brothers",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lehbk",
+      "name": "Bankruptcy of Lehman Brothers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers",
+      "quote": "Bankruptcy of Lehman Brothers",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mbs",
+      "name": "Mortgage-backed security (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mortgage-backed_security",
+      "quote": "mortgage-backed security",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tbtf",
+      "name": "Too big to fail (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Too_big_to_fail",
+      "quote": "too big to fail",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Watch Lehman Brothers' share price over its final twelve months. It's a slow bleed, then a cliff.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "clock"
+          ],
+          "lines": [
+            "Lehman's last",
+            "12 months."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A year out, the stock was still in the sixties, and management kept insisting everything was fine.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "$60+",
+          "label": "a year before the end",
+          "props": [
+            "chartUp",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Lehman was a pillar of Wall Street, trusted for generations.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lehman",
+          "kicker": "Wikipedia · Lehman Brothers"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Then the mortgage losses started leaking out, and the slide began.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "the slide",
+          "label": "losses leak out",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The damage came from mortgage-backed securities quietly going bad.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mbs",
+          "kicker": "Wikipedia · mortgage-backed security"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In the final week, it went into free fall, from the teens to cents in days.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Free fall",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "By the bankruptcy filing, the shares were essentially worthless.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~$0",
+          "label": "at the bankruptcy filing",
+          "props": [
+            "x",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "It remains the largest bankruptcy filing in US history.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lehbk",
+          "kicker": "Wikipedia · Lehman bankruptcy"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Management swore everything was fine almost the entire way down the chart.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "'Everything's fine'",
+          "props": [
+            "x",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Afterwards, the survivors were judged too big to fail and rescued.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tbtf",
+          "kicker": "Wikipedia · too big to fail"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "All the way down, every dip looked like the bottom. So, would you have sold?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Would you have sold?",
+          "sub": "Comment when"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

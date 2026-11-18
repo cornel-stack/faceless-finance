@@ -1,0 +1,197 @@
+{
+  "id": "SH064",
+  "num": 64,
+  "slug": "nasdaq-1995-2002",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP042",
+  "sourceTitle": "The Dot-Com Bubble by the Numbers",
+  "title": "The Nasdaq, 1995 To 2002",
+  "hook": "The Nasdaq, 1995 to 2002.",
+  "question": "Where are we on this curve?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-nasdaq",
+      "name": "Nasdaq (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nasdaq",
+      "quote": "Nasdaq",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dotcom",
+      "name": "Dot-com bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+      "quote": "dot-com bubble",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-bubble",
+      "name": "Economic bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_bubble",
+      "quote": "economic bubble",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-exub",
+      "name": "Irrational exuberance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Irrational_exuberance",
+      "quote": "irrational exuberance",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Here is the Nasdaq from nineteen ninety-five to two thousand two. It is the clearest picture of a bubble ever drawn.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "fire"
+          ],
+          "lines": [
+            "Nasdaq,",
+            "1995–2002."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "From ninety-five, it climbed, then went nearly vertical into early two thousand.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "5,000",
+          "label": "Nasdaq peak, March 2000",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The Nasdaq is the tech-heavy US stock index.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-nasdaq",
+          "kicker": "Wikipedia · Nasdaq"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Everyone was convinced the internet had rewritten the rules of value forever.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the belief",
+          "line": "'New rules'",
+          "sub": "old valuation didn't matter"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "That belief is the signature of every economic bubble.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bubble",
+          "kicker": "Wikipedia · economic bubble"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Then it broke, and the index fell seventy-eight percent from its peak.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "–78%",
+          "label": "the Nasdaq's collapse",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It took about fifteen years for the Nasdaq to reclaim that two thousand high.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "15 years back",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The dot-com crash wiped out trillions in paper wealth.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dotcom",
+          "kicker": "Wikipedia · dot-com bubble"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Trillions of dollars in paper wealth simply evaporated the moment it finally turned.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Trillions gone",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The mood even earned a famous name, irrational exuberance.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-exub",
+          "kicker": "Wikipedia · irrational exuberance"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So looking at that curve, where exactly do you think we are today?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Where are we now?",
+          "sub": "Comment the point"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

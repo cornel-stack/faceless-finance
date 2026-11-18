@@ -1,0 +1,213 @@
+{
+  "id": "SH066",
+  "num": 66,
+  "slug": "how-cards-earn",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP043",
+  "sourceTitle": "How Credit Cards Actually Make Money Off You",
+  "title": "Every Way A Card Earns Off You",
+  "hook": "Every way a card earns off you.",
+  "question": "How many apply to you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-interchange",
+      "name": "Interchange fee (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interchange_fee",
+      "quote": "interchange fee",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-cardint",
+      "name": "Credit card interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+      "quote": "credit card interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ccdebt",
+      "name": "Credit card debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_debt",
+      "quote": "credit card debt",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "annual percentage rate",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "A credit card doesn't have one way of making money off you. It has a whole stack. Let's climb it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "bill"
+          ],
+          "lines": [
+            "Every way a card",
+            "earns off you."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Interchange on every swipe. Interest if you carry a balance. Late fees. Annual fees. Cash-advance fees. FX fees abroad.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "How a card earns",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Interest",
+              "value": "20%+",
+              "note": "if you revolve",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Interchange",
+              "value": "1–3%",
+              "note": "every swipe",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "Fees",
+              "value": "$$",
+              "note": "late, annual, cash advance",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "4",
+              "name": "FX",
+              "value": "~3%",
+              "note": "spending abroad",
+              "color": "#5c544c",
+              "bar": 0.3
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Interchange quietly taxes every single transaction.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-interchange",
+          "kicker": "Wikipedia · interchange fee"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The biggest earner by far is interest, at over twenty percent a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "20%+ APR",
+          "label": "among the priciest debt there is",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Credit card interest is some of the most expensive debt available.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cardint",
+          "kicker": "Wikipedia · credit card interest"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Which is how Americans now carry over a trillion dollars in card debt, a record.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$1T+",
+          "label": "US card debt — a record",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Card debt compounds relentlessly through interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ccdebt",
+          "kicker": "Wikipedia · credit card debt"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Stack every one of these together, and the card almost always comes out comfortably ahead of you.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Always ahead",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The APR is how fast interest compounds onto any balance you carry, and it is punishing.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-apr",
+          "kicker": "Wikipedia · APR"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So out of all those, how many apply to you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "How many apply to you?",
+          "sub": "Comment the count"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

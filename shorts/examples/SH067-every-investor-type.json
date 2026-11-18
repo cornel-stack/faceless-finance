@@ -1,0 +1,212 @@
+{
+  "id": "SH067",
+  "num": 67,
+  "slug": "every-investor-type",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP044",
+  "sourceTitle": "Every Type of Investor Explained",
+  "title": "Every Type Of Investor, And Who Actually Wins",
+  "hook": "Every type of investor, and who actually wins.",
+  "question": "Which one are you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-value",
+      "name": "Value investing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Value_investing",
+      "quote": "value investing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-daytrade",
+      "name": "Day trading (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Day_trading",
+      "quote": "day trading",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-index",
+      "name": "Index fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Index_fund",
+      "quote": "index fund",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-active",
+      "name": "Active management (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Active_management",
+      "quote": "active management",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "There are many kinds of investor, each with a different strategy. But only one group reliably wins. Let's rank them.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "Every investor.",
+            "Who wins?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Value hunters buy cheap. Growth chasers buy the future. Momentum riders chase trends. Day traders chase the next tick.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Types of investor",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Index + hold",
+              "value": "wins",
+              "note": "boring, effective",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Value",
+              "value": "sometimes",
+              "note": "buy cheap, wait",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "Growth / momentum",
+              "value": "streaky",
+              "note": "chase the future",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "4",
+              "name": "Day traders",
+              "value": "lose",
+              "note": "chase every tick",
+              "color": "#c0392b",
+              "bar": 0.3
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Value investing means buying assets for less than they're worth.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-value",
+          "kicker": "Wikipedia · value investing"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Day trading sounds exciting, but the data is merciless. Around ninety percent lose money.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "90%",
+          "label": "of day traders lose",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Day trading is rapid in-and-out trading, and most who try it lose.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-daytrade",
+          "kicker": "Wikipedia · day trading"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The quiet winner is the one who buys the whole market and simply waits.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Boring wins",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "An index fund owns the whole market and lets it compound.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-index",
+          "kicker": "Wikipedia · index fund"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Notice the pattern, the less you tinker with it, the better you tend to do.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Tinker less",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Active managers trade constantly, and it rarely pays off.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-active",
+          "kicker": "Wikipedia · active management"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, out of all of those, which type are you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which one are you?",
+          "sub": "Comment your style"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

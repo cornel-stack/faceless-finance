@@ -1,0 +1,228 @@
+{
+  "id": "SH069",
+  "num": 69,
+  "slug": "fund-types-50s",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP045",
+  "sourceTitle": "Mutual Funds vs Index Funds vs ETFs vs Hedge Funds",
+  "title": "Index Fund, ETF, Hedge Fund — In 50 Seconds",
+  "hook": "Index fund, ETF, hedge fund, in 50 seconds.",
+  "question": "Which do you hold?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-mutual",
+      "name": "Mutual fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mutual_fund",
+      "quote": "mutual fund",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-etf",
+      "name": "Exchange-traded fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exchange-traded_fund",
+      "quote": "exchange-traded fund",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hedge",
+      "name": "Hedge fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hedge_fund",
+      "quote": "hedge fund",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-expense",
+      "name": "Expense ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Expense_ratio",
+      "quote": "expense ratio",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Mutual fund, index fund, ETF, hedge fund. They sound similar and cost wildly different amounts. Here's each, fast.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "bill"
+          ],
+          "lines": [
+            "4 funds,",
+            "50 seconds."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "An index fund quietly tracks the market for almost nothing. An ETF does the same, but trades like a stock.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Fees & access",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Index fund",
+              "value": "~0.03%",
+              "note": "tracks the market",
+              "color": "#1f7a3d",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "ETF",
+              "value": "~0.1%",
+              "note": "trades like a stock",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "3",
+              "name": "Mutual fund",
+              "value": "~0.5–1%",
+              "note": "actively managed",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "4",
+              "name": "Hedge fund",
+              "value": "2 + 20%",
+              "note": "rich clients only",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "An index fund simply holds everything in a market index.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-index",
+          "kicker": "Wikipedia · index fund"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A mutual fund pays a manager to pick stocks, so it costs more.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "~1%",
+          "label": "typical mutual-fund fee",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "An exchange-traded fund blends fund diversification with stock-like trading.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-etf",
+          "kicker": "Wikipedia · ETF"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "A hedge fund charges the famous two and twenty, and only lets wealthy investors in.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "2 + 20%",
+          "label": "the hedge-fund fee",
+          "props": [
+            "coin",
+            "lock"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Hedge funds are high-fee pools open mainly to the wealthy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hedge",
+          "kicker": "Wikipedia · hedge fund"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "You can get almost the same market exposure for wildly different price tags.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same market, diff price",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The expense ratio is the yearly fee quietly skimmed off the top of your money.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-expense",
+          "kicker": "Wikipedia · expense ratio"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Over a lifetime, that fee gap becomes genuinely enormous.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A lifetime gap",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So which of these are you actually holding?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which do you hold?",
+          "sub": "Comment your funds"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

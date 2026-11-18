@@ -1,0 +1,164 @@
+{
+  "id": "SH065",
+  "num": 65,
+  "slug": "paying-in-full-earns-them",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP043",
+  "sourceTitle": "How Credit Cards Actually Make Money Off You",
+  "title": "Paying In Full Still Makes Them Money",
+  "hook": "Paying in full still makes them money.",
+  "question": "Who pays for your points?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-interchange",
+      "name": "Interchange fee (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interchange_fee",
+      "quote": "interchange fee",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-creditcard",
+      "name": "Credit card (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card",
+      "quote": "credit card",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "annual percentage rate",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "You pay your card off in full every month, so you think you beat the bank. You didn't. They still made money off you.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "coin",
+            "bill"
+          ],
+          "lines": [
+            "Paid in full?",
+            "Still paid them."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Every time you tap or swipe, the merchant pays a small cut to the card networks. It's called an interchange fee.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "the hidden cut",
+          "line": "Interchange fees",
+          "sub": "the merchant pays on every swipe"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "An interchange fee is charged on card payments and paid to the bank.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-interchange",
+          "kicker": "Wikipedia · interchange fee"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Usually it's one to three percent of everything you buy, taken quietly off the top.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "1–3%",
+          "label": "of every purchase you make",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Credit card networks earn this on essentially every transaction.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-creditcard",
+          "kicker": "Wikipedia · credit card"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "That fee is baked into the sticker price, so even cash customers quietly help pay for it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Baked into prices",
+          "props": [
+            "bill",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And your cashback and points? They're funded straight out of those same fees.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "your points",
+          "label": "paid for by the fees",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And the moment you don't pay in full, a 20%-plus APR takes over.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-apr",
+          "kicker": "Wikipedia · APR"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So who do you think is really paying for your points?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "Who pays for your points?",
+          "sub": "Comment your guess"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}

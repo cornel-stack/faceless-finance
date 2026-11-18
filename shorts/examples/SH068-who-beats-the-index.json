@@ -1,0 +1,197 @@
+{
+  "id": "SH068",
+  "num": 68,
+  "slug": "who-beats-the-index",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP044",
+  "sourceTitle": "Every Type of Investor Explained",
+  "title": "Which Investor Type Beats The Index",
+  "hook": "Which investor type beats the index.",
+  "question": "Does yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-index",
+      "name": "Index fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Index_fund",
+      "quote": "index fund",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-active",
+      "name": "Active management (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Active_management",
+      "quote": "active management",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-daytrade",
+      "name": "Day trading (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Day_trading",
+      "quote": "day trading",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-value",
+      "name": "Value investing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Value_investing",
+      "quote": "value investing",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Everyone's strategy claims to beat the market. So let's rank who actually beats a plain index fund over time.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "coin"
+          ],
+          "lines": [
+            "Who beats",
+            "the index?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The honest answer is, almost nobody does it consistently.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the hard truth",
+          "line": "Almost nobody",
+          "sub": "not over the long run"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A simple index fund just matches the whole market's return.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-index",
+          "kicker": "Wikipedia · index fund"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Professional active funds, with huge teams and tools, mostly lose to it over fifteen years.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~90%",
+          "label": "of active funds trail the index",
+          "props": [
+            "chartDown",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Active managers pick stocks trying to beat the market, and usually can't.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-active",
+          "kicker": "Wikipedia · active management"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Day traders fare even worse, with the vast majority simply losing money.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "90% lose",
+          "label": "day traders",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Study after study finds most day traders lose over time.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-daytrade",
+          "kicker": "Wikipedia · day trading"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The boring index quietly beats the clever strategies, year after year.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Boring wins again",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The clever, expensive strategies mostly end up enriching the people selling them to you.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Who really wins",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Even classic value investing struggles to beat the index year after year.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-value",
+          "kicker": "Wikipedia · value investing"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, does your strategy actually beat the index?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Does yours?",
+          "sub": "Be honest"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
