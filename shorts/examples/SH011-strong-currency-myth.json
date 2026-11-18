@@ -1,0 +1,134 @@
+{
+  "id": "SH011",
+  "num": 11,
+  "slug": "strong-currency-myth",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP016",
+  "sourceTitle": "Why Different Currencies Have Different Values",
+  "title": "A Strong Currency Doesn't Mean A Strong Economy",
+  "hook": "A strong currency does not mean a strong economy.",
+  "question": "Which would you rather hold?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "bis-fx",
+      "name": "BIS — FX turnover",
+      "url": "https://www.bis.org/statistics/rpfx22_fx.htm",
+      "quote": "turnover",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-zim",
+      "name": "Zimbabwean dollar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zimbabwean_dollar",
+      "quote": "hyperinflation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "People think a strong currency means a strong economy. It does not.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "flagStack",
+          "country": "jp",
+          "trend": "up",
+          "props": [
+            "chartUp",
+            "x"
+          ],
+          "lines": [
+            "Strong currency",
+            "≠ strong economy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "A currency's value is just a price — set by supply, demand, and trust.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "globe",
+          "kicker": "what it really is",
+          "line": "It's a price",
+          "sub": "supply, demand, and trust"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "The dollar is in eighty-eight percent of all currency trades on Earth.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "bigValue": 88,
+          "bigSuffix": "%",
+          "label": "of FX trades use the dollar",
+          "props": [
+            "globe",
+            "bill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Trillions change hands every single day.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "bis-fx",
+          "kicker": "BIS · FX turnover"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "And a big number means nothing alone. One Zimbabwean note read a hundred trillion dollars — and bought almost nothing.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "100T",
+          "label": "Zimbabwe dollars — near worthless",
+          "props": [
+            "fire",
+            "chartDown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Hyperinflation made it worthless paper.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-zim",
+          "kicker": "Wikipedia · Zimbabwean dollar"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "So which would you actually rather hold?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "Which would you hold?",
+          "sub": "Strong number, or strong trust?"
+        }
+      ]
+    }
+  ]
+}

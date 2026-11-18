@@ -1,0 +1,148 @@
+{
+  "id": "SH009",
+  "num": 9,
+  "slug": "ftx-missing-billions",
+  "series": "Napkin Numbers Shorts",
+  "format": "Scandal hook",
+  "sourceEp": "EP015",
+  "sourceTitle": "FTX: Where $8 Billion Went",
+  "title": "FTX Owed Billions And Held A Fraction",
+  "hook": "FTX owed billions and held a fraction of it.",
+  "question": "Still keeping coins on an exchange?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-ftxbk",
+      "name": "Bankruptcy of FTX (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+      "quote": "customer funds",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sbf",
+      "name": "Sam Bankman-Fried (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sam_Bankman-Fried",
+      "quote": "Bankman-Fried",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "FTX owed its customers billions. When they finally looked, only a fraction was there.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "vault",
+          "props": [
+            "x",
+            "fire"
+          ],
+          "lines": [
+            "Owed billions.",
+            "Held a fraction."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "Eight billion dollars of customer deposits. Missing.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "$8B",
+          "label": "customer money missing",
+          "props": [
+            "x",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "The bankruptcy filing laid it bare.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ftxbk",
+          "kicker": "Wikipedia · FTX bankruptcy"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "This was a company valued at thirty-two billion dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "$32B",
+          "label": "its peak valuation",
+          "props": [
+            "chartDown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "Five billion was pulled in seventy-two hours. Then withdrawals froze.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "$5B",
+          "label": "pulled in 72 hours",
+          "props": [
+            "fire",
+            "clock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "It didn't vanish. It was gambled.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Gambled away.",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "The founder was convicted.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sbf",
+          "kicker": "Wikipedia · Bankman-Fried"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "Sam Bankman-Fried got twenty-five years. Still keeping your coins on an exchange?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "vault",
+          "line": "Coins on an exchange?",
+          "sub": "SBF got 25 years"
+        }
+      ]
+    }
+  ]
+}

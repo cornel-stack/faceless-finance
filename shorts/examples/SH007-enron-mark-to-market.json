@@ -1,0 +1,144 @@
+{
+  "id": "SH007",
+  "num": 7,
+  "slug": "enron-mark-to-market",
+  "series": "Napkin Numbers Shorts",
+  "format": "Scandal hook",
+  "sourceEp": "EP014",
+  "sourceTitle": "How Enron Made Its Money Disappear",
+  "title": "Enron Booked Profit It Never Earned",
+  "hook": "Enron booked profit on money it had not earned yet.",
+  "question": "Should that ever have been legal?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-mtm",
+      "name": "Mark-to-market accounting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mark-to-market_accounting",
+      "quote": "mark-to-market",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-escandal",
+      "name": "Enron scandal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Enron_scandal",
+      "quote": "mark-to-market",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Enron booked profit on money it had not earned yet. Sometimes money it never would.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "fire",
+            "x"
+          ],
+          "lines": [
+            "Profit it",
+            "never earned."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "The trick was mark-to-market accounting. Sign a deal, then book years of projected profit immediately.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "building",
+          "kicker": "the trick",
+          "line": "Mark-to-market",
+          "sub": "future projections booked as today's cash"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "It's a real accounting method — they just abused it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mtm",
+          "kicker": "Wikipedia · mark-to-market"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "They booked a hundred ten million in profit on one deal. The deal flopped. The profit stayed.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$110M",
+          "label": "profit on a deal that flopped",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "All told, six hundred million dollars in profit that was never real.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$600M",
+          "label": "profit that wasn't real",
+          "props": [
+            "chartDown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "It's not where the money went. It's that it was never there.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Never there.",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "The whole collapse has a name now.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-escandal",
+          "kicker": "Wikipedia · Enron scandal"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "Should that ever have been legal?",
+      "shots": [
+        {
+          "block": "question",
+          "line": "Should that be legal?",
+          "sub": "It was"
+        }
+      ]
+    }
+  ]
+}

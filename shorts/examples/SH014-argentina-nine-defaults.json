@@ -1,0 +1,118 @@
+{
+  "id": "SH014",
+  "num": 14,
+  "slug": "argentina-nine-defaults",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP017",
+  "sourceTitle": "What Happens When a Country Goes Bankrupt",
+  "title": "Argentina Has Defaulted Nine Times",
+  "hook": "Argentina has defaulted nine times.",
+  "question": "How is it still borrowing?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-arg",
+      "name": "Argentine debt restructuring (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Argentine_debt_restructuring",
+      "quote": "default",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-default",
+      "name": "Sovereign default (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sovereign_default",
+      "quote": "sovereign default",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Argentina has defaulted on its debt nine times. And people still lend to it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "x",
+            "x",
+            "fire"
+          ],
+          "lines": [
+            "Defaulted",
+            "9 times."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "During its two thousand one collapse, it ran through five presidents in under two weeks.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "5",
+          "label": "presidents in under 2 weeks",
+          "props": [
+            "fire",
+            "clock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Its restructurings are the stuff of textbooks.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-arg",
+          "kicker": "Wikipedia · Argentine default"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "And yet it still sells new bonds today, because lenders chase the high interest.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Argentina's debt",
+          "thenLabel": "Defaults",
+          "thenValue": "9×",
+          "nowLabel": "Today",
+          "nowValue": "still borrowing",
+          "sub": "high interest keeps lenders coming"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "Default is simply a tool countries reach for.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-default",
+          "kicker": "Wikipedia · sovereign default"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "How is it still borrowing at all?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globeQ",
+          "line": "How's it still borrowing?",
+          "sub": "Comment your theory"
+        }
+      ]
+    }
+  ]
+}

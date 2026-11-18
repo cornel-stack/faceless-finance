@@ -1,0 +1,146 @@
+{
+  "id": "SH013",
+  "num": 13,
+  "slug": "how-a-country-defaults",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP017",
+  "sourceTitle": "What Happens When a Country Goes Bankrupt",
+  "title": "What Happens When A Country Goes Bankrupt",
+  "hook": "A country cannot be repossessed. So what happens?",
+  "question": "Which country is next?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-default",
+      "name": "Sovereign default (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sovereign_default",
+      "quote": "sovereign default",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-greece",
+      "name": "Greek government-debt crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greek_government-debt_crisis",
+      "quote": "debt crisis",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "You can repossess a car. You cannot repossess a country. So what happens when one goes broke?",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "x",
+            "globe"
+          ],
+          "lines": [
+            "You can't repossess",
+            "a country."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "First it can't pay. Rates explode. The currency collapses. Then it begs for a deal — and lenders eat the loss.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "The default sequence",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Can't pay",
+              "value": "→",
+              "note": "bills come due",
+              "color": "#5c544c",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "Rates spike",
+              "value": "→",
+              "note": "nobody will lend",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "3",
+              "name": "Currency crashes",
+              "value": "→",
+              "note": "savings wiped out",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "The haircut",
+              "value": "–75%",
+              "note": "Greece's lenders took this",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "It even has a formal name.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-default",
+          "kicker": "Wikipedia · sovereign default"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "It's not rare — over two hundred fifty defaults since eighteen hundred.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "250+",
+          "label": "sovereign defaults since 1800",
+          "props": [
+            "clock",
+            "globe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "Greece lived it in the last decade.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-greece",
+          "kicker": "Wikipedia · Greek debt crisis"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "So which country is next?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globeQ",
+          "line": "Which country is next?",
+          "sub": "Comment your guess"
+        }
+      ]
+    }
+  ]
+}

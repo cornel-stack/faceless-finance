@@ -1,0 +1,134 @@
+{
+  "id": "SH012",
+  "num": 12,
+  "slug": "what-1000-units-buys",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP016",
+  "sourceTitle": "Why Different Currencies Have Different Values",
+  "title": "Why 1,000 Of Your Money Buys Wildly Different Things",
+  "hook": "Why 1,000 units buys a house here and a coffee there.",
+  "question": "What's yours worth?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-ppp",
+      "name": "Purchasing power parity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+      "quote": "purchasing power",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-zim",
+      "name": "Zimbabwean dollar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zimbabwean_dollar",
+      "quote": "hyperinflation",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "One thousand units of money. In three countries, three completely different lives.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "coin",
+            "globe"
+          ],
+          "lines": [
+            "1,000 units.",
+            "Three worlds."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "A thousand US dollars is a month of groceries. A thousand yen is one lunch. A thousand of a collapsed currency buys nothing.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "What 1,000 units buys",
+          "rows": [
+            {
+              "rank": "$",
+              "name": "1,000 USD",
+              "value": "≈ a month",
+              "note": "of groceries",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "¥",
+              "name": "1,000 JPY",
+              "value": "≈ 1 lunch",
+              "note": "about $7",
+              "color": "#17120f",
+              "bar": 0.25
+            },
+            {
+              "rank": "Z",
+              "name": "1,000 old ZWD",
+              "value": "≈ nothing",
+              "note": "hyperinflated away",
+              "color": "#c0392b",
+              "bar": 0.04
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Economists compare this with purchasing power.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ppp",
+          "kicker": "Wikipedia · purchasing power"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Push it far enough and the money just dies.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-zim",
+          "kicker": "Wikipedia · Zimbabwean dollar"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "The number on the note is meaningless. What matters is what it buys.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "priceTag",
+          "line": "It's not the number",
+          "sub": "it's the trust behind it"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "What is a thousand of your money really worth?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "What's yours worth?",
+          "sub": "Comment your country"
+        }
+      ]
+    }
+  ]
+}

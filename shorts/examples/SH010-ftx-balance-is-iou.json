@@ -1,0 +1,130 @@
+{
+  "id": "SH010",
+  "num": 10,
+  "slug": "ftx-balance-is-iou",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP015",
+  "sourceTitle": "FTX: Where $8 Billion Went",
+  "title": "Your Exchange Balance Is Not Money",
+  "hook": "Your exchange balance is not money. It is an IOU.",
+  "question": "Who actually holds your coins?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-ftx",
+      "name": "FTX (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FTX",
+      "quote": "customer",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ftxbk",
+      "name": "Bankruptcy of FTX (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+      "quote": "customer funds",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "The number on your exchange app is not money. It is an IOU.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "vault",
+          "props": [
+            "iou",
+            "x"
+          ],
+          "lines": [
+            "Your balance",
+            "isn't money."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "When you buy on an exchange, the exchange holds the coins. You hold a claim.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "vault",
+          "kicker": "what it really is",
+          "line": "A claim, not coins",
+          "sub": "they hold them — you hold a promise"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "It's right there in how these platforms work.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ftx",
+          "kicker": "Wikipedia · FTX"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "FTX customers found out the hard way. Eight billion in claims, coins long gone.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "$8B",
+          "label": "claims, no coins behind them",
+          "props": [
+            "iou",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "The bankruptcy proved the point.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ftxbk",
+          "kicker": "Wikipedia · FTX bankruptcy"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Not your keys, not your coins.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Not your keys.",
+          "props": [
+            "x",
+            "iou"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "So who is really holding yours?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "vault",
+          "line": "Who holds your coins?",
+          "sub": "not your keys, not your coins"
+        }
+      ]
+    }
+  ]
+}

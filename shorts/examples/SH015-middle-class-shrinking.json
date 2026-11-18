@@ -1,0 +1,116 @@
+{
+  "id": "SH015",
+  "num": 15,
+  "slug": "middle-class-shrinking",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP018",
+  "sourceTitle": "Why the Middle Class Is Disappearing",
+  "title": "The Middle Class Is Quietly Disappearing",
+  "hook": "The middle class share of income, then and now.",
+  "question": "Do you still count as middle class?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-mcus",
+      "name": "Middle class in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Middle_class_in_the_United_States",
+      "quote": "the middle class constitutes anywhere from 25% to 75% of households",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-incineq",
+      "name": "Income inequality in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income_inequality_in_the_United_States",
+      "quote": "followed by increasing inequality",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "The American middle class didn't vanish. It got squeezed, quietly, for fifty years.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "x"
+          ],
+          "lines": [
+            "The middle class",
+            "got squeezed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "In nineteen seventy-one, sixty-one percent of adults were middle class. Today it's about half.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Share of US adults, middle class",
+          "thenLabel": "1971",
+          "thenValue": "61%",
+          "nowLabel": "Today",
+          "nowValue": "50%",
+          "sub": "it didn't vanish — it got squeezed"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Even defining it is slippery now.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mcus",
+          "kicker": "Wikipedia · US middle class"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "The odds a kid out-earns their parents are now close to a coin flip.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "50/50",
+          "label": "kid out-earns their parents",
+          "props": [
+            "clock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "Because the gains went to the top.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-incineq",
+          "kicker": "Wikipedia · US income inequality"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Do you still count as middle class?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Still middle class?",
+          "sub": "Comment yes or no"
+        }
+      ]
+    }
+  ]
+}
