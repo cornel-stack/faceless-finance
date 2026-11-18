@@ -1,0 +1,212 @@
+{
+  "id": "SH119",
+  "num": 119,
+  "slug": "crash-levels-recovery",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP070",
+  "sourceTitle": "Every Level of Stock Market Crash",
+  "title": "-10% To -80%, And What Happened Next Each Time",
+  "hook": "-10% to -80%, and what happened next each time.",
+  "question": "Which have you lived through?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-correction",
+      "name": "Stock market correction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stock_market_correction",
+      "quote": "stock market correction",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-crash",
+      "name": "Stock market crash (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stock_market_crash",
+      "quote": "stock market crash",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-recession",
+      "name": "Great Recession (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Recession",
+      "quote": "Great Recession",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-depression",
+      "name": "Great Depression (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Depression",
+      "quote": "Great Depression",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Markets drop in very different sizes, and each size has a nickname and a recovery story. Let's climb the ladder of fear.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "fire"
+          ],
+          "lines": [
+            "-10% to -80%.",
+            "What's next?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A dip of ten percent is a correction. Twenty is a bear market. Fifty-plus is a true crash.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Drop → name → recovery",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "–10%",
+              "value": "correction",
+              "note": "months to heal",
+              "color": "#5c544c",
+              "bar": 0.25
+            },
+            {
+              "rank": "2",
+              "name": "–20%",
+              "value": "bear market",
+              "note": "a year or two",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "3",
+              "name": "–50%",
+              "value": "major crash",
+              "note": "several years",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "4",
+              "name": "–80%",
+              "value": "depression",
+              "note": "a decade-plus",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A correction is a fall of about ten percent from the peak.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-correction",
+          "kicker": "Wikipedia · stock market correction"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Here's the reassuring part. Every single US market crash has eventually recovered to new highs.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "100%",
+          "label": "of crashes recovered, so far",
+          "props": [
+            "chartUp",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A crash is a sudden, steep drop across the whole market.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-crash",
+          "kicker": "Wikipedia · stock market crash"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The only variable is time. The deeper the fall, the longer the climb back.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Deeper = longer",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The two thousand eight crash took years to fully recover.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-recession",
+          "kicker": "Wikipedia · Great Recession"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The pattern is oddly comforting. Every crash so far has eventually proven temporary.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "So far, temporary",
+          "props": [
+            "chartUp",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Even the Great Depression's eighty percent drop eventually recovered.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-depression",
+          "kicker": "Wikipedia · Great Depression"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So which of these drops have you personally lived through?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which have you lived?",
+          "sub": "Comment the year"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

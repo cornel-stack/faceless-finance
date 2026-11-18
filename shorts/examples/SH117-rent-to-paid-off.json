@@ -1,0 +1,213 @@
+{
+  "id": "SH117",
+  "num": 117,
+  "slug": "rent-to-paid-off",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP069",
+  "sourceTitle": "Every Level of Home Ownership",
+  "title": "First Rent To Paid-Off, Every Stage",
+  "hook": "First rent to paid-off, every stage.",
+  "question": "Where are you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-renting",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "renting",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-homeequity",
+      "name": "Home equity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_equity",
+      "quote": "home equity",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-amort",
+      "name": "Amortization schedule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amortization_schedule",
+      "quote": "amortization",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-owner",
+      "name": "Owner-occupancy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Owner-occupancy",
+      "quote": "owner-occupancy",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The journey from your first rented room to a fully paid-off home has clear stages. Let's climb every one.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "Rent to",
+            "paid-off."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "It runs from renting, to scraping a deposit, to buying, to slowly building equity, to owning it outright.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "The ownership ladder",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Renting",
+              "value": "$0 equity",
+              "note": "paying someone else",
+              "color": "#5c544c",
+              "bar": 0.15
+            },
+            {
+              "rank": "2",
+              "name": "Deposit saved",
+              "value": "the door",
+              "note": "hardest step",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "3",
+              "name": "Mortgaged",
+              "value": "building",
+              "note": "equity grows",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "Paid off",
+              "value": "100% yours",
+              "note": "no landlord, no bank",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Renting means paying for a home you never gain any stake in.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-renting",
+          "kicker": "Wikipedia · renting"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The ugly secret is the early years. On a two thousand dollar payment, as little as three hundred is really yours.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$300 of $2,000",
+          "label": "the rest is interest",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "An amortization schedule front-loads nearly all the interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-amort",
+          "kicker": "Wikipedia · amortization"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Only slowly does each payment start building real equity you actually own.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "equity",
+          "label": "grows later, not early",
+          "props": [
+            "home",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Home equity is the slice of the house that's truly yours.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-homeequity",
+          "kicker": "Wikipedia · home equity"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The leap from renting to owning is the single hardest rung on the whole ladder.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The hardest rung",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Owner-occupancy is when you live in the home you own.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-owner",
+          "kicker": "Wikipedia · owner-occupancy"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So on that ladder, which stage are you standing on?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Where are you?",
+          "sub": "Comment your stage"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

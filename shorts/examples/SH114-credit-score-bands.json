@@ -1,0 +1,212 @@
+{
+  "id": "SH114",
+  "num": 114,
+  "slug": "credit-score-bands",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP067",
+  "sourceTitle": "What Each Credit Score Costs You",
+  "title": "Every Credit Score Band And Its Lifetime Price",
+  "hook": "Every credit score band and its lifetime price.",
+  "question": "Which band are you in?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-creditscore",
+      "name": "Credit score (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_score",
+      "quote": "credit score",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-csus",
+      "name": "Credit score in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_score_in_the_United_States",
+      "quote": "credit score in the United States",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fico",
+      "name": "FICO (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FICO",
+      "quote": "FICO",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "annual percentage rate",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Credit scores fall into bands, and each band quietly carries its own lifetime price tag. Here's the ladder.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "lock",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "Every band,",
+            "its price."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Poor pays the most, through the nose. Fair pays a lot. Good is average. Excellent pays the least of all.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Score band → cost",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Poor (<580)",
+              "value": "highest",
+              "note": "$100K+ extra",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Fair (580–669)",
+              "value": "high",
+              "note": "still costly",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "Good (670–739)",
+              "value": "average",
+              "note": "the median zone",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "4",
+              "name": "Excellent (740+)",
+              "value": "cheapest",
+              "note": "best rates",
+              "color": "#1f7a3d",
+              "bar": 0.25
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "US scores generally run from three hundred to eight fifty.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-csus",
+          "kicker": "Wikipedia · credit score in the US"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Moving up just one band can save you tens of thousands over the years.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "+1 band",
+          "label": "saves tens of thousands",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Lenders map your FICO band straight to an interest rate.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fico",
+          "kicker": "Wikipedia · FICO"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And the cruel part is that being poor pushes your score down, which then charges you more.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Poor pays more",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Payment history and debt levels drive most of the score.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-creditscore",
+          "kicker": "Wikipedia · credit score"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Climbing even one single band can quietly hand you back tens of thousands of dollars.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "One band = thousands",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Each band maps to a very different APR on your loans.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-apr",
+          "kicker": "Wikipedia · APR"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So which band are you sitting in right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "Which band are you in?",
+          "sub": "Comment your range"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

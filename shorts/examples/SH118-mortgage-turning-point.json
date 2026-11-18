@@ -1,0 +1,200 @@
+{
+  "id": "SH118",
+  "num": 118,
+  "slug": "mortgage-turning-point",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP069",
+  "sourceTitle": "Every Level of Home Ownership",
+  "title": "The Year Your Mortgage Starts Paying The House",
+  "hook": "The year your mortgage starts paying the house.",
+  "question": "Have you reached it?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-amort",
+      "name": "Amortization schedule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amortization_schedule",
+      "quote": "amortization",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-homeequity",
+      "name": "Home equity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_equity",
+      "quote": "home equity",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-refi",
+      "name": "Refinancing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Refinancing",
+      "quote": "refinancing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-renting",
+      "name": "Renting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renting",
+      "quote": "renting",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "For years, your mortgage payment mostly feeds the bank. There's a specific turning point when it finally starts feeding the house.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "When it starts",
+            "paying the house."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Early on, almost every dollar goes to interest, with just a sliver chipping at what you owe.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "mostly interest",
+          "label": "in the early years",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The amortization schedule front-loads the interest on purpose.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-amort",
+          "kicker": "Wikipedia · amortization"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Then, somewhere around the halfway mark of a thirty-year loan, the balance flips.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~year 18",
+          "label": "the turning point",
+          "props": [
+            "clock",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "After that, more of each payment builds your home equity.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-homeequity",
+          "kicker": "Wikipedia · home equity"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "From there on, most of each payment finally goes toward principal, the part you keep.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Now it's yours",
+          "props": [
+            "home",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Refinancing can reset that clock, for better or worse.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-refi",
+          "kicker": "Wikipedia · refinancing"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "On a three hundred thousand dollar mortgage at seven percent, you repay around seven hundred thousand total.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$700K",
+          "label": "total repaid on a $300K loan",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Until that flip happens, you are really just renting money from the bank.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Renting money",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Before the flip, it's barely better than paying rent.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-renting",
+          "kicker": "Wikipedia · renting"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, have you reached your turning point yet?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Reached it?",
+          "sub": "Comment your year"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "SH111",
+  "num": 111,
+  "slug": "millionaire-1m-to-1b",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP066",
+  "sourceTitle": "Every Level of Millionaire",
+  "title": "$1M To $1B, And What Actually Changes",
+  "hook": "$1M to $1B, and what actually changes.",
+  "question": "Which change surprised you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-millionaire",
+      "name": "Millionaire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Millionaire",
+      "quote": "millionaire",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-hnwi",
+      "name": "High-net-worth individual (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/High-net-worth_individual",
+      "quote": "high-net-worth individual",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-billionaire",
+      "name": "Billionaire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Billionaire",
+      "quote": "billionaire",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-family",
+      "name": "Family office (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Family_office",
+      "quote": "family office",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "A million and a billion sound like cousins. On this ladder, you'll see they live in completely different universes.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "$1M to $1B.",
+            "What changes?"
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At a million, you're comfortable but still work. At ten, work is optional. At a hundred, you own assets, not a job.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "What each level buys",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$1M",
+              "value": "comfort",
+              "note": "still working",
+              "color": "#5c544c",
+              "bar": 0.1
+            },
+            {
+              "rank": "2",
+              "name": "$10M",
+              "value": "freedom",
+              "note": "work optional",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "3",
+              "name": "$100M",
+              "value": "power",
+              "note": "own companies",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "4",
+              "name": "$1B",
+              "value": "influence",
+              "note": "move markets",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A millionaire's wealth is usually tied up in a home and retirement accounts.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-millionaire",
+          "kicker": "Wikipedia · millionaire"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The rule of thumb for freedom is simple. Twenty-five times your yearly spending.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "× 25",
+          "label": "spending = your number",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Above a million investable, you become high net worth.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hnwi",
+          "kicker": "Wikipedia · high-net-worth individual"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "But a billion isn't a bigger version of that. It's a thousand times a million.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "1,000×",
+          "label": "a billion = 1,000 millions",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The first confirmed billionaire only appeared back in nineteen sixteen.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-billionaire",
+          "kicker": "Wikipedia · billionaire"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "At the top, money stops being savings and becomes raw power over the economy.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Money becomes power",
+          "props": [
+            "globe",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The jump from a million to a billion isn't a step, it's a whole different dimension of money.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A different dimension",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "At the top, a private family office runs it like a company.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-family",
+          "kicker": "Wikipedia · family office"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So on that ladder, which change surprised you the most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which surprised you?",
+          "sub": "Comment below"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

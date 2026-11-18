@@ -1,0 +1,198 @@
+{
+  "id": "SH113",
+  "num": 113,
+  "slug": "credit-score-lifetime-cost",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP067",
+  "sourceTitle": "What Each Credit Score Costs You",
+  "title": "What A Poor Credit Score Costs Over A Lifetime",
+  "hook": "What a poor credit score costs over a lifetime.",
+  "question": "Do you know yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-fico",
+      "name": "FICO (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FICO",
+      "quote": "FICO",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-creditscore",
+      "name": "Credit score (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_score",
+      "quote": "credit score",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "annual percentage rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-history",
+      "name": "Credit history (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_history",
+      "quote": "credit history",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "A three-digit number you probably can't recite quietly decides how much your whole life costs. Here's the bill.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "lock",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Your score's",
+            "lifetime cost."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Your credit score sets the interest rate on every loan, card, and mortgage you ever take.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "lock",
+          "kicker": "what it controls",
+          "line": "It sets your rate",
+          "sub": "on everything you borrow"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A credit score predicts how likely you are to repay.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-creditscore",
+          "kicker": "Wikipedia · credit score"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "On a single mortgage, a poor score instead of a great one can add two hundred thousand dollars in interest.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$200K",
+          "label": "extra interest on one mortgage",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The most common model is the FICO score.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fico",
+          "kicker": "Wikipedia · FICO"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Add in cars, cards, and insurance, and the lifetime gap climbs past a hundred thousand more.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "$100K+",
+          "label": "extra, over a lifetime",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Every rate is driven by the APR your score earns you.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-apr",
+          "kicker": "Wikipedia · APR"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The average American score is around seven fifteen, which lands in merely good, not excellent.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "715",
+          "label": "the average US score",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "That quiet three-digit number may be the most expensive thing you never bother to check.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Expensive & ignored",
+          "props": [
+            "lock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "It's built from your entire credit history over years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-history",
+          "kicker": "Wikipedia · credit history"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, do you actually know yours?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "Do you know yours?",
+          "sub": "Comment if you do"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

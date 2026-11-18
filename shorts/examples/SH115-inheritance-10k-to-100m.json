@@ -1,0 +1,228 @@
+{
+  "id": "SH115",
+  "num": 115,
+  "slug": "inheritance-10k-to-100m",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP068",
+  "sourceTitle": "Every Level of Inheritance",
+  "title": "$10K To $100M Inherited, And What Gets Taken",
+  "hook": "$10K to $100M inherited, and what gets taken.",
+  "question": "Surprised?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-estatetax",
+      "name": "Estate tax in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Estate_tax_in_the_United_States",
+      "quote": "estate tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-steppedup",
+      "name": "Stepped-up basis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stepped-up_basis",
+      "quote": "stepped-up basis",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-gifttax",
+      "name": "Gift tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gift_tax",
+      "quote": "gift tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-inheritance",
+      "name": "Inheritance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inheritance",
+      "quote": "inheritance",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Inherit money, and the big fear is the taxman. But what's actually taken depends hugely on the size. Let's climb.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "$10K to $100M",
+            "inherited."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "For almost everyone, the surprise is this. Below a huge threshold, the federal estate tax is zero.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$13.6M",
+          "label": "exemption — below it, $0 tax",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The federal estate tax only applies above a multi-million-dollar exemption.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-estatetax",
+          "kicker": "Wikipedia · estate tax"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "So a normal inheritance of ten or a hundred thousand dollars is taxed federally at nothing.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Federal estate tax",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$10K–$1M",
+              "value": "$0",
+              "note": "well under the line",
+              "color": "#1f7a3d",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "$5M",
+              "value": "$0",
+              "note": "still exempt",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "3",
+              "name": "$20M",
+              "value": "~40%",
+              "note": "on the excess",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "$100M",
+              "value": "~40%",
+              "note": "on most of it",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A stepped-up basis can also wipe out decades of taxable gains.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-steppedup",
+          "kicker": "Wikipedia · stepped-up basis"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Only above the exemption does the roughly forty percent rate kick in, on the excess.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~40%",
+          "label": "only on the amount above",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "You can also gift eighteen thousand per person each year, tax-free.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gifttax",
+          "kicker": "Wikipedia · gift tax"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Which is why the estate tax raises less than one percent of all federal revenue.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "<1% of revenue",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "For almost everyone, the real tax is spending it, not the government taking it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Spending is the tax",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Inheritance is simply assets passed on after death.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-inheritance",
+          "kicker": "Wikipedia · inheritance"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, are you surprised by how little most inheritances are actually taxed?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Surprised?",
+          "sub": "Comment below"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
