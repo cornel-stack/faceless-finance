@@ -1,0 +1,149 @@
+{
+  "id": "SH021",
+  "num": 21,
+  "slug": "ipo-cash-out",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP021",
+  "sourceTitle": "The Stock Market Is Being Used as a Dumping Ground",
+  "title": "Companies Now Go Public To Cash Out, Not Raise Money",
+  "hook": "Companies now list to cash out, not to raise money.",
+  "question": "Who is buying the exit?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-lockup",
+      "name": "Lock-up period (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lock-up_period",
+      "quote": "a predetermined amount of time following an initial public offering",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-greaterfool",
+      "name": "Greater fool theory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greater_fool_theory",
+      "quote": "resold at an even higher price",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-infoasym",
+      "name": "Information asymmetry (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Information_asymmetry",
+      "quote": "one party has more or better information than the other",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "An IPO is supposed to raise money to build. More and more, it's an exit — insiders cashing out.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "chartDown",
+            "x"
+          ],
+          "lines": [
+            "They list",
+            "to cash out."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "When a company goes public, you're on the other side of the smartest sellers in the room.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "building",
+          "kicker": "think about it",
+          "line": "Who's selling to you?",
+          "sub": "usually someone who knows more"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "The seller almost always knows more than the buyer.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-infoasym",
+          "kicker": "Wikipedia · information asymmetry"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Insiders are even locked up for ninety to a hundred eighty days — then free to sell.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "90–180",
+          "label": "days until insiders can sell",
+          "props": [
+            "clock",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "That lock-up window is written right into the deal.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lockup",
+          "kicker": "Wikipedia · lock-up period"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Most of twenty twenty-one's listings later fell below their IPO price.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "most",
+          "label": "2021 IPOs fell below list price",
+          "props": [
+            "chartDown",
+            "chartDown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "It can rhyme with the greater fool theory — someone always hopes to resell higher.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-greaterfool",
+          "kicker": "Wikipedia · greater fool theory"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "So who's buying the exit?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "Who buys the exit?",
+          "sub": "Comment your take"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "SH019",
+  "num": 19,
+  "slug": "banks-create-money",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP020",
+  "sourceTitle": "How Banks Create Money From Nothing",
+  "title": "Banks Don't Lend Your Deposits — They Create Money",
+  "hook": "Banks do not lend out your deposits. They create the money.",
+  "question": "Did you know that?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-moneycreation",
+      "name": "Money creation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_creation",
+      "quote": "both central banks and commercial banks create money",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fractional",
+      "name": "Fractional-reserve banking (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fractional-reserve_banking",
+      "quote": "keep only part of their deposit liabilities in liquid assets",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-supply",
+      "name": "Money supply (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_supply",
+      "quote": "the total volume of money held by the public",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Here's what almost nobody is taught. Banks don't lend out your savings. They create new money when they lend.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "bill",
+            "coin",
+            "fire"
+          ],
+          "lines": [
+            "Banks don't lend",
+            "your deposits."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "When a bank approves a loan, it simply types the amount into your account. The loan creates the deposit.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "how it really works",
+          "line": "The loan creates the deposit",
+          "sub": "typed in with a keystroke"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "This isn't a conspiracy — it's textbook economics.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-moneycreation",
+          "kicker": "Wikipedia · money creation"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Around ninety-seven percent of money is created by private banks, not printed by the government.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "bigValue": 97,
+          "bigSuffix": "%",
+          "label": "of money, created by banks",
+          "props": [
+            "bill",
+            "bill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "That's most of the money supply, conjured by lending.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-supply",
+          "kicker": "Wikipedia · money supply"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "It works because banks keep only a fraction in reserve.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fractional",
+          "kicker": "Wikipedia · fractional-reserve banking"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "Take a three hundred thousand dollar mortgage, and that money just appeared, from nothing.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "+$300K",
+          "label": "new money, from nothing",
+          "props": [
+            "coin",
+            "bill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "Did you know that's how money actually works?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Did you know that?",
+          "sub": "Most people don't"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "SH025",
+  "num": 25,
+  "slug": "war-and-stocks",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP023",
+  "sourceTitle": "If War Is Bad, Why Do Stocks Go Up?",
+  "title": "War Is Terrible. Stocks Usually Go Up Anyway.",
+  "hook": "War is terrible. Stocks usually go up anyway.",
+  "question": "Does that sit right with you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-wareconomy",
+      "name": "War economy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_economy",
+      "quote": "to mobilize its economy for war production",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mic",
+      "name": "Military–industrial complex (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military-industrial_complex",
+      "quote": "the relationship between a country's military and the defense industry",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-emh",
+      "name": "Efficient-market hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+      "quote": "asset prices reflect all available information",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "War is terrible. And yet, markets usually rise right through it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "fire"
+          ],
+          "lines": [
+            "War is bad.",
+            "Stocks go up."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "The market measures profit, not suffering.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "why",
+          "line": "It counts profit",
+          "sub": "not morality, not pain"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "In theory, prices just reflect all the available information.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-emh",
+          "kicker": "Wikipedia · efficient-market hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "War mobilizes an entire economy toward production.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wareconomy",
+          "kicker": "Wikipedia · war economy"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "World War Two spending ended the Depression — unemployment fell to about two percent.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~2%",
+          "label": "US unemployment by mid-1940s",
+          "props": [
+            "chartUp",
+            "chartUp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "And defense is now an eight hundred billion dollar industry.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mic",
+          "kicker": "Wikipedia · military–industrial complex"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "Does that sit right with you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Does that sit right?",
+          "sub": "Comment honestly"
+        }
+      ]
+    }
+  ]
+}

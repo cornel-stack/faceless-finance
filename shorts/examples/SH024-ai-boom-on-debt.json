@@ -1,0 +1,133 @@
+{
+  "id": "SH024",
+  "num": 24,
+  "slug": "ai-boom-on-debt",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP022",
+  "sourceTitle": "The AI Bubble Survives on Hidden Debt",
+  "title": "The AI Boom Is Running On Debt, Not Profit",
+  "hook": "The AI boom is running on debt, not profit.",
+  "question": "Bubble or not?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-corpbond",
+      "name": "Corporate bond (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Corporate_bond",
+      "quote": "a bond issued by a corporation in order to raise financing",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-leverage",
+      "name": "Leverage (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+      "quote": "any technique involving borrowing funds to buy an investment",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-capex",
+      "name": "Capital expenditure (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Capital_expenditure",
+      "quote": "spends to buy, maintain, or improve its fixed assets",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "The tech is real. But a lot of the AI boom is running on borrowed money.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "fire",
+            "chartDown"
+          ],
+          "lines": [
+            "Running on debt,",
+            "not profit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "Build-out projected this decade runs into the trillions.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$ trillions",
+          "label": "projected AI build-out",
+          "props": [
+            "bill",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "A lot of it is funded by corporate bonds — borrowing.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-corpbond",
+          "kicker": "Wikipedia · corporate bond"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Borrowing to invest is leverage. It magnifies the upside — and the downside.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "the risk",
+          "line": "It's leverage",
+          "sub": "magnifies the fall, too"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "That's the real risk hiding behind the demos.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-leverage",
+          "kicker": "Wikipedia · leverage"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Most of the spend is capex that must earn its money back.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-capex",
+          "kicker": "Wikipedia · capital expenditure"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "So — bubble, or not?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "Bubble or not?",
+          "sub": "Comment your verdict"
+        }
+      ]
+    }
+  ]
+}

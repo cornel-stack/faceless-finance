@@ -1,0 +1,164 @@
+{
+  "id": "SH020",
+  "num": 20,
+  "slug": "deposit-multiplier",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP020",
+  "sourceTitle": "How Banks Create Money From Nothing",
+  "title": "How One Deposit Becomes Nine Loans",
+  "hook": "One deposit becomes nine loans. Here is how.",
+  "question": "Still feel safe?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-multiplier",
+      "name": "Money multiplier (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_multiplier",
+      "quote": "the ratio of the money supply to the monetary base",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fractional",
+      "name": "Fractional-reserve banking (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fractional-reserve_banking",
+      "quote": "keep only part of their deposit liabilities in liquid assets",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-moneycreation",
+      "name": "Money creation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Money_creation",
+      "quote": "both central banks and commercial banks create money",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "One deposit can become nine loans across the banking system. Here's how it snowballs.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "bill",
+            "loop"
+          ],
+          "lines": [
+            "1 deposit.",
+            "9 loans."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "You deposit a thousand. The bank keeps a little, lends the rest. That loan becomes a deposit, and gets lent again.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "$1,000, lent again and again",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "You deposit",
+              "value": "$1,000",
+              "note": "into the bank",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Bank lends",
+              "value": "$900",
+              "note": "keeps $100",
+              "color": "#17120f",
+              "bar": 0.9
+            },
+            {
+              "rank": "3",
+              "name": "Lent again",
+              "value": "$810",
+              "note": "a new deposit",
+              "color": "#17120f",
+              "bar": 0.81
+            },
+            {
+              "rank": "4",
+              "name": "…and again",
+              "value": "$729",
+              "note": "it multiplies",
+              "color": "#c0392b",
+              "bar": 0.73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Economists call it the money multiplier.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-multiplier",
+          "kicker": "Wikipedia · money multiplier"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Which works only because banks hold a fraction in reserve.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fractional",
+          "kicker": "Wikipedia · fractional-reserve banking"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "So most 'money' is really loans stacked on loans.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-moneycreation",
+          "kicker": "Wikipedia · money creation"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "The cash to cover everyone at once simply isn't there. It never is.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "It's not all there.",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "Still feel totally safe?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "vault",
+          "line": "Still feel safe?",
+          "sub": "Comment below"
+        }
+      ]
+    }
+  ]
+}

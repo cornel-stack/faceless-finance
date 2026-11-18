@@ -1,0 +1,149 @@
+{
+  "id": "SH022",
+  "num": 22,
+  "slug": "who-sells-at-ipo",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP021",
+  "sourceTitle": "The Stock Market Is Being Used as a Dumping Ground",
+  "title": "Who Actually Sells When A Company Goes Public",
+  "hook": "Who actually sells when a company goes public.",
+  "question": "Who took the risk?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-infoasym",
+      "name": "Information asymmetry (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Information_asymmetry",
+      "quote": "one party has more or better information than the other",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ipo",
+      "name": "Initial public offering (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Initial_public_offering",
+      "quote": "shares of a company are sold to institutional investors",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lockup",
+      "name": "Lock-up period (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lock-up_period",
+      "quote": "a predetermined amount of time following an initial public offering",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "When a company goes public, who's really on each side of the trade?",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "chartUp",
+            "chartDown"
+          ],
+          "lines": [
+            "Who sells?",
+            "Who buys?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "Founders and early backers sell the exit. The public buys the risk.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Two sides of the IPO",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Insiders / VCs",
+              "value": "SELL",
+              "note": "early risk-takers cash out",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "The public",
+              "value": "BUY",
+              "note": "takes it from here",
+              "color": "#17120f",
+              "bar": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "The seller almost always knows more than the buyer.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-infoasym",
+          "kicker": "Wikipedia · information asymmetry"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "With SPACs, sponsors took a roughly twenty percent cut, nearly free.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "bigValue": 20,
+          "bigSuffix": "%",
+          "label": "SPAC sponsor 'promote'",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "And insiders only sell once their lock-up expires.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lockup",
+          "kicker": "Wikipedia · lock-up period"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "It's all spelled out in the prospectus, if you read it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ipo",
+          "kicker": "Wikipedia · IPO"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "So who actually took the risk?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "Who took the risk?",
+          "sub": "Comment below"
+        }
+      ]
+    }
+  ]
+}

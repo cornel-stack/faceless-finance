@@ -1,0 +1,195 @@
+{
+  "id": "SH017",
+  "num": 17,
+  "slug": "where-300k-goes",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP019",
+  "sourceTitle": "Living Paycheck to Paycheck on $300K",
+  "title": "$300,000 A Year And Nothing Left",
+  "hook": "$300,000 a year. Nothing left at month end.",
+  "question": "What salary would feel like enough?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-incometax",
+      "name": "Income tax in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income_tax_in_the_United_States",
+      "quote": "which may increase as income increases",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-networth",
+      "name": "Net worth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Net_worth",
+      "quote": "minus the value of all its outstanding liabilities",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-saving",
+      "name": "Saving (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saving",
+      "quote": "income not spent, or deferred consumption",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Three hundred thousand dollars a year. And somehow, nothing left at the end of the month.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "$300K a year.",
+            "Nothing left."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "One in four households earning over a hundred fifty thousand still live paycheck to paycheck.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "1 in 4",
+          "label": "$150K+ earners, paycheck to paycheck",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Ninety-five thousand goes to taxes before anything else.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$95K",
+          "label": "gone to taxes first",
+          "props": [
+            "x",
+            "bill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Taxes climb fast as income rises.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-incometax",
+          "kicker": "Wikipedia · US income tax"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "Then housing, childcare, and health insurance eat most of the rest.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Where the $300K goes",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Taxes",
+              "value": "$95K",
+              "note": "first",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Housing",
+              "value": "$48K",
+              "note": "every year",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "3",
+              "name": "Childcare",
+              "value": "$40K",
+              "note": "two kids",
+              "color": "#17120f",
+              "bar": 0.42
+            },
+            {
+              "rank": "4",
+              "name": "Health",
+              "value": "$24K",
+              "note": "premiums + copays",
+              "color": "#5c544c",
+              "bar": 0.26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Income is not wealth. Wealth is the gap you actually keep.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-networth",
+          "kicker": "Wikipedia · net worth"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "And saving is just income you don't spend.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-saving",
+          "kicker": "Wikipedia · saving"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "It's not how much you make. It's the gap.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "It's the gap.",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "narration": "So what salary would actually feel like enough?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "What's 'enough'?",
+          "sub": "Comment your number"
+        }
+      ]
+    }
+  ]
+}

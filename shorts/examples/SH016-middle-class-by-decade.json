@@ -1,0 +1,164 @@
+{
+  "id": "SH016",
+  "num": 16,
+  "slug": "middle-class-by-decade",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP018",
+  "sourceTitle": "Why the Middle Class Is Disappearing",
+  "title": "Watch The Middle Class Shrink, Decade By Decade",
+  "hook": "Watch the middle class shrink, decade by decade.",
+  "question": "Where does your income land?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-mcus",
+      "name": "Middle class in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Middle_class_in_the_United_States",
+      "quote": "the middle class constitutes anywhere from 25% to 75% of households",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-incineq",
+      "name": "Income inequality in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income_inequality_in_the_United_States",
+      "quote": "followed by increasing inequality",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mobility",
+      "name": "Economic mobility (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_mobility",
+      "quote": "the ability of an individual, family or some other group",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Watch the middle class shrink, one decade at a time.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "x"
+          ],
+          "lines": [
+            "Decade by decade,",
+            "it shrinks."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "Sixty-one percent in the seventies. Slipping through the nineties and two thousands. Down to about fifty today.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Middle-class share of adults",
+          "rows": [
+            {
+              "rank": "'71",
+              "name": "1971",
+              "value": "61%",
+              "note": "the peak",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "'01",
+              "name": "2001",
+              "value": "~54%",
+              "note": "slipping",
+              "color": "#17120f",
+              "bar": 0.78
+            },
+            {
+              "rank": "'11",
+              "name": "2011",
+              "value": "~51%",
+              "note": "squeezed",
+              "color": "#17120f",
+              "bar": 0.66
+            },
+            {
+              "rank": "now",
+              "name": "Today",
+              "value": "~50%",
+              "note": "a coin flip",
+              "color": "#c0392b",
+              "bar": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Even the definition of middle class keeps sliding.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mcus",
+          "kicker": "Wikipedia · US middle class"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Because the income gains piled up at the very top.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-incineq",
+          "kicker": "Wikipedia · income inequality"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "The ladder up is getting harder to climb.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "50/50",
+          "label": "kid out-earns their parents",
+          "props": [
+            "clock",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Economists call that collapsing mobility.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mobility",
+          "kicker": "Wikipedia · economic mobility"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "Where does your income land on that line?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Where do you land?",
+          "sub": "Comment your bracket"
+        }
+      ]
+    }
+  ]
+}

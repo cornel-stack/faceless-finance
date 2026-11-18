@@ -1,0 +1,148 @@
+{
+  "id": "SH023",
+  "num": 23,
+  "slug": "ai-capex-vs-revenue",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP022",
+  "sourceTitle": "The AI Bubble Survives on Hidden Debt",
+  "title": "AI Spending vs The Revenue It Earns",
+  "hook": "AI spending, drawn against the revenue it earns.",
+  "question": "Does that gap ever close?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-capex",
+      "name": "Capital expenditure (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Capital_expenditure",
+      "quote": "spends to buy, maintain, or improve its fixed assets",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-aiboom",
+      "name": "AI boom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/AI_boom",
+      "quote": "a period of rapid growth in the field of artificial intelligence",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-corpbond",
+      "name": "Corporate bond (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Corporate_bond",
+      "quote": "a bond issued by a corporation in order to raise financing",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Draw AI spending against the revenue it actually earns, and a gap opens up.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "fire"
+          ],
+          "lines": [
+            "Spending vs",
+            "revenue."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "Combined annual AI build-out is north of three hundred billion dollars.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "AI: spend vs revenue (annual)",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Capex (build-out)",
+              "value": "$300B+",
+              "note": "data centers, chips",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Revenue so far",
+              "value": "a fraction",
+              "note": "of that spend",
+              "color": "#17120f",
+              "bar": 0.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "That spending is capital expenditure — bet now, earn later.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-capex",
+          "kicker": "Wikipedia · capital expenditure"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "The boom itself is real and fast.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-aiboom",
+          "kicker": "Wikipedia · AI boom"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "A third of the whole index now sits in a few AI giants.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "~1/3",
+          "label": "of the index, in a few names",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "And a lot of the build-out is funded by borrowing.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-corpbond",
+          "kicker": "Wikipedia · corporate bond"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "Does that gap ever close?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Does the gap close?",
+          "sub": "Comment your call"
+        }
+      ]
+    }
+  ]
+}
