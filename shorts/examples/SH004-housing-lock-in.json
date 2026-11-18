@@ -27,6 +27,13 @@
       "url": "https://en.wikipedia.org/wiki/Housing_crisis_in_the_United_States",
       "quote": "46% of American renters are cost burdened",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "fred-inv",
+      "name": "Housing Inventory (FRED)",
+      "url": "https://fred.stlouisfed.org/series/ACTLISCOUUS",
+      "quote": "Housing Inventory",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
@@ -67,7 +74,7 @@
     },
     {
       "id": "s3",
-      "narration": "But millions of owners are locked in — holding three percent mortgages they won't trade for seven.",
+      "narration": "But here's the hidden reason. Millions of owners are locked in.",
       "shots": [
         {
           "block": "truth",
@@ -80,7 +87,7 @@
     },
     {
       "id": "s4",
-      "narration": "Look what happened to rates.",
+      "narration": "Look what happened to mortgage rates.",
       "shots": [
         {
           "block": "evidence",
@@ -91,6 +98,21 @@
     },
     {
       "id": "s5",
+      "narration": "They hold three percent mortgages, and won't trade them for seven.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "3% vs 7%",
+          "props": [
+            "lock",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
       "narration": "That froze an estimated one point seven million home sales that never hit the market.",
       "shots": [
         {
@@ -106,7 +128,18 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s7",
+      "narration": "You can see it in the inventory — starved for years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "fred-inv",
+          "kicker": "FRED · housing inventory"
+        }
+      ]
+    },
+    {
+      "id": "s8",
       "narration": "And nearly half of American renters are now cost burdened.",
       "shots": [
         {
@@ -117,7 +150,7 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s9",
       "narration": "Would you give up a three percent rate? Nobody is.",
       "shots": [
         {

@@ -15,6 +15,13 @@
   },
   "sources": [
     {
+      "id": "s-global",
+      "name": "IMF — Global public debt",
+      "url": "https://www.imf.org/en/Blogs/Articles/2024/10/15/global-public-debt-is-probably-worse-than-it-looks",
+      "quote": "exceed $100 trillion, or about 93 percent of global gross domestic product",
+      "accessed": "2026-11-18"
+    },
+    {
       "id": "s-40t",
       "name": "National debt passes $40 trillion (PGPF)",
       "url": "https://www.pgpf.org/press/peterson-foundation-statement-on-national-debt-passing-40-trillion/",
@@ -32,7 +39,7 @@
   "scenes": [
     {
       "id": "s1",
-      "narration": "Every government owes money. Here's the ladder, smallest to biggest.",
+      "narration": "Every government on Earth owes money. Here is the ladder, from the trillions to the tens of trillions.",
       "shots": [
         {
           "block": "hook",
@@ -51,7 +58,35 @@
     },
     {
       "id": "s2",
-      "narration": "France and Britain, a few trillion each. Japan, eleven. China, sixteen. And number one, by a mile, the United States, near forty trillion.",
+      "narration": "Globally, the pile is now over a hundred trillion dollars.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "$100T+",
+          "kicker": "global government debt",
+          "props": [
+            "coin",
+            "bill",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "The IMF says that's about ninety-three percent of everything the world produces in a year.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "s-global",
+          "kicker": "IMF · global debt"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "France and Britain owe a few trillion each. Japan, about eleven. China, sixteen.",
       "shots": [
         {
           "block": "rows",
@@ -93,7 +128,7 @@
               "rank": "1",
               "name": "USA",
               "value": "$40T",
-              "note": "the biggest of all",
+              "note": "#1 by a mile",
               "color": "#c0392b",
               "bar": 1.0
             }
@@ -102,20 +137,25 @@
       ]
     },
     {
-      "id": "s3",
-      "narration": "The US just blew past forty trillion dollars.",
+      "id": "s5",
+      "narration": "Number one, by a mile, is the United States — just past forty trillion dollars.",
       "shots": [
         {
-          "block": "flash",
-          "bg": "ink",
-          "line": "$40T",
-          "kicker": "US national debt",
+          "block": "stat",
+          "art": "globe",
+          "big": "$40T",
+          "label": "US national debt",
           "props": [
             "fire",
-            "coin",
             "bill"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "And it doubled in under ten years.",
+      "shots": [
         {
           "block": "evidence",
           "sourceId": "s-40t",
@@ -124,7 +164,7 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s7",
       "narration": "But dollars aren't the whole story. Japan owes about two hundred thirty-five percent of its entire economy.",
       "shots": [
         {
@@ -142,8 +182,8 @@
       ]
     },
     {
-      "id": "s5",
-      "narration": "The most of any major economy on Earth.",
+      "id": "s8",
+      "narration": "The highest of any major economy on Earth.",
       "shots": [
         {
           "block": "evidence",
@@ -153,8 +193,8 @@
       ]
     },
     {
-      "id": "s6",
-      "narration": "Where does your country sit on that ladder?",
+      "id": "s9",
+      "narration": "So where does your country sit on that ladder?",
       "shots": [
         {
           "block": "question",

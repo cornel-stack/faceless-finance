@@ -27,6 +27,13 @@
       "url": "https://fred.stlouisfed.org/series/MSPUS",
       "quote": "Median Sales Price of Houses Sold",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "fred-cs",
+      "name": "S&P/Case-Shiller Home Price Index (FRED)",
+      "url": "https://fred.stlouisfed.org/series/CSUSHPINSA",
+      "quote": "Home Price Index",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
@@ -65,7 +72,7 @@
     },
     {
       "id": "s3",
-      "narration": "Incomes barely crawled upward.",
+      "narration": "Here's the problem. Incomes, adjusted for inflation, barely crawled.",
       "shots": [
         {
           "block": "evidence",
@@ -87,6 +94,17 @@
     },
     {
       "id": "s5",
+      "narration": "The Case-Shiller index tells the same story — a near-relentless climb.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "fred-cs",
+          "kicker": "FRED · Case-Shiller"
+        }
+      ]
+    },
+    {
+      "id": "s6",
       "narration": "The median American home now runs about four hundred twelve thousand dollars.",
       "shots": [
         {
@@ -102,8 +120,24 @@
       ]
     },
     {
-      "id": "s6",
-      "narration": "What is the ratio where you live?",
+      "id": "s7",
+      "narration": "Which is why only about one in seven renters can afford it.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "1 in 7",
+          "label": "renters who can afford a median home",
+          "props": [
+            "x",
+            "house"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "So what is the ratio where you live?",
       "shots": [
         {
           "block": "question",

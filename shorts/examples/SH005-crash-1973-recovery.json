@@ -15,6 +15,13 @@
   },
   "sources": [
     {
+      "id": "wiki-nifty",
+      "name": "Nifty Fifty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nifty_Fifty",
+      "quote": "Nifty Fifty",
+      "accessed": "2026-11-18"
+    },
+    {
       "id": "wiki-crash73",
       "name": "1973–1974 stock market crash (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/1973%E2%80%931974_stock_market_crash",
@@ -32,7 +39,7 @@
   "scenes": [
     {
       "id": "s1",
-      "narration": "In nineteen seventy-three, the market fell forty-eight percent, and stayed down for years.",
+      "narration": "In nineteen seventy-three, the market fell forty-eight percent — and stayed down for years.",
       "shots": [
         {
           "block": "hook",
@@ -50,7 +57,33 @@
     },
     {
       "id": "s2",
-      "narration": "Peak to trough, down forty-eight percent. Adjusted for inflation, it took about twenty years to break even.",
+      "narration": "It started with a craze. A handful of can't-lose stocks called the Nifty Fifty.",
+      "shots": [
+        {
+          "block": "center",
+          "art": "crashChart",
+          "line": "The 'Nifty Fifty'",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Investors paid insane prices for them — until they didn't.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-nifty",
+          "kicker": "Wikipedia · Nifty Fifty"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Peak to trough, the market dropped forty-eight percent.",
       "shots": [
         {
           "block": "thennow",
@@ -64,8 +97,8 @@
       ]
     },
     {
-      "id": "s3",
-      "narration": "It was a brutal, grinding bear market.",
+      "id": "s5",
+      "narration": "It was a long, grinding bear market.",
       "shots": [
         {
           "block": "evidence",
@@ -75,8 +108,24 @@
       ]
     },
     {
-      "id": "s4",
-      "narration": "And valuations today? Higher than they were back then.",
+      "id": "s6",
+      "narration": "Adjusted for inflation, it took about twenty years to get your money back.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~20 yrs",
+          "label": "to break even, after inflation",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "And valuations today are higher than they were back then.",
       "shots": [
         {
           "block": "evidence",
@@ -86,7 +135,7 @@
       ]
     },
     {
-      "id": "s5",
+      "id": "s8",
       "narration": "History doesn't repeat, but it rhymes.",
       "shots": [
         {
@@ -101,7 +150,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s9",
       "narration": "Could you have held on for ten years? Most couldn't.",
       "shots": [
         {
