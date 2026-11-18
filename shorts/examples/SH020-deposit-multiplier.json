@@ -34,6 +34,13 @@
       "url": "https://en.wikipedia.org/wiki/Money_creation",
       "quote": "both central banks and commercial banks create money",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-bankrun",
+      "name": "Bank run (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bank_run",
+      "quote": "many clients withdraw their money from a bank",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
@@ -149,6 +156,32 @@
       "id": "s6"
     },
     {
+      "narration": "And if everyone asks for their cash back at the very same moment, you get a bank run.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Bank run",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A bank run is simply what happens when that shared confidence suddenly breaks.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bankrun",
+          "kicker": "Wikipedia · bank run"
+        }
+      ],
+      "id": "s8"
+    },
+    {
       "narration": "Knowing all that, do you still feel completely safe?",
       "shots": [
         {
@@ -158,7 +191,7 @@
           "sub": "Comment below"
         }
       ],
-      "id": "s7"
+      "id": "s9"
     }
   ]
 }

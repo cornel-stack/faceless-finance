@@ -34,6 +34,13 @@
       "url": "https://en.wikipedia.org/wiki/Economic_mobility",
       "quote": "the ability of an individual, family or some other group",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-realwage",
+      "name": "Real wages (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_wages",
+      "quote": "wages in terms of the amount of goods and services that can be bought",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
@@ -149,6 +156,33 @@
       "id": "s6"
     },
     {
+      "narration": "Meanwhile, real wages for typical workers stayed almost flat for fifty years, even as the economy doubled in size.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~flat",
+          "label": "real wages, 50 years",
+          "props": [
+            "chartDown",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Real wages measure what your pay can actually buy, and they barely moved.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-realwage",
+          "kicker": "Wikipedia · real wages"
+        }
+      ],
+      "id": "s8"
+    },
+    {
       "narration": "So on that shrinking line, where does your own income actually land?",
       "shots": [
         {
@@ -158,7 +192,7 @@
           "sub": "Comment your bracket"
         }
       ],
-      "id": "s7"
+      "id": "s9"
     }
   ]
 }
