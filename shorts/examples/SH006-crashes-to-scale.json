@@ -27,12 +27,19 @@
       "url": "https://fred.stlouisfed.org/series/SP500",
       "quote": "S&P 500",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "multpl-cape",
+      "name": "Shiller PE Ratio (multpl)",
+      "url": "https://www.multpl.com/shiller-pe",
+      "quote": "Shiller PE",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
     {
       "id": "s1",
-      "narration": "Every major crash of the modern era, drawn to the same scale.",
+      "narration": "Every major crash of the modern era, drawn to the same scale. Watch.",
       "shots": [
         {
           "block": "hook",
@@ -50,7 +57,23 @@
     },
     {
       "id": "s2",
-      "narration": "COVID took thirty-four percent. Nineteen seventy-three, forty-eight. The dot-com bust, forty-nine. And two thousand eight, fifty-seven percent, the deepest of all.",
+      "narration": "COVID, in twenty twenty, took thirty-four percent — the fastest of them all.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "–34%",
+          "label": "2020 · COVID",
+          "props": [
+            "chartDown",
+            "clock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "Nineteen seventy-three took forty-eight, and the dot-com bust forty-nine.",
       "shots": [
         {
           "block": "rows",
@@ -93,7 +116,23 @@
       ]
     },
     {
-      "id": "s3",
+      "id": "s4",
+      "narration": "But two thousand eight was the deepest — down fifty-seven percent.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "–57%",
+          "kicker": "2008 · the deepest",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
       "narration": "Nineteen seventy-three was a long, grinding bear market.",
       "shots": [
         {
@@ -104,8 +143,8 @@
       ]
     },
     {
-      "id": "s4",
-      "narration": "And here's the whole index, drawn out.",
+      "id": "s6",
+      "narration": "Here's the whole index, drawn out.",
       "shots": [
         {
           "block": "evidence",
@@ -115,8 +154,19 @@
       ]
     },
     {
-      "id": "s5",
-      "narration": "Each one shook somebody out at the bottom.",
+      "id": "s7",
+      "narration": "And valuations today sit higher than before most of them.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "multpl-cape",
+          "kicker": "Shiller PE, today"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "Each one shook somebody out right at the bottom.",
       "shots": [
         {
           "block": "flash",
@@ -130,7 +180,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s9",
       "narration": "Which one would have shaken you out?",
       "shots": [
         {

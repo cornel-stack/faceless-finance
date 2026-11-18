@@ -27,6 +27,13 @@
       "url": "https://en.wikipedia.org/wiki/Enron_scandal",
       "quote": "mark-to-market",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mtm",
+      "name": "Mark-to-market accounting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mark-to-market_accounting",
+      "quote": "mark-to-market",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
@@ -77,7 +84,23 @@
     },
     {
       "id": "s4",
-      "narration": "At its peak it was worth seventy billion. Its stock went from ninety dollars to twenty-six cents.",
+      "narration": "At its peak it was worth seventy billion dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "$70B",
+          "label": "Enron at its peak",
+          "props": [
+            "bill",
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "Then the stock went from ninety dollars to twenty-six cents.",
       "shots": [
         {
           "block": "thennow",
@@ -91,8 +114,19 @@
       ]
     },
     {
-      "id": "s5",
-      "narration": "The largest bankruptcy in history at the time. Twenty thousand jobs, gone overnight.",
+      "id": "s6",
+      "narration": "The magic trick behind it was mark-to-market accounting.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mtm",
+          "kicker": "Wikipedia · mark-to-market"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "The largest bankruptcy in history at the time — twenty thousand jobs, gone overnight.",
       "shots": [
         {
           "block": "stat",
@@ -107,8 +141,8 @@
       ]
     },
     {
-      "id": "s6",
-      "narration": "The whole thing collapsed into scandal.",
+      "id": "s8",
+      "narration": "It all collapsed into scandal.",
       "shots": [
         {
           "block": "evidence",
@@ -118,7 +152,7 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s9",
       "narration": "So what is winning awards right now?",
       "shots": [
         {

@@ -27,6 +27,13 @@
       "url": "https://en.wikipedia.org/wiki/Enron_scandal",
       "quote": "mark-to-market",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-enron",
+      "name": "Enron (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Enron",
+      "quote": "most innovative",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
@@ -50,20 +57,20 @@
     },
     {
       "id": "s2",
-      "narration": "The trick was mark-to-market accounting. Sign a deal, then book years of projected profit immediately.",
+      "narration": "The trick was mark-to-market accounting. Sign a deal, then book years of projected profit at once.",
       "shots": [
         {
           "block": "truth",
           "art": "building",
           "kicker": "the trick",
           "line": "Mark-to-market",
-          "sub": "future projections booked as today's cash"
+          "sub": "future guesses booked as today's cash"
         }
       ]
     },
     {
       "id": "s3",
-      "narration": "It's a real accounting method — they just abused it.",
+      "narration": "It's a real method — they just abused it.",
       "shots": [
         {
           "block": "evidence",
@@ -74,7 +81,7 @@
     },
     {
       "id": "s4",
-      "narration": "They booked a hundred ten million in profit on one deal. The deal flopped. The profit stayed.",
+      "narration": "They booked a hundred ten million in profit on one deal. The deal flopped. The profit stayed on the books.",
       "shots": [
         {
           "block": "stat",
@@ -98,7 +105,8 @@
           "big": "$600M",
           "label": "profit that wasn't real",
           "props": [
-            "chartDown"
+            "chartDown",
+            "x"
           ]
         }
       ]
@@ -120,7 +128,18 @@
     },
     {
       "id": "s7",
-      "narration": "The whole collapse has a name now.",
+      "narration": "They were named America's most innovative company six years running.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-enron",
+          "kicker": "Wikipedia · Enron"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "narration": "Until the whole thing collapsed into scandal.",
       "shots": [
         {
           "block": "evidence",
@@ -130,7 +149,7 @@
       ]
     },
     {
-      "id": "s8",
+      "id": "s9",
       "narration": "Should that ever have been legal?",
       "shots": [
         {

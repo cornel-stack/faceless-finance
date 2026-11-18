@@ -27,6 +27,13 @@
       "url": "https://en.wikipedia.org/wiki/Income_inequality_in_the_United_States",
       "quote": "followed by increasing inequality",
       "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mobility",
+      "name": "Economic mobility (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Economic_mobility",
+      "quote": "the ability of an individual, family or some other group",
+      "accessed": "2026-11-18"
     }
   ],
   "scenes": [
@@ -65,7 +72,7 @@
     },
     {
       "id": "s3",
-      "narration": "Even defining it is slippery now.",
+      "narration": "Even defining the middle class is slippery now.",
       "shots": [
         {
           "block": "evidence",
@@ -76,22 +83,7 @@
     },
     {
       "id": "s4",
-      "narration": "The odds a kid out-earns their parents are now close to a coin flip.",
-      "shots": [
-        {
-          "block": "stat",
-          "art": "crashChart",
-          "big": "50/50",
-          "label": "kid out-earns their parents",
-          "props": [
-            "clock"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "s5",
-      "narration": "Because the gains went to the top.",
+      "narration": "Because the income gains piled up at the top.",
       "shots": [
         {
           "block": "evidence",
@@ -101,8 +93,35 @@
       ]
     },
     {
+      "id": "s5",
+      "narration": "The odds a kid out-earns their parents are now close to a coin flip.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "50/50",
+          "label": "kid out-earns their parents",
+          "props": [
+            "clock",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
       "id": "s6",
-      "narration": "Do you still count as middle class?",
+      "narration": "Economists call that collapsing mobility.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mobility",
+          "kicker": "Wikipedia · economic mobility"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "So do you still count as middle class?",
       "shots": [
         {
           "block": "question",
