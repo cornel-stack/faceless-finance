@@ -1,0 +1,220 @@
+{
+  "id": "SH182",
+  "num": 182,
+  "slug": "big-mac-ranked",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP101",
+  "sourceTitle": "The Price of a Big Mac in Every Country",
+  "title": "Big Mac Prices, Every Country Ranked",
+  "hook": "Big Mac prices, every country ranked.",
+  "question": "Where is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-bigmac",
+      "name": "Big Mac Index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+      "quote": "Big Mac Index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-exrate",
+      "name": "Exchange rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exchange_rate",
+      "quote": "exchange rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-currency",
+      "name": "Currency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Currency",
+      "quote": "currency",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's rank the price of a Big Mac in every country, from cheapest to priciest. It doubles as a currency map.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "coin",
+            "globe"
+          ],
+          "lines": [
+            "Big Mac,",
+            "ranked."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Switzerland and Scandinavia top the chart. Much of Asia and the developing world sits far below.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Big Mac price",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Switzerland",
+              "value": "~$8",
+              "note": "priciest",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "USA",
+              "value": "~$5.70",
+              "note": "the benchmark",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "3",
+              "name": "Mid-income",
+              "value": "~$3",
+              "note": "cheaper",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "4",
+              "name": "Low-income",
+              "value": "~$2",
+              "note": "cheapest",
+              "color": "#1f7a3d",
+              "bar": 0.3
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The US price is the benchmark everyone else is compared against.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bigmac",
+          "kicker": "Wikipedia · Big Mac Index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "A low price usually means a weak currency, where your dollar stretches a long way.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "cheap = weak",
+          "label": "currency, usually",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Because the price gap reflects the exchange rate.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-exrate",
+          "kicker": "Wikipedia · exchange rate"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "It's imperfect, local wages and costs skew it, but it's a surprisingly good gut check.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A tasty gut check",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A quick, edible read on any currency's real strength.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-currency",
+          "kicker": "Wikipedia · currency"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The humble burger turns out to be a shockingly honest read on the whole world's money.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "An honest burger",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "A quick, edible gauge of any currency's real strength.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-currency",
+          "kicker": "Wikipedia · currency"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Cheap burger, weak currency; pricey burger, strong one, it's that simple.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Cheap burger, weak money",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So where does your country land on the burger board?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "Where is yours?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

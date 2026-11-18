@@ -1,0 +1,212 @@
+{
+  "id": "SH185",
+  "num": 185,
+  "slug": "what-average-person-owns",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP103",
+  "sourceTitle": "What the Average Person Owns in Gold, Stocks and Cash",
+  "title": "What The Average Person Actually Owns",
+  "hook": "What the average person actually owns.",
+  "question": "How does yours compare?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-wealth",
+      "name": "Wealth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth",
+      "quote": "wealth",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-finasset",
+      "name": "Financial asset (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_asset",
+      "quote": "financial asset",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-allocation",
+      "name": "Asset allocation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Asset_allocation",
+      "quote": "asset allocation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-gold",
+      "name": "Gold as an investment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+      "quote": "gold",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "What does the average person's wealth actually look like, split between cash, stocks, and gold? The answer varies shockingly by country.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "What you",
+            "actually own."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Americans hold a huge share in stocks. Many other countries sit mostly in cash and property.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Where wealth sits",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "US",
+              "value": "~40% stocks",
+              "note": "equity-heavy",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Europe",
+              "value": "mixed",
+              "note": "property + cash",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "Japan",
+              "value": "cash-heavy",
+              "note": "stocks shunned",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "4",
+              "name": "India",
+              "value": "gold-heavy",
+              "note": "tradition",
+              "color": "#17120f",
+              "bar": 0.5
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "How you split your assets is called asset allocation.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-allocation",
+          "kicker": "Wikipedia · asset allocation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The choice matters enormously. Over thirty years, a dollar in stocks beat a dollar in cash eight to one.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$8 vs $1",
+          "label": "stocks vs cash, 30 years",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Stocks are financial assets that tend to grow with the economy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-finasset",
+          "kicker": "Wikipedia · financial asset"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Cash feels safe, but after inflation it quietly shrinks for decades.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Safe cash shrinks",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Real wealth is built by what you own, not what you hold in cash.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wealth",
+          "kicker": "Wikipedia · wealth"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "What you own, far more than what you earn, quietly decides whether your wealth grows.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Own, don't just earn",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Even gold, prized for safety, earns you no income at all.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gold",
+          "kicker": "Wikipedia · gold as an investment"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So how does your own split of cash, stocks, and gold compare?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "How does yours compare?",
+          "sub": "Comment your mix"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

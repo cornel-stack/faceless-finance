@@ -1,0 +1,228 @@
+{
+  "id": "SH187",
+  "num": 187,
+  "slug": "household-debt-by-country",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP104",
+  "sourceTitle": "Every Country Ranked by Household Debt",
+  "title": "Every Country Ranked By Household Debt",
+  "hook": "Every country ranked by household debt.",
+  "question": "Where is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hhdebt",
+      "name": "Household debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_debt",
+      "quote": "household debt",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dti",
+      "name": "Debt-to-income ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt-to-income_ratio",
+      "quote": "debt-to-income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-consumerdebt",
+      "name": "Consumer debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_debt",
+      "quote": "consumer debt",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-debt",
+      "name": "Debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt",
+      "quote": "debt",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Governments get all the debt headlines. But household debt, what families owe, is the number that actually hits home. Let's rank it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "chartDown"
+          ],
+          "lines": [
+            "Household debt,",
+            "ranked."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Measured against income, it ranges from around sixty percent to over two hundred in the most indebted countries.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Household debt ÷ income",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Switzerland",
+              "value": "~200%+",
+              "note": "highest",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Australia / Canada",
+              "value": "very high",
+              "note": "housing-driven",
+              "color": "#17120f",
+              "bar": 0.85
+            },
+            {
+              "rank": "3",
+              "name": "USA",
+              "value": "~75%",
+              "note": "middling now",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "4",
+              "name": "Lower-debt",
+              "value": "~60%",
+              "note": "least leveraged",
+              "color": "#1f7a3d",
+              "bar": 0.4
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Household debt is what families owe on mortgages, cars, and cards.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hhdebt",
+          "kicker": "Wikipedia · household debt"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Total US household debt alone now tops seventeen trillion dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$17T",
+          "label": "total US household debt",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The key measure is debt against income, the debt-to-income ratio.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dti",
+          "kicker": "Wikipedia · debt-to-income"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In the most indebted countries, clearing it would take over two years of total income.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "2+ yrs",
+          "label": "of income to clear it",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Rising consumer debt is often the quiet fuse before a crisis.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-consumerdebt",
+          "kicker": "Wikipedia · consumer debt"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The debt that actually sinks families is the debt they carry, not the government's.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Your debt, not theirs",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "It's every mortgage, car loan, and card balance combined.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-debt",
+          "kicker": "Wikipedia · debt"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Governments grab the headlines, but it's household debt that quietly decides family survival.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Households, not governments",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So where does your country sit on the household-debt board?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Where is yours?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

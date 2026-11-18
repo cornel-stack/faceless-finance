@@ -1,0 +1,200 @@
+{
+  "id": "SH183",
+  "num": 183,
+  "slug": "fastest-growing-cities",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP102",
+  "sourceTitle": "Fastest-Growing US Cities and What They Cost Now",
+  "title": "The Fastest-Growing Cities And What They Now Cost",
+  "hook": "The fastest-growing cities and what they now cost.",
+  "question": "Would you move there?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-boomtown",
+      "name": "Boomtown (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boomtown",
+      "quote": "boomtown",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-migration",
+      "name": "Internal migration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Internal_migration",
+      "quote": "internal migration",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-reecon",
+      "name": "Real estate economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real_estate_economics",
+      "quote": "real estate economics",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-urban",
+      "name": "Urbanization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Urbanization",
+      "quote": "urbanization",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "The fastest-growing US cities exploded with new residents, and their prices exploded right along with them. Let's map it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "chartUp"
+          ],
+          "lines": [
+            "Boom cities.",
+            "Boom prices."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In the hottest boomtowns, home prices surged around sixty percent in just a few years.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "+60%",
+          "label": "home-price surge in boom cities",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A boomtown grows explosively, usually faster than it can build.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-boomtown",
+          "kicker": "Wikipedia · boomtown"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Austin alone added over a million people to its metro in roughly a decade.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "+1M",
+          "label": "added to Austin in ~a decade",
+          "props": [
+            "home",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It's driven by internal migration, people chasing jobs and space.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-migration",
+          "kicker": "Wikipedia · internal migration"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "But demand outran supply, pushing price-to-income in the frothiest cities toward eight times.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "8× income",
+          "label": "in the frothiest boom cities",
+          "props": [
+            "home",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "When people arrive faster than homes, prices only go one way.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-reecon",
+          "kicker": "Wikipedia · real estate economics"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The cheap, fast-growing city of five years ago often isn't cheap anymore.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The window closes",
+          "props": [
+            "home",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The affordable boomtown you heard about is usually no longer affordable by the time you arrive.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "You arrived late",
+          "props": [
+            "home",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "It's urbanization crashing into a limited supply of homes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-urban",
+          "kicker": "Wikipedia · urbanization"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So knowing the new prices, would you still move there?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Would you move there?",
+          "sub": "Comment the city"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

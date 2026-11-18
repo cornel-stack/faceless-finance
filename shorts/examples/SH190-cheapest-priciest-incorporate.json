@@ -1,0 +1,219 @@
+{
+  "id": "SH190",
+  "num": 190,
+  "slug": "cheapest-priciest-incorporate",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP105",
+  "sourceTitle": "The Cost of Starting a Business in Every State",
+  "title": "Cheapest And Most Expensive States To Incorporate",
+  "hook": "Cheapest and most expensive states to incorporate.",
+  "question": "Where did you register?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-incorp",
+      "name": "Incorporation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Incorporation_(business)",
+      "quote": "incorporation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-smallbiz",
+      "name": "Small business (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Small_business",
+      "quote": "small business",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-startup",
+      "name": "Startup company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Startup_company",
+      "quote": "startup company",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sole",
+      "name": "Sole proprietorship (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sole_proprietorship",
+      "quote": "sole proprietorship",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "If you're forming a company, where you register quietly changes the cost and the rules. Let's rank the states.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "building",
+          "props": [
+            "coin",
+            "building"
+          ],
+          "lines": [
+            "Cheapest vs priciest",
+            "to incorporate."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Some states charge almost nothing and ask little. Others pile on franchise taxes and annual fees.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Cost to incorporate",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Cheap states",
+              "value": "~$40/yr",
+              "note": "minimal fees",
+              "color": "#1f7a3d",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "Delaware",
+              "value": "low fee",
+              "note": "business-friendly law",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "3",
+              "name": "California",
+              "value": "$800+/yr",
+              "note": "franchise tax",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Each state sets its own incorporation rules and fees.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-incorp",
+          "kicker": "Wikipedia · incorporation"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Delaware is famous not because it's cheapest, but because its business law is so predictable.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "building",
+          "big": "Delaware",
+          "label": "the law, not the low fee",
+          "props": [
+            "building",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Most venture-backed startups incorporate there for that reason.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-startup",
+          "kicker": "Wikipedia · startup company"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "For a tiny one-person business, though, registering at home is usually simplest and cheapest.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Small? Stay home",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A simple small business rarely needs a fancy out-of-state setup.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-smallbiz",
+          "kicker": "Wikipedia · small business"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Where you register matters far less than simply registering before trouble ever finds you.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Just register",
+          "props": [
+            "building",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "A sole proprietorship leaves you personally exposed.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sole",
+          "kicker": "Wikipedia · sole proprietorship"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The real mistake isn't picking the wrong state, it's staying a vulnerable sole proprietor.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Don't stay exposed",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, where did you actually register yours?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "building",
+          "line": "Where did you register?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

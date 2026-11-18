@@ -1,0 +1,197 @@
+{
+  "id": "SH181",
+  "num": 181,
+  "slug": "big-mac-index-40s",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP101",
+  "sourceTitle": "The Price of a Big Mac in Every Country",
+  "title": "The Big Mac Index, Explained In 40 Seconds",
+  "hook": "The Big Mac index, explained in 40 seconds.",
+  "question": "What does yours cost?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-bigmac",
+      "name": "Big Mac Index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+      "quote": "Big Mac Index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ppp2",
+      "name": "Purchasing power parity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+      "quote": "purchasing power parity",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-loop",
+      "name": "Law of one price (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Law_of_one_price",
+      "quote": "law of one price",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-exrate",
+      "name": "Exchange rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exchange_rate",
+      "quote": "exchange rate",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "One of the cleverest tools in economics is a burger. The Big Mac index, explained fast.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "priceTag",
+          "props": [
+            "coin",
+            "globe"
+          ],
+          "lines": [
+            "The Big Mac",
+            "index."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The idea is simple. The same Big Mac exists worldwide, so comparing its price reveals if a currency is cheap or pricey.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "globe",
+          "kicker": "the idea",
+          "line": "One burger, everywhere",
+          "sub": "a global price yardstick"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The Economist created it back in nineteen eighty-six.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bigmac",
+          "kicker": "Wikipedia · Big Mac Index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The same burger costs around two dollars in the cheapest country and about eight in the priciest.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "priceTag",
+          "big": "$2 vs $8",
+          "label": "same Big Mac, cheapest vs priciest",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "It's a playful version of purchasing power parity.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ppp2",
+          "kicker": "Wikipedia · purchasing power parity"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "If a burger is far cheaper abroad, that currency is probably undervalued against the dollar.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "30–60%",
+          "label": "over- or under-valued vs the dollar",
+          "props": [
+            "chartUp",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It rests on the law of one price, identical goods should cost the same.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-loop",
+          "kicker": "Wikipedia · law of one price"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Even work-time tells a story. A burger costs minutes in a rich country and over an hour in a poor one.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Minutes vs an hour",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "A simple hamburger quietly exposes which currencies are cheap and which are quietly overpriced.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A burger tells all",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Because its price gap mirrors the underlying exchange rate.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-exrate",
+          "kicker": "Wikipedia · exchange rate"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So what does a Big Mac cost where you live?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "priceTag",
+          "line": "What does yours cost?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

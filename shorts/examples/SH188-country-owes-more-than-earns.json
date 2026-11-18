@@ -1,0 +1,197 @@
+{
+  "id": "SH188",
+  "num": 188,
+  "slug": "country-owes-more-than-earns",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP104",
+  "sourceTitle": "Every Country Ranked by Household Debt",
+  "title": "The Country That Owes More Than It Earns",
+  "hook": "The country that owes more than it earns.",
+  "question": "Did you guess right?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hhdebt",
+      "name": "Household debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_debt",
+      "quote": "household debt",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-debt",
+      "name": "Debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt",
+      "quote": "debt",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-deleverage",
+      "name": "Deleveraging (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Deleveraging",
+      "quote": "deleveraging",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-consumerdebt",
+      "name": "Consumer debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_debt",
+      "quote": "consumer debt",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "One country's households owe so much that the debt exceeds more than two full years of their income. Can you guess which?",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Owes more",
+            "than it earns."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "It's not the usual suspects. The most indebted households tend to sit in wealthy, housing-mad countries.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "the surprise",
+          "line": "Rich but leveraged",
+          "sub": "the wealth hides the debt"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "High household debt almost always tracks sky-high home prices.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hhdebt",
+          "kicker": "Wikipedia · household debt"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "At the very top, household debt tops two hundred percent of annual income.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "200%+",
+          "label": "household debt vs income",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "That's two years of every dollar earned, owed before you start.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-debt",
+          "kicker": "Wikipedia · debt"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "It's manageable while rates are low and jobs are safe, and terrifying the moment they're not.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Fine, until it isn't",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Unwinding it, deleveraging, can choke a whole economy for years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deleverage",
+          "kicker": "Wikipedia · deleveraging"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And it was household debt, not government debt, that lit the fuse in two thousand eight.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "2008",
+          "label": "household debt lit the fuse",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The scariest debt isn't a country's. It's the quiet pile sitting inside ordinary homes.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "The quiet pile",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Rising consumer debt is often the fuse before a crash.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-consumerdebt",
+          "kicker": "Wikipedia · consumer debt"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, did you guess the right country?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Did you guess right?",
+          "sub": "Comment your guess"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

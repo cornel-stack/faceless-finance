@@ -1,0 +1,227 @@
+{
+  "id": "SH186",
+  "num": 186,
+  "slug": "asset-ownership-by-country",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP103",
+  "sourceTitle": "What the Average Person Owns in Gold, Stocks and Cash",
+  "title": "Asset Ownership, Country By Country",
+  "hook": "Asset ownership, country by country.",
+  "question": "Which split surprised you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-finasset",
+      "name": "Financial asset (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_asset",
+      "quote": "financial asset",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-gold",
+      "name": "Gold as an investment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+      "quote": "gold",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-diversification",
+      "name": "Diversification (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+      "quote": "diversification",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-wealth",
+      "name": "Wealth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth",
+      "quote": "wealth",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Draw out how each country stores its wealth, and the cultural differences are startling.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "globe"
+          ],
+          "lines": [
+            "Wealth, by",
+            "country."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Americans pile into stocks. The Japanese cling to cash. Indians trust gold above almost everything.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Favoured asset",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "USA",
+              "value": "stocks",
+              "note": "equity culture",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Japan",
+              "value": "cash",
+              "note": "burned by crashes",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "Germany",
+              "value": "property",
+              "note": "and savings",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "4",
+              "name": "India",
+              "value": "gold",
+              "note": "deep tradition",
+              "color": "#17120f",
+              "bar": 0.7
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Each culture favors a different kind of financial asset.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-finasset",
+          "kicker": "Wikipedia · financial asset"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Indian households alone hold an astonishing twenty-five thousand tonnes of gold.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "25,000 t",
+          "label": "gold held by Indian households",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Gold is a store of value, but it earns no income on its own.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gold",
+          "kicker": "Wikipedia · gold as an investment"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "History is blunt, though. Over a century, stocks crushed both cash and gold after inflation.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Stocks won long-term",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The real lesson is diversification, not betting on one asset.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-diversification",
+          "kicker": "Wikipedia · diversification"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Culture, not just cold math, decides where a whole nation parks its savings.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Culture parks the cash",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Real wealth is built by owning assets that compound.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wealth",
+          "kicker": "Wikipedia · wealth"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Stocks, cash, gold, or property, the choice quietly shapes a nation's entire future wealth.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The choice shapes it all",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So which country's wealth split surprised you most?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which surprised you?",
+          "sub": "Comment your country"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
