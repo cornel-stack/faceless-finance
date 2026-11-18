@@ -1,0 +1,132 @@
+{
+  "id": "SH004",
+  "num": 4,
+  "slug": "housing-lock-in",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP012",
+  "sourceTitle": "Why Nobody Can Afford a House Anymore",
+  "title": "The Real Reason Houses Won't Get Cheaper",
+  "hook": "The shortage isn't the main reason prices doubled.",
+  "question": "Would you give up a 3% rate?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "fred-rate",
+      "name": "30-Year Fixed Rate Mortgage Average (FRED)",
+      "url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
+      "quote": "30-Year Fixed Rate Mortgage Average",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-crisis",
+      "name": "Housing crisis in the United States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Housing_crisis_in_the_United_States",
+      "quote": "46% of American renters are cost burdened",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Everyone blames the housing shortage. It's real, but it isn't the whole story.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "house",
+            "house",
+            "x"
+          ],
+          "lines": [
+            "Not just",
+            "a shortage."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "Yes, America is short about three point eight million homes.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "3.8M",
+          "label": "homes short",
+          "props": [
+            "house",
+            "house"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "But millions of owners are locked in — holding three percent mortgages they won't trade for seven.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "lock",
+          "kicker": "the hidden reason",
+          "line": "Mortgage lock-in",
+          "sub": "3% owners won't sell into 7%"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "Look what happened to rates.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "fred-rate",
+          "kicker": "FRED · 30-year mortgage"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "That froze an estimated one point seven million home sales that never hit the market.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "1.7M",
+          "label": "sales that never happened",
+          "props": [
+            "lock",
+            "x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "And nearly half of American renters are now cost burdened.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-crisis",
+          "kicker": "Wikipedia · US housing crisis"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "narration": "Would you give up a three percent rate? Nobody is.",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "Would you give up 3%?",
+          "sub": "That's the real freeze"
+        }
+      ]
+    }
+  ]
+}

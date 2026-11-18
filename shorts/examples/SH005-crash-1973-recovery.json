@@ -1,0 +1,116 @@
+{
+  "id": "SH005",
+  "num": 5,
+  "slug": "crash-1973-recovery",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP013",
+  "sourceTitle": "The 1973 Crash Nobody Remembers",
+  "title": "The Crash That Took 20 Years To Recover",
+  "hook": "The market fell 48% and stayed down for a decade.",
+  "question": "Could you hold for ten years?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-crash73",
+      "name": "1973–1974 stock market crash (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1973%E2%80%931974_stock_market_crash",
+      "quote": "bear market",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "multpl-cape",
+      "name": "Shiller PE Ratio (multpl)",
+      "url": "https://www.multpl.com/shiller-pe",
+      "quote": "Shiller PE",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "In nineteen seventy-three, the market fell forty-eight percent, and stayed down for years.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "fire"
+          ],
+          "lines": [
+            "It fell 48%",
+            "and stayed down."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "Peak to trough, down forty-eight percent. Adjusted for inflation, it took about twenty years to break even.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "S&P 500, 1973 to 1974",
+          "thenLabel": "The drop",
+          "thenValue": "–48%",
+          "nowLabel": "To break even (real)",
+          "nowValue": "~20 yrs",
+          "sub": "after inflation, two decades"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "It was a brutal, grinding bear market.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-crash73",
+          "kicker": "Wikipedia · 1973–74 crash"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "And valuations today? Higher than they were back then.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "multpl-cape",
+          "kicker": "Shiller PE, today"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "History doesn't repeat, but it rhymes.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "It rhymes.",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Could you have held on for ten years? Most couldn't.",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Could you hold 10 years?",
+          "sub": "Most couldn't"
+        }
+      ]
+    }
+  ]
+}

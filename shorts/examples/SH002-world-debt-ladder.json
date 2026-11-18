@@ -1,0 +1,168 @@
+{
+  "id": "SH002",
+  "num": 2,
+  "slug": "world-debt-ladder",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP011",
+  "sourceTitle": "Who The World Actually Owes",
+  "title": "Who Owes The Most? Government Debt, Ranked",
+  "hook": "Government debt, rung by rung: who owes the most.",
+  "question": "Where does your country rank?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "s-40t",
+      "name": "National debt passes $40 trillion (PGPF)",
+      "url": "https://www.pgpf.org/press/peterson-foundation-statement-on-national-debt-passing-40-trillion/",
+      "quote": "doubled the federal debt in less than 10 years",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "s-japan",
+      "name": "Government debt of Japan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Government_debt_of_Japan",
+      "quote": "234.9% of the country's gross domestic product",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "Every government owes money. Here's the ladder, smallest to biggest.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "iou",
+            "coin",
+            "iou"
+          ],
+          "lines": [
+            "Who owes",
+            "the most?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "narration": "France and Britain, a few trillion each. Japan, eleven. China, sixteen. And number one, by a mile, the United States, near forty trillion.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Government debt (approx)",
+          "rows": [
+            {
+              "rank": "5",
+              "name": "France",
+              "value": "$3.4T",
+              "note": "approx",
+              "color": "#5c544c",
+              "bar": 0.09
+            },
+            {
+              "rank": "4",
+              "name": "UK",
+              "value": "$3.7T",
+              "note": "approx",
+              "color": "#5c544c",
+              "bar": 0.1
+            },
+            {
+              "rank": "3",
+              "name": "Japan",
+              "value": "$11T",
+              "note": "approx",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "2",
+              "name": "China",
+              "value": "$16T",
+              "note": "approx",
+              "color": "#17120f",
+              "bar": 0.44
+            },
+            {
+              "rank": "1",
+              "name": "USA",
+              "value": "$40T",
+              "note": "the biggest of all",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "The US just blew past forty trillion dollars.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "$40T",
+          "kicker": "US national debt",
+          "props": [
+            "fire",
+            "coin",
+            "bill"
+          ]
+        },
+        {
+          "block": "evidence",
+          "sourceId": "s-40t",
+          "kicker": "Peterson Foundation"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "narration": "But dollars aren't the whole story. Japan owes about two hundred thirty-five percent of its entire economy.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "flagStack",
+          "country": "jp",
+          "trend": "up",
+          "big": "~235%",
+          "label": "Japan debt-to-GDP",
+          "props": [
+            "chartUp",
+            "chartUp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": "The most of any major economy on Earth.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "s-japan",
+          "kicker": "Wikipedia · Japan debt"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "narration": "Where does your country sit on that ladder?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globeQ",
+          "line": "Where does yours rank?",
+          "sub": "Comment your country"
+        }
+      ]
+    }
+  ]
+}

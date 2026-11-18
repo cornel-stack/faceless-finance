@@ -15,10 +15,24 @@
   },
   "sources": [
     {
+      "id": "s-global",
+      "name": "IMF — Global public debt",
+      "url": "https://www.imf.org/en/Blogs/Articles/2024/10/15/global-public-debt-is-probably-worse-than-it-looks",
+      "quote": "exceed $100 trillion, or about 93 percent of global gross domestic product",
+      "accessed": "2026-11-18"
+    },
+    {
       "id": "s-foreign",
       "name": "National debt of the United States (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
       "quote": "foreigners held 33%",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "s-us",
+      "name": "Who owns the national debt (PGPF)",
+      "url": "https://www.pgpf.org/article/the-federal-government-has-borrowed-trillions-but-who-owns-all-that-debt/",
+      "quote": "Domestic holdings of federal debt have increased notably",
       "accessed": "2026-11-18"
     }
   ],
@@ -43,7 +57,6 @@
         {
           "block": "flash",
           "bg": "ink",
-          "big": "",
           "line": "$100T+",
           "kicker": "global government debt",
           "props": [
@@ -57,7 +70,18 @@
     },
     {
       "id": "s2",
-      "narration": "But almost nobody stops to ask who's actually holding it.",
+      "narration": "The IMF puts the global pile north of a hundred trillion dollars.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "s-global",
+          "kicker": "IMF"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": "But almost nobody asks who is actually holding all that debt.",
       "shots": [
         {
           "block": "hook",
@@ -75,7 +99,7 @@
       ]
     },
     {
-      "id": "s3",
+      "id": "s4",
       "narration": "You probably pictured China, bankrolling America across the ocean.",
       "shots": [
         {
@@ -94,8 +118,8 @@
       ]
     },
     {
-      "id": "s4",
-      "narration": "And China does lend to the US. But here's the twist.",
+      "id": "s5",
+      "narration": "China does lend to the US — but here's the twist.",
       "shots": [
         {
           "block": "center",
@@ -113,7 +137,7 @@
       ]
     },
     {
-      "id": "s5",
+      "id": "s6",
       "narration": "Most government debt isn't owed abroad at all.",
       "shots": [
         {
@@ -128,19 +152,19 @@
       ]
     },
     {
-      "id": "s5b",
-      "narration": "Look it up — foreigners hold only about a third of it.",
+      "id": "s7",
+      "narration": "On the record — foreigners hold only about a third of it.",
       "shots": [
         {
           "block": "evidence",
           "sourceId": "s-foreign",
-          "kicker": "The receipts"
+          "kicker": "Wikipedia · U.S. national debt"
         }
       ]
     },
     {
-      "id": "s6",
-      "narration": "It's owed at home — to a country's own banks, its own pensions, its own central bank.",
+      "id": "s8",
+      "narration": "It's owed at home — to a country's own banks, pensions, and central bank.",
       "shots": [
         {
           "block": "hook",
@@ -156,18 +180,9 @@
         },
         {
           "block": "center",
-          "line": "Its own banks",
+          "line": "Own banks & pensions",
           "props": [
             "bank",
-            "bank",
-            "coin"
-          ]
-        },
-        {
-          "block": "center",
-          "line": "Its own pensions",
-          "props": [
-            "piggy",
             "piggy",
             "coin"
           ]
@@ -175,8 +190,19 @@
       ]
     },
     {
-      "id": "s7",
-      "narration": "Even the biggest foreign lender to America isn't China.",
+      "id": "s9",
+      "narration": "Domestic holders now own the bulk of it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "s-us",
+          "kicker": "Peterson Foundation"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "narration": "Even the biggest foreign lender isn't China — it's Japan.",
       "shots": [
         {
           "block": "center",
@@ -187,13 +213,7 @@
           "props": [
             "x"
           ]
-        }
-      ]
-    },
-    {
-      "id": "s8",
-      "narration": "It's Japan — about one point one trillion dollars.",
-      "shots": [
+        },
         {
           "block": "flash",
           "bg": "cream",
@@ -201,7 +221,13 @@
           "props": [
             "check"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "narration": "Japan holds about one point one trillion dollars.",
+      "shots": [
         {
           "block": "stat",
           "art": "flagStack",
@@ -220,7 +246,7 @@
       ]
     },
     {
-      "id": "s9",
+      "id": "s12",
       "narration": "China sits under a trillion, and it's been selling for years.",
       "shots": [
         {
@@ -238,8 +264,8 @@
       ]
     },
     {
-      "id": "s10",
-      "narration": "But the single biggest holder of all? America's own Federal Reserve.",
+      "id": "s13",
+      "narration": "But the single biggest holder of all is America's own Federal Reserve — over five trillion.",
       "shots": [
         {
           "block": "flash",
@@ -249,22 +275,6 @@
             "question"
           ]
         },
-        {
-          "block": "center",
-          "art": "bank",
-          "line": "The Fed",
-          "props": [
-            "bill",
-            "bill",
-            "coin"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "s11",
-      "narration": "Over five trillion dollars — the bank that prints the money, lending it right back.",
-      "shots": [
         {
           "block": "stat",
           "art": "bank",
@@ -277,21 +287,11 @@
             "bill",
             "bill"
           ]
-        },
-        {
-          "block": "center",
-          "art": "bank",
-          "line": "Printed. Lent back.",
-          "props": [
-            "loop",
-            "loop",
-            "coin"
-          ]
         }
       ]
     },
     {
-      "id": "s12",
+      "id": "s14",
       "narration": "So — did you assume it was China?",
       "shots": [
         {
