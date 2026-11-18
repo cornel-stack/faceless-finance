@@ -1,0 +1,228 @@
+{
+  "id": "SH102",
+  "num": 102,
+  "slug": "states-ranked-col",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP061",
+  "sourceTitle": "Cost of Living at Every Level",
+  "title": "Every US State Ranked By Cost Of Living",
+  "hook": "Every US state ranked by cost of living.",
+  "question": "Surprised by yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-colindex",
+      "name": "Cost-of-living index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost-of-living_index",
+      "quote": "cost-of-living index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-statetax",
+      "name": "State income tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_income_tax",
+      "quote": "state income tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-household",
+      "name": "Household income in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_income_in_the_United_States",
+      "quote": "household income",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's rank every US state by cost of living, from the brutally expensive to the surprisingly cheap.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "Every state,",
+            "ranked."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At the top sit Hawaii, California, and the Northeast. At the bottom, much of the South and Midwest.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Cost-of-living index",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Hawaii",
+              "value": "~190",
+              "note": "priciest",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "California",
+              "value": "~140",
+              "note": "expensive",
+              "color": "#17120f",
+              "bar": 0.75
+            },
+            {
+              "rank": "3",
+              "name": "US average",
+              "value": "100",
+              "note": "the baseline",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "4",
+              "name": "Mississippi",
+              "value": "~85",
+              "note": "cheapest",
+              "color": "#1f7a3d",
+              "bar": 0.45
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Each state is scored against the national average of a hundred.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-colindex",
+          "kicker": "Wikipedia · cost-of-living index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Housing is the biggest driver, but taxes quietly swing the ranking too.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "taxes",
+          "big2": null,
+          "label": "swing the ranking",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Some states charge no income tax at all, others take a big bite.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-statetax",
+          "kicker": "Wikipedia · state income tax"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The gap is huge. The priciest states can cost well over double the cheapest.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "2×+ gap",
+          "props": [
+            "chartUp",
+            "home"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "All of it feeds into the overall cost of living.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The lesson is blunt. Your zip code can matter almost as much as your salary.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Zip code = salary",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The same income simply goes much further in some states.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-household",
+          "kicker": "Wikipedia · household income"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And a no-income-tax state can quietly widen that gap even further.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "No-tax bonus",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, are you surprised by where your state actually landed?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Surprised by yours?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

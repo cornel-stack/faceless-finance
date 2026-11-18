@@ -1,0 +1,212 @@
+{
+  "id": "SH103",
+  "num": 103,
+  "slug": "rich-levels-numbers",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP062",
+  "sourceTitle": "Every Level of Rich",
+  "title": "Comfortable, Wealthy, Rich, Ultra-Rich — The Actual Numbers",
+  "hook": "Comfortable, wealthy, rich, ultra-rich. The actual numbers.",
+  "question": "Which word fits you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-hnwi",
+      "name": "High-net-worth individual (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/High-net-worth_individual",
+      "quote": "high-net-worth individual",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-billionaire",
+      "name": "Billionaire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Billionaire",
+      "quote": "billionaire",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-wealth",
+      "name": "Wealth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wealth",
+      "quote": "wealth",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-family",
+      "name": "Family office (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Family_office",
+      "quote": "family office",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "We throw around words like wealthy and rich as if they mean the same thing. They don't. Here are the actual numbers.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "Comfortable to",
+            "ultra-rich."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Comfortable is a few hundred thousand. Wealthy is a million-plus. Rich is tens of millions. Ultra is nine figures and up.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Levels of rich",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Comfortable",
+              "value": "~$500K",
+              "note": "secure",
+              "color": "#5c544c",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "Wealthy",
+              "value": "$1M+",
+              "note": "high net worth",
+              "color": "#17120f",
+              "bar": 0.4
+            },
+            {
+              "rank": "3",
+              "name": "Rich",
+              "value": "$10M+",
+              "note": "top ~1%",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "Ultra-rich",
+              "value": "$100M+",
+              "note": "a different planet",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Above a million investable, banks call you a high-net-worth individual.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-hnwi",
+          "kicker": "Wikipedia · high-net-worth individual"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The jump to billionaire is the one people can't picture. A billionaire is a thousand millionaires.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "1,000×",
+          "label": "a billionaire = 1,000 millionaires",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "There are only around two thousand seven hundred billionaires on Earth.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-billionaire",
+          "kicker": "Wikipedia · billionaire"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Against more than twenty million US millionaires, that scarcity shows how far the top really sits.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A tiny club",
+          "props": [
+            "coin",
+            "lock"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Wealth is the total value of what you own, minus what you owe.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wealth",
+          "kicker": "Wikipedia · wealth"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The gap between a millionaire and a billionaire is almost impossible to truly picture.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "1M vs 1B",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "At the very top, a private family office runs the money.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-family",
+          "kicker": "Wikipedia · family office"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, out of those words, which one honestly fits you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which word fits?",
+          "sub": "Comment your level"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

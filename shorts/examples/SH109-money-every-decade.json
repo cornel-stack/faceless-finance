@@ -1,0 +1,227 @@
+{
+  "id": "SH109",
+  "num": 109,
+  "slug": "money-every-decade",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP065",
+  "sourceTitle": "How the Average American's Money Changes",
+  "title": "The Average Person's Money, 20s Through 70s",
+  "hook": "The average person's money, 20s through 70s.",
+  "question": "Which decade are you in?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-scf",
+      "name": "Survey of Consumer Finances (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survey_of_Consumer_Finances",
+      "quote": "Survey of Consumer Finances",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lifecycle",
+      "name": "Life-cycle hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Life-cycle_hypothesis",
+      "quote": "life-cycle hypothesis",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-networth",
+      "name": "Net worth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Net_worth",
+      "quote": "net worth",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-retirement",
+      "name": "Retirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement",
+      "quote": "retirement",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Here's how the average person's net worth moves, decade by decade, from your twenties all the way to your seventies.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Your money,",
+            "by decade."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "It starts near zero, often negative, then climbs slowly, then accelerates into midlife.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Median net worth by decade",
+          "rows": [
+            {
+              "rank": "20s",
+              "name": "20s",
+              "value": "~$0",
+              "note": "often negative",
+              "color": "#5c544c",
+              "bar": 0.05
+            },
+            {
+              "rank": "40s",
+              "name": "40s",
+              "value": "~$135K",
+              "note": "building",
+              "color": "#17120f",
+              "bar": 0.35
+            },
+            {
+              "rank": "60s",
+              "name": "60s",
+              "value": "~$365K",
+              "note": "near peak",
+              "color": "#17120f",
+              "bar": 0.9
+            },
+            {
+              "rank": "70s",
+              "name": "65–74",
+              "value": "~$410K",
+              "note": "the peak",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "These medians come from the Federal Reserve's household survey.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-scf",
+          "kicker": "Wikipedia · Survey of Consumer Finances"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Net worth usually peaks in the late sixties and early seventies, then slowly draws down.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "$410K",
+          "label": "peak median, age 65–74",
+          "props": [
+            "chartUp",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "That rise-then-fall is the life-cycle hypothesis of saving.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lifecycle",
+          "kicker": "Wikipedia · life-cycle hypothesis"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The cruel twist is that a smaller amount saved young beats a bigger one saved late.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Young & small wins",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Net worth is everything you own minus everything you owe.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-networth",
+          "kicker": "Wikipedia · net worth"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Start early and the curve bends in your favor. Start late and it fights you the whole way.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Early bends it",
+          "props": [
+            "chartUp",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "It's the entire arc that funds your eventual retirement.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-retirement",
+          "kicker": "Wikipedia · retirement"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The twenties are worth the most, precisely because they feel like they matter least.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "20s matter most",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So which decade of that curve are you living in right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which decade?",
+          "sub": "Comment yours"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

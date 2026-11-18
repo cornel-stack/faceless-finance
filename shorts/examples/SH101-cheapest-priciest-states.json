@@ -1,0 +1,167 @@
+{
+  "id": "SH101",
+  "num": 101,
+  "slug": "cheapest-priciest-states",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP061",
+  "sourceTitle": "Cost of Living at Every Level",
+  "title": "The Cheapest And Most Expensive States To Live In",
+  "hook": "The cheapest and most expensive states to live in.",
+  "question": "Where does yours rank?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-colindex",
+      "name": "Cost-of-living index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost-of-living_index",
+      "quote": "cost-of-living index",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-pp",
+      "name": "Purchasing power (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power",
+      "quote": "purchasing power",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Where you live can quietly double or halve the value of your paycheck. Here are the cheapest and priciest US states.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "Cheapest vs",
+            "priciest states."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "On a scale where a hundred is average, Hawaii sits near a hundred ninety. Mississippi sits near eighty-five.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "190 vs 85",
+          "label": "Hawaii vs Mississippi",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "A cost-of-living index measures prices against a national average of a hundred.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-colindex",
+          "kicker": "Wikipedia · cost-of-living index"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "That means the same hundred dollars stretches completely differently depending on the state line.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$116 vs $87",
+          "label": "what $100 buys: MS vs CA",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Purchasing power is what your money can actually buy, not its face value.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-pp",
+          "kicker": "Wikipedia · purchasing power"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In the priciest metros, homes can cost ten times the local annual income.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "10×",
+          "label": "home price vs income, priciest metros",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "So a smaller salary in a cheap state can leave you better off than a big one in an expensive city.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Small salary can win",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Cost of living is what it takes to maintain a given standard of living.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "So where does your state rank, nearer Hawaii or nearer Mississippi?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Where does yours rank?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s9"
+    }
+  ]
+}

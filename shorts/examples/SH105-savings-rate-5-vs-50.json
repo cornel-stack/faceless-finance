@@ -1,0 +1,210 @@
+{
+  "id": "SH105",
+  "num": 105,
+  "slug": "savings-rate-5-vs-50",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP063",
+  "sourceTitle": "Your Retirement at Every Savings Rate",
+  "title": "Saving 5% Against 50% — The Retirement Dates",
+  "hook": "Saving 5% against 50%. The retirement dates.",
+  "question": "What is your rate?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-fire",
+      "name": "FIRE movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FIRE_movement",
+      "quote": "financial independence, retire early",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fi",
+      "name": "Financial independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_independence",
+      "quote": "financial independence",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-saving",
+      "name": "Saving (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saving",
+      "quote": "income not spent",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Your savings rate, more than your salary, decides when you can retire. Watch the dates move as it climbs.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "5% vs 50%.",
+            "When you retire."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Save five percent, and you're working more than fifty years. Save fifty percent, and you're done in about seventeen.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Years to retire",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Save 5%",
+              "value": "~50 yrs",
+              "note": "a full career-plus",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Save 15%",
+              "value": "~43 yrs",
+              "note": "the standard advice",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "Save 30%",
+              "value": "~28 yrs",
+              "note": "aggressive",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "4",
+              "name": "Save 50%",
+              "value": "~17 yrs",
+              "note": "freedom fast",
+              "color": "#1f7a3d",
+              "bar": 0.35
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Pushing the savings rate high is the core of the FIRE movement.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fire",
+          "kicker": "Wikipedia · FIRE movement"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The reason is double. You invest far more, and you need far less to live on.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "why it's so powerful",
+          "line": "Two levers at once",
+          "sub": "save more, need less"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "You hit financial independence when savings cover your spending.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fi",
+          "kicker": "Wikipedia · financial independence"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Live on just twenty-five thousand a year, and your freedom number is only about six hundred twenty-five thousand.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$625K",
+          "label": "freedom on a $25K lifestyle",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It all comes down to the share of income you don't spend.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-saving",
+          "kicker": "Wikipedia · saving"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Your salary gets you in the door, but your savings rate decides when you get to leave.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Rate sets the date",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Compounding quietly does the rest of the heavy lifting.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, what is your savings rate right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "What's your rate?",
+          "sub": "Comment the percent"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}
