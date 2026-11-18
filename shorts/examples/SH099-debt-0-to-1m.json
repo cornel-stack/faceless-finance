@@ -1,0 +1,224 @@
+{
+  "id": "SH099",
+  "num": 99,
+  "slug": "debt-0-to-1m",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP060",
+  "sourceTitle": "Every Level of Debt",
+  "title": "$0 To $1 Million Owed, And What Each Level Feels Like",
+  "hook": "$0 to $1 million owed, and what each level feels like.",
+  "question": "Which rung are you on?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-debt",
+      "name": "Debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt",
+      "quote": "debt",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dti",
+      "name": "Debt-to-income ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt-to-income_ratio",
+      "quote": "debt-to-income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-default",
+      "name": "Default (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Default_(finance)",
+      "quote": "default",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-student",
+      "name": "Student loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_loan",
+      "quote": "student loan",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's climb the ladder of debt, from zero all the way to a million owed, and what each level actually feels like.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "lock",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "$0 to $1M",
+            "owed."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "A little debt is a tool. A lot of it quietly becomes the thing that owns you.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Levels of debt",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$0–10K",
+              "value": "manageable",
+              "note": "a tool",
+              "color": "#1f7a3d",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "$50K",
+              "value": "heavy",
+              "note": "student / car",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "3",
+              "name": "$250K",
+              "value": "a mortgage",
+              "note": "decades of it",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "$1M",
+              "value": "it owns you",
+              "note": "every choice bends to it",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Debt is simply borrowed money you owe back, with interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-debt",
+          "kicker": "Wikipedia · debt"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "What matters isn't the number alone. It's how it compares to your income.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "lock",
+          "kicker": "the real metric",
+          "line": "Debt vs income",
+          "sub": "the ratio is everything"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Lenders watch your debt-to-income ratio closely.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dti",
+          "kicker": "Wikipedia · debt-to-income"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Cross a certain line, and the payments outrun your ability to ever clear them.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "The point of no return",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Past that, default, failing to repay, becomes the only exit.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-default",
+          "kicker": "Wikipedia · default"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The real danger isn't owing money, it's owing it at a rate you can't outrun.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Rate you can't outrun",
+          "props": [
+            "lock",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Student loans alone trap millions in exactly this way.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-student",
+          "kicker": "Wikipedia · student loan"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Used carefully it builds your life, but used carelessly it quietly runs it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Tool or trap",
+          "props": [
+            "lock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So honestly, which rung of that ladder are you standing on?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "Which rung are you on?",
+          "sub": "Comment your level"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

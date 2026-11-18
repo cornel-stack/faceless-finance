@@ -1,0 +1,197 @@
+{
+  "id": "SH100",
+  "num": 100,
+  "slug": "debt-most-never-escape",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP060",
+  "sourceTitle": "Every Level of Debt",
+  "title": "The Debt Level Most People Never Escape",
+  "hook": "The debt level most people never escape.",
+  "question": "Have you passed it?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-cc",
+      "name": "Credit card interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+      "quote": "credit card interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-payday",
+      "name": "Payday loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Payday_loan",
+      "quote": "payday loan",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-usury",
+      "name": "Usury (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Usury",
+      "quote": "usury",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-apr",
+      "name": "Annual percentage rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_rate",
+      "quote": "annual percentage rate",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Some debt you pay off. But there's one level of debt that quietly traps people for life. Here it is.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "lock",
+          "props": [
+            "x",
+            "fire"
+          ],
+          "lines": [
+            "The debt you",
+            "never escape."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "It's not the size that traps you. It's the interest rate attached to it.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "lock",
+          "kicker": "the trap",
+          "line": "It's the rate",
+          "sub": "not the amount"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Credit card interest compounds relentlessly against any balance you carry.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-cc",
+          "kicker": "Wikipedia · credit card interest"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Pay only the minimum on a five thousand dollar card, and you can owe nearly six thousand in interest alone.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "$5,800",
+          "label": "interest on a $5K card, minimums only",
+          "props": [
+            "fire",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A payday loan is far worse, with rates that can reach four hundred percent a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "400%",
+          "label": "payday APR, vs ~7% a mortgage",
+          "props": [
+            "fire",
+            "x"
+          ]
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Payday loans are defined by punishingly high interest.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-payday",
+          "kicker": "Wikipedia · payday loan"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "At those rates, the balance can grow faster than almost anyone can pay it down.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "It grows faster",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Charging rates this extreme once had a blunt name, usury.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-usury",
+          "kicker": "Wikipedia · usury"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The cruel twist is this trap hits hardest the people with the very least.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Hits the poorest",
+          "props": [
+            "x",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The APR is how fast that balance quietly runs away from you.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-apr",
+          "kicker": "Wikipedia · APR"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So that high-interest trap, have you ever passed into it?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "Have you passed it?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

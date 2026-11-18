@@ -1,0 +1,196 @@
+{
+  "id": "SH093",
+  "num": 93,
+  "slug": "1000-since-1950",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP057",
+  "sourceTitle": "What $1,000 Invested in 1950 Is Worth Today",
+  "title": "$1,000 In 1950, Left Completely Alone",
+  "hook": "$1,000 in 1950, left completely alone.",
+  "question": "Would you have held?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-sp500",
+      "name": "S&P 500 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/S%26P_500",
+      "quote": "S&P 500",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dividend",
+      "name": "Dividend (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dividend",
+      "quote": "dividend",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tsr",
+      "name": "Total shareholder return (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Total_shareholder_return",
+      "quote": "total shareholder return",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-blackmonday",
+      "name": "Black Monday 1987 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Black_Monday_(1987)",
+      "quote": "Black Monday",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take one thousand dollars, invest it in the US stock market in nineteen fifty, and then never touch it again.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "$1,000 in 1950.",
+            "Untouched."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "No trading, no timing, no panic selling. Just reinvest the dividends and wait seven decades.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "the only rule",
+          "line": "Do nothing",
+          "sub": "reinvest and wait"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Invested across the broad S&P 500 index.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sp500",
+          "kicker": "Wikipedia · S&P 500"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "With dividends reinvested the whole way, that thousand dollars becomes around three million.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "$1,000 → today",
+          "thenLabel": "1950",
+          "thenValue": "$1,000",
+          "nowLabel": "Today",
+          "nowValue": "~$3M",
+          "sub": "dividends reinvested"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A huge chunk of that comes from reinvested dividends.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dividend",
+          "kicker": "Wikipedia · dividend"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Dividends, quietly compounding for seventy years, do a staggering amount of the work.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "~$3M",
+          "label": "from $1,000",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Price gains plus dividends together make up total shareholder return.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tsr",
+          "kicker": "Wikipedia · total shareholder return"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The hard part was never the math. It was holding on through every crash along the way.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Just hold on",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The entire strategy was really just one thing, refusing to panic for seventy straight years.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Don't panic",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Including surviving a single day that fell over twenty percent.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-blackmonday",
+          "kicker": "Wikipedia · Black Monday"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So be honest, would you really have held for seventy years?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Would you have held?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

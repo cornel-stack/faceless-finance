@@ -1,0 +1,200 @@
+{
+  "id": "SH097",
+  "num": 97,
+  "slug": "house-your-salary-supports",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP059",
+  "sourceTitle": "How Much House You Can Afford",
+  "title": "The House Price Your Salary Actually Supports",
+  "hook": "The house price your salary actually supports.",
+  "question": "Does yours match?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-dti",
+      "name": "Debt-to-income ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt-to-income_ratio",
+      "quote": "debt-to-income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mortgage",
+      "name": "Mortgage loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mortgage_loan",
+      "quote": "mortgage",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-amort",
+      "name": "Amortization schedule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amortization_schedule",
+      "quote": "amortization",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-downpayment",
+      "name": "Down payment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Down_payment",
+      "quote": "down payment",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Forget what the bank says you can borrow. Here's the house price your salary can actually, safely support.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "The house your",
+            "salary supports."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The classic rule is that a home should cost roughly three times your gross annual income.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~3×",
+          "label": "income to home price",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Lenders judge you on your debt-to-income ratio.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dti",
+          "kicker": "Wikipedia · debt-to-income"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "So a sixty thousand dollar salary safely supports a house around two hundred thousand, not far more.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$205K",
+          "label": "the house a $60K salary affords",
+          "props": [
+            "home",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A mortgage stretches that price over decades of monthly payments.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mortgage",
+          "kicker": "Wikipedia · mortgage loan"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Push past that, and the monthly payment quietly eats your whole life.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "It eats your life",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "The amortization schedule shows how little early payments touch the balance.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-amort",
+          "kicker": "Wikipedia · amortization"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The market, though, often prices homes at five to six times income, which is the real squeeze.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "5–6×",
+          "label": "what the market actually charges",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Borrow right up to the bank's limit, and the house quietly starts owning you.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "It owns you",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "A larger down payment is the simplest way to stay safely under it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-downpayment",
+          "kicker": "Wikipedia · down payment"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So does the house you want actually match the salary you have?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Does yours match?",
+          "sub": "Comment your ratio"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

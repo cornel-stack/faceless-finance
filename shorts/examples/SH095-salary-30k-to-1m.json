@@ -1,0 +1,225 @@
+{
+  "id": "SH095",
+  "num": 95,
+  "slug": "salary-30k-to-1m",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP058",
+  "sourceTitle": "Every Level of Salary",
+  "title": "$30K To $1M, And What Each One Actually Buys",
+  "hook": "$30K to $1M, and what each one actually buys.",
+  "question": "Which is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-bracket",
+      "name": "Tax bracket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_bracket",
+      "quote": "tax bracket",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-household",
+      "name": "Household income in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_income_in_the_United_States",
+      "quote": "household income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-median",
+      "name": "Median (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median",
+      "quote": "the middle value",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's climb the salary ladder from thirty thousand dollars to a million, and see what each level actually buys.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "$30K to $1M.",
+            "What it buys."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At thirty thousand, almost every dollar goes to survival, rent, food, transport.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Salary → life",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$30K",
+              "value": "survive",
+              "note": "needs only",
+              "color": "#c0392b",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "$75K",
+              "value": "stable",
+              "note": "near median",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "3",
+              "name": "$150K",
+              "value": "comfortable",
+              "note": "real choices",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "4",
+              "name": "$1M",
+              "value": "different world",
+              "note": "wealth builds fast",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Median US household income sits right around that stable middle band.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-household",
+          "kicker": "Wikipedia · household income"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "But the sticker salary lies, because taxes take a bigger bite as you climb.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "home",
+          "kicker": "the catch",
+          "line": "Taxes scale up",
+          "sub": "the headline isn't take-home"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A progressive tax system taxes higher income at higher rates.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bracket",
+          "kicker": "Wikipedia · tax bracket"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "On a hundred thousand dollar salary, the real take-home is closer to seventy-five thousand.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$75K",
+          "label": "take-home on a $100K salary",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And cost of living can quietly erase the gains of a bigger number.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The bigger the salary, the bigger the gap between the headline and the take-home.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Headline vs reality",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The median worker sits far below the eye-catching top numbers.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-median",
+          "kicker": "Wikipedia · median"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "A six-figure paycheck can still leave you feeling surprisingly ordinary.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Six figures, ordinary",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So on that ladder, which salary level is actually yours?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Which is yours?",
+          "sub": "Comment your band"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

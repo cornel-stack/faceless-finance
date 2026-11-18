@@ -1,0 +1,197 @@
+{
+  "id": "SH096",
+  "num": 96,
+  "slug": "salary-plateau",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP058",
+  "sourceTitle": "Every Level of Salary",
+  "title": "The Salary Where Life Stops Changing",
+  "hook": "The salary where life stops changing.",
+  "question": "Have you hit it?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-easterlin",
+      "name": "Easterlin paradox (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Easterlin_paradox",
+      "quote": "Easterlin paradox",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-disposable",
+      "name": "Disposable income (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Disposable_and_discretionary_income",
+      "quote": "disposable",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-household",
+      "name": "Household income in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Household_income_in_the_United_States",
+      "quote": "household income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "There's a salary level where more money quietly stops changing your day-to-day life. Researchers have tried to pin it down.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "The salary where",
+            "life plateaus."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Below it, every extra dollar genuinely improves things, less stress, more security, better food.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "below it",
+          "label": "every dollar helps a lot",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "It's really about disposable income, what's left after the essentials.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-disposable",
+          "kicker": "Wikipedia · disposable income"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Above it, the daily experience of life barely moves. You just accumulate more.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "home",
+          "kicker": "the plateau",
+          "line": "Life stops changing",
+          "sub": "you mostly just store it"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The Easterlin paradox finds rising income doesn't keep raising happiness.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-easterlin",
+          "kicker": "Wikipedia · Easterlin paradox"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Studies often put that comfort plateau somewhere around six figures, depending on where you live.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "~6 figures",
+          "label": "where life stops changing",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It sits well above the typical US household income.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-household",
+          "kicker": "Wikipedia · household income"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Past that point, more salary mostly buys status and savings, not a better daily life.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Status, not joy",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Chasing an ever-bigger number past that point mostly buys you stress and far longer hours.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "More = stress",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And a higher cost of living can quietly erase the extra pay.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, do you think you've hit that plateau yet?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Have you hit it?",
+          "sub": "Comment your take"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

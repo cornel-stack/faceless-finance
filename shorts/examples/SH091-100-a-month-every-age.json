@@ -1,0 +1,228 @@
+{
+  "id": "SH091",
+  "num": 91,
+  "slug": "100-a-month-every-age",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP056",
+  "sourceTitle": "What Happens If You Invest $100 a Month",
+  "title": "$100 A Month, Started At 20, 30, 40 And 50",
+  "hook": "$100 a month, started at 20, 30, 40 and 50.",
+  "question": "When did you start?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sp500",
+      "name": "S&P 500 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/S%26P_500",
+      "quote": "S&P 500",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dca",
+      "name": "Dollar cost averaging (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+      "quote": "dollar cost averaging",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-timevalue",
+      "name": "Time value of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Time_value_of_money",
+      "quote": "time value of money",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Invest the exact same hundred dollars a month, but start at four different ages. The final results are almost unfair.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "$100 a month.",
+            "4 start ages."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Start at twenty, and by sixty-five you could be sitting on well over half a million dollars.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "$100/mo until 65",
+          "rows": [
+            {
+              "rank": "20",
+              "name": "Start at 20",
+              "value": "~$560K",
+              "note": "time did the work",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            },
+            {
+              "rank": "30",
+              "name": "Start at 30",
+              "value": "~$230K",
+              "note": "still huge",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "40",
+              "name": "Start at 40",
+              "value": "~$95K",
+              "note": "shrinking fast",
+              "color": "#17120f",
+              "bar": 0.2
+            },
+            {
+              "rank": "50",
+              "name": "Start at 50",
+              "value": "~$35K",
+              "note": "too little time",
+              "color": "#c0392b",
+              "bar": 0.08
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Compound interest means the early money has the most time to multiply.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Notice the brutal part. Starting twenty years later doesn't cut your result in half. It guts it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Late = gutted",
+          "props": [
+            "chartDown",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Over forty years, you'd only pay in about forty-eight thousand dollars of your own money.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$48K in",
+          "label": "becomes many times more",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "These numbers assume long-run S&P 500-style returns.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sp500",
+          "kicker": "Wikipedia · S&P 500"
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Even twenty-five dollars a month, started at twenty-five, can grow to around ninety thousand.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "$90K",
+          "label": "from just $25/month",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Steadily drip-feeding money in is dollar cost averaging.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dca",
+          "kicker": "Wikipedia · dollar cost averaging"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Time, not talent, is the single most valuable asset you have in all of investing.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Time > talent",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "A dollar today is worth more than a dollar decades from now.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-timevalue",
+          "kicker": "Wikipedia · time value of money"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So the real question isn't how much. It's when did you start?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "When did you start?",
+          "sub": "Comment your age"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

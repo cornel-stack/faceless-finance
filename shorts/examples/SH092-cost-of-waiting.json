@@ -1,0 +1,199 @@
+{
+  "id": "SH092",
+  "num": 92,
+  "slug": "cost-of-waiting",
+  "series": "Napkin Numbers Shorts",
+  "format": "Then vs now",
+  "sourceEp": "EP056",
+  "sourceTitle": "What Happens If You Invest $100 a Month",
+  "title": "The Cost Of Waiting Ten Years To Start",
+  "hook": "The cost of waiting ten years to start.",
+  "question": "How long have you waited?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-timevalue",
+      "name": "Time value of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Time_value_of_money",
+      "quote": "time value of money",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-opportunity",
+      "name": "Opportunity cost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+      "quote": "opportunity cost",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sp500",
+      "name": "S&P 500 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/S%26P_500",
+      "quote": "S&P 500",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Waiting just ten years to start investing feels harmless. The actual price tag on that delay is shocking.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Waiting 10 years",
+            "costs you..."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Picture the same monthly amount, same return, with one person simply starting a decade earlier.",
+      "shots": [
+        {
+          "block": "thennow",
+          "kicker": "Same money, 10 years apart",
+          "thenLabel": "Start at 25",
+          "nowLabel": "Start at 35",
+          "thenValue": "much more",
+          "nowValue": "far less",
+          "sub": "one decade changes everything"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "That gap is the time value of money, a dollar today beats a dollar later.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-timevalue",
+          "kicker": "Wikipedia · time value of money"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The one who started at twenty-five can end up with two to three times as much.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "2–3×",
+          "label": "more, just from starting early",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Because compounding rewards the extra years far more than extra dollars.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "To catch up after waiting, the late starter has to invest several times as much each month.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "4×",
+          "label": "the catch-up cost of waiting",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Every year you delay quietly hands away growth you can never get back.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Growth you can't reclaim",
+          "props": [
+            "chartDown",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "That lost growth is a pure opportunity cost.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-opportunity",
+          "kicker": "Wikipedia · opportunity cost"
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Procrastination is quietly the single most expensive habit in all of personal finance.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Delay = expensive",
+          "props": [
+            "clock",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Assuming steady long-run S&P 500 returns the whole way.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sp500",
+          "kicker": "Wikipedia · S&P 500"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, honestly, how long have you been waiting to start?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "How long have you waited?",
+          "sub": "Comment the years"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

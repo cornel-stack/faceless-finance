@@ -1,0 +1,212 @@
+{
+  "id": "SH094",
+  "num": 94,
+  "slug": "1000-the-ride",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP057",
+  "sourceTitle": "What $1,000 Invested in 1950 Is Worth Today",
+  "title": "The Ride That $1,000 Actually Took",
+  "hook": "The ride that $1,000 actually took.",
+  "question": "Which dip would have broken you?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-blackmonday",
+      "name": "Black Monday 1987 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Black_Monday_(1987)",
+      "quote": "Black Monday",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-recession",
+      "name": "Great Recession (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Recession",
+      "quote": "Great Recession",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-dotcom",
+      "name": "Dot-com bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+      "quote": "dot-com bubble",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sp500",
+      "name": "S&P 500 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/S%26P_500",
+      "quote": "S&P 500",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "That thousand dollars that grew to millions didn't rise in a straight line. It survived some terrifying drops.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartDown",
+            "fire"
+          ],
+          "lines": [
+            "The ride",
+            "it took."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Along the way it lived through crash after crash, each one tempting you to sell at the bottom.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Drops it survived",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "1987 Black Monday",
+              "value": "–22%",
+              "note": "in one day",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "2000 Dot-com",
+              "value": "–49%",
+              "note": "tech bust",
+              "color": "#17120f",
+              "bar": 0.75
+            },
+            {
+              "rank": "3",
+              "name": "2008 crisis",
+              "value": "–57%",
+              "note": "the deepest",
+              "color": "#17120f",
+              "bar": 0.9
+            },
+            {
+              "rank": "4",
+              "name": "2020 COVID",
+              "value": "–34%",
+              "note": "fastest ever",
+              "color": "#5c544c",
+              "bar": 0.55
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "In nineteen eighty-seven, the market fell over twenty percent in a single day.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-blackmonday",
+          "kicker": "Wikipedia · Black Monday"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Any one of those felt like the end of the world while you were living through it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Felt like the end",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The two thousand eight crash erased half the market's value.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-recession",
+          "kicker": "Wikipedia · Great Recession"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The investors who sold in a panic locked in the loss. The ones who held got the millions.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "hold = win",
+          "label": "panic = lose",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Even the dot-com collapse was just another dip on the long chart.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dotcom",
+          "kicker": "Wikipedia · dot-com bubble"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The lesson of that jagged chart is simple, every terrifying crash on it was temporary.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Crashes are temporary",
+          "props": [
+            "chartUp",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Across the whole span, the S&P 500 trended relentlessly upward.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sp500",
+          "kicker": "Wikipedia · S&P 500"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So looking at those drops, which single dip would have broken you?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which dip breaks you?",
+          "sub": "Comment the year"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

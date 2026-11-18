@@ -1,0 +1,210 @@
+{
+  "id": "SH098",
+  "num": 98,
+  "slug": "salary-to-house-ladder",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP059",
+  "sourceTitle": "How Much House You Can Afford",
+  "title": "Salary To House Price, Rung By Rung",
+  "hook": "Salary to house price, rung by rung.",
+  "question": "What does yours allow?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-dti",
+      "name": "Debt-to-income ratio (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Debt-to-income_ratio",
+      "quote": "debt-to-income",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-mortgage",
+      "name": "Mortgage loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mortgage_loan",
+      "quote": "mortgage",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-downpayment",
+      "name": "Down payment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Down_payment",
+      "quote": "down payment",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-proptax",
+      "name": "Property tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Property_tax",
+      "quote": "property tax",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's map salary straight to the house price it supports, rung by rung, using the safe three-times rule.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "Salary →",
+            "house price."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Forty thousand supports about one twenty. Sixty supports two hundred. A hundred, three hundred. Two hundred, six hundred.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Salary → safe home price",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$40K",
+              "value": "~$120K",
+              "note": "starter",
+              "color": "#5c544c",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "$60K",
+              "value": "~$205K",
+              "note": "typical",
+              "color": "#17120f",
+              "bar": 0.35
+            },
+            {
+              "rank": "3",
+              "name": "$100K",
+              "value": "~$300K",
+              "note": "comfortable",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "4",
+              "name": "$200K",
+              "value": "~$600K",
+              "note": "spacious",
+              "color": "#1f7a3d",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "It all comes back to keeping your debt-to-income ratio sane.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-dti",
+          "kicker": "Wikipedia · debt-to-income"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "But there's a twist the sticker price hides. Interest nearly doubles what you actually pay.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "home",
+          "kicker": "the hidden cost",
+          "line": "Interest doubles it",
+          "sub": "over a 30-year loan"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A mortgage spreads the cost, and the interest, across thirty years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-mortgage",
+          "kicker": "Wikipedia · mortgage loan"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Borrow four hundred thousand at seven percent, and you repay close to a million over thirty years.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$960K",
+          "label": "total paid on a $400K loan",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A bigger down payment is the main way to shrink that total.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-downpayment",
+          "kicker": "Wikipedia · down payment"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The sticker price is only half the story, interest writes the other half.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Interest writes half",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "And property tax quietly adds thousands more every single year.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-proptax",
+          "kicker": "Wikipedia · property tax"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So on that ladder, what does your salary actually allow?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "What does yours allow?",
+          "sub": "Comment your band"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}
