@@ -1,0 +1,219 @@
+{
+  "id": "SH170",
+  "num": 170,
+  "slug": "childcare-more-than-rent",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP095",
+  "sourceTitle": "Childcare in Every State vs a Second Salary",
+  "title": "States Where Childcare Costs More Than Rent",
+  "hook": "States where childcare costs more than rent.",
+  "question": "Is yours one?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-childcare",
+      "name": "Child care (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Child_care",
+      "quote": "child care",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ece",
+      "name": "Early childhood education (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Early_childhood_education",
+      "quote": "early childhood education",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-costraise",
+      "name": "Cost of raising a child (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_raising_a_child",
+      "quote": "cost of raising a child",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-oppcost",
+      "name": "Opportunity cost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+      "quote": "opportunity cost",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "In a growing number of states, full-time childcare now costs more than the rent. Let's rank them.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "home",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "Childcare >",
+            "rent."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Infant care has quietly become one of the single biggest line items in a young family's budget.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Childcare vs rent",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "DC / MA",
+              "value": "> rent",
+              "note": "the priciest",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "CA / NY",
+              "value": "≈ rent",
+              "note": "neck and neck",
+              "color": "#17120f",
+              "bar": 0.75
+            },
+            {
+              "rank": "3",
+              "name": "Cheaper states",
+              "value": "< rent",
+              "note": "still brutal",
+              "color": "#17120f",
+              "bar": 0.5
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "In most US states, infant care already beats college tuition.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-childcare",
+          "kicker": "Wikipedia · child care"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "In the most expensive places, a single infant's care tops two thousand dollars a month.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "$2K+/mo",
+          "label": "one infant, priciest states",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Yet childcare workers themselves are among the lowest paid.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ece",
+          "kicker": "Wikipedia · early childhood education"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The result is a brutal squeeze right when families can least afford it.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "The parent trap",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "It's a huge chunk of that three-hundred-thousand-dollar total.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-costraise",
+          "kicker": "Wikipedia · cost of raising a child"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The costliest years arrive exactly when young families can least afford them.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Worst timing",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "And leaving work carries a steep opportunity cost on top.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-oppcost",
+          "kicker": "Wikipedia · opportunity cost"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Childcare quietly becomes the rent you pay on top of the rent.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Rent on top of rent",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, is your state one where childcare beats the rent?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "home",
+          "line": "Is yours one?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

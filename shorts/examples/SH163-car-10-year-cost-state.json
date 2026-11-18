@@ -1,0 +1,200 @@
+{
+  "id": "SH163",
+  "num": 163,
+  "slug": "car-10-year-cost-state",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP092",
+  "sourceTitle": "The Real Cost of a Car Over 10 Years in Every State",
+  "title": "The Real Ten-Year Cost Of A Car In Your State",
+  "hook": "The real ten-year cost of a car in your state.",
+  "question": "Did you budget that?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-tco",
+      "name": "Total cost of ownership (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Total_cost_of_ownership",
+      "quote": "total cost of ownership",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-insurance",
+      "name": "Vehicle insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vehicle_insurance",
+      "quote": "vehicle insurance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-depr",
+      "name": "Depreciation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Depreciation",
+      "quote": "depreciation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-carfinance",
+      "name": "Car finance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Car_finance",
+      "quote": "car finance",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "That thirty thousand dollar car isn't a thirty thousand dollar decision. Over ten years, it's closer to a hundred thousand.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "car",
+          "props": [
+            "coin",
+            "chartDown"
+          ],
+          "lines": [
+            "$30K car?",
+            "$100K truth."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The sticker is just the start. Add fuel, insurance, repairs, registration, and relentless depreciation.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "car",
+          "big": "$100K",
+          "label": "true 10-year cost of a $30K car",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Total cost of ownership counts everything a car costs to keep.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tco",
+          "kicker": "Wikipedia · total cost of ownership"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Your state matters enormously, mostly through insurance. Ten years of it can hit thirty thousand in the priciest states.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "car",
+          "big": "$30K",
+          "label": "10 years of insurance, priciest states",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Insurance premiums vary hugely from state to state.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-insurance",
+          "kicker": "Wikipedia · vehicle insurance"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The ten-year ownership gap between the cheapest and priciest state can top forty thousand dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$40K+",
+          "label": "gap, cheapest vs priciest state",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And depreciation alone can erase sixty percent of value in five years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-depr",
+          "kicker": "Wikipedia · depreciation"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The car loses value every day you own it, guaranteed.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "A liability with wheels",
+          "props": [
+            "car",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The sticker is just the trailer. The ten-year total is the whole, expensive movie.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Trailer vs movie",
+          "props": [
+            "car",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And financing it stretches the pain across even more years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-carfinance",
+          "kicker": "Wikipedia · car finance"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So when you bought it, did you budget for all ten years?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "car",
+          "line": "Did you budget that?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

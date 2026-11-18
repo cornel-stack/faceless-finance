@@ -1,0 +1,227 @@
+{
+  "id": "SH162",
+  "num": 162,
+  "slug": "cheapest-priciest-week",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP091",
+  "sourceTitle": "Gas, Groceries & Rent for a Week in Every US State",
+  "title": "The Cheapest And Most Expensive Week In America",
+  "hook": "The cheapest and most expensive week in America.",
+  "question": "Where does yours land?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-food",
+      "name": "Food prices (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Food_prices",
+      "quote": "food prices",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fueltax",
+      "name": "Fuel tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fuel_tax",
+      "quote": "fuel tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-grocery",
+      "name": "Grocery store (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Grocery_store",
+      "quote": "grocery store",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-salestax",
+      "name": "Sales taxes in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sales_taxes_in_the_United_States",
+      "quote": "sales taxes",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's rank the states by the cost of a single basic week of living. The spread is bigger than you'd guess.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "Cheapest vs",
+            "priciest week."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Hawaii and the coastal states top the list. The South and Midwest sit comfortably at the bottom.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "A basic week",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Hawaii",
+              "value": "~$880",
+              "note": "shipping tax",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "California",
+              "value": "high",
+              "note": "rent + gas",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "US average",
+              "value": "mid",
+              "note": "the baseline",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "4",
+              "name": "Mississippi",
+              "value": "~$390",
+              "note": "cheapest",
+              "color": "#1f7a3d",
+              "bar": 0.4
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Grocery prices track local wages and shipping costs.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-grocery",
+          "kicker": "Wikipedia · grocery store"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The priciest week is more than double the cheapest, for the exact same basics.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "2×+",
+          "label": "priciest vs cheapest",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Fuel taxes quietly pile onto the weekly driving cost.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fueltax",
+          "kicker": "Wikipedia · fuel tax"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Which is why a modest income can feel rich in one state and poor in another.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Rich or poor by state",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Even identical groceries ring up very differently by region.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-food",
+          "kicker": "Wikipedia · food prices"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Your state line quietly decides whether a normal income feels comfortable or constantly strained.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "The state line",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "And sales tax piles onto every one of those purchases.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-salestax",
+          "kicker": "Wikipedia · sales taxes"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Where you live can swing the cost of an ordinary life by double.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "2× by location",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So where does your weekly cost land on that ranking?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Where does yours land?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

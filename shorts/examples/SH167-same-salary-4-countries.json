@@ -1,0 +1,205 @@
+{
+  "id": "SH167",
+  "num": 167,
+  "slug": "same-salary-4-countries",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP094",
+  "sourceTitle": "Taxes: US vs UK vs Canada vs Australia",
+  "title": "The Same Salary. Four Countries. Four Take-Homes.",
+  "hook": "The same salary. Four countries. Four take-homes.",
+  "question": "Which would you pick?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-tax",
+      "name": "Tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax",
+      "quote": "tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-vat",
+      "name": "Value-added tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Value-added_tax",
+      "quote": "value-added tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-wedge",
+      "name": "Tax wedge (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_wedge",
+      "quote": "tax wedge",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-rate",
+      "name": "Tax rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_rate",
+      "quote": "tax rate",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Earn the same salary in four English-speaking countries, and you take home four very different amounts.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "globe",
+          "props": [
+            "coin",
+            "globe"
+          ],
+          "lines": [
+            "1 salary.",
+            "4 take-homes."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "On income tax alone, the US often looks the cheapest. But that's only half the story.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Total tax burden",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Australia",
+              "value": "highest",
+              "note": "but services included",
+              "color": "#17120f",
+              "bar": 0.9
+            },
+            {
+              "rank": "2",
+              "name": "UK / Canada",
+              "value": "high",
+              "note": "healthcare covered",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "USA",
+              "value": "lowest tax",
+              "note": "you pay privately",
+              "color": "#c0392b",
+              "bar": 0.55
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Headline income tax is only one slice of the total burden.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tax",
+          "kicker": "Wikipedia · tax"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The hidden one is sales tax. The US has no national one, the UK adds twenty percent VAT.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "0% vs 20%",
+          "label": "national sales tax: US vs UK",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A twenty percent VAT quietly taxes almost everything you buy.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-vat",
+          "kicker": "Wikipedia · value-added tax"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Measured as a share of the whole economy, the US takes about twenty-seven percent, the others around thirty-three.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "27% vs 33%",
+          "label": "total tax, share of economy",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "But lower tax means Americans pay privately for healthcare and more.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wedge",
+          "kicker": "Wikipedia · tax wedge"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Low tax usually just means you quietly pay privately for what others get through theirs.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Pay it privately",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The headline tax rate hides what each system actually covers.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rate",
+          "kicker": "Wikipedia · tax rate"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So all in, which country's deal would you actually pick?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "globe",
+          "line": "Which would you pick?",
+          "sub": "Comment your choice"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

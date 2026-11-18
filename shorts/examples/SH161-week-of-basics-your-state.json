@@ -1,0 +1,200 @@
+{
+  "id": "SH161",
+  "num": 161,
+  "slug": "week-of-basics-your-state",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP091",
+  "sourceTitle": "Gas, Groceries & Rent for a Week in Every US State",
+  "title": "A Week Of Gas, Groceries And Rent In Your State",
+  "hook": "A week of gas, groceries and rent in your state.",
+  "question": "What does your week cost?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-food",
+      "name": "Food prices (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Food_prices",
+      "quote": "food prices",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-gas",
+      "name": "Gasoline usage and pricing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gasoline_and_diesel_usage_and_pricing",
+      "quote": "gasoline",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-salestax",
+      "name": "Sales taxes in the US (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sales_taxes_in_the_United_States",
+      "quote": "sales taxes",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-grocery",
+      "name": "Grocery store (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Grocery_store",
+      "quote": "grocery store",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Add up one ordinary week, gas, groceries, and rent, and the total swings wildly depending on your state.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "home",
+            "coin"
+          ],
+          "lines": [
+            "One week.",
+            "50 states."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "In the priciest state, that week runs around eight hundred eighty dollars. In the cheapest, closer to three ninety.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$880 vs $390",
+          "label": "priciest vs cheapest week",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Food prices alone vary sharply from state to state.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-food",
+          "kicker": "Wikipedia · food prices"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Rent is the monster. Your weekly housing share usually dwarfs gas and food combined.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "home",
+          "big": "rent > all",
+          "label": "housing dwarfs the rest",
+          "props": [
+            "home",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Even gas swings, partly because states tax fuel so differently.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-gas",
+          "kicker": "Wikipedia · gasoline"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The gas-tax gap alone can be fifty cents or more per gallon, paid week after week.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$0.50+/gal",
+          "label": "the gas-tax gap",
+          "props": [
+            "coin",
+            "car"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Sales tax then quietly adds to the grocery bill on top.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-salestax",
+          "kicker": "Wikipedia · sales taxes"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "And remote or island states pay extra on nearly everything, thanks to shipping.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "+ shipping",
+          "props": [
+            "home",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The exact same paycheck can feel generous in one state and desperately tight in the next.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same pay, diff life",
+          "props": [
+            "home",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Even an identical grocery cart rings up differently by region.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-grocery",
+          "kicker": "Wikipedia · grocery store"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what does one basic week actually cost where you live?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "What's your week cost?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

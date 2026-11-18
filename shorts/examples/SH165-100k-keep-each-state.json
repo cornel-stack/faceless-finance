@@ -1,0 +1,200 @@
+{
+  "id": "SH165",
+  "num": 165,
+  "slug": "100k-keep-each-state",
+  "series": "Napkin Numbers Shorts",
+  "format": "Find your state",
+  "sourceEp": "EP093",
+  "sourceTitle": "What You Actually Keep From $100K in Every US State",
+  "title": "A $100K Salary. What You Keep In Each State.",
+  "hook": "A $100K salary. What you keep in each state.",
+  "question": "What do you keep?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-stateincome",
+      "name": "State income tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_income_tax",
+      "quote": "state income tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-progressive",
+      "name": "Progressive tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Progressive_tax",
+      "quote": "progressive tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-bracket",
+      "name": "Tax bracket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_bracket",
+      "quote": "tax bracket",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Earn a hundred thousand dollars, and what you actually take home depends enormously on which state you live in.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "coin",
+            "home"
+          ],
+          "lines": [
+            "$100K salary.",
+            "50 take-homes."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The take-home gap between the best and worst state is around nine thousand dollars a year.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "$9,000",
+          "label": "take-home gap, best vs worst",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Some states take a big bite, others charge nothing at all.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-stateincome",
+          "kicker": "Wikipedia · state income tax"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Nine states charge zero tax on earned income, quietly handing residents a raise.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "map",
+          "big": "9 states",
+          "label": "charge $0 income tax",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "On top sits the federal progressive tax, the same everywhere.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-progressive",
+          "kicker": "Wikipedia · progressive tax"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And your headline bracket lies. The top rate might be twenty-four percent, but your effective rate is closer to seventeen.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "24% vs 17%",
+          "label": "top bracket vs effective rate",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Then cost of living decides how far that take-home goes.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A high take-home plus a low cost of living can quietly double your savings.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "2× savings",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The number on your contract and the number in your account are rarely ever the same.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Contract ≠ account",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Stacked brackets decide how much actually reaches you.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bracket",
+          "kicker": "Wikipedia · tax bracket"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So on a hundred thousand, what do you actually keep?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "What do you keep?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "id": "SH166",
+  "num": 166,
+  "slug": "where-100k-worth-least",
+  "series": "Napkin Numbers Shorts",
+  "format": "Rank",
+  "sourceEp": "EP093",
+  "sourceTitle": "What You Actually Keep From $100K in Every US State",
+  "title": "The State Where $100K Is Worth The Least",
+  "hook": "The state where $100K is worth the least.",
+  "question": "Is it yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-col",
+      "name": "Cost of living (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cost_of_living",
+      "quote": "cost of living",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-stateincome",
+      "name": "State income tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_income_tax",
+      "quote": "state income tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-bracket",
+      "name": "Tax bracket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_bracket",
+      "quote": "tax bracket",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-progressive",
+      "name": "Progressive tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Progressive_tax",
+      "quote": "progressive tax",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "A hundred thousand dollars is a great salary. But in one state, it quietly buys the least of all.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "map",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Where $100K",
+            "is worth least."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Two forces gang up, high state income tax and a brutal cost of living.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "map",
+          "kicker": "the double hit",
+          "line": "High tax + high costs",
+          "sub": "they stack together"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Top-tax states like California and New York take the biggest cut.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-stateincome",
+          "kicker": "Wikipedia · state income tax"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Combine them, and a hundred thousand in those states lives like far less elsewhere.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "$100K, real value",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Hawaii / CA",
+              "value": "worst",
+              "note": "tax + cost",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "NY / NJ",
+              "value": "bad",
+              "note": "high both",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "3",
+              "name": "No-tax South",
+              "value": "best",
+              "note": "keeps the most",
+              "color": "#1f7a3d",
+              "bar": 0.4
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "High local prices shrink the real value of every dollar.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-col",
+          "kicker": "Wikipedia · cost of living"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "In the worst states, a six-figure salary can feel distinctly middle class.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Six figures, mid life",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Stacked brackets quietly lift the overall rate too.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-bracket",
+          "kicker": "Wikipedia · tax bracket"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A six-figure salary can quietly live like a five-figure one, purely because of location.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "6 figures, 5-figure life",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Federal progressive tax applies on top of the state's cut.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-progressive",
+          "kicker": "Wikipedia · progressive tax"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Two identical offers, two states, and wildly different lives after tax and rent.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Same offer, diff life",
+          "props": [
+            "coin",
+            "home"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, is your state the one where a hundred thousand is worth the least?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "map",
+          "line": "Is it yours?",
+          "sub": "Comment your state"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

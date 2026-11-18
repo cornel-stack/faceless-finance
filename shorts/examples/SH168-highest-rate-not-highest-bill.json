@@ -1,0 +1,197 @@
+{
+  "id": "SH168",
+  "num": 168,
+  "slug": "highest-rate-not-highest-bill",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP094",
+  "sourceTitle": "Taxes: US vs UK vs Canada vs Australia",
+  "title": "The Highest Tax Rate Is Not The Highest Tax Bill",
+  "hook": "The highest tax rate is not the highest tax bill.",
+  "question": "Which do you quote?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-rate",
+      "name": "Tax rate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_rate",
+      "quote": "tax rate",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-wedge",
+      "name": "Tax wedge (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax_wedge",
+      "quote": "tax wedge",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-vat",
+      "name": "Value-added tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Value-added_tax",
+      "quote": "value-added tax",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tax",
+      "name": "Tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tax",
+      "quote": "tax",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "People panic about a high tax rate. But the headline rate and the actual bill are two very different numbers.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "Top rate",
+            "≠ top bill."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The headline rate only hits your last dollar earned, not your whole income.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "bank",
+          "kicker": "the key",
+          "line": "It's marginal",
+          "sub": "only your top dollar"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Your effective rate, the real bill, is always lower than the headline.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rate",
+          "kicker": "Wikipedia · tax rate"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "So a scary forty-five percent top rate might mean an effective rate closer to twenty-five.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "45% vs 25%",
+          "label": "headline vs effective rate",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The tax wedge measures what's really taken across your whole income.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-wedge",
+          "kicker": "Wikipedia · tax wedge"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "And a low-income-tax country can quietly claw it back through a twenty percent sales tax.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "globe",
+          "big": "hidden VAT",
+          "label": "claws it back on spending",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "VAT is a tax you pay without ever seeing it on a payslip.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-vat",
+          "kicker": "Wikipedia · value-added tax"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "So the only honest number is the total you actually hand over, everywhere combined.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Count the total",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The only honest number is never the headline. It's the total you actually hand over.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Count the total",
+          "props": [
+            "coin",
+            "globe"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "Tax comes in many forms, and only the sum of them matters.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tax",
+          "kicker": "Wikipedia · tax"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So which rate do you quote, the scary headline or the real one?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "Which do you quote?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}
