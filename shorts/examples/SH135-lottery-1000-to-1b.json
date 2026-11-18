@@ -1,0 +1,204 @@
+{
+  "id": "SH135",
+  "num": 135,
+  "slug": "lottery-1000-to-1b",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP078",
+  "sourceTitle": "Every Level of Lottery Win",
+  "title": "$1,000 To $1 Billion, And What You Actually Take Home",
+  "hook": "$1,000 to $1 billion, and what you actually take home.",
+  "question": "Still worth playing?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-lottery",
+      "name": "Lottery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lottery",
+      "quote": "lottery",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lump",
+      "name": "Lump sum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lump_sum",
+      "quote": "lump sum",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-windfall",
+      "name": "Windfall gain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Windfall_gain",
+      "quote": "windfall gain",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-jackpot",
+      "name": "Progressive jackpot (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Progressive_jackpot",
+      "quote": "progressive jackpot",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Lottery wins range from a thousand dollars to over a billion. But the take-home is far smaller than the headline. Let's climb.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "vault",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "$1,000 to $1B",
+            "won."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Two things shrink it instantly. You take the lump sum, not the full jackpot, and then tax takes a huge bite.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Headline → take-home",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$1M jackpot",
+              "value": "~$375K",
+              "note": "after lump + tax",
+              "color": "#17120f",
+              "bar": 0.3
+            },
+            {
+              "rank": "2",
+              "name": "$100M",
+              "value": "~$37M",
+              "note": "roughly a third",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "$1B",
+              "value": "~$375M",
+              "note": "the real number",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Choosing the lump sum slashes the advertised jackpot immediately.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lump",
+          "kicker": "Wikipedia · lump sum"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The lump sum alone often cuts the headline by around forty percent.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "~ -40%",
+          "label": "from taking the lump sum",
+          "props": [
+            "chartDown",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A lottery is, by design, a game almost everyone loses.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lottery",
+          "kicker": "Wikipedia · lottery"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Then federal and state taxes can take another big slice off what's left.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Then taxes hit",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A sudden windfall is also notoriously easy to blow quickly.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-windfall",
+          "kicker": "Wikipedia · windfall gain"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The billboard number is marketing. The take-home is the only figure that's actually real.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Headline vs real",
+          "props": [
+            "coin",
+            "x"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The jackpot grows precisely because almost nobody wins it.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-jackpot",
+          "kicker": "Wikipedia · progressive jackpot"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So after the lump sum and the tax, is it still worth playing?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "vault",
+          "line": "Still worth playing?",
+          "sub": "Comment your take"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

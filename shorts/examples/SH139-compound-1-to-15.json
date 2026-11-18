@@ -1,0 +1,213 @@
+{
+  "id": "SH139",
+  "num": 139,
+  "slug": "compound-1-to-15",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP080",
+  "sourceTitle": "Every Level of Compound Interest",
+  "title": "1% To 15%, Same $10,000, Thirty Years",
+  "hook": "1% to 15%, same $10,000, thirty years.",
+  "question": "What rate are you getting?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ror",
+      "name": "Rate of return (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rate_of_return",
+      "quote": "rate of return",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-rule72",
+      "name": "Rule of 72 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rule_of_72",
+      "quote": "Rule of 72",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tvm",
+      "name": "Time value of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Time_value_of_money",
+      "quote": "time value of money",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Take the same ten thousand dollars, leave it for thirty years, and change only the interest rate. The results are absurd.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "coin",
+            "chartUp"
+          ],
+          "lines": [
+            "Same $10K.",
+            "1% to 15%."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At one percent it barely grows. At seven it multiplies. At fifteen it becomes something unrecognisable.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "$10K over 30 years",
+          "rows": [
+            {
+              "rank": "1%",
+              "name": "1%",
+              "value": "~$13K",
+              "note": "a savings account",
+              "color": "#5c544c",
+              "bar": 0.1
+            },
+            {
+              "rank": "7%",
+              "name": "7%",
+              "value": "~$76K",
+              "note": "the stock market",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "10%",
+              "name": "10%",
+              "value": "~$175K",
+              "note": "a great run",
+              "color": "#17120f",
+              "bar": 0.7
+            },
+            {
+              "rank": "15%",
+              "name": "15%",
+              "value": "~$660K",
+              "note": "rare, elite",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Compound interest means your returns start earning returns.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The jaw-dropper is that a few percentage points, over decades, change the outcome by hundreds of thousands.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "$15K vs $660K",
+          "label": "only the rate differs",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The Rule of 72 shows how fast money doubles at each rate.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rule72",
+          "kicker": "Wikipedia · Rule of 72"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The stock market's long-run real return, after inflation, is around seven percent.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "~7%",
+          "label": "the market's long-run real return",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Chasing a much higher rate of return usually means much higher risk.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ror",
+          "kicker": "Wikipedia · rate of return"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "A gap of just a few points quietly compounds into a completely different life.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A few points = a life",
+          "props": [
+            "chartUp",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "It's the time value of money doing its quiet work.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tvm",
+          "kicker": "Wikipedia · time value of money"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, what rate are you actually getting on your money?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "What rate are you getting?",
+          "sub": "Comment your rate"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

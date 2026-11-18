@@ -1,0 +1,212 @@
+{
+  "id": "SH133",
+  "num": 133,
+  "slug": "student-debt-10k-to-300k",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP077",
+  "sourceTitle": "Every Level of Student Debt",
+  "title": "$10K To $300K Owed, And The Repayment Reality",
+  "hook": "$10K to $300K owed, and the repayment reality.",
+  "question": "What is your balance?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-sdebt",
+      "name": "Student debt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_debt",
+      "quote": "student debt",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-sloan",
+      "name": "Student loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Student_loan",
+      "quote": "student loan",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-idr",
+      "name": "Income-driven repayment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Income-driven_repayment",
+      "quote": "income-driven repayment",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-edecon",
+      "name": "Education economics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Education_economics",
+      "quote": "education economics",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Student debt ranges from ten thousand dollars to over three hundred thousand. The repayment reality at each level is brutal.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "lock",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "$10K to $300K",
+            "owed."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At ten thousand, you clear it in a few years. At three hundred, it can shadow you for decades.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Balance → repayment",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$10K",
+              "value": "~3 yrs",
+              "note": "manageable",
+              "color": "#1f7a3d",
+              "bar": 0.2
+            },
+            {
+              "rank": "2",
+              "name": "$38K",
+              "value": "10–20 yrs",
+              "note": "the average",
+              "color": "#17120f",
+              "bar": 0.45
+            },
+            {
+              "rank": "3",
+              "name": "$100K",
+              "value": "20+ yrs",
+              "note": "heavy",
+              "color": "#17120f",
+              "bar": 0.75
+            },
+            {
+              "rank": "4",
+              "name": "$300K",
+              "value": "a career",
+              "note": "med / law school",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The average US balance sits around thirty-eight thousand dollars.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sdebt",
+          "kicker": "Wikipedia · student debt"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "That average payment can last anywhere from ten to twenty-five years.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "lock",
+          "big": "10–25 yrs",
+          "label": "to pay off the average",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Income-driven plans lower the payment but stretch it out for decades.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-idr",
+          "kicker": "Wikipedia · income-driven repayment"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The real trap is interest. On big balances, it can grow faster than you pay it down.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Interest outruns you",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "A student loan compounds just like any other debt.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-sloan",
+          "kicker": "Wikipedia · student loan"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The same balance can be a minor nuisance or a life sentence, depending entirely on the field.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Field decides",
+          "props": [
+            "lock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The return on a degree swings wildly by what you study.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-edecon",
+          "kicker": "Wikipedia · education economics"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So, what is your student-loan balance right now?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "lock",
+          "line": "What is your balance?",
+          "sub": "Comment the number"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "SH131",
+  "num": 131,
+  "slug": "car-300-vs-1200",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP076",
+  "sourceTitle": "Every Level of Car Payment",
+  "title": "$300 Against $1,200 A Month, Over Ten Years",
+  "hook": "$300 against $1,200 a month, over ten years.",
+  "question": "What is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-carfin",
+      "name": "Car finance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Car_finance",
+      "quote": "car finance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-deprec",
+      "name": "Depreciation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Depreciation",
+      "quote": "depreciation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tco",
+      "name": "Total cost of ownership (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Total_cost_of_ownership",
+      "quote": "total cost of ownership",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-loan",
+      "name": "Loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Loan",
+      "quote": "loan",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Two people, two car payments, three hundred a month versus twelve hundred. Over ten years, the gap is a small fortune.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "car",
+          "props": [
+            "coin",
+            "chartDown"
+          ],
+          "lines": [
+            "$300 vs $1,200",
+            "a month."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "At three hundred a month, that's thirty-six thousand over a decade. At twelve hundred, it's a hundred forty-four thousand.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "10 years of car payments",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "$300/mo",
+              "value": "$36K",
+              "note": "modest, reliable",
+              "color": "#1f7a3d",
+              "bar": 0.25
+            },
+            {
+              "rank": "2",
+              "name": "$600/mo",
+              "value": "$72K",
+              "note": "typical new car",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "3",
+              "name": "$1,200/mo",
+              "value": "$144K",
+              "note": "luxury habit",
+              "color": "#c0392b",
+              "bar": 1.0
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Car finance stretches that cost over ever-longer loans.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-carfin",
+          "kicker": "Wikipedia · car finance"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "And a car isn't an investment. It's a liability with wheels that loses value every single day.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "car",
+          "kicker": "the hard truth",
+          "line": "A liability with wheels",
+          "sub": "it only loses value"
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A new car depreciates fastest the moment you drive it off the lot.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deprec",
+          "kicker": "Wikipedia · depreciation"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "The average new car now costs around forty-eight thousand dollars, often on seven-year loans.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "car",
+          "big": "$48K",
+          "label": "average new-car price",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "And the sticker ignores the full total cost of ownership.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tco",
+          "kicker": "Wikipedia · total cost of ownership"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Invest that twelve hundred a month instead, and over a career it's a seven-figure difference.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "7-figure difference",
+          "props": [
+            "coin",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The cheaper car isn't a downgrade. It's a quiet raise you hand yourself every single month.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A monthly raise",
+          "props": [
+            "car",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "A longer loan just drags that cost out for even more years.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-loan",
+          "kicker": "Wikipedia · loan"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what's your car payment, really, over ten years?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "car",
+          "line": "What is yours?",
+          "sub": "Comment your payment"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

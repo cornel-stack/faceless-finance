@@ -24,6 +24,7 @@ import {
   MoneyDust,
   CrashChart,
   PriceTag,
+  Car,
   Lock,
   Building,
   Vault,
@@ -46,7 +47,7 @@ const BGS: Record<string, string> = { cream: CREAM, ink: theme.ink, red: theme.a
 
 export type ShortArt =
   | "globe" | "globeX" | "globeQ" | "moneyFlow" | "home" | "flagStack" | "bank"
-  | "crashChart" | "priceTag" | "lock" | "building" | "vault" | "map";
+  | "crashChart" | "priceTag" | "lock" | "building" | "vault" | "map" | "car";
 
 export type ShortRow = { rank?: string; name: string; value: string; note?: string; color?: string; bar?: number };
 
@@ -132,6 +133,7 @@ const Art: React.FC<{ view: ShortView }> = ({ view }) => {
     case "building": return <Building size={430} />;
     case "vault": return <Vault size={440} />;
     case "map": return <USMap size={640} />;
+    case "car": return <Car size={460} />;
     default: return null;
   }
 };

@@ -1,0 +1,228 @@
+{
+  "id": "SH137",
+  "num": 137,
+  "slug": "retire-40-vs-70",
+  "series": "Napkin Numbers Shorts",
+  "format": "Ladder",
+  "sourceEp": "EP079",
+  "sourceTitle": "Every Level of Retirement Age",
+  "title": "Retiring At 40 Against 70, And What Each Requires",
+  "hook": "Retiring at 40 against 70, and what each requires.",
+  "question": "What is your target?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-retage",
+      "name": "Retirement age (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Retirement_age",
+      "quote": "retirement age",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-trinity",
+      "name": "Trinity study (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trinity_study",
+      "quote": "Trinity study",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ss",
+      "name": "Social Security (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Social_Security_(United_States)",
+      "quote": "Social Security",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-fire",
+      "name": "FIRE movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/FIRE_movement",
+      "quote": "financial independence, retire early",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Retire at forty, or at seventy. The age you pick completely changes the size of the pile you need. Let's climb it.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "bank",
+          "props": [
+            "coin",
+            "clock"
+          ],
+          "lines": [
+            "Retire at",
+            "40 vs 70."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The earlier you stop, the more you need, and the less time you have to build it.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "Age → what it takes",
+          "rows": [
+            {
+              "rank": "40",
+              "name": "Retire at 40",
+              "value": "huge pile",
+              "note": "save 50%+ of income",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "50",
+              "name": "Retire at 50",
+              "value": "big pile",
+              "note": "aggressive saving",
+              "color": "#17120f",
+              "bar": 0.8
+            },
+            {
+              "rank": "60",
+              "name": "Retire at 60",
+              "value": "steady",
+              "note": "the normal path",
+              "color": "#17120f",
+              "bar": 0.55
+            },
+            {
+              "rank": "70",
+              "name": "Retire at 70",
+              "value": "smaller",
+              "note": "plus Social Security",
+              "color": "#1f7a3d",
+              "bar": 0.35
+            }
+          ]
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Your retirement age sets how long the money must last.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-retage",
+          "kicker": "Wikipedia · retirement age"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "At every age, the core target is the same, about twenty-five times your yearly spending.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "× 25",
+          "label": "spending = your number",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "That comes from the Trinity study's four percent rule.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-trinity",
+          "kicker": "Wikipedia · Trinity study"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Wait until seventy and a government check quietly covers part of the gap.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "bank",
+          "big": "~40%",
+          "label": "replaced by Social Security",
+          "props": [
+            "coin",
+            "check"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Social Security is a floor, though, not the whole house.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ss",
+          "kicker": "Wikipedia · Social Security"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "Retire early and you need a bigger pile, built in far less time. It's a double squeeze.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "A double squeeze",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "That extreme version is the whole FIRE movement.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-fire",
+          "kicker": "Wikipedia · FIRE movement"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "The age you pick quietly sets the savings rate your whole life must obey.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Age sets the rate",
+          "props": [
+            "clock",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, what retirement age are you actually targeting?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "bank",
+          "line": "What is your target?",
+          "sub": "Comment your age"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "id": "SH132",
+  "num": 132,
+  "slug": "payment-not-the-price",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP076",
+  "sourceTitle": "Every Level of Car Payment",
+  "title": "The Payment Is Not The Price",
+  "hook": "The payment is not the price.",
+  "question": "Did you budget that?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-tco",
+      "name": "Total cost of ownership (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Total_cost_of_ownership",
+      "quote": "total cost of ownership",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-deprec",
+      "name": "Depreciation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Depreciation",
+      "quote": "depreciation",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-carfin",
+      "name": "Car finance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Car_finance",
+      "quote": "car finance",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lease",
+      "name": "Lease (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lease",
+      "quote": "lease",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Car dealers love one magic question. What monthly payment can you afford? Because the payment hides the real price.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "car",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "The payment",
+            "isn't the price."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "Focus on a comfy monthly number, and they can stretch the loan for years to hit it, while you pay far more.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "car",
+          "kicker": "the trick",
+          "line": "Stretch the loan",
+          "sub": "a low payment hides a high price"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Longer car loans shrink the payment but balloon the total cost.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-carfin",
+          "kicker": "Wikipedia · car finance"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "The true price is the total cost of ownership. Loan, interest, insurance, fuel, repairs, and depreciation.",
+      "shots": [
+        {
+          "block": "rows",
+          "kicker": "True cost of a car",
+          "rows": [
+            {
+              "rank": "1",
+              "name": "Depreciation",
+              "value": "biggest",
+              "note": "silent, unavoidable",
+              "color": "#c0392b",
+              "bar": 1.0
+            },
+            {
+              "rank": "2",
+              "name": "Interest",
+              "value": "$$",
+              "note": "on the loan",
+              "color": "#17120f",
+              "bar": 0.6
+            },
+            {
+              "rank": "3",
+              "name": "Insurance & fuel",
+              "value": "$$",
+              "note": "every month",
+              "color": "#17120f",
+              "bar": 0.5
+            },
+            {
+              "rank": "4",
+              "name": "Repairs",
+              "value": "$",
+              "note": "as it ages",
+              "color": "#5c544c",
+              "bar": 0.3
+            }
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "Total cost of ownership adds up everything a car costs you to keep.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tco",
+          "kicker": "Wikipedia · total cost of ownership"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Depreciation is the quiet killer. The biggest cost, and you never see a bill for it.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "car",
+          "big": "depreciation",
+          "label": "the bill you never see",
+          "props": [
+            "chartDown",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Depreciation is value quietly draining away as the car ages.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-deprec",
+          "kicker": "Wikipedia · depreciation"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The dealer sells you a comfortable payment, and quietly keeps the difference as profit.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Payment = their profit",
+          "props": [
+            "car",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Leasing hides the true cost even more completely.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lease",
+          "kicker": "Wikipedia · lease"
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "So when you signed, did you actually budget for all of that?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "car",
+          "line": "Did you budget that?",
+          "sub": "Comment honestly"
+        }
+      ],
+      "id": "s10"
+    }
+  ]
+}

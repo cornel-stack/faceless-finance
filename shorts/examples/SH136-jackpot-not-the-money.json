@@ -1,0 +1,197 @@
+{
+  "id": "SH136",
+  "num": 136,
+  "slug": "jackpot-not-the-money",
+  "series": "Napkin Numbers Shorts",
+  "format": "Myth-break",
+  "sourceEp": "EP078",
+  "sourceTitle": "Every Level of Lottery Win",
+  "title": "The Jackpot Number Is Not The Money",
+  "hook": "The jackpot number is not the money.",
+  "question": "Which would you take?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-lump",
+      "name": "Lump sum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lump_sum",
+      "quote": "lump sum",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-jackpot",
+      "name": "Progressive jackpot (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Progressive_jackpot",
+      "quote": "progressive jackpot",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-lottery",
+      "name": "Lottery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lottery",
+      "quote": "lottery",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-windfall",
+      "name": "Windfall gain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Windfall_gain",
+      "quote": "windfall gain",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "That giant jackpot on the billboard? It is not actually the money you'd ever receive. Not even close.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "vault",
+          "props": [
+            "coin",
+            "x"
+          ],
+          "lines": [
+            "The jackpot",
+            "isn't the money."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "The headline number is the annuity, paid out slowly over about thirty years.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "vault",
+          "kicker": "the fine print",
+          "line": "It's an annuity",
+          "sub": "paid over ~30 years"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "The advertised jackpot assumes decades of future payments.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-jackpot",
+          "kicker": "Wikipedia · progressive jackpot"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Take the cash instead, and the lump sum is often only about half of that headline.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "~ half",
+          "label": "the lump sum vs headline",
+          "props": [
+            "chartDown",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "A lump sum pays less now instead of more, spread out later.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lump",
+          "kicker": "Wikipedia · lump sum"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "Then income tax lands on top, taking another large chunk right away.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Then tax",
+          "props": [
+            "x",
+            "coin"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "Which is before you consider the near-impossible odds of winning at all.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-lottery",
+          "kicker": "Wikipedia · lottery"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "So the real choice is a smaller cash pile now, or bigger payments spread over decades.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "vault",
+          "big": "cash vs time",
+          "label": "the real decision",
+          "props": [
+            "coin",
+            "clock"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "Read the fine print, and the dream quietly shrinks by well over half.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Shrinks by half",
+          "props": [
+            "coin",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And a sudden windfall is dangerously easy to lose.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-windfall",
+          "kicker": "Wikipedia · windfall gain"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, which one would you actually take?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "vault",
+          "line": "Which would you take?",
+          "sub": "Comment lump or annuity"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

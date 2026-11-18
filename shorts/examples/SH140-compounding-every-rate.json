@@ -1,0 +1,197 @@
+{
+  "id": "SH140",
+  "num": 140,
+  "slug": "compounding-every-rate",
+  "series": "Napkin Numbers Shorts",
+  "format": "Moving chart",
+  "sourceEp": "EP080",
+  "sourceTitle": "Every Level of Compound Interest",
+  "title": "Compounding Drawn At Every Rate",
+  "hook": "Compounding drawn at every rate.",
+  "question": "Which curve is yours?",
+  "language": "en",
+  "voice": {
+    "voiceId": "en-US-BrianNeural"
+  },
+  "sources": [
+    {
+      "id": "wiki-compound",
+      "name": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest",
+      "quote": "compound interest",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-rule72",
+      "name": "Rule of 72 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rule_of_72",
+      "quote": "Rule of 72",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-tvm",
+      "name": "Time value of money (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Time_value_of_money",
+      "quote": "time value of money",
+      "accessed": "2026-11-18"
+    },
+    {
+      "id": "wiki-ror",
+      "name": "Rate of return (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rate_of_return",
+      "quote": "rate of return",
+      "accessed": "2026-11-18"
+    }
+  ],
+  "scenes": [
+    {
+      "narration": "Let's draw compound growth at every interest rate on one chart. At first the lines hug. Then they explode apart.",
+      "shots": [
+        {
+          "block": "hook",
+          "art": "crashChart",
+          "props": [
+            "chartUp",
+            "coin"
+          ],
+          "lines": [
+            "Compounding,",
+            "every rate."
+          ]
+        }
+      ],
+      "id": "s1"
+    },
+    {
+      "narration": "For the first few years, one percent and ten percent look almost identical. That fools people into waiting.",
+      "shots": [
+        {
+          "block": "truth",
+          "art": "crashChart",
+          "kicker": "the trap",
+          "line": "They look the same",
+          "sub": "early on"
+        }
+      ],
+      "id": "s2"
+    },
+    {
+      "narration": "Compounding is slow at first, then shockingly fast.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-compound",
+          "kicker": "Wikipedia · compound interest"
+        }
+      ],
+      "id": "s3"
+    },
+    {
+      "narration": "Then the curves split violently, and the higher rates rocket away from the rest.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "they split",
+          "label": "later, violently",
+          "props": [
+            "chartUp",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s4"
+    },
+    {
+      "narration": "The Rule of 72 tells you how many years each rate needs to double.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-rule72",
+          "kicker": "Wikipedia · Rule of 72"
+        }
+      ],
+      "id": "s5"
+    },
+    {
+      "narration": "One penny, doubled every day for a month, ends up over five million dollars.",
+      "shots": [
+        {
+          "block": "stat",
+          "art": "crashChart",
+          "big": "1¢ → $5M+",
+          "label": "doubled daily for 30 days",
+          "props": [
+            "coin",
+            "fire"
+          ]
+        }
+      ],
+      "id": "s6"
+    },
+    {
+      "narration": "That's the raw power of the time value of money.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-tvm",
+          "kicker": "Wikipedia · time value of money"
+        }
+      ],
+      "id": "s7"
+    },
+    {
+      "narration": "The curve you're on is set by your rate, and even more by how early you start.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "ink",
+          "line": "Rate + time",
+          "props": [
+            "clock",
+            "chartUp"
+          ]
+        }
+      ],
+      "id": "s8"
+    },
+    {
+      "narration": "The cost of waiting a decade to start is enormous, and almost invisible at first.",
+      "shots": [
+        {
+          "block": "flash",
+          "bg": "red",
+          "line": "Waiting is costly",
+          "props": [
+            "clock",
+            "chartDown"
+          ]
+        }
+      ],
+      "id": "s9"
+    },
+    {
+      "narration": "And chasing a higher rate of return always adds real risk.",
+      "shots": [
+        {
+          "block": "evidence",
+          "sourceId": "wiki-ror",
+          "kicker": "Wikipedia · rate of return"
+        }
+      ],
+      "id": "s10"
+    },
+    {
+      "narration": "So, which of those curves is actually yours?",
+      "shots": [
+        {
+          "block": "question",
+          "art": "crashChart",
+          "line": "Which curve is yours?",
+          "sub": "Comment your rate"
+        }
+      ],
+      "id": "s11"
+    }
+  ]
+}

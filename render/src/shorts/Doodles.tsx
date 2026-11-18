@@ -386,6 +386,42 @@ export const Vault: React.FC<{ size?: number }> = ({ size = 420 }) => {
   );
 };
 
+// ---- CAR: a little car, wheels spinning, bobbing (a liability with wheels) --
+export const Car: React.FC<{ size?: number }> = ({ size = 440 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = useT(2, 70);
+  const bobY = bob(frame, fps, 1.2, 6);
+  const spin = frame * 10;
+  const wheel = (cx: number) => (
+    <g transform={`translate(${cx} 196)`}>
+      <circle r={34} fill="#2a2420" stroke={INK} strokeWidth={5} />
+      <circle r={14} fill="#cfc8bd" stroke={INK} strokeWidth={4} />
+      <g transform={`rotate(${spin})`}>
+        {[0, 60, 120, 180, 240, 300].map((a) => (
+          <line key={a} x1={0} y1={0} x2={28 * Math.cos((a * Math.PI) / 180)} y2={28 * Math.sin((a * Math.PI) / 180)} stroke={INK} strokeWidth={3} />
+        ))}
+      </g>
+    </g>
+  );
+  return (
+    <svg width={size} height={size * 0.6} viewBox="0 0 400 240">
+      <g transform={`translate(0 ${bobY}) scale(${t})`} style={{ transformOrigin: "200px 150px" }}>
+        {/* body */}
+        <path d="M40 180 L62 120 L150 120 L190 82 L300 82 L330 120 L360 120 L360 180 Z" fill={RED} stroke={INK} strokeWidth={6} strokeLinejoin="round" />
+        {/* windows */}
+        <path d="M158 120 L190 94 L246 94 L246 120 Z" fill="#dff0f5" stroke={INK} strokeWidth={4} />
+        <path d="M256 120 L256 94 L296 94 L318 120 Z" fill="#dff0f5" stroke={INK} strokeWidth={4} />
+        {/* headlight */}
+        <circle cx={352} cy={138} r={7} fill={GOLD} stroke={INK} strokeWidth={3} />
+      </g>
+      {wheel(120)}
+      {wheel(290)}
+      <line x1={20} y1={230} x2={380} y2={230} stroke={INK} strokeWidth={5} opacity={0.4} />
+    </svg>
+  );
+};
+
 // ---- US MAP: simplified silhouette with a pulsing pin (find your state) ----
 export const USMap: React.FC<{ size?: number }> = ({ size = 600 }) => {
   const frame = useCurrentFrame();
